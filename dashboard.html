@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Audit Dashboard. Temidayo Afonja</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy:#0d1b3e; --navy-mid:#162952; --gold:#c9a84c; --gold-light:#e8c97a;
+    --gold-dim:rgba(201,168,76,0.14); --gold-border:rgba(201,168,76,0.25);
+    --cream:#f5f0e8; --white:#ffffff; --slate:#8ba0b4;
+    --slate-dim:rgba(139,160,180,0.2); --green:#4a8c6f; --red-soft:#c8503c;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:var(--navy); color:var(--cream); font-family:'DM Sans',sans-serif; font-weight:300; min-height:100vh; }
+  body::before { content:''; position:fixed; inset:0; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E"); pointer-events:none; z-index:0; opacity:0.4; }
+
+  /* NAV */
+  nav { position:fixed; top:0; left:0; right:0; z-index:100; padding:20px 48px; display:flex; align-items:center; justify-content:space-between; background:rgba(13,27,62,0.92); backdrop-filter:blur(12px); border-bottom:1px solid var(--slate-dim); }
+  .nav-logo { font-family:'Cormorant Garamond',serif; font-size:15px; font-weight:400; letter-spacing:0.08em; color:var(--white); text-decoration:none; }
+  .nav-logo span { color:var(--gold); }
+
+  /* GATE */
+  #gate { position:relative; z-index:1; min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:60px 24px; text-align:center; }
+  .gate-title { font-family:'Cormorant Garamond',serif; font-size:clamp(32px,5vw,52px); font-weight:300; color:var(--white); margin-bottom:12px; }
+  .gate-sub { font-size:13px; color:var(--slate); margin-bottom:36px; letter-spacing:0.06em; }
+  .gate-input { background:rgba(245,240,232,0.05); border:1px solid rgba(139,160,180,0.3); color:var(--cream); padding:14px 20px; font-family:'DM Sans',sans-serif; font-size:14px; width:300px; outline:none; margin-bottom:12px; display:block; transition:border-color 0.2s; }
+  .gate-input:focus { border-color:var(--gold-border); }
+  .gate-input::placeholder { color:var(--slate); }
+  .gate-btn { background:var(--gold); color:var(--navy); border:none; padding:14px 40px; font-family:'DM Sans',sans-serif; font-size:12px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; cursor:pointer; transition:all 0.2s; }
+  .gate-btn:hover { background:var(--gold-light); }
+  .gate-error { color:var(--red-soft); font-size:12px; margin-top:10px; display:none; }
+
+  /* DASHBOARD */
+  #dashboard { display:none; position:relative; z-index:1; padding:100px 48px 80px; }
+  .dash-header { max-width:1160px; margin:0 auto 36px; display:flex; align-items:flex-end; justify-content:space-between; flex-wrap:wrap; gap:20px; }
+  .dash-title { font-family:'Cormorant Garamond',serif; font-size:clamp(32px,4vw,52px); font-weight:300; color:var(--white); }
+  .dash-title span { color:var(--gold); font-style:italic; }
+  .dash-meta { font-size:12px; color:var(--slate); letter-spacing:0.06em; }
+  .dash-count { font-family:'Cormorant Garamond',serif; font-size:48px; font-weight:300; color:var(--gold); display:block; }
+
+  /* STATS ROW */
+  .stats-row { max-width:1160px; margin:0 auto 36px; display:grid; grid-template-columns:repeat(4,1fr); gap:2px; }
+  .stat-card { padding:20px 24px; border:1px solid var(--slate-dim); text-align:center; }
+  .stat-label { font-size:10px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:var(--slate); margin-bottom:8px; }
+  .stat-value { font-family:'Cormorant Garamond',serif; font-size:32px; font-weight:300; }
+  .stat-compound .stat-value { color:#6ab894; }
+  .stat-depth .stat-value { color:#e07060; }
+  .stat-stagnant .stat-value { color:var(--slate); }
+  .stat-fragile .stat-value { color:var(--gold); }
+
+  /* CONTROLS */
+  .dash-controls { max-width:1160px; margin:0 auto 20px; display:flex; gap:12px; align-items:center; }
+  .search-input { background:rgba(245,240,232,0.05); border:1px solid var(--slate-dim); color:var(--cream); padding:11px 16px; font-family:'DM Sans',sans-serif; font-size:13px; width:300px; outline:none; transition:border-color 0.2s; }
+  .search-input:focus { border-color:var(--gold-border); }
+  .search-input::placeholder { color:var(--slate); }
+  .filter-select { background:rgba(245,240,232,0.05); border:1px solid var(--slate-dim); color:var(--cream); padding:11px 16px; font-family:'DM Sans',sans-serif; font-size:13px; outline:none; cursor:pointer; }
+  .filter-select option { background:var(--navy-mid); }
+
+  /* TABLE */
+  .table-wrap { max-width:1160px; margin:0 auto; overflow-x:auto; }
+  table { width:100%; border-collapse:collapse; }
+  thead tr { border-bottom:1px solid var(--gold-border); }
+  th { font-size:10px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold); padding:12px 16px; text-align:left; white-space:nowrap; }
+  tbody tr { border-bottom:1px solid var(--slate-dim); transition:background 0.15s; }
+  tbody tr:hover { background:var(--gold-dim); }
+  td { padding:14px 16px; font-size:13px; color:var(--cream-70,rgba(245,240,232,0.8)); white-space:nowrap; }
+  td.name { color:var(--cream); font-weight:400; }
+  td.date { color:var(--slate); font-size:12px; }
+
+  /* QUADRANT BADGES. correct framework names */
+  .badge { display:inline-block; font-size:10px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; padding:4px 10px; border:1px solid transparent; }
+  .badge-compounding { background:rgba(74,140,111,0.15); border-color:rgba(74,140,111,0.3); color:#6ab894; }
+  .badge-depth { background:rgba(200,80,60,0.12); border-color:rgba(200,80,60,0.25); color:#e07060; }
+  .badge-stagnant { background:rgba(139,160,180,0.1); border-color:rgba(139,160,180,0.2); color:var(--slate); }
+  .badge-fragile { background:rgba(201,168,76,0.12); border-color:rgba(201,168,76,0.25); color:var(--gold); }
+
+  .score-pill { font-family:'Cormorant Garamond',serif; font-size:15px; font-weight:400; }
+  .no-results { text-align:center; padding:48px; color:var(--slate); font-size:14px; display:none; }
+
+  /* FOOTER */
+  footer { position:relative; z-index:1; padding:32px 48px; border-top:1px solid var(--slate-dim); display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px; }
+  .footer-logo { font-family:'Cormorant Garamond',serif; font-size:15px; color:var(--white); }
+  .footer-logo span { color:var(--gold); }
+  .footer-copy { font-size:11px; color:var(--slate); opacity:0.6; }
+
+  @media(max-width:768px) {
+    nav { padding:16px 24px; }
+    #dashboard { padding:80px 24px 60px; }
+    .stats-row { grid-template-columns:1fr 1fr; }
+    footer { padding:24px; flex-direction:column; align-items:flex-start; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Temidayo <span>Afonja</span></a>
+  <span style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);border:1px solid var(--gold-border);padding:6px 14px;">Private Dashboard</span>
+</nav>
+
+<!-- GATE -->
+<div id="gate">
+  <div class="gate-title">Audit <span style="font-style:italic;color:var(--gold);">Dashboard</span></div>
+  <div class="gate-sub">Private access only · Temidayo Afonja</div>
+  <input class="gate-input" id="pwInput" type="password" placeholder="Enter password" onkeydown="if(event.key==='Enter')checkPw()">
+  <button class="gate-btn" onclick="checkPw()">Enter →</button>
+  <div class="gate-error" id="gateError">Incorrect password. Please try again.</div>
+</div>
+
+<!-- DASHBOARD -->
+<div id="dashboard">
+  <div class="dash-header">
+    <div>
+      <div style="font-size:10px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);margin-bottom:12px;">Capability Formation Audit</div>
+      <div class="dash-title">Submission <span>Pipeline</span></div>
+    </div>
+    <div class="dash-meta">
+      <span class="dash-count" id="totalCount">0</span>
+      Total Submissions
+    </div>
+  </div>
+
+  <!-- Quadrant stats -->
+  <div class="stats-row">
+    <div class="stat-card stat-compound"><div class="stat-label">Compounding</div><div class="stat-value" id="countCompound">0</div></div>
+    <div class="stat-card stat-depth"><div class="stat-label">Depth Trap</div><div class="stat-value" id="countDepth">0</div></div>
+    <div class="stat-card stat-stagnant"><div class="stat-label">Stagnant</div><div class="stat-value" id="countStagnant">0</div></div>
+    <div class="stat-card stat-fragile"><div class="stat-label">Fragile</div><div class="stat-value" id="countFragile">0</div></div>
+  </div>
+
+  <!-- Controls -->
+  <div class="dash-controls">
+    <input class="search-input" id="searchInput" type="text" placeholder="Search by name or organization..." oninput="filterTable()">
+    <select class="filter-select" id="quadrantFilter" onchange="filterTable()">
+      <option value="">All Quadrants</option>
+      <option value="Compounding">Compounding</option>
+      <option value="Depth Trap">Depth Trap</option>
+      <option value="Stagnant">Stagnant</option>
+      <option value="Fragile">Fragile</option>
+    </select>
+  </div>
+
+
+  <!-- ADD SUBMISSION PANEL -->
+  <div class="dash-controls" style="margin-bottom:12px;">
+    <button onclick="showAddForm()" style="background:var(--gold);color:var(--navy);border:none;padding:11px 24px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;cursor:pointer;">+ Add Submission</button>
+    <span style="font-size:12px;color:var(--slate);">Manually add each person who completes the audit</span>
+  </div>
+
+  <div id="addPanel" style="display:none;max-width:1160px;margin:0 auto 24px;padding:28px 32px;border:1px solid var(--gold-border);background:var(--gold-dim);">
+    <div style="font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:20px;">Add New Submission</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:12px;">
+      <input class="gate-input" id="addName" type="text" placeholder="Name" style="width:100%;margin-bottom:0;">
+      <input class="gate-input" id="addOrg" type="text" placeholder="Organization" style="width:100%;margin-bottom:0;">
+      <input class="gate-input" id="addRole" type="text" placeholder="Role" style="width:100%;margin-bottom:0;">
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr 1fr;gap:12px;margin-bottom:16px;">
+      <select class="filter-select" id="addQuadrant" style="width:100%;">
+        <option value="Compounding">Compounding</option>
+        <option value="Depth Trap">Depth Trap</option>
+        <option value="Stagnant">Stagnant</option>
+        <option value="Fragile">Fragile</option>
+      </select>
+      <input class="gate-input" id="addDensity" type="text" placeholder="Density score e.g. 3.2" style="width:100%;margin-bottom:0;">
+      <input class="gate-input" id="addOpt" type="text" placeholder="Optionality score" style="width:100%;margin-bottom:0;">
+      <input class="gate-input" id="addAlumni" type="text" placeholder="Alumni Capital score" style="width:100%;margin-bottom:0;">
+    </div>
+    <button onclick="addSubmission()" style="background:var(--gold);color:var(--navy);border:none;padding:12px 32px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;cursor:pointer;margin-right:12px;">Save →</button>
+    <button onclick="document.getElementById('addPanel').style.display='none'" style="background:transparent;color:var(--slate);border:1px solid var(--slate-dim);padding:12px 24px;font-family:'DM Sans',sans-serif;font-size:12px;cursor:pointer;letter-spacing:0.1em;text-transform:uppercase;">Cancel</button>
+  </div>
+
+  <!-- Table -->
+  <div class="table-wrap">
+    <table id="submissionsTable">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Organization</th>
+          <th>Role</th>
+          <th>Quadrant</th>
+          <th>Density</th>
+          <th>Optionality</th>
+          <th>Alumni Capital</th>
+          <th>Date</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+    <div class="no-results" id="noResults">No submissions match your search.</div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-logo">Temidayo <span>Afonja</span></div>
+  <div class="footer-copy">Private · Not indexed · temidayoafonja.com/dashboard.html</div>
+</footer>
+
+<script>
+// ── PASSWORD ──
+function checkPw() {
+  const pw = document.getElementById('pwInput').value;
+  if (pw === 'capability2026') {
+    document.getElementById('gate').style.display = 'none';
+    document.getElementById('dashboard').style.display = 'block';
+    loadData();
+  } else {
+    document.getElementById('gateError').style.display = 'block';
+    document.getElementById('pwInput').value = '';
+    document.getElementById('pwInput').focus();
+  }
+}
+
+// ── LIVE SUBMISSIONS. auto-loads from localStorage + manual adds ──
+// When someone completes the audit with Formspree connected,
+// you can paste their data here OR use the Import panel below.
+let submissions = JSON.parse(localStorage.getItem('cf_submissions') || '[]');
+
+// Normalize quadrant names from audit key to display name
+function normalizeQuadrant(q) {
+  const map = { 'compound':'Compounding','depth':'Depth Trap','stagnant':'Stagnant','fragile':'Fragile',
+    'Compounding':'Compounding','Depth Trap':'Depth Trap','Stagnant':'Stagnant','Fragile':'Fragile' };
+  return map[q] || q;
+}
+
+function saveSubmissions() {
+  localStorage.setItem('cf_submissions', JSON.stringify(submissions));
+}
+
+// ── MANUAL ADD ──
+function showAddForm() {
+  document.getElementById('addPanel').style.display =
+    document.getElementById('addPanel').style.display === 'none' ? 'block' : 'none';
+}
+
+function addSubmission() {
+  const name     = document.getElementById('addName').value.trim();
+  const org      = document.getElementById('addOrg').value.trim();
+  const role     = document.getElementById('addRole').value.trim();
+  const quadrant = document.getElementById('addQuadrant').value;
+  const density  = document.getElementById('addDensity').value.trim() || '.';
+  const opt      = document.getElementById('addOpt').value.trim() || '.';
+  const alumni   = document.getElementById('addAlumni').value.trim() || '.';
+  if (!name || !org) { alert('Name and organization are required.'); return; }
+  const date = new Date().toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+  submissions.unshift({ name, org, role, quadrant, density, optionality:opt, alumni, date });
+  saveSubmissions();
+  clearAddForm();
+  document.getElementById('addPanel').style.display = 'none';
+  renderTable(submissions);
+  updateStats(submissions);
+}
+
+function clearAddForm() {
+  ['addName','addOrg','addRole','addDensity','addOpt','addAlumni'].forEach(id => {
+    document.getElementById(id).value = '';
+  });
+}
+
+function deleteSubmission(index) {
+  if (!confirm('Remove this submission?')) return;
+  submissions.splice(index, 1);
+  saveSubmissions();
+  renderTable(submissions);
+  updateStats(submissions);
+}
+
+const badgeClass = {
+  'Compounding':'badge-compounding',
+  'Depth Trap':'badge-depth',
+  'Stagnant':'badge-stagnant',
+  'Fragile':'badge-fragile'
+};
+
+function loadData() {
+  if (submissions.length === 0) {
+    document.getElementById('noResults').style.display = 'block';
+    document.getElementById('noResults').textContent = 'No submissions yet. Add your first one above when someone completes the audit.';
+  }
+  renderTable(submissions);
+  updateStats(submissions);
+}
+
+function updateStats(data) {
+  document.getElementById('totalCount').textContent = data.length;
+  document.getElementById('countCompound').textContent = data.filter(d=>d.quadrant==='Compounding').length;
+  document.getElementById('countDepth').textContent = data.filter(d=>d.quadrant==='Depth Trap').length;
+  document.getElementById('countStagnant').textContent = data.filter(d=>d.quadrant==='Stagnant').length;
+  document.getElementById('countFragile').textContent = data.filter(d=>d.quadrant==='Fragile').length;
+}
+
+function renderTable(data) {
+  const tbody = document.getElementById('tableBody');
+  const noResults = document.getElementById('noResults');
+  if (!data.length) { tbody.innerHTML=''; noResults.style.display='block'; return; }
+  noResults.style.display='none';
+  tbody.innerHTML = data.map((s,i) => `
+    <tr>
+      <td class="name">${s.name}</td>
+      <td>${s.org}</td>
+      <td>${s.role}</td>
+      <td><span class="badge ${badgeClass[s.quadrant]||''}">${s.quadrant}</span></td>
+      <td><span class="score-pill">${s.density}</span></td>
+      <td><span class="score-pill">${s.optionality}</span></td>
+      <td><span class="score-pill">${s.alumni}</span></td>
+      <td class="date">${s.date}</td>
+      <td><button onclick="deleteSubmission(${i})" style="background:none;border:none;color:var(--slate);cursor:pointer;font-size:11px;letter-spacing:0.06em;padding:2px 6px;" title="Remove">✕</button></td>
+    </tr>`).join('');
+}
+
+function filterTable() {
+  const search = document.getElementById('searchInput').value.toLowerCase();
+  const quadrant = document.getElementById('quadrantFilter').value;
+  const filtered = submissions.filter(s => {
+    const matchSearch = !search || s.name.toLowerCase().includes(search) || s.org.toLowerCase().includes(search);
+    const matchQuadrant = !quadrant || s.quadrant === quadrant;
+    return matchSearch && matchQuadrant;
+  });
+  renderTable(filtered);
+  updateStats(filtered);
+}
+</script>
+</body>
+</html>
