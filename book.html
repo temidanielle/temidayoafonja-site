@@ -315,76 +315,37 @@ footer {
 }
 
 .book-cover {
-  background: var(--navy-mid);
-  border: 1px solid var(--gold-border);
   aspect-ratio: 2/3;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 48px 40px;
-  text-align: center;
   position: relative;
-  box-shadow: 20px 20px 60px rgba(0,0,0,0.4);
+  overflow: hidden;
+  box-shadow: 24px 24px 70px rgba(0,0,0,0.55), 0 8px 24px rgba(0,0,0,0.35);
+  background: #080d1a;
 }
-
-.book-cover::before {
-  content: '';
-  position: absolute;
-  inset: 8px;
-  border: 1px solid rgba(201,168,76,0.15);
-  pointer-events: none;
-}
-
-.book-cover-eyebrow {
-  font-size: 9px;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 32px;
-}
-
-.book-cover-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 32px;
-  font-weight: 300;
-  line-height: 1.15;
-  color: var(--white);
-  margin-bottom: 20px;
-}
-
-.book-cover-title em {
-  font-style: italic;
-  color: var(--gold-light);
-}
-
-.book-cover-subtitle {
-  font-size: 12px;
-  line-height: 1.7;
-  color: var(--slate);
-  margin-bottom: 40px;
-}
-
-.book-cover-author {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--cream);
-  letter-spacing: 0.08em;
-}
-
-.book-cover-label {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 9px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--gold);
-  background: var(--gold-dim);
-  border: 1px solid var(--gold-border);
-  padding: 5px 10px;
-}
+.book-cover-bg { position:absolute;inset:0;background:#080d1a; }
+.book-cover-glow1 { position:absolute;top:-30%;left:-20%;width:90%;height:90%;border-radius:50%;background:radial-gradient(circle,rgba(12,28,62,0.8) 0%,transparent 70%); }
+.book-cover-glow2 { position:absolute;bottom:-20%;right:-20%;width:70%;height:70%;border-radius:50%;background:radial-gradient(circle,rgba(30,15,5,0.55) 0%,transparent 70%); }
+.book-arc-wrap { position:absolute;top:5%;left:50%;transform:translateX(-50%);width:76%;height:0;padding-bottom:38%;overflow:hidden; }
+.book-arc-r1 { position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:100%;aspect-ratio:1;border-radius:50%;border:0.75px solid rgba(201,168,76,0.13); }
+.book-arc-r2 { position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:80%;aspect-ratio:1;border-radius:50%;border:0.75px solid rgba(201,168,76,0.2); }
+.book-arc-r3 { position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:60%;aspect-ratio:1;border-radius:50%;border:1px solid rgba(201,168,76,0.33); }
+.book-arc-r4 { position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:40%;aspect-ratio:1;border-radius:50%;border:1px solid rgba(201,168,76,0.52); }
+.book-arc-r5 { position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:20%;aspect-ratio:1;border-radius:50%;border:1.5px solid rgba(201,168,76,0.78); }
+.book-arc-dot { position:absolute;bottom:-4px;left:50%;transform:translateX(-50%);width:7px;height:7px;border-radius:50%;background:#c9a84c;box-shadow:0 0 10px rgba(201,168,76,0.7); }
+.book-arc-d { position:absolute;bottom:92%;left:15%;font-size:5.5px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(201,168,76,0.45); }
+.book-arc-o { position:absolute;bottom:58%;right:8%;font-size:5.5px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(201,168,76,0.45); }
+.book-arc-a { position:absolute;bottom:22%;left:10%;font-size:5.5px;letter-spacing:0.12em;text-transform:uppercase;color:rgba(201,168,76,0.55); }
+.book-div1 { position:absolute;top:45%;left:8%;right:8%;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,0.4),transparent); }
+.book-cover-eyebrow { position:absolute;top:47%;left:0;right:0;text-align:center;font-size:6px;letter-spacing:0.26em;text-transform:uppercase;color:rgba(201,168,76,0.55); }
+.book-cover-title { position:absolute;top:51%;left:0;right:0;text-align:center;font-family:'Cormorant Garamond',serif;font-size:clamp(28px,6vw,44px);font-weight:700;color:#ffffff;text-transform:uppercase;letter-spacing:0.01em;line-height:1; }
+.book-cover-subtitle-it { position:absolute;top:70%;left:0;right:0;text-align:center;font-family:'Cormorant Garamond',serif;font-size:clamp(10px,2vw,15px);font-weight:300;font-style:italic;color:var(--gold);letter-spacing:0.06em;line-height:1.3;padding:0 10%; }
+.book-div2 { position:absolute;top:80%;left:8%;right:8%;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,0.25),transparent); }
+.book-cover-sub { position:absolute;top:82%;left:0;right:0;text-align:center;font-size:5.5px;color:rgba(245,240,232,0.32);line-height:1.7;letter-spacing:0.04em;padding:0 10%; }
+.book-pillars { position:absolute;bottom:9%;left:0;right:0;display:flex;justify-content:center;align-items:center;gap:6px; }
+.book-pillar-w { font-size:5.5px;letter-spacing:0.13em;text-transform:uppercase;color:rgba(201,168,76,0.62); }
+.book-pillar-sep { font-size:7px;color:rgba(201,168,76,0.28); }
+.book-cover-author { position:absolute;bottom:3%;left:0;right:0;text-align:center;font-size:6.5px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(245,240,232,0.3); }
+.book-cover-label { position:absolute;top:3%;right:4%;font-size:5.5px;letter-spacing:0.18em;text-transform:uppercase;color:rgba(201,168,76,0.7);background:rgba(201,168,76,0.08);border:0.5px solid rgba(201,168,76,0.25);padding:3px 8px; }
+.book-bot-edge { position:absolute;bottom:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent 10%,#c9a84c 50%,transparent 90%); }
 
 .book-info {}
 
@@ -529,11 +490,34 @@ footer {
 <section class="book-hero">
   <div class="book-hero-inner">
     <div class="book-cover fade-up delay-2">
-      <div class="book-cover-label">In Development</div>
-      <div class="book-cover-eyebrow">Temidayo Afonja</div>
-      <div class="book-cover-title"><em>Capability Formation</em></div>
-      <div class="book-cover-subtitle">How Individuals and Institutions Build Resilience When Markets Stop Being Predictable</div>
+      <div class="book-cover-bg"></div>
+      <div class="book-cover-glow1"></div>
+      <div class="book-cover-glow2"></div>
+      <div class="book-arc-wrap">
+        <div class="book-arc-r1"></div>
+        <div class="book-arc-r2"></div>
+        <div class="book-arc-r3"></div>
+        <div class="book-arc-r4"></div>
+        <div class="book-arc-r5"></div>
+        <div class="book-arc-dot"></div>
+        <div class="book-arc-d">Density</div>
+        <div class="book-arc-o">Optionality</div>
+        <div class="book-arc-a">Alumni Capital</div>
+      </div>
+      <div class="book-div1"></div>
+      <div class="book-cover-eyebrow">Capability Formation</div>
+      <div class="book-cover-title">Density</div>
+      <div class="book-cover-subtitle-it">Building Capability That<br>Outlasts Volatility</div>
+      <div class="book-div2"></div>
+      <div class="book-cover-sub">How Individuals and Institutions Build<br>Resilience When Markets Stop Being Predictable</div>
+      <div class="book-pillars">
+        <span class="book-pillar-w">Density</span><span class="book-pillar-sep">·</span>
+        <span class="book-pillar-w">Optionality</span><span class="book-pillar-sep">·</span>
+        <span class="book-pillar-w">Alumni Capital</span>
+      </div>
       <div class="book-cover-author">Temidayo Afonja</div>
+      <div class="book-cover-label">In Development</div>
+      <div class="book-bot-edge"></div>
     </div>
     <div class="fade-up delay-1">
       <span class="eyebrow">The Book</span>
