@@ -27,9 +27,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 20px 48
 .nav-links a { font-size: 12px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: var(--slate); text-decoration: none; transition: color 0.2s; }
 .nav-links a:hover, .nav-links a.active { color: var(--cream); }
 .nav-cta { font-size: 11px !important; font-weight: 500 !important; color: var(--gold) !important; border: 1px solid var(--gold-border) !important; padding: 8px 18px; transition: all 0.2s !important; }
-.nav-logo-img { height: 28px; width: auto; margin-left: 10px; vertical-align: middle; }
 .nav-cta:hover { background: var(--gold-dim) !important; color: var(--gold-light) !important; }
-
 section { position: relative; z-index: 1; }
 .container { max-width: 1160px; margin: 0 auto; padding: 0 48px; }
 .eyebrow { font-size: 11px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; display: block; }
@@ -42,7 +40,6 @@ p { font-size: 17px; line-height: 1.85; color: var(--cream-70); }
 .btn-secondary { display: inline-block; background: transparent; color: var(--gold); border: 1px solid var(--gold-border); padding: 14px 36px; font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; text-decoration: none; transition: all 0.2s ease; }
 .btn-secondary:hover { border-color: var(--gold); background: var(--gold-dim); transform: translateY(-1px); }
 .section-divider { border: none; border-top: 1px solid var(--slate-dim); margin: 0; }
-
 footer { position: relative; z-index: 1; padding: 48px; border-top: 1px solid var(--slate-dim); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
 .footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 16px; font-weight: 300; color: var(--white); }
 .footer-logo span { color: var(--gold); }
@@ -51,11 +48,9 @@ footer { position: relative; z-index: 1; padding: 48px; border-top: 1px solid va
 .footer-links a { font-size: 13px; letter-spacing: 0.08em; color: var(--slate); text-decoration: none; transition: color 0.2s; }
 .footer-links a:hover { color: var(--cream); }
 .footer-copy { font-size: 12px; color: var(--slate); opacity: 0.6; }
-
 @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 .fade-up { animation: fadeUp 0.8s ease forwards; }
 .delay-1 { animation-delay: 0.15s; opacity: 0; } .delay-2 { animation-delay: 0.3s; opacity: 0; } .delay-3 { animation-delay: 0.45s; opacity: 0; } .delay-4 { animation-delay: 0.6s; opacity: 0; } .delay-5 { animation-delay: 0.75s; opacity: 0; }
-
 @media (max-width: 768px) { nav { padding: 16px 24px; } .container { padding: 0 24px; } .nav-links { display: none; } footer { padding: 32px 24px; flex-direction: column; align-items: flex-start; } }
 
 /* HERO */
@@ -69,13 +64,17 @@ footer { position: relative; z-index: 1; padding: 48px; border-top: 1px solid va
 .hero-credentials { display: flex; gap: 24px; flex-wrap: wrap; }
 .credential { font-size: 11px; letter-spacing: 0.1em; color: var(--slate); text-transform: uppercase; display: flex; align-items: center; gap: 8px; }
 .credential::before { content: ''; width: 4px; height: 4px; background: var(--gold); border-radius: 50%; flex-shrink: 0; }
-.hero-right { display: flex; flex-direction: column; gap: 2px; position: relative; z-index: 1; }
+
+/* Hero photo — circular, right side */
+.hero-right { display: flex; align-items: center; justify-content: center; position: relative; z-index: 1; }
+.hero-photo-wrap { width: 340px; height: 340px; border-radius: 50%; overflow: hidden; border: 2px solid var(--gold-border); flex-shrink: 0; box-shadow: 0 0 0 12px rgba(201,168,76,0.05), 0 32px 80px rgba(0,0,0,0.3); }
+.hero-photo-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+
 .framework-card { padding: 28px 32px; border: 1px solid var(--slate-dim); position: relative; transition: all 0.3s ease; cursor: default; }
 .framework-card:hover { border-color: rgba(201,168,76,0.35); background: var(--gold-dim); transform: translateX(6px); }
 .framework-card-num { font-family: 'Cormorant Garamond', serif; font-size: 14px; color: var(--gold); letter-spacing: 0.18em; margin-bottom: 12px; }
 .framework-card-title { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 400; color: var(--white); margin-bottom: 10px; }
 .framework-card-desc { font-size: 17px; line-height: 1.8; color: var(--cream-70); }
-.framework-card-arrow { position: absolute; right: 28px; bottom: 28px; font-size: 18px; color: var(--gold); opacity: 0.4; }
 .framework-equation { margin-top: 16px; padding: 18px 28px; border: 1px solid var(--gold-border); background: var(--gold-dim); font-family: 'Cormorant Garamond', serif; font-size: 16px; font-weight: 400; color: var(--gold-light); letter-spacing: 0.04em; text-align: center; }
 
 /* PROOF BAR */
@@ -99,11 +98,10 @@ footer { position: relative; z-index: 1; padding: 48px; border-top: 1px solid va
 .mq-compound .mq-label { color: #6ab894; } .mq-depth .mq-label { color: #e07060; } .mq-stagnant .mq-label { color: var(--slate); } .mq-fragile .mq-label { color: var(--gold); }
 .mq-sub { font-size: 12px; letter-spacing: 0.06em; color: var(--slate); margin-top: 4px; }
 
-/* ABOUT STRIP */
+/* ABOUT STRIP — quote only, no photo */
 .about-strip { padding: 100px 48px; background: var(--navy); border-top: 1px solid var(--slate-dim); border-bottom: 1px solid var(--slate-dim); position: relative; z-index: 1; }
-.about-strip-inner { max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: auto 1fr; gap: 72px; align-items: center; }
-.about-photo-wrap { width: 200px; height: 200px; border-radius: 50%; overflow: hidden; border: 2px solid var(--gold-border); flex-shrink: 0; box-shadow: 0 0 0 8px rgba(201,168,76,0.05); }
-.about-photo-wrap img { width: 100%; height: 100%; object-fit: cover; }
+.about-strip-inner { max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: 80px 1fr; gap: 48px; align-items: center; }
+.about-strip-rule { width: 2px; height: 80px; background: var(--gold-border); }
 .about-strip-quote { font-family: 'Cormorant Garamond', serif; font-size: clamp(20px, 2.5vw, 30px); font-weight: 300; font-style: italic; line-height: 1.5; color: var(--cream); margin-bottom: 20px; }
 .about-strip-attr { font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); }
 
@@ -130,16 +128,19 @@ footer { position: relative; z-index: 1; padding: 48px; border-top: 1px solid va
 .book-title em { font-style: italic; color: var(--gold-light); }
 
 @media (max-width: 900px) {
-  .hero-inner { grid-template-columns: 1fr; gap: 48px; } .hero-right { display: none; }
-  .audit-inner { grid-template-columns: 1fr; } .about-strip-inner { grid-template-columns: 1fr; }
-  .about-photo-wrap { width: 140px; height: 140px; } .services-header { grid-template-columns: 1fr; }
+  .hero-inner { grid-template-columns: 1fr; gap: 48px; }
+  .hero-right { justify-content: flex-start; }
+  .hero-photo-wrap { width: 220px; height: 220px; }
+  .audit-inner { grid-template-columns: 1fr; }
+  .about-strip-inner { grid-template-columns: 1fr; }
+  .about-strip-rule { display: none; }
+  .services-header { grid-template-columns: 1fr; }
   .services-grid { grid-template-columns: 1fr; } .proof-bar { gap: 24px; }
 }
 </style>
   <link rel="icon" type="image/svg+xml" href="density-favicon-transparent.svg">
 </head>
 <body>
-
 <nav>
   <a href="index.html" class="nav-logo" title="Home">Temidayo <span>Afonja</span></a>
   <ul class="nav-links">
@@ -176,7 +177,7 @@ footer { position: relative; z-index: 1; padding: 48px; border-top: 1px solid va
     </div>
     <div class="hero-right fade-up delay-3">
       <div class="hero-photo-wrap">
-        <img src="temi-photo.jpg" alt="Temidayo Afonja" class="hero-photo">
+        <img src="temi-photo.jpg" alt="Temidayo Afonja">
       </div>
     </div>
   </div>
@@ -211,12 +212,10 @@ footer { position: relative; z-index: 1; padding: 48px; border-top: 1px solid va
 
 <hr class="section-divider">
 
-<!-- ABOUT STRIP -->
+<!-- ABOUT STRIP — quote only, gold rule replaces photo -->
 <section class="about-strip">
   <div class="about-strip-inner">
-    <div class="about-photo-wrap">
-      <img src="temi-photo.jpg" alt="Temidayo Afonja">
-    </div>
+    <div class="about-strip-rule"></div>
     <div>
       <span class="eyebrow">The Practitioner</span>
       <p class="about-strip-quote">&ldquo;The organizations that outlast disruption built people well enough, and systems that held what people built, before the disruption arrived.&rdquo;</p>
@@ -299,6 +298,5 @@ footer { position: relative; z-index: 1; padding: 48px; border-top: 1px solid va
   </ul>
   <div class="footer-copy">&copy; 2026 Temidayo Afonja. All rights reserved.</div>
 </footer>
-
 </body>
 </html>
