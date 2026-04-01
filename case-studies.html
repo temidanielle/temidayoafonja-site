@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case Studies. Temidayo Afonja</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap');
+:root {
+  --navy: #0f2347; --gold: #c9a84c; --gold-light: #e8c97a;
+  --gold-dim: rgba(201,168,76,0.12); --gold-border: rgba(201,168,76,0.25);
+  --cream: #f5f0e8; --cream-70: rgba(245,240,232,0.7);
+  --white: #ffffff; --slate: #8ba0b4; --slate-dim: rgba(139,160,180,0.18);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { background: var(--navy); color: var(--cream); font-family: 'DM Sans', sans-serif; font-weight: 300; min-height: 100vh; overflow-x: hidden; }
+body::before { content: ''; position: fixed; inset: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E"); pointer-events: none; z-index: 0; opacity: 0.5; }
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 20px 48px; display: flex; align-items: center; justify-content: space-between; background: rgba(15,35,71,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--slate-dim); }
+.nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 15px; font-weight: 400; letter-spacing: 0.08em; color: var(--white); text-decoration: none; }
+.nav-logo span { color: var(--gold); }
+.nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
+.nav-links a { font-size: 12px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: var(--slate); text-decoration: none; transition: color 0.2s; }
+.nav-links a:hover { color: var(--cream); }
+.nav-cta { font-size: 11px !important; font-weight: 500 !important; color: var(--gold) !important; border: 1px solid var(--gold-border) !important; padding: 8px 18px; transition: all 0.2s !important; }
+.nav-cta:hover { background: var(--gold-dim) !important; color: var(--gold-light) !important; }
+.eyebrow { font-size: 10px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; display: block; }
+.btn-primary { display: inline-block; background: var(--gold); color: var(--navy); border: none; padding: 15px 40px; font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; text-decoration: none; transition: all 0.2s ease; }
+.btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
+.btn-secondary { display: inline-block; background: transparent; color: var(--gold); border: 1px solid var(--gold-border); padding: 14px 36px; font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; text-decoration: none; transition: all 0.2s ease; }
+.btn-secondary:hover { border-color: var(--gold); background: var(--gold-dim); transform: translateY(-1px); }
+footer { position: relative; z-index: 1; padding: 48px; border-top: 1px solid var(--slate-dim); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
+.footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 16px; font-weight: 300; color: var(--white); }
+.footer-logo span { color: var(--gold); }
+.footer-tagline { font-size: 12px; color: var(--slate); letter-spacing: 0.05em; margin-top: 4px; }
+.footer-links { display: flex; gap: 28px; list-style: none; }
+.footer-links a { font-size: 12px; letter-spacing: 0.08em; color: var(--slate); text-decoration: none; transition: color 0.2s; }
+.footer-links a:hover { color: var(--cream); }
+.footer-copy { font-size: 11px; color: var(--slate); opacity: 0.6; }
+@keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+.fade-up { animation: fadeUp 0.8s ease forwards; }
+.delay-1 { animation-delay: 0.15s; opacity: 0; } .delay-2 { animation-delay: 0.3s; opacity: 0; }
+@media (max-width: 768px) { nav { padding: 16px 24px; } .nav-links { display: none; } footer { padding: 32px 24px; flex-direction: column; align-items: flex-start; } }
+.page-hero { padding: 160px 48px 80px; position: relative; z-index: 1; max-width: 1160px; margin: 0 auto; border-bottom: 1px solid var(--slate-dim); }
+.page-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(44px, 6vw, 72px); font-weight: 300; line-height: 1.05; color: var(--white); margin-bottom: 24px; }
+.page-intro { font-size: 17px; line-height: 1.85; color: var(--cream-70); max-width: 600px; padding-bottom: 80px; }
+.cases-list { max-width: 1160px; margin: 0 auto; padding: 80px 48px; position: relative; z-index: 1; display: flex; flex-direction: column; gap: 2px; }
+.case-item { display: grid; grid-template-columns: 240px 1fr; gap: 0; border: 1px solid var(--slate-dim); transition: border-color 0.2s; }
+.case-item:hover { border-color: var(--gold-border); }
+.case-left { padding: 40px 36px; border-right: 1px solid var(--slate-dim); display: flex; flex-direction: column; gap: 16px; }
+.case-quadrant { font-size: 9px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; padding: 5px 12px; display: inline-block; }
+.case-quadrant.compounding { background: rgba(74,140,111,0.2); color: #6ab894; border: 1px solid rgba(74,140,111,0.3); }
+.case-quadrant.depth-trap { background: rgba(200,80,60,0.15); color: #e8816e; border: 1px solid rgba(200,80,60,0.3); }
+.case-quadrant.fragile { background: rgba(201,168,76,0.15); color: var(--gold); border: 1px solid var(--gold-border); }
+.case-quadrant.stagnant { background: rgba(139,160,180,0.15); color: var(--slate); border: 1px solid var(--slate-dim); }
+.case-type { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--slate); }
+.case-context { font-size: 12px; color: var(--slate); line-height: 1.5; }
+.case-right { padding: 40px 48px; }
+.case-title { font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 300; color: var(--white); margin-bottom: 14px; line-height: 1.25; }
+.case-summary { font-size: 14px; line-height: 1.8; color: var(--cream-70); margin-bottom: 24px; }
+.case-outcome-label { font-size: 9px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; display: block; }
+.case-outcome { font-size: 13px; line-height: 1.7; color: var(--cream-70); }
+.cases-cta { max-width: 1160px; margin: 0 auto; padding: 0 48px 96px; position: relative; z-index: 1; }
+.cases-cta-inner { border: 1px solid var(--slate-dim); padding: 48px; display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; transition: border-color 0.2s; }
+.cases-cta-inner:hover { border-color: var(--gold-border); }
+.cases-cta-text { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 300; color: var(--white); line-height: 1.3; }
+.cases-cta-sub { font-size: 14px; color: var(--slate); margin-top: 8px; }
+@media (max-width: 900px) { .page-hero { padding: 120px 24px 60px; } .cases-list { padding: 60px 24px; } .case-item { grid-template-columns: 1fr; } .case-left { border-right: none; border-bottom: 1px solid var(--slate-dim); } .cases-cta { padding: 0 24px 60px; } .cases-cta-inner { flex-direction: column; align-items: flex-start; } }
+</style>
+  <link rel="icon" type="image/svg+xml" href="density-favicon-transparent.svg">
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Temidayo <span>Afonja</span></a>
+  <img src="density-dark.svg" alt="The Density Group" style="height:32px;width:auto;vertical-align:middle;margin-left:12px;">
+  <ul class="nav-links">
+    <li><a href="framework.html">Framework</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="work.html">Work With Me</a></li>
+    <li><a href="case-studies.html" class="active">Case Studies</a></li>
+    <li><a href="book.html">Book</a></li>
+    <li><a href="https://temidayoafonja.substack.com" target="_blank">Writing</a></li>
+    <li><a href="audit.html" class="nav-cta">Take the Audit</a></li>
+  </ul>
+</nav>
+
+<div class="page-hero">
+  <span class="eyebrow fade-up delay-1">Case Studies</span>
+  <h1 class="page-title fade-up delay-2">The framework<br>in practice.</h1>
+  <p class="page-intro fade-up delay-2">Each engagement begins with a diagnostic. What follows is specific to what the organization or individual is navigating. These cases show what the framework surfaces and what changes when it is applied. Clients are not named. The patterns are real.</p>
+</div>
+
+<div class="cases-list">
+
+  <!-- CASE 01: Org — Depth Trap -->
+  <div class="case-item fade-up delay-1">
+    <div class="case-left">
+      <span class="case-quadrant depth-trap">Depth Trap → Compounding</span>
+      <div class="case-type">Organizational</div>
+      <div class="case-context">Enterprise technology firm, 3,200 employees, post-restructuring</div>
+    </div>
+    <div class="case-right">
+      <div class="case-title">A leadership bench built entirely of specialists. No one could move.</div>
+      <p class="case-summary">The organization had invested heavily in technical depth for a decade. The result was a leadership tier with exceptional domain expertise and almost no capacity to operate outside it. When the restructuring came, the people most central to operations were also the least portable. The diagnostic surfaced a systemic Depth Trap across three business units.</p>
+      <span class="case-outcome-label">What shifted</span>
+      <p class="case-outcome">Role architecture redesigned across 14 senior positions. Internal mobility infrastructure built to create deliberate cross-functional exposure. Within 18 months, three leaders who had been flagged as flight risks had moved into expanded roles with measurably broader capability profiles.</p>
+    </div>
+  </div>
+
+  <!-- CASE 02: Individual — Stagnant, gender neutral -->
+  <div class="case-item fade-up delay-2">
+    <div class="case-left">
+      <span class="case-quadrant stagnant">Stagnant → Compounding</span>
+      <div class="case-type">Individual</div>
+      <div class="case-context">Senior director, professional services, 12 years at same firm</div>
+    </div>
+    <div class="case-right">
+      <div class="case-title">Twelve years of performance reviews that said excellent. No idea what they actually carried.</div>
+      <p class="case-summary">They had been promoted consistently, managed a high-performing team, and received strong reviews across every cycle. They had also not taken on a genuinely new problem in four years. The audit placed them in the Stagnant quadrant: stable, well-regarded, and quietly losing the optionality they had built in the decade prior. The work was not about leaving. It was about building deliberately inside the environment they already had.</p>
+      <span class="case-outcome-label">What shifted</span>
+      <p class="case-outcome">A 90-day Density plan restructured how they allocated their attention within their existing role. Two stretch assignments pursued internally. An Alumni Capital strategy built for the first time. Six months later they led a cross-functional initiative that had not existed when the engagement started.</p>
+    </div>
+  </div>
+
+  <!-- CASE 03: Org — Fragile -->
+  <div class="case-item fade-up delay-1">
+    <div class="case-left">
+      <span class="case-quadrant fragile">Fragile → Compounding</span>
+      <div class="case-type">Organizational</div>
+      <div class="case-context">Defense contractor, cleared workforce, leadership transition</div>
+    </div>
+    <div class="case-right">
+      <div class="case-title">Every time a senior leader left, institutional knowledge left with them.</div>
+      <p class="case-summary">The organization had built strong individual performers with deep contextual knowledge and almost no systems for transferring what they knew. Leadership transitions repeatedly produced capability gaps that took 12 to 18 months to close. The diagnostic identified a Fragile pattern: high performance under stable conditions, high vulnerability at transition points.</p>
+      <span class="case-outcome-label">What shifted</span>
+      <p class="case-outcome">Institutional Memory Engine framework designed and implemented across two divisions. Transition protocols built into leadership development. The next leadership transition was executed in four months with no capability gap reported by the incoming team.</p>
+    </div>
+  </div>
+
+  <!-- CASE 04: Individual — Depth Trap, gender neutral -->
+  <div class="case-item fade-up delay-2">
+    <div class="case-left">
+      <span class="case-quadrant depth-trap">Depth Trap → Compounding</span>
+      <div class="case-type">Individual</div>
+      <div class="case-context">Principal consultant, Big 4, 9 years in same practice area</div>
+    </div>
+    <div class="case-right">
+      <div class="case-title">The most technically capable person in the room. Invisible everywhere else.</div>
+      <p class="case-summary">They had spent nine years becoming the definitive expert in a narrow practice area. Internally, their reputation was excellent. Externally, they barely existed. When their firm began a restructuring that compressed their practice, they discovered they could not describe what they did in language that meant anything outside the specific methodology they had spent a decade mastering. The audit confirmed a Depth Trap: dense, valued, and entirely unportable.</p>
+      <span class="case-outcome-label">What shifted</span>
+      <p class="case-outcome">A capability translation exercise reframed what they knew in terms of the problems it solved, not the methodology it used. A deliberate visibility strategy built over 90 days generated three external conversations they had not had in the prior five years. Within six months they had transitioned into a broader strategy role at a firm that had recruited them specifically for the judgment they had always had but never made legible.</p>
+    </div>
+  </div>
+
+  <!-- CASE 05: Individual — Fragile, gender neutral -->
+  <div class="case-item fade-up delay-1">
+    <div class="case-left">
+      <span class="case-quadrant fragile">Fragile → Compounding</span>
+      <div class="case-type">Individual</div>
+      <div class="case-context">VP of Operations, high-growth technology, three roles in four years</div>
+    </div>
+    <div class="case-right">
+      <div class="case-title">Every move looked like progress. None of it was compounding.</div>
+      <p class="case-summary">Three roles in four years, each one a step up in title and scope. From the outside, a career in ascent. From the inside, a growing sense that the motion was not building anything durable. The audit placed them in the Fragile quadrant: high optionality, real momentum, and a capability profile that had accumulated breadth without the depth that makes breadth meaningful under pressure. The pattern had been invisible precisely because the market kept rewarding it.</p>
+      <span class="case-outcome-label">What shifted</span>
+      <p class="case-summary">The engagement reoriented the decision framework for the next move. Instead of optimizing for scope and title, they chose an environment specifically for the density it would produce. Eighteen months in, they described it as the first role in their career that was genuinely making them more capable rather than simply deploying what they already had.</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="cases-cta">
+  <div class="cases-cta-inner">
+    <div>
+      <div class="cases-cta-text">See where your organization or your career sits.</div>
+      <div class="cases-cta-sub">The audit is the starting point. Ten questions. A diagnostic that belongs to you.</div>
+    </div>
+    <div style="display:flex;gap:14px;flex-wrap:wrap;">
+      <a href="audit.html" class="btn-primary">Take the Audit &rarr;</a>
+      <a href="work.html" class="btn-secondary">Work With Me &rarr;</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div>
+    <div class="footer-logo">Temidayo <span>Afonja</span></div>
+    <div class="footer-tagline">The Capability Formation Framework &middot; A system for Networked Capability Orchestration in volatile markets.</div>
+  </div>
+  <ul class="footer-links">
+    <li><a href="framework.html">Framework</a></li>
+    <li><a href="principles.html">Principles</a></li>
+    <li><a href="audit.html">Audit</a></li>
+    <li><a href="work.html">Work With Me</a></li>
+    <li><a href="case-studies.html">Case Studies</a></li>
+    <li><a href="https://temidayoafonja.substack.com" target="_blank">Substack</a></li>
+  </ul>
+  <div class="footer-copy">&copy; 2026 Temidayo Afonja. All rights reserved.</div>
+</footer>
+
+</body>
+</html>
