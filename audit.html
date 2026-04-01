@@ -24,6 +24,7 @@ nav { position:fixed; top:0; left:0; right:0; z-index:9999; padding:18px 40px; d
 .nav-links a { font-family:'DM Sans',sans-serif; font-size:11px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:#f5f0e8; text-decoration:none; transition:color 0.2s; }
 .nav-links a:hover { color:#c9a84c; }
 .nav-cta { color:#112244 !important; background:#c9a84c; padding:10px 20px; letter-spacing:0.12em !important; }
+.nav-logo-img { height: 28px; width: auto; margin-left: 10px; vertical-align: middle; }
 .nav-cta:hover { background:#e8c97a; color:#112244 !important; }
 .nav-spacer { height:65px; }
 #intro { flex-direction:column; align-items:center; justify-content:center; padding:60px 24px; text-align:center; }
@@ -400,7 +401,7 @@ textarea.cta-input { resize:vertical; min-height:80px; }
         <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:20px;">
           <a id="bookingLink" href="https://temidayoafonja.com/work" target="_blank" style="display:inline-block;background:#c9a84c;color:#112244;padding:14px 32px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;transition:background 0.2s;">Book a Capability Session &rarr;</a>
           <span style="font-size:13px;color:rgba(245,240,232,0.45);">or</span>
-          <span style="font-size:13px;color:rgba(245,240,232,0.6);">Org leaders: email <a href="mailto:temidayoluwo@gmail.com?subject=Capability audit inquiry" style="color:#c9a84c;text-decoration:none;">temidayoluwo@gmail.com</a> with two sentences about your context.</span>
+          <span style="font-size:13px;color:rgba(245,240,232,0.6);">Org leaders: email <a href="/cdn-cgi/l/email-protection#c4b0a1a9ada0a5bdaba8b1b3ab84a3a9a5ada8eaa7aba9fbb7b1a6aea1a7b0f987a5b4a5a6ada8adb0bde4a5b1a0adb0e4adaab5b1adb6bd" style="color:#c9a84c;text-decoration:none;"><span class="__cf_email__" data-cfemail="cebaaba3a7aaafb7a1a2bbb9a18ea9a3afa7a2e0ada1a3">[email&#160;protected]</span></a> with two sentences about your context.</span>
         </div>
       </div>
       <div class="cta-box">
@@ -426,7 +427,7 @@ textarea.cta-input { resize:vertical; min-height:80px; }
   </div>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const questionsOrg = [
   { section:'Density', text:'When your people face problems that have no established playbook inside this organization, what happens?', preface:null, options:[{text:'We redirect them to what we know. Novel problems make us uncomfortable.',score:1},{text:'Some navigate it. Most wait for direction.',score:2},{text:'Our strongest people lean in. Complexity is where they have learned to live.',score:3},{text:'We have built an environment where uncharted problems are the norm, not the exception.',score:4}]},
   { section:'Density', text:'If your three most capable people moved to a new function tomorrow, how quickly would they contribute meaningfully?', preface:null, options:[{text:'Slowly. What they know is specific to where they are.',score:1},{text:'Eventually. Six to twelve months to find their footing.',score:2},{text:'Within ninety days. Their judgment travels with them.',score:3},{text:'Almost immediately. We built them for ambiguity, not just for this role.',score:4}]},
@@ -704,9 +705,4 @@ document.addEventListener('DOMContentLoaded',function(){
     emailField.style.borderColor='rgba(139,160,180,0.3)';
     var s=getScores();var highD=(s.d||2.5)>=2.5,highO=(s.o||2.5)>=2.5;var qKey='stagnant';if(highD&&!highO)qKey='depth';else if(highD&&highO)qKey='compound';else if(!highD&&highO)qKey='fragile';
     var btn=document.getElementById('ctaSendBtn');btn.textContent='Sending...';btn.disabled=true;
-    fetch('https://formspree.io/f/xjgapael',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({name,role,email,message,source:'results_contact_form',mode:currentMode,quadrant:qKey,density:(s.d||0).toFixed(2),optionality:(s.o||0).toFixed(2),alumni_capital:(s.a||0).toFixed(2),completed_at:new Date().toISOString()})}).then(function(r){if(r.ok){document.getElementById('ctaConfirm').style.display='block';btn.style.display='none';['ctaName','ctaRole','ctaEmail','ctaMessage'].forEach(function(id){var el=document.getElementById(id);el.disabled=true;el.style.opacity='0.4';});}else{btn.textContent='Send →';btn.disabled=false;}}).catch(function(){btn.textContent='Send →';btn.disabled=false;});
-  });
-});
-</script>
-</body>
-</html>
+    fetch('https://formspree.io/f/xjgapael',{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({name,role,email,message,source:'results_contact_form',mode:currentMode,quadrant:qKey,density:(s.d||0).toFixed(2),optionality:(s.o||0).toFixed(2),alumni_capital:(s.a||0).toFixed(2),completed_at:new Date().toISOString()})}).then(function(r){if(r.ok){document.getElementById('ctaConfirm').style.display='block';btn.style.display='none';['ctaName','ctaRole','

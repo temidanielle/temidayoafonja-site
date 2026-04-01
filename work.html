@@ -24,6 +24,7 @@ nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 20px 48
 .nav-links a { font-size: 12px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: var(--slate); text-decoration: none; transition: color 0.2s; }
 .nav-links a:hover, .nav-links a.active { color: var(--cream); }
 .nav-cta { font-size: 11px !important; font-weight: 500 !important; color: var(--gold) !important; border: 1px solid var(--gold-border) !important; padding: 8px 18px; transition: all 0.2s !important; }
+.nav-logo-img { height: 28px; width: auto; margin-left: 10px; vertical-align: middle; }
 .nav-cta:hover { background: var(--gold-dim) !important; color: var(--gold-light) !important; }
 section { position: relative; z-index: 1; }
 .eyebrow { font-size: 10px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; display: block; }
@@ -110,7 +111,7 @@ textarea.contact-input { min-height: 120px; resize: vertical; }
 
 <nav>
   <a href="index.html" class="nav-logo">Temidayo <span>Afonja</span></a>
-  <img src="density-dark.svg" alt="The Density Group" style="height:32px;width:auto;vertical-align:middle;margin-left:12px;">
+  <img src="density-dark.svg" alt="The Density Group" class="nav-logo-img">
   <ul class="nav-links">
     <li><a href="framework.html">Framework</a></li>
     <li><a href="about.html">About</a></li>
@@ -278,8 +279,8 @@ textarea.contact-input { min-height: 120px; resize: vertical; }
         </div>
         <div style="padding:20px 22px;border:1px solid rgba(201,168,76,0.2);background:rgba(201,168,76,0.04);">
           <div style="font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;">Org Leaders</div>
-          <p style="font-size:14px;line-height:1.75;color:rgba(245,240,232,0.8);margin-bottom:14px;">Send a note to <a href="mailto:temidayoluwo@gmail.com?subject=Capability audit inquiry" style="color:var(--gold);text-decoration:none;">temidayoluwo@gmail.com</a> with the subject line "Capability audit inquiry" and two sentences about your context. A response within 48 hours.</p>
-          <a href="mailto:temidayoluwo@gmail.com?subject=Capability audit inquiry" style="font-size:12px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);text-decoration:none;">Send a Note &rarr;</a>
+          <p style="font-size:14px;line-height:1.75;color:rgba(245,240,232,0.8);margin-bottom:14px;">Send a note to <a href="/cdn-cgi/l/email-protection#1662737b7f72776f797a63617956717b777f7a3875797b296563747c7375622b55776677747f7a7f626f367763727f62367f7867637f646f" style="color:var(--gold);text-decoration:none;"><span class="__cf_email__" data-cfemail="dda9b8b0b4b9bca4b2b1a8aab29dbab0bcb4b1f3beb2b0">[email&#160;protected]</span></a> with the subject line "Capability audit inquiry" and two sentences about your context. A response within 48 hours.</p>
+          <a href="/cdn-cgi/l/email-protection#bdc9d8d0d4d9dcc4d2d1c8cad2fddad0dcd4d193ded2d082cec8dfd7d8dec980fedccddcdfd4d1d4c9c49ddcc8d9d4c99dd4d3ccc8d4cfc4" style="font-size:12px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);text-decoration:none;">Send a Note &rarr;</a>
         </div>
       </div>
     </div>
@@ -329,7 +330,7 @@ textarea.contact-input { min-height: 120px; resize: vertical; }
       <textarea class="contact-input" placeholder="What are you navigating right now?"></textarea>
       <button class="btn-primary" style="align-self:flex-start;" onclick="handleContact(event)">Send &rarr;</button>
     </div>
-    <p style="margin-top:20px;font-size:12px;color:var(--slate);">Or reach out directly at <a href="mailto:temidayoluwo@gmail.com" style="color:var(--gold);text-decoration:none;">temidayoluwo@gmail.com</a></p>
+    <p style="margin-top:20px;font-size:12px;color:var(--slate);">Or reach out directly at <a href="/cdn-cgi/l/email-protection#2155444c484540584e4d54564e61464c40484d0f424e4c" style="color:var(--gold);text-decoration:none;"><span class="__cf_email__" data-cfemail="6612030b0f02071f090a13110926010b070f0a4805090b">[email&#160;protected]</span></a></p>
 
     <!-- DISCLAIMER -->
     <div style="margin-top:48px;padding:24px 28px;border:1px solid rgba(139,160,180,0.15);background:rgba(139,160,180,0.04);">
@@ -355,7 +356,7 @@ textarea.contact-input { min-height: 120px; resize: vertical; }
   <div class="footer-copy">&copy; 2026 Temidayo Afonja. All rights reserved.</div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function handleContact(e) {
   e.preventDefault();
   var name  = document.querySelector('.contact-input[placeholder="Your name"]').value.trim();
@@ -370,14 +371,4 @@ function handleContact(e) {
   fetch('https://formspree.io/f/xjgapael', {
     method: 'POST',
     headers: {'Content-Type':'application/json','Accept':'application/json'},
-    body: JSON.stringify({name:name, email:email, organization:org, role:role, message:msg, source:'work-page'})
-  }).then(function(r) {
-    if (r.ok) {
-      btn.style.display = 'none';
-      var confirm = document.createElement('p');
-      confirm.textContent = 'Message sent. Temidayo Afonja will be in touch.';
-      confirm.style.cssText = 'color:#6ab894;font-size:14px;margin-top:8px;';
-      btn.parentNode.appendChild(confirm);
-      document.querySelectorAll('.contact-input').forEach(function(el){ el.disabled=true; el.style.opacity='0.4'; });
-    } else {
-      btn.textContent = 'Send
+    body: JSON.stringify({name:name, email:email, organization:org, role:role, message:msg, sou
