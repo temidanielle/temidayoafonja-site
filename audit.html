@@ -65,8 +65,15 @@ nav { position:fixed; top:0; left:0; right:0; z-index:9999; padding:18px 40px; d
 .gate-input { background:transparent; border:1px solid var(–slate-dim); color:var(–cream); font-family:‘DM Sans’,sans-serif; font-size:14px; font-weight:300; padding:14px 16px; width:100%; outline:none; transition:border-color 0.2s; }
 .gate-input::placeholder { color:rgba(245,240,232,0.3); }
 .gate-input:focus { border-color:rgba(201,168,76,0.5); }
-.btn-gate { background:var(–gold); color:var(–navy); border:none; padding:15px; font-family:‘DM Sans’,sans-serif; font-size:12px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; cursor:pointer; transition:all 0.2s; width:100%; margin-top:8px; }
-.btn-gate:hover { background:var(–gold-light); }
+.gate-input:-webkit-autofill,
+.gate-input:-webkit-autofill:hover,
+.gate-input:-webkit-autofill:focus {
+-webkit-box-shadow: 0 0 0px 1000px #112244 inset !important;
+-webkit-text-fill-color: #f5f0e8 !important;
+border-color: rgba(201,168,76,0.5) !important;
+}
+.btn-gate { background:#c9a84c !important; color:#112244 !important; border:none; padding:15px; font-family:‘DM Sans’,sans-serif; font-size:12px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; cursor:pointer; transition:all 0.2s; width:100%; margin-top:8px; }
+.btn-gate:hover { background:#e8c97a !important; }
 .btn-skip { background:transparent; color:rgba(245,240,232,0.4); border:none; font-size:13px; cursor:pointer; margin-top:12px; text-decoration:underline; font-family:‘DM Sans’,sans-serif; }
 .btn-skip:hover { color:var(–cream); }
 .gate-privacy { font-size:11px; color:rgba(245,240,232,0.35); margin-top:16px; line-height:1.6; max-width:440px; }
