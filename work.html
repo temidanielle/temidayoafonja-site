@@ -58,6 +58,7 @@ footer { position: relative; z-index: 1; padding: 48px; border-top: 1px solid va
 .audience-card:hover { border-color: var(--gold-border); }
 .audience-card-label { font-size: 9px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; display: block; }
 .audience-card-text { font-size: 15px; line-height: 1.7; color: var(--cream-70); }
+.audience-card-text strong { color: var(--white); font-weight: 500; }
 .services-full { padding: 0 48px 100px; position: relative; z-index: 1; }
 .services-full-inner { max-width: 1160px; margin: 0 auto; }
 .service-full { display: grid; grid-template-columns: 1fr 2fr; gap: 64px; padding: 64px 0; border-top: 1px solid var(--slate-dim); align-items: start; }
@@ -79,6 +80,7 @@ footer { position: relative; z-index: 1; padding: 48px; border-top: 1px solid va
 .who-list { display: flex; flex-direction: column; gap: 2px; margin-top: 28px; }
 .who-item { padding: 16px 20px; border: 1px solid var(--slate-dim); font-size: 16px; line-height: 1.6; color: var(--cream-70); display: flex; gap: 14px; align-items: center; }
 .who-item-icon { color: var(--gold); font-size: 12px; }
+.who-item-proof { font-size: 13px; line-height: 1.65; color: var(--cream-40); font-style: italic; padding: 10px 20px 18px 46px; margin-bottom: 8px; }
 .principles-link-strip { max-width: 1160px; margin: 0 auto; padding: 0 48px 80px; position: relative; z-index: 1; }
 .principles-link-inner { border: 1px solid var(--slate-dim); padding: 36px 40px; display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; transition: border-color 0.2s; }
 .principles-link-inner:hover { border-color: var(--gold-border); }
@@ -103,6 +105,7 @@ textarea.contact-input { min-height: 120px; resize: vertical; }
   .principles-link-strip { padding: 0 24px 60px; }
   .contact-section { padding: 60px 24px; }
   .contact-row { grid-template-columns: 1fr; }
+  .who-item-proof { padding: 8px 16px 14px 36px; }
 }
 </style>
   <link rel="icon" type="image/svg+xml" href="density-favicon-transparent.svg">
@@ -134,7 +137,7 @@ textarea.contact-input { min-height: 120px; resize: vertical; }
 <div class="audience-strip fade-up delay-2">
   <div class="audience-card">
     <span class="audience-card-label">For Organizational Leaders</span>
-    <p class="audience-card-text">CHROs, CPOs, and COOs redesigning how their organizations build capability. The diagnostic surfaces what your talent architecture is actually producing — and what it will cost you if nothing changes.</p>
+    <p class="audience-card-text">CHROs, CPOs, and COOs redesigning how their organizations build capability. The <strong>Capability Formation Audit</strong> surfaces exactly where your talent architecture is producing value, and where it is quietly being lost. Prior engagements have delivered 30% retention improvement, $2M+ reductions in annual workforce costs, and 46-point onboarding NPS lifts within 18 months.</p>
   </div>
   <div class="audience-card">
     <span class="audience-card-label">For Individuals Navigating the System</span>
@@ -152,11 +155,22 @@ textarea.contact-input { min-height: 120px; resize: vertical; }
       <p style="color:var(--cream-70);font-size:17px;line-height:1.85;margin-bottom:24px;">The framework is most valuable to organizations already operating at scale that have seen the limits of conventional talent management in volatile conditions. And to individuals who have built real capability and want to understand what they actually carry, where it is portable, and what environment will compound it next.</p>
       <div class="who-list">
         <div class="who-item"><span class="who-item-icon">→</span>CHROs and CPOs redesigning their people architecture post-restructuring</div>
+        <div class="who-item-proof">Prior engagement: 30% retention improvement and $2M+ reduction in annual turnover costs across a global B2B SaaS workforce within 18 months.</div>
+
         <div class="who-item"><span class="who-item-icon">→</span>COOs building leadership benches for strategic pivots</div>
+        <div class="who-item-proof">Prior engagement: Enterprise leadership capability framework reaching 450+ managers globally, with 22% improvement in leadership effectiveness within 6 months.</div>
+
         <div class="who-item"><span class="who-item-icon">→</span>Defense and government contractors managing cleared talent pipelines</div>
+        <div class="who-item-proof">Applied experience: Cybersecurity governance and workforce behavior advisory in regulated environments, including Fortune 100 CISO engagement.</div>
+
         <div class="who-item"><span class="who-item-icon">→</span>Professional services and enterprise technology firms in AI transition</div>
+        <div class="who-item-proof">Prior engagement: AI-enabled people intelligence system that compressed engagement analysis from 3 weeks to 3 days. Recipient of AI Innovation Award.</div>
+
         <div class="who-item"><span class="who-item-icon">→</span>Mid-senior professionals navigating systems not designed to develop them</div>
+        <div class="who-item-proof">The diagnostic has been used by professionals across technology, life sciences, professional services, and regulated industries.</div>
+
         <div class="who-item"><span class="who-item-icon">→</span>Executive teams preparing for M&amp;A, scale, or market disruption</div>
+        <div class="who-item-proof">Prior engagement: Post-acquisition workforce integration completed in 90 days with zero critical talent loss.</div>
       </div>
     </div>
   </div>
@@ -196,7 +210,7 @@ textarea.contact-input { min-height: 120px; resize: vertical; }
         <p class="sf-desc">The work spans role architecture redesign, internal mobility infrastructure, Alumni Capital systems, and institutional memory frameworks. The Capability Formation Framework operates as the design system throughout.</p>
         <div class="sf-includes">
           <span class="sf-includes-label">What's included</span>
-          <div class="sf-item"><span class="sf-item-icon">→</span>Ongoing CHRO/CPO advisory access — weekly or biweekly cadence</div>
+          <div class="sf-item"><span class="sf-item-icon">→</span>Ongoing CHRO/CPO advisory access, weekly or biweekly cadence</div>
           <div class="sf-item"><span class="sf-item-icon">→</span>Role architecture redesign using the Density &rarr; Optionality design system</div>
           <div class="sf-item"><span class="sf-item-icon">→</span>Alumni Capital infrastructure design and activation plan</div>
           <div class="sf-item"><span class="sf-item-icon">→</span>Institutional Memory Engine framework and implementation support</div>
@@ -234,7 +248,7 @@ textarea.contact-input { min-height: 120px; resize: vertical; }
       <div>
         <span class="sf-tag-waitlist">Waitlist Open</span>
         <p class="sf-desc">For individuals inside organizations they did not design and cannot change. The work is not career coaching. It is personal capability architecture: a precise read of where you sit in the capability matrix, what is compounding in your current role, what is narrowing, and what moves shift you toward Compounding before your environment decides for you.</p>
-        <p class="sf-desc">This engagement is for the mid-senior professional who understands that the system they are navigating was not built to develop them — and has decided to build deliberately anyway.</p>
+        <p class="sf-desc">This engagement is for the mid-senior professional who understands that the system they are navigating was not built to develop them, and has decided to build deliberately anyway.</p>
         <div class="sf-includes">
           <span class="sf-includes-label">What's included</span>
           <div class="sf-item"><span class="sf-item-icon">→</span>Personal capability matrix placement across Density, Optionality, and Alumni Capital</div>
@@ -274,12 +288,12 @@ textarea.contact-input { min-height: 120px; resize: vertical; }
       <div style="display:flex;flex-direction:column;gap:16px;">
         <div style="padding:20px 22px;border:1px solid rgba(201,168,76,0.2);background:rgba(201,168,76,0.04);">
           <div style="font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;">Individuals</div>
-          <p style="font-size:14px;line-height:1.75;color:rgba(245,240,232,0.8);margin-bottom:14px;">Take the audit at temidayoafonja.com/audit. A Capability Session follows from your result — 60 minutes, audit-informed, focused on what you actually built and what comes next.</p>
+          <p style="font-size:14px;line-height:1.75;color:rgba(245,240,232,0.8);margin-bottom:14px;">Take the audit at temidayoafonja.com/audit. A Capability Session follows from your result. 60 minutes, audit-informed, focused on what you actually built and what comes next.</p>
           <a href="audit.html" style="font-size:12px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);text-decoration:none;">Take the Audit &rarr;</a>
         </div>
         <div style="padding:20px 22px;border:1px solid rgba(201,168,76,0.2);background:rgba(201,168,76,0.04);">
           <div style="font-size:10px;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;">Org Leaders</div>
-          <p style="font-size:14px;line-height:1.75;color:rgba(245,240,232,0.8);margin-bottom:14px;">Send a note using the form below with the subject line "Capability audit inquiry" and two sentences about your context. A response within 48 hours.</p>
+          <p style="font-size:14px;line-height:1.75;color:rgba(245,240,232,0.8);margin-bottom:14px;">Send a note using the form below with the subject line "Capability audit inquiry" and two sentences about your context. Response within one business week.</p>
           <a href="#get-in-touch" style="font-size:12px;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);text-decoration:none;">Send a Note &rarr;</a>
         </div>
       </div>
@@ -307,7 +321,7 @@ textarea.contact-input { min-height: 120px; resize: vertical; }
           <div style="font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:300;color:rgba(201,168,76,0.35);flex-shrink:0;line-height:1;">03</div>
           <div>
             <div style="font-size:13px;font-weight:500;color:var(--white);margin-bottom:6px;letter-spacing:0.02em;">The work begins</div>
-            <div style="font-size:13px;line-height:1.7;color:rgba(245,240,232,0.65);">Every engagement is scoped to the specific situation. You leave with something precise — a capability inventory, an organizational diagnosis, or a clear architecture for what needs to be built.</div>
+            <div style="font-size:13px;line-height:1.7;color:rgba(245,240,232,0.65);">Every engagement is scoped to the specific situation. You leave with something precise. A capability inventory, an organizational diagnosis, or a clear architecture for what needs to be built.</div>
           </div>
         </div>
       </div>
@@ -315,11 +329,11 @@ textarea.contact-input { min-height: 120px; resize: vertical; }
   </div>
 </section>
 
-<section class="contact-section">
+<section class="contact-section" id="get-in-touch">
   <div class="contact-inner">
     <span class="eyebrow">Get in Touch</span>
     <h2 style="margin-bottom:16px;">Start with a conversation.</h2>
-    <p style="color:var(--cream-70);">Every engagement begins with a diagnostic conversation. No pitch, no deck. Tell me what your organization is navigating — or what you are navigating inside it — and we will determine together whether the framework is the right fit.</p>
+    <p style="color:var(--cream-70);">Every engagement begins with a diagnostic conversation. No pitch, no deck. Tell me what your organization is navigating, or what you are navigating inside it, and we will determine together whether the framework is the right fit.</p>
     <div class="contact-form">
       <div class="contact-row">
         <input class="contact-input" type="text" placeholder="Your name">
@@ -330,7 +344,9 @@ textarea.contact-input { min-height: 120px; resize: vertical; }
       <textarea class="contact-input" placeholder="What are you navigating right now?"></textarea>
       <button class="btn-primary" style="align-self:flex-start;" onclick="handleContact(event)">Send &rarr;</button>
     </div>
-    <p style="margin-top:20px;font-size:12px;color:var(--slate);">Response within 48 hours.</p>
+    <p style="margin-top:20px;font-size:12px;color:var(--slate);">Response within one business week.</p>
+
+    <p style="margin-top:16px;font-size:12px;line-height:1.7;color:var(--slate);">All organizational engagements are delivered through The Density Group LLC, a Texas-registered consulting firm. Full capability statement available upon request.</p>
 
     <!-- DISCLAIMER -->
     <div style="margin-top:48px;padding:24px 28px;border:1px solid rgba(139,160,180,0.15);background:rgba(139,160,180,0.04);">
@@ -356,7 +372,8 @@ textarea.contact-input { min-height: 120px; resize: vertical; }
   <div class="footer-copy">&copy; 2026 Temidayo Afonja. All rights reserved.</div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script>
 function handleContact(e) {
   e.preventDefault();
   var name  = document.querySelector('.contact-input[placeholder="Your name"]').value.trim();
@@ -371,4 +388,24 @@ function handleContact(e) {
   fetch('https://formspree.io/f/xjgapael', {
     method: 'POST',
     headers: {'Content-Type':'application/json','Accept':'application/json'},
-    body: JSON.stringify({name:name, email:email, organization:org, role:role, message:msg, sou
+    body: JSON.stringify({name:name, email:email, organization:org, role:role, message:msg, source:'work-page'})
+  })
+  .then(function(res) {
+    if (res.ok) {
+      btn.textContent = 'Sent ✓';
+      document.querySelectorAll('.contact-input').forEach(function(i){ i.value = ''; });
+      setTimeout(function(){ btn.textContent = 'Send →'; btn.disabled = false; }, 3000);
+    } else {
+      btn.textContent = 'Error — try again';
+      btn.disabled = false;
+    }
+  })
+  .catch(function() {
+    btn.textContent = 'Error — try again';
+    btn.disabled = false;
+  });
+}
+</script>
+
+</body>
+</html>
