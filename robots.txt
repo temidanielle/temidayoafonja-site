@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /dashboard.html
+Disallow: /capability-formation-audit-v3.html
+
+Sitemap: https://temidayoafonja.com/sitemap.xml

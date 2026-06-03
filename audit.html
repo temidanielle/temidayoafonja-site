@@ -5,7 +5,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Capability Formation Audit · Temidayo Afonja</title>
+<meta name="description" content="The Capability Formation Audit. Ten questions, five minutes. A diagnostic that maps your capability across Density, Optionality, and Alumni Capital.">
+<link rel="canonical" href="https://temidayoafonja.com/audit.html">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Temidayo Afonja">
+<meta property="og:url" content="https://temidayoafonja.com/audit.html">
+<meta property="og:title" content="The Capability Formation Audit">
+<meta property="og:description" content="Ten questions, five minutes. A diagnostic that maps where your capability is compounding and where it is quietly being lost.">
+<meta property="og:image" content="https://temidayoafonja.com/og-audit.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Capability Formation Audit">
+<meta name="twitter:description" content="Ten questions, five minutes. A diagnostic that maps where your capability is compounding and where it is quietly being lost.">
+<meta name="twitter:image" content="https://temidayoafonja.com/og-audit.png">
+
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script defer data-domain="temidayoafonja.com" src="https://plausible.io/js/script.tagged-events.js"></script>
+<script>window.plausible=window.plausible||function(){(window.plausible.q=window.plausible.q||[]).push(arguments)}</script>
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -76,6 +94,7 @@ nav { position:fixed; top:0; left:0; right:0; z-index:9999; padding:18px 40px; d
 .nav-links a:hover { color:#c9a84c; }
 .nav-cta { color:#112244 !important; background:#c9a84c; padding:10px 20px; }
 .nav-cta:hover { background:#e8c97a !important; }
+@media (max-width:1080px){ .nav-links { display:none !important; } }
 .nav-spacer { height:65px; }
 
 #intro { flex-direction:column; align-items:center; justify-content:center; padding:80px 24px 60px; text-align:center; }
@@ -253,9 +272,12 @@ nav { padding:16px 20px; }
   <div class="nav-links">
     <a href="framework.html">Framework</a>
     <a href="about.html">About</a>
+    <a href="principles.html">Principles</a>
     <a href="work.html">Work With Me</a>
+    <a href="case-studies.html">Case Studies</a>
+    <a href="speaking.html">Speaking</a>
     <a href="book.html">Book</a>
-    <a href="https://temidayoafonja.substack.com" target="_blank">Writing</a>
+    <a href="https://temidayoafonja.substack.com" target="_blank" rel="noopener">Writing</a>
     <a href="audit.html" class="nav-cta">Take the Audit</a>
   </div>
 </nav>
@@ -267,7 +289,7 @@ nav { padding:16px 20px; }
   <div class="wordmark">Temidayo Afonja &middot; Capability Formation Framework</div>
   <h1 class="intro-headline">Do you know what the environments you have been inside have done to your <em>capability?</em></h1>
   <p class="intro-sub">The Capability Formation Audit &middot; 10 Questions &middot; 5 Minutes</p>
-  <p class="intro-benchmark">Built from 16 years of patterns across Big 4 consulting, global life sciences, and high-growth technology. Not survey averages. Real conditions, mapped honestly for the person navigating them and the leader designing them.</p>
+  <p class="intro-benchmark">Built from seventeen years of patterns across Big 4 consulting, global life sciences, and high-growth technology. Not survey averages. Real conditions, mapped honestly for the person inside them and the leader designing them.</p>
   <div class="pillars">
     <div class="pillar">Density</div>
     <div class="pillar-arrow">&rarr;</div>
@@ -971,13 +993,14 @@ function showResults(name) {
   }
   if(pregateNameVal)  document.getElementById("ctaName").value=pregateNameVal;
   if(pregateEmailVal) document.getElementById("ctaEmail").value=pregateEmailVal;
+  if(window.plausible) plausible("Audit Completed", {props:{mode:currentMode, quadrant:qKey}});
   show("results");
 }
 
 // ─── EVENTS ──────────────────────────────────────────────────────────────────
 document.addEventListener("DOMContentLoaded", function(){
 
-  document.getElementById("beginBtn").addEventListener("click", function(){ show("pregate"); });
+  document.getElementById("beginBtn").addEventListener("click", function(){ if(window.plausible) plausible("Audit Started"); show("pregate"); });
 
   document.getElementById("submitPregateBtn").addEventListener("click", function(){
     var email=document.getElementById("pregateEmail").value.trim();
@@ -991,6 +1014,7 @@ document.addEventListener("DOMContentLoaded", function(){
   document.getElementById("skipPregateBtn").addEventListener("click", function(){ pregateNameVal=""; pregateEmailVal=""; show("fork"); });
 
   document.getElementById("forkIndividual").addEventListener("click", function(){
+    if(window.plausible) plausible("Audience Fork Selected", {props:{mode:"Individual"}});
     currentMode="individual"; questions=questionsIndividual; quadrantData=quadrantDataIndividual; summaryData=summaryDataIndividual;
     currentQ=0; answers=new Array(10).fill(null);
     document.getElementById("auditModeBadge").textContent="Individual";
@@ -999,6 +1023,7 @@ document.addEventListener("DOMContentLoaded", function(){
   });
 
   document.getElementById("forkOrg").addEventListener("click", function(){
+    if(window.plausible) plausible("Audience Fork Selected", {props:{mode:"Org Leader"}});
     currentMode="org"; questions=questionsOrg; quadrantData=quadrantDataOrg; summaryData=summaryDataOrg;
     currentQ=0; answers=new Array(10).fill(null);
     document.getElementById("auditModeBadge").textContent="Org Leader";
@@ -1021,7 +1046,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
   document.getElementById("btnNext").addEventListener("click", function(){
     if(answers[currentQ]===null) return;
-    if(currentQ===9){ show("gate"); return; }
+    if(currentQ===9){ if(window.plausible) plausible("Email Gate Reached"); show("gate"); return; }
     currentQ++; renderQuestion();
   });
 
@@ -1059,6 +1084,7 @@ document.addEventListener("DOMContentLoaded", function(){
     fetch("https://formspree.io/f/xjgapael",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify({name:name,role:role,email:email,message:message,source:"results_contact_form",mode:currentMode,quadrant:getQKey(),density:(s.d||0).toFixed(2),optionality:(s.o||0).toFixed(2),alumni_capital:(s.a||0).toFixed(2),completed_at:new Date().toISOString()})
     }).then(function(r){
       if(r.ok){
+        if(window.plausible) plausible("Contact Submitted", {props:{source:"audit-results"}});
         document.getElementById("ctaConfirm").style.display="block"; btn.style.display="none";
         ["ctaName","ctaRole","ctaEmail","ctaMessage"].forEach(function(id){document.getElementById(id).value="";});
       } else { btn.textContent="Send"; btn.disabled=false; }
@@ -1068,5 +1094,6 @@ document.addEventListener("DOMContentLoaded", function(){
 }); // end DOMContentLoaded
 </script>
 
+<script defer src="/nav.js"></script>
 </body>
 </html>

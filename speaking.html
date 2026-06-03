@@ -4,67 +4,53 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Speaking. Temidayo Afonja</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap');
-:root {
-  --navy: #0f2347; --gold: #c9a84c; --gold-light: #e8c97a;
-  --gold-dim: rgba(201,168,76,0.12); --gold-border: rgba(201,168,76,0.25);
-  --cream: #f5f0e8; --cream-70: rgba(245,240,232,0.7);
-  --white: #ffffff; --slate: #8ba0b4; --slate-dim: rgba(139,160,180,0.18);
-}
-* { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body { background: var(--navy); color: var(--cream); font-family: 'DM Sans', sans-serif; font-weight: 300; min-height: 100vh; overflow-x: hidden; }
-body::before { content: ''; position: fixed; inset: 0; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E"); pointer-events: none; z-index: 0; opacity: 0.5; }
-nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; padding: 20px 48px; display: flex; align-items: center; justify-content: space-between; background: rgba(15,35,71,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid var(--slate-dim); }
-.nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 15px; font-weight: 400; letter-spacing: 0.08em; color: var(--white); text-decoration: none; }
-.nav-logo span { color: var(--gold); }
-.nav-links { display: flex; align-items: center; gap: 36px; list-style: none; }
-.nav-links a { font-size: 12px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; color: var(--slate); text-decoration: none; transition: color 0.2s; }
-.nav-links a:hover, .nav-links a.active { color: var(--cream); }
-.nav-cta { font-size: 11px !important; font-weight: 500 !important; color: var(--gold) !important; border: 1px solid var(--gold-border) !important; padding: 8px 18px; transition: all 0.2s !important; }
-.nav-logo-img { height: 28px; width: auto; margin-left: 10px; vertical-align: middle; }
-.nav-cta:hover { background: var(--gold-dim) !important; color: var(--gold-light) !important; }
-.eyebrow { font-size: 10px; font-weight: 500; letter-spacing: 0.24em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; display: block; }
-h2 { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(32px, 4vw, 52px); line-height: 1.12; color: var(--white); }
-.btn-primary { display: inline-block; background: var(--gold); color: var(--navy); border: none; padding: 15px 40px; font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; text-decoration: none; transition: all 0.2s ease; }
-.btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
-.btn-secondary { display: inline-block; background: transparent; color: var(--gold); border: 1px solid var(--gold-border); padding: 14px 36px; font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; cursor: pointer; text-decoration: none; transition: all 0.2s ease; }
-.btn-secondary:hover { border-color: var(--gold); background: var(--gold-dim); transform: translateY(-1px); }
-footer { position: relative; z-index: 1; padding: 48px; border-top: 1px solid var(--slate-dim); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
-.footer-logo { font-family: 'Cormorant Garamond', serif; font-size: 16px; font-weight: 300; color: var(--white); }
-.footer-logo span { color: var(--gold); }
-.footer-tagline { font-size: 12px; color: var(--slate); letter-spacing: 0.05em; margin-top: 4px; }
-.footer-links { display: flex; gap: 28px; list-style: none; }
-.footer-links a { font-size: 12px; letter-spacing: 0.08em; color: var(--slate); text-decoration: none; transition: color 0.2s; }
-.footer-links a:hover { color: var(--cream); }
-.footer-copy { font-size: 11px; color: var(--slate); opacity: 0.6; }
-@keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-.fade-up { animation: fadeUp 0.8s ease forwards; }
-.delay-1 { animation-delay: 0.15s; opacity: 0; }
-.delay-2 { animation-delay: 0.3s; opacity: 0; }
-.delay-3 { animation-delay: 0.45s; opacity: 0; }
-@media (max-width: 768px) { nav { padding: 16px 24px; } .nav-links { display: none; } footer { padding: 32px 24px; flex-direction: column; align-items: flex-start; } }
+<meta name="description" content="Talks built on the Capability Formation Framework for leadership offsites, board sessions, and conferences. Three arguments the framework is built to make.">
+<link rel="canonical" href="https://temidayoafonja.com/speaking.html">
 
-/* PAGE HERO */
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Temidayo Afonja">
+<meta property="og:url" content="https://temidayoafonja.com/speaking.html">
+<meta property="og:title" content="Speaking · Temidayo Afonja">
+<meta property="og:description" content="The Capability Formation Framework translates to stages. Talks for leadership offsites, board sessions, executive retreats, and conferences.">
+<meta property="og:image" content="https://temidayoafonja.com/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Speaking · Temidayo Afonja">
+<meta name="twitter:description" content="The Capability Formation Framework translates to stages. Talks for leadership offsites, board sessions, executive retreats, and conferences.">
+<meta name="twitter:image" content="https://temidayoafonja.com/og-default.png">
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+
+<script defer data-domain="temidayoafonja.com" src="https://plausible.io/js/script.tagged-events.js"></script>
+<script>window.plausible=window.plausible||function(){(window.plausible.q=window.plausible.q||[]).push(arguments)}</script>
+
+<style>
+/* ── Speaking-specific ── */
 .page-hero { padding: 160px 48px 80px; position: relative; z-index: 1; max-width: 1160px; margin: 0 auto; border-bottom: 1px solid var(--slate-dim); }
 .page-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(44px, 6vw, 76px); font-weight: 300; line-height: 1.05; color: var(--white); margin-bottom: 24px; }
 .page-title em { font-style: italic; color: var(--gold-light); }
 .page-intro { font-size: 17px; line-height: 1.85; color: var(--cream-70); max-width: 640px; padding-bottom: 80px; }
 
-/* TOPICS */
 .topics-section { max-width: 1160px; margin: 0 auto; padding: 80px 48px; position: relative; z-index: 1; }
 .topics-header { margin-bottom: 56px; }
 .topics-grid { display: flex; flex-direction: column; gap: 2px; }
 .topic-item { display: grid; grid-template-columns: 80px 1fr auto; gap: 48px; padding: 40px 0; border-bottom: 1px solid var(--slate-dim); align-items: start; transition: background 0.2s; }
 .topic-item:hover { background: var(--gold-dim); padding-left: 16px; padding-right: 16px; margin: 0 -16px; }
 .topic-num { font-family: 'Cormorant Garamond', serif; font-size: 13px; letter-spacing: 0.2em; color: var(--gold); opacity: 0.5; padding-top: 6px; }
-.topic-content {}
 .topic-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(22px, 2.5vw, 30px); font-weight: 300; color: var(--white); margin-bottom: 12px; line-height: 1.2; }
 .topic-desc { font-size: 15px; line-height: 1.8; color: var(--cream-70); max-width: 560px; }
 .topic-format { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--slate); padding-top: 8px; white-space: nowrap; }
 
-/* FORMAT SECTION */
 .format-section { position: relative; z-index: 1; background: rgba(201,168,76,0.04); border-top: 1px solid var(--gold-border); border-bottom: 1px solid var(--gold-border); padding: 80px 48px; }
 .format-inner { max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2px; }
 .format-card { padding: 36px 32px; border: 1px solid var(--slate-dim); transition: border-color 0.2s; }
@@ -73,7 +59,6 @@ footer { position: relative; z-index: 1; padding: 48px; border-top: 1px solid va
 .format-card-title { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 300; color: var(--white); margin-bottom: 12px; }
 .format-card-desc { font-size: 14px; line-height: 1.75; color: var(--cream-70); }
 
-/* BIO */
 .bio-section { max-width: 1160px; margin: 0 auto; padding: 80px 48px; position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
 .bio-text { font-size: 16px; line-height: 1.85; color: var(--cream-70); }
 .bio-text p { margin-bottom: 20px; }
@@ -81,7 +66,6 @@ footer { position: relative; z-index: 1; padding: 48px; border-top: 1px solid va
 .bio-credential { padding: 14px 18px; border: 1px solid var(--slate-dim); font-size: 13px; color: var(--cream-70); display: flex; gap: 12px; align-items: center; }
 .bio-credential::before { content: '→'; color: var(--gold); }
 
-/* INQUIRY */
 .inquiry-section { max-width: 1160px; margin: 0 auto; padding: 0 48px 96px; position: relative; z-index: 1; }
 .inquiry-inner { border: 1px solid var(--gold-border); padding: 56px; background: var(--gold-dim); display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
 .inquiry-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(26px, 3vw, 38px); font-weight: 300; color: var(--white); line-height: 1.25; margin-bottom: 16px; }
@@ -104,12 +88,6 @@ textarea.inquiry-input { min-height: 100px; resize: vertical; }
   .inquiry-inner { grid-template-columns: 1fr; padding: 36px 28px; }
 }
 </style>
-  <link rel="icon" type="image/x-icon" href="/favicon.ico">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
 
@@ -121,8 +99,9 @@ textarea.inquiry-input { min-height: 100px; resize: vertical; }
     <li><a href="principles.html">Principles</a></li>
     <li><a href="work.html">Work With Me</a></li>
     <li><a href="case-studies.html">Case Studies</a></li>
+    <li><a href="speaking.html" class="active">Speaking</a></li>
     <li><a href="book.html">Book</a></li>
-    <li><a href="https://temidayoafonja.substack.com" target="_blank">Writing</a></li>
+    <li><a href="https://temidayoafonja.substack.com" target="_blank" rel="noopener">Writing</a></li>
     <li><a href="audit.html" class="nav-cta">Take the Audit</a></li>
   </ul>
 </nav>
@@ -130,7 +109,7 @@ textarea.inquiry-input { min-height: 100px; resize: vertical; }
 <div class="page-hero">
   <span class="eyebrow fade-up delay-1">Speaking</span>
   <h1 class="page-title fade-up delay-2">The framework is<br>designed to be <em>presented.</em></h1>
-  <p class="page-intro fade-up delay-3">The Capability Formation Framework translates to stages. Every engagement is customized to the organizational context. The goal is not a keynote. It is a conversation that changes how a room thinks about what they are building — and what they owe the people inside it.</p>
+  <p class="page-intro fade-up delay-3">The Capability Formation Framework translates to stages. Every engagement is customized to the organizational context. The goal is not a keynote. It is a conversation that changes how a room thinks about what they are building, and what they owe the people inside it.</p>
 </div>
 
 <!-- SIGNATURE TOPICS -->
@@ -144,28 +123,28 @@ textarea.inquiry-input { min-height: 100px; resize: vertical; }
     <div class="topic-item fade-up delay-1">
       <div class="topic-num">01</div>
       <div class="topic-content">
-        <div class="topic-title">The Four States of Capability — and Why Most Organizations Are Producing the Wrong One</div>
-        <p class="topic-desc">Why organizations produce Depth Traps and Fragile performers at scale — and what Compounding capability requires that comfort-based development never delivers. The Career Strategy Matrix makes this immediately visual and actionable for senior audiences. Leaves the room with a framework they can use the next morning.</p>
+        <div class="topic-title">The Four States of Capability, and Why Most Organizations Are Producing the Wrong One</div>
+        <p class="topic-desc">Why organizations produce Depth Traps and Fragile performers at scale, and what Compounding capability requires that comfort-based development never delivers. The Career Strategy Matrix makes this immediately visual and actionable for senior audiences. Leaves the room with a framework they can use the next morning.</p>
       </div>
-      <div class="topic-format">60 — 90 min · Leadership offsites · CHRO peer groups</div>
+      <div class="topic-format">60 to 90 min · Leadership offsites · CHRO peer groups</div>
     </div>
 
     <div class="topic-item fade-up delay-2">
       <div class="topic-num">02</div>
       <div class="topic-content">
-        <div class="topic-title">Alumni Capital as Competitive Advantage — What Leaves With Your People and How to Keep It Working for You</div>
-        <p class="topic-desc">The organizations winning the next decade are not just retaining talent. They are designing for circulation — building institutional gravity that draws capability back. This talk reframes how leaders think about exits, alumni networks, and the residual value of the people who have already left.</p>
+        <div class="topic-title">Alumni Capital as Competitive Advantage, and What Leaves With Your People</div>
+        <p class="topic-desc">The organizations winning the next decade are not just retaining talent. They are designing for circulation, building institutional gravity that draws capability back. This talk reframes how leaders think about exits, alumni networks, and the residual value of the people who have already left.</p>
       </div>
-      <div class="topic-format">45 — 60 min · Executive retreats · Board sessions</div>
+      <div class="topic-format">45 to 60 min · Executive retreats · Board sessions</div>
     </div>
 
     <div class="topic-item fade-up delay-1">
       <div class="topic-num">03</div>
       <div class="topic-content">
-        <div class="topic-title">Building Capability That Outlasts Volatility — What Organizations Owe the People Who Build Them</div>
+        <div class="topic-title">Building Capability That Outlasts Volatility, and What Organizations Owe the People Who Build Them</div>
         <p class="topic-desc">The keynote version of the book's core argument. Why AI adoption without capability density produces cosmetic transformation. What the current wave of restructuring is revealing about how organizations actually developed their people. And what the ones that come out stronger will have built differently before the disruption arrived.</p>
       </div>
-      <div class="topic-format">45 — 75 min · Conferences · Company all-hands</div>
+      <div class="topic-format">45 to 75 min · Conferences · Company all-hands</div>
     </div>
 
   </div>
@@ -182,7 +161,7 @@ textarea.inquiry-input { min-height: 100px; resize: vertical; }
     <div class="format-card fade-up delay-2">
       <span class="format-card-label">Dual Audience</span>
       <div class="format-card-title">Speaks to leaders and individuals in the same room</div>
-      <p class="format-card-desc">The framework was built for both the leader designing the system and the individual navigating it. A room with both audiences leaves with something that lands for everyone — not a message that cuts half the room out.</p>
+      <p class="format-card-desc">The framework was built for both the leader designing the system and the individual inside it. A room with both audiences leaves with something that lands for everyone, not a message that cuts half the room out.</p>
     </div>
     <div class="format-card fade-up delay-1">
       <span class="format-card-label">Actionable</span>
@@ -198,8 +177,8 @@ textarea.inquiry-input { min-height: 100px; resize: vertical; }
     <span class="eyebrow">For Event Organizers</span>
     <h2 style="margin-bottom: 28px;">Speaker biography.</h2>
     <div class="bio-text">
-      <p>Temidayo Afonja is an organizational capability architect and the creator of the Capability Formation Framework — a diagnostic system for understanding how organizations build, retain, and circulate human capability across Density, Optionality, and Alumni Capital.</p>
-      <p>Her work draws on sixteen years of practice across Big 4 consulting, global life sciences, and high-growth technology, working with leadership teams navigating restructuring, AI transition, and the organizational design challenges that conventional talent strategy was never built to solve.</p>
+      <p>Temidayo Afonja is an organizational capability architect and the creator of the Capability Formation Framework, a diagnostic system for understanding how organizations build, retain, and circulate human capability across Density, Optionality, and Alumni Capital.</p>
+      <p>Her work draws on seventeen years of practice across Big 4 consulting, global life sciences, and high-growth technology, working with leadership teams facing restructuring, AI transition, and the organizational design challenges that conventional talent strategy was never built to solve.</p>
       <p>She speaks to the questions organizations are asking but not yet answering clearly: what it costs to build people well, what it costs not to, and what the architecture of compounding capability actually looks like in practice. Her book, <em>Density: Building Capability That Outlasts Volatility</em>, is in development.</p>
     </div>
   </div>
@@ -211,7 +190,7 @@ textarea.inquiry-input { min-height: 100px; resize: vertical; }
       <div class="bio-credential">Board and C-suite presentations</div>
       <div class="bio-credential">Conference keynotes and panel sessions</div>
       <div class="bio-credential">Company all-hands and town halls</div>
-      <div class="bio-credential">L&D and talent strategy summits</div>
+      <div class="bio-credential">L&amp;D and talent strategy summits</div>
     </div>
     <div style="margin-top: 32px;">
       <a href="/cdn-cgi/l/email-protection#d1a5b4bcb8b5b0a8bebda4a6be91b6bcb0b8bdffb2bebceea2a4b3bbb4b2a5ec82a1b4b0bab8bfb6f198bfa0a4b8a3a8" class="btn-primary">Inquire About Speaking &rarr;</a>
@@ -227,14 +206,19 @@ textarea.inquiry-input { min-height: 100px; resize: vertical; }
       <p class="inquiry-sub">No standard decks. No off-the-shelf keynotes. The framework is customized to the organizational context, the audience, and what the room actually needs to walk away with. Tell me what you are planning and we will determine whether and how this fits.</p>
     </div>
     <div>
-      <div class="inquiry-form">
-        <input class="inquiry-input" type="text" id="spkName" placeholder="Your name">
-        <input class="inquiry-input" type="text" id="spkOrg" placeholder="Organization / event name">
-        <input class="inquiry-input" type="email" id="spkEmail" placeholder="Email address *">
-        <textarea class="inquiry-input" id="spkMsg" placeholder="Tell me about the event — audience, format, date, what you are hoping the room walks away with."></textarea>
-        <button class="btn-primary" style="align-self: flex-start;" onclick="handleSpeaking(event)">Send Inquiry &rarr;</button>
+      <form class="inquiry-form" onsubmit="handleSpeaking(event)">
+        <label class="visually-hidden" for="spkName">Your name</label>
+        <input class="inquiry-input" type="text" id="spkName" placeholder="Your name" autocomplete="name">
+        <label class="visually-hidden" for="spkOrg">Organization or event name</label>
+        <input class="inquiry-input" type="text" id="spkOrg" placeholder="Organization / event name" autocomplete="organization">
+        <label class="visually-hidden" for="spkEmail">Email address</label>
+        <input class="inquiry-input" type="email" id="spkEmail" placeholder="Email address *" autocomplete="email">
+        <label class="visually-hidden" for="spkMsg">About the event</label>
+        <textarea class="inquiry-input" id="spkMsg" placeholder="Tell me about the event: audience, format, date, what you are hoping the room walks away with."></textarea>
+        <input type="text" name="company_website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;" aria-hidden="true">
+        <button class="btn-primary" type="submit" style="align-self: flex-start;">Send Inquiry &rarr;</button>
         <p id="spkConfirm" style="display:none;color:#6ab894;font-size:13px;margin-top:4px;">Inquiry sent. Temidayo Afonja will be in touch.</p>
-      </div>
+      </form>
       <p style="margin-top:16px;font-size:12px;color:var(--slate);">Or reach out directly at <a href="/cdn-cgi/l/email-protection#295d4c44404d485046455c5e46694e44484045074a4644" style="color:var(--gold);text-decoration:none;"><span class="__cf_email__" data-cfemail="85f1e0e8ece1e4fceae9f0f2eac5e2e8e4ece9abe6eae8">[email&#160;protected]</span></a></p>
     </div>
   </div>
@@ -251,18 +235,22 @@ textarea.inquiry-input { min-height: 100px; resize: vertical; }
     <li><a href="audit.html">Audit</a></li>
     <li><a href="work.html">Work With Me</a></li>
     <li><a href="case-studies.html">Case Studies</a></li>
-    <li><a href="https://temidayoafonja.substack.com" target="_blank">Substack</a></li>
+    <li><a href="speaking.html">Speaking</a></li>
+    <li><a href="https://temidayoafonja.substack.com" target="_blank" rel="noopener">Substack</a></li>
   </ul>
   <div class="footer-copy">&copy; 2026 Temidayo Afonja. All rights reserved.</div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script>
 function handleSpeaking(e) {
   e.preventDefault();
   var name = document.getElementById('spkName').value.trim();
   var org = document.getElementById('spkOrg').value.trim();
   var email = document.getElementById('spkEmail').value.trim();
   var msg = document.getElementById('spkMsg').value.trim();
+  var honeypot = document.querySelector('input[name="company_website"]').value;
+  if (honeypot) { return; }
   if (!email || !email.includes('@')) { document.getElementById('spkEmail').style.borderColor = '#c8503c'; document.getElementById('spkEmail').focus(); return; }
   document.getElementById('spkEmail').style.borderColor = '';
   var btn = document.querySelector('.inquiry-form .btn-primary');
@@ -270,5 +258,22 @@ function handleSpeaking(e) {
   fetch('https://formspree.io/f/xjgapael', {
     method: 'POST',
     headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
-    body: JSON.stringify({name, org, email, message: msg, source: 'speaking-inquiry'})
-  }).then(funct
+    body: JSON.stringify({name: name, org: org, email: email, message: msg, source: 'speaking-inquiry'})
+  }).then(function(r) {
+    if (r.ok) {
+      if (window.plausible) plausible('Speaking Inquiry');
+      document.querySelector('.inquiry-form').reset();
+      btn.style.display = 'none';
+      document.getElementById('spkConfirm').style.display = 'block';
+    } else {
+      btn.textContent = 'Send Inquiry →'; btn.disabled = false;
+    }
+  }).catch(function() {
+    btn.textContent = 'Send Inquiry →'; btn.disabled = false;
+  });
+}
+</script>
+
+<script defer src="/nav.js"></script>
+</body>
+</html>
