@@ -112,8 +112,10 @@
       <div class="book-notify">
         <label class="visually-hidden" for="bookEmail">Your email address</label>
         <input class="notify-input" id="bookEmail" type="email" placeholder="Your email address" autocomplete="email">
+        <input type="text" id="bookGotcha" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none !important;">
         <button class="btn-primary" id="joinBtn" style="align-self:flex-start;">Join the List →</button>
         <p id="joinConfirm" style="display:none;color:#6ab894;font-size:13px;margin-top:10px;">You're on the list. Temidayo Afonja will be in touch when the book is ready.</p>
+        <p id="joinError" style="display:none;color:#e07060;font-size:13px;margin-top:10px;">Something went wrong joining the list. Please try again, or email temidayo@thedensitygroup.com.</p>
       </div>
       <div style="margin-top:20px;">
         <p style="font-size:13px;color:var(--slate);margin-bottom:12px;letter-spacing:0.04em;">Follow the argument being built in real time. Every essay is a chapter being stress-tested before it is set.</p>
@@ -190,12 +192,13 @@ document.addEventListener('DOMContentLoaded', function() {
       return;
     }
     input.style.borderColor = '';
+    document.getElementById('joinError').style.display = 'none';
     btn.textContent = 'Joining...';
     btn.disabled = true;
     fetch('https://formspree.io/f/xjgapael', {
       method: 'POST',
       headers: {'Content-Type':'application/json','Accept':'application/json'},
-      body: JSON.stringify({email: email, source: 'book-waitlist'})
+      body: JSON.stringify({email: email, source: 'book-waitlist', _gotcha: document.getElementById('bookGotcha').value})
     }).then(function(r) {
       if (r.ok) {
         if (window.plausible) plausible('Book Waitlist Joined');
@@ -203,10 +206,12 @@ document.addEventListener('DOMContentLoaded', function() {
         input.style.display = 'none';
         document.getElementById('joinConfirm').style.display = 'block';
       } else {
+        document.getElementById('joinError').style.display = 'block';
         btn.textContent = 'Join the List →';
         btn.disabled = false;
       }
     }).catch(function() {
+      document.getElementById('joinError').style.display = 'block';
       btn.textContent = 'Join the List →';
       btn.disabled = false;
     });

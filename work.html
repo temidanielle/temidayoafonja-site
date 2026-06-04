@@ -341,6 +341,7 @@ textarea.contact-input { min-height: 120px; resize: vertical; }
       <input class="contact-input" id="cEmail" type="email" placeholder="Work email" autocomplete="email">
       <label class="visually-hidden" for="cMsg">What are you working through right now?</label>
       <textarea class="contact-input" id="cMsg" placeholder="What are you working through right now?"></textarea>
+      <input type="text" id="cGotcha" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none !important;">
       <button class="btn-primary" type="submit" style="align-self:flex-start;">Send &rarr;</button>
     </form>
     <p style="margin-top:20px;font-size:12px;color:var(--slate);">Response within one business week. Your details are used only to reply to your note.</p>
@@ -387,7 +388,7 @@ function handleContact(e) {
   fetch('https://formspree.io/f/xjgapael', {
     method: 'POST',
     headers: {'Content-Type':'application/json','Accept':'application/json'},
-    body: JSON.stringify({name:name, email:email, organization:org, role:role, message:msg, source:'work-page'})
+    body: JSON.stringify({name:name, email:email, organization:org, role:role, message:msg, source:'work-page', _gotcha:document.getElementById('cGotcha').value})
   })
   .then(function(res) {
     if (res.ok) {
