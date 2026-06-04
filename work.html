@@ -341,7 +341,6 @@ textarea.contact-input { min-height: 120px; resize: vertical; }
       <input class="contact-input" id="cEmail" type="email" placeholder="Work email" autocomplete="email">
       <label class="visually-hidden" for="cMsg">What are you working through right now?</label>
       <textarea class="contact-input" id="cMsg" placeholder="What are you working through right now?"></textarea>
-      <input type="text" name="company_website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px;" aria-hidden="true">
       <button class="btn-primary" type="submit" style="align-self:flex-start;">Send &rarr;</button>
     </form>
     <p style="margin-top:20px;font-size:12px;color:var(--slate);">Response within one business week. Your details are used only to reply to your note.</p>
@@ -382,8 +381,6 @@ function handleContact(e) {
   var org   = document.getElementById('cOrg').value.trim();
   var role  = document.getElementById('cRole').value.trim();
   var msg   = document.getElementById('cMsg').value.trim();
-  var honeypot = document.querySelector('input[name="company_website"]').value;
-  if (honeypot) { return; }
   if (!email || !name) { alert('Please enter your name and email.'); return; }
   var btn = document.querySelector('.contact-form .btn-primary');
   btn.textContent = 'Sending...';
