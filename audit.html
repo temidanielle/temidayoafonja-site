@@ -101,7 +101,8 @@ nav { position:fixed; top:0; left:0; right:0; z-index:9999; padding:18px 40px; d
 @media (max-width:1080px){ .nav-links { display:none !important; } }
 .nav-spacer { height:65px; }
 
-#intro { flex-direction:column; align-items:center; justify-content:center; padding:80px 24px 60px; text-align:center; }
+#intro, #orgIntro { flex-direction:column; align-items:center; justify-content:center; padding:80px 24px 60px; text-align:center; }
+#orgIntro .intro-benchmark { font-style:normal; }
 .wordmark { font-family:‘Cormorant Garamond’,serif; font-weight:300; font-size:13px; letter-spacing:0.22em; text-transform:uppercase; color:#c9a84c; margin-bottom:48px; }
 .intro-headline { font-family:‘Cormorant Garamond’,serif; font-weight:300; font-size:clamp(32px,5vw,60px); line-height:1.1; color:#ffffff; max-width:720px; margin-bottom:16px; }
 .intro-headline em { font-style:italic; color:#e8c97a; }
@@ -380,6 +381,15 @@ nav { padding:16px 20px; }
 
 <!-- SCREEN 4: AUDIT -->
 
+<!-- SCREEN: ORG LEADER INTRO (org path only) -->
+<div id="orgIntro" class="screen">
+  <div class="wordmark">For Organizational Leaders</div>
+  <h1 class="intro-headline">Can your organization take on AI without losing what holds it together?</h1>
+  <p class="intro-benchmark">Ten questions, about five minutes. They map whether this organization is building the capability to absorb AI driven change or quietly losing it. You will see where you stand before the change forces the answer.</p>
+  <button class="btn-primary" id="orgIntroStart">Start the audit &rarr;</button>
+  <p class="intro-meta">Already know you need this? <a href="ai-capability-readiness.html" style="color:#c9a84c;text-decoration:none;">See the diagnostic.</a></p>
+</div>
+
 <div id="audit" class="screen">
   <div class="audit-left">
     <div class="audit-header">
@@ -486,7 +496,7 @@ nav { padding:16px 20px; }
       <!-- ORG LEADER NEXT STEP (shown for org mode) -->
       <div class="cta-box" id="orgOfferBox" style="display:none;">
         <div class="cta-box-title">Your Next Step: The AI Capability Readiness Diagnostic</div>
-        <div class="cta-box-sub">You have seen where your organization sits. The AI Capability Readiness Diagnostic turns that read into a plan. Your leadership team takes the assessment, then receives an interpreted capability read, a leadership working session, and a prioritized action map for absorbing AI driven change without losing institutional resilience. Built on the Capability Formation Framework.</div>
+        <div class="cta-box-sub">You have seen where your organization sits. The AI Capability Readiness Diagnostic turns that read into a plan. Your leadership team takes the full assessment, a deeper version of what you just completed, then receives an interpreted capability read, a leadership working session, and a prioritized action map for absorbing AI driven change without losing institutional resilience. Built on the Capability Formation Framework.</div>
         <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;">
           <a href="ai-capability-readiness.html" style="display:inline-block;background:#c9a84c !important;color:#112244 !important;padding:14px 32px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;-webkit-text-fill-color:#112244 !important;">See the Diagnostic &rarr;</a>
           <span style="font-size:13px;color:rgba(245,240,232,0.45);">or</span>
@@ -1039,14 +1049,29 @@ document.addEventListener("DOMContentLoaded", function(){
     show("audit"); renderQuestion();
   });
 
-  document.getElementById("forkOrg").addEventListener("click", function(){
-    if(window.plausible) plausible("Audience Fork Selected", {props:{mode:"Org Leader"}});
+  function setupOrg(){
     currentMode="org"; questions=questionsOrg; quadrantData=quadrantDataOrg; summaryData=summaryDataOrg;
     currentQ=0; answers=new Array(10).fill(null);
     document.getElementById("auditModeBadge").textContent="Org Leader";
     document.getElementById("switchModeBtn").textContent="Switch to individual audit";
+  }
+
+  document.getElementById("forkOrg").addEventListener("click", function(){
+    if(window.plausible) plausible("Audience Fork Selected", {props:{mode:"Org Leader"}});
+    setupOrg();
+    show("orgIntro");
+  });
+
+  document.getElementById("orgIntroStart").addEventListener("click", function(){
     show("audit"); renderQuestion();
   });
+
+  // Deep link: audit.html?audience=org opens the Organization Leader audit directly.
+  if(new URLSearchParams(window.location.search).get("audience")==="org"){
+    if(window.plausible){ plausible("Audit Started"); plausible("Audience Fork Selected", {props:{mode:"Org Leader"}}); }
+    setupOrg();
+    show("orgIntro");
+  }
 
   document.getElementById("switchModeBtn").addEventListener("click", function(){
     if(currentMode==="individual"){
