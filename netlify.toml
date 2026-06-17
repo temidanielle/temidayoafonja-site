@@ -1,3 +1,15 @@
+[build]
+  publish = "."
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/institutional-diagnostic"
+  to = "/institutional-diagnostic.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]

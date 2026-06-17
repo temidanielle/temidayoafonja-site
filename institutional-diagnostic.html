@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="color-scheme" content="dark" />
+<title>Institutional Resilience Diagnostic · The Density Group</title>
+<meta name="description" content="A live institutional diagnostic for leaders. Eleven questions read your organization across density, optionality, and alumni capital, then name what your position is costing or compounding." />
+<link rel="canonical" href="https://temidayoafonja.com/institutional-diagnostic.html" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Temidayo Afonja" />
+<meta property="og:url" content="https://temidayoafonja.com/institutional-diagnostic.html" />
+<meta property="og:title" content="Institutional Resilience Diagnostic" />
+<meta property="og:description" content="A live read of whether your organization builds capability that lasts or quietly leaks it, across density, optionality, and alumni capital." />
+<meta property="og:image" content="https://temidayoafonja.com/og-default.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Institutional Resilience Diagnostic" />
+<meta name="twitter:description" content="A live read of whether your organization builds capability that lasts or quietly leaks it, across density, optionality, and alumni capital." />
+<meta name="twitter:image" content="https://temidayoafonja.com/og-default.png" />
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+<script async src="https://plausible.io/js/pa-hFo9m_622E0tElKtUlVnx.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+<style>
+  :root{
+    color-scheme:dark;
+    --navy:#0F2347;
+    --navy-card:#1B3360;
+    --navy-lift:#234077;
+    --navy-line:#41598a;
+    --rust:#C1440E;
+    --rust-light:#E2733E;
+    --gold:#C9A84C;
+    --gold-soft:#d8bd6f;
+    --gold-deep:#B8952E;
+    --sand:#F5F0E8;
+    --sand-deep:#ece3d4;
+    --sand-dim:#e2dccf;
+    --sand-mute:#b4bccb;
+    --ink:#1a1f2b;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--navy);}
+  body{
+    min-height:100vh;
+    color:var(--sand);
+    font-family:"DM Sans",system-ui,sans-serif;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:44px 24px 96px;}
+
+  .brand{display:flex;align-items:center;gap:14px;margin:0 0 24px;}
+  .brand-link{display:flex;align-items:center;gap:14px;text-decoration:none;}
+  .mark{width:46px;height:46px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:4px;flex:0 0 auto;}
+  .mark .sq{border:2px solid var(--gold);border-radius:2px;}
+  .mark .sq.fill{background:var(--rust);border-color:var(--rust);}
+  .wordmark{font-family:"Montserrat",sans-serif;font-weight:600;font-size:14px;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);line-height:1.2;}
+  h1{font-family:"Cormorant Garamond",serif;font-weight:600;color:var(--sand);font-size:clamp(34px,7vw,52px);line-height:1.04;margin:0 0 16px;letter-spacing:0.01em;}
+  .lede{font-size:17px;max-width:54ch;color:var(--sand-dim);margin:0 0 8px;}
+
+  .rule{height:1px;background:rgba(201,168,76,.22);border:0;margin:40px 0;}
+
+  .orgfield{margin:0 0 14px;}
+  .orgfield label{display:block;font-size:14px;font-weight:500;color:var(--sand);margin:0 0 8px;}
+  .orgfield input{width:100%;border:1px solid var(--navy-line);border-radius:10px;padding:12px 14px;font-family:inherit;font-size:14.5px;color:var(--sand);background:var(--navy-card);}
+  .orgfield input::placeholder{color:var(--sand-mute);}
+  .orgfield input:focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-color:var(--gold);}
+
+  .pillar{margin:0 0 8px;}
+  .pillar-head{display:flex;align-items:baseline;gap:14px;margin:36px 0 4px;flex-wrap:wrap;}
+  .pillar-head h2{font-family:"Cormorant Garamond",serif;font-weight:600;color:var(--gold);font-size:28px;margin:0;letter-spacing:0.01em;}
+  .pillar-head .tag{font-style:italic;font-family:"Cormorant Garamond",serif;font-size:18px;color:var(--gold-soft);}
+  .pillar-sub{font-size:14px;color:var(--sand-mute);margin:0 0 14px;}
+
+  .q{margin:0 0 22px;}
+  .q-text{font-size:15.5px;font-weight:500;color:var(--sand);margin:0 0 10px;}
+  .opts{display:grid;gap:8px;}
+  .opt{position:relative;}
+  .opt input{position:absolute;opacity:0;pointer-events:none;}
+  .opt label{display:block;cursor:pointer;border:1px solid var(--navy-line);background:var(--navy-card);border-radius:10px;padding:12px 15px;font-size:14.5px;color:var(--sand-dim);transition:border-color .15s,background .15s,color .15s;}
+  .opt label:hover{border-color:var(--gold);}
+  .opt input:focus-visible + label{outline:2px solid var(--gold);outline-offset:2px;}
+  .opt input:checked + label{border-color:var(--gold);background:var(--navy-lift);color:var(--sand);font-weight:500;box-shadow:inset 3px 0 0 var(--rust);}
+
+  .context label{display:block;font-size:14px;font-weight:500;color:var(--sand);margin:0 0 8px;}
+  textarea{width:100%;min-height:88px;resize:vertical;border:1px solid var(--navy-line);border-radius:10px;padding:12px 14px;font-family:inherit;font-size:14.5px;color:var(--sand);background:var(--navy-card);}
+  textarea::placeholder{color:var(--sand-mute);}
+  textarea:focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-color:var(--gold);}
+
+  .run{margin-top:30px;display:inline-flex;align-items:center;gap:10px;background:var(--sand);color:var(--navy);border:0;cursor:pointer;font-family:inherit;font-size:15px;font-weight:700;letter-spacing:0.02em;padding:15px 32px;border-radius:11px;transition:background .15s,transform .05s;}
+  .run:hover{background:#ffffff;}
+  .run:active{transform:translateY(1px);}
+  .run:disabled{opacity:.5;cursor:default;}
+  .run .dot{display:none;}
+
+  .note{font-size:13px;color:var(--sand-mute);margin-top:14px;}
+  .sample-link{display:inline-block;margin-top:14px;background:none;border:0;color:var(--gold);font-family:inherit;font-size:13.5px;text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:0;}
+  .sample-link:hover{color:var(--gold-soft);}
+
+  .result{margin-top:44px;display:none;}
+  .result.show{display:block;animation:rise .5s ease both;}
+  @keyframes rise{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:none;}}
+
+  .card{background:var(--navy-card);border:1px solid rgba(201,168,76,.3);border-radius:18px;padding:34px 30px;color:var(--sand);}
+  .card .qd-eyebrow{font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);font-weight:600;margin:0 0 10px;}
+  .card .qd-name{font-family:"Cormorant Garamond",serif;font-size:40px;font-weight:600;margin:0 0 6px;color:#fff;line-height:1.05;}
+  .card .headline{font-size:16.5px;color:var(--sand-dim);margin:0;max-width:52ch;}
+
+  .matrix-wrap{margin:30px 0 8px;}
+  .matrix-axis-top{display:flex;justify-content:space-between;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin:0 0 8px 64px;}
+  .matrix-row{display:flex;align-items:stretch;gap:10px;}
+  .matrix-yaxis{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end;width:54px;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);padding:6px 0;}
+  .matrix{flex:1;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:10px;}
+  .cell{border:1.5px solid rgba(201,168,76,.55);border-radius:10px;min-height:84px;padding:12px;display:flex;flex-direction:column;justify-content:space-between;}
+  .cell .cn{font-family:"Cormorant Garamond",serif;font-size:19px;color:var(--gold);line-height:1.1;}
+  .cell .cc{font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(245,240,232,.82);}
+  .cell.active{background:var(--rust);border-color:var(--rust);}
+  .cell.active .cn{color:#fff;}
+  .cell.active .cc{color:rgba(255,255,255,.9);}
+
+  .axis-caption{font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);text-align:center;margin:10px 0 0 64px;}
+
+  .levels{display:flex;gap:0;margin:26px 0 4px;border-top:1px solid rgba(201,168,76,.25);}
+  .lvl{flex:1;padding:16px 6px 0;text-align:center;border-right:1px solid rgba(201,168,76,.18);}
+  .lvl:last-child{border-right:0;}
+  .lvl .ln{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--sand-mute);margin:0 0 6px;}
+  .lvl .lv{font-family:"Cormorant Garamond",serif;font-size:22px;color:var(--gold);text-transform:capitalize;}
+
+  .read{margin-top:34px;}
+  .read p{font-size:16px;color:var(--sand-dim);margin:0 0 18px;}
+  .leaders{background:var(--navy-lift);border-left:3px solid var(--rust);border-radius:0 12px 12px 0;padding:22px 24px;margin-top:8px;}
+  .leaders .lh{font-family:"Cormorant Garamond",serif;font-size:22px;color:var(--gold);margin:0 0 10px;}
+  .leaders p{font-size:15.5px;color:var(--sand-dim);margin:0;}
+
+  .result-actions{margin-top:30px;display:flex;gap:10px;flex-wrap:wrap;}
+  .again{background:none;border:1px solid var(--gold);color:var(--gold);border-radius:11px;padding:13px 24px;font-family:inherit;font-size:14.5px;font-weight:600;cursor:pointer;transition:background .15s,color .15s;}
+  .again:hover{background:var(--gold);color:var(--navy);}
+  .makereport{background:var(--gold);border:1px solid var(--gold);color:var(--navy);border-radius:11px;padding:13px 24px;font-family:inherit;font-size:14.5px;font-weight:700;cursor:pointer;transition:background .15s;}
+  .makereport:hover{background:var(--gold-soft);}
+
+  .status{margin-top:28px;font-size:15px;color:var(--sand);display:none;}
+  .status.show{display:block;}
+  .status.err{color:var(--rust-light);}
+  .spinner{display:inline-block;width:14px;height:14px;border:2px solid rgba(245,240,232,.25);border-top-color:var(--sand);border-radius:50%;animation:spin .7s linear infinite;vertical-align:-2px;margin-right:8px;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+
+  /* report (light leave-behind) */
+  .report-doc{display:none;background:#fff;color:var(--ink);border-radius:14px;padding:40px 38px;margin-top:46px;}
+  .report-doc.show{display:block;animation:rise .4s ease both;}
+  .rd-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;border-bottom:1px solid var(--sand-deep);padding-bottom:18px;margin-bottom:22px;}
+  .rd-brand{display:flex;align-items:center;gap:12px;}
+  .rd-mark{width:38px;height:38px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:3px;flex:0 0 auto;}
+  .rd-mark .sq{border:2px solid var(--gold-deep);border-radius:2px;}
+  .rd-mark .sq.fill{background:var(--rust);border-color:var(--rust);}
+  .rd-word{font-family:"Montserrat",sans-serif;font-weight:600;font-size:12px;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold-deep);}
+  .rd-date{font-size:12px;color:#6b7280;text-align:right;letter-spacing:0.03em;white-space:nowrap;}
+  .rd-title{font-family:"Cormorant Garamond",serif;font-weight:600;color:var(--navy);font-size:34px;line-height:1.05;margin:0 0 6px;}
+  .rd-prepared{font-size:13.5px;color:#5a606c;margin:0;}
+  .rd-frame{font-size:14px;color:#3a3f4a;margin:14px 0 26px;max-width:62ch;}
+  .rd-quad-label{font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold-deep);font-weight:600;margin:0 0 6px;}
+  .rd-quad{font-family:"Cormorant Garamond",serif;font-weight:600;color:var(--navy);font-size:30px;margin:0 0 6px;}
+  .rd-headline{font-size:15.5px;color:#3a3f4a;margin:0 0 24px;max-width:60ch;}
+  .rd-matrix-wrap{margin:8px 0 26px;}
+  .rd-axis-top{display:flex;justify-content:space-between;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 6px 58px;}
+  .rd-row{display:flex;gap:8px;}
+  .rd-yaxis{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end;width:50px;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold-deep);padding:4px 0;}
+  .rd-matrix{flex:1;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:8px;}
+  .rd-cell{border:1.5px solid var(--gold-deep);border-radius:8px;min-height:70px;padding:10px;display:flex;flex-direction:column;justify-content:space-between;}
+  .rd-cell .cn{font-family:"Cormorant Garamond",serif;font-size:17px;color:var(--navy);line-height:1.1;}
+  .rd-cell .cc{font-size:9.5px;letter-spacing:0.07em;text-transform:uppercase;color:#7a8090;}
+  .rd-cell.active{background:var(--rust);border-color:var(--rust);}
+  .rd-cell.active .cn{color:#fff;}
+  .rd-cell.active .cc{color:rgba(255,255,255,.85);}
+  .rd-axis-cap{font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold-deep);text-align:center;margin:8px 0 0 58px;}
+  .rd-levels{display:flex;border-top:1px solid var(--sand-deep);border-bottom:1px solid var(--sand-deep);margin:0 0 24px;}
+  .rd-lvl{flex:1;padding:14px 6px;text-align:center;border-right:1px solid var(--sand-deep);}
+  .rd-lvl:last-child{border-right:0;}
+  .rd-lvl .ln{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#7a8090;margin:0 0 5px;}
+  .rd-lvl .lv{font-family:"Cormorant Garamond",serif;font-size:20px;color:var(--navy);text-transform:capitalize;}
+  .rd-read p{font-size:14.5px;color:#33384a;line-height:1.65;margin:0 0 14px;}
+  .rd-leaders{background:var(--sand-deep);border-left:3px solid var(--rust);border-radius:0 10px 10px 0;padding:18px 20px;margin:6px 0 24px;}
+  .rd-leaders .lh{font-family:"Cormorant Garamond",serif;font-size:19px;color:var(--navy);margin:0 0 8px;}
+  .rd-leaders p{font-size:14px;color:#3a3f4a;margin:0;}
+  .rd-equation{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:15px;color:var(--gold-deep);text-align:center;margin:0 0 26px;}
+  .rd-foot{border-top:1px solid var(--sand-deep);padding-top:14px;display:flex;justify-content:space-between;gap:10px;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:#8a909c;}
+  .rd-actions{margin-top:22px;display:flex;gap:10px;flex-wrap:wrap;}
+  .rd-actions button{font-family:inherit;font-size:14px;font-weight:600;border-radius:10px;padding:12px 22px;cursor:pointer;border:0;}
+  .rd-save{background:var(--navy);color:var(--sand);}
+  .rd-close{background:#fff;border:1px solid var(--navy);color:var(--navy);}
+
+  @media (max-width:560px){
+    .wrap{padding:34px 18px 72px;}
+    .matrix-yaxis{width:42px;}
+    .matrix-axis-top{margin-left:52px;}
+    .axis-caption{margin-left:52px;}
+    .report-doc{padding:28px 22px;}
+  }
+  @media (prefers-reduced-motion:reduce){*{animation:none !important;transition:none !important;}}
+
+  @media print{
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    html,body{background:#fff;}
+    .wrap{padding:0;max-width:none;}
+    .wrap > *:not(#report){display:none !important;}
+    #report{display:block !important;margin:0;border-radius:0;padding:0 6px;}
+    .rd-actions{display:none !important;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">
+    <a class="brand-link" href="/" aria-label="The Density Group home">
+      <div class="mark" aria-hidden="true">
+        <span class="sq"></span><span class="sq"></span><span class="sq"></span><span class="sq fill"></span>
+      </div>
+      <span class="wordmark">The Density Group</span>
+    </a>
+  </div>
+  <h1>Institutional Resilience Diagnostic</h1>
+  <p class="lede">Eleven questions read your organization across density, optionality, and alumni capital, then place you in the matrix and tell you what your position is actually costing or compounding.</p>
+
+  <hr class="rule" />
+
+  <div class="orgfield">
+    <label for="orgName">Organization name (optional)</label>
+    <input type="text" id="orgName" placeholder="Used to title the report" />
+  </div>
+
+  <div id="form"></div>
+
+  <button class="run" id="runBtn"><span class="dot"></span> Run the diagnostic</button>
+  <p class="note" id="formNote">Answer the questions above, then run the read. Optional context sharpens the diagnosis.</p>
+  <button class="sample-link" id="sampleBtn">See a sample report</button>
+
+  <div class="status" id="status"></div>
+
+  <div class="result" id="result"></div>
+
+  <div class="report-doc" id="report"></div>
+</div>
+
+<script>
+const PILLARS = [
+  {
+    key:"density", name:"Density", tag:"Intensity, not tenure.",
+    sub:"How high-challenge the environment actually is.",
+    questions:[
+      {id:"d1", text:"How early do people own decisions with real consequences?",
+       options:["Only after years and a senior title","Once they have proven themselves over time","Early, before tenure or title says they have earned it"]},
+      {id:"d2", text:"When a hard problem lands, where does it go?",
+       options:["It concentrates to a few senior people","A mix, depending on the problem","It distributes to the people who own it"]},
+      {id:"d3", text:"Over the last 18 months, the capability bar for most roles has...",
+       options:["Fallen or drifted","Held steady","Risen"]},
+      {id:"d4", text:"The intensity here is mostly tied to...",
+       options:["Sheer volume of work","A bit of both","People growing into harder challenges"]}
+    ]
+  },
+  {
+    key:"optionality", name:"Optionality", tag:"Portable, or trapped.",
+    sub:"How transferable the capability people build actually is.",
+    questions:[
+      {id:"o1", text:"If a strong performer left tomorrow, their skills would be...",
+       options:["Hard to translate outside here","Somewhat transferable","Sought after elsewhere"]},
+      {id:"o2", text:"People here tend to...",
+       options:["Deepen a single narrow lane","Grow within their function","Build range across functions"]},
+      {id:"o3", text:"What people master here is mostly...",
+       options:["Tied to our internal systems and politics","A mix of portable and internal","Portable to other organizations"]}
+    ]
+  },
+  {
+    key:"alumni", name:"Alumni Capital", tag:"What stays after they go.",
+    sub:"What the organization retains and circulates after people leave.",
+    questions:[
+      {id:"a1", text:"When someone leaves, the relationship is...",
+       options:["Severed","Politely dropped","Maintained"]},
+      {id:"a2", text:"Former employees...",
+       options:["Rarely come back in any form","Occasionally refer someone","Send talent and clients back to us"]},
+      {id:"a3", text:"When a person leaves, their knowledge...",
+       options:["Walks out the door with them","Partially stays","Stays usable by the team"]},
+      {id:"a4", text:"Rehiring someone who left is...",
+       options:["Stigmatized or not done","Tolerated case by case","Celebrated"]}
+    ]
+  }
+];
+
+const QUADRANT_POS = {
+  "Depth Trap":   {row:0,col:0, code:"High density / Low optionality"},
+  "Compounding":  {row:0,col:1, code:"High density / High optionality"},
+  "Stagnant":     {row:1,col:0, code:"Low density / Low optionality"},
+  "Fragile":      {row:1,col:1, code:"Low density / High optionality"}
+};
+const GRID_ORDER = ["Depth Trap","Compounding","Stagnant","Fragile"];
+
+const SAMPLE = {
+  quadrant:"Depth Trap", density:"high", optionality:"low", alumniCapital:"moderate",
+  headline:"You are a high-pressure environment that builds deep skill people cannot easily carry anywhere else.",
+  read:"Your people work hard and they work close to the edge, which is why your density reads high. The problem is what that intensity produces. The capability your teams build is shaped tightly around your internal systems, your tooling, and the way decisions move through your hierarchy, so it does not travel. People get very good at operating here and much less portable anywhere else.\n\nThat feels like strength from the inside. Performance looks high and tenure looks like loyalty, so the cost stays hidden until someone tries to leave or the ground shifts under you. Each senior departure then carries institutional knowledge out the door, the kind that costs the better part of a year and a replacement hire to rebuild. Your alumni capital is holding at moderate, which is the one thing keeping the position from hardening, because some former people still send talent back and some knowledge stays usable after they go.",
+  leaders:"The work in front of leadership is to widen what the intensity produces, not to dial the intensity down. Build the portable version of the skills your people already have, give them range across functions before the market gives them range for you, and treat the relationships you keep with people who leave as the asset that turns this depth into resilience rather than a trap. How you treat exits determines what you attract at entry, and right now you are quietly training the people the rest of your industry would be glad to hire."
+};
+
+const formEl = document.getElementById("form");
+PILLARS.forEach(p=>{
+  const block = document.createElement("div");
+  block.className="pillar";
+  block.innerHTML = `
+    <div class="pillar-head"><h2>${p.name}</h2><span class="tag">${p.tag}</span></div>
+    <p class="pillar-sub">${p.sub}</p>`;
+  p.questions.forEach(q=>{
+    const qd = document.createElement("div");
+    qd.className="q";
+    let opts = q.options.map((o,i)=>`
+      <div class="opt">
+        <input type="radio" name="${q.id}" id="${q.id}_${i}" value="${o.replace(/"/g,'&quot;')}">
+        <label for="${q.id}_${i}">${o}</label>
+      </div>`).join("");
+    qd.innerHTML = `<p class="q-text">${q.text}</p><div class="opts">${opts}</div>`;
+    block.appendChild(qd);
+  });
+  formEl.appendChild(block);
+});
+const ctx = document.createElement("div");
+ctx.className="context q";
+ctx.innerHTML = `<label for="ctxBox">Anything else about how your organization builds and keeps capability? (optional)</label><textarea id="ctxBox" placeholder="A sentence or two of context helps the read."></textarea>`;
+formEl.appendChild(ctx);
+
+const runBtn = document.getElementById("runBtn");
+const statusEl = document.getElementById("status");
+const resultEl = document.getElementById("result");
+const reportEl = document.getElementById("report");
+const orgInput = document.getElementById("orgName");
+const sampleBtn = document.getElementById("sampleBtn");
+let lastDiagnosis = null;
+
+function collect(){
+  const answers=[];
+  let missing=0;
+  PILLARS.forEach(p=>{
+    p.questions.forEach(q=>{
+      const sel = document.querySelector(`input[name="${q.id}"]:checked`);
+      if(!sel){missing++;}
+      else{answers.push(`[${p.name}] ${q.text} Answer: ${sel.value}`);}
+    });
+  });
+  const ctxVal = document.getElementById("ctxBox").value.trim();
+  if(ctxVal){answers.push(`[Added context] ${ctxVal}`);}
+  return {answers, missing};
+}
+
+function esc(s){return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+function paras(s){return esc(s).split(/\n\n+/).map(t=>`<p>${t.replace(/\n/g," ")}</p>`).join("");}
+function fmtDate(){return new Date().toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});}
+
+function renderMatrix(active){
+  let cells = GRID_ORDER.map(name=>{
+    const pos = QUADRANT_POS[name];
+    const on = name===active ? " active":"";
+    return `<div class="cell${on}"><div class="cn">${name}</div><div class="cc">${pos.code}</div></div>`;
+  }).join("");
+  return `
+    <div class="matrix-wrap">
+      <div class="matrix-axis-top"><span>Low optionality</span><span>High optionality</span></div>
+      <div class="matrix-row">
+        <div class="matrix-yaxis"><span>High<br>density</span><span>Low<br>density</span></div>
+        <div class="matrix">${cells}</div>
+      </div>
+      <div class="axis-caption">Optionality</div>
+    </div>`;
+}
+
+function reportMatrix(active){
+  let cells = GRID_ORDER.map(name=>{
+    const pos = QUADRANT_POS[name];
+    const on = name===active ? " active":"";
+    return `<div class="rd-cell${on}"><div class="cn">${name}</div><div class="cc">${pos.code}</div></div>`;
+  }).join("");
+  return `
+    <div class="rd-matrix-wrap">
+      <div class="rd-axis-top"><span>Low optionality</span><span>High optionality</span></div>
+      <div class="rd-row">
+        <div class="rd-yaxis"><span>High<br>density</span><span>Low<br>density</span></div>
+        <div class="rd-matrix">${cells}</div>
+      </div>
+      <div class="rd-axis-cap">Optionality</div>
+    </div>`;
+}
+
+function renderResult(d){
+  lastDiagnosis = d;
+  resultEl.innerHTML = `
+    <div class="card">
+      <p class="qd-eyebrow">Your quadrant</p>
+      <div class="qd-name">${esc(d.quadrant)}</div>
+      <p class="headline">${esc(d.headline)}</p>
+      ${renderMatrix(d.quadrant)}
+      <div class="levels">
+        <div class="lvl"><p class="ln">Density</p><div class="lv">${esc(d.density)}</div></div>
+        <div class="lvl"><p class="ln">Optionality</p><div class="lv">${esc(d.optionality)}</div></div>
+        <div class="lvl"><p class="ln">Alumni Capital</p><div class="lv">${esc(d.alumniCapital)}</div></div>
+      </div>
+    </div>
+    <div class="read">
+      <div class="read-body">${paras(d.read)}</div>
+      <div class="leaders">
+        <p class="lh">What this means for leaders</p>
+        ${paras(d.leaders)}
+      </div>
+    </div>
+    <div class="result-actions">
+      <button class="makereport" id="reportBtn">Create the report</button>
+      <button class="again" id="againBtn">Run another read</button>
+    </div>
+    <div id="gate"></div>`;
+  resultEl.classList.add("show");
+  document.getElementById("againBtn").addEventListener("click",()=>{
+    resultEl.classList.remove("show"); resultEl.innerHTML="";
+    reportEl.classList.remove("show"); reportEl.innerHTML="";
+    window.scrollTo({top:0,behavior:"smooth"});
+  });
+  document.getElementById("reportBtn").addEventListener("click",()=>{
+    showGate();
+  });
+  resultEl.scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+function showGate(){
+  const gate = document.getElementById("gate");
+  if(!gate) return;
+  document.getElementById("reportBtn").style.display = "none";
+  gate.innerHTML = `
+    <div class="card" style="margin-top:18px;">
+      <p class="qd-eyebrow">One step to your report</p>
+      <p class="headline" style="margin:0 0 18px;">Tell us where to send it. We will open your leave-behind report now and route the matching follow-up from The Density Group.</p>
+      <div class="orgfield">
+        <label for="gateEmail">Work email</label>
+        <input type="email" id="gateEmail" placeholder="you@organization.com" autocomplete="email" />
+      </div>
+      <div class="orgfield">
+        <label for="gateOrg">Organization name</label>
+        <input type="text" id="gateOrg" placeholder="Your organization" autocomplete="organization" />
+      </div>
+      <button class="makereport" id="gateSubmit">Open my report</button>
+      <p class="note" id="gateNote">Your report opens immediately. We use your email only to send the matching follow-up.</p>
+    </div>`;
+  const orgPrefill = orgInput.value.trim();
+  if(orgPrefill){ document.getElementById("gateOrg").value = orgPrefill; }
+  document.getElementById("gateSubmit").addEventListener("click", submitGate);
+  gate.scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+function openReportFromGate(){
+  const org = (document.getElementById("gateOrg").value || "").trim() || orgInput.value.trim();
+  document.getElementById("gate").innerHTML = "";
+  buildReport(lastDiagnosis, org);
+}
+
+async function submitGate(){
+  const emailEl = document.getElementById("gateEmail");
+  const noteEl = document.getElementById("gateNote");
+  const btn = document.getElementById("gateSubmit");
+  const email = (emailEl.value || "").trim();
+  const org = (document.getElementById("gateOrg").value || "").trim();
+  if(!email || !email.includes("@")){
+    emailEl.style.borderColor = "var(--rust-light)";
+    emailEl.focus();
+    noteEl.className = "note"; noteEl.textContent = "Enter a valid email to open your report.";
+    return;
+  }
+  emailEl.style.borderColor = "";
+  btn.disabled = true; btn.textContent = "Opening...";
+  try{
+    const res = await fetch("/.netlify/functions/subscribe",{
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({ email:email, org:org, quadrant: lastDiagnosis ? lastDiagnosis.quadrant : "" })
+    });
+    if(res.ok && window.plausible){ plausible("Diagnostic Lead", {props:{quadrant: lastDiagnosis ? lastDiagnosis.quadrant : ""}}); }
+    // Open the report regardless so the reader is never blocked from the value.
+    openReportFromGate();
+  }catch(err){
+    openReportFromGate();
+  }
+}
+
+function buildReport(d, org){
+  if(!d) return;
+  const prepared = org ? `Prepared for ${esc(org)}` : "Confidential organizational read";
+  reportEl.innerHTML = `
+    <div class="rd-top">
+      <div class="rd-brand">
+        <div class="rd-mark" aria-hidden="true"><span class="sq"></span><span class="sq"></span><span class="sq"></span><span class="sq fill"></span></div>
+        <span class="rd-word">The Density Group</span>
+      </div>
+      <div class="rd-date">${fmtDate()}</div>
+    </div>
+    <h2 class="rd-title">Institutional Resilience Diagnostic</h2>
+    <p class="rd-prepared">${prepared}</p>
+    <p class="rd-frame">A direct read of whether this organization builds capability that lasts or quietly leaks it, measured across density, optionality, and alumni capital, with the cost of its current position named.</p>
+    <p class="rd-quad-label">Position</p>
+    <p class="rd-quad">${esc(d.quadrant)}</p>
+    <p class="rd-headline">${esc(d.headline)}</p>
+    ${reportMatrix(d.quadrant)}
+    <div class="rd-levels">
+      <div class="rd-lvl"><p class="ln">Density</p><div class="lv">${esc(d.density)}</div></div>
+      <div class="rd-lvl"><p class="ln">Optionality</p><div class="lv">${esc(d.optionality)}</div></div>
+      <div class="rd-lvl"><p class="ln">Alumni Capital</p><div class="lv">${esc(d.alumniCapital)}</div></div>
+    </div>
+    <div class="rd-read">${paras(d.read)}</div>
+    <div class="rd-leaders"><p class="lh">What this means for leaders</p>${paras(d.leaders)}</div>
+    <p class="rd-equation">Density to Optionality to Alumni Capital produces Institutional Resilience.</p>
+    <div class="rd-foot"><span>The Density Group &middot; Professional. Authoritative. Credible.</span><span>temidayoafonja.com</span></div>
+    <div class="rd-actions">
+      <button class="rd-save" id="rdSave">Save as PDF</button>
+      <button class="rd-close" id="rdClose">Close report</button>
+    </div>`;
+  reportEl.classList.add("show");
+  document.getElementById("rdSave").addEventListener("click",()=>window.print());
+  document.getElementById("rdClose").addEventListener("click",()=>{
+    reportEl.classList.remove("show"); reportEl.innerHTML="";
+    window.scrollTo({top:0,behavior:"smooth"});
+  });
+  reportEl.scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+async function run(){
+  const {answers, missing} = collect();
+  if(missing>0){
+    statusEl.className="status show err";
+    statusEl.textContent = `Answer the remaining ${missing} question${missing>1?"s":""} to run the read.`;
+    return;
+  }
+  runBtn.disabled=true;
+  statusEl.className="status show";
+  statusEl.innerHTML = `<span class="spinner"></span> Reading your organization across the three pillars...`;
+  resultEl.classList.remove("show"); resultEl.innerHTML="";
+  reportEl.classList.remove("show"); reportEl.innerHTML="";
+
+  try{
+    const res = await fetch("/.netlify/functions/diagnose",{
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({ answers: answers })
+    });
+    if(!res.ok){throw new Error("status "+res.status);}
+    const data = await res.json();
+    const text = (data.content||[]).filter(b=>b.type==="text").map(b=>b.text).join("\n").trim();
+    const clean = text.replace(/```json/gi,"").replace(/```/g,"").trim();
+    let parsed;
+    try{ parsed = JSON.parse(clean); }
+    catch(e){
+      const m = clean.match(/\{[\s\S]*\}/);
+      if(!m){throw new Error("unparseable");}
+      parsed = JSON.parse(m[0]);
+    }
+    if(!QUADRANT_POS[parsed.quadrant]){
+      const found = GRID_ORDER.find(q=>parsed.quadrant && parsed.quadrant.toLowerCase().includes(q.toLowerCase()));
+      parsed.quadrant = found || "Compounding";
+    }
+    statusEl.className="status"; statusEl.textContent="";
+    if(window.plausible){ plausible("Diagnostic Completed", {props:{quadrant: parsed.quadrant}}); }
+    renderResult(parsed);
+  }catch(err){
+    statusEl.className="status show err";
+    statusEl.textContent="The live read did not come back. Please try again in a moment. If it keeps happening, the diagnostic service may be briefly unavailable.";
+  }finally{
+    runBtn.disabled=false;
+  }
+}
+
+runBtn.addEventListener("click", run);
+sampleBtn.addEventListener("click", ()=>{
+  renderResult(SAMPLE);
+  buildReport(SAMPLE, orgInput.value.trim() || "Northwind Logistics");
+});
+</script>
+</body>
+</html>
