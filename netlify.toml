@@ -10,6 +10,11 @@
   to = "/institutional-diagnostic.html"
   status = 200
 
+[[redirects]]
+  from = "/audit"
+  to = "/audit.html"
+  status = 200
+
 [[headers]]
   for = "/*"
   [headers.values]
