@@ -101,10 +101,27 @@
 .book-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(22px, 3vw, 36px); font-weight: 300; line-height: 1.2; color: var(--white); max-width: 560px; }
 .book-title em { font-style: italic; color: var(--gold-light); }
 
+/* FIELD GUIDE (newly published) */
+.fieldguide-section { padding: 72px 48px; position: relative; z-index: 1; border-bottom: 1px solid var(--slate-dim); }
+.fieldguide-inner { max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: 300px 1fr; gap: 64px; align-items: center; }
+.fg-cover { display: flex; justify-content: center; }
+.fg-cover img { width: 100%; max-width: 300px; height: auto; display: block; border-radius: 2px; box-shadow: 0 24px 60px rgba(0,0,0,0.5), 0 4px 14px rgba(0,0,0,0.4); }
+.fg-title-line { font-family: 'Cormorant Garamond', serif; font-size: clamp(19px, 2.3vw, 26px); font-weight: 400; line-height: 1.28; color: var(--gold-light); margin: 10px 0 18px; }
+.fg-body { font-size: 17px; line-height: 1.85; color: var(--cream-70); margin-bottom: 8px; }
+.fg-price { font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--slate); margin: 18px 0 28px; }
+.btn-rust { display: inline-block; background: #C1440E; color: #F5F0E8; border: none; padding: 15px 40px; font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; transition: all 0.2s ease; }
+.btn-rust:hover { background: #d6511a; transform: translateY(-2px); box-shadow: 0 12px 40px rgba(193,68,14,0.3); }
+.fg-secondary-link { display: inline-block; margin-top: 18px; font-size: 13px; letter-spacing: 0.04em; color: var(--gold); text-decoration: none; transition: color 0.2s; }
+.fg-secondary-link:hover { color: var(--gold-light); }
+
 @media (max-width: 900px) {
   .hero-inner { grid-template-columns: 1fr; gap: 48px; }
   .hero-right { justify-content: flex-start; }
   .hero-photo-wrap { width: 220px; height: 220px; }
+  .fieldguide-section { padding: 52px 24px; }
+  .fieldguide-inner { grid-template-columns: 1fr; gap: 32px; justify-items: center; text-align: center; }
+  .fg-cover { max-width: 220px; }
+  .fg-secondary-link { display: block; }
   .audit-inner { grid-template-columns: 1fr; }
   .about-strip-inner { grid-template-columns: 1fr; }
   .about-strip-rule { display: none; }
@@ -153,6 +170,24 @@
       <div class="hero-photo-wrap">
         <img src="temi-photo.jpg" alt="Temidayo Afonja">
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- FIELD GUIDE -->
+<section class="fieldguide-section">
+  <div class="fieldguide-inner">
+    <div class="fg-cover">
+      <img src="capability-audit-cover.png" alt="The Capability Audit: A Field Guide to Career Risk in the Age of AI and Layoffs, book cover by Temidayo Afonja">
+    </div>
+    <div class="fg-text">
+      <span class="eyebrow">Just Published &middot; Field Guide</span>
+      <h2>The field guide is here.</h2>
+      <p class="fg-title-line">The Capability Audit: A Field Guide to Career Risk in the Age of AI and Layoffs</p>
+      <p class="fg-body">Twelve statements, one honest reading, and the move out of whichever state you're standing in.</p>
+      <p class="fg-price">$2.99 on Kindle, free on Kindle Unlimited</p>
+      <a href="https://www.amazon.com/dp/B0H4QY5GWY" target="_blank" rel="noopener" class="btn-rust">Get the guide on Amazon</a>
+      <a href="/audit" class="fg-secondary-link">Or start with the free audit &rarr;</a>
     </div>
   </div>
 </section>
