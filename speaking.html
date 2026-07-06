@@ -219,6 +219,7 @@ textarea.inquiry-input { min-height: 100px; resize: vertical; }
         <input class="inquiry-input" type="email" id="spkEmail" placeholder="Email address *" autocomplete="email">
         <label class="visually-hidden" for="spkMsg">About the event</label>
         <textarea class="inquiry-input" id="spkMsg" placeholder="Tell me about the event: audience, format, date, what you are hoping the room walks away with."></textarea>
+        <input type="text" id="spkGotcha" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="display:none !important;">
         <button class="btn-primary" type="submit" style="align-self: flex-start;">Send Inquiry &rarr;</button>
         <p id="spkConfirm" style="display:none;color:#6ab894;font-size:13px;margin-top:4px;">Inquiry sent. Temidayo Afonja will be in touch.</p>
         <p id="spkError" style="display:none;color:#e07060;font-size:13px;margin-top:4px;">Something went wrong sending your inquiry. Please email directly using the address below.</p>
@@ -261,7 +262,7 @@ function handleSpeaking(e) {
   fetch('https://formspree.io/f/xjgapael', {
     method: 'POST',
     headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
-    body: JSON.stringify({name: name, org: org, email: email, message: msg, source: 'speaking-inquiry'})
+    body: JSON.stringify({name: name, org: org, email: email, message: msg, source: 'speaking-inquiry', _gotcha: document.getElementById('spkGotcha').value})
   }).then(function(r) {
     if (r.ok) {
       if (window.plausible) plausible('Speaking Inquiry');
