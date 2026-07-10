@@ -13,11 +13,16 @@
 // To route by tag instead, swap the endpoint to /v3/tags/{id}/subscribe and point
 // the four env vars at tag ids. Node 18+ (global fetch).
 
+// Accepts both the institutional diagnostic's display names ("Compounding",
+// "Depth Trap", ...) and the /audit page's quadrant keys ("compound", "depth",
+// "fragile", "stagnant"). Lookup is case-insensitive.
 const SEQ_BY_QUADRANT = {
-  "Compounding": "KIT_SEQ_COMPOUNDING",
-  "Depth Trap": "KIT_SEQ_DEPTH_TRAP",
-  "Stagnant": "KIT_SEQ_STAGNANT",
-  "Fragile": "KIT_SEQ_FRAGILE"
+  "compounding": "KIT_SEQ_COMPOUNDING",
+  "compound": "KIT_SEQ_COMPOUNDING",
+  "depth trap": "KIT_SEQ_DEPTH_TRAP",
+  "depth": "KIT_SEQ_DEPTH_TRAP",
+  "stagnant": "KIT_SEQ_STAGNANT",
+  "fragile": "KIT_SEQ_FRAGILE"
 };
 
 exports.handler = async (event) => {
@@ -28,12 +33,14 @@ exports.handler = async (event) => {
     return { statusCode: 500, body: JSON.stringify({ error: "Server is missing KIT_API_KEY" }) };
   }
 
-  let email, org, quadrant;
+  let email, org, quadrant, name, source;
   try {
     const p = JSON.parse(event.body || "{}");
     email = (p.email || "").trim();
     org = (p.org || "").trim();
     quadrant = (p.quadrant || "").trim();
+    name = (p.name || "").trim();
+    source = (p.source || "").trim();
   } catch (e) {
     return { statusCode: 400, body: JSON.stringify({ error: "Invalid request body" }) };
   }
@@ -42,7 +49,7 @@ exports.handler = async (event) => {
     return { statusCode: 400, body: JSON.stringify({ error: "A valid email is required" }) };
   }
 
-  const envName = SEQ_BY_QUADRANT[quadrant];
+  const envName = SEQ_BY_QUADRANT[quadrant.toLowerCase()];
   const sequenceId = envName ? process.env[envName] : null;
   if (!sequenceId) {
     return { statusCode: 400, body: JSON.stringify({ error: "No sequence configured for quadrant: " + quadrant }) };
@@ -55,7 +62,8 @@ exports.handler = async (event) => {
       body: JSON.stringify({
         api_key: process.env.KIT_API_KEY,
         email: email,
-        fields: { organization: org, quadrant: quadrant }
+        first_name: name || undefined,
+        fields: { organization: org, quadrant: quadrant, source: source || undefined }
       })
     });
     const data = await res.json().catch(() => ({}));

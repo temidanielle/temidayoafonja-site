@@ -1110,6 +1110,22 @@ function captureResearch(nameVal, emailVal){
   } catch(e){ /* research capture must never break the audit */ }
 }
 
+// ─── KIT SEQUENCE ────────────────────────────────────────────────────────────
+// Adds the completed audit-taker to the Kit sequence for their quadrant, via the
+// server-side subscribe function (keys/secrets stay server-side). Fire-and-forget;
+// only runs when a real email was provided. Never throws into the audit flow.
+function subscribeToKit(emailVal, quadrantKey, orgVal, nameVal){
+  try {
+    if(!emailVal || emailVal.indexOf("@") < 0) return;
+    fetch("/.netlify/functions/subscribe", {
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({ email:emailVal, quadrant:quadrantKey, org:orgVal||"", name:nameVal||"", source:"capability_audit" }),
+      keepalive:true
+    }).catch(function(){});
+  } catch(e){ /* kit subscribe must never break the audit */ }
+}
+
 // ─── EVENTS ──────────────────────────────────────────────────────────────────
 document.addEventListener("DOMContentLoaded", function(){
 
@@ -1191,10 +1207,11 @@ document.addEventListener("DOMContentLoaded", function(){
     var s=getScores();
     fetch("https://formspree.io/f/xjgapael",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify({name:name,org:org,role:role,email:email,mode:currentMode,quadrant:getQKey(),density:(s.d||0).toFixed(2),optionality:(s.o||0).toFixed(2),alumni_capital:(s.a||0).toFixed(2),source:"capability_audit_complete",completed_at:new Date().toISOString()})}).catch(function(){});
     captureResearch(name, email);
+    subscribeToKit(email, getQKey(), org, name);
     showResults(name);
   });
 
-  document.getElementById("skipGateBtn").addEventListener("click", function(){ captureResearch(pregateNameVal||"", pregateEmailVal||""); showResults(pregateNameVal||""); });
+  document.getElementById("skipGateBtn").addEventListener("click", function(){ captureResearch(pregateNameVal||"", pregateEmailVal||""); subscribeToKit(pregateEmailVal||"", getQKey(), "", pregateNameVal||""); showResults(pregateNameVal||""); });
 
   ["researchIndustry","researchRole","researchYears","researchOrgSize"].forEach(function(id){
     var el=document.getElementById(id);
