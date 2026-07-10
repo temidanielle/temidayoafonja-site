@@ -36,7 +36,7 @@
   <link rel="manifest" href="/site.webmanifest">
 <style>
 :root {
-  --navy: #112244;
+  --navy: #0f2347;
   --gold: #c9a84c;
   --gold-light: #e8c97a;
   --gold-dim: rgba(201,168,76,0.14);
@@ -47,19 +47,19 @@
   --slate-dim: rgba(139,160,180,0.2);
 }
 * { margin:0; padding:0; box-sizing:border-box; }
-body { background:#112244 !important; color:#f5f0e8 !important; font-family:'DM Sans',sans-serif !important; font-weight:300; min-height:100vh; overflow-x:hidden; }
+body { background:#0f2347 !important; color:#f5f0e8 !important; font-family:'DM Sans',sans-serif !important; font-weight:300; min-height:100vh; overflow-x:hidden; }
 body a { color:#c9a84c !important; }
 body .nav-links a { color:#f5f0e8 !important; }
 body .nav-links a:hover, body .nav-links a:focus { color:#c9a84c !important; }
-body .nav-cta { color:#112244 !important; background:#c9a84c !important; }
-body .btn-primary { background:#c9a84c !important; color:#112244 !important; }
-body .btn-gate { background:#c9a84c !important; color:#112244 !important; }
-body .btn-next { background:#c9a84c; color:#112244; }
-body .btn-next.enabled { background:#c9a84c !important; color:#112244 !important; opacity:1 !important; pointer-events:all !important; }
+body .nav-cta { color:#0f2347 !important; background:#c9a84c !important; }
+body .btn-primary { background:#c9a84c !important; color:#0f2347 !important; }
+body .btn-gate { background:#c9a84c !important; color:#0f2347 !important; }
+body .btn-next { background:#c9a84c; color:#0f2347; }
+body .btn-next.enabled { background:#c9a84c !important; color:#0f2347 !important; opacity:1 !important; pointer-events:all !important; }
 body .btn-back { background:transparent !important; color:#8ba0b4 !important; border:1px solid rgba(139,160,180,0.2) !important; }
 body .section-label { color:#c9a84c !important; border:1px solid rgba(201,168,76,0.25) !important; }
 body .wordmark, body .fork-wordmark, body .audit-wordmark { color:#c9a84c !important; }
-body .audit-mode-badge { background:#c9a84c !important; color:#112244 !important; }
+body .audit-mode-badge { background:#c9a84c !important; color:#0f2347 !important; }
 body .pillar { color:#c9a84c !important; border:1px solid rgba(201,168,76,0.25) !important; }
 body .pillar-arrow { color:#c9a84c !important; }
 body .rationale-card-label { color:#c9a84c !important; }
@@ -84,19 +84,19 @@ body .results-list-icon { color:#c9a84c !important; }
 body .results-celebration { border-left:2px solid #c9a84c !important; }
 body .gate-eyebrow { color:#c9a84c !important; }
 body #switchModeBtn { color:#c9a84c !important; }
-body .btn-cta-send { background:#c9a84c !important; color:#112244 !important; }
+body .btn-cta-send { background:#c9a84c !important; color:#0f2347 !important; }
 body .btn-action:hover { border-color:#c9a84c !important; color:#c9a84c !important; }
 body .cta-confirm { color:#c9a84c !important; }
 .screen { display:none; min-height:100vh; position:relative; z-index:1; }
 .screen.active { display:flex; }
 
-nav { position:fixed; top:0; left:0; right:0; z-index:9999; padding:18px 40px; display:flex; justify-content:space-between; align-items:center; background:rgba(17,34,68,0.97); border-bottom:1px solid rgba(201,168,76,0.15); }
+nav { position:fixed; top:0; left:0; right:0; z-index:9999; padding:18px 40px; display:flex; justify-content:space-between; align-items:center; background:rgba(15,35,71,0.97); border-bottom:1px solid rgba(201,168,76,0.15); }
 .nav-logo { font-family:‘Cormorant Garamond’,serif; font-weight:300; font-size:18px; color:#f5f0e8; text-decoration:none; letter-spacing:0.05em; }
 .nav-logo span { color:#c9a84c; }
 .nav-links { display:flex; gap:28px; align-items:center; }
 .nav-links a { font-size:11px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:#f5f0e8; text-decoration:none; transition:color 0.2s; }
 .nav-links a:hover { color:#c9a84c; }
-.nav-cta { color:#112244 !important; background:#c9a84c; padding:10px 20px; }
+.nav-cta { color:#0f2347 !important; background:#c9a84c; padding:10px 20px; }
 .nav-cta:hover { background:#e8c97a !important; }
 @media (max-width:1080px){ .nav-links { display:none !important; } }
 .nav-spacer { height:65px; }
@@ -121,7 +121,7 @@ nav { position:fixed; top:0; left:0; right:0; z-index:9999; padding:18px 40px; d
 .rationale-who { border:1px solid rgba(139,160,180,0.2); padding:20px 24px; text-align:left; display:flex; gap:32px; flex-wrap:wrap; }
 .rationale-who-item { font-size:13px; color:rgba(245,240,232,0.65); display:flex; gap:10px; align-items:center; }
 .rationale-who-item::before { content:‘→’; color:#c9a84c; font-size:11px; }
-.btn-primary { background:#c9a84c; color:#112244; border:none; padding:16px 48px; font-family:‘DM Sans’,sans-serif; font-size:13px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; cursor:pointer; transition:all 0.2s ease; }
+.btn-primary { background:#c9a84c; color:#0f2347; border:none; padding:16px 48px; font-family:‘DM Sans’,sans-serif; font-size:13px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; cursor:pointer; transition:all 0.2s ease; }
 .btn-primary:hover { background:#e8c97a; transform:translateY(-1px); }
 .intro-meta { margin-top:20px; font-size:14px; color:rgba(245,240,232,0.5); }
 
@@ -136,15 +136,23 @@ nav { position:fixed; top:0; left:0; right:0; z-index:9999; padding:18px 40px; d
 .gate-input:-webkit-autofill,
 .gate-input:-webkit-autofill:hover,
 .gate-input:-webkit-autofill:focus {
--webkit-box-shadow: 0 0 0px 1000px #112244 inset !important;
+-webkit-box-shadow: 0 0 0px 1000px #0f2347 inset !important;
 -webkit-text-fill-color: #f5f0e8 !important;
 border-color: rgba(201,168,76,0.5) !important;
 }
-.btn-gate { background:#c9a84c !important; color:#112244 !important; border:none; padding:15px; font-family:‘DM Sans’,sans-serif; font-size:12px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; cursor:pointer; transition:all 0.2s; width:100%; margin-top:8px; }
+.btn-gate { background:#c9a84c !important; color:#0f2347 !important; border:none; padding:15px; font-family:‘DM Sans’,sans-serif; font-size:12px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; cursor:pointer; transition:all 0.2s; width:100%; margin-top:8px; }
 .btn-gate:hover { background:#e8c97a !important; }
 .btn-skip { background:transparent; color:rgba(245,240,232,0.4); border:none; font-size:13px; cursor:pointer; margin-top:12px; text-decoration:underline; font-family:‘DM Sans’,sans-serif; }
 .btn-skip:hover { color:#f5f0e8; }
 .gate-privacy { font-size:11px; color:rgba(245,240,232,0.35); margin-top:16px; line-height:1.6; max-width:440px; }
+.gate-optional-label { font-size:10px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:rgba(245,240,232,0.38); margin-top:10px; margin-bottom:-2px; text-align:left; }
+.gate-select { background:#0f2347; border:1px solid rgba(139,160,180,0.2); color:rgba(245,240,232,0.5); font-family:'DM Sans',sans-serif; font-size:14px; font-weight:300; padding:14px 16px; width:100%; outline:none; transition:border-color 0.2s, color 0.2s; -webkit-appearance:none; -moz-appearance:none; appearance:none; background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path fill='%238ba0b4' d='M1 1l5 5 5-5'/></svg>"); background-repeat:no-repeat; background-position:right 16px center; cursor:pointer; }
+.gate-select:focus { border-color:rgba(201,168,76,0.5); }
+.gate-select.filled { color:#f5f0e8; }
+.gate-select option { color:#0f2347; background:#f5f0e8; }
+.consent-line { display:flex; align-items:flex-start; gap:10px; margin-top:10px; text-align:left; cursor:pointer; }
+.consent-line input[type=checkbox] { margin-top:2px; width:15px; height:15px; accent-color:#c9a84c; flex-shrink:0; cursor:pointer; }
+.consent-text { font-size:12px; line-height:1.55; color:rgba(245,240,232,0.55); font-family:'DM Sans',sans-serif; font-weight:300; }
 
 #fork { flex-direction:column; align-items:center; justify-content:center; padding:60px 24px; text-align:center; }
 .fork-wordmark { font-family:‘Cormorant Garamond’,serif; font-weight:300; font-size:13px; letter-spacing:0.22em; text-transform:uppercase; color:#c9a84c; margin-bottom:40px; }
@@ -164,7 +172,7 @@ border-color: rgba(201,168,76,0.5) !important;
 .audit-left { flex:0 0 52%; padding:48px 56px; display:flex; flex-direction:column; border-right:1px solid var(–slate-dim); overflow-y:auto; }
 .audit-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:40px; }
 .audit-wordmark { font-family:‘Cormorant Garamond’,serif; font-size:14px; letter-spacing:0.2em; text-transform:uppercase; color:#c9a84c; }
-.audit-mode-badge { font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:#112244; background:#c9a84c; padding:5px 12px; }
+.audit-mode-badge { font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:#0f2347; background:#c9a84c; padding:5px 12px; }
 .progress-info { font-size:13px; color:#8ba0b4; letter-spacing:0.08em; }
 .progress-bar { height:2px; background:var(–slate-dim); margin-bottom:36px; overflow:hidden; }
 .progress-fill { height:100%; background:#c9a84c; transition:width 0.4s ease; }
@@ -181,7 +189,7 @@ border-color: rgba(201,168,76,0.5) !important;
 .option-text { font-size:13px; line-height:1.6; color:rgba(245,240,232,0.8); }
 .option.selected .option-text { color:#f5f0e8; }
 .audit-nav { display:flex; align-items:center; gap:16px; margin-top:auto; padding-top:24px; }
-.btn-next { background:#c9a84c; color:#112244; border:none; padding:13px 36px; font-family:‘DM Sans’,sans-serif; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; cursor:pointer; transition:all 0.2s; opacity:0.4; pointer-events:none; }
+.btn-next { background:#c9a84c; color:#0f2347; border:none; padding:13px 36px; font-family:‘DM Sans’,sans-serif; font-size:12px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; cursor:pointer; transition:all 0.2s; opacity:0.4; pointer-events:none; }
 .btn-next.enabled { opacity:1; pointer-events:all; }
 .btn-next.enabled:hover { background:#e8c97a; transform:translateY(-1px); }
 .btn-back { background:transparent; color:#8ba0b4; border:1px solid rgba(139,160,180,0.2); padding:13px 24px; font-family:‘DM Sans’,sans-serif; font-size:12px; cursor:pointer; transition:all 0.2s; letter-spacing:0.1em; text-transform:uppercase; }
@@ -246,7 +254,7 @@ border-color: rgba(201,168,76,0.5) !important;
 .cta-input::placeholder { color:rgba(245,240,232,0.3); }
 .cta-input:focus { border-color:rgba(201,168,76,0.5); }
 textarea.cta-input { resize:vertical; min-height:80px; }
-.btn-cta-send { background:#c9a84c; color:#112244; border:none; padding:14px; font-family:‘DM Sans’,sans-serif; font-size:12px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; cursor:pointer; transition:all 0.2s; }
+.btn-cta-send { background:#c9a84c; color:#0f2347; border:none; padding:14px; font-family:‘DM Sans’,sans-serif; font-size:12px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; cursor:pointer; transition:all 0.2s; }
 .btn-cta-send:hover { background:#e8c97a; }
 .cta-confirm { display:none; font-size:14px; color:#c9a84c; margin-top:16px; }
 .results-actions { display:flex; gap:16px; margin-top:32px; justify-content:center; flex-wrap:wrap; }
@@ -454,6 +462,47 @@ nav { padding:16px 20px; }
     <input type="text"  class="gate-input" id="gateOrg"   placeholder="Organization (optional)">
     <input type="text"  class="gate-input" id="gateRole"  placeholder="Your role (optional)">
     <input type="email" class="gate-input" id="gateEmail" placeholder="Email address *">
+    <div class="gate-optional-label">Optional &middot; for research context</div>
+    <select class="gate-select" id="researchIndustry" aria-label="Industry (optional)">
+      <option value="">Industry (optional)</option>
+      <option>Consulting</option>
+      <option>Technology/SaaS</option>
+      <option>Healthcare/Life Sciences</option>
+      <option>Financial Services</option>
+      <option>Government/Public Sector</option>
+      <option>Education</option>
+      <option>Legal</option>
+      <option>Manufacturing/Operations</option>
+      <option>Nonprofit</option>
+      <option>Other</option>
+    </select>
+    <select class="gate-select" id="researchRole" aria-label="Role level (optional)">
+      <option value="">Role level (optional)</option>
+      <option>Early career</option>
+      <option>Individual contributor</option>
+      <option>Manager</option>
+      <option>Senior leader/Executive</option>
+      <option>Founder/Self-employed</option>
+    </select>
+    <select class="gate-select" id="researchYears" aria-label="Years of experience (optional)">
+      <option value="">Years of experience (optional)</option>
+      <option>0-5</option>
+      <option>6-10</option>
+      <option>11-15</option>
+      <option>16-20</option>
+      <option>20+</option>
+    </select>
+    <select class="gate-select" id="researchOrgSize" aria-label="Organization size (optional)">
+      <option value="">Organization size (optional)</option>
+      <option>Under 100</option>
+      <option>100-1,000</option>
+      <option>1,000-10,000</option>
+      <option>10,000+</option>
+    </select>
+    <label class="consent-line">
+      <input type="checkbox" id="researchConsent">
+      <span class="consent-text">I agree that my anonymized responses may be included in aggregate research on capability formation. Individual responses are never published or shared.</span>
+    </label>
     <button class="btn-gate" id="submitGateBtn">See My Results &rarr;</button>
   </div>
   <button class="btn-skip" id="skipGateBtn">Take me straight to my results</button>
@@ -498,7 +547,7 @@ nav { padding:16px 20px; }
         <div class="cta-box-title">Your Next Step: The AI Capability Readiness Diagnostic</div>
         <div class="cta-box-sub">You have seen where your organization sits. The AI Capability Readiness Diagnostic turns that read into a plan. Your leadership team takes the full assessment, a deeper version of what you just completed, then receives an interpreted capability read, a leadership working session, and a prioritized action map for absorbing AI driven change without losing institutional resilience. Built on the Capability Formation Framework.</div>
         <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;">
-          <a href="ai-capability-readiness.html" style="display:inline-block;background:#c9a84c !important;color:#112244 !important;padding:14px 32px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;-webkit-text-fill-color:#112244 !important;">See the Diagnostic &rarr;</a>
+          <a href="ai-capability-readiness.html" style="display:inline-block;background:#c9a84c !important;color:#0f2347 !important;padding:14px 32px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;-webkit-text-fill-color:#0f2347 !important;">See the Diagnostic &rarr;</a>
           <span style="font-size:13px;color:rgba(245,240,232,0.45);">or</span>
           <a href="work.html#get-in-touch" style="font-size:13px;color:#c9a84c;text-decoration:none;">Request pricing</a>
         </div>
@@ -508,7 +557,7 @@ nav { padding:16px 20px; }
         <div class="cta-box-title">If You Are Ready to Start</div>
         <div class="cta-box-sub">A Capability Session takes your audit result and builds a precise capability inventory. What you actually built, what it is worth, and which environments are worth what you are about to give them. 60 minutes, audit informed, built for the moment you are in.</div>
         <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;">
-          <a href="work.html" target="_blank" style="display:inline-block;background:#c9a84c !important;color:#112244 !important;padding:14px 32px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;-webkit-text-fill-color:#112244 !important;">Book a Capability Session &rarr;</a>
+          <a href="work.html" target="_blank" style="display:inline-block;background:#c9a84c !important;color:#0f2347 !important;padding:14px 32px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;-webkit-text-fill-color:#0f2347 !important;">Book a Capability Session &rarr;</a>
         </div>
       </div>
       <div class="cta-box">
@@ -1025,6 +1074,42 @@ function showResults(name) {
   show("results");
 }
 
+// ─── RESEARCH CAPTURE ────────────────────────────────────────────────────────
+// Isolated, fire-and-forget durable store. Does NOT touch the Formspree/Kit wire.
+// Never allowed to throw into the audit flow.
+function captureResearch(nameVal, emailVal){
+  try {
+    var s = getScores();
+    function v(id){ var el=document.getElementById(id); return el ? el.value : ""; }
+    var consentEl = document.getElementById("researchConsent");
+    var responses = questions.map(function(q,i){ return { n:i+1, section:q.section, score:answers[i] }; });
+    var payload = {
+      mode: currentMode,
+      quadrant: getQKey(),
+      scores: {
+        density:      s.d!=null ? +s.d.toFixed(2) : null,
+        optionality:  s.o!=null ? +s.o.toFixed(2) : null,
+        alumni_capital: s.a!=null ? +s.a.toFixed(2) : null
+      },
+      responses: responses,
+      industry:          v("researchIndustry"),
+      role_level:        v("researchRole"),
+      years_experience:  v("researchYears"),
+      organization_size: v("researchOrgSize"),
+      consent: !!(consentEl && consentEl.checked),
+      name: nameVal || "",
+      email: emailVal || "",
+      client_completed_at: new Date().toISOString()
+    };
+    fetch("/.netlify/functions/audit-research", {
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify(payload),
+      keepalive:true
+    }).catch(function(){});
+  } catch(e){ /* research capture must never break the audit */ }
+}
+
 // ─── EVENTS ──────────────────────────────────────────────────────────────────
 document.addEventListener("DOMContentLoaded", function(){
 
@@ -1105,10 +1190,16 @@ document.addEventListener("DOMContentLoaded", function(){
     if(!email||!email.includes("@")){ document.getElementById("gateEmail").style.borderColor="#c8503c"; document.getElementById("gateEmail").focus(); return; }
     var s=getScores();
     fetch("https://formspree.io/f/xjgapael",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify({name:name,org:org,role:role,email:email,mode:currentMode,quadrant:getQKey(),density:(s.d||0).toFixed(2),optionality:(s.o||0).toFixed(2),alumni_capital:(s.a||0).toFixed(2),source:"capability_audit_complete",completed_at:new Date().toISOString()})}).catch(function(){});
+    captureResearch(name, email);
     showResults(name);
   });
 
-  document.getElementById("skipGateBtn").addEventListener("click", function(){ showResults(pregateNameVal||""); });
+  document.getElementById("skipGateBtn").addEventListener("click", function(){ captureResearch(pregateNameVal||"", pregateEmailVal||""); showResults(pregateNameVal||""); });
+
+  ["researchIndustry","researchRole","researchYears","researchOrgSize"].forEach(function(id){
+    var el=document.getElementById(id);
+    if(el) el.addEventListener("change", function(){ el.classList.toggle("filled", el.value!==""); });
+  });
 
   document.getElementById("retakeBtn").addEventListener("click", function(){
     currentQ=0; answers=new Array(10).fill(null); pregateNameVal=""; pregateEmailVal=""; show("intro");
