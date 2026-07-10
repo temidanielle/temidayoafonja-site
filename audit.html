@@ -1120,7 +1120,7 @@ function subscribeToKit(emailVal, quadrantKey, orgVal, nameVal){
     fetch("/.netlify/functions/subscribe", {
       method:"POST",
       headers:{"Content-Type":"application/json"},
-      body:JSON.stringify({ email:emailVal, quadrant:quadrantKey, org:orgVal||"", name:nameVal||"", source:"capability_audit" }),
+      body:JSON.stringify({ email:emailVal, quadrant:quadrantKey, mode:currentMode, org:orgVal||"", name:nameVal||"", source:"capability_audit" }),
       keepalive:true
     }).catch(function(){});
   } catch(e){ /* kit subscribe must never break the audit */ }

@@ -2,28 +2,35 @@
 // Email gate handler. Subscribes the lead to the Kit (ConvertKit) sequence that
 // matches their diagnostic quadrant, so the correct nurture sequence fires.
 //
-// Required env vars:
-//   KIT_API_KEY            Kit (ConvertKit) API key
-//   KIT_SEQ_COMPOUNDING    Kit sequence id for the Compounding quadrant
-//   KIT_SEQ_DEPTH_TRAP     Kit sequence id for the Depth Trap quadrant
-//   KIT_SEQ_STAGNANT       Kit sequence id for the Stagnant quadrant
-//   KIT_SEQ_FRAGILE        Kit sequence id for the Fragile quadrant
+// Required env vars (Kit v3 sequence ids):
+//   KIT_API_KEY                Kit (ConvertKit) API key
+//   Org sequences (audit org mode + the institutional diagnostic):
+//     KIT_SEQ_COMPOUNDING, KIT_SEQ_DEPTH_TRAP, KIT_SEQ_STAGNANT, KIT_SEQ_FRAGILE
+//   Individual sequences (audit individual mode):
+//     KIT_SEQ_IND_COMPOUNDING, KIT_SEQ_IND_DEPTH_TRAP, KIT_SEQ_IND_STAGNANT, KIT_SEQ_IND_FRAGILE
 //
-// These are Kit v3 "sequence" ids (api.convertkit.com/v3/sequences/{id}/subscribe).
-// To route by tag instead, swap the endpoint to /v3/tags/{id}/subscribe and point
-// the four env vars at tag ids. Node 18+ (global fetch).
+// api.convertkit.com/v3/sequences/{id}/subscribe. Node 18+ (global fetch).
 
-// Accepts both the institutional diagnostic's display names ("Compounding",
-// "Depth Trap", ...) and the /audit page's quadrant keys ("compound", "depth",
-// "fragile", "stagnant"). Lookup is case-insensitive.
-const SEQ_BY_QUADRANT = {
-  "compounding": "KIT_SEQ_COMPOUNDING",
-  "compound": "KIT_SEQ_COMPOUNDING",
-  "depth trap": "KIT_SEQ_DEPTH_TRAP",
-  "depth": "KIT_SEQ_DEPTH_TRAP",
-  "stagnant": "KIT_SEQ_STAGNANT",
-  "fragile": "KIT_SEQ_FRAGILE"
+// Maps a quadrant to its env-var suffix. Accepts both the institutional
+// diagnostic's display names ("Compounding", "Depth Trap", ...) and the /audit
+// page's quadrant keys ("compound", "depth", "fragile", "stagnant"). Case-insensitive.
+const QUADRANT_SUFFIX = {
+  "compounding": "COMPOUNDING",
+  "compound": "COMPOUNDING",
+  "depth trap": "DEPTH_TRAP",
+  "depth": "DEPTH_TRAP",
+  "stagnant": "STAGNANT",
+  "fragile": "FRAGILE"
 };
+
+// Individuals (audit individual mode) get the plain sequences; org leaders
+// (audit org mode, and the diagnostic which sends no mode) get the "— Org" ones.
+function sequenceEnvName(quadrant, mode) {
+  const suffix = QUADRANT_SUFFIX[(quadrant || "").toLowerCase().trim()];
+  if (!suffix) return null;
+  const isIndividual = (mode || "").toLowerCase().trim() === "individual";
+  return isIndividual ? ("KIT_SEQ_IND_" + suffix) : ("KIT_SEQ_" + suffix);
+}
 
 exports.handler = async (event) => {
   if (event.httpMethod !== "POST") {
@@ -33,7 +40,7 @@ exports.handler = async (event) => {
     return { statusCode: 500, body: JSON.stringify({ error: "Server is missing KIT_API_KEY" }) };
   }
 
-  let email, org, quadrant, name, source;
+  let email, org, quadrant, name, source, mode;
   try {
     const p = JSON.parse(event.body || "{}");
     email = (p.email || "").trim();
@@ -41,6 +48,7 @@ exports.handler = async (event) => {
     quadrant = (p.quadrant || "").trim();
     name = (p.name || "").trim();
     source = (p.source || "").trim();
+    mode = (p.mode || "").trim();
   } catch (e) {
     return { statusCode: 400, body: JSON.stringify({ error: "Invalid request body" }) };
   }
@@ -49,10 +57,10 @@ exports.handler = async (event) => {
     return { statusCode: 400, body: JSON.stringify({ error: "A valid email is required" }) };
   }
 
-  const envName = SEQ_BY_QUADRANT[quadrant.toLowerCase()];
+  const envName = sequenceEnvName(quadrant, mode);
   const sequenceId = envName ? process.env[envName] : null;
   if (!sequenceId) {
-    return { statusCode: 400, body: JSON.stringify({ error: "No sequence configured for quadrant: " + quadrant }) };
+    return { statusCode: 400, body: JSON.stringify({ error: "No sequence configured for quadrant/mode: " + quadrant + "/" + (mode || "org") }) };
   }
 
   try {
@@ -63,7 +71,7 @@ exports.handler = async (event) => {
         api_key: process.env.KIT_API_KEY,
         email: email,
         first_name: name || undefined,
-        fields: { organization: org, quadrant: quadrant, source: source || undefined }
+        fields: { organization: org, quadrant: quadrant, source: source || undefined, mode: mode || undefined }
       })
     });
     const data = await res.json().catch(() => ({}));
