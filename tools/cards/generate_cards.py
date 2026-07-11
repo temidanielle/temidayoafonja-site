@@ -23,7 +23,8 @@ from PIL import Image, ImageDraw, ImageFont
 # ---------------------------------------------------------------- paths
 HERE = os.path.dirname(os.path.abspath(__file__))
 FONTS = os.path.join(HERE, "fonts")
-OUT = os.path.abspath(os.path.join(HERE, "..", ".."))  # repo root
+OUT = os.path.join(HERE, "output")  # cards render here, kept out of the live site
+os.makedirs(OUT, exist_ok=True)
 
 CORMORANT_MED = os.path.join(FONTS, "CormorantGaramond-Medium.ttf")
 CORMORANT_SB = os.path.join(FONTS, "CormorantGaramond-SemiBold.ttf")
