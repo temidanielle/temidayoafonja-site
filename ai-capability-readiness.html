@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI Capability Readiness Diagnostic. Temidayo Afonja</title>
-<meta name="description" content="A paid organizational diagnostic built on the Capability Formation Framework. Assess whether your organization can absorb AI driven change without losing institutional resilience.">
+<meta name="color-scheme" content="dark">
+<title>AI Capability Readiness Diagnostic · Temidayo Afonja</title>
+<meta name="description" content="A self-serve organizational diagnostic built on the Capability Formation Framework. Fifteen behavioral statements read whether your organization can absorb AI driven change without losing institutional resilience.">
 <link rel="canonical" href="https://temidayoafonja.com/ai-capability-readiness.html">
 
 <!-- Open Graph / Twitter -->
@@ -12,11 +13,11 @@
 <meta property="og:site_name" content="Temidayo Afonja">
 <meta property="og:url" content="https://temidayoafonja.com/ai-capability-readiness.html">
 <meta property="og:title" content="AI Capability Readiness Diagnostic">
-<meta property="og:description" content="A paid organizational diagnostic. Assess whether your organization can absorb AI driven change without losing institutional resilience.">
+<meta property="og:description" content="Fifteen behavioral statements read whether your organization can absorb AI driven change without losing institutional resilience.">
 <meta property="og:image" content="https://temidayoafonja.com/og-default.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="AI Capability Readiness Diagnostic">
-<meta name="twitter:description" content="A paid organizational diagnostic. Assess whether your organization can absorb AI driven change without losing institutional resilience.">
+<meta name="twitter:description" content="Fifteen behavioral statements read whether your organization can absorb AI driven change without losing institutional resilience.">
 <meta name="twitter:image" content="https://temidayoafonja.com/og-default.png">
 
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -28,7 +29,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
 
 <!-- Privacy-friendly analytics by Plausible -->
@@ -39,53 +40,240 @@
 </script>
 
 <style>
-/* ── AI Capability Readiness Diagnostic ── */
-.page-hero { padding: 160px 48px 64px; position: relative; z-index: 1; max-width: 1160px; margin: 0 auto; }
-.page-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(44px, 6vw, 76px); font-weight: 300; line-height: 1.04; color: var(--white); margin-bottom: 24px; }
-.page-title em { font-style: italic; color: var(--gold-light); }
-.page-intro { font-size: 17px; line-height: 1.85; color: var(--cream-70); max-width: 680px; margin-bottom: 16px; }
-.hero-meta { display: flex; gap: 28px; flex-wrap: wrap; margin-top: 28px; }
-.hero-meta-item { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--slate); }
-.hero-meta-item strong { display: block; color: var(--gold); font-weight: 500; margin-bottom: 3px; }
-.hero-ctas { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 36px; }
+  :root{
+    color-scheme:dark;
+    --navy:#0F2347;
+    --navy-card:#1B3360;
+    --navy-lift:#234077;
+    --navy-line:#41598a;
+    --rust:#C1440E;
+    --rust-light:#E2733E;
+    --gold:#C9A84C;
+    --gold-soft:#d8bd6f;
+    --gold-deep:#B8952E;
+    --sand:#F5F0E8;
+    --sand-deep:#ece3d4;
+    --sand-dim:#e2dccf;
+    --sand-mute:#b4bccb;
+    --ink:#1a1f2b;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--navy);}
+  body{min-height:100vh;color:var(--sand);font-family:"DM Sans",system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:780px;margin:0 auto;padding:44px 24px 96px;}
 
-.framework-note { max-width: 1160px; margin: 0 auto; padding: 0 48px; position: relative; z-index: 1; }
-.framework-note-inner { padding: 22px 28px; background: var(--gold-dim); border: 1px solid var(--gold-border); border-left: 3px solid var(--gold); font-size: 14px; line-height: 1.75; color: var(--cream-70); }
-.framework-note-inner a { color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--gold-border); }
+  .brand{display:flex;align-items:center;gap:14px;margin:0 0 28px;}
+  .mark{width:46px;height:46px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:4px;flex:0 0 auto;}
+  .mark .sq{border:2px solid var(--gold);border-radius:2px;}
+  .mark .sq.fill{background:var(--rust);border-color:var(--rust);}
+  .wordmark{font-family:"Montserrat",sans-serif;font-weight:600;font-size:14px;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);line-height:1.2;}
 
-.urgency-section { padding: 80px 48px; position: relative; z-index: 1; border-top: 1px solid var(--slate-dim); margin-top: 64px; }
-.urgency-inner { max-width: 1160px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
-.urgency-inner p { font-size: 17px; line-height: 1.85; color: var(--cream-70); margin-bottom: 20px; }
-.urgency-inner p:last-child { margin-bottom: 0; }
+  h1{font-family:"Cormorant Garamond",serif;font-weight:600;color:var(--sand);font-size:clamp(34px,7vw,54px);line-height:1.04;margin:0 0 16px;letter-spacing:0.01em;}
+  .lede{font-size:17px;max-width:56ch;color:var(--sand-dim);margin:0 0 8px;}
+  .rule{height:1px;background:rgba(201,168,76,.22);border:0;margin:36px 0;}
+  .eyebrow{font-family:"Montserrat",sans-serif;font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);font-weight:600;margin:0 0 12px;}
 
-.engagement-section { padding: 90px 48px; position: relative; z-index: 1; background: var(--navy); border-top: 1px solid var(--slate-dim); }
-.engagement-inner { max-width: 1160px; margin: 0 auto; }
-.engagement-header { max-width: 680px; margin-bottom: 56px; }
-.engagement-header p { font-size: 17px; line-height: 1.85; color: var(--cream-70); margin-top: 16px; }
-.step-block { display: grid; grid-template-columns: 1fr 2fr; gap: 64px; padding: 48px 0; border-top: 1px solid var(--slate-dim); align-items: start; }
-.step-block:last-child { border-bottom: 1px solid var(--slate-dim); }
-.step-left { display: flex; align-items: baseline; gap: 18px; }
-.step-num { font-family: 'Cormorant Garamond', serif; font-size: 56px; font-weight: 300; color: var(--gold); opacity: 0.3; line-height: 1; }
-.step-name { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 300; color: var(--white); line-height: 1.2; }
-.step-desc { font-size: 16px; line-height: 1.85; color: var(--cream-70); }
-.step-tag { display: inline-block; font-size: 9px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); border: 1px solid var(--gold-border); padding: 4px 10px; margin-bottom: 14px; }
+  .screen{display:none;}
+  .screen.on{display:block;animation:rise .45s ease both;}
+  @keyframes rise{from{opacity:0;transform:translateY(12px);}to{opacity:1;transform:none;}}
 
-.cta-section { padding: 90px 48px; text-align: center; position: relative; z-index: 1; }
-.cta-inner { max-width: 620px; margin: 0 auto; }
-.cta-inner h2 { margin-bottom: 20px; }
-.cta-inner p { font-size: 17px; line-height: 1.85; color: var(--cream-70); margin-bottom: 16px; }
-.cta-price { font-size: 13px; letter-spacing: 0.04em; color: var(--slate); margin-bottom: 32px; }
-.cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+  /* intro */
+  .frame-card{background:var(--navy-card);border:1px solid rgba(201,168,76,.3);border-left:3px solid var(--rust);border-radius:0 14px 14px 0;padding:24px 26px;margin:28px 0;}
+  .frame-card p{margin:0 0 14px;font-size:15.5px;color:var(--sand-dim);}
+  .frame-card p:last-child{margin:0;}
+  .frame-card .fh{font-family:"Cormorant Garamond",serif;font-size:23px;color:var(--gold);margin:0 0 10px;}
+  .equation{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:18px;color:var(--gold-soft);margin:26px 0;}
+  .tier-note{font-size:13.5px;color:var(--sand-mute);max-width:60ch;margin:18px 0 0;}
+  .builtby{font-size:14px;color:var(--sand-dim);max-width:60ch;margin:16px 0 0;padding:14px 18px;border:1px solid rgba(201,168,76,.35);border-radius:10px;}
+  .builtby strong{color:var(--gold);font-weight:600;}
 
-@media (max-width: 900px) {
-  .page-hero { padding: 120px 24px 48px; }
-  .framework-note { padding: 0 24px; }
-  .urgency-section { padding: 60px 24px; }
-  .urgency-inner { grid-template-columns: 1fr; gap: 32px; }
-  .engagement-section { padding: 64px 24px; }
-  .step-block { grid-template-columns: 1fr; gap: 20px; padding: 36px 0; }
-  .cta-section { padding: 64px 24px; }
-}
+  .gate{margin-top:22px;border-top:1px solid rgba(201,168,76,.25);padding-top:20px;}
+  .gate .gh{font-family:"Cormorant Garamond",serif;font-size:21px;color:var(--gold);margin:0 0 8px;}
+  .gate p{font-size:14px;color:var(--sand-dim);margin:0 0 14px;max-width:56ch;}
+  .gate-row{display:flex;gap:10px;flex-wrap:wrap;}
+  .gate-row input{flex:1;min-width:220px;border:1px solid var(--navy-line);border-radius:10px;padding:12px 14px;font-family:inherit;font-size:14.5px;color:var(--sand);background:var(--navy-card);}
+  .gate-row input::placeholder{color:var(--sand-mute);}
+  .gate-row input:focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-color:var(--gold);}
+  .gate-note{font-size:13px;margin-top:10px;}
+  .gate-note.ok{color:var(--gold-soft);}
+  .gate-note.err{color:var(--rust-light);}
+
+  .btn{display:inline-flex;align-items:center;gap:10px;background:var(--sand);color:var(--navy);border:0;cursor:pointer;font-family:inherit;font-size:15px;font-weight:700;letter-spacing:0.02em;padding:15px 32px;border-radius:11px;transition:background .15s,transform .05s;}
+  .btn:hover{background:#ffffff;}
+  .btn:active{transform:translateY(1px);}
+  .btn:disabled{opacity:.5;cursor:default;}
+  .btn.ghost{background:none;border:1px solid var(--gold);color:var(--gold);font-weight:600;}
+  .btn.ghost:hover{background:var(--gold);color:var(--navy);}
+  .btn.gold{background:var(--gold);color:var(--navy);}
+  .btn.gold:hover{background:var(--gold-soft);}
+  .btnrow{margin-top:30px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;}
+  .sample-link{background:none;border:0;color:var(--gold);font-family:inherit;font-size:13.5px;text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:0;}
+  .sample-link:hover{color:var(--gold-soft);}
+
+  /* intake */
+  .field{margin:0 0 20px;}
+  .field label{display:block;font-size:14px;font-weight:500;color:var(--sand);margin:0 0 8px;}
+  .field .hint{font-size:12.5px;color:var(--sand-mute);margin:4px 0 0;}
+  .field input,.field select{width:100%;border:1px solid var(--navy-line);border-radius:10px;padding:12px 14px;font-family:inherit;font-size:14.5px;color:var(--sand);background:var(--navy-card);appearance:none;}
+  .field select{background-image:url("data:image/svg+xml;charset=UTF-8,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23C9A84C' stroke-width='2' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:38px;}
+  .field input::placeholder{color:var(--sand-mute);}
+  .field input:focus-visible,.field select:focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-color:var(--gold);}
+  .intake-note{font-size:13px;color:var(--sand-mute);margin:0 0 26px;max-width:58ch;}
+
+  /* progress */
+  .progress{position:sticky;top:0;z-index:20;background:var(--navy);padding:14px 0 12px;margin:0 0 8px;}
+  .progress .ptrack{height:4px;background:rgba(201,168,76,.18);border-radius:2px;overflow:hidden;}
+  .progress .pfill{height:100%;width:0%;background:var(--gold);border-radius:2px;transition:width .3s ease;}
+  .progress .plabel{font-size:11.5px;letter-spacing:0.14em;text-transform:uppercase;color:var(--sand-mute);margin:8px 0 0;}
+
+  /* pillars + items */
+  .pillar-head{display:flex;align-items:baseline;gap:14px;margin:38px 0 4px;flex-wrap:wrap;}
+  .pillar-head h2{font-family:"Cormorant Garamond",serif;font-weight:600;color:var(--gold);font-size:28px;margin:0;}
+  .pillar-head .tag{font-style:italic;font-family:"Cormorant Garamond",serif;font-size:18px;color:var(--gold-soft);}
+  .pillar-sub{font-size:14px;color:var(--sand-mute);margin:0 0 20px;max-width:58ch;}
+  .pstep{display:none;}
+  .pstep.cur{display:block;animation:rise .35s ease both;}
+  .pnav{margin-top:28px;display:flex;gap:12px;align-items:center;flex-wrap:wrap;}
+
+  .q{margin:0 0 26px;}
+  .q-text{font-size:15.5px;font-weight:500;color:var(--sand);margin:0 0 10px;max-width:62ch;}
+  .scale{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;}
+  .scale .s{position:relative;}
+  .scale input{position:absolute;opacity:0;pointer-events:none;}
+  .scale label{display:flex;align-items:center;justify-content:center;cursor:pointer;border:1px solid var(--navy-line);background:var(--navy-card);border-radius:9px;padding:11px 4px;font-size:14.5px;font-weight:600;color:var(--sand-dim);transition:border-color .15s,background .15s,color .15s;}
+  .scale label:hover{border-color:var(--gold);}
+  .scale input:focus-visible + label{outline:2px solid var(--gold);outline-offset:2px;}
+  .scale input:checked + label{border-color:var(--gold);background:var(--navy-lift);color:var(--sand);box-shadow:inset 0 -3px 0 var(--rust);}
+  .anchors{display:flex;justify-content:space-between;gap:14px;margin:7px 2px 0;}
+  .anchors span{font-size:12px;color:var(--sand-mute);line-height:1.45;max-width:46%;}
+  .anchors span:last-child{text-align:right;}
+
+  .run-note{font-size:13px;color:var(--sand-mute);margin-top:14px;}
+  .status{margin-top:28px;font-size:15px;color:var(--sand);display:none;}
+  .status.show{display:block;}
+  .status.err{color:var(--rust-light);}
+  .spinner{display:inline-block;width:14px;height:14px;border:2px solid rgba(245,240,232,.25);border-top-color:var(--sand);border-radius:50%;animation:spin .7s linear infinite;vertical-align:-2px;margin-right:8px;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+
+  /* result */
+  .card{background:var(--navy-card);border:1px solid rgba(201,168,76,.3);border-radius:18px;padding:34px 30px;color:var(--sand);}
+  .card .qd-name{font-family:"Cormorant Garamond",serif;font-size:42px;font-weight:600;margin:0 0 6px;color:#fff;line-height:1.05;}
+  .card .headline{font-size:16.5px;color:var(--sand-dim);margin:0;max-width:54ch;}
+  .contested{margin:16px 0 0;padding:12px 16px;border:1px dashed var(--gold);border-radius:10px;font-size:13.5px;color:var(--gold-soft);}
+  .confflag{margin:12px 0 0;padding:12px 16px;border:1px solid rgba(226,115,62,.6);border-radius:10px;font-size:13.5px;color:var(--rust-light);}
+
+  .matrix-wrap{margin:30px 0 8px;}
+  .matrix-axis-top{display:flex;justify-content:space-between;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin:0 0 8px 64px;}
+  .matrix-row{display:flex;align-items:stretch;gap:10px;}
+  .matrix-yaxis{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end;width:54px;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);padding:6px 0;}
+  .matrix{flex:1;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:10px;}
+  .cell{border:1.5px solid rgba(201,168,76,.55);border-radius:10px;min-height:84px;padding:12px;display:flex;flex-direction:column;justify-content:space-between;}
+  .cell .cn{font-family:"Cormorant Garamond",serif;font-size:19px;color:var(--gold);line-height:1.1;}
+  .cell .cc{font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(245,240,232,.82);}
+  .cell.active{background:var(--rust);border-color:var(--rust);}
+  .cell.active .cn{color:#fff;}
+  .cell.active .cc{color:rgba(255,255,255,.9);}
+  .cell.adjacent{border-style:dashed;border-color:var(--gold);}
+  .axis-caption{font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);text-align:center;margin:10px 0 0 64px;}
+
+  .scores{margin:28px 0 4px;display:grid;gap:16px;}
+  .score-row .sr-top{display:flex;justify-content:space-between;align-items:baseline;margin:0 0 6px;}
+  .score-row .sr-name{font-size:12px;letter-spacing:0.14em;text-transform:uppercase;color:var(--sand-mute);}
+  .score-row .sr-val{font-family:"Cormorant Garamond",serif;font-size:22px;color:var(--gold);}
+  .score-row .sr-band{font-size:11.5px;color:var(--sand-mute);margin-left:8px;text-transform:capitalize;}
+  .bar{height:7px;background:rgba(201,168,76,.16);border-radius:4px;overflow:hidden;position:relative;}
+  .bar .fill{height:100%;width:0%;background:var(--gold);border-radius:4px;transition:width .8s ease;}
+  .bar .thresh{position:absolute;top:-3px;bottom:-3px;width:2px;background:var(--rust-light);left:55%;}
+  .bar-note{font-size:11px;color:var(--sand-mute);margin:6px 0 0;}
+
+  .read{margin-top:34px;}
+  .read h3{font-family:"Cormorant Garamond",serif;font-size:24px;color:var(--gold);margin:26px 0 10px;font-weight:600;}
+  .read p{font-size:16px;color:var(--sand-dim);margin:0 0 16px;}
+  .leaders{background:var(--navy-lift);border-left:3px solid var(--rust);border-radius:0 12px 12px 0;padding:22px 24px;margin-top:8px;}
+  .leaders .lh{font-family:"Cormorant Garamond",serif;font-size:22px;color:var(--gold);margin:0 0 10px;}
+  .leaders p{font-size:15.5px;color:var(--sand-dim);margin:0;}
+
+  .next-card{margin-top:36px;background:var(--navy-card);border:1px solid rgba(201,168,76,.3);border-radius:16px;padding:28px 26px;}
+  .next-card .nh{font-family:"Cormorant Garamond",serif;font-size:24px;color:var(--gold);margin:0 0 10px;}
+  .next-card p{font-size:15px;color:var(--sand-dim);margin:0 0 18px;max-width:58ch;}
+  .result-actions{margin-top:26px;display:flex;gap:10px;flex-wrap:wrap;}
+
+  /* report leave-behind */
+  .report-doc{display:none;background:#fff;color:var(--ink);border-radius:14px;padding:40px 38px;margin-top:46px;}
+  .report-doc.show{display:block;animation:rise .4s ease both;}
+  .rd-top{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;border-bottom:1px solid var(--sand-deep);padding-bottom:18px;margin-bottom:22px;}
+  .rd-brand{display:flex;align-items:center;gap:12px;}
+  .rd-mark{width:38px;height:38px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:3px;flex:0 0 auto;}
+  .rd-mark .sq{border:2px solid var(--gold-deep);border-radius:2px;}
+  .rd-mark .sq.fill{background:var(--rust);border-color:var(--rust);}
+  .rd-word{font-family:"Montserrat",sans-serif;font-weight:600;font-size:12px;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold-deep);}
+  .rd-date{font-size:12px;color:#6b7280;text-align:right;letter-spacing:0.03em;white-space:nowrap;}
+  .rd-title{font-family:"Cormorant Garamond",serif;font-weight:600;color:var(--navy);font-size:34px;line-height:1.05;margin:0 0 6px;}
+  .rd-prepared{font-size:13.5px;color:#5a606c;margin:0;}
+  .rd-context{font-size:12.5px;color:#6b7280;margin:6px 0 0;}
+  .rd-frame{font-size:14px;color:#3a3f4a;margin:14px 0 26px;max-width:62ch;}
+  .rd-quad-label{font-size:11px;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold-deep);font-weight:600;margin:0 0 6px;}
+  .rd-quad{font-family:"Cormorant Garamond",serif;font-weight:600;color:var(--navy);font-size:30px;margin:0 0 6px;}
+  .rd-headline{font-size:15.5px;color:#3a3f4a;margin:0 0 10px;max-width:60ch;}
+  .rd-contested{font-size:13px;color:#8a5a10;border:1px dashed var(--gold-deep);border-radius:8px;padding:10px 14px;margin:0 0 20px;max-width:62ch;}
+  .rd-matrix-wrap{margin:8px 0 26px;}
+  .rd-axis-top{display:flex;justify-content:space-between;font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-deep);margin:0 0 6px 58px;}
+  .rd-row{display:flex;gap:8px;}
+  .rd-yaxis{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end;width:50px;font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold-deep);padding:4px 0;}
+  .rd-matrix{flex:1;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:8px;}
+  .rd-cell{border:1.5px solid var(--gold-deep);border-radius:8px;min-height:70px;padding:10px;display:flex;flex-direction:column;justify-content:space-between;}
+  .rd-cell .cn{font-family:"Cormorant Garamond",serif;font-size:17px;color:var(--navy);line-height:1.1;}
+  .rd-cell .cc{font-size:9.5px;letter-spacing:0.07em;text-transform:uppercase;color:#7a8090;}
+  .rd-cell.active{background:var(--rust);border-color:var(--rust);}
+  .rd-cell.active .cn{color:#fff;}
+  .rd-cell.active .cc{color:rgba(255,255,255,.85);}
+  .rd-cell.adjacent{border-style:dashed;}
+  .rd-axis-cap{font-size:10px;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold-deep);text-align:center;margin:8px 0 0 58px;}
+  .rd-levels{display:flex;border-top:1px solid var(--sand-deep);border-bottom:1px solid var(--sand-deep);margin:0 0 24px;}
+  .rd-lvl{flex:1;padding:14px 6px;text-align:center;border-right:1px solid var(--sand-deep);}
+  .rd-lvl:last-child{border-right:0;}
+  .rd-lvl .ln{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#7a8090;margin:0 0 5px;}
+  .rd-lvl .lv{font-family:"Cormorant Garamond",serif;font-size:20px;color:var(--navy);}
+  .rd-lvl .lb{font-size:10.5px;color:#7a8090;text-transform:capitalize;}
+  .rd-read h4{font-family:"Cormorant Garamond",serif;font-size:20px;color:var(--navy);margin:18px 0 8px;font-weight:600;}
+  .rd-read p{font-size:14.5px;color:#33384a;line-height:1.65;margin:0 0 14px;}
+  .rd-leaders{background:var(--sand-deep);border-left:3px solid var(--rust);border-radius:0 10px 10px 0;padding:18px 20px;margin:6px 0 24px;}
+  .rd-leaders .lh{font-family:"Cormorant Garamond",serif;font-size:19px;color:var(--navy);margin:0 0 8px;}
+  .rd-leaders p{font-size:14px;color:#3a3f4a;margin:0;}
+  .rd-next{border:1px solid var(--sand-deep);border-radius:10px;padding:16px 20px;margin:0 0 24px;}
+  .rd-next .nh{font-family:"Cormorant Garamond",serif;font-size:18px;color:var(--navy);margin:0 0 6px;}
+  .rd-next p{font-size:13.5px;color:#3a3f4a;margin:0;}
+  .rd-equation{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:15px;color:var(--gold-deep);text-align:center;margin:0 0 22px;}
+  .rd-method{font-size:11px;color:#8a909c;margin:0 0 22px;max-width:66ch;}
+  .rd-foot{border-top:1px solid var(--sand-deep);padding-top:14px;display:flex;justify-content:space-between;gap:10px;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:#8a909c;}
+  .rd-actions{margin-top:22px;display:flex;gap:10px;flex-wrap:wrap;}
+  .rd-actions button{font-family:inherit;font-size:14px;font-weight:600;border-radius:10px;padding:12px 22px;cursor:pointer;border:0;}
+  .rd-save{background:var(--navy);color:var(--sand);}
+  .rd-close{background:#fff;border:1px solid var(--navy);color:var(--navy);}
+
+  @media (max-width:560px){
+    .wrap{padding:34px 18px 72px;}
+    .matrix-yaxis{width:42px;}
+    .matrix-axis-top{margin-left:52px;}
+    .axis-caption{margin-left:52px;}
+    .report-doc{padding:28px 22px;}
+    .anchors span{font-size:11px;}
+  }
+  @media (prefers-reduced-motion:reduce){*{animation:none !important;transition:none !important;}}
+  @media print{
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    html,body{background:#fff;}
+    nav,footer,.nav-spacer{display:none !important;}
+    .wrap{padding:0;max-width:none;}
+    .wrap > *:not(#report){display:none !important;}
+    #report{display:block !important;margin:0;border-radius:0;padding:0 6px;}
+    .rd-actions{display:none !important;}
+  }
+
+  /* ── site integration: sit above the shared texture overlay, clear the fixed nav ── */
+  .wrap{position:relative;z-index:1;}
+  .nav-spacer{height:64px;}
+  @media (max-width:768px){ .nav-spacer{height:58px;} }
 </style>
 </head>
 <body>
@@ -104,108 +292,137 @@
     <li><a href="audit.html" class="nav-cta">Take the Audit</a></li>
   </ul>
 </nav>
+<div class="nav-spacer"></div>
 
-<div class="page-hero">
-  <span class="eyebrow fade-up delay-1">For Organizational Leaders</span>
-  <h1 class="page-title fade-up delay-2">AI Capability<br>Readiness <em>Diagnostic</em></h1>
-  <p class="page-intro fade-up delay-3">Most organizations are adopting AI faster than they are building the human capability to absorb it. The change looks like progress while it quietly thins the institutional resilience underneath. This is a paid engagement that tells you, with evidence, whether your organization can take on AI driven change without losing what holds it together.</p>
-  <div class="hero-meta fade-up delay-3">
-    <div class="hero-meta-item"><strong>Format</strong>Organizational engagement</div>
-    <div class="hero-meta-item"><strong>Built On</strong>Capability Formation Framework</div>
-    <div class="hero-meta-item"><strong>Scope</strong>Leadership team or target unit</div>
+<div class="wrap">
+  <div class="brand">
+    <div class="mark" aria-hidden="true"><span class="sq"></span><span class="sq"></span><span class="sq"></span><span class="sq fill"></span></div>
+    <span class="wordmark">The Density Group</span>
   </div>
-  <div class="hero-ctas fade-up delay-3">
-    <a href="work.html#get-in-touch" class="btn-primary">Request Pricing</a>
-    <a href="audit.html?audience=org" class="btn-secondary">Take the Audit First</a>
-  </div>
+
+  <!-- SCREEN 0: FRAMING -->
+  <section class="screen on" id="s-intro">
+    <p class="eyebrow">Self-serve tier · Fifteen-question core diagnostic</p>
+    <h1>AI Capability Readiness Diagnostic</h1>
+    <p class="lede">Most AI-readiness assessments check whether you have the artifacts of readiness: a policy, a budget, a few pilots in flight. This one measures whether your institution can metabolize hard change at all.</p>
+
+    <div class="frame-card">
+      <p class="fh">What the engine reads</p>
+      <p>Fifteen behavioral statements, scored against the last twelve to twenty-four months of your organization's actual life, place you on two axes. Density measures how high-challenge your environment really is: intensity, not tenure. Optionality measures whether the capability you build travels across functions and industries. Alumni Capital, the third pillar, does not move your position. It decides whether the position you hold compounds or leaks when people move and the work changes.</p>
+      <p>You will land in one of four quadrants: Compounding, Depth Trap, Stagnant, or Fragile. The engine then generates a resilience read in plain language: what your position means for AI absorption, what it is costing you, and what leadership owes the institution next.</p>
+    </div>
+
+    <p class="equation">Density to Optionality to Alumni Capital produces Institutional Resilience.</p>
+
+    <p class="tier-note">This is the self-serve read: one respondent, fifteen core statements, a structured diagnosis in about seven minutes. The full commissioned engagement runs the complete twenty-seven-item instrument across your leadership team, adds evidence review and a leadership interview, and returns an interpreted read from Temidayo Afonja. Scores here are working hypotheses until they are triangulated.</p>
+
+    <p class="builtby">Built by <strong>Temidayo Afonja</strong>, founder of The Density Group. Eighteen years designing and running capability programs inside Big 4 consulting, regulated life sciences, and enterprise technology. M.S. Cybersecurity Risk and Strategy, NYU. The instrument runs on the Capability Formation Framework, her proprietary model for how institutions build capability that survives disruption.</p>
+
+    <div class="btnrow">
+      <button class="btn" id="startBtn">Begin the diagnostic&nbsp;&nbsp;<span style="font-weight:500;opacity:.7;">7 min</span></button>
+      <button class="sample-link" id="sampleBtn">See a sample read</button>
+    </div>
+  </section>
+
+  <!-- SCREEN 1: INTAKE -->
+  <section class="screen" id="s-intake">
+    <p class="eyebrow">Context · Not scored</p>
+    <h1 style="font-size:clamp(28px,5vw,40px);">Before the read</h1>
+    <p class="intake-note">These inputs never move your quadrant. Three of them set the clock on the read: a weak position under heavy change pressure is in more danger than the same position with time. Two more are optional and sharpen the read if you give them.</p>
+
+    <div class="field">
+      <label for="orgName">Organization name (optional)</label>
+      <input type="text" id="orgName" placeholder="Used to title the report" />
+    </div>
+    <div class="field">
+      <label for="fSector">Sector and regulatory regime</label>
+      <select id="fSector">
+        <option value="">Select one</option>
+        <option>Federal agency</option>
+        <option>Prime contractor</option>
+        <option>Regulated enterprise: finance</option>
+        <option>Regulated enterprise: health or pharma</option>
+        <option>Regulated enterprise: utility or energy</option>
+        <option>Technology or SaaS</option>
+        <option>Education</option>
+        <option>Nonprofit</option>
+        <option>Other enterprise</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="fHeadcount">Headcount band</label>
+      <select id="fHeadcount">
+        <option value="">Select one</option>
+        <option>Under 250</option>
+        <option>250 to 1,000</option>
+        <option>1,000 to 5,000</option>
+        <option>5,000 to 20,000</option>
+        <option>Over 20,000</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="fPressure">AI change pressure: how fast does leadership expect AI to reshape the work?</label>
+      <select id="fPressure">
+        <option value="">Select one</option>
+        <option>Low</option>
+        <option>Moderate</option>
+        <option>High</option>
+      </select>
+      <p class="hint">This sets the urgency of the read. It is not a maturity score.</p>
+    </div>
+    <div class="field">
+      <label for="fMission">Mission exposure (optional, sharpens the read)</label>
+      <select id="fMission">
+        <option value="">Skip, or select one</option>
+        <option>Safety of life</option>
+        <option>Public trust</option>
+        <option>National security</option>
+        <option>Financial system</option>
+        <option>None of these</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="fChange">Major change in the last 24 months (optional, sharpens the read)</label>
+      <select id="fChange">
+        <option value="">Skip, or select one</option>
+        <option>Reorganization</option>
+        <option>Mandate or mission shift</option>
+        <option>Leadership turnover</option>
+        <option>Crisis</option>
+        <option>None</option>
+      </select>
+    </div>
+
+    <p class="intake-note" style="margin-top:6px;">How your answers are handled: they exist to generate your read, in this session. If you request the written report, your email and your quadrant enroll you in the follow-up for your position. Nothing else leaves this page, and honest answers are the only kind worth scoring.</p>
+
+    <div class="btnrow">
+      <button class="btn" id="toQuestionsBtn">Continue to the diagnostic</button>
+    </div>
+    <div class="status" id="intakeStatus"></div>
+  </section>
+
+  <!-- SCREEN 2: DIAGNOSTIC -->
+  <section class="screen" id="s-questions">
+    <div class="progress">
+      <div class="ptrack"><div class="pfill" id="pfill"></div></div>
+      <p class="plabel" id="plabel">0 of 15 answered</p>
+    </div>
+    <p class="lede" style="font-size:15px;">Score each statement against the last twelve to twenty-four months of your organization's actual life, not the organization you intend to become. Five statements per pillar, three pillars.</p>
+    <div id="form"></div>
+    <div class="pnav">
+      <button class="btn ghost" id="backBtn" hidden>Back</button>
+      <button class="btn" id="nextBtn">Continue to Optionality</button>
+    </div>
+    <p class="run-note" id="runNote"></p>
+    <div class="status" id="status"></div>
+  </section>
+
+  <!-- RESULT -->
+  <div class="result screen" id="s-result"></div>
+
+  <!-- REPORT -->
+  <div class="report-doc" id="report"></div>
 </div>
-
-<div class="framework-note">
-  <div class="framework-note-inner">
-    This diagnostic is built on the <a href="framework.html">Capability Formation Framework</a>, the same architecture of Density, Optionality, and Alumni Capital that maps how capability compounds or erodes across an organization.
-  </div>
-</div>
-
-<section class="urgency-section">
-  <div class="urgency-inner">
-    <div>
-      <span class="eyebrow">Why Now</span>
-      <h2>AI does not wait for your organization to be ready.</h2>
-    </div>
-    <div>
-      <p>Every quarter of adoption either builds on a capable base or papers over a thinning one. Tools get deployed, work gets faster, and the gaps that AI is quietly covering for stay invisible until the moment the organization needs the judgment underneath them.</p>
-      <p>The organizations that come out of this decade stronger are the ones that knew, before they scaled AI, where their capability was real and where it was borrowed. Institutional resilience is not a byproduct of good tools. It is the capacity of your people to hold what the organization depends on when conditions change. AI can compound that capacity or spend it.</p>
-      <p>This diagnostic gives you that read while you can still act on it.</p>
-    </div>
-  </div>
-</section>
-
-<section class="engagement-section">
-  <div class="engagement-inner">
-    <div class="engagement-header">
-      <span class="eyebrow">The Engagement</span>
-      <h2>What the diagnostic does.</h2>
-      <p>A structured engagement that moves from signal to plan. Your organization takes the assessment, then the work turns that signal into something your leadership can act on.</p>
-    </div>
-
-    <div class="step-block">
-      <div class="step-left">
-        <div class="step-num">01</div>
-        <div class="step-name">Your organization takes the assessment</div>
-      </div>
-      <div>
-        <p class="step-desc">Your leadership team or a target business unit completes the Capability Formation assessment across Density, Optionality, and Alumni Capital. It is built to see the organization clearly, including the parts that are harder to see from the inside, and it is mapped to where AI is most likely to expose or strengthen what you have built.</p>
-      </div>
-    </div>
-
-    <div class="step-block">
-      <div class="step-left">
-        <div class="step-num">02</div>
-        <div class="step-name">An interpreted capability read</div>
-      </div>
-      <div>
-        <span class="step-tag">Deliverable</span>
-        <p class="step-desc">Not a score dump. A practitioner read of where capability is compounding, where it is narrowing toward fragile specialization, and where AI adoption will either build on a real base or paper over a borrowed one. You see your organization placed in the Career Strategy Matrix, with the risk profile that placement carries for an AI transition.</p>
-      </div>
-    </div>
-
-    <div class="step-block">
-      <div class="step-left">
-        <div class="step-num">03</div>
-        <div class="step-name">A leadership working session</div>
-      </div>
-      <div>
-        <span class="step-tag">Deliverable</span>
-        <p class="step-desc">A guided session with your leadership team to pressure test the read against how the organization actually operates. The goal is shared language and honest agreement on where the organization is strong, where it is exposed, and what it is ready to change. Leaders leave the room aligned on the same picture, which is most of the work.</p>
-      </div>
-    </div>
-
-    <div class="step-block">
-      <div class="step-left">
-        <div class="step-num">04</div>
-        <div class="step-name">A prioritized action map</div>
-      </div>
-      <div>
-        <span class="step-tag">Deliverable</span>
-        <p class="step-desc">A sequenced set of structural moves, scoped to what your organization is ready to act on, so AI adoption strengthens institutional resilience rather than spending it. Each move is tied to the capability it protects or builds, and ordered so the first steps create room for the harder ones.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section class="cta-section">
-  <div class="cta-inner">
-    <span class="eyebrow">Start Here</span>
-    <h2>See where your organization stands before you scale AI.</h2>
-    <p>Every engagement begins with a conversation about context. Tell me what your organization is taking on and we will determine together whether the diagnostic is the right fit and what it would cost for your scope.</p>
-    <p class="cta-price">Scoped to organizational complexity. Request pricing for your context.</p>
-    <div class="cta-buttons">
-      <a href="work.html#get-in-touch" class="btn-primary">Request Pricing</a>
-      <a href="audit.html?audience=org" class="btn-secondary">Take the Audit First</a>
-    </div>
-  </div>
-</section>
 
 <footer>
   <div>
@@ -226,5 +443,644 @@
 </footer>
 
 <script defer src="/nav.js"></script>
+<script>
+/* ============================================================
+   CONFIGURATION
+   BOOKING_URL: where "Book a results briefing" points. Swap for a
+     real scheduler (Calendly, etc.) when one exists.
+   CAPTURE_ENDPOINT: Netlify function that durably stores the lead.
+   FORMSPREE_ENDPOINT: emails the submission to Temidayo (same form
+     as the rest of the site; forwards to temidayo@thedensitygroup.com).
+   ============================================================ */
+const BOOKING_URL = "work.html#get-in-touch";
+const CAPTURE_ENDPOINT = "/.netlify/functions/ai-readiness-capture";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xjgapael";
+
+/* ============================================================
+   PHASE 0 CORE TIER: 15 items, 5 per pillar, 0 to 4 anchors
+   ============================================================ */
+const PILLARS = [
+  {
+    key:"density", name:"Density", tag:"Intensity, not tenure.",
+    sub:"How high-challenge the environment actually is. Whether people operate under real consequence and genuine stretch, which predicts whether the organization can take on AI as one more hard problem rather than a threat it has never had to face.",
+    items:[
+      {id:"D1", text:"In the last 12 months, our people have had to make consequential decisions without a clear precedent to follow.",
+       lo:"Almost never, the work runs on established procedure", hi:"Routinely, this is normal here"},
+      {id:"D2", text:"When work goes wrong, the people responsible feel the consequences directly.",
+       lo:"Process absorbs it and individuals are insulated", hi:"They own the outcome"},
+      {id:"D5", text:"In the last two years, this organization faced a genuine test (a crisis, a mandate shift, a market or mission shock) that it had to navigate without a playbook.",
+       lo:"Nothing like that happened", hi:"Yes, and we had to figure it out live"},
+      {id:"D7", text:"Long-serving people here are still tested. Seniority does not mean coasting.",
+       lo:"Tenure buys comfort", hi:"Tenure does not lower the challenge"},
+      {id:"D8", text:"People are expected to operate when the answer is genuinely unknown, and that is normal here.",
+       lo:"The unknown is rare and uncomfortable", hi:"Working in the unknown is the job"}
+    ]
+  },
+  {
+    key:"optionality", name:"Optionality", tag:"Portable, or trapped.",
+    sub:"How portable the capability the organization builds is across functions and industries. This predicts whether you can redeploy your workforce as AI automates and reshapes specific tasks, instead of replacing people wholesale.",
+    items:[
+      {id:"O1", text:"People here move across functions or domains during their careers, not only up a single track.",
+       lo:"Single-track for life", hi:"Movement across functions is common"},
+      {id:"O3", text:"When the work changes, we redeploy people into new roles rather than replacing them.",
+       lo:"We replace", hi:"We redeploy"},
+      {id:"O6", text:"Someone leaving here for a different industry or function would be seen as a strong hire, not a narrow specialist who only fits us.",
+       lo:"Narrow specialist", hi:"Strong general hire"},
+      {id:"O7", text:"We deliberately build general capability (judgment, problem-solving, learning speed), not only role-specific procedure.",
+       lo:"Procedure only", hi:"General capability by design"},
+      {id:"O8", text:"Our people could carry their value into a role that does not exist yet.",
+       lo:"Their value is tied to the current role", hi:"They would adapt into a new role"}
+    ]
+  },
+  {
+    key:"alumni", name:"Alumni Capital", tag:"What stays after they go.",
+    sub:"What the organization retains and circulates after people leave. Under AI-driven change, churn and role change rise, and this pillar decides whether departures deplete the institution or feed a renewable network.",
+    items:[
+      {id:"A1", text:"When an experienced person leaves, what they knew stays with us.",
+       lo:"It walks out the door", hi:"It stays"},
+      {id:"A3", text:"People tend to leave here as advocates, not as severed ties.",
+       lo:"Exits burn", hi:"Exits stay warm"},
+      {id:"A4", text:"Former employees stay connected: they refer talent, send business, return, or vouch for us.",
+       lo:"They disappear", hi:"They keep circulating value back"},
+      {id:"A6", text:"How we handle someone's exit gets the same attention as how we handle their entry.",
+       lo:"Exits are an afterthought", hi:"Exits are designed"},
+      {id:"A7", text:"If a wave of our most experienced people left or retired in the next two years, we would retain what they know.",
+       lo:"We would lose it", hi:"We are built to retain it"}
+    ]
+  }
+];
+
+/* ============================================================
+   SCORING ENGINE (deterministic; the AI writes prose only)
+   Pillar score: sum of five items (0-20), normalized to 0-100.
+   Provisional threshold: 55. Contested band: within 8 points.
+   Alumni bands: high >= 60, moderate 35-59, low < 35.
+   Confidence flag: 12+ top-box answers.
+   ============================================================ */
+const THRESHOLD = 55;
+const BAND = 8;
+
+const QUADRANT_POS = {
+  "Depth Trap":  {row:0,col:0, code:"High density / Low optionality"},
+  "Compounding": {row:0,col:1, code:"High density / High optionality"},
+  "Stagnant":    {row:1,col:0, code:"Low density / Low optionality"},
+  "Fragile":     {row:1,col:1, code:"Low density / High optionality"}
+};
+const GRID_ORDER = ["Depth Trap","Compounding","Stagnant","Fragile"];
+
+function quadrantFor(denHigh, optHigh){
+  if(denHigh && optHigh) return "Compounding";
+  if(denHigh && !optHigh) return "Depth Trap";
+  if(!denHigh && optHigh) return "Fragile";
+  return "Stagnant";
+}
+
+function scoreEngine(vals){
+  // vals: {D1:0..4, ...} all 15
+  const sums = {density:0, optionality:0, alumni:0};
+  let topBox = 0;
+  PILLARS.forEach(p=>{
+    p.items.forEach(it=>{
+      const v = vals[it.id];
+      sums[p.key] += v;
+      if(v===4) topBox++;
+    });
+  });
+  const scores = {
+    density: sums.density*5,
+    optionality: sums.optionality*5,
+    alumni: sums.alumni*5
+  };
+  const denHigh = scores.density >= THRESHOLD;
+  const optHigh = scores.optionality >= THRESHOLD;
+  const quadrant = quadrantFor(denHigh, optHigh);
+  const denContested = Math.abs(scores.density - THRESHOLD) <= BAND;
+  const optContested = Math.abs(scores.optionality - THRESHOLD) <= BAND;
+  const adjacent = [];
+  if(denContested) adjacent.push(quadrantFor(!denHigh, optHigh));
+  if(optContested) adjacent.push(quadrantFor(denHigh, !optHigh));
+  const acBand = scores.alumni >= 60 ? "high" : (scores.alumni >= 35 ? "moderate" : "low");
+  const confidenceFlag = topBox >= 12;
+  const bandLabel = s => s >= THRESHOLD ? "high" : "low";
+  return {
+    scores, quadrant,
+    densityBand: bandLabel(scores.density),
+    optionalityBand: bandLabel(scores.optionality),
+    acBand,
+    contested: denContested || optContested,
+    denContested, optContested,
+    adjacent: [...new Set(adjacent)],
+    confidenceFlag
+  };
+}
+
+/* ============================================================
+   FALLBACK READS (framework-native, used if the live call fails)
+   Condensed from the eight Phase 0 resilience read variants.
+   ============================================================ */
+const FALLBACK = {
+  "Compounding":{
+    headline:"You build deep capability that travels, and the open question is whether you keep any of it after people move.",
+    read:"Your environment tests people under real consequence and the capability it forges is portable across functions. That combination is the strongest structural position on the matrix, and it makes AI absorbable: your people are used to operating without precedent, so a new class of tools reads as one more hard problem rather than a threat.",
+    ai:"AI absorption here is a redeployment story. The risk is complacency about exits, because portable capability leaves easily.",
+    acHigh:"Your alumni capital is holding the position together. Knowledge stays usable, former people circulate value back, and the network renews what departures would otherwise drain.",
+    acLow:"Your alumni capital is the leak. A compounding environment with weak exit discipline is a free training ground for competitors: you forge portable capability and then hand it away with nothing retained.",
+    leaders:"The work in front of leadership is exit discipline. Every departure either feeds a network you can call on or subsidizes an institution you compete with, and the cost of getting it wrong is measured in the year it takes to rebuild what walked out. The responsibility is to make sure what this institution builds keeps belonging to it, in some form, after the people who built it have moved on."
+  },
+  "Depth Trap":{
+    headline:"You are a high-pressure environment that builds deep skill people cannot easily carry anywhere else, and that same skill cannot easily move inside your own walls.",
+    read:"Your people work close to the edge and the intensity is real, which is why density reads high. What that intensity produces is shaped tightly around your internal systems, your regulatory posture, and the way decisions move through your structure, so it does not travel. From the inside this looks like strength: performance is high and tenure looks like loyalty. The brittleness shows up only when the work changes shape, which is exactly what AI-driven change does.",
+    ai:"AI absorption here is the hidden risk. Automation targets specialized, procedure-bound work first, and low optionality means you cannot redeploy the people it displaces. You would be forced to replace rather than redeploy, at the cost of the better part of a year per senior role.",
+    acHigh:"Your alumni capital is the one thing softening the trap. Knowledge partially stays, some former people still send talent and trust back, and that keeps the position from hardening.",
+    acLow:"Your alumni capital compounds the trap. Every senior departure carries institutional knowledge out the door with nothing retained and no relationship maintained, so the depth you paid to build simply evaporates.",
+    leaders:"The work in front of leadership is to widen what the intensity produces, not to dial the intensity down. Build the portable version of the skills your people already have, give them range across functions before the disruption gives it to them elsewhere, and treat exits as the asset that turns depth into resilience. How you treat exits determines what you attract at entry, and the institution's obligation is to still be able to function after the people who knew how it worked have gone."
+  },
+  "Stagnant":{
+    headline:"Your environment is neither testing people nor building capability that travels, and the quiet is the most expensive part.",
+    read:"Density reads low: the work runs on established procedure, consequence is absorbed by process, and long tenure buys comfort rather than continued challenge. Optionality reads low too, because what people master here is bound to how this organization works. Nothing about this position feels urgent from the inside, which is the trap. The cost compounds quietest of all four quadrants.",
+    ai:"AI absorption here is weak and feels low-stakes, which means the danger will not be felt until it has already arrived. An institution that has not been tested in years has no muscle for a disruption that arrives on someone else's schedule.",
+    acHigh:"Your alumni capital is unusual for this quadrant and it is the seed of renewal, if leadership uses the network to bring challenge and outside capability back in.",
+    acLow:"Your alumni capital gives you nothing to draw on: nothing in the environment is generating capability and nothing is holding what little exists.",
+    leaders:"The work in front of leadership is to manufacture genuine density on purpose, because nothing in the current environment is producing it. Create real stretch, real consequence, and real redeployment before circumstance creates them for you. The responsibility is to build the challenge now, on the institution's terms, rather than absorb it later on the disruption's terms."
+  },
+  "Fragile":{
+    headline:"Your people hold portable capability with no intensity forging depth and no strong reason to stay.",
+    read:"Optionality reads high: what people can do here would be valued elsewhere and they know it. Density reads low, so the environment is not building the deep, hard-won judgment that anchors capability and loyalty. The position looks adaptable from the outside because your people can do many things. Under real pressure it has little to hold onto, because nothing here forged depth and nothing here holds people.",
+    ai:"AI absorption here is deceptive. The flexibility is real but shallow, and change pressure will pull your most portable people out the door first, exactly when you need them most.",
+    acHigh:"Your alumni capital is the saving grace. The network and the pipeline keep the organization staffed and circulating even as individuals flow through, which buys time to build depth.",
+    acLow:"Your alumni capital makes this a revolving door with no compounding. Capability flows straight through and nothing accumulates: not knowledge, not relationships, not a pipeline.",
+    leaders:"The work in front of leadership is to build density and reasons to stay, or to accept the role of training ground for other institutions. That is a real choice and it should be made deliberately. The responsibility is to decide whether this becomes a place capability is built or a place it passes through, because the institution will live with whichever answer leadership gives by default."
+  }
+};
+
+/* ============================================================
+   AI NARRATIVE LAYER
+   The engine has already placed the org. Claude writes prose only.
+   ============================================================ */
+const SYSTEM = `You are the narrative layer of The Density Group's AI Capability Readiness Diagnostic. The scoring engine has already placed the organization. You never change the placement, the scores, or the bands. You write the resilience read in the founder's voice, grounded in the Capability Formation Framework.
+
+The framework: Density measures how high-challenge the environment actually is (intensity, not tenure). Optionality measures how portable the capability built there is across functions and industries. Alumni Capital measures what the organization retains and circulates after people leave. Density and Optionality set the quadrant. Alumni Capital never moves the quadrant: it modulates whether the structural position compounds or leaks under change. Density to Optionality to Alumni Capital produces Institutional Resilience.
+
+The quadrants: Compounding (high density, high optionality), Depth Trap (high density, low optionality), Stagnant (low, low), Fragile (low density, high optionality).
+
+You will receive: the computed quadrant, the three pillar scores and bands, whether the placement is contested (near a boundary) and which adjacent quadrant is in play, the Alumni Capital band, a confidence flag if answers clustered at the top box, the intake context (sector, headcount, mission exposure, recent change, AI change pressure), and the raw item answers.
+
+How to write the read:
+- If the placement is contested, treat the org as standing near the boundary and name the adjacent quadrant as the direction of risk or opportunity. Do not pretend the label is clean.
+- Use the AI change pressure to set the clock: high pressure shortens the runway and the read should say so plainly; low pressure buys time and the read should warn against mistaking time for safety.
+- Use the sector and mission exposure to ground examples. A federal agency hears about mandate shifts and retirement cliffs. A regulated enterprise hears about compliance-shaped capability and specialized roles. Context marked "Not provided" is simply absent; never remark on its absence.
+- Read Alumni Capital as the realization layer: it decides whether the quadrant position holds or leaks.
+- The Compounding read is never a compliment. Portable capability leaves easily, and a strong position with weak exit discipline is a free training ground for competitors. Make retention and exit discipline the urgency, so the strongest quadrant still leaves leadership with work to do.
+- If the confidence flag is raised, note once, without accusation, that the answers cluster at the top of every scale and the self-serve read trusts them as given; triangulation in the full diagnostic is what verifies them.
+- Name the cost of the current position in concrete but honest terms: the time to rebuild lost capability, the expense and lag of replacing rather than redeploying, the knowledge that walks out the door. Never invent precise dollar figures for this organization.
+- The specific answers matter. If a low pillar score is driven by one or two items, name the behavior those items describe rather than speaking in generalities.
+
+Voice rules, enforce strictly:
+- No em dashes under any circumstances. Use periods, commas, colons, parentheses.
+- Prose only. No bullet lists. Address the organization as "you". Direct, lived-in, practitioner-grounded.
+- Do not use "it is not X, it is Y" constructions, tidy summarizing pivots, mirrored clause structures, or hedging.
+- The leaders paragraph closes on institutional responsibility, what leadership owes the institution, never on a score or personal triumph.
+- The anchor line is: How you treat exits determines what you attract at entry. Use it only where it lands naturally, at most once.
+
+Return ONLY a JSON object. No markdown, no code fences, no preamble. Exactly these keys:
+{"headline": one plain sentence naming what this organization is, "read": two short paragraphs diagnosing the position across density and optionality with the contested band honored if present, "aiProfile": one short paragraph on what this position means specifically for absorbing AI-driven change, with the clock set by the stated change pressure, "alumni": one short paragraph reading Alumni Capital as the modulator on this position, "leaders": one paragraph on what this means for leaders, closing on institutional responsibility}
+Keep the prose tight and economical.`;
+
+/* ============================================================
+   UI WIRING
+   ============================================================ */
+const screens = {
+  intro: document.getElementById("s-intro"),
+  intake: document.getElementById("s-intake"),
+  questions: document.getElementById("s-questions"),
+  result: document.getElementById("s-result")
+};
+function show(name){
+  Object.values(screens).forEach(s=>s.classList.remove("on"));
+  screens[name].classList.add("on");
+  window.scrollTo({top:0,behavior:"smooth"});
+}
+
+const formEl = document.getElementById("form");
+PILLARS.forEach((p,pi)=>{
+  const block = document.createElement("div");
+  block.className = "pstep";
+  block.id = "pstep-"+pi;
+  block.innerHTML = `
+    <div class="pillar-head"><h2>${p.name}</h2><span class="tag">${p.tag}</span></div>
+    <p class="pillar-sub">${p.sub}</p>`;
+  p.items.forEach(it=>{
+    const qd = document.createElement("div");
+    qd.className="q";
+    let seg = [0,1,2,3,4].map(v=>`
+      <div class="s">
+        <input type="radio" name="${it.id}" id="${it.id}_${v}" value="${v}">
+        <label for="${it.id}_${v}">${v}</label>
+      </div>`).join("");
+    qd.innerHTML = `
+      <p class="q-text">${it.text}</p>
+      <div class="scale">${seg}</div>
+      <div class="anchors"><span>0 · ${it.lo}</span><span>4 · ${it.hi}</span></div>`;
+    block.appendChild(qd);
+  });
+  formEl.appendChild(block);
+});
+
+/* Pillar-per-screen navigation: three screens of five */
+const TOTAL_ITEMS = 15;
+const pfill = document.getElementById("pfill");
+const plabel = document.getElementById("plabel");
+const nextBtn = document.getElementById("nextBtn");
+const backBtn = document.getElementById("backBtn");
+const runNote = document.getElementById("runNote");
+const stepEls = PILLARS.map((_,i)=>document.getElementById("pstep-"+i));
+let step = 0;
+
+function answeredInPillar(i){
+  return PILLARS[i].items.filter(it=>document.querySelector(`input[name="${it.id}"]:checked`)).length;
+}
+function answeredTotal(){
+  return formEl.querySelectorAll("input:checked").length;
+}
+function updateProgress(){
+  pfill.style.width = (answeredTotal()/TOTAL_ITEMS*100)+"%";
+  plabel.textContent = `${PILLARS[step].name} · pillar ${step+1} of 3 · ${answeredInPillar(step)} of 5 answered`;
+}
+function updateStep(){
+  stepEls.forEach((s,i)=>s.classList.toggle("cur", i===step));
+  backBtn.hidden = (step===0);
+  nextBtn.textContent = step < 2 ? `Continue to ${PILLARS[step+1].name}` : "Run the read";
+  runNote.textContent = step < 2
+    ? `Pillar ${step+1} of three.`
+    : "Last pillar. The engine scores your answers, places your position, and generates your resilience read.";
+  updateProgress();
+}
+formEl.addEventListener("change", updateProgress);
+backBtn.addEventListener("click", ()=>{
+  if(step>0){ step--; updateStep(); document.getElementById("status").className="status"; window.scrollTo({top:0,behavior:"smooth"}); }
+});
+nextBtn.addEventListener("click", ()=>{
+  const statusEl = document.getElementById("status");
+  const left = 5 - answeredInPillar(step);
+  if(left > 0){
+    statusEl.className="status show err";
+    statusEl.textContent = `Answer the remaining ${left} statement${left>1?"s":""} in ${PILLARS[step].name} to continue.`;
+    return;
+  }
+  statusEl.className="status"; statusEl.textContent="";
+  if(step < 2){ step++; updateStep(); window.scrollTo({top:0,behavior:"smooth"}); }
+  else { run(); }
+});
+updateStep();
+
+document.getElementById("startBtn").addEventListener("click", ()=>show("intake"));
+
+const INTAKE_FIELDS = ["fSector","fHeadcount","fPressure"];
+document.getElementById("toQuestionsBtn").addEventListener("click", ()=>{
+  const missing = INTAKE_FIELDS.filter(id=>!document.getElementById(id).value);
+  const st = document.getElementById("intakeStatus");
+  if(missing.length){
+    st.className="status show err";
+    st.textContent="Sector, headcount, and AI change pressure set the clock on the read. Complete those three to continue.";
+    return;
+  }
+  st.className="status"; st.textContent="";
+  show("questions");
+});
+
+function collectIntake(){
+  return {
+    org: document.getElementById("orgName").value.trim(),
+    sector: document.getElementById("fSector").value,
+    headcount: document.getElementById("fHeadcount").value,
+    mission: document.getElementById("fMission").value || "Not provided",
+    change: document.getElementById("fChange").value || "Not provided",
+    pressure: document.getElementById("fPressure").value
+  };
+}
+function collectAnswers(){
+  const vals = {}; let missing = 0;
+  PILLARS.forEach(p=>p.items.forEach(it=>{
+    const sel = document.querySelector(`input[name="${it.id}"]:checked`);
+    if(!sel){missing++;} else {vals[it.id] = parseInt(sel.value,10);}
+  }));
+  return {vals, missing};
+}
+
+function esc(s){return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+function paras(s){return esc(s).split(/\n\n+/).map(t=>`<p>${t.replace(/\n/g," ")}</p>`).join("");}
+function fmtDate(){return new Date().toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});}
+
+function matrixHTML(active, adjacent, cls){
+  const cellCls = cls==="rd" ? "rd-cell" : "cell";
+  let cells = GRID_ORDER.map(name=>{
+    const pos = QUADRANT_POS[name];
+    let m = "";
+    if(name===active) m=" active";
+    else if(adjacent && adjacent.includes(name)) m=" adjacent";
+    return `<div class="${cellCls}${m}"><div class="cn">${name}</div><div class="cc">${pos.code}</div></div>`;
+  }).join("");
+  if(cls==="rd"){
+    return `<div class="rd-matrix-wrap">
+      <div class="rd-axis-top"><span>Low optionality</span><span>High optionality</span></div>
+      <div class="rd-row">
+        <div class="rd-yaxis"><span>High<br>density</span><span>Low<br>density</span></div>
+        <div class="rd-matrix">${cells}</div>
+      </div>
+      <div class="rd-axis-cap">Optionality</div>
+    </div>`;
+  }
+  return `<div class="matrix-wrap">
+    <div class="matrix-axis-top"><span>Low optionality</span><span>High optionality</span></div>
+    <div class="matrix-row">
+      <div class="matrix-yaxis"><span>High<br>density</span><span>Low<br>density</span></div>
+      <div class="matrix">${cells}</div>
+    </div>
+    <div class="axis-caption">Optionality</div>
+  </div>`;
+}
+
+function scoreBar(name, score, band){
+  return `<div class="score-row">
+    <div class="sr-top"><span class="sr-name">${name}</span><span><span class="sr-val">${score}</span><span class="sr-band">${band}</span></span></div>
+    <div class="bar"><div class="fill" data-w="${score}"></div><div class="thresh"></div></div>
+  </div>`;
+}
+
+let lastResult = null;
+
+function renderResult(engine, narrative, intake){
+  lastResult = {engine, narrative, intake};
+  const resultEl = screens.result;
+  const contestedNote = engine.contested
+    ? `<div class="contested">This placement sits within the contested band of the provisional threshold. Read ${esc(engine.adjacent.join(" and "))} as the adjacent position${engine.adjacent.length>1?"s":""} in play: the direction of risk, or of opportunity, depending on the next moves.</div>`
+    : "";
+  const confNote = engine.confidenceFlag
+    ? `<div class="confflag">Confidence flag: answers cluster at the top of every scale. The self-serve read takes them as given. The full diagnostic triangulates across respondents and evidence, which is where scores like these get verified.</div>`
+    : "";
+  resultEl.innerHTML = `
+    <div class="card">
+      <p class="eyebrow">Your position</p>
+      <div class="qd-name">${esc(engine.quadrant)}</div>
+      <p class="headline">${esc(narrative.headline)}</p>
+      ${contestedNote}
+      ${confNote}
+      ${matrixHTML(engine.quadrant, engine.adjacent)}
+      <div class="scores">
+        ${scoreBar("Density", engine.scores.density, engine.densityBand)}
+        ${scoreBar("Optionality", engine.scores.optionality, engine.optionalityBand)}
+        ${scoreBar("Alumni Capital", engine.scores.alumni, engine.acBand)}
+      </div>
+      <p class="bar-note">The marker sits at the provisional threshold of 55. Thresholds stay provisional until calibrated against real organizations; near-boundary placements are read as contested rather than forced into a clean label.</p>
+    </div>
+    <div class="read">
+      ${paras(narrative.read)}
+      <h3>The AI absorption profile</h3>
+      ${paras(narrative.aiProfile)}
+      <h3>Alumni Capital: the realization layer</h3>
+      ${paras(narrative.alumni)}
+      <div class="leaders">
+        <p class="lh">What this means for leaders</p>
+        ${paras(narrative.leaders)}
+      </div>
+    </div>
+    <div class="next-card">
+      <p class="nh">This read came from one respondent and fifteen statements.</p>
+      <p>The next step is a thirty-minute results briefing with Temidayo Afonja: your read, walked through by the person who built the instrument, with the questions your score cannot answer on its own. No cost, no deck. Where the position warrants it, the conversation covers the full commissioned engagement: the complete twenty-seven-item instrument run across your leadership team, evidence review, qualitative interviews, and an interpreted read. Built for federal agencies, prime contractors, and regulated enterprises deciding how to absorb AI without losing the institution.</p>
+      <div class="result-actions">
+        <a class="btn gold" href="${BOOKING_URL}" style="text-decoration:none;">Book a results briefing</a>
+        <button class="btn ghost" id="reportBtn">Get the written report</button>
+      </div>
+      <div class="gate" id="gate" hidden>
+        <p class="gh">The written report</p>
+        <p>Enter your work email and the report renders below, ready to save as PDF. Your quadrant's follow-up comes with it: the cost pattern of your position and what the full diagnostic verifies that a single respondent cannot.</p>
+        <div class="gate-row">
+          <input type="email" id="gateEmail" placeholder="you@organization.gov" autocomplete="email" />
+          <button class="btn gold" id="gateGo">Create the report</button>
+        </div>
+        <p class="gate-note" id="gateNote"></p>
+      </div>
+      <div class="result-actions" style="margin-top:18px;">
+        <button class="sample-link" id="againBtn">Run another read</button>
+      </div>
+    </div>`;
+  show("result");
+  requestAnimationFrame(()=>{
+    resultEl.querySelectorAll(".fill").forEach(f=>{f.style.width = f.dataset.w+"%";});
+  });
+  document.getElementById("againBtn").addEventListener("click", ()=>{
+    document.getElementById("report").classList.remove("show");
+    document.getElementById("report").innerHTML="";
+    formEl.querySelectorAll("input:checked").forEach(i=>i.checked=false);
+    step = 0; updateStep();
+    show("intro");
+  });
+
+  const gate = document.getElementById("gate");
+  const gateNote = document.getElementById("gateNote");
+  document.getElementById("reportBtn").addEventListener("click", ()=>{
+    gate.hidden = false;
+    gate.scrollIntoView({behavior:"smooth",block:"center"});
+    document.getElementById("gateEmail").focus();
+  });
+  document.getElementById("gateGo").addEventListener("click", async ()=>{
+    const email = document.getElementById("gateEmail").value.trim();
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)){
+      gateNote.className="gate-note err";
+      gateNote.textContent="Enter a valid work email to receive the report and the follow-up.";
+      return;
+    }
+    const btn = document.getElementById("gateGo");
+    btn.disabled = true;
+    gateNote.className="gate-note ok";
+    gateNote.textContent="Rendering your report...";
+    // Capture the lead two ways, both fire-and-forget so neither can block the
+    // report: (1) durable store in Netlify Blobs, (2) an email notification to
+    // Temidayo via Formspree (which forwards to temidayo@thedensitygroup.com).
+    // No Kit enrollment: follow-up here is personal, not an automated sequence.
+    var lead = {
+      email: email,
+      org: intake.org, sector: intake.sector, headcount: intake.headcount,
+      pressure: intake.pressure, mission: intake.mission, change: intake.change,
+      quadrant: engine.quadrant,
+      density: engine.scores.density, optionality: engine.scores.optionality, alumni_capital: engine.scores.alumni,
+      alumni_band: engine.acBand, contested: engine.contested,
+      adjacent: (engine.adjacent||[]).join(", "),
+      source: "ai_readiness_assessment"
+    };
+    try{
+      fetch(CAPTURE_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(lead),keepalive:true}).catch(function(){});
+    }catch(err){}
+    try{
+      fetch(FORMSPREE_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(lead),keepalive:true}).catch(function(){});
+    }catch(err){}
+    btn.disabled = false;
+    gateNote.textContent="Report ready below. Save it as a PDF from the report actions.";
+    buildReport();
+  });
+}
+
+function buildReport(){
+  if(!lastResult) return;
+  const {engine, narrative, intake} = lastResult;
+  const reportEl = document.getElementById("report");
+  const prepared = intake.org ? `Prepared for ${esc(intake.org)}` : "Confidential organizational read";
+  const ctxBits = [intake.sector, intake.headcount, (intake.mission!=="None of these" && intake.mission!=="Not provided")?("Mission exposure: "+intake.mission):null, "AI change pressure: "+intake.pressure].filter(Boolean);
+  const contested = engine.contested
+    ? `<p class="rd-contested">Contested placement: this organization sits within the provisional threshold's contested band. ${esc(engine.adjacent.join(" and "))} should be read as the adjacent position${engine.adjacent.length>1?"s":""} in play.</p>`
+    : "";
+  reportEl.innerHTML = `
+    <div class="rd-top">
+      <div class="rd-brand">
+        <div class="rd-mark" aria-hidden="true"><span class="sq"></span><span class="sq"></span><span class="sq"></span><span class="sq fill"></span></div>
+        <span class="rd-word">The Density Group</span>
+      </div>
+      <div class="rd-date">${fmtDate()}</div>
+    </div>
+    <h2 class="rd-title">AI Capability Readiness Diagnostic</h2>
+    <p class="rd-prepared">${prepared}</p>
+    <p class="rd-context">${esc(ctxBits.join(" · "))}</p>
+    <p class="rd-frame">A structured read of whether this organization can absorb AI-driven change without losing institutional resilience, measured across density, optionality, and alumni capital, with the cost of its current position named. Self-serve tier: one respondent, fifteen core statements.</p>
+    <p class="rd-quad-label">Position</p>
+    <p class="rd-quad">${esc(engine.quadrant)}</p>
+    <p class="rd-headline">${esc(narrative.headline)}</p>
+    ${contested}
+    ${matrixHTML(engine.quadrant, engine.adjacent, "rd")}
+    <div class="rd-levels">
+      <div class="rd-lvl"><p class="ln">Density</p><div class="lv">${engine.scores.density}</div><div class="lb">${engine.densityBand}</div></div>
+      <div class="rd-lvl"><p class="ln">Optionality</p><div class="lv">${engine.scores.optionality}</div><div class="lb">${engine.optionalityBand}</div></div>
+      <div class="rd-lvl"><p class="ln">Alumni Capital</p><div class="lv">${engine.scores.alumni}</div><div class="lb">${engine.acBand}</div></div>
+    </div>
+    <div class="rd-read">
+      ${paras(narrative.read)}
+      <h4>The AI absorption profile</h4>
+      ${paras(narrative.aiProfile)}
+      <h4>Alumni Capital: the realization layer</h4>
+      ${paras(narrative.alumni)}
+    </div>
+    <div class="rd-leaders"><p class="lh">What this means for leaders</p>${paras(narrative.leaders)}</div>
+    <div class="rd-next">
+      <p class="nh">The next read is the full one</p>
+      <p>The complete AI Capability Readiness Diagnostic runs the twenty-seven-item instrument across the leadership team, adds evidence review and qualitative interviews, and returns an interpreted read from Temidayo Afonja. Inquiries at temidayoafonja.com.</p>
+    </div>
+    <p class="rd-equation">Density to Optionality to Alumni Capital produces Institutional Resilience.</p>
+    <p class="rd-method">Methodology note: pillar scores normalize five behavioral items to a 0 to 100 scale. Quadrant placement uses a provisional threshold of 55 with a contested band of 8 points; near-boundary placements are reported as contested rather than forced into a clean label. Alumni Capital modulates the read and never moves the quadrant. Thresholds remain provisional until calibrated against assessed organizations. Self-serve results reflect a single respondent and are working hypotheses until triangulated.</p>
+    <div class="rd-foot"><span>The Density Group · Capability Formation Framework</span><span>temidayoafonja.com</span></div>
+    <div class="rd-actions">
+      <button class="rd-save" id="rdSave">Save as PDF</button>
+      <button class="rd-close" id="rdClose">Close report</button>
+    </div>`;
+  reportEl.classList.add("show");
+  document.getElementById("rdSave").addEventListener("click", ()=>window.print());
+  document.getElementById("rdClose").addEventListener("click", ()=>{
+    reportEl.classList.remove("show"); reportEl.innerHTML="";
+    window.scrollTo({top:0,behavior:"smooth"});
+  });
+  reportEl.scrollIntoView({behavior:"smooth",block:"start"});
+}
+
+function fallbackNarrative(engine){
+  const f = FALLBACK[engine.quadrant];
+  const ac = engine.acBand==="high" ? f.acHigh
+    : engine.acBand==="low" ? f.acLow
+    : f.acLow.replace(/^Your alumni capital/, "Your alumni capital is holding at moderate, which softens but does not solve the pattern:") ;
+  let read = f.read;
+  if(engine.contested){
+    read += `\n\nThis placement is contested. Your scores sit close enough to the boundary that ${engine.adjacent.join(" and ")} should be read as the adjacent position${engine.adjacent.length>1?"s":""} in play, which means the next few deliberate moves decide which label becomes true.`;
+  }
+  return {headline:f.headline, read, aiProfile:f.ai, alumni:ac, leaders:f.leaders};
+}
+
+async function run(){
+  const {vals, missing} = collectAnswers();
+  const statusEl = document.getElementById("status");
+  if(missing>0){
+    statusEl.className="status show err";
+    statusEl.textContent = `Answer the remaining ${missing} statement${missing>1?"s":""} to run the read.`;
+    return;
+  }
+  const runBtn = document.getElementById("nextBtn");
+  runBtn.disabled = true;
+  statusEl.className="status show";
+  statusEl.innerHTML = `<span class="spinner"></span> Scoring the three pillars and placing your position...`;
+
+  const intake = collectIntake();
+  const engine = scoreEngine(vals);
+
+  const answerLines = [];
+  PILLARS.forEach(p=>p.items.forEach(it=>{
+    answerLines.push(`[${p.name} ${it.id}] ${it.text} Scored ${vals[it.id]} of 4 (0 = ${it.lo}; 4 = ${it.hi})`);
+  }));
+
+  const userContent =
+`ENGINE OUTPUT (already computed, do not change):
+Quadrant: ${engine.quadrant}
+Density: ${engine.scores.density} of 100 (${engine.densityBand})
+Optionality: ${engine.scores.optionality} of 100 (${engine.optionalityBand})
+Alumni Capital: ${engine.scores.alumni} of 100 (band: ${engine.acBand})
+Contested placement: ${engine.contested ? "yes, adjacent quadrant(s): " + engine.adjacent.join(", ") : "no"}
+Confidence flag (top-box clustering): ${engine.confidenceFlag ? "raised" : "not raised"}
+
+INTAKE CONTEXT:
+Sector: ${intake.sector}
+Headcount: ${intake.headcount}
+Mission exposure: ${intake.mission}
+Major change in last 24 months: ${intake.change}
+AI change pressure: ${intake.pressure}
+
+ITEM ANSWERS:
+${answerLines.join("\n")}
+
+Write the resilience read as specified.`;
+
+  statusEl.innerHTML = `<span class="spinner"></span> Position placed: ${engine.quadrant}. Generating your resilience read...`;
+
+  let narrative;
+  try{
+    const res = await fetch("https://api.anthropic.com/v1/messages",{
+      method:"POST",
+      headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({
+        model:"claude-sonnet-4-6",
+        max_tokens:1000,
+        system:SYSTEM,
+        messages:[{role:"user", content:userContent}]
+      })
+    });
+    if(!res.ok){throw new Error("status "+res.status);}
+    const data = await res.json();
+    const text = (data.content||[]).filter(b=>b.type==="text").map(b=>b.text).join("\n").trim();
+    const clean = text.replace(/```json/gi,"").replace(/```/g,"").trim();
+    try{ narrative = JSON.parse(clean); }
+    catch(e){
+      const m = clean.match(/\{[\s\S]*\}/);
+      if(!m){throw new Error("unparseable");}
+      narrative = JSON.parse(m[0]);
+    }
+    const needed = ["headline","read","aiProfile","alumni","leaders"];
+    if(needed.some(k=>typeof narrative[k]!=="string" || !narrative[k].trim())){throw new Error("incomplete");}
+  }catch(err){
+    narrative = fallbackNarrative(engine);
+  }
+
+  statusEl.className="status"; statusEl.textContent="";
+  runBtn.disabled = false;
+  renderResult(engine, narrative, intake);
+}
+
+/* Sample mode: a plausible Depth Trap read for demos */
+document.getElementById("sampleBtn").addEventListener("click", ()=>{
+  const engine = {
+    scores:{density:75, optionality:40, alumni:50},
+    quadrant:"Depth Trap",
+    densityBand:"high", optionalityBand:"low", acBand:"moderate",
+    contested:false, denContested:false, optContested:false,
+    adjacent:[], confidenceFlag:false
+  };
+  const intake = {org:"Meridian Health Systems", sector:"Regulated enterprise: health or pharma", headcount:"5,000 to 20,000", mission:"Safety of life", change:"Reorganization", pressure:"High"};
+  const narrative = fallbackNarrative(engine);
+  renderResult(engine, narrative, intake);
+});
+</script>
 </body>
 </html>
