@@ -868,10 +868,11 @@ function renderResult(engine, narrative, intake){
     btn.disabled = true;
     gateNote.className="gate-note ok";
     gateNote.textContent="Rendering your report...";
-    // Capture the lead two ways, both fire-and-forget so neither can block the
+    // Capture the lead three ways, all fire-and-forget so none can block the
     // report: (1) durable store in Netlify Blobs, (2) an email notification to
-    // Temidayo via Formspree (which forwards to temidayo@thedensitygroup.com).
-    // No Kit enrollment: follow-up here is personal, not an automated sequence.
+    // Temidayo via Formspree (forwards to temidayo@thedensitygroup.com) so she
+    // can follow up personally, (3) enroll the leader in the Kit acknowledgment
+    // sequence so they get an immediate on-brand response while she gets to them.
     var lead = {
       email: email,
       org: intake.org, sector: intake.sector, headcount: intake.headcount,
@@ -887,6 +888,9 @@ function renderResult(engine, narrative, intake){
     }catch(err){}
     try{
       fetch(FORMSPREE_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(lead),keepalive:true}).catch(function(){});
+    }catch(err){}
+    try{
+      fetch("/.netlify/functions/subscribe",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({ email:email, org:intake.org, quadrant:engine.quadrant, source:"ai_readiness_diagnostic" }),keepalive:true}).catch(function(){});
     }catch(err){}
     btn.disabled = false;
     gateNote.textContent="Report ready below. Save it as a PDF from the report actions.";
