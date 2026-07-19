@@ -52,6 +52,9 @@ exports.handler = async (event) => {
     // ── audit result (computed state; questions/scoring unchanged) ─
     mode: data.mode || null,
     quadrant: data.quadrant || null,
+    state: data.state || null,
+    boundary: Array.isArray(data.boundary) ? data.boundary : null,
+    paper: data.paper === true,
     scores: data.scores && typeof data.scores === "object" ? data.scores : null,
     responses: Array.isArray(data.responses) ? data.responses : null,
     // ── optional demographics (blank when not chosen) ─────────────
