@@ -15,9 +15,9 @@ function csvCell(v) {
 const COLUMNS = [
   "key",
   "received_at_cst", "received_at_utc", "timezone", "score_date",
-  "email",
+  "name", "email",
   "density", "optionality", "max_per_axis", "state", "neighbors",
-  "results_line", "source", "responses"
+  "paper", "source", "reflection", "results_line", "responses"
 ];
 
 function flatten(r) {
@@ -27,14 +27,17 @@ function flatten(r) {
     received_at_utc: r.received_at_utc,
     timezone: r.timezone,
     score_date: r.score_date,
+    name: r.name,
     email: r.email,
     density: r.density,
     optionality: r.optionality,
     max_per_axis: r.max_per_axis,
     state: r.state,
     neighbors: r.neighbors,
-    results_line: r.results_line,
+    paper: r.paper,
     source: r.source,
+    reflection: r.reflection,
+    results_line: r.results_line,
     responses: r.responses
   };
 }

@@ -15,16 +15,6 @@
   to = "/audit.html"
   status = 200
 
-[[redirects]]
-  from = "/audit/save"
-  to = "/audit-save.html"
-  status = 200
-
-[[redirects]]
-  from = "/save-score"
-  to = "/audit-save.html"
-  status = 200
-
 [[headers]]
   for = "/*"
   [headers.values]
@@ -34,8 +24,3 @@
   for = "/audit.html"
   [headers.values]
     Content-Security-Policy = "script-src 'self' 'unsafe-inline' https://formspree.io https://plausible.io"
-
-[[headers]]
-  for = "/audit-save.html"
-  [headers.values]
-    Content-Security-Policy = "script-src 'self' 'unsafe-inline' https://plausible.io"

@@ -137,20 +137,27 @@ exports.handler = async (event) => {
     ": Density " + density + " of " + MAX_PER_AXIS +
     ", Optionality " + optionality + " of " + MAX_PER_AXIS + ". State: " + state + ".";
 
+  // Paper scorers entered numbers from the printed Short Form; flow scorers
+  // answered the twelve statements in the individual audit. Both are Individuals.
+  const isPaper = data.paper === true || (data.source || "") === "audit-paper-save";
+
   const record = {
     received_at_cst: chicagoStamp(now),
     received_at_utc: now.toISOString(),
     timezone: "America/Chicago",
     score_date: scoreDate,
+    name: (data.name || "").trim(),
     email: email,
     responses: responses,
+    reflection: typeof data.reflection === "string" ? data.reflection : null,
     density: density,
     optionality: optionality,
     max_per_axis: MAX_PER_AXIS,
     state: state,
     neighbors: neighbors,
     results_line: resultsLine,
-    source: (data.source || "audit-paper-save")
+    paper: isPaper,
+    source: (data.source || (isPaper ? "audit-paper-save" : "audit-individual"))
   };
 
   // 1. Store authoritatively.
@@ -167,8 +174,9 @@ exports.handler = async (event) => {
   }
 
   // 2. Tag in Kit (best effort). Set the fields the Kit results email reads.
+  // Every result tags Individual; only paper scorers additionally get audit-paper-save.
   let kit = "skipped";
-  if (process.env.KIT_API_KEY && (process.env.KIT_TAG_INDIVIDUAL || process.env.KIT_TAG_PAPER_SAVE)) {
+  if (process.env.KIT_API_KEY && (process.env.KIT_TAG_INDIVIDUAL || (isPaper && process.env.KIT_TAG_PAPER_SAVE))) {
     const fields = {
       density_score: String(density),
       optionality_score: String(optionality),
@@ -178,7 +186,10 @@ exports.handler = async (event) => {
       source: record.source
     };
     try {
-      const tagIds = [process.env.KIT_TAG_INDIVIDUAL, process.env.KIT_TAG_PAPER_SAVE].filter(Boolean);
+      const tagIds = [
+        process.env.KIT_TAG_INDIVIDUAL,
+        isPaper ? process.env.KIT_TAG_PAPER_SAVE : null
+      ].filter(Boolean);
       for (const tagId of tagIds) {
         await kitTag(tagId, email, fields);
       }
