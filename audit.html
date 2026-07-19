@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Capability Formation Audit · Temidayo Afonja</title>
-<meta name="description" content="The Capability Formation Audit. Ten questions, five minutes. A diagnostic that maps your capability across Density, Optionality, and Alumni Capital.">
+<meta name="description" content="The Capability Formation Audit. Twelve statements, five minutes. A diagnostic that maps your capability across Density, Optionality, and Alumni Capital.">
 <link rel="canonical" href="https://temidayoafonja.com/audit.html">
 
 <!-- Open Graph / Twitter -->
@@ -13,11 +13,11 @@
 <meta property="og:site_name" content="Temidayo Afonja">
 <meta property="og:url" content="https://temidayoafonja.com/audit.html">
 <meta property="og:title" content="The Capability Formation Audit">
-<meta property="og:description" content="Ten questions, five minutes. A diagnostic that maps where your capability is compounding and where it is quietly being lost.">
+<meta property="og:description" content="Twelve statements, five minutes. A diagnostic that maps where your capability is compounding and where it is quietly being lost.">
 <meta property="og:image" content="https://temidayoafonja.com/og-audit.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="The Capability Formation Audit">
-<meta name="twitter:description" content="Ten questions, five minutes. A diagnostic that maps where your capability is compounding and where it is quietly being lost.">
+<meta name="twitter:description" content="Twelve statements, five minutes. A diagnostic that maps where your capability is compounding and where it is quietly being lost.">
 <meta name="twitter:image" content="https://temidayoafonja.com/og-audit.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -263,6 +263,25 @@ textarea.cta-input { resize:vertical; min-height:80px; }
 .audit-footer { text-align:center; padding:32px 24px; border-top:1px solid var(–slate-dim); margin-top:40px; }
 .audit-footer p { font-size:12px; color:rgba(245,240,232,0.35); line-height:1.8; }
 
+/* ─── LIKERT SCALE (individual statements) ─── */
+.likert-wrap { margin-bottom:36px; }
+.likert-scale-note { display:flex; justify-content:space-between; font-size:10px; letter-spacing:0.1em; text-transform:uppercase; color:#8ba0b4; margin-bottom:12px; }
+.likert { display:flex; gap:10px; }
+.likert-opt { flex:1; aspect-ratio:1/1; display:flex; align-items:center; justify-content:center; border:1px solid rgba(139,160,180,0.2); background:transparent; color:rgba(245,240,232,0.75); font-family:‘Cormorant Garamond’,serif; font-size:22px; cursor:pointer; transition:all 0.16s ease; }
+.likert-opt:hover { border-color:rgba(201,168,76,0.4); background:rgba(201,168,76,0.14); }
+.likert-opt.selected { border-color:#c9a84c; background:rgba(201,168,76,0.14); color:#f5f0e8; }
+body .likert-opt.selected { border-color:#c9a84c !important; background:rgba(201,168,76,0.14) !important; }
+
+/* ─── PAPER FAST PATH ─── */
+#paper { flex-direction:column; align-items:center; justify-content:flex-start; padding:80px 24px 60px; overflow-y:auto; }
+.paper-part-label { font-size:11px; font-weight:500; letter-spacing:0.18em; text-transform:uppercase; color:#c9a84c; margin:24px 0 14px; }
+.paper-row { display:flex; align-items:center; gap:16px; padding:12px 0; border-bottom:1px solid rgba(139,160,180,0.14); }
+.paper-row-num { font-family:‘Cormorant Garamond’,serif; font-size:15px; color:#c9a84c; min-width:22px; flex-shrink:0; }
+.paper-row-text { flex:1; font-size:13px; line-height:1.5; color:rgba(245,240,232,0.78); }
+.paper-input { width:56px; flex-shrink:0; background:transparent; border:1px solid rgba(139,160,180,0.2); color:#f5f0e8; font-family:‘DM Sans’,sans-serif; font-size:16px; text-align:center; padding:10px 0; outline:none; transition:border-color 0.2s; }
+.paper-input:focus { border-color:rgba(201,168,76,0.5); }
+.paper-input.invalid { border-color:#c8503c; }
+
 @media (max-width:768px) {
 nav { padding:16px 20px; }
 .nav-links a:not(.nav-cta) { display:none; }
@@ -301,7 +320,7 @@ nav { padding:16px 20px; }
 <div id="intro" class="screen active">
   <div class="wordmark">Temidayo Afonja &middot; Capability Formation Framework</div>
   <h1 class="intro-headline">Do you know what the environments you have been inside have done to your <em>capability?</em></h1>
-  <p class="intro-sub">The Capability Formation Audit &middot; 10 Questions &middot; 5 Minutes</p>
+  <p class="intro-sub">The Capability Formation Audit &middot; 12 Statements &middot; 5 Minutes</p>
   <p class="intro-benchmark">Built from eighteen years of patterns across Big 4 consulting, global life sciences, and high-growth technology. Not survey averages. Real conditions, mapped honestly for the person inside them and the leader designing them.</p>
   <div class="pillars">
     <div class="pillar">Density</div>
@@ -317,7 +336,7 @@ nav { padding:16px 20px; }
         <div class="rationale-card-items">
           <div class="rationale-card-item">Most people cannot describe what their environments have done to their capability until they are forced to look.</div>
           <div class="rationale-card-item">The framework surfaces what is compounding and what is quietly being consumed.</div>
-          <div class="rationale-card-item">Ten questions. A diagnostic that belongs to you.</div>
+          <div class="rationale-card-item">Twelve statements. A diagnostic that belongs to you.</div>
         </div>
       </div>
       <div class="rationale-card">
@@ -325,7 +344,7 @@ nav { padding:16px 20px; }
         <div class="rationale-card-items">
           <div class="rationale-card-item">Quadrant placement across the Capability Formation Matrix</div>
           <div class="rationale-card-item">Scored dimensions across Density, Optionality, and Alumni Capital</div>
-          <div class="rationale-card-item">A diagnostic reading with prioritized actions</div>
+          <div class="rationale-card-item">A diagnostic reading of your state and your exposure</div>
         </div>
       </div>
       <div class="rationale-card">
@@ -345,6 +364,7 @@ nav { padding:16px 20px; }
   </div>
   <button class="btn-primary" id="beginBtn">Begin the Audit &rarr;</button>
   <p class="intro-meta">Your responses are confidential &middot; Results belong to you</p>
+  <p class="intro-meta" style="margin-top:14px;">Already scored on paper? <button type="button" id="paperEntryBtn" style="background:transparent;border:none;color:#c9a84c;font-family:'DM Sans',sans-serif;font-size:14px;cursor:pointer;text-decoration:underline;padding:0;letter-spacing:0.02em;">Enter your twelve numbers.</button></p>
 </div>
 
 <!-- SCREEN 2: PREGATE -->
@@ -404,7 +424,7 @@ nav { padding:16px 20px; }
       <div class="audit-wordmark">Capability Formation Audit</div>
       <div style="display:flex;align-items:center;gap:12px;">
         <div class="audit-mode-badge" id="auditModeBadge">Individual</div>
-        <div class="progress-info" id="progressInfo">Question 1 of 10</div>
+        <div class="progress-info" id="progressInfo">Statement 1 of 12</div>
       </div>
     </div>
     <div style="margin-bottom:24px;margin-top:-16px;">
@@ -442,7 +462,7 @@ nav { padding:16px 20px; }
     <div class="scores-row" style="margin-top:16px;">
       <div class="score-pill"><div class="score-pill-label">Density</div>       <div class="score-pill-val" id="dVal">&middot;</div><div class="score-bar-wrap"><div class="score-bar-fill" id="dBar" style="width:0%"></div></div></div>
       <div class="score-pill"><div class="score-pill-label">Optionality</div>   <div class="score-pill-val" id="oVal">&middot;</div><div class="score-bar-wrap"><div class="score-bar-fill" id="oBar" style="width:0%"></div></div></div>
-      <div class="score-pill"><div class="score-pill-label">Alumni Capital</div><div class="score-pill-val" id="aVal">&middot;</div><div class="score-bar-wrap"><div class="score-bar-fill" id="aBar" style="width:0%"></div></div></div>
+      <div class="score-pill" id="alumniPill"><div class="score-pill-label">Alumni Capital</div><div class="score-pill-val" id="aVal">&middot;</div><div class="score-bar-wrap"><div class="score-bar-fill" id="aBar" style="width:0%"></div></div></div>
     </div>
     <div class="live-insight" id="liveInsight">
       <div class="live-insight-label">Live Signal</div>
@@ -451,12 +471,30 @@ nav { padding:16px 20px; }
   </div>
 </div>
 
+<!-- SCREEN: PAPER FAST PATH (individual only) -->
+
+<div id="paper" class="screen">
+  <div style="max-width:640px;width:100%;">
+    <div class="gate-eyebrow" style="text-align:center;">Already scored on paper</div>
+    <h2 class="gate-headline" style="text-align:center;margin:0 auto 12px;">Enter your twelve numbers</h2>
+    <p class="gate-sub" style="text-align:center;margin:0 auto 36px;">Rate each statement from 1 (strongly disagree) to 5 (strongly agree), scored against the last ninety days of your actual working life, not the life you intend to start living next quarter.</p>
+    <div id="paperFields"></div>
+    <div class="gate-form" style="margin-top:8px;">
+      <input type="text"  class="gate-input" id="paperName"  placeholder="Your name">
+      <input type="email" class="gate-input" id="paperEmail" placeholder="Email address *">
+      <button class="btn-gate" id="paperSubmitBtn">See My Results &rarr;</button>
+    </div>
+    <button class="btn-skip" id="paperBackBtn">Back to the full audit</button>
+    <p class="gate-privacy" style="text-align:center;">Your responses are confidential. By submitting, you agree to occasional updates from Temidayo Afonja on the Capability Formation Framework.</p>
+  </div>
+</div>
+
 <!-- SCREEN 5: GATE (post-audit) -->
 
 <div id="gate" class="screen">
-  <div class="gate-eyebrow">Audit Complete &middot; 10 of 10</div>
+  <div class="gate-eyebrow" id="gateEyebrow">Audit Complete &middot; 10 of 10</div>
   <h2 class="gate-headline">You have done something most people do not. You looked honestly.</h2>
-  <p class="gate-sub">Enter your details to receive your full Capability Formation diagnosis: quadrant placement, risk profile, and a clear path forward.</p>
+  <p class="gate-sub">Enter your details to receive your full Capability Formation diagnosis: quadrant placement, risk profile, and a clear read of where you stand.</p>
   <div class="gate-form">
     <input type="text"  class="gate-input" id="gateName"  placeholder="Your name">
     <input type="text"  class="gate-input" id="gateOrg"   placeholder="Organization (optional)">
@@ -535,13 +573,22 @@ nav { padding:16px 20px; }
       <div class="results-section-title">Where Capability Is At Risk</div>
       <div class="results-list" id="riskList"></div>
     </div>
-    <div class="results-section">
+    <div class="results-section" id="focusSection">
       <div class="results-section-title">Where to Focus First</div>
       <div class="results-list" id="focusList"></div>
     </div>
     <div class="results-section">
-      <div class="results-section-title">From Insight to Action</div>
+      <div class="results-section-title" id="ctaSectionTitle">From Insight to Action</div>
       <div class="results-cta-text" id="ctaText"></div>
+      <!-- FIELD KIT (individual mode: the calibration step, shown before the Capability Session) -->
+      <div class="cta-box" id="fieldKitBox" style="display:none;">
+        <div class="cta-box-title">The Capability Formation Field Kit</div>
+        <div class="cta-box-sub">This free result gives you your state and your exposure. The Field Kit is the calibration step. It walks you back through each statement with the full scoring rubric and worked examples, so the Density and Optionality numbers you carry forward are ones you can trust. $50, on Maven.</div>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;">
+          <!-- TODO: replace https://maven.com with the live Maven listing URL for the Field Kit -->
+          <a href="https://maven.com" target="_blank" rel="noopener" style="display:inline-block;background:#c9a84c !important;color:#0f2347 !important;padding:14px 32px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;-webkit-text-fill-color:#0f2347 !important;">Get the Field Kit &rarr;</a>
+        </div>
+      </div>
       <!-- ORG LEADER NEXT STEP (shown for org mode) -->
       <div class="cta-box" id="orgOfferBox" style="display:none;">
         <div class="cta-box-title">Your Next Step: The AI Capability Readiness Diagnostic</div>
@@ -693,6 +740,90 @@ var questionsIndividual = [
     {text:"I am standing at an inflection point. I have more than I have been given credit for and I am ready to act on that.",score:4}]}
 ];
 
+// NOTE: `questionsIndividual` above is RETIRED from the live individual flow as of
+// the twelve-statement instrument. It is kept in the codebase and data (not deleted)
+// for reference and possible reuse. The live individual flow now uses
+// `statementsIndividual` (twelve scored 1-to-5 statements) plus `reflectiveIndividual`
+// (one unscored reflective close, carried over verbatim from the retired set).
+
+// Twelve statements, verbatim. Rated 1 (strongly disagree) to 5 (strongly agree).
+// Statements 1-6 score Density (Learning Velocity); 7-12 score Optionality (Market Portability).
+var statementsIndividual = [
+  {axis:"density",     part:"Part One: Density (Learning Velocity)",       text:"In the last ninety days I have been handed a problem I did not already know how to solve."},
+  {axis:"density",     part:"Part One: Density (Learning Velocity)",       text:"I work close enough to people who are better than me that I can watch how they think."},
+  {axis:"density",     part:"Part One: Density (Learning Velocity)",       text:"My work is reviewed by someone who can tell the difference between good and adequate, and who says so directly."},
+  {axis:"density",     part:"Part One: Density (Learning Velocity)",       text:"The feedback I receive changes what I do next, not just how I feel."},
+  {axis:"density",     part:"Part One: Density (Learning Velocity)",       text:"I regularly operate at the edge of my competence rather than the comfortable center of it."},
+  {axis:"density",     part:"Part One: Density (Learning Velocity)",       text:"Looking back six months, the work I do now would have been genuinely hard for me then."},
+  {axis:"optionality", part:"Part Two: Optionality (Market Portability)",  text:"The capability I am building would be valued by an employer in a different industry."},
+  {axis:"optionality", part:"Part Two: Optionality (Market Portability)",  text:"I can describe what I do in terms of outcomes, not just my company's internal language."},
+  {axis:"optionality", part:"Part Two: Optionality (Market Portability)",  text:"If my role disappeared tomorrow, the capability I built would still be mine to carry."},
+  {axis:"optionality", part:"Part Two: Optionality (Market Portability)",  text:"People with the power to hire or advance me, inside or outside my company, can already see what I am good at."},
+  {axis:"optionality", part:"Part Two: Optionality (Market Portability)",  text:"What I am learning is a transferable capability rather than a company-specific procedure."},
+  {axis:"optionality", part:"Part Two: Optionality (Market Portability)",  text:"I could rebuild a strong position somewhere else within a year."}
+];
+
+// The framing line shown before statement 1.
+var individualFraming = "Rate each statement from 1 (strongly disagree) to 5 (strongly agree), scored against the last ninety days of your actual working life, not the life you intend to start living next quarter.";
+
+// One unscored reflective close, placed AFTER the twelve. Carried over verbatim from
+// the retired individual Synthesis question. Stored for personalization, never scored.
+var reflectiveIndividual = {
+  section:"Reflection",
+  label:"One last question, unscored",
+  text:"What is the most honest thing you could say about where your capability sits right now?",
+  options:[
+    {text:"I know I have built something. I just cannot fully describe what it is or where it belongs yet."},
+    {text:"I can describe what I am good at but I am not convinced the market sees it the way I do."},
+    {text:"I have a clear sense of what I built, what it is worth, and where it compounds next."},
+    {text:"I am standing at an inflection point. I have more than I have been given credit for and I am ready to act on that."}
+  ]
+};
+
+// Builds the live individual question list: twelve likert statements + one unscored reflective close.
+function buildIndividualQuestions(){
+  var arr = statementsIndividual.map(function(s){
+    return { type:"likert", section:s.part, axis:s.axis, text:s.text };
+  });
+  arr.push({ type:"choice", section:"Reflection", label:reflectiveIndividual.label, text:reflectiveIndividual.text, options:reflectiveIndividual.options, unscored:true });
+  return arr;
+}
+
+// ─── STATE NAMING (twelve-statement instrument) ──────────────────────────────
+// Sum of 1-6 = Density (out of 30); sum of 7-12 = Optionality (out of 30).
+// A score of 19 or higher is High on an axis. Boundary band is 17 to 21 inclusive.
+var IND_HIGH = 19;
+var IND_BOUND_LO = 17, IND_BOUND_HI = 21;
+var STATE_NAMES = { compound:"Compounding", depth:"Depth Trap", stagnant:"Stagnant", fragile:"Fragile" };
+
+function individualStateKey(density, optionality){
+  var hD = density >= IND_HIGH, hO = optionality >= IND_HIGH;
+  if(hD && hO) return "compound";
+  if(hD && !hO) return "depth";
+  if(!hD && !hO) return "stagnant";
+  return "fragile";
+}
+
+// Neighbouring states along whichever axis is inside the 17-to-21 boundary band.
+function individualBoundary(density, optionality){
+  var dBound = density >= IND_BOUND_LO && density <= IND_BOUND_HI;
+  var oBound = optionality >= IND_BOUND_LO && optionality <= IND_BOUND_HI;
+  if(!dBound && !oBound) return null;
+  var primary = individualStateKey(density, optionality);
+  var neighbors = {};
+  neighbors[primary] = true;
+  // Flipping a boundary axis gives the adjacent state.
+  if(dBound){
+    neighbors[individualStateKey(density >= IND_HIGH ? IND_HIGH - 1 : IND_HIGH, optionality)] = true;
+    neighbors[individualStateKey(density >= IND_HIGH ? IND_HIGH : IND_HIGH - 1, optionality)] = true;
+  }
+  if(oBound){
+    neighbors[individualStateKey(density, optionality >= IND_HIGH ? IND_HIGH - 1 : IND_HIGH)] = true;
+    neighbors[individualStateKey(density, optionality >= IND_HIGH ? IND_HIGH : IND_HIGH - 1)] = true;
+  }
+  return { primary:primary, keys:Object.keys(neighbors) };
+}
+
 // ─── UPDATED QUADRANT DATA ────────────────────────────────────────────────────
 
 var quadrantDataOrg = {
@@ -780,7 +911,7 @@ var quadrantDataIndividual = {
     risks:[
       {icon:"⚠",text:"The risk at this stage is not capability. It is selection. The environments that want you most loudly are often the ones that will consume rather than compound what you have built."},
       {icon:"⚠",text:"Urgency is a poor filter. A compelling offer is not the same as a compounding environment."},
-      {icon:"⚠",text:"People in this quadrant are often underpriced relative to the value they generate. The market has not caught up to what they actually carry."}
+      {icon:"⚠",text:"People in this quadrant are often undervalued relative to the value they generate. The market has not caught up to what they actually carry."}
     ],
     focus:[
       {icon:"→",text:"Get precise about what conditions have produced your best growth. Not the best titles. The specific kinds of problems, people, and pressure that made you more capable."},
@@ -919,13 +1050,29 @@ var summaryDataOrg = {
 
 // ─── STATE ────────────────────────────────────────────────────────────────────
 var currentMode    = "individual";
-var questions      = questionsIndividual;
+var questions      = buildIndividualQuestions();
 var quadrantData   = quadrantDataIndividual;
 var summaryData    = summaryDataIndividual;
 var currentQ       = 0;
-var answers        = new Array(10).fill(null);
+var answers        = new Array(questions.length).fill(null);
 var pregateNameVal = "";
 var pregateEmailVal= "";
+var paperSave      = false; // set when the taker used the "already scored on paper" fast path
+
+// Total live questions for the current mode (individual: 12 statements + 1 reflective close).
+function totalQuestions(){ return questions.length; }
+
+// Human-readable dated result line for the reader's email and personalization.
+function formatResultDate(d){
+  try {
+    return new Intl.DateTimeFormat("en-US", { year:"numeric", month:"long", day:"numeric" }).format(d);
+  } catch(e){
+    return d.toISOString().slice(0,10);
+  }
+}
+function individualResultLine(density, optionality, stateName, dateStr){
+  return "Your score on " + dateStr + ": Density " + density + " of 30, Optionality " + optionality + " of 30. State: " + stateName + ".";
+}
 
 // ─── HELPERS ─────────────────────────────────────────────────────────────────
 function show(id) {
@@ -935,6 +1082,15 @@ function show(id) {
 }
 
 function getScores() {
+  // Individual (twelve-statement instrument): Density = sum of statements 1-6,
+  // Optionality = sum of statements 7-12, each out of 30. The reflective close is ignored.
+  if(currentMode==="individual"){
+    var d=0,o=0;
+    for(var i=0;i<6;i++){ if(answers[i]!=null) d+=answers[i]; }
+    for(var j=6;j<12;j++){ if(answers[j]!=null) o+=answers[j]; }
+    return { org:false, density:d, optionality:o, d:d, o:o, a:null };
+  }
+  // Org (unchanged): section averages out of 4.
   var d=[],o=[],a=[];
   questions.forEach(function(q,i){
     if(answers[i]===null) return;
@@ -943,11 +1099,14 @@ function getScores() {
     else if(q.section==="Alumni Capital") a.push(answers[i]);
   });
   function avg(arr){ return arr.length ? arr.reduce(function(a,b){return a+b;},0)/arr.length : null; }
-  return {d:avg(d), o:avg(o), a:avg(a)};
+  return {org:true, d:avg(d), o:avg(o), a:avg(a)};
 }
 
 function getQKey() {
   var s=getScores();
+  if(currentMode==="individual"){
+    return individualStateKey(s.density, s.optionality);
+  }
   var hD=(s.d||2.5)>=2.5, hO=(s.o||2.5)>=2.5;
   if(hD&&!hO) return "depth";
   if(hD&&hO)  return "compound";
@@ -958,40 +1117,119 @@ function getQKey() {
 // ─── RENDER ──────────────────────────────────────────────────────────────────
 function renderQuestion() {
   var q=questions[currentQ];
-  document.getElementById("sectionLabel").textContent=q.section;
+  var total=totalQuestions();
+  document.getElementById("sectionLabel").textContent=q.label?q.label:q.section;
   document.getElementById("questionNumber").textContent=String(currentQ+1).padStart(2,"0");
+
+  // Preface: individual shows the framing line before statement 1; org uses q.preface.
   var pref=document.getElementById("questionPreface");
-  if(q.preface){ pref.textContent=q.preface; pref.classList.add("visible"); }
+  var prefaceText = (currentMode==="individual" && currentQ===0) ? individualFraming : (q.preface || "");
+  if(prefaceText){ pref.textContent=prefaceText; pref.classList.add("visible"); }
   else { pref.textContent=""; pref.classList.remove("visible"); }
+
   document.getElementById("questionText").textContent=q.text;
   var optEl=document.getElementById("optionsArea");
   optEl.innerHTML="";
-  ["A","B","C","D"].forEach(function(letter,i){
-    var opt=q.options[i];
-    var div=document.createElement("div");
-    div.className="option"+(answers[currentQ]===opt.score?" selected":"");
-    var ls=document.createElement("span"); ls.className="option-letter"; ls.textContent=letter;
-    var ts=document.createElement("span"); ts.className="option-text";   ts.textContent=opt.text;
-    div.appendChild(ls); div.appendChild(ts);
-    div.addEventListener("click",function(){
-      optEl.querySelectorAll(".option").forEach(function(o){o.classList.remove("selected");});
-      div.classList.add("selected");
-      answers[currentQ]=opt.score;
-      document.getElementById("btnNext").classList.add("enabled");
-      updateMatrix();
+
+  if(q.type==="likert"){
+    // 1 (strongly disagree) to 5 (strongly agree).
+    var wrap=document.createElement("div"); wrap.className="likert-wrap";
+    var note=document.createElement("div"); note.className="likert-scale-note";
+    var lo=document.createElement("span"); lo.textContent="1 · Strongly disagree";
+    var hi=document.createElement("span"); hi.textContent="Strongly agree · 5";
+    note.appendChild(lo); note.appendChild(hi);
+    var row=document.createElement("div"); row.className="likert";
+    [1,2,3,4,5].forEach(function(val){
+      var b=document.createElement("button");
+      b.type="button";
+      b.className="likert-opt"+(answers[currentQ]===val?" selected":"");
+      b.textContent=val;
+      b.addEventListener("click",function(){
+        row.querySelectorAll(".likert-opt").forEach(function(o){o.classList.remove("selected");});
+        b.classList.add("selected");
+        answers[currentQ]=val;
+        document.getElementById("btnNext").classList.add("enabled");
+        updateMatrix();
+      });
+      row.appendChild(b);
     });
-    optEl.appendChild(div);
-  });
-  document.getElementById("progressInfo").textContent="Question "+(currentQ+1)+" of 10";
-  document.getElementById("progressFill").style.width=((currentQ/10)*100)+"%";
-  document.getElementById("nextLabel").textContent=currentQ===9?"View Results →":"Next →";
+    wrap.appendChild(note); wrap.appendChild(row);
+    optEl.appendChild(wrap);
+  } else {
+    // Choice question (org sections, and the individual reflective close).
+    ["A","B","C","D"].forEach(function(letter,i){
+      var opt=q.options[i];
+      if(!opt) return;
+      var val=(opt.score!==undefined)?opt.score:(i+1); // reflective is unscored: store the 1-based choice
+      var div=document.createElement("div");
+      div.className="option"+(answers[currentQ]===val?" selected":"");
+      var ls=document.createElement("span"); ls.className="option-letter"; ls.textContent=letter;
+      var ts=document.createElement("span"); ts.className="option-text";   ts.textContent=opt.text;
+      div.appendChild(ls); div.appendChild(ts);
+      div.addEventListener("click",function(){
+        optEl.querySelectorAll(".option").forEach(function(o){o.classList.remove("selected");});
+        div.classList.add("selected");
+        answers[currentQ]=val;
+        document.getElementById("btnNext").classList.add("enabled");
+        updateMatrix();
+      });
+      optEl.appendChild(div);
+    });
+  }
+
+  // Progress label.
+  var progText;
+  if(currentMode==="individual"){
+    progText = (currentQ<12) ? ("Statement "+(currentQ+1)+" of 12") : "One last question, unscored";
+  } else {
+    progText = "Question "+(currentQ+1)+" of 10";
+  }
+  document.getElementById("progressInfo").textContent=progText;
+  document.getElementById("progressFill").style.width=((currentQ/total)*100)+"%";
+  document.getElementById("nextLabel").textContent=(currentQ===total-1)?"View Results →":"Next →";
   if(answers[currentQ]!==null) document.getElementById("btnNext").classList.add("enabled");
   else document.getElementById("btnNext").classList.remove("enabled");
   document.getElementById("btnBack").style.display=currentQ>0?"block":"none";
 }
 
+// Maps an individual axis sum (0-30) to a matrix percentage where the High threshold (19) sits at center.
+function indPct(score){
+  if(score>=IND_HIGH) return 50 + ((score-IND_HIGH)/(30-IND_HIGH))*50;
+  return (score/IND_HIGH)*50;
+}
+
 function updateMatrix() {
   var s=getScores();
+
+  if(currentMode==="individual"){
+    var anyD=answers.slice(0,6).some(function(a){return a!=null;});
+    var anyO=answers.slice(6,12).some(function(a){return a!=null;});
+    var dP=anyD?indPct(s.density):50;
+    var oP=anyO?indPct(s.optionality):50;
+    document.getElementById("dBar").style.width=Math.min(100,(s.density/30)*100)+"%";
+    document.getElementById("oBar").style.width=Math.min(100,(s.optionality/30)*100)+"%";
+    document.getElementById("dVal").textContent=anyD?String(s.density):"·";
+    document.getElementById("oVal").textContent=anyO?String(s.optionality):"·";
+    var ap=document.getElementById("alumniPill"); if(ap) ap.style.display="none";
+    document.getElementById("matrixDot").style.left=(anyO?oP:50)+"%";
+    document.getElementById("matrixDot").style.top=(anyD?(100-dP):50)+"%";
+    ["q-depth","q-compound","q-stagnant","q-fragile"].forEach(function(id){
+      document.getElementById(id).classList.remove("highlighted");
+    });
+    if(anyD&&anyO) document.getElementById("q-"+getQKey()).classList.add("highlighted");
+    var answered=answers.slice(0,12).filter(function(a){return a!=null;}).length;
+    if(answered>=2){
+      var sigs=[];
+      if(s.density>=IND_HIGH)     sigs.push("Strong Density signals. You are being handed problems you did not already know how to solve.");
+      if(anyD&&s.density<=14)      sigs.push("Density is running Low. The environment may be reinforcing what you already know rather than stretching it.");
+      if(s.optionality>=IND_HIGH)  sigs.push("Strong Optionality signals. What you carry reads as portable beyond your current company.");
+      if(anyO&&s.optionality<=14)   sigs.push("Optionality is running Low. The capability may still be legible mostly inside your current company.");
+      document.getElementById("liveInsightText").textContent=sigs.length?sigs[0]:"Capability profile is forming. The picture will sharpen as you continue.";
+    }
+    return;
+  }
+
+  var ap2=document.getElementById("alumniPill"); if(ap2) ap2.style.display="";
   var dP=s.d!==null?((s.d-1)/3)*100:50;
   var oP=s.o!==null?((s.o-1)/3)*100:50;
   var aP=s.a!==null?((s.a-1)/3)*100:50;
@@ -1010,17 +1248,10 @@ function updateMatrix() {
   var answered=answers.filter(function(a){return a!==null;}).length;
   if(answered>=2){
     var sigs=[];
-    if(currentMode==="individual"){
-      if(s.d>3)  sigs.push("Strong density signals. What you built is more durable than the last environment may have recognized.");
-      if(s.d<2)  sigs.push("The environment has been consuming rather than building. That gap is nameable and recoverable.");
-      if(s.o>3)  sigs.push("High portability signals. What you carry travels further than a single industry or context.");
-      if(s.o<2)  sigs.push("Optionality is constrained right now. The translation work is what unlocks it.");
-    } else {
-      if(s.d>3)  sigs.push("High-density environment confirmed. Something real is being built here.");
-      if(s.d<2)  sigs.push("Low density signals. The environment may be consuming capability rather than building it.");
-      if(s.o>3)  sigs.push("Strong portable capability signals. The bench has range.");
-      if(s.a&&s.a>3) sigs.push("Alumni infrastructure is being treated as a strategic asset. That is rarer than it should be.");
-    }
+    if(s.d>3)  sigs.push("High-density environment confirmed. Something real is being built here.");
+    if(s.d<2)  sigs.push("Low density signals. The environment may be consuming capability rather than building it.");
+    if(s.o>3)  sigs.push("Strong portable capability signals. The bench has range.");
+    if(s.a&&s.a>3) sigs.push("Alumni infrastructure is being treated as a strategic asset. That is rarer than it should be.");
     document.getElementById("liveInsightText").textContent=sigs.length?sigs[0]:"Capability profile is forming. The picture will sharpen as you continue.";
   }
 }
@@ -1037,14 +1268,26 @@ function showResults(name) {
   var cel=document.getElementById("resultsCelebration");
   if(qd.celebration){cel.textContent=qd.celebration;cel.style.display="block";}
   else cel.style.display="none";
-  var dS=s.d||0, oS=s.o||0, aS=s.a||0;
-  var dL=dS>=3.5?"Dense":dS>=2.5?"Moderate":dS>=1.5?"Thin":"Low";
-  var oL=oS>=3.5?"Expanding":oS>=2.5?"Moderate":oS>=1.5?"Narrowing":"Constrained";
-  var aL=aS>=3.5?"Strategic":aS>=2.5?"Active":aS>=1.5?"Passive":"Untapped";
-  var sc='<div class="score-card"><div class="score-card-label">Density</div><div class="score-card-val">'+dS.toFixed(1)+'</div><div class="score-card-desc">'+dL+' · out of 4.0</div></div>';
-  sc+='<div class="score-card"><div class="score-card-label">Optionality</div><div class="score-card-val">'+oS.toFixed(1)+'</div><div class="score-card-desc">'+oL+' · out of 4.0</div></div>';
-  if(currentMode==="org") sc+='<div class="score-card"><div class="score-card-label">Alumni Capital</div><div class="score-card-val">'+aS.toFixed(1)+'</div><div class="score-card-desc">'+aL+' · out of 4.0</div></div>';
-  document.getElementById("scoreCards").innerHTML=sc;
+  var isOrg = currentMode === "org";
+
+  // ── Score cards ──
+  if(!isOrg){
+    // Individual: sums out of 30, labelled High or Low against the 19 threshold.
+    var dS=s.density, oS=s.optionality;
+    var sc='<div class="score-card"><div class="score-card-label">Density</div><div class="score-card-val">'+dS+'</div><div class="score-card-desc">'+(dS>=IND_HIGH?"High":"Low")+' · out of 30</div></div>';
+    sc+='<div class="score-card"><div class="score-card-label">Optionality</div><div class="score-card-val">'+oS+'</div><div class="score-card-desc">'+(oS>=IND_HIGH?"High":"Low")+' · out of 30</div></div>';
+    document.getElementById("scoreCards").innerHTML=sc;
+  } else {
+    var dS=s.d||0, oS=s.o||0, aS=s.a||0;
+    var dL=dS>=3.5?"Dense":dS>=2.5?"Moderate":dS>=1.5?"Thin":"Low";
+    var oL=oS>=3.5?"Expanding":oS>=2.5?"Moderate":oS>=1.5?"Narrowing":"Constrained";
+    var aL=aS>=3.5?"Strategic":aS>=2.5?"Active":aS>=1.5?"Passive":"Untapped";
+    var sc='<div class="score-card"><div class="score-card-label">Density</div><div class="score-card-val">'+dS.toFixed(1)+'</div><div class="score-card-desc">'+dL+' · out of 4.0</div></div>';
+    sc+='<div class="score-card"><div class="score-card-label">Optionality</div><div class="score-card-val">'+oS.toFixed(1)+'</div><div class="score-card-desc">'+oL+' · out of 4.0</div></div>';
+    sc+='<div class="score-card"><div class="score-card-label">Alumni Capital</div><div class="score-card-val">'+aS.toFixed(1)+'</div><div class="score-card-desc">'+aL+' · out of 4.0</div></div>';
+    document.getElementById("scoreCards").innerHTML=sc;
+  }
+
   document.getElementById("resultsDiagnosis").textContent=qd.diagnosis;
   function renderList(id,items){
     var h="";
@@ -1052,26 +1295,61 @@ function showResults(name) {
     document.getElementById(id).innerHTML=h;
   }
   renderList("riskList",qd.risks);
-  renderList("focusList",qd.focus);
+
+  // Individual free result is diagnosis, not moves: hide the "Where to Focus First" section.
+  var focusSection=document.getElementById("focusSection");
+  if(isOrg){ focusSection.style.display=""; renderList("focusList",qd.focus); }
+  else { focusSection.style.display="none"; }
+
   document.getElementById("ctaText").textContent=qd.cta;
+
+  // ── Summary + boundary note + three questions ──
   if(sd){
-    document.getElementById("resultsSummary").textContent=sd.summary;
+    var summaryEl=document.getElementById("resultsSummary");
+    var bnote = null;
+    if(!isOrg){
+      var b=individualBoundary(s.density, s.optionality);
+      if(b){
+        bnote = "Your scores sit on a boundary. Density " + s.density + " of 30 and Optionality " + s.optionality +
+                " of 30 land close enough to the line that you could read as " + stateNamesList(b.keys) +
+                ". Hold both as live and let the next ninety days show you which one is true.";
+      }
+    }
+    if(bnote){
+      summaryEl.innerHTML = '<p style="margin-bottom:14px;color:#e8c97a;">'+escapeHtml(bnote)+'</p><p>'+escapeHtml(sd.summary)+'</p>';
+    } else {
+      summaryEl.textContent = sd.summary;
+    }
     var qh="";
     sd.questions.forEach(function(qt,i){
       qh+='<div style="padding:16px 18px;border:1px solid rgba(139,160,180,0.2);font-size:14px;line-height:1.7;color:rgba(245,240,232,0.78);display:flex;gap:14px;">';
       qh+='<span style="color:#c9a84c;flex-shrink:0;font-size:16px;font-family:Cormorant Garamond,serif;">'+(i+1)+'.</span>';
-      qh+='<span>'+qt+'</span></div>';
+      qh+='<span>'+escapeHtml(qt)+'</span></div>';
     });
     document.getElementById("diagnosticQuestions").innerHTML=qh;
   }
+
   if(pregateNameVal)  document.getElementById("ctaName").value=pregateNameVal;
   if(pregateEmailVal) document.getElementById("ctaEmail").value=pregateEmailVal;
-  // Mode-aware next step: org leaders see the organizational offer first; individuals see the Capability Session.
-  var isOrg = currentMode === "org";
+
+  // Closing section: org keeps its action framing; individual reads as diagnosis and points to the Field Kit.
+  document.getElementById("ctaSectionTitle").textContent = isOrg ? "From Insight to Action" : "Where This Leaves You";
   document.getElementById("orgOfferBox").style.display = isOrg ? "block" : "none";
+  document.getElementById("fieldKitBox").style.display = isOrg ? "none" : "block";
   document.getElementById("individualOfferBox").style.display = isOrg ? "none" : "block";
   if(window.plausible) plausible("Audit Completed", {props:{mode:currentMode, quadrant:qKey}});
   show("results");
+}
+
+// Small HTML escaper for the few places we inject computed strings via innerHTML.
+function escapeHtml(str){ return String(str).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+
+// Joins state keys into readable prose: "Compounding or Depth Trap", or "A, B, or C".
+function stateNamesList(keys){
+  var names=keys.map(function(k){ return STATE_NAMES[k]||k; });
+  if(names.length<=1) return names[0]||"";
+  if(names.length===2) return names[0]+" or "+names[1];
+  return names.slice(0,-1).join(", ")+", or "+names[names.length-1];
 }
 
 // ─── RESEARCH CAPTURE ────────────────────────────────────────────────────────
@@ -1082,14 +1360,27 @@ function captureResearch(nameVal, emailVal){
     var s = getScores();
     function v(id){ var el=document.getElementById(id); return el ? el.value : ""; }
     var consentEl = document.getElementById("researchConsent");
-    var responses = questions.map(function(q,i){ return { n:i+1, section:q.section, score:answers[i] }; });
+    // Store every answer, not just totals. For individual, index 12 is the unscored reflective close.
+    var responses = questions.map(function(q,i){
+      return { n:i+1, section:q.section, score:answers[i], scored: !(currentMode==="individual" && i===12) };
+    });
+    var stateKey = getQKey();
+    var boundaryKeys = null;
+    if(currentMode==="individual"){
+      var b=individualBoundary(s.density, s.optionality);
+      boundaryKeys = b ? b.keys : null;
+    }
     var payload = {
       mode: currentMode,
-      quadrant: getQKey(),
+      quadrant: stateKey,
+      state: STATE_NAMES[stateKey] || stateKey,
+      boundary: boundaryKeys,
+      paper: !!paperSave,
       scores: {
-        density:      s.d!=null ? +s.d.toFixed(2) : null,
-        optionality:  s.o!=null ? +s.o.toFixed(2) : null,
-        alumni_capital: s.a!=null ? +s.a.toFixed(2) : null
+        density:      s.d!=null ? +(+s.d).toFixed(2) : null,
+        optionality:  s.o!=null ? +(+s.o).toFixed(2) : null,
+        alumni_capital: s.a!=null ? +(+s.a).toFixed(2) : null,
+        scale: currentMode==="individual" ? "sum_of_30" : "avg_of_4"
       },
       responses: responses,
       industry:          v("researchIndustry"),
@@ -1117,13 +1408,40 @@ function captureResearch(nameVal, emailVal){
 function subscribeToKit(emailVal, quadrantKey, orgVal, nameVal){
   try {
     if(!emailVal || emailVal.indexOf("@") < 0) return;
+    var body = { email:emailVal, quadrant:quadrantKey, mode:currentMode, org:orgVal||"", name:nameVal||"", source:"capability_audit" };
+    // Individual takers are tagged Individual (plus audit-paper-save on the paper fast path)
+    // and carry a dated result line so the reader's email can echo their score.
+    if(currentMode==="individual"){
+      var s=getScores();
+      var stateName=STATE_NAMES[quadrantKey]||quadrantKey;
+      var dateStr=formatResultDate(new Date());
+      body.tags = ["Individual"].concat(paperSave ? ["audit-paper-save"] : []);
+      body.fields = {
+        audit_result:     individualResultLine(s.density, s.optionality, stateName, dateStr),
+        density_score:    String(s.density),
+        optionality_score:String(s.optionality),
+        state:            stateName,
+        result_date:      dateStr
+      };
+    }
     fetch("/.netlify/functions/subscribe", {
       method:"POST",
       headers:{"Content-Type":"application/json"},
-      body:JSON.stringify({ email:emailVal, quadrant:quadrantKey, mode:currentMode, org:orgVal||"", name:nameVal||"", source:"capability_audit" }),
+      body:JSON.stringify(body),
       keepalive:true
     }).catch(function(){});
   } catch(e){ /* kit subscribe must never break the audit */ }
+}
+
+// Mode-aware score values for the owner-facing Formspree payloads.
+function scorePayload(){
+  var s=getScores();
+  var stateName=STATE_NAMES[getQKey()]||getQKey();
+  if(currentMode==="individual"){
+    return { state:stateName, density:String(s.density), optionality:String(s.optionality), alumni_capital:"",
+             result:individualResultLine(s.density, s.optionality, stateName, formatResultDate(new Date())) };
+  }
+  return { state:stateName, density:(s.d||0).toFixed(2), optionality:(s.o||0).toFixed(2), alumni_capital:(s.a||0).toFixed(2), result:"" };
 }
 
 // ─── EVENTS ──────────────────────────────────────────────────────────────────
@@ -1142,17 +1460,22 @@ document.addEventListener("DOMContentLoaded", function(){
 
   document.getElementById("skipPregateBtn").addEventListener("click", function(){ pregateNameVal=""; pregateEmailVal=""; show("fork"); });
 
-  document.getElementById("forkIndividual").addEventListener("click", function(){
-    if(window.plausible) plausible("Audience Fork Selected", {props:{mode:"Individual"}});
-    currentMode="individual"; questions=questionsIndividual; quadrantData=quadrantDataIndividual; summaryData=summaryDataIndividual;
-    currentQ=0; answers=new Array(10).fill(null);
+  function setupIndividual(){
+    currentMode="individual"; paperSave=false;
+    questions=buildIndividualQuestions(); quadrantData=quadrantDataIndividual; summaryData=summaryDataIndividual;
+    currentQ=0; answers=new Array(questions.length).fill(null);
     document.getElementById("auditModeBadge").textContent="Individual";
     document.getElementById("switchModeBtn").textContent="Switch to org leader audit";
+  }
+
+  document.getElementById("forkIndividual").addEventListener("click", function(){
+    if(window.plausible) plausible("Audience Fork Selected", {props:{mode:"Individual"}});
+    setupIndividual();
     show("audit"); renderQuestion();
   });
 
   function setupOrg(){
-    currentMode="org"; questions=questionsOrg; quadrantData=quadrantDataOrg; summaryData=summaryDataOrg;
+    currentMode="org"; paperSave=false; questions=questionsOrg; quadrantData=quadrantDataOrg; summaryData=summaryDataOrg;
     currentQ=0; answers=new Array(10).fill(null);
     document.getElementById("auditModeBadge").textContent="Org Leader";
     document.getElementById("switchModeBtn").textContent="Switch to individual audit";
@@ -1176,21 +1499,19 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
   document.getElementById("switchModeBtn").addEventListener("click", function(){
-    if(currentMode==="individual"){
-      currentMode="org"; questions=questionsOrg; quadrantData=quadrantDataOrg; summaryData=summaryDataOrg;
-      document.getElementById("auditModeBadge").textContent="Org Leader";
-      document.getElementById("switchModeBtn").textContent="Switch to individual audit";
-    } else {
-      currentMode="individual"; questions=questionsIndividual; quadrantData=quadrantDataIndividual; summaryData=summaryDataIndividual;
-      document.getElementById("auditModeBadge").textContent="Individual";
-      document.getElementById("switchModeBtn").textContent="Switch to org leader audit";
-    }
-    currentQ=0; answers=new Array(10).fill(null); renderQuestion();
+    if(currentMode==="individual"){ setupOrg(); }
+    else { setupIndividual(); }
+    renderQuestion();
   });
 
   document.getElementById("btnNext").addEventListener("click", function(){
     if(answers[currentQ]===null) return;
-    if(currentQ===9){ if(window.plausible) plausible("Email Gate Reached"); show("gate"); return; }
+    if(currentQ===totalQuestions()-1){
+      if(window.plausible) plausible("Email Gate Reached");
+      var ge=document.getElementById("gateEyebrow");
+      if(ge) ge.textContent = currentMode==="individual" ? "Audit Complete" : "Audit Complete · 10 of 10";
+      show("gate"); return;
+    }
     currentQ++; renderQuestion();
   });
 
@@ -1204,8 +1525,8 @@ document.addEventListener("DOMContentLoaded", function(){
     var role=document.getElementById("gateRole").value.trim();
     var email=document.getElementById("gateEmail").value.trim()||pregateEmailVal;
     if(!email||!email.includes("@")){ document.getElementById("gateEmail").style.borderColor="#c8503c"; document.getElementById("gateEmail").focus(); return; }
-    var s=getScores();
-    fetch("https://formspree.io/f/xjgapael",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify({name:name,org:org,role:role,email:email,mode:currentMode,quadrant:getQKey(),density:(s.d||0).toFixed(2),optionality:(s.o||0).toFixed(2),alumni_capital:(s.a||0).toFixed(2),source:"capability_audit_complete",completed_at:new Date().toISOString()})}).catch(function(){});
+    var sp=scorePayload();
+    fetch("https://formspree.io/f/xjgapael",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify({name:name,org:org,role:role,email:email,mode:currentMode,quadrant:getQKey(),state:sp.state,density:sp.density,optionality:sp.optionality,alumni_capital:sp.alumni_capital,result:sp.result,source:"capability_audit_complete",completed_at:new Date().toISOString()})}).catch(function(){});
     captureResearch(name, email);
     subscribeToKit(email, getQKey(), org, name);
     showResults(name);
@@ -1219,7 +1540,7 @@ document.addEventListener("DOMContentLoaded", function(){
   });
 
   document.getElementById("retakeBtn").addEventListener("click", function(){
-    currentQ=0; answers=new Array(10).fill(null); pregateNameVal=""; pregateEmailVal=""; show("intro");
+    setupIndividual(); pregateNameVal=""; pregateEmailVal=""; show("intro");
   });
 
   document.getElementById("ctaSendBtn").addEventListener("click", function(){
@@ -1230,9 +1551,9 @@ document.addEventListener("DOMContentLoaded", function(){
     var ef=document.getElementById("ctaEmail");
     if(!email||!email.includes("@")){ ef.style.borderColor="#c8503c"; ef.focus(); return; }
     ef.style.borderColor="rgba(139,160,180,0.3)";
-    var s=getScores();
+    var sp=scorePayload();
     var btn=document.getElementById("ctaSendBtn"); btn.textContent="Sending..."; btn.disabled=true;
-    fetch("https://formspree.io/f/xjgapael",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify({name:name,role:role,email:email,message:message,source:"results_contact_form",mode:currentMode,quadrant:getQKey(),density:(s.d||0).toFixed(2),optionality:(s.o||0).toFixed(2),alumni_capital:(s.a||0).toFixed(2),completed_at:new Date().toISOString()})
+    fetch("https://formspree.io/f/xjgapael",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify({name:name,role:role,email:email,message:message,source:"results_contact_form",mode:currentMode,quadrant:getQKey(),state:sp.state,density:sp.density,optionality:sp.optionality,alumni_capital:sp.alumni_capital,completed_at:new Date().toISOString()})
     }).then(function(r){
       if(r.ok){
         if(window.plausible) plausible("Contact Submitted", {props:{source:"audit-results"}});
@@ -1240,6 +1561,71 @@ document.addEventListener("DOMContentLoaded", function(){
         ["ctaName","ctaRole","ctaEmail","ctaMessage"].forEach(function(id){document.getElementById(id).value="";});
       } else { btn.textContent="Send"; btn.disabled=false; }
     }).catch(function(){ btn.textContent="Send"; btn.disabled=false; });
+  });
+
+  // ─── PAPER FAST PATH (individual only) ─────────────────────────────────────
+  function renderPaperFields(){
+    var host=document.getElementById("paperFields");
+    if(!host) return;
+    host.innerHTML="";
+    var lastPart="";
+    statementsIndividual.forEach(function(st,i){
+      if(st.part!==lastPart){
+        var pl=document.createElement("div"); pl.className="paper-part-label"; pl.textContent=st.part;
+        host.appendChild(pl); lastPart=st.part;
+      }
+      var row=document.createElement("div"); row.className="paper-row";
+      var num=document.createElement("div"); num.className="paper-row-num"; num.textContent=(i+1)+".";
+      var txt=document.createElement("div"); txt.className="paper-row-text"; txt.textContent=st.text;
+      var inp=document.createElement("input");
+      inp.type="number"; inp.min="1"; inp.max="5"; inp.step="1";
+      inp.className="paper-input"; inp.id="paperNum"+i; inp.setAttribute("inputmode","numeric");
+      inp.setAttribute("aria-label","Statement "+(i+1)+", 1 to 5");
+      inp.addEventListener("input", function(){ inp.classList.remove("invalid"); });
+      row.appendChild(num); row.appendChild(txt); row.appendChild(inp);
+      host.appendChild(row);
+    });
+  }
+
+  var paperEntryBtn=document.getElementById("paperEntryBtn");
+  if(paperEntryBtn) paperEntryBtn.addEventListener("click", function(){
+    if(window.plausible){ plausible("Audit Started"); plausible("Paper Save Started"); }
+    setupIndividual();
+    paperSave=true;
+    renderPaperFields();
+    show("paper");
+  });
+
+  var paperBackBtn=document.getElementById("paperBackBtn");
+  if(paperBackBtn) paperBackBtn.addEventListener("click", function(){ paperSave=false; show("intro"); });
+
+  var paperSubmitBtn=document.getElementById("paperSubmitBtn");
+  if(paperSubmitBtn) paperSubmitBtn.addEventListener("click", function(){
+    var ok=true;
+    var vals=[];
+    for(var i=0;i<12;i++){
+      var el=document.getElementById("paperNum"+i);
+      var n=el?parseInt(el.value,10):NaN;
+      if(!el || isNaN(n) || n<1 || n>5){ if(el) el.classList.add("invalid"); ok=false; vals.push(null); }
+      else { vals.push(n); }
+    }
+    var emailEl=document.getElementById("paperEmail");
+    var email=emailEl.value.trim();
+    if(!email||!email.includes("@")){ emailEl.style.borderColor="#c8503c"; ok=false; }
+    if(!ok){
+      var firstBad=document.querySelector(".paper-input.invalid") || (!email||!email.includes("@")?emailEl:null);
+      if(firstBad) firstBad.focus();
+      return;
+    }
+    // Fill the twelve scored answers; the reflective close is not asked on the paper path.
+    for(var j=0;j<12;j++){ answers[j]=vals[j]; }
+    pregateNameVal=document.getElementById("paperName").value.trim();
+    pregateEmailVal=email;
+    var sp=scorePayload();
+    fetch("https://formspree.io/f/xjgapael",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify({name:pregateNameVal,email:email,mode:"individual",quadrant:getQKey(),state:sp.state,density:sp.density,optionality:sp.optionality,result:sp.result,source:"capability_audit_paper_save",completed_at:new Date().toISOString()})}).catch(function(){});
+    captureResearch(pregateNameVal, email);
+    subscribeToKit(email, getQKey(), "", pregateNameVal);
+    showResults(pregateNameVal);
   });
 
 }); // end DOMContentLoaded
