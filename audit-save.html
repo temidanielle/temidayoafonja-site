@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Save Your Score · Capability Formation Audit · Temidayo Afonja</title>
+<meta name="description" content="Already scored the Capability Formation Audit Short Form on paper? Enter your twelve statement scores here so your result is stored and dated.">
+<link rel="canonical" href="https://temidayoafonja.com/audit-save.html">
+<meta name="robots" content="noindex">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Temidayo Afonja">
+<meta property="og:url" content="https://temidayoafonja.com/audit-save.html">
+<meta property="og:title" content="Save Your Score">
+<meta property="og:description" content="Enter the twelve statement scores you already have so your result is stored and dated.">
+<meta property="og:image" content="https://temidayoafonja.com/og-audit.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Save Your Score">
+<meta name="twitter:description" content="Enter the twelve statement scores you already have so your result is stored and dated.">
+<meta name="twitter:image" content="https://temidayoafonja.com/og-audit.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-hFo9m_622E0tElKtUlVnx.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+<style>
+:root {
+  --navy: #0f2347;
+  --rust: #c1440e;
+  --gold: #c9a84c;
+  --gold-light: #e8c97a;
+  --gold-dim: rgba(201,168,76,0.14);
+  --gold-border: rgba(201,168,76,0.25);
+  --cream: #f5f0e8;
+  --line: rgba(245,240,232,0.14);
+}
+body { background:#0f2347 !important; color:#f5f0e8 !important; font-family:'DM Sans',sans-serif !important; font-weight:300; min-height:100vh; overflow-x:hidden; }
+body a { color:#c9a84c !important; }
+body .nav-links a { color:#f5f0e8 !important; }
+body .nav-links a:hover, body .nav-links a:focus { color:#c9a84c !important; }
+
+.save-wrap { max-width:760px; margin:0 auto; padding:40px 24px 120px; }
+.save-eyebrow { font-size:12px; letter-spacing:0.22em; text-transform:uppercase; color:var(--gold); margin-bottom:18px; }
+.save-headline { font-family:'Cormorant Garamond',serif; font-weight:400; font-size:clamp(30px,5vw,46px); line-height:1.12; color:var(--cream); margin-bottom:20px; }
+.save-headline em { font-style:italic; color:var(--gold-light); }
+.save-sub { font-size:17px; line-height:1.65; color:rgba(245,240,232,0.82); max-width:620px; margin-bottom:14px; }
+.save-note { font-size:14px; line-height:1.6; color:rgba(245,240,232,0.6); max-width:620px; margin-bottom:40px; }
+
+.axis-block { margin-bottom:38px; }
+.axis-label { font-size:12px; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); border-bottom:1px solid var(--gold-border); padding-bottom:10px; margin-bottom:6px; }
+.axis-hint { font-size:13px; color:rgba(245,240,232,0.55); margin-bottom:22px; }
+
+.statement { padding:20px 0; border-bottom:1px solid var(--line); }
+.statement:last-child { border-bottom:none; }
+.statement-text { display:flex; gap:14px; font-size:16px; line-height:1.55; color:var(--cream); margin-bottom:16px; }
+.statement-num { flex:0 0 auto; width:26px; height:26px; border:1px solid var(--gold-border); border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:13px; color:var(--gold); }
+
+.scale { display:flex; gap:8px; flex-wrap:wrap; margin-left:40px; }
+.scale-opt { position:relative; }
+.scale-opt input { position:absolute; opacity:0; width:0; height:0; }
+.scale-opt label {
+  display:flex; align-items:center; justify-content:center;
+  width:46px; height:46px; border:1px solid var(--gold-border); border-radius:8px;
+  color:rgba(245,240,232,0.8); font-size:16px; cursor:pointer; transition:all 0.15s; background:transparent;
+}
+.scale-opt label:hover { border-color:var(--gold); background:var(--gold-dim); }
+.scale-opt input:checked + label { background:var(--gold); border-color:var(--gold); color:var(--navy); font-weight:500; }
+.scale-opt input:focus-visible + label { outline:2px solid var(--gold-light); outline-offset:2px; }
+.scale-ends { display:flex; justify-content:space-between; margin:8px 0 0 40px; max-width:340px; font-size:11px; letter-spacing:0.06em; text-transform:uppercase; color:rgba(245,240,232,0.45); }
+
+.meta-block { margin:36px 0 12px; display:grid; gap:20px; grid-template-columns:1fr 1fr; }
+.field label { display:block; font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold); margin-bottom:8px; }
+.field input {
+  width:100%; padding:14px 16px; background:rgba(245,240,232,0.04); border:1px solid var(--gold-border);
+  border-radius:8px; color:var(--cream); font-family:'DM Sans',sans-serif; font-size:15px;
+}
+.field input:focus { outline:none; border-color:var(--gold); background:rgba(245,240,232,0.06); }
+.field-hint { font-size:12px; color:rgba(245,240,232,0.5); margin-top:6px; }
+
+.save-error { color:#e8a08e; font-size:14px; margin:14px 0; min-height:18px; }
+.save-privacy { font-size:12px; line-height:1.6; color:rgba(245,240,232,0.5); margin-top:18px; max-width:620px; }
+
+.btn-save {
+  display:inline-block; background:var(--gold); color:var(--navy); border:none; cursor:pointer;
+  font-family:'DM Sans',sans-serif; font-size:15px; font-weight:500; letter-spacing:0.04em;
+  padding:16px 42px; border-radius:8px; transition:all 0.2s; margin-top:26px;
+}
+.btn-save:hover { background:var(--gold-light); transform:translateY(-2px); box-shadow:0 12px 40px rgba(201,168,76,0.2); }
+.btn-save:disabled { opacity:0.55; cursor:not-allowed; transform:none; box-shadow:none; }
+
+/* Confirmation */
+#confirm { display:none; }
+.confirm-eyebrow { font-size:12px; letter-spacing:0.22em; text-transform:uppercase; color:var(--gold); margin-bottom:18px; }
+.confirm-state { font-family:'Cormorant Garamond',serif; font-weight:400; font-size:clamp(34px,6vw,56px); line-height:1.05; color:var(--gold-light); margin-bottom:10px; }
+.confirm-date { font-size:14px; letter-spacing:0.08em; text-transform:uppercase; color:rgba(245,240,232,0.6); margin-bottom:30px; }
+.confirm-scores { display:grid; grid-template-columns:1fr 1fr; gap:16px; max-width:460px; margin-bottom:28px; }
+.score-card { border:1px solid var(--gold-border); border-radius:10px; padding:22px 20px; background:rgba(245,240,232,0.03); }
+.score-card-label { font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); margin-bottom:10px; }
+.score-card-value { font-family:'Cormorant Garamond',serif; font-size:40px; line-height:1; color:var(--cream); }
+.score-card-max { font-size:14px; color:rgba(245,240,232,0.5); }
+.confirm-desc { font-size:16px; line-height:1.65; color:rgba(245,240,232,0.82); max-width:560px; margin-bottom:22px; }
+.confirm-boundary { border-left:2px solid var(--rust); padding:14px 0 14px 18px; margin-bottom:26px; font-size:15px; line-height:1.6; color:rgba(245,240,232,0.85); max-width:560px; }
+.confirm-rescore { font-size:13px; letter-spacing:0.1em; text-transform:uppercase; color:var(--gold); }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Temidayo <span>Afonja</span></a>
+  <div class="nav-links">
+    <a href="framework.html">Framework</a>
+    <a href="about.html">About</a>
+    <a href="principles.html">Principles</a>
+    <a href="work.html">Work With Me</a>
+    <a href="case-studies.html">Case Studies</a>
+    <a href="speaking.html">Speaking</a>
+    <a href="book.html">Book</a>
+    <a href="https://temidayoafonja.substack.com" target="_blank" rel="noopener">Writing</a>
+    <a href="audit.html" class="nav-cta">Take the Audit</a>
+  </div>
+</nav>
+<div class="nav-spacer"></div>
+
+<div class="save-wrap">
+
+  <!-- FORM -->
+  <div id="form">
+    <div class="save-eyebrow">Capability Formation Audit &middot; Short Form</div>
+    <h1 class="save-headline">Save your <em>score</em></h1>
+    <p class="save-sub">You scored the twelve statements on paper. Enter each score here and your result is stored and dated, and a copy is sent to your email.</p>
+    <p class="save-note">One to five for every statement, exactly as you marked it, scored against the last ninety days of your actual working life. This does not change your answers. It records them and returns your state across Density and Optionality.</p>
+
+    <form id="scoreForm" novalidate>
+      <div id="statements"></div>
+
+      <div class="meta-block">
+        <div class="field">
+          <label for="email">Email <span style="color:var(--rust)">*</span></label>
+          <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+        </div>
+        <div class="field">
+          <label for="scoreDate">Date of scoring</label>
+          <input type="date" id="scoreDate" name="scoreDate">
+          <div class="field-hint">Defaults to today.</div>
+        </div>
+      </div>
+
+      <div class="save-error" id="errorMsg" role="alert" aria-live="polite"></div>
+
+      <button type="submit" class="btn-save" id="submitBtn">Save my score</button>
+
+      <p class="save-privacy">Your scores are confidential. By saving, you agree to occasional updates from Temidayo Afonja on the Capability Formation Framework.</p>
+    </form>
+  </div>
+
+  <!-- CONFIRMATION -->
+  <div id="confirm">
+    <div class="confirm-eyebrow">Your result is stored and dated</div>
+    <div class="confirm-state" id="confState"></div>
+    <div class="confirm-date" id="confDate"></div>
+    <div class="confirm-scores">
+      <div class="score-card">
+        <div class="score-card-label">Density</div>
+        <div class="score-card-value"><span id="confDensity"></span> <span class="score-card-max">of 30</span></div>
+      </div>
+      <div class="score-card">
+        <div class="score-card-label">Optionality</div>
+        <div class="score-card-value"><span id="confOptionality"></span> <span class="score-card-max">of 30</span></div>
+      </div>
+    </div>
+    <p class="confirm-desc" id="confDesc"></p>
+    <div class="confirm-boundary" id="confBoundary" style="display:none"></div>
+    <div class="confirm-rescore">Rescore in ninety days.</div>
+  </div>
+
+</div>
+
+<footer>
+  <div>
+    <div class="footer-logo">Temidayo <span>Afonja</span></div>
+    <div class="footer-tagline">The Capability Formation Framework &middot; A system for Networked Capability Orchestration in volatile markets.</div>
+  </div>
+  <ul class="footer-links">
+    <li><a href="framework.html">Framework</a></li>
+    <li><a href="principles.html">Principles</a></li>
+    <li><a href="audit.html">Audit</a></li>
+    <li><a href="institutional-diagnostic.html">Institutional Diagnostic</a></li>
+    <li><a href="work.html">Work With Me</a></li>
+    <li><a href="case-studies.html">Case Studies</a></li>
+    <li><a href="speaking.html">Speaking</a></li>
+    <li><a href="https://temidayoafonja.substack.com" target="_blank" rel="noopener">Substack</a></li>
+  </ul>
+  <div class="footer-copy">&copy; 2026 Temidayo Afonja. All rights reserved.</div>
+</footer>
+
+<script defer src="/nav.js"></script>
+<script>
+/* =====================================================================
+   SOURCE OF TRUTH: the twelve statements from The Capability Formation
+   Audit Short Form PDF, verbatim, in order.
+
+   Statements 1 to 6  = Density (Learning Velocity).
+   Statements 7 to 12 = Optionality (Market Portability).
+
+   Do not change the count or the order: the scoring (out of 30 per axis,
+   High at 19 or higher) depends on six statements per axis.
+   ===================================================================== */
+var STATEMENTS = [
+  // DENSITY (1 to 6)
+  "In the last ninety days I have been handed a problem I did not already know how to solve.",
+  "I work close enough to people who are better than me that I can watch how they think.",
+  "My work is reviewed by someone who can tell the difference between good and adequate, and who says so directly.",
+  "The feedback I receive changes what I do next, not just how I feel.",
+  "I regularly operate at the edge of my competence rather than the comfortable center of it.",
+  "Looking back six months, the work I do now would have been genuinely hard for me then.",
+  // OPTIONALITY (7 to 12)
+  "The capability I am building would be valued by an employer in a different industry.",
+  "I can describe what I do in terms of outcomes, not just my company's internal language.",
+  "If my role disappeared tomorrow, the capability I built would still be mine to carry.",
+  "People with the power to hire or advance me, inside or outside my company, can already see what I am good at.",
+  "What I am learning is a transferable capability rather than a company-specific procedure.",
+  "I could rebuild a strong position somewhere else within a year."
+];
+
+/* Scoring config. If the PDF ever uses a different structure, this is the
+   only place the axis split and thresholds live. */
+var CONFIG = {
+  perAxis: 6,        // statements per axis
+  maxPerAxis: 30,    // perAxis * 5
+  highAt: 19,        // a score of highAt or more is High on that axis
+  boundaryLow: 17,   // inclusive boundary band
+  boundaryHigh: 21   // inclusive boundary band
+};
+
+/* Diagnosis only. No advice, no recommended actions, no move language.
+   High and Low capitalized at sentence starts, per the language rules. */
+var STATE_DESC = {
+  "Compounding": "High Density and high Optionality. You are being formed and the market can carry it.",
+  "Depth Trap":  "High Density, low Optionality. You are growing, and the growth is trapped where you stand.",
+  "Stagnant":    "Low Density, low Optionality. Neither the learning nor the portability is moving.",
+  "Fragile":     "Low Density, high Optionality. Mobile on paper, hollowing underneath."
+};
+
+(function () {
+  var host = document.getElementById("statements");
+  var axes = [
+    { label: "Part One: Density (Learning Velocity)", hint: "Statements 1 to 6.", start: 0 },
+    { label: "Part Two: Optionality (Market Portability)", hint: "Statements 7 to 12.", start: 6 }
+  ];
+  axes.forEach(function (axis) {
+    var block = document.createElement("div");
+    block.className = "axis-block";
+    block.innerHTML = '<div class="axis-label">' + axis.label + '</div><div class="axis-hint">' + axis.hint + '</div>';
+    for (var i = axis.start; i < axis.start + CONFIG.perAxis; i++) {
+      var n = i + 1;
+      var st = document.createElement("div");
+      st.className = "statement";
+      var scale = "";
+      for (var v = 1; v <= 5; v++) {
+        var id = "s" + n + "_" + v;
+        scale += '<div class="scale-opt"><input type="radio" name="s' + n + '" id="' + id + '" value="' + v + '"><label for="' + id + '">' + v + '</label></div>';
+      }
+      st.innerHTML =
+        '<div class="statement-text"><span class="statement-num">' + n + '</span><span>' + STATEMENTS[i] + '</span></div>' +
+        '<div class="scale">' + scale + '</div>' +
+        '<div class="scale-ends"><span>Strongly disagree</span><span>Strongly agree</span></div>';
+      block.appendChild(st);
+    }
+    host.appendChild(block);
+  });
+
+  // Default the date field to today (local).
+  var d = new Date();
+  var iso = d.getFullYear() + "-" +
+    String(d.getMonth() + 1).padStart(2, "0") + "-" +
+    String(d.getDate()).padStart(2, "0");
+  document.getElementById("scoreDate").value = iso;
+})();
+
+function readScores() {
+  var scores = [];
+  for (var n = 1; n <= 12; n++) {
+    var checked = document.querySelector('input[name="s' + n + '"]:checked');
+    scores.push(checked ? parseInt(checked.value, 10) : null);
+  }
+  return scores;
+}
+
+function sum(arr) { return arr.reduce(function (a, b) { return a + b; }, 0); }
+
+function stateFor(density, optionality) {
+  var dHigh = density >= CONFIG.highAt;
+  var oHigh = optionality >= CONFIG.highAt;
+  if (dHigh && oHigh) return "Compounding";
+  if (dHigh && !oHigh) return "Depth Trap";
+  if (!dHigh && !oHigh) return "Stagnant";
+  return "Fragile";
+}
+
+// Returns the two neighboring states to read, or null when not on a boundary.
+function neighborsFor(density, optionality) {
+  var dOnB = density >= CONFIG.boundaryLow && density <= CONFIG.boundaryHigh;
+  var oOnB = optionality >= CONFIG.boundaryLow && optionality <= CONFIG.boundaryHigh;
+  if (!dOnB && !oOnB) return null;
+
+  // Pick the axis nearest its threshold when both straddle it.
+  var axis;
+  if (dOnB && oOnB) {
+    axis = Math.abs(density - CONFIG.highAt) <= Math.abs(optionality - CONFIG.highAt) ? "D" : "O";
+  } else {
+    axis = dOnB ? "D" : "O";
+  }
+
+  var dHigh = density >= CONFIG.highAt;
+  var oHigh = optionality >= CONFIG.highAt;
+  if (axis === "D") {
+    return oHigh ? ["Compounding", "Fragile"] : ["Depth Trap", "Stagnant"];
+  }
+  return dHigh ? ["Compounding", "Depth Trap"] : ["Stagnant", "Fragile"];
+}
+
+function formatDate(iso) {
+  // iso is YYYY-MM-DD. Render as "19 July 2026" without timezone drift.
+  var parts = (iso || "").split("-");
+  if (parts.length !== 3) return iso || "";
+  var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+  var mi = parseInt(parts[1], 10) - 1;
+  return parseInt(parts[2], 10) + " " + (months[mi] || "") + " " + parts[0];
+}
+
+document.getElementById("scoreForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+  var err = document.getElementById("errorMsg");
+  err.textContent = "";
+
+  var scores = readScores();
+  if (scores.some(function (s) { return s === null; })) {
+    err.textContent = "Please score all twelve statements from 1 to 5.";
+    var firstMissing = scores.indexOf(null) + 1;
+    var el = document.querySelector('input[name="s' + firstMissing + '"]');
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "center" });
+    return;
+  }
+
+  var email = document.getElementById("email").value.trim();
+  if (!email || email.indexOf("@") < 0) {
+    err.textContent = "A valid email is required so your result can be sent to you.";
+    document.getElementById("email").focus();
+    return;
+  }
+
+  var dateVal = document.getElementById("scoreDate").value ||
+    (new Date().getFullYear() + "-" + String(new Date().getMonth() + 1).padStart(2, "0") + "-" + String(new Date().getDate()).padStart(2, "0"));
+
+  var density = sum(scores.slice(0, 6));
+  var optionality = sum(scores.slice(6, 12));
+  var state = stateFor(density, optionality);
+  var neighbors = neighborsFor(density, optionality);
+
+  var btn = document.getElementById("submitBtn");
+  btn.disabled = true;
+  btn.textContent = "Saving…";
+
+  if (window.plausible) plausible("Paper Score Saved");
+
+  var payload = {
+    email: email,
+    date: dateVal,
+    responses: scores,
+    density: density,
+    optionality: optionality,
+    state: state,
+    source: "audit-paper-save"
+  };
+
+  fetch("/.netlify/functions/save-score", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload)
+  }).catch(function () { /* storage is best effort from the client's view; the result still shows */ })
+    .finally(function () {
+      showConfirmation(state, density, optionality, dateVal, neighbors);
+    });
+});
+
+function showConfirmation(state, density, optionality, dateVal, neighbors) {
+  document.getElementById("confState").textContent = state;
+  document.getElementById("confDate").textContent = "Scored " + formatDate(dateVal);
+  document.getElementById("confDensity").textContent = density;
+  document.getElementById("confOptionality").textContent = optionality;
+  document.getElementById("confDesc").textContent = STATE_DESC[state] || "";
+
+  var boundaryEl = document.getElementById("confBoundary");
+  if (neighbors) {
+    boundaryEl.textContent = "You are on a boundary: read both neighboring states, " + neighbors[0] + " and " + neighbors[1] + ".";
+    boundaryEl.style.display = "block";
+  } else {
+    boundaryEl.style.display = "none";
+  }
+
+  document.getElementById("form").style.display = "none";
+  document.getElementById("confirm").style.display = "block";
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
+</script>
+</body>
+</html>
