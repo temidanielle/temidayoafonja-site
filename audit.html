@@ -575,7 +575,8 @@ nav { padding:16px 20px; }
       <div class="results-section-title" id="ctaSectionTitle">From Insight to Action</div>
       <div class="results-cta-text" id="ctaText"></div>
       <!-- INDIVIDUAL CALIBRATION STEP: The Capability Formation Field Kit (individual mode).
-           TODO(Temi): confirm the Maven URL below. This is a placeholder. -->
+           HELD BACK: not shown on the live site yet. Pending the real Maven URL
+           (placeholder below). showResults keeps this box hidden until then. -->
 
       <div class="cta-box" id="fieldKitBox" style="display:none;">
         <div class="cta-box-title">Calibrate Your Read: The Capability Formation Field Kit</div>
@@ -1263,7 +1264,9 @@ function showResults(name) {
   document.getElementById("riskTitle").textContent = isIndiv ? "Where You Are Exposed" : "Where Capability Is At Risk";
   document.getElementById("focusSection").style.display = isIndiv ? "none" : "";
   document.getElementById("ctaSectionTitle").textContent = isIndiv ? "After the Diagnosis" : "From Insight to Action";
-  document.getElementById("fieldKitBox").style.display = isIndiv ? "block" : "none";
+  // Field Kit block is held back until the Maven URL is confirmed. To enable:
+  // set this to (isIndiv ? "block" : "none") and fill in the href in the markup.
+  document.getElementById("fieldKitBox").style.display = "none";
   if(sd){
     document.getElementById("resultsSummary").textContent=sd.summary;
     var qh="";
