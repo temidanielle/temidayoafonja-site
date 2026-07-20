@@ -15,6 +15,12 @@
   to = "/audit.html"
   status = 200
 
+[[redirects]]
+  from = "/fieldkit"
+  to = "https://9762838302398.gumroad.com/l/czmqp"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]
