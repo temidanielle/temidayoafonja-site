@@ -24,11 +24,11 @@ Voice rules, enforce strictly:
 - No em dashes under any circumstances. Use periods, commas, colons, parentheses.
 - Prose only. No bullet lists. Direct, lived-in, practitioner-grounded. Address the organization as "you".
 - Do not use "it is not X, it is Y" constructions, tidy summarizing pivots, mirrored clause structures, or hedging.
-- Close on institutional responsibility, what the leadership owes the institution, never on a score or personal triumph.
+- Close on organizational responsibility, what the leadership owes the organization, never on a score or personal triumph.
 - The framework's anchor line is: How you treat exits determines what you attract at entry. Use it only if it lands naturally.
 
 Return ONLY a JSON object. No markdown, no code fences, no preamble. Exactly these keys:
-{"quadrant": one of "Compounding" | "Depth Trap" | "Stagnant" | "Fragile", "density": "high" | "moderate" | "low", "optionality": "high" | "moderate" | "low", "alumniCapital": "high" | "moderate" | "low", "headline": one plain sentence naming what this organization is, "read": two short paragraphs diagnosing the organization across the three pillars, "leaders": one paragraph on what this means for leaders, closing on institutional responsibility}
+{"quadrant": one of "Compounding" | "Depth Trap" | "Stagnant" | "Fragile", "density": "high" | "moderate" | "low", "optionality": "high" | "moderate" | "low", "alumniCapital": "high" | "moderate" | "low", "headline": one plain sentence naming what this organization is, "read": two short paragraphs diagnosing the organization across the three pillars, "leaders": one paragraph on what this means for leaders, closing on organizational responsibility}
 Keep the prose tight and economical.`;
 
 exports.handler = async (event) => {

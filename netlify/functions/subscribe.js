@@ -4,7 +4,7 @@
 //
 // Required env vars (Kit v3 sequence ids):
 //   KIT_API_KEY                Kit (ConvertKit) API key
-//   Org sequences (audit org mode + the institutional diagnostic):
+//   Org sequences (audit org mode + the organizational diagnostic):
 //     KIT_SEQ_COMPOUNDING, KIT_SEQ_DEPTH_TRAP, KIT_SEQ_STAGNANT, KIT_SEQ_FRAGILE
 //   Individual sequences (audit individual mode):
 //     KIT_SEQ_IND_COMPOUNDING, KIT_SEQ_IND_DEPTH_TRAP, KIT_SEQ_IND_STAGNANT, KIT_SEQ_IND_FRAGILE
@@ -17,7 +17,7 @@
 //
 // api.convertkit.com/v3/sequences/{id}/subscribe. Node 18+ (global fetch).
 
-// Maps a quadrant to its env-var suffix. Accepts both the institutional
+// Maps a quadrant to its env-var suffix. Accepts both the organizational
 // diagnostic's display names ("Compounding", "Depth Trap", ...) and the /audit
 // page's quadrant keys ("compound", "depth", "fragile", "stagnant"). Case-insensitive.
 const QUADRANT_SUFFIX = {
