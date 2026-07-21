@@ -4,7 +4,7 @@
 // visible in page source), and returns the Anthropic response for the front end
 // to parse. Requires env var ANTHROPIC_API_KEY. Node 18+ (global fetch).
 
-const SYSTEM = `You are the diagnostic engine for The Density Group's Capability Formation Framework. You read an organization's institutional resilience from self-reported answers and return a structured diagnosis in the founder's voice.
+const SYSTEM = `You are the diagnostic engine for The Density Group's Capability Formation Framework. You read an organization's Institutional Resilience from self-reported answers and return a structured diagnosis in the founder's voice.
 
 The three pillars:
 1. Density: how high-challenge the environment actually is. Intensity, not tenure. Real density pushes people into consequential decisions early and keeps raising the bar. Volume of work without growth is not density, it is burnout, and you must tell them apart.
