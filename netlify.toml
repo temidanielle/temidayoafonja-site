@@ -21,9 +21,16 @@
   status = 301
 
 [[redirects]]
-  from = "/audit"
-  to = "/audit.html"
+  from = "/diagnostic"
+  to = "/diagnostic.html"
   status = 200
+
+# Permanent. Published essays and emails point at /audit indefinitely; never remove.
+[[redirects]]
+  from = "/audit"
+  to = "/diagnostic"
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/fieldkit"
@@ -37,6 +44,6 @@
     X-Content-Type-Options = "nosniff"
 
 [[headers]]
-  for = "/audit.html"
+  for = "/diagnostic.html"
   [headers.values]
     Content-Security-Policy = "script-src 'self' 'unsafe-inline' https://formspree.io https://plausible.io"
