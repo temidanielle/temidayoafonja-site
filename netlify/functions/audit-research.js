@@ -40,7 +40,15 @@ exports.handler = async (event) => {
   const now = new Date();
   const consented = data.consent === true;
 
+  // Client-generated id, stable across the client's retry and localStorage resend.
+  // Used to deduplicate: the same submission never produces two rows (see write below).
+  const submissionId = (typeof data.submission_id === "string" && data.submission_id.trim())
+    ? data.submission_id.trim()
+    : null;
+
   const record = {
+    // ── dedup ─────────────────────────────────────────────────────
+    submission_id: submissionId,
     // ── timestamps ────────────────────────────────────────────────
     received_at_cst: chicagoStamp(now),   // date + time, America/Chicago (CST/CDT)
     received_at_utc: now.toISOString(),
@@ -69,10 +77,27 @@ exports.handler = async (event) => {
 
   try {
     const store = getStore("audit-research");
+
+    // Deduplicated path: when the client sends a submission_id, derive a deterministic
+    // key from it. If a record with that key already exists, skip the write so a retry
+    // or a localStorage resend can never create a second row. Return 200 either way so
+    // the client clears its stash. (Even if two identical requests race past the get,
+    // both target the same key, so at most one row survives.)
+    if (submissionId) {
+      const safeId = submissionId.replace(/[^A-Za-z0-9_-]/g, "");
+      const key = `sub_${safeId}`;
+      const existing = await store.get(key);
+      if (existing) {
+        return { statusCode: 200, headers: CORS, body: JSON.stringify({ ok: true, key, duplicate: true }) };
+      }
+      await store.setJSON(key, record);
+      return { statusCode: 200, headers: CORS, body: JSON.stringify({ ok: true, key }) };
+    }
+
+    // Fallback (no submission_id): original random, chronologically sortable key.
     const id = (globalThis.crypto && crypto.randomUUID)
       ? crypto.randomUUID()
       : `${now.getTime()}-${Math.floor(Math.random() * 1e9)}`;
-    // Key sorts chronologically and stays unique per submission.
     const key = `${now.toISOString().replace(/[:.]/g, "-")}__${id}`;
     await store.setJSON(key, record);
     return { statusCode: 200, headers: CORS, body: JSON.stringify({ ok: true, key }) };

@@ -1397,6 +1397,7 @@ function stateNamesList(keys){
 // Never allowed to throw into or delay the audit flow.
 var RESEARCH_ENDPOINT = "/.netlify/functions/audit-research";
 var RESEARCH_PENDING_PREFIX = "cf_pending_research_";
+var RESEARCH_PENDING_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000; // stashed payloads expire after 7 days
 
 // One POST attempt. Resolves true only on a confirmed 2xx, false on non-200 or network error.
 function postResearchOnce(payload){
@@ -1437,6 +1438,15 @@ function flushPendingResearch(){
       if(k && k.indexOf(RESEARCH_PENDING_PREFIX)===0) keys.push(k);
     }
     keys.forEach(function(k){
+      // Expire stale payloads first — they hold a name, email, and all twelve answers
+      // on the user's device. Drop anything older than 7 days whether or not it would send.
+      var tsPart = k.slice(RESEARCH_PENDING_PREFIX.length).split("_")[0];
+      var ts = parseInt(tsPart, 10);
+      if(!isNaN(ts) && (Date.now() - ts) > RESEARCH_PENDING_MAX_AGE_MS){
+        localStorage.removeItem(k);
+        console.info("[research] expired stale pending payload " + k);
+        return;
+      }
       var raw = localStorage.getItem(k);
       if(!raw){ return; }
       var payload;
@@ -1467,7 +1477,13 @@ function captureResearch(nameVal, emailVal){
       var b=individualBoundary(s.density, s.optionality);
       boundaryKeys = b ? b.keys : null;
     }
+    // Stable id for this submission. It is part of the payload, so the retry and any
+    // localStorage resend all carry the SAME id, letting the server deduplicate.
+    var submissionId = (window.crypto && crypto.randomUUID)
+      ? crypto.randomUUID()
+      : (Date.now() + "-" + Math.floor(Math.random() * 1e9));
     var payload = {
+      submission_id: submissionId,
       mode: currentMode,
       quadrant: stateKey,
       state: STATE_NAMES[stateKey] || stateKey,
