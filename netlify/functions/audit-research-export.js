@@ -13,7 +13,7 @@ function csvCell(v) {
 }
 
 const COLUMNS = [
-  "key",
+  "key", "submission_id",
   "received_at_cst", "received_at_utc", "timezone",
   "consent", "consent_flag",
   "mode", "quadrant",
@@ -27,6 +27,7 @@ function flatten(r) {
   const s = r.scores || {};
   return {
     key: r._key,
+    submission_id: r.submission_id,
     received_at_cst: r.received_at_cst,
     received_at_utc: r.received_at_utc,
     timezone: r.timezone,

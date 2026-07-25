@@ -482,6 +482,47 @@ nav { padding:16px 20px; }
     <div class="gate-form" style="margin-top:8px;">
       <input type="text"  class="gate-input" id="paperName"  placeholder="Your name">
       <input type="email" class="gate-input" id="paperEmail" placeholder="Email address *">
+      <div class="gate-optional-label">Optional &middot; for research context</div>
+      <select class="gate-select" id="researchIndustryPaper" aria-label="Industry (optional)">
+        <option value="">Industry (optional)</option>
+        <option>Consulting</option>
+        <option>Technology/SaaS</option>
+        <option>Healthcare/Life Sciences</option>
+        <option>Financial Services</option>
+        <option>Government/Public Sector</option>
+        <option>Education</option>
+        <option>Legal</option>
+        <option>Manufacturing/Operations</option>
+        <option>Nonprofit</option>
+        <option>Other</option>
+      </select>
+      <select class="gate-select" id="researchRolePaper" aria-label="Role level (optional)">
+        <option value="">Role level (optional)</option>
+        <option>Early career</option>
+        <option>Individual contributor</option>
+        <option>Manager</option>
+        <option>Senior leader/Executive</option>
+        <option>Founder/Self-employed</option>
+      </select>
+      <select class="gate-select" id="researchYearsPaper" aria-label="Years of experience (optional)">
+        <option value="">Years of experience (optional)</option>
+        <option>0-5</option>
+        <option>6-10</option>
+        <option>11-15</option>
+        <option>16-20</option>
+        <option>20+</option>
+      </select>
+      <select class="gate-select" id="researchOrgSizePaper" aria-label="Organization size (optional)">
+        <option value="">Organization size (optional)</option>
+        <option>Under 100</option>
+        <option>100-1,000</option>
+        <option>1,000-10,000</option>
+        <option>10,000+</option>
+      </select>
+      <label class="consent-line">
+        <input type="checkbox" id="researchConsentPaper">
+        <span class="consent-text">I agree that my anonymized responses may be included in aggregate research on capability formation. Individual responses are never published or shared.</span>
+      </label>
       <button class="btn-gate" id="paperSubmitBtn">See My Results &rarr;</button>
     </div>
     <button class="btn-skip" id="paperBackBtn">Back to the full diagnostic</button>
@@ -1179,7 +1220,9 @@ function renderQuestion() {
   // Progress label.
   var progText;
   if(currentMode==="individual"){
-    progText = (currentQ<12) ? ("Statement "+(currentQ+1)+" of 12") : "One last question, unscored";
+    if(currentQ<11)        progText = "Statement "+(currentQ+1)+" of 12";
+    else if(currentQ===11) progText = "Statement 12 of 12 · a short reflection follows";
+    else                   progText = "Closing reflection · unscored";
   } else {
     progText = "Question "+(currentQ+1)+" of 10";
   }
@@ -1352,13 +1395,80 @@ function stateNamesList(keys){
 }
 
 // ─── RESEARCH CAPTURE ────────────────────────────────────────────────────────
-// Isolated, fire-and-forget durable store. Does NOT touch the Formspree/Kit wire.
-// Never allowed to throw into the audit flow.
+// Isolated, durable store. Does NOT touch the Formspree/Kit wire.
+// Never allowed to throw into or delay the audit flow.
+var RESEARCH_ENDPOINT = "/.netlify/functions/audit-research";
+var RESEARCH_PENDING_PREFIX = "cf_pending_research_";
+var RESEARCH_PENDING_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000; // stashed payloads expire after 7 days
+
+// One POST attempt. Resolves true only on a confirmed 2xx, false on non-200 or network error.
+function postResearchOnce(payload){
+  return fetch(RESEARCH_ENDPOINT, {
+    method:"POST",
+    headers:{"Content-Type":"application/json"},
+    body:JSON.stringify(payload),
+    keepalive:true
+  }).then(function(r){ return !!(r && r.ok); }).catch(function(){ return false; });
+}
+
+// Durable send: try once, retry once after a short delay, then persist to localStorage
+// for a later resend. Fire-and-forget so the results screen is never blocked.
+function sendResearchDurable(payload){
+  postResearchOnce(payload).then(function(ok){
+    if(ok) return;
+    console.warn("[research] capture failed on first attempt; retrying once");
+    setTimeout(function(){
+      postResearchOnce(payload).then(function(ok2){
+        if(ok2){ console.info("[research] capture succeeded on retry"); return; }
+        try {
+          var key = RESEARCH_PENDING_PREFIX + Date.now() + "_" + Math.floor(Math.random()*1e6);
+          localStorage.setItem(key, JSON.stringify(payload));
+          console.warn("[research] retry failed; stored payload for later resend under " + key);
+        } catch(e){ console.warn("[research] could not persist pending payload", e); }
+      });
+    }, 1500);
+  });
+}
+
+// On load, resend any payloads stashed by a previous failed capture. A key is cleared
+// only after a confirmed 200, so nothing is lost if the resend also fails.
+function flushPendingResearch(){
+  try {
+    var keys = [];
+    for(var i=0;i<localStorage.length;i++){
+      var k = localStorage.key(i);
+      if(k && k.indexOf(RESEARCH_PENDING_PREFIX)===0) keys.push(k);
+    }
+    keys.forEach(function(k){
+      // Expire stale payloads first — they hold a name, email, and all twelve answers
+      // on the user's device. Drop anything older than 7 days whether or not it would send.
+      var tsPart = k.slice(RESEARCH_PENDING_PREFIX.length).split("_")[0];
+      var ts = parseInt(tsPart, 10);
+      if(!isNaN(ts) && (Date.now() - ts) > RESEARCH_PENDING_MAX_AGE_MS){
+        localStorage.removeItem(k);
+        console.info("[research] expired stale pending payload " + k);
+        return;
+      }
+      var raw = localStorage.getItem(k);
+      if(!raw){ return; }
+      var payload;
+      try { payload = JSON.parse(raw); } catch(e){ localStorage.removeItem(k); return; }
+      postResearchOnce(payload).then(function(ok){
+        if(ok){ localStorage.removeItem(k); console.info("[research] resent pending payload " + k); }
+        else { console.warn("[research] pending payload " + k + " still failing; will retry next load"); }
+      });
+    });
+  } catch(e){ /* flushing must never break the page */ }
+}
+
 function captureResearch(nameVal, emailVal){
   try {
     var s = getScores();
-    function v(id){ var el=document.getElementById(id); return el ? el.value : ""; }
-    var consentEl = document.getElementById("researchConsent");
+    // The paper path renders its own copies of the four dropdowns + consent, suffixed
+    // "Paper", so reads resolve to whichever screen the taker actually used.
+    var fieldSuffix = paperSave ? "Paper" : "";
+    function v(id){ var el=document.getElementById(id+fieldSuffix); return el ? el.value : ""; }
+    var consentEl = document.getElementById("researchConsent"+fieldSuffix);
     // Store every answer, not just totals. For individual, index 12 is the unscored reflective close.
     var responses = questions.map(function(q,i){
       return { n:i+1, section:q.section, score:answers[i], scored: !(currentMode==="individual" && i===12) };
@@ -1369,7 +1479,13 @@ function captureResearch(nameVal, emailVal){
       var b=individualBoundary(s.density, s.optionality);
       boundaryKeys = b ? b.keys : null;
     }
+    // Stable id for this submission. It is part of the payload, so the retry and any
+    // localStorage resend all carry the SAME id, letting the server deduplicate.
+    var submissionId = (window.crypto && crypto.randomUUID)
+      ? crypto.randomUUID()
+      : (Date.now() + "-" + Math.floor(Math.random() * 1e9));
     var payload = {
+      submission_id: submissionId,
       mode: currentMode,
       quadrant: stateKey,
       state: STATE_NAMES[stateKey] || stateKey,
@@ -1391,12 +1507,7 @@ function captureResearch(nameVal, emailVal){
       email: emailVal || "",
       client_completed_at: new Date().toISOString()
     };
-    fetch("/.netlify/functions/audit-research", {
-      method:"POST",
-      headers:{"Content-Type":"application/json"},
-      body:JSON.stringify(payload),
-      keepalive:true
-    }).catch(function(){});
+    sendResearchDurable(payload);
   } catch(e){ /* research capture must never break the audit */ }
 }
 
@@ -1443,17 +1554,34 @@ function scorePayload(){
   return { state:stateName, density:(s.d||0).toFixed(2), optionality:(s.o||0).toFixed(2), alumni_capital:(s.a||0).toFixed(2), result:"" };
 }
 
+// Modest email check: an @ with a dot after it and no spaces. Deliberately lenient
+// so unusual but valid addresses are not rejected.
+function validEmail(e){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e); }
+
 // ─── EVENTS ──────────────────────────────────────────────────────────────────
 document.addEventListener("DOMContentLoaded", function(){
+
+  // Resend any research payloads a previous session failed to store. Never blocks the UI.
+  flushPendingResearch();
+
+  // Clear the red validation outline the moment the user edits an email field.
+  ["pregateEmail","gateEmail","paperEmail"].forEach(function(id){
+    var el=document.getElementById(id);
+    if(el) el.addEventListener("input", function(){ el.style.borderColor=""; });
+  });
 
   document.getElementById("beginBtn").addEventListener("click", function(){ if(window.plausible) plausible("Audit Started"); show("pregate"); });
 
   document.getElementById("submitPregateBtn").addEventListener("click", function(){
-    var email=document.getElementById("pregateEmail").value.trim();
-    if(!email||!email.includes("@")){ document.getElementById("pregateEmail").style.borderColor="#c8503c"; document.getElementById("pregateEmail").focus(); return; }
+    var pregateEmailEl=document.getElementById("pregateEmail");
+    var email=pregateEmailEl.value.trim();
+    if(!validEmail(email)){ pregateEmailEl.style.borderColor="#c8503c"; pregateEmailEl.focus(); return; }
+    pregateEmailEl.style.borderColor="";
     pregateNameVal=document.getElementById("pregateName").value.trim();
     pregateEmailVal=email;
-    fetch("https://formspree.io/f/xjgapael",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify({name:pregateNameVal,email:pregateEmailVal,source:"audit_pregate",started_at:new Date().toISOString()})}).catch(function(){});
+    // Pre-gate no longer posts to Formspree. The details entered here are held in
+    // pregateNameVal / pregateEmailVal and carried into the CP2 completion payload,
+    // so the results email and Kit subscribe are unaffected.
     show("fork");
   });
 
@@ -1522,8 +1650,10 @@ document.addEventListener("DOMContentLoaded", function(){
     var name=document.getElementById("gateName").value.trim()||pregateNameVal;
     var org=document.getElementById("gateOrg").value.trim();
     var role=document.getElementById("gateRole").value.trim();
-    var email=document.getElementById("gateEmail").value.trim()||pregateEmailVal;
-    if(!email||!email.includes("@")){ document.getElementById("gateEmail").style.borderColor="#c8503c"; document.getElementById("gateEmail").focus(); return; }
+    var gateEmailEl=document.getElementById("gateEmail");
+    var email=gateEmailEl.value.trim()||pregateEmailVal;
+    if(!validEmail(email)){ gateEmailEl.style.borderColor="#c8503c"; gateEmailEl.focus(); return; }
+    gateEmailEl.style.borderColor="";
     var sp=scorePayload();
     fetch("https://formspree.io/f/xjgapael",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify({name:name,org:org,role:role,email:email,mode:currentMode,quadrant:getQKey(),state:sp.state,density:sp.density,optionality:sp.optionality,alumni_capital:sp.alumni_capital,result:sp.result,source:"capability_audit_complete",completed_at:new Date().toISOString()})}).catch(function(){});
     captureResearch(name, email);
@@ -1533,7 +1663,8 @@ document.addEventListener("DOMContentLoaded", function(){
 
   document.getElementById("skipGateBtn").addEventListener("click", function(){ captureResearch(pregateNameVal||"", pregateEmailVal||""); subscribeToKit(pregateEmailVal||"", getQKey(), "", pregateNameVal||""); showResults(pregateNameVal||""); });
 
-  ["researchIndustry","researchRole","researchYears","researchOrgSize"].forEach(function(id){
+  ["researchIndustry","researchRole","researchYears","researchOrgSize",
+   "researchIndustryPaper","researchRolePaper","researchYearsPaper","researchOrgSizePaper"].forEach(function(id){
     var el=document.getElementById(id);
     if(el) el.addEventListener("change", function(){ el.classList.toggle("filled", el.value!==""); });
   });
@@ -1548,8 +1679,8 @@ document.addEventListener("DOMContentLoaded", function(){
     var email=document.getElementById("ctaEmail").value.trim()||pregateEmailVal;
     var message=document.getElementById("ctaMessage").value.trim();
     var ef=document.getElementById("ctaEmail");
-    if(!email||!email.includes("@")){ ef.style.borderColor="#c8503c"; ef.focus(); return; }
-    ef.style.borderColor="rgba(139,160,180,0.3)";
+    if(!validEmail(email)){ ef.style.borderColor="#c8503c"; ef.focus(); return; }
+    ef.style.borderColor="";
     var sp=scorePayload();
     var btn=document.getElementById("ctaSendBtn"); btn.textContent="Sending..."; btn.disabled=true;
     fetch("https://formspree.io/f/xjgapael",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify({name:name,role:role,email:email,message:message,source:"results_contact_form",mode:currentMode,quadrant:getQKey(),state:sp.state,density:sp.density,optionality:sp.optionality,alumni_capital:sp.alumni_capital,completed_at:new Date().toISOString()})
@@ -1610,9 +1741,10 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     var emailEl=document.getElementById("paperEmail");
     var email=emailEl.value.trim();
-    if(!email||!email.includes("@")){ emailEl.style.borderColor="#c8503c"; ok=false; }
+    if(!validEmail(email)){ emailEl.style.borderColor="#c8503c"; ok=false; }
+    else { emailEl.style.borderColor=""; }
     if(!ok){
-      var firstBad=document.querySelector(".paper-input.invalid") || (!email||!email.includes("@")?emailEl:null);
+      var firstBad=document.querySelector(".paper-input.invalid") || (!validEmail(email)?emailEl:null);
       if(firstBad) firstBad.focus();
       return;
     }
