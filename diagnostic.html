@@ -1220,7 +1220,9 @@ function renderQuestion() {
   // Progress label.
   var progText;
   if(currentMode==="individual"){
-    progText = (currentQ<12) ? ("Statement "+(currentQ+1)+" of 12") : "One last question, unscored";
+    if(currentQ<11)        progText = "Statement "+(currentQ+1)+" of 12";
+    else if(currentQ===11) progText = "Statement 12 of 12 · a short reflection follows";
+    else                   progText = "Closing reflection · unscored";
   } else {
     progText = "Question "+(currentQ+1)+" of 10";
   }
@@ -1552,17 +1554,29 @@ function scorePayload(){
   return { state:stateName, density:(s.d||0).toFixed(2), optionality:(s.o||0).toFixed(2), alumni_capital:(s.a||0).toFixed(2), result:"" };
 }
 
+// Modest email check: an @ with a dot after it and no spaces. Deliberately lenient
+// so unusual but valid addresses are not rejected.
+function validEmail(e){ return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e); }
+
 // ─── EVENTS ──────────────────────────────────────────────────────────────────
 document.addEventListener("DOMContentLoaded", function(){
 
   // Resend any research payloads a previous session failed to store. Never blocks the UI.
   flushPendingResearch();
 
+  // Clear the red validation outline the moment the user edits an email field.
+  ["pregateEmail","gateEmail","paperEmail"].forEach(function(id){
+    var el=document.getElementById(id);
+    if(el) el.addEventListener("input", function(){ el.style.borderColor=""; });
+  });
+
   document.getElementById("beginBtn").addEventListener("click", function(){ if(window.plausible) plausible("Audit Started"); show("pregate"); });
 
   document.getElementById("submitPregateBtn").addEventListener("click", function(){
-    var email=document.getElementById("pregateEmail").value.trim();
-    if(!email||!email.includes("@")){ document.getElementById("pregateEmail").style.borderColor="#c8503c"; document.getElementById("pregateEmail").focus(); return; }
+    var pregateEmailEl=document.getElementById("pregateEmail");
+    var email=pregateEmailEl.value.trim();
+    if(!validEmail(email)){ pregateEmailEl.style.borderColor="#c8503c"; pregateEmailEl.focus(); return; }
+    pregateEmailEl.style.borderColor="";
     pregateNameVal=document.getElementById("pregateName").value.trim();
     pregateEmailVal=email;
     // Pre-gate no longer posts to Formspree. The details entered here are held in
@@ -1636,8 +1650,10 @@ document.addEventListener("DOMContentLoaded", function(){
     var name=document.getElementById("gateName").value.trim()||pregateNameVal;
     var org=document.getElementById("gateOrg").value.trim();
     var role=document.getElementById("gateRole").value.trim();
-    var email=document.getElementById("gateEmail").value.trim()||pregateEmailVal;
-    if(!email||!email.includes("@")){ document.getElementById("gateEmail").style.borderColor="#c8503c"; document.getElementById("gateEmail").focus(); return; }
+    var gateEmailEl=document.getElementById("gateEmail");
+    var email=gateEmailEl.value.trim()||pregateEmailVal;
+    if(!validEmail(email)){ gateEmailEl.style.borderColor="#c8503c"; gateEmailEl.focus(); return; }
+    gateEmailEl.style.borderColor="";
     var sp=scorePayload();
     fetch("https://formspree.io/f/xjgapael",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify({name:name,org:org,role:role,email:email,mode:currentMode,quadrant:getQKey(),state:sp.state,density:sp.density,optionality:sp.optionality,alumni_capital:sp.alumni_capital,result:sp.result,source:"capability_audit_complete",completed_at:new Date().toISOString()})}).catch(function(){});
     captureResearch(name, email);
@@ -1663,8 +1679,8 @@ document.addEventListener("DOMContentLoaded", function(){
     var email=document.getElementById("ctaEmail").value.trim()||pregateEmailVal;
     var message=document.getElementById("ctaMessage").value.trim();
     var ef=document.getElementById("ctaEmail");
-    if(!email||!email.includes("@")){ ef.style.borderColor="#c8503c"; ef.focus(); return; }
-    ef.style.borderColor="rgba(139,160,180,0.3)";
+    if(!validEmail(email)){ ef.style.borderColor="#c8503c"; ef.focus(); return; }
+    ef.style.borderColor="";
     var sp=scorePayload();
     var btn=document.getElementById("ctaSendBtn"); btn.textContent="Sending..."; btn.disabled=true;
     fetch("https://formspree.io/f/xjgapael",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify({name:name,role:role,email:email,message:message,source:"results_contact_form",mode:currentMode,quadrant:getQKey(),state:sp.state,density:sp.density,optionality:sp.optionality,alumni_capital:sp.alumni_capital,completed_at:new Date().toISOString()})
@@ -1725,9 +1741,10 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     var emailEl=document.getElementById("paperEmail");
     var email=emailEl.value.trim();
-    if(!email||!email.includes("@")){ emailEl.style.borderColor="#c8503c"; ok=false; }
+    if(!validEmail(email)){ emailEl.style.borderColor="#c8503c"; ok=false; }
+    else { emailEl.style.borderColor=""; }
     if(!ok){
-      var firstBad=document.querySelector(".paper-input.invalid") || (!email||!email.includes("@")?emailEl:null);
+      var firstBad=document.querySelector(".paper-input.invalid") || (!validEmail(email)?emailEl:null);
       if(firstBad) firstBad.focus();
       return;
     }
