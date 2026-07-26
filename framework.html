@@ -47,6 +47,9 @@
 .fw-intro-text { font-size: 17px; line-height: 1.85; color: var(--cream-70); margin-bottom: 16px; }
 .fw-equation-block { padding: 28px; border: 1px solid var(--gold-border); background: var(--gold-dim); text-align: center; }
 .fw-equation { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: var(--gold-light); line-height: 1.7; letter-spacing: 0.04em; }
+.fw-equation-produces { display: flex; align-items: center; justify-content: center; gap: 14px; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--slate); margin: 20px 0 16px; }
+.fw-equation-produces::before, .fw-equation-produces::after { content: ""; height: 1px; width: 36px; background: var(--gold-border); }
+.fw-equation-outcome { font-family: 'Cormorant Garamond', serif; font-size: 26px; color: var(--white); line-height: 1.25; letter-spacing: 0.03em; }
 .fw-equation-label { font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--slate); margin-top: 12px; }
 
 .pillars-section { padding: 0 48px 100px; position: relative; z-index: 1; }
@@ -118,7 +121,9 @@
       <p class="fw-intro-text fade-up delay-4">Built from eighteen years of practice across Big 4 consulting, global life sciences, and high-growth technology. Designed for leaders who understand that building people well is not separate from building organizations well. It is the same work.</p>
     </div>
     <div class="fw-equation-block fade-up delay-3">
-      <div class="fw-equation">Density<br>&darr;<br>Optionality<br>&darr;<br>Alumni Capital<br>&darr;<br>Institutional Resilience</div>
+      <div class="fw-equation">Density<br>&darr;<br>Optionality<br>&darr;<br>Alumni Capital</div>
+      <div class="fw-equation-produces">produces</div>
+      <div class="fw-equation-outcome">Institutional Resilience</div>
       <div class="fw-equation-label">in volatile markets</div>
     </div>
   </div>
