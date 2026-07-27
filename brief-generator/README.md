@@ -18,7 +18,16 @@ Two assets:
 pip install -r requirements.txt      # one time
 python3 generate.py                  # uses GROUND from the file (default: navy)
 python3 generate.py sand             # override the ground for this run
+
+# Per-edition cover (headline + edition are parameters; the name line is not):
+python3 generate.py navy --only cover \
+  --head1 "What Your Talent" --head2 "Systems Cannot See" \
+  --edition "EDITION TWO" --num 2
 ```
+
+`--only mark` / `--only cover` render just one asset. The headline splits across
+two lines (`--head1` / `--head2`) — pick a balanced split that keeps both lines
+inside wide margins.
 
 Every run prints a full verification report and a tuning table to stdout, and
 writes PNGs + a self-contained SVG per asset into `output/`. The previous

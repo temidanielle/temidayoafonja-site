@@ -656,14 +656,38 @@ def banner(txt):
     print("=" * 72)
 
 
-def main():
-    # GROUND defaults to the constant above; an optional CLI arg overrides it
-    # for convenience (e.g. `python3 generate.py sand`) without editing the file.
-    global GROUND
-    if len(sys.argv) > 1:
-        GROUND = sys.argv[1].strip().lower()
+def _parse_args(argv):
+    import argparse
+    p = argparse.ArgumentParser(
+        description="Render the BRIEF mark and/or per-edition cover.")
+    p.add_argument("ground", nargs="?", default=GROUND,
+                   help="navy | sand (default: the GROUND constant)")
+    # Per-edition parameters. The headline and edition strings change every
+    # edition; the name line never does and is not exposed here.
+    p.add_argument("--head1", default=S_HEAD_1, help="cover headline, line one")
+    p.add_argument("--head2", default=S_HEAD_2, help="cover headline, line two")
+    p.add_argument("--edition", default=S_EDITION, help="cover edition line, e.g. 'EDITION TWO'")
+    p.add_argument("--num", type=int, default=EDITION_NUM,
+                   help="edition number, for file naming")
+    p.add_argument("--only", choices=["mark", "cover"], default=None,
+                   help="render only one asset (default: both)")
+    return p.parse_args(argv)
+
+
+def main(argv=None):
+    global GROUND, S_HEAD_1, S_HEAD_2, S_EDITION, EDITION_NUM
+    args = _parse_args(sys.argv[1:] if argv is None else argv)
+
+    GROUND = args.ground.strip().lower()
     if GROUND not in THEMES:
         sys.exit(f"GROUND must be one of {sorted(THEMES)}, got {GROUND!r}")
+
+    # Apply per-edition overrides to the module globals the builders read, then
+    # keep the string-verification map in lock-step so the checks stay honest.
+    S_HEAD_1, S_HEAD_2, S_EDITION, EDITION_NUM = \
+        args.head1, args.head2, args.edition, args.num
+    EXPECTED.update(head_1=S_HEAD_1, head_2=S_HEAD_2, edition=S_EDITION)
+
     theme = THEMES[GROUND]
     tag = _date_tag()
 
@@ -671,7 +695,9 @@ def main():
     caps = Face(FONT_CAPS, FAMILY_CAPS)
     faces = {FAMILY_DISPLAY: display, FAMILY_CAPS: caps}
 
-    banner(f"BRIEF ASSET GENERATOR   ground={GROUND}   edition={EDITION_NUM}   date={tag}")
+    banner(f"BRIEF ASSET GENERATOR   ground={GROUND}   edition={EDITION_NUM} "
+           f"({S_EDITION})   date={tag}")
+    kinds = {"mark": ("Mark",), "cover": ("Cover",)}.get(args.only, ("Mark", "Cover"))
 
     # ---- font-resolution width check (shared by both assets) ----
     banner("FONT-RESOLUTION WIDTH CHECK")
@@ -692,10 +718,9 @@ def main():
 
     all_ok = True
     outputs = {}
-    for kind, builder, sizes in (
-        ("Mark", build_mark, MARK_SIZES),
-        ("Cover", build_cover, COVER_SIZES),
-    ):
+    builders = {"Mark": (build_mark, MARK_SIZES), "Cover": (build_cover, COVER_SIZES)}
+    for kind in kinds:
+        builder, sizes = builders[kind]
         banner(f"{kind.upper()}  —  verification")
         svg, rendered = builder(theme, display, caps)
 
@@ -732,7 +757,7 @@ def main():
     # ---- export ----
     banner("EXPORT")
     mark_base = None
-    for kind in ("Mark", "Cover"):
+    for kind in kinds:
         svg, sizes = outputs[kind]
         saved, svg_path, base = export(svg, kind, GROUND, sizes, tag)
         if kind == "Mark":
@@ -742,8 +767,9 @@ def main():
             print(f"  wrote {os.path.relpath(path, HERE)}{note}")
         print(f"  wrote {os.path.relpath(svg_path, HERE)}  (self-contained SVG)")
 
-    sheet = make_contact_sheet(mark_base, tag, GROUND)
-    print(f"  wrote {os.path.relpath(sheet, HERE)}  (40 next to 300 — the 40 is the real test)")
+    if mark_base is not None:
+        sheet = make_contact_sheet(mark_base, tag, GROUND)
+        print(f"  wrote {os.path.relpath(sheet, HERE)}  (40 next to 300 — the 40 is the real test)")
 
     print_tuning_table()
     banner("DONE — all strings, colours, ground, and font resolution verified.")
