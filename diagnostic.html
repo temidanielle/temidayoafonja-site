@@ -1352,9 +1352,9 @@ function showResults(name) {
     if(!isOrg){
       var b=individualBoundary(s.density, s.optionality);
       if(b){
-        bnote = "Your scores sit on a boundary. Density " + s.density + " of 30 and Optionality " + s.optionality +
-                " of 30 land close enough to the line that you could read as " + stateNamesList(b.keys) +
-                ". Hold both as live and let the next ninety days show you which one is true.";
+        bnote = "Density " + s.density + " of 30 and Optionality " + s.optionality +
+                " of 30: with either score between 17 and 21, even a high one, treat yourself as standing on the boundary and read the neighboring states in play: " + stateNamesList(b.keys) +
+                ". Hold them as live and let the next ninety days show you which one is true.";
       }
     }
     if(bnote){
