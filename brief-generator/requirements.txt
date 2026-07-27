@@ -1,0 +1,7 @@
+# Brief Asset Generator — Python dependencies
+#   pip install -r requirements.txt
+resvg-py>=0.1.6      # SVG -> PNG rasterizer (crisp, deterministic)
+uharfbuzz>=0.39.0    # text shaping (kerning / ligatures)
+fonttools>=4.60.0    # font loading, subsetting, glyph outlines
+brotli>=1.1.0        # woff2 (de)compression for fonttools
+Pillow>=10.0.0       # 4x -> target Lanczos downsampling
