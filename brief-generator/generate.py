@@ -671,11 +671,18 @@ def _parse_args(argv):
                    help="edition number, for file naming")
     p.add_argument("--only", choices=["mark", "cover"], default=None,
                    help="render only one asset (default: both)")
+    p.add_argument("--head-target", type=float, default=None,
+                   help="solve the headline display size so line one hits this "
+                        "many pixels of ink (keeps block widths comparable "
+                        "across editions)")
+    p.add_argument("--publish-date", default=None,
+                   help="YYYY-MM-DD used for file naming (the publish date, not "
+                        "the build date)")
     return p.parse_args(argv)
 
 
 def main(argv=None):
-    global GROUND, S_HEAD_1, S_HEAD_2, S_EDITION, EDITION_NUM
+    global GROUND, S_HEAD_1, S_HEAD_2, S_EDITION, EDITION_NUM, COVER_HEAD_SIZE
     args = _parse_args(sys.argv[1:] if argv is None else argv)
 
     GROUND = args.ground.strip().lower()
@@ -689,11 +696,25 @@ def main(argv=None):
     EXPECTED.update(head_1=S_HEAD_1, head_2=S_HEAD_2, edition=S_EDITION)
 
     theme = THEMES[GROUND]
-    tag = _date_tag()
 
     display = Face(FONT_DISPLAY, FAMILY_DISPLAY)
     caps = Face(FONT_CAPS, FAMILY_CAPS)
     faces = {FAMILY_DISPLAY: display, FAMILY_CAPS: caps}
+
+    # Solve the headline display size so line one lands on the target ink width.
+    # Ink scales linearly with size, so one measurement fixes the size exactly.
+    if args.head_target:
+        eff = COVER_HEAD_SIZE * theme["display_mult"]
+        ink0 = ShapedLine(display, S_HEAD_1, eff, COVER_HEAD_TRACKING).ink_width
+        COVER_HEAD_SIZE = COVER_HEAD_SIZE * args.head_target / ink0
+
+    # Publish date (not build date) drives the file names when given.
+    if args.publish_date:
+        y, m, d = (int(x) for x in args.publish_date.split("-"))
+        pd = date(y, m, d)
+        tag = f"{pd.strftime('%B')}{pd.day}_{pd.year}"
+    else:
+        tag = _date_tag()
 
     banner(f"BRIEF ASSET GENERATOR   ground={GROUND}   edition={EDITION_NUM} "
            f"({S_EDITION})   date={tag}")
