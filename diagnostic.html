@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Capability Formation Diagnostic · Temidayo Afonja</title>
-<meta name="description" content="The Capability Formation Diagnostic. Twelve statements for individuals, ten questions for organization leaders, about ten minutes. A diagnostic that maps your capability across Density, Optionality, and Alumni Capital.">
+<meta name="description" content="The Capability Formation Diagnostic. Twelve statements for individuals, ten questions for organization leaders, about ten minutes. A diagnostic that maps a career across Density and Optionality, and an organization across Alumni Capital.">
 <link rel="canonical" href="https://temidayoafonja.com/diagnostic">
 
 <!-- Open Graph / Twitter -->
@@ -343,7 +343,8 @@ nav { padding:16px 20px; }
         <span class="rationale-card-label">What You Will Receive</span>
         <div class="rationale-card-items">
           <div class="rationale-card-item">Quadrant placement across the Capability Formation Matrix</div>
-          <div class="rationale-card-item">Scored dimensions across Density, Optionality, and Alumni Capital</div>
+          <div class="rationale-card-item">Individuals: scored dimensions across Density and Optionality</div>
+          <div class="rationale-card-item">Organization leaders: scored dimensions including Alumni Capital</div>
           <div class="rationale-card-item">A diagnostic reading of your state and your exposure</div>
         </div>
       </div>
@@ -1160,6 +1161,12 @@ function renderQuestion() {
   var total=totalQuestions();
   document.getElementById("sectionLabel").textContent=q.label?q.label:q.section;
   document.getElementById("questionNumber").textContent=String(currentQ+1).padStart(2,"0");
+
+  // Live signal bar: individual path scores two axes (Density, Optionality); only the
+  // organization path measures Alumni Capital. Set pill visibility on every render so the
+  // Alumni Capital pill never shows during the individual flow, including before the first answer.
+  var alumniPillEl=document.getElementById("alumniPill");
+  if(alumniPillEl) alumniPillEl.style.display=(currentMode==="individual")?"none":"";
 
   // Preface: individual shows the framing line before statement 1; org uses q.preface.
   var pref=document.getElementById("questionPreface");
