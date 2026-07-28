@@ -25,6 +25,12 @@
   to = "/diagnostic.html"
   status = 200
 
+# Discreet pilot: clean URL for private sharing of the Executive Capability Portfolio.
+[[redirects]]
+  from = "/executive-portfolio"
+  to = "/executive-portfolio.html"
+  status = 200
+
 # Permanent. Published essays and emails point at /audit indefinitely; never remove.
 [[redirects]]
   from = "/audit"

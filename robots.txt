@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /dashboard.html
+Disallow: /executive-portfolio.html
 
 Sitemap: https://temidayoafonja.com/sitemap.xml
