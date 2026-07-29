@@ -90,6 +90,9 @@
   .opt label:hover{border-color:var(--gold);}
   .opt input:focus-visible + label{outline:2px solid var(--gold);outline-offset:2px;}
   .opt input:checked + label{border-color:var(--gold);background:var(--navy-lift);color:var(--sand);font-weight:500;box-shadow:inset 3px 0 0 var(--rust);}
+  .reflective-close{margin-top:14px;padding-top:24px;border-top:1px solid var(--navy-line);}
+  .reflect-eyebrow{font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);font-weight:500;margin:0 0 6px;}
+  .reflect-sub{font-size:13px;line-height:1.6;color:var(--sand-mute);margin:0 0 14px;}
 
   .context label{display:block;font-size:14px;font-weight:500;color:var(--sand);margin:0 0 8px;}
   textarea{width:100%;min-height:88px;resize:vertical;border:1px solid var(--navy-line);border-radius:10px;padding:12px 14px;font-family:inherit;font-size:14.5px;color:var(--sand);background:var(--navy-card);}
@@ -335,6 +338,29 @@ ctx.className="context q";
 ctx.innerHTML = `<label for="ctxBox">Anything else about how your organization builds and keeps capability? (optional)</label><textarea id="ctxBox" placeholder="A sentence or two of context helps the read."></textarea>`;
 formEl.appendChild(ctx);
 
+// ── Unscored reflective close (ported from the individual-mode synthesis item).
+// Rendered after the eleven scored pillars. Deliberately excluded from collect()
+// and from the answers array, so it can never enter Density, Optionality, or the
+// placement. Captured separately (Plausible prop + lead payload) for research.
+const REFLECTION_OPTS = [
+  {value:"by-accident",        text:"By accident entirely. Whatever capability exists here, we did not architect it and could not replicate it deliberately."},
+  {value:"programs-only",      text:"We have programs but no real system. Capability development is an initiative, not an operating principle."},
+  {value:"explicit-practices", text:"We have explicit practices that work. The design is real but it does not yet run through everything we do."},
+  {value:"systematic",         text:"Systematically. Capability formation is a design principle embedded in how we hire, develop, deploy, and exit people."}
+];
+const reflect = document.createElement("div");
+reflect.className="reflective-close q";
+reflect.innerHTML = `
+  <p class="reflect-eyebrow">One Last Question</p>
+  <p class="reflect-sub">Not scored. It is here because the answer is usually the most honest thing in the report.</p>
+  <p class="q-text">Honestly: does your organization build capability by design, or does it accumulate it by accident?</p>
+  <div class="opts">${REFLECTION_OPTS.map((o,i)=>`
+      <div class="opt">
+        <input type="radio" name="reflection" id="reflection_${i}" value="${o.value}">
+        <label for="reflection_${i}">${o.text}</label>
+      </div>`).join("")}</div>`;
+formEl.appendChild(reflect);
+
 const runBtn = document.getElementById("runBtn");
 const statusEl = document.getElementById("status");
 const resultEl = document.getElementById("result");
@@ -342,6 +368,7 @@ const reportEl = document.getElementById("report");
 const orgInput = document.getElementById("orgName");
 const sampleBtn = document.getElementById("sampleBtn");
 let lastDiagnosis = null;
+let lastReflection = "";
 
 function collect(){
   const answers=[];
@@ -484,7 +511,7 @@ async function submitGate(){
     const res = await fetch("/.netlify/functions/subscribe",{
       method:"POST",
       headers:{"Content-Type":"application/json"},
-      body:JSON.stringify({ email:email, org:org, quadrant: lastDiagnosis ? lastDiagnosis.quadrant : "" })
+      body:JSON.stringify({ email:email, org:org, quadrant: lastDiagnosis ? lastDiagnosis.quadrant : "", fields:{ reflection: lastReflection } })
     });
     if(res.ok && window.plausible){ plausible("Diagnostic Lead", {props:{quadrant: lastDiagnosis ? lastDiagnosis.quadrant : ""}}); }
     // Open the report regardless so the reader is never blocked from the value.
@@ -578,7 +605,10 @@ async function run(){
       parsed.quadrant = found;
     }
     statusEl.className="status"; statusEl.textContent="";
-    if(window.plausible){ plausible("Diagnostic Completed", {props:{quadrant: parsed.quadrant}}); }
+    // Unscored reflective close: captured for research, never fed into placement.
+    const reflEl = document.querySelector('input[name="reflection"]:checked');
+    lastReflection = reflEl ? reflEl.value : "";
+    if(window.plausible){ plausible("Diagnostic Completed", {props:{quadrant: parsed.quadrant, reflection: lastReflection || "(skipped)"}}); }
     renderResult(parsed);
   }catch(err){
     statusEl.className="status show err";
