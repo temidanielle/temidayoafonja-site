@@ -108,9 +108,14 @@ nav { position:fixed; top:0; left:0; right:0; z-index:9999; padding:18px 40px; d
 .intro-headline em { font-style:italic; color:#e8c97a; }
 .intro-sub { font-size:15px; color:rgba(245,240,232,0.6); letter-spacing:0.06em; margin-bottom:20px; }
 .intro-benchmark { font-size:16px; line-height:1.8; color:rgba(245,240,232,0.7); max-width:560px; margin-bottom:44px; font-style:italic; }
-.pillars { display:flex; gap:1px; margin-bottom:44px; flex-wrap:wrap; justify-content:center; }
-.pillar { padding:12px 22px; border:1px solid rgba(201,168,76,0.25); font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:#c9a84c; }
+.pillars { display:flex; gap:1px; margin-bottom:16px; flex-wrap:wrap; justify-content:center; align-items:stretch; }
+.pillar { padding:12px 22px; border:1px solid rgba(201,168,76,0.25); font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:#c9a84c; display:flex; align-items:center; }
 .pillar-arrow { padding:12px 8px; border-top:1px solid var(–gold-border); border-bottom:1px solid var(–gold-border); color:#c9a84c; font-size:11px; display:flex; align-items:center; }
+.pillar-principle { flex-direction:column; align-items:center; justify-content:center; gap:5px; padding:8px 22px; margin-left:10px; transition:border-color 0.2s ease; }
+.pillar-eyebrow { font-size:8px; font-weight:500; letter-spacing:0.22em; text-transform:uppercase; color:rgba(201,168,76,0.55); }
+.pillar-principle-label { color:#c9a84c; text-decoration:none; font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; }
+.pillar-principle:hover { border-color:#c9a84c; }
+.pillars-caption { width:100%; max-width:540px; margin:0 auto 44px; font-size:12px; line-height:1.65; color:rgba(245,240,232,0.5); text-align:center; }
 .rationale-block { width:100%; max-width:720px; margin-bottom:44px; }
 .rationale-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:2px; margin-bottom:2px; }
 .rationale-card { border:1px solid rgba(139,160,180,0.2); padding:24px 20px; text-align:left; }
@@ -327,8 +332,12 @@ nav { padding:16px 20px; }
     <div class="pillar-arrow">&rarr;</div>
     <div class="pillar">Optionality</div>
     <div class="pillar-arrow">&rarr;</div>
-    <div class="pillar">Alumni Capital</div>
+    <div class="pillar pillar-principle">
+      <span class="pillar-eyebrow">Principle 06</span>
+      <a class="pillar-principle-label" href="/principles.html#principle-06">Alumni Capital</a>
+    </div>
   </div>
+  <p class="pillars-caption">Density and Optionality are the two axes you are scored on. Alumni Capital is read alongside them, and it is Principle 06.</p>
   <div class="rationale-block">
     <div class="rationale-grid">
       <div class="rationale-card">
@@ -343,7 +352,7 @@ nav { padding:16px 20px; }
         <span class="rationale-card-label">What You Will Receive</span>
         <div class="rationale-card-items">
           <div class="rationale-card-item">Quadrant placement across the Capability Formation Matrix</div>
-          <div class="rationale-card-item">Scored dimensions across Density, Optionality, and Alumni Capital</div>
+          <div class="rationale-card-item">Scored on Density and Optionality, the two axes that set your quadrant. Alumni Capital is read separately and does not move your placement.</div>
           <div class="rationale-card-item">A diagnostic reading of your state and your exposure</div>
         </div>
       </div>
