@@ -566,8 +566,16 @@ async function run(){
       parsed = JSON.parse(m[0]);
     }
     if(!QUADRANT_POS[parsed.quadrant]){
+      // Normalize a close-but-not-exact quadrant string (e.g. "The Depth Trap").
+      // If it matches none of the four canonical states, fail explicitly rather
+      // than coercing to a default state. Returning the most flattering answer
+      // ("Compounding") on an unrecognized read is worse than returning nothing.
       const found = GRID_ORDER.find(q=>parsed.quadrant && parsed.quadrant.toLowerCase().includes(q.toLowerCase()));
-      parsed.quadrant = found || "Compounding";
+      if(!found){
+        if(window.plausible){ plausible("Diagnostic Quadrant Unrecognized", {props:{quadrant: String(parsed.quadrant||"(empty)").slice(0,60)}}); }
+        throw new Error("unrecognized quadrant");
+      }
+      parsed.quadrant = found;
     }
     statusEl.className="status"; statusEl.textContent="";
     if(window.plausible){ plausible("Diagnostic Completed", {props:{quadrant: parsed.quadrant}}); }
