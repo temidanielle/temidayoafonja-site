@@ -25,11 +25,13 @@ Return ONLY a JSON object. No markdown, no code fences, no preamble. Exactly the
 {"headline": one plain sentence naming what this organization is, "read": two short paragraphs diagnosing the organization across the three pillars, "leaders": one paragraph on what this means for leaders, closing on organizational responsibility}
 Keep the prose tight and economical.`;
 
-// Per-IP rate limit: 5 calls per rolling hour, backed by Netlify Blobs (already a
+// Per-IP rate limit: 25 calls per rolling hour, backed by Netlify Blobs (already a
 // project dependency; used by the other functions). No auth, no captcha, no new
 // dependency. Fails open on any store error so a legitimate read is never blocked.
+// 25/hour lets a full leadership team run the instrument from one shared corporate
+// IP in a sitting, while capping abuse at roughly fifty cents an hour per IP.
 const { getStore } = require("@netlify/blobs");
-const RATE_MAX = 5;
+const RATE_MAX = 25;
 const RATE_WINDOW_MS = 60 * 60 * 1000;
 async function isRateLimited(ip) {
   if (!ip) return false;
