@@ -688,6 +688,10 @@ nav { padding:16px 20px; }
 <script>
 // ─── DATA ────────────────────────────────────────────────────────────────────
 
+// RETIRED 2026-07-29. questionsOrg / quadrantDataOrg / summaryDataOrg powered the
+// in-page org-leader mode, now retired in favor of /organizational-diagnostic.
+// Kept live and unreferenced as the source for a future v1.1 and as the origin of
+// the standard fallback readings now ported into organizational-diagnostic.html.
 var questionsOrg = [
   {section:"Density",preface:null,text:"When your people face problems that have no established playbook inside this organization, what happens?",options:[
     {text:"We redirect them to what we know. Novel problems make us uncomfortable.",score:1},
@@ -1621,6 +1625,10 @@ document.addEventListener("DOMContentLoaded", function(){
     show("audit"); renderQuestion();
   });
 
+  // RETIRED 2026-07-29. The in-page org-leader mode is retired; the surviving
+  // organizational instrument is /organizational-diagnostic. setupOrg, questionsOrg,
+  // quadrantDataOrg and summaryDataOrg are kept in place, unreferenced, as the
+  // source for a future v1.1. Do not wire new entry points to setupOrg.
   function setupOrg(){
     currentMode="org"; paperSave=false; questions=questionsOrg; quadrantData=quadrantDataOrg; summaryData=summaryDataOrg;
     currentQ=0; answers=new Array(10).fill(null);
@@ -1629,26 +1637,27 @@ document.addEventListener("DOMContentLoaded", function(){
   }
 
   document.getElementById("forkOrg").addEventListener("click", function(){
+    // Retired 2026-07-29: org leaders now go to the standalone Organizational
+    // Diagnostic. Fork card copy and UI are unchanged; only the destination is.
     if(window.plausible) plausible("Audience Fork Selected", {props:{mode:"Org Leader"}});
-    setupOrg();
-    show("orgIntro");
+    window.location.href = "/organizational-diagnostic";
   });
 
+  // Retired 2026-07-29: orgIntroStart drove the in-page org flow, now unreachable.
   document.getElementById("orgIntroStart").addEventListener("click", function(){
     show("audit"); renderQuestion();
   });
 
-  // Deep link: /diagnostic?audience=org opens the Organization Leader diagnostic directly.
+  // Deep link retired 2026-07-29: /diagnostic?audience=org redirects to the standalone
+  // Organizational Diagnostic (also enforced server-side in netlify.toml).
   if(new URLSearchParams(window.location.search).get("audience")==="org"){
-    if(window.plausible){ plausible("Audit Started"); plausible("Audience Fork Selected", {props:{mode:"Org Leader"}}); }
-    setupOrg();
-    show("orgIntro");
+    window.location.replace("/organizational-diagnostic");
   }
 
   document.getElementById("switchModeBtn").addEventListener("click", function(){
-    if(currentMode==="individual"){ setupOrg(); }
-    else { setupIndividual(); }
-    renderQuestion();
+    // Retired 2026-07-29: in-page org mode retired. This toggle now sends org
+    // leaders to the standalone Organizational Diagnostic.
+    window.location.href = "/organizational-diagnostic";
   });
 
   document.getElementById("btnNext").addEventListener("click", function(){
