@@ -134,6 +134,7 @@
   .lvl:last-child{border-right:0;}
   .lvl .ln{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--sand-mute);margin:0 0 6px;}
   .lvl .lv{font-family:"Cormorant Garamond",serif;font-size:22px;color:var(--gold);text-transform:capitalize;}
+  .levels-note{font-size:12px;line-height:1.6;color:var(--sand-mute);margin:12px 0 0;max-width:56ch;}
 
   .read{margin-top:34px;}
   .read p{font-size:16px;color:var(--sand-dim);margin:0 0 18px;}
@@ -186,6 +187,7 @@
   .rd-lvl:last-child{border-right:0;}
   .rd-lvl .ln{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#7a8090;margin:0 0 5px;}
   .rd-lvl .lv{font-family:"Cormorant Garamond",serif;font-size:20px;color:var(--navy);text-transform:capitalize;}
+  .rd-levels-note{font-size:12px;line-height:1.55;color:#7a8090;margin:10px 0 0;max-width:62ch;}
   .rd-read p{font-size:14.5px;color:#33384a;line-height:1.65;margin:0 0 14px;}
   .rd-leaders{background:var(--sand-deep);border-left:3px solid var(--rust);border-radius:0 10px 10px 0;padding:18px 20px;margin:6px 0 24px;}
   .rd-leaders .lh{font-family:"Cormorant Garamond",serif;font-size:19px;color:var(--navy);margin:0 0 8px;}
@@ -227,7 +229,7 @@
     </a>
   </div>
   <h1>The Organizational Diagnostic</h1>
-  <p class="lede">Eleven questions read your organization across density, optionality, and alumni capital, then place you in the matrix and tell you what your position is actually costing or compounding.</p>
+  <p class="lede">Eleven questions read your organization on density and optionality, the two axes that place you in the matrix, and measure alumni capital separately. Then they tell you what your position is actually costing or compounding.</p>
 
   <hr class="rule" />
 
@@ -407,6 +409,7 @@ function renderResult(d){
         <div class="lvl"><p class="ln">Optionality</p><div class="lv">${esc(d.optionality)}</div></div>
         <div class="lvl"><p class="ln">Alumni Capital</p><div class="lv">${esc(d.alumniCapital)}</div></div>
       </div>
+      <p class="levels-note">Density and optionality set the position in the matrix. Alumni capital is measured separately and does not move it.</p>
     </div>
     <div class="read">
       <div class="read-body">${paras(d.read)}</div>
@@ -514,6 +517,7 @@ function buildReport(d, org){
       <div class="rd-lvl"><p class="ln">Optionality</p><div class="lv">${esc(d.optionality)}</div></div>
       <div class="rd-lvl"><p class="ln">Alumni Capital</p><div class="lv">${esc(d.alumniCapital)}</div></div>
     </div>
+    <p class="rd-levels-note">Density and optionality set the position in the matrix. Alumni capital is measured separately and does not move it.</p>
     <div class="rd-read">${paras(d.read)}</div>
     <div class="rd-leaders"><p class="lh">What this means for leaders</p>${paras(d.leaders)}</div>
     <p class="rd-equation">Density to Optionality to Alumni Capital produces Institutional Resilience.</p>

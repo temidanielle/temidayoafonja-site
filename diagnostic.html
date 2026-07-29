@@ -240,6 +240,10 @@ border-color: rgba(201,168,76,0.5) !important;
 .results-sub { font-size:13px; letter-spacing:0.14em; text-transform:uppercase; color:#8ba0b4; text-align:center; margin-bottom:32px; }
 .results-celebration { font-size:16px; line-height:1.7; color:rgba(245,240,232,0.8); max-width:560px; margin:0 auto 36px; font-style:italic; border-left:2px solid var(–gold); padding-left:20px; text-align:left; }
 .score-cards { display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; margin-bottom:36px; }
+.score-cards-org { display:block; }
+.score-axis-pair { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px; }
+.score-alumni-note { font-size:12px; line-height:1.65; color:rgba(245,240,232,0.5); margin-top:10px; }
+.score-alumni-note a { color:#c9a84c; text-decoration:none; }
 .score-card { border:1px solid rgba(139,160,180,0.2); padding:20px 18px; }
 .score-card-label { font-size:10px; letter-spacing:0.18em; text-transform:uppercase; color:#8ba0b4; margin-bottom:8px; }
 .score-card-val { font-family:‘Cormorant Garamond’,serif; font-size:36px; color:#f5f0e8; margin-bottom:4px; }
@@ -337,7 +341,7 @@ nav { padding:16px 20px; }
       <a class="pillar-principle-label" href="/principles.html#principle-06">Alumni Capital</a>
     </div>
   </div>
-  <p class="pillars-caption">Density and Optionality are the two axes you are scored on. Alumni Capital is read alongside them, and it is Principle 06.</p>
+  <p class="pillars-caption">Density and Optionality are the two axes you are scored on. Alumni Capital is measured separately and does not move your placement. It is Principle 06.</p>
   <div class="rationale-block">
     <div class="rationale-grid">
       <div class="rationale-card">
@@ -642,6 +646,7 @@ nav { padding:16px 20px; }
       <div class="cta-box" id="orgOfferBox" style="display:none;">
         <div class="cta-box-title">Your Next Step: The AI Capability Readiness Diagnostic</div>
         <div class="cta-box-sub">You have seen where your organization sits. The AI Capability Readiness Diagnostic turns that read into a plan. Your leadership team takes the full assessment, a deeper version of what you just completed, then receives an interpreted capability read, a leadership working session, and a prioritized action map for absorbing AI driven change without losing Institutional Resilience. Built on the Capability Formation Framework.</div>
+        <div class="cta-box-sub" style="margin-top:12px;padding-top:12px;border-top:1px solid rgba(201,168,76,0.2);font-size:13px;color:rgba(245,240,232,0.6);">This is a separate instrument from the Capability Formation Diagnostic, focused specifically on absorbing AI-driven change.</div>
         <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;">
           <a href="ai-capability-readiness.html" style="display:inline-block;background:#c9a84c !important;color:#0f2347 !important;padding:14px 32px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;-webkit-text-fill-color:#0f2347 !important;">See the Diagnostic &rarr;</a>
           <span style="font-size:13px;color:rgba(245,240,232,0.45);">or</span>
@@ -1327,16 +1332,22 @@ function showResults(name) {
     var dS=s.density, oS=s.optionality;
     var sc='<div class="score-card"><div class="score-card-label">Density</div><div class="score-card-val">'+dS+'</div><div class="score-card-desc">'+(dS>=IND_HIGH?"High":"Low")+' · out of 30</div></div>';
     sc+='<div class="score-card"><div class="score-card-label">Optionality</div><div class="score-card-val">'+oS+'</div><div class="score-card-desc">'+(oS>=IND_HIGH?"High":"Low")+' · out of 30</div></div>';
-    document.getElementById("scoreCards").innerHTML=sc;
+    var elInd=document.getElementById("scoreCards");
+    elInd.className="score-cards";
+    elInd.innerHTML=sc;
   } else {
     var dS=s.d||0, oS=s.o||0, aS=s.a||0;
     var dL=dS>=3.5?"Dense":dS>=2.5?"Moderate":dS>=1.5?"Thin":"Low";
     var oL=oS>=3.5?"Expanding":oS>=2.5?"Moderate":oS>=1.5?"Narrowing":"Constrained";
     var aL=aS>=3.5?"Strategic":aS>=2.5?"Active":aS>=1.5?"Passive":"Untapped";
-    var sc='<div class="score-card"><div class="score-card-label">Density</div><div class="score-card-val">'+dS.toFixed(1)+'</div><div class="score-card-desc">'+dL+' · out of 4.0</div></div>';
-    sc+='<div class="score-card"><div class="score-card-label">Optionality</div><div class="score-card-val">'+oS.toFixed(1)+'</div><div class="score-card-desc">'+oL+' · out of 4.0</div></div>';
-    sc+='<div class="score-card"><div class="score-card-label">Alumni Capital</div><div class="score-card-val">'+aS.toFixed(1)+'</div><div class="score-card-desc">'+aL+' · out of 4.0</div></div>';
-    document.getElementById("scoreCards").innerHTML=sc;
+    var densityCard='<div class="score-card"><div class="score-card-label">Density</div><div class="score-card-val">'+dS.toFixed(1)+'</div><div class="score-card-desc">'+dL+' · out of 4.0</div></div>';
+    var optionalityCard='<div class="score-card"><div class="score-card-label">Optionality</div><div class="score-card-val">'+oS.toFixed(1)+'</div><div class="score-card-desc">'+oL+' · out of 4.0</div></div>';
+    var alumniCard='<div class="score-card"><div class="score-card-label">Alumni Capital</div><div class="score-card-val">'+aS.toFixed(1)+'</div><div class="score-card-desc">'+aL+' · out of 4.0</div></div>';
+    var sc='<div class="score-axis-pair">'+densityCard+optionalityCard+'</div>';
+    sc+='<div class="score-alumni">'+alumniCard+'<p class="score-alumni-note">Density and Optionality set your quadrant. Alumni Capital is measured separately and does not move it. It is <a href="/principles.html#principle-06">Principle 06</a>.</p></div>';
+    var elOrg=document.getElementById("scoreCards");
+    elOrg.className="score-cards score-cards-org";
+    elOrg.innerHTML=sc;
   }
 
   document.getElementById("resultsDiagnosis").textContent=qd.diagnosis;
