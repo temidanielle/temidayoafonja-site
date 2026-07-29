@@ -20,6 +20,18 @@
   to = "/organizational-diagnostic.html"
   status = 301
 
+# Retired 2026-07-29: the in-page org-leader mode moved to /organizational-diagnostic.
+# This query-conditioned rule must precede the generic /diagnostic rewrite below.
+# Permanent, because the ?audience=org deep link may have been shared outside this
+# repo (same reasoning as /audit); a repoint alone would not catch old inbound links.
+[[redirects]]
+  from = "/diagnostic"
+  to = "/organizational-diagnostic"
+  status = 301
+  force = true
+  [redirects.query]
+    audience = "org"
+
 [[redirects]]
   from = "/diagnostic"
   to = "/diagnostic.html"

@@ -90,6 +90,9 @@
   .opt label:hover{border-color:var(--gold);}
   .opt input:focus-visible + label{outline:2px solid var(--gold);outline-offset:2px;}
   .opt input:checked + label{border-color:var(--gold);background:var(--navy-lift);color:var(--sand);font-weight:500;box-shadow:inset 3px 0 0 var(--rust);}
+  .reflective-close{margin-top:14px;padding-top:24px;border-top:1px solid var(--navy-line);}
+  .reflect-eyebrow{font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);font-weight:500;margin:0 0 6px;}
+  .reflect-sub{font-size:13px;line-height:1.6;color:var(--sand-mute);margin:0 0 14px;}
 
   .context label{display:block;font-size:14px;font-weight:500;color:var(--sand);margin:0 0 8px;}
   textarea{width:100%;min-height:88px;resize:vertical;border:1px solid var(--navy-line);border-radius:10px;padding:12px 14px;font-family:inherit;font-size:14.5px;color:var(--sand);background:var(--navy-card);}
@@ -135,6 +138,8 @@
   .lvl .ln{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--sand-mute);margin:0 0 6px;}
   .lvl .lv{font-family:"Cormorant Garamond",serif;font-size:22px;color:var(--gold);text-transform:capitalize;}
   .levels-note{font-size:12px;line-height:1.6;color:var(--sand-mute);margin:12px 0 0;max-width:56ch;}
+  .boundary-note{font-size:13px;line-height:1.6;color:var(--sand);margin:14px 0 0;padding:12px 15px;border:1px solid var(--gold);border-radius:10px;background:rgba(201,168,76,.08);max-width:60ch;}
+  .standard-note{font-size:12.5px;line-height:1.6;color:var(--sand-mute);margin:0 0 16px;font-style:italic;}
 
   .read{margin-top:34px;}
   .read p{font-size:16px;color:var(--sand-dim);margin:0 0 18px;}
@@ -188,6 +193,8 @@
   .rd-lvl .ln{font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#7a8090;margin:0 0 5px;}
   .rd-lvl .lv{font-family:"Cormorant Garamond",serif;font-size:20px;color:var(--navy);text-transform:capitalize;}
   .rd-levels-note{font-size:12px;line-height:1.55;color:#7a8090;margin:10px 0 0;max-width:62ch;}
+  .rd-boundary-note{font-size:12.5px;line-height:1.55;color:#33384a;margin:10px 0 0;padding:10px 13px;border:1px solid var(--gold);border-radius:8px;max-width:62ch;}
+  .rd-standard-note{font-size:12px;line-height:1.55;color:#7a8090;margin:10px 0 0;font-style:italic;}
   .rd-read p{font-size:14.5px;color:#33384a;line-height:1.65;margin:0 0 14px;}
   .rd-leaders{background:var(--sand-deep);border-left:3px solid var(--rust);border-radius:0 10px 10px 0;padding:18px 20px;margin:6px 0 24px;}
   .rd-leaders .lh{font-family:"Cormorant Garamond",serif;font-size:19px;color:var(--navy);margin:0 0 8px;}
@@ -252,6 +259,15 @@
 </div>
 
 <script>
+/* ─────────────────────────────────────────────────────────────────────────
+   Organizational Instrument v1.0. Frozen 2026-07-29. Eleven scored items plus
+   one unscored reflective close. Placement is deterministic and computed
+   client-side: an axis is HIGH only when its mean is strictly greater than 2.0
+   (exactly 2.0 is LOW). A position is a boundary reading when a single one-option
+   change would cross the 2.0 threshold, computed from item count, not a fixed
+   band. Any change to item wording, count, or scoring creates v1.1, and data
+   from different versions does not merge.
+   ───────────────────────────────────────────────────────────────────────── */
 const PILLARS = [
   {
     key:"density", name:"Density", tag:"Intensity, not tenure.",
@@ -295,13 +311,20 @@ const PILLARS = [
   }
 ];
 
+// ── Single source of truth for the four canonical quadrant strings (1f).
+// Placement, the matrix, and the fallback all derive from Q, so the four names
+// cannot desync anywhere on this page. Placement is now computed client-side and
+// the model no longer emits a quadrant, so the prompt carries no quadrant enum
+// to drift from either.
+const Q = { compounding:"Compounding", depthTrap:"Depth Trap", stagnant:"Stagnant", fragile:"Fragile" };
+const GRID_ORDER = [Q.depthTrap, Q.compounding, Q.stagnant, Q.fragile];
 const QUADRANT_POS = {
-  "Depth Trap":   {row:0,col:0, code:"High density / Low optionality"},
-  "Compounding":  {row:0,col:1, code:"High density / High optionality"},
-  "Stagnant":     {row:1,col:0, code:"Low density / Low optionality"},
-  "Fragile":      {row:1,col:1, code:"Low density / High optionality"}
+  [Q.depthTrap]:   {row:0,col:0, code:"High density / Low optionality"},
+  [Q.compounding]: {row:0,col:1, code:"High density / High optionality"},
+  [Q.stagnant]:    {row:1,col:0, code:"Low density / Low optionality"},
+  [Q.fragile]:     {row:1,col:1, code:"Low density / High optionality"}
 };
-const GRID_ORDER = ["Depth Trap","Compounding","Stagnant","Fragile"];
+function quadrantFor(dHigh, oHigh){ return dHigh ? (oHigh?Q.compounding:Q.depthTrap) : (oHigh?Q.fragile:Q.stagnant); }
 
 const SAMPLE = {
   quadrant:"Depth Trap", density:"high", optionality:"low", alumniCapital:"moderate",
@@ -320,9 +343,10 @@ PILLARS.forEach(p=>{
   p.questions.forEach(q=>{
     const qd = document.createElement("div");
     qd.className="q";
+    // Options are authored worst -> best in order, so weight = index + 1 (1..3).
     let opts = q.options.map((o,i)=>`
       <div class="opt">
-        <input type="radio" name="${q.id}" id="${q.id}_${i}" value="${o.replace(/"/g,'&quot;')}">
+        <input type="radio" name="${q.id}" id="${q.id}_${i}" value="${o.replace(/"/g,'&quot;')}" data-weight="${i+1}">
         <label for="${q.id}_${i}">${o}</label>
       </div>`).join("");
     qd.innerHTML = `<p class="q-text">${q.text}</p><div class="opts">${opts}</div>`;
@@ -335,6 +359,29 @@ ctx.className="context q";
 ctx.innerHTML = `<label for="ctxBox">Anything else about how your organization builds and keeps capability? (optional)</label><textarea id="ctxBox" placeholder="A sentence or two of context helps the read."></textarea>`;
 formEl.appendChild(ctx);
 
+// ── Unscored reflective close (ported from the individual-mode synthesis item).
+// Rendered after the eleven scored pillars. Deliberately excluded from collect()
+// and from the answers array, so it can never enter Density, Optionality, or the
+// placement. Captured separately (Plausible prop + lead payload) for research.
+const REFLECTION_OPTS = [
+  {value:"by-accident",        text:"By accident entirely. Whatever capability exists here, we did not architect it and could not replicate it deliberately."},
+  {value:"programs-only",      text:"We have programs but no real system. Capability development is an initiative, not an operating principle."},
+  {value:"explicit-practices", text:"We have explicit practices that work. The design is real but it does not yet run through everything we do."},
+  {value:"systematic",         text:"Systematically. Capability formation is a design principle embedded in how we hire, develop, deploy, and exit people."}
+];
+const reflect = document.createElement("div");
+reflect.className="reflective-close q";
+reflect.innerHTML = `
+  <p class="reflect-eyebrow">One Last Question</p>
+  <p class="reflect-sub">Not scored. It is here because the answer is usually the most honest thing in the report.</p>
+  <p class="q-text">Honestly: does your organization build capability by design, or does it accumulate it by accident?</p>
+  <div class="opts">${REFLECTION_OPTS.map((o,i)=>`
+      <div class="opt">
+        <input type="radio" name="reflection" id="reflection_${i}" value="${o.value}">
+        <label for="reflection_${i}">${o.text}</label>
+      </div>`).join("")}</div>`;
+formEl.appendChild(reflect);
+
 const runBtn = document.getElementById("runBtn");
 const statusEl = document.getElementById("status");
 const resultEl = document.getElementById("result");
@@ -342,6 +389,7 @@ const reportEl = document.getElementById("report");
 const orgInput = document.getElementById("orgName");
 const sampleBtn = document.getElementById("sampleBtn");
 let lastDiagnosis = null;
+let lastReflection = "";
 
 function collect(){
   const answers=[];
@@ -410,8 +458,10 @@ function renderResult(d){
         <div class="lvl"><p class="ln">Alumni Capital</p><div class="lv">${esc(d.alumniCapital)}</div></div>
       </div>
       <p class="levels-note">Density and optionality set the position in the matrix. Alumni capital is measured separately and does not move it.</p>
+      ${d.boundary ? `<p class="boundary-note">${esc(boundaryNote(d))}</p>` : ""}
     </div>
     <div class="read">
+      ${d.standard ? `<p class="standard-note">Standard reading. The live read was briefly unavailable, so this is the standard reading for your position. Your placement is unchanged.</p>` : ""}
       <div class="read-body">${paras(d.read)}</div>
       <div class="leaders">
         <p class="lh">What this means for leaders</p>
@@ -484,7 +534,7 @@ async function submitGate(){
     const res = await fetch("/.netlify/functions/subscribe",{
       method:"POST",
       headers:{"Content-Type":"application/json"},
-      body:JSON.stringify({ email:email, org:org, quadrant: lastDiagnosis ? lastDiagnosis.quadrant : "" })
+      body:JSON.stringify({ email:email, org:org, quadrant: lastDiagnosis ? lastDiagnosis.quadrant : "", fields:{ reflection: lastReflection } })
     });
     if(res.ok && window.plausible){ plausible("Diagnostic Lead", {props:{quadrant: lastDiagnosis ? lastDiagnosis.quadrant : ""}}); }
     // Open the report regardless so the reader is never blocked from the value.
@@ -518,6 +568,8 @@ function buildReport(d, org){
       <div class="rd-lvl"><p class="ln">Alumni Capital</p><div class="lv">${esc(d.alumniCapital)}</div></div>
     </div>
     <p class="rd-levels-note">Density and optionality set the position in the matrix. Alumni capital is measured separately and does not move it.</p>
+    ${d.boundary ? `<p class="rd-boundary-note">${esc(boundaryNote(d))}</p>` : ""}
+    ${d.standard ? `<p class="rd-standard-note">Standard reading. The live read was briefly unavailable, so this is the standard reading for your position. Placement is unchanged.</p>` : ""}
     <div class="rd-read">${paras(d.read)}</div>
     <div class="rd-leaders"><p class="lh">What this means for leaders</p>${paras(d.leaders)}</div>
     <p class="rd-equation">Density to Optionality to Alumni Capital produces Institutional Resilience.</p>
@@ -535,6 +587,72 @@ function buildReport(d, org){
   reportEl.scrollIntoView({behavior:"smooth",block:"start"});
 }
 
+// ── Deterministic client-side scorer (Organizational Instrument v1.0). ───────
+// Density = mean of 4 items, Optionality = mean of 3, each option weighted 1..3.
+// An axis is HIGH only when its mean is strictly greater than 2.0 (exactly 2.0
+// is LOW). Alumni Capital is measured but never moves placement.
+function levelDO(m){ return m <= 2.0 ? "low" : (m < 2.5 ? "moderate" : "high"); }
+function levelA(m){ return m < 1.67 ? "low" : (m <= 2.33 ? "moderate" : "high"); }
+// Boundary: a single one-option change (sum +/- 1) would cross the 2.0 threshold.
+// Threshold sum = 2n; sum === 2n is a LOW boundary (one step up crosses), sum ===
+// 2n+1 is a HIGH boundary (one step down crosses). Derived from item count n.
+function axisBoundary(sum, n){ return sum === 2*n || sum === 2*n + 1; }
+function score(){
+  const sums = {}, counts = {};
+  PILLARS.forEach(p=>{ sums[p.name]=0; counts[p.name]=0;
+    p.questions.forEach(q=>{
+      const sel = document.querySelector(`input[name="${q.id}"]:checked`);
+      if(sel){ sums[p.name]+=parseInt(sel.dataset.weight,10); counts[p.name]++; }
+    });
+  });
+  const dSum=sums["Density"], dN=counts["Density"];
+  const oSum=sums["Optionality"], oN=counts["Optionality"];
+  const aSum=sums["Alumni Capital"], aN=counts["Alumni Capital"];
+  const dHigh = (dSum/dN) > 2.0, oHigh = (oSum/oN) > 2.0;   // strictly greater than 2.0
+  const quadrant = quadrantFor(dHigh, oHigh);
+  const dB = axisBoundary(dSum, dN), oB = axisBoundary(oSum, oN);
+  const adjacent = [];
+  if(dB) adjacent.push(quadrantFor(!dHigh, oHigh));   // cross the density boundary
+  if(oB) adjacent.push(quadrantFor(dHigh, !oHigh));   // cross the optionality boundary
+  return {
+    quadrant,
+    density: levelDO(dSum/dN),
+    optionality: levelDO(oSum/oN),
+    alumniCapital: levelA(aSum/aN),
+    boundary: dB || oB,
+    adjacent
+  };
+}
+function boundaryNote(d){
+  if(!d || !d.boundary || !d.adjacent || !d.adjacent.length) return "";
+  return `This is a boundary position. Read ${d.adjacent.join(" and ")} as well. Boundary positions move fastest, in both directions.`;
+}
+// Standard (deterministic) fallback readings, keyed by the client-computed quadrant.
+// Ported from the retired in-page org mode; served with the SAME placement when the
+// live model read is unavailable, so placement never depends on the model.
+const FALLBACK = {
+  [Q.compounding]:{
+    headline:"You are building capability, not just deploying it.",
+    read:"Your responses describe an organization that is doing something genuinely rare: building capability rather than just deploying it. The conditions you have created are not accidental. They reflect deliberate design choices that most organizations are not making. The risk at this stage is not failure. It is assumption. The conditions that produced this result will not sustain themselves without active maintenance. Alumni Capital is often the first thing that erodes in high-performing organizations, and succession depth thins faster than leaders expect when compounding careers attract strong external offers.\n\nChallenge is compounding judgment, roles are expanding optionality, and your people are building the kind of portable resilience that survives what markets throw at organizations. The risk here is assuming the conditions that created this will sustain themselves without active design. They will not.",
+    leaders:"Your organization is building capability. The question now is whether you have the systems to capture it, circulate it, and ensure it outlasts the people who currently carry it. That is the next design challenge. It is worth solving."
+  },
+  [Q.depthTrap]:{
+    headline:"You are building deep skill that does not yet travel.",
+    read:"Your responses describe an organization that has built genuine expertise, but in a way that creates organizational debt. The people you have developed are deeply capable within the context you built them for. Deep specialization without portability investment produces professionals who are indispensable inside your organization and much less portable outside it. When restructuring comes, those people discover that the organization consumed rather than built their optionality.\n\nThe capability your environment produces is narrowing rather than expanding. The organization looks highly capable until the moment it is asked to pivot, restructure, or promote from within. At that point, the bench reveals itself as thin. What organizations in the Depth Trap owe the people inside them is a deliberate investment in the transferability of what they have built.",
+    leaders:"The Depth Trap is the most common and least diagnosed capability failure mode in complex organizations. It does not announce itself until the restructuring arrives. Structural intervention is what is required here, not another development program."
+  },
+  [Q.stagnant]:{
+    headline:"Routine work is quietly consuming capability here.",
+    read:"Your responses describe an organization with significant underdevelopment debt. Low investment and low challenge have produced a capability profile that is vulnerable in ways that will become visible at exactly the wrong moment. Routine work is producing fragile talent. The environment is not generating sufficient challenge to compound capability, and roles are not expanding optionality. They are quietly consuming it.\n\nThis is the most common organizational condition, and the hardest to see from the inside, because it masquerades as stability. Recovery requires an honest account of what the organization has and has not built in its people, and a willingness to redesign the conditions rather than simply intensify the performance expectations on top of them.",
+    leaders:"The Stagnant Quadrant requires intervention from the architecture up. A diagnostic conversation is the right place to begin. Not because the situation is hopeless, but because it is more recoverable than most leaders realize when they finally see it clearly."
+  },
+  [Q.fragile]:{
+    headline:"You have mobility without the challenge to back it up.",
+    read:"Your responses describe an organization that has prioritized comfort over challenge and mobility over depth. The result is a leadership bench that reads as versatile on paper but has not been stress-tested by the conditions that produce durable capability. People can move. They have moved. What the movement has not produced is the kind of sustained contact with difficulty that compounds judgment.\n\nHigh mobility reads as opportunity and broad exposure reads as range, so the organizational thinning underneath both goes unnamed until a restructuring forces the reckoning. The organizations that come through disruption with stronger talent positions are the ones whose people have been genuinely challenged and came out more capable on the other side.",
+    leaders:"The Fragile Quadrant is recoverable with intentional design. The mobility infrastructure is already there. The work is introducing the right kind of difficulty into the environments that currently feel too comfortable."
+  }
+};
+
 async function run(){
   const {answers, missing} = collect();
   if(missing>0){
@@ -542,42 +660,63 @@ async function run(){
     statusEl.textContent = `Answer the remaining ${missing} question${missing>1?"s":""} to run the read.`;
     return;
   }
+  // Placement is computed client-side and is authoritative. The model writes the
+  // narrative for this placement; it never assigns or overrides it.
+  const placement = score();
   runBtn.disabled=true;
   statusEl.className="status show";
   statusEl.innerHTML = `<span class="spinner"></span> Reading your organization across the three pillars...`;
   resultEl.classList.remove("show"); resultEl.innerHTML="";
   reportEl.classList.remove("show"); reportEl.innerHTML="";
 
+  // Unscored reflective close: captured for research, never fed into placement.
+  const reflEl = document.querySelector('input[name="reflection"]:checked');
+  lastReflection = reflEl ? reflEl.value : "";
+
+  let result, standard = false;
   try{
     const res = await fetch("/.netlify/functions/diagnose",{
       method:"POST",
       headers:{"Content-Type":"application/json"},
-      body:JSON.stringify({ answers: answers })
+      body:JSON.stringify({ answers: answers, placement: {
+        quadrant: placement.quadrant,
+        density: placement.density,
+        optionality: placement.optionality,
+        alumniCapital: placement.alumniCapital
+      } })
     });
+    if(res.status === 429){
+      // Rate limited (per-IP, 5/hour). Show the existing retry message, no reading.
+      statusEl.className="status show err";
+      statusEl.textContent="The live read did not come back. Please try again in a moment. If it keeps happening, the diagnostic service may be briefly unavailable.";
+      runBtn.disabled=false;
+      return;
+    }
     if(!res.ok){throw new Error("status "+res.status);}
     const data = await res.json();
     const text = (data.content||[]).filter(b=>b.type==="text").map(b=>b.text).join("\n").trim();
     const clean = text.replace(/```json/gi,"").replace(/```/g,"").trim();
-    let parsed;
-    try{ parsed = JSON.parse(clean); }
+    let narr;
+    try{ narr = JSON.parse(clean); }
     catch(e){
       const m = clean.match(/\{[\s\S]*\}/);
       if(!m){throw new Error("unparseable");}
-      parsed = JSON.parse(m[0]);
+      narr = JSON.parse(m[0]);
     }
-    if(!QUADRANT_POS[parsed.quadrant]){
-      const found = GRID_ORDER.find(q=>parsed.quadrant && parsed.quadrant.toLowerCase().includes(q.toLowerCase()));
-      parsed.quadrant = found || "Compounding";
-    }
-    statusEl.className="status"; statusEl.textContent="";
-    if(window.plausible){ plausible("Diagnostic Completed", {props:{quadrant: parsed.quadrant}}); }
-    renderResult(parsed);
+    if(!narr || !narr.headline || !narr.read || !narr.leaders){ throw new Error("missing narrative"); }
+    result = Object.assign({}, placement, { headline:narr.headline, read:narr.read, leaders:narr.leaders, standard:false });
   }catch(err){
-    statusEl.className="status show err";
-    statusEl.textContent="The live read did not come back. Please try again in a moment. If it keeps happening, the diagnostic service may be briefly unavailable.";
-  }finally{
-    runBtn.disabled=false;
+    // The live read failed. Serve the deterministic standard reading for the SAME
+    // computed placement, so the quadrant is identical whether the model responds
+    // or not. Only the narrative differs (standard vs bespoke).
+    standard = true;
+    const fb = FALLBACK[placement.quadrant];
+    result = Object.assign({}, placement, { headline:fb.headline, read:fb.read, leaders:fb.leaders, standard:true });
   }
+  statusEl.className="status"; statusEl.textContent="";
+  if(window.plausible){ plausible("Diagnostic Completed", {props:{ quadrant: placement.quadrant, reflection: lastReflection || "(skipped)", boundary: placement.boundary, standard: standard }}); }
+  renderResult(result);
+  runBtn.disabled=false;
 }
 
 runBtn.addEventListener("click", run);
