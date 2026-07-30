@@ -534,7 +534,7 @@ async function submitGate(){
     const res = await fetch("/.netlify/functions/subscribe",{
       method:"POST",
       headers:{"Content-Type":"application/json"},
-      body:JSON.stringify({ email:email, org:org, quadrant: lastDiagnosis ? lastDiagnosis.quadrant : "", fields:{ reflection: lastReflection } })
+      body:JSON.stringify({ email:email, org:org, quadrant: lastDiagnosis ? lastDiagnosis.quadrant : "", fields:{ reflection: lastReflection, boundary: lastDiagnosis ? String(lastDiagnosis.boundary) : "", standard: lastDiagnosis ? String(lastDiagnosis.standard) : "" } })
     });
     if(res.ok && window.plausible){ plausible("Diagnostic Lead", {props:{quadrant: lastDiagnosis ? lastDiagnosis.quadrant : ""}}); }
     // Open the report regardless so the reader is never blocked from the value.
