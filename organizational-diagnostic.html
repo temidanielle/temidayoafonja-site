@@ -106,6 +106,7 @@
   .run .dot{display:none;}
 
   .note{font-size:13px;color:var(--sand-mute);margin-top:14px;}
+  .gate-privacy{font-size:11px;color:var(--sand-mute);opacity:.85;margin-top:12px;line-height:1.6;max-width:60ch;}
   .sample-link{display:inline-block;margin-top:14px;background:none;border:0;color:var(--gold);font-family:inherit;font-size:13.5px;text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:0;}
   .sample-link:hover{color:var(--gold-soft);}
 
@@ -268,6 +269,17 @@
    band. Any change to item wording, count, or scoring creates v1.1, and data
    from different versions does not merge.
    ───────────────────────────────────────────────────────────────────────── */
+
+/* ── Lead capture config. Non-Kit: a durable Netlify Blobs store plus a Formspree
+   email ping, both fire-and-forget so neither can block or delay the report.
+   Follow-up here is personal, not an automated sequence. Swap ORG_CAPTURE_ENDPOINT
+   to /.netlify/functions/subscribe when the Kit sequences exist and you want
+   automated enrollment instead. ORG_FORMSPREE_ENDPOINT is the dedicated
+   "Organizational Diagnostic" form; to change where its email lands, edit the
+   recipient in the Formspree form settings, not here. ── */
+const ORG_CAPTURE_ENDPOINT = "/.netlify/functions/org-diagnostic-capture";
+const ORG_FORMSPREE_ENDPOINT = "https://formspree.io/f/mjgndvkp";
+
 const PILLARS = [
   {
     key:"density", name:"Density", tag:"Intensity, not tenure.",
@@ -491,22 +503,27 @@ function showGate(){
   document.getElementById("reportBtn").style.display = "none";
   gate.innerHTML = `
     <div class="card" style="margin-top:18px;">
-      <p class="qd-eyebrow">One step to your report</p>
-      <p class="headline" style="margin:0 0 18px;">Tell us where to send it. We will open your leave-behind report now and route the matching follow-up from The Density Group.</p>
+      <p class="qd-eyebrow">Your leave-behind report</p>
+      <p class="headline" style="margin:0 0 18px;">Add your work email and Temidayo follows up personally on what your position is costing and what the full diagnostic verifies that a single respondent cannot. Prefer not to? Skip it and open the report now. Either way it renders below, ready to save as PDF.</p>
       <div class="orgfield">
-        <label for="gateEmail">Work email</label>
+        <label for="gateEmail">Work email (optional)</label>
         <input type="email" id="gateEmail" placeholder="you@organization.com" autocomplete="email" />
       </div>
       <div class="orgfield">
-        <label for="gateOrg">Organization name</label>
+        <label for="gateOrg">Organization name (optional)</label>
         <input type="text" id="gateOrg" placeholder="Your organization" autocomplete="organization" />
       </div>
-      <button class="makereport" id="gateSubmit">Open my report</button>
-      <p class="note" id="gateNote">Your report opens immediately. We use your email only to send the matching follow-up.</p>
+      <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;">
+        <button class="makereport" id="gateSubmit">Open my report</button>
+        <button class="sample-link" id="gateSkip" style="margin-top:0;">Skip and open my report</button>
+      </div>
+      <p class="note" id="gateNote">Your report opens either way.</p>
+      <p class="gate-privacy">Your responses are confidential and are used only to generate your read in this session. If you add your email, it is used only for a personal follow-up on your result from Temidayo Afonja. Nothing else leaves this page.</p>
     </div>`;
   const orgPrefill = orgInput.value.trim();
   if(orgPrefill){ document.getElementById("gateOrg").value = orgPrefill; }
   document.getElementById("gateSubmit").addEventListener("click", submitGate);
+  document.getElementById("gateSkip").addEventListener("click", openReportFromGate);
   gate.scrollIntoView({behavior:"smooth",block:"start"});
 }
 
@@ -516,32 +533,40 @@ function openReportFromGate(){
   buildReport(lastDiagnosis, org);
 }
 
-async function submitGate(){
+function submitGate(){
   const emailEl = document.getElementById("gateEmail");
   const noteEl = document.getElementById("gateNote");
-  const btn = document.getElementById("gateSubmit");
   const email = (emailEl.value || "").trim();
   const org = (document.getElementById("gateOrg").value || "").trim();
-  if(!email || !email.includes("@")){
+  // Email is optional. An empty field behaves exactly like Skip: open the report,
+  // capture nothing. A non-empty but malformed address gets a gentle nudge.
+  if(!email){ openReportFromGate(); return; }
+  if(!email.includes("@")){
     emailEl.style.borderColor = "var(--rust-light)";
     emailEl.focus();
-    noteEl.className = "note"; noteEl.textContent = "Enter a valid email to open your report.";
+    noteEl.className = "note"; noteEl.textContent = "That email looks off. Fix it, or skip and open your report.";
     return;
   }
   emailEl.style.borderColor = "";
-  btn.disabled = true; btn.textContent = "Opening...";
-  try{
-    const res = await fetch("/.netlify/functions/subscribe",{
-      method:"POST",
-      headers:{"Content-Type":"application/json"},
-      body:JSON.stringify({ email:email, org:org, quadrant: lastDiagnosis ? lastDiagnosis.quadrant : "", fields:{ reflection: lastReflection, boundary: lastDiagnosis ? String(lastDiagnosis.boundary) : "", standard: lastDiagnosis ? String(lastDiagnosis.standard) : "" } })
-    });
-    if(res.ok && window.plausible){ plausible("Diagnostic Lead", {props:{quadrant: lastDiagnosis ? lastDiagnosis.quadrant : ""}}); }
-    // Open the report regardless so the reader is never blocked from the value.
-    openReportFromGate();
-  }catch(err){
-    openReportFromGate();
-  }
+  const lead = {
+    email: email,
+    org: org,
+    quadrant: lastDiagnosis ? lastDiagnosis.quadrant : "",
+    density: lastDiagnosis ? lastDiagnosis.density : "",
+    optionality: lastDiagnosis ? lastDiagnosis.optionality : "",
+    alumniCapital: lastDiagnosis ? lastDiagnosis.alumniCapital : "",
+    boundary: lastDiagnosis ? String(lastDiagnosis.boundary) : "",
+    standard: lastDiagnosis ? String(lastDiagnosis.standard) : "",
+    reflection: lastReflection,
+    source: "organizational_diagnostic"
+  };
+  // Capture the lead two ways, both fire-and-forget so neither can block the
+  // report: (1) durable Netlify Blobs store, (2) a Formspree email ping. No Kit
+  // enrollment; follow-up here is personal, not an automated sequence.
+  try{ fetch(ORG_CAPTURE_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(lead),keepalive:true}).catch(function(){}); }catch(err){}
+  try{ fetch(ORG_FORMSPREE_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(lead),keepalive:true}).catch(function(){}); }catch(err){}
+  if(window.plausible){ plausible("Diagnostic Lead", {props:{quadrant: lastDiagnosis ? lastDiagnosis.quadrant : ""}}); }
+  openReportFromGate();
 }
 
 function buildReport(d, org){
