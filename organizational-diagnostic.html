@@ -148,9 +148,13 @@
   .leaders .lh{font-family:"Cormorant Garamond",serif;font-size:22px;color:var(--gold);margin:0 0 10px;}
   .leaders p{font-size:15.5px;color:var(--sand-dim);margin:0;}
 
-  .result-actions{margin-top:30px;display:flex;gap:10px;flex-wrap:wrap;}
+  .result-actions{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap;align-items:center;}
   .again{background:none;border:1px solid var(--gold);color:var(--gold);border-radius:11px;padding:13px 24px;font-family:inherit;font-size:14.5px;font-weight:600;cursor:pointer;transition:background .15s,color .15s;}
   .again:hover{background:var(--gold);color:var(--navy);}
+  .workwith{display:inline-flex;align-items:center;background:none;border:1px solid var(--gold);color:var(--gold);border-radius:11px;padding:13px 24px;font-family:inherit;font-size:14.5px;font-weight:600;text-decoration:none;cursor:pointer;transition:background .15s,color .15s;}
+  .workwith:hover{background:var(--gold);color:var(--navy);}
+  .again-link{align-self:center;background:none;border:0;color:var(--sand-mute);font-family:inherit;font-size:13.5px;text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:0;transition:color .15s;}
+  .again-link:hover{color:var(--sand);}
   .makereport{background:var(--gold);border:1px solid var(--gold);color:var(--navy);border-radius:11px;padding:13px 24px;font-family:inherit;font-size:14.5px;font-weight:700;cursor:pointer;transition:background .15s;}
   .makereport:hover{background:var(--gold-soft);}
 
@@ -201,6 +205,10 @@
   .rd-leaders .lh{font-family:"Cormorant Garamond",serif;font-size:19px;color:var(--navy);margin:0 0 8px;}
   .rd-leaders p{font-size:14px;color:#3a3f4a;margin:0;}
   .rd-equation{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:15px;color:var(--gold-deep);text-align:center;margin:0 0 26px;}
+  .rd-cta{margin:0 0 22px;display:flex;gap:8px;align-items:baseline;flex-wrap:wrap;}
+  .rd-cta-text{font-size:13.5px;color:#3a3f4a;}
+  .rd-cta-link{font-size:13.5px;font-weight:700;color:var(--gold-deep);text-decoration:none;}
+  .rd-cta-link:hover{text-decoration:underline;}
   .rd-foot{border-top:1px solid var(--sand-deep);padding-top:14px;display:flex;justify-content:space-between;gap:10px;font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:#8a909c;}
   .rd-actions{margin-top:22px;display:flex;gap:10px;flex-wrap:wrap;}
   .rd-actions button{font-family:inherit;font-size:14px;font-weight:600;border-radius:10px;padding:12px 22px;cursor:pointer;border:0;}
@@ -223,6 +231,8 @@
     .wrap > *:not(#report){display:none !important;}
     #report{display:block !important;margin:0;border-radius:0;padding:0 6px;}
     .rd-actions{display:none !important;}
+    /* In the printed/PDF leave-behind, reveal the destination so the CTA stays actionable off-screen. */
+    .rd-cta-link::after{content:" \2014 temidayoafonja.com/work";font-weight:400;}
   }
 </style>
 </head>
@@ -250,7 +260,7 @@
 
   <button class="run" id="runBtn"><span class="dot"></span> Run the diagnostic</button>
   <p class="note" id="formNote">Answer the questions above, then run the read. Optional context sharpens the diagnosis.</p>
-  <button class="sample-link" id="sampleBtn">See a sample report</button>
+  <button class="sample-link" id="sampleBtn">Preview a sample report</button>
 
   <div class="status" id="status"></div>
 
@@ -482,7 +492,8 @@ function renderResult(d){
     </div>
     <div class="result-actions">
       <button class="makereport" id="reportBtn">Create the report</button>
-      <button class="again" id="againBtn">Run another read</button>
+      <a class="workwith" href="work.html?quadrant=${encodeURIComponent(d.quadrant)}#get-in-touch" onclick="window.plausible&&plausible('Diagnostic Work With Me',{props:{quadrant:'${d.quadrant}',from:'result'}})">Prefer to talk it through? Work with me &rarr;</a>
+      <button class="again-link" id="againBtn">Run another read</button>
     </div>
     <div id="gate"></div>`;
   resultEl.classList.add("show");
@@ -598,6 +609,10 @@ function buildReport(d, org){
     <div class="rd-read">${paras(d.read)}</div>
     <div class="rd-leaders"><p class="lh">What this means for leaders</p>${paras(d.leaders)}</div>
     <p class="rd-equation">Density to Optionality to Alumni Capital produces Institutional Resilience.</p>
+    <div class="rd-cta">
+      <span class="rd-cta-text">Ready to work through this position?</span>
+      <a class="rd-cta-link" href="work.html?quadrant=${encodeURIComponent(d.quadrant)}#get-in-touch" onclick="window.plausible&&plausible('Diagnostic Work With Me',{props:{quadrant:'${d.quadrant}',from:'report'}})">Start a conversation &rarr;</a>
+    </div>
     <div class="rd-foot"><span>The Density Group &middot; Professional. Authoritative. Credible.</span><span>temidayoafonja.com</span></div>
     <div class="rd-actions">
       <button class="rd-save" id="rdSave">Save as PDF</button>

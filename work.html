@@ -411,6 +411,24 @@ function handleContact(e) {
     btn.disabled = false;
   });
 }
+
+// Prefill the message when a leader arrives from the organizational diagnostic
+// (work.html?quadrant=Depth%20Trap#get-in-touch). Only known quadrants are
+// accepted, and only an empty message box is touched, so nothing a visitor
+// typed is overwritten.
+(function () {
+  try {
+    var q = (new URLSearchParams(window.location.search).get('quadrant') || '').trim();
+    if (!q) return;
+    var CANON = { 'compounding': 'Compounding', 'depth trap': 'Depth Trap', 'stagnant': 'Stagnant', 'fragile': 'Fragile' };
+    var name = CANON[q.toLowerCase()];
+    if (!name) return;
+    var msg = document.getElementById('cMsg');
+    if (msg && !msg.value) {
+      msg.value = 'I took the Organizational Diagnostic and placed in ' + name + '. I would like to talk through what that means for my organization.';
+    }
+  } catch (e) {}
+})();
 </script>
 
 <script defer src="/nav.js"></script>
