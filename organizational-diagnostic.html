@@ -148,11 +148,13 @@
   .leaders .lh{font-family:"Cormorant Garamond",serif;font-size:22px;color:var(--gold);margin:0 0 10px;}
   .leaders p{font-size:15.5px;color:var(--sand-dim);margin:0;}
 
-  .result-actions{margin-top:30px;display:flex;gap:10px;flex-wrap:wrap;}
+  .result-actions{margin-top:30px;display:flex;gap:14px;flex-wrap:wrap;align-items:center;}
   .again{background:none;border:1px solid var(--gold);color:var(--gold);border-radius:11px;padding:13px 24px;font-family:inherit;font-size:14.5px;font-weight:600;cursor:pointer;transition:background .15s,color .15s;}
   .again:hover{background:var(--gold);color:var(--navy);}
   .workwith{display:inline-flex;align-items:center;background:none;border:1px solid var(--gold);color:var(--gold);border-radius:11px;padding:13px 24px;font-family:inherit;font-size:14.5px;font-weight:600;text-decoration:none;cursor:pointer;transition:background .15s,color .15s;}
   .workwith:hover{background:var(--gold);color:var(--navy);}
+  .again-link{align-self:center;background:none;border:0;color:var(--sand-mute);font-family:inherit;font-size:13.5px;text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:0;transition:color .15s;}
+  .again-link:hover{color:var(--sand);}
   .makereport{background:var(--gold);border:1px solid var(--gold);color:var(--navy);border-radius:11px;padding:13px 24px;font-family:inherit;font-size:14.5px;font-weight:700;cursor:pointer;transition:background .15s;}
   .makereport:hover{background:var(--gold-soft);}
 
@@ -491,7 +493,7 @@ function renderResult(d){
     <div class="result-actions">
       <button class="makereport" id="reportBtn">Create the report</button>
       <a class="workwith" href="work.html?quadrant=${encodeURIComponent(d.quadrant)}#get-in-touch" onclick="window.plausible&&plausible('Diagnostic Work With Me',{props:{quadrant:'${d.quadrant}',from:'result'}})">Prefer to talk it through? Work with me &rarr;</a>
-      <button class="again" id="againBtn">Run another read</button>
+      <button class="again-link" id="againBtn">Run another read</button>
     </div>
     <div id="gate"></div>`;
   resultEl.classList.add("show");
