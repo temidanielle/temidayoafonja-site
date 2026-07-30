@@ -608,7 +608,6 @@ function buildReport(d, org){
     ${d.standard ? `<p class="rd-standard-note">Standard reading. The live read was briefly unavailable, so this is the standard reading for your position. Placement is unchanged.</p>` : ""}
     <div class="rd-read">${paras(d.read)}</div>
     <div class="rd-leaders"><p class="lh">What this means for leaders</p>${paras(d.leaders)}</div>
-    <p class="rd-equation">Density to Optionality to Alumni Capital produces Institutional Resilience.</p>
     <div class="rd-cta">
       <span class="rd-cta-text">Ready to work through this position?</span>
       <a class="rd-cta-link" href="work.html?quadrant=${encodeURIComponent(d.quadrant)}#get-in-touch" onclick="window.plausible&&plausible('Diagnostic Work With Me',{props:{quadrant:'${d.quadrant}',from:'report'}})">Start a conversation &rarr;</a>
