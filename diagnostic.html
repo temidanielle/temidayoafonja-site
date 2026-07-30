@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Capability Formation Diagnostic · Temidayo Afonja</title>
-<meta name="description" content="The Capability Formation Diagnostic. Twelve statements for individuals, ten questions for organization leaders, about ten minutes. A diagnostic that maps your capability across Density, Optionality, and Alumni Capital.">
+<meta name="description" content="The Capability Formation Diagnostic. Twelve statements, about ten minutes. Scored on Density and Optionality, with Alumni Capital measured separately.">
 <link rel="canonical" href="https://temidayoafonja.com/diagnostic">
 
 <!-- Open Graph / Twitter -->
@@ -13,11 +13,11 @@
 <meta property="og:site_name" content="Temidayo Afonja">
 <meta property="og:url" content="https://temidayoafonja.com/diagnostic">
 <meta property="og:title" content="The Capability Formation Diagnostic">
-<meta property="og:description" content="Twelve statements for individuals, ten questions for organization leaders, about ten minutes. A diagnostic that maps where your capability is compounding and where it is quietly being lost.">
+<meta property="og:description" content="Twelve statements, about ten minutes. A diagnostic that maps where your capability is compounding and where it is quietly being lost.">
 <meta property="og:image" content="https://temidayoafonja.com/og-diagnostic.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="The Capability Formation Diagnostic">
-<meta name="twitter:description" content="Twelve statements for individuals, ten questions for organization leaders, about ten minutes. A diagnostic that maps where your capability is compounding and where it is quietly being lost.">
+<meta name="twitter:description" content="Twelve statements, about ten minutes. A diagnostic that maps where your capability is compounding and where it is quietly being lost.">
 <meta name="twitter:image" content="https://temidayoafonja.com/og-diagnostic.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -349,14 +349,14 @@ nav { padding:16px 20px; }
         <div class="rationale-card-items">
           <div class="rationale-card-item">Most people cannot describe what their environments have done to their capability until they are forced to look.</div>
           <div class="rationale-card-item">The framework surfaces what is compounding and what is quietly being consumed.</div>
-          <div class="rationale-card-item">Twelve statements for individuals, ten questions for organization leaders. A diagnostic that belongs to you.</div>
+          <div class="rationale-card-item">Twelve statements, about ten minutes. A diagnostic that belongs to you.</div>
         </div>
       </div>
       <div class="rationale-card">
         <span class="rationale-card-label">What You Will Receive</span>
         <div class="rationale-card-items">
           <div class="rationale-card-item">Quadrant placement across the Capability Formation Matrix</div>
-          <div class="rationale-card-item">Scored on Density and Optionality, the two axes that set your quadrant. Alumni Capital is read separately and does not move your placement.</div>
+          <div class="rationale-card-item">Scored on Density and Optionality, the two axes that set your quadrant. Alumni Capital is measured separately and does not move your placement.</div>
           <div class="rationale-card-item">A diagnostic reading of your state and your exposure</div>
         </div>
       </div>
@@ -414,7 +414,7 @@ nav { padding:16px 20px; }
       <div class="fork-card-eyebrow">Organization Leader</div>
       <div class="fork-card-title">I lead a team or organization</div>
       <div class="fork-card-desc">You are accountable for whether this organization builds capability or quietly loses it. You want to know how it will hold as AI reshapes the work, before the change arrives rather than after.</div>
-      <div class="fork-card-cta">Start org leader diagnostic</div>
+      <div class="fork-card-cta">Open The Organizational Diagnostic</div>
     </div>
   </div>
   <p class="fork-meta">Your responses are confidential and will not be shared.</p>
@@ -422,11 +422,13 @@ nav { padding:16px 20px; }
 
 <!-- SCREEN 4: AUDIT -->
 
-<!-- SCREEN: ORG LEADER INTRO (org path only) -->
+<!-- RETIRED 2026-07-29, count copy corrected 2026-07-30. The in-page org-leader
+     intro is unreferenced (nothing calls show("orgIntro")); org leaders go to
+     /organizational-diagnostic. Kept inert; no question count is stated here. -->
 <div id="orgIntro" class="screen">
   <div class="wordmark">For Organizational Leaders</div>
   <h1 class="intro-headline">Can your organization take on AI without losing what holds it together?</h1>
-  <p class="intro-benchmark">Ten questions, about five minutes. They map whether this organization is building the capability to absorb AI driven change or quietly losing it. You will see where you stand before the change forces the answer.</p>
+  <p class="intro-benchmark">This reads whether this organization is building the capability to absorb AI driven change or quietly losing it. You will see where you stand before the change forces the answer.</p>
   <button class="btn-primary" id="orgIntroStart">Start the diagnostic &rarr;</button>
   <p class="intro-meta">Already know you need this? <a href="ai-capability-readiness.html" style="color:#c9a84c;text-decoration:none;">See the diagnostic.</a></p>
 </div>
@@ -441,7 +443,7 @@ nav { padding:16px 20px; }
       </div>
     </div>
     <div style="margin-bottom:24px;margin-top:-16px;">
-      <button id="switchModeBtn" style="background:transparent;border:none;font-family:'DM Sans',sans-serif;font-size:13px;color:#c9a84c;cursor:pointer;letter-spacing:0.06em;padding:0;text-decoration:underline;">Switch to org leader diagnostic</button>
+      <button id="switchModeBtn" style="background:transparent;border:none;font-family:'DM Sans',sans-serif;font-size:13px;color:#c9a84c;cursor:pointer;letter-spacing:0.06em;padding:0;text-decoration:underline;">Switch to The Organizational Diagnostic</button>
     </div>
     <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
     <div class="section-label" id="sectionLabel">Density</div>
@@ -1616,7 +1618,7 @@ document.addEventListener("DOMContentLoaded", function(){
     questions=buildIndividualQuestions(); quadrantData=quadrantDataIndividual; summaryData=summaryDataIndividual;
     currentQ=0; answers=new Array(questions.length).fill(null);
     document.getElementById("auditModeBadge").textContent="Individual";
-    document.getElementById("switchModeBtn").textContent="Switch to org leader diagnostic";
+    document.getElementById("switchModeBtn").textContent="Switch to The Organizational Diagnostic";
   }
 
   document.getElementById("forkIndividual").addEventListener("click", function(){
