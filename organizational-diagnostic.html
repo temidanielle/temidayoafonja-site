@@ -431,6 +431,7 @@ function collect(){
 function esc(s){return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
 function paras(s){return esc(s).split(/\n\n+/).map(t=>`<p>${t.replace(/\n/g," ")}</p>`).join("");}
 function fmtDate(){return new Date().toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});}
+function reflectionEcho(v){ return ({"by-accident":"by accident","programs-only":"through programs, not yet a system","explicit-practices":"by design, though not everywhere yet","systematic":"by deliberate design"})[v] || ""; }
 
 function renderMatrix(active){
   let cells = GRID_ORDER.map(name=>{
@@ -483,6 +484,7 @@ function renderResult(d){
       <p class="levels-note">Density and optionality set the position in the matrix. Alumni capital is measured separately and does not move it.</p>
       ${d.boundary ? `<p class="boundary-note">${esc(boundaryNote(d))}</p>` : ""}
     </div>
+    ${reflectionEcho(lastReflection) ? `<p style="font-size:15px;line-height:1.7;margin:0 0 20px;">You said your organization builds capability ${reflectionEcho(lastReflection)}. Read what follows against that.</p>` : ""}
     <div class="read">
       ${d.standard ? `<p class="standard-note">Standard reading. The live read was briefly unavailable, so this is the standard reading for your position. Your placement is unchanged.</p>` : ""}
       <div class="read-body">${paras(d.read)}</div>
@@ -608,6 +610,7 @@ function buildReport(d, org){
     <p class="rd-levels-note">Density and optionality set the position in the matrix. Alumni capital is measured separately and does not move it.</p>
     ${d.boundary ? `<p class="rd-boundary-note">${esc(boundaryNote(d))}</p>` : ""}
     ${d.standard ? `<p class="rd-standard-note">Standard reading. The live read was briefly unavailable, so this is the standard reading for your position. Placement is unchanged.</p>` : ""}
+    ${reflectionEcho(lastReflection) ? `<p style="font-size:15px;line-height:1.7;margin:0 0 16px;">You said your organization builds capability ${reflectionEcho(lastReflection)}. Read what follows against that.</p>` : ""}
     <div class="rd-read">${paras(d.read)}</div>
     <div class="rd-leaders"><p class="lh">What this means for leaders</p>${paras(d.leaders)}</div>
     <div class="rd-cta">
