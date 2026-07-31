@@ -432,6 +432,20 @@ function esc(s){return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replac
 function paras(s){return esc(s).split(/\n\n+/).map(t=>`<p>${t.replace(/\n/g," ")}</p>`).join("");}
 function fmtDate(){return new Date().toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});}
 function reflectionEcho(v){ return ({"by-accident":"by accident","programs-only":"through programs, not yet a system","explicit-practices":"by design, though not everywhere yet","systematic":"by deliberate design"})[v] || ""; }
+// State-conditional "Three things to verify" (5.2). Depth Trap supplied; the other
+// three states are intentionally absent until their content is supplied.
+const VERIFY_THREE = {
+  [Q.depthTrap]: [
+    "How many critical problems default to the same small group of people?",
+    "What proportion of critical roles have been filled through cross-functional internal movement?",
+    "When an experienced person leaves, what knowledge and relationships remain practically usable six months later?"
+  ]
+};
+function threeThingsHTML(quadrant){
+  const items = VERIFY_THREE[quadrant];
+  if(!items || !items.length) return "";
+  return `<div class="verify-block"><p class="lh">Three things to verify</p><ul style="margin:8px 0 0;padding-left:20px;line-height:1.7;">${items.map(t=>`<li style="margin:0 0 8px;">${t}</li>`).join("")}</ul></div>`;
+}
 
 function renderMatrix(active){
   let cells = GRID_ORDER.map(name=>{
@@ -493,6 +507,7 @@ function renderResult(d){
         ${paras(d.leaders)}
       </div>
     </div>
+    ${threeThingsHTML(d.quadrant)}
     <div class="result-actions">
       <button class="makereport" id="reportBtn">Create the report</button>
       <a class="workwith" href="work.html?quadrant=${encodeURIComponent(d.quadrant)}#get-in-touch" onclick="window.plausible&&plausible('Diagnostic Work With Me',{props:{quadrant:'${d.quadrant}',from:'result'}})">Prefer to talk it through? Work with me &rarr;</a>
@@ -613,6 +628,7 @@ function buildReport(d, org){
     ${reflectionEcho(lastReflection) ? `<p style="font-size:15px;line-height:1.7;margin:0 0 16px;">You said your organization builds capability ${reflectionEcho(lastReflection)}. Read what follows against that.</p>` : ""}
     <div class="rd-read">${paras(d.read)}</div>
     <div class="rd-leaders"><p class="lh">What this means for leaders</p>${paras(d.leaders)}</div>
+    ${threeThingsHTML(d.quadrant)}
     <div class="rd-cta">
       <span class="rd-cta-text">Ready to work through this position?</span>
       <a class="rd-cta-link" href="work.html?quadrant=${encodeURIComponent(d.quadrant)}#get-in-touch" onclick="window.plausible&&plausible('Diagnostic Work With Me',{props:{quadrant:'${d.quadrant}',from:'report'}})">Start a conversation &rarr;</a>
