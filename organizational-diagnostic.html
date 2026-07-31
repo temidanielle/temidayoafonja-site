@@ -535,9 +535,12 @@ function renderResult(d){
     </div>
     ${threeThingsHTML(d.quadrant)}
     ${firstMoveHTML(d.quadrant)}
+    <div class="single-cta" style="margin:22px 0;">
+      <a href="work.html?quadrant=${encodeURIComponent(d.quadrant)}#get-in-touch" class="workwith" onclick="window.plausible&&plausible('Diagnostic Work With Me',{props:{quadrant:'${d.quadrant}',from:'result-cta'}})">Send me your reading and I will tell you what I would check first. &rarr;</a>
+      <p style="font-size:14px;line-height:1.7;color:var(--sand-mute);margin:8px 0 0;">There is no proposal attached to this. The first thing worth establishing is whether I can see something you cannot.</p>
+    </div>
     <div class="result-actions">
       <button class="makereport" id="reportBtn">Create the report</button>
-      <a class="workwith" href="work.html?quadrant=${encodeURIComponent(d.quadrant)}#get-in-touch" onclick="window.plausible&&plausible('Diagnostic Work With Me',{props:{quadrant:'${d.quadrant}',from:'result'}})">Prefer to talk it through? Work with me &rarr;</a>
       <button class="again-link" id="againBtn">Run another read</button>
     </div>
     <div id="gate"></div>`;
@@ -657,10 +660,6 @@ function buildReport(d, org){
     <div class="rd-leaders"><p class="lh">What this means for leaders</p>${paras(d.leaders)}</div>
     ${threeThingsHTML(d.quadrant)}
     ${firstMoveHTML(d.quadrant)}
-    <div class="rd-cta">
-      <span class="rd-cta-text">Ready to work through this position?</span>
-      <a class="rd-cta-link" href="work.html?quadrant=${encodeURIComponent(d.quadrant)}#get-in-touch" onclick="window.plausible&&plausible('Diagnostic Work With Me',{props:{quadrant:'${d.quadrant}',from:'report'}})">Start a conversation &rarr;</a>
-    </div>
     <div class="rd-foot"><span>The Density Group &middot; Professional. Authoritative. Credible.</span><span>temidayoafonja.com</span></div>
     <div class="rd-actions">
       <button class="rd-save" id="rdSave">Save as PDF</button>
