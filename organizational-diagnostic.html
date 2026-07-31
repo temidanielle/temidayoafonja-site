@@ -509,9 +509,12 @@ function reportMatrix(active){
 
 function renderResult(d){
   lastDiagnosis = d;
+  const org = orgInput.value.trim();
   resultEl.innerHTML = `
-    <p class="levels-note" style="margin:0 0 18px;">This is a directional leadership read rather than a full organizational assessment. It identifies a pattern worth testing against workforce data and against the experience of other leaders in the same scope.</p>
+    <p class="scope-header" style="font-size:13px;color:var(--sand-mute);margin:0 0 16px;">${scopeHeader(org)}</p>
+    ${reflectionEcho(lastReflection) ? `<p style="font-size:15px;line-height:1.7;margin:0 0 20px;">You said your organization builds capability ${reflectionEcho(lastReflection)}. Read what follows against that.</p>` : ""}
     <div class="card">
+      <p class="levels-note" style="margin:0 0 18px;">This is a directional leadership read rather than a full organizational assessment. It identifies a pattern worth testing against workforce data and against the experience of other leaders in the same scope.</p>
       <p class="qd-eyebrow">Based on your answers, the pattern most closely resembles</p>
       <div class="qd-name">${esc(d.quadrant)}</div>
       <p class="headline">${esc(d.headline)}</p>
@@ -523,15 +526,12 @@ function renderResult(d){
       </div>
       <p class="levels-note">Density and optionality set the position in the matrix. Alumni capital is measured separately and does not move it.</p>
       ${d.boundary ? `<p class="boundary-note">${esc(boundaryNote(d))}</p>` : ""}
-    </div>
-    ${reflectionEcho(lastReflection) ? `<p style="font-size:15px;line-height:1.7;margin:0 0 20px;">You said your organization builds capability ${reflectionEcho(lastReflection)}. Read what follows against that.</p>` : ""}
-    <div class="read">
       ${d.standard ? `<p class="standard-note">Standard reading. The live read was briefly unavailable, so this is the standard reading for your position. Your placement is unchanged.</p>` : ""}
       <div class="read-body">${paras(d.read)}</div>
-      <div class="leaders">
-        <p class="lh">What this means for leaders</p>
-        ${paras(d.leaders)}
-      </div>
+    </div>
+    <div class="leaders">
+      <p class="lh">What this means for leaders</p>
+      ${paras(d.leaders)}
     </div>
     ${threeThingsHTML(d.quadrant)}
     ${firstMoveHTML(d.quadrant)}
@@ -638,6 +638,7 @@ function buildReport(d, org){
     </div>
     <h2 class="rd-title">The Organizational Diagnostic</h2>
     <p class="rd-prepared">${prepared}</p>
+    ${reflectionEcho(lastReflection) ? `<p style="font-size:15px;line-height:1.7;margin:0 0 16px;">You said your organization builds capability ${reflectionEcho(lastReflection)}. Read what follows against that.</p>` : ""}
     <p class="rd-frame">This is a directional leadership read rather than a full organizational assessment. It identifies a pattern worth testing against workforce data and against the experience of other leaders in the same scope.</p>
     <p class="rd-frame">A direct read of whether this organization builds capability that lasts or quietly leaks it, measured across density, optionality, and alumni capital, with the cost of its current position named.</p>
     <p class="rd-quad-label">Based on your answers, the pattern most closely resembles</p>
@@ -652,7 +653,6 @@ function buildReport(d, org){
     <p class="rd-levels-note">Density and optionality set the position in the matrix. Alumni capital is measured separately and does not move it.</p>
     ${d.boundary ? `<p class="rd-boundary-note">${esc(boundaryNote(d))}</p>` : ""}
     ${d.standard ? `<p class="rd-standard-note">Standard reading. The live read was briefly unavailable, so this is the standard reading for your position. Placement is unchanged.</p>` : ""}
-    ${reflectionEcho(lastReflection) ? `<p style="font-size:15px;line-height:1.7;margin:0 0 16px;">You said your organization builds capability ${reflectionEcho(lastReflection)}. Read what follows against that.</p>` : ""}
     <div class="rd-read">${paras(d.read)}</div>
     <div class="rd-leaders"><p class="lh">What this means for leaders</p>${paras(d.leaders)}</div>
     ${threeThingsHTML(d.quadrant)}
