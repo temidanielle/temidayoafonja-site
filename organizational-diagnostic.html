@@ -256,6 +256,17 @@
     <input type="text" id="orgName" placeholder="Used to title the report" />
   </div>
 
+  <div class="scope q">
+    <p class="q-text">What are you reading for?</p>
+    <div class="opts">
+      <div class="opt"><input type="radio" name="scope" id="scope_0" value="The whole organization"><label for="scope_0">The whole organization</label></div>
+      <div class="opt"><input type="radio" name="scope" id="scope_1" value="A business unit"><label for="scope_1">A business unit</label></div>
+      <div class="opt"><input type="radio" name="scope" id="scope_2" value="A function"><label for="scope_2">A function</label></div>
+      <div class="opt"><input type="radio" name="scope" id="scope_3" value="A team"><label for="scope_3">A team</label></div>
+    </div>
+    <p class="reflect-sub" style="margin-top:10px;">Answer for one scope you know well, based on what has happened in the last twelve to eighteen months.</p>
+  </div>
+
   <div id="form"></div>
 
   <button class="run" id="runBtn"><span class="dot"></span> Run the diagnostic</button>
@@ -412,6 +423,11 @@ const orgInput = document.getElementById("orgName");
 const sampleBtn = document.getElementById("sampleBtn");
 let lastDiagnosis = null;
 let lastReflection = "";
+let lastScope = "";
+function scopeHeader(org){
+  const base = org ? `Prepared for ${esc(org)}` : "Confidential organizational read";
+  return lastScope ? `${base} &middot; Scope: ${esc(lastScope)}` : base;
+}
 
 function collect(){
   const answers=[];
@@ -611,7 +627,7 @@ function submitGate(){
 
 function buildReport(d, org){
   if(!d) return;
-  const prepared = org ? `Prepared for ${esc(org)}` : "Confidential organizational read";
+  const prepared = scopeHeader(org);
   reportEl.innerHTML = `
     <div class="rd-top">
       <div class="rd-brand">
@@ -744,6 +760,8 @@ async function run(){
   // Unscored reflective close: captured for research, never fed into placement.
   const reflEl = document.querySelector('input[name="reflection"]:checked');
   lastReflection = reflEl ? reflEl.value : "";
+  const scopeEl = document.querySelector('input[name="scope"]:checked');
+  lastScope = scopeEl ? scopeEl.value : "";
 
   let result, standard = false;
   try{
