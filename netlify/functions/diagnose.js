@@ -22,7 +22,7 @@ Voice rules, enforce strictly:
 - Close on organizational responsibility, what the leadership owes the organization, never on a score or personal triumph.
 
 Return ONLY a JSON object. No markdown, no code fences, no preamble. Exactly these keys:
-{"headline": one plain sentence naming what this organization is, "read": two short paragraphs diagnosing the organization across the three pillars, "leaders": one paragraph on what this means for leaders, closing on organizational responsibility}
+{"headline": one plain sentence giving a directional read of the pattern the answers most closely resemble, not a definitive label of what the organization is, "read": two short paragraphs diagnosing the organization across the three pillars, "leaders": one paragraph on what this means for leaders, closing on organizational responsibility}
 Keep the prose tight and economical.`;
 
 // Per-IP rate limit: 25 calls per rolling hour, backed by Netlify Blobs (already a

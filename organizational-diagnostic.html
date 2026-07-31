@@ -5,17 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="color-scheme" content="dark" />
 <title>The Organizational Diagnostic · The Density Group</title>
-<meta name="description" content="A live organizational diagnostic for leaders. Eleven questions read your organization across density, optionality, and alumni capital, then name what your position is costing or compounding." />
-<link rel="canonical" href="https://temidayoafonja.com/organizational-diagnostic.html" />
+<meta name="description" content="Eleven questions place your organization on density and optionality, measure alumni capital alongside them, and name what your position is costing." />
+<link rel="canonical" href="https://temidayoafonja.com/organizational-diagnostic" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Temidayo Afonja" />
-<meta property="og:url" content="https://temidayoafonja.com/organizational-diagnostic.html" />
+<meta property="og:url" content="https://temidayoafonja.com/organizational-diagnostic" />
 <meta property="og:title" content="The Organizational Diagnostic" />
-<meta property="og:description" content="A live read of whether your organization builds capability that lasts or quietly leaks it, across density, optionality, and alumni capital." />
+<meta property="og:description" content="A live read of whether your organization builds capability that lasts or quietly leaks it. Density and optionality set the position. Alumni capital is measured alongside them." />
 <meta property="og:image" content="https://temidayoafonja.com/og-default.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="The Organizational Diagnostic" />
-<meta name="twitter:description" content="A live read of whether your organization builds capability that lasts or quietly leaks it, across density, optionality, and alumni capital." />
+<meta name="twitter:description" content="A live read of whether your organization builds capability that lasts or quietly leaks it. Density and optionality set the position. Alumni capital is measured alongside them." />
 <meta name="twitter:image" content="https://temidayoafonja.com/og-default.png" />
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -256,7 +256,131 @@
     <input type="text" id="orgName" placeholder="Used to title the report" />
   </div>
 
-  <div id="form"></div>
+  <div class="scope q">
+    <p class="q-text">What are you reading for?</p>
+    <div class="opts">
+      <div class="opt"><input type="radio" name="scope" id="scope_0" value="The whole organization"><label for="scope_0">The whole organization</label></div>
+      <div class="opt"><input type="radio" name="scope" id="scope_1" value="A business unit"><label for="scope_1">A business unit</label></div>
+      <div class="opt"><input type="radio" name="scope" id="scope_2" value="A function"><label for="scope_2">A function</label></div>
+      <div class="opt"><input type="radio" name="scope" id="scope_3" value="A team"><label for="scope_3">A team</label></div>
+    </div>
+    <p class="reflect-sub" style="margin-top:10px;">Answer for one scope you know well, based on what has happened in the last twelve to eighteen months.</p>
+  </div>
+
+  <div id="form">
+    <div class="pillar">
+      <div class="pillar-head"><h2>Density</h2><span class="tag">Intensity, not tenure.</span></div>
+      <p class="pillar-sub">How much consequential judgment the work requires and develops.</p>
+      <div class="q">
+        <p class="q-text">How early do people own decisions with real consequences?</p>
+        <div class="opts">
+          <div class="opt"><input type="radio" name="d1" id="d1_0" value="Only after years and a senior title" data-weight="1"><label for="d1_0">Only after years and a senior title</label></div>
+          <div class="opt"><input type="radio" name="d1" id="d1_1" value="Once they have proven themselves over time" data-weight="2"><label for="d1_1">Once they have proven themselves over time</label></div>
+          <div class="opt"><input type="radio" name="d1" id="d1_2" value="Early, before tenure or title says they have earned it" data-weight="3"><label for="d1_2">Early, before tenure or title says they have earned it</label></div>
+        </div>
+      </div>
+      <div class="q">
+        <p class="q-text">When an unfamiliar, consequential problem appears, what usually happens?</p>
+        <div class="opts">
+          <div class="opt"><input type="radio" name="d2" id="d2_0" value="It returns to the same small group of established experts" data-weight="1"><label for="d2_0">It returns to the same small group of established experts</label></div>
+          <div class="opt"><input type="radio" name="d2" id="d2_1" value="Ownership varies depending on the problem and available expertise" data-weight="2"><label for="d2_1">Ownership varies depending on the problem and available expertise</label></div>
+          <div class="opt"><input type="radio" name="d2" id="d2_2" value="Ownership is deliberately distributed, with support proportionate to the risk" data-weight="3"><label for="d2_2">Ownership is deliberately distributed, with support proportionate to the risk</label></div>
+        </div>
+      </div>
+      <div class="q">
+        <p class="q-text">Over the last year or so, the capability bar for most roles has...</p>
+        <div class="opts">
+          <div class="opt"><input type="radio" name="d3" id="d3_0" value="Fallen or drifted" data-weight="1"><label for="d3_0">Fallen or drifted</label></div>
+          <div class="opt"><input type="radio" name="d3" id="d3_1" value="Held steady" data-weight="2"><label for="d3_1">Held steady</label></div>
+          <div class="opt"><input type="radio" name="d3" id="d3_2" value="Risen" data-weight="3"><label for="d3_2">Risen</label></div>
+        </div>
+      </div>
+      <div class="q">
+        <p class="q-text">The intensity here is mostly tied to...</p>
+        <div class="opts">
+          <div class="opt"><input type="radio" name="d4" id="d4_0" value="Sheer volume of work" data-weight="1"><label for="d4_0">Sheer volume of work</label></div>
+          <div class="opt"><input type="radio" name="d4" id="d4_1" value="A bit of both" data-weight="2"><label for="d4_1">A bit of both</label></div>
+          <div class="opt"><input type="radio" name="d4" id="d4_2" value="People taking on greater complexity, judgment, and ownership at a sustainable pace" data-weight="3"><label for="d4_2">People taking on greater complexity, judgment, and ownership at a sustainable pace</label></div>
+        </div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-head"><h2>Optionality</h2><span class="tag">Portable, or trapped.</span></div>
+      <p class="pillar-sub">How transferable the capability people build actually is.</p>
+      <div class="q">
+        <p class="q-text">If a strong performer left tomorrow, their skills would be...</p>
+        <div class="opts">
+          <div class="opt"><input type="radio" name="o1" id="o1_0" value="Hard to translate outside here" data-weight="1"><label for="o1_0">Hard to translate outside here</label></div>
+          <div class="opt"><input type="radio" name="o1" id="o1_1" value="Somewhat transferable" data-weight="2"><label for="o1_1">Somewhat transferable</label></div>
+          <div class="opt"><input type="radio" name="o1" id="o1_2" value="Sought after elsewhere" data-weight="3"><label for="o1_2">Sought after elsewhere</label></div>
+        </div>
+      </div>
+      <div class="q">
+        <p class="q-text">People here tend to...</p>
+        <div class="opts">
+          <div class="opt"><input type="radio" name="o2" id="o2_0" value="Deepen a single narrow lane" data-weight="1"><label for="o2_0">Deepen a single narrow lane</label></div>
+          <div class="opt"><input type="radio" name="o2" id="o2_1" value="Grow within their function" data-weight="2"><label for="o2_1">Grow within their function</label></div>
+          <div class="opt"><input type="radio" name="o2" id="o2_2" value="Build depth they can apply across different problems, functions, or contexts" data-weight="3"><label for="o2_2">Build depth they can apply across different problems, functions, or contexts</label></div>
+        </div>
+      </div>
+      <div class="q">
+        <p class="q-text">What people master here is mostly...</p>
+        <div class="opts">
+          <div class="opt"><input type="radio" name="o3" id="o3_0" value="Tied to our internal systems and politics" data-weight="1"><label for="o3_0">Tied to our internal systems and politics</label></div>
+          <div class="opt"><input type="radio" name="o3" id="o3_1" value="A mix of portable and internal" data-weight="2"><label for="o3_1">A mix of portable and internal</label></div>
+          <div class="opt"><input type="radio" name="o3" id="o3_2" value="Portable to other organizations" data-weight="3"><label for="o3_2">Portable to other organizations</label></div>
+        </div>
+      </div>
+      <div class="q">
+        <p class="q-text">If priorities changed next quarter, how much of your critical talent could be redeployed without starting their development over?</p>
+        <div class="opts">
+          <div class="opt"><input type="radio" name="o4" id="o4_0" value="Very little" data-weight="1"><label for="o4_0">Very little</label></div>
+          <div class="opt"><input type="radio" name="o4" id="o4_1" value="Some, within adjacent work" data-weight="2"><label for="o4_1">Some, within adjacent work</label></div>
+          <div class="opt"><input type="radio" name="o4" id="o4_2" value="A meaningful proportion, across multiple priorities" data-weight="3"><label for="o4_2">A meaningful proportion, across multiple priorities</label></div>
+        </div>
+      </div>
+    </div>
+    <div class="pillar">
+      <div class="pillar-head"><h2>Alumni Capital</h2><span class="tag">What stays after they go.</span></div>
+      <p class="pillar-sub">What the organization retains and circulates after people leave.</p>
+      <div class="q">
+        <p class="q-text">When someone leaves, the relationship is...</p>
+        <div class="opts">
+          <div class="opt"><input type="radio" name="a1" id="a1_0" value="Severed" data-weight="1"><label for="a1_0">Severed</label></div>
+          <div class="opt"><input type="radio" name="a1" id="a1_1" value="Politely dropped" data-weight="2"><label for="a1_1">Politely dropped</label></div>
+          <div class="opt"><input type="radio" name="a1" id="a1_2" value="Maintained" data-weight="3"><label for="a1_2">Maintained</label></div>
+        </div>
+      </div>
+      <div class="q">
+        <p class="q-text">Former employees...</p>
+        <div class="opts">
+          <div class="opt"><input type="radio" name="a2" id="a2_0" value="Rarely come back in any form" data-weight="1"><label for="a2_0">Rarely come back in any form</label></div>
+          <div class="opt"><input type="radio" name="a2" id="a2_1" value="Occasionally refer someone" data-weight="2"><label for="a2_1">Occasionally refer someone</label></div>
+          <div class="opt"><input type="radio" name="a2" id="a2_2" value="Send talent and clients back to us" data-weight="3"><label for="a2_2">Send talent and clients back to us</label></div>
+        </div>
+      </div>
+      <div class="q">
+        <p class="q-text">When a person leaves, their knowledge...</p>
+        <div class="opts">
+          <div class="opt"><input type="radio" name="a3" id="a3_0" value="Walks out the door with them" data-weight="1"><label for="a3_0">Walks out the door with them</label></div>
+          <div class="opt"><input type="radio" name="a3" id="a3_1" value="Partially stays" data-weight="2"><label for="a3_1">Partially stays</label></div>
+          <div class="opt"><input type="radio" name="a3" id="a3_2" value="Stays usable by the team" data-weight="3"><label for="a3_2">Stays usable by the team</label></div>
+        </div>
+      </div>
+    </div>
+    <div class="context q"><label for="ctxBox">Anything else about how your organization builds and keeps capability? (optional)</label><textarea id="ctxBox" placeholder="A sentence or two of context helps the read."></textarea></div>
+    <div class="reflective-close q">
+      <p class="reflect-eyebrow">One Last Question</p>
+      <p class="reflect-sub">Not scored. It is here because the answer is usually the most honest thing in the report.</p>
+      <p class="q-text">Honestly: does your organization build capability by design, or does it accumulate it by accident?</p>
+      <div class="opts">
+        <div class="opt"><input type="radio" name="reflection" id="reflection_0" value="by-accident"><label for="reflection_0">By accident entirely. Whatever capability exists here, we did not architect it and could not replicate it deliberately.</label></div>
+        <div class="opt"><input type="radio" name="reflection" id="reflection_1" value="programs-only"><label for="reflection_1">We have programs but no real system. Capability development is an initiative, not an operating principle.</label></div>
+        <div class="opt"><input type="radio" name="reflection" id="reflection_2" value="explicit-practices"><label for="reflection_2">We have explicit practices that work. The design is real but it does not yet run through everything we do.</label></div>
+        <div class="opt"><input type="radio" name="reflection" id="reflection_3" value="systematic"><label for="reflection_3">Systematically. Capability formation is a design principle embedded in how we hire, develop, deploy, and exit people.</label></div>
+      </div>
+    </div>
+  </div>
 
   <button class="run" id="runBtn"><span class="dot"></span> Run the diagnostic</button>
   <p class="note" id="formNote">Answer the questions above, then run the read. Optional context sharpens the diagnosis.</p>
@@ -293,16 +417,16 @@ const ORG_FORMSPREE_ENDPOINT = "https://formspree.io/f/mjgndvkp";
 const PILLARS = [
   {
     key:"density", name:"Density", tag:"Intensity, not tenure.",
-    sub:"How high-challenge the environment actually is.",
+    sub:"How much consequential judgment the work requires and develops.",
     questions:[
       {id:"d1", text:"How early do people own decisions with real consequences?",
        options:["Only after years and a senior title","Once they have proven themselves over time","Early, before tenure or title says they have earned it"]},
-      {id:"d2", text:"When a hard problem lands, where does it go?",
-       options:["It concentrates to a few senior people","A mix, depending on the problem","It distributes to the people who own it"]},
-      {id:"d3", text:"Over the last 18 months, the capability bar for most roles has...",
+      {id:"d2", text:"When an unfamiliar, consequential problem appears, what usually happens?",
+       options:["It returns to the same small group of established experts","Ownership varies depending on the problem and available expertise","Ownership is deliberately distributed, with support proportionate to the risk"]},
+      {id:"d3", text:"Over the last year or so, the capability bar for most roles has...",
        options:["Fallen or drifted","Held steady","Risen"]},
       {id:"d4", text:"The intensity here is mostly tied to...",
-       options:["Sheer volume of work","A bit of both","People growing into harder challenges"]}
+       options:["Sheer volume of work","A bit of both","People taking on greater complexity, judgment, and ownership at a sustainable pace"]}
     ]
   },
   {
@@ -312,9 +436,11 @@ const PILLARS = [
       {id:"o1", text:"If a strong performer left tomorrow, their skills would be...",
        options:["Hard to translate outside here","Somewhat transferable","Sought after elsewhere"]},
       {id:"o2", text:"People here tend to...",
-       options:["Deepen a single narrow lane","Grow within their function","Build range across functions"]},
+       options:["Deepen a single narrow lane","Grow within their function","Build depth they can apply across different problems, functions, or contexts"]},
       {id:"o3", text:"What people master here is mostly...",
-       options:["Tied to our internal systems and politics","A mix of portable and internal","Portable to other organizations"]}
+       options:["Tied to our internal systems and politics","A mix of portable and internal","Portable to other organizations"]},
+      {id:"o4", text:"If priorities changed next quarter, how much of your critical talent could be redeployed without starting their development over?",
+       options:["Very little","Some, within adjacent work","A meaningful proportion, across multiple priorities"]}
     ]
   },
   {
@@ -326,9 +452,7 @@ const PILLARS = [
       {id:"a2", text:"Former employees...",
        options:["Rarely come back in any form","Occasionally refer someone","Send talent and clients back to us"]},
       {id:"a3", text:"When a person leaves, their knowledge...",
-       options:["Walks out the door with them","Partially stays","Stays usable by the team"]},
-      {id:"a4", text:"Rehiring someone who left is...",
-       options:["Stigmatized or not done","Tolerated case by case","Celebrated"]}
+       options:["Walks out the door with them","Partially stays","Stays usable by the team"]}
     ]
   }
 ];
@@ -351,58 +475,13 @@ function quadrantFor(dHigh, oHigh){ return dHigh ? (oHigh?Q.compounding:Q.depthT
 const SAMPLE = {
   quadrant:"Depth Trap", density:"high", optionality:"low", alumniCapital:"moderate",
   headline:"You are a high-pressure environment that builds deep skill people cannot easily carry anywhere else.",
-  read:"Your people work hard and they work close to the edge, which is why your density reads high. The problem is what that intensity produces. The capability your teams build is shaped tightly around your internal systems, your tooling, and the way decisions move through your hierarchy, so it does not travel. People get very good at operating here and much less portable anywhere else.\n\nThat feels like strength from the inside. Performance looks high and tenure looks like loyalty, so the cost stays hidden until someone tries to leave or the ground shifts under you. Each senior departure then carries organizational knowledge out the door, the kind that costs the better part of a year and a replacement hire to rebuild. Your alumni capital is holding at moderate, which is the one thing keeping the position from hardening, because some former people still send talent back and some knowledge stays usable after they go.",
-  leaders:"The work in front of leadership is to widen what the intensity produces, not to dial the intensity down. Build the portable version of the skills your people already have, give them range across functions before the market gives them range for you, and treat the relationships you keep with people who leave as the asset that turns this depth into resilience rather than a trap. How you treat exits determines what you attract at entry, and right now you are quietly training the people the rest of your industry would be glad to hire."
+  read:"Your people work hard and they work close to the edge, which is why your density reads high. The problem is what that intensity produces. The capability your teams build is shaped tightly around your internal systems, your tooling, and the way decisions move through your hierarchy, so it does not travel. People get very good at operating here and much less portable anywhere else.\n\nThat feels like strength from the inside. Performance looks high and tenure looks like loyalty, so the cost stays hidden until someone tries to leave or the ground shifts under you. Each senior departure can carry context and judgment out of the organization that takes significant time, dependency on remaining experts, and external hiring to reconstruct. Your alumni capital is holding at moderate, which is the one thing keeping the position from hardening, because some former people still send talent back and some knowledge stays usable after they go.",
+  leaders:"The work in front of leadership is to widen what the intensity produces, not to dial the intensity down. Build the portable version of the skills your people already have, give them range across functions before the market gives them range for you, and treat the relationships you keep with people who leave as the asset that turns this depth into resilience rather than a trap. The organization is building depth it may struggle to redeploy internally and may not recover easily once it leaves."
 };
 
-const formEl = document.getElementById("form");
-PILLARS.forEach(p=>{
-  const block = document.createElement("div");
-  block.className="pillar";
-  block.innerHTML = `
-    <div class="pillar-head"><h2>${p.name}</h2><span class="tag">${p.tag}</span></div>
-    <p class="pillar-sub">${p.sub}</p>`;
-  p.questions.forEach(q=>{
-    const qd = document.createElement("div");
-    qd.className="q";
-    // Options are authored worst -> best in order, so weight = index + 1 (1..3).
-    let opts = q.options.map((o,i)=>`
-      <div class="opt">
-        <input type="radio" name="${q.id}" id="${q.id}_${i}" value="${o.replace(/"/g,'&quot;')}" data-weight="${i+1}">
-        <label for="${q.id}_${i}">${o}</label>
-      </div>`).join("");
-    qd.innerHTML = `<p class="q-text">${q.text}</p><div class="opts">${opts}</div>`;
-    block.appendChild(qd);
-  });
-  formEl.appendChild(block);
-});
-const ctx = document.createElement("div");
-ctx.className="context q";
-ctx.innerHTML = `<label for="ctxBox">Anything else about how your organization builds and keeps capability? (optional)</label><textarea id="ctxBox" placeholder="A sentence or two of context helps the read."></textarea>`;
-formEl.appendChild(ctx);
-
-// ── Unscored reflective close (ported from the individual-mode synthesis item).
-// Rendered after the eleven scored pillars. Deliberately excluded from collect()
-// and from the answers array, so it can never enter Density, Optionality, or the
-// placement. Captured separately (Plausible prop + lead payload) for research.
-const REFLECTION_OPTS = [
-  {value:"by-accident",        text:"By accident entirely. Whatever capability exists here, we did not architect it and could not replicate it deliberately."},
-  {value:"programs-only",      text:"We have programs but no real system. Capability development is an initiative, not an operating principle."},
-  {value:"explicit-practices", text:"We have explicit practices that work. The design is real but it does not yet run through everything we do."},
-  {value:"systematic",         text:"Systematically. Capability formation is a design principle embedded in how we hire, develop, deploy, and exit people."}
-];
-const reflect = document.createElement("div");
-reflect.className="reflective-close q";
-reflect.innerHTML = `
-  <p class="reflect-eyebrow">One Last Question</p>
-  <p class="reflect-sub">Not scored. It is here because the answer is usually the most honest thing in the report.</p>
-  <p class="q-text">Honestly: does your organization build capability by design, or does it accumulate it by accident?</p>
-  <div class="opts">${REFLECTION_OPTS.map((o,i)=>`
-      <div class="opt">
-        <input type="radio" name="reflection" id="reflection_${i}" value="${o.value}">
-        <label for="reflection_${i}">${o.text}</label>
-      </div>`).join("")}</div>`;
-formEl.appendChild(reflect);
+// Questions, context box and reflective close are server-rendered in #form (5.7).
+// PILLARS and REFLECTION_OPTS remain the data of record; the scorer queries the
+// static inputs by name/id and reads data-weight, exactly as before.
 
 const runBtn = document.getElementById("runBtn");
 const statusEl = document.getElementById("status");
@@ -412,6 +491,11 @@ const orgInput = document.getElementById("orgName");
 const sampleBtn = document.getElementById("sampleBtn");
 let lastDiagnosis = null;
 let lastReflection = "";
+let lastScope = "";
+function scopeHeader(org){
+  const base = org ? `Prepared for ${esc(org)}` : "Confidential organizational read";
+  return lastScope ? `${base} &middot; Scope: ${esc(lastScope)}` : base;
+}
 
 function collect(){
   const answers=[];
@@ -431,6 +515,31 @@ function collect(){
 function esc(s){return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
 function paras(s){return esc(s).split(/\n\n+/).map(t=>`<p>${t.replace(/\n/g," ")}</p>`).join("");}
 function fmtDate(){return new Date().toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});}
+function reflectionEcho(v){ return ({"by-accident":"by accident","programs-only":"through programs, not yet a system","explicit-practices":"by design, though not everywhere yet","systematic":"by deliberate design"})[v] || ""; }
+// State-conditional "Three things to verify" (5.2). Depth Trap supplied; the other
+// three states are intentionally absent until their content is supplied.
+const VERIFY_THREE = {
+  [Q.depthTrap]: [
+    "How many critical problems default to the same small group of people?",
+    "What proportion of critical roles have been filled through cross-functional internal movement?",
+    "When an experienced person leaves, what knowledge and relationships remain practically usable six months later?"
+  ]
+};
+function threeThingsHTML(quadrant){
+  const items = VERIFY_THREE[quadrant];
+  if(!items || !items.length) return "";
+  return `<div class="verify-block"><p class="lh">Three things to verify</p><ul style="margin:8px 0 0;padding-left:20px;line-height:1.7;">${items.map(t=>`<li style="margin:0 0 8px;">${t}</li>`).join("")}</ul></div>`;
+}
+// State-conditional "First move" (5.3). Depth Trap supplied; the other three
+// states are intentionally absent until their content is supplied.
+const FIRSTMOVE = {
+  [Q.depthTrap]: "Select one critical capability and identify whether at least three people can apply it outside the system or context in which they learned it."
+};
+function firstMoveHTML(quadrant){
+  const move = FIRSTMOVE[quadrant];
+  if(!move) return "";
+  return `<div class="firstmove-block"><p class="lh">First move</p><p style="margin:8px 0 0;line-height:1.7;">${move}</p></div>`;
+}
 
 function renderMatrix(active){
   let cells = GRID_ORDER.map(name=>{
@@ -468,9 +577,13 @@ function reportMatrix(active){
 
 function renderResult(d){
   lastDiagnosis = d;
+  const org = orgInput.value.trim();
   resultEl.innerHTML = `
+    <p class="scope-header" style="font-size:13px;color:var(--sand-mute);margin:0 0 16px;">${scopeHeader(org)}</p>
+    ${reflectionEcho(lastReflection) ? `<p style="font-size:15px;line-height:1.7;margin:0 0 20px;">You said your organization builds capability ${reflectionEcho(lastReflection)}. Read what follows against that.</p>` : ""}
     <div class="card">
-      <p class="qd-eyebrow">Your quadrant</p>
+      <p class="levels-note" style="margin:0 0 18px;">This is a directional leadership read rather than a full organizational assessment. It identifies a pattern worth testing against workforce data and against the experience of other leaders in the same scope.</p>
+      <p class="qd-eyebrow">Based on your answers, the pattern most closely resembles</p>
       <div class="qd-name">${esc(d.quadrant)}</div>
       <p class="headline">${esc(d.headline)}</p>
       ${renderMatrix(d.quadrant)}
@@ -481,18 +594,21 @@ function renderResult(d){
       </div>
       <p class="levels-note">Density and optionality set the position in the matrix. Alumni capital is measured separately and does not move it.</p>
       ${d.boundary ? `<p class="boundary-note">${esc(boundaryNote(d))}</p>` : ""}
-    </div>
-    <div class="read">
       ${d.standard ? `<p class="standard-note">Standard reading. The live read was briefly unavailable, so this is the standard reading for your position. Your placement is unchanged.</p>` : ""}
       <div class="read-body">${paras(d.read)}</div>
-      <div class="leaders">
-        <p class="lh">What this means for leaders</p>
-        ${paras(d.leaders)}
-      </div>
+    </div>
+    <div class="leaders">
+      <p class="lh">What this means for leaders</p>
+      ${paras(d.leaders)}
+    </div>
+    ${threeThingsHTML(d.quadrant)}
+    ${firstMoveHTML(d.quadrant)}
+    <div class="single-cta" style="margin:22px 0;">
+      <a href="work.html?quadrant=${encodeURIComponent(d.quadrant)}#get-in-touch" class="workwith" onclick="window.plausible&&plausible('Diagnostic Work With Me',{props:{quadrant:'${d.quadrant}',from:'result-cta'}})">Send me your reading and I will tell you what I would check first. &rarr;</a>
+      <p style="font-size:14px;line-height:1.7;color:var(--sand-mute);margin:8px 0 0;">There is no proposal attached to this. The first thing worth establishing is whether I can see something you cannot.</p>
     </div>
     <div class="result-actions">
       <button class="makereport" id="reportBtn">Create the report</button>
-      <a class="workwith" href="work.html?quadrant=${encodeURIComponent(d.quadrant)}#get-in-touch" onclick="window.plausible&&plausible('Diagnostic Work With Me',{props:{quadrant:'${d.quadrant}',from:'result'}})">Prefer to talk it through? Work with me &rarr;</a>
       <button class="again-link" id="againBtn">Run another read</button>
     </div>
     <div id="gate"></div>`;
@@ -582,7 +698,7 @@ function submitGate(){
 
 function buildReport(d, org){
   if(!d) return;
-  const prepared = org ? `Prepared for ${esc(org)}` : "Confidential organizational read";
+  const prepared = scopeHeader(org);
   reportEl.innerHTML = `
     <div class="rd-top">
       <div class="rd-brand">
@@ -593,8 +709,10 @@ function buildReport(d, org){
     </div>
     <h2 class="rd-title">The Organizational Diagnostic</h2>
     <p class="rd-prepared">${prepared}</p>
+    ${reflectionEcho(lastReflection) ? `<p style="font-size:15px;line-height:1.7;margin:0 0 16px;">You said your organization builds capability ${reflectionEcho(lastReflection)}. Read what follows against that.</p>` : ""}
+    <p class="rd-frame">This is a directional leadership read rather than a full organizational assessment. It identifies a pattern worth testing against workforce data and against the experience of other leaders in the same scope.</p>
     <p class="rd-frame">A direct read of whether this organization builds capability that lasts or quietly leaks it, measured across density, optionality, and alumni capital, with the cost of its current position named.</p>
-    <p class="rd-quad-label">Position</p>
+    <p class="rd-quad-label">Based on your answers, the pattern most closely resembles</p>
     <p class="rd-quad">${esc(d.quadrant)}</p>
     <p class="rd-headline">${esc(d.headline)}</p>
     ${reportMatrix(d.quadrant)}
@@ -608,11 +726,8 @@ function buildReport(d, org){
     ${d.standard ? `<p class="rd-standard-note">Standard reading. The live read was briefly unavailable, so this is the standard reading for your position. Placement is unchanged.</p>` : ""}
     <div class="rd-read">${paras(d.read)}</div>
     <div class="rd-leaders"><p class="lh">What this means for leaders</p>${paras(d.leaders)}</div>
-    <p class="rd-equation">Density to Optionality to Alumni Capital produces Institutional Resilience.</p>
-    <div class="rd-cta">
-      <span class="rd-cta-text">Ready to work through this position?</span>
-      <a class="rd-cta-link" href="work.html?quadrant=${encodeURIComponent(d.quadrant)}#get-in-touch" onclick="window.plausible&&plausible('Diagnostic Work With Me',{props:{quadrant:'${d.quadrant}',from:'report'}})">Start a conversation &rarr;</a>
-    </div>
+    ${threeThingsHTML(d.quadrant)}
+    ${firstMoveHTML(d.quadrant)}
     <div class="rd-foot"><span>The Density Group &middot; Professional. Authoritative. Credible.</span><span>temidayoafonja.com</span></div>
     <div class="rd-actions">
       <button class="rd-save" id="rdSave">Save as PDF</button>
@@ -628,7 +743,7 @@ function buildReport(d, org){
 }
 
 // ── Deterministic client-side scorer (Organizational Instrument v1.0). ───────
-// Density = mean of 4 items, Optionality = mean of 3, each option weighted 1..3.
+// Density = mean of 4 items, Optionality = mean of 4, each option weighted 1..3.
 // An axis is HIGH only when its mean is strictly greater than 2.0 (exactly 2.0
 // is LOW). Alumni Capital is measured but never moves placement.
 function levelDO(m){ return m <= 2.0 ? "low" : (m < 2.5 ? "moderate" : "high"); }
@@ -712,6 +827,8 @@ async function run(){
   // Unscored reflective close: captured for research, never fed into placement.
   const reflEl = document.querySelector('input[name="reflection"]:checked');
   lastReflection = reflEl ? reflEl.value : "";
+  const scopeEl = document.querySelector('input[name="scope"]:checked');
+  lastScope = scopeEl ? scopeEl.value : "";
 
   let result, standard = false;
   try{
@@ -761,9 +878,14 @@ async function run(){
 
 runBtn.addEventListener("click", run);
 sampleBtn.addEventListener("click", ()=>{
-  renderResult(SAMPLE);
-  buildReport(SAMPLE, orgInput.value.trim() || "Northwind Logistics");
+  // Sample opens in its own tab, out of the form flow, reusing the report machinery.
+  window.open(location.pathname + "?sample=1", "_blank", "noopener");
 });
+if(new URLSearchParams(location.search).get("sample")==="1"){
+  ["form","runBtn","formNote","sampleBtn","status"].forEach(function(id){var el=document.getElementById(id); if(el) el.style.display="none";});
+  document.querySelectorAll(".orgfield,.scope,.rule").forEach(function(el){el.style.display="none";});
+  buildReport(SAMPLE, "Northwind Logistics");
+}
 </script>
 </body>
 </html>
