@@ -11,6 +11,11 @@
   status = 200
 
 [[redirects]]
+  from = "/ai-capability-readiness"
+  to = "/ai-capability-readiness.html"
+  status = 200
+
+[[redirects]]
   from = "/institutional-diagnostic"
   to = "/organizational-diagnostic.html"
   status = 301
