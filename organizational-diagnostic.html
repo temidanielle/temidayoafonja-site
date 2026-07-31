@@ -810,9 +810,14 @@ async function run(){
 
 runBtn.addEventListener("click", run);
 sampleBtn.addEventListener("click", ()=>{
-  renderResult(SAMPLE);
-  buildReport(SAMPLE, orgInput.value.trim() || "Northwind Logistics");
+  // Sample opens in its own tab, out of the form flow, reusing the report machinery.
+  window.open(location.pathname + "?sample=1", "_blank", "noopener");
 });
+if(new URLSearchParams(location.search).get("sample")==="1"){
+  ["form","runBtn","formNote","sampleBtn","status"].forEach(function(id){var el=document.getElementById(id); if(el) el.style.display="none";});
+  document.querySelectorAll(".orgfield,.scope,.rule").forEach(function(el){el.style.display="none";});
+  buildReport(SAMPLE, "Northwind Logistics");
+}
 </script>
 </body>
 </html>
