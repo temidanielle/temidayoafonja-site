@@ -627,7 +627,7 @@ function buildReport(d, org){
 }
 
 // ── Deterministic client-side scorer (Organizational Instrument v1.0). ───────
-// Density = mean of 4 items, Optionality = mean of 3, each option weighted 1..3.
+// Density = mean of 4 items, Optionality = mean of 4, each option weighted 1..3.
 // An axis is HIGH only when its mean is strictly greater than 2.0 (exactly 2.0
 // is LOW). Alumni Capital is measured but never moves placement.
 function levelDO(m){ return m <= 2.0 ? "low" : (m < 2.5 ? "moderate" : "high"); }
