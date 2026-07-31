@@ -446,6 +446,16 @@ function threeThingsHTML(quadrant){
   if(!items || !items.length) return "";
   return `<div class="verify-block"><p class="lh">Three things to verify</p><ul style="margin:8px 0 0;padding-left:20px;line-height:1.7;">${items.map(t=>`<li style="margin:0 0 8px;">${t}</li>`).join("")}</ul></div>`;
 }
+// State-conditional "First move" (5.3). Depth Trap supplied; the other three
+// states are intentionally absent until their content is supplied.
+const FIRSTMOVE = {
+  [Q.depthTrap]: "Select one critical capability and identify whether at least three people can apply it outside the system or context in which they learned it."
+};
+function firstMoveHTML(quadrant){
+  const move = FIRSTMOVE[quadrant];
+  if(!move) return "";
+  return `<div class="firstmove-block"><p class="lh">First move</p><p style="margin:8px 0 0;line-height:1.7;">${move}</p></div>`;
+}
 
 function renderMatrix(active){
   let cells = GRID_ORDER.map(name=>{
@@ -508,6 +518,7 @@ function renderResult(d){
       </div>
     </div>
     ${threeThingsHTML(d.quadrant)}
+    ${firstMoveHTML(d.quadrant)}
     <div class="result-actions">
       <button class="makereport" id="reportBtn">Create the report</button>
       <a class="workwith" href="work.html?quadrant=${encodeURIComponent(d.quadrant)}#get-in-touch" onclick="window.plausible&&plausible('Diagnostic Work With Me',{props:{quadrant:'${d.quadrant}',from:'result'}})">Prefer to talk it through? Work with me &rarr;</a>
@@ -629,6 +640,7 @@ function buildReport(d, org){
     <div class="rd-read">${paras(d.read)}</div>
     <div class="rd-leaders"><p class="lh">What this means for leaders</p>${paras(d.leaders)}</div>
     ${threeThingsHTML(d.quadrant)}
+    ${firstMoveHTML(d.quadrant)}
     <div class="rd-cta">
       <span class="rd-cta-text">Ready to work through this position?</span>
       <a class="rd-cta-link" href="work.html?quadrant=${encodeURIComponent(d.quadrant)}#get-in-touch" onclick="window.plausible&&plausible('Diagnostic Work With Me',{props:{quadrant:'${d.quadrant}',from:'report'}})">Start a conversation &rarr;</a>
