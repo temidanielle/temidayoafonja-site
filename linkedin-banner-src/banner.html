@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  html,body{margin:0;padding:0;}
+  *{box-sizing:border-box;}
+  .canvas{
+    position:relative;
+    width:1584px;height:396px;
+    background:#0f2347;
+    overflow:hidden;
+    font-family:'DM Sans',sans-serif;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:geometricPrecision;
+  }
+
+  /* subtle vertical hairline dividing the open left from the text block */
+  .rule{
+    position:absolute;
+    left:648px;
+    top:112px;
+    width:1px;height:132px;
+    background:rgba(201,168,76,0.28);
+  }
+
+  /* text block, weighted to the centre-right */
+  .block{
+    position:absolute;
+    left:700px;
+    top:96px;
+    width:800px;
+  }
+
+  .kicker{
+    font-family:'DM Sans',sans-serif;
+    font-weight:500;
+    font-size:14px;
+    letter-spacing:0.36em;
+    text-transform:uppercase;
+    color:#c9a84c;
+    margin:0;
+  }
+
+  .headline{
+    font-family:'Cormorant Garamond',serif;
+    font-weight:400;
+    font-size:47px;
+    line-height:1.08;
+    letter-spacing:0.005em;
+    color:#f5f0e8;
+    margin:32px 0 0 0;
+  }
+
+  .support{
+    font-family:'DM Sans',sans-serif;
+    font-weight:500;
+    font-size:19px;
+    line-height:1.6;
+    letter-spacing:0.006em;
+    color:#c3cdd7;
+    margin:26px 0 0 0;
+    max-width:600px;
+  }
+
+  /* restrained brand signature, bottom-right */
+  .sig{
+    position:absolute;
+    right:90px;
+    bottom:44px;
+    display:flex;
+    align-items:center;
+    gap:18px;
+  }
+  .mark{
+    display:grid;
+    grid-template-columns:repeat(2,13px);
+    grid-template-rows:repeat(2,13px);
+    gap:4px;
+  }
+  .sq{width:13px;height:13px;border:1.5px solid #c9a84c;}
+  .sq.solid{border:none;background:#c1440e;}
+  .sig-word{
+    font-family:'DM Sans',sans-serif;
+    font-weight:500;
+    font-size:15px;
+    letter-spacing:0.22em;
+    text-transform:uppercase;
+    color:#d7d0c2;
+  }
+</style>
+</head>
+<body>
+  <div class="canvas">
+    <div class="rule"></div>
+    <div class="block">
+      <p class="kicker">Capability Formation</p>
+      <h1 class="headline">Capability that outlasts volatility.</h1>
+      <p class="support">Enterprise advisory for CHROs and CPOs leading AI-era workforce transformation in regulated and mission-critical organizations.</p>
+    </div>
+    <div class="sig">
+      <div class="mark">
+        <span class="sq"></span>
+        <span class="sq"></span>
+        <span class="sq"></span>
+        <span class="sq solid"></span>
+      </div>
+      <span class="sig-word">The Density Group</span>
+    </div>
+  </div>
+</body>
+</html>
