@@ -469,8 +469,9 @@ function reportMatrix(active){
 function renderResult(d){
   lastDiagnosis = d;
   resultEl.innerHTML = `
+    <p class="levels-note" style="margin:0 0 18px;">This is a directional leadership read rather than a full organizational assessment. It identifies a pattern worth testing against workforce data and against the experience of other leaders in the same scope.</p>
     <div class="card">
-      <p class="qd-eyebrow">Your quadrant</p>
+      <p class="qd-eyebrow">Based on your answers, the pattern most closely resembles</p>
       <div class="qd-name">${esc(d.quadrant)}</div>
       <p class="headline">${esc(d.headline)}</p>
       ${renderMatrix(d.quadrant)}
@@ -593,8 +594,9 @@ function buildReport(d, org){
     </div>
     <h2 class="rd-title">The Organizational Diagnostic</h2>
     <p class="rd-prepared">${prepared}</p>
+    <p class="rd-frame">This is a directional leadership read rather than a full organizational assessment. It identifies a pattern worth testing against workforce data and against the experience of other leaders in the same scope.</p>
     <p class="rd-frame">A direct read of whether this organization builds capability that lasts or quietly leaks it, measured across density, optionality, and alumni capital, with the cost of its current position named.</p>
-    <p class="rd-quad-label">Position</p>
+    <p class="rd-quad-label">Based on your answers, the pattern most closely resembles</p>
     <p class="rd-quad">${esc(d.quadrant)}</p>
     <p class="rd-headline">${esc(d.headline)}</p>
     ${reportMatrix(d.quadrant)}
