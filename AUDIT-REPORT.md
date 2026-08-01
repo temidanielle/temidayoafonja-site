@@ -6,7 +6,7 @@ Date: 2026-06-03 · Scope: full site (11 HTML pages, design system, IA, conversi
 
 ## 1. Executive Summary
 
-This is already a *good* site. The visual language — navy/gold/cream, Cormorant Garamond display over DM Sans body, the noise-grain texture, generous whitespace — is genuinely premium and coherent. The intellectual property (the Density → Optionality → Alumni Capital framework, the Career Strategy Matrix, the interactive audit) is differentiated and well-articulated. Voice is consistent and confident.
+This is already a *good* site. The visual language — navy/gold/cream, Cormorant Garamond display over DM Sans body, the noise-grain texture, generous whitespace — is genuinely premium and coherent. The intellectual property (the capability framework built on Density and Optionality as the two placement axes, with Alumni Capital read alongside them, the Career Strategy Matrix, the interactive audit) is differentiated and well-articulated. Voice is consistent and confident.
 
 What separates this from a *world-class* executive-advisory platform is not taste — it's **rigor in the unglamorous layers**: there is no mobile navigation at all, no analytics to measure conversion, no social/SEO metadata (shared links render bare), no third-party credibility (zero named clients, testimonials, logos, or media), and an information architecture with orphaned pages and inconsistent navigation. The brand *looks* like a $50k-engagement firm; the plumbing reads like a personal site.
 

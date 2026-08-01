@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Capability Formation Diagnostic · Temidayo Afonja</title>
-<meta name="description" content="The Capability Formation Diagnostic. Twelve statements for individuals, ten questions for organization leaders, about ten minutes. Density and Optionality set your placement. Alumni Capital is read alongside them.">
+<meta name="description" content="The Capability Formation Diagnostic. Twelve statements for individuals, eleven questions for organization leaders, about ten minutes. Density and Optionality set your placement. Alumni Capital is read alongside them.">
 <link rel="canonical" href="https://temidayoafonja.com/diagnostic">
 
 <!-- Open Graph / Twitter -->
@@ -13,11 +13,11 @@
 <meta property="og:site_name" content="Temidayo Afonja">
 <meta property="og:url" content="https://temidayoafonja.com/diagnostic">
 <meta property="og:title" content="The Capability Formation Diagnostic">
-<meta property="og:description" content="Twelve statements for individuals, ten questions for organization leaders, about ten minutes. A diagnostic that maps where your capability is compounding and where it is quietly being lost.">
+<meta property="og:description" content="Twelve statements for individuals, eleven questions for organization leaders, about ten minutes. Density and Optionality set your placement. Alumni Capital is read alongside them, and maps where capability is compounding and where it is quietly being lost.">
 <meta property="og:image" content="https://temidayoafonja.com/og-diagnostic.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="The Capability Formation Diagnostic">
-<meta name="twitter:description" content="Twelve statements for individuals, ten questions for organization leaders, about ten minutes. A diagnostic that maps where your capability is compounding and where it is quietly being lost.">
+<meta name="twitter:description" content="Twelve statements for individuals, eleven questions for organization leaders, about ten minutes. Density and Optionality set your placement. Alumni Capital is read alongside them, and maps where capability is compounding and where it is quietly being lost.">
 <meta name="twitter:image" content="https://temidayoafonja.com/og-diagnostic.png">
 
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -61,7 +61,6 @@ body .section-label { color:#c9a84c !important; border:1px solid rgba(201,168,76
 body .wordmark, body .fork-wordmark, body .audit-wordmark { color:#c9a84c !important; }
 body .audit-mode-badge { background:#c9a84c !important; color:#0f2347 !important; }
 body .pillar { color:#c9a84c !important; border:1px solid rgba(201,168,76,0.25) !important; }
-body .pillar-arrow { color:#c9a84c !important; }
 body .rationale-card-label { color:#c9a84c !important; }
 body .rationale-card-item::before, body .rationale-who-item::before { color:#c9a84c !important; content:'→' !important; }
 body .fork-card-eyebrow, body .fork-card-cta { color:#c9a84c !important; }
@@ -110,11 +109,11 @@ nav { position:fixed; top:0; left:0; right:0; z-index:9999; padding:18px 40px; d
 .intro-benchmark { font-size:16px; line-height:1.8; color:rgba(245,240,232,0.7); max-width:560px; margin-bottom:44px; font-style:italic; }
 .pillars { display:flex; gap:1px; margin-bottom:16px; flex-wrap:wrap; justify-content:center; align-items:stretch; }
 .pillar { padding:12px 22px; border:1px solid rgba(201,168,76,0.25); font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:#c9a84c; display:flex; align-items:center; }
-.pillar-arrow { padding:12px 8px; border-top:1px solid var(–gold-border); border-bottom:1px solid var(–gold-border); color:#c9a84c; font-size:11px; display:flex; align-items:center; }
-.pillar-principle { flex-direction:column; align-items:center; justify-content:center; gap:5px; padding:8px 22px; margin-left:10px; transition:border-color 0.2s ease; }
-.pillar-eyebrow { font-size:8px; font-weight:500; letter-spacing:0.22em; text-transform:uppercase; color:rgba(201,168,76,0.55); }
-.pillar-principle-label { color:#c9a84c; text-decoration:none; font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; }
-.pillar-principle:hover { border-color:#c9a84c; }
+.pillar-principle { display:flex; align-items:center; margin-left:16px; padding-left:16px; border-left:1px solid var(--gold-border); }
+.pillar-cross { padding:12px 10px; color:var(--gold); font-size:13px; display:flex; align-items:center; }
+.pillar-principle-label { color:var(--gold); text-decoration:underline; text-underline-offset:3px; text-decoration-thickness:1px; font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; display:flex; align-items:center; padding:12px 4px; transition:color 0.2s ease; }
+.pillar-principle-label:hover { color:var(--gold-light) !important; text-decoration-thickness:2px; }
+.pillar-principle-label:focus-visible { outline:2px solid var(--gold); outline-offset:3px; }
 .pillars-caption { width:100%; max-width:540px; margin:0 auto 44px; font-size:12px; line-height:1.65; color:rgba(245,240,232,0.5); text-align:center; }
 .rationale-block { width:100%; max-width:720px; margin-bottom:44px; }
 .rationale-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:2px; margin-bottom:2px; }
@@ -226,6 +225,9 @@ border-color: rgba(201,168,76,0.5) !important;
 .score-pill-val { font-family:‘Cormorant Garamond’,serif; font-size:22px; color:#f5f0e8; }
 .score-bar-wrap { height:2px; background:var(–slate-dim); margin-top:6px; }
 .score-bar-fill { height:100%; background:#c9a84c; transition:width 0.4s ease; }
+.score-pill-note { display:none; font-size:11px; line-height:1.4; color:#8ba0b4; margin-top:2px; }
+.alumni-unscored .score-pill-val, .alumni-unscored .score-bar-wrap { display:none; }
+.alumni-unscored .score-pill-note { display:block; }
 .live-insight { border:1px solid rgba(201,168,76,0.25); padding:16px 18px; background:rgba(201,168,76,0.14); flex-shrink:0; }
 .live-insight-label { font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:#c9a84c; margin-bottom:8px; font-weight:500; }
 .live-insight-text { font-size:13px; line-height:1.6; color:#f5f0e8; font-style:italic; }
@@ -302,6 +304,7 @@ nav { padding:16px 20px; }
 .fork-cards { flex-direction:column; align-items:center; }
 .rationale-grid { grid-template-columns:1fr; }
 .rationale-who { flex-direction:column; gap:12px; }
+.pillar-principle { border-left:none; padding-left:0; }
 }
 </style>
 
@@ -333,11 +336,9 @@ nav { padding:16px 20px; }
   <p class="intro-benchmark">Built from eighteen years of patterns across Big 4 consulting, global life sciences, and high-growth technology. Not survey averages. Real conditions, mapped honestly for the person inside them and the leader designing them.</p>
   <div class="pillars">
     <div class="pillar">Density</div>
-    <div class="pillar-arrow">&rarr;</div>
+    <div class="pillar-cross" aria-hidden="true">&times;</div>
     <div class="pillar">Optionality</div>
-    <div class="pillar-arrow">&rarr;</div>
-    <div class="pillar pillar-principle">
-      <span class="pillar-eyebrow">Principle 06</span>
+    <div class="pillar-principle">
       <a class="pillar-principle-label" href="/principles.html#principle-06">Alumni Capital</a>
     </div>
   </div>
@@ -349,7 +350,7 @@ nav { padding:16px 20px; }
         <div class="rationale-card-items">
           <div class="rationale-card-item">Most people cannot describe what their environments have done to their capability until they are forced to look.</div>
           <div class="rationale-card-item">The framework surfaces what is compounding and what is quietly being consumed.</div>
-          <div class="rationale-card-item">Twelve statements for individuals, ten questions for organization leaders. A diagnostic that belongs to you.</div>
+          <div class="rationale-card-item">Twelve statements for individuals, eleven questions for organization leaders. A diagnostic that belongs to you.</div>
         </div>
       </div>
       <div class="rationale-card">
@@ -474,7 +475,7 @@ nav { padding:16px 20px; }
     <div class="scores-row" style="margin-top:16px;">
       <div class="score-pill"><div class="score-pill-label">Density</div>       <div class="score-pill-val" id="dVal">&middot;</div><div class="score-bar-wrap"><div class="score-bar-fill" id="dBar" style="width:0%"></div></div></div>
       <div class="score-pill"><div class="score-pill-label">Optionality</div>   <div class="score-pill-val" id="oVal">&middot;</div><div class="score-bar-wrap"><div class="score-bar-fill" id="oBar" style="width:0%"></div></div></div>
-      <div class="score-pill" id="alumniPill"><div class="score-pill-label">Alumni Capital</div><div class="score-pill-val" id="aVal">&middot;</div><div class="score-bar-wrap"><div class="score-bar-fill" id="aBar" style="width:0%"></div></div></div>
+      <div class="score-pill" id="alumniPill"><div class="score-pill-label">Alumni Capital</div><div class="score-pill-val" id="aVal">&middot;</div><div class="score-bar-wrap"><div class="score-bar-fill" id="aBar" style="width:0%"></div></div><div class="score-pill-note" id="alumniPillNote">Read alongside your placement, not scored here.</div></div>
     </div>
     <div class="live-insight" id="liveInsight">
       <div class="live-insight-label">Live Signal</div>
@@ -545,7 +546,7 @@ nav { padding:16px 20px; }
 <!-- SCREEN 5: GATE (post-audit) -->
 
 <div id="gate" class="screen">
-  <div class="gate-eyebrow" id="gateEyebrow">Diagnostic Complete &middot; 10 of 10</div>
+  <div class="gate-eyebrow" id="gateEyebrow">Diagnostic Complete</div>
   <h2 class="gate-headline">You have done something most people do not. You looked honestly.</h2>
   <p class="gate-sub">Enter your details to receive your full Capability Formation diagnosis: quadrant placement, risk profile, and a clear read of where you stand.</p>
   <div class="gate-form">
@@ -610,6 +611,7 @@ nav { padding:16px 20px; }
     <div class="results-sub" id="resultsSub"></div>
     <div class="results-celebration" id="resultsCelebration" style="display:none;"></div>
     <div class="score-cards" id="scoreCards"></div>
+    <div class="results-section" id="alumniWritten" style="display:none;margin-bottom:32px;"></div>
     <div class="results-section" style="background:rgba(201,168,76,0.06);border:1px solid rgba(201,168,76,0.2);padding:28px 28px 20px;margin-bottom:32px;">
       <div class="results-section-title" style="margin-bottom:14px;">What This Result Means</div>
       <div id="resultsSummary" style="font-size:16px;line-height:1.85;color:rgba(245,240,232,0.88);"></div>
@@ -1269,7 +1271,7 @@ function updateMatrix() {
     document.getElementById("oBar").style.width=Math.min(100,(s.optionality/30)*100)+"%";
     document.getElementById("dVal").textContent=anyD?String(s.density):"·";
     document.getElementById("oVal").textContent=anyO?String(s.optionality):"·";
-    var ap=document.getElementById("alumniPill"); if(ap) ap.style.display="none";
+    var ap=document.getElementById("alumniPill"); if(ap){ ap.style.display=""; ap.classList.add("alumni-unscored"); }
     document.getElementById("matrixDot").style.left=(anyO?oP:50)+"%";
     document.getElementById("matrixDot").style.top=(anyD?(100-dP):50)+"%";
     ["q-depth","q-compound","q-stagnant","q-fragile"].forEach(function(id){
@@ -1338,6 +1340,8 @@ function showResults(name) {
     var elInd=document.getElementById("scoreCards");
     elInd.className="score-cards";
     elInd.innerHTML=sc;
+    var aw=document.getElementById("alumniWritten");
+    if(aw){ aw.style.display="block"; aw.innerHTML='<div class="results-section-title" style="margin-bottom:14px;">Alumni Capital</div><p style="font-size:16px;line-height:1.85;color:rgba(245,240,232,0.88);">Alumni Capital is the third pillar of the framework, and it is the one this diagnostic reads rather than scores. It asks what remains reachable after you leave a place: the relationships that still open doors, the reputation that travels without you in the room, the people who still send opportunities your way. Your placement above is set by Density and Optionality. Alumni Capital sits alongside it as the question worth carrying out of this reading: when you leave, what stays valuable, and to whom.</p>'; }
   } else {
     var dS=s.d||0, oS=s.o||0, aS=s.a||0;
     var dL=dS>=3.5?"Dense":dS>=2.5?"Moderate":dS>=1.5?"Thin":"Low";
@@ -1616,6 +1620,9 @@ document.addEventListener("DOMContentLoaded", function(){
     currentQ=0; answers=new Array(questions.length).fill(null);
     document.getElementById("auditModeBadge").textContent="Individual";
     document.getElementById("switchModeBtn").textContent="Switch to org leader diagnostic";
+    // Alumni Capital is read alongside, never scored on the individual instrument.
+    // Keep its tile visible for the whole run with fixed text; no value is ever written into it.
+    var ap=document.getElementById("alumniPill"); if(ap){ ap.classList.add("alumni-unscored"); ap.style.display=""; }
   }
 
   document.getElementById("forkIndividual").addEventListener("click", function(){
