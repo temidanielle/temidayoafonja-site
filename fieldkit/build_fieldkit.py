@@ -386,6 +386,137 @@ def apply_boundary_edit(prims):
             out.append(p)
     return out, changed
 
+# --------------------------------------------------- Instrument v1.1 edits ----
+# Six scoped text corrections for the v1.1 reissue. Each is a fixed-position
+# text swap on the replayed primitives — no reflow of surrounding content, page
+# count unchanged. Line breaks below are pre-measured at the box/column widths.
+NAVY = (0.058824, 0.137255, 0.278431)
+CREAM = (0.960784, 0.941176, 0.909804)
+
+def _tp(x, f, font, size, fill, s):
+    return ("text", (1.0, 0.0, 0.0, 1.0, x, f), font, size, fill, s)
+
+# EDIT 1 (page 5) — evidence rule -> evidence protocol (2 lines -> 3, fits box)
+E1_OLD1 = ("The evidence rule: under each score, write the single piece of evidence "
+           "from the last ninety days that supports it. Any")
+E1_OLD2 = ("3 or higher without evidence drops to a 2 (a 1 or a 2 needs no defense). "
+           "An intention is not evidence.")
+E1_NEW = [
+    "The evidence protocol: under each score, write the evidence from the last ninety days. Every score, in both",
+    "directions. A 4 or 5 needs a clear positive instance. A 3 needs the mixed or inconsistent pattern. A 1 or 2 needs what",
+    "happened instead, a counterexample, or no qualifying instance. An intention is not evidence.",
+]
+# EDIT 2 (page 6) — add uncertainty rule above the "guess with decimal points" line
+E2_ANCHOR = "A score without an evidence line is a guess with decimal points."
+E2_NEW = [
+    "If you cannot support a score either way, write your most defensible number and add a question mark: 3?, 4?, 2?. Do",
+    "not force it downward and do not default to a 3. One or two marked items make the axis provisional; three or more",
+    "mean you do not have ninety days of evidence on that axis. A finding about the window, not a low score.",
+]
+# EDIT 3 (page 9) — drop retention/effectiveness clause
+E3_OLD = [
+    "Four states, one common fact: the number was a map, and the move it pointed to worked. Full cases, including the",
+    "organizational engagements behind the retention and effectiveness numbers, live at",
+    "temidayoafonja.com/case-studies.",
+]
+E3_NEW = [
+    "Four states, one common fact: the number was a map, and the move it pointed to worked. Full cases live at",
+    "temidayoafonja.com/case-studies.",
+]
+# EDIT 4 (page 19) — Cohort -> live Capability Position Read
+E4_OLD = [
+    "self-assessment ever written. A professional read exists for exactly this reason. When the Capability Formation",
+    "Cohort opens, that is the seat it fills, and Field Kit owners hear first.",
+]
+E4_NEW = [
+    "self-assessment ever written. A calibrated read exists for exactly this reason. That is what the live Capability",
+    "Position Read does: you score, you are corrected against evidence, and you score again.",
+]
+# EDIT 5 (page 23) — Cohort -> Capability Position Read (centred, cream)
+E5_OLD = [
+    "Both belong in other hands: a written read of your position, live calibration, and a dated",
+    "ninety-day move plan. That is what the Capability Formation Cohort is being built to do,",
+    "and Field Kit owners get first notice when it opens.",
+]
+E5_NEW = [
+    "Both belong in other hands: a live calibration, where you are corrected against",
+    "evidence rather than against yourself. That is what the Capability Position Read does.",
+]
+E5_CENTER = 306.0
+# EDIT 6 (page 2) — Cohort -> session (P.S. line, drawn glyph-by-glyph)
+E6_OLD = "people who bring them get first notice when a Cohort opens."
+E6_NEW = "people who bring them get first notice when a session opens."
+E6_FONT, E6_SIZE, E6_F, E6_X = "Helvetica-Oblique", 10.0, 269.5, 54.0
+
+def apply_v11_edits(idx, prims):
+    applied = []
+    def drop(strings):
+        s = set(strings)
+        return [p for p in prims if not (p[0] == "text" and p[5] in s)]
+    def find(s):
+        for p in prims:
+            if p[0] == "text" and p[5] == s:
+                return p
+        return None
+
+    if idx == 4:                                   # EDIT 1
+        p1, p2 = find(E1_OLD1), find(E1_OLD2)
+        if p1 and p2:
+            m1, m2, fn, sz, fl = p1[1], p2[1], p1[2], p1[3], p1[4]
+            lead = m1[5] - m2[5]
+            prims = drop([E1_OLD1, E1_OLD2])
+            prims += [_tp(m1[4], m1[5], fn, sz, fl, E1_NEW[0]),
+                      _tp(m2[4], m2[5], fn, sz, fl, E1_NEW[1]),
+                      _tp(m2[4], m2[5] - lead, fn, sz, fl, E1_NEW[2])]
+            applied.append("EDIT1")
+    elif idx == 5:                                 # EDIT 2 (addition)
+        a = find(E2_ANCHOR)
+        if a:
+            af = a[1][5]
+            for k, line in enumerate(E2_NEW):      # 3 lines, bottom just above anchor
+                f = af + 45.0 - k * 11.5
+                prims = prims + [_tp(54.0, f, "Helvetica-Oblique", 9.5, NAVY, line)]
+            applied.append("EDIT2")
+    elif idx == 8:                                 # EDIT 3
+        p = find(E3_OLD[0])
+        if p:
+            fn, sz, fl = p[2], p[3], p[4]
+            m = [find(s)[1] for s in E3_OLD]
+            prims = drop(E3_OLD)
+            prims += [_tp(m[0][4], m[0][5], fn, sz, fl, E3_NEW[0]),
+                      _tp(m[1][4], m[1][5], fn, sz, fl, E3_NEW[1])]
+            applied.append("EDIT3")
+    elif idx == 18:                                # EDIT 4
+        p = find(E4_OLD[0])
+        if p:
+            fn, sz, fl = p[2], p[3], p[4]
+            m = [find(s)[1] for s in E4_OLD]
+            prims = drop(E4_OLD)
+            prims += [_tp(m[0][4], m[0][5], fn, sz, fl, E4_NEW[0]),
+                      _tp(m[1][4], m[1][5], fn, sz, fl, E4_NEW[1])]
+            applied.append("EDIT4")
+    elif idx == 22:                                # EDIT 5 (centred)
+        p = find(E5_OLD[0])
+        if p:
+            fn, sz, fl = p[2], p[3], p[4]
+            m = [find(s)[1] for s in E5_OLD]
+            prims = drop(E5_OLD)
+            for k, line in enumerate(E5_NEW):
+                x = E5_CENTER - stringWidth(line, fn, sz) / 2.0
+                prims += [_tp(x, m[k][5], fn, sz, fl, line)]
+            applied.append("EDIT5")
+    elif idx == 1:                                 # EDIT 6 (per-glyph P.S. line)
+        glyphs = [p for p in prims if p[0] == "text" and abs(p[1][5] - E6_F) < 0.3
+                  and p[2] == E6_FONT and abs(p[3] - E6_SIZE) < 0.1
+                  and p[1][4] >= E6_X - 0.5]
+        recon = "".join(p[5] for p in sorted(glyphs, key=lambda q: q[1][4]))
+        if recon == E6_OLD:
+            keep = [p for p in prims if p not in glyphs]
+            keep.append(_tp(E6_X, E6_F, E6_FONT, E6_SIZE, glyphs[0][4], E6_NEW))
+            prims = keep
+            applied.append("EDIT6")
+    return prims, applied
+
 # ---------------------------------------------------------------- render
 def set_fill(c, col):
     if isinstance(col, tuple) and col and col[0] == "cmyk":
@@ -453,12 +584,14 @@ def draw_widgets(c, specs):
 c = canvas.Canvas(OUT, pagesize=(PAGE_W, PAGE_H))
 c.setTitle("The Capability Formation Field Kit")
 total_changed = 0
+v11_applied = []
 for idx, pageobj in enumerate(order):
     body = raw_objs[pageobj]
     cont = int(re.search(rb'/Contents\s+(\d+)\s+0\s+R', body).group(1))
     fonts = fontmap(pageobj)
     prims = interpret(stream_of(cont), fonts)
     prims, ch = apply_boundary_edit(prims); total_changed += ch
+    prims, applied = apply_v11_edits(idx, prims); v11_applied.extend(applied)
     for p in prims:
         if p[0] == "text":
             _, m, font, size, fill, text = p
@@ -491,3 +624,6 @@ print(f"Wrote {OUT}; boundary text lines changed: {total_changed} (expected 2)")
 if UNMAPPED:
     print("WARNING: unmapped font tags (defaulted to Helvetica):", sorted(UNMAPPED))
 assert total_changed == 2, "boundary substitution did not hit exactly 2 lines"
+print("v1.1 edits applied:", v11_applied)
+assert v11_applied == ["EDIT6", "EDIT1", "EDIT2", "EDIT3", "EDIT4", "EDIT5"], \
+    "expected all six v1.1 edits (order = page order)"
