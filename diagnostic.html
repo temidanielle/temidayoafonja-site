@@ -111,10 +111,11 @@ nav { position:fixed; top:0; left:0; right:0; z-index:9999; padding:18px 40px; d
 .pillars { display:flex; gap:1px; margin-bottom:16px; flex-wrap:wrap; justify-content:center; align-items:stretch; }
 .pillar { padding:12px 22px; border:1px solid rgba(201,168,76,0.25); font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; color:#c9a84c; display:flex; align-items:center; }
 .pillar-arrow { padding:12px 8px; border-top:1px solid var(–gold-border); border-bottom:1px solid var(–gold-border); color:#c9a84c; font-size:11px; display:flex; align-items:center; }
-.pillar-principle { flex-direction:column; align-items:center; justify-content:center; gap:5px; padding:8px 22px; margin-left:10px; transition:border-color 0.2s ease; }
-.pillar-eyebrow { font-size:8px; font-weight:500; letter-spacing:0.22em; text-transform:uppercase; color:rgba(201,168,76,0.55); }
-.pillar-principle-label { color:#c9a84c; text-decoration:none; font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; }
-.pillar-principle:hover { border-color:#c9a84c; }
+.pillar-principle { display:flex; align-items:center; margin-left:16px; padding-left:16px; border-left:1px solid var(--gold-border); }
+.pillar-cross { padding:12px 10px; color:var(--gold); font-size:13px; display:flex; align-items:center; }
+.pillar-principle-label { color:var(--gold); text-decoration:underline; text-underline-offset:3px; text-decoration-thickness:1px; font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; display:flex; align-items:center; padding:12px 4px; transition:color 0.2s ease; }
+.pillar-principle-label:hover { color:var(--gold-light) !important; text-decoration-thickness:2px; }
+.pillar-principle-label:focus-visible { outline:2px solid var(--gold); outline-offset:3px; }
 .pillars-caption { width:100%; max-width:540px; margin:0 auto 44px; font-size:12px; line-height:1.65; color:rgba(245,240,232,0.5); text-align:center; }
 .rationale-block { width:100%; max-width:720px; margin-bottom:44px; }
 .rationale-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:2px; margin-bottom:2px; }
@@ -333,9 +334,9 @@ nav { padding:16px 20px; }
   <p class="intro-benchmark">Built from eighteen years of patterns across Big 4 consulting, global life sciences, and high-growth technology. Not survey averages. Real conditions, mapped honestly for the person inside them and the leader designing them.</p>
   <div class="pillars">
     <div class="pillar">Density</div>
-    <div class="pillar-arrow">&rarr;</div>
+    <div class="pillar-cross" aria-hidden="true">&times;</div>
     <div class="pillar">Optionality</div>
-    <div class="pillar pillar-principle">
+    <div class="pillar-principle">
       <a class="pillar-principle-label" href="/principles.html#principle-06">Alumni Capital</a>
     </div>
   </div>
