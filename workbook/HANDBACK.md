@@ -74,14 +74,14 @@ browser viewers (where the totals then need a desktop reader to recompute).
 
 ## Flagged disagreements (resolved openly, not silently)
 
-1. **Cover version string: "WORKBOOK V5.0".** The v5.3 fillable PDF's cover
-   copy literally reads `WORKBOOK V5.0`, while the handoff front-matter says
-   "Workbook content v5.2" and the source filename says v5.3. The authority
-   order makes the v5.3 PDF the source for copy ("take every word from it"), so
-   the printed **`WORKBOOK V5.0`** is reproduced verbatim rather than silently
-   "corrected". This is almost certainly a stale version stamp — say the word
-   and I will set it to v5.2, v5.3, or whatever the intended value is (a
-   one-line change).
+1. **Cover version string — resolved to "WORKBOOK V5.2".** The v5.3 fillable
+   PDF's cover copy literally read `WORKBOOK V5.0`, while the handoff
+   front-matter says "Workbook content v5.2" and the source filename says v5.3 —
+   three different numbers for the same field. Since the handoff spec is first
+   in the authority order and states the workbook **content** version as v5.2,
+   the cover now reads **`WORKBOOK V5.2`** (the stale `V5.0` stamp was almost
+   certainly an oversight). If the intended value is instead the file-revision
+   number v5.3, that is a one-line change — say the word.
 
 2. **Body-text colour.** The palette is emphatic — "do not introduce any colour
    not in this list" — and lists navy for "body headings" but assigns no colour

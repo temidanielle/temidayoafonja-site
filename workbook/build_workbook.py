@@ -457,7 +457,7 @@ def page_cover(c):
            FN["DM"], 9.5, GOLD)
     # version line
     tracked(c, 72, PH - 712,
-            "CAPABILITY FORMATION INSTRUMENT VERSION 1.1   ·   WORKBOOK V5.0   ·   FILLABLE",
+            "CAPABILITY FORMATION INSTRUMENT VERSION 1.1   ·   WORKBOOK V5.2   ·   FILLABLE",
             FN["DM"], 8, GOLD_DEEP, 1.0)
     # fillable notice
     label(c, 72, PH - 736, "THIS IS A FILLABLE DOCUMENT", 8.5, GOLD, 1.6)
