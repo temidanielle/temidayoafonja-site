@@ -225,6 +225,9 @@ border-color: rgba(201,168,76,0.5) !important;
 .score-pill-val { font-family:‘Cormorant Garamond’,serif; font-size:22px; color:#f5f0e8; }
 .score-bar-wrap { height:2px; background:var(–slate-dim); margin-top:6px; }
 .score-bar-fill { height:100%; background:#c9a84c; transition:width 0.4s ease; }
+.score-pill-note { display:none; font-size:11px; line-height:1.4; color:#8ba0b4; margin-top:2px; }
+.alumni-unscored .score-pill-val, .alumni-unscored .score-bar-wrap { display:none; }
+.alumni-unscored .score-pill-note { display:block; }
 .live-insight { border:1px solid rgba(201,168,76,0.25); padding:16px 18px; background:rgba(201,168,76,0.14); flex-shrink:0; }
 .live-insight-label { font-size:9px; letter-spacing:0.2em; text-transform:uppercase; color:#c9a84c; margin-bottom:8px; font-weight:500; }
 .live-insight-text { font-size:13px; line-height:1.6; color:#f5f0e8; font-style:italic; }
@@ -472,7 +475,7 @@ nav { padding:16px 20px; }
     <div class="scores-row" style="margin-top:16px;">
       <div class="score-pill"><div class="score-pill-label">Density</div>       <div class="score-pill-val" id="dVal">&middot;</div><div class="score-bar-wrap"><div class="score-bar-fill" id="dBar" style="width:0%"></div></div></div>
       <div class="score-pill"><div class="score-pill-label">Optionality</div>   <div class="score-pill-val" id="oVal">&middot;</div><div class="score-bar-wrap"><div class="score-bar-fill" id="oBar" style="width:0%"></div></div></div>
-      <div class="score-pill" id="alumniPill"><div class="score-pill-label">Alumni Capital</div><div class="score-pill-val" id="aVal">&middot;</div><div class="score-bar-wrap"><div class="score-bar-fill" id="aBar" style="width:0%"></div></div></div>
+      <div class="score-pill" id="alumniPill"><div class="score-pill-label">Alumni Capital</div><div class="score-pill-val" id="aVal">&middot;</div><div class="score-bar-wrap"><div class="score-bar-fill" id="aBar" style="width:0%"></div></div><div class="score-pill-note" id="alumniPillNote">Read alongside your placement, not scored here.</div></div>
     </div>
     <div class="live-insight" id="liveInsight">
       <div class="live-insight-label">Live Signal</div>
@@ -608,6 +611,7 @@ nav { padding:16px 20px; }
     <div class="results-sub" id="resultsSub"></div>
     <div class="results-celebration" id="resultsCelebration" style="display:none;"></div>
     <div class="score-cards" id="scoreCards"></div>
+    <div class="results-section" id="alumniWritten" style="display:none;margin-bottom:32px;"></div>
     <div class="results-section" style="background:rgba(201,168,76,0.06);border:1px solid rgba(201,168,76,0.2);padding:28px 28px 20px;margin-bottom:32px;">
       <div class="results-section-title" style="margin-bottom:14px;">What This Result Means</div>
       <div id="resultsSummary" style="font-size:16px;line-height:1.85;color:rgba(245,240,232,0.88);"></div>
@@ -1267,7 +1271,7 @@ function updateMatrix() {
     document.getElementById("oBar").style.width=Math.min(100,(s.optionality/30)*100)+"%";
     document.getElementById("dVal").textContent=anyD?String(s.density):"·";
     document.getElementById("oVal").textContent=anyO?String(s.optionality):"·";
-    var ap=document.getElementById("alumniPill"); if(ap) ap.style.display="none";
+    var ap=document.getElementById("alumniPill"); if(ap){ ap.style.display=""; ap.classList.add("alumni-unscored"); }
     document.getElementById("matrixDot").style.left=(anyO?oP:50)+"%";
     document.getElementById("matrixDot").style.top=(anyD?(100-dP):50)+"%";
     ["q-depth","q-compound","q-stagnant","q-fragile"].forEach(function(id){
@@ -1336,6 +1340,8 @@ function showResults(name) {
     var elInd=document.getElementById("scoreCards");
     elInd.className="score-cards";
     elInd.innerHTML=sc;
+    var aw=document.getElementById("alumniWritten");
+    if(aw){ aw.style.display="block"; aw.innerHTML='<div class="results-section-title" style="margin-bottom:14px;">Alumni Capital</div><p style="font-size:16px;line-height:1.85;color:rgba(245,240,232,0.88);">Alumni Capital is the third pillar of the framework, and it is the one this diagnostic reads rather than scores. It asks what remains reachable after you leave a place: the relationships that still open doors, the reputation that travels without you in the room, the people who still send opportunities your way. Your placement above is set by Density and Optionality. Alumni Capital sits alongside it as the question worth carrying out of this reading: when you leave, what stays valuable, and to whom.</p>'; }
   } else {
     var dS=s.d||0, oS=s.o||0, aS=s.a||0;
     var dL=dS>=3.5?"Dense":dS>=2.5?"Moderate":dS>=1.5?"Thin":"Low";
@@ -1614,6 +1620,9 @@ document.addEventListener("DOMContentLoaded", function(){
     currentQ=0; answers=new Array(questions.length).fill(null);
     document.getElementById("auditModeBadge").textContent="Individual";
     document.getElementById("switchModeBtn").textContent="Switch to org leader diagnostic";
+    // Alumni Capital is read alongside, never scored on the individual instrument.
+    // Keep its tile visible for the whole run with fixed text; no value is ever written into it.
+    var ap=document.getElementById("alumniPill"); if(ap){ ap.classList.add("alumni-unscored"); ap.style.display=""; }
   }
 
   document.getElementById("forkIndividual").addEventListener("click", function(){
