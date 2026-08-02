@@ -579,6 +579,8 @@ def _rebuild_page12(prims):                     # EDIT K5 — page 12 becomes th
                 continue                          # old title
             if abs(f-718) < 2 and "Put an interrogator" in s:
                 continue                          # old subtitle
+            if s == "Statements I rescored after calibration, and why:":
+                out.append(_tp12(p[1][4], 615.0, fn, sz, fl, s)); continue   # EDIT L: follow the body copy
             out.append(p)
         elif p[0] == "path":
             bb = _pbbox(p)
@@ -698,6 +700,13 @@ def apply_v12_edits(idx, prims):
         prims = [_swap12(p, "Protective reading: test your state against what the institution is telegraphing",
                          "Questions to investigate, not predictions") for p in prims]
         applied.append("G")
+        prims, nm = _replace_block(prims,                 # M (v1.2.1)
+            {"What to do with a signal: nothing dramatic. Rescore. A Compounding position reads these signals as noise.",
+             "A Fragile or Stagnant one reads them as a clock. Either way, the diagnostic tells you which, and the move",
+             "stays yours to decide."},
+            "What to do with a signal: nothing dramatic. Rescore. What weight a signal deserves depends on what your own two scores say, and that is what the rescore is for. The move stays yours to decide.",
+            492)
+        if nm: applied.append("M")
     elif idx == 16:                               # H
         prims, n = _replace_block(prims,
             {"The exposure: if the rollout consolidates my function, my Optionality score (14) decides how soft the landing is."},
@@ -713,6 +722,14 @@ def apply_v12_edits(idx, prims):
             "The honest note: this read cannot correct its own author. Self-assessment has a structural limitation: the same person is supplying both the evidence and the judgment. That does not make it useless. It means the reading needs a disciplined correction process. A calibrated read exists for exactly this reason. That is what the live Capability Position Read does: you score, you are corrected against evidence, and you score again.",
             492)
         if n: applied.append("I")
+    elif idx == 22:                               # N (v1.2.1) — holding line under the closing block
+        anchor = next((p for p in prims if p[0] == "text" and
+                       p[5] == "evidence rather than against yourself. That is what the Capability Position Read does."), None)
+        if anchor:
+            nline = "It runs live, in small rooms. When the next one opens it is listed at temidayoafonja.com, and the essays list hears first."
+            x = 306.0 - stringWidth(nline, "Helvetica", 9.5) / 2.0     # centred on x=306, a size down
+            prims = prims + [_tp12(x, anchor[1][5] - 14.0, "Helvetica", 9.5, anchor[4], nline)]
+            applied.append("N")
     return prims, applied
 
 # ---------------------------------------------------------------- render
@@ -763,6 +780,9 @@ def widgets_for(pageidx):
             "fill": w.fill_color, "text": w.text_color or [0, 0, 0],
             "fs": w.text_fontsize or 9.0, "flags": w.field_flags or 0,
         })
+    for s in specs:
+        if s["name"] == "recalibrated":          # EDIT L: field follows the body copy (keep w,h)
+            s["y"] = 549.0                        # yTop 243..185; height 58 unchanged
     return specs
 
 def draw_widgets(c, specs):
@@ -849,5 +869,5 @@ if UNMAPPED:
 assert total_changed == 2, "boundary substitution did not hit exactly 2 lines"
 print("v1.1 edits applied:", v11_applied)
 print("v1.2 edits applied:", sorted(set(v12_applied)))
-EXPECT12 = {"A", "C", "D", "E", "F", "G", "H", "I", "K3", "K5"}
+EXPECT12 = {"A", "C", "D", "E", "F", "G", "H", "I", "K3", "K5", "M", "N"}
 assert set(v12_applied) == EXPECT12, f"v1.2 mismatch: {sorted(set(v12_applied))} vs {sorted(EXPECT12)}"
