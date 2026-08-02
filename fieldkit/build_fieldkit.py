@@ -722,14 +722,21 @@ def apply_v12_edits(idx, prims):
             "The honest note: this read cannot correct its own author. Self-assessment has a structural limitation: the same person is supplying both the evidence and the judgment. That does not make it useless. It means the reading needs a disciplined correction process. A calibrated read exists for exactly this reason. That is what the live Capability Position Read does: you score, you are corrected against evidence, and you score again.",
             492)
         if n: applied.append("I")
-    elif idx == 22:                               # N (v1.2.1) — holding line under the closing block
+    elif idx == 22:                               # N (v1.2.1) + O (v1.2.2) — holding line, wrapped to two centred lines
         anchor = next((p for p in prims if p[0] == "text" and
                        p[5] == "evidence rather than against yourself. That is what the Capability Position Read does."), None)
         if anchor:
-            nline = "It runs live, in small rooms. When the next one opens it is listed at temidayoafonja.com, and the essays list hears first."
-            x = 306.0 - stringWidth(nline, "Helvetica", 9.5) / 2.0     # centred on x=306, a size down
-            prims = prims + [_tp12(x, anchor[1][5] - 14.0, "Helvetica", 9.5, anchor[4], nline)]
+            # EDIT O: split the single 493.7pt pointer into two centred lines that fit the page measure.
+            # Line 1 keeps EDIT N's baseline exactly (anchor f - 14.0); line 2 sits one line below at leading 13.5.
+            nlines = ["It runs live, in small rooms. When the next one opens it is listed at",
+                      "temidayoafonja.com, and the essays list hears first."]
+            base1 = anchor[1][5] - 14.0
+            leadings = [0.0, 13.5]
+            for line, lead in zip(nlines, leadings):
+                x = 306.0 - stringWidth(line, "Helvetica", 9.5) / 2.0  # centred on x=306, a size down
+                prims = prims + [_tp12(x, base1 - lead, "Helvetica", 9.5, anchor[4], line)]
             applied.append("N")
+            applied.append("O")
     return prims, applied
 
 # ---------------------------------------------------------------- render
@@ -869,5 +876,5 @@ if UNMAPPED:
 assert total_changed == 2, "boundary substitution did not hit exactly 2 lines"
 print("v1.1 edits applied:", v11_applied)
 print("v1.2 edits applied:", sorted(set(v12_applied)))
-EXPECT12 = {"A", "C", "D", "E", "F", "G", "H", "I", "K3", "K5", "M", "N"}
+EXPECT12 = {"A", "C", "D", "E", "F", "G", "H", "I", "K3", "K5", "M", "N", "O"}
 assert set(v12_applied) == EXPECT12, f"v1.2 mismatch: {sorted(set(v12_applied))} vs {sorted(EXPECT12)}"
