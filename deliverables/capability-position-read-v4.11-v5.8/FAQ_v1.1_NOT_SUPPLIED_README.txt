@@ -1,0 +1,10 @@
+The Participant FAQ and Facilitator Response Guide v1.1 was named as the canonical FAQ to be
+included in this package unchanged. That file was NOT uploaded to the build environment, so it
+could not be included here and was not consistency-checked. No new FAQ was created (per instruction).
+
+To complete the package: upload
+  Capability_Position_Read_Participant_FAQ_and_Facilitator_Response_Guide_v1.1.docx
+and it will be added and checked against Instrument v1.1, the two-hour duration, the privacy
+language, the staged workbooks, the included Field Kit, the no-directive boundary, the
+no-psychometric-validation-claim boundary, the no-team-administration boundary, and the
+no-written-read promise.
