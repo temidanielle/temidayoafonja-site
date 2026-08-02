@@ -47,7 +47,7 @@ OLD_L1 = "The boundary rule: within a point or two of the line on either axis, t
 OLD_L2 = "read both neighboring states. Boundary positions move fastest, in both directions."
 NEW_PARAGRAPH = ("The boundary rule: if either score falls between 17 and 21, even a high one, "
                  "treat yourself as standing on the boundary and read both neighboring states. "
-                 "Boundary positions move fastest, in both directions.")
+                 "Small changes matter more near a boundary by construction.")   # EDIT B (v1.2)
 
 def wrap(text, font, size, width):
     lines, cur = [], ""
@@ -517,6 +517,204 @@ def apply_v11_edits(idx, prims):
             applied.append("EDIT6")
     return prims, applied
 
+# ================= Instrument v1.2 reconciliation patch =================
+NAVY12 = (0.058824, 0.137255, 0.278431)
+GRAY12 = (0.101961, 0.101961, 0.101961)
+RUST12 = (0.756863, 0.266667, 0.054902)
+GOLD12 = (0.788235, 0.658824, 0.298039)
+CREAM12 = (0.960784, 0.941176, 0.909804)
+
+def _tp12(x, f, font, size, fill, s):
+    return ("text", (1.0, 0.0, 0.0, 1.0, x, f), font, size, fill, s)
+
+def _close12(a, b, tol=0.02):
+    return isinstance(a, tuple) and len(a) == 3 and all(abs(a[i]-b[i]) < tol for i in range(3))
+
+def _pbbox(p):
+    xs, ys = [], []
+    for sp in p[2]:
+        for seg in sp:
+            for pt in seg[1:]:
+                if isinstance(pt, tuple):
+                    xs.append(pt[0]); ys.append(pt[1])
+    return (min(xs), min(ys), max(xs), max(ys)) if xs else None
+
+def _swap12(p, old, new):
+    return ("text", p[1], p[2], p[3], p[4], new) if (p[0] == "text" and p[5] == old) else p
+
+def _replace_block(prims, old_set, new_text, width, x=None, first_f=None,
+                   leading=None, font=None, size=None, fill=None):
+    matched = [p for p in prims if p[0] == "text" and p[5] in old_set]
+    if len(matched) < len(old_set):
+        return prims, 0
+    matched.sort(key=lambda p: -p[1][5])
+    ref = matched[0]
+    X = x if x is not None else ref[1][4]
+    F0 = first_f if first_f is not None else ref[1][5]
+    fn = font or ref[2]; sz = size or ref[3]; fl = fill if fill is not None else ref[4]
+    if leading is None:
+        leading = (matched[0][1][5] - matched[1][1][5]) if len(matched) >= 2 else 13.0
+    out = [p for p in prims if not (p[0] == "text" and p[5] in old_set)]
+    lines = wrap(new_text, fn, sz, width)
+    for k, ln in enumerate(lines):
+        out.append(_tp12(X, F0 - k*leading, fn, sz, fl, ln))
+    return out, len(lines)
+
+CAPTURED_P12 = [None]   # original page-12 prims, kept for building page 24
+
+def _rebuild_page12(prims):                     # EDIT K5 — page 12 becomes the rescore page
+    out = []
+    for p in prims:
+        if p[0] == "text":
+            s, fl, fn, sz, f = p[5], p[4], p[2], p[3], p[1][5]
+            if s == ">_":
+                continue
+            if fn == "Courier":
+                continue                          # instructions + prompt -> appendix
+            if fn == "Helvetica" and abs(sz-10.5) < 0.1 and _close12(fl, GRAY12):
+                continue                          # old intro paragraph
+            if _close12(fl, RUST12) and "Self-honesty has a ceiling" in s:
+                continue                          # old closing tagline
+            if abs(f-738) < 2 and "Self-Calibration Prompt" in s:
+                continue                          # old title
+            if abs(f-718) < 2 and "Put an interrogator" in s:
+                continue                          # old subtitle
+            out.append(p)
+        elif p[0] == "path":
+            bb = _pbbox(p)
+            if p[1] == "fill" and _close12(p[4], NAVY12) and bb and bb[3] < 650:
+                continue                          # navy prompt panel
+            if bb and bb[0] >= 53 and bb[2] <= 79 and bb[1] >= 725:
+                continue                          # terminal icon box (moves with prompt)
+            out.append(p)
+        else:
+            out.append(p)
+    out.append(_tp12(88, 738, "Times-Bold", 19.0, CREAM12, "The Rescore Note"))
+    out.append(_tp12(88, 718, "Helvetica", 10.0, GOLD12, "What the three checks changed"))
+    body = ("Run the three misreadings against your twelve scores before you accept them. "
+            "Where a score does not survive the check, change it and write why. A score you "
+            "defended and kept is a finding too, so record those as well.")
+    for k, ln in enumerate(wrap(body, "Helvetica", 10.5, 492)):
+        out.append(_tp12(54, 675 - k*14, "Helvetica", 10.5, GRAY12, ln))
+    out.append(_tp12(54, 66, "Times-BoldItalic", 11.5, RUST12,
+                     "Self-honesty has a ceiling. The three checks raise it. They do not remove it."))
+    out.append(_tp12(54, 52, "Helvetica-Oblique", 9.8, NAVY12,
+                     "If you want something to argue with your numbers, the Self-Calibration Prompt is in the appendix. It is optional."))
+    return out
+
+def _build_page24(orig):                        # EDIT K/K6 — appendix page
+    SHIFT = -77.0                                # move panel/instructions/prompt below the disclaimer
+    out = []
+    for p in orig:
+        if p[0] == "text":
+            s, fl, fn, sz, m, f = p[5], p[4], p[2], p[3], p[1], p[1][5]
+            if fn == "Helvetica" and abs(sz-10.5) < 0.1 and _close12(fl, GRAY12):
+                continue                          # drop old intro (replaced by disclaimer)
+            if _close12(fl, RUST12) and "Self-honesty has a ceiling" in s:
+                continue                          # drop tagline
+            if abs(f-264.3) < 2 and "Statements I rescored" in s:
+                continue                          # rescore heading stays on page 12
+            if abs(f-738) < 2 and "Self-Calibration Prompt" in s:
+                out.append(_tp12(88, 738, fn, sz, fl, "Appendix: The Self-Calibration Prompt")); continue
+            if abs(f-31) < 2 and s.strip() == "12":
+                out.append(_tp12(m[4], f, fn, sz, fl, "24")); continue
+            if fn == "Courier":
+                out.append(("text", (m[0], m[1], m[2], m[3], m[4], f+SHIFT), fn, sz, fl, s)); continue
+            out.append(p)                         # keep subtitle, ">_", footer text
+        elif p[0] == "path":
+            bb = _pbbox(p)
+            if p[1] == "fill" and _close12(p[4], NAVY12) and bb and bb[3] < 650:
+                newsub = []
+                for sp in p[2]:
+                    ns = []
+                    for seg in sp:
+                        if seg[0] == "h":
+                            ns.append(seg)
+                        else:
+                            ns.append((seg[0],) + tuple((pt[0], pt[1]+SHIFT) for pt in seg[1:]))
+                    newsub.append(ns)
+                out.append(("path", p[1], newsub, p[3], p[4], p[5])); continue
+            out.append(p)
+        else:
+            out.append(p)
+    disc = [
+        "This appendix is optional. Nothing else in the kit requires an AI assistant, and a read completed without one is complete.",
+        "If you use it, notice where the text goes. Your scores leave your control the moment you paste them, and the system on the other side may retain them. Paste numbers and evidence you would be comfortable having stored. Keep out your employer's name, your colleagues' names, and anything you hold in confidence.",
+        "What this prompt does is keep asking for evidence after you have stopped asking yourself. That is useful and it is not calibration. It cannot correct its own author any more than you can, and it is built not to advise you. Judgment stays human.",
+    ]
+    f = 675.0
+    for para in disc:
+        for ln in wrap(para, "Helvetica", 10.5, 492):
+            out.append(_tp12(54, f, "Helvetica", 10.5, GRAY12, ln)); f -= 14.0
+        f -= 8.0
+    return out
+
+def apply_v12_edits(idx, prims):
+    applied = []
+    if idx == 2:                                  # K3 contents line
+        new = "The three misreadings, worked examples, and the rescore note"
+        prims = [_swap12(p, "The three misreadings, worked examples, and the self-calibration prompt", new) for p in prims]
+        if any(p[0] == "text" and p[5] == new for p in prims):
+            applied.append("K3")
+    elif idx == 6:                                # A
+        prims, n = _replace_block(prims,
+            {"Nineteen or higher is high on each axis. Your state, not your job title, is what",
+             "determines your exposure."},
+            "Nineteen or higher is high on each axis. Your current state reveals a form of exposure your job title cannot.",
+            460)
+        if n: applied.append("A")
+    elif idx == 7:                                # C delete
+        old = "How you treat exits determines what you attract at entry. Your state decides how soon that matters."
+        b = len(prims); prims = [p for p in prims if not (p[0] == "text" and p[5] == old)]
+        if len(prims) < b: applied.append("C")
+    elif idx == 10:                               # D
+        prims, n = _replace_block(prims,
+            {'"My Optionality is 14. My capability is trapped in',
+             'company language and low outside visibility. That is',
+             'a fact about exposure, not a measure of worth. The',
+             'score tells me what to fix."'},
+            '"My Optionality is 14. A low Optionality score may reflect context-bound capability, weak translation, limited exposure, or a combination. It is not a verdict on my ability or worth. The score tells me what to investigate."',
+            235)
+        if n: applied.append("D")
+    elif idx == 11:                               # K5 page 12 rebuild (+ capture for page 24)
+        CAPTURED_P12[0] = list(prims)
+        prims = _rebuild_page12(prims); applied.append("K5")
+    elif idx == 13:                               # E
+        prims, n = _replace_block(prims,
+            {"Read those four questions again and notice what they are: Density and Optionality, asked from the",
+             "institution's side of the table. The diagnostic you just scored is the same conversation, run on yourself first."},
+            "These are questions institutional rooms often weigh. Density and Optionality help you read the formation and portability questions underneath them. The diagnostic you just scored runs that reading on yourself first.",
+            492)
+        if n: applied.append("E")
+    elif idx == 14:                               # F + G
+        prims, n = _replace_block(prims,
+            {"Restructurings are decided quietly and announced suddenly, but they telegraph. None of these signals",
+             "means a decision has been made about you. Each one means the category of decision is being prepared,",
+             "and your state determines your exposure to it."},
+            "None of these signals means a decision has been made about you, and none of them predicts one. They identify questions that should be answered before you treat a position as secure.",
+            492)
+        if n: applied.append("F")
+        prims = [_swap12(p, "Early Signals", "Position Exposure Signals") for p in prims]
+        prims = [_swap12(p, "Protective reading: test your state against what the institution is telegraphing",
+                         "Questions to investigate, not predictions") for p in prims]
+        applied.append("G")
+    elif idx == 16:                               # H
+        prims, n = _replace_block(prims,
+            {"The exposure: if the rollout consolidates my function, my Optionality score (14) decides how soft the landing is."},
+            "The exposure: if the rollout consolidates my function, my Optionality score (14) helps shape how soft the landing is.",
+            466)
+        if n: applied.append("H")
+    elif idx == 18:                               # I
+        prims, n = _replace_block(prims,
+            {"The honest note: this read cannot correct its own author. It is built from your scores, filtered through your blind",
+             "spots, by the one person structurally unable to see them. That is not a flaw in you; it is a property of every",
+             "self-assessment ever written. A calibrated read exists for exactly this reason. That is what the live Capability",
+             "Position Read does: you score, you are corrected against evidence, and you score again."},
+            "The honest note: this read cannot correct its own author. Self-assessment has a structural limitation: the same person is supplying both the evidence and the judgment. That does not make it useless. It means the reading needs a disciplined correction process. A calibrated read exists for exactly this reason. That is what the live Capability Position Read does: you score, you are corrected against evidence, and you score again.",
+            492)
+        if n: applied.append("I")
+    return prims, applied
+
 # ---------------------------------------------------------------- render
 def set_fill(c, col):
     if isinstance(col, tuple) and col and col[0] == "cmyk":
@@ -581,17 +779,7 @@ def draw_widgets(c, specs):
             fieldFlags=s["flags"], forceBorder=True,
         )
 
-c = canvas.Canvas(OUT, pagesize=(PAGE_W, PAGE_H))
-c.setTitle("The Capability Formation Field Kit")
-total_changed = 0
-v11_applied = []
-for idx, pageobj in enumerate(order):
-    body = raw_objs[pageobj]
-    cont = int(re.search(rb'/Contents\s+(\d+)\s+0\s+R', body).group(1))
-    fonts = fontmap(pageobj)
-    prims = interpret(stream_of(cont), fonts)
-    prims, ch = apply_boundary_edit(prims); total_changed += ch
-    prims, applied = apply_v11_edits(idx, prims); v11_applied.extend(applied)
+def render_prims(c, prims):
     for p in prims:
         if p[0] == "text":
             _, m, font, size, fill, text = p
@@ -617,13 +805,49 @@ for idx, pageobj in enumerate(order):
                 set_stroke(c, stroke)
                 c.drawPath(build_path(c, subpaths), stroke=1, fill=0)
             c.restoreState()
-    draw_widgets(c, widgets_for(idx))
+
+c = canvas.Canvas(OUT, pagesize=(PAGE_W, PAGE_H))
+c.setTitle("The Capability Formation Field Kit")
+c.setAuthor("Temidayo Afonja")                                   # EDIT J
+c.setCreator("The Density Group")
+c.setSubject("A self-diagnostic for reading your capability position")
+c.setKeywords("capability formation, density, optionality, instrument v1.1")
+total_changed = 0
+v11_applied = []
+v12_applied = []
+for idx, pageobj in enumerate(order):
+    body = raw_objs[pageobj]
+    cont = int(re.search(rb'/Contents\s+(\d+)\s+0\s+R', body).group(1))
+    fonts = fontmap(pageobj)
+    prims = interpret(stream_of(cont), fonts)
+    prims, ch = apply_boundary_edit(prims); total_changed += ch
+    prims, applied = apply_v11_edits(idx, prims); v11_applied.extend(applied)
+    prims, applied12 = apply_v12_edits(idx, prims); v12_applied.extend(applied12)
+    render_prims(c, prims)
+    draw_widgets(c, widgets_for(idx))            # rescore field stays on page 12 (K4)
     c.showPage()
+
+# EDIT K / K6 — new appendix page 24 (no form fields)
+assert CAPTURED_P12[0] is not None, "page 12 was not captured"
+render_prims(c, _build_page24(CAPTURED_P12[0]))
+c.showPage()
 c.save()
+
+# EDIT J — language + viewer preference (screen readers announce the title)
+_md = fitz.open(OUT)
+_cat = _md.pdf_catalog()
+_md.xref_set_key(_cat, "Lang", "(en-GB)")
+_md.xref_set_key(_cat, "ViewerPreferences", "<</DisplayDocTitle true>>")
+_md.save(OUT + ".tmp", garbage=0, deflate=True)
+_md.close()
+import os as _os
+_os.replace(OUT + ".tmp", OUT)
+
 print(f"Wrote {OUT}; boundary text lines changed: {total_changed} (expected 2)")
 if UNMAPPED:
     print("WARNING: unmapped font tags (defaulted to Helvetica):", sorted(UNMAPPED))
 assert total_changed == 2, "boundary substitution did not hit exactly 2 lines"
 print("v1.1 edits applied:", v11_applied)
-assert v11_applied == ["EDIT6", "EDIT1", "EDIT2", "EDIT3", "EDIT4", "EDIT5"], \
-    "expected all six v1.1 edits (order = page order)"
+print("v1.2 edits applied:", sorted(set(v12_applied)))
+EXPECT12 = {"A", "C", "D", "E", "F", "G", "H", "I", "K3", "K5"}
+assert set(v12_applied) == EXPECT12, f"v1.2 mismatch: {sorted(set(v12_applied))} vs {sorted(EXPECT12)}"
