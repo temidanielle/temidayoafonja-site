@@ -1,1 +1,7 @@
 .ogbuild/
+
+# Generated workshop deliverables are delivered out-of-band, not stored here.
+# The website repository is limited to website source files.
+*.zip
+/deliverables/*
+!/deliverables/README.md
