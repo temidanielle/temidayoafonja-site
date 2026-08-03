@@ -100,8 +100,7 @@ nav { position:fixed; top:0; left:0; right:0; z-index:9999; padding:18px 40px; d
 @media (max-width:1080px){ .nav-links { display:none !important; } }
 .nav-spacer { height:65px; }
 
-#intro, #orgIntro { flex-direction:column; align-items:center; justify-content:center; padding:80px 24px 60px; text-align:center; }
-#orgIntro .intro-benchmark { font-style:normal; }
+#intro { flex-direction:column; align-items:center; justify-content:center; padding:80px 24px 60px; text-align:center; }
 .wordmark { font-family:‘Cormorant Garamond’,serif; font-weight:300; font-size:13px; letter-spacing:0.22em; text-transform:uppercase; color:#c9a84c; margin-bottom:48px; }
 .intro-headline { font-family:‘Cormorant Garamond’,serif; font-weight:300; font-size:clamp(32px,5vw,60px); line-height:1.1; color:#ffffff; max-width:720px; margin-bottom:16px; }
 .intro-headline em { font-style:italic; color:#e8c97a; }
@@ -242,10 +241,6 @@ border-color: rgba(201,168,76,0.5) !important;
 .results-sub { font-size:13px; letter-spacing:0.14em; text-transform:uppercase; color:#8ba0b4; text-align:center; margin-bottom:32px; }
 .results-celebration { font-size:16px; line-height:1.7; color:rgba(245,240,232,0.8); max-width:560px; margin:0 auto 36px; font-style:italic; border-left:2px solid var(–gold); padding-left:20px; text-align:left; }
 .score-cards { display:grid; grid-template-columns:1fr 1fr 1fr; gap:12px; margin-bottom:36px; }
-.score-cards-org { display:block; }
-.score-axis-pair { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:12px; }
-.score-alumni-note { font-size:12px; line-height:1.65; color:rgba(245,240,232,0.5); margin-top:10px; }
-.score-alumni-note a { color:#c9a84c; text-decoration:none; }
 .score-card { border:1px solid rgba(139,160,180,0.2); padding:20px 18px; }
 .score-card-label { font-size:10px; letter-spacing:0.18em; text-transform:uppercase; color:#8ba0b4; margin-bottom:8px; }
 .score-card-val { font-family:‘Cormorant Garamond’,serif; font-size:36px; color:#f5f0e8; margin-bottom:4px; }
@@ -423,13 +418,6 @@ nav { padding:16px 20px; }
 <!-- SCREEN 4: AUDIT -->
 
 <!-- SCREEN: ORG LEADER INTRO (org path only) -->
-<div id="orgIntro" class="screen">
-  <div class="wordmark">For Organizational Leaders</div>
-  <h1 class="intro-headline">Can your organization take on AI without losing what holds it together?</h1>
-  <p class="intro-benchmark">Ten questions, about five minutes. They map whether this organization is building the capability to absorb AI driven change or quietly losing it. You will see where you stand before the change forces the answer.</p>
-  <button class="btn-primary" id="orgIntroStart">Start the diagnostic &rarr;</button>
-  <p class="intro-meta">Already know you need this? <a href="/ai-capability-readiness" style="color:#c9a84c;text-decoration:none;">See the AI Capability Readiness Diagnostic.</a></p>
-</div>
 
 <div id="audit" class="screen">
   <div class="audit-left">
@@ -628,12 +616,8 @@ nav { padding:16px 20px; }
       <div class="results-section-title">Where Capability Is At Risk</div>
       <div class="results-list" id="riskList"></div>
     </div>
-    <div class="results-section" id="focusSection">
-      <div class="results-section-title">Where to Focus First</div>
-      <div class="results-list" id="focusList"></div>
-    </div>
     <div class="results-section">
-      <div class="results-section-title" id="ctaSectionTitle">From Insight to Action</div>
+      <div class="results-section-title" id="ctaSectionTitle"></div>
       <div class="results-cta-text" id="ctaText"></div>
       <!-- FIELD KIT (individual mode: the calibration step, shown before the Capability Session) -->
       <div class="cta-box" id="fieldKitBox" style="display:none;">
@@ -641,17 +625,6 @@ nav { padding:16px 20px; }
         <div class="cta-box-sub">This free result gives you your state and your exposure. The Field Kit is the calibration step. It walks you back through each statement with the full scoring rubric and worked examples, so the Density and Optionality numbers you carry forward are ones you can trust. $75.</div>
         <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;">
           <a href="https://temidayoafonja.com/fieldkit" target="_blank" rel="noopener" style="display:inline-block;background:#c9a84c !important;color:#0f2347 !important;padding:14px 32px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;-webkit-text-fill-color:#0f2347 !important;">Get the Field Kit &rarr;</a>
-        </div>
-      </div>
-      <!-- ORG LEADER NEXT STEP (shown for org mode) -->
-      <div class="cta-box" id="orgOfferBox" style="display:none;">
-        <div class="cta-box-title">Your Next Step: The AI Capability Readiness Diagnostic</div>
-        <div class="cta-box-sub">You have seen where your organization sits. The AI Capability Readiness Diagnostic turns that read into a plan. Your leadership team takes the full assessment, a deeper version of what you just completed, then receives an interpreted capability read, a leadership working session, and a prioritized action map for absorbing AI driven change. Built on the Capability Formation Framework.</div>
-        <div class="cta-box-sub" style="margin-top:12px;padding-top:12px;border-top:1px solid rgba(201,168,76,0.2);font-size:13px;color:rgba(245,240,232,0.6);">This is a separate instrument from the Capability Formation Diagnostic, focused specifically on absorbing AI-driven change.</div>
-        <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;">
-          <a href="/ai-capability-readiness" style="display:inline-block;background:#c9a84c !important;color:#0f2347 !important;padding:14px 32px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;-webkit-text-fill-color:#0f2347 !important;">See the AI Capability Readiness Diagnostic &rarr;</a>
-          <span style="font-size:13px;color:rgba(245,240,232,0.45);">or</span>
-          <a href="work.html#get-in-touch" style="font-size:13px;color:#c9a84c;text-decoration:none;">Request pricing</a>
         </div>
       </div>
       <!-- INDIVIDUAL NEXT STEP (shown for individual mode) -->
@@ -689,62 +662,6 @@ nav { padding:16px 20px; }
 <script>
 // ─── DATA ────────────────────────────────────────────────────────────────────
 
-// RETIRED 2026-07-29. questionsOrg / quadrantDataOrg / summaryDataOrg powered the
-// in-page org-leader mode, now retired in favor of /organizational-diagnostic.
-// Kept live and unreferenced as the source for a future v1.1 and as the origin of
-// the standard fallback readings now ported into organizational-diagnostic.html.
-var questionsOrg = [
-  {section:"Density",preface:null,text:"When your people face problems that have no established playbook inside this organization, what happens?",options:[
-    {text:"We redirect them to what we know. Novel problems make us uncomfortable.",score:1},
-    {text:"Some navigate it. Most wait for direction.",score:2},
-    {text:"Our strongest people lean in. Complexity is where they have learned to live.",score:3},
-    {text:"We have built an environment where uncharted problems are the norm, not the exception.",score:4}]},
-  {section:"Density",preface:null,text:"If your three most capable people moved to a new function tomorrow, how quickly would they contribute meaningfully?",options:[
-    {text:"Slowly. What they know is specific to where they are.",score:1},
-    {text:"Eventually. Six to twelve months to find their footing.",score:2},
-    {text:"Within ninety days. Their judgment travels with them.",score:3},
-    {text:"Almost immediately. We built them for ambiguity, not just for this role.",score:4}]},
-  {section:"Density",preface:null,text:"After a significant restructuring or leadership transition, how long before your organization finds its stride again?",options:[
-    {text:"A year or more. We lose more than we realize in transitions and recovery is slow.",score:1},
-    {text:"Six to twelve months. We stabilize but the cost to capability is real and visible.",score:2},
-    {text:"Under six months. The foundation holds even when the structure above it changes.",score:3},
-    {text:"Under ninety days. Disruption does not hollow us out the way it hollows others.",score:4}]},
-  {section:"Optionality",preface:null,text:"How does your organization treat movement across functions and business lines?",options:[
-    {text:"We do not, really. Staying in lane is what gets rewarded here.",score:1},
-    {text:"We support it when people ask. It is not something we design for.",score:2},
-    {text:"We use it intentionally. Internal mobility is a development tool, not an exception.",score:3},
-    {text:"It is built into the architecture. Career paths are designed to expand, not narrow.",score:4}]},
-  {section:"Optionality",preface:null,text:"When your organization needs to pivot strategically, how many of your current leaders can operate effectively in the new model?",options:[
-    {text:"Very few. The pivot reveals how narrowly we have developed our bench.",score:1},
-    {text:"Some. Maybe a third can adapt without significant reskilling.",score:2},
-    {text:"Most. We have enough portable capability to lead from within.",score:3},
-    {text:"Nearly all. We chose and developed them for exactly this kind of moment.",score:4}]},
-  {section:"Optionality",preface:null,text:"How would you describe your succession pipeline for your ten most critical roles?",options:[
-    {text:"We do not have one in any meaningful sense. If three senior people left tomorrow we would be in serious trouble.",score:1},
-    {text:"Fragile. Names exist on paper but none of them are genuinely ready to step in now.",score:2},
-    {text:"Adequate. Most roles have at least one person who could step in with some ramp time.",score:3},
-    {text:"Deep. We have built real pipelines with people who are ready or nearly ready, not just org chart placeholders.",score:4}]},
-  {section:"Alumni Capital",preface:null,text:"When a strong performer leaves your organization, what do you do with that relationship?",options:[
-    {text:"We conduct an exit interview and move on. The relationship ends at the door.",score:1},
-    {text:"Some leaders stay connected informally. There is no real structure to it.",score:2},
-    {text:"We have an alumni network, but it is primarily social rather than strategic.",score:3},
-    {text:"We treat departures as redistributions, not losses. The relationship is an asset we manage.",score:4}]},
-  {section:"Alumni Capital",preface:null,text:"How much of what your organization truly knows is documented and transferable when people leave?",options:[
-    {text:"Very little. The real knowledge lives in the heads of the people who have been here longest and nowhere else.",score:1},
-    {text:"Some processes are documented but the judgment, context, and relationships behind them leave with the person.",score:2},
-    {text:"Key roles have structured transfer in place. It is imperfect but meaningful knowledge survives transitions.",score:3},
-    {text:"We treat organizational memory as a managed asset. Judgment and context are captured, not just process steps.",score:4}]},
-  {section:"Alumni Capital",preface:null,text:"How does the way your organization treats exits shape what kind of talent you attract at entry?",options:[
-    {text:"It hurts us. How we handle departures has quietly damaged our reputation.",score:1},
-    {text:"It is neutral. Alumni neither advocate for us nor against us.",score:2},
-    {text:"It helps. Alumni generally speak well of us and occasionally refer people.",score:3},
-    {text:"It is one of our strongest recruiting assets. How we treat exits determines what we attract at entry.",score:4}]},
-  {section:"Synthesis",preface:"This is the question most organizations have never been asked directly.",text:"Honestly: does your organization build capability by design, or does it accumulate it by accident?",options:[
-    {text:"By accident entirely. Whatever capability exists here, we did not architect it and could not replicate it deliberately.",score:1},
-    {text:"We have programs but no real system. Capability development is an initiative, not an operating principle.",score:2},
-    {text:"We have explicit practices that work. The design is real but it does not yet run through everything we do.",score:3},
-    {text:"Systematically. Capability formation is a design principle embedded in how we hire, develop, deploy, and exit people.",score:4}]}
-];
 
 var questionsIndividual = [
   {section:"Density",preface:null,text:"Think about the last role you held for more than a year. When you left or were let go, what did you take with you that the organization could not keep?",options:[
@@ -885,80 +802,6 @@ function individualBoundary(density, optionality){
 
 // ─── UPDATED QUADRANT DATA ────────────────────────────────────────────────────
 
-var quadrantDataOrg = {
-  compound:{
-    name:"Compounding Quadrant",
-    color:"#6ab894",
-    sub:"High Density · High Optionality",
-    celebration:"You have built something that most organizations have not. This result is worth sitting with before you read what comes next.",
-    diagnosis:"You have built the conditions most organizations claim to want and very few actually design for, and the risk now is that you mistake the outcome for the system. Challenge is compounding judgment, roles are expanding optionality, and your people are building the kind of portable resilience that survives what markets throw at organizations. The risk here is not failure. It is assuming the conditions that created this will sustain themselves without active design. They will not.",
-    risks:[
-      {icon:"⚠",text:"Alumni Capital may still be underdeveloped. Even high-performing organizations treat exits as losses rather than redistributions of capability."},
-      {icon:"⚠",text:"Succession pipelines thin quickly when compounding careers attract strong external offers."},
-      {icon:"⚠",text:"Capability compounds in people, not in the organization, without explicit knowledge architecture behind it."}
-    ],
-    focus:[
-      {icon:"→",text:"Invest in Alumni Capital infrastructure now, before a restructuring forces the question."},
-      {icon:"→",text:"Document what makes your environment dense. That knowledge is more fragile than it looks."},
-      {icon:"→",text:"Build succession depth deliberately. Compounding careers attract external offers at higher rates."}
-    ],
-    cta:"Your organization is building capability. The question now is whether you have the systems to capture it, circulate it, and ensure it outlasts the people who currently carry it. That is the next design challenge. It is worth solving."
-  },
-  depth:{
-    name:"Depth Trap",
-    color:"#e07060",
-    sub:"High Density · Low Optionality",
-    celebration:null,
-    diagnosis:"Your people are not underperforming. They are excelling inside a container that is slowly becoming a ceiling, and the organization will not see it until someone exceptional walks out the door. The capability your environment produces is narrowing rather than expanding. People become deep specialists rather than versatile leaders. The organization looks highly capable until the moment it is asked to pivot, restructure, or promote from within. At that point, the bench reveals itself as thin and brittle. This is not a failure of effort. It is a failure of architecture.",
-    risks:[
-      {icon:"⚠",text:"Succession planning is the most immediate risk. Deep specialists rarely have internal successors who can step into their full scope."},
-      {icon:"⚠",text:"AI-driven disruption disproportionately affects organizations where capability is narrowly concentrated in a few roles."},
-      {icon:"⚠",text:"High performers in narrow roles eventually seek the breadth this organization cannot offer them."}
-    ],
-    focus:[
-      {icon:"→",text:"Redesign roles with intentional cross-functional exposure built into the architecture, not added as a program on top of it."},
-      {icon:"→",text:"For your ten most critical roles, ask honestly: is there anyone internally who could operate in an adjacent context?"},
-      {icon:"→",text:"Build Alumni Capital systems before the next wave of departures turns depth into a liability."}
-    ],
-    cta:"The Depth Trap is the most common and least diagnosed capability failure mode in complex organizations. It does not announce itself until the restructuring arrives. Structural intervention is what is required here, not another development program."
-  },
-  stagnant:{
-    name:"Stagnant Quadrant",
-    color:"#8ba0b4",
-    sub:"Low Density · Low Optionality",
-    celebration:null,
-    diagnosis:"This result is not a verdict on the people inside your organization. It is a verdict on the conditions, and the question worth sitting with is whether leadership has been waiting for the environment to change or has quietly accepted it as permanent. Routine work is producing fragile talent. The environment is not generating sufficient challenge to compound capability, and roles are not expanding optionality. They are quietly consuming it. This is the most common organizational condition, and the hardest to see from the inside, because it masquerades as stability.",
-    risks:[
-      {icon:"⚠",text:"Strategic pivots will be disproportionately painful. The bench was not built for a new model."},
-      {icon:"⚠",text:"The work most likely to be automated first is precisely the work that generates no capability. That acceleration is already underway."},
-      {icon:"⚠",text:"Top performers and average performers are both stagnating, but for different reasons. Both groups are at risk of leaving, just through different doors."}
-    ],
-    focus:[
-      {icon:"→",text:"Identify where high-challenge work is actually happening and concentrate more of your strongest people there."},
-      {icon:"→",text:"Redesign at least three key roles to require judgment-building, not just execution."},
-      {icon:"→",text:"Build internal mobility infrastructure as an operational design choice. This is not an HR initiative. It is an architectural one."}
-    ],
-    cta:"The Stagnant Quadrant requires intervention from the architecture up. A diagnostic conversation is the right place to begin. Not because the situation is hopeless, but because it is more recoverable than most leaders realize when they finally see it clearly."
-  },
-  fragile:{
-    name:"Fragile Quadrant",
-    color:"#c9a84c",
-    sub:"Low Density · High Optionality",
-    celebration:null,
-    diagnosis:"The Fragile Quadrant is the hardest to self-diagnose because the signals look like strength. High mobility reads as opportunity, broad exposure reads as range, and the organizational thinning underneath both goes unnamed until a restructuring forces the reckoning. Your organization has mobility without the challenge to back it up. People move across roles and functions, which looks like a healthy system from the outside. But the environments they move through are not generating sufficient intensity to compound their capability.",
-    risks:[
-      {icon:"⚠",text:"High-mobility talent may have broad exposure without deep judgment. That combination holds up in stable conditions and fails under real pressure."},
-      {icon:"⚠",text:"Alumni Capital may appear strong because people leave positively, but the capability they carry may not be dense enough to generate meaningful returns."},
-      {icon:"⚠",text:"The organization may mistake comfort for culture and movement for development."}
-    ],
-    focus:[
-      {icon:"→",text:"Introduce sustained complexity into at least your top tier of roles. Breadth without depth does not compound."},
-      {icon:"→",text:"Audit whether internal mobility is producing capability or simply redistributing comfort across functions."},
-      {icon:"→",text:"Build alumni relationships deliberately. The people who left on good terms are your most honest mirror."}
-    ],
-    cta:"The Fragile Quadrant is recoverable with intentional design. The mobility infrastructure is already there. The work is introducing the right kind of difficulty into the environments that currently feel too comfortable."
-  }
-};
 
 var quadrantDataIndividual = {
   compound:{
@@ -1072,40 +915,6 @@ var summaryDataIndividual = {
   }
 };
 
-var summaryDataOrg = {
-  compound:{
-    summary:"Your responses describe an organization that is doing something genuinely rare: building capability rather than just deploying it. The conditions you have created are not accidental. They reflect deliberate design choices that most organizations are not making. The risk at this stage is not failure. It is assumption. The conditions that produced this result will not sustain themselves without active maintenance. Alumni Capital is often the first thing that erodes in high-performing organizations, and succession depth thins faster than leaders expect when compounding careers attract strong external offers.",
-    questions:[
-      "Can you describe exactly what conditions produced the capability in your three strongest people, specifically enough that you could recreate those conditions for the next cohort?",
-      "What does your organization actually do with the capability that walks out the door when strong performers leave?",
-      "In five years, when your current strongest performers have moved on, what will they say this organization built in them?"
-    ]
-  },
-  depth:{
-    summary:"Your responses describe an organization that has built genuine expertise, but in a way that creates organizational debt. The people you have developed are deeply capable within the context you built them for. The problem is that deep specialization without portability investment produces professionals who are indispensable inside your organization and invisible outside it. When restructuring comes, those people will discover that the organization consumed rather than built their optionality. What organizations in the Depth Trap owe the people inside them is a deliberate investment in the transferability of what they have built.",
-    questions:[
-      "If your three strongest people were hired away tomorrow, how would they describe what your organization built in them, and would that description open doors elsewhere or close them?",
-      "When did you last give a high performer a problem that required them to think and operate outside the domain they were hired for?",
-      "Is the depth you are building in people making them more valuable to you, or more valuable to someone else?"
-    ]
-  },
-  fragile:{
-    summary:"Your responses describe an organization that has prioritized comfort over challenge and mobility over depth. The result is a leadership bench that reads as versatile on paper but has not been stress-tested by the conditions that produce durable capability. People can move. They have moved. What the movement has not produced is the kind of sustained contact with difficulty that compounds judgment. The organizations that come through disruption with stronger talent positions are not the ones with the most mobile people. They are the ones whose people have been genuinely challenged and came out more capable on the other side.",
-    questions:[
-      "Where in your organization do people face problems that have no established answer, and is that happening at enough scale and frequency to produce compounding capability?",
-      "If you audited your internal mobility program honestly, is it producing development or distributing comfort across functions?",
-      "What would change if you designed your top roles specifically to produce capability that could survive your organization's next major disruption?"
-    ]
-  },
-  stagnant:{
-    summary:"Your responses describe an organization with significant underdevelopment debt. Low investment and low challenge have produced a capability profile that is vulnerable in ways that will become visible at exactly the wrong moment. This is recoverable. But recovery requires an honest account of what the organization has and has not built in its people, and a willingness to redesign the conditions rather than simply intensify the performance expectations on top of them. The people inside a Stagnant organization are not the problem. The architecture is.",
-    questions:[
-      "What capability does your organization need in three years that your current conditions are not producing?",
-      "What would it take to redesign the three roles most critical to your next strategic pivot so they actually build the capability those roles require?",
-      "What do you owe the people who have been inside your organization's low-investment conditions, and what would recovery by design look like for them specifically?"
-    ]
-  }
-};
 
 // ─── STATE ────────────────────────────────────────────────────────────────────
 var currentMode    = "individual";
@@ -1143,22 +952,10 @@ function show(id) {
 function getScores() {
   // Individual (twelve-statement instrument): Density = sum of statements 1-6,
   // Optionality = sum of statements 7-12, each out of 30. The reflective close is ignored.
-  if(currentMode==="individual"){
     var d=0,o=0;
     for(var i=0;i<6;i++){ if(answers[i]!=null) d+=answers[i]; }
     for(var j=6;j<12;j++){ if(answers[j]!=null) o+=answers[j]; }
     return { org:false, density:d, optionality:o, d:d, o:o, a:null };
-  }
-  // Org (unchanged): section averages out of 4.
-  var d=[],o=[],a=[];
-  questions.forEach(function(q,i){
-    if(answers[i]===null) return;
-    if(q.section==="Density"||q.section==="Synthesis") d.push(answers[i]);
-    else if(q.section==="Optionality") o.push(answers[i]);
-    else if(q.section==="Alumni Capital") a.push(answers[i]);
-  });
-  function avg(arr){ return arr.length ? arr.reduce(function(a,b){return a+b;},0)/arr.length : null; }
-  return {org:true, d:avg(d), o:avg(o), a:avg(a)};
 }
 
 function getQKey() {
@@ -1182,7 +979,7 @@ function renderQuestion() {
 
   // Preface: individual shows the framing line before statement 1; org uses q.preface.
   var pref=document.getElementById("questionPreface");
-  var prefaceText = (currentMode==="individual" && currentQ===0) ? individualFraming : (q.preface || "");
+  var prefaceText = (currentQ===0) ? individualFraming : (q.preface || "");
   if(prefaceText){ pref.textContent=prefaceText; pref.classList.add("visible"); }
   else { pref.textContent=""; pref.classList.remove("visible"); }
 
@@ -1238,13 +1035,9 @@ function renderQuestion() {
 
   // Progress label.
   var progText;
-  if(currentMode==="individual"){
     if(currentQ<11)        progText = "Statement "+(currentQ+1)+" of 12";
     else if(currentQ===11) progText = "Statement 12 of 12 · a short reflection follows";
     else                   progText = "Closing reflection · unscored";
-  } else {
-    progText = "Question "+(currentQ+1)+" of 10";
-  }
   document.getElementById("progressInfo").textContent=progText;
   document.getElementById("progressFill").style.width=((currentQ/total)*100)+"%";
   document.getElementById("nextLabel").textContent=(currentQ===total-1)?"View Results →":"Next →";
@@ -1289,32 +1082,6 @@ function updateMatrix() {
     }
     return;
   }
-
-  var ap2=document.getElementById("alumniPill"); if(ap2) ap2.style.display="";
-  var dP=s.d!==null?((s.d-1)/3)*100:50;
-  var oP=s.o!==null?((s.o-1)/3)*100:50;
-  var aP=s.a!==null?((s.a-1)/3)*100:50;
-  document.getElementById("dBar").style.width=dP+"%";
-  document.getElementById("oBar").style.width=oP+"%";
-  document.getElementById("aBar").style.width=aP+"%";
-  document.getElementById("dVal").textContent=s.d!==null?s.d.toFixed(1):"·";
-  document.getElementById("oVal").textContent=s.o!==null?s.o.toFixed(1):"·";
-  document.getElementById("aVal").textContent=s.a!==null?s.a.toFixed(1):"·";
-  document.getElementById("matrixDot").style.left=(s.o!==null?oP:50)+"%";
-  document.getElementById("matrixDot").style.top=(s.d!==null?(100-dP):50)+"%";
-  ["q-depth","q-compound","q-stagnant","q-fragile"].forEach(function(id){
-    document.getElementById(id).classList.remove("highlighted");
-  });
-  if(s.d!==null&&s.o!==null) document.getElementById("q-"+getQKey()).classList.add("highlighted");
-  var answered=answers.filter(function(a){return a!==null;}).length;
-  if(answered>=2){
-    var sigs=[];
-    if(s.d>3)  sigs.push("High-density environment confirmed. Something real is being built here.");
-    if(s.d<2)  sigs.push("Low density signals. The environment may be consuming capability rather than building it.");
-    if(s.o>3)  sigs.push("Strong portable capability signals. The bench has range.");
-    if(s.a&&s.a>3) sigs.push("Alumni infrastructure is being treated as a strategic asset. That is rarer than it should be.");
-    document.getElementById("liveInsightText").textContent=sigs.length?sigs[0]:"Capability profile is forming. The picture will sharpen as you continue.";
-  }
 }
 
 function showResults(name) {
@@ -1329,10 +1096,8 @@ function showResults(name) {
   var cel=document.getElementById("resultsCelebration");
   if(qd.celebration){cel.textContent=qd.celebration;cel.style.display="block";}
   else cel.style.display="none";
-  var isOrg = currentMode === "org";
 
   // ── Score cards ──
-  if(!isOrg){
     // Individual: sums out of 30, labelled High or Low against the 19 threshold.
     var dS=s.density, oS=s.optionality;
     var sc='<div class="score-card"><div class="score-card-label">Density</div><div class="score-card-val">'+dS+'</div><div class="score-card-desc">'+(dS>=IND_HIGH?"High":"Low")+' · out of 30</div></div>';
@@ -1342,20 +1107,6 @@ function showResults(name) {
     elInd.innerHTML=sc;
     var aw=document.getElementById("alumniWritten");
     if(aw){ aw.style.display="block"; aw.innerHTML='<div class="results-section-title" style="margin-bottom:14px;">Alumni Capital</div><p style="font-size:16px;line-height:1.85;color:rgba(245,240,232,0.88);">Alumni Capital is the third pillar of the framework, and it is the one this diagnostic reads rather than scores. It asks what remains reachable after you leave a place: the relationships that still open doors, the reputation that travels without you in the room, the people who still send opportunities your way. Your placement above is set by Density and Optionality. Alumni Capital sits alongside it as the question worth carrying out of this reading: when you leave, what stays valuable, and to whom.</p>'; }
-  } else {
-    var dS=s.d||0, oS=s.o||0, aS=s.a||0;
-    var dL=dS>=3.5?"Dense":dS>=2.5?"Moderate":dS>=1.5?"Thin":"Low";
-    var oL=oS>=3.5?"Expanding":oS>=2.5?"Moderate":oS>=1.5?"Narrowing":"Constrained";
-    var aL=aS>=3.5?"Strategic":aS>=2.5?"Active":aS>=1.5?"Passive":"Untapped";
-    var densityCard='<div class="score-card"><div class="score-card-label">Density</div><div class="score-card-val">'+dS.toFixed(1)+'</div><div class="score-card-desc">'+dL+' · out of 4.0</div></div>';
-    var optionalityCard='<div class="score-card"><div class="score-card-label">Optionality</div><div class="score-card-val">'+oS.toFixed(1)+'</div><div class="score-card-desc">'+oL+' · out of 4.0</div></div>';
-    var alumniCard='<div class="score-card"><div class="score-card-label">Alumni Capital</div><div class="score-card-val">'+aS.toFixed(1)+'</div><div class="score-card-desc">'+aL+' · out of 4.0</div></div>';
-    var sc='<div class="score-axis-pair">'+densityCard+optionalityCard+'</div>';
-    sc+='<div class="score-alumni">'+alumniCard+'<p class="score-alumni-note">Density and Optionality set your quadrant. Alumni Capital is measured separately and does not move it. It is <a href="/principles.html#principle-06">Principle 06</a>.</p></div>';
-    var elOrg=document.getElementById("scoreCards");
-    elOrg.className="score-cards score-cards-org";
-    elOrg.innerHTML=sc;
-  }
 
   document.getElementById("resultsDiagnosis").textContent=qd.diagnosis;
   function renderList(id,items){
@@ -1365,10 +1116,6 @@ function showResults(name) {
   }
   renderList("riskList",qd.risks);
 
-  // Individual free result is diagnosis, not moves: hide the "Where to Focus First" section.
-  var focusSection=document.getElementById("focusSection");
-  if(isOrg){ focusSection.style.display=""; renderList("focusList",qd.focus); }
-  else { focusSection.style.display="none"; }
 
   document.getElementById("ctaText").textContent=qd.cta;
 
@@ -1376,14 +1123,12 @@ function showResults(name) {
   if(sd){
     var summaryEl=document.getElementById("resultsSummary");
     var bnote = null;
-    if(!isOrg){
       var b=individualBoundary(s.density, s.optionality);
       if(b){
         bnote = "Your scores sit on a boundary. Density " + s.density + " of 30 and Optionality " + s.optionality +
                 " of 30 land close enough to the line that you could read as " + stateNamesList(b.keys) +
                 ". Hold both as live and let the next ninety days show you which one is true.";
       }
-    }
     if(bnote){
       summaryEl.innerHTML = '<p style="margin-bottom:14px;color:#e8c97a;">'+escapeHtml(bnote)+'</p><p>'+escapeHtml(sd.summary)+'</p>';
     } else {
@@ -1401,11 +1146,10 @@ function showResults(name) {
   if(pregateNameVal)  document.getElementById("ctaName").value=pregateNameVal;
   if(pregateEmailVal) document.getElementById("ctaEmail").value=pregateEmailVal;
 
-  // Closing section: org keeps its action framing; individual reads as diagnosis and points to the Field Kit.
-  document.getElementById("ctaSectionTitle").textContent = isOrg ? "From Insight to Action" : "Where This Leaves You";
-  document.getElementById("orgOfferBox").style.display = isOrg ? "block" : "none";
-  document.getElementById("fieldKitBox").style.display = isOrg ? "none" : "block";
-  document.getElementById("individualOfferBox").style.display = isOrg ? "none" : "block";
+  // Closing section: individual reads as diagnosis and points to the Field Kit.
+  document.getElementById("ctaSectionTitle").textContent = "Where This Leaves You";
+  document.getElementById("fieldKitBox").style.display = "block";
+  document.getElementById("individualOfferBox").style.display = "block";
   if(window.plausible) plausible("Audit Completed", {props:{mode:currentMode, quadrant:qKey}});
   show("results");
 }
@@ -1498,14 +1242,12 @@ function captureResearch(nameVal, emailVal){
     var consentEl = document.getElementById("researchConsent"+fieldSuffix);
     // Store every answer, not just totals. For individual, index 12 is the unscored reflective close.
     var responses = questions.map(function(q,i){
-      return { n:i+1, section:q.section, score:answers[i], scored: !(currentMode==="individual" && i===12) };
+      return { n:i+1, section:q.section, score:answers[i], scored: !(i===12) };
     });
     var stateKey = getQKey();
     var boundaryKeys = null;
-    if(currentMode==="individual"){
       var b=individualBoundary(s.density, s.optionality);
       boundaryKeys = b ? b.keys : null;
-    }
     // Stable id for this submission. It is part of the payload, so the retry and any
     // localStorage resend all carry the SAME id, letting the server deduplicate.
     var submissionId = (window.crypto && crypto.randomUUID)
@@ -1522,7 +1264,7 @@ function captureResearch(nameVal, emailVal){
         density:      s.d!=null ? +(+s.d).toFixed(2) : null,
         optionality:  s.o!=null ? +(+s.o).toFixed(2) : null,
         alumni_capital: s.a!=null ? +(+s.a).toFixed(2) : null,
-        scale: currentMode==="individual" ? "sum_of_30" : "avg_of_4"
+        scale: "sum_of_30"
       },
       responses: responses,
       industry:          v("researchIndustry"),
@@ -1548,7 +1290,6 @@ function subscribeToKit(emailVal, quadrantKey, orgVal, nameVal){
     var body = { email:emailVal, quadrant:quadrantKey, mode:currentMode, org:orgVal||"", name:nameVal||"", source:"capability_audit" };
     // Individual takers are tagged Individual (plus audit-paper-save on the paper fast path)
     // and carry a dated result line so the reader's email can echo their score.
-    if(currentMode==="individual"){
       var s=getScores();
       var stateName=STATE_NAMES[quadrantKey]||quadrantKey;
       var dateStr=formatResultDate(new Date());
@@ -1560,7 +1301,6 @@ function subscribeToKit(emailVal, quadrantKey, orgVal, nameVal){
         state:            stateName,
         result_date:      dateStr
       };
-    }
     fetch("/.netlify/functions/subscribe", {
       method:"POST",
       headers:{"Content-Type":"application/json"},
@@ -1574,11 +1314,8 @@ function subscribeToKit(emailVal, quadrantKey, orgVal, nameVal){
 function scorePayload(){
   var s=getScores();
   var stateName=STATE_NAMES[getQKey()]||getQKey();
-  if(currentMode==="individual"){
     return { state:stateName, density:String(s.density), optionality:String(s.optionality), alumni_capital:"",
              result:individualResultLine(s.density, s.optionality, stateName, formatResultDate(new Date())) };
-  }
-  return { state:stateName, density:(s.d||0).toFixed(2), optionality:(s.o||0).toFixed(2), alumni_capital:(s.a||0).toFixed(2), result:"" };
 }
 
 // Modest email check: an @ with a dot after it and no spaces. Deliberately lenient
@@ -1631,16 +1368,6 @@ document.addEventListener("DOMContentLoaded", function(){
     show("audit"); renderQuestion();
   });
 
-  // RETIRED 2026-07-29. The in-page org-leader mode is retired; the surviving
-  // organizational instrument is /organizational-diagnostic. setupOrg, questionsOrg,
-  // quadrantDataOrg and summaryDataOrg are kept in place, unreferenced, as the
-  // source for a future v1.1. Do not wire new entry points to setupOrg.
-  function setupOrg(){
-    currentMode="org"; paperSave=false; questions=questionsOrg; quadrantData=quadrantDataOrg; summaryData=summaryDataOrg;
-    currentQ=0; answers=new Array(10).fill(null);
-    document.getElementById("auditModeBadge").textContent="Org Leader";
-    document.getElementById("switchModeBtn").textContent="Switch to the individual diagnostic";
-  }
 
   document.getElementById("forkOrg").addEventListener("click", function(){
     // Retired 2026-07-29: org leaders now go to the standalone Organizational
@@ -1649,10 +1376,6 @@ document.addEventListener("DOMContentLoaded", function(){
     window.location.href = "/organizational-diagnostic";
   });
 
-  // Retired 2026-07-29: orgIntroStart drove the in-page org flow, now unreachable.
-  document.getElementById("orgIntroStart").addEventListener("click", function(){
-    show("audit"); renderQuestion();
-  });
 
   // Deep link retired 2026-07-29: /diagnostic?audience=org redirects to the standalone
   // Organizational Diagnostic (also enforced server-side in netlify.toml).
@@ -1671,7 +1394,7 @@ document.addEventListener("DOMContentLoaded", function(){
     if(currentQ===totalQuestions()-1){
       if(window.plausible) plausible("Email Gate Reached");
       var ge=document.getElementById("gateEyebrow");
-      if(ge) ge.textContent = currentMode==="individual" ? "Diagnostic Complete" : "Diagnostic Complete · 10 of 10";
+      if(ge) ge.textContent = "Diagnostic Complete";
       show("gate"); return;
     }
     currentQ++; renderQuestion();
