@@ -1,1 +1,3 @@
 .ogbuild/
+__pycache__/
+*.pyc
