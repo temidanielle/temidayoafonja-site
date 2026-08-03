@@ -658,6 +658,30 @@ def apply_v12_edits(idx, prims):
         prims = [_swap12(p, "The three misreadings, worked examples, and the self-calibration prompt", new) for p in prims]
         if any(p[0] == "text" and p[5] == new for p in prims):
             applied.append("K3")
+    elif idx == 1:                                # P (v1.2.3) — page 2 P.S. line reworded (1 -> 2 lines) + signature nudge
+        # Page 2 text is placed per glyph (see EDIT 6); collect the glyph run on this baseline.
+        PF, PX = 474.5, 54.0                       # baseline f (yTop 317.5), left margin
+        glyphs = [p for p in prims if p[0] == "text" and abs(p[1][5] - PF) < 0.4
+                  and p[2] == "Helvetica" and abs(p[3] - 10.5) < 0.1 and p[1][4] >= PX - 0.5]
+        if "".join(g[5] for g in sorted(glyphs, key=lambda g: g[1][4])).startswith("Score honestly"):
+            fl = glyphs[0][4]
+            SIGDROP = 10.0                          # nudge the signature block down so 2 lines don't crowd it
+            keep = []
+            for p in prims:
+                if p in glyphs:
+                    continue
+                if p[0] == "text" and 428.0 <= p[1][5] <= 452.0:   # "Temidayo Afonja" (f=448) + "Founder..." (f=433)
+                    m = list(p[1]); m[5] -= SIGDROP
+                    keep.append(("text", tuple(m), p[2], p[3], p[4], p[5]))
+                else:
+                    keep.append(p)
+            # break rebalanced after "statement" so line 2 is not the widow "ability." (words unchanged)
+            newP = ["Score honestly. The number is a map of where you stand. It is real exposure, not a statement",
+                    "about your ability."]
+            keep += [_tp(PX, PF, "Helvetica", 10.5, fl, newP[0]),
+                     _tp(PX, PF - 14.5, "Helvetica", 10.5, fl, newP[1])]   # line 2 at the block's 14.5pt leading
+            prims = keep
+            applied.append("P")
     elif idx == 6:                                # A
         prims, n = _replace_block(prims,
             {"Nineteen or higher is high on each axis. Your state, not your job title, is what",
@@ -713,6 +737,44 @@ def apply_v12_edits(idx, prims):
             "The exposure: if the rollout consolidates my function, my Optionality score (14) helps shape how soft the landing is.",
             466)
         if n: applied.append("H")
+        # Q (v1.2.3): a guidance line before the "The exposure:" prompt. The prompt unit and the
+        # gold summary box below it shift down by S into the page's bottom whitespace; every
+        # internal gap is preserved, nothing crosses onto page 18.
+        S = 26.0
+        def _shift(p, dy):
+            if p[0] == "text":
+                m = list(p[1]); m[5] -= dy
+                return ("text", tuple(m), p[2], p[3], p[4], p[5])
+            newsp = []
+            for sp in p[2]:
+                nseg = []
+                for seg in sp:
+                    if seg[0] in ("m", "l"):
+                        nseg.append((seg[0], (seg[1][0], seg[1][1] - dy)))
+                    elif seg[0] == "c":
+                        nseg.append(("c",) + tuple((pt[0], pt[1] - dy) for pt in seg[1:]))
+                    else:
+                        nseg.append(seg)
+                newsp.append(nseg)
+            return ("path", p[1], newsp, p[3], p[4], p[5])
+        def _ytop_top(p):                              # top-most yTop of a primitive
+            if p[0] == "text":
+                return 792.0 - p[1][5]
+            ys = []
+            for sp in p[2]:
+                for seg in sp:
+                    if seg[0] in ("m", "l"):
+                        ys.append(seg[1][1])
+                    elif seg[0] == "c":
+                        ys += [pt[1] for pt in seg[1:]]
+            return (792.0 - max(ys)) if ys else 1e9
+        LO, HI = 448.0, 566.0                          # exposure prompt (454/466) + gold summary box (532-562)
+        prims = [(_shift(p, S) if LO <= _ytop_top(p) <= HI else p) for p in prims]
+        qtext = ["If you have a recent offer, a market search, or a comp benchmark to draw on, use it. If you don't, estimate in",
+                 "months instead of dollars. That's still a real number."]
+        for k, line in enumerate(qtext):               # sits where the exposure prompt used to start (yTop 454, 466)
+            prims = prims + [_tp(54.0, 792.0 - (454.0 + 12.0 * k), "Helvetica", 9.5, NAVY12, line)]
+        applied.append("Q")
     elif idx == 18:                               # I
         prims, n = _replace_block(prims,
             {"The honest note: this read cannot correct its own author. It is built from your scores, filtered through your blind",
@@ -790,6 +852,10 @@ def widgets_for(pageidx):
     for s in specs:
         if s["name"] == "recalibrated":          # EDIT L: field follows the body copy (keep w,h)
             s["y"] = 549.0                        # yTop 243..185; height 58 unchanged
+    if pageidx == 16:                            # Q (v1.2.3): exposure + total boxes move down with the reflow
+        for s in specs:
+            if s["name"] in ("cost_exposure", "cost_total"):
+                s["y"] -= 26.0                    # bottom-origin y down by S (= 26pt lower on the page)
     return specs
 
 def draw_widgets(c, specs):
@@ -876,5 +942,5 @@ if UNMAPPED:
 assert total_changed == 2, "boundary substitution did not hit exactly 2 lines"
 print("v1.1 edits applied:", v11_applied)
 print("v1.2 edits applied:", sorted(set(v12_applied)))
-EXPECT12 = {"A", "C", "D", "E", "F", "G", "H", "I", "K3", "K5", "M", "N", "O"}
+EXPECT12 = {"A", "C", "D", "E", "F", "G", "H", "I", "K3", "K5", "M", "N", "O", "P", "Q"}
 assert set(v12_applied) == EXPECT12, f"v1.2 mismatch: {sorted(set(v12_applied))} vs {sorted(EXPECT12)}"
