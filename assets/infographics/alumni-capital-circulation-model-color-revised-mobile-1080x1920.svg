@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920" font-family="Georgia, 'Times New Roman', serif">
+  <defs>
+    <marker id="arrowGoldM" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#C9A84C"/>
+    </marker>
+    <marker id="arrowGoldDownM" markerWidth="10" markerHeight="10" refX="4" refY="8" orient="auto">
+      <path d="M0,0 L8,0 L4,8 Z" fill="#C9A84C"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1080" height="1920" fill="#0F2347"/>
+
+  <!-- Title -->
+  <text x="540" y="70" text-anchor="middle" fill="#F5F0E8" font-size="38" font-weight="700">The Alumni Capital</text>
+  <text x="540" y="114" text-anchor="middle" fill="#F5F0E8" font-size="38" font-weight="700">Circulation Model</text>
+  <text x="540" y="146" text-anchor="middle" fill="#C9C9B8" font-family="Arial, Helvetica, sans-serif" font-size="15" font-style="italic">How capability remains reachable after employment ends.</text>
+
+  <!-- Architecture band (stacked) -->
+  <rect x="40" y="176" width="1000" height="290" rx="8" fill="#16305C" stroke="#C9A84C" stroke-width="1.5"/>
+  <text x="540" y="206" text-anchor="middle" fill="#C9A84C" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="2">FOUR STATES READING</text>
+  <text x="540" y="244" text-anchor="middle" fill="#F5F0E8" font-size="28" font-weight="700">DENSITY &#215; OPTIONALITY</text>
+  <text x="540" y="270" text-anchor="middle" fill="#D8D3C4" font-family="Arial, Helvetica, sans-serif" font-size="14">Where capability is formed and whether it travels.</text>
+  <text x="540" y="292" text-anchor="middle" fill="#D8D3C4" font-family="Arial, Helvetica, sans-serif" font-size="14">Produces the Four States distribution.</text>
+
+  <line x1="80" y1="316" x2="1000" y2="316" stroke="#C9A84C" stroke-width="1" opacity="0.6"/>
+
+  <text x="540" y="340" text-anchor="middle" fill="#C9A84C" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="2">BOUNDARY READING</text>
+  <text x="540" y="378" text-anchor="middle" fill="#F5F0E8" font-size="28" font-weight="700">ALUMNI CAPITAL</text>
+  <text x="540" y="404" text-anchor="middle" fill="#D8D3C4" font-family="Arial, Helvetica, sans-serif" font-size="14">What remains reachable after employment ends.</text>
+  <text x="540" y="426" text-anchor="middle" fill="#D8D3C4" font-family="Arial, Helvetica, sans-serif" font-size="14">Reads post-employment reachability.</text>
+  <text x="540" y="450" text-anchor="middle" fill="#C9A84C" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">TOGETHER SUPPORT INSTITUTIONAL RESILIENCE</text>
+
+  <!-- Insight band -->
+  <rect x="40" y="496" width="1000" height="64" rx="6" fill="#F5F0E8" stroke="#C9A84C" stroke-width="1.5"/>
+  <rect x="40" y="496" width="6" height="64" fill="#C1440E"/>
+  <text x="540" y="522" text-anchor="middle" fill="#0F2347" font-size="18" font-weight="700" font-style="italic">A contact list records who left.</text>
+  <text x="540" y="546" text-anchor="middle" fill="#0F2347" font-size="18" font-weight="700" font-style="italic">Alumni Capital is visible in what can still come back.</text>
+
+  <!-- Institution card -->
+  <rect x="40" y="588" width="1000" height="220" rx="8" fill="#16305C" stroke="#C9A84C" stroke-width="1.5"/>
+  <text x="540" y="618" text-anchor="middle" fill="#C9A84C" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="2">THE ORGANIZATION</text>
+  <text x="540" y="654" text-anchor="middle" fill="#F5F0E8" font-size="28" font-weight="700">Institution</text>
+  <text x="540" y="678" text-anchor="middle" fill="#D8D3C4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-style="italic">Where capability is formed.</text>
+  <line x1="460" y1="690" x2="620" y2="690" stroke="#C9A84C" stroke-width="1.5"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="14.5" fill="#F5F0E8">
+    <circle cx="200" cy="714" r="2.4" fill="#C9A84C"/><text x="212" y="719">Difficult problems</text>
+    <circle cx="560" cy="714" r="2.4" fill="#C9A84C"/><text x="572" y="719">Institutional relationships</text>
+    <circle cx="200" cy="740" r="2.4" fill="#C9A84C"/><text x="212" y="745">Repeated judgment</text>
+    <circle cx="560" cy="740" r="2.4" fill="#C9A84C"/><text x="572" y="745">Tacit knowledge</text>
+  </g>
+
+  <!-- Arrow Institution -> Exit -->
+  <text x="540" y="822" text-anchor="middle" fill="#D8D3C4" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="1">CAPABILITY BUILT AND CARRIED OUT</text>
+  <line x1="540" y1="834" x2="540" y2="858" stroke="#C9A84C" stroke-width="2" marker-end="url(#arrowGoldDownM)"/>
+
+  <!-- Exit node -->
+  <rect x="340" y="860" width="400" height="104" rx="8" fill="#F5F0E8" stroke="#C9A84C" stroke-width="1.5"/>
+  <text x="540" y="886" text-anchor="middle" fill="#8A6D1F" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2">INFLECTION POINT</text>
+  <text x="540" y="920" text-anchor="middle" fill="#0F2347" font-size="26" font-weight="700">Exit</text>
+  <text x="540" y="944" text-anchor="middle" fill="#3A4A63" font-family="Arial, Helvetica, sans-serif" font-size="14">The employment boundary.</text>
+
+  <!-- Arrow Exit -> Market -->
+  <text x="540" y="978" text-anchor="middle" fill="#D8D3C4" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="1">CAPABILITY FLOWS TO THE ECOSYSTEM</text>
+  <line x1="540" y1="990" x2="540" y2="1014" stroke="#C9A84C" stroke-width="2" marker-end="url(#arrowGoldDownM)"/>
+
+  <!-- Market card -->
+  <rect x="40" y="1016" width="1000" height="220" rx="8" fill="#F5F0E8" stroke="#C9A84C" stroke-width="1.5"/>
+  <text x="540" y="1046" text-anchor="middle" fill="#8A6D1F" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" letter-spacing="2">THE ECOSYSTEM</text>
+  <text x="540" y="1082" text-anchor="middle" fill="#0F2347" font-size="28" font-weight="700">Market</text>
+  <text x="540" y="1106" text-anchor="middle" fill="#3A4A63" font-family="Arial, Helvetica, sans-serif" font-size="14" font-style="italic">Where capability circulates.</text>
+  <line x1="460" y1="1118" x2="620" y2="1118" stroke="#C9A84C" stroke-width="1.5"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="14.5" fill="#0F2347">
+    <circle cx="200" cy="1142" r="2.4" fill="#C1440E"/><text x="212" y="1147">Industry relationships</text>
+    <circle cx="560" cy="1142" r="2.4" fill="#C1440E"/><text x="572" y="1147">External opportunity</text>
+    <circle cx="200" cy="1168" r="2.4" fill="#C1440E"/><text x="212" y="1173">Candidate and client trust</text>
+    <circle cx="560" cy="1168" r="2.4" fill="#C1440E"/><text x="572" y="1173">Alumni relationships</text>
+  </g>
+
+  <!-- Split: Market outcomes -> Path A / Path B -->
+  <text x="540" y="1254" text-anchor="middle" fill="#C9A84C" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2">TWO POSSIBLE OUTCOMES</text>
+  <line x1="540" y1="1236" x2="540" y2="1262" stroke="#C9A84C" stroke-width="1.5"/>
+  <line x1="280" y1="1262" x2="800" y2="1262" stroke="#C9A84C" stroke-width="1.5"/>
+  <line x1="280" y1="1262" x2="280" y2="1294" stroke="#C9A84C" stroke-width="1.5" marker-end="url(#arrowGoldDownM)"/>
+  <line x1="800" y1="1262" x2="800" y2="1294" stroke="#C9A84C" stroke-width="1.5" marker-end="url(#arrowGoldDownM)"/>
+
+  <!-- Path A -->
+  <rect x="40" y="1296" width="480" height="310" rx="8" fill="#16305C" stroke="#C9A84C" stroke-width="1.5"/>
+  <text x="280" y="1322" text-anchor="middle" fill="#C9A84C" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2">PATH A</text>
+  <text x="280" y="1352" text-anchor="middle" fill="#F5F0E8" font-size="21" font-weight="700">Circulates Back</text>
+  <line x1="180" y1="1364" x2="380" y2="1364" stroke="#C9A84C" stroke-width="1.5"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="13.5" fill="#F5F0E8">
+    <circle cx="66" cy="1386" r="2.3" fill="#C9A84C"/><text x="77" y="1391">Return hires</text>
+    <circle cx="66" cy="1407" r="2.3" fill="#C9A84C"/><text x="77" y="1412">Referrals</text>
+    <circle cx="66" cy="1428" r="2.3" fill="#C9A84C"/><text x="77" y="1433">Knowledge access</text>
+    <circle cx="66" cy="1449" r="2.3" fill="#C9A84C"/><text x="77" y="1454">Client and partner introductions</text>
+    <circle cx="66" cy="1470" r="2.3" fill="#C9A84C"/><text x="77" y="1475">Reputation value</text>
+  </g>
+  <rect x="80" y="1496" width="400" height="36" rx="18" fill="#0F2347" stroke="#C9A84C" stroke-width="1"/>
+  <text x="280" y="1519" text-anchor="middle" fill="#C9A84C" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="0.5">&#8617; RETURNS TO THE INSTITUTION</text>
+
+  <!-- Path B -->
+  <rect x="560" y="1296" width="480" height="310" rx="8" fill="#F2E5DC" stroke="#C9A84C" stroke-width="1.5"/>
+  <text x="800" y="1322" text-anchor="middle" fill="#C1440E" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2">PATH B</text>
+  <text x="800" y="1352" text-anchor="middle" fill="#0F2347" font-size="19" font-weight="700">Becomes Unreachable</text>
+  <line x1="700" y1="1364" x2="900" y2="1364" stroke="#C1440E" stroke-width="1.5"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="13.5" fill="#0F2347">
+    <circle cx="586" cy="1386" r="2.3" fill="#C1440E"/><text x="597" y="1391">Judgment becomes inaccessible</text>
+    <circle cx="586" cy="1407" r="2.3" fill="#C1440E"/><text x="597" y="1412">Network access is severed</text>
+    <circle cx="586" cy="1428" r="2.3" fill="#C1440E"/><text x="597" y="1433">Reputation is redirected</text>
+    <circle cx="586" cy="1449" r="2.3" fill="#C1440E"/><text x="597" y="1454">Context is repurchased</text>
+    <circle cx="586" cy="1470" r="2.3" fill="#C1440E"/><text x="597" y="1475">Capability is rebuilt elsewhere</text>
+  </g>
+  <rect x="600" y="1496" width="400" height="36" rx="18" fill="#F5F0E8" stroke="#C1440E" stroke-width="1"/>
+  <text x="800" y="1519" text-anchor="middle" fill="#C1440E" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="0.5">&#8856; TERMINATES &#8212; NO RETURN</text>
+
+  <!-- Mechanism cards -->
+  <rect x="40" y="1632" width="1000" height="56" rx="6" fill="#F5F0E8" stroke="#C9A84C" stroke-width="1.5"/>
+  <text x="70" y="1655" fill="#8A6D1F" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">INSTITUTIONAL MEMORY</text>
+  <text x="70" y="1675" fill="#0F2347" font-family="Arial, Helvetica, sans-serif" font-size="12.5">The judgment, context, and reasoning documents rarely preserve.</text>
+
+  <rect x="40" y="1698" width="1000" height="56" rx="6" fill="#E7EDF6" stroke="#C9A84C" stroke-width="1.5"/>
+  <text x="70" y="1721" fill="#8A6D1F" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">NETWORK CAPITAL</text>
+  <text x="70" y="1741" fill="#0F2347" font-family="Arial, Helvetica, sans-serif" font-size="12.5">The relationships, referrals, trust, and access that travel with the person.</text>
+
+  <rect x="40" y="1764" width="1000" height="56" rx="6" fill="#F5F0E8" stroke="#C9A84C" stroke-width="1.5"/>
+  <text x="70" y="1787" fill="#8A6D1F" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="1.2">REPUTATION CIRCULATION</text>
+  <text x="70" y="1807" fill="#0F2347" font-family="Arial, Helvetica, sans-serif" font-size="12.5">What former employees say when leaders are not in the room.</text>
+
+  <!-- Ownership footer -->
+  <text x="540" y="1858" text-anchor="middle" fill="#C9A84C" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="1.8">CAPABILITY FORMATION &#183; TEMIDAYO AFONJA &#183; TEMIDAYOAFONJA.COM</text>
+</svg>
