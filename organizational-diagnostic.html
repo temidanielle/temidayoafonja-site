@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="color-scheme" content="dark" />
 <title>The Organizational Diagnostic · The Density Group</title>
-<meta name="description" content="Eleven questions place your organization on density and optionality, measure alumni capital alongside them, and name what your position is costing." />
+<meta name="description" content="Seventeen questions, fifteen scored, place your organization on density and optionality, measure alumni capital alongside them, and name what your position is costing." />
 <link rel="canonical" href="https://temidayoafonja.com/organizational-diagnostic" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Temidayo Afonja" />
@@ -69,6 +69,27 @@
 
   .rule{height:1px;background:rgba(201,168,76,.22);border:0;margin:40px 0;}
 
+  .switch-link{margin:0 0 20px;}
+  .switch-link a{font-size:13px;color:var(--gold);text-decoration:underline;text-underline-offset:3px;letter-spacing:0.02em;}
+  .switch-link a:hover{color:var(--gold-soft);}
+
+  .live-tally{position:sticky;top:0;z-index:5;margin:0 0 40px;padding:10px 18px;background:var(--navy-card);border:1px dashed rgba(201,168,76,.4);border-radius:10px;transition:border-color .3s;display:flex;align-items:center;flex-wrap:wrap;gap:8px 20px;}
+  .live-tally.complete{border:1px solid var(--gold);}
+  .live-tally-label{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-soft);font-weight:500;flex:0 0 auto;}
+  .live-tally-row{display:flex;gap:18px;flex-wrap:wrap;flex:1 1 auto;}
+  .live-tally-item{display:flex;align-items:center;gap:8px;opacity:.6;transition:opacity .3s;}
+  .live-tally.complete .live-tally-item{opacity:1;}
+  .live-tally-name{font-size:12px;color:var(--sand-mute);letter-spacing:.02em;white-space:nowrap;}
+  .live-tally-bar-wrap{width:52px;height:4px;background:var(--navy-line);border-radius:2px;overflow:hidden;flex:0 0 auto;}
+  .live-tally-bar-fill{height:100%;background:var(--gold);width:0%;transition:width .4s ease;}
+  .live-tally-val{font-size:13px;color:var(--sand-dim);font-weight:500;white-space:nowrap;}
+  .live-tally-count{font-size:12.5px;color:var(--sand-mute);flex:0 0 auto;white-space:nowrap;}
+
+  .before-begin{margin:0 0 32px;padding:18px 20px;border:1px solid var(--navy-line);border-radius:10px;background:rgba(65,89,138,.12);}
+  .before-begin .bb-eyebrow{font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);font-weight:500;margin:0 0 10px;}
+  .before-begin p{font-size:14px;line-height:1.7;color:var(--sand-dim);margin:0 0 10px;}
+  .before-begin p:last-child{margin-bottom:0;}
+
   .orgfield{margin:0 0 14px;}
   .orgfield label{display:block;font-size:14px;font-weight:500;color:var(--sand);margin:0 0 8px;}
   .orgfield input{width:100%;border:1px solid var(--navy-line);border-radius:10px;padding:12px 14px;font-family:inherit;font-size:14.5px;color:var(--sand);background:var(--navy-card);}
@@ -76,12 +97,12 @@
   .orgfield input:focus-visible{outline:2px solid var(--gold);outline-offset:2px;border-color:var(--gold);}
 
   .pillar{margin:0 0 8px;}
-  .pillar-head{display:flex;align-items:baseline;gap:14px;margin:36px 0 4px;flex-wrap:wrap;}
+  .pillar-head{display:flex;align-items:baseline;gap:14px;margin:36px 0 4px;flex-wrap:wrap;scroll-margin-top:90px;}
   .pillar-head h2{font-family:"Cormorant Garamond",serif;font-weight:600;color:var(--gold);font-size:28px;margin:0;letter-spacing:0.01em;}
   .pillar-head .tag{font-style:italic;font-family:"Cormorant Garamond",serif;font-size:18px;color:var(--gold-soft);}
   .pillar-sub{font-size:14px;color:var(--sand-mute);margin:0 0 14px;}
 
-  .q{margin:0 0 22px;}
+  .q{margin:0 0 22px;scroll-margin-top:90px;}
   .q-text{font-size:15.5px;font-weight:500;color:var(--sand);margin:0 0 10px;}
   .opts{display:grid;gap:8px;}
   .opt{position:relative;}
@@ -90,6 +111,15 @@
   .opt label:hover{border-color:var(--gold);}
   .opt input:focus-visible + label{outline:2px solid var(--gold);outline-offset:2px;}
   .opt input:checked + label{border-color:var(--gold);background:var(--navy-lift);color:var(--sand);font-weight:500;box-shadow:inset 3px 0 0 var(--rust);}
+  /* "Not enough visibility to answer" — visually present but subordinate to the
+     three scored options: smaller, dashed, lower-contrast, no gold/rust accents. */
+  .opt-nv{margin-top:6px;}
+  .opt-nv label{padding:8px 15px;font-size:12.5px;color:var(--sand-mute);border-style:dashed;border-color:rgba(65,89,138,.9);background:transparent;}
+  .opt-nv label:hover{border-color:var(--sand-mute);}
+  .opt-nv input:checked + label{border-color:var(--sand-mute);background:rgba(180,188,203,.08);color:var(--sand-dim);font-weight:400;box-shadow:none;}
+  .conditions-section{margin:40px 0 8px;padding:24px 22px;border:1px solid var(--navy-line);border-radius:14px;background:rgba(65,89,138,.08);}
+  .conditions-section .cs-eyebrow{font-family:"Cormorant Garamond",serif;font-weight:600;color:var(--gold);font-size:22px;margin:0 0 8px;}
+  .conditions-section .cs-note{font-size:13.5px;line-height:1.6;color:var(--sand-mute);margin:0 0 20px;max-width:58ch;}
   .reflective-close{margin-top:14px;padding-top:24px;border-top:1px solid var(--navy-line);}
   .reflect-eyebrow{font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);font-weight:500;margin:0 0 6px;}
   .reflect-sub{font-size:13px;line-height:1.6;color:var(--sand-mute);margin:0 0 14px;}
@@ -141,6 +171,11 @@
   .levels-note{font-size:12px;line-height:1.6;color:var(--sand-mute);margin:12px 0 0;max-width:56ch;}
   .boundary-note{font-size:13px;line-height:1.6;color:var(--sand);margin:14px 0 0;padding:12px 15px;border:1px solid var(--gold);border-radius:10px;background:rgba(201,168,76,.08);max-width:60ch;}
   .standard-note{font-size:12.5px;line-height:1.6;color:var(--sand-mute);margin:0 0 16px;font-style:italic;}
+  .lvl .lv-qualifier, .rd-lvl .lv-qualifier{display:block;font-size:10px;letter-spacing:0.08em;text-transform:none;color:var(--sand-mute);margin-top:2px;font-family:"DM Sans",sans-serif;}
+  .lvl .lv-partial, .rd-lvl .lv-partial{display:block;font-size:10px;color:var(--sand-mute);margin-top:2px;font-family:"DM Sans",sans-serif;}
+  .rd-lvl .lv-qualifier, .rd-lvl .lv-partial{color:#7a8090;}
+  .mechanical-sub{font-size:15px;color:var(--sand-dim);margin:0 0 4px;max-width:56ch;}
+  .rd-mechanical-sub{font-size:14px;color:#3a3f4a;margin:0 0 20px;max-width:60ch;}
 
   .read{margin-top:34px;}
   .read p{font-size:16px;color:var(--sand-dim);margin:0 0 18px;}
@@ -247,9 +282,32 @@
     </a>
   </div>
   <h1>The Organizational Diagnostic</h1>
-  <p class="lede">Eleven questions read your organization on density and optionality, the two axes that place you in the matrix, and measure alumni capital separately. Then they tell you what your position is actually costing or compounding.</p>
+  <p class="lede">Seventeen questions, fifteen scored, read your organization on density and optionality, the two axes that place you in the matrix, and measure alumni capital separately. Then they tell you what your position is actually costing or compounding.</p>
+  <p class="switch-link"><a href="/diagnostic" id="switchToIndividual">Looking for the individual diagnostic instead? &rarr;</a></p>
 
   <hr class="rule" />
+
+  <div class="live-tally" id="liveTally">
+    <div class="live-tally-label">Provisional &middot; updates as you answer</div>
+    <div class="live-tally-row">
+      <div class="live-tally-item">
+        <span class="live-tally-name">Density</span>
+        <div class="live-tally-bar-wrap"><div class="live-tally-bar-fill" id="ltDensityBar" style="width:0%"></div></div>
+        <span class="live-tally-val" id="ltDensityVal">&middot;</span>
+      </div>
+      <div class="live-tally-item">
+        <span class="live-tally-name">Optionality</span>
+        <div class="live-tally-bar-wrap"><div class="live-tally-bar-fill" id="ltOptionalityBar" style="width:0%"></div></div>
+        <span class="live-tally-val" id="ltOptionalityVal">&middot;</span>
+      </div>
+      <div class="live-tally-item">
+        <span class="live-tally-name">Alumni Capital</span>
+        <div class="live-tally-bar-wrap"><div class="live-tally-bar-fill" id="ltAlumniBar" style="width:0%"></div></div>
+        <span class="live-tally-val" id="ltAlumniVal">&middot;</span>
+      </div>
+    </div>
+    <div class="live-tally-count" id="ltCount">0 of 15 answered</div>
+  </div>
 
   <div class="orgfield">
     <label for="orgName">Organization name (optional)</label>
@@ -267,107 +325,184 @@
     <p class="reflect-sub" style="margin-top:10px;">Answer for one scope you know well, based on what has happened in the last twelve to eighteen months.</p>
   </div>
 
+  <div class="before-begin">
+    <p class="bb-eyebrow">Before You Begin</p>
+    <p>Answer for one organizational scope you know well. This might be the whole organization, a business unit, a function, or a team.</p>
+    <p>Base your answers on what has usually happened during the past 12 to 18 months, not on formal policy or intended design.</p>
+    <p>Choose the option that best describes the dominant pattern in the scope you selected.</p>
+    <p>If practices differ materially across the scope, choose a narrower scope before continuing.</p>
+  </div>
+
   <div id="form">
     <div class="pillar">
       <div class="pillar-head"><h2>Density</h2><span class="tag">Intensity, not tenure.</span></div>
-      <p class="pillar-sub">How much consequential judgment the work requires and develops.</p>
+      <p class="pillar-sub">How quickly people build sound judgment through consequential work, feedback, and increasing ownership.</p>
       <div class="q">
-        <p class="q-text">How early do people own decisions with real consequences?</p>
+        <p class="q-text">How are consequential decision rights typically distributed?</p>
         <div class="opts">
-          <div class="opt"><input type="radio" name="d1" id="d1_0" value="Only after years and a senior title" data-weight="1"><label for="d1_0">Only after years and a senior title</label></div>
-          <div class="opt"><input type="radio" name="d1" id="d1_1" value="Once they have proven themselves over time" data-weight="2"><label for="d1_1">Once they have proven themselves over time</label></div>
-          <div class="opt"><input type="radio" name="d1" id="d1_2" value="Early, before tenure or title says they have earned it" data-weight="3"><label for="d1_2">Early, before tenure or title says they have earned it</label></div>
+          <div class="opt"><input type="radio" name="d1" id="d1_0" value="They are largely reserved for senior roles." data-weight="1"><label for="d1_0">They are largely reserved for senior roles.</label></div>
+          <div class="opt"><input type="radio" name="d1" id="d1_1" value="They expand after a person has proven themselves over time." data-weight="2"><label for="d1_1">They expand after a person has proven themselves over time.</label></div>
+          <div class="opt"><input type="radio" name="d1" id="d1_2" value="They are introduced early and expanded with support matched to the risk." data-weight="3"><label for="d1_2">They are introduced early and expanded with support matched to the risk.</label></div>
+          <div class="opt opt-nv"><input type="radio" name="d1" id="d1_nv" value="Not enough visibility to answer"><label for="d1_nv">Not enough visibility to answer</label></div>
         </div>
       </div>
       <div class="q">
-        <p class="q-text">When an unfamiliar, consequential problem appears, what usually happens?</p>
+        <p class="q-text">When an unfamiliar, consequential problem appears, who usually owns the response?</p>
         <div class="opts">
-          <div class="opt"><input type="radio" name="d2" id="d2_0" value="It returns to the same small group of established experts" data-weight="1"><label for="d2_0">It returns to the same small group of established experts</label></div>
-          <div class="opt"><input type="radio" name="d2" id="d2_1" value="Ownership varies depending on the problem and available expertise" data-weight="2"><label for="d2_1">Ownership varies depending on the problem and available expertise</label></div>
-          <div class="opt"><input type="radio" name="d2" id="d2_2" value="Ownership is deliberately distributed, with support proportionate to the risk" data-weight="3"><label for="d2_2">Ownership is deliberately distributed, with support proportionate to the risk</label></div>
+          <div class="opt"><input type="radio" name="d2" id="d2_0" value="The same one or two people who always end up handling it." data-weight="1"><label for="d2_0">The same one or two people who always end up handling it.</label></div>
+          <div class="opt"><input type="radio" name="d2" id="d2_1" value="The person or team with the closest available expertise." data-weight="2"><label for="d2_1">The person or team with the closest available expertise.</label></div>
+          <div class="opt"><input type="radio" name="d2" id="d2_2" value="People beyond the usual experts, with escalation matched to the risk." data-weight="3"><label for="d2_2">People beyond the usual experts, with escalation matched to the risk.</label></div>
+          <div class="opt opt-nv"><input type="radio" name="d2" id="d2_nv" value="Not enough visibility to answer"><label for="d2_nv">Not enough visibility to answer</label></div>
         </div>
       </div>
       <div class="q">
-        <p class="q-text">Over the last year or so, the capability bar for most roles has...</p>
+        <p class="q-text">The intensity of work here comes mostly from...</p>
         <div class="opts">
-          <div class="opt"><input type="radio" name="d3" id="d3_0" value="Fallen or drifted" data-weight="1"><label for="d3_0">Fallen or drifted</label></div>
-          <div class="opt"><input type="radio" name="d3" id="d3_1" value="Held steady" data-weight="2"><label for="d3_1">Held steady</label></div>
-          <div class="opt"><input type="radio" name="d3" id="d3_2" value="Risen" data-weight="3"><label for="d3_2">Risen</label></div>
+          <div class="opt"><input type="radio" name="d3" id="d3_0" value="More tasks, tighter timelines, and higher volume." data-weight="1"><label for="d3_0">More tasks, tighter timelines, and higher volume.</label></div>
+          <div class="opt"><input type="radio" name="d3" id="d3_1" value="A mix of workload and more complex responsibility." data-weight="2"><label for="d3_1">A mix of workload and more complex responsibility.</label></div>
+          <div class="opt"><input type="radio" name="d3" id="d3_2" value="More complex decisions and broader ownership." data-weight="3"><label for="d3_2">More complex decisions and broader ownership.</label></div>
+          <div class="opt opt-nv"><input type="radio" name="d3" id="d3_nv" value="Not enough visibility to answer"><label for="d3_nv">Not enough visibility to answer</label></div>
         </div>
       </div>
       <div class="q">
-        <p class="q-text">The intensity here is mostly tied to...</p>
+        <p class="q-text">After difficult decisions or unfamiliar work, what usually happens?</p>
         <div class="opts">
-          <div class="opt"><input type="radio" name="d4" id="d4_0" value="Sheer volume of work" data-weight="1"><label for="d4_0">Sheer volume of work</label></div>
-          <div class="opt"><input type="radio" name="d4" id="d4_1" value="A bit of both" data-weight="2"><label for="d4_1">A bit of both</label></div>
-          <div class="opt"><input type="radio" name="d4" id="d4_2" value="People taking on greater complexity, judgment, and ownership at a sustainable pace" data-weight="3"><label for="d4_2">People taking on greater complexity, judgment, and ownership at a sustainable pace</label></div>
+          <div class="opt"><input type="radio" name="d4" id="d4_0" value="Teams move on with little review." data-weight="1"><label for="d4_0">Teams move on with little review.</label></div>
+          <div class="opt"><input type="radio" name="d4" id="d4_1" value="Review happens informally or inconsistently." data-weight="2"><label for="d4_1">Review happens informally or inconsistently.</label></div>
+          <div class="opt"><input type="radio" name="d4" id="d4_2" value="Review is routine and changes future practice." data-weight="3"><label for="d4_2">Review is routine and changes future practice.</label></div>
+          <div class="opt opt-nv"><input type="radio" name="d4" id="d4_nv" value="Not enough visibility to answer"><label for="d4_nv">Not enough visibility to answer</label></div>
+        </div>
+      </div>
+      <div class="q">
+        <p class="q-text">Who typically receives the stretch assignments that build the most judgment?</p>
+        <div class="opts">
+          <div class="opt"><input type="radio" name="d5" id="d5_0" value="The same small group of established high performers." data-weight="1"><label for="d5_0">The same small group of established high performers.</label></div>
+          <div class="opt"><input type="radio" name="d5" id="d5_1" value="People who have already demonstrated readiness for similar work." data-weight="2"><label for="d5_1">People who have already demonstrated readiness for similar work.</label></div>
+          <div class="opt"><input type="radio" name="d5" id="d5_2" value="A broader group of people, with support matched to their level of readiness." data-weight="3"><label for="d5_2">A broader group of people, with support matched to their level of readiness.</label></div>
+          <div class="opt opt-nv"><input type="radio" name="d5" id="d5_nv" value="Not enough visibility to answer"><label for="d5_nv">Not enough visibility to answer</label></div>
         </div>
       </div>
     </div>
     <div class="pillar">
       <div class="pillar-head"><h2>Optionality</h2><span class="tag">Portable, or trapped.</span></div>
-      <p class="pillar-sub">How transferable the capability people build actually is.</p>
+      <p class="pillar-sub">How readily the judgment people build can be applied across roles, priorities, and organizations.</p>
       <div class="q">
-        <p class="q-text">If a strong performer left tomorrow, their skills would be...</p>
+        <p class="q-text">For a typical strong performer, how portable is the judgment they build here?</p>
         <div class="opts">
-          <div class="opt"><input type="radio" name="o1" id="o1_0" value="Hard to translate outside here" data-weight="1"><label for="o1_0">Hard to translate outside here</label></div>
-          <div class="opt"><input type="radio" name="o1" id="o1_1" value="Somewhat transferable" data-weight="2"><label for="o1_1">Somewhat transferable</label></div>
-          <div class="opt"><input type="radio" name="o1" id="o1_2" value="Sought after elsewhere" data-weight="3"><label for="o1_2">Sought after elsewhere</label></div>
+          <div class="opt"><input type="radio" name="o1" id="o1_0" value="It depends mostly on context unique to this organization." data-weight="1"><label for="o1_0">It depends mostly on context unique to this organization.</label></div>
+          <div class="opt"><input type="radio" name="o1" id="o1_1" value="It transfers to similar roles or organizations." data-weight="2"><label for="o1_1">It transfers to similar roles or organizations.</label></div>
+          <div class="opt"><input type="radio" name="o1" id="o1_2" value="It can be applied across a range of roles, organizations, or contexts." data-weight="3"><label for="o1_2">It can be applied across a range of roles, organizations, or contexts.</label></div>
+          <div class="opt opt-nv"><input type="radio" name="o1" id="o1_nv" value="Not enough visibility to answer"><label for="o1_nv">Not enough visibility to answer</label></div>
         </div>
       </div>
       <div class="q">
-        <p class="q-text">People here tend to...</p>
+        <p class="q-text">Over the last year, how often has someone here actually applied their expertise outside its original setting?</p>
         <div class="opts">
-          <div class="opt"><input type="radio" name="o2" id="o2_0" value="Deepen a single narrow lane" data-weight="1"><label for="o2_0">Deepen a single narrow lane</label></div>
-          <div class="opt"><input type="radio" name="o2" id="o2_1" value="Grow within their function" data-weight="2"><label for="o2_1">Grow within their function</label></div>
-          <div class="opt"><input type="radio" name="o2" id="o2_2" value="Build depth they can apply across different problems, functions, or contexts" data-weight="3"><label for="o2_2">Build depth they can apply across different problems, functions, or contexts</label></div>
+          <div class="opt"><input type="radio" name="o2" id="o2_0" value="Rarely; it remains tied to one role, system, or process." data-weight="1"><label for="o2_0">Rarely; it remains tied to one role, system, or process.</label></div>
+          <div class="opt"><input type="radio" name="o2" id="o2_1" value="Sometimes; usually within the same function or adjacent work." data-weight="2"><label for="o2_1">Sometimes; usually within the same function or adjacent work.</label></div>
+          <div class="opt"><input type="radio" name="o2" id="o2_2" value="Regularly; across different problems, teams, or contexts." data-weight="3"><label for="o2_2">Regularly; across different problems, teams, or contexts.</label></div>
+          <div class="opt opt-nv"><input type="radio" name="o2" id="o2_nv" value="Not enough visibility to answer"><label for="o2_nv">Not enough visibility to answer</label></div>
         </div>
       </div>
       <div class="q">
-        <p class="q-text">What people master here is mostly...</p>
+        <p class="q-text">How clearly can people demonstrate the capability they have built here?</p>
         <div class="opts">
-          <div class="opt"><input type="radio" name="o3" id="o3_0" value="Tied to our internal systems and politics" data-weight="1"><label for="o3_0">Tied to our internal systems and politics</label></div>
-          <div class="opt"><input type="radio" name="o3" id="o3_1" value="A mix of portable and internal" data-weight="2"><label for="o3_1">A mix of portable and internal</label></div>
-          <div class="opt"><input type="radio" name="o3" id="o3_2" value="Portable to other organizations" data-weight="3"><label for="o3_2">Portable to other organizations</label></div>
+          <div class="opt"><input type="radio" name="o3" id="o3_0" value="Mostly through internal titles, systems, or terminology." data-weight="1"><label for="o3_0">Mostly through internal titles, systems, or terminology.</label></div>
+          <div class="opt"><input type="radio" name="o3" id="o3_1" value="Through examples that translate within similar roles or sectors." data-weight="2"><label for="o3_1">Through examples that translate within similar roles or sectors.</label></div>
+          <div class="opt"><input type="radio" name="o3" id="o3_2" value="Through outcomes and examples that translate across contexts." data-weight="3"><label for="o3_2">Through outcomes and examples that translate across contexts.</label></div>
+          <div class="opt opt-nv"><input type="radio" name="o3" id="o3_nv" value="Not enough visibility to answer"><label for="o3_nv">Not enough visibility to answer</label></div>
         </div>
       </div>
       <div class="q">
-        <p class="q-text">If priorities changed next quarter, how much of your critical talent could be redeployed without starting their development over?</p>
+        <p class="q-text">If priorities changed next quarter, what share of people in critical roles could move into different high-priority work with limited retraining?</p>
         <div class="opts">
-          <div class="opt"><input type="radio" name="o4" id="o4_0" value="Very little" data-weight="1"><label for="o4_0">Very little</label></div>
-          <div class="opt"><input type="radio" name="o4" id="o4_1" value="Some, within adjacent work" data-weight="2"><label for="o4_1">Some, within adjacent work</label></div>
-          <div class="opt"><input type="radio" name="o4" id="o4_2" value="A meaningful proportion, across multiple priorities" data-weight="3"><label for="o4_2">A meaningful proportion, across multiple priorities</label></div>
+          <div class="opt"><input type="radio" name="o4" id="o4_0" value="Very few." data-weight="1"><label for="o4_0">Very few.</label></div>
+          <div class="opt"><input type="radio" name="o4" id="o4_1" value="Some &mdash; a handful of people, mainly in adjacent work." data-weight="2"><label for="o4_1">Some &mdash; a handful of people, mainly in adjacent work.</label></div>
+          <div class="opt"><input type="radio" name="o4" id="o4_2" value="A substantial share &mdash; most of the team could plausibly move." data-weight="3"><label for="o4_2">A substantial share &mdash; most of the team could plausibly move.</label></div>
+          <div class="opt opt-nv"><input type="radio" name="o4" id="o4_nv" value="Not enough visibility to answer"><label for="o4_nv">Not enough visibility to answer</label></div>
+        </div>
+      </div>
+      <div class="q">
+        <p class="q-text">When familiar systems or processes are unavailable, how well can people adapt what they know?</p>
+        <div class="opts">
+          <div class="opt"><input type="radio" name="o5" id="o5_0" value="Performance drops substantially until the familiar system or process is restored." data-weight="1"><label for="o5_0">Performance drops substantially until the familiar system or process is restored.</label></div>
+          <div class="opt"><input type="radio" name="o5" id="o5_1" value="People can adapt within similar conditions but need support when the context changes significantly." data-weight="2"><label for="o5_1">People can adapt within similar conditions but need support when the context changes significantly.</label></div>
+          <div class="opt"><input type="radio" name="o5" id="o5_2" value="People can apply the underlying principles effectively in materially different conditions." data-weight="3"><label for="o5_2">People can apply the underlying principles effectively in materially different conditions.</label></div>
+          <div class="opt opt-nv"><input type="radio" name="o5" id="o5_nv" value="Not enough visibility to answer"><label for="o5_nv">Not enough visibility to answer</label></div>
         </div>
       </div>
     </div>
     <div class="pillar">
       <div class="pillar-head"><h2>Alumni Capital</h2><span class="tag">What stays after they go.</span></div>
-      <p class="pillar-sub">What the organization retains and circulates after people leave.</p>
+      <p class="pillar-sub">What knowledge, relationships, and value continue to circulate after people leave.</p>
       <div class="q">
-        <p class="q-text">When someone leaves, the relationship is...</p>
+        <p class="q-text">For people who leave in good standing, what usually happens to the relationship?</p>
         <div class="opts">
-          <div class="opt"><input type="radio" name="a1" id="a1_0" value="Severed" data-weight="1"><label for="a1_0">Severed</label></div>
-          <div class="opt"><input type="radio" name="a1" id="a1_1" value="Politely dropped" data-weight="2"><label for="a1_1">Politely dropped</label></div>
-          <div class="opt"><input type="radio" name="a1" id="a1_2" value="Maintained" data-weight="3"><label for="a1_2">Maintained</label></div>
+          <div class="opt"><input type="radio" name="a1" id="a1_0" value="Contact generally ends at departure." data-weight="1"><label for="a1_0">Contact generally ends at departure.</label></div>
+          <div class="opt"><input type="radio" name="a1" id="a1_1" value="Contact continues informally or occasionally." data-weight="2"><label for="a1_1">Contact continues informally or occasionally.</label></div>
+          <div class="opt"><input type="radio" name="a1" id="a1_2" value="The organization maintains an active, ongoing connection." data-weight="3"><label for="a1_2">The organization maintains an active, ongoing connection.</label></div>
+          <div class="opt opt-nv"><input type="radio" name="a1" id="a1_nv" value="Not enough visibility to answer"><label for="a1_nv">Not enough visibility to answer</label></div>
         </div>
       </div>
       <div class="q">
-        <p class="q-text">Former employees...</p>
+        <p class="q-text">How often do former employees create value for the organization after leaving?</p>
         <div class="opts">
-          <div class="opt"><input type="radio" name="a2" id="a2_0" value="Rarely come back in any form" data-weight="1"><label for="a2_0">Rarely come back in any form</label></div>
-          <div class="opt"><input type="radio" name="a2" id="a2_1" value="Occasionally refer someone" data-weight="2"><label for="a2_1">Occasionally refer someone</label></div>
-          <div class="opt"><input type="radio" name="a2" id="a2_2" value="Send talent and clients back to us" data-weight="3"><label for="a2_2">Send talent and clients back to us</label></div>
+          <div class="opt"><input type="radio" name="a2" id="a2_0" value="Rarely, with little ongoing exchange." data-weight="1"><label for="a2_0">Rarely, with little ongoing exchange.</label></div>
+          <div class="opt"><input type="radio" name="a2" id="a2_1" value="Occasionally, through referrals, rehires, introductions, or advice." data-weight="2"><label for="a2_1">Occasionally, through referrals, rehires, introductions, or advice.</label></div>
+          <div class="opt"><input type="radio" name="a2" id="a2_2" value="Regularly, through recurring flows of talent, knowledge, opportunities, or partnership." data-weight="3"><label for="a2_2">Regularly, through recurring flows of talent, knowledge, opportunities, or partnership.</label></div>
+          <div class="opt opt-nv"><input type="radio" name="a2" id="a2_nv" value="Not enough visibility to answer"><label for="a2_nv">Not enough visibility to answer</label></div>
         </div>
       </div>
       <div class="q">
-        <p class="q-text">When a person leaves, their knowledge...</p>
+        <p class="q-text">When someone leaves a key role, is the work itself still doable without them?</p>
         <div class="opts">
-          <div class="opt"><input type="radio" name="a3" id="a3_0" value="Walks out the door with them" data-weight="1"><label for="a3_0">Walks out the door with them</label></div>
-          <div class="opt"><input type="radio" name="a3" id="a3_1" value="Partially stays" data-weight="2"><label for="a3_1">Partially stays</label></div>
-          <div class="opt"><input type="radio" name="a3" id="a3_2" value="Stays usable by the team" data-weight="3"><label for="a3_2">Stays usable by the team</label></div>
+          <div class="opt"><input type="radio" name="a3" id="a3_0" value="Much of it leaves with them." data-weight="1"><label for="a3_0">Much of it leaves with them.</label></div>
+          <div class="opt"><input type="radio" name="a3" id="a3_1" value="Some remains, but the team must reconstruct important parts." data-weight="2"><label for="a3_1">Some remains, but the team must reconstruct important parts.</label></div>
+          <div class="opt"><input type="radio" name="a3" id="a3_2" value="Enough remains accessible for the team to continue and adapt the work." data-weight="3"><label for="a3_2">Enough remains accessible for the team to continue and adapt the work.</label></div>
+          <div class="opt opt-nv"><input type="radio" name="a3" id="a3_nv" value="Not enough visibility to answer"><label for="a3_nv">Not enough visibility to answer</label></div>
+        </div>
+      </div>
+      <div class="q">
+        <p class="q-text">How does the organization use what it learns from departures?</p>
+        <div class="opts">
+          <div class="opt"><input type="radio" name="a4" id="a4_0" value="Patterns are not consistently captured or used." data-weight="1"><label for="a4_0">Patterns are not consistently captured or used.</label></div>
+          <div class="opt"><input type="radio" name="a4" id="a4_1" value="Themes are reviewed, mainly within HR or the immediate team." data-weight="2"><label for="a4_1">Themes are reviewed, mainly within HR or the immediate team.</label></div>
+          <div class="opt"><input type="radio" name="a4" id="a4_2" value="Patterns change decisions about roles, managers, development, or workforce design." data-weight="3"><label for="a4_2">Patterns change decisions about roles, managers, development, or workforce design.</label></div>
+          <div class="opt opt-nv"><input type="radio" name="a4" id="a4_nv" value="Not enough visibility to answer"><label for="a4_nv">Not enough visibility to answer</label></div>
+        </div>
+      </div>
+      <div class="q">
+        <p class="q-text">When someone who holds important internal or external relationships leaves, do those relationships survive the departure?</p>
+        <div class="opts">
+          <div class="opt"><input type="radio" name="a5" id="a5_0" value="Many weaken or disappear because they depended primarily on that person." data-weight="1"><label for="a5_0">Many weaken or disappear because they depended primarily on that person.</label></div>
+          <div class="opt"><input type="radio" name="a5" id="a5_1" value="Some continue, but continuity depends on informal handoffs and individual effort." data-weight="2"><label for="a5_1">Some continue, but continuity depends on informal handoffs and individual effort.</label></div>
+          <div class="opt"><input type="radio" name="a5" id="a5_2" value="The relationships are transferred in ways that preserve trust and continued access." data-weight="3"><label for="a5_2">The relationships are transferred in ways that preserve trust and continued access.</label></div>
+          <div class="opt opt-nv"><input type="radio" name="a5" id="a5_nv" value="Not enough visibility to answer"><label for="a5_nv">Not enough visibility to answer</label></div>
         </div>
       </div>
     </div>
+
+    <div class="conditions-section">
+      <p class="cs-eyebrow">Conditions shaping your result</p>
+      <p class="cs-note">These final questions help interpret your organizational position. They do not change your Density, Optionality, or Alumni Capital scores.</p>
+      <div class="q">
+        <p class="q-text">Over the past 12 to 18 months, the level of consequential judgment expected in most roles has...</p>
+        <div class="opts">
+          <div class="opt"><input type="radio" name="c1" id="c1_0" value="Decreased." data-weight="1"><label for="c1_0">Decreased.</label></div>
+          <div class="opt"><input type="radio" name="c1" id="c1_1" value="Stayed about the same." data-weight="2"><label for="c1_1">Stayed about the same.</label></div>
+          <div class="opt"><input type="radio" name="c1" id="c1_2" value="Increased." data-weight="3"><label for="c1_2">Increased.</label></div>
+        </div>
+      </div>
+      <div class="q">
+        <p class="q-text">How sustainable is the pace in a typical month?</p>
+        <div class="opts">
+          <div class="opt"><input type="radio" name="c2" id="c2_0" value="The pace regularly exceeds what teams can sustain." data-weight="1"><label for="c2_0">The pace regularly exceeds what teams can sustain.</label></div>
+          <div class="opt"><input type="radio" name="c2" id="c2_1" value="The pace is usually manageable, with recurring periods of strain." data-weight="2"><label for="c2_1">The pace is usually manageable, with recurring periods of strain.</label></div>
+          <div class="opt"><input type="radio" name="c2" id="c2_2" value="The pace is generally sustainable, including during demanding periods." data-weight="3"><label for="c2_2">The pace is generally sustainable, including during demanding periods.</label></div>
+        </div>
+      </div>
+    </div>
+
     <div class="context q"><label for="ctxBox">Anything else about how your organization builds and keeps capability? (optional)</label><textarea id="ctxBox" placeholder="A sentence or two of context helps the read."></textarea></div>
     <div class="reflective-close q">
       <p class="reflect-eyebrow">One Last Question</p>
@@ -417,51 +552,47 @@ const ORG_FORMSPREE_ENDPOINT = "https://formspree.io/f/mjgndvkp";
 const PILLARS = [
   {
     key:"density", name:"Density", tag:"Intensity, not tenure.",
-    sub:"How much consequential judgment the work requires and develops.",
+    sub:"How quickly people build sound judgment through consequential work, feedback, and increasing ownership.",
     questions:[
-      {id:"d1", text:"How early do people own decisions with real consequences?",
-       options:["Only after years and a senior title","Once they have proven themselves over time","Early, before tenure or title says they have earned it"]},
-      {id:"d2", text:"When an unfamiliar, consequential problem appears, what usually happens?",
-       options:["It returns to the same small group of established experts","Ownership varies depending on the problem and available expertise","Ownership is deliberately distributed, with support proportionate to the risk"]},
-      {id:"d3", text:"Over the last year or so, the capability bar for most roles has...",
-       options:["Fallen or drifted","Held steady","Risen"]},
-      {id:"d4", text:"The intensity here is mostly tied to...",
-       options:["Sheer volume of work","A bit of both","People taking on greater complexity, judgment, and ownership at a sustainable pace"]}
+      {id:"d1", text:"How are consequential decision rights typically distributed?"},
+      {id:"d2", text:"When an unfamiliar, consequential problem appears, who usually owns the response?"},
+      {id:"d3", text:"The intensity of work here comes mostly from..."},
+      {id:"d4", text:"After difficult decisions or unfamiliar work, what usually happens?"},
+      {id:"d5", text:"Who typically receives the stretch assignments that build the most judgment?"}
     ]
   },
   {
     key:"optionality", name:"Optionality", tag:"Portable, or trapped.",
-    sub:"How transferable the capability people build actually is.",
+    sub:"How readily the judgment people build can be applied across roles, priorities, and organizations.",
     questions:[
-      {id:"o1", text:"If a strong performer left tomorrow, their skills would be...",
-       options:["Hard to translate outside here","Somewhat transferable","Sought after elsewhere"]},
-      {id:"o2", text:"People here tend to...",
-       options:["Deepen a single narrow lane","Grow within their function","Build depth they can apply across different problems, functions, or contexts"]},
-      {id:"o3", text:"What people master here is mostly...",
-       options:["Tied to our internal systems and politics","A mix of portable and internal","Portable to other organizations"]},
-      {id:"o4", text:"If priorities changed next quarter, how much of your critical talent could be redeployed without starting their development over?",
-       options:["Very little","Some, within adjacent work","A meaningful proportion, across multiple priorities"]}
+      {id:"o1", text:"For a typical strong performer, how portable is the judgment they build here?"},
+      {id:"o2", text:"Over the last year, how often has someone here actually applied their expertise outside its original setting?"},
+      {id:"o3", text:"How clearly can people demonstrate the capability they have built here?"},
+      {id:"o4", text:"If priorities changed next quarter, what share of people in critical roles could move into different high-priority work with limited retraining?"},
+      {id:"o5", text:"When familiar systems or processes are unavailable, how well can people adapt what they know?"}
     ]
   },
   {
     key:"alumni", name:"Alumni Capital", tag:"What stays after they go.",
-    sub:"What the organization retains and circulates after people leave.",
+    sub:"What knowledge, relationships, and value continue to circulate after people leave.",
     questions:[
-      {id:"a1", text:"When someone leaves, the relationship is...",
-       options:["Severed","Politely dropped","Maintained"]},
-      {id:"a2", text:"Former employees...",
-       options:["Rarely come back in any form","Occasionally refer someone","Send talent and clients back to us"]},
-      {id:"a3", text:"When a person leaves, their knowledge...",
-       options:["Walks out the door with them","Partially stays","Stays usable by the team"]}
+      {id:"a1", text:"For people who leave in good standing, what usually happens to the relationship?"},
+      {id:"a2", text:"How often do former employees create value for the organization after leaving?"},
+      {id:"a3", text:"When someone leaves a key role, is the work itself still doable without them?"},
+      {id:"a4", text:"How does the organization use what it learns from departures?"},
+      {id:"a5", text:"When someone who holds important internal or external relationships leaves, do those relationships survive the departure?"}
     ]
   }
 ];
+// Unscored. Never included in any dimension score, composite, or band calculation.
+const CONDITIONS = [
+  {id:"c1", label:"Capability trajectory", text:"Over the past 12 to 18 months, the level of consequential judgment expected in most roles has..."},
+  {id:"c2", label:"Sustainability", text:"How sustainable is the pace in a typical month?"}
+];
 
-// ── Single source of truth for the four canonical quadrant strings (1f).
+// ── Single source of truth for the four canonical quadrant strings.
 // Placement, the matrix, and the fallback all derive from Q, so the four names
-// cannot desync anywhere on this page. Placement is now computed client-side and
-// the model no longer emits a quadrant, so the prompt carries no quadrant enum
-// to drift from either.
+// cannot desync anywhere on this page.
 const Q = { compounding:"Compounding", depthTrap:"Depth Trap", stagnant:"Stagnant", fragile:"Fragile" };
 const GRID_ORDER = [Q.depthTrap, Q.compounding, Q.stagnant, Q.fragile];
 const QUADRANT_POS = {
@@ -472,16 +603,89 @@ const QUADRANT_POS = {
 };
 function quadrantFor(dHigh, oHigh){ return dHigh ? (oHigh?Q.compounding:Q.depthTrap) : (oHigh?Q.fragile:Q.stagnant); }
 
+/* ── Scoring engine (Organizational Instrument v2.0, 17 questions / 15 scored).
+   Per dimension: balance = (count of "3" answers) - (count of "1" answers), among
+   scored items only ("Not enough visibility to answer" contributes to neither n
+   nor balance). All classification below keys off the integer balance, never a
+   floating-point mean comparison. Tested against the full required matrix (four
+   quadrants, four boundary pairs, center, insufficient x3, near-boundary x2 axes,
+   three Alumni Capital bands + its own insufficient case) before being wired in. */
+function classifyAxis(n, balance){
+  if(n<=3) return {sufficient:false, n, balance};
+  let direction;
+  if(balance>0) direction="higher"; else if(balance<0) direction="lower"; else direction="boundary";
+  let strength;
+  if(balance===0) strength="boundary"; else if(Math.abs(balance)>=2) strength="clear"; else strength="near-boundary";
+  return {sufficient:true, direction, strength, n, balance, partial: n===4};
+}
+function classifyPlacement(dAxis, oAxis){
+  if(!dAxis.sufficient || !oAxis.sufficient){
+    let sufficientAxis = null;
+    if(dAxis.sufficient && !oAxis.sufficient) sufficientAxis = "density";
+    else if(oAxis.sufficient && !dAxis.sufficient) sufficientAxis = "optionality";
+    return {type:"insufficient", label:"Insufficient information to determine a Four States position.", sufficientAxis};
+  }
+  const dBoundary = dAxis.direction==="boundary", oBoundary = oAxis.direction==="boundary";
+  if(dBoundary && oBoundary){
+    return {type:"center", label:"At the center of the matrix.",
+      sub:"There is no dominant lean in either Density or Optionality. The organization shows a balanced or internally mixed pattern across both dimensions."};
+  }
+  if(dBoundary && !oBoundary){
+    return oAxis.direction==="higher"
+      ? {type:"boundary-pair", label:"On the boundary between Compounding and Fragile.", sub:"Density is balanced, while Optionality falls on the higher side.", pair:[Q.compounding,Q.fragile]}
+      : {type:"boundary-pair", label:"On the boundary between Depth Trap and Stagnant.", sub:"Density is balanced, while Optionality falls on the lower side.", pair:[Q.depthTrap,Q.stagnant]};
+  }
+  if(oBoundary && !dBoundary){
+    return dAxis.direction==="higher"
+      ? {type:"boundary-pair", label:"On the boundary between Compounding and Depth Trap.", sub:"Optionality is balanced, while Density falls on the higher side.", pair:[Q.compounding,Q.depthTrap]}
+      : {type:"boundary-pair", label:"On the boundary between Fragile and Stagnant.", sub:"Optionality is balanced, while Density falls on the lower side.", pair:[Q.fragile,Q.stagnant]};
+  }
+  const quadrant = quadrantFor(dAxis.direction==="higher", oAxis.direction==="higher");
+  return {type:"quadrant", quadrant, label:quadrant};
+}
+function classifyAlumni(n, balance){
+  if(n<4) return {sufficient:false, n, balance, partial:false};
+  const partial = n===4;
+  if(balance<=-2) return {sufficient:true, band:"clear leakage", n, balance, partial};
+  if(balance>=2) return {sufficient:true, band:"clear circulation and retention", n, balance, partial};
+  return {sufficient:true, band:"mixed or inconsistent", n, balance, partial};
+}
+// Reads the same checked-radio state score() uses; shared so the live-tally panel
+// and the final scorer can never drift from each other. "Not enough visibility to
+// answer" (no data-weight) counts toward neither n nor balance.
+function dimensionTally(pillarKey){
+  const p = PILLARS.find(function(pl){ return pl.key===pillarKey; });
+  let n=0, count3=0, count1=0;
+  p.questions.forEach(function(q){
+    const sel = document.querySelector(`input[name="${q.id}"]:checked`);
+    if(sel && sel.dataset.weight){
+      const w = parseInt(sel.dataset.weight,10);
+      n++;
+      if(w===3) count3++; else if(w===1) count1++;
+    }
+  });
+  return {n, balance: count3-count1};
+}
+function score(){
+  const dT = dimensionTally("density"), oT = dimensionTally("optionality"), aT = dimensionTally("alumni");
+  const dAxis = classifyAxis(dT.n, dT.balance), oAxis = classifyAxis(oT.n, oT.balance);
+  const placement = classifyPlacement(dAxis, oAxis);
+  const alumniCapital = classifyAlumni(aT.n, aT.balance);
+  return Object.assign({}, placement, {
+    density: dAxis, optionality: oAxis, alumniCapital,
+    mechanical: placement.type !== "quadrant"
+  });
+}
+
 const SAMPLE = {
-  quadrant:"Depth Trap", density:"high", optionality:"low", alumniCapital:"moderate",
+  type:"quadrant", quadrant:"Depth Trap", mechanical:false, standard:false,
+  density:{sufficient:true,direction:"higher",strength:"clear",partial:false},
+  optionality:{sufficient:true,direction:"lower",strength:"clear",partial:false},
+  alumniCapital:{sufficient:true,band:"mixed or inconsistent",partial:false},
   headline:"You are a high-pressure environment that builds deep skill people cannot easily carry anywhere else.",
   read:"Your people work hard and they work close to the edge, which is why your density reads high. The problem is what that intensity produces. The capability your teams build is shaped tightly around your internal systems, your tooling, and the way decisions move through your hierarchy, so it does not travel. People get very good at operating here and much less portable anywhere else.\n\nThat feels like strength from the inside. Performance looks high and tenure looks like loyalty, so the cost stays hidden until someone tries to leave or the ground shifts under you. Each senior departure can carry context and judgment out of the organization that takes significant time, dependency on remaining experts, and external hiring to reconstruct. Your alumni capital is holding at moderate, which is the one thing keeping the position from hardening, because some former people still send talent back and some knowledge stays usable after they go.",
   leaders:"The work in front of leadership is to widen what the intensity produces, not to dial the intensity down. Build the portable version of the skills your people already have, give them range across functions before the market gives them range for you, and treat the relationships you keep with people who leave as the asset that turns this depth into resilience rather than a trap. The organization is building depth it may struggle to redeploy internally and may not recover easily once it leaves."
 };
-
-// Questions, context box and reflective close are server-rendered in #form (5.7).
-// PILLARS and REFLECTION_OPTS remain the data of record; the scorer queries the
-// static inputs by name/id and reads data-weight, exactly as before.
 
 const runBtn = document.getElementById("runBtn");
 const statusEl = document.getElementById("status");
@@ -497,19 +701,26 @@ function scopeHeader(org){
   return lastScope ? `${base} &middot; Scope: ${esc(lastScope)}` : base;
 }
 
+// No all-or-nothing gate: Run is always available. Per-dimension sufficiency
+// (>=4 of 5 scored) is decided independently in score(); an unanswered or
+// "Not enough visibility" selection simply is not counted there. This text
+// array is descriptive context sent to diagnose.js and shown in the report;
+// it is never used to compute the placement itself.
 function collect(){
   const answers=[];
-  let missing=0;
   PILLARS.forEach(p=>{
     p.questions.forEach(q=>{
       const sel = document.querySelector(`input[name="${q.id}"]:checked`);
-      if(!sel){missing++;}
-      else{answers.push(`[${p.name}] ${q.text} Answer: ${sel.value}`);}
+      if(sel){answers.push(`[${p.name}] ${q.text} Answer: ${sel.value}`);}
     });
+  });
+  CONDITIONS.forEach(c=>{
+    const sel = document.querySelector(`input[name="${c.id}"]:checked`);
+    if(sel){answers.push(`[Conditions: ${c.label}] ${c.text} Answer: ${sel.value}`);}
   });
   const ctxVal = document.getElementById("ctxBox").value.trim();
   if(ctxVal){answers.push(`[Added context] ${ctxVal}`);}
-  return {answers, missing};
+  return {answers};
 }
 
 function esc(s){return (s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
@@ -541,10 +752,20 @@ function firstMoveHTML(quadrant){
   return `<div class="firstmove-block"><p class="lh">First move</p><p style="margin:8px 0 0;line-height:1.7;">${move}</p></div>`;
 }
 
-function renderMatrix(active){
+// activeNames: which quadrant cell(s) to highlight, given the new placement shape.
+// A single quadrant for type "quadrant", both named quadrants for a boundary
+// pair, none for "center" or "insufficient" (the matrix is shown for spatial
+// context only in those cases, with no position asserted).
+function activeQuadrantNames(d){
+  if(d.type==="quadrant") return [d.quadrant];
+  if(d.type==="boundary-pair") return d.pair;
+  return [];
+}
+function renderMatrix(d){
+  const active = activeQuadrantNames(d);
   let cells = GRID_ORDER.map(name=>{
     const pos = QUADRANT_POS[name];
-    const on = name===active ? " active":"";
+    const on = active.indexOf(name)!==-1 ? " active":"";
     return `<div class="cell${on}"><div class="cn">${name}</div><div class="cc">${pos.code}</div></div>`;
   }).join("");
   return `
@@ -558,10 +779,11 @@ function renderMatrix(active){
     </div>`;
 }
 
-function reportMatrix(active){
+function reportMatrix(d){
+  const active = activeQuadrantNames(d);
   let cells = GRID_ORDER.map(name=>{
     const pos = QUADRANT_POS[name];
-    const on = name===active ? " active":"";
+    const on = active.indexOf(name)!==-1 ? " active":"";
     return `<div class="rd-cell${on}"><div class="cn">${name}</div><div class="cc">${pos.code}</div></div>`;
   }).join("");
   return `
@@ -575,36 +797,61 @@ function reportMatrix(active){
     </div>`;
 }
 
+// Per-axis display: direction word + an optional "near the boundary" qualifier
+// + an optional "based on 4 of 5 items" partial note. Insufficient axes show
+// no qualifier at all, just the insufficient state.
+function axisLevelHTML(axis, label){
+  if(!axis.sufficient){
+    return `<div class="lvl"><p class="ln">${label}</p><div class="lv">Insufficient</div><span class="lv-qualifier">fewer than 4 of 5 answered</span></div>`;
+  }
+  const word = axis.direction==="higher" ? "Higher" : (axis.direction==="lower" ? "Lower" : "Balanced");
+  const qualifier = axis.strength==="near-boundary" ? "near the boundary" : "";
+  return `<div class="lvl"><p class="ln">${label}</p><div class="lv">${word}</div>${qualifier?`<span class="lv-qualifier">${qualifier}</span>`:""}${axis.partial?`<span class="lv-partial">based on 4 of 5 items</span>`:""}</div>`;
+}
+function alumniLevelHTML(a){
+  if(!a.sufficient){
+    return `<div class="lvl"><p class="ln">Alumni Capital</p><div class="lv">Insufficient</div><span class="lv-qualifier">fewer than 4 of 5 answered</span></div>`;
+  }
+  const bandLabel = a.band.charAt(0).toUpperCase()+a.band.slice(1);
+  return `<div class="lvl"><p class="ln">Alumni Capital</p><div class="lv" style="text-transform:none;font-size:17px;">${esc(bandLabel)}</div>${a.partial?`<span class="lv-partial">based on 4 of 5 items</span>`:""}</div>`;
+}
+function levelsRowHTML(d){
+  return `<div class="levels">${axisLevelHTML(d.density,"Density")}${axisLevelHTML(d.optionality,"Optionality")}${alumniLevelHTML(d.alumniCapital)}</div>`;
+}
+
 function renderResult(d){
   lastDiagnosis = d;
   const org = orgInput.value.trim();
+  const quadrantParam = d.quadrant || "";
   resultEl.innerHTML = `
     <p class="scope-header" style="font-size:13px;color:var(--sand-mute);margin:0 0 16px;">${scopeHeader(org)}</p>
     ${reflectionEcho(lastReflection) ? `<p style="font-size:15px;line-height:1.7;margin:0 0 20px;">You said your organization builds capability ${reflectionEcho(lastReflection)}. Read what follows against that.</p>` : ""}
     <div class="card">
       <p class="levels-note" style="margin:0 0 18px;">This is a directional leadership read rather than a full organizational assessment. It identifies a pattern worth testing against workforce data and against the experience of other leaders in the same scope.</p>
-      <p class="qd-eyebrow">Based on your answers, the pattern most closely resembles</p>
-      <div class="qd-name">${esc(d.quadrant)}</div>
-      <p class="headline">${esc(d.headline)}</p>
-      ${renderMatrix(d.quadrant)}
-      <div class="levels">
-        <div class="lvl"><p class="ln">Density</p><div class="lv">${esc(d.density)}</div></div>
-        <div class="lvl"><p class="ln">Optionality</p><div class="lv">${esc(d.optionality)}</div></div>
-        <div class="lvl"><p class="ln">Alumni Capital</p><div class="lv">${esc(d.alumniCapital)}</div></div>
-      </div>
+      ${d.mechanical ? `
+        <p class="qd-eyebrow">Based on your answers</p>
+        <div class="qd-name" style="font-size:28px;">${esc(d.label)}</div>
+        ${d.sub ? `<p class="mechanical-sub">${esc(d.sub)}</p>` : ""}
+      ` : `
+        <p class="qd-eyebrow">Based on your answers, the pattern most closely resembles</p>
+        <div class="qd-name">${esc(d.quadrant)}</div>
+        <p class="headline">${esc(d.headline)}</p>
+      `}
+      ${renderMatrix(d)}
+      ${levelsRowHTML(d)}
       <p class="levels-note">Density and optionality set the position in the matrix. Alumni capital is measured separately and does not move it.</p>
-      ${d.boundary ? `<p class="boundary-note">${esc(boundaryNote(d))}</p>` : ""}
-      ${d.standard ? `<p class="standard-note">Standard reading. The live read was briefly unavailable, so this is the standard reading for your position. Your placement is unchanged.</p>` : ""}
-      <div class="read-body">${paras(d.read)}</div>
+      ${(d.standard && !d.mechanical) ? `<p class="standard-note">Standard reading. The live read was briefly unavailable, so this is the standard reading for your position. Your placement is unchanged.</p>` : ""}
+      ${!d.mechanical ? `<div class="read-body">${paras(d.read)}</div>` : ""}
     </div>
+    ${!d.mechanical ? `
     <div class="leaders">
       <p class="lh">What this means for leaders</p>
       ${paras(d.leaders)}
-    </div>
-    ${threeThingsHTML(d.quadrant)}
-    ${firstMoveHTML(d.quadrant)}
+    </div>` : ""}
+    ${d.quadrant ? threeThingsHTML(d.quadrant) : ""}
+    ${d.quadrant ? firstMoveHTML(d.quadrant) : ""}
     <div class="single-cta" style="margin:22px 0;">
-      <a href="work.html?quadrant=${encodeURIComponent(d.quadrant)}#get-in-touch" class="workwith" onclick="window.plausible&&plausible('Diagnostic Work With Me',{props:{quadrant:'${d.quadrant}',from:'result-cta'}})">Send me your reading and I will tell you what I would check first. &rarr;</a>
+      <a href="work.html?quadrant=${encodeURIComponent(quadrantParam)}#get-in-touch" class="workwith" onclick="window.plausible&&plausible('Diagnostic Work With Me',{props:{quadrant:'${quadrantParam}',from:'result-cta'}})">Send me your reading and I will tell you what I would check first. &rarr;</a>
       <p style="font-size:14px;line-height:1.7;color:var(--sand-mute);margin:8px 0 0;">There is no proposal attached to this. The first thing worth establishing is whether I can see something you cannot.</p>
     </div>
     <div class="result-actions">
@@ -678,11 +925,12 @@ function submitGate(){
   const lead = {
     email: email,
     org: org,
-    quadrant: lastDiagnosis ? lastDiagnosis.quadrant : "",
-    density: lastDiagnosis ? lastDiagnosis.density : "",
-    optionality: lastDiagnosis ? lastDiagnosis.optionality : "",
-    alumniCapital: lastDiagnosis ? lastDiagnosis.alumniCapital : "",
-    boundary: lastDiagnosis ? String(lastDiagnosis.boundary) : "",
+    placementType: lastDiagnosis ? lastDiagnosis.type : "",
+    quadrant: lastDiagnosis ? (lastDiagnosis.quadrant || "") : "",
+    label: lastDiagnosis ? lastDiagnosis.label : "",
+    density: lastDiagnosis && lastDiagnosis.density.sufficient ? lastDiagnosis.density.direction : "insufficient",
+    optionality: lastDiagnosis && lastDiagnosis.optionality.sufficient ? lastDiagnosis.optionality.direction : "insufficient",
+    alumniCapital: lastDiagnosis && lastDiagnosis.alumniCapital.sufficient ? lastDiagnosis.alumniCapital.band : "insufficient",
     standard: lastDiagnosis ? String(lastDiagnosis.standard) : "",
     reflection: lastReflection,
     source: "organizational_diagnostic"
@@ -694,6 +942,25 @@ function submitGate(){
   try{ fetch(ORG_FORMSPREE_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify(lead),keepalive:true}).catch(function(){}); }catch(err){}
   if(window.plausible){ plausible("Diagnostic Lead", {props:{quadrant: lastDiagnosis ? lastDiagnosis.quadrant : ""}}); }
   openReportFromGate();
+}
+
+function rdAxisLevelHTML(axis, label){
+  if(!axis.sufficient){
+    return `<div class="rd-lvl"><p class="ln">${label}</p><div class="lv">Insufficient</div><span class="lv-qualifier">fewer than 4 of 5 answered</span></div>`;
+  }
+  const word = axis.direction==="higher" ? "Higher" : (axis.direction==="lower" ? "Lower" : "Balanced");
+  const qualifier = axis.strength==="near-boundary" ? "near the boundary" : "";
+  return `<div class="rd-lvl"><p class="ln">${label}</p><div class="lv">${word}</div>${qualifier?`<span class="lv-qualifier">${qualifier}</span>`:""}${axis.partial?`<span class="lv-partial">based on 4 of 5 items</span>`:""}</div>`;
+}
+function rdAlumniLevelHTML(a){
+  if(!a.sufficient){
+    return `<div class="rd-lvl"><p class="ln">Alumni Capital</p><div class="lv">Insufficient</div><span class="lv-qualifier">fewer than 4 of 5 answered</span></div>`;
+  }
+  const bandLabel = a.band.charAt(0).toUpperCase()+a.band.slice(1);
+  return `<div class="rd-lvl"><p class="ln">Alumni Capital</p><div class="lv" style="text-transform:none;font-size:17px;">${esc(bandLabel)}</div>${a.partial?`<span class="lv-partial">based on 4 of 5 items</span>`:""}</div>`;
+}
+function rdLevelsRowHTML(d){
+  return `<div class="rd-levels">${rdAxisLevelHTML(d.density,"Density")}${rdAxisLevelHTML(d.optionality,"Optionality")}${rdAlumniLevelHTML(d.alumniCapital)}</div>`;
 }
 
 function buildReport(d, org){
@@ -712,22 +979,22 @@ function buildReport(d, org){
     ${reflectionEcho(lastReflection) ? `<p style="font-size:15px;line-height:1.7;margin:0 0 16px;">You said your organization builds capability ${reflectionEcho(lastReflection)}. Read what follows against that.</p>` : ""}
     <p class="rd-frame">This is a directional leadership read rather than a full organizational assessment. It identifies a pattern worth testing against workforce data and against the experience of other leaders in the same scope.</p>
     <p class="rd-frame">A direct read of whether this organization builds capability that lasts or quietly leaks it, measured across density, optionality, and alumni capital, with the cost of its current position named.</p>
-    <p class="rd-quad-label">Based on your answers, the pattern most closely resembles</p>
-    <p class="rd-quad">${esc(d.quadrant)}</p>
-    <p class="rd-headline">${esc(d.headline)}</p>
-    ${reportMatrix(d.quadrant)}
-    <div class="rd-levels">
-      <div class="rd-lvl"><p class="ln">Density</p><div class="lv">${esc(d.density)}</div></div>
-      <div class="rd-lvl"><p class="ln">Optionality</p><div class="lv">${esc(d.optionality)}</div></div>
-      <div class="rd-lvl"><p class="ln">Alumni Capital</p><div class="lv">${esc(d.alumniCapital)}</div></div>
-    </div>
+    ${d.mechanical ? `
+      <p class="rd-quad-label">Based on your answers</p>
+      <p class="rd-quad" style="font-size:24px;">${esc(d.label)}</p>
+      ${d.sub ? `<p class="rd-mechanical-sub">${esc(d.sub)}</p>` : ""}
+    ` : `
+      <p class="rd-quad-label">Based on your answers, the pattern most closely resembles</p>
+      <p class="rd-quad">${esc(d.quadrant)}</p>
+      <p class="rd-headline">${esc(d.headline)}</p>
+    `}
+    ${reportMatrix(d)}
+    ${rdLevelsRowHTML(d)}
     <p class="rd-levels-note">Density and optionality set the position in the matrix. Alumni capital is measured separately and does not move it.</p>
-    ${d.boundary ? `<p class="rd-boundary-note">${esc(boundaryNote(d))}</p>` : ""}
-    ${d.standard ? `<p class="rd-standard-note">Standard reading. The live read was briefly unavailable, so this is the standard reading for your position. Placement is unchanged.</p>` : ""}
-    <div class="rd-read">${paras(d.read)}</div>
-    <div class="rd-leaders"><p class="lh">What this means for leaders</p>${paras(d.leaders)}</div>
-    ${threeThingsHTML(d.quadrant)}
-    ${firstMoveHTML(d.quadrant)}
+    ${(d.standard && !d.mechanical) ? `<p class="rd-standard-note">Standard reading. The live read was briefly unavailable, so this is the standard reading for your position. Placement is unchanged.</p>` : ""}
+    ${!d.mechanical ? `<div class="rd-read">${paras(d.read)}</div><div class="rd-leaders"><p class="lh">What this means for leaders</p>${paras(d.leaders)}</div>` : ""}
+    ${d.quadrant ? threeThingsHTML(d.quadrant) : ""}
+    ${d.quadrant ? firstMoveHTML(d.quadrant) : ""}
     <div class="rd-foot"><span>The Density Group &middot; Professional. Authoritative. Credible.</span><span>temidayoafonja.com</span></div>
     <div class="rd-actions">
       <button class="rd-save" id="rdSave">Save as PDF</button>
@@ -742,47 +1009,11 @@ function buildReport(d, org){
   reportEl.scrollIntoView({behavior:"smooth",block:"start"});
 }
 
-// ── Deterministic client-side scorer (Organizational Instrument v1.1). ───────
-// Density = mean of 4 items, Optionality = mean of 4, each option weighted 1..3.
-// An axis is HIGH only when its mean is strictly greater than 2.0 (exactly 2.0
-// is LOW). Alumni Capital is measured but never moves placement.
-function levelDO(m){ return m <= 2.0 ? "low" : (m < 2.5 ? "moderate" : "high"); }
-function levelA(m){ return m < 1.67 ? "low" : (m <= 2.33 ? "moderate" : "high"); }
-// Boundary: a single one-option change (sum +/- 1) would cross the 2.0 threshold.
-// Threshold sum = 2n; sum === 2n is a LOW boundary (one step up crosses), sum ===
-// 2n+1 is a HIGH boundary (one step down crosses). Derived from item count n.
-function axisBoundary(sum, n){ return sum === 2*n || sum === 2*n + 1; }
-function score(){
-  const sums = {}, counts = {};
-  PILLARS.forEach(p=>{ sums[p.name]=0; counts[p.name]=0;
-    p.questions.forEach(q=>{
-      const sel = document.querySelector(`input[name="${q.id}"]:checked`);
-      if(sel){ sums[p.name]+=parseInt(sel.dataset.weight,10); counts[p.name]++; }
-    });
-  });
-  const dSum=sums["Density"], dN=counts["Density"];
-  const oSum=sums["Optionality"], oN=counts["Optionality"];
-  const aSum=sums["Alumni Capital"], aN=counts["Alumni Capital"];
-  const dHigh = (dSum/dN) > 2.0, oHigh = (oSum/oN) > 2.0;   // strictly greater than 2.0
-  const quadrant = quadrantFor(dHigh, oHigh);
-  const dB = axisBoundary(dSum, dN), oB = axisBoundary(oSum, oN);
-  const adjacent = [];
-  if(dB) adjacent.push(quadrantFor(!dHigh, oHigh));   // cross the density boundary
-  if(oB) adjacent.push(quadrantFor(dHigh, !oHigh));   // cross the optionality boundary
-  return {
-    quadrant,
-    density: levelDO(dSum/dN),
-    optionality: levelDO(oSum/oN),
-    alumniCapital: levelA(aSum/aN),
-    boundary: dB || oB,
-    adjacent
-  };
-}
-function boundaryNote(d){
-  if(!d || !d.boundary || !d.adjacent || !d.adjacent.length) return "";
-  return `This is a boundary position. Read ${d.adjacent.join(" and ")} as well. Boundary positions move fastest, in both directions.`;
-}
 // Standard (deterministic) fallback readings, keyed by the client-computed quadrant.
+// Only exists for the four normal quadrants (score().type === "quadrant"); the
+// boundary-pair/center/insufficient states have no approved long-form narrative
+// (see the PR description) and are rendered mechanically instead, without an
+// AI call attempt. run() branches on d.mechanical before ever reaching here.
 // Ported from the retired in-page org mode; served with the SAME placement when the
 // live model read is unavailable, so placement never depends on the model.
 const FALLBACK = {
@@ -809,14 +1040,10 @@ const FALLBACK = {
 };
 
 async function run(){
-  const {answers, missing} = collect();
-  if(missing>0){
-    statusEl.className="status show err";
-    statusEl.textContent = `Answer the remaining ${missing} question${missing>1?"s":""} to run the read.`;
-    return;
-  }
-  // Placement is computed client-side and is authoritative. The model writes the
-  // narrative for this placement; it never assigns or overrides it.
+  const {answers} = collect();
+  // No all-or-nothing gate: Run is always available. Per-dimension sufficiency
+  // (>=4 of 5) is decided inside score(); an axis with <=3 answers renders as
+  // insufficient rather than blocking submission.
   const placement = score();
   runBtn.disabled=true;
   statusEl.className="status show";
@@ -830,48 +1057,61 @@ async function run(){
   const scopeEl = document.querySelector('input[name="scope"]:checked');
   lastScope = scopeEl ? scopeEl.value : "";
 
-  let result, standard = false;
-  try{
-    const res = await fetch("/.netlify/functions/diagnose",{
-      method:"POST",
-      headers:{"Content-Type":"application/json"},
-      body:JSON.stringify({ answers: answers, placement: {
-        quadrant: placement.quadrant,
-        density: placement.density,
-        optionality: placement.optionality,
-        alumniCapital: placement.alumniCapital
-      } })
-    });
-    if(res.status === 429){
-      // Rate limited (per-IP, 5/hour). Show the existing retry message, no reading.
-      statusEl.className="status show err";
-      statusEl.textContent="The live read did not come back. Please try again in a moment. If it keeps happening, the diagnostic service may be briefly unavailable.";
-      runBtn.disabled=false;
-      return;
+  let result;
+  if(!placement.mechanical){
+    // Normal quadrant path: unchanged from before. The model writes the
+    // narrative for this placement; it never assigns or overrides it.
+    let standard = false;
+    try{
+      const res = await fetch("/.netlify/functions/diagnose",{
+        method:"POST",
+        headers:{"Content-Type":"application/json"},
+        body:JSON.stringify({ answers: answers, placement: {
+          quadrant: placement.quadrant,
+          density: placement.density.direction,
+          optionality: placement.optionality.direction,
+          alumniCapital: placement.alumniCapital.sufficient ? placement.alumniCapital.band : "insufficient"
+        } })
+      });
+      if(res.status === 429){
+        // Rate limited (per-IP, 5/hour). Show the existing retry message, no reading.
+        statusEl.className="status show err";
+        statusEl.textContent="The live read did not come back. Please try again in a moment. If it keeps happening, the diagnostic service may be briefly unavailable.";
+        runBtn.disabled=false;
+        return;
+      }
+      if(!res.ok){throw new Error("status "+res.status);}
+      const data = await res.json();
+      const text = (data.content||[]).filter(b=>b.type==="text").map(b=>b.text).join("\n").trim();
+      const clean = text.replace(/```json/gi,"").replace(/```/g,"").trim();
+      let narr;
+      try{ narr = JSON.parse(clean); }
+      catch(e){
+        const m = clean.match(/\{[\s\S]*\}/);
+        if(!m){throw new Error("unparseable");}
+        narr = JSON.parse(m[0]);
+      }
+      if(!narr || !narr.headline || !narr.read || !narr.leaders){ throw new Error("missing narrative"); }
+      result = Object.assign({}, placement, { headline:narr.headline, read:narr.read, leaders:narr.leaders, standard:false });
+    }catch(err){
+      // The live read failed. Serve the deterministic standard reading for the SAME
+      // computed placement, so the quadrant is identical whether the model responds
+      // or not. Only the narrative differs (standard vs bespoke).
+      standard = true;
+      const fb = FALLBACK[placement.quadrant];
+      result = Object.assign({}, placement, { headline:fb.headline, read:fb.read, leaders:fb.leaders, standard:true });
     }
-    if(!res.ok){throw new Error("status "+res.status);}
-    const data = await res.json();
-    const text = (data.content||[]).filter(b=>b.type==="text").map(b=>b.text).join("\n").trim();
-    const clean = text.replace(/```json/gi,"").replace(/```/g,"").trim();
-    let narr;
-    try{ narr = JSON.parse(clean); }
-    catch(e){
-      const m = clean.match(/\{[\s\S]*\}/);
-      if(!m){throw new Error("unparseable");}
-      narr = JSON.parse(m[0]);
-    }
-    if(!narr || !narr.headline || !narr.read || !narr.leaders){ throw new Error("missing narrative"); }
-    result = Object.assign({}, placement, { headline:narr.headline, read:narr.read, leaders:narr.leaders, standard:false });
-  }catch(err){
-    // The live read failed. Serve the deterministic standard reading for the SAME
-    // computed placement, so the quadrant is identical whether the model responds
-    // or not. Only the narrative differs (standard vs bespoke).
-    standard = true;
-    const fb = FALLBACK[placement.quadrant];
-    result = Object.assign({}, placement, { headline:fb.headline, read:fb.read, leaders:fb.leaders, standard:true });
+    if(window.plausible){ plausible("Diagnostic Completed", {props:{ type: placement.type, quadrant: placement.quadrant, reflection: lastReflection || "(skipped)", standard: standard }}); }
+  } else {
+    // Boundary-pair, center, or insufficient: no approved long-form narrative
+    // exists for these states, and diagnose.js's prompt has no concept of them
+    // (it expects one of the four canonical quadrants). Rather than send it a
+    // placement it isn't built to interpret, skip the AI call entirely and
+    // render the mechanical, fully-specified content only.
+    result = Object.assign({}, placement, { standard: true });
+    if(window.plausible){ plausible("Diagnostic Completed", {props:{ type: placement.type, reflection: lastReflection || "(skipped)", standard: true }}); }
   }
   statusEl.className="status"; statusEl.textContent="";
-  if(window.plausible){ plausible("Diagnostic Completed", {props:{ quadrant: placement.quadrant, reflection: lastReflection || "(skipped)", boundary: placement.boundary, standard: standard }}); }
   renderResult(result);
   runBtn.disabled=false;
 }
@@ -882,10 +1122,45 @@ sampleBtn.addEventListener("click", ()=>{
   window.open(location.pathname + "?sample=1", "_blank", "noopener");
 });
 if(new URLSearchParams(location.search).get("sample")==="1"){
-  ["form","runBtn","formNote","sampleBtn","status"].forEach(function(id){var el=document.getElementById(id); if(el) el.style.display="none";});
+  ["form","runBtn","formNote","sampleBtn","status","liveTally"].forEach(function(id){var el=document.getElementById(id); if(el) el.style.display="none";});
   document.querySelectorAll(".orgfield,.scope,.rule").forEach(function(el){el.style.display="none";});
   buildReport(SAMPLE, "Northwind Logistics");
 }
+
+// ── Live tally: mirrors all three dimensions as they're answered, so the page
+// doesn't feel static while filling out the 15 scored questions. Uses the same
+// dimensionTally() the final scorer reads, so the live panel and score() can
+// never drift from each other. "Not enough visibility to answer" counts toward
+// neither the per-dimension tally nor the overall answered count, matching
+// Stage 2's rule exactly.
+const liveTally = document.getElementById("liveTally");
+function updateLiveTally(){
+  if(!liveTally) return;
+  let answered = 0;
+  [["density","ltDensityBar","ltDensityVal"],["optionality","ltOptionalityBar","ltOptionalityVal"],["alumni","ltAlumniBar","ltAlumniVal"]].forEach(function(row){
+    const key=row[0], barId=row[1], valId=row[2];
+    const t = dimensionTally(key);
+    answered += t.n;
+    const bar = document.getElementById(barId), val = document.getElementById(valId);
+    if(t.n>0){
+      const mean = 2 + (t.balance / t.n); // display only; classification uses the integer balance
+      val.textContent = mean.toFixed(1) + " / 3";
+      bar.style.width = (((mean-1)/2)*100) + "%";
+    } else {
+      val.textContent = "·";
+      bar.style.width = "0%";
+    }
+  });
+  document.getElementById("ltCount").textContent = answered + " of 15 answered";
+  liveTally.classList.toggle("complete", answered===15);
+}
+const liveTallyForm = document.getElementById("form");
+if(liveTallyForm){
+  liveTallyForm.addEventListener("change", function(e){
+    if(e.target && e.target.type==="radio") updateLiveTally();
+  });
+}
+updateLiveTally();
 </script>
 </body>
 </html>
