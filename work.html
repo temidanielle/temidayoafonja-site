@@ -190,7 +190,7 @@
       <p>A two-hour live workshop to determine whether your current role is still building deeper capability, whether what you have built will travel, and what category of move your evidence supports testing. You will complete the full twelve-statement Capability Position Read, compare your initial and evidence-backed readings, receive a provisional Four States placement, and leave with a written Next-Move Decision.</p>
       <div class="detail-line">Field Kit included</div>
       <div class="detail-line">Enrollment will open at $249</div>
-      <div style="margin-top:20px;"><a class="lean-btn primary" href="#maven-notify" onclick="preselectMaven()">Get notified when enrollment opens</a></div>
+      <div style="margin-top:20px;"><a class="lean-btn primary" href="#maven-notify">Get notified when enrollment opens</a></div>
       <div class="small-note">The first public session has not yet opened for enrollment.</div>
     </article>
   </div>
@@ -230,12 +230,13 @@
           <li>Important knowledge may leave during transition</li>
         </ul>
       </div>
-      <div class="subroute">Looking for the structured individual assessment? <a href="#maven-notify" onclick="preselectMaven()">Get notified when enrollment opens at $249</a>.</div>
+      <div class="subroute">Looking for the structured individual assessment? <a href="#maven-notify">Get notified when enrollment opens at $249</a>.</div>
     </div>
     <form class="contact-form lean-form" onsubmit="handleContact(event)">
       <div class="lean-field wide" id="maven-notify">
         <label for="cReachAs">I am reaching out as</label>
         <select class="contact-input" id="cReachAs">
+          <option value="" selected disabled>I am reaching out as...</option>
           <option value="An organizational leader">An organizational leader</option>
           <option value="An individual professional">An individual professional</option>
           <option value="A speaking or event organizer">A speaking or event organizer</option>
@@ -288,11 +289,6 @@
 </footer>
 
 <script>
-function preselectMaven() {
-  var sel = document.getElementById('cReachAs');
-  if (sel) sel.value = 'An individual professional';
-}
-
 function handleContact(e) {
   e.preventDefault();
   var first = document.getElementById('cFirst').value.trim();
