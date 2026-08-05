@@ -72,59 +72,58 @@
   <line x1="930" y1="408" x2="1234" y2="408" stroke="#C9A84C" stroke-width="2" marker-end="url(#arrowGold)"/>
   <text x="1082" y="394" text-anchor="middle" fill="#D8D3C4" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" letter-spacing="1">CAPABILITY BUILT AND CARRIED OUT</text>
 
-  <!-- Exit splits two ways: stem down to a split bar, then to Path A and Path B (entries sit right-of-center on each card, leaving the left side of Path A's top clear for its own return connector) -->
+  <!-- Exit splits two ways: stem down to a split bar, then to Path A and Path B -->
   <line x1="800" y1="444" x2="800" y2="456" stroke="#C9A84C" stroke-width="1.5"/>
-  <line x1="700" y1="456" x2="1010" y2="456" stroke="#C9A84C" stroke-width="1.5"/>
-  <line x1="700" y1="456" x2="700" y2="494" stroke="#C9A84C" stroke-width="1.5" marker-end="url(#arrowGold)"/>
+  <line x1="590" y1="456" x2="1010" y2="456" stroke="#C9A84C" stroke-width="1.5"/>
+  <line x1="590" y1="456" x2="590" y2="494" stroke="#C9A84C" stroke-width="1.5" marker-end="url(#arrowGold)"/>
   <line x1="1010" y1="456" x2="1010" y2="494" stroke="#C9A84C" stroke-width="1.5" marker-end="url(#arrowGold)"/>
 
-  <!-- 7. Path A: Circulates Back (raised height, extra bottom padding) -->
-  <rect x="420" y="498" width="360" height="230" rx="8" fill="#16305C" stroke="#C9A84C" stroke-width="1.5"/>
-  <text x="600" y="527" text-anchor="middle" fill="#C9A84C" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2">PATH A</text>
-  <text x="600" y="558" text-anchor="middle" fill="#F5F0E8" font-size="23" font-weight="700">Circulates Back</text>
-  <line x1="510" y1="570" x2="690" y2="570" stroke="#C9A84C" stroke-width="1.5"/>
-  <g font-family="Arial, Helvetica, sans-serif" font-size="13.5" fill="#F5F0E8">
-    <circle cx="444" cy="594" r="2.3" fill="#C9A84C"/><text x="455" y="599">Return hires</text>
-    <circle cx="444" cy="618" r="2.3" fill="#C9A84C"/><text x="455" y="623">Referrals</text>
-    <circle cx="444" cy="642" r="2.3" fill="#C9A84C"/><text x="455" y="647">Knowledge access</text>
-    <circle cx="444" cy="666" r="2.3" fill="#C9A84C"/><text x="455" y="671">Client and partner introductions</text>
-    <circle cx="444" cy="690" r="2.3" fill="#C9A84C"/><text x="455" y="695">Reputation value</text>
+  <!-- 7. Path A: Circulates Back. Outcome is stated as an in-card badge (not a connector line threading the narrow gap to Institution), which reads unambiguously at any zoom level. -->
+  <rect x="420" y="498" width="360" height="242" rx="8" fill="#16305C" stroke="#C9A84C" stroke-width="1.5"/>
+  <text x="600" y="524" text-anchor="middle" fill="#C9A84C" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2">PATH A</text>
+  <text x="600" y="554" text-anchor="middle" fill="#F5F0E8" font-size="22" font-weight="700">Circulates Back</text>
+  <line x1="512" y1="565" x2="688" y2="565" stroke="#C9A84C" stroke-width="1.5"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#F5F0E8">
+    <circle cx="444" cy="586" r="2.3" fill="#C9A84C"/><text x="455" y="591">Return hires</text>
+    <circle cx="444" cy="607" r="2.3" fill="#C9A84C"/><text x="455" y="612">Referrals</text>
+    <circle cx="444" cy="628" r="2.3" fill="#C9A84C"/><text x="455" y="633">Knowledge access</text>
+    <circle cx="444" cy="649" r="2.3" fill="#C9A84C"/><text x="455" y="654">Client and partner introductions</text>
+    <circle cx="444" cy="670" r="2.3" fill="#C9A84C"/><text x="455" y="675">Reputation value</text>
   </g>
+  <rect x="452" y="694" width="296" height="28" rx="14" fill="#0F2347" stroke="#C9A84C" stroke-width="1.25"/>
+  <text x="600" y="712" text-anchor="middle" fill="#C9A84C" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.5">&#8617; ALUMNI CAPITAL RETURNS TO INSTITUTION</text>
 
-  <!-- Path B: Becomes Unreachable (pale rust-tinted neutral; terminates, no return arrow) -->
-  <rect x="820" y="498" width="360" height="230" rx="8" fill="#F2E5DC" stroke="#C9A84C" stroke-width="1.5"/>
-  <text x="1000" y="527" text-anchor="middle" fill="#C1440E" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2">PATH B</text>
-  <text x="1000" y="558" text-anchor="middle" fill="#0F2347" font-size="21" font-weight="700">Becomes Unreachable</text>
-  <line x1="910" y1="570" x2="1090" y2="570" stroke="#C1440E" stroke-width="1.5"/>
-  <g font-family="Arial, Helvetica, sans-serif" font-size="13.5" fill="#0F2347">
-    <circle cx="844" cy="594" r="2.3" fill="#C1440E"/><text x="855" y="599">Judgment becomes inaccessible</text>
-    <circle cx="844" cy="618" r="2.3" fill="#C1440E"/><text x="855" y="623">Network access is severed</text>
-    <circle cx="844" cy="642" r="2.3" fill="#C1440E"/><text x="855" y="647">Reputation is redirected</text>
-    <circle cx="844" cy="666" r="2.3" fill="#C1440E"/><text x="855" y="671">Context is repurchased</text>
-    <circle cx="844" cy="690" r="2.3" fill="#C1440E"/><text x="855" y="695">Capability is rebuilt elsewhere</text>
+  <!-- Path B: Becomes Unreachable (pale rust-tinted neutral; terminates, no return) -->
+  <rect x="820" y="498" width="360" height="242" rx="8" fill="#F2E5DC" stroke="#C9A84C" stroke-width="1.5"/>
+  <text x="1000" y="524" text-anchor="middle" fill="#C1440E" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2">PATH B</text>
+  <text x="1000" y="554" text-anchor="middle" fill="#0F2347" font-size="20" font-weight="700">Becomes Unreachable</text>
+  <line x1="912" y1="565" x2="1088" y2="565" stroke="#C1440E" stroke-width="1.5"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#0F2347">
+    <circle cx="844" cy="586" r="2.3" fill="#C1440E"/><text x="855" y="591">Judgment becomes inaccessible</text>
+    <circle cx="844" cy="607" r="2.3" fill="#C1440E"/><text x="855" y="612">Network access is severed</text>
+    <circle cx="844" cy="628" r="2.3" fill="#C1440E"/><text x="855" y="633">Reputation is redirected</text>
+    <circle cx="844" cy="649" r="2.3" fill="#C1440E"/><text x="855" y="654">Context is repurchased</text>
+    <circle cx="844" cy="670" r="2.3" fill="#C1440E"/><text x="855" y="675">Capability is rebuilt elsewhere</text>
   </g>
-
-  <!-- Return arrow: Path A only -> Institution. Leaves the left corner of Path A's own top edge (clear of the incoming branch at x=700 and of Institution's bullet list), turns, and arrives at Institution's border. Drawn last so it paints cleanly on top of both cards. -->
-  <line x1="440" y1="498" x2="440" y2="463" stroke="#C9A84C" stroke-width="1.5"/>
-  <text x="403" y="450" text-anchor="middle" fill="#F5F0E8" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="0.5">ALUMNI CAPITAL RETURNS</text>
-  <line x1="440" y1="463" x2="366" y2="463" stroke="#C9A84C" stroke-width="2" marker-end="url(#arrowGold)"/>
+  <rect x="852" y="694" width="296" height="28" rx="14" fill="#F5F0E8" stroke="#C1440E" stroke-width="1.25"/>
+  <text x="1000" y="712" text-anchor="middle" fill="#C1440E" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.5">&#8856; TERMINATES &#8212; NO RETURN</text>
 
   <!-- 8. Bottom mechanism cards -->
-  <rect x="40" y="746" width="496" height="80" rx="6" fill="#F5F0E8" stroke="#C9A84C" stroke-width="1.5"/>
-  <text x="288" y="769" text-anchor="middle" fill="#8A6D1F" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="700" letter-spacing="1.5">INSTITUTIONAL MEMORY</text>
-  <text x="288" y="790" text-anchor="middle" fill="#0F2347" font-family="Arial, Helvetica, sans-serif" font-size="13">The judgment, context, and reasoning that documents</text>
-  <text x="288" y="808" text-anchor="middle" fill="#0F2347" font-family="Arial, Helvetica, sans-serif" font-size="13">rarely preserve completely.</text>
+  <rect x="40" y="756" width="496" height="76" rx="6" fill="#F5F0E8" stroke="#C9A84C" stroke-width="1.5"/>
+  <text x="288" y="778" text-anchor="middle" fill="#8A6D1F" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="700" letter-spacing="1.5">INSTITUTIONAL MEMORY</text>
+  <text x="288" y="799" text-anchor="middle" fill="#0F2347" font-family="Arial, Helvetica, sans-serif" font-size="13">The judgment, context, and reasoning that documents</text>
+  <text x="288" y="817" text-anchor="middle" fill="#0F2347" font-family="Arial, Helvetica, sans-serif" font-size="13">rarely preserve completely.</text>
 
-  <rect x="552" y="746" width="496" height="80" rx="6" fill="#E7EDF6" stroke="#C9A84C" stroke-width="1.5"/>
-  <text x="800" y="769" text-anchor="middle" fill="#8A6D1F" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="700" letter-spacing="1.5">NETWORK CAPITAL</text>
-  <text x="800" y="790" text-anchor="middle" fill="#0F2347" font-family="Arial, Helvetica, sans-serif" font-size="13">The relationships, referrals, trust, and access</text>
-  <text x="800" y="808" text-anchor="middle" fill="#0F2347" font-family="Arial, Helvetica, sans-serif" font-size="13">that travel with the person.</text>
+  <rect x="552" y="756" width="496" height="76" rx="6" fill="#E7EDF6" stroke="#C9A84C" stroke-width="1.5"/>
+  <text x="800" y="778" text-anchor="middle" fill="#8A6D1F" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="700" letter-spacing="1.5">NETWORK CAPITAL</text>
+  <text x="800" y="799" text-anchor="middle" fill="#0F2347" font-family="Arial, Helvetica, sans-serif" font-size="13">The relationships, referrals, trust, and access</text>
+  <text x="800" y="817" text-anchor="middle" fill="#0F2347" font-family="Arial, Helvetica, sans-serif" font-size="13">that travel with the person.</text>
 
-  <rect x="1064" y="746" width="496" height="80" rx="6" fill="#F5F0E8" stroke="#C9A84C" stroke-width="1.5"/>
-  <text x="1312" y="769" text-anchor="middle" fill="#8A6D1F" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="700" letter-spacing="1.5">REPUTATION CIRCULATION</text>
-  <text x="1312" y="790" text-anchor="middle" fill="#0F2347" font-family="Arial, Helvetica, sans-serif" font-size="13">What former employees say about the organization</text>
-  <text x="1312" y="808" text-anchor="middle" fill="#0F2347" font-family="Arial, Helvetica, sans-serif" font-size="13">when its leaders are not in the room.</text>
+  <rect x="1064" y="756" width="496" height="76" rx="6" fill="#F5F0E8" stroke="#C9A84C" stroke-width="1.5"/>
+  <text x="1312" y="778" text-anchor="middle" fill="#8A6D1F" font-family="Arial, Helvetica, sans-serif" font-size="12.5" font-weight="700" letter-spacing="1.5">REPUTATION CIRCULATION</text>
+  <text x="1312" y="799" text-anchor="middle" fill="#0F2347" font-family="Arial, Helvetica, sans-serif" font-size="13">What former employees say about the organization</text>
+  <text x="1312" y="817" text-anchor="middle" fill="#0F2347" font-family="Arial, Helvetica, sans-serif" font-size="13">when its leaders are not in the room.</text>
 
   <!-- Ownership footer -->
-  <text x="800" y="850" text-anchor="middle" fill="#C9A84C" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="2">CAPABILITY FORMATION &#183; TEMIDAYO AFONJA &#183; TEMIDAYOAFONJA.COM</text>
+  <text x="800" y="856" text-anchor="middle" fill="#C9A84C" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="2">CAPABILITY FORMATION &#183; TEMIDAYO AFONJA &#183; TEMIDAYOAFONJA.COM</text>
 </svg>
