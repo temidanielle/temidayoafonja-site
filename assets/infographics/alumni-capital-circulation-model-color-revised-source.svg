@@ -72,10 +72,10 @@
   <line x1="930" y1="408" x2="1234" y2="408" stroke="#C9A84C" stroke-width="2" marker-end="url(#arrowGold)"/>
   <text x="1082" y="394" text-anchor="middle" fill="#D8D3C4" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" letter-spacing="1">CAPABILITY BUILT AND CARRIED OUT</text>
 
-  <!-- Exit splits two ways: stem down to a split bar, then to Path A and Path B -->
+  <!-- Exit splits two ways: stem down to a split bar, then to Path A and Path B (entries sit right-of-center on each card, leaving the left side of Path A's top clear for its own return connector) -->
   <line x1="800" y1="444" x2="800" y2="456" stroke="#C9A84C" stroke-width="1.5"/>
-  <line x1="590" y1="456" x2="1010" y2="456" stroke="#C9A84C" stroke-width="1.5"/>
-  <line x1="590" y1="456" x2="590" y2="494" stroke="#C9A84C" stroke-width="1.5" marker-end="url(#arrowGold)"/>
+  <line x1="700" y1="456" x2="1010" y2="456" stroke="#C9A84C" stroke-width="1.5"/>
+  <line x1="700" y1="456" x2="700" y2="494" stroke="#C9A84C" stroke-width="1.5" marker-end="url(#arrowGold)"/>
   <line x1="1010" y1="456" x2="1010" y2="494" stroke="#C9A84C" stroke-width="1.5" marker-end="url(#arrowGold)"/>
 
   <!-- 7. Path A: Circulates Back (raised height, extra bottom padding) -->
@@ -104,9 +104,10 @@
     <circle cx="844" cy="690" r="2.3" fill="#C1440E"/><text x="855" y="695">Capability is rebuilt elsewhere</text>
   </g>
 
-  <!-- Return arrow: Path A only -> Institution (drawn last so it paints cleanly over both cards' edges; leaves Path A's own left edge, clear of the split lines above) -->
-  <text x="390" y="568" text-anchor="middle" fill="#F5F0E8" font-family="Arial, Helvetica, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.5">ALUMNI CAPITAL RETURNS</text>
-  <line x1="420" y1="580" x2="366" y2="580" stroke="#C9A84C" stroke-width="2" marker-end="url(#arrowGold)"/>
+  <!-- Return arrow: Path A only -> Institution. Leaves the left corner of Path A's own top edge (clear of the incoming branch at x=700 and of Institution's bullet list), turns, and arrives at Institution's border. Drawn last so it paints cleanly on top of both cards. -->
+  <line x1="440" y1="498" x2="440" y2="463" stroke="#C9A84C" stroke-width="1.5"/>
+  <text x="403" y="450" text-anchor="middle" fill="#F5F0E8" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="0.5">ALUMNI CAPITAL RETURNS</text>
+  <line x1="440" y1="463" x2="366" y2="463" stroke="#C9A84C" stroke-width="2" marker-end="url(#arrowGold)"/>
 
   <!-- 8. Bottom mechanism cards -->
   <rect x="40" y="746" width="496" height="80" rx="6" fill="#F5F0E8" stroke="#C9A84C" stroke-width="1.5"/>
