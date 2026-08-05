@@ -46,6 +46,7 @@
 :root {
   --rust: #C1440E; --ink: #182238; --muted: #5D6676;
   --line: rgba(15,35,71,.14); --paper: #FFFDF8; --soft-navy: #E9EDF4;
+  --navy-deep: #0B1B38;
 }
 .lean-page { position: relative; z-index: 1; background: var(--cream); color: var(--ink); font-family: Arial, Helvetica, sans-serif; line-height: 1.55; padding-top: 96px; }
 .lean-page h1, .lean-page h2, .lean-page h3 { font-family: Georgia, 'Times New Roman', serif; font-weight: 500; letter-spacing: -.025em; color: var(--navy); margin: 0; }
@@ -66,7 +67,7 @@
 .route-section { padding: 0 0 86px; }
 .route-grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: 20px; }
 .route { border-radius: 16px; padding: 40px; }
-.route.org { background: var(--navy); color: #fff; }
+.route.org { background: var(--navy-deep); color: #fff; }
 .route.individual { background: #fff; border: 1px solid var(--line); }
 .route .r-label { font-size: 11px; text-transform: uppercase; letter-spacing: .13em; font-weight: 800; margin-bottom: 25px; }
 .route.org .r-label { color: var(--gold); }
@@ -88,17 +89,16 @@
 .proof-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 68px; align-items: center; }
 .proof h2 { font-size: clamp(26px, 3.3vw, 40px); line-height: 1.1; margin-bottom: 16px; }
 .proof p { font-size: 16px; color: var(--muted); max-width: 590px; }
-.metrics { display: grid; grid-template-columns: repeat(4,1fr); border: 1px solid var(--line); }
+.metrics { display: grid; grid-template-columns: repeat(3,1fr); border: 1px solid var(--line); }
 .metric { padding: 22px; border-left: 1px solid var(--line); }
 .metric:first-child { border-left: 0; }
 .metric strong { display: block; font-family: Georgia, serif; font-size: 32px; font-weight: 500; color: var(--rust); margin-bottom: 6px; }
 .metric span { font-size: 12px; line-height: 1.4; color: #596273; }
-.metric.label-cell strong { font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: 700; color: var(--navy); margin-bottom: 8px; }
-.metric.label-cell span { font-size: 12px; }
+.metrics-attribution { margin-top: 12px; font-size: 12px; color: var(--muted); text-align: left; }
 .proof-link { display: inline-block; margin-top: 18px; color: var(--navy); font-weight: 800; font-size: 14px; border-bottom: 1px solid var(--gold); padding-bottom: 3px; }
 
 .lean-contact { padding: 86px 0; }
-.contact-box { background: var(--navy); color: #fff; border-radius: 16px; padding: 52px; display: grid; grid-template-columns: .8fr 1.2fr; gap: 60px; }
+.contact-box { background: var(--navy-deep); color: #fff; border-radius: 16px; padding: 52px; display: grid; grid-template-columns: .8fr 1.2fr; gap: 60px; }
 .contact-box .lean-eyebrow { color: var(--gold); }
 .contact-box h2 { font-size: clamp(26px, 3.3vw, 40px); line-height: 1.1; color: #fff; margin-bottom: 16px; }
 .contact-box p { color: rgba(255,255,255,.7); font-size: 16px; }
@@ -126,9 +126,9 @@
 @media (max-width: 900px) {
   .lean-page { padding-top: 76px; }
   .route-grid, .proof-grid, .contact-box { grid-template-columns: 1fr; }
-  .metrics { grid-template-columns: 1fr 1fr; }
+  .metrics { grid-template-columns: 1fr; }
   .metric { border-left: 0; border-top: 1px solid var(--line); }
-  .metric.label-cell { border-top: 0; grid-column: 1 / -1; }
+  .metric:first-child { border-top: 0; }
   .mini-list { grid-template-columns: 1fr; }
   .lean-form { grid-template-columns: 1fr; }
   .route { padding: 30px; }
@@ -205,11 +205,13 @@
       <p>I have designed and led people, capability, employee experience, and workforce change work across Big Four consulting, global life sciences, and enterprise technology. The framework is new. The operating experience behind it is not.</p>
       <a class="proof-link" href="case-studies.html">See selected enterprise work and results &rarr;</a>
     </div>
-    <div class="metrics">
-      <div class="metric label-cell"><strong>Selected operating evidence</strong><span>Documented outcomes from enterprise roles held before founding The Density Group.</span></div>
-      <div class="metric"><strong>30%</strong><span>Retention improvement within 18 months</span></div>
-      <div class="metric"><strong>$2M+</strong><span>Estimated turnover cost avoidance</span></div>
-      <div class="metric"><strong>450+</strong><span>Managers reached through global capability work</span></div>
+    <div>
+      <div class="metrics">
+        <div class="metric"><strong>30%</strong><span>Retention improvement within 18 months</span></div>
+        <div class="metric"><strong>$2M+</strong><span>Estimated turnover cost avoidance</span></div>
+        <div class="metric"><strong>450+</strong><span>Managers reached through global capability work</span></div>
+      </div>
+      <p class="metrics-attribution">Documented outcomes from enterprise roles held before founding The Density Group.</p>
     </div>
   </div>
 </section>
