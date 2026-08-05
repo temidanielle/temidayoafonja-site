@@ -3,9 +3,6 @@
     <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto">
       <path d="M0,0 L8,4 L0,8 Z" fill="#C9A84C"/>
     </marker>
-    <marker id="arrowGoldDown" markerWidth="10" markerHeight="10" refX="4" refY="8" orient="auto">
-      <path d="M0,0 L8,0 L4,8 Z" fill="#C9A84C"/>
-    </marker>
   </defs>
 
   <!-- 1. Overall background -->
@@ -78,8 +75,8 @@
   <!-- Exit splits two ways: stem down to a split bar, then to Path A and Path B -->
   <line x1="800" y1="444" x2="800" y2="456" stroke="#C9A84C" stroke-width="1.5"/>
   <line x1="590" y1="456" x2="1010" y2="456" stroke="#C9A84C" stroke-width="1.5"/>
-  <line x1="590" y1="456" x2="590" y2="494" stroke="#C9A84C" stroke-width="1.5" marker-end="url(#arrowGoldDown)"/>
-  <line x1="1010" y1="456" x2="1010" y2="494" stroke="#C9A84C" stroke-width="1.5" marker-end="url(#arrowGoldDown)"/>
+  <line x1="590" y1="456" x2="590" y2="494" stroke="#C9A84C" stroke-width="1.5" marker-end="url(#arrowGold)"/>
+  <line x1="1010" y1="456" x2="1010" y2="494" stroke="#C9A84C" stroke-width="1.5" marker-end="url(#arrowGold)"/>
 
   <!-- Return arrow: Path A only -> Institution -->
   <text x="475" y="466" text-anchor="middle" fill="#F5F0E8" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="1">ALUMNI CAPITAL RETURNS</text>

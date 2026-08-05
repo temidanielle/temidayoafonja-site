@@ -3,9 +3,6 @@
     <marker id="arrowGoldM" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto">
       <path d="M0,0 L8,4 L0,8 Z" fill="#C9A84C"/>
     </marker>
-    <marker id="arrowGoldDownM" markerWidth="10" markerHeight="10" refX="4" refY="8" orient="auto">
-      <path d="M0,0 L8,0 L4,8 Z" fill="#C9A84C"/>
-    </marker>
   </defs>
 
   <rect x="0" y="0" width="1080" height="1920" fill="#0F2347"/>
@@ -51,7 +48,7 @@
 
   <!-- Arrow Institution -> Exit -->
   <text x="540" y="822" text-anchor="middle" fill="#D8D3C4" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="1">CAPABILITY BUILT AND CARRIED OUT</text>
-  <line x1="540" y1="834" x2="540" y2="858" stroke="#C9A84C" stroke-width="2" marker-end="url(#arrowGoldDownM)"/>
+  <line x1="540" y1="834" x2="540" y2="858" stroke="#C9A84C" stroke-width="2" marker-end="url(#arrowGoldM)"/>
 
   <!-- Exit node -->
   <rect x="340" y="860" width="400" height="104" rx="8" fill="#F5F0E8" stroke="#C9A84C" stroke-width="1.5"/>
@@ -61,7 +58,7 @@
 
   <!-- Arrow Exit -> Market -->
   <text x="540" y="978" text-anchor="middle" fill="#D8D3C4" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing="1">CAPABILITY FLOWS TO THE ECOSYSTEM</text>
-  <line x1="540" y1="990" x2="540" y2="1014" stroke="#C9A84C" stroke-width="2" marker-end="url(#arrowGoldDownM)"/>
+  <line x1="540" y1="990" x2="540" y2="1014" stroke="#C9A84C" stroke-width="2" marker-end="url(#arrowGoldM)"/>
 
   <!-- Market card -->
   <rect x="40" y="1016" width="1000" height="220" rx="8" fill="#F5F0E8" stroke="#C9A84C" stroke-width="1.5"/>
@@ -80,8 +77,8 @@
   <text x="540" y="1254" text-anchor="middle" fill="#C9A84C" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="2">TWO POSSIBLE OUTCOMES</text>
   <line x1="540" y1="1236" x2="540" y2="1262" stroke="#C9A84C" stroke-width="1.5"/>
   <line x1="280" y1="1262" x2="800" y2="1262" stroke="#C9A84C" stroke-width="1.5"/>
-  <line x1="280" y1="1262" x2="280" y2="1294" stroke="#C9A84C" stroke-width="1.5" marker-end="url(#arrowGoldDownM)"/>
-  <line x1="800" y1="1262" x2="800" y2="1294" stroke="#C9A84C" stroke-width="1.5" marker-end="url(#arrowGoldDownM)"/>
+  <line x1="280" y1="1262" x2="280" y2="1294" stroke="#C9A84C" stroke-width="1.5" marker-end="url(#arrowGoldM)"/>
+  <line x1="800" y1="1262" x2="800" y2="1294" stroke="#C9A84C" stroke-width="1.5" marker-end="url(#arrowGoldM)"/>
 
   <!-- Path A -->
   <rect x="40" y="1296" width="480" height="310" rx="8" fill="#16305C" stroke="#C9A84C" stroke-width="1.5"/>
