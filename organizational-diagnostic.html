@@ -548,13 +548,14 @@
 
 <script>
 /* ─────────────────────────────────────────────────────────────────────────
-   Organizational Instrument v1.1. Frozen 2026-07-29. Eleven scored items plus
-   one unscored reflective close. Placement is deterministic and computed
-   client-side: an axis is HIGH only when its mean is strictly greater than 2.0
-   (exactly 2.0 is LOW). A position is a boundary reading when a single one-option
-   change would cross the 2.0 threshold, computed from item count, not a fixed
-   band. Any change to item wording, count, or scoring creates v1.1, and data
-   from different versions does not merge.
+   Organizational Instrument. Seventeen questions, fifteen scored across three
+   equally weighted dimensions (Density, Optionality, Alumni Capital), plus two
+   unscored items that provide interpretive context only. Placement is
+   deterministic and computed client-side from response balance, not a mean
+   comparison (see classifyAxis/classifyPlacement below for the full rules).
+   Any change to item wording, count, or scoring logic should be treated as a
+   new version of the instrument, and data from different versions should not
+   be merged.
    ───────────────────────────────────────────────────────────────────────── */
 
 /* ── Lead capture config. Non-Kit: a durable Netlify Blobs store plus a Formspree
