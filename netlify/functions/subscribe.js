@@ -29,6 +29,13 @@ const QUADRANT_SUFFIX = {
   "fragile": "FRAGILE"
 };
 
+// Some sources pin a single sequence regardless of quadrant (a lead-magnet
+// acknowledgment/nurture sequence). The AI Capability Readiness Diagnostic's
+// leads all go into one sequence rather than the four quadrant sequences.
+const SEQ_BY_SOURCE = {
+  "ai_readiness_diagnostic": "KIT_SEQ_AI_READINESS"
+};
+
 // Individuals (audit individual mode) get the plain sequences; org leaders
 // (audit org mode, and the diagnostic which sends no mode) get the "— Org" ones.
 function sequenceEnvName(quadrant, mode) {
@@ -65,10 +72,10 @@ exports.handler = async (event) => {
     return { statusCode: 400, body: JSON.stringify({ error: "A valid email is required" }) };
   }
 
-  const envName = sequenceEnvName(quadrant, mode);
+  const envName = SEQ_BY_SOURCE[source] || sequenceEnvName(quadrant, mode);
   const sequenceId = envName ? process.env[envName] : null;
   if (!sequenceId) {
-    return { statusCode: 400, body: JSON.stringify({ error: "No sequence configured for quadrant/mode: " + quadrant + "/" + (mode || "org") }) };
+    return { statusCode: 400, body: JSON.stringify({ error: "No sequence configured for source/quadrant/mode: " + (source || "-") + "/" + quadrant + "/" + (mode || "org") }) };
   }
 
   // Resolve requested tag names to Kit tag ids via env vars, when configured.
