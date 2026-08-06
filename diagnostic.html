@@ -780,7 +780,7 @@ function individualStateKey(density, optionality){
   return "fragile";
 }
 
-// Neighbouring states along whichever axis is inside the 17-to-21 boundary band.
+// Neighboring states along whichever axis is inside the 17-to-21 boundary band.
 function individualBoundary(density, optionality){
   var dBound = density >= IND_BOUND_LO && density <= IND_BOUND_HI;
   var oBound = optionality >= IND_BOUND_LO && optionality <= IND_BOUND_HI;
@@ -1125,8 +1125,8 @@ function showResults(name) {
     var bnote = null;
       var b=individualBoundary(s.density, s.optionality);
       if(b){
-        bnote = "Your scores sit on a boundary. Density " + s.density + " of 30 and Optionality " + s.optionality +
-                " of 30 land close enough to the line that you could read as " + stateNamesList(b.keys) +
+        bnote = "Your scores sit on a boundary. Any score between 17 and 21 sits close enough to the line to go either way — with Density " + s.density + " of 30 and Optionality " + s.optionality +
+                " of 30, you could read as " + stateNamesList(b.keys) +
                 ". Hold both as live and let the next ninety days show you which one is true.";
       }
     if(bnote){
