@@ -41,6 +41,7 @@
     --gold:#C9A84C;
     --gold-soft:#d8bd6f;
     --gold-deep:#B8952E;
+    --gold-bright:#FFD700;
     --sand:#F5F0E8;
     --sand-deep:#ece3d4;
     --sand-dim:#e2dccf;
@@ -65,7 +66,7 @@
   .mark .sq.fill{background:var(--rust);border-color:var(--rust);}
   .wordmark{font-family:"Montserrat",sans-serif;font-weight:600;font-size:14px;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);line-height:1.2;}
   h1{font-family:"Cormorant Garamond",serif;font-weight:600;color:var(--sand);font-size:clamp(34px,7vw,52px);line-height:1.04;margin:0 0 16px;letter-spacing:0.01em;}
-  .lede{font-size:17px;max-width:54ch;color:var(--sand-dim);margin:0 0 8px;}
+  .lede{font-size:18px;max-width:54ch;color:var(--sand-dim);margin:0 0 8px;}
 
   .rule{height:1px;background:rgba(201,168,76,.22);border:0;margin:40px 0;}
 
@@ -78,16 +79,16 @@
   .live-tally-label{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-soft);font-weight:500;flex:0 0 auto;}
   .live-tally-row{display:flex;gap:18px;flex-wrap:wrap;flex:1 1 auto;}
   .live-tally-item{display:flex;align-items:center;gap:8px;opacity:.6;transition:opacity .3s;}
-  .live-tally.complete .live-tally-item{opacity:1;}
+  .live-tally-item.answered{opacity:1;}
   .live-tally-name{font-size:12px;color:var(--sand-mute);letter-spacing:.02em;white-space:nowrap;}
-  .live-tally-bar-wrap{width:52px;height:4px;background:var(--navy-line);border-radius:2px;overflow:hidden;flex:0 0 auto;}
-  .live-tally-bar-fill{height:100%;background:var(--gold);width:0%;transition:width .4s ease;}
+  .live-tally-bar-wrap{width:64px;height:8px;background:rgba(0,0,0,.3);border:1px solid rgba(255,255,255,.05);border-radius:4px;overflow:hidden;flex:0 0 auto;}
+  .live-tally-bar-fill{height:100%;background:var(--gold-bright);box-shadow:0 0 8px rgba(255,215,0,.85);width:0%;transition:width .4s ease;}
   .live-tally-val{font-size:13px;color:var(--sand-dim);font-weight:500;white-space:nowrap;}
   .live-tally-count{font-size:12.5px;color:var(--sand-mute);flex:0 0 auto;white-space:nowrap;}
 
   .before-begin{margin:0 0 32px;padding:18px 20px;border:1px solid var(--navy-line);border-radius:10px;background:rgba(65,89,138,.12);}
   .before-begin .bb-eyebrow{font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);font-weight:500;margin:0 0 10px;}
-  .before-begin p{font-size:14px;line-height:1.7;color:var(--sand-dim);margin:0 0 10px;}
+  .before-begin p{font-size:16px;line-height:1.7;color:var(--sand-dim);margin:0 0 10px;}
   .before-begin p:last-child{margin-bottom:0;}
 
   .orgfield{margin:0 0 14px;}
@@ -104,7 +105,7 @@
 
   .q{margin:0 0 22px;scroll-margin-top:90px;}
   .question-number{font-family:"Cormorant Garamond",serif;font-size:13px;color:var(--sand-mute);margin-bottom:10px;letter-spacing:0.1em;}
-  .q-text{font-size:15.5px;font-weight:500;color:var(--sand);margin:0 0 10px;}
+  .q-text{font-size:16px;font-weight:500;color:var(--sand);margin:0 0 10px;}
   .opts{display:grid;gap:8px;}
   .opt{position:relative;}
   .opt input{position:absolute;opacity:0;pointer-events:none;}
@@ -123,7 +124,7 @@
   .conditions-section .cs-note{font-size:13.5px;line-height:1.6;color:var(--sand-mute);margin:0 0 20px;max-width:58ch;}
   .reflective-close{margin-top:14px;padding-top:24px;border-top:1px solid var(--navy-line);}
   .reflect-eyebrow{font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);font-weight:500;margin:0 0 6px;}
-  .reflect-sub{font-size:13px;line-height:1.6;color:var(--sand-mute);margin:0 0 14px;}
+  .reflect-sub{font-size:17px;line-height:1.6;color:var(--sand-mute);margin:0 0 14px;}
 
   .context label{display:block;font-size:14px;font-weight:500;color:var(--sand);margin:0 0 8px;}
   textarea{width:100%;min-height:88px;resize:vertical;border:1px solid var(--navy-line);border-radius:10px;padding:12px 14px;font-family:inherit;font-size:14.5px;color:var(--sand);background:var(--navy-card);}
@@ -154,13 +155,14 @@
   .matrix-axis-top{display:flex;justify-content:space-between;font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--gold);margin:0 0 8px 64px;}
   .matrix-row{display:flex;align-items:stretch;gap:10px;}
   .matrix-yaxis{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end;width:54px;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);padding:6px 0;}
-  .matrix{flex:1;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:10px;}
-  .cell{border:1.5px solid rgba(201,168,76,.55);border-radius:10px;min-height:84px;padding:12px;display:flex;flex-direction:column;justify-content:space-between;}
+  .matrix{position:relative;flex:1;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:10px;}
+  .cell{background:rgba(245,240,232,.05);border:1.5px solid rgba(201,168,76,.55);border-radius:10px;min-height:84px;padding:12px;display:flex;flex-direction:column;justify-content:space-between;transition:background .3s,border-color .3s,box-shadow .3s;}
   .cell .cn{font-family:"Cormorant Garamond",serif;font-size:19px;color:var(--gold);line-height:1.1;}
   .cell .cc{font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(245,240,232,.82);}
-  .cell.active{background:var(--rust);border-color:var(--rust);}
+  .cell.active{background:var(--rust);border-color:var(--rust-light);box-shadow:0 0 0 3px rgba(193,68,14,.25),0 6px 20px rgba(193,68,14,.35);}
   .cell.active .cn{color:#fff;}
   .cell.active .cc{color:rgba(255,255,255,.9);}
+  .matrix-dot{position:absolute;width:18px;height:18px;border-radius:50%;transform:translate(-50%,-50%);background:radial-gradient(circle at 35% 30%,#fff,var(--gold-soft) 45%,var(--gold-deep) 100%);box-shadow:0 0 0 4px rgba(201,168,76,.28),0 0 20px 6px rgba(201,168,76,.6),0 0 2px rgba(255,255,255,.8);z-index:3;pointer-events:none;}
 
   .axis-caption{font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);text-align:center;margin:10px 0 0 64px;}
 
@@ -257,6 +259,11 @@
     .matrix-axis-top{margin-left:52px;}
     .axis-caption{margin-left:52px;}
     .report-doc{padding:28px 22px;}
+    .live-tally-label{font-size:13px;}
+    .live-tally-name{font-size:15px;}
+    .live-tally-bar-wrap{height:10px;}
+    .live-tally-val{font-size:15px;}
+    .live-tally-count{font-size:13px;}
   }
   @media (prefers-reduced-motion:reduce){*{animation:none !important;transition:none !important;}}
 
@@ -291,17 +298,17 @@
   <div class="live-tally" id="liveTally">
     <div class="live-tally-label">Provisional &middot; updates as you answer</div>
     <div class="live-tally-row">
-      <div class="live-tally-item">
+      <div class="live-tally-item" id="ltDensityItem">
         <span class="live-tally-name">Density</span>
         <div class="live-tally-bar-wrap"><div class="live-tally-bar-fill" id="ltDensityBar" style="width:0%"></div></div>
         <span class="live-tally-val" id="ltDensityVal">&middot;</span>
       </div>
-      <div class="live-tally-item">
+      <div class="live-tally-item" id="ltOptionalityItem">
         <span class="live-tally-name">Optionality</span>
         <div class="live-tally-bar-wrap"><div class="live-tally-bar-fill" id="ltOptionalityBar" style="width:0%"></div></div>
         <span class="live-tally-val" id="ltOptionalityVal">&middot;</span>
       </div>
-      <div class="live-tally-item">
+      <div class="live-tally-item" id="ltAlumniItem">
         <span class="live-tally-name">Alumni Capital</span>
         <div class="live-tally-bar-wrap"><div class="live-tally-bar-fill" id="ltAlumniBar" style="width:0%"></div></div>
         <span class="live-tally-val" id="ltAlumniVal">&middot;</span>
@@ -780,6 +787,23 @@ function activeQuadrantNames(d){
   if(d.type==="boundary-pair") return d.pair;
   return [];
 }
+// axisDotPct: maps an axis's integer balance (-5..+5) to a 0-100 position for
+// the placement dot. Display only; the classification above never uses this.
+function axisDotPct(axis){
+  if(!axis || !axis.sufficient) return null;
+  // Inset to 10%-90% (rather than 0-100) so the dot and its glow always stay
+  // clear of the grid edge, even at the most extreme balance of +/-5.
+  return 10 + Math.max(0, Math.min(100, ((axis.balance+5)/10)*100)) * 0.8;
+}
+function matrixDotHTML(d){
+  // Only asserted for a clean quadrant or boundary-pair placement, matching
+  // activeQuadrantNames: "center" and "insufficient" assert no position.
+  if(d.type!=="quadrant" && d.type!=="boundary-pair") return "";
+  const oPct = axisDotPct(d.optionality), dPct = axisDotPct(d.density);
+  if(oPct===null || dPct===null) return "";
+  const left = oPct, top = 100 - dPct;
+  return `<div class="matrix-dot" style="left:${left}%;top:${top}%"></div>`;
+}
 function renderMatrix(d){
   const active = activeQuadrantNames(d);
   let cells = GRID_ORDER.map(name=>{
@@ -792,7 +816,7 @@ function renderMatrix(d){
       <div class="matrix-axis-top"><span>Low optionality</span><span>High optionality</span></div>
       <div class="matrix-row">
         <div class="matrix-yaxis"><span>High<br>density</span><span>Low<br>density</span></div>
-        <div class="matrix">${cells}</div>
+        <div class="matrix">${cells}${matrixDotHTML(d)}</div>
       </div>
       <div class="axis-caption">Optionality</div>
     </div>`;
@@ -1156,15 +1180,26 @@ const liveTally = document.getElementById("liveTally");
 function updateLiveTally(){
   if(!liveTally) return;
   let answered = 0;
-  [["density","ltDensityBar","ltDensityVal"],["optionality","ltOptionalityBar","ltOptionalityVal"],["alumni","ltAlumniBar","ltAlumniVal"]].forEach(function(row){
-    const key=row[0], barId=row[1], valId=row[2];
+  [["density","ltDensityBar","ltDensityVal","ltDensityItem"],["optionality","ltOptionalityBar","ltOptionalityVal","ltOptionalityItem"],["alumni","ltAlumniBar","ltAlumniVal","ltAlumniItem"]].forEach(function(row){
+    const key=row[0], barId=row[1], valId=row[2], itemId=row[3];
     const t = dimensionTally(key);
     answered += t.n;
-    const bar = document.getElementById(barId), val = document.getElementById(valId);
+    const bar = document.getElementById(barId), val = document.getElementById(valId), item = document.getElementById(itemId);
+    // The item's opacity reflects whether THIS axis has an answer yet, not
+    // whether the whole panel is complete. Previously every item stayed at
+    // opacity:.6 (via .live-tally.complete) until all 15 questions were
+    // answered, which silently muted every fill color fix by 40% for the
+    // entire diagnostic except the very last question.
+    if(item) item.classList.toggle("answered", t.n>0);
     if(t.n>0){
       const mean = 2 + (t.balance / t.n); // display only; classification uses the integer balance
       val.textContent = mean.toFixed(1) + " / 3";
-      bar.style.width = (((mean-1)/2)*100) + "%";
+      // Floor at 8% so an answered axis always shows a visible sliver of fill,
+      // even when every answer so far is the lowest-weight option (mean 1.0,
+      // which maps to a literal 0% width otherwise indistinguishable from
+      // "not yet answered").
+      const pct = ((mean-1)/2)*100;
+      bar.style.width = Math.max(pct, 8) + "%";
     } else {
       val.textContent = "·";
       bar.style.width = "0%";
