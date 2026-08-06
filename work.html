@@ -74,6 +74,7 @@
 .route h2 { font-size: clamp(24px, 3vw, 36px); line-height: 1.12; margin-bottom: 15px; }
 .route.org h2 { color: #fff; }
 .route .r-sub { font-family: Georgia, serif; font-size: 18px; color: var(--muted); margin-bottom: 14px; }
+.route .r-position-line { font-style: italic; font-size: 13px; color: var(--rust); margin-bottom: 16px; }
 .route p { font-size: 16px; max-width: 650px; }
 .route.org p { color: rgba(255,255,255,.72); }
 .route.individual p { color: var(--muted); }
@@ -142,17 +143,19 @@
 <body>
 
 <nav>
-  <a href="index.html" class="nav-logo">Temidayo <span>Afonja</span></a>
+  <a href="index.html" class="nav-logo brand-lockup">
+    <span class="brand-primary">The Density Group</span>
+    <span class="brand-secondary">Capability Formation Advisory</span>
+    <span class="brand-tertiary">Founded by Temidayo Afonja</span>
+  </a>
   <ul class="nav-links">
-    <li><a href="framework.html">Framework</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="principles.html">Principles</a></li>
-    <li><a href="work.html" class="active">Work With Me</a></li>
-    <li><a href="case-studies.html">Selected Work</a></li>
+    <li><a href="framework.html">Capability Formation</a></li>
+    <li><a href="work.html" class="active">Advisory</a></li>
+    <li><a href="case-studies.html">Evidence</a></li>
     <li><a href="speaking.html">Speaking</a></li>
-    <li><a href="book.html">Book</a></li>
-    <li><a href="https://temidayoafonja.substack.com" target="_blank" rel="noopener">Writing</a></li>
-    <li><a href="/diagnostic" class="nav-cta">Take the Diagnostic</a></li>
+    <li><a href="about.html">The Firm</a></li>
+    <li><a href="for-professionals.html">For Professionals</a></li>
+    <li><a href="work.html#get-in-touch" class="nav-cta">Discuss an Organizational Need</a></li>
   </ul>
 </nav>
 
@@ -160,12 +163,12 @@
 
 <section class="lean-hero">
   <div class="lean-wrap">
-    <span class="lean-eyebrow fade-up delay-1">Work With Me</span>
+    <span class="lean-eyebrow fade-up delay-1">Advisory</span>
     <h1 class="fade-up delay-2">See what your work is building before the next decision forces the question.</h1>
     <p class="lean-lead fade-up delay-3">I help organizations diagnose capability risk and professionals determine whether their current role is still building deeper skill and future options.</p>
     <div class="lean-actions fade-up delay-3">
       <a class="lean-btn primary" href="#organizations">I lead an organization</a>
-      <a class="lean-btn outline" href="#individuals">I am deciding my next move</a>
+      <a class="lean-btn outline" href="for-professionals.html">I am deciding my next move</a>
     </div>
   </div>
 </section>
@@ -187,10 +190,11 @@
       <div class="r-label">For experienced professionals</div>
       <h2>Decide Whether to Stay or Leave Your Job</h2>
       <div class="r-sub">A Live Career Growth Assessment</div>
+      <div class="r-position-line">Read the position before you make the move.</div>
       <p>A two-hour live workshop to determine whether your current role is still building deeper capability, whether what you have built will travel, and what category of move your evidence supports testing. You will complete the full twelve-statement Capability Position Read, compare your initial and evidence-backed readings, receive a provisional Four States placement, and leave with a written Next-Move Decision.</p>
       <div class="detail-line">Field Kit included</div>
-      <div class="detail-line">Enrollment will open at $249</div>
-      <div style="margin-top:20px;"><a class="lean-btn primary" href="#maven-notify">Get notified when enrollment opens</a></div>
+      <div class="detail-line">Enrollment will open at $500</div>
+      <div style="margin-top:20px;"><a class="lean-btn primary" href="for-professionals.html#priority-list">Get notified when enrollment opens</a></div>
       <div class="small-note">The first public session has not yet opened for enrollment.</div>
     </article>
   </div>
@@ -230,10 +234,10 @@
           <li>Important knowledge may leave during transition</li>
         </ul>
       </div>
-      <div class="subroute">Looking for the structured individual assessment? <a href="#maven-notify">Get notified when enrollment opens at $249</a>.</div>
+      <div class="subroute">Looking for the structured individual assessment? <a href="for-professionals.html#priority-list">Get notified when enrollment opens at $500</a>.</div>
     </div>
     <form class="contact-form lean-form" onsubmit="handleContact(event)">
-      <div class="lean-field wide" id="maven-notify">
+      <div class="lean-field wide">
         <label for="cReachAs">I am reaching out as</label>
         <select class="contact-input" id="cReachAs">
           <option value="" selected disabled>I am reaching out as...</option>
@@ -272,20 +276,33 @@
 
 <footer>
   <div>
-    <div class="footer-logo">Temidayo <span>Afonja</span></div>
-    <div class="footer-tagline">The Capability Formation Framework &middot; Density, Optionality, Alumni Capital.</div>
+    <div class="footer-logo">The Density Group</div>
+    <div class="footer-tagline">The Density Group is a Capability Formation advisory firm founded by Temidayo Afonja.</div>
   </div>
-  <ul class="footer-links">
-    <li><a href="framework.html">Framework</a></li>
-    <li><a href="principles.html">Principles</a></li>
-    <li><a href="/diagnostic">Diagnostic</a></li>
-    <li><a href="/organizational-diagnostic">The Organizational Diagnostic</a></li>
-    <li><a href="work.html">Work With Me</a></li>
-    <li><a href="case-studies.html">Selected Work</a></li>
-    <li><a href="speaking.html">Speaking</a></li>
-    <li><a href="https://temidayoafonja.substack.com" target="_blank" rel="noopener">Substack</a></li>
-  </ul>
-  <div class="footer-copy">&copy; 2026 Temidayo Afonja. All rights reserved.</div>
+  <div class="footer-cols">
+    <div class="footer-col">
+      <div class="footer-col-label">The Firm</div>
+      <ul class="footer-links">
+        <li><a href="framework.html">Capability Formation</a></li>
+        <li><a href="work.html">Advisory</a></li>
+        <li><a href="case-studies.html">Evidence</a></li>
+        <li><a href="speaking.html">Speaking</a></li>
+        <li><a href="about.html">The Firm</a></li>
+        <li><a href="/organizational-diagnostic">Organizational Diagnostic</a></li>
+        <li><a href="work.html#get-in-touch">Discuss an Organizational Need</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-label">For Professionals</div>
+      <ul class="footer-links">
+        <li><a href="/diagnostic">Free Diagnostic</a></li>
+        <li><a href="for-professionals.html">Career Growth Assessment</a></li>
+        <li><a href="book.html">Field Guide &amp; Field Kit</a></li>
+        <li><a href="https://temidayoafonja.substack.com" target="_blank" rel="noopener">Writing</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-copy">&copy; 2026 The Density Group LLC &middot; Capability Formation</div>
 </footer>
 
 <script>

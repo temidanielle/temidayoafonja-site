@@ -95,6 +95,10 @@ h2.book-title--long { font-size: clamp(28px, 3.4vw, 38px); line-height: 1.18; }
 .btn-ghost:hover { background: var(--gold); color: var(--navy); }
 .price-note { font-family: 'Montserrat', sans-serif; font-size: 12px; color: var(--cream-soft);
   margin-top: 14px; letter-spacing: 0.04em; }
+.reciprocal-link { font-family: 'Montserrat', sans-serif; font-size: 13px; color: var(--cream-soft);
+  margin-top: 22px; }
+.reciprocal-link a { color: var(--gold); font-weight: 600; border-bottom: 1px solid var(--gold-deep); }
+.reciprocal-link a:hover { color: var(--gold-deep); }
 
 .divider-band { background: var(--navy-deep); border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line); padding: 56px 0; text-align: center; }
@@ -128,26 +132,6 @@ h2.book-title--long { font-size: clamp(28px, 3.4vw, 38px); line-height: 1.18; }
 .hero-sub-copy { font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 17px;
   line-height: 1.7; color: var(--cream-soft); max-width: 760px; }
 
-.ladder-section { padding-top: 0; }
-.ladder-section .eyebrow { display: block; }
-.ladder-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 22px; }
-.ladder-card { background: var(--navy-panel); border: 1px solid var(--line); border-radius: 6px;
-  padding: 32px; display: flex; flex-direction: column; }
-.ladder-card--primary { border-color: var(--gold); }
-.ladder-level { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700;
-  letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
-.ladder-title { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500;
-  font-size: 28px; color: var(--white); margin-bottom: 6px; }
-.ladder-price { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 600;
-  color: var(--cream-soft); margin-bottom: 18px; }
-.ladder-job { font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 15px;
-  line-height: 1.7; color: var(--cream); flex-grow: 1; }
-.ladder-job strong { font-weight: 500; color: var(--white); }
-.ladder-label { display: block; font-family: 'Montserrat', sans-serif; font-size: 11px;
-  font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold);
-  margin-bottom: 8px; }
-.ladder-cta { margin-top: 22px; margin-left: 0; align-self: flex-start; }
-
 .scarcity-line { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 600;
   letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 26px; }
 
@@ -156,24 +140,25 @@ h2.book-title--long { font-size: clamp(28px, 3.4vw, 38px); line-height: 1.18; }
   .cover { max-width: 340px; margin: 0 auto; }
   .book-section { padding: 64px 0; }
   .book-hero { padding-top: 116px; }
-  .ladder-grid { grid-template-columns: 1fr; }
 }
 </style>
 </head>
 <body>
 
 <nav>
-  <a href="index.html" class="nav-logo">Temidayo <span>Afonja</span></a>
+  <a href="index.html" class="nav-logo brand-lockup">
+    <span class="brand-primary">The Density Group</span>
+    <span class="brand-secondary">Capability Formation Advisory</span>
+    <span class="brand-tertiary">Founded by Temidayo Afonja</span>
+  </a>
   <ul class="nav-links">
-    <li><a href="framework.html">Framework</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="principles.html">Principles</a></li>
-    <li><a href="work.html">Work With Me</a></li>
-    <li><a href="case-studies.html">Selected Work</a></li>
+    <li><a href="framework.html">Capability Formation</a></li>
+    <li><a href="work.html">Advisory</a></li>
+    <li><a href="case-studies.html">Evidence</a></li>
     <li><a href="speaking.html">Speaking</a></li>
-    <li><a href="book.html" class="active">Book</a></li>
-    <li><a href="https://temidayoafonja.substack.com" target="_blank" rel="noopener">Writing</a></li>
-    <li><a href="/diagnostic" class="nav-cta">Take the Diagnostic</a></li>
+    <li><a href="about.html">The Firm</a></li>
+    <li><a href="for-professionals.html">For Professionals</a></li>
+    <li><a href="work.html#get-in-touch" class="nav-cta">Discuss an Organizational Need</a></li>
   </ul>
 </nav>
 
@@ -203,31 +188,22 @@ h2.book-title--long { font-size: clamp(28px, 3.4vw, 38px); line-height: 1.18; }
       </div>
       <a class="btn btn-gold" href="https://www.amazon.com/dp/B0H4QY5GWY" target="_blank" rel="noopener">Get the Field Guide on Amazon &rarr;</a>
       <a class="btn btn-ghost" href="/diagnostic">Take the free diagnostic first</a>
-      <p class="price-note">$2.99 on Kindle &middot; free on Kindle Unlimited &middot; paperback $9.99</p>
+      <p class="price-note">$6.99 on Kindle &middot; free on Kindle Unlimited &middot; paperback $12.99</p>
     </div>
   </div>
 </section>
 
-<!-- CHOOSE YOUR WORKSPACE LEVEL -->
-<section class="book-section ladder-section">
+<!-- THE CAPABILITY FORMATION FIELD KIT -->
+<section class="book-section">
   <div class="wrap">
-    <span class="eyebrow">Choose Your Level</span>
-    <div class="ladder-grid">
-      <div class="ladder-card">
-        <div class="ladder-level">Level 01 &middot; The Conceptual Primer</div>
-        <h3 class="ladder-title">The Capability Audit</h3>
-        <div class="ladder-price">$2.99</div>
-        <p class="ladder-job"><span class="ladder-label">What it does:</span> builds the conceptual foundation. Read the guide to grasp the framework rules and understand how environments shape long-term human capability. Includes the baseline 12-statement matrix grid.</p>
-        <a class="btn btn-ghost ladder-cta" href="https://www.amazon.com/dp/B0H4QY5GWY" target="_blank" rel="noopener">Purchase on Amazon &rarr;</a>
-      </div>
-      <div class="ladder-card ladder-card--primary">
-        <div class="ladder-level">Level 02 &middot; The Working Diagnostic</div>
-        <h3 class="ladder-title">The Capability Formation Field Kit</h3>
-        <div class="ladder-price">$75</div>
-        <p class="ladder-job"><span class="ladder-label">What it does:</span> calibrates your self-score and tracks your baseline. An interactive digital operating manual designed to be executed in one sitting and rerun quarterly. It introduces the mandatory <strong>evidence rule</strong> to break self-scoring bias, grants direct access to the custom <strong>Self-Calibration Prompt</strong> to pressure-test your lived ninety days, and delivers the <strong>Standing-Still Worksheet</strong> to calculate the real dollar cost of professional stagnation.</p>
-        <a class="btn btn-gold ladder-cta" href="https://temidayoafonja.com/fieldkit" target="_blank" rel="noopener">Get the Field Kit &rarr;</a>
-      </div>
+    <span class="eyebrow">The Self-Guided Diagnostic</span>
+    <h2 class="book-title">The Capability Formation Field Kit</h2>
+    <div class="body-copy">
+      <p>An interactive digital operating manual designed to be executed in one sitting and rerun quarterly. It calibrates your self-score and tracks your baseline. It introduces the mandatory <strong>evidence rule</strong> to break self-scoring bias, grants direct access to the custom <strong>Self-Calibration Prompt</strong> to pressure-test your lived ninety days, and delivers the <strong>Standing-Still Worksheet</strong> to calculate the real dollar cost of professional stagnation.</p>
     </div>
+    <a class="btn btn-gold" href="https://temidayoafonja.com/fieldkit" target="_blank" rel="noopener">Get the Field Kit &rarr;</a>
+    <p class="price-note">$75 &middot; instant digital access</p>
+    <p class="reciprocal-link">Prefer a guided, evidence-backed reading? <a href="for-professionals.html">Explore the live Career Growth Assessment.</a></p>
   </div>
 </section>
 
@@ -289,20 +265,33 @@ h2.book-title--long { font-size: clamp(28px, 3.4vw, 38px); line-height: 1.18; }
 
 <footer>
   <div>
-    <div class="footer-logo">Temidayo <span>Afonja</span></div>
-    <div class="footer-tagline">The Capability Formation Framework &middot; Density, Optionality, Alumni Capital.</div>
+    <div class="footer-logo">The Density Group</div>
+    <div class="footer-tagline">The Density Group is a Capability Formation advisory firm founded by Temidayo Afonja.</div>
   </div>
-  <ul class="footer-links">
-    <li><a href="framework.html">Framework</a></li>
-    <li><a href="principles.html">Principles</a></li>
-    <li><a href="/diagnostic">Diagnostic</a></li>
-    <li><a href="/organizational-diagnostic">The Organizational Diagnostic</a></li>
-    <li><a href="work.html">Work With Me</a></li>
-    <li><a href="case-studies.html">Selected Work</a></li>
-    <li><a href="speaking.html">Speaking</a></li>
-    <li><a href="https://temidayoafonja.substack.com" target="_blank" rel="noopener">Substack</a></li>
-  </ul>
-  <div class="footer-copy">&copy; 2026 Temidayo Afonja. All rights reserved.</div>
+  <div class="footer-cols">
+    <div class="footer-col">
+      <div class="footer-col-label">The Firm</div>
+      <ul class="footer-links">
+        <li><a href="framework.html">Capability Formation</a></li>
+        <li><a href="work.html">Advisory</a></li>
+        <li><a href="case-studies.html">Evidence</a></li>
+        <li><a href="speaking.html">Speaking</a></li>
+        <li><a href="about.html">The Firm</a></li>
+        <li><a href="/organizational-diagnostic">Organizational Diagnostic</a></li>
+        <li><a href="work.html#get-in-touch">Discuss an Organizational Need</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-label">For Professionals</div>
+      <ul class="footer-links">
+        <li><a href="/diagnostic">Free Diagnostic</a></li>
+        <li><a href="for-professionals.html">Career Growth Assessment</a></li>
+        <li><a href="book.html">Field Guide &amp; Field Kit</a></li>
+        <li><a href="https://temidayoafonja.substack.com" target="_blank" rel="noopener">Writing</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-copy">&copy; 2026 The Density Group LLC &middot; Capability Formation</div>
 </footer>
 
 <script>

@@ -39,6 +39,14 @@ nav {
 }
 .nav-logo span { color: var(--gold); }
 .nav-logo-img { height: 28px; width: auto; margin-left: 10px; vertical-align: middle; }
+
+/* Brand lockup: The Density Group (primary) over Capability Formation Advisory
+   (secondary) over Founded by Temidayo Afonja (tertiary, hidden on mobile to
+   keep the fixed nav's height from growing past what the hamburger needs). */
+.brand-lockup { display: flex; flex-direction: column; justify-content: center; text-decoration: none; line-height: 1.2; font-family: 'DM Sans', sans-serif; }
+.brand-primary { font-size: 14px; font-weight: 700; letter-spacing: 0.05em; color: var(--white); text-transform: uppercase; }
+.brand-secondary { font-size: 9.5px; letter-spacing: 0.03em; color: var(--slate); margin-top: 3px; }
+.brand-tertiary { font-size: 8.5px; letter-spacing: 0.03em; color: var(--slate); opacity: 0.75; margin-top: 1px; }
 .nav-links { display: flex; align-items: center; gap: 30px; list-style: none; }
 .nav-links a {
   font-size: 12px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase;
@@ -139,6 +147,11 @@ footer {
 .footer-links a:hover { color: var(--cream); }
 .footer-copy { font-size: 12px; color: var(--slate); opacity: 0.6; }
 
+/* Two-column footer nav (The Firm / For Professionals) */
+.footer-cols { display: flex; gap: 56px; flex-wrap: wrap; }
+.footer-col-label { font-size: 10px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+.footer-col .footer-links { flex-direction: column; gap: 9px; }
+
 /* ── UTILITY ── */
 .visually-hidden {
   position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
@@ -159,6 +172,8 @@ footer {
   nav { padding: 16px 24px; }
   .container { padding: 0 24px; }
   footer { padding: 32px 24px; flex-direction: column; align-items: flex-start; }
+  .brand-tertiary { display: none; }
+  .footer-cols { gap: 32px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
