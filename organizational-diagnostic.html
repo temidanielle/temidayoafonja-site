@@ -79,7 +79,7 @@
   .live-tally-label{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-soft);font-weight:500;flex:0 0 auto;}
   .live-tally-row{display:flex;gap:18px;flex-wrap:wrap;flex:1 1 auto;}
   .live-tally-item{display:flex;align-items:center;gap:8px;opacity:.6;transition:opacity .3s;}
-  .live-tally.complete .live-tally-item{opacity:1;}
+  .live-tally-item.answered{opacity:1;}
   .live-tally-name{font-size:12px;color:var(--sand-mute);letter-spacing:.02em;white-space:nowrap;}
   .live-tally-bar-wrap{width:64px;height:8px;background:rgba(0,0,0,.3);border:1px solid rgba(255,255,255,.05);border-radius:4px;overflow:hidden;flex:0 0 auto;}
   .live-tally-bar-fill{height:100%;background:var(--gold-bright);box-shadow:0 0 8px rgba(240,208,96,.8);width:0%;transition:width .4s ease;}
@@ -298,17 +298,17 @@
   <div class="live-tally" id="liveTally">
     <div class="live-tally-label">Provisional &middot; updates as you answer</div>
     <div class="live-tally-row">
-      <div class="live-tally-item">
+      <div class="live-tally-item" id="ltDensityItem">
         <span class="live-tally-name">Density</span>
         <div class="live-tally-bar-wrap"><div class="live-tally-bar-fill" id="ltDensityBar" style="width:0%"></div></div>
         <span class="live-tally-val" id="ltDensityVal">&middot;</span>
       </div>
-      <div class="live-tally-item">
+      <div class="live-tally-item" id="ltOptionalityItem">
         <span class="live-tally-name">Optionality</span>
         <div class="live-tally-bar-wrap"><div class="live-tally-bar-fill" id="ltOptionalityBar" style="width:0%"></div></div>
         <span class="live-tally-val" id="ltOptionalityVal">&middot;</span>
       </div>
-      <div class="live-tally-item">
+      <div class="live-tally-item" id="ltAlumniItem">
         <span class="live-tally-name">Alumni Capital</span>
         <div class="live-tally-bar-wrap"><div class="live-tally-bar-fill" id="ltAlumniBar" style="width:0%"></div></div>
         <span class="live-tally-val" id="ltAlumniVal">&middot;</span>
@@ -1180,11 +1180,17 @@ const liveTally = document.getElementById("liveTally");
 function updateLiveTally(){
   if(!liveTally) return;
   let answered = 0;
-  [["density","ltDensityBar","ltDensityVal"],["optionality","ltOptionalityBar","ltOptionalityVal"],["alumni","ltAlumniBar","ltAlumniVal"]].forEach(function(row){
-    const key=row[0], barId=row[1], valId=row[2];
+  [["density","ltDensityBar","ltDensityVal","ltDensityItem"],["optionality","ltOptionalityBar","ltOptionalityVal","ltOptionalityItem"],["alumni","ltAlumniBar","ltAlumniVal","ltAlumniItem"]].forEach(function(row){
+    const key=row[0], barId=row[1], valId=row[2], itemId=row[3];
     const t = dimensionTally(key);
     answered += t.n;
-    const bar = document.getElementById(barId), val = document.getElementById(valId);
+    const bar = document.getElementById(barId), val = document.getElementById(valId), item = document.getElementById(itemId);
+    // The item's opacity reflects whether THIS axis has an answer yet, not
+    // whether the whole panel is complete. Previously every item stayed at
+    // opacity:.6 (via .live-tally.complete) until all 15 questions were
+    // answered, which silently muted every fill color fix by 40% for the
+    // entire diagnostic except the very last question.
+    if(item) item.classList.toggle("answered", t.n>0);
     if(t.n>0){
       const mean = 2 + (t.balance / t.n); // display only; classification uses the integer balance
       val.textContent = mean.toFixed(1) + " / 3";
