@@ -101,6 +101,16 @@
 .matrix-inner { max-width: 1160px; margin: 0 auto; }
 .matrix-header { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: end; margin-bottom: 48px; }
 .matrix-grid-full { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+/* DOM order is the mobile stack: Stagnant, Fragile, Depth Trap, Compounding,
+   running lowest to highest capability formation. On desktop the cards form a
+   real 2x2, so reorder visually to put High Density on the top row. DOM is
+   untouched, so the mobile stack and reading order stay as authored. */
+@media (min-width: 901px) {
+  .matrix-grid-full .mc-depth     { order: 1; }
+  .matrix-grid-full .mc-compound  { order: 2; }
+  .matrix-grid-full .mc-stagnant  { order: 3; }
+  .matrix-grid-full .mc-fragile   { order: 4; }
+}
 .matrix-card { padding: 36px; border: 1px solid transparent; }
 .mc-compound { background: rgba(74,140,111,0.1); border-color: rgba(74,140,111,0.2); }
 .mc-depth { background: rgba(200,80,60,0.08); border-color: rgba(200,80,60,0.15); }
@@ -205,7 +215,6 @@
       <h1 class="page-title fade-up delay-2">How do individuals<br>and organizations<br><em>build capability</em><br>when markets stop<br>being predictable?</h1>
     </div>
     <div>
-      <!-- VERIFY: seventeen or eighteen years — operator to confirm -->
       <p class="fw-intro-text fade-up delay-3">The Capability Formation Framework is a diagnostic and design system for organizations that want to build capability that lasts, not just deploy the capability they happen to have. It reads the capability position formed by Density and Optionality, reads Alumni Capital separately, and shows what it costs people and organizations when both are ignored.</p>
       <p class="fw-intro-text fade-up delay-4">Built from eighteen years of practice across Big 4 consulting, global life sciences, and high-growth technology. Designed for leaders who understand that building people well is not separate from building organizations well. It is the same work.</p>
     </div>
