@@ -129,9 +129,10 @@
 .warm-section .fwm-rowhead { color: var(--muted-warm); }
 .warm-section .fwm-cell { color: var(--navy); }
 .warm-section .fwm-cell.depth { background: rgba(200,80,60,0.12); border-color: rgba(200,80,60,0.28); }
-.warm-section .fwm-cell.compound { background: rgba(74,140,111,0.14); border-color: rgba(74,140,111,0.30); }
 .warm-section .fwm-cell.stagnant { background: rgba(93,102,118,0.10); border-color: rgba(93,102,118,0.22); }
 .warm-section .fwm-cell.fragile { background: rgba(201,168,76,0.20); border-color: rgba(201,168,76,0.42); }
+/* Compounding is the target state and carries the site's emphasis orange. */
+.warm-section .fwm-cell.compound { background: rgba(193,68,14,0.12); border-color: rgba(193,68,14,0.50); color: var(--rust); font-weight: 500; }
 .warm-section .fw-separate { border-top-color: rgba(201,168,76,0.45); }
 .warm-section .fw-separate strong { color: var(--rust); }
 .warm-section .fw-separate p { color: var(--muted-warm); }
@@ -139,16 +140,25 @@
 .warm-section.matrix-section { background: var(--cream); }
 .warm-section .matrix-intro { color: var(--muted-warm); }
 .warm-section .matrix-card { border-width: 1px; border-style: solid; }
-.warm-section .mc-compound { background: rgba(74,140,111,0.12); border-color: rgba(74,140,111,0.30); }
 .warm-section .mc-depth { background: rgba(200,80,60,0.10); border-color: rgba(200,80,60,0.26); }
 .warm-section .mc-stagnant { background: rgba(93,102,118,0.09); border-color: rgba(93,102,118,0.22); }
 .warm-section .mc-fragile { background: rgba(201,168,76,0.18); border-color: rgba(201,168,76,0.40); }
-.warm-section .mc-compound .mc-tag { color: #2f6b52; }
 .warm-section .mc-depth .mc-tag { color: #a4382a; }
 .warm-section .mc-stagnant .mc-tag { color: #55606f; }
 .warm-section .mc-fragile .mc-tag { color: #856616; }
 .warm-section .mc-name { color: var(--navy); }
 .warm-section .mc-desc { color: var(--muted-warm); }
+
+/* Compounding is the target state: emphasis orange, heavier border, marked. */
+.warm-section .mc-compound { background: rgba(193,68,14,0.09); border-color: var(--rust); border-width: 2px; }
+.warm-section .mc-compound .mc-tag { color: var(--rust); }
+.warm-section .mc-compound .mc-name { color: var(--rust); }
+.warm-section .mc-compound .mc-name::after {
+  content: "Target state";
+  display: block; margin-top: 8px;
+  font-family: 'DM Sans', sans-serif; font-size: 10px; font-weight: 500;
+  letter-spacing: 0.18em; text-transform: uppercase; color: var(--rust);
+}
 
 @media (max-width: 900px) {
   .page-hero { padding: 120px 24px 48px; }
@@ -208,7 +218,7 @@
     <div class="fw-arch-head">
       <span class="eyebrow">The Architecture</span>
       <h2>Two readings, not one sequence.</h2>
-      <p>Density and Optionality place the capability position. Alumni Capital is read separately. The two readings are held together, not collapsed into one.</p>
+      <p>Density and Optionality place the capability position. Alumni Capital is read separately. Together, the capability position and Alumni Capital inform what the organization can retain, redeploy, and reach when conditions change.</p>
     </div>
     <div class="fw-arch-grid">
 
@@ -312,16 +322,6 @@
       <p class="matrix-intro" style="font-size:17px;line-height:1.85;">The matrix maps Density against Optionality to reveal four distinct capability conditions. Each applies to the individual building a career and the organization designing the environment. Each has its own cost, its own risk profile, and its own path forward.</p>
     </div>
     <div class="matrix-grid-full">
-      <div class="matrix-card mc-depth">
-        <div class="mc-tag">High Density &middot; Low Optionality</div>
-        <div class="mc-name">Depth Trap</div>
-        <div class="mc-desc">Built something real. Cannot prove it outside the context that built it. The expertise is genuine. The portability is not. This costs the person their range and costs the organization its succession depth.</div>
-      </div>
-      <div class="matrix-card mc-compound">
-        <div class="mc-tag">High Density &middot; High Optionality</div>
-        <div class="mc-name">Compounding</div>
-        <div class="mc-desc">This is where capability builds on itself. Harder problems, expanding judgment, genuine growth. What gets built here is portable. The question is whether it stays or walks out the door, and that is a design question, not a luck question.</div>
-      </div>
       <div class="matrix-card mc-stagnant">
         <div class="mc-tag">Low Density &middot; Low Optionality</div>
         <div class="mc-name">Stagnant</div>
@@ -332,6 +332,17 @@
         <div class="mc-name">Fragile</div>
         <div class="mc-desc">Moved a lot. Built less than the movement suggests. The range is real but the depth behind it has not been tested. Holds up in stable conditions. Becomes visible under pressure, for the person and for the organization running them.</div>
       </div>
+      <div class="matrix-card mc-depth">
+        <div class="mc-tag">High Density &middot; Low Optionality</div>
+        <div class="mc-name">Depth Trap</div>
+        <div class="mc-desc">Built something real. Cannot prove it outside the context that built it. The expertise is genuine. The portability is not. This costs the person their range and costs the organization its succession depth.</div>
+      </div>
+      <div class="matrix-card mc-compound">
+        <div class="mc-tag">High Density &middot; High Optionality</div>
+        <div class="mc-name">Compounding</div>
+        <div class="mc-desc">This is where capability builds on itself. Harder problems, expanding judgment, genuine growth. What gets built here is portable. The question is whether it stays or walks out the door, and that is a design question, not a luck question.</div>
+      </div>
+
     </div>
   </div>
 </section>

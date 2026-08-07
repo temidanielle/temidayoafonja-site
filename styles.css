@@ -50,7 +50,10 @@ body::before {
 nav {
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   padding: 20px 48px; display: flex; align-items: center; justify-content: space-between;
-  background: rgba(15,35,71,0.92); backdrop-filter: blur(12px);
+  /* Fully opaque. The nav is fixed, so any translucency lets the section
+     scrolling underneath bleed through it. That was invisible while every
+     page ran on the navy body, but shows badly against the cream bands. */
+  background: var(--navy);
   border-bottom: 1px solid var(--slate-dim);
 }
 .nav-logo {
@@ -116,6 +119,19 @@ nav {
 }
 .mobile-menu .nav-cta:hover { background: var(--gold-light) !important; color: var(--navy) !important; }
 body.menu-open { overflow: hidden; }
+/* Between the hamburger breakpoint and ~1400px the full nav no longer fits on
+   one line: the links wrapped, the bar grew from 83px to 112px, and the CTA
+   text overflowed its own border. Tighten spacing and forbid wrapping so the
+   bar stays one line and one height across this range. */
+@media (min-width: 1081px) and (max-width: 1400px) {
+  nav { padding-left: 28px; padding-right: 28px; }
+  .nav-links { gap: 17px; }
+  .nav-links a { font-size: 11px; letter-spacing: 0.06em; }
+  .nav-links li, .nav-links a { white-space: nowrap; }
+  .nav-cta { padding-left: 12px; padding-right: 12px; }
+  .brand-lockup { white-space: nowrap; }
+}
+
 @media (min-width: 1081px) { .mobile-menu { display: none !important; } }
 @media (max-width: 1080px) {
   .nav-links { display: none; }
