@@ -70,9 +70,6 @@
 .fw-separate { margin-top: 28px; border-top: 1px solid var(--gold-border); padding-top: 20px; }
 .fw-separate strong { display: block; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; font-weight: 600; }
 .fw-separate p { font-size: 15px; line-height: 1.8; color: var(--cream-70); }
-.fw-resilience { margin-top: 24px; border: 1px solid var(--gold-border); background: var(--gold-dim); padding: 28px 36px; display: grid; grid-template-columns: auto 1fr; gap: 28px; align-items: center; }
-.fw-resilience strong { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 400; color: var(--white); letter-spacing: 0.02em; white-space: nowrap; }
-.fw-resilience span { font-size: 15px; line-height: 1.8; color: var(--cream-70); }
 
 /* ── Six governing principles ── */
 .fw-principles { padding: 90px 48px; position: relative; z-index: 1; border-top: 1px solid var(--slate-dim); scroll-margin-top: 104px; }
@@ -121,6 +118,38 @@
 .fw-cta-inner { max-width: 620px; margin: 0 auto; }
 .fw-cta-inner p { font-size: 17px; line-height: 1.85; color: var(--cream-70); margin-bottom: 36px; }
 
+/* ── Warm band overrides: architecture + matrix sections run on cream ── */
+.warm-section.fw-architecture { padding-top: 80px; }
+.warm-section .fw-arch-card { border-color: var(--line-warm); background: #fff; }
+.warm-section .fw-arch-card.accent { border-color: rgba(201,168,76,0.55); background: rgba(201,168,76,0.10); }
+.warm-section .fw-arch-label { color: var(--rust); }
+.warm-section .fw-arch-title { color: var(--navy); }
+.warm-section .fw-arch-text { color: var(--muted-warm); }
+.warm-section .fwm-head,
+.warm-section .fwm-rowhead { color: var(--muted-warm); }
+.warm-section .fwm-cell { color: var(--navy); }
+.warm-section .fwm-cell.depth { background: rgba(200,80,60,0.12); border-color: rgba(200,80,60,0.28); }
+.warm-section .fwm-cell.compound { background: rgba(74,140,111,0.14); border-color: rgba(74,140,111,0.30); }
+.warm-section .fwm-cell.stagnant { background: rgba(93,102,118,0.10); border-color: rgba(93,102,118,0.22); }
+.warm-section .fwm-cell.fragile { background: rgba(201,168,76,0.20); border-color: rgba(201,168,76,0.42); }
+.warm-section .fw-separate { border-top-color: rgba(201,168,76,0.45); }
+.warm-section .fw-separate strong { color: var(--rust); }
+.warm-section .fw-separate p { color: var(--muted-warm); }
+
+.warm-section.matrix-section { background: var(--cream); }
+.warm-section .matrix-intro { color: var(--muted-warm); }
+.warm-section .matrix-card { border-width: 1px; border-style: solid; }
+.warm-section .mc-compound { background: rgba(74,140,111,0.12); border-color: rgba(74,140,111,0.30); }
+.warm-section .mc-depth { background: rgba(200,80,60,0.10); border-color: rgba(200,80,60,0.26); }
+.warm-section .mc-stagnant { background: rgba(93,102,118,0.09); border-color: rgba(93,102,118,0.22); }
+.warm-section .mc-fragile { background: rgba(201,168,76,0.18); border-color: rgba(201,168,76,0.40); }
+.warm-section .mc-compound .mc-tag { color: #2f6b52; }
+.warm-section .mc-depth .mc-tag { color: #a4382a; }
+.warm-section .mc-stagnant .mc-tag { color: #55606f; }
+.warm-section .mc-fragile .mc-tag { color: #856616; }
+.warm-section .mc-name { color: var(--navy); }
+.warm-section .mc-desc { color: var(--muted-warm); }
+
 @media (max-width: 900px) {
   .page-hero { padding: 120px 24px 48px; }
   .framework-intro { grid-template-columns: 1fr; gap: 32px; }
@@ -130,8 +159,6 @@
   .fw-matrix { grid-template-columns: 68px 1fr 1fr; }
   .fwm-cell { padding: 14px 10px; font-size: 17px; }
   .fwm-head, .fwm-rowhead { font-size: 9px; letter-spacing: 0.1em; }
-  .fw-resilience { grid-template-columns: 1fr; gap: 12px; padding: 26px 24px; }
-  .fw-resilience strong { white-space: normal; }
   .fw-principles { padding: 60px 24px; }
   .fw-principles-grid { grid-template-columns: 1fr; }
   .pillars-section { padding: 0 24px 60px; }
@@ -176,12 +203,12 @@
 </div>
 
 <!-- THE ARCHITECTURE: two readings, not a linear sequence -->
-<section class="fw-architecture" id="architecture">
+<section class="fw-architecture warm-section" id="architecture">
   <div class="fw-arch-inner">
     <div class="fw-arch-head">
       <span class="eyebrow">The Architecture</span>
       <h2>Two readings, not one sequence.</h2>
-      <p>Density and Optionality place the capability position. Alumni Capital is read separately. Together, the capability position and Alumni Capital inform Institutional Resilience.</p>
+      <p>Density and Optionality place the capability position. Alumni Capital is read separately. The two readings are held together, not collapsed into one.</p>
     </div>
     <div class="fw-arch-grid">
 
@@ -212,10 +239,6 @@
         </div>
       </article>
 
-    </div>
-    <div class="fw-resilience">
-      <strong>Institutional Resilience</strong>
-      <span>The organization can retain, redeploy, recover, and reach the capability it needs when conditions change.</span>
     </div>
   </div>
 </section>
@@ -279,14 +302,14 @@
   </div>
 </div>
 
-<section class="matrix-section">
+<section class="matrix-section warm-section">
   <div class="matrix-inner">
     <div class="matrix-header">
       <div>
         <span class="eyebrow">The Career Strategy Matrix</span>
         <h2>Where does your capability sit?</h2>
       </div>
-      <p style="color:var(--cream-70);font-size:17px;line-height:1.85;">The matrix maps Density against Optionality to reveal four distinct capability conditions. Each applies to the individual building a career and the organization designing the environment. Each has its own cost, its own risk profile, and its own path forward.</p>
+      <p class="matrix-intro" style="font-size:17px;line-height:1.85;">The matrix maps Density against Optionality to reveal four distinct capability conditions. Each applies to the individual building a career and the organization designing the environment. Each has its own cost, its own risk profile, and its own path forward.</p>
     </div>
     <div class="matrix-grid-full">
       <div class="matrix-card mc-depth">
