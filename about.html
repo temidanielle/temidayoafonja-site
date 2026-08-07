@@ -104,6 +104,24 @@
 .connect-card span { font-size: 15px; line-height: 1.75; color: var(--cream-70); display: block; }
 .connect-card em { display: block; margin-top: 16px; font-style: normal; font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); }
 
+/* ── Warm bands: advisory standards + career path run on cream ── */
+.warm-section.standards { padding-top: 80px; padding-bottom: 84px; }
+.warm-section .standards-inner { border-top: none; padding-top: 0; }
+.warm-section .standards-head h2 { color: var(--navy); }
+.warm-section .standard { border-top-color: var(--rust); }
+.warm-section .standard h3 { color: var(--navy); }
+.warm-section .standard p { color: var(--muted-warm); }
+
+.warm-section.timeline-section { max-width: none; padding: 80px 48px 88px; }
+.warm-section .timeline-inner { max-width: 1160px; margin: 0 auto; }
+.warm-section .timeline-header { border-top: none; padding-top: 0; }
+.warm-section .timeline-header h2 { color: var(--navy); }
+.warm-section .timeline-item { border-bottom-color: var(--line-warm); }
+.warm-section .timeline-year { color: var(--rust); }
+.warm-section .timeline-org { color: var(--navy); }
+.warm-section .timeline-org em { color: var(--muted-warm); }
+.warm-section .timeline-meaning { color: var(--muted-warm); }
+
 @media (max-width: 960px) {
   .page-hero { padding: 100px 24px 0; }
   .page-hero-inner { grid-template-columns: 1fr; }
@@ -111,6 +129,8 @@
   .about-photo-wrap { width: 200px; height: 240px; }
   .about-body { grid-template-columns: 1fr; gap: 48px; padding: 48px 24px 80px; }
   .timeline-section { padding: 0 24px 80px; }
+  .warm-section.timeline-section { padding: 56px 24px 64px; }
+  .warm-section.standards { padding-top: 56px; padding-bottom: 60px; }
   .timeline-item { grid-template-columns: 1fr; gap: 12px; }
   .firm-hero { padding: 116px 24px 56px; }
   .standards, .founder, .connect { padding-left: 24px; padding-right: 24px; }
@@ -154,7 +174,7 @@
 </section>
 
 <!-- SECTION 2: ADVISORY STANDARDS -->
-<section class="standards">
+<section class="standards warm-section">
   <div class="standards-inner">
     <div class="standards-head">
       <span class="eyebrow">Advisory Standards</span>
@@ -214,7 +234,8 @@
 </section>
 
 <!-- SECTION 4: CAREER PATH, FOUR ERAS -->
-<div class="timeline-section">
+<div class="timeline-section warm-section">
+ <div class="timeline-inner">
   <div class="timeline-header">
     <span class="eyebrow">Career</span>
     <h2>The path that built the framework.</h2>
@@ -252,6 +273,7 @@
     <p class="timeline-meaning">Founded The Density Group to develop and apply Capability Formation through organizational diagnostics, executive advisory, research, and education. Published <em>The Capability Audit</em> in June 2026.</p>
   </div>
 </div>
+ </div>
 
 <!-- SECTION 5: CONNECT -->
 <section class="connect">

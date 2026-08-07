@@ -11,7 +11,27 @@
   --cream-70: rgba(245,240,232,0.7); --cream-40: rgba(245,240,232,0.4);
   --white: #ffffff; --slate: #8ba0b4; --slate-dim: rgba(139,160,180,0.18);
   --green: #4a8c6f; --red-soft: #c8503c;
+  /* Warm register, matching the cream sections on work.html and for-professionals.html */
+  --rust: #C1440E; --ink: #182238; --muted-warm: #5D6676;
+  --line-warm: rgba(15,35,71,.14); --soft-navy: #E9EDF4;
 }
+
+/* ── WARM SECTION REGISTER ──
+   Opt-in class. Flips a section from the dark navy body theme to the cream
+   register used on work.html and for-professionals.html, so pages alternate
+   navy and cream bands instead of running solid navy. Nav and footer are
+   never affected: this only applies to sections that carry the class. */
+.warm-section {
+  background: var(--cream);
+  position: relative;
+  z-index: 1;
+}
+.warm-section h1,
+.warm-section h2,
+.warm-section h3 { color: var(--navy); }
+.warm-section p,
+.warm-section li { color: var(--muted-warm); }
+.warm-section .eyebrow { color: var(--rust); }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
