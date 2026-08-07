@@ -146,6 +146,8 @@ footer {
 .footer-links a { font-size: 13px; letter-spacing: 0.08em; color: var(--slate); text-decoration: none; transition: color 0.2s; }
 .footer-links a:hover { color: var(--cream); }
 .footer-copy { font-size: 12px; color: var(--slate); opacity: 0.6; }
+.footer-copy a { color: var(--slate); text-decoration: none; transition: color 0.2s; }
+.footer-copy a:hover { color: var(--cream); }
 
 /* Two-column footer nav (The Firm / For Professionals) */
 .footer-cols { display: flex; gap: 56px; flex-wrap: wrap; }

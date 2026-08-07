@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Work With Me. Temidayo Afonja</title>
-<meta name="description" content="I help organizations diagnose capability risk and professionals determine whether their current role is still building deeper skill and future options.">
+<title>Advisory - The Density Group</title>
+<meta name="description" content="Enterprise advisory from The Density Group. From executive briefing through organizational reading, architecture, and strategic advisory.">
 <link rel="canonical" href="https://temidayoafonja.com/work.html">
 
 <!-- Open Graph / Twitter -->
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Temidayo Afonja">
+<meta property="og:site_name" content="The Density Group">
 <meta property="og:url" content="https://temidayoafonja.com/work.html">
-<meta property="og:title" content="Work With Me · Temidayo Afonja">
-<meta property="og:description" content="I help organizations diagnose capability risk and professionals determine whether their current role is still building deeper skill and future options.">
+<meta property="og:title" content="Advisory - The Density Group">
+<meta property="og:description" content="Enterprise advisory from The Density Group. From executive briefing through organizational reading, architecture, and strategic advisory.">
 <meta property="og:image" content="https://temidayoafonja.com/og-default.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Work With Me · Temidayo Afonja">
-<meta name="twitter:description" content="I help organizations diagnose capability risk and professionals determine whether their current role is still building deeper skill and future options.">
+<meta name="twitter:title" content="Advisory - The Density Group">
+<meta name="twitter:description" content="Enterprise advisory from The Density Group. From executive briefing through organizational reading, architecture, and strategic advisory.">
 <meta name="twitter:image" content="https://temidayoafonja.com/og-default.png">
 
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -85,6 +85,26 @@
 .route .detail-line { font-size: 13px; color: var(--muted); margin-top: 6px; }
 .route .small-note { font-size: 13px; color: var(--muted); margin-top: 16px; }
 
+.route .pathway-pointer { font-size: 13px; margin-top: 16px; }
+.route.org .pathway-pointer a { color: #fff; font-weight: 800; border-bottom: 1px solid var(--gold); text-decoration: none; padding-bottom: 2px; }
+
+/* ── Four-stage enterprise pathway ── */
+/* scroll-margin-top clears the fixed nav for this anchor, linked from the org route card. */
+.pathway { padding: 0 0 86px; scroll-margin-top: 104px; }
+.pathway-head { max-width: 800px; margin-bottom: 38px; }
+.pathway-head h2 { font-size: clamp(26px, 3.3vw, 40px); line-height: 1.1; margin-bottom: 14px; }
+.pathway-head p { font-size: 16px; color: var(--muted); }
+.pathway-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; align-items: stretch; }
+.stage { background: #fff; border: 1px solid var(--line); border-top: 3px solid var(--gold); border-radius: 14px; padding: 28px 24px; display: flex; flex-direction: column; }
+.stage-step { font-family: Georgia, serif; font-size: 13px; color: var(--muted); margin-bottom: 8px; }
+.stage-label { font-size: 10px; text-transform: uppercase; letter-spacing: .14em; font-weight: 800; color: var(--rust); margin-bottom: 12px; }
+.stage h3 { font-size: 19px; line-height: 1.22; margin-bottom: 12px; }
+.stage p { font-size: 14px; color: var(--muted); line-height: 1.62; }
+.stage-produces { margin-top: 20px; padding-top: 18px; border-top: 1px solid var(--line); }
+.stage-produces strong { display: block; font-size: 10px; text-transform: uppercase; letter-spacing: .12em; color: var(--navy); margin-bottom: 8px; font-weight: 800; }
+.stage-produces span { display: block; font-size: 13px; color: var(--muted); line-height: 1.62; }
+.pathway-cta { margin-top: 32px; }
+
 .proof { background: #fff; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 68px 0; }
 .proof-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 68px; align-items: center; }
 .proof h2 { font-size: clamp(26px, 3.3vw, 40px); line-height: 1.1; margin-bottom: 16px; }
@@ -133,6 +153,10 @@
   .lean-form { grid-template-columns: 1fr; }
   .route { padding: 30px; }
   .contact-box { padding: 32px; }
+  .pathway-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 680px) {
+  .pathway-grid { grid-template-columns: 1fr; }
 }
 @media (max-width: 560px) {
   .lean-hero h1 { font-size: 34px; }
@@ -185,6 +209,7 @@
         <div class="mini">Prioritized 90-day interventions</div>
       </div>
       <a class="lean-btn light" href="#get-in-touch">Discuss an organizational need</a>
+      <p class="pathway-pointer"><a href="#organizational-pathway">See the full enterprise pathway below.</a></p>
     </article>
     <article class="route individual" id="individuals">
       <div class="r-label">For experienced professionals</div>
@@ -197,6 +222,67 @@
       <div style="margin-top:20px;"><a class="lean-btn primary" href="for-professionals.html#priority-list">Get notified when enrollment opens</a></div>
       <div class="small-note">The first public session has not yet opened for enrollment.</div>
     </article>
+  </div>
+</section>
+
+<!-- THE ORGANIZATIONAL PATHWAY -->
+<section class="pathway" id="organizational-pathway">
+  <div class="lean-wrap">
+    <div class="pathway-head">
+      <span class="lean-eyebrow">The Organizational Pathway</span>
+      <h2>From recognition to resilience.</h2>
+      <p>The pathway is modular but coherent. Not every organization begins at stage one or completes all four. Each stage produces a standalone deliverable and leads naturally into the next.</p>
+    </div>
+    <div class="pathway-grid">
+
+      <article class="stage">
+        <div class="stage-step">Stage 1</div>
+        <div class="stage-label">Recognition</div>
+        <h3>Capability Formation Executive Briefing</h3>
+        <p>A focused leadership session that helps executives recognize the capability dynamics behind a current organizational decision, disruption, transition, or risk.</p>
+        <div class="stage-produces">
+          <strong>What it produces</strong>
+          <span>Shared language and a decision about whether to investigate further.</span>
+        </div>
+      </article>
+
+      <article class="stage">
+        <div class="stage-step">Stage 2</div>
+        <div class="stage-label">Evidence</div>
+        <h3>Organizational Capability Formation Read</h3>
+        <p>An evidence-led organizational engagement that examines how capability forms, moves, concentrates, and remains available across the organization.</p>
+        <div class="stage-produces">
+          <strong>What it produces</strong>
+          <span>Capability concentration and portability risk profile, Four States distribution, Alumni Capital reading, and a prioritized executive readout with 90-day interventions.</span>
+        </div>
+      </article>
+
+      <article class="stage">
+        <div class="stage-step">Stage 3</div>
+        <div class="stage-label">Redesign</div>
+        <h3>Capability Formation Architecture</h3>
+        <p>The redesign stage. Leadership teams redesign the conditions through which judgment, decision quality, transferable capability, and institutional learning develop.</p>
+        <div class="stage-produces">
+          <strong>What it produces</strong>
+          <span>Structural changes to work design, assignment allocation, leadership systems, development architecture, internal mobility, succession, and knowledge transfer.</span>
+        </div>
+      </article>
+
+      <article class="stage">
+        <div class="stage-step">Stage 4</div>
+        <div class="stage-label">Ongoing</div>
+        <h3>Capability Formation Strategic Advisory</h3>
+        <p>Implementation support, governance, executive decision-making, continued interpretation, periodic reassessment, and leadership counsel.</p>
+        <div class="stage-produces">
+          <strong>What it produces</strong>
+          <span>Sustained capability architecture with measurement and periodic reassessment.</span>
+        </div>
+      </article>
+
+    </div>
+    <div class="pathway-cta">
+      <a class="lean-btn primary" href="#get-in-touch">Discuss an Organizational Need</a>
+    </div>
   </div>
 </section>
 
@@ -302,7 +388,7 @@
       </ul>
     </div>
   </div>
-  <div class="footer-copy">&copy; 2026 The Density Group LLC &middot; Capability Formation</div>
+  <div class="footer-copy">&copy; 2026 The Density Group LLC &middot; Capability Formation &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></div>
 </footer>
 
 <script>
