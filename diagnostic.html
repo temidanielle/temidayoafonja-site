@@ -90,15 +90,20 @@ body .cta-confirm { color:#c9a84c !important; }
 .screen.active { display:flex; }
 
 nav { position:fixed; top:0; left:0; right:0; z-index:9999; padding:18px 40px; display:flex; justify-content:space-between; align-items:center; background:rgba(15,35,71,0.97); border-bottom:1px solid rgba(201,168,76,0.15); }
-.nav-logo { font-family:‘Cormorant Garamond’,serif; font-weight:300; font-size:18px; color:#f5f0e8; text-decoration:none; letter-spacing:0.05em; }
+.nav-logo { font-family:'Cormorant Garamond',serif; font-weight:300; font-size:18px; color:#f5f0e8; text-decoration:none; letter-spacing:0.05em; }
 .nav-logo span { color:#c9a84c; }
+.brand-lockup { display:flex; flex-direction:column; justify-content:center; text-decoration:none; line-height:1.2; font-family:'DM Sans',sans-serif; }
+.brand-primary { font-size:14px; font-weight:700; letter-spacing:0.05em; color:#f5f0e8; text-transform:uppercase; }
+.brand-secondary { font-size:9.5px; letter-spacing:0.03em; color:#8ba0b4; margin-top:3px; }
+.brand-tertiary { font-size:8.5px; letter-spacing:0.03em; color:#8ba0b4; opacity:0.75; margin-top:1px; }
 .nav-links { display:flex; gap:28px; align-items:center; }
 .nav-links a { font-size:11px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:#f5f0e8; text-decoration:none; transition:color 0.2s; }
 .nav-links a:hover { color:#c9a84c; }
 .nav-cta { color:#0f2347 !important; background:#c9a84c; padding:10px 20px; }
 .nav-cta:hover { background:#e8c97a !important; }
 @media (max-width:1080px){ .nav-links { display:none !important; } }
-.nav-spacer { height:65px; }
+.nav-spacer { height:88px; }
+@media (max-width:768px){ .brand-tertiary { display:none; } }
 
 #intro { flex-direction:column; align-items:center; justify-content:center; padding:80px 24px 60px; text-align:center; }
 .wordmark { font-family:‘Cormorant Garamond’,serif; font-weight:300; font-size:13px; letter-spacing:0.22em; text-transform:uppercase; color:#c9a84c; margin-bottom:48px; }
@@ -307,17 +312,19 @@ nav { padding:16px 20px; }
 <body>
 
 <nav>
-  <a href="index.html" class="nav-logo">Temidayo <span>Afonja</span></a>
+  <a href="index.html" class="nav-logo brand-lockup">
+    <span class="brand-primary">The Density Group</span>
+    <span class="brand-secondary">Capability Formation Advisory</span>
+    <span class="brand-tertiary">Founded by Temidayo Afonja</span>
+  </a>
   <div class="nav-links">
-    <a href="framework.html">Framework</a>
-    <a href="about.html">About</a>
-    <a href="principles.html">Principles</a>
-    <a href="work.html">Work With Me</a>
-    <a href="case-studies.html">Selected Work</a>
+    <a href="framework.html">Capability Formation</a>
+    <a href="work.html">Advisory</a>
+    <a href="case-studies.html">Evidence</a>
     <a href="speaking.html">Speaking</a>
-    <a href="book.html">Book</a>
-    <a href="https://temidayoafonja.substack.com" target="_blank" rel="noopener">Writing</a>
-    <a href="/diagnostic" class="nav-cta">Take the Diagnostic</a>
+    <a href="about.html">The Firm</a>
+    <a href="for-professionals.html">For Professionals</a>
+    <a href="work.html#get-in-touch" class="nav-cta">Discuss an Organizational Need</a>
   </div>
 </nav>
 <div class="nav-spacer"></div>
