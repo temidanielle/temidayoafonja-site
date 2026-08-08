@@ -141,8 +141,9 @@
 .warm-section .fwm-cell.depth { background: rgba(200,80,60,0.12); border-color: rgba(200,80,60,0.28); }
 .warm-section .fwm-cell.stagnant { background: rgba(93,102,118,0.10); border-color: rgba(93,102,118,0.22); }
 .warm-section .fwm-cell.fragile { background: rgba(201,168,76,0.20); border-color: rgba(201,168,76,0.42); }
-/* Compounding is the target state and carries the site's emphasis orange. */
-.warm-section .fwm-cell.compound { background: rgba(193,68,14,0.12); border-color: rgba(193,68,14,0.50); color: var(--rust); font-weight: 500; }
+/* Compounding is the target state. Solid emphasis-orange fill with white text,
+   matching how the homepage already marks Compounding in its mini matrix. */
+.warm-section .fwm-cell.compound { background: var(--rust); border-color: var(--rust); color: #fff; font-weight: 500; }
 .warm-section .fw-separate { border-top-color: rgba(201,168,76,0.45); }
 .warm-section .fw-separate strong { color: var(--rust); }
 .warm-section .fw-separate p { color: var(--muted-warm); }
@@ -159,15 +160,17 @@
 .warm-section .mc-name { color: var(--navy); }
 .warm-section .mc-desc { color: var(--muted-warm); }
 
-/* Compounding is the target state: emphasis orange, heavier border, marked. */
-.warm-section .mc-compound { background: rgba(193,68,14,0.09); border-color: var(--rust); border-width: 2px; }
-.warm-section .mc-compound .mc-tag { color: var(--rust); }
-.warm-section .mc-compound .mc-name { color: var(--rust); }
+/* Compounding is the target state: solid emphasis-orange card, so it separates
+   from the other three at a glance rather than by text colour alone. */
+.warm-section .mc-compound { background: var(--rust); border-color: var(--rust); border-width: 2px; }
+.warm-section .mc-compound .mc-tag { color: rgba(255,255,255,0.82); }
+.warm-section .mc-compound .mc-name { color: #fff; }
+.warm-section .mc-compound .mc-desc { color: rgba(255,255,255,0.88); }
 .warm-section .mc-compound .mc-name::after {
   content: "Target state";
   display: block; margin-top: 8px;
   font-family: 'DM Sans', sans-serif; font-size: 10px; font-weight: 500;
-  letter-spacing: 0.18em; text-transform: uppercase; color: var(--rust);
+  letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.85);
 }
 
 @media (max-width: 900px) {

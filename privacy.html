@@ -44,7 +44,12 @@
 .legal-hero { padding: 150px 48px 40px; position: relative; z-index: 1; max-width: 820px; margin: 0 auto; }
 .legal-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(40px, 5.5vw, 66px); font-weight: 300; line-height: 1.05; color: var(--white); margin-bottom: 18px; }
 .legal-updated { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--slate); }
-.legal-body { padding: 0 48px 100px; position: relative; z-index: 1; max-width: 820px; margin: 0 auto; }
+.legal-body { padding: 64px 48px 88px; position: relative; z-index: 1; }
+.legal-inner { max-width: 820px; margin: 0 auto; }
+.warm-section .legal-body p { color: var(--muted-warm); }
+.warm-section .legal-flag { background: rgba(193,68,14,0.07); border-left-color: var(--rust); }
+.warm-section .legal-flag p { color: var(--navy); }
+.warm-section .legal-body a { color: var(--rust); border-bottom-color: rgba(193,68,14,0.45); }
 .legal-body p { font-size: 17px; line-height: 1.9; color: var(--cream-70); margin-bottom: 24px; }
 .legal-body a { color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--gold-border); }
 .legal-body a:hover { color: var(--gold-light); }
@@ -52,7 +57,7 @@
 .legal-flag p { font-size: 15px; line-height: 1.8; color: var(--cream); margin-bottom: 0; }
 @media (max-width: 900px) {
   .legal-hero { padding: 116px 24px 32px; }
-  .legal-body { padding: 0 24px 72px; }
+  .legal-body { padding: 48px 24px 64px; }
 }
 </style>
 </head>
@@ -80,7 +85,8 @@
   <div class="legal-updated">The Density Group LLC</div>
 </div>
 
-<div class="legal-body">
+<div class="legal-body warm-section">
+ <div class="legal-inner">
   <p>The Density Group LLC collects information through inquiry forms and diagnostic instruments on this website.</p>
   <p>Information submitted through inquiry forms is used only to respond to your inquiry and to determine whether a conversation would be useful.</p>
   <p>Diagnostic responses are processed in your browser. Your individual responses are not stored on our servers unless you choose to submit them.</p>
@@ -89,6 +95,7 @@
   <div class="legal-flag">
     <p>This policy will be updated as the firm's data practices develop. It has not been reviewed by legal counsel.</p>
   </div>
+ </div>
 </div>
 
 <footer>

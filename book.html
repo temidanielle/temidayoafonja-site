@@ -98,6 +98,23 @@ h2.book-title--long { font-size: clamp(28px, 3.4vw, 38px); line-height: 1.18; }
 .reciprocal-link { font-family: 'Montserrat', sans-serif; font-size: 13px; color: var(--cream-soft);
   margin-top: 22px; }
 .reciprocal-link a { color: var(--gold); font-weight: 600; border-bottom: 1px solid var(--gold-deep); }
+
+/* ── Warm bands, so this page alternates navy and cream like the rest of the
+      site rather than running solid navy top to bottom. ── */
+.warm-section.book-section { color: var(--ink); }
+.warm-section h2.book-title { color: var(--navy); }
+.warm-section .subtitle { color: var(--muted-warm); }
+.warm-section .body-copy p { color: var(--ink); }
+.warm-section .book-section .eyebrow,
+.warm-section .eyebrow { color: var(--rust); }
+.warm-section .section-label { color: var(--rust); }
+.warm-section .price-note { color: var(--muted-warm); }
+.warm-section .reciprocal-link { color: var(--muted-warm); }
+.warm-section .reciprocal-link a { color: var(--rust); border-bottom-color: rgba(193,68,14,0.45); }
+.warm-section .btn-ghost { border-color: var(--navy); color: var(--navy); }
+.warm-section .btn-ghost:hover { background: var(--navy); color: #fff; }
+.warm-section .cover { box-shadow: 0 20px 46px rgba(15,35,71,0.18); }
+.warm-section .badge-live { background: var(--rust); color: #fff; }
 .reciprocal-link a:hover { color: var(--gold-deep); }
 
 .divider-band { background: var(--navy-deep); border-top: 1px solid var(--line);
@@ -171,7 +188,7 @@ h2.book-title--long { font-size: clamp(28px, 3.4vw, 38px); line-height: 1.18; }
 </section>
 
 <!-- ASSET 01: THE PUBLISHED FIELD GUIDE -->
-<section class="book-section">
+<section class="book-section warm-section">
   <div class="wrap book-grid">
     <div>
       <div class="cover">
@@ -215,7 +232,7 @@ h2.book-title--long { font-size: clamp(28px, 3.4vw, 38px); line-height: 1.18; }
 </section>
 
 <!-- ASSET 02: THE ORGANIZATIONAL MASTERWORK -->
-<section class="book-section">
+<section class="book-section warm-section">
   <div class="wrap book-grid">
     <div>
       <div class="cover">

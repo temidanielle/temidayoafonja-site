@@ -47,7 +47,12 @@
 .moved-note p { font-size: 15px; line-height: 1.75; color: var(--cream-70); margin-bottom: 10px; }
 .moved-note a { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold); text-decoration: none; font-weight: 600; border-bottom: 1px solid var(--gold-border); padding-bottom: 2px; }
 .moved-note a:hover { color: var(--gold-light); }
-.principles-cta { max-width: 1160px; margin: 0 auto; padding: 0 48px 96px; position: relative; z-index: 1; }
+.principles-cta { padding: 72px 48px 80px; position: relative; z-index: 1; }
+.principles-cta-wrap { max-width: 1160px; margin: 0 auto; }
+.warm-section .principles-cta-inner { border-color: var(--line-warm); background: #fff; }
+.warm-section .principles-cta-inner:hover { border-color: var(--rust); }
+.warm-section .principles-cta-text { color: var(--navy); }
+.warm-section .principles-cta-sub { color: var(--muted-warm); }
 .principles-cta-inner { border: 1px solid var(--slate-dim); padding: 48px; display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; transition: border-color 0.2s; }
 .principles-cta-inner:hover { border-color: var(--gold-border); }
 .principles-cta-text { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 300; color: var(--white); line-height: 1.3; }
@@ -59,7 +64,7 @@
 .subscribe-links { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 @media (max-width: 900px) {
   .page-hero { padding: 120px 24px 60px; }
-  .principles-cta { padding: 0 24px 60px; }
+  .principles-cta { padding: 52px 24px 60px; }
   .principles-cta-inner { flex-direction: column; align-items: flex-start; }
   .subscribe-section { padding: 60px 24px; }
 }
@@ -94,7 +99,8 @@
   <p class="page-intro fade-up delay-3">The six governing principles are now maintained on the Framework page, alongside the architecture they describe.</p>
 </div>
 
-<div class="principles-cta">
+<div class="principles-cta warm-section">
+ <div class="principles-cta-wrap">
   <div class="principles-cta-inner">
     <div>
       <div class="principles-cta-text">Find out where your capability sits.</div>
@@ -102,6 +108,7 @@
     </div>
     <a href="/diagnostic" class="btn-primary">Take the Diagnostic &rarr;</a>
   </div>
+ </div>
 </div>
 
 <section class="subscribe-section">
