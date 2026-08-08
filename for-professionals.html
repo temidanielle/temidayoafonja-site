@@ -61,7 +61,9 @@
 
 /* Hero */
 .a-hero { padding: 48px 0 20px; }
-.a-hero h1 { font-size: clamp(32px, 4.6vw, 52px); line-height: 1.08; margin-bottom: 14px; }
+/* The cap is set so the headline holds one line inside the 900px measure on
+   desktop. The lower bound is unchanged, so phone widths still wrap. */
+.a-hero h1 { font-size: clamp(32px, 4.6vw, 44px); line-height: 1.08; margin-bottom: 14px; }
 .a-sub { font-family: Georgia, serif; font-size: 19px; color: var(--muted); margin-bottom: 10px; }
 .a-position-line { font-style: italic; font-size: 15px; color: var(--rust); margin-bottom: 22px; }
 .a-hero .body { font-size: 16px; line-height: 1.65; color: var(--ink); max-width: 720px; }
