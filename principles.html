@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Principles. Temidayo Afonja</title>
-<meta name="description" content="Six Capability Formation principles that hold across industries, organizational sizes, and market conditions. Patterns for how capability is built or lost.">
+<meta name="description" content="The Capability Formation principles now live on the Framework page as part of the canonical architecture.">
 <link rel="canonical" href="https://temidayoafonja.com/principles.html">
 
 <!-- Open Graph / Twitter -->
@@ -12,11 +12,11 @@
 <meta property="og:site_name" content="Temidayo Afonja">
 <meta property="og:url" content="https://temidayoafonja.com/principles.html">
 <meta property="og:title" content="Capability Formation Principles">
-<meta property="og:description" content="Six principles that hold across industries, organizational sizes, and market conditions. Patterns for how capability is built or quietly lost.">
+<meta property="og:description" content="The Capability Formation principles now live on the Framework page as part of the canonical architecture.">
 <meta property="og:image" content="https://temidayoafonja.com/og-framework.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Capability Formation Principles">
-<meta name="twitter:description" content="Six principles that hold across industries, organizational sizes, and market conditions. Patterns for how capability is built or quietly lost.">
+<meta name="twitter:description" content="The Capability Formation principles now live on the Framework page as part of the canonical architecture.">
 <meta name="twitter:image" content="https://temidayoafonja.com/og-framework.png">
 
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -43,13 +43,16 @@
 .page-hero { padding: 160px 48px 80px; position: relative; z-index: 1; max-width: 1160px; margin: 0 auto; border-bottom: 1px solid var(--slate-dim); }
 .page-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(44px, 6vw, 72px); font-weight: 300; line-height: 1.05; color: var(--white); margin-bottom: 24px; }
 .page-intro { font-size: 17px; line-height: 1.85; color: var(--cream-70); max-width: 600px; padding-bottom: 80px; }
-.principles-grid { max-width: 1160px; margin: 0 auto; padding: 72px 48px 80px; position: relative; z-index: 1; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; }
-.principle-card { padding: 48px 36px; border: 1px solid var(--slate-dim); border-top: 2px solid var(--gold); position: relative; transition: border-color 0.25s, background 0.25s; }
-.principle-card:hover { border-color: var(--gold-border); background: transparent; }
-.principle-num { font-family: 'Cormorant Garamond', serif; font-size: 36px; font-weight: 400; color: var(--gold); opacity: 0.7; line-height: 1; margin-bottom: 16px; display: block; letter-spacing: 0.1em; }
-.principle-statement { font-family: 'Cormorant Garamond', serif; font-size: clamp(22px, 2vw, 28px); font-weight: 400; line-height: 1.2; color: var(--white); margin-bottom: 16px; }
-.principle-elaboration { font-size: 15px; line-height: 1.85; color: var(--cream-70); }
-.principles-cta { max-width: 1160px; margin: 0 auto; padding: 0 48px 96px; position: relative; z-index: 1; }
+.moved-note { border: 1px solid var(--gold-border); background: var(--gold-dim); padding: 22px 26px; margin-bottom: 40px; max-width: 720px; }
+.moved-note p { font-size: 15px; line-height: 1.75; color: var(--cream-70); margin-bottom: 10px; }
+.moved-note a { font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold); text-decoration: none; font-weight: 600; border-bottom: 1px solid var(--gold-border); padding-bottom: 2px; }
+.moved-note a:hover { color: var(--gold-light); }
+.principles-cta { padding: 72px 48px 80px; position: relative; z-index: 1; }
+.principles-cta-wrap { max-width: 1160px; margin: 0 auto; }
+.warm-section .principles-cta-inner { border-color: var(--line-warm); background: #fff; }
+.warm-section .principles-cta-inner:hover { border-color: var(--rust); }
+.warm-section .principles-cta-text { color: var(--navy); }
+.warm-section .principles-cta-sub { color: var(--muted-warm); }
 .principles-cta-inner { border: 1px solid var(--slate-dim); padding: 48px; display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; transition: border-color 0.2s; }
 .principles-cta-inner:hover { border-color: var(--gold-border); }
 .principles-cta-text { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-weight: 300; color: var(--white); line-height: 1.3; }
@@ -61,8 +64,7 @@
 .subscribe-links { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 @media (max-width: 900px) {
   .page-hero { padding: 120px 24px 60px; }
-  .principles-grid { grid-template-columns: 1fr; padding: 48px 24px 60px; }
-  .principles-cta { padding: 0 24px 60px; }
+  .principles-cta { padding: 52px 24px 60px; }
   .principles-cta-inner { flex-direction: column; align-items: flex-start; }
   .subscribe-section { padding: 60px 24px; }
 }
@@ -88,52 +90,17 @@
 </nav>
 
 <div class="page-hero">
+  <div class="moved-note fade-up delay-1">
+    <p>These principles now live on the Framework page as part of the canonical Capability Formation architecture.</p>
+    <a href="framework.html#principles">View the full framework &rarr;</a>
+  </div>
   <span class="eyebrow fade-up delay-1">The Framework</span>
   <h1 class="page-title fade-up delay-2">Capability Formation<br>Principles</h1>
-  <p class="page-intro fade-up delay-3">The framework is built on a set of observations that hold across industries, organizational sizes, and market conditions. These are not aspirations. They are patterns.</p>
+  <p class="page-intro fade-up delay-3">The six governing principles are now maintained on the Framework page, alongside the architecture they describe.</p>
 </div>
 
-<div class="principles-grid">
-
-  <div class="principle-card fade-up delay-1">
-    <div class="principle-num">01</div>
-    <div class="principle-statement">Capability does not plateau when it goes undeveloped. It erodes.</div>
-      <p class="principle-elaboration">The absence of active development is not neutral ground. Environments that do not build capability are quietly consuming it. This is not visible until someone leaves, or until the environment demands something that was never built.</p>
-  </div>
-
-  <div class="principle-card fade-up delay-2">
-    <div class="principle-num">02</div>
-    <div class="principle-statement">The environment is the strategy.</div>
-      <p class="principle-elaboration">What you build people inside determines what you build with them. Talent strategy is not a function separate from organizational design. The two are the same decision made at different moments.</p>
-  </div>
-
-  <div class="principle-card fade-up delay-1">
-    <div class="principle-num">03</div>
-    <div class="principle-statement">Position is not portable. Capability is.</div>
-      <p class="principle-elaboration">When people leave organizations, titles do not travel with them. What travels is judgment, pattern recognition, and the capacity to work through complexity. Organizations that confuse the two measure the wrong things at entry and at exit.</p>
-  </div>
-
-  <div class="principle-card fade-up delay-2">
-    <div class="principle-num">04</div>
-    <div class="principle-statement">What organizations measure at exit is the least important thing that leaves.</div>
-      <p class="principle-elaboration">Exit interviews capture sentiment. They rarely capture what actually walked out the door: the organizational judgment, the relationship networks, the contextual knowledge that took years to build. Alumni Capital is what organizations do not know they are losing until it shows up somewhere else.</p>
-  </div>
-
-  <div class="principle-card fade-up delay-1">
-    <div class="principle-num">05</div>
-    <div class="principle-statement">Stability that protects people from complexity is fragility in formation.</div>
-      <p class="principle-elaboration">Organizations that insulate people from hard problems in the name of stability are not protecting their people. They are building environments that produce fragile capability, unable to survive the next disruption precisely because the disruptions were managed away.</p>
-  </div>
-
-  <div class="principle-card fade-up delay-2" id="principle-06">
-    <div class="principle-num">06</div>
-    <div class="principle-statement">Alumni Capital is infrastructure, not sentiment.</div>
-      <p class="principle-elaboration">How organizations treat people after they leave determines what former employees build, who they refer, what they say in rooms the organization never enters. Alumni Capital either works for the organization or against it. It does not stay neutral.</p>
-  </div>
-
-</div>
-
-<div class="principles-cta">
+<div class="principles-cta warm-section">
+ <div class="principles-cta-wrap">
   <div class="principles-cta-inner">
     <div>
       <div class="principles-cta-text">Find out where your capability sits.</div>
@@ -141,6 +108,7 @@
     </div>
     <a href="/diagnostic" class="btn-primary">Take the Diagnostic &rarr;</a>
   </div>
+ </div>
 </div>
 
 <section class="subscribe-section">
@@ -183,7 +151,7 @@
       </ul>
     </div>
   </div>
-  <div class="footer-copy">&copy; 2026 The Density Group LLC &middot; Capability Formation</div>
+  <div class="footer-copy">&copy; 2026 The Density Group LLC &middot; Capability Formation &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></div>
 </footer>
 
 <script defer src="/nav.js"></script>
