@@ -85,6 +85,9 @@
 .route .detail-line { font-size: 13px; color: var(--muted); margin-top: 6px; }
 .route .small-note { font-size: 13px; color: var(--muted); margin-top: 16px; }
 
+.route .r-entry-label { font-size: 10px; text-transform: uppercase; letter-spacing: .16em; font-weight: 800; color: var(--gold); margin-bottom: 12px; }
+.route .r-question { font-family: Georgia, serif; font-size: 18px; line-height: 1.4; color: #fff; border-left: 2px solid var(--gold); padding-left: 16px; margin: 18px 0; max-width: 640px; }
+.route .r-distinct { font-size: 13px; color: rgba(255,255,255,.62); margin-top: 14px; font-style: italic; }
 .route .pathway-pointer { font-size: 13px; margin-top: 16px; }
 .route.org .pathway-pointer a { color: #fff; font-weight: 800; border-bottom: 1px solid var(--gold); text-decoration: none; padding-bottom: 2px; }
 
@@ -179,7 +182,7 @@
     <li><a href="speaking.html">Speaking</a></li>
     <li><a href="about.html">The Firm</a></li>
     <li><a href="for-professionals.html">For Professionals</a></li>
-    <li><a href="work.html#get-in-touch" class="nav-cta">Discuss an Organizational Need</a></li>
+    <li><a href="work.html#get-in-touch" class="nav-cta">Discuss an Organizational Decision</a></li>
   </ul>
 </nav>
 
@@ -201,15 +204,20 @@
   <div class="lean-wrap route-grid">
     <article class="route org" id="organizations">
       <div class="r-label">For CHROs, CPOs, COOs and executive teams</div>
-      <h2>Find where capability risk sits before the next transition exposes it.</h2>
-      <p>An independent reading of where consequential judgment is concentrated, where talent cannot move, and what the organization is at risk of losing through AI transition, restructuring, growth, M&amp;A, or leadership change. Scoped to a leadership team or a full population, from two weeks to six.</p>
+      <div class="r-entry-label">Entry point &middot; Recognition</div>
+      <h2>Capability Formation Executive Briefing</h2>
+      <div class="r-sub">An executive decision review for AI, critical capability, or organizational transition.</div>
+      <p>Organizations are investing in AI and redesigning work without being able to see what will happen to the human judgment, organizational memory, and transferable capability on which execution still depends.</p>
+      <p class="r-question">What will this change make the organization more capable of doing, and what capability could it quietly remove, concentrate, or make inaccessible?</p>
+      <p>A focused, evidence-led engagement examining one consequential organizational decision over approximately ten business days. It is designed for leadership teams navigating AI and work redesign, critical capability concentration, or organizational transition.</p>
       <div class="mini-list">
-        <div class="mini">Independent, repeatable reading</div>
-        <div class="mini">Executive risk and decision report</div>
-        <div class="mini">Prioritized 90-day interventions</div>
+        <div class="mini">One consequential decision</div>
+        <div class="mini">Approximately ten business days</div>
+        <div class="mini">Evidence-led executive review</div>
       </div>
-      <a class="lean-btn light" href="#get-in-touch">Discuss an organizational need</a>
-      <p class="pathway-pointer"><a href="#organizational-pathway">See the full enterprise pathway below.</a></p>
+      <p class="r-distinct">An executive decision engagement. It is not a speaking engagement, and it is not leadership development.</p>
+      <a class="lean-btn light" href="#get-in-touch">Discuss an Organizational Decision</a>
+      <p class="pathway-pointer">The Briefing is stage one. <a href="#organizational-pathway">See the full pathway, including the Organizational Capability Formation Read.</a></p>
     </article>
     <article class="route individual" id="individuals">
       <div class="r-label">For experienced professionals</div>
@@ -281,7 +289,7 @@
 
     </div>
     <div class="pathway-cta">
-      <a class="lean-btn primary" href="#get-in-touch">Discuss an Organizational Need</a>
+      <a class="lean-btn primary" href="#get-in-touch">Discuss an Organizational Decision</a>
     </div>
   </div>
 </section>
@@ -374,8 +382,8 @@
         <li><a href="case-studies.html">Evidence</a></li>
         <li><a href="speaking.html">Speaking</a></li>
         <li><a href="about.html">The Firm</a></li>
-        <li><a href="/organizational-diagnostic">Organizational Diagnostic</a></li>
-        <li><a href="work.html#get-in-touch">Discuss an Organizational Need</a></li>
+        <li><a href="/organizational-diagnostic">Organizational Capability Formation Scan</a></li>
+        <li><a href="work.html#get-in-touch">Discuss an Organizational Decision</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -448,7 +456,7 @@ function handleContact(e) {
     if (!name) return;
     var msg = document.getElementById('cMsg');
     if (msg && !msg.value) {
-      msg.value = 'I took the Organizational Diagnostic and placed in ' + name + '. I would like to talk through what that means for my organization.';
+      msg.value = 'I took the Organizational Capability Formation Scan and placed in ' + name + '. I would like to talk through what that means for my organization.';
     }
   } catch (e) {}
 })();
