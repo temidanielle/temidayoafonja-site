@@ -63,9 +63,16 @@
 .a-hero { padding: 48px 0 20px; }
 /* The cap is set so the headline holds one line inside the 900px measure on
    desktop. The lower bound is unchanged, so phone widths still wrap. */
-.a-hero h1 { font-size: clamp(32px, 4.6vw, 44px); line-height: 1.08; margin-bottom: 14px; }
-.a-sub { font-family: Georgia, serif; font-size: 19px; color: var(--muted); margin-bottom: 10px; }
-.a-position-line { font-style: italic; font-size: 15px; color: var(--rust); margin-bottom: 22px; }
+.a-hero h1 { font-size: clamp(32px, 4.6vw, 44px); line-height: 1.08; margin-bottom: 22px; }
+/* The three hero lines each carry a different register, so each gets its own
+   break. 22 and 18 are the heading and eyebrow rhythms used on the other lean
+   pages; 28 is the wider step down into body copy. These are scoped to
+   .a-hero because ".lean-page p { margin: 0 }" outranks a bare class and was
+   silently flattening every gap here to nothing. */
+.a-sub { font-family: Georgia, serif; font-size: 19px; color: var(--muted); }
+.a-position-line { font-style: italic; font-size: 15px; color: var(--rust); }
+.a-hero .a-sub { margin-bottom: 18px; }
+.a-hero .a-position-line { margin-bottom: 28px; }
 .a-hero .body { font-size: 16px; line-height: 1.65; color: var(--ink); max-width: 720px; }
 
 /* What is included */
