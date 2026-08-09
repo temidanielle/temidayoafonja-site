@@ -15,6 +15,21 @@
   to = "/ai-capability-readiness.html"
   status = 200
 
+# principles.html now carries only a pointer to the Framework page, which holds
+# the six governing principles. Redirect permanently so old inbound links keep
+# working and search authority consolidates on /framework. The file is kept in
+# the repository for now so the redirect can be tested; it can be deleted once
+# the redirect is confirmed in production.
+[[redirects]]
+  from = "/principles"
+  to = "/framework"
+  status = 301
+
+[[redirects]]
+  from = "/principles.html"
+  to = "/framework"
+  status = 301
+
 [[redirects]]
   from = "/institutional-diagnostic"
   to = "/organizational-diagnostic.html"

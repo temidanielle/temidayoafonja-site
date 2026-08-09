@@ -657,20 +657,15 @@ nav { padding:16px 20px; }
         </div>
       </div>
       <div class="cta-box">
-        <div class="cta-box-title">Start the Conversation</div>
-        <div class="cta-box-sub">No pitch. No deck. Just an honest look at what you are navigating and whether the framework is the right fit.</div>
-        <div class="cta-form">
-          <input type="text"  class="cta-input" id="ctaName"    placeholder="Your name">
-          <input type="text"  class="cta-input" id="ctaRole"    placeholder="Your role">
-          <input type="email" class="cta-input" id="ctaEmail"   placeholder="Email address *">
-          <textarea            class="cta-input" id="ctaMessage" placeholder="What are you navigating? (optional)"></textarea>
-          <button class="btn-cta-send" id="ctaSendBtn">Send &rarr;</button>
+        <div class="cta-box-title">Have an organizational question rather than an individual career decision?</div>
+        <div class="cta-box-sub">The enterprise route begins with the Capability Formation Executive Briefing, an evidence-led review of one consequential organizational decision.</div>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;">
+          <a href="/work#get-in-touch" target="_blank" rel="noopener" style="display:inline-block;background:#c9a84c !important;color:#0f2347 !important;padding:14px 32px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;-webkit-text-fill-color:#0f2347 !important;">Discuss an Organizational Decision &rarr;</a>
         </div>
-        <div class="cta-confirm" id="ctaConfirm">Message sent. Temidayo Afonja will be in touch.</div>
       </div>
     </div>
     <div class="results-actions">
-      <a href="https://temidayoafonja.substack.com" class="btn-action" target="_blank">Read the Framework</a>
+      <a href="/framework" class="btn-action">Read the Framework</a>
       <button class="btn-action" id="retakeBtn">Retake the Diagnostic</button>
     </div>
     <div class="audit-footer">
@@ -1164,9 +1159,6 @@ function showResults(name) {
     document.getElementById("diagnosticQuestions").innerHTML=qh;
   }
 
-  if(pregateNameVal)  document.getElementById("ctaName").value=pregateNameVal;
-  if(pregateEmailVal) document.getElementById("ctaEmail").value=pregateEmailVal;
-
   // Closing section: individual reads as diagnosis and points to the Field Kit.
   document.getElementById("ctaSectionTitle").textContent = "Where This Leaves You";
   document.getElementById("fieldKitBox").style.display = "block";
@@ -1454,26 +1446,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
   document.getElementById("retakeBtn").addEventListener("click", function(){
     setupIndividual(); pregateNameVal=""; pregateEmailVal=""; show("intro");
-  });
-
-  document.getElementById("ctaSendBtn").addEventListener("click", function(){
-    var name=document.getElementById("ctaName").value.trim()||pregateNameVal;
-    var role=document.getElementById("ctaRole").value.trim();
-    var email=document.getElementById("ctaEmail").value.trim()||pregateEmailVal;
-    var message=document.getElementById("ctaMessage").value.trim();
-    var ef=document.getElementById("ctaEmail");
-    if(!validEmail(email)){ ef.style.borderColor="#c8503c"; ef.focus(); return; }
-    ef.style.borderColor="";
-    var sp=scorePayload();
-    var btn=document.getElementById("ctaSendBtn"); btn.textContent="Sending..."; btn.disabled=true;
-    fetch("https://formspree.io/f/xjgapael",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify({name:name,role:role,email:email,message:message,source:"results_contact_form",mode:currentMode,quadrant:getQKey(),state:sp.state,density:sp.density,optionality:sp.optionality,alumni_capital:sp.alumni_capital,completed_at:new Date().toISOString()})
-    }).then(function(r){
-      if(r.ok){
-        if(window.plausible) plausible("Contact Submitted", {props:{source:"audit-results"}});
-        document.getElementById("ctaConfirm").style.display="block"; btn.style.display="none";
-        ["ctaName","ctaRole","ctaEmail","ctaMessage"].forEach(function(id){document.getElementById(id).value="";});
-      } else { btn.textContent="Send"; btn.disabled=false; }
-    }).catch(function(){ btn.textContent="Send"; btn.disabled=false; });
   });
 
   // ─── PAPER FAST PATH (individual only) ─────────────────────────────────────
