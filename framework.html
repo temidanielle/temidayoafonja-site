@@ -40,6 +40,44 @@
 
 <style>
 /* ── Framework-specific ── */
+/* Four States palette. Editorial pastels, all with navy text. Compounding is
+   the most saturated of the four and carries a heavier border, but stays in
+   the same family so the other three never read as disabled. */
+:root {
+  /* Each state keeps its hue. The glow and edge values are the same hue with
+     luminance and saturation shifted, so the fill reads like highlighter ink
+     pooling toward the edge rather than a flat matte block. */
+  --st-depth: #E7D79A;    --st-depth-glow: #F1E3AC;    --st-depth-edge: #EDD67D;    --st-depth-line: #C9B26A;
+  --st-compound: #A8CEA5; --st-compound-glow: #B5DDB2; --st-compound-edge: #90D18B; --st-compound-line: #5E9160;
+  --st-stagnant: #E7C2C2; --st-stagnant-glow: #F2D3D3; --st-stagnant-edge: #E8AAAA; --st-stagnant-line: #C99494;
+  --st-fragile: #F0C6A5;  --st-fragile-glow: #F8D5B9;  --st-fragile-edge: #F6B888;  --st-fragile-line: #D79A6B;
+}
+
+/* Highlighter ink. The fill is a translucent wash laid on a ::before layer and
+   multiplied into the paper beneath, the way real highlighter behaves, rather
+   than an opaque block. Slightly denser toward the base so the stroke has
+   weight. No hard outline: highlighter has no border. */
+.fwm-cell, .matrix-card { position: relative; z-index: 0; background: none; border: none; }
+.fwm-cell::before, .matrix-card::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  border-radius: 5px; mix-blend-mode: multiply;
+}
+.matrix-card::before { border-radius: 10px; }
+.fwm-cell.depth::before, .mc-depth::before {
+  background: linear-gradient(178deg, rgba(237,214,125,.20) 0%, rgba(237,214,125,.40) 62%, rgba(237,214,125,.33) 100%);
+}
+.fwm-cell.compound::before, .mc-compound::before {
+  background: linear-gradient(178deg, rgba(144,209,139,.26) 0%, rgba(144,209,139,.52) 62%, rgba(144,209,139,.43) 100%);
+}
+.fwm-cell.stagnant::before, .mc-stagnant::before {
+  background: linear-gradient(178deg, rgba(232,170,170,.20) 0%, rgba(232,170,170,.40) 62%, rgba(232,170,170,.33) 100%);
+}
+.fwm-cell.fragile::before, .mc-fragile::before {
+  background: linear-gradient(178deg, rgba(246,184,136,.20) 0%, rgba(246,184,136,.40) 62%, rgba(246,184,136,.33) 100%);
+}
+/* Compounding is the target state: a denser wash, plus a soft ink edge. */
+.fwm-cell.compound::before, .mc-compound::before { box-shadow: inset 0 0 0 1.5px rgba(94,145,96,.50); }
+
 .page-hero { padding: 160px 48px 72px; position: relative; z-index: 1; max-width: 1160px; margin: 0 auto; }
 .framework-intro { display: grid; grid-template-columns: 3fr 2fr; gap: 80px; align-items: start; }
 .page-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(48px, 6vw, 80px); font-weight: 300; line-height: 1.02; color: var(--white); margin-bottom: 24px; }
@@ -59,17 +97,24 @@
 .fw-arch-label { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; display: block; }
 .fw-arch-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 3vw, 36px); font-weight: 400; color: var(--white); line-height: 1.15; margin-bottom: 16px; }
 .fw-arch-text { font-size: 15px; line-height: 1.8; color: var(--cream-70); }
-.fw-matrix { margin-top: 30px; display: grid; grid-template-columns: 112px 1fr 1fr; gap: 2px; }
+.fw-matrix { margin-top: 30px; display: grid; grid-template-columns: 112px minmax(0,1fr) minmax(0,1fr); gap: 6px; }
 .fwm-head { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--slate); padding: 0 0 8px; align-self: end; }
 .fwm-rowhead { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--slate); display: flex; align-items: center; padding-right: 10px; }
-.fwm-cell { padding: 16px 14px; font-family: 'Cormorant Garamond', serif; font-size: 19px; color: var(--white); border: 1px solid transparent; }
-.fwm-cell.depth { background: rgba(200,80,60,0.08); border-color: rgba(200,80,60,0.15); }
-.fwm-cell.compound { background: rgba(74,140,111,0.1); border-color: rgba(74,140,111,0.2); }
-.fwm-cell.stagnant { background: rgba(139,160,180,0.06); border-color: rgba(139,160,180,0.1); }
-.fwm-cell.fragile { background: rgba(201,168,76,0.07); border-color: rgba(201,168,76,0.12); }
+.fwm-cell { padding: 16px 14px; font-family: 'Cormorant Garamond', serif; font-size: 19px; color: var(--navy); border: 1px solid transparent; }
 .fw-separate { margin-top: 28px; border-top: 1px solid var(--gold-border); padding-top: 20px; }
 .fw-separate strong { display: block; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; font-weight: 600; }
 .fw-separate p { font-size: 15px; line-height: 1.8; color: var(--cream-70); }
+/* Institutional Resilience: informed by the two readings, never produced by a
+   linear sequence. Rendered as a third band beneath the two cards. */
+.fw-informs { margin-top: 24px; border: 1px solid var(--line-warm); background: #fff; padding: 30px 34px; }
+.fw-informs-flow { display: grid; grid-template-columns: 1fr auto 1fr; gap: 20px; align-items: stretch; margin-bottom: 22px; }
+.fw-informs-leg { border: 1px solid var(--line-warm); background: var(--cream); padding: 16px 18px; }
+.fw-informs-leg strong { display: block; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--rust); margin-bottom: 7px; }
+.fw-informs-leg span { font-family: 'Cormorant Garamond', serif; font-size: 19px; color: var(--navy); line-height: 1.25; }
+.fw-informs-plus { display: flex; align-items: center; font-family: 'Cormorant Garamond', serif; font-size: 26px; color: var(--rust); }
+.fw-informs-out strong { display: block; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--rust); margin-bottom: 8px; }
+.fw-informs-out h3 { font-family: 'Cormorant Garamond', serif; font-size: clamp(24px, 2.6vw, 30px); font-weight: 400; color: var(--navy); margin-bottom: 10px; }
+.fw-informs-out p { font-size: 15px; line-height: 1.8; color: var(--muted-warm); }
 
 /* ── Six governing principles ── */
 .fw-principles { padding: 90px 48px; position: relative; z-index: 1; border-top: 1px solid var(--slate-dim); scroll-margin-top: 104px; }
@@ -100,7 +145,7 @@
 .matrix-section { padding: 80px 48px; background: var(--navy); position: relative; z-index: 1; }
 .matrix-inner { max-width: 1160px; margin: 0 auto; }
 .matrix-header { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: end; margin-bottom: 48px; }
-.matrix-grid-full { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+.matrix-grid-full { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 10px; }
 /* DOM order is the mobile stack: Stagnant, Fragile, Depth Trap, Compounding,
    running lowest to highest capability formation. On desktop the cards form a
    real 2x2, so reorder visually to put High Density on the top row. DOM is
@@ -111,17 +156,13 @@
   .matrix-grid-full .mc-stagnant  { order: 3; }
   .matrix-grid-full .mc-fragile   { order: 4; }
 }
-.matrix-card { padding: 36px; border: 1px solid transparent; }
-.mc-compound { background: rgba(74,140,111,0.1); border-color: rgba(74,140,111,0.2); }
-.mc-depth { background: rgba(200,80,60,0.08); border-color: rgba(200,80,60,0.15); }
-.mc-stagnant { background: rgba(139,160,180,0.06); border-color: rgba(139,160,180,0.1); }
-.mc-fragile { background: rgba(201,168,76,0.07); border-color: rgba(201,168,76,0.12); }
+.matrix-card { padding: 36px; }
 .mc-tag { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 14px; }
-.mc-compound .mc-tag { color: #6ab894; }
-.mc-depth .mc-tag { color: #e07060; }
-.mc-stagnant .mc-tag { color: var(--slate); }
-.mc-fragile .mc-tag { color: var(--gold); }
-.mc-name { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 400; color: var(--white); margin-bottom: 14px; }
+.mc-compound .mc-tag { color: #2D5631; }
+.mc-depth .mc-tag { color: #5E4D18; }
+.mc-stagnant .mc-tag { color: #703E3E; }
+.mc-fragile .mc-tag { color: #704018; }
+.mc-name { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 400; color: var(--navy); margin-bottom: 14px; }
 .mc-desc { font-size: 15px; line-height: 1.75; color: var(--cream-70); }
 
 .fw-cta { padding: 80px 48px; text-align: center; position: relative; z-index: 1; }
@@ -137,40 +178,19 @@
 .warm-section .fw-arch-text { color: var(--muted-warm); }
 .warm-section .fwm-head,
 .warm-section .fwm-rowhead { color: var(--muted-warm); }
-.warm-section .fwm-cell { color: var(--navy); }
-.warm-section .fwm-cell.depth { background: rgba(200,80,60,0.12); border-color: rgba(200,80,60,0.28); }
-.warm-section .fwm-cell.stagnant { background: rgba(93,102,118,0.10); border-color: rgba(93,102,118,0.22); }
-.warm-section .fwm-cell.fragile { background: rgba(201,168,76,0.20); border-color: rgba(201,168,76,0.42); }
-/* Compounding is the target state. Solid emphasis-orange fill with white text,
-   matching how the homepage already marks Compounding in its mini matrix. */
-.warm-section .fwm-cell.compound { background: var(--rust); border-color: var(--rust); color: #fff; font-weight: 500; }
 .warm-section .fw-separate { border-top-color: rgba(201,168,76,0.45); }
 .warm-section .fw-separate strong { color: var(--rust); }
 .warm-section .fw-separate p { color: var(--muted-warm); }
 
 .warm-section.matrix-section { background: var(--cream); }
 .warm-section .matrix-intro { color: var(--muted-warm); }
-.warm-section .matrix-card { border-width: 1px; border-style: solid; }
-.warm-section .mc-depth { background: rgba(200,80,60,0.10); border-color: rgba(200,80,60,0.26); }
-.warm-section .mc-stagnant { background: rgba(93,102,118,0.09); border-color: rgba(93,102,118,0.22); }
-.warm-section .mc-fragile { background: rgba(201,168,76,0.18); border-color: rgba(201,168,76,0.40); }
-.warm-section .mc-depth .mc-tag { color: #a4382a; }
-.warm-section .mc-stagnant .mc-tag { color: #55606f; }
-.warm-section .mc-fragile .mc-tag { color: #856616; }
-.warm-section .mc-name { color: var(--navy); }
-.warm-section .mc-desc { color: var(--muted-warm); }
+.warm-section .mc-desc { color: #222F46; }
 
-/* Compounding is the target state: solid emphasis-orange card, so it separates
-   from the other three at a glance rather than by text colour alone. */
-.warm-section .mc-compound { background: var(--rust); border-color: var(--rust); border-width: 2px; }
-.warm-section .mc-compound .mc-tag { color: rgba(255,255,255,0.82); }
-.warm-section .mc-compound .mc-name { color: #fff; }
-.warm-section .mc-compound .mc-desc { color: rgba(255,255,255,0.88); }
 .warm-section .mc-compound .mc-name::after {
   content: "Target state";
   display: block; margin-top: 8px;
   font-family: 'DM Sans', sans-serif; font-size: 10px; font-weight: 500;
-  letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.85);
+  letter-spacing: 0.18em; text-transform: uppercase; color: #2D5631;
 }
 
 @media (max-width: 900px) {
@@ -178,9 +198,15 @@
   .framework-intro { grid-template-columns: 1fr; gap: 32px; }
   .fw-architecture { padding: 0 24px 60px; }
   .fw-arch-grid { grid-template-columns: 1fr; }
+  .fw-informs { padding: 24px 22px; }
+  .fw-informs-flow { grid-template-columns: 1fr; gap: 12px; }
+  .fw-informs-plus { justify-content: center; }
   .fw-arch-card { padding: 32px 24px; }
-  .fw-matrix { grid-template-columns: 68px 1fr 1fr; }
-  .fwm-cell { padding: 14px 10px; font-size: 17px; }
+  .fw-matrix { grid-template-columns: 52px minmax(0,1fr) minmax(0,1fr); }
+  /* The longest label, Compounding, has to sit inside its cell at phone
+     widths. Type and padding are sized so it does, and break-word is the
+     last-resort guard so it wraps rather than running over the box. */
+  .fwm-cell { padding: 14px 8px; font-size: 15px; overflow-wrap: break-word; }
   .fwm-head, .fwm-rowhead { font-size: 9px; letter-spacing: 0.1em; }
   .fw-principles { padding: 60px 24px; }
   .fw-principles-grid { grid-template-columns: 1fr; }
@@ -189,6 +215,14 @@
   .matrix-section { padding: 60px 24px; }
   .matrix-header { grid-template-columns: 1fr; }
   .matrix-grid-full { grid-template-columns: 1fr; }
+}
+
+/* Narrowest phones. The matrix is the only element that runs out of room, so
+   the card gutter and the row-label column give it back what it needs. */
+@media (max-width: 380px) {
+  .fw-arch-card { padding: 28px 18px; }
+  .fw-matrix { grid-template-columns: 46px minmax(0,1fr) minmax(0,1fr); }
+  .fwm-cell { padding: 13px 7px; font-size: 13px; }
 }
 </style>
 </head>
@@ -207,7 +241,7 @@
     <li><a href="speaking.html">Speaking</a></li>
     <li><a href="about.html">The Firm</a></li>
     <li><a href="for-professionals.html">For Professionals</a></li>
-    <li><a href="work.html#get-in-touch" class="nav-cta">Discuss an Organizational Need</a></li>
+    <li><a href="work.html#get-in-touch" class="nav-cta">Discuss an Organizational Decision</a></li>
   </ul>
 </nav>
 
@@ -262,6 +296,24 @@
       </article>
 
     </div>
+    <div class="fw-informs">
+      <div class="fw-informs-flow">
+        <div class="fw-informs-leg">
+          <strong>Reading One</strong>
+          <span>Density x Optionality gives the Four States placement</span>
+        </div>
+        <div class="fw-informs-plus">+</div>
+        <div class="fw-informs-leg">
+          <strong>Reading Two</strong>
+          <span>Alumni Capital gives the organizational reachability reading</span>
+        </div>
+      </div>
+      <div class="fw-informs-out">
+        <strong>Together they inform</strong>
+        <h3>Institutional Resilience</h3>
+        <p>A reading of whether the organization can retain, redeploy, recover, and reach the capability it needs when conditions change. The two readings inform it. Neither one produces it, and the four terms are not a causal sequence.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -274,15 +326,14 @@
       <div>
         <div class="pillar-num">01</div>
         <div class="pillar-name">Density</div>
-        <div class="pillar-subtitle">The Environment</div>
+        <div class="pillar-subtitle">Formation Conditions</div>
       </div>
       <div>
         <p class="pillar-desc">Density describes the conditions under which capability is forged. High-density environments are defined by challenge that is complex, consequential, and not yet solved. They expose people to volatility, force the development of new judgment, and produce talent that compounds rather than stagnates. They are also the environments where people most often discover what they are genuinely capable of, when given the chance.</p>
-        <p class="pillar-desc">Routine work produces fragile talent. Organizations that allow challenge concentration to thin out through administrative overhead, under-challenging assignments, or excessive process orientation gradually erode the capability base they depend on. They also quietly communicate to their best people that growth is not on offer here.</p>
+        <p class="pillar-desc">Routine work can reduce Density when it stops exposing people to unfamiliar, consequential problems. Organizations that allow challenge concentration to thin out through administrative overhead, under-challenging assignments, or excessive process orientation gradually erode the capability base they depend on. They also quietly communicate to their best people that growth is not on offer here.</p>
         <div class="pillar-signals">
           <div class="pillar-signal"><span class="signal-icon">→</span>What problems does your environment make people genuinely better at solving?</div>
           <div class="pillar-signal"><span class="signal-icon">→</span>Is challenge concentrated in your most important roles, or distributed by accident?</div>
-          <div class="pillar-signal"><span class="signal-icon">→</span>How quickly does your organization recover capability after a major departure?</div>
         </div>
       </div>
     </div>
@@ -291,7 +342,7 @@
       <div>
         <div class="pillar-num">02</div>
         <div class="pillar-name">Optionality</div>
-        <div class="pillar-subtitle">The Individual</div>
+        <div class="pillar-subtitle">Portability and Mobility</div>
       </div>
       <div>
         <p class="pillar-desc">Optionality describes what capability enables when it compounds over time. High-optionality careers and roles produce leaders whose judgment is portable across industries, functions, and cycles. It is also the dimension that most directly determines whether a person's work life feels expansive or contracting. When people can see that what they are building belongs to them, not just to the organization, they bring more of themselves to it.</p>
@@ -316,6 +367,7 @@
         <div class="pillar-signals">
           <div class="pillar-signal"><span class="signal-icon">→</span>What percentage of senior hires in the last three years came from your alumni network?</div>
           <div class="pillar-signal"><span class="signal-icon">→</span>How much organizational knowledge walks out the door in every restructuring?</div>
+          <div class="pillar-signal"><span class="signal-icon">→</span>How quickly does your organization recover capability after a major departure?</div>
           <div class="pillar-signal"><span class="signal-icon">→</span>How you treat exits determines what you attract at entry.</div>
         </div>
       </div>
@@ -328,8 +380,8 @@
   <div class="matrix-inner">
     <div class="matrix-header">
       <div>
-        <span class="eyebrow">The Career Strategy Matrix</span>
-        <h2>Where does your capability sit?</h2>
+        <span class="eyebrow">The Four States</span>
+        <h2>Where does your capability position sit?</h2>
       </div>
       <p class="matrix-intro" style="font-size:17px;line-height:1.85;">The matrix maps Density against Optionality to reveal four distinct capability conditions. Each applies to the individual building a career and the organization designing the environment. Each has its own cost, its own risk profile, and its own path forward.</p>
     </div>
@@ -416,7 +468,7 @@
     <p>The Capability Formation Diagnostic scores you on two axes, Density and Optionality, and measures Alumni Capital separately, in twelve statements for individuals, seventeen questions for organization leaders. Your results include a full diagnostic reading, risk profile, and a clear path forward. Most people find that seeing it clearly is the hardest and most important step.</p>
     <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:36px;">
       <a href="/diagnostic" class="btn-primary">Take the Diagnostic</a>
-      <a href="work.html" class="btn-secondary">Work With Me</a>
+      <a href="work.html" class="btn-secondary">Explore Advisory</a>
     </div>
   </div>
 </section>
@@ -435,8 +487,8 @@
         <li><a href="case-studies.html">Evidence</a></li>
         <li><a href="speaking.html">Speaking</a></li>
         <li><a href="about.html">The Firm</a></li>
-        <li><a href="/organizational-diagnostic">Organizational Diagnostic</a></li>
-        <li><a href="work.html#get-in-touch">Discuss an Organizational Need</a></li>
+        <li><a href="/organizational-diagnostic">Organizational Capability Formation Scan</a></li>
+        <li><a href="work.html#get-in-touch">Discuss an Organizational Decision</a></li>
       </ul>
     </div>
     <div class="footer-col">
