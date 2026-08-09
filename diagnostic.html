@@ -1232,7 +1232,7 @@ function flushPendingResearch(){
       if(k && k.indexOf(RESEARCH_PENDING_PREFIX)===0) keys.push(k);
     }
     keys.forEach(function(k){
-      // Expire stale payloads first — they hold a name, email, and all twelve answers
+      // Expire stale payloads first: they hold a name, email, and all twelve answers
       // on the user's device. Drop anything older than 7 days whether or not it would send.
       var tsPart = k.slice(RESEARCH_PENDING_PREFIX.length).split("_")[0];
       var ts = parseInt(tsPart, 10);
