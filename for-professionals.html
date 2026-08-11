@@ -75,6 +75,20 @@
 .a-hero .a-position-line { margin-bottom: 28px; }
 .a-hero .body { font-size: 16px; line-height: 1.65; color: var(--ink); max-width: 720px; }
 
+/* ── TIME-BOUND: Lightning Lesson banner, session of August 26, 2026 ──
+   To retire it, delete this block and the matching <section class="ll-banner">
+   in the body. To run the next session, update .ll-date, the heading, the
+   description, and the href. Nothing else on the page depends on it. */
+.ll-banner { padding: 4px 0 8px; }
+.ll-inner { background: var(--navy); border-left: 4px solid var(--gold); border-radius: 14px; padding: 30px 34px; display: flex; align-items: center; justify-content: space-between; gap: 28px; flex-wrap: wrap; }
+.ll-copy { min-width: 0; }
+.ll-kicker { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
+.ll-tag { font-size: 10px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--navy); background: var(--gold); border-radius: 3px; padding: 5px 9px; }
+.ll-date { font-size: 10px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); }
+.ll-copy h2 { font-size: clamp(21px, 2.4vw, 27px); line-height: 1.15; color: #fff; margin-bottom: 10px; }
+.ll-copy p { font-size: 14.5px; line-height: 1.6; color: rgba(255,255,255,.74); max-width: 620px; }
+.ll-cta { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; background: var(--rust); color: #fff; font-weight: 700; font-size: 14px; padding: 15px 26px; border-radius: 4px; text-decoration: none; }
+
 /* What is included */
 .a-section { padding: 48px 0; }
 .a-included { display: grid; grid-template-columns: repeat(2,1fr); gap: 10px; margin-top: 8px; }
@@ -127,6 +141,8 @@
 
 @media (max-width: 900px) {
   .lean-page { padding-top: 76px; }
+  .ll-inner { padding: 26px 22px; }
+  .ll-cta { width: 100%; }
   .a-included { grid-template-columns: 1fr; }
   .a-priority-grid { grid-template-columns: 1fr; gap: 32px; }
   .a-form { grid-template-columns: 1fr; }
@@ -161,7 +177,25 @@
     <h1 class="fade-up delay-2">Decide Whether to Stay or Leave Your Job</h1>
     <p class="a-sub fade-up delay-2">A Live Career Growth Assessment</p>
     <p class="a-position-line fade-up delay-3">Read the position before you make the move.</p>
-    <p class="body fade-up delay-3">A two-hour live workshop to determine whether your current role is still building deeper capability, whether what you have built will travel, and what category of move your evidence supports testing. You will complete the full twelve-statement Capability Position Read, compare your initial and evidence-backed readings, receive a provisional Four States placement, and leave with a written Next-Move Decision.</p>
+    <p class="body fade-up delay-3">A two-hour live workshop to determine whether your current role is still building deeper capability, whether what you have built will travel, and what category of move your evidence supports testing. You will complete the full twelve-statement Capability Position Read, compare your initial and evidence-led readings, receive a provisional Four States placement, and leave with a written Next-Move Decision.</p>
+  </div>
+</section>
+
+<!-- TIME-BOUND: Lightning Lesson banner, session of August 26, 2026.
+     Delete this section and the .ll-banner CSS block to retire it. -->
+<section class="ll-banner">
+  <div class="lean-wrap">
+    <div class="ll-inner">
+      <div class="ll-copy">
+        <div class="ll-kicker">
+          <span class="ll-tag">Free Lightning Lesson</span>
+          <span class="ll-date">August 26</span>
+        </div>
+        <h2>How to Tell If Your Career Is Stalling</h2>
+        <p>Three signs your role may have stopped building your capability and future options, even while you are performing well.</p>
+      </div>
+      <a class="ll-cta" href="https://maven.com/p/5162f2/how-to-tell-if-your-career-is-stalling" target="_blank" rel="noopener">Register Free &rarr;</a>
+    </div>
   </div>
 </section>
 
