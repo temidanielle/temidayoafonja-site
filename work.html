@@ -67,7 +67,7 @@
 /* The Advisory page carries the enterprise pathway only. The individual
    workshop lives on /for-professionals, so this grid holds a single card and
    a quiet pointer sits beneath it. */
-.route-grid { display: grid; grid-template-columns: 1fr; gap: 20px; }
+.route-grid { display: grid; grid-template-columns: minmax(0, 62%); gap: 20px; }
 .individual-pointer { margin-top: 20px; font-size: 13px; color: var(--muted); scroll-margin-top: 104px; }
 .individual-pointer a { color: var(--rust); font-weight: 700; border-bottom: 1px solid rgba(193,68,14,.35); }
 .route { border-radius: 16px; padding: 40px; }
@@ -250,7 +250,7 @@
         <p>A focused leadership session that helps executives recognize the capability dynamics behind a current organizational decision, disruption, transition, or risk.</p>
         <div class="stage-produces">
           <strong>What it produces</strong>
-          <span>An evidence-backed decision brief identifying the capability the proposed change is likely to create, remove, concentrate, or make inaccessible, the associated operational and enterprise risks, and the immediate decisions leadership should protect, redesign, or test.</span>
+          <span>An evidence-led decision brief identifying the capability the proposed change is likely to create, remove, concentrate, or make inaccessible, the associated operational and enterprise risks, and the immediate decisions leadership should protect, redesign, or test.</span>
         </div>
       </article>
 
@@ -328,7 +328,6 @@
           <li>Important knowledge may leave during transition</li>
         </ul>
       </div>
-      <div class="subroute">Looking for the structured individual assessment? <a href="for-professionals.html#priority-list">Get notified when enrollment opens at $500</a>.</div>
     </div>
     <form class="contact-form lean-form" onsubmit="handleContact(event)">
       <div class="lean-field wide">
