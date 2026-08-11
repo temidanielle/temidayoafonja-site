@@ -76,10 +76,13 @@
 .a-hero .body { font-size: 16px; line-height: 1.65; color: var(--ink); max-width: 720px; }
 
 /* ── TIME-BOUND: Lightning Lesson banner, session of August 26, 2026 ──
+   Sits below the priority list form as the lower-commitment alternative, so
+   the free session never reads as part of the paid workshop above it.
    To retire it, delete this block and the matching <section class="ll-banner">
    in the body. To run the next session, update .ll-date, the heading, the
    description, and the href. Nothing else on the page depends on it. */
-.ll-banner { padding: 4px 0 8px; }
+.ll-banner { padding: 56px 0 8px; border-top: 1px solid var(--line); }
+.ll-lead { font-size: 15px; font-weight: 700; color: var(--muted); margin-bottom: 16px; }
 .ll-inner { background: var(--navy); border-left: 4px solid var(--gold); border-radius: 14px; padding: 30px 34px; display: flex; align-items: center; justify-content: space-between; gap: 28px; flex-wrap: wrap; }
 .ll-copy { min-width: 0; }
 .ll-kicker { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
@@ -97,6 +100,7 @@
 /* Price and enrollment */
 .a-price-box { background: var(--navy); border-radius: 14px; padding: 36px 40px; color: #fff; text-align: center; margin-top: 10px; }
 .a-price-box .amount { font-family: Georgia, serif; font-size: 40px; color: var(--gold); margin-bottom: 6px; }
+.a-price-box .session { font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 10px; }
 .a-price-box .limit { font-size: 13px; color: rgba(255,255,255,.72); letter-spacing: .04em; text-transform: uppercase; margin-bottom: 24px; }
 .a-price-box .note { font-size: 13px; color: rgba(255,255,255,.65); margin-top: 18px; max-width: 480px; margin-left: auto; margin-right: auto; }
 
@@ -181,24 +185,6 @@
   </div>
 </section>
 
-<!-- TIME-BOUND: Lightning Lesson banner, session of August 26, 2026.
-     Delete this section and the .ll-banner CSS block to retire it. -->
-<section class="ll-banner">
-  <div class="lean-wrap">
-    <div class="ll-inner">
-      <div class="ll-copy">
-        <div class="ll-kicker">
-          <span class="ll-tag">Free Lightning Lesson</span>
-          <span class="ll-date">August 26</span>
-        </div>
-        <h2>How to Tell If Your Career Is Stalling</h2>
-        <p>Three signs your role may have stopped building your capability and future options, even while you are performing well.</p>
-      </div>
-      <a class="ll-cta" href="https://maven.com/p/5162f2/how-to-tell-if-your-career-is-stalling" target="_blank" rel="noopener">Register Free &rarr;</a>
-    </div>
-  </div>
-</section>
-
 <!-- 5B WHAT IS INCLUDED -->
 <section class="a-section">
   <div class="lean-wrap">
@@ -221,6 +207,7 @@
   <div class="lean-wrap">
     <div class="a-price-box">
       <div class="amount">Enrollment: $500</div>
+      <div class="session">First session: September 16, 2026 at 6:00 PM CST</div>
       <div class="limit">Limited to 12 participants</div>
       <a class="lean-btn primary large" href="#priority-list">Get Notified When Enrollment Opens</a>
       <p class="note">Priority-list members receive the confirmed date and enrollment link before registration opens publicly.</p>
@@ -266,6 +253,25 @@
           <p class="a-consent">You will receive workshop updates from Temidayo Afonja. You can unsubscribe at any time.</p>
         </form>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIME-BOUND: Lightning Lesson banner, session of August 26, 2026.
+     Delete this section and the .ll-banner CSS block to retire it. -->
+<section class="ll-banner">
+  <div class="lean-wrap">
+    <div class="ll-lead">Not ready for the full assessment? Start here.</div>
+    <div class="ll-inner">
+      <div class="ll-copy">
+        <div class="ll-kicker">
+          <span class="ll-tag">Free Lightning Lesson</span>
+          <span class="ll-date">August 26</span>
+        </div>
+        <h2>How to Tell If Your Career Is Stalling</h2>
+        <p>Three signs your role may have stopped building your capability and future options, even while you are performing well.</p>
+      </div>
+      <a class="ll-cta" href="https://maven.com/p/5162f2/how-to-tell-if-your-career-is-stalling" target="_blank" rel="noopener">Register Free &rarr;</a>
     </div>
   </div>
 </section>
