@@ -68,8 +68,11 @@
    workshop lives on /for-professionals, so this grid holds a single card and
    a quiet pointer sits beneath it. */
 .route-grid { display: grid; grid-template-columns: minmax(0, 62%); gap: 20px; }
-.individual-pointer { margin-top: 20px; font-size: 13px; color: var(--muted); scroll-margin-top: 104px; }
-.individual-pointer a { color: var(--rust); font-weight: 700; border-bottom: 1px solid rgba(193,68,14,.35); }
+/* Scoped to .route-section so it outranks ".lean-page p { margin: 0 }",
+   which was flattening this gap to zero and pinning the line to the
+   bottom edge of the Executive Briefing card. */
+.route-section .individual-pointer { margin-top: 34px; font-size: 13px; color: var(--muted); scroll-margin-top: 104px; }
+.route-section .individual-pointer a { color: var(--rust); font-weight: 700; border-bottom: 1px solid rgba(193,68,14,.35); }
 .route { border-radius: 16px; padding: 40px; }
 .route.org { background: var(--navy); color: #fff; }
 .route.individual { background: #fff; border: 1px solid var(--line); }
@@ -306,9 +309,8 @@
       <div class="metrics">
         <div class="metric"><strong>30%</strong><span>Retention improvement within 18 months</span></div>
         <div class="metric"><strong>$2M+</strong><span>Estimated turnover cost avoidance</span></div>
-        <div class="metric"><strong>Thousands</strong><span>of managers reached through global capability work</span></div>
+        <div class="metric"><strong>1,000+</strong><span>Managers reached through global capability work</span></div>
       </div>
-      <p class="metrics-attribution">Documented outcomes from enterprise roles held before founding The Density Group.</p>
     </div>
   </div>
 </section>
