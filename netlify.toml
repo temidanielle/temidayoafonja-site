@@ -19,16 +19,20 @@
 # the six governing principles. Redirect permanently so old inbound links keep
 # working and search authority consolidates on /framework. The file is kept in
 # the repository for now so the redirect can be tested; it can be deleted once
-# the redirect is confirmed in production.
+# the redirect is confirmed in production. force = true is required while the
+# file still exists, because Netlify serves a matching static file ahead of a
+# redirect rule unless the rule is forced.
 [[redirects]]
   from = "/principles"
   to = "/framework"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/principles.html"
   to = "/framework"
   status = 301
+  force = true
 
 [[redirects]]
   from = "/institutional-diagnostic"
