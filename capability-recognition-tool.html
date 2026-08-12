@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Capability Recognition Tool | The Density Group</title>
+<meta name="description" content="Three career patterns that quietly stop capability growth. Recognize which one describes your last 90 days. Recognition, not diagnosis.">
+<link rel="canonical" href="https://temidayoafonja.com/capability-recognition-tool">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Temidayo Afonja">
+<meta property="og:url" content="https://temidayoafonja.com/capability-recognition-tool">
+<meta property="og:title" content="The Capability Recognition Tool | The Density Group">
+<meta property="og:description" content="Three career patterns that quietly stop capability growth. Recognize which one describes your last 90 days.">
+<meta property="og:image" content="https://temidayoafonja.com/og-diagnostic.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Capability Recognition Tool | The Density Group">
+<meta name="twitter:description" content="Three career patterns that quietly stop capability growth. Recognize which one describes your last 90 days.">
+<meta name="twitter:image" content="https://temidayoafonja.com/og-diagnostic.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-hFo9m_622E0tElKtUlVnx.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<style>
+:root {
+  --charcoal: #0b0f14;
+  --navy: #0f2347;
+  --panel: #101826;
+  --gold: #c9a84c;
+  --gold-light: #e8c97a;
+  --gold-dim: rgba(201,168,76,0.10);
+  --gold-border: rgba(201,168,76,0.35);
+  --white: #ffffff;
+  --paper: #f5f0e8;
+  --slate: #8ba0b4;
+  --line: rgba(139,160,180,0.22);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html { background:var(--charcoal); }
+body {
+  background:var(--charcoal) !important;
+  color:var(--paper) !important;
+  font-family:'DM Sans',sans-serif !important;
+  font-weight:300;
+  min-height:100vh;
+}
+body a { color:var(--gold) !important; }
+body .nav-links a { color:var(--paper) !important; }
+body .nav-links a:hover, body .nav-links a:focus { color:var(--gold) !important; }
+body .nav-cta { color:var(--charcoal) !important; background:var(--gold) !important; }
+
+nav { position:fixed; top:0; left:0; right:0; z-index:9999; padding:18px 40px; display:flex; justify-content:space-between; align-items:center; background:rgba(11,15,20,0.97); border-bottom:1px solid var(--line); }
+.nav-logo { font-family:'Cormorant Garamond',serif; font-weight:300; font-size:18px; color:var(--paper); text-decoration:none; letter-spacing:0.05em; }
+.brand-lockup { display:flex; flex-direction:column; justify-content:center; text-decoration:none; line-height:1.2; font-family:'DM Sans',sans-serif; }
+.brand-primary { font-size:14px; font-weight:700; letter-spacing:0.05em; color:var(--paper); text-transform:uppercase; }
+.brand-secondary { font-size:9.5px; letter-spacing:0.03em; color:var(--slate); margin-top:3px; }
+.brand-tertiary { font-size:8.5px; letter-spacing:0.03em; color:var(--slate); opacity:0.75; margin-top:1px; }
+.nav-links { display:flex; gap:28px; align-items:center; }
+.nav-links a { font-size:11px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:var(--paper); text-decoration:none; }
+.nav-links a:hover { color:var(--gold); }
+.nav-cta { color:var(--charcoal) !important; background:var(--gold); padding:10px 20px; }
+.nav-cta:hover { background:var(--gold-light) !important; }
+@media (max-width:1080px){ .nav-links { display:none !important; } }
+.nav-spacer { height:88px; }
+@media (max-width:768px){ .brand-tertiary { display:none; } }
+
+/* ---- Tool shell ---- */
+.tool { max-width:920px; margin:0 auto; padding:56px 24px 120px; }
+.screen { display:none; }
+.screen.active { display:block; }
+
+.eyebrow { font-size:10px; font-weight:500; letter-spacing:0.22em; text-transform:uppercase; color:var(--gold); border:1px solid var(--gold-border); display:inline-block; padding:6px 14px; margin-bottom:28px; }
+.tool-title { font-family:'Cormorant Garamond',serif; font-weight:300; font-size:clamp(30px,4.4vw,46px); line-height:1.14; color:var(--white); margin-bottom:16px; }
+.tool-sub { font-size:14px; line-height:1.75; color:rgba(245,240,232,0.62); max-width:620px; margin-bottom:48px; }
+
+/* Phase 1: pattern grid */
+.pattern-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line); margin-bottom:0; }
+@media (max-width:760px){ .pattern-grid { grid-template-columns:1fr; } }
+
+.pattern-block { background:var(--charcoal); padding:32px 26px; cursor:pointer; text-align:left; border:none; color:inherit; font-family:inherit; display:flex; flex-direction:column; gap:18px; min-height:220px; }
+.pattern-block:hover, .pattern-block:focus-visible { background:var(--gold-dim); outline:none; }
+.pattern-block.selected { background:var(--gold-dim); box-shadow:inset 0 0 0 1px var(--gold); }
+.pattern-index { font-family:'Cormorant Garamond',serif; font-size:13px; color:var(--gold); letter-spacing:0.14em; }
+.pattern-name { font-family:'Cormorant Garamond',serif; font-size:21px; font-weight:400; color:var(--white); line-height:1.28; }
+.pattern-tag { font-size:11px; letter-spacing:0.1em; text-transform:uppercase; color:var(--slate); margin-top:auto; }
+
+/* explanation panel */
+.explain-panel { border:1px solid var(--gold-border); border-top:none; padding:36px 32px; background:rgba(201,168,76,0.05); display:none; }
+.explain-panel.active { display:block; }
+.explain-label { font-size:10px; font-weight:500; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold); margin-bottom:14px; }
+.explain-title { font-family:'Cormorant Garamond',serif; font-size:24px; color:var(--white); margin-bottom:16px; }
+.explain-body { font-size:14px; line-height:1.8; color:rgba(245,240,232,0.78); max-width:640px; }
+.explain-body strong { color:var(--white); font-weight:500; }
+
+.input-block { margin-top:36px; padding-top:28px; border-top:1px solid var(--line); }
+.input-label { font-size:11px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:var(--paper); margin-bottom:12px; display:block; }
+.input-field { width:100%; background:transparent; border:1px solid var(--line); color:var(--paper); font-family:'DM Sans',sans-serif; font-size:14px; font-weight:300; padding:14px 16px; outline:none; transition:border-color 0.15s; }
+.input-field::placeholder { color:rgba(245,240,232,0.32); }
+.input-field:focus { border-color:var(--gold); }
+
+.btn-row { display:flex; gap:16px; margin-top:24px; align-items:center; }
+.btn-submit { background:var(--gold); color:var(--charcoal); border:none; padding:15px 40px; font-family:'DM Sans',sans-serif; font-size:12px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; cursor:pointer; }
+.btn-submit:disabled { background:rgba(201,168,76,0.25); color:rgba(11,15,20,0.5); cursor:not-allowed; }
+.btn-submit:not(:disabled):hover { background:var(--gold-light); }
+.btn-reset { background:transparent; border:1px solid var(--line); color:var(--slate); padding:14px 24px; font-family:'DM Sans',sans-serif; font-size:12px; letter-spacing:0.1em; text-transform:uppercase; cursor:pointer; }
+.btn-reset:hover { border-color:var(--slate); color:var(--paper); }
+
+/* Phase 2: boundary screen */
+#boundary { padding-top:8px; }
+.boundary-frame { border:1px solid var(--gold-border); padding:52px 44px; max-width:680px; }
+.boundary-mark { width:34px; height:2px; background:var(--gold); margin-bottom:28px; }
+.boundary-eyebrow { font-size:10px; font-weight:500; letter-spacing:0.22em; text-transform:uppercase; color:var(--gold); margin-bottom:22px; }
+.boundary-text { font-family:'Cormorant Garamond',serif; font-size:clamp(21px,2.6vw,28px); font-weight:400; line-height:1.5; color:var(--white); margin-bottom:36px; }
+.boundary-meta { font-size:13px; line-height:1.8; color:rgba(245,240,232,0.55); margin-bottom:36px; border-left:2px solid var(--line); padding-left:18px; }
+.boundary-meta span { color:var(--gold); }
+.btn-cta { display:inline-block; background:var(--gold); color:var(--charcoal) !important; border:none; padding:18px 34px; font-family:'DM Sans',sans-serif; font-size:12px; font-weight:500; letter-spacing:0.1em; text-transform:uppercase; text-decoration:none !important; cursor:pointer; max-width:420px; line-height:1.5; text-align:left; }
+.btn-cta:hover { background:var(--gold-light) !important; }
+.boundary-restart { display:block; margin-top:22px; background:transparent; border:none; color:var(--slate); font-size:12px; letter-spacing:0.06em; cursor:pointer; text-decoration:underline; font-family:'DM Sans',sans-serif; }
+.boundary-restart:hover { color:var(--paper); }
+
+.progress-track { display:flex; gap:6px; margin-bottom:40px; }
+.progress-seg { height:2px; flex:1; background:var(--line); }
+.progress-seg.done { background:var(--gold); }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo brand-lockup">
+    <span class="brand-primary">The Density Group</span>
+    <span class="brand-secondary">Capability Formation Advisory</span>
+    <span class="brand-tertiary">Founded by Temidayo Afonja</span>
+  </a>
+  <div class="nav-links">
+    <a href="framework.html">Capability Formation</a>
+    <a href="work.html">Advisory</a>
+    <a href="executive-briefing.html">Executive Briefing</a>
+    <a href="case-studies.html">Evidence</a>
+    <a href="speaking.html">Speaking</a>
+    <a href="about.html">The Firm</a>
+    <a href="for-professionals.html">For Professionals</a>
+    <a href="executive-briefing.html#inquiry" class="nav-cta">Bring a Consequential Decision</a>
+  </div>
+</nav>
+<div class="nav-spacer"></div>
+
+<main class="tool">
+
+  <div class="progress-track" aria-hidden="true">
+    <div class="progress-seg" id="seg1"></div>
+    <div class="progress-seg" id="seg2"></div>
+  </div>
+
+  <!-- SCREEN 1: RECOGNITION -->
+  <section id="recognition" class="screen active">
+    <div class="eyebrow">The Capability Recognition Tool</div>
+    <h1 class="tool-title">Three patterns quietly stop capability growth.</h1>
+    <p class="tool-sub">Select the one that describes your last 90 days. Not the one that flatters you &mdash; the one you recognize when you stop performing for the room.</p>
+
+    <div class="pattern-grid" id="patternGrid">
+      <button type="button" class="pattern-block" data-pattern="1">
+        <span class="pattern-index">Pattern 01</span>
+        <span class="pattern-name">Repeating, Not Stretching</span>
+        <span class="pattern-tag">Competence without expansion</span>
+      </button>
+      <button type="button" class="pattern-block" data-pattern="2">
+        <span class="pattern-index">Pattern 02</span>
+        <span class="pattern-name">Indispensable, But Mainly Here</span>
+        <span class="pattern-tag">Value that does not travel</span>
+      </button>
+      <button type="button" class="pattern-block" data-pattern="3">
+        <span class="pattern-index">Pattern 03</span>
+        <span class="pattern-name">Responsibility &gt; Capability</span>
+        <span class="pattern-tag">Scope ahead of proof</span>
+      </button>
+    </div>
+
+    <div class="explain-panel" id="panel1" data-panel="1">
+      <div class="explain-label">Pattern 01 &middot; Repeating, Not Stretching</div>
+      <div class="explain-title">You are doing this year what you did last year, well.</div>
+      <p class="explain-body">The work is competent, the feedback is positive, and the edges of what you can actually do have not moved in twelve months or more. <strong>You are performing, not building.</strong> This pattern is easy to miss because it feels like stability. It shows up when you can predict the outcome of your work before you start it &mdash; when nothing on your desk requires you to find out whether you can do something you have not already proven you can do.</p>
+    </div>
+
+    <div class="explain-panel" id="panel2" data-panel="2">
+      <div class="explain-label">Pattern 02 &middot; Indispensable, But Mainly Here</div>
+      <div class="explain-title">You are essential inside these walls, and nowhere else.</div>
+      <p class="explain-body">Your organization would struggle to replace you. That fact has quietly become the whole plan. <strong>The specific combination of context, relationships, and institutional memory that makes you valuable does not exist as a job title anywhere else.</strong> This pattern shows up as comfort that resists examination &mdash; you have not tested what you are worth outside this building because the answer, honestly, is not obviously in your favor yet.</p>
+    </div>
+
+    <div class="explain-panel" id="panel3" data-panel="3">
+      <div class="explain-label">Pattern 03 &middot; Responsibility &gt; Capability</div>
+      <div class="explain-title">Your scope grew faster than your proof did.</div>
+      <p class="explain-body">Title, headcount, or mandate has expanded, and it reads as progress. But responsibility is what you were given; capability is what you have actually demonstrated under scrutiny. <strong>The gap between the two is the part nobody puts in the promotion announcement.</strong> This pattern shows up as a quiet, specific anxiety &mdash; a sense that you are one hard question away from being asked to prove something you have not yet had to prove.</p>
+
+    </div>
+
+  </section>
+
+  <!-- SCREEN 2: BOUNDARY -->
+  <section id="boundary" class="screen">
+    <div class="eyebrow">The Capability Recognition Tool</div>
+    <div class="boundary-frame">
+      <div class="boundary-mark"></div>
+      <div class="boundary-eyebrow">Recognition Complete &middot; Diagnosis Withheld</div>
+      <p class="boundary-text">Recognition is complete. Diagnosis requires evidence. We can clarify what this pattern suggests examining, but an uncalibrated algorithmic answer would not be responsible.</p>
+      <p class="boundary-meta">Pattern identified: <span id="boundaryPattern">&mdash;</span><br>Example submitted: <span id="boundaryExample">&mdash;</span></p>
+      <a href="/for-professionals.html" class="btn-cta">To evaluate this evidence, a calibrated 90-day read is required. Submit this example in the live Capability Position Read.</a>
+      <button type="button" class="boundary-restart" id="restartBtn">Start over</button>
+    </div>
+  </section>
+
+</main>
+
+<script>
+(function () {
+  var PATTERNS = {
+    '1': 'Repeating, Not Stretching',
+    '2': 'Indispensable, But Mainly Here',
+    '3': 'Responsibility > Capability'
+  };
+  var grid = document.getElementById('patternGrid');
+  var blocks = grid.querySelectorAll('.pattern-block');
+  var panels = document.querySelectorAll('.explain-panel[data-panel]');
+  var seg1 = document.getElementById('seg1');
+  var seg2 = document.getElementById('seg2');
+  var selectedPattern = null;
+
+  function selectPattern(id) {
+    selectedPattern = id;
+    blocks.forEach(function (b) {
+      b.classList.toggle('selected', b.getAttribute('data-pattern') === id);
+    });
+    panels.forEach(function (p) {
+      var match = p.getAttribute('data-panel') === id;
+      p.classList.toggle('active', match);
+    });
+    seg1.classList.add('done');
+    var active = document.querySelector('.explain-panel.active');
+    if (active) active.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    setupInputForPanel(id);
+  }
+
+  function setupInputForPanel(id) {
+    var panel = document.querySelector('.explain-panel[data-panel="' + id + '"]');
+    if (!panel) return;
+    if (panel.querySelector('.input-block')) {
+      wireInput(panel);
+      return;
+    }
+    var block = document.createElement('div');
+    block.className = 'input-block';
+    block.innerHTML =
+      '<label class="input-label">Enter one specific example of this pattern from your last 90 days</label>' +
+      '<input type="text" class="input-field" placeholder="Be specific: a decision, a meeting, a task you avoided or coasted through.">' +
+      '<div class="btn-row"><button type="button" class="btn-submit" disabled>Submit</button></div>';
+    panel.appendChild(block);
+    wireInput(panel);
+  }
+
+  function wireInput(panel) {
+    var input = panel.querySelector('.input-field');
+    var btn = panel.querySelector('.btn-submit');
+    if (input.dataset.wired) return;
+    input.dataset.wired = '1';
+    input.addEventListener('input', function () {
+      btn.disabled = input.value.trim().length === 0;
+    });
+    input.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' && !btn.disabled) submit(input.value.trim());
+    });
+    btn.addEventListener('click', function () {
+      submit(input.value.trim());
+    });
+  }
+
+  function submit(example) {
+    if (!example) return;
+    document.getElementById('boundaryPattern').textContent = PATTERNS[selectedPattern] || '—';
+    document.getElementById('boundaryExample').textContent = '“' + example + '”';
+    document.getElementById('recognition').classList.remove('active');
+    document.getElementById('boundary').classList.add('active');
+    seg2.classList.add('done');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (window.plausible) plausible('Recognition Tool Submitted', { props: { pattern: PATTERNS[selectedPattern] || '' } });
+  }
+
+  blocks.forEach(function (b) {
+    b.addEventListener('click', function () {
+      selectPattern(b.getAttribute('data-pattern'));
+    });
+  });
+
+  document.getElementById('restartBtn').addEventListener('click', function () {
+    selectedPattern = null;
+    blocks.forEach(function (b) { b.classList.remove('selected'); });
+    panels.forEach(function (p) { p.classList.remove('active'); });
+    document.getElementById('boundary').classList.remove('active');
+    document.getElementById('recognition').classList.add('active');
+    seg1.classList.remove('done');
+    seg2.classList.remove('done');
+    document.querySelectorAll('.input-field').forEach(function (i) { i.value = ''; });
+    document.querySelectorAll('.btn-submit').forEach(function (b) { b.disabled = true; });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+})();
+</script>
+
+<script src="/nav.js"></script>
+</body>
+</html>
