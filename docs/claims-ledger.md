@@ -68,17 +68,21 @@ estimation model (replacement-cost multiplier, headcount, assumptions) is not re
 
 | Field | Value |
 |---|---|
-| Exact public wording | "zero critical talent loss" |
-| Pages | `index.html` (feature paragraph), `case-studies.html` (results block, "Zero") |
-| Source | Enterprise operating role |
-| Date range | Not stated publicly |
-| Verified | **Unverifiable as written** |
-| Approved public wording | Recommend "no critical-role departures recorded during the period" |
+| Exact public wording | "no critical-role departures recorded during the period" |
+| Pages | `index.html` (feature paragraph), `case-studies.html` (results block, "None") |
+| Source | Enterprise operating role, post-acquisition integration |
+| Date range | The initial 90-day integration period |
+| Verified | **Resolved.** Rewritten by operator ruling, August 2026 |
+| Approved public wording | "no critical-role departures recorded during the period" |
 
-**Why this is flagged.** "Zero" is an absolute. It asserts a complete absence across an
-unstated population and period. Unless the operator can name the population and window, the
-softer wording states the same fact without claiming universality. This is the single
-highest-exposure claim on the site for an enterprise buyer or counsel.
+**History.** Published as "zero critical talent loss" until August 2026. "Zero" was an
+absolute: it asserted a complete absence across an unstated population and period, which made
+it the highest-exposure claim on the site. The approved wording states the same fact and scopes
+it to what was recorded, without claiming universality.
+
+On `case-studies.html` the claim sits in a two-value results grid, so it renders as the value
+"None" above the label "Critical-role departures recorded during the period". Read together
+that carries the approved wording in the same shape the original used.
 
 ---
 
@@ -166,3 +170,4 @@ Recorded so they are not reintroduced.
 | "Organizational Masterwork", "Advanced Executive Access" | Removed from `book.html` |
 | "$249 / $149 / $99" workshop pricing | Retired. Current price is $500 |
 | "$10,000 Executive Briefing fee" | Never published. See the pricing decision in the implementation report |
+| "zero critical talent loss" | Replaced August 2026 with "no critical-role departures recorded during the period" |

@@ -187,22 +187,29 @@ Not addressed. What is true today:
   internal-looking page on a public URL. Flagged for a decision on whether it should ship at
   all.
 
-### 1.10 Finding that needs a decision before counsel drafts
+### 1.10 Resolved: marketing consent now gates the marketing sequence
 
-**Marketing consent does not gate the marketing sequence.**
+**Previously:** `subscribeToKit()` was called after every completion where a valid email was
+supplied, regardless of the `marketingConsent` checkbox. A visitor who deliberately left the box
+unchecked was still enrolled in an automated email sequence, and the stored record showed that
+they declined. This was the highest-exposure privacy finding on the site.
 
-On `diagnostic.html`, `subscribeToKit()` is called after every completion where a valid email
-was supplied. It is not conditional on the `marketingConsent` checkbox. The checkbox state is
-faithfully recorded in the research payload as `marketing_consent`, but it does not affect
-whether the address is enrolled in the Kit sequence. All three completion paths behave this way
-(the gated completion, the skip-gate path, and the paper fast path).
+**Now:** gated by operator ruling, August 2026. `subscribeToKit()` takes an explicit consent
+argument and fails closed, so anything other than an affirmative opt-in returns without
+enrolling. Each of the three completion paths passes the checkbox belonging to the screen it
+submits. Verified in a browser across all three paths and both checkbox states: unchecked never
+enrols, checked enrols exactly once.
 
-The consequence is that a visitor who deliberately leaves the marketing box unchecked is still
-enrolled in an automated email sequence, and the stored record shows that they declined.
+The research payload continues to record the checkbox state either way, so a declined opt-in
+remains visible in the record.
 
-This is a code behaviour, not a wording problem, so it is not fixed by anything counsel writes.
-It has not been changed here because it alters live lead capture and is an operator decision.
-It is the highest-exposure privacy finding on the site.
+A fourth marketing checkbox on the pre-start screen (`marketingConsentPregate`) was never read
+by any code. It was removed at the same time rather than wired up, so the site no longer
+presents a control that implies a consent it does not act on.
+
+**Still for counsel.** Enrolment is now consent-gated, but no consent timestamp or policy
+version is recorded alongside the flag, and the six other forms still collect an email address
+with no explicit opt-in.
 
 ### 1.11 Contact details
 
@@ -318,18 +325,17 @@ no confidentiality obligation.
 
 Ordered by exposure, highest first.
 
-1. **Marketing consent does not gate Kit enrolment** (1.10). A code change, an operator
-   decision, and it should be settled before any policy is drafted around it.
-2. **Limitation of liability** (2.8). Currently absent.
-3. **Undisclosed service providers**, in particular Anthropic (1.5).
-4. **Retention periods** (1.6). None stated, none enforced.
-5. **Rights and requests** (1.8). None named.
-6. **Enterprise engagement disclaimer** (2.10). Newly material as of this build.
-7. **Export token in a query string** (1.9). A technical fix, pending counsel's view on the
+1. **Limitation of liability** (2.8). Currently absent. Now the highest-exposure item, since
+   the consent gating in 1.10 has been resolved.
+2. **Undisclosed service providers**, in particular Anthropic (1.5).
+3. **Retention periods** (1.6). None stated, none enforced.
+4. **Rights and requests** (1.8). None named.
+5. **Enterprise engagement disclaimer** (2.10). Newly material as of this build.
+6. **Export token in a query string** (1.9). A technical fix, pending counsel's view on the
    sensitivity of the data behind it.
-8. **Google Fonts and EU visitor IPs** (1.5). Depends on whether EU visitors are in scope.
-9. **Workshop cancellation, recording, and conduct terms** (2.2, 2.3).
-10. **Digital-product licence and redistribution** (2.4, 2.5).
+7. **Google Fonts and EU visitor IPs** (1.5). Depends on whether EU visitors are in scope.
+8. **Workshop cancellation, recording, and conduct terms** (2.2, 2.3).
+9. **Digital-product licence and redistribution** (2.4, 2.5).
 
 ---
 
@@ -337,7 +343,7 @@ Ordered by exposure, highest first.
 
 - No new privacy or terms language was written or published.
 - The two "not been reviewed by legal counsel" notices were left in place.
-- The Kit consent-gating behaviour was left unchanged.
+- The Kit consent-gating behaviour was changed by operator ruling. See 1.10.
 - Google Fonts were left externally hosted.
 - `dashboard.html` was left published.
 

@@ -122,13 +122,15 @@ so this one receives less traffic than before.
   an explicit boolean in the payload
 - **Privacy link** — Yes
 
-**Consent construction: best on the site, but it does not gate.** The two-checkbox design is
-the model the other forms should follow. However, `subscribeToKit()` is called after every
-completion with a valid email and is **not conditional on the marketing checkbox**. All three
-completion paths behave this way: the gated completion, the skip-gate path, and the paper fast
-path. A visitor who leaves the box unchecked is still enrolled in the Kit sequence, and the
-stored record shows that they declined. See finding 6 below and
-`docs/legal-review-required.md` section 1.10.
+**Consent construction: best on the site, and it now gates.** The two-checkbox design is the
+model the other forms should follow. As of August 2026 `subscribeToKit()` requires an explicit
+opt-in and fails closed, so an unchecked box means no Kit enrolment on any of the three
+completion paths. The research payload still records the checkbox state either way, so a
+declined opt-in remains visible in the record.
+
+A third marketing checkbox previously sat on the pre-start screen (`marketingConsentPregate`).
+It was never read by any code, so it collected clicks and did nothing. It was removed rather
+than wired up, because the operative consent is the one on the screen the visitor submits.
 
 ---
 
@@ -170,11 +172,10 @@ stored record shows that they declined. See finding 6 below and
    not currently governed by any published policy.
 5. **No form currently records a consent timestamp or the policy version in force.** If
    consent is later required, that record becomes necessary.
-6. **The marketing consent checkbox on `diagnostic.html` does not gate the Kit sequence.**
-   Enrolment fires on any valid email regardless of the checkbox, while the stored record
-   preserves the visitor's "no". This is the highest-exposure finding in this audit. It is a
-   code behaviour, not a wording problem, and it has not been changed here because it alters
-   live lead capture. Operator decision.
+6. **Resolved.** The marketing checkbox on `diagnostic.html` did not gate the Kit sequence:
+   enrolment fired on any valid email while the record preserved the visitor's "no". Gated by
+   operator ruling in August 2026, verified in a browser across all three completion paths and
+   both checkbox states. The dead pre-start checkbox was removed at the same time.
 7. **Diagnostic answers are sent to a third-party AI provider.** `organizational-diagnostic.html`
    and `ai-capability-readiness.html` both post item-level answers and organizational context
    to the Anthropic API through a Netlify function, to generate the narrative read. Neither
