@@ -4,18 +4,18 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="color-scheme" content="dark" />
-<title>Organizational Capability Formation Scan · The Density Group</title>
-<meta name="description" content="Seventeen questions, fifteen scored, place your organization on density and optionality, measure alumni capital alongside them, and name what your position is costing." />
+<title>The Density Group | Organizational Capability Formation Scan</title>
+<meta name="description" content="A free organizational Scan from The Density Group. Seventeen questions, fifteen scored, place your organization on density and optionality, measure alumni capital alongside them, and name what your position is costing." />
 <link rel="canonical" href="https://temidayoafonja.com/organizational-diagnostic" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Temidayo Afonja" />
 <meta property="og:url" content="https://temidayoafonja.com/organizational-diagnostic" />
-<meta property="og:title" content="Organizational Capability Formation Scan" />
-<meta property="og:description" content="A live read of whether your organization builds capability that lasts or quietly leaks it. Density and optionality set the position. Alumni capital is measured alongside them." />
+<meta property="og:title" content="The Density Group | Organizational Capability Formation Scan" />
+<meta property="og:description" content="A free organizational Scan from The Density Group. Seventeen questions, fifteen scored, place your organization on density and optionality, measure alumni capital alongside them, and name what your position is costing." />
 <meta property="og:image" content="https://temidayoafonja.com/og-default.png" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Organizational Capability Formation Scan" />
-<meta name="twitter:description" content="A live read of whether your organization builds capability that lasts or quietly leaks it. Density and optionality set the position. Alumni capital is measured alongside them." />
+<meta name="twitter:title" content="The Density Group | Organizational Capability Formation Scan" />
+<meta name="twitter:description" content="A free organizational Scan from The Density Group. Seventeen questions, fifteen scored, place your organization on density and optionality, measure alumni capital alongside them, and name what your position is costing." />
 <meta name="twitter:image" content="https://temidayoafonja.com/og-default.png" />
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -357,8 +357,8 @@
 
   <div id="form">
     <div class="pillar">
-      <div class="pillar-head"><h2>Density</h2><span class="tag">Intensity, not tenure.</span></div>
-      <p class="pillar-sub">How quickly people build sound judgment through consequential work, feedback, and increasing ownership.</p>
+      <div class="pillar-head"><h2>Density</h2><span class="tag">Judgment formed through consequential work.</span></div>
+      <p class="pillar-sub">Density is not workload, tenure, or hardship. It reflects the development and repeated application of judgment under meaningful conditions.</p>
       <div class="q">
         <div class="question-number">01</div>
         <p class="q-text">How are consequential decision rights typically distributed?</p>
@@ -448,8 +448,8 @@
         <p class="q-text">If priorities changed next quarter, how much of your critical talent could be redeployed into different high-priority work without extensive retraining?</p>
         <div class="opts">
           <div class="opt"><input type="radio" name="o4" id="o4_0" value="Very few." data-weight="1"><label for="o4_0">Very few.</label></div>
-          <div class="opt"><input type="radio" name="o4" id="o4_1" value="Some &mdash; a handful of people, mainly in adjacent work." data-weight="2"><label for="o4_1">Some &mdash; a handful of people, mainly in adjacent work.</label></div>
-          <div class="opt"><input type="radio" name="o4" id="o4_2" value="A substantial share &mdash; most of the team could plausibly move." data-weight="3"><label for="o4_2">A substantial share &mdash; most of the team could plausibly move.</label></div>
+          <div class="opt"><input type="radio" name="o4" id="o4_1" value="Some. A handful of people, mainly in adjacent work." data-weight="2"><label for="o4_1">Some. A handful of people, mainly in adjacent work.</label></div>
+          <div class="opt"><input type="radio" name="o4" id="o4_2" value="A substantial share. Most of the team could plausibly move." data-weight="3"><label for="o4_2">A substantial share. Most of the team could plausibly move.</label></div>
           <div class="opt opt-nv"><input type="radio" name="o4" id="o4_nv" value="Not enough visibility to answer"><label for="o4_nv">Not enough visibility to answer</label></div>
         </div>
       </div>
@@ -591,7 +591,7 @@ const ORG_FORMSPREE_ENDPOINT = "https://formspree.io/f/mjgndvkp";
 
 const PILLARS = [
   {
-    key:"density", name:"Density", tag:"Intensity, not tenure.",
+    key:"density", name:"Density", tag:"Judgment formed through consequential work.",
     sub:"How quickly people build sound judgment through consequential work, feedback, and increasing ownership.",
     questions:[
       {id:"d1", text:"How are consequential decision rights typically distributed?"},
@@ -886,11 +886,11 @@ function renderResult(d){
     <div class="card">
       <p class="levels-note" style="margin:0 0 18px;">This is a directional leadership read rather than a full organizational assessment. It identifies a pattern worth testing against workforce data and against the experience of other leaders in the same scope.</p>
       ${d.mechanical ? `
-        <p class="qd-eyebrow">Based on your answers</p>
+        <p class="qd-eyebrow">Based on one leadership perspective and the scope you selected</p>
         <div class="qd-name" style="font-size:28px;">${esc(d.label)}</div>
         ${d.sub ? `<p class="mechanical-sub">${esc(d.sub)}</p>` : ""}
       ` : `
-        <p class="qd-eyebrow">Based on your answers, the pattern most closely resembles</p>
+        <p class="qd-eyebrow">Based on one leadership perspective and the scope you selected, this preliminary read suggests</p>
         <div class="qd-name">${esc(d.quadrant)}</div>
         <p class="headline">${esc(d.headline)}</p>
       `}
@@ -913,7 +913,7 @@ function renderResult(d){
     </div>
     <div class="scope-note">
       <p>This self-read provides an initial perspective based on one leader's responses. It can surface questions worth investigating, but it does not replace a multi-source organizational engagement.</p>
-      <a href="work.html#get-in-touch">Discuss an Organizational Decision &rarr;</a>
+      <a href="work.html#get-in-touch">Bring a Consequential Decision &rarr;</a>
     </div>
     <div class="result-actions">
       <button class="makereport" id="reportBtn">Create the report</button>
@@ -1041,11 +1041,11 @@ function buildReport(d, org){
     <p class="rd-frame">This is a directional leadership read rather than a full organizational assessment. It identifies a pattern worth testing against workforce data and against the experience of other leaders in the same scope.</p>
     <p class="rd-frame">A direct read of whether this organization builds capability that lasts or quietly leaks it, measured across density, optionality, and alumni capital, with the cost of its current position named.</p>
     ${d.mechanical ? `
-      <p class="rd-quad-label">Based on your answers</p>
+      <p class="rd-quad-label">Based on one leadership perspective and the scope you selected</p>
       <p class="rd-quad" style="font-size:24px;">${esc(d.label)}</p>
       ${d.sub ? `<p class="rd-mechanical-sub">${esc(d.sub)}</p>` : ""}
     ` : `
-      <p class="rd-quad-label">Based on your answers, the pattern most closely resembles</p>
+      <p class="rd-quad-label">Based on one leadership perspective and the scope you selected, this preliminary read suggests</p>
       <p class="rd-quad">${esc(d.quadrant)}</p>
       <p class="rd-headline">${esc(d.headline)}</p>
     `}

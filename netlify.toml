@@ -10,6 +10,14 @@
   to = "/organizational-diagnostic.html"
   status = 200
 
+# Canonical route is /organizational-diagnostic. Send the .html form there so a
+# single URL accumulates search authority.
+[[redirects]]
+  from = "/organizational-diagnostic.html"
+  to = "/organizational-diagnostic"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/ai-capability-readiness"
   to = "/ai-capability-readiness.html"
@@ -34,14 +42,17 @@
   status = 301
   force = true
 
+# Point at the canonical /organizational-diagnostic, not the .html form. Sending
+# these at the .html form produced a two-hop chain, because the rule above now
+# 301s the .html form onward to the canonical route.
 [[redirects]]
   from = "/institutional-diagnostic"
-  to = "/organizational-diagnostic.html"
+  to = "/organizational-diagnostic"
   status = 301
 
 [[redirects]]
   from = "/institutional-diagnostic.html"
-  to = "/organizational-diagnostic.html"
+  to = "/organizational-diagnostic"
   status = 301
 
 # Retired 2026-07-29: the in-page org-leader mode moved to /organizational-diagnostic.
@@ -78,6 +89,14 @@
   for = "/*"
   [headers.values]
     X-Content-Type-Options = "nosniff"
+
+# Netlify matches header rules against the requested path, not the file a 200
+# rewrite ultimately serves. The canonical route is /diagnostic, so the policy
+# has to be declared for both paths or it never applies on the canonical URL.
+[[headers]]
+  for = "/diagnostic"
+  [headers.values]
+    Content-Security-Policy = "script-src 'self' 'unsafe-inline' https://formspree.io https://plausible.io"
 
 [[headers]]
   for = "/diagnostic.html"
