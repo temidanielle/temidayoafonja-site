@@ -23,24 +23,20 @@
   to = "/ai-capability-readiness.html"
   status = 200
 
-# principles.html now carries only a pointer to the Framework page, which holds
-# the six governing principles. Redirect permanently so old inbound links keep
-# working and search authority consolidates on /framework. The file is kept in
-# the repository for now so the redirect can be tested; it can be deleted once
-# the redirect is confirmed in production. force = true is required while the
-# file still exists, because Netlify serves a matching static file ahead of a
-# redirect rule unless the rule is forced.
+# The six governing principles live on the Framework page. principles.html was
+# deleted in August 2026, so there is no longer a static file to intercept these
+# rules and force = true is no longer required. Keep the rules permanently: old
+# inbound links still point at /principles, and search authority consolidates on
+# /framework.
 [[redirects]]
   from = "/principles"
   to = "/framework"
   status = 301
-  force = true
 
 [[redirects]]
   from = "/principles.html"
   to = "/framework"
   status = 301
-  force = true
 
 # Point at the canonical /organizational-diagnostic, not the .html form. Sending
 # these at the .html form produced a two-hop chain, because the rule above now
