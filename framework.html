@@ -106,7 +106,9 @@
 .fw-separate p { font-size: 15px; line-height: 1.8; color: var(--cream-70); }
 /* Institutional Resilience: informed by the two readings, never produced by a
    linear sequence. Rendered as a third band beneath the two cards. */
-.fw-informs { margin-top: 24px; border: 1px solid var(--line-warm); background: #fff; padding: 30px 34px; }
+/* 16px, tighter than the 24px grid gap, so the summary reads as a
+   continuation of the two cards rather than a separate section. */
+.fw-informs { margin-top: 16px; border: 1px solid var(--line-warm); background: #fff; padding: 30px 34px; }
 .fw-informs-flow { display: grid; grid-template-columns: 1fr auto 1fr; gap: 20px; align-items: stretch; margin-bottom: 22px; }
 .fw-informs-leg { border: 1px solid var(--line-warm); background: var(--cream); padding: 16px 18px; }
 .fw-informs-leg strong { display: block; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--rust); margin-bottom: 7px; }
@@ -175,6 +177,7 @@
 .warm-section .fw-arch-card.accent { border-color: rgba(201,168,76,0.55); background: rgba(201,168,76,0.10); }
 .warm-section .fw-arch-label { color: var(--rust); }
 .warm-section .fw-arch-title { color: var(--navy); }
+.warm-section .fw-arch-head p { color: var(--muted-warm); }
 .warm-section .fw-arch-text { color: var(--muted-warm); }
 .warm-section .fwm-head,
 .warm-section .fwm-rowhead { color: var(--muted-warm); }
