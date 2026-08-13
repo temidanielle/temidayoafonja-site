@@ -46,10 +46,14 @@
 .legal-updated { font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--slate); }
 .legal-body { padding: 64px 48px 88px; position: relative; z-index: 1; }
 .legal-inner { max-width: 820px; margin: 0 auto; }
-.warm-section .legal-body p { color: var(--muted-warm); }
+.legal-body.warm-section p { color: var(--muted-warm); }
 .warm-section .legal-flag { background: rgba(193,68,14,0.07); border-left-color: var(--rust); }
 .warm-section .legal-flag p { color: var(--navy); }
-.warm-section .legal-body a { color: var(--rust); border-bottom-color: rgba(193,68,14,0.45); }
+.legal-body.warm-section a { color: var(--rust); border-bottom-color: rgba(193,68,14,0.45); }
+.legal-body h2 { font-family: 'Cormorant Garamond', serif; font-size: 27px; font-weight: 400; color: var(--white); margin: 44px 0 14px; line-height: 1.25; }
+.legal-body.warm-section h2 { color: var(--navy); }
+.legal-body p strong { color: var(--cream); font-weight: 500; }
+.legal-body.warm-section p strong { color: var(--navy); }
 .legal-body p { font-size: 17px; line-height: 1.9; color: var(--cream-70); margin-bottom: 24px; }
 .legal-body a { color: var(--gold); text-decoration: none; border-bottom: 1px solid var(--gold-border); }
 .legal-body a:hover { color: var(--gold-light); }
@@ -88,13 +92,64 @@
 
 <div class="legal-body warm-section">
  <div class="legal-inner">
-  <p>The Density Group LLC collects information through inquiry forms and diagnostic instruments on this website.</p>
-  <p>Information submitted through inquiry forms is used only to respond to your inquiry and to determine whether a conversation would be useful.</p>
-  <p>Diagnostic responses are processed in your browser. Your individual responses are not stored on our servers unless you choose to submit them.</p>
-  <p>This site uses Plausible Analytics, which does not use cookies and does not collect personal data.</p>
-  <p>For questions about your data, contact <a href="mailto:temidayo@thedensitygroup.com">temidayo@thedensitygroup.com</a>.</p>
+
+  <p><strong>Last updated: 12 August 2026</strong></p>
+
+  <p>This policy explains what The Density Group LLC collects through temidayoafonja.com, why, who it is shared with, how long it is kept, and what you can ask us to do about it. It describes what the site actually does rather than what a template would say.</p>
+
+  <h2>Who we are</h2>
+  <p>The Density Group LLC operates this website and is the controller of the information described below. For any question about this policy or your information, contact <a href="mailto:temidayo@thedensitygroup.com">temidayo@thedensitygroup.com</a>.</p>
+
+  <h2>What we collect</h2>
+  <p><strong>Information you give us.</strong> Our forms collect your name and email address, and depending on the form, your organization, your role, and a free-text description of a decision or situation you want to discuss. The enterprise inquiry forms ask you not to include confidential employee information, personal data, medical information, compensation information, performance records, or sensitive internal documents.</p>
+  <p><strong>Diagnostic and Scan responses.</strong> If you complete one of our instruments, we store your individual answers, not only your totals, together with the computed scores and placement. On the individual Diagnostic we also store the industry, role level, years of experience, and organization size you select. On the organizational instruments we store the sector, headcount, mission exposure, recent change, and AI change pressure you select.</p>
+  <p><strong>Technical information.</strong> Our service providers receive your IP address and browser user agent in the ordinary course of serving the site. In addition, the Organizational Scan applies a rate limit to its narrative generation, and that rate limiter records your IP address with a request count. We are changing this so it records an irreversible value rather than the address itself.</p>
+  <p><strong>Consent choices.</strong> Where you tick a consent box, we record whether you ticked it.</p>
+
+  <h2>Why we use it, and our lawful basis</h2>
+  <p>We use your information for four purposes. The lawful basis in brackets applies to visitors protected by the UK or EU General Data Protection Regulation.</p>
+  <p><strong>To respond to your inquiry and decide whether a conversation would be useful.</strong> [Legitimate interests: responding to a request you initiated.]</p>
+  <p><strong>To deliver your diagnostic or Scan result.</strong> [Performance of a service you requested.]</p>
+  <p><strong>To send you occasional updates, only if you asked for them.</strong> If you do not tick the marketing box, you are not added to any mailing list. [Consent, which you may withdraw at any time.]</p>
+  <p><strong>To build anonymized aggregate research on capability formation.</strong> The individual Diagnostic asks separately for research consent. [Consent.]</p>
+  <p>We also keep records for the ordinary security and integrity of the site, including the rate limit described above. [Legitimate interests: preventing abuse.]</p>
+
+  <h2>Who we share it with</h2>
+  <p>We do not sell your information and we do not share it for advertising. We use the following service providers, each of which processes information on our behalf.</p>
+  <p><strong>Formspree</strong> receives every field you submit through a form, so that we are notified of it.<br>
+  <strong>Netlify</strong> hosts the site, runs its serverless functions, and stores the durable records described below.<br>
+  <strong>Anthropic</strong> receives the answers and organizational context you provide to the Organizational Scan and the AI Capability Readiness instrument, in order to generate the written narrative of your result. It does not receive your name or email address for that purpose.<br>
+  <strong>Kit</strong>, formerly ConvertKit, receives your email address, name, organization, and result summary only if you gave marketing consent.<br>
+  <strong>Plausible Analytics</strong> provides aggregate site analytics. It does not use cookies and does not collect personal data.<br>
+  <strong>Google Fonts</strong> serves the typefaces used across the site and receives your IP address when your browser requests them.</p>
+  <p>Purchases of books, the Field Kit, and workshop places are completed on Amazon, Gumroad, and Maven respectively, under their own privacy policies. <strong>We never receive or store your payment card details.</strong></p>
+
+  <h2>International transfers</h2>
+  <p>We operate from the United States and our service providers are primarily US-based. If you are in the United Kingdom or the European Economic Area, your information will be transferred to the United States. Where that transfer requires a safeguard, we rely on the transfer mechanisms offered by the relevant provider, such as standard contractual clauses. We are confirming the specific mechanism for each provider with counsel.</p>
+
+  <h2>How long we keep it</h2>
+  <p>Inquiry submissions are kept for as long as needed to respond and to maintain a record of the conversation. Diagnostic and Scan records are currently kept indefinitely; we are setting defined retention periods and will state them here once fixed. Marketing records are kept until you unsubscribe. If a diagnostic result cannot be sent because of a network problem, the pending record is stored in your own browser and expires automatically after seven days.</p>
+
+  <h2>Cookies</h2>
+  <p>This site sets no cookies of its own. Our analytics provider is cookieless. We do not use advertising trackers, session recording, or a tag manager.</p>
+
+  <h2>Your rights</h2>
+  <p>Depending on where you live, you may have the right to ask us for a copy of your information, to correct it, to delete it, to restrict or object to how we use it, to receive it in a portable format, and to withdraw consent you previously gave. You will never receive different service for exercising a right.</p>
+  <p>To make a request, email <a href="mailto:temidayo@thedensitygroup.com">temidayo@thedensitygroup.com</a>. We will acknowledge your request and respond within the period required by the law that applies to you, and we may need to ask you for information to confirm who you are.</p>
+  <p>You can unsubscribe from marketing email at any time using the link in any message we send you.</p>
+  <p>If you are in the UK or EEA and you are not satisfied with our response, you may complain to your national supervisory authority.</p>
+
+  <h2>How we protect it</h2>
+  <p>The site is served over HTTPS. Access credentials for our service providers are held as environment variables and never appear in the site's source. Access to stored records is limited to the firm.</p>
+
+  <h2>Children</h2>
+  <p>This site is not directed to children, and our workshops require participants to be 18 or older. We do not knowingly collect information from anyone under 18.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If we change this policy we will update the date at the top of the page.</p>
+
   <div class="legal-flag">
-    <p>This policy will be updated as the firm's data practices develop. It has not been reviewed by legal counsel.</p>
+    <p>Questions about your information, or a request about your rights, can be sent to <a href="mailto:temidayo@thedensitygroup.com">temidayo@thedensitygroup.com</a>.</p>
   </div>
  </div>
 </div>
