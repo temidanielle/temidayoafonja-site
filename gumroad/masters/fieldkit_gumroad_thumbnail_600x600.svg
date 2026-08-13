@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600"><defs>
+      <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+        <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#0F2347" flood-opacity="0.20"/>
+      </filter>
+      <filter id="lift" x="-40%" y="-40%" width="180%" height="180%">
+        <feDropShadow dx="0" dy="16" stdDeviation="22" flood-color="#0A1830" flood-opacity="0.34"/>
+      </filter>
+      
+    </defs><rect x="0" y="0" width="600" height="600" fill="#0F2347"/><g transform="translate(72.00,111.43)"><rect x="0.00" y="0.00" width="25.11" height="25.11" rx="0" fill="none" stroke="#C9A84C" stroke-width="2.7621" opacity="1"/><rect x="36.89" y="0.00" width="25.11" height="25.11" rx="0" fill="#C1440E" stroke="none" stroke-width="0" opacity="1"/><rect x="0.00" y="36.89" width="25.11" height="25.11" rx="0" fill="none" stroke="#C9A84C" stroke-width="2.7621" opacity="1"/><rect x="36.89" y="36.89" width="25.11" height="25.11" rx="0" fill="none" stroke="#C9A84C" stroke-width="2.7621" opacity="1"/></g>
+<text x="72.00" y="262.00" text-anchor="start" fill="#FBF8F2" style="font-family:'Cormorant Garamond';font-size:53.5px;font-weight:600;">IS YOUR JOB STILL</text>
+<text x="72.00" y="316.57" text-anchor="start" fill="#FBF8F2" style="font-family:'Cormorant Garamond';font-size:53.5px;font-weight:600;">BUILDING YOU?</text>
+<rect x="72.00" y="350.57" width="74.00" height="4.00" rx="0" fill="#C1440E" stroke="none" stroke-width="0" opacity="1"/>
+<text x="72.00" y="402.57" text-anchor="start" fill="#C9A84C" style="font-family:'DM Sans';font-size:16.5px;font-weight:700;letter-spacing:2.8px;">CAREER POSITION ASSESSMENT</text>
+<text x="72.00" y="442.57" text-anchor="start" fill="#C9C7C0" style="font-family:'DM Sans';font-size:13px;font-weight:500;letter-spacing:1.6px;">THE CAPABILITY FORMATION FIELD KIT</text></svg>
