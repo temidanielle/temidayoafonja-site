@@ -85,6 +85,33 @@ only the local browser's storage, so it exposes no server-side data, but it is d
 
 ## 4. Server-side durable storage: Netlify Blobs
 
+> **Correction, August 13 2026. These four stores are empty and always have been.**
+>
+> Netlify was not injecting a Blobs context into this site's functions, so every `getStore()` call
+> failed with `MissingBlobsEnvironmentError`. All seven functions that use Blobs were affected. The
+> three capture functions caught the error and returned a 500; the rate limiter caught it and
+> returned "not limited", which is why nothing ever looked broken.
+>
+> The table below therefore describes **intended** behaviour, not observed behaviour. This document
+> originally asserted it as fact, having been written from the code rather than from the running
+> system. That was a real limitation of the method, and it is recorded here rather than quietly
+> edited away.
+>
+> **Found by calling the export endpoints against production**, which this environment cannot
+> reach; the operator ran them. The fix passes `siteID` and `token` to `getStore()` explicitly via
+> `netlify/lib/blobs.js`. **Until a deploy carries that fix and the two variables are set, no
+> durable record exists for any submission.**
+>
+> **What this means for the privacy analysis.** Everything downstream of this section that treats
+> the four stores as holding personal data is, as of today, describing a risk that has not
+> materialised. There is nothing to retain, export, or delete. Once the fix ships the table below
+> becomes accurate, and the retention question becomes live for the first time. Counsel should read
+> it that way, and setting retention periods before the stores start filling is now the cheaper
+> order of operations.
+>
+> **Formspree is unaffected.** All nine forms post to Formspree independently, so every submission
+> was still delivered by email. The lost artefact is the structured, exportable record, not the lead.
+
 Four stores.
 
 | Store | Written by | One record per | Contents | Retention |

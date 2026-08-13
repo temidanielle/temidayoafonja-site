@@ -30,7 +30,7 @@ Keep the prose tight and economical.`;
 // dependency. Fails open on any store error so a legitimate read is never blocked.
 // 25/hour lets a full leadership team run the instrument from one shared corporate
 // IP in a sitting, while capping abuse at roughly fifty cents an hour per IP.
-const { getStore } = require("@netlify/blobs");
+const { blobStore, blobsConfigured } = require("../lib/blobs");
 const crypto = require("crypto");
 const RATE_MAX = 25;
 const RATE_WINDOW_MS = 60 * 60 * 1000;
@@ -57,7 +57,7 @@ function rateKey(ip) {
 async function isRateLimited(ip) {
   if (!ip) return false;
   try {
-    const store = getStore("diagnose-rate");
+    const store = blobStore("diagnose-rate");
     const key = rateKey(ip);
     const now = Date.now();
     const rec = await store.get(key, { type: "json" });
@@ -68,6 +68,11 @@ async function isRateLimited(ip) {
     await store.setJSON(key, { windowStart, count });
     return count > RATE_MAX;
   } catch (e) {
+    // Fail open: a storage problem must not take the endpoint down. It does have
+    // to be visible, though. This catch returned false silently for months while
+    // Blobs was unconfigured, which meant the rate limit was off and nothing
+    // anywhere said so. Logging it is what turns that into something findable.
+    console.error("blobs diagnose-rate failed, rate limiting is OFF. manual config present:", blobsConfigured(), e);
     return false;
   }
 }

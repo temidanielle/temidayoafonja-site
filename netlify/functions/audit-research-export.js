@@ -4,7 +4,7 @@
 // The token must equal the RESEARCH_EXPORT_TOKEN environment variable (set in Netlify).
 // Returns every stored submission as CSV (opens straight into Excel / Google Sheets).
 // Add &format=json to get raw JSON instead.
-const { getStore } = require("@netlify/blobs");
+const { blobStore, blobsConfigured } = require("../lib/blobs");
 
 function csvCell(v) {
   if (v === null || v === undefined) return "";
@@ -62,17 +62,18 @@ exports.handler = async (event) => {
   // Used to remove test records after verification.
   if (q.delete) {
     try {
-      const store = getStore("audit-research");
+      const store = blobStore("audit-research");
       await store.delete(q.delete);
       return { statusCode: 200, headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ok: true, deleted: q.delete }) };
     } catch (e) {
+      console.error("blobs audit-research delete failed. manual config present:", blobsConfigured(), e);
       return { statusCode: 500, body: "delete_failed" };
     }
   }
 
   let records = [];
   try {
-    const store = getStore("audit-research");
+    const store = blobStore("audit-research");
     const listing = await store.list();
     const blobs = (listing && listing.blobs) || [];
     for (const b of blobs) {
@@ -80,6 +81,7 @@ exports.handler = async (event) => {
       if (rec) { rec._key = b.key; records.push(rec); }
     }
   } catch (e) {
+    console.error("blobs audit-research list failed. manual config present:", blobsConfigured(), e);
     return { statusCode: 500, body: "export_failed" };
   }
 
