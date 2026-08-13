@@ -57,6 +57,13 @@
   }
   .wrap{max-width:760px;margin:0 auto;padding:44px 24px 96px;}
 
+  /* This page does not link /styles.css, so the shared accessibility rules do
+     not reach it and are restated here. See docs/accessibility-qa.md. */
+  main{display:block;}
+  main:focus{outline:none;}
+  .skip-link{position:fixed;top:-80px;left:12px;z-index:10002;background:var(--gold);color:var(--navy);font-family:"DM Sans",sans-serif;font-size:14px;font-weight:500;letter-spacing:0.04em;padding:11px 20px;text-decoration:none;transition:top .15s ease;}
+  .skip-link:focus{top:12px;}
+
   .brand{display:flex;align-items:center;gap:14px;margin:0 0 24px;}
   .brand-link{display:flex;align-items:center;gap:14px;text-decoration:none;}
   .mark{width:46px;height:46px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:4px;flex:0 0 auto;}
@@ -65,7 +72,8 @@
   .wordmark{font-family:"Montserrat",sans-serif;font-weight:600;font-size:14px;letter-spacing:0.28em;text-transform:uppercase;color:var(--gold);line-height:1.2;}
   .brand-text{display:flex;flex-direction:column;justify-content:center;}
   .brand-secondary{font-size:9.5px;letter-spacing:0.1em;color:var(--sand-mute);margin-top:4px;}
-  .brand-tertiary{font-size:8.5px;letter-spacing:0.06em;color:var(--sand-mute);opacity:0.75;margin-top:1px;}
+  /* Opacity raised from 0.75 to 0.9, matching the sitewide fix. */
+  .brand-tertiary{font-size:8.5px;letter-spacing:0.06em;color:var(--sand-mute);opacity:0.9;margin-top:1px;}
   h1{font-family:"Cormorant Garamond",serif;font-weight:600;color:var(--sand);font-size:clamp(34px,7vw,52px);line-height:1.04;margin:0 0 16px;letter-spacing:0.01em;}
   .lede{font-size:18px;max-width:54ch;color:var(--sand-dim);margin:0 0 8px;}
 
@@ -80,7 +88,10 @@
   .live-tally.complete{border:1px solid var(--gold);}
   .live-tally-label{font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-soft);font-weight:500;flex:0 0 auto;}
   .live-tally-row{display:flex;gap:18px;flex-wrap:wrap;flex:1 1 auto;}
-  .live-tally-item{display:flex;align-items:center;gap:8px;opacity:.6;transition:opacity .3s;}
+  /* Resting opacity raised from .6 to .8. At .6 the dimension names blended to
+     #7785a0 on the panel ground, 3.34:1. At .8 they reach 4.90:1, and the
+     answered state still steps up to full opacity. WCAG 1.4.3. */
+  .live-tally-item{display:flex;align-items:center;gap:8px;opacity:.8;transition:opacity .3s;}
   .live-tally-item.answered{opacity:1;}
   .live-tally-name{font-size:12px;color:var(--sand-mute);letter-spacing:.02em;white-space:nowrap;}
   .live-tally-bar-wrap{width:64px;height:8px;background:rgba(0,0,0,.3);border:1px solid rgba(255,255,255,.05);border-radius:4px;overflow:hidden;flex:0 0 auto;}
@@ -266,7 +277,10 @@
     .matrix-axis-top{margin-left:52px;}
     .axis-caption{margin-left:52px;}
     .report-doc{padding:28px 22px;}
-    .live-tally-label{font-size:13px;}
+    /* flex:0 0 auto kept this label at its max-content width, so at 320 CSS px
+       the panel pushed the page to 354px and forced two-directional scrolling.
+       A full-width basis lets the text wrap instead. WCAG 1.4.10 Reflow. */
+    .live-tally-label{flex:1 1 100%;min-width:0;font-size:13px;}
     .live-tally-name{font-size:15px;}
     .live-tally-bar-wrap{height:10px;}
     .live-tally-val{font-size:15px;}
@@ -287,6 +301,8 @@
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<main id="main" tabindex="-1">
 <div class="wrap">
   <div class="brand">
     <a class="brand-link" href="/" aria-label="The Density Group home">
@@ -331,7 +347,7 @@
 
   <div class="orgfield">
     <label for="orgName">Organization name (optional)</label>
-    <input type="text" id="orgName" placeholder="Used to title the report" />
+    <input type="text" id="orgName" placeholder="Used to title the report" autocomplete="organization" />
   </div>
 
   <div class="scope q">
@@ -564,6 +580,8 @@
 
   <div class="report-doc" id="report"></div>
 </div>
+
+</main>
 
 <script>
 /* ─────────────────────────────────────────────────────────────────────────
@@ -1235,10 +1253,10 @@ updateLiveTally();
 
 <!-- Legal links (Phase 3, section 9). These two pages are standalone and carry no
      shared site footer, so a minimal strip is used rather than the full footer. -->
-<div style="border-top:1px solid rgba(139,160,180,0.18);margin-top:48px;padding:26px 24px;text-align:center;font-size:12px;color:rgba(245,240,232,0.45);line-height:1.9;">
+<div role="contentinfo" style="border-top:1px solid rgba(139,160,180,0.18);margin-top:48px;padding:26px 24px;text-align:center;font-size:12px;color:rgba(245,240,232,0.56);line-height:1.9;">
   &copy; 2026 The Density Group LLC &middot; Capability Formation
-  &middot; <a href="privacy.html" style="color:rgba(245,240,232,0.45);text-decoration:none;">Privacy</a>
-  &middot; <a href="terms.html" style="color:rgba(245,240,232,0.45);text-decoration:none;">Terms</a>
+  &middot; <a href="privacy.html" style="color:rgba(245,240,232,0.56);text-decoration:underline;text-underline-offset:3px;">Privacy</a>
+  &middot; <a href="terms.html" style="color:rgba(245,240,232,0.56);text-decoration:underline;text-underline-offset:3px;">Terms</a>
 </div>
 </body>
 </html>

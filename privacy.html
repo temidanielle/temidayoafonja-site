@@ -46,7 +46,9 @@
 .legal-body.warm-section p { color: var(--muted-warm); }
 .warm-section .legal-flag { background: rgba(193,68,14,0.07); border-left-color: var(--rust); }
 .warm-section .legal-flag p { color: var(--navy); }
-.legal-body.warm-section a { color: var(--rust); border-bottom-color: rgba(193,68,14,0.45); }
+/* --rust-ink, not --rust: inside .legal-flag the ground is the rust-tinted
+   #f1e4d9, where brand rust measures 4.10:1. --rust-ink measures 4.52:1. */
+.legal-body.warm-section a { color: var(--rust-ink); border-bottom-color: rgba(193,68,14,0.45); }
 .legal-body h2 { font-family: 'Cormorant Garamond', serif; font-size: 27px; font-weight: 400; color: var(--white); margin: 44px 0 14px; line-height: 1.25; }
 .legal-body.warm-section h2 { color: var(--navy); }
 .legal-body p strong { color: var(--cream); font-weight: 500; }
@@ -63,6 +65,7 @@
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
 <nav>
   <a href="index.html" class="nav-logo brand-lockup">
@@ -81,6 +84,7 @@
     <li><a href="executive-briefing.html#inquiry" class="nav-cta">Bring a Consequential Decision</a></li>
   </ul>
 </nav>
+<main id="main" tabindex="-1">
 
 <div class="legal-hero">
   <h1 class="legal-title">Privacy Policy</h1>
@@ -150,6 +154,8 @@
   </div>
  </div>
 </div>
+
+</main>
 
 <footer>
   <div>

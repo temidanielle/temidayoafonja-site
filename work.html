@@ -81,6 +81,9 @@
 .route h2 { font-size: clamp(24px, 3vw, 36px); line-height: 1.12; margin-bottom: 15px; }
 .route.org h2 { color: #fff; }
 .route .r-sub { font-family: Georgia, serif; font-size: 18px; color: var(--muted); margin-bottom: 14px; }
+/* .route.org sets a navy ground, where --muted (the warm register's grey) is
+   2.68:1. White at 0.78 alpha is 9.93:1 and matches the card's other copy. */
+.route.org .r-sub { color: rgba(255,255,255,.78); }
 .route .r-position-line { font-style: italic; font-size: 13px; color: var(--rust); margin-bottom: 16px; }
 .route p { font-size: 16px; max-width: 650px; }
 .route.org p { color: rgba(255,255,255,.72); }
@@ -178,6 +181,7 @@
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
 <nav>
   <a href="index.html" class="nav-logo brand-lockup">
@@ -196,6 +200,7 @@
     <li><a href="executive-briefing.html#inquiry" class="nav-cta">Bring a Consequential Decision</a></li>
   </ul>
 </nav>
+<main id="main" tabindex="-1">
 
 <div class="lean-page">
 
@@ -369,6 +374,8 @@
 </section>
 
 </div>
+
+</main>
 
 <footer>
   <div>

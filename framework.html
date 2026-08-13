@@ -131,7 +131,9 @@
 .pillars-section { padding: 0 48px 100px; position: relative; z-index: 1; }
 .pillars-inner { max-width: 1160px; margin: 0 auto; }
 .pillar-block { display: grid; grid-template-columns: 1fr 2fr; gap: 64px; padding: 64px 0; border-top: 1px solid var(--slate-dim); align-items: start; }
-.pillar-num { font-family: 'Cormorant Garamond', serif; font-size: 80px; font-weight: 300; line-height: 1; color: var(--gold); opacity: 0.2; margin-bottom: -8px; }
+/* Opacity raised from 0.2 to 0.6. At 0.2 these numerals blended to #343e48 on
+   the navy, 1.42:1, against the 3:1 that large text needs. 0.6 gives 3.35:1. */
+.pillar-num { font-family: 'Cormorant Garamond', serif; font-size: 80px; font-weight: 300; line-height: 1; color: var(--gold); opacity: 0.6; margin-bottom: -8px; }
 .pillar-name { font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 300; color: var(--white); margin-bottom: 4px; }
 .pillar-subtitle { font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 24px; }
 .pillar-desc { font-size: 17px; line-height: 1.85; color: var(--cream-70); margin-bottom: 20px; }
@@ -172,14 +174,16 @@
 .warm-section.fw-architecture { padding-top: 80px; }
 .warm-section .fw-arch-card { border-color: var(--line-warm); background: #fff; }
 .warm-section .fw-arch-card.accent { border-color: rgba(201,168,76,0.55); background: rgba(201,168,76,0.10); }
-.warm-section .fw-arch-label { color: var(--rust); }
+/* --rust-ink, not --rust: on the warm band these 11px uppercase labels measure
+   4.24:1 in brand rust, and 4.66:1 in --rust-ink. WCAG 1.4.3. */
+.warm-section .fw-arch-label { color: var(--rust-ink); }
 .warm-section .fw-arch-title { color: var(--navy); }
 .warm-section .fw-arch-head p { color: var(--muted-warm); }
 .warm-section .fw-arch-text { color: var(--muted-warm); }
 .warm-section .fwm-head,
 .warm-section .fwm-rowhead { color: var(--muted-warm); }
 .warm-section .fw-separate { border-top-color: rgba(201,168,76,0.45); }
-.warm-section .fw-separate strong { color: var(--rust); }
+.warm-section .fw-separate strong { color: var(--rust-ink); }
 .warm-section .fw-separate p { color: var(--muted-warm); }
 
 .warm-section.matrix-section { background: var(--cream); }
@@ -227,6 +231,7 @@
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
 <nav>
   <a href="index.html" class="nav-logo brand-lockup">
@@ -245,6 +250,7 @@
     <li><a href="executive-briefing.html#inquiry" class="nav-cta">Bring a Consequential Decision</a></li>
   </ul>
 </nav>
+<main id="main" tabindex="-1">
 
 <div class="page-hero">
   <span class="eyebrow fade-up delay-1">The Capability Formation Framework</span>
@@ -475,6 +481,8 @@
     </div>
   </div>
 </section>
+
+</main>
 
 <footer>
   <div>

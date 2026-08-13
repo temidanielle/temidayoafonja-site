@@ -60,7 +60,9 @@
 .topics-grid { display: flex; flex-direction: column; gap: 2px; }
 .topic-item { display: grid; grid-template-columns: 80px 1fr auto; gap: 48px; padding: 40px 0; border-bottom: 1px solid var(--slate-dim); align-items: start; transition: background 0.2s; }
 .topic-item:hover { background: var(--gold-dim); padding-left: 16px; padding-right: 16px; margin: 0 -16px; }
-.topic-num { font-family: 'Cormorant Garamond', serif; font-size: 13px; letter-spacing: 0.2em; color: var(--gold); opacity: 0.5; padding-top: 6px; }
+/* Opacity raised from 0.5 to 0.8. At 0.5 these blended to #6c664a on the navy,
+   2.69:1. At 0.8 they reach 4.80:1, clearing AA for 13px text. */
+.topic-num { font-family: 'Cormorant Garamond', serif; font-size: 13px; letter-spacing: 0.2em; color: var(--gold); opacity: 0.8; padding-top: 6px; }
 .topic-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(22px, 2.5vw, 30px); font-weight: 300; color: var(--white); margin-bottom: 12px; line-height: 1.2; }
 .topic-desc { font-size: 15px; line-height: 1.8; color: var(--cream-70); max-width: 560px; }
 .topic-format { font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--slate); padding-top: 8px; white-space: nowrap; }
@@ -98,7 +100,8 @@ textarea.inquiry-input { min-height: 100px; resize: vertical; }
 .warm-section .briefings-link { color: var(--rust); border-bottom-color: rgba(193,68,14,0.4); }
 .warm-section .briefings-link:hover { color: #8f3309; }
 .warm-section .briefings-contexts { border-color: rgba(201,168,76,0.55); background: rgba(201,168,76,0.10); }
-.warm-section .briefings-contexts-label { color: var(--rust); }
+/* --rust-ink, not --rust: brand rust is 4.24:1 on the warm band. WCAG 1.4.3. */
+.warm-section .briefings-contexts-label { color: var(--rust-ink); }
 .warm-section .context-list li { color: var(--muted-warm); }
 .warm-section .context-list li:before { color: var(--rust); }
 
@@ -127,6 +130,7 @@ textarea.inquiry-input { min-height: 100px; resize: vertical; }
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
 <nav>
   <a href="index.html" class="nav-logo brand-lockup">
@@ -145,6 +149,7 @@ textarea.inquiry-input { min-height: 100px; resize: vertical; }
     <li><a href="executive-briefing.html#inquiry" class="nav-cta">Bring a Consequential Decision</a></li>
   </ul>
 </nav>
+<main id="main" tabindex="-1">
 
 <div class="page-hero">
   <span class="eyebrow fade-up delay-1">Speaking Engagements</span>
@@ -289,6 +294,8 @@ textarea.inquiry-input { min-height: 100px; resize: vertical; }
     </div>
   </div>
 </div>
+
+</main>
 
 <footer>
   <div>

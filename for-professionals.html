@@ -88,6 +88,10 @@
 .ll-copy h2 { font-size: clamp(21px, 2.4vw, 27px); line-height: 1.15; color: #fff; margin-bottom: 10px; }
 .ll-copy p { font-size: 14.5px; line-height: 1.6; color: rgba(255,255,255,.74); max-width: 620px; }
 .ll-cta { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; background: var(--rust); color: #fff; font-weight: 700; font-size: 14px; padding: 15px 26px; border-radius: 4px; text-decoration: none; }
+/* ".lean-page a { color: inherit }" is (0,1,1) and was outranking the (0,1,0)
+   rule above, so this button rendered --ink on rust: 3.09:1. Restated at
+   (0,1,1) so the intended white wins, which measures 5.12:1. */
+a.ll-cta { color: #fff; }
 
 /* What is included */
 .a-section { padding: 48px 0; }
@@ -135,7 +139,8 @@
 .a-ladder { padding: 56px 0 72px; border-top: 1px solid var(--line); }
 .a-ladder-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-top: 24px; }
 .a-ladder-card { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 26px; }
-.a-ladder-card .tier { font-size: 11px; text-transform: uppercase; letter-spacing: .12em; font-weight: 800; color: var(--gold); margin-bottom: 12px; }
+/* --gold-ink, not --gold: brand gold is 2.28:1 on the white card. WCAG 1.4.3. */
+.a-ladder-card .tier { font-size: 11px; text-transform: uppercase; letter-spacing: .12em; font-weight: 800; color: var(--gold-ink); margin-bottom: 12px; }
 .a-ladder-card h3 { font-size: 19px; line-height: 1.2; margin-bottom: 8px; }
 .a-ladder-card p { font-size: 13.5px; color: var(--muted); margin-bottom: 14px; }
 .a-ladder-card a { font-size: 13px; font-weight: 800; color: var(--navy); border-bottom: 1px solid var(--gold); padding-bottom: 2px; }
@@ -152,6 +157,7 @@
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <nav>
   <a href="index.html" class="nav-logo brand-lockup">
     <span class="brand-primary">The Density Group</span>
@@ -169,6 +175,7 @@
     <li><a href="executive-briefing.html#inquiry" class="nav-cta">Bring a Consequential Decision</a></li>
   </ul>
 </nav>
+<main id="main" tabindex="-1">
 
 <div class="lean-page">
 
@@ -314,6 +321,8 @@
 </section>
 
 </div>
+
+</main>
 
 <footer>
   <div>
