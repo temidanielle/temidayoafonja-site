@@ -3,7 +3,7 @@
 // Access:  /.netlify/functions/org-diagnostic-export?token=YOUR_TOKEN
 //          add &format=json for JSON, or &delete=THE_KEY to remove a test record.
 // Uses the same RESEARCH_EXPORT_TOKEN env var as the other exports.
-const { getStore } = require("@netlify/blobs");
+const { blobStore, blobsConfigured } = require("../lib/blobs");
 
 function csvCell(v) {
   if (v === null || v === undefined) return "";
@@ -25,7 +25,7 @@ exports.handler = async (event) => {
     return { statusCode: 401, body: "Unauthorized" };
   }
 
-  const store = getStore("org-diagnostic-leads");
+  const store = blobStore("org-diagnostic-leads");
 
   if (q.delete) {
     try { await store.delete(q.delete); return { statusCode: 200, headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ok: true, deleted: q.delete }) }; }
@@ -40,6 +40,7 @@ exports.handler = async (event) => {
       if (rec) { rec.key = b.key; records.push(rec); }
     }
   } catch (e) {
+    console.error("blobs org-diagnostic-leads list failed. manual config present:", blobsConfigured(), e);
     return { statusCode: 500, body: "export_failed" };
   }
 
