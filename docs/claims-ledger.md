@@ -102,31 +102,33 @@ provided the survey instrument and sample are on file.
 
 ---
 
-## 6. Eighteen years
+## 6. Career span
+
+**Resolved August 2026. This section previously read "Eighteen years" and recorded the claim
+as awaiting an operator decision. Both resolutions were taken, so the entry is rewritten to
+match what is published.**
 
 | Field | Value |
 |---|---|
-| Exact public wording | "eighteen years" |
+| Exact public wording | "nearly two decades" |
 | Pages | `index.html`, `work.html`, `about.html`, `framework.html`, `speaking.html`, `case-studies.html`, `book.html` |
 | Source | Founder career history |
-| Date range | Implied 2008 to 2026 |
-| Verified | **Needs operator decision** |
-| Approved public wording | See note |
+| Date range | 2008 to 2026 |
+| Verified | **Resolved by operator decision, August 2026** |
+| Approved public wording | "nearly two decades" |
 
-**Why this is flagged.** The visible career timeline on `about.html` begins at **2011**, which
-reads as 15 years, not 18. The founder biography on the same page describes earlier work
-("began in IT Audit and federal governance work, moved through cybersecurity workforce
-strategy before the field had its current name"), which is presumably the 2008 to 2011 period,
-but that period is not shown in the timeline.
+**What was flagged, and how it was closed.** The claim was published as "eighteen years" while
+the visible career timeline on `about.html` began at 2011, which reads as fifteen. Both
+resolutions offered in the August 11 instruction were taken:
 
-Two clean resolutions, both offered in the August 11 instruction:
+1. The wording changed to "nearly two decades" on every page. Verified by search: "eighteen
+   years" appears nowhere in the repository, in any casing.
+2. A 2008 to 2011 entry was added to the timeline, using content supplied by the operator:
+   "Tax, financial analysis, oil and gas, and a Deloitte leadership internship. Completed an
+   M.S. in Management Information Systems." No role or organization was invented.
 
-1. Add a 2008 to 2011 entry to the timeline. **Not done here**, because the specific roles and
-   organizations are not recorded in this repository and must not be invented.
-2. Change the wording to "nearly two decades" across all seven pages.
-
-Left as published pending operator input. This is the second decision requiring operator
-approval, alongside the Executive Briefing fee.
+The timeline now runs 2008 to 2011, 2011 to 2021, 2021 to 2022, 2022 to 2026, and 2026, which
+is consistent with the published wording.
 
 ---
 
