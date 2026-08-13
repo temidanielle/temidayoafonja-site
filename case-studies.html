@@ -95,7 +95,8 @@
 .cs-principle { display: grid; grid-template-columns: 40px 1fr; gap: 18px; padding: 18px 0; border-bottom: 1px solid var(--line); }
 .cs-principle:first-child { padding-top: 0; }
 .cs-principle:last-child { border-bottom: 0; padding-bottom: 0; }
-.cs-principle .n { font-family: Georgia, serif; font-size: 22px; color: var(--gold); }
+/* --gold-ink, not --gold: brand gold is 2.28:1 on white. WCAG 1.4.3. */
+.cs-principle .n { font-family: Georgia, serif; font-size: 22px; color: var(--gold-ink); }
 .cs-principle h3 { font-size: 19px; margin-bottom: 5px; }
 .cs-principle p { font-size: 14px; color: var(--muted); margin: 0; }
 
@@ -127,6 +128,7 @@
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
 <nav>
   <a href="index.html" class="nav-logo brand-lockup">
@@ -145,6 +147,7 @@
     <li><a href="executive-briefing.html#inquiry" class="nav-cta">Bring a Consequential Decision</a></li>
   </ul>
 </nav>
+<main id="main" tabindex="-1">
 
 <div class="lean-page">
 
@@ -330,6 +333,8 @@
 </section>
 
 </div>
+
+</main>
 
 <footer>
   <div>

@@ -155,7 +155,9 @@
 /* Selected operating evidence */
 .h-feature-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
 .h-feature { background: var(--paper); border: 1px solid var(--line); border-radius: 12px; padding: 26px; }
-.h-feature .n { font-family: Georgia, serif; font-size: 19px; color: var(--gold); margin-bottom: 22px; }
+/* --gold-ink, not --gold: these numerals sit on the paper ground, where brand
+   gold measures 2.24:1. --gold-ink measures 5.16:1. WCAG 1.4.3. */
+.h-feature .n { font-family: Georgia, serif; font-size: 19px; color: var(--gold-ink); margin-bottom: 22px; }
 .h-feature h3 { font-size: 21px; line-height: 1.15; margin-bottom: 8px; }
 .h-feature p { font-size: 13.5px; color: var(--muted); margin: 0; }
 .h-feature .metric { color: var(--rust); font-weight: 700; }
@@ -195,6 +197,7 @@
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 <nav>
   <a href="index.html" class="nav-logo brand-lockup" title="Home">
     <span class="brand-primary">The Density Group</span>
@@ -212,6 +215,7 @@
     <li><a href="executive-briefing.html#inquiry" class="nav-cta">Bring a Consequential Decision</a></li>
   </ul>
 </nav>
+<main id="main" tabindex="-1">
 
 <div class="lean-page">
 
@@ -386,6 +390,8 @@
 </section>
 
 </div>
+
+</main>
 
 <footer>
   <div>

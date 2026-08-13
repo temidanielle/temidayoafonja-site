@@ -275,6 +275,7 @@
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
 <nav>
   <a href="index.html" class="nav-logo brand-lockup">
@@ -294,6 +295,7 @@
   </ul>
 </nav>
 <div class="nav-spacer"></div>
+<main id="main" tabindex="-1">
 
 <div class="wrap">
   <div class="brand">
@@ -326,7 +328,10 @@
   <!-- SCREEN 1: INTAKE -->
   <section class="screen" id="s-intake">
     <p class="eyebrow">Context · Not scored</p>
-    <h1 style="font-size:clamp(28px,5vw,40px);">Before the read</h1>
+    <!-- h2, not h1: the page carries one h1 on the opening screen. The screens
+         are siblings in the DOM, so a second h1 here gave the document two.
+         The inline size keeps the rendered heading unchanged. -->
+    <h2 style="font-size:clamp(28px,5vw,40px);">Before the read</h2>
     <p class="intake-note">These inputs never move your quadrant. Three of them set the clock on the read: a weak position under heavy change pressure is in more danger than the same position with time. Two more are optional and sharpen the read if you give them.</p>
 
     <div class="field">
@@ -422,6 +427,8 @@
   <!-- REPORT -->
   <div class="report-doc" id="report"></div>
 </div>
+
+</main>
 
 <footer>
   <div>

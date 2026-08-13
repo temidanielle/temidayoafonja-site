@@ -51,7 +51,10 @@ body { background:#0f2347 !important; color:#f5f0e8 !important; font-family:'DM 
 body a { color:var(--gold) !important; }
 body .nav-links a { color:#f5f0e8 !important; }
 body .nav-links a:hover, body .nav-links a:focus { color:#c9a84c !important; }
-body .nav-cta { color:#0f2347 !important; background:#c9a84c !important; }
+/* "body .nav-links a" above is (0,1,2) and was outranking the (0,1,1) rule
+   here, so the gold CTA rendered cream on gold: 2.01:1. Restated at (0,2,2)
+   so the intended navy wins, which measures 6.80:1. WCAG 1.4.3. */
+body .nav-links a.nav-cta { color:#0f2347 !important; background:#c9a84c !important; }
 body .btn-primary { background:#c9a84c !important; color:#0f2347 !important; }
 body .btn-gate { background:#c9a84c !important; color:#0f2347 !important; }
 body .btn-next { background:#c9a84c; color:#0f2347; }
@@ -95,7 +98,10 @@ nav { position:fixed; top:0; left:0; right:0; z-index:9999; padding:18px 40px; d
 .brand-lockup { display:flex; flex-direction:column; justify-content:center; text-decoration:none; line-height:1.2; font-family:'DM Sans',sans-serif; }
 .brand-primary { font-size:14px; font-weight:700; letter-spacing:0.05em; color:#f5f0e8; text-transform:uppercase; }
 .brand-secondary { font-size:9.5px; letter-spacing:0.03em; color:#8ba0b4; margin-top:3px; }
-.brand-tertiary { font-size:8.5px; letter-spacing:0.03em; color:#8ba0b4; opacity:0.75; margin-top:1px; }
+/* Opacity raised from 0.75 to 0.9. ".nav-logo span" in styles.css renders this
+   line gold, which at 0.75 measured 4.40:1 on the navy. 0.9 gives 5.76:1 gold
+   and 4.97:1 slate, so it clears AA whichever colour wins. */
+.brand-tertiary { font-size:8.5px; letter-spacing:0.03em; color:#8ba0b4; opacity:0.9; margin-top:1px; }
 .nav-links { display:flex; gap:28px; align-items:center; }
 .nav-links a { font-size:11px; font-weight:500; letter-spacing:0.14em; text-transform:uppercase; color:#f5f0e8; text-decoration:none; transition:color 0.2s; }
 .nav-links a:hover { color:#c9a84c; }
@@ -118,7 +124,9 @@ nav { position:fixed; top:0; left:0; right:0; z-index:9999; padding:18px 40px; d
 .pillar-principle-label { color:var(--gold); text-decoration:underline; text-underline-offset:3px; text-decoration-thickness:1px; font-size:11px; font-weight:500; letter-spacing:0.16em; text-transform:uppercase; display:flex; align-items:center; padding:12px 4px; transition:color 0.2s ease; }
 .pillar-principle-label:hover { color:var(--gold-light) !important; text-decoration-thickness:2px; }
 .pillar-principle-label:focus-visible { outline:2px solid var(--gold); outline-offset:3px; }
-.pillars-caption { width:100%; max-width:540px; margin:0 auto 44px; font-size:12px; line-height:1.65; color:rgba(245,240,232,0.5); text-align:center; }
+/* Alpha raised from 0.5 to 0.56. Sand at 0.5 over the navy blends to #838b98,
+   4.46:1, fractionally under AA. 0.56 gives 5.09:1. */
+.pillars-caption { width:100%; max-width:540px; margin:0 auto 44px; font-size:12px; line-height:1.65; color:rgba(245,240,232,0.56); text-align:center; }
 .rationale-block { width:100%; max-width:720px; margin-bottom:44px; }
 .rationale-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:2px; margin-bottom:2px; }
 .rationale-card { border:1px solid rgba(139,160,180,0.2); padding:24px 20px; text-align:left; }
@@ -131,7 +139,8 @@ nav { position:fixed; top:0; left:0; right:0; z-index:9999; padding:18px 40px; d
 .rationale-who-item::before { content:'→'; color:#c9a84c; font-size:11px; }
 .btn-primary { background:#c9a84c; color:#0f2347; border:none; padding:16px 48px; font-family:'DM Sans',sans-serif; font-size:13px; font-weight:500; letter-spacing:0.12em; text-transform:uppercase; cursor:pointer; transition:all 0.2s ease; }
 .btn-primary:hover { background:#e8c97a; transform:translateY(-1px); }
-.intro-meta { margin-top:20px; font-size:14px; color:rgba(245,240,232,0.5); }
+/* Alpha raised from 0.5 to 0.56, same reason as .pillars-caption above. */
+.intro-meta { margin-top:20px; font-size:14px; color:rgba(245,240,232,0.56); }
 
 #pregate { flex-direction:column; align-items:center; justify-content:center; padding:80px 24px; text-align:center; }
 .gate-eyebrow { font-size:11px; letter-spacing:0.2em; text-transform:uppercase; color:#c9a84c; margin-bottom:24px; font-weight:500; }
@@ -310,6 +319,7 @@ nav { padding:16px 20px; }
 
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
 <nav>
   <a href="index.html" class="nav-logo brand-lockup">
@@ -329,6 +339,7 @@ nav { padding:16px 20px; }
   </div>
 </nav>
 <div class="nav-spacer"></div>
+<main id="main" tabindex="-1">
 
 <!-- SCREEN 1: INTRO -->
 
@@ -392,8 +403,8 @@ nav { padding:16px 20px; }
     <h2 class="gate-headline">Where should we send your results?</h2>
     <p class="gate-sub">Enter your details now and your preliminary reading will be waiting the moment you finish. Takes about 10 minutes. Results are yours to keep.</p>
     <div class="gate-form" style="text-align:left;">
-      <input type="text" class="gate-input" id="pregateName" placeholder="Your name">
-      <input type="email" class="gate-input" id="pregateEmail" placeholder="Email address *">
+      <input type="text" class="gate-input" id="pregateName" placeholder="Your name" aria-label="Your name" autocomplete="name">
+      <input type="email" class="gate-input" id="pregateEmail" placeholder="Email address *" aria-label="Email address (required)" autocomplete="email">
       <button class="btn-gate" id="submitPregateBtn">Continue &rarr;</button>
     </div>
     <button class="btn-skip" id="skipPregateBtn">Skip and start without saving results</button>
@@ -489,8 +500,8 @@ nav { padding:16px 20px; }
     <p class="gate-sub" style="text-align:center;margin:0 auto 36px;">Rate each statement from 1 (strongly disagree) to 5 (strongly agree), scored against the last ninety days of your actual working life, not the life you intend to start living next quarter.</p>
     <div id="paperFields"></div>
     <div class="gate-form" style="margin-top:8px;">
-      <input type="text"  class="gate-input" id="paperName"  placeholder="Your name">
-      <input type="email" class="gate-input" id="paperEmail" placeholder="Email address *">
+      <input type="text"  class="gate-input" id="paperName"  placeholder="Your name" aria-label="Your name" autocomplete="name">
+      <input type="email" class="gate-input" id="paperEmail" placeholder="Email address *" aria-label="Email address (required)" autocomplete="email">
       <div class="gate-optional-label">Optional &middot; for research context</div>
       <select class="gate-select" id="researchIndustryPaper" aria-label="Industry (optional)">
         <option value="">Industry (optional)</option>
@@ -550,10 +561,10 @@ nav { padding:16px 20px; }
   <h2 class="gate-headline">You have done something most people do not. You looked honestly.</h2>
   <p class="gate-sub">Enter your details to receive your preliminary reading: a provisional Four States position, the exposure suggested by your answers, and evidence worth investigating.</p>
   <div class="gate-form">
-    <input type="text"  class="gate-input" id="gateName"  placeholder="Your name">
-    <input type="text"  class="gate-input" id="gateOrg"   placeholder="Organization (optional)">
-    <input type="text"  class="gate-input" id="gateRole"  placeholder="Your role (optional)">
-    <input type="email" class="gate-input" id="gateEmail" placeholder="Email address *">
+    <input type="text"  class="gate-input" id="gateName"  placeholder="Your name" aria-label="Your name" autocomplete="name">
+    <input type="text"  class="gate-input" id="gateOrg"   placeholder="Organization (optional)" aria-label="Organization (optional)" autocomplete="organization">
+    <input type="text"  class="gate-input" id="gateRole"  placeholder="Your role (optional)" aria-label="Your role (optional)" autocomplete="organization-title">
+    <input type="email" class="gate-input" id="gateEmail" placeholder="Email address *" aria-label="Email address (required)" autocomplete="email">
     <div class="gate-optional-label">Optional &middot; for research context</div>
     <select class="gate-select" id="researchIndustry" aria-label="Industry (optional)">
       <option value="">Industry (optional)</option>
@@ -1530,12 +1541,14 @@ document.addEventListener("DOMContentLoaded", function(){
 
 <script defer src="/nav.js"></script>
 
+</main>
+
 <!-- Legal links (Phase 3, section 9). These two pages are standalone and carry no
      shared site footer, so a minimal strip is used rather than the full footer. -->
-<div style="border-top:1px solid rgba(139,160,180,0.18);margin-top:48px;padding:26px 24px;text-align:center;font-size:12px;color:rgba(245,240,232,0.45);line-height:1.9;">
+<div role="contentinfo" style="border-top:1px solid rgba(139,160,180,0.18);margin-top:48px;padding:26px 24px;text-align:center;font-size:12px;color:rgba(245,240,232,0.56);line-height:1.9;">
   &copy; 2026 The Density Group LLC &middot; Capability Formation
-  &middot; <a href="privacy.html" style="color:rgba(245,240,232,0.45);text-decoration:none;">Privacy</a>
-  &middot; <a href="terms.html" style="color:rgba(245,240,232,0.45);text-decoration:none;">Terms</a>
+  &middot; <a href="privacy.html" style="color:rgba(245,240,232,0.56);text-decoration:underline;text-underline-offset:3px;">Privacy</a>
+  &middot; <a href="terms.html" style="color:rgba(245,240,232,0.56);text-decoration:underline;text-underline-offset:3px;">Terms</a>
 </div>
 </body>
 </html>
