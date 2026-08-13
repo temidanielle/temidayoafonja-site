@@ -53,7 +53,8 @@ Needs to be enumerated. What the site actually collects, gathered from the code:
 | Consent flags | `diagnostic.html` only | Research consent and marketing consent, stored as booleans |
 | Timestamps | Server-side captures | Recorded in both UTC and America/Chicago |
 | Submission identifier | `diagnostic.html` | Client-generated UUID used for server-side deduplication |
-| IP address and user agent | Implicitly, by every service provider | Not collected by first-party code, but received by Formspree, Netlify, and Anthropic in the ordinary course |
+| IP address | **First-party durable storage**, plus every service provider | **Correction, August 12 2026.** An earlier version of this brief said IP addresses were not collected by first-party code. They are. `netlify/functions/diagnose.js` rate-limits the Scan by writing to the `diagnose-rate` Netlify Blobs store keyed by the visitor's IP, with no purge. See `docs/data-inventory.md` section 10 |
+| User agent | Implicitly, by every service provider | Received by Formspree, Netlify, and Anthropic in the ordinary course |
 
 The current wording, "information through inquiry forms and diagnostic instruments," is true
 but far less specific than the enumeration above.
@@ -325,17 +326,19 @@ no confidentiality obligation.
 
 Ordered by exposure, highest first.
 
-1. **Limitation of liability** (2.8). Currently absent. Now the highest-exposure item, since
-   the consent gating in 1.10 has been resolved.
-2. **Undisclosed service providers**, in particular Anthropic (1.5).
-3. **Retention periods** (1.6). None stated, none enforced.
-4. **Rights and requests** (1.8). None named.
-5. **Enterprise engagement disclaimer** (2.10). Newly material as of this build.
-6. **Export token in a query string** (1.9). A technical fix, pending counsel's view on the
+1. **Limitation of liability** (2.8). Currently absent.
+2. **Undisclosed first-party IP storage** (`docs/data-inventory.md` section 10). The Scan's
+   rate limiter stores visitor IP addresses indefinitely, keyed by IP, disclosed nowhere. A
+   code fix is recommended in preference to a policy disclosure.
+3. **Undisclosed service providers**, in particular Anthropic (1.5).
+4. **Retention periods** (1.6). None stated, none enforced.
+5. **Rights and requests** (1.8). None named.
+6. **Enterprise engagement disclaimer** (2.10). Newly material as of this build.
+7. **Export token in a query string** (1.9). A technical fix, pending counsel's view on the
    sensitivity of the data behind it.
-7. **Google Fonts and EU visitor IPs** (1.5). Depends on whether EU visitors are in scope.
-8. **Workshop cancellation, recording, and conduct terms** (2.2, 2.3).
-9. **Digital-product licence and redistribution** (2.4, 2.5).
+8. **Google Fonts and EU visitor IPs** (1.5). Depends on whether EU visitors are in scope.
+9. **Workshop cancellation, recording, and conduct terms** (2.2, 2.3).
+10. **Digital-product licence and redistribution** (2.4, 2.5).
 
 ---
 

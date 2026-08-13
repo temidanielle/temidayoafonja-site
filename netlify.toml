@@ -81,6 +81,23 @@
   status = 301
   force = true
 
+# dashboard.html is an internal working view. It reads only the operator's own
+# browser localStorage and contains no credentials, endpoints, or server calls,
+# so nothing was ever exposed by it being reachable. It is nonetheless not a
+# public page, so public access is blocked at the edge. The file stays in the
+# repository and still works when opened locally for internal use.
+[[redirects]]
+  from = "/dashboard"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/dashboard.html"
+  to = "/404.html"
+  status = 404
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]
