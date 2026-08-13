@@ -92,7 +92,7 @@ Four stores.
 | `audit-research` | `audit-research.js` | Diagnostic submission | Item-level answers, scores, demographics, name, email, consent flags, timestamps, submission id | **None enforced. Indefinite** |
 | `org-diagnostic-leads` | `org-diagnostic-capture.js` | Scan completion | Lead and result fields | **None enforced. Indefinite** |
 | `ai-readiness-leads` | `ai-readiness-capture.js` | AI readiness completion | Lead and result fields | **None enforced. Indefinite** |
-| `diagnose-rate` | `diagnose.js` | **IP address** | Request count and window start | **None enforced. Indefinite** |
+| `diagnose-rate` | `diagnose.js` | **Salted SHA-256 of the IP**, not the address | Request count and window start | Still unbounded, but no longer personal data. Purge on the follow-up list |
 
 **Records where research consent is false are still written** to `audit-research`, flagged so
 they can be excluded from any aggregate. That is a defensible auditability design, but it is not
@@ -109,7 +109,7 @@ disclosed anywhere and counsel should confirm it is the intended construction.
 | **Anthropic** | Scan and AI readiness completion | Item-level answers plus organizational context | Generates the narrative read |
 | **Kit (ConvertKit)** | Diagnostic completion **with marketing consent** | Email, name, organization, quadrant, scores, result line, tags | Automated email sequence |
 | **Plausible** | Every page load | Aggregate analytics only | Cookieless, no personal data |
-| **Google Fonts** | Every page load, 15 pages | Visitor IP address, at request time | Webfont delivery |
+| ~~Google Fonts~~ | **Removed August 12 2026.** Fonts are now self-hosted from `/fonts`, so no visitor IP reaches Google | | |
 | **Gumroad** | `/fieldkit` redirect | Handled entirely on Gumroad | Field Kit purchase |
 | **Maven** | Outbound links | Handled entirely on Maven | Lightning Lesson and workshop registration |
 | **Amazon** | Outbound links | Handled entirely on Amazon | Book purchase |
