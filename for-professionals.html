@@ -91,6 +91,9 @@
 .path-date { font-size: 13px; font-weight: 700; margin-bottom: 12px; }
 .path-cta { align-self: flex-start; margin-top: auto; }
 .path-card > p { margin-bottom: 22px; }
+/* Secondary line under a card's button. Two classes so it outranks
+   .path-card > p (0,1,1) on margin and .path-card p (0,1,1) on size. */
+.path-card .path-alt { font-size: 12.5px; line-height: 1.5; margin: 12px 0 0; }
 
 /* Secondary: the shorter, earlier session sits lighter. */
 .path-card.secondary { background: var(--paper); border: 1px solid var(--line); }
@@ -105,6 +108,10 @@
 .path-card.primary .path-label { color: var(--gold); }
 .path-card.primary .path-date { color: #fff; }
 .path-card.primary p { color: rgba(255,255,255,.74); }
+/* The mailto needs three classes plus the type to clear .lean-page a
+   (0,1,1), which sets colour to inherit. White on navy is 15.4:1. */
+.path-card.primary .path-alt { color: rgba(255,255,255,.74); }
+.path-card.primary .path-alt a { color: #fff; text-decoration: underline; }
 
 /* Priority list */
 /* scroll-margin-top clears the fixed nav, which otherwise covers the top of
@@ -289,6 +296,7 @@
         <div class="path-date">$500</div>
         <p>A one-to-one session where Temidayo interprets your evidence with you. You receive a personalized Next-Move Note based on your specific position, not a provisional group reading. For professionals facing a high-cost career decision who want expert interpretation before they move.</p>
         <a class="lean-btn light path-cta" href="mailto:temidayo@thedensitygroup.com?subject=Private%20Capability%20Position%20Read%20Inquiry">Request a Private Read</a>
+        <p class="path-alt">Or email <a href="mailto:temidayo@thedensitygroup.com">temidayo@thedensitygroup.com</a> directly.</p>
       </article>
 
     </div>
