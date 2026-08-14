@@ -24,9 +24,9 @@
 <rect x="35.5" y="31.5" width="1129" height="567" rx="3" fill="none" stroke="rgba(201,168,76,.16)"/>
 <rect x="72" y="355.7" width="54" height="1" fill="rgba(201,168,76,.55)"/>
 <circle cx="76.5" cy="485.08" r="4.5" fill="rgb(245, 240, 232)"/>
-<circle cx="91.5" cy="485.08" r="4.5" fill="rgba(245, 240, 232, 0.8)"/>
-<circle cx="106.5" cy="485.08" r="4.5" fill="rgba(231, 237, 246, 0.62)"/>
-<circle cx="121.5" cy="485.08" r="4.5" fill="rgba(201, 168, 76, 0.62)"/>
+<circle cx="91.5" cy="485.08" r="4.5" fill="rgba(231, 237, 246, 0.97)"/>
+<circle cx="106.5" cy="485.08" r="4.5" fill="rgba(245, 240, 232, 0.94)"/>
+<circle cx="121.5" cy="485.08" r="4.5" fill="rgba(231, 237, 246, 0.91)"/>
 <rect x="703" y="96" width="1" height="416" fill="rgba(201,168,76,.3)"/>
 <rect x="706.5" y="96.5" width="447" height="415" rx="3" fill="rgba(231,237,246,.035)" stroke="rgba(231,237,246,.17)"/>
 <circle cx="752.53" cy="210.84" r="6" fill="rgb(245, 240, 232)"/>

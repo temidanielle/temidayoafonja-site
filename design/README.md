@@ -52,10 +52,13 @@ future edits do not undo them:
   tint, no accent, and no extra weight. The plate reads a distribution, not a
   ranking.
 - **Marker colour is not a variable.** Tone varies for texture only. The legend
-  therefore shows four marks held close in value and no rust, so it reads
-  *mark = person* rather than as a colour key. Rust appears twice on the map and
-  stays off the cell corners — at an edge it reads as a flagged outlier rather
-  than one more person.
+  therefore shows four marks within 2.6:1 of each other, in cream and pale
+  blue-gray only, so it reads *mark = person* rather than as a colour key.
+  Muted gold is excluded from the legend on purpose: on navy it sits at 6.8:1
+  against cream's 13.7:1, and a step that large reads as a category. Rust is
+  absent for the same reason; on the map it appears twice and stays off the
+  cell corners, where an edge position reads as a flagged outlier rather than
+  one more person.
 - **Stagnant holds the most markers, Fragile the fewest.** An honest reading,
   and it keeps the eye off Compounding.
 - No arrows, no staged progression between quadrants, no fifth state, no essay
@@ -65,3 +68,17 @@ Type sizes are set for the smallest realistic display. The build was checked at
 1200, 800, 600 and 430px wide; at 430 the eyebrow and footer go secondary by
 design, but the title, statement, principle line, all four state names and
 descriptors, both axis names, and the legend all still read.
+
+## Verifying
+
+```bash
+./design/verify.py
+```
+
+Reads the built SVG and asserts what must not drift: exact copy, quadrant
+placement, axis direction, at least two markers per quadrant, one shared rect
+and one shared type rule across the four states, a legend whose marks stay
+close in value, WCAG AA contrast for every run that has to survive a phone, and
+the guardrails (no gradient, filter, shadow, raster image or arrow marker). It
+exits non-zero on failure, so it can gate a change to the plate. It is what
+caught the legend's gold mark sitting 10:1 away from its cream neighbour.

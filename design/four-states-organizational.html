@@ -119,8 +119,10 @@
 
   .legend { margin-top: 34px; display: flex; align-items: center; gap: 11px; }
   .legend-marks { display: flex; align-items: center; gap: 6px; }
-  /* Four marks held close in value. Spread tones here would read as a colour
-     key; marker colour carries no variable. Rust is deliberately absent. */
+  /* Four marks within 2.6:1 of each other, cream and pale blue-gray only.
+     Muted gold is excluded on purpose: on navy it sits at 6.8:1 against
+     cream's 13.7:1, and that step is large enough to read as a category
+     rather than as texture. Rust is absent for the same reason. */
   .legend-marks i { display: block; width: 9px; height: 9px; border-radius: 50%; }
   .legend-text {
     font-family: 'DM Sans', sans-serif; font-weight: 400;
@@ -231,9 +233,9 @@
       <div class="legend">
         <span class="legend-marks">
           <i data-shape="circle" style="background:#F5F0E8"></i>
-          <i data-shape="circle" style="background:rgba(245,240,232,.8)"></i>
-          <i data-shape="circle" style="background:rgba(231,237,246,.62)"></i>
-          <i data-shape="circle" style="background:rgba(201,168,76,.62)"></i>
+          <i data-shape="circle" style="background:rgba(231,237,246,.97)"></i>
+          <i data-shape="circle" style="background:rgba(245,240,232,.94)"></i>
+          <i data-shape="circle" style="background:rgba(231,237,246,.91)"></i>
         </span>
         <span class="legend-text" data-cls="legend-text"><span class="ln">EACH MARK IS ONE PERSON ON THE SAME TEAM</span></span>
       </div>
