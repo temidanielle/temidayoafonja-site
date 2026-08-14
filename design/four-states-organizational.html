@@ -2,19 +2,22 @@
 <meta name="robots" content="noindex, nofollow">
 <title>The Four States — Organizational Capstone plate</title>
 <!--
-  Source for the Week 6 Capability Formation essay plate ("The Two Lists That
-  Rarely Match"). Rendered to PNG at 1200x630 and 2400x1260 by
-  design/render.sh. Fonts are the site's own self-hosted Cormorant Garamond
-  and DM Sans, so the plate matches temidayoafonja.com typography exactly.
+  Layout source for the Week 6 Capability Formation essay plate ("The Two Lists
+  That Rarely Match"). design/build.py renders this to PNG and exports the SVG
+  master from the rendered layout, so all three deliverables come from this one
+  file and cannot drift apart. See design/README.md.
+
+  Fonts are the site's own self-hosted Cormorant Garamond and DM Sans, so the
+  artwork matches temidayoafonja.com exactly and the render needs no network.
+
   noindex: this file deploys with the site (publish = ".") but is a build
   source, not a page.
+
+  Every run of text lives in a <span class="ln"> — one span per rendered line,
+  with line breaks written by hand rather than left to the wrapper. The SVG
+  exporter measures those spans, and SVG has no line wrapping of its own.
 -->
 <style>
-  @font-face {
-    font-family: 'Cormorant Garamond';
-    font-style: normal; font-weight: 400;
-    src: url(../fonts/CormorantGaramond-400-normal-latin-abcaa8.woff2) format('woff2');
-  }
   @font-face {
     font-family: 'Cormorant Garamond';
     font-style: normal; font-weight: 500;
@@ -22,13 +25,8 @@
   }
   @font-face {
     font-family: 'Cormorant Garamond';
-    font-style: normal; font-weight: 600;
-    src: url(../fonts/CormorantGaramond-600-normal-latin-abcaa8.woff2) format('woff2');
-  }
-  @font-face {
-    font-family: 'Cormorant Garamond';
-    font-style: italic; font-weight: 400;
-    src: url(../fonts/CormorantGaramond-400-italic-latin-4db21d.woff2) format('woff2');
+    font-style: italic; font-weight: 500;
+    src: url(../fonts/CormorantGaramond-500-italic-latin-4db21d.woff2) format('woff2');
   }
   @font-face {
     font-family: 'DM Sans';
@@ -65,26 +63,18 @@
   }
 
   .canvas { position: relative; width: 1200px; height: 630px; overflow: hidden; }
-
-  /* Barely-there stone band so the cream field is not flat paper. */
-  .canvas::before {
-    content: ""; position: absolute; inset: 0;
-    background: linear-gradient(180deg, var(--stone) 0%, var(--cream) 42%);
-    opacity: .55;
-  }
+  .ln { display: inline-block; }
 
   .panel {
     position: absolute; left: 26px; top: 22px; right: 26px; bottom: 22px;
     background: var(--navy);
     border-radius: 8px;
-    box-shadow: 0 1px 0 rgba(15, 35, 71, .18);
   }
   /* Hairline keyline inside the panel edge. */
-  .panel::after {
-    content: ""; position: absolute; inset: 9px;
+  .keyline {
+    position: absolute; inset: 9px;
     border: 1px solid rgba(201, 168, 76, .16);
     border-radius: 3px;
-    pointer-events: none;
   }
 
   /* ---------- left column: eyebrow, title, statement, principle ---------- */
@@ -100,7 +90,6 @@
     font-family: 'DM Sans', sans-serif; font-weight: 500;
     font-size: 10.5px; letter-spacing: .235em; line-height: 1.4;
     color: var(--gold);
-    text-transform: uppercase;
   }
 
   .title {
@@ -111,7 +100,7 @@
   }
 
   .statement {
-    margin-top: 22px; width: 430px;
+    margin-top: 22px;
     font-family: 'DM Sans', sans-serif; font-weight: 300;
     font-size: 17.5px; line-height: 1.55; letter-spacing: .004em;
     color: rgba(231, 237, 246, .88);
@@ -119,23 +108,24 @@
 
   .rule { margin-top: 30px; width: 54px; height: 1px; background: rgba(201, 168, 76, .55); }
 
+  /* Lifted from .62 to .82 and from weight 400 to 500: at 600px wide the line
+     was dissolving into the navy. Still a clear step below the title. */
   .principle {
-    margin-top: 26px; width: 452px;
-    font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 400;
-    font-size: 20px; line-height: 1.45; letter-spacing: .012em;
-    color: rgba(231, 237, 246, .62);
+    margin-top: 26px;
+    font-family: 'Cormorant Garamond', serif; font-style: italic; font-weight: 500;
+    font-size: 21px; line-height: 1.45; letter-spacing: .012em;
+    color: rgba(231, 237, 246, .82);
   }
 
-  .legend {
-    margin-top: 34px;
-    display: flex; align-items: center; gap: 11px;
-  }
+  .legend { margin-top: 34px; display: flex; align-items: center; gap: 11px; }
   .legend-marks { display: flex; align-items: center; gap: 6px; }
+  /* Four marks held close in value. Spread tones here would read as a colour
+     key; marker colour carries no variable. Rust is deliberately absent. */
   .legend-marks i { display: block; width: 9px; height: 9px; border-radius: 50%; }
   .legend-text {
     font-family: 'DM Sans', sans-serif; font-weight: 400;
-    font-size: 10.5px; letter-spacing: .155em; text-transform: uppercase;
-    color: rgba(231, 237, 246, .5);
+    font-size: 11.5px; letter-spacing: .155em;
+    color: rgba(231, 237, 246, .68);
   }
 
   /* ---------- right column: the 2x2 map ---------- */
@@ -151,26 +141,29 @@
     overflow: hidden;
   }
 
+  /* All four cells carry identical fill, border and type weight. The plate
+     reads a distribution, so no quadrant may look like the destination. */
   .cell { position: relative; padding: 17px 18px 0; background: rgba(231, 237, 246, .035); }
-  .cell + .cell { }
-  .cell.tr, .cell.br { border-left: 1px solid rgba(201, 168, 76, .26); }
-  .cell.bl, .cell.br { border-top: 1px solid rgba(201, 168, 76, .26); }
 
-  /* Compounding sits one step more resolved, not highlighted. */
-  .cell.tr { background: rgba(201, 168, 76, .062); }
+  /* The dividing cross is drawn once, rather than as borders on two of the
+     four cells: one shared axis rather than a treatment some quadrants carry
+     and others do not. Offsets land on the grid's own track boundaries. */
+  .cross-v { position: absolute; left: 224px; top: 1px; bottom: 1px; width: 1px; background: rgba(201, 168, 76, .26); }
+  .cross-h { position: absolute; left: 1px; right: 1px; top: 208px; height: 1px; background: rgba(201, 168, 76, .26); }
 
   .state {
     font-family: 'Cormorant Garamond', serif; font-weight: 500;
     font-size: 25px; line-height: 1; letter-spacing: .055em;
     color: var(--cream);
   }
-  .cell.tr .state { color: #FBF6ED; }
 
+  /* 11.5px -> 13px and .6 -> .7 for mobile. Still clearly subordinate to the
+     25px state names above them. */
   .desc {
-    margin-top: 9px; max-width: 172px;
+    margin-top: 9px;
     font-family: 'DM Sans', sans-serif; font-weight: 300;
-    font-size: 11.5px; line-height: 1.5; letter-spacing: .006em;
-    color: rgba(231, 237, 246, .6);
+    font-size: 13px; line-height: 1.5; letter-spacing: .006em;
+    color: rgba(231, 237, 246, .7);
   }
 
   /* team markers */
@@ -187,29 +180,26 @@
     display: flex; flex-direction: column; align-items: center; justify-content: space-between;
     transform: translateX(-34px);
   }
-  .axis-y::after {
-    content: ""; position: absolute; right: 2px; top: 0; bottom: 0;
-    width: 1px; background: rgba(201, 168, 76, .3);
-  }
+  .axis-line-y { position: absolute; right: 2px; top: 0; bottom: 0; width: 1px; background: rgba(201, 168, 76, .3); }
+
   .axis-x {
     position: absolute; left: 680px; top: 490px; width: 448px; height: 34px;
     display: flex; align-items: center; justify-content: space-between;
     padding-top: 13px;
   }
-  .axis-x::before {
-    content: ""; position: absolute; left: 0; right: 0; top: 13px;
-    height: 1px; background: rgba(201, 168, 76, .3);
-  }
+  .axis-line-x { position: absolute; left: 0; right: 0; top: 13px; height: 1px; background: rgba(201, 168, 76, .3); }
 
+  /* Named axes are on the must-read list at 430px wide, where 11px gold on
+     navy was the first thing to go. */
   .axis-name {
     font-family: 'DM Sans', sans-serif; font-weight: 500;
-    font-size: 11px; letter-spacing: .24em; text-transform: uppercase;
+    font-size: 12px; letter-spacing: .24em;
     color: var(--gold);
   }
   .axis-end {
     font-family: 'DM Sans', sans-serif; font-weight: 400;
-    font-size: 9.5px; letter-spacing: .2em; text-transform: uppercase;
-    color: rgba(231, 237, 246, .48);
+    font-size: 9.5px; letter-spacing: .2em;
+    color: rgba(231, 237, 246, .55);
   }
   .axis-y .axis-name, .axis-y .axis-end { writing-mode: vertical-rl; transform: rotate(180deg); }
   .axis-y .axis-name { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(180deg); }
@@ -220,92 +210,199 @@
     position: absolute; left: 46px; right: 46px; bottom: 30px;
     display: flex; align-items: center; justify-content: space-between;
   }
-  .footer span {
+  .foot-left, .foot-right {
     font-family: 'DM Sans', sans-serif; font-weight: 400;
-    font-size: 10px; letter-spacing: .225em; text-transform: uppercase;
-    color: rgba(231, 237, 246, .42);
+    font-size: 10px; letter-spacing: .225em;
   }
-  .footer .mark { color: rgba(201, 168, 76, .72); }
+  .foot-left { color: rgba(201, 168, 76, .72); }
+  .foot-right { color: rgba(231, 237, 246, .42); }
 </style>
 
 <div class="canvas">
-  <div class="panel">
+  <div class="panel" data-shape="rect" data-rx="8" data-fill="#0F2347">
+    <div class="keyline" data-shape="rect" data-rx="3" data-stroke="rgba(201,168,76,.16)"></div>
 
     <div class="lede">
-      <div class="eyebrow">Capability Formation Framework · Organizational Capstone</div>
-      <h1 class="title">THE FOUR STATES</h1>
-      <p class="statement">A team is a distribution across all four states.</p>
-      <div class="rule"></div>
-      <p class="principle">Strong performance does not tell you where capability is forming.</p>
+      <div class="eyebrow" data-cls="eyebrow"><span class="ln">CAPABILITY FORMATION FRAMEWORK · ORGANIZATIONAL CAPSTONE</span></div>
+      <h1 class="title" data-cls="title"><span class="ln">THE FOUR</span><br><span class="ln">STATES</span></h1>
+      <p class="statement" data-cls="statement"><span class="ln">A team is a distribution across all four states.</span></p>
+      <div class="rule" data-shape="rect" data-fill="rgba(201,168,76,.55)"></div>
+      <p class="principle" data-cls="principle"><span class="ln">Strong performance does not tell you</span><br><span class="ln">where capability is forming.</span></p>
       <div class="legend">
         <span class="legend-marks">
-          <i style="background:#F5F0E8"></i>
-          <i style="background:#C9A84C"></i>
-          <i style="background:rgba(231,237,246,.48)"></i>
+          <i data-shape="circle" style="background:#F5F0E8"></i>
+          <i data-shape="circle" style="background:rgba(245,240,232,.8)"></i>
+          <i data-shape="circle" style="background:rgba(231,237,246,.62)"></i>
+          <i data-shape="circle" style="background:rgba(201,168,76,.62)"></i>
         </span>
-        <span class="legend-text">Each mark is one person on the same team</span>
+        <span class="legend-text" data-cls="legend-text"><span class="ln">EACH MARK IS ONE PERSON ON THE SAME TEAM</span></span>
       </div>
     </div>
 
     <div class="axis-y">
-      <span class="axis-end">High</span>
-      <span class="axis-name">Density</span>
-      <span class="axis-end">Low</span>
+      <div class="axis-line-y" data-shape="rect" data-fill="rgba(201,168,76,.3)"></div>
+      <span class="axis-end" data-cls="axis-end" data-rot="1"><span class="ln">HIGH</span></span>
+      <span class="axis-name" data-cls="axis-name" data-rot="1"><span class="ln">DENSITY</span></span>
+      <span class="axis-end" data-cls="axis-end" data-rot="1"><span class="ln">LOW</span></span>
     </div>
 
     <div class="map">
-      <div class="grid">
+      <div class="grid" data-shape="rect" data-rx="3" data-fill="rgba(231,237,246,.035)" data-stroke="rgba(231,237,246,.17)">
 
         <div class="cell tl">
-          <div class="state">DEPTH TRAP</div>
-          <div class="desc">Deep capability.<br>Narrow reach.</div>
-          <span class="dot cream" style="left:22%; top:55%"></span>
-          <span class="dot gold"  style="left:45%; top:71%"></span>
-          <span class="dot blue"  style="left:66%; top:53%"></span>
-          <span class="dot blue"  style="left:77%; top:79%"></span>
+          <div class="state" data-cls="state"><span class="ln">DEPTH TRAP</span></div>
+          <div class="desc" data-cls="desc"><span class="ln">Deep capability.</span><br><span class="ln">Narrow reach.</span></div>
+          <span class="dot cream" data-shape="circle" style="left:22%; top:55%"></span>
+          <span class="dot gold"  data-shape="circle" style="left:45%; top:71%"></span>
+          <span class="dot blue"  data-shape="circle" style="left:66%; top:53%"></span>
+          <span class="dot blue"  data-shape="circle" style="left:77%; top:79%"></span>
         </div>
 
         <div class="cell tr">
-          <div class="state">COMPOUNDING</div>
-          <div class="desc">Deep capability.<br>Widening reach.</div>
+          <div class="state" data-cls="state"><span class="ln">COMPOUNDING</span></div>
+          <div class="desc" data-cls="desc"><span class="ln">Deep capability.</span><br><span class="ln">Widening reach.</span></div>
           <!-- rust kept off the corner: at the edge it read as a flagged outlier -->
-          <span class="dot blue"  style="left:20%; top:67%"></span>
-          <span class="dot cream" style="left:38%; top:51%"></span>
-          <span class="dot rust"  style="left:55%; top:76%"></span>
-          <span class="dot gold"  style="left:76%; top:58%"></span>
+          <span class="dot blue"  data-shape="circle" style="left:20%; top:67%"></span>
+          <span class="dot cream" data-shape="circle" style="left:38%; top:51%"></span>
+          <span class="dot rust"  data-shape="circle" style="left:55%; top:76%"></span>
+          <span class="dot gold"  data-shape="circle" style="left:76%; top:58%"></span>
         </div>
 
         <div class="cell bl">
-          <div class="state">STAGNANT</div>
-          <div class="desc">Little new depth.<br>Little new reach.</div>
-          <span class="dot blue"  style="left:18%; top:57%"></span>
-          <span class="dot gold"  style="left:34%; top:79%"></span>
-          <span class="dot cream" style="left:51%; top:54%"></span>
-          <span class="dot rust"  style="left:65%; top:74%"></span>
-          <span class="dot blue"  style="left:82%; top:60%"></span>
+          <div class="state" data-cls="state"><span class="ln">STAGNANT</span></div>
+          <div class="desc" data-cls="desc"><span class="ln">Little new depth.</span><br><span class="ln">Little new reach.</span></div>
+          <span class="dot blue"  data-shape="circle" style="left:18%; top:57%"></span>
+          <span class="dot gold"  data-shape="circle" style="left:34%; top:79%"></span>
+          <span class="dot cream" data-shape="circle" style="left:51%; top:54%"></span>
+          <span class="dot rust"  data-shape="circle" style="left:65%; top:74%"></span>
+          <span class="dot blue"  data-shape="circle" style="left:82%; top:60%"></span>
         </div>
 
         <div class="cell br">
-          <div class="state">FRAGILE</div>
-          <div class="desc">Broad reach.<br>Too little depth beneath it.</div>
-          <span class="dot cream" style="left:25%; top:56%"></span>
-          <span class="dot blue"  style="left:47%; top:78%"></span>
-          <span class="dot gold"  style="left:70%; top:60%"></span>
+          <div class="state" data-cls="state"><span class="ln">FRAGILE</span></div>
+          <div class="desc" data-cls="desc"><span class="ln">Broad reach.</span><br><span class="ln">Too little depth beneath it.</span></div>
+          <span class="dot cream" data-shape="circle" style="left:25%; top:56%"></span>
+          <span class="dot blue"  data-shape="circle" style="left:47%; top:78%"></span>
+          <span class="dot gold"  data-shape="circle" style="left:70%; top:60%"></span>
         </div>
 
       </div>
+      <div class="cross-v" data-shape="rect" data-fill="rgba(201,168,76,.26)"></div>
+      <div class="cross-h" data-shape="rect" data-fill="rgba(201,168,76,.26)"></div>
     </div>
 
     <div class="axis-x">
-      <span class="axis-end">Low</span>
-      <span class="axis-name">Optionality</span>
-      <span class="axis-end">High</span>
+      <div class="axis-line-x" data-shape="rect" data-fill="rgba(201,168,76,.3)"></div>
+      <span class="axis-end" data-cls="axis-end"><span class="ln">LOW</span></span>
+      <span class="axis-name" data-cls="axis-name"><span class="ln">OPTIONALITY</span></span>
+      <span class="axis-end" data-cls="axis-end"><span class="ln">HIGH</span></span>
     </div>
 
     <div class="footer">
-      <span class="mark">Capability Formation · Temidayo Afonja</span>
-      <span>temidayoafonja.com</span>
+      <span class="foot-left" data-cls="foot-left"><span class="ln">CAPABILITY FORMATION · TEMIDAYO AFONJA</span></span>
+      <span class="foot-right" data-cls="foot-right"><span class="ln">TEMIDAYOAFONJA.COM</span></span>
     </div>
 
   </div>
 </div>
+
+<script>
+/*
+  SVG exporter. Measures the laid-out page and emits an equivalent SVG, so the
+  vector master is a transcription of the same layout the PNGs come from rather
+  than a second drawing kept in sync by hand.
+
+  Geometry comes from getBoundingClientRect (the page is exactly 1200x630 and
+  never scrolls, so viewport coordinates are canvas coordinates). Type specs
+  come from getComputedStyle, one SVG rule per data-cls, so sizes and colours
+  cannot disagree with the CSS above.
+
+  build.py reads the result off <body data-svg> and swaps FONT_FACE_PLACEHOLDER
+  for base64 @font-face rules, making the SVG self-contained.
+*/
+(function () {
+  const r2 = n => Math.round(n * 100) / 100;
+  const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+  /* Exact baseline of a line of text. A zero-sized inline-block aligns its
+     bottom edge to the baseline, so the strut's rect reports it directly.
+     SVG's own dominant-baseline="central" is not equivalent -- it resolves
+     against the font's ascent/descent rather than the CSS line box, which
+     dropped every line here by one to two pixels. */
+  function baseline(el) {
+    const strut = document.createElement('span');
+    strut.style.cssText = 'display:inline-block;width:0;height:0;vertical-align:baseline';
+    el.insertBefore(strut, el.firstChild);
+    const y = strut.getBoundingClientRect().top;
+    strut.remove();
+    return y;
+  }
+
+  function build() {
+    const shapes = [], texts = [], rules = new Map();
+
+    document.querySelectorAll('[data-shape]').forEach(el => {
+      const b = el.getBoundingClientRect(), cs = getComputedStyle(el);
+      if (el.dataset.shape === 'circle') {
+        shapes.push(`<circle cx="${r2(b.left + b.width / 2)}" cy="${r2(b.top + b.height / 2)}" `
+          + `r="${r2(b.width / 2)}" fill="${cs.backgroundColor}"/>`);
+        return;
+      }
+      const stroke = el.dataset.stroke;
+      // A CSS border sits inside the element box; an SVG stroke straddles the
+      // path. Inset by half a pixel so the two land on the same pixels.
+      const i = stroke ? 0.5 : 0;
+      const attrs = [
+        `x="${r2(b.left + i)}"`, `y="${r2(b.top + i)}"`,
+        `width="${r2(b.width - i * 2)}"`, `height="${r2(b.height - i * 2)}"`,
+        el.dataset.rx ? `rx="${el.dataset.rx}"` : '',
+        `fill="${el.dataset.fill || 'none'}"`,
+        stroke ? `stroke="${stroke}"` : '',
+      ].filter(Boolean);
+      shapes.push(`<rect ${attrs.join(' ')}/>`);
+    });
+
+    document.querySelectorAll('[data-cls]').forEach(el => {
+      const cls = el.dataset.cls, cs = getComputedStyle(el);
+      if (!rules.has(cls)) {
+        rules.set(cls, `.${cls}{font-family:${cs.fontFamily};font-size:${cs.fontSize};`
+          + `font-weight:${cs.fontWeight};font-style:${cs.fontStyle};`
+          + `letter-spacing:${cs.letterSpacing};fill:${cs.color}}`);
+      }
+      el.querySelectorAll('.ln').forEach(ln => {
+        const b = ln.getBoundingClientRect();
+        if (el.dataset.rot) {
+          // Three short rotated labels. Centring them on their own box is
+          // within a pixel and avoids reasoning about baselines through a
+          // writing-mode change.
+          const cx = r2(b.left + b.width / 2), cy = r2(b.top + b.height / 2);
+          texts.push(`<text class="${cls}" x="${cx}" y="${cy}" text-anchor="middle" `
+            + `dominant-baseline="central" transform="rotate(-90 ${cx} ${cy})">${esc(ln.textContent)}</text>`);
+        } else {
+          texts.push(`<text class="${cls}" x="${r2(b.left)}" y="${r2(baseline(ln))}">`
+            + `${esc(ln.textContent)}</text>`);
+        }
+      });
+    });
+
+    const bg = getComputedStyle(document.body).backgroundColor;
+    return [
+      '<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">',
+      '<title>The Four States — a team is a distribution across all four states</title>',
+      '<style>', 'FONT_FACE_PLACEHOLDER',
+      [...rules.values()].join('\n'),
+      '</style>',
+      `<rect width="1200" height="630" fill="${bg}"/>`,
+      ...shapes, ...texts,
+      '</svg>',
+    ].join('\n');
+  }
+
+  const emit = () => document.body.setAttribute(
+    'data-svg', btoa(unescape(encodeURIComponent(build()))));
+  // Measure only once the real faces are in: fallback metrics would move every
+  // line. Emit early too, so a dump that beats the promise still gets markup.
+  emit();
+  document.fonts.ready.then(emit);
+})();
+</script>
