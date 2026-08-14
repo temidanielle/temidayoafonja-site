@@ -1,6 +1,36 @@
 # Changed-Files Report — Gumroad Merchandising Production
 
-Revised Friday, August 14, 2026 at 12:53 PM CT
+Revised Friday, August 14, 2026 at 1:30 PM CT
+
+---
+
+## v1.1.1 amendment — documentation reconciliation (reports only)
+
+Documentation-only pass. Carried-forward v1.0 sections of `QA-REPORT.md` that
+still described the retired group workshop as the current `$500` offer were
+reconciled to the approved v1.1 individual-offer architecture (governing-source
+statement, source-verification row, copy-verification statement, reduced-size
+labels, system-consistency description, source-integrity wording, and
+boundary-claim section). Retired terms now appear in the report only inside the
+explicitly historical audit / retired-string-verification sections, never as a
+description of the current Image 06.
+
+**Files changed in v1.1.1 (documentation only):**
+- `QA-REPORT.md`
+- `CHANGED-FILES.md` (this file)
+
+**Every visual asset remained byte-for-byte unchanged.** No PNG, SVG master,
+reduced-size test, contact sheet, generator source, font, page crop, or Field
+Kit file was modified in this pass. Re-verified against the delivered v1.1
+hashes: all 45 frozen files match (thumbnail, Images 01–06, the Image 01
+1280×720 export, every reduced test, every SVG master, `assets.py` / `gumlib.py`
+/ `finalize.py`, the page crops, the fonts, and the Field Kit PDF +
+`build_fieldkit.py`).
+
+**Archive:** the delivered `Capability_Formation_FieldKit_Gumroad_Assets_v1.1.zip`
+is preserved; the reconciled set is delivered as
+`Capability_Formation_FieldKit_Gumroad_Assets_v1.1.1.zip`, which differs from
+v1.1 only in `QA-REPORT.md` and `CHANGED-FILES.md`.
 
 ---
 
