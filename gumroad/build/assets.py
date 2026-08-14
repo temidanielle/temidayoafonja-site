@@ -267,13 +267,19 @@ def build_06():
     # RIGHT: $500 live Position Read (cream, gold-bordered) - text-led facilitator panel
     b.append(rect(bx,top,colw,colh,fill=CREAM,rx=6,stroke=GOLD,sw=2))
     b.append(text(bx+34,top+56,"$500",34,CG,700,RUST))
-    b.append(text(bx+156,top+50,"LIVE POSITION READ",18,DM,700,NAVY,spacing=1.2))
-    b.append(text(bx+156,top+74,"HUMAN CORRECTION + DECISION SUPPORT",11.5,DM,700,NAVY_SOFT,spacing=1.2))
-    b.append(_copy_list(bx+34,top+118,
-        ["Guided evidence correction","Interpreted state or boundary","Next-Move Decision","Live facilitation","30-day follow-up","Supported 90-day rescore"],
-        colw-68,RUST,NAVY,step=34,size=16))
-    # decision rule
-    dr=wrap_words("Choose the Field Kit when you want a private self-read. Choose the live Position Read when a consequential decision requires another trained reader in the room.",W-2*LM,19,CG,600)
+    # v1.1: new individual-offer architecture. Offer name fits one line at the
+    # existing 18px label size (measured 354px in 492px available); no type
+    # reduction required. Descriptor and 5-item list reflect the approved
+    # Private Capability Position Read claims (interpretation, not correction).
+    b.append(text(bx+156,top+50,"PRIVATE CAPABILITY POSITION READ",18,DM,700,NAVY,spacing=1.2))
+    b.append(text(bx+156,top+74,"HUMAN INTERPRETATION + DECISION SUPPORT",11.5,DM,700,NAVY_SOFT,spacing=1.2))
+    b.append(_copy_list(bx+34,top+124,
+        ["Private, one-to-one interpretation","Evidence interpreted in your actual context",
+         "Constraints and options clarified","Stakes and timing examined",
+         "Support applying the reading to your decision"],
+        colw-68,RUST,NAVY,step=38,size=16))
+    # decision rule (full approved version; fits at the existing 19px footer size)
+    dr=wrap_words("Choose the Field Kit when you want to continue the read privately. Choose the Private Capability Position Read when the evidence is clearer but the decision still needs context and human interpretation.",1300,19,CG,600)
     for j,ln in enumerate(dr):
         b.append(text(lx,top+colh+50+j*28,ln,19,CG,600,NAVY,italic=True))
     svg=svg_doc(W,H,"\n".join(b),bg=SAND)

@@ -1,5 +1,45 @@
 # Changed-Files Report — Gumroad Merchandising Production
 
+Revised Friday, August 14, 2026 at 12:53 PM CT
+
+---
+
+## v1.1 amendment — Image 06 correction (individual-offer architecture)
+
+Bounded correction to Image 06 only. The `$500` panel now describes the new
+**Private Capability Position Read** individual offer.
+
+**Right-panel stale-claim audit: YES, the old list contained stale
+group-workshop claims.** Removed: `Guided evidence correction` (moved to the free
+flagship), `Live facilitation`, `30-day follow-up`, `Supported 90-day rescore`
+(group-workshop deliverables), and `Next-Move Decision` / `Interpreted state or
+boundary` (retired with the list). These were flagged and reported before
+regeneration; the approved 5-item replacement list contains only approved
+private-offer claims.
+
+**Files changed in v1.1:**
+- `build/assets.py` — `build_06()` updated (offer name, descriptor, 5-item list, full decision rule)
+- `masters/fieldkit_gumroad_06_fieldkit_vs_live_1600x900.svg`
+- `png/fieldkit_gumroad_06_fieldkit_vs_live_1600x900.png`
+- `reduced/fieldkit_gumroad_06_fieldkit_vs_live_640x360.png`
+- `contact-sheet.png` (regenerated to show the corrected Image 06)
+- `QA-REPORT.md`, `CHANGED-FILES.md` (this file)
+
+**Typography:** the longer offer name fit the existing label area at the current
+18px on one line — **no type-size reduction or line-break change was required**,
+so no label typography adjustment needed documenting beyond this note.
+
+**Files verified UNCHANGED (SHA-256 byte-for-byte, 22/22 OK):** the Field Kit PDF
+and `build_fieldkit.py`; the thumbnail (PNG, SVG, 240, 180); Images 01–05 (PNG,
+SVG, 640 each); and the Image 01 1280×720 export. No Field Kit production file
+was touched.
+
+**Archive:** the existing `Capability_Formation_FieldKit_Gumroad_Assets.zip` is
+preserved; the corrected set is delivered as
+`Capability_Formation_FieldKit_Gumroad_Assets_v1.1.zip`.
+
+---
+
 Scope: newly created production outputs only. This phase produced the Gumroad
 merchandising system for the Capability Formation Field Kit. Nothing outside
 `gumroad/` was created or modified.

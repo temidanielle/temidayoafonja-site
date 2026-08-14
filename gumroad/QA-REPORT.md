@@ -1,8 +1,72 @@
 # QA Report — Capability Formation Field Kit Gumroad Merchandising
 
+Revised Friday, August 14, 2026 at 12:53 PM CT
+
 Production of seven approved merchandising assets built around the final,
 immutable 24-page fillable Field Kit. Governing spec: the Version 2.0
 merchandising brief plus the four final copy locks.
+
+---
+
+## v1.1 amendment — Image 06 reconciled to the individual-offer architecture
+
+Scope: Image 06 only. All other assets and the Field Kit are unchanged (SHA-256
+verified below). The `$500` right panel now describes the new individual offer
+**Private Capability Position Read** instead of the retired group workshop.
+
+**Right-panel audit result — stale group-workshop claims WERE found.** The prior
+`$500` feature list contained claims that do not belong to the new private offer:
+
+| Prior feature | Verdict |
+|---|---|
+| Guided evidence correction | Superseded — correction now sits in the free flagship |
+| Interpreted state or boundary | Retired with the list (interpretation now expressed by the new items) |
+| Next-Move Decision | Removed — risked implying the offer makes the employment decision |
+| Live facilitation | Stale — group-room language, not a private 1:1 claim |
+| 30-day follow-up | Stale — matches retired "30-Day Evidence Review / workshop follow-through" |
+| Supported 90-day rescore | Stale — matches retired "90-day rescore included" |
+
+Per the brief, this was flagged and reported before regenerating; the replacement
+list was approved by the client and contains only the approved private-offer
+claims (no invented deliverables).
+
+**Authorized text changes applied (Image 06 right panel):**
+- Offer name: `LIVE POSITION READ` → `PRIVATE CAPABILITY POSITION READ`
+- Descriptor: `HUMAN CORRECTION + DECISION SUPPORT` → `HUMAN INTERPRETATION + DECISION SUPPORT`
+- Feature list (5, approved): Private, one-to-one interpretation · Evidence
+  interpreted in your actual context · Constraints and options clarified ·
+  Stakes and timing examined · Support applying the reading to your decision
+- Decision rule (full approved version): "Choose the Field Kit when you want to
+  continue the read privately. Choose the Private Capability Position Read when
+  the evidence is clearer but the decision still needs context and human
+  interpretation."
+
+**Typography note:** the longer offer name fits the existing right-panel label
+area at the current 18px on a single line (measured 354px in 492px available),
+so no type-size reduction or panel redesign was required. The full decision rule
+fits at the existing 19px footer size (two balanced lines). No layout shift.
+
+**Required-string verification (Image 06 v1.1):**
+- Present: `PRIVATE CAPABILITY POSITION READ`, `HUMAN INTERPRETATION + DECISION
+  SUPPORT`, and the full approved decision rule (exact match).
+- Absent: `LIVE POSITION READ`, `HUMAN CORRECTION + DECISION SUPPORT`, the retired
+  decision rule, a bare `THE CAPABILITY POSITION READ` used as the paid label, and
+  every flagged stale feature (Guided evidence correction, Live facilitation,
+  30-day follow-up, Supported 90-day rescore, Next-Move Decision).
+- Prices: `$150` and `$500` only. No `$499`, `$650`, `Starting at`, `$500+`,
+  coupons, bundles, upgrade credits, or attendee/crossed-out pricing.
+- Field Kit left panel, headline, Position Card crop, dimensions, colors,
+  typography, and hierarchy unchanged.
+
+**Reduced-size acceptance (Image 06 640×360):** headline, `$150`, `$500`, both
+product-level labels, and the decision-rule footer are readable; offer name is a
+single clean line with no clipping or 3-line overflow.
+
+**SHA-256 immutability (re-verified against pre-change baseline):** the Field
+Kit PDF, `build_fieldkit.py`, the thumbnail (PNG/SVG/240/180), and Images 01–05
+(PNG/SVG/640) all verify byte-for-byte unchanged (22/22 OK).
+
+---
 
 ## 1. Source verification
 
