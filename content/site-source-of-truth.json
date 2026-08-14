@@ -138,20 +138,38 @@
         "published": false,
         "note": "Transfers are allowed in practice. Operator decision: do not publish a transfer policy."
       },
+      "format": "guided self-read",
+      "format_note": "Called a guided self-read, not a live assessment, from August 14 2026. The session guides a room through the instrument; it is not personalized analysis of one participant.",
       "includes": [
-        "90-minute live assessment",
+        "90-minute guided self-read",
         "Twelve-statement Capability Position Read, completed twice",
         "Evidence-led second reading",
         "Provisional state or boundary reading",
         "Seven categories of move",
-        "Written Next-Move Note"
+        "Live Q&A as time allows"
       ],
       "includes_note": "Seven categories of move are taught in the session; the participant leaves having identified one category worth testing. Both figures are correct and describe different things. The Field Kit, the 30-day evidence process and the 90-day rescore are no longer included: they belonged to the paid version.",
+      "excludes": ["Written Next-Move Note"],
+      "excludes_note": "The written Next-Move Note moved to the paid Private Capability Position Read on August 14 2026 and must not be promised for the free session. Q&A is offered as time allows rather than guaranteed.",
       "registration_url": {
         "published": false,
         "intended": "https://maven.com/temidayo-afonja/decide-whether-to-stay-or-leave-your-job",
         "note": "Maven registration is not open yet, so this URL is recorded but not linked anywhere. The homepage CTA reads Register Free and points at /for-professionals, which carries the notify form. Swap both to the direct Maven link when registration opens."
       }
+    },
+
+    "private_capability_position_read": {
+      "name": "Private Capability Position Read",
+      "label": "One to one",
+      "price_usd": 500,
+      "price_display": "$500",
+      "route": "/for-professionals",
+      "delivery": "One-to-one session in which Temidayo interprets the participant's evidence with them.",
+      "differentiator": "A personalized Next-Move Note based on the participant's specific position, rather than the provisional group reading the free session produces.",
+      "cta": "Request a Private Read",
+      "cta_destination": "mailto:temidayo@temidayoafonja.com?subject=Private%20Capability%20Position%20Read%20Inquiry",
+      "cta_destination_note": "This address is on temidayoafonja.com. Every other published address on the site, including the privacy contact and the Formspree recipients, is on thedensitygroup.com. Supplied by the operator and used as given; flagged in case the difference is unintended.",
+      "added": "2026-08-14"
     },
 
     "lightning_lesson": {
@@ -242,6 +260,8 @@
       "name": "The Capability Formation Field Kit",
       "price_usd": 150,
       "price_display": "$150 &middot; instant digital access",
+      "purchase_url": "https://temidayoafonja.gumroad.com/l/czmqp",
+      "purchase_url_note": "Linked directly from for-professionals.html and book.html since August 14 2026. The /fieldkit forced redirect in netlify.toml still works and still serves links published elsewhere.",
       "price_change_note": "Was $75. Raised to $150 by operator decision, August 13 2026, when the live assessment became free.",
       "included_in_live_session": false,
       "url": "https://temidayoafonja.gumroad.com/l/czmqp",
