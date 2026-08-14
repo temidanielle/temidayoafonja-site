@@ -46,10 +46,20 @@ exports.handler = async (event) => {
     email: d.email || "",
     organization: d.org || "",
     quadrant: d.quadrant || "",
+    // The page sends placementType and label. Both were being dropped, and
+    // quadrant is empty for every non-quadrant result, so a boundary, centre or
+    // insufficient lead arrived with no placement recorded at all. Those are the
+    // leads most worth a personal follow-up. Found August 14 2026 by reading the
+    // first real exported row.
+    placement_type: d.placementType || "",
+    label: d.label || "",
     density: d.density || "",
     optionality: d.optionality || "",
     alumni_capital: d.alumniCapital || "",
-    boundary: d.boundary === true || d.boundary === "true",
+    // Derived from placementType. This previously read d.boundary, a key the page
+    // has never sent, so the column was false for every lead regardless of where
+    // they actually landed.
+    boundary: d.placementType === "boundary-pair",
     standard: d.standard === true || d.standard === "true",
     reflection: d.reflection || "",
     source: d.source || "organizational_diagnostic"
