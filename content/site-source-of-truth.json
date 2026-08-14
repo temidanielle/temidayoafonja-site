@@ -130,7 +130,8 @@
         "timezone": "America/Chicago"
       },
       "minimum_age": 18,
-      "minimum_age_display": "Participants must be 18 or older",
+      "minimum_age_published_on": ["terms.html"],
+      "minimum_age_note": "Operator decision, August 14 2026: the requirement is stated in the Terms of Use only. The line was removed from the enrollment box on for-professionals.html, reversing the earlier decision to show it in both places.",
       "recording": "The teaching and assessment portion is recorded and made available to registrants. The live question and answer portion is not recorded and is not in the replay. Participants may not record.",
       "refunds": "No fee, so nothing to refund. Where a session or product does carry a fee, Maven's terms govern and all fees are non-refundable.",
       "transfers": {
