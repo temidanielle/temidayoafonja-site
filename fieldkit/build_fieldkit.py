@@ -438,11 +438,33 @@ E5_OLD = [
     "ninety-day move plan. That is what the Capability Formation Cohort is being built to do,",
     "and Field Kit owners get first notice when it opens.",
 ]
-E5_NEW = [
-    "Both belong in other hands: a live calibration, where you are corrected against",
-    "evidence rather than against yourself. That is what the Capability Position Read does.",
-]
+# v1.2.4 page-23 close: the E5 block, the pointer, and the old "Until then" line
+# are replaced by three paragraphs (P1/P2 body, P3 bold). Copy is verbatim; the
+# closing gold statement + signature shift down into the page's lower third.
 E5_CENTER = 306.0
+E5_WRAP = 440.0
+P23_P1 = ("Both belong in other hands: a live calibration, where you are corrected against "
+          "evidence rather than against yourself. That is what the Capability Position Read does. "
+          "The free live session at temidayoafonja.com runs the guided version in a room. "
+          "The Private Capability Position Read runs it one to one, where Temidayo interprets "
+          "your evidence with you and writes the Next-Move Note your self-read cannot produce on its own.")
+P23_P2 = ("What the Field Kit gives you that neither session does is the system you keep. "
+          "A live room happens once. This kit rescores every quarter. The scores move, "
+          "the evidence lines change, and the position you are managing stays visible to you "
+          "long after the room is over.")
+P23_P3 = "Run the loop. A rescored quarter is worth more than a rushed next step."
+P23_OLD_CLOSE = "Until then, run the loop. A rescored quarter is worth more than a rushed next step."
+
+def _wrap_page(text, font, size, width):
+    words = text.split(); lines = []; cur = ""
+    for w in words:
+        t = (cur + " " + w).strip()
+        if stringWidth(t, font, size) <= width: cur = t
+        else:
+            if cur: lines.append(cur)
+            cur = w
+    if cur: lines.append(cur)
+    return lines
 # EDIT 6 (page 2) — Cohort -> session (P.S. line, drawn glyph-by-glyph)
 E6_OLD = "people who bring them get first notice when a Cohort opens."
 E6_NEW = "people who bring them get first notice when a session opens."
@@ -495,15 +517,35 @@ def apply_v11_edits(idx, prims):
             prims += [_tp(m[0][4], m[0][5], fn, sz, fl, E4_NEW[0]),
                       _tp(m[1][4], m[1][5], fn, sz, fl, E4_NEW[1])]
             applied.append("EDIT4")
-    elif idx == 22:                                # EDIT 5 (centred)
+    elif idx == 22:                                # EDIT 5 (v1.2.4) — page-23 close rewritten
         p = find(E5_OLD[0])
         if p:
-            fn, sz, fl = p[2], p[3], p[4]
-            m = [find(s)[1] for s in E5_OLD]
-            prims = drop(E5_OLD)
-            for k, line in enumerate(E5_NEW):
-                x = E5_CENTER - stringWidth(line, fn, sz) / 2.0
-                prims += [_tp(x, m[k][5], fn, sz, fl, line)]
+            fn, sz, fl = p[2], p[3], p[4]          # Helvetica 11, cream
+            prims = drop(E5_OLD)                    # remove the old cohort block
+            prims = [q for q in prims               # remove the old bold closing line (now P3)
+                     if not (q[0] == "text" and q[5] == P23_OLD_CLOSE)]
+            H = 792.0; LEAD = 15.6; GAP = 27.6
+            # Shift the closing gold statement + signature down by a uniform delta.
+            # These source lines are placed glyph-by-glyph, so match them by their
+            # original baseline band (yTop 515..585: gold 521.2, name 561.2, url 578.2)
+            # rather than by string. New tops: 624 / 664 / 681 => +102.8pt.
+            DELTA = 102.8
+            def shifted(q):
+                if q[0] == "text" and 515.0 <= (H - q[1][5]) <= 585.0:
+                    mm = list(q[1]); mm[5] -= DELTA
+                    return ("text", tuple(mm), q[2], q[3], q[4], q[5])
+                return q
+            prims = [shifted(q) for q in prims]
+            def place(text, font, size, y_top):
+                y = y_top; out = []
+                for ln in _wrap_page(text, font, size, E5_WRAP):
+                    x = E5_CENTER - stringWidth(ln, font, size) / 2.0
+                    out.append(_tp(x, H - y, font, size, fl, ln)); y += LEAD
+                return out, y - LEAD
+            b1, e1 = place(P23_P1, "Helvetica", 11.0, 419.6)
+            b2, e2 = place(P23_P2, "Helvetica", 11.0, e1 + GAP)
+            b3, e3 = place(P23_P3, "Helvetica-Bold", 11.0, e2 + GAP)
+            prims += b1 + b2 + b3
             applied.append("EDIT5")
     elif idx == 1:                                 # EDIT 6 (per-glyph P.S. line)
         glyphs = [p for p in prims if p[0] == "text" and abs(p[1][5] - E6_F) < 0.3
@@ -784,21 +826,9 @@ def apply_v12_edits(idx, prims):
             "The honest note: this read cannot correct its own author. Self-assessment has a structural limitation: the same person is supplying both the evidence and the judgment. That does not make it useless. It means the reading needs a disciplined correction process. A calibrated read exists for exactly this reason. That is what the live Capability Position Read does: you score, you are corrected against evidence, and you score again.",
             492)
         if n: applied.append("I")
-    elif idx == 22:                               # N (v1.2.1) + O (v1.2.2) — holding line, wrapped to two centred lines
-        anchor = next((p for p in prims if p[0] == "text" and
-                       p[5] == "evidence rather than against yourself. That is what the Capability Position Read does."), None)
-        if anchor:
-            # EDIT O: split the single 493.7pt pointer into two centred lines that fit the page measure.
-            # Line 1 keeps EDIT N's baseline exactly (anchor f - 14.0); line 2 sits one line below at leading 13.5.
-            nlines = ["It runs live, in small rooms. When the next one opens it is listed at",
-                      "temidayoafonja.com, and the essays list hears first."]
-            base1 = anchor[1][5] - 14.0
-            leadings = [0.0, 13.5]
-            for line, lead in zip(nlines, leadings):
-                x = 306.0 - stringWidth(line, "Helvetica", 9.5) / 2.0  # centred on x=306, a size down
-                prims = prims + [_tp12(x, base1 - lead, "Helvetica", 9.5, anchor[4], line)]
-            applied.append("N")
-            applied.append("O")
+    # (v1.2.4) The page-23 pointer that EDIT N/O produced is retired: its message
+    # ("runs live ... at temidayoafonja.com") is now carried by the rewritten
+    # EDIT 5 prose, so no separate holding line is emitted.
     return prims, applied
 
 # ---------------------------------------------------------------- render
@@ -942,5 +972,5 @@ if UNMAPPED:
 assert total_changed == 2, "boundary substitution did not hit exactly 2 lines"
 print("v1.1 edits applied:", v11_applied)
 print("v1.2 edits applied:", sorted(set(v12_applied)))
-EXPECT12 = {"A", "C", "D", "E", "F", "G", "H", "I", "K3", "K5", "M", "N", "O", "P", "Q"}
+EXPECT12 = {"A", "C", "D", "E", "F", "G", "H", "I", "K3", "K5", "M", "P", "Q"}
 assert set(v12_applied) == EXPECT12, f"v1.2 mismatch: {sorted(set(v12_applied))} vs {sorted(EXPECT12)}"
