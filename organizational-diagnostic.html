@@ -679,22 +679,22 @@ function classifyPlacement(dAxis, oAxis){
     let sufficientAxis = null;
     if(dAxis.sufficient && !oAxis.sufficient) sufficientAxis = "density";
     else if(oAxis.sufficient && !dAxis.sufficient) sufficientAxis = "optionality";
-    return {type:"insufficient", label:"Insufficient information to determine a Four States position.", sufficientAxis};
+    return {type:"insufficient", key:"insufficient", label:"Insufficient information to determine a Four States position.", sufficientAxis};
   }
   const dBoundary = dAxis.direction==="boundary", oBoundary = oAxis.direction==="boundary";
   if(dBoundary && oBoundary){
-    return {type:"center", label:"At the center of the matrix.",
+    return {type:"center", key:"center", label:"At the center of the matrix.",
       sub:"There is no dominant lean in either Density or Optionality. The organization shows a balanced or internally mixed pattern across both dimensions."};
   }
   if(dBoundary && !oBoundary){
     return oAxis.direction==="higher"
-      ? {type:"boundary-pair", label:"On the boundary between Compounding and Fragile.", sub:"Density is balanced, while Optionality falls on the higher side.", pair:[Q.compounding,Q.fragile]}
-      : {type:"boundary-pair", label:"On the boundary between Depth Trap and Stagnant.", sub:"Density is balanced, while Optionality falls on the lower side.", pair:[Q.depthTrap,Q.stagnant]};
+      ? {type:"boundary-pair", key:"bp-optionality-higher", label:"On the boundary between Compounding and Fragile.", sub:"Density is balanced, while Optionality falls on the higher side.", pair:[Q.compounding,Q.fragile]}
+      : {type:"boundary-pair", key:"bp-optionality-lower", label:"On the boundary between Depth Trap and Stagnant.", sub:"Density is balanced, while Optionality falls on the lower side.", pair:[Q.depthTrap,Q.stagnant]};
   }
   if(oBoundary && !dBoundary){
     return dAxis.direction==="higher"
-      ? {type:"boundary-pair", label:"On the boundary between Compounding and Depth Trap.", sub:"Optionality is balanced, while Density falls on the higher side.", pair:[Q.compounding,Q.depthTrap]}
-      : {type:"boundary-pair", label:"On the boundary between Fragile and Stagnant.", sub:"Optionality is balanced, while Density falls on the lower side.", pair:[Q.fragile,Q.stagnant]};
+      ? {type:"boundary-pair", key:"bp-density-higher", label:"On the boundary between Compounding and Depth Trap.", sub:"Optionality is balanced, while Density falls on the higher side.", pair:[Q.compounding,Q.depthTrap]}
+      : {type:"boundary-pair", key:"bp-density-lower", label:"On the boundary between Fragile and Stagnant.", sub:"Optionality is balanced, while Density falls on the lower side.", pair:[Q.fragile,Q.stagnant]};
   }
   const quadrant = quadrantFor(dAxis.direction==="higher", oAxis.direction==="higher");
   return {type:"quadrant", quadrant, label:quadrant};
@@ -914,9 +914,9 @@ function renderResult(d){
       ${levelsRowHTML(d)}
       <p class="levels-note">Density and optionality set the position in the matrix. Alumni capital is measured separately and does not move it.</p>
       ${(d.standard && !d.mechanical) ? `<p class="standard-note">Standard reading. The live read was briefly unavailable, so this is the standard reading for your position. Your placement is unchanged.</p>` : ""}
-      ${!d.mechanical ? `<div class="read-body">${paras(d.read)}</div>` : ""}
+      ${d.read ? `<div class="read-body">${paras(d.read)}</div>` : ""}
     </div>
-    ${!d.mechanical ? `
+    ${d.leaders ? `
     <div class="leaders">
       <p class="lh">What this means for leaders</p>
       ${paras(d.leaders)}
@@ -1069,7 +1069,7 @@ function buildReport(d, org){
     ${rdLevelsRowHTML(d)}
     <p class="rd-levels-note">Density and optionality set the position in the matrix. Alumni capital is measured separately and does not move it.</p>
     ${(d.standard && !d.mechanical) ? `<p class="rd-standard-note">Standard reading. The live read was briefly unavailable, so this is the standard reading for your position. Placement is unchanged.</p>` : ""}
-    ${!d.mechanical ? `<div class="rd-read">${paras(d.read)}</div><div class="rd-leaders"><p class="lh">What this means for leaders</p>${paras(d.leaders)}</div>` : ""}
+    ${d.read ? `<div class="rd-read">${paras(d.read)}</div>${d.leaders ? `<div class="rd-leaders"><p class="lh">What this means for leaders</p>${paras(d.leaders)}</div>` : ""}` : ""}
     ${d.quadrant ? threeThingsHTML(d.quadrant) : ""}
     ${d.quadrant ? firstMoveHTML(d.quadrant) : ""}
     <div class="rd-foot"><span>The Density Group &middot; Professional. Authoritative. Credible.</span><span>temidayoafonja.com</span></div>
@@ -1085,6 +1085,39 @@ function buildReport(d, org){
   });
   reportEl.scrollIntoView({behavior:"smooth",block:"start"});
 }
+
+// Approved narratives for the six non-quadrant states, supplied by the operator
+// on August 14 2026. Before this, these states rendered a label and one sentence
+// and nothing else, because no approved long-form content existed for them and
+// diagnose.js's prompt only understands the four canonical quadrants. The AI call
+// is still skipped for these states; this is static, approved copy served in its
+// place, keyed by placement.key from classifyPlacement.
+const NON_QUADRANT_NARRATIVE = {
+  "bp-density-lower": {
+    read: "The organization is not forming deep judgment through its work, regardless of whether that capability travels. The question is not yet about portability. It is about whether the work itself is developing the kind of judgment the organization will need. Range may exist, but without depth behind it, that range has not been tested.",
+    leaders: "Before asking whether capability transfers, ask whether the work is building anything worth transferring. If the demanding problems are concentrated in too few roles, or if most work has become routine, the organization may be producing movement without formation."
+  },
+  "bp-density-higher": {
+    read: "The organization is forming real judgment through consequential work. The unresolved question is whether that judgment can travel. Capability may be deep but concentrated in contexts that do not test portability, or it may be beginning to move but has not yet proven it holds outside the roles that built it.",
+    leaders: "This is the boundary where design decisions matter most. The depth is real. Whether it becomes portable or stays trapped depends on how roles, assignments, and development pathways are structured from here."
+  },
+  "bp-optionality-lower": {
+    read: "Capability is not traveling across roles, functions, or cycles, regardless of how much depth exists. The organization may be building pockets of judgment that cannot be accessed beyond their original context, or it may not be forming that judgment at all. Either way, the organization is exposed when people move, roles change, or conditions shift.",
+    leaders: "The common thread is that capability stays where it was built. Whether the root cause is insufficient formation or insufficient portability determines the intervention, but the organizational risk is the same: critical work depends on arrangements that do not survive change."
+  },
+  "bp-optionality-higher": {
+    read: "Capability moves through this organization. People carry range. The question is whether the depth behind that range has been tested under consequential conditions or whether it reflects exposure without formation. The difference between Compounding and Fragile is not how much someone has seen but how much judgment was formed through what they saw.",
+    leaders: "Range without depth is the hardest condition to see, because it looks like growth. Ask whether the work that moves people also challenges them, or whether movement itself has become the development model."
+  },
+  "center": {
+    read: "Neither dimension clearly leads. The organization is not strongly forming or failing to form capability, and capability is neither clearly portable nor clearly trapped. This is a position that can move in any direction, which makes it both stable and ambiguous.",
+    leaders: "A centred reading is not a neutral reading. It means the forces that drive each dimension are roughly balanced, which often indicates that the organization has not yet made the design decisions that would move the distribution. The question is whether this balance is intentional or unexamined."
+  },
+  "insufficient": {
+    read: "Too many questions were answered with \"Not enough visibility\" to produce a reliable reading. This is itself a finding. If a leader with scope over this area cannot see the conditions clearly, the organization may have a visibility gap that predates any capability question.",
+    leaders: "The most useful next step is not to guess at the answers but to investigate why visibility is limited. Whether the gap is in data, in access, or in how the work is organized will tell you something about the organization's relationship to its own capability."
+  }
+};
 
 // Standard (deterministic) fallback readings, keyed by the client-computed quadrant.
 // Only exists for the four normal quadrants (score().type === "quadrant"); the
@@ -1180,12 +1213,14 @@ async function run(){
     }
     if(window.plausible){ plausible("Diagnostic Completed", {props:{ type: placement.type, quadrant: placement.quadrant, reflection: lastReflection || "(skipped)", standard: standard }}); }
   } else {
-    // Boundary-pair, center, or insufficient: no approved long-form narrative
-    // exists for these states, and diagnose.js's prompt has no concept of them
-    // (it expects one of the four canonical quadrants). Rather than send it a
-    // placement it isn't built to interpret, skip the AI call entirely and
-    // render the mechanical, fully-specified content only.
-    result = Object.assign({}, placement, { standard: true });
+    // Boundary-pair, center, or insufficient. diagnose.js's prompt has no concept
+    // of these states (it expects one of the four canonical quadrants), so the AI
+    // call is still skipped rather than sending it a placement it cannot
+    // interpret. Approved static narrative from NON_QUADRANT_NARRATIVE is served
+    // instead, so these readers now get the same two sections as a quadrant
+    // result rather than a bare label.
+    const approved = NON_QUADRANT_NARRATIVE[placement.key];
+    result = Object.assign({}, placement, { standard: true }, approved || {});
     if(window.plausible){ plausible("Diagnostic Completed", {props:{ type: placement.type, reflection: lastReflection || "(skipped)", standard: true }}); }
   }
   statusEl.className="status"; statusEl.textContent="";

@@ -14,7 +14,8 @@ function csvCell(v) {
 const COLUMNS = [
   "key", "received_at_cst", "received_at_utc",
   "email", "organization",
-  "quadrant", "density", "optionality", "alumni_capital",
+  "quadrant", "placement_type", "label",
+  "density", "optionality", "alumni_capital",
   "boundary", "standard", "reflection", "source"
 ];
 
