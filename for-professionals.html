@@ -72,38 +72,41 @@
 .a-hero .a-position-line { margin-bottom: 28px; }
 .a-hero .body { font-size: 16px; line-height: 1.65; color: var(--ink); max-width: 720px; }
 
-/* ── TIME-BOUND: Lightning Lesson banner, session of September 2, 2026 ──
-   Sits below the priority list form as the lower-commitment alternative, so
-   the free session never reads as part of the September 16 assessment above it.
-   To retire it, delete this block and the matching <section class="ll-banner">
-   in the body. To run the next session, update .ll-date, the heading, the
-   description, and the href. Nothing else on the page depends on it. */
-.ll-banner { padding: 56px 0 8px; border-top: 1px solid var(--line); }
-.ll-lead { font-size: 15px; font-weight: 700; color: var(--muted); margin-bottom: 16px; }
-.ll-inner { background: var(--navy); border-left: 4px solid var(--gold); border-radius: 14px; padding: 30px 34px; display: flex; align-items: center; justify-content: space-between; gap: 28px; flex-wrap: wrap; }
-.ll-copy { min-width: 0; }
-.ll-kicker { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-bottom: 14px; }
-.ll-tag { font-size: 10px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--navy); background: var(--gold); border-radius: 3px; padding: 5px 9px; }
-.ll-date { font-size: 10px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); }
-.ll-copy h2 { font-size: clamp(21px, 2.4vw, 27px); line-height: 1.15; color: #fff; margin-bottom: 10px; }
-.ll-copy p { font-size: 14.5px; line-height: 1.6; color: rgba(255,255,255,.74); max-width: 620px; }
-.ll-cta { flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center; background: var(--rust); color: #fff; font-weight: 700; font-size: 14px; padding: 15px 26px; border-radius: 4px; text-decoration: none; }
-/* ".lean-page a { color: inherit }" is (0,1,1) and was outranking the (0,1,0)
-   rule above, so this button rendered --ink on rust: 3.09:1. Restated at
-   (0,1,1) so the intended white wins, which measures 5.12:1. */
-a.ll-cta { color: #fff; }
+
 
 /* What is included */
 .a-section { padding: 48px 0; }
 .a-included { display: grid; grid-template-columns: repeat(2,1fr); gap: 10px; margin-top: 8px; }
 .a-included div { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px; font-size: 14.5px; color: var(--ink); }
 
-/* Price and enrollment */
-.a-price-box { background: var(--navy); border-radius: 14px; padding: 36px 40px; color: #fff; text-align: center; margin-top: 10px; }
-.a-price-box .amount { font-family: Georgia, serif; font-size: 40px; color: var(--gold); margin-bottom: 6px; }
-.a-price-box .session { font-size: 15px; font-weight: 700; color: #fff; margin-bottom: 10px; }
-.a-price-box .limit { font-size: 13px; color: rgba(255,255,255,.72); letter-spacing: .04em; text-transform: uppercase; margin-bottom: 24px; }
-.a-price-box .note { font-size: 13px; color: rgba(255,255,255,.65); margin-top: 18px; max-width: 480px; margin-left: auto; margin-right: auto; }
+/* ── YOUR PATH: the two live sessions ──
+   Replaces the retired Lightning Lesson banner and the standalone price block.
+   Two columns on desktop; one column on phones, and because September 2 is
+   first in the markup it is also first when they stack, so the order stays
+   chronological without needing to reorder anything. */
+.path-section { padding: 8px 0 48px; }
+.path-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: stretch; margin-top: 8px; }
+.path-card { border-radius: 14px; padding: 30px 32px; display: flex; flex-direction: column; }
+.path-card h3 { font-size: clamp(20px, 2.2vw, 25px); line-height: 1.15; margin-bottom: 10px; }
+.path-card p { font-size: 14.5px; line-height: 1.6; }
+.path-label { font-size: 10px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; margin-bottom: 14px; }
+.path-date { font-size: 13px; font-weight: 700; margin-bottom: 12px; }
+.path-cta { align-self: flex-start; margin-top: auto; }
+.path-card > p { margin-bottom: 22px; }
+
+/* Secondary: the shorter, earlier session sits lighter. */
+.path-card.secondary { background: var(--paper); border: 1px solid var(--line); }
+.path-card.secondary .path-label { color: var(--rust-ink); }
+.path-card.secondary .path-date { color: var(--navy); }
+.path-card.secondary p { color: var(--muted); }
+
+/* Primary: the flagship carries the navy treatment. --gold on navy is 6.80:1;
+   white at .74 is 8.9:1. */
+.path-card.primary { background: var(--navy); border: 1px solid var(--navy); }
+.path-card.primary h3 { color: #fff; }
+.path-card.primary .path-label { color: var(--gold); }
+.path-card.primary .path-date { color: #fff; }
+.path-card.primary p { color: rgba(255,255,255,.74); }
 
 /* Priority list */
 /* scroll-margin-top clears the fixed nav, which otherwise covers the top of
@@ -147,9 +150,9 @@ a.ll-cta { color: #fff; }
 
 @media (max-width: 900px) {
   .lean-page { padding-top: 76px; }
-  .ll-inner { padding: 26px 22px; }
-  .ll-cta { width: 100%; }
   .a-included { grid-template-columns: 1fr; }
+  .path-grid { grid-template-columns: 1fr; }
+  .path-cta { width: 100%; }
   .a-priority-grid { grid-template-columns: 1fr; gap: 32px; }
   .a-form { grid-template-columns: 1fr; }
   .a-ladder-grid { grid-template-columns: 1fr; }
@@ -205,19 +208,6 @@ a.ll-cta { color: #fff; }
   </div>
 </section>
 
-<!-- 5C PRICE AND ENROLLMENT -->
-<section class="a-section">
-  <div class="lean-wrap">
-    <div class="a-price-box">
-      <div class="amount">Free</div>
-      <div class="session">Wednesday, September 16, 2026 &middot; 6:00 to 7:30 PM CT</div>
-      <div class="limit">Open registration</div>
-      <a class="lean-btn primary large" href="#priority-list">Get notified when registration opens</a>
-      <p class="note">Registration is not open yet. Add your name and you will get the link first. Cannot attend live? Register anyway. The teaching and assessment portion will be recorded for registrants. The live Q&amp;A is not included in the replay.</p>
-    </div>
-  </div>
-</section>
-
 <!-- 5D PRIORITY LIST FORM -->
 <section class="a-priority" id="priority-list">
   <div class="lean-wrap wide">
@@ -260,21 +250,30 @@ a.ll-cta { color: #fff; }
   </div>
 </section>
 
-<!-- TIME-BOUND: Lightning Lesson banner, session of September 2, 2026.
-     Delete this section and the .ll-banner CSS block to retire it. -->
-<section class="ll-banner">
+<!-- 5C YOUR PATH. Two sessions, side by side on desktop and stacked on phones
+     with September 2 first. Both are time-bound: to retire a card, delete its
+     <article> and the matching .path-* CSS stays in use by the other. -->
+<section class="a-section path-section">
   <div class="lean-wrap">
-    <div class="ll-lead">Not ready for the full assessment? Start here.</div>
-    <div class="ll-inner">
-      <div class="ll-copy">
-        <div class="ll-kicker">
-          <span class="ll-tag">Free Lightning Lesson</span>
-          <span class="ll-date">Wednesday, September 2, 2026 &middot; 6:00 to 6:45 PM CT</span>
-        </div>
-        <h2>How to Tell If Your Career Is Stalling</h2>
+    <span class="lean-eyebrow">Your Path</span>
+    <div class="path-grid">
+
+      <article class="path-card secondary">
+        <div class="path-label">Free Lightning Lesson</div>
+        <h3>How to Tell If Your Career Is Stalling</h3>
+        <div class="path-date">Wednesday, September 2, 2026 &middot; 6:00 to 6:45 PM CT</div>
         <p>Three signs your role may have stopped building your capability and future options, even while you are performing well.</p>
-      </div>
-      <a class="ll-cta" href="https://maven.com/p/5162f2/how-to-tell-if-your-career-is-stalling" target="_blank" rel="noopener">Register Free &rarr;</a>
+        <a class="lean-btn outline path-cta" href="https://maven.com/p/5162f2/how-to-tell-if-your-career-is-stalling" target="_blank" rel="noopener">Register Free &rarr;</a>
+      </article>
+
+      <article class="path-card primary">
+        <div class="path-label">Free Live Assessment</div>
+        <h3>Decide Whether to Stay or Leave Your Job</h3>
+        <div class="path-date">Wednesday, September 16, 2026 &middot; 6:00 to 7:30 PM CT</div>
+        <p>The full twelve-statement Capability Position Read with live evidence calibration, provisional Four States placement, and a written Next-Move Note.</p>
+        <a class="lean-btn light path-cta" href="#priority-list">Get notified when registration opens</a>
+      </article>
+
     </div>
   </div>
 </section>
