@@ -15,7 +15,7 @@
   ],
 
   "revision": {
-    "date": "2026-08-13",
+    "date": "2026-08-14",
     "verified_against": "repository at main, commit ba7512b, plus the accessibility pass on top of it",
     "verified_by": "field-by-field extraction from the HTML, not from prior documentation",
     "production_verified": false,
@@ -114,39 +114,62 @@
       "subtitle": "A Live Career Growth Assessment",
       "method": "The Capability Position Read",
       "route": "/for-professionals",
-      "price_usd": 500,
-      "price_display": "$500",
-      "price_display_permitted_on": ["for-professionals.html"],
-      "price_display_note": "Operator decision: the $500 figure appears on for-professionals.html only.",
-      "participant_cap": 12,
-      "participant_cap_display": "Limited to 12 participants",
-      "duration": "two hours",
+      "price_usd": 0,
+      "price_display": "Free",
+      "price_change_note": "Was $500 with a 12-participant cap. Changed to a free, open-registration flagship by operator decision, August 13 2026.",
+      "participant_cap": null,
+      "participant_cap_display": "Open registration",
+      "duration": "90 minutes",
+      "duration_detail": "75-minute recorded teaching and assessment core, then a 15-minute live-only question and answer",
       "session": {
         "date": "2026-09-16",
         "date_display": "Wednesday, September 16, 2026",
         "start_time": "18:00",
-        "end_time": "20:00",
-        "time_display": "6:00 to 8:00 PM CT",
+        "end_time": "19:30",
+        "time_display": "6:00 to 7:30 PM CT",
         "timezone": "America/Chicago"
       },
       "minimum_age": 18,
-      "minimum_age_display": "Participants must be 18 or older",
-      "recording": "Not recorded by anyone. Participants may not record.",
-      "refunds": "Governed by Maven's terms. All fees non-refundable.",
-      "refunds_note": "Operator decision: do not invent a separate refund policy.",
+      "minimum_age_published_on": ["terms.html"],
+      "minimum_age_note": "Operator decision, August 14 2026: the requirement is stated in the Terms of Use only. The line was removed from the enrollment box on for-professionals.html, reversing the earlier decision to show it in both places.",
+      "recording": "The teaching and assessment portion is recorded and made available to registrants. The live question and answer portion is not recorded and is not in the replay. Participants may not record.",
+      "refunds": "No fee, so nothing to refund. Where a session or product does carry a fee, Maven's terms govern and all fees are non-refundable.",
       "transfers": {
         "published": false,
         "note": "Transfers are allowed in practice. Operator decision: do not publish a transfer policy."
       },
+      "format": "guided self-read",
+      "format_note": "Called a guided self-read, not a live assessment, from August 14 2026. The session guides a room through the instrument; it is not personalized analysis of one participant.",
       "includes": [
-        "The Capability Formation Field Kit",
-        "Live 30-Day Evidence Review"
+        "90-minute guided self-read",
+        "Twelve-statement Capability Position Read, completed twice",
+        "Evidence-led second reading",
+        "Provisional state or boundary reading",
+        "Seven categories of move",
+        "Live Q&A as time allows"
       ],
-      "includes_note": "The Live 30-Day Evidence Review is included in the place. Operator decision: do not label it optional.",
+      "includes_note": "Seven categories of move are taught in the session; the participant leaves having identified one category worth testing. Both figures are correct and describe different things. The Field Kit, the 30-day evidence process and the 90-day rescore are no longer included: they belonged to the paid version.",
+      "excludes": ["Written Next-Move Note"],
+      "excludes_note": "The written Next-Move Note moved to the paid Private Capability Position Read on August 14 2026 and must not be promised for the free session. Q&A is offered as time allows rather than guaranteed.",
       "registration_url": {
         "published": false,
-        "note": "Enrollment is not open. The page carries a priority-list form rather than a registration link."
+        "intended": "https://maven.com/temidayo-afonja/decide-whether-to-stay-or-leave-your-job",
+        "note": "Maven registration is not open yet, so this URL is recorded but not linked anywhere. The homepage CTA reads Register Free and points at /for-professionals, which carries the notify form. Swap both to the direct Maven link when registration opens."
       }
+    },
+
+    "private_capability_position_read": {
+      "name": "Private Capability Position Read",
+      "label": "One to one",
+      "price_usd": 500,
+      "price_display": "$500",
+      "route": "/for-professionals",
+      "delivery": "One-to-one session in which Temidayo interprets the participant's evidence with them.",
+      "differentiator": "A personalized Next-Move Note based on the participant's specific position, rather than the provisional group reading the free session produces.",
+      "cta": "Request a Private Read",
+      "cta_destination": "mailto:temidayo@thedensitygroup.com?subject=Private%20Capability%20Position%20Read%20Inquiry",
+      "cta_destination_note": "Originally supplied as temidayo@temidayoafonja.com and flagged, because every other published address on the site is on thedensitygroup.com. Operator corrected it to thedensitygroup.com on 2026-08-14. Subject line unchanged.",
+      "added": "2026-08-14"
     },
 
     "lightning_lesson": {
@@ -235,11 +258,15 @@
     },
     "field_kit": {
       "name": "The Capability Formation Field Kit",
-      "price_usd": 75,
-      "price_display": "$75 &middot; instant digital access",
+      "price_usd": 150,
+      "price_display": "$150 &middot; instant digital access",
+      "purchase_url": "https://temidayoafonja.gumroad.com/l/czmqp",
+      "purchase_url_note": "Linked directly from for-professionals.html and book.html since August 14 2026. The /fieldkit forced redirect in netlify.toml still works and still serves links published elsewhere.",
+      "price_change_note": "Was $75. Raised to $150 by operator decision, August 13 2026, when the live assessment became free.",
+      "included_in_live_session": false,
       "url": "https://temidayoafonja.gumroad.com/l/czmqp",
       "url_note": "Reached through the forced /fieldkit redirect in netlify.toml, not linked directly in page markup.",
-      "included_in": "the professional workshop"
+      "included_in": null
     }
   },
 
@@ -247,6 +274,7 @@
     "primary_enterprise": {
       "text": "Bring a Consequential Decision",
       "destination": "/executive-briefing#inquiry",
+      "destination_note": "Single destination as of August 14 2026. Three in-body buttons on the homepage previously pointed at work.html#get-in-touch while the nav and footer pointed at the briefing, so the same label led to two different places. Corrected by operator instruction.",
       "occurrences": 39,
       "nav_occurrences": 13,
       "note": "Operator decision: this is the primary enterprise call to action sitewide."
@@ -260,7 +288,8 @@
       "Get the Field Kit",
       "Register Free",
       "Inquire About Speaking",
-      "Get Notified When Enrollment Opens",
+      "Get notified when registration opens",
+      "Register Free",
       "Skip to main content"
     ],
     "other_published_ctas_note": "Read off the rendered pages. 'Skip to main content' is the accessibility bypass link added August 2026, present on all fifteen pages."
