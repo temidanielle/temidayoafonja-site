@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Capability Formation Brief — cover</title>
+<!-- Self-hosted Cormorant Garamond + Montserrat, the same families the site uses.
+     Served over http by covers/build-covers.mjs so the /fonts/ paths inside
+     fonts.css resolve. Text stays live DOM text, never outlines, so every line
+     remains editable up to the export. -->
+<link rel="stylesheet" href="/fonts.css">
+<style>
+  :root {
+    --navy: #0f2347;
+    --cream: #f5f0e8;
+    --gold: #c9a84c;
+
+    /* 1664 x 936, 16:9. Side margin keeps text clear of a LinkedIn centre crop. */
+    --canvas-w: 1664px;
+    --canvas-h: 936px;
+    --safe-x: 150px;
+    /* Titles are fitted to this measure, not to the full safe box, so no line
+       ever runs the full width of the canvas. It is what holds the generous
+       side margins the covers depend on. */
+    --title-measure: 1250px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    width: var(--canvas-w);
+    height: var(--canvas-h);
+    background: var(--navy);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: geometricPrecision;
+  }
+
+  .cover {
+    position: relative;
+    width: var(--canvas-w);
+    height: var(--canvas-h);
+    background: var(--navy);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* ---- publication line ------------------------------------------------ */
+  .publication {
+    margin-top: 92px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    letter-spacing: 0.30em;
+    /* letter-spacing pads the right edge; pull it back so the line optically centres */
+    text-indent: 0.30em;
+    color: var(--cream);
+  }
+
+  /* ---- title ----------------------------------------------------------- */
+  .title-block {
+    position: absolute;
+    /* Just below true centre: the type sits where the eye expects it once the
+       publication line above and the byline below are carrying the corners. */
+    top: 52.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(var(--canvas-w) - (var(--safe-x) * 2));
+    text-align: center;
+  }
+
+  .title {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+    font-size: 132px; /* fitTitle() shrinks this if a line runs long */
+    line-height: 1.10;
+    letter-spacing: 0.005em;
+    color: var(--cream);
+    white-space: nowrap;
+  }
+
+  .title span { display: block; }
+
+  /* ---- divider + metadata ---------------------------------------------- */
+  .rule {
+    width: 148px;
+    height: 2px;
+    background: var(--gold);
+    margin: 54px auto 0;
+  }
+
+  .meta {
+    margin-top: 44px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 0.28em;
+    text-indent: 0.28em;
+    line-height: 2.1;
+  }
+
+  .meta .edition { color: rgba(245, 240, 232, 0.92); }
+  .meta .date { color: rgba(245, 240, 232, 0.55); }
+
+  /* ---- byline ---------------------------------------------------------- */
+  .byline {
+    position: absolute;
+    bottom: 88px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.32em;
+    text-indent: 0.32em;
+    color: var(--gold);
+  }
+
+  /* ---- optional motif --------------------------------------------------
+     Off unless ?motif=1. Editorial texture only: a faint drift of hairlines
+     and points across the lower third, no destination marker, nothing to
+     decode. Sits under the type and never competes with it. */
+  .motif {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 312px;
+    opacity: 0.5;
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+  <div class="cover">
+    <div class="publication" id="publication"></div>
+
+    <div class="title-block">
+      <h1 class="title" id="title"></h1>
+      <div class="rule"></div>
+      <div class="meta">
+        <div class="edition" id="edition"></div>
+        <div class="date" id="date"></div>
+      </div>
+    </div>
+
+    <div class="byline" id="byline"></div>
+  </div>
+
+<script>
+  const params = new URLSearchParams(location.search);
+  const get = (key, fallback) => params.get(key) ?? fallback;
+
+  document.getElementById('publication').textContent =
+    get('publication', 'THE CAPABILITY FORMATION BRIEF');
+  document.getElementById('edition').textContent = get('edition', 'EDITION THREE');
+  document.getElementById('date').textContent = get('date', 'SEPTEMBER 2026');
+  document.getElementById('byline').textContent = get('byline', 'TEMIDAYO AFONJA');
+
+  const lines = get('title', 'What Work Redesign Can|Quietly Remove').split('|');
+  const titleEl = document.getElementById('title');
+  titleEl.innerHTML = '';
+  for (const line of lines) {
+    const span = document.createElement('span');
+    span.textContent = line;
+    titleEl.appendChild(span);
+  }
+
+  // Step the title down until the longest line sits inside the title measure.
+  // build-covers.mjs measures every edition first and then re-renders them all
+  // at the smallest result, so the three covers share one title size.
+  function fitTitle() {
+    const forced = Number(params.get('size'));
+    const measure = parseFloat(
+      getComputedStyle(document.documentElement).getPropertyValue('--title-measure'));
+    // The line spans are block-level and fill the column, so measure the text
+    // itself with a range rather than the element box.
+    const textWidth = el => {
+      const range = document.createRange();
+      range.selectNodeContents(el);
+      return range.getBoundingClientRect().width;
+    };
+
+    let size = forced || 132;
+    titleEl.style.fontSize = size + 'px';
+    while (!forced && size > 72) {
+      const widest = Math.max(...[...titleEl.children].map(textWidth));
+      if (widest <= measure) break;
+      size -= 1;
+      titleEl.style.fontSize = size + 'px';
+    }
+    window.__fittedSize = size;
+  }
+
+  if (params.get('motif') === '1') {
+    const svg = `
+      <svg class="motif" viewBox="0 0 1664 312" preserveAspectRatio="none"
+           xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#f5f0e8" stop-opacity="0"/>
+            <stop offset="0.35" stop-color="#f5f0e8" stop-opacity="0.16"/>
+            <stop offset="0.7" stop-color="#f5f0e8" stop-opacity="0.07"/>
+            <stop offset="1" stop-color="#f5f0e8" stop-opacity="0"/>
+          </linearGradient>
+          <linearGradient id="fadeGold" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="#c9a84c" stop-opacity="0"/>
+            <stop offset="0.45" stop-color="#c9a84c" stop-opacity="0.20"/>
+            <stop offset="1" stop-color="#c9a84c" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <!-- Kept below y=236 so nothing passes through the byline above it. -->
+        <g stroke="url(#fade)" fill="none" stroke-width="1">
+          <path d="M96 294 C 420 290, 700 268, 1010 272 S 1500 258, 1580 250"/>
+          <path d="M96 276 C 460 272, 760 260, 1080 256 S 1520 246, 1580 240"/>
+          <path d="M120 306 C 430 302, 690 280, 980 286 S 1460 268, 1560 260"/>
+        </g>
+        <g stroke="url(#fadeGold)" fill="none" stroke-width="1">
+          <path d="M150 286 C 470 282, 730 262, 1040 266 S 1490 250, 1550 244"/>
+        </g>
+        <g fill="url(#fade)">
+          <circle cx="330" cy="292" r="2"/>
+          <circle cx="620" cy="281" r="2"/>
+          <circle cx="905" cy="274" r="2"/>
+          <circle cx="1190" cy="269" r="2"/>
+          <circle cx="1420" cy="261" r="2"/>
+        </g>
+      </svg>`;
+    document.querySelector('.cover').insertAdjacentHTML('beforeend', svg);
+  }
+
+  document.fonts.ready.then(() => {
+    fitTitle();
+    // Second pass: metrics settle once the fitted size is applied.
+    requestAnimationFrame(() => {
+      fitTitle();
+      document.documentElement.dataset.ready = 'true';
+    });
+  });
+</script>
+</body>
+</html>

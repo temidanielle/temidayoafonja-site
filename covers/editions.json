@@ -1,0 +1,25 @@
+{
+  "_comment": "Cover copy for The Capability Formation Brief. Text stays editable here; covers/build-covers.mjs renders each entry to covers/output/. Titles are title case, exactly as the line array breaks them. No subtitles on covers.",
+  "publication": "THE CAPABILITY FORMATION BRIEF",
+  "byline": "TEMIDAYO AFONJA",
+  "editions": [
+    {
+      "slug": "edition-three-september-2026",
+      "titleLines": ["What Work Redesign Can", "Quietly Remove"],
+      "edition": "EDITION THREE",
+      "date": "SEPTEMBER 2026"
+    },
+    {
+      "slug": "edition-four-october-2026",
+      "titleLines": ["When Hiring Returns,", "What Are You Rebuilding?"],
+      "edition": "EDITION FOUR",
+      "date": "OCTOBER 2026"
+    },
+    {
+      "slug": "edition-five-november-2026",
+      "titleLines": ["Who Got to Practice", "Before You Needed Them?"],
+      "edition": "EDITION FIVE",
+      "date": "NOVEMBER 2026"
+    }
+  ]
+}
