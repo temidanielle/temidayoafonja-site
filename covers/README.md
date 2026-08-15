@@ -10,6 +10,7 @@ edition stays in the same publication system as the July/August/September covers
 | `editions.json` | The copy. Publication line, title lines, edition, date, byline. |
 | `brief-cover.html` | The cover itself: one parameterised page, live DOM text. |
 | `build-covers.mjs` | Renders each edition to `output/` with Playwright. |
+| `verify-covers.mjs` | Reads the exported PNGs back and checks they are one family. |
 | `output/*.png` | The exported covers, 1664 × 936. |
 
 ## Build
@@ -24,6 +25,21 @@ node covers/build-covers.mjs edition-four    # a single edition, matched by slug
 Requires `playwright` (`npm i -D playwright`). The script serves the repo over a
 local http port so the `/fonts/` URLs inside `fonts.css` resolve to the site's
 self-hosted woff2 files; nothing is fetched from the network.
+
+## Verify
+
+```sh
+node covers/verify-covers.mjs
+```
+
+This reads the pixels back out of every exported PNG and reports where the title
+ink actually landed, failing if one cover is off the group. Run it after every
+build. A cover is a single image with no test around it, so a bad export looks
+exactly like a design decision — this is what tells the difference.
+
+Do not pipe the build's output through `head`; the render can be killed partway
+and leave a stale PNG behind that still looks plausible. That failure is the
+reason this check exists.
 
 ## The system
 
