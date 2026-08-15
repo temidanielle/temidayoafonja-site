@@ -466,13 +466,14 @@
 <script>
 /* ============================================================
    CONFIGURATION
-   BOOKING_URL: where "Book a results briefing" points. Swap for a
-     real scheduler (Calendly, etc.) when one exists.
+   BOOKING_URL: where the closing CTA points. This page sits closer to
+     the individual path than the enterprise one, so it routes to the free
+     guided career assessment.
    CAPTURE_ENDPOINT: Netlify function that durably stores the lead.
    FORMSPREE_ENDPOINT: emails the submission to Temidayo (same form
      as the rest of the site; forwards to temidayo@thedensitygroup.com).
    ============================================================ */
-const BOOKING_URL = "work.html#get-in-touch";
+const BOOKING_URL = "/for-professionals";
 const CAPTURE_ENDPOINT = "/.netlify/functions/ai-readiness-capture";
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/xjgapael";
 
@@ -842,7 +843,7 @@ function renderResult(engine, narrative, intake){
       <p class="nh">This read came from one respondent and fifteen statements.</p>
       <p>The next step is a thirty-minute results briefing with Temidayo Afonja: your read, walked through by the person who built the instrument, with the questions your score cannot answer on its own. No cost, no deck.</p>
       <div class="result-actions">
-        <a class="btn gold" href="${BOOKING_URL}" style="text-decoration:none;">Book a results briefing</a>
+        <a class="btn gold" href="${BOOKING_URL}" style="text-decoration:none;">Explore the Career Assessment</a>
         <button class="btn ghost" id="reportBtn">Get the written report</button>
       </div>
       <div class="gate" id="gate" hidden>
