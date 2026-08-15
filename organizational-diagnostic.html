@@ -131,6 +131,11 @@
   .opt input:checked + label{border-color:var(--gold);background:var(--navy-lift);color:var(--sand);font-weight:500;box-shadow:inset 3px 0 0 var(--rust);}
   /* "Not enough visibility to answer", visually present but subordinate to the
      three scored options: smaller, dashed, lower-contrast, no gold/rust accents. */
+  /* Scope hints. Kept lighter than the label they follow, and held at normal
+     weight so the checked state (font-weight 500) does not pull them up with
+     it. --sand-mute is 6.5:1 on the unchecked card and 5.3:1 on the checked
+     lift, so both states clear AA. */
+  .opt-hint{font-size:12.5px;color:var(--sand-mute);font-weight:400;}
   .opt-nv{margin-top:6px;}
   .opt-nv label{padding:8px 15px;font-size:12.5px;color:var(--sand-mute);border-style:dashed;border-color:rgba(65,89,138,.9);background:transparent;}
   .opt-nv label:hover{border-color:var(--sand-mute);}
@@ -369,9 +374,9 @@
     <p class="q-text">What are you reading for?</p>
     <div class="opts">
       <div class="opt"><input type="radio" name="scope" id="scope_0" value="The whole organization"><label for="scope_0">The whole organization</label></div>
-      <div class="opt"><input type="radio" name="scope" id="scope_1" value="A business unit"><label for="scope_1">A business unit</label></div>
-      <div class="opt"><input type="radio" name="scope" id="scope_2" value="A function"><label for="scope_2">A function</label></div>
-      <div class="opt"><input type="radio" name="scope" id="scope_3" value="A team"><label for="scope_3">A team</label></div>
+      <div class="opt"><input type="radio" name="scope" id="scope_1" value="A business unit"><label for="scope_1">A business unit <span class="opt-hint">(a division or region with its own P&amp;L)</span></label></div>
+      <div class="opt"><input type="radio" name="scope" id="scope_2" value="A function"><label for="scope_2">A function <span class="opt-hint">(HR, engineering, finance, and so on)</span></label></div>
+      <div class="opt"><input type="radio" name="scope" id="scope_3" value="A team"><label for="scope_3">A team or project team</label></div>
     </div>
     <p class="reflect-sub" style="margin-top:10px;">Answer for one scope you know well, based on what has happened in the last twelve to eighteen months.</p>
   </div>
