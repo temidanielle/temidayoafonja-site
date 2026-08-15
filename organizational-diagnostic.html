@@ -33,6 +33,9 @@
     --navy:#0F2347;
     --navy-card:#1B3360;
     --navy-lift:#234077;
+    /* Slightly deeper lift used only behind the leaders panel, so the brand
+       gold heading clears AA there without altering the gold itself. */
+    --navy-lift-deep:#1E3868;
     --navy-line:#41598a;
     --rust:#C1440E;
     --rust-light:#E2733E;
@@ -174,7 +177,9 @@
   .cell .cc{font-size:10.5px;letter-spacing:0.1em;text-transform:uppercase;color:rgba(245,240,232,.82);}
   .cell.active{background:var(--rust);border-color:var(--rust-light);box-shadow:0 0 0 3px rgba(193,68,14,.25),0 6px 20px rgba(193,68,14,.35);}
   .cell.active .cn{color:#fff;}
-  .cell.active .cc{color:rgba(255,255,255,.9);}
+  /* Full white rather than 90 percent: at 10.5px this label needs 4.5:1 on
+     rust, and the 10 percent transparency left it at 4.43. */
+  .cell.active .cc{color:#fff;}
   .matrix-dot{position:absolute;width:18px;height:18px;border-radius:50%;transform:translate(-50%,-50%);background:radial-gradient(circle at 35% 30%,#fff,var(--gold-soft) 45%,var(--gold-deep) 100%);box-shadow:0 0 0 4px rgba(201,168,76,.28),0 0 20px 6px rgba(201,168,76,.6),0 0 2px rgba(255,255,255,.8);z-index:3;pointer-events:none;}
 
   .axis-caption{font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);text-align:center;margin:10px 0 0 64px;}
@@ -195,7 +200,7 @@
 
   .read{margin-top:34px;}
   .read p{font-size:16px;color:var(--sand-dim);margin:0 0 18px;}
-  .leaders{background:var(--navy-lift);border-left:3px solid var(--rust);border-radius:0 12px 12px 0;padding:22px 24px;margin-top:8px;}
+  .leaders{background:var(--navy-lift-deep);border-left:3px solid var(--rust);border-radius:0 12px 12px 0;padding:22px 24px;margin-top:8px;}
   .leaders .lh{font-family:"Cormorant Garamond",serif;font-size:22px;color:var(--gold);margin:0 0 10px;}
   .leaders p{font-size:15.5px;color:var(--sand-dim);margin:0;}
 
@@ -944,7 +949,7 @@ function renderResult(d){
     </div>
     <div class="scope-note">
       <p>This self-read provides an initial perspective based on one leader's responses. It can surface questions worth investigating, but it does not replace a multi-source organizational engagement.</p>
-      <a href="work.html#get-in-touch">Bring a Consequential Decision &rarr;</a>
+      <a href="executive-briefing.html#inquiry">Bring a Consequential Decision &rarr;</a>
     </div>
     <div class="result-actions">
       <button class="makereport" id="reportBtn">Create the report</button>
