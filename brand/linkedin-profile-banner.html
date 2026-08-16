@@ -1,0 +1,201 @@
+<meta charset="utf-8">
+<title>The Density Group — LinkedIn profile banner source</title>
+<!--
+  Source of truth for /linkedin-profile-banner.png (1584 x 396, LinkedIn personal
+  profile banner). Rendered headless at deviceScaleFactor 1 by
+  brand/render-linkedin-profile-banner.mjs.
+
+  Left 31% of the canvas is deliberately empty: LinkedIn overlaps the circular
+  profile photograph there. All message-carrying content sits in the centre-right.
+-->
+<style>
+  /* Brand faces, loaded straight from the site's self-hosted woff2 files so the
+     banner is set in the same type as the site and the Brief. */
+  @font-face {
+    font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 500;
+    src: url(../fonts/CormorantGaramond-500-normal-latin-abcaa8.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Cormorant Garamond'; font-style: normal; font-weight: 400;
+    src: url(../fonts/CormorantGaramond-400-normal-latin-abcaa8.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'DM Sans'; font-style: normal; font-weight: 400;
+    src: url(../fonts/DMSans-400-normal-latin-1c49a6.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'DM Sans'; font-style: normal; font-weight: 500;
+    src: url(../fonts/DMSans-500-normal-latin-1c49a6.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'DM Sans'; font-style: normal; font-weight: 600;
+    src: url(../fonts/DMSans-600-normal-latin-1c49a6.woff2) format('woff2');
+  }
+
+  :root {
+    --navy: #0F2347;
+    --navy-lift: #22406F;
+    --cream: #F5F0E8;
+    --gold: #C9A84C;
+    --rust: #C1440E;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1584px; height: 396px; }
+  body { background: var(--navy); }
+
+  .canvas {
+    position: relative;
+    width: 1584px;
+    height: 396px;
+    overflow: hidden;
+    background: var(--navy);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Layer 1: barely visible structural field ──
+     Hairline verticals, masked away from the photo zone and the outer edges.
+     Read as latent structure under the field, not as a graphic. */
+  .field {
+    position: absolute; inset: 0;
+    background-image: repeating-linear-gradient(
+      to right,
+      rgba(245,240,232,0.030) 0px,
+      rgba(245,240,232,0.030) 1px,
+      transparent 1px,
+      transparent 76px
+    );
+    -webkit-mask-image: linear-gradient(to right,
+      transparent 0%, transparent 22%, rgba(0,0,0,0.55) 44%,
+      rgba(0,0,0,1) 62%, rgba(0,0,0,1) 88%, transparent 100%);
+    mask-image: linear-gradient(to right,
+      transparent 0%, transparent 22%, rgba(0,0,0,0.55) 44%,
+      rgba(0,0,0,1) 62%, rgba(0,0,0,1) 88%, transparent 100%);
+  }
+
+  /* ── Layer 2: light ──
+     A soft lift behind the statement and a deepening under the profile
+     photograph, so the empty left third reads as intended, not as leftover. */
+  .lift {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(760px 430px at 47% 36%, rgba(34,64,111,0.50), transparent 72%),
+      radial-gradient(520px 380px at 9% 104%, rgba(7,17,38,0.62), transparent 70%);
+  }
+
+  /* ── Layer 3: paper grain ── matches the site body's tooth. */
+  .grain {
+    position: absolute; inset: 0; opacity: 0.5;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+  }
+
+  /* ── Content ── */
+  .stack {
+    position: absolute;
+    left: 496px;   /* 31.3% — clear of the profile photograph */
+    top: 54px;
+  }
+
+  .eyebrow {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 12.5px;
+    letter-spacing: 0.40em;
+    text-transform: uppercase;
+    color: var(--gold);
+    line-height: 1;
+  }
+
+  h1 {
+    margin-top: 23px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 53px;
+    line-height: 1.22;
+    letter-spacing: 0.004em;
+    color: var(--cream);
+  }
+  h1 span { display: block; white-space: nowrap; }
+
+  .rule {
+    width: 54px; height: 1px;
+    margin: 23px 0 17px;
+    background: rgba(201,168,76,0.62);
+  }
+
+  .meta {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 10.5px;
+    letter-spacing: 0.215em;
+    text-transform: uppercase;
+    color: rgba(245,240,232,0.70);
+    line-height: 1;
+    white-space: nowrap;
+  }
+  .meta i { font-style: normal; color: rgba(201,168,76,0.88); padding: 0 2px; }
+
+  /* ── Brand lockup, lower right of the safe area ──
+     bottom: 61px seats the lockup's baseline on the same line as the metadata
+     row on the left (stack top 54 + 12.5 + 23 + 194 + 23 + 1 + 17 + 10.5 = 335). */
+  .lockup {
+    position: absolute;
+    right: 84px;
+    bottom: 61px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .lockup svg { display: block; flex: none; }
+  .lockup .names { text-align: right; }
+  .lockup .name {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 0.20em;
+    text-transform: uppercase;
+    color: rgba(245,240,232,0.94);
+    line-height: 1;
+  }
+  .lockup .offer {
+    margin-top: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 9.2px;
+    letter-spacing: 0.155em;
+    text-transform: uppercase;
+    color: rgba(201,168,76,0.86);
+    line-height: 1;
+  }
+</style>
+
+<div class="canvas">
+  <div class="field"></div>
+  <div class="lift"></div>
+  <div class="grain"></div>
+
+  <div class="stack">
+    <div class="eyebrow">Capability Formation</div>
+    <h1>
+      <span>Before you redesign the work,</span>
+      <span>know what capability</span>
+      <span>you could lose.</span>
+    </h1>
+    <div class="rule"></div>
+    <div class="meta">AI <i>&bull;</i> Restructuring <i>&bull;</i> Succession <i>&bull;</i> Organizational Transition</div>
+  </div>
+
+  <div class="lockup">
+    <!-- The Density Group mark: three formed squares, one filled. -->
+    <svg width="32" height="32" viewBox="0 0 190 190" aria-hidden="true">
+      <rect x="4.5" y="4.5" width="85" height="85" fill="none" stroke="#C9A84C" stroke-width="9"/>
+      <rect x="100.5" y="4.5" width="85" height="85" fill="none" stroke="#C9A84C" stroke-width="9"/>
+      <rect x="4.5" y="100.5" width="85" height="85" fill="none" stroke="#C9A84C" stroke-width="9"/>
+      <rect x="100.5" y="100.5" width="85" height="85" fill="#C1440E"/>
+    </svg>
+    <div class="names">
+      <div class="name">The Density Group</div>
+      <div class="offer">Capability Formation Executive Briefing</div>
+    </div>
+  </div>
+</div>
