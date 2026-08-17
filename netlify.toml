@@ -81,6 +81,22 @@
   status = 301
   force = true
 
+# The Career Decision Evidence Check. /career-decisions is the permanent URL and
+# is the only form that should ever accumulate authority, so the .html form is
+# sent to it, exactly as /organizational-diagnostic.html is above. force = true
+# because career-decisions.html is a real file at the publish root and would
+# otherwise be served directly, leaving two live URLs for one page.
+[[redirects]]
+  from = "/career-decisions"
+  to = "/career-decisions.html"
+  status = 200
+
+[[redirects]]
+  from = "/career-decisions.html"
+  to = "/career-decisions"
+  status = 301
+  force = true
+
 # dashboard.html is an internal working view. It reads only the operator's own
 # browser localStorage and contains no credentials, endpoints, or server calls,
 # so nothing was ever exposed by it being reachable. It is nonetheless not a
@@ -115,3 +131,20 @@
   for = "/diagnostic.html"
   [headers.values]
     Content-Security-Policy = "script-src 'self' 'unsafe-inline' https://formspree.io https://plausible.io"
+
+# Career Decision Evidence Check. Declared for both paths for the same reason as
+# the two rules above: Netlify matches the requested path, not the file the 200
+# rewrite serves. Plausible is the only third-party script this page loads. There
+# is deliberately no formspree.io here, because this page posts to its own
+# Netlify function and to nothing else.
+[[headers]]
+  for = "/career-decisions"
+  [headers.values]
+    Content-Security-Policy = "script-src 'self' 'unsafe-inline' https://plausible.io"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/career-decisions.html"
+  [headers.values]
+    Content-Security-Policy = "script-src 'self' 'unsafe-inline' https://plausible.io"
+    Referrer-Policy = "strict-origin-when-cross-origin"

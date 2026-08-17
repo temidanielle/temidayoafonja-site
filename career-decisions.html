@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Career Decision Evidence Check | The Density Group</title>
+<meta name="description" content="A short evidence check for experienced professionals deciding whether to stay, leave or reposition. Three questions that read what the work has actually built.">
+<link rel="canonical" href="https://temidayoafonja.com/career-decisions">
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Density Group">
+<meta property="og:url" content="https://temidayoafonja.com/career-decisions">
+<meta property="og:title" content="Career Decision Evidence Check | The Density Group">
+<meta property="og:description" content="A short evidence check for experienced professionals deciding whether to stay, leave or reposition.">
+<meta property="og:image" content="https://temidayoafonja.com/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Career Decision Evidence Check | The Density Group">
+<meta name="twitter:description" content="A short evidence check for experienced professionals deciding whether to stay, leave or reposition.">
+<meta name="twitter:image" content="https://temidayoafonja.com/og-default.png">
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="/fonts.css">
+<link rel="stylesheet" href="/styles.css">
+
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-hFo9m_622E0tElKtUlVnx.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+
+<style>
+/* ── Career Decision Evidence Check ──
+   Page-scoped only. Every rule below is prefixed with .lean-page or a class
+   used nowhere else in the repository, so no existing page can regress from
+   this file. The visual register, the type stack, the spacing rhythm and the
+   button treatment are copied from for-professionals.html, which is the
+   closest existing professional-facing page. Nav, footer, focus ring, skip
+   link and motion come from the shared styles.css untouched.
+
+   Colours are the repository's own values: --navy, --cream, --gold and the
+   text-safe --rust-ink are read from styles.css. --rust, --ink, --muted,
+   --line, --paper are the same warm-register locals for-professionals.html
+   declares, repeated here so this page is self-contained. */
+:root {
+  --rust: #C1440E; --ink: #182238; --muted: #5D6676;
+  --line: rgba(15,35,71,.14); --paper: #FFFDF8; --soft-navy: #E9EDF4;
+}
+.lean-page { position: relative; z-index: 1; background: var(--cream); color: var(--ink); font-family: Arial, Helvetica, sans-serif; line-height: 1.56; padding-top: 96px; }
+.lean-page h1, .lean-page h2, .lean-page h3, .lean-page h4 { font-family: Georgia, 'Times New Roman', serif; font-weight: 500; letter-spacing: -.026em; color: var(--navy); margin: 0; }
+.lean-page p { margin: 0; color: var(--ink); font-size: 15px; line-height: 1.56; }
+.lean-page a { color: inherit; }
+.lean-wrap { width: min(900px, calc(100% - 48px)); margin: 0 auto; }
+.lean-wrap.wide { width: min(1120px, calc(100% - 48px)); }
+.lean-eyebrow { text-transform: uppercase; letter-spacing: .14em; font-size: 11px; font-weight: 800; color: var(--rust-ink); margin-bottom: 18px; display: block; }
+.lean-btn { display: inline-flex; align-items: center; justify-content: center; padding: 14px 22px; border-radius: 4px; font-weight: 700; font-size: 14px; font-family: Arial, Helvetica, sans-serif; text-decoration: none; cursor: pointer; border: none; }
+.lean-btn.light { background: #fff; color: var(--navy); }
+
+/* Hero. Same clamp, measure and rhythm as the hero on for-professionals.html. */
+.cd-hero { padding: 48px 0 20px; }
+.cd-hero h1 { font-size: clamp(32px, 4.6vw, 44px); line-height: 1.08; margin-bottom: 22px; }
+.cd-sub { font-family: Georgia, serif; font-size: 19px; color: var(--muted); max-width: 720px; }
+
+/* ── Capture band ──
+   The navy band and the paper form card are the approved capture treatment
+   already in production on for-professionals.html (.a-priority / .a-form-card).
+   Class names are new so the two pages never share a rule. */
+.cd-capture { background: var(--navy); padding: 64px 0; margin-top: 34px; scroll-margin-top: 104px; }
+.cd-capture .lean-eyebrow { color: var(--gold); }
+.cd-capture h2 { color: #fff; font-size: clamp(26px, 3.4vw, 38px); line-height: 1.12; margin-bottom: 14px; }
+.cd-capture > .lean-wrap > p { color: rgba(255,255,255,.74); font-size: 15px; max-width: 640px; margin-bottom: 30px; }
+.cd-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 50px; align-items: start; }
+.cd-useful .cd-label { font-size: 11px; text-transform: uppercase; letter-spacing: .13em; font-weight: 800; color: var(--gold); margin-bottom: 14px; }
+.cd-useful ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.cd-useful li { font-size: 14px; color: rgba(255,255,255,.78); padding-left: 18px; position: relative; line-height: 1.5; }
+.cd-useful li:before { content: "\2192"; position: absolute; left: 0; color: var(--gold); }
+
+.cd-card { background: var(--paper); border-radius: 10px; padding: 30px; }
+.cd-form { display: grid; grid-template-columns: 1fr; gap: 14px; }
+.cd-field { display: flex; flex-direction: column; }
+.cd-field label { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 7px; font-weight: 700; }
+.cd-field input, .cd-field textarea { width: 100%; border: 1px solid var(--line); background: #fff; color: var(--ink); border-radius: 4px; padding: 13px 14px; font: inherit; outline: none; }
+.cd-field textarea { min-height: 80px; resize: vertical; }
+/* Invalid state. Colour is never the only signal: the message below the field
+   carries the same information in text, and aria-invalid carries it to
+   assistive technology. --red-soft is the repository's own error colour. */
+.cd-field input[aria-invalid="true"], .cd-field textarea[aria-invalid="true"] { border-color: var(--red-soft); }
+.cd-note { font-size: 12px; color: var(--muted); margin-top: 6px; }
+.cd-error { font-size: 12.5px; color: #A83A2A; margin-top: 6px; font-weight: 700; }
+.cd-error:empty { display: none; }
+
+/* Consent. A real checkbox at its native size, never restyled away. */
+.cd-consent { display: flex; gap: 11px; align-items: flex-start; padding: 4px 0 2px; }
+.cd-consent input[type="checkbox"] { width: 17px; height: 17px; margin: 2px 0 0; flex: 0 0 auto; accent-color: var(--navy); }
+.cd-consent label { font-size: 12.5px; line-height: 1.5; color: var(--muted); text-transform: none; letter-spacing: 0; font-weight: 400; margin: 0; }
+.cd-consent a { color: var(--navy); text-decoration: underline; }
+.cd-submit { background: var(--rust); color: #fff; border: none; border-radius: 4px; padding: 15px; font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; }
+.cd-submit[disabled] { opacity: .72; cursor: default; }
+/* The honeypot. Off screen rather than display:none, so a scripted client that
+   filters hidden inputs still sees it. Never focusable, never announced. */
+.cd-trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+/* ── Result ──
+   Hidden until the server confirms the subscription. Never revealed on a click
+   or on a failed request. */
+.cd-result { display: none; padding: 56px 0 8px; }
+.cd-result.is-open { display: block; }
+.cd-result:focus { outline: none; }
+.cd-result h2 { font-size: clamp(24px, 3vw, 32px); line-height: 1.14; margin-bottom: 14px; }
+.cd-result > .lean-wrap > p.cd-lede { color: var(--muted); font-size: 15.5px; max-width: 680px; margin-bottom: 30px; }
+.cd-q { display: flex; flex-direction: column; gap: 14px; margin-bottom: 38px; }
+.cd-q li { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 20px 22px; display: flex; gap: 16px; align-items: baseline; }
+.cd-q ol, .cd-q ul { margin: 0; padding: 0; list-style: none; }
+.cd-q .n { font-family: Georgia, serif; font-size: 20px; color: var(--gold-ink); flex: 0 0 auto; line-height: 1.2; }
+.cd-q .t { font-size: 15.5px; line-height: 1.55; color: var(--ink); }
+
+/* One next step. Single slot, filled from the NEXT_STEP block in the script. */
+.cd-step { background: var(--navy); border-radius: 14px; padding: 30px 32px; margin-bottom: 12px; }
+.cd-step .cd-step-label { font-size: 10px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; }
+.cd-step h3 { color: #fff; font-size: clamp(20px, 2.2vw, 25px); line-height: 1.15; margin-bottom: 10px; }
+.cd-step p { color: rgba(255,255,255,.74); font-size: 14.5px; margin-bottom: 22px; }
+.cd-step .lean-btn { align-self: flex-start; }
+
+@media (max-width: 900px) {
+  .lean-page { padding-top: 76px; }
+  .cd-grid { grid-template-columns: 1fr; gap: 32px; }
+  .cd-step { padding: 26px 22px; }
+}
+/* 1.4.10 Reflow. At 320px the two column gap and the card padding are the only
+   things that push the measure, so both step down rather than the type. */
+@media (max-width: 380px) {
+  .lean-wrap, .lean-wrap.wide { width: calc(100% - 32px); }
+  .cd-card { padding: 22px 18px; }
+  .cd-q li { padding: 16px 16px; }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<nav>
+  <a href="index.html" class="nav-logo brand-lockup">
+    <span class="brand-primary">The Density Group</span>
+    <span class="brand-secondary">Capability Formation Advisory</span>
+    <span class="brand-tertiary">Founded by Temidayo Afonja</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="framework.html">Capability Formation</a></li>
+    <li><a href="work.html">Advisory</a></li>
+    <li><a href="executive-briefing.html">Executive Briefing</a></li>
+    <li><a href="case-studies.html">Evidence</a></li>
+    <li><a href="speaking.html">Speaking</a></li>
+    <li><a href="about.html">The Firm</a></li>
+    <li><a href="for-professionals.html">For Professionals</a></li>
+    <li><a href="executive-briefing.html#inquiry" class="nav-cta">Bring a Consequential Decision</a></li>
+  </ul>
+</nav>
+<main id="main" tabindex="-1">
+
+<div class="lean-page">
+
+<!-- HERO -->
+<section class="cd-hero">
+  <div class="lean-wrap">
+    <span class="lean-eyebrow fade-up delay-1">For Experienced Professionals</span>
+    <h1 class="fade-up delay-2">Before You Make the Move, Read What the Work Has Built.</h1>
+    <p class="cd-sub fade-up delay-3">A short evidence check for experienced professionals deciding whether to stay, leave or reposition.</p>
+  </div>
+</section>
+
+<!-- CAPTURE -->
+<section class="cd-capture" id="evidence-check">
+  <div class="lean-wrap wide">
+    <span class="lean-eyebrow">The Career Decision Evidence Check</span>
+    <h2>Three questions that read the work, not the job title.</h2>
+    <p>Most career decisions get made on how the role feels. These three questions ask what the work has actually built, and what that evidence supports doing next. Enter your name and email and the evidence check is sent to you.</p>
+    <div class="cd-grid">
+      <div class="cd-useful">
+        <div class="cd-label">Most useful when</div>
+        <ul>
+          <li>You are performing well but are no longer sure the role is still building you.</li>
+          <li>You are deciding whether to stay, reshape the role, move internally, or prepare to leave.</li>
+          <li>A promotion, reorganization, or role change has altered what the work is forming.</li>
+          <li>You want stronger evidence before making a high cost career decision.</li>
+        </ul>
+      </div>
+
+      <div class="cd-card">
+        <form class="cd-form" id="cdForm" novalidate>
+          <div class="cd-field">
+            <label for="cdFirst">First name</label>
+            <input id="cdFirst" name="first_name" type="text" autocomplete="given-name" required aria-required="true" aria-describedby="cdFirstError">
+            <p class="cd-error" id="cdFirstError"></p>
+          </div>
+
+          <div class="cd-field">
+            <label for="cdEmail">Email</label>
+            <input id="cdEmail" name="email" type="email" autocomplete="email" required aria-required="true" aria-describedby="cdEmailError">
+            <p class="cd-error" id="cdEmailError"></p>
+          </div>
+
+          <div class="cd-field">
+            <label for="cdDeciding">What are you currently deciding? (optional)</label>
+            <textarea id="cdDeciding" name="current_decision" autocomplete="off" aria-describedby="cdDecidingNote"></textarea>
+            <p class="cd-note" id="cdDecidingNote">Optional. Please leave out anything confidential about your employer or colleagues.</p>
+          </div>
+
+          <!-- Honeypot. Hidden from sight, from the tab order and from assistive
+               technology. A submission that fills it is refused server side. -->
+          <div class="cd-trap" aria-hidden="true">
+            <label for="cdRef">Decision reference</label>
+            <input id="cdRef" name="decision_reference" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="cd-field">
+            <div class="cd-consent">
+              <input id="cdConsent" name="marketing_consent" type="checkbox" required aria-required="true" aria-describedby="cdConsentError">
+              <label for="cdConsent">You will receive the evidence check and occasional Capability Formation guidance from Temidayo Afonja. You can unsubscribe at any time. <a href="privacy.html">Privacy</a></label>
+            </div>
+            <p class="cd-error" id="cdConsentError"></p>
+          </div>
+
+          <button class="cd-submit" id="cdSubmit" type="submit">Send me the evidence check</button>
+
+          <!-- Live regions. Both are present in the DOM from first paint, which
+               is what makes an assistive technology announce a later change to
+               them. role=status for success, role=alert for failure. -->
+          <p class="cd-error" id="cdFormError" role="alert" aria-live="assertive"></p>
+          <p class="visually-hidden" id="cdStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULT. Revealed only after the server confirms the subscription. -->
+<section class="cd-result" id="cdResult" tabindex="-1" aria-labelledby="cdResultTitle">
+  <div class="lean-wrap">
+    <span class="lean-eyebrow">Your Evidence Check</span>
+    <h2 id="cdResultTitle">Start here, before the next conversation.</h2>
+    <p class="cd-lede">The evidence check is on its way to your inbox. Here are the three questions now, so you can start on them without waiting. Answer them with examples you could actually name to someone else, not with how the work feels.</p>
+    <div class="cd-q">
+      <ul>
+        <li><span class="n">1</span><span class="t">If your title, employer and systems disappeared, what kinds of problems would people still trust you to solve?</span></li>
+        <li><span class="n">2</span><span class="t">Where have you solved a version of that problem in at least two different contexts?</span></li>
+        <li><span class="n">3</span><span class="t">What next problem would use that capability and also require you to build something you do not yet have?</span></li>
+      </ul>
+    </div>
+    <div class="cd-step" id="cdStep"></div>
+  </div>
+</section>
+
+</div>
+
+</main>
+
+<footer>
+  <div>
+    <div class="footer-logo">The Density Group</div>
+    <div class="footer-tagline">The Density Group is a Capability Formation advisory firm founded by Temidayo Afonja.</div>
+  </div>
+  <div class="footer-cols">
+    <div class="footer-col">
+      <div class="footer-col-label">The Firm</div>
+      <ul class="footer-links">
+        <li><a href="framework.html">Capability Formation</a></li>
+        <li><a href="work.html">Advisory</a></li>
+        <li><a href="executive-briefing.html">Executive Briefing</a></li>
+        <li><a href="case-studies.html">Evidence</a></li>
+        <li><a href="speaking.html">Speaking</a></li>
+        <li><a href="about.html">The Firm</a></li>
+        <li><a href="/organizational-diagnostic">Organizational Capability Formation Scan</a></li>
+        <li><a href="executive-briefing.html#inquiry">Bring a Consequential Decision</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-label">For Professionals</div>
+      <ul class="footer-links">
+        <li><a href="/diagnostic">Free Diagnostic</a></li>
+        <li><a href="for-professionals.html">Career Growth Assessment</a></li>
+        <li><a href="book.html">Books &amp; Tools</a></li>
+        <li><a href="https://temidayoafonja.substack.com" target="_blank" rel="noopener">Writing</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-copy">&copy; 2026 The Density Group LLC &middot; Capability Formation &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></div>
+</footer>
+
+<script>
+/* ═══════════════════════════════════════════════════════════════════════════
+   CAREER DECISION EVIDENCE CHECK
+   /career-decisions is the permanent URL. The public name of the free resource
+   is the Career Decision Evidence Check. "Career Decisions" is never a product.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ─────────────────────────────────────────────────────────────────────────
+   1. THE ONE CONFIGURABLE BLOCK: THE CURRENT NEXT STEP
+   ─────────────────────────────────────────────────────────────────────────
+   This is the only place the next step is written. Nothing below reads an
+   offer name, price, date or URL from anywhere else, and no offer copy is
+   repeated elsewhere on this page. To change what the page offers next, edit
+   this block only. The permanent URL never changes.
+
+   How the choice is made: if "available_until" is still in the future, the
+   page shows "current". Once that moment passes it shows "fallback", with no
+   deploy and no edit required. Both are compared against the visitor's clock,
+   which is the honest reading of "has the event happened yet" for a visitor.
+
+   available_until below is the end of the Lightning Lesson named in
+   current.title, at 6:45 PM CT on the day of the session. That month is CDT,
+   which is UTC minus 5, so 6:45 PM CT is 23:45 UTC on the same day. The session
+   date itself is written once only, in current.body just below.
+
+   To retire the Lightning Lesson early, set "current" to null.
+   ───────────────────────────────────────────────────────────────────────── */
+var NEXT_STEP = {
+  current: {
+    id: "lightning-lesson",
+    available_until: "2026-09-02T23:45:00Z",
+    label: "One next step",
+    title: "How to Tell If Your Career Is Stalling",
+    body: "A free 45 minute Lightning Lesson on Wednesday, September 2, 2026, 6:00 to 6:45 PM CT. Three signs your role may have stopped building your capability and future options, even while you are performing well.",
+    cta: "Register free",
+    href: "https://maven.com/p/5162f2/how-to-tell-if-your-career-is-stalling",
+    external: true
+  },
+  fallback: {
+    id: "field-kit",
+    label: "One next step",
+    title: "The Capability Formation Field Kit",
+    body: "The complete private system for reading your capability position on your own. Collect your own evidence, calibrate without a room, and rerun the process as your situation changes. $150, instant digital access.",
+    cta: "Explore the Field Kit",
+    href: "https://temidayoafonja.com/fieldkit",
+    external: false
+  }
+};
+
+function currentNextStep() {
+  var c = NEXT_STEP.current;
+  if (!c || !c.available_until) return NEXT_STEP.fallback;
+  var until = Date.parse(c.available_until);
+  if (isNaN(until) || Date.now() >= until) return NEXT_STEP.fallback;
+  return c;
+}
+
+function renderNextStep() {
+  var step = currentNextStep();
+  var slot = document.getElementById("cdStep");
+  if (!slot) return;
+  var label = document.createElement("div");
+  label.className = "cd-step-label";
+  label.textContent = step.label;
+  var h3 = document.createElement("h3");
+  h3.textContent = step.title;
+  var p = document.createElement("p");
+  p.textContent = step.body;
+  var a = document.createElement("a");
+  a.className = "lean-btn light";
+  a.href = step.href;
+  a.textContent = step.cta;
+  a.setAttribute("data-step", step.id);
+  if (step.external) { a.target = "_blank"; a.rel = "noopener"; }
+  slot.appendChild(label); slot.appendChild(h3); slot.appendChild(p); slot.appendChild(a);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   2. ATTRIBUTION
+   ─────────────────────────────────────────────────────────────────────────
+   Read once on load, held for the session so an in page jump or a back and
+   forward does not lose it, and sent with the submission.
+
+   Nothing is invented. "source" is whatever the visitor actually arrived with,
+   from ?source= or ?utm_source=. It is never defaulted to youtube. If no
+   parameter is present the value stays empty and the record says so.
+
+   The originating video is read from ?v= or ?video=, which is what the channel
+   links will carry.
+   ───────────────────────────────────────────────────────────────────────── */
+var ATTR_KEYS = ["utm_source","utm_medium","utm_campaign","utm_content","utm_term","source","video"];
+var ATTR_STORE_KEY = "cd_attribution";
+
+function readAttribution() {
+  var stored = {};
+  try {
+    var raw = window.sessionStorage.getItem(ATTR_STORE_KEY);
+    if (raw) stored = JSON.parse(raw) || {};
+  } catch (e) { stored = {}; }
+
+  var params;
+  try { params = new URLSearchParams(window.location.search); } catch (e) { params = null; }
+
+  var fresh = {};
+  if (params) {
+    ATTR_KEYS.forEach(function (k) {
+      var v = params.get(k);
+      if (k === "video" && !v) v = params.get("v");
+      if (v) fresh[k] = String(v).slice(0, 200);
+    });
+  }
+
+  /* First touch wins. A visitor who lands from a video and then navigates
+     within the page keeps the video that sent them. */
+  var attr = {};
+  ATTR_KEYS.forEach(function (k) {
+    var val = stored[k] || fresh[k] || "";
+    if (val) attr[k] = val;
+  });
+  if (!attr.referrer) {
+    var ref = stored.referrer || document.referrer || "";
+    if (ref) attr.referrer = String(ref).slice(0, 300);
+  }
+  if (!attr.landing_page) {
+    attr.landing_page = stored.landing_page || (window.location.pathname + window.location.search).slice(0, 300);
+  }
+
+  try { window.sessionStorage.setItem(ATTR_STORE_KEY, JSON.stringify(attr)); } catch (e) { /* private mode */ }
+  return attr;
+}
+
+var ATTRIBUTION = readAttribution();
+
+/* ─────────────────────────────────────────────────────────────────────────
+   3. ANALYTICS
+   ─────────────────────────────────────────────────────────────────────────
+   The page view is the automatic Plausible pageview from the script in the
+   head. It is deliberately not fired again here, because two pageviews per
+   visit would inflate the top of this funnel.
+
+   "Career Decisions Subscribed" fires in one place only: after the server has
+   returned a confirmed subscription. A click, a validation failure, a rejected
+   request and a network error can never reach it.
+   ───────────────────────────────────────────────────────────────────────── */
+function track(name, props) {
+  try { if (window.plausible) window.plausible(name, props ? { props: props } : undefined); } catch (e) { /* analytics never breaks the page */ }
+}
+
+/* ───────────────────────────────────────────────────────────────────────── */
+document.addEventListener("DOMContentLoaded", function () {
+  renderNextStep();
+
+  var form = document.getElementById("cdForm");
+  var firstEl = document.getElementById("cdFirst");
+  var emailEl = document.getElementById("cdEmail");
+  var decidingEl = document.getElementById("cdDeciding");
+  var consentEl = document.getElementById("cdConsent");
+  var trapEl = document.getElementById("cdRef");
+  var submitEl = document.getElementById("cdSubmit");
+  var formError = document.getElementById("cdFormError");
+  var statusEl = document.getElementById("cdStatus");
+  var result = document.getElementById("cdResult");
+  if (!form) return;
+
+  /* Form start. Fires once, on the first real interaction with a field. */
+  var started = false;
+  function markStarted() {
+    if (started) return;
+    started = true;
+    track("Career Decisions Form Started", { source: ATTRIBUTION.source || ATTRIBUTION.utm_source || "direct" });
+  }
+  [firstEl, emailEl, decidingEl, consentEl].forEach(function (el) {
+    if (el) el.addEventListener("focus", markStarted, { once: true });
+  });
+
+  /* Inline validation. The same lenient address check the diagnostic uses, so
+     an unusual but valid address is never rejected. */
+  function validEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+
+  function setError(el, msgEl, message) {
+    if (message) {
+      el.setAttribute("aria-invalid", "true");
+      msgEl.textContent = message;
+    } else {
+      el.removeAttribute("aria-invalid");
+      msgEl.textContent = "";
+    }
+  }
+
+  /* Clear a field's error as soon as the visitor starts fixing it. */
+  [[firstEl, "cdFirstError"], [emailEl, "cdEmailError"]].forEach(function (pair) {
+    pair[0].addEventListener("input", function () {
+      if (pair[0].getAttribute("aria-invalid") === "true") setError(pair[0], document.getElementById(pair[1]), "");
+    });
+  });
+  consentEl.addEventListener("change", function () {
+    if (consentEl.getAttribute("aria-invalid") === "true") setError(consentEl, document.getElementById("cdConsentError"), "");
+  });
+
+  function validate() {
+    var problems = [];
+    var firstMsg = document.getElementById("cdFirstError");
+    var emailMsg = document.getElementById("cdEmailError");
+    var consentMsg = document.getElementById("cdConsentError");
+
+    if (!firstEl.value.trim()) { setError(firstEl, firstMsg, "Please enter your first name."); problems.push(firstEl); }
+    else setError(firstEl, firstMsg, "");
+
+    if (!emailEl.value.trim()) { setError(emailEl, emailMsg, "Please enter your email address."); problems.push(emailEl); }
+    else if (!validEmail(emailEl.value.trim())) { setError(emailEl, emailMsg, "Please enter a valid email address."); problems.push(emailEl); }
+    else setError(emailEl, emailMsg, "");
+
+    /* Consent is required because the evidence check is delivered by email.
+       Without it there is nothing to send it to and nothing is recorded. */
+    if (!consentEl.checked) { setError(consentEl, consentMsg, "Please tick the box so the evidence check can be emailed to you."); problems.push(consentEl); }
+    else setError(consentEl, consentMsg, "");
+
+    return problems;
+  }
+
+  /* Failure reasons are short non sensitive codes. No address, no message body
+     and no server detail is ever put into an analytics property. */
+  function fail(reasonCode, visibleMessage) {
+    formError.textContent = visibleMessage;
+    submitEl.disabled = false;
+    submitEl.textContent = "Send me the evidence check";
+    track("Career Decisions Submit Failed", { reason: reasonCode });
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    formError.textContent = "";
+
+    var problems = validate();
+    if (problems.length) {
+      problems[0].focus();
+      track("Career Decisions Submit Failed", { reason: "validation" });
+      return;
+    }
+
+    submitEl.disabled = true;
+    submitEl.textContent = "Sending...";
+    statusEl.textContent = "Sending your evidence check request.";
+
+    var payload = {
+      first_name: firstEl.value.trim(),
+      email: emailEl.value.trim(),
+      current_decision: decidingEl.value.trim(),
+      marketing_consent: consentEl.checked === true,
+      consent_timestamp: new Date().toISOString(),
+      policy_version: "2026-08-12",
+      decision_reference: trapEl ? trapEl.value : "",
+      attribution: ATTRIBUTION
+    };
+
+    fetch("/.netlify/functions/career-decisions-subscribe", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    })
+    .then(function (res) {
+      return res.json().catch(function () { return {}; }).then(function (data) { return { status: res.status, ok: res.ok, data: data }; });
+    })
+    .then(function (r) {
+      /* Success is one thing only: the server confirmed the subscription. */
+      if (r.ok && r.data && r.data.ok === true) {
+        track("Career Decisions Subscribed", {
+          source: ATTRIBUTION.source || ATTRIBUTION.utm_source || "direct",
+          campaign: ATTRIBUTION.utm_campaign || "none",
+          video: ATTRIBUTION.video || "none"
+        });
+        showResult();
+        return;
+      }
+      if (r.status === 429) { fail("rate_limited", "That is a lot of requests from this connection. Please wait a few minutes and try again."); return; }
+      if (r.status === 503) { fail("not_configured", "The evidence check is not accepting signups just yet. Please try again shortly."); return; }
+      if (r.status === 400 || r.status === 422) { fail("rejected", "That submission could not be accepted. Please check your details and try again."); return; }
+      fail("server_error", "Something went wrong on our side. Please try again in a moment.");
+    })
+    .catch(function () {
+      fail("network_error", "We could not reach the server. Please check your connection and try again.");
+    });
+  });
+
+  function showResult() {
+    /* Announce first, then reveal, then move focus. The status region is
+       populated before the section is shown so the announcement is not
+       competing with the layout change. */
+    statusEl.textContent = "Success. Your evidence check is on its way, and the three questions are now shown below.";
+    result.classList.add("is-open");
+    submitEl.textContent = "Sent";
+    submitEl.disabled = true;
+    [firstEl, emailEl, decidingEl, consentEl].forEach(function (el) { el.disabled = true; });
+    result.focus();
+    if (result.scrollIntoView) result.scrollIntoView({ block: "start", behavior: "smooth" });
+  }
+
+  /* ── Outbound click tracking ──
+     Delegated, so no extra links are added to the page for the sake of
+     measurement. The next step slot, and the Books and Tools link that is
+     already in the shared footer, are matched by destination. */
+  document.addEventListener("click", function (e) {
+    var a = e.target && e.target.closest ? e.target.closest("a[href]") : null;
+    if (!a) return;
+    var href = a.getAttribute("href") || "";
+    var step = a.getAttribute("data-step");
+    if (step) track("Career Decisions Next Step Click", { step: step });
+    if (/\/fieldkit\/?$/.test(href)) track("Field Kit Click", { from: "career-decisions" });
+    if (/(^|\/)book(\.html)?$/.test(href)) track("Books And Tools Click", { from: "career-decisions" });
+  });
+});
+</script>
+
+<script defer src="/nav.js"></script>
+</body>
+</html>

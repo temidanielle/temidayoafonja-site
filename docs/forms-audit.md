@@ -21,10 +21,14 @@ data is submitted on a page navigation.
 | 7 | `diagnostic.html` | Paper fast-path capture | `xjgapael` | **Separate checkbox** | **Separate checkbox** | Yes |
 | 8 | `organizational-diagnostic.html` | Scan results capture | `mjgndvkp` | Not collected | Not collected | Yes |
 | 9 | `ai-capability-readiness.html` | AI readiness capture | `xjgapael` | Not collected | Not collected | Yes |
+| 10 | `career-decisions.html` | Career Decision Evidence Check | **No Formspree.** `/.netlify/functions/career-decisions-subscribe` | **Required checkbox, gates everything** | Not collected | Yes, in the consent block |
 
 Four endpoints are now separated. `xjgapael` still carries four submission types
 (book, two diagnostic captures, AI readiness), so any autoresponder attached to it fires for
 all four.
+
+Form 10 is the first form on the site that does not post to Formspree at all. It is also the
+first to record a consent timestamp and a policy version.
 
 ---
 
@@ -76,7 +80,12 @@ so this one receives less traffic than before.
 - **Consent** — None collected. **Flagged:** joining a priority list is closer to a marketing
   signup than an inbound inquiry, and the payload carries a marketing tag. Counsel should
   advise whether an explicit opt-in is required
-- **Privacy link** — Yes
+- **Privacy link** — **Correction, August 17 2026. No.** This row previously read "Yes". Read
+  against the markup, the consent paragraph at `for-professionals.html:242` carries no link of
+  any kind, and the only privacy link on the page is the one in the shared footer. The error
+  is recorded rather than silently edited because the original claim was carried into the
+  privacy work. Nothing on `for-professionals.html` was changed to fix this: the page is out of
+  scope for the change that found it, and the finding is left open for the operator
 
 ---
 
@@ -155,6 +164,53 @@ than wired up, because the operative consent is the one on the screen the visito
   `/.netlify/functions/ai-readiness-narrative`, which calls the Anthropic API
 - **Consent** — None collected
 - **Privacy link** — Yes
+
+---
+
+## 10. Career Decision Evidence Check
+
+- **Page and location** — `career-decisions.html`, section `#evidence-check`. Reached at the
+  permanent URL `/career-decisions`
+- **Public name** — the Career Decision Evidence Check. `/career-decisions` is the URL only, and
+  is never presented as a product, a course or a paid offer
+- **Fields** — First name, Email, "What are you currently deciding?" (optional), one explicit
+  marketing consent checkbox, unchecked by default, plus a hidden honeypot (`decision_reference`)
+- **Required** — First name, a valid email, and a ticked consent box. Validated inline in the
+  page and again on the server
+- **Endpoint** — `/.netlify/functions/career-decisions-subscribe`. **There is no Formspree write
+  and no second destination of any kind**
+- **Payload** — `first_name`, `email`, `current_decision`, `marketing_consent` (boolean),
+  `consent_timestamp`, `policy_version`, `decision_reference` (honeypot), and an `attribution`
+  object carrying `utm_source`, `utm_medium`, `utm_campaign`, `utm_content`, `utm_term`,
+  `source`, `video`, `referrer` and `landing_page`
+- **Storage and downstream systems** — two, in a fixed order:
+  1. **Kit (ConvertKit)**, the authoritative system. Enrols the subscriber in the sequence named
+     by `KIT_SEQ_CAREER_DECISIONS`, tags with `KIT_TAG_CAREER_DECISIONS` always and
+     `KIT_TAG_YOUTUBE` only when the visitor genuinely arrived with a youtube source. Kit owns
+     deduplication (it upserts on the email address), delivery, and the unsubscribe link
+  2. **Netlify Blobs**, store `career-decisions-leads`, written **only after Kit confirms**, so
+     the store can never hold a lead that is not also a subscriber. Best effort: a storage
+     failure is logged and reported in the response as `durable_record: false`, and does not
+     turn a real subscription into an error the visitor sees
+- **Consent** — **Required, explicit, unchecked by default, and it gates everything.** Anything
+  other than a literal `true` returns 400 and results in no Kit call, no record and no delivery.
+  The consent timestamp and the policy version in force are both stored, in Kit and in the
+  durable record. The server stamps its own receipt time independently of the client's clock
+- **Rate limiting** — 10 requests per rolling hour per caller, keyed by a **salted SHA-256 of the
+  IP address**, never the address. Same construction as `diagnose.js`. Fails open on a storage
+  error and logs loudly when it does
+- **Privacy link** — Yes, inside the consent block itself, not only in the footer
+- **Double opt in** — **Unverified, and it cannot be verified from this repository.** Whether Kit
+  sends a confirmation email is an account level setting on the sequence. It must be checked in
+  the Kit account and recorded here
+
+**What this form fixes, relative to findings 1 and 5 below.** It is the first form on the site to
+collect an explicit opt-in *and* to record when it was given and against which version of the
+policy. It is the model the remaining seven consent-free forms should follow.
+
+**What it deliberately does not do.** It does not touch the existing `xyegkbaq` priority-list
+records. Those were collected with no opt-in, so moving them into Kit is a consent question and
+not a technical one. Nothing in this change migrates them.
 
 ---
 

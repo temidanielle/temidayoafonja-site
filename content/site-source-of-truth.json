@@ -265,7 +265,13 @@
       "price_change_note": "Was $75. Raised to $150 by operator decision, August 13 2026, when the live assessment became free.",
       "included_in_live_session": false,
       "url": "https://temidayoafonja.gumroad.com/l/czmqp",
-      "url_note": "Reached through the forced /fieldkit redirect in netlify.toml, not linked directly in page markup.",
+      "url_note": "Correction, August 17 2026. This previously read 'not linked directly in page markup', which contradicted purchase_url_note directly above it and the markup itself. The Gumroad URL is linked directly at book.html:221 and for-professionals.html:290. The forced /fieldkit redirect also works and is the form to use in new public copy.",
+      "image_asset": {
+        "present": false,
+        "expected_asset": "linkedin_featured_03_field_kit_1600x900 (1).png",
+        "note": "Operator supplied this asset by name on August 17 2026 for the Field Kit section of book.html. It did not reach the working environment and no file matching it exists in the repository under any name. Every existing image was checked by dimension and the two 1584x396 LinkedIn banners were checked visually: neither is this asset. The book.html Field Kit section therefore still has no image, and book.html was left unchanged rather than filled with a substitute."
+      },
+      "image_alt_text_approved": "Capability Formation Field Kit cover and sample assessment pages.",
       "included_in": null
     }
   },
@@ -300,10 +306,20 @@
       "/", "/framework.html", "/work.html", "/executive-briefing.html",
       "/for-professionals.html", "/about.html", "/case-studies.html",
       "/speaking.html", "/book.html", "/privacy.html", "/terms.html",
-      "/diagnostic", "/organizational-diagnostic", "/ai-capability-readiness"
+      "/diagnostic", "/organizational-diagnostic", "/ai-capability-readiness",
+      "/career-decisions"
     ],
     "canonical_source": "sitemap.xml",
+    "career_decisions_note": [
+      "Added August 17 2026. /career-decisions is a URL and nothing else. The public-facing name",
+      "of the free resource served there is the Career Decision Evidence Check, and that is the",
+      "only name to use in copy, email, video and anywhere else. 'Career Decisions' is not a",
+      "product, a course, a diagnostic brand or a paid offer, and must never be presented as one.",
+      "The page does not replace /for-professionals, /book, the Field Kit, /diagnostic or the",
+      "Private Capability Position Read, and it is not in the main navigation."
+    ],
     "permanent_redirects": {
+      "/career-decisions.html": "/career-decisions",
       "/principles": "/framework",
       "/principles.html": "/framework",
       "/audit": "/diagnostic",
