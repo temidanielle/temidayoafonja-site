@@ -1033,6 +1033,26 @@ _md = fitz.open(OUT)
 _cat = _md.pdf_catalog()
 _md.xref_set_key(_cat, "Lang", "(en-GB)")
 _md.xref_set_key(_cat, "ViewerPreferences", "<</DisplayDocTitle true>>")
+
+# Auto-totalling: wire the six Density scores -> density_total and the six
+# Optionality scores -> optionality_total via AcroForm calculation scripts, and
+# register them in /CO so JS-capable viewers recompute the /30 totals live.
+# (Viewers without PDF JavaScript still take typed numbers; the sum is added by
+# hand there.) Field positions, names, and every visible mark are unchanged.
+_DTOTAL_JS = ('var s=0,any=false;for(var i=1;i<=6;i++){var v=this.getField("score_"+i).valueAsString;'
+              'if(v!=""){s+=(parseInt(v,10)||0);any=true;}}event.value=any?s:"";')
+_OTOTAL_JS = ('var s=0,any=false;for(var i=7;i<=12;i++){var v=this.getField("score_"+i).valueAsString;'
+              'if(v!=""){s+=(parseInt(v,10)||0);any=true;}}event.value=any?s:"";')
+_co = {}
+for _pg in _md:
+    for _w in _pg.widgets():
+        if _w.field_name == "density_total":
+            _w.script_calc = _DTOTAL_JS; _w.update(); _co["d"] = _w.xref
+        elif _w.field_name == "optionality_total":
+            _w.script_calc = _OTOTAL_JS; _w.update(); _co["o"] = _w.xref
+_afx = int(_md.xref_get_key(_cat, "AcroForm")[1].split()[0])
+_md.xref_set_key(_afx, "CO", f"[{_co['d']} 0 R {_co['o']} 0 R]")
+
 _md.save(OUT + ".tmp", garbage=0, deflate=True)
 _md.close()
 import os as _os
