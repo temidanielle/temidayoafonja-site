@@ -1,6 +1,11 @@
 # QA Report — Capability Formation Field Kit Gumroad Merchandising
 
-Revised Friday, August 14, 2026 at 1:30 PM CT
+Revised Monday, August 17, 2026 at 5:49 AM CT
+
+> v1.1.2 note: Field Kit v1.2.5 recolored the Compounding quadrant to calm blue
+> (#C7D9E8). Images 02, 03, 05, and 06 (which show the Matrix / Position Card)
+> were regenerated from the updated PDF; the thumbnail and Images 01 and 04 are
+> unchanged (SHA-256 verified). Image 06 copy is unchanged.
 
 Production of seven approved merchandising assets built around the final,
 immutable 24-page fillable Field Kit. Governing sources: the approved Version 2.0

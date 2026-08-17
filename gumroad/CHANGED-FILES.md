@@ -1,6 +1,28 @@
 # Changed-Files Report — Gumroad Merchandising Production
 
-Revised Friday, August 14, 2026 at 1:30 PM CT
+Revised Monday, August 17, 2026 at 5:49 AM CT
+
+---
+
+## v1.1.2 amendment — Compounding recolor propagated to merch art (Field Kit v1.2.5)
+
+The Field Kit's Compounding quadrant was recolored to the approved calm blue
+(#C7D9E8) in Field Kit v1.2.5. The four merchandising images that display the
+Compounding quadrant were regenerated from the updated PDF so their real-page
+crops match:
+
+- `png/fieldkit_gumroad_02_outputs_1600x900.png` + its master + 640×360 test
+- `png/fieldkit_gumroad_03_product_proof_1600x900.png` + its master + 640×360 test
+- `png/fieldkit_gumroad_05_free_vs_fieldkit_1600x900.png` + its master + 640×360 test
+- `png/fieldkit_gumroad_06_fieldkit_vs_live_1600x900.png` + its master + 640×360 test
+- `build/crops/p08_seq.png`, `build/crops/p08_matrix.png`, `build/crops/p20_card.png` (re-cut from v1.2.5)
+- `contact-sheet.png` (regenerated)
+
+**Unchanged (SHA-256 verified, 11/11 OK):** the thumbnail, Image 01, and Image
+04 — PNGs, SVG masters, reduced tests, and the Image 01 1280×720 export. Those
+assets do not display the Compounding quadrant. Image 06 copy is unchanged
+(Private Capability Position Read; $150 and $500 only). No Field Kit text, field,
+or dimension was affected by this art refresh.
 
 ---
 
