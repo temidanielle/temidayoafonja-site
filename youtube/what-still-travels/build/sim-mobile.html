@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mobile home-feed simulation</title>
+<link rel="stylesheet" href="sim-common.css">
+<style>
+  body { width: 412px; height: 915px; }
+  .status { height: 44px; display: flex; align-items: center; justify-content: space-between; padding: 0 18px; font-size: 13px; font-weight: 600; }
+  .status .icons { display: flex; gap: 5px; align-items: center; }
+  .status .icons i { display: block; width: 14px; height: 11px; }
+  .appbar { height: 48px; display: flex; align-items: center; justify-content: space-between; padding: 0 14px; }
+  .appbar .left { display: flex; gap: 8px; align-items: center; }
+  .appbar .right { display: flex; gap: 16px; align-items: center; }
+  .card { padding-bottom: 14px; }
+  .card .thumb, .card .ph-thumb { border-radius: 0; }
+  .row { display: flex; gap: 12px; padding: 12px 12px 0; }
+  .row .avatar { width: 36px; height: 36px; }
+  .title { font-size: 15px; font-weight: 500; line-height: 1.27; letter-spacing: -0.1px; }
+  .sub { font-size: 12px; margin-top: 4px; }
+  .lines { flex: 1; display: flex; flex-direction: column; gap: 7px; padding-top: 3px; }
+</style>
+</head>
+<body>
+  <div class="status">
+    <span>9:41</span>
+    <span class="icons"><i class="chrome"></i><i class="chrome"></i><i class="chrome" style="width:20px"></i></span>
+  </div>
+
+  <div class="appbar">
+    <div class="left"><span class="chrome" style="width:82px;height:18px;border-radius:4px"></span></div>
+    <div class="right">
+      <span class="chrome" style="width:18px;height:18px;border-radius:50%"></span>
+      <span class="chrome" style="width:18px;height:18px;border-radius:50%"></span>
+      <span class="avatar" style="width:26px;height:26px"></span>
+    </div>
+  </div>
+
+  <!-- neutral stand-in card -->
+  <div class="card">
+    <div class="thumb-wrap"><span class="ph-thumb"></span></div>
+    <div class="row">
+      <span class="avatar" style="width:36px;height:36px"></span>
+      <span class="lines"><span class="bar"></span><span class="bar mid"></span><span class="bar short" style="height:8px"></span></span>
+    </div>
+  </div>
+
+  <!-- the thumbnail under test -->
+  <div class="card">
+    <div class="thumb-wrap">
+      <img class="thumb" src="../exports/what-still-travels-3840x2160.png" alt="">
+      <span class="pill">21:07</span>
+    </div>
+    <div class="row">
+      <span class="avatar" style="width:36px;height:36px"></span>
+      <span style="flex:1">
+        <div class="title">Career Change at 40: How to Move Without Starting Over</div>
+        <div class="sub meta">Temidayo Afonja &middot; 4.2K views &middot; 2 days ago</div>
+      </span>
+    </div>
+  </div>
+
+  <!-- next card, partially in view -->
+  <div class="card">
+    <div class="thumb-wrap"><span class="ph-thumb"></span></div>
+    <div class="row">
+      <span class="avatar" style="width:36px;height:36px"></span>
+      <span class="lines"><span class="bar mid"></span><span class="bar short"></span></span>
+    </div>
+  </div>
+</body>
+</html>

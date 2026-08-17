@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Right-column recommendation simulation</title>
+<link rel="stylesheet" href="sim-common.css">
+<style>
+  body { width: 402px; height: 640px; padding: 12px 14px; }
+  h2 { font-size: 14px; font-weight: 600; margin-bottom: 14px; letter-spacing: -0.1px; }
+  .item { display: flex; gap: 8px; margin-bottom: 8px; }
+  .item .thumb-wrap { flex: 0 0 168px; }
+  .item .thumb, .item .ph-thumb { width: 168px; height: 94px; border-radius: 8px; }
+  .item .pill { right: 4px; bottom: 4px; font-size: 10px; padding: 1px 4px; }
+  .title { font-size: 13px; font-weight: 500; line-height: 1.31; letter-spacing: -0.05px; }
+  .sub { font-size: 11.5px; margin-top: 4px; line-height: 1.4; }
+  .lines { flex: 1; display: flex; flex-direction: column; gap: 6px; padding-top: 2px; }
+</style>
+</head>
+<body>
+  <h2>Up next</h2>
+
+  <!-- the thumbnail under test -->
+  <div class="item">
+    <div class="thumb-wrap">
+      <img class="thumb" src="../exports/what-still-travels-3840x2160.png" alt="">
+      <span class="pill">21:07</span>
+    </div>
+    <div style="flex:1">
+      <div class="title">Career Change at 40: How to Move Without Starting Over</div>
+      <div class="sub meta">Temidayo Afonja<br>4.2K views &middot; 2 days ago</div>
+    </div>
+  </div>
+
+  <!-- neutral stand-ins -->
+  <div class="item"><div class="thumb-wrap"><span class="ph-thumb"></span></div><span class="lines"><span class="bar"></span><span class="bar mid"></span><span class="bar short" style="height:8px"></span></span></div>
+  <div class="item"><div class="thumb-wrap"><span class="ph-thumb"></span></div><span class="lines"><span class="bar mid"></span><span class="bar short"></span><span class="bar short" style="height:8px;width:40%"></span></span></div>
+  <div class="item"><div class="thumb-wrap"><span class="ph-thumb"></span></div><span class="lines"><span class="bar"></span><span class="bar short"></span><span class="bar short" style="height:8px;width:46%"></span></span></div>
+  <div class="item"><div class="thumb-wrap"><span class="ph-thumb"></span></div><span class="lines"><span class="bar mid"></span><span class="bar mid" style="width:60%"></span><span class="bar short" style="height:8px"></span></span></div>
+  <div class="item"><div class="thumb-wrap"><span class="ph-thumb"></span></div><span class="lines"><span class="bar"></span><span class="bar short"></span></span></div>
+</body>
+</html>

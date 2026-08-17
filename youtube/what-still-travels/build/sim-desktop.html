@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Desktop home-feed simulation</title>
+<link rel="stylesheet" href="sim-common.css">
+<style>
+  body { width: 1280px; height: 720px; display: flex; flex-direction: column; }
+  .topbar { height: 56px; flex: 0 0 56px; display: flex; align-items: center; justify-content: space-between; padding: 0 20px; }
+  .topbar .left, .topbar .right { display: flex; align-items: center; gap: 14px; }
+  .search { width: 420px; height: 30px; border: 1px solid #303030; border-radius: 16px; background: #121212; }
+  .body { flex: 1; display: flex; min-height: 0; }
+  .side { width: 240px; flex: 0 0 240px; padding: 10px 12px; display: flex; flex-direction: column; gap: 4px; }
+  .side .item { height: 36px; border-radius: 8px; display: flex; align-items: center; gap: 22px; padding: 0 12px; }
+  .side .item.on { background: #272727; }
+  .side .dot { width: 18px; height: 18px; border-radius: 4px; background: #2f2f2f; }
+  .main { flex: 1; padding: 12px 24px 0; min-width: 0; }
+  .chips { display: flex; gap: 10px; margin-bottom: 18px; }
+  .chip { height: 30px; border-radius: 8px; background: #232323; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px 16px; }
+  .row { display: flex; gap: 10px; margin-top: 10px; }
+  .row .avatar { width: 32px; height: 32px; }
+  .title { font-size: 13px; font-weight: 500; line-height: 1.3; letter-spacing: -0.05px; }
+  .sub { font-size: 11.5px; margin-top: 4px; line-height: 1.45; }
+  .lines { flex: 1; display: flex; flex-direction: column; gap: 6px; padding-top: 2px; }
+</style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="left">
+      <span class="chrome" style="width:18px;height:14px"></span>
+      <span class="chrome" style="width:88px;height:18px;border-radius:4px"></span>
+    </div>
+    <div class="left"><span class="search"></span><span class="avatar" style="width:26px;height:26px"></span></div>
+    <div class="right">
+      <span class="chrome" style="width:18px;height:18px;border-radius:50%"></span>
+      <span class="chrome" style="width:18px;height:18px;border-radius:50%"></span>
+      <span class="avatar" style="width:28px;height:28px"></span>
+    </div>
+  </div>
+
+  <div class="body">
+    <nav class="side">
+      <span class="item on"><span class="dot"></span><span class="bar short"></span></span>
+      <span class="item"><span class="dot"></span><span class="bar short"></span></span>
+      <span class="item"><span class="dot"></span><span class="bar mid" style="width:62%"></span></span>
+      <span class="item"><span class="dot"></span><span class="bar short"></span></span>
+      <span class="item"><span class="dot"></span><span class="bar mid" style="width:48%"></span></span>
+    </nav>
+
+    <main class="main">
+      <div class="chips">
+        <span class="chip" style="width:52px;background:#f1f1f1"></span>
+        <span class="chip" style="width:74px"></span>
+        <span class="chip" style="width:96px"></span>
+        <span class="chip" style="width:68px"></span>
+        <span class="chip" style="width:88px"></span>
+        <span class="chip" style="width:60px"></span>
+      </div>
+
+      <div class="grid">
+        <!-- neutral stand-in -->
+        <div>
+          <div class="thumb-wrap"><span class="ph-thumb"></span></div>
+          <div class="row"><span class="avatar"></span><span class="lines"><span class="bar"></span><span class="bar mid"></span><span class="bar short" style="height:8px"></span></span></div>
+        </div>
+
+        <!-- the thumbnail under test -->
+        <div>
+          <div class="thumb-wrap">
+            <img class="thumb" src="../exports/what-still-travels-3840x2160.png" alt="">
+            <span class="pill">21:07</span>
+          </div>
+          <div class="row">
+            <span class="avatar"></span>
+            <span style="flex:1">
+              <div class="title">Career Change at 40: How to Move Without Starting Over</div>
+              <div class="sub meta">Temidayo Afonja<br>4.2K views &middot; 2 days ago</div>
+            </span>
+          </div>
+        </div>
+
+        <div>
+          <div class="thumb-wrap"><span class="ph-thumb"></span></div>
+          <div class="row"><span class="avatar"></span><span class="lines"><span class="bar"></span><span class="bar short"></span><span class="bar short" style="height:8px;width:42%"></span></span></div>
+        </div>
+
+        <div>
+          <div class="thumb-wrap"><span class="ph-thumb"></span></div>
+          <div class="row"><span class="avatar"></span><span class="lines"><span class="bar mid"></span><span class="bar short"></span></span></div>
+        </div>
+        <div>
+          <div class="thumb-wrap"><span class="ph-thumb"></span></div>
+          <div class="row"><span class="avatar"></span><span class="lines"><span class="bar"></span><span class="bar mid"></span></span></div>
+        </div>
+        <div>
+          <div class="thumb-wrap"><span class="ph-thumb"></span></div>
+          <div class="row"><span class="avatar"></span><span class="lines"><span class="bar mid"></span><span class="bar short"></span></span></div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

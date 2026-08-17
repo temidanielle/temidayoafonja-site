@@ -1,0 +1,42 @@
+/* Shared chrome for the placement simulations.
+   Deliberately generic dark-UI furniture: this is a layout test for the
+   thumbnail, not a reproduction of any platform's branding. */
+@font-face {
+  font-family: 'DM Sans'; font-style: normal; font-weight: 400;
+  src: url(../../../fonts/DMSans-400-normal-latin-1c49a6.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'DM Sans'; font-style: normal; font-weight: 500;
+  src: url(../../../fonts/DMSans-500-normal-latin-1c49a6.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'DM Sans'; font-style: normal; font-weight: 600;
+  src: url(../../../fonts/DMSans-600-normal-latin-1c49a6.woff2) format('woff2');
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #0f0f0f;
+  color: #f1f1f1;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+.thumb { display: block; width: 100%; aspect-ratio: 16 / 9; border-radius: 12px; object-fit: cover; }
+.thumb-wrap { position: relative; }
+.pill {
+  position: absolute; right: 8px; bottom: 8px;
+  background: rgba(0, 0, 0, .8); color: #fff;
+  font-size: 12px; font-weight: 500; padding: 2px 5px; border-radius: 4px;
+}
+
+/* neutral stand-in cards — flat blocks, no imagery */
+.ph { background: #232323; }
+.ph-thumb { display: block; width: 100%; aspect-ratio: 16 / 9; border-radius: 12px; background: #212121; }
+.bar { background: #2f2f2f; border-radius: 3px; height: 10px; }
+.bar.short { width: 55%; }
+.bar.mid { width: 78%; }
+.avatar { border-radius: 50%; background: #2f2f2f; flex: 0 0 auto; }
+.chrome { background: #2a2a2a; border-radius: 4px; }
+.meta { color: #aaa; }

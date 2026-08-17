@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Capability Formation — YouTube thumbnail 01
+  Video: "Career Change at 40: How to Move Without Starting Over"
+  Master artwork, 3840 x 2160 (16:9). Editable source of truth: every export in
+  ./exports is rendered from this file by ./build/build.py.
+
+  Colour, type and texture are the site system (see /styles.css, /fonts.css).
+-->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="3840" height="2160" viewBox="0 0 3840 2160">
+
+  <title>What still travels? — Capability Formation</title>
+
+  <style>
+    /* Repository webfonts, self-hosted. Paths are relative to this file. */
+    @font-face {
+      font-family: 'Cormorant Garamond';
+      font-style: normal; font-weight: 600;
+      src: url(../../fonts/CormorantGaramond-600-normal-latin-abcaa8.woff2) format('woff2');
+    }
+    @font-face {
+      font-family: 'DM Sans';
+      font-style: normal; font-weight: 500;
+      src: url(../../fonts/DMSans-500-normal-latin-1c49a6.woff2) format('woff2');
+    }
+    .headline {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 600;
+      font-size: 350px;
+      letter-spacing: 5px;
+      fill: #F5F0E8;
+    }
+    .eyebrow {
+      font-family: 'DM Sans', Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 52px;
+      letter-spacing: 12.5px;      /* 0.24em, the site's .eyebrow tracking */
+      fill: #C9A84C;
+    }
+  </style>
+
+  <defs>
+    <!-- The site's fine film grain (styles.css body::before), kept very low so
+         the navy field has texture without reading as noise at small sizes. -->
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch"/>
+    </filter>
+  </defs>
+
+  <!-- ── ground ─────────────────────────────────────────────────────────── -->
+  <rect width="3840" height="2160" fill="#0F2347"/>
+  <rect width="3840" height="2160" filter="url(#grain)" opacity="0.02"/>
+
+  <!-- ── portrait ───────────────────────────────────────────────────────── -->
+  <!-- Approved studio portrait, keyed off its white field. 1600 x 1419 =
+       41.7% of the canvas width, bleeding off the bottom edge only. Its right
+       edge sits on the 192px (5%) safe margin. -->
+  <image xlink:href="assets/temidayo-portrait-1600.png" href="assets/temidayo-portrait-1600.png"
+         x="2048" y="741" width="1600" height="1419" preserveAspectRatio="xMidYMid meet"/>
+
+  <!-- ── words ──────────────────────────────────────────────────────────── -->
+  <text class="eyebrow" x="260" y="598">CAPABILITY FORMATION</text>
+
+  <text class="headline" x="260" y="908">WHAT</text>
+  <text class="headline" x="260" y="1233">STILL</text>
+  <text class="headline" x="260" y="1558">TRAVELS?</text>
+
+  <!-- the single accent: one restrained gold rule -->
+  <rect x="262" y="1630" width="240" height="8" fill="#C9A84C"/>
+</svg>
