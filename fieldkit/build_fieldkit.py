@@ -902,6 +902,48 @@ def draw_widgets(c, specs):
             fieldFlags=s["flags"], forceBorder=True,
         )
 
+# ---- Compounding-quadrant recolor (v1.2.5 color-only revision) ----
+# The Compounding quadrant's rust fill on page 8 (the Matrix) and page 20 (the
+# Position Card) becomes the approved calm blue, and its label becomes navy so it
+# stays legible on the light fill (matching the other three quadrants). Scoped by
+# page + cell bbox + shape size, so no other rust fill (device, icons, borders,
+# cover mark) or cream text is touched. COMPOUNDING_FILL env var overrides the
+# colour (used for proofs); default is the approved Proof B value #C7D9E8.
+import os as _osenv
+_COMPOUND_DEFAULT = (0xC7/255.0, 0xD9/255.0, 0xE8/255.0)      # approved: Proof B
+def _compound_fill():
+    v = _osenv.environ.get("COMPOUNDING_FILL")
+    if not v:
+        return _COMPOUND_DEFAULT
+    h = v.strip().lstrip("#")
+    if len(h) == 6 and all(ch in "0123456789abcdefABCDEF" for ch in h):
+        return (int(h[0:2], 16)/255.0, int(h[2:4], 16)/255.0, int(h[4:6], 16)/255.0)
+    return tuple(float(x) for x in v.split(","))
+_COMPOUND_FILL = _compound_fill()
+_RUSTQ = (0.756863, 0.266667, 0.054902)
+_CREAMQ = (0.960784, 0.941176, 0.909804)
+_NAVYQ = (0.058824, 0.137255, 0.278431)
+_COMPOUND_CELL = {7: (306.0, 456.0, 130.0, 235.0),      # page 8 Matrix quadrant (yTop)
+                  19: (450.0, 502.0, 176.0, 228.0)}     # page 20 Position Card quadrant
+def _closeq(a, b, t=0.02):
+    return isinstance(a, tuple) and len(a) == 3 and all(abs(a[i]-b[i]) < t for i in range(3))
+def apply_compounding_recolor(idx, prims):
+    if idx not in _COMPOUND_CELL:
+        return prims
+    x0, x1, yt0, yt1 = _COMPOUND_CELL[idx]; H = 792.0
+    out = []
+    for p in prims:
+        if p[0] == "path" and _closeq(p[4], _RUSTQ):
+            bb = _pbbox(p)
+            if bb and (bb[2]-bb[0]) > 40 and (bb[3]-bb[1]) > 40:   # the large quadrant fill only
+                out.append(("path", p[1], p[2], p[3], _COMPOUND_FILL, p[5])); continue
+        if p[0] == "text" and _closeq(p[4], _CREAMQ):
+            xo, yo = p[1][4], H - p[1][5]
+            if x0-2 <= xo <= x1+2 and yt0-6 <= yo <= yt1+6:        # the Compounding label -> navy
+                out.append(("text", p[1], p[2], p[3], _NAVYQ, p[5])); continue
+        out.append(p)
+    return out
+
 def render_prims(c, prims):
     for p in prims:
         if p[0] == "text":
@@ -946,6 +988,7 @@ for idx, pageobj in enumerate(order):
     prims, ch = apply_boundary_edit(prims); total_changed += ch
     prims, applied = apply_v11_edits(idx, prims); v11_applied.extend(applied)
     prims, applied12 = apply_v12_edits(idx, prims); v12_applied.extend(applied12)
+    prims = apply_compounding_recolor(idx, prims)   # v1.2.5: Compounding quadrant -> approved blue
     render_prims(c, prims)
     draw_widgets(c, widgets_for(idx))            # rescore field stays on page 12 (K4)
     c.showPage()
