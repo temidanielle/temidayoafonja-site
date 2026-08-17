@@ -944,6 +944,34 @@ def apply_compounding_recolor(idx, prims):
         out.append(p)
     return out
 
+# ---- Compounding-LABEL recolor (v1.2.6): give the Compounding-specific text the
+# blue family instead of the shared orange/rust. Two elements only: page 8
+# "Compounding:" state key (baseline f=408) and page 9 "Compounding, read
+# honestly" heading (baseline f=666). The other state keys/headings and every
+# other rust element are untouched. COMPOUNDING_LABEL env var overrides the
+# colour; default is the approved Proof B mid-blue #2C5282.
+_LABEL_DEFAULT = (0x2C/255.0, 0x52/255.0, 0x82/255.0)   # approved: Proof B mid-blue
+def _label_color():
+    v = _osenv.environ.get("COMPOUNDING_LABEL")
+    if not v:
+        return _LABEL_DEFAULT
+    h = v.strip().lstrip("#")
+    if len(h) == 6 and all(ch in "0123456789abcdefABCDEF" for ch in h):
+        return (int(h[0:2],16)/255.0, int(h[2:4],16)/255.0, int(h[4:6],16)/255.0)
+    return tuple(float(x) for x in v.split(","))
+_LABEL_COLOR = _label_color()
+_LABEL_TARGETS = {7: 408.0, 8: 666.0}     # idx -> baseline f of the Compounding rust text
+def apply_compounding_label_recolor(idx, prims):
+    if idx not in _LABEL_TARGETS:
+        return prims
+    fbase = _LABEL_TARGETS[idx]
+    out = []
+    for p in prims:
+        if p[0] == "text" and _closeq(p[4], _RUSTQ) and abs(p[1][5] - fbase) < 2.0:
+            out.append(("text", p[1], p[2], p[3], _LABEL_COLOR, p[5])); continue
+        out.append(p)
+    return out
+
 def render_prims(c, prims):
     for p in prims:
         if p[0] == "text":
@@ -989,6 +1017,7 @@ for idx, pageobj in enumerate(order):
     prims, applied = apply_v11_edits(idx, prims); v11_applied.extend(applied)
     prims, applied12 = apply_v12_edits(idx, prims); v12_applied.extend(applied12)
     prims = apply_compounding_recolor(idx, prims)   # v1.2.5: Compounding quadrant -> approved blue
+    prims = apply_compounding_label_recolor(idx, prims)   # v1.2.6: Compounding label -> blue family
     render_prims(c, prims)
     draw_widgets(c, widgets_for(idx))            # rescore field stays on page 12 (K4)
     c.showPage()
