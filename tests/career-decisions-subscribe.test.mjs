@@ -128,6 +128,20 @@ test("answers a CORS preflight", async () => {
   assert.equal(res.statusCode, 204);
 });
 
+test("the allowed origin is this site, not every origin", async () => {
+  reset();
+  const preflight = await call("", { method: "OPTIONS" });
+  const post = await call(payload());
+  const refused = await call(payload({ delivery_consent: false }));
+  for (const res of [preflight, post, refused]) {
+    assert.equal(res.headers["Access-Control-Allow-Origin"], "https://temidayoafonja.com");
+    assert.notEqual(res.headers["Access-Control-Allow-Origin"], "*");
+  }
+  // Vary matters once the header is origin specific, so a cache cannot serve one
+  // origin's response to another.
+  assert.equal(preflight.headers["Vary"], "Origin");
+});
+
 test("rejects a body that is not JSON", async () => {
   reset();
   const res = await call("not json at all");

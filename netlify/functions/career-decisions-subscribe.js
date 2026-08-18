@@ -53,10 +53,23 @@
 const crypto = require("crypto");
 const { blobStore, blobsConfigured } = require("../lib/blobs");
 
+// The page that calls this function is served from the same origin, so the
+// browser never applies a CORS check to a real submission and never sends a
+// preflight for one. These headers therefore matter only to a cross-origin
+// caller, and there is no legitimate cross-origin caller. Naming the site
+// rather than allowing every origin is not closing a vulnerability: every input
+// is validated server side, consent must be a literal true, the honeypot and
+// the rate limit still apply, and Kit deduplicates on the address. It is simply
+// not left wider than it needs to be.
+//
+// This does not break deploy previews. A preview serves the page and the
+// function from the same preview origin, so the request is same origin there
+// too and the header is never consulted.
 const CORS = {
-  "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Origin": "https://temidayoafonja.com",
   "Access-Control-Allow-Methods": "POST, OPTIONS",
-  "Access-Control-Allow-Headers": "Content-Type"
+  "Access-Control-Allow-Headers": "Content-Type",
+  "Vary": "Origin"
 };
 const JSON_HEADERS = Object.assign({ "content-type": "application/json" }, CORS);
 
