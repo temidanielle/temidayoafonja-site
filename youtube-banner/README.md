@@ -97,3 +97,9 @@ Sources are in `src/`. Two things worth keeping in mind if you change the build:
 
 `src/render-*.png` are intermediates, ignored by git; the published copies are
 the root banner, `alternates/` and `previews/`.
+
+## Colour treatments
+
+A colour-only refinement of this banner lives in `color/`. Same layout,
+typography, spacing and copy; flat fields instead of the navy ground. See
+`color/README.md`.

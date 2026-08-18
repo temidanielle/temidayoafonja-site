@@ -1,0 +1,43 @@
+<!doctype html><html><head><meta charset="utf-8">
+<title>Capability Formation: colour treatments</title>
+<link rel="stylesheet" href="base.css">
+<style>
+  /* Flat fields. No gradient, no vignette, no grain: the ground is one colour
+     edge to edge, which is what keeps these reading sharp rather than soft. */
+  .ground::before{background:var(--field) !important}
+  .ground::after{display:none}
+  .grain{display:none}
+
+  /* Approved composition, unchanged from the navy banner. */
+  .title  {font-size:84px;letter-spacing:.155em;text-indent:.155em;color:var(--ink-title)}
+  .support{font-size:61px;margin-top:74px;color:var(--ink-support)}
+
+  /* B only. Sits inside the existing 74px gap and splits it 30.5 / 13 / 30.5,
+     so the title and the question do not move by a single pixel. */
+  body.has-mark .support{margin-top:0}
+  body.has-mark .diamond{margin:30.5px 0}
+  body:not(.has-mark) .diamond{display:none}
+
+  /* A: cream field, navy title, brand gold question, exactly as specified. */
+  body.t-a    {--field:#F5F0E8;--ink-title:#0F2347;--ink-support:#C9A84C}
+  /* A refined: same treatment with the site's text-safe gold for type on cream. */
+  body.t-aink {--field:#F5F0E8;--ink-title:#0F2347;--ink-support:#7F6A30}
+  /* B: cream field, both levels navy, gold held back to a single small mark. */
+  body.t-b    {--field:#F5F0E8;--ink-title:#0F2347;--ink-support:#0F2347}
+  /* C: near-black ink field, cream title, brand gold question. */
+  body.t-c    {--field:#161719;--ink-title:#F5F0E8;--ink-support:#C9A84C}
+</style></head>
+<body>
+  <div class="ground"></div><div class="grain"></div>
+  <div class="stage">
+    <div class="title" id="t">Capability Formation</div>
+    <div class="diamond"></div>
+    <div class="support" id="s">What is your work building?</div>
+  </div>
+  <div id="m" style="position:absolute;opacity:0"></div>
+  <script>
+    var v = (location.hash || '#a').slice(1);
+    document.body.className = 't-' + v + (v === 'b' ? ' has-mark' : '');
+  </script>
+  <script src="measure.js"></script>
+</body></html>

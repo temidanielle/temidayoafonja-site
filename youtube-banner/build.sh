@@ -9,6 +9,7 @@
 #
 # Run from anywhere:  bash youtube-banner/build.sh
 set -euo pipefail
+# bash 4+ for the associative array in the colour section
 BIN=${CHROMIUM:-/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell}
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 SRC="$ROOT/youtube-banner/src"
@@ -41,4 +42,25 @@ for v in b c; do
   shot "$SRC/preview-desktop.html#$v" "$P/desktop-option-$v.png" 1600 1000 1.5
 done
 shot "$SRC/explore-lines.html" "$P/supporting-lines.png" 1040 2330 1.4
+
+# ── Colour treatments ───────────────────────────────────────────────────────
+# Every treatment renders from the one source, src/color.html, so the approved
+# layout, typography, spacing and copy cannot drift between them: only the
+# colour field changes. Fields are flat, with no gradient, vignette or grain.
+echo "· colour treatments"
+C="$ROOT/youtube-banner/color"
+declare -A NAMES=(
+  [a]="option-a-cream-gold"
+  [aink]="option-a-refined-cream-goldink"
+  [b]="option-b-cream-navy"
+  [c]="option-c-ink-cream"
+)
+for v in a aink b c; do
+  shot "$SRC/color.html#$v" "$SRC/render-color-$v.png" 2560 1440
+  cp "$SRC/render-color-$v.png" "$C/${NAMES[$v]}.png"
+  shot "$SRC/preview-mobile.html#color-$v"       "$C/previews/$v-mobile.png"       900 1240 2
+  shot "$SRC/preview-desktop.html#color-$v"      "$C/previews/$v-desktop.png"     1600 1000 1.5
+  shot "$SRC/preview-desktop.html#color-$v,dark" "$C/previews/$v-desktop-dark.png" 1600 1000 1.5
+done
+shot "$SRC/compare.html" "$C/comparison.png" 1800 880 1.4
 echo "done"

@@ -1,0 +1,69 @@
+<!doctype html><html><head><meta charset="utf-8">
+<title>Colour treatments compared</title>
+<link rel="stylesheet" href="base.css">
+<style>
+  html,body{width:1800px;height:880px;overflow:hidden;background:#e9ebef}
+  .head,.meta,.ratio{font-family:'DM Sans',sans-serif}
+  .head{padding:36px 46px 6px}
+  .h1{font-family:'Cormorant Garamond',serif;font-size:36px;color:#0F2347}
+  .h2{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#6b7280;margin-top:9px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:26px 30px;padding:16px 46px}
+  .name{font-size:15px;font-weight:600;color:#0F2347;display:flex;align-items:center;gap:11px}
+  .pick{background:#C9A84C;color:#0F2347;font-size:11px;letter-spacing:.1em;padding:3px 9px;border-radius:3px}
+  .spec{font-size:12.5px;color:#8a93a0;margin:5px 0 9px}
+  .ratio{font-size:12.5px;font-weight:600;margin-top:8px}
+  .ok{color:#3d7a5c}.bad{color:#C1440E}
+  .strip{width:820px;height:224px;overflow:hidden;position:relative;border-radius:6px;
+         box-shadow:0 2px 10px rgba(15,35,71,.13)}
+  .mini{position:absolute;left:0;top:0;width:2560px;height:1440px;transform-origin:0 0;
+        transform:scale(.53040) translate(-507px,-508.5px)}
+  .mini .ground::before{background:var(--field) !important}
+  .mini .ground::after{display:none}
+  .mini .grain{display:none}
+  .mini .title{font-size:84px;letter-spacing:.155em;text-indent:.155em;color:var(--ink-title)}
+  .mini .support{font-size:61px;margin-top:74px;color:var(--ink-support)}
+  .mini.mark .support{margin-top:0}
+  .mini.mark .diamond{margin:30.5px 0}
+  .mini:not(.mark) .diamond{display:none}
+</style></head>
+<body>
+  <div class="head">
+    <div class="h1">Colour treatments compared</div>
+    <div class="h2">Each shown at the mobile crop &nbsp;·&nbsp; 1546 × 423 &nbsp;·&nbsp; identical layout, type and copy</div>
+  </div>
+  <div class="grid" id="g"></div>
+<script>
+var OPTS = [
+  {k:'a', field:'#F5F0E8', t:'#0F2347', s:'#C9A84C', mark:false,
+   name:'Option A &nbsp;·&nbsp; as specified', tag:'',
+   spec:'Cream field, navy title, brand gold question',
+   ratio:'Question on cream: 2.01:1', ok:false},
+  {k:'aink', field:'#F5F0E8', t:'#0F2347', s:'#7F6A30', mark:false,
+   name:'Option A &nbsp;·&nbsp; refined', tag:'RECOMMENDED',
+   spec:'Same treatment, question in the site’s text-safe gold #7F6A30',
+   ratio:'Question on cream: 4.62:1', ok:true},
+  {k:'b', field:'#F5F0E8', t:'#0F2347', s:'#0F2347', mark:true,
+   name:'Option B', tag:'',
+   spec:'Cream field, both levels navy, gold held to one small mark',
+   ratio:'Question on cream: 13.70:1', ok:true},
+  {k:'c', field:'#161719', t:'#F5F0E8', s:'#C9A84C', mark:false,
+   name:'Option C', tag:'',
+   spec:'Near-black ink field, cream title, brand gold question',
+   ratio:'Question on ink: 7.85:1', ok:true}
+];
+document.getElementById('g').innerHTML = OPTS.map(function (o) {
+  return '<div><div class="meta"><div class="name">' + o.name +
+      (o.tag ? '<span class="pick">' + o.tag + '</span>' : '') + '</div>' +
+    '<div class="spec">' + o.spec + '</div></div>' +
+    '<div class="strip"><div class="mini' + (o.mark ? ' mark' : '') +
+      '" style="--field:' + o.field + ';--ink-title:' + o.t + ';--ink-support:' + o.s + '">' +
+      '<div class="ground"></div>' +
+      '<div class="stage"><div class="title">Capability Formation</div>' +
+      '<div class="diamond"></div>' +
+      '<div class="support">What is your work building?</div></div>' +
+    '</div></div>' +
+    '<div class="ratio ' + (o.ok ? 'ok' : 'bad') + '">' + o.ratio +
+      (o.ok ? '  ✓ clears AA' : '  ✗ below AA, and below AA Large') + '</div></div>';
+}).join('');
+</script>
+</body></html>
