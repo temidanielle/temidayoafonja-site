@@ -21,7 +21,7 @@ data is submitted on a page navigation.
 | 7 | `diagnostic.html` | Paper fast-path capture | `xjgapael` | **Separate checkbox** | **Separate checkbox** | Yes |
 | 8 | `organizational-diagnostic.html` | Scan results capture | `mjgndvkp` | Not collected | Not collected | Yes |
 | 9 | `ai-capability-readiness.html` | AI readiness capture | `xjgapael` | Not collected | Not collected | Yes |
-| 10 | `career-decisions.html` | Career Decision Evidence Check | **No Formspree.** `/.netlify/functions/career-decisions-subscribe` | **Required checkbox, gates everything** | Not collected | Yes, in the consent block |
+| 10 | `career-decisions.html` | Career Decision Evidence Check | **No Formspree.** `/.netlify/functions/career-decisions-subscribe` | **Two separate boxes, both unchecked. Delivery required, guidance optional** | Not collected | Yes, in the consent block |
 
 Four endpoints are now separated. `xjgapael` still carries four submission types
 (book, two diagnostic captures, AI readiness), so any autoresponder attached to it fires for
@@ -173,29 +173,54 @@ than wired up, because the operative consent is the one on the screen the visito
   permanent URL `/career-decisions`
 - **Public name** — the Career Decision Evidence Check. `/career-decisions` is the URL only, and
   is never presented as a product, a course or a paid offer
-- **Fields** — First name, Email, "What are you currently deciding?" (optional), one explicit
-  marketing consent checkbox, unchecked by default, plus a hidden honeypot (`decision_reference`)
-- **Required** — First name, a valid email, and a ticked consent box. Validated inline in the
-  page and again on the server
+- **Fields** — First name, Email, "What are you currently deciding?" (optional), **two** consent
+  checkboxes, both unchecked by default, plus a hidden honeypot (`decision_reference`)
+- **Required** — First name, a valid email, and the **delivery** consent box. The guidance box is
+  never required and is never validated: leaving it unticked is a complete, valid submission.
+  Validated inline in the page and again on the server
 - **Endpoint** — `/.netlify/functions/career-decisions-subscribe`. **There is no Formspree write
   and no second destination of any kind**
-- **Payload** — `first_name`, `email`, `current_decision`, `marketing_consent` (boolean),
-  `consent_timestamp`, `policy_version`, `decision_reference` (honeypot), and an `attribution`
-  object carrying `utm_source`, `utm_medium`, `utm_campaign`, `utm_content`, `utm_term`,
-  `source`, `video`, `referrer` and `landing_page`
+- **Payload** — `first_name`, `email`, `current_decision`, `decision_reference` (honeypot), the
+  two consent records (`delivery_consent`, `delivery_consent_timestamp`, `delivery_policy_version`,
+  `guidance_consent`, `guidance_consent_timestamp`, `guidance_policy_version`), and an
+  `attribution` object of two touches, `first` and `current`, each carrying `utm_source`,
+  `utm_medium`, `utm_campaign`, `utm_content`, `utm_term`, `source`, `video_slug`, `landing_page`,
+  `referrer` and `seen_at`
 - **Storage and downstream systems** — two, in a fixed order:
   1. **Kit (ConvertKit)**, the authoritative system. Enrols the subscriber in the sequence named
-     by `KIT_SEQ_CAREER_DECISIONS`, tags with `KIT_TAG_CAREER_DECISIONS` always and
-     `KIT_TAG_YOUTUBE` only when the visitor genuinely arrived with a youtube source. Kit owns
-     deduplication (it upserts on the email address), delivery, and the unsubscribe link
+     by `KIT_SEQ_CAREER_DECISIONS`, which is what delivers the requested resource. Tags with
+     `KIT_TAG_CAREER_DECISIONS` always, `KIT_TAG_CAREER_DECISIONS_GUIDANCE` **only** on explicit
+     guidance consent, and `KIT_TAG_YOUTUBE` only when the visitor genuinely arrived with a
+     youtube source. Kit owns deduplication (it upserts on the email address), delivery, and the
+     unsubscribe link
   2. **Netlify Blobs**, store `career-decisions-leads`, written **only after Kit confirms**, so
      the store can never hold a lead that is not also a subscriber. Best effort: a storage
      failure is logged and reported in the response as `durable_record: false`, and does not
      turn a real subscription into an error the visitor sees
-- **Consent** — **Required, explicit, unchecked by default, and it gates everything.** Anything
-  other than a literal `true` returns 400 and results in no Kit call, no record and no delivery.
-  The consent timestamp and the policy version in force are both stored, in Kit and in the
-  durable record. The server stamps its own receipt time independently of the client's clock
+- **Consent** — **Two purposes, two choices, recorded separately.** This is the construction the
+  rest of the site should move to.
+  - *Delivery* ("Send me the Career Decision Evidence Check by email.") is required and gates
+    everything. Anything other than a literal `true` returns 400: no Kit call, no record, no
+    delivery. It authorises the requested resource and the messages needed to deliver it, and
+    nothing else.
+  - *Guidance* ("Also send me occasional Capability Formation guidance ... I can unsubscribe at
+    any time.") is optional, starts unchecked, and is the only thing that enrols anyone in ongoing
+    marketing. It is never inferred: a missing field, a string, a `1` or any other truthy value is
+    treated as absent, so a sloppy client cannot enrol someone by accident.
+  - Each consent carries **its own timestamp and its own policy version**, in Kit and in the
+    durable record. Guidance stamps are written only when guidance was actually given, so an empty
+    stamp is unambiguous evidence that consent was withheld rather than that it was lost. The
+    server stamps its own receipt time independently of the client's clock.
+- **Broadcast audience** — `KIT_TAG_CAREER_DECISIONS_GUIDANCE`, never `KIT_TAG_CAREER_DECISIONS`.
+  The first tag means "consented to ongoing guidance". The second only means "asked for the
+  evidence check" and must never be used as the audience for a broadcast. If a guidance nurture
+  sequence is wanted, build it in Kit as an automation triggered by the guidance tag being added.
+- **Attribution** — Two touches. `first` is the campaign visit that introduced the person to the
+  page and is never overwritten. `current` is the most recent explicit campaign visit in the same
+  session. A bare return to `/career-decisions` with no parameters is not a new campaign visit and
+  changes nothing. The youtube tag is applied when either touch carries an exact `source` or
+  `utm_source` of `youtube`; a campaign name that merely contains the word, or a youtube referrer,
+  tags nobody
 - **Rate limiting** — 10 requests per rolling hour per caller, keyed by a **salted SHA-256 of the
   IP address**, never the address. Same construction as `diagnose.js`. Fails open on a storage
   error and logs loudly when it does

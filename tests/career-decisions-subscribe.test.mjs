@@ -49,6 +49,7 @@ const SECRET_VALUES = {
   KIT_SEQ_CAREER_DECISIONS: "8801",
   KIT_TAG_CAREER_DECISIONS: "9901",
   KIT_TAG_YOUTUBE: "9902",
+  KIT_TAG_CAREER_DECISIONS_GUIDANCE: "9903",
   RATE_LIMIT_SALT: "test-salt",
   BLOBS_SITE_ID: "site-test",
   BLOBS_TOKEN: "token_MUST_NOT_LEAK"
@@ -86,13 +87,21 @@ function payload(over = {}) {
     first_name: "Ada",
     email: "ada@example.com",
     current_decision: "Whether to take the platform role.",
-    marketing_consent: true,
-    consent_timestamp: "2026-08-17T12:00:00.000Z",
-    policy_version: "2026-08-12",
+    delivery_consent: true,
+    delivery_consent_timestamp: "2026-08-17T12:00:00.000Z",
+    delivery_policy_version: "2026-08-12",
+    guidance_consent: false,
+    guidance_consent_timestamp: "",
+    guidance_policy_version: "",
     decision_reference: "",
-    attribution: {},
+    attribution: { first: {}, current: {} },
     ...over
   };
+}
+
+// Builds the two-touch attribution object the page sends.
+function touches(first, current) {
+  return { first: first || {}, current: current || first || {} };
 }
 
 function call(body, { method = "POST", ip = "203.0.113.7" } = {}) {
@@ -129,12 +138,12 @@ test("rejects a body that is not JSON", async () => {
 
 /* ── Configuration gate ────────────────────────────────────────────────── */
 test("missing configuration returns 503 with the names of the missing variables and a checklist", async () => {
-  reset({ env: { KIT_SEQ_CAREER_DECISIONS: undefined, KIT_TAG_YOUTUBE: undefined } });
+  reset({ env: { KIT_SEQ_CAREER_DECISIONS: undefined, KIT_TAG_YOUTUBE: undefined, KIT_TAG_CAREER_DECISIONS_GUIDANCE: undefined } });
   const res = await call(payload());
   assert.equal(res.statusCode, 503);
   const body = parse(res);
   assert.equal(body.error, "not_configured");
-  assert.deepEqual(body.missing_env_vars.sort(), ["KIT_SEQ_CAREER_DECISIONS", "KIT_TAG_YOUTUBE"]);
+  assert.deepEqual(body.missing_env_vars.sort(), ["KIT_SEQ_CAREER_DECISIONS", "KIT_TAG_CAREER_DECISIONS_GUIDANCE", "KIT_TAG_YOUTUBE"]);
   assert.ok(Array.isArray(body.checklist) && body.checklist.length >= 5);
   assert.equal(kitCalls.length, 0, "no Kit call may be attempted while unconfigured");
 });
@@ -186,16 +195,82 @@ test("an invalid email is refused", async () => {
   assert.equal(kitCalls.length, 0);
 });
 
-/* ── Consent, fail closed ──────────────────────────────────────────────── */
-test("consent must be a literal true", async () => {
+/* ── Consent: two purposes, separately recorded ─────────────────────────── */
+test("delivery consent must be a literal true, and without it nothing happens", async () => {
   reset();
   for (const value of [false, undefined, null, "true", 1, "on", {}]) {
-    const res = await call(payload({ marketing_consent: value }));
+    const res = await call(payload({ delivery_consent: value }));
     assert.equal(res.statusCode, 400, `expected ${JSON.stringify(value)} to be refused`);
     assert.equal(parse(res).error, "consent_required");
   }
-  assert.equal(kitCalls.length, 0, "no consent means no Kit call");
-  assert.equal(blobs.stores.get("career-decisions-leads"), undefined, "no consent means no record");
+  assert.equal(kitCalls.length, 0, "no delivery consent means no Kit call");
+  assert.equal(blobs.stores.get("career-decisions-leads"), undefined, "no delivery consent means no record");
+});
+
+test("declining guidance still delivers the evidence check", async () => {
+  reset();
+  const res = await call(payload({ guidance_consent: false }));
+  assert.equal(res.statusCode, 200);
+  assert.equal(parse(res).ok, true);
+  assert.equal(parse(res).guidance_consent, false);
+  assert.equal(kitCalls.length, 1, "the requested resource is still delivered");
+  assert.ok(kitCalls[0].url.includes("/v3/sequences/8801/subscribe"));
+});
+
+test("guidance consent is never inferred from delivery consent", async () => {
+  for (const value of [false, undefined, null, "true", 1, "on", "yes", {}]) {
+    reset();
+    await call(payload({ guidance_consent: value }));
+    const tags = kitCalls[0].body.tags;
+    assert.ok(
+      !tags.includes("9903"),
+      `guidance_consent ${JSON.stringify(value)} must not apply the ongoing-marketing tag`
+    );
+    assert.equal(kitCalls[0].body.fields.guidance_consent, "false");
+    assert.equal(kitCalls[0].body.fields.guidance_consent_timestamp, "", "no stamp without consent");
+    assert.equal(kitCalls[0].body.fields.guidance_policy_version, "", "no policy version without consent");
+  }
+});
+
+test("only an explicit guidance opt in applies the ongoing-marketing tag", async () => {
+  reset();
+  await call(payload({
+    guidance_consent: true,
+    guidance_consent_timestamp: "2026-08-17T12:00:05.000Z",
+    guidance_policy_version: "2026-08-12"
+  }));
+  const kit = kitCalls[0].body;
+  assert.ok(kit.tags.includes("9903"), "the guidance tag is applied");
+  assert.ok(kit.tags.includes("9901"), "the resource tag is still applied");
+  assert.equal(kit.fields.guidance_consent, "true");
+  assert.equal(kit.fields.guidance_consent_timestamp, "2026-08-17T12:00:05.000Z");
+  assert.equal(kit.fields.guidance_policy_version, "2026-08-12");
+});
+
+test("the two consents are recorded separately in the durable record", async () => {
+  reset();
+  await call(payload({
+    guidance_consent: true,
+    guidance_consent_timestamp: "2026-08-17T12:00:05.000Z",
+    guidance_policy_version: "2026-08-12"
+  }));
+  const rec = [...blobs.stores.get("career-decisions-leads").values()][0];
+  assert.equal(rec.delivery_consent, true);
+  assert.equal(rec.delivery_consent_timestamp_client, "2026-08-17T12:00:00.000Z");
+  assert.ok(rec.delivery_consent_timestamp_server);
+  assert.equal(rec.delivery_policy_version, "2026-08-12");
+  assert.equal(rec.guidance_consent, true);
+  assert.equal(rec.guidance_consent_timestamp_client, "2026-08-17T12:00:05.000Z");
+  assert.ok(rec.guidance_consent_timestamp_server);
+  assert.equal(rec.guidance_policy_version, "2026-08-12");
+
+  reset();
+  await call(payload());
+  const rec2 = [...blobs.stores.get("career-decisions-leads").values()][0];
+  assert.equal(rec2.delivery_consent, true);
+  assert.equal(rec2.guidance_consent, false);
+  assert.equal(rec2.guidance_consent_timestamp_client, "");
+  assert.equal(rec2.guidance_consent_timestamp_server, "");
 });
 
 /* ── The happy path ────────────────────────────────────────────────────── */
@@ -213,9 +288,9 @@ test("a consented submission subscribes through Kit and confirms only then", asy
   assert.equal(kit.body.email, "ada@example.com");
   assert.equal(kit.body.first_name, "Ada");
   assert.equal(kit.body.fields.current_decision, "Whether to take the platform role.");
-  assert.equal(kit.body.fields.consent_timestamp, "2026-08-17T12:00:00.000Z");
-  assert.equal(kit.body.fields.policy_version, "2026-08-12");
-  assert.equal(kit.body.fields.marketing_consent, "true");
+  assert.equal(kit.body.fields.delivery_consent_timestamp, "2026-08-17T12:00:00.000Z");
+  assert.equal(kit.body.fields.delivery_policy_version, "2026-08-12");
+  assert.equal(kit.body.fields.delivery_consent, "true");
 });
 
 test("the durable record is written only after Kit confirms, and carries both consent stamps", async () => {
@@ -226,10 +301,10 @@ test("the durable record is written only after Kit confirms, and carries both co
   const rec = [...store.values()][0];
   assert.equal(rec.email, "ada@example.com");
   assert.equal(rec.first_name, "Ada");
-  assert.equal(rec.marketing_consent, true);
-  assert.equal(rec.consent_timestamp_client, "2026-08-17T12:00:00.000Z");
-  assert.ok(rec.consent_timestamp_server, "the server stamps its own receipt time");
-  assert.equal(rec.policy_version, "2026-08-12");
+  assert.equal(rec.delivery_consent, true);
+  assert.equal(rec.delivery_consent_timestamp_client, "2026-08-17T12:00:00.000Z");
+  assert.ok(rec.delivery_consent_timestamp_server, "the server stamps its own receipt time");
+  assert.equal(rec.delivery_policy_version, "2026-08-12");
   assert.equal(rec.kit_subscriber_id, 12345);
   assert.equal(rec.page, "/career-decisions");
 });
@@ -278,16 +353,26 @@ test("every subscriber gets the page tag", async () => {
   assert.deepEqual(kitCalls[0].body.tags, ["9901"]);
 });
 
-test("the youtube tag is applied only for a real youtube arrival", async () => {
+test("the youtube tag is applied only for a real youtube arrival, on either touch", async () => {
   const cases = [
-    [{ source: "youtube" }, true],
-    [{ utm_source: "youtube" }, true],
-    [{ utm_source: "YouTube" }, true],
-    [{ utm_source: "  youtube  " }, true],
-    [{ utm_source: "twitter" }, false],
-    [{ utm_campaign: "youtube-launch" }, false],
-    [{ referrer: "https://www.youtube.com/watch?v=abc" }, false],
-    [{}, false]
+    [touches({ source: "youtube" }), true],
+    [touches({ utm_source: "youtube" }), true],
+    [touches({ utm_source: "YouTube" }), true],
+    [touches({ utm_source: "  youtube  " }), true],
+    // First touch direct, later campaign visit from youtube: they have become a
+    // youtube subscriber, so the tag applies.
+    [touches({}, { utm_source: "youtube" }), true],
+    // First touch youtube, later visit from elsewhere: they still came from
+    // youtube originally, so the tag stays.
+    [touches({ source: "youtube" }, { utm_source: "newsletter" }), true],
+    [touches({ utm_source: "twitter" }), false],
+    // A campaign NAME containing the word is not evidence of the source.
+    [touches({ utm_campaign: "youtube-launch" }), false],
+    [touches({ utm_campaign: "youtube" }), false],
+    [touches({ referrer: "https://www.youtube.com/watch?v=abc" }), false],
+    [touches({ landing_page: "/career-decisions?ref=youtube" }), false],
+    [touches({ video_slug: "youtube" }), false],
+    [touches({}), false]
   ];
   for (const [attribution, expected] of cases) {
     reset();
@@ -302,38 +387,60 @@ test("the youtube tag is applied only for a real youtube arrival", async () => {
 });
 
 /* ── Attribution ───────────────────────────────────────────────────────── */
-test("campaign values are passed through to Kit and stored, and absent ones stay empty", async () => {
+test("both touches are passed through to Kit under distinct field names", async () => {
   reset();
   await call(payload({
-    attribution: {
-      utm_source: "youtube",
-      utm_medium: "video",
-      utm_campaign: "capability-formation",
-      utm_content: "end-card",
-      utm_term: "stay-or-leave",
-      source: "youtube",
-      video: "read-what-the-work-built",
-      referrer: "https://www.youtube.com/watch?v=abc123",
-      landing_page: "/career-decisions?utm_source=youtube"
-    }
+    attribution: touches(
+      {
+        utm_source: "youtube", utm_medium: "video", utm_campaign: "launch",
+        utm_content: "end-card", utm_term: "stay-or-leave", source: "youtube",
+        video_slug: "episode-01", landing_page: "/career-decisions?v=episode-01",
+        referrer: "https://www.youtube.com/watch?v=abc", seen_at: "2026-08-17T10:00:00.000Z"
+      },
+      {
+        utm_source: "youtube", utm_medium: "video", utm_campaign: "followup",
+        utm_content: "description", utm_term: "", source: "youtube",
+        video_slug: "episode-04", landing_page: "/career-decisions?v=episode-04",
+        referrer: "https://www.youtube.com/watch?v=def", seen_at: "2026-08-17T11:30:00.000Z"
+      }
+    )
   }));
   const f = kitCalls[0].body.fields;
-  assert.equal(f.utm_source, "youtube");
-  assert.equal(f.utm_medium, "video");
-  assert.equal(f.utm_campaign, "capability-formation");
-  assert.equal(f.utm_content, "end-card");
-  assert.equal(f.utm_term, "stay-or-leave");
-  assert.equal(f.video_slug, "read-what-the-work-built");
-  assert.equal(f.referrer, "https://www.youtube.com/watch?v=abc123");
+  assert.equal(f.first_video_slug, "episode-01");
+  assert.equal(f.current_video_slug, "episode-04");
+  assert.equal(f.first_utm_campaign, "launch");
+  assert.equal(f.current_utm_campaign, "followup");
+  assert.equal(f.first_landing_page, "/career-decisions?v=episode-01");
+  assert.equal(f.current_landing_page, "/career-decisions?v=episode-04");
+  assert.equal(f.first_utm_source, "youtube");
+  assert.equal(f.current_utm_source, "youtube");
+  assert.equal(f.first_seen_at, "2026-08-17T10:00:00.000Z");
+  assert.equal(f.current_seen_at, "2026-08-17T11:30:00.000Z");
+  assert.equal(f.first_referrer, "https://www.youtube.com/watch?v=abc");
+  assert.equal(f.current_referrer, "https://www.youtube.com/watch?v=def");
 
   const rec = [...blobs.stores.get("career-decisions-leads").values()][0];
-  assert.equal(rec.attribution.video_slug, "read-what-the-work-built");
+  assert.equal(rec.attribution.first.video_slug, "episode-01");
+  assert.equal(rec.attribution.current.video_slug, "episode-04");
   assert.equal(rec.youtube_tagged, true);
+});
 
+test("an unattributed visit stays unattributed on both touches", async () => {
   reset();
   await call(payload());
-  assert.equal(kitCalls[0].body.fields.utm_source, "", "an unattributed visit stays unattributed");
-  assert.equal(kitCalls[0].body.fields.video_slug, "");
+  const f = kitCalls[0].body.fields;
+  for (const key of ["first_utm_source", "current_utm_source", "first_video_slug", "current_video_slug", "first_source", "current_source"]) {
+    assert.equal(f[key], "", key + " should be empty");
+  }
+  assert.ok(!kitCalls[0].body.tags.includes("9902"));
+});
+
+test("a payload carrying only one touch does not lose the other", async () => {
+  reset();
+  await call(payload({ attribution: { first: { video_slug: "episode-07", source: "youtube" } } }));
+  const f = kitCalls[0].body.fields;
+  assert.equal(f.first_video_slug, "episode-07");
+  assert.equal(f.current_video_slug, "episode-07", "current falls back to first rather than being blank");
 });
 
 test("oversized input is capped rather than stored whole", async () => {
@@ -341,11 +448,12 @@ test("oversized input is capped rather than stored whole", async () => {
   await call(payload({
     first_name: "A".repeat(500),
     current_decision: "D".repeat(9000),
-    attribution: { utm_campaign: "C".repeat(900) }
+    attribution: touches({ utm_campaign: "C".repeat(900) })
   }));
   assert.equal(kitCalls[0].body.first_name.length, 120);
   assert.equal(kitCalls[0].body.fields.current_decision.length, 2000);
-  assert.equal(kitCalls[0].body.fields.utm_campaign.length, 300);
+  assert.equal(kitCalls[0].body.fields.first_utm_campaign.length, 300);
+  assert.equal(kitCalls[0].body.fields.current_utm_campaign.length, 300);
 });
 
 /* ── Rate limiting ─────────────────────────────────────────────────────── */

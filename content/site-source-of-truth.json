@@ -186,8 +186,9 @@
       },
       "recording": "Recorded by the organizer. Participants may not record.",
       "registration_url": "https://maven.com/p/5162f2/how-to-tell-if-your-career-is-stalling",
-      "appears_on": ["for-professionals.html", "diagnostic.html"],
-      "retirement_note": "Time-bound. The banner block in for-professionals.html is self-contained and marked in a comment for deletion when the session passes."
+      "appears_on": ["for-professionals.html", "diagnostic.html", "career-decisions.html"],
+      "retirement_note": "Time-bound, and retired two different ways depending on the page. On for-professionals.html the banner block is self-contained and marked in a comment for deletion when the session passes: that one is manual. On career-decisions.html it is NOT manual and must not be deleted by hand. That page holds the session in a single NEXT_STEP configuration block with an explicit expiry of 2026-09-02T18:45:00-05:00, the end of the session in Central time, and switches itself to the Field Kit at that instant with no deploy and no edit. To retire it earlier than that, set NEXT_STEP.current to null rather than removing the block.",
+      "expiry_on_career_decisions": "2026-09-02T18:45:00-05:00"
     }
   },
 

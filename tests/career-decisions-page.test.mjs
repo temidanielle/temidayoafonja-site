@@ -64,8 +64,8 @@ after(async () => {
  * Plausible is replaced before any page script runs, so an event is recorded
  * whether or not the real script would have loaded.
  */
-async function open(t, { query = "", respond = { status: 200, json: { ok: true, durable_record: true } }, now = null, reducedMotion = null, viewport = { width: 1440, height: 900 } } = {}) {
-  const context = await browser.newContext({ viewport, reducedMotion: reducedMotion || undefined });
+async function open(t, { query = "", respond = { status: 200, json: { ok: true, durable_record: true } }, now = null, reducedMotion = null, viewport = { width: 1440, height: 900 }, timezoneId = null } = {}) {
+  const context = await browser.newContext({ viewport, reducedMotion: reducedMotion || undefined, timezoneId: timezoneId || undefined });
   const page = await context.newPage();
   const events = [];
   const requests = [];
@@ -103,11 +103,17 @@ async function open(t, { query = "", respond = { status: 200, json: { ok: true, 
   return { page, events, requests };
 }
 
-async function fillValid(page, { consent = true } = {}) {
+/* The page omits campaign keys the visitor never arrived with, rather than
+   sending empty strings, and the function normalises both to "". Absent and
+   empty therefore mean the same thing on the wire, and this reads either. */
+const val = (x) => (x === undefined || x === null ? "" : x);
+
+async function fillValid(page, { delivery = true, guidance = false } = {}) {
   await page.fill("#cdFirst", "Ada");
   await page.fill("#cdEmail", "ada@example.com");
   await page.fill("#cdDeciding", "Whether to take the platform role.");
-  if (consent) await page.check("#cdConsent");
+  if (delivery) await page.check("#cdConsentDelivery");
+  if (guidance) await page.check("#cdConsentGuidance");
 }
 
 /* ── Route and shell ───────────────────────────────────────────────────── */
@@ -142,15 +148,25 @@ test("the approved copy is on the page verbatim", async (t) => {
     "A short evidence check for experienced professionals deciding whether to stay, leave or reposition."
   );
   assert.equal((await page.locator("#cdSubmit").innerText()).trim().toUpperCase(), "SEND ME THE EVIDENCE CHECK");
-  const consent = (await page.locator('label[for="cdConsent"]').innerText()).replace(/\s+/g, " ").trim();
-  assert.ok(consent.startsWith("You will receive the evidence check and occasional Capability Formation guidance from Temidayo Afonja. You can unsubscribe at any time."), consent);
+  const delivery = (await page.locator('label[for="cdConsentDelivery"]').innerText()).replace(/\s+/g, " ").trim();
+  assert.equal(delivery, "Send me the Career Decision Evidence Check by email.");
+  const guidance = (await page.locator('label[for="cdConsentGuidance"]').innerText()).replace(/\s+/g, " ").trim();
+  assert.equal(guidance, "Also send me occasional Capability Formation guidance from Temidayo Afonja. I can unsubscribe at any time.");
 });
 
 test("the consent block links the word Privacy", async (t) => {
   const { page } = await open(t);
-  const link = page.locator('.cd-consent a[href="privacy.html"]');
+  const link = page.locator('.cd-consent-note a[href="privacy.html"]');
   assert.equal(await link.count(), 1);
   assert.equal((await link.innerText()).trim(), "Privacy");
+});
+
+test("both consent boxes begin unchecked, and only the first is required", async (t) => {
+  const { page } = await open(t);
+  assert.equal(await page.isChecked("#cdConsentDelivery"), false, "delivery must start unchecked");
+  assert.equal(await page.isChecked("#cdConsentGuidance"), false, "guidance must start unchecked");
+  assert.equal(await page.getAttribute("#cdConsentDelivery", "required"), "");
+  assert.equal(await page.getAttribute("#cdConsentGuidance", "required"), null, "guidance must never be required");
 });
 
 test("no em dash appears in the visible copy", async (t) => {
@@ -202,7 +218,7 @@ test("an invalid email is refused inline and the error clears on edit", async (t
   const { page, requests } = await open(t);
   await page.fill("#cdFirst", "Ada");
   await page.fill("#cdEmail", "ada@example");
-  await page.check("#cdConsent");
+  await page.check("#cdConsentDelivery");
   await page.click("#cdSubmit");
   assert.equal(await page.getAttribute("#cdEmail", "aria-invalid"), "true");
   assert.equal(await page.locator("#cdEmailError").innerText(), "Please enter a valid email address.");
@@ -213,19 +229,53 @@ test("an invalid email is refused inline and the error clears on edit", async (t
   assert.equal(await page.locator("#cdEmailError").innerText(), "");
 });
 
-test("an unticked consent box blocks the submission", async (t) => {
+test("declining the required delivery consent prevents submission", async (t) => {
   const { page, requests } = await open(t);
-  await fillValid(page, { consent: false });
+  await fillValid(page, { delivery: false });
   await page.click("#cdSubmit");
-  assert.equal(await page.getAttribute("#cdConsent", "aria-invalid"), "true");
-  assert.match(await page.locator("#cdConsentError").innerText(), /tick the box/);
-  assert.equal(requests.length, 0, "nothing may be sent without consent");
+  assert.equal(await page.getAttribute("#cdConsentDelivery", "aria-invalid"), "true");
+  assert.match(await page.locator("#cdConsentError").innerText(), /tick the first box/);
+  assert.equal(requests.length, 0, "nothing may be sent without delivery consent");
   assert.equal(await page.locator("#cdResult").isVisible(), false);
 });
 
-test("consent starts unticked", async (t) => {
-  const { page } = await open(t);
-  assert.equal(await page.isChecked("#cdConsent"), false);
+test("declining the required consent while accepting guidance still blocks submission", async (t) => {
+  const { page, requests } = await open(t);
+  await fillValid(page, { delivery: false, guidance: true });
+  await page.click("#cdSubmit");
+  assert.equal(requests.length, 0, "guidance consent can never stand in for delivery consent");
+  assert.equal(await page.locator("#cdResult").isVisible(), false);
+});
+
+test("accepting delivery consent alone sends the evidence check and no marketing consent", async (t) => {
+  const { page, requests } = await open(t);
+  await fillValid(page);
+  await page.click("#cdSubmit");
+  await page.waitForSelector("#cdResult.is-open");
+  assert.equal(requests.length, 1);
+  assert.equal(requests[0].delivery_consent, true);
+  assert.ok(requests[0].delivery_consent_timestamp, "the delivery consent is stamped");
+  assert.equal(requests[0].delivery_policy_version, "2026-08-12");
+  assert.equal(requests[0].guidance_consent, false, "guidance is never inferred from delivery");
+  assert.equal(requests[0].guidance_consent_timestamp, "", "no stamp for a consent that was not given");
+  assert.equal(requests[0].guidance_policy_version, "");
+});
+
+test("ticking guidance records that consent separately, with its own stamp", async (t) => {
+  const { page, requests } = await open(t);
+  await fillValid(page, { guidance: true });
+  await page.click("#cdSubmit");
+  await page.waitForSelector("#cdResult.is-open");
+  assert.equal(requests[0].delivery_consent, true);
+  assert.equal(requests[0].guidance_consent, true);
+  assert.ok(requests[0].guidance_consent_timestamp, "the guidance consent is stamped");
+  assert.equal(requests[0].guidance_policy_version, "2026-08-12");
+});
+
+test("neither consent is ever pre-set by a URL parameter", async (t) => {
+  const { page } = await open(t, { query: "?delivery_consent=true&guidance_consent=true&marketing_consent=1" });
+  assert.equal(await page.isChecked("#cdConsentDelivery"), false);
+  assert.equal(await page.isChecked("#cdConsentGuidance"), false);
 });
 
 /* ── Success ───────────────────────────────────────────────────────────── */
@@ -236,9 +286,9 @@ test("a confirmed subscription reveals the three questions, announces it, and mo
   await page.waitForSelector("#cdResult.is-open");
 
   assert.equal(requests.length, 1);
-  assert.equal(requests[0].marketing_consent, true);
-  assert.ok(requests[0].consent_timestamp, "the consent timestamp is sent");
-  assert.equal(requests[0].policy_version, "2026-08-12");
+  assert.equal(requests[0].delivery_consent, true);
+  assert.ok(requests[0].delivery_consent_timestamp, "the delivery consent timestamp is sent");
+  assert.equal(requests[0].delivery_policy_version, "2026-08-12");
 
   const questions = await page.locator("#cdResult .cd-q .t").allInnerTexts();
   assert.deepEqual(questions.map((q) => q.trim()), [
@@ -314,13 +364,16 @@ test("campaign values and the originating video are preserved through submission
   await page.click("#cdSubmit");
   await page.waitForSelector("#cdResult.is-open");
   const a = requests[0].attribution;
-  assert.equal(a.utm_source, "youtube");
-  assert.equal(a.utm_medium, "video");
-  assert.equal(a.utm_campaign, "capability-formation");
-  assert.equal(a.utm_content, "end-card");
-  assert.equal(a.utm_term, "stay-or-leave");
-  assert.equal(a.video, "read-what-the-work-built");
-  assert.ok(a.landing_page.includes("utm_source=youtube"));
+  for (const touch of [a.first, a.current]) {
+    assert.equal(touch.utm_source, "youtube");
+    assert.equal(touch.utm_medium, "video");
+    assert.equal(touch.utm_campaign, "capability-formation");
+    assert.equal(touch.utm_content, "end-card");
+    assert.equal(touch.utm_term, "stay-or-leave");
+    assert.equal(touch.video_slug, "read-what-the-work-built");
+    assert.ok(touch.landing_page.includes("utm_source=youtube"));
+    assert.ok(touch.seen_at, "each touch is timestamped");
+  }
 });
 
 test("attribution survives a later visit to the bare URL in the same session", async (t) => {
@@ -329,8 +382,61 @@ test("attribution survives a later visit to the bare URL in the same session", a
   await fillValid(page);
   await page.click("#cdSubmit");
   await page.waitForSelector("#cdResult.is-open");
-  assert.equal(requests[0].attribution.source, "youtube");
-  assert.equal(requests[0].attribution.video, "episode-04");
+  const a = requests[0].attribution;
+  assert.equal(a.first.source, "youtube");
+  assert.equal(a.first.video_slug, "episode-04");
+  assert.equal(a.current.source, "youtube", "a bare return is not a new campaign visit");
+  assert.equal(a.current.video_slug, "episode-04");
+});
+
+test("a second video in the same session updates current and leaves first alone", async (t) => {
+  const { page, requests } = await open(t, { query: "?utm_source=youtube&utm_campaign=launch&v=episode-01" });
+  await page.goto(origin + "/career-decisions?utm_source=youtube&utm_campaign=followup&v=episode-09", { waitUntil: "domcontentloaded" });
+  await fillValid(page);
+  await page.click("#cdSubmit");
+  await page.waitForSelector("#cdResult.is-open");
+  const a = requests[0].attribution;
+  assert.equal(a.first.video_slug, "episode-01", "the first video is never overwritten");
+  assert.equal(a.first.utm_campaign, "launch");
+  assert.ok(a.first.landing_page.includes("episode-01"));
+  assert.equal(a.current.video_slug, "episode-09", "the most recent campaign visit is recorded");
+  assert.equal(a.current.utm_campaign, "followup");
+  assert.ok(a.current.landing_page.includes("episode-09"));
+});
+
+test("a third campaign visit moves current again and still leaves first alone", async (t) => {
+  const { page, requests } = await open(t, { query: "?v=episode-01" });
+  await page.goto(origin + "/career-decisions?v=episode-05", { waitUntil: "domcontentloaded" });
+  await page.goto(origin + "/career-decisions?v=episode-12", { waitUntil: "domcontentloaded" });
+  await fillValid(page);
+  await page.click("#cdSubmit");
+  await page.waitForSelector("#cdResult.is-open");
+  assert.equal(requests[0].attribution.first.video_slug, "episode-01");
+  assert.equal(requests[0].attribution.current.video_slug, "episode-12");
+});
+
+test("a visitor who arrives direct and later arrives from a video keeps both facts", async (t) => {
+  const { page, requests } = await open(t);
+  await page.goto(origin + "/career-decisions?utm_source=youtube&v=episode-08", { waitUntil: "domcontentloaded" });
+  await fillValid(page);
+  await page.click("#cdSubmit");
+  await page.waitForSelector("#cdResult.is-open");
+  const a = requests[0].attribution;
+  assert.equal(val(a.first.video_slug), "", "the first visit genuinely had no video");
+  assert.equal(val(a.first.source), "");
+  assert.ok(a.first.landing_page, "but the first landing page is still recorded");
+  assert.equal(a.current.video_slug, "episode-08");
+  assert.equal(a.current.utm_source, "youtube");
+});
+
+test("analytics attribute to the current touch", async (t) => {
+  const { page, events } = await open(t, { query: "?utm_source=youtube&utm_campaign=launch&v=episode-01" });
+  await page.goto(origin + "/career-decisions?utm_source=newsletter&utm_campaign=followup&v=episode-09", { waitUntil: "domcontentloaded" });
+  await fillValid(page);
+  await page.click("#cdSubmit");
+  await page.waitForSelector("#cdResult.is-open");
+  const subscribed = events.find((e) => e.name === "Career Decisions Subscribed");
+  assert.deepEqual(subscribed.props, { source: "newsletter", campaign: "followup", video_slug: "episode-09" });
 });
 
 test("a source is never invented when the visitor arrives without one", async (t) => {
@@ -339,12 +445,15 @@ test("a source is never invented when the visitor arrives without one", async (t
   await page.click("#cdSubmit");
   await page.waitForSelector("#cdResult.is-open");
   const a = requests[0].attribution;
-  assert.equal(a.source, undefined);
-  assert.equal(a.utm_source, undefined);
-  assert.equal(a.video, undefined);
+  for (const touch of [a.first, a.current]) {
+    assert.equal(val(touch.source), "");
+    assert.equal(val(touch.utm_source), "");
+    assert.equal(val(touch.video_slug), "");
+  }
   const subscribed = events.find((e) => e.name === "Career Decisions Subscribed");
   assert.equal(subscribed.props.source, "direct");
-  assert.equal(subscribed.props.video, "none");
+  assert.equal(subscribed.props.video_slug, "none");
+  assert.equal(subscribed.props.campaign, "none");
 });
 
 /* ── Honeypot ──────────────────────────────────────────────────────────── */
@@ -365,6 +474,66 @@ test("the honeypot is present, hidden, and out of the tab order", async (t) => {
 });
 
 /* ── The one configurable next step ────────────────────────────────────── */
+/* The exact instant the offer retires: 6:45 PM Central on Wednesday 2 September
+   2026, which is Central Daylight Time, UTC minus 5. */
+const EXPIRY = Date.parse("2026-09-02T18:45:00-05:00");
+
+test("the expiration instant is the end of the session in Central time", async () => {
+  assert.equal(EXPIRY, Date.parse("2026-09-02T23:45:00Z"), "6:45 PM CDT is 23:45 UTC");
+  // The trap this guards against: a date-only string is parsed as UTC midnight,
+  // which lands at 7:00 PM Central on the PREVIOUS day and would retire the
+  // offer almost a full day early for the audience it is aimed at.
+  assert.ok(Date.parse("2026-09-02") < EXPIRY - 20 * 3600 * 1000, "a date-only string would expire far too early");
+  const source = await readFile(join(ROOT, "career-decisions.html"), "utf8");
+  assert.ok(source.includes('available_until: "2026-09-02T18:45:00-05:00"'), "the offset must be written explicitly in the source");
+});
+
+test("one second before the boundary the Lightning Lesson is still offered", async (t) => {
+  const { page } = await open(t, { now: EXPIRY - 1000, timezoneId: "America/Chicago" });
+  await fillValid(page);
+  await page.click("#cdSubmit");
+  await page.waitForSelector("#cdResult.is-open");
+  assert.equal(await page.locator("#cdStep a").getAttribute("href"), "https://maven.com/p/5162f2/how-to-tell-if-your-career-is-stalling");
+});
+
+test("one second after the boundary the Field Kit is offered", async (t) => {
+  const { page } = await open(t, { now: EXPIRY + 1000, timezoneId: "America/Chicago" });
+  await fillValid(page);
+  await page.click("#cdSubmit");
+  await page.waitForSelector("#cdResult.is-open");
+  assert.equal(await page.locator("#cdStep a").getAttribute("href"), "https://temidayoafonja.com/fieldkit");
+});
+
+test("the switch happens at the same instant in every timezone", async (t) => {
+  // A Central visitor must not lose the offer early, and a visitor whose clock
+  // is set to Tokyo or London must not keep it late. Both are the same test:
+  // the comparison is between two absolute instants and ignores local time.
+  for (const tz of ["America/Chicago", "UTC", "Asia/Tokyo", "America/Los_Angeles", "Pacific/Kiritimati"]) {
+    const before = await open(t, { now: EXPIRY - 60000, timezoneId: tz });
+    await fillValid(before.page);
+    await before.page.click("#cdSubmit");
+    await before.page.waitForSelector("#cdResult.is-open");
+    assert.match(await before.page.locator("#cdStep a").getAttribute("href"), /maven\.com/, `${tz} lost the offer early`);
+
+    const after = await open(t, { now: EXPIRY + 60000, timezoneId: tz });
+    await fillValid(after.page);
+    await after.page.click("#cdSubmit");
+    await after.page.waitForSelector("#cdResult.is-open");
+    assert.match(await after.page.locator("#cdStep a").getAttribute("href"), /fieldkit/, `${tz} kept the offer late`);
+  }
+});
+
+test("the Lightning Lesson is offered through the whole registration period", async (t) => {
+  // Sampled across the run up to the session rather than at one arbitrary point.
+  for (const iso of ["2026-08-18T00:00:00-05:00", "2026-08-31T23:59:00-05:00", "2026-09-02T00:00:00-05:00", "2026-09-02T18:00:00-05:00", "2026-09-02T18:44:59-05:00"]) {
+    const { page } = await open(t, { now: Date.parse(iso), timezoneId: "America/Chicago" });
+    await fillValid(page);
+    await page.click("#cdSubmit");
+    await page.waitForSelector("#cdResult.is-open");
+    assert.match(await page.locator("#cdStep a").getAttribute("href"), /maven\.com/, `offer missing at ${iso}`);
+  }
+});
+
 test("before the Lightning Lesson ends, the next step is the Lightning Lesson", async (t) => {
   const { page } = await open(t, { now: Date.parse("2026-08-20T12:00:00Z") });
   await fillValid(page);
@@ -415,14 +584,83 @@ test("no raw Gumroad or Amazon link is used on the page", async (t) => {
 
 /* ── Outbound tracking ─────────────────────────────────────────────────── */
 test("the next step click and the Field Kit click are tracked separately", async (t) => {
-  const { page, events } = await open(t, { now: Date.parse("2026-09-03T00:00:00Z") });
+  const { page, events } = await open(t, { now: Date.parse("2026-09-03T00:00:00Z"), query: "?utm_source=youtube&utm_campaign=launch&v=episode-02" });
   await fillValid(page);
   await page.click("#cdSubmit");
   await page.waitForSelector("#cdResult.is-open");
   await page.locator("#cdStep a").click({ noWaitAfter: true }).catch(() => {});
   await page.waitForTimeout(200);
-  assert.ok(events.some((e) => e.name === "Career Decisions Next Step Click" && e.props.step === "field-kit"));
+  const clicked = events.find((e) => e.name === "Career Decisions Next Step Clicked");
+  assert.ok(clicked, "the next step click is tracked");
+  assert.deepEqual(clicked.props, {
+    next_step: "field-kit",
+    source: "youtube",
+    campaign: "launch",
+    video_slug: "episode-02"
+  });
   assert.ok(events.some((e) => e.name === "Field Kit Click"));
+});
+
+test("all five funnel events exist and fire at the right moment", async (t) => {
+  const { page, events } = await open(t, { now: Date.parse("2026-08-20T12:00:00Z") });
+  const names = () => events.map((e) => e.name);
+
+  await page.waitForFunction(() => true);
+  await page.waitForTimeout(300);
+  assert.ok(names().includes("Career Decisions Form Viewed"), "Form Viewed fires when the form is in view");
+  assert.ok(!names().includes("Career Decisions Form Started"), "Form Started must not fire on view alone");
+
+  await page.click("#cdFirst");
+  await page.waitForTimeout(150);
+  assert.ok(names().includes("Career Decisions Form Started"));
+  assert.ok(!names().includes("Career Decisions Subscribed"), "nothing is a subscription yet");
+
+  await fillValid(page);
+  await page.click("#cdSubmit");
+  await page.waitForSelector("#cdResult.is-open");
+  assert.ok(names().includes("Career Decisions Subscribed"));
+
+  await page.locator("#cdStep a").click({ noWaitAfter: true }).catch(() => {});
+  await page.waitForTimeout(200);
+  assert.ok(names().includes("Career Decisions Next Step Clicked"));
+
+  assert.equal(events.filter((e) => e.name === "Career Decisions Form Viewed").length, 1, "Form Viewed fires once");
+  assert.equal(events.filter((e) => e.name === "Career Decisions Subscribed").length, 1);
+});
+
+test("Form Viewed fires only after the form is actually scrolled into view", async (t) => {
+  // A short viewport puts the form below the fold, so the event must wait.
+  const { page, events } = await open(t, { viewport: { width: 1440, height: 300 } });
+  await page.waitForTimeout(400);
+  assert.ok(!events.some((e) => e.name === "Career Decisions Form Viewed"), "not viewed while below the fold");
+  await page.locator("#cdForm").scrollIntoViewIfNeeded();
+  await page.waitForTimeout(400);
+  assert.ok(events.some((e) => e.name === "Career Decisions Form Viewed"), "viewed once scrolled to");
+});
+
+test("no analytics event carries personal information", async (t) => {
+  const ALLOWED = new Set(["next_step", "source", "campaign", "video_slug", "reason", "from"]);
+  const { page, events } = await open(t, { query: "?utm_source=youtube&v=episode-03" });
+  await page.fill("#cdFirst", "Ada");
+  await page.fill("#cdEmail", "ada@example.com");
+  await page.fill("#cdDeciding", "Leaving because of my manager Dana at Initech.");
+  await page.check("#cdConsentDelivery");
+  await page.check("#cdConsentGuidance");
+  await page.click("#cdSubmit");
+  await page.waitForSelector("#cdResult.is-open");
+  await page.locator("#cdStep a").click({ noWaitAfter: true }).catch(() => {});
+  await page.waitForTimeout(250);
+
+  assert.ok(events.length >= 4);
+  for (const e of events) {
+    const blob = JSON.stringify(e);
+    assert.ok(!blob.includes("ada@example.com"), `${e.name} leaked an email address`);
+    assert.ok(!/\bAda\b/.test(blob), `${e.name} leaked a name`);
+    assert.ok(!blob.includes("Initech") && !blob.includes("Dana"), `${e.name} leaked decision text`);
+    for (const key of Object.keys(e.props || {})) {
+      assert.ok(ALLOWED.has(key), `${e.name} carries an unexpected property: ${key}`);
+    }
+  }
 });
 
 test("the Books and Tools click is tracked from the existing footer link", async (t) => {
@@ -460,8 +698,9 @@ test("every control has a real label, an autocomplete token and a description", 
   }
   assert.equal(await page.getAttribute("#cdFirst", "required"), "");
   assert.equal(await page.getAttribute("#cdEmail", "required"), "");
-  assert.equal(await page.getAttribute("#cdConsent", "required"), "");
-  assert.ok(!!(await page.locator('label[for="cdConsent"]').count()));
+  assert.equal(await page.getAttribute("#cdConsentDelivery", "required"), "");
+  assert.ok(!!(await page.locator('label[for="cdConsentDelivery"]').count()));
+  assert.ok(!!(await page.locator('label[for="cdConsentGuidance"]').count()));
 });
 
 test("the live regions exist before they are needed", async (t) => {
@@ -488,12 +727,16 @@ test("the whole form is reachable and operable by keyboard alone", async (t) => 
   await page.keyboard.type("ada@example.com");
   await page.keyboard.press("Tab");
   await page.keyboard.type("Stay or go");
-  await page.keyboard.press("Tab"); // consent, the honeypot is out of the tab order
-  assert.equal(await page.evaluate(() => document.activeElement.id), "cdConsent");
+  await page.keyboard.press("Tab"); // delivery consent, the honeypot is skipped
+  assert.equal(await page.evaluate(() => document.activeElement.id), "cdConsentDelivery");
   await page.keyboard.press("Space");
   await page.keyboard.press("Tab");
-  // The Privacy link sits inside the consent label, so it is the next stop.
-  // That is correct: a keyboard user can read the policy before submitting.
+  assert.equal(await page.evaluate(() => document.activeElement.id), "cdConsentGuidance");
+  // Deliberately not pressing Space here: the optional box must be reachable
+  // without being ticked, and skipping it must not block anything.
+  await page.keyboard.press("Tab");
+  // The Privacy link sits in the note under the two boxes, so it is the next
+  // stop. A keyboard user can read the policy before submitting.
   assert.equal(await page.evaluate(() => document.activeElement.getAttribute("href")), "privacy.html");
   await page.keyboard.press("Tab");
   assert.equal(await page.evaluate(() => document.activeElement.id), "cdSubmit");

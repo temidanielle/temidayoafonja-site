@@ -91,15 +91,21 @@
    carries the same information in text, and aria-invalid carries it to
    assistive technology. --red-soft is the repository's own error colour. */
 .cd-field input[aria-invalid="true"], .cd-field textarea[aria-invalid="true"] { border-color: var(--red-soft); }
-.cd-note { font-size: 12px; color: var(--muted); margin-top: 6px; }
-.cd-error { font-size: 12.5px; color: #A83A2A; margin-top: 6px; font-weight: 700; }
-.cd-error:empty { display: none; }
+/* These three are prefixed with .lean-page deliberately. ".lean-page p" above
+   is (0,1,1) and would otherwise outrank a bare (0,1,0) class selector, which
+   put the hint and error text at the 15px body size and made it louder than the
+   labels it sits under. Same specificity trap styles.css documents for
+   ".nav-logo span". */
+.lean-page .cd-note { font-size: 12px; color: var(--muted); margin-top: 6px; line-height: 1.45; }
+.lean-page .cd-error { font-size: 12.5px; color: #A83A2A; margin-top: 6px; font-weight: 700; line-height: 1.45; }
+.lean-page .cd-error:empty { display: none; }
 
 /* Consent. A real checkbox at its native size, never restyled away. */
 .cd-consent { display: flex; gap: 11px; align-items: flex-start; padding: 4px 0 2px; }
 .cd-consent input[type="checkbox"] { width: 17px; height: 17px; margin: 2px 0 0; flex: 0 0 auto; accent-color: var(--navy); }
 .cd-consent label { font-size: 12.5px; line-height: 1.5; color: var(--muted); text-transform: none; letter-spacing: 0; font-weight: 400; margin: 0; }
-.cd-consent a { color: var(--navy); text-decoration: underline; }
+.lean-page .cd-consent-note { font-size: 12px; line-height: 1.5; color: var(--muted); margin-top: 6px; }
+.cd-consent-note a, .cd-consent a { color: var(--navy); text-decoration: underline; }
 .cd-submit { background: var(--rust); color: #fff; border: none; border-radius: 4px; padding: 15px; font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; }
 .cd-submit[disabled] { opacity: .72; cursor: default; }
 /* The honeypot. Off screen rather than display:none, so a scripted client that
@@ -217,12 +223,22 @@
             <input id="cdRef" name="decision_reference" type="text" tabindex="-1" autocomplete="off">
           </div>
 
+          <!-- Two separate purposes, two separate choices, both unchecked.
+               Delivery consent authorises the requested resource and nothing
+               else. Guidance consent is optional and is the only thing that
+               enrols anyone in ongoing marketing. Requesting the evidence check
+               never implies the second. -->
           <div class="cd-field">
             <div class="cd-consent">
-              <input id="cdConsent" name="marketing_consent" type="checkbox" required aria-required="true" aria-describedby="cdConsentError">
-              <label for="cdConsent">You will receive the evidence check and occasional Capability Formation guidance from Temidayo Afonja. You can unsubscribe at any time. <a href="privacy.html">Privacy</a></label>
+              <input id="cdConsentDelivery" name="delivery_consent" type="checkbox" required aria-required="true" aria-describedby="cdConsentError">
+              <label for="cdConsentDelivery">Send me the Career Decision Evidence Check by email.</label>
             </div>
             <p class="cd-error" id="cdConsentError"></p>
+            <div class="cd-consent">
+              <input id="cdConsentGuidance" name="guidance_consent" type="checkbox">
+              <label for="cdConsentGuidance">Also send me occasional Capability Formation guidance from Temidayo Afonja. I can unsubscribe at any time.</label>
+            </div>
+            <p class="cd-consent-note">The first is needed to send you the evidence check. The second is optional, and leaving it unticked does not affect the first. <a href="privacy.html">Privacy</a></p>
           </div>
 
           <button class="cd-submit" id="cdSubmit" type="submit">Send me the evidence check</button>
@@ -311,17 +327,39 @@
    deploy and no edit required. Both are compared against the visitor's clock,
    which is the honest reading of "has the event happened yet" for a visitor.
 
-   available_until below is the end of the Lightning Lesson named in
-   current.title, at 6:45 PM CT on the day of the session. That month is CDT,
-   which is UTC minus 5, so 6:45 PM CT is 23:45 UTC on the same day. The session
-   date itself is written once only, in current.body just below.
+   available_until is a fully qualified ISO 8601 instant, written with the
+   Central offset that is actually in force on the day of the session:
+
+       2026-09-02T18:45:00-05:00
+
+   That is 6:45 PM Central on Wednesday 2 September 2026, the end of the
+   session. September is Central Daylight Time, which is UTC minus 5, so the
+   same instant is 23:45 UTC. Writing the offset rather than a Z, and rather
+   than a date on its own, is deliberate:
+
+     - A date-only string ("2026-09-02") is parsed as UTC midnight, which would
+       retire the offer at 7:00 PM Central on the first of September, a whole
+       day early for the audience it is aimed at.
+     - Date.parse of a fully qualified instant and Date.now() are both absolute.
+       Neither depends on the visitor's local timezone, on the browser's guess
+       at a timezone, or on whatever timezone the Netlify host runs in. Every
+       visitor on earth switches from the Lightning Lesson to the Field Kit at
+       the same moment, and that moment is the one written above.
+
+   The session date itself is written once only, in current.body just below.
 
    To retire the Lightning Lesson early, set "current" to null.
    ───────────────────────────────────────────────────────────────────────── */
+/* The version of the privacy policy in force when a consent is recorded. It is
+   the "Last updated" date at the top of privacy.html. Change it here in the
+   same commit that changes that date, so every consent record says which text
+   the person actually agreed to. */
+var POLICY_VERSION = "2026-08-12";
+
 var NEXT_STEP = {
   current: {
     id: "lightning-lesson",
-    available_until: "2026-09-02T23:45:00Z",
+    available_until: "2026-09-02T18:45:00-05:00",
     label: "One next step",
     title: "How to Tell If Your Career Is Stalling",
     body: "A free 45 minute Lightning Lesson on Wednesday, September 2, 2026, 6:00 to 6:45 PM CT. Three signs your role may have stopped building your capability and future options, even while you are performing well.",
@@ -344,8 +382,11 @@ function currentNextStep() {
   var c = NEXT_STEP.current;
   if (!c || !c.available_until) return NEXT_STEP.fallback;
   var until = Date.parse(c.available_until);
-  if (isNaN(until) || Date.now() >= until) return NEXT_STEP.fallback;
-  return c;
+  // A malformed timestamp must not silently retire a live offer, and must not
+  // silently keep a dead one alive either. Falling back is the safe direction:
+  // the Field Kit is always a valid next step, the Lightning Lesson is not.
+  if (isNaN(until)) return NEXT_STEP.fallback;
+  return Date.now() < until ? c : NEXT_STEP.fallback;
 }
 
 function renderNextStep() {
@@ -371,8 +412,22 @@ function renderNextStep() {
 /* ─────────────────────────────────────────────────────────────────────────
    2. ATTRIBUTION
    ─────────────────────────────────────────────────────────────────────────
-   Read once on load, held for the session so an in page jump or a back and
-   forward does not lose it, and sent with the submission.
+   Two touches are kept, never one.
+
+     first     the campaign visit that introduced this person to the page
+     current   the most recent explicit campaign visit in the same session
+
+   Why both. A viewer can find the page from one video, leave it open, come back
+   later in the same session from a different video, and only then subscribe.
+   Keeping only the first attributes the subscriber to a video they had already
+   moved on from. Keeping only the last erases the video that actually did the
+   work of finding them. Neither is the whole truth on its own, so both are
+   recorded and the first is never overwritten.
+
+   What counts as an explicit campaign visit: a page load whose query string
+   carries at least one campaign key, or a video slug. A bare return to
+   /career-decisions with no parameters is not a new campaign visit and changes
+   nothing, because the visitor did not arrive from anywhere new.
 
    Nothing is invented. "source" is whatever the visitor actually arrived with,
    from ?source= or ?utm_source=. It is never defaulted to youtube. If no
@@ -380,60 +435,93 @@ function renderNextStep() {
 
    The originating video is read from ?v= or ?video=, which is what the channel
    links will carry.
-   ───────────────────────────────────────────────────────────────────────── */
-var ATTR_KEYS = ["utm_source","utm_medium","utm_campaign","utm_content","utm_term","source","video"];
+   ─────────────────────────────────────────────────────────────────────────── */
+var ATTR_KEYS = ["utm_source","utm_medium","utm_campaign","utm_content","utm_term","source"];
 var ATTR_STORE_KEY = "cd_attribution";
 
-function readAttribution() {
-  var stored = {};
-  try {
-    var raw = window.sessionStorage.getItem(ATTR_STORE_KEY);
-    if (raw) stored = JSON.parse(raw) || {};
-  } catch (e) { stored = {}; }
-
+/* Reads this page load as a single touch, and reports whether it carried any
+   explicit campaign information at all. */
+function readTouch() {
   var params;
   try { params = new URLSearchParams(window.location.search); } catch (e) { params = null; }
 
-  var fresh = {};
+  var touch = {};
+  var hasCampaign = false;
   if (params) {
     ATTR_KEYS.forEach(function (k) {
       var v = params.get(k);
-      if (k === "video" && !v) v = params.get("v");
-      if (v) fresh[k] = String(v).slice(0, 200);
+      if (v) { touch[k] = String(v).slice(0, 200); hasCampaign = true; }
     });
+    var video = params.get("video") || params.get("v");
+    if (video) { touch.video_slug = String(video).slice(0, 200); hasCampaign = true; }
   }
+  touch.landing_page = (window.location.pathname + window.location.search).slice(0, 300);
+  touch.referrer = String(document.referrer || "").slice(0, 300);
+  touch.seen_at = new Date().toISOString();
+  return { touch: touch, hasCampaign: hasCampaign };
+}
 
-  /* First touch wins. A visitor who lands from a video and then navigates
-     within the page keeps the video that sent them. */
-  var attr = {};
-  ATTR_KEYS.forEach(function (k) {
-    var val = stored[k] || fresh[k] || "";
-    if (val) attr[k] = val;
-  });
-  if (!attr.referrer) {
-    var ref = stored.referrer || document.referrer || "";
-    if (ref) attr.referrer = String(ref).slice(0, 300);
-  }
-  if (!attr.landing_page) {
-    attr.landing_page = stored.landing_page || (window.location.pathname + window.location.search).slice(0, 300);
-  }
+function readAttribution() {
+  var stored = null;
+  try {
+    var raw = window.sessionStorage.getItem(ATTR_STORE_KEY);
+    if (raw) stored = JSON.parse(raw);
+  } catch (e) { stored = null; }
+  if (!stored || typeof stored !== "object") stored = null;
 
-  try { window.sessionStorage.setItem(ATTR_STORE_KEY, JSON.stringify(attr)); } catch (e) { /* private mode */ }
-  return attr;
+  var read = readTouch();
+
+  if (!stored || !stored.first) {
+    /* Nothing recorded yet, so this visit is both the first and the current
+       touch, campaign parameters or not. Recording it either way is what makes
+       first_landing_page meaningful for a visitor who arrived direct. */
+    stored = { first: read.touch, current: read.touch };
+  } else if (read.hasCampaign) {
+    /* An explicit new campaign visit moves the current touch only. The first
+       touch is never overwritten, for any reason. */
+    stored.current = read.touch;
+  }
+  if (!stored.current) stored.current = stored.first;
+
+  try { window.sessionStorage.setItem(ATTR_STORE_KEY, JSON.stringify(stored)); } catch (e) { /* private mode */ }
+  return stored;
 }
 
 var ATTRIBUTION = readAttribution();
 
+/* Readers used for analytics properties only. The submission sends the whole
+   first and current objects, untouched. */
+function attrOf(which, key) {
+  return (ATTRIBUTION && ATTRIBUTION[which] && ATTRIBUTION[which][key]) || "";
+}
+function analyticsSource()   { return attrOf("current", "source") || attrOf("current", "utm_source") || "direct"; }
+function analyticsCampaign() { return attrOf("current", "utm_campaign") || "none"; }
+function analyticsVideo()    { return attrOf("current", "video_slug") || "none"; }
+
 /* ─────────────────────────────────────────────────────────────────────────
    3. ANALYTICS
    ─────────────────────────────────────────────────────────────────────────
-   The page view is the automatic Plausible pageview from the script in the
-   head. It is deliberately not fired again here, because two pageviews per
-   visit would inflate the top of this funnel.
+   Five events, and only five:
+
+     Career Decisions Form Viewed        the form itself entered the viewport
+     Career Decisions Form Started       first real interaction with a field
+     Career Decisions Subscribed         the server confirmed a subscription
+     Career Decisions Submit Failed      a submission did not result in one
+     Career Decisions Next Step Clicked  the single next step was clicked
+
+   Form Viewed is not the page view. The automatic Plausible pageview from the
+   script in the head already counts arrivals, and is deliberately not fired
+   again here. Form Viewed counts the narrower thing worth knowing: how many
+   arrivals actually got as far as seeing the form.
 
    "Career Decisions Subscribed" fires in one place only: after the server has
    returned a confirmed subscription. A click, a validation failure, a rejected
    request and a network error can never reach it.
+
+   No property on any event may carry personal information. Names, email
+   addresses and the free-text decision are never passed to track(), and a test
+   asserts that every property value is drawn from the small non-sensitive set
+   below: next_step, source, campaign, video_slug, reason, from.
    ───────────────────────────────────────────────────────────────────────── */
 function track(name, props) {
   try { if (window.plausible) window.plausible(name, props ? { props: props } : undefined); } catch (e) { /* analytics never breaks the page */ }
@@ -447,7 +535,8 @@ document.addEventListener("DOMContentLoaded", function () {
   var firstEl = document.getElementById("cdFirst");
   var emailEl = document.getElementById("cdEmail");
   var decidingEl = document.getElementById("cdDeciding");
-  var consentEl = document.getElementById("cdConsent");
+  var deliveryEl = document.getElementById("cdConsentDelivery");
+  var guidanceEl = document.getElementById("cdConsentGuidance");
   var trapEl = document.getElementById("cdRef");
   var submitEl = document.getElementById("cdSubmit");
   var formError = document.getElementById("cdFormError");
@@ -455,14 +544,35 @@ document.addEventListener("DOMContentLoaded", function () {
   var result = document.getElementById("cdResult");
   if (!form) return;
 
+  /* Form viewed. Fires once, when the form itself scrolls into view, which is
+     a different and more useful number than the page view. Where
+     IntersectionObserver is missing the event simply fires on load rather than
+     never, so the funnel is never silently short by a browser. */
+  var viewed = false;
+  function markViewed() {
+    if (viewed) return;
+    viewed = true;
+    track("Career Decisions Form Viewed", { source: analyticsSource(), campaign: analyticsCampaign(), video_slug: analyticsVideo() });
+  }
+  if (window.IntersectionObserver) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) { markViewed(); io.disconnect(); }
+      });
+    }, { threshold: 0.25 });
+    io.observe(form);
+  } else {
+    markViewed();
+  }
+
   /* Form start. Fires once, on the first real interaction with a field. */
   var started = false;
   function markStarted() {
     if (started) return;
     started = true;
-    track("Career Decisions Form Started", { source: ATTRIBUTION.source || ATTRIBUTION.utm_source || "direct" });
+    track("Career Decisions Form Started", { source: analyticsSource(), campaign: analyticsCampaign(), video_slug: analyticsVideo() });
   }
-  [firstEl, emailEl, decidingEl, consentEl].forEach(function (el) {
+  [firstEl, emailEl, decidingEl, deliveryEl, guidanceEl].forEach(function (el) {
     if (el) el.addEventListener("focus", markStarted, { once: true });
   });
 
@@ -486,8 +596,8 @@ document.addEventListener("DOMContentLoaded", function () {
       if (pair[0].getAttribute("aria-invalid") === "true") setError(pair[0], document.getElementById(pair[1]), "");
     });
   });
-  consentEl.addEventListener("change", function () {
-    if (consentEl.getAttribute("aria-invalid") === "true") setError(consentEl, document.getElementById("cdConsentError"), "");
+  deliveryEl.addEventListener("change", function () {
+    if (deliveryEl.getAttribute("aria-invalid") === "true") setError(deliveryEl, document.getElementById("cdConsentError"), "");
   });
 
   function validate() {
@@ -503,10 +613,12 @@ document.addEventListener("DOMContentLoaded", function () {
     else if (!validEmail(emailEl.value.trim())) { setError(emailEl, emailMsg, "Please enter a valid email address."); problems.push(emailEl); }
     else setError(emailEl, emailMsg, "");
 
-    /* Consent is required because the evidence check is delivered by email.
-       Without it there is nothing to send it to and nothing is recorded. */
-    if (!consentEl.checked) { setError(consentEl, consentMsg, "Please tick the box so the evidence check can be emailed to you."); problems.push(consentEl); }
-    else setError(consentEl, consentMsg, "");
+    /* Delivery consent is required, because the evidence check is delivered by
+       email and there is nothing to send it to without it. Guidance consent is
+       never required and is never validated: leaving it unticked is a complete,
+       valid submission, and must never block or nag. */
+    if (!deliveryEl.checked) { setError(deliveryEl, consentMsg, "Please tick the first box so the evidence check can be emailed to you."); problems.push(deliveryEl); }
+    else setError(deliveryEl, consentMsg, "");
 
     return problems;
   }
@@ -535,13 +647,22 @@ document.addEventListener("DOMContentLoaded", function () {
     submitEl.textContent = "Sending...";
     statusEl.textContent = "Sending your evidence check request.";
 
+    /* Two consents, recorded independently. Each carries its own timestamp and
+       its own policy version, and the guidance stamps are sent only when that
+       box was actually ticked, so an absent stamp is unambiguous evidence that
+       consent was not given rather than evidence that it was not recorded. */
+    var now = new Date().toISOString();
+    var guidance = guidanceEl.checked === true;
     var payload = {
       first_name: firstEl.value.trim(),
       email: emailEl.value.trim(),
       current_decision: decidingEl.value.trim(),
-      marketing_consent: consentEl.checked === true,
-      consent_timestamp: new Date().toISOString(),
-      policy_version: "2026-08-12",
+      delivery_consent: deliveryEl.checked === true,
+      delivery_consent_timestamp: now,
+      delivery_policy_version: POLICY_VERSION,
+      guidance_consent: guidance,
+      guidance_consent_timestamp: guidance ? now : "",
+      guidance_policy_version: guidance ? POLICY_VERSION : "",
       decision_reference: trapEl ? trapEl.value : "",
       attribution: ATTRIBUTION
     };
@@ -558,9 +679,9 @@ document.addEventListener("DOMContentLoaded", function () {
       /* Success is one thing only: the server confirmed the subscription. */
       if (r.ok && r.data && r.data.ok === true) {
         track("Career Decisions Subscribed", {
-          source: ATTRIBUTION.source || ATTRIBUTION.utm_source || "direct",
-          campaign: ATTRIBUTION.utm_campaign || "none",
-          video: ATTRIBUTION.video || "none"
+          source: analyticsSource(),
+          campaign: analyticsCampaign(),
+          video_slug: analyticsVideo()
         });
         showResult();
         return;
@@ -583,7 +704,7 @@ document.addEventListener("DOMContentLoaded", function () {
     result.classList.add("is-open");
     submitEl.textContent = "Sent";
     submitEl.disabled = true;
-    [firstEl, emailEl, decidingEl, consentEl].forEach(function (el) { el.disabled = true; });
+    [firstEl, emailEl, decidingEl, deliveryEl, guidanceEl].forEach(function (el) { el.disabled = true; });
     result.focus();
     if (result.scrollIntoView) result.scrollIntoView({ block: "start", behavior: "smooth" });
   }
@@ -597,7 +718,14 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!a) return;
     var href = a.getAttribute("href") || "";
     var step = a.getAttribute("data-step");
-    if (step) track("Career Decisions Next Step Click", { step: step });
+    if (step) {
+      track("Career Decisions Next Step Clicked", {
+        next_step: step,
+        source: analyticsSource(),
+        campaign: analyticsCampaign(),
+        video_slug: analyticsVideo()
+      });
+    }
     if (/\/fieldkit\/?$/.test(href)) track("Field Kit Click", { from: "career-decisions" });
     if (/(^|\/)book(\.html)?$/.test(href)) track("Books And Tools Click", { from: "career-decisions" });
   });

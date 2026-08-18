@@ -16,9 +16,28 @@
 // ── Required environment variables (names only, never values) ──
 //   KIT_API_KEY                  Kit (ConvertKit) v3 API key
 //   KIT_SEQ_CAREER_DECISIONS     Kit sequence id that delivers the evidence check
-//   KIT_TAG_CAREER_DECISIONS     Kit tag id applied to every subscriber here
+//   KIT_TAG_CAREER_DECISIONS     Kit tag id applied to every subscriber here.
+//                                This tag means "asked for the evidence check"
+//                                and nothing more. It must never be used as the
+//                                audience for a broadcast.
+//   KIT_TAG_CAREER_DECISIONS_GUIDANCE
+//                                Kit tag id applied ONLY when the optional
+//                                guidance box was ticked. This is the ongoing
+//                                marketing audience. Every broadcast and every
+//                                nurture automation must be filtered on this
+//                                tag, never on the tag above.
 //   KIT_TAG_YOUTUBE              Kit tag id applied only when the visitor
 //                                actually arrived with a youtube source
+//
+// ── Why two tags and one sequence ──
+// Delivering a requested resource and sending ongoing marketing are two
+// different purposes and are consented to separately on the page. The evidence
+// check is delivered by the sequence, which every subscriber here enters,
+// because that is the thing they asked for. Ongoing guidance is expressed as a
+// tag, because in Kit an ongoing audience is a tag filter rather than a
+// sequence. If a guidance nurture sequence is wanted later, build it in Kit as
+// an automation triggered by "tag added: guidance". Doing it that way keeps one
+// write from this function, so a subscriber can never end up half enrolled.
 //
 // ── Optional, and what is lost without them ──
 //   BLOBS_SITE_ID, BLOBS_TOKEN   Netlify Blobs. Without both: no durable
@@ -47,6 +66,7 @@ const REQUIRED_ENV = [
   "KIT_API_KEY",
   "KIT_SEQ_CAREER_DECISIONS",
   "KIT_TAG_CAREER_DECISIONS",
+  "KIT_TAG_CAREER_DECISIONS_GUIDANCE",
   "KIT_TAG_YOUTUBE"
 ];
 
@@ -119,9 +139,21 @@ function validEmail(e) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e); }
 // The youtube tag is applied only when the visitor genuinely arrived with a
 // youtube source. It is never inferred from a referrer, a campaign name or the
 // absence of a parameter. An unattributed subscriber stays unattributed.
-function isYoutubeSource(attr) {
-  const candidates = [attr.source, attr.utm_source];
+function isYoutubeTouch(touch) {
+  const candidates = [touch.source, touch.utm_source];
   return candidates.some((v) => typeof v === "string" && v.trim().toLowerCase() === "youtube");
+}
+
+// True when EITHER the first or the most recent campaign visit was genuinely
+// from youtube. Both are checked because a viewer who arrives from a video and
+// later returns from a newsletter link is still a youtube subscriber, and one
+// who arrives direct and later returns from a video has become one.
+//
+// A campaign NAME that merely contains the word is not evidence. A utm_campaign
+// of "youtube-launch", or a youtube.com referrer, tags nobody. Only an exact
+// source or utm_source of "youtube" counts, case and surrounding space aside.
+function isYoutubeSource(attr) {
+  return isYoutubeTouch(attr.first || {}) || isYoutubeTouch(attr.current || {});
 }
 
 exports.handler = async (event) => {
@@ -146,10 +178,11 @@ exports.handler = async (event) => {
         missing_env_vars: missing,
         checklist: [
           "Create the Kit sequence that delivers the Career Decision Evidence Check, then set KIT_SEQ_CAREER_DECISIONS to its numeric id.",
-          "Create the Kit tag for this page, then set KIT_TAG_CAREER_DECISIONS to its numeric id.",
+          "Create the Kit tag that means \"asked for the evidence check\", then set KIT_TAG_CAREER_DECISIONS to its numeric id. Never send a broadcast to this tag.",
+          "Create a SEPARATE Kit tag for ongoing guidance, then set KIT_TAG_CAREER_DECISIONS_GUIDANCE to its numeric id. This is the only audience that may receive broadcasts or a nurture automation.",
           "Create the Kit tag for YouTube arrivals, then set KIT_TAG_YOUTUBE to its numeric id.",
           "Set KIT_API_KEY to the Kit v3 API key.",
-          "Create these Kit custom fields so the attribution is stored rather than dropped: current_decision, marketing_consent, consent_timestamp, policy_version, utm_source, utm_medium, utm_campaign, utm_content, utm_term, source, video_slug, referrer, landing_page.",
+          "Create these Kit custom fields so nothing is dropped: current_decision, delivery_consent, delivery_consent_timestamp, delivery_policy_version, guidance_consent, guidance_consent_timestamp, guidance_policy_version, first_utm_source, first_utm_medium, first_utm_campaign, first_utm_content, first_utm_term, first_source, first_video_slug, first_landing_page, first_referrer, first_seen_at, current_utm_source, current_utm_medium, current_utm_campaign, current_utm_content, current_utm_term, current_source, current_video_slug, current_landing_page, current_referrer, current_seen_at.",
           "Optional but recommended: set BLOBS_SITE_ID and BLOBS_TOKEN for the durable first-party record and the rate limit, and RATE_LIMIT_SALT to a long random string.",
           "Confirm in Kit whether double opt in is on for this sequence. It is an account level setting and cannot be set or read from this repository."
         ]
@@ -186,52 +219,95 @@ exports.handler = async (event) => {
     return { statusCode: 400, headers: JSON_HEADERS, body: JSON.stringify({ error: "valid_email_required" }) };
   }
 
-  // ── Consent, fail closed ──
-  // Anything other than a literal true is no consent. Same ruling as the
-  // diagnostic gate. No consent means no Kit call, no record, no delivery.
-  if (p.marketing_consent !== true) {
+  // ── Two consents, both fail closed, neither inferred ──
+  //
+  // Delivery consent authorises the requested resource and the messages needed
+  // to deliver it. Anything other than a literal true is no consent, and means
+  // no Kit call, no record and no delivery.
+  //
+  // Guidance consent authorises ongoing marketing, and nothing about it is
+  // inferred from the first. A missing field, a string, a 1, or any other truthy
+  // value is treated as absent, exactly as the delivery box is, so a sloppy
+  // client can never enrol someone in marketing by accident.
+  if (p.delivery_consent !== true) {
     return { statusCode: 400, headers: JSON_HEADERS, body: JSON.stringify({ error: "consent_required" }) };
   }
+  const guidanceConsent = p.guidance_consent === true;
 
+  // ── Attribution: two touches, normalised identically ──
+  // first   the campaign visit that introduced this person to the page
+  // current the most recent explicit campaign visit in the same session
+  // The page never overwrites first, and the server never merges the two.
   const attrIn = p.attribution && typeof p.attribution === "object" ? p.attribution : {};
+  function normaliseTouch(t) {
+    const s = t && typeof t === "object" ? t : {};
+    return {
+      utm_source: str(s.utm_source, MAX_ATTR),
+      utm_medium: str(s.utm_medium, MAX_ATTR),
+      utm_campaign: str(s.utm_campaign, MAX_ATTR),
+      utm_content: str(s.utm_content, MAX_ATTR),
+      utm_term: str(s.utm_term, MAX_ATTR),
+      source: str(s.source, MAX_ATTR),
+      video_slug: str(s.video_slug, MAX_ATTR),
+      landing_page: str(s.landing_page, MAX_ATTR),
+      referrer: str(s.referrer, MAX_ATTR),
+      seen_at: str(s.seen_at, 40)
+    };
+  }
   const attr = {
-    utm_source: str(attrIn.utm_source, MAX_ATTR),
-    utm_medium: str(attrIn.utm_medium, MAX_ATTR),
-    utm_campaign: str(attrIn.utm_campaign, MAX_ATTR),
-    utm_content: str(attrIn.utm_content, MAX_ATTR),
-    utm_term: str(attrIn.utm_term, MAX_ATTR),
-    source: str(attrIn.source, MAX_ATTR),
-    video_slug: str(attrIn.video, MAX_ATTR),
-    referrer: str(attrIn.referrer, MAX_ATTR),
-    landing_page: str(attrIn.landing_page, MAX_ATTR)
+    first: normaliseTouch(attrIn.first),
+    current: normaliseTouch(attrIn.current || attrIn.first)
   };
 
   // The client stamps the moment the visitor submitted with the box ticked. The
   // server stamps its own receipt independently, so a wrong or spoofed client
   // clock cannot be the only record of when consent was given. Both are kept.
   const now = new Date();
-  const consentTimestampClient = str(p.consent_timestamp, 40);
-  const policyVersion = str(p.policy_version, 40);
+  const deliveryStampClient = str(p.delivery_consent_timestamp, 40);
+  const deliveryPolicyVersion = str(p.delivery_policy_version, 40);
+  // Guidance stamps are kept only when guidance was actually consented to. An
+  // empty stamp beside guidance_consent false is unambiguous: the person did not
+  // agree, rather than the record having lost when they did.
+  const guidanceStampClient = guidanceConsent ? str(p.guidance_consent_timestamp, 40) : "";
+  const guidancePolicyVersion = guidanceConsent ? str(p.guidance_policy_version, 40) : "";
 
+  // The resource tag is always applied: everyone here asked for the evidence
+  // check. The guidance tag is applied ONLY on explicit consent, and is the only
+  // tag that may be used as a broadcast audience.
   const tags = [process.env.KIT_TAG_CAREER_DECISIONS];
+  if (guidanceConsent) tags.push(process.env.KIT_TAG_CAREER_DECISIONS_GUIDANCE);
   if (isYoutubeSource(attr)) tags.push(process.env.KIT_TAG_YOUTUBE);
 
   // Kit custom fields. Every one of these must exist in the Kit account or Kit
   // drops it silently; the list is in the configuration checklist above.
   const fields = {
     current_decision: currentDecision,
-    marketing_consent: "true",
-    consent_timestamp: consentTimestampClient || now.toISOString(),
-    policy_version: policyVersion,
-    utm_source: attr.utm_source,
-    utm_medium: attr.utm_medium,
-    utm_campaign: attr.utm_campaign,
-    utm_content: attr.utm_content,
-    utm_term: attr.utm_term,
-    source: attr.source,
-    video_slug: attr.video_slug,
-    referrer: attr.referrer,
-    landing_page: attr.landing_page
+    delivery_consent: "true",
+    delivery_consent_timestamp: deliveryStampClient || now.toISOString(),
+    delivery_policy_version: deliveryPolicyVersion,
+    guidance_consent: guidanceConsent ? "true" : "false",
+    guidance_consent_timestamp: guidanceStampClient,
+    guidance_policy_version: guidancePolicyVersion,
+    first_utm_source: attr.first.utm_source,
+    first_utm_medium: attr.first.utm_medium,
+    first_utm_campaign: attr.first.utm_campaign,
+    first_utm_content: attr.first.utm_content,
+    first_utm_term: attr.first.utm_term,
+    first_source: attr.first.source,
+    first_video_slug: attr.first.video_slug,
+    first_landing_page: attr.first.landing_page,
+    first_referrer: attr.first.referrer,
+    first_seen_at: attr.first.seen_at,
+    current_utm_source: attr.current.utm_source,
+    current_utm_medium: attr.current.utm_medium,
+    current_utm_campaign: attr.current.utm_campaign,
+    current_utm_content: attr.current.utm_content,
+    current_utm_term: attr.current.utm_term,
+    current_source: attr.current.source,
+    current_video_slug: attr.current.video_slug,
+    current_landing_page: attr.current.landing_page,
+    current_referrer: attr.current.referrer,
+    current_seen_at: attr.current.seen_at
   };
 
   // ── Kit is authoritative ──
@@ -290,10 +366,14 @@ exports.handler = async (event) => {
         first_name: firstName,
         email: email,
         current_decision: currentDecision,
-        marketing_consent: true,
-        consent_timestamp_client: consentTimestampClient,
-        consent_timestamp_server: now.toISOString(),
-        policy_version: policyVersion,
+        delivery_consent: true,
+        delivery_consent_timestamp_client: deliveryStampClient,
+        delivery_consent_timestamp_server: now.toISOString(),
+        delivery_policy_version: deliveryPolicyVersion,
+        guidance_consent: guidanceConsent,
+        guidance_consent_timestamp_client: guidanceStampClient,
+        guidance_consent_timestamp_server: guidanceConsent ? now.toISOString() : "",
+        guidance_policy_version: guidancePolicyVersion,
         attribution: attr,
         youtube_tagged: isYoutubeSource(attr),
         kit_sequence_env: "KIT_SEQ_CAREER_DECISIONS",
@@ -313,6 +393,6 @@ exports.handler = async (event) => {
   return {
     statusCode: 200,
     headers: JSON_HEADERS,
-    body: JSON.stringify({ ok: true, durable_record: durableRecord, record_key: recordKey })
+    body: JSON.stringify({ ok: true, durable_record: durableRecord, record_key: recordKey, guidance_consent: guidanceConsent })
   };
 };

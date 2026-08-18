@@ -60,8 +60,8 @@ posts to its own Netlify function, which is the single write path for that page.
 | Timestamps | Server captures | UTC and America/Chicago |
 | Submission identifier | `diagnostic.html` | Client-generated UUID, used for server-side deduplication |
 | **IP address** | **`diagnose` function** | **See flow 10. First-party durable storage** |
-| Consent timestamp and policy version | `career-decisions.html` only | Client stamp and independent server stamp, both kept |
-| Campaign attribution | `career-decisions.html` only | `utm_source`, `utm_medium`, `utm_campaign`, `utm_content`, `utm_term`, `source`, originating video slug, referrer, landing page. Recorded only when the visitor actually arrives with them, never inferred |
+| Two separate consents | `career-decisions.html` only | Delivery of the requested resource, and ongoing guidance. Each with its own client stamp, its own independent server stamp, and its own policy version. Guidance stamps are written only when guidance was given |
+| Campaign attribution, two touches | `career-decisions.html` only | `first` and `current`, each carrying `utm_source`, `utm_medium`, `utm_campaign`, `utm_content`, `utm_term`, `source`, `video_slug`, `landing_page`, `referrer`, `seen_at`. Recorded only when the visitor actually arrives with them, never inferred |
 
 ---
 
@@ -74,12 +74,19 @@ repository.
 
 | Key | Written by | Contents | Expiry |
 |---|---|---|---|
-| `cd_attribution` | `career-decisions.html` | Campaign values the visitor arrived with: `utm_*`, `source`, originating video slug, referrer, landing page. No name, no email, no free text | Discarded by the browser when the tab closes. Never sent anywhere except with the visitor's own submission |
+| `cd_attribution` | `career-decisions.html` | Two touches, `first` and `current`, each holding the campaign values the visitor arrived with: `utm_*`, `source`, video slug, landing page, referrer, and the time of that visit. No name, no email, no free text | Discarded by the browser when the tab closes. Never sent anywhere except with the visitor's own submission |
 
 It exists so that a visitor who arrives from a video and then moves around the page does not lose
-the attribution before they submit. First touch wins: a later parameter does not overwrite the one
-they arrived with. Nothing is written to it on a page the visitor did not actually land on with
-those parameters.
+the attribution before they submit.
+
+**Two touches, not one.** `first` is the campaign visit that introduced the person to the page and
+is never overwritten. `current` is the most recent explicit campaign visit in the same session. A
+viewer can find the page from one video, leave it open, return later from a different video and
+only then subscribe: keeping only the first attributes them to a video they had moved on from, and
+keeping only the last erases the video that actually found them. Both are kept.
+
+A bare return to `/career-decisions` with no parameters is not an explicit campaign visit and
+changes neither touch. Nothing is written on a page the visitor did not actually land on.
 
 `localStorage`, two uses:
 
@@ -135,7 +142,7 @@ Four stores.
 | `org-diagnostic-leads` | `org-diagnostic-capture.js` | Scan completion | Lead and result fields | **None enforced. Indefinite** |
 | `ai-readiness-leads` | `ai-readiness-capture.js` | AI readiness completion | Lead and result fields | **None enforced. Indefinite** |
 | `diagnose-rate` | `diagnose.js` | **Salted SHA-256 of the IP**, not the address | Request count and window start | Still unbounded, but no longer personal data. Purge on the follow-up list |
-| `career-decisions-leads` | `career-decisions-subscribe.js` | Confirmed subscription | First name, email, optional decision text, consent boolean, client and server consent timestamps, policy version, campaign attribution, Kit subscriber id | Until the subscriber unsubscribes or asks for deletion. Stated in the policy |
+| `career-decisions-leads` | `career-decisions-subscribe.js` | Confirmed subscription | First name, email, optional decision text, **both** consent booleans with their own client and server timestamps and policy versions, both attribution touches, whether the youtube tag was applied, Kit subscriber id | Until the subscriber unsubscribes or asks for deletion. Stated in the policy |
 | `career-decisions-rate` | `career-decisions-subscribe.js` | **Salted SHA-256 of the IP**, not the address | Request count and window start | Same construction and same open purge question as `diagnose-rate` |
 
 The two `career-decisions` stores are subject to the same correction as the four above: without
@@ -157,7 +164,7 @@ disclosed anywhere and counsel should confirm it is the intended construction.
 | **Netlify** | All traffic | All requests, plus durable storage above | Hosting, functions, storage |
 | **Anthropic** | Scan and AI readiness completion | Item-level answers plus organizational context | Generates the narrative read |
 | **Kit (ConvertKit)** | Diagnostic completion **with marketing consent** | Email, name, organization, quadrant, scores, result line, tags | Automated email sequence |
-| **Kit (ConvertKit)** | Career Decision Evidence Check **with explicit consent** | First name, email, optional decision text, consent timestamp, policy version, campaign attribution, tags | Delivers the evidence check, and owns deduplication and unsubscribe |
+| **Kit (ConvertKit)** | Career Decision Evidence Check **with explicit delivery consent** | First name, email, optional decision text, both consent records, both attribution touches, tags | Delivers the evidence check, and owns deduplication and unsubscribe. Ongoing guidance is a separate tag applied only on the second, optional consent, and is the only tag a broadcast may target |
 | **Plausible** | Every page load | Aggregate analytics only | Cookieless, no personal data |
 | ~~Google Fonts~~ | **Removed August 12 2026.** Fonts are now self-hosted from `/fonts`, so no visitor IP reaches Google | | |
 | **Gumroad** | `/fieldkit` redirect | Handled entirely on Gumroad | Field Kit purchase |
