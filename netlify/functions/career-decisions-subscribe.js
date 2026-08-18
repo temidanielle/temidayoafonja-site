@@ -182,7 +182,7 @@ exports.handler = async (event) => {
           "Create a SEPARATE Kit tag for ongoing guidance, then set KIT_TAG_CAREER_DECISIONS_GUIDANCE to its numeric id. This is the only audience that may receive broadcasts or a nurture automation.",
           "Create the Kit tag for YouTube arrivals, then set KIT_TAG_YOUTUBE to its numeric id.",
           "Set KIT_API_KEY to the Kit v3 API key.",
-          "Create these Kit custom fields so nothing is dropped: current_decision, delivery_consent, delivery_consent_timestamp, delivery_policy_version, guidance_consent, guidance_consent_timestamp, guidance_policy_version, first_utm_source, first_utm_medium, first_utm_campaign, first_utm_content, first_utm_term, first_source, first_video_slug, first_landing_page, first_referrer, first_seen_at, current_utm_source, current_utm_medium, current_utm_campaign, current_utm_content, current_utm_term, current_source, current_video_slug, current_landing_page, current_referrer, current_seen_at.",
+          "Create these Kit custom fields before launch so the submitted values are stored as intended: current_decision, delivery_consent, delivery_consent_timestamp, delivery_policy_version, guidance_consent, guidance_consent_timestamp, guidance_policy_version, first_utm_source, first_utm_medium, first_utm_campaign, first_utm_content, first_utm_term, first_source, first_video_slug, first_landing_page, first_referrer, first_seen_at, current_utm_source, current_utm_medium, current_utm_campaign, current_utm_content, current_utm_term, current_source, current_video_slug, current_landing_page, current_referrer, current_seen_at.",
           "Optional but recommended: set BLOBS_SITE_ID and BLOBS_TOKEN for the durable first-party record and the rate limit, and RATE_LIMIT_SALT to a long random string.",
           "Confirm in Kit whether double opt in is on for this sequence. It is an account level setting and cannot be set or read from this repository."
         ]
@@ -278,8 +278,11 @@ exports.handler = async (event) => {
   if (guidanceConsent) tags.push(process.env.KIT_TAG_CAREER_DECISIONS_GUIDANCE);
   if (isYoutubeSource(attr)) tags.push(process.env.KIT_TAG_YOUTUBE);
 
-  // Kit custom fields. Every one of these must exist in the Kit account or Kit
-  // drops it silently; the list is in the configuration checklist above.
+  // Kit custom fields. Every one of these must exist in the Kit account before
+  // launch so the submitted values are stored as intended. The behaviour of Kit
+  // towards a field it does not recognise is not asserted here, because it has
+  // not been observed against a live account from this environment. The list is
+  // repeated in the configuration checklist above.
   const fields = {
     current_decision: currentDecision,
     delivery_consent: "true",

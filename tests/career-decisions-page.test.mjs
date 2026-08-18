@@ -74,19 +74,12 @@ async function open(t, { query = "", respond = { status: 200, json: { ok: true, 
   await page.addInitScript(() => {
     window.plausible = (name, opts) => window.__record(name, (opts && opts.props) || null);
   });
-  if (now !== null) {
-    await page.addInitScript((fixed) => {
-      const RealDate = Date;
-      const fixedMs = fixed;
-      // eslint-disable-next-line no-global-assign
-      Date = class extends RealDate {
-        constructor(...args) { return args.length ? new RealDate(...args) : new RealDate(fixedMs); }
-        static now() { return fixedMs; }
-      };
-      Date.parse = RealDate.parse;
-      Date.UTC = RealDate.UTC;
-    }, now);
-  }
+  /* Page clock control. install() fixes the page's Date and its timers together
+     and holds them still, so a test can place the page at a chosen instant and
+     then advance it deliberately with page.clock.fastForward(). That is what
+     makes the self-retiring next step observable: a frozen Date alone would
+     never let its timer fire. */
+  if (now !== null) await page.clock.install({ time: now });
 
   await page.route("**/.netlify/functions/career-decisions-subscribe", async (route) => {
     requests.push(JSON.parse(route.request().postData() || "{}"));
@@ -255,7 +248,7 @@ test("accepting delivery consent alone sends the evidence check and no marketing
   assert.equal(requests.length, 1);
   assert.equal(requests[0].delivery_consent, true);
   assert.ok(requests[0].delivery_consent_timestamp, "the delivery consent is stamped");
-  assert.equal(requests[0].delivery_policy_version, "2026-08-12");
+  assert.equal(requests[0].delivery_policy_version, "2026-08-18");
   assert.equal(requests[0].guidance_consent, false, "guidance is never inferred from delivery");
   assert.equal(requests[0].guidance_consent_timestamp, "", "no stamp for a consent that was not given");
   assert.equal(requests[0].guidance_policy_version, "");
@@ -269,7 +262,7 @@ test("ticking guidance records that consent separately, with its own stamp", asy
   assert.equal(requests[0].delivery_consent, true);
   assert.equal(requests[0].guidance_consent, true);
   assert.ok(requests[0].guidance_consent_timestamp, "the guidance consent is stamped");
-  assert.equal(requests[0].guidance_policy_version, "2026-08-12");
+  assert.equal(requests[0].guidance_policy_version, "2026-08-18");
 });
 
 test("neither consent is ever pre-set by a URL parameter", async (t) => {
@@ -288,7 +281,7 @@ test("a confirmed subscription reveals the three questions, announces it, and mo
   assert.equal(requests.length, 1);
   assert.equal(requests[0].delivery_consent, true);
   assert.ok(requests[0].delivery_consent_timestamp, "the delivery consent timestamp is sent");
-  assert.equal(requests[0].delivery_policy_version, "2026-08-12");
+  assert.equal(requests[0].delivery_policy_version, "2026-08-18");
 
   const questions = await page.locator("#cdResult .cd-q .t").allInnerTexts();
   assert.deepEqual(questions.map((q) => q.trim()), [
@@ -561,6 +554,112 @@ test("after the Lightning Lesson ends, the next step falls back to the Field Kit
   assert.match(text, /Capability Formation Field Kit/);
   assert.match(text, /\$150/);
   assert.ok(!/maven\.com/.test(await page.content()) || true);
+});
+
+/* ── The offer retires itself while the page is open ───────────────────────
+   The failure this guards against: someone opens the page at 6:30 PM Central on
+   the day of the session, leaves the tab sitting there, and is still looking at
+   a live registration link at 6:46. Deciding once at render time is not enough. */
+
+test("an already-open page swaps to the Field Kit at the cutoff, with no reload", async (t) => {
+  const { page } = await open(t, { now: EXPIRY - 60_000, timezoneId: "America/Chicago" });
+  await fillValid(page);
+  await page.click("#cdSubmit");
+  await page.waitForSelector("#cdResult.is-open");
+  assert.match(await page.locator("#cdStep a").getAttribute("href"), /maven\.com/, "the lesson is offered a minute before the cutoff");
+
+  // Cross the cutoff on the page's own clock. No navigation, no reload.
+  await page.clock.fastForward(61_000);
+  await page.waitForFunction(
+    () => {
+      const a = document.querySelector("#cdStep a");
+      return !!a && a.getAttribute("href").includes("fieldkit");
+    },
+    undefined,
+    { timeout: 5000 }
+  );
+
+  assert.equal(await page.locator("#cdStep a").count(), 1, "the retired offer must be replaced, not stacked above the new one");
+  const text = await page.locator("#cdStep").innerText();
+  assert.match(text, /Capability Formation Field Kit/);
+  assert.ok(!/maven/i.test(await page.locator("#cdStep").innerHTML()), "no trace of the retired offer remains");
+});
+
+test("the swap happens without a reload even if the visitor never submitted", async (t) => {
+  // The result section is hidden until submission, but the timer still has to
+  // be correct, because the visitor may submit after the cutoff has passed.
+  const { page } = await open(t, { now: EXPIRY - 5000, timezoneId: "America/Chicago" });
+  await page.clock.fastForward(6000);
+  await fillValid(page);
+  await page.click("#cdSubmit");
+  await page.waitForSelector("#cdResult.is-open");
+  assert.match(await page.locator("#cdStep a").getAttribute("href"), /fieldkit/);
+});
+
+test("the retirement timer produces no console errors and does not poll", async (t) => {
+  const errors = [];
+  const { page } = await open(t, { now: EXPIRY - 30_000, timezoneId: "America/Chicago" });
+  page.on("console", (m) => { if (m.type() === "error") errors.push(m.text()); });
+  page.on("pageerror", (e) => errors.push("pageerror: " + e.message));
+
+  // Count renders by watching the slot mutate. A polling implementation would
+  // rewrite it repeatedly; a single armed timer rewrites it exactly once.
+  await page.evaluate(() => {
+    window.__renders = 0;
+    new MutationObserver(() => { window.__renders += 1; }).observe(
+      document.getElementById("cdStep"), { childList: true }
+    );
+  });
+  await page.clock.fastForward(31_000);
+  await page.waitForFunction(() => window.__renders > 0, undefined, { timeout: 5000 });
+  await page.clock.fastForward(600_000);
+  await page.waitForTimeout(200);
+
+  const renders = await page.evaluate(() => window.__renders);
+  assert.ok(renders <= 8, `the slot was rewritten ${renders} times, which looks like polling rather than one timer`);
+  assert.deepEqual(errors.filter((e) => !/favicon|plausible|net::ERR/i.test(e)), []);
+});
+
+test("a page loaded after the cutoff arms no timer at all", async (t) => {
+  const { page } = await open(t, { now: EXPIRY + 60_000, timezoneId: "America/Chicago" });
+  await fillValid(page);
+  await page.click("#cdSubmit");
+  await page.waitForSelector("#cdResult.is-open");
+  assert.match(await page.locator("#cdStep a").getAttribute("href"), /fieldkit/);
+
+  await page.evaluate(() => {
+    window.__renders = 0;
+    new MutationObserver(() => { window.__renders += 1; }).observe(
+      document.getElementById("cdStep"), { childList: true }
+    );
+  });
+  // The fallback has no expiry, so nothing should ever fire again. Advanced in
+  // two steps because a single jump beyond about 24.8 days overflows the
+  // 32-bit millisecond delay the clock controller works in.
+  const TWENTY_DAYS = 20 * 24 * 60 * 60 * 1000;
+  await page.clock.fastForward(TWENTY_DAYS);
+  await page.clock.fastForward(TWENTY_DAYS);
+  await page.waitForTimeout(200);
+  assert.equal(await page.evaluate(() => window.__renders), 0, "the fallback must not schedule anything");
+});
+
+test("a wait longer than the timer ceiling re-arms instead of firing early", async (t) => {
+  // setTimeout tops out near 24.8 days. A visitor arriving well before the
+  // session must not have the offer retired at that ceiling instead of at the
+  // cutoff, so the long wait is clamped, re-checked and re-armed.
+  const { page } = await open(t, { now: Date.parse("2026-01-01T12:00:00-06:00"), timezoneId: "America/Chicago" });
+  await fillValid(page);
+  await page.click("#cdSubmit");
+  await page.waitForSelector("#cdResult.is-open");
+
+  const TWENTY_DAYS = 20 * 24 * 60 * 60 * 1000;
+  for (let i = 0; i < 4; i++) await page.clock.fastForward(TWENTY_DAYS);
+  await page.waitForTimeout(200);
+  assert.match(
+    await page.locator("#cdStep a").getAttribute("href"),
+    /maven\.com/,
+    "80 days on, still months before the session, the offer must still stand"
+  );
 });
 
 test("the next step is written in exactly one place in the source", async () => {

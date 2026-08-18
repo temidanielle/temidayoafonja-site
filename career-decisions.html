@@ -351,10 +351,12 @@
    To retire the Lightning Lesson early, set "current" to null.
    ───────────────────────────────────────────────────────────────────────── */
 /* The version of the privacy policy in force when a consent is recorded. It is
-   the "Last updated" date at the top of privacy.html. Change it here in the
-   same commit that changes that date, so every consent record says which text
-   the person actually agreed to. */
-var POLICY_VERSION = "2026-08-12";
+   the "Last updated" date at the top of privacy.html, and the two must always
+   move together in the same commit. A consent record whose policy version
+   predates the wording the person actually read is not evidence of anything.
+   Raised from 2026-08-12 when the policy was revised to distinguish delivery of
+   a requested resource from ongoing guidance. */
+var POLICY_VERSION = "2026-08-18";
 
 var NEXT_STEP = {
   current: {
@@ -389,10 +391,39 @@ function currentNextStep() {
   return Date.now() < until ? c : NEXT_STEP.fallback;
 }
 
+/* Handle for the single pending retirement timer, so a re-render can never
+   leave a second one running. */
+var nextStepTimer = null;
+
+/* The offer has to retire itself while the page is open, not only when the page
+   is loaded. Someone who opens this at 6:30 PM Central on the day and leaves the
+   tab sitting there must not still be looking at a live registration link at
+   6:46. One timer, armed for exactly the remaining milliseconds, is enough:
+   there is no polling, and nothing runs at all once the fallback is showing,
+   because the fallback has no expiry to wait for.
+
+   setTimeout tops out at a 32-bit signed millisecond delay, roughly 24.8 days.
+   A longer wait is clamped, fires a harmless re-render that reaches the same
+   conclusion, and re-arms. */
+var MAX_TIMEOUT_MS = 2147483647;
+
+function scheduleNextStepRetirement(step) {
+  if (nextStepTimer) { clearTimeout(nextStepTimer); nextStepTimer = null; }
+  if (!step || !step.available_until) return;
+  var until = Date.parse(step.available_until);
+  if (isNaN(until)) return;
+  var remaining = until - Date.now();
+  if (remaining <= 0) return;
+  nextStepTimer = setTimeout(renderNextStep, Math.min(remaining, MAX_TIMEOUT_MS));
+}
+
 function renderNextStep() {
   var step = currentNextStep();
   var slot = document.getElementById("cdStep");
   if (!slot) return;
+  /* Re-render replaces the slot rather than appending to it, so the swap at the
+     cutoff cannot leave the retired offer stacked above the new one. */
+  while (slot.firstChild) slot.removeChild(slot.firstChild);
   var label = document.createElement("div");
   label.className = "cd-step-label";
   label.textContent = step.label;
@@ -407,6 +438,7 @@ function renderNextStep() {
   a.setAttribute("data-step", step.id);
   if (step.external) { a.target = "_blank"; a.rel = "noopener"; }
   slot.appendChild(label); slot.appendChild(h3); slot.appendChild(p); slot.appendChild(a);
+  scheduleNextStepRetirement(step);
 }
 
 /* ─────────────────────────────────────────────────────────────────────────

@@ -89,7 +89,7 @@ function payload(over = {}) {
     current_decision: "Whether to take the platform role.",
     delivery_consent: true,
     delivery_consent_timestamp: "2026-08-17T12:00:00.000Z",
-    delivery_policy_version: "2026-08-12",
+    delivery_policy_version: "2026-08-18",
     guidance_consent: false,
     guidance_consent_timestamp: "",
     guidance_policy_version: "",
@@ -237,14 +237,14 @@ test("only an explicit guidance opt in applies the ongoing-marketing tag", async
   await call(payload({
     guidance_consent: true,
     guidance_consent_timestamp: "2026-08-17T12:00:05.000Z",
-    guidance_policy_version: "2026-08-12"
+    guidance_policy_version: "2026-08-18"
   }));
   const kit = kitCalls[0].body;
   assert.ok(kit.tags.includes("9903"), "the guidance tag is applied");
   assert.ok(kit.tags.includes("9901"), "the resource tag is still applied");
   assert.equal(kit.fields.guidance_consent, "true");
   assert.equal(kit.fields.guidance_consent_timestamp, "2026-08-17T12:00:05.000Z");
-  assert.equal(kit.fields.guidance_policy_version, "2026-08-12");
+  assert.equal(kit.fields.guidance_policy_version, "2026-08-18");
 });
 
 test("the two consents are recorded separately in the durable record", async () => {
@@ -252,17 +252,17 @@ test("the two consents are recorded separately in the durable record", async () 
   await call(payload({
     guidance_consent: true,
     guidance_consent_timestamp: "2026-08-17T12:00:05.000Z",
-    guidance_policy_version: "2026-08-12"
+    guidance_policy_version: "2026-08-18"
   }));
   const rec = [...blobs.stores.get("career-decisions-leads").values()][0];
   assert.equal(rec.delivery_consent, true);
   assert.equal(rec.delivery_consent_timestamp_client, "2026-08-17T12:00:00.000Z");
   assert.ok(rec.delivery_consent_timestamp_server);
-  assert.equal(rec.delivery_policy_version, "2026-08-12");
+  assert.equal(rec.delivery_policy_version, "2026-08-18");
   assert.equal(rec.guidance_consent, true);
   assert.equal(rec.guidance_consent_timestamp_client, "2026-08-17T12:00:05.000Z");
   assert.ok(rec.guidance_consent_timestamp_server);
-  assert.equal(rec.guidance_policy_version, "2026-08-12");
+  assert.equal(rec.guidance_policy_version, "2026-08-18");
 
   reset();
   await call(payload());
@@ -289,7 +289,7 @@ test("a consented submission subscribes through Kit and confirms only then", asy
   assert.equal(kit.body.first_name, "Ada");
   assert.equal(kit.body.fields.current_decision, "Whether to take the platform role.");
   assert.equal(kit.body.fields.delivery_consent_timestamp, "2026-08-17T12:00:00.000Z");
-  assert.equal(kit.body.fields.delivery_policy_version, "2026-08-12");
+  assert.equal(kit.body.fields.delivery_policy_version, "2026-08-18");
   assert.equal(kit.body.fields.delivery_consent, "true");
 });
 
@@ -304,7 +304,7 @@ test("the durable record is written only after Kit confirms, and carries both co
   assert.equal(rec.delivery_consent, true);
   assert.equal(rec.delivery_consent_timestamp_client, "2026-08-17T12:00:00.000Z");
   assert.ok(rec.delivery_consent_timestamp_server, "the server stamps its own receipt time");
-  assert.equal(rec.delivery_policy_version, "2026-08-12");
+  assert.equal(rec.delivery_policy_version, "2026-08-18");
   assert.equal(rec.kit_subscriber_id, 12345);
   assert.equal(rec.page, "/career-decisions");
 });
