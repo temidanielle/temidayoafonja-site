@@ -1,0 +1,18 @@
+/* Shared chrome for the preview mocks. These are presentation aids, not
+   brand surfaces, so they deliberately use plain UI greys. */
+@font-face{font-family:'DM Sans';font-weight:400;
+  src:url('../../fonts/DMSans-400-normal-latin-1c49a6.woff2') format('woff2');font-display:block}
+@font-face{font-family:'DM Sans';font-weight:500;
+  src:url('../../fonts/DMSans-500-normal-latin-1c49a6.woff2') format('woff2');font-display:block}
+@font-face{font-family:'DM Sans';font-weight:600;
+  src:url('../../fonts/DMSans-600-normal-latin-1c49a6.woff2') format('woff2');font-display:block}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'DM Sans',sans-serif;background:#eef0f3;color:#0f0f0f;-webkit-font-smoothing:antialiased}
+.cap{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#6b7280;font-weight:500}
+/* The banner crop. --k is the scale from banner pixels to preview pixels. */
+.crop{background-repeat:no-repeat;background-image:var(--img)}
+.avatar{border-radius:50%;background:
+   radial-gradient(120% 120% at 50% 40%,#1E3868,#0F2347);
+   display:flex;align-items:center;justify-content:center;
+   font-family:'Cormorant Garamond',serif;color:#C9A84C;flex:none}
+.sub{background:#0f0f0f;color:#fff;border-radius:999px;font-weight:500}

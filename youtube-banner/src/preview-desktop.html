@@ -1,0 +1,45 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="preview.css">
+<style>
+  /* k = 1284 / 2560 = .50156 -> the desktop band at a 1284px content column */
+  html,body{width:1600px;height:1000px;overflow:hidden;background:#fff}
+  .top{height:56px;border-bottom:1px solid #eee;display:flex;align-items:center;padding:0 22px;gap:16px}
+  .yt{font-size:19px;font-weight:600;letter-spacing:-.02em}
+  .search{flex:0 1 480px;height:34px;border:1px solid #ddd;border-radius:999px;margin:0 auto}
+  .col{width:1284px;margin:22px auto 0}
+  .banner{width:1284px;height:212.2px;border-radius:12px;
+          background-size:1284px 722.25px;background-position:0 -255.05px}
+  .meta{display:flex;align-items:center;gap:26px;margin-top:22px}
+  .avatar{width:150px;height:150px;font-size:0;
+          background-image:url('../../temi-photo.jpg');background-size:cover;background-position:50% 22%}
+  .name{font-size:37px;font-weight:600;letter-spacing:-.02em}
+  .handle{font-size:15px;color:#606060;margin-top:8px}
+  .desc{font-size:15px;color:#606060;margin-top:8px}
+  .sub{display:inline-block;margin-top:15px;padding:10px 20px;font-size:14.5px}
+  .tabs{display:flex;gap:28px;margin-top:26px;border-bottom:1px solid #e5e5e5}
+  .tab{font-size:15px;color:#606060;padding-bottom:13px}
+  .tab.on{color:#0f0f0f;font-weight:600;box-shadow:inset 0 -3px 0 #0f0f0f}
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:20px}
+  .thumb{aspect-ratio:16/9;border-radius:11px;background:#e3e6ea}
+  .cap{position:absolute;left:22px;bottom:14px}
+</style></head>
+<body>
+  <div class="top"><div class="yt">YouTube</div><div class="search"></div></div>
+  <div class="col">
+    <div class="banner crop"></div>
+    <div class="meta">
+      <div class="avatar"></div>
+      <div>
+        <div class="name">Temidayo Afonja</div>
+        <div class="handle">@temidayoafonja</div>
+        <div class="desc">Capability that holds when conditions change.</div>
+        <div class="sub">Subscribe</div>
+      </div>
+    </div>
+    <div class="tabs"><div class="tab on">Home</div><div class="tab">Videos</div>
+      <div class="tab">Playlists</div><div class="tab">Posts</div><div class="tab">About</div></div>
+    <div class="grid"><div class="thumb"></div><div class="thumb"></div>
+      <div class="thumb"></div><div class="thumb"></div></div>
+  </div>
+  <div class="cap">Desktop &nbsp;·&nbsp; 2560 × 423 band</div>
+  <script src="pick.js"></script>
+</body></html>

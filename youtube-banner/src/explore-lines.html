@@ -1,0 +1,55 @@
+<!doctype html><html><head><meta charset="utf-8">
+<title>Supporting line exploration</title>
+<link rel="stylesheet" href="base.css">
+<style>
+  /* Each strip is the real banner, scaled so the 1546x423 mobile-safe region
+     fills the strip. What you see here is what a phone shows, enlarged. */
+  html,body{width:1040px;height:2330px;overflow:hidden;background:#eef0f3}
+  .head,.num{font-family:'DM Sans',sans-serif}
+  .head{padding:34px 40px 10px}
+  .h1{font-family:'Cormorant Garamond',serif;font-size:33px;color:#0F2347;letter-spacing:.01em}
+  .h2{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:#6b7280;
+      font-weight:500;margin-top:9px}
+  .row{padding:11px 40px}
+  .num{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#6b7280;
+       font-weight:500;margin-bottom:7px;display:flex;align-items:center;gap:11px}
+  .pick{background:#C9A84C;color:#0F2347;padding:3px 9px;border-radius:3px;letter-spacing:.1em}
+  .strip{width:960px;height:263px;overflow:hidden;position:relative;border-radius:6px}
+  .mini{position:absolute;left:0;top:0;width:2560px;height:1440px;
+        transform-origin:0 0;transform:scale(.62096) translate(-507px,-508.5px)}
+  .title{font-size:84px;letter-spacing:.155em;text-indent:.155em}
+  .support{font-size:61px;margin-top:74px}
+</style></head>
+<body>
+  <div class="head">
+    <div class="h1">Supporting line: seven readings</div>
+    <div class="h2">Each shown at the mobile crop &nbsp;·&nbsp; 1546 × 423</div>
+  </div>
+  <div id="out"></div>
+<script>
+var LINES = [
+  ['What is your work building?', 'RECOMMENDED', 'Reads in both directions without naming either audience.'],
+  ['Is your work still building you?', '', 'The site’s own professional question. Sharper, but individual-only.'],
+  ['What is your work building in you?', '', 'Warmer and more personal. Closes off the organizational reading.'],
+  ['Capability that holds when conditions change.', '', 'The site headline verbatim. True, but a statement rather than an opening.'],
+  ['What still travels when the work changes.', '', 'Captures the durability idea. Asks nothing of the viewer.'],
+  ['What your work is forming.', '', 'Closest to the framework language. Reads abstract on its own.'],
+  ['Build capability that travels.', '', 'Active and short, but tips toward advice rather than enquiry.']
+];
+var out = document.getElementById('out');
+LINES.forEach(function (l, i) {
+  var row = document.createElement('div');
+  row.className = 'row';
+  row.innerHTML =
+    '<div class="num"><span>Option ' + (i + 1) + '</span>' +
+      (l[1] ? '<span class="pick">' + l[1] + '</span>' : '') +
+      '<span style="text-transform:none;letter-spacing:0;font-size:12.5px;color:#8a93a0">' + l[2] + '</span></div>' +
+    '<div class="strip"><div class="mini">' +
+      '<div class="ground"></div><div class="grain"></div>' +
+      '<div class="stage"><div class="title">Capability Formation</div>' +
+      '<div class="support">' + l[0] + '</div></div>' +
+    '</div></div>';
+  out.appendChild(row);
+});
+</script>
+</body></html>

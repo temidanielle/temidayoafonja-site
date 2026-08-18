@@ -1,1 +1,3 @@
 .ogbuild/
+youtube-banner/src/render-*.png
+__pycache__/
