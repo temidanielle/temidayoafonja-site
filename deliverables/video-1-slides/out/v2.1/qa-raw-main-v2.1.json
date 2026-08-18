@@ -1,0 +1,107 @@
+{
+ "report": {
+  "clipped": [],
+  "wrapped": [],
+  "crowded": [],
+  "safe_area": [],
+  "endscreen": [],
+  "bottom_edge": []
+ },
+ "slide_count": 10,
+ "pdf_pages": 10,
+ "pdf_size_in": [
+  13.333,
+  7.5
+ ],
+ "banned_found": {},
+ "url_slides": [
+  9
+ ],
+ "fieldkit_mention_slides": [],
+ "timings": [
+  [
+   "0",
+   "00",
+   "0",
+   "35"
+  ],
+  [
+   "0",
+   "35",
+   "1",
+   "35"
+  ],
+  [
+   "1",
+   "35",
+   "1",
+   "50"
+  ],
+  [
+   "1",
+   "50",
+   "3",
+   "10"
+  ],
+  [
+   "3",
+   "10",
+   "4",
+   "10"
+  ],
+  [
+   "4",
+   "10",
+   "4",
+   "55"
+  ],
+  [
+   "4",
+   "55",
+   "6",
+   "40"
+  ],
+  [
+   "6",
+   "40",
+   "7",
+   "45"
+  ],
+  [
+   "7",
+   "45",
+   "8",
+   "20"
+  ],
+  [
+   "8",
+   "20",
+   "9",
+   "00"
+  ]
+ ],
+ "visible": [
+  "VIDEO ONE  \u00b7  CAPABILITY FORMATION\nHow I Changed Jobs\u000bWithout Starting\u000bMy Career Over\nTemidayo Afonja  \u00b7  temidayoafonja.com",
+  "MY CAREER PATH\nWhat connected those career changes\nAccounting and audit trained me to look for evidence, controls, risk and\u000bwhat a system was failing to reveal. I carried that way of seeing into\u000bcybersecurity and later into people strategy.\nACCOUNTING\nCONSULTING\nLIFE\u000bSCIENCES\nTECHNOLOGY\nPEOPLE\u000bSTRATEGY\nCAPABILITY\u000bFORMATION",
+  "THE THREE MOVES\nThree things helped me carry\u000bmy experience forward.\n01\nLook underneath\u000bthe title\n02\nExplain what\u000bthe work changed\n03\nKeep evidence\u000bbefore you need it",
+  "MOVE ONE\nLook underneath the title.\nName what the work has trained you to notice, decide and solve.\n01\nWhat problems do people trust me to solve?\n02\nWhat decisions can I now make with better judgment?\n03\nWhat could I do in another setting\u000bbecause of what I learned here?",
+  "MOVE TWO\nExplain what the work changed.\nAsk: What changed because I was there?\nInternal description\nLed an onboarding\u000bredesign.\n\u2192\nPortable description\nI led an onboarding redesign with\u000bmy team. One measure of how well\u000bnew hires felt integrated moved\u000bfrom 47 to 75.",
+  "ONE RESULT\nOne measure of\u000bnew-hire integration\nA team result from a redesign I led\n47\nBefore the redesign\n\u2192\n75\nAfter the redesign",
+  "MOVE THREE\nKeep evidence\u000bbefore you need it.\nWrite a permitted, high-level account in your own words.\u000bLeave confidential and employer-owned material out.\nSituation\nNew hires needed a stronger integration experience.\nMy role\nI led the onboarding redesign with my team.\nWhat changed\nOne measure of how well new hires felt\u000bintegrated moved from 47 to 75.\nWhat this shows\nI can diagnose a weak point in the employee experience\u000band lead a redesign that improves it.",
+  "BEFORE YOUR NEXT MOVE\nWrite down your answers\u000bto these three questions.\n01\nWhat can I solve now\u000bthat I could not solve two years ago?\n02\nWhat result can I describe in language\u000banother employer would understand?\n03\nWhat could I still do if the title,\u000bemployer or industry changed?",
+  "THE CAPABILITY FORMATION FIELD KIT\nIs your job still\u000bbuilding you?\nComplete a private, evidence-led career position\u000bassessment using the last 90 days of your\u000bactual work.\ntemidayoafonja.com/book",
+  "WATCH NEXT\nIs Your Job\u000bMaking You Less\u000bMarketable?"
+ ],
+ "notes": [
+  "Timing: 0:00-0:35\n\nBegin full-screen on Temidayo rather than on the slide.\n\nExact opening:\n\n\"If you are considering a different job, function or industry, one of the\nhardest questions is whether the experience you already have will still\ncount. I have changed the kind of work I do several times without treating\neach move as a return to zero. In this video, I will show you three\nquestions I use to identify what my experience has built, explain one\nresult in language another employer can understand and decide what\nevidence to preserve before I move.\"\n\nMove to the title slide after introducing the three questions.",
+  "Timing: 0:35-1:35\n\nSpeak naturally from the career sequence. Do not read the slide.\n\nUse this transition:\n\n\"The continuity was not always visible in the job titles. I had to look\nunderneath them and ask what the work had actually trained me to do.\"\n\nKeep the camera in the upper-left safe area while the timeline is up.",
+  "Timing: 1:35-1:50\n\nIntroduce the three ideas briefly. Do not explain all three on this slide.\n\nReveal one card at a time.",
+  "Timing: 1:50-3:10\n\nExplain that the title identifies where the work sat, while the questions\nreveal what the experience developed.\n\nReveal one question at a time.\n\nViewer action:\n\nWrite down your current title. Under it, name three problems people now\ntrust you to solve.",
+  "Timing: 3:10-4:10\n\nExplain that \"onboarding redesign\" names the project but does not yet tell\nan unfamiliar viewer what improved.\n\nState clearly that you led the redesign with your team.\n\nReveal the portable description only after the internal one has been read\naloud and explained.",
+  "Timing: 4:10-4:55\n\nSay:\n\n\"One measure of how well new hires felt integrated moved from 47 to 75\nafter the onboarding redesign I led with my team. The number becomes\nuseful because I can explain what it measured, what changed and what I\nwas responsible for.\"\n\nReveal 47 first, then 75.",
+  "Timing: 4:55-6:40\n\nExplain that professionals often remember project names while losing the\nevidence, context and explanation that make the work useful later.\n\nTeach the card one row at a time.\n\nKeep the account permitted and high level. Nothing confidential and no\nemployer-owned material.",
+  "Timing: 6:40-7:45\n\nAsk one question at a time and pause.\n\nLeave five to seven seconds after the third question before moving to the\nField Kit invitation.",
+  "Timing: 7:45-8:20\n\nExact invitation:\n\n\"If these questions are showing you that you need a fuller reading of what\nyour current work is building, the Capability Formation Field Kit will help\nyou complete that assessment privately using evidence from the last 90\ndays.\"\n\nKeep the delivery calm and brief. This is the only purchase invitation in\nthe video.",
+  "Timing: 8:20-9:00\n\nExact bridge:\n\n\"In the next video, I will show you how to recognize when you are still\nperforming well but the work is no longer expanding your skills or future\noptions.\"\n\nDo not summarize the current video again.\n\nThe right side of this frame is left open for the YouTube linked-video\nend-screen element. Hold the final frame for at least 12 seconds."
+ ]
+}
