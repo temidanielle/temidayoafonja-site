@@ -193,7 +193,9 @@ than wired up, because the operative consent is the one on the screen the visito
      guidance consent, and `KIT_TAG_YOUTUBE` only when the visitor genuinely arrived with a
      youtube source. Kit owns deduplication (it upserts on the email address), delivery, and the
      unsubscribe link
-  2. **Netlify Blobs**, store `career-decisions-leads`, written **only after Kit confirms**, so
+  2. **Netlify Blobs**, store `career-decisions-leads`, readable through the token-gated
+     `/.netlify/functions/career-decisions-export` (see the note below), written **only after
+     Kit confirms**, so
      the store can never hold a lead that is not also a subscriber. Best effort: a storage
      failure is logged and reported in the response as `durable_record: false`, and does not
      turn a real subscription into an error the visitor sees
@@ -242,6 +244,13 @@ than wired up, because the operative consent is the one on the screen the visito
 **What this form fixes, relative to findings 1 and 5 below.** It is the first form on the site to
 collect an explicit opt-in *and* to record when it was given and against which version of the
 policy. It is the model the remaining seven consent-free forms should follow.
+
+**Reading the store back.** `/.netlify/functions/career-decisions-export` returns the store as
+CSV, or as JSON with `&format=json`. It is gated on the same `RESEARCH_EXPORT_TOKEN` as the three
+older exports, and it is **read only**: it answers `GET` alone, and it refuses the `&delete=` the
+other three accept, with a 400 rather than by ignoring it. It also accepts the token as
+`Authorization: Bearer`, compares it in constant time, and sets `Cache-Control: no-store`. Those
+four differences are confined to that file; the three older exports are unchanged.
 
 **What it deliberately does not do.** It does not touch the existing `xyegkbaq` priority-list
 records. Those were collected with no opt-in, so moving them into Kit is a consent question and

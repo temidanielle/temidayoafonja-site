@@ -142,7 +142,7 @@ Four stores.
 | `org-diagnostic-leads` | `org-diagnostic-capture.js` | Scan completion | Lead and result fields | **None enforced. Indefinite** |
 | `ai-readiness-leads` | `ai-readiness-capture.js` | AI readiness completion | Lead and result fields | **None enforced. Indefinite** |
 | `diagnose-rate` | `diagnose.js` | **Salted SHA-256 of the IP**, not the address | Request count and window start | Still unbounded, but no longer personal data. Purge on the follow-up list |
-| `career-decisions-leads` | `career-decisions-subscribe.js` | Confirmed subscription | First name, email, optional decision text, **both** consent booleans with their own client and server timestamps and policy versions, both attribution touches, whether the youtube tag was applied, Kit subscriber id | Until the subscriber unsubscribes or asks for deletion. Stated in the policy |
+| `career-decisions-leads` | `career-decisions-subscribe.js`, read back by `career-decisions-export.js` | Confirmed subscription | First name, email, optional decision text, **both** consent booleans with their own client and server timestamps and policy versions, both attribution touches, whether the youtube tag was applied, Kit subscriber id | Until the subscriber unsubscribes or asks for deletion. Stated in the policy |
 | `career-decisions-rate` | `career-decisions-subscribe.js` | **Salted SHA-256 of the IP**, not the address | Request count and window start | Same construction and same open purge question as `diagnose-rate` |
 
 The two `career-decisions` stores are subject to the same correction as the four above: without
@@ -232,7 +232,10 @@ A single individual's data can sit in up to five places:
 5. `diagnose-rate`, keyed by IP, if they used the Scan
 
 Deletion is technically feasible. Blob keys are addressable and the export endpoints accept
-`&delete=THE_KEY`. There is no automated process; each request would be handled manually across
+`&delete=THE_KEY`, **with one exception**: `career-decisions-export.js`, added August 2026, is
+read only and refuses that parameter. Deleting a `career-decisions-leads` record for a rights
+request therefore has to be done deliberately rather than through the reporting endpoint, which
+is the intended construction. There is no automated process; each request would be handled manually across
 at least three systems.
 
 **The IP store is the hardest.** It is keyed by IP with no link to any identity, so responding to
