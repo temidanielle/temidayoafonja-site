@@ -1,7 +1,7 @@
 # The Capability Formation Field Kit — source & build
 
 This folder holds the source of truth for the **Capability Formation Field Kit**
-PDF (the $75 calibration companion linked from `/fieldkit`).
+PDF (the $150 calibration companion sold via `/fieldkit`).
 
 ## Files
 

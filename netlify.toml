@@ -34,9 +34,8 @@
 
 [[redirects]]
   from = "/fieldkit"
-  to = "https://temidayoafonja.gumroad.com/l/czmqp"
-  status = 301
-  force = true
+  to = "/fieldkit.html"
+  status = 200
 
 [[headers]]
   for = "/*"
