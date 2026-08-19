@@ -131,6 +131,7 @@
  "safety_boundary_on_slide": true,
  "safety_boundary_in_notes": 2,
  "not_take_boundary": true,
+ "title_updated": true,
  "slide6_new_sub": true,
  "slide6_old_sub_gone": true,
  "slide4_notes_entitlement": true,

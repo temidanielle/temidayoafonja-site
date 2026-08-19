@@ -94,7 +94,7 @@ def slide_01(sl, step=1):
     logomark(sl, 1668, 104)
     eyebrow(sl, 136, 462, "Video three  ·  Capability Formation", w=1400)
     block(sl, 136, 520, 1560, [
-        ("Before You Quit\nYour Job, Check\nThese 3 Things",
+        ("3 Things to Do\nBefore Quitting\nYour Job",
          dict(size=96, bold=True, color=CREAM, spacing=1.08)),
     ])
     hairline(sl, 136, 890, 220, color=RUST, h=6)

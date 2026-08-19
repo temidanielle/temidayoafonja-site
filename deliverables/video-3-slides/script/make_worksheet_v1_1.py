@@ -66,7 +66,7 @@ def table(rows, widths=None, header=True):
 
 # ---------------------------------------------------------------- title page
 h1("VIDEO 3 - FILMING WORKING SHEET  (v1.1)")
-para("Before You Quit Your Job, Check These 3 Things", bold=True, size=15, color=NAVY)
+para("3 Things to Do Before Quitting Your Job", bold=True, size=15, color=NAVY)
 para("Natural-delivery un-script matched to the v1.0 slide architecture: viewer-first "
      "opening, an explicit safety boundary, three separate checks, recap, a provisional "
      "decision reading, practical questions, the Career Decision Evidence Check "
@@ -74,11 +74,20 @@ para("Natural-delivery un-script matched to the v1.0 slide architecture: viewer-
 para("Prepared for Temidayo Afonja", color=DIM)
 para("Revision: v1.1, Wednesday, August 19, 2026, America/Chicago", color=DIM)
 
+h2("Viewer transformation", "Read this before anything else.")
+para("By the end, the viewer knows:")
+bullets([
+    "What evidence to preserve before access changes.",
+    "How to name what the work actually built in them.",
+    "How to test whether the next move uses something already proven while requiring genuinely new growth.",
+    "How to read whether the evidence points toward leaving, repositioning inside, or building a bridge first.",
+])
+
 h2("Production snapshot")
 table([
     ["Field", "Locked decision"],
-    ["YouTube title", "Before You Quit Your Job, Check These 3 Things"],
-    ["On-screen deck title", "Before You Quit Your Job, Check These 3 Things"],
+    ["YouTube title", "3 Things to Do Before Quitting Your Job (approved, TubeBuddy comparison)"],
+    ["On-screen deck title", "3 Things to Do Before Quitting Your Job"],
     ["Thumbnail words", "WAIT BEFORE YOU QUIT"],
     ["Viewer promise", "Three checks that turn an urgent exit decision into an evidence-led one."],
     ["Primary CTA", "Career Decision Evidence Check, https://temidayoafonja.com/career-decisions"],
@@ -93,11 +102,6 @@ bullets([
     "SPEAK FROM IDEAS: the three checks, the example, the decision reading.",
     "PAUSE AND SHOW: let the section slides and the evidence slides carry the screen.",
 ])
-
-h2("The viewer transformation")
-para("By the end, the viewer knows what career evidence to preserve before access "
-     "changes, how to name what the work actually built, and how to test whether the "
-     "next move uses something already proven while requiring something genuinely new.")
 
 h2("Run of show")
 table([
@@ -118,22 +122,27 @@ table([
 ], widths=[1.1, 4.2, 1.5])
 
 # ------------------------------------------------------------------ sections
-h1("01  OPENING RECOGNITION AND PROMISE          0:00-0:50")
-h2("Memorize exactly", "Start on your face. The title slide arrives after the payoff.")
-para("If you are seriously thinking about resigning, this video is not going to talk "
-     "you out of it. It is going to help you do three things before you go, so the "
-     "decision you make rests on evidence rather than on how the last few months have "
-     "felt. Because once you leave, access changes. Records, systems and the people who "
-     "can confirm your work all become harder to reach. By the end of this video, you "
-     "will know what to preserve before that happens, how to name what your work "
-     "actually built, and how to test whether the next move uses something you have "
-     "already proved while requiring you to build something genuinely new.")
-para("I am Temidayo Afonja. On this channel, I help experienced professionals make "
+h1("01  OPENING          0:00-0:50")
+h2("Memorize exactly", "Begin full-screen on Temidayo. The title slide arrives after the payoff.")
+para("If you are seriously thinking about quitting your job, there are three things I "
+     "want you to check before you go.")
+para("I am not going to try to talk you into staying.")
+para("I want to help you leave, if leaving is the right decision, with a clear record "
+     "of what this work built in you and a better read on what the next move needs to do.")
+para("Because once you leave, access changes.")
+para("Records become harder to reach. Systems close. People who saw the work move on to "
+     "other priorities. And something that feels obvious while you are still inside the "
+     "role can become surprisingly difficult to reconstruct six months later.")
+para("By the end of this video, you will know what evidence to preserve, how to name "
+     "what the work actually built in you, and how to test whether the next move uses "
+     "something you have already proved while requiring you to build something "
+     "genuinely new.")
+para("I'm Temidayo Afonja. On this channel, I help experienced professionals make "
      "clearer career decisions by looking at what their work is actually building in them.")
 h2("Performance notes")
 bullets([
-    "Do not open by arguing against leaving. The viewer has usually already been thinking about this for months.",
-    "Do not make the opening alarmist.",
+    "Do not open with a welcome, a greeting or any creator-style intro.",
+    "Do not argue against leaving. The viewer has usually been thinking about this for months.",
     "Let the title slide appear only after the three-check promise is clear.",
 ])
 h2("Presentation and camera cue")
@@ -198,8 +207,8 @@ h1("04  CHECK 2: NAME WHAT THE WORK BUILT          3:15-4:55")
 h2("Section-intro beat")
 para('On the standalone 02 slide, say: "The second check is to name what the work built."')
 h2("Speak from ideas")
-para("A resume bullet is not automatically portable evidence. It tells someone what you "
-     "were assigned. It does not tell them what you can do.")
+para("A resume bullet can tell another employer what happened. It does not "
+     "automatically tell them what you became able to do.")
 table([
     ["Capture", "Question"],
     ["Problem", "What problem was being solved?"],
@@ -231,7 +240,7 @@ bullets([
 h2("Two cautions", "Spoken, not on the slide.")
 bullets([
     "A move that uses nothing already developed may impose an unnecessary reset.",
-    "A move that simply repeats the same work at another employer may change the scenery without changing the position.",
+    "A move that repeats the same work at another employer may change the setting without materially changing what the career is building.",
 ])
 h2("Presentation and camera cue")
 para("SLIDE: 7, standalone 03; then 8, the contrast, then the three questions one at a time.")
@@ -249,8 +258,8 @@ table([
 ], widths=[1.6, 5.2])
 para("Exact line: The point is not to make the decision slow. The point is to make it "
      "legible.", bold=True)
-para("If the safety boundary applies to someone watching, repeat it briefly here. A "
-     "harmful situation does not need a bridge plan.")
+para("If the safety boundary applies to someone watching, repeat it briefly here.")
+para("Exact line: A harmful situation does not need a bridge plan.", bold=True)
 
 h1("07  BEFORE YOU RESIGN          7:45-8:35")
 h2("Pause and show", "Ask one question at a time. Leave five to seven seconds after the third.")
@@ -276,7 +285,7 @@ para("Before publishing, verify that temidayoafonja.com/career-decisions is live
 h1("09  PRESENTATION MAP          13 slides")
 table([
     ["#", "Job", "On-screen content", "Builds"],
-    ["1", "Title", "Before You Quit Your Job, Check These 3 Things", "None"],
+    ["1", "Title", "3 Things to Do Before Quitting Your Job", "None"],
     ["2", "Recognition", "Once you leave, access changes, plus the safety boundary", "None"],
     ["3", "Section 01", "Preserve the evidence", "None"],
     ["4", "Check 1", "Yours to keep, and not yours to take", "4"],
@@ -308,7 +317,7 @@ bullets([
 h1("11  UPLOAD PACKAGE")
 h2("Title, thumbnail, CTA")
 bullets([
-    "TITLE: Before You Quit Your Job, Check These 3 Things",
+    "TITLE: 3 Things to Do Before Quitting Your Job",
     "THUMBNAIL: WAIT BEFORE YOU QUIT",
     "PRIMARY CTA: Career Decision Evidence Check, https://temidayoafonja.com/career-decisions",
     "END SCREEN: How to Change Jobs Without Starting Your Career Over",

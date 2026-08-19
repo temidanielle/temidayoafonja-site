@@ -26,7 +26,7 @@ GUIDES = os.path.join(V11, "guides")
 RENDER = os.path.join(os.path.dirname(os.path.abspath(__file__)), "_render_v1_1")
 CHROME = "/opt/pw-browsers/chromium-1194/chrome-linux/chrome"
 
-DECK = "Video-3-Before-You-Quit-Your-Job-Check-These-3-Things_v1.1"
+DECK = "Video-3-3-Things-to-Do-Before-Quitting-Your-Job_v1.1"
 RECDECK = "Video-3-Reveal-Builds_v1.1"
 N = 13
 RECORDING_PLAN = [(n, s) for n in range(1, N + 1) for s in range(1, S.STEPS[n] + 1)]
@@ -220,7 +220,7 @@ def main():
     pdf_path = os.path.join(OUT, DECK + ".pdf")
     render_pptx(cvs, pptx_path)
     html = render_html(cvs, os.path.join(RENDER, "deck.html"),
-                       "Before You Quit Your Job, Check These 3 Things")
+                       "3 Things to Do Before Quitting Your Job")
     names = ["slide-%02d-%s.png" % (n, S.SLUGS[n]) for n in range(1, N + 1)]
     pngs = shoot(html, PNG, names, pdf_path=pdf_path)
 
@@ -235,7 +235,7 @@ def main():
                   pdf_path=os.path.join(V11, RECDECK + ".pdf"))
 
     sheet(pngs, os.path.join(V11, "contact-sheet-v1.1.png"), 560,
-          "BEFORE YOU QUIT YOUR JOB, CHECK THESE 3 THINGS",
+          "3 THINGS TO DO BEFORE QUITTING YOUR JOB",
           "Video 3, version 1.1   ·   13 slides   ·   1920 x 1080   ·   16:9",
           labels=["%02d  %s" % (n, S.TITLES[n]) for n in range(1, N + 1)])
     rlabels = []
@@ -298,6 +298,8 @@ def main():
                                    ("Not yours to take", "Confidential information",
                                     "Customer data", "Employee data",
                                     "Proprietary documents"))
+    rep["title_updated"] = ("3 Things to Do Before Quitting Your Job" in vis[0]
+                            and "Check These 3 Things" not in vis[0])
     rep["slide6_new_sub"] = ("A resume bullet does not automatically show what "
                              "you can do." in vis[5])
     rep["slide6_old_sub_gone"] = "not automatically portable evidence" not in vis[5]
@@ -347,6 +349,7 @@ def main():
           "| in notes on", rep["safety_boundary_in_notes"], "slides")
     print("do-not-take boundary:", rep["not_take_boundary"],
           "| legible line:", rep["legible_line"])
+    print("slide 1 title updated:", rep["title_updated"])
     print("slide 6 new sub:", rep["slide6_new_sub"], "| old gone:",
           rep["slide6_old_sub_gone"])
     print("slide 4 notes entitlement:", rep["slide4_notes_entitlement"],

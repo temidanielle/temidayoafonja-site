@@ -3,41 +3,43 @@
 **Version 1.1**
 **Wednesday, August 19, 2026, America/Chicago**
 
-Deck: **Before You Quit Your Job, Check These 3 Things** (working title)
+Deck: **3 Things to Do Before Quitting Your Job** (approved title)
+Thumbnail words: WAIT BEFORE YOU QUIT
 Primary CTA: the Career Decision Evidence Check, temidayoafonja.com/career-decisions
 Watch next: How to Change Jobs Without Starting Your Career Over
 
-A refinement of v1.0, not a redesign. Two content changes and four supporting
-documents. Version 1.0 is preserved unchanged, Videos 1 and 2 were not touched,
-and no website file was read into the build or edited.
-
-Full before-and-after detail is in `VIDEO_3_CHANGELOG_v1.1.md`.
+A refinement and completion of v1.0, not a redesign. v1.0 is preserved unchanged,
+Videos 1 and 2 were not touched, and no website file was read into the build or
+edited. Before-and-after detail is in `VIDEO_3_CHANGELOG_v1.1.md`.
 
 ---
 
-## 1. What changed
+## 1. Required confirmations
 
-| Where | Change |
-|---|---|
-| Slide 6, visible supporting line | "A resume bullet is not automatically portable evidence." becomes "A resume bullet does not automatically show what you can do." |
-| Slide 4, speaker notes | Adds the approved heuristic: "The test to say out loud: if you are not entitled to keep it, do not take it." |
-| Script and working sheet, Check 1 | The legal-team heuristic is replaced with "If you are not entitled to keep it, do not take it." The line "Preserving your record does not mean taking their material." is kept. |
-
-One correction to the brief's assumption, worth stating plainly: the legal-team
-heuristic was never in the presenter notes. The v1.0 deck notes carried no
-heuristic at all. It lived in the spoken script and the working sheet, so it was
-replaced there, and the approved wording was added to the deck notes where it had
-been missing. That is why the script package was reissued at v1.1.
+| # | Confirmation | Result |
+|---|---|---|
+| 1 | Title updated to 3 Things to Do Before Quitting Your Job | **Pass.** On slide 1, in the deck metadata, in both v1.1 filenames, in the working sheet, and in the upload copy. No variant of the old title survives anywhere in the v1.1 package. |
+| 2 | v1.0 preserved | **Pass.** Every v1.0 file is untouched, including its own filenames. |
+| 3 | 13-slide architecture preserved | **Pass.** Same thirteen slides, same order, no teaching slides added, no section slides combined. |
+| 4 | All three checks separate before the recap | **Pass.** Slides 3, 5 and 7 each carry their own check and neither of the others, asserted both ways. A scan of all thirteen slides for all three check names returns exactly one slide: 9. |
+| 5 | Only slide 6's supporting line materially changed besides title copy | **Pass.** Pixel comparison against v1.0: eleven of thirteen slides are pixel-identical. Slide 1 differs only in the title text block, x 134 to 942, y 530 to 833. Slide 6 differs only inside x 887 to 1534, y 286 to 315, which is the one line of supporting copy. Nothing else on any slide moved by a pixel. |
+| 6 | Safety boundary intact | **Pass.** On slide 2 verbatim, in navy beneath a small rust rule, never red, and in the speaker notes on slides 2 and 10. Not softened. |
+| 7 | CTA remains the Career Decision Evidence Check | **Pass.** Slide 12, the only invitation in the deck. The Field Kit appears nowhere in the visible copy or the notes. |
+| 8 | /career-decisions route status explicitly verified or flagged | **Flagged, not verified.** Re-checked against the repository at build time: no page, no redirect among the thirteen rules in `netlify.toml`, no sitemap entry. It would 404 today. The route stays on slide 12 as instructed, no replacement was invented, and it is not claimed live anywhere in this package. |
+| 9 | 27-frame reveal structure preserved | **Pass.** 27 frames, same build counts on slides 4, 6, 8, 10 and 11, no builds on 3, 5, 7 or 9, no animations. Six frames differ from v1.0: the title frame and the five builds of slide 6. |
+| 10 | No fabricated evidence | **Pass.** No screenshots, employer documents, fake reviews, dashboards, icons or invented statistics anywhere. The internal-process example is described in words and carries no number. |
+| 11 | No unrelated files changed | **Pass.** Only files under `deliverables/video-3-slides/`. |
+| 12 | Videos 1 and 2 untouched | **Pass.** No file in either folder was modified. |
+| 13 | Thumbnail uses only the approved real portrait | **Stopped at verification.** The gold-outfit portrait has not been supplied. Nothing was rendered and nothing was substituted. Full verification in `VIDEO_3_THUMBNAIL_STATUS_v1.1.md`. |
+| 14 | No Temidayo appearance generated or altered | **Pass.** No photograph appears in this deck at all, and no image of Temidayo was generated, recreated, retouched or modified anywhere in this task. No source photograph was changed. |
 
 ---
 
-## 2. Architecture, preserved
-
-13 main slides, unchanged order, unchanged content except the one line above.
+## 2. Architecture
 
 | # | Slide | Builds |
 |---|---|---|
-| 1 | Title | none |
+| 1 | Title, 3 Things to Do Before Quitting Your Job | none |
 | 2 | Once you leave, access changes, with the safety boundary | none |
 | 3 | Standalone 01, preserve the evidence | none |
 | 4 | Check 1, yours to keep and not yours to take | 4 |
@@ -51,70 +53,40 @@ been missing. That is why the script package was reissued at v1.1.
 | 12 | Career Decision Evidence Check | none |
 | 13 | Watch next | none |
 
-27 recording frames, sequential duplicate slides, no animations. Timings
-contiguous 0:00 to 9:25.
+Timings contiguous 0:00 to 9:25.
 
 ---
 
-## 3. QA results
-
-Raw output: `out/v1.1/qa-raw-v1.1.json`.
-
-### The change itself
+## 3. Standard checks
 
 | # | Check | Result |
 |---|---|---|
-| 1 | New slide 6 supporting line present | Pass. |
-| 2 | Old slide 6 line gone | Pass. "portable evidence" appears nowhere in the deck. |
-| 3 | Slide 4 notes carry the entitlement test | Pass. |
-| 4 | "Preserving your record does not mean taking their material." kept | Pass. |
-| 5 | Legal-team heuristic gone everywhere | Pass. Zero occurrences in visible copy, notes, script or working sheet. |
-| 6 | Only slide 6 changed visually | Pass. Twelve of thirteen slides pixel-identical to v1.0. Slide 6 differs only inside x 887 to 1534, y 286 to 315, one line of type. |
-| 7 | Only slide 6 frames changed in the recording deck | Pass. Five of 27 frames differ, all five being builds of slide 6. The other 22 are pixel-identical. |
-| 8 | Reveal architecture preserved | Pass. Still 27 frames, same build counts on slides 4, 6, 8, 10 and 11. |
-
-### Everything the brief asked to preserve
-
-| # | Check | Result |
-|---|---|---|
-| 9 | 13 main slides, 13 PDF pages | Pass, at 13.333 x 7.5 in. |
-| 10 | Order unchanged, no teaching slides added | Pass. |
-| 11 | Standalone section slides not combined | Pass. Slides 3, 5 and 7 each carry their own check and neither of the others. |
-| 12 | Slide 9 is the only place all three checks appear together | Pass. A scan of all thirteen slides returns exactly one: 9. |
-| 13 | Slide 2 safety boundary intact, not red, rust rule kept | Pass. Verbatim on the slide, in navy beneath a small rust rule, and in the notes on slides 2 and 10. |
-| 14 | Slide 4 two-column structure and examples intact | Pass. No screenshots, employer documents, fake reviews, dashboards or icons. |
-| 15 | Slide 8 unchanged | Pass. Pixel-identical to v1.0. |
-| 16 | Slide 9 three-card recap unchanged | Pass. Pixel-identical. |
-| 17 | Slide 10 exact line present | Pass. "The point is not to make the decision slow. The point is to make it legible." The three directions are equal in weight, with no visual ranking and no diagnosis. |
-| 18 | Slide 11 three questions, one at a time | Pass. Three builds, pause preserved in the notes. |
-| 19 | Slide 12 CTA unchanged, Field Kit not substituted | Pass. The Field Kit appears nowhere in the deck or the notes. |
-| 20 | Slide 13 end-screen reserve | Pass. 0 elements intrude on x 1130 to 1860, y 190 to 890. |
-| 21 | Camera safe areas | Pass. 0 text elements in the 620 x 440 upper-left keep-clear zone, in the main deck and across all 27 recording frames. |
-| 22 | No clipped, crowded or unexpectedly wrapped text | Pass. 0 findings in either deck. The new supporting line sets on one line, as the old one did, so no geometry moved. |
-| 23 | Design system untouched | Pass. No gradients, icons, stock photography, fake documents or new illustration styles. No photograph of any kind appears in this deck. |
-| 24 | Voice standard | Pass. 0 em dash and 0 en dash characters. |
-| 25 | No keyword stuffing on slides | Pass. None of the TubeBuddy phrases appear in any slide copy. They are confined to the upload document. |
+| 15 | 13 slides, 13 PDF pages | Pass, at 13.333 x 7.5 in. |
+| 16 | No reveal frame removes a permanent element | Pass. 0 removals across all 27 frames. |
+| 17 | Last build of each slide equals the main slide | Pass, content-identical for all 13. |
+| 18 | Camera safe areas | Pass. 0 text elements in the 620 x 440 upper-left keep-clear zone, in the main deck and across all 27 recording frames. |
+| 19 | End-screen reserve on slide 13 | Pass. 0 elements intrude on x 1130 to 1860, y 190 to 890. |
+| 20 | No clipped, crowded or unexpectedly wrapped text | Pass. 0 findings in either deck. The new title sets on three lines as the old one did, and the new slide 6 line sets on one line as the old one did, so no geometry moved. |
+| 21 | Text inside its container | Pass, including the slide 4 panels. |
+| 22 | Slide 10 exact line | Pass. "The point is not to make the decision slow. The point is to make it legible." The three directions are equal in weight with no visual ranking. |
+| 23 | Design system untouched | Pass. Warm cream teaching slides, deep navy title and end slides, muted gold, restrained rust, same typography and spacing. No gradients, icons, stock photography or new illustration styles. |
+| 24 | Voice standard | Pass. 0 em dash and 0 en dash characters in slide copy, speaker notes or spoken script. The thirteen production slide markers carry the em dash exactly as specified in the brief; they are annotations, not spoken words, and they do not appear in the reading script. |
+| 25 | No keyword stuffing on slides | Pass. No search phrase appears in any slide copy. The primary phrase appears once, in the description's opening sentence, where it reads as a sentence. |
 
 ---
 
-## 4. Publication blockers, both re-checked and both still open
+## 4. Script package
 
-### The CTA route does not exist
+| File | Notes |
+|---|---|
+| `script/Video-3-Unscript-Working-Sheet_v1.1_Temidayo_Afonja.docx` | Opens with the viewer transformation, then the production snapshot and run of show. MEMORIZE EXACTLY and SPEAK FROM IDEAS labelled throughout. Carries the approved opening verbatim. |
+| `script/Video-3-Teleprompter-Script-with-slide-markers_v1.1.docx` / `.txt` | 1,180 spoken words, about nine minutes at a natural pace, longer with the pauses the script calls for. Thirteen slide markers, exactly as specified. |
+| `script/Video-3-Reading-Script-no-markers_v1.1.docx` / `.txt` | Identical spoken copy, all markers removed. |
+| `script/Short-3A-...-Preserve-the-Evidence_v1.1` | 132 words, about 44 to 59 seconds. Carries the confidentiality boundary and the safety boundary. |
+| `script/Short-3B-...-Two-Things_v1.1` | 131 words, about 43 to 59 seconds. |
 
-`temidayoafonja.com/career-decisions` was re-checked against the repository at
-build time for v1.1. There is still no page, no redirect among the thirteen rules
-in `netlify.toml`, and no sitemap entry. It would 404 today.
-
-The route stays on slide 12 as instructed. No replacement was invented and the
-URL is not claimed to be live anywhere in this package. The request to build it
-is in `VIDEO_3_PRODUCTION_HANDOFF_v1.1.md`.
-
-### The thumbnail cannot be produced
-
-The gold-outfit portrait has still not been supplied. The photographs available
-remain the same three from one wine-dress session, which this video's brief rules
-out by name. No thumbnail was produced, nothing was substituted, and no part of
-any photograph was generated or altered.
+Both Shorts point to the video by its approved title and carry no second call to
+action. The `.txt` files start on the first spoken line for pasting into Descript.
 
 ---
 
@@ -122,44 +94,28 @@ any photograph was generated or altered.
 
 All paths relative to `deliverables/video-3-slides/`.
 
-**Version 1.1 deliverables**
+**v1.1 deliverables**
 
-- `out/Video-3-Before-You-Quit-Your-Job-Check-These-3-Things_v1.1.pptx`
+- `out/Video-3-3-Things-to-Do-Before-Quitting-Your-Job_v1.1.pptx`
 - `out/Video-3-Reveal-Builds_v1.1.pptx`
-- `out/Video-3-Before-You-Quit-Your-Job-Check-These-3-Things_v1.1.pdf`
-- `VIDEO_3_SLIDE_QA_v1.1.md` (this file)
-- `VIDEO_3_CHANGELOG_v1.1.md`
-- `VIDEO_3_UPLOAD_COPY_v1.1.md`
-- `VIDEO_3_PRODUCTION_HANDOFF_v1.1.md`
+- `out/Video-3-3-Things-to-Do-Before-Quitting-Your-Job_v1.1.pdf`
+- `VIDEO_3_SLIDE_QA_v1.1.md`, `VIDEO_3_CHANGELOG_v1.1.md`,
+  `VIDEO_3_UPLOAD_COPY_v1.1.md`, `VIDEO_3_PRODUCTION_HANDOFF_v1.1.md`,
+  `VIDEO_3_THUMBNAIL_STATUS_v1.1.md`
 
 **Regenerated supporting output**
 
-- `out/v1.1/png/slide-01 ... slide-13` at 1920 x 1080
-- `out/v1.1/reveals/frame-01 ... frame-27`
-- `out/v1.1/Video-3-Reveal-Builds_v1.1.pdf`
-- `out/v1.1/contact-sheet-v1.1.png`
-- `out/v1.1/recording-deck-order-v1.1.png`
-- `out/v1.1/phone-thumbnail-check-v1.1.png`
-- `out/v1.1/guides/guide-01 ... guide-13`
-- `out/v1.1/qa-raw-v1.1.json`
-
-**Script package, reissued at v1.1**
-
-- `script/Video-3-Unscript-Working-Sheet_v1.1_Temidayo_Afonja.docx`
-- `script/Video-3-Teleprompter-Script-with-slide-markers_v1.1.docx` / `.txt`
-- `script/Video-3-Reading-Script-no-markers_v1.1.docx` / `.txt`
-- `script/Short-3A-Before-You-Resign-Preserve-the-Evidence_v1.1.docx` / `.txt`
-- `script/Short-3B-A-Better-Next-Move-Does-Two-Things_v1.1.docx` / `.txt`
+`out/v1.1/png/` 13 slides, `out/v1.1/reveals/` 27 frames,
+`out/v1.1/Video-3-Reveal-Builds_v1.1.pdf`, `out/v1.1/contact-sheet-v1.1.png`,
+`out/v1.1/recording-deck-order-v1.1.png`,
+`out/v1.1/phone-thumbnail-check-v1.1.png`, `out/v1.1/guides/`,
+`out/v1.1/qa-raw-v1.1.json`
 
 **Source**
 
-- `build/slides_v1_1.py`, copied from `slides.py` with the two changes
-- `build/build_v1_1.py`, build and QA pass
-- `script/make_scripts_v1_1.py`, `script/make_worksheet_v1_1.py`
-
-Rebuild with `python3 build/build_v1_1.py`.
+`build/slides_v1_1.py`, `build/build_v1_1.py`, `script/make_scripts_v1_1.py`,
+`script/make_worksheet_v1_1.py`. Rebuild with `python3 build/build_v1_1.py`.
 
 **Archive, untouched**
 
-All v1.0 files: both decks, the PDF, `VIDEO_3_SLIDE_QA_v1.0.md`, the v1.0 PNGs,
-frames, sheets and guides, and the v1.0 script package.
+All v1.0 files under their original names, and the v1.0 script package.

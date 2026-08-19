@@ -1,63 +1,70 @@
-"""Build the Video 3 script package.
-
-  Video-3-Unscript-Working-Sheet_v1.0_Temidayo_Afonja.docx
-  Video-3-Teleprompter-Script-with-slide-markers_v1.1.docx / .txt
-  Video-3-Reading-Script-no-markers_v1.1.docx / .txt
-  Short-3A-Before-You-Resign-Preserve-the-Evidence_v1.1.docx / .txt
-  Short-3B-A-Better-Next-Move-Does-Two-Things_v1.1.docx / .txt
-"""
+"""Video 3 v1.1 script package. Final title: 3 Things to Do Before Quitting Your Job."""
 import os, re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 SCRIPT = """
-If you are seriously thinking about resigning, this video is not going to talk you out of it.
+If you are seriously thinking about quitting your job, there are three things I want you to check before you go.
 
-It is going to help you do three things before you go, so the decision you make rests on evidence rather than on how the last few months have felt.
+I am not going to try to talk you into staying.
 
-Because once you leave, access changes. Records, systems and the people who can confirm your work all become harder to reach.
+I want to help you leave, if leaving is the right decision, with a clear record of what this work built in you and a better read on what the next move needs to do.
 
-By the end of this video, you will know what to preserve before that happens, how to name what your work actually built, and how to test whether the next move uses something you have already proved while requiring you to build something genuinely new.
+Because once you leave, access changes.
+
+Records become harder to reach. Systems close. People who saw the work move on to other priorities. And something that feels obvious while you are still inside the role can become surprisingly difficult to reconstruct six months later.
+
+By the end of this video, you will know what evidence to preserve, how to name what the work actually built in you, and how to test whether the next move uses something you have already proved while requiring you to build something genuinely new.
 
 [SLIDE: Title]
 
-I am Temidayo Afonja. On this channel, I help experienced professionals make clearer career decisions by looking at what their work is actually building in them.
+I'm Temidayo Afonja. On this channel, I help experienced professionals make clearer career decisions by looking at what their work is actually building in them.
 
 [SLIDE: Once You Leave, Access Changes]
 
-Before anything else, I want to be clear about one thing.
+Before anything else, one thing needs saying clearly.
 
-If your health or safety is at risk, or you are facing harassment, discrimination or another urgent threat, nothing in this video is a reason to delay leaving. Please act on that first.
+If your health or safety is at risk, or you are facing harassment, discrimination or another urgent threat, nothing in this video is a reason to delay leaving.
+
+Please act on that first.
 
 Everything I am about to say assumes you have the time to think. If you do not, that is a different situation and it deserves a different response.
 
 For everyone else, here is why the timing matters.
 
-While you are still in the role, you can see your own review history. You can look up dates. You can check what a project actually involved. You can ask a colleague what they remember. The day after you resign, most of that becomes harder, and some of it becomes impossible.
+While you are still in the role, you can look up a date. You can check what a project actually involved. You can read your own review history. You can ask someone what they remember. The day after you give notice, most of that is harder, and some of it is gone.
 
 None of this is about hesitating. It is about not losing the record of your own work on the way out.
 
-[SLIDE: Preserve the Evidence]
+[SLIDE: 01 — Preserve the Evidence]
 
 The first check is to preserve the evidence.
 
+[SLIDE: What to Keep / What Not to Take]
+
 I want to be careful here, because this is not permission to take things.
 
-What you can keep is what is genuinely yours. Your own performance reviews. Recognition you received. Nonconfidential metrics that were already shared with you. Project dates. The scope of what you were responsible for. And permitted notes about decisions you influenced or problems you helped resolve.
+What you can keep is what is genuinely yours. Your own performance reviews, where you are permitted to keep them. Recognition you received. Nonconfidential metrics that were already shared with you. Project dates. The scope of what you were responsible for. And permitted notes about decisions you influenced or problems you helped resolve.
 
-What you must not take is anything that belongs to the employer. Confidential information. Customer data. Employee data. Proprietary documents. Anything you do not have the right to keep.
+What you must not take is anything that belongs to the employer. Confidential information. Customer data. Employee data. Proprietary documents. Anything you are not entitled to retain.
 
-Preserving your record does not mean taking their material. If you are not entitled to keep it, do not take it.
+The rule is simple. If you are not entitled to keep it, do not take it.
 
-Now, the shape of the record itself. For each thing worth keeping, write down what changed, what the starting condition was, what you decided or influenced, who was affected, and what permitted evidence supports the result.
+Preserving your record does not mean taking their material.
 
-That is a paragraph. It is not a filing cabinet. And it is the thing you will wish you had written down when someone asks you about this work eighteen months from now.
+Now, the shape of the record itself. For each thing worth keeping, write down what changed. What the starting condition was. What you decided or influenced. Who was affected. And what permitted evidence supports the result.
 
-[SLIDE: Name What the Work Built]
+That is a paragraph, not a filing cabinet.
+
+And a lot of what makes experience valuable is surprisingly easy to forget once the context disappears.
+
+[SLIDE: 02 — Name What the Work Built]
 
 The second check is to name what the work built.
 
-A resume bullet is not automatically portable evidence. It tells someone what you were assigned. It does not tell them what you can do.
+[SLIDE: Problem / Constraint / Judgment / Outcome]
+
+A resume bullet can tell another employer what happened. It does not automatically tell them what you became able to do.
 
 So for each achievement that matters, capture four things.
 
@@ -73,15 +80,17 @@ Then ask the question that makes it portable. Where else could that combination 
 
 Let me make that concrete. Someone might say they reduced the time an internal process took. That is the bullet.
 
-But the portable value is usually not the number. It is that they could identify where the work was getting stuck. That they could align people who owned different parts of the same system. That they could redesign the handoff. And that they could do all of that without creating a new control failure.
+But the value that travels is usually not the number. It is that they could identify where the work was getting stuck. That they could align people who owned different parts of the same system. That they could redesign the handoff. And that they could do it without creating a new control failure.
 
-That combination is the capability. Another organization can recognize that, even if they have never heard of the process you fixed.
+That combination is the capability. Another organization can recognize it, even if they have never heard of the process you fixed.
 
-[SLIDE: Test the Next Move]
+[SLIDE: 03 — Test the Next Move]
 
 The third check is to test the next move.
 
-A strong move usually does two things at once. It uses something you have already proved, and it requires you to build something genuinely new.
+[SLIDE: Uses Something Proven / Builds Something New]
+
+A strong move does two things at once. It uses something proven and builds something new.
 
 Three questions will tell you whether the move in front of you does both.
 
@@ -91,33 +100,33 @@ What new judgment, exposure or responsibility will it force me to develop?
 
 And what will I be able to do after a year that I cannot do now?
 
-Two cautions, from watching a lot of these decisions.
+Two things worth watching for.
 
-A move that uses nothing you have already developed may impose an unnecessary reset. You can absolutely choose that, but choose it knowingly.
+A move that uses nothing you have already developed may create an unnecessary reset. Sometimes that is exactly the right trade. It is worth making it knowingly rather than by accident.
 
-And a move that simply repeats the same work at another employer may change the scenery without changing your position. The title improves, the commute changes, and a year later you are in the same place.
+And a move that repeats the same work at another employer may change the setting without materially changing what the career is building. The title can improve while the position stays where it was.
 
-[SLIDE: Recap]
+[SLIDE: The Three Checks]
 
 So those are the three checks. Preserve the evidence. Name what the work built. Test the next move.
 
-Take them in that order, before you resign, not after.
+In that order, before you resign, not after.
 
-[SLIDE: Three Directions]
+[SLIDE: Decision Reading]
 
-Once you have done that, the evidence usually points in one of three directions.
+Once you have done that, the evidence tends to point in one of three directions.
 
-It may say that leaving is right and you are ready. The evidence supports the move and the move is available.
+It may say that leaving is right and you are ready.
 
 It may say that repositioning inside is worth trying first. Another role, another project, or a change in scope could restore growth without an immediate exit.
 
-Or it may say that you need to build a bridge. That there is something missing before the move: a credential, one piece of outside-context evidence, financial runway, or a clearer way of translating what your experience can do somewhere else.
+Or it may say that you need to build a bridge. That something is missing before the move: a credential, one piece of outside-context evidence, financial runway, or a clearer way of translating what your experience can do somewhere else.
 
-I am not going to tell you which one you are looking at. That is not something I can read from here, and it is not something one sign can tell you either.
+I am not going to tell you which one you are looking at. That is not something I can read from here, and it is not something a single sign can tell you either.
 
 The point is not to make the decision slow. The point is to make it legible.
 
-And if the safety boundary I mentioned earlier applies to you, none of this applies. A harmful situation does not need a bridge plan.
+And if the boundary I mentioned at the start applies to you, none of this does. A harmful situation does not need a bridge plan.
 
 [SLIDE: Before You Resign]
 
@@ -135,7 +144,7 @@ Pause the video here if you want to write those down. They are worth more on pap
 
 If you want a structured read of the evidence behind the decision you are weighing, that is what the Career Decision Evidence Check is for.
 
-You can find it at temidayoafonja dot com slash career dash decisions. I have also linked it below.
+You can find it at temidayoafonja.com/career-decisions. I have also linked it below.
 
 [SLIDE: Watch Next]
 
@@ -149,15 +158,15 @@ Before you resign, preserve the evidence.
 
 Once you leave, access changes. Records and the people who can confirm your work get harder to reach.
 
-While you are still there, keep what is genuinely yours. Your own performance reviews. Recognition you received. Nonconfidential metrics already shared with you. Project dates, scope of responsibility, and permitted notes on decisions you influenced.
+While you are still there, keep what is genuinely yours. Your own performance reviews where permitted. Recognition you received. Nonconfidential metrics already shared with you. Project dates, scope, and permitted notes on decisions you influenced.
 
-What you must not take is anything the employer owns. Confidential information. Customer data. Employee data. Proprietary documents. Anything you have no right to keep.
+What you must not take is anything the employer owns. Confidential information. Customer data. Employee data. Proprietary documents.
 
-Preserving your record does not mean taking their material.
+The rule is simple. If you are not entitled to keep it, do not take it.
 
 And if your health or safety is at risk, or you are facing harassment or discrimination, none of this is a reason to wait.
 
-The full version is in my video on the three things to check before you quit.
+The full version is in my video, 3 Things to Do Before Quitting Your Job.
 """
 
 SHORT_3B = """
@@ -173,26 +182,25 @@ What new judgment or responsibility will it force me to develop?
 
 And what will I be able to do after a year that I cannot do now?
 
-Here is why both halves matter. A move that uses nothing you have already developed can impose an unnecessary reset. And a move that repeats the same work at another employer changes the scenery without changing your position.
+Here is why both halves matter. A move that uses nothing you have already developed can create an unnecessary reset. And a move that repeats the same work somewhere else may change the setting without changing what your career is building.
 
-If you are weighing a move right now, the full version is in my video on the three things to check before you quit.
+If you are weighing a move right now, the full version is in my video, 3 Things to Do Before Quitting Your Job.
 """
 
 
-def paragraphs(text):
-    return [p.strip() for p in text.strip().split("\n\n") if p.strip()]
+def paragraphs(t):
+    return [p.strip() for p in t.strip().split("\n\n") if p.strip()]
 
 
-def strip_markers(paras):
-    return [p for p in paras if not re.fullmatch(r"\[SLIDE:.*\]", p)]
+def strip_markers(ps):
+    return [p for p in ps if not re.fullmatch(r"\[SLIDE:.*\]", p)]
 
 
-def write_txt(path, paras):
-    with open(path, "w") as f:
-        f.write("\n\n".join(paras) + "\n")
+def write_txt(path, ps):
+    open(path, "w").write("\n\n".join(ps) + "\n")
 
 
-def write_docx(path, title, paras):
+def write_docx(path, title, ps):
     from docx import Document
     from docx.shared import Pt, Inches, RGBColor
     from docx.enum.text import WD_LINE_SPACING
@@ -201,22 +209,19 @@ def write_docx(path, title, paras):
         s.top_margin = s.bottom_margin = Inches(0.8)
         s.left_margin = s.right_margin = Inches(1.0)
     n = doc.styles["Normal"]
-    n.font.name = "Calibri"
-    n.font.size = Pt(16)
+    n.font.name = "Calibri"; n.font.size = Pt(16)
     n.paragraph_format.space_after = Pt(14)
     n.paragraph_format.line_spacing_rule = WD_LINE_SPACING.ONE_POINT_FIVE
-    h = doc.add_paragraph()
-    r = h.add_run(title)
+    h = doc.add_paragraph(); r = h.add_run(title)
     r.font.size = Pt(13); r.font.bold = True
     r.font.color.rgb = RGBColor(0x5A, 0x6B, 0x82)
     h.paragraph_format.space_after = Pt(26)
-    for p in paras:
-        para = doc.add_paragraph()
-        run = para.add_run(p)
+    for p in ps:
+        par = doc.add_paragraph(); run = par.add_run(p)
         if re.fullmatch(r"\[SLIDE:.*\]", p):
             run.font.size = Pt(12); run.font.bold = True
             run.font.color.rgb = RGBColor(0xC9, 0xA8, 0x4C)
-            para.paragraph_format.space_before = Pt(18)
+            par.paragraph_format.space_before = Pt(18)
     doc.save(path)
 
 
@@ -226,10 +231,9 @@ def main():
     write_txt(os.path.join(HERE, "Video-3-Teleprompter-Script-with-slide-markers_v1.1.txt"), marked)
     write_txt(os.path.join(HERE, "Video-3-Reading-Script-no-markers_v1.1.txt"), clean)
     write_docx(os.path.join(HERE, "Video-3-Teleprompter-Script-with-slide-markers_v1.1.docx"),
-               "Video 3 teleprompter script, with slide markers, v1.1", marked)
+               "3 Things to Do Before Quitting Your Job, teleprompter script with slide markers", marked)
     write_docx(os.path.join(HERE, "Video-3-Reading-Script-no-markers_v1.1.docx"),
-               "Video 3 reading script, v1.1", clean)
-
+               "3 Things to Do Before Quitting Your Job, reading script", clean)
     for name, body, title in (
         ("Short-3A-Before-You-Resign-Preserve-the-Evidence_v1.1", SHORT_3A,
          "Short 3A, Before You Resign, Preserve the Evidence"),
@@ -240,14 +244,17 @@ def main():
         write_txt(os.path.join(HERE, name + ".txt"), ps)
         write_docx(os.path.join(HERE, name + ".docx"), title, ps)
         w = len(" ".join(ps).split())
-        print("%-52s %3d words, about %d to %d seconds"
-              % (name, w, w / 3.0, w / 2.2))
-
+        print("%-52s %3d words, about %d to %d seconds" % (name, w, w / 3.0, w / 2.2))
     words = len(" ".join(clean).split())
-    print("main script: %d paragraphs, %d markers, %d words"
-          % (len(clean), len(marked) - len(clean), words))
+    markers = [p for p in marked if re.fullmatch(r"\[SLIDE:.*\]", p)]
+    print("main script: %d spoken paragraphs, %d markers, %d words"
+          % (len(clean), len(markers), words))
     print("  at 130 wpm: %.1f min | at 145 wpm: %.1f min" % (words / 130, words / 145))
-    print("  em/en dashes: %d" % (SCRIPT.count("—") + SCRIPT.count("–")))
+    spoken = "\n".join(clean)
+    print("  em/en dashes in spoken copy: %d"
+          % (spoken.count("—") + spoken.count("–")))
+    for m in markers:
+        print("   ", m)
 
 
 if __name__ == "__main__":
