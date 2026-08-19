@@ -48,6 +48,10 @@
 .fk-section { padding: 92px 0; position: relative; z-index: 1; }
 .fk-section--tight { padding: 72px 0; }
 .fk-band { background: var(--navy-deep); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+/* Let the comparison band flow straight into the Private Read section as one
+   continuous block, with no tonal break or divider between them. */
+.fk-band--open-bottom { border-bottom: none; }
+.private-band { background: var(--navy-deep); border-top: none; }
 
 /* HERO */
 .fk-hero { padding-top: 150px; padding-bottom: 84px; border-bottom: 1px solid var(--slate-dim); }
@@ -289,7 +293,7 @@
 </section>
 
 <!-- FREE VS FIELD KIT -->
-<section class="fk-section fk-band">
+<section class="fk-section fk-band fk-band--open-bottom">
   <div class="fk-wrap">
     <span class="fk-eyebrow">Free diagnostic vs. the Field Kit</span>
     <h2 class="fk-h2">The Free Check Helps You See the Pattern. The Field Kit Tests Your Position.</h2>
@@ -325,10 +329,10 @@
 </section>
 
 <!-- PRIVATE READ (quiet, higher-support option) -->
-<section class="fk-section fk-section--tight">
+<section class="fk-section fk-section--tight private-band">
   <div class="fk-wrap">
     <div class="private-card">
-      <span class="fk-eyebrow" style="margin-bottom:14px;">If you want a second set of eyes</span>
+      <span class="fk-eyebrow" style="margin-bottom:14px;">When the reading needs interpretation</span>
       <div class="private-head">
         <div class="private-title">The Private Capability Position Read</div>
         <div class="private-price">$500</div>
