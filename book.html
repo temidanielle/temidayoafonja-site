@@ -71,6 +71,13 @@
 .body-copy p, .subtitle, h2.book-title { overflow-wrap: break-word; }
 .cover { width: 100%; border-radius: 4px; box-shadow: 0 24px 60px rgba(0,0,0,0.35); line-height: 0; }
 .cover img { width: 100%; height: auto; display: block; border-radius: 4px; }
+
+/* Field Kit section: copy left, cover right (mirrors the /fieldkit hero) */
+.fieldkit-grid { display: grid; grid-template-columns: 1fr 360px; gap: 72px; align-items: center; }
+.fieldkit-grid > div { min-width: 0; }
+.fieldkit-cover-mount { border: 1px solid var(--line); border-radius: 4px; overflow: hidden;
+  line-height: 0; box-shadow: 0 24px 60px rgba(0,0,0,0.35); background: var(--navy); }
+.fieldkit-cover-mount img { width: 100%; height: auto; display: block; }
 h2.book-title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(40px, 5vw, 58px);
   font-weight: 500; line-height: 1.08; margin-bottom: 10px; color: var(--white); }
 h2.book-title--long { font-size: clamp(28px, 3.4vw, 38px); line-height: 1.18; }
@@ -152,6 +159,8 @@ h2.book-title--long { font-size: clamp(28px, 3.4vw, 38px); line-height: 1.18; }
 @media (max-width: 880px) {
   .book-grid { grid-template-columns: 1fr; gap: 40px; }
   .cover { max-width: 340px; margin: 0 auto; }
+  .fieldkit-grid { grid-template-columns: 1fr; gap: 40px; }
+  .fieldkit-cover-mount { max-width: 320px; margin: 0 auto; }
   .book-section { padding: 64px 0; }
   .book-hero { padding-top: 116px; }
 }
@@ -211,16 +220,21 @@ h2.book-title--long { font-size: clamp(28px, 3.4vw, 38px); line-height: 1.18; }
 
 <!-- THE CAPABILITY FORMATION FIELD KIT -->
 <section class="book-section" id="field-kit">
-  <div class="wrap">
-    <span class="eyebrow">Apply</span>
-    <h2 class="book-title">The Capability Formation Field Kit</h2>
-    <div class="body-copy">
-      <p>An interactive digital operating manual designed to be executed in one sitting and rerun quarterly. It calibrates your self-score and tracks your baseline. It introduces the mandatory <strong>evidence rule</strong> to break self-scoring bias, grants direct access to the custom <strong>Self-Calibration Prompt</strong> to pressure-test your lived ninety days, and delivers the <strong>Standing-Still Worksheet</strong> to calculate the real dollar cost of professional stagnation.</p>
+  <div class="wrap fieldkit-grid">
+    <div>
+      <span class="eyebrow">Apply</span>
+      <h2 class="book-title">The Capability Formation Field Kit</h2>
+      <div class="body-copy">
+        <p>An interactive digital operating manual designed to be executed in one sitting and rerun quarterly. It calibrates your self-score and tracks your baseline. It introduces the mandatory <strong>evidence rule</strong> to break self-scoring bias, grants direct access to the custom <strong>Self-Calibration Prompt</strong> to pressure-test your lived ninety days, and delivers the <strong>Standing-Still Worksheet</strong> to calculate the real dollar cost of professional stagnation.</p>
+      </div>
+      <a class="btn btn-gold" href="https://temidayoafonja.gumroad.com/l/czmqp" target="_blank" rel="noopener">Get the Field Kit &rarr;</a>
+      <p class="price-note">$150 &middot; instant digital access</p>
+      <p class="price-note" style="margin-top:8px;">The individual Capability Position Read uses Density and Optionality. Alumni Capital is a separate organizational reachability reading.</p>
+      <p class="reciprocal-link">The free guided session and the Field Kit are separate ways to work through the Capability Position Read method. Neither is a prerequisite for the other. <a href="for-professionals.html">Decide Whether to Stay or Leave Your Job, a Live Career Growth Assessment.</a></p>
     </div>
-    <a class="btn btn-gold" href="https://temidayoafonja.gumroad.com/l/czmqp" target="_blank" rel="noopener">Get the Field Kit &rarr;</a>
-    <p class="price-note">$150 &middot; instant digital access</p>
-    <p class="price-note" style="margin-top:8px;">The individual Capability Position Read uses Density and Optionality. Alumni Capital is a separate organizational reachability reading.</p>
-    <p class="reciprocal-link">The free guided session and the Field Kit are separate ways to work through the Capability Position Read method. Neither is a prerequisite for the other. <a href="for-professionals.html">Decide Whether to Stay or Leave Your Job, a Live Career Growth Assessment.</a></p>
+    <div class="fieldkit-cover-mount">
+      <img src="/fieldkit-cover.png" alt="The Capability Formation Field Kit cover: Read Your Position. Know Your Exposure.">
+    </div>
   </div>
 </section>
 

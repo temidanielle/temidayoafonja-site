@@ -77,9 +77,8 @@
 
 [[redirects]]
   from = "/fieldkit"
-  to = "https://temidayoafonja.gumroad.com/l/czmqp"
-  status = 301
-  force = true
+  to = "/fieldkit.html"
+  status = 200
 
 # dashboard.html is an internal working view. It reads only the operator's own
 # browser localStorage and contains no credentials, endpoints, or server calls,
