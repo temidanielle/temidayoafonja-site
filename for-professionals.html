@@ -57,7 +57,7 @@
 .lean-btn.large { padding: 17px 30px; font-size: 15px; }
 
 /* Hero */
-.a-hero { padding: 48px 0 20px; }
+.a-hero { padding: 48px 0 40px; }
 /* The cap is set so the headline holds one line inside the 900px measure on
    desktop. The lower bound is unchanged, so phone widths still wrap. */
 .a-hero h1 { font-size: clamp(32px, 4.6vw, 44px); line-height: 1.08; margin-bottom: 22px; }
@@ -89,6 +89,10 @@
 .path-card p { font-size: 14.5px; line-height: 1.6; }
 .path-label { font-size: 10px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; margin-bottom: 14px; }
 .path-date { font-size: 13px; font-weight: 700; margin-bottom: 12px; }
+/* Session cards: make the when line heavier and a touch larger so it stands
+   out from the description. Scoped to .session-path so the paid cards' price
+   line (which reuses .path-date) is unaffected. */
+.session-path .path-date { font-size: 15px; font-weight: 800; }
 .path-cta { align-self: flex-start; margin-top: auto; }
 .path-card > p { margin-bottom: 22px; }
 /* Secondary line under a card's button. Two classes so it outranks
@@ -181,74 +185,15 @@
 <section class="a-hero">
   <div class="lean-wrap">
     <span class="lean-eyebrow fade-up delay-1">For Experienced Professionals</span>
-    <h1 class="fade-up delay-2">Decide Whether to Stay or Leave Your Job</h1>
-    <p class="a-sub fade-up delay-2">A Live Career Growth Assessment</p>
-    <p class="a-position-line fade-up delay-3">Read the position before you make the move.</p>
-    <p class="body fade-up delay-3">A free 90-minute guided self-read to determine whether your current role is still building deeper capability, whether what you have built will travel, and what category of move your evidence supports testing. You will complete the twelve-statement Capability Position Read in a live room, compare your initial and evidence-led readings, and receive a provisional Four States placement. Q&amp;A as time allows.</p>
-  </div>
-</section>
-
-<!-- 5B WHAT IS INCLUDED -->
-<section class="a-section">
-  <div class="lean-wrap">
-    <span class="lean-eyebrow">What Is Included</span>
-    <div class="a-included">
-      <div>90-minute guided self-read</div>
-      <div>Twelve-statement Capability Position Read, completed twice</div>
-      <div>Evidence-led second reading</div>
-      <div>Provisional state or boundary reading</div>
-      <div>Seven categories of move</div>
-      <div>Live Q&amp;A as time allows</div>
-    </div>
-  </div>
-</section>
-
-<!-- 5D PRIORITY LIST FORM -->
-<section class="a-priority" id="priority-list">
-  <div class="lean-wrap wide">
-    <span class="lean-eyebrow">Join the Priority List</span>
-    <h2>What Is Your Current Role Asking You to Decide?</h2>
-    <p>Registration for the free session on September 16 is not open yet. Add your name and you will receive the registration link and session details first.</p>
-    <div class="a-priority-grid">
-      <div class="a-useful">
-        <div class="mu-label">Most useful when</div>
-        <ul>
-          <li>You are performing well but are no longer sure the role is still building you.</li>
-          <li>You are deciding whether to stay, reshape the role, move internally, or prepare to leave.</li>
-          <li>A promotion, reorganization, or role change has altered what the work is forming.</li>
-          <li>You want stronger evidence before making a high-cost career decision.</li>
-        </ul>
-      </div>
-      <div class="a-form-card">
-        <form class="a-form" id="priorityForm" onsubmit="handlePriorityList(event)">
-          <div class="a-field">
-            <label for="pFirst">First name</label>
-            <input class="a-field-input" id="pFirst" type="text" autocomplete="given-name">
-          </div>
-          <div class="a-field">
-            <label for="pLast">Last name</label>
-            <input class="a-field-input" id="pLast" type="text" autocomplete="family-name">
-          </div>
-          <div class="a-field wide">
-            <label for="pEmail">Email</label>
-            <input class="a-field-input" id="pEmail" type="email" autocomplete="email">
-          </div>
-          <div class="a-field wide">
-            <label for="pDeciding">What are you currently deciding? (optional)</label>
-            <textarea class="a-field-input" id="pDeciding"></textarea>
-          </div>
-          <button class="a-submit" type="submit">Join the Priority List</button>
-          <p class="a-consent">You will receive session updates from Temidayo Afonja. You can unsubscribe at any time.</p>
-        </form>
-      </div>
-    </div>
+    <h1 class="fade-up delay-2">Is Your Work Still Building You?</h1>
+    <p class="body fade-up delay-3">Two free sessions, a self-directed instrument, and a private interpretation service. Each is a different way into the Capability Formation method. Start where the question is sharpest.</p>
   </div>
 </section>
 
 <!-- 5C YOUR PATH. Two sessions, side by side on desktop and stacked on phones
      with September 2 first. Both are time-bound: to retire a card, delete its
      <article> and the matching .path-* CSS stays in use by the other. -->
-<section class="a-section path-section">
+<section class="a-section path-section session-path">
   <div class="lean-wrap">
     <span class="lean-eyebrow">Your Path</span>
     <div class="path-grid">
@@ -262,14 +207,25 @@
       </article>
 
       <article class="path-card primary">
-        <div class="path-label">Free Guided Session</div>
-        <h3>Decide Whether to Stay or Leave Your Job</h3>
-        <div class="path-date">Wednesday, September 16, 2026 &middot; 6:00 to 7:30 PM CT</div>
-        <p>The full twelve-statement Capability Position Read with live evidence calibration and a provisional Four States placement.</p>
-        <a class="lean-btn light path-cta" href="#priority-list">Get notified when registration opens</a>
+        <div class="path-label">Free Lightning Lesson</div>
+        <h3>Stay or Leave? A Live Career Growth Assessment</h3>
+        <div class="path-date">Wednesday, September 16, 2026 &middot; 6:00 to 7:00 PM CT</div>
+        <p>See whether your role is still building your capability, identify what would travel with you, and decide your next move.</p>
+        <a class="lean-btn light path-cta" href="https://maven.com/p/8b3c40/stay-or-leave-your-job-live-career-growth-assessment" target="_blank" rel="noopener">Register Free &rarr;</a>
       </article>
 
     </div>
+  </div>
+</section>
+
+<!-- 5D REGISTER. A second conversion point after the Your Path cards, for
+     visitors who scrolled past the September 16 card. -->
+<section class="a-priority" id="priority-list">
+  <div class="lean-wrap">
+    <span class="lean-eyebrow">Register</span>
+    <h2>Register for the Free Session</h2>
+    <p>September 16, 2026 &middot; 6:00 to 7:00 PM CT &middot; 60 minutes &middot; Free</p>
+    <a class="lean-btn primary large" href="https://maven.com/p/8b3c40/stay-or-leave-your-job-live-career-growth-assessment" target="_blank" rel="noopener">Register Free &rarr;</a>
   </div>
 </section>
 
@@ -282,7 +238,7 @@
     <div class="path-grid">
 
       <article class="path-card secondary">
-        <div class="path-label">Self-guided</div>
+        <div class="path-label">Field Kit</div>
         <h3>Capability Formation Field Kit</h3>
         <div class="path-date">$150</div>
         <p>The complete private system for reading your capability position on your own. Collect your own evidence, calibrate without a room, and rerun the process as your situation changes. You keep the full instrument and use it again.</p>
@@ -348,48 +304,6 @@
   </div>
   <div class="footer-copy">&copy; 2026 The Density Group LLC &middot; Capability Formation &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></div>
 </footer>
-
-<script>
-function handlePriorityList(e) {
-  e.preventDefault();
-  var first = document.getElementById('pFirst').value.trim();
-  var last  = document.getElementById('pLast').value.trim();
-  var email = document.getElementById('pEmail').value.trim();
-  var deciding = document.getElementById('pDeciding').value.trim();
-  if (!email || !first || !last) { alert('Please enter your first name, last name, and email.'); return; }
-  var btn = document.querySelector('#priorityForm .a-submit');
-  btn.textContent = 'Joining...';
-  btn.disabled = true;
-  fetch('https://formspree.io/f/xyegkbaq', {
-    method: 'POST',
-    headers: {'Content-Type':'application/json','Accept':'application/json'},
-    body: JSON.stringify({
-      name: first + ' ' + last,
-      first_name: first,
-      last_name: last,
-      email: email,
-      deciding: deciding,
-      tag: 'paid_workshop_interest',
-      source: 'for-professionals-priority-list'
-    })
-  })
-  .then(function(res) {
-    if (res.ok) {
-      if (window.plausible) plausible('Priority List Joined', {props:{source:'for-professionals'}});
-      btn.textContent = 'Joined ✓';
-      document.querySelectorAll('.a-field-input').forEach(function(i){ i.value = ''; });
-      setTimeout(function(){ btn.textContent = 'Join the Priority List'; btn.disabled = false; }, 3000);
-    } else {
-      btn.textContent = 'Error, try again';
-      btn.disabled = false;
-    }
-  })
-  .catch(function() {
-    btn.textContent = 'Error, try again';
-    btn.disabled = false;
-  });
-}
-</script>
 
 <script defer src="/nav.js"></script>
 </body>
