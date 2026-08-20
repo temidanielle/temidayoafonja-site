@@ -77,9 +77,8 @@
 
 [[redirects]]
   from = "/fieldkit"
-  to = "https://temidayoafonja.gumroad.com/l/czmqp"
-  status = 301
-  force = true
+  to = "/fieldkit.html"
+  status = 200
 
 # The Career Decision Evidence Check. /career-decisions is the permanent URL and
 # is the only form that should ever accumulate authority, so the .html form is
