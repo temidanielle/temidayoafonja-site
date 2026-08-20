@@ -21,10 +21,14 @@ data is submitted on a page navigation.
 | 7 | `diagnostic.html` | Paper fast-path capture | `xjgapael` | **Separate checkbox** | **Separate checkbox** | Yes |
 | 8 | `organizational-diagnostic.html` | Scan results capture | `mjgndvkp` | Not collected | Not collected | Yes |
 | 9 | `ai-capability-readiness.html` | AI readiness capture | `xjgapael` | Not collected | Not collected | Yes |
+| 10 | `career-decisions.html` | Career Decision Evidence Check | **No Formspree.** `/.netlify/functions/career-decisions-subscribe` | **Two separate boxes, both unchecked. Delivery required, guidance optional** | Not collected | Yes, in the consent block |
 
 Four endpoints are now separated. `xjgapael` still carries four submission types
 (book, two diagnostic captures, AI readiness), so any autoresponder attached to it fires for
 all four.
+
+Form 10 is the first form on the site that does not post to Formspree at all. It is also the
+first to record a consent timestamp and a policy version.
 
 ---
 
@@ -76,7 +80,12 @@ so this one receives less traffic than before.
 - **Consent** — None collected. **Flagged:** joining a priority list is closer to a marketing
   signup than an inbound inquiry, and the payload carries a marketing tag. Counsel should
   advise whether an explicit opt-in is required
-- **Privacy link** — Yes
+- **Privacy link** — **Correction, August 17 2026. No.** This row previously read "Yes". Read
+  against the markup, the consent paragraph at `for-professionals.html:242` carries no link of
+  any kind, and the only privacy link on the page is the one in the shared footer. The error
+  is recorded rather than silently edited because the original claim was carried into the
+  privacy work. Nothing on `for-professionals.html` was changed to fix this: the page is out of
+  scope for the change that found it, and the finding is left open for the operator
 
 ---
 
@@ -155,6 +164,131 @@ than wired up, because the operative consent is the one on the screen the visito
   `/.netlify/functions/ai-readiness-narrative`, which calls the Anthropic API
 - **Consent** — None collected
 - **Privacy link** — Yes
+
+---
+
+## 10. Career Decision Evidence Check
+
+- **Page and location** — `career-decisions.html`, section `#evidence-check`. Reached at the
+  permanent URL `/career-decisions`
+- **Public name** — the Career Decision Evidence Check. `/career-decisions` is the URL only, and
+  is never presented as a product, a course or a paid offer
+- **Fields** — First name, Email, "What are you currently deciding?" (optional), **two** consent
+  checkboxes, both unchecked by default, plus a hidden honeypot (`decision_reference`)
+- **Required** — First name, a valid email, and the **delivery** consent box. The guidance box is
+  never required and is never validated: leaving it unticked is a complete, valid submission.
+  Validated inline in the page and again on the server
+- **Endpoint** — `/.netlify/functions/career-decisions-subscribe`. **There is no Formspree write
+  and no second destination of any kind**
+- **Payload** — `first_name`, `email`, `current_decision`, `decision_reference` (honeypot), the
+  two consent records (`delivery_consent`, `delivery_consent_timestamp`, `delivery_policy_version`,
+  `guidance_consent`, `guidance_consent_timestamp`, `guidance_policy_version`), and an
+  `attribution` object of two touches, `first` and `current`, each carrying `utm_source`,
+  `utm_medium`, `utm_campaign`, `utm_content`, `utm_term`, `source`, `video_slug`, `landing_page`,
+  `referrer` and `seen_at`
+- **Storage and downstream systems** — two, in a fixed order:
+  1. **Kit (ConvertKit)**, the authoritative system. Enrols the subscriber in the sequence named
+     by `KIT_SEQ_CAREER_DECISIONS`, which is what delivers the requested resource. Tags with
+     `KIT_TAG_CAREER_DECISIONS` always, `KIT_TAG_CAREER_DECISIONS_GUIDANCE` **only** on explicit
+     guidance consent, and `KIT_TAG_YOUTUBE` only when the visitor genuinely arrived with a
+     youtube source. Kit owns deduplication (it upserts on the email address), delivery, and the
+     unsubscribe link
+  2. **Netlify Blobs**, store `career-decisions-leads`, readable through the token-gated
+     `/.netlify/functions/career-decisions-export` (see the note below), written **only after
+     Kit confirms**, so
+     the store can never hold a lead that is not also a subscriber. Best effort: a storage
+     failure is logged and reported in the response as `durable_record: false`, and does not
+     turn a real subscription into an error the visitor sees
+- **Consent** — **Two purposes, two choices, recorded separately.** This is the construction the
+  rest of the site should move to.
+  - *Delivery* ("Send me the Career Decision Evidence Check by email.") is required and gates
+    everything. Anything other than a literal `true` returns 400: no Kit call, no record, no
+    delivery. It authorises the requested resource and the messages needed to deliver it, and
+    nothing else.
+  - *Guidance* ("Also send me occasional Capability Formation guidance ... I can unsubscribe at
+    any time.") is optional, starts unchecked, and is the only thing that enrols anyone in ongoing
+    marketing. It is never inferred: a missing field, a string, a `1` or any other truthy value is
+    treated as absent, so a sloppy client cannot enrol someone by accident.
+  - Each consent carries **its own timestamp and its own policy version**, in Kit and in the
+    durable record. The version recorded is `2026-08-18`, which is the "Last updated" date on
+    `privacy.html`. **The two must always move together in the same commit.** A consent record
+    stamped with a policy version older than the wording the person actually read is not evidence
+    of anything, which is why the version was raised from `2026-08-12` when the policy was revised
+    to distinguish delivery of a requested resource from ongoing guidance. Guidance stamps are written only when guidance was actually given, so an empty
+    stamp is unambiguous evidence that consent was withheld rather than that it was lost. The
+    server stamps its own receipt time independently of the client's clock.
+- **Broadcast audience** — `KIT_TAG_CAREER_DECISIONS_GUIDANCE`, never `KIT_TAG_CAREER_DECISIONS`.
+  The first tag means "consented to ongoing guidance". The second only means "asked for the
+  evidence check" and must never be used as the audience for a broadcast. If a guidance nurture
+  sequence is wanted, build it in Kit as an automation triggered by the guidance tag being added.
+- **Attribution** — Two touches. `first` is the campaign visit that introduced the person to the
+  page and is never overwritten. `current` is the most recent explicit campaign visit in the same
+  session. A bare return to `/career-decisions` with no parameters is not a new campaign visit and
+  changes nothing. The youtube tag is applied when either touch carries an exact `source` or
+  `utm_source` of `youtube`; a campaign name that merely contains the word, or a youtube referrer,
+  tags nobody
+- **Offer retirement** — the single next step shown after submission retires itself at
+  `2026-09-02T18:45:00-05:00`, the end of the session in Central time, and does so **while the
+  page is open**. A visitor who loads the page before the cutoff and leaves the tab sitting there
+  sees the Field Kit fallback take over at the cutoff without reloading. One timer is armed for
+  exactly the remaining milliseconds; there is no polling, and the fallback arms nothing at all
+  because it has no expiry
+- **Rate limiting** — 10 requests per rolling hour per caller, keyed by a **salted SHA-256 of the
+  IP address**, never the address. Same construction as `diagnose.js`. Fails open on a storage
+  error and logs loudly when it does
+- **Privacy link** — Yes, inside the consent block itself, not only in the footer
+- **Double opt in** — **Unverified, and it cannot be verified from this repository.** Whether Kit
+  sends a confirmation email is an account level setting on the sequence. It must be checked in
+  the Kit account and recorded here
+
+**What this form fixes, relative to findings 1 and 5 below.** It is the first form on the site to
+collect an explicit opt-in *and* to record when it was given and against which version of the
+policy. It is the model the remaining seven consent-free forms should follow.
+
+**Reading the store back.** `/.netlify/functions/career-decisions-export` returns the store as
+CSV, or as JSON with `&format=json`. It is gated on the same `RESEARCH_EXPORT_TOKEN` as the three
+older exports, and it is **read only**: it answers `GET` alone, and it refuses the `&delete=` the
+other three accept, with a 400 rather than by ignoring it. It also accepts the token as
+`Authorization: Bearer`, compares it in constant time, and sets `Cache-Control: no-store`.
+
+A fifth difference was added on 2026-08-20, after the first live run of the endpoint returned a
+bare `export_failed` on a Deploy Preview with a correct token and there was no way to tell from
+the response which of four unrelated conditions had occurred. The three older exports answer every
+storage fault with that same bare string, and have never hit it only because their stores have held
+records since 2026-08-13. This endpoint now names the fault class instead:
+
+| Response | Meaning |
+| --- | --- |
+| `200`, `store_exists: false`, `count: 0` | The store has never been written to, so it does not exist yet. An empty export, not an error. This is the expected reading after a submission whose `durable_record` came back `false`. |
+| `500`, `reason: blobs_not_configured` | `BLOBS_SITE_ID` and `BLOBS_TOKEN` are not both present in this deploy context. A configuration fault, not a code fault. |
+| `500`, `reason: blobs_env_missing` | The two variables are present but Blobs still refused to initialise. |
+| `500`, `reason: blobs_api_<status>` | The Blobs API answered with that status. `401` or `403` means the token is wrong or lacks access to the site. |
+| `500`, `reason: blobs_error` | Anything else. Read the function log. |
+
+A refusal at the gate is classified the same way, added the same day for the same reason. `401`
+with `reason: no_token_supplied` means no token reached the request at all, `401` with
+`reason: token_mismatch` means one did and it did not match, and `503` with
+`reason: server_token_not_configured` means `RESEARCH_EXPORT_TOKEN` is not set in that deploy
+context, which is a configuration gap an operator cannot otherwise see. A refusal also reports
+`token_source`, either `query` or `bearer`, because the bearer header takes precedence and a header
+attached by a client, proxy or browser extension will otherwise silently override a token typed
+into the address bar. **No refusal returns any part of the token or its length**, and a test asserts
+that, so nothing here helps anyone guess it.
+
+Both token forms are trimmed of surrounding whitespace, since a value copied out of a settings
+screen commonly arrives with a trailing space or newline. Whitespace *inside* the value is still a
+mismatch and is not repaired, which matters because a `+` in a query string decodes to a space; a
+token containing one must be sent as `Authorization: Bearer` rather than in the query.
+
+The failure body carries the fault code, the store name and a boolean saying whether the two Blobs
+variables are present. It never carries the token, an email address or any record content, and it
+is only reachable by a caller who has already presented the token.
+
+These five differences are confined to that file; the three older exports are unchanged.
+
+**What it deliberately does not do.** It does not touch the existing `xyegkbaq` priority-list
+records. Those were collected with no opt-in, so moving them into Kit is a consent question and
+not a technical one. Nothing in this change migrates them.
 
 ---
 

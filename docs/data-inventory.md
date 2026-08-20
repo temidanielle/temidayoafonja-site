@@ -37,9 +37,11 @@ flow 10 below. The legal brief is corrected in the same pass as this document.
 | 7 | `diagnostic.html` | Paper fast path | Formspree `xjgapael` |
 | 8 | `organizational-diagnostic.html` | Scan results capture | Formspree `mjgndvkp` |
 | 9 | `ai-capability-readiness.html` | AI readiness capture | Formspree `xjgapael` |
+| 10 | `career-decisions.html` | Career Decision Evidence Check | `/.netlify/functions/career-decisions-subscribe` |
 
-All nine post JSON by `fetch`. None uses a native form POST, so nothing is submitted on a page
-navigation.
+All ten post JSON by `fetch`. None uses a native form POST, so nothing is submitted on a page
+navigation. Form 10, added August 17 2026, is the only one that does not post to Formspree: it
+posts to its own Netlify function, which is the single write path for that page.
 
 ### Categories collected
 
@@ -58,13 +60,33 @@ navigation.
 | Timestamps | Server captures | UTC and America/Chicago |
 | Submission identifier | `diagnostic.html` | Client-generated UUID, used for server-side deduplication |
 | **IP address** | **`diagnose` function** | **See flow 10. First-party durable storage** |
+| Two separate consents | `career-decisions.html` only | Delivery of the requested resource, and ongoing guidance. Each with its own client stamp, its own independent server stamp, and its own policy version. Guidance stamps are written only when guidance was given |
+| Campaign attribution, two touches | `career-decisions.html` only | `first` and `current`, each carrying `utm_source`, `utm_medium`, `utm_campaign`, `utm_content`, `utm_term`, `source`, `video_slug`, `landing_page`, `referrer`, `seen_at`. Recorded only when the visitor actually arrives with them, never inferred |
 
 ---
 
 ## 3. Client-side storage
 
 No cookies are set by first-party code. `document.cookie` does not appear anywhere in the
-repository. No `sessionStorage` use.
+repository.
+
+`sessionStorage`, one use, added August 17 2026:
+
+| Key | Written by | Contents | Expiry |
+|---|---|---|---|
+| `cd_attribution` | `career-decisions.html` | Two touches, `first` and `current`, each holding the campaign values the visitor arrived with: `utm_*`, `source`, video slug, landing page, referrer, and the time of that visit. No name, no email, no free text | Discarded by the browser when the tab closes. Never sent anywhere except with the visitor's own submission |
+
+It exists so that a visitor who arrives from a video and then moves around the page does not lose
+the attribution before they submit.
+
+**Two touches, not one.** `first` is the campaign visit that introduced the person to the page and
+is never overwritten. `current` is the most recent explicit campaign visit in the same session. A
+viewer can find the page from one video, leave it open, return later from a different video and
+only then subscribe: keeping only the first attributes them to a video they had moved on from, and
+keeping only the last erases the video that actually found them. Both are kept.
+
+A bare return to `/career-decisions` with no parameters is not an explicit campaign visit and
+changes neither touch. Nothing is written on a page the visitor did not actually land on.
 
 `localStorage`, two uses:
 
@@ -120,6 +142,13 @@ Four stores.
 | `org-diagnostic-leads` | `org-diagnostic-capture.js` | Scan completion | Lead and result fields | **None enforced. Indefinite** |
 | `ai-readiness-leads` | `ai-readiness-capture.js` | AI readiness completion | Lead and result fields | **None enforced. Indefinite** |
 | `diagnose-rate` | `diagnose.js` | **Salted SHA-256 of the IP**, not the address | Request count and window start | Still unbounded, but no longer personal data. Purge on the follow-up list |
+| `career-decisions-leads` | `career-decisions-subscribe.js`, read back by `career-decisions-export.js` | Confirmed subscription | First name, email, optional decision text, **both** consent booleans with their own client and server timestamps and policy versions, both attribution touches, whether the youtube tag was applied, Kit subscriber id | Until the subscriber unsubscribes or asks for deletion. Stated in the policy |
+| `career-decisions-rate` | `career-decisions-subscribe.js` | **Salted SHA-256 of the IP**, not the address | Request count and window start | Same construction and same open purge question as `diagnose-rate` |
+
+The two `career-decisions` stores are subject to the same correction as the four above: without
+`BLOBS_SITE_ID` and `BLOBS_TOKEN` set in Netlify, neither is written and the rate limit is off.
+The function logs both conditions explicitly rather than failing silently, and it reports
+`durable_record: false` in its response, so the absence is visible rather than assumed.
 
 **Records where research consent is false are still written** to `audit-research`, flagged so
 they can be excluded from any aggregate. That is a defensible auditability design, but it is not
@@ -135,6 +164,7 @@ disclosed anywhere and counsel should confirm it is the intended construction.
 | **Netlify** | All traffic | All requests, plus durable storage above | Hosting, functions, storage |
 | **Anthropic** | Scan and AI readiness completion | Item-level answers plus organizational context | Generates the narrative read |
 | **Kit (ConvertKit)** | Diagnostic completion **with marketing consent** | Email, name, organization, quadrant, scores, result line, tags | Automated email sequence |
+| **Kit (ConvertKit)** | Career Decision Evidence Check **with explicit delivery consent** | First name, email, optional decision text, both consent records, both attribution touches, tags | Delivers the evidence check, and owns deduplication and unsubscribe. Ongoing guidance is a separate tag applied only on the second, optional consent, and is the only tag a broadcast may target |
 | **Plausible** | Every page load | Aggregate analytics only | Cookieless, no personal data |
 | ~~Google Fonts~~ | **Removed August 12 2026.** Fonts are now self-hosted from `/fonts`, so no visitor IP reaches Google | | |
 | **Gumroad** | `/fieldkit` redirect | Handled entirely on Gumroad | Field Kit purchase |
@@ -202,7 +232,10 @@ A single individual's data can sit in up to five places:
 5. `diagnose-rate`, keyed by IP, if they used the Scan
 
 Deletion is technically feasible. Blob keys are addressable and the export endpoints accept
-`&delete=THE_KEY`. There is no automated process; each request would be handled manually across
+`&delete=THE_KEY`, **with one exception**: `career-decisions-export.js`, added August 2026, is
+read only and refuses that parameter. Deleting a `career-decisions-leads` record for a rights
+request therefore has to be done deliberately rather than through the reporting endpoint, which
+is the intended construction. There is no automated process; each request would be handled manually across
 at least three systems.
 
 **The IP store is the hardest.** It is keyed by IP with no link to any identity, so responding to
