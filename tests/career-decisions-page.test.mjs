@@ -120,7 +120,9 @@ test("the canonical route serves the page and points at itself", async (t) => {
   assert.equal(await page.locator("main#main").count(), 1);
   assert.equal(await page.locator("h1").count(), 1);
   assert.equal(await page.locator("a.skip-link").count(), 1);
-  assert.equal(await page.locator("nav .nav-links li").count(), 8);
+  // Seven, matching every other page since pull request #89 moved Speaking out
+  // of the primary navigation and into the footer.
+  assert.equal(await page.locator("nav .nav-links li").count(), 7);
   assert.equal(await page.locator("footer").count(), 1);
 });
 
