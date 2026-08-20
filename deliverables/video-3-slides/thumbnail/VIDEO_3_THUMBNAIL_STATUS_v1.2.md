@@ -41,11 +41,34 @@ Neither is a studio source. The full-resolution studio portrait was used instead
 - No substitute photograph was used. The wine-outfit portrait was not used.
 - No files outside `deliverables/video-3-slides/thumbnail/` were changed.
 
-## Recommendation
+## Selection — approved
 
-Upload **Final A**: `VIDEO_3_THUMBNAIL_FINAL_A_UPLOAD_1280x720.jpg`.
+**Final A is the selected upload version for Video 3.** Approved by Temidayo on
+2026-08-20. No further redesign. Title words, portrait and colour system are
+locked as built.
 
-Final B is built and ready if you would rather test the louder navy treatment.
+Upload this file:
+
+    01-UPLOAD-THESE/FINAL-A-RECOMMENDED-1280x720.jpg
+    (repo name: VIDEO_3_THUMBNAIL_FINAL_A_UPLOAD_1280x720.jpg)
+
+| Check | Result |
+|---|---|
+| File size | 200,945 bytes, 196.2 KB — 9.6 percent of the 2 MB ceiling |
+| Under 2 MB | Yes |
+| Dimensions | 1280 x 720 |
+| Aspect ratio | Exactly 16:9 |
+| Format | JPEG, quality 95, progressive, 4:4:4 chroma |
+
+**Final B stays archived as the alternate**, kept intact for future A/B testing:
+`VIDEO_3_THUMBNAIL_FINAL_B_UPLOAD_1280x720.jpg`, 204,663 bytes, also 1280 x 720
+and also under the limit. Its master, previews and placement simulations remain
+in place so it can be swapped in without a rebuild.
+
+The manifest and rationale ship with the package and are not to be separated from
+it: `VIDEO_3_THUMBNAIL_MANIFEST_v1.2.md` carries the source-file provenance and
+the resampling arithmetic, `VIDEO_3_THUMBNAIL_RATIONALE_v1.2.md` carries the
+visual hypothesis behind the two layouts.
 
 ## Still open, and not solved here
 

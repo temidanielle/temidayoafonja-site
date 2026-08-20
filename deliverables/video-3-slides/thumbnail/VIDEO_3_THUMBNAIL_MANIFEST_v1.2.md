@@ -36,11 +36,16 @@ sampled at `#4F0408` and does not appear anywhere in this file.
 ### Upload files
 | File | Size | Purpose |
 |---|---|---|
-| `VIDEO_3_THUMBNAIL_FINAL_A_UPLOAD_1280x720.jpg` | 196 KB | **Upload this one for Final A** |
-| `VIDEO_3_THUMBNAIL_FINAL_B_UPLOAD_1280x720.jpg` | 200 KB | Upload this one for Final B |
+| `VIDEO_3_THUMBNAIL_FINAL_A_UPLOAD_1280x720.jpg` | 196 KB | **APPROVED — this is the selected upload for Video 3** |
+| `VIDEO_3_THUMBNAIL_FINAL_B_UPLOAD_1280x720.jpg` | 200 KB | Archived alternate, retained for future A/B testing |
 
 Both are 1280 x 720, JPG quality 95, progressive, 4:4:4 chroma, and well under
-YouTube's 2 MB ceiling.
+YouTube's 2 MB ceiling: Final A is 200,945 bytes and Final B is 204,663 bytes,
+about 9.6 and 9.8 percent of the limit.
+
+This manifest and `VIDEO_3_THUMBNAIL_RATIONALE_v1.2.md` travel with the package.
+Keep them alongside the image files so the provenance of the photograph and the
+reasoning behind the layout stay attached to the artwork.
 
 ### Legibility previews
 `preview-a-640px.png`, `preview-a-360px.png`, `preview-a-200px.png`
