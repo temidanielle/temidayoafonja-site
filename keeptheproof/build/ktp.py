@@ -208,11 +208,102 @@ class Field(Flowable):
         pass
 
 def field_row(label, name, S, width=CONTENT_W, height=20, hint=None, multiline=False, keep=True):
-    flow = [_para(label, S["fieldlabel"])]
+    flow = []
+    if label: flow.append(_para(label, S["fieldlabel"]))
     if hint: flow.append(_para(hint, S["fieldhint"]))
     flow.append(Spacer(1, 2))
     flow.append(Field(name, width, height=height, multiline=multiline))
     return KeepTogether(flow) if keep else flow
+
+def two_up_fields(left, right, S, gap=16):
+    """Place two field_row specs side by side as separate AcroForm fields.
+    left/right: dict(label, name, height, hint, multiline). Short metadata may
+    share a row; this never merges two prompts into one field."""
+    w = (CONTENT_W - gap) / 2
+    lft = field_row(left["label"], left["name"], S, width=w, height=left.get("height", 22),
+                    hint=left.get("hint"), multiline=left.get("multiline", False), keep=False)
+    rgt = field_row(right["label"], right["name"], S, width=w, height=right.get("height", 22),
+                    hint=right.get("hint"), multiline=right.get("multiline", False), keep=False)
+    t = Table([[lft, rgt]], colWidths=[w + gap/2, w + gap/2])
+    t.setStyle(TableStyle([("LEFTPADDING",(0,0),(-1,-1),0),("RIGHTPADDING",(0,0),(0,0),gap),
+        ("RIGHTPADDING",(1,0),(1,0),0),("TOPPADDING",(0,0),(-1,-1),0),
+        ("BOTTOMPADDING",(0,0),(-1,-1),0),("VALIGN",(0,0),(-1,-1),"TOP")]))
+    return t
+
+# ---- canonical reusable forms (identical wording/order/logic in both PDFs) --
+# The Quick Capture (five prompts) and the two-page Full Career Evidence Entry
+# (twenty taught fields) are defined once so the handbook form and the standalone
+# ledger form never drift. The caller supplies its own heading chrome and the
+# field-name prefix; suffixes below stay constant so the taught order is fixed.
+
+def quick_capture_fields(S, prefix):
+    """The five Quick Capture prompts, one per page. First three generous
+    multiline; the last two at least two lines. Every field is true multiline."""
+    P = prefix
+    return [
+        field_row("What happened?", f"{P}_what", S, height=56, multiline=True,
+                  hint="The event or piece of work."),
+        Spacer(1, 8),
+        field_row("What was my specific contribution or judgment?", f"{P}_contrib", S,
+                  height=56, multiline=True, hint="Your part, not the team&#8217;s."),
+        Spacer(1, 8),
+        field_row("What changed, improved, became possible, or was prevented?", f"{P}_change", S,
+                  height=56, multiline=True, hint="The consequence."),
+        Spacer(1, 8),
+        field_row("Verifier role or permitted public reference", f"{P}_verify", S,
+                  height=32, multiline=True,
+                  hint="Use a role or public source. Do not store a colleague&#8217;s personal details."),
+        Spacer(1, 8),
+        field_row("Confidential detail to keep out", f"{P}_out", S, height=32, multiline=True,
+                  hint="Name it, so you remember to leave it out."),
+    ]
+
+def full_entry_pages(S, prefix):
+    """Return (page_one, page_two) flowable lists for the twenty-field Full
+    Career Evidence Entry. Narrative fields are full-width multiline; only short
+    metadata shares a row. None of the forbidden combinations are merged."""
+    P = prefix
+    def fr(label, suf, height, multiline=False, hint=None):
+        return field_row(label, f"{P}_{suf}", S, height=height, multiline=multiline, hint=hint)
+    def tu(la, na, ha, ma, lb, nb, hb, mb):
+        return two_up_fields({"label":la,"name":f"{P}_{na}","height":ha,"multiline":ma},
+                             {"label":lb,"name":f"{P}_{nb}","height":hb,"multiline":mb}, S)
+    page_one = [
+        tu("Date or period","date",22,False, "Project or work event","proj",22,False),
+        Spacer(1,7), fr("Situation or need","sit",46,True),
+        Spacer(1,7), fr("Why it mattered","why",42,True),
+        Spacer(1,7), tu("Formal responsibility","formal",34,True, "Actual ownership","actual",34,True),
+        Spacer(1,7), fr("Decision or judgment exercised","judge",46,True),
+        Spacer(1,7), fr("Actions taken","actions",46,True),
+        Spacer(1,7), tu("People and functions involved","people",34,True, "Scope and constraint","scope",34,True),
+    ]
+    page_two = [
+        fr("Outcome or observable change","outcome",46,True),
+        Spacer(1,7), fr("Problem prevented","prevented",42,True),
+        Spacer(1,7), tu("Quantitative evidence, accurate and permitted","quant",34,True,
+                        "Qualitative evidence or validation","qual",34,True),
+        Spacer(1,7), fr("Team result vs. your honest part","team",44,True),
+        Spacer(1,7), fr("Internal wording, before translation","internal",40,True),
+        Spacer(1,7), fr("Portable-language version","portable",40,True),
+        Spacer(1,7), fr("Permitted evidence reference","evref",30,True,
+                        hint="Name the permitted source or location. Do not paste the artifact or confidential content here."),
+        Spacer(1,7), tu("Confidentiality and permission check","conf",28,True, "Retrieval tags","tags",24,False),
+    ]
+    return page_one, page_two
+
+# ---- PDF outline / bookmarks ---------------------------------------------
+class Bookmark(Flowable):
+    """Zero-height marker that registers a PDF outline entry at its page.
+    Placed in the story just before the section it names."""
+    _n = 0
+    def __init__(self, title, level=0):
+        super().__init__(); self.title=title; self.level=level
+        Bookmark._n += 1; self.key = f"bm{Bookmark._n}"
+    def wrap(self, aw, ah): return (0, 0)
+    def drawOn(self, canvas, x, y, _sW=0):
+        canvas.bookmarkPage(self.key)
+        canvas.addOutlineEntry(self.title, self.key, self.level, 0)
+    def draw(self): pass
 
 # ---- document template ---------------------------------------------------
 class KTPDoc(BaseDocTemplate):

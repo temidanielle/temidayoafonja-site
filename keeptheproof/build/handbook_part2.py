@@ -5,7 +5,8 @@ from reportlab.platypus import (Paragraph, Spacer, NextPageTemplate, PageBreak,
     Table, TableStyle, KeepTogether)
 from reportlab.lib.styles import ParagraphStyle
 from ktp import (NAVY, CREAM, PAPER, GOLD, RUST, BLUE, INK, MUTE, HAIR, CREAMSOFT,
-    HexColor, RustTab, HRule, styles as _st)
+    HexColor, RustTab, HRule, styles as _st,
+    quick_capture_fields, full_entry_pages, two_up_fields, Bookmark)
 
 def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
           section_divider, workflow_strip, field_row, Field, CONTENT_W):
@@ -36,14 +37,14 @@ def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
     # =================================================================
     # PART THREE DIVIDER
     # =================================================================
-    st += [NT("divider"), PB()]
+    st += [NT("divider"), PB(), Bookmark("Part Three: The tools", 0)]
     st += section_divider("Three", "The tools",
         "Capture, translate, and build the record",
         "Two levels of capture, a translation system, and the Proof Line. Every tool arrives with a finished example, not an empty box.")
     st += [NT("content"), PB()]
 
     # 14. TWO-MINUTE QUICK CAPTURE
-    st += [SP(6), EY("Tool one"),
+    st += [Bookmark("The Two-Minute Quick Capture", 1), SP(6), EY("Tool one"),
         H2("The Two-Minute Quick Capture"),
         RULE(),
         P("The quick capture exists for one reason: to catch the work before it fades, in the two minutes after it happens. It is deliberately small. Five short prompts, no perfect wording required. You are not writing the final version. You are making sure the final version is still possible later."),
@@ -53,8 +54,8 @@ def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
         "<b>What happened?</b> The event or piece of work, in a line.",
         "<b>What was my specific contribution or judgment?</b> Your part, not the team&#8217;s.",
         "<b>What changed, improved, became possible, or was prevented?</b> The consequence.",
-        "<b>What permitted source or person could verify this?</b> A person or a public fact, not a file.",
-        "<b>What confidential or employer-owned information must stay out?</b> Name it, so you remember to leave it out.",
+        "<b>Verifier role or permitted public reference.</b> A role or a public source that could confirm it. Do not store a colleague&#8217;s personal details.",
+        "<b>Confidential detail to keep out.</b> Name it, so you remember to leave it out.",
     ])
     st += [SP(5),
         example_card("Completed Quick Capture  ·  Devin A., distribution center supervisor",
@@ -69,11 +70,11 @@ def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
     st += [PB()]
 
     # 15. FULL CAREER EVIDENCE LEDGER (2 pages)
-    st += [SP(6), EY("Tool two"),
+    st += [Bookmark("The Full Career Evidence Entry", 1), SP(6), EY("Tool two"),
         H2("The Full Career Evidence Entry"),
         RULE(),
         P("When a piece of work matters enough to keep properly, you expand a quick capture into a full entry. The ledger below has room for everything that makes a contribution legible later. You will not fill every field every time, and you should not try. A strong entry with six good fields beats a padded one with sixteen."),
-        H3("What the full entry holds"),
+        H3("The twenty fields, in order"),
         TBL([["Field", "What it captures"],
              ["Date or period", "When the work happened, even approximately"],
              ["Project or work event", "The initiative, responsibility, or moment"],
@@ -81,21 +82,21 @@ def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
              ["Why it mattered", "What was at stake if it went unaddressed"],
              ["Formal responsibility", "What you were assigned on paper"],
              ["Actual ownership", "What you truly drove, which is often different"],
-             ["Decision or judgment", "The call you made, and the options you weighed"],
+             ["Decision or judgment exercised", "The call you made, and the options you weighed"],
              ["Actions taken", "What you actually did"],
-             ["People and functions", "Who you worked with or influenced"],
+             ["People and functions involved", "Who you worked with or influenced, by role"],
              ["Scope and constraint", "Scale, complexity, or the limits you worked within"],
-             ["Outcome or change", "What was observably different afterward"],
+             ["Outcome or observable change", "What was observably different afterward"],
              ["Problem prevented", "The cost, delay, or risk that did not land"],
-             ["Quantitative evidence", "Numbers, only when accurate and permitted"],
-             ["Qualitative evidence", "Feedback, recognition, or credible validation"],
-             ["Team result vs. your part", "The shared outcome, and your honest share of it"],
-             ["Internal wording", "How it is said inside the company"],
-             ["Portable wording", "How you would say it to an outsider"],
-             ["Permitted evidence reference", "A pointer, never a copy of employer material"],
-             ["Confidentiality check", "Confirmed nothing restricted is being kept"],
+             ["Quantitative evidence, accurate and permitted", "Numbers, only when accurate and permitted"],
+             ["Qualitative evidence or validation", "Feedback, recognition, or credible validation"],
+             ["Team result vs. your honest part", "The shared outcome, and your honest share of it"],
+             ["Internal wording, before translation", "How it is said inside the company"],
+             ["Portable-language version", "How you would say it to an outsider"],
+             ["Permitted evidence reference", "Name the permitted source or location. Do not paste the artifact or confidential content here."],
+             ["Confidentiality and permission check", "Confirmed nothing restricted is being kept"],
              ["Retrieval tags", "Review, promotion, compensation, resume, interview, biography, transition"]],
-            [CONTENT_W*0.32, CONTENT_W*0.68], pad=3.4),
+            [CONTENT_W*0.34, CONTENT_W*0.66], pad=3.4),
     ]
     st += [PB()]
     # completed full entry example (the People/HR one, start of full sequence)
@@ -128,8 +129,8 @@ def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
         P("Anyone can list actions. Fewer people can name the decision underneath the actions: the option they chose and the ones they set aside. That choice is often the most valuable thing you did, and it leaves no trace unless you write it down. Capture the call, not only the task."),
         H3("Scope makes size legible"),
         P("A title hides scale. &#8220;Managed the rollout&#8221; could mean two people or two hundred, one region or twelve. Without inventing precision you do not have, note the scope you worked within: how many, how large, how complex, under what constraint. Scope is what lets an outsider size the work correctly."),
-        H3("Outcome is the change, not the effort"),
-        P("The weakest entries end with what you did. The strongest end with what became different because you did it. Push every entry one step past the action to the observable change, even when the change is modest. Effort is input. Outcome is evidence."),
+        H3("Push past the action to the observable change"),
+        P("The weakest entries end with what you did. The strongest end with what became different because you did it. Push every entry one step past the action to the observable change, even when the change is modest. When recording the work, include the effort where it adds useful context and describe the outcome or observable change."),
     ]
     st += [PB()]
 
@@ -188,7 +189,7 @@ def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
     # =================================================================
     # 20. TRANSLATION SYSTEM
     # =================================================================
-    st += [SP(6), EY("Translate"),
+    st += [Bookmark("From internal language to portable language", 1), SP(6), EY("Translate"),
         H2("From internal language to portable language"),
         RULE(),
         P("A record only your current employer can read is a record that expires when you leave. Translation is the skill of saying the same true thing in words an outsider can follow. It is not embellishment and it is not lying. It is the difference between a private shorthand and a description that travels."),
@@ -213,7 +214,7 @@ def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
     st += [PB()]
 
     # 21. PROOF LINE BUILDER
-    st += [SP(6), EY("Build"),
+    st += [Bookmark("The Proof Line", 1), SP(6), EY("Build"),
         H2("The Proof Line"),
         RULE(),
         P("A Proof Line is a single, plain-language sentence that carries the most useful parts of an entry in a form you can drop into a review, a resume, or a conversation. It is the portable end product of everything the record holds. You build it by combining, in whatever order reads well, up to five ingredients."),
@@ -266,7 +267,7 @@ def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
     # add Priya (finance/audit, sensitive omission) and Sam (IC judgment),
     # and the second full sequence for Theo.
     # =================================================================
-    st += [NT("divider"), PB()]
+    st += [NT("divider"), PB(), Bookmark("Part Four: Worked examples", 0)]
     st += section_divider("Four", "Worked examples",
         "The record, filled in across real work",
         "Different functions, different levels, one discipline. Two examples run the full sequence from capture to retrieval tag.")
@@ -320,14 +321,14 @@ def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
     # =================================================================
     # PART FIVE DIVIDER: routines & use
     # =================================================================
-    st += [NT("divider"), PB()]
+    st += [NT("divider"), PB(), Bookmark("Part Five: The routines and the use", 0)]
     st += section_divider("Five", "The routines and the use",
         "Keep it current, and use it when it counts",
         "An hour to set up, a few minutes a month, a review each quarter. Then the record earns its keep at the moments that decide careers.")
     st += [NT("content"), PB()]
 
     # 24. 60-MINUTE SETUP
-    st += [SP(6), EY("Start here"),
+    st += [Bookmark("The complete 60-minute setup", 1), SP(6), EY("Start here"),
         H2("The complete 60-minute setup"),
         RULE(),
         P("This is the first hour. Follow it in order and you will finish with a working system and your first real entries. It is not a promise that you can reconstruct a whole career in sixty minutes. It is a promise that you can leave the hour with the system running and something true already in it."),
@@ -442,40 +443,29 @@ def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
     st += [SP(6), EY("Fill it in"),
         H2("Reusable ledger pages"),
         RULE(),
-        P("Use the fillable pages that follow to begin now. The standalone Career Evidence Ledger, included with your purchase, repeats these forms so you can reuse them indefinitely without reprinting the handbook."),
-        SP(4),
-        Paragraph("Two-Minute Quick Capture", ParagraphStyle("lgh", fontName="CG-Semi", fontSize=15, textColor=NAVY, leading=18, spaceAfter=4)),
-        field_row("What happened?", "hb_qc_what", S, height=30, hint="The event or piece of work, in a line."),
-        SP(4), field_row("What was my specific contribution or judgment?", "hb_qc_contrib", S, height=30),
-        SP(4), field_row("What changed, improved, became possible, or was prevented?", "hb_qc_change", S, height=30),
-        SP(4), field_row("What permitted source or person could verify this?", "hb_qc_verify", S, height=24),
-        SP(4), field_row("What confidential or employer-owned information must stay out?", "hb_qc_out", S, height=24),
+        P("Use the fillable pages that follow to begin now. The standalone Career Evidence Ledger, included with your purchase, repeats these same forms so you can reuse them indefinitely without reprinting the handbook. Every response field is fillable on screen and prints cleanly if you would rather write by hand."),
+        SP(6),
+        Paragraph("Two-Minute Quick Capture", ParagraphStyle("lgh", fontName="CG-Semi", fontSize=15, textColor=NAVY, leading=18, spaceAfter=2)),
+        Paragraph("One capture per page. Print or copy this page whenever you need another.", S["fieldhint"]),
+        SP(8),
     ]
+    st += quick_capture_fields(S, "hb_qc")
     st += [PB()]
+    # Full Career Evidence Entry — two pages, twenty taught fields, identical to the ledger
+    p1, p2 = full_entry_pages(S, "hb_fe")
     st += [SP(6), EY("Fill it in"),
         H2("Full Career Evidence Entry"), RULE(),
-    ]
-    def two_up(l1,n1,l2,n2,h=22):
-        w=(CONTENT_W-16)/2
-        left=field_row(l1,n1,S,width=w,height=h,keep=False); right=field_row(l2,n2,S,width=w,height=h,keep=False)
-        t=Table([[left,right]],colWidths=[w+8,w+8])
-        t.setStyle(TableStyle([("LEFTPADDING",(0,0),(-1,-1),0),("RIGHTPADDING",(0,0),(0,0),16),
-            ("RIGHTPADDING",(1,0),(1,0),0),("TOPPADDING",(0,0),(-1,-1),0),("BOTTOMPADDING",(0,0),(-1,-1),0),("VALIGN",(0,0),(-1,-1),"TOP")]))
-        return t
-    st += [two_up("Date or period","hb_fe_date","Project or work event","hb_fe_proj"),
-        SP(6), field_row("Situation, need, or problem, and why it mattered","hb_fe_sit",S,height=30),
-        SP(6), two_up("Formal responsibility","hb_fe_formal","Actual ownership","hb_fe_actual",h=28),
-        SP(6), field_row("Decision or judgment exercised","hb_fe_judge",S,height=28),
-        SP(6), field_row("Actions, people and functions, scope and constraint","hb_fe_actions",S,height=30),
-        SP(6), field_row("Outcome or change, and any problem prevented","hb_fe_outcome",S,height=30),
-        SP(6), two_up("Quantitative evidence (accurate, permitted)","hb_fe_quant","Qualitative evidence or validation","hb_fe_qual",h=26),
-        SP(6), field_row("Portable-language version","hb_fe_portable",S,height=28),
-        SP(6), two_up("Confidentiality and permission check","hb_fe_conf","Retrieval tags","hb_fe_tags",h=22),
-    ]
+        Paragraph("Page one of two. Expand a Quick Capture into a complete entry, and fill only the fields that apply.", S["fieldhint"]), SP(8)]
+    st += p1
+    st += [PB()]
+    st += [SP(6), EY("Fill it in, continued"),
+        H2("Full Career Evidence Entry"), RULE(),
+        Paragraph("Page two of two.", S["fieldhint"]), SP(8)]
+    st += p2
     st += [PB()]
 
     # 31. OPERATING SUMMARY
-    st += [SP(6), EY("One page"),
+    st += [Bookmark("The Keep the Proof operating summary", 1), SP(6), EY("One page"),
         H2("The Keep the Proof operating summary"), RULE(),
         P("Everything in this guide, on a single page you can return to."),
         SP(2),
@@ -497,7 +487,7 @@ def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
     st += [PB()]
 
     # 32. WHERE IT ENDS (boundary + quiet Field Kit route)
-    st += [SP(6), EY("The edge of the tool"),
+    st += [Bookmark("Where Keep the Proof ends", 1), SP(6), EY("The edge of the tool"),
         H2("Where Keep the Proof ends"), RULE(),
         P("This guide has a deliberate boundary, and naming it is part of using it well. Keep the Proof organizes and translates the record of your work. It does not interpret what that record means for your position, your direction, or your next move. Those are real and important questions. They are simply not this tool&#8217;s questions."),
         H3("What this guide answers"),
@@ -517,15 +507,15 @@ def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
     ])
     st += [SP(4),
         CO("A quiet pointer, not a sales pitch",
-           "Keep the Proof organizes and translates the record. If you later want to interpret what your current work is actually building toward, a separate tool of Temidayo&#8217;s, the Capability Formation Field Kit, is designed for exactly that reading. It is a different job for a different day. This guide&#8217;s work is done when your record is honest, portable, and safe to keep.",
+           "Keep the Proof organizes and translates the record. If you later want to interpret what your current work is actually building toward, a separate tool from The Density Group, the Capability Formation Field Kit, is designed for exactly that reading. It is a different job for a different day. This guide&#8217;s work is done when your record is honest, portable, and safe to keep.",
            bg="sand", bar=GOLD),
     ]
     st += [PB()]
 
     # 33 & 34. ABOUT + CLOSING
-    st += [SP(6), EY("About the author"),
+    st += [Bookmark("About Temidayo Afonja", 0), SP(6), EY("About the author"),
         H2("About Temidayo Afonja"), RULE(),
-        P("Temidayo Afonja is the Founder and Principal of The Density Group. Across eighteen years Temidayo has worked inside the environments where organizations decide what people are worth: Big Four consulting, global life sciences, and high-growth technology, at the intersection of workforce strategy, organizational design, and how careers actually form."),
+        P("Temidayo Afonja is the Founder and Principal of The Density Group. Across eighteen years Temidayo has worked across Big Four consulting, life sciences, and technology, close to where talent decisions get made, at the intersection of workforce strategy, organizational design, and how careers actually form."),
         P("That path into this work began in IT audit and federal governance, and moved through cybersecurity workforce strategy before that field had its current name. That background is the reason the confidentiality and information-risk standard in this guide is treated with the seriousness it deserves, and the reason it is careful never to overstate what any guide can settle for you. Keep the Proof is educational, not legal advice, and it cannot interpret your specific agreements or your employer&#8217;s policies."),
         P("Keep the Proof grew out of a pattern that repeats in room after room: capable people who had done the work and could no longer prove it, reaching for details that had already gone. This guide is the discipline more of them needed."),
         SP(8), HRule(CONTENT_W, color=HAIR, thick=0.8, space=10),

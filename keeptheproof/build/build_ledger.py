@@ -11,7 +11,7 @@ from reportlab.platypus import (Paragraph, Spacer, NextPageTemplate, PageBreak,
 
 OUT = sys.argv[1] if len(sys.argv) > 1 else "ledger.pdf"
 BUILDTIME = sys.argv[2] if len(sys.argv) > 2 else "Monday, August 17, 2026 at 1:05 PM"
-VERSION = "Version 1.0.0"
+VERSION = "Version 1.0.1"
 REVLINE = f"{VERSION}  ·  Revised {BUILDTIME} CT"
 URL = "temidayoafonja.com"
 
@@ -61,18 +61,25 @@ story = []
 class Cover(Flowable):
     def __init__(self): super().__init__(); self.width=PAGE_W; self.height=PAGE_H
     def wrap(self,aw,ah): return (0,0)
+    def drawOn(self, canvas, x, y, _sW=0):
+        # Draw at absolute page coordinates. The base Flowable.drawOn translates
+        # the canvas to the frame cursor and would push the cover text off the
+        # page (the v1.0.0 blank-navy-cover defect); bypass that here.
+        self.canv = canvas
+        self.draw()
     def draw(self):
         c=self.canv
         record_motif(c, MARGIN, PAGE_H-120, w=52)
         c.setFont("DM-Bold", 11); c.setFillColor(GOLD)
-        c.drawString(MARGIN, PAGE_H-190, "T H E   R E U S A B L E   C O M P A N I O N")
-        c.setFont("CG-Semi", 62); c.setFillColor(CREAM)
-        c.drawString(MARGIN-2, PAGE_H-300, "Career")
-        c.drawString(MARGIN-2, PAGE_H-362, "Evidence Ledger")
-        c.setFillColor(RUST); c.rect(MARGIN, PAGE_H-398, 88, 5, fill=1, stroke=0)
-        c.setFont("CG", 20); c.setFillColor(HexColor("#D8D2C4"))
-        c.drawString(MARGIN, PAGE_H-444, "The fillable forms from Keep the Proof,")
-        c.drawString(MARGIN, PAGE_H-470, "gathered to reuse as often as you need.")
+        c.drawString(MARGIN, PAGE_H-186, "K E E P   T H E   P R O O F")
+        c.setFont("CG-Semi", 60); c.setFillColor(CREAM)
+        c.drawString(MARGIN-2, PAGE_H-286, "Career Evidence")
+        c.drawString(MARGIN-2, PAGE_H-348, "Ledger")
+        c.setFillColor(RUST); c.rect(MARGIN, PAGE_H-384, 88, 5, fill=1, stroke=0)
+        c.setFont("CG", 21); c.setFillColor(HexColor("#D8D2C4"))
+        c.drawString(MARGIN, PAGE_H-430, "Reusable Fillable Companion")
+        c.setFont("DM", 11); c.setFillColor(CREAMSOFT)
+        c.drawString(MARGIN, PAGE_H-458, "The fillable forms from Keep the Proof, gathered to reuse as often as you need.")
         c.setFont("DM", 11); c.setFillColor(CREAMSOFT)
         c.drawString(MARGIN, 150, "Six forms: Quick Capture, Full Entry, Translation, the")
         c.drawString(MARGIN, 133, "Monthly Sweep, the Quarterly Review, and the Evidence")
@@ -109,63 +116,59 @@ story += [PageBreak()]
 # =====================================================================
 # FORM 1 — TWO-MINUTE QUICK CAPTURE (two blocks)
 # =====================================================================
-def quick_block(tag):
-    return [formhead("Two-Minute Quick Capture", tag),
-        SP(8),
-        FR("What happened?", f"qc_what_{tag}", h=24, hint="The event or piece of work, in a line."),
-        SP(5), FR("What was my specific contribution or judgment?", f"qc_contrib_{tag}", h=24),
-        SP(5), FR("What changed, improved, became possible, or was prevented?", f"qc_change_{tag}", h=24),
-        SP(5), two_up("A person or public fact that could verify this", f"qc_verify_{tag}",
-                      "Confidential detail to keep out", f"qc_out_{tag}", h=22),
-    ]
-story += [SP(6), EY("Form one"),
-    Paragraph("Quick Capture", S["h2"]), RULE(),
-    P("For catching work before it fades. Two blank captures per page. Print or copy this page whenever you need more."),
-    SP(6)]
-story += quick_block("A")
-story += [SP(16)]
-story += quick_block("B")
+def quick_capture_page(prefix, first=False):
+    pg = [Bookmark("Quick Capture", 0)] if first else []
+    pg += [SP(6), EY("Form one"),
+        Paragraph("Quick Capture", S["h2"]), RULE(),
+        P("For catching work before it fades, in the two minutes after it happens. One capture per page, with room to write a real answer. Print or copy this page whenever you need another."),
+        SP(6), formhead("Two-Minute Quick Capture", "one work event"), SP(8)]
+    pg += quick_capture_fields(S, prefix)
+    return pg
+story += quick_capture_page("qc1", first=True)
+story += [PageBreak()]
+story += quick_capture_page("qc2")
 story += [PageBreak()]
 
 # =====================================================================
 # FORM 2 — FULL CAREER EVIDENCE ENTRY
 # =====================================================================
-story += [SP(6), EY("Form two"),
+_fe1, _fe2 = full_entry_pages(S, "le_fe")
+story += [Bookmark("Full Career Evidence Entry", 0), SP(6), EY("Form two"),
     Paragraph("Full Career Evidence Entry", S["h2"]), RULE(),
-    P("For work worth keeping in full. Expand a Quick Capture into a complete entry."),
-    SP(6), formhead("Full Career Evidence Entry", "one work event"),
-    SP(8),
-    two_up("Date or period", "fe_date", "Project or work event", "fe_proj"),
-    SP(6), FR("Situation, need, or problem, and why it mattered", "fe_sit", h=28),
-    SP(6), two_up("Formal responsibility", "fe_formal", "Actual ownership", "fe_actual", h=26),
-    SP(6), FR("Decision or judgment exercised", "fe_judge", h=26),
-    SP(6), FR("Actions, people and functions, scope and constraint", "fe_actions", h=28),
-    SP(6), FR("Outcome or change, and any problem prevented", "fe_outcome", h=28),
-    SP(6), two_up("Quantitative evidence (accurate, permitted)", "fe_quant",
-                  "Qualitative evidence or validation", "fe_qual", h=24),
-    SP(6), two_up("Confidentiality and permission check", "fe_conf", "Retrieval tags", "fe_tags"),
-]
+    P("For work worth keeping in full. Expand a Quick Capture into a complete entry across the two pages that follow, and fill only the fields that apply."),
+    SP(6), formhead("Full Career Evidence Entry", "page one of two"), SP(8)]
+story += _fe1
+story += [PageBreak()]
+story += [SP(6), EY("Form two, continued"),
+    Paragraph("Full Career Evidence Entry", S["h2"]), RULE(),
+    SP(6), formhead("Full Career Evidence Entry", "page two of two"), SP(8)]
+story += _fe2
 story += [PageBreak()]
 
 # =====================================================================
 # FORM 3 — TRANSLATION WORKSHEET + PROOF LINE
 # =====================================================================
-story += [SP(6), EY("Form three"),
+def tr_pair(i):
+    return two_up_fields({"label":"Internal wording, before translation","name":f"tr_int{i}","height":40,"multiline":True},
+                         {"label":"Portable-language version","name":f"tr_por{i}","height":40,"multiline":True}, S)
+story += [Bookmark("Translation Worksheet", 0), SP(6), EY("Form three"),
     Paragraph("Translation worksheet", S["h2"]), RULE(),
-    P("Turn internal language into portable language, then build the Proof Line. Keep any team result separate from your own part, and never invent a number."),
-    SP(6), formhead("Internal to portable", "five lines"),
-    SP(8),
-    two_up("Internal wording", "tr_int1", "Portable wording", "tr_por1"),
-    SP(6), two_up("Internal wording", "tr_int2", "Portable wording", "tr_por2"),
-    SP(6), two_up("Internal wording", "tr_int3", "Portable wording", "tr_por3"),
-    SP(6), two_up("Internal wording", "tr_int4", "Portable wording", "tr_por4"),
-    SP(6), two_up("Internal wording", "tr_int5", "Portable wording", "tr_por5"),
-    SP(14), formhead("Proof Line builder", "one portable sentence"),
-    SP(8),
-    two_up("Condition (the problem or situation)", "pl_cond", "Your part (what was yours)", "pl_part"),
-    SP(6), two_up("Scope or constraint", "pl_scope", "Outcome (changed or prevented)", "pl_out"),
-    SP(6), FR("Support (permitted evidence or validation)", "pl_support", h=22),
-    SP(6), FR("Proof Line (the finished portable sentence)", "pl_line", h=34, multiline=True,
+    P("Turn internal language into portable language. Keep any team result separate from your own part, and never invent a number."),
+    SP(6), formhead("Internal to portable", "five lines"), SP(8),
+    tr_pair(1), SP(6), tr_pair(2), SP(6), tr_pair(3), SP(6), tr_pair(4), SP(6), tr_pair(5),
+]
+story += [PageBreak()]
+story += [Bookmark("Proof Line Builder", 0), SP(6), EY("Form three, continued"),
+    Paragraph("Proof Line builder", S["h2"]), RULE(),
+    P("Build one portable sentence from the parts of an entry. Combine them in whatever order reads well. It must be accurate, and yours to say."),
+    SP(6), formhead("Proof Line builder", "one portable sentence"), SP(8),
+    two_up_fields({"label":"Condition (the problem or situation)","name":"pl_cond","height":34,"multiline":True},
+                  {"label":"Your part (what was yours)","name":"pl_part","height":34,"multiline":True}, S),
+    SP(6), two_up_fields({"label":"Scope or constraint","name":"pl_scope","height":34,"multiline":True},
+                  {"label":"Outcome (changed or prevented)","name":"pl_out","height":34,"multiline":True}, S),
+    SP(6), FR("Support (permitted evidence or validation)", "pl_support", h=30, multiline=True,
+              hint="A role or public reference, when you have one. Do not store a colleague&#8217;s personal details."),
+    SP(6), FR("Proof Line (the finished portable sentence)", "pl_line", h=46, multiline=True,
               hint="Combine the parts above, in whatever order reads well. Accurate, and yours to say."),
 ]
 story += [PageBreak()]
@@ -173,16 +176,16 @@ story += [PageBreak()]
 # =====================================================================
 # FORM 4 — MONTHLY PROOF SWEEP
 # =====================================================================
-story += [SP(6), EY("Form four"),
+story += [Bookmark("Monthly Proof Sweep", 0), SP(6), EY("Form four"),
     Paragraph("Monthly Proof Sweep", S["h2"]), RULE(),
     P("Ten to fifteen minutes, once a month. Look back over the month and add what the day-to-day buried. Short is fine; the point is that nothing worth keeping is lost."),
     SP(6), formhead("Monthly Proof Sweep", "month and year"),
     SP(8),
     two_up("Month", "ms_month", "Date completed", "ms_done"),
-    SP(6), FR("Projects, decisions, or problems I helped with this month", "ms_projects", h=30, multiline=True),
-    SP(5), FR("Anything I improved, prevented, or made possible", "ms_improved", h=28, multiline=True),
-    SP(5), FR("Quick Captures added this month (titles or count)", "ms_captures", h=22),
-    SP(5), two_up("Confidentiality check: everything here is permitted?", "ms_conf",
+    SP(6), FR("Projects, decisions, or problems I helped with this month", "ms_projects", h=46, multiline=True),
+    SP(6), FR("Anything I improved, prevented, or made possible", "ms_improved", h=44, multiline=True),
+    SP(6), FR("Quick Captures added this month (titles or count)", "ms_captures", h=28, multiline=True),
+    SP(6), two_up("Confidentiality check: everything here is permitted?", "ms_conf",
                   "Any entry to expand into a Full Entry?", "ms_expand", h=22),
 ]
 story += [PageBreak()]
@@ -190,17 +193,17 @@ story += [PageBreak()]
 # =====================================================================
 # FORM 5 — QUARTERLY PROOF REVIEW
 # =====================================================================
-story += [SP(6), EY("Form five"),
+story += [Bookmark("Quarterly Proof Review", 0), SP(6), EY("Form five"),
     Paragraph("Quarterly Proof Review", S["h2"]), RULE(),
     P("About thirty minutes, once a quarter. This is housekeeping, not a verdict. Read your entries, correct anything time has clarified, and index what you have so it stays findable."),
     SP(6), formhead("Quarterly Proof Review", "quarter and year"),
     SP(8),
     two_up("Quarter", "qr_q", "Date completed", "qr_done"),
-    SP(6), FR("Entries read and confirmed still accurate", "qr_read", h=24),
-    SP(5), FR("Corrections or missing context added", "qr_fixed", h=26, multiline=True),
-    SP(5), FR("Strongest entries this quarter, promoted to Proof Lines", "qr_strong", h=26, multiline=True),
-    SP(5), FR("Where evidence is thin, without forcing a conclusion", "qr_thin", h=24),
-    SP(5), two_up("Next review date", "qr_next", "Confidentiality re-check passed?", "qr_conf", h=22),
+    SP(6), FR("Entries read and confirmed still accurate", "qr_read", h=40, multiline=True),
+    SP(6), FR("Corrections or missing context added", "qr_fixed", h=44, multiline=True),
+    SP(6), FR("Strongest entries this quarter, promoted to Proof Lines", "qr_strong", h=44, multiline=True),
+    SP(6), FR("Where evidence is thin, without forcing a conclusion", "qr_thin", h=40, multiline=True),
+    SP(6), two_up("Next review date", "qr_next", "Confidentiality re-check passed?", "qr_conf", h=22),
 ]
 story += [PageBreak()]
 
@@ -220,7 +223,7 @@ def index_row(i):
         ("TOPPADDING",(0,0),(-1,-1),2),("BOTTOMPADDING",(0,0),(-1,-1),2),("VALIGN",(0,0),(-1,-1),"TOP")]))
     return t
 
-story += [SP(6), EY("Form six"),
+story += [Bookmark("Quarterly Evidence Index", 0), SP(6), EY("Form six"),
     Paragraph("Quarterly Evidence Index", S["h2"]), RULE(),
     P("A running list of what you have, so any entry is a search away. Update it at each quarterly review. Record only what is yours to keep; the index points to your entries, never to employer material."),
     SP(6)]
@@ -242,6 +245,6 @@ doc = KTPDoc(OUT, footer_title="Career Evidence Ledger", url=URL)
 doc.title = "Career Evidence Ledger: The reusable companion to Keep the Proof"
 doc.author = "Temidayo Afonja"
 doc.subject = "Reusable fillable forms for capturing, translating, protecting, and retrieving your career evidence."
-doc.keywords = "career evidence, ledger, work accomplishments, fillable forms, Temidayo Afonja"
+doc.keywords = "career evidence, ledger, work accomplishments, fillable forms, Temidayo Afonja, Keep the Proof v1.0.1"
 doc.build(story)
 print("wrote", OUT)

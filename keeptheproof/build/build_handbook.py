@@ -12,7 +12,7 @@ from reportlab.lib.units import inch
 
 OUT = sys.argv[1] if len(sys.argv) > 1 else "handbook.pdf"
 BUILDTIME = sys.argv[2] if len(sys.argv) > 2 else "Monday, August 17, 2026 at 1:05 PM"
-VERSION = "Version 1.0.0"
+VERSION = "Version 1.0.1"
 REVLINE = f"{VERSION}  ·  Revised {BUILDTIME} CT"
 URL = "temidayoafonja.com"
 
@@ -74,7 +74,7 @@ def workflow_strip():
 def tier_block():
     rows = [
         [Paragraph("KEEP", S["tbl_h"]), Paragraph("Your own high-level recollection of what you did, decisions you made, problems you helped prevent, publicly disclosed outcomes, and anything your employer has expressly permitted you to retain.", S["tbl"])],
-        [Paragraph("CARE", S["tbl_h"]), Paragraph("Numbers, client or project detail, and internal context that may be sensitive. Generalize, seek permission, or use only what is already public. When you are unsure, treat it as the next tier.", S["tbl"])],
+        [Paragraph("CARE", S["tbl_h"]), Paragraph("Numbers, client or project detail, and internal context that may be sensitive. Seek permission, use only what is already public, or leave it out. When you are unsure, treat it as the next tier.", S["tbl"])],
         [Paragraph("NEVER", S["tbl_h"]), Paragraph("Source code, credentials, security settings, customer or employee data, unreleased product detail, internal financials, privileged or legal material, trade secrets, and any document or file owned by your employer. Never copy, forward, screenshot, download, or reconstruct these anywhere.", S["tbl"])],
     ]
     t = Table(rows, colWidths=[86, CONTENT_W-86])
@@ -98,6 +98,13 @@ story = []
 class Cover(Flowable):
     def __init__(self): super().__init__(); self.width=PAGE_W; self.height=PAGE_H
     def wrap(self,aw,ah): return (0,0)
+    def drawOn(self, canvas, x, y, _sW=0):
+        # The cover paints at absolute page coordinates. The base Flowable.drawOn
+        # would translate the canvas to the frame cursor (top of a full-page
+        # frame), pushing every string a full page height off the top and
+        # leaving a blank navy page. Draw directly on the untranslated canvas.
+        self.canv = canvas
+        self.draw()
     def draw(self):
         c=self.canv
         # motif top-left
@@ -126,7 +133,7 @@ class Cover(Flowable):
         uw = c.stringWidth(URL, "DM", 9.5)
         c.linkURL(f"https://{URL}", (PAGE_W-MARGIN-uw, 71, PAGE_W-MARGIN, 85), relative=0, thickness=0)
 
-story += [Cover(), NextPageTemplate("content"), PageBreak()]
+story += [Bookmark("Cover", 0), Cover(), NextPageTemplate("content"), PageBreak()]
 
 # =====================================================================
 # 2. COPYRIGHT / DISCLAIMER / VERSION
@@ -148,11 +155,11 @@ story += [PageBreak()]
 # =====================================================================
 # 3. WELCOME FROM TEMIDAYO
 # =====================================================================
-story += [SP(6), EY("Welcome"),
+story += [Bookmark("Welcome", 0), SP(6), EY("Welcome"),
     Paragraph("A short word before you start", S["h2"]), RULE(),
     LEAD("Most people do excellent work and remember almost none of it clearly."),
     P("Not because the work was small. Because the work was constant. You solved the problem, absorbed the lesson, and moved to the next thing before the last one had a name. Months later a review, a promotion case, or a sudden change asks you to account for a year, and you find yourself reaching for details that have already gone soft."),
-    P("I have spent eighteen years inside the rooms where organizations decide what people are worth: performance calibrations, promotion panels, restructurings, and the quiet conversations that precede all of them. The people who fared well in those rooms were rarely the ones who had done the most. They were the ones who could describe what they had done, accurately, without inflating it and without shrinking it. That skill is learnable. It is mostly a matter of keeping a record while the facts are still available to you."),
+    P("I have spent eighteen years working close to where talent decisions get made: performance calibrations, promotion panels, restructurings, and the quiet conversations that precede all of them. The people who fared well in those rooms were rarely the ones who had done the most. They were the ones who could describe what they had done, accurately, without inflating it and without shrinking it. That skill is learnable. It is mostly a matter of keeping a record while the facts are still available to you."),
     P("Keep the Proof is that record and the discipline around it. It will not tell you what your career means or what move to make. It will help you hold on to the truth of your own work, in language a stranger can understand, kept in a way that respects the people you work for. That is a smaller promise than most career products make. It is also one you can actually keep."),
     SP(4),
     Paragraph("Temidayo Afonja", ParagraphStyle("sig", fontName="CG-Semi", fontSize=15, textColor=NAVY, leading=18)),
@@ -163,7 +170,7 @@ story += [PageBreak()]
 # =====================================================================
 # 4. WHAT IS INSIDE / HOW TO USE
 # =====================================================================
-story += [SP(6), EY("Orientation"),
+story += [Bookmark("Orientation", 0), SP(6), EY("Orientation"),
     Paragraph("What is inside, and how to use it", S["h2"]), RULE(),
     P("This guide has three jobs. It teaches you what career evidence is and what is not worth keeping. It gives you tools to capture and translate your work. And it builds those tools into short routines so the record maintains itself instead of becoming another thing you fall behind on."),
     H3("The four things you will build"),
@@ -187,7 +194,7 @@ story += [PageBreak()]
 # PART ONE DIVIDER + 5,6,7,8,9
 # =====================================================================
 story += [NextPageTemplate("content")]
-story += [NextPageTemplate("divider"), PageBreak()]
+story += [NextPageTemplate("divider"), PageBreak(), Bookmark("Part One: Understand the record", 0)]
 story += section_divider("One", "Understand the record",
     "What career evidence is, and why it goes missing",
     "Before the tools, a clear idea of what you are keeping and what you are not. Most career records fail here, not in the formatting.")
@@ -232,7 +239,7 @@ story += [SP(6), EY("The category"),
     SP(6),
     P("It is disciplined recordkeeping, not self-promotion. The point is not to make your work sound impressive. The point is to make it accurate and findable, so that when a moment arrives that depends on the details, the details are there and you can trust them. Done well, an accurate record is more persuasive than an inflated one, because it holds up when someone asks a second question."),
     SP(2),
-    NOTE("Some people call this a brag document. The name is understandable, and it is the last time this guide will use it. What you are building is evidence, not bragging, and the difference is not modesty. Evidence survives scrutiny. Bragging does not."),
+    NOTE("Some people call this a brag document. The name is understandable, and it is the last time this guide will use it. What you are building is evidence rather than bragging, and the difference is practical. Evidence holds up when it gives someone else something concrete to examine."),
 ]
 story += [GAP()]
 
@@ -298,7 +305,7 @@ story += [PageBreak()]
 # =====================================================================
 # PART TWO DIVIDER + 11,12,13
 # =====================================================================
-story += [NextPageTemplate("divider"), PageBreak()]
+story += [NextPageTemplate("divider"), PageBreak(), Bookmark("Part Two: Permission and protection", 0)]
 story += section_divider("Two", "Permission and protection",
     "The standard that keeps this safe",
     "The most valuable thing this guide does is tell you what not to keep. Permission comes before protection, and it comes before everything else.")
@@ -331,6 +338,7 @@ story += [SP(6), EY("Information risk"),
     H3("Three tiers, one habit"),
     P("Sort everything you might record into three tiers. With practice this becomes instant."),
     SP(3), tier_block(), SP(8),
+    P("Generalizing information does not create permission. Use generalized wording only after you have confirmed that you are permitted to retain the underlying information. Softening the words changes how something reads, not whether it is yours to keep."),
     P("The habit is to default downward. When something sits between Keep and Care, treat it as Care. When it sits between Care and Never, treat it as Never. You will lose a little detail this way. You will never lose your standing."),
 ]
 story += [GAP()]
@@ -409,6 +417,6 @@ doc = KTPDoc(OUT, footer_title="Keep the Proof", url=URL)
 doc.title = "Keep the Proof: A 60-Minute Career Evidence System"
 doc.author = "Temidayo Afonja"
 doc.subject = "A career evidence system: capture, translate, protect, and retrieve a private record of your work."
-doc.keywords = "career evidence, work accomplishments, portable language, confidentiality, Temidayo Afonja"
+doc.keywords = "career evidence, work accomplishments, portable language, confidentiality, Temidayo Afonja, Keep the Proof v1.0.1"
 doc.build(story)
 print("wrote", OUT)
