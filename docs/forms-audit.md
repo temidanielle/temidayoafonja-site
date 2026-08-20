@@ -265,6 +265,21 @@ records since 2026-08-13. This endpoint now names the fault class instead:
 | `500`, `reason: blobs_api_<status>` | The Blobs API answered with that status. `401` or `403` means the token is wrong or lacks access to the site. |
 | `500`, `reason: blobs_error` | Anything else. Read the function log. |
 
+A refusal at the gate is classified the same way, added the same day for the same reason. `401`
+with `reason: no_token_supplied` means no token reached the request at all, `401` with
+`reason: token_mismatch` means one did and it did not match, and `503` with
+`reason: server_token_not_configured` means `RESEARCH_EXPORT_TOKEN` is not set in that deploy
+context, which is a configuration gap an operator cannot otherwise see. A refusal also reports
+`token_source`, either `query` or `bearer`, because the bearer header takes precedence and a header
+attached by a client, proxy or browser extension will otherwise silently override a token typed
+into the address bar. **No refusal returns any part of the token or its length**, and a test asserts
+that, so nothing here helps anyone guess it.
+
+Both token forms are trimmed of surrounding whitespace, since a value copied out of a settings
+screen commonly arrives with a trailing space or newline. Whitespace *inside* the value is still a
+mismatch and is not repaired, which matters because a `+` in a query string decodes to a space; a
+token containing one must be sent as `Authorization: Bearer` rather than in the query.
+
 The failure body carries the fault code, the store name and a boolean saying whether the two Blobs
 variables are present. It never carries the token, an email address or any record content, and it
 is only reachable by a caller who has already presented the token.

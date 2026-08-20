@@ -69,13 +69,24 @@ function tokenMatches(supplied, expected) {
 // Accepts "Authorization: Bearer xxx" or "?token=xxx", in that order of
 // preference. Header names arrive lowercased from Netlify, but a direct
 // invocation in a test may not, so both are read.
+//
+// Returns the source alongside the value. Which of the two the token came from
+// is the difference between "the query parameter was ignored" and "the query
+// parameter was wrong", and those need different fixes. It is also the one way
+// to see that a header sent by a client, a proxy or an extension has quietly
+// taken precedence over the token typed into the address bar.
+//
+// Both forms are trimmed. A credential does not have meaningful leading or
+// trailing whitespace, and a value copied out of a settings screen very easily
+// arrives with a trailing space or newline attached.
 function suppliedToken(event) {
   const h = event.headers || {};
   const auth = h.authorization || h.Authorization || "";
   const m = /^Bearer\s+(.+)$/i.exec(String(auth).trim());
-  if (m) return m[1].trim();
+  if (m) return { value: m[1].trim(), source: "bearer" };
   const q = event.queryStringParameters || {};
-  return q.token || "";
+  const t = String(q.token || "").trim();
+  return t ? { value: t, source: "query" } : { value: "", source: "none" };
 }
 
 function csvCell(v) {
@@ -159,8 +170,43 @@ exports.handler = async (event) => {
     return { statusCode: 405, headers: headers({ "Content-Type": "text/plain" }), body: "Method Not Allowed" };
   }
 
-  if (!tokenMatches(suppliedToken(event), process.env.RESEARCH_EXPORT_TOKEN)) {
-    return { statusCode: 401, headers: headers({ "Content-Type": "text/plain" }), body: "Unauthorized" };
+  // ── Why a refusal now says which refusal it is ──
+  //
+  // Added 2026-08-20, alongside the storage fault codes, for the same reason:
+  // one word covered three unrelated conditions. A token that authenticated on
+  // one deploy and was refused on the next could mean the server has no token
+  // at all, or that the value never reached the request, or that it reached it
+  // and did not match, and those have three different fixes.
+  //
+  // None of this weakens the gate. The reason names the condition, never the
+  // credential: no part of the expected or supplied token is returned, and
+  // neither is its length, so nothing here helps anyone guess it. Saying that
+  // the server has no token configured tells an attacker only that no token
+  // would work, and it is the one condition an operator cannot otherwise see.
+  const supplied = suppliedToken(event);
+
+  if (!process.env.RESEARCH_EXPORT_TOKEN) {
+    return {
+      statusCode: 503,
+      headers: headers({ "Content-Type": "application/json" }),
+      body: JSON.stringify({
+        error: "unauthorized",
+        reason: "server_token_not_configured",
+        message: "RESEARCH_EXPORT_TOKEN is not set in this deploy context."
+      })
+    };
+  }
+
+  if (!tokenMatches(supplied.value, process.env.RESEARCH_EXPORT_TOKEN)) {
+    return {
+      statusCode: 401,
+      headers: headers({ "Content-Type": "application/json" }),
+      body: JSON.stringify({
+        error: "unauthorized",
+        reason: supplied.source === "none" ? "no_token_supplied" : "token_mismatch",
+        token_source: supplied.source
+      })
+    };
   }
 
   const q = event.queryStringParameters || {};

@@ -130,7 +130,10 @@ test("refuses a request with no token", async () => {
   reset();
   const res = await call();
   assert.equal(res.statusCode, 401);
-  assert.equal(res.body, "Unauthorized");
+  const body = JSON.parse(res.body);
+  assert.equal(body.error, "unauthorized");
+  assert.equal(body.reason, "no_token_supplied");
+  assert.equal(body.token_source, "none");
 });
 
 test("refuses a wrong token, including one that is a prefix of the real one", async () => {
@@ -147,8 +150,70 @@ test("refuses everything when the server has no token configured", async () => {
   // caller who supplies an empty token to match an empty expectation.
   for (const attempt of [{}, { token: "" }, { token: TOKEN }, { bearer: TOKEN }]) {
     const res = await call(attempt);
-    assert.equal(res.statusCode, 401);
+    assert.equal(res.statusCode, 503, "refused, and named as a server-side gap");
+    assert.equal(JSON.parse(res.body).reason, "server_token_not_configured");
   }
+});
+
+test("a refusal never carries any part of the token, or its length", async () => {
+  reset();
+  for (const attempt of [{}, { token: "wrong" }, { token: TOKEN.slice(0, -1) }, { bearer: "wrong" }]) {
+    const res = await call(attempt);
+    const body = res.body;
+    assert.ok(!body.includes(TOKEN), "the expected token never appears");
+    assert.ok(!body.includes(TOKEN.slice(0, 8)), "no prefix of it appears either");
+    assert.ok(!/length|chars|\b\d{2,}\b/.test(body), "no length is disclosed: " + body);
+  }
+});
+
+test("a wrong token is named as a mismatch, and says which form carried it", async () => {
+  reset();
+  const viaQuery = await call({ token: "wrong" });
+  assert.equal(viaQuery.statusCode, 401);
+  assert.equal(JSON.parse(viaQuery.body).reason, "token_mismatch");
+  assert.equal(JSON.parse(viaQuery.body).token_source, "query");
+
+  const viaHeader = await call({ bearer: "wrong" });
+  assert.equal(JSON.parse(viaHeader.body).token_source, "bearer");
+});
+
+test("a header reports itself as the source even when a query token was also sent", async () => {
+  reset();
+  // The failure mode this exists to make visible: a client, proxy or extension
+  // attaches an Authorization header, it takes precedence, and the token typed
+  // into the address bar is never consulted.
+  const res = await handler({
+    httpMethod: "GET",
+    headers: { authorization: "Bearer wrong" },
+    queryStringParameters: { token: TOKEN }
+  });
+  assert.equal(res.statusCode, 401);
+  assert.equal(JSON.parse(res.body).token_source, "bearer");
+});
+
+test("surrounding whitespace on a copied token does not refuse it", async () => {
+  reset();
+  // A value copied out of a settings screen arrives with a trailing space or
+  // newline far more often than anyone expects.
+  for (const padded of [" " + TOKEN, TOKEN + " ", "\n" + TOKEN + "\n", "  " + TOKEN + "\t"]) {
+    const res = await call({ token: padded });
+    assert.equal(res.statusCode, 200, `expected ${JSON.stringify(padded)} to be accepted`);
+  }
+});
+
+test("a token that is only whitespace counts as no token at all", async () => {
+  reset();
+  const res = await call({ token: "   " });
+  assert.equal(JSON.parse(res.body).reason, "no_token_supplied");
+});
+
+test("whitespace inside the token is still a mismatch", async () => {
+  reset();
+  // A "+" in a query string decodes to a space, so a token containing one and
+  // sent in the query would arrive altered. That must fail, not be repaired.
+  const res = await call({ token: TOKEN.replace(/-/, " ") });
+  assert.equal(res.statusCode, 401);
+  assert.equal(JSON.parse(res.body).reason, "token_mismatch");
 });
 
 test("accepts the correct token as a query parameter", async () => {
