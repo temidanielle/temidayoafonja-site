@@ -249,8 +249,27 @@ policy. It is the model the remaining seven consent-free forms should follow.
 CSV, or as JSON with `&format=json`. It is gated on the same `RESEARCH_EXPORT_TOKEN` as the three
 older exports, and it is **read only**: it answers `GET` alone, and it refuses the `&delete=` the
 other three accept, with a 400 rather than by ignoring it. It also accepts the token as
-`Authorization: Bearer`, compares it in constant time, and sets `Cache-Control: no-store`. Those
-four differences are confined to that file; the three older exports are unchanged.
+`Authorization: Bearer`, compares it in constant time, and sets `Cache-Control: no-store`.
+
+A fifth difference was added on 2026-08-20, after the first live run of the endpoint returned a
+bare `export_failed` on a Deploy Preview with a correct token and there was no way to tell from
+the response which of four unrelated conditions had occurred. The three older exports answer every
+storage fault with that same bare string, and have never hit it only because their stores have held
+records since 2026-08-13. This endpoint now names the fault class instead:
+
+| Response | Meaning |
+| --- | --- |
+| `200`, `store_exists: false`, `count: 0` | The store has never been written to, so it does not exist yet. An empty export, not an error. This is the expected reading after a submission whose `durable_record` came back `false`. |
+| `500`, `reason: blobs_not_configured` | `BLOBS_SITE_ID` and `BLOBS_TOKEN` are not both present in this deploy context. A configuration fault, not a code fault. |
+| `500`, `reason: blobs_env_missing` | The two variables are present but Blobs still refused to initialise. |
+| `500`, `reason: blobs_api_<status>` | The Blobs API answered with that status. `401` or `403` means the token is wrong or lacks access to the site. |
+| `500`, `reason: blobs_error` | Anything else. Read the function log. |
+
+The failure body carries the fault code, the store name and a boolean saying whether the two Blobs
+variables are present. It never carries the token, an email address or any record content, and it
+is only reachable by a caller who has already presented the token.
+
+These five differences are confined to that file; the three older exports are unchanged.
 
 **What it deliberately does not do.** It does not touch the existing `xyegkbaq` priority-list
 records. Those were collected with no opt-in, so moving them into Kit is a consent question and

@@ -16,16 +16,21 @@ import Module from "node:module";
 import { createRequire } from "node:module";
 
 /* ── In-memory Netlify Blobs stub ──────────────────────────────────────── */
-const blobs = { stores: new Map(), failList: false };
+// listError lets a test choose the exact error the storage layer throws, which
+// is what the fault-class tests below need. failList stays for the plain
+// "something broke" case.
+const blobs = { stores: new Map(), failList: false, listError: null };
 function fakeStore(name) {
   if (!blobs.stores.has(name)) blobs.stores.set(name, new Map());
   const m = blobs.stores.get(name);
   return {
     async list() {
+      if (blobs.listError) throw blobs.listError;
       if (blobs.failList) throw new Error("stub list failure");
       return { blobs: [...m.keys()].map((key) => ({ key })) };
     },
     async get(key) {
+      if (blobs.listError) throw blobs.listError;
       if (blobs.failList) throw new Error("stub read failure");
       // Return a copy, so a mutation by the handler cannot reach the store.
       return m.has(key) ? JSON.parse(JSON.stringify(m.get(key))) : null;
@@ -96,6 +101,12 @@ function seed(records) {
 
 function reset({ token = TOKEN, seedRecords = null } = {}) {
   blobs.failList = false;
+  blobs.listError = null;
+  // The manual Blobs configuration is present in every test unless a test
+  // deliberately removes it. Without this, every storage fault would classify
+  // as blobs_not_configured and the other fault classes would never be reached.
+  process.env.BLOBS_SITE_ID = "test-site-id";
+  process.env.BLOBS_TOKEN = "test-blobs-token";
   // null is the sentinel for "the server has no token configured". undefined
   // would hit the default parameter above and silently set the real token,
   // which is exactly the mistake this comment exists to prevent repeating.
@@ -306,11 +317,113 @@ test("the JSON format returns the records with their nesting intact", async () =
 });
 
 /* ── Failure handling ──────────────────────────────────────────────────── */
+//
+// These exist because the first live run of this endpoint returned a bare
+// export_failed with a correct token, and there was no way to tell from the
+// response which of four unrelated conditions had occurred.
+
+// A Blobs API error as @netlify/blobs raises it: the status lives in the
+// message text on some releases and on the error object on others.
+function blobsApiError(status, { onObject = false } = {}) {
+  const e = new Error("Netlify Blobs has generated an internal error: " + status);
+  e.name = "BlobsInternalError";
+  if (onObject) e.status = status;
+  return e;
+}
+
+test("a store that does not exist yet is an empty export, not a server error", async () => {
+  reset();
+  blobs.listError = blobsApiError(404);
+  const res = await call({ token: TOKEN, query: { format: "json" } });
+  assert.equal(res.statusCode, 200);
+  const body = JSON.parse(res.body);
+  assert.equal(body.count, 0);
+  assert.deepEqual(body.records, []);
+  // The one field that tells the operator the store has never been written to,
+  // as opposed to having been read and found empty.
+  assert.equal(body.store_exists, false);
+});
+
+test("a store that does not exist yet yields a CSV header row and nothing else", async () => {
+  reset();
+  blobs.listError = blobsApiError(404);
+  const res = await call({ token: TOKEN });
+  assert.equal(res.statusCode, 200);
+  assert.equal(res.body.split("\n").length, 1);
+  assert.ok(res.body.startsWith("key,"));
+});
+
+test("store_exists is true on a normal export", async () => {
+  reset();
+  const res = await call({ token: TOKEN, query: { format: "json" } });
+  assert.equal(JSON.parse(res.body).store_exists, true);
+});
+
 test("a storage failure is a 500 that says nothing about the store's contents", async () => {
   reset();
   blobs.failList = true;
   const res = await call({ token: TOKEN });
   assert.equal(res.statusCode, 500);
-  assert.equal(res.body, "export_failed");
+  const body = JSON.parse(res.body);
+  assert.equal(body.error, "export_failed");
   assert.ok(!res.body.includes("ada@example.com"));
+  assert.ok(!res.body.includes(TOKEN));
+});
+
+test("an unrecognised storage failure classifies as blobs_error", async () => {
+  reset();
+  blobs.listError = new Error("something unexpected");
+  const res = await call({ token: TOKEN });
+  assert.equal(JSON.parse(res.body).reason, "blobs_error");
+});
+
+test("a missing Blobs configuration is named rather than guessed at", async () => {
+  reset();
+  delete process.env.BLOBS_SITE_ID;
+  delete process.env.BLOBS_TOKEN;
+  blobs.listError = new Error("anything at all");
+  const res = await call({ token: TOKEN });
+  assert.equal(res.statusCode, 500);
+  const body = JSON.parse(res.body);
+  assert.equal(body.reason, "blobs_not_configured");
+  assert.equal(body.blobs_manual_config, false);
+});
+
+test("a MissingBlobsEnvironmentError is named", async () => {
+  reset();
+  const e = new Error("The environment has not been configured to use Netlify Blobs");
+  e.name = "MissingBlobsEnvironmentError";
+  blobs.listError = e;
+  const res = await call({ token: TOKEN });
+  assert.equal(JSON.parse(res.body).reason, "blobs_env_missing");
+});
+
+test("a non-404 Blobs API status is reported with its status, from the message", async () => {
+  reset();
+  blobs.listError = blobsApiError(401);
+  const res = await call({ token: TOKEN });
+  assert.equal(res.statusCode, 500);
+  assert.equal(JSON.parse(res.body).reason, "blobs_api_401");
+});
+
+test("a non-404 Blobs API status is reported with its status, from the error object", async () => {
+  reset();
+  blobs.listError = blobsApiError(500, { onObject: true });
+  const res = await call({ token: TOKEN });
+  assert.equal(JSON.parse(res.body).reason, "blobs_api_500");
+});
+
+test("a 404 carried on the error object is also treated as an empty store", async () => {
+  reset();
+  blobs.listError = blobsApiError(404, { onObject: true });
+  const res = await call({ token: TOKEN, query: { format: "json" } });
+  assert.equal(res.statusCode, 200);
+  assert.equal(JSON.parse(res.body).store_exists, false);
+});
+
+test("the failure body names the store so the fault is attributable", async () => {
+  reset();
+  blobs.failList = true;
+  const res = await call({ token: TOKEN });
+  assert.equal(JSON.parse(res.body).store, "career-decisions-leads");
 });

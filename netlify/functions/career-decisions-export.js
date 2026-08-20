@@ -29,7 +29,12 @@
 //    email addresses and free text, and none of it should sit in an
 //    intermediate cache.
 //
-// These four are confined to this file. The three existing exports are
+// 5. A failure names its class. The others answer every storage fault with a
+//    bare export_failed, which is undiagnosable from outside; this one returns
+//    a short fault code, and treats a store that does not exist yet as an empty
+//    export rather than a server error. See the classification block below.
+//
+// These five are confined to this file. The three existing exports are
 // untouched, and nothing here changes how any record is written.
 //
 // Node 18+. See docs/forms-audit.md section 10 and docs/data-inventory.md.
@@ -112,6 +117,42 @@ function flatten(rec) {
   return flat;
 }
 
+// ── Blobs failure classification ───────────────────────────────────────────
+//
+// Added 2026-08-20 after a Deploy Preview run of this endpoint returned a bare
+// export_failed. The token was correct, so the fault was inside the storage
+// read, but the response said only that something went wrong, and the Netlify
+// log for that invocation had already rolled past by the time it was opened.
+// An endpoint that can fail for four unrelated reasons and reports all four
+// identically cannot be diagnosed from outside, so it now names the class.
+//
+// Nothing here is sensitive. A fault class, a store name and a boolean saying
+// whether the two Blobs variables are present are all that is returned, and
+// only to a caller who has already presented the token. No credential, no email
+// address and no record content appears in any of these paths.
+
+// @netlify/blobs raises BlobsInternalError when the Blobs API answers with a
+// non-200. Which version puts the status on the error object and which only
+// writes it into the message text has changed across releases, so both forms
+// are read and an unrecognised error yields null rather than a wrong number.
+function blobsErrorStatus(e) {
+  if (!e) return null;
+  if (typeof e.status === "number") return e.status;
+  const m = /\b([1-5]\d\d)\b/.exec(String(e.message || ""));
+  return m ? Number(m[1]) : null;
+}
+
+// A short, stable code for the fault class. Order matters: an absent pair of
+// Blobs variables is the explanation for everything downstream of it, so it is
+// checked first.
+function blobsFailureCode(e) {
+  if (!blobsConfigured()) return "blobs_not_configured";
+  if (e && e.name === "MissingBlobsEnvironmentError") return "blobs_env_missing";
+  const status = blobsErrorStatus(e);
+  if (status) return "blobs_api_" + status;
+  return "blobs_error";
+}
+
 exports.handler = async (event) => {
   // Read only, in the plainest sense: nothing but GET is answered at all.
   if (event.httpMethod && event.httpMethod !== "GET") {
@@ -139,6 +180,7 @@ exports.handler = async (event) => {
   }
 
   let records = [];
+  let storeExists = true;
   try {
     const store = blobStore(STORE);
     const listing = await store.list();
@@ -147,11 +189,29 @@ exports.handler = async (event) => {
       if (rec) { rec.key = b.key; records.push(rec); }
     }
   } catch (e) {
-    // The likeliest cause by far is the two Blobs variables being unset, which
-    // is exactly the condition that left the older stores empty for months. Say
-    // which it is in the log rather than leaving it to be guessed at.
-    console.error("blobs " + STORE + " list failed. manual config present:", blobsConfigured(), e);
-    return { statusCode: 500, headers: headers({ "Content-Type": "text/plain" }), body: "export_failed" };
+    const code = blobsFailureCode(e);
+    console.error("blobs " + STORE + " read failed:", code, "manual config present:", blobsConfigured(), e);
+
+    // A store that has never had a blob written to it does not exist, and the
+    // Blobs API answers 404 for it. That is an empty export, not a server
+    // error. Reporting it as a 500 is precisely what made the first live run of
+    // this endpoint impossible to interpret: a store with nothing in it and a
+    // store that could not be reached produced the same response. Only 404 is
+    // treated this way. Every other fault is still a 500.
+    if (code !== "blobs_api_404") {
+      return {
+        statusCode: 500,
+        headers: headers({ "Content-Type": "application/json" }),
+        body: JSON.stringify({
+          error: "export_failed",
+          reason: code,
+          store: STORE,
+          blobs_manual_config: blobsConfigured()
+        })
+      };
+    }
+    storeExists = false;
+    records = [];
   }
 
   records.sort((a, b) => String(b.received_at_utc).localeCompare(String(a.received_at_utc)));
@@ -160,7 +220,7 @@ exports.handler = async (event) => {
     return {
       statusCode: 200,
       headers: headers({ "Content-Type": "application/json" }),
-      body: JSON.stringify({ store: STORE, count: records.length, records }, null, 2)
+      body: JSON.stringify({ store: STORE, store_exists: storeExists, count: records.length, records }, null, 2)
     };
   }
 
