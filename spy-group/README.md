@@ -1,51 +1,82 @@
-# SPY Group — website prototype
+# SPY Group — website prototype, three directions
 
-A design prototype for a federal-contracting website for SPY Group: a
+Design prototypes for a federal-contracting website for SPY Group: a
 service-disabled veteran-owned small business focused on procurement,
 supply chain, and logistics.
 
-**Nothing here is live.** Every identifier is a placeholder, and the pages
-carry `noindex` plus a visible "prototype" strip so they cannot be mistaken
-for a published site.
+**Nothing here is live.** Every identifier is a placeholder, every page
+carries `noindex`, and a visible "prototype" strip runs across the top so
+none of it can be mistaken for a published site.
 
 ## Files
 
-| File | What it is |
+| Path | What it is |
 | --- | --- |
-| `index.html` | The full one-page site. Open it in any browser — no build step. |
-| `capability-statement.html` | The one-page capability statement, laid out for Letter. "Print / save as PDF" produces the single document contracting officers actually ask for. |
+| `index.html` | Comparison page. Open this one first — it shows all three directions side by side with thumbnails and links. |
+| `manifest/` | **Option 1 — Manifest.** Technical, understated, operator-grade. |
+| `signal/` | **Option 2 — Signal.** Bold, commercial, high-contrast. |
+| `record/` | **Option 3 — The Record.** Formal, institutional, document-like. |
 
-## Design direction
+Each option directory holds an `index.html` (the full one-page site) and a
+`capability-statement.html` that prints to a single Letter page — the one
+document contracting officers actually ask a small business for.
 
-Deliberately unlike temidayoafonja.com. That site is warm advisory —
-navy, gold, cream, Cormorant Garamond. This one is procurement-grade: the
-visual language of a manifest, a dispatch board, a government form.
+No build step. Open any file in a browser.
 
-**Color.** Deep spruce-black (`#14201B`) as the dark ground, bone
-(`#EDEDE5`) for the light bands, and one accent — stencil ochre
-(`#D08A22`), the color of crate markings and hi-vis. Green reads supply
-chain and military-adjacent without resorting to flag red-white-blue,
-which every other veteran-owned contractor site already uses. All text
-pairs clear WCAG AA contrast on their grounds.
+## The three directions
 
-**Type.** Three faces, each doing one job:
+All three carry identical content. They differ only in identity.
 
-- **Archivo** (semi-condensed, 800) for headlines — utilitarian grotesque,
-  plate-like, not the Inter/Space Grotesk default.
-- **Public Sans** for body copy — the typeface of the U.S. Web Design
-  System. The site literally speaks the federal buyer's visual language.
-- **IBM Plex Mono** for every identifier: UEI, CAGE, NAICS, dollar
-  ceilings. Codes read as data, not prose.
+### Option 1 — Manifest
 
-**Structure.** The devices carry information rather than decorate:
-capability cards are tagged with the NAICS code each is bid under, so a
-buyer can match the page to a solicitation without a phone call. "Paths
-to award" is ordered because it is genuinely ordered — each rung is a
-higher dollar ceiling and a different acquisition authority. The
-build-out track is a real sequence and shows exactly which rung the
-company is standing on.
+Deep spruce-green ground (`#14201B`), bone bands (`#EDEDE5`), one
+stencil-ochre accent (`#D08A22`) — the color of crate markings. Archivo
+semi-condensed for headlines, **Public Sans** for body (the U.S. Web
+Design System typeface, so the page speaks the federal buyer's own
+idiom), IBM Plex Mono for every identifier.
 
-No fade-ins or scroll animation. Hover states are the only motion.
+Reads as: disciplined, technical, understated. Looks like it was built by
+someone who has run a warehouse.
+
+### Option 2 — Signal
+
+White ground, heavy black rules, hi-vis orange (`#E1481F`), hazard-stripe
+dividers. Saira Condensed set very large, Barlow for reading, DM Mono for
+codes.
+
+Reads as: bold, energetic, commercial. Works hardest with primes and
+corporate supplier-diversity teams.
+
+### Option 3 — The Record
+
+Warm white paper (`#FBFAF7`), hairline and double rules, graphite ink
+with an oxblood accent (`#7B2C2C`) and brass hairlines. Source Serif 4
+and Source Sans 3 — again the federal design system's own pairing.
+Centered masthead, numbered sections, ruled tables.
+
+Reads as: formal, established, careful. Suits a conservative contracting
+officer, and will not look dated in five years.
+
+None of the three reuses the navy/gold/cream and Cormorant Garamond of
+temidayoafonja.com. This is a separate business and should look like one.
+
+## Shared decisions worth keeping
+
+- **NAICS codes tag every competency**, so a buyer can match the page to a
+  solicitation without a phone call.
+- **Paths to award are ordered by dollar ceiling** because the authorities
+  genuinely are: purchase card, simplified acquisition, SDVOSB set-aside
+  or sole source, uncapped subcontracting. SDVOSB status is presented as
+  an acquisition authority rather than a badge.
+- **The build-out track states which registration rung the company is on**
+  instead of implying past performance it does not have.
+- **Product supply is marked "in definition"** — the one competency still
+  being decided, said out loud.
+- **Fonts are embedded in each page** as woff2 data URIs. No request to
+  Google, so no visitor's IP address is disclosed to a third party — the
+  same standard `fonts.css` applies on temidayoafonja.com. For production
+  these would be separate `.woff2` files rather than inlined, which would
+  cut each page from roughly 250 KB to about 30 KB of markup.
 
 ## Real vs. placeholder
 
@@ -58,16 +89,16 @@ the honest handling of a company with no past performance yet.
 - UEI and CAGE (both shown as `Pending`)
 - Founder name, title, phone, email, city/state
 - Legal entity name (`SPY Group LLC` is a guess)
-- The product-supply category list (that section is written as
-  "in definition" on purpose, since product lines aren't settled)
+- The product-supply category list
 - `spygroup.com` as the domain, and `contracts@spygroup.com`
+- The logo. All three use a boxed or circled "S" as a stand-in.
 
 **Verify before publishing:** the dollar thresholds in "Paths to award"
 reflect current FAR small-business rules ($10K micro-purchase, $250K
 simplified acquisition threshold, $4.5M SDVOSB sole-source ceiling for
-services and supplies with a higher ceiling for manufacturing). These
-figures are adjusted periodically for inflation — confirm the current
-numbers before they appear on a live site.
+services and supplies, higher for manufacturing). These figures are
+adjusted periodically for inflation — confirm the current numbers before
+they appear on a live site.
 
 ## What SPY Group needs to supply
 
@@ -80,9 +111,9 @@ numbers before they appear on a live site.
    disability rating supports the "service-disabled" element; ownership
    and control still have to be documented.
 4. Final NAICS code selections and PSC codes
-5. Product lines, once decided, to replace the fourth capability card
+5. Product lines, once decided, to replace the fourth competency
 6. Point-of-contact details and a business address
-7. Logo. The prototype uses a boxed "S" as a stand-in.
+7. A logo
 
 Worth discussing with a small-business advisor, not assumed:
 
@@ -91,25 +122,24 @@ Worth discussing with a small-business advisor, not assumed:
   2023 — applicants now submit a written social-disadvantage narrative.
   Eligibility and the application burden should be assessed properly.
 - **MBE certification** (NMSDC) opens corporate supplier-diversity
-  programs, which is a different buyer than the federal one and may be
-  the faster first revenue.
-- **State and local** veteran/DBE programs, which often have lower
+  programs, a different buyer than the federal one and possibly the
+  faster first revenue.
+- **State and local** veteran and DBE programs, which often have lower
   barriers than federal set-asides.
 
 ## Open questions
 
-- Is the name **SPY Group** and the domain **spygroup.com**? Confirm
-  spelling and whether SPY is an acronym — if it stands for something, it
+- Is the name **SPY Group** and the domain **spygroup.com**? Confirm the
+  spelling, and whether SPY is an acronym — if it stands for something, it
   belongs in the letterhead.
-- Services-only, or products too? The site is built to work either way,
-  but the fourth capability card and the reseller NAICS codes depend on
-  the answer.
-- Home state and geographic reach — the prototype claims CONUS with
+- Services only, or products too? All three are built to work either way,
+  but the fourth competency and the reseller NAICS codes depend on it.
+- Home state and geographic reach — the prototypes claim CONUS with
   OCONUS through partners.
 
 ## Hosting note
 
 These files sit in this repository for review convenience only. They are
-excluded from `robots.txt` and marked `noindex`. When the direction is
+excluded in `robots.txt` and marked `noindex`. Once a direction is
 approved, SPY Group's site should move to its own repository and its own
 domain rather than living under temidayoafonja.com.
