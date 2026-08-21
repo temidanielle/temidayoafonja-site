@@ -55,7 +55,11 @@
   font-family: 'DM Sans', sans-serif; font-weight: 300; line-height: 1.65; padding-top: 96px; }
 .ktp-page h1, .ktp-page h2, .ktp-page h3 { font-family: 'Cormorant Garamond', serif;
   font-weight: 400; color: var(--navy); margin: 0; letter-spacing: -0.005em; }
-.ktp-page p { margin: 0; color: var(--ink); }
+/* No colour here. <p> already inherits --ink from .ktp-page, and setting it
+   again at (0,1,1) silently outranked every single-class colour on this
+   page: the descriptor, the lede, both purchase lines and the note were
+   all being flattened to ink. */
+.ktp-page p { margin: 0; }
 /* .ktp-page a { color: inherit } is deliberately NOT set here. On the other
    warm pages that rule (0,1,1) silently outranks bare button classes; keeping
    it off means link colour is set explicitly where it is wanted. */
@@ -82,7 +86,9 @@
   max-width: 60ch; margin-bottom: 34px; }
 .ktp-descriptor { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 20px;
   color: var(--rust-ink); margin-bottom: 26px; }
-.ktp-purchase-line { font-size: 14px; line-height: 1.6; color: var(--muted-warm); margin-top: 18px; max-width: 54ch; }
+.ktp-price { font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold-ink); margin-top: 18px; }
+.ktp-purchase-line { font-size: 14px; line-height: 1.6; color: var(--muted-warm); margin-top: 8px; max-width: 54ch; }
 
 /* BUTTONS
    .ktp-btn mirrors .lean-btn from the other warm pages: same padding, radius,
@@ -223,6 +229,7 @@
       <div class="ktp-cta-row">
         <a class="ktp-btn ktp-btn--primary ktp-btn--large" data-ktp-cta="hero" href="#included">Get Keep the Proof - $49</a>
       </div>
+      <p class="ktp-price">$49 &middot; instant digital access</p>
       <p class="ktp-purchase-line">Includes the 41-page guided system, reusable Career Evidence Ledger, and Start Here guide.</p>
     </div>
   </section>
@@ -278,7 +285,7 @@
         <p><strong>Start Here</strong> is included as well: a short orientation guide explaining the recommended order and safe use of the materials.</p>
       </div>
       <div class="ktp-cta-row" style="margin-top:34px;">
-        <a class="ktp-btn ktp-btn--primary" data-ktp-cta="included" href="#final">Get the system</a>
+        <a class="ktp-btn ktp-btn--primary" data-ktp-cta="included" href="#final">Get Keep the Proof - $49</a>
       </div>
     </div>
   </section>
