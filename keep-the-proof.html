@@ -143,7 +143,15 @@
 .ktp-ba-note { margin-top: 24px; font-size: 14.5px; line-height: 1.7; color: var(--muted-warm); max-width: 62ch; }
 
 /* TWO-COLUMN: who it is for / what it is not */
+/* The two columns are already start-aligned. The visible problem was not the
+   trailing gap but the heading heights: "Keep the Proof is for you if..."
+   wraps to two lines while "Clear boundaries." takes one, so the two lists
+   began about 45px apart and read as misaligned. Reserving two lines of
+   heading height lets both lists start on the same line. 2.28em is exactly
+   two lines at the h2's 1.14 line-height, and it is expressed in em so it
+   tracks the clamped font size instead of being pinned to one viewport. */
 .ktp-two { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+.ktp-two .ktp-h2 { min-height: 2.28em; }
 
 /* SAFETY NOTE */
 .ktp-safety { border-left: 3px solid var(--rust); background: #FFFDF8;
@@ -190,6 +198,7 @@
   .ktp-wrap { padding: 0 22px; }
   .ktp-included, .ktp-steps, .ktp-ba, .ktp-format { grid-template-columns: 1fr; }
   .ktp-two { grid-template-columns: 1fr; gap: 44px; }
+  .ktp-two .ktp-h2 { min-height: 0; }
   .ktp-format div { border-top: 1px solid var(--line-warm); }
   .ktp-btn { width: 100%; }
   .ktp-h1, .ktp-h2 { max-width: none; }
