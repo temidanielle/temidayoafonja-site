@@ -126,7 +126,7 @@
         "date_display": "Wednesday, September 16, 2026",
         "start_time": "18:00",
         "end_time": "19:30",
-        "time_display": "6:00 to 7:30 PM CT",
+        "time_display": "6:00 to 7:00 PM CT",
         "timezone": "America/Chicago"
       },
       "minimum_age": 18,
@@ -141,7 +141,7 @@
       "format": "guided self-read",
       "format_note": "Called a guided self-read, not a live assessment, from August 14 2026. The session guides a room through the instrument; it is not personalized analysis of one participant.",
       "includes": [
-        "90-minute guided self-read",
+        "60-minute guided session",
         "Twelve-statement Capability Position Read, completed twice",
         "Evidence-led second reading",
         "Provisional state or boundary reading",
