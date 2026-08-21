@@ -112,6 +112,9 @@ p{margin:0;}
 a{color:inherit;}
 :focus-visible{outline:3px solid var(--signal);outline-offset:2px;}
 
+/* The nav is sticky, so anchor jumps need to clear its height or the
+   section heading lands underneath it. */
+section[id]{scroll-margin-top:92px;}
 .wrap{width:min(1240px,calc(100% - 40px));margin:0 auto;}
 .label{
   font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.16em;
