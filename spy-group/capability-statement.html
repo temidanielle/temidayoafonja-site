@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SPY Group | Capability Statement</title>
+<meta name="description" content="Capability statement for SPY Group, a service-disabled veteran-owned small business supporting federal procurement, supply chain, and logistics.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..800&family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:ital,wght@0,300..700;1,400..600&display=swap">
+<style>
+/* =====================================================================
+   SPY GROUP — capability statement, one page, letter.
+   The single document a contracting officer actually asks for. Same
+   tokens as the site; laid out to survive being printed in black and
+   white and stapled to a file.
+   ===================================================================== */
+:root{
+  --field-900:#0F1A15;--field-800:#14201B;--field-700:#1D2E26;--field-600:#2A4034;
+  --bone:#EDEDE5;--white:#FFFFFF;--amber:#D08A22;--amber-ink:#8C5A0F;--sage:#93A89B;
+  --ink:#16211C;--muted:#4E5B54;--line:rgba(22,33,28,.18);
+  --display:'Archivo','Helvetica Neue',Arial,sans-serif;
+  --body:'Public Sans','Helvetica Neue',Arial,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,Menlo,monospace;
+}
+*,*::before,*::after{box-sizing:border-box;}
+body{
+  margin:0;background:var(--bone);color:var(--ink);
+  font-family:var(--body);font-size:13px;line-height:1.5;
+  -webkit-font-smoothing:antialiased;padding:28px 16px 60px;
+}
+h1,h2,h3{font-family:var(--display);font-stretch:86%;font-weight:700;line-height:1.06;margin:0;letter-spacing:-.012em;}
+p,ul{margin:0;}
+a{color:inherit;}
+:focus-visible{outline:2px solid var(--amber-ink);outline-offset:2px;}
+
+.toolbar{
+  width:min(8.5in,100%);margin:0 auto 16px;display:flex;justify-content:space-between;
+  align-items:center;gap:14px;flex-wrap:wrap;
+  font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);
+}
+.toolbar a,.toolbar button{
+  font:inherit;text-transform:uppercase;letter-spacing:.1em;
+  background:var(--field-800);color:var(--bone);border:none;
+  padding:9px 15px;cursor:pointer;text-decoration:none;
+}
+.toolbar a:hover,.toolbar button:hover{background:var(--field-700);}
+.toolbar .back{background:none;color:var(--muted);border:1px solid var(--line);}
+.toolbar .back:hover{background:rgba(22,33,28,.05);}
+
+.sheet{
+  width:min(8.5in,100%);min-height:11in;margin:0 auto;background:var(--white);
+  box-shadow:0 2px 24px rgba(22,33,28,.14);padding:0.5in;display:flex;flex-direction:column;
+}
+
+/* ── LETTERHEAD ── */
+.head{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;
+  border-bottom:3px solid var(--field-800);padding-bottom:14px;}
+.brand{display:flex;align-items:center;gap:11px;}
+.glyph{width:42px;height:42px;flex:0 0 42px;border:2px solid var(--field-800);display:grid;place-items:center;
+  font-family:var(--display);font-stretch:80%;font-weight:800;font-size:19px;color:var(--field-800);}
+.brand h1{font-size:31px;letter-spacing:.05em;text-transform:uppercase;font-weight:800;}
+.brand .tag{font-family:var(--mono);font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);margin-top:3px;}
+.designations{text-align:right;font-family:var(--mono);font-size:9.5px;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--field-800);line-height:1.75;}
+.designations b{color:var(--amber-ink);font-weight:600;}
+
+.docline{
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+  font-family:var(--mono);font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--muted);padding:9px 0 16px;border-bottom:1px solid var(--line);
+}
+
+/* ── BODY GRID ── */
+.cols{display:grid;grid-template-columns:1.55fr 1fr;gap:26px;padding-top:16px;flex:1;}
+@media(max-width:720px){.cols{grid-template-columns:1fr;gap:22px;}}
+
+h2.sec{
+  font-size:13px;text-transform:uppercase;letter-spacing:.13em;font-family:var(--mono);
+  font-weight:600;color:var(--white);background:var(--field-800);
+  padding:5px 9px;margin-bottom:11px;
+}
+.block + .block{margin-top:18px;}
+.block p{font-size:12.5px;color:var(--ink);line-height:1.52;}
+.block p + p{margin-top:8px;}
+
+.comp{display:flex;flex-direction:column;gap:11px;}
+.comp h3{font-size:14px;}
+.comp .code{font-family:var(--mono);font-size:9.5px;letter-spacing:.09em;color:var(--amber-ink);margin-bottom:3px;}
+.comp p{font-size:12px;color:var(--muted);line-height:1.48;margin-top:3px;}
+
+ul.tight{list-style:none;padding:0;display:flex;flex-direction:column;gap:6px;}
+ul.tight li{font-size:12.5px;line-height:1.45;padding-left:15px;position:relative;}
+ul.tight li::before{content:"";position:absolute;left:0;top:.6em;width:7px;height:1.5px;background:var(--amber-ink);}
+ul.tight li b{font-weight:600;}
+
+/* ── COMPANY DATA RAIL ── */
+.data{border:1px solid var(--line);padding:0;}
+.data dl{margin:0;}
+.data .row{display:grid;grid-template-columns:.85fr 1.15fr;gap:8px;padding:7px 10px;border-bottom:1px solid var(--line);}
+.data .row:last-child{border-bottom:none;}
+.data dt{font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0;}
+.data dd{margin:0;font-family:var(--mono);font-size:11px;font-weight:500;color:var(--ink);
+  font-variant-numeric:tabular-nums;word-break:break-word;}
+.pending{color:var(--amber-ink);border-bottom:1px dashed rgba(140,90,15,.6);}
+
+.poc{background:var(--field-800);color:var(--bone);padding:13px 14px;margin-top:14px;}
+.poc .lbl{font-family:var(--mono);font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);margin-bottom:9px;}
+.poc dl{margin:0;display:flex;flex-direction:column;gap:7px;}
+.poc dt{font-family:var(--mono);font-size:8.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--sage);}
+.poc dd{margin:0;font-size:12.5px;color:var(--white);}
+.poc dd a{color:var(--amber);text-decoration:none;}
+.poc .pending{color:var(--amber);border-bottom-color:rgba(208,138,34,.6);}
+
+.foot{
+  margin-top:18px;padding-top:10px;border-top:3px solid var(--field-800);
+  font-family:var(--mono);font-size:9px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);
+  display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+}
+
+/* ── PRINT ── */
+@page{size:letter;margin:0.45in;}
+@media print{
+  body{background:#fff;padding:0;font-size:11.5px;}
+  .toolbar{display:none;}
+  .sheet{box-shadow:none;width:100%;min-height:0;padding:0;}
+  h2.sec{background:#14201B !important;color:#fff !important;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  .poc{background:#14201B !important;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  .cols{grid-template-columns:1.55fr 1fr;}
+  a{text-decoration:none;}
+}
+</style>
+</head>
+<body>
+
+<div class="toolbar">
+  <a class="back" href="index.html">← Back to site</a>
+  <span>Prototype — placeholder identifiers</span>
+  <button type="button" onclick="window.print()">Print / save as PDF</button>
+</div>
+
+<div class="sheet">
+
+  <div class="head">
+    <div class="brand">
+      <span class="glyph" aria-hidden="true">S</span>
+      <div>
+        <h1>SPY Group</h1>
+        <div class="tag">Procurement · Supply Chain · Logistics</div>
+      </div>
+    </div>
+    <div class="designations">
+      <b>Service-Disabled Veteran-Owned Small Business</b><br>
+      Minority-Owned · Small Business<br>
+      Registered in SAM.gov
+    </div>
+  </div>
+
+  <div class="docline">
+    <span>Capability Statement</span>
+    <span>UEI <span class="pending">pending</span> · CAGE <span class="pending">pending</span></span>
+    <span>Revised 2026</span>
+  </div>
+
+  <div class="cols">
+
+    <!-- LEFT COLUMN -->
+    <div>
+      <section class="block">
+        <h2 class="sec">Company overview</h2>
+        <p>SPY Group is a service-disabled veteran-owned small business providing federal procurement support, supply chain management, and logistics execution. The company is founded and led by a 100 percent disabled veteran, and carries small business, veteran, and minority-owned designations.</p>
+        <p>We work two ways: directly with contracting offices on micro-purchase, simplified-acquisition, and SDVOSB set-aside requirements, and as a subcontractor to prime contractors carrying small-business subcontracting plans.</p>
+      </section>
+
+      <section class="block">
+        <h2 class="sec">Core competencies</h2>
+        <div class="comp">
+          <div>
+            <div class="code">NAICS 541611 · 561499</div>
+            <h3>Procurement &amp; acquisition support</h3>
+            <p>Market research and sources-sought responses · vendor identification and qualification · quote consolidation · spend analysis and price reasonableness documentation · purchase order administration and CLIN structuring · FAR-aligned file documentation and close-out.</p>
+          </div>
+          <div>
+            <div class="code">NAICS 541614</div>
+            <h3>Supply chain management</h3>
+            <p>Demand planning and inventory policy · supplier diversification and single-source risk reduction · lead-time management, expediting, and shortage recovery · Buy American and TAA compliance screening · obsolescence and end-of-life planning.</p>
+          </div>
+          <div>
+            <div class="code">NAICS 488510 · 484121 · 493110</div>
+            <h3>Logistics &amp; distribution</h3>
+            <p>Freight arrangement across LTL, truckload, and expedited modes · warehousing, kitting, and staging · delivery to installations and last-mile coordination · property accountability and receipt reconciliation · reverse logistics and disposition.</p>
+          </div>
+          <div>
+            <div class="code">NAICS 423 series — codes to be selected</div>
+            <h3>Product supply</h3>
+            <p>Commodity fulfillment against defined product lines: MRO and facility consumables, safety equipment and PPE, IT peripherals, janitorial and sanitation supply, office products. Categories under evaluation and selected for lead-time reliability and compliant sourcing.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2 class="sec">Differentiators</h2>
+        <ul class="tight">
+          <li><b>Award authority, not just a label.</b> SDVOSB status supports set-aside and sole-source awards and credits against agency small-business goaling, shortening the procurement timeline.</li>
+          <li><b>Documentation as it happens.</b> Custody, receipt, and price reasonableness are recorded during execution, so the contract file is defensible on the day it is reviewed.</li>
+          <li><b>Sized for the requirement.</b> A purchase-card order receives the same attention as a task order, and the point of contact is the person accountable for the delivery date.</li>
+          <li><b>Stacked designations.</b> Veteran, service-disabled, minority-owned, and small — one supplier satisfying several participation categories at once.</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div>
+      <section class="block">
+        <h2 class="sec">Company data</h2>
+        <div class="data">
+          <dl>
+            <div class="row"><dt>Legal name</dt><dd class="pending">SPY Group LLC</dd></div>
+            <div class="row"><dt>UEI</dt><dd class="pending">Pending</dd></div>
+            <div class="row"><dt>CAGE</dt><dd class="pending">Pending</dd></div>
+            <div class="row"><dt>Business size</dt><dd>Small</dd></div>
+            <div class="row"><dt>Certifications</dt><dd>SDVOSB<br>(SBA VetCert)</dd></div>
+            <div class="row"><dt>Primary NAICS</dt><dd>541614</dd></div>
+            <div class="row"><dt>Additional NAICS</dt><dd>541611 · 561499<br>488510 · 484121<br>493110</dd></div>
+            <div class="row"><dt>PSC codes</dt><dd class="pending">To be selected</dd></div>
+            <div class="row"><dt>Accepts</dt><dd>GPC · SAP<br>Purchase orders</dd></div>
+            <div class="row"><dt>Geographic</dt><dd>CONUS<br>OCONUS via partners</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="block">
+        <h2 class="sec">Past performance</h2>
+        <p>SPY Group is newly established. Where past performance is a requirement, we compete as a subcontractor or teaming partner and offer the founder's operational record in its place. References available on request.</p>
+      </section>
+
+      <section class="block">
+        <h2 class="sec">Paths to award</h2>
+        <ul class="tight">
+          <li>Government purchase card, micro-purchase</li>
+          <li>Simplified acquisition procedures</li>
+          <li>SDVOSB set-aside and sole-source</li>
+          <li>Subcontract under a small-business plan</li>
+          <li>Joint venture and mentor-protégé</li>
+        </ul>
+      </section>
+
+      <div class="poc">
+        <div class="lbl">Point of contact</div>
+        <dl>
+          <div><dt>Name</dt><dd class="pending">Founder name</dd></div>
+          <div><dt>Title</dt><dd>Founder &amp; Principal</dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:contracts@spygroup.com">contracts@spygroup.com</a></dd></div>
+          <div><dt>Phone</dt><dd class="pending">(000) 000-0000</dd></div>
+          <div><dt>Address</dt><dd class="pending">City, State ZIP</dd></div>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">
+    <span>SPY Group · SDVOSB</span>
+    <span>spygroup.com</span>
+    <span>Prototype — placeholder data</span>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /dashboard.html
+# Design prototype for a separate business. Not part of this site.
+Disallow: /spy-group/
 
 Sitemap: https://temidayoafonja.com/sitemap.xml

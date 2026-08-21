@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SPY Group | Federal Procurement, Supply Chain &amp; Logistics</title>
+<meta name="description" content="SPY Group is a service-disabled veteran-owned small business supporting federal procurement, supply chain management, and logistics execution.">
+<!-- Prototype hosted under a working domain. Keep it out of search results. -->
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,400..800&family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:ital,wght@0,300..700;1,400..600&display=swap">
+<style>
+/* =====================================================================
+   SPY GROUP — prototype design system
+   Direction: "manifest / dispatch board". Deep field green ground, bone
+   paper bands, one stencil-ochre accent. Type: Archivo semi-condensed
+   (display) / Public Sans (body, the USWDS federal face) / IBM Plex Mono
+   (identifiers). Single visual world by intent: this is a website
+   prototype, so it renders the same for every viewer rather than
+   following the reader's light/dark preference. Every colour is painted
+   explicitly for that reason.
+   ===================================================================== */
+
+:root {
+  --field-900:#0F1A15;   /* nav, footer, deepest ground */
+  --field-800:#14201B;   /* dark band ground */
+  --field-700:#1D2E26;   /* panel on dark */
+  --field-600:#2A4034;   /* hairline on dark */
+  --bone:#EDEDE5;        /* light band ground */
+  --bone-2:#F7F7F2;      /* card on light */
+  --white:#FFFFFF;
+  --amber:#D08A22;       /* accent on dark ground */
+  --amber-ink:#8C5A0F;   /* accent as text on bone (4.98:1) */
+  --sage:#93A89B;        /* secondary text on dark (6.66:1) */
+  --ink:#16211C;         /* text on bone */
+  --muted:#4E5B54;       /* secondary text on bone (5.99:1) */
+  --line:rgba(22,33,28,.16);
+
+  --display:'Archivo','Helvetica Neue',Arial,sans-serif;
+  --body:'Public Sans','Helvetica Neue',Arial,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,'SF Mono',Menlo,monospace;
+}
+
+*,*::before,*::after{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;background:var(--bone);color:var(--ink);
+  font-family:var(--body);font-size:17px;font-weight:400;line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{
+  font-family:var(--display);font-stretch:86%;font-weight:700;
+  letter-spacing:-.015em;line-height:1.04;margin:0;text-wrap:balance;
+}
+p{margin:0;}
+a{color:inherit;}
+img{max-width:100%;}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;}
+
+.wrap{width:min(1160px,calc(100% - 44px));margin:0 auto;}
+.band{padding:clamp(64px,8vw,104px) 0;}
+.band.dark{background:var(--field-800);color:var(--bone);}
+.band.paper{background:var(--bone);}
+.band.white{background:var(--white);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+
+/* Eyebrows double as the page's structural labels — always mono, always
+   naming a real category (a section of a capability statement). */
+.eyebrow{
+  font-family:var(--mono);font-size:11.5px;font-weight:500;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--amber-ink);
+  display:block;margin-bottom:18px;
+}
+.dark .eyebrow{color:var(--amber);}
+.lead{font-size:19px;line-height:1.58;color:var(--muted);}
+.dark .lead{color:rgba(237,237,229,.76);}
+
+/* ── PROTOTYPE STRIP ───────────────────────────────────────────────── */
+.proto{
+  background:var(--field-900);color:var(--amber);
+  font-family:var(--mono);font-size:11px;letter-spacing:.12em;
+  text-transform:uppercase;text-align:center;padding:7px 16px;
+  border-bottom:1px solid var(--field-600);
+}
+.proto span{color:var(--sage);}
+
+/* ── NAV ───────────────────────────────────────────────────────────── */
+.nav{
+  position:sticky;top:0;z-index:50;background:var(--field-900);
+  border-bottom:1px solid var(--field-600);
+}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0;}
+.mark{display:flex;align-items:center;gap:11px;text-decoration:none;}
+.mark-glyph{
+  width:34px;height:34px;flex:0 0 34px;border:1.5px solid var(--amber);
+  display:grid;place-items:center;font-family:var(--display);font-stretch:80%;
+  font-weight:800;font-size:15px;color:var(--amber);letter-spacing:.02em;
+}
+.mark-txt{line-height:1.1;}
+.mark-name{
+  font-family:var(--display);font-stretch:84%;font-weight:800;font-size:18px;
+  letter-spacing:.06em;color:var(--bone);text-transform:uppercase;display:block;
+}
+.mark-sub{
+  font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;
+  color:var(--sage);text-transform:uppercase;display:block;margin-top:2px;
+}
+.nav-links{display:flex;align-items:center;gap:26px;list-style:none;margin:0;padding:0;}
+.nav-links a{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--sage);text-decoration:none;transition:color .18s;
+}
+.nav-links a:hover{color:var(--bone);}
+.nav-links .cta{
+  color:var(--field-900);background:var(--amber);padding:9px 15px;font-weight:500;
+}
+.nav-links .cta:hover{background:#E5A03C;color:var(--field-900);}
+/* Below 900px the section links move to their own row and scroll
+   sideways rather than disappearing: this is a one-page site, so the
+   anchors are the only navigation there is. */
+@media(max-width:900px){
+  .nav-in{flex-wrap:wrap;gap:0;padding-bottom:0;}
+  .mark{flex:1 1 auto;}
+  .nav-links{
+    order:3;flex:1 0 100%;gap:0;overflow-x:auto;
+    border-top:1px solid var(--field-600);margin-top:12px;
+    scrollbar-width:none;-webkit-overflow-scrolling:touch;
+  }
+  .nav-links::-webkit-scrollbar{display:none;}
+  .nav-links li{flex:0 0 auto;}
+  .nav-links li:not(.cta-li) a{display:block;padding:12px 15px 12px 0;white-space:nowrap;}
+  .nav-links li:not(.cta-li):first-child a{padding-left:0;}
+  .nav-links .cta-li{display:none;}   /* the hero CTA covers this on mobile */
+}
+
+/* ── HERO ──────────────────────────────────────────────────────────── */
+.hero{
+  background:var(--field-800);color:var(--bone);position:relative;overflow:hidden;
+  padding:clamp(62px,9vw,116px) 0 clamp(56px,7vw,88px);
+}
+/* Ambient: a faint pallet-grid, drawn once behind the hero. Reads as a
+   loading-dock floor plan rather than decoration for its own sake. */
+.hero::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:
+    linear-gradient(to right,rgba(147,168,155,.07) 1px,transparent 1px),
+    linear-gradient(to bottom,rgba(147,168,155,.07) 1px,transparent 1px);
+  background-size:74px 74px;
+  -webkit-mask-image:radial-gradient(120% 90% at 82% 8%,#000 0%,transparent 72%);
+  mask-image:radial-gradient(120% 90% at 82% 8%,#000 0%,transparent 72%);
+}
+.hero .wrap{position:relative;z-index:1;}
+.hero h1{
+  font-size:clamp(38px,6.4vw,78px);color:var(--white);max-width:15ch;
+  margin-bottom:24px;font-weight:800;
+}
+.hero h1 em{font-style:normal;color:var(--amber);}
+.hero .lead{max-width:62ch;margin-bottom:34px;font-size:19.5px;}
+.actions{display:flex;flex-wrap:wrap;gap:12px;}
+.btn{
+  display:inline-flex;align-items:center;gap:9px;padding:14px 22px;
+  font-family:var(--mono);font-size:12.5px;font-weight:500;letter-spacing:.1em;
+  text-transform:uppercase;text-decoration:none;border:1.5px solid transparent;
+  transition:background .18s,color .18s,border-color .18s;
+}
+.btn.solid{background:var(--amber);color:var(--field-900);}
+.btn.solid:hover{background:#E5A03C;}
+.btn.ghost{border-color:var(--field-600);color:var(--bone);}
+.btn.ghost:hover{border-color:var(--sage);background:rgba(147,168,155,.08);}
+.btn.ink{background:var(--field-800);color:var(--bone);}
+.btn.ink:hover{background:var(--field-700);}
+.btn.outline-ink{border-color:var(--line);color:var(--ink);}
+.btn.outline-ink:hover{background:rgba(22,33,28,.05);}
+
+/* Set-aside chips under the hero copy */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px;}
+.chip{
+  font-family:var(--mono);font-size:11px;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--amber);border:1px solid rgba(208,138,34,.45);padding:6px 11px;
+}
+.chip.plain{color:var(--sage);border-color:var(--field-600);}
+
+/* ── ENTITY RECORD (manifest strip) ───────────────────────────────── */
+.record{background:var(--field-900);border-top:1px solid var(--field-600);padding:0;}
+.record-head{
+  font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--sage);padding:18px 0 14px;border-bottom:1px solid var(--field-600);
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+}
+.record-head strong{color:var(--amber);font-weight:500;}
+.record-grid{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+  margin:0 -22px;   /* pulls the cells into the page gutter so the first
+                       column's text still lines up with the label above */
+}
+.rec{
+  padding:22px;border-right:1px solid var(--field-600);
+  border-bottom:1px solid var(--field-600);
+}
+.rec:nth-child(4n){border-right:none;}
+.rec dt{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--sage);margin-bottom:7px;
+}
+.rec dd{
+  margin:0;font-family:var(--mono);font-size:15px;font-weight:500;color:var(--bone);
+  letter-spacing:.01em;font-variant-numeric:tabular-nums;
+}
+.rec dd small{display:block;font-size:11.5px;font-weight:400;color:var(--sage);letter-spacing:.06em;margin-top:5px;text-transform:uppercase;}
+/* Anything not yet issued is marked, not faked. */
+.pending{color:var(--amber);border-bottom:1px dashed rgba(208,138,34,.55);}
+@media(max-width:860px){.record-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.rec:nth-child(2n){border-right:none;}.rec:nth-child(4n){border-right:1px solid var(--field-600);}}
+@media(max-width:520px){.record-grid{grid-template-columns:1fr;}.rec{border-right:none !important;}}
+
+/* ── SECTION HEAD ─────────────────────────────────────────────────── */
+.sec-head{display:grid;grid-template-columns:1fr 1.15fr;gap:52px;align-items:end;margin-bottom:44px;}
+.sec-head h2{font-size:clamp(28px,3.9vw,46px);}
+.sec-head p{font-size:16.5px;color:var(--muted);}
+.dark .sec-head p{color:rgba(237,237,229,.72);}
+@media(max-width:840px){.sec-head{grid-template-columns:1fr;gap:20px;}}
+
+/* ── CAPABILITY CARDS ─────────────────────────────────────────────── */
+.caps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);}
+.cap{background:var(--bone-2);padding:34px 32px 32px;display:flex;flex-direction:column;}
+.cap-naics{
+  font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--amber-ink);
+  margin-bottom:14px;font-variant-numeric:tabular-nums;
+}
+.cap h3{font-size:25px;margin-bottom:12px;}
+.cap > p{font-size:15.5px;color:var(--muted);margin-bottom:18px;}
+.cap ul{margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:9px;}
+.cap li{
+  font-size:15px;line-height:1.5;color:var(--ink);padding-left:19px;position:relative;
+}
+.cap li::before{
+  content:"";position:absolute;left:0;top:.62em;width:8px;height:1.5px;background:var(--amber-ink);
+}
+.cap .status{
+  margin-top:auto;padding-top:20px;font-family:var(--mono);font-size:11px;
+  letter-spacing:.11em;text-transform:uppercase;color:var(--muted);
+}
+.cap .status b{color:var(--amber-ink);font-weight:500;}
+@media(max-width:800px){.caps{grid-template-columns:1fr;}}
+
+/* ── PATHS TO AWARD (threshold ladder) ────────────────────────────── */
+/* Ordered because the content is genuinely ordered: each rung is a higher
+   dollar ceiling and a different acquisition authority. */
+.ladder{display:flex;flex-direction:column;gap:1px;background:var(--field-600);border:1px solid var(--field-600);}
+.rung{
+  background:var(--field-800);display:grid;grid-template-columns:132px 1fr 1.35fr;
+  gap:26px;padding:24px 26px;align-items:baseline;
+}
+.rung-cap{
+  font-family:var(--mono);font-size:19px;font-weight:600;color:var(--amber);
+  font-variant-numeric:tabular-nums;letter-spacing:-.01em;
+}
+.rung-cap small{display:block;font-size:10.5px;font-weight:400;color:var(--sage);letter-spacing:.13em;text-transform:uppercase;margin-top:6px;}
+.rung h3{font-size:20px;color:var(--bone);}
+.rung p{font-size:15px;color:rgba(237,237,229,.7);line-height:1.55;}
+@media(max-width:820px){.rung{grid-template-columns:1fr;gap:10px;}}
+.ladder-note{
+  margin-top:16px;font-family:var(--mono);font-size:11.5px;line-height:1.7;
+  letter-spacing:.04em;color:var(--sage);
+}
+
+/* ── DIFFERENTIATORS ──────────────────────────────────────────────── */
+.diffs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:26px;}
+.diff{border-top:2px solid var(--ink);padding-top:20px;}
+.diff h3{font-size:21px;margin-bottom:11px;}
+.diff p{font-size:15.5px;color:var(--muted);}
+@media(max-width:820px){.diffs{grid-template-columns:1fr;gap:22px;}}
+
+/* ── WHO WE SERVE ─────────────────────────────────────────────────── */
+.serve{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;}
+.serve div{border-left:2px solid var(--amber);padding-left:16px;}
+.serve h4{font-size:17px;color:var(--bone);margin-bottom:7px;}
+.serve p{font-size:14.5px;color:rgba(237,237,229,.7);line-height:1.5;}
+@media(max-width:860px){.serve{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;}}
+@media(max-width:480px){.serve{grid-template-columns:1fr;}}
+
+/* ── STATUS / ROADMAP ─────────────────────────────────────────────── */
+.track{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:8px;}
+.step{padding:0 22px 0 0;position:relative;}
+.step-bar{height:4px;background:var(--line);margin-bottom:18px;}
+.step.done .step-bar{background:var(--amber-ink);}
+.step.active .step-bar{background:repeating-linear-gradient(90deg,var(--amber-ink) 0 9px,transparent 9px 17px);}
+.step-state{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--muted);margin-bottom:9px;
+}
+.step.done .step-state,.step.active .step-state{color:var(--amber-ink);}
+.step h3{font-size:19px;margin-bottom:9px;}
+.step p{font-size:14.5px;color:var(--muted);line-height:1.5;}
+@media(max-width:860px){.track{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 20px;}}
+@media(max-width:520px){.track{grid-template-columns:1fr;gap:24px;}.step{padding-right:0;}}
+
+/* ── PAST PERFORMANCE NOTE ────────────────────────────────────────── */
+.note{
+  margin-top:44px;background:var(--white);border:1px solid var(--line);
+  border-left:3px solid var(--amber-ink);padding:28px 30px;
+  display:grid;grid-template-columns:1fr 1.6fr;gap:30px;align-items:center;
+}
+.note h3{font-size:21px;margin-bottom:8px;}
+.note p{font-size:15.5px;color:var(--muted);}
+@media(max-width:760px){.note{grid-template-columns:1fr;gap:14px;}}
+
+/* ── CONTACT ──────────────────────────────────────────────────────── */
+.contact{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:start;}
+.contact h2{font-size:clamp(28px,4vw,48px);color:var(--white);margin-bottom:18px;}
+.poc{background:var(--field-700);border:1px solid var(--field-600);padding:30px 30px 26px;}
+.poc-label{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--sage);margin-bottom:16px;
+}
+.poc dl{margin:0;display:flex;flex-direction:column;gap:15px;}
+.poc dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);margin-bottom:4px;}
+.poc dd{margin:0;font-size:16px;color:var(--bone);}
+.poc dd a{color:var(--amber);text-decoration:none;border-bottom:1px solid rgba(208,138,34,.4);}
+.poc dd a:hover{color:#E5A03C;}
+@media(max-width:820px){.contact{grid-template-columns:1fr;gap:34px;}}
+
+/* ── FOOTER ───────────────────────────────────────────────────────── */
+footer{background:var(--field-900);color:var(--sage);padding:38px 0 44px;border-top:1px solid var(--field-600);}
+.foot{display:flex;justify-content:space-between;gap:26px;flex-wrap:wrap;align-items:flex-start;}
+.foot p{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;line-height:1.85;}
+.foot .legal{color:var(--bone);}
+.foot a{color:var(--sage);text-decoration:none;border-bottom:1px solid var(--field-600);}
+.foot a:hover{color:var(--amber);}
+
+/* ── MOTION ───────────────────────────────────────────────────────── */
+/* Deliberately minimal. Hover states on links and buttons are the only
+   movement on the page: a dispatch board does not fade in. */
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *{transition:none !important;}
+}
+</style>
+</head>
+<body>
+
+<div class="proto">Prototype for review <span>— identifiers marked “pending” are placeholders, not live registration data</span></div>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="mark" href="#top">
+      <span class="mark-glyph" aria-hidden="true">S</span>
+      <span class="mark-txt">
+        <span class="mark-name">SPY Group</span>
+        <span class="mark-sub">Procurement · Supply Chain · Logistics</span>
+      </span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#capabilities">Capabilities</a></li>
+      <li><a href="#award">Paths to award</a></li>
+      <li><a href="#why">Differentiators</a></li>
+      <li><a href="#status">Status</a></li>
+      <li class="cta-li"><a class="cta" href="#contact">Capability statement</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="chips">
+        <span class="chip">Service-disabled veteran-owned</span>
+        <span class="chip">Minority-owned</span>
+        <span class="chip plain">Small business</span>
+        <span class="chip plain">SAM.gov registered</span>
+      </div>
+      <h1>What the mission needs. <em>Sourced, moved, accounted for.</em></h1>
+      <p class="lead">SPY Group is a service-disabled veteran-owned small business built for federal procurement, supply chain management, and logistics execution. We give contracting officers a clean path to award and prime contractors a small-business partner who documents every step.</p>
+      <div class="actions">
+        <a class="btn solid" href="capability-statement.html">Capability statement</a>
+        <a class="btn ghost" href="#contact">Start a teaming conversation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENTITY RECORD -->
+  <section class="record" aria-label="Entity record">
+    <div class="wrap">
+      <div class="record-head">
+        <span>Entity record <strong>— everything a contracting officer checks first</strong></span>
+        <span>Verified in SAM.gov</span>
+      </div>
+      <dl class="record-grid">
+        <div class="rec"><dt>Unique Entity ID (UEI)</dt><dd><span class="pending">Pending</span><small>Issued at SAM registration</small></dd></div>
+        <div class="rec"><dt>CAGE code</dt><dd><span class="pending">Pending</span><small>Assigned via DLA</small></dd></div>
+        <div class="rec"><dt>Business size</dt><dd>Small<small>Under all listed NAICS</small></dd></div>
+        <div class="rec"><dt>Socio-economic</dt><dd>SDVOSB<small>Veteran · minority-owned</small></dd></div>
+        <div class="rec"><dt>Primary NAICS</dt><dd>541614<small>Logistics consulting</small></dd></div>
+        <div class="rec"><dt>Secondary NAICS</dt><dd>488510 · 493110<small>Freight arrangement · warehousing</small></dd></div>
+        <div class="rec"><dt>Accepts</dt><dd>GPC · SAP<small>Purchase card &amp; simplified acquisition</small></dd></div>
+        <div class="rec"><dt>Geographic reach</dt><dd>CONUS<small>OCONUS through partners</small></dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- CAPABILITIES -->
+  <section class="band paper" id="capabilities">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">Core competencies</span>
+          <h2>Four lines of work, one accountability chain.</h2>
+        </div>
+        <p>Each competency is tagged with the NAICS code it is bid under, so a buyer can match this page to a solicitation without a phone call. The first three are the practice today; the fourth is where product lines are being defined.</p>
+      </div>
+
+      <div class="caps">
+        <article class="cap">
+          <div class="cap-naics">NAICS 541611 · 561499</div>
+          <h3>Procurement &amp; acquisition support</h3>
+          <p>The paperwork and market work that gets a requirement from a need statement to a defensible award.</p>
+          <ul>
+            <li>Market research and sources-sought responses</li>
+            <li>Vendor identification, qualification, and quote consolidation</li>
+            <li>Spend analysis and price reasonableness documentation</li>
+            <li>Purchase order administration and CLIN structuring</li>
+            <li>FAR-aligned file documentation and close-out</li>
+          </ul>
+          <p class="status">Status <b>Active</b></p>
+        </article>
+
+        <article class="cap">
+          <div class="cap-naics">NAICS 541614</div>
+          <h3>Supply chain management</h3>
+          <p>Keeping a schedule intact when the supplier base, the lead times, or the compliance rules move.</p>
+          <ul>
+            <li>Demand planning and inventory policy</li>
+            <li>Supplier diversification and single-source risk reduction</li>
+            <li>Lead-time management, expediting, and shortage recovery</li>
+            <li>Buy American and TAA compliance screening</li>
+            <li>Obsolescence and end-of-life planning</li>
+          </ul>
+          <p class="status">Status <b>Active</b></p>
+        </article>
+
+        <article class="cap">
+          <div class="cap-naics">NAICS 488510 · 484121 · 493110</div>
+          <h3>Logistics &amp; distribution</h3>
+          <p>Moving and holding materiel, with custody documented at every hand-off.</p>
+          <ul>
+            <li>Freight arrangement: LTL, truckload, expedited</li>
+            <li>Warehousing, kitting, and staging</li>
+            <li>Delivery to installations and last-mile coordination</li>
+            <li>Property accountability and receipt reconciliation</li>
+            <li>Reverse logistics, returns, and disposition</li>
+          </ul>
+          <p class="status">Status <b>Active</b></p>
+        </article>
+
+        <article class="cap">
+          <div class="cap-naics">NAICS 423 series · to be selected</div>
+          <h3>Product supply</h3>
+          <p>Commodity fulfillment against defined product lines. Categories under evaluation, chosen for lead-time reliability and compliant sourcing rather than breadth.</p>
+          <ul>
+            <li>MRO, industrial, and facility consumables</li>
+            <li>Safety equipment and personal protective equipment</li>
+            <li>IT peripherals and accessories</li>
+            <li>Janitorial and sanitation supply</li>
+            <li>Office products and furniture</li>
+          </ul>
+          <p class="status">Status <b>In definition — see build-out below</b></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PATHS TO AWARD -->
+  <section class="band dark" id="award">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">Paths to award</span>
+          <h2>Four ways to put work here, by ceiling.</h2>
+        </div>
+        <p>SDVOSB status is not a courtesy line on a website — it is an acquisition authority. These are the mechanisms a buyer can actually use, from a card purchase up to a sole-source award, ordered by dollar ceiling.</p>
+      </div>
+
+      <div class="ladder">
+        <div class="rung">
+          <div class="rung-cap">$10K<small>Ceiling</small></div>
+          <h3>Government purchase card</h3>
+          <p>Micro-purchase. A card holder buys directly, no competition required, and the spend counts toward the agency's small-business and veteran goals.</p>
+        </div>
+        <div class="rung">
+          <div class="rung-cap">$250K<small>Ceiling</small></div>
+          <h3>Simplified acquisition</h3>
+          <p>Streamlined procedures below the simplified acquisition threshold. Acquisitions in this range are reserved for small business — quotes turned in a week, not a quarter.</p>
+        </div>
+        <div class="rung">
+          <div class="rung-cap">$4.5M<small>Services &amp; supplies</small></div>
+          <h3>SDVOSB set-aside or sole source</h3>
+          <p>A contracting officer may set an acquisition aside for service-disabled veteran-owned small businesses, or award sole-source without competition when the criteria are met. Manufacturing carries a higher ceiling.</p>
+        </div>
+        <div class="rung">
+          <div class="rung-cap">No cap<small>Subcontract</small></div>
+          <h3>Teaming &amp; subcontracting</h3>
+          <p>For primes carrying a small-business subcontracting plan: SDVOSB subcontract dollars count against the plan's goals. Joint ventures and mentor-protégé arrangements welcome.</p>
+        </div>
+      </div>
+      <p class="ladder-note">Thresholds shown reflect current FAR small-business rules and are reviewed periodically. Confirm the figure that applies to your specific acquisition before relying on it.</p>
+    </div>
+  </section>
+
+  <!-- DIFFERENTIATORS -->
+  <section class="band white" id="why">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">Differentiators</span>
+          <h2>Why the file closes cleanly.</h2>
+        </div>
+        <p>Three reasons a buyer or a prime ends up better off, written the way they would have to justify the choice in writing.</p>
+      </div>
+      <div class="diffs">
+        <div class="diff">
+          <h3>Award authority, not just a label</h3>
+          <p>Service-disabled veteran-owned status opens set-aside and sole-source paths that shorten a procurement timeline and credit against agency goaling. The socio-economic categories stack: veteran, minority-owned, small.</p>
+        </div>
+        <div class="diff">
+          <h3>Documentation as a habit</h3>
+          <p>Founded and led by a veteran. Custody, receipt, and price reasonableness are documented as the work happens, so the contract file is defensible on the day it is audited rather than reconstructed later.</p>
+        </div>
+        <div class="diff">
+          <h3>Sized for the work</h3>
+          <p>Small enough that a purchase-card order gets the same attention as a task order, and direct enough that the person who answers the phone is the person accountable for the delivery date.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO WE SERVE -->
+  <section class="band dark">
+    <div class="wrap">
+      <span class="eyebrow">Who we serve</span>
+      <div class="serve">
+        <div>
+          <h4>Federal agencies</h4>
+          <p>Defense and civilian buying offices with small-business and veteran goals to meet.</p>
+        </div>
+        <div>
+          <h4>Prime contractors</h4>
+          <p>Primes carrying a small-business subcontracting plan and looking for reliable SDVOSB spend.</p>
+        </div>
+        <div>
+          <h4>State &amp; local</h4>
+          <p>Jurisdictions with veteran and minority business enterprise participation requirements.</p>
+        </div>
+        <div>
+          <h4>Commercial</h4>
+          <p>Corporate supplier-diversity programs sourcing qualified diverse suppliers in logistics categories.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATUS / BUILD-OUT -->
+  <section class="band paper" id="status">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">Where we are</span>
+          <h2>A new company, stated plainly.</h2>
+        </div>
+        <p>Buyers can tell the difference between a young firm and an evasive one. This is the registration and qualification sequence, and exactly which rung the company is standing on.</p>
+      </div>
+
+      <div class="track">
+        <div class="step done">
+          <div class="step-bar"></div>
+          <div class="step-state">Complete</div>
+          <h3>Entity formed</h3>
+          <p>Company established, banking and insurance in place, veteran ownership and control documented.</p>
+        </div>
+        <div class="step active">
+          <div class="step-bar"></div>
+          <div class="step-state">In progress</div>
+          <h3>Registered &amp; certified</h3>
+          <p>SAM.gov registration active with UEI and CAGE issued, and SDVOSB certification through the SBA Veteran Small Business Certification program.</p>
+        </div>
+        <div class="step">
+          <div class="step-bar"></div>
+          <div class="step-state">Next</div>
+          <h3>First awards</h3>
+          <p>Micro-purchase and simplified-acquisition work, plus subcontracts under primes, to establish documented past performance.</p>
+        </div>
+        <div class="step">
+          <div class="step-bar"></div>
+          <div class="step-state">Planned</div>
+          <h3>Contract vehicles</h3>
+          <p>GSA Multiple Award Schedule and agency-specific vehicles once past performance supports the application.</p>
+        </div>
+      </div>
+
+      <div class="note">
+        <div>
+          <h3>On past performance</h3>
+        </div>
+        <p>SPY Group is early, and says so. Where past performance is required, we compete as a subcontractor or team member and bring the founder's operational record in its place. References and a full capability statement are available on request.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="band dark" id="contact">
+    <div class="wrap contact">
+      <div>
+        <span class="eyebrow">Contact</span>
+        <h2>Send the requirement. We'll tell you honestly whether it's ours.</h2>
+        <p class="lead">If you have a sources-sought notice, a quote request, or a subcontracting goal to fill, send it over. If it isn't a fit, we'll say so and point you somewhere that is.</p>
+        <div class="actions" style="margin-top:28px;">
+          <a class="btn solid" href="capability-statement.html">Capability statement</a>
+          <a class="btn ghost" href="mailto:contracts@spygroup.com">Email the office</a>
+        </div>
+      </div>
+      <div class="poc">
+        <div class="poc-label">Point of contact</div>
+        <dl>
+          <div><dt>Name</dt><dd><span class="pending">Founder name</span></dd></div>
+          <div><dt>Title</dt><dd>Founder &amp; Principal</dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:contracts@spygroup.com">contracts@spygroup.com</a></dd></div>
+          <div><dt>Phone</dt><dd><span class="pending">(000) 000-0000</span></dd></div>
+          <div><dt>Location</dt><dd><span class="pending">City, State</span></dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <p class="legal">SPY GROUP<br>Service-Disabled Veteran-Owned Small Business<br>Minority-owned · Small business</p>
+    <p>Capabilities: procurement support<br>supply chain management<br>logistics &amp; distribution</p>
+    <p>UEI <span class="pending">pending</span> · CAGE <span class="pending">pending</span><br>NAICS 541614 · 488510 · 493110<br>Registered in <a href="https://sam.gov">SAM.gov</a></p>
+    <p>© 2026 SPY Group<br>Design prototype — not a live site<br>Placeholder identifiers throughout</p>
+  </div>
+</footer>
+
+</body>
+</html>
