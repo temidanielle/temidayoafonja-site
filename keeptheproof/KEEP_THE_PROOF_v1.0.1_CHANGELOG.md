@@ -6,6 +6,26 @@
 
 ---
 
+## RC5 packaging refinement (customer bundle, no product rebuild)
+
+A packaging-only change; neither product PDF was modified or rebuilt (both remain
+byte-identical, hashes unchanged).
+
+- Replaced the plain-text `READ_ME_FIRST.txt` with a one-page orientation PDF,
+  `KEEP_THE_PROOF_START_HERE_v1.0.1.pdf`, built in the handbook visual language
+  (warm ivory ground, navy type, restrained gold accents, the approved line-icon
+  style; no large cover icon). It renders cleanly with no clipping, overflow, or
+  broken icons across PyMuPDF, Ghostscript, Poppler, and PDFium, and carries the
+  footer "Keep the Proof v1.0.1 | For the purchaser's personal use."
+- The customer bundle `KEEP_THE_PROOF_CUSTOMER_BUNDLE_v1.0.1.zip` now contains
+  exactly three purchaser-facing files: the handbook PDF, the Career Evidence
+  Ledger PDF, and the Start Here PDF. `READ_ME_FIRST.txt` was removed. No source,
+  QA, or internal materials are in the bundle.
+- Public version remains 1.0.1, unpublished. No website, Gumroad, or
+  live-delivery change was made.
+
+---
+
 ## Internal build RC5 (interactive field-capacity correction, on top of RC4)
 
 The public version stays 1.0.1 (not distributed). RC5 corrects a release blocker

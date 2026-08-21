@@ -87,6 +87,23 @@ exact environment is exercised successfully.
 successful page-37 render test on Poppler 26.05 or later. No website, Gumroad,
 or live-delivery change has been made.
 
+**Customer bundle (packaging refinement).** The plain-text `READ_ME_FIRST.txt`
+was replaced with a one-page orientation PDF, `KEEP_THE_PROOF_START_HERE_v1.0.1.pdf`,
+built in the handbook visual language and verified to render with no clipping,
+overflow, or broken icons across PyMuPDF, Ghostscript, Poppler, and PDFium. The
+customer bundle `KEEP_THE_PROOF_CUSTOMER_BUNDLE_v1.0.1.zip` now contains exactly
+three purchaser-facing files and nothing else:
+
+| File | Bytes |
+| --- | --- |
+| `Keep_the_Proof_A_60_Minute_Career_Evidence_System_v1.0.1_FINAL.pdf` | 169,730 |
+| `Keep_the_Proof_Career_Evidence_Ledger_v1.0.1_FINAL.pdf` | 162,632 |
+| `KEEP_THE_PROOF_START_HERE_v1.0.1.pdf` | 32,879 |
+
+Both product PDFs are byte-identical to the RC5 build (hashes unchanged). New
+bundle SHA-256: `d2e4030d11d2b887de91abf37482bce352ade8a0c7feed6dd3f3d137d98cbc87`.
+Start Here PDF SHA-256: `5cfc6f0f9d1ff63a3688a1645fac80c3fbbad6e96dfe1ef4f73a83c2c1f9f2fc`.
+
 The RC4, RC3, and RC2 results below still hold (content, design, and forms are
 otherwise unchanged).
 
