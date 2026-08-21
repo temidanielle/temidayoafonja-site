@@ -29,8 +29,8 @@ All three carry identical content. They differ only in identity.
 
 ### Option 1 — Manifest
 
-Deep spruce-green ground (`#14201B`), bone bands (`#EDEDE5`), one
-stencil-ochre accent (`#D08A22`) — the color of crate markings. Archivo
+Deep spruce-green ground (`#20362C`), bone bands (`#EDEDE5`), one
+stencil-ochre accent (`#DFA03A`) — the color of crate markings. Archivo
 semi-condensed for headlines, **Public Sans** for body (the U.S. Web
 Design System typeface, so the page speaks the federal buyer's own
 idiom), IBM Plex Mono for every identifier.
