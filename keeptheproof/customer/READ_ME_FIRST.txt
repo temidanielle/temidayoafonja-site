@@ -6,21 +6,21 @@ Thank you for your purchase.
 
 WHAT IS IN THIS BUNDLE
 ----------------------
-1. Keep the Proof - the handbook (PDF, 39 pages)
+1. Keep the Proof - the handbook (PDF, 41 pages)
    The full system: what career evidence is, the five-part workflow,
    the capture and translation tools, six worked examples, the
    confidentiality standard, the 60-minute setup, and the monthly and
    quarterly routines. It ends with a set of reusable fillable pages:
-   a one-per-page Quick Capture and a two-page Full Career Evidence
+   a one-per-page Quick Capture and a three-page Full Career Evidence
    Entry. Read this first.
 
-2. Career Evidence Ledger - the reusable companion (PDF, 11 pages)
-   The fillable forms from the handbook, gathered so you can reuse
-   them for years: Quick Capture (one per page), the two-page Full
-   Career Evidence Entry, the Translation Worksheet, the Proof Line
-   Builder, the Monthly Proof Sweep, the Quarterly Proof Review, and
-   the Quarterly Evidence Index. Each PDF has real bookmarks, so you
-   can jump straight to any form.
+2. Career Evidence Ledger - the reusable companion (PDF, 12 pages)
+   The six reusable form sets from the handbook, gathered so you can
+   reuse them for years: Quick Capture (one per page), the three-page
+   Full Career Evidence Entry, the Translation Worksheet, the Proof
+   Line Builder, the Monthly Proof Sweep, the Quarterly Proof Review,
+   and the Quarterly Evidence Index. Each PDF has real bookmarks, so
+   you can jump straight to any form.
 
 BEFORE YOU BEGIN
 ----------------

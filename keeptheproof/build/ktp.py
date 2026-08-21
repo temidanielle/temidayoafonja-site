@@ -197,6 +197,9 @@ class Field(Flowable):
             while f"{nm}_{k}" in Field._seen: k += 1
             nm = f"{nm}_{k}"
         Field._seen.add(nm)
+        # Save/restore around the widget so no graphics-state change leaks into
+        # the surrounding content stream and produces renderer-dependent output.
+        canvas.saveState()
         canvas.acroForm.textfield(
             name=nm, x=ax, y=ay+2, width=self.width, height=self.height,
             borderStyle="solid", borderWidth=1.0, borderColor=self.border,
@@ -204,6 +207,7 @@ class Field(Flowable):
             fontName="Helvetica", fontSize=self.fontsize,
             fieldFlags=("multiline" if self.multiline else 0),
             annotationFlags="print")
+        canvas.restoreState()
     def draw(self):  # not used (drawOn overridden) but kept for safety
         pass
 
@@ -237,31 +241,34 @@ def two_up_fields(left, right, S, gap=16):
 # field-name prefix; suffixes below stay constant so the taught order is fixed.
 
 def quick_capture_fields(S, prefix):
-    """The five Quick Capture prompts, one per page. First three generous
-    multiline; the last two at least two lines. Every field is true multiline."""
+    """The five Quick Capture prompts, one per page. First three hold a full
+    200-300 character answer; the verifier and confidential-detail fields hold
+    80-140 characters. Every field is true multiline, full page width."""
     P = prefix
     return [
-        field_row("What happened?", f"{P}_what", S, height=56, multiline=True,
+        field_row("What happened?", f"{P}_what", S, height=60, multiline=True,
                   hint="The event or piece of work."),
         Spacer(1, 8),
         field_row("What was my specific contribution or judgment?", f"{P}_contrib", S,
-                  height=56, multiline=True, hint="Your part, not the team&#8217;s."),
+                  height=60, multiline=True, hint="Your part, not the team&#8217;s."),
         Spacer(1, 8),
         field_row("What changed, improved, became possible, or was prevented?", f"{P}_change", S,
-                  height=56, multiline=True, hint="The consequence."),
+                  height=60, multiline=True, hint="The consequence."),
         Spacer(1, 8),
         field_row("Verifier role or permitted public reference", f"{P}_verify", S,
-                  height=32, multiline=True,
+                  height=40, multiline=True,
                   hint="Use a role or public source. Do not store a colleague&#8217;s personal details."),
         Spacer(1, 8),
-        field_row("Confidential detail to keep out", f"{P}_out", S, height=32, multiline=True,
+        field_row("Confidential detail to keep out", f"{P}_out", S, height=40, multiline=True,
                   hint="Name it, so you remember to leave it out."),
     ]
 
 def full_entry_pages(S, prefix):
-    """Return (page_one, page_two) flowable lists for the twenty-field Full
-    Career Evidence Entry. Narrative fields are full-width multiline; only short
-    metadata shares a row. None of the forbidden combinations are merged."""
+    """Return three flowable lists for the twenty-field Full Career Evidence
+    Entry. Every narrative field is full page width and multiline so a realistic
+    120-300 character answer stays visible without scrolling; only genuinely
+    short metadata (date/project, retrieval tags) sits on a shared row. None of
+    the forbidden combinations are merged into a single field."""
     P = prefix
     def fr(label, suf, height, multiline=False, hint=None):
         return field_row(label, f"{P}_{suf}", S, height=height, multiline=multiline, hint=hint)
@@ -270,26 +277,32 @@ def full_entry_pages(S, prefix):
                              {"label":lb,"name":f"{P}_{nb}","height":hb,"multiline":mb}, S)
     page_one = [
         tu("Date or period","date",22,False, "Project or work event","proj",22,False),
-        Spacer(1,7), fr("Situation or need","sit",46,True),
-        Spacer(1,7), fr("Why it mattered","why",42,True),
-        Spacer(1,7), tu("Formal responsibility","formal",34,True, "Actual ownership","actual",34,True),
-        Spacer(1,7), fr("Decision or judgment exercised","judge",46,True),
-        Spacer(1,7), fr("Actions taken","actions",46,True),
-        Spacer(1,7), tu("People and functions involved","people",34,True, "Scope and constraint","scope",34,True),
+        Spacer(1,7), fr("Situation or need","sit",52,True),
+        Spacer(1,7), fr("Why it mattered","why",52,True),
+        Spacer(1,7), fr("Formal responsibility","formal",40,True),
+        Spacer(1,7), fr("Actual ownership","actual",40,True),
+        Spacer(1,7), fr("Decision or judgment exercised","judge",50,True),
+        Spacer(1,7), fr("Actions taken","actions",50,True),
     ]
     page_two = [
-        fr("Outcome or observable change","outcome",46,True),
-        Spacer(1,7), fr("Problem prevented","prevented",42,True),
-        Spacer(1,7), tu("Quantitative evidence, accurate and permitted","quant",34,True,
-                        "Qualitative evidence or validation","qual",34,True),
-        Spacer(1,7), fr("Team result vs. your honest part","team",44,True),
-        Spacer(1,7), fr("Internal wording, before translation","internal",40,True),
-        Spacer(1,7), fr("Portable-language version","portable",40,True),
-        Spacer(1,7), fr("Permitted evidence reference","evref",30,True,
-                        hint="Name the permitted source or location. Do not paste the artifact or confidential content here."),
-        Spacer(1,7), tu("Confidentiality and permission check","conf",28,True, "Retrieval tags","tags",24,False),
+        fr("People and functions involved","people",40,True),
+        Spacer(1,7), fr("Scope and constraint","scope",40,True),
+        Spacer(1,7), fr("Outcome or observable change","outcome",52,True),
+        Spacer(1,7), fr("Problem prevented","prevented",52,True),
+        Spacer(1,7), fr("Quantitative evidence, accurate and permitted","quant",40,True),
+        Spacer(1,7), fr("Qualitative evidence or validation","qual",40,True),
+        Spacer(1,7), fr("Team result vs. your honest part","team",50,True),
     ]
-    return page_one, page_two
+    page_three = [
+        fr("Internal wording, before translation","internal",46,True),
+        Spacer(1,7), fr("Portable-language version","portable",46,True),
+        Spacer(1,7), fr("Permitted evidence reference","evref",36,True,
+                        hint="Name the permitted source or location. Do not paste the artifact or confidential content here."),
+        Spacer(1,7), fr("Confidentiality and permission check","conf",40,True),
+        Spacer(1,7), fr("Retrieval tags","tags",26,True,
+                        hint="Review, promotion, compensation, resume, interview, biography, transition."),
+    ]
+    return page_one, page_two, page_three
 
 # ---- PDF outline / bookmarks ---------------------------------------------
 class Bookmark(Flowable):

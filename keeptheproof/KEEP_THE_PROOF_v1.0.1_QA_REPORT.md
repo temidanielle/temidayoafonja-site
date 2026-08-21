@@ -1,97 +1,127 @@
-# Keep the Proof - QA Report v1.0.1
+# Keep the Proof - QA Report v1.0.1 (build RC2)
 
-**Build:** Version 1.0.1
+**Build:** Version 1.0.1, internal release candidate RC2
 **Author:** Temidayo Afonja, Founder and Principal, The Density Group
-**Tooling:** ReportLab 5.0.1 (build), PyMuPDF 1.28.2 (render + inspect)
-**Method:** Both PDFs were rebuilt from the generators, then inspected with
-automated harnesses (`qa_content.py`, `qa_acroform.py`) and rendered page by
-page for visual inspection. Blank and filled versions were both rendered and
-inspected. No compiled PDF was hand-edited.
+**Rendering engines:** PyMuPDF 1.28.2; Poppler 24.02.0 (`pdftoppm`), tested both
+whole-document and isolated-page; Ghostscript 10.02.1 (`gs`).
+**Build tooling:** ReportLab 5.0.1.
+**Method:** Both PDFs were rebuilt from the generators (no compiled PDF was
+hand-edited), then inspected with automated harnesses (`qa_content.py`,
+`qa_accept.py`, `qa_multiengine.py`) and rendered page by page for visual
+inspection. Blank, filled, and filled-then-saved-and-reopened copies were all
+rendered and inspected across all three engines.
 
 ## Summary
 
 | Area | Handbook | Ledger |
 | --- | --- | --- |
-| Pages | 39 | 11 |
+| Pages | 41 | 12 |
 | Bookmarks | 16 | 7 |
 | AcroForm fields | 25 (all unique) | 117 (all unique) |
-| Multiline fields | 22 | 50 |
+| Multiline fields | 23 | 51 |
 | Content QA | PASS | PASS |
-| AcroForm QA | PASS | PASS |
-| Navigation / packaging QA | PASS | PASS |
+| Form acceptance QA | PASS | PASS |
+| Multi-engine render QA | PASS | PASS |
 
-All required checks passed. Nothing is labeled final with an open check.
+Every required check passed. Nothing is labeled approved with an open check.
 
-## Visual QA
+## Reproduction of the reported defects (before changing anything)
 
-- Every page of both PDFs was rendered to PNG at readable resolution and
-  inspected.
-- **Covers:** both covers now display their full text in the existing visual
-  system (motif, gold eyebrow, Cormorant title, rust rule, subtitle, byline,
-  URL). The v1.0.0 blank-navy defect is resolved. Cover text is present in the
-  source PDF, extracted text, and rendered PNG.
-- No clipping, overlap, broken tables, missing glyphs, stranded headings,
-  blank unintended pages, misplaced fields, or footer collisions were found.
-- The warm-cream / deep-navy / muted-gold / restrained-rust system, Cormorant
-  Garamond and DM Sans, and the ledger-mark motif are unchanged.
+- **Handbook AI-prompt page: REPRODUCED.** The bordered prompt box overlapped
+  the "The prompt" heading and the closing note. This is a layout defect and
+  appears in every engine. Fixed (see below) and re-verified in all three.
+- **Renderer-dependent defects reported against the prior build (ledger page 4
+  blank in whole-document Poppler; ledger pages 5/7/9/11 clipped headings and
+  footers; whole-document vs isolated-page divergence; filled-then-saved copy
+  clipping in Poppler; handbook page 31 title/first-character clip): NOT
+  REPRODUCED** in commit c4dc910 with PyMuPDF 1.28.2 / Poppler 24.02.0 /
+  Ghostscript 10.02.1. Evidence: whole-document vs isolated-page Poppler renders
+  are pixel-identical (mean absolute difference 0.0) on every page of both PDFs;
+  ledger page 4 renders fully (heading, form band, all five fields, footer) in
+  whole-document Poppler; a copy filled and saved through PyMuPDF renders
+  cleanly in Poppler and Ghostscript. These reports likely came from a different
+  build or a different tool/version. To eliminate the class of risk regardless,
+  the cover and every AcroForm field now draw inside a canvas save/restore so no
+  graphics state leaks between flowables or pages.
+
+## Fixes verified this build
+
+- **AI-prompt page.** Rebuilt the prompt as a table-based box (exact height) on
+  its own page; heading, box, and closing note are three separate,
+  non-overlapping regions. Verified in PyMuPDF, Poppler, and Ghostscript.
+- **Field capacity.** Full Entry narrative fields are full page width; ledger
+  paired narrative fields (Translation, Proof Line) were made taller. A capacity
+  model (characters that fit per box at the field font) reports zero fields too
+  small for their acceptance-test length, and filled renders confirm it.
+- **Copy corrections** (p23 eight-moves framing; p13 sentence; p28 Theo wording
+  and Proof Line; p39 About opening; ledger "six reusable form sets") are all
+  present in the rendered PDFs and in the regenerated manuscript.
+
+## Multi-engine render QA (every page)
+
+For each PDF, every page was rendered through PyMuPDF, Poppler whole-document,
+Poppler isolated-page, and Ghostscript, at readable resolution, for:
+
+- both blank customer PDFs;
+- filled stress-test copies (field-specific answers at the acceptance lengths);
+- copies saved and reopened after filling.
+
+Results, all pages, both PDFs, all three engines, blank and filled-saved:
+
+- No blank unintended pages.
+- Whole-document vs isolated-page Poppler: mean absolute pixel difference 0.0 on
+  every page (no renderer-context dependence).
+- No engine-dependent divergence above the antialiasing floor.
+- Covers, handbook pages 23 / 28 / 31 / 33-34 / 39, the reusable fillable pages,
+  and ledger pages 3-12 were inspected: headings, first characters, footers,
+  form labels, and field contents are all intact, with no clipping, overlap, or
+  footer collision.
+
+## Form acceptance QA
+
+Field-specific test answers were used at realistic lengths: Quick Capture main
+narrative fields 200-300 characters; verifier and confidential-detail fields
+80-140; large Full Entry narrative fields 200-300; smaller paired narrative
+fields 120-180; short metadata fields realistic short values.
+
+For every field, blank and filled: fill, save, close, reopen, confirm the exact
+stored value, confirm a valid appearance stream, render, and visually confirm
+wrapping, legible font size, and no clipping; and confirm no value appears in
+another field.
+
+- Values persist exactly after save and reopen (0 misses).
+- Every filled field has a valid appearance stream.
+- No value bleeds into any other field (unique names; verified with per-field
+  sentinels).
+- The complete intended answer is visible in the rendered field without
+  scrolling at every acceptance length. Rendered filled pages in Poppler confirm
+  this for the principal narrative fields (~300 characters) and the paired
+  narrative fields (~160-180 characters).
 
 ## Content QA
 
-- Zero em dashes (U+2014) in customer-facing copy of either PDF.
-- "resume" spelling preserved; no accented "résumé".
-- No stale $75 Field Kit reference; no product pricing introduced.
-- Permission rule consistent everywhere: "Permission comes before protection,"
-  "A secure personal device does not make information yours to retain," the new
-  CARE instruction, and "Generalizing information does not create permission"
-  all present; the old "Generalize, seek permission" CARE wording is gone.
-- Author positioning: "where talent decisions get made" present; "decide what
-  people are worth" removed; "eighteen years" used, no "18 years"; boundary
-  reads "a separate tool from The Density Group."
-- Verifier wording: "Verifier role or permitted public reference" with the
-  colleague-details helper present; old wording removed; the permitted-evidence
-  helper present.
-- Targeted voice replacements applied; "Permission comes first. Everything else
-  is craft." appears exactly once (operating summary).
+- Zero em dashes in customer-facing copy of either PDF.
+- "resume" spelling preserved; no accented forms.
+- No stale $75 Field Kit reference; no pricing introduced.
+- Permission rule consistent; verifier and permitted-evidence wording correct.
 - All six composite examples present (Devin, Maya, Theo, Grace, Priya, Sam).
 - No prohibited diagnostic, stay-or-leave advice, Career Portability Map, AI
-  Role Relevance Audit, resume system, Density/Optionality scoring, or Four
-  Career States content introduced. (The boundary page still correctly names
-  these as out of scope.)
+  Role Relevance Audit, Density/Optionality scoring, Four Career States, or
+  resume/job-search content introduced (the boundary page still names these as
+  out of scope).
 - No hard "page N" cross-references that could go stale after repagination.
-
-## AcroForm QA
-
-For each PDF: the field tree and every page widget were enumerated.
-
-- Every widget belongs to a named field; every field name is unique
-  (25 handbook, 117 ledger).
-- Narrative fields carry the multiline flag (22 handbook, 50 ledger).
-- Every widget sits within its page boundary.
-- The print flag is set on every widget.
-- Every field was filled with field-specific test content, using realistic
-  multiline answers of roughly 150-300 characters in the principal narrative
-  fields.
-- The filled PDFs were saved and reopened: every value persists in the field,
-  and every filled field has a valid appearance stream.
-- Entering a value in one field never populated any unrelated field (unique
-  names; verified with per-field sentinels - zero cross-field bleed).
-- The filled pages were rendered and inspected: no clipping, unreadably small
-  type, text collisions, or values in the wrong field. Principal narrative
-  answers of ~300 characters display within their boxes without relying on
-  scrolling.
 
 ## Navigation and packaging QA
 
 - All bookmarks resolve to the correct pages (handbook 16, ledger 7).
-- Web links work as PDF link annotations (handbook 39, ledger 11), all to
-  https://temidayoafonja.com.
-- Selectable text is intact (52,690 handbook characters; 7,058 ledger).
-- The customer ZIP opens successfully and contains only the handbook PDF, the
-  ledger PDF, and READ_ME_FIRST.txt. No test-filled or internal QA files are
-  included.
+- Web links work as PDF link annotations, all to https://temidayoafonja.com.
+- Selectable text intact.
+- The customer ZIP opens and contains only the handbook PDF, ledger PDF, and
+  READ_ME_FIRST.txt; no test-filled or internal QA files.
 
-## Determinism
+## Source
 
-Re-running the build with the same build-time stamp produces the same content.
-The PDF's internal ModDate reflects the generation moment, so two builds with
-identical content can differ at the byte level; compare at the content level.
+Committed to the repository below (see the handoff for the RC2 commit SHA); a
+source archive (`build/`, all generator and QA scripts, the six brand fonts, and
+`requirements.txt`) is also provided so the build is reproducible without the
+repository.

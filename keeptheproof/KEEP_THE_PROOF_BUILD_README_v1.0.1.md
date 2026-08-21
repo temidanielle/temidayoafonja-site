@@ -30,10 +30,19 @@ keeptheproof/
     ├── handbook_part2.py    # handbook assembly, Parts Three-Five (tools, examples, routines, close)
     ├── build_ledger.py      # standalone ledger assembly
     ├── fonts/               # embedded brand TrueType fonts (Cormorant Garamond, DM Sans)
+    ├── buildtime.txt        # the Central-Time build stamp used for the shipped PDFs
+    ├── requirements.txt     # pip dependencies and the system packages QA needs
     ├── gen_manuscript.py    # regenerates the master manuscript from the shipping handbook PDF
     ├── qa_content.py        # content + structure QA
-    └── qa_acroform.py       # AcroForm enumeration, fill / reopen / persistence QA
+    ├── qa_acroform.py       # AcroForm enumeration, fill / reopen / persistence QA
+    ├── qa_accept.py         # RC2 form acceptance test (capacity + fill/save/reopen)
+    ├── render3.py           # render selected pages through PyMuPDF, Poppler, Ghostscript
+    └── qa_multiengine.py    # render every page through all engines; flag blanks / divergence
 ```
+
+Every file listed above is committed to the repository and included in the
+source archive; there is no separate `render/` output directory (QA renders are
+written to a scratch path outside the tree).
 
 ## 2. Requirements
 
@@ -108,7 +117,20 @@ PDF's internal `ModDate` still reflects the moment of generation, so two builds
 with identical content can differ at the byte level while being identical in
 content. Compare at the content level, not by file hash.
 
-## 7. Output metrics (v1.0.1)
+## 7. Output metrics (v1.0.1, build RC2)
 
-- Handbook: 39 pages, 16 bookmarks, 25 unique AcroForm fields (22 multiline).
-- Ledger: 11 pages, 7 bookmarks, 117 unique AcroForm fields (50 multiline).
+- Handbook: 41 pages, 16 bookmarks, 25 unique AcroForm fields (23 multiline).
+- Ledger: 12 pages, 7 bookmarks, 117 unique AcroForm fields (51 multiline).
+
+The Full Career Evidence Entry is three pages (all narrative fields full width
+so a 200-300 character answer stays visible), and the optional-AI-prompt section
+has its own page.
+
+## 8. Multi-engine QA (RC2)
+
+`requirements.txt` lists the pip packages (`reportlab`, `pymupdf`, `pillow`,
+`numpy`) and the two system packages the render QA uses: `poppler-utils`
+(`pdftoppm`) and `ghostscript` (`gs`). `qa_multiengine.py` renders every page
+through PyMuPDF, Poppler (whole-document and isolated-page), and Ghostscript and
+flags blank pages or renderer-dependent divergence; `qa_accept.py` runs the form
+acceptance test. Run them after every rebuild.

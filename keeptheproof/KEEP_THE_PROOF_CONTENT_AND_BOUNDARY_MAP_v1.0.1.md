@@ -16,8 +16,8 @@ A $49 self-guided digital product sold as a customer-ready bundle:
 
 | File | Pages | Role |
 |---|---|---|
-| `Keep_the_Proof_A_60_Minute_Career_Evidence_System_v1.0.1_FINAL.pdf` | 39 | The handbook: the teaching, the tools, six worked examples, the routines, and reusable fillable pages |
-| `Keep_the_Proof_Career_Evidence_Ledger_v1.0.1_FINAL.pdf` | 11 | The reusable fillable companion: the forms to fill over years |
+| `Keep_the_Proof_A_60_Minute_Career_Evidence_System_v1.0.1_FINAL.pdf` | 41 | The handbook: the teaching, the tools, six worked examples, the routines, and reusable fillable pages |
+| `Keep_the_Proof_Career_Evidence_Ledger_v1.0.1_FINAL.pdf` | 12 | The reusable fillable companion: six reusable form sets to fill over years |
 
 Category the product establishes: **career evidence** - a private, permitted,
 retrievable record of your own work.
@@ -55,7 +55,7 @@ never compressed into an acronym.
   catching work before it fades. Prompts: what happened; specific contribution
   or judgment; what changed, improved, became possible, or was prevented;
   verifier role or permitted public reference; confidential detail to keep out.
-- **Full Career Evidence Entry** - a two-page, twenty-field form, each taught
+- **Full Career Evidence Entry** - a three-page, twenty-field form, each taught
   field on its own line (date or period; project or work event; situation or
   need; why it mattered; formal responsibility; actual ownership; decision or
   judgment exercised; actions taken; people and functions involved; scope and
@@ -65,8 +65,9 @@ never compressed into an acronym.
   portable-language version; permitted evidence reference; confidentiality and
   permission check; retrieval tags). Identical in wording, order, and logic in
   the handbook and the ledger.
-- **Translation system** - internal language to portable language, with an
-  eight-transformation table; the worksheet fields are multiline.
+- **Translation system** - internal language to portable language, framed as
+  eight translation moves plus one protection rule (the ninth table row is the
+  protection rule, not a translation move); the worksheet fields are multiline.
 - **The Proof Line** - the portable end product: one accurate, plain-language
   sentence built from condition, your part, scope, outcome, and support. In the
   ledger it is a standalone Proof Line Builder form.

@@ -102,9 +102,12 @@ class Cover(Flowable):
         # The cover paints at absolute page coordinates. The base Flowable.drawOn
         # would translate the canvas to the frame cursor (top of a full-page
         # frame), pushing every string a full page height off the top and
-        # leaving a blank navy page. Draw directly on the untranslated canvas.
+        # leaving a blank navy page. Draw directly on the untranslated canvas,
+        # inside a save/restore so no font or colour state leaks past the cover.
+        canvas.saveState()
         self.canv = canvas
         self.draw()
+        canvas.restoreState()
     def draw(self):
         c=self.canv
         # motif top-left
@@ -339,7 +342,7 @@ story += [SP(6), EY("Information risk"),
     P("Sort everything you might record into three tiers. With practice this becomes instant."),
     SP(3), tier_block(), SP(8),
     P("Generalizing information does not create permission. Use generalized wording only after you have confirmed that you are permitted to retain the underlying information. Softening the words changes how something reads, not whether it is yours to keep."),
-    P("The habit is to default downward. When something sits between Keep and Care, treat it as Care. When it sits between Care and Never, treat it as Never. You will lose a little detail this way. You will never lose your standing."),
+    P("The habit is to default downward. When something sits between Keep and Care, treat it as Care. When it sits between Care and Never, treat it as Never. You may lose some detail this way, but you will keep the record accurate and defensible."),
 ]
 story += [GAP()]
 story += [SP(6), EY("Information risk, continued"),

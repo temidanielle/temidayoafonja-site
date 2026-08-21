@@ -3,7 +3,7 @@
 **How to Track Your Work Accomplishments Before You Need a Resume**  
 **A 60-Minute Career Evidence System**
 
-Version 1.0.1 - Revised Thursday, August 20, 2026 at 5:08 PM CT (America/Chicago)  
+Version 1.0.1 - Revised Friday, August 21, 2026 at 5:39 AM CT (America/Chicago)  
 Author: Temidayo Afonja, Founder and Principal, The Density Group  
 Primary URL: temidayoafonja.com
 
@@ -33,7 +33,7 @@ information you are permitted to keep. You will be asked, repeatedly, not to cop
 photograph, download, screenshot, or reconstruct anything your employer owns. That rule holds on
 any device, at any hour, in any format. It is the first thing this guide teaches and the last thing it will
 let you forget.
-Version 1.0.1 · Revised Thursday, August 20, 2026 at 5:08 PM CT
+Version 1.0.1 · Revised Friday, August 21, 2026 at 5:39 AM CT
 Written and designed by Temidayo Afonja, Founder and Principal, The Density Group. temidayoafonja.com
 
 ## [Page 3]
@@ -309,8 +309,8 @@ Generalizing information does not create permission. Use generalized wording onl
 confirmed that you are permitted to retain the underlying information. Softening the words changes
 how something reads, not whether it is yours to keep.
 The habit is to default downward. When something sits between Keep and Care, treat it as Care.
-When it sits between Care and Never, treat it as Never. You will lose a little detail this way. You will
-never lose your standing.
+When it sits between Care and Never, treat it as Never. You may lose some detail this way, but you
+will keep the record accurate and defensible.
 INFORMATION RISK, CONTINUED
 Lines that do not move
 Some actions are outside the system entirely. They are not judgment calls and they are not softened
@@ -607,9 +607,9 @@ From internal language to portable language
 A record only your current employer can read is a record that expires when you leave. Translation is
 the skill of saying the same true thing in words an outsider can follow. It is not embellishment and it
 is not lying. It is the difference between a private shorthand and a description that travels.
-The eight transformations
-Nearly every translation you will ever make is one of these eight moves. Learn to recognize which
-one a sentence needs.
+Eight translation moves, plus one protection rule
+Most entries need one of the eight translation moves below. The final line is different: it is a
+protection rule for sensitive information.
 Move
 Turn this
 Into this
@@ -651,11 +651,11 @@ Sensitive to permitted
 “Fixed the breach in system X”
 “Resolved a security issue and closed
 the gap behind it”
-The one transformation that is different
-Eight of these make your work clearer. The last one keeps you safe. Turning sensitive
-detail into a permitted, high-level description is never a way to smuggle restricted
-information out in disguise. If the only accurate version would expose something you
-may not keep, the correct move is to omit it, not to reword it.
+Why the last line is different
+The first eight moves make your work clearer. The last one keeps you safe. Turning
+sensitive detail into a permitted, high-level description is never a way to smuggle
+restricted information out in disguise. If the only accurate version would expose
+something you may not keep, the correct move is to omit it, not to reword it.
 
 ## [Page 24]
 
@@ -789,7 +789,7 @@ Found over-broad access on a set of accounts during a routine review.
 MY CONTRIBUTION
 Traced how it happened, flagged it, and drove the fix and the process gap behind it.
 CHANGED / PREVENTED
-A likely future exposure was closed before it was used.
+A likely exposure was prevented before the excess access could be used.
 VERIFICATION
 The owning team’s lead, who made the correction with me.
 STAYS OUT
@@ -801,14 +801,14 @@ Assigned to routine access reviews; actually drove a correction and a process ch
 JUDGMENT
 Chose to treat a quiet finding as urgent and to fix the cause, not just the instance.
 OUTCOME
-Excess access removed; the gap that allowed it closed.
+The excess access was removed, and the process gap that allowed it was closed.
 EVIDENCE
 No clean metric. Credible qualitative outcome, confirmed by the owning team.
 3 · Proof Line → 4 · Retrieval Tag
 The portable end product, tagged for later
 PROOF LINE
-“In a routine access review, found and corrected over-broad account access and closed the
-process gap behind it, removing a likely exposure before it could be used.”
+“During a routine access review, I found and corrected over-broad account access and closed the
+process gap behind it, preventing a likely exposure before the excess access could be used.”
 RETRIEVAL TAGS
 Performance review, promotion, resume, interview (judgment and prevention).
 
@@ -932,6 +932,9 @@ confident wrong one.
 •  Then start capturing in real time, so you never have to reconstruct again.
 Reconstruction has a ceiling, and it is worth naming: you will not recover everything, and you should not
 pretend to. Capture what you can defend, note what you cannot, and let the going-forward habit do the rest.
+
+## [Page 34]
+
 OPTIONAL
 An optional, privacy-conscious AI prompt
 Everything in this guide works without any AI. This tool is optional, and it is for one narrow job:
@@ -944,17 +947,18 @@ material into an AI system. Give it only your own non-confidential account, alre
 stripped of anything you may not keep. The permission rules in this guide apply to AI
 tools exactly as they apply to everything else.
 The prompt
-“You are helping me describe my own work accurately for my private career record. I will give you only
-non-confidential information about what I did. Work only with what I provide. If context is missing, ask me
-for it rather than inventing anything. Never invent numbers, percentages, or results. Preserve my actual level
-of ownership, and keep any team result separate from my individual contribution. Translate internal
-language into plain, portable language an outsider could understand. Give me a few accurate versions for
-different uses: a short resume line, a spoken interview version, and a one-line summary. Flag anything that
-sounds inflated, vague, or unsupported so I can correct it.”
+“You are helping me describe my own work accurately for my private career record. I will give you
+only non-confidential information about what I did. Work only with what I provide. If context is
+missing, ask me for it rather than inventing anything. Never invent numbers, percentages, or results.
+Preserve my actual level of ownership, and keep any team result separate from my individual
+contribution. Translate internal language into plain, portable language an outsider could understand.
+Give me a few accurate versions for different uses: a short resume line, a spoken interview version,
+and a one-line summary. Flag anything that sounds inflated, vague, or unsupported so I can correct
+it.”
 The AI does not decide what is true. You do. Treat every version it returns as a draft to check against your own
 memory and this guide’s rules, never as a finished record.
 
-## [Page 34]
+## [Page 35]
 
 FILL IT IN
 Reusable ledger pages
@@ -975,11 +979,11 @@ Use a role or public source. Do not store a colleague’s personal details.
 Confidential detail to keep out
 Name it, so you remember to leave it out.
 
-## [Page 35]
+## [Page 36]
 
 FILL IT IN
 Full Career Evidence Entry
-Page one of two. Expand a Quick Capture into a complete entry, and fill only the fields that apply.
+Page one of three. Expand a Quick Capture into a complete entry, and fill only the fields that apply.
 Date or period
 Project or work event
 Situation or need
@@ -988,27 +992,34 @@ Formal responsibility
 Actual ownership
 Decision or judgment exercised
 Actions taken
-People and functions involved
-Scope and constraint
 
-## [Page 36]
+## [Page 37]
 
 FILL IT IN, CONTINUED
 Full Career Evidence Entry
-Page two of two.
+Page two of three.
+People and functions involved
+Scope and constraint
 Outcome or observable change
 Problem prevented
 Quantitative evidence, accurate and permitted
 Qualitative evidence or validation
 Team result vs. your honest part
+
+## [Page 38]
+
+FILL IT IN, CONTINUED
+Full Career Evidence Entry
+Page three of three.
 Internal wording, before translation
 Portable-language version
 Permitted evidence reference
 Name the permitted source or location. Do not paste the artifact or confidential content here.
 Confidentiality and permission check
 Retrieval tags
+Review, promotion, compensation, resume, interview, biography, transition.
 
-## [Page 37]
+## [Page 39]
 
 ONE PAGE
 The Keep the Proof operating summary
@@ -1032,7 +1043,7 @@ If you remember only one line
 A secure personal device does not make information yours to retain. Permission comes
 first. Everything else is craft.
 
-## [Page 38]
+## [Page 40]
 
 THE EDGE OF THE TOOL
 Where Keep the Proof ends
@@ -1057,11 +1068,11 @@ the Capability Formation Field Kit, is designed for exactly that reading. It is 
 job for a different day. This guide’s work is done when your record is honest, portable,
 and safe to keep.
 
-## [Page 39]
+## [Page 41]
 
 ABOUT THE AUTHOR
 About Temidayo Afonja
-Temidayo Afonja is the Founder and Principal of The Density Group. Across eighteen years Temidayo
+Temidayo Afonja is the Founder and Principal of The Density Group. For eighteen years, Temidayo
 has worked across Big Four consulting, life sciences, and technology, close to where talent decisions
 get made, at the intersection of workforce strategy, organizational design, and how careers actually
 form.
@@ -1116,9 +1127,11 @@ Temidayo Afonja · temidayoafonja.com
 | 31 | KEEP IT CURRENT | The monthly and quarterly routines |
 | 32 | USE IT | Retrieving the right evidence |
 | 33 | •  RECONSTRUCT BY PERIOD. TAKE EACH ROLE | decisions. |
-| 34 | FILL IT IN | Reusable ledger pages |
-| 35 | FILL IT IN | Full Career Evidence Entry |
-| 36 | FILL IT IN, CONTINUED | Full Career Evidence Entry |
-| 37 | ONE PAGE | The Keep the Proof operating summary |
-| 38 | THE EDGE OF THE TOOL | Where Keep the Proof ends |
-| 39 | ABOUT THE AUTHOR | About Temidayo Afonja |
+| 34 | OPTIONAL | An optional, privacy-conscious AI prompt |
+| 35 | FILL IT IN | Reusable ledger pages |
+| 36 | FILL IT IN | Full Career Evidence Entry |
+| 37 | FILL IT IN, CONTINUED | Full Career Evidence Entry |
+| 38 | FILL IT IN, CONTINUED | Full Career Evidence Entry |
+| 39 | ONE PAGE | The Keep the Proof operating summary |
+| 40 | THE EDGE OF THE TOOL | Where Keep the Proof ends |
+| 41 | ABOUT THE AUTHOR | About Temidayo Afonja |

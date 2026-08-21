@@ -193,8 +193,8 @@ def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
         H2("From internal language to portable language"),
         RULE(),
         P("A record only your current employer can read is a record that expires when you leave. Translation is the skill of saying the same true thing in words an outsider can follow. It is not embellishment and it is not lying. It is the difference between a private shorthand and a description that travels."),
-        H3("The eight transformations"),
-        P("Nearly every translation you will ever make is one of these eight moves. Learn to recognize which one a sentence needs."),
+        H3("Eight translation moves, plus one protection rule"),
+        P("Most entries need one of the eight translation moves below. The final line is different: it is a protection rule for sensitive information."),
         TBL([["Move", "Turn this", "Into this"],
              ["Name to function", "&#8220;Ran Project Northwind&#8221;", "&#8220;Led the customer-data migration&#8221;"],
              ["Assignment to contribution", "&#8220;Responsible for reporting&#8221;", "&#8220;Rebuilt the reporting so leaders could act on it&#8221;"],
@@ -207,8 +207,8 @@ def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
              ["Sensitive to permitted", "&#8220;Fixed the breach in system X&#8221;", "&#8220;Resolved a security issue and closed the gap behind it&#8221;"]],
             [CONTENT_W*0.24, CONTENT_W*0.38, CONTENT_W*0.38]),
         SP(4),
-        CO("The one transformation that is different",
-           "Eight of these make your work clearer. The last one keeps you safe. Turning sensitive detail into a permitted, high-level description is never a way to smuggle restricted information out in disguise. If the only accurate version would expose something you may not keep, the correct move is to omit it, not to reword it.",
+        CO("Why the last line is different",
+           "The first eight moves make your work clearer. The last one keeps you safe. Turning sensitive detail into a permitted, high-level description is never a way to smuggle restricted information out in disguise. If the only accurate version would expose something you may not keep, the correct move is to omit it, not to reword it.",
            bg="navy"),
     ]
     st += [PB()]
@@ -302,18 +302,18 @@ def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
             "Two minutes, the same day",
             [("What happened", "Found over-broad access on a set of accounts during a routine review."),
              ("My contribution", "Traced how it happened, flagged it, and drove the fix and the process gap behind it."),
-             ("Changed / prevented", "A likely future exposure was closed before it was used."),
+             ("Changed / prevented", "A likely exposure was prevented before the excess access could be used."),
              ("Verification", "The owning team&#8217;s lead, who made the correction with me."),
              ("Stays out", "All logs, account names, tooling, and configuration.")]),
         example_card("2 · Full Entry  ·  the fields that matter here",
             "Expanded when the item proved worth keeping",
             [("Formal vs. actual", "Assigned to routine access reviews; actually drove a correction and a process change."),
              ("Judgment", "Chose to treat a quiet finding as urgent and to fix the cause, not just the instance."),
-             ("Outcome", "Excess access removed; the gap that allowed it closed."),
+             ("Outcome", "The excess access was removed, and the process gap that allowed it was closed."),
              ("Evidence", "No clean metric. Credible qualitative outcome, confirmed by the owning team.")]),
         example_card("3 · Proof Line  →  4 · Retrieval Tag",
             "The portable end product, tagged for later",
-            [("Proof Line", "&#8220;In a routine access review, found and corrected over-broad account access and closed the process gap behind it, removing a likely exposure before it could be used.&#8221;"),
+            [("Proof Line", "&#8220;During a routine access review, I found and corrected over-broad account access and closed the process gap behind it, preventing a likely exposure before the excess access could be used.&#8221;"),
              ("Retrieval tags", "Performance review, promotion, resume, interview (judgment and prevention).")]),
     ]
     st += [PB()]
@@ -414,9 +414,26 @@ def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
     st += [SP(4),
         NOTE("Reconstruction has a ceiling, and it is worth naming: you will not recover everything, and you should not pretend to. Capture what you can defend, note what you cannot, and let the going-forward habit do the rest."),
     ]
-    st += [GAP()]
+    st += [PB()]
 
-    # 29. OPTIONAL AI PROMPT
+    # 29. OPTIONAL AI PROMPT (own page). The prompt sits in a table-based box so
+    # its height is exact; heading, box, and closing note occupy separate,
+    # non-overlapping vertical regions. (The old bordered-Paragraph box drew
+    # taller than its measured height and overlapped its neighbours.)
+    _prompt_para = Paragraph(
+        "&#8220;You are helping me describe my own work accurately for my private career record. I will give you only non-confidential information about what I did. "
+        "Work only with what I provide. If context is missing, ask me for it rather than inventing anything. "
+        "Never invent numbers, percentages, or results. "
+        "Preserve my actual level of ownership, and keep any team result separate from my individual contribution. "
+        "Translate internal language into plain, portable language an outsider could understand. "
+        "Give me a few accurate versions for different uses: a short resume line, a spoken interview version, and a one-line summary. "
+        "Flag anything that sounds inflated, vague, or unsupported so I can correct it.&#8221;",
+        ParagraphStyle("prompt", fontName="DM", fontSize=9.6, textColor=INK, leading=15))
+    _prompt_box = Table([[_prompt_para]], colWidths=[CONTENT_W])
+    _prompt_box.setStyle(TableStyle([
+        ("BACKGROUND",(0,0),(-1,-1),HexColor("#FBF3E2")), ("BOX",(0,0),(-1,-1),1,GOLD),
+        ("LEFTPADDING",(0,0),(-1,-1),14),("RIGHTPADDING",(0,0),(-1,-1),14),
+        ("TOPPADDING",(0,0),(-1,-1),12),("BOTTOMPADDING",(0,0),(-1,-1),12)]))
     st += [SP(6), EY("Optional"),
         H2("An optional, privacy-conscious AI prompt"),
         RULE(),
@@ -424,17 +441,9 @@ def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
         CO("Before you use it",
            "Never paste employer names, customer names, colleague names, proprietary detail, employee information, sensitive metrics, code, security information, or any confidential material into an AI system. Give it only your own non-confidential account, already stripped of anything you may not keep. The permission rules in this guide apply to AI tools exactly as they apply to everything else.",
            bg="navy"),
-        H3("The prompt"),
-        Paragraph(
-            "&#8220;You are helping me describe my own work accurately for my private career record. I will give you only non-confidential information about what I did. "
-            "Work only with what I provide. If context is missing, ask me for it rather than inventing anything. "
-            "Never invent numbers, percentages, or results. "
-            "Preserve my actual level of ownership, and keep any team result separate from my individual contribution. "
-            "Translate internal language into plain, portable language an outsider could understand. "
-            "Give me a few accurate versions for different uses: a short resume line, a spoken interview version, and a one-line summary. "
-            "Flag anything that sounds inflated, vague, or unsupported so I can correct it.&#8221;",
-            ParagraphStyle("prompt", fontName="DM", fontSize=9.6, textColor=INK, leading=15,
-                backColor=HexColor("#FBF3E2"), borderColor=GOLD, borderWidth=1, borderPadding=12, spaceAfter=8)),
+        SP(6),
+        KeepTogether([H3("The prompt"), SP(3), _prompt_box]),
+        SP(10),
         NOTE("The AI does not decide what is true. You do. Treat every version it returns as a draft to check against your own memory and this guide&#8217;s rules, never as a finished record."),
     ]
     st += [PB()]
@@ -451,17 +460,22 @@ def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
     ]
     st += quick_capture_fields(S, "hb_qc")
     st += [PB()]
-    # Full Career Evidence Entry — two pages, twenty taught fields, identical to the ledger
-    p1, p2 = full_entry_pages(S, "hb_fe")
+    # Full Career Evidence Entry — three pages, twenty taught fields, identical to the ledger
+    p1, p2, p3 = full_entry_pages(S, "hb_fe")
     st += [SP(6), EY("Fill it in"),
         H2("Full Career Evidence Entry"), RULE(),
-        Paragraph("Page one of two. Expand a Quick Capture into a complete entry, and fill only the fields that apply.", S["fieldhint"]), SP(8)]
+        Paragraph("Page one of three. Expand a Quick Capture into a complete entry, and fill only the fields that apply.", S["fieldhint"]), SP(8)]
     st += p1
     st += [PB()]
     st += [SP(6), EY("Fill it in, continued"),
         H2("Full Career Evidence Entry"), RULE(),
-        Paragraph("Page two of two.", S["fieldhint"]), SP(8)]
+        Paragraph("Page two of three.", S["fieldhint"]), SP(8)]
     st += p2
+    st += [PB()]
+    st += [SP(6), EY("Fill it in, continued"),
+        H2("Full Career Evidence Entry"), RULE(),
+        Paragraph("Page three of three.", S["fieldhint"]), SP(8)]
+    st += p3
     st += [PB()]
 
     # 31. OPERATING SUMMARY
@@ -515,7 +529,7 @@ def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
     # 33 & 34. ABOUT + CLOSING
     st += [Bookmark("About Temidayo Afonja", 0), SP(6), EY("About the author"),
         H2("About Temidayo Afonja"), RULE(),
-        P("Temidayo Afonja is the Founder and Principal of The Density Group. Across eighteen years Temidayo has worked across Big Four consulting, life sciences, and technology, close to where talent decisions get made, at the intersection of workforce strategy, organizational design, and how careers actually form."),
+        P("Temidayo Afonja is the Founder and Principal of The Density Group. For eighteen years, Temidayo has worked across Big Four consulting, life sciences, and technology, close to where talent decisions get made, at the intersection of workforce strategy, organizational design, and how careers actually form."),
         P("That path into this work began in IT audit and federal governance, and moved through cybersecurity workforce strategy before that field had its current name. That background is the reason the confidentiality and information-risk standard in this guide is treated with the seriousness it deserves, and the reason it is careful never to overstate what any guide can settle for you. Keep the Proof is educational, not legal advice, and it cannot interpret your specific agreements or your employer&#8217;s policies."),
         P("Keep the Proof grew out of a pattern that repeats in room after room: capable people who had done the work and could no longer prove it, reaching for details that had already gone. This guide is the discipline more of them needed."),
         SP(8), HRule(CONTENT_W, color=HAIR, thick=0.8, space=10),

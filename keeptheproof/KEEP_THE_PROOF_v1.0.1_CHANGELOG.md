@@ -4,6 +4,62 @@
 **Author:** Temidayo Afonja, Founder and Principal, The Density Group
 **Status:** Unpublished. No website, Gumroad, YouTube, email, or social changes.
 
+---
+
+## Internal build RC2 (release candidate, on top of v1.0.1)
+
+The public version stays 1.0.1 (not distributed). RC2 is an internal
+release-candidate build that fixes defects independent QA found and adds
+multi-engine rendering QA.
+
+Fixed:
+- **Handbook AI-prompt page (was p33).** The prompt box was a bordered
+  Paragraph whose drawn box exceeded its measured height, so it overlapped the
+  "The prompt" heading above it and the closing note below it. Rebuilt the box
+  as a table (exact height) and moved the whole AI-prompt section onto its own
+  page, so the heading, the box, and the closing note occupy three separate,
+  non-overlapping regions.
+- **Multiline field capacity.** Every narrative field in the Full Entry is now
+  full page width, and the ledger's paired narrative fields (Translation, Proof
+  Line) were made taller, so a realistic answer at the acceptance-test lengths
+  (120-300 characters) is fully visible without scrolling. The Full Career
+  Evidence Entry is now three pages in both the handbook and the ledger.
+
+Copy corrections:
+- p23: heading is "Eight translation moves, plus one protection rule," with a
+  matching introduction and the callout "Why the last line is different"
+  ("The first eight moves make your work clearer. The last one keeps you safe.")
+  - the nine-row table is now correctly framed as eight moves plus one rule.
+- p13: "You will lose a little detail this way. You will never lose your
+  standing." is now "You may lose some detail this way, but you will keep the
+  record accurate and defensible."
+- p28 (Theo): "A likely exposure was prevented before the excess access could
+  be used."; "The excess access was removed, and the process gap that allowed
+  it was closed."; the Proof Line is a full sentence beginning "During a routine
+  access review, I found and corrected..." Cautious language preserved.
+- p39 (About): now opens "For eighteen years, Temidayo has worked across..."
+- Ledger: "six reusable form sets" on the cover and the introductory page.
+
+Hardening:
+- The cover and every AcroForm field now draw inside a canvas save/restore, so
+  no translated or dirty graphics state can leak into later content and produce
+  renderer-dependent output.
+
+QA:
+- Every page of both PDFs, blank and filled-and-reopened, was rendered through
+  PyMuPDF, Poppler (pdftoppm, whole-document and isolated-page), and
+  Ghostscript. Zero blank pages, zero whole-document-vs-isolated divergence, and
+  no engine-dependent divergence. See the QA report for details, including the
+  finding that the previously reported renderer-dependent defects do not
+  reproduce in this build.
+
+Metrics after RC2: handbook 41 pages / 16 bookmarks / 25 unique fields;
+ledger 12 pages / 7 bookmarks / 117 unique fields.
+
+---
+
+## v1.0.1 (initial correction pass)
+
 This is a controlled correction and QA pass on top of v1.0.0. The product's
 scope, five-part architecture, five-step workflow, six composite examples,
 visual identity, fonts, and central teaching are unchanged. The v1.0.0 files
