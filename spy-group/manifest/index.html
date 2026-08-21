@@ -64,23 +64,65 @@
    ===================================================================== */
 
 :root {
-  --field-900:#182A22;   /* nav, footer, deepest ground */
-  --field-800:#20362C;   /* dark band ground */
-  --field-700:#284238;   /* panel on dark */
-  --field-600:#3C5B4B;   /* hairline on dark */
-  --bone:#EDEDE5;        /* light band ground */
-  --bone-2:#F7F7F2;      /* card on light */
+  /* Default colorway: INK — neutral charcoal with a copper accent.
+     The other colorways below override the same slots, so every rule in
+     this stylesheet is written against tokens and never a literal. */
+  --field-900:#15181D;   /* nav, footer, deepest ground */
+  --field-800:#1C2128;   /* dark band ground */
+  --field-700:#262C35;   /* raised panel on dark */
+  --field-600:#3B4350;   /* hairline on dark */
+  --bone:#EFEFED;        /* light band ground */
+  --bone-2:#F8F8F7;      /* card on the light band */
   --white:#FFFFFF;
-  --amber:#DFA03A;       /* accent on dark ground (5.7:1) */
-  --amber-ink:#8C5A0F;   /* accent as text on bone (4.98:1) */
-  --sage:#9DB2A5;        /* secondary text on dark (5.7:1) */
-  --ink:#16211C;         /* text on bone */
-  --muted:#4E5B54;       /* secondary text on bone (5.99:1) */
-  --line:rgba(22,33,28,.16);
+  --accent:#D98552;      /* accent on the dark ground */
+  --accent-ink:#9A4E22;  /* accent as text on the light bands */
+  --accent-hover:#E89A6C;
+  --sage:#A2AAB6;        /* secondary text on dark */
+  --ink:#191C21;         /* text on the light bands */
+  --muted:#545A63;       /* secondary text on the light bands */
+  --line:rgba(25,28,33,.16);
+  /* Triplets for the same colors used at partial alpha. A colorway that
+     only overrode the hex values would leave every rgba() behind. */
+  --accent-rgb:217,133,82;
+  --sage-rgb:162,170,182;
+  --bone-rgb:239,239,237;
 
   --display:'Archivo','Helvetica Neue',Arial,sans-serif;
   --body:'Public Sans','Helvetica Neue',Arial,sans-serif;
   --mono:'IBM Plex Mono',ui-monospace,'SF Mono',Menlo,monospace;
+}
+
+/* ── COLORWAYS ─────────────────────────────────────────────────────
+   Each one is a complete set: dark grounds, light bands, accent, and
+   the rgb triplets behind every rgba(). Every pair clears WCAG AA —
+   the tightest in any colorway is 4.7:1, against 4.5 for normal text. */
+
+/* HARBOR — deep blue-teal with warm sand. Ports and container yards. */
+:root[data-palette="harbor"]{
+  --field-900:#0F2833; --field-800:#163542; --field-700:#1E4453; --field-600:#2F5D6E;
+  --bone:#ECEFEF; --bone-2:#F7F9F9;
+  --accent:#E7A860; --accent-ink:#92561A; --accent-hover:#F2BC80;
+  --sage:#9CB8C4; --ink:#14262E; --muted:#4C5C64;
+  --line:rgba(20,38,46,.16);
+  --accent-rgb:231,168,96; --sage-rgb:156,184,196; --bone-rgb:236,239,239;
+}
+/* SLATE — cool blue-gray with a utility blue. No warm cast anywhere. */
+:root[data-palette="slate"]{
+  --field-900:#1B222C; --field-800:#232C38; --field-700:#2E3947; --field-600:#435162;
+  --bone:#EEEFF1; --bone-2:#F8F9FA;
+  --accent:#6BB2E8; --accent-ink:#1F5F91; --accent-hover:#8CC6F0;
+  --sage:#9AA6B5; --ink:#1A2029; --muted:#515964;
+  --line:rgba(26,32,41,.16);
+  --accent-rgb:107,178,232; --sage-rgb:154,166,181; --bone-rgb:238,239,241;
+}
+/* FIELD — the original spruce green, kept for comparison. */
+:root[data-palette="field"]{
+  --field-900:#182A22; --field-800:#20362C; --field-700:#284238; --field-600:#3C5B4B;
+  --bone:#EDEDE5; --bone-2:#F7F7F2;
+  --accent:#DFA03A; --accent-ink:#8C5A0F; --accent-hover:#EDB055;
+  --sage:#9DB2A5; --ink:#16211C; --muted:#4E5B54;
+  --line:rgba(22,33,28,.16);
+  --accent-rgb:223,160,58; --sage-rgb:157,178,165; --bone-rgb:237,237,229;
 }
 
 *,*::before,*::after{box-sizing:border-box;}
@@ -97,7 +139,7 @@ h1,h2,h3,h4{
 p{margin:0;}
 a{color:inherit;}
 img{max-width:100%;}
-:focus-visible{outline:2px solid var(--amber);outline-offset:3px;}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;}
 
 /* The nav is sticky, so anchor jumps need to clear its height or the
    section heading lands underneath it. */
@@ -112,21 +154,35 @@ section[id]{scroll-margin-top:88px;}
    naming a real category (a section of a capability statement). */
 .eyebrow{
   font-family:var(--mono);font-size:11.5px;font-weight:500;
-  letter-spacing:.18em;text-transform:uppercase;color:var(--amber-ink);
+  letter-spacing:.18em;text-transform:uppercase;color:var(--accent-ink);
   display:block;margin-bottom:18px;
 }
-.dark .eyebrow{color:var(--amber);}
+.dark .eyebrow{color:var(--accent);}
 .lead{font-size:19px;line-height:1.58;color:var(--muted);}
-.dark .lead{color:rgba(237,237,229,.76);}
+.dark .lead{color:rgba(var(--bone-rgb),.76);}
 
 /* ── PROTOTYPE STRIP ───────────────────────────────────────────────── */
 .proto{
-  background:var(--field-900);color:var(--amber);
+  background:var(--field-900);color:var(--accent);
   font-family:var(--mono);font-size:11px;letter-spacing:.12em;
-  text-transform:uppercase;text-align:center;padding:7px 16px;
+  text-transform:uppercase;padding:7px 16px;
   border-bottom:1px solid var(--field-600);
+  display:flex;align-items:center;justify-content:center;gap:10px 22px;flex-wrap:wrap;
 }
-.proto span{color:var(--sage);}
+.proto-note span{color:var(--sage);}
+/* Review-only control. It ships with the prototype and comes out once a
+   colorway is chosen. */
+.picker{display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
+.picker b{font-weight:400;color:var(--sage);margin-right:2px;}
+.picker button{
+  font:inherit;letter-spacing:.1em;text-transform:uppercase;cursor:pointer;
+  display:inline-flex;align-items:center;gap:6px;padding:4px 9px;
+  background:none;border:1px solid var(--field-600);color:var(--sage);
+  transition:border-color .15s,color .15s;
+}
+.picker button:hover{color:var(--bone);border-color:var(--sage);}
+.picker button[aria-pressed="true"]{color:var(--accent);border-color:var(--accent);}
+.picker i{width:11px;height:11px;display:block;border:1px solid rgba(255,255,255,.28);}
 
 /* ── NAV ───────────────────────────────────────────────────────────── */
 .nav{
@@ -136,9 +192,9 @@ section[id]{scroll-margin-top:88px;}
 .nav-in{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0;}
 .mark{display:flex;align-items:center;gap:11px;text-decoration:none;}
 .mark-glyph{
-  width:34px;height:34px;flex:0 0 34px;border:1.5px solid var(--amber);
+  width:34px;height:34px;flex:0 0 34px;border:1.5px solid var(--accent);
   display:grid;place-items:center;font-family:var(--display);font-stretch:80%;
-  font-weight:800;font-size:15px;color:var(--amber);letter-spacing:.02em;
+  font-weight:800;font-size:15px;color:var(--accent);letter-spacing:.02em;
 }
 .mark-txt{line-height:1.1;}
 .mark-name{
@@ -156,9 +212,9 @@ section[id]{scroll-margin-top:88px;}
 }
 .nav-links a:hover{color:var(--bone);}
 .nav-links .cta{
-  color:var(--field-900);background:var(--amber);padding:9px 15px;font-weight:500;
+  color:var(--field-900);background:var(--accent);padding:9px 15px;font-weight:500;
 }
-.nav-links .cta:hover{background:#EDB055;color:var(--field-900);}
+.nav-links .cta:hover{background:var(--accent-hover);color:var(--field-900);}
 /* Below 900px the section links move to their own row and scroll
    sideways rather than disappearing: this is a one-page site, so the
    anchors are the only navigation there is. */
@@ -187,8 +243,8 @@ section[id]{scroll-margin-top:88px;}
 .hero::before{
   content:"";position:absolute;inset:0;pointer-events:none;
   background-image:
-    linear-gradient(to right,rgba(157,178,165,.07) 1px,transparent 1px),
-    linear-gradient(to bottom,rgba(157,178,165,.07) 1px,transparent 1px);
+    linear-gradient(to right,rgba(var(--sage-rgb),.07) 1px,transparent 1px),
+    linear-gradient(to bottom,rgba(var(--sage-rgb),.07) 1px,transparent 1px);
   background-size:74px 74px;
   -webkit-mask-image:radial-gradient(120% 90% at 82% 8%,#000 0%,transparent 72%);
   mask-image:radial-gradient(120% 90% at 82% 8%,#000 0%,transparent 72%);
@@ -198,7 +254,7 @@ section[id]{scroll-margin-top:88px;}
   font-size:clamp(38px,6.4vw,78px);color:var(--white);max-width:15ch;
   margin-bottom:24px;font-weight:800;
 }
-.hero h1 em{font-style:normal;color:var(--amber);}
+.hero h1 em{font-style:normal;color:var(--accent);}
 .hero .lead{max-width:62ch;margin-bottom:34px;font-size:19.5px;}
 .actions{display:flex;flex-wrap:wrap;gap:12px;}
 .btn{
@@ -207,10 +263,10 @@ section[id]{scroll-margin-top:88px;}
   text-transform:uppercase;text-decoration:none;border:1.5px solid transparent;
   transition:background .18s,color .18s,border-color .18s;
 }
-.btn.solid{background:var(--amber);color:var(--field-900);}
-.btn.solid:hover{background:#EDB055;}
+.btn.solid{background:var(--accent);color:var(--field-900);}
+.btn.solid:hover{background:var(--accent-hover);}
 .btn.ghost{border-color:var(--field-600);color:var(--bone);}
-.btn.ghost:hover{border-color:var(--sage);background:rgba(157,178,165,.08);}
+.btn.ghost:hover{border-color:var(--sage);background:rgba(var(--sage-rgb),.08);}
 .btn.ink{background:var(--field-800);color:var(--bone);}
 .btn.ink:hover{background:var(--field-700);}
 .btn.outline-ink{border-color:var(--line);color:var(--ink);}
@@ -220,7 +276,7 @@ section[id]{scroll-margin-top:88px;}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px;}
 .chip{
   font-family:var(--mono);font-size:11px;letter-spacing:.11em;text-transform:uppercase;
-  color:var(--amber);border:1px solid rgba(223,160,58,.45);padding:6px 11px;
+  color:var(--accent);border:1px solid rgba(var(--accent-rgb),.45);padding:6px 11px;
 }
 .chip.plain{color:var(--sage);border-color:var(--field-600);}
 
@@ -231,7 +287,7 @@ section[id]{scroll-margin-top:88px;}
   color:var(--sage);padding:18px 0 14px;border-bottom:1px solid var(--field-600);
   display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 }
-.record-head strong{color:var(--amber);font-weight:500;}
+.record-head strong{color:var(--accent);font-weight:500;}
 .record-grid{
   display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
   margin:0 -22px;   /* pulls the cells into the page gutter so the first
@@ -252,7 +308,7 @@ section[id]{scroll-margin-top:88px;}
 }
 .rec dd small{display:block;font-size:11.5px;font-weight:400;color:var(--sage);letter-spacing:.06em;margin-top:5px;text-transform:uppercase;}
 /* Anything not yet issued is marked, not faked. */
-.pending{color:var(--amber);border-bottom:1px dashed rgba(223,160,58,.55);}
+.pending{color:var(--accent);border-bottom:1px dashed rgba(var(--accent-rgb),.55);}
 @media(max-width:860px){.record-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.rec:nth-child(2n){border-right:none;}.rec:nth-child(4n){border-right:1px solid var(--field-600);}}
 @media(max-width:520px){.record-grid{grid-template-columns:1fr;}.rec{border-right:none !important;}}
 
@@ -260,14 +316,14 @@ section[id]{scroll-margin-top:88px;}
 .sec-head{display:grid;grid-template-columns:1fr 1.15fr;gap:52px;align-items:end;margin-bottom:44px;}
 .sec-head h2{font-size:clamp(28px,3.9vw,46px);}
 .sec-head p{font-size:16.5px;color:var(--muted);}
-.dark .sec-head p{color:rgba(237,237,229,.72);}
+.dark .sec-head p{color:rgba(var(--bone-rgb),.72);}
 @media(max-width:840px){.sec-head{grid-template-columns:1fr;gap:20px;}}
 
 /* ── CAPABILITY CARDS ─────────────────────────────────────────────── */
 .caps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);}
 .cap{background:var(--bone-2);padding:34px 32px 32px;display:flex;flex-direction:column;}
 .cap-naics{
-  font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--amber-ink);
+  font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--accent-ink);
   margin-bottom:14px;font-variant-numeric:tabular-nums;
 }
 .cap h3{font-size:25px;margin-bottom:12px;}
@@ -277,13 +333,13 @@ section[id]{scroll-margin-top:88px;}
   font-size:15px;line-height:1.5;color:var(--ink);padding-left:19px;position:relative;
 }
 .cap li::before{
-  content:"";position:absolute;left:0;top:.62em;width:8px;height:1.5px;background:var(--amber-ink);
+  content:"";position:absolute;left:0;top:.62em;width:8px;height:1.5px;background:var(--accent-ink);
 }
 .cap .status{
   margin-top:auto;padding-top:20px;font-family:var(--mono);font-size:11px;
   letter-spacing:.11em;text-transform:uppercase;color:var(--muted);
 }
-.cap .status b{color:var(--amber-ink);font-weight:500;}
+.cap .status b{color:var(--accent-ink);font-weight:500;}
 @media(max-width:800px){.caps{grid-template-columns:1fr;}}
 
 /* ── PATHS TO AWARD (threshold ladder) ────────────────────────────── */
@@ -299,7 +355,7 @@ section[id]{scroll-margin-top:88px;}
    down the column and the escalation lands before any of the prose does. */
 .rung-cap{
   font-family:var(--display);font-stretch:84%;font-weight:800;
-  font-size:clamp(40px,4.4vw,62px);line-height:.9;color:var(--amber);
+  font-size:clamp(40px,4.4vw,62px);line-height:.9;color:var(--accent);
   font-variant-numeric:tabular-nums;letter-spacing:-.025em;
 }
 .rung-cap small{
@@ -307,7 +363,7 @@ section[id]{scroll-margin-top:88px;}
   color:var(--sage);letter-spacing:.13em;text-transform:uppercase;margin-top:11px;
 }
 .rung h3{font-size:21px;color:var(--bone);}
-.rung p{font-size:15px;color:rgba(237,237,229,.7);line-height:1.55;}
+.rung p{font-size:15px;color:rgba(var(--bone-rgb),.7);line-height:1.55;}
 @media(max-width:960px){.rung{grid-template-columns:200px 1fr;gap:12px 26px;}.rung p{grid-column:2;}}
 @media(max-width:660px){.rung{grid-template-columns:1fr;gap:12px;}.rung p{grid-column:1;}}
 .ladder-note{
@@ -324,9 +380,9 @@ section[id]{scroll-margin-top:88px;}
 
 /* ── WHO WE SERVE ─────────────────────────────────────────────────── */
 .serve{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;}
-.serve div{border-left:2px solid var(--amber);padding-left:16px;}
+.serve div{border-left:2px solid var(--accent);padding-left:16px;}
 .serve h4{font-size:17px;color:var(--bone);margin-bottom:7px;}
-.serve p{font-size:14.5px;color:rgba(237,237,229,.7);line-height:1.5;}
+.serve p{font-size:14.5px;color:rgba(var(--bone-rgb),.7);line-height:1.5;}
 @media(max-width:860px){.serve{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;}}
 @media(max-width:480px){.serve{grid-template-columns:1fr;}}
 
@@ -334,13 +390,13 @@ section[id]{scroll-margin-top:88px;}
 .track{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:8px;}
 .step{padding:0 22px 0 0;position:relative;}
 .step-bar{height:4px;background:var(--line);margin-bottom:18px;}
-.step.done .step-bar{background:var(--amber-ink);}
-.step.active .step-bar{background:repeating-linear-gradient(90deg,var(--amber-ink) 0 9px,transparent 9px 17px);}
+.step.done .step-bar{background:var(--accent-ink);}
+.step.active .step-bar{background:repeating-linear-gradient(90deg,var(--accent-ink) 0 9px,transparent 9px 17px);}
 .step-state{
   font-family:var(--mono);font-size:10.5px;letter-spacing:.15em;text-transform:uppercase;
   color:var(--muted);margin-bottom:9px;
 }
-.step.done .step-state,.step.active .step-state{color:var(--amber-ink);}
+.step.done .step-state,.step.active .step-state{color:var(--accent-ink);}
 .step h3{font-size:19px;margin-bottom:9px;}
 .step p{font-size:14.5px;color:var(--muted);line-height:1.5;}
 @media(max-width:860px){.track{grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 20px;}}
@@ -349,7 +405,7 @@ section[id]{scroll-margin-top:88px;}
 /* ── PAST PERFORMANCE NOTE ────────────────────────────────────────── */
 .note{
   margin-top:44px;background:var(--white);border:1px solid var(--line);
-  border-left:3px solid var(--amber-ink);padding:28px 30px;
+  border-left:3px solid var(--accent-ink);padding:28px 30px;
   display:grid;grid-template-columns:1fr 1.6fr;gap:30px;align-items:center;
 }
 .note h3{font-size:21px;margin-bottom:8px;}
@@ -367,8 +423,8 @@ section[id]{scroll-margin-top:88px;}
 .poc dl{margin:0;display:flex;flex-direction:column;gap:15px;}
 .poc dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--sage);margin-bottom:4px;}
 .poc dd{margin:0;font-size:16px;color:var(--bone);}
-.poc dd a{color:var(--amber);text-decoration:none;border-bottom:1px solid rgba(223,160,58,.4);}
-.poc dd a:hover{color:#EDB055;}
+.poc dd a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(var(--accent-rgb),.4);}
+.poc dd a:hover{color:var(--accent-hover);}
 @media(max-width:820px){.contact{grid-template-columns:1fr;gap:34px;}}
 
 /* ── FOOTER ───────────────────────────────────────────────────────── */
@@ -377,7 +433,7 @@ footer{background:var(--field-900);color:var(--sage);padding:38px 0 44px;border-
 .foot p{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;line-height:1.85;}
 .foot .legal{color:var(--bone);}
 .foot a{color:var(--sage);text-decoration:none;border-bottom:1px solid var(--field-600);}
-.foot a:hover{color:var(--amber);}
+.foot a:hover{color:var(--accent);}
 
 /* ── MOTION ───────────────────────────────────────────────────────── */
 /* Deliberately minimal. Hover states on links and buttons are the only
@@ -390,7 +446,16 @@ footer{background:var(--field-900);color:var(--sage);padding:38px 0 44px;border-
 </head>
 <body>
 
-<div class="proto">Prototype for review <span>— identifiers marked “pending” are placeholders, not live registration data</span></div>
+<div class="proto">
+  <span class="proto-note">Prototype <span>— identifiers marked “pending” are placeholders</span></span>
+  <span class="picker" role="group" aria-label="Colorway">
+    <b>Color</b>
+    <button type="button" data-set="ink" aria-pressed="true"><i style="background:linear-gradient(135deg,#1C2128 50%,#D98552 50%)"></i>Ink</button>
+    <button type="button" data-set="harbor" aria-pressed="false"><i style="background:linear-gradient(135deg,#163542 50%,#E7A860 50%)"></i>Harbor</button>
+    <button type="button" data-set="slate" aria-pressed="false"><i style="background:linear-gradient(135deg,#232C38 50%,#6BB2E8 50%)"></i>Slate</button>
+    <button type="button" data-set="field" aria-pressed="false"><i style="background:linear-gradient(135deg,#20362C 50%,#DFA03A 50%)"></i>Field</button>
+  </span>
+</div>
 
 <header class="nav">
   <div class="wrap nav-in">
@@ -694,5 +759,30 @@ footer{background:var(--field-900);color:var(--sage);padding:38px 0 44px;border-
   </div>
 </footer>
 
+<script>
+/* Colorway picker. The stylesheet's own :root is the Ink colorway, so the
+   page renders correctly before this runs and with JS off entirely. */
+(function () {
+  var root = document.documentElement;
+  var btns = Array.prototype.slice.call(document.querySelectorAll('.picker [data-set]'));
+  var names = btns.map(function (b) { return b.getAttribute('data-set'); });
+
+  function apply(name) {
+    root.setAttribute('data-palette', name);
+    btns.forEach(function (b) {
+      b.setAttribute('aria-pressed', String(b.getAttribute('data-set') === name));
+    });
+    try { localStorage.setItem('spy-colorway', name); } catch (e) { /* private mode */ }
+  }
+
+  var saved = null;
+  try { saved = localStorage.getItem('spy-colorway'); } catch (e) { /* private mode */ }
+  apply(names.indexOf(saved) > -1 ? saved : 'ink');
+
+  btns.forEach(function (b) {
+    b.addEventListener('click', function () { apply(b.getAttribute('data-set')); });
+  });
+})();
+</script>
 </body>
 </html>

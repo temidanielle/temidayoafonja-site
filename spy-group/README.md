@@ -29,14 +29,30 @@ All three carry identical content. They differ only in identity.
 
 ### Option 1 — Manifest
 
-Deep spruce-green ground (`#20362C`), bone bands (`#EDEDE5`), one
-stencil-ochre accent (`#DFA03A`) — the color of crate markings. Archivo
-semi-condensed for headlines, **Public Sans** for body (the U.S. Web
-Design System typeface, so the page speaks the federal buyer's own
+Archivo semi-condensed for headlines, **Public Sans** for body (the U.S.
+Web Design System typeface, so the page speaks the federal buyer's own
 idiom), IBM Plex Mono for every identifier.
 
 Reads as: disciplined, technical, understated. Looks like it was built by
 someone who has run a warehouse.
+
+**The color is still open.** The page carries a colorway picker in its top
+bar — a review-only control that comes out once one is chosen. Every
+colorway is a complete token set covering the dark grounds, the light
+bands, the accent, and the rgb triplets behind every `rgba()`, and every
+text pair in every colorway clears WCAG AA (the tightest is 4.7:1 against
+a 4.5 requirement).
+
+| Colorway | Ground | Accent | Character |
+| --- | --- | --- | --- |
+| **Ink** (default) | `#1C2128` charcoal | `#D98552` copper | Industrial, neutral, warm metal |
+| **Harbor** | `#163542` blue-teal | `#E7A860` sand | Ports and container yards |
+| **Slate** | `#232C38` blue-gray | `#6BB2E8` utility blue | Corporate, cool, no warm cast |
+| **Field** | `#20362C` spruce | `#DFA03A` ochre | The original; reads military |
+
+Field is kept only for comparison. Deep green plus veteran-owned reads as
+army whether or not that is intended, which is why it is no longer the
+default.
 
 ### Option 2 — Signal
 
