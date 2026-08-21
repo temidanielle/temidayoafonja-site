@@ -119,13 +119,13 @@
       "price_change_note": "Was $500 with a 12-participant cap. Changed to a free, open-registration flagship by operator decision, August 13 2026.",
       "participant_cap": null,
       "participant_cap_display": "Open registration",
-      "duration": "90 minutes",
-      "duration_detail": "75-minute recorded teaching and assessment core, then a 15-minute live-only question and answer",
+      "duration": "60 minutes",
+      "duration_detail": "50-minute recorded guided assessment, then a 10-minute private question and answer",
       "session": {
         "date": "2026-09-16",
         "date_display": "Wednesday, September 16, 2026",
         "start_time": "18:00",
-        "end_time": "19:30",
+        "end_time": "19:00",
         "time_display": "6:00 to 7:00 PM CT",
         "timezone": "America/Chicago"
       },
