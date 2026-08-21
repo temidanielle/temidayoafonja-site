@@ -152,9 +152,10 @@
       "excludes": ["Written Next-Move Note"],
       "excludes_note": "The written Next-Move Note moved to the paid Private Capability Position Read on August 14 2026 and must not be promised for the free session. Q&A is offered as time allows rather than guaranteed.",
       "registration_url": {
-        "published": false,
-        "intended": "https://maven.com/temidayo-afonja/decide-whether-to-stay-or-leave-your-job",
-        "note": "Maven registration is not open yet, so this URL is recorded but not linked anywhere. The homepage CTA reads Register Free and points at /for-professionals, which carries the notify form. Swap both to the direct Maven link when registration opens."
+        "published": true,
+        "url": "https://maven.com/p/8b3c40",
+        "appears_on": ["for-professionals.html", "diagnostic.html"],
+        "note": "Registration is open. The canonical short URL is linked in three places: the September 16 card and the register section on for-professionals.html, and the results CTA on diagnostic.html. Recorded as unpublished until August 21 2026. Two earlier forms are superseded and must not be reused: the intended URL maven.com/temidayo-afonja/decide-whether-to-stay-or-leave-your-job, which was never linked on any page, and the extended slug maven.com/p/8b3c40/stay-or-leave-your-job-live-career-growth-assessment."
       }
     },
 
