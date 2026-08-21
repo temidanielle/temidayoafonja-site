@@ -53,9 +53,12 @@ engines; confirmation on Poppler 26.05+ remains pending (still uninstallable in
 this environment). Root cause not called conclusively confirmed until that
 environment is exercised.
 
-Release status: not approved for publication. Requires (1) interactive
-field-capacity acceptance in Adobe Acrobat Reader and (2) a successful page-37
-test on Poppler 26.05+. No website, Gumroad, or live-delivery change was made.
+Release status: not yet approved for publication. Gate (1) interactive
+field-capacity acceptance in Adobe Acrobat Reader is PASSED (product-owner
+confirmation, 2026-08-21: long multiline and short fields, save/close/reopen
+persistence, editability, and handbook page 37 all verified). The only open gate
+is (2) a successful page-37 test on Poppler 26.05+. No website, Gumroad, or
+live-delivery change was made.
 
 Metrics unchanged: handbook 41 pages / 16 bookmarks / 25 unique fields (23
 multiline); ledger 12 pages / 7 bookmarks / 117 unique fields (51 multiline).

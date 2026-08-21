@@ -58,9 +58,14 @@ within ~1px, so the larger values do not clip, shift, or corrupt the page.
 *Viewer scope.* PyMuPDF fill/save/reopen confirms persistence but does not
 simulate keystroke entry and does not enforce `/MaxLen` at set time; the
 `/MaxLen` value in the PDF (verified >= intended for every field) is what a
-conformant viewer reads to decide how much a person may type. **True keystroke
-entry in Adobe Acrobat Reader is a manual release gate and is NOT reported as
-passed here.**
+conformant viewer reads to decide how much a person may type. True keystroke
+entry in Adobe Acrobat Reader was therefore held as a manual release gate.
+
+*Adobe Acrobat Reader manual acceptance: PASSED.* On 2026-08-21 the product
+owner ran the manual acceptance test on both RC5 PDFs in Adobe Acrobat Reader
+and confirmed: long multiline entries and short fields accept their intended
+input; saving, closing, and reopening preserve the values; fields remain
+editable; and handbook page 37 renders correctly. This gate is now closed.
 
 **Automated capacity QA (`qa_maxlen.py`).** The build now fails when any field's
 `/MaxLen` is below its documented acceptance length, a narrative field is left
@@ -76,10 +81,11 @@ environment (apt caps at 24.02.0; conda-forge / binary hosts blocked by the
 proxy). The original root cause is not called conclusively confirmed until that
 exact environment is exercised successfully.
 
-**Release status.** Not approved for publication. Release requires both (1)
-interactive field-capacity acceptance in Adobe Acrobat Reader and (2) a
+**Release status.** Not yet approved for publication. Of the two release gates,
+(1) interactive field-capacity acceptance in Adobe Acrobat Reader is **PASSED**
+(product-owner confirmation, 2026-08-21). The remaining open gate is (2) a
 successful page-37 render test on Poppler 26.05 or later. No website, Gumroad,
-or live-delivery change was made.
+or live-delivery change has been made.
 
 The RC4, RC3, and RC2 results below still hold (content, design, and forms are
 otherwise unchanged).
