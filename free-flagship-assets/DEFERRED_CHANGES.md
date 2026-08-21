@@ -49,22 +49,28 @@ move with it in the same pass:
 
 ---
 
-## Not deferred — still outstanding on the current package
+## Gate status — current package
 
 The v2.0.1 workbook is frozen byte-for-byte at SHA-256
 `2bd2912846a679837e8e6bfb4aadff2bb07ee5959d35502ca1c5b5c728efa3ee`.
 
-The remaining action on it is **the Adobe Acrobat Reader behaviour test**, not a
-rebuild. Open the existing file in Acrobat Reader — not a browser viewer — and
-confirm:
+Three gates stand between CANDIDATE and FINAL. All three are required, in any
+order.
 
-- a bare `?` is refused;
-- `3?` is accepted;
-- `2?` and `5?` are accepted;
-- `6?` and `1??` are refused;
-- all four totals calculate;
-- question marks are excluded from the numeric total;
-- every total remains manually typeable.
+| Gate | Status |
+|---|---|
+| Rehearsal 1 — timed content | **OUTSTANDING** |
+| Rehearsal 2 — production | **OUTSTANDING** |
+| Workbook behaviour test, Adobe Acrobat Reader | **PASSED** — reported Friday, August 21, 2026 CT |
 
-That is one of the three gates between CANDIDATE and FINAL, alongside
-Rehearsal 1 and Rehearsal 2. All three are required, in any order.
+The Acrobat test was run against the frozen v2.0.1 workbook and reported as
+passing on all seven criteria: a bare `?` refused; `3?` accepted; `2?` and `5?`
+accepted; `6?` and `1??` refused; all four totals calculating; question marks
+excluded from the numeric total; every total still manually typeable.
+
+That result belongs to THIS build of the workbook. If the workbook is ever
+regenerated — including to apply the deferred change above — the test has to be
+re-run against the new file, because the form and its JavaScript are rebuilt
+with it.
+
+The package therefore stays CANDIDATE until both rehearsals pass.
