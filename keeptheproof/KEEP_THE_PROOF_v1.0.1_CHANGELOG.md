@@ -6,6 +6,47 @@
 
 ---
 
+## Internal build RC3 (icon-system refinement, on top of RC2)
+
+The public version stays 1.0.1 (not distributed). RC3 is a controlled visual
+refinement that introduces a restrained, consistent navigation icon system. No
+customer-facing copy, typography, page dimensions, page count, form definitions,
+field names/flags/coordinates, bookmarks, links, headers, footers, or product
+scope changed. All icons are native ReportLab vector geometry (no emoji,
+Unicode, icon font, or raster), built as shared functions in `ktp.py` so the
+handbook and ledger use one system, each drawn inside a canvas save/restore.
+
+- **Cover mark.** The old three-horizontal-line motif (which read like a menu
+  symbol) is replaced on both covers by a stacked evidence-card mark: two offset
+  outlined record cards, a short gold proof line on the front card, and a small
+  rust tab accent. Title hierarchy and all other cover positioning are unchanged.
+- **Part dividers.** A rust badge (~0.43 in, cream line icon) sits above each
+  PART label, left-aligned: Part One record + magnifier; Part Two shield + check;
+  Part Three form + pencil; Part Four layered cards; Part Five calendar + loop.
+- **Handbook tool pages.** A smaller rust chip in the same icon language sits at
+  the top-right of seven pages: p16 clock + pencil, p17 form card, p23 translate
+  arrow, p24 proof lines, p30 60-minute clock, p31 calendar loop, p32 record +
+  magnifier. One icon per page.
+- **Ledger form bands.** A small cream line icon sits at the far-right of each
+  navy form-title band (Quick Capture, Full Entry, Translation, Proof Line,
+  Monthly Sweep, Quarterly Review), repeated across a form's pages; the Evidence
+  Index, which uses a column-header row rather than a single-title band, carries
+  its record + magnifier icon at the title. The band's icon cell is sized so the
+  band height, and every field coordinate below it, is unchanged.
+
+Icons are placed with a zero-height `IconMark` flowable and a fixed-size
+`IconCell`, so nothing shifts. Verified: extracted customer-facing text, every
+AcroForm field name/type/flag/rectangle, page count, bookmarks, and links are
+byte-identical to RC2. Blank and stress-filled/saved-and-reopened PDFs render
+cleanly through PyMuPDF, Poppler (whole-document and isolated), and Ghostscript
+with no blank pages and no engine divergence. An icon-review contact sheet
+accompanies this build.
+
+Metrics unchanged: handbook 41 pages / 16 bookmarks / 25 unique fields; ledger
+12 pages / 7 bookmarks / 117 unique fields.
+
+---
+
 ## Internal build RC2 (release candidate, on top of v1.0.1)
 
 The public version stays 1.0.1 (not distributed). RC2 is an internal

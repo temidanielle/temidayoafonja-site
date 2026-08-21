@@ -318,6 +318,229 @@ class Bookmark(Flowable):
         canvas.addOutlineEntry(self.title, self.key, self.level, 0)
     def draw(self): pass
 
+# ==========================================================================
+# Icon system (RC3). One family of native ReportLab vector marks, shared by the
+# handbook and the ledger. No emoji, Unicode, icon font, or raster. Every mark
+# saves and restores canvas state, uses palette constants, and draws with round
+# caps/joins at a consistent optical weight. Coordinates are the lower-left of an
+# s x s box; the caller positions the box.
+# ==========================================================================
+def _pen(c, col, w):
+    c.setStrokeColor(col); c.setFillColor(col)
+    c.setLineWidth(w); c.setLineCap(1); c.setLineJoin(1)
+
+def _card(c, x, y, w, h, col, lw, r=None):
+    c.setStrokeColor(col); c.setLineWidth(lw); c.setLineCap(1); c.setLineJoin(1)
+    c.roundRect(x, y, w, h, r if r is not None else min(w, h)*0.14, stroke=1, fill=0)
+
+def evidence_mark(c, x, y, s=54, card=CREAM, proof=GOLD, accent=RUST):
+    """The Keep the Proof product mark: two offset outlined record cards, a short
+    gold proof line on the front card, and a small rust tab accent."""
+    c.saveState()
+    w, h = s*0.74, s*0.60
+    off = s*0.17
+    _card(c, x+off, y+off, w, h, card, max(1.1, s*0.045))      # back card
+    _card(c, x, y, w, h, card, max(1.3, s*0.05))               # front card
+    _pen(c, proof, max(1.4, s*0.058))                          # proof line (gold)
+    c.line(x+w*0.16, y+h*0.40, x+w*0.70, y+h*0.40)
+    _pen(c, card, max(1.0, s*0.038))                           # a shorter line
+    c.line(x+w*0.16, y+h*0.63, x+w*0.52, y+h*0.63)
+    c.setFillColor(accent); c.setStrokeColor(accent)           # rust tab accent
+    tw, th = s*0.075, s*0.20
+    c.rect(x-tw*0.5, y+h*0.30, tw, th, fill=1, stroke=0)
+    c.restoreState()
+
+def badge(c, x, y, d, icon_fn, fill=RUST, line=CREAM):
+    """A rust rounded-square badge with a cream line icon centred inside.
+    (x, y) is the lower-left of the d x d badge."""
+    c.saveState()
+    c.setFillColor(fill); c.setStrokeColor(fill)
+    c.roundRect(x, y, d, d, d*0.24, stroke=0, fill=1)
+    pad = d*0.22
+    icon_fn(c, x+pad, y+pad, d-2*pad, line)
+    c.restoreState()
+
+# ---- topical line icons (draw inside an s x s box at (x, y)) --------------
+def ic_record_search(c, x, y, s, col):      # card + magnifier (understand / retrieve / index)
+    c.saveState(); _pen(c, col, max(1.0, s*0.075))
+    cw, ch = s*0.60, s*0.74; cx, cy = x, y+s*0.14
+    _card(c, cx, cy, cw, ch, col, max(1.0, s*0.075))
+    c.setLineWidth(max(0.8, s*0.055))
+    c.line(cx+cw*0.20, cy+ch*0.66, cx+cw*0.80, cy+ch*0.66)
+    c.line(cx+cw*0.20, cy+ch*0.45, cx+cw*0.62, cy+ch*0.45)
+    r = s*0.17; mx, my = x+s*0.70, y+s*0.28   # magnifier
+    c.setLineWidth(max(1.0, s*0.085))
+    c.circle(mx, my, r, stroke=1, fill=0)
+    c.line(mx+r*0.72, my-r*0.72, x+s*0.98, y+s*0.02)
+    c.restoreState()
+
+def ic_shield_check(c, x, y, s, col):        # permission & protection
+    c.saveState(); _pen(c, col, max(1.1, s*0.08))
+    cx = x+s*0.5; top = y+s*0.94; bot = y+s*0.06
+    wsh = s*0.34
+    c.bezier(cx-wsh, top, cx-wsh, top, cx-wsh, y+s*0.42, cx, bot)
+    c.bezier(cx, bot, cx+wsh, y+s*0.42, cx+wsh, top, cx+wsh, top)
+    c.line(cx-wsh, top, cx+wsh, top)
+    c.setLineWidth(max(1.2, s*0.10))         # check mark
+    c.line(cx-s*0.16, y+s*0.50, cx-s*0.02, y+s*0.36)
+    c.line(cx-s*0.02, y+s*0.36, cx+s*0.20, y+s*0.66)
+    c.restoreState()
+
+def ic_form_pencil(c, x, y, s, col):         # the tools (form card + pencil)
+    c.saveState(); _pen(c, col, max(1.0, s*0.075))
+    cw, ch = s*0.62, s*0.82; cx, cy = x, y+s*0.09
+    _card(c, cx, cy, cw, ch, col, max(1.0, s*0.075))
+    c.setLineWidth(max(0.8, s*0.05))
+    for i,fr in enumerate((0.72, 0.54, 0.36)):
+        c.line(cx+cw*0.18, cy+ch*fr, cx+cw*(0.82 if i else 0.82), cy+ch*fr)
+    c.setLineWidth(max(1.0, s*0.08))         # pencil (diagonal), bottom-right
+    px, py = x+s*0.58, y+s*0.06
+    c.line(px, py, px+s*0.34, py+s*0.34)
+    c.line(px+s*0.30, py+s*0.30, px+s*0.40, py+s*0.40)  # tip
+    c.restoreState()
+
+def ic_form_card(c, x, y, s, col):           # structured form card
+    c.saveState(); _pen(c, col, max(1.0, s*0.075))
+    cw, ch = s*0.74, s*0.88; cx, cy = x+s*0.13, y+s*0.06
+    _card(c, cx, cy, cw, ch, col, max(1.0, s*0.075))
+    c.setLineWidth(max(0.8, s*0.05))
+    for fr in (0.76, 0.58, 0.40, 0.22):
+        c.line(cx+cw*0.16, cy+ch*fr, cx+cw*0.84, cy+ch*fr)
+    c.restoreState()
+
+def ic_layered_cards(c, x, y, s, col):       # worked examples (layered cards)
+    c.saveState(); _pen(c, col, max(1.0, s*0.07))
+    w, h = s*0.60, s*0.50
+    _card(c, x+s*0.30, y+s*0.34, w, h, col, max(1.0, s*0.06))
+    _card(c, x+s*0.14, y+s*0.20, w, h, col, max(1.0, s*0.065))
+    _card(c, x, y+s*0.06, w, h, col, max(1.1, s*0.075))
+    c.setLineWidth(max(0.8, s*0.05))
+    c.line(x+w*0.16, y+s*0.06+h*0.60, x+w*0.72, y+s*0.06+h*0.60)
+    c.line(x+w*0.16, y+s*0.06+h*0.36, x+w*0.54, y+s*0.06+h*0.36)
+    c.restoreState()
+
+def ic_calendar_arrow(c, x, y, s, col):      # routines / continued use (calendar + loop)
+    c.saveState(); _pen(c, col, max(1.0, s*0.075))
+    cw, ch = s*0.80, s*0.72; cx, cy = x+s*0.10, y+s*0.10
+    _card(c, cx, cy, cw, ch, col, max(1.0, s*0.06))
+    c.setLineWidth(max(0.9, s*0.06))
+    c.line(cx, cy+ch*0.74, cx+cw, cy+ch*0.74)      # header rule
+    c.line(cx+cw*0.28, cy+ch, cx+cw*0.28, cy+ch*0.86)  # hangers
+    c.line(cx+cw*0.72, cy+ch, cx+cw*0.72, cy+ch*0.86)
+    import math
+    r = s*0.17; mx, my = cx+cw*0.5, cy+ch*0.36       # circular arrow
+    c.setLineWidth(max(1.0, s*0.07))
+    c.arc(mx-r, my-r, mx+r, my+r, 20, 280)
+    c.line(mx+r*0.94, my+r*0.34, mx+r*1.28, my+r*0.10)  # arrow head
+    c.line(mx+r*0.94, my+r*0.34, mx+r*0.72, my+r*0.60)
+    c.restoreState()
+
+def ic_calendar_single(c, x, y, s, col):     # monthly sweep (calendar)
+    c.saveState(); _pen(c, col, max(1.0, s*0.075))
+    cw, ch = s*0.82, s*0.74; cx, cy = x+s*0.09, y+s*0.10
+    _card(c, cx, cy, cw, ch, col, max(1.0, s*0.06))
+    c.setLineWidth(max(0.9, s*0.06))
+    c.line(cx, cy+ch*0.74, cx+cw, cy+ch*0.74)
+    c.line(cx+cw*0.28, cy+ch, cx+cw*0.28, cy+ch*0.86)
+    c.line(cx+cw*0.72, cy+ch, cx+cw*0.72, cy+ch*0.86)
+    c.setLineWidth(max(0.8, s*0.05))               # a couple of day marks
+    for gx in (0.30, 0.52, 0.74):
+        c.line(cx+cw*gx, cy+ch*0.44, cx+cw*(gx+0.10), cy+ch*0.44)
+    for gx in (0.30, 0.52):
+        c.line(cx+cw*gx, cy+ch*0.26, cx+cw*(gx+0.10), cy+ch*0.26)
+    c.restoreState()
+
+def ic_clock_pencil(c, x, y, s, col):        # quick capture (clock + pencil)
+    c.saveState(); _pen(c, col, max(1.1, s*0.08))
+    r = s*0.30; mx, my = x+s*0.36, y+s*0.60
+    c.circle(mx, my, r, stroke=1, fill=0)
+    c.setLineWidth(max(1.0, s*0.07))
+    c.line(mx, my, mx, my+r*0.62); c.line(mx, my, mx+r*0.5, my)
+    px, py = x+s*0.52, y+s*0.02                    # pencil
+    c.setLineWidth(max(1.0, s*0.08))
+    c.line(px, py, px+s*0.40, py+s*0.40)
+    c.line(px+s*0.34, py+s*0.28, px+s*0.46, py+s*0.40)
+    c.restoreState()
+
+def ic_clock60(c, x, y, s, col):             # 60-minute setup
+    c.saveState(); _pen(c, col, max(1.1, s*0.085))
+    r = s*0.40; mx, my = x+s*0.5, y+s*0.46
+    c.circle(mx, my, r, stroke=1, fill=0)
+    c.line(mx, my+r, mx, my+r*0.72)                # 12 tick
+    c.setLineWidth(max(1.0, s*0.075))
+    c.line(mx, my, mx, my+r*0.60)                  # minute hand (to 12 -> full hour)
+    c.line(mx, my, mx+r*0.42, my+r*0.10)           # hour hand
+    c.restoreState()
+
+def ic_translate_arrow(c, x, y, s, col):     # translate (two lines + arrow)
+    c.saveState(); _pen(c, col, max(1.1, s*0.08))
+    c.line(x+s*0.06, y+s*0.72, x+s*0.44, y+s*0.72)   # internal line (short)
+    c.line(x+s*0.06, y+s*0.58, x+s*0.34, y+s*0.58)
+    c.line(x+s*0.56, y+s*0.30, x+s*0.96, y+s*0.30)   # portable line
+    c.line(x+s*0.56, y+s*0.16, x+s*0.86, y+s*0.16)
+    ax0, ay0, ax1, ay1 = x+s*0.30, y+s*0.62, x+s*0.66, y+s*0.30   # arrow
+    c.setLineWidth(max(1.1, s*0.085))
+    c.line(ax0, ay0, ax1, ay1)
+    c.line(ax1, ay1, ax1-s*0.16, ay1+s*0.06)
+    c.line(ax1, ay1, ax1-s*0.04, ay1+s*0.20)
+    c.restoreState()
+
+def ic_prooflines(c, x, y, s, col):          # proof line (many lines resolve into one)
+    c.saveState(); _pen(c, col, max(0.9, s*0.06))
+    for fr, ln in ((0.86,0.42),(0.70,0.60),(0.54,0.34)):
+        c.line(x+s*0.04, y+s*fr, x+s*0.04+s*ln, y+s*fr)
+    c.setLineWidth(max(1.4, s*0.11))              # the one clear proof line
+    c.line(x+s*0.04, y+s*0.20, x+s*0.92, y+s*0.20)
+    c.setLineWidth(max(0.9, s*0.06))              # converging guides
+    c.line(x+s*0.46, y+s*0.54, x+s*0.60, y+s*0.24)
+    c.restoreState()
+
+class IconMark(Flowable):
+    """Zero-height flowable that draws a vector icon at a position derived from
+    its flow location. Because it consumes no space it never changes text flow,
+    field coordinates, page count, bookmarks, or links. draw_fn receives
+    (canvas, x, y) where (x, y) is the flowable's absolute lower-left."""
+    def __init__(self, draw_fn):
+        super().__init__(); self.draw_fn = draw_fn
+    def wrap(self, aw, ah): return (0, 0)
+    def drawOn(self, canvas, x, y, _sW=0):
+        canvas.saveState()
+        self.draw_fn(canvas, x, y)
+        canvas.restoreState()
+    def draw(self): pass
+
+def divider_badge_mark(part_num, d=31, gap=10):
+    """Return a draw_fn that places a Part badge above the PART label at the
+    left edge. Insert the IconMark right before the PART paragraph."""
+    icon = PART_ICON[part_num]
+    def _fn(c, x, y):
+        badge(c, x, y + gap, d, icon)
+    return _fn
+
+def chip_mark(icon_fn, d=20, dy=-30):
+    """Return a draw_fn that places a small badge at the top-right of a tool
+    page, vertically near the kicker/title. Insert the IconMark at the very
+    start of the section (its y is the content-frame top)."""
+    def _fn(c, x, y):
+        badge(c, PAGE_W - MARGIN - d, y + dy, d, icon_fn)
+    return _fn
+
+class IconCell(Flowable):
+    """A fixed-size cell that draws a line icon, for the far-right of a ledger
+    form-title band. Sized <= the band's title height so it never increases the
+    band height (form-field coordinates below stay identical)."""
+    def __init__(self, icon_fn, d=17, col=CREAM):
+        super().__init__(); self.icon_fn=icon_fn; self.d=d; self.col=col
+    def wrap(self, aw, ah): return (self.d, self.d)
+    def draw(self):
+        self.icon_fn(self.canv, 0, 0, self.d, self.col)
+
+# ---- named topical icons for placement -----------------------------------
+PART_ICON = {
+    1: ic_record_search, 2: ic_shield_check, 3: ic_form_pencil,
+    4: ic_layered_cards, 5: ic_calendar_arrow,
+}
+
 # ---- document template ---------------------------------------------------
 class KTPDoc(BaseDocTemplate):
     def __init__(self, filename, footer_title="Keep the Proof", url="temidayoafonja.com", **kw):

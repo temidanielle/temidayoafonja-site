@@ -32,16 +32,24 @@ def CO(title, body, bg="navy", bar=RUST): return KeepTogether([build_callout(tit
 def FR(label, name, w=CONTENT_W, h=20, hint=None, multiline=False, keep=True):
     return field_row(label, name, S, width=w, height=h, hint=hint, multiline=multiline, keep=keep)
 
-def formhead(title, subtitle):
-    """Navy band that heads each reusable form."""
-    inner = [[Paragraph(title, ParagraphStyle("fh_t", fontName="CG-Semi", fontSize=17,
-                 textColor=CREAM, leading=20)),
-              Paragraph(subtitle, ParagraphStyle("fh_s", fontName="DM", fontSize=8.6,
-                 textColor=GOLD, leading=11))]]
-    t = Table([[inner[0][0], inner[0][1]]], colWidths=[CONTENT_W*0.55-14, CONTENT_W*0.45-14])
-    t.setStyle(TableStyle([("BACKGROUND",(0,0),(-1,-1),NAVY),("VALIGN",(0,0),(-1,-1),"MIDDLE"),
+def formhead(title, subtitle, icon_fn=None):
+    """Navy band that heads each reusable form. An optional far-right line icon
+    (RC3) sits in a fixed cell sized <= the title height, so the band height and
+    every form-field coordinate below it stay identical."""
+    tcell = Paragraph(title, ParagraphStyle("fh_t", fontName="CG-Semi", fontSize=17,
+                 textColor=CREAM, leading=20))
+    scell = Paragraph(subtitle, ParagraphStyle("fh_s", fontName="DM", fontSize=8.6,
+                 textColor=GOLD, leading=11))
+    cmds = [("BACKGROUND",(0,0),(-1,-1),NAVY),("VALIGN",(0,0),(-1,-1),"MIDDLE"),
         ("LEFTPADDING",(0,0),(-1,-1),14),("RIGHTPADDING",(0,0),(-1,-1),14),
-        ("TOPPADDING",(0,0),(-1,-1),11),("BOTTOMPADDING",(0,0),(-1,-1),11),("ALIGN",(1,0),(1,0),"RIGHT")]))
+        ("TOPPADDING",(0,0),(-1,-1),11),("BOTTOMPADDING",(0,0),(-1,-1),11),("ALIGN",(1,0),(1,0),"RIGHT")]
+    if icon_fn is not None:
+        icell = IconCell(icon_fn, d=17, col=CREAM)
+        t = Table([[tcell, scell, icell]], colWidths=[CONTENT_W*0.55-14, CONTENT_W*0.45-14-24, 24])
+        cmds += [("ALIGN",(2,0),(2,0),"CENTRE"),("LEFTPADDING",(2,0),(2,0),0),("RIGHTPADDING",(2,0),(2,0),8)]
+    else:
+        t = Table([[tcell, scell]], colWidths=[CONTENT_W*0.55-14, CONTENT_W*0.45-14])
+    t.setStyle(TableStyle(cmds))
     return t
 
 def two_up(l1,n1,l2,n2,h=20):
@@ -72,7 +80,8 @@ class Cover(Flowable):
         canvas.restoreState()
     def draw(self):
         c=self.canv
-        record_motif(c, MARGIN, PAGE_H-120, w=52)
+        # product mark: stacked evidence cards (replaces the old line motif)
+        evidence_mark(c, MARGIN, PAGE_H-158, s=54)
         c.setFont("DM-Bold", 11); c.setFillColor(GOLD)
         c.drawString(MARGIN, PAGE_H-186, "K E E P   T H E   P R O O F")
         c.setFont("CG-Semi", 60); c.setFillColor(CREAM)
@@ -124,7 +133,7 @@ def quick_capture_page(prefix, first=False):
     pg += [SP(6), EY("Form one"),
         Paragraph("Quick Capture", S["h2"]), RULE(),
         P("For catching work before it fades, in the two minutes after it happens. One capture per page, with room to write a real answer. Print or copy this page whenever you need another."),
-        SP(6), formhead("Two-Minute Quick Capture", "one work event"), SP(8)]
+        SP(6), formhead("Two-Minute Quick Capture", "one work event", ic_clock_pencil), SP(8)]
     pg += quick_capture_fields(S, prefix)
     return pg
 story += quick_capture_page("qc1", first=True)
@@ -139,17 +148,17 @@ _fe1, _fe2, _fe3 = full_entry_pages(S, "le_fe")
 story += [Bookmark("Full Career Evidence Entry", 0), SP(6), EY("Form two"),
     Paragraph("Full Career Evidence Entry", S["h2"]), RULE(),
     P("For work worth keeping in full. Expand a Quick Capture into a complete entry across the three pages that follow, and fill only the fields that apply."),
-    SP(6), formhead("Full Career Evidence Entry", "page one of three"), SP(8)]
+    SP(6), formhead("Full Career Evidence Entry", "page one of three", ic_form_card), SP(8)]
 story += _fe1
 story += [PageBreak()]
 story += [SP(6), EY("Form two, continued"),
     Paragraph("Full Career Evidence Entry", S["h2"]), RULE(),
-    SP(6), formhead("Full Career Evidence Entry", "page two of three"), SP(8)]
+    SP(6), formhead("Full Career Evidence Entry", "page two of three", ic_form_card), SP(8)]
 story += _fe2
 story += [PageBreak()]
 story += [SP(6), EY("Form two, continued"),
     Paragraph("Full Career Evidence Entry", S["h2"]), RULE(),
-    SP(6), formhead("Full Career Evidence Entry", "page three of three"), SP(8)]
+    SP(6), formhead("Full Career Evidence Entry", "page three of three", ic_form_card), SP(8)]
 story += _fe3
 story += [PageBreak()]
 
@@ -162,14 +171,14 @@ def tr_pair(i):
 story += [Bookmark("Translation Worksheet", 0), SP(6), EY("Form three"),
     Paragraph("Translation worksheet", S["h2"]), RULE(),
     P("Turn internal language into portable language. Keep any team result separate from your own part, and never invent a number."),
-    SP(6), formhead("Internal to portable", "five lines"), SP(8),
+    SP(6), formhead("Internal to portable", "five lines", ic_translate_arrow), SP(8),
     tr_pair(1), SP(6), tr_pair(2), SP(6), tr_pair(3), SP(6), tr_pair(4), SP(6), tr_pair(5),
 ]
 story += [PageBreak()]
 story += [Bookmark("Proof Line Builder", 0), SP(6), EY("Form three, continued"),
     Paragraph("Proof Line builder", S["h2"]), RULE(),
     P("Build one portable sentence from the parts of an entry. Combine them in whatever order reads well. It must be accurate, and yours to say."),
-    SP(6), formhead("Proof Line builder", "one portable sentence"), SP(8),
+    SP(6), formhead("Proof Line builder", "one portable sentence", ic_prooflines), SP(8),
     two_up_fields({"label":"Condition (the problem or situation)","name":"pl_cond","height":64,"multiline":True},
                   {"label":"Your part (what was yours)","name":"pl_part","height":64,"multiline":True}, S),
     SP(6), two_up_fields({"label":"Scope or constraint","name":"pl_scope","height":64,"multiline":True},
@@ -187,7 +196,7 @@ story += [PageBreak()]
 story += [Bookmark("Monthly Proof Sweep", 0), SP(6), EY("Form four"),
     Paragraph("Monthly Proof Sweep", S["h2"]), RULE(),
     P("Ten to fifteen minutes, once a month. Look back over the month and add what the day-to-day buried. Short is fine; the point is that nothing worth keeping is lost."),
-    SP(6), formhead("Monthly Proof Sweep", "month and year"),
+    SP(6), formhead("Monthly Proof Sweep", "month and year", ic_calendar_single),
     SP(8),
     two_up("Month", "ms_month", "Date completed", "ms_done"),
     SP(6), FR("Projects, decisions, or problems I helped with this month", "ms_projects", h=50, multiline=True),
@@ -204,7 +213,7 @@ story += [PageBreak()]
 story += [Bookmark("Quarterly Proof Review", 0), SP(6), EY("Form five"),
     Paragraph("Quarterly Proof Review", S["h2"]), RULE(),
     P("About thirty minutes, once a quarter. This is housekeeping, not a verdict. Read your entries, correct anything time has clarified, and index what you have so it stays findable."),
-    SP(6), formhead("Quarterly Proof Review", "quarter and year"),
+    SP(6), formhead("Quarterly Proof Review", "quarter and year", ic_calendar_arrow),
     SP(8),
     two_up("Quarter", "qr_q", "Date completed", "qr_done"),
     SP(6), FR("Entries read and confirmed still accurate", "qr_read", h=50, multiline=True),
@@ -231,7 +240,7 @@ def index_row(i):
         ("TOPPADDING",(0,0),(-1,-1),2),("BOTTOMPADDING",(0,0),(-1,-1),2),("VALIGN",(0,0),(-1,-1),"TOP")]))
     return t
 
-story += [Bookmark("Quarterly Evidence Index", 0), SP(6), EY("Form six"),
+story += [Bookmark("Quarterly Evidence Index", 0), IconMark(chip_mark(ic_record_search)), SP(6), EY("Form six"),
     Paragraph("Quarterly Evidence Index", S["h2"]), RULE(),
     P("A running list of what you have, so any entry is a search away. Update it at each quarterly review. Record only what is yours to keep; the index points to your entries, never to employer material."),
     SP(6)]

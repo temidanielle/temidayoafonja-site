@@ -37,9 +37,11 @@ def GAP(h=24): return Spacer(1, h)  # soft section break when flowing sections o
 def TBL(rows, cw, **kw): return build_table(rows, S, cw, **kw)
 def RULE(w=CONTENT_W, c=HAIR, t=0.8): return HRule(w, color=c, thick=t, space=8)
 
+_PART_NUM = {"One": 1, "Two": 2, "Three": 3, "Four": 4, "Five": 5}
 def section_divider(num, part, title, blurb):
     """Navy full-bleed divider (rendered on divider template)."""
     fls = [SP(150),
+           IconMark(divider_badge_mark(_PART_NUM[num])),
            Paragraph(f"PART {num}", ParagraphStyle("dv_e", fontName="DM-Bold", fontSize=11,
                      textColor=GOLD, leading=15)),
            Paragraph(part, ParagraphStyle("dv_p", fontName="CG-Semi", fontSize=15,
@@ -110,8 +112,8 @@ class Cover(Flowable):
         canvas.restoreState()
     def draw(self):
         c=self.canv
-        # motif top-left
-        record_motif(c, MARGIN, PAGE_H-120, w=52)
+        # product mark: stacked evidence cards (replaces the old line motif)
+        evidence_mark(c, MARGIN, PAGE_H-158, s=54)
         c.setFont("DM-Bold", 11); c.setFillColor(GOLD)
         c.drawString(MARGIN, PAGE_H-190, "A  6 0 - M I N U T E   C A R E E R   E V I D E N C E   S Y S T E M")
         # title

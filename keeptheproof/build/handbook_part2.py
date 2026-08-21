@@ -6,7 +6,9 @@ from reportlab.platypus import (Paragraph, Spacer, NextPageTemplate, PageBreak,
 from reportlab.lib.styles import ParagraphStyle
 from ktp import (NAVY, CREAM, PAPER, GOLD, RUST, BLUE, INK, MUTE, HAIR, CREAMSOFT,
     HexColor, RustTab, HRule, styles as _st,
-    quick_capture_fields, full_entry_pages, two_up_fields, Bookmark)
+    quick_capture_fields, full_entry_pages, two_up_fields, Bookmark,
+    IconMark, chip_mark, ic_clock_pencil, ic_form_card, ic_translate_arrow,
+    ic_prooflines, ic_clock60, ic_calendar_arrow, ic_record_search)
 
 def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
           section_divider, workflow_strip, field_row, Field, CONTENT_W):
@@ -44,7 +46,7 @@ def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
     st += [NT("content"), PB()]
 
     # 14. TWO-MINUTE QUICK CAPTURE
-    st += [Bookmark("The Two-Minute Quick Capture", 1), SP(6), EY("Tool one"),
+    st += [Bookmark("The Two-Minute Quick Capture", 1), IconMark(chip_mark(ic_clock_pencil)), SP(6), EY("Tool one"),
         H2("The Two-Minute Quick Capture"),
         RULE(),
         P("The quick capture exists for one reason: to catch the work before it fades, in the two minutes after it happens. It is deliberately small. Five short prompts, no perfect wording required. You are not writing the final version. You are making sure the final version is still possible later."),
@@ -70,7 +72,7 @@ def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
     st += [PB()]
 
     # 15. FULL CAREER EVIDENCE LEDGER (2 pages)
-    st += [Bookmark("The Full Career Evidence Entry", 1), SP(6), EY("Tool two"),
+    st += [Bookmark("The Full Career Evidence Entry", 1), IconMark(chip_mark(ic_form_card)), SP(6), EY("Tool two"),
         H2("The Full Career Evidence Entry"),
         RULE(),
         P("When a piece of work matters enough to keep properly, you expand a quick capture into a full entry. The ledger below has room for everything that makes a contribution legible later. You will not fill every field every time, and you should not try. A strong entry with six good fields beats a padded one with sixteen."),
@@ -189,7 +191,7 @@ def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
     # =================================================================
     # 20. TRANSLATION SYSTEM
     # =================================================================
-    st += [Bookmark("From internal language to portable language", 1), SP(6), EY("Translate"),
+    st += [Bookmark("From internal language to portable language", 1), IconMark(chip_mark(ic_translate_arrow)), SP(6), EY("Translate"),
         H2("From internal language to portable language"),
         RULE(),
         P("A record only your current employer can read is a record that expires when you leave. Translation is the skill of saying the same true thing in words an outsider can follow. It is not embellishment and it is not lying. It is the difference between a private shorthand and a description that travels."),
@@ -214,7 +216,7 @@ def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
     st += [PB()]
 
     # 21. PROOF LINE BUILDER
-    st += [Bookmark("The Proof Line", 1), SP(6), EY("Build"),
+    st += [Bookmark("The Proof Line", 1), IconMark(chip_mark(ic_prooflines)), SP(6), EY("Build"),
         H2("The Proof Line"),
         RULE(),
         P("A Proof Line is a single, plain-language sentence that carries the most useful parts of an entry in a form you can drop into a review, a resume, or a conversation. It is the portable end product of everything the record holds. You build it by combining, in whatever order reads well, up to five ingredients."),
@@ -328,7 +330,7 @@ def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
     st += [NT("content"), PB()]
 
     # 24. 60-MINUTE SETUP
-    st += [Bookmark("The complete 60-minute setup", 1), SP(6), EY("Start here"),
+    st += [Bookmark("The complete 60-minute setup", 1), IconMark(chip_mark(ic_clock60)), SP(6), EY("Start here"),
         H2("The complete 60-minute setup"),
         RULE(),
         P("This is the first hour. Follow it in order and you will finish with a working system and your first real entries. It is not a promise that you can reconstruct a whole career in sixty minutes. It is a promise that you can leave the hour with the system running and something true already in it."),
@@ -348,7 +350,7 @@ def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
     st += [PB()]
 
     # 25 & 26. ROUTINES
-    st += [SP(6), EY("Keep it current"),
+    st += [IconMark(chip_mark(ic_calendar_arrow)), SP(6), EY("Keep it current"),
         H2("The monthly and quarterly routines"),
         RULE(),
         P("A record is only useful if it stays current, and it only stays current if maintaining it is nearly effortless. Two routines do this. The monthly sweep is short and additive. The quarterly review is longer and corrective. Neither one asks you to diagnose your career. They only keep the evidence honest."),
@@ -378,7 +380,7 @@ def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
     st += [PB()]
 
     # 27. RETRIEVAL
-    st += [SP(6), EY("Use it"),
+    st += [IconMark(chip_mark(ic_record_search)), SP(6), EY("Use it"),
         H2("Retrieving the right evidence"),
         RULE(),
         P("The whole point of tagging is this moment: something is about to happen, and you need the right entries fast. This section tells you which kinds of entries to pull for each occasion. It is a guide to retrieval, not a course in how to interview, negotiate, or write a resume. It gets you the raw material. What you do with it is yours."),
@@ -479,7 +481,7 @@ def story(S, P, LEAD, H2, H3, EY, KI, NOTE, SP, bullets, CO, TBL, RULE,
     st += [PB()]
 
     # 31. OPERATING SUMMARY
-    st += [Bookmark("The Keep the Proof operating summary", 1), SP(6), EY("One page"),
+    st += [Bookmark("The Keep the Proof operating summary", 1), SP(6), EY("One page"),  # (no tool chip: not in the RC3 icon set)
         H2("The Keep the Proof operating summary"), RULE(),
         P("Everything in this guide, on a single page you can return to."),
         SP(2),

@@ -1,6 +1,30 @@
-# Keep the Proof - QA Report v1.0.1 (build RC2)
+# Keep the Proof - QA Report v1.0.1 (build RC3)
 
-**Build:** Version 1.0.1, internal release candidate RC2
+## RC3 icon pass (visual refinement)
+
+RC3 adds a shared navigation icon system (native ReportLab vector) and changes
+nothing else. It was verified to be non-destructive:
+
+- **Extracted customer-facing text is byte-identical** to RC2 in both PDFs.
+- **Every AcroForm field is unchanged**: same count (25 handbook, 117 ledger),
+  and every field's name, type, flags, and rectangle match RC2 exactly.
+- **Page count, bookmarks, and links are unchanged** (handbook 41 pages / 16
+  bookmarks / 41 links; ledger 12 pages / 7 bookmarks / 12 links).
+- **Multi-engine render** of every page, blank and stress-filled/saved-reopened,
+  through PyMuPDF, Poppler (whole-document and isolated), and Ghostscript: no
+  blank pages, 0.0 whole-vs-isolated divergence, no engine divergence. Icons are
+  sharp, aligned, and unclipped in all three engines at 100% and 200%.
+- **Placement inspected** on both covers, all five part dividers, all seven
+  selected tool pages, and every ledger form header (see the icon-review contact
+  sheet). No icon affects text flow, field capacity, bookmarks, links, or page
+  count.
+
+The full RC2 test results below still hold for RC3 (the underlying build,
+content, and forms are unchanged).
+
+---
+
+**Build:** Version 1.0.1, internal release candidate RC3 (icon pass over RC2)
 **Author:** Temidayo Afonja, Founder and Principal, The Density Group
 **Rendering engines:** PyMuPDF 1.28.2; Poppler 24.02.0 (`pdftoppm`), tested both
 whole-document and isolated-page; Ghostscript 10.02.1 (`gs`).
