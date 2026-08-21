@@ -1,4 +1,94 @@
-# Keep the Proof - QA Report v1.0.1 (build RC3)
+# Keep the Proof - QA Report v1.0.1 (build RC4)
+
+## RC4 page-37 PDF compatibility correction
+
+RC4 is a narrowly scoped compatibility correction on top of RC3. It changes one
+thing in the source generation and nothing customer-facing: the no-op interior
+clipping path is stripped from blank AcroForm field appearance streams. The
+public version stays 1.0.1 (unpublished).
+
+**Reported defect.** In the shipped RC3 handbook PDF, page 37 ("Full Career
+Evidence Entry, page two of three") was reported to render with the top content
+clipped or shifted in whole-document Ghostscript 10.02.1 and Poppler 26.05,
+while rendering cleanly in PyMuPDF, in isolated-page Poppler, and in Ghostscript
+with annotations disabled.
+
+**Root cause.** "Clean with annotations disabled" locates the fault in the
+AcroForm widget *appearance* layer, not in the page content. Every blank text
+field appearance ReportLab emits ends with the standard variable-text wrapper
+`/Tx BMC  q  <x y w h> re  W  n  ...  Q  EMC`. For a blank field nothing is
+painted between the clip (`W n`) and the `Q`, so that rectangle is a clipping
+path that clips nothing - a no-op. It is nonetheless the only active
+graphics-state construct in the annotation appearance layer, and it is exactly
+the kind of construct a strict or newer renderer can mis-scope when it
+composites the annotation layer over page content during a whole-document
+render. The isolated-page and annotations-off paths never exercise it, which is
+why they stayed clean.
+
+**Fix (source generation, no compiled-PDF patch, no content moved to conceal).**
+`ktp.py` now wraps `reportlab.pdfbase.acroform.AcroForm.txAP` and removes that
+no-op interior clip from blank appearance streams. Marked-content and q/Q
+pairing stay balanced. Because the clip bounds nothing when there is no value to
+draw, this changes no visible pixel; it only removes the implicated
+annotation-layer construct.
+
+**Non-destructive, verified byte- and pixel-level:**
+
+- **Pixel-identical to RC3** on every page of both PDFs (PyMuPDF at 150 dpi, max
+  absolute pixel difference = 0 across all 41 handbook and 12 ledger pages).
+- **Field definitions byte-identical to RC3**: all 25 handbook and 117 ledger
+  field dictionaries match on name, type, flags, rectangle, MaxLen, border style
+  and colour. The only per-field change is the removal of the clip operators
+  from the `/AP /N` appearance stream.
+- **Page count, bookmarks, links, and extracted text byte-identical** (handbook
+  41 pages / 16 bookmarks / 41 links; ledger 12 pages / 7 bookmarks / 12 links).
+- **Icons unchanged** (pixel-identical covers, dividers, tool pages, form bands).
+
+**Reproduction attempt (before changing anything).** The reported top clip did
+not reproduce in this build environment in any engine or configuration, blank or
+stress-filled, whole-document or truly page-separated: PyMuPDF 1.28.2, Poppler
+24.02.0 (`pdftoppm` whole-document and `pdfseparate` true single-page
+isolation), Ghostscript 10.02.1 (whole-document, single-page, `-dPrinted` to
+force the widget appearance layer to rasterise, and `-dShowAnnots=false`), and
+PDFium 153 all render page 37 with the content top edge and bounding box within
+~1px (the antialiasing floor) of each other. Poppler 26.05+ (named in the
+report) could not be installed in this sandbox: the OS package index caps
+Poppler at 24.02.0 and the conda-forge / micromamba / static-binary hosts are
+blocked by the outbound proxy. The upgraded QA harness and the exact per-engine
+commands are included with the evidence so the report can be re-run against
+Poppler 26.05+; the fix removes the implicated construct regardless of whether
+that specific engine is present.
+
+**Why RC3 was reported as passing despite the shipped Ghostscript failure.** The
+RC3 multi-engine harness (`qa_multiengine.py`) could not have detected a
+top-edge clip of this kind, for four structural reasons, each now fixed:
+
+1. It compared engines only by **whole-page average pixel difference** against a
+   coarse threshold (mean abs diff > 8). A clip of the running header and title
+   at the very top of the page moves only a small fraction of the page's pixels,
+   so the whole-page average stays far below the threshold. RC4 adds explicit
+   **top-edge** and **content-bounding-box** checks per page across engines.
+2. Its "isolated page" render used `pdftoppm -f N -l N -singlefile`, which still
+   opens and parses the whole document - it is a window onto the full render, not
+   a genuinely separated page. RC4 uses **`pdfseparate`** to emit a real
+   one-page PDF and renders that on its own.
+3. Its Ghostscript pass did not force annotation printing, so on this build GS
+   never rasterised the widget appearance layer at all (its annotations-on and
+   annotations-off output were byte-identical). RC4 runs Ghostscript with
+   **`-dPrinted`** so the appearance layer is actually exercised.
+4. It tested only the Poppler present in the environment (24.02.0) and did not
+   include a second independent whole-document engine. RC4 records the engine
+   versions explicitly and adds **PDFium** (the Chromium engine) as a
+   cross-check.
+
+The RC3 report's "PASS" was therefore accurate for the engines and checks it
+ran, but those checks were structurally blind to a top-edge annotation-layer
+clip. RC4's harness is not.
+
+The full RC3 and RC2 test results below still hold for RC4 (content and forms
+are unchanged; only the blank-field appearance clip was removed).
+
+---
 
 ## RC3 icon pass (visual refinement)
 

@@ -21,6 +21,44 @@ from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 HERE = os.path.dirname(os.path.abspath(__file__))
 FONTS = os.path.join(HERE, "fonts")
 
+# ---- AcroForm appearance hardening (RC4) ---------------------------------
+# Every blank text-field appearance ReportLab emits ends with the standard
+# variable-text wrapper:  /Tx BMC  q  <x y w h re>  W n  ...  Q  EMC.
+# For a *blank* field nothing is painted between the clip and the Q, so that
+# interior "<rect> re W n" is a clipping path that clips nothing — a no-op.
+# It is the only active graphics-state construct living in the widget
+# annotation's appearance layer. Independent field QA reported page 37 of the
+# handbook rendering with clipped/shifted top content in whole-document
+# Ghostscript and Poppler 26.x while rendering cleanly with annotations
+# disabled — i.e. the fault is in the annotation appearance layer, not the page
+# content. To remove that entire class of renderer appearance-isolation hazard,
+# we strip the no-op interior clip from blank appearance streams. This changes
+# no visible pixel (the clip bounds nothing when there is no value to draw) and
+# leaves the marked-content and q/Q pairing balanced; every field name, type,
+# flag, rectangle, MaxLen, border style and colour is untouched.
+from reportlab.pdfbase import acroform as _acroform
+import re as _re
+
+_CLIP_RE = _re.compile(r'(/Tx BMC \nq\n)[-\d.]+ [-\d.]+ [-\d.]+ [-\d.]+ re\nW\nn\n')
+
+def _strip_noop_clip(stream_obj):
+    old = getattr(stream_obj, "content", None)
+    if not isinstance(old, str):
+        return stream_obj
+    new = _CLIP_RE.sub(r'\1', old)
+    if new != old:
+        stream_obj.content = new
+        ref = getattr(stream_obj, "_af_refstr", None)
+        if isinstance(ref, str) and ref.startswith(old):
+            stream_obj._af_refstr = new + ref[len(old):]
+    return stream_obj
+
+_orig_txAP = _acroform.AcroForm.txAP
+def _txAP_hardened(self, *a, **k):
+    return _strip_noop_clip(_orig_txAP(self, *a, **k))
+if getattr(_acroform.AcroForm.txAP, "__name__", "") != "_txAP_hardened":
+    _acroform.AcroForm.txAP = _txAP_hardened
+
 # ---- palette -------------------------------------------------------------
 NAVY   = HexColor("#0F2347")
 CREAM  = HexColor("#F5F0E8")

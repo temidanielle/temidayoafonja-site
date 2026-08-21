@@ -6,6 +6,61 @@
 
 ---
 
+## Internal build RC4 (page-37 PDF compatibility correction, on top of RC3)
+
+The public version stays 1.0.1 (not distributed). RC4 is a narrowly scoped
+compatibility correction. It changes one thing in the source generation and
+nothing customer-facing.
+
+Reported defect:
+- Independent QA reported the shipped RC3 handbook page 37 ("Full Career
+  Evidence Entry, page two of three") rendering with clipped or shifted top
+  content in whole-document Ghostscript 10.02.1 and Poppler 26.05, while
+  rendering cleanly in PyMuPDF, in isolated-page Poppler, and in Ghostscript
+  with annotations disabled.
+
+Root cause and fix:
+- Clean-with-annotations-disabled locates the fault in the AcroForm widget
+  appearance layer. Every blank text-field appearance ReportLab emits ends with
+  the standard variable-text wrapper `/Tx BMC q <rect> re W n ... Q EMC`; for a
+  blank field nothing is drawn between the clip and the restore, so that
+  rectangle is a clipping path that clips nothing - a no-op, but the only active
+  graphics-state construct in the annotation appearance layer, and the kind of
+  construct a strict or newer renderer can mis-scope when compositing
+  annotations over page content in a whole-document render.
+- `ktp.py` now wraps `reportlab.pdfbase.acroform.AcroForm.txAP` and strips that
+  no-op interior clip from blank appearance streams (marked-content and q/Q
+  pairing stay balanced). No compiled PDF was patched; no page content was moved
+  to conceal anything.
+
+Verification:
+- Pixel-identical to RC3 on every page of both PDFs (PyMuPDF at 150 dpi, max
+  absolute pixel difference 0 across all 41 + 12 pages).
+- All 25 handbook and 117 ledger field dictionaries are byte-identical to RC3
+  (name, type, flags, rectangle, MaxLen, border style and colour); the only
+  per-field change is removal of the clip operators from the appearance stream.
+- Page count, bookmarks, links, extracted text, and all icons unchanged.
+- The reported clip did not reproduce in this environment in any engine
+  (PyMuPDF 1.28.2; Poppler 24.02.0 whole-document and pdfseparate-isolated;
+  Ghostscript 10.02.1 whole/single-page/`-dPrinted`/annotations-off; PDFium
+  153), blank or stress-filled. Poppler 26.05+ could not be installed here (OS
+  package index caps at 24.02.0; conda-forge and binary hosts are proxy-blocked).
+  The fix removes the implicated construct regardless.
+
+QA harness upgrade (why RC3 passed despite the shipped failure):
+- The RC3 harness judged engines by whole-page average pixel difference against
+  a coarse threshold, used `pdftoppm -f/-l -singlefile` (a window on the full
+  document, not a separated page), did not force Ghostscript to rasterise the
+  annotation layer, and tested only the installed Poppler. Each is structurally
+  blind to a top-edge annotation-layer clip. `qa_multiengine.py` now adds
+  explicit top-edge and content-bounding-box checks, true `pdfseparate`
+  isolation, Ghostscript `-dPrinted`, and a PDFium cross-check.
+
+Metrics unchanged: handbook 41 pages / 16 bookmarks / 25 unique fields (23
+multiline); ledger 12 pages / 7 bookmarks / 117 unique fields (51 multiline).
+
+---
+
 ## Internal build RC3 (icon-system refinement, on top of RC2)
 
 The public version stays 1.0.1 (not distributed). RC3 is a controlled visual
