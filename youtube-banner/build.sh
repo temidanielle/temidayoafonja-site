@@ -63,4 +63,24 @@ for v in a aink b c; do
   shot "$SRC/preview-desktop.html#color-$v,dark" "$C/previews/$v-desktop-dark.png" 1600 1000 1.5
 done
 shot "$SRC/compare.html" "$C/comparison.png" 1800 880 1.4
+
+# ── Refresh: new supporting line ────────────────────────────────────────────
+# "Know what will hold when conditions change." replaces the original question.
+# All variants render from src/refresh.html on the approved cream field, so the
+# identity line and its geometry stay fixed across them.
+echo "· refresh"
+R="$ROOT/youtube-banner/refresh"
+for v in navy gold alt; do
+  shot "$SRC/refresh.html#$v" "$SRC/render-refresh-$v.png" 2560 1440
+done
+cp "$SRC/render-refresh-navy.png" "$R/banner-primary-identity-led.png"
+cp "$SRC/render-refresh-alt.png"  "$R/banner-alternate-message-led.png"
+cp "$SRC/render-refresh-gold.png" "$R/banner-variant-gold-line.png"
+for v in navy alt; do
+  n=$([ "$v" = navy ] && echo primary || echo alternate)
+  shot "$SRC/preview-mobile.html#refresh-$v"  "$R/previews/$n-mobile.png"   900 1240 2
+  shot "$SRC/preview-desktop.html#refresh-$v" "$R/previews/$n-desktop.png" 1600 1000 1.5
+  shot "$SRC/preview-tv.html#refresh-$v"      "$R/previews/$n-tv.png"      2880 1760
+done
+shot "$SRC/compare-refresh.html" "$R/comparison.png" 1560 1180 1.6
 echo "done"

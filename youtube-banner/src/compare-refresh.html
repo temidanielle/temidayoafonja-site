@@ -1,0 +1,51 @@
+<!doctype html><html><head><meta charset="utf-8">
+<title>Refresh options compared</title>
+<link rel="stylesheet" href="preview.css">
+<style>
+  html,body{width:1560px;height:1180px;overflow:hidden;background:#eef0f3}
+  @font-face{font-family:'Cormorant Garamond';font-weight:400;
+    src:url('../../fonts/CormorantGaramond-400-normal-latin-abcaa8.woff2') format('woff2')}
+  .head{padding:34px 60px 4px}
+  .h1{font-family:'Cormorant Garamond',serif;font-size:35px;color:#0F2347}
+  .h2{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:#6b7280;margin-top:8px}
+  .row{padding:14px 60px}
+  .name{font-size:14.5px;font-weight:600;color:#0F2347;display:flex;align-items:center;gap:10px}
+  .pick{background:#C9A84C;color:#0F2347;font-size:10.5px;letter-spacing:.1em;padding:3px 8px;border-radius:3px}
+  .note{font-size:12px;color:#8a93a0;font-weight:400}
+  .pair{display:flex;align-items:flex-start;gap:40px;margin-top:10px}
+  .col{display:flex;flex-direction:column;gap:7px}
+  .tag{font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:#9aa3b0}
+  /* actual size: 430pt phone width */
+  .real{width:430px;height:117.6px;background-size:712px 400.5px;background-position:-141px -141.4px;
+        box-shadow:0 1px 6px rgba(15,35,71,.16)}
+  /* enlarged, same crop */
+  .big{width:960px;height:262.7px;background-size:1589.7px 894.2px;background-position:-314.8px -315.8px;
+       border-radius:5px;box-shadow:0 2px 10px rgba(15,35,71,.14)}
+</style></head>
+<body>
+  <div class="head">
+    <div class="h1">Refresh options at the mobile crop</div>
+    <div class="h2">Left column is actual size on a 430pt phone &nbsp;·&nbsp; right is the same crop enlarged</div>
+  </div>
+  <div id="out"></div>
+<script>
+var OPTS = [
+  {k:'navy', name:'Primary &nbsp;·&nbsp; identity-led, navy line', tag:'RECOMMENDED',
+   note:'Approved structure. Line at Cormorant italic 400, up from 300, navy at 13.70:1. Gold held to one mark.'},
+  {k:'gold', name:'Variant &nbsp;·&nbsp; identity-led, gold line', tag:'',
+   note:'Closest to the previously approved banner. Gold 4.62:1, softer at actual size.'},
+  {k:'alt',  name:'Alternate &nbsp;·&nbsp; message-led', tag:'',
+   note:'Promise becomes the headline; channel name drops to a gold eyebrow.'}
+];
+document.getElementById('out').innerHTML = OPTS.map(function (o) {
+  var img = "background-image:url('render-refresh-" + o.k + ".png')";
+  return '<div class="row"><div class="name">' + o.name +
+    (o.tag ? '<span class="pick">' + o.tag + '</span>' : '') +
+    '<span class="note">' + o.note + '</span></div>' +
+    '<div class="pair">' +
+      '<div class="col"><div class="tag">Actual size</div><div class="real" style="' + img + '"></div></div>' +
+      '<div class="col"><div class="tag">Enlarged</div><div class="big" style="' + img + '"></div></div>' +
+    '</div></div>';
+}).join('');
+</script>
+</body></html>

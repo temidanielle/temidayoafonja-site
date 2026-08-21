@@ -103,3 +103,8 @@ the root banner, `alternates/` and `previews/`.
 A colour-only refinement of this banner lives in `color/`. Same layout,
 typography, spacing and copy; flat fields instead of the navy ground. See
 `color/README.md`.
+
+## Refresh
+
+The supporting line was later replaced with "Know what will hold when
+conditions change." See `refresh/README.md`.

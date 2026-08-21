@@ -1,0 +1,48 @@
+<!doctype html><html><head><meta charset="utf-8">
+<title>Capability Formation: banner refresh</title>
+<link rel="stylesheet" href="base.css">
+<style>
+  /* Approved flat cream field, navy and gold language. Unchanged. */
+  .ground::before{background:#F5F0E8 !important}
+  .ground::after{display:none}
+  .grain{display:none}
+
+  /* Shared: the identity line is the approved title, untouched. */
+  .title{font-size:84px;letter-spacing:.155em;text-indent:.155em;color:#0F2347}
+  /* The old question was Cormorant 300. At the mobile crop that hairline weight
+     is what made it feel delicate, so the new line runs at 400 and slightly
+     larger. Same face, same voice, more body. */
+  .support{font-size:66px;font-weight:400;margin-top:68px}
+
+  body.v-gold .support{color:#7F6A30}
+
+  /* Navy variant: the line takes the full 13.70:1 and gold moves to a single
+     mark, which sits inside the existing 68px gap (27.5 / 13 / 27.5) so the
+     title and line do not move between variants. */
+  body.v-navy .support{color:#0F2347;margin-top:0}
+  body.v-navy .diamond{margin:27.5px 0}
+  body:not(.v-navy) .diamond{display:none}
+
+  /* Message-led: the promise becomes the headline, the channel name an eyebrow.
+     42px, not 36, so the eyebrow survives the mobile downscale. */
+  body.v-alt .eyebrow{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:44px;
+                      letter-spacing:.30em;text-indent:.30em;text-transform:uppercase;
+                      color:#7F6A30;line-height:1}
+  body.v-alt .lede{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;
+                   font-size:80px;line-height:1.06;color:#0F2347;margin-top:48px;white-space:nowrap}
+</style></head>
+<body>
+  <div class="ground"></div><div class="grain"></div>
+  <div class="stage" id="stage"></div>
+  <div id="m" style="position:absolute;opacity:0"></div>
+<script>
+  var LINE = 'Know what will hold when conditions change.';
+  var v = (location.hash || '#gold').slice(1);
+  document.body.className = 'v-' + v;
+  document.getElementById('stage').innerHTML = v === 'alt'
+    ? '<div class="eyebrow" id="t">Capability Formation</div><div class="lede" id="s">' + LINE + '</div>'
+    : '<div class="title" id="t">Capability Formation</div><div class="diamond"></div>' +
+      '<div class="support" id="s">' + LINE + '</div>';
+</script>
+<script src="measure.js"></script>
+</body></html>
