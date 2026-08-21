@@ -6,6 +6,23 @@
 
 ---
 
+## RC5 release-gate closure (Poppler 26.05+ confirmation, no product change)
+
+The page-37 Poppler 26.05+ gate was exercised in CI (the local environment caps
+Poppler at 24.02.0). A GitHub Actions job in an Arch Linux container
+(`.github/workflows/poppler-p37.yml`) running Poppler 26.07.0 rendered the
+shipped RC5 handbook page 37 blank and stress-filled, whole-document and
+`pdfseparate` truly-isolated, annotations on and hidden. In every mode the
+content top edge and bounding box matched the approved PyMuPDF reference within
+1px - no clipping, no shift. VERDICT: PASS (run 32530971761).
+
+Both release gates are now passed: Adobe Acrobat Reader field-capacity
+acceptance (product owner, 2026-08-21) and Poppler 26.05+ page-37 rendering
+(Poppler 26.07.0 in CI, 2026-08-21). No product PDF was modified. Public version
+remains 1.0.1; nothing has been published.
+
+---
+
 ## RC5 packaging refinement (customer bundle, no product rebuild)
 
 A packaging-only change; neither product PDF was modified or rebuilt (both remain

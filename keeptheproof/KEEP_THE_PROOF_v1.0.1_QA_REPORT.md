@@ -74,18 +74,30 @@ is truncated after save/reopen, or field names / rectangles / multiline flags /
 counts drift from the committed baseline. It **PASSES on RC5** and, as a
 regression check, **FAILS on the RC4 PDFs with 148 findings**.
 
-**Page 37 status (unchanged from RC4, re-tested here).** Targeted mitigation
-implemented and non-regressive across tested engines; confirmation on Poppler
-26.05+ remains pending. Poppler 26.05+ still could not be installed in this
-environment (apt caps at 24.02.0; conda-forge / binary hosts blocked by the
-proxy). The original root cause is not called conclusively confirmed until that
-exact environment is exercised successfully.
+**Page 37 status: PASSED on Poppler 26.05+.** The local build environment caps
+Poppler at 24.02.0 (conda-forge / binary hosts blocked by the proxy), so the
+gate was exercised in CI instead: a GitHub Actions job in an Arch Linux
+container (`.github/workflows/poppler-p37.yml`) running **Poppler 26.07.0** - at
+or beyond the reported failing version - rendered the shipped RC5 handbook page
+37 in every mode: blank and stress-filled, whole-document and `pdfseparate`
+truly-isolated, and with annotations hidden as a control. In all five renders
+the content top edge measured 155px against the approved PyMuPDF reference's
+156px (a 1px antialiasing difference) and the content bounding box matched
+within 1px. No clipping, no shift. VERDICT: PASS (run 32530971761, head 1481da7;
+see `POPPLER_26_PAGE37_RESULT.txt`).
 
-**Release status.** Not yet approved for publication. Of the two release gates,
-(1) interactive field-capacity acceptance in Adobe Acrobat Reader is **PASSED**
-(product-owner confirmation, 2026-08-21). The remaining open gate is (2) a
-successful page-37 render test on Poppler 26.05 or later. No website, Gumroad,
-or live-delivery change has been made.
+Because the shipped RC5 build renders correctly on Poppler 26.07, the page-37
+compatibility question is resolved for the product we ship. (We did not
+separately render the superseded pre-mitigation RC3 file on 26.07, so whether
+that original would have clipped there is not established; it is moot for
+release, since RC5 - which carries the RC4 appearance-clip mitigation - passes.)
+
+**Release status.** Both release gates are now **PASSED**: (1) interactive
+field-capacity acceptance in Adobe Acrobat Reader (product-owner confirmation,
+2026-08-21) and (2) page-37 rendering on Poppler 26.05+ (Poppler 26.07.0 in CI,
+2026-08-21). No open release blocker remains on the QA side. Nothing has been
+published; no website, Gumroad, or live-delivery change has been made - final
+publication remains a deliberate owner action.
 
 **Customer bundle (packaging refinement).** The plain-text `READ_ME_FIRST.txt`
 was replaced with a one-page orientation PDF, `KEEP_THE_PROOF_START_HERE_v1.0.1.pdf`,

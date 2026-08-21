@@ -1,0 +1,49 @@
+KEEP THE PROOF - Poppler 26.05+ page-37 release gate: PASSED
+============================================================
+
+Environment: GitHub Actions, container archlinux:latest (open internet), which
+ships the current Poppler. Run 32530971761 on branch
+claude/field-kit-boundary-rule-au7e19, head 1481da7.
+
+ENGINE (the reported failing environment version):
+  pdftoppm / pdfseparate  version 26.07.0   (>= 26.05: yes)
+  Ghostscript 10.x, Python 3, PyMuPDF (reference), all in the same job.
+
+Input: the shipped RC5 handbook, unchanged
+  keeptheproof/Keep_the_Proof_A_60_Minute_Career_Evidence_System_v1.0.1_FINAL.pdf
+  (SHA-256 7ee951ce662138879e2659cbfb7046b23247a93ab0926185d8e64d3b9d974b94)
+
+Commands (page 37, 150 dpi):
+  # whole document
+  pdftoppm -r 150 -f 37 -l 37 -png -singlefile <pdf> b_whole
+  # TRUE single-page isolation
+  pdfseparate -f 37 -l 37 <pdf> sep_%d.pdf ; pdftoppm -r 150 -png -singlefile sep_37.pdf b_iso
+  # annotations hidden (control)
+  pdftoppm -r 150 -f 37 -l 37 -png -singlefile -hide-annotations <pdf> b_noannot
+  # stress-filled (all p37 fields filled via PyMuPDF, saved, reopened), then:
+  pdftoppm -r 150 -f 37 -l 37 -png -singlefile filled.pdf f_whole
+  pdfseparate -f 37 -l 37 filled.pdf fsep_%d.pdf ; pdftoppm -r 150 -png -singlefile fsep_37.pdf f_iso
+
+Measured top edge and content bounding box (pixels at 150 dpi), compared to the
+approved PyMuPDF RC5 reference (top=156, bbox (137,156)-(1137,1570)):
+
+  render                            top   bbox                     dtop  dside  result
+  poppler 26.07 blank whole-doc     155   (138,155)-(1137,1569)    1     1      OK
+  poppler 26.07 blank pdfsep-iso    155   (138,155)-(1137,1569)    1     1      OK
+  poppler 26.07 blank annots-hidden 155   (138,155)-(1137,1569)    1     1      OK
+  poppler 26.07 filled whole-doc    155   (138,155)-(1137,1569)    1     1      OK
+  poppler 26.07 filled pdfsep-iso   155   (138,155)-(1137,1569)    1     1      OK
+
+The page-37 heading and top content sit at the same position as the reference in
+every mode; content bounding box within 1px (antialiasing floor). No clipping,
+no shift, whole-document or isolated, blank or filled, annotations on or off.
+
+VERDICT: PASS. Poppler 26.05+ release gate closed.
+
+Note: Poppler logged "Couldn't find a font for 'Helvetica'" while rasterising
+the AcroForm field text, because the minimal CI container has no Helvetica-
+equivalent installed for Poppler's form renderer. Helvetica is a PDF base-14
+standard font present in Adobe Acrobat Reader and normal desktop installs, so
+this is a CI-container font-availability note, not a product issue; it does not
+affect page layout - the top edge and bounding box match the reference in the
+filled renders too.
