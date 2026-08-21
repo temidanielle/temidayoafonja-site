@@ -1,0 +1,124 @@
+name: Poppler 26 page-37 check
+
+on:
+  push:
+    paths:
+      - '.github/workflows/poppler-p37.yml'
+  workflow_dispatch: {}
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    container: archlinux:latest
+    steps:
+      - name: Install newest Poppler and tooling
+        run: |
+          pacman -Sy --noconfirm --needed archlinux-keyring >/dev/null 2>&1 || true
+          pacman -Syu --noconfirm --needed poppler ghostscript python python-numpy python-pillow python-pip git
+          echo "---- versions ----"
+          pdftoppm -v 2>&1 | head -1
+          pdfseparate -v 2>&1 | head -1
+          gs --version
+          python --version
+
+      - name: Get the RC5 handbook from this repo
+        run: |
+          git clone --depth 1 --branch "${GITHUB_REF_NAME}" \
+            "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" repo
+          ls -la "repo/keeptheproof/Keep_the_Proof_A_60_Minute_Career_Evidence_System_v1.0.1_FINAL.pdf"
+
+      - name: Install PyMuPDF (reference engine + field fill)
+        run: pip install --break-system-packages --quiet pymupdf
+
+      - name: Render and analyse page 37
+        run: |
+          python - <<'PY'
+          import subprocess, re
+          import numpy as np
+          from PIL import Image
+          import pymupdf
+
+          PDF = "repo/keeptheproof/Keep_the_Proof_A_60_Minute_Career_Evidence_System_v1.0.1_FINAL.pdf"
+          DPI = 150
+          def sh(*a): subprocess.run(list(a), check=True)
+          def ver():
+              r = subprocess.run(["pdftoppm","-v"], capture_output=True, text=True)
+              return (r.stderr or r.stdout).splitlines()[0]
+          POP = ver()
+          print("ENGINE:", POP)
+          m = re.search(r'(\d+)\.(\d+)\.(\d+)', POP)
+          major, minor = (int(m.group(1)), int(m.group(2))) if m else (0,0)
+          new_enough = (major, minor) >= (26, 5)
+          print(f"Poppler version parsed: {major}.{minor}  (>=26.05: {new_enough})")
+
+          # reference: PyMuPDF render of page 37 (the approved RC5 reference engine)
+          pymupdf.open(PDF)[36].get_pixmap(dpi=DPI).save("ref_pymupdf.png")
+
+          # blank: whole-document, pdfseparate-isolated, annotations-hidden
+          sh("pdftoppm","-r",str(DPI),"-f","37","-l","37","-png","-singlefile",PDF,"b_whole")
+          sh("pdfseparate","-f","37","-l","37",PDF,"sep_%d.pdf")
+          sh("pdftoppm","-r",str(DPI),"-png","-singlefile","sep_37.pdf","b_iso")
+          sh("pdftoppm","-r",str(DPI),"-f","37","-l","37","-png","-singlefile","-hide-annotations",PDF,"b_noannot")
+
+          # stress-filled: fill every field on p37, save, reopen, render whole + iso
+          d = pymupdf.open(PDF)
+          big = ("During a cross-functional review I coordinated finance, risk and engineering "
+                 "to reconcile a persistent reporting gap and documented each control owner. ")*3
+          for w in d[36].widgets():
+              w.field_value = big[:280]; w.update()
+          d.save("filled.pdf")
+          sh("pdftoppm","-r",str(DPI),"-f","37","-l","37","-png","-singlefile","filled.pdf","f_whole")
+          sh("pdfseparate","-f","37","-l","37","filled.pdf","fsep_%d.pdf")
+          sh("pdftoppm","-r",str(DPI),"-png","-singlefile","fsep_37.pdf","f_iso")
+
+          def geom(png):
+              a = np.asarray(Image.open(png).convert("L"))
+              ink = a < 220
+              rows = np.where(ink.any(1))[0]; cols = np.where(ink.any(0))[0]
+              h, w = a.shape
+              return dict(top=int(rows[0]), bot=int(rows[-1]), left=int(cols[0]),
+                          right=int(cols[-1]), h=h, w=w)
+
+          ref = geom("ref_pymupdf.png")
+          print("\nREFERENCE (PyMuPDF, approved RC5):", ref)
+          targets = {
+            "poppler blank whole-doc":        "b_whole.png",
+            "poppler blank pdfseparate-iso":  "b_iso.png",
+            "poppler blank annotations-hidden":"b_noannot.png",
+            "poppler filled whole-doc":       "f_whole.png",
+            "poppler filled pdfseparate-iso": "f_iso.png",
+          }
+          TOL = 3
+          fails = []
+          print("\n%-34s %-42s %s" % ("render","top/bbox","top-edge & bbox delta vs reference"))
+          for label, png in targets.items():
+              g = geom(png)
+              dtop = abs(g["top"] - ref["top"])
+              dbbox = max(abs(g["top"]-ref["top"]), abs(g["left"]-ref["left"]), abs(g["right"]-ref["right"]))
+              # filled has more ink so bottom differs; only top + left/right edges are compared
+              ok = dtop <= TOL and abs(g["left"]-ref["left"]) <= TOL and abs(g["right"]-ref["right"]) <= TOL
+              status = "OK" if ok else "DIVERGENT"
+              if not ok: fails.append(label)
+              print("%-34s top=%-4d bbox=(%d,%d)-(%d,%d)   dtop=%d dside=%d  %s" % (
+                    label, g["top"], g["left"], g["top"], g["right"], g["bot"],
+                    dtop, max(abs(g['left']-ref['left']),abs(g['right']-ref['right'])), status))
+
+          print("\n==== RESULT ====")
+          print("Poppler >= 26.05 :", new_enough)
+          print("page 37 top/left/right within %dpx of the approved reference in every mode: %s" % (TOL, not fails))
+          if fails:
+              print("DIVERGENT modes:", fails)
+          verdict = "PASS" if (new_enough and not fails) else ("VERSION_TOO_OLD" if not new_enough else "FAIL")
+          print("VERDICT:", verdict)
+          # surface a non-zero exit only on a genuine render divergence, not on version
+          import sys
+          sys.exit(1 if fails else 0)
+          PY
+
+      - name: Upload page-37 renders
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: poppler-p37-renders
+          path: |
+            *.png
