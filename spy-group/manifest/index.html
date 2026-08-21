@@ -64,28 +64,29 @@
    ===================================================================== */
 
 :root {
-  /* Default colorway: INK — neutral charcoal with a copper accent.
-     The other colorways below override the same slots, so every rule in
-     this stylesheet is written against tokens and never a literal. */
-  --field-900:#15181D;   /* nav, footer, deepest ground */
-  --field-800:#1C2128;   /* dark band ground */
-  --field-700:#262C35;   /* raised panel on dark */
-  --field-600:#3B4350;   /* hairline on dark */
-  --bone:#EFEFED;        /* light band ground */
-  --bone-2:#F8F8F7;      /* card on the light band */
+  /* Default colorway: HARBOR LIGHT — blue-teal with warm sand, a step up
+     in lightness from the original Harbor and a little bluer with it.
+     The other steps below override the same slots, so every rule in this
+     stylesheet is written against tokens and never a literal. */
+  --field-900:#182F3F;   /* nav, footer, deepest ground */
+  --field-800:#1F3C51;   /* dark band ground */
+  --field-700:#274D68;   /* raised panel on dark */
+  --field-600:#3D6D8F;   /* hairline on dark */
+  --bone:#EDEFF1;        /* light band ground */
+  --bone-2:#F8F9FA;      /* card on the light band */
   --white:#FFFFFF;
-  --accent:#D98552;      /* accent on the dark ground */
-  --accent-ink:#9A4E22;  /* accent as text on the light bands */
-  --accent-hover:#E89A6C;
-  --sage:#A2AAB6;        /* secondary text on dark */
-  --ink:#191C21;         /* text on the light bands */
-  --muted:#545A63;       /* secondary text on the light bands */
-  --line:rgba(25,28,33,.16);
+  --accent:#EBB47C;      /* accent on the dark ground */
+  --accent-ink:#8E5A22;  /* accent as text on the light bands */
+  --accent-hover:#F3C696;
+  --sage:#A8C2CD;        /* secondary text on dark */
+  --ink:#16252F;         /* text on the light bands */
+  --muted:#4D5C66;       /* secondary text on the light bands */
+  --line:rgba(22,37,47,.16);
   /* Triplets for the same colors used at partial alpha. A colorway that
      only overrode the hex values would leave every rgba() behind. */
-  --accent-rgb:217,133,82;
-  --sage-rgb:162,170,182;
-  --bone-rgb:239,239,237;
+  --accent-rgb:235,180,124;
+  --sage-rgb:168,194,205;
+  --bone-rgb:237,239,241;
 
   --display:'Archivo','Helvetica Neue',Arial,sans-serif;
   --body:'Public Sans','Helvetica Neue',Arial,sans-serif;
@@ -93,11 +94,11 @@
 }
 
 /* ── COLORWAYS ─────────────────────────────────────────────────────
-   Each one is a complete set: dark grounds, light bands, accent, and
-   the rgb triplets behind every rgba(). Every pair clears WCAG AA —
-   the tightest in any colorway is 4.7:1, against 4.5 for normal text. */
+   Three steps of the same blue-teal and sand, differing in how deep the
+   ground sits. Every pair in every step clears WCAG AA; the tightest
+   anywhere is 4.7:1, against 4.5 for normal text. */
 
-/* HARBOR — deep blue-teal with warm sand. Ports and container yards. */
+/* HARBOR — the original, deepest step. */
 :root[data-palette="harbor"]{
   --field-900:#0F2833; --field-800:#163542; --field-700:#1E4453; --field-600:#2F5D6E;
   --bone:#ECEFEF; --bone-2:#F7F9F9;
@@ -106,23 +107,14 @@
   --line:rgba(20,38,46,.16);
   --accent-rgb:231,168,96; --sage-rgb:156,184,196; --bone-rgb:236,239,239;
 }
-/* SLATE — cool blue-gray with a utility blue. No warm cast anywhere. */
-:root[data-palette="slate"]{
-  --field-900:#1B222C; --field-800:#232C38; --field-700:#2E3947; --field-600:#435162;
-  --bone:#EEEFF1; --bone-2:#F8F9FA;
-  --accent:#6BB2E8; --accent-ink:#1F5F91; --accent-hover:#8CC6F0;
-  --sage:#9AA6B5; --ink:#1A2029; --muted:#515964;
-  --line:rgba(26,32,41,.16);
-  --accent-rgb:107,178,232; --sage-rgb:154,166,181; --bone-rgb:238,239,241;
-}
-/* FIELD — the original spruce green, kept for comparison. */
-:root[data-palette="field"]{
-  --field-900:#182A22; --field-800:#20362C; --field-700:#284238; --field-600:#3C5B4B;
-  --bone:#EDEDE5; --bone-2:#F7F7F2;
-  --accent:#DFA03A; --accent-ink:#8C5A0F; --accent-hover:#EDB055;
-  --sage:#9DB2A5; --ink:#16211C; --muted:#4E5B54;
-  --line:rgba(22,33,28,.16);
-  --accent-rgb:223,160,58; --sage-rgb:157,178,165; --bone-rgb:237,237,229;
+/* HARBOR LIGHTER — two steps up. Softest sand, most open ground. */
+:root[data-palette="harbor-lighter"]{
+  --field-900:#1F3647; --field-800:#28475D; --field-700:#315772; --field-600:#487799;
+  --bone:#EEF0F2; --bone-2:#F8FAFB;
+  --accent:#F0C79C; --accent-ink:#8E5A22; --accent-hover:#F6D5B2;
+  --sage:#B8CFD8; --ink:#17262F; --muted:#4E5D67;
+  --line:rgba(23,38,47,.16);
+  --accent-rgb:240,199,156; --sage-rgb:184,207,216; --bone-rgb:238,240,242;
 }
 
 *,*::before,*::after{box-sizing:border-box;}
@@ -449,11 +441,10 @@ footer{background:var(--field-900);color:var(--sage);padding:38px 0 44px;border-
 <div class="proto">
   <span class="proto-note">Prototype <span>— identifiers marked “pending” are placeholders</span></span>
   <span class="picker" role="group" aria-label="Colorway">
-    <b>Color</b>
-    <button type="button" data-set="ink" aria-pressed="true"><i style="background:linear-gradient(135deg,#1C2128 50%,#D98552 50%)"></i>Ink</button>
+    <b>Shade</b>
     <button type="button" data-set="harbor" aria-pressed="false"><i style="background:linear-gradient(135deg,#163542 50%,#E7A860 50%)"></i>Harbor</button>
-    <button type="button" data-set="slate" aria-pressed="false"><i style="background:linear-gradient(135deg,#232C38 50%,#6BB2E8 50%)"></i>Slate</button>
-    <button type="button" data-set="field" aria-pressed="false"><i style="background:linear-gradient(135deg,#20362C 50%,#DFA03A 50%)"></i>Field</button>
+    <button type="button" data-set="harbor-light" aria-pressed="true"><i style="background:linear-gradient(135deg,#1F3C51 50%,#EBB47C 50%)"></i>Light</button>
+    <button type="button" data-set="harbor-lighter" aria-pressed="false"><i style="background:linear-gradient(135deg,#28475D 50%,#F0C79C 50%)"></i>Lighter</button>
   </span>
 </div>
 
@@ -760,8 +751,8 @@ footer{background:var(--field-900);color:var(--sage);padding:38px 0 44px;border-
 </footer>
 
 <script>
-/* Colorway picker. The stylesheet's own :root is the Ink colorway, so the
-   page renders correctly before this runs and with JS off entirely. */
+/* Colorway picker. The stylesheet's own :root is the Harbor Light step,
+   so the page renders correctly before this runs and with JS off. */
 (function () {
   var root = document.documentElement;
   var btns = Array.prototype.slice.call(document.querySelectorAll('.picker [data-set]'));
@@ -777,7 +768,7 @@ footer{background:var(--field-900);color:var(--sage);padding:38px 0 44px;border-
 
   var saved = null;
   try { saved = localStorage.getItem('spy-colorway'); } catch (e) { /* private mode */ }
-  apply(names.indexOf(saved) > -1 ? saved : 'ink');
+  apply(names.indexOf(saved) > -1 ? saved : 'harbor-light');
 
   btns.forEach(function (b) {
     b.addEventListener('click', function () { apply(b.getAttribute('data-set')); });

@@ -36,32 +36,31 @@ idiom), IBM Plex Mono for every identifier.
 Reads as: disciplined, technical, understated. Looks like it was built by
 someone who has run a warehouse.
 
-**The color is still open.** The page carries a colorway picker in its top
-bar — a review-only control that comes out once one is chosen. Every
-colorway is a complete token set covering the dark grounds, the light
-bands, the accent, and the rgb triplets behind every `rgba()`, and every
-text pair in every colorway clears WCAG AA (the tightest is 4.7:1 against
-a 4.5 requirement).
+**Colorway: Harbor, blue-teal and warm sand.** Charcoal, slate, and the
+original spruce green were tried and set aside — green next to
+veteran-owned reads as army whether or not that is intended. Blue-teal
+and sand are the colors of a container terminal instead.
 
-| Colorway | Ground | Accent | Character |
+The page carries a shade picker in its top bar, a review-only control that
+comes out once a step is chosen. Each step is a complete token set
+covering the dark grounds, the light bands, the accent, and the rgb
+triplets behind every `rgba()`, and every text pair in every step clears
+WCAG AA — the tightest anywhere is 4.7:1 against a 4.5 requirement.
+
+| Step | Ground | Accent | |
 | --- | --- | --- | --- |
-| **Ink** (default) | `#1C2128` charcoal | `#D98552` copper | Industrial, neutral, warm metal |
-| **Harbor** | `#163542` blue-teal | `#E7A860` sand | Ports and container yards |
-| **Slate** | `#232C38` blue-gray | `#6BB2E8` utility blue | Corporate, cool, no warm cast |
-| **Field** | `#20362C` spruce | `#DFA03A` ochre | The original; reads military |
+| **Harbor** | `#163542` | `#E7A860` | Deepest |
+| **Harbor Light** | `#1F3C51` | `#EBB47C` | Default: a step up, and bluer |
+| **Harbor Lighter** | `#28475D` | `#F0C79C` | Most open ground, softest sand |
 
-Field is kept only for comparison. Deep green plus veteran-owned reads as
-army whether or not that is intended, which is why it is no longer the
-default.
+To send one step on its own, `tools/lock-colorway.py` bakes a token set
+into `:root` and strips the picker — CSS, markup and script — so the
+result is an ordinary page with no review controls on it:
 
-To send one colorway on its own, `tools/lock-colorway.py` bakes a token set
-into `:root` and strips the picker — CSS, markup and script — so the result
-is an ordinary page with no review controls on it:
-
-    python3 tools/lock-colorway.py harbor out/harbor.html
+    python3 tools/lock-colorway.py harbor-light out/harbor-light.html
 
 The picker version stays the source of truth; locked copies are generated,
-never hand-edited, so the four cannot drift apart.
+never hand-edited, so the steps cannot drift apart.
 
 ### Option 2 — Signal
 

@@ -2,7 +2,7 @@
 """Produce a standalone single-colorway copy of manifest/index.html.
 
 The prototype page ships with a colorway picker so a reviewer can compare
-Ink, Harbor, Slate and Field in place. To send one colorway on its own,
+the three Harbor steps in place. To send one colorway on its own,
 this bakes the chosen token set into :root and strips the picker — its
 CSS, its markup and its script — so the result is an ordinary page with no
 review controls on it.
@@ -18,7 +18,10 @@ import sys
 # Only the slots that differ between colorways. Ink is the stylesheet's
 # own :root, so locking to Ink just strips the picker.
 COLORWAYS = {
-    'ink': {},
+    # Harbor Light is the stylesheet's own :root, so locking to it just
+    # strips the picker. Keep these in step with the :root[data-palette]
+    # blocks in manifest/index.html.
+    'harbor-light': {},
     'harbor': {
         'field-900': '#0F2833', 'field-800': '#163542', 'field-700': '#1E4453',
         'field-600': '#2F5D6E', 'bone': '#ECEFEF', 'bone-2': '#F7F9F9',
@@ -27,21 +30,13 @@ COLORWAYS = {
         'line': 'rgba(20,38,46,.16)', 'accent-rgb': '231,168,96',
         'sage-rgb': '156,184,196', 'bone-rgb': '236,239,239',
     },
-    'slate': {
-        'field-900': '#1B222C', 'field-800': '#232C38', 'field-700': '#2E3947',
-        'field-600': '#435162', 'bone': '#EEEFF1', 'bone-2': '#F8F9FA',
-        'accent': '#6BB2E8', 'accent-ink': '#1F5F91', 'accent-hover': '#8CC6F0',
-        'sage': '#9AA6B5', 'ink': '#1A2029', 'muted': '#515964',
-        'line': 'rgba(26,32,41,.16)', 'accent-rgb': '107,178,232',
-        'sage-rgb': '154,166,181', 'bone-rgb': '238,239,241',
-    },
-    'field': {
-        'field-900': '#182A22', 'field-800': '#20362C', 'field-700': '#284238',
-        'field-600': '#3C5B4B', 'bone': '#EDEDE5', 'bone-2': '#F7F7F2',
-        'accent': '#DFA03A', 'accent-ink': '#8C5A0F', 'accent-hover': '#EDB055',
-        'sage': '#9DB2A5', 'ink': '#16211C', 'muted': '#4E5B54',
-        'line': 'rgba(22,33,28,.16)', 'accent-rgb': '223,160,58',
-        'sage-rgb': '157,178,165', 'bone-rgb': '237,237,229',
+    'harbor-lighter': {
+        'field-900': '#1F3647', 'field-800': '#28475D', 'field-700': '#315772',
+        'field-600': '#487799', 'bone': '#EEF0F2', 'bone-2': '#F8FAFB',
+        'accent': '#F0C79C', 'accent-ink': '#8E5A22', 'accent-hover': '#F6D5B2',
+        'sage': '#B8CFD8', 'ink': '#17262F', 'muted': '#4E5D67',
+        'line': 'rgba(23,38,47,.16)', 'accent-rgb': '240,199,156',
+        'sage-rgb': '184,207,216', 'bone-rgb': '238,240,242',
     },
 }
 
@@ -69,12 +64,12 @@ def lock(src, colorway):
         baked, n = re.subn(rf'(--{re.escape(slot)}:)[^;]+;', rf'\g<1>{value};', baked, count=1)
         if n != 1:
             raise SystemExit(f'token --{slot} not found in :root')
-    baked = baked.replace('Default colorway: INK — neutral charcoal with a copper accent.',
-                          f'Colorway: {colorway.upper()}. Baked in by tools/lock-colorway.py.')
+    baked = re.sub(r'Default colorway: [^\n]+', 
+                   f'Colorway: {colorway}. Baked in by tools/lock-colorway.py.', baked, count=1)
     s = s.replace(root, baked)
 
     # 2. Drop the alternate colorway blocks.
-    s = re.sub(r'\n/\* ── COLORWAYS ─+.*?\n:root\[data-palette="field"\]\{.*?\n\}\n', '\n', s, flags=re.S)
+    s = re.sub(r'\n/\* ── COLORWAYS ─+.*?\n:root\[data-palette="harbor-lighter"\]\{.*?\n\}\n', '\n', s, flags=re.S)
 
     # 3. Drop the picker: stylesheet, markup, script.
     s = re.sub(r'\.proto\{.*?\.picker i\{[^}]*\}', PLAIN_PROTO_CSS, s, count=1, flags=re.S)
