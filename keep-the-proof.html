@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keep the Proof | 60-Minute Career Evidence System</title>
+<meta name="description" content="Turn scattered memories of your work into a private, reusable career evidence system before you need a resume, interview story, promotion case, or career move.">
+<link rel="canonical" href="https://temidayoafonja.com/keep-the-proof">
+
+<!-- PREVIEW ONLY. Remove this robots tag at publication, once the checkout URL,
+     the product bundle and the social image are approved. See the block comment
+     above KEEP_THE_PROOF_CHECKOUT_URL near the end of this file. -->
+<meta name="robots" content="noindex, nofollow">
+
+<!-- Open Graph / Twitter.
+     og:image is deliberately absent: no approved Keep the Proof social image
+     exists in the repository, and the brief forbids substituting an unrelated
+     one. This is a publication blocker, not an oversight. -->
+<meta property="og:type" content="product">
+<meta property="og:site_name" content="Temidayo Afonja">
+<meta property="og:url" content="https://temidayoafonja.com/keep-the-proof">
+<meta property="og:title" content="Keep the Proof">
+<meta property="og:description" content="Build the evidence before you need to prove your value.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Keep the Proof">
+<meta name="twitter:description" content="Build the evidence before you need to prove your value.">
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+
+<link rel="stylesheet" href="/fonts.css">
+<link rel="stylesheet" href="/styles.css">
+
+<!-- Privacy-friendly analytics by Plausible (captures UTM source attribution automatically) -->
+<script async src="https://plausible.io/js/pa-hFo9m_622E0tElKtUlVnx.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+
+<style>
+/* ── Keep the Proof: warm register, layered on the shared design system ──
+   The nav and footer stay on the shared dark system. Everything between them
+   runs on the cream ground used by work.html and for-professionals.html, with
+   navy type and the text-safe accent variants (--rust-ink, --gold-ink), which
+   are the only accent colours that clear AA on cream and white.
+   No animation is used anywhere on this page, so there is nothing for a
+   reduced-motion preference to suppress. */
+
+.ktp-page { position: relative; z-index: 1; background: var(--cream); color: var(--ink);
+  font-family: 'DM Sans', sans-serif; font-weight: 300; line-height: 1.65; padding-top: 96px; }
+.ktp-page h1, .ktp-page h2, .ktp-page h3 { font-family: 'Cormorant Garamond', serif;
+  font-weight: 400; color: var(--navy); margin: 0; letter-spacing: -0.005em; }
+.ktp-page p { margin: 0; color: var(--ink); }
+/* .ktp-page a { color: inherit } is deliberately NOT set here. On the other
+   warm pages that rule (0,1,1) silently outranks bare button classes; keeping
+   it off means link colour is set explicitly where it is wanted. */
+
+.ktp-wrap { max-width: 1060px; margin: 0 auto; padding: 0 32px; }
+.ktp-wrap--narrow { max-width: 800px; }
+.ktp-section { padding: 84px 0; }
+.ktp-section--tight { padding: 60px 0; }
+.ktp-band { background: var(--white); border-top: 1px solid var(--line-warm); border-bottom: 1px solid var(--line-warm); }
+
+.ktp-eyebrow { display: block; font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 700;
+  letter-spacing: 0.22em; text-transform: uppercase; color: var(--rust-ink); margin-bottom: 18px; }
+.ktp-h2 { font-size: clamp(27px, 3.6vw, 40px); line-height: 1.14; margin-bottom: 18px; max-width: 22ch; }
+.ktp-h2--wide { max-width: 30ch; }
+.ktp-h3 { font-size: 21px; line-height: 1.2; margin-bottom: 8px; }
+.ktp-lede { font-size: clamp(16px, 1.9vw, 18px); line-height: 1.72; color: var(--muted-warm); max-width: 62ch; }
+.ktp-body p { font-size: 16px; line-height: 1.75; color: var(--muted-warm); max-width: 62ch; }
+.ktp-body p + p { margin-top: 16px; }
+
+/* HERO */
+.ktp-hero { padding: 64px 0 72px; border-bottom: 1px solid var(--line-warm); }
+.ktp-h1 { font-size: clamp(36px, 5.4vw, 60px); line-height: 1.05; margin-bottom: 22px; max-width: 17ch; }
+.ktp-transform { font-size: clamp(17px, 2vw, 20px); line-height: 1.66; color: var(--ink);
+  max-width: 60ch; margin-bottom: 34px; }
+.ktp-descriptor { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 20px;
+  color: var(--rust-ink); margin-bottom: 26px; }
+.ktp-purchase-line { font-size: 14px; line-height: 1.6; color: var(--muted-warm); margin-top: 18px; max-width: 54ch; }
+
+/* BUTTONS
+   .ktp-btn mirrors .lean-btn from the other warm pages: same padding, radius,
+   weight and family, so this page's buttons are the site's buttons.
+   Rust on white is 5.14:1; navy on cream is 12.9:1. */
+.ktp-btn { display: inline-flex; align-items: center; justify-content: center;
+  min-height: 48px; padding: 15px 26px; border-radius: 4px; border: none; cursor: pointer;
+  font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 700; letter-spacing: 0.01em;
+  text-decoration: none; }
+.ktp-btn--primary { background: var(--rust); color: #fff; }
+.ktp-btn--primary:hover { background: #A93A0C; }
+.ktp-btn--outline { background: transparent; color: var(--navy); border: 1px solid var(--navy); }
+.ktp-btn--outline:hover { background: var(--navy); color: #fff; }
+.ktp-btn--large { min-height: 54px; padding: 18px 32px; font-size: 16px; }
+.ktp-cta-row { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; }
+
+/* OUTCOME LIST */
+.ktp-list { list-style: none; padding: 0; margin: 26px 0 0; display: grid; gap: 2px; }
+.ktp-list li { position: relative; padding: 14px 0 14px 30px; font-size: 16px; line-height: 1.6;
+  color: var(--ink); border-bottom: 1px solid var(--line-warm); max-width: 68ch; }
+.ktp-list li:first-child { border-top: 1px solid var(--line-warm); }
+/* The rule is a marker, not the meaning: every item also reads correctly with
+   styles off, so nothing here depends on colour alone. */
+.ktp-list li::before { content: ''; position: absolute; left: 0; top: 22px;
+  width: 14px; height: 1px; background: var(--rust-ink); }
+
+/* INCLUDED: the two main materials as one system */
+.ktp-included { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 30px; }
+.ktp-doc { background: var(--cream); border: 1px solid var(--line-warm); border-radius: 10px; padding: 30px 30px; }
+.ktp-band .ktp-doc { background: #FFFDF8; }
+.ktp-doc-meta { font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--gold-ink); margin-bottom: 12px; }
+.ktp-doc p { font-size: 15px; line-height: 1.68; color: var(--muted-warm); }
+.ktp-third { margin-top: 18px; padding: 20px 24px; border: 1px dashed var(--line-warm); border-radius: 10px; }
+.ktp-third p { font-size: 14.5px; line-height: 1.65; color: var(--muted-warm); max-width: none; }
+
+/* HOW IT WORKS */
+.ktp-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 34px; }
+.ktp-step-n { font-family: 'Cormorant Garamond', serif; font-size: 34px; line-height: 1;
+  color: var(--rust-ink); margin-bottom: 12px; }
+.ktp-step p { font-size: 15px; line-height: 1.68; color: var(--muted-warm); }
+
+/* BEFORE AND AFTER */
+.ktp-ba { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 30px; align-items: stretch; }
+.ktp-ba-card { border: 1px solid var(--line-warm); border-radius: 10px; padding: 26px 28px; background: var(--cream); }
+.ktp-ba-card--after { background: var(--navy); border-color: var(--navy); }
+.ktp-ba-label { font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
+  margin-bottom: 14px; color: var(--muted-warm); }
+.ktp-ba-card--after .ktp-ba-label { color: var(--gold); }
+.ktp-ba-quote { font-family: 'Cormorant Garamond', serif; font-size: 21px; line-height: 1.4; color: var(--navy); }
+.ktp-ba-card--after .ktp-ba-quote { color: #fff; }
+.ktp-ba-note { margin-top: 24px; font-size: 14.5px; line-height: 1.7; color: var(--muted-warm); max-width: 62ch; }
+
+/* TWO-COLUMN: who it is for / what it is not */
+.ktp-two { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+
+/* SAFETY NOTE */
+.ktp-safety { border-left: 3px solid var(--rust); background: #FFFDF8;
+  border-radius: 0 10px 10px 0; padding: 24px 28px; margin-top: 30px; }
+.ktp-safety p { font-size: 15px; line-height: 1.72; color: var(--ink); max-width: 66ch; }
+
+/* FORMAT */
+.ktp-format { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px 34px; margin-top: 26px; }
+.ktp-format div { padding: 13px 0; border-top: 1px solid var(--line-warm); font-size: 15px; color: var(--ink); }
+
+/* FAQ */
+.ktp-faq { margin-top: 30px; border-top: 1px solid var(--line-warm); }
+.ktp-faq details { border-bottom: 1px solid var(--line-warm); }
+.ktp-faq summary { cursor: pointer; list-style: none; padding: 20px 34px 20px 0; position: relative;
+  font-family: 'Cormorant Garamond', serif; font-size: 20px; line-height: 1.3; color: var(--navy); }
+.ktp-faq summary::-webkit-details-marker { display: none; }
+/* The marker is decorative; open state is also exposed to assistive tech by
+   <details> itself, so the sign is not the only signal. */
+.ktp-faq summary::after { content: '+'; position: absolute; right: 4px; top: 18px;
+  font-size: 24px; line-height: 1; color: var(--rust-ink); font-family: 'DM Sans', sans-serif; }
+.ktp-faq details[open] summary::after { content: '\2013'; }
+.ktp-faq .ktp-faq-a { padding: 0 34px 22px 0; }
+.ktp-faq .ktp-faq-a p { font-size: 15.5px; line-height: 1.72; color: var(--muted-warm); max-width: 68ch; }
+
+/* FINAL CTA */
+.ktp-final { background: var(--navy); }
+.ktp-final h2 { color: #fff; }
+.ktp-final .ktp-eyebrow { color: var(--gold); }
+.ktp-final p { color: rgba(255,255,255,.78); font-size: 17px; line-height: 1.7; max-width: 58ch; }
+.ktp-final .ktp-cta-row { margin-top: 30px; }
+.ktp-final .ktp-purchase-line { color: rgba(255,255,255,.62); }
+
+/* QUIET NEXT STEP: deliberately the lightest block on the page, and it sits
+   after the purchase decision so it cannot compete with the $49 CTA. */
+.ktp-next { border-top: 1px solid var(--line-warm); }
+.ktp-next .ktp-h3 { margin-bottom: 10px; }
+.ktp-next p { font-size: 15px; line-height: 1.7; color: var(--muted-warm); max-width: 60ch; }
+.ktp-next-link { display: inline-block; margin-top: 16px; font-size: 15px; font-weight: 700;
+  color: var(--rust-ink); text-decoration: none; border-bottom: 1px solid rgba(182,64,13,.4); padding-bottom: 2px; }
+.ktp-next-link:hover { border-bottom-color: var(--rust-ink); }
+
+@media (max-width: 860px) {
+  .ktp-section { padding: 60px 0; }
+  .ktp-wrap { padding: 0 22px; }
+  .ktp-included, .ktp-steps, .ktp-ba, .ktp-format { grid-template-columns: 1fr; }
+  .ktp-two { grid-template-columns: 1fr; gap: 44px; }
+  .ktp-format div { border-top: 1px solid var(--line-warm); }
+  .ktp-btn { width: 100%; }
+  .ktp-h1, .ktp-h2 { max-width: none; }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<nav>
+  <a href="index.html" class="nav-logo brand-lockup">
+    <span class="brand-primary">The Density Group</span>
+    <span class="brand-secondary">Capability Formation Advisory</span>
+    <span class="brand-tertiary">Founded by Temidayo Afonja</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="framework.html">Capability Formation</a></li>
+    <li><a href="work.html">Advisory</a></li>
+    <li><a href="executive-briefing.html">Executive Briefing</a></li>
+    <li><a href="case-studies.html">Evidence</a></li>
+    <li><a href="about.html">The Firm</a></li>
+    <li><a href="for-professionals.html">For Professionals</a></li>
+    <li><a href="executive-briefing.html#inquiry" class="nav-cta">Bring a Consequential Decision</a></li>
+  </ul>
+</nav>
+<main id="main" tabindex="-1">
+
+<div class="ktp-page">
+
+  <!-- 1. HERO -->
+  <section class="ktp-section ktp-hero">
+    <div class="ktp-wrap">
+      <span class="ktp-eyebrow">Keep the Proof</span>
+      <h1 class="ktp-h1">Build the evidence before you need to prove your value.</h1>
+      <p class="ktp-descriptor">A 60-Minute Career Evidence System</p>
+      <p class="ktp-transform">In 60 minutes, turn scattered memories of your work into a private career evidence system you can keep using before you need a resume, interview story, promotion case, or career move.</p>
+      <div class="ktp-cta-row">
+        <a class="ktp-btn ktp-btn--primary ktp-btn--large" data-ktp-cta="hero" href="#included">Get Keep the Proof - $49</a>
+      </div>
+      <p class="ktp-purchase-line">Includes the 41-page guided system, reusable Career Evidence Ledger, and Start Here guide.</p>
+    </div>
+  </section>
+
+  <!-- 2. RECOGNITION -->
+  <section class="ktp-section">
+    <div class="ktp-wrap ktp-wrap--narrow">
+      <span class="ktp-eyebrow">The problem</span>
+      <h2 class="ktp-h2 ktp-h2--wide">The hardest time to remember your work is when you suddenly need to explain it.</h2>
+      <div class="ktp-body" style="margin-top:26px;">
+        <p>You know you contributed. You remember that the project mattered. But months or years later, the details are harder to recover.</p>
+        <p>What changed? What did you personally do? What evidence exists? How would you explain it to someone outside the company?</p>
+        <p>Keep the Proof helps you answer those questions while the work is still close enough to document accurately.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. OUTCOME -->
+  <section class="ktp-section ktp-band">
+    <div class="ktp-wrap">
+      <span class="ktp-eyebrow">The first hour</span>
+      <h2 class="ktp-h2 ktp-h2--wide">What you will have after the first hour</h2>
+      <ul class="ktp-list">
+        <li>At least one completed Career Evidence Entry</li>
+        <li>A clearer distinction between what the team did and what you contributed</li>
+        <li>Evidence connected to outcomes, changes, and problems prevented</li>
+        <li>A portable explanation of work that may currently exist only in internal language</li>
+        <li>A repeatable monthly and quarterly evidence habit</li>
+        <li>A private place to keep your proof before you urgently need it</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 4. WHAT IS INCLUDED -->
+  <section class="ktp-section" id="included">
+    <div class="ktp-wrap">
+      <span class="ktp-eyebrow">What you receive</span>
+      <h2 class="ktp-h2 ktp-h2--wide">One system, in two working parts.</h2>
+      <p class="ktp-lede">The guided system is the setup experience. The ledger is what keeps the practice going. They are designed to be used together.</p>
+      <div class="ktp-included">
+        <article class="ktp-doc">
+          <div class="ktp-doc-meta">The guided system &middot; 41 pages</div>
+          <h3 class="ktp-h3">Keep the Proof: A 60-Minute Career Evidence System</h3>
+          <p>A fillable handbook that walks you through identifying, documenting, verifying, and translating meaningful work. It teaches you how to tell contribution from participation, and how to put internal work into language that travels.</p>
+        </article>
+        <article class="ktp-doc">
+          <div class="ktp-doc-meta">The reusable ledger &middot; 12 pages</div>
+          <h3 class="ktp-h3">Career Evidence Ledger</h3>
+          <p>A fillable tool for continuing the practice: quick captures, full entries, translation exercises, monthly reviews, quarterly reviews, and an evidence index you can search later.</p>
+        </article>
+      </div>
+      <div class="ktp-third">
+        <p><strong>Start Here</strong> is included as well: a short orientation guide explaining the recommended order and safe use of the materials.</p>
+      </div>
+      <div class="ktp-cta-row" style="margin-top:34px;">
+        <a class="ktp-btn ktp-btn--primary" data-ktp-cta="included" href="#final">Get the system</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. HOW IT WORKS -->
+  <section class="ktp-section ktp-band">
+    <div class="ktp-wrap">
+      <span class="ktp-eyebrow">How it works</span>
+      <h2 class="ktp-h2 ktp-h2--wide">Three steps, then a habit.</h2>
+      <div class="ktp-steps">
+        <div class="ktp-step">
+          <div class="ktp-step-n">1</div>
+          <h3 class="ktp-h3">Choose one piece of meaningful work</h3>
+          <p>Start with a project, decision, problem, improvement, or contribution worth preserving.</p>
+        </div>
+        <div class="ktp-step">
+          <div class="ktp-step-n">2</div>
+          <h3 class="ktp-h3">Build the evidence entry</h3>
+          <p>Document what happened, what you contributed, what changed, and what evidence supports the story.</p>
+        </div>
+        <div class="ktp-step">
+          <div class="ktp-step-n">3</div>
+          <h3 class="ktp-h3">Keep the system current</h3>
+          <p>Use the Career Evidence Ledger monthly and quarterly so you are not reconstructing your career from memory later.</p>
+        </div>
+      </div>
+      <p class="ktp-ba-note">By the end of the first hour, you should have at least one completed Career Evidence Entry and a repeatable way to keep the proof of what your work has built.</p>
+    </div>
+  </section>
+
+  <!-- 6. EXAMPLE TRANSFORMATION -->
+  <section class="ktp-section">
+    <div class="ktp-wrap">
+      <span class="ktp-eyebrow">What changes</span>
+      <h2 class="ktp-h2 ktp-h2--wide">From a task description to an account of contribution.</h2>
+      <div class="ktp-ba">
+        <div class="ktp-ba-card">
+          <div class="ktp-ba-label">Before</div>
+          <p class="ktp-ba-quote">&ldquo;Helped with onboarding.&rdquo;</p>
+        </div>
+        <div class="ktp-ba-card ktp-ba-card--after">
+          <div class="ktp-ba-label">After</div>
+          <p class="ktp-ba-quote">&ldquo;Led the redesign of a cross-functional onboarding experience, coordinated stakeholders across the business, and improved one measure of new-hire integration from 47 to 75.&rdquo;</p>
+        </div>
+      </div>
+      <p class="ktp-ba-note">The system moves you from a vague task description to a credible, evidence-supported account of what you contributed and what changed. Not every entry will carry a number. Where the evidence is qualitative, the system helps you say what changed and how you know.</p>
+    </div>
+  </section>
+
+  <!-- 7 + 8. WHO IT IS FOR / WHAT IT IS NOT -->
+  <section class="ktp-section ktp-band">
+    <div class="ktp-wrap">
+      <div class="ktp-two">
+        <div>
+          <span class="ktp-eyebrow">Who it is for</span>
+          <h2 class="ktp-h2">Keep the Proof is for you if&hellip;</h2>
+          <ul class="ktp-list">
+            <li>You have several years of experience but your accomplishments are scattered across old documents, emails, and memory</li>
+            <li>You struggle to separate your contribution from the work of the team</li>
+            <li>Your strongest examples are written in company-specific language</li>
+            <li>You want to prepare before a promotion, interview, resume update, or career move becomes urgent</li>
+            <li>You want a private evidence practice you can maintain without storing confidential company information</li>
+          </ul>
+        </div>
+        <div>
+          <span class="ktp-eyebrow">What it is not</span>
+          <h2 class="ktp-h2">Clear boundaries.</h2>
+          <ul class="ktp-list">
+            <li>It is not a resume-writing service</li>
+            <li>It is not a job-search course</li>
+            <li>It does not tell you whether to stay in or leave your job</li>
+            <li>It does not require uploading employee or company information</li>
+            <li>It does not replace the Capability Formation Field Kit</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. FORMAT AND SAFETY -->
+  <section class="ktp-section">
+    <div class="ktp-wrap">
+      <span class="ktp-eyebrow">Format and safe use</span>
+      <h2 class="ktp-h2 ktp-h2--wide">Yours to fill in, save, and reuse.</h2>
+      <div class="ktp-format">
+        <div>Digital download</div>
+        <div>Fillable PDFs</div>
+        <div>Best used in Adobe Acrobat Reader</div>
+        <div>Files can be saved and reused</div>
+        <div>Personal-use license</div>
+        <div>Nothing is uploaded to this site</div>
+      </div>
+      <div class="ktp-safety">
+        <p>Keep your evidence private and appropriate. Do not enter confidential employee information, protected customer information, proprietary company data, passwords, or sensitive business records. Describe the work and its outcome without retaining information you are not permitted to keep.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. FAQ -->
+  <section class="ktp-section ktp-band">
+    <div class="ktp-wrap ktp-wrap--narrow">
+      <span class="ktp-eyebrow">Questions</span>
+      <h2 class="ktp-h2 ktp-h2--wide">Before you buy.</h2>
+      <div class="ktp-faq">
+        <details>
+          <summary>Are the PDFs fillable?</summary>
+          <div class="ktp-faq-a"><p>Yes. Both main documents contain fillable fields and are best used in Adobe Acrobat Reader.</p></div>
+        </details>
+        <details>
+          <summary>Do I need to complete everything in one sitting?</summary>
+          <div class="ktp-faq-a"><p>No. The first 60 minutes help you establish the system and complete at least one meaningful entry. The ledger is designed for continued monthly and quarterly use.</p></div>
+        </details>
+        <details>
+          <summary>Is this a resume template?</summary>
+          <div class="ktp-faq-a"><p>No. It helps you capture the underlying evidence that can later strengthen a resume, interview story, promotion case, portfolio, or career conversation.</p></div>
+        </details>
+        <details>
+          <summary>Can I use this if I am not currently job searching?</summary>
+          <div class="ktp-faq-a"><p>Yes. The best time to preserve career evidence is before a transition becomes urgent.</p></div>
+        </details>
+        <details>
+          <summary>Should I include confidential company information?</summary>
+          <div class="ktp-faq-a"><p>No. Use generalized, permitted descriptions and avoid confidential employee, customer, or proprietary business information.</p></div>
+        </details>
+        <details>
+          <summary>How is this different from the Capability Formation Field Kit?</summary>
+          <div class="ktp-faq-a"><p>Keep the Proof helps you capture and translate evidence of work you have already done. The Field Kit helps you assess what your current work is building in you and read your broader capability position.</p></div>
+        </details>
+        <details>
+          <summary>What is the refund policy?</summary>
+          <div class="ktp-faq-a"><p>Purchases are handled by Gumroad, and refunds and payment disputes are handled there. The refund policy displayed on the Gumroad product page at the time of purchase governs, as set out in the <a href="terms.html">Terms of Use</a>.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. FINAL CTA -->
+  <section class="ktp-section ktp-final" id="final">
+    <div class="ktp-wrap">
+      <span class="ktp-eyebrow">Start now</span>
+      <h2 class="ktp-h2 ktp-h2--wide">Do not wait until you need the story to start looking for the evidence.</h2>
+      <p>Build your private Career Evidence System now, while the work is still close enough to document accurately.</p>
+      <div class="ktp-cta-row">
+        <a class="ktp-btn ktp-btn--primary ktp-btn--large" data-ktp-cta="final" href="#included">Get Keep the Proof - $49</a>
+      </div>
+      <p class="ktp-purchase-line">Includes the 41-page guided system, reusable Career Evidence Ledger, and Start Here guide.</p>
+    </div>
+  </section>
+
+  <!-- 12. QUIET NEXT STEP -->
+  <section class="ktp-section ktp-section--tight ktp-next">
+    <div class="ktp-wrap">
+      <h3 class="ktp-h3">Want to understand what your current work is building in you?</h3>
+      <p>Keep the Proof captures what you have already done. The Capability Formation Field Kit reads your current position: what your work is building now, what will travel, and where you may be exposed.</p>
+      <a class="ktp-next-link" id="ktpFieldKitLink" href="/fieldkit">The Capability Formation Field Kit &rarr;</a>
+    </div>
+  </section>
+
+</div>
+
+</main>
+
+<footer>
+  <div>
+    <div class="footer-logo">The Density Group</div>
+    <div class="footer-tagline">The Density Group is a Capability Formation advisory firm founded by Temidayo Afonja.</div>
+  </div>
+  <div class="footer-cols">
+    <div class="footer-col">
+      <div class="footer-col-label">The Firm</div>
+      <ul class="footer-links">
+        <li><a href="framework.html">Capability Formation</a></li>
+        <li><a href="work.html">Advisory</a></li>
+        <li><a href="executive-briefing.html">Executive Briefing</a></li>
+        <li><a href="case-studies.html">Evidence</a></li>
+        <li><a href="speaking.html">Speaking</a></li>
+        <li><a href="about.html">The Firm</a></li>
+        <li><a href="/organizational-diagnostic">Organizational Capability Formation Scan</a></li>
+        <li><a href="executive-briefing.html#inquiry">Bring a Consequential Decision</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-label">For Professionals</div>
+      <ul class="footer-links">
+        <li><a href="/diagnostic">Free Diagnostic</a></li>
+        <li><a href="for-professionals.html">Career Growth Assessment</a></li>
+        <li><a href="book.html">Books &amp; Tools</a></li>
+        <li><a href="https://temidayoafonja.substack.com" target="_blank" rel="noopener">Writing</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-copy">&copy; 2026 The Density Group LLC &middot; Capability Formation &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></div>
+</footer>
+
+<script>
+/* ============================================================
+   KEEP THE PROOF: CHECKOUT CONFIGURATION
+
+   THIS IS THE ONLY PLACE THE CHECKOUT URL IS SET.
+
+   The Keep the Proof Gumroad product does not exist yet and no URL was
+   supplied, so this is deliberately empty. It has NOT been guessed, and it
+   must NOT be pointed at the Field Kit product (l/czmqp), which is a
+   different offer at a different price.
+
+   While it is empty the page is in preview status: every purchase CTA stays
+   on the page instead of leaving for a checkout that is not there. Fill this
+   in with the real Gumroad URL and the CTAs become outbound purchase links
+   automatically, with no other edit to this file.
+
+   At publication, also remove the noindex robots tag in <head>.
+   ============================================================ */
+const KEEP_THE_PROOF_CHECKOUT_URL = "";
+
+(function () {
+  var ctas = document.querySelectorAll('[data-ktp-cta]');
+  var live = KEEP_THE_PROOF_CHECKOUT_URL.trim().length > 0;
+
+  Array.prototype.forEach.call(ctas, function (el) {
+    var where = el.getAttribute('data-ktp-cta');
+
+    if (live) {
+      el.setAttribute('href', KEEP_THE_PROOF_CHECKOUT_URL);
+      el.setAttribute('target', '_blank');
+      el.setAttribute('rel', 'noopener');
+    }
+
+    el.addEventListener('click', function () {
+      if (window.plausible) {
+        plausible('Keep the Proof CTA', { props: { location: where } });
+        if (live) {
+          plausible('Keep the Proof Checkout', { props: { location: where } });
+        }
+      }
+    });
+  });
+
+  var fk = document.getElementById('ktpFieldKitLink');
+  if (fk) {
+    fk.addEventListener('click', function () {
+      if (window.plausible) {
+        plausible('Keep the Proof Field Kit Route');
+      }
+    });
+  }
+})();
+</script>
+
+<script defer src="/nav.js"></script>
+</body>
+</html>
