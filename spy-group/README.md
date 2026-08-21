@@ -54,6 +54,15 @@ Field is kept only for comparison. Deep green plus veteran-owned reads as
 army whether or not that is intended, which is why it is no longer the
 default.
 
+To send one colorway on its own, `tools/lock-colorway.py` bakes a token set
+into `:root` and strips the picker — CSS, markup and script — so the result
+is an ordinary page with no review controls on it:
+
+    python3 tools/lock-colorway.py harbor out/harbor.html
+
+The picker version stays the source of truth; locked copies are generated,
+never hand-edited, so the four cannot drift apart.
+
 ### Option 2 — Signal
 
 White ground, heavy black rules, hi-vis orange (`#E1481F`), hazard-stripe
