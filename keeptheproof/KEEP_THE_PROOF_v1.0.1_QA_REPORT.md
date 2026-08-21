@@ -1,4 +1,90 @@
-# Keep the Proof - QA Report v1.0.1 (build RC4)
+# Keep the Proof - QA Report v1.0.1 (build RC5)
+
+## RC5 interactive field-capacity correction
+
+RC5 corrects a release blocker in the interactive fields and adds interactive
+acceptance testing. It changes field behaviour only; the approved copy, design,
+icons, page order, page counts, field names, field rectangles, bookmarks, and
+links are unchanged, and the public version stays 1.0.1 (unpublished).
+
+**The defect.** Every fillable field inherited ReportLab's default `/MaxLen`
+of 100, so a customer could type at most 100 characters into fields designed to
+hold a full 200-300+ character narrative answer.
+
+**Acknowledgement about the earlier tests.** The RC1-RC4 "form acceptance"
+tests set field values through the PDF API (PyMuPDF `widget.field_value`). That
+path does **not** enforce `/MaxLen`, so those tests confirmed only that a stored
+value round-trips - they never established whether a person could actually
+**type** the required amount into the field in a viewer. That is why a
+100-character cap shipped through four builds reported as passing. RC5 treats
+typeability as its own acceptance criterion.
+
+**The fix (source generators only; no compiled PDF patched).** `ktp.py` now
+assigns a deliberate, per-field `/MaxLen` from a capacity map (`field_specs`),
+never a blanket value:
+
+| Class | Intended acceptance length | `/MaxLen` written |
+| --- | --- | --- |
+| Full narrative / evidence | >= 300 | 600 |
+| Medium narrative / context | >= 180 | 360 |
+| Verifier / confidentiality / supporting detail | >= 140 | 280 |
+| Short single-line metadata | sized per field (14-60) | 30-120 |
+
+`/MaxLen` is always at least the intended acceptance length, with headroom on
+scrolling multiline fields so a real answer is never cut off at the test number.
+The complete field-by-field map is the **RC5 Field-Capacity Manifest** (`.md`
+and `.csv`), which lists every field's document, page, name, type, rectangle,
+multiline status, font size, previous `/MaxLen` (100), new `/MaxLen`, intended
+acceptance length, and both test results.
+
+**Non-destructive, verified.**
+
+- **Pixel-identical to RC3/RC4** on every page of both PDFs (PyMuPDF 150 dpi,
+  max absolute pixel difference 0). Only interactive-field behaviour changed.
+- **Field names, rectangles, multiline flags, page count, bookmarks, links,
+  extracted text, and icons unchanged** (handbook 41 pages / 25 fields / 23
+  multiline; ledger 12 pages / 117 fields / 51 multiline).
+- The **RC4 page-37 appearance-clip mitigation is preserved** (blank appearance
+  streams remain clip-free and balanced).
+
+**Interactive acceptance testing.** For every one of the 142 fields, a stress
+value at the field's intended acceptance length was filled, the PDF saved,
+closed, and reopened, and the stored value confirmed exact: **0 truncated, 0
+altered**. Filled page 37 (the most field-dense page) was rendered blank and
+stress-filled, whole-document and `pdfseparate`-isolated, across PyMuPDF,
+Ghostscript `-dPrinted`, Poppler, and PDFium - top edge and bounding box stay
+within ~1px, so the larger values do not clip, shift, or corrupt the page.
+
+*Viewer scope.* PyMuPDF fill/save/reopen confirms persistence but does not
+simulate keystroke entry and does not enforce `/MaxLen` at set time; the
+`/MaxLen` value in the PDF (verified >= intended for every field) is what a
+conformant viewer reads to decide how much a person may type. **True keystroke
+entry in Adobe Acrobat Reader is a manual release gate and is NOT reported as
+passed here.**
+
+**Automated capacity QA (`qa_maxlen.py`).** The build now fails when any field's
+`/MaxLen` is below its documented acceptance length, a narrative field is left
+at the default 100, a required multiline field is not multiline, a stress value
+is truncated after save/reopen, or field names / rectangles / multiline flags /
+counts drift from the committed baseline. It **PASSES on RC5** and, as a
+regression check, **FAILS on the RC4 PDFs with 148 findings**.
+
+**Page 37 status (unchanged from RC4, re-tested here).** Targeted mitigation
+implemented and non-regressive across tested engines; confirmation on Poppler
+26.05+ remains pending. Poppler 26.05+ still could not be installed in this
+environment (apt caps at 24.02.0; conda-forge / binary hosts blocked by the
+proxy). The original root cause is not called conclusively confirmed until that
+exact environment is exercised successfully.
+
+**Release status.** Not approved for publication. Release requires both (1)
+interactive field-capacity acceptance in Adobe Acrobat Reader and (2) a
+successful page-37 render test on Poppler 26.05 or later. No website, Gumroad,
+or live-delivery change was made.
+
+The RC4, RC3, and RC2 results below still hold (content, design, and forms are
+otherwise unchanged).
+
+---
 
 ## RC4 page-37 PDF compatibility correction
 

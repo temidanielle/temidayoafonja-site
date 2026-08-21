@@ -6,6 +6,62 @@
 
 ---
 
+## Internal build RC5 (interactive field-capacity correction, on top of RC4)
+
+The public version stays 1.0.1 (not distributed). RC5 corrects a release blocker
+in the interactive fields and adds interactive acceptance testing. It changes
+field behaviour only.
+
+Defect and acknowledgement:
+- Every fillable field inherited ReportLab's default `/MaxLen` of 100, capping
+  typed input at 100 characters in fields designed for 200-300+ character
+  answers. The RC1-RC4 acceptance tests set values through the PDF API, which
+  does not enforce `/MaxLen`, so they confirmed only that a stored value
+  round-trips and never established whether a person could type the required
+  amount. RC5 treats typeability as its own criterion.
+
+Fix (source generators only; no compiled PDF patched):
+- `ktp.py` assigns a deliberate per-field `/MaxLen` from a capacity map
+  (`field_specs`), never a blanket value: full narrative / evidence >= 300
+  (MaxLen 600); medium narrative >= 180 (360); verifier / confidentiality /
+  supporting detail >= 140 (280); short single-line metadata sized per field.
+  `/MaxLen` is always >= the intended acceptance length, with headroom on
+  scrolling multiline fields. The full per-field map ships as the RC5
+  Field-Capacity Manifest (.md and .csv).
+
+Verification:
+- Pixel-identical to RC3/RC4 on every page of both PDFs (max abs pixel diff 0);
+  only interactive-field behaviour changed. Field names, rectangles, multiline
+  flags, page count, bookmarks, links, extracted text and icons unchanged. The
+  RC4 page-37 appearance-clip mitigation is preserved.
+- All 142 fields filled at their intended acceptance length persist exactly
+  after save and reopen (0 truncated). Filled page 37 renders without clip or
+  shift across PyMuPDF, Ghostscript `-dPrinted`, Poppler and PDFium, whole-doc
+  and `pdfseparate`-isolated.
+- Adobe Acrobat Reader keystroke entry is a manual release gate and is not
+  reported as passed.
+
+Automated QA:
+- New `qa_maxlen.py` fails the build when a field's `/MaxLen` is below its
+  documented acceptance length, a narrative field is left at the default 100, a
+  required multiline field is not multiline, a stress value is truncated after
+  save/reopen, or field names / rectangles / multiline flags / counts drift from
+  the committed baseline. PASSES on RC5; FAILS on the RC4 PDFs (148 findings).
+
+Page 37: targeted mitigation implemented and non-regressive across tested
+engines; confirmation on Poppler 26.05+ remains pending (still uninstallable in
+this environment). Root cause not called conclusively confirmed until that
+environment is exercised.
+
+Release status: not approved for publication. Requires (1) interactive
+field-capacity acceptance in Adobe Acrobat Reader and (2) a successful page-37
+test on Poppler 26.05+. No website, Gumroad, or live-delivery change was made.
+
+Metrics unchanged: handbook 41 pages / 16 bookmarks / 25 unique fields (23
+multiline); ledger 12 pages / 7 bookmarks / 117 unique fields (51 multiline).
+
+---
+
 ## Internal build RC4 (page-37 PDF compatibility correction, on top of RC3)
 
 The public version stays 1.0.1 (not distributed). RC4 is a narrowly scoped

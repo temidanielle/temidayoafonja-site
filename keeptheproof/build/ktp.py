@@ -208,6 +208,69 @@ def build_table(rows, S, col_w, header=True, zebra=True, head_fill=NAVY, align=N
     t.setStyle(TableStyle(cmds))
     return t
 
+# ---- interactive field capacity map (RC5) -------------------------------
+# ReportLab's acroForm.textfield defaults to /MaxLen 100, which silently capped
+# every narrative field at 100 typed characters even though the boxes are sized
+# for far more. RC5 assigns a deliberate, per-field capacity from what each
+# field is designed to hold and the acceptance tests, never a blanket value.
+# Classes and their minimum acceptance lengths (per the release brief):
+#   full narrative / evidence : >= 300     medium narrative        : >= 180
+#   verifier / confidentiality / supporting detail : >= 140
+#   short single-line metadata : sized to the field (kept shorter on purpose)
+# `intended` is the acceptance-test length; `maxlen` is the /MaxLen written to
+# the field and is always >= intended, with headroom on scrolling multiline
+# fields so a real customer answer is never cut off at the test number.
+
+_FULL_ACCEPT, _FULL_MAX = 300, 600     # full narrative & evidence fields
+_MED_ACCEPT,  _MED_MAX  = 180, 360     # medium narrative / context fields
+_SUP_ACCEPT,  _SUP_MAX  = 140, 280     # verifier / confidentiality / support
+
+_FULL_SUF = {"what", "contrib", "change", "sit", "why", "judge", "actions",
+             "outcome", "prevented", "quant", "qual", "team", "internal", "portable"}
+_MED_SUF  = {"formal", "actual", "people", "scope", "evref"}
+_SUP_SUF  = {"verify", "out", "conf", "tags"}
+_FORM_PREFIXES = ("hb_qc_", "hb_fe_", "qc1_", "qc2_", "le_fe_")
+
+def field_specs(name):
+    """Return (intended_acceptance_length, maxlen) for a field by name.
+    One authoritative source, used by the generator, the manifest, and the QA
+    harness so all three agree."""
+    tail = name
+    for p in _FORM_PREFIXES:
+        if name.startswith(p):
+            tail = name[len(p):]; break
+    if tail in _FULL_SUF: return _FULL_ACCEPT, _FULL_MAX
+    if tail in _MED_SUF:  return _MED_ACCEPT,  _MED_MAX
+    if tail in _SUP_SUF:  return _SUP_ACCEPT,  _SUP_MAX
+    if tail == "date": return 40, 80
+    if tail == "proj": return 60, 120
+    # ledger reusable forms
+    if name.startswith("tr_"):  return _FULL_ACCEPT, _FULL_MAX      # translation pairs
+    if name.startswith("pl_"):
+        if name == "pl_support": return _SUP_ACCEPT, _SUP_MAX
+        return _FULL_ACCEPT, _FULL_MAX                              # cond/part/scope/out/line
+    if name.startswith("ms_"):
+        if name in ("ms_projects", "ms_improved"): return _FULL_ACCEPT, _FULL_MAX
+        if name == "ms_captures": return _SUP_ACCEPT, _SUP_MAX
+        if name == "ms_month":  return 30, 60
+        if name == "ms_done":   return 40, 80
+        if name in ("ms_conf", "ms_expand"): return 60, 120
+    if name.startswith("qr_"):
+        if name in ("qr_read", "qr_fixed", "qr_strong", "qr_thin"): return _FULL_ACCEPT, _FULL_MAX
+        if name == "qr_q":    return 30, 60
+        if name == "qr_done": return 40, 80
+        if name in ("qr_next", "qr_conf"): return 60, 120
+    if name.startswith("ix_"):
+        if name.startswith("ix_date"):  return 14, 30
+        if name.startswith("ix_entry"): return 40, 80
+        if name.startswith("ix_tags"):  return 25, 55
+        if name.startswith("ix_pl"):    return 17, 40
+    # never expected; fail loudly rather than silently reinstating the default
+    raise KeyError(f"field_specs: no capacity rule for field {name!r}")
+
+def field_maxlen(name):
+    return field_specs(name)[1]
+
 # ---- fillable field flowable --------------------------------------------
 class Field(Flowable):
     """A single fillable AcroForm text field drawn at flow position.
@@ -244,6 +307,7 @@ class Field(Flowable):
             fillColor=FIELDBG, textColor=INK, forceBorder=True,
             fontName="Helvetica", fontSize=self.fontsize,
             fieldFlags=("multiline" if self.multiline else 0),
+            maxlen=field_maxlen(self.name),
             annotationFlags="print")
         canvas.restoreState()
     def draw(self):  # not used (drawOn overridden) but kept for safety
