@@ -80,6 +80,13 @@
   to = "/fieldkit.html"
   status = 200
 
+# PREVIEW ONLY, not yet announced anywhere. keep-the-proof.html also carries a
+# noindex robots tag; remove that tag when the page is published.
+[[redirects]]
+  from = "/keep-the-proof"
+  to = "/keep-the-proof.html"
+  status = 200
+
 # dashboard.html is an internal working view. It reads only the operator's own
 # browser localStorage and contains no credentials, endpoints, or server calls,
 # so nothing was ever exposed by it being reachable. It is nonetheless not a
