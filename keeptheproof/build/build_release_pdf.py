@@ -2,7 +2,7 @@
 import sys
 sys.path.insert(0, "/home/user/temidayoafonja-site/keeptheproof/build")
 from reportlab.platypus import (BaseDocTemplate, PageTemplate, Frame, Paragraph,
-    Spacer, Table, TableStyle, Flowable)
+    Spacer, Table, TableStyle, Flowable, KeepTogether)
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.colors import HexColor
 from reportlab.lib.enums import TA_LEFT
@@ -102,14 +102,18 @@ story=[
       'position in every mode; bounding box within 1&#8239;px (antialiasing floor). No clipping, no shift &#8212; '
       'whole-document or isolated, blank or filled, annotations on or off. (CI run 32530971761.)', bodys),
 
-    P("Customer deliverables", h2),
-    P("<b>Customer bundle</b> (KEEP_THE_PROOF_CUSTOMER_BUNDLE_v1.0.1.zip) contains exactly three purchaser-facing "
-      "files and nothing else:"),
-    bl("Keep_the_Proof_A_60_Minute_Career_Evidence_System_v1.0.1_FINAL.pdf  (handbook, 41 pages)"),
-    bl("Keep_the_Proof_Career_Evidence_Ledger_v1.0.1_FINAL.pdf  (ledger, 12 pages)"),
-    bl("KEEP_THE_PROOF_START_HERE_v1.0.1.pdf  (one-page orientation)"),
-    P("The plain-text README was replaced by the designed one-page Start Here PDF. No source, QA, or internal "
-      "materials are in the bundle."),
+    # Keep the heading with (at least) its opening paragraph and the file list,
+    # so the section never leaves an orphaned heading at a page break.
+    KeepTogether([
+        P("Customer deliverables", h2),
+        P("<b>Customer bundle</b> (KEEP_THE_PROOF_CUSTOMER_BUNDLE_v1.0.1.zip) contains exactly three purchaser-facing "
+          "files and nothing else:"),
+        bl("Keep_the_Proof_A_60_Minute_Career_Evidence_System_v1.0.1_FINAL.pdf  (handbook, 41 pages)"),
+        bl("Keep_the_Proof_Career_Evidence_Ledger_v1.0.1_FINAL.pdf  (ledger, 12 pages)"),
+        bl("KEEP_THE_PROOF_START_HERE_v1.0.1.pdf  (one-page orientation)"),
+        P("The plain-text README was replaced by the designed one-page Start Here PDF. No source, QA, or internal "
+          "materials are in the bundle."),
+    ]),
 
     P("SHA-256 &#8212; customer-facing files", h2),
     tbl([[ch("File"),ch("SHA-256")],
