@@ -55,11 +55,13 @@
   font-family: 'DM Sans', sans-serif; font-weight: 300; line-height: 1.65; padding-top: 96px; }
 .ktp-page h1, .ktp-page h2, .ktp-page h3 { font-family: 'Cormorant Garamond', serif;
   font-weight: 400; color: var(--navy); margin: 0; letter-spacing: -0.005em; }
-/* No colour here. <p> already inherits --ink from .ktp-page, and setting it
-   again at (0,1,1) silently outranked every single-class colour on this
-   page: the descriptor, the lede, both purchase lines and the note were
-   all being flattened to ink. */
-.ktp-page p { margin: 0; }
+/* Wrapped in :where() so this reset carries element-level specificity (0,0,1)
+   only. As a plain descendant selector it was (0,1,1), which outranked every
+   single-class rule on a paragraph and silently suppressed both colour and
+   spacing: the descriptor, the lede, the price line, the purchase line and the
+   before-and-after note all lost their margins, and their colours before that.
+   No colour is set here either. <p> already inherits --ink from .ktp-page. */
+:where(.ktp-page) p { margin: 0; }
 /* .ktp-page a { color: inherit } is deliberately NOT set here. On the other
    warm pages that rule (0,1,1) silently outranks bare button classes; keeping
    it off means link colour is set explicitly where it is wanted. */
@@ -75,8 +77,8 @@
 .ktp-h2 { font-size: clamp(27px, 3.6vw, 40px); line-height: 1.14; margin-bottom: 18px; max-width: 22ch; }
 .ktp-h2--wide { max-width: 30ch; }
 .ktp-h3 { font-size: 21px; line-height: 1.2; margin-bottom: 8px; }
-.ktp-lede { font-size: clamp(16px, 1.9vw, 18px); line-height: 1.72; color: var(--muted-warm); max-width: 62ch; }
-.ktp-body p { font-size: 16px; line-height: 1.75; color: var(--muted-warm); max-width: 62ch; }
+.ktp-lede { font-size: clamp(16px, 1.9vw, 18px); line-height: 1.72; color: var(--ink); max-width: 62ch; }
+.ktp-body p { font-size: 16px; line-height: 1.75; color: var(--ink); max-width: 62ch; }
 .ktp-body p + p { margin-top: 16px; }
 
 /* HERO */
@@ -111,9 +113,13 @@
   color: var(--ink); border-bottom: 1px solid var(--line-warm); max-width: 68ch; }
 .ktp-list li:first-child { border-top: 1px solid var(--line-warm); }
 /* The rule is a marker, not the meaning: every item also reads correctly with
-   styles off, so nothing here depends on colour alone. */
+   styles off, so nothing here depends on colour alone.
+   2px, not 1px: every list item is a different height, so these rules land on
+   fractional device-pixel offsets. A 1px line then antialiases across two pixel
+   rows and renders visibly lighter at some positions than others, even though
+   the colour is identical everywhere. 2px always covers one whole row. */
 .ktp-list li::before { content: ''; position: absolute; left: 0; top: 22px;
-  width: 14px; height: 1px; background: var(--rust-ink); }
+  width: 14px; height: 2px; background: var(--rust-ink); }
 
 /* INCLUDED: the two main materials as one system */
 .ktp-included { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 30px; }
@@ -121,15 +127,15 @@
 .ktp-band .ktp-doc { background: #FFFDF8; }
 .ktp-doc-meta { font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase;
   color: var(--gold-ink); margin-bottom: 12px; }
-.ktp-doc p { font-size: 15px; line-height: 1.68; color: var(--muted-warm); }
+.ktp-doc p { font-size: 15px; line-height: 1.68; color: var(--ink); }
 .ktp-third { margin-top: 18px; padding: 20px 24px; border: 1px dashed var(--line-warm); border-radius: 10px; }
-.ktp-third p { font-size: 14.5px; line-height: 1.65; color: var(--muted-warm); max-width: none; }
+.ktp-third p { font-size: 14.5px; line-height: 1.65; color: var(--ink); max-width: none; }
 
 /* HOW IT WORKS */
 .ktp-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 34px; }
 .ktp-step-n { font-family: 'Cormorant Garamond', serif; font-size: 34px; line-height: 1;
   color: var(--rust-ink); margin-bottom: 12px; }
-.ktp-step p { font-size: 15px; line-height: 1.68; color: var(--muted-warm); }
+.ktp-step p { font-size: 15px; line-height: 1.68; color: var(--ink); }
 
 /* BEFORE AND AFTER */
 .ktp-ba { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 30px; align-items: stretch; }
@@ -140,7 +146,7 @@
 .ktp-ba-card--after .ktp-ba-label { color: var(--gold); }
 .ktp-ba-quote { font-family: 'Cormorant Garamond', serif; font-size: 21px; line-height: 1.4; color: var(--navy); }
 .ktp-ba-card--after .ktp-ba-quote { color: #fff; }
-.ktp-ba-note { margin-top: 24px; font-size: 14.5px; line-height: 1.7; color: var(--muted-warm); max-width: 62ch; }
+.ktp-ba-note { margin-top: 40px; font-size: 15px; line-height: 1.72; color: var(--ink); max-width: 62ch; }
 
 /* TWO-COLUMN: who it is for / what it is not */
 /* The two columns are already start-aligned. The visible problem was not the
@@ -174,7 +180,7 @@
   font-size: 24px; line-height: 1; color: var(--rust-ink); font-family: 'DM Sans', sans-serif; }
 .ktp-faq details[open] summary::after { content: '\2013'; }
 .ktp-faq .ktp-faq-a { padding: 0 34px 22px 0; }
-.ktp-faq .ktp-faq-a p { font-size: 15.5px; line-height: 1.72; color: var(--muted-warm); max-width: 68ch; }
+.ktp-faq .ktp-faq-a p { font-size: 15.5px; line-height: 1.72; color: var(--ink); max-width: 68ch; }
 
 /* FINAL CTA */
 .ktp-final { background: var(--navy); }
@@ -355,8 +361,7 @@
             <li>You have several years of experience but your accomplishments are scattered across old documents, emails, and memory</li>
             <li>You struggle to separate your contribution from the work of the team</li>
             <li>Your strongest examples are written in company-specific language</li>
-            <li>You want to prepare before a promotion, interview, resume update, or career move becomes urgent</li>
-            <li>You want a private evidence practice you can maintain without storing confidential company information</li>
+            <li>You want to prepare before a promotion, interview, resume update, or career move becomes urgent, and you want a private evidence practice you can maintain without storing confidential company information</li>
           </ul>
         </div>
         <div>
