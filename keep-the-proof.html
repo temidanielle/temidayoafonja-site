@@ -171,6 +171,12 @@
 .ktp-two { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 30px; align-items: stretch; }
 .ktp-card { background: var(--navy-panel); border: 1px solid var(--slate-dim); border-radius: 8px; padding: 34px; }
 .ktp-card--for { border-color: var(--gold); background: linear-gradient(180deg, rgba(201,168,76,0.06), rgba(20,41,79,0.4)); }
+/* The "what it is not" box gets a matching frame in its own bullet colour (rust),
+   same 1px width and 8px radius as the "for you if" box. The left/gold box stays
+   the lead: it also carries the gradient tint, so a full-strength rust hairline
+   would tip the balance rightward. The rust is held at ~0.55 alpha so both boxes
+   read as a finished pair while gold still leads. */
+.ktp-two .ktp-card:not(.ktp-card--for) { border-color: rgba(193,68,14,0.55); }
 .ktp-card .ktp-eyebrow { margin-bottom: 16px; }
 /* Distribute the four items across the full height of each equal-height box so
    neither column pools dead space at the bottom. The card becomes a flex column;
