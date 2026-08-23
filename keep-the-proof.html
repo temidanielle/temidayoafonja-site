@@ -258,7 +258,7 @@
         <span class="ktp-eyebrow">Keep the Proof</span>
         <h1 class="ktp-h1">Build the evidence before you need to prove your value.</h1>
         <p class="ktp-kicker">A 60-Minute Career Evidence System</p>
-        <p class="ktp-lede ktp-hero-lede">In 60 minutes, assemble proof you can carry into your next move: what you contributed, what changed, and what your work proves you can do.</p>
+        <p class="ktp-lede ktp-hero-lede">In 60 minutes, assemble proof you can carry into your next move. Document what you contributed, what changed, and what your work proves you can do.</p>
         <div class="ktp-cta-row">
           <a class="btn-primary" data-ktp-cta="hero" href="#included">Get Keep the Proof - $49</a>
         </div>
@@ -532,19 +532,17 @@
 
    THIS IS THE ONLY PLACE THE CHECKOUT URL IS SET.
 
-   The Keep the Proof Gumroad product does not exist yet and no URL was
-   supplied, so this is deliberately empty. It has NOT been guessed, and it
-   must NOT be pointed at the Field Kit product (l/czmqp), which is a
-   different offer at a different price.
+   Set to the reserved Keep the Proof Gumroad product. Every purchase CTA now
+   resolves to this URL (target=_blank, rel=noopener) and records the
+   'Keep the Proof Checkout' Plausible goal on click. It is NOT the Field Kit
+   product (l/czmqp), which is a different offer at a different price.
 
-   While it is empty the page is in preview status: every purchase CTA stays
-   on the page instead of leaving for a checkout that is not there. Fill this
-   in with the real Gumroad URL and the CTAs become outbound purchase links
-   automatically, with no other edit to this file.
-
-   At publication, also remove the noindex robots tag in <head>.
+   The page is still intentionally UNPUBLISHED: it carries noindex,nofollow in
+   <head> and is absent from site navigation, so it is not discoverable or
+   announced even though the checkout is wired. Remove the noindex robots tag
+   only when publication is authorized.
    ============================================================ */
-const KEEP_THE_PROOF_CHECKOUT_URL = "";
+const KEEP_THE_PROOF_CHECKOUT_URL = "https://temidayoafonja.gumroad.com/l/keep-the-proof";
 
 (function () {
   var ctas = document.querySelectorAll('[data-ktp-cta]');
