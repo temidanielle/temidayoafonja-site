@@ -229,6 +229,12 @@
 .ktp-dark .ktp-third strong { color: var(--gold-light); }
 .ktp-light .ktp-step { border-top-color: var(--line-warm); }  /* step rule visible on cream */
 .ktp-light .ktp-step-n { color: var(--gold-ink); }    /* text-safe gold number on cream */
+/* The Before/After section now sits on a navy band, but the "Before" card keeps
+   its fixed cream fill, so its quote must stay dark. Its .ktp-ba-quote (one
+   class) is outranked by .ktp-dark p (class + element), which washed it to
+   cream-70; raise specificity here and scope with :not() so the navy After card
+   is left alone. */
+.ktp-ba-card:not(.ktp-ba-card--after) .ktp-ba-quote { color: var(--navy); }
 
 /* CTA buttons: the shared gold .btn-primary is used as-is. Only add full-width
    behaviour on small screens, matching the Field Kit's mobile treatment. */
