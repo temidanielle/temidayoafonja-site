@@ -1,0 +1,50 @@
+<meta charset="utf-8">
+<!--
+  Capability Formation — Substack Welcome-page image (editable source) — 1200x1200 (square, >=600x600)
+  Same approved composition and question as the 1584x396 / 1100x220 versions; only type size,
+  line spacing, and vertical rhythm rebalanced for the square canvas.
+  Brand values (content/site-source-of-truth.json): navy #0F2347, gold #C9A84C, rust #C1440E.
+  Fonts: self-hosted /fonts (Cormorant Garamond 600). No external requests.
+-->
+<style>
+  @font-face{
+    font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:block;
+    src:url('../fonts/CormorantGaramond-600-normal-latin-abcaa8.woff2') format('woff2'),
+        url('../fonts/CormorantGaramond-600-normal-latin-ext-26a769.woff2') format('woff2');
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{background:#0b1a36;}
+  .stage{
+    width:1200px;height:1200px;position:relative;overflow:hidden;
+    font-family:'Cormorant Garamond',serif;
+    background:
+      radial-gradient(120% 110% at 50% 34%, rgba(31,58,110,0.50) 0%, rgba(15,35,71,0) 60%),
+      linear-gradient(150deg,#0c1d3d 0%,#10264c 46%,#0d1f3f 78%,#0b1a36 100%);
+  }
+  .grid{position:absolute;inset:0;opacity:0.035;pointer-events:none;
+    background-image:
+      linear-gradient(to right, rgba(201,168,76,0.9) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(201,168,76,0.9) 1px, transparent 1px);
+    background-size:60px 60px;
+    -webkit-mask-image:radial-gradient(120% 120% at 50% 40%, #000 0%, rgba(0,0,0,0.22) 62%, transparent 100%);
+            mask-image:radial-gradient(120% 120% at 50% 40%, #000 0%, rgba(0,0,0,0.22) 62%, transparent 100%);
+  }
+  .block{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+    display:flex;flex-direction:column;align-items:center;text-align:center;width:1040px;}
+  .q{
+    font-weight:600;font-size:90px;line-height:1.12;letter-spacing:0.05em;text-transform:uppercase;
+    background:linear-gradient(180deg,#dcc074 0%,#c9a84c 55%,#bd9a3e 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .rulewrap{display:flex;align-items:center;gap:16px;margin-top:44px;}
+  .hr{display:block;width:92px;height:1px;background:rgba(201,168,76,0.55);}
+  .diamond{display:block;width:7px;height:7px;transform:rotate(45deg);background:#c1440e;}
+</style>
+
+<div class="stage">
+  <div class="grid"></div>
+  <div class="block">
+    <div class="q">What&nbsp;is&nbsp;your&nbsp;work<br>building&nbsp;in&nbsp;you?</div>
+    <div class="rulewrap"><span class="hr"></span><span class="diamond"></span><span class="hr"></span></div>
+  </div>
+</div>
