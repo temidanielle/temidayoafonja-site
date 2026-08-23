@@ -172,6 +172,12 @@
 .ktp-card { background: var(--navy-panel); border: 1px solid var(--slate-dim); border-radius: 8px; padding: 34px; }
 .ktp-card--for { border-color: var(--gold); background: linear-gradient(180deg, rgba(201,168,76,0.06), rgba(20,41,79,0.4)); }
 .ktp-card .ktp-eyebrow { margin-bottom: 16px; }
+/* Distribute the four items across the full height of each equal-height box so
+   neither column pools dead space at the bottom. The card becomes a flex column;
+   the list fills the space left under the eyebrow and spreads its items evenly.
+   Scoped to this section only, so the marked lists elsewhere are unaffected. */
+.ktp-two .ktp-card { display: flex; flex-direction: column; }
+.ktp-two .ktp-list { flex: 1 1 auto; display: flex; flex-direction: column; justify-content: space-between; }
 
 /* FORMAT + SAFETY (ivory) */
 .ktp-format { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px 34px; margin-top: 26px; }
