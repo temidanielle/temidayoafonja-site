@@ -292,7 +292,36 @@
     </div>
   </section>
 
-  <!-- 3. FIRST-HOUR OUTCOME (navy) -->
+  <!-- 3. WHO IT IS FOR / WHAT IT IS NOT (navy) -->
+  <section class="ktp-sec ktp-dark">
+    <div class="ktp-wrap">
+      <span class="ktp-eyebrow">Fit</span>
+      <h2 class="ktp-h2">Who it is for, and what it is not.</h2>
+      <hr class="rust-rule">
+      <div class="ktp-two">
+        <div class="ktp-card ktp-card--for">
+          <span class="ktp-eyebrow" style="color:var(--gold);">Keep the Proof is for you if&hellip;</span>
+          <ul class="ktp-list" style="margin-top:6px;">
+            <li><span class="mk mk-gold"></span><span>Your accomplishments are scattered across old documents, emails, and memory</span></li>
+            <li><span class="mk mk-gold"></span><span>You struggle to separate your contribution from the team&rsquo;s work</span></li>
+            <li><span class="mk mk-gold"></span><span>Your strongest examples are written in company-specific language</span></li>
+            <li><span class="mk mk-gold"></span><span>You need to prepare before a promotion, interview, or career move becomes urgent</span></li>
+          </ul>
+        </div>
+        <div class="ktp-card">
+          <span class="ktp-eyebrow" style="color:var(--gold);">What it is not</span>
+          <ul class="ktp-list" style="margin-top:6px;">
+            <li><span class="mk mk-rust"></span><span>It is not a resume-writing service</span></li>
+            <li><span class="mk mk-rust"></span><span>It does not tell you whether to stay in or leave your job</span></li>
+            <li><span class="mk mk-rust"></span><span>It does not require uploading employee or company information</span></li>
+            <li><span class="mk mk-rust"></span><span>It does not replace the Capability Formation Field Kit</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. FIRST-HOUR OUTCOME (navy) -->
   <section class="ktp-sec ktp-dark">
     <div class="ktp-wrap">
       <span class="ktp-eyebrow">The first hour</span>
@@ -380,35 +409,6 @@
         </div>
       </div>
       <p class="ktp-note">The system moves you from a vague task description to a credible, evidence-supported account of what you contributed and what changed. Not every entry will carry a number. Where the evidence is qualitative, the system helps you say what changed and how you know.</p>
-    </div>
-  </section>
-
-  <!-- 7. WHO IT IS FOR / WHAT IT IS NOT (navy) -->
-  <section class="ktp-sec ktp-dark">
-    <div class="ktp-wrap">
-      <span class="ktp-eyebrow">Fit</span>
-      <h2 class="ktp-h2">Who it is for, and what it is not.</h2>
-      <hr class="rust-rule">
-      <div class="ktp-two">
-        <div class="ktp-card ktp-card--for">
-          <span class="ktp-eyebrow" style="color:var(--gold);">Keep the Proof is for you if&hellip;</span>
-          <ul class="ktp-list" style="margin-top:6px;">
-            <li><span class="mk mk-gold"></span><span>Your accomplishments are scattered across old documents, emails, and memory</span></li>
-            <li><span class="mk mk-gold"></span><span>You struggle to separate your contribution from the team&rsquo;s work</span></li>
-            <li><span class="mk mk-gold"></span><span>Your strongest examples are written in company-specific language</span></li>
-            <li><span class="mk mk-gold"></span><span>You need to prepare before a promotion, interview, or career move becomes urgent</span></li>
-          </ul>
-        </div>
-        <div class="ktp-card">
-          <span class="ktp-eyebrow" style="color:var(--gold);">What it is not</span>
-          <ul class="ktp-list" style="margin-top:6px;">
-            <li><span class="mk mk-rust"></span><span>It is not a resume-writing service</span></li>
-            <li><span class="mk mk-rust"></span><span>It does not tell you whether to stay in or leave your job</span></li>
-            <li><span class="mk mk-rust"></span><span>It does not require uploading employee or company information</span></li>
-            <li><span class="mk mk-rust"></span><span>It does not replace the Capability Formation Field Kit</span></li>
-          </ul>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -530,10 +530,11 @@
 /* ============================================================
    KEEP THE PROOF: CHECKOUT CONFIGURATION
 
-   THIS IS THE ONLY PLACE THE CHECKOUT URL IS SET.
-
-   Set to the reserved Keep the Proof Gumroad product. Every purchase CTA now
-   resolves to this URL (target=_blank, rel=noopener) and records the
+   The checkout URL is hardcoded directly on each purchase CTA's href in the
+   markup (target=_blank, rel=noopener) so a click always goes to Gumroad,
+   even with JavaScript disabled. The canonical value is recorded below for
+   reference; the script no longer rewrites hrefs. Every CTA points to the
+   reserved Keep the Proof Gumroad product and records the
    'Keep the Proof Checkout' Plausible goal on click. It is NOT the Field Kit
    product (l/czmqp), which is a different offer at a different price.
 
@@ -545,24 +546,18 @@
 const KEEP_THE_PROOF_CHECKOUT_URL = "https://temidayoafonja.gumroad.com/l/keep-the-proof";
 
 (function () {
+  // The checkout URL is hardcoded directly on each CTA's href in the markup
+  // (target=_blank, rel=noopener). This script only records analytics on click;
+  // it does NOT rewrite hrefs, so the hardcoded Gumroad URL is authoritative.
   var ctas = document.querySelectorAll('[data-ktp-cta]');
-  var live = KEEP_THE_PROOF_CHECKOUT_URL.trim().length > 0;
 
   Array.prototype.forEach.call(ctas, function (el) {
     var where = el.getAttribute('data-ktp-cta');
 
-    if (live) {
-      el.setAttribute('href', KEEP_THE_PROOF_CHECKOUT_URL);
-      el.setAttribute('target', '_blank');
-      el.setAttribute('rel', 'noopener');
-    }
-
     el.addEventListener('click', function () {
       if (window.plausible) {
         plausible('Keep the Proof CTA', { props: { location: where } });
-        if (live) {
-          plausible('Keep the Proof Checkout', { props: { location: where } });
-        }
+        plausible('Keep the Proof Checkout', { props: { location: where } });
       }
     });
   });
