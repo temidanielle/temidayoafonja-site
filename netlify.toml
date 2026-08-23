@@ -80,8 +80,8 @@
   to = "/fieldkit.html"
   status = 200
 
-# PREVIEW ONLY, not yet announced anywhere. keep-the-proof.html also carries a
-# noindex robots tag; remove that tag when the page is published.
+# Published product page. Clean-URL rewrite so /keep-the-proof serves the file
+# while search authority consolidates on the canonical /keep-the-proof.
 [[redirects]]
   from = "/keep-the-proof"
   to = "/keep-the-proof.html"
