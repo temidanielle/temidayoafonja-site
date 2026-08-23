@@ -164,7 +164,11 @@
 .ktp-ba-card--after .ktp-ba-quote { color: var(--white); }
 
 /* WHO / NOT (navy compare) */
-.ktp-two { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 30px; align-items: start; }
+/* Both columns stretch to the taller sibling's height so the two boxes are
+   always equal height at desktop width. The cards carry no fixed height, so
+   they grow naturally; the max-width:900px rule below stacks them to one
+   column at their own content height on narrow viewports. */
+.ktp-two { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 30px; align-items: stretch; }
 .ktp-card { background: var(--navy-panel); border: 1px solid var(--slate-dim); border-radius: 8px; padding: 34px; }
 .ktp-card--for { border-color: var(--gold); background: linear-gradient(180deg, rgba(201,168,76,0.06), rgba(20,41,79,0.4)); }
 .ktp-card .ktp-eyebrow { margin-bottom: 16px; }
