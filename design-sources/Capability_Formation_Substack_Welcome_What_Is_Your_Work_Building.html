@@ -1,0 +1,55 @@
+<meta charset="utf-8">
+<!--
+  Capability Formation — Substack Welcome Page image (editable source)
+  Basis: linkedin-banner.png (approved navy/gold Cormorant-serif "CAPABILITY FORMATION" header, 1584x396)
+  Brand values (content/site-source-of-truth.json): navy #0F2347, gold #C9A84C, rust #C1440E, sand #F5F0E8
+  Fonts: self-hosted /fonts (Cormorant Garamond 600). No external requests.
+  Change vs. basis: publication-name text replaced with the reader-facing question;
+  tagline and product/brand row removed (Substack shows the publication name + description below the image).
+-->
+<style>
+  @font-face{
+    font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:block;
+    src:url('../fonts/CormorantGaramond-600-normal-latin-abcaa8.woff2') format('woff2'),
+        url('../fonts/CormorantGaramond-600-normal-latin-ext-26a769.woff2') format('woff2');
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{background:#0b1a36;}
+  .stage{
+    width:1584px;height:396px;position:relative;overflow:hidden;
+    font-family:'Cormorant Garamond',serif;
+    /* exact navy treatment from the approved asset */
+    background:
+      radial-gradient(120% 150% at 72% 20%, rgba(31,58,110,0.50) 0%, rgba(15,35,71,0) 58%),
+      linear-gradient(118deg,#0c1d3d 0%,#10264c 46%,#0d1f3f 78%,#0b1a36 100%);
+  }
+  /* restrained blueprint grid — brand gold, very low contrast (as in the approved asset) */
+  .grid{position:absolute;inset:0;opacity:0.035;pointer-events:none;
+    background-image:
+      linear-gradient(to right, rgba(201,168,76,0.9) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(201,168,76,0.9) 1px, transparent 1px);
+    background-size:58px 58px;
+    -webkit-mask-image:radial-gradient(140% 140% at 78% 22%, #000 0%, rgba(0,0,0,0.22) 62%, transparent 100%);
+            mask-image:radial-gradient(140% 140% at 78% 22%, #000 0%, rgba(0,0,0,0.22) 62%, transparent 100%);
+  }
+  .block{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+    display:flex;flex-direction:column;align-items:center;text-align:center;width:1400px;}
+  /* the question — dominant element, approved Cormorant gold-serif treatment */
+  .q{
+    font-weight:600;font-size:88px;line-height:1.04;letter-spacing:0.045em;text-transform:uppercase;
+    background:linear-gradient(180deg,#dcc074 0%,#c9a84c 55%,#bd9a3e 100%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  /* editorial rule carried over from the approved asset (visual continuity, no copy) */
+  .rulewrap{display:flex;align-items:center;gap:14px;margin-top:30px;}
+  .hr{display:block;width:88px;height:1px;background:rgba(201,168,76,0.55);}
+  .diamond{display:block;width:6px;height:6px;transform:rotate(45deg);background:#c1440e;}
+</style>
+
+<div class="stage">
+  <div class="grid"></div>
+  <div class="block">
+    <div class="q">What&nbsp;is&nbsp;your&nbsp;work<br>building&nbsp;in&nbsp;you?</div>
+    <div class="rulewrap"><span class="hr"></span><span class="diamond"></span><span class="hr"></span></div>
+  </div>
+</div>
