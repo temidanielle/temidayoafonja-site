@@ -171,6 +171,12 @@
 .ktp-two { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 30px; align-items: stretch; }
 .ktp-card { background: var(--navy-panel); border: 1px solid var(--slate-dim); border-radius: 8px; padding: 34px; }
 .ktp-card--for { border-color: var(--gold); background: linear-gradient(180deg, rgba(201,168,76,0.06), rgba(20,41,79,0.4)); }
+/* The "what it is not" box gets a matching frame in its own bullet colour (rust),
+   same 1px width and 8px radius as the "for you if" box. The left/gold box stays
+   the lead: it also carries the gradient tint, so a full-strength rust hairline
+   would tip the balance rightward. The rust is held at ~0.55 alpha so both boxes
+   read as a finished pair while gold still leads. */
+.ktp-two .ktp-card:not(.ktp-card--for) { border-color: rgba(193,68,14,0.55); }
 .ktp-card .ktp-eyebrow { margin-bottom: 16px; }
 /* Distribute the four items across the full height of each equal-height box so
    neither column pools dead space at the bottom. The card becomes a flex column;
@@ -210,6 +216,25 @@
   text-transform: uppercase; color: var(--rust-ink); text-decoration: none;
   border-bottom: 1px solid rgba(182,64,13,.4); padding-bottom: 3px; transition: color 0.2s, border-color 0.2s; }
 .ktp-next-link:hover { color: var(--rust); border-bottom-color: var(--rust); }
+
+/* ── Alternating-band adaptations ──────────────────────────────
+   The Fit section moved up to position 3, so the four sections between its old
+   and new positions swap grounds to keep the strict navy/ivory rhythm. Two of
+   them carry components whose fills are fixed, so only their text-accents need
+   adapting: the cream doc cards and the Start-Here note now read on a navy
+   band, and the step numbers now read on an ivory band. */
+.ktp-doc .ktp-h3 { color: var(--navy); }              /* cream card: heading stays navy on any band */
+.ktp-doc p { color: var(--ink); }                     /* cream card: body stays ink on any band */
+.ktp-dark .ktp-third { border-color: var(--line); }   /* dashed note: gold hairline on navy */
+.ktp-dark .ktp-third strong { color: var(--gold-light); }
+.ktp-light .ktp-step { border-top-color: var(--line-warm); }  /* step rule visible on cream */
+.ktp-light .ktp-step-n { color: var(--gold-ink); }    /* text-safe gold number on cream */
+/* The Before/After section now sits on a navy band, but the "Before" card keeps
+   its fixed cream fill, so its quote must stay dark. Its .ktp-ba-quote (one
+   class) is outranked by .ktp-dark p (class + element), which washed it to
+   cream-70; raise specificity here and scope with :not() so the navy After card
+   is left alone. */
+.ktp-ba-card:not(.ktp-ba-card--after) .ktp-ba-quote { color: var(--navy); }
 
 /* CTA buttons: the shared gold .btn-primary is used as-is. Only add full-width
    behaviour on small screens, matching the Field Kit's mobile treatment. */
@@ -258,9 +283,9 @@
         <span class="ktp-eyebrow">Keep the Proof</span>
         <h1 class="ktp-h1">Build the evidence before you need to prove your value.</h1>
         <p class="ktp-kicker">A 60-Minute Career Evidence System</p>
-        <p class="ktp-lede ktp-hero-lede">In 60 minutes, assemble proof you can carry into your next move: what you contributed, what changed, and what your work proves you can do.</p>
+        <p class="ktp-lede ktp-hero-lede">In 60 minutes, assemble proof you can carry into your next move. Document what you contributed, what changed, and what your work proves you can do.</p>
         <div class="ktp-cta-row">
-          <a class="btn-primary" data-ktp-cta="hero" href="#included">Get Keep the Proof - $49</a>
+          <a class="btn-primary" data-ktp-cta="hero" href="https://temidayoafonja.gumroad.com/l/keep-the-proof" target="_blank" rel="noopener">Get Keep the Proof - $49</a>
         </div>
         <p class="ktp-trust">Includes the 41-page guided system, reusable Career Evidence Ledger, and Start Here guide.</p>
         <p class="ktp-price">$49 &middot; Instant digital access</p>
@@ -292,98 +317,7 @@
     </div>
   </section>
 
-  <!-- 3. FIRST-HOUR OUTCOME (navy) -->
-  <section class="ktp-sec ktp-dark">
-    <div class="ktp-wrap">
-      <span class="ktp-eyebrow">The first hour</span>
-      <h2 class="ktp-h2">What you will have after the first hour.</h2>
-      <hr class="rust-rule">
-      <ul class="ktp-list">
-        <li><span class="mk mk-gold"></span><span>At least one completed Career Evidence Entry</span></li>
-        <li><span class="mk mk-gold"></span><span>A clearer distinction between what the team did and what you contributed</span></li>
-        <li><span class="mk mk-gold"></span><span>Evidence connected to outcomes, changes, and problems prevented</span></li>
-        <li><span class="mk mk-gold"></span><span>A portable explanation of work that may currently exist only in internal language</span></li>
-        <li><span class="mk mk-gold"></span><span>A repeatable monthly and quarterly evidence habit</span></li>
-        <li><span class="mk mk-gold"></span><span>A private place to keep your proof before you urgently need it</span></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- 4. WHAT IS INCLUDED (ivory) -->
-  <section class="ktp-sec ktp-light" id="included">
-    <div class="ktp-wrap">
-      <span class="ktp-eyebrow">What you receive</span>
-      <h2 class="ktp-h2">One system, in two working parts.</h2>
-      <p class="ktp-sub">The guided system is the setup experience. The ledger is what keeps the practice going. They are designed to be used together.</p>
-      <div class="ktp-included">
-        <article class="ktp-doc">
-          <div class="ktp-doc-meta">The guided system &middot; 41 pages</div>
-          <h3 class="ktp-h3">Keep the Proof: A 60-Minute Career Evidence System</h3>
-          <p>A fillable handbook that walks you through identifying, documenting, verifying, and translating meaningful work. It teaches you how to tell contribution from participation, and how to put internal work into language that travels.</p>
-        </article>
-        <article class="ktp-doc">
-          <div class="ktp-doc-meta">The reusable ledger &middot; 12 pages</div>
-          <h3 class="ktp-h3">Career Evidence Ledger</h3>
-          <p>A fillable tool for continuing the practice: quick captures, full entries, translation exercises, monthly reviews, quarterly reviews, and an evidence index you can search later.</p>
-        </article>
-      </div>
-      <div class="ktp-third">
-        <p><strong>Start Here</strong> is included as well: a short orientation guide explaining the recommended order and safe use of the materials.</p>
-      </div>
-      <div class="ktp-cta-row" style="margin-top:34px;">
-        <a class="btn-primary" data-ktp-cta="included" href="#final">Get Keep the Proof - $49</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 5. HOW IT WORKS (navy) -->
-  <section class="ktp-sec ktp-dark">
-    <div class="ktp-wrap">
-      <span class="ktp-eyebrow">How it works</span>
-      <h2 class="ktp-h2">Three steps, then a habit.</h2>
-      <hr class="rust-rule">
-      <div class="ktp-steps">
-        <div class="ktp-step">
-          <div class="ktp-step-n">1</div>
-          <h3 class="ktp-h3">Choose one piece of meaningful work</h3>
-          <p>Start with a project, decision, problem, improvement, or contribution worth preserving.</p>
-        </div>
-        <div class="ktp-step">
-          <div class="ktp-step-n">2</div>
-          <h3 class="ktp-h3">Build the evidence entry</h3>
-          <p>Document what happened, what you contributed, what changed, and what evidence supports the story.</p>
-        </div>
-        <div class="ktp-step">
-          <div class="ktp-step-n">3</div>
-          <h3 class="ktp-h3">Keep the system current</h3>
-          <p>Use the Career Evidence Ledger monthly and quarterly so you are not reconstructing your career from memory later.</p>
-        </div>
-      </div>
-      <p class="ktp-note">By the end of the first hour, you should have at least one completed Career Evidence Entry and a repeatable way to keep the proof of what your work has built.</p>
-    </div>
-  </section>
-
-  <!-- 6. EXAMPLE TRANSFORMATION (ivory) -->
-  <section class="ktp-sec ktp-light">
-    <div class="ktp-wrap">
-      <span class="ktp-eyebrow">What changes</span>
-      <h2 class="ktp-h2">From a task description to an account of contribution.</h2>
-      <hr class="rust-rule">
-      <div class="ktp-ba">
-        <div class="ktp-ba-card">
-          <div class="ktp-ba-label">Before</div>
-          <p class="ktp-ba-quote">&ldquo;Helped with onboarding.&rdquo;</p>
-        </div>
-        <div class="ktp-ba-card ktp-ba-card--after">
-          <div class="ktp-ba-label">After</div>
-          <p class="ktp-ba-quote">&ldquo;Led the redesign of a cross-functional onboarding experience, coordinated stakeholders across the business, and improved one measure of new-hire integration from 47 to 75.&rdquo;</p>
-        </div>
-      </div>
-      <p class="ktp-note">The system moves you from a vague task description to a credible, evidence-supported account of what you contributed and what changed. Not every entry will carry a number. Where the evidence is qualitative, the system helps you say what changed and how you know.</p>
-    </div>
-  </section>
-
-  <!-- 7. WHO IT IS FOR / WHAT IT IS NOT (navy) -->
+  <!-- 3. WHO IT IS FOR / WHAT IT IS NOT (navy) -->
   <section class="ktp-sec ktp-dark">
     <div class="ktp-wrap">
       <span class="ktp-eyebrow">Fit</span>
@@ -409,6 +343,97 @@
           </ul>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- 4. FIRST-HOUR OUTCOME (ivory) -->
+  <section class="ktp-sec ktp-light">
+    <div class="ktp-wrap">
+      <span class="ktp-eyebrow">The first hour</span>
+      <h2 class="ktp-h2">What you will have after the first hour.</h2>
+      <hr class="rust-rule">
+      <ul class="ktp-list">
+        <li><span class="mk mk-gold"></span><span>At least one completed Career Evidence Entry</span></li>
+        <li><span class="mk mk-gold"></span><span>A clearer distinction between what the team did and what you contributed</span></li>
+        <li><span class="mk mk-gold"></span><span>Evidence connected to outcomes, changes, and problems prevented</span></li>
+        <li><span class="mk mk-gold"></span><span>A portable explanation of work that may currently exist only in internal language</span></li>
+        <li><span class="mk mk-gold"></span><span>A repeatable monthly and quarterly evidence habit</span></li>
+        <li><span class="mk mk-gold"></span><span>A private place to keep your proof before you urgently need it</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 5. WHAT IS INCLUDED (navy) -->
+  <section class="ktp-sec ktp-dark" id="included">
+    <div class="ktp-wrap">
+      <span class="ktp-eyebrow">What you receive</span>
+      <h2 class="ktp-h2">One system, in two working parts.</h2>
+      <p class="ktp-sub">The guided system is the setup experience. The ledger is what keeps the practice going. They are designed to be used together.</p>
+      <div class="ktp-included">
+        <article class="ktp-doc">
+          <div class="ktp-doc-meta">The guided system &middot; 41 pages</div>
+          <h3 class="ktp-h3">Keep the Proof: A 60-Minute Career Evidence System</h3>
+          <p>A fillable handbook that walks you through identifying, documenting, verifying, and translating meaningful work. It teaches you how to tell contribution from participation, and how to put internal work into language that travels.</p>
+        </article>
+        <article class="ktp-doc">
+          <div class="ktp-doc-meta">The reusable ledger &middot; 12 pages</div>
+          <h3 class="ktp-h3">Career Evidence Ledger</h3>
+          <p>A fillable tool for continuing the practice: quick captures, full entries, translation exercises, monthly reviews, quarterly reviews, and an evidence index you can search later.</p>
+        </article>
+      </div>
+      <div class="ktp-third">
+        <p><strong>Start Here</strong> is included as well: a short orientation guide explaining the recommended order and safe use of the materials.</p>
+      </div>
+      <div class="ktp-cta-row" style="margin-top:34px;">
+        <a class="btn-primary" data-ktp-cta="included" href="https://temidayoafonja.gumroad.com/l/keep-the-proof" target="_blank" rel="noopener">Get Keep the Proof - $49</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. HOW IT WORKS (ivory) -->
+  <section class="ktp-sec ktp-light">
+    <div class="ktp-wrap">
+      <span class="ktp-eyebrow">How it works</span>
+      <h2 class="ktp-h2">Three steps, then a habit.</h2>
+      <hr class="rust-rule">
+      <div class="ktp-steps">
+        <div class="ktp-step">
+          <div class="ktp-step-n">1</div>
+          <h3 class="ktp-h3">Choose one piece of meaningful work</h3>
+          <p>Start with a project, decision, problem, improvement, or contribution worth preserving.</p>
+        </div>
+        <div class="ktp-step">
+          <div class="ktp-step-n">2</div>
+          <h3 class="ktp-h3">Build the evidence entry</h3>
+          <p>Document what happened, what you contributed, what changed, and what evidence supports the story.</p>
+        </div>
+        <div class="ktp-step">
+          <div class="ktp-step-n">3</div>
+          <h3 class="ktp-h3">Keep the system current</h3>
+          <p>Use the Career Evidence Ledger monthly and quarterly so you are not reconstructing your career from memory later.</p>
+        </div>
+      </div>
+      <p class="ktp-note">By the end of the first hour, you should have at least one completed Career Evidence Entry and a repeatable way to keep the proof of what your work has built.</p>
+    </div>
+  </section>
+
+  <!-- 7. EXAMPLE TRANSFORMATION (navy) -->
+  <section class="ktp-sec ktp-dark">
+    <div class="ktp-wrap">
+      <span class="ktp-eyebrow">What changes</span>
+      <h2 class="ktp-h2">From a task description to an account of contribution.</h2>
+      <hr class="rust-rule">
+      <div class="ktp-ba">
+        <div class="ktp-ba-card">
+          <div class="ktp-ba-label">Before</div>
+          <p class="ktp-ba-quote">&ldquo;Helped with onboarding.&rdquo;</p>
+        </div>
+        <div class="ktp-ba-card ktp-ba-card--after">
+          <div class="ktp-ba-label">After</div>
+          <p class="ktp-ba-quote">&ldquo;Led the redesign of a cross-functional onboarding experience, coordinated stakeholders across the business, and improved one measure of new-hire integration from 47 to 75.&rdquo;</p>
+        </div>
+      </div>
+      <p class="ktp-note">The system moves you from a vague task description to a credible, evidence-supported account of what you contributed and what changed. Not every entry will carry a number. Where the evidence is qualitative, the system helps you say what changed and how you know.</p>
     </div>
   </section>
 
@@ -477,7 +502,7 @@
       <h2 class="ktp-h2">Do not wait until you need the story to start looking for the evidence.</h2>
       <p class="ktp-sub">Build your private Career Evidence System now, while the work is still close enough to document accurately.</p>
       <div class="ktp-cta-row">
-        <a class="btn-primary" data-ktp-cta="final" href="#included">Get Keep the Proof - $49</a>
+        <a class="btn-primary" data-ktp-cta="final" href="https://temidayoafonja.gumroad.com/l/keep-the-proof" target="_blank" rel="noopener">Get Keep the Proof - $49</a>
       </div>
       <p class="ktp-trust">Includes the 41-page guided system, reusable Career Evidence Ledger, and Start Here guide.</p>
     </div>
@@ -530,41 +555,34 @@
 /* ============================================================
    KEEP THE PROOF: CHECKOUT CONFIGURATION
 
-   THIS IS THE ONLY PLACE THE CHECKOUT URL IS SET.
+   The checkout URL is hardcoded directly on each purchase CTA's href in the
+   markup (target=_blank, rel=noopener) so a click always goes to Gumroad,
+   even with JavaScript disabled. The canonical value is recorded below for
+   reference; the script no longer rewrites hrefs. Every CTA points to the
+   reserved Keep the Proof Gumroad product and records the
+   'Keep the Proof Checkout' Plausible goal on click. It is NOT the Field Kit
+   product (l/czmqp), which is a different offer at a different price.
 
-   The Keep the Proof Gumroad product does not exist yet and no URL was
-   supplied, so this is deliberately empty. It has NOT been guessed, and it
-   must NOT be pointed at the Field Kit product (l/czmqp), which is a
-   different offer at a different price.
-
-   While it is empty the page is in preview status: every purchase CTA stays
-   on the page instead of leaving for a checkout that is not there. Fill this
-   in with the real Gumroad URL and the CTAs become outbound purchase links
-   automatically, with no other edit to this file.
-
-   At publication, also remove the noindex robots tag in <head>.
+   The page is still intentionally UNPUBLISHED: it carries noindex,nofollow in
+   <head> and is absent from site navigation, so it is not discoverable or
+   announced even though the checkout is wired. Remove the noindex robots tag
+   only when publication is authorized.
    ============================================================ */
-const KEEP_THE_PROOF_CHECKOUT_URL = "";
+const KEEP_THE_PROOF_CHECKOUT_URL = "https://temidayoafonja.gumroad.com/l/keep-the-proof";
 
 (function () {
+  // The checkout URL is hardcoded directly on each CTA's href in the markup
+  // (target=_blank, rel=noopener). This script only records analytics on click;
+  // it does NOT rewrite hrefs, so the hardcoded Gumroad URL is authoritative.
   var ctas = document.querySelectorAll('[data-ktp-cta]');
-  var live = KEEP_THE_PROOF_CHECKOUT_URL.trim().length > 0;
 
   Array.prototype.forEach.call(ctas, function (el) {
     var where = el.getAttribute('data-ktp-cta');
 
-    if (live) {
-      el.setAttribute('href', KEEP_THE_PROOF_CHECKOUT_URL);
-      el.setAttribute('target', '_blank');
-      el.setAttribute('rel', 'noopener');
-    }
-
     el.addEventListener('click', function () {
       if (window.plausible) {
         plausible('Keep the Proof CTA', { props: { location: where } });
-        if (live) {
-          plausible('Keep the Proof Checkout', { props: { location: where } });
-        }
+        plausible('Keep the Proof Checkout', { props: { location: where } });
       }
     });
   });
