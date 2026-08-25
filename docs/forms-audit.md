@@ -263,7 +263,9 @@ records since 2026-08-13. This endpoint now names the fault class instead:
 | `500`, `reason: blobs_not_configured` | `BLOBS_SITE_ID` and `BLOBS_TOKEN` are not both present in this deploy context. A configuration fault, not a code fault. |
 | `500`, `reason: blobs_env_missing` | The two variables are present but Blobs still refused to initialise. |
 | `500`, `reason: blobs_api_<status>` | The Blobs API answered with that status. `401` or `403` means the token is wrong or lacks access to the site. |
-| `500`, `reason: blobs_error` | Anything else. Read the function log. |
+| `500`, `reason: blobs_error` | Anything else, including a refusal Netlify explained in words rather than by status. Read `detail`. |
+
+A `500` also carries `detail`, which is the text Netlify's API put in its `x-nf-error` response header, or the bare status when it sent no header, plus the request ID when one is present. That request ID is what Netlify support needs to trace a refusal. Only a `BlobsInternalError` has its message returned, because its shape is built by the client itself and is bounded; an arbitrary error's message is never echoed. The text is truncated to 200 characters, and the values of `BLOBS_TOKEN` and `RESEARCH_EXPORT_TOKEN` are redacted from it, which is belt and braces rather than a known risk.
 
 A refusal at the gate is classified the same way, added the same day for the same reason. `401`
 with `reason: no_token_supplied` means no token reached the request at all, `401` with

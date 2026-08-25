@@ -153,6 +153,43 @@ function blobsErrorStatus(e) {
   return m ? Number(m[1]) : null;
 }
 
+// Netlify's API can explain a refusal in words, in an x-nf-error response
+// header. @netlify/blobs folds that header, or the bare status when there is no
+// header, into the error message as:
+//
+//   Netlify Blobs has generated an internal error (<detail>[, ID: <request id>])
+//
+// That detail is the only thing that distinguishes one 400 from another, and it
+// is otherwise visible only in a function log that has usually rolled by the
+// time anyone looks. It is returned here.
+//
+// Two deliberate limits. Only BlobsInternalError is read, because its message
+// is a known bounded shape produced by the client itself; the message of an
+// arbitrary error is never returned, since nothing constrains what it might
+// contain. And the result is truncated, so a long upstream string cannot turn
+// a diagnostic into a payload.
+const MAX_DETAIL = 200;
+
+function blobsFailureDetail(e) {
+  if (!e || e.name !== "BlobsInternalError") return null;
+  const m = /internal error \((.*)\)\s*$/.exec(String(e.message || ""));
+  if (!m) return null;
+  const detail = redactSecrets(m[1]).trim();
+  return detail ? detail.slice(0, MAX_DETAIL) : null;
+}
+
+// Belt and braces. No credential has ever appeared in this message shape: the
+// client builds it from a response header and a status, and never from the
+// request it sent. The two secrets this function holds are redacted anyway,
+// rather than resting on that staying true.
+function redactSecrets(text) {
+  let out = String(text);
+  for (const secret of [process.env.BLOBS_TOKEN, process.env.RESEARCH_EXPORT_TOKEN]) {
+    if (secret && String(secret).length >= 8) out = out.split(String(secret)).join("[redacted]");
+  }
+  return out;
+}
+
 // A short, stable code for the fault class. Order matters: an absent pair of
 // Blobs variables is the explanation for everything downstream of it, so it is
 // checked first.
@@ -236,7 +273,7 @@ exports.handler = async (event) => {
     }
   } catch (e) {
     const code = blobsFailureCode(e);
-    console.error("blobs " + STORE + " read failed:", code, "manual config present:", blobsConfigured(), e);
+    console.error("blobs " + STORE + " read failed:", code, blobsFailureDetail(e) || "", "manual config present:", blobsConfigured(), e);
 
     // A store that has never had a blob written to it does not exist, and the
     // Blobs API answers 404 for it. That is an empty export, not a server
@@ -251,6 +288,7 @@ exports.handler = async (event) => {
         body: JSON.stringify({
           error: "export_failed",
           reason: code,
+          detail: blobsFailureDetail(e),
           store: STORE,
           blobs_manual_config: blobsConfigured()
         })

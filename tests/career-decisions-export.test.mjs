@@ -125,6 +125,10 @@ function call({ token = null, bearer = null, query = {}, method = "GET" } = {}) 
   });
 }
 
+function res_includes(body, needle) {
+  return JSON.stringify(body).includes(needle);
+}
+
 /* ── Authentication ────────────────────────────────────────────────────── */
 test("refuses a request with no token", async () => {
   reset();
@@ -387,10 +391,15 @@ test("the JSON format returns the records with their nesting intact", async () =
 // export_failed with a correct token, and there was no way to tell from the
 // response which of four unrelated conditions had occurred.
 
-// A Blobs API error as @netlify/blobs raises it: the status lives in the
-// message text on some releases and on the error object on others.
-function blobsApiError(status, { onObject = false } = {}) {
-  const e = new Error("Netlify Blobs has generated an internal error: " + status);
+// A Blobs API error exactly as @netlify/blobs 8.x builds it. Verified against
+// the client source: the constructor takes the x-nf-error response header when
+// the API sends one, falls back to "<status> status code" when it does not, and
+// appends ", ID: <request id>" when x-nf-request-id is present. The status also
+// appears on the error object on some releases, hence onObject.
+function blobsApiError(status, { detail = null, requestId = null, onObject = false } = {}) {
+  let inner = detail || status + " status code";
+  if (requestId) inner += ", ID: " + requestId;
+  const e = new Error("Netlify Blobs has generated an internal error (" + inner + ")");
   e.name = "BlobsInternalError";
   if (onObject) e.status = status;
   return e;
@@ -484,6 +493,69 @@ test("a 404 carried on the error object is also treated as an empty store", asyn
   const res = await call({ token: TOKEN, query: { format: "json" } });
   assert.equal(res.statusCode, 200);
   assert.equal(JSON.parse(res.body).store_exists, false);
+});
+
+/* ── The upstream detail ───────────────────────────────────────────────── */
+//
+// Netlify explains some refusals in an x-nf-error header. That text is the only
+// thing separating one 400 from another, and it is otherwise visible only in a
+// function log.
+
+test("the worded reason Netlify sends is returned", async () => {
+  reset();
+  blobs.listError = blobsApiError(400, { detail: "Invalid site ID" });
+  const res = await call({ token: TOKEN });
+  assert.equal(JSON.parse(res.body).detail, "Invalid site ID");
+});
+
+test("a bare status carries the request ID, which is what Netlify support needs", async () => {
+  reset();
+  blobs.listError = blobsApiError(400, { requestId: "01JABCDEF" });
+  const body = JSON.parse((await call({ token: TOKEN })).body);
+  assert.equal(body.reason, "blobs_api_400");
+  assert.equal(body.detail, "400 status code, ID: 01JABCDEF");
+});
+
+test("a worded reason with no status still classifies, and still reports", async () => {
+  reset();
+  blobs.listError = blobsApiError(400, { detail: "store not found" });
+  const body = JSON.parse((await call({ token: TOKEN })).body);
+  // No parseable status in the message, so the class falls back rather than
+  // inventing one. The detail is what carries the meaning here.
+  assert.equal(body.reason, "blobs_error");
+  assert.equal(body.detail, "store not found");
+});
+
+test("only a BlobsInternalError has its message returned", async () => {
+  reset();
+  // An arbitrary error's message is unconstrained, so it is never echoed.
+  blobs.listError = new Error("connection to 10.0.0.4 failed for ada@example.com");
+  const body = JSON.parse((await call({ token: TOKEN })).body);
+  assert.equal(body.detail, null);
+  assert.ok(!res_includes(body, "ada@example.com"));
+});
+
+test("a long upstream string is truncated", async () => {
+  reset();
+  blobs.listError = blobsApiError(400, { detail: "x".repeat(5000) });
+  const body = JSON.parse((await call({ token: TOKEN })).body);
+  assert.equal(body.detail.length, 200);
+});
+
+test("a secret appearing in the upstream string is redacted", async () => {
+  reset();
+  process.env.BLOBS_TOKEN = "blobs-token-MUST-NOT-LEAK";
+  blobs.listError = blobsApiError(400, { detail: "rejected token blobs-token-MUST-NOT-LEAK here" });
+  const res = await call({ token: TOKEN });
+  assert.ok(!res.body.includes("blobs-token-MUST-NOT-LEAK"));
+  assert.match(JSON.parse(res.body).detail, /\[redacted\]/);
+});
+
+test("the export token is redacted from an upstream string too", async () => {
+  reset();
+  blobs.listError = blobsApiError(400, { detail: "saw " + TOKEN + " in the request" });
+  const res = await call({ token: TOKEN });
+  assert.ok(!res.body.includes(TOKEN));
 });
 
 test("the failure body names the store so the fault is attributable", async () => {
