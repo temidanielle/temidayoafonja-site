@@ -40,7 +40,7 @@
 // Node 18+. See docs/forms-audit.md section 10 and docs/data-inventory.md.
 
 const crypto = require("crypto");
-const { blobStore, blobsConfigured, blobsMode } = require("../lib/blobs");
+const { blobStore, blobsConfigured } = require("../lib/blobs");
 
 const STORE = "career-decisions-leads";
 
@@ -126,6 +126,22 @@ function flatten(rec) {
     for (const f of TOUCH_FIELDS) flat[which + "_" + f] = touch[f];
   }
   return flat;
+}
+
+// Which route blobStore() takes for this call. Defined here rather than in the
+// shared helper deliberately: netlify/lib/blobs.js is used by all nine Blobs
+// functions, four of them live on production, and nothing in this branch should
+// reach them. This mirrors the helper's precedence and must be kept in step
+// with it: manual credentials win when both are present.
+//
+// It exists because on 2026-08-26 a site-wide Blobs failure could not be
+// attributed without knowing which of the two routes was in use. It reported
+// "manual", which established that Netlify is injecting no Blobs context here
+// and that the failing request is the API one.
+function blobsRoute() {
+  if (blobsConfigured()) return "manual";
+  if (globalThis.netlifyBlobsContext || process.env.NETLIFY_BLOBS_CONTEXT) return "auto";
+  return "unconfigured";
 }
 
 // ── Blobs failure classification ───────────────────────────────────────────
@@ -293,7 +309,7 @@ exports.handler = async (event) => {
           // Which of the two routes the call took. The injected context and the
           // manual API credentials fail for unrelated reasons, and nothing in
           // the error itself says which one was in use.
-          mode: blobsMode(),
+          mode: blobsRoute(),
           blobs_manual_config: blobsConfigured()
         })
       };

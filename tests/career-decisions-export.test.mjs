@@ -578,8 +578,10 @@ test("a failure reports the manual route when no context is injected", async () 
   assert.equal(JSON.parse((await call({ token: TOKEN })).body).mode, "manual");
 });
 
-test("a failure reports the injected route when a context is present", async () => {
+test("a failure reports the injected route when only a context is present", async () => {
   reset();
+  delete process.env.BLOBS_SITE_ID;
+  delete process.env.BLOBS_TOKEN;
   process.env.NETLIFY_BLOBS_CONTEXT = "eyJzaXRlSUQiOiJ4In0=";
   blobs.failList = true;
   assert.equal(JSON.parse((await call({ token: TOKEN })).body).mode, "auto");
@@ -589,30 +591,33 @@ test("a failure reports neither route when nothing is configured", async () => {
   reset();
   delete process.env.BLOBS_SITE_ID;
   delete process.env.BLOBS_TOKEN;
+  delete process.env.NETLIFY_BLOBS_CONTEXT;
   blobs.failList = true;
   const body = JSON.parse((await call({ token: TOKEN })).body);
   assert.equal(body.mode, "unconfigured");
   assert.equal(body.reason, "blobs_not_configured");
 });
 
-test("an injected context is used in preference to the manual credentials", async () => {
+test("the manual credentials are used whenever they are present", async () => {
   reset();
+  // Guards the precedence blobsRoute() mirrors. An injected context present
+  // alongside the manual credentials does not change which route is taken.
   process.env.NETLIFY_BLOBS_CONTEXT = "eyJzaXRlSUQiOiJ4In0=";
-  await call({ token: TOKEN });
-  // The string form is the injected route. Reaching for it while BLOBS_SITE_ID
-  // and BLOBS_TOKEN are both set is exactly the reversal being made: the
-  // manual API request is the one being refused site-wide.
-  assert.equal(blobs.lastGetStoreArg, "career-decisions-leads");
-});
-
-test("the manual credentials are still used when no context is injected", async () => {
-  reset();
   await call({ token: TOKEN });
   assert.deepEqual(blobs.lastGetStoreArg, {
     name: "career-decisions-leads",
     siteID: "test-site-id",
     token: "test-blobs-token"
   });
+});
+
+test("the injected route is used when the manual credentials are absent", async () => {
+  reset();
+  delete process.env.BLOBS_SITE_ID;
+  delete process.env.BLOBS_TOKEN;
+  process.env.NETLIFY_BLOBS_CONTEXT = "eyJzaXRlSUQiOiJ4In0=";
+  await call({ token: TOKEN });
+  assert.equal(blobs.lastGetStoreArg, "career-decisions-leads");
 });
 
 test("the failure body names the store so the fault is attributable", async () => {
