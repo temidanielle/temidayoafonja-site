@@ -254,8 +254,7 @@ other three accept, with a 400 rather than by ignoring it. It also accepts the t
 A fifth difference was added on 2026-08-20, after the first live run of the endpoint returned a
 bare `export_failed` on a Deploy Preview with a correct token and there was no way to tell from
 the response which of four unrelated conditions had occurred. The three older exports answer every
-storage fault with that same bare string, and have never hit it only because their stores have held
-records since 2026-08-13. This endpoint now names the fault class instead:
+storage fault with that same bare string. This endpoint now names the fault class instead:
 
 | Response | Meaning |
 | --- | --- |

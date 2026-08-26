@@ -19,7 +19,7 @@ import { createRequire } from "node:module";
 // listError lets a test choose the exact error the storage layer throws, which
 // is what the fault-class tests below need. failList stays for the plain
 // "something broke" case.
-const blobs = { stores: new Map(), failList: false, listError: null };
+const blobs = { stores: new Map(), failList: false, listError: null, lastGetStoreArg: null };
 function fakeStore(name) {
   if (!blobs.stores.has(name)) blobs.stores.set(name, new Map());
   const m = blobs.stores.get(name);
@@ -42,7 +42,15 @@ function fakeStore(name) {
 const originalLoad = Module._load;
 Module._load = function (request) {
   if (request === "@netlify/blobs") {
-    return { getStore: (arg) => fakeStore(typeof arg === "string" ? arg : arg.name) };
+    return {
+      getStore: (arg) => {
+        // Record the call shape. A string is the injected-context route, an
+        // object carrying siteID and token is the manual one, and which of the
+        // two the helper picks is the whole point of the change it guards.
+        blobs.lastGetStoreArg = arg;
+        return fakeStore(typeof arg === "string" ? arg : arg.name);
+      }
+    };
   }
   return originalLoad.apply(this, arguments);
 };
@@ -107,6 +115,10 @@ function reset({ token = TOKEN, seedRecords = null } = {}) {
   // as blobs_not_configured and the other fault classes would never be reached.
   process.env.BLOBS_SITE_ID = "test-site-id";
   process.env.BLOBS_TOKEN = "test-blobs-token";
+  // No injected context by default, so the default route is manual, which is
+  // what production and the deploy previews have been using.
+  delete process.env.NETLIFY_BLOBS_CONTEXT;
+  blobs.lastGetStoreArg = null;
   // null is the sentinel for "the server has no token configured". undefined
   // would hit the default parameter above and silently set the real token,
   // which is exactly the mistake this comment exists to prevent repeating.
@@ -556,6 +568,51 @@ test("the export token is redacted from an upstream string too", async () => {
   blobs.listError = blobsApiError(400, { detail: "saw " + TOKEN + " in the request" });
   const res = await call({ token: TOKEN });
   assert.ok(!res.body.includes(TOKEN));
+});
+
+/* ── Which route the call took ─────────────────────────────────────────── */
+
+test("a failure reports the manual route when no context is injected", async () => {
+  reset();
+  blobs.failList = true;
+  assert.equal(JSON.parse((await call({ token: TOKEN })).body).mode, "manual");
+});
+
+test("a failure reports the injected route when a context is present", async () => {
+  reset();
+  process.env.NETLIFY_BLOBS_CONTEXT = "eyJzaXRlSUQiOiJ4In0=";
+  blobs.failList = true;
+  assert.equal(JSON.parse((await call({ token: TOKEN })).body).mode, "auto");
+});
+
+test("a failure reports neither route when nothing is configured", async () => {
+  reset();
+  delete process.env.BLOBS_SITE_ID;
+  delete process.env.BLOBS_TOKEN;
+  blobs.failList = true;
+  const body = JSON.parse((await call({ token: TOKEN })).body);
+  assert.equal(body.mode, "unconfigured");
+  assert.equal(body.reason, "blobs_not_configured");
+});
+
+test("an injected context is used in preference to the manual credentials", async () => {
+  reset();
+  process.env.NETLIFY_BLOBS_CONTEXT = "eyJzaXRlSUQiOiJ4In0=";
+  await call({ token: TOKEN });
+  // The string form is the injected route. Reaching for it while BLOBS_SITE_ID
+  // and BLOBS_TOKEN are both set is exactly the reversal being made: the
+  // manual API request is the one being refused site-wide.
+  assert.equal(blobs.lastGetStoreArg, "career-decisions-leads");
+});
+
+test("the manual credentials are still used when no context is injected", async () => {
+  reset();
+  await call({ token: TOKEN });
+  assert.deepEqual(blobs.lastGetStoreArg, {
+    name: "career-decisions-leads",
+    siteID: "test-site-id",
+    token: "test-blobs-token"
+  });
 });
 
 test("the failure body names the store so the fault is attributable", async () => {

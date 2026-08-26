@@ -40,7 +40,7 @@
 // Node 18+. See docs/forms-audit.md section 10 and docs/data-inventory.md.
 
 const crypto = require("crypto");
-const { blobStore, blobsConfigured } = require("../lib/blobs");
+const { blobStore, blobsConfigured, blobsMode } = require("../lib/blobs");
 
 const STORE = "career-decisions-leads";
 
@@ -290,6 +290,10 @@ exports.handler = async (event) => {
           reason: code,
           detail: blobsFailureDetail(e),
           store: STORE,
+          // Which of the two routes the call took. The injected context and the
+          // manual API credentials fail for unrelated reasons, and nothing in
+          // the error itself says which one was in use.
+          mode: blobsMode(),
           blobs_manual_config: blobsConfigured()
         })
       };
