@@ -78,7 +78,7 @@ def question_header(sl, num, head, sub=None, on_navy=True):
     block(sl, 136, 342, 1600, [(head, dict(size=62, bold=True, color=c_head,
                                            spacing=1.12))])
     if sub:
-        block(sl, 136, 560, 1620, [(sub, dict(size=44, font=BODY,
+        block(sl, 136, 556, 1660, [(sub, dict(size=52, font=BODY,
                                               color=CREAM if on_navy else NAVY_DIM,
                                               spacing=1.3))])
 
@@ -94,13 +94,13 @@ def slide_01(sl, step=1):
     ])
     if step >= 2:
         hairline(sl, 160, 690, 300, color=GOLD, h=4)
-        block(sl, 160, 754, 700, [("INTERNAL MOVE",
-                                   dict(size=36, bold=True, color=CREAM,
+        block(sl, 160, 752, 760, [("INTERNAL MOVE",
+                                   dict(size=50, bold=True, color=CREAM,
                                         tracking=2.6))])
-        not_equal(sl, 640, 768)
-        block(sl, 716, 754, 900, [("AUTOMATIC GROWTH.",
-                                   dict(size=36, bold=True, color=CREAM,
-                                        tracking=2.6))])
+        not_equal(sl, 706, 764, size=44, bar=7)
+        block(sl, 800, 752, 1000, [("AUTOMATIC GROWTH.",
+                                    dict(size=50, bold=True, color=CREAM,
+                                         tracking=2.6))])
     notes(sl, """Timing: approximately 0:25.
 
 Begin full screen on Temidayo. This is the first teaching visual and it lands
@@ -189,22 +189,22 @@ judgment.""")
 # ------------------------------------------------------------------ slide 6
 def slide_06(sl, step=1):
     bg(sl, CREAM)
-    x1, x2, col_w = 190, 1075, 660
-    block(sl, x1, 400, col_w, [("MORE TASKS", dict(size=54, bold=True,
-                                                   color=NAVY, spacing=1.05))])
+    x1, x2 = 110, 985
+    block(sl, x1, 400, 790, [("MORE TASKS", dict(size=54, bold=True,
+                                                 color=NAVY, spacing=1.05))])
     hairline(sl, x1, 490, 170, color=RULE_CREAM, h=4)
-    block(sl, x1, 542, col_w, [("Volume • Coordination • Absorption",
-                                dict(size=38, font=BODY, color=NAVY_DIM,
-                                     spacing=1.34))])
+    block(sl, x1, 542, 800, [("Volume • Coordination • Absorption",
+                              dict(size=44, font=BODY, color=NAVY_DIM,
+                                   spacing=1.34))])
     if step >= 2:
-        rect(sl, 985, 316, 800, 404, fill=NAVY)
-        block(sl, x2, 400, col_w, [("MORE JUDGMENT",
-                                    dict(size=54, bold=True, color=CREAM,
-                                         spacing=1.05))])
+        rect(sl, 930, 316, 960, 404, fill=NAVY)
+        block(sl, x2, 400, 870, [("MORE JUDGMENT",
+                                  dict(size=54, bold=True, color=CREAM,
+                                       spacing=1.05))])
         hairline(sl, x2, 490, 170, color=GOLD, h=4)
-        block(sl, x2, 542, col_w, [("Interpretation • Tradeoffs • Consequence",
-                                    dict(size=38, font=BODY, color=CREAM,
-                                         spacing=1.34))])
+        block(sl, x2, 542, 870, [("Interpretation • Tradeoffs • Consequence",
+                                  dict(size=44, font=BODY, color=CREAM,
+                                       spacing=1.34))])
     notes(sl, """Timing: approximately 5:05.
 
 Show MORE TASKS first, on its own, while the point about volume is made.
@@ -240,8 +240,8 @@ def slide_08(sl, step=1):
         if i + 1 <= step:
             block(sl, 160, y, 500, [(head, dict(size=52, bold=True, color=NAVY,
                                                 spacing=1.05))])
-            block(sl, 680, y + 12, 1080, [(sub, dict(size=42, font=BODY,
-                                                     color=NAVY_DIM,
+            block(sl, 680, y + 10, 1090, [(sub, dict(size=48, font=BODY,
+                                                     color=BLUE,
                                                      spacing=1.3))])
             if i < 2:
                 hairline(sl, 160, y + 118, 1600, color=RULE_CREAM, h=2)
@@ -320,7 +320,7 @@ def slide_11(sl, step=1):
     hairline(sl, 160, 566, 300, color=GOLD, h=5)
     block(sl, 160, 622, 1560, [
         ("A free next step for an active stay,\ninternal-move or leave decision",
-         dict(size=42, font=BODY, color=CREAM, spacing=1.3)),
+         dict(size=48, font=BODY, color=CREAM, spacing=1.3)),
     ])
     block(sl, 160, 800, 1560, [
         ("temidayoafonja.com/career-decisions",
@@ -346,7 +346,7 @@ def slide_12(sl, step=1):
     hairline(sl, 160, 634, 240, color=GOLD, h=4)
     block(sl, 160, 686, 940, [
         ("Playlist: Career Portability: Career Pivots,\nInternal Moves & Growth",
-         dict(size=38, bold=True, color=PLAYLIST, spacing=1.32)),
+         dict(size=44, bold=True, color=PLAYLIST, spacing=1.32)),
     ])
     notes(sl, """Timing: final 15 to 20 seconds.
 
