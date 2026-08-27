@@ -75,8 +75,9 @@ CHECKS RUN AFTER THE CHANGES
 All 12 main slides re-rendered and inspected ........... PASS
 All 25 reveal frames rebuilt and inspected in order .... PASS
 Reveal states match the corrected main slides .......... PASS
-  Slide 11 of the main deck and frame 25 of the reveal
-  deck carry byte-identical text.
+  Slide 11 of the main deck and frame 24 of the reveal
+  deck carry byte-identical text. Frame 25 corresponds to
+  main Slide 12.
 Overflow check, both decks, all 37 slides .............. PASS  zero shapes
                                                               outside canvas
 Clipping check ......................................... PASS  no text
