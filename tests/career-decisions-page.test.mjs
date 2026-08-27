@@ -81,7 +81,7 @@ async function open(t, { query = "", respond = { status: 200, json: { ok: true, 
      never let its timer fire. */
   if (now !== null) await page.clock.install({ time: now });
 
-  await page.route("**/.netlify/functions/career-decisions-subscribe", async (route) => {
+  await page.route("**/api/career-decisions-subscribe", async (route) => {
     requests.push(JSON.parse(route.request().postData() || "{}"));
     if (respond === "abort") return route.abort("failed");
     await route.fulfill({
@@ -877,4 +877,64 @@ test("the revealed result is reachable and readable at 320px", async (t) => {
   const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
   assert.ok(overflow <= 0, `document overflows by ${overflow}px after the reveal`);
   assert.equal(await page.locator("#cdStep a").isVisible(), true);
+});
+
+/* ── Rate limiting ─────────────────────────────────────────────────────── */
+//
+// The submission function's own limiter is built on Netlify Blobs and is
+// fail-open, so while Blobs is broken the form has no working limit. These
+// tests pin the edge limit that does not depend on Blobs. They read the source
+// rather than the rendered page, because what matters is the declaration
+// Netlify reads at deploy time.
+
+test("the form posts to the rate limited path and never to the raw function", async () => {
+  const page = await readFile(join(ROOT, "career-decisions.html"), "utf8");
+  assert.match(page, /fetch\("\/api\/career-decisions-subscribe"/);
+  assert.ok(
+    !page.includes("/.netlify/functions/career-decisions-subscribe"),
+    "the raw function path is not rate limited, so the page must not use it"
+  );
+});
+
+test("netlify.toml rewrites that path to the submission function", async () => {
+  const toml = await readFile(join(ROOT, "netlify.toml"), "utf8");
+  const rule = /\[\[redirects\]\]\s*\n\s*from = "\/api\/career-decisions-subscribe"\s*\n\s*to = "\/\.netlify\/functions\/career-decisions-subscribe"\s*\n\s*status = 200/;
+  assert.match(toml, rule);
+});
+
+test("the edge function declares a per-IP limit on that exact path", async () => {
+  const edge = await readFile(
+    join(ROOT, "netlify/edge-functions/career-decisions-rate-limit.js"), "utf8"
+  );
+  const mod = await import(
+    "data:text/javascript;base64," + Buffer.from(edge).toString("base64")
+  );
+  const { config } = mod;
+
+  assert.equal(config.path, "/api/career-decisions-subscribe",
+    "the limit must sit on the path the page actually posts to");
+  assert.deepEqual(config.rateLimit.aggregateBy, ["ip", "domain"],
+    "per address, or one abuser exhausts everyone's quota");
+  assert.equal(config.rateLimit.action, "rate_limit");
+
+  // Pinned so the numbers cannot drift without someone deciding to change them.
+  assert.equal(config.rateLimit.windowLimit, 5);
+  assert.equal(config.rateLimit.windowSize, 180);
+
+  // Netlify caps the window at 180 seconds. A larger value is silently
+  // unusable, which is the failure mode worth a test.
+  assert.ok(config.rateLimit.windowSize >= 1 && config.rateLimit.windowSize <= 180,
+    "windowSize must be within Netlify's 1 to 180 second range");
+});
+
+test("the edge function passes the request through rather than answering it", async () => {
+  const edge = await readFile(
+    join(ROOT, "netlify/edge-functions/career-decisions-rate-limit.js"), "utf8"
+  );
+  const mod = await import(
+    "data:text/javascript;base64," + Buffer.from(edge).toString("base64")
+  );
+  // Returning undefined is what continues the request chain to the function.
+  // Returning a Response here would answer every submission at the edge.
+  assert.equal(await mod.default(), undefined);
 });

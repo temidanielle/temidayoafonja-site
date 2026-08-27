@@ -147,6 +147,14 @@ Four stores.
 
 The two `career-decisions` stores are subject to the same correction as the four above: without
 `BLOBS_SITE_ID` and `BLOBS_TOKEN` set in Netlify, neither is written and the rate limit is off.
+
+> **Status at launch, 2026-08-27.** Both variables are set and Blobs still fails site-wide with a
+> 400 from the Blobs API, so **neither `career-decisions-leads` nor `career-decisions-rate` is
+> written**. No IP hash is stored by this form, and no lead record is stored by it. Abuse protection
+> does not depend on that: `netlify/edge-functions/career-decisions-rate-limit.js` enforces five
+> submissions per 180 seconds per IP at the edge, and stores nothing at all, so it adds no personal
+> data to this inventory. Netlify holds the request counts, not this site. See
+> docs/forms-audit.md section 10.
 The function logs both conditions explicitly rather than failing silently, and it reports
 `durable_record: false` in its response, so the absence is visible rather than assumed.
 

@@ -698,7 +698,7 @@ document.addEventListener("DOMContentLoaded", function () {
       attribution: ATTRIBUTION
     };
 
-    fetch("/.netlify/functions/career-decisions-subscribe", {
+    fetch("/api/career-decisions-subscribe", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload)

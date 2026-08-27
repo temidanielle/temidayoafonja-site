@@ -198,7 +198,8 @@ than wired up, because the operative consent is the one on the screen the visito
      Kit confirms**, so
      the store can never hold a lead that is not also a subscriber. Best effort: a storage
      failure is logged and reported in the response as `durable_record: false`, and does not
-     turn a real subscription into an error the visitor sees
+     turn a real subscription into an error the visitor sees. **At launch this is expected to
+     read `false` on every submission.** See the launch limitation below
 - **Consent** — **Two purposes, two choices, recorded separately.** This is the construction the
   rest of the site should move to.
   - *Delivery* ("Send me the Career Decision Evidence Check by email.") is required and gates
@@ -286,6 +287,52 @@ variables are present. It never carries the token, an email address or any recor
 is only reachable by a caller who has already presented the token.
 
 These five differences are confined to that file; the three older exports are unchanged.
+
+### Accepted limitation at launch: no durable first-party record
+
+Netlify Blobs has been failing site-wide since 2026-08-20. Every read and write returns HTTP 400
+from the Blobs API, on production and on deploy previews, on stores that demonstrably exist. The
+credential is accepted, the project ID is a well formed UUID, and no Blobs context is injected into
+this site's functions, so the manual API route is the only one available and it is the one being
+refused. A Netlify support ticket is open. **It is not a release gate**, by the site owner's
+decision on 2026-08-27.
+
+What this means for the Career Decision Evidence Check at launch:
+
+- The Kit subscription, the delivery email, the two consent records in Kit's custom fields and the
+  attribution fields **all work**. Nothing a person asked for is affected, and consent is still
+  recorded, in Kit.
+- The **durable first-party copy is not written**. `durable_record` will read `false` on every
+  submission and `career-decisions-leads` will not exist. This is the pre-existing site-wide fault,
+  not a defect in this form.
+- Two production capture endpoints have been in exactly this state for longer: `audit-research` and
+  `ai-readiness-leads` have never been created, so the Diagnostic and AI Capability Readiness forms
+  have never durably recorded a submission either. That is the same incident.
+- Nothing is lost silently. The failure is reported in the response, logged, and the export endpoint
+  names the fault class, so the gap is visible rather than assumed.
+- When Blobs is repaired, records begin being written with no code change. Submissions taken before
+  that point are not recoverable into the store, and Kit remains the record for them.
+
+### Rate limiting does not depend on Blobs
+
+Added 2026-08-27, for the same incident. The submission function's own limiter, ten per hour per
+salted IP hash, is built on Blobs and is deliberately fail-open, so while Blobs is broken **the form
+has no working limit from that limiter at all**. That is not an acceptable state to launch in.
+
+`netlify/edge-functions/career-decisions-rate-limit.js` therefore declares a Netlify-native limit,
+enforced at the edge before any function runs and depending on nothing this site configures: **five
+submissions per 180 seconds, aggregated by IP and domain, refused with 429.** Netlify caps the
+window at 180 seconds, so the hour-long ceiling the Blobs limiter expresses cannot be reproduced
+here. The two are complementary and both are kept: this one stops bursts now, and the Blobs limiter
+resumes enforcing the sustained hourly ceiling when storage is repaired.
+
+Because Netlify reserves the `/.netlify/` prefix for its own routing, an edge function cannot be
+attached there. The page therefore posts to `/api/career-decisions-subscribe`, which `netlify.toml`
+rewrites to the function with status 200, and the edge limit sits on that path. **The raw
+`/.netlify/functions/career-decisions-subscribe` path remains reachable and is not rate limited**,
+as is true of every function on this site. The page no longer references it. Closing that would mean
+either a shared secret injected at the edge or a path check inside the function, and neither was
+worth adding without first confirming the mechanism against a real deploy.
 
 **What it deliberately does not do.** It does not touch the existing `xyegkbaq` priority-list
 records. Those were collected with no opt-in, so moving them into Kit is a consent question and

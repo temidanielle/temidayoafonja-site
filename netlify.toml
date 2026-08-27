@@ -96,6 +96,21 @@
   status = 301
   force = true
 
+# The Career Decisions submission endpoint, under a clean path.
+#
+# Netlify reserves the /.netlify/ prefix for its own routing, so an edge
+# function cannot be attached there. The submission therefore posts to
+# /api/career-decisions-subscribe, which netlify/edge-functions/
+# career-decisions-rate-limit.js rate limits per IP before any function runs.
+#
+# The raw /.netlify/functions/career-decisions-subscribe path still works, as it
+# does for every function on this site, and is not rate limited. The page no
+# longer references it. See docs/forms-audit.md section 10.
+[[redirects]]
+  from = "/api/career-decisions-subscribe"
+  to = "/.netlify/functions/career-decisions-subscribe"
+  status = 200
+
 # dashboard.html is an internal working view. It reads only the operator's own
 # browser localStorage and contains no credentials, endpoints, or server calls,
 # so nothing was ever exposed by it being reachable. It is nonetheless not a
