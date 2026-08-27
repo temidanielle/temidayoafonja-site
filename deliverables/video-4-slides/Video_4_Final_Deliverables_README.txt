@@ -7,7 +7,10 @@ THE NINE FILES IN THIS PACKAGE
 ==============================================================
 
 1. Video_4_Production_Package_Career_Change.docx
-   The approved source production package, included unchanged.
+   The approved source production package, aligned to the final approved
+   Video 5 watch-next title. Five occurrences of the earlier working title
+   were replaced with "Should I Make an Internal Move? 3 Questions to
+   Decide". No other change was made to that document.
 
 2. Video_4_Recording_Script_Clean.txt
    Spoken words only. 44 paragraphs, 1,235 words. No headings,
@@ -140,10 +143,9 @@ photography, B-roll, decorative imagery, animation, gradients or
 creator-style effects were added.
 
 ==============================================================
-ONE ITEM STILL OPEN, OUTSIDE THIS PACKAGE
+KEEP THE PROOF URL — VERIFIED
 ==============================================================
 
-temidayoafonja.com/keep-the-proof does not yet resolve. There is no
-page, no redirect and no sitemap entry for that route. It appears on
-Slide 10 and in the script. It needs to exist before publication. This
-is a website change and is outside the scope of these files.
+https://temidayoafonja.com/keep-the-proof is live and is the approved CTA
+destination used on Slide 10 and in the script. No website action remains
+open for this package.
