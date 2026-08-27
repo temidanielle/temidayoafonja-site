@@ -119,14 +119,14 @@
       "price_change_note": "Was $500 with a 12-participant cap. Changed to a free, open-registration flagship by operator decision, August 13 2026.",
       "participant_cap": null,
       "participant_cap_display": "Open registration",
-      "duration": "90 minutes",
-      "duration_detail": "75-minute recorded teaching and assessment core, then a 15-minute live-only question and answer",
+      "duration": "60 minutes",
+      "duration_detail": "50-minute recorded guided assessment, then a 10-minute private question and answer",
       "session": {
         "date": "2026-09-16",
         "date_display": "Wednesday, September 16, 2026",
         "start_time": "18:00",
-        "end_time": "19:30",
-        "time_display": "6:00 to 7:30 PM CT",
+        "end_time": "19:00",
+        "time_display": "6:00 to 7:00 PM CT",
         "timezone": "America/Chicago"
       },
       "minimum_age": 18,
@@ -141,7 +141,7 @@
       "format": "guided self-read",
       "format_note": "Called a guided self-read, not a live assessment, from August 14 2026. The session guides a room through the instrument; it is not personalized analysis of one participant.",
       "includes": [
-        "90-minute guided self-read",
+        "60-minute guided session",
         "Twelve-statement Capability Position Read, completed twice",
         "Evidence-led second reading",
         "Provisional state or boundary reading",
@@ -152,9 +152,10 @@
       "excludes": ["Written Next-Move Note"],
       "excludes_note": "The written Next-Move Note moved to the paid Private Capability Position Read on August 14 2026 and must not be promised for the free session. Q&A is offered as time allows rather than guaranteed.",
       "registration_url": {
-        "published": false,
-        "intended": "https://maven.com/temidayo-afonja/decide-whether-to-stay-or-leave-your-job",
-        "note": "Maven registration is not open yet, so this URL is recorded but not linked anywhere. The homepage CTA reads Register Free and points at /for-professionals, which carries the notify form. Swap both to the direct Maven link when registration opens."
+        "published": true,
+        "url": "https://maven.com/p/8b3c40",
+        "appears_on": ["for-professionals.html", "diagnostic.html"],
+        "note": "Registration is open. The canonical short URL is linked in three places: the September 16 card and the register section on for-professionals.html, and the results CTA on diagnostic.html. Recorded as unpublished until August 21 2026. Two earlier forms are superseded and must not be reused: the intended URL maven.com/temidayo-afonja/decide-whether-to-stay-or-leave-your-job, which was never linked on any page, and the extended slug maven.com/p/8b3c40/stay-or-leave-your-job-live-career-growth-assessment."
       }
     },
 

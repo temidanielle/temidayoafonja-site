@@ -46,7 +46,7 @@
 }
 .lean-page { position: relative; z-index: 1; background: var(--cream); color: var(--ink); font-family: Arial, Helvetica, sans-serif; line-height: 1.56; padding-top: 96px; }
 .lean-page h1, .lean-page h2, .lean-page h3, .lean-page h4 { font-family: Georgia, 'Times New Roman', serif; font-weight: 500; letter-spacing: -.026em; color: var(--navy); margin: 0; }
-.lean-page p { margin: 0; color: var(--ink); font-size: 15px; line-height: 1.56; }
+.lean-page p { margin: 0; color: var(--ink); font-size: 18px; line-height: 1.6; }
 .lean-page a { color: inherit; }
 .lean-wrap { width: min(1120px, calc(100% - 48px)); margin: 0 auto; }
 .lean-wrap.narrow { width: min(860px, calc(100% - 48px)); }
@@ -62,14 +62,14 @@
 .eb-section:first-of-type { border-top: 0; }
 .eb-head { max-width: 780px; margin-bottom: 34px; }
 .eb-head h2 { font-size: clamp(26px, 3.2vw, 38px); line-height: 1.1; margin-bottom: 14px; }
-.eb-section .eb-head p { font-size: 16px; color: var(--muted); }
+.eb-section .eb-head p { font-size: 18px; color: var(--muted); }
 
 /* Hero: navy */
 .eb-hero { background: var(--navy); padding: 74px 0 70px; }
 .eb-hero .lean-eyebrow { color: var(--gold); }
 .eb-hero h1 { color: #fff; font-size: clamp(34px, 4.8vw, 58px); line-height: 1.06; max-width: 900px; margin-bottom: 18px; }
 .eb-hero .eb-descriptor { font-family: Georgia, serif; font-size: clamp(18px, 2vw, 22px); color: rgba(255,255,255,.82); max-width: 760px; margin-bottom: 22px !important; }
-.eb-hero .eb-body { font-size: 17px; line-height: 1.62; color: rgba(255,255,255,.72); max-width: 780px; margin-bottom: 30px !important; }
+.eb-hero .eb-body { font-size: 18px; line-height: 1.62; color: rgba(255,255,255,.72); max-width: 780px; margin-bottom: 30px !important; }
 .eb-hero .eb-actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
 .eb-hero .eb-support { font-size: 13.5px; color: var(--gold); margin-top: 18px !important; letter-spacing: .02em; }
 
@@ -77,7 +77,7 @@
 .eb-triggers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .eb-trigger { background: #fff; border: 1px solid var(--line); border-top: 3px solid var(--gold); border-radius: 12px; padding: 30px 28px; }
 .eb-trigger h3 { font-size: 21px; line-height: 1.2; margin-bottom: 12px; }
-.eb-section .eb-trigger p { font-size: 14.5px; line-height: 1.62; color: var(--muted); }
+.eb-section .eb-trigger p { font-size: 16px; line-height: 1.6; color: var(--muted); }
 
 /* The decision question */
 .eb-question { background: var(--navy); border-left: 5px solid var(--gold); border-radius: 12px; padding: 46px 52px; }
@@ -94,12 +94,12 @@
 /* Plain evidence and outcome lists */
 .eb-list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 6px; }
 .eb-list.one { grid-template-columns: 1fr; }
-.eb-list div { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 15px 18px; font-size: 14.5px; color: var(--ink); }
+.eb-list div { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 15px 18px; font-size: 18px; line-height: 1.5; color: var(--ink); }
 .eb-section .eb-note { margin-top: 20px !important; font-size: 13.5px; line-height: 1.6; color: var(--muted); background: var(--soft-navy); border-radius: 8px; padding: 16px 20px; }
 
 /* What this is not, and fit */
 .eb-not { display: grid; gap: 10px; }
-.eb-not div { font-size: 15px; color: var(--muted); padding-left: 22px; position: relative; }
+.eb-not div { font-size: 16px; color: var(--muted); padding-left: 22px; position: relative; }
 .eb-not div::before { content: ""; position: absolute; left: 0; top: 10px; width: 10px; height: 1px; background: var(--muted); }
 .eb-fit { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .eb-fit-card { background: #fff; border: 1px solid var(--line); border-radius: 12px; padding: 30px 28px; }
@@ -109,13 +109,13 @@
 .eb-fit-card.good .eb-fit-label { color: #2D5631; }
 .eb-fit-card.not .eb-fit-label { color: var(--muted); }
 .eb-fit-card ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 11px; }
-.eb-fit-card li { font-size: 14.5px; line-height: 1.55; color: var(--ink); padding-left: 20px; position: relative; }
+.eb-fit-card li { font-size: 16px; line-height: 1.55; color: var(--ink); padding-left: 20px; position: relative; }
 .eb-fit-card li::before { content: ""; position: absolute; left: 0; top: 9px; width: 9px; height: 1px; background: var(--line); }
 
 /* Inquiry */
 .eb-inquiry { background: var(--navy); padding: 74px 0; scroll-margin-top: 104px; }
 .eb-inquiry h2 { color: #fff; font-size: clamp(28px, 3.4vw, 40px); line-height: 1.1; margin-bottom: 14px; }
-.eb-inquiry .eb-inq-lead { color: rgba(255,255,255,.72); font-size: 16px; max-width: 640px; margin-bottom: 30px !important; }
+.eb-inquiry .eb-inq-lead { color: rgba(255,255,255,.72); font-size: 18px; max-width: 640px; margin-bottom: 30px !important; }
 .eb-form { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; max-width: 820px; }
 .eb-field { display: grid; gap: 7px; }
 .eb-field.wide { grid-column: 1 / -1; }
@@ -263,8 +263,7 @@ textarea.eb-input { min-height: 116px; resize: vertical; }
       <div>Role and workflow information</div>
       <div>Operating-model materials</div>
       <div>Succession or transition plans</div>
-      <div>Selected metrics</div>
-      <div>Existing listening or workforce evidence</div>
+      <div>Selected metrics and existing listening or workforce evidence</div>
       <div>Sponsor and critical-role interviews</div>
     </div>
     <p class="eb-note">The initial inquiry form should not contain sensitive employee information. Evidence handling and any required confidentiality or privacy review are discussed during the intake.</p>
@@ -283,10 +282,8 @@ textarea.eb-input { min-height: 116px; resize: vertical; }
       <div>The capability the proposed change is likely to create</div>
       <div>Capability that may be removed, concentrated, or made inaccessible</div>
       <div>Dependencies leadership may currently underestimate</div>
-      <div>Operational, financial, AI, transformation, and enterprise-risk implications</div>
-      <div>Decisions that should be protected</div>
-      <div>Assumptions that should be tested</div>
-      <div>Elements that should be redesigned, sequenced, or monitored</div>
+      <div>Operational, financial, AI, transformation, and enterprise-risk implications, and what to redesign or sequence</div>
+      <div>Decisions and assumptions that should be tested before execution</div>
       <div>The immediate next decision leadership should make</div>
     </div>
   </div>
@@ -316,7 +313,7 @@ textarea.eb-input { min-height: 116px; resize: vertical; }
   <div class="lean-wrap">
     <div class="eb-head">
       <span class="lean-eyebrow">Fit</span>
-      <h2>When the Briefing is the right instrument.</h2>
+      <h2>When the Brief is the right instrument.</h2>
     </div>
     <div class="eb-fit">
       <div class="eb-fit-card good">

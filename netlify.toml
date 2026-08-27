@@ -80,6 +80,13 @@
   to = "/fieldkit.html"
   status = 200
 
+# Published product page. Clean-URL rewrite so /keep-the-proof serves the file
+# while search authority consolidates on the canonical /keep-the-proof.
+[[redirects]]
+  from = "/keep-the-proof"
+  to = "/keep-the-proof.html"
+  status = 200
+
 # The Career Decision Evidence Check. /career-decisions is the permanent URL and
 # is the only form that should ever accumulate authority, so the .html form is
 # sent to it, exactly as /organizational-diagnostic.html is above. force = true
