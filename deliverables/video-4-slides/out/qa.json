@@ -1,0 +1,134 @@
+{
+  "main_slides": 11,
+  "reveal_slides": 26,
+  "reveal_plan": [
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      5,
+      2
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      7,
+      3
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      9,
+      1
+    ],
+    [
+      9,
+      2
+    ],
+    [
+      9,
+      3
+    ],
+    [
+      10,
+      1
+    ],
+    [
+      11,
+      1
+    ]
+  ],
+  "pdf_pages": 11,
+  "pdf_size_in": [
+    13.333,
+    7.5
+  ],
+  "section5_missing_phrases": {},
+  "section5_all_present": true,
+  "no_title_card": true,
+  "reveal_slides_specified": [
+    1,
+    2,
+    4,
+    5,
+    6,
+    7,
+    9
+  ],
+  "reveal_spec_matches": true,
+  "text_shapes": 43,
+  "picture_shapes": 0,
+  "all_elements_on_canvas": true,
+  "slide11_endcard_clear": true,
+  "reveal_positions_stable": true,
+  "reveal_seam_failures": []
+}
