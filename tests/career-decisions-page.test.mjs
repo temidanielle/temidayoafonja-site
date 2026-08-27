@@ -896,45 +896,49 @@ test("the form posts to the rate limited path and never to the raw function", as
   );
 });
 
-test("netlify.toml rewrites that path to the submission function", async () => {
+test("netlify.toml rate limits that path per IP", async () => {
   const toml = await readFile(join(ROOT, "netlify.toml"), "utf8");
-  const rule = /\[\[redirects\]\]\s*\n\s*from = "\/api\/career-decisions-subscribe"\s*\n\s*to = "\/\.netlify\/functions\/career-decisions-subscribe"\s*\n\s*status = 200/;
-  assert.match(toml, rule);
+
+  // The whole rule, from its [[redirects]] header to the next top-level table.
+  const m = /\[\[redirects\]\]\s*\n\s*from = "\/api\/career-decisions-subscribe"[\s\S]*?(?=\n\[\[|\n#[^\n]*\n\[\[|$)/.exec(toml);
+  assert.ok(m, "the submission rule must exist");
+  const rule = m[0];
+
+  assert.match(rule, /to = "\/\.netlify\/functions\/career-decisions-subscribe"/);
+  assert.match(rule, /status = 200/);
+
+  // rate_limit is the key Netlify's redirect parser recognises. Without it the
+  // form has no working limit at all while Blobs is down, and the failure is
+  // silent, which is why it is pinned here.
+  assert.match(rule, /\[redirects\.rate_limit\]/);
+  assert.match(rule, /window_limit = 5/);
+  assert.match(rule, /window_size = 180/);
+  assert.match(rule, /aggregate_by = \["domain", "ip"\]/);
+
+  // Netlify caps the window at 180 seconds. A larger value is not usable.
+  const size = Number(/window_size = (\d+)/.exec(rule)[1]);
+  assert.ok(size >= 1 && size <= 180, "window_size must be within 1 to 180 seconds");
 });
 
-test("the edge function declares a per-IP limit on that exact path", async () => {
-  const edge = await readFile(
-    join(ROOT, "netlify/edge-functions/career-decisions-rate-limit.js"), "utf8"
-  );
-  const mod = await import(
-    "data:text/javascript;base64," + Buffer.from(edge).toString("base64")
-  );
-  const { config } = mod;
+test("the rate limit sub-table is last in its rule", async () => {
+  const toml = await readFile(join(ROOT, "netlify.toml"), "utf8");
+  const rule = /\[\[redirects\]\]\s*\n\s*from = "\/api\/career-decisions-subscribe"[\s\S]*?(?=\n\[\[|$)/.exec(toml)[0];
+  const after = rule.slice(rule.indexOf("[redirects.rate_limit]"));
 
-  assert.equal(config.path, "/api/career-decisions-subscribe",
-    "the limit must sit on the path the page actually posts to");
-  assert.deepEqual(config.rateLimit.aggregateBy, ["ip", "domain"],
-    "per address, or one abuser exhausts everyone's quota");
-  assert.equal(config.rateLimit.action, "rate_limit");
-
-  // Pinned so the numbers cannot drift without someone deciding to change them.
-  assert.equal(config.rateLimit.windowLimit, 5);
-  assert.equal(config.rateLimit.windowSize, 180);
-
-  // Netlify caps the window at 180 seconds. A larger value is silently
-  // unusable, which is the failure mode worth a test.
-  assert.ok(config.rateLimit.windowSize >= 1 && config.rateLimit.windowSize <= 180,
-    "windowSize must be within Netlify's 1 to 180 second range");
+  // In TOML every key after a sub-table header belongs to that sub-table. A
+  // "status" or "force" added below would silently land inside the rate limit
+  // and leave the redirect without it, so nothing but the limit's own keys may
+  // follow.
+  const keys = [...after.matchAll(/^\s*([a-z_]+) = /gm)].map((k) => k[1]);
+  assert.deepEqual(keys.sort(), ["aggregate_by", "window_limit", "window_size"]);
 });
 
-test("the edge function passes the request through rather than answering it", async () => {
-  const edge = await readFile(
-    join(ROOT, "netlify/edge-functions/career-decisions-rate-limit.js"), "utf8"
-  );
-  const mod = await import(
-    "data:text/javascript;base64," + Buffer.from(edge).toString("base64")
-  );
-  // Returning undefined is what continues the request chain to the function.
-  // Returning a Response here would answer every submission at the edge.
-  assert.equal(await mod.default(), undefined);
+test("no edge function is left behind claiming to rate limit this path", async () => {
+  // An edge function carrying a rateLimit config was tried first and was not
+  // enforced: six sequential posts all reached the function. It was removed
+  // rather than left as dead code that reads like protection.
+  const { readdir } = await import("node:fs/promises");
+  let entries = [];
+  try { entries = await readdir(join(ROOT, "netlify/edge-functions")); } catch { /* absent is correct */ }
+  assert.deepEqual(entries, []);
 });

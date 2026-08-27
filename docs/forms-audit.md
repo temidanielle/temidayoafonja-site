@@ -319,20 +319,34 @@ Added 2026-08-27, for the same incident. The submission function's own limiter, 
 salted IP hash, is built on Blobs and is deliberately fail-open, so while Blobs is broken **the form
 has no working limit from that limiter at all**. That is not an acceptable state to launch in.
 
-`netlify/edge-functions/career-decisions-rate-limit.js` therefore declares a Netlify-native limit,
-enforced at the edge before any function runs and depending on nothing this site configures: **five
-submissions per 180 seconds, aggregated by IP and domain, refused with 429.** Netlify caps the
-window at 180 seconds, so the hour-long ceiling the Blobs limiter expresses cannot be reproduced
-here. The two are complementary and both are kept: this one stops bursts now, and the Blobs limiter
-resumes enforcing the sustained hourly ceiling when storage is repaired.
+`netlify.toml` therefore carries a Netlify-native limit on the submission rule, enforced by Netlify
+itself and depending on nothing this site configures: **five submissions per 180 seconds, aggregated
+by domain and IP.** No `action` is declared, so the default applies and an exceeded limit is refused
+with 429 rather than rewritten to a page, which is right for a path only ever reached by the form's
+fetch. Netlify caps the window at 180 seconds, so the hour-long ceiling the Blobs limiter expresses
+cannot be reproduced here. The two are complementary and both are kept: this one stops bursts now,
+and the Blobs limiter resumes enforcing the sustained hourly ceiling when storage is repaired.
 
-Because Netlify reserves the `/.netlify/` prefix for its own routing, an edge function cannot be
-attached there. The page therefore posts to `/api/career-decisions-subscribe`, which `netlify.toml`
-rewrites to the function with status 200, and the edge limit sits on that path. **The raw
-`/.netlify/functions/career-decisions-subscribe` path remains reachable and is not rate limited**,
-as is true of every function on this site. The page no longer references it. Closing that would mean
-either a shared secret injected at the edge or a path check inside the function, and neither was
-worth adding without first confirming the mechanism against a real deploy.
+Because Netlify reserves the `/.netlify/` prefix for its own routing, the page posts to
+`/api/career-decisions-subscribe`, which is rewritten to the function with status 200 and is the
+path the limit sits on. **The raw `/.netlify/functions/career-decisions-subscribe` path remains
+reachable and is not rate limited**, as is true of every function on this site. The page does not
+use it. Closing that would mean either a shared secret injected at the edge or a path check inside
+the function, and neither was worth adding without first confirming the mechanism against a real
+deploy.
+
+**An edge function was tried first and did not work.** On 2026-08-27 the limit was declared as a
+`rateLimit` config on a Netlify edge function bound to that path. Six sequential posts from one
+address all reached the function and returned 400, with no 429, so the rule was not being enforced.
+It was removed rather than left as dead code that reads like protection. The `rate_limit` key used
+now is the one Netlify's own redirect parser recognises, confirmed by reading
+`netlify-redirect-parser` 14.4.0, which carries it through to the backend for validation.
+
+**How to confirm it is live.** Netlify validates rate limit rules at the end of each deploy, in the
+post-processing stage, and prints the details of valid rules in the deploy log under that stage. A
+green deploy alone does not establish that the rule was applied: the edge attempt deployed green and
+did nothing. The behavioural check is six sequential posts to `/api/career-decisions-subscribe` from
+one address; the sixth must return 429.
 
 **What it deliberately does not do.** It does not touch the existing `xyegkbaq` priority-list
 records. Those were collected with no opt-in, so moving them into Kit is a consent question and

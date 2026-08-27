@@ -103,20 +103,43 @@
   status = 301
   force = true
 
-# The Career Decisions submission endpoint, under a clean path.
+# The Career Decisions submission endpoint, under a clean path, rate limited.
 #
-# Netlify reserves the /.netlify/ prefix for its own routing, so an edge
-# function cannot be attached there. The submission therefore posts to
-# /api/career-decisions-subscribe, which netlify/edge-functions/
-# career-decisions-rate-limit.js rate limits per IP before any function runs.
+# The function has its own limiter, ten per hour per salted IP hash, but it is
+# built on Netlify Blobs and is deliberately fail-open. Blobs has been failing
+# site-wide since 2026-08-20, so that limiter currently does nothing and the
+# form would otherwise launch with no limit at all.
 #
-# The raw /.netlify/functions/career-decisions-subscribe path still works, as it
-# does for every function on this site, and is not rate limited. The page no
-# longer references it. See docs/forms-audit.md section 10.
+# This one is enforced by Netlify itself and depends on nothing this site
+# configures. rate_limit is the key Netlify's own redirect parser recognises on
+# a redirect rule, confirmed by reading netlify-redirect-parser 14.4.0, which
+# passes it through to the backend for validation at post-processing.
+#
+# An edge function carrying a rateLimit config was tried first, on 2026-08-27,
+# and was not enforced: six sequential posts all reached the function. Netlify
+# reserves the /.netlify/ prefix, so the clean path below is still needed, and
+# the page posts to it.
+#
+# The raw /.netlify/functions/career-decisions-subscribe path remains reachable
+# and unlimited, as it is for every function on this site. The page does not use
+# it. See docs/forms-audit.md section 10.
 [[redirects]]
   from = "/api/career-decisions-subscribe"
   to = "/.netlify/functions/career-decisions-subscribe"
   status = 200
+  # Five submissions per 180 seconds from one address. A real visitor submits
+  # once; five leaves room for a retry after a network error and for two people
+  # behind one office address. No action is declared, so the default applies and
+  # an exceeded limit is refused with 429 rather than rewritten to a page, which
+  # is right for a path only ever reached by the form's fetch.
+  #
+  # This sub-table must stay last in this rule. In TOML every key after it
+  # belongs to it, so a key added below would silently land inside the rate
+  # limit instead of on the redirect.
+  [redirects.rate_limit]
+    window_limit = 5
+    window_size = 180
+    aggregate_by = ["domain", "ip"]
 
 # dashboard.html is an internal working view. It reads only the operator's own
 # browser localStorage and contains no credentials, endpoints, or server calls,
