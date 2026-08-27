@@ -49,6 +49,7 @@ def arrow_down(sl, x, y, length=58, color=GOLD, stem=3, head_w=20, head_h=15):
          fill=color, shape="tri_down")
 DIM_ON_NAVY = RGBColor(0x63, 0x74, 0x8C)
 DIM_ON_CREAM = RGBColor(0xA8, 0xAF, 0xBC)
+PLAYLIST = RGBColor(0x3E, 0x50, 0x6B)
 
 
 def notes(sl, text):
@@ -88,11 +89,11 @@ def slide_01(sl, step=1):
                 arrow_down(sl, 216, y + 10, length=56)
             y += 80
     if step >= len(CHAPTERS):
-        hairline(sl, 200, 862, 300, color=GOLD, h=3)
-        block(sl, 200, 900, 1520, [
+        hairline(sl, 208, 856, 300, color=GOLD, h=4)
+        block(sl, 208, 900, 1560, [
             ("THE TITLES CHANGED. THE CAPABILITY KEPT ACCUMULATING.",
-             dict(size=26, bold=True, color=CREAM_DIM, tracking=3.4)),
-        ])
+             dict(size=32, bold=True, color=CREAM, tracking=3.0)),
+        ], h=56)
     notes(sl, """Timing: approximately 0:35 to 2:35.
 
 Begin full screen on Temidayo. This is the first teaching visual and it
@@ -138,11 +139,11 @@ def slide_03(sl, step=1):
     gold_frame(sl)
     part_header(sl, "1", "NAME THE CHAPTERS — BRIEFLY")
     block(sl, 136, 470, 1560, [("Roles • Functions • Industries",
-                                dict(size=40, font=BODY, color=CREAM_DIM,
+                                dict(size=46, font=BODY, color=CREAM,
                                      spacing=1.3))])
     hairline(sl, 136, 566, 1200, color=DIM_ON_NAVY, h=2)
     block(sl, 136, 614, 1560, [("One sentence, not a defense.",
-                                dict(size=38, font=BODY, color=GOLD,
+                                dict(size=44, bold=True, color=GOLD,
                                      spacing=1.3))])
     notes(sl, """Timing: approximately 2:35 to 3:35.
 
@@ -270,9 +271,9 @@ def slide_08(sl, step=1):
     hairline(sl, 160, 606, 300, color=GOLD, h=4)
     block(sl, 160, 660, 1600, [
         ("Name the constraint, experiment or redirection.",
-         dict(size=40, font=BODY, color=CREAM_DIM, spacing=1.32)),
+         dict(size=46, font=BODY, color=CREAM, spacing=1.32)),
         ("Explain what became clearer.",
-         dict(size=40, font=BODY, color=CREAM_DIM, spacing=1.32,
+         dict(size=46, font=BODY, color=CREAM, spacing=1.32,
               space_before=18)),
     ])
     notes(sl, """Timing: approximately 6:45 to 7:35.
@@ -324,12 +325,13 @@ def slide_10(sl, step=1):
     hairline(sl, 160, 500, 300, color=GOLD, h=5)
     block(sl, 160, 556, 1500, [
         ("A 60-Minute Career Evidence System",
-         dict(size=44, font=BODY, color=CREAM_DIM, spacing=1.3)),
+         dict(size=50, font=BODY, color=CREAM, spacing=1.3)),
     ])
-    block(sl, 160, 660, 1500, [
+    block(sl, 160, 690, 1560, [
         ("temidayoafonja.com/keep-the-proof",
-         dict(size=38, bold=True, color=GOLD, spacing=1.2)),
-    ])
+         dict(size=62, bold=True, color=GOLD, spacing=1.15)),
+    ], h=84)
+    hairline(sl, 160, 800, 1010, color=GOLD, h=5)
     notes(sl, """Timing: approximately 8:38.
 
 Simple CTA card. No competing offer on screen.
@@ -344,16 +346,18 @@ ROUTE CHECK: temidayoafonja.com/keep-the-proof must resolve before publication."
 def slide_11(sl, step=1):
     bg(sl, CREAM)
     eyebrow(sl, 160, 250, "Watch next", color=GOLD, w=900)
-    block(sl, 160, 316, 900, [
-        ("HOW TO KNOW IF\nAN INTERNAL MOVE IS\nTHE RIGHT NEXT STEP",
+    block(sl, 160, 316, 940, [
+        ("Should I Make\nan Internal Move?\n3 Questions to Decide",
          dict(size=62, bold=True, color=NAVY, spacing=1.16)),
     ])
     hairline(sl, 160, 634, 240, color=GOLD, h=4)
-    block(sl, 160, 686, 900, [
+    block(sl, 160, 686, 940, [
         ("Playlist: Career Portability: Career Pivots,\nInternal Moves & Growth",
-         dict(size=33, font=BODY, color=NAVY_DIM, spacing=1.34)),
+         dict(size=38, bold=True, color=PLAYLIST, spacing=1.32)),
     ])
     notes(sl, """Timing: final 15 to 20 seconds.
+
+Watch next: Should I Make an Internal Move? 3 Questions to Decide.
 
 All content is held left of x=1130 so the right side stays clear for YouTube
 end-screen elements.

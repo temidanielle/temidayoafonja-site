@@ -172,7 +172,7 @@ def main():
              "Is there evidence behind each verb?"],
         10: ["KEEP THE PROOF", "A 60-Minute Career Evidence System",
              "temidayoafonja.com/keep-the-proof"],
-        11: ["HOW TO KNOW IF", "AN INTERNAL MOVE IS", "THE RIGHT NEXT STEP",
+        11: ["Should I Make", "an Internal Move?", "3 Questions to Decide",
              "Career Portability: Career Pivots,", "Internal Moves & Growth"],
     }
     missing = {}
@@ -192,6 +192,28 @@ def main():
                              if sh.has_text_frame and sh.text_frame.text.strip())
     rep["picture_shapes"] = sum(1 for sl in prs.slides for sh in sl.shapes
                                 if sh.shape_type == 13)
+
+    # every shape in the real PPTX must sit inside the slide canvas
+    from pptx.util import Emu
+    SW, SH = prs.slide_width, prs.slide_height
+    over = []
+    for deck_name, pth in (("main", main_pptx), ("reveals", rec_pptx)):
+        pp = Presentation(pth)
+        for i, sl in enumerate(pp.slides, start=1):
+            for sh in sl.shapes:
+                if (sh.left < 0 or sh.top < 0
+                        or sh.left + sh.width > pp.slide_width
+                        or sh.top + sh.height > pp.slide_height):
+                    over.append((deck_name, i, sh.shape_type,
+                                 sh.left, sh.top, sh.width, sh.height))
+    rep["shapes_outside_canvas"] = over
+    rep["no_shape_overflow"] = not over
+    rep["old_watch_next_absent"] = not any("RIGHT NEXT STEP" in t for t in vis)
+    rev_vis = [flat("\n".join(sh.text_frame.text for sh in sl.shapes
+                              if sh.has_text_frame and sh.text_frame.text.strip()))
+               for sl in Presentation(rec_pptx).slides]
+    rep["watch_next_in_frame_26"] = "3 Questions to Decide" in rev_vis[25]
+    rep["main_and_reveal_wording_match"] = vis[10] == rev_vis[25]
 
     # geometry from the rendered canvases
     def bounds_ok(cv):

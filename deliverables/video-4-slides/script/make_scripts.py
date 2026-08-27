@@ -29,6 +29,24 @@ DIM = RGBColor(0x5A, 0x6B, 0x82)
 
 HDR = re.compile(r'^\d+:\d\d[–-]\d+:\d\d\s*\|')
 
+# Internal labels that are not spoken content and must not appear in either file.
+INTERNAL_LABELS = {"VISUAL TEACHING SYSTEM"}
+
+# The package's own editor direction for the 1:20 block, corrected. The slide 1
+# marker near the opening is unchanged; this refers to the later reuse.
+DIRECTION_FIX = {
+    "PERSONAL EVIDENCE — CAREER PATH SLIDE BEGINS":
+        "PERSONAL EVIDENCE — FULL-SCREEN TEMIDAYO; REUSE SLIDE 1 BRIEFLY WHEN "
+        "THE CHAPTERS ARE NAMED.",
+}
+
+
+def apply_direction_fix(header):
+    for old, new in DIRECTION_FIX.items():
+        if old in header:
+            return header.replace(old, new)
+    return header
+
 
 def source_blocks():
     z = zipfile.ZipFile(SRC)
@@ -37,7 +55,8 @@ def source_blocks():
     blocks = [t(el) for el in x.find(NS + 'body') if el.tag == NS + 'p']
     i4 = next(i for i, b in enumerate(blocks) if b.strip() == '4. Full recording script')
     i5 = next(i for i, b in enumerate(blocks) if b.strip().startswith('5. Slide deck content'))
-    return [b for b in blocks[i4 + 1:i5] if b.strip()]
+    return [b for b in blocks[i4 + 1:i5]
+            if b.strip() and b.strip() not in INTERNAL_LABELS]
 
 
 # Slide cues. Each is (slide number, slide name, the spoken paragraph the slide
@@ -137,8 +156,8 @@ def build():
             shade(p, "F3F0E8")
             continue
         if HDR.match(b):
-            p = para(b, size=10.5, bold=True, color=GOLD, before=20, after=12,
-                     spacing=1.1, caps=True)
+            p = para(apply_direction_fix(b), size=10.5, bold=True, color=GOLD,
+                     before=20, after=12, spacing=1.1, caps=True)
             shade(p, "F3F0E8")
             continue
         hit = next((c for k, c in cue_by_prefix.items() if b.startswith(k)), None)
@@ -148,10 +167,6 @@ def build():
              spacing=1.55)
         if hit and hit[3] == "after":
             marker(hit[0], hit[1])
-
-    p = para("END", size=11, bold=True, color=DIM, before=22, after=0,
-             spacing=1.1)
-    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
 
     out_docx = os.path.join(HERE, "Video_4_Teleprompter_Script_with_Slide_Markers.docx")
     doc.save(out_docx)

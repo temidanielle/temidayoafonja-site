@@ -180,8 +180,19 @@ def _pptx_rect(sl, el):
     return s
 
 
+def _text_height(el):
+    """Height a text box actually needs, so no box runs past the canvas."""
+    total = 0
+    for sp in el["paras"]:
+        lines = sp["text"].count("\n") + 1
+        total += lines * sp["size"] * sp["spacing"]
+        total += sp["space_before"] + sp["space_after"]
+    return max(int(round(total)) + 8, 24)
+
+
 def _pptx_text(sl, el):
-    h = el["h"] or 200
+    h = el["h"] or _text_height(el)
+    h = min(h, max(24, H - el["y"]))
     tb = sl.shapes.add_textbox(E(el["x"]), E(el["y"]), E(el["w"]), E(h))
     tf = tb.text_frame
     tf.word_wrap = True
@@ -235,6 +246,11 @@ def _pptx_img(sl, el):
     return pic
 
 
+def _is_backdrop(el):
+    return (el["t"] == "rect" and el["fill"] is not None and el["line"] is None
+            and el["x"] <= 0 and el["y"] <= 0 and el["w"] >= W and el["h"] >= H)
+
+
 def render_pptx(canvases, path, titles=None):
     from pptx import Presentation
     prs = Presentation()
@@ -242,6 +258,11 @@ def render_pptx(canvases, path, titles=None):
     for cv in canvases:
         sl = prs.slides.add_slide(prs.slide_layouts[6])
         for el in cv.els:
+            if _is_backdrop(el):
+                fill = sl.background.fill
+                fill.solid()
+                fill.fore_color.rgb = el["fill"]
+                continue
             {"rect": _pptx_rect, "text": _pptx_text, "img": _pptx_img}[el["t"]](sl, el)
         if cv.notes:
             sl.notes_slide.notes_text_frame.text = cv.notes
