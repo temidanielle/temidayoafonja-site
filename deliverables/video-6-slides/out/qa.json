@@ -1,0 +1,133 @@
+{
+  "main_slides": 12,
+  "reveal_slides": 23,
+  "reveal_plan": [
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      8,
+      2
+    ],
+    [
+      8,
+      3
+    ],
+    [
+      9,
+      1
+    ],
+    [
+      9,
+      2
+    ],
+    [
+      10,
+      1
+    ],
+    [
+      10,
+      2
+    ],
+    [
+      10,
+      3
+    ],
+    [
+      11,
+      1
+    ],
+    [
+      12,
+      1
+    ]
+  ],
+  "pdf_pages": 12,
+  "pdf_size_in": [
+    13.333,
+    7.5
+  ],
+  "section5_missing_phrases": {},
+  "section5_all_present": true,
+  "no_title_card": true,
+  "reveal_slides_specified": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    8,
+    9,
+    10
+  ],
+  "reveal_spec_matches": true,
+  "text_shapes": 45,
+  "picture_shapes": 0,
+  "shapes_outside_canvas": [],
+  "no_shape_overflow": true,
+  "cta_name_on_slide_11": true,
+  "cta_url_slides": [
+    11
+  ],
+  "no_competing_offer": true,
+  "watch_next_routes_to_video_7": true,
+  "watch_next_in_last_frame": true,
+  "final_states_match_main": true,
+  "all_elements_on_canvas": true,
+  "slide12_endcard_clear": true,
+  "reveal_positions_stable": true,
+  "reveal_seam_failures": []
+}
