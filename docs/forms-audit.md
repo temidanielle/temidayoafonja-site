@@ -310,8 +310,45 @@ What this means for the Career Decision Evidence Check at launch:
   have never durably recorded a submission either. That is the same incident.
 - Nothing is lost silently. The failure is reported in the response, logged, and the export endpoint
   names the fault class, so the gap is visible rather than assumed.
-- When Blobs is repaired, records begin being written with no code change. Submissions taken before
-  that point are not recoverable into the store, and Kit remains the record for them.
+- **Repair requires a code change, not only a fix on Netlify's side.** This was previously recorded
+  as resuming with no code change, which was wrong. Netlify support case #1099659 states the Blobs
+  context is injected when the function runs, and that the remedy is zero-configuration
+  `getStore("name")` rather than the manual `{ name, siteID, token }` form. `netlify/lib/blobs.js`
+  prefers manual configuration whenever `BLOBS_SITE_ID` and `BLOBS_TOKEN` are both set, which they
+  are, so zero-configuration is never reached. Changing that preference touches a file shared by all
+  nine Blobs functions and is tracked as a separate incident, not as part of this work.
+- Submissions taken before that repair are not recoverable into the store. There is no backfill, and
+  Kit remains the record for them.
+
+### On Netlify's proposed cause, and why it was not acted on
+
+Netlify support case #1099659 proposed that esbuild replaces the runtime environment reference with
+`undefined` during bundling, and described this as likely rather than established. **It was checked
+before any shared code was touched, and the mechanism does not hold.** Three findings, 2026-08-29:
+
+1. **The client never uses a statically replaceable reference.** `getEnvironmentContext` in
+   `@netlify/blobs` 8.2.0 reads `globalThis.netlifyBlobsContext` or calls `getEnvironment().get(...)`,
+   and `getEnvironment` destructures `process` off `globalThis` and reads `process?.env[key]`, a
+   dynamic computed access. No esbuild `define` can match that shape.
+2. **Netlify's own bundler passes no `define`.** The `build()` call in `@netlify/zip-it-and-ship-it`,
+   in `runtimes/node/bundlers/esbuild/bundler.js`, sets `bundle`, `entryPoints`, `external`,
+   `format`, `platform`, `plugins`, `target` and related options. There is no `define` key, so no
+   compile-time environment substitution occurs.
+3. **The compiled bundle preserves everything.** Bundling this repository's
+   `career-decisions-subscribe.js` with esbuild leaves `NETLIFY_BLOBS_CONTEXT` intact as a string
+   literal passed to a runtime lookup, leaves `globalThis.netlifyBlobsContext` intact, and leaves all
+   nine `process.env.*` reads unreplaced.
+
+A fourth point comes from live behaviour rather than inspection: if `process.env` reads were being
+replaced, `BLOBS_SITE_ID` and `BLOBS_TOKEN` would be `undefined` too. The export endpoint reported
+`blobs_manual_config: true` in production, so those reads demonstrably work at runtime.
+
+**What is established** is narrower, and is in this repository's own code: `blobStore()` selects the
+manual form whenever both variables are set, so zero-configuration is never attempted. That is a real
+and sufficient explanation for which mode is used. It is **not** established that zero-configuration
+would succeed: a probe on 2026-08-26 found no Blobs context present at runtime, which would make that
+call throw instead. That question is open and must be answered by observation before the shared
+helper is changed.
 
 ### Rate limiting does not depend on Blobs
 
@@ -326,7 +363,8 @@ to a page, which is right for a path only ever reached by the form's fetch. **As
 is accepted by Netlify but has not been observed to fire.** See the status below before relying on
 it. Netlify caps the window at 180 seconds, so the hour-long ceiling the Blobs limiter expresses
 cannot be reproduced here. The two are complementary and both are kept: this one stops bursts now,
-and the Blobs limiter resumes enforcing the sustained hourly ceiling when storage is repaired.
+and the Blobs limiter enforces the sustained hourly ceiling again once storage is repaired, which
+needs the shared-helper change described above and not only a fix on Netlify's side.
 
 Because Netlify reserves the `/.netlify/` prefix for its own routing, the page posts to
 `/api/career-decisions-subscribe`, which is rewritten to the function with status 200 and is the
