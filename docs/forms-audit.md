@@ -319,11 +319,12 @@ Added 2026-08-27, for the same incident. The submission function's own limiter, 
 salted IP hash, is built on Blobs and is deliberately fail-open, so while Blobs is broken **the form
 has no working limit from that limiter at all**. That is not an acceptable state to launch in.
 
-`netlify.toml` therefore carries a Netlify-native limit on the submission rule, enforced by Netlify
-itself and depending on nothing this site configures: **five submissions per 180 seconds, aggregated
-by domain and IP.** No `action` is declared, so the default applies and an exceeded limit is refused
-with 429 rather than rewritten to a page, which is right for a path only ever reached by the form's
-fetch. Netlify caps the window at 180 seconds, so the hour-long ceiling the Blobs limiter expresses
+`netlify.toml` therefore carries a Netlify-native limit on the submission rule, depending on nothing
+this site configures: **five submissions per 180 seconds, aggregated by domain and IP.** No `action`
+is declared, so the default applies and an exceeded limit is refused with 429 rather than rewritten
+to a page, which is right for a path only ever reached by the form's fetch. **As of launch this rule
+is accepted by Netlify but has not been observed to fire.** See the status below before relying on
+it. Netlify caps the window at 180 seconds, so the hour-long ceiling the Blobs limiter expresses
 cannot be reproduced here. The two are complementary and both are kept: this one stops bursts now,
 and the Blobs limiter resumes enforcing the sustained hourly ceiling when storage is repaired.
 
@@ -342,11 +343,34 @@ It was removed rather than left as dead code that reads like protection. The `ra
 now is the one Netlify's own redirect parser recognises, confirmed by reading
 `netlify-redirect-parser` 14.4.0, which carries it through to the backend for validation.
 
-**How to confirm it is live.** Netlify validates rate limit rules at the end of each deploy, in the
-post-processing stage, and prints the details of valid rules in the deploy log under that stage. A
-green deploy alone does not establish that the rule was applied: the edge attempt deployed green and
-did nothing. The behavioural check is six sequential posts to `/api/career-decisions-subscribe` from
-one address; the sixth must return 429.
+**Status at launch: accepted, not enforced.** This is the second mechanism tried, and neither has
+been observed to work.
+
+Netlify validates rate limit rules at the end of each deploy, in the post-processing stage, and
+prints the details of valid rules in the deploy log under that stage. For deploy
+`6a90bd2325e48400074b8e50` that stage shows the rule compiled: a path condition with value
+`/api/career-decisions-subscribe` and `"regex": false`, an aggregate entry of `"type": "ip"`, and
+`"status_code": 429`. Post processing completed and the site went live.
+
+The rule nonetheless did not fire. Six sequential empty-body POSTs from one browser and one IP to
+that path returned `[400, 400, 400, 400, 400, 400]`. Every request reached the function.
+
+**What the evidence establishes is only that Netlify accepted the rule and did not enforce it on
+Deploy Preview #92.** It does not establish why. One hypothesis is that rate limiting is not
+enforced on deploy previews, which would mean production behaves correctly; that is **unconfirmed
+and must not be assumed**. Another is that a limit on a redirect does not apply when that redirect
+is a 200 rewrite to a Netlify Function, which would mean production behaves the same way. Both are
+open questions in the Netlify support ticket.
+
+**Until the production probe demonstrates otherwise, treat this form as having no per-IP rate
+limit.** The probe is six sequential empty-body POSTs to
+`https://temidayoafonja.com/api/career-decisions-subscribe`; the sixth must return 429. A green
+deploy alone establishes nothing: the earlier edge attempt deployed green and did nothing.
+
+**On the consequences of abuse.** Junk Kit subscribers can be removed. Not everything downstream of
+a flood can be undone that easily: sustained submissions consume Kit API quota and generate outbound
+email, and volumes of unwanted mail can affect sender reputation, which is slow to repair. Kit
+should be watched closely while this is unresolved rather than relied on to be tidied up afterwards.
 
 **What it deliberately does not do.** It does not touch the existing `xyegkbaq` priority-list
 records. Those were collected with no opt-in, so moving them into Kit is a consent question and
