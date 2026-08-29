@@ -81,6 +81,15 @@ async function open(t, { query = "", respond = { status: 200, json: { ok: true, 
      never let its timer fire. */
   if (now !== null) await page.clock.install({ time: now });
 
+  /* The page loads Plausible's script from plausible.io. Nothing here depends on
+     that request succeeding: window.plausible is stubbed above, and the events
+     the tests assert on come from the stub. Letting the real request go out
+     makes every page load wait on a network round trip that will not complete
+     in a sandbox with no egress, which is what intermittently timed out the
+     clock-boundary tests. Refusing it immediately is both faster and
+     deterministic, and changes nothing that is asserted. */
+  await page.route("**://plausible.io/**", (route) => route.abort());
+
   await page.route("**/api/career-decisions-subscribe", async (route) => {
     requests.push(JSON.parse(route.request().postData() || "{}"));
     if (respond === "abort") return route.abort("failed");
