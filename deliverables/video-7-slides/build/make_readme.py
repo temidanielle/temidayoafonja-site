@@ -12,11 +12,15 @@ r = json.loads(subprocess.run([sys.executable,
 flush_main = ", ".join(str(x) for x in q["flush_edge_slides_main"])
 flush_rev = ", ".join(str(x) for x in q["flush_edge_frames_reveals"])
 
-TXT = """VIDEO 7 — FIRST-PASS PRODUCTION PACKAGE — QA README  (corrected pass)
+TXT = """VIDEO 7 — FIRST-PASS PRODUCTION PACKAGE — QA README
 How to Show Your Impact at Work When You Built It From Scratch
 
+Latest pass: read-only comparison against the August 28 roadmap audit.
+Only this README and the ZIP were updated. No deck, script, DOCX, PDF or
+review sheet was rebuilt or re-rendered — see section 2.
+
 ===============================================================================
-1. WHAT CHANGED IN THIS PASS
+1. THE CORRECTION PASS THAT PRECEDED THIS ONE
 ===============================================================================
 
 Content correction, applied at source and regenerated through every file:
@@ -52,35 +56,220 @@ QA corrections:
   · Rendered-bleed flag reconciled. See section 6.
 
 ===============================================================================
-2. ROADMAP AUDIT — NOT VALIDATED, AND WHY
+2. ROADMAP AUDIT — READ-ONLY COMPARISON, ALIGNED
 ===============================================================================
 
-The August 28 roadmap audit was referenced as attached but did not arrive. No
-file matching it is present in the repository, in this session's uploaded
-files, or anywhere on the working filesystem; the most recent upload of any
-kind is the Video 6 production package, dated 28 August 17:50.
+Source: YouTube_Audience_and_20_Video_Roadmap_Audit_Aug28_2026.docx
+        sha256 df1754b8698d6ed7a149794893bf9fae21983ff70040da00b24339b611ff0a05
+        197 paragraphs, 31 tables. Stored byte-identically at
+        deliverables/video-7-slides/reference/ for the record.
 
-This package therefore CANNOT be reported as validated against that audit, and
-is not. Send the file and the check will be run and recorded here.
+The audit was read, not written to. No deck, script, DOCX, PDF or review sheet
+was rebuilt or re-rendered as a result of this comparison; only this README and
+the ZIP were updated.
 
-What this package was built against instead:
-  · deliverables/video-6-slides/ — the approved Video 6 first-pass package,
-    mirrored file for file and section for section
-  · deliverables/CAPABILITY_FORMATION_YOUTUBE_STANDARDS.md
-  · docs/claims-ledger.md — which decided the excluded metrics in section 5
+--- 2.1  Video 7 first-in-role/builder editorial purpose -------------- ALIGNED
 
-TITLE AND KEYWORD — INTENTIONAL CHANGE, RECORDED
-  Final title:      How to Show Your Impact at Work When You Built It From Scratch
-  Target keyword:   how to show your impact at work
+  Audit, sequence row 7 viewer question
+    "How do I prove foundational work with no baseline?"
+  Audit, production architecture row 7 proof beat
+    "First-in-role/builder chapter."
+  Audit, opening register for Video 7
+    "Some of the most valuable work in a career is also the hardest to prove
+    because there was no system, role or measure before you built it. When I
+    was first in roles, I sometimes had to create the language, relationships
+    and decision clarity before the work itself could succeed."
+
+  Package
+    Hook, 0:00 — "Some of the most valuable work you have ever done may be the
+    hardest work to describe. Not because it was small. Because it was first."
+    Early proof, 0:35 — the approved first-in-role/builder line, carried
+    verbatim, with nothing invented around it.
+
+  The audit's own opening register and the package's opening are the same
+  editorial move, and the personal line is identical.
+
+  THREE TEACHING MOVES — one difference in emphasis, fully covered
+
+    Audit row 7            Package
+    Reconstruct the        RECONSTRUCT THE BEFORE          verbatim match
+      before
+    Name judgment and      NAME WHAT YOU BUILT             substantive match:
+      infrastructure         slide 6 carries definitions, relationships,
+                             decisions, alignment and repeatable capability;
+                             slide 7 is devoted entirely to judgment
+    Preserve permitted     SHOW WHAT IT RETURNED           see below
+      evidence
+
+  The audit's third move is "preserve permitted evidence." The package makes
+  the third move "show what it returned" and carries permitted evidence as a
+  stated boundary inside that block — spoken at 8:30 and on screen as the
+  second state of slide 9.
+
+  All three of the audit's elements are present. The difference is where the
+  permitted-evidence material sits, not whether it is taught. The package
+  follows the later, more specific Video 7 brief, which named the three moves
+  explicitly and required the permitted-evidence boundary separately. Recorded
+  here as an intentional refinement of the audit's phrasing, not a gap.
+
+--- 2.2  Keep the Proof as the CTA ------------------------------------ ALIGNED
+
+  Audit, sequence row 7 CTA                    Keep the Proof
+  Audit, CTA routing table                     Keep the Proof serves Videos
+                                               4, 7, 9, 15, 16
+  Audit boundary on that route                 "Preserve permitted evidence;
+                                               never imply taking confidential
+                                               or employer-owned material."
+  Audit, Field Kit row                         "Do not stack Keep the Proof
+                                               beside it."
+  Audit, editorial format                      "CTA: one route only, earned by
+                                               the method taught."
+
+  Package: Keep the Proof — A 60-Minute Career Evidence System, at
+  temidayoafonja.com/keep-the-proof, on slide 11 and in the 9:55 block. QA
+  confirms no competing offer anywhere in the script or the decks — no Field
+  Kit, no Career Decision Evidence Check, no book.
+
+  The audit's link status for this route is "Confirm the approved live URL
+  before publication," which matches the publication gate already recorded in
+  section 9.
+
+--- 2.3  Career Portability playlist placement ----- ALIGNED, ONE OPEN ROUTING
+
+  Audit: "Career portability is the public front door; Capability Formation is
+  the deeper method." Editorial format: "Watch Next — one intentional next
+  decision in the sequence."
+
+  Slide 12 carries both an intentional next video and the playlist line, so it
+  satisfies the format either way and needs no re-render.
+
+  OPEN QUESTION FOR TEMIDAYO, not a mismatch with the audit:
+    The audit's recommended title for sequence position 4 is "How to Explain a
+    Nonlinear Career Without Looking Unfocused," with thumbnail YOUR CAREER
+    MAKES SENSE and CTA Keep the Proof. The approved, already-produced Video 4
+    carries that same thumbnail and CTA but was published under the title "How
+    to Explain Your Career Change."
+
+    So Video 7's watch-next target may already exist as the produced Video 4
+    under a different title, rather than being a future video. This changes the
+    end-screen decision but not the slide: slide 12 names the title and the
+    playlist, so either routing works without a rebuild.
+
+    The package DOCX still carries the earlier conditional wording ("if it has
+    published by the time Video 7 goes live"). That hedge is left in place
+    because this pass does not rebuild the DOCX; it can be simplified at the
+    next pass once the routing is settled.
+
+  The exact playlist string on slide 12 — "Career Portability: Career Pivots,
+  Internal Moves & Growth" — does not appear verbatim in the audit, so it was
+  carried forward from the approved Video 6 deck rather than verified against
+  the audit. Flagged for completeness.
+
+--- 2.4  "MAKE INVISIBLE WORK VISIBLE" as thumbnail copy -------------- ALIGNED
+
+  Audit, sequence row 7 thumbnail    MAKE INVISIBLE WORK VISIBLE
+  Package required copy              MAKE INVISIBLE WORK VISIBLE
+
+  Exact match. It also satisfies the audit's thumbnail rule — "a complementary
+  recognition phrase, usually 3-6 words; do not repeat the title" — at four
+  words with no overlap with the title.
+
+  No thumbnail was created or substituted in this pass. See section 4.
+
+--- 2.5  Evidence and confidentiality boundaries ---------------------- ALIGNED
+
+  Audit, Keep the Proof boundary
+    "Preserve permitted evidence; never imply taking confidential or
+    employer-owned material."
+
+  Package, slide 9 second state and the 8:30 spoken block
+    "Outcomes, decisions, what you learned, non-confidential examples in your
+    own words. Not documents, not data, not anything employer-owned."
+
+  The same boundary, stated on screen and out loud. The 8:30 block also rules
+  out manufactured precision, which supports the audit's attribution
+  discipline in 2.6.
+
+--- 2.6  Exclusion of the 30%% and $2M+ claims ------------------------- ALIGNED
+
+  The audit reaches the same conclusion independently, and in two places.
+
+  Audit, proof and platform table
+    "Confirmed outcomes | Approximately 30%% retention improvement and more than
+    $2M in avoided turnover | Videos 7, 15 or 23 IF CORRECTLY TIED | Do not
+    attach either metric to a role or intervention until the relationship is
+    documented."
+
+  Audit, production architecture row 7
+    "First-in-role/builder chapter. Confirm whether 30%% retention and >$2M
+    avoided turnover belong to this story."
+
+  Audit, missing evidence questions
+    "Which exact role and business problem produced the approximately 30%%
+    retention improvement and more than $2M in avoided turnover? Are those
+    outcomes part of the same initiative? What attribution language is
+    supportable?"
+
+  The audit therefore instructs exclusion until the attribution is documented,
+  and poses the same open question this README already recorded in section 8.
+  Both figures remain absent from the script and the decks, verified.
+
+  One nuance worth stating plainly: the audit's table labels these "confirmed
+  outcomes," but its own boundary column and its missing-evidence questions
+  make clear that the ATTRIBUTION is not documented — and
+  docs/claims-ledger.md records both as "Needs source." Exclusion is what the
+  audit requires, not a stricter reading of it.
+
+--- 2.7  Title and keyword ------------------- INTENTIONAL, RECORDED, PRESERVED
+
+  Audit working title   How to Prove the Value of Work That Had No Blueprint
+  Final title           How to Show Your Impact at Work When You Built It From
+                        Scratch
+  Target keyword        how to show your impact at work
 
   This is the TubeBuddy-validated update to the roadmap's working title and is
-  deliberate, not a drift from the roadmap. Supporting evidence, production
-  rationale only and never referenced on air: primary keyword weighted score
-  71/100; complete title weighted score 59/100; complete-title search volume
-  excellent; competition fair; zero exact title matches in the top 20.
+  deliberate. Supporting evidence, production rationale only and never
+  referenced on air: primary keyword weighted score 71/100; complete title
+  weighted score 59/100; complete-title search volume excellent; competition
+  fair; zero exact title matches in the top 20.
 
-  Because the audit itself is unavailable, this entry records the change as
-  intended rather than confirming it against the audit's own wording.
+  It is also consistent with the audit's own title rule — "a recognizable
+  search question or consequence" — which the working title met less directly.
+
+  DOWNSTREAM CONSEQUENCE, FLAGGED NOT FIXED:
+    The approved Video 6 deck's watch-next slide names Video 7 by the former
+    working title, "HOW TO PROVE THE VALUE OF WORK THAT HAD NO BLUEPRINT." That
+    slide will point at a title that no longer exists. Videos 1-6 were left
+    untouched as instructed, so this is reported rather than corrected. It
+    needs a decision before Video 7 publishes.
+
+--- 2.8  Other audit requirements checked ----------------------------- ALIGNED
+
+  Editorial format, opening      "Recognition or specific scene -> viewer
+                                 payoff -> early proof within roughly 30-45
+                                 seconds." Package: early proof at 0:35.
+  Editorial format, teaching     "One distinction or test with three moves."
+                                 Package: one distinction, three moves.
+  Editorial format, CTA          "One route only." Package: one route.
+  Editorial format, tone         "Calm, specific, evidence-led; no hype,
+                                 scolding, false certainty or generic creator
+                                 language." Package: no promotion promise, no
+                                 manufactured precision.
+  Editorial format, constraint   "Name pay, benefits, age, caregiving, identity,
+                                 health, timing or labor-market reality WHERE
+                                 IT CHANGES THE DECISION." Checked and judged
+                                 not applicable: Video 7 teaches evidence
+                                 reconstruction, not a stay-or-leave decision,
+                                 so no constraint changes the action asked of
+                                 the viewer. Recorded rather than skipped
+                                 silently.
+  Primary audience               "A senior corporate woman, generally 40-55
+                                 with 15-25 years of experience." Package
+                                 section 1 names the same viewer.
+
+VERDICT: no substantive mismatch on any of the six points requested. Two items
+need a decision from Temidayo and neither requires a rebuild — the watch-next
+routing in 2.3 and the Video 6 end-card title in 2.7.
 
 ===============================================================================
 3. DELIVERABLES
@@ -254,12 +443,15 @@ block back inside that ceiling.
   · Chapter timestamps in the package are planning estimates. Reset them from
     the finished export before publishing.
   · The approved Canva thumbnail export must be supplied and added.
-  · Watch-next routing: point the end screen at "How to Explain a Nonlinear
-    Career Without Looking Unfocused" if it has published by the time Video 7
-    goes live; otherwise use the Career Portability playlist. Slide 12 names
-    the playlist either way, so no re-render is needed to switch.
   · Confirm temidayoafonja.com/keep-the-proof is live before publishing.
-  · Send the August 28 roadmap audit so this package can be checked against it.
+  · Watch-next routing: decide whether Video 7's end screen points at the
+    produced Video 4 (published as "How to Explain Your Career Change", which
+    the audit lists at sequence position 4 under the recommended title "How to
+    Explain a Nonlinear Career Without Looking Unfocused") or at the Career
+    Portability playlist. Slide 12 carries both, so neither choice needs a
+    re-render. See section 2.3.
+  · Video 6's watch-next slide names Video 7 by its former working title and
+    will need a decision before Video 7 publishes. See section 2.7.
 
 ===============================================================================
 10. WHAT WAS NOT TOUCHED
