@@ -87,6 +87,24 @@
   to = "/keep-the-proof.html"
   status = 200
 
+# The Career Evidence Starter. PREVIEW: the page also carries a noindex tag,
+# and nothing on the site links to it yet. Remove that tag at launch.
+[[redirects]]
+  from = "/career-evidence-starter"
+  to = "/career-evidence-starter.html"
+  status = 200
+
+[[redirects]]
+  from = "/career-evidence-starter.html"
+  to = "/career-evidence-starter"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/api/career-evidence-starter-subscribe"
+  to = "/.netlify/functions/career-evidence-starter-subscribe"
+  status = 200
+
 # The Career Decision Evidence Check. /career-decisions is the permanent URL and
 # is the only form that should ever accumulate authority, so the .html form is
 # sent to it, exactly as /organizational-diagnostic.html is above. force = true

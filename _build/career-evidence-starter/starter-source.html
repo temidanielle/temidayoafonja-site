@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Keep the Proof: The 10-Minute Career Evidence Starter</title>
+<link rel="stylesheet" href="/fonts.css">
+<style>
+/* ── Career Evidence Starter: print source ────────────────────────────────
+   Six US Letter pages, printed to PDF by Chromium at scale 1 with no margins,
+   so 1in = 96 CSS px = 72 PDF pt. Fillable field positions are measured from
+   the .fld placeholders in this document and written as AcroForm fields
+   afterwards, so the boxes you see here are exactly where the fields land.
+
+   The visual family is the Keep the Proof / Field Kit system: Cormorant
+   Garamond display, DM Sans text, navy, gold and rust. The cover deliberately
+   inverts Keep the Proof's navy ground to ivory, so the two read as siblings
+   rather than as the same object, and so this one looks lighter, which it is. */
+
+@page { size: 8.5in 11in; margin: 0; }
+* { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+html, body { margin: 0; padding: 0; background: #fff; }
+
+:root {
+  --navy: #0F2347;
+  --navy-deep: #0B1B38;
+  --cream: #F5F0E8;
+  --paper: #FFFDF8;
+  --ink: #182238;
+  --muted: #5D6676;
+  --gold: #C9A84C;
+  --gold-ink: #7F6A30;
+  --rust: #C1440E;
+  --rust-ink: #B6400D;
+  --line: rgba(15,35,71,.16);
+}
+
+.page {
+  width: 8.5in; height: 11in; position: relative; overflow: hidden;
+  background: var(--cream); color: var(--ink);
+  font-family: 'DM Sans', Arial, sans-serif; font-weight: 300;
+  padding: 0.82in 0.85in 0.7in;
+  page-break-after: always;
+}
+.page:last-child { page-break-after: auto; }
+.page--paper { background: var(--paper); }
+
+/* Type */
+.eyebrow { font-family: 'DM Sans', sans-serif; font-size: 8.5pt; font-weight: 700;
+  letter-spacing: .2em; text-transform: uppercase; color: var(--rust-ink); margin: 0 0 14px; }
+h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 300;
+  font-size: 46pt; line-height: 1.02; color: var(--navy); margin: 0; letter-spacing: -.01em; }
+h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400;
+  font-size: 25pt; line-height: 1.12; color: var(--navy); margin: 0 0 10px; }
+h3 { font-family: 'DM Sans', sans-serif; font-size: 9pt; font-weight: 700;
+  letter-spacing: .13em; text-transform: uppercase; color: var(--navy); margin: 0 0 6px; }
+p  { font-size: 10.5pt; line-height: 1.55; color: var(--ink); margin: 0 0 10px; max-width: 6.2in; }
+p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 16px; }
+.help { font-size: 8.8pt; line-height: 1.45; color: var(--muted); margin: 0 0 7px; max-width: 6.2in; }
+.rule { width: 1.05in; height: 3px; background: var(--rust); margin: 16px 0 20px; }
+.rule--thin { width: 100%; height: 1px; background: var(--line); margin: 18px 0; }
+
+/* Cover */
+.cover { display: flex; flex-direction: column; height: 100%; }
+.cover .mark { width: 46px; height: 46px; border: 2px solid var(--navy); position: relative; margin-bottom: 34px; }
+.cover .mark::before { content: ''; position: absolute; left: 8px; top: 8px; width: 30px; height: 2px; background: var(--gold); }
+.cover .mark::after  { content: ''; position: absolute; left: 8px; top: 16px; width: 18px; height: 2px; background: var(--rust); }
+.cover .eyebrow { color: var(--gold-ink); letter-spacing: .22em; }
+.cover .family { font-family: 'DM Sans', sans-serif; font-size: 11pt; font-weight: 700;
+  letter-spacing: .3em; text-transform: uppercase; color: var(--rust-ink); margin: 0 0 12px; }
+.cover h1 { font-size: 52pt; }
+.cover .promise { font-family: 'Cormorant Garamond', serif; font-size: 15.5pt; line-height: 1.34;
+  color: var(--navy); max-width: 5.1in; margin: 0 0 20px; }
+.cover .meta { font-size: 9.5pt; line-height: 1.5; color: var(--muted); }
+.cover .spacer { flex: 1 1 auto; }
+.cover .byline { font-size: 10pt; color: var(--navy); font-weight: 500; margin: 0 0 2px; }
+.cover .byline-sub { font-size: 9pt; color: var(--muted); margin: 0; }
+.cover .footline { display: flex; justify-content: space-between; align-items: flex-end;
+  border-top: 1px solid var(--line); padding-top: 12px; margin-top: 22px; }
+.cover .cf { font-size: 8.5pt; letter-spacing: .12em; text-transform: uppercase; color: var(--gold-ink); font-weight: 700; }
+.cover .url { font-size: 9pt; color: var(--muted); }
+
+/* Boxes */
+.box { border: 1px solid var(--line); border-radius: 4px; padding: 16px 18px; background: #fff; }
+.box--safe { border-left: 3px solid var(--rust); }
+.box h3 { color: var(--rust-ink); }
+.box p { font-size: 9.2pt; line-height: 1.5; margin: 0 0 7px; }
+.box p:last-child { margin-bottom: 0; }
+
+/* Checklist of selection tests */
+.tests { list-style: none; margin: 12px 0 0; padding: 0; }
+.tests li { position: relative; padding: 0 0 8px 20px; font-size: 10pt; line-height: 1.5; color: var(--ink); }
+.tests li::before { content: ''; position: absolute; left: 0; top: 8px; width: 11px; height: 2px; background: var(--rust-ink); }
+
+/* Numbered prompts */
+.q { margin-bottom: 4px; }
+.q .n { font-family: 'Cormorant Garamond', serif; font-size: 15pt; color: var(--rust-ink); margin-right: 7px; }
+.q .t { font-family: 'DM Sans', sans-serif; font-size: 10pt; font-weight: 700; letter-spacing: .04em;
+  text-transform: uppercase; color: var(--navy); }
+
+/* Field placeholders. The ruled lines are printed; the AcroForm box sits on
+   top of them, so the sheet works typed or handwritten. */
+.fld { border: 1px solid var(--line); border-radius: 3px; background: #fff; margin: 6px 0 14px; }
+.fld--lines { background:
+  repeating-linear-gradient(to bottom, transparent, transparent calc(0.26in - 1px), var(--line) 0.26in); }
+.fld--sm { height: 0.34in; }
+.fld--md { height: 0.78in; }
+.fld--lg { height: 1.04in; }
+.fld--xl { height: 1.3in; }
+
+.inline-flds { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+.inline-flds--2 { grid-template-columns: 1.6fr 1fr; }
+.lbl--solo { margin-top: 2px; }
+.check--tight li { padding-bottom: 7px; font-size: 9.2pt; }
+.lbl { font-size: 8.2pt; font-weight: 700; letter-spacing: .09em; text-transform: uppercase;
+  color: var(--muted); margin: 0 0 4px; }
+
+/* Scaffold */
+.scaffold { background: var(--navy); color: #fff; border-radius: 4px; padding: 18px 20px; margin: 4px 0 16px; }
+.scaffold p { color: rgba(255,255,255,.9); font-size: 10.5pt; line-height: 1.62; margin: 0; max-width: none; }
+.scaffold .sv { color: var(--gold); }
+
+.example { border-left: 2px solid var(--gold); padding-left: 16px; margin: 0 0 16px; }
+.example .lbl { font-size: 8pt; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--gold-ink); margin: 0 0 4px; }
+.example p { font-size: 9.6pt; line-height: 1.5; margin: 0 0 10px; color: var(--ink); }
+.example p:last-child { margin-bottom: 0; }
+
+/* Self check */
+.check { list-style: none; margin: 10px 0 0; padding: 0; }
+.check li { display: flex; align-items: flex-start; gap: 10px; padding: 0 0 9px; font-size: 9.6pt;
+  line-height: 1.45; color: var(--ink); }
+ /* Spacer only. The AcroForm checkbox widget supplies the visible box, so
+    drawing one here as well produced two overlapping squares. */
+.cbx { width: 13px; height: 13px; flex: 0 0 auto; margin-top: 1px; }
+
+/* Use it */
+.uses { display: grid; grid-template-columns: 1fr 1fr; gap: 7px 22px; margin: 12px 0 0; }
+.uses div { font-size: 10pt; color: var(--ink); padding: 7px 0; border-bottom: 1px solid var(--line); }
+
+.next { background: var(--navy); border-radius: 4px; padding: 24px 26px; margin-top: 18px; }
+.next .eyebrow { color: var(--gold); }
+.next h2 { color: #fff; font-size: 21pt; margin-bottom: 10px; }
+.next p { color: rgba(255,255,255,.82); font-size: 10pt; line-height: 1.6; margin: 0 0 12px; max-width: none; }
+.next .ladder { font-size: 10pt; line-height: 1.75; color: rgba(255,255,255,.9);
+  border-top: 1px solid rgba(255,255,255,.18); padding-top: 12px; margin: 0 0 14px; }
+.next .ladder .lg { color: var(--gold); font-weight: 700; }
+.next .prod { font-family: 'Cormorant Garamond', serif; font-size: 15pt; color: #fff; margin: 0 0 2px; }
+.next .prodsub { font-size: 9pt; color: var(--gold); letter-spacing: .06em; margin: 0 0 10px; }
+.next .link { font-family: 'DM Sans', sans-serif; font-size: 10pt; color: var(--gold); }
+
+.closing { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 13pt;
+  line-height: 1.45; color: var(--navy); margin: 20px 0 0; max-width: 5.6in; }
+
+/* Running foot */
+.foot { position: absolute; left: 0.85in; right: 0.85in; bottom: 0.42in;
+  display: flex; justify-content: space-between; font-size: 7.8pt; color: var(--muted);
+  border-top: 1px solid var(--line); padding-top: 8px; }
+.foot .l { letter-spacing: .1em; text-transform: uppercase; }
+</style>
+</head>
+<body>
+
+<!-- ══ PAGE 1 · COVER ══ -->
+<section class="page">
+  <div class="cover">
+    <div class="mark"></div>
+    <p class="eyebrow">Free Career Accomplishment Tracker</p>
+    <p class="family">Keep the Proof</p>
+    <h1>The 10-Minute<br>Career Evidence<br>Starter</h1>
+    <div class="rule"></div>
+    <p class="promise">Turn one accomplishment into proof you can use in a performance review, interview, internal move or career pivot.</p>
+    <p class="meta">One accomplishment. One Proof Line. About 10 minutes.</p>
+    <div class="spacer"></div>
+    <p class="byline">Temidayo Afonja</p>
+    <p class="byline-sub">Career Portability Advisor &middot; Founder, The Density Group</p>
+    <div class="footline">
+      <span class="cf">A Capability Formation resource</span>
+      <span class="url">temidayoafonja.com</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PAGE 2 · BEFORE YOU START ══ -->
+<section class="page page--paper">
+  <p class="eyebrow">Before you start</p>
+  <h2>Choose one accomplishment worth remembering.</h2>
+  <div class="rule"></div>
+
+  <p class="lede">Do not try to reconstruct your entire career.</p>
+  <p>Choose one project, assignment, decision, problem, launch, redesign, client engagement, process improvement or piece of work from the recent past that mattered. Then complete the six prompts that follow.</p>
+
+  <h3 style="margin-top:16px;">Choose something where at least one is true</h3>
+  <ul class="tests">
+    <li>Something changed because you were involved.</li>
+    <li>You exercised judgment, not just activity.</li>
+    <li>You solved or prevented a meaningful problem.</li>
+    <li>Someone relied on your expertise.</li>
+    <li>You learned something you could use again.</li>
+  </ul>
+
+  <div class="rule--thin"></div>
+
+  <h3>Quick capture</h3>
+  <p class="help">Write it down fast, before the detail fades. Two lines is enough.</p>
+  <div class="inline-flds inline-flds--2">
+    <div>
+      <p class="lbl">The work</p>
+      <div class="fld fld--sm" data-field="qc_work" data-lines="1"></div>
+    </div>
+    <div>
+      <p class="lbl">Roughly when</p>
+      <div class="fld fld--sm" data-field="qc_when" data-lines="1"></div>
+    </div>
+  </div>
+  <p class="lbl lbl--solo">Why it mattered</p>
+  <div class="fld fld--sm" data-field="qc_why" data-lines="1"></div>
+
+  <div class="rule--thin"></div>
+
+  <div class="box box--safe">
+    <h3>Permission checklist</h3>
+    <p>Tick each one before you write. If you cannot tick it, leave that detail out.</p>
+    <ul class="check check--tight">
+      <li><span class="cbx" data-check="perm_recollection"></span><span>I am recording my own recollection, and information I am permitted to retain.</span></li>
+      <li><span class="cbx" data-check="perm_nocopy"></span><span>I am not copying, forwarding, photographing or reproducing confidential or employer-owned material.</span></li>
+      <li><span class="cbx" data-check="perm_noprotected"></span><span>I am not including protected customer, employee or proprietary company information.</span></li>
+      <li><span class="cbx" data-check="perm_unsure"></span><span>Where I am unsure whether I may retain something, I have left it out.</span></li>
+    </ul>
+    <p style="margin-top:8px;">This is educational material, not legal advice.</p>
+  </div>
+
+  <div class="foot"><span class="l">Keep the Proof &middot; Career Evidence Starter</span><span>2</span></div>
+</section>
+
+<!-- ══ PAGE 3 · BUILD THE EVIDENCE ══ -->
+<section class="page">
+  <p class="eyebrow">Build the evidence</p>
+  <h2>What actually happened?</h2>
+  <div class="rule"></div>
+
+  <h3>Project or work event</h3>
+  <p class="help">What piece of work are you capturing?</p>
+  <div class="fld fld--sm" data-field="project" data-lines="1"></div>
+
+  <div class="q"><span class="n">1</span><span class="t">What was true before I got involved?</span></div>
+  <p class="help">Describe the starting condition, problem, constraint or need.</p>
+  <div class="fld fld--md fld--lines" data-field="q1_before" data-lines="3"></div>
+
+  <div class="q"><span class="n">2</span><span class="t">What was my specific contribution or judgment?</span></div>
+  <p class="help">Your part, not everything the team did. What did you notice, decide, influence, build, change or prevent?</p>
+  <div class="fld fld--md fld--lines" data-field="q2_contribution" data-lines="3"></div>
+
+  <div class="q"><span class="n">3</span><span class="t">What changed?</span></div>
+  <p class="help">What improved, became possible, moved, disappeared or was prevented? If there is no number, describe the change in words.</p>
+  <div class="fld fld--md fld--lines" data-field="q3_changed" data-lines="3"></div>
+
+  <div class="q"><span class="n">4</span><span class="t">What evidence supports this?</span></div>
+  <p class="help">Use only accurate and permitted evidence: a measured result, an observable change, a public source, documented feedback, a role-based verifier, or a before and after condition.</p>
+  <div class="fld fld--md fld--lines" data-field="q4_evidence" data-lines="3"></div>
+
+  <div class="foot"><span class="l">Keep the Proof &middot; Career Evidence Starter</span><span>3</span></div>
+</section>
+
+<!-- ══ PAGE 4 · FIND WHAT TRAVELS ══ -->
+<section class="page page--paper">
+  <p class="eyebrow">Find what travels</p>
+  <h2>What does this work show you can do?</h2>
+  <div class="rule"></div>
+
+  <div class="q"><span class="n">5</span><span class="t">What could I plausibly do again?</span></div>
+  <p class="help">Move beyond the project name. What did this work require you to know how to do? It might be to diagnose an unclear problem, bring structure to ambiguity, influence across functions, improve a process, make a difficult tradeoff, translate technical information, build trust, lead through change, identify risk or redesign an experience.</p>
+  <div class="fld fld--lg fld--lines" data-field="q5_portable" data-lines="4"></div>
+
+  <div class="rule--thin"></div>
+
+  <div class="q"><span class="n">6</span><span class="t">Remove the internal language</span></div>
+  <p class="help">Which words only make sense inside your current company?</p>
+  <div class="inline-flds">
+    <div>
+      <p class="lbl">Internal project name</p>
+      <div class="fld fld--sm" data-field="internal_project" data-lines="1"></div>
+    </div>
+    <div>
+      <p class="lbl">Internal acronym or system</p>
+      <div class="fld fld--sm" data-field="internal_acronym" data-lines="1"></div>
+    </div>
+    <div>
+      <p class="lbl">Company-specific language</p>
+      <div class="fld fld--sm" data-field="internal_language" data-lines="1"></div>
+    </div>
+  </div>
+
+  <p class="help" style="margin-top:14px;">How would you explain the same work to someone who has never worked there?</p>
+  <div class="fld fld--lg fld--lines" data-field="plain_explanation" data-lines="4"></div>
+
+  <div class="foot"><span class="l">Keep the Proof &middot; Career Evidence Starter</span><span>4</span></div>
+</section>
+
+<!-- ══ PAGE 5 · PORTABLE PROOF LINE ══ -->
+<section class="page">
+  <p class="eyebrow">Your portable proof line</p>
+  <h2>Turn the evidence into one portable line.</h2>
+  <div class="rule"></div>
+
+  <div class="scaffold">
+    <p>I helped <span class="sv">[solve / change / build / improve what]</span><br>
+      by <span class="sv">[your specific contribution or judgment]</span>,<br>
+      which <span class="sv">[result or observable change]</span>,<br>
+      showing that I can <span class="sv">[portable capability]</span>.</p>
+  </div>
+  <p class="help">This is a scaffold for thinking, not a sentence to copy mechanically. Rearrange it so it sounds like you.</p>
+
+  <div class="example">
+    <p class="lbl">Before</p>
+    <p>&ldquo;Led Project Horizon onboarding work.&rdquo;</p>
+    <p class="lbl">Portable</p>
+    <p>&ldquo;Led a cross-functional onboarding redesign that improved how quickly new employees became integrated, requiring me to diagnose gaps across teams, coordinate stakeholders and turn an unclear experience problem into a measurable operating change.&rdquo;</p>
+  </div>
+
+  <h3>My portable proof line</h3>
+  <div class="fld fld--lg fld--lines" data-field="proof_line" data-lines="4"></div>
+
+  <div class="rule--thin"></div>
+
+  <h3>Before you use it</h3>
+  <ul class="check">
+    <li><span class="cbx" data-check="check_outsider"></span><span>Someone outside my company could understand it.</span></li>
+    <li><span class="cbx" data-check="check_contribution"></span><span>It separates my contribution from the team result.</span></li>
+    <li><span class="cbx" data-check="check_defend"></span><span>I could defend it if someone asked a second question.</span></li>
+    <li><span class="cbx" data-check="check_permitted"></span><span>I have removed anything I am not permitted to retain or disclose.</span></li>
+  </ul>
+
+  <div class="foot"><span class="l">Keep the Proof &middot; Career Evidence Starter</span><span>5</span></div>
+</section>
+
+<!-- ══ PAGE 6 · USE IT AND NEXT STEP ══ -->
+<section class="page page--paper">
+  <p class="eyebrow">Use it</p>
+  <h2>One piece of proof is useful. A record is more powerful.</h2>
+  <div class="rule"></div>
+
+  <h3>Where you can use this</h3>
+  <p class="help">Adapt the line to the conversation you are actually in rather than reusing it word for word.</p>
+  <div class="uses">
+    <div>Performance reviews</div>
+    <div>Interviews</div>
+    <div>Promotion conversations</div>
+    <div>Resume updates</div>
+    <div>Internal mobility</div>
+    <div>Career pivots</div>
+  </div>
+
+  <div class="next">
+    <p class="eyebrow">You have proved one thing</p>
+    <h2>The next step is the record, not another exercise.</h2>
+    <p>This Starter helped you prove one accomplishment. Keep the Proof gives you the complete 60-minute Career Evidence System and the reusable Career Evidence Ledger, for capturing, translating, organising and maintaining the whole record before you need it.</p>
+    <p class="ladder"><span class="lg">This Starter</span> proves one thing.<br>
+      <span class="lg">Keep the Proof</span> builds the record.</p>
+    <p class="prod">Keep the Proof</p>
+    <p class="prodsub">A 60-Minute Career Evidence System</p>
+    <p class="link">temidayoafonja.com/keep-the-proof</p>
+  </div>
+
+  <p class="closing">Your career evidence should not have to be reconstructed from memory after the context changes.</p>
+
+  <div class="foot"><span class="l">Keep the Proof &middot; Career Evidence Starter</span><span>6</span></div>
+</section>
+
+</body>
+</html>
