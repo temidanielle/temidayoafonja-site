@@ -16,10 +16,21 @@ where the file is hosted is still an open decision (see the QA report).
   the build container, so this is how the PDF gets looked at.
 - `fieldtest.js` — fills every field, saves, reopens from disk, reads back.
 
+## Images the build depends on
+
+Two raster assets are placed into the PDF, and `build.js` **throws rather than
+printing** if either fails to load, because a 404 renders as a silent empty box:
+
+- `/images/temidayo-gold-ivory.png`, the author portrait beside the WHY I MADE
+  THIS note on page 2. **Not yet in the repository.** Until it is committed,
+  the build cannot run. Do not substitute another portrait.
+- `/keep-the-proof-cover.png`, the paid product cover on page 6. Already in
+  the repository.
+
 ## Running it
 
 Needs `playwright`, `pdf-lib` and `pdfjs-dist`, and the repository served at
-`http://127.0.0.1:8899` so `/fonts.css` resolves.
+`http://127.0.0.1:8899` so `/fonts.css` and both images resolve.
 
 ```
 node build.js      # writes Keep_the_Proof_Career_Evidence_Starter_v1.0_CANDIDATE.pdf

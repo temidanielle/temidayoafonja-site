@@ -3,6 +3,75 @@
 Candidate build. **Not final, not published.** Against the twelve QA points in
 the brief, in order, with what was actually run.
 
+Re-run in full after the experience and visual refinement pass. Where the
+refinement changed a result, the number below is the new one.
+
+---
+
+## Refinement pass: functional regression check
+
+The brief's standard was that no functional regression is acceptable for an
+aesthetic improvement. The check was made against the archived v1.0 PDF itself
+rather than against the previous version of this document, by loading both
+files and comparing the AcroForm tables field by field.
+
+| | v1.0 | Revised | |
+|---|---|---|---|
+| Fields | 22 | 22 | unchanged |
+| Text fields | 14 | 14 | unchanged |
+| Checkboxes | 8 | 8 | unchanged |
+| Field names | | | identical, and in the same order |
+| Fields added or removed | | | none |
+| Page each field sits on | | | unchanged for all 22 |
+| Multiline flags | 7 | 7 | unchanged, field for field |
+| Read-only fields | none | none | |
+| Round trip: written / read back | 22 / 22 | 22 / 22 | no mismatches |
+| Blank master still blank after a fill and save | yes | yes | |
+
+Three fields were deliberately **enlarged**, and none was shrunk in height:
+
+| Field | v1.0 | Revised |
+|---|---|---|
+| `q5_portable` | 490 x 75 pt | 490 x 94 pt |
+| `plain_explanation` | 490 x 75 pt | 490 x 94 pt |
+| `proof_line` | 490 x 75 pt | 490 x 150 pt |
+
+One reduction to report: the four question fields on page 3 are now **467pt
+wide rather than 490pt**, because they sit inside the guided cards and the card
+padding takes 23pt of the measure. Their height is unchanged at 56pt. That is a
+4.7 per cent narrower line, and it is the only place the refinement costs
+anything functional. It can be recovered by reducing the card padding if you
+would rather have the width than the card.
+
+**Correction to the previous version of this report.** It recorded the text
+fields as "5 multiline, 9 single line". Read from the file, v1.0 had **7
+multiline and 7 single line**, which is also what the revised build has. The
+earlier figure was a documentation error, not a change in the PDF.
+
+### Page fit after the refinement
+
+Every page still fits its 11in box and clears the running footer. The pass
+also rebalanced the whitespace, so no page now carries a large dead area:
+
+| Page | v1.0 slack | Revised slack |
+|---|---|---|
+| 1 | not recorded | 67px |
+| 2 | 33px | 51px |
+| 3 | not recorded | 61px |
+| 4 | not recorded | 63px |
+| 5 | not recorded | 83px |
+| 6 | not recorded | 26px |
+
+Quick Capture stayed on page 2 with the full author copy, so the shorter
+fallback copy supplied for the tight case was not needed.
+
+### One contrast defect found and fixed in this pass
+
+The new gold descriptor badge put `--gold-ink` (#7F6A30) on the gold ground
+(#EFE4C6), which measures **4.13:1 and fails AA**. Both the PDF cover badge and
+the landing page badge now use #756025, the same hue two steps darker, at
+**4.80:1**. The site-wide `--gold-ink` was left alone.
+
 ---
 
 ## 1. Method statements compared against the approved Keep the Proof source
@@ -97,7 +166,12 @@ Two defects were found this way and fixed:
   standalone "Why it mattered" label rendered as body text.
 
 Overflow was checked separately: no page overflows its 11in box, and all six
-clear the running footer. Tightest is page 2 with 33px of slack.
+clear the running footer. After the refinement pass the tightest is page 6 with
+26px of slack. See the refinement table above.
+
+Two further defects were found by rendering during the refinement pass and
+fixed: page 3 overflowed its box by 32px when the four guided cards were first
+laid in, and the gold badge failed AA. Both are described above.
 
 ## 11. Every fillable field tested
 
@@ -106,7 +180,7 @@ disk, values read back.
 
 | | |
 |---|---|
-| Text fields | 14 (5 multiline, 9 single line) |
+| Text fields | 14 (7 multiline, 7 single line) |
 | Checkboxes | 8 |
 | Fields written | 22 |
 | Read back correctly | 22 |
@@ -130,7 +204,8 @@ Written as a separate one-page note:
 
 ## Landing page verification
 
-Run at 1440, 834 and 390 against the page served locally.
+Re-run at 1440, 834 and 390 against the page served locally after the
+refinement pass.
 
 - **axe, WCAG 2.1 AA: 0 violations** at all three widths
 - One `h1`, no skipped heading levels, 8 sections
@@ -154,6 +229,7 @@ field and the attribution object.
 
 | | Blocker | State |
 |---|---|---|
+| 0 | **The page 2 author portrait is not in the repository.** `images/temidayo-gold-ivory.png` was approved and supplied in chat, but a chat attachment cannot be written to disk from the build container, so it has to be committed by hand. `build.js` refuses to print until it is there. Nothing else in this pass is blocked by it. | Open |
 | 1 | **PDF hosting decision.** No PDFs are stored in this repository by existing convention, so where the file lives, and what the email download link points at, is undecided. | Open |
 | 2 | **Kit setup.** The sequence and both tags do not exist yet: `KIT_SEQ_CAREER_EVIDENCE_STARTER`, `KIT_TAG_CAREER_EVIDENCE_STARTER`, `KIT_TAG_CAREER_EVIDENCE_STARTER_GUIDANCE`. The function refuses to run without them and returns 503. | Open |
 | 3 | **Social share image.** No Starter-specific card exists; the page falls back to `og-default.png`. | Open |

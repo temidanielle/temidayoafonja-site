@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Free Career Accomplishment Tracker | Keep the Proof Starter</title>
-<meta name="description" content="A free 10-minute career evidence starter for experienced professionals. Turn one accomplishment into proof you can use in a performance review, interview, internal move or career pivot.">
+<meta name="description" content="Keep the Proof: The 10-Minute Career Evidence Starter, a free tracker for experienced professionals. Turn one accomplishment into proof you can use in a performance review, interview, internal move or career pivot.">
 <link rel="canonical" href="https://temidayoafonja.com/career-evidence-starter">
 
 <!-- PREVIEW: not published. Remove this robots tag at launch, once the PDF and
@@ -182,9 +182,51 @@
 .ces-ladder { margin-top: 30px; border-top: 1px solid var(--line-warm); padding-top: 22px; max-width: 66ch; }
 .ces-ladder p { font-size: 15px; line-height: 1.7; color: var(--muted-warm); }
 .ces-ladder strong { color: var(--navy); }
+
+/* ── Warmer register, carried over from the PDF ──
+   These four devices exist on the sheet itself: the gold descriptor label on
+   the cover, the four-strip build preview on the cover, the internal-language
+   transformation on page 4, and the timing line. Repeating them here is what
+   makes the page and the download read as one object. */
+/* --gold-ink on this gold ground measures 4.13:1, which fails AA. #756025 is
+   the same hue two steps darker and measures 4.80:1. Badge only, so the
+   site-wide --gold-ink is left alone. */
+.ces-badge { display: inline-block; text-transform: uppercase; letter-spacing: .15em;
+  font-size: 11px; font-weight: 800; color: #756025; background: #EFE4C6;
+  border-bottom: 2px solid var(--gold); padding: 7px 13px 6px; margin-bottom: 20px; }
+.ces-time { font-size: 15px; color: var(--muted-warm); margin-top: 22px;
+  border-top: 1px solid var(--line-warm); padding-top: 16px; max-width: 66ch; }
+
+.ces-hero-grid { display: grid; grid-template-columns: 1fr 300px; gap: 48px; align-items: end; }
+.ces-build { border: 1px solid var(--line-warm); border-radius: 5px; background: #fff; overflow: hidden; }
+.ces-build .cap { text-transform: uppercase; letter-spacing: .14em; font-size: 10px; font-weight: 800;
+  color: var(--muted-warm); padding: 12px 16px 10px; border-bottom: 1px solid var(--line-warm); }
+.ces-build .row { display: flex; align-items: center; gap: 11px; padding: 13px 16px;
+  font-size: 12.5px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--navy); border-bottom: 1px solid rgba(15,35,71,.07); }
+.ces-build .row i { width: 13px; height: 2px; background: var(--gold); flex: 0 0 auto; }
+.ces-build .row--out { background: var(--navy); color: #fff; border-bottom: 0; font-weight: 800; }
+.ces-build .row--out i { width: 17px; }
+
+.ces-xform { display: grid; grid-template-columns: 1fr 34px 1.3fr; align-items: stretch;
+  border: 1px solid var(--line-warm); border-radius: 5px; overflow: hidden; margin-top: 34px; max-width: 760px; }
+.ces-xcol { padding: 18px 20px; }
+.ces-xcol--in { background: #F3EDE2; }
+.ces-xcol--out { background: var(--navy); }
+.ces-xlbl { text-transform: uppercase; letter-spacing: .14em; font-size: 10px; font-weight: 800;
+  color: var(--muted-warm); margin-bottom: 10px; }
+.ces-xcol--out .ces-xlbl { color: var(--gold); }
+.ces-xcol p { font-size: 14.5px; line-height: 1.75; margin: 0; }
+.ces-xcol--out p { color: #fff; }
+.ces-xarrow { display: flex; align-items: center; justify-content: center;
+  background: #F3EDE2; color: var(--gold-ink); font-size: 17px; }
+.ces-xnote { font-size: 13px; color: var(--muted-warm); margin-top: 12px; max-width: 760px; }
+
 @media (max-width: 860px) {
-  .ces-steps, .ces-two, .ces-about { grid-template-columns: 1fr; gap: 30px; }
+  .ces-steps, .ces-two, .ces-about, .ces-hero-grid { grid-template-columns: 1fr; gap: 30px; }
   .ces-sec { padding: 56px 0; }
+  .ces-xform { grid-template-columns: 1fr; }
+  .ces-xarrow { padding: 6px 0; transform: rotate(90deg); }
 }
 </style>
 </head>
@@ -213,10 +255,21 @@
 <!-- HERO -->
 <section class="cd-hero">
   <div class="lean-wrap">
-    <span class="lean-eyebrow fade-up delay-1">Free Career Accomplishment Tracker</span>
-    <h1 class="fade-up delay-2">Turn One Accomplishment Into Proof You Can Actually Use.</h1>
-    <p class="cd-sub fade-up delay-3">In about 10 minutes, turn one real piece of work into a clear evidence statement you can carry beyond your current job title.</p>
-    <div style="margin-top:28px;"><a class="lean-btn primary" href="#get-the-starter">Get the Free Career Evidence Starter</a></div>
+    <div class="ces-hero-grid">
+      <div>
+        <span class="ces-badge fade-up delay-1">Free Career Accomplishment Tracker</span>
+        <h1 class="fade-up delay-2">Turn One Accomplishment Into Proof You Can Actually Use.</h1>
+        <p class="cd-sub fade-up delay-3">Turn one real piece of work into a clear evidence statement you can carry beyond your current job title. Set aside about 10&ndash;15 focused minutes.</p>
+        <div style="margin-top:28px;"><a class="lean-btn primary" href="#get-the-starter">Get the Free Career Evidence Starter</a></div>
+      </div>
+      <div class="ces-build fade-up delay-3" aria-hidden="true">
+        <div class="cap">What you will build</div>
+        <div class="row"><i></i>Before</div>
+        <div class="row"><i></i>Your contribution</div>
+        <div class="row"><i></i>What changed</div>
+        <div class="row row--out"><i></i>What travels</div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -234,12 +287,13 @@
 <section class="ces-sec ces-sec--paper">
   <div class="lean-wrap">
     <span class="lean-eyebrow">What you leave with</span>
-    <h2>Three things, in about ten minutes.</h2>
+    <h2>Three things, in one focused sitting.</h2>
     <ul class="ces-leave">
       <li>One completed Career Evidence Entry, built from a real piece of your own work</li>
       <li>One portable Proof Line you can adapt for a review, an interview or a conversation</li>
       <li>One way to repeat the thinking on the next piece of work worth keeping</li>
     </ul>
+    <p class="ces-time">Set aside about 10&ndash;15 focused minutes.</p>
   </div>
 </section>
 
@@ -265,6 +319,19 @@
         <p>Strip out the internal language and put it in one sentence someone outside your company would understand.</p>
       </div>
     </div>
+
+    <div class="ces-xform">
+      <div class="ces-xcol ces-xcol--in">
+        <div class="ces-xlbl">Inside your company</div>
+        <p>Project Horizon<br>QBR<br>XYZ Workflow</p>
+      </div>
+      <div class="ces-xarrow" aria-hidden="true">&rarr;</div>
+      <div class="ces-xcol ces-xcol--out">
+        <div class="ces-xlbl">Outside your company</div>
+        <p>Cross-functional onboarding redesign<br>Operating review<br>Customer intake process</p>
+      </div>
+    </div>
+    <p class="ces-xnote">This is an example of the distinction, not a claim that those terms are equivalent in every workplace.</p>
   </div>
 </section>
 
@@ -302,7 +369,7 @@
   <div class="lean-wrap">
     <span class="lean-eyebrow">Who made this</span>
     <div class="ces-about">
-      <img src="/temi-photo.jpg" alt="Temidayo Afonja" width="172" height="215">
+      <img src="/images/temidayo-gold-ivory.png" alt="Temidayo Afonja" width="172" height="172">
       <div>
         <h2 style="font-size:clamp(24px,3vw,32px);">Temidayo Afonja</h2>
         <p>Career Portability Advisor and founder of The Density Group, a Capability Formation advisory firm. Her work draws on nearly two decades of practice across Big 4 consulting, global life sciences and high-growth technology.</p>

@@ -12,7 +12,7 @@ the paid one.
 | Price | Free | $49 | $150 |
 | The job | Prove **one** thing | Build the **record** | Read the **position** |
 | The question it answers | What did I do, what changed, and how would I say it outside this company? | How do I capture, translate, organise and maintain all of it before I need it? | What is my current work building in me, and will it still matter when the context changes? |
-| Time | About 10 minutes | About 60 minutes, then ongoing | One sitting, rerun quarterly |
+| Time | About 10 to 15 focused minutes | About 60 minutes, then ongoing | One sitting, rerun quarterly |
 | Output | One completed evidence entry and one portable Proof Line | A maintained career evidence record | A read of your capability position |
 | Route | `/career-evidence-starter` | `/keep-the-proof` | `/fieldkit` |
 

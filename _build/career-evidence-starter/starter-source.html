@@ -14,7 +14,13 @@
    The visual family is the Keep the Proof / Field Kit system: Cormorant
    Garamond display, DM Sans text, navy, gold and rust. The cover deliberately
    inverts Keep the Proof's navy ground to ivory, so the two read as siblings
-   rather than as the same object, and so this one looks lighter, which it is. */
+   rather than as the same object, and so this one looks lighter, which it is.
+
+   Refinement pass: each page now carries a different composition. Cover holds
+   a tool preview, page 2 opens with the author note, page 3 is four guided
+   cards, page 4 is chips plus a before/after transformation, page 5 keeps the
+   navy scaffold, page 6 opens on the completion moment. The family look is
+   held by the type, the palette and the running foot, not by repetition. */
 
 @page { size: 8.5in 11in; margin: 0; }
 * { box-sizing: border-box; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
@@ -25,13 +31,20 @@ html, body { margin: 0; padding: 0; background: #fff; }
   --navy-deep: #0B1B38;
   --cream: #F5F0E8;
   --paper: #FFFDF8;
+  --tint: #FAF6EE;      /* card ground on the cream pages */
+  --tint-2: #F3EDE2;    /* the quieter of the two card grounds */
   --ink: #182238;
   --muted: #5D6676;
   --gold: #C9A84C;
   --gold-ink: #7F6A30;
+  --gold-soft: #EFE4C6;
+  /* --gold-ink on --gold-soft measures 4.13:1 and fails AA. Same hue, two
+     steps darker, 4.80:1. Used only where gold sits on the gold ground. */
+  --gold-deep: #756025;
   --rust: #C1440E;
   --rust-ink: #B6400D;
   --line: rgba(15,35,71,.16);
+  --line-soft: rgba(15,35,71,.10);
 }
 
 .page {
@@ -46,7 +59,7 @@ html, body { margin: 0; padding: 0; background: #fff; }
 
 /* Type */
 .eyebrow { font-family: 'DM Sans', sans-serif; font-size: 8.5pt; font-weight: 700;
-  letter-spacing: .2em; text-transform: uppercase; color: var(--rust-ink); margin: 0 0 14px; }
+  letter-spacing: .2em; text-transform: uppercase; color: var(--rust-ink); margin: 0 0 12px; }
 h1 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 300;
   font-size: 46pt; line-height: 1.02; color: var(--navy); margin: 0; letter-spacing: -.01em; }
 h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400;
@@ -54,42 +67,78 @@ h2 { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 400;
 h3 { font-family: 'DM Sans', sans-serif; font-size: 9pt; font-weight: 700;
   letter-spacing: .13em; text-transform: uppercase; color: var(--navy); margin: 0 0 6px; }
 p  { font-size: 10.5pt; line-height: 1.55; color: var(--ink); margin: 0 0 10px; max-width: 6.2in; }
-p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 16px; }
+p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 14px; }
 .help { font-size: 8.8pt; line-height: 1.45; color: var(--muted); margin: 0 0 7px; max-width: 6.2in; }
-.rule { width: 1.05in; height: 3px; background: var(--rust); margin: 16px 0 20px; }
-.rule--thin { width: 100%; height: 1px; background: var(--line); margin: 18px 0; }
+.rule { width: 1.05in; height: 3px; background: var(--rust); margin: 14px 0 18px; }
+.rule--thin { width: 100%; height: 1px; background: var(--line); margin: 16px 0; }
 
-/* Cover */
+/* ── Page 1, cover ────────────────────────────────────────────────────── */
 .cover { display: flex; flex-direction: column; height: 100%; }
-.cover .mark { width: 46px; height: 46px; border: 2px solid var(--navy); position: relative; margin-bottom: 34px; }
+.cover .mark { width: 46px; height: 46px; border: 2px solid var(--navy); position: relative; margin-bottom: 26px; }
 .cover .mark::before { content: ''; position: absolute; left: 8px; top: 8px; width: 30px; height: 2px; background: var(--gold); }
 .cover .mark::after  { content: ''; position: absolute; left: 8px; top: 16px; width: 18px; height: 2px; background: var(--rust); }
-.cover .eyebrow { color: var(--gold-ink); letter-spacing: .22em; }
+/* The descriptor used to be tiny widely spaced copy. It is now a label the eye
+   actually lands on, held down by a gold rule rather than a filled block. */
+.cover .badge { display: inline-block; align-self: flex-start;
+  font-family: 'DM Sans', sans-serif; font-size: 9pt; font-weight: 700;
+  letter-spacing: .16em; text-transform: uppercase; color: var(--gold-deep);
+  background: var(--gold-soft); border-bottom: 2px solid var(--gold);
+  padding: 6px 12px 5px; margin: 0 0 20px; }
 .cover .family { font-family: 'DM Sans', sans-serif; font-size: 11pt; font-weight: 700;
   letter-spacing: .3em; text-transform: uppercase; color: var(--rust-ink); margin: 0 0 12px; }
 .cover h1 { font-size: 52pt; }
 .cover .promise { font-family: 'Cormorant Garamond', serif; font-size: 15.5pt; line-height: 1.34;
-  color: var(--navy); max-width: 5.1in; margin: 0 0 20px; }
-.cover .meta { font-size: 9.5pt; line-height: 1.5; color: var(--muted); }
-.cover .spacer { flex: 1 1 auto; }
+  color: var(--navy); max-width: 5.1in; margin: 0 0 16px; }
+.cover .meta { font-size: 9.5pt; line-height: 1.5; color: var(--muted); margin: 0; }
+.cover .spacer { flex: 1 1 auto; min-height: 0.2in; }
+.cover .lower { display: flex; align-items: flex-end; justify-content: space-between; gap: 0.4in; }
 .cover .byline { font-size: 10pt; color: var(--navy); font-weight: 500; margin: 0 0 2px; }
-.cover .byline-sub { font-size: 9pt; color: var(--muted); margin: 0; }
+.cover .byline-sub { font-size: 9pt; color: var(--muted); margin: 0; max-width: 3.3in; }
 .cover .footline { display: flex; justify-content: space-between; align-items: flex-end;
-  border-top: 1px solid var(--line); padding-top: 12px; margin-top: 22px; }
+  border-top: 1px solid var(--line); padding-top: 12px; margin-top: 20px; }
 .cover .cf { font-size: 8.5pt; letter-spacing: .12em; text-transform: uppercase; color: var(--gold-ink); font-weight: 700; }
 .cover .url { font-size: 9pt; color: var(--muted); }
 
-/* Boxes */
-.box { border: 1px solid var(--line); border-radius: 4px; padding: 16px 18px; background: #fff; }
-.box--safe { border-left: 3px solid var(--rust); }
-.box h3 { color: var(--rust-ink); }
-.box p { font-size: 9.2pt; line-height: 1.5; margin: 0 0 7px; }
-.box p:last-child { margin-bottom: 0; }
+/* The tool preview. Four stacked strips in the order the sheet works, so the
+   cover reads as an instrument rather than as a report. */
+.preview { width: 2.75in; flex: 0 0 auto; }
+.preview .cap { font-size: 7.6pt; font-weight: 700; letter-spacing: .14em;
+  text-transform: uppercase; color: var(--muted); margin: 0 0 8px; text-align: right; }
+.pv-stack { border: 1px solid var(--line); border-radius: 4px; background: #fff; overflow: hidden; }
+.pv { font-size: 8.8pt; font-weight: 500; letter-spacing: .11em; text-transform: uppercase;
+  color: var(--navy); padding: 13px 14px; border-bottom: 1px solid var(--line-soft);
+  display: flex; align-items: center; gap: 10px; }
+.pv i { display: block; width: 12px; height: 2px; background: var(--gold); flex: 0 0 auto; font-style: normal; }
+.pv--out { background: var(--navy); color: #fff; border-bottom: 0; font-weight: 700; }
+.pv--out i { background: var(--gold); width: 16px; }
 
-/* Checklist of selection tests */
-.tests { list-style: none; margin: 12px 0 0; padding: 0; }
-.tests li { position: relative; padding: 0 0 8px 20px; font-size: 10pt; line-height: 1.5; color: var(--ink); }
-.tests li::before { content: ''; position: absolute; left: 0; top: 8px; width: 11px; height: 2px; background: var(--rust-ink); }
+/* ── Page 2, author note + choose the work ────────────────────────────── */
+.author { display: flex; gap: 20px; align-items: flex-start; margin: 0 0 4px; }
+.author .photo { width: 2.15in; flex: 0 0 auto; }   /* ~25% of the 8.5in page */
+.author .photo img { display: block; width: 100%; height: 2.15in; object-fit: cover;
+  object-position: center 22%; border-radius: 3px; border: 1px solid var(--line); }
+.author .note { flex: 1 1 auto; min-width: 0; }
+.author .note p { font-size: 9.6pt; line-height: 1.55; margin: 0 0 8px; max-width: none; }
+.author .note p:last-child { margin-bottom: 0; }
+.author .sig { font-family: 'Cormorant Garamond', serif; font-size: 12pt; color: var(--navy);
+  margin-top: 10px; }
+
+/* Selection tests, two columns so they scan rather than stack */
+.tests { list-style: none; margin: 10px 0 0; padding: 0; }
+.tests li { position: relative; padding: 0 0 7px 18px; font-size: 9.6pt; line-height: 1.45; color: var(--ink); }
+.tests li::before { content: ''; position: absolute; left: 0; top: 7px; width: 10px; height: 2px; background: var(--rust-ink); }
+.tests--2col { column-count: 2; column-gap: 26px; }
+.tests--2col li { break-inside: avoid; }
+
+/* The safety card. Same four protections, a quarter of the visual weight. */
+.safe { background: var(--tint-2); border: 1px solid var(--line-soft);
+  border-left: 2px solid var(--rust); border-radius: 3px; padding: 12px 16px 11px; margin-top: 14px; }
+.safe .tag { font-size: 8.4pt; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  color: var(--rust-ink); margin: 0 0 5px; }
+.safe .lead { font-size: 8.8pt; line-height: 1.45; color: var(--ink); margin: 0 0 7px; max-width: none; }
+.safe .legal { font-size: 8pt; color: var(--muted); margin: 6px 0 0; max-width: none; }
+.safe .check li { font-size: 8.6pt; line-height: 1.4; padding-bottom: 6px; }
+.safe .check li:last-child { padding-bottom: 0; }
 
 /* Numbered prompts */
 .q { margin-bottom: 4px; }
@@ -102,10 +151,13 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 16
 .fld { border: 1px solid var(--line); border-radius: 3px; background: #fff; margin: 6px 0 14px; }
 .fld--lines { background:
   repeating-linear-gradient(to bottom, transparent, transparent calc(0.26in - 1px), var(--line) 0.26in); }
+/* Heights are whole multiples of the 0.26in ruling, so a printed sheet always
+   ends on a full line rather than half of one. */
 .fld--sm { height: 0.34in; }
-.fld--md { height: 0.78in; }
-.fld--lg { height: 1.04in; }
-.fld--xl { height: 1.3in; }
+.fld--md { height: 0.78in; }   /* 3 lines */
+.fld--lg { height: 1.04in; }   /* 4 lines */
+.fld--xl { height: 1.30in; }   /* 5 lines */
+.fld--2xl { height: 2.08in; }  /* 8 lines, the Proof Line itself */
 
 .inline-flds { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
 .inline-flds--2 { grid-template-columns: 1.6fr 1fr; }
@@ -114,42 +166,121 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 16
 .lbl { font-size: 8.2pt; font-weight: 700; letter-spacing: .09em; text-transform: uppercase;
   color: var(--muted); margin: 0 0 4px; }
 
-/* Scaffold */
-.scaffold { background: var(--navy); color: #fff; border-radius: 4px; padding: 18px 20px; margin: 4px 0 16px; }
+/* ── Page 3, four guided cards ────────────────────────────────────────── */
+.pull { font-family: 'Cormorant Garamond', serif; font-size: 13.5pt; line-height: 1.35;
+  color: var(--navy); border-left: 2px solid var(--gold); padding-left: 14px;
+  margin: 0 0 12px; max-width: 5.7in; }
+.gcard { border: 1px solid var(--line-soft); border-radius: 3px; padding: 9px 14px 2px;
+  margin: 0 0 7px; background: #fff; }
+.gcard--alt { background: var(--tint); }          /* the only tonal variation */
+.gcard .gtag { display: flex; align-items: center; gap: 8px; font-size: 8.2pt; font-weight: 700;
+  letter-spacing: .15em; text-transform: uppercase; color: var(--rust-ink); margin: 0 0 4px; }
+.gcard .gtag .gn { font-family: 'Cormorant Garamond', serif; font-size: 13.5pt; font-weight: 400;
+  font-variant-numeric: lining-nums; letter-spacing: 0; color: var(--gold-ink); line-height: .95; }
+.gcard .gq { font-size: 10pt; font-weight: 500; line-height: 1.35; color: var(--navy);
+  margin: 0 0 2px; max-width: none; }
+.gcard .ghelp { font-size: 8.5pt; line-height: 1.4; color: var(--muted); margin: 0 0 1px; max-width: none; }
+.gcard .fld { margin: 6px 0 9px; }
+
+/* Page 3 carries four cards plus a header, so its header runs tighter than the
+   other pages. The fields themselves are untouched: the space comes out of
+   the spacing, never out of the room left to write in. */
+.page--build .eyebrow { margin-bottom: 10px; }
+.page--build h2 { margin-bottom: 6px; }
+.page--build .rule { margin: 10px 0 14px; }
+.page--build .fld--sm { margin-bottom: 10px; }
+.page--build .pull { font-size: 12.5pt; margin-bottom: 10px; }
+.page--build .gcard { padding-bottom: 1px; }
+.page--build .gcard .fld { margin: 5px 0 8px; }
+
+/* ── Page 4, chips and the transformation ─────────────────────────────── */
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0 8px; }
+.chip { font-size: 8.4pt; line-height: 1.2; color: var(--navy); background: #fff;
+  border: 1px solid var(--line); border-radius: 2px; padding: 5px 9px; }
+.chipnote { font-family: 'Cormorant Garamond', serif; font-size: 11pt; font-style: italic;
+  color: var(--muted); margin: 0 0 4px; max-width: none; }
+.xform { display: grid; grid-template-columns: 1fr 26px 1.35fr; align-items: center;
+  gap: 0; border: 1px solid var(--line-soft); border-radius: 3px; overflow: hidden; margin: 8px 0 6px; }
+.xcol { padding: 11px 14px; align-self: stretch; }
+.xcol--in { background: var(--tint-2); }
+.xcol--out { background: var(--navy); }
+.xlbl { font-size: 7.6pt; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+  margin: 0 0 6px; color: var(--muted); }
+.xcol--out .xlbl { color: var(--gold); }
+.xitem { font-size: 9pt; line-height: 1.5; margin: 0; color: var(--ink); max-width: none; }
+.xcol--out .xitem { color: #fff; }
+.xarrow { align-self: stretch; display: flex; align-items: center; justify-content: center;
+  background: var(--tint-2); color: var(--gold-ink); font-size: 13pt; }
+.xnote { font-size: 8pt; line-height: 1.4; color: var(--muted); margin: 0 0 12px; max-width: none; }
+
+/* ── Page 5, scaffold and completion card ─────────────────────────────── */
+.scaffold { background: var(--navy); color: #fff; border-radius: 4px; padding: 18px 20px; margin: 4px 0 14px; }
 .scaffold p { color: rgba(255,255,255,.9); font-size: 10.5pt; line-height: 1.62; margin: 0; max-width: none; }
 .scaffold .sv { color: var(--gold); }
 
-.example { border-left: 2px solid var(--gold); padding-left: 16px; margin: 0 0 16px; }
+.example { display: grid; grid-template-columns: 1fr 1.5fr; gap: 18px; margin: 0 0 14px; }
+.example .col { border-left: 2px solid var(--line); padding-left: 14px; }
+.example .col--to { border-left-color: var(--gold); }
 .example .lbl { font-size: 8pt; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
-  color: var(--gold-ink); margin: 0 0 4px; }
-.example p { font-size: 9.6pt; line-height: 1.5; margin: 0 0 10px; color: var(--ink); }
-.example p:last-child { margin-bottom: 0; }
+  color: var(--muted); margin: 0 0 4px; }
+.example .col--to .lbl { color: var(--gold-ink); }
+.example p { font-size: 9.4pt; line-height: 1.5; margin: 0; color: var(--ink); max-width: none; }
 
 /* Self check */
-.check { list-style: none; margin: 10px 0 0; padding: 0; }
+.check { list-style: none; margin: 8px 0 0; padding: 0; }
 .check li { display: flex; align-items: flex-start; gap: 10px; padding: 0 0 9px; font-size: 9.6pt;
   line-height: 1.45; color: var(--ink); }
  /* Spacer only. The AcroForm checkbox widget supplies the visible box, so
     drawing one here as well produced two overlapping squares. */
 .cbx { width: 13px; height: 13px; flex: 0 0 auto; margin-top: 1px; }
 
-/* Use it */
-.uses { display: grid; grid-template-columns: 1fr 1fr; gap: 7px 22px; margin: 12px 0 0; }
-.uses div { font-size: 10pt; color: var(--ink); padding: 7px 0; border-bottom: 1px solid var(--line); }
+.travel { border: 1px solid var(--line-soft); background: var(--tint); border-radius: 3px;
+  padding: 13px 16px 8px; margin-top: 14px; }
+.travel .tag { font-size: 8.6pt; font-weight: 700; letter-spacing: .15em; text-transform: uppercase;
+  color: var(--navy); margin: 0 0 2px; }
+.travel .check li { padding-bottom: 8px; font-size: 9.2pt; }
 
-.next { background: var(--navy); border-radius: 4px; padding: 24px 26px; margin-top: 18px; }
-.next .eyebrow { color: var(--gold); }
-.next h2 { color: #fff; font-size: 21pt; margin-bottom: 10px; }
-.next p { color: rgba(255,255,255,.82); font-size: 10pt; line-height: 1.6; margin: 0 0 12px; max-width: none; }
-.next .ladder { font-size: 10pt; line-height: 1.75; color: rgba(255,255,255,.9);
-  border-top: 1px solid rgba(255,255,255,.18); padding-top: 12px; margin: 0 0 14px; }
+/* Page 5 is the page the whole sheet exists to reach, so the space it has
+   spare goes into the Proof Line field rather than into the bottom margin. */
+.page--proof .scaffold { margin: 6px 0 16px; padding: 26px 24px; }
+.page--proof .scaffold p { font-size: 11pt; line-height: 1.7; }
+.page--proof .example { margin-bottom: 18px; }
+.page--proof .example p { font-size: 9.8pt; line-height: 1.55; }
+.page--proof .travel { margin-top: 26px; padding: 17px 18px 12px; }
+.page--proof .travel .check li { padding-bottom: 10px; }
+
+/* ── Page 6, completion and the next step ─────────────────────────────── */
+/* The last page is laid out as a column so the closing line can sit on the
+   baseline of the page rather than leaving a hole beneath it. */
+.page--done { display: flex; flex-direction: column; }
+/* Without this, flex would quietly compress the blocks to fit instead of
+   overflowing, and the overflow check would never see a problem. */
+.page--done > * { flex: 0 0 auto; }
+.done { font-size: 46pt; line-height: 1; margin: 0 0 12px; }
+.uses { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin: 10px 0 10px; }
+.uses div { font-size: 10pt; color: var(--navy); background: #fff; border: 1px solid var(--line-soft);
+  border-radius: 3px; padding: 12px 14px; }
+.transition { font-family: 'Cormorant Garamond', serif; font-size: 19pt; line-height: 1.2;
+  color: var(--navy); margin: 18px 0 14px; max-width: none; }
+.transition .t2 { color: var(--gold-ink); }
+
+.next { background: var(--navy); border-radius: 4px; padding: 20px 22px;
+  display: flex; gap: 20px; align-items: flex-start; }
+.next .cover-shot { width: 1.28in; flex: 0 0 auto; }
+.next .cover-shot img { display: block; width: 100%; border-radius: 2px;
+  border: 1px solid rgba(255,255,255,.25); }
+.next .body { flex: 1 1 auto; min-width: 0; }
+.next p { color: rgba(255,255,255,.82); font-size: 9.4pt; line-height: 1.55; margin: 0 0 9px; max-width: none; }
+.next .ladder { font-size: 10pt; line-height: 1.7; color: rgba(255,255,255,.9);
+  border-bottom: 1px solid rgba(255,255,255,.18); padding-bottom: 10px; margin: 0 0 11px; }
 .next .ladder .lg { color: var(--gold); font-weight: 700; }
-.next .prod { font-family: 'Cormorant Garamond', serif; font-size: 15pt; color: #fff; margin: 0 0 2px; }
-.next .prodsub { font-size: 9pt; color: var(--gold); letter-spacing: .06em; margin: 0 0 10px; }
-.next .link { font-family: 'DM Sans', sans-serif; font-size: 10pt; color: var(--gold); }
+.next .prod { font-family: 'Cormorant Garamond', serif; font-size: 15pt; color: #fff; margin: 0 0 1px; }
+.next .prodsub { font-size: 8.8pt; color: var(--gold); letter-spacing: .06em; margin: 0 0 9px; }
+.next .link { font-family: 'DM Sans', sans-serif; font-size: 9.6pt; color: var(--gold); margin: 0; }
 
 .closing { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 13pt;
-  line-height: 1.45; color: var(--navy); margin: 20px 0 0; max-width: 5.6in; }
+  line-height: 1.45; color: var(--navy); margin: 18px 0 0; max-width: 5.6in; }
+.page--done .closing { margin-top: auto; margin-bottom: 0.22in; }
 
 /* Running foot */
 .foot { position: absolute; left: 0.85in; right: 0.85in; bottom: 0.42in;
@@ -164,15 +295,28 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 16
 <section class="page">
   <div class="cover">
     <div class="mark"></div>
-    <p class="eyebrow">Free Career Accomplishment Tracker</p>
+    <p class="badge">Free Career Accomplishment Tracker</p>
     <p class="family">Keep the Proof</p>
     <h1>The 10-Minute<br>Career Evidence<br>Starter</h1>
     <div class="rule"></div>
     <p class="promise">Turn one accomplishment into proof you can use in a performance review, interview, internal move or career pivot.</p>
-    <p class="meta">One accomplishment. One Proof Line. About 10 minutes.</p>
+    <p class="meta">One accomplishment. One Proof Line.</p>
     <div class="spacer"></div>
-    <p class="byline">Temidayo Afonja</p>
-    <p class="byline-sub">Career Portability Advisor &middot; Founder, The Density Group</p>
+    <div class="lower">
+      <div>
+        <p class="byline">Temidayo Afonja</p>
+        <p class="byline-sub">Career Portability Advisor &middot; Founder, The Density Group</p>
+      </div>
+      <div class="preview">
+        <p class="cap">What you will build</p>
+        <div class="pv-stack">
+          <div class="pv"><i></i>Before</div>
+          <div class="pv"><i></i>Your contribution</div>
+          <div class="pv"><i></i>What changed</div>
+          <div class="pv pv--out"><i></i>What travels</div>
+        </div>
+      </div>
+    </div>
     <div class="footline">
       <span class="cf">A Capability Formation resource</span>
       <span class="url">temidayoafonja.com</span>
@@ -180,17 +324,28 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 16
   </div>
 </section>
 
-<!-- ══ PAGE 2 · BEFORE YOU START ══ -->
+<!-- ══ PAGE 2 · WHY I MADE THIS + CHOOSE THE WORK ══ -->
 <section class="page page--paper">
-  <p class="eyebrow">Before you start</p>
+  <div class="author">
+    <div class="photo">
+      <img src="/images/temidayo-gold-ivory.png" alt="Temidayo Afonja">
+    </div>
+    <div class="note">
+      <p class="eyebrow">Why I made this</p>
+      <p>&ldquo;I used to think I would remember the work that mattered. I don&rsquo;t.</p>
+      <p>I created Keep the Proof after seeing how quickly the details behind good work disappear: what was true before, what you actually contributed and why the result mattered.</p>
+      <p>For this Starter, you only need one piece of work. Let&rsquo;s make it usable before you forget it.&rdquo;</p>
+      <p class="sig">Temidayo Afonja</p>
+    </div>
+  </div>
+
+  <div class="rule--thin"></div>
+
   <h2>Choose one accomplishment worth remembering.</h2>
-  <div class="rule"></div>
+  <p>Do not try to reconstruct your entire career. Choose one project, assignment, decision, problem, launch, redesign, client engagement, process improvement or piece of work from the recent past that mattered. Then complete the six prompts that follow.</p>
 
-  <p class="lede">Do not try to reconstruct your entire career.</p>
-  <p>Choose one project, assignment, decision, problem, launch, redesign, client engagement, process improvement or piece of work from the recent past that mattered. Then complete the six prompts that follow.</p>
-
-  <h3 style="margin-top:16px;">Choose something where at least one is true</h3>
-  <ul class="tests">
+  <h3 style="margin-top:14px;">Choose something where at least one is true</h3>
+  <ul class="tests tests--2col">
     <li>Something changed because you were involved.</li>
     <li>You exercised judgment, not just activity.</li>
     <li>You solved or prevented a meaningful problem.</li>
@@ -215,48 +370,59 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 16
   <p class="lbl lbl--solo">Why it mattered</p>
   <div class="fld fld--sm" data-field="qc_why" data-lines="1"></div>
 
-  <div class="rule--thin"></div>
-
-  <div class="box box--safe">
-    <h3>Permission checklist</h3>
-    <p>Tick each one before you write. If you cannot tick it, leave that detail out.</p>
+  <div class="safe">
+    <p class="tag">Before you write</p>
+    <p class="lead">Tick each one before you write. If you cannot tick it, leave that detail out.</p>
     <ul class="check check--tight">
       <li><span class="cbx" data-check="perm_recollection"></span><span>I am recording my own recollection, and information I am permitted to retain.</span></li>
       <li><span class="cbx" data-check="perm_nocopy"></span><span>I am not copying, forwarding, photographing or reproducing confidential or employer-owned material.</span></li>
       <li><span class="cbx" data-check="perm_noprotected"></span><span>I am not including protected customer, employee or proprietary company information.</span></li>
       <li><span class="cbx" data-check="perm_unsure"></span><span>Where I am unsure whether I may retain something, I have left it out.</span></li>
     </ul>
-    <p style="margin-top:8px;">This is educational material, not legal advice.</p>
+    <p class="legal">This is educational material, not legal advice.</p>
   </div>
 
   <div class="foot"><span class="l">Keep the Proof &middot; Career Evidence Starter</span><span>2</span></div>
 </section>
 
 <!-- ══ PAGE 3 · BUILD THE EVIDENCE ══ -->
-<section class="page">
+<section class="page page--build">
   <p class="eyebrow">Build the evidence</p>
   <h2>What actually happened?</h2>
   <div class="rule"></div>
 
-  <h3>Project or work event</h3>
-  <p class="help">What piece of work are you capturing?</p>
+  <p class="pull">You do not need a perfect metric. You need a truthful account of what changed.</p>
+
+  <p class="lbl">Project or work event</p>
   <div class="fld fld--sm" data-field="project" data-lines="1"></div>
 
-  <div class="q"><span class="n">1</span><span class="t">What was true before I got involved?</span></div>
-  <p class="help">Describe the starting condition, problem, constraint or need.</p>
-  <div class="fld fld--md fld--lines" data-field="q1_before" data-lines="3"></div>
+  <div class="gcard">
+    <p class="gtag"><span class="gn">1</span>Before</p>
+    <p class="gq">What was true before I got involved?</p>
+    <p class="ghelp">What problem, condition, constraint or need existed?</p>
+    <div class="fld fld--md fld--lines" data-field="q1_before" data-lines="3"></div>
+  </div>
 
-  <div class="q"><span class="n">2</span><span class="t">What was my specific contribution or judgment?</span></div>
-  <p class="help">Your part, not everything the team did. What did you notice, decide, influence, build, change or prevent?</p>
-  <div class="fld fld--md fld--lines" data-field="q2_contribution" data-lines="3"></div>
+  <div class="gcard gcard--alt">
+    <p class="gtag"><span class="gn">2</span>Your judgment</p>
+    <p class="gq">What was my specific contribution or judgment?</p>
+    <p class="ghelp">What did you notice, decide, influence, build, change or prevent? Your part, not everything the team did.</p>
+    <div class="fld fld--md fld--lines" data-field="q2_contribution" data-lines="3"></div>
+  </div>
 
-  <div class="q"><span class="n">3</span><span class="t">What changed?</span></div>
-  <p class="help">What improved, became possible, moved, disappeared or was prevented? If there is no number, describe the change in words.</p>
-  <div class="fld fld--md fld--lines" data-field="q3_changed" data-lines="3"></div>
+  <div class="gcard">
+    <p class="gtag"><span class="gn">3</span>Change</p>
+    <p class="gq">What changed?</p>
+    <p class="ghelp">What improved, became possible, moved, disappeared or was prevented?</p>
+    <div class="fld fld--md fld--lines" data-field="q3_changed" data-lines="3"></div>
+  </div>
 
-  <div class="q"><span class="n">4</span><span class="t">What evidence supports this?</span></div>
-  <p class="help">Use only accurate and permitted evidence: a measured result, an observable change, a public source, documented feedback, a role-based verifier, or a before and after condition.</p>
-  <div class="fld fld--md fld--lines" data-field="q4_evidence" data-lines="3"></div>
+  <div class="gcard gcard--alt">
+    <p class="gtag"><span class="gn">4</span>Proof</p>
+    <p class="gq">What evidence supports this?</p>
+    <p class="ghelp">What makes the account defensible? Use only accurate and permitted evidence: a measured result, an observable change, a public source, documented feedback, a role-based verifier, or a before and after condition.</p>
+    <div class="fld fld--md fld--lines" data-field="q4_evidence" data-lines="3"></div>
+  </div>
 
   <div class="foot"><span class="l">Keep the Proof &middot; Career Evidence Starter</span><span>3</span></div>
 </section>
@@ -268,13 +434,44 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 16
   <div class="rule"></div>
 
   <div class="q"><span class="n">5</span><span class="t">What could I plausibly do again?</span></div>
-  <p class="help">Move beyond the project name. What did this work require you to know how to do? It might be to diagnose an unclear problem, bring structure to ambiguity, influence across functions, improve a process, make a difficult tradeoff, translate technical information, build trust, lead through change, identify risk or redesign an experience.</p>
-  <div class="fld fld--lg fld--lines" data-field="q5_portable" data-lines="4"></div>
+  <p class="help">Move beyond the project name. What did this work require you to know how to do?</p>
+  <div class="chips">
+    <span class="chip">Diagnose an unclear problem</span>
+    <span class="chip">Bring structure to ambiguity</span>
+    <span class="chip">Influence across functions</span>
+    <span class="chip">Improve a process</span>
+    <span class="chip">Make a difficult tradeoff</span>
+    <span class="chip">Translate technical information</span>
+    <span class="chip">Build trust</span>
+    <span class="chip">Lead through change</span>
+    <span class="chip">Identify risk</span>
+    <span class="chip">Redesign an experience</span>
+  </div>
+  <p class="chipnote">These are examples, not a checklist. What did your work require?</p>
+  <div class="fld fld--xl fld--lines" data-field="q5_portable" data-lines="4"></div>
 
   <div class="rule--thin"></div>
 
   <div class="q"><span class="n">6</span><span class="t">Remove the internal language</span></div>
   <p class="help">Which words only make sense inside your current company?</p>
+
+  <div class="xform">
+    <div class="xcol xcol--in">
+      <p class="xlbl">Inside your company</p>
+      <p class="xitem">Project Horizon</p>
+      <p class="xitem">QBR</p>
+      <p class="xitem">XYZ Workflow</p>
+    </div>
+    <div class="xarrow">&rarr;</div>
+    <div class="xcol xcol--out">
+      <p class="xlbl">Outside your company</p>
+      <p class="xitem">Cross-functional onboarding redesign</p>
+      <p class="xitem">Operating review</p>
+      <p class="xitem">Customer intake process</p>
+    </div>
+  </div>
+  <p class="xnote">This is an example of the distinction, not a claim that those terms are equivalent in every workplace.</p>
+
   <div class="inline-flds">
     <div>
       <p class="lbl">Internal project name</p>
@@ -290,14 +487,14 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 16
     </div>
   </div>
 
-  <p class="help" style="margin-top:14px;">How would you explain the same work to someone who has never worked there?</p>
-  <div class="fld fld--lg fld--lines" data-field="plain_explanation" data-lines="4"></div>
+  <p class="help" style="margin-top:10px;">How would you explain the same work to someone who has never worked there?</p>
+  <div class="fld fld--xl fld--lines" data-field="plain_explanation" data-lines="4"></div>
 
   <div class="foot"><span class="l">Keep the Proof &middot; Career Evidence Starter</span><span>4</span></div>
 </section>
 
 <!-- ══ PAGE 5 · PORTABLE PROOF LINE ══ -->
-<section class="page">
+<section class="page page--proof">
   <p class="eyebrow">Your portable proof line</p>
   <h2>Turn the evidence into one portable line.</h2>
   <div class="rule"></div>
@@ -311,54 +508,64 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 16
   <p class="help">This is a scaffold for thinking, not a sentence to copy mechanically. Rearrange it so it sounds like you.</p>
 
   <div class="example">
-    <p class="lbl">Before</p>
-    <p>&ldquo;Led Project Horizon onboarding work.&rdquo;</p>
-    <p class="lbl">Portable</p>
-    <p>&ldquo;Led a cross-functional onboarding redesign that improved how quickly new employees became integrated, requiring me to diagnose gaps across teams, coordinate stakeholders and turn an unclear experience problem into a measurable operating change.&rdquo;</p>
+    <div class="col">
+      <p class="lbl">Before</p>
+      <p>&ldquo;Led Project Horizon onboarding work.&rdquo;</p>
+    </div>
+    <div class="col col--to">
+      <p class="lbl">Portable</p>
+      <p>&ldquo;Led a cross-functional onboarding redesign that improved new-hire integration by diagnosing gaps, aligning stakeholders and turning an unclear experience problem into an operating change.&rdquo;</p>
+    </div>
   </div>
 
   <h3>My portable proof line</h3>
-  <div class="fld fld--lg fld--lines" data-field="proof_line" data-lines="4"></div>
+  <div class="fld fld--2xl fld--lines" data-field="proof_line" data-lines="5"></div>
 
-  <div class="rule--thin"></div>
-
-  <h3>Before you use it</h3>
-  <ul class="check">
-    <li><span class="cbx" data-check="check_outsider"></span><span>Someone outside my company could understand it.</span></li>
-    <li><span class="cbx" data-check="check_contribution"></span><span>It separates my contribution from the team result.</span></li>
-    <li><span class="cbx" data-check="check_defend"></span><span>I could defend it if someone asked a second question.</span></li>
-    <li><span class="cbx" data-check="check_permitted"></span><span>I have removed anything I am not permitted to retain or disclose.</span></li>
-  </ul>
+  <div class="travel">
+    <p class="tag">Can it travel?</p>
+    <ul class="check check--tight">
+      <li><span class="cbx" data-check="check_outsider"></span><span>Someone outside my company could understand it.</span></li>
+      <li><span class="cbx" data-check="check_contribution"></span><span>It separates my contribution from the team result.</span></li>
+      <li><span class="cbx" data-check="check_defend"></span><span>I could defend it if someone asked a second question.</span></li>
+      <li><span class="cbx" data-check="check_permitted"></span><span>I have removed anything I am not permitted to retain or disclose.</span></li>
+    </ul>
+  </div>
 
   <div class="foot"><span class="l">Keep the Proof &middot; Career Evidence Starter</span><span>5</span></div>
 </section>
 
-<!-- ══ PAGE 6 · USE IT AND NEXT STEP ══ -->
-<section class="page page--paper">
-  <p class="eyebrow">Use it</p>
-  <h2>One piece of proof is useful. A record is more powerful.</h2>
+<!-- ══ PAGE 6 · COMPLETION + NEXT STEP ══ -->
+<section class="page page--paper page--done">
+  <p class="eyebrow">You finished it</p>
+  <h1 class="done">You did it.</h1>
+  <p class="lede">You now have one piece of work you can explain without relying on your title, project name or company vocabulary.</p>
   <div class="rule"></div>
 
-  <h3>Where you can use this</h3>
-  <p class="help">Adapt the line to the conversation you are actually in rather than reusing it word for word.</p>
+  <h3>Where you can use it</h3>
   <div class="uses">
-    <div>Performance reviews</div>
-    <div>Interviews</div>
-    <div>Promotion conversations</div>
-    <div>Resume updates</div>
-    <div>Internal mobility</div>
-    <div>Career pivots</div>
+    <div>Performance review</div>
+    <div>Interview</div>
+    <div>Promotion conversation</div>
+    <div>Resume</div>
+    <div>Internal move</div>
+    <div>Career pivot</div>
   </div>
+  <p class="help">Adapt the evidence to the conversation. Do not reuse one sentence mechanically everywhere.</p>
+
+  <p class="transition">One Proof Line is useful.<br><span class="t2">A record is more powerful.</span></p>
 
   <div class="next">
-    <p class="eyebrow">You have proved one thing</p>
-    <h2>The next step is the record, not another exercise.</h2>
-    <p>This Starter helped you prove one accomplishment. Keep the Proof gives you the complete 60-minute Career Evidence System and the reusable Career Evidence Ledger, for capturing, translating, organising and maintaining the whole record before you need it.</p>
-    <p class="ladder"><span class="lg">This Starter</span> proves one thing.<br>
-      <span class="lg">Keep the Proof</span> builds the record.</p>
-    <p class="prod">Keep the Proof</p>
-    <p class="prodsub">A 60-Minute Career Evidence System</p>
-    <p class="link">temidayoafonja.com/keep-the-proof</p>
+    <div class="cover-shot">
+      <img src="/keep-the-proof-cover.png" alt="Keep the Proof">
+    </div>
+    <div class="body">
+      <p class="ladder"><span class="lg">This Starter</span> proves one thing.<br>
+        <span class="lg">Keep the Proof</span> builds the record.</p>
+      <p class="prod">Keep the Proof</p>
+      <p class="prodsub">A 60-Minute Career Evidence System</p>
+      <p>If this exercise helped you see one accomplishment more clearly, Keep the Proof gives you the complete system and reusable Career Evidence Ledger for capturing, translating, organising and maintaining the record over time.</p>
+      <p class="link">temidayoafonja.com/keep-the-proof</p>
+    </div>
   </div>
 
   <p class="closing">Your career evidence should not have to be reconstructed from memory after the context changes.</p>

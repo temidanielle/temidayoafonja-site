@@ -12,7 +12,7 @@ Two emails only, as instructed. No longer nurture sequence yet.
 
 **Subject:** Your Career Evidence Starter
 
-**Preview text:** One accomplishment, about ten minutes.
+**Preview text:** One accomplishment, one focused sitting.
 
 **Body:**
 
@@ -29,7 +29,7 @@ Do not try to complete your whole career history. The Starter is built for a
 single accomplishment, and it works because it is narrow. You can run it again
 later on something else.
 
-It takes about ten minutes.
+Set aside about 10–15 focused minutes.
 
 Two practical notes:
 

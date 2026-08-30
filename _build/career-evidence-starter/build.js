@@ -28,6 +28,18 @@ const WHITE = rgb(1, 1, 1);
   const page = await browser.newPage({ viewport: { width: 816, height: 1056 } });
   await page.goto(SRC, { waitUntil: 'networkidle' });
   await page.evaluate(() => document.fonts.ready);
+  // Wait for every raster asset, then refuse to print if one of them is missing.
+  // A 404 on the portrait or the Keep the Proof cover renders as an empty box,
+  // which is exactly the kind of defect a silent build would ship.
+  const images = await page.evaluate(async () => {
+    await Promise.all([...document.images].map(i => i.complete ? null : i.decode().catch(() => null)));
+    return [...document.images].map(i => ({ src: i.getAttribute('src'), w: i.naturalWidth, h: i.naturalHeight }));
+  });
+  const broken = images.filter(i => !i.w);
+  if (broken.length) {
+    throw new Error('image failed to load: ' + broken.map(i => i.src).join(', '));
+  }
+  images.forEach(i => console.error(`  image ok  ${i.src}  ${i.w}x${i.h}`));
   await page.waitForTimeout(700);
 
   // ── measure the placeholders, in CSS px, relative to their own page ──
