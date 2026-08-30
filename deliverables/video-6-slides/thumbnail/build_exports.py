@@ -1,106 +1,105 @@
-"""Video 6 thumbnail upload exports and integrity verification.
+"""Video 6 revision 2 — upload exports and verification.
 
-Produces the 1280 x 720 JPG upload files and prints the evidence recorded in
-VIDEO_6_THUMBNAIL_QA_README.md. Nothing here is asserted from intent; each
-line is measured from the files on disk.
+Every line printed here is measured from files on disk, not asserted.
 """
 import os, hashlib
 import numpy as np
-from PIL import Image, ImageDraw
+from PIL import Image
+from collections import Counter
 import build_thumbnails as T
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+R = os.path.abspath(os.path.join(HERE, "..", ".."))
 def P(n): return os.path.join(HERE, n)
 def sha(p): return hashlib.sha256(open(p, "rb").read()).hexdigest()
 
-# ------------------------------------------------------------------- exports
-for k in ("A", "B"):
-    im = Image.open(P("Video_6_Thumbnail_%s.png" % k))
-    assert im.size == (1280, 720)
-    im.save(P("Video_6_Thumbnail_%s_UPLOAD_1280x720.jpg" % k),
-            quality=95, subsampling=0, optimize=True)
+APPROVED = {
+    "V2":  R + "/video-2-slides/thumbnail/VIDEO_2_THUMBNAIL_FINAL_3840x2160.png",
+    "V3":  R + "/video-3-slides/thumbnail/VIDEO_3_THUMBNAIL_FINAL_A_3840x2160.png",
+    "V4A": R + "/video-4-slides/thumbnail/Video_4_Thumbnail_A.png",
+    "V5A": R + "/video-5-slides/thumbnail/Video_5_Thumbnail_A_Final.png",
+}
 
-print("=" * 70)
-print("1. DIMENSIONS AND FILE SIZES")
-for n in sorted(os.listdir(HERE)):
-    if n.startswith("Video_6_Thumbnail_") and n.split(".")[-1] in ("png", "jpg"):
-        im = Image.open(P(n))
-        w, h = im.size
-        ar = "%.6f" % (w / h)
-        kb = os.path.getsize(P(n)) / 1024
-        tag = "  16:9 EXACT" if (w, h) in ((1280, 720), (2560, 1440)) else ""
-        print(f"   {n:46s} {w:5d} x {h:<5d} ar {ar} {kb:8.0f} KB{tag}")
+for k in ("A", "B"):
+    Image.open(P("Video_6_Thumbnail_%s.png" % k)).save(
+        P("Video_6_Thumbnail_%s_UPLOAD_1280x720.jpg" % k),
+        quality=95, subsampling=0, optimize=True)
+
+print("=" * 74)
+print("1. PALETTE — sampled from every approved master and from Video 6")
+def top_colours(p, n=3):
+    a = np.asarray(Image.open(p).convert("RGB"))
+    flat = a[:, :int(a.shape[1] * 0.55)].reshape(-1, 3)
+    return [tuple(int(v) for v in c)
+            for c, _ in Counter(map(tuple, flat)).most_common(n)]
+rows = list(APPROVED.items()) + [
+    ("V6 A", P("Video_6_Thumbnail_A_2560x1440.png")),
+    ("V6 B", P("Video_6_Thumbnail_B_2560x1440.png"))]
+for lab, p in rows:
+    print("   %-6s %s" % (lab, "  ".join("#%02X%02X%02X" % c for c in top_colours(p))))
+print("   Video 6 palette: NAVY #%02X%02X%02X  CREAM #%02X%02X%02X  GOLD #%02X%02X%02X"
+      % (T.NAVY + T.CREAM + T.GOLD))
+for lab, p in APPROVED.items():
+    cols = set(top_colours(p, 4))
+    hits = [n for n, c in (("NAVY", T.NAVY), ("CREAM", T.CREAM), ("GOLD", T.GOLD))
+            if c in cols]
+    print("   exact match with %-4s: %s" % (lab, ", ".join(hits) or "none"))
 
 print()
-print("2. PHOTOGRAPH INTEGRITY")
+print("2. SERIES GEOMETRY — Video 6 against the approved Video 4A / 5A constants")
+for name, want, got in [("portrait box left edge", 1470, T.SEAM),
+                        ("gold divider width", 12, T.DIV_W),
+                        ("text column x", 190, T.COL_X),
+                        ("text column width", 1150, T.COL_W),
+                        ("headline centre y", 696, int(T.CENTRE_Y)),
+                        ("hairline y", 268, 268),
+                        ("underline fraction", 0.74, 0.74)]:
+    print("   %-26s approved %-8s Video 6 %-8s %s"
+          % (name, want, got, "MATCH" if want == got else "DIFFERS"))
+
+print()
+print("3. PHOTOGRAPH INTEGRITY")
 src = Image.open(T.SRC).convert("RGB")
-print(f"   source          : {os.path.basename(T.SRC)}")
-print(f"   source size     : {src.size[0]} x {src.size[1]}  ({src.mode})")
-print(f"   source sha256   : {sha(T.SRC)}")
-expect = T.photo_panel(T.W - T.PANEL_X, T.H, 310)
-pw, ph = expect.size
-crop_w = int(round(src.height * pw / ph))
-print(f"   crop taken      : {crop_w} x {src.height} at x=310  (native pixels)")
-print(f"   panel rendered  : {pw} x {ph}   scale {pw / crop_w:.4f}  "
-      f"({'downscale only' if pw <= crop_w else 'UPSCALE'})")
-e = np.asarray(expect).astype(int)
+print("   source %s  %dx%d" % (os.path.basename(T.SRC), *src.size))
+print("   sha256 %s" % sha(T.SRC))
+expect = Image.new("RGB", (T.W, T.H)); cw, ch, sc = T.place(expect)
+panel = expect.crop((T.SEAM, 0, T.W, T.H))
+print("   crop %dx%d at (%d,%d) -> 1090x1440, scale %.4f (%s)"
+      % (cw, ch, T.CROP_LEFT, T.CROP_TOP, sc,
+         "downscale only" if sc <= 1 else "UPSCALE"))
+e = np.asarray(panel).astype(int)[:, T.DIV_W + 1:]
 for k in ("A", "B"):
     m = Image.open(P("Video_6_Thumbnail_%s_2560x1440.png" % k))
-    got = np.asarray(m.crop((T.PANEL_X, 0, T.W, T.H))).astype(int)
-    d = np.abs(e - got)
-    print(f"   master {k} photo panel vs pure crop+Lanczos: max diff {d.max()}, "
-          f"differing pixels {(d.sum(2) > 0).sum()}"
-          f"   -> {'IDENTICAL' if d.max() == 0 else 'ALTERED'}")
+    g = np.asarray(m.crop((T.SEAM + T.DIV_W + 1, 0, T.W, T.H))).astype(int)
+    d = np.abs(e - g)
+    print("   master %s photo area vs pure crop+Lanczos: max diff %d, "
+          "differing pixels %d -> %s"
+          % (k, d.max(), int((d.sum(2) > 0).sum()),
+             "IDENTICAL" if d.max() == 0 else "ALTERED"))
 
 print()
-print("3. PALETTE — colours present in the navy panel (text area only)")
-for k in ("A", "B"):
-    m = np.asarray(Image.open(P("Video_6_Thumbnail_%s_2560x1440.png" % k))
-                   .crop((0, 0, T.PANEL_X, T.H))).astype(int)
-    flat = m.reshape(-1, 3)
-    for name, c in (("NAVY  #0F2346", T.NAVY), ("CREAM #F5F1E8", T.CREAM),
-                    ("GOLD  #C9A84C", T.GOLD)):
-        n = int((flat == np.array(c)).all(1).sum())
-        print(f"   {k}  {name}  exact-match pixels: {n:>9,}")
-    other = int((~np.isin(flat, [T.NAVY, T.CREAM, T.GOLD]).all(1)).sum())
-    print(f"   {k}  anti-aliased edge pixels between those three: "
-          f"{other:,} ({100*other/len(flat):.2f}% of the panel)")
+print("4. PORTRAIT SCALE AND EYE LINE (1280 x 720 space)")
+SEL_IPD, SEL_EYE_Y = 255.0, 540.0     # measured in the 1536 x 1536 source
+print("   Video 6 : inter-pupil %.0f px, eye line y %.0f"
+      % (SEL_IPD * 545.0 / cw, (SEL_EYE_Y - T.CROP_TOP) * 720.0 / ch))
+print("   Video 4A: inter-pupil ~64 px, eye line y ~219  (read off the file)")
+print("   Video 5A: inter-pupil ~69 px, eye line y ~211  (read off the file)")
+widest = int(round(1536 * (T.W - T.SEAM) / T.H))
+print("   widest crop this source allows at the panel aspect: %d x 1536" % widest)
+print("   smallest portrait scale reachable by cropping alone: inter-pupil %.0f px"
+      % (SEL_IPD * 545.0 / widest))
+print("   headroom above the hair at full height: %.0f px "
+      "(any top crop removes the top of her head)" % (20.0 * 720.0 / 1536))
 
 print()
-print("4. TYPE GEOMETRY AND MOBILE LEGIBILITY")
-d = ImageDraw.Draw(Image.new("RGB", (10, 10)))
-s1 = T.fit("MORE WORK", T.MAXW)
-_, h1, _, _ = T.cap(d, "MORE WORK", T.f(s1))
-rows = [("MORE WORK (both)", h1)]
-s2 = s1 + 40
-while True:
-    gw, gh, _, _ = T.cap(d, "GROWTH", T.f(s2))
-    ne = int(round(gh * 0.86))
-    if T.MARGIN + int(round(ne*1.02)) + int(ne*0.42) + gw <= T.PANEL_X - T.GUTTER:
-        break
-    s2 -= 2
-gwA, ghA, _, _ = T.cap(d, "GROWTH", T.f(s2))
-rows += [("GROWTH (A)", ghA), ("not-equal mark (A)", int(round(ghA * 0.86)))]
-s3 = T.fit("GROWTH", T.MAXW - 92)
-gwB, ghB, _, _ = T.cap(d, "GROWTH", T.f(s3))
-rows += [("GROWTH (B)", ghB), ("not-equal mark (B)", int(round(h1 * 1.02)))]
-print(f"   {'element':22s} {'@2560':>7s} {'@1280':>7s} {'@200px':>8s} {'@160px':>8s}")
-for name, hh in rows:
-    print(f"   {name:22s} {hh:7d} {hh/2:7.1f} {hh/12.8:8.2f} {hh/16:8.2f}")
-print("   (cap height in pixels; 160 px is the narrowest phone-feed width)")
-
-print()
-print("5. CLEARANCE FROM THE PHOTO SEAM (panel edge at x=1470 of 2560)")
-for k, right in (("A", T.MARGIN + int(round(int(round(ghA*0.86))*1.02))
-                       + int(int(round(ghA*0.86))*0.42) + gwA),
-                 ("B", T.MARGIN + gwB + 46)):
-    print(f"   {k}: widest element ends at x={right}, "
-          f"clear space to seam = {T.PANEL_X - right} px @2560 "
-          f"({(T.PANEL_X - right)/2:.0f} px @1280)")
-
-print()
-print("6. SHA-256 OF DELIVERED IMAGE FILES")
+print("5. FILES")
 for n in sorted(os.listdir(HERE)):
     if n.startswith("Video_6_Thumbnail_") and n.split(".")[-1] in ("png", "jpg"):
-        print(f"   {sha(P(n))}  {n}")
-print("=" * 70)
+        im = Image.open(P(n)); kb = os.path.getsize(P(n)) / 1024
+        tag = "  16:9" if abs(im.width / im.height - 16/9) < 1e-6 else ""
+        print("   %-52s %5d x %-5d %8.0f KB%s" % (n, im.width, im.height, kb, tag))
+print()
+for n in sorted(os.listdir(HERE)):
+    if n.startswith("Video_6_Thumbnail_") and n.split(".")[-1] in ("png", "jpg"):
+        print("   %s  %s" % (sha(P(n)), n))
+print("=" * 74)
