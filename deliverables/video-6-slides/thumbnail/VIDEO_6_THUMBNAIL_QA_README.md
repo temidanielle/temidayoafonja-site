@@ -155,9 +155,16 @@ left, Videos 4 and 5 on the right. Video 6 follows Videos 4 and 5.
 All thumbnails are exactly 16:9. Upload JPGs are ~205 KB, inside YouTube's 2 MB
 limit.
 
-## 10. Open items
+## 10. Status — CLOSED
 
-- **Selection is paused at your request.** Neither option is marked final.
+**This thumbnail task is closed. Neither Composition A nor Composition B was
+selected.** Temidayo is finalising the Video 6 thumbnail in Canva, which is
+producing a closer visual match to the established channel thumbnails. The
+files here are superseded and are retained only as a record of the work and its
+verification. Do not treat them as the Video 6 upload asset.
+
+The rest of this document stands as the record of what was built and measured.
+
 - **The final upload title remains pending TubeBuddy validation.**
 - Video 1 Option A vs Option B is still outstanding from the launch audit.
 - Videos 4 and 5 share the wine portrait in the same layout.
