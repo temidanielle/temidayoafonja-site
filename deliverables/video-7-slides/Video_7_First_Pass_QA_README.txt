@@ -1,9 +1,14 @@
 VIDEO 7 — FIRST-PASS PRODUCTION PACKAGE — QA README
 How to Show Your Impact at Work When You Built It From Scratch
 
-Latest pass: read-only comparison against the August 28 roadmap audit.
-Only this README and the ZIP were updated. No deck, script, DOCX, PDF or
-review sheet was rebuilt or re-rendered — see section 2.
+STATUS: the production package is APPROVED AND CLOSED. The only outstanding
+asset is the approved Canva thumbnail export carrying MAKE INVISIBLE WORK
+VISIBLE, to be supplied separately and included byte-identically.
+
+Latest pass: the two watch-next routing decisions recorded in sections 2.3 and
+2.7. README only. No deck, script, DOCX, PDF, review sheet or thumbnail was
+rebuilt or re-rendered — the other nine package files are byte-identical to the
+approved pass.
 
 ===============================================================================
 1. THE CORRECTION PASS THAT PRECEDED THIS ONE
@@ -120,31 +125,25 @@ the ZIP were updated.
   before publication," which matches the publication gate already recorded in
   section 9.
 
---- 2.3  Career Portability playlist placement ----- ALIGNED, ONE OPEN ROUTING
+--- 2.3  Career Portability playlist placement --------- ALIGNED, ROUTING SET
 
   Audit: "Career portability is the public front door; Capability Formation is
   the deeper method." Editorial format: "Watch Next — one intentional next
   decision in the sequence."
 
-  Slide 12 carries both an intentional next video and the playlist line, so it
-  satisfies the format either way and needs no re-render.
+  DECISION, APPROVED BY TEMIDAYO — Video 7's watch-next routes directly to the
+  EXISTING Video 4. The later roadmap and opening register use the title "How
+  to Explain a Nonlinear Career Without Looking Unfocused," which is the
+  current approved positioning for that video. It is not a future video, and
+  the earlier conditional framing is withdrawn.
 
-  OPEN QUESTION FOR TEMIDAYO, not a mismatch with the audit:
-    The audit's recommended title for sequence position 4 is "How to Explain a
-    Nonlinear Career Without Looking Unfocused," with thumbnail YOUR CAREER
-    MAKES SENSE and CTA Keep the Proof. The approved, already-produced Video 4
-    carries that same thumbnail and CTA but was published under the title "How
-    to Explain Your Career Change."
+  Slide 12 already reflects this. It names that title and the Career
+  Portability playlist, so no re-render was required and none was made.
 
-    So Video 7's watch-next target may already exist as the produced Video 4
-    under a different title, rather than being a future video. This changes the
-    end-screen decision but not the slide: slide 12 names the title and the
-    playlist, so either routing works without a rebuild.
-
-    The package DOCX still carries the earlier conditional wording ("if it has
-    published by the time Video 7 goes live"). That hedge is left in place
-    because this pass does not rebuild the DOCX; it can be simplified at the
-    next pass once the routing is settled.
+  Residual note, no action required: the package DOCX still carries the earlier
+  conditional wording ("if it has published by the time Video 7 goes live").
+  That hedge is now superseded by this decision. It is left in place because
+  this pass does not rebuild the DOCX; this README is the governing record.
 
   The exact playlist string on slide 12 — "Career Portability: Career Pivots,
   Internal Moves & Growth" — does not appear verbatim in the audit, so it was
@@ -222,12 +221,18 @@ the ZIP were updated.
   It is also consistent with the audit's own title rule — "a recognizable
   search question or consequence" — which the working title met less directly.
 
-  DOWNSTREAM CONSEQUENCE, FLAGGED NOT FIXED:
-    The approved Video 6 deck's watch-next slide names Video 7 by the former
-    working title, "HOW TO PROVE THE VALUE OF WORK THAT HAD NO BLUEPRINT." That
-    slide will point at a title that no longer exists. Videos 1-6 were left
-    untouched as instructed, so this is reported rather than corrected. It
-    needs a decision before Video 7 publishes.
+  VIDEO 6 END CARD — DECISION, APPROVED BY TEMIDAYO, NO CHANGE REQUIRED:
+    The approved Video 6 deck's watch-next slide reads "HOW TO PROVE THE VALUE
+    OF WORK THAT HAD NO BLUEPRINT," the former working title.
+
+    Ruling: leave that on-slide wording unchanged. It functions as contextual
+    teaser copy and is not required to duplicate the exact YouTube metadata
+    title. Video 6's clickable end-screen element routes to the final Video 7,
+    "How to Show Your Impact at Work When You Built It From Scratch."
+
+    So the difference between the slide copy and the published title is
+    intentional, not a defect, and the earlier flag is closed. Video 6 was not
+    reopened and nothing in it was modified.
 
 --- 2.8  Other audit requirements checked ----------------------------- ALIGNED
 
@@ -253,9 +258,10 @@ the ZIP were updated.
                                  with 15-25 years of experience." Package
                                  section 1 names the same viewer.
 
-VERDICT: no substantive mismatch on any of the six points requested. Two items
-need a decision from Temidayo and neither requires a rebuild — the watch-next
-routing in 2.3 and the Video 6 end-card title in 2.7.
+VERDICT: no substantive mismatch on any of the six points requested. The two
+items that needed a decision — the watch-next routing in 2.3 and the Video 6
+end-card title in 2.7 — have both been decided by Temidayo and are recorded
+above. Neither required a rebuild and neither was rebuilt.
 
 ===============================================================================
 3. DELIVERABLES
@@ -430,14 +436,11 @@ block back inside that ceiling.
     the finished export before publishing.
   · The approved Canva thumbnail export must be supplied and added.
   · Confirm temidayoafonja.com/keep-the-proof is live before publishing.
-  · Watch-next routing: decide whether Video 7's end screen points at the
-    produced Video 4 (published as "How to Explain Your Career Change", which
-    the audit lists at sequence position 4 under the recommended title "How to
-    Explain a Nonlinear Career Without Looking Unfocused") or at the Career
-    Portability playlist. Slide 12 carries both, so neither choice needs a
-    re-render. See section 2.3.
-  · Video 6's watch-next slide names Video 7 by its former working title and
-    will need a decision before Video 7 publishes. See section 2.7.
+  · Set Video 7's end-screen video element to the existing Video 4. Decided;
+    see section 2.3.
+  · Set Video 6's end-screen video element to Video 7, "How to Show Your Impact
+    at Work When You Built It From Scratch." Video 6's on-slide teaser copy
+    stays as it is. Decided; see section 2.7.
 
 ===============================================================================
 10. WHAT WAS NOT TOUCHED
