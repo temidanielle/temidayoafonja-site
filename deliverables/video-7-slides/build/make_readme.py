@@ -1,4 +1,18 @@
-VIDEO 7 — FIRST-PASS PRODUCTION PACKAGE — QA README  (corrected pass)
+# -*- coding: utf-8 -*-
+"""Write Video_7_First_Pass_QA_README.txt from the measured QA outputs."""
+import json, os, subprocess, sys
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(HERE)
+q = json.load(open(os.path.join(ROOT, "out", "qa.json")))
+r = json.loads(subprocess.run([sys.executable,
+        os.path.join(ROOT, "script", "verify.py")],
+        capture_output=True, text=True).stdout)
+
+flush_main = ", ".join(str(x) for x in q["flush_edge_slides_main"])
+flush_rev = ", ".join(str(x) for x in q["flush_edge_frames_reveals"])
+
+TXT = """VIDEO 7 — FIRST-PASS PRODUCTION PACKAGE — QA README  (corrected pass)
 How to Show Your Impact at Work When You Built It From Scratch
 
 ===============================================================================
@@ -24,7 +38,7 @@ Content correction, applied at source and regenerated through every file:
 Verified: the removed sentence appears nowhere in the package DOCX, the
 teleprompter DOCX, the clean TXT, the main deck or the reveal deck. The
 replacement copy is present in all three script files. Spoken length is now
-1492 words, still inside the 1,450–1,700 target.
+%(wc)d words, still inside the 1,450–1,700 target.
 
 QA corrections:
 
@@ -73,10 +87,10 @@ TITLE AND KEYWORD — INTENTIONAL CHANGE, RECORDED
 ===============================================================================
 
   1  Video_7_Main_Slides.pptx                    12 editable slides
-  2  Video_7_Reveal_Builds.pptx                  24 duplicate sequential slides
+  2  Video_7_Reveal_Builds.pptx                  %(frames)d duplicate sequential slides
   3  Video_7_Slide_Preview.pdf                   12 pages, 13.333 x 7.5 in
   4  Video_7_Main_Slide_Contact_Sheet.png        all 12 slides
-  5  Video_7_Reveal_Order_Sheet.png              all 24 frames in advance order
+  5  Video_7_Reveal_Order_Sheet.png              all %(frames)d frames in advance order
   6  Video_7_Phone_Legibility_Sheet.png          every slide at 320 x 180
   7  YouTube_Video_7_Production_Package_Impact_Without_Blueprint.docx
   8  Video_7_Teleprompter_Script_with_Slide_Markers.docx
@@ -110,14 +124,14 @@ checksum once supplied.
 ===============================================================================
 
   main slides in the deck                12          (required 12)
-  reveal frames                          24          duplicate sequential slides
+  reveal frames                          %(frames)-2d          duplicate sequential slides
   reveal map per slide                   2,2,3,2,2,2,1,3,2,3,1,1
   PowerPoint animations                  none — reveals are duplicate slides
   PDF pages                              12
   PDF page size                          13.333 x 7.5 in (true 16:9)
   slide canvas                           1920 x 1080
   images or stock photography            0 picture shapes in the deck
-  live text shapes                       55 — every word stays editable
+  live text shapes                       %(text)d — every word stays editable
   shapes beyond the slide canvas         none
   elements outside the design canvas     none
   reveal states differ only by addition  yes — no element moves between states
@@ -125,7 +139,7 @@ checksum once supplied.
   slide 12 end-screen zone kept clear    yes
   removed line present anywhere in deck  no
   no opening title card                  confirmed
-  every slide rendered and inspected     yes — 12 PNGs plus 24 reveal frames
+  every slide rendered and inspected     yes — 12 PNGs plus %(frames)d reveal frames
   phone legibility at 320 x 180          Video_7_Phone_Legibility_Sheet.png
 
 Every phrase in Section 5 of the production package was searched for in the
@@ -137,15 +151,15 @@ rendered PPTX text: all present, none missing.
 
 The flag was correct about which shapes it found and wrong about what they are.
 
-Flagged: main slides 2, 6 and reveal frames 4, 13. The QA now separates two
+Flagged: main slides %(fm)s and reveal frames %(fr)s. The QA now separates two
 different conditions instead of reporting one, and it reproduces exactly that
 set — the same four items, no more and no fewer.
 
   shapes that EXCEED the canvas          0
-  shapes FLUSH to the canvas edge        4
-  main slides with a flush edge          2, 6
-  reveal frames with a flush edge        4, 13
-  maximum overhang measured              0 EMU
+  shapes FLUSH to the canvas edge        %(nflush)d
+  main slides with a flush edge          %(fm)s
+  reveal frames with a flush edge        %(fr)s
+  maximum overhang measured              %(overhang)d EMU
 
 All four are the same element: the full-bleed navy band on slides 2 and 6, and
 those slides' second reveal states, which are frames 4 and 13.
@@ -176,13 +190,13 @@ having to be re-derived.
 The production package DOCX is the single source of truth. Both script files
 are generated from it, so the three cannot drift apart.
 
-  package spoken paragraphs              45
-  teleprompter spoken paragraphs         45
-  clean TXT paragraphs                   45
-  clean TXT == package                   true
-  teleprompter == package                true
-  clean TXT == teleprompter              true
-  spoken word count                      1492   (target 1,450-1,700)
+  package spoken paragraphs              %(pp)d
+  teleprompter spoken paragraphs         %(tp)d
+  clean TXT paragraphs                   %(cp)d
+  clean TXT == package                   %(ceq)s
+  teleprompter == package                %(teq)s
+  clean TXT == teleprompter              %(cteq)s
+  spoken word count                      %(wc)d   (target 1,450-1,700)
   slide markers                          1-12, in order, none missing
   clean TXT contains timestamps          no
   clean TXT contains slide markers       no
@@ -202,7 +216,7 @@ are generated from it, so the three cannot drift apart.
   promise that evidence produces
     promotion or recognition             none
 
-  30% retention improvement in script    ABSENT
+  30%% retention improvement in script    ABSENT
   $2M+ turnover cost avoidance in script ABSENT
 
 ===============================================================================
@@ -218,7 +232,7 @@ story that opens this video. The ledger also notes that the estimation model
 behind the turnover figure is not recorded.
 
 QUESTION STILL OPEN, for Temidayo, not for the script:
-  Is there a document — held outside this repository — that ties the 30%
+  Is there a document — held outside this repository — that ties the 30%%
   retention improvement or the $2M+ estimated turnover cost avoidance to the
   same first-in-role work described in the 0:35 block, with a stated
   population, baseline and measurement method?
@@ -253,3 +267,16 @@ block back inside that ceiling.
 
 No Video 1-6 deliverable and no website file was modified. Verified with git:
 the only changes in this pass are inside deliverables/video-7-slides/.
+""" % dict(frames=q["reveal_slides"], text=q["text_shapes"],
+           fm=flush_main, fr=flush_rev,
+           nflush=len(q["flush_to_canvas_edge"]),
+           overhang=q["flush_edge_max_overhang_emu"],
+           pp=r["package_paragraphs"], tp=r["teleprompter_paragraphs"],
+           cp=r["clean_paragraphs"], wc=r["word_count"],
+           ceq=str(r["clean_equals_package"]).lower(),
+           teq=str(r["teleprompter_equals_package"]).lower(),
+           cteq=str(r["clean_equals_teleprompter"]).lower())
+
+out = os.path.join(ROOT, "Video_7_First_Pass_QA_README.txt")
+open(out, "w").write(TXT)
+print("wrote", os.path.basename(out), "-", len(TXT.splitlines()), "lines")

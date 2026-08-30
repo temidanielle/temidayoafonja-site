@@ -157,9 +157,9 @@ SCRIPT = [
   "number, because the first serious question dissolves it and takes the rest "
   "of your account down with it. Roughly forty per cent, estimated on a "
   "Tuesday, will not survive a director asking how you measured it.",
-  "What you can say is this: it was used by every team in the region for two "
-  "years after I left it. That is concrete, it is verifiable, and it does not "
-  "pretend to be a calculation.",
+  "Continued use is evidence. Record who was still using the system after the "
+  "handoff, and for how long—but use only the scope and duration you can "
+  "verify.",
   "And keep only the evidence you are permitted to keep. Outcomes, decisions, "
   "what you learned, non-confidential examples described in your own words. "
   "Not documents. Not client or customer data. Not anything proprietary or "
@@ -228,10 +228,11 @@ SLIDE_COPY = [
   "BETTER DECISIONS  |  REDUCED AMBIGUITY · REPEATABILITY · RECOGNITION  |  "
   "A CLEAN HANDOFF · A CAPABILITY THAT REMAINED"),
  ("9", "Evidence without invented numbers", "2",
-  "A NUMBER YOU CANNOT DEFEND IS WORSE THAN NO NUMBER.  |  “Used by every "
-  "team in the region for two years after I left it.”  |  WHAT YOU MAY KEEP  "
-  "|  Outcomes, decisions, what you learned, non-confidential examples in "
-  "your own words. Not documents, not data, not anything employer-owned."),
+  "A NUMBER YOU CANNOT DEFEND IS WORSE THAN NO NUMBER.  |  CONTINUED USE IS "
+  "EVIDENCE.  |  Who still used it after the handoff—and for how long?  |  "
+  "WHAT YOU MAY KEEP  |  Outcomes, decisions, what you learned, "
+  "non-confidential examples in your own words. Not documents, not data, not "
+  "anything employer-owned."),
  ("10", "Before, build, return", "3",
   "THREE PARAGRAPHS  |  BEFORE — What did not exist.  |  BUILD — What you "
   "created underneath the output.  |  RETURN — What is different now—and how "
@@ -349,8 +350,8 @@ EDITOR_NOTES = [
  "Advance in the order given by Video_7_Reveal_Order_Sheet.png — 24 frames.",
  "Slide 12 keeps its right third empty for the YouTube end-screen element. Do "
  "not place graphics there.",
- "The arrow marks on slide 10 and the quotation on slide 9 are drawn or typed "
- "brand elements; do not substitute icons.",
+ "The sequence marks on slide 10 are drawn brand shapes, not icons; do not "
+ "substitute an icon set for them.",
  "Chapter timestamps in this package are planning estimates. Reset them "
  "against the real export before publishing.",
  "One offer only in the CTA block. No Field Kit, no Career Decision Evidence "
@@ -530,8 +531,14 @@ def build():
             "attributes it to the same enterprise operating role."],
            ["Invented precision",
             "The script states outright that a number you cannot defend is "
-            "worse than no number, and gives a defensible qualitative "
-            "alternative in its place."],
+            "worse than no number, and directs the viewer to continued use as "
+            "a defensible alternative — recorded only at a scope and duration "
+            "they can verify."],
+           ["Removed in the corrected pass",
+            "“Used by every team in the region for two years after I left it.” "
+            "Read as a specific personal result, was not documented, and "
+            "exceeded the approved personal-evidence ceiling. Replaced on "
+            "slide 9 and in the script with an instruction to the viewer."],
            ["Permitted evidence",
             "Outcomes, decisions, learning and non-confidential examples in "
             "the viewer's own words. Explicitly not documents, client or "

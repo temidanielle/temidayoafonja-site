@@ -44,7 +44,10 @@ SLUGS = {
 
 DIM_ON_NAVY = RGBColor(0x63, 0x74, 0x8C)
 DIM_ON_CREAM = RGBColor(0x8E, 0x98, 0xA8)
-PLAYLIST = RGBColor(0x3E, 0x50, 0x6B)
+# Secondary route text on navy. #3E506B measured 1.90:1 against #0F2346,
+# which is not legible; #8E9CB2 measures 5.59:1 and stays clearly secondary
+# to the cream headline at 13.81:1.
+PLAYLIST = RGBColor(0x8E, 0x9C, 0xB2)
 
 
 def notes(sl, text):
@@ -302,9 +305,12 @@ def slide_09(sl, step=1):
          dict(size=58, bold=True, color=CREAM, spacing=1.12)),
     ])
     hairline(sl, 160, 424, 300, color=GOLD, h=4)
-    block(sl, 160, 480, 1620, [
-        ("“Used by every team in the region for two years\nafter I left it.”",
-         dict(size=42, font=BODY, color=GOLD, spacing=1.32)),
+    block(sl, 160, 476, 1620, [
+        ("CONTINUED USE IS EVIDENCE.",
+         dict(size=46, bold=True, color=GOLD, spacing=1.14)),
+        ("Who still used it after the handoff—and for how long?",
+         dict(size=38, font=BODY, color=CREAM_DIM, spacing=1.3,
+              space_before=18)),
     ])
     if step >= 2:
         rect(sl, 160, 704, 1600, 4, fill=RGBColor(0x22, 0x3A, 0x60))
@@ -317,8 +323,8 @@ def slide_09(sl, step=1):
         ])
     notes(sl, """Timing: approximately 8:35.
 
-The quoted line is an example of defensible evidence, not a claim about
-Temidayo. Read it as an example.
+The gold line is an instruction to the viewer, not a claim about Temidayo or
+about any specific piece of work. Deliver it as guidance.
 
 The second state is the permitted-evidence boundary and is not optional — it
 must appear on screen while she says it.""")

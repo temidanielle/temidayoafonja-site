@@ -112,8 +112,9 @@ SEC5 = {
          "BETTER DECISIONS", "REDUCED AMBIGUITY", "REPEATABILITY",
          "RECOGNITION", "A CLEAN HANDOFF", "A CAPABILITY THAT REMAINED"],
     9:  ["A NUMBER YOU CANNOT DEFEND", "IS WORSE THAN NO NUMBER.",
-         "Used by every team in the region for two years",
-         "after I left it.", "WHAT YOU MAY KEEP",
+         "CONTINUED USE IS EVIDENCE.",
+         "Who still used it after the handoff—and for how long?",
+         "WHAT YOU MAY KEEP",
          "Outcomes, decisions, what you learned, non-confidential",
          "examples in your own words. Not documents, not data,",
          "not anything employer-owned."],
@@ -207,24 +208,42 @@ def main():
     rep["picture_shapes"] = sum(1 for sl in prs.slides for sh in sl.shapes
                                 if sh.shape_type == 13)
 
-    over = []
+    # A shape ending exactly on the canvas edge is a flush-edge full-bleed
+    # panel, not an overflow. A checker using >= rather than > flags those, so
+    # the two cases are separated and both are reported.
+    over, flush = [], []
     for deck_name, pth in (("main", main_pptx), ("reveals", rec_pptx)):
         pp = Presentation(pth)
+        SWp, SHp = pp.slide_width, pp.slide_height
         for i, sl in enumerate(pp.slides, start=1):
             for sh in sl.shapes:
-                if (sh.left < 0 or sh.top < 0
-                        or sh.left + sh.width > pp.slide_width
-                        or sh.top + sh.height > pp.slide_height):
+                r, b = sh.left + sh.width, sh.top + sh.height
+                if sh.left < 0 or sh.top < 0 or r > SWp or b > SHp:
                     over.append((deck_name, i, str(sh.shape_type),
                                  sh.left, sh.top, sh.width, sh.height))
+                elif sh.left == 0 or sh.top == 0 or r == SWp or b == SHp:
+                    flush.append({"deck": deck_name, "slide": i,
+                                  "left": sh.left, "top": sh.top,
+                                  "right": r, "bottom": b,
+                                  "slide_width": SWp, "slide_height": SHp,
+                                  "overhang_emu": max(0, r - SWp, b - SHp)})
     rep["shapes_outside_canvas"] = over
     rep["no_shape_overflow"] = not over
+    rep["flush_to_canvas_edge"] = flush
+    rep["flush_edge_slides_main"] = sorted({f["slide"] for f in flush
+                                            if f["deck"] == "main"})
+    rep["flush_edge_frames_reveals"] = sorted({f["slide"] for f in flush
+                                               if f["deck"] == "reveals"})
+    rep["flush_edge_max_overhang_emu"] = max([f["overhang_emu"]
+                                              for f in flush] or [0])
+    rep["flush_edges_are_benign"] = rep["flush_edge_max_overhang_emu"] == 0
 
     rep["cta_name_on_slide_11"] = ("KEEP THE PROOF" in vis[10].upper()
                                    and "A 60-MINUTE CAREER EVIDENCE SYSTEM" in vis[10])
     rep["cta_url_slides"] = [i + 1 for i, t in enumerate(vis)
                              if "temidayoafonja.com/keep-the-proof" in t]
     joined = " ".join(vis).lower()
+    rep["removed_line_absent"] = "every team in the region" not in joined
     rep["no_competing_offer"] = not any(x in joined for x in
         ("field kit", "fieldkit", "career decision evidence check",
          "career-decisions", "book", "workshop"))

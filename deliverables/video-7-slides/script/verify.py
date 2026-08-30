@@ -89,6 +89,9 @@ lowered = body.lower()
 rep["no_retention_metric_in_script"] = "30%" not in body and "30 per cent" not in lowered
 rep["no_turnover_metric_in_script"] = ("$2" not in body and "2 million" not in lowered
                                        and "turnover" not in lowered)
+rep["removed_line_absent_from_script"] = "every team in the region" not in lowered
+rep["replacement_copy_present"] = ("Continued use is evidence. Record who was still using "
+                                   "the system after the handoff") in body
 rep["no_tubebuddy_in_script"] = "tubebuddy" not in lowered
 rep["no_competing_offer_in_script"] = not any(
     x in lowered for x in ("field kit", "fieldkit", "career decision evidence check",

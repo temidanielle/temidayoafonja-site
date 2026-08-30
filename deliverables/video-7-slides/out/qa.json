@@ -112,10 +112,67 @@
   "picture_shapes": 0,
   "shapes_outside_canvas": [],
   "no_shape_overflow": true,
+  "flush_to_canvas_edge": [
+    {
+      "deck": "main",
+      "slide": 2,
+      "left": 0,
+      "top": 3657600,
+      "right": 12192000,
+      "bottom": 6858000,
+      "slide_width": 12192000,
+      "slide_height": 6858000,
+      "overhang_emu": 0
+    },
+    {
+      "deck": "main",
+      "slide": 6,
+      "left": 0,
+      "top": 3657600,
+      "right": 12192000,
+      "bottom": 6858000,
+      "slide_width": 12192000,
+      "slide_height": 6858000,
+      "overhang_emu": 0
+    },
+    {
+      "deck": "reveals",
+      "slide": 4,
+      "left": 0,
+      "top": 3657600,
+      "right": 12192000,
+      "bottom": 6858000,
+      "slide_width": 12192000,
+      "slide_height": 6858000,
+      "overhang_emu": 0
+    },
+    {
+      "deck": "reveals",
+      "slide": 13,
+      "left": 0,
+      "top": 3657600,
+      "right": 12192000,
+      "bottom": 6858000,
+      "slide_width": 12192000,
+      "slide_height": 6858000,
+      "overhang_emu": 0
+    }
+  ],
+  "flush_edge_slides_main": [
+    2,
+    6
+  ],
+  "flush_edge_frames_reveals": [
+    4,
+    13
+  ],
+  "flush_edge_max_overhang_emu": 0,
+  "flush_edges_are_benign": true,
   "cta_name_on_slide_11": true,
   "cta_url_slides": [
     11
   ],
+  "removed_line_absent": true,
   "no_competing_offer": true,
   "watch_next_routes_to_video_8": true,
   "watch_next_names_playlist": true,
