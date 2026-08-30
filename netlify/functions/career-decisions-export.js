@@ -140,8 +140,33 @@ function flatten(rec) {
 // and that the failing request is the API one.
 function blobsRoute() {
   if (blobsConfigured()) return "manual";
-  if (globalThis.netlifyBlobsContext || process.env.NETLIFY_BLOBS_CONTEXT) return "auto";
+  if (blobsContextPresent()) return "auto";
   return "unconfigured";
+}
+
+// Whether Netlify injected a Blobs context into this function's runtime.
+//
+// This is the one fact needed to settle Netlify support case #1099659 and it
+// cannot be observed any other way. blobsRoute() above reports "manual"
+// whenever BLOBS_SITE_ID and BLOBS_TOKEN are set, which they are, so it can
+// never say whether a context also exists. Netlify's proposed remedy is to drop
+// the manual credentials and call getStore(name) so the client reads the context
+// itself. That remedy only works if a context is there, and changing
+// netlify/lib/blobs.js, which nine functions share, on the assumption that it is
+// would be the wrong order of operations.
+//
+// The expression is the same one @netlify/blobs 8.2.0 uses in
+// getEnvironmentContext, so a true here means the client would find it too.
+//
+// ── What this returns, and what it deliberately cannot ──
+//
+// A boolean and nothing else. Boolean() is applied at the point of reading, so
+// the context value never leaves this function, not as a value, a fragment, a
+// length, a shape, a type or a count. A caller learns one bit: present, or not.
+// That bit is not a secret. It is a property of the deploy environment, it is
+// the same for every visitor, and it is only reachable behind the export token.
+function blobsContextPresent() {
+  return Boolean(globalThis.netlifyBlobsContext || process.env.NETLIFY_BLOBS_CONTEXT);
 }
 
 // ── Blobs failure classification ───────────────────────────────────────────
@@ -310,7 +335,8 @@ exports.handler = async (event) => {
           // manual API credentials fail for unrelated reasons, and nothing in
           // the error itself says which one was in use.
           mode: blobsRoute(),
-          blobs_manual_config: blobsConfigured()
+          blobs_manual_config: blobsConfigured(),
+          blobs_context_present: blobsContextPresent()
         })
       };
     }

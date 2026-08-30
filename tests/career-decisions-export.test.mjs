@@ -118,6 +118,7 @@ function reset({ token = TOKEN, seedRecords = null } = {}) {
   // No injected context by default, so the default route is manual, which is
   // what production and the deploy previews have been using.
   delete process.env.NETLIFY_BLOBS_CONTEXT;
+  delete globalThis.netlifyBlobsContext;
   blobs.lastGetStoreArg = null;
   // null is the sentinel for "the server has no token configured". undefined
   // would hit the default parameter above and silently set the real token,
@@ -618,6 +619,73 @@ test("the injected route is used when the manual credentials are absent", async 
   process.env.NETLIFY_BLOBS_CONTEXT = "eyJzaXRlSUQiOiJ4In0=";
   await call({ token: TOKEN });
   assert.equal(blobs.lastGetStoreArg, "career-decisions-leads");
+});
+
+/* ── Is a Blobs context present at runtime ─────────────────────────────── */
+//
+// The one fact that settles Netlify support case #1099659. Their proposed
+// remedy, dropping the manual credentials so the client reads an injected
+// context itself, only works if a context exists. These tests pin both the
+// answer and the shape of the answer, because the shape is a disclosure
+// question: a boolean is safe, anything derived from the value is not.
+
+const CONTEXT = "eyJzaXRlSUQiOiJ4In0=";
+
+test("a context in the environment is reported as present", async () => {
+  reset();
+  process.env.NETLIFY_BLOBS_CONTEXT = CONTEXT;
+  blobs.failList = true;
+  assert.equal(JSON.parse((await call({ token: TOKEN })).body).blobs_context_present, true);
+});
+
+test("a context on globalThis is reported as present", async () => {
+  reset();
+  // The client checks globalThis first, so this path must be read too or a
+  // context supplied that way would be reported absent.
+  globalThis.netlifyBlobsContext = CONTEXT;
+  try {
+    blobs.failList = true;
+    assert.equal(JSON.parse((await call({ token: TOKEN })).body).blobs_context_present, true);
+  } finally {
+    delete globalThis.netlifyBlobsContext;
+  }
+});
+
+test("no context is reported as absent", async () => {
+  reset();
+  blobs.failList = true;
+  assert.equal(JSON.parse((await call({ token: TOKEN })).body).blobs_context_present, false);
+});
+
+test("the answer does not depend on the manual credentials", async () => {
+  reset();
+  // This is the whole point. mode reports "manual" whenever the two variables
+  // are set, so it can never reveal whether a context also exists. The two
+  // facts must be reported independently.
+  process.env.NETLIFY_BLOBS_CONTEXT = CONTEXT;
+  blobs.failList = true;
+  const body = JSON.parse((await call({ token: TOKEN })).body);
+  assert.equal(body.mode, "manual", "manual credentials still win the route");
+  assert.equal(body.blobs_manual_config, true);
+  assert.equal(body.blobs_context_present, true, "and the context is reported anyway");
+});
+
+test("the response carries a boolean and never the context itself", async () => {
+  reset();
+  process.env.NETLIFY_BLOBS_CONTEXT = CONTEXT;
+  blobs.failList = true;
+  const res = await call({ token: TOKEN });
+
+  assert.equal(typeof JSON.parse(res.body).blobs_context_present, "boolean",
+    "a boolean, not a string, a number or an object");
+
+  // No value, no fragment, no length. A four-character slice is short enough
+  // that an accidental truncation would still be caught.
+  assert.ok(!res.body.includes(CONTEXT), "the value never appears");
+  assert.ok(!res.body.includes(CONTEXT.slice(0, 4)), "nor any fragment of it");
+  assert.ok(!res.body.includes(String(CONTEXT.length)), "nor its length");
+  assert.ok(!/NETLIFY_BLOBS_CONTEXT|netlifyBlobsContext/.test(res.body),
+    "nor the name it was read from");
 });
 
 test("the failure body names the store so the fault is attributable", async () => {
