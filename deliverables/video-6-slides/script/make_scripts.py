@@ -19,8 +19,8 @@ from docx.oxml.ns import qn
 from docx.oxml import OxmlElement
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SRC = ("/root/.claude/uploads/f121668d-e262-5eb8-9b22-0eaa1006a361/"
-       "84102179-YouTube_Video_6_Production_Package_Growth_vs_Workload.docx")
+SRC = os.path.join(os.path.dirname(HERE),
+                   "YouTube_Video_6_Production_Package_Growth_vs_Workload.docx")
 NS = '{http://schemas.openxmlformats.org/wordprocessingml/2006/main}'
 
 NAVY = RGBColor(0x0F, 0x23, 0x46)
