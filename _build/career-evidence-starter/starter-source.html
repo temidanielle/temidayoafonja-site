@@ -121,8 +121,13 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 14
    photograph only. Nothing in the image is retouched, recoloured or altered. */
 .author .photo { width: 2.15in; height: 2.15in; flex: 0 0 auto; overflow: hidden;
   border-radius: 3px; border: 1px solid var(--line); }
-.author .photo img { display: block; width: 118%; height: auto;
-  margin: -7% 0 0 -13%; }
+/* Measured off the supplied plate: hair starts 21% down, shoulders flare at
+   66%, the subject centres on 54% across, and there is roughly a fifth of the
+   frame in empty ground above the head and to the left. This shows source
+   x 14% to 94% and y 13% to 93%, which leaves about a tenth of the frame as
+   headroom and carries the torso to the bottom edge. */
+.author .photo img { display: block; width: 125%; height: auto;
+  margin: -16.25% 0 0 -17.5%; }
 .author .note { flex: 1 1 auto; min-width: 0; }
 .author .note p { font-size: 9.6pt; line-height: 1.55; margin: 0 0 8px; max-width: none; }
 .author .note p:last-child { margin-bottom: 0; }
