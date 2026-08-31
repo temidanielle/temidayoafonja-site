@@ -109,6 +109,7 @@ def left_bar(p, hexcol):
 # The revised conversational opening lives in a script-only source so the
 # production-package DOCX and every slide asset stay untouched.
 from opening_revision import NEW_OPENING, REPLACES
+from canon import count as canonical_count, spoken_paragraphs
 
 
 def apply_opening_override(sec):
@@ -135,6 +136,7 @@ def apply_opening_override(sec):
 
 def build():
     sec = apply_opening_override(source_blocks())
+    CANON_WORDS = canonical_count(sec)
     doc = Document()
     st = doc.styles['Normal']
     st.font.name = 'Calibri'; st.font.size = Pt(13)
@@ -179,6 +181,8 @@ def build():
     for block in sec:
         b = block.strip()
         if b.startswith("Target"):
+            b = re.sub(r"This draft is [\d,]+\.",
+                       "This draft is %s." % format(CANON_WORDS, ","), b)
             p = para(b, size=10.5, italic=True, color=DIM, before=0, after=18,
                      spacing=1.2)
             shade(p, "F3F0E8")
@@ -210,7 +214,7 @@ def build():
     print("clean script :", os.path.basename(out_txt))
     print("markers placed:", sorted(used))
     print("spoken paragraphs: %d   words: %d"
-          % (len(spoken), sum(len(s.split()) for s in spoken)))
+          % (len(spoken), CANON_WORDS))
     return out_docx, out_txt, spoken, sec
 
 
