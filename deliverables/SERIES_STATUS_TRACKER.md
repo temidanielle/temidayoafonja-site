@@ -10,23 +10,25 @@ Last updated: 31 August 2026.
 
 ## Publication gates
 
-### `temidayoafonja.com/career-decisions` — gates **Video 3 and Video 5**
+### `temidayoafonja.com/career-decisions` — CLEARED, 31 August 2026
 
-The Career Decision Evidence Check page gates **both** videos, not Video 5
-alone. Recorded here at Temidayo's instruction; neither package was reopened
-for this note.
+**Temidayo confirmed the page is live at https://temidayoafonja.com/career-decisions.**
+This gate is closed for Video 3 and Video 5 on that confirmation.
 
-Corroborated by the August 28 roadmap audit
-(`deliverables/video-7-slides/reference/`), which routes the Career Decision
-Evidence Check to Videos 3, 5, 11, 17, 18 and 21, states "publish only when the
-page is live and usable," marks Video 3 specifically as a **hard publication
-hold until the page is live**, and asks in its missing-evidence list: "Is the
-Career Decision Evidence Check page live before Videos 3 and 5 are scheduled?"
+Recorded honestly: I could not verify it independently. Outbound requests to
+temidayoafonja.com are refused by this environment's egress proxy
+(`connect_rejected`, organization policy), and the route does not appear in the
+website source in this repository, so there was nothing here to corroborate it
+against either. The status above rests on Temidayo's confirmation, not on a
+check I ran.
 
-- Status: **not confirmed live.** It was not live when Video 5 was built and
-  has not been re-checked since. Confirm before either video is scheduled.
-- Applies to: Video 3, Video 5.
-- Neither package needs a rebuild if the URL is unchanged — only the schedule.
+What the gate required, for the record: the August 28 roadmap audit routes the
+Career Decision Evidence Check to Videos 3, 5, 11, 17, 18 and 21, states
+"publish only when the page is live and usable," and marked Video 3 a **hard
+publication hold until the page is live**. That hold is now lifted.
+
+Worth one look before either video publishes: that the page loads for a
+signed-out visitor, not only for someone logged in or holding a preview link.
 
 ### Other standing gates
 
