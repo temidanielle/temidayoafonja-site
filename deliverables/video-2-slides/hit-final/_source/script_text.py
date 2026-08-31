@@ -1,0 +1,125 @@
+# -*- coding: utf-8 -*-
+"""Approved Video 2 spoken script, verbatim. Markers on their own lines."""
+
+SCRIPT = """You can be doing very well at work and still be narrowing your next options.
+My own career has crossed very different functions and industries, so I’ve had to learn what makes experience travel.
+One thing became clear: being valuable here is not the same as being legible somewhere else.
+Here are three tests to see whether your current work is actually expanding your marketability.
+[SLIDE: Title]
+I’m Temidayo Afonja. I help experienced professionals understand what their work has built, what can travel, and what still has to be learned when the context changes.
+Let’s start with two different questions.
+[SLIDE: Valuable Here / Legible Elsewhere]
+Being valuable where you are answers one question:
+Does this organization know what I do and rely on it?
+Marketability asks another:
+Can a different context recognize and use what I know how to do?
+Those two things often rise together.
+But not always.
+You may be well paid because you understand the company deeply.
+You may be the person everyone calls because you know the history, the relationships, the workarounds, or where a fragile process breaks.
+That is real value.
+But some of that value may belong to the context around you.
+The point is not to panic or assume you need to leave.
+The point is to read it accurately.
+Praise can tell you that you matter here. It cannot tell you how easily your value travels.
+[SLIDE: 01 — Remove the Company Nouns]
+The first test is to remove the company nouns.
+[SLIDE: Test One]
+Take one sentence you use to describe your work.
+Cross out the employer name, the internal program, the system, the product name and the acronym.
+Then read what is left.
+Suppose someone says:
+“I own the QBR process for this business unit.”
+Inside that company, that sentence may carry a lot of meaning.
+Outside it, the listener mostly hears the name of a process.
+Now compare it with this:
+“I combine incomplete operating data, surface the decision leaders are avoiding, and create a shared view of what needs to happen next.”
+Now I can hear the judgment.
+I can hear the problem.
+I can imagine where else that ability might matter.
+Try this with one sentence from your résumé, LinkedIn profile or the way you normally introduce your work.
+If the sentence collapses when the company nouns disappear, do not conclude that you have nothing transferable.
+Rewrite it around the problem you solve, the judgment you bring and what you make possible.
+[SLIDE: 02 — Find Outside-Context Evidence]
+The second test is to find outside-context evidence.
+[SLIDE: Test Two]
+Look for evidence that your judgment has been useful beyond the exact place where it was formed.
+This is not about popularity.
+It does not require a job offer, a large audience or public visibility.
+Maybe another function sought your judgment.
+Maybe a client or customer could use it.
+Maybe a former colleague came back to you after the original context changed.
+Maybe a similar approach remained useful in another setting.
+The question is simple:
+When some of the original conditions changed, did what I know how to do remain useful?
+This is where being indispensable can sometimes mislead us.
+If an organization depends on you because the undocumented history sits in your head, certain relationships run through you, or you are the person who rescues a fragile process, that can raise your internal importance without necessarily expanding your marketability.
+So write down one example where your judgment was useful beyond your immediate role, team or employer.
+If you cannot think of one yet, that is not a verdict.
+It is something to test.
+[SLIDE: 03 — Read the Last 90 Days]
+The third test is to read the last 90 days.
+[SLIDE: Test Three]
+Not just:
+Was I busy?
+Did I perform well?
+Ask instead:
+What new judgment did this work build?
+Start with three questions.
+What unfamiliar problem did I have to solve?
+What decision can I now make with less help?
+What new constraint, audience or context did I learn to work across?
+Then add one final check:
+Is the main change new judgment?
+Or am I mostly doing the same work faster?
+Speed has value.
+Efficiency matters.
+But if we are asking whether your marketability is expanding, I also want to know whether the work is giving you new problems to interpret, new decisions to make, new people to influence or new conditions to work through.
+You can become much better at work you already know.
+That is proficiency.
+It is not always the same thing as expansion.
+[SLIDE: The Three Tests]
+So the three tests are:
+Remove the company nouns.
+Find outside-context evidence.
+Read the last 90 days.
+Together, they help you separate internal value from external marketability.
+[SLIDE: Read the Pattern]
+Now read the pattern, not just one test.
+Ask two questions side by side:
+Is my judgment growing?
+And can another context use it?
+If both answers are strong, the work may be compounding.
+If your judgment is growing but most of the usefulness is tied to one environment, you may have real depth that still needs to be translated or tested elsewhere.
+If the capability travels but the work itself is no longer stretching you, you may be maintaining value without adding very much new.
+And if neither your judgment nor its portability is moving, that deserves attention.
+This is not a diagnosis based on one quarter or one frustrating assignment.
+What matters is the pattern.
+[SLIDE: Before You Leave]
+And this is important:
+A concern in one of these tests does not automatically mean you should quit.
+Ask one more question:
+What can I change before I leave?
+Choose one thing to test over the next 30 days.
+Ask for work that creates new judgment, not simply more volume.
+Make your capability visible outside your immediate team or function.
+Document knowledge or results that currently live mostly in your head — in your own words, at a permitted high level, without taking confidential or employer-owned material.
+Or take on an adjacent problem that forces what you know into a different context.
+Pick one.
+Then watch what changes.
+Sometimes the first move is to change the work before you change the employer.
+Before you change the employer, test whether you can change what the work is building.
+[SLIDE: Capability Formation Field Kit]
+If these three tests show that you need a fuller read of what your current work is building and how portable it is, the Capability Formation Field Kit gives you a private, evidence-led assessment using the last 90 days of your actual work.
+It helps you see what is growing, what may be stalling, what appears portable and what you still need to investigate before you decide what comes next.
+You can find it at temidayoafonja.com/fieldkit.
+[SLIDE: Watch Next]
+And if what you are seeing has you seriously considering an exit, do not move straight from concern to resignation.
+There are three things I want you to check first.
+That is the next video:
+3 Things to Do Before Quitting Your Job.
+Watch that one next."""
+
+LINES = [l.strip() for l in SCRIPT.split("\n") if l.strip()]
+MARKERS = [l for l in LINES if l.startswith("[SLIDE:")]
+SPOKEN = [l for l in LINES if not l.startswith("[SLIDE:")]
