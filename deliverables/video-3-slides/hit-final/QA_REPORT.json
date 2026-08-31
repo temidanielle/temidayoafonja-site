@@ -1,0 +1,31 @@
+{
+ "1_teleprompter_docx_equals_txt": true,
+ "2_reading_docx_equals_txt": true,
+ "3_teleprompter_minus_markers_equals_reading": true,
+ "3b_both_equal_approved_script_verbatim": true,
+ "4_markers_present_ordered_sequential": true,
+ "4b_marker_count": 13,
+ "4c_marker_positions_match_source": true,
+ "5_shorts_free_of_editor_directions": true,
+ "5b_offending": {},
+ "6_editor_docs_labelled": true,
+ "10_exactly_four_short_recording_docs": true,
+ "10b_short_filenames": [
+  "Video_3_Short_1_Before_You_Lose_Context.docx",
+  "Video_3_Short_2_Keep_Proof_Not_Files.docx",
+  "Video_3_Short_3_Context_Disappears_Fast.docx",
+  "Video_3_Short_4_Three_Questions_Before_You_Quit.docx"
+ ],
+ "11_safety_boundary_verbatim": true,
+ "11b_safety_boundary_in_short_4": true,
+ "12_permission_boundary_verbatim": true,
+ "12b_no_unsafe_retention_instruction": true,
+ "12c_offending": {},
+ "reading_has_no_markers": true,
+ "reading_has_no_timestamps": true,
+ "spoken_paragraphs": 108,
+ "spoken_words": 1205,
+ "17_chapters_marked_working_estimates": true,
+ "17b_publication_gate_stated": true,
+ "ALL_BOOLEAN_CHECKS_PASS": true
+}

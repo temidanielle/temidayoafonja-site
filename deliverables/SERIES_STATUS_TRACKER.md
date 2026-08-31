@@ -46,7 +46,7 @@ signed-out visitor, not only for someone logged in or holding a preview link.
 |---|---|---|---|
 | 1 | built | — | **Option A vs B not selected** — open |
 | 2 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. rebuild approved and LOCKED**, commit `d6883dd` | final, approved |
-| 3 | built (v1.2) | H.I.T. direction to be reviewed before any build instruction | Final A approved; Final B archived |
+| 3 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. rebuild built — awaiting Temidayo's approval** | Final A approved; Final B archived |
 | 4 | approved and locked | **approved and locked** | approved |
 | 5 | approved and locked | **approved and locked** | approved |
 | 6 | approved and locked | **approved and locked** | task closed — finalising in Canva |
@@ -78,11 +78,23 @@ title and conversational opening standard**, with Videos 4 to 8 as the approved
 reference set. Video 2's H.I.T. rebuild follows the same first-three-seconds
 discipline.
 
+Video 3's H.I.T. rebuild is built at `deliverables/video-3-slides/hit-final/`
+and awaits approval. 108 spoken paragraphs, 1,205 words, 13 slide markers
+mapping to the unchanged 13-slide deck. Four standalone Shorts, and editor
+instruction held in two clearly labelled EDITOR ONLY briefs, out of every
+recording document. Its working chapter timestamps are estimates on the same
+terms as Video 2's, and are not to be recalculated before recording.
+
+**Flagged for Temidayo, not changed.** The existing Video 3 slides 5 and 6 read
+"Name what **the** work built". The approved spoken script says "Name what
+**your** work built". The slides were not modified. The spoken language is
+authoritative. Changing the deck to match would be a separate, explicitly
+instructed pass.
+
 ### Next
 
-Video 3, under the same H.I.T. architecture. Its revised editorial and H.I.T.
-direction is to be reviewed and approved **before** any build instruction is
-given. No Video 3 file is to be modified until then.
+Temidayo's review of the Video 3 H.I.T. package. No further Video 3 file is to
+be modified until then.
 
 ---
 
