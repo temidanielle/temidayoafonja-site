@@ -110,7 +110,7 @@
     },
 
     "professional_workshop": {
-      "name": "Decide Whether to Stay or Leave Your Job",
+      "name": "Stay or Leave? Live Career Growth Assessment",
       "subtitle": "A Live Career Growth Assessment",
       "method": "The Capability Position Read",
       "route": "/for-professionals",
@@ -122,11 +122,11 @@
       "duration": "60 minutes",
       "duration_detail": "50-minute recorded guided assessment, then a 10-minute private question and answer",
       "session": {
-        "date": "2026-09-16",
-        "date_display": "Wednesday, September 16, 2026",
+        "date": "2026-09-23",
+        "date_display": "Wednesday, September 23, 2026",
         "start_time": "18:00",
         "end_time": "19:00",
-        "time_display": "6:00 to 7:00 PM CT",
+        "time_display": "6:00 PM CT",
         "timezone": "America/Chicago"
       },
       "minimum_age": 18,
@@ -138,8 +138,8 @@
         "published": false,
         "note": "Transfers are allowed in practice. Operator decision: do not publish a transfer policy."
       },
-      "format": "guided self-read",
-      "format_note": "Called a guided self-read, not a live assessment, from August 14 2026. The session guides a room through the instrument; it is not personalized analysis of one participant.",
+      "format": "live career growth assessment",
+      "format_note": "Titled Stay or Leave? Live Career Growth Assessment, matching the Maven listing. The session guides a room through the instrument rather than analysing one participant's position individually. Supersedes the August 14 2026 wording, which avoided calling it a live assessment.",
       "includes": [
         "60-minute guided session",
         "Twelve-statement Capability Position Read, completed twice",
@@ -153,9 +153,9 @@
       "excludes_note": "The written Next-Move Note moved to the paid Private Capability Position Read on August 14 2026 and must not be promised for the free session. Q&A is offered as time allows rather than guaranteed.",
       "registration_url": {
         "published": true,
-        "url": "https://maven.com/p/8b3c40",
+        "url": "https://maven.com/p/8b3c40/stay-or-leave-live-career-growth-assessment",
         "appears_on": ["for-professionals.html", "diagnostic.html"],
-        "note": "Registration is open. The canonical short URL is linked in three places: the September 16 card and the register section on for-professionals.html, and the results CTA on diagnostic.html. Recorded as unpublished until August 21 2026. Two earlier forms are superseded and must not be reused: the intended URL maven.com/temidayo-afonja/decide-whether-to-stay-or-leave-your-job, which was never linked on any page, and the extended slug maven.com/p/8b3c40/stay-or-leave-your-job-live-career-growth-assessment."
+        "note": "Registration is open. The canonical URL is linked in three places: the September 23 card and the register section on for-professionals.html, and the results CTA on diagnostic.html. Recorded as unpublished until August 21 2026. Three earlier forms are superseded and must not be reused: the intended URL maven.com/temidayo-afonja/decide-whether-to-stay-or-leave-your-job, which was never linked on any page; the extended slug maven.com/p/8b3c40/stay-or-leave-your-job-live-career-growth-assessment; and the short form maven.com/p/8b3c40, which was canonical until the session was rescheduled to September 23 2026. Note that the current URL and the superseded extended slug differ by the two words your-job only, so check the slug character by character before reusing either."
       }
     },
 
@@ -178,18 +178,18 @@
       "price_usd": 0,
       "price_display": "Free",
       "session": {
-        "date": "2026-09-02",
-        "date_display": "Wednesday, September 2, 2026",
+        "date": "2026-09-09",
+        "date_display": "Wednesday, September 9, 2026",
         "start_time": "18:00",
         "end_time": "18:45",
-        "time_display": "6:00 to 6:45 PM CT",
+        "time_display": "6:00 PM CT",
         "timezone": "America/Chicago"
       },
       "recording": "Recorded by the organizer. Participants may not record.",
       "registration_url": "https://maven.com/p/5162f2/how-to-tell-if-your-career-is-stalling",
       "appears_on": ["for-professionals.html", "diagnostic.html", "career-decisions.html"],
-      "retirement_note": "Time-bound, and retired two different ways depending on the page. On for-professionals.html the banner block is self-contained and marked in a comment for deletion when the session passes: that one is manual. On career-decisions.html it is NOT manual and must not be deleted by hand. That page holds the session in a single NEXT_STEP configuration block with an explicit expiry of 2026-09-02T18:45:00-05:00, the end of the session in Central time, and switches itself to the Field Kit at that instant with no deploy and no edit, and does so while the page is open rather than only on the next page load, so a tab left open across the cutoff does not keep showing a dead registration link. To retire it earlier than that, set NEXT_STEP.current to null rather than removing the block.",
-      "expiry_on_career_decisions": "2026-09-02T18:45:00-05:00"
+      "retirement_note": "Time-bound, and retired two different ways depending on the page. On for-professionals.html the banner block is self-contained and marked in a comment for deletion when the session passes: that one is manual. On career-decisions.html it is NOT manual and must not be deleted by hand. That page holds the session in a single NEXT_STEP configuration block with an explicit expiry of 2026-09-09T18:45:00-05:00, the end of the session in Central time, and switches itself to the Field Kit at that instant with no deploy and no edit, and does so while the page is open rather than only on the next page load, so a tab left open across the cutoff does not keep showing a dead registration link. To retire it earlier than that, set NEXT_STEP.current to null rather than removing the block.",
+      "expiry_on_career_decisions": "2026-09-09T18:45:00-05:00"
     }
   },
 
