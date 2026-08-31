@@ -51,8 +51,8 @@ def source_blocks():
 # Slide cues. Each is (slide number, slide name, the opening of the spoken
 # paragraph the slide lands on). The marker is placed immediately before it.
 CUES = [
-    (1,  "New to a context",
-     "Changing industries does not make you entry-level at everything."),
+    (1,  "New context, not no experience",
+     "What I learned is that changing industries does not make you"),
     (2,  "What actually changes",
      "Let me be precise about what changes when you move industries"),
     (3,  "Capability, context, credential",
@@ -105,8 +105,36 @@ def left_bar(p, hexcol):
     bd.append(lf); pr.append(bd)
 
 
+# ---------------------------------------------------------------- opening
+# The revised conversational opening lives in a script-only source so the
+# production-package DOCX and every slide asset stay untouched.
+from opening_revision import NEW_OPENING, REPLACES
+
+
+def apply_opening_override(sec):
+    """Swap the first REPLACES spoken paragraphs for the revised opening.
+
+    Timed headers and the target line are left exactly where they are, so the
+    block structure of the script is unchanged.
+    """
+    out, dropped, inserted = [], 0, False
+    for b in sec:
+        t = b.strip()
+        is_spoken = not HDR.match(t) and not t.startswith("Target")
+        if is_spoken and dropped < REPLACES:
+            dropped += 1
+            if not inserted:
+                out.extend(NEW_OPENING)
+                inserted = True
+            continue
+        out.append(b)
+    assert dropped == REPLACES, "expected %d paragraphs to replace, found %d" % (
+        REPLACES, dropped)
+    return out
+
+
 def build():
-    sec = source_blocks()
+    sec = apply_opening_override(source_blocks())
     doc = Document()
     st = doc.styles['Normal']
     st.font.name = 'Calibri'; st.font.size = Pt(13)

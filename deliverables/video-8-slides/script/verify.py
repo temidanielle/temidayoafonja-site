@@ -59,15 +59,22 @@ rep = {}
 pk = package_spoken()
 tel, marks = teleprompter_spoken()
 clean = [s.strip() for s in open(TXT).read().strip().split("\n\n") if s.strip()]
+sys.path.insert(0, HERE)
+from opening_revision import REPLACES as _R, NEW_OPENING as _N
+REPLACES_N = len(_N)
 
 rep["package_paragraphs"] = len(pk)
 rep["teleprompter_paragraphs"] = len(tel)
 rep["clean_paragraphs"] = len(clean)
-rep["word_count"] = sum(len(s.split()) for s in pk)
+rep["word_count"] = sum(len(s.split()) for s in clean)
 rep["word_count_in_target_1450_1700"] = 1450 <= rep["word_count"] <= 1700
-rep["clean_equals_package"] = clean == pk
-rep["teleprompter_equals_package"] = tel == pk
+# The two CURRENT recording scripts must match each other exactly.
 rep["clean_equals_teleprompter"] = clean == tel
+# The package DOCX deliberately retains the pre-revision opening: the targeted
+# hook pass was scoped to script files only and must not touch the package.
+# So a divergence here is expected, and it is confined to the opening.
+rep["package_diverges_only_in_the_opening"] = clean[REPLACES_N:] == pk[6:]
+rep["package_opening_is_superseded"] = clean[:1] != pk[:1]
 rep["slide_markers"] = marks
 rep["markers_present_1_to_12"] = marks == list(range(1, 13))
 body = "\n".join(clean)
@@ -100,11 +107,35 @@ rep["no_turnover_metric_in_script"] = ("$2" not in body and "2 million" not in l
 rep["no_tradeoff_free_promise"] = not any(
     x in lowered for x in ("without any tradeoff", "avoid every tradeoff",
                            "guaranteed", "you will get the job"))
-rep["opening_distinction_present"] = (
-    "Changing industries does not make you entry-level at everything. It makes "
-    "you new to a context.") in body
+DISTINCTION = ("changing industries does not make you entry-level at "
+               "everything. It makes you new to a context.")
+COLD_OPEN = "Do I really have to start over just because I\u2019m changing industries?"
+
+rep["opening_distinction_present"] = DISTINCTION in body
+rep["distinction_is_not_the_cold_open"] = not clean[0].startswith("Changing industries")
+rep["cold_open_is_first_spoken_line"] = clean[0] == COLD_OPEN
+rep["cold_open_word_count"] = len(clean[0].split())
+rep["cold_open_within_6_to_14_words"] = 6 <= len(clean[0].split()) <= 14
+rep["cold_open_is_one_sentence"] = clean[0].count(".") + clean[0].count("?") == 1
+_c0 = clean[0].lower()
+rep["cold_open_passes_rejection_test"] = not any([
+    _c0.startswith("in this video"),
+    _c0.startswith("most experienced professionals"),
+    _c0.startswith("most professionals"),
+    " is defined as " in _c0,
+    _c0.count(",") >= 2,          # no polished three-part list
+])
+rep["answer_reversal_second"] = clean[1] == "No. But your experience won\u2019t translate itself."
+rep["payoff_third"] = clean[2].startswith("You have to show what still travels")
+rep["early_proof_paragraph_index"] = next(
+    (i for i, p in enumerate(clean) if "nearly two decades" in p), -1)
+rep["early_proof_within_first_five_paragraphs"] = (
+    0 <= rep["early_proof_paragraph_index"] < 5)
+rep["opening_uses_contractions"] = all(
+    x in " ".join(clean[:6]) for x in ("I\u2019m", "won\u2019t", "I\u2019ve", "you\u2019re"))
 rep["cism_stated_within_ceiling"] = (
-    "prepared for the CISM exam and did not pass the first time" in body
+    ("prepared for the CISM exam and did not pass the first time" in body
+     or "prepared for the CISM exam and didn\u2019t pass the first time" in body)
     and not any(x in lowered for x in ("cism score", "failed because", "second attempt",
                                        "passed on the second")))
 rep["career_span_uses_ledger_wording"] = ("nearly two decades" in lowered
@@ -151,7 +182,7 @@ rep["viewer_definition_broadened"] = (
     and "senior corporate woman" not in pkg_all)
 rep["word_count_method_documented"] = "str.split() on whitespace" in pkg_all
 rep["punctuation_identical_after_marker_strip"] = (
-    "".join(clean) == "".join(pk) == "".join(tel))
+    "".join(clean) == "".join(tel))
 rep["no_promotion_promise"] = not re.search(
     r'(will|guarantee[sd]?) (get|earn|lead to) (you )?(a )?(promotion|promoted)',
     lowered)

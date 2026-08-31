@@ -60,7 +60,7 @@ def source_blocks():
 # where noted as trailing.
 CUES = [
     (1,  "Core distinction",
-     "By the end, you should be able to distinguish a move", "before"),
+     "By the end, you\u2019ll be able to tell a move", "before"),
     (2,  "The three questions",
      "The three questions are: Will the work change?", "before"),
     (3,  "Question 1, will the work change",
@@ -104,8 +104,36 @@ def left_bar(p, hexcol):
     bd.append(lf); pr.append(bd)
 
 
+# ---------------------------------------------------------------- opening
+# The revised conversational opening lives in a script-only source so the
+# production-package DOCX and every slide asset stay untouched.
+from opening_revision import NEW_OPENING, REPLACES
+
+
+def apply_opening_override(sec):
+    """Swap the first REPLACES spoken paragraphs for the revised opening.
+
+    Timed headers and the target line are left exactly where they are, so the
+    block structure of the script is unchanged.
+    """
+    out, dropped, inserted = [], 0, False
+    for b in sec:
+        t = b.strip()
+        is_spoken = not HDR.match(t) and not t.startswith("Target")
+        if is_spoken and dropped < REPLACES:
+            dropped += 1
+            if not inserted:
+                out.extend(NEW_OPENING)
+                inserted = True
+            continue
+        out.append(b)
+    assert dropped == REPLACES, "expected %d paragraphs to replace, found %d" % (
+        REPLACES, dropped)
+    return out
+
+
 def build():
-    sec = source_blocks()
+    sec = apply_opening_override(source_blocks())
     doc = Document()
     st = doc.styles['Normal']
     st.font.name = 'Calibri'; st.font.size = Pt(13)
