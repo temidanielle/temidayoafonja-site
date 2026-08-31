@@ -5,6 +5,19 @@
   directory = "netlify/functions"
   node_bundler = "esbuild"
 
+# _build/ holds the print source and the build and QA scripts for the Career
+# Evidence Starter. Because publish is the repository root it would otherwise be
+# fetchable by URL, and starter-source.html carries the complete six-page product
+# copy: the whole free product would be readable without an email address.
+# force = true is required, since these are real files on disk and would
+# otherwise be served in preference to the rule. The files stay in the
+# repository; they are simply not served.
+[[redirects]]
+  from = "/_build/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
 [[redirects]]
   from = "/organizational-diagnostic"
   to = "/organizational-diagnostic.html"
