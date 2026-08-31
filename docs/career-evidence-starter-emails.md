@@ -29,7 +29,7 @@ Do not try to complete your whole career history. The Starter is built for a
 single accomplishment, and it works because it is narrow. You can run it again
 later on something else.
 
-Set aside about 10–15 focused minutes.
+Set aside about 10 to 15 focused minutes.
 
 Two practical notes:
 

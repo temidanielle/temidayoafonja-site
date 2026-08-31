@@ -66,9 +66,14 @@
 .lean-eyebrow { text-transform: uppercase; letter-spacing: .14em; font-size: 11px; font-weight: 800; color: var(--rust-ink); margin-bottom: 18px; display: block; }
 .lean-btn { display: inline-flex; align-items: center; justify-content: center; padding: 14px 22px; border-radius: 4px; font-weight: 700; font-size: 14px; font-family: Arial, Helvetica, sans-serif; text-decoration: none; cursor: pointer; border: none; }
 .lean-btn.light { background: #fff; color: var(--navy); }
+/* .primary had no rule on this page, so the hero call to action rendered as
+   bare text inside an invisible box. It is the rust fill used by the form
+   submit at the foot of the page, so the two reads as the same action. */
+.lean-btn.primary { background: var(--rust); color: #fff; letter-spacing: .06em;
+  text-transform: uppercase; font-size: 13px; padding: 16px 26px; }
 
 /* Hero. Same clamp, measure and rhythm as the hero on for-professionals.html. */
-.cd-hero { padding: 48px 0 20px; }
+.cd-hero { padding: 56px 0 44px; }
 .cd-hero h1 { font-size: clamp(32px, 4.6vw, 44px); line-height: 1.08; margin-bottom: 22px; }
 .cd-sub { font-family: Georgia, serif; font-size: 19px; color: var(--muted); max-width: 720px; }
 
@@ -197,16 +202,48 @@
 .ces-time { font-size: 15px; color: var(--muted-warm); margin-top: 22px;
   border-top: 1px solid var(--line-warm); padding-top: 16px; max-width: 66ch; }
 
-.ces-hero-grid { display: grid; grid-template-columns: 1fr 300px; gap: 48px; align-items: end; }
-.ces-build { border: 1px solid var(--line-warm); border-radius: 5px; background: #fff; overflow: hidden; }
-.ces-build .cap { text-transform: uppercase; letter-spacing: .14em; font-size: 10px; font-weight: 800;
-  color: var(--muted-warm); padding: 12px 16px 10px; border-bottom: 1px solid var(--line-warm); }
-.ces-build .row { display: flex; align-items: center; gap: 11px; padding: 13px 16px;
-  font-size: 12.5px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
-  color: var(--navy); border-bottom: 1px solid rgba(15,35,71,.07); }
-.ces-build .row i { width: 13px; height: 2px; background: var(--gold); flex: 0 0 auto; }
-.ces-build .row--out { background: var(--navy); color: #fff; border-bottom: 0; font-weight: 800; }
-.ces-build .row--out i { width: 17px; }
+/* Named areas rather than two columns, so the call to action can sit under the
+   copy on a wide screen and under the preview on a narrow one. The intended
+   read is category, transformation, the actual product, then the action, and
+   on a single column that only holds if the button moves last. */
+.ces-hero-grid { display: grid; grid-template-columns: 1fr 344px; column-gap: 46px;
+  align-items: center; grid-template-areas: "copy shot" "cta shot"; }
+.ces-copy { grid-area: copy; }
+.ces-shot { grid-area: shot; }
+.ces-cta  { grid-area: cta; }
+
+/* What you will build, kept from the sheet's own cover, now a single
+   left-to-right run so it reads as the transformation rather than a list. */
+/* Each arrow is glued to the chip that follows it, so a wrap never leaves a
+   dangling arrow at the end of a line. .lean-page p wins on specificity over a
+   single class, hence the .lean-page prefix on the caption margin. */
+.ces-flow { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; margin: 14px 0 0; }
+.ces-flow .step { display: inline-flex; align-items: center; gap: 7px; white-space: nowrap; }
+.ces-flow .step b { font-size: 9.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--navy); background: #fff; border: 1px solid var(--line-warm); border-radius: 3px;
+  padding: 6px 9px; }
+.ces-flow .step b.out { background: var(--navy); color: #fff; border-color: var(--navy); }
+.ces-flow .step i { color: var(--gold-ink); font-style: normal; font-size: 12px; }
+.lean-page .ces-flow-cap { text-transform: uppercase; letter-spacing: .14em; font-size: 10px;
+  font-weight: 800; color: var(--muted-warm); margin: 30px 0 0; }
+.ces-cta { margin-top: 32px; }
+
+/* The product preview. Two real page renders, the cover in front and the
+   Proof Line page showing behind it, so the reader sees the actual artifact
+   rather than a device mockup. */
+.ces-shot { position: relative; padding: 8px 0 0 34px; }
+/* height:auto matters: the width and height attributes are presentation hints,
+   so without it the images render at their intrinsic 1165px height. */
+.ces-shot img { display: block; height: auto; border-radius: 3px; }
+.ces-shot .front { width: 100%; position: relative; z-index: 2;
+  box-shadow: 0 18px 40px rgba(15,35,71,.17), 0 2px 6px rgba(15,35,71,.10);
+  border: 1px solid rgba(15,35,71,.10); }
+.ces-shot .back { position: absolute; left: 0; top: 0; width: 78%; z-index: 1;
+  transform: rotate(-4deg); transform-origin: bottom left; opacity: .96;
+  box-shadow: 0 10px 26px rgba(15,35,71,.13); border: 1px solid rgba(15,35,71,.10); }
+.ces-shot .tag { position: absolute; right: 0; bottom: -26px; z-index: 3;
+  font-size: 10px; font-weight: 800; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--muted-warm); }
 
 .ces-xform { display: grid; grid-template-columns: 1fr 34px 1.3fr; align-items: stretch;
   border: 1px solid var(--line-warm); border-radius: 5px; overflow: hidden; margin-top: 34px; max-width: 760px; }
@@ -227,6 +264,12 @@
   .ces-sec { padding: 56px 0; }
   .ces-xform { grid-template-columns: 1fr; }
   .ces-xarrow { padding: 6px 0; transform: rotate(90deg); }
+  /* Stacked, the preview would fill the viewport, so it is capped and centred. */
+  .ces-hero-grid { grid-template-columns: 1fr; grid-template-areas: "copy" "shot" "cta"; row-gap: 36px; }
+  .ces-shot { max-width: 300px; margin: 0 auto; padding: 6px 0 0 26px; }
+  .ces-cta { margin-top: 0; }
+  .ces-shot .tag { bottom: -22px; }
+  .lean-btn.primary { width: 100%; }
 }
 </style>
 </head>
@@ -256,19 +299,24 @@
 <section class="cd-hero">
   <div class="lean-wrap">
     <div class="ces-hero-grid">
-      <div>
+      <div class="ces-copy">
         <span class="ces-badge fade-up delay-1">Free Career Accomplishment Tracker</span>
         <h1 class="fade-up delay-2">Turn One Accomplishment Into Proof You Can Actually Use.</h1>
-        <p class="cd-sub fade-up delay-3">Turn one real piece of work into a clear evidence statement you can carry beyond your current job title. Set aside about 10&ndash;15 focused minutes.</p>
-        <div style="margin-top:28px;"><a class="lean-btn primary" href="#get-the-starter">Get the Free Career Evidence Starter</a></div>
+        <p class="cd-sub fade-up delay-3">Turn one real piece of work into a clear evidence statement you can carry beyond your current job title. Set aside about 10 to 15 focused minutes.</p>
+        <p class="ces-flow-cap fade-up delay-3">What you will build</p>
+        <div class="ces-flow fade-up delay-3">
+          <span class="step"><b>Before</b></span>
+          <span class="step"><i aria-hidden="true">&rarr;</i><b>Your contribution</b></span>
+          <span class="step"><i aria-hidden="true">&rarr;</i><b>What changed</b></span>
+          <span class="step"><i aria-hidden="true">&rarr;</i><b class="out">What travels</b></span>
+        </div>
       </div>
-      <div class="ces-build fade-up delay-3" aria-hidden="true">
-        <div class="cap">What you will build</div>
-        <div class="row"><i></i>Before</div>
-        <div class="row"><i></i>Your contribution</div>
-        <div class="row"><i></i>What changed</div>
-        <div class="row row--out"><i></i>What travels</div>
+      <div class="ces-shot fade-up delay-3">
+        <img class="back" src="/career-evidence-starter-inside.png" alt="" aria-hidden="true" width="900" height="1165" loading="eager">
+        <img class="front" src="/career-evidence-starter-cover.png" alt="The cover of the Career Evidence Starter, a six-page fillable PDF" width="900" height="1165" loading="eager">
+        <span class="tag">Six pages, fillable</span>
       </div>
+      <div class="ces-cta fade-up delay-3"><a class="lean-btn primary" href="#get-the-starter">Get the Free Career Evidence Starter</a></div>
     </div>
   </div>
 </section>
@@ -293,7 +341,7 @@
       <li>One portable Proof Line you can adapt for a review, an interview or a conversation</li>
       <li>One way to repeat the thinking on the next piece of work worth keeping</li>
     </ul>
-    <p class="ces-time">Set aside about 10&ndash;15 focused minutes.</p>
+    <p class="ces-time">Set aside about 10 to 15 focused minutes.</p>
   </div>
 </section>
 
