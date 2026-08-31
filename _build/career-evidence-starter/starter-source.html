@@ -114,9 +114,15 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 14
 
 /* ── Page 2, author note + choose the work ────────────────────────────── */
 .author { display: flex; gap: 20px; align-items: flex-start; margin: 0 0 4px; }
-.author .photo { width: 2.15in; flex: 0 0 auto; }   /* ~25% of the 8.5in page */
-.author .photo img { display: block; width: 100%; height: 2.15in; object-fit: cover;
-  object-position: center 22%; border-radius: 3px; border: 1px solid var(--line); }
+/* ~25% of the 8.5in page. The supplied portrait is square with generous
+   headroom and empty ground on the left, so the frame crops in rather than
+   showing the whole plate: the scale and the offsets below trim the ivory and
+   bring the face and upper torso forward. This is a crop of the original
+   photograph only. Nothing in the image is retouched, recoloured or altered. */
+.author .photo { width: 2.15in; height: 2.15in; flex: 0 0 auto; overflow: hidden;
+  border-radius: 3px; border: 1px solid var(--line); }
+.author .photo img { display: block; width: 118%; height: auto;
+  margin: -7% 0 0 -13%; }
 .author .note { flex: 1 1 auto; min-width: 0; }
 .author .note p { font-size: 9.6pt; line-height: 1.55; margin: 0 0 8px; max-width: none; }
 .author .note p:last-child { margin-bottom: 0; }
