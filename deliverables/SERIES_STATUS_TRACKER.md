@@ -4,7 +4,7 @@ Series-level record of publication gates, open decisions and outstanding
 assets. Kept here so individual video packages do not have to be reopened to
 carry a cross-cutting note.
 
-Last updated: 30 August 2026.
+Last updated: 31 August 2026.
 
 ---
 
@@ -40,15 +40,47 @@ Career Decision Evidence Check page live before Videos 3 and 5 are scheduled?"
 
 ## Package status
 
-| # | Package | Thumbnail |
-|---|---|---|
-| 1 | built | **Option A vs B not selected** — open |
-| 2 | built | final, approved |
-| 3 | built (v1.2) | Final A approved; Final B archived as alternate |
-| 4 | approved and locked | approved |
-| 5 | approved and locked | approved |
-| 6 | approved and locked | task closed — finalising in Canva |
-| 7 | **approved and closed** | **outstanding** — approved Canva export carrying `MAKE INVISIBLE WORK VISIBLE`, to be supplied for byte-identical inclusion |
+| # | Package | Recording scripts | Thumbnail |
+|---|---|---|---|
+| 1 | built | — | **Option A vs B not selected** — open |
+| 2 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. rebuild approved and LOCKED**, commit `d6883dd` | final, approved |
+| 3 | built (v1.2) | H.I.T. direction to be reviewed before any build instruction | Final A approved; Final B archived |
+| 4 | approved and locked | **approved and locked** | approved |
+| 5 | approved and locked | **approved and locked** | approved |
+| 6 | approved and locked | **approved and locked** | task closed — finalising in Canva |
+| 7 | approved and closed | **approved and locked** | **outstanding** — approved Canva export carrying `MAKE INVISIBLE WORK VISIBLE` |
+| 8 | approved | **approved and locked** | **outstanding** — Canva export carrying `YOUR EXPERIENCE STILL COUNTS` |
+
+### Locked recording scripts
+
+Videos 4 to 8 are locked at commit `de4363c`, handed off as
+`Video_4-8_FINAL_Recording_Materials.zip`. Canonical spoken-word counts:
+V4 1,221 · V5 1,639 · V6 1,649 · V7 1,472 · V8 1,514.
+
+Video 2 is locked separately at commit `d6883dd` under the H.I.T.
+first-30-second standard: `deliverables/video-2-slides/hit-final/`. 105 spoken
+paragraphs, 1,131 words, 13 slide markers mapping to the unchanged 13-slide
+deck. Four standalone Shorts, and editor instruction held in two clearly
+labelled EDITOR ONLY briefs, out of every recording document.
+
+**Video 2's working chapter timestamps are deliberately estimates.** They are
+not to be recalculated before recording. The editor replaces them with actual
+timestamps from the finished edit before publication. Greater precision now
+would be false precision, since the new opening and Temidayo's delivery will
+change the timing.
+
+### Standards recorded
+
+`CAPABILITY_FORMATION_YOUTUBE_STANDARDS.md` carries the **Evergreen search
+title and conversational opening standard**, with Videos 4 to 8 as the approved
+reference set. Video 2's H.I.T. rebuild follows the same first-three-seconds
+discipline.
+
+### Next
+
+Video 3, under the same H.I.T. architecture. Its revised editorial and H.I.T.
+direction is to be reviewed and approved **before** any build instruction is
+given. No Video 3 file is to be modified until then.
 
 ---
 
