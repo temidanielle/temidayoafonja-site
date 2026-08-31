@@ -229,7 +229,7 @@ than wired up, because the operative consent is the one on the screen the visito
   `utm_source` of `youtube`; a campaign name that merely contains the word, or a youtube referrer,
   tags nobody
 - **Offer retirement** — the single next step shown after submission retires itself at
-  `2026-09-02T18:45:00-05:00`, the end of the session in Central time, and does so **while the
+  `2026-09-09T18:45:00-05:00`, the end of the session in Central time, and does so **while the
   page is open**. A visitor who loads the page before the cutoff and leaves the tab sitting there
   sees the Field Kit fallback take over at the cutoff without reloading. One timer is armed for
   exactly the remaining milliseconds; there is no polling, and the fallback arms nothing at all

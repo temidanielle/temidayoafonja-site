@@ -329,15 +329,15 @@
    available_until is a fully qualified ISO 8601 instant, written with the
    Central offset that is actually in force on the day of the session:
 
-       2026-09-02T18:45:00-05:00
+       2026-09-09T18:45:00-05:00
 
-   That is 6:45 PM Central on Wednesday 2 September 2026, the end of the
+   That is 6:45 PM Central on Wednesday 9 September 2026, the end of the
    session. September is Central Daylight Time, which is UTC minus 5, so the
    same instant is 23:45 UTC. Writing the offset rather than a Z, and rather
    than a date on its own, is deliberate:
 
-     - A date-only string ("2026-09-02") is parsed as UTC midnight, which would
-       retire the offer at 7:00 PM Central on the first of September, a whole
+     - A date-only string ("2026-09-09") is parsed as UTC midnight, which would
+       retire the offer at 7:00 PM Central on the eighth of September, a whole
        day early for the audience it is aimed at.
      - Date.parse of a fully qualified instant and Date.now() are both absolute.
        Neither depends on the visitor's local timezone, on the browser's guess
@@ -360,10 +360,10 @@ var POLICY_VERSION = "2026-08-18";
 var NEXT_STEP = {
   current: {
     id: "lightning-lesson",
-    available_until: "2026-09-02T18:45:00-05:00",
+    available_until: "2026-09-09T18:45:00-05:00",
     label: "One next step",
     title: "How to Tell If Your Career Is Stalling",
-    body: "A free 45 minute Lightning Lesson on Wednesday, September 2, 2026, 6:00 to 6:45 PM CT. Three signs your role may have stopped building your capability and future options, even while you are performing well.",
+    body: "A free 45 minute Lightning Lesson on Wednesday, September 9, 2026, 6:00 PM CT. Three signs your role may have stopped building your capability and future options, even while you are performing well.",
     cta: "Register free",
     href: "https://maven.com/p/5162f2/how-to-tell-if-your-career-is-stalling",
     external: true
