@@ -92,3 +92,75 @@ portrait.
 The most valuable single addition to this project is **more photographs**: calm and
 level, in varied wardrobe, plain backdrop, well lit, 2000 px or larger on the short
 edge. That would unlock genuinely distinct thumbnails for every future video.
+
+---
+
+## EVERGREEN SEARCH TITLE + CONVERSATIONAL OPENING STANDARD
+
+Recorded 31 August 2026. The governing approach to titles and spoken openings
+for every future video on this channel.
+
+**Approved reference set: Videos 4 to 8.** Their titles and first spoken lines
+are the worked examples of this standard and are closed for revision.
+
+### Title
+
+1. Begin with an evergreen viewer problem expressed in ordinary language people
+   may search on Google or YouTube.
+2. The public title should use recognizable search language. Capability
+   Formation may provide the distinctive answer, but unfamiliar internal
+   framework language should not normally be the search front door.
+3. Put the central searchable problem or consequence near the beginning of the
+   title.
+4. Keep the title accurate, concise and evergreen. Do not chase a TubeBuddy or
+   SEO score at the expense of human clarity.
+5. Treat TubeBuddy, YouTube results and keyword tools as directional evidence —
+   not editorial authority, and not proof of demand.
+
+### Spoken opening
+
+6. Open with a natural first sentence that can be comfortably said in one
+   breath, normally within the first three seconds.
+7. The opening must sound like something Temidayo would say in a real
+   conversation. Avoid proposition-first corporate language, overly structured
+   framing, generic "If you have ever…" openings and conspicuous framework
+   announcements.
+8. The spoken hook should align with the title without merely repeating it.
+9. Preferred opening forms:
+   - a genuine viewer question;
+   - a specific lived moment;
+   - an unresolved contradiction;
+   - a concise statement that creates immediate recognition.
+10. Move quickly from the first line into tension, recognition or a direct
+    answer. Give the viewer a clear reason to continue within approximately
+    15 to 20 seconds.
+11. Introduce lived or documented proof early where it fits naturally.
+    Approximately 30 to 45 seconds is preferred, but do not force evidence into
+    that window if doing so makes the opening less natural. **Video 5 is the
+    approved example of personal proof arriving later, at approximately 1:35.**
+
+### Search, packaging and integrity
+
+12. Use the script naturally to reinforce the title's subject and related search
+    language. Do not mechanically repeat an exact keyword.
+13. Use the description, corrected captions and meaningful chapter names to
+    strengthen search understanding.
+14. Let the thumbnail create complementary curiosity. It should not simply
+    repeat the full title.
+15. Preserve editorial integrity: no invented evidence, unsupported metrics,
+    exaggerated outcomes, or claims created merely to strengthen a hook.
+
+### The approved reference set
+
+| Video | Approved title | First spoken line | Spoken words |
+|---|---|---|---|
+| 4 | How to Explain Your Career Change | "A senior colleague once called me a cat with nine lives." | 1,221 |
+| 5 | Should I Make an Internal Move? 3 Questions to Decide | "You may not need to leave your company." | 1,639 |
+| 6 | Are You Growing—or Just Being Given More Work? | "Is this actually growth, or am I just being given more work?" | 1,649 |
+| 7 | How to Show Your Impact at Work When You Built It From Scratch | "How do you prove something when there was nothing there before you?" | 1,472 |
+| 8 | How to Move Into a New Industry Without Starting Over | "Do I really have to start over just because I'm changing industries?" | 1,514 |
+
+Word counts are canonical: spoken paragraphs only, excluding document headers,
+length statements, timed block headers, slide markers and production
+directions. The counting function is `script/canon.py` in each video's
+directory.
