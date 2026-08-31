@@ -480,16 +480,16 @@ test("the honeypot is present, hidden, and out of the tab order", async (t) => {
 /* ── The one configurable next step ────────────────────────────────────── */
 /* The exact instant the offer retires: 6:45 PM Central on Wednesday 2 September
    2026, which is Central Daylight Time, UTC minus 5. */
-const EXPIRY = Date.parse("2026-09-02T18:45:00-05:00");
+const EXPIRY = Date.parse("2026-09-09T18:45:00-05:00");
 
 test("the expiration instant is the end of the session in Central time", async () => {
-  assert.equal(EXPIRY, Date.parse("2026-09-02T23:45:00Z"), "6:45 PM CDT is 23:45 UTC");
+  assert.equal(EXPIRY, Date.parse("2026-09-09T23:45:00Z"), "6:45 PM CDT is 23:45 UTC");
   // The trap this guards against: a date-only string is parsed as UTC midnight,
   // which lands at 7:00 PM Central on the PREVIOUS day and would retire the
   // offer almost a full day early for the audience it is aimed at.
-  assert.ok(Date.parse("2026-09-02") < EXPIRY - 20 * 3600 * 1000, "a date-only string would expire far too early");
+  assert.ok(Date.parse("2026-09-09") < EXPIRY - 20 * 3600 * 1000, "a date-only string would expire far too early");
   const source = await readFile(join(ROOT, "career-decisions.html"), "utf8");
-  assert.ok(source.includes('available_until: "2026-09-02T18:45:00-05:00"'), "the offset must be written explicitly in the source");
+  assert.ok(source.includes('available_until: "2026-09-09T18:45:00-05:00"'), "the offset must be written explicitly in the source");
 });
 
 test("one second before the boundary the Lightning Lesson is still offered", async (t) => {
@@ -529,7 +529,7 @@ test("the switch happens at the same instant in every timezone", async (t) => {
 
 test("the Lightning Lesson is offered through the whole registration period", async (t) => {
   // Sampled across the run up to the session rather than at one arbitrary point.
-  for (const iso of ["2026-08-18T00:00:00-05:00", "2026-08-31T23:59:00-05:00", "2026-09-02T00:00:00-05:00", "2026-09-02T18:00:00-05:00", "2026-09-02T18:44:59-05:00"]) {
+  for (const iso of ["2026-08-18T00:00:00-05:00", "2026-08-31T23:59:00-05:00", "2026-09-09T00:00:00-05:00", "2026-09-09T18:00:00-05:00", "2026-09-09T18:44:59-05:00"]) {
     const { page } = await open(t, { now: Date.parse(iso), timezoneId: "America/Chicago" });
     await fillValid(page);
     await page.click("#cdSubmit");
@@ -550,11 +550,11 @@ test("before the Lightning Lesson ends, the next step is the Lightning Lesson", 
   assert.equal(await steps.getAttribute("rel"), "noopener");
   const text = await page.locator("#cdStep").innerText();
   assert.match(text, /How to Tell If Your Career Is Stalling/);
-  assert.match(text, /Wednesday, September 2, 2026, 6:00 to 6:45 PM CT/);
+  assert.match(text, /Wednesday, September 9, 2026, 6:00 PM CT/);
 });
 
 test("after the Lightning Lesson ends, the next step falls back to the Field Kit", async (t) => {
-  const { page } = await open(t, { now: Date.parse("2026-09-03T00:00:00Z") });
+  const { page } = await open(t, { now: Date.parse("2026-09-10T00:00:00Z") });
   await fillValid(page);
   await page.click("#cdSubmit");
   await page.waitForSelector("#cdResult.is-open");
@@ -681,7 +681,7 @@ test("the next step is written in exactly one place in the source", async () => 
   assert.equal((source.match(/maven\.com\/p\/5162f2/g) || []).length, 1, "the Lightning Lesson URL is written once");
   assert.equal((source.match(/temidayoafonja\.com\/fieldkit/g) || []).length, 1, "the Field Kit URL is written once");
   assert.equal((source.match(/\$150/g) || []).length, 1, "the price is written once");
-  assert.equal((source.match(/September 2, 2026/g) || []).length, 1, "the date is written once");
+  assert.equal((source.match(/September 9, 2026/g) || []).length, 1, "the date is written once");
   assert.equal((source.match(/var NEXT_STEP =/g) || []).length, 1, "there is one config block");
 });
 
@@ -694,7 +694,7 @@ test("no raw Gumroad or Amazon link is used on the page", async (t) => {
 
 /* ── Outbound tracking ─────────────────────────────────────────────────── */
 test("the next step click and the Field Kit click are tracked separately", async (t) => {
-  const { page, events } = await open(t, { now: Date.parse("2026-09-03T00:00:00Z"), query: "?utm_source=youtube&utm_campaign=launch&v=episode-02" });
+  const { page, events } = await open(t, { now: Date.parse("2026-09-10T00:00:00Z"), query: "?utm_source=youtube&utm_campaign=launch&v=episode-02" });
   await fillValid(page);
   await page.click("#cdSubmit");
   await page.waitForSelector("#cdResult.is-open");
