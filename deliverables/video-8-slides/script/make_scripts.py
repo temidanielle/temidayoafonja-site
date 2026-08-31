@@ -73,8 +73,8 @@ CUES = [
      "So here is the exercise, and it fits on one page."),
     (11, "Capability Formation Field Kit",
      "If you want a structured way to work through this"),
-    (12, "Watch next",
-     "And if part of what is pushing this move"),
+    (12, "Continue the series",
+     "When you are ready for the next step"),
 ]
 
 STATES = {1: 2, 2: 2, 3: 3, 4: 2, 5: 2, 7: 2, 8: 2, 9: 3, 10: 3}
@@ -85,6 +85,15 @@ def shade(p, hexfill):
     sh = OxmlElement('w:shd')
     sh.set(qn('w:val'), 'clear'); sh.set(qn('w:fill'), hexfill)
     pr.append(sh)
+
+
+def keep_with_next(p):
+    pr = p._p.get_or_add_pPr()
+    for tag in ('w:keepLines', 'w:keepNext'):
+        el = OxmlElement(tag)
+        el.set(qn('w:val'), '1')
+        pr.append(el)
+    return p
 
 
 def left_bar(p, hexcol):
@@ -101,6 +110,9 @@ def build():
     doc = Document()
     st = doc.styles['Normal']
     st.font.name = 'Calibri'; st.font.size = Pt(13)
+    _ah = OxmlElement('w:autoHyphenation')
+    _ah.set(qn('w:val'), '0')
+    doc.settings.element.append(_ah)
     for s in doc.sections:
         s.top_margin = s.bottom_margin = Inches(0.9)
         s.left_margin = s.right_margin = Inches(1.05)
@@ -133,7 +145,7 @@ def build():
             label += "   (%d reveal states)" % STATES[n]
         p = para(label, size=11, bold=True, color=NAVY, before=14, after=14,
                  spacing=1.1)
-        shade(p, "E8EDF4"); left_bar(p, "0F2346")
+        shade(p, "E8EDF4"); left_bar(p, "0F2346"); keep_with_next(p)
 
     used = set()
     for block in sec:
@@ -146,15 +158,15 @@ def build():
         if HDR.match(b):
             p = para(b, size=10.5, bold=True, color=GOLD, before=20, after=12,
                      spacing=1.1, caps=True)
-            shade(p, "F3F0E8")
+            shade(p, "F3F0E8"); keep_with_next(p)
             continue
         hit = next((c for c in CUES
                     if c[0] not in used and b.startswith(c[2])), None)
         if hit:
             marker(hit[0], hit[1])
             used.add(hit[0])
-        para(b, size=13.5, color=RGBColor(0x1A, 0x1A, 0x1A), after=14,
-             spacing=1.55)
+        para(b, size=13.5, color=RGBColor(0x1A, 0x1A, 0x1A), after=12,
+             spacing=1.5)
 
     out_docx = os.path.join(
         HERE, "Video_8_Teleprompter_Script_with_Slide_Markers.docx")

@@ -22,6 +22,14 @@ def paras(path):
     return [t(el) for el in x.find(NS + 'body') if el.tag == NS + 'p']
 
 
+def all_text(path):
+    """Paragraphs AND table cells. Several locked decisions live in tables."""
+    z = zipfile.ZipFile(path)
+    x = ET.fromstring(z.read('word/document.xml'))
+    return "\n".join(''.join(e.text or '' for e in el.iter(NS + 't'))
+                     for el in x.find(NS + 'body'))
+
+
 def package_spoken():
     b = paras(PKG)
     i4 = next(i for i, s in enumerate(b) if s.strip() == '4. Full recording script')
@@ -73,8 +81,8 @@ TITLE = "How to Move Into a New Industry Without Starting Over"
 KEY = "how to move into a new industry"
 URL = "temidayoafonja.com/fieldkit"
 THUMB = "YOUR EXPERIENCE STILL COUNTS"
-pkg_all = "\n".join(paras(PKG))
-tel_all = "\n".join(paras(TEL))
+pkg_all = all_text(PKG)
+tel_all = all_text(TEL)
 rep["title_in_package"] = TITLE in pkg_all
 rep["title_in_teleprompter"] = TITLE in tel_all
 rep["keyword_in_package"] = KEY in pkg_all
@@ -116,6 +124,34 @@ rep["no_competing_offer_in_script"] = not any(
                            "maven", "my book"))
 rep["confidentiality_boundary_spoken"] = "non-confidential" in lowered
 rep["no_fabrication_permitted"] = "inventing experience" in lowered
+# --- corrections applied in the targeted revision pass ---------------------
+SOFTENED = [
+    ("It is an information gap, and it can close when you are deliberate about "
+     "learning it.",
+     "closes faster than most people expect"),
+    ("very little to evaluate, and experienced interviewers have heard them "
+     "many times.",
+     "nothing to evaluate, and experienced people stop hearing them entirely"),
+    ("A clear first-ninety-days learning plan can also reduce the credibility "
+     "gap.",
+     "counts for more than most people expect"),
+    ("You may find the first column is longer than you feared and the third is "
+     "shorter than you assumed.",
+     "Most people find the first column is longer than they feared"),
+]
+rep["softened_wording_present"] = all(new in body for new, _ in SOFTENED)
+rep["superseded_wording_absent"] = all(old not in body for _, old in SOFTENED)
+rep["watch_next_is_playlist_safe"] = (
+    "When you are ready for the next step, continue with the Career "
+    "Portability playlist." in body)
+rep["script_names_no_unpublished_video"] = not any(
+    x in lowered for x in ("layoff", "video 9", "what to do before"))
+rep["viewer_definition_broadened"] = (
+    "Experienced professionals" in pkg_all
+    and "senior corporate woman" not in pkg_all)
+rep["word_count_method_documented"] = "str.split() on whitespace" in pkg_all
+rep["punctuation_identical_after_marker_strip"] = (
+    "".join(clean) == "".join(pk) == "".join(tel))
 rep["no_promotion_promise"] = not re.search(
     r'(will|guarantee[sd]?) (get|earn|lead to) (you )?(a )?(promotion|promoted)',
     lowered)

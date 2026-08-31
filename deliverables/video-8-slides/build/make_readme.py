@@ -9,14 +9,140 @@ r = json.loads(subprocess.run([sys.executable,
         os.path.join(ROOT, "script", "verify.py")],
         capture_output=True, text=True).stdout)
 
+import zipfile as _z
+_pkg = os.path.join(ROOT, "YouTube_Video_8_Production_Package_New_Industry.docx")
+ROWS = _z.ZipFile(_pkg).read("word/document.xml").decode("utf8").count("<w:cantSplit")
+
 fm = ", ".join(str(x) for x in q["flush_edge_slides_main"])
 fr = ", ".join(str(x) for x in q["flush_edge_frames_reveals"])
 
 TXT = """VIDEO 8 - FIRST-PASS PRODUCTION PACKAGE - QA README
 How to Move Into a New Industry Without Starting Over
 
+Latest pass: targeted corrections. Preserved without substantive change - the
+title, target keyword, thumbnail copy, opening distinction, personal evidence,
+the three teaching moves, the Field Kit as sole CTA, the fieldkit URL, the
+exclusion of the 30%% and $2M+ claims, and the visual system.
+
 ===============================================================================
-1. ONE CONFLICT TO RESOLVE BEFORE RECORDING
+1. WHAT THE CORRECTION PASS CHANGED
+===============================================================================
+
+1.1  VIEWER DEFINITION BROADENED
+
+  Was   "Experienced professional, particularly a senior corporate woman with
+        substantial career history and real financial, family and reputational
+        stakes."
+  Now   "Experienced professionals - especially mid-career and senior
+        professionals, managers, directors and experienced specialists -
+        considering a move into a new industry without wanting to erase their
+        prior experience."
+
+  The public-facing viewer is no longer gendered; the roadmap does not require
+  it for this video. Verified: "senior corporate woman" appears nowhere in the
+  package.
+
+1.2  FOUR GENERALISATIONS SOFTENED
+
+  Applied at source and regenerated through the package DOCX, teleprompter
+  DOCX, clean TXT, description, pinned comment and speaker notes. No
+  replacement statistic, research claim or universal conclusion was introduced.
+
+    was  "...closes faster than most people expect when someone is deliberate
+         about closing it."
+    now  "...it can close when you are deliberate about learning it."
+
+    was  "...nothing to evaluate, and experienced people stop hearing them
+         entirely."
+    now  "...very little to evaluate, and experienced interviewers have heard
+         them many times."
+
+    was  "A clear first-ninety-days learning plan counts for more than most
+         people expect."
+    now  "A clear first-ninety-days learning plan can also reduce the
+         credibility gap."
+
+    was  "Most people find the first column is longer than they feared and the
+         third is shorter than they assumed."
+    now  "You may find the first column is longer than you feared and the third
+         is shorter than you assumed."
+
+  The fourth also appeared in the pinned comment and in slide 10's speaker
+  note; both were softened to match. Verified: all four new forms present, all
+  four superseded forms absent.
+
+1.3  WATCH-NEXT MADE PUBLICATION-SAFE
+
+  No unpublished video is named in the recorded script or on the final slide.
+
+    spoken   "When you are ready for the next step, continue with the Career
+             Portability playlist."
+    slide 12 CONTINUE THE SERIES
+             CAREER PORTABILITY
+             CAREER PIVOTS  -  INTERNAL MOVES  -  GROWTH
+
+  INTENDED ROUTING, set at upload:
+    - If the next video in the sequence is public when Video 8 publishes, the
+      YouTube end-screen video element may route directly to it.
+    - Otherwise, route to the public Career Portability playlist.
+    - Verify before publication that the selected playlist contains at least
+      one other public video and opens successfully in a signed-out browser.
+    - Do not use a playlist containing only Video 8 as the fallback.
+
+  The next title is held in the roadmap audit and in these QA notes only. It is
+  in no spoken or on-slide wording, so neither route needs a re-record or a
+  re-render. Verified: the script contains no reference to a layoff video, and
+  slide 12 names only the playlist.
+
+1.4  WORD-COUNT METHOD DOCUMENTED AND APPLIED CONSISTENTLY
+
+  Python str.split() on whitespace, over the spoken paragraphs of section 4
+  only. Timed block headers and the target line are excluded. The same method
+  produces the count in the package DOCX, in this README and in the build
+  output. Recorded in section 1 of the package.
+
+  Word count after the corrections: %(wc)d, down from 1,607. Spoken paragraphs
+  remain 38, as required.
+
+1.5  PAGINATION REPAIRED STRUCTURALLY - AND A LIMITATION TO STATE PLAINLY
+
+  Package DOCX:
+    - w:cantSplit on every table row - all %(rows)d of them - so no row can
+      break across a page. That covers the "Title relationship to the roadmap"
+      row, every slide-content row, and the slide 11 Field Kit URL row, which
+      can no longer strand "kit" on a following page.
+    - w:keepNext on every section heading and sub-heading, so no heading is
+      left alone at the foot of a page.
+    - w:keepLines on table cell paragraphs and on description lines.
+    - w:autoHyphenation off, so Word will not break a URL or a filename with a
+      hyphen.
+    - The section 6 filename column widened from 2.6in to 3.1in so full
+      filenames fit without wrapping, rather than shrinking the type.
+    - Font sizes and margins unchanged.
+
+  Teleprompter DOCX:
+    - w:keepNext and w:keepLines on all 12 slide markers and all 9 timed
+      headers, so a marker cannot be separated from the paragraph it
+      introduces and the closing block cannot strand alone.
+    - Paragraph spacing eased from 14pt/1.55 to 12pt/1.50. Type size unchanged
+      at 13.5pt; the text was not compressed to remove a page.
+    - w:autoHyphenation off.
+
+  THE LIMITATION: I could not render either DOCX to pages and inspect them.
+  LibreOffice in this environment cannot load any .docx - the Writer filter
+  registry (writer.xcd) is absent. Verified as environmental rather than caused
+  by these files: the same command fails on the unmodified, independently
+  reviewed Video 6 production package with "source file could not be loaded".
+
+  So the pagination work is verified STRUCTURALLY, by reading the generated XML
+  - every attribute is confirmed present - but NOT visually. Page counts,
+  orphans, widows and awkward breaks should be checked once in Word or Google
+  Docs. These are the standard mechanisms Word uses for exactly these problems,
+  so the fixes should hold, but I have not seen the pages and am not reporting
+  that I have.
+
+===============================================================================
+2. ONE CONFLICT TO RESOLVE BEFORE RECORDING
 ===============================================================================
 
 CAREER SPAN: the brief and the roadmap say "18 years." The claims ledger
@@ -48,10 +174,10 @@ says that wording was retired.
   else in the script depends on this.
 
 No other conflict was found between the brief, the roadmap audit, the claims
-ledger and the Video 7 precedent. Everything else lines up - see section 3.
+ledger and the Video 7 precedent. Everything else lines up - see section 4.
 
 ===============================================================================
-2. WHAT WAS BUILT
+3. WHAT WAS BUILT
 ===============================================================================
 
 12 main slides and %(frames)d reveal frames in the approved Capability Formation
@@ -77,7 +203,7 @@ cc24c1f24eceb80b... So the navy, cream, gold, geometry, fonts and production
 conventions are inherited rather than approximated.
 
 ===============================================================================
-3. COMPARISON AGAINST THE AUGUST 28 ROADMAP AUDIT
+4. COMPARISON AGAINST THE AUGUST 28 ROADMAP AUDIT
 ===============================================================================
 
 Sequence row 8 in the audit:
@@ -106,7 +232,7 @@ Production architecture row 8:
   Move two              match destination problems     verbatim, slides 7-8
   Move three            bridge evidence + learning
                         plan                           verbatim, slide 9
-  Career span           "18 years"                     SEE SECTION 1
+  Career span           "18 years"                     SEE SECTION 2
   Title                 working title                  intentional SEO
                                                        refinement, recorded
 
@@ -136,7 +262,7 @@ Production architecture row 8:
     out. Available if you want it in a later pass.
 
 ===============================================================================
-4. PERSONAL EVIDENCE - USED AND EXCLUDED
+5. PERSONAL EVIDENCE - USED AND EXCLUDED
 ===============================================================================
 
 USED, all inside the brief's ceiling and checked against the claims ledger:
@@ -171,7 +297,7 @@ Verified by search across the finished script:
   CISM stated only within the ceiling              %(cism)s
 
 ===============================================================================
-5. QA - SLIDES AND DECKS
+6. QA - SLIDES AND DECKS
 ===============================================================================
 
   main slides in the deck                12          (required 12)
@@ -212,7 +338,7 @@ is the same designed device used in Videos 6 and 7 and is not an overflow. The
 distinction is reported on every build in out/qa.json.
 
 ===============================================================================
-6. QA - SCRIPT IDENTITY AND CONTENT BOUNDARIES
+7. QA - SCRIPT IDENTITY AND CONTENT BOUNDARIES
 ===============================================================================
 
 The production package DOCX is the single source of truth. Both script files
@@ -249,7 +375,7 @@ are generated from it, so the three cannot drift apart.
     promotion or recognition             none
 
 ===============================================================================
-7. THUMBNAIL - NOT BUILT HERE
+8. THUMBNAIL - NOT BUILT HERE
 ===============================================================================
 
 Required copy: YOUR EXPERIENCE STILL COUNTS
@@ -263,22 +389,21 @@ Standards that apply: 1280 x 720 upload at exact 16:9; cream #F5F0E8, navy
 CAPABILITY_FORMATION_YOUTUBE_STANDARDS.md.
 
 ===============================================================================
-8. WATCH-NEXT ROUTING
+9. WATCH-NEXT ROUTING
 ===============================================================================
 
-Confirmed from the roadmap audit rather than from the brief alone. Sequence
-row 9: "What to Do Before a Layoff Happens", thumbnail KEEP THE PROOF, CTA
-Keep the Proof. That is the approved title and it matches the brief's
-expectation.
+Confirmed from the roadmap audit rather than from the brief alone: sequence
+row 9 is "What to Do Before a Layoff Happens". That title is held here and in
+the audit only. It is not produced - no video-9 package exists in this
+repository - and it appears in no spoken or on-slide wording.
 
-Video 9 has NOT been produced - no video-9 package exists in this repository -
-so no published URL is invented anywhere in this package. Slide 12 names the
-video title and the Career Portability playlist, so the end-screen card can
-point at the playlist now and switch to the video when it publishes, with no
-re-render.
+The routing rules are in section 1.3 above and in section 8 of the package
+DOCX. Slide 12 and the spoken line both point at the Career Portability
+playlist, so the end-screen element can be set either way at upload with no
+re-render and no re-record.
 
 ===============================================================================
-9. PUBLICATION GATES
+10. PUBLICATION GATES
 ===============================================================================
 
   - Resolve the career-span wording in section 1.
@@ -286,11 +411,14 @@ re-render.
   - Chapter timestamps in the package are planning estimates. Reset them from
     the finished export before publishing.
   - Confirm temidayoafonja.com/fieldkit is live before publishing.
-  - Point the end-screen card at the Career Portability playlist until Video 9
-    publishes.
+  - Set the end-screen video element per the routing rules in section 1.3, and
+    verify the chosen playlist opens signed out and holds at least one other
+    public video.
+  - Open both DOCX files once in Word or Google Docs and confirm pagination.
+    The fixes are verified in the XML but were not rendered here; see 1.5.
 
 ===============================================================================
-10. WHAT WAS NOT TOUCHED
+11. WHAT WAS NOT TOUCHED
 ===============================================================================
 
 No Videos 1-7 deliverable, no website file, no product file and no shared
@@ -314,6 +442,7 @@ are new files under deliverables/video-8-slides/.
            open=str(r["opening_distinction_present"]).lower(),
            trans=str(r["translation_sentence_present"]).lower(),
            cols=str(r["three_columns_named"]).lower(),
+           rows=ROWS,
            conf=str(r["confidentiality_boundary_spoken"]).lower(),
            fab=str(r["no_fabrication_permitted"]).lower())
 

@@ -88,8 +88,8 @@ SCRIPT = [
   "Context is what the new field knows and you do not — its language, "
   "its stakeholders, its incentives, its regulation, its rhythm and its "
   "risks. From the inside it feels like a competence gap. It is an "
-  "information gap, and it closes faster than most people expect when someone "
-  "is deliberate about closing it.",
+  "information gap, and it can close when you are deliberate about learning "
+  "it.",
   "Credential is the formal evidence or permission the destination may "
   "require. Sometimes it is genuinely required and there is no way around it, "
   "so you plan for it. Sometimes it is not required but it shortens the "
@@ -108,7 +108,8 @@ SCRIPT = [
   "This is where most industry-change pitches come apart, because people "
   "reach for adjectives. Adaptable. Strategic. A fast learner. Those describe "
   "how you would like to be seen. They give the person across from you "
-  "nothing to evaluate, and experienced people stop hearing them entirely.",
+  "very little to evaluate, and experienced interviewers have heard them many "
+  "times.",
   "Work in the other direction. Start with the destination rather than with "
   "your CV. What does that industry keep failing to solve? What is expensive "
   "there, or slow, or contested? You can find a surprising amount of that in "
@@ -151,8 +152,8 @@ SCRIPT = [
   "and they do two jobs at once: they give you the language, and they tell "
   "you which of your assumptions are wrong before you say them out loud in an "
   "interview.",
-  "A clear first-ninety-days learning plan counts for more than most people "
-  "expect. It shows you understand there is something here to learn, which is "
+  "A clear first-ninety-days learning plan can also reduce the credibility "
+  "gap. It shows you understand there is something here to learn, which is "
   "the opposite of the overconfidence they are quietly screening for.",
   "What none of this permits is inventing experience or implying more "
   "familiarity than you have. The gap is real. You are making it smaller and "
@@ -166,9 +167,9 @@ SCRIPT = [
   "regulation, the rhythm and the risks you will have to learn.",
   "What I must earn: the credential, the licence or the specific exposure "
   "that no amount of adjacent experience substitutes for.",
-  "Most people find the first column is longer than they feared and the third "
-  "is shorter than they assumed. That is the reason to write it down instead "
-  "of carrying it around as a feeling.",
+  "You may find the first column is longer than you feared and the third is "
+  "shorter than you assumed. That is the reason to write it down instead of "
+  "carrying it around as a feeling.",
   "Then build one sentence out of it, in your own words. Something close to: "
   "I am new to this industry, but I am not new to this problem. Here is the "
   "evidence. Here is what I am learning right now.",
@@ -185,10 +186,9 @@ SCRIPT = [
   "toward — that part stays yours. You will find it at "
   "temidayoafonja.com/fieldkit.",
  ]),
- ("10:05-10:25 | WATCH NEXT", [
-  "And if part of what is pushing this move is that your current situation "
-  "feels less stable than it did a year ago, watch what to do before a layoff "
-  "happens, next.",
+ ("10:05-10:20 | CONTINUE THE SERIES", [
+  "When you are ready for the next step, continue with the Career Portability "
+  "playlist.",
  ]),
 ]
 
@@ -247,9 +247,9 @@ SLIDE_COPY = [
   "CAPABILITY FORMATION  |  FIELD KIT  |  What has your work built in you? "
   "How portable is it? What is still missing?  |  "
   "temidayoafonja.com/fieldkit"),
- ("12", "Watch next", "1",
-  "WATCH NEXT  |  WHAT TO DO BEFORE A LAYOFF HAPPENS  |  Career Portability: "
-  "Career Pivots, Internal Moves & Growth"),
+ ("12", "Continue the series", "1",
+  "CONTINUE THE SERIES  |  CAREER PORTABILITY  |  CAREER PIVOTS · INTERNAL "
+  "MOVES · GROWTH"),
 ]
 
 DESCRIPTION = [
@@ -286,9 +286,8 @@ DESCRIPTION = [
  "it is, and where development or evidence is still needed.",
  CTA_URL,
  "",
- "WATCH NEXT",
- "What to Do Before a Layoff Happens",
- "Playlist — Career Portability: Career Pivots, Internal Moves & Growth",
+ "CONTINUE THE SERIES",
+ "Career Portability: Career Pivots, Internal Moves & Growth",
 ]
 
 TAGS = ["how to move into a new industry",
@@ -308,7 +307,7 @@ CHAPTERS = [
  ("6:15", "Move three - bridge evidence and a learning plan"),
  ("8:30", "The three columns"),
  ("9:30", "Capability Formation Field Kit"),
- ("10:05", "Watch next"),
+ ("10:05", "Continue the series"),
 ]
 
 PINNED = (
@@ -318,8 +317,8 @@ PINNED = (
  "WHAT TRAVELS - the judgment, decisions and patterns that stay useful.\n"
  "WHAT CHANGES - language, stakeholders, incentives, rhythm, risk.\n"
  "WHAT I MUST EARN - the credential or exposure nothing substitutes for.\n\n"
- "Most people find the first column is longer than they feared and the third "
- "is shorter than they assumed.\n\n"
+ "You may find the first column is longer than you feared and the third is "
+ "shorter than you assumed.\n\n"
  "The Field Kit is a structured way to work through it: " + CTA_URL + "\n\n"
  "Which column is hardest for you to fill in? Tell me in a reply."
 )
@@ -375,8 +374,9 @@ PRECHECKS = [
  "Confirm the approved Canva thumbnail reads YOUR EXPERIENCE STILL COUNTS and "
  "is 1280 x 720.",
  "Set chapter timestamps from the finished export, not from this package.",
- "Video 9 has not been produced. Point the end-screen card at the Career "
- "Portability playlist until it publishes.",
+ "Neither the spoken script nor slide 12 names an unpublished video. Set the "
+ "end-screen video element per the routing rules in section 8, and verify the "
+ "playlist opens signed out and holds another public video.",
 ]
 
 
@@ -387,10 +387,41 @@ def shade(p, fill):
     pr.append(sh)
 
 
+def keep_together(p, with_next=False):
+    """Keep a paragraph's lines on one page, optionally with the next block."""
+    pr = p._p.get_or_add_pPr()
+    for tag in (('w:keepLines',) + (('w:keepNext',) if with_next else ())):
+        el = OxmlElement(tag)
+        el.set(qn('w:val'), '1')
+        pr.append(el)
+    return p
+
+
+def no_split(tbl):
+    """Stop every row of a table from breaking across a page."""
+    for row in tbl.rows:
+        trPr = row._tr.get_or_add_trPr()
+        cs = OxmlElement('w:cantSplit')
+        trPr.append(cs)
+        for cell in row.cells:
+            for p in cell.paragraphs:
+                keep_together(p)
+    return tbl
+
+
+def no_hyphenation(doc):
+    """Word may otherwise break a URL or a filename mid-token."""
+    st = doc.settings.element
+    el = OxmlElement('w:autoHyphenation')
+    el.set(qn('w:val'), '0')
+    st.append(el)
+
+
 def build():
     doc = Document()
     st = doc.styles['Normal']
     st.font.name = 'Calibri'; st.font.size = Pt(11)
+    no_hyphenation(doc)
     for s in doc.sections:
         s.top_margin = s.bottom_margin = Inches(0.85)
         s.left_margin = s.right_margin = Inches(0.95)
@@ -410,7 +441,10 @@ def build():
         return p
 
     def h1(text):
-        return para(text, size=16, bold=True, color=NAVY, before=22, after=10)
+        # A heading never strands at the foot of a page on its own.
+        return keep_together(
+            para(text, size=16, bold=True, color=NAVY, before=22, after=10),
+            with_next=True)
 
     def table(rows, widths=None):
         t = doc.add_table(rows=0, cols=len(rows[0]))
@@ -431,6 +465,7 @@ def build():
             for row in t.rows:
                 for c, w in zip(row.cells, widths):
                     c.width = Inches(w)
+        no_split(t)
         para("", size=6, after=6)
         return t
 
@@ -458,8 +493,9 @@ def build():
            ["Spoken script length", "%d words" % WORDS],
            ["Slides", "12 main slides, 24 reveal frames"],
            ["Watch next",
-            "What to Do Before a Layoff Happens (Video 9, not yet produced) - "
-            "Career Portability playlist until it publishes"]],
+            "Career Portability playlist. The spoken script and slide 12 name "
+            "no unpublished video; see section 8 for the end-screen routing "
+            "rules."]],
           widths=[1.9, 4.7])
 
     para("LOCKED PRODUCTION DECISIONS", size=11, bold=True, color=NAVY,
@@ -494,9 +530,8 @@ def build():
 
     h1("1. Strategy at a glance")
     table([["Element", "Decision"],
-           ["Viewer", "Experienced professional, particularly a senior "
-            "corporate woman with substantial career history and real "
-            "financial, family and reputational stakes."],
+           ["Viewer",
+            "Experienced professionals — especially mid-career and senior professionals, managers, directors and experienced specialists — considering a move into a new industry without wanting to erase their prior experience."],
            ["Viewer question", "What can I carry into a field where I am new?"],
            ["Central distinction",
             "Changing industries does not make someone entry-level at "
@@ -520,6 +555,11 @@ def build():
            ["Brief introduction", "1:05 - one positioning line, after the "
             "proof"],
            ["Teaching", "1:15 onward - what changes, then the three moves"],
+           ["Word-count method",
+            "Python str.split() on whitespace, over the spoken paragraphs of "
+            "section 4 only. Timed block headers and the target line are "
+            "excluded. The same method is used in every file that reports a "
+            "count."],
            ["Usable test", "8:30 - what travels / what changes / what I must "
             "earn"],
            ["Earned next step", "9:30 - Capability Formation Field Kit"]],
@@ -617,7 +657,7 @@ def build():
            ["build/slides.py, build/deck.py, build/build.py",
             "Editable sources. deck.py is carried forward from Video 7 "
             "unchanged."]],
-          widths=[2.6, 4.0])
+          widths=[3.1, 3.5])
 
     h1("7. Thumbnail - to be created externally, not built here")
     table([["Field", "Value"],
@@ -632,45 +672,56 @@ def build():
           widths=[1.5, 5.1])
 
     h1("8. YouTube publishing package")
-    para("Title", size=11, bold=True, color=NAVY, after=4)
+    keep_together(para("Title", size=11, bold=True, color=NAVY, after=4), with_next=True)
     para(TITLE, after=10)
-    para("Description", size=11, bold=True, color=NAVY, after=4)
+    keep_together(para("Description", size=11, bold=True, color=NAVY, after=4), with_next=True)
     for line in DESCRIPTION:
-        para(line if line else " ", after=6 if line else 2)
+        keep_together(para(line if line else " ", after=6 if line else 2))
     para("Tags - the exact target keyword first", size=11, bold=True,
          color=NAVY, before=8, after=4)
     para(", ".join(TAGS), after=10)
-    para("Chapters", size=11, bold=True, color=NAVY, after=4)
+    keep_together(para("Chapters", size=11, bold=True, color=NAVY, after=4), with_next=True)
     table([["Time", "Chapter"]] + [list(c) for c in CHAPTERS],
           widths=[1.0, 5.6])
     para("ESTIMATES ONLY. These timestamps are planning figures and must be "
          "reset from the finished export before publishing.", size=10,
          italic=True, color=DIM, after=10)
-    para("Pinned comment", size=11, bold=True, color=NAVY, before=8, after=4)
+    keep_together(para("Pinned comment", size=11, bold=True, color=NAVY, before=8, after=4), with_next=True)
     for line in PINNED.split("\n"):
         para(line if line else " ", after=5 if line else 2)
-    para("End screen", size=11, bold=True, color=NAVY, before=10, after=4)
+    keep_together(para("End screen", size=11, bold=True, color=NAVY, before=10, after=4), with_next=True)
     table([["Element", "Route"],
-           ["Video card", "What to Do Before a Layoff Happens - Video 9"],
-           ["Status", "Video 9 is not yet produced. No URL is invented here."],
-           ["Fallback until it publishes",
-            "Career Portability: Career Pivots, Internal Moves & Growth"],
+           ["Video element, first choice",
+            "If the next video in the sequence is public when Video 8 "
+            "publishes, the end-screen video element may route directly to "
+            "it."],
+           ["Otherwise",
+            "Route to the public Career Portability playlist."],
+           ["Verify before publication",
+            "The selected playlist contains at least one other public video "
+            "and opens successfully in a signed-out browser."],
+           ["Do not use",
+            "A playlist containing only Video 8 as the fallback."],
+           ["Spoken and on-slide wording",
+            "Neither names an unpublished video. Both point at the Career "
+            "Portability playlist, so no re-render or re-record is needed "
+            "whichever route is chosen."],
            ["Subscribe element", "Bottom right, standard placement"],
            ["Clear zone", "Slide 12 keeps the right third empty for the "
             "card"]],
           widths=[1.9, 4.7])
 
     h1("9. Editor direction")
-    para("Lower thirds", size=11, bold=True, color=NAVY, after=4)
+    keep_together(para("Lower thirds", size=11, bold=True, color=NAVY, after=4), with_next=True)
     table([["Time", "Copy"]] + [list(l) for l in LOWER_THIRDS],
           widths=[1.0, 5.6])
-    para("On-screen text", size=11, bold=True, color=NAVY, before=8, after=4)
+    keep_together(para("On-screen text", size=11, bold=True, color=NAVY, before=8, after=4), with_next=True)
     table([["Time", "Text", "Note"]] + [list(o) for o in ON_SCREEN],
           widths=[0.8, 2.6, 3.2])
-    para("B-roll", size=11, bold=True, color=NAVY, before=8, after=4)
+    keep_together(para("B-roll", size=11, bold=True, color=NAVY, before=8, after=4), with_next=True)
     table([["Block", "Guidance"]] + [list(b) for b in BROLL],
           widths=[1.4, 5.2])
-    para("Editor notes", size=11, bold=True, color=NAVY, before=8, after=4)
+    keep_together(para("Editor notes", size=11, bold=True, color=NAVY, before=8, after=4), with_next=True)
     for n in EDITOR_NOTES:
         para("-  " + n, after=6)
 

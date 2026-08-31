@@ -173,8 +173,8 @@
     11
   ],
   "no_competing_offer": true,
-  "watch_next_routes_to_video_9": true,
-  "watch_next_names_playlist": true,
+  "slide12_names_playlist_only": true,
+  "slide12_names_no_unpublished_video": true,
   "watch_next_in_last_frame": true,
   "final_states_match_main": true,
   "all_elements_on_canvas": true,

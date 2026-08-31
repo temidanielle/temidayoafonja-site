@@ -137,8 +137,8 @@ SEC5 = {
          "What has your work built in you?",
          "How portable is it? What is still missing?",
          "temidayoafonja.com/fieldkit"],
-    12: ["WATCH NEXT", "WHAT TO DO", "BEFORE A LAYOFF", "HAPPENS",
-         "Career Portability: Career Pivots,", "Internal Moves & Growth"],
+    12: ["CONTINUE THE SERIES", "CAREER", "PORTABILITY",
+         "CAREER PIVOTS  ·  INTERNAL MOVES  ·  GROWTH"],
 }
 
 
@@ -258,13 +258,14 @@ def main():
     rep["no_competing_offer"] = not any(x in joined for x in
         ("keep the proof", "keep-the-proof", "career decision evidence check",
          "career-decisions", "maven", "book", "workshop"))
-    rep["watch_next_routes_to_video_9"] = all(
-        x in vis[11] for x in ("WHAT TO DO", "BEFORE A LAYOFF", "HAPPENS"))
-    rep["watch_next_names_playlist"] = "Career Portability" in vis[11]
+    rep["slide12_names_playlist_only"] = ("CAREER PORTABILITY" in vis[11].upper()
+                                          and "CONTINUE THE SERIES" in vis[11].upper())
+    rep["slide12_names_no_unpublished_video"] = not any(
+        x in vis[11].upper() for x in ("LAYOFF", "VIDEO 9", "WHAT TO DO BEFORE"))
     rev_vis = [flat("\n".join(sh.text_frame.text for sh in sl.shapes
                               if sh.has_text_frame and sh.text_frame.text.strip()))
                for sl in Presentation(rec_pptx).slides]
-    rep["watch_next_in_last_frame"] = "BEFORE A LAYOFF" in rev_vis[-1]
+    rep["watch_next_in_last_frame"] = "CAREER PORTABILITY" in rev_vis[-1].upper()
     rep["final_states_match_main"] = all(
         vis[n - 1] == rev_vis[sum(S.STEPS[k] for k in range(1, n + 1)) - 1]
         for n in range(1, 13))

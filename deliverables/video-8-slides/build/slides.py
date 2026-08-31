@@ -32,7 +32,7 @@ TITLES = {
     9:  "Bridge evidence",
     10: "The three columns",
     11: "Primary CTA, Capability Formation Field Kit",
-    12: "Watch next",
+    12: "Continue the series",
 }
 
 SLUGS = {
@@ -41,7 +41,7 @@ SLUGS = {
     5: "what-must-be-relearned", 6: "what-must-be-earned",
     7: "start-from-the-destination", 8: "translate-do-not-recite",
     9: "bridge-evidence", 10: "the-three-columns", 11: "field-kit",
-    12: "watch-next",
+    12: "continue-the-series",
 }
 
 RULE_NAVY = RGBColor(0x22, 0x3A, 0x60)
@@ -377,8 +377,9 @@ def slide_10(sl, step=1):
 
 One column per beat, left to right.
 
-Say the finding that makes the exercise worth doing: for most people the first
-column is longer than they feared and the third is shorter than they assumed.
+Say the finding that makes the exercise worth doing, as an invitation rather
+than a statistic: they may find the first column is longer than they feared and
+the third shorter than they assumed.
 
 The translation sentence follows this slide and stays spoken, not typeset —
 the viewer should write it in their own words.""")
@@ -414,26 +415,33 @@ industry is hiring and does not replace researching the destination.""")
 
 # ------------------------------------------------------------------ slide 12
 def slide_12(sl, step=1):
-    """Navy. Watch next. Right side kept clear for the end-screen card."""
+    """Navy. Continue the series. Right side kept clear for the end-screen card.
+
+    Names no unpublished video: the spoken line and this slide both point at
+    the Career Portability playlist, so the end-screen element can route to
+    either the playlist or the next video once it is public, with no re-render
+    and no re-record.
+    """
     bg(sl, NAVY)
-    eyebrow(sl, 160, 250, "Watch next", color=GOLD, size=24, w=900)
-    block(sl, 160, 320, 900, [
-        ("WHAT TO DO\nBEFORE A LAYOFF\nHAPPENS",
-         dict(size=58, bold=True, color=CREAM, spacing=1.16)),
+    eyebrow(sl, 160, 268, "Continue the series", color=GOLD, size=24, w=900)
+    block(sl, 160, 352, 900, [
+        ("CAREER\nPORTABILITY",
+         dict(size=76, bold=True, color=CREAM, spacing=1.12)),
     ])
-    hairline(sl, 160, 686, 260, color=GOLD, h=4)
-    block(sl, 160, 742, 900, [
-        ("Career Portability: Career Pivots,\nInternal Moves & Growth",
-         dict(size=34, font=BODY, color=PLAYLIST, spacing=1.28)),
+    hairline(sl, 160, 636, 260, color=GOLD, h=4)
+    block(sl, 160, 700, 900, [
+        ("CAREER PIVOTS  ·  INTERNAL MOVES  ·  GROWTH",
+         dict(size=32, bold=True, color=PLAYLIST, spacing=1.3, tracking=1.2)),
     ])
     notes(sl, """Timing: approximately 10:05.
 
 Everything sits left of x=1130. The right third is reserved for the YouTube
 end-screen element and must stay empty.
 
-Video 9 has not been produced. Point the end-screen card at the Career
-Portability playlist until it publishes, then switch the card to the video.
-The playlist line is on the slide either way, so no re-render is needed.""")
+No unpublished video is named here or in the spoken line. Set the end-screen
+video element at upload: route it directly to the next video if that video is
+already public, otherwise to the public Career Portability playlist. Verify
+the playlist opens signed out and contains at least one other public video.""")
 
 
 BUILDERS = {1: slide_01, 2: slide_02, 3: slide_03, 4: slide_04, 5: slide_05,
