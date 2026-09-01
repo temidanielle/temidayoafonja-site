@@ -187,4 +187,9 @@ Video 4 record:
 | CTA | Keep the Proof |
 | Watch next | Should I Make an Internal Move? 3 Questions to Decide |
 
+Video 4 is **FINAL AND LOCKED FOR RECORDING** as of 1 September 2026. Its
+script was verified literally against the canonical source file
+`Video_4_Code_Prompt_HIT_Final.txt` — exact match on all 124 spoken paragraphs,
+with no normalisation applied.
+
 The standards for Videos 5 to 8 are unchanged.

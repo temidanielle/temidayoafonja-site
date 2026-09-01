@@ -91,39 +91,44 @@
  },
  "ALL_BOOLEAN_CHECKS_PASS": true,
  "SOURCE_VERIFICATION": {
-  "canonical_file_requested": "Video_4_Code_Prompt_HIT_Final.txt",
-  "canonical_file_available": false,
-  "canonical_file_searched": [
-   "session uploads directory",
-   "whole filesystem by name",
-   "repository",
-   "any file containing the BEGIN APPROVED VIDEO 4 SCRIPT fence"
+  "status": "PASSED",
+  "date": "2026-09-01",
+  "canonical_file": "Video_4_Code_Prompt_HIT_Final.txt",
+  "canonical_file_available": true,
+  "canonical_file_sha256": "9d66cce6a94117542e1f1e514a1fc18d86e1543371f9a0c47146e96a641bc3e1",
+  "canonical_file_archived_at": "deliverables/video-4-slides/hit-final/_source/Video_4_Code_Prompt_HIT_Final.txt",
+  "method": "Text extracted only between the BEGIN/END APPROVED VIDEO 4 SCRIPT fences and compared literally. No normalisation of any kind was applied: no case folding, no whitespace collapsing, no quote or dash substitution.",
+  "source_blocks": 135,
+  "source_markers": 11,
+  "source_spoken_paragraphs": 124,
+  "source_spoken_words": 1322,
+  "teleprompter_txt_minus_markers_equals_source": true,
+  "reading_script_txt_equals_source": true,
+  "slide_marker_names_match": true,
+  "slide_marker_positions_match": true,
+  "characters_source": 8057,
+  "characters_reading": 8057,
+  "characters_teleprompter_minus_markers": 8057,
+  "sha256_joined_spoken_text": "bcbfab8720a5fb4a19198c9693be9dd6bda7ae51eed3e29dfbf666757b6c0097",
+  "sha256_identical_across_source_and_both_packaged_scripts": true,
+  "per_character_class_equal": {
+   "apostrophes": 2,
+   "left_double_quotes": 11,
+   "right_double_quotes": 11,
+   "em_dashes": 2,
+   "ellipses": 3,
+   "capital_letters": 163
+  },
+  "checked": [
+   "every word",
+   "punctuation",
+   "apostrophes",
+   "quotation marks",
+   "em dashes",
+   "capitalization",
+   "paragraph order"
   ],
-  "video_4_marked_final": false,
-  "reason": "The named canonical source file is not present. Per Temidayo's instruction the specified comparison could not be run and Video 4 is not marked final.",
-  "secondary_check": {
-   "what": "Literal extraction from the session transcript's machine-recorded copy of Temidayo's own brief, between the BEGIN/END APPROVED VIDEO 4 SCRIPT fences. Not a hand transcription and not normalised.",
-   "recorded_copies_of_the_script_found": 1,
-   "teleprompter_minus_markers_equals_source": true,
-   "reading_script_equals_source": true,
-   "paragraphs": 124,
-   "marker_names_match": true,
-   "marker_positions_match": true,
-   "source_characters": 8057,
-   "package_characters": 8057,
-   "sha256_of_joined_spoken_text_identical": true,
-   "compared": [
-    "every word",
-    "punctuation",
-    "apostrophes",
-    "quotation marks",
-    "em dashes",
-    "capitalization",
-    "paragraph order"
-   ],
-   "normalisation_applied": "none",
-   "status": "EXACT MATCH — corroboration only, not a substitute for the canonical file Temidayo named."
-  }
+  "result": "EXACT MATCH on both comparisons."
  },
  "KEEP_THE_PROOF_GATE": {
   "status": "PASSED",
@@ -131,5 +136,27 @@
   "verified_by": "Temidayo, signed-out check",
   "verified_by_claude": false,
   "note": "Outbound requests to temidayoafonja.com are refused by this environment's egress proxy. Routine pre-publication signed-out link check remains in the publishing SOP."
+ },
+ "PACKAGE_INTEGRITY_AT_LOCK": {
+  "all_12_packaged_files_match_recorded_checksums": true,
+  "no_packaged_file_changed_since_reviewed_commit_e2d405f": true,
+  "zip_rebuilt": false,
+  "zip_entries": 13,
+  "zip_sha256": "5ca42003ff3c100d5afb2d071e87d418abe6d7777b6f45d956d5830ab46104a0",
+  "zip_sha256_retained": true
+ },
+ "LOCK": {
+  "status": "FINAL AND LOCKED FOR RECORDING",
+  "date": "2026-09-01",
+  "title": "How to Explain Your Career Change",
+  "thumbnail": "YOUR CAREER MAKES SENSE",
+  "canonical_spoken_words": 1322,
+  "cta": "Keep the Proof",
+  "keep_the_proof_gate": "PASSED",
+  "watch_next": "Should I Make an Internal Move? 3 Questions to Decide",
+  "slides": "UNCHANGED",
+  "reveal_deck": "UNCHANGED",
+  "thumbnail_asset": "UNCHANGED",
+  "previous_1221_word_script": "SUPERSEDED"
  }
 }

@@ -64,7 +64,7 @@ for every video that carries the URL.
 | 1 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. rebuild built — awaiting Temidayo's approval** | **Option A vs B not selected** — open |
 | 2 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. rebuild approved and LOCKED**, commit `d6883dd` | final, approved |
 | 3 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. rebuild approved and LOCKED**, commit `c961b63` | Final A approved; Final B archived |
-| 4 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. rebuild built — awaiting Temidayo's approval** | approved |
+| 4 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. rebuild approved and LOCKED**, commit `e2d405f` | approved |
 | 5 | approved and locked | **approved and locked** | approved |
 | 6 | approved and locked | **approved and locked** | task closed — finalising in Canva |
 | 7 | approved and closed | **approved and locked** | **outstanding** — approved Canva export carrying `MAKE INVISIBLE WORK VISIBLE` |
@@ -110,9 +110,8 @@ labelled EDITOR ONLY briefs, out of every recording document. It is a
 description stay untouched until the replacement is recorded, edited, reviewed
 and uploaded.
 
-Video 4's H.I.T. rebuild is built at `deliverables/video-4-slides/hit-final/`.
-Content and package structure are **approved**; the package is **not yet locked**
-— see the source-verification note below. 124 spoken paragraphs, 1,322 words,
+Video 4 is **locked** at `deliverables/video-4-slides/hit-final/`; the packaged
+files are those of commit `e2d405f`. 124 spoken paragraphs, 1,322 words,
 11 slide markers mapping to the unchanged 11-slide deck; the reveal deck
 (26 frames) is unchanged. Four standalone Shorts, and editor instruction held in
 two clearly labelled EDITOR ONLY briefs.
@@ -133,60 +132,27 @@ at commit `de4363c` with Video 4 at 1,221 words. Temidayo instructed a full
 H.I.T. rebuild on 1 September 2026; the new package replaces that script for
 Video 4 only. Videos 5 to 8 remain locked at `de4363c` and are untouched.
 
-**Source verification — open.** Video 4's script arrived as message text rather
-than as a file, so it was hand-transcribed into the package. Temidayo asked for
-a literal comparison against `Video_4_Code_Prompt_HIT_Final.txt`. **That file is
-not present** in this session's uploads or in the repository, so the check she
-specified has not been run and Video 4 is **not marked final**.
+**Source verification — PASSED, 1 September 2026.** Video 4's script arrived
+first as message text and was hand-transcribed into the package, so a literal
+check against the canonical source was held open. Temidayo then supplied
+`Video_4_Code_Prompt_HIT_Final.txt` (SHA-256
+`9d66cce6a94117542e1f1e514a1fc18d86e1543371f9a0c47146e96a641bc3e1`), archived at
+`deliverables/video-4-slides/hit-final/_source/`.
 
-A secondary literal check was run against the one machine-recorded copy of the
-approved script that does exist — the session transcript's stored copy of
-Temidayo's own brief, extracted programmatically between the BEGIN/END APPROVED
-VIDEO 4 SCRIPT fences, with no normalisation. Against that source, the
-teleprompter script minus its slide markers and the clean reading script are
-both an **exact match**: 124 paragraphs, every word, apostrophe, quotation mark,
-em dash, capitalisation and paragraph order identical; 8,057 characters on both
-sides; identical SHA-256 of the joined spoken text. The 11 marker names and
-their positions also match exactly. This is corroboration, not a substitute for
-the canonical file Temidayo named.
+The text between the BEGIN/END APPROVED VIDEO 4 SCRIPT fences was extracted and
+compared literally, with **no normalisation of any kind**. Both comparisons are
+an **exact match**: the teleprompter script minus its slide markers, and the
+clean reading script, each equal the canonical source across all 124 paragraphs
+— every word, punctuation mark, apostrophe, quotation mark, em dash,
+capitalisation and paragraph order. 8,057 characters on all three sides, and an
+identical SHA-256 of the joined spoken text
+(`bcbfab8720a5fb4a…`). The 11 slide-marker names and their positions match
+exactly. The hand-transcription risk is closed.
 
-**Fact boundary carried into every Video 4 document.** The recurring "cat with
-nine lives" description is established — one of Temidayo's senior-manager
-friends at EY used to joke that she was a "cat with nine lives". The original
-conversation that first prompted it is **not** established, is not invented
-anywhere in the package, and no cat imagery, animation, sound or reenactment is
-permitted.
-
-Video 1's public title and on-screen deck title differ **intentionally** —
-"How to Change Jobs Without Starting Your Career Over" versus "How I Changed
-Jobs Without Starting My Career Over". The title slide is not to be changed to
-match the public metadata title.
-
-**Open for Temidayo, raised at build time.** The approved Video 1 script says
-"Over roughly eighteen years". `docs/claims-ledger.md` §6 records a resolved
-August 2026 operator decision to use "nearly two decades" on every page, and
-verifies that "eighteen years" appears nowhere in the repository. The script
-was built exactly as approved and the wording was not altered. The figure is
-not inaccurate — the ledger's own date range is 2008 to 2026 — but it is a
-consistency conflict with a resolved decision, and it is Temidayo's to settle.
-
-### Packaging convention — approved, applies to future packages
-
-Recording-package archives are built from an **explicit allowlist**, never from
-a directory walk. Build scripts, QA utilities and source text are kept beside
-the package, never inside it.
-
-`SHA256SUMS.txt` ships inside the archive and covers every other user-facing
-file in it. It does not hash itself. The archive's own SHA-256 lives in a
-sibling file, `<archive-name>.zip.sha256`, so the copy of `SHA256SUMS.txt`
-inside the archive is byte-identical to the one outside it.
-
-Approved by Temidayo on 1 September 2026 and to be used for every package from
-here on.
-
-Video 2's package predates this and carries the older convention, where the
-on-disk `SHA256SUMS.txt` has a trailing archive-hash line the archived copy
-does not. Video 2 is locked and is not being reopened for it.
+No packaged file changed as a result of this verification. All 12 packaged files
+still match their recorded checksums, none differs from the reviewed commit
+`e2d405f`, the archive was not rebuilt, and its SHA-256 is retained:
+`5ca42003ff3c100d5afb2d071e87d418abe6d7777b6f45d956d5830ab46104a0`.
 
 ### Standards recorded
 
