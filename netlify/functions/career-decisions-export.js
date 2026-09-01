@@ -41,6 +41,9 @@
 
 const crypto = require("crypto");
 const { blobStore, blobsConfigured } = require("../lib/blobs");
+// Imported here, not through the shared helper, because this file needs the
+// zero-configuration form directly. netlify/lib/blobs.js is untouched.
+const { getStore } = require("@netlify/blobs");
 
 const STORE = "career-decisions-leads";
 
@@ -131,42 +134,51 @@ function flatten(rec) {
 // Which route blobStore() takes for this call. Defined here rather than in the
 // shared helper deliberately: netlify/lib/blobs.js is used by all nine Blobs
 // functions, four of them live on production, and nothing in this branch should
-// reach them. This mirrors the helper's precedence and must be kept in step
-// with it: manual credentials win when both are present.
-//
-// It exists because on 2026-08-26 a site-wide Blobs failure could not be
-// attributed without knowing which of the two routes was in use. It reported
-// "manual", which established that Netlify is injecting no Blobs context here
-// and that the failing request is the API one.
+// reach them. It mirrors the helper's precedence and must be kept in step with
+// it: manual credentials win when both are present, and the fallback is the
+// zero-configuration form.
 function blobsRoute() {
-  if (blobsConfigured()) return "manual";
-  if (blobsContextPresent()) return "auto";
-  return "unconfigured";
+  return blobsConfigured() ? "manual" : "zero-config";
 }
 
-// Whether Netlify injected a Blobs context into this function's runtime.
+// Whether zero-configuration initialises.
 //
-// This is the one fact needed to settle Netlify support case #1099659 and it
-// cannot be observed any other way. blobsRoute() above reports "manual"
-// whenever BLOBS_SITE_ID and BLOBS_TOKEN are set, which they are, so it can
-// never say whether a context also exists. Netlify's proposed remedy is to drop
-// the manual credentials and call getStore(name) so the client reads the context
-// itself. That remedy only works if a context is there, and changing
-// netlify/lib/blobs.js, which nine functions share, on the assumption that it is
-// would be the wrong order of operations.
+// This replaces an earlier probe that read NETLIFY_BLOBS_CONTEXT directly.
+// Netlify support case #1099659 states that application code should not read or
+// parse that variable, and that the v8 SDK reads the injected context itself. So
+// the question is asked through their SDK rather than around it: this tests the
+// exact call their proposed remedy depends on.
 //
-// The expression is the same one @netlify/blobs 8.2.0 uses in
-// getEnvironmentContext, so a true here means the client would find it too.
+// ── What it does, and does not do ──
 //
-// ── What this returns, and what it deliberately cannot ──
+// It constructs a store handle and nothing else. getStore() reads the injected
+// context, validates the store name and returns an object. **No read, no write,
+// no list, no record operation of any kind.** A true here therefore proves only
+// that zero-configuration initialises. It does not prove that a subsequent
+// network read or write would succeed; that has to be verified separately, on
+// the preview of the eventual shared fix.
 //
-// A boolean and nothing else. Boolean() is applied at the point of reading, so
-// the context value never leaves this function, not as a value, a fragment, a
-// length, a shape, a type or a count. A caller learns one bit: present, or not.
-// That bit is not a secret. It is a property of the deploy environment, it is
-// the same for every visitor, and it is only reachable behind the export token.
-function blobsContextPresent() {
-  return Boolean(globalThis.netlifyBlobsContext || process.env.NETLIFY_BLOBS_CONTEXT);
+// ── Why any throw is false ──
+//
+// A draft of this returned true for exceptions other than
+// MissingBlobsEnvironmentError, which would have reported a network or SDK
+// failure as a pass. That is the same shape of defect this incident has already
+// produced twice, and it was caught in review. The rule is now absolute: true
+// only on a clean return.
+//
+// ── Disclosure ──
+//
+// One boolean. The exception is caught and discarded without being read, so no
+// name, message, stack or cause can reach the response, and neither can the
+// context value, its structure or its length. No credential and no record is
+// involved at any point.
+function zeroConfigInitializes() {
+  try {
+    getStore(STORE);
+    return true;
+  } catch (e) {
+    return false;
+  }
 }
 
 // ── Blobs failure classification ───────────────────────────────────────────
@@ -336,7 +348,7 @@ exports.handler = async (event) => {
           // the error itself says which one was in use.
           mode: blobsRoute(),
           blobs_manual_config: blobsConfigured(),
-          blobs_context_present: blobsContextPresent()
+          zero_config_initializes: zeroConfigInitializes()
         })
       };
     }

@@ -288,6 +288,25 @@ is only reachable by a caller who has already presented the token.
 
 These five differences are confined to that file; the three older exports are unchanged.
 
+### Production verification, 2026-08-31
+
+The full core journey passed on `https://temidayoafonja.com/career-decisions`:
+
+- The page loads, and the Lightning Lesson with its Register free call to action is present but
+  hidden until a submission is confirmed, which is the intended behaviour.
+- A genuinely new address subscribed, the three questions and the offer appeared, and the delivery
+  email arrived immediately and is visible in Kit's Email History.
+- Kit created the subscriber with **Confirmed** status. Tags: `Career Decision Evidence Check —
+  Requested` and `YouTube`. **No `Ongoing Guidance` tag**, which is the check that matters most.
+- `delivery_consent` true, `delivery_policy_version` `2026-08-18`, `guidance_consent` false, and both
+  guidance stamp fields empty.
+- Attribution recorded: source `youtube`, medium `video`, campaign and video slug both
+  `launch-check`.
+
+Two earlier attempts used addresses already cancelled in Kit. **Kit correctly preserved their
+unsubscribe status and did not reactivate them**, which is the behaviour to want and which makes
+reused addresses useless for testing.
+
 ### Accepted limitation at launch: no durable first-party record
 
 Netlify Blobs has been failing site-wide since 2026-08-20. Every read and write returns HTTP 400
@@ -374,7 +393,8 @@ Their second point also lands on the diagnostic in this branch, which reads the 
 The SDK's own check is the same expression, so the two should agree, but "should agree" is the
 assumption that has already been wrong twice in this incident. When the diagnostic resumes it will
 therefore test Netlify's claim **through their SDK** rather than around it: construct a store handle
-with `getStore("career-decisions-leads")` and report one boolean, `zero_config_initializes`.
+with `getStore("career-decisions-leads")` and report one boolean, `zero_config_initializes`. That
+replacement was made on 2026-08-31; the direct read is gone.
 
 The rule for that boolean is strict, and deliberately so:
 
@@ -440,10 +460,18 @@ and must not be assumed**. Another is that a limit on a redirect does not apply 
 is a 200 rewrite to a Netlify Function, which would mean production behaves the same way. Both are
 open questions in the Netlify support ticket.
 
-**Until the production probe demonstrates otherwise, treat this form as having no per-IP rate
-limit.** The probe is six sequential empty-body POSTs to
-`https://temidayoafonja.com/api/career-decisions-subscribe`; the sixth must return 429. A green
-deploy alone establishes nothing: the earlier edge attempt deployed green and did nothing.
+**Production result, 2026-08-31: the rule is not enforced there either.** Six sequential empty-body
+POSTs to `https://temidayoafonja.com/api/career-decisions-subscribe` from one browser and one IP
+returned `[400, 400, 400, 400, 400, 400]`. Every request reached the function. That is the same
+result the deploy preview gave, so preview-scoped non-enforcement is **ruled out** as the
+explanation, and the remaining hypothesis, that a rate limit on a redirect does not apply when the
+redirect is a 200 rewrite to a Netlify Function, is the one still standing.
+
+**Treat this endpoint as having no effective per-IP rate limit.** Two mechanisms have now been tried
+and neither is enforced. No third is being attempted: the result is in the Netlify rate-limiting
+escalation and the limitation stands until Netlify answers. A green deploy establishes nothing here,
+and neither does an accepted rule: this one appeared in post-processing with its path condition, its
+`"type": "ip"` aggregate and `"status_code": 429`, and still did not fire.
 
 **On the consequences of abuse.** Junk Kit subscribers can be removed. Not everything downstream of
 a flood can be undone that easily: sustained submissions consume Kit API quota and generate outbound

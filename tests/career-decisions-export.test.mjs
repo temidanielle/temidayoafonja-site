@@ -19,24 +19,32 @@ import { createRequire } from "node:module";
 // listError lets a test choose the exact error the storage layer throws, which
 // is what the fault-class tests below need. failList stays for the plain
 // "something broke" case.
-const blobs = { stores: new Map(), failList: false, listError: null, lastGetStoreArg: null };
+// ops counts data operations, so a test can prove the initialisation probe
+// performs none of them.
+const blobs = {
+  stores: new Map(), failList: false, listError: null,
+  lastGetStoreArg: null, getStoreError: null,
+  ops: { list: 0, get: 0, setJSON: 0, delete: 0 }
+};
 function fakeStore(name) {
   if (!blobs.stores.has(name)) blobs.stores.set(name, new Map());
   const m = blobs.stores.get(name);
   return {
     async list() {
+      blobs.ops.list += 1;
       if (blobs.listError) throw blobs.listError;
       if (blobs.failList) throw new Error("stub list failure");
       return { blobs: [...m.keys()].map((key) => ({ key })) };
     },
     async get(key) {
+      blobs.ops.get += 1;
       if (blobs.listError) throw blobs.listError;
       if (blobs.failList) throw new Error("stub read failure");
       // Return a copy, so a mutation by the handler cannot reach the store.
       return m.has(key) ? JSON.parse(JSON.stringify(m.get(key))) : null;
     },
-    async setJSON(key, value) { m.set(key, value); },
-    async delete(key) { m.delete(key); }
+    async setJSON(key, value) { blobs.ops.setJSON += 1; m.set(key, value); },
+    async delete(key) { blobs.ops.delete += 1; m.delete(key); }
   };
 }
 const originalLoad = Module._load;
@@ -44,10 +52,10 @@ Module._load = function (request) {
   if (request === "@netlify/blobs") {
     return {
       getStore: (arg) => {
-        // Record the call shape. A string is the injected-context route, an
-        // object carrying siteID and token is the manual one, and which of the
-        // two the helper picks is the whole point of the change it guards.
+        // Record the call shape. A string is the zero-configuration route, an
+        // object carrying siteID and token is the manual one.
         blobs.lastGetStoreArg = arg;
+        if (blobs.getStoreError) throw blobs.getStoreError;
         return fakeStore(typeof arg === "string" ? arg : arg.name);
       }
     };
@@ -120,12 +128,16 @@ function reset({ token = TOKEN, seedRecords = null } = {}) {
   delete process.env.NETLIFY_BLOBS_CONTEXT;
   delete globalThis.netlifyBlobsContext;
   blobs.lastGetStoreArg = null;
+  blobs.getStoreError = null;
   // null is the sentinel for "the server has no token configured". undefined
   // would hit the default parameter above and silently set the real token,
   // which is exactly the mistake this comment exists to prevent repeating.
   if (token === null) delete process.env.RESEARCH_EXPORT_TOKEN;
   else process.env.RESEARCH_EXPORT_TOKEN = token;
   seed(seedRecords || { "2026-08-19T14-15-00-000Z__aaa": record() });
+  // After seeding, not before: seed() writes through the fake store, so zeroing
+  // earlier would leave the fixture's own setJSON counted against the handler.
+  blobs.ops = { list: 0, get: 0, setJSON: 0, delete: 0 };
 }
 
 function call({ token = null, bearer = null, query = {}, method = "GET" } = {}) {
@@ -573,32 +585,6 @@ test("the export token is redacted from an upstream string too", async () => {
 
 /* ── Which route the call took ─────────────────────────────────────────── */
 
-test("a failure reports the manual route when no context is injected", async () => {
-  reset();
-  blobs.failList = true;
-  assert.equal(JSON.parse((await call({ token: TOKEN })).body).mode, "manual");
-});
-
-test("a failure reports the injected route when only a context is present", async () => {
-  reset();
-  delete process.env.BLOBS_SITE_ID;
-  delete process.env.BLOBS_TOKEN;
-  process.env.NETLIFY_BLOBS_CONTEXT = "eyJzaXRlSUQiOiJ4In0=";
-  blobs.failList = true;
-  assert.equal(JSON.parse((await call({ token: TOKEN })).body).mode, "auto");
-});
-
-test("a failure reports neither route when nothing is configured", async () => {
-  reset();
-  delete process.env.BLOBS_SITE_ID;
-  delete process.env.BLOBS_TOKEN;
-  delete process.env.NETLIFY_BLOBS_CONTEXT;
-  blobs.failList = true;
-  const body = JSON.parse((await call({ token: TOKEN })).body);
-  assert.equal(body.mode, "unconfigured");
-  assert.equal(body.reason, "blobs_not_configured");
-});
-
 test("the manual credentials are used whenever they are present", async () => {
   reset();
   // Guards the precedence blobsRoute() mirrors. An injected context present
@@ -612,80 +598,98 @@ test("the manual credentials are used whenever they are present", async () => {
   });
 });
 
-test("the injected route is used when the manual credentials are absent", async () => {
-  reset();
-  delete process.env.BLOBS_SITE_ID;
-  delete process.env.BLOBS_TOKEN;
-  process.env.NETLIFY_BLOBS_CONTEXT = "eyJzaXRlSUQiOiJ4In0=";
-  await call({ token: TOKEN });
-  assert.equal(blobs.lastGetStoreArg, "career-decisions-leads");
-});
-
-/* ── Is a Blobs context present at runtime ─────────────────────────────── */
+/* ── Does zero-configuration initialise ────────────────────────────────── */
 //
-// The one fact that settles Netlify support case #1099659. Their proposed
-// remedy, dropping the manual credentials so the client reads an injected
-// context itself, only works if a context exists. These tests pin both the
-// answer and the shape of the answer, because the shape is a disclosure
-// question: a boolean is safe, anything derived from the value is not.
+// The question Netlify support case #1099659 made a promise about. Their remedy
+// is to drop the manual credentials and let the SDK read the injected context
+// itself, so the test asks their SDK rather than reading the variable directly,
+// which they say application code should not do.
 
-const CONTEXT = "eyJzaXRlSUQiOiJ4In0=";
+function missingEnvError() {
+  const e = new Error("The environment has not been configured to use Netlify Blobs");
+  e.name = "MissingBlobsEnvironmentError";
+  return e;
+}
 
-test("a context in the environment is reported as present", async () => {
+test("a clean return from getStore is reported as true", async () => {
   reset();
-  process.env.NETLIFY_BLOBS_CONTEXT = CONTEXT;
   blobs.failList = true;
-  assert.equal(JSON.parse((await call({ token: TOKEN })).body).blobs_context_present, true);
+  assert.equal(JSON.parse((await call({ token: TOKEN })).body).zero_config_initializes, true);
 });
 
-test("a context on globalThis is reported as present", async () => {
+test("MissingBlobsEnvironmentError is reported as false", async () => {
   reset();
-  // The client checks globalThis first, so this path must be read too or a
-  // context supplied that way would be reported absent.
-  globalThis.netlifyBlobsContext = CONTEXT;
-  try {
-    blobs.failList = true;
-    assert.equal(JSON.parse((await call({ token: TOKEN })).body).blobs_context_present, true);
-  } finally {
-    delete globalThis.netlifyBlobsContext;
+  blobs.getStoreError = missingEnvError();
+  assert.equal(JSON.parse((await call({ token: TOKEN })).body).zero_config_initializes, false);
+});
+
+test("ANY other exception is also false, never success", async () => {
+  reset();
+  // The rule that matters. An earlier draft returned true for anything that was
+  // not MissingBlobsEnvironmentError, which would have reported a network or SDK
+  // failure as a pass. Each of these must be false.
+  for (const err of [
+    new Error("socket hang up"),
+    Object.assign(new Error("bad store name"), { name: "TypeError" }),
+    Object.assign(new Error("upstream refused"), { name: "BlobsInternalError" }),
+    { notEvenAnError: true }
+  ]) {
+    reset();
+    blobs.getStoreError = err;
+    const body = JSON.parse((await call({ token: TOKEN })).body);
+    assert.equal(body.zero_config_initializes, false,
+      `expected false for ${err && err.name ? err.name : "a non-Error throw"}`);
   }
 });
 
-test("no context is reported as absent", async () => {
+test("the probe is asked in zero-configuration form, not the manual one", async () => {
   reset();
-  blobs.failList = true;
-  assert.equal(JSON.parse((await call({ token: TOKEN })).body).blobs_context_present, false);
+  blobs.getStoreError = missingEnvError();
+  await call({ token: TOKEN });
+  // A string is the zero-configuration call. If this were an object carrying
+  // siteID and token it would be testing the form Netlify says to stop using.
+  assert.equal(blobs.lastGetStoreArg, "career-decisions-leads");
 });
 
-test("the answer does not depend on the manual credentials", async () => {
+test("the probe performs no read, write, list or record operation", async () => {
   reset();
-  // This is the whole point. mode reports "manual" whenever the two variables
-  // are set, so it can never reveal whether a context also exists. The two
-  // facts must be reported independently.
-  process.env.NETLIFY_BLOBS_CONTEXT = CONTEXT;
   blobs.failList = true;
-  const body = JSON.parse((await call({ token: TOKEN })).body);
-  assert.equal(body.mode, "manual", "manual credentials still win the route");
-  assert.equal(body.blobs_manual_config, true);
-  assert.equal(body.blobs_context_present, true, "and the context is reported anyway");
+  await call({ token: TOKEN });
+  // One list: the export's own attempt, which is what produced the failure body.
+  // The probe contributes nothing beyond constructing a handle.
+  assert.equal(blobs.ops.list, 1, "only the export's own list");
+  assert.equal(blobs.ops.get, 0);
+  assert.equal(blobs.ops.setJSON, 0);
+  assert.equal(blobs.ops.delete, 0);
 });
 
-test("the response carries a boolean and never the context itself", async () => {
+test("the response carries a boolean and no trace of the exception", async () => {
   reset();
-  process.env.NETLIFY_BLOBS_CONTEXT = CONTEXT;
-  blobs.failList = true;
+  blobs.getStoreError = Object.assign(
+    new Error("secret-looking detail from inside the SDK"),
+    { name: "MissingBlobsEnvironmentError" }
+  );
   const res = await call({ token: TOKEN });
 
-  assert.equal(typeof JSON.parse(res.body).blobs_context_present, "boolean",
-    "a boolean, not a string, a number or an object");
+  assert.equal(typeof JSON.parse(res.body).zero_config_initializes, "boolean");
+  assert.ok(!res.body.includes("secret-looking detail"), "no message");
+  assert.ok(!res.body.includes("MissingBlobsEnvironmentError"), "no exception name");
+  assert.ok(!/stack|Error:/.test(res.body), "no stack or error prefix");
+  assert.ok(!/NETLIFY_BLOBS_CONTEXT|netlifyBlobsContext/.test(res.body), "no context name");
+});
 
-  // No value, no fragment, no length. A four-character slice is short enough
-  // that an accidental truncation would still be caught.
-  assert.ok(!res.body.includes(CONTEXT), "the value never appears");
-  assert.ok(!res.body.includes(CONTEXT.slice(0, 4)), "nor any fragment of it");
-  assert.ok(!res.body.includes(String(CONTEXT.length)), "nor its length");
-  assert.ok(!/NETLIFY_BLOBS_CONTEXT|netlifyBlobsContext/.test(res.body),
-    "nor the name it was read from");
+test("the reported route mirrors the shared helper's precedence", async () => {
+  reset();
+  assert.equal(JSON.parse((await (async () => {
+    blobs.failList = true;
+    return call({ token: TOKEN });
+  })()).body).mode, "manual", "manual credentials win when both are set");
+
+  reset();
+  delete process.env.BLOBS_SITE_ID;
+  delete process.env.BLOBS_TOKEN;
+  blobs.failList = true;
+  assert.equal(JSON.parse((await call({ token: TOKEN })).body).mode, "zero-config");
 });
 
 test("the failure body names the store so the fault is attributable", async () => {
