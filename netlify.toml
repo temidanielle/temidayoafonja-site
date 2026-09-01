@@ -43,6 +43,19 @@
   status = 404
   force = true
 
+# _build/ holds the print source and the build and QA scripts for the Career
+# Evidence Starter. Because publish is the repository root it would otherwise be
+# fetchable by URL, and starter-source.html carries the complete six-page product
+# copy: the whole free product would be readable without an email address.
+# force = true is required, since these are real files on disk and would
+# otherwise be served in preference to the rule. The files stay in the
+# repository; they are simply not served.
+[[redirects]]
+  from = "/_build/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
 [[redirects]]
   from = "/organizational-diagnostic"
   to = "/organizational-diagnostic.html"
@@ -124,6 +137,49 @@
   from = "/keep-the-proof"
   to = "/keep-the-proof.html"
   status = 200
+
+# The Career Evidence Starter. PREVIEW: the page also carries a noindex tag,
+# and nothing on the site links to it yet. Remove that tag at launch.
+[[redirects]]
+  from = "/career-evidence-starter"
+  to = "/career-evidence-starter.html"
+  status = 200
+
+[[redirects]]
+  from = "/career-evidence-starter.html"
+  to = "/career-evidence-starter"
+  status = 301
+  force = true
+
+# The Starter submission endpoint, under a clean path, rate limited.
+#
+# Same reasoning as the Career Decisions rule below, and the same numbers. The
+# function has its own limiter, ten per hour per salted IP hash, but it is built
+# on Netlify Blobs and is deliberately fail-open. Blobs has been failing
+# site-wide since 2026-08-20, so that limiter currently does nothing and this
+# endpoint would otherwise launch with no limit at all on a path that creates
+# mailing-list subscribers.
+#
+# This one is enforced by Netlify itself and depends on nothing this site
+# configures, so it holds whether or not Blobs recovers.
+[[redirects]]
+  from = "/api/career-evidence-starter-subscribe"
+  to = "/.netlify/functions/career-evidence-starter-subscribe"
+  status = 200
+  # Five submissions per 180 seconds from one address. A real visitor submits
+  # once; five leaves room for a retry after a network error and for two people
+  # behind one office address. No action is declared, so the default applies and
+  # an exceeded limit is refused with 429 rather than rewritten to a page, which
+  # is right for a path only ever reached by the form's fetch. The page already
+  # maps 429 to its own message.
+  #
+  # This sub-table must stay last in this rule. In TOML every key after it
+  # belongs to it, so a key added below would silently land inside the rate
+  # limit instead of on the redirect.
+  [redirects.rate_limit]
+    window_limit = 5
+    window_size = 180
+    aggregate_by = ["domain", "ip"]
 
 # The Career Decision Evidence Check. /career-decisions is the permanent URL and
 # is the only form that should ever accumulate authority, so the .html form is
@@ -230,3 +286,17 @@
   [headers.values]
     Content-Security-Policy = "script-src 'self' 'unsafe-inline' https://plausible.io"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+# /resources/ holds delivered lead-magnet files. These MUST serve: the download
+# link in the Kit delivery email points at one of them, so there is deliberately
+# no redirect rule here, only a header.
+#
+# The filename carries a random token so the URL cannot be guessed from the
+# product name, and this header keeps it out of search results even if it is
+# shared publicly. That is lead-magnet gating, not access control: anyone holding
+# the link can open it. True per-subscriber gating would need signed expiring
+# URLs and a token store, which is not warranted for a free resource.
+[[headers]]
+  for = "/resources/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
