@@ -85,6 +85,27 @@ def compress(d, line_spacing=1.18, after_scale=0.80):
             pf.space_before = Pt(round(pf.space_before.pt*after_scale,1))
     return d
 
+def pairlist(d, items, indent="—  ", gap="        ", after=4, budget=78):
+    """Lay short bullet items several to a line, packed by width.
+
+    Every item is kept verbatim; nothing is removed, reworded or reordered,
+    and neither type size nor leading changes. This reclaims the unused
+    right-hand part of a short-bullet line, which is what keeps the Shorts
+    editor brief to two pages. The width budget is measured against the
+    inspection renderer's font, which is wider than Calibri, so Word fits at
+    least as much per line and never less."""
+    lines, cur = [], []
+    for it in items:
+        trial = cur + [it]
+        width = sum(len(indent) + len(x) for x in trial) + len(gap) * (len(trial) - 1)
+        if cur and width > budget:
+            lines.append(cur); cur = [it]
+        else:
+            cur = trial
+    if cur: lines.append(cur)
+    for group in lines:
+        keep(P(d, gap.join(indent + x for x in group), after=after))
+
 # ------------------------------------------------- 1. teleprompter DOCX + TXT
 d=newdoc(True)
 head(d,DECK_TITLE,"Video 1  ·  Teleprompter script with slide markers",
@@ -303,6 +324,19 @@ compress(d)
 d.save(os.path.join(LF,"Video_1_EDITOR_ONLY_HIT_Brief_v3.0.docx"))
 print("editor brief written")
 
+# The nine working chapter lines. Defined once so the copy-ready description
+# and the reference section can never drift apart.
+CHAPTERS=[("00:00","Change Jobs Without Starting Over"),
+ ("01:00","What My Career Shifts Taught Me"),
+ ("02:00","Look Beyond Job Titles"),
+ ("02:25","Three Questions That Reveal Transferable Skills"),
+ ("03:45","Translate Your Impact"),
+ ("05:25","Preserve Career Evidence Early"),
+ ("07:20","Three Questions Before Your Next Move"),
+ ("08:10","Capability Formation Field Kit"),
+ ("08:40","Is Your Job Making You Less Marketable?")]
+CHAPTER_LINES=["%s %s"%(t,c) for t,c in CHAPTERS]
+
 # ----------------------------------------------------- 4. publishing package
 d=newdoc()
 head(d,TITLE,"Video 1  ·  Publishing package",
@@ -353,9 +387,7 @@ DESC=[
  "employer or industry changed?","",
  "🧭 CAPABILITY FORMATION FIELD KIT",
  "Complete your private Capability Position Read:", CTA_URL,"",
- "⏱️ CHAPTERS",
- "[INSERT THE WORKING CHAPTER ESTIMATES BELOW, THEN REPLACE EVERY TIMESTAMP "
- "FROM THE FINISHED EDIT]","",
+ "⏱️ CHAPTERS"]+CHAPTER_LINES+["",
  "▶️ WATCH NEXT", NEXT, "[ADD VIDEO 2 LINK WHEN LIVE]","",
  "🔗 CONNECT AND EXPLORE",
  "Website:","https://temidayoafonja.com",
@@ -365,23 +397,24 @@ DESC=[
 for para in DESC:
     keep(P(d,para if para else " ",after=7 if para else 3))
 
-H1(d,"Working chapters",before=14)
-p=P(d,"WORKING ESTIMATES — EDITOR MUST REPLACE FROM FINAL CUT. These "
-    "timestamps were estimated from the script, not measured from an edit. "
-    "Do not present them as final, and do not force the finished edit to "
-    "match them.",size=10.5,bold=True,italic=True,color=RED,after=10,
-    spacing=1.25)
+p=keep(P(d,"— END OF THE COPY-READY DESCRIPTION —",size=10,bold=True,
+       color=DIM,before=14,after=12,spacing=1.2))
+
+H1(d,"Internal note — do not paste into YouTube",before=14)
+p=P(d,"WORKING ESTIMATES — EDITOR MUST REPLACE FROM FINAL CUT",size=11,
+    bold=True,color=RED,after=6,spacing=1.25)
 shade(p,BAND_CREAM); keep(p)
-for t,c in [("00:00","Change Jobs Without Starting Over"),
- ("01:00","What My Career Shifts Taught Me"),
- ("02:00","Look Beyond Job Titles"),
- ("02:25","Three Questions That Reveal Transferable Skills"),
- ("03:45","Translate Your Impact"),
- ("05:25","Preserve Career Evidence Early"),
- ("07:20","Three Questions Before Your Next Move"),
- ("08:10","Capability Formation Field Kit"),
- ("08:40","Is Your Job Making You Less Marketable?")]:
-    keep(P(d,"%s   %s"%(t,c),size=11,after=4))
+p=P(d,"These timestamps were estimated from the script, not measured from the "
+    "finished edit. Replace every timestamp using the finished cut before "
+    "publication. Do not force the edit to match these estimates.",size=10.5,
+    bold=True,italic=True,color=RED,after=10,spacing=1.25)
+shade(p,BAND_CREAM); keep(p)
+
+H1(d,"Working chapters — reference copy",before=14)
+keep(P(d,"Identical to the nine chapter lines inside the description above.",
+       size=10.5,italic=True,color=DIM,after=8))
+for line in CHAPTER_LINES:
+    keep(P(d,line,size=11,after=4))
 
 H1(d,"Pinned comment",before=14)
 for para in ["Before your next move, answer these three questions:",
@@ -504,11 +537,10 @@ H1(d,"How these are produced",before=14)
 keep(P(d,"These are separately recorded 9:16 Shorts. They are NOT excerpts cut "
        "from the long-form video.",bold=True,after=10))
 P(d,"Each Short must have:",after=6)
-for x in ["an immediate verbal hook;","a corresponding on-screen hook;",
-          "meaningful visual movement;","accurate burned-in captions;",
-          "restrained editorial pacing;",
-          "Video 1 added as the YouTube Related Video when available."]:
-    keep(P(d,"—  "+x,after=4))
+pairlist(d,["an immediate verbal hook;","a corresponding on-screen hook;",
+            "meaningful visual movement;","accurate burned-in captions;",
+            "restrained editorial pacing;",
+            "Video 1 added as the YouTube Related Video when available."])
 
 def short(label,role,onscreen,body):
     H1(d,label,before=14)
@@ -554,17 +586,16 @@ short("SHORT 4","Practical test / action","LOOK UNDER THE TITLE",
 
 H1(d,"All Shorts — visual boundaries",before=14)
 P(d,"Do not use:",after=5)
-for x in ["hyperactive zooming;","fake shock expressions;",
+pairlist(d,["hyperactive zooming;","fake shock expressions;",
  "red warning graphics;","generic office B-roll;","stock résumé footage;",
  "clocks or anniversary imagery;","literal luggage;",
  "animated career ladders;","employer logos;","AI-style animated icons;",
  "trendy caption templates;","individual words bouncing constantly;",
- "flashy transitions."]:
-    keep(P(d,"—  "+x,after=3))
+ "flashy transitions."],after=3)
 keep(P(d,"Keep captions accurate, large, mobile-safe, restrained and "
        "consistent with the deep navy, warm cream and muted-gold system.",
        before=6,after=8,spacing=1.25))
-compress(d)
+compress(d, 1.18, 0.62)
 d.save(os.path.join(SH,"Video_1_Shorts_EDITOR_ONLY_HIT_Brief.docx"))
 
 # ---------------------------------------------------------------- 7. README
