@@ -27,8 +27,11 @@ Career Decision Evidence Check to Videos 3, 5, 11, 17, 18 and 21, states
 "publish only when the page is live and usable," and marked Video 3 a **hard
 publication hold until the page is live**. That hold is now lifted.
 
-Worth one look before either video publishes: that the page loads for a
-signed-out visitor, not only for someone logged in or holding a preview link.
+**Still required before Video 3 is uploaded or scheduled:** one signed-out
+production check of https://temidayoafonja.com/career-decisions — that it loads
+for a visitor who is not signed in and is not holding a preview link. This is
+Temidayo's check to run; it is recorded in Video 3's README, publishing package
+and editor brief. The same check is worth running before Video 5 publishes.
 
 ### Other standing gates
 
@@ -46,7 +49,7 @@ signed-out visitor, not only for someone logged in or holding a preview link.
 |---|---|---|---|
 | 1 | built | — | **Option A vs B not selected** — open |
 | 2 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. rebuild approved and LOCKED**, commit `d6883dd` | final, approved |
-| 3 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. rebuild built — awaiting Temidayo's approval** | Final A approved; Final B archived |
+| 3 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. rebuild approved and LOCKED**, commit `c961b63` | Final A approved; Final B archived |
 | 4 | approved and locked | **approved and locked** | approved |
 | 5 | approved and locked | **approved and locked** | approved |
 | 6 | approved and locked | **approved and locked** | task closed — finalising in Canva |
@@ -71,7 +74,20 @@ timestamps from the finished edit before publication. Greater precision now
 would be false precision, since the new opening and Temidayo's delivery will
 change the timing.
 
-### Packaging convention — adopted from Video 3
+Video 3 is locked at commit `c961b63`: `deliverables/video-3-slides/hit-final/`.
+108 spoken paragraphs, 1,205 words, 13 slide markers mapping to the unchanged
+13-slide deck. Four standalone Shorts, and editor instruction held in two
+clearly labelled EDITOR ONLY briefs, out of every recording document.
+
+The approved archive is `Video_3_HIT_FINAL_Recording_and_Shorts_Package.zip`,
+thirteen user-facing files, SHA-256
+`2455a0d08105e3148215191e62ead6204c8e4cdf896525592a2983b8c14ea177`.
+
+**Video 3's working chapter timestamps are estimates**, on the same terms as
+Video 2's. The editor replaces them with actual timestamps from the finished
+edit before publication.
+
+### Packaging convention — approved, applies to future packages
 
 Recording-package archives are built from an **explicit allowlist**, never from
 a directory walk. Build scripts, QA utilities and source text are kept beside
@@ -81,6 +97,9 @@ the package, never inside it.
 file in it. It does not hash itself. The archive's own SHA-256 lives in a
 sibling file, `<archive-name>.zip.sha256`, so the copy of `SHA256SUMS.txt`
 inside the archive is byte-identical to the one outside it.
+
+Approved by Temidayo on 1 September 2026 and to be used for every package from
+here on.
 
 Video 2's package predates this and carries the older convention, where the
 on-disk `SHA256SUMS.txt` has a trailing archive-hash line the archived copy
@@ -93,13 +112,6 @@ title and conversational opening standard**, with Videos 4 to 8 as the approved
 reference set. Video 2's H.I.T. rebuild follows the same first-three-seconds
 discipline.
 
-Video 3's H.I.T. rebuild is built at `deliverables/video-3-slides/hit-final/`
-and awaits approval. 108 spoken paragraphs, 1,205 words, 13 slide markers
-mapping to the unchanged 13-slide deck. Four standalone Shorts, and editor
-instruction held in two clearly labelled EDITOR ONLY briefs, out of every
-recording document. Its working chapter timestamps are estimates on the same
-terms as Video 2's, and are not to be recalculated before recording.
-
 **Slide wording — reviewed and intentionally retained.** Slides 5 and 6 use the
 conceptual heading "Name what the work built." The spoken script addresses the
 viewer directly with "Name what your work built." No slide change is required.
@@ -110,8 +122,12 @@ conversational.
 
 ### Next
 
-Temidayo's review of the Video 3 H.I.T. package. No further Video 3 file is to
-be modified until then.
+No Video 3 revision is required unless Temidayo explicitly reopens it.
+
+Nothing is queued for build. What remains open across the series is the
+Video 7 and Video 8 Canva thumbnail exports, the Video 1 thumbnail selection,
+and Temidayo's signed-out check of the Career Decision Evidence Check page
+before Video 3 or Video 5 is scheduled.
 
 ---
 
