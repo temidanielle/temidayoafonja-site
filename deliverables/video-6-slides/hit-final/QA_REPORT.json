@@ -74,7 +74,9 @@
    215
   ],
   "status": "PASSED",
-  "caveat": "The named canonical .txt was not uploaded. This comparison is against the recorded copy of the same message, so it proves the package matches what the session received; it cannot rule out a difference from a file held elsewhere."
+  "caveat": "The named canonical .txt was not uploaded. This comparison is against the recorded copy of the same message, so it proves the package matches what the session received; it cannot rule out a difference from a file held elsewhere.",
+  "authoritative_check_status": "OPEN",
+  "note": "Temidayo stated Video_6_Code_Prompt_HIT_Final.txt was being uploaded, but it did not arrive: the uploads directory, the whole filesystem by name, and a content search for the BEGIN fence were all checked. The transcript-based comparison below stands as corroborating evidence and PASSED, but the authoritative uploaded-TXT comparison has not been run. Video 6 is not marked final."
  },
  "11_canonical_comparison_passes": true,
  "08_teleprompter_docx_equals_txt": true,
@@ -124,7 +126,7 @@
  "33_readme_lists_13_files": true,
  "36_sibling_checksum_matches": true,
  "36b_zip_sha256": "2c815849f1abcaa725b42cc8cd2143ab9fb15293283021abb77b25332880c467",
- "37_description_doc_sha256": "36ed05802a15a9927fa86f53962f3eb5094a8ccbcbc7723e3aad25c3879acda3",
+ "37_description_doc_sha256": "db08023929f08f7f6639b2d9fad26d0c787538865df13523f0cede5816e7fab2",
  "38_nothing_else_modified": true,
  "38b_unexpected": [],
  "28_29_rendered_page_counts": {
@@ -141,5 +143,28 @@
  },
  "canonical_spoken_paragraphs": 190,
  "canonical_spoken_words": 1721,
- "ALL_BOOLEAN_CHECKS_PASS": true
+ "ALL_BOOLEAN_CHECKS_PASS": true,
+ "DESCRIPTION_COPY_BOUNDARY": {
+  "status": "CORRECTED",
+  "date": "2026-09-01",
+  "issue": "The editorial emoji instruction sat under the Description heading, immediately before the public copy, where it could be caught in a paste into YouTube.",
+  "fix": "Moved above an explicit COPY-READY YOUTUBE DESCRIPTION — BEGIN marker, under an INTERNAL NOTE — DO NOT PASTE INTO YOUTUBE heading.",
+  "public_description_wording_unchanged": true,
+  "public_description_paragraphs": 36,
+  "emoji_instruction_inside_copy_ready_block": false,
+  "emoji_system_preserved": [
+   "✨ Complexity",
+   "✨ Authority",
+   "✨ Return",
+   "🧭 CAPABILITY FORMATION FIELD KIT",
+   "⏱️ CHAPTERS",
+   "▶️ WATCH NEXT",
+   "🔗 CONNECT AND EXPLORE"
+  ],
+  "scope": "Description-only document. The publishing package inside the ZIP was not touched, so no packaged file changed and the archive hash is retained."
+ },
+ "LOCK": {
+  "status": "NOT FINAL — awaiting the canonical TXT comparison",
+  "blocked_on": "Video_6_Code_Prompt_HIT_Final.txt did not arrive"
+ }
 }

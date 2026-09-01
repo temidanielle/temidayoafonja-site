@@ -383,8 +383,21 @@ same correction. In each file exactly one XML part changed, and the only
 structural delta is one added run with identical formatting plus one line break.
 The thumbnail is unchanged.
 
-**Source verification.** The named canonical file
-`Video_6_Code_Prompt_HIT_Final.txt` was **not uploaded**. The script was
+**Description-only document corrected, 1 September 2026.** The editorial emoji
+instruction sat immediately before the public copy, where a paste into YouTube
+could catch it. It now sits above an explicit `COPY-READY YOUTUBE DESCRIPTION —
+BEGIN` marker under an `INTERNAL NOTE — DO NOT PASTE INTO YOUTUBE` heading. The
+public description wording is unchanged across all 36 paragraphs and all seven
+approved emoji markers are preserved inside the copy-ready block. Corrected
+document SHA-256 `db08023929f08f7f6639b2d9fad26d0c787538865df13523f0cede5816e7fab2`.
+The document sits outside the ZIP, so **no packaged file changed and the archive
+hash is retained**.
+
+**Source verification — still OPEN.** The named canonical file
+`Video_6_Code_Prompt_HIT_Final.txt` has **not arrived**. Temidayo stated it was
+being uploaded on 1 September; the uploads directory, the whole filesystem by
+name and a content search for the BEGIN fence were all checked and it is not
+present. The script was
 extracted programmatically from the session's recorded copy of the brief — not
 retyped — and the comparison passed exactly: 190 paragraphs, 10,521 characters
 on all three sides, identical SHA-256 of the joined spoken text, all 12

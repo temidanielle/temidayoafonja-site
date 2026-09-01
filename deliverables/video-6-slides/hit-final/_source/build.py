@@ -331,14 +331,26 @@ PINNED=["Which part of your role has grown the most recently?",
  "If you want a fuller private read of what your current work is building, the "
  "Capability Formation Field Kit is here:", CTA_URL]
 
-def description_block(d, heading_before=14):
+EMOJI_NOTE=("The restrained emoji system is part of the approved standard: ✨ "
+  "teaching points, 🧭 CTA, ⏱️ chapters, ▶️ Watch Next, 🔗 Connect and Explore. "
+  "Do not remove them and do not add more.")
+
+def description_block(d, heading_before=14, upload_doc=False):
     """The copy-ready description, its end marker and the internal note.
-    Used by both the publishing package and the description-only document."""
-    H1(d,"Description",before=heading_before)
-    keep(P(d,"The restrained emoji system is part of the approved standard: ✨ "
-           "teaching points, 🧭 CTA, ⏱️ chapters, ▶️ Watch Next, 🔗 Connect and "
-           "Explore. Do not remove them and do not add more.",size=10.5,
-           italic=True,color=DIM,after=10))
+
+    upload_doc=True moves the editorial emoji instruction ABOVE an explicit
+    COPY-READY ... BEGIN marker, so nothing internal sits inside or immediately
+    before the block a person selects when pasting into YouTube."""
+    if upload_doc:
+        H1(d,"INTERNAL NOTE — DO NOT PASTE INTO YOUTUBE",before=heading_before)
+        p=P(d,EMOJI_NOTE,size=10.5,italic=True,color=RED,after=12,spacing=1.25)
+        shade(p,BAND_CREAM); keep(p)
+        p=keep(P(d,"COPY-READY YOUTUBE DESCRIPTION — BEGIN",size=11,bold=True,
+                 color=NAVY,before=14,after=12,spacing=1.2))
+        shade(p,BAND_NAVY)
+    else:
+        H1(d,"Description",before=heading_before)
+        keep(P(d,EMOJI_NOTE,size=10.5,italic=True,color=DIM,after=10))
     for para in DESC:
         keep(P(d,para if para else " ",after=7 if para else 3))
     keep(P(d,"— END OF THE COPY-READY DESCRIPTION —",size=10,bold=True,
@@ -388,7 +400,7 @@ head(d,TITLE,"Video 6  ·  YouTube description",
 H1(d,"Title",before=14); P(d,TITLE,size=12,after=10)
 H1(d,"Thumbnail",before=14); P(d,THUMB,size=12,bold=True,after=10)
 H1(d,"Primary search phrase",before=14); P(d,PRIMARY,after=10)
-description_block(d)
+description_block(d, upload_doc=True)
 H1(d,"Pinned comment",before=14)
 for para in PINNED: keep(P(d,para,after=6))
 H1(d,"Watch next",before=14); keep(P(d,NEXT,bold=True,after=8))
