@@ -255,7 +255,7 @@
   "n": 42,
   "check": "sibling ZIP checksum matches the archive",
   "result": "PASS",
-  "detail": "5dc97bb6a5eb5f7625ab4246a9d76417639aba627fb40b3b3d713e200fc98d8d"
+  "detail": "43fd6624b933d9c1da9149b2dd915fb7d598d19c46a55a5e2ef61b2c997f221f"
  },
  {
   "n": 42.1,

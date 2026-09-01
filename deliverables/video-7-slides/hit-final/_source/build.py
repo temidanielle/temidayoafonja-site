@@ -227,13 +227,13 @@ for mk,name,sl,title in MAPPING:
         if bold: r.font.color.rgb=NAVY
 P(d,"",size=6,after=2)
 keep(P(d,"Deck titles above were read back out of the corrected PPTX files "
-       "after the authorised Slide 1, 4, 5 and 12 changes were applied.",
+       "after the authorised Slide 1, 2, 4, 5, 10 and 12 changes were applied.",
        size=10.5,italic=True,color=DIM,before=6,after=8,spacing=1.25))
 
 H1(d,"Authorised slide corrections — applied",before=14)
-p=P(d,"AUTHORISED AND APPLIED. Slides 1, 4, 5 and 12 carried wording that "
-     "contradicted the approved factual framing. Text only changed; design, "
-     "typography, palette, layout and box positions are unchanged.",size=11,
+p=P(d,"AUTHORISED AND APPLIED. Slides 1, 2, 4, 5, 10 and 12 carried wording "
+     "that contradicted the approved factual framing. Text only changed; "
+     "design, typography, palette, layout and box positions are unchanged.",size=11,
      bold=True,color=RED,after=8,spacing=1.25)
 shade(p,BAND_CREAM); keep(p)
 for sl,frm,to in [
@@ -241,6 +241,11 @@ for sl,frm,to in [
   "BUILDING WHILE OPERATING"),
  ("Slide 1 (lower)","YOU WERE THE BEFORE.",
   "THE INFRASTRUCTURE / WAS STILL MATURING."),
+ ("Slide 2 (headline)","FOUNDATIONAL WORK HAS NO PRIOR STATE.",
+  "FOUNDATIONAL WORK CAN LOSE ITS “BEFORE.”"),
+ ("Slide 2 (sub-copy)","The instrument that would have recorded it / did not "
+  "exist yet.",
+  "Once the mechanism works, / the starting condition becomes harder to see."),
  ("Slide 4 (title)","DOCUMENT THE ABSENCE / YOU WALKED INTO.",
   "RECONSTRUCT THE STARTING CONDITION"),
  ("Slide 4 (sub-copy)","two paragraphs of absence framing",
@@ -248,6 +253,8 @@ for sl,frm,to in [
  ("Slide 5 (title)","WHAT DID NOT EXIST?","WHAT WAS STILL MATURING?"),
  ("Slide 5 (list)","eight absence claims",
   "the seven approved still-maturing categories, sentence case"),
+ ("Slide 10 (BEFORE row)","What did not exist.",
+  "What was incomplete, inconsistent or difficult?"),
  ("Slide 12 (title)","HOW TO EXPLAIN A / NONLINEAR CAREER / WITHOUT LOOKING / "
   "UNFOCUSED","HOW TO EXPLAIN YOUR / CAREER CHANGE")]:
     keep(P(d,sl,size=11,bold=True,color=NAVY,before=8,after=3))
@@ -259,10 +266,10 @@ keep(P(d,"Slide 5's list dropped from eight items to seven. The item boxes "
        "divider rule were removed. Every line was measured against the real "
        "embedded fonts before the change was applied.",size=10.5,color=DIM,
        before=6,after=8,spacing=1.25))
-keep(P(d,"Reveal frames corrected: 1, 2 (Slide 1); 8, 9 (Slide 4); 10, 11 "
-       "(Slide 5); 24 (Slide 12). All seventeen other reveal frames are "
-       "byte-identical. Main slides 2, 3, 6, 7, 8, 9, 10 and 11 are "
-       "byte-identical.",bold=True,after=10,spacing=1.25))
+keep(P(d,"Reveal frames corrected: 1, 2 (Slide 1); 4 (Slide 2); 8, 9 "
+       "(Slide 4); 10, 11 (Slide 5); 20, 21, 22 (Slide 10); 24 (Slide 12). "
+       "All thirteen other reveal frames are byte-identical. Main slides 3, 6, "
+       "7, 8, 9 and 11 are byte-identical.",bold=True,after=10,spacing=1.25))
 
 H1(d,"First 30 seconds — H.I.T.",before=14)
 P(d,"H = Hook. I = Interest. T = Trust. One audiovisual unit: immediate human "
@@ -347,7 +354,7 @@ keep(P(d,"Do not add the Capability Formation Field Kit or the Career "
 keep(P(d,"Watch next: %s  (Video 4)"%NEXT,bold=True,after=5))
 keep(P(d,"Do not leave Subscribe as the only end-screen element.",bold=True,
        color=RED,before=4,after=8))
-compress(d, 1.15, 0.62)
+compress(d, 1.14, 0.56)
 d.save(os.path.join(LF,"Video_7_EDITOR_ONLY_HIT_Brief_v2.0.docx"))
 print("editor brief written")
 
@@ -608,13 +615,15 @@ R=["VIDEO 7 — H.I.T. FINAL RECORDING PACKAGE","",
  "                   OUTSIDE this package ZIP.","",
  "Verified in the",
  "live files:        12 main slides, 24 reveal-build frames.","",
- "Slide corrections: Slides 1, 4, 5 and 12 carried wording that contradicted",
- "                   the approved factual framing and were corrected under",
- "                   explicit authorisation. Text only; design, typography,",
- "                   palette, layout and box positions unchanged.",
- "                   Reveal frames corrected: 1, 2, 8, 9, 10, 11, 24.",
- "                   Main slides 2, 3, 6, 7, 8, 9, 10, 11 and the other",
- "                   seventeen reveal frames are byte-identical.",
+ "Slide corrections: Slides 1, 2, 4, 5, 10 and 12 carried wording that",
+ "                   contradicted the approved factual framing and were",
+ "                   corrected under explicit authorisation.",
+ "                   Text only; design, typography, palette, layout and box",
+ "                   positions unchanged.",
+ "                   Reveal frames corrected: 1, 2, 4, 8, 9, 10, 11, 20,",
+ "                   21, 22, 24.",
+ "                   Main slides 3, 6, 7, 8, 9 and 11 and the other thirteen",
+ "                   reveal frames are byte-identical.",
  "Thumbnail:         UNCHANGED.","",
  "-"*70,"","WHAT EACH FILE IS","",
  "LONG_FORM/","",
@@ -663,7 +672,7 @@ R+=["  README_FINAL.txt","  SHA256SUMS.txt","",
  "-"*70,"","WHAT WAS NOT CHANGED","",
  "Every website file, every product, the approved thumbnail and every other",
  "video are unchanged. The only visual changes in this pass are the",
- "authorised Slide 1, 4, 5 and 12 text corrections and their matching reveal",
+ "authorised Slide 1, 2, 4, 5, 10 and 12 text corrections and their matching",
  "frames.",""]
 open(os.path.join(ROOT,"README_FINAL.txt"),"w").write("\n".join(R))
 

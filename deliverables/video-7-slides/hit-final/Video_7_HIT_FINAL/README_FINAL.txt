@@ -32,13 +32,15 @@ document:          Video_7_YouTube_Description_HIT.docx, created separately
 Verified in the
 live files:        12 main slides, 24 reveal-build frames.
 
-Slide corrections: Slides 1, 4, 5 and 12 carried wording that contradicted
-                   the approved factual framing and were corrected under
-                   explicit authorisation. Text only; design, typography,
-                   palette, layout and box positions unchanged.
-                   Reveal frames corrected: 1, 2, 8, 9, 10, 11, 24.
-                   Main slides 2, 3, 6, 7, 8, 9, 10, 11 and the other
-                   seventeen reveal frames are byte-identical.
+Slide corrections: Slides 1, 2, 4, 5, 10 and 12 carried wording that
+                   contradicted the approved factual framing and were
+                   corrected under explicit authorisation.
+                   Text only; design, typography, palette, layout and box
+                   positions unchanged.
+                   Reveal frames corrected: 1, 2, 4, 8, 9, 10, 11, 20,
+                   21, 22, 24.
+                   Main slides 3, 6, 7, 8, 9 and 11 and the other thirteen
+                   reveal frames are byte-identical.
 Thumbnail:         UNCHANGED.
 
 ----------------------------------------------------------------------
@@ -130,5 +132,5 @@ WHAT WAS NOT CHANGED
 
 Every website file, every product, the approved thumbnail and every other
 video are unchanged. The only visual changes in this pass are the
-authorised Slide 1, 4, 5 and 12 text corrections and their matching reveal
+authorised Slide 1, 2, 4, 5, 10 and 12 text corrections and their matching
 frames.

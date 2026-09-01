@@ -99,8 +99,11 @@ def render(pptx_path, indices, png_path, scale=110):
             T = ((sh.top or 0) + dy) / EMU_IN
             Wd = (sh.width or 0) / EMU_IN
             Ht = (sh.height or 0) / EMU_IN
-            # solid-filled shapes with no text are rules / bands: draw them
-            if not sh.has_text_frame:
+            # Solid-filled shapes with no TEXT are rules and bands: draw them.
+            # Testing has_text_frame alone is wrong -- auto-shapes report True,
+            # so a navy band was skipped and the cream headline sitting on it
+            # rendered invisibly against the cream page.
+            if not (sh.has_text_frame and sh.text_frame.text.strip()):
                 fill_hex = None
                 try:
                     sp = sh._element.find(".//" + q("solidFill"))
