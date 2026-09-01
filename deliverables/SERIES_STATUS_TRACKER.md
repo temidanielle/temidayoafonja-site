@@ -50,7 +50,7 @@ and editor brief. The same check is worth running before Video 5 publishes.
 | 1 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. rebuild built — awaiting Temidayo's approval** | **Option A vs B not selected** — open |
 | 2 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. rebuild approved and LOCKED**, commit `d6883dd` | final, approved |
 | 3 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. rebuild approved and LOCKED**, commit `c961b63` | Final A approved; Final B archived |
-| 4 | approved and locked | **approved and locked** | approved |
+| 4 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. rebuild built — awaiting Temidayo's approval** | approved |
 | 5 | approved and locked | **approved and locked** | approved |
 | 6 | approved and locked | **approved and locked** | task closed — finalising in Canva |
 | 7 | approved and closed | **approved and locked** | **outstanding** — approved Canva export carrying `MAKE INVISIBLE WORK VISIBLE` |
@@ -95,6 +95,24 @@ labelled EDITOR ONLY briefs, out of every recording document. It is a
 **replacement** package: the currently published Video 1 and its published
 description stay untouched until the replacement is recorded, edited, reviewed
 and uploaded.
+
+Video 4's H.I.T. rebuild is built at `deliverables/video-4-slides/hit-final/`
+and awaits approval. 124 spoken paragraphs, 1,322 words, 11 slide markers
+mapping to the unchanged 11-slide deck; the reveal deck (26 frames) is
+unchanged. Four standalone Shorts, and editor instruction held in two clearly
+labelled EDITOR ONLY briefs.
+
+**This supersedes Video 4's earlier locked script.** Videos 4 to 8 were locked
+at commit `de4363c` with Video 4 at 1,221 words. Temidayo instructed a full
+H.I.T. rebuild on 1 September 2026; the new package replaces that script for
+Video 4 only. Videos 5 to 8 remain locked at `de4363c` and are untouched.
+
+**Fact boundary carried into every Video 4 document.** The recurring "cat with
+nine lives" description is established — one of Temidayo's senior-manager
+friends at EY used to joke that she was a "cat with nine lives". The original
+conversation that first prompted it is **not** established, is not invented
+anywhere in the package, and no cat imagery, animation, sound or reenactment is
+permitted.
 
 Video 1's public title and on-screen deck title differ **intentionally** —
 "How to Change Jobs Without Starting Your Career Over" versus "How I Changed
