@@ -1,0 +1,145 @@
+{
+ "01_main_slide_count": 12,
+ "02_reveal_frame_count": 23,
+ "01b_main_is_12": true,
+ "02b_reveal_is_23": true,
+ "03_pre_change_slide12_title": [
+  "HOW TO PROVE THE",
+  "VALUE OF WORK",
+  "THAT HAD NO BLUEPRINT"
+ ],
+ "04_slides_1_to_11_byte_identical": true,
+ "04b_main_parts_changed": [
+  "ppt/slides/slide12.xml"
+ ],
+ "06_only_one_reveal_frame_changed": true,
+ "06b_reveal_parts_changed": [
+  "ppt/slides/slide23.xml"
+ ],
+ "05_slide12_title_corrected": true,
+ "06c_reveal23_title_corrected": true,
+ "05b_slide12_delta_is_one_run_and_one_break": true,
+ "06d_reveal23_delta_is_one_run_and_one_break": true,
+ "07_thumbnail_unchanged": true,
+ "SOURCE_VERIFICATION": {
+  "named_canonical_file": "Video_6_Code_Prompt_HIT_Final.txt",
+  "named_file_uploaded": false,
+  "source_used": "The session's machine-recorded copy of Temidayo's brief, extracted programmatically between the BEGIN/END APPROVED VIDEO 6 SCRIPT fences. Not retyped, not normalised.",
+  "recorded_copies_found": 1,
+  "source_blocks": 202,
+  "source_markers": 12,
+  "source_spoken_paragraphs": 190,
+  "source_spoken_words": 1721,
+  "teleprompter_minus_markers_equals_source": true,
+  "reading_script_equals_source": true,
+  "marker_names_match": true,
+  "marker_positions_match": true,
+  "characters": [
+   10521,
+   10521,
+   10521
+  ],
+  "sha256_joined_spoken_text": "90eddfaff79fc7470abe1f39af584affe1c9c44bb7eaa5b270154b02e896b64e",
+  "sha256_identical_across_all_three": true,
+  "per_character_class": {
+   "apostrophe": [
+    1,
+    1,
+    1
+   ],
+   "left_quote": [
+    3,
+    3,
+    3
+   ],
+   "right_quote": [
+    3,
+    3,
+    3
+   ],
+   "em_dash": [
+    3,
+    3,
+    3
+   ],
+   "ellipsis": [
+    0,
+    0,
+    0
+   ]
+  },
+  "capital_letters": [
+   215,
+   215,
+   215
+  ],
+  "status": "PASSED",
+  "caveat": "The named canonical .txt was not uploaded. This comparison is against the recorded copy of the same message, so it proves the package matches what the session received; it cannot rule out a difference from a file held elsewhere."
+ },
+ "11_canonical_comparison_passes": true,
+ "08_teleprompter_docx_equals_txt": true,
+ "09_reading_docx_equals_txt": true,
+ "10_teleprompter_minus_markers_equals_reading": true,
+ "12_markers_ordered_and_mapped": true,
+ "12b_marker_count_is_12": true,
+ "13_exactly_four_short_docs": true,
+ "13b_short_filenames": [
+  "Video_6_Short_1_Workload_Grows_Faster.docx",
+  "Video_6_Short_2_Accountability_Not_Authority.docx",
+  "Video_6_Short_3_More_Scope_Was_It_Growth.docx",
+  "Video_6_Short_4_What_Comes_Off_Your_Plate.docx"
+ ],
+ "14_shorts_free_of_editor_directions": true,
+ "14b_offending": {},
+ "15_editor_docs_labelled": true,
+ "16_proof_boundary_bounded": true,
+ "16b_no_invented_employer_role_timeline": true,
+ "16c_offending": {},
+ "17_no_retention_or_turnover_metric": true,
+ "17b_offending": {},
+ "18_no_other_cta_leak": true,
+ "18b_offending": {},
+ "19_fieldkit_is_sole_cta": true,
+ "20_video7_title_everywhere_watch_next": true,
+ "21_no_old_video7_title_outside_the_correction_record": true,
+ "21c_editor_brief_carries_the_from_to_record": true,
+ "21d_stale_title_locations": [],
+ "21b_no_old_title_on_corrected_slides": true,
+ "22_no_unsafe_evidence_advice": true,
+ "23_emoji_system_retained": true,
+ "24_chapters_inline_in_description": true,
+ "25_no_insert_placeholder": true,
+ "26_warning_outside_public_copy": true,
+ "27_description_doc_matches_publishing": true,
+ "27b_description_doc_outside_zip": true,
+ "31_zip_file_count": 13,
+ "31b_zip_count_is_13": true,
+ "32_no_source_or_python_in_zip": true,
+ "32b_no_description_doc_in_zip": true,
+ "32c_zip_integrity": true,
+ "34_sums_entry_count": 12,
+ "34b_sums_has_12_entries": true,
+ "34c_sums_no_self_or_zip": true,
+ "35_every_listed_hash_matches": true,
+ "33_readme_lists_13_files": true,
+ "36_sibling_checksum_matches": true,
+ "36b_zip_sha256": "2c815849f1abcaa725b42cc8cd2143ab9fb15293283021abb77b25332880c467",
+ "37_description_doc_sha256": "36ed05802a15a9927fa86f53962f3eb5094a8ccbcbc7723e3aad25c3879acda3",
+ "38_nothing_else_modified": true,
+ "38b_unexpected": [],
+ "28_29_rendered_page_counts": {
+  "Video6ReadingScriptnomarkers_H": 13,
+  "Video6TeleprompterScriptwithsl": 14,
+  "Video_6_EDITOR_ONLY_HIT_Brief_": 4,
+  "Video_6_Publishing_Package_HIT": 4,
+  "Video_6_Short_1_Workload_Grows": 1,
+  "Video_6_Short_2_Accountability": 1,
+  "Video_6_Short_3_More_Scope_Was": 1,
+  "Video_6_Short_4_What_Comes_Off": 1,
+  "Video_6_Shorts_EDITOR_ONLY_HIT": 2,
+  "Video_6_YouTube_Description_HI": 3
+ },
+ "canonical_spoken_paragraphs": 190,
+ "canonical_spoken_words": 1721,
+ "ALL_BOOLEAN_CHECKS_PASS": true
+}
