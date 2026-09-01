@@ -1,0 +1,29 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1350px;overflow:hidden}
+:root{--cream:#F5F0E8;--navy:#0F2347}
+.stage{width:1080px;height:1350px;position:relative;overflow:hidden;
+  background:
+    radial-gradient(120% 85% at 50% 22%, #FBF8F2 0%, #F5F0E8 52%, #EFE8DC 100%);}
+/* a barely-there floor so the sheets sit in space rather than float on flat colour */
+.stage::after{content:'';position:absolute;left:0;right:0;bottom:0;height:300px;
+  background:linear-gradient(to bottom, rgba(15,35,71,0) 0%, rgba(15,35,71,.045) 100%);}
+/* height:auto is load-bearing: the width and height attributes are
+   presentation hints, so without it both sheets render at their intrinsic
+   1165px height and the aspect ratio is wrong. */
+.sheet{position:absolute;display:block;height:auto;border-radius:3px;}
+/* page 5, behind: offset up and right, tilted, so the reader can see this is a
+   real multi-page worksheet rather than a single cover */
+.back{width:566px;left:474px;top:206px;transform:rotate(4.2deg);transform-origin:50% 50%;
+  box-shadow:0 26px 56px rgba(15,35,71,.16), 0 4px 12px rgba(15,35,71,.10);
+  border:1px solid rgba(15,35,71,.09);}
+/* the cover, front and upright so it stays legible in a feed */
+.front{width:648px;left:118px;top:330px;
+  box-shadow:0 44px 90px rgba(15,35,71,.22), 0 10px 26px rgba(15,35,71,.13), 0 2px 5px rgba(15,35,71,.08);
+  border:1px solid rgba(15,35,71,.10);}
+</style></head><body>
+<div class="stage">
+  <img class="sheet back"  src="/career-evidence-starter-inside.png" alt="" width="900" height="1165">
+  <img class="sheet front" src="/career-evidence-starter-cover.png"  alt="" width="900" height="1165">
+</div>
+</body></html>
