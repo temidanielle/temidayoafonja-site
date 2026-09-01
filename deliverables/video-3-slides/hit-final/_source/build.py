@@ -66,8 +66,25 @@ def head(d,title,sub,note=None):
     P(d,sub,size=11,color=DIM,after=6,spacing=1.1)
     if note: P(d,note,size=10.5,italic=True,color=DIM,after=18,spacing=1.2)
 
-def H1(d,t): return keep(P(d,t,size=14,bold=True,color=NAVY,before=20,after=8),True)
-def H2(d,t): return keep(P(d,t,size=11.5,bold=True,color=NAVY,before=13,after=5),True)
+def H1(d,t,before=20):
+    return keep(P(d,t,size=14,bold=True,color=NAVY,before=before,after=8),True)
+def H2(d,t,before=13):
+    return keep(P(d,t,size=11.5,bold=True,color=NAVY,before=before,after=5),True)
+
+def compress(d, line_spacing=1.22, after_scale=0.8):
+    """Tighten one document's vertical rhythm without touching type size,
+    weight, colour or wording. Used on the long-form editor brief so its last
+    section cannot spill onto a near-empty extra page in Word."""
+    for p in d.paragraphs:
+        pf = p.paragraph_format
+        if pf.line_spacing and pf.line_spacing > line_spacing:
+            if pf.line_spacing < 1.4:          # leave recording copy alone
+                pf.line_spacing = line_spacing
+        if pf.space_after is not None:
+            pf.space_after = Pt(round(pf.space_after.pt * after_scale, 1))
+        if pf.space_before is not None and pf.space_before.pt:
+            pf.space_before = Pt(round(pf.space_before.pt * after_scale, 1))
+    return d
 
 # ------------------------------------------------- 1. teleprompter DOCX + TXT
 d=newdoc(True)
@@ -116,7 +133,7 @@ p=P(d,"This document is for the editor. It is NOT Temidayo's teleprompter and "
      color=DIM,after=16,spacing=1.25)
 shade(p,BAND_CREAM)
 
-H1(d,"Locked metadata")
+H1(d,"Locked metadata",before=14)
 for k,v in (("Title",TITLE),("Thumbnail",THUMB),("Primary CTA",CTA),
             ("CTA URL",CTA_URL),("Watch next",NEXT),
             ("Core distinction",
@@ -125,11 +142,14 @@ for k,v in (("Title",TITLE),("Thumbnail",THUMB),("Primary CTA",CTA),
     keep(P(d,"%-18s %s"%(k+":",v),size=11,after=5))
 p=P(d,"PUBLICATION GATE. Do not treat Video 3 as publication-ready until "
      "https://temidayoafonja.com/career-decisions is production-live and "
-     "usable.",size=11,bold=True,color=RGBColor(0x9B,0x2C,0x10),
+     "usable. The page is confirmed live, so the gate is currently "
+     "satisfied. One signed-out production check of the page is still "
+     "required before Video 3 is uploaded or scheduled.",
+     size=11,bold=True,color=RGBColor(0x9B,0x2C,0x10),
      before=8,after=10,spacing=1.25)
-shade(p,BAND_CREAM)
+shade(p,BAND_CREAM); keep(p)
 
-H1(d,"First 30 seconds — H.I.T.")
+H1(d,"First 30 seconds — H.I.T.",before=14)
 P(d,"H = Hook.  I = Interest.  T = Trust. The opening must work as an "
     "audiovisual unit: immediate conversational hook, meaningful visual "
     "interest, a relevant concrete reason to trust Temidayo, a clear practical "
@@ -182,7 +202,7 @@ beat("~0:29 onward",
   "No dramatic music or visual warning effect.",
   "The fuller safety boundary follows in the body."])
 
-H1(d,"Editorial rhythm after the opening")
+H1(d,"Editorial rhythm after the opening",before=14)
 P(d,"The first roughly 30 seconds may be more visually active than the "
     "remainder. Do NOT read H.I.T. as permission for constant motion.",after=10)
 P(d,"Once the viewer is inside the teaching:",after=6)
@@ -197,7 +217,7 @@ for x in ["preserve Temidayo's natural pacing;",
 P(d,"The edit should feel calm, premium, specific and editorial.",
   before=8,after=10)
 
-H1(d,"Existing slides")
+H1(d,"Existing slides",before=14)
 P(d,"The existing 13-slide Video 3 deck remains UNCHANGED. Do not add, delete, "
     "redesign or reorder slides.",after=8)
 for n,job in enumerate(["Title","Once You Leave, Access Changes",
@@ -207,15 +227,14 @@ for n,job in enumerate(["Title","Once You Leave, Access Changes",
  "The Three Checks","Decision Reading","Before You Resign",
  "Career Decision Evidence Check","Watch Next"],1):
     keep(P(d,"Slide %-3d %s"%(n,job),size=10.5,after=3))
-p=P(d,"WORDING DIFFERENCE, FLAGGED NOT CHANGED. The existing slides 5 and 6 "
-    "read “Name what THE work built”. The new spoken script says "
-    "“Name what YOUR work built”. The slides were not modified in "
-    "this pass. The spoken language is authoritative; the difference is "
-    "recorded for Temidayo's review.",size=10.5,bold=True,
-    color=RGBColor(0x9B,0x2C,0x10),before=10,after=10,spacing=1.25)
+p=P(d,"REVIEWED AND INTENTIONALLY RETAINED. Slides 5 and 6 use the "
+    "conceptual heading “Name what the work built.” The spoken script "
+    "addresses the viewer directly with “Name what your work built.” No "
+    "slide change is required.",size=10.5,bold=True,color=NAVY,
+    before=10,after=10,spacing=1.25)
 shade(p,BAND_CREAM); keep(p)
 
-H1(d,"Let the slide carry lists")
+H1(d,"Let the slide carry lists",before=14)
 P(d,"When a visual can carry factual or list information efficiently, "
     "Temidayo does not need to narrate every item. Do not add spoken lines to "
     "compensate for slide copy.",after=8)
@@ -225,7 +244,7 @@ keep(P(d,"Slide 6 — Problem / Constraint / Judgment / Outcome. Temidayo does "
        "not read every label mechanically. The slide provides the structure "
        "while the spoken script carries judgment and meaning.",after=8))
 
-H1(d,"Safety and evidence boundaries")
+H1(d,"Safety and evidence boundaries",before=14)
 keep(P(d,"Preserve the safety boundary exactly as written. Do not visually or "
        "editorially imply that viewers should delay leaving unsafe work, "
        "harassment, discrimination or another urgent threat.",bold=True,after=8))
@@ -237,12 +256,13 @@ keep(P(d,"Keep the framing: a permitted record of the viewer's own "
        "contribution, in their own words, using information they are entitled "
        "to retain.",italic=True,after=10))
 
-H1(d,"CTA and watch next")
+H1(d,"CTA and watch next",before=14)
 keep(P(d,"One product or resource CTA only: %s — %s"%(CTA,CTA_URL),after=5))
 keep(P(d,"Do not add the Capability Formation Field Kit, Keep the Proof, the "
        "book, the newsletter or any other product.",bold=True,after=8))
 keep(P(d,"Watch next: route to %s. Use Video 1 as the intended clickable "
        "direct-video route where available."%NEXT,after=6))
+compress(d,1.18,0.80)
 d.save(os.path.join(LF,"Video_3_EDITOR_ONLY_HIT_Brief_v2.0.docx"))
 print("editor brief written")
 
@@ -319,8 +339,9 @@ for para in [
 
 H1(d,"Publication gate")
 p=keep(P(d,"Do not publish Video 3 until %s is production-live and usable."%CTA_URL,
-       size=11,bold=True,color=NAVY,after=8,spacing=1.25))
+       size=11,bold=True,color=NAVY,after=6,spacing=1.25))
 shade(p,BAND_CREAM)
+keep(P(d,"The page is confirmed live. The gate is currently satisfied. One signed-out production check of the page is still required before Video 3 is uploaded or scheduled: confirm it loads for a visitor who is not signed in and is not holding a preview link.",size=11,after=8,spacing=1.25))
 d.save(os.path.join(LF,"Video_3_Publishing_Package_HIT_v2.0.docx"))
 
 # ---------------------------------------------------------------- 5. Shorts
@@ -471,7 +492,10 @@ R=["VIDEO 3 — H.I.T. FINAL RECORDING PACKAGE","",
  "CTA URL:      %s"%CTA_URL,
  "Publication",
  "gate:         Do not publish until the Career Decision Evidence Check page",
- "              is production-live and usable.",
+ "              is production-live and usable. The page is confirmed live,",
+ "              so the gate is currently satisfied. One signed-out",
+ "              production check is still required before Video 3 is",
+ "              uploaded or scheduled.",
  "Watch next:   %s"%NEXT,"",
  "Long-form:    Revised under the H.I.T. first-30-second standard.",
  "Slides:       UNCHANGED.",
@@ -489,8 +513,8 @@ R=["VIDEO 3 — H.I.T. FINAL RECORDING PACKAGE","",
  "      The same spoken words with the slide markers removed.","",
  "  Video_3_EDITOR_ONLY_HIT_Brief_v2.0.docx",
  "      For the editor. The H.I.T. first-30-second plan, editorial rhythm",
- "      after 0:30, the existing 13-slide map, the flagged slide 5 and 6",
- "      wording difference and the safety and evidence boundaries.",
+ "      after 0:30, the existing 13-slide map, the reviewed slide 5 and 6",
+ "      wording note and the safety and evidence boundaries.",
  "      Not for the teleprompter.","",
  "  Video_3_Publishing_Package_HIT_v2.0.docx",
  "      Title, thumbnail, search language, description, working chapter",
@@ -507,11 +531,11 @@ R+=["  README_FINAL.txt","  SHA256SUMS.txt","",
  "The chapter timestamps in the publishing package are WORKING ESTIMATES",
  "derived from the script. They were not measured from an edit. The editor",
  "must replace every one of them from the finished cut before publishing.","",
- "-"*70,"","SLIDE WORDING DIFFERENCE — FLAGGED, NOT CHANGED","",
- "The existing slides 5 and 6 read “Name what THE work built”. The new",
- "spoken script says “Name what YOUR work built”. The slides were NOT",
- "modified in this pass. The spoken language is authoritative. The difference",
- "is recorded for Temidayo's review.","",
+ "-"*70,"","SLIDE WORDING — REVIEWED AND INTENTIONALLY RETAINED","",
+ "REVIEWED AND INTENTIONALLY RETAINED. Slides 5 and 6 use the conceptual",
+ "heading “Name what the work built.” The spoken script addresses the",
+ "viewer directly with “Name what your work built.” No slide change is",
+ "required.","",
  "-"*70,"","WHAT WAS NOT CHANGED","",
  "The existing Video 3 PowerPoint deck, the reveal deck, the thumbnail, the",
  "Career Decision Evidence Check page, every website file, every product and",
@@ -521,3 +545,63 @@ R+=["  README_FINAL.txt","  SHA256SUMS.txt","",
  "map to it in order, slide 1 to slide 13.",""]
 open(os.path.join(ROOT,"README_FINAL.txt"),"w").write("\n".join(R))
 print("shorts editor brief and README written")
+
+
+# ------------------------------------------- 8. checksums and the master ZIP
+# The archive is built from an explicit allowlist, never from a directory walk.
+MANIFEST=[
+ "LONG_FORM/Video3TeleprompterScriptwithslidemarkers_HIT_v2.0.docx",
+ "LONG_FORM/Video3TeleprompterScriptwithslidemarkers_HIT_v2.0.txt",
+ "LONG_FORM/Video3ReadingScriptnomarkers_HIT_v2.0.docx",
+ "LONG_FORM/Video3ReadingScriptnomarkers_HIT_v2.0.txt",
+ "LONG_FORM/Video_3_EDITOR_ONLY_HIT_Brief_v2.0.docx",
+ "LONG_FORM/Video_3_Publishing_Package_HIT_v2.0.docx",
+ "SHORTS/Video_3_Short_1_Before_You_Lose_Context.docx",
+ "SHORTS/Video_3_Short_2_Keep_Proof_Not_Files.docx",
+ "SHORTS/Video_3_Short_3_Context_Disappears_Fast.docx",
+ "SHORTS/Video_3_Short_4_Three_Questions_Before_You_Quit.docx",
+ "SHORTS/Video_3_Shorts_EDITOR_ONLY_HIT_Brief.docx",
+ "README_FINAL.txt",
+]
+SUMS="SHA256SUMS.txt"
+ZIP="/tmp/v3hit/Video_3_HIT_FINAL_Recording_and_Shorts_Package.zip"
+
+def sha256(p):
+    h=hashlib.sha256()
+    with open(p,"rb") as fh:
+        for b in iter(lambda: fh.read(1<<20), b""): h.update(b)
+    return h.hexdigest()
+
+# every allowlisted file must exist, and nothing on disk may be unaccounted for
+for m in MANIFEST:
+    assert os.path.isfile(os.path.join(ROOT,m)), "missing from build: "+m
+on_disk=set()
+for dp,dn,fn in os.walk(ROOT):
+    dn[:]=[x for x in dn if x!="__pycache__"]
+    for f in fn:
+        if f.endswith(".pyc"): continue
+        on_disk.add(os.path.relpath(os.path.join(dp,f),ROOT).replace(os.sep,"/"))
+unexpected=sorted(on_disk-set(MANIFEST)-{SUMS})
+assert not unexpected, "unexpected files in package directory: %r"%unexpected
+
+L=["# VIDEO 3 - H.I.T. FINAL RECORDING PACKAGE",
+   "# SHA-256 of the 12 user-facing files in this package.",
+   "# SHA256SUMS.txt cannot hash itself. The master ZIP cannot contain its own",
+   "# checksum either; it is published in the sibling file",
+   "# Video_3_HIT_FINAL_Recording_and_Shorts_Package.zip.sha256",""]
+for m in MANIFEST: L.append("%s  %s"%(sha256(os.path.join(ROOT,m)),m))
+open(os.path.join(ROOT,SUMS),"w").write("\n".join(L)+"\n")
+
+if os.path.exists(ZIP): os.remove(ZIP)
+with zipfile.ZipFile(ZIP,"w",zipfile.ZIP_DEFLATED) as z:
+    for m in MANIFEST+[SUMS]:
+        z.write(os.path.join(ROOT,m), "Video_3_HIT_FINAL/"+m)
+zsha=sha256(ZIP)
+open(ZIP+".sha256","w").write("%s  %s\n"%(zsha,os.path.basename(ZIP)))
+
+# build provenance is kept beside the package, never inside it
+PROV="/tmp/v3hit/_source"
+shutil.rmtree(PROV,ignore_errors=True); os.makedirs(PROV)
+for f in ("script_text.py","build.py","qa.py"):
+    shutil.copy2("/tmp/v3hit/"+f, os.path.join(PROV,f))
+print("ZIP sha256:",zsha)

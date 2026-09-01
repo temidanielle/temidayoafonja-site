@@ -4,7 +4,7 @@ Series-level record of publication gates, open decisions and outstanding
 assets. Kept here so individual video packages do not have to be reopened to
 carry a cross-cutting note.
 
-Last updated: 31 August 2026.
+Last updated: 1 September 2026.
 
 ---
 
@@ -71,6 +71,21 @@ timestamps from the finished edit before publication. Greater precision now
 would be false precision, since the new opening and Temidayo's delivery will
 change the timing.
 
+### Packaging convention — adopted from Video 3
+
+Recording-package archives are built from an **explicit allowlist**, never from
+a directory walk. Build scripts, QA utilities and source text are kept beside
+the package, never inside it.
+
+`SHA256SUMS.txt` ships inside the archive and covers every other user-facing
+file in it. It does not hash itself. The archive's own SHA-256 lives in a
+sibling file, `<archive-name>.zip.sha256`, so the copy of `SHA256SUMS.txt`
+inside the archive is byte-identical to the one outside it.
+
+Video 2's package predates this and carries the older convention, where the
+on-disk `SHA256SUMS.txt` has a trailing archive-hash line the archived copy
+does not. Video 2 is locked and is not being reopened for it.
+
 ### Standards recorded
 
 `CAPABILITY_FORMATION_YOUTUBE_STANDARDS.md` carries the **Evergreen search
@@ -85,11 +100,13 @@ instruction held in two clearly labelled EDITOR ONLY briefs, out of every
 recording document. Its working chapter timestamps are estimates on the same
 terms as Video 2's, and are not to be recalculated before recording.
 
-**Flagged for Temidayo, not changed.** The existing Video 3 slides 5 and 6 read
-"Name what **the** work built". The approved spoken script says "Name what
-**your** work built". The slides were not modified. The spoken language is
-authoritative. Changing the deck to match would be a separate, explicitly
-instructed pass.
+**Slide wording — reviewed and intentionally retained.** Slides 5 and 6 use the
+conceptual heading "Name what the work built." The spoken script addresses the
+viewer directly with "Name what your work built." No slide change is required.
+Temidayo reviewed and resolved this on 1 September 2026: the spoken wording
+addresses the individual viewer, the slide heading names the broader conceptual
+step, and slides do not change merely because spoken wording becomes more
+conversational.
 
 ### Next
 

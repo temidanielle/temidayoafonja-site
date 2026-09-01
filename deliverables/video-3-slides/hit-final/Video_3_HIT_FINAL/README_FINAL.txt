@@ -6,7 +6,10 @@ CTA:          Career Decision Evidence Check
 CTA URL:      https://temidayoafonja.com/career-decisions
 Publication
 gate:         Do not publish until the Career Decision Evidence Check page
-              is production-live and usable.
+              is production-live and usable. The page is confirmed live,
+              so the gate is currently satisfied. One signed-out
+              production check is still required before Video 3 is
+              uploaded or scheduled.
 Watch next:   How to Change Jobs Without Starting Your Career Over
 
 Long-form:    Revised under the H.I.T. first-30-second standard.
@@ -32,8 +35,8 @@ LONG_FORM/
 
   Video_3_EDITOR_ONLY_HIT_Brief_v2.0.docx
       For the editor. The H.I.T. first-30-second plan, editorial rhythm
-      after 0:30, the existing 13-slide map, the flagged slide 5 and 6
-      wording difference and the safety and evidence boundaries.
+      after 0:30, the existing 13-slide map, the reviewed slide 5 and 6
+      wording note and the safety and evidence boundaries.
       Not for the teleprompter.
 
   Video_3_Publishing_Package_HIT_v2.0.docx
@@ -76,12 +79,12 @@ must replace every one of them from the finished cut before publishing.
 
 ----------------------------------------------------------------------
 
-SLIDE WORDING DIFFERENCE — FLAGGED, NOT CHANGED
+SLIDE WORDING — REVIEWED AND INTENTIONALLY RETAINED
 
-The existing slides 5 and 6 read “Name what THE work built”. The new
-spoken script says “Name what YOUR work built”. The slides were NOT
-modified in this pass. The spoken language is authoritative. The difference
-is recorded for Temidayo's review.
+REVIEWED AND INTENTIONALLY RETAINED. Slides 5 and 6 use the conceptual
+heading “Name what the work built.” The spoken script addresses the
+viewer directly with “Name what your work built.” No slide change is
+required.
 
 ----------------------------------------------------------------------
 
