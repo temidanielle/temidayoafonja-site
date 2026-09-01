@@ -1,0 +1,1352 @@
+VIDEO 8 — H.I.T. REBUILD / FINAL RECORDING PACKAGE
+
+Build the final revised recording and production-material package for Temidayo Afonja’s YouTube Video 8.
+
+IMPORTANT:
+This is a SPOKEN-SCRIPT + EDITOR-INSTRUCTION + PUBLISHING + SHORTS update, with narrowly authorized slide corrections only.
+
+DO NOT modify:
+- any website file;
+- any product;
+- any other video;
+- the approved thumbnail asset unless separately instructed;
+- any slide beyond the specifically authorized corrections below.
+
+Before building, inspect the actual current Video 8 files and report:
+- exact main-slide count;
+- exact reveal-frame count;
+- exact current Slide 5 wording;
+- exact current CTA wording;
+- exact current Watch Next wording;
+- every reveal frame that reproduces Slide 5 or Slide 12 stale text.
+
+==================================================
+LOCKED VIDEO 8 METADATA
+==================================================
+
+Final public title:
+How to Switch Industries Without Starting Over
+
+Thumbnail:
+YOUR EXPERIENCE STILL COUNTS
+
+Primary search phrase:
+how to switch industries without starting over
+
+Primary CTA:
+Capability Formation Field Kit
+https://temidayoafonja.com/fieldkit
+
+Watch next:
+Video 9 — What to Do Before a Layoff Happens
+
+Core teaching:
+WHAT TRAVELS
+WHAT CHANGES
+WHAT I MUST EARN
+
+Core distinction:
+Changing industries does not make you entry-level at everything. It makes you new to a context.
+
+Important credibility boundary:
+Not everything transfers.
+
+==================================================
+FACTUAL SOURCE OF TRUTH — VIDEO 8
+==================================================
+
+Approved personal evidence:
+
+- Temidayo has worked across eight industries/sectors across roughly eighteen years.
+- Her career has crossed accounting/audit, cyber/privacy, people/employee experience and enterprise transformation.
+- Temidayo prepared for the CISM exam and did not pass on the first attempt.
+- This CISM example is approved as evidence that some relearning / credentialing is real when context changes.
+
+Do not invent:
+- exact exam score;
+- exact exam date;
+- exact number of attempts beyond the confirmed first non-pass;
+- a later passing result unless separately documented;
+- employer-specific details not approved;
+- confidential or proprietary industry information.
+
+Do not imply that all prior experience transfers.
+
+Use the distinction:
+Some judgment travels.
+Context does not travel for free.
+Some knowledge, exposure or credentials must genuinely be earned.
+
+==================================================
+H.I.T. FIRST-30-SECOND STANDARD
+==================================================
+
+H = Hook
+I = Interest
+T = Trust
+
+The first 30 seconds must:
+- match the title and thumbnail promise;
+- create immediate recognition;
+- use visual movement;
+- establish concrete trust quickly;
+- make clear that Temidayo is not promising that all experience transfers;
+- deliver the viewer payoff by approximately 20–30 seconds.
+
+Approved opening architecture:
+
+0:00–0:05
+HOOK
+
+Spoken:
+“Changing industries does not make you entry-level at everything. It makes you new to a context.”
+
+On-screen:
+NEW INDUSTRY ≠ STARTING OVER
+
+0:05–0:16
+TRUST + INTEREST
+
+Spoken:
+“Across nearly two decades, I’ve worked across eight industries and sectors, and I’ve had to learn the difference between what travelled with me and what I genuinely had to learn again.”
+
+Visual:
+8 INDUSTRIES + SECTORS
+then:
+WHAT TRAVELS?
+WHAT CHANGES?
+
+Do not use employer-logo montage.
+
+0:16–0:24
+TRUST BOUNDARY
+
+Spoken:
+“And sometimes the relearning was real. When I moved toward cybersecurity and privacy, I prepared for the CISM exam and didn’t pass the first time.”
+
+On-screen:
+NOT EVERYTHING TRAVELS
+
+Do not dramatize failure.
+Do not use test-score graphics.
+
+0:24–0:30
+PAYOFF
+
+Spoken:
+“So I’m going to help you separate three things: what you can carry, what the new context changes, and what you actually have to earn.”
+
+Progressive reveal:
+WHAT TRAVELS
+WHAT CHANGES
+WHAT I MUST EARN
+
+==================================================
+AUTHORIZED SLIDE CORRECTIONS
+==================================================
+
+The current deck historically contains 12 main slides and 24 reveal frames, but inspect the actual live files and report the real counts before changing anything.
+
+--------------------------------------------------
+SLIDE 5 — AUTHORIZED TEXT CORRECTION
+--------------------------------------------------
+
+The current Slide 5 contains the stale conceptual framing:
+
+“It feels like a competence gap. It is an information gap.”
+
+That wording is no longer approved.
+
+The revised factual teaching is:
+
+IT CAN FEEL LIKE A COMPETENCE GAP.
+
+SOME CONTEXT CAN BE RESEARCHED.
+
+SOME MUST BE LEARNED THROUGH EXPOSURE.
+
+Preserve the existing visual system, typography family, colors, composition and overall hierarchy.
+
+If line wrapping must change:
+- measure it;
+- render it;
+- visually inspect it;
+- use the safest readable split.
+
+Do not redesign Slide 5.
+
+Inspect reveal frames and update ONLY the corresponding stale Slide 5 wording wherever it appears.
+
+--------------------------------------------------
+SLIDE 12 — WATCH NEXT
+--------------------------------------------------
+
+Current locked Watch Next is:
+
+WHAT TO DO BEFORE A LAYOFF HAPPENS
+
+If Slide 12 or its corresponding reveal frame carries a stale prior title, AUTHORIZE a narrow title-text-only correction to:
+
+WHAT TO DO BEFORE A LAYOFF HAPPENS
+
+Preserve:
+- Watch Next label;
+- typography;
+- colors;
+- rules;
+- playlist language;
+- end-screen space;
+- all other design elements.
+
+If the current Slide 12 already matches, do not touch it.
+
+--------------------------------------------------
+NO OTHER SLIDE CHANGES
+--------------------------------------------------
+
+Slides other than Slide 5 and, only if necessary, Slide 12 are not authorized for wording or design changes.
+
+If you discover another genuine factual contradiction, STOP and report it rather than fixing it silently.
+
+==================================================
+CREATE THIS FOLDER STRUCTURE
+==================================================
+
+Video_8_HIT_FINAL/
+    LONG_FORM/
+        Video8TeleprompterScriptwithslidemarkers_HIT_v2.0.docx
+        Video8TeleprompterScriptwithslidemarkers_HIT_v2.0.txt
+        Video8ReadingScriptnomarkers_HIT_v2.0.docx
+        Video8ReadingScriptnomarkers_HIT_v2.0.txt
+        Video_8_EDITOR_ONLY_HIT_Brief_v2.0.docx
+        Video_8_Publishing_Package_HIT_v2.0.docx
+
+    SHORTS/
+        Video_8_Short_1_New_Industry_Not_Starting_Over.docx
+        Video_8_Short_2_Stop_Calling_Everything_Transferable.docx
+        Video_8_Short_3_Not_Everything_Travels.docx
+        Video_8_Short_4_Three_Columns.docx
+        Video_8_Shorts_EDITOR_ONLY_HIT_Brief.docx
+
+    README_FINAL.txt
+    SHA256SUMS.txt
+
+Also create:
+
+Video_8_HIT_FINAL_Recording_and_Shorts_Package.zip
+
+And:
+
+Video_8_HIT_FINAL_Recording_and_Shorts_Package.zip.sha256
+
+Also create a separate description-only document outside the ZIP:
+
+Video_8_YouTube_Description_HIT.docx
+
+The description-only document must contain:
+- final title;
+- thumbnail copy;
+- primary search phrase;
+- copy-ready YouTube description;
+- restrained emoji system;
+- working chapters;
+- working-estimates warning outside the public copy;
+- pinned comment;
+- Watch Next route;
+- YouTube tag field.
+
+Do not count the separate description-only document as one of the 13 ZIP files.
+
+Build the ZIP from an explicit allowlist.
+
+Do not include:
+- _source
+- Python
+- generators
+- QA utilities
+- rendered page images
+- temp files
+- hidden files
+- obsolete drafts
+- duplicate files
+
+==================================================
+DOCUMENT DESIGN
+==================================================
+
+Use the same restrained professional formatting system as the approved H.I.T. packages for Videos 1–7.
+
+Use:
+- deep navy;
+- warm cream;
+- muted gold;
+- readable teleprompter body text;
+- generous spacing;
+- no editor notes inside Temidayo’s recording copy.
+
+==================================================
+LONG-FORM TELEPROMPTER SCRIPT
+==================================================
+
+Create:
+Video8TeleprompterScriptwithslidemarkers_HIT_v2.0.docx
+Video8TeleprompterScriptwithslidemarkers_HIT_v2.0.txt
+
+The DOCX and TXT must contain the exact same spoken language.
+
+Use the approved script below EXACTLY.
+
+Do not rewrite, summarize, expand, shorten, polish or substitute wording.
+
+BEGIN APPROVED VIDEO 8 SCRIPT
+
+Changing industries does not make you entry-level at everything. It makes you new to a context.
+
+Across nearly two decades, I’ve worked across eight industries and sectors, and I’ve had to learn the difference between what travelled with me and what I genuinely had to learn again.
+
+And sometimes the relearning was real.
+
+When I moved toward cybersecurity and privacy, I prepared for the CISM exam and didn’t pass the first time.
+
+So I’m going to help you separate three things: what you can carry, what the new context changes, and what you actually have to earn.
+
+[SLIDE: New to a Context]
+
+Because there are two mistakes experienced professionals make when they think about changing industries.
+
+One is:
+
+“None of what I’ve done will count there.”
+
+The other is:
+
+“I’m experienced, so I should be able to walk straight in and operate at the same level immediately.”
+
+Neither is accurate.
+
+Some of your judgment may transfer surprisingly well.
+
+Some of your knowledge may become much less useful the moment the context changes.
+
+And some things cannot be translated at all. They have to be learned, practised or formally earned.
+
+I’m Temidayo Afonja. I help experienced professionals understand what their work has built in them, what can travel and what the next context will require from them.
+
+[SLIDE: What Actually Changes]
+
+When you enter a new industry, a lot can change without making you a beginner at everything.
+
+The language changes.
+
+The stakeholders change.
+
+The incentives change.
+
+The regulation may change.
+
+The operating rhythm changes.
+
+And the risks people are managing change.
+
+That matters because the same technically sensible recommendation can land very differently in two industries.
+
+What counts as urgent may be different.
+
+What has to be documented may be different.
+
+Who has authority may be different.
+
+The consequences of getting something wrong may be completely different.
+
+That is context.
+
+And you should respect it.
+
+But context changing does not automatically erase the judgment you formed before you arrived.
+
+So the first move is to separate three things that often get bundled together.
+
+[SLIDE: Capability Context Credential]
+
+Capability. Context. Credential.
+
+They are not the same problem, so they should not get the same solution.
+
+[SLIDE: What Travels]
+
+Capability is what remains useful when the setting changes.
+
+Not every skill.
+
+Not every process.
+
+Not every tool.
+
+I am talking about things like:
+
+Finding the real decision underneath several stated positions.
+
+Structuring a problem nobody has framed clearly yet.
+
+Recognising when the evidence does not support the conclusion being presented.
+
+Working across functions where nobody owns the whole answer.
+
+Knowing when to slow a decision down because something important has not been tested.
+
+Those forms of judgment are not automatically owned by one industry.
+
+But even here, be careful.
+
+A capability is not portable simply because you call it transferable.
+
+It has to be useful against a problem that actually exists in the destination.
+
+[SLIDE: What Must Be Relearned]
+
+Then there is context.
+
+This is where experienced people can either undersell themselves or become overconfident.
+
+The new field may have language you do not know.
+
+Different stakeholders.
+
+Different incentives.
+
+Different regulation.
+
+Different rhythms.
+
+Different risks.
+
+And some of that knowledge may be tacit.
+
+You can read about an industry for months and still not understand why a particular decision makes everyone in the room uncomfortable until you have spent enough time around the work.
+
+So I would not call all of this an information gap.
+
+Some context can be researched.
+
+Some has to be observed.
+
+Some has to be practised.
+
+And some understanding only develops after you have seen the consequences of decisions in that environment.
+
+The useful question is:
+
+What here do I genuinely need to learn again?
+
+[SLIDE: What Must Be Earned]
+
+And then there is credential.
+
+Sometimes the destination requires formal permission, certification, a licence or a specific qualification.
+
+If it is genuinely required, previous experience does not substitute for it.
+
+You earn it.
+
+Sometimes a credential is not required, but it reduces uncertainty for the person considering you.
+
+That can still be useful.
+
+And sometimes it does neither.
+
+You pursue it because earning another certificate feels more controllable than trying to persuade somebody that your existing judgment matters.
+
+I understand that instinct.
+
+But make sure you know which problem you are solving.
+
+A credential cannot fix a poorly translated capability.
+
+And another course cannot substitute for context that you actually need to experience.
+
+[SLIDE: Start From the Destination]
+
+The second move is to stop asking only:
+
+“What skills do I have?”
+
+Start with:
+
+“What problems does this industry need solved?”
+
+That changes the direction of the analysis.
+
+Instead of beginning with your CV and trying to push everything forward, begin with the destination and work backwards.
+
+What is difficult there?
+
+What is changing?
+
+What is expensive?
+
+What creates risk?
+
+What keeps showing up in industry conversations?
+
+What do the job descriptions keep asking for?
+
+Then return to your experience.
+
+Have I solved a problem shaped like this before?
+
+Not identical.
+
+Shaped like it.
+
+Have I made this kind of decision?
+
+Aligned these kinds of competing interests?
+
+Worked under a comparable constraint?
+
+Seen this pattern develop before other people recognised it?
+
+That is how you find the part of your experience that may travel.
+
+[SLIDE: Translate Do Not Recite]
+
+This is also why saying:
+
+“I’m adaptable.”
+
+“I’m strategic.”
+
+“I’m a fast learner.”
+
+does very little for you.
+
+Those are descriptions of how you would like someone to perceive you.
+
+The other person needs evidence.
+
+So instead of saying:
+
+“I’m highly transferable.”
+
+show them:
+
+Here is the kind of problem I have solved.
+
+Here is the judgment it required.
+
+Here is what happened.
+
+Here is why I think that judgment may be relevant here.
+
+And here is the part of your context that I know I still need to learn.
+
+That last sentence is important.
+
+You do not gain credibility by pretending the gap is smaller than it is.
+
+Often you gain credibility by being unusually precise about where the gap actually sits.
+
+The unit that transfers is judgment, with evidence attached.
+
+Not your old title.
+
+Not your task list.
+
+And not an adjective.
+
+[SLIDE: Bridge Evidence]
+
+The third move is to give someone a reason to believe that you can cross the gap.
+
+Because they are taking a risk.
+
+You may know that you can do the work.
+
+They have less evidence.
+
+So build bridge evidence.
+
+That might be a relevant project in your current industry that exposes you to the same kind of problem.
+
+It might be cross-functional work where you had to operate outside your own expertise.
+
+It might be research that you have turned into an actual point of view.
+
+Not:
+
+“I’ve been reading about the industry.”
+
+But:
+
+“Here is what I think is happening. Here is what I would want to understand first. And here is where my current view may still be incomplete.”
+
+It might be a non-confidential case study or work sample.
+
+It might be conversations with people who actually work in the field.
+
+And it may be a deliberate learning plan for your first ninety days.
+
+What do I need to understand immediately?
+
+Who do I need to learn from?
+
+Which assumptions from my previous context should I test rather than carry forward?
+
+What exposure do I need quickly?
+
+A good bridge does not pretend the gap does not exist.
+
+It makes the gap specific enough to manage.
+
+[SLIDE: One Page Three Columns]
+
+Here is the exercise I want you to do.
+
+One page.
+
+Three columns.
+
+WHAT TRAVELS
+
+Write down the judgment, decisions, patterns and ways of working that remain useful when the setting changes.
+
+WHAT CHANGES
+
+Write down the language, stakeholders, incentives, regulation, operating rhythm and risks you will need to understand in the new environment.
+
+WHAT I MUST EARN
+
+Write down the credential, direct exposure or practice that adjacent experience genuinely cannot replace.
+
+Do not try to make the third column empty.
+
+That is not the goal.
+
+And do not make the first column empty either.
+
+Then look at the three columns and ask:
+
+What can I credibly claim now?
+
+What can I learn before I move?
+
+And what will only become credible after I have spent time in the new context?
+
+That gives you a much more useful transition plan than:
+
+“I hope somebody gives me a chance.”
+
+And it gives you a more credible way to explain the move.
+
+Something like:
+
+“I’m new to this industry, but I’m not new to this kind of problem. Here is the evidence for what I already know how to do. And here is what I’m deliberately learning about this context.”
+
+You are not erasing your previous experience.
+
+And you are not pretending that experience gives you knowledge you have not earned.
+
+That is the balance.
+
+[SLIDE: Field Kit]
+
+If you need help doing that separation, that is what the Capability Formation Field Kit is for.
+
+It helps you examine what your work has actually formed in you, what appears portable and where you still need development, evidence or context.
+
+It will not tell you which industry to choose.
+
+And it will not remove the need to learn the field you are entering.
+
+What it can help you do is stop treating your entire career as either transferable or irrelevant.
+
+You can find it at:
+
+temidayoafonja.com/fieldkit.
+
+[SLIDE: Watch Next]
+
+And if part of the reason you are thinking about an industry move is that your current situation feels less secure than it once did, the next video is:
+
+What to Do Before a Layoff Happens.
+
+Because the best time to understand what you can carry is before somebody else decides when you have to move.
+
+END APPROVED VIDEO 8 SCRIPT
+
+==================================================
+CLEAN READING SCRIPT
+==================================================
+
+Create:
+Video8ReadingScriptnomarkers_HIT_v2.0.docx
+Video8ReadingScriptnomarkers_HIT_v2.0.txt
+
+These files must contain the EXACT SAME SPOKEN WORDS as the teleprompter script.
+
+Remove only:
+- [SLIDE: ...] markers;
+- production headings;
+- metadata;
+- editor directions.
+
+Verify programmatically that removing slide markers from the teleprompter produces the same spoken sequence as the reading script.
+
+==================================================
+SLIDE-MARKER MAPPING
+==================================================
+
+If the script marker names do not exactly match the live PowerPoint titles, position-mapping is acceptable.
+
+Do not rewrite the approved script to force name equality.
+
+Map:
+Marker 1 → Slide 1
+Marker 2 → Slide 2
+...
+Marker 12 → Slide 12
+
+Create an explicit mapping table in the EDITOR ONLY brief:
+SCRIPT MARKER → SLIDE NUMBER → ACTUAL LIVE SLIDE TITLE AFTER AUTHORIZED CORRECTIONS
+
+Validate:
+- 12 markers;
+- 12 slides;
+- one-to-one order;
+- no duplicate mapping;
+- no missing slide;
+- no reordered slide.
+
+==================================================
+LONG-FORM EDITOR-ONLY DOCUMENT
+==================================================
+
+Create:
+Video_8_EDITOR_ONLY_HIT_Brief_v2.0.docx
+
+Clearly label:
+EDITOR ONLY
+VIDEO 8
+How to Switch Industries Without Starting Over
+
+Locked metadata:
+Title: How to Switch Industries Without Starting Over
+Thumbnail: YOUR EXPERIENCE STILL COUNTS
+CTA: Capability Formation Field Kit
+Watch next: What to Do Before a Layoff Happens
+
+FIRST 30 SECONDS — H.I.T.
+
+0:00–0:05
+Spoken:
+“Changing industries does not make you entry-level at everything. It makes you new to a context.”
+
+On-screen:
+NEW INDUSTRY ≠ STARTING OVER
+
+0:05–0:16
+Spoken:
+“Across nearly two decades, I’ve worked across eight industries and sectors…”
+
+On-screen:
+8 INDUSTRIES + SECTORS
+
+Then:
+WHAT TRAVELS?
+WHAT CHANGES?
+
+No employer-logo montage.
+
+0:16–0:24
+Spoken:
+“When I moved toward cybersecurity and privacy, I prepared for the CISM exam and didn’t pass the first time.”
+
+On-screen:
+NOT EVERYTHING TRAVELS
+
+Visual tone:
+calm, factual, non-dramatic.
+
+Do not show:
+- fake exam result;
+- score;
+- failed stamp;
+- sensational failure imagery.
+
+0:24–0:30
+Progressive reveal:
+WHAT TRAVELS
+WHAT CHANGES
+WHAT I MUST EARN
+
+EDITING PRINCIPLE
+
+Let visual structure carry the three-part distinction.
+Temidayo’s voice carries meaning.
+
+Avoid:
+- airport/travel metaphors;
+- suitcase imagery;
+- passport imagery;
+- generic career ladder;
+- “new industry = total restart” stock visuals;
+- hyperactive transitions.
+
+==================================================
+PUBLISHING PACKAGE
+==================================================
+
+Create:
+Video_8_Publishing_Package_HIT_v2.0.docx
+
+TITLE:
+How to Switch Industries Without Starting Over
+
+THUMBNAIL:
+YOUR EXPERIENCE STILL COUNTS
+
+PRIMARY SEARCH PHRASE:
+how to switch industries without starting over
+
+SUPPORTING SEARCH LANGUAGE:
+how to switch industries
+change industries
+career change
+how to change careers without starting over
+transferable skills
+career transition
+new industry
+career portability
+experienced professionals
+career change after 40
+
+COPY-READY YOUTUBE DESCRIPTION:
+
+Changing industries does not mean every part of your experience disappears — but it also does not mean everything transfers.
+
+In this video, I show you how to separate three different problems before an industry move:
+
+✨ What travels — the judgment, decisions and patterns that remain useful when the setting changes.
+
+✨ What changes — the language, stakeholders, incentives, regulation, operating rhythm and risks you need to learn in the new context.
+
+✨ What I must earn — the credential, direct exposure or practice that previous experience cannot replace.
+
+Across nearly two decades, I have worked across eight industries and sectors. That taught me that a credible industry move requires both confidence and humility: knowing what you can carry and being precise about what you still need to learn.
+
+I also share one example from my move toward cybersecurity and privacy, where preparing for the CISM exam — and not passing the first time — reminded me that not everything travels simply because you are experienced.
+
+The goal is not to prove that your whole career is transferable.
+
+It is to answer:
+
+“What can I credibly carry into this context, what must I learn, and what still has to be earned?”
+
+🧭 CAPABILITY FORMATION FIELD KIT
+
+Examine what your current work has built, what appears portable and where you still need development, evidence or context:
+
+https://temidayoafonja.com/fieldkit
+
+⏱️ CHAPTERS
+
+[INSERT WORKING ESTIMATES DIRECTLY HERE IN FINAL DOCUMENT]
+
+▶️ WATCH NEXT
+
+What to Do Before a Layoff Happens
+
+[ADD VIDEO 9 LINK WHEN LIVE]
+
+🔗 CONNECT AND EXPLORE
+
+Website:
+https://temidayoafonja.com
+
+LinkedIn:
+https://www.linkedin.com/in/temidayo-afonja
+
+Substack:
+https://temidayoafonja.substack.com
+
+#CareerChange #CareerGrowth #CapabilityFormation
+
+IMPORTANT:
+Do NOT leave the [INSERT...] placeholder in the final document.
+
+Generate working chapter estimates from the finished script and insert them directly beneath ⏱️ CHAPTERS inside the copy-ready description.
+
+After the copy-ready description, place:
+
+WORKING ESTIMATES — EDITOR MUST REPLACE FROM FINAL CUT
+
+Approved chapter titles:
+
+New Industry Does Not Mean Starting Over
+What Actually Changes
+Capability, Context and Credential
+What Travels
+What Must Be Relearned
+What Must Be Earned
+Start From the Destination
+Translate, Do Not Recite
+Build Bridge Evidence
+The Three-Column Test
+Capability Formation Field Kit
+What to Do Before a Layoff Happens
+
+PINNED COMMENT:
+
+If you were changing industries tomorrow, which column would be hardest for you?
+
+1. What travels
+2. What changes
+3. What I must earn
+
+You do not need to share confidential details.
+
+The useful exercise is to separate what your experience genuinely supports from what the new context still requires you to learn.
+
+If you want a fuller private read of what your current work has built, the Capability Formation Field Kit is here:
+
+https://temidayoafonja.com/fieldkit
+
+YOUTUBE TAG FIELD:
+
+how to switch industries without starting over, how to switch industries, change industries, career change, how to change careers without starting over, transferable skills, career transition, new industry, career portability, experienced professionals, career change after 40, capability formation, Temidayo Afonja
+
+Do not put the full tag field in the public description.
+
+==================================================
+SEPARATE DESCRIPTION-ONLY DOCUMENT
+==================================================
+
+Create outside the ZIP:
+
+Video_8_YouTube_Description_HIT.docx
+
+Use the same clean description-only format established for Videos 1–7.
+
+Include:
+- title;
+- thumbnail;
+- primary search phrase;
+- internal emoji note outside the public copy;
+- COPY-READY YOUTUBE DESCRIPTION — BEGIN;
+- exact public description;
+- working chapters inline;
+- END marker;
+- working-estimates warning outside public copy;
+- pinned comment;
+- Watch Next;
+- YouTube tag field.
+
+Approved emoji system:
+✨ teaching points
+🧭 CTA/resource
+⏱️ chapters
+▶️ Watch Next
+🔗 Connect and Explore
+
+Do not add more emojis.
+
+==================================================
+FOUR STANDALONE SHORTS
+==================================================
+
+Create four separate DOCX recording documents.
+
+No editor directions inside recording documents.
+
+--------------------------------------------------
+SHORT 1
+--------------------------------------------------
+
+Filename:
+Video_8_Short_1_New_Industry_Not_Starting_Over.docx
+
+Role:
+Recognition
+
+Verbal hook:
+Changing industries does not make you entry-level at everything.
+
+RECORDING COPY:
+
+Changing industries does not make you entry-level at everything.
+
+It makes you new to a context.
+
+The language may change.
+
+The stakeholders may change.
+
+The regulation, incentives and risks may change.
+
+But that does not automatically erase every kind of judgment you formed before you arrived.
+
+The mistake is assuming either:
+
+“None of my experience counts.”
+
+or:
+
+“I’m experienced, so I already know this context.”
+
+Neither is true.
+
+A better question is:
+
+What can I carry, and what do I genuinely need to learn again?
+
+--------------------------------------------------
+SHORT 2
+--------------------------------------------------
+
+Filename:
+Video_8_Short_2_Stop_Calling_Everything_Transferable.docx
+
+Role:
+Distinction
+
+Verbal hook:
+Stop calling everything a transferable skill.
+
+RECORDING COPY:
+
+Stop calling everything a transferable skill.
+
+Before you change industries, separate three things:
+
+Capability.
+
+Context.
+
+Credential.
+
+Capability is the judgment that may remain useful when the setting changes.
+
+Context is what you need to understand about this particular industry — its language, stakeholders, incentives, risks and operating rhythm.
+
+Credential is what has to be formally earned when previous experience is not enough.
+
+They are three different problems.
+
+So do not solve all three by collecting another certificate or by saying:
+
+“I’m adaptable.”
+
+First identify which gap you actually have.
+
+--------------------------------------------------
+SHORT 3
+--------------------------------------------------
+
+Filename:
+Video_8_Short_3_Not_Everything_Travels.docx
+
+Role:
+Personal proof
+
+Verbal hook:
+I’ve worked across eight industries and sectors, and not everything travelled with me.
+
+RECORDING COPY:
+
+I’ve worked across eight industries and sectors, and not everything travelled with me.
+
+When I moved toward cybersecurity and privacy, I prepared for the CISM exam and didn’t pass the first time.
+
+That mattered.
+
+It reminded me that being experienced in one context does not mean every piece of knowledge transfers into another.
+
+Some judgment travels.
+
+Some context has to be learned.
+
+And some things have to be earned.
+
+That is a much more credible way to approach an industry move than pretending your previous experience either counts for everything or counts for nothing.
+
+--------------------------------------------------
+SHORT 4
+--------------------------------------------------
+
+Filename:
+Video_8_Short_4_Three_Columns.docx
+
+Role:
+Practical action
+
+Verbal hook:
+Before you switch industries, make these three columns.
+
+RECORDING COPY:
+
+Before you switch industries, make these three columns.
+
+What travels.
+
+What changes.
+
+What I must earn.
+
+Under “what travels,” write the judgment and decisions you can support with evidence.
+
+Under “what changes,” write the language, stakeholders, incentives, regulation, rhythms and risks you need to learn.
+
+Under “what I must earn,” write the credential, practice or direct exposure your previous experience cannot replace.
+
+Do not try to make the third column empty.
+
+And do not make the first one empty either.
+
+That is how you stop treating an industry change like either a total restart or a frictionless transfer.
+
+==================================================
+SHORTS EDITOR-ONLY BRIEF
+==================================================
+
+Create:
+Video_8_Shorts_EDITOR_ONLY_HIT_Brief.docx
+
+Clearly label:
+EDITOR ONLY
+VIDEO 8 — FOUR STANDALONE SHORTS
+
+SHORT 1
+On-screen:
+NEW INDUSTRY ≠ ENTRY LEVEL AT EVERYTHING
+
+Visual:
+CURRENT CONTEXT → NEW CONTEXT
+
+Avoid:
+career-ladder cliché.
+
+SHORT 2
+On-screen:
+CAPABILITY
+CONTEXT
+CREDENTIAL
+
+Visual:
+three distinct columns.
+
+SHORT 3
+On-screen:
+NOT EVERYTHING TRAVELS
+
+Secondary:
+8 INDUSTRIES + SECTORS
+CISM: FIRST ATTEMPT NON-PASS
+
+Do not show:
+fake test score;
+failed stamp;
+ credential badge not owned.
+
+SHORT 4
+On-screen:
+WHAT TRAVELS
+WHAT CHANGES
+WHAT I MUST EARN
+
+Visual:
+clean three-column worksheet reveal.
+
+ALL SHORTS:
+- accurate mobile-safe captions;
+- restrained editorial pacing;
+- no airport/suitcase metaphor;
+- no stock “career switch” montage;
+- no fake shock;
+- add Video 8 as Related Video when available.
+
+==================================================
+README
+==================================================
+
+Create README_FINAL.txt.
+
+State:
+
+VIDEO 8 — H.I.T. FINAL RECORDING PACKAGE
+
+Title:
+How to Switch Industries Without Starting Over
+
+Thumbnail:
+YOUR EXPERIENCE STILL COUNTS
+
+CTA:
+Capability Formation Field Kit
+
+CTA URL:
+https://temidayoafonja.com/fieldkit
+
+Watch next:
+What to Do Before a Layoff Happens
+
+Long-form:
+Revised under H.I.T.
+
+Approved proof:
+- roughly eighteen-year cross-context career
+- eight industries/sectors
+- CISM preparation and first-attempt non-pass
+
+Core distinction:
+Some judgment travels.
+Context does not travel for free.
+Some knowledge, exposure or credentials must genuinely be earned.
+
+Shorts:
+Four separately recorded vertical scripts.
+
+Description-only document:
+Created separately outside ZIP.
+
+List all package files.
+
+==================================================
+CANONICAL SOURCE VERIFICATION
+==================================================
+
+Use this prompt file as canonical:
+
+Video_8_Code_Prompt_HIT_Final.txt
+
+In the SAME BUILD PASS:
+
+Extract between:
+BEGIN APPROVED VIDEO 8 SCRIPT
+and
+END APPROVED VIDEO 8 SCRIPT
+
+Compare literally against:
+Video8TeleprompterScriptwithslidemarkers_HIT_v2.0.txt
+after removing only slide-marker lines
+
+and against:
+Video8ReadingScriptnomarkers_HIT_v2.0.txt
+
+Check:
+- every word;
+- punctuation;
+- apostrophes;
+- quotation marks;
+- em dashes;
+- capitalization;
+- paragraph order;
+- marker names;
+- marker positions.
+
+If canonical TXT is not available:
+STOP final lock and report missing file.
+
+Do not hand-transcribe.
+
+==================================================
+CHECKSUM CONVENTION
+==================================================
+
+Inside ZIP:
+SHA256SUMS.txt hashes the other 12 user-facing files only.
+
+Outside ZIP:
+Video_8_HIT_FINAL_Recording_and_Shorts_Package.zip.sha256
+
+Also report SHA-256 for:
+Video_8_YouTube_Description_HIT.docx
+
+==================================================
+QA / VALIDATION
+==================================================
+
+Before packaging:
+
+1. Inspect actual slide count.
+2. Inspect actual reveal-frame count.
+3. Confirm title exactly:
+   How to Switch Industries Without Starting Over
+4. Confirm thumbnail exactly:
+   YOUR EXPERIENCE STILL COUNTS
+5. Confirm primary search phrase exactly:
+   how to switch industries without starting over
+6. Confirm “move into a new industry” is not retained as the final public title.
+7. Confirm H.I.T. opening matches approved script.
+8. Confirm eight industries/sectors wording.
+9. Confirm “roughly eighteen years” / “nearly two decades” remains within approved factual boundary.
+10. Confirm CISM first-attempt non-pass wording.
+11. Confirm no invented exam score/date/result.
+12. Confirm no claim that all experience transfers.
+13. Confirm Slide 5 stale phrase “It is an information gap” is removed from live visual materials.
+14. Confirm revised Slide 5 text is present.
+15. Confirm corresponding reveal-frame stale text is corrected.
+16. Confirm Slide 12 matches current Watch Next if correction was needed.
+17. Confirm no unauthorized slide changed.
+18. Confirm marker-to-slide mapping is one-to-one and ordered.
+19. Confirm exact four Shorts.
+20. Confirm Short recording docs contain no editor directions.
+21. Confirm both EDITOR ONLY docs labelled.
+22. Confirm Field Kit is sole product CTA.
+23. Confirm Watch Next is Video 9.
+24. Confirm no Keep the Proof or Decision Check CTA leak.
+25. Confirm approved emoji system.
+26. Confirm working chapters inserted directly into public description.
+27. Confirm no [INSERT] placeholder remains.
+28. Confirm working-estimates warning sits outside copy-ready block.
+29. Confirm separate description-only public copy matches publishing-package public copy.
+30. Confirm canonical source verification passes.
+31. Confirm teleprompter DOCX == TXT.
+32. Confirm reading DOCX == TXT.
+33. Confirm teleprompter minus markers == reading script.
+34. Render and visually inspect every DOCX.
+35. Confirm no clipping, overlap, broken glyph, blank page or avoidable near-empty trailing page.
+36. Build ZIP from explicit 13-file allowlist.
+37. Confirm exactly 13 files.
+38. Confirm no _source/Python/temp/render files.
+39. Confirm README matches archive.
+40. Confirm SHA256SUMS.txt has exactly 12 entries.
+41. Run sha256sum -c successfully.
+42. Confirm sibling ZIP checksum matches.
+43. Report description-only DOCX hash.
+44. Confirm no website/product/other-video file changed.
+
+Do not make unapproved editorial changes during QA.
+
+==================================================
+COMPLETION REPORT
+==================================================
+
+Report:
+- exact files created;
+- exact files modified;
+- actual slide count;
+- actual reveal-frame count;
+- which slide/reveal XML parts changed;
+- confirmation non-authorized slides/reveals remain unchanged;
+- canonical spoken word count;
+- canonical source comparison result;
+- marker-to-slide mapping result;
+- four-Short result;
+- factual-boundary result;
+- CISM wording validation;
+- Slide 5 correction validation;
+- page count for every DOCX;
+- full ZIP listing;
+- exact ZIP count;
+- confirmation no _source/Python/temp files;
+- final ZIP SHA-256;
+- sibling checksum filename;
+- description-only DOCX SHA-256;
+- any issue requiring Temidayo’s decision.
+
+If all checks pass, mark:
+
+VIDEO 8 — FINAL + LOCKED FOR RECORDING
+
+Do not mark FINAL if any validation fails.
+Do not alter approved wording without explicit approval.
