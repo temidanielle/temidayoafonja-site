@@ -350,6 +350,46 @@ would succeed: a probe on 2026-08-26 found no Blobs context present at runtime, 
 call throw instead. That question is open and must be answered by observation before the shared
 helper is changed.
 
+### Netlify's clarification, case #1099659, 2026-08-31
+
+A second reply from Netlify supersedes the esbuild explanation above. Their position:
+
+- This site uses default Functions bundling, so **no `netlify.toml` or custom esbuild change is
+  required.**
+- **Application code should not read or parse `NETLIFY_BLOBS_CONTEXT` directly.**
+- Zero-configuration `getStore("store-name")` is sufficient, because the v8 SDK reads the injected
+  runtime context internally.
+- No `region` parameter is needed.
+- Behaviour should be identical in production Functions and Deploy Preview Functions.
+- Switching from manual `{ siteID, token }` to zero-configuration should reach the same site-wide
+  namespace and the existing records.
+- The uncreated stores are consistent with their first writes being rejected by the same HTTP 400.
+
+This confirms the finding above that no bundler change is needed. **It does not resolve the
+conflict.** On 2026-08-26 a deployed check found no Blobs context present at runtime. Netlify's
+assurance that the context is injected in both contexts, and that observation, cannot both be
+right. The conflict is open and no code action has been taken on it.
+
+Their second point also lands on the diagnostic in this branch, which reads the variable directly.
+The SDK's own check is the same expression, so the two should agree, but "should agree" is the
+assumption that has already been wrong twice in this incident. When the diagnostic resumes it will
+therefore test Netlify's claim **through their SDK** rather than around it: construct a store handle
+with `getStore("career-decisions-leads")` and report one boolean, `zero_config_initializes`.
+
+The rule for that boolean is strict, and deliberately so:
+
+- **`true` only if `getStore("career-decisions-leads")` returns without throwing.**
+- **`false` if it throws anything at all.** An exception other than `MissingBlobsEnvironmentError`
+  must never be read as success. An earlier draft of this test did exactly that, which would have
+  turned a network or SDK failure into a pass.
+
+It constructs a handle and nothing else: no read, no write, no list, no record operation. It
+exposes no exception name, message, context value, structure or length, and no credential or record.
+
+**What it proves is narrow.** It proves only that zero-configuration initialises. It does not prove
+that a later network read or write will succeed. That has to be verified separately, on the preview
+of the eventual shared fix, if initialisation passes.
+
 ### Rate limiting does not depend on Blobs
 
 Added 2026-08-27, for the same incident. The submission function's own limiter, ten per hour per
