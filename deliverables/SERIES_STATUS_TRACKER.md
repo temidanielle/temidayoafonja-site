@@ -109,20 +109,25 @@ for every video that carries the URL.
 
 | # | Package | Recording scripts | Thumbnail |
 |---|---|---|---|
-| 1 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. rebuild built — awaiting Temidayo's approval** | **Option A vs B not selected** — open |
-| 2 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. rebuild approved and LOCKED**, commit `d6883dd` | final, approved |
-| 3 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. rebuild approved and LOCKED**, commit `c961b63` | Final A approved; Final B archived |
-| 4 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. rebuild approved and LOCKED**, commit `e2d405f` | approved |
-| 5 | approved and locked | **approved and locked** | approved |
-| 6 | approved and locked | **approved and locked** | task closed — finalising in Canva |
-| 7 | approved and closed | **approved and locked** | **outstanding** — approved Canva export carrying `MAKE INVISIBLE WORK VISIBLE` |
-| 8 | approved | **approved and locked** | **outstanding** — Canva export carrying `YOUR EXPERIENCE STILL COUNTS` |
+| 1 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. content APPROVED** — corrected package pending final verification | `DON'T START FROM ZERO` — approved production direction |
+| 2 | slides, reveal deck and thumbnail **unchanged and authoritative** | **FINAL + LOCKED FOR RECORDING**, commit `d6883dd` | final, approved |
+| 3 | slides, reveal deck and thumbnail **unchanged and authoritative** | **FINAL + LOCKED + CLEARED TO PUBLISH**, commit `c961b63` | Final A approved; Final B archived |
+| 4 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. content + package APPROVED** — not yet final, see the note below | approved |
+| 5 | slides, reveal deck and thumbnail **unchanged and authoritative** | **REOPENED UNDER H.I.T.** — content architecture approved, package not yet built | approved |
+| 6 | slides, reveal deck and thumbnail **unchanged and authoritative** | **REOPENED UNDER H.I.T.** — not yet revised, not locked | task closed — finalising in Canva |
+| 7 | slides, reveal deck and thumbnail **unchanged and authoritative** | **REOPENED UNDER H.I.T.** — not yet revised, not locked | concept approved: `MAKE INVISIBLE WORK VISIBLE`, gesture version |
+| 8 | slides, reveal deck and thumbnail **unchanged and authoritative** | **REOPENED UNDER H.I.T.** — not yet revised, not locked | leading direction: `YOUR EXPERIENCE STILL COUNTS` |
 
 ### Locked recording scripts
 
-Videos 4 to 8 are locked at commit `de4363c`, handed off as
-`Video_4-8_FINAL_Recording_Materials.zip`. Canonical spoken-word counts:
-V4 1,221 · V5 1,639 · V6 1,649 · V7 1,472 · V8 1,514.
+**The earlier Videos 4 to 8 lock is superseded.** Those five were locked at
+commit `de4363c` and handed off as `Video_4-8_FINAL_Recording_Materials.zip`,
+with canonical spoken-word counts V4 1,221 · V5 1,639 · V6 1,649 · V7 1,472 ·
+V8 1,514. Temidayo has since reopened all of them under the H.I.T. standard.
+**That instruction supersedes the `de4363c` lock.** Those packages remain in the
+repository as historical reference material and are no longer the authoritative
+recording scripts. Videos 5 to 8 are **not** to be described as locked for
+recording merely because the older packages still exist.
 
 Video 2 is locked separately at commit `d6883dd` under the H.I.T.
 first-30-second standard: `deliverables/video-2-slides/hit-final/`. 105 spoken
@@ -160,8 +165,11 @@ labelled EDITOR ONLY briefs, out of every recording document. It is a
 description stay untouched until the replacement is recorded, edited, reviewed
 and uploaded.
 
-Video 4 is **locked** at `deliverables/video-4-slides/hit-final/`; the packaged
-files are those of commit `e2d405f`. 124 spoken paragraphs, 1,322 words,
+Video 4's H.I.T. package lives at `deliverables/video-4-slides/hit-final/`; the
+packaged files are those of commit `e2d405f`. Its content and package are
+**approved**; its lock status is governed by *Series position* below, which
+currently holds it at **NOT YET FINAL** pending Temidayo's confirmation. The
+package itself is unchanged either way. 124 spoken paragraphs, 1,322 words,
 11 slide markers mapping to the unchanged 11-slide deck; the reveal deck
 (26 frames) is unchanged. Four standalone Shorts, and editor instruction held in
 two clearly labelled EDITOR ONLY briefs.
@@ -180,7 +188,7 @@ two clearly labelled EDITOR ONLY briefs.
 **This supersedes Video 4's earlier locked script.** Videos 4 to 8 were locked
 at commit `de4363c` with Video 4 at 1,221 words. Temidayo instructed a full
 H.I.T. rebuild on 1 September 2026; the new package replaces that script for
-Video 4 only. Videos 5 to 8 remain locked at `de4363c` and are untouched.
+Video 4 only. Videos 5 to 8 were subsequently reopened under H.I.T. as well; their `de4363c` packages are historical reference material.
 
 **Source verification — PASSED, 1 September 2026.** Video 4's script arrived
 first as message text and was hand-transcribed into the package, so a literal
@@ -235,8 +243,9 @@ documents.
 
 Video 5's primary CTA is the Career Decision Evidence Check. The former
 statement "do not publish until the Career Decision Evidence Check page is live"
-is **SATISFIED**. The URL is retained unchanged. Video 5's recording script
-remains locked at `de4363c`; nothing in it changed for this status update.
+is **SATISFIED**. The URL is retained unchanged. Video 5 is reopened under H.I.T.; its `de4363c` script is historical reference
+material, not the authoritative recording script. Nothing in it changed for this
+status update.
 
 ### Standards recorded
 
@@ -253,14 +262,119 @@ addresses the individual viewer, the slide heading names the broader conceptual
 step, and slides do not change merely because spoken wording becomes more
 conversational.
 
-### Next
+### Series position — authoritative state, 1 September 2026
 
-No Video 3 revision is required unless Temidayo explicitly reopens it.
+Set by Temidayo. This section governs; where an older note elsewhere in this
+file disagrees, this section is current.
 
-Nothing is queued for build. What remains open across the series is the
-Video 7 and Video 8 Canva thumbnail exports, the Video 1 thumbnail selection,
-and Temidayo's signed-out check of the Career Decision Evidence Check page
-before Video 3 or Video 5 is scheduled.
+#### Video 1 — How to Change Jobs Without Starting Your Career Over
+
+**H.I.T. CONTENT APPROVED.** The corrected final Code package is still pending
+final verification.
+
+The wording "roughly eighteen years" is **APPROVED** and is **not** an open
+issue. Video 1 is not blocked on it.
+
+Outstanding: verify the corrected final package after the requested
+publishing-description and Shorts-editor-brief fixes.
+
+Thumbnail text: `DON'T START FROM ZERO`. No new thumbnail decision is to be
+inferred beyond the approved existing production direction.
+
+#### Video 2 — Is Your Job Making You Less Marketable?
+
+**FINAL + LOCKED FOR RECORDING.** H.I.T. package approved.
+
+#### Video 3 — 3 Things to Do Before Quitting Your Job
+
+**FINAL + LOCKED + CLEARED TO PUBLISH** once recording, edit and upload QA are
+complete. Career Decision Evidence Check gate: **SATISFIED**.
+
+#### Video 4 — How to Explain Your Career Change
+
+**H.I.T. CONTENT + PACKAGE APPROVED. NOT YET FINAL**, because canonical
+source-file verification remains open.
+
+| | |
+|---|---|
+| Package ZIP SHA-256 | `5ca42003ff3c100d5afb2d071e87d418abe6d7777b6f45d956d5830ab46104a0` |
+| Keep the Proof gate | PASSED |
+| Canonical spoken count | 1,322 |
+| Previous 1,221-word script | SUPERSEDED |
+
+Video 4 is not to be marked FINAL until the canonical
+`Video_4_Code_Prompt_HIT_Final.txt` comparison passes.
+
+> **⚠ Discrepancy on the record, for Temidayo to resolve.** That comparison has
+> already been run and it **passed**. On 1 September 2026 Temidayo uploaded
+> `Video_4_Code_Prompt_HIT_Final.txt` (SHA-256 `9d66cce6a941…`) and the literal
+> comparison returned an exact match: teleprompter minus markers and the clean
+> reading script each equal the canonical source across all 124 spoken
+> paragraphs, 8,057 characters on all three sides, identical SHA-256 of the
+> joined spoken text, and all 12 slide-marker names and positions matching. It
+> is recorded in full under *Source verification* above and in
+> `video-4-slides/hit-final/QA_REPORT.json`, and Video 4 was marked FINAL AND
+> LOCKED at commit `7530586`.
+>
+> The condition stated above is therefore already met. Video 4 is held at **NOT
+> YET FINAL** here because that is Temidayo's latest explicit instruction, and
+> the earlier lock is not being asserted over it. One word from Temidayo moves
+> it to FINAL; no package file needs to change either way, and the archive hash
+> is unaffected.
+
+#### Video 5 — Should I Make an Internal Move? 3 Questions to Decide
+
+**REOPENED UNDER H.I.T. New H.I.T. content architecture APPROVED. New final
+H.I.T. package NOT YET BUILT.**
+
+The previous script and package at `de4363c` remain historical reference
+material and are no longer the authoritative recording script. Video 5 is **not**
+locked for recording.
+
+Career Decision Evidence Check gate: **SATISFIED**.
+
+Next action: build the new H.I.T. package when Temidayo provides the approved
+Code prompt.
+
+#### Video 6 — Are You Growing—or Just Being Given More Work?
+
+**REOPENED UNDER H.I.T. NOT YET REVISED. NOT LOCKED FOR RECORDING.**
+
+The previous script and package remain historical reference material until the
+H.I.T. rebuild is approved.
+
+#### Video 7 — How to Show Your Impact at Work When You Built It From Scratch
+
+**REOPENED UNDER H.I.T. NOT YET REVISED. NOT LOCKED FOR RECORDING.**
+
+Thumbnail direction is **already approved**: `MAKE INVISIBLE WORK VISIBLE`. The
+gesture version, with Temidayo's open palm presenting the headline, is the
+selected direction. The concept is not undecided.
+
+Operational item still outstanding: ensure the approved Canva PNG is eventually
+inserted **byte-identically** into the complete final Video 7 production package,
+with a checksum.
+
+#### Video 8 — How to Move Into a New Industry Without Starting Over
+
+**REOPENED UNDER H.I.T. NOT YET REVISED. NOT LOCKED FOR RECORDING.**
+
+Current leading thumbnail direction: `YOUR EXPERIENCE STILL COUNTS`. Treat it as
+the leading direction unless Temidayo explicitly reopens it. The H.I.T. video
+package is not final.
+
+### Series summary
+
+| State | Videos |
+|---|---|
+| FINAL + LOCKED | 2, 3 |
+| Content approved / final package check still open | 1, 4 |
+| H.I.T. content approved / new package not yet built | 5 |
+| Reopened / H.I.T. revision still required | 6, 7, 8 |
+
+Videos 5 to 8 are **not** to be reverted to their prior "locked" state merely
+because older packages still exist in the repository. The newest explicit H.I.T.
+reopen instruction supersedes the earlier Videos 4 to 8 lock.
 
 ---
 
@@ -268,9 +382,9 @@ before Video 3 or Video 5 is scheduled.
 
 Both are held open at Temidayo's instruction and are not blocking any package.
 
-1. **Video 1 thumbnail selection.** Option A and Option B are both built and
-   archived; neither is marked final. Outstanding since the three-video launch
-   coherence audit.
+1. **Video 1 thumbnail.** The approved production direction is
+   `DON'T START FROM ZERO`. No new thumbnail decision is to be inferred beyond
+   it. The Option A and Option B artwork files remain archived.
 2. **Repeated portrait across Videos 4 and 5.** Both finals use
    `photo-portrait-wine.png` in the same layout. Flagged at the time as a
    series-coherence question; no change made.
