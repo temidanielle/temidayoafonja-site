@@ -113,7 +113,7 @@ for every video that carries the URL.
 | 2 | slides, reveal deck and thumbnail **unchanged and authoritative** | **FINAL + LOCKED FOR RECORDING**, commit `d6883dd` | final, approved |
 | 3 | slides, reveal deck and thumbnail **unchanged and authoritative** | **FINAL + LOCKED + CLEARED TO PUBLISH**, commit `c961b63` | Final A approved; Final B archived |
 | 4 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. content + package APPROVED** — not yet final, see the note below | approved |
-| 5 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. rebuild built — awaiting Temidayo's approval**, commit pending | approved |
+| 5 | slides, reveal deck and thumbnail **unchanged and authoritative** | **FINAL + LOCKED FOR RECORDING**, commit `51496ba` | approved |
 | 6 | slides, reveal deck and thumbnail **unchanged and authoritative** | **REOPENED UNDER H.I.T.** — not yet revised, not locked | task closed — finalising in Canva |
 | 7 | slides, reveal deck and thumbnail **unchanged and authoritative** | **REOPENED UNDER H.I.T.** — not yet revised, not locked | concept approved: `MAKE INVISIBLE WORK VISIBLE`, gesture version |
 | 8 | slides, reveal deck and thumbnail **unchanged and authoritative** | **REOPENED UNDER H.I.T.** — not yet revised, not locked | leading direction: `YOUR EXPERIENCE STILL COUNTS` |
@@ -319,28 +319,44 @@ The package was not rebuilt or altered for the lock; no packaged file changed.
 
 #### Video 5 — Should I Make an Internal Move? 3 Questions to Decide
 
-**H.I.T. PACKAGE BUILT — awaiting Temidayo's approval.** Built from the
-canonical `Video_5_Code_Prompt_HIT_Final.txt`, with the source comparison run in
-the same build pass.
+**FINAL + LOCKED FOR RECORDING.** Locked at commit `51496ba`:
+`deliverables/video-5-slides/hit-final/`.
 
 | | |
 |---|---|
-| Package | `deliverables/video-5-slides/hit-final/` |
-| Canonical spoken count | 1,403 across 141 spoken paragraphs |
-| Slide markers | 12, mapping to the unchanged 12-slide deck |
-| Reveal deck | unchanged, 25 frames |
-| Archive SHA-256 | `3b9fcc52a0c79cae2b25da04f72e8f6eee34e270dad6f3b4bd731ac4ffa09854` |
-| Source verification | **PASSED** in the build pass — exact match, no separate round needed |
-| CTA | Career Decision Evidence Check |
-| CTA production gate | **SATISFIED** |
-| Watch next | Are You Growing—or Just Being Given More Work? |
+| Title | Should I Make an Internal Move? 3 Questions to Decide |
+| Thumbnail | YOU MAY NOT NEED TO LEAVE |
+| Canonical spoken count | 1,403 |
+| Primary CTA | Career Decision Evidence Check |
+| CTA URL | https://temidayoafonja.com/career-decisions |
+| CTA production gate | SATISFIED |
+| Watch next | Video 6 — Are You Growing—or Just Being Given More Work? |
+| Long-form H.I.T. rebuild | FINAL + LOCKED |
+| Four standalone Shorts | FINAL + LOCKED |
+| Long-form EDITOR ONLY brief | FINAL |
+| Shorts EDITOR ONLY brief | FINAL |
+| Publishing package | FINAL |
+| Canonical source verification | PASSED IN SAME BUILD PASS |
+| Slides | UNCHANGED (12 main slides) |
+| Reveal deck | UNCHANGED (25 frames) |
+| Thumbnail | UNCHANGED |
+| Final package ZIP SHA-256 | `3b9fcc52a0c79cae2b25da04f72e8f6eee34e270dad6f3b4bd731ac4ffa09854` |
+| Sibling checksum | `Video_5_HIT_FINAL_Recording_and_Shorts_Package.zip.sha256` |
 
-The previous script and package at `de4363c` remain historical reference
-material and are **not** the authoritative recording script. The old exception
-that delayed personal proof until roughly 1:35 is **superseded**; the proof now
-sits in the opening.
+141 spoken paragraphs. The source comparison against
+`Video_5_Code_Prompt_HIT_Final.txt` ran inside the build pass and passed: exact
+match on both scripts across all 141 paragraphs, 8,588 characters on all three
+sides, identical SHA-256 of the joined spoken text, and all 12 slide-marker
+names and positions matching. The canonical prompt is archived at
+`video-5-slides/hit-final/_source/`.
 
-Video 5 is **not** locked for recording until Temidayo approves this package.
+**The previous `de4363c` Video 5 script and package are SUPERSEDED as recording
+authority** by this H.I.T. rebuild. Retain them only as historical reference.
+
+The package was not rebuilt or altered for the lock; no packaged file changed.
+
+The old exception that delayed personal proof until roughly 1:35 is superseded;
+the proof now sits in the opening.
 
 #### Video 6 — Are You Growing—or Just Being Given More Work?
 
@@ -373,10 +389,13 @@ package is not final.
 
 | State | Videos |
 |---|---|
-| FINAL + LOCKED | 2, 3, 4 |
+| FINAL + LOCKED | 2, 3, 4, 5 |
 | Content approved / awaiting independent review before lock | 1 |
-| H.I.T. package built / awaiting approval | 5 |
+
 | Reopened / H.I.T. revision still required | 6, 7, 8 |
+
+Next editorial work is **Video 6**, which remains REOPENED UNDER H.I.T. until
+Temidayo approves its revised content architecture.
 
 Videos 5 to 8 are **not** to be reverted to their prior "locked" state merely
 because older packages still exist in the repository. The newest explicit H.I.T.

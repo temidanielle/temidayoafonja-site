@@ -136,8 +136,12 @@ are the worked examples of this standard and are closed for revision.
     15 to 20 seconds.
 11. Introduce lived or documented proof early where it fits naturally.
     Approximately 30 to 45 seconds is preferred, but do not force evidence into
-    that window if doing so makes the opening less natural. **Video 5 is the
-    approved example of personal proof arriving later, at approximately 1:35.**
+    that window if doing so makes the opening less natural. ~~**Video 5 is the
+    approved example of personal proof arriving later, at approximately
+    1:35.**~~ **WITHDRAWN, 1 September 2026** — Video 5's H.I.T. rebuild moves
+    that proof into the opening. The struck sentence is retained for
+    traceability and no longer describes an approved example; there is now no
+    standing late-proof exception.
 
 ### Search, packaging and integrity
 
@@ -155,7 +159,7 @@ are the worked examples of this standard and are closed for revision.
 | Video | Approved title | First spoken line | Spoken words |
 |---|---|---|---|
 | 4 | How to Explain Your Career Change | "A senior colleague once called me a cat with nine lives." | **1,322** |
-| 5 | Should I Make an Internal Move? 3 Questions to Decide | "You may not need to leave your company." | 1,639 |
+| 5 | Should I Make an Internal Move? 3 Questions to Decide | "You may not need to leave your company." | **1,403** |
 | 6 | Are You Growing—or Just Being Given More Work? | "Is this actually growth, or am I just being given more work?" | 1,649 |
 | 7 | How to Show Your Impact at Work When You Built It From Scratch | "How do you prove something when there was nothing there before you?" | 1,472 |
 | 8 | How to Move Into a New Industry Without Starting Over | "Do I really have to start over just because I'm changing industries?" | 1,514 |
@@ -196,5 +200,20 @@ characters, with every word, punctuation mark, apostrophe, quotation mark, em
 dash, capitalisation and paragraph order matching, all 11 slide-marker names and
 positions matching, and no normalisation applied. The full evidence is retained
 in `video-4-slides/hit-final/QA_REPORT.json` and in the series tracker.
+
+Video 5 is **FINAL AND LOCKED FOR RECORDING** as of 1 September 2026, rebuilt
+under the H.I.T. standard at `deliverables/video-5-slides/hit-final/`, canonical
+spoken count **1,403**. Its script was verified literally against
+`Video_5_Code_Prompt_HIT_Final.txt` **inside the build pass** — exact match on
+both scripts across all 141 paragraphs and 8,588 characters, with every word,
+punctuation mark, apostrophe, quotation mark, em dash, capitalisation and
+paragraph order matching, all 12 slide-marker names and positions matching, and
+no normalisation applied. The earlier 1,639-word script is **SUPERSEDED** as
+recording authority and retained only as historical reference.
+
+**The Video 5 proof-placement exception is withdrawn.** This document previously
+named Video 5 as the approved example of personal proof arriving at roughly
+1:35. The H.I.T. rebuild moves that proof into the opening, and the exception no
+longer applies to any video.
 
 The standards for Videos 5 to 8 are unchanged.
