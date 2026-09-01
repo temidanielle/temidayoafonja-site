@@ -1,0 +1,132 @@
+{
+ "SOURCE_VERIFICATION": {
+  "canonical_file": "Video_5_Code_Prompt_HIT_Final.txt",
+  "canonical_file_sha256": "03d681a9c55ba95ad9fe69e7e0a1e005a0c19a8c58e3413dd53c16ed194004e0",
+  "method": "Extracted between the BEGIN/END APPROVED VIDEO 5 SCRIPT fences and compared literally. No normalisation of any kind.",
+  "source_blocks": 153,
+  "source_markers": 12,
+  "source_spoken_paragraphs": 141,
+  "source_spoken_words": 1403,
+  "teleprompter_minus_markers_equals_source": true,
+  "reading_script_equals_source": true,
+  "characters_source": 8588,
+  "characters_reading": 8588,
+  "characters_teleprompter_minus_markers": 8588,
+  "sha256_joined_spoken_text": "f49b24429f16b370f70c75b601618674d909db2e2e27f11fba2ffdc9aa1bfe84",
+  "sha256_identical_across_all_three": true,
+  "per_character_class": {
+   "apostrophe": [
+    2,
+    2,
+    2
+   ],
+   "left_quote": [
+    4,
+    4,
+    4
+   ],
+   "right_quote": [
+    4,
+    4,
+    4
+   ],
+   "em_dash": [
+    1,
+    1,
+    1
+   ],
+   "ellipsis": [
+    0,
+    0,
+    0
+   ]
+  },
+  "capital_letters": [
+   175,
+   175,
+   175
+  ],
+  "checked": [
+   "every word",
+   "punctuation",
+   "apostrophes",
+   "quotation marks",
+   "em dashes",
+   "capitalization",
+   "paragraph order"
+  ],
+  "marker_names_match": true,
+  "marker_positions_match": true,
+  "status": "PASSED"
+ },
+ "00_canonical_source_verification_passed": true,
+ "01_teleprompter_docx_equals_txt": true,
+ "02_reading_docx_equals_txt": true,
+ "03_teleprompter_minus_markers_equals_reading": true,
+ "03b_both_equal_approved_script_verbatim": true,
+ "04_markers_ordered_and_mapped": true,
+ "04b_marker_count_is_12": true,
+ "05_exactly_four_short_recording_docs": true,
+ "05b_short_filenames": [
+  "Video_5_Short_1_You_May_Not_Need_To_Leave.docx",
+  "Video_5_Short_2_More_Tasks_Not_More_Judgment.docx",
+  "Video_5_Short_3_More_Scope_Not_Automatic_Growth.docx",
+  "Video_5_Short_4_Three_Questions_Before_You_Move.docx"
+ ],
+ "06_shorts_free_of_editor_directions": true,
+ "06b_offending": {},
+ "07_editor_docs_labelled": true,
+ "08_proof_boundary_stated_in_briefs": true,
+ "08b_no_invented_employer_role_or_metric": true,
+ "08c_offending": {},
+ "08d_no_unsupported_metric": true,
+ "08e_offending": {},
+ "09_old_1_35_exception_superseded": true,
+ "10_three_question_architecture_intact": true,
+ "11_volume_not_treated_as_growth": true,
+ "12_decision_read_preserves_tradeoffs": true,
+ "13_safety_boundary_verbatim": true,
+ "14_cdec_is_sole_cta": true,
+ "14b_offending": {},
+ "15_production_gate_recorded_satisfied": true,
+ "16_watch_next_is_video_6": true,
+ "17_20_nothing_else_modified": true,
+ "17_20b_unexpected": [],
+ "21_restrained_emoji_treatment_retained": true,
+ "21b_emoji_count_in_description": 7,
+ "22_all_chapters_inside_description": true,
+ "22b_no_placeholder_in_description": true,
+ "22c_warning_outside_description": true,
+ "22d_reference_matches_description": true,
+ "26_zip_file_count": 13,
+ "26b_zip_count_is_13": true,
+ "25_zip_contents_exactly_as_specified": true,
+ "27_no_source_folder": true,
+ "27b_no_python_files": true,
+ "27c_no_images_temp_hidden": true,
+ "27d_zip_integrity": true,
+ "29_sums_entry_count": 12,
+ "29b_sums_has_12_entries": true,
+ "29c_sums_no_self_or_zip_entry": true,
+ "30_every_listed_hash_matches": true,
+ "30b_sums_identical_inside_and_outside": true,
+ "28_readme_lists_13_files": true,
+ "28b_readme_matches_archive": true,
+ "31_sibling_checksum_matches": true,
+ "31b_zip_sha256": "3b9fcc52a0c79cae2b25da04f72e8f6eee34e270dad6f3b4bd731ac4ffa09854",
+ "32_chapters_marked_working_estimates": true,
+ "23_24_rendered_page_counts": {
+  "Video5ReadingScriptnomarkers_H": 10,
+  "Video5TeleprompterScriptwithsl": 11,
+  "Video_5_EDITOR_ONLY_HIT_Brief_": 4,
+  "Video_5_Publishing_Package_HIT": 3,
+  "Video_5_Short_1_You_May_Not_Ne": 1,
+  "Video_5_Short_2_More_Tasks_Not": 1,
+  "Video_5_Short_3_More_Scope_Not": 1,
+  "Video_5_Short_4_Three_Question": 1,
+  "Video_5_Shorts_EDITOR_ONLY_HIT": 2
+ },
+ "canonical_spoken_paragraphs": 141,
+ "canonical_spoken_words": 1403,
+ "ALL_BOOLEAN_CHECKS_PASS": true
+}

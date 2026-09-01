@@ -187,15 +187,14 @@ Video 4 record:
 | CTA | Keep the Proof |
 | Watch next | Should I Make an Internal Move? 3 Questions to Decide |
 
-Video 4's script was verified literally against the canonical source file
-`Video_4_Code_Prompt_HIT_Final.txt` on 1 September 2026 — exact match on all 124
-spoken paragraphs, with no normalisation applied. That verification stands as a
-matter of record.
+Video 4 is **FINAL AND LOCKED FOR RECORDING** as of 1 September 2026.
 
-Video 4's **lock status** is governed by `SERIES_STATUS_TRACKER.md`, which
-currently holds it at **NOT YET FINAL** on Temidayo's latest instruction. The
-discrepancy between that instruction and the passed verification is recorded in
-the tracker for her to resolve. The canonical spoken count of 1,322 and the
-SUPERSEDED status of the 1,221-word script are unaffected.
+Its script was verified literally against the canonical source file
+`Video_4_Code_Prompt_HIT_Final.txt` — exact match against both the teleprompter
+spoken sequence and the clean reading script across all 124 paragraphs and 8,057
+characters, with every word, punctuation mark, apostrophe, quotation mark, em
+dash, capitalisation and paragraph order matching, all 11 slide-marker names and
+positions matching, and no normalisation applied. The full evidence is retained
+in `video-4-slides/hit-final/QA_REPORT.json` and in the series tracker.
 
 The standards for Videos 5 to 8 are unchanged.

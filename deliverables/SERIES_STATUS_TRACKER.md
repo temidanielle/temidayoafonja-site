@@ -113,7 +113,7 @@ for every video that carries the URL.
 | 2 | slides, reveal deck and thumbnail **unchanged and authoritative** | **FINAL + LOCKED FOR RECORDING**, commit `d6883dd` | final, approved |
 | 3 | slides, reveal deck and thumbnail **unchanged and authoritative** | **FINAL + LOCKED + CLEARED TO PUBLISH**, commit `c961b63` | Final A approved; Final B archived |
 | 4 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. content + package APPROVED** — not yet final, see the note below | approved |
-| 5 | slides, reveal deck and thumbnail **unchanged and authoritative** | **REOPENED UNDER H.I.T.** — content architecture approved, package not yet built | approved |
+| 5 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. rebuild built — awaiting Temidayo's approval**, commit pending | approved |
 | 6 | slides, reveal deck and thumbnail **unchanged and authoritative** | **REOPENED UNDER H.I.T.** — not yet revised, not locked | task closed — finalising in Canva |
 | 7 | slides, reveal deck and thumbnail **unchanged and authoritative** | **REOPENED UNDER H.I.T.** — not yet revised, not locked | concept approved: `MAKE INVISIBLE WORK VISIBLE`, gesture version |
 | 8 | slides, reveal deck and thumbnail **unchanged and authoritative** | **REOPENED UNDER H.I.T.** — not yet revised, not locked | leading direction: `YOUR EXPERIENCE STILL COUNTS` |
@@ -165,11 +165,10 @@ labelled EDITOR ONLY briefs, out of every recording document. It is a
 description stay untouched until the replacement is recorded, edited, reviewed
 and uploaded.
 
-Video 4's H.I.T. package lives at `deliverables/video-4-slides/hit-final/`; the
-packaged files are those of commit `e2d405f`. Its content and package are
-**approved**; its lock status is governed by *Series position* below, which
-currently holds it at **NOT YET FINAL** pending Temidayo's confirmation. The
-package itself is unchanged either way. 124 spoken paragraphs, 1,322 words,
+Video 4 is **FINAL + LOCKED FOR RECORDING** at
+`deliverables/video-4-slides/hit-final/`; the packaged files are those of commit
+`e2d405f`, and the canonical source-file verification passed on 1 September
+2026. 124 spoken paragraphs, 1,322 words,
 11 slide markers mapping to the unchanged 11-slide deck; the reveal deck
 (26 frames) is unchanged. Four standalone Shorts, and editor instruction held in
 two clearly labelled EDITOR ONLY briefs.
@@ -269,14 +268,17 @@ file disagrees, this section is current.
 
 #### Video 1 — How to Change Jobs Without Starting Your Career Over
 
-**H.I.T. CONTENT APPROVED.** The corrected final Code package is still pending
-final verification.
+**H.I.T. CONTENT APPROVED / CORRECTED FINAL PACKAGE AWAITING INDEPENDENT
+REVIEW.**
 
-The wording "roughly eighteen years" is **APPROVED** and is **not** an open
-issue. Video 1 is not blocked on it.
+The wording "roughly eighteen years" is **approved**. It is **not** an open
+issue and is not a pending decision.
 
-Outstanding: verify the corrected final package after the requested
-publishing-description and Shorts-editor-brief fixes.
+The corrected archive currently recorded in the repository is
+`c49fcc42c010f49dab123b61cce330478edd57984cb9afa9bac3ae07a660b2a3`.
+
+Video 1 is **not** to be marked FINAL from a tracker update alone. Temidayo's
+advisor will independently review the corrected deliverable before lock.
 
 Thumbnail text: `DON'T START FROM ZERO`. No new thumbnail decision is to be
 inferred beyond the approved existing production direction.
@@ -292,49 +294,53 @@ complete. Career Decision Evidence Check gate: **SATISFIED**.
 
 #### Video 4 — How to Explain Your Career Change
 
-**H.I.T. CONTENT + PACKAGE APPROVED. NOT YET FINAL**, because canonical
-source-file verification remains open.
+**FINAL + LOCKED FOR RECORDING.** Canonical source-file verification **PASSED**.
 
 | | |
 |---|---|
-| Package ZIP SHA-256 | `5ca42003ff3c100d5afb2d071e87d418abe6d7777b6f45d956d5830ab46104a0` |
-| Keep the Proof gate | PASSED |
+| Title | How to Explain Your Career Change |
+| Thumbnail | YOUR CAREER MAKES SENSE |
 | Canonical spoken count | 1,322 |
+| CTA | Keep the Proof |
+| Keep the Proof production gate | PASSED |
+| Watch next | Video 5 — Should I Make an Internal Move? 3 Questions to Decide |
+| Long-form H.I.T. rebuild | FINAL + LOCKED |
+| Four standalone Shorts | FINAL + LOCKED |
+| Long-form EDITOR ONLY brief | FINAL |
+| Shorts EDITOR ONLY brief | FINAL |
+| Publishing package | FINAL |
+| Slides | UNCHANGED |
+| Reveal deck | UNCHANGED |
+| Thumbnail | UNCHANGED |
 | Previous 1,221-word script | SUPERSEDED |
+| Final package ZIP SHA-256 | `5ca42003ff3c100d5afb2d071e87d418abe6d7777b6f45d956d5830ab46104a0` |
 
-Video 4 is not to be marked FINAL until the canonical
-`Video_4_Code_Prompt_HIT_Final.txt` comparison passes.
-
-> **⚠ Discrepancy on the record, for Temidayo to resolve.** That comparison has
-> already been run and it **passed**. On 1 September 2026 Temidayo uploaded
-> `Video_4_Code_Prompt_HIT_Final.txt` (SHA-256 `9d66cce6a941…`) and the literal
-> comparison returned an exact match: teleprompter minus markers and the clean
-> reading script each equal the canonical source across all 124 spoken
-> paragraphs, 8,057 characters on all three sides, identical SHA-256 of the
-> joined spoken text, and all 12 slide-marker names and positions matching. It
-> is recorded in full under *Source verification* above and in
-> `video-4-slides/hit-final/QA_REPORT.json`, and Video 4 was marked FINAL AND
-> LOCKED at commit `7530586`.
->
-> The condition stated above is therefore already met. Video 4 is held at **NOT
-> YET FINAL** here because that is Temidayo's latest explicit instruction, and
-> the earlier lock is not being asserted over it. One word from Temidayo moves
-> it to FINAL; no package file needs to change either way, and the archive hash
-> is unaffected.
+The package was not rebuilt or altered for the lock; no packaged file changed.
 
 #### Video 5 — Should I Make an Internal Move? 3 Questions to Decide
 
-**REOPENED UNDER H.I.T. New H.I.T. content architecture APPROVED. New final
-H.I.T. package NOT YET BUILT.**
+**H.I.T. PACKAGE BUILT — awaiting Temidayo's approval.** Built from the
+canonical `Video_5_Code_Prompt_HIT_Final.txt`, with the source comparison run in
+the same build pass.
+
+| | |
+|---|---|
+| Package | `deliverables/video-5-slides/hit-final/` |
+| Canonical spoken count | 1,403 across 141 spoken paragraphs |
+| Slide markers | 12, mapping to the unchanged 12-slide deck |
+| Reveal deck | unchanged, 25 frames |
+| Archive SHA-256 | `3b9fcc52a0c79cae2b25da04f72e8f6eee34e270dad6f3b4bd731ac4ffa09854` |
+| Source verification | **PASSED** in the build pass — exact match, no separate round needed |
+| CTA | Career Decision Evidence Check |
+| CTA production gate | **SATISFIED** |
+| Watch next | Are You Growing—or Just Being Given More Work? |
 
 The previous script and package at `de4363c` remain historical reference
-material and are no longer the authoritative recording script. Video 5 is **not**
-locked for recording.
+material and are **not** the authoritative recording script. The old exception
+that delayed personal proof until roughly 1:35 is **superseded**; the proof now
+sits in the opening.
 
-Career Decision Evidence Check gate: **SATISFIED**.
-
-Next action: build the new H.I.T. package when Temidayo provides the approved
-Code prompt.
+Video 5 is **not** locked for recording until Temidayo approves this package.
 
 #### Video 6 — Are You Growing—or Just Being Given More Work?
 
@@ -367,9 +373,9 @@ package is not final.
 
 | State | Videos |
 |---|---|
-| FINAL + LOCKED | 2, 3 |
-| Content approved / final package check still open | 1, 4 |
-| H.I.T. content approved / new package not yet built | 5 |
+| FINAL + LOCKED | 2, 3, 4 |
+| Content approved / awaiting independent review before lock | 1 |
+| H.I.T. package built / awaiting approval | 5 |
 | Reopened / H.I.T. revision still required | 6, 7, 8 |
 
 Videos 5 to 8 are **not** to be reverted to their prior "locked" state merely
