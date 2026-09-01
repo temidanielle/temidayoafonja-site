@@ -1,0 +1,272 @@
+[
+ {
+  "n": 1,
+  "check": "actual slide count",
+  "result": "PASS",
+  "detail": "12 main slides"
+ },
+ {
+  "n": 2,
+  "check": "actual reveal-frame count",
+  "result": "PASS",
+  "detail": "24 reveal frames"
+ },
+ {
+  "n": 3,
+  "check": "title matches locked title",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 4,
+  "check": "thumbnail copy matches locked copy",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 5,
+  "check": "company name absent from all package documents",
+  "result": "PASS",
+  "detail": "[]"
+ },
+ {
+  "n": 6,
+  "check": "'nothing existed' never appears as a factual claim",
+  "result": "PASS",
+  "detail": "[]"
+ },
+ {
+  "n": 7,
+  "check": "'built everything' appears only as a rejected phrase",
+  "result": "PASS",
+  "detail": "[]"
+ },
+ {
+  "n": 8,
+  "check": "solo-builder framing absent",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 9,
+  "check": "~30% retention figure absent as a claim",
+  "result": "PASS",
+  "detail": "[]"
+ },
+ {
+  "n": 10,
+  "check": ">$2M figure absent as a claim",
+  "result": "PASS",
+  "detail": "[]"
+ },
+ {
+  "n": 11,
+  "check": "CSR wording carries no invented metric",
+  "result": "PASS",
+  "detail": "[]"
+ },
+ {
+  "n": 11.1,
+  "check": "CSR wording uses the approved phrasing",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 12,
+  "check": "onboarding evidence precise (47 to 75, led with her team)",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 13,
+  "check": "executive-planning wording uses 'more regular input ... about 12 months'",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 14,
+  "check": "integration evidence uses 90 days / no critical talent loss",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 15,
+  "check": "no single initiative claimed to cause all outcomes",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 16,
+  "check": "'building while operating' framing preserved",
+  "result": "PASS",
+  "detail": "17 occurrences"
+ },
+ {
+  "n": 17,
+  "check": "exactly four Shorts",
+  "result": "PASS",
+  "detail": "['Video_7_Short_1_Work_Became_Invisible.docx', 'Video_7_Short_2_Built_From_Scratch_Not_Alone.docx', 'Video_7_Short_3_Building_While_Operating.docx', 'Video_7_Short_4_Reconstruct_The_Before.docx']"
+ },
+ {
+  "n": 18,
+  "check": "Short recording docs contain no editor directions",
+  "result": "PASS",
+  "detail": "[]"
+ },
+ {
+  "n": 19,
+  "check": "both EDITOR ONLY docs labelled",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 20,
+  "check": "Keep the Proof is the sole product CTA",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 20.1,
+  "check": "no Field Kit URL or offer in CTA copy",
+  "result": "PASS",
+  "detail": "['Video_7_HIT_FINAL/LONG_FORM/Video_7_EDITOR_ONLY_HIT_Brief_v2.0.docx']"
+ },
+ {
+  "n": 21,
+  "check": "Video 4 is Watch Next",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 22,
+  "check": "no Field Kit / Career Decision Evidence Check leak into CTA copy",
+  "result": "PASS",
+  "detail": "[]"
+ },
+ {
+  "n": 23,
+  "check": "evidence-retention boundary safe",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 24,
+  "check": "approved emoji system in public description",
+  "result": "PASS",
+  "detail": "found: ['\u23f1', '\u25b6', '\u2728', '\ud83d\udd17', '\ud83e\udded']"
+ },
+ {
+  "n": 25,
+  "check": "chapter estimates inserted directly into public description",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 26,
+  "check": "no [INSERT] placeholder remains",
+  "result": "PASS",
+  "detail": "[]"
+ },
+ {
+  "n": 27,
+  "check": "working-estimates warning sits outside the copy-ready block",
+  "result": "PASS",
+  "detail": "begin=12 end=58 warn=[60]"
+ },
+ {
+  "n": 27.1,
+  "check": "no internal note inside the copy-ready block",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 28,
+  "check": "description-only public copy == publishing-package public copy",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 29,
+  "check": "canonical source verification",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 30,
+  "check": "teleprompter DOCX == TXT",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 31,
+  "check": "reading DOCX == TXT",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 32,
+  "check": "teleprompter minus markers == reading script",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 33,
+  "check": "all slide markers ordered and mapped",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 36,
+  "check": "ZIP built from an explicit 13-file allowlist",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 37,
+  "check": "exactly 13 files in the archive",
+  "result": "PASS",
+  "detail": "13"
+ },
+ {
+  "n": 38,
+  "check": "no _source, Python, QA or image files in the archive",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 39,
+  "check": "README matches archive",
+  "result": "PASS",
+  "detail": "[]"
+ },
+ {
+  "n": 40,
+  "check": "SHA256SUMS.txt has exactly 12 entries",
+  "result": "PASS",
+  "detail": "12"
+ },
+ {
+  "n": 41,
+  "check": "sha256sum -c succeeds",
+  "result": "PASS",
+  "detail": "README_FINAL.txt: OK"
+ },
+ {
+  "n": 42,
+  "check": "sibling ZIP checksum matches the archive",
+  "result": "PASS",
+  "detail": "5dc97bb6a5eb5f7625ab4246a9d76417639aba627fb40b3b3d713e200fc98d8d"
+ },
+ {
+  "n": 42.1,
+  "check": "in-ZIP and on-disk SHA256SUMS.txt byte-identical",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 43,
+  "check": "description-only DOCX hash reported",
+  "result": "PASS",
+  "detail": "6d608afb31be46be9f84808ec3dce4861d586f470f7bd0037205bc2ee2803815"
+ }
+]

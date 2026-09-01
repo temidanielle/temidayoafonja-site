@@ -1,0 +1,1417 @@
+VIDEO 7 — H.I.T. REBUILD / FINAL RECORDING PACKAGE
+
+Build the final revised recording and production-material package for Temidayo Afonja’s YouTube Video 7.
+
+IMPORTANT:
+This is a SPOKEN-SCRIPT + EDITOR-INSTRUCTION + PUBLISHING + SHORTS update only.
+
+DO NOT modify:
+- the existing Video 7 PowerPoint slides unless explicitly authorized below;
+- the existing reveal-build deck unless explicitly authorized below;
+- the approved thumbnail direction;
+- any website file;
+- any product;
+- any other video.
+
+The existing Video 7 visual system remains authoritative.
+
+Before building, inspect the actual current files and report:
+- exact main-slide count;
+- exact reveal-frame count;
+- exact current Watch Next wording;
+- exact current CTA wording.
+
+==================================================
+LOCKED VIDEO 7 METADATA
+==================================================
+
+Public title:
+How to Show Your Impact at Work When You Built It From Scratch
+
+Thumbnail:
+MAKE INVISIBLE WORK VISIBLE
+
+Selected thumbnail direction:
+Temidayo in the magenta sweater with the open-palm / presenting gesture.
+
+Primary search phrase:
+how to show your impact at work
+
+Primary CTA:
+Keep the Proof — A 60-Minute Career Evidence System
+https://temidayoafonja.com/keep-the-proof
+
+Watch next:
+Video 4 — How to Explain Your Career Change
+
+Primary Capability Formation question:
+Can the organization see and use capability it already has?
+
+Core distinction:
+Sometimes the hardest work to prove is the work that made later work possible.
+
+Earned line:
+Sometimes the most transferable part of being first is what you had to learn before the role could work at all.
+
+==================================================
+FACTUAL SOURCE OF TRUTH — VIDEO 7
+==================================================
+
+Use this chapter as the personal-evidence source:
+
+- Senior Director, Employee Experience & Belonging
+- 2022 to March 2026
+- global, remote-first B2B SaaS company
+- 500+ employees
+- reported to the Chief People Officer
+- worked across senior leaders on workforce priorities, change, people systems and organizational effectiveness
+
+DO NOT NAME THE COMPANY PUBLICLY.
+
+The accurate framing is NOT:
+“Nothing existed.”
+
+Use:
+Temidayo entered a role before all of the surrounding infrastructure was mature, and part of the job became building the conditions that allowed the work to function.
+
+The strongest accurate areas of incomplete / still-maturing infrastructure were:
+- change-management infrastructure
+- operating-model governance
+- organizational-effectiveness mechanisms
+- more structured leadership enablement
+- clearer performance rhythms
+- stronger onboarding infrastructure
+- stronger integration/governance mechanisms across functions
+
+Temidayo helped build and/or lead:
+- change-management infrastructure
+- operating-model governance
+- organizational-effectiveness mechanisms
+- onboarding redesign
+- leadership enablement
+- performance rhythms
+- AI-enabled people initiatives
+- post-acquisition integration and HRIS governance
+- a global CSR program that launched and scaled across all regions
+
+Use:
+“I led”
+or
+“I built with my team / in partnership with leaders”
+where appropriate.
+
+Do NOT imply Temidayo personally created every outcome alone.
+
+==================================================
+DEFENSIBLE OUTCOMES
+==================================================
+
+The following outcomes are approved for this chapter when precisely attributed:
+
+1. People became a more regular input into executive planning within about 12 months.
+
+2. One new-hire integration measure moved from 47 to 75 during the onboarding redesign Temidayo led with her team.
+
+3. Post-acquisition integration work was completed within 90 days with no critical talent loss.
+
+4. Temidayo launched a global CSR program that scaled across all regions.
+
+The CSR proof may be used as evidence of building a mechanism that could operate across regions.
+
+Do NOT invent:
+- CSR participation rates;
+- CSR volunteer hours;
+- donation amounts;
+- engagement results;
+- employee sentiment results;
+- regional adoption percentages;
+- business outcomes;
+- causality beyond the fact that the program launched and scaled across all regions.
+
+==================================================
+EXCLUDED METRICS
+==================================================
+
+The broader Airship/global B2B SaaS chapter included:
+- approximately 30% retention improvement during the period
+- estimated turnover cost avoidance exceeding $2M
+
+DO NOT use either number in Video 7.
+
+Do NOT say:
+“I improved retention by 30%.”
+Do NOT say:
+“I saved the company $2M.”
+
+Unless the underlying calculation and attribution documents are explicitly supplied and approved in a future revision, exclude both figures from:
+- long-form script
+- Shorts
+- description
+- editor briefs
+- slides
+- metadata
+
+==================================================
+DIFFICULTY / CONSTRAINT
+==================================================
+
+The approved difficulty framing is:
+ambiguity and incomplete infrastructure.
+
+Use:
+- building while operating
+- solving immediate business needs while also creating mechanisms that made future work easier
+- working across functions where ownership was not naturally contained in one team
+- building credibility and operating relationships while the work itself was still being defined
+
+Do NOT invent a dramatic resistance story.
+Do NOT imply people resisted Temidayo unless a specific factual example is later supplied.
+
+==================================================
+H.I.T. FIRST-30-SECOND STANDARD
+==================================================
+
+H = Hook
+I = Interest
+T = Trust
+
+The opening must function as one audiovisual unit:
+- immediate human recognition;
+- meaningful visual interest;
+- specific personal evidence;
+- clear viewer payoff by approximately 20–30 seconds;
+- no exaggerated “nothing existed” language;
+- no forced statistic;
+- no heroic solo-builder framing.
+
+==================================================
+CREATE THIS FOLDER STRUCTURE
+==================================================
+
+Video_7_HIT_FINAL/
+    LONG_FORM/
+        Video7TeleprompterScriptwithslidemarkers_HIT_v2.0.docx
+        Video7TeleprompterScriptwithslidemarkers_HIT_v2.0.txt
+        Video7ReadingScriptnomarkers_HIT_v2.0.docx
+        Video7ReadingScriptnomarkers_HIT_v2.0.txt
+        Video_7_EDITOR_ONLY_HIT_Brief_v2.0.docx
+        Video_7_Publishing_Package_HIT_v2.0.docx
+
+    SHORTS/
+        Video_7_Short_1_Work_Became_Invisible.docx
+        Video_7_Short_2_Built_From_Scratch_Not_Alone.docx
+        Video_7_Short_3_Building_While_Operating.docx
+        Video_7_Short_4_Reconstruct_The_Before.docx
+        Video_7_Shorts_EDITOR_ONLY_HIT_Brief.docx
+
+    README_FINAL.txt
+    SHA256SUMS.txt
+
+Also create:
+
+Video_7_HIT_FINAL_Recording_and_Shorts_Package.zip
+
+And:
+
+Video_7_HIT_FINAL_Recording_and_Shorts_Package.zip.sha256
+
+Also create a separate description-only document outside the ZIP:
+
+Video_7_YouTube_Description_HIT.docx
+
+The description-only document must contain:
+- final title
+- thumbnail copy
+- primary search phrase
+- copy-ready YouTube description
+- restrained emoji system
+- working chapters
+- working-estimates warning
+- pinned comment
+- Watch Next route
+- YouTube tag field
+
+Do not count the separate description-only document as one of the 13 ZIP files.
+
+Build the ZIP from an explicit allowlist.
+
+Do not include:
+- _source
+- Python
+- generators
+- QA utilities
+- rendered page images
+- temp files
+- hidden files
+- obsolete drafts
+- duplicate files
+
+==================================================
+DOCUMENT DESIGN
+==================================================
+
+Use the same restrained professional formatting system as the approved H.I.T. packages for Videos 1–6.
+
+Use:
+- deep navy
+- warm cream
+- muted gold
+- readable teleprompter-sized body text
+- generous spacing
+- no decorative illustrations
+- no editor notes in Temidayo’s recording copy
+
+==================================================
+LONG-FORM TELEPROMPTER SCRIPT
+==================================================
+
+Create:
+Video7TeleprompterScriptwithslidemarkers_HIT_v2.0.docx
+Video7TeleprompterScriptwithslidemarkers_HIT_v2.0.txt
+
+The DOCX and TXT must contain the exact same spoken language.
+
+Use the approved script below EXACTLY.
+
+Do not rewrite, summarize, expand, shorten, polish or substitute wording.
+
+BEGIN APPROVED VIDEO 7 SCRIPT
+
+Some of the hardest work to prove is the work that made everything else possible.
+
+In one senior people role, I joined a global remote-first company where parts of the change, onboarding, governance and organizational-effectiveness infrastructure were still incomplete.
+
+I wasn’t building everything from zero. I was building while operating — solving immediate needs while helping create the mechanisms future work could rely on.
+
+I’ll show you how to reconstruct the before, make your judgment visible and keep proof of work that can otherwise disappear once the system starts functioning.
+
+[SLIDE: Core Distinction]
+
+I’m Temidayo Afonja. I help experienced professionals understand what their work has built in them, what can travel and how to make that value easier to see when the context changes.
+
+There is a particular evidence problem when you are early in a function, first in a role, or responsible for building infrastructure that is not yet mature.
+
+Once the work starts functioning, the organization sees the process.
+
+The meeting.
+
+The rhythm.
+
+The dashboard.
+
+The onboarding experience.
+
+The governance mechanism.
+
+The program that now operates across regions.
+
+What becomes harder to see is everything that had to happen before those things could work reliably.
+
+And that is why foundational work can become invisible surprisingly quickly.
+
+[SLIDE: The Invisible-Work Problem]
+
+Think about what happens after you build something useful.
+
+A process that once needed constant explanation becomes normal.
+
+A decision that once required five conversations becomes part of a regular operating rhythm.
+
+People begin using language that previously did not exist.
+
+Ownership becomes clearer.
+
+A program that once had to be built and launched becomes part of how the organization operates across regions.
+
+The organization starts treating the mechanism as though it was always there.
+
+That is success.
+
+But it creates an evidence problem.
+
+Because later, when someone asks:
+
+“What exactly did you do?”
+
+you may describe the thing that exists now instead of the conditions you had to create before it could exist.
+
+So the first step is to reconstruct the before.
+
+[SLIDE: Reconstruct the Before]
+
+Do not start with:
+
+“I built a program.”
+
+Start with:
+
+What was incomplete, inconsistent or difficult before the work?
+
+And be precise.
+
+In my case, I would not say:
+
+“Nothing existed.”
+
+That would not be true.
+
+The better description is that parts of the surrounding people-capability and organizational-effectiveness infrastructure were not yet operating at the level the organization needed.
+
+That included areas such as change-management infrastructure, operating-model governance, leadership enablement, onboarding and the mechanisms that helped work move across functions.
+
+That is a very different claim from:
+
+“I created everything.”
+
+Accuracy makes the story stronger.
+
+[SLIDE: Before Questions]
+
+To reconstruct the before, ask four questions.
+
+What could people not do reliably yet?
+
+Where was ownership unclear?
+
+What depended too heavily on individual effort or informal relationships?
+
+And what happened every time the same problem returned?
+
+That is your baseline.
+
+It may not be a clean number.
+
+Foundational work often begins before the organization has good measurement.
+
+But there was still a starting condition.
+
+Maybe decisions took too long.
+
+Maybe teams solved the same problem repeatedly.
+
+Maybe the work could not scale.
+
+Maybe leaders were operating without a shared mechanism.
+
+The goal is not to make the “before” sound worse than it was.
+
+The goal is to make the starting condition visible enough that someone can understand why building the infrastructure mattered.
+
+[SLIDE: Show the Judgment]
+
+The second step is to show the judgment inside the building work.
+
+This matters because “I built a process” can make complex work sound administrative.
+
+But the process itself may not have been the hard part.
+
+The hard part may have been deciding:
+
+What should be standardized?
+
+What still needed flexibility?
+
+Who had to own which decision?
+
+Where should information move?
+
+What needed to become repeatable?
+
+What could not be solved inside one function?
+
+And what had to be true before people would actually use the mechanism you were building?
+
+That is where the capability sits.
+
+[SLIDE: Built From Scratch Does Not Mean Built Alone]
+
+And there is an important boundary here.
+
+Building something from scratch does not mean doing everything yourself.
+
+In that chapter of my career, I led work and built with my team and in partnership with leaders.
+
+That distinction matters.
+
+Foundational leadership often means creating enough clarity, governance and shared ownership for other people to do their work better.
+
+The contribution may be:
+
+the operating model;
+
+the decision rhythm;
+
+the integration mechanism;
+
+the shared language;
+
+the leadership capability;
+
+the program that can scale across regions;
+
+or the relationships that allowed several functions to move together.
+
+So do not inflate your story into:
+
+“I built all of this.”
+
+Ask instead:
+
+What part of the infrastructure was I responsible for making possible?
+
+That is a much more defensible explanation.
+
+[SLIDE: Building While Operating]
+
+One of the things that chapter taught me was how to build while operating.
+
+The business did not stop while the infrastructure was being built.
+
+Immediate workforce needs still had to be handled.
+
+Leaders still needed support.
+
+Change was still happening.
+
+Integration work still had deadlines.
+
+A global CSR program still had to move from idea to launch and then scale across regions.
+
+So part of the job was solving today’s problem while creating mechanisms that would make the next version of the problem easier to handle.
+
+And over time, there were visible signs that the operating environment had changed.
+
+Within about twelve months, People had become a more regular input into executive planning.
+
+In the onboarding redesign I led with my team, one measure of how well new hires felt integrated moved from 47 to 75.
+
+During a post-acquisition integration chapter, the integration work was completed within 90 days with no critical talent loss.
+
+And the global CSR program launched and scaled across all regions.
+
+Those are different pieces of evidence.
+
+I would not combine them into one dramatic claim.
+
+They show different things.
+
+One speaks to operating influence.
+
+One speaks to onboarding.
+
+One speaks to integration execution.
+
+One speaks to building a program that could operate across regions.
+
+The point is not that one mechanism caused all four.
+
+The point is that the work left evidence behind.
+
+[SLIDE: Keep the Proof]
+
+The third step is to preserve that evidence before the infrastructure becomes normal.
+
+Because once something works, memory simplifies it.
+
+People remember:
+
+“We have onboarding.”
+
+“We have a governance process.”
+
+“We have a leadership rhythm.”
+
+“We have a global program.”
+
+They may not remember why it was needed, what you had to decide or what changed while it was being built.
+
+So for foundational work, capture four things.
+
+The starting condition.
+
+What was incomplete, unclear or difficult?
+
+Your judgment.
+
+What did you have to decide, interpret or design?
+
+What you built with others.
+
+What mechanism, process, rhythm, program or infrastructure became possible?
+
+The evidence.
+
+What changed that you can truthfully and safely point to?
+
+[SLIDE: Proof Without Overclaiming]
+
+And the wording matters.
+
+Instead of:
+
+“I transformed onboarding.”
+
+I can say:
+
+“I led an onboarding redesign with my team, and one measure of how well new hires felt integrated moved from 47 to 75.”
+
+Instead of:
+
+“I transformed executive decision-making.”
+
+The defensible version is:
+
+“Within about twelve months, People had become a more regular input into executive planning.”
+
+Instead of:
+
+“I single-handedly built a global CSR function.”
+
+The defensible version is:
+
+“I launched a global CSR program that scaled across all regions.”
+
+And instead of:
+
+“I saved millions through retention.”
+
+I am not using that claim here.
+
+There were broader retention and turnover-cost outcomes during this chapter, but without the underlying calculation and attribution in front of me, they do not belong in this story.
+
+That is an important evidence discipline.
+
+A smaller claim you can defend is more useful than a larger claim you cannot.
+
+[SLIDE: What Did the Building Form?]
+
+Now ask the Capability Formation question.
+
+What did building this make you able to do?
+
+Maybe you learned to enter ambiguity without waiting for perfect instructions.
+
+Maybe you learned to create operating mechanisms while the work was still moving.
+
+Maybe you learned to work across functions where ownership was distributed.
+
+Maybe you learned to turn informal knowledge into something repeatable.
+
+Maybe you learned how to build a program that could scale across regions.
+
+Maybe you learned what had to exist before a function could perform reliably.
+
+That is where the portability starts to appear.
+
+Because the infrastructure itself may belong to one employer.
+
+The exact program may not travel.
+
+The company language may not travel.
+
+But some of the judgment can.
+
+And this is the line I want you to remember:
+
+Sometimes the most transferable part of being first is what you had to learn before the role could work at all.
+
+That is often the part that disappears from the résumé first.
+
+[SLIDE: Make Invisible Work Visible]
+
+If you have built something that is now taken for granted, write down:
+
+What was incomplete before?
+
+What judgment did the work require from me?
+
+What did I build with others?
+
+What became easier, clearer or more reliable afterward?
+
+What permitted evidence supports that?
+
+And what did I become able to do because I had to build it?
+
+Do not try to answer with one adjective.
+
+Do not write:
+
+“strategic.”
+
+“innovative.”
+
+“transformational.”
+
+Write what the work required you to notice, decide and make possible.
+
+That is how invisible work becomes legible.
+
+[SLIDE: Keep the Proof / Watch Next]
+
+If the hardest part is retrieving the evidence behind work like this, that is what Keep the Proof is designed for.
+
+It is a 60-minute career evidence system for preserving the work, decisions and proof you may need later — while the context is still clear.
+
+Use only information you are entitled to retain.
+
+Do not take confidential, proprietary, customer, employee or employer-owned material.
+
+You can find Keep the Proof at:
+
+temidayoafonja.com/keep-the-proof.
+
+And once you have the proof, there is another challenge:
+
+How do you explain a career that moved across several chapters without making it sound unfocused?
+
+Watch:
+
+How to Explain Your Career Change
+
+next.
+
+Because foundational work should not disappear simply because the infrastructure you built started working.
+
+END APPROVED VIDEO 7 SCRIPT
+
+==================================================
+CLEAN READING SCRIPT
+==================================================
+
+Create:
+Video7ReadingScriptnomarkers_HIT_v2.0.docx
+Video7ReadingScriptnomarkers_HIT_v2.0.txt
+
+These files must contain the EXACT SAME SPOKEN WORDS as the teleprompter script.
+
+Remove only:
+- [SLIDE: ...] markers
+- production headings
+- metadata
+- editor directions
+
+Verify programmatically that removing slide markers from the teleprompter produces the same spoken sequence as the reading script.
+
+==================================================
+LONG-FORM EDITOR-ONLY DOCUMENT
+==================================================
+
+Create:
+Video_7_EDITOR_ONLY_HIT_Brief_v2.0.docx
+
+Clearly label:
+EDITOR ONLY
+VIDEO 7
+How to Show Your Impact at Work When You Built It From Scratch
+
+Locked metadata:
+Title: How to Show Your Impact at Work When You Built It From Scratch
+Thumbnail: MAKE INVISIBLE WORK VISIBLE
+CTA: Keep the Proof
+Watch next: How to Explain Your Career Change
+
+Core distinction:
+Sometimes the hardest work to prove is the work that made later work possible.
+
+FIRST 30 SECONDS — H.I.T.
+
+0:00–0:06
+
+Spoken:
+“Some of the hardest work to prove is the work that made everything else possible.”
+
+H = HOOK
+
+Visual:
+Direct-to-camera.
+
+On-screen:
+THE WORK BECAME INVISIBLE
+
+Do not use:
+THERE WAS NOTHING HERE
+or any equivalent overstatement.
+
+0:06–0:17
+
+Spoken:
+“In one senior people role, I joined a global remote-first company where parts of the change, onboarding, governance and organizational-effectiveness infrastructure were still incomplete.”
+
+T = TRUST
+I = INTEREST
+
+Visual:
+CHANGE
+ONBOARDING
+GOVERNANCE
+ORG EFFECTIVENESS
+
+Do not show company name or logo.
+
+0:17–0:24
+
+Spoken:
+“I wasn’t building everything from zero. I was building while operating…”
+
+On-screen:
+BUILDING WHILE OPERATING
+
+This is the factual tension.
+
+0:24–0:30
+
+Progressively reveal:
+RECONSTRUCT THE BEFORE
+SHOW THE JUDGMENT
+KEEP THE PROOF
+
+Then enter the existing deck.
+
+FACTUAL VISUAL BOUNDARY
+
+Never visually imply:
+- nothing existed before Temidayo;
+- Temidayo built everything alone;
+- one initiative caused all later outcomes;
+- the company was dysfunctional.
+
+Use:
+incomplete
+still maturing
+needed stronger mechanisms
+building while operating
+
+PERSONAL PROOF
+
+Approved visible proof can include:
+- People became a more regular input into executive planning within about 12 months
+- onboarding integration measure 47 → 75
+- post-acquisition integration completed within 90 days with no critical talent loss
+- global CSR program launched and scaled across all regions
+
+Do not combine all outcomes into one causal result card.
+
+Keep them distinct.
+
+CSR VISUAL BOUNDARY
+
+If illustrating the CSR program:
+- do not use company branding;
+- do not invent regions;
+- do not invent participation metrics;
+- do not invent donation values;
+- do not invent volunteer hours;
+- do not imply a specific social-impact result.
+
+A simple:
+GLOBAL CSR PROGRAM
+LAUNCHED → SCALED ACROSS REGIONS
+is sufficient.
+
+EXCLUDED METRICS
+
+Do not use:
+- ~30% retention improvement
+- >$2M avoided turnover
+
+CTA
+
+Keep the Proof only:
+https://temidayoafonja.com/keep-the-proof
+
+WATCH NEXT
+
+How to Explain Your Career Change
+
+==================================================
+PUBLISHING PACKAGE
+==================================================
+
+Create:
+Video_7_Publishing_Package_HIT_v2.0.docx
+
+TITLE:
+How to Show Your Impact at Work When You Built It From Scratch
+
+THUMBNAIL:
+MAKE INVISIBLE WORK VISIBLE
+
+PRIMARY SEARCH PHRASE:
+how to show your impact at work
+
+SUPPORTING SEARCH LANGUAGE:
+how to show impact at work
+how to prove your impact at work
+career impact
+foundational work
+first in role
+built from scratch
+invisible work
+career evidence
+leadership impact
+career portability
+
+COPY-READY YOUTUBE DESCRIPTION:
+
+Some of the most valuable work in a career is also the hardest to prove — especially when part of your job was building the infrastructure that later became “the way we work.”
+
+In this video, I show you how to make foundational work visible without pretending you built everything alone or overstating what existed before you arrived.
+
+✨ Reconstruct the before — What was incomplete, unclear or difficult before the work?
+
+✨ Show the judgment — What did you have to notice, decide or design before the mechanism could work?
+
+✨ Keep the proof — What changed, and what permitted evidence can you safely support?
+
+I also share evidence from one senior people chapter where I was building while operating: strengthening change, onboarding, governance and organizational-effectiveness mechanisms while the business continued moving.
+
+That chapter also included launching a global CSR program that scaled across all regions.
+
+The goal is not to say:
+
+“I built everything.”
+
+It is to answer:
+
+“What part of the infrastructure was I responsible for making possible — and what did building it teach me to do?”
+
+Sometimes the most transferable part of being first is what you had to learn before the role could work at all.
+
+🧭 KEEP THE PROOF
+
+A 60-Minute Career Evidence System:
+
+https://temidayoafonja.com/keep-the-proof
+
+⏱️ CHAPTERS
+
+[INSERT WORKING ESTIMATES DIRECTLY HERE IN FINAL DOCUMENT]
+
+▶️ WATCH NEXT
+
+How to Explain Your Career Change
+
+[ADD VIDEO 4 LINK]
+
+🔗 CONNECT AND EXPLORE
+
+Website:
+https://temidayoafonja.com
+
+LinkedIn:
+https://www.linkedin.com/in/temidayo-afonja
+
+Substack:
+https://temidayoafonja.substack.com
+
+#CareerGrowth #Leadership #CareerImpact
+
+IMPORTANT:
+Do NOT leave the [INSERT...] placeholder in the final document.
+
+Generate working chapter estimates from the script and insert them directly beneath ⏱️ CHAPTERS inside the copy-ready public description.
+
+After the copy-ready public description, place:
+
+WORKING ESTIMATES — EDITOR MUST REPLACE FROM FINAL CUT
+
+Approved chapter titles:
+
+When Valuable Work Becomes Invisible
+The Invisible-Work Problem
+Reconstruct the Before
+Questions That Reveal the Starting Condition
+Show the Judgment Behind the Build
+Built From Scratch Does Not Mean Built Alone
+What Building While Operating Taught Me
+Keep Evidence Before the Infrastructure Becomes Normal
+How to Describe Results Without Overclaiming
+What Did Building This Form in You?
+Make Invisible Work Visible
+Keep the Proof
+How to Explain Your Career Change
+
+PINNED COMMENT:
+
+What is something you helped build that now looks completely normal inside the organization?
+
+You do not need to name the company or share confidential details.
+
+Try answering:
+
+What was incomplete before?
+What did you have to make possible?
+What evidence shows that the environment changed?
+
+If keeping that evidence is the difficult part, Keep the Proof is here:
+
+https://temidayoafonja.com/keep-the-proof
+
+YOUTUBE TAG FIELD:
+
+how to show your impact at work, how to show impact at work, how to prove your impact at work, career impact, foundational work, first in role, built from scratch, invisible work, career evidence, leadership impact, career growth, career portability, Temidayo Afonja, Capability Formation
+
+Do not put the full tag field in the public description.
+
+==================================================
+SEPARATE DESCRIPTION-ONLY DOCUMENT
+==================================================
+
+Create outside the ZIP:
+
+Video_7_YouTube_Description_HIT.docx
+
+Use the same clean description-only format established for Videos 1–6.
+
+Include:
+- title
+- thumbnail
+- primary search phrase
+- internal emoji note outside the public copy
+- COPY-READY YOUTUBE DESCRIPTION — BEGIN
+- exact public description with approved emojis
+- working chapters inline
+- END marker
+- working-estimates warning outside the public copy
+- pinned comment
+- Watch Next
+- YouTube tag field
+
+Approved emoji system:
+✨ teaching points
+🧭 CTA/resource
+⏱️ chapters
+▶️ Watch Next
+🔗 Connect and Explore
+
+Do not add more emojis.
+
+==================================================
+FOUR STANDALONE SHORTS
+==================================================
+
+Create four separate DOCX recording documents.
+
+No editor directions inside recording documents.
+
+--------------------------------------------------
+SHORT 1
+--------------------------------------------------
+
+Filename:
+Video_7_Short_1_Work_Became_Invisible.docx
+
+Role:
+Recognition
+
+Verbal hook:
+Some of your most valuable work may be the hardest to prove.
+
+Related long-form:
+How to Show Your Impact at Work When You Built It From Scratch
+
+RECORDING COPY:
+
+Some of your most valuable work may be the hardest to prove.
+
+Especially if your job involved building the conditions that allowed other work to function.
+
+Once the process works, people see the process.
+
+They do not always see the ambiguity, decisions, relationships and infrastructure that had to exist first.
+
+So if something you built is now treated as normal, do not begin your evidence with what exists today.
+
+Reconstruct the before.
+
+What was incomplete?
+
+What was difficult?
+
+What depended on informal effort?
+
+That is often where your impact becomes visible again.
+
+--------------------------------------------------
+SHORT 2
+--------------------------------------------------
+
+Filename:
+Video_7_Short_2_Built_From_Scratch_Not_Alone.docx
+
+Role:
+Distinction
+
+Verbal hook:
+Building something from scratch does not mean building it alone.
+
+Related long-form:
+How to Show Your Impact at Work When You Built It From Scratch
+
+RECORDING COPY:
+
+Building something from scratch does not mean building it alone.
+
+That distinction matters when you explain foundational work.
+
+You may have led the design.
+
+Created the operating rhythm.
+
+Clarified ownership.
+
+Built the governance.
+
+Or brought several functions together.
+
+But the outcome may still have been team-based.
+
+So instead of saying:
+
+“I built everything,”
+
+ask:
+
+What part of the infrastructure was I responsible for making possible?
+
+That gives you a stronger story because it makes your judgment visible without inflating your contribution.
+
+--------------------------------------------------
+SHORT 3
+--------------------------------------------------
+
+Filename:
+Video_7_Short_3_Building_While_Operating.docx
+
+Role:
+Personal proof
+
+Verbal hook:
+In one senior role, I had to build while operating.
+
+Related long-form:
+How to Show Your Impact at Work When You Built It From Scratch
+
+RECORDING COPY:
+
+In one senior role, I had to build while operating.
+
+Parts of the surrounding change, onboarding, governance and organizational-effectiveness infrastructure were still incomplete.
+
+But the business did not stop while we built them.
+
+Immediate needs still had to be handled.
+
+Leaders still needed support.
+
+Change still had deadlines.
+
+That chapter also included launching a global CSR program that scaled across all regions.
+
+It taught me something I still use:
+
+Foundational work is not only about creating the mechanism.
+
+It is learning how to solve today’s problem while building something that makes tomorrow’s version easier to handle.
+
+--------------------------------------------------
+SHORT 4
+--------------------------------------------------
+
+Filename:
+Video_7_Short_4_Reconstruct_The_Before.docx
+
+Role:
+Practical action
+
+Verbal hook:
+If there was no clean baseline, reconstruct the before.
+
+Related long-form:
+How to Show Your Impact at Work When You Built It From Scratch
+
+RECORDING COPY:
+
+If there was no clean baseline for the work you built, reconstruct the before.
+
+Ask four questions.
+
+What could people not do reliably yet?
+
+Where was ownership unclear?
+
+What depended too much on individual effort?
+
+And what happened every time the same problem returned?
+
+You may not have a neat starting metric.
+
+That does not mean there was no baseline.
+
+The starting condition can still show why the infrastructure mattered.
+
+Then document what you decided, what you built with others and what changed afterward.
+
+That is how you make foundational work visible.
+
+==================================================
+SHORTS EDITOR-ONLY BRIEF
+==================================================
+
+Create:
+Video_7_Shorts_EDITOR_ONLY_HIT_Brief.docx
+
+Clearly label:
+EDITOR ONLY
+VIDEO 7 — FOUR STANDALONE SHORTS
+
+SHORT 1
+On-screen:
+THE WORK BECAME INVISIBLE
+
+Visual:
+BEFORE → NOW NORMAL
+
+Avoid:
+“nothing existed”
+
+SHORT 2
+On-screen:
+BUILT FROM SCRATCH ≠ BUILT ALONE
+
+Visual:
+LEAD / PARTNER / BUILD WITH OTHERS
+
+Do not imply solo ownership.
+
+SHORT 3
+On-screen:
+BUILDING WHILE OPERATING
+
+Visual:
+CHANGE
+ONBOARDING
+GOVERNANCE
+ORG EFFECTIVENESS
+GLOBAL CSR
+
+Do not use company branding.
+
+For CSR:
+GLOBAL CSR PROGRAM
+LAUNCHED → SCALED ACROSS REGIONS
+
+No invented CSR metrics.
+
+SHORT 4
+On-screen:
+RECONSTRUCT THE BEFORE
+
+Reveal:
+WHAT COULD PEOPLE NOT DO RELIABLY?
+WHERE WAS OWNERSHIP UNCLEAR?
+WHAT DEPENDED ON INFORMAL EFFORT?
+WHAT KEPT RECURRING?
+
+ALL SHORTS:
+- accurate mobile-safe captions
+- restrained editorial pacing
+- no stock “builder” imagery
+- no construction metaphors
+- no toolbelt graphics
+- no company logos
+- no fake shock expressions
+- no hyperactive zooms
+- add Video 7 as Related Video when available
+
+==================================================
+README
+==================================================
+
+Create README_FINAL.txt.
+
+State:
+
+VIDEO 7 — H.I.T. FINAL RECORDING PACKAGE
+
+Title:
+How to Show Your Impact at Work When You Built It From Scratch
+
+Thumbnail:
+MAKE INVISIBLE WORK VISIBLE
+
+CTA:
+Keep the Proof
+
+CTA URL:
+https://temidayoafonja.com/keep-the-proof
+
+Watch next:
+How to Explain Your Career Change
+
+Long-form:
+Revised under H.I.T.
+
+Personal proof:
+Uses the unnamed global remote-first B2B SaaS chapter.
+
+Company name:
+NOT USED PUBLICLY.
+
+Approved proof:
+- People became a more regular input into executive planning within about 12 months
+- onboarding measure 47 → 75
+- post-acquisition integration completed within 90 days with no critical talent loss
+- global CSR program launched and scaled across all regions
+
+Excluded:
+- ~30% retention improvement
+- >$2M avoided turnover
+
+Shorts:
+Four separately recorded vertical scripts.
+
+Description-only document:
+Created separately outside ZIP.
+
+List all package files.
+
+==================================================
+CANONICAL SOURCE VERIFICATION
+==================================================
+
+Use this prompt file as canonical:
+
+Video_7_Code_Prompt_HIT_Final.txt
+
+In the SAME BUILD PASS:
+
+Extract between:
+BEGIN APPROVED VIDEO 7 SCRIPT
+and
+END APPROVED VIDEO 7 SCRIPT
+
+Compare literally against:
+Video7TeleprompterScriptwithslidemarkers_HIT_v2.0.txt
+after removing only slide-marker lines
+
+and against:
+Video7ReadingScriptnomarkers_HIT_v2.0.txt
+
+Check:
+- every word
+- punctuation
+- apostrophes
+- quotation marks
+- em dashes
+- capitalization
+- paragraph order
+- marker names
+- marker positions
+
+If the canonical TXT file is not available:
+STOP final lock and report the missing file.
+
+Do not hand-transcribe.
+
+==================================================
+CHECKSUM CONVENTION
+==================================================
+
+Inside ZIP:
+SHA256SUMS.txt hashes the other 12 user-facing files only.
+
+Outside ZIP:
+Video_7_HIT_FINAL_Recording_and_Shorts_Package.zip.sha256
+
+Also report SHA-256 for:
+Video_7_YouTube_Description_HIT.docx
+
+==================================================
+QA / VALIDATION
+==================================================
+
+Before packaging:
+
+1. Inspect actual slide count.
+2. Inspect actual reveal-frame count.
+3. Confirm title matches locked title.
+4. Confirm thumbnail copy matches locked copy.
+5. Confirm company name does not appear in public-facing documents.
+6. Confirm “nothing existed” does not appear as a factual claim.
+7. Confirm “built everything” appears only as a phrase being rejected.
+8. Confirm solo-builder framing is absent.
+9. Confirm 30% retention figure absent.
+10. Confirm >$2M figure absent.
+11. Confirm CSR wording is limited to:
+   global CSR program launched and scaled across all regions
+   or equivalent wording with no invented metric.
+12. Confirm onboarding evidence is precisely:
+   one measure of how well new hires felt integrated moved from 47 to 75
+   during the redesign Temidayo led with her team.
+13. Confirm executive-planning wording uses:
+   became a more regular input within about 12 months.
+14. Confirm integration evidence uses:
+   completed within 90 days with no critical talent loss.
+15. Confirm no single initiative is claimed to cause all outcomes.
+16. Confirm “building while operating” framing is preserved.
+17. Confirm exact four Shorts.
+18. Confirm Short recording docs contain no editor directions.
+19. Confirm both EDITOR ONLY docs labelled.
+20. Confirm Keep the Proof is sole product CTA.
+21. Confirm Video 4 is Watch Next.
+22. Confirm no Field Kit / Career Decision Evidence Check leak into CTA copy.
+23. Confirm evidence-retention boundary is safe.
+24. Confirm approved emoji system in public description.
+25. Confirm chapter estimates inserted directly into public description.
+26. Confirm no [INSERT] placeholder remains.
+27. Confirm working-estimates warning sits outside copy-ready block.
+28. Confirm separate description-only DOCX public copy matches publishing-package public copy.
+29. Confirm canonical source verification passes.
+30. Confirm teleprompter DOCX == TXT.
+31. Confirm reading DOCX == TXT.
+32. Confirm teleprompter minus markers == reading script.
+33. Confirm all slide markers ordered and mapped.
+34. Render and visually inspect every DOCX.
+35. Confirm no clipping, overlap, broken glyph, blank page or avoidable nearly-empty trailing page.
+36. Build ZIP from explicit 13-file allowlist.
+37. Confirm exactly 13 files.
+38. Confirm no _source/Python files.
+39. Confirm README matches archive.
+40. Confirm SHA256SUMS.txt has exactly 12 entries.
+41. Run sha256sum -c successfully.
+42. Confirm sibling ZIP checksum matches.
+43. Report description-only DOCX hash.
+44. Confirm no website/product/other-video file changed.
+
+Do not make unapproved editorial changes during QA.
+
+==================================================
+COMPLETION REPORT
+==================================================
+
+Report:
+- exact files created
+- exact files modified
+- actual slide count
+- actual reveal-frame count
+- canonical spoken word count
+- canonical source comparison result
+- slide-marker result
+- four-Short result
+- factual-boundary result
+- company-name exclusion result
+- CSR wording validation result
+- excluded-metric validation result
+- page count for every DOCX
+- full ZIP listing
+- exact ZIP count
+- confirmation no _source/Python
+- final ZIP SHA-256
+- sibling checksum filename
+- description-only DOCX SHA-256
+- any issue requiring Temidayo’s decision
+
+Do not mark FINAL if any validation fails.
+Do not alter approved wording without explicit approval.

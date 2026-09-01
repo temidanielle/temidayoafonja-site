@@ -1,0 +1,67 @@
+# -*- coding: utf-8 -*-
+"""Video 7 Short recording copy, extracted verbatim from the canonical file."""
+
+SHORTS = [('Video_7_Short_1_Work_Became_Invisible.docx',
+  'Recognition',
+  'Some of your most valuable work may be the hardest to prove.',
+  ['Some of your most valuable work may be the hardest to prove.',
+   'Especially if your job involved building the conditions that allowed other work to '
+   'function.',
+   'Once the process works, people see the process.',
+   'They do not always see the ambiguity, decisions, relationships and infrastructure '
+   'that had to exist first.',
+   'So if something you built is now treated as normal, do not begin your evidence '
+   'with what exists today.',
+   'Reconstruct the before.',
+   'What was incomplete?',
+   'What was difficult?',
+   'What depended on informal effort?',
+   'That is often where your impact becomes visible again.']),
+ ('Video_7_Short_2_Built_From_Scratch_Not_Alone.docx',
+  'Distinction',
+  'Building something from scratch does not mean building it alone.',
+  ['Building something from scratch does not mean building it alone.',
+   'That distinction matters when you explain foundational work.',
+   'You may have led the design.',
+   'Created the operating rhythm.',
+   'Clarified ownership.',
+   'Built the governance.',
+   'Or brought several functions together.',
+   'But the outcome may still have been team-based.',
+   'So instead of saying:',
+   '“I built everything,”',
+   'ask:',
+   'What part of the infrastructure was I responsible for making possible?',
+   'That gives you a stronger story because it makes your judgment visible without '
+   'inflating your contribution.']),
+ ('Video_7_Short_3_Building_While_Operating.docx',
+  'Personal proof',
+  'In one senior role, I had to build while operating.',
+  ['In one senior role, I had to build while operating.',
+   'Parts of the surrounding change, onboarding, governance and '
+   'organizational-effectiveness infrastructure were still incomplete.',
+   'But the business did not stop while we built them.',
+   'Immediate needs still had to be handled.',
+   'Leaders still needed support.',
+   'Change still had deadlines.',
+   'That chapter also included launching a global CSR program that scaled across all '
+   'regions.',
+   'It taught me something I still use:',
+   'Foundational work is not only about creating the mechanism.',
+   'It is learning how to solve today’s problem while building something that makes '
+   'tomorrow’s version easier to handle.']),
+ ('Video_7_Short_4_Reconstruct_The_Before.docx',
+  'Practical action',
+  'If there was no clean baseline, reconstruct the before.',
+  ['If there was no clean baseline for the work you built, reconstruct the before.',
+   'Ask four questions.',
+   'What could people not do reliably yet?',
+   'Where was ownership unclear?',
+   'What depended too much on individual effort?',
+   'And what happened every time the same problem returned?',
+   'You may not have a neat starting metric.',
+   'That does not mean there was no baseline.',
+   'The starting condition can still show why the infrastructure mattered.',
+   'Then document what you decided, what you built with others and what changed '
+   'afterward.',
+   'That is how you make foundational work visible.'])]
