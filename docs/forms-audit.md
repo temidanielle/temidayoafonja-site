@@ -410,6 +410,43 @@ exposes no exception name, message, context value, structure or length, and no c
 that a later network read or write will succeed. That has to be verified separately, on the preview
 of the eventual shared fix, if initialisation passes.
 
+### Diagnostic result, 2026-09-01: zero-configuration does not initialise
+
+Run against Deploy Preview `6a970296da5e430008a8c6f8`, PR #108, through the protected export:
+
+```
+{ status: 500, error: "export_failed", reason: "blobs_api_400",
+  mode: "manual", zero_config_initializes: false }
+```
+
+Four things are established.
+
+**The function executes.** A 500 carrying this body, rather than a 404, confirms PR #110's
+`/netlify/*` rule does not intercept `/.netlify/functions/*`.
+
+**The manual route still fails the same way.** `reason: blobs_api_400` is unchanged, and `mode:
+manual` confirms the shared helper's precedence is untouched.
+
+**Netlify's prescribed remedy does not initialise.** `getStore("career-decisions-leads")`, the exact
+zero-configuration call in their guidance, threw. Reading the SDK, the only throw available at that
+point is `MissingBlobsEnvironmentError`, which the client raises when it finds neither an injected
+context nor supplied credentials. **That means no Blobs context is present in the function runtime.**
+
+**Two independent methods now agree.** The direct read of 2026-08-26 found no context. Netlify
+advised that application code should not read the variable and that their SDK reads it internally,
+so the test was rebuilt to ask through the SDK. It returns the same answer. The earlier observation
+was not a measurement artefact.
+
+**This contradicts Netlify support case #1099659**, which states the context is injected in both
+production and Deploy Preview functions and that switching to zero-configuration is sufficient. On
+this project it is not. Had the shared helper been changed on that assurance, all nine Blobs
+functions would have moved from a failing manual route to a route that cannot initialise at all.
+
+**No shared change is authorised and none has been made.** `netlify/lib/blobs.js`, the credentials,
+the bundler configuration and every capture function are untouched. The result goes back to Netlify.
+
+Not established: what the underlying 400 is. That question is unchanged and still open.
+
 ### Rate limiting does not depend on Blobs
 
 Added 2026-08-27, for the same incident. The submission function's own limiter, ten per hour per
