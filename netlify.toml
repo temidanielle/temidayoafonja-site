@@ -138,8 +138,7 @@
   to = "/keep-the-proof.html"
   status = 200
 
-# The Career Evidence Starter. PREVIEW: the page also carries a noindex tag,
-# and nothing on the site links to it yet. Remove that tag at launch.
+# The Career Evidence Starter, the free entry point to the Keep the Proof ladder.
 [[redirects]]
   from = "/career-evidence-starter"
   to = "/career-evidence-starter.html"
