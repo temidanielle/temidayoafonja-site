@@ -9,6 +9,12 @@ Two blockers stand between this package and publication. Neither blocks filming.
 
 ## 1. Build the /career-decisions destination
 
+> **GATE SATISFIED — production journey verified before launch, 1 September
+> 2026.** The destination was built and verified. This handoff section is
+> complete and is retained for release traceability only; it is not an open
+> request.
+
+
 **Owner: whoever works on the website. Publication blocker.**
 
 Copy the block below into that session.

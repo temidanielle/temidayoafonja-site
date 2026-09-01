@@ -95,6 +95,20 @@ glyph was drawn for the same reason.
 No other substitution was made. No palette value was invented.
 
 ==============================================================
+GATE SATISFIED — PRODUCTION JOURNEY VERIFIED BEFORE LAUNCH
+1 September 2026
+==============================================================
+
+https://temidayoafonja.com/career-decisions IS LIVE.
+
+The full core production journey passed end to end: page load, gated
+reveal after submission, new-subscriber creation with Confirmed status,
+correct tagging, correct consent fields, UTM capture and delivery email.
+
+The gate statement below is retained for release traceability and no
+longer describes current state.
+
+==============================================================
 PUBLICATION GATE — REQUIRES ACTION BEFORE PUBLISHING
 ==============================================================
 
@@ -136,6 +150,9 @@ JUDGMENT CALLS MADE
 ==============================================================
 UNRESOLVED — REQUIRES YOUR APPROVAL
 ==============================================================
+
+   GATE SATISFIED, 1 September 2026 — the page is live and the production
+   journey was verified. Item 1 below is closed.
 
 1. The /career-decisions page must be live before publication. See the
    publication gate above. This is a website change, outside these files.

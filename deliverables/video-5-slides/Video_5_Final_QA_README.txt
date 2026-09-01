@@ -129,6 +129,20 @@ editable vector shapes in muted gold. It was scaled with the type in this pass
 and remains fully editable.
 
 ==============================================================
+GATE SATISFIED — PRODUCTION JOURNEY VERIFIED BEFORE LAUNCH
+1 September 2026
+==============================================================
+
+https://temidayoafonja.com/career-decisions IS LIVE.
+
+The full core production journey passed end to end: page load, gated
+reveal after submission, new-subscriber creation with Confirmed status,
+correct tagging, correct consent fields, UTM capture and delivery email.
+
+The gate statement below is retained for release traceability and no
+longer describes current state.
+
+==============================================================
 PUBLICATION GATE — STILL OPEN
 ==============================================================
 

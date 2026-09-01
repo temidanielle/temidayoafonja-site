@@ -54,6 +54,12 @@ by garment sampling. The gold-outfit portrait has never been supplied. Nothing w
 rendered and nothing was substituted. Detail in
 `VIDEO_3_THUMBNAIL_STATUS_v1.1.md`.
 
+
+> **GATE SATISFIED — production journey verified before launch, 1 September 2026.**
+> `https://temidayoafonja.com/career-decisions` is live and the full core
+> production journey passed end to end. The blocking statement below is retained
+> for release traceability and no longer describes current state.
+
 **CTA route.** `temidayoafonja.com/career-decisions` still does not exist in the
 repository: no page, no redirect among the thirteen rules in `netlify.toml`, no
 sitemap entry. It stays on slide 12 as instructed, is marked a publication

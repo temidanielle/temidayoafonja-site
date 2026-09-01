@@ -138,5 +138,11 @@ Two open items, neither of them a coherence problem:
 
 - **Video 1 Option A or Option B** is still your selection to make. Option A is
   recommended and is what every sheet here uses.
+
+> **GATE SATISFIED — production journey verified before launch, 1 September 2026.**
+> `https://temidayoafonja.com/career-decisions` is live and the full core
+> production journey passed end to end. The blocking statement below is retained
+> for release traceability and no longer describes current state.
+
 - `/career-decisions` still does not exist on the site. The Video 3 CTA points
   there, and that blocks Video 3's publication regardless of artwork.

@@ -199,6 +199,12 @@ Rebuild with `python3 build/build.py` and `python3 script/make_scripts.py`.
 
 ## 6. Before publishing
 
+
+> **GATE SATISFIED — production journey verified before launch, 1 September 2026.**
+> `https://temidayoafonja.com/career-decisions` is live and the full core
+> production journey passed end to end. The blocking statement below is retained
+> for release traceability and no longer describes current state.
+
 1. Build the `/career-decisions` destination. It does not exist today.
 2. Send the gold-outfit portrait so the thumbnail set can be produced.
 3. Confirm the title against TubeBuddy if a replacement is coming; the deck uses

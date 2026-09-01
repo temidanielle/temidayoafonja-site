@@ -72,6 +72,12 @@ visual hypothesis behind the two layouts.
 
 ## Still open, and not solved here
 
+
+> **GATE SATISFIED — production journey verified before launch, 1 September 2026.**
+> `https://temidayoafonja.com/career-decisions` is live and the full core
+> production journey passed end to end. The blocking statement below is retained
+> for release traceability and no longer describes current state.
+
 1. **`/career-decisions` does not exist.** The route has no page, no redirect
    among the netlify.toml rules, and no sitemap entry. The Video 3 CTA points at
    `temidayoafonja.com/career-decisions`. This blocks publication and is a

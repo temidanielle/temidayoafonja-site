@@ -10,28 +10,76 @@ Last updated: 1 September 2026.
 
 ## Publication gates
 
-### `temidayoafonja.com/career-decisions` — CLEARED, 31 August 2026
+### `temidayoafonja.com/career-decisions` — GATE SATISFIED, 1 September 2026
 
-**Temidayo confirmed the page is live at https://temidayoafonja.com/career-decisions.**
-This gate is closed for Video 3 and Video 5 on that confirmation.
+**Production journey verified before launch.** The permanent page is live at
+https://temidayoafonja.com/career-decisions and the full core journey passed end
+to end. This supersedes the 31 August entry, which rested on a page-live
+confirmation alone; the gate is now cleared on a verified journey, not just a
+reachable URL.
 
-Recorded honestly: I could not verify it independently. Outbound requests to
-temidayoafonja.com are refused by this environment's egress proxy
-(`connect_rejected`, organization policy), and the route does not appear in the
-website source in this repository, so there was nothing here to corroborate it
-against either. The status above rests on Temidayo's confirmation, not on a
-check I ran.
+What Temidayo verified:
 
-What the gate required, for the record: the August 28 roadmap audit routes the
-Career Decision Evidence Check to Videos 3, 5, 11, 17, 18 and 21, states
-"publish only when the page is live and usable," and marked Video 3 a **hard
-publication hold until the page is live**. That hold is now lifted.
+| | |
+|---|---|
+| Page | Loads correctly |
+| Gated reveal | Hidden Lightning Lesson and Register Free CTA appear only after successful submission |
+| Unsubscribed addresses | Previously unsubscribed Kit addresses were **not** improperly reactivated |
+| New subscriber | Submitted successfully; three evidence-check questions appeared; Lightning Lesson CTA appeared |
+| Delivery email | "Your Career Decision Evidence Check" arrived immediately, and appears in Kit Email History |
+| Kit record | Subscriber created with **Confirmed** status |
+| Tags applied | `Career Decision Evidence Check — Requested`, `YouTube` |
+| Ongoing Guidance tag | **Not** added, as intended |
+| Consent fields | `delivery_consent = true`; `delivery_policy_version = 2026-08-18`; `guidance_consent = false`; guidance timestamp and policy fields empty |
+| Attribution | YouTube UTM values captured correctly |
 
-**Still required before Video 3 is uploaded or scheduled:** one signed-out
-production check of https://temidayoafonja.com/career-decisions — that it loads
-for a visitor who is not signed in and is not holding a preview link. This is
-Temidayo's check to run; it is recorded in Video 3's README, publishing package
-and editor brief. The same check is worth running before Video 5 publishes.
+Recorded honestly: I could not verify any of this independently. Outbound
+requests to temidayoafonja.com are refused by this environment's egress proxy,
+and Kit is not reachable from here. The status above rests entirely on
+Temidayo's production verification.
+
+**Effect on the series.** The August 28 roadmap audit routes the Career Decision
+Evidence Check to Videos 3, 5, 11, 17, 18 and 21 and stated "publish only when
+the page is live and usable." That condition is **satisfied**, for those videos
+and for any future video routed to the same destination. The URL is retained
+unchanged: `https://temidayoafonja.com/career-decisions`.
+
+Historical gate language is deliberately **not deleted** anywhere. It is marked
+`GATE SATISFIED — production journey verified before launch` in place, so
+release traceability survives. The documents carrying that marker are listed
+under *Gate history* below.
+
+The routine pre-publication signed-out link check stays in the publishing SOP
+for every video that carries the URL.
+
+#### Superseded — the 31 August 2026 entry, retained for traceability
+
+> ### `temidayoafonja.com/career-decisions` — CLEARED, 31 August 2026
+>
+> **Temidayo confirmed the page is live at https://temidayoafonja.com/career-decisions.**
+> This gate is closed for Video 3 and Video 5 on that confirmation.
+>
+> Recorded honestly: I could not verify it independently. Outbound requests to
+> temidayoafonja.com are refused by this environment's egress proxy
+> (`connect_rejected`, organization policy), and the route does not appear in the
+> website source in this repository, so there was nothing here to corroborate it
+> against either. The status above rests on Temidayo's confirmation, not on a
+> check I ran.
+>
+> What the gate required, for the record: the August 28 roadmap audit routes the
+> Career Decision Evidence Check to Videos 3, 5, 11, 17, 18 and 21, states
+> "publish only when the page is live and usable," and marked Video 3 a **hard
+> publication hold until the page is live**. That hold is now lifted.
+>
+> **Still required before Video 3 is uploaded or scheduled:** one signed-out
+> production check of https://temidayoafonja.com/career-decisions — that it loads
+> for a visitor who is not signed in and is not holding a preview link. This is
+> Temidayo's check to run; it is recorded in Video 3's README, publishing package
+> and editor brief. The same check is worth running before Video 5 publishes.
+
+That entry rested on a page-live confirmation alone. The 1 September production
+verification above replaces it on evidence, not on scope: the signed-out check it
+names is now part of the routine publishing SOP rather than an open blocker.
 
 ### `temidayoafonja.com/keep-the-proof` — PASSED, 1 September 2026
 
@@ -89,6 +137,8 @@ would be false precision, since the new opening and Temidayo's delivery will
 change the timing.
 
 Video 3 is locked at commit `c961b63`: `deliverables/video-3-slides/hit-final/`.
+**FINAL + LOCKED + CLEARED TO PUBLISH** once recording, edit and upload QA are
+complete — the Career Decision Evidence Check gate is satisfied.
 108 spoken paragraphs, 1,205 words, 13 slide markers mapping to the unchanged
 13-slide deck. Four standalone Shorts, and editor instruction held in two
 clearly labelled EDITOR ONLY briefs, out of every recording document.
@@ -153,6 +203,40 @@ No packaged file changed as a result of this verification. All 12 packaged files
 still match their recorded checksums, none differs from the reviewed commit
 `e2d405f`, the archive was not rebuilt, and its SHA-256 is retained:
 `5ca42003ff3c100d5afb2d071e87d418abe6d7777b6f45d956d5830ab46104a0`.
+
+### Gate history — `/career-decisions`
+
+The gate is satisfied. These documents still carry the original blocking
+language, each now marked `GATE SATISFIED — production journey verified before
+launch, 1 September 2026` beside it. Nothing was deleted.
+
+| Document | What it said |
+|---|---|
+| `thumbnail-system-audit/FINAL_EXPRESSION_AND_COHERENCE_AUDIT.md` | route "still does not exist"; blocks Video 3 |
+| `video-3-slides/VIDEO_3_CHANGELOG_v1.1.md` | route "still does not exist"; marked a publication blocker |
+| `video-3-slides/VIDEO_3_SLIDE_QA_v1.0.md` | "Build the /career-decisions destination. It does not exist today." |
+| `video-3-slides/VIDEO_3_SLIDE_QA_v1.1.md` | route "Flagged, not verified"; "would 404 today" |
+| `video-3-slides/VIDEO_3_UPLOAD_COPY_v1.1.md` | Publication blockers §1, the CTA route |
+| `video-3-slides/VIDEO_3_PRODUCTION_HANDOFF_v1.1.md` | §1 "Build the /career-decisions destination", publication blocker |
+| `video-3-slides/thumbnail/VIDEO_3_THUMBNAIL_STATUS_v1.2.md` | "This blocks publication" |
+| `video-5-slides/Video_5_Final_QA_README.txt` | "PUBLICATION GATE — STILL OPEN", page "IS NOT LIVE" |
+| `video-5-slides/Video_5_First_Pass_QA_README.txt` | "PUBLICATION GATE — REQUIRES ACTION", page "IS NOT LIVE" |
+
+**Two places were left untouched on purpose.** The locked Video 3 H.I.T. package
+(`video-3-slides/hit-final/`) carries the gate wording in `README_FINAL.txt` and
+in the publishing package, and Temidayo approved that wording as part of a
+locked archive with a published SHA-256. Editing it would break the checksums
+and the lock for a status change. The wording there is now satisfied by this
+entry; the package is unchanged and its archive hash stands. The same applies to
+`video-5-slides/build/*.py`, which are slide build sources rather than status
+documents.
+
+### Video 5 — CTA gate
+
+Video 5's primary CTA is the Career Decision Evidence Check. The former
+statement "do not publish until the Career Decision Evidence Check page is live"
+is **SATISFIED**. The URL is retained unchanged. Video 5's recording script
+remains locked at `de4363c`; nothing in it changed for this status update.
 
 ### Standards recorded
 

@@ -25,6 +25,12 @@ edited. Before-and-after detail is in `VIDEO_3_CHANGELOG_v1.1.md`.
 | 5 | Only slide 6's supporting line materially changed besides title copy | **Pass.** Pixel comparison against v1.0: eleven of thirteen slides are pixel-identical. Slide 1 differs only in the title text block, x 134 to 942, y 530 to 833. Slide 6 differs only inside x 887 to 1534, y 286 to 315, which is the one line of supporting copy. Nothing else on any slide moved by a pixel. |
 | 6 | Safety boundary intact | **Pass.** On slide 2 verbatim, in navy beneath a small rust rule, never red, and in the speaker notes on slides 2 and 10. Not softened. |
 | 7 | CTA remains the Career Decision Evidence Check | **Pass.** Slide 12, the only invitation in the deck. The Field Kit appears nowhere in the visible copy or the notes. |
+
+> **GATE SATISFIED — production journey verified before launch, 1 September 2026.**
+> `https://temidayoafonja.com/career-decisions` is live and the full core
+> production journey passed end to end. The blocking statement below is retained
+> for release traceability and no longer describes current state.
+
 | 8 | /career-decisions route status explicitly verified or flagged | **Flagged, not verified.** Re-checked against the repository at build time: no page, no redirect among the thirteen rules in `netlify.toml`, no sitemap entry. It would 404 today. The route stays on slide 12 as instructed, no replacement was invented, and it is not claimed live anywhere in this package. |
 | 9 | 27-frame reveal structure preserved | **Pass.** 27 frames, same build counts on slides 4, 6, 8, 10 and 11, no builds on 3, 5, 7 or 9, no animations. Six frames differ from v1.0: the title frame and the five builds of slide 6. |
 | 10 | No fabricated evidence | **Pass.** No screenshots, employer documents, fake reviews, dashboards, icons or invented statistics anywhere. The internal-process example is described in words and carries no number. |

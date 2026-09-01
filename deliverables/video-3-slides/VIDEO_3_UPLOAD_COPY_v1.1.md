@@ -121,6 +121,11 @@ figures can be recorded as sourced.
 
 ## Publication blockers
 
+> **GATE SATISFIED — production journey verified before launch, 1 September
+> 2026.** Blocker 1 below, the `/career-decisions` route, is cleared. The
+> original text is retained for release traceability.
+
+
 **1. The CTA route does not exist.** `temidayoafonja.com/career-decisions` is on
 slide 12, in the description and in the pinned comment. Re-checked against the
 repository at v1.1 build time: no page, no redirect among the thirteen rules in
