@@ -47,7 +47,7 @@ and editor brief. The same check is worth running before Video 5 publishes.
 
 | # | Package | Recording scripts | Thumbnail |
 |---|---|---|---|
-| 1 | built | — | **Option A vs B not selected** — open |
+| 1 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. rebuild built — awaiting Temidayo's approval** | **Option A vs B not selected** — open |
 | 2 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. rebuild approved and LOCKED**, commit `d6883dd` | final, approved |
 | 3 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. rebuild approved and LOCKED**, commit `c961b63` | Final A approved; Final B archived |
 | 4 | approved and locked | **approved and locked** | approved |
@@ -86,6 +86,28 @@ thirteen user-facing files, SHA-256
 **Video 3's working chapter timestamps are estimates**, on the same terms as
 Video 2's. The editor replaces them with actual timestamps from the finished
 edit before publication.
+
+Video 1's H.I.T. rebuild is built at `deliverables/video-1-slides/hit-final/`
+and awaits approval. 111 spoken paragraphs, 1,356 words, 13 slide markers
+mapping to the unchanged 13-slide deck; the 22-frame reveal deck is unchanged
+too. Four standalone Shorts, and editor instruction held in two clearly
+labelled EDITOR ONLY briefs, out of every recording document. It is a
+**replacement** package: the currently published Video 1 and its published
+description stay untouched until the replacement is recorded, edited, reviewed
+and uploaded.
+
+Video 1's public title and on-screen deck title differ **intentionally** —
+"How to Change Jobs Without Starting Your Career Over" versus "How I Changed
+Jobs Without Starting My Career Over". The title slide is not to be changed to
+match the public metadata title.
+
+**Open for Temidayo, raised at build time.** The approved Video 1 script says
+"Over roughly eighteen years". `docs/claims-ledger.md` §6 records a resolved
+August 2026 operator decision to use "nearly two decades" on every page, and
+verifies that "eighteen years" appears nowhere in the repository. The script
+was built exactly as approved and the wording was not altered. The figure is
+not inaccurate — the ledger's own date range is 2008 to 2026 — but it is a
+consistency conflict with a resolved decision, and it is Temidayo's to settle.
 
 ### Packaging convention — approved, applies to future packages
 
