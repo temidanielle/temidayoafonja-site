@@ -412,7 +412,10 @@ of the eventual shared fix, if initialisation passes.
 
 ### Diagnostic result, 2026-09-01: zero-configuration does not initialise
 
-Run against Deploy Preview `6a970296da5e430008a8c6f8`, PR #108, through the protected export:
+Run against Deploy Preview `6a970296da5e430008a8c6f8`, PR #108, through the protected export. That
+deploy's log reads `Now using node v22.23.2 (npm v10.9.8)`, which **rules out an older runtime** as
+a cause: `@netlify/blobs` 8.2.0 requires `^14.16.0 || >=16.0.0`, and nothing in this repository pins
+a Node version, so functions run on Netlify's current default.
 
 ```
 { status: 500, error: "export_failed", reason: "blobs_api_400",
