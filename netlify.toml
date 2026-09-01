@@ -261,3 +261,17 @@
   [headers.values]
     Content-Security-Policy = "script-src 'self' 'unsafe-inline' https://plausible.io"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+# /resources/ holds delivered lead-magnet files. These MUST serve: the download
+# link in the Kit delivery email points at one of them, so there is deliberately
+# no redirect rule here, only a header.
+#
+# The filename carries a random token so the URL cannot be guessed from the
+# product name, and this header keeps it out of search results even if it is
+# shared publicly. That is lead-magnet gating, not access control: anyone holding
+# the link can open it. True per-subscriber gating would need signed expiring
+# URLs and a token store, which is not warranted for a free resource.
+[[headers]]
+  for = "/resources/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"

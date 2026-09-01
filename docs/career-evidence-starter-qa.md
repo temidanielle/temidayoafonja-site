@@ -229,10 +229,10 @@ field and the attribution object.
 
 | | Blocker | State |
 |---|---|---|
-| 0 | **The page 2 author portrait is not in the repository.** `images/temidayo-gold-ivory.png` was approved and supplied in chat, but a chat attachment cannot be written to disk from the build container, so it has to be committed by hand. `build.js` refuses to print until it is there. Nothing else in this pass is blocked by it. | Open |
-| 1 | **PDF hosting decision.** No PDFs are stored in this repository by existing convention, so where the file lives, and what the email download link points at, is undecided. | Open |
-| 2 | **Kit setup.** The sequence and both tags do not exist yet: `KIT_SEQ_CAREER_EVIDENCE_STARTER`, `KIT_TAG_CAREER_EVIDENCE_STARTER`, `KIT_TAG_CAREER_EVIDENCE_STARTER_GUIDANCE`. The function refuses to run without them and returns 503. | Open |
-| 3 | **Social share image.** No Starter-specific card exists; the page falls back to `og-default.png`. | Open |
+| 0 | **The page 2 author portrait.** **Closed.** `images/temidayo-gold-ivory.png` was committed by the operator and is byte-identical to the supplied file (1254x1254, sha256 cce004872f...). Used on PDF page 2 and in the landing page WHO MADE THIS section. | Closed |
+| 1 | **PDF hosting.** **Closed.** The PDF is committed at `/resources/keep-the-proof-career-evidence-starter-v1-0-5ee610a6d0d4.pdf`, under a filename carrying a random token. `/resources/*` carries `X-Robots-Tag: noindex, nofollow` and is disallowed in `robots.txt`. This deliberately breaks the no-PDFs convention, on operator approval. It is lead-magnet gating, not access control. | Closed |
+| 2 | **Kit setup.** Objects created manually and verified: sequence 2880104, resource tag 23001964, guidance tag 23001968, YouTube tag 22590237, and the `current_situation` custom field. **Still open:** the four Netlify environment variables are not set, so the function still returns 503, and the Kit delivery email is deliberately unpublished until the PDF URL above is pasted into it. | Partly open |
+| 3 | **Social share image.** **Closed.** `og-career-evidence-starter.png`, 1200x630 at the site convention, rendered with the site's own faces and built from the real cover render. `og:image` and `twitter:image` both point at it, with width, height and alt declared. | Closed |
 | 4 | **Acrobat Reader test on a Mac.** Cannot be done here. | Open |
 | 5 | **The three source PDFs**, for QA point 1. | Open |
 | 6 | **`noindex` removal** on the landing page, and the preview note in `netlify.toml`, at launch. | Deliberate |

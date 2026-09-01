@@ -20,7 +20,7 @@ Hi {{ subscriber.first_name }},
 
 Here is your Career Evidence Starter.
 
-**[Download the Career Evidence Starter (PDF)]**
+**[Download the Career Evidence Starter (PDF)](https://temidayoafonja.com/resources/keep-the-proof-career-evidence-starter-v1-0-5ee610a6d0d4.pdf)**
 
 Before you open it, pick one piece of work. One project, decision, problem,
 improvement or piece of work where something changed because you were involved.
@@ -92,9 +92,23 @@ Temidayo
 
 ## Notes for whoever builds these in Kit
 
-- **The download link is not yet decided.** The PDF is not stored in this
-  repository: no PDFs are, by existing convention. Where the file is hosted, and
-  therefore what the link points at, is an open decision. See the QA report.
+- **The download link is decided and live in the repository.** The PDF is
+  committed at `/resources/`, under a filename carrying a random token so the URL
+  cannot be guessed from the product name. The full URL is:
+
+  `https://temidayoafonja.com/resources/keep-the-proof-career-evidence-starter-v1-0-5ee610a6d0d4.pdf`
+
+  This is the value to paste into the Kit delivery email. `/resources/*` carries
+  `X-Robots-Tag: noindex, nofollow` in `netlify.toml` and is disallowed in
+  `robots.txt`, so the file serves but never appears in search. It is
+  lead-magnet gating, not access control: anyone holding the link can open it.
+- **Kit objects, verified and created manually.** Sequence
+  `Career Evidence Starter - Delivery` id 2880104. Resource tag
+  `resource: career-evidence-starter` id 23001964. Guidance tag
+  `guidance: capability-formation` id 23001968. YouTube tag id 22590237.
+- **The Kit delivery email is not published yet.** It cannot be until the URL
+  above is pasted into it by hand. Nothing in this repository publishes a Kit
+  email.
 - **No urgency, no scarcity, no discount.** As instructed. The follow-up asks a
   question and names the next product once.
 - **Do not send either email to the guidance tag.** Delivery consent and
