@@ -245,12 +245,12 @@ keep(P(d,"Reveal frames corrected: 11 only. Frame 10 is the title-only build "
        "of the same slide and never carried the line. Main slides 1 to 4 and 6 "
        "to 12 and the other twenty-three reveal frames are byte-identical.",
        bold=True,after=8,spacing=1.25))
-p=P(d,"SLIDE 12 WAS NOT TOUCHED. The live slide 12 is CONTINUE THE SERIES / "
-     "CAREER PORTABILITY. It carries no video title at all, so it neither "
-     "matches the locked Watch Next nor holds a stale prior title to correct. "
-     "Adding a title would be a design change, not a title-text-only "
-     "correction, so it is left alone pending Temidayo's decision.",size=11,
-     bold=True,color=RED,after=10,spacing=1.25)
+p=P(d,"SLIDE 12 IS INTENTIONAL AND STAYS UNCHANGED. Confirmed by Temidayo. "
+     "The live slide 12 is CONTINUE THE SERIES / CAREER PORTABILITY / CAREER "
+     "PIVOTS · INTERNAL MOVES · GROWTH — a deliberate series and playlist end "
+     "card, not a stale Watch Next error. It carries no video title by design. "
+     "The spoken script and the end screen carry the route to Video 9. Do not "
+     "correct this slide.",size=11,bold=True,color=RED,after=10,spacing=1.25)
 shade(p,BAND_CREAM); keep(p)
 
 H1(d,"First 30 seconds — H.I.T.",before=14)
@@ -581,10 +581,12 @@ R=["VIDEO 8 — H.I.T. FINAL RECORDING PACKAGE","",
  "                   received the same correction. Main slides 1-4 and 6-12",
  "                   and the other twenty-three reveal frames are",
  "                   byte-identical.",
- "Slide 12:          NOT TOUCHED. The live slide 12 is CONTINUE THE SERIES /",
- "                   CAREER PORTABILITY and carries no video title, so it",
- "                   neither matches the locked Watch Next nor holds a stale",
- "                   prior title to correct. Awaiting Temidayo's decision.",
+ "Slide 12:          INTENTIONAL. UNCHANGED. Confirmed by Temidayo. The live",
+ "                   slide 12 is CONTINUE THE SERIES / CAREER PORTABILITY, a",
+ "                   deliberate series and playlist end card, not a stale",
+ "                   Watch Next error. It carries no video title by design.",
+ "                   The spoken script and the end screen carry the route to",
+ "                   Video 9. Do not correct this slide.",
  "Thumbnail:         UNCHANGED.","",
  "-"*70,"","WHAT EACH FILE IS","",
  "LONG_FORM/","",

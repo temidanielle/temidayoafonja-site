@@ -242,10 +242,10 @@ for sl,frm,to in [
  ("Slide 1 (lower)","YOU WERE THE BEFORE.",
   "THE INFRASTRUCTURE / WAS STILL MATURING."),
  ("Slide 2 (headline)","FOUNDATIONAL WORK HAS NO PRIOR STATE.",
-  "FOUNDATIONAL WORK CAN LOSE ITS “BEFORE.”"),
+  "FOUNDATIONAL WORK CAN BE HARD TO SEE."),
  ("Slide 2 (sub-copy)","The instrument that would have recorded it / did not "
   "exist yet.",
-  "Once the mechanism works, / the starting condition becomes harder to see."),
+  "Sometimes the mechanism that would have recorded it / was still maturing."),
  ("Slide 4 (title)","DOCUMENT THE ABSENCE / YOU WALKED INTO.",
   "RECONSTRUCT THE STARTING CONDITION"),
  ("Slide 4 (sub-copy)","two paragraphs of absence framing",
@@ -254,12 +254,24 @@ for sl,frm,to in [
  ("Slide 5 (list)","eight absence claims",
   "the seven approved still-maturing categories, sentence case"),
  ("Slide 10 (BEFORE row)","What did not exist.",
-  "What was incomplete, inconsistent or difficult?"),
+  "What was incomplete, inconsistent, / or difficult before the work?"),
+ ("Slide 10 (BUILD row)","What you created underneath the output.",
+  "What did you help put in place, / improve, or make more usable?"),
+ ("Slide 10 (RETURN row)","What is different now—and how someone else could "
+  "tell.","What changed afterward because of the work?"),
  ("Slide 12 (title)","HOW TO EXPLAIN A / NONLINEAR CAREER / WITHOUT LOOKING / "
   "UNFOCUSED","HOW TO EXPLAIN YOUR / CAREER CHANGE")]:
     keep(P(d,sl,size=11,bold=True,color=NAVY,before=8,after=3))
     keep(P(d,"FROM:  %s"%frm,size=10.5,after=3))
     keep(P(d,"TO:    %s"%to,size=10.5,bold=True,after=4))
+keep(P(d,"Slide 10's BEFORE and BUILD sentences are 8.29in and 8.10in at the "
+       "existing 20pt DM Sans, and the right-hand box is 7.36in ending at the "
+       "design's right margin, so it cannot be widened. Both are therefore "
+       "broken at a comma into two lines — the only fit adjustment made. Two "
+       "lines end 0.12in clear of the divider rule. RETURN is 6.10in and holds "
+       "one line. Slide 2's headline is 9.11in in an 11.11in box on one line, "
+       "and its sub-copy keeps the two-line split of the block it replaces.",
+       size=10.5,color=DIM,before=6,after=8,spacing=1.25))
 keep(P(d,"Slide 5's list dropped from eight items to seven. The item boxes "
        "were widened from 5.28in to 5.86in so the longer category names hold "
        "one line each at the existing 21pt DM Sans; the eighth slot and its "
@@ -309,9 +321,10 @@ beat("0:24–0:30",None,"PAYOFF",
 
 H1(d,"Factual visual boundary",before=14)
 P(d,"Never visually imply:",after=5)
-for x in ["nothing existed before Temidayo;","Temidayo built everything alone;",
- "one initiative caused all later outcomes;","the company was dysfunctional."]:
-    keep(P(d,"—  "+x,after=4))
+pairlist(d,["nothing existed before Temidayo;",
+ "Temidayo built everything alone;",
+ "one initiative caused all later outcomes;",
+ "the company was dysfunctional."])
 p=P(d,"Use:  incomplete  ·  still maturing  ·  needed stronger mechanisms  ·  "
      "building while operating",size=11,bold=True,color=GOLD,before=6,after=10,
      spacing=1.25)
@@ -354,7 +367,7 @@ keep(P(d,"Do not add the Capability Formation Field Kit or the Career "
 keep(P(d,"Watch next: %s  (Video 4)"%NEXT,bold=True,after=5))
 keep(P(d,"Do not leave Subscribe as the only end-screen element.",bold=True,
        color=RED,before=4,after=8))
-compress(d, 1.14, 0.56)
+compress(d, 1.12, 0.46)
 d.save(os.path.join(LF,"Video_7_EDITOR_ONLY_HIT_Brief_v2.0.docx"))
 print("editor brief written")
 

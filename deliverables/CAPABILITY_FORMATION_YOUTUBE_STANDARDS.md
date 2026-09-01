@@ -161,8 +161,8 @@ are the worked examples of this standard and are closed for revision.
 | 4 | How to Explain Your Career Change | "A senior colleague once called me a cat with nine lives." | **1,322** |
 | 5 | Should I Make an Internal Move? 3 Questions to Decide | "You may not need to leave your company." | **1,403** |
 | 6 | Are You Growing—or Just Being Given More Work? | "Your workload can grow faster than your career." | **1,721** |
-| 7 | How to Show Your Impact at Work When You Built It From Scratch | "How do you prove something when there was nothing there before you?" | 1,472 |
-| 8 | How to Move Into a New Industry Without Starting Over | "Do I really have to start over just because I'm changing industries?" | 1,514 |
+| 7 | How to Show Your Impact at Work When You Built It From Scratch | "Some of the hardest work to prove is the work that made everything else possible." | **1,632** |
+| 8 | How to Switch Industries Without Starting Over | "Changing industries does not make you entry-level at everything. It makes you new to a context." | **1,563** |
 
 Word counts are canonical: spoken paragraphs only, excluding document headers,
 length statements, timed block headers, slide markers and production
@@ -221,9 +221,34 @@ applied. The earlier 1,649-word script is **SUPERSEDED** as recording authority.
 Video 6 also carries the one authorised visual correction in the series so far:
 Slide 12's stale Watch Next title, corrected to match the locked Video 7 title.
 
+Video 7 is **FINAL AND LOCKED FOR RECORDING** as of 1 September 2026, rebuilt
+under the H.I.T. standard at `deliverables/video-7-slides/hit-final/`, canonical
+spoken count **1,632**, first spoken line "Some of the hardest work to prove is
+the work that made everything else possible." Verified literally against
+`Video_7_Code_Prompt_HIT_Final.txt` across all 186 spoken paragraphs, with all
+12 slide-marker names and positions matching. The earlier 1,472-word script and
+its opening line "How do you prove something when there was nothing there
+before you?" are **SUPERSEDED** as recording authority — that opening is exactly
+the absolute-absence framing the approved factual boundary now rules out. Video
+7 carries six authorised text-only slide corrections (Slides 1, 2, 4, 5, 10 and
+12) removing every trace of that framing from the deck.
+
+Video 8 is **FINAL AND LOCKED FOR RECORDING** as of 1 September 2026, rebuilt
+under the H.I.T. standard at `deliverables/video-8-slides/hit-final/`, canonical
+spoken count **1,563**, first spoken line "Changing industries does not make you
+entry-level at everything. It makes you new to a context." Verified literally
+against `Video_8_Code_Prompt_HIT_Final.txt` across all 174 spoken paragraphs,
+with all 12 slide-marker names and positions matching. The earlier 1,514-word
+script and the working title "How to Move Into a New Industry Without Starting
+Over" are **SUPERSEDED**. Video 8 carries one authorised text-only slide
+correction (Slide 5, retiring "It is an information gap"). Its Slide 12
+`CONTINUE THE SERIES / CAREER PORTABILITY` card is an intentional series and
+playlist end card, not a stale Watch Next error, and is not to be corrected.
+
 **The Video 5 proof-placement exception is withdrawn.** This document previously
 named Video 5 as the approved example of personal proof arriving at roughly
 1:35. The H.I.T. rebuild moves that proof into the opening, and the exception no
 longer applies to any video.
 
-The standards for Videos 5 to 8 are unchanged.
+The standards themselves are unchanged. Videos 2 to 8 are now all
+FINAL AND LOCKED FOR RECORDING; Video 1 awaits independent advisor review.

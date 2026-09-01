@@ -37,10 +37,12 @@ Slide correction:  Slide 5 carried the stale conceptual framing
                    received the same correction. Main slides 1-4 and 6-12
                    and the other twenty-three reveal frames are
                    byte-identical.
-Slide 12:          NOT TOUCHED. The live slide 12 is CONTINUE THE SERIES /
-                   CAREER PORTABILITY and carries no video title, so it
-                   neither matches the locked Watch Next nor holds a stale
-                   prior title to correct. Awaiting Temidayo's decision.
+Slide 12:          INTENTIONAL. UNCHANGED. Confirmed by Temidayo. The live
+                   slide 12 is CONTINUE THE SERIES / CAREER PORTABILITY, a
+                   deliberate series and playlist end card, not a stale
+                   Watch Next error. It carries no video title by design.
+                   The spoken script and the end screen carry the route to
+                   Video 9. Do not correct this slide.
 Thumbnail:         UNCHANGED.
 
 ----------------------------------------------------------------------

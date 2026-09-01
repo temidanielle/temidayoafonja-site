@@ -402,7 +402,37 @@ applies.
 
 #### Video 7 — How to Show Your Impact at Work When You Built It From Scratch
 
-**REOPENED UNDER H.I.T. NOT YET REVISED. NOT LOCKED FOR RECORDING.**
+**FINAL + LOCKED FOR RECORDING.** 1 September 2026.
+
+Built from the canonical `Video_7_Code_Prompt_HIT_Final.txt`. Canonical source
+verification passes on all seven comparisons: 186 spoken paragraphs, **1,632
+words**, 12 markers with names and positions matching. All 45 QA checks pass.
+Every DOCX was rendered and visually inspected.
+
+**Six authorised slide corrections, text only.** Design, typography, palette,
+layout and box positions unchanged throughout.
+
+| Slide | From | To |
+|---|---|---|
+| 1 | YOU WERE NOT IMPROVING SOMETHING. / YOU WERE THE BEFORE. | BUILDING WHILE OPERATING / THE INFRASTRUCTURE WAS STILL MATURING. |
+| 2 | FOUNDATIONAL WORK HAS NO PRIOR STATE. / The instrument that would have recorded it did not exist yet. | FOUNDATIONAL WORK CAN BE HARD TO SEE. / Sometimes the mechanism that would have recorded it was still maturing. |
+| 4 | DOCUMENT THE ABSENCE YOU WALKED INTO. | RECONSTRUCT THE STARTING CONDITION |
+| 5 | WHAT DID NOT EXIST? and eight absence claims | WHAT WAS STILL MATURING? and the seven approved categories |
+| 10 | What did not exist. / What you created underneath the output. / What is different now—and how someone else could tell. | What was incomplete, inconsistent, or difficult before the work? / What did you help put in place, improve, or make more usable? / What changed afterward because of the work? |
+| 12 | HOW TO EXPLAIN A NONLINEAR CAREER WITHOUT LOOKING UNFOCUSED | HOW TO EXPLAIN YOUR CAREER CHANGE |
+
+Changed XML parts — main `slide1, slide2, slide4, slide5, slide10, slide12`;
+reveal `slide1, slide2, slide4, slide8, slide9, slide10, slide11, slide20,
+slide21, slide22, slide24`. Main slides 3, 6, 7, 8, 9 and 11 and the other
+thirteen reveal frames are byte-identical. 12 main slides, 24 reveal frames.
+
+No absolute-absence framing remains anywhere in either deck.
+
+Final ZIP SHA-256:
+`898434afee0ab6ee26dfbe36f8d3c169baec4d99b07126719547cef84b83a10d`
+Sibling checksum: `Video_7_HIT_FINAL_Recording_and_Shorts_Package.zip.sha256`
+Description-only DOCX (outside the ZIP), unchanged across every correction
+pass: `6d608afb31be46be9f84808ec3dce4861d586f470f7bd0037205bc2ee2803815`
 
 Thumbnail direction is **already approved**: `MAKE INVISIBLE WORK VISIBLE`. The
 gesture version, with Temidayo's open palm presenting the headline, is the
@@ -412,28 +442,66 @@ Operational item still outstanding: ensure the approved Canva PNG is eventually
 inserted **byte-identically** into the complete final Video 7 production package,
 with a checksum.
 
-#### Video 8 — How to Move Into a New Industry Without Starting Over
+#### Video 8 — How to Switch Industries Without Starting Over
 
-**REOPENED UNDER H.I.T. NOT YET REVISED. NOT LOCKED FOR RECORDING.**
+**FINAL + LOCKED FOR RECORDING.** 1 September 2026.
 
-Current leading thumbnail direction: `YOUR EXPERIENCE STILL COUNTS`. Treat it as
-the leading direction unless Temidayo explicitly reopens it. The H.I.T. video
-package is not final.
+The final public title is **How to Switch Industries Without Starting Over**.
+The earlier working title "How to Move Into a New Industry Without Starting
+Over" is superseded and is not used anywhere in the package.
+
+Built from the canonical `Video_8_Code_Prompt_HIT_Final.txt`. Canonical source
+verification passes on all seven comparisons: 174 spoken paragraphs, **1,563
+words**, 12 markers with names and positions matching. All 43 QA checks pass.
+Every DOCX was rendered and visually inspected. 12 main slides, 24 reveal
+frames.
+
+**Slide 5 correction stands as approved.** Text only; visual system,
+typography family, colours, composition and hierarchy unchanged.
+
+| From | To |
+|---|---|
+| It feels like a competence gap. It is an information gap. | IT CAN FEEL LIKE A COMPETENCE GAP. / SOME CONTEXT CAN BE RESEARCHED. / SOME MUST BE LEARNED THROUGH EXPOSURE. |
+
+Changed XML parts — main `slide5` only; reveal `slide11` only. Reveal frame 10
+is the title-only build of the same slide and never carried the line. Every
+other slide and frame is byte-identical.
+
+**Slide 12 is intentional and stays unchanged.** `CONTINUE THE SERIES / CAREER
+PORTABILITY / CAREER PIVOTS · INTERNAL MOVES · GROWTH` is a deliberate series
+and playlist end card, **not** a stale Watch Next error. It carries no video
+title by design. The spoken script and the end-screen carry the route to Video
+9. Do not "correct" this slide in any future pass.
+
+Approved proof: roughly eighteen-year cross-context career, eight
+industries/sectors, CISM preparation and first-attempt non-pass. No exam score,
+date, further attempt or later passing result is stated anywhere.
+
+Final ZIP SHA-256:
+`672c8ccc4c0f2c02b2c2a01e5fd21554da2e6aaac84ec8e99a98cf791fdcdd74`
+Sibling checksum: `Video_8_HIT_FINAL_Recording_and_Shorts_Package.zip.sha256`
+Description-only DOCX (outside the ZIP):
+`c64b4d6313d67d6169136137be82acf177af257ba1712d573a09a4ad3dfb5c94`
+
+Thumbnail direction: `YOUR EXPERIENCE STILL COUNTS`.
 
 ### Series summary
 
 | State | Videos |
 |---|---|
-| FINAL + LOCKED | 2, 3, 4, 5, 6 |
+| FINAL + LOCKED FOR RECORDING | 2, 3, 4, 5, 6, 7, 8 |
 | Content approved / awaiting independent review before lock | 1 |
 
-| Reopened / H.I.T. revision still required | 7, 8 |
-
-Next editorial work is **Video 7**, which remains REOPENED UNDER H.I.T.
+Videos 7 and 8 completed their H.I.T. rebuilds on 1 September 2026 and are
+locked. Video 1 is the only remaining item in the series: its content has
+passed substantive review and it awaits independent advisor review before lock.
 
 Videos 5 to 8 are **not** to be reverted to their prior "locked" state merely
-because older packages still exist in the repository. The newest explicit H.I.T.
-reopen instruction supersedes the earlier Videos 4 to 8 lock.
+because older packages still exist in the repository. The H.I.T. packages named
+in the sections above are the authoritative ones.
+
+Outstanding operational item across the series: the approved Video 7 thumbnail
+Canva PNG must eventually be inserted byte-identically, with a checksum.
 
 ---
 
