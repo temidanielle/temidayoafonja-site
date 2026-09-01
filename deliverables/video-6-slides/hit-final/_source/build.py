@@ -378,7 +378,8 @@ H1(d,"Title",before=14); P(d,TITLE,size=12,after=10)
 H1(d,"Thumbnail",before=14); P(d,THUMB,size=12,bold=True,after=10)
 H1(d,"Primary search phrase",before=14); P(d,PRIMARY,after=10)
 H1(d,"Supporting search language",before=14); P(d,SUPPORTING,after=10)
-description_block(d)
+# same clean copy boundary as the separate description-only document
+description_block(d, upload_doc=True)
 H1(d,"Pinned comment",before=14)
 for para in PINNED: keep(P(d,para,after=6))
 H1(d,"YouTube tag field",before=14)
@@ -676,5 +677,9 @@ shutil.rmtree(PROV,ignore_errors=True); os.makedirs(PROV)
 for f in ("script_text.py","build.py","qa.py","canonical_script.txt"):
     src="/tmp/v6hit/"+f
     if os.path.isfile(src): shutil.copy2(src, os.path.join(PROV,f))
+CANON_SRC=("/root/.claude/uploads/f121668d-e262-5eb8-9b22-0eaa1006a361/"
+           "ca238dfe-Video_6_Code_Prompt_HIT_Final.txt")
+if os.path.isfile(CANON_SRC):
+    shutil.copy2(CANON_SRC, os.path.join(PROV,"Video_6_Code_Prompt_HIT_Final.txt"))
 print("ZIP sha256:",zsha)
 print("description-only doc sha256:",sha256(DESC_DOC))

@@ -5,7 +5,8 @@ from xml.etree import ElementTree as ET
 sys.path.insert(0,'/tmp/v6hit')
 from script_text import LINES, SPOKEN, MARKERS
 NS='{http://schemas.openxmlformats.org/wordprocessingml/2006/main}'
-R="/tmp/v6hit/Video_6_HIT_FINAL"; L=R+"/LONG_FORM/"
+R="/home/user/temidayoafonja-site/deliverables/video-6-slides/hit-final/Video_6_HIT_FINAL"
+L=R+"/LONG_FORM/"
 MK=re.compile(r'^SLIDE\s+—\s+(.+)$')
 OLD_NEXT_FULL="How to Prove the Value of Work That Had No Blueprint"
 NEXT_FULL="How to Show Your Impact at Work When You Built It From Scratch"
@@ -67,7 +68,11 @@ rep["07_thumbnail_unchanged"]=not [l for l in git("status","--porcelain").splitl
                                    if "thumbnail" in l.lower()]
 
 # ---- 8-11 : scripts and the source comparison ------------------------------
-CANON=[b.strip() for b in open("/tmp/v6hit/canonical_script.txt",encoding="utf-8").read().split("\n\n") if b.strip()]
+CANON_FILE=("/root/.claude/uploads/f121668d-e262-5eb8-9b22-0eaa1006a361/"
+            "ca238dfe-Video_6_Code_Prompt_HIT_Final.txt")
+_raw=open(CANON_FILE,encoding="utf-8").read()
+_body=_raw.split("BEGIN APPROVED VIDEO 6 SCRIPT",1)[1].split("END APPROVED VIDEO 6 SCRIPT",1)[0]
+CANON=[b.strip() for b in _body.split("\n\n") if b.strip()]
 CANON_SPOKEN=[b for b in CANON if not b.startswith("[SLIDE:")]
 CANON_MARKERS=[(i,b) for i,b in enumerate(CANON) if b.startswith("[SLIDE:")]
 tel=txt_blocks(L+"Video6TeleprompterScriptwithslidemarkers_HIT_v2.0.txt")
@@ -77,11 +82,10 @@ tel_spoken=[b for b in tel if not b.startswith("SLIDE  —")]
 s_="\n\n".join(CANON_SPOKEN); t_="\n\n".join(rd); u_="\n\n".join(tel_spoken)
 tel_markers=[(i,b) for i,b in enumerate(tel) if b.startswith("SLIDE  —")]
 sv={"named_canonical_file":"Video_6_Code_Prompt_HIT_Final.txt",
- "named_file_uploaded":False,
- "source_used":"The session's machine-recorded copy of Temidayo's brief, "
-   "extracted programmatically between the BEGIN/END APPROVED VIDEO 6 SCRIPT "
-   "fences. Not retyped, not normalised.",
- "recorded_copies_found":1,
+ "named_file_uploaded":True,
+ "canonical_file_sha256":hashlib.sha256(open(CANON_FILE,'rb').read()).hexdigest(),
+ "source_used":"The uploaded canonical file, extracted programmatically between "
+   "the BEGIN/END APPROVED VIDEO 6 SCRIPT fences. Not normalised.",
  "source_blocks":len(CANON),"source_markers":len(CANON_MARKERS),
  "source_spoken_paragraphs":len(CANON_SPOKEN),
  "source_spoken_words":sum(len(b.split()) for b in CANON_SPOKEN),
@@ -102,10 +106,7 @@ sv={"named_canonical_file":"Video_6_Code_Prompt_HIT_Final.txt",
 sv["status"]="PASSED" if all([sv["teleprompter_minus_markers_equals_source"],
   sv["reading_script_equals_source"],sv["marker_names_match"],
   sv["marker_positions_match"],sv["sha256_identical_across_all_three"]]) else "FAILED"
-sv["caveat"]=("The named canonical .txt was not uploaded. This comparison is "
-  "against the recorded copy of the same message, so it proves the package "
-  "matches what the session received; it cannot rule out a difference from a "
-  "file held elsewhere.")
+sv["authoritative"]=True
 rep["SOURCE_VERIFICATION"]=sv
 rep["11_canonical_comparison_passes"]=sv["status"]=="PASSED"
 
@@ -142,7 +143,7 @@ rep["15_editor_docs_labelled"]=all(paras(R+"/"+f)[0]=="EDITOR ONLY" for f in
 brief=" ".join(paras(L+"Video_6_EDITOR_ONLY_HIT_Brief_v2.0.docx"))
 pub=" ".join(paras(L+"Video_6_Publishing_Package_HIT_v2.0.docx"))
 shb=" ".join(paras(R+"/SHORTS/Video_6_Shorts_EDITOR_ONLY_HIT_Brief.docx"))
-DESCDOC="/tmp/v6hit/Video_6_YouTube_Description_HIT.docx"
+DESCDOC="/home/user/temidayoafonja-site/deliverables/video-6-slides/hit-final/Video_6_YouTube_Description_HIT.docx"
 ALL={os.path.basename(p):" ".join(paras(p)) for p in
      glob.glob(R+"/LONG_FORM/*.docx")+glob.glob(R+"/SHORTS/*.docx")+[DESCDOC]}
 
@@ -192,7 +193,14 @@ uns={k:v for k,v in uns.items() if v}
 rep["22_no_unsafe_evidence_advice"]=not uns
 
 pubp=paras(L+"Video_6_Publishing_Package_HIT_v2.0.docx")
-bi=pubp.index("— END OF THE COPY-READY DESCRIPTION —"); desc=pubp[:bi]
+bi=pubp.index("— END OF THE COPY-READY DESCRIPTION —")
+pb=pubp.index("COPY-READY YOUTUBE DESCRIPTION — BEGIN")
+desc=pubp[pb+1:bi]
+rep["23b_emoji_instruction_outside_publishing_copy"]=not any(
+ x.startswith("The restrained emoji system") for x in desc)
+rep["27c_publishing_and_description_public_copy_identical"]=(
+ desc==paras(DESCDOC)[paras(DESCDOC).index("COPY-READY YOUTUBE DESCRIPTION — BEGIN")+1:
+                      paras(DESCDOC).index("— END OF THE COPY-READY DESCRIPTION —")])
 EMOJI=["✨ Complexity","✨ Authority","✨ Return",
        "🧭 CAPABILITY FORMATION FIELD KIT","⏱️ CHAPTERS","▶️ WATCH NEXT",
        "🔗 CONNECT AND EXPLORE"]
@@ -208,7 +216,7 @@ CH=["00:00 Your Workload Can Grow Faster Than Your Career",
  "10:55 Capability Formation Field Kit",
  "11:20 How to Show Your Impact at Work When You Built It From Scratch"]
 ci=pubp.index("⏱️ CHAPTERS")
-rep["24_chapters_inline_in_description"]=pubp[ci+1:ci+12]==CH
+rep["24_chapters_inline_in_description"]=pubp[ci+1:ci+12]==CH and ci>pb and ci<bi
 rep["25_no_insert_placeholder"]=not any("[INSERT" in p.upper() for p in
     pubp+paras(DESCDOC))
 rep["26_warning_outside_public_copy"]=(
@@ -219,7 +227,7 @@ rep["27_description_doc_matches_publishing"]=(
  dp[dp.index("⏱️ CHAPTERS"):dbi]==pubp[ci:bi])
 rep["27b_description_doc_outside_zip"]=True
 
-ZIP="/tmp/v6hit/Video_6_HIT_FINAL_Recording_and_Shorts_Package.zip"
+ZIP="/home/user/temidayoafonja-site/deliverables/video-6-slides/hit-final/Video_6_HIT_FINAL_Recording_and_Shorts_Package.zip"
 zf=zipfile.ZipFile(ZIP); names=zf.namelist()
 rep["31_zip_file_count"]=len(names)
 rep["31b_zip_count_is_13"]=len(names)==13

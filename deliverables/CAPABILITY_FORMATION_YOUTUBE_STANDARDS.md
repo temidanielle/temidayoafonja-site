@@ -160,7 +160,7 @@ are the worked examples of this standard and are closed for revision.
 |---|---|---|---|
 | 4 | How to Explain Your Career Change | "A senior colleague once called me a cat with nine lives." | **1,322** |
 | 5 | Should I Make an Internal Move? 3 Questions to Decide | "You may not need to leave your company." | **1,403** |
-| 6 | Are You Growing—or Just Being Given More Work? | "Is this actually growth, or am I just being given more work?" | 1,649 |
+| 6 | Are You Growing—or Just Being Given More Work? | "Your workload can grow faster than your career." | **1,721** |
 | 7 | How to Show Your Impact at Work When You Built It From Scratch | "How do you prove something when there was nothing there before you?" | 1,472 |
 | 8 | How to Move Into a New Industry Without Starting Over | "Do I really have to start over just because I'm changing industries?" | 1,514 |
 
@@ -210,6 +210,16 @@ punctuation mark, apostrophe, quotation mark, em dash, capitalisation and
 paragraph order matching, all 12 slide-marker names and positions matching, and
 no normalisation applied. The earlier 1,639-word script is **SUPERSEDED** as
 recording authority and retained only as historical reference.
+
+Video 6 is **FINAL AND LOCKED FOR RECORDING** as of 1 September 2026, rebuilt
+under the H.I.T. standard at `deliverables/video-6-slides/hit-final/`, canonical
+spoken count **1,721**, first spoken line "Your workload can grow faster than
+your career." Verified literally against `Video_6_Code_Prompt_HIT_Final.txt` —
+exact match on both scripts across all 190 paragraphs and 10,521 characters,
+with all 12 slide-marker names and positions matching and no normalisation
+applied. The earlier 1,649-word script is **SUPERSEDED** as recording authority.
+Video 6 also carries the one authorised visual correction in the series so far:
+Slide 12's stale Watch Next title, corrected to match the locked Video 7 title.
 
 **The Video 5 proof-placement exception is withdrawn.** This document previously
 named Video 5 as the approved example of personal proof arriving at roughly

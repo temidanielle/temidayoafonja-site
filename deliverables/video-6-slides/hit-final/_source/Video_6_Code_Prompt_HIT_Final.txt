@@ -1,0 +1,1423 @@
+VIDEO 6 — H.I.T. REBUILD / FINAL RECORDING PACKAGE
+
+Build the final revised recording and production-material package for Temidayo Afonja’s YouTube Video 6.
+
+IMPORTANT:
+This is a SPOKEN-SCRIPT + EDITOR-INSTRUCTION + PUBLISHING + SHORTS update with ONE narrow visual correction to Slide 12 only.
+
+DO NOT modify:
+- Slides 1–11;
+- any reveal frame except the one(s) corresponding to Slide 12’s stale Watch Next title;
+- the approved thumbnail;
+- any website file;
+- any product;
+- any other video.
+
+The existing Video 6 visual system remains authoritative.
+
+Before building, inspect the actual current files and report:
+- exact main-slide count;
+- exact reveal-frame count;
+- exact current Slide 12 wording.
+
+Do not rely blindly on the historical reveal-frame count in earlier packages.
+
+==================================================
+LOCKED VIDEO 6 METADATA
+==================================================
+
+Public title:
+Are You Growing—or Just Being Given More Work?
+
+Thumbnail:
+MORE WORK ≠ GROWTH
+
+Primary CTA:
+Capability Formation Field Kit
+https://temidayoafonja.com/fieldkit
+
+Watch next:
+Video 7 — How to Show Your Impact at Work When You Built It From Scratch
+
+Primary search phrase:
+are you growing or just being given more work
+
+Supporting search language:
+career growth
+more responsibility at work
+career development
+workload increase
+career stagnation
+stretch assignment
+professional growth
+career progression
+capability formation
+
+Primary Capability Formation question:
+What is this work building in me?
+
+Core distinction:
+More responsibility can be part of growth. It is not proof of it.
+
+The previous TubeBuddy title gate is superseded by the locked 1–30 roadmap.
+
+==================================================
+AUTHORIZED SLIDE 12 CORRECTION
+==================================================
+
+The current Slide 12 Watch Next title is stale.
+
+Existing old title:
+How to Prove the Value of Work That Had No Blueprint
+
+Replace only that title with:
+
+How to Show Your Impact at Work When You Built It From Scratch
+
+Preserve:
+- the existing design;
+- typography;
+- layout;
+- playlist line;
+- end-screen space;
+- all other wording.
+
+Update only the matching title text in Slide 12 and any corresponding reveal frame(s).
+
+Do not redesign Slide 12.
+
+Do not modify Slides 1–11.
+
+This is a genuine metadata contradiction, not a stylistic refresh.
+
+==================================================
+H.I.T. FIRST-30-SECOND STANDARD
+==================================================
+
+H = Hook
+I = Interest
+T = Trust
+
+The opening must function as one audiovisual unit:
+- immediate conversational contradiction;
+- meaningful visual movement;
+- relevant personal proof;
+- viewer payoff within approximately 20–30 seconds;
+- no generic channel welcome before the promise;
+- no forced statistic;
+- no invented personal story.
+
+The visual carries simple scope progression.
+Temidayo’s voice carries the meaning.
+
+==================================================
+CREATE THIS FOLDER STRUCTURE
+==================================================
+
+Video_6_HIT_FINAL/
+    LONG_FORM/
+        Video6TeleprompterScriptwithslidemarkers_HIT_v2.0.docx
+        Video6TeleprompterScriptwithslidemarkers_HIT_v2.0.txt
+        Video6ReadingScriptnomarkers_HIT_v2.0.docx
+        Video6ReadingScriptnomarkers_HIT_v2.0.txt
+        Video_6_EDITOR_ONLY_HIT_Brief_v2.0.docx
+        Video_6_Publishing_Package_HIT_v2.0.docx
+
+    SHORTS/
+        Video_6_Short_1_Workload_Grows_Faster.docx
+        Video_6_Short_2_Accountability_Not_Authority.docx
+        Video_6_Short_3_More_Scope_Was_It_Growth.docx
+        Video_6_Short_4_What_Comes_Off_Your_Plate.docx
+        Video_6_Shorts_EDITOR_ONLY_HIT_Brief.docx
+
+    README_FINAL.txt
+    SHA256SUMS.txt
+
+Also create:
+
+Video_6_HIT_FINAL_Recording_and_Shorts_Package.zip
+
+And create the sibling ZIP checksum:
+
+Video_6_HIT_FINAL_Recording_and_Shorts_Package.zip.sha256
+
+Also create a SEPARATE DESCRIPTION-ONLY document outside the ZIP:
+
+Video_6_YouTube_Description_HIT.docx
+
+This description-only document is for Temidayo’s easy upload workflow.
+
+It must contain:
+- final title;
+- thumbnail copy;
+- copy-ready YouTube description;
+- emoji section markers;
+- working chapters;
+- pinned comment;
+- primary search phrase;
+- YouTube tag field;
+- Watch Next route.
+
+Do not count the separate description-only document as one of the 13 files inside the package ZIP.
+
+The package ZIP must contain exactly the 13 clean user-facing files listed above.
+
+Build the ZIP from an explicit allowlist.
+
+Do not include:
+- _source folders;
+- Python files;
+- generators;
+- QA utilities;
+- rendered page images;
+- temp files;
+- hidden files;
+- duplicate files;
+- obsolete drafts.
+
+==================================================
+DOCUMENT DESIGN
+==================================================
+
+Use the same restrained professional formatting system as the approved H.I.T. packages for Videos 1–5.
+
+Use:
+- clean title/header;
+- clear hierarchy;
+- large readable teleprompter copy;
+- generous spacing;
+- restrained deep navy, warm cream and muted-gold details;
+- no decorative illustrations;
+- no editor comments inside Temidayo’s recording copy.
+
+The documents should feel premium, calm and editorial.
+
+==================================================
+LONG-FORM TELEPROMPTER SCRIPT
+==================================================
+
+Create:
+Video6TeleprompterScriptwithslidemarkers_HIT_v2.0.docx
+Video6TeleprompterScriptwithslidemarkers_HIT_v2.0.txt
+
+The DOCX and TXT must contain the same spoken language.
+
+Use the approved script below EXACTLY.
+
+Do not rewrite, summarize, expand, shorten, polish or substitute wording.
+
+BEGIN APPROVED VIDEO 6 SCRIPT
+
+Your workload can grow faster than your career.
+
+Across my own career, my scope has expanded beyond the job I was originally hired to do more than once.
+
+That taught me not to use volume as the test.
+
+Before you call more responsibility growth, check three things: did the problem get more complex, did your authority expand, and what did the work return to your career?
+
+[SLIDE: Core Distinction]
+
+I’m Temidayo Afonja. I help experienced professionals understand what their work is building in them, what they can carry forward and what may need to change before the next move.
+
+More responsibility can absolutely be part of growth.
+
+Growth can be demanding.
+
+There are seasons when taking on extra work is reasonable — a launch, a vacancy, a transition, a problem that simply needs to be carried for a while.
+
+But there is another possibility.
+
+The organization may have learned that you are dependable enough to absorb more.
+
+Those are not the same thing.
+
+Being busier tells me that the workload changed.
+
+It does not tell me what the work is building in you.
+
+[SLIDE: More Work / Real Growth]
+
+That is the distinction I want you to make.
+
+More work can mean more volume, more coordination and more availability.
+
+Real growth should change something deeper.
+
+The problems you can handle.
+
+The judgment you can exercise.
+
+Or the evidence you will be able to carry into another context.
+
+A career can look successful from the outside while the work underneath it has stopped adding very much new judgment.
+
+You can still be doing good work.
+
+You can still be valued.
+
+You can still be the person everyone depends on.
+
+But those facts alone do not tell you whether your career is still compounding.
+
+[SLIDE: Three Tests]
+
+So use three tests.
+
+Complexity.
+
+Authority.
+
+Return.
+
+Did the problem become more complex?
+
+Did your authority expand?
+
+And what did the additional work return to your career?
+
+[SLIDE: Complexity]
+
+The first test is complexity.
+
+Are you handling a meaningfully different problem?
+
+Or simply more units of the same one?
+
+Repetition can build speed, confidence and reliability.
+
+Those things matter.
+
+But doing eight versions of a problem you already knew how to solve does not necessarily expand your range simply because last year you handled three.
+
+Your capacity may be increasing.
+
+Your workload is certainly increasing.
+
+The question is whether the class of problem changed.
+
+Complexity usually appears when some of the variables change.
+
+A different customer.
+
+A new system.
+
+A regulation you have not worked with before.
+
+A stakeholder group with different incentives.
+
+Incomplete instructions.
+
+Conflicting priorities.
+
+A decision where the answer that worked last time cannot simply be copied.
+
+That is where judgment has to stretch.
+
+Think about the difference between receiving more recurring requests and being asked to understand why the requests keep recurring.
+
+The first is additional volume.
+
+The second may require diagnosis, redesign and influence.
+
+Or think about the difference between coordinating more meetings and being responsible for helping people with competing interests reach a decision.
+
+From the outside, both may look like more work.
+
+But the work is forming something different.
+
+[SLIDE: Capability Question]
+
+So ask:
+
+What can I credibly do now that I could not credibly do before?
+
+Not:
+
+What am I doing more of?
+
+What am I doing faster?
+
+What have people become more comfortable handing me?
+
+Ask what became possible because you encountered this work.
+
+Can you diagnose something you could not diagnose before?
+
+Can you make a decision with less help?
+
+Can you work through a type of ambiguity that used to stop you?
+
+Can you operate across a context you did not previously understand?
+
+If the only answer is:
+
+“I can carry more of the same thing,”
+
+call that capacity use.
+
+It may be valuable.
+
+But do not automatically call it career growth.
+
+[SLIDE: Accountability / Authority]
+
+The second test is authority.
+
+As your responsibility increased, did anything change about what you can influence or decide?
+
+There are three words that often get blurred together.
+
+Responsibility is what you are expected to carry.
+
+Accountability is what you will answer for.
+
+Authority is what you can influence, change, approve, stop, prioritize or recommend with some expectation that your judgment will matter.
+
+Those do not always grow together.
+
+You may become accountable for a deadline without being able to reduce the scope, change the sequence or secure the people needed to meet it.
+
+You may be told to own an outcome while the decisions that shape that outcome still sit somewhere else.
+
+You may start attending more senior meetings and still only be there to provide information.
+
+Exposure can be useful.
+
+Observation is part of learning.
+
+But eventually, if this is supposed to be growth, your judgment needs somewhere to go.
+
+[SLIDE: Authority Warning]
+
+Accountability without authority is a warning, not a development plan.
+
+That does not mean you need complete control.
+
+Very few meaningful roles come with complete control.
+
+But ask:
+
+Which decisions now belong to me?
+
+What can I change when the plan is not working?
+
+Where am I expected to recommend a direction rather than simply execute one?
+
+What access, sponsorship, information or resources come with the expanded responsibility?
+
+If the organization increases what you answer for while your ability to influence the outcome stays exactly the same, the role may be transferring risk without developing much additional judgment.
+
+That can make you more exposed.
+
+It does not necessarily make you more capable.
+
+[SLIDE: Return]
+
+The third test is return.
+
+More work costs something.
+
+Time.
+
+Attention.
+
+Energy.
+
+Sometimes flexibility.
+
+Sometimes visibility for other work you are no longer able to take on.
+
+So what is coming back to your career?
+
+I would look in three places.
+
+Capability.
+
+Evidence.
+
+Recognition.
+
+Capability means the work changed what you can handle.
+
+You understand a new system.
+
+You can navigate a more difficult stakeholder environment.
+
+You can make a type of judgment that was previously outside your range.
+
+Evidence means the work left you with something you can explain.
+
+A permitted result.
+
+A decision you influenced.
+
+A problem you can describe without relying on confidential material or company shorthand.
+
+Another context can hear what you did and why it mattered.
+
+Recognition means the organization has acknowledged the expanded contribution in something more concrete than praise.
+
+That might mean greater decision authority.
+
+Formal scope.
+
+Compensation.
+
+Title.
+
+Sponsorship.
+
+Visibility that is connected to real work.
+
+Or a credible review point where the expanded responsibility will actually be assessed.
+
+Not every stretch assignment will return all three immediately.
+
+Sometimes the capability comes first.
+
+Sometimes you accept a defined period of extra load because the evidence will be unusually valuable.
+
+Sometimes the experience gives you access to a context you could not otherwise enter.
+
+But I want the return to be visible somewhere.
+
+Because reliability can increase how much an organization gives you before it increases the authority, support or recognition it gives you.
+
+Praise is welcome.
+
+Praise alone is not role design.
+
+Ask:
+
+What will this work make me better able to do?
+
+What evidence will I be able to point to six or twelve months from now?
+
+And what has the organization said will change if this expanded responsibility becomes permanent?
+
+If no one can name a return and nothing is scheduled to change, the organization may be benefiting from your reliability more than your career is benefiting from the work.
+
+[SLIDE: Pattern Read]
+
+Now put the three tests together.
+
+If complexity, authority and return are all expanding, you probably have a strong growth case.
+
+The work can still be hard.
+
+You can still need support.
+
+You can still decide the workload is too much.
+
+But the career return is visible.
+
+If complexity is increasing but authority or support has not caught up, you may be in an unsustainable stretch.
+
+That does not automatically mean you should leave or refuse the work.
+
+It tells you what needs to be redesigned.
+
+Which decisions need to move?
+
+What support is missing?
+
+What should come off your plate?
+
+If volume increased but complexity, authority and return did not, the role has expanded mainly as workload.
+
+That may be reasonable for a short season.
+
+Someone leaves.
+
+A launch is underway.
+
+A transition needs coverage.
+
+But temporary work needs a boundary.
+
+Otherwise temporary coverage quietly becomes the permanent design of your role.
+
+And that is where dependable people can lose years without realizing the career has stopped compounding.
+
+This is not a moral judgment about taking on extra work.
+
+Growth can be tiring.
+
+Ordinary work matters.
+
+Reliability is valuable.
+
+The goal is accuracy.
+
+Is the cost you are carrying building something you can use — or consuming the space where development could have happened?
+
+[SLIDE: Before the Scope Expands Again]
+
+Before your scope expands again, look at what has been added during the last six to twelve months.
+
+Then ask three questions.
+
+What should come off my plate?
+
+If something important is becoming a permanent part of your role, it is reasonable to ask whether everything from the old role still belongs there too.
+
+Which decisions need to belong to me?
+
+If you are accountable for the outcome, identify where decision rights or influence need to change.
+
+And:
+
+How and when will this scope be reviewed?
+
+Do not leave “we will revisit this later” undefined.
+
+Later has a way of becoming permanent.
+
+A review point does not guarantee a promotion or compensation change.
+
+It creates a moment where the organization has to acknowledge what the role has actually become.
+
+That is a much stronger conversation than saying only:
+
+“I have too much work.”
+
+You are showing the design problem.
+
+The workload changed.
+
+Now what needs to change around it?
+
+[SLIDE: Capability Formation Field Kit]
+
+If you want a structured way to examine what your current work is actually building in you, that is what the Capability Formation Field Kit is designed to help you do.
+
+It gives you a private, evidence-led read of your recent work so you can see where capability is accumulating, what appears portable and where the role may need a boundary or redesign.
+
+You can find it at:
+
+temidayoafonja.com/fieldkit.
+
+[SLIDE: Watch Next]
+
+One of the hardest versions of this problem is when the work really did expand your capability — but almost none of the value is easy to show because you built something that did not exist before.
+
+That is what we are going to tackle next.
+
+Watch:
+
+How to Show Your Impact at Work When You Built It From Scratch.
+
+More work can be part of growth.
+
+It is not proof of it.
+
+END APPROVED VIDEO 6 SCRIPT
+
+==================================================
+CLEAN READING SCRIPT
+==================================================
+
+Create:
+Video6ReadingScriptnomarkers_HIT_v2.0.docx
+Video6ReadingScriptnomarkers_HIT_v2.0.txt
+
+These files must contain the EXACT SAME SPOKEN WORDS as the teleprompter script.
+
+Remove only:
+- [SLIDE: ...] markers;
+- production headings;
+- document metadata;
+- editor directions.
+
+Do not change wording or punctuation.
+
+Verify programmatically that removing slide markers from the teleprompter produces the same spoken sequence as the reading script.
+
+==================================================
+LONG-FORM EDITOR-ONLY DOCUMENT
+==================================================
+
+Create:
+Video_6_EDITOR_ONLY_HIT_Brief_v2.0.docx
+
+Clearly label:
+EDITOR ONLY
+VIDEO 6
+Are You Growing—or Just Being Given More Work?
+
+Locked metadata:
+Title: Are You Growing—or Just Being Given More Work?
+Thumbnail: MORE WORK ≠ GROWTH
+CTA: Capability Formation Field Kit
+Watch next: How to Show Your Impact at Work When You Built It From Scratch
+
+Core distinction:
+More responsibility can be part of growth. It is not proof of it.
+
+FIRST 30 SECONDS — H.I.T.
+
+0:00–0:05
+
+Spoken anchor:
+“Your workload can grow faster than your career.”
+
+H = HOOK
+
+Visual:
+Direct-to-camera.
+
+On-screen:
+YOUR WORKLOAD GREW.
+DID YOUR CAREER?
+
+Do not repeat the thumbnail wording in the first beat.
+
+0:05–0:16
+
+Spoken anchor:
+“Across my own career, my scope has expanded beyond the job I was originally hired to do more than once.”
+
+T = TRUST
+I = INTEREST
+
+Visual:
+ORIGINAL SCOPE
+→
+EXPANDED SCOPE
+
+Do not add:
+- employer;
+- exact role;
+- exact assignment;
+- exact timeline;
+- metric;
+- outcome;
+- quote.
+
+0:16–0:20
+
+Spoken:
+“That taught me not to use volume as the test.”
+
+Return to Temidayo.
+
+On-screen:
+VOLUME ≠ GROWTH
+
+Let the line breathe.
+
+0:20–0:30
+
+Spoken anchor:
+“Before you call more responsibility growth…”
+
+Progressively reveal:
+COMPLEXITY
+AUTHORITY
+RETURN
+
+Then enter the existing deck.
+
+EDITORIAL RHYTHM AFTER OPENING
+
+After the first 30 seconds:
+- preserve natural pace;
+- use slides for distinctions and questions;
+- avoid constant motion;
+- avoid decorative B-roll;
+- avoid constant punch-ins;
+- allow reflective pauses;
+- do not make workload/growth visually alarmist.
+
+EXISTING SLIDE SYSTEM
+
+Preserve Slides 1–11 unchanged.
+
+Use the existing sequence:
+
+1. Core Distinction
+2. More Work / Real Growth
+3. Three Tests
+4. Complexity
+5. Capability Question
+6. Accountability / Authority
+7. Authority Warning
+8. Return
+9. Pattern Read
+10. Before the Scope Expands Again
+11. Capability Formation Field Kit
+12. Watch Next
+
+SLIDE 12 EXCEPTION
+
+Update only the stale Watch Next title:
+
+FROM:
+How to Prove the Value of Work That Had No Blueprint
+
+TO:
+How to Show Your Impact at Work When You Built It From Scratch
+
+Preserve all other design and copy.
+
+Update the corresponding reveal frame(s) only.
+
+Report the actual main-slide count and actual reveal-frame count after inspecting the live files.
+
+LET THE SLIDES CARRY LISTS
+
+Especially:
+- Complexity variables;
+- Responsibility / Accountability / Authority distinction;
+- Capability / Evidence / Recognition;
+- the final manager-conversation questions.
+
+Do not add spoken words to repeat every on-screen label.
+
+FACT / PROOF BOUNDARIES
+
+Confirmed proof:
+Across Temidayo’s career, scope has expanded beyond the original job description more than once.
+
+Do not invent:
+- employer;
+- exact role;
+- assignment;
+- quote;
+- outcome;
+- metric;
+- causal claim.
+
+Do not attach:
+- ~30% retention improvement;
+- >$2M avoided turnover;
+- another undocumented result.
+
+The line about career stall while employed is conceptual editorial language, not a prevalence claim.
+
+Do not add external statistics unless Temidayo explicitly authorizes them later.
+
+EVIDENCE BOUNDARY
+
+When discussing permitted evidence:
+- no confidential information;
+- no employer-owned files;
+- no customer data;
+- no employee data;
+- no proprietary material.
+
+CTA
+
+Only one offer:
+Capability Formation Field Kit
+https://temidayoafonja.com/fieldkit
+
+Do not add Keep the Proof or Career Decision Evidence Check.
+
+WATCH NEXT
+
+Use the current locked title:
+How to Show Your Impact at Work When You Built It From Scratch
+
+Use direct Video 7 end-screen route when Video 7 is public.
+
+Before Video 7 is public:
+- use the Career Portability playlist if functioning;
+- otherwise use YouTube best-for-viewer or another appropriate currently public video temporarily.
+
+Do not leave Subscribe as the only end-screen element.
+
+==================================================
+PUBLISHING PACKAGE
+==================================================
+
+Create:
+Video_6_Publishing_Package_HIT_v2.0.docx
+
+TITLE:
+Are You Growing—or Just Being Given More Work?
+
+THUMBNAIL:
+MORE WORK ≠ GROWTH
+
+PRIMARY SEARCH PHRASE:
+are you growing or just being given more work
+
+SUPPORTING SEARCH LANGUAGE:
+career growth
+more responsibility at work
+career development
+workload increase
+career stagnation
+stretch assignment
+professional growth
+career progression
+capability formation
+
+COPY-READY YOUTUBE DESCRIPTION:
+
+More responsibility at work can look like career growth even when your workload is simply getting larger.
+
+In this video, I give you three tests for separating genuine development from a role that has simply learned to rely on you for more:
+
+✨ Complexity — Did the problem become more difficult, or did the volume simply increase?
+
+✨ Authority — Did your ability to influence decisions expand with the responsibility?
+
+✨ Return — What did the additional work give back in capability, evidence or recognition?
+
+Being dependable is valuable. But a career can look successful from the outside while the work underneath it has stopped adding much new judgment.
+
+The question is not simply:
+
+“Am I doing more?”
+
+It is:
+
+“What is this work building in me?”
+
+🧭 CAPABILITY FORMATION FIELD KIT
+
+Examine what your current work is building, what appears portable and where the role may need a boundary or redesign:
+
+https://temidayoafonja.com/fieldkit
+
+⏱️ CHAPTERS
+
+[INSERT WORKING ESTIMATES DIRECTLY HERE IN THE FINAL DOCUMENT]
+
+▶️ WATCH NEXT
+
+How to Show Your Impact at Work When You Built It From Scratch
+
+[ADD VIDEO 7 LINK WHEN LIVE]
+
+🔗 CONNECT AND EXPLORE
+
+Website:
+https://temidayoafonja.com
+
+LinkedIn:
+https://www.linkedin.com/in/temidayo-afonja
+
+Substack:
+https://temidayoafonja.substack.com
+
+#CareerGrowth #CareerDevelopment #CapabilityFormation
+
+IMPORTANT:
+Do NOT leave the [INSERT...] placeholder in the final publishing document.
+
+Generate working chapter estimates from the revised script and place the actual lines directly under ⏱️ CHAPTERS inside the copy-ready description.
+
+After the copy-ready public description, place a clearly separated internal note:
+
+WORKING ESTIMATES — EDITOR MUST REPLACE FROM FINAL CUT
+
+The estimates are script-derived, not final.
+
+Approved chapter titles:
+
+Your Workload Can Grow Faster Than Your Career
+The 3 Tests for Real Growth
+Test 1: Did the Problem Become More Complex?
+What Can You Do Now That You Couldn’t Before?
+Test 2: Did Your Authority Expand?
+Accountability Is Not Authority
+Test 3: What Did the Work Return?
+Read the Pattern
+What to Ask Before Your Scope Expands Again
+Capability Formation Field Kit
+How to Show Your Impact at Work When You Built It From Scratch
+
+PINNED COMMENT:
+
+Which part of your role has grown the most recently?
+
+1. Complexity
+2. Authority
+3. Workload
+
+And what has that additional responsibility actually returned to your career?
+
+You do not need to share confidential details — I am more interested in the pattern you are seeing.
+
+If you want a fuller private read of what your current work is building, the Capability Formation Field Kit is here:
+
+https://temidayoafonja.com/fieldkit
+
+YOUTUBE TAG FIELD:
+
+are you growing or just being given more work, more responsibility at work, career growth, career development, workload increase, career stagnation, professional growth, stretch assignment, career progression, work overload, career portability, capability formation, experienced professionals, Temidayo Afonja
+
+Do not put the full tag field in the public description.
+
+==================================================
+SEPARATE DESCRIPTION-ONLY DOCUMENT
+==================================================
+
+Create outside the ZIP:
+
+Video_6_YouTube_Description_HIT.docx
+
+Use the same clean description-only format already established for Videos 1–5.
+
+Include:
+- Title
+- Thumbnail
+- Primary search phrase
+- Copy-ready description WITH emojis
+- Working chapter estimates inline
+- clearly separated working-estimates warning
+- Pinned Comment
+- Watch Next
+- YouTube tag field
+
+The copy-ready description must preserve the approved emoji system:
+
+✨ teaching points
+🧭 CTA/resource
+⏱️ chapters
+▶️ Watch Next
+🔗 Connect and Explore
+
+Do not add random or excessive emojis.
+
+==================================================
+FOUR STANDALONE SHORTS
+==================================================
+
+Create four separate DOCX recording documents.
+
+They are independently recorded 9:16 Shorts.
+They are NOT excerpts from the long-form.
+
+No editor directions inside recording documents.
+
+--------------------------------------------------
+SHORT 1
+--------------------------------------------------
+
+Filename:
+Video_6_Short_1_Workload_Grows_Faster.docx
+
+Role:
+Recognition
+
+Verbal hook:
+Your workload can grow faster than your career.
+
+Related long-form:
+Are You Growing—or Just Being Given More Work?
+
+RECORDING COPY:
+
+Your workload can grow faster than your career.
+
+This happens easily when you are dependable.
+
+A project loses its owner.
+
+Someone leaves.
+
+A temporary exception lands with you because people know you will handle it.
+
+None of those things is automatically a problem.
+
+The question is what happens next.
+
+If the extra work becomes permanent but the problems are not harder, your authority has not changed and there is no meaningful career return, your job may be using more of your capacity without developing much more capability.
+
+Being busy is real.
+
+It just is not proof that you are growing.
+
+--------------------------------------------------
+SHORT 2
+--------------------------------------------------
+
+Filename:
+Video_6_Short_2_Accountability_Not_Authority.docx
+
+Role:
+Distinction
+
+Verbal hook:
+Accountability is not the same as authority.
+
+Related long-form:
+Are You Growing—or Just Being Given More Work?
+
+RECORDING COPY:
+
+Accountability is not the same as authority.
+
+Accountability is what you will answer for.
+
+Authority is what you can influence or decide.
+
+Those do not always expand together.
+
+You can be told to own an outcome while someone else still controls the priorities, resources and decisions that produce it.
+
+That can increase your exposure without increasing your judgment.
+
+You do not need complete control.
+
+But if the responsibility keeps growing, your judgment should have somewhere to go.
+
+Accountability without authority is a warning, not a development plan.
+
+--------------------------------------------------
+SHORT 3
+--------------------------------------------------
+
+Filename:
+Video_6_Short_3_More_Scope_Was_It_Growth.docx
+
+Role:
+Personal proof
+
+Verbal hook:
+My scope has expanded beyond the job I was originally hired to do more than once.
+
+Related long-form:
+Are You Growing—or Just Being Given More Work?
+
+RECORDING COPY:
+
+My scope has expanded beyond the job I was originally hired to do more than once.
+
+That taught me not to ask only:
+
+“How much more am I carrying?”
+
+I ask three different questions.
+
+Did the problem become harder?
+
+Did I gain more authority to influence the outcome?
+
+And what did the work return to my career?
+
+Because more volume can make you very busy.
+
+It can even make you very valuable to the organization.
+
+But growth should leave you able to handle something you could not credibly handle before.
+
+That is the difference I want you to look for.
+
+--------------------------------------------------
+SHORT 4
+--------------------------------------------------
+
+Filename:
+Video_6_Short_4_What_Comes_Off_Your_Plate.docx
+
+Role:
+Practical action
+
+Verbal hook:
+Before your scope expands again, ask what comes off your plate.
+
+Related long-form:
+Are You Growing—or Just Being Given More Work?
+
+RECORDING COPY:
+
+Before your scope expands again, ask what comes off your plate.
+
+Then ask two more questions.
+
+Which decisions need to belong to me if I am responsible for these outcomes?
+
+And how and when will this expanded scope be reviewed?
+
+That is a stronger conversation than simply saying:
+
+“I have too much work.”
+
+You are showing how the role itself has changed.
+
+If something new becomes permanent, something around the role may need to change too — priorities, authority, support, scope or recognition.
+
+Temporary work without a review point has a way of becoming the new baseline.
+
+==================================================
+SHORTS EDITOR-ONLY BRIEF
+==================================================
+
+Create:
+Video_6_Shorts_EDITOR_ONLY_HIT_Brief.docx
+
+Clearly label:
+EDITOR ONLY
+VIDEO 6 — FOUR STANDALONE SHORTS
+
+State:
+These are separately recorded 9:16 Shorts.
+They are NOT excerpts from the long-form.
+
+Each should have:
+- immediate verbal hook;
+- matching on-screen hook;
+- meaningful visual interest;
+- accurate mobile-safe captions;
+- restrained pacing;
+- Video 6 added as YouTube Related Video when available.
+
+SHORT 1
+
+On-screen hook:
+BUSIER ≠ MORE CAPABLE
+
+Visual:
+MORE CAPACITY USED
+vs.
+MORE CAPABILITY BUILT
+
+Do not use generic exhausted-office-worker B-roll.
+
+End:
+BEING BUSY IS NOT PROOF OF GROWTH
+
+SHORT 2
+
+On-screen hook:
+ACCOUNTABILITY ≠ AUTHORITY
+
+Use the existing conceptual distinction:
+ACCOUNTABILITY — WHAT YOU ANSWER FOR
+AUTHORITY — WHAT YOU CAN INFLUENCE OR DECIDE
+
+End:
+YOUR JUDGMENT NEEDS SOMEWHERE TO GO
+
+No red warning graphics.
+
+SHORT 3
+
+On-screen hook:
+MORE SCOPE. BUT WAS IT GROWTH?
+
+Do not add:
+- employer;
+- exact role;
+- assignment;
+- timeline;
+- result;
+- metric.
+
+Progressively show:
+COMPLEXITY
+AUTHORITY
+RETURN
+
+End:
+WHAT CAN YOU HANDLE NOW?
+
+SHORT 4
+
+On-screen hook:
+WHAT COMES OFF YOUR PLATE?
+
+Reveal progressively:
+WHAT COMES OFF MY PLATE?
+WHICH DECISIONS BELONG TO ME?
+WHEN WILL THIS SCOPE BE REVIEWED?
+
+End:
+TEMPORARY NEEDS A REVIEW DATE
+
+ALL SHORTS — VISUAL BOUNDARIES
+
+Do not use:
+- hyperactive zooming;
+- fake shock expressions;
+- red warning graphics;
+- burnout clichés;
+- generic office B-roll;
+- stock résumé footage;
+- clocks or calendar gimmicks;
+- AI-style animated icons;
+- trendy caption templates;
+- flashy transitions.
+
+==================================================
+README
+==================================================
+
+Create README_FINAL.txt.
+
+State:
+
+VIDEO 6 — H.I.T. FINAL RECORDING PACKAGE
+
+Title:
+Are You Growing—or Just Being Given More Work?
+
+Thumbnail:
+MORE WORK ≠ GROWTH
+
+CTA:
+Capability Formation Field Kit
+
+CTA URL:
+https://temidayoafonja.com/fieldkit
+
+Watch next:
+How to Show Your Impact at Work When You Built It From Scratch
+
+Long-form:
+Revised under H.I.T.
+
+Slides 1–11:
+UNCHANGED.
+
+Slide 12:
+WATCH NEXT TITLE UPDATED ONLY to match locked Video 7 title.
+
+Reveal deck:
+Only corresponding Slide 12 title-state frame(s) may change.
+
+Shorts:
+Four separately recorded vertical scripts.
+
+Editor instructions:
+Separated from all recording copy.
+
+Description-only document:
+Created separately outside the package ZIP.
+
+List every filename in the package.
+
+==================================================
+CHECKSUM CONVENTION
+==================================================
+
+Inside ZIP:
+SHA256SUMS.txt contains checksums for the other 12 user-facing files only.
+
+Outside ZIP:
+Video_6_HIT_FINAL_Recording_and_Shorts_Package.zip.sha256
+
+contains final ZIP SHA-256.
+
+Do not put ZIP hash in SHA256SUMS.txt.
+
+The separate Video_6_YouTube_Description_HIT.docx is outside the ZIP and should have its own SHA-256 reported in the completion summary.
+
+==================================================
+CANONICAL SOURCE VERIFICATION
+==================================================
+
+This prompt file is the canonical source:
+
+Video_6_Code_Prompt_HIT_Final.txt
+
+In the SAME BUILD PASS:
+
+1. Extract text between:
+BEGIN APPROVED VIDEO 6 SCRIPT
+and
+END APPROVED VIDEO 6 SCRIPT
+
+2. Compare literally against:
+Video6TeleprompterScriptwithslidemarkers_HIT_v2.0.txt
+after removing only slide-marker lines.
+
+3. Compare against:
+Video6ReadingScriptnomarkers_HIT_v2.0.txt
+
+Check:
+- every word;
+- punctuation;
+- apostrophes;
+- quotation marks;
+- em dashes;
+- capitalization;
+- paragraph order;
+- slide-marker names and positions.
+
+Do not normalize away substantive differences.
+
+If source verification fails:
+STOP.
+Do not mark final.
+
+==================================================
+QA / VALIDATION
+==================================================
+
+Before packaging:
+
+1. Verify actual current main-slide count.
+2. Verify actual current reveal-frame count.
+3. Verify exact pre-change Slide 12 title.
+4. Confirm Slides 1–11 are byte-identical before/after.
+5. Confirm Slide 12 changed only in the stale Watch Next title.
+6. Confirm corresponding reveal frame(s) changed only in title text.
+7. Confirm thumbnail unchanged.
+8. Confirm teleprompter DOCX == TXT.
+9. Confirm reading DOCX == TXT.
+10. Confirm teleprompter minus markers == reading script.
+11. Confirm canonical prompt comparison passes exactly.
+12. Confirm exactly 12 slide markers, ordered and mapped correctly.
+13. Confirm exactly four Short recording documents.
+14. Confirm Short recording documents contain no editor directions.
+15. Confirm both EDITOR ONLY documents clearly labeled.
+16. Confirm bounded scope-expansion proof contains no invented employer/role/assignment/timeline/result/metric.
+17. Confirm no 30% retention or >$2M metric attached.
+18. Confirm Career Decision Evidence Check and Keep the Proof do not leak into CTA copy.
+19. Confirm Field Kit is sole product CTA.
+20. Confirm Video 7 current title appears everywhere Watch Next is used.
+21. Confirm no old Video 7 title remains in the final package or corrected Slide 12.
+22. Confirm no confidential/employer-owned evidence-retention advice.
+23. Confirm description retains approved emojis.
+24. Confirm working chapter lines are inserted directly in the copy-ready description.
+25. Confirm no [INSERT] placeholder remains.
+26. Confirm working-estimates warning sits outside public copy.
+27. Confirm separate description-only DOCX matches publishing description.
+28. Render and visually inspect every DOCX.
+29. Confirm no clipping, overlap, broken glyph, blank page or avoidable nearly-empty trailing page.
+30. Build ZIP from explicit 13-file allowlist.
+31. Confirm exactly 13 files in ZIP.
+32. Confirm no _source/Python files in ZIP.
+33. Confirm README matches actual ZIP.
+34. Confirm SHA256SUMS.txt has exactly 12 entries.
+35. Run sha256sum -c successfully.
+36. Confirm sibling .zip.sha256 matches final ZIP.
+37. Compute SHA-256 for separate description-only DOCX.
+38. Confirm no website/product/other-video file changed.
+
+Do not make unapproved editorial changes during QA.
+
+==================================================
+COMPLETION REPORT
+==================================================
+
+Report:
+- exact files created;
+- exact files modified;
+- actual main-slide count;
+- actual reveal-frame count;
+- exact Slide 12 title correction;
+- confirmation Slides 1–11 unchanged;
+- confirmation thumbnail unchanged;
+- canonical spoken word count;
+- canonical source comparison result;
+- 12-marker result;
+- four-Short validation result;
+- full ZIP listing;
+- exact ZIP file count;
+- confirmation no _source/Python files;
+- page count for every DOCX;
+- final ZIP SHA-256;
+- sibling checksum filename;
+- separate description-only DOCX SHA-256;
+- any issue requiring Temidayo’s decision.
+
+Do not mark FINAL if any validation fails.
+Do not alter approved wording without explicit approval.

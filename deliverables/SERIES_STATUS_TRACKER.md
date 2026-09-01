@@ -114,7 +114,7 @@ for every video that carries the URL.
 | 3 | slides, reveal deck and thumbnail **unchanged and authoritative** | **FINAL + LOCKED + CLEARED TO PUBLISH**, commit `c961b63` | Final A approved; Final B archived |
 | 4 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. content + package APPROVED** — not yet final, see the note below | approved |
 | 5 | slides, reveal deck and thumbnail **unchanged and authoritative** | **FINAL + LOCKED FOR RECORDING**, commit `51496ba` | approved |
-| 6 | Slides 1–11 and thumbnail **unchanged**; Slide 12 Watch Next title corrected | **H.I.T. rebuild built — awaiting Temidayo's approval** | task closed — finalising in Canva |
+| 6 | Slides 1–11 and thumbnail **unchanged**; Slide 12 Watch Next title corrected | **FINAL + LOCKED FOR RECORDING** | task closed — finalising in Canva |
 | 7 | slides, reveal deck and thumbnail **unchanged and authoritative** | **REOPENED UNDER H.I.T.** — not yet revised, not locked | concept approved: `MAKE INVISIBLE WORK VISIBLE`, gesture version |
 | 8 | slides, reveal deck and thumbnail **unchanged and authoritative** | **REOPENED UNDER H.I.T.** — not yet revised, not locked | leading direction: `YOUR EXPERIENCE STILL COUNTS` |
 
@@ -360,52 +360,45 @@ the proof now sits in the opening.
 
 #### Video 6 — Are You Growing—or Just Being Given More Work?
 
-**H.I.T. PACKAGE BUILT — awaiting Temidayo's approval.**
+**FINAL + LOCKED FOR RECORDING.**
 
 | | |
 |---|---|
-| Package | `deliverables/video-6-slides/hit-final/` |
+| Title | Are You Growing—or Just Being Given More Work? |
+| Thumbnail | MORE WORK ≠ GROWTH |
 | Canonical spoken count | 1,721 across 190 spoken paragraphs |
-| Slide markers | 12, mapping to the 12-slide deck |
-| Live file counts | **12 main slides, 23 reveal-build frames** (verified, not assumed) |
-| Archive SHA-256 | `2c815849f1abcaa725b42cc8cd2143ab9fb15293283021abb77b25332880c467` |
-| Description-only doc | `Video_6_YouTube_Description_HIT.docx`, outside the ZIP, SHA-256 `36ed05802a15a9927fa86f53962f3eb5094a8ccbcbc7723e3aad25c3879acda3` |
 | CTA | Capability Formation Field Kit |
 | Watch next | How to Show Your Impact at Work When You Built It From Scratch |
+| Main slides | 12 — slides 1 to 11 UNCHANGED, slide 12 Watch Next title corrected only |
+| Reveal frames | 23 — frames 1 to 22 UNCHANGED, frame 23 Watch Next title corrected only |
+| Thumbnail asset | UNCHANGED |
+| Four Shorts | FINAL + LOCKED |
+| Description-only document | FINAL, SHA-256 `db08023929f08f7f6639b2d9fad26d0c787538865df13523f0cede5816e7fab2` |
+| Package ZIP SHA-256 | `f3cf7b36167524d222852ba8b720ea65e10f1e9ade45065e4412cc3b1c999387` |
+| Sibling checksum | `Video_6_HIT_FINAL_Recording_and_Shorts_Package.zip.sha256` |
+| Canonical source verification | **PASSED** |
 
-**Authorised visual change — the only one in this pass.** Slide 12's Watch Next
-title was stale. It read "How to Prove the Value of Work That Had No Blueprint"
-and now reads "How to Show Your Impact at Work When You Built It From Scratch",
-set as four lines to hold the existing 29pt Montserrat Bold inside the existing
-text box. Slides 1 to 11 are byte-identical; reveal frames 1 to 22 are
-byte-identical; only reveal frame 23 carried the same title and received the
-same correction. In each file exactly one XML part changed, and the only
-structural delta is one added run with identical formatting plus one line break.
-The thumbnail is unchanged.
+**Canonical source verification — PASSED.** Against the uploaded
+`Video_6_Code_Prompt_HIT_Final.txt` (SHA-256 `4ef0e003dc109534…`, archived at
+`video-6-slides/hit-final/_source/`): exact match on both scripts across all 190
+paragraphs, 10,521 characters on all three sides, identical SHA-256 of the
+joined spoken text, and all 12 slide-marker names and positions matching, with
+no normalisation applied.
 
-**Description-only document corrected, 1 September 2026.** The editorial emoji
-instruction sat immediately before the public copy, where a paste into YouTube
-could catch it. It now sits above an explicit `COPY-READY YOUTUBE DESCRIPTION —
-BEGIN` marker under an `INTERNAL NOTE — DO NOT PASTE INTO YOUTUBE` heading. The
-public description wording is unchanged across all 36 paragraphs and all seven
-approved emoji markers are preserved inside the copy-ready block. Corrected
-document SHA-256 `db08023929f08f7f6639b2d9fad26d0c787538865df13523f0cede5816e7fab2`.
-The document sits outside the ZIP, so **no packaged file changed and the archive
-hash is retained**.
+**Slide 12 correction.** "How to Prove the Value of Work That Had No Blueprint"
+became "How to Show Your Impact at Work When You Built It From Scratch", set as
+four lines — HOW TO SHOW YOUR / IMPACT AT WORK / WHEN YOU BUILT / IT FROM
+SCRATCH — inside the existing 29pt Montserrat Bold text box. Exactly one XML
+part changed per deck, the only structural delta being one added run with
+identical formatting plus one line break.
 
-**Source verification — still OPEN.** The named canonical file
-`Video_6_Code_Prompt_HIT_Final.txt` has **not arrived**. Temidayo stated it was
-being uploaded on 1 September; the uploads directory, the whole filesystem by
-name and a content search for the BEGIN fence were all checked and it is not
-present. The script was
-extracted programmatically from the session's recorded copy of the brief — not
-retyped — and the comparison passed exactly: 190 paragraphs, 10,521 characters
-on all three sides, identical SHA-256 of the joined spoken text, all 12
-slide-marker names and positions matching. That proves the package matches what
-the session received; it cannot rule out a difference from a file held
-elsewhere. Uploading the `.txt` would close that gap.
-
-Video 6 is **not** locked for recording until Temidayo approves this package.
+**Description copy boundary.** Both the publishing package and the separate
+description-only document now place the editorial emoji instruction above an
+explicit `COPY-READY YOUTUBE DESCRIPTION — BEGIN` marker. Their public copy is
+**identical**, 36 paragraphs, all seven approved emoji markers intact, no
+`[INSERT]` placeholder anywhere. The archive was rebuilt for the publishing-
+package change and carries a new hash; the earlier `2c815849…` no longer
+applies.
 
 #### Video 7 — How to Show Your Impact at Work When You Built It From Scratch
 
@@ -431,10 +424,9 @@ package is not final.
 
 | State | Videos |
 |---|---|
-| FINAL + LOCKED | 2, 3, 4, 5 |
+| FINAL + LOCKED | 2, 3, 4, 5, 6 |
 | Content approved / awaiting independent review before lock | 1 |
 
-| H.I.T. package built / awaiting approval | 6 |
 | Reopened / H.I.T. revision still required | 7, 8 |
 
 Next editorial work is **Video 7**, which remains REOPENED UNDER H.I.T.
