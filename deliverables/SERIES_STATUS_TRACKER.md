@@ -268,14 +268,49 @@ file disagrees, this section is current.
 
 #### Video 1 — How to Change Jobs Without Starting Your Career Over
 
-**H.I.T. CONTENT APPROVED / CORRECTED FINAL PACKAGE AWAITING INDEPENDENT
-REVIEW.**
+**v3.1 CAREER EVIDENCE STARTER PATCH APPLIED. NOT YET LOCKED — one item
+outstanding.** 1 September 2026.
 
 The wording "roughly eighteen years" is **approved**. It is **not** an open
 issue and is not a pending decision.
 
-The corrected archive currently recorded in the repository is
-`c49fcc42c010f49dab123b61cce330478edd57984cb9afa9bac3ae07a660b2a3`.
+**The Capability Formation Field Kit CTA is SUPERSEDED for this video** by the
+live Free Career Evidence Starter, `https://temidayoafonja.com/career-evidence-starter`.
+Video 1 carries ONE primary CTA. The Field Kit product itself is unchanged and
+remains the CTA for the videos that route to it.
+
+The v3.1 patch changed exactly two things in the spoken script: the slide
+marker `[SLIDE: Capability Formation Field Kit]` became
+`[SLIDE: Career Evidence Starter]`, and the three-paragraph Field Kit CTA block
+became the approved three-paragraph Starter block. Verified against the v3.0
+canonical: those four paragraphs are the only ones that differ, at consecutive
+positions. Canonical spoken count **1,329** across 111 paragraphs and 13
+markers. All 35 QA checks pass. Every DOCX rendered and visually inspected.
+
+Slide 12 and reveal frame 21 carry the authorised CTA text correction. Main
+`slide12.xml` and reveal `slide21.xml` are the only changed parts; slides 1-11
+and 13 and the other 21 reveal frames are byte-identical. 13 main slides, 22
+reveal frames. The four Short recording scripts and the Shorts editor brief are
+byte-identical to v3.0 and were deliberately not rewritten.
+
+A separate description-only document now exists for Video 1, matching the
+convention used for Videos 6 to 8.
+
+Package ZIP SHA-256:
+`b582e820c52d82af45b37e4d68928922d31758fd1a454ff3d2719713f940cb2b`
+Sibling checksum: `Video_1_HIT_FINAL_Recording_and_Shorts_Package.zip.sha256`
+Description-only DOCX:
+`9c4f251fe67f979a248d0df549009cf1e87fcc9c12e5af5a9ef9e2d7e5d70ce6`
+The earlier v3.0 archive `c49fcc42…` is superseded.
+
+**OUTSTANDING BEFORE LOCK — CTA artwork.** Slide 12 and reveal frame 21 still
+carry the two Capability Formation Field Kit page images (cover and the "Part
+Two: Optionality" interior page, whose footer reads *The Capability Formation
+Field Kit*). They must be replaced with the real Career Evidence Starter
+artifact — Starter cover in front, Portable Proof Line page visible behind,
+warm cream background. The artifact was shown in the conversation but has not
+been supplied as a file, and no substitute may be fabricated. Video 1 is **not
+locked** until those two images are replaced byte-identically, with checksums.
 
 Video 1 is **not** to be marked FINAL from a tracker update alone. Temidayo's
 advisor will independently review the corrected deliverable before lock.
@@ -490,11 +525,13 @@ Thumbnail direction: `YOUR EXPERIENCE STILL COUNTS`.
 | State | Videos |
 |---|---|
 | FINAL + LOCKED FOR RECORDING | 2, 3, 4, 5, 6, 7, 8 |
-| Content approved / awaiting independent review before lock | 1 |
+| v3.1 patch applied — awaiting CTA artwork and independent review before lock | 1 |
 
 Videos 7 and 8 completed their H.I.T. rebuilds on 1 September 2026 and are
-locked. Video 1 is the only remaining item in the series: its content has
-passed substantive review and it awaits independent advisor review before lock.
+locked. Video 1 is the only remaining item in the series. Its v3.1 Career
+Evidence Starter patch is applied and verified; it awaits the real Starter
+artifact images for Slide 12 and reveal frame 21, and independent advisor
+review, before lock.
 
 Videos 5 to 8 are **not** to be reverted to their prior "locked" state merely
 because older packages still exist in the repository. The H.I.T. packages named

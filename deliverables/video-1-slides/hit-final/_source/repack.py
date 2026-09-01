@@ -1,0 +1,63 @@
+# -*- coding: utf-8 -*-
+"""Rebuild SHA256SUMS.txt and the master ZIP from the files now on disk.
+
+Used after restoring byte-identical files so that only the two documents whose
+CONTENT actually changed carry new hashes. Same explicit 13-file allowlist as
+build.py.
+"""
+import os, hashlib, zipfile
+
+ROOT = "Video_1_HIT_FINAL"
+ZIPNAME = "Video_1_HIT_FINAL_Recording_and_Shorts_Package.zip"
+MANIFEST = [
+ "LONG_FORM/Video1TeleprompterScriptwithslidemarkers_HIT_v3.1.docx",
+ "LONG_FORM/Video1TeleprompterScriptwithslidemarkers_HIT_v3.1.txt",
+ "LONG_FORM/Video1ReadingScriptnomarkers_HIT_v3.1.docx",
+ "LONG_FORM/Video1ReadingScriptnomarkers_HIT_v3.1.txt",
+ "LONG_FORM/Video_1_EDITOR_ONLY_HIT_Brief_v3.1.docx",
+ "LONG_FORM/Video_1_Publishing_Package_HIT_v3.1.docx",
+ "SHORTS/Video_1_Short_1_New_Context_Not_Zero.docx",
+ "SHORTS/Video_1_Short_2_Experience_Needs_Evidence.docx",
+ "SHORTS/Video_1_Short_3_Result_Needs_Context.docx",
+ "SHORTS/Video_1_Short_4_Look_Under_The_Title.docx",
+ "SHORTS/Video_1_Shorts_EDITOR_ONLY_HIT_Brief.docx",
+ "README_FINAL.txt",
+]
+SUMS = "SHA256SUMS.txt"
+
+def sha256(p):
+    h = hashlib.sha256()
+    with open(p, "rb") as fh:
+        for b in iter(lambda: fh.read(1 << 20), b""): h.update(b)
+    return h.hexdigest()
+
+for m in MANIFEST:
+    assert os.path.isfile(os.path.join(ROOT, m)), "missing: " + m
+on_disk = set()
+for dp, dn, fn in os.walk(ROOT):
+    dn[:] = [x for x in dn if x != "__pycache__"]
+    for f in fn:
+        if f.endswith(".pyc"): continue
+        on_disk.add(os.path.relpath(os.path.join(dp, f), ROOT).replace(os.sep, "/"))
+unexpected = sorted(on_disk - set(MANIFEST) - {SUMS})
+assert not unexpected, "unexpected files: %r" % unexpected
+
+L = ["# VIDEO 1 - H.I.T. FINAL RECORDING PACKAGE",
+     "# SHA-256 of the 12 user-facing files in this package.",
+     "# SHA256SUMS.txt cannot hash itself. The master ZIP cannot contain its own",
+     "# checksum either; it is published in the sibling file",
+     "# " + ZIPNAME + ".sha256",
+     "# Video_1_YouTube_Description_HIT.docx sits outside this package; its",
+     "# SHA-256 is reported in the delivery summary.", ""]
+for m in MANIFEST:
+    L.append("%s  %s" % (sha256(os.path.join(ROOT, m)), m))
+open(os.path.join(ROOT, SUMS), "w").write("\n".join(L) + "\n")
+
+if os.path.exists(ZIPNAME): os.remove(ZIPNAME)
+with zipfile.ZipFile(ZIPNAME, "w", zipfile.ZIP_DEFLATED) as z:
+    for m in MANIFEST + [SUMS]:
+        z.write(os.path.join(ROOT, m), "Video_1_HIT_FINAL/" + m)
+zsha = sha256(ZIPNAME)
+open(ZIPNAME + ".sha256", "w").write("%s  %s\n" % (zsha, ZIPNAME))
+print("ZIP sha256:", zsha)
+print("description-only doc sha256:", sha256("Video_1_YouTube_Description_HIT.docx"))

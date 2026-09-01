@@ -1,0 +1,1516 @@
+VIDEO 1 — H.I.T. REBUILD / FINAL RECORDING PACKAGE
+
+Build the final revised recording and production-material package for Temidayo Afonja’s YouTube Video 1.
+
+IMPORTANT:
+This is a SPOKEN-SCRIPT + EDITOR-INSTRUCTION + PUBLISHING + SHORTS update only.
+
+DO NOT modify:
+- the existing Video 1 PowerPoint slides;
+- the existing reveal-build deck;
+- the approved thumbnail;
+- the currently published YouTube video;
+- the currently published YouTube description;
+- the Capability Formation Field Kit;
+- any website file;
+- any product;
+- any other video.
+
+The current published video remains untouched until the replacement video has been recorded, edited, reviewed and uploaded.
+
+The existing Video 1 v2.4 visual system remains authoritative:
+
+- exactly 13 main slides;
+- exactly 22 reveal-build frames;
+- no slide additions;
+- no slide deletions;
+- no slide redesign;
+- no reveal-deck changes.
+
+If the approved Video 2 or Video 3 H.I.T. packages are available in the repository, use them as FORMATTING references only.
+
+Do not copy their content.
+
+==================================================
+LOCKED VIDEO 1 METADATA
+==================================================
+
+Public YouTube title:
+
+How to Change Jobs Without Starting Your Career Over
+
+On-screen deck title:
+
+How I Changed Jobs Without Starting My Career Over
+
+The difference between the public title and on-screen title is intentional.
+
+Thumbnail:
+
+DON’T START FROM ZERO
+
+Primary CTA:
+
+Capability Formation Field Kit
+https://temidayoafonja.com/fieldkit
+
+Watch next:
+
+Video 2 — Is Your Job Making You Less Marketable?
+
+Primary search phrase:
+
+how to change jobs without starting over
+
+Supporting search phrase:
+
+transferable skills for career change
+
+The older editor instruction that kept Temidayo visually static/full-screen for approximately the first 45 seconds is superseded.
+
+The existing slides themselves remain unchanged.
+
+==================================================
+H.I.T. FIRST-30-SECOND STANDARD
+==================================================
+
+H = Hook
+I = Interest
+T = Trust
+
+The opening must function as one audiovisual unit:
+
+- immediate conversational tension;
+- meaningful visual interest;
+- relevant concrete reason to trust Temidayo;
+- clear viewer payoff by approximately 20–30 seconds;
+- no generic channel welcome before the promise;
+- no forced statistic;
+- no résumé recital.
+
+The visual carries the chronology.
+
+Temidayo’s voice carries the meaning.
+
+==================================================
+CREATE THIS FOLDER STRUCTURE
+==================================================
+
+Video_1_HIT_FINAL/
+    LONG_FORM/
+        Video1TeleprompterScriptwithslidemarkers_HIT_v3.0.docx
+        Video1TeleprompterScriptwithslidemarkers_HIT_v3.0.txt
+        Video1ReadingScriptnomarkers_HIT_v3.0.docx
+        Video1ReadingScriptnomarkers_HIT_v3.0.txt
+        Video_1_EDITOR_ONLY_HIT_Brief_v3.0.docx
+        Video_1_Publishing_Package_HIT_v3.0.docx
+
+    SHORTS/
+        Video_1_Short_1_New_Context_Not_Zero.docx
+        Video_1_Short_2_Experience_Needs_Evidence.docx
+        Video_1_Short_3_Result_Needs_Context.docx
+        Video_1_Short_4_Look_Under_The_Title.docx
+        Video_1_Shorts_EDITOR_ONLY_HIT_Brief.docx
+
+    README_FINAL.txt
+    SHA256SUMS.txt
+
+Also create:
+
+Video_1_HIT_FINAL_Recording_and_Shorts_Package.zip
+
+And create a separate sibling checksum file:
+
+Video_1_HIT_FINAL_Recording_and_Shorts_Package.zip.sha256
+
+The ZIP must contain exactly the 13 clean user-facing files listed above and nothing else.
+
+Build the ZIP from an explicit allowlist.
+
+Do not archive the full working directory.
+
+Do not include:
+
+- _source folders;
+- Python files;
+- generators;
+- QA utilities;
+- build scripts;
+- source-text modules;
+- rendered page images;
+- temporary files;
+- hidden files;
+- duplicate files;
+- obsolete drafts.
+
+Working files may remain outside the deliverable ZIP if needed for production, but they must not appear inside the final user-facing archive.
+
+==================================================
+DOCUMENT DESIGN
+==================================================
+
+Use the same restrained professional formatting system as the approved Video 2 and Video 3 H.I.T. packages.
+
+Use:
+
+- clean title and header;
+- clear hierarchy;
+- large, readable teleprompter copy;
+- generous spacing;
+- restrained deep navy, warm cream and muted-gold details;
+- no decorative illustrations;
+- no unnecessary tables in recording scripts;
+- no editor notes inside Temidayo’s recording documents.
+
+The documents should feel premium, calm and editorial.
+
+They should not look like marketing brochures, course workbooks or social-media carousels.
+
+==================================================
+LONG-FORM TELEPROMPTER SCRIPT
+==================================================
+
+Create:
+
+Video1TeleprompterScriptwithslidemarkers_HIT_v3.0.docx
+Video1TeleprompterScriptwithslidemarkers_HIT_v3.0.txt
+
+The DOCX and TXT must contain the same spoken language.
+
+The teleprompter versions must include the slide markers exactly where indicated below.
+
+Use this approved script exactly.
+
+Do not rewrite, summarize, expand, shorten, polish or substitute wording.
+
+BEGIN APPROVED VIDEO 1 SCRIPT
+
+Changing jobs can make years of experience feel as though they belong to the place you’re leaving.
+
+But a new context does not make you new to everything.
+
+Over roughly eighteen years, my career has crossed very different functions and industries, so I had to learn what actually travels.
+
+I’ll show you three things: how to look underneath your title, explain what your work changed, and keep the evidence before you need it.
+
+[SLIDE: Title]
+
+I’m Temidayo Afonja. I help experienced professionals understand what they can carry across roles, functions, employers and industries, so they can make career pivots and internal moves without starting from zero.
+
+And I want to be clear about the promise.
+
+Not everything transfers.
+
+Some knowledge belongs to the company, industry, regulation or relationships around the work. A move can require real relearning.
+
+But being new to a context is not the same as being new to every underlying problem.
+
+[SLIDE: My Career Path]
+
+The slide shows the broad chapters of my career, so I am not going to walk you through every title.
+
+The first turn was not part of a perfect plan. I graduated with an accounting degree in December 2008, during the financial crisis. Later, the work crossed functions and industries with different language and real learning curves.
+
+Some knowledge belonged to the setting I was leaving.
+
+But the earlier chapters had also trained me to follow evidence, look for what a system was not revealing, translate complexity and create enough structure for a better decision.
+
+I did not carry every task forward.
+
+I carried forms of judgment.
+
+So instead of only asking, “Does my old title match the new one?”, I learned to ask, “What has my work made me able to do, and where else could that be useful?”
+
+Three practices helped me answer that.
+
+[SLIDE: 01 — Look Underneath the Title]
+
+The first was to look underneath the title.
+
+[SLIDE: Move One]
+
+A title tells someone where the work sat.
+
+It does not fully tell them what the work trained you to notice, decide or solve.
+
+Two people can hold the same title and leave with very different judgment because they faced different problems, constraints and consequences.
+
+The questions on screen are the ones I use.
+
+What problems do people repeatedly trust me to solve?
+
+What decisions can I now make with better judgment?
+
+And what could I do in another setting because of what I learned here?
+
+When I applied those questions to my own career, the nouns looked far apart.
+
+Accounting. Cybersecurity. People strategy.
+
+But some of the recurring work involved following evidence, finding what was missing from the obvious story, translating complexity and creating structure for a decision.
+
+Those are not titles. They are forms of work and judgment.
+
+And each one needs examples.
+
+So take one title from your career and put it aside for a moment.
+
+Write down three specific situations where people relied on your judgment. Then look for the recurring verb.
+
+Were you diagnosing, stabilizing, translating, designing, aligning or building?
+
+That is where portable capability often becomes visible.
+
+But capability can travel while context still has to be learned.
+
+You may know how to diagnose a system and still need to learn a new industry’s language, rules, stakeholders or risks.
+
+That is not starting from zero.
+
+That is carrying something proven into a real learning curve.
+
+[SLIDE: 02 — Explain What the Work Changed]
+
+The second practice was to explain what the work changed.
+
+[SLIDE: Move Two]
+
+Many experienced professionals describe projects in language that only makes sense to people who were already there.
+
+“I led an onboarding redesign.”
+
+That is true.
+
+But it names the activity, not the difference it made.
+
+A more useful version is:
+
+“I led an onboarding redesign with my team, and one measure of how well new hires felt integrated moved from 47 to 75.”
+
+That sentence is not better simply because it includes a number.
+
+It is better because an unfamiliar person can hear what I led and what changed.
+
+Ask yourself:
+
+What changed because I was there?
+
+What became clearer, faster, safer, more consistent or more possible?
+
+And what can I support without exaggerating?
+
+The aim is not to make your work sound bigger.
+
+It is to make the value easier to understand outside the original context.
+
+[SLIDE: One Result — 47 to 75]
+
+One measure of how well new hires felt integrated moved from 47 to 75 after the onboarding redesign I led with my team.
+
+I want to be precise.
+
+It was one measure of new-hire integration, not a claim about everything the redesign affected.
+
+And it was team-based work that I led, not something I did alone.
+
+That precision makes the evidence more credible, not less.
+
+A number without context can mislead. An internal project name without a result tells too little.
+
+Portable evidence connects the situation, your contribution and what changed.
+
+[SLIDE: 03 — Keep Evidence Before You Need It]
+
+The third practice was to keep evidence before I needed it.
+
+[SLIDE: Move Three]
+
+Most of us wait until we need a résumé, an interview story or a promotion case.
+
+By then, we may remember the project name but not the starting condition, the decision we made, exactly what changed or what part of the work was ours.
+
+So create a permitted, high-level record in your own words.
+
+Nothing confidential.
+
+Nothing employer-owned.
+
+The four lines on screen are enough:
+
+The situation.
+
+My role.
+
+What changed.
+
+And what this shows.
+
+The slide uses the same onboarding example.
+
+Notice the final line: what this shows.
+
+It should be the narrowest capability the evidence can honestly support.
+
+In this case, I can say that I have evidence of diagnosing a weak point in an employee experience and leading a redesign that improved one measure of integration.
+
+I should not turn that into a claim that I can transform every employee experience problem.
+
+Your record does not need the employer’s files.
+
+It needs enough permitted context for you to reconstruct your own contribution accurately later.
+
+The project name is easy to remember.
+
+The evidence is what makes the experience useful later.
+
+[SLIDE: Three Things I Learned to Do]
+
+So those are the three practices that helped me carry experience forward.
+
+Look underneath the title.
+
+Explain what the work changed.
+
+Keep evidence before you need it.
+
+They helped me avoid two mistakes: assuming that everything transfers, and assuming that nothing does.
+
+The first can make you overconfident about the learning curve.
+
+The second can make you erase years of formation.
+
+A more accurate position is:
+
+I know what I can carry.
+
+I know what evidence supports it.
+
+And I know what I still need to learn.
+
+[SLIDE: Before Your Next Move]
+
+Before your next move, answer these three questions.
+
+What can I solve now that I could not solve two years ago?
+
+What result can I describe in language another employer would understand?
+
+And what could I still do if the title, employer or industry changed?
+
+Pause here if you want to write them down.
+
+If your answers are specific, you may have more portable experience than your title reveals.
+
+If they are vague, that does not automatically mean the capability is not there.
+
+It may mean you need better evidence, more varied practice or a deliberate bridge before the move.
+
+The goal is not to prove that you will never need to start anything new.
+
+It is to avoid starting over where you already have evidence.
+
+[SLIDE: Capability Formation Field Kit]
+
+If these questions show you that you need a fuller read of what your current work is building and how portable it may be, the Capability Formation Field Kit gives you a private, evidence-led assessment using the last 90 days of your actual work.
+
+It helps you see what is growing, what appears portable and what may need attention before your next move.
+
+You can find it at temidayoafonja.com/fieldkit.
+
+[SLIDE: Watch Next]
+
+There is one more side to this.
+
+Having experience that can travel does not necessarily mean your current job is still adding to it.
+
+You can be valuable where you are while your next options become narrower.
+
+In the next video, I will give you three tests for whether your current work is expanding your marketability or mostly making you better at this one place.
+
+Watch Is Your Job Making You Less Marketable? next.
+
+You do not have to erase your career to change jobs.
+
+But you do need to know what you are carrying.
+
+END APPROVED VIDEO 1 SCRIPT
+
+==================================================
+CLEAN READING SCRIPT
+==================================================
+
+Create:
+
+Video1ReadingScriptnomarkers_HIT_v3.0.docx
+Video1ReadingScriptnomarkers_HIT_v3.0.txt
+
+These files must contain the exact same spoken words as the teleprompter script.
+
+Remove only:
+
+- [SLIDE: ...] markers;
+- production headings;
+- document metadata;
+- editor directions.
+
+Do not change the spoken wording or punctuation.
+
+Verify programmatically that removing the slide markers from the teleprompter version produces the same spoken sequence as the clean reading script.
+
+==================================================
+LONG-FORM EDITOR-ONLY DOCUMENT
+==================================================
+
+Create:
+
+Video_1_EDITOR_ONLY_HIT_Brief_v3.0.docx
+
+This document is for the editor.
+
+It is NOT Temidayo’s teleprompter.
+
+Clearly label the cover:
+
+EDITOR ONLY
+
+VIDEO 1
+
+How to Change Jobs Without Starting Your Career Over
+
+State:
+
+Public title:
+How to Change Jobs Without Starting Your Career Over
+
+On-screen deck title:
+How I Changed Jobs Without Starting My Career Over
+
+Thumbnail:
+DON’T START FROM ZERO
+
+Primary CTA:
+Capability Formation Field Kit
+
+Watch next:
+Is Your Job Making You Less Marketable?
+
+Core distinction:
+A new context does not make an experienced professional new to everything. The task is to identify what travels, support it with evidence and name what must still be learned.
+
+==================================================
+FIRST 30 SECONDS — H.I.T.
+==================================================
+
+0:00–0:07
+
+Spoken anchor:
+
+“Changing jobs can make years of experience feel as though they belong to the place you’re leaving.”
+
+H = HOOK
+
+Visual:
+
+Begin on Temidayo, medium/tight direct-to-camera.
+
+On-screen hook:
+
+DOES YOUR EXPERIENCE STILL COUNT?
+
+Do not use a title card before this.
+
+Do not use résumé animation, stock career footage or an opening logo.
+
+0:07–0:12
+
+Spoken anchor:
+
+“But a new context does not make you new to everything.”
+
+I = INTEREST
+
+Bring in:
+
+NEW CONTEXT ≠ ZERO EXPERIENCE
+
+Keep the text restrained, large and mobile-readable.
+
+Do not use a beginner icon, zero graphic or literal reset animation.
+
+0:12–0:21
+
+Spoken anchor:
+
+“Over roughly eighteen years, my career has crossed very different functions and industries…”
+
+T = TRUST
+I = INTEREST
+
+Briefly show the existing career-path progression:
+
+ACCOUNTING & AUDIT
+→ CYBERSECURITY
+→ PEOPLE STRATEGY
+→ CAPABILITY FORMATION
+
+IMPORTANT:
+
+Temidayo deliberately does not narrate the individual chapters aloud.
+
+The visual provides the chronology.
+
+Her spoken words provide the meaning.
+
+Do not alter Slide 2.
+
+Use a restrained overlay, crop or adapted visual treatment based on the existing slide system.
+
+Do not use employer logos.
+
+0:21–0:30
+
+Spoken anchor:
+
+“I’ll show you three things…”
+
+PAYOFF
+
+Progressively preview:
+
+LOOK UNDERNEATH THE TITLE
+
+EXPLAIN WHAT CHANGED
+
+KEEP THE EVIDENCE
+
+Return cleanly to Temidayo before moving into the existing title slide.
+
+This is a micro-preview only.
+
+Do not replace or redesign Slide 10.
+
+==================================================
+EDITORIAL RHYTHM AFTER THE OPENING
+==================================================
+
+The first approximately 30 seconds may be more visually active than the remainder of the video.
+
+Do not interpret H.I.T. as permission for constant visual movement.
+
+After the opening:
+
+- preserve Temidayo’s natural pace;
+- allow reflective pauses;
+- use the existing slides as teaching support;
+- let the slide carry lists and chronology;
+- avoid constant punch-ins;
+- avoid decorative B-roll;
+- avoid unnecessary text duplication;
+- avoid flashy transitions.
+
+The edit should remain premium, calm, intelligent and editorial.
+
+==================================================
+EXISTING SLIDE SYSTEM
+==================================================
+
+Use the existing Video 1 v2.4 visual system unchanged.
+
+The slide sequence is:
+
+Slide 1 — Title
+Slide 2 — My Career Path
+Slide 3 — 01: Look Underneath the Title
+Slide 4 — Move One
+Slide 5 — 02: Explain What the Work Changed
+Slide 6 — Move Two
+Slide 7 — One Result: 47 to 75
+Slide 8 — 03: Keep Evidence Before You Need It
+Slide 9 — Move Three
+Slide 10 — Three Things I Learned to Do
+Slide 11 — Before Your Next Move
+Slide 12 — Capability Formation Field Kit
+Slide 13 — Watch Next
+
+The existing reveal-build deck contains 22 frames.
+
+Do not add, delete, redesign or reorder slides or reveal frames.
+
+The public title and on-screen title differ intentionally.
+
+Do not change the title slide to match the public metadata title.
+
+==================================================
+LET THE VISUAL CARRY INFORMATION
+==================================================
+
+Apply the production principle established in Videos 2 and 3:
+
+When the visual can carry information efficiently, Temidayo does not need to narrate every item.
+
+This is especially important for:
+
+Slide 2:
+The career-path labels.
+
+Temidayo does not read the full path aloud.
+
+Slide 4:
+The three questions that reveal the work beneath a title.
+
+Reveal them progressively.
+
+Slide 7:
+The 47-to-75 evidence.
+
+Let the visual breathe.
+
+Slide 9:
+Situation / My role / What changed / What this shows.
+
+Do not require Temidayo to repeat every line mechanically.
+
+Slide 11:
+The three before-your-next-move questions.
+
+Reveal one at a time and allow a real pause.
+
+Do not add spoken lines to compensate for slide copy.
+
+==================================================
+VISUAL BOUNDARIES
+==================================================
+
+Do not add:
+
+- generic office B-roll;
+- résumé icons;
+- literal luggage or “carrying skills” imagery;
+- ladder graphics;
+- dramatic career-change montages;
+- clocks or career-anniversary graphics;
+- employer logos;
+- constant zooms;
+- artificial sound effects;
+- red warning graphics;
+- AI-generated scenery;
+- synthetic or altered images of Temidayo;
+- fake shock expressions;
+- social-media template transitions.
+
+Preserve Temidayo’s natural appearance.
+
+==================================================
+EVIDENCE BOUNDARIES
+==================================================
+
+The onboarding result must remain precisely bounded.
+
+Approved statement:
+
+- Temidayo led an onboarding redesign with her team.
+- One measure of how well new hires felt integrated moved from 47 to 75.
+- It was one measure of new-hire integration.
+- It was not a claim about every effect of the redesign.
+- It was team-based work that Temidayo led.
+- It was not solo work.
+
+Do not attach:
+
+- approximately 30% retention improvement;
+- more than $2 million in avoided turnover;
+- another undocumented result;
+
+to this onboarding story.
+
+Do not imply that every part of Temidayo’s experience transferred across contexts.
+
+Preserve the explicit boundary:
+
+- some knowledge belongs to the company, industry, regulation, relationships or context;
+- a move may require real relearning;
+- being new to a context is not the same as being new to every underlying problem.
+
+Evidence preservation means:
+
+- a permitted, high-level record;
+- in the person’s own words;
+- using information they are entitled to retain.
+
+Do not suggest taking:
+
+- confidential information;
+- customer data;
+- employee data;
+- proprietary documents;
+- employer-owned files;
+- anything the person does not have the right to keep.
+
+==================================================
+CTA
+==================================================
+
+Only one offer:
+
+Capability Formation Field Kit
+https://temidayoafonja.com/fieldkit
+
+Do not add:
+
+- Keep the Proof;
+- Career Decision Evidence Check;
+- The Capability Audit;
+- Maven;
+- a newsletter CTA;
+- another product.
+
+The general Website, LinkedIn and Substack links may appear in the description’s “Connect and Explore” section.
+
+Those are profile/navigation links, not competing product CTAs.
+
+==================================================
+WATCH NEXT
+==================================================
+
+Spoken route:
+
+Is Your Job Making You Less Marketable?
+
+Publishing implementation:
+
+- add the direct Video 2 link to the description when Video 2 is public;
+- use Video 2 as the direct clickable end-screen route when it is public;
+- before Video 2 becomes public, use the Career Portability playlist if the playlist element is functioning;
+- if the playlist element is unavailable, use YouTube’s “best for viewer” option or another appropriate currently public video temporarily;
+- update the end screen to point directly to Video 2 once Video 2 is public.
+
+Do not leave the end screen with Subscribe only.
+
+==================================================
+PUBLISHING PACKAGE DOCUMENT
+==================================================
+
+Create:
+
+Video_1_Publishing_Package_HIT_v3.0.docx
+
+IMPORTANT DESCRIPTION DECISION:
+
+The description currently used on the published Video 1 is the approved structural and tonal base.
+
+Do not replace it with the flatter draft that begins only with:
+
+“Changing jobs can make years of experience feel…”
+
+Preserve the stronger reader-facing architecture:
+
+- first-person introduction;
+- clear three-item structure;
+- reflective viewer question;
+- Field Kit section;
+- chapters;
+- Watch Next;
+- Connect and Explore.
+
+Use the exact updated description below.
+
+==================================================
+TITLE
+==================================================
+
+How to Change Jobs Without Starting Your Career Over
+
+==================================================
+THUMBNAIL
+==================================================
+
+DON’T START FROM ZERO
+
+==================================================
+PRIMARY SEARCH PHRASE
+==================================================
+
+how to change jobs without starting over
+
+==================================================
+SUPPORTING SEARCH LANGUAGE
+==================================================
+
+transferable skills for career change
+how to identify transferable skills
+career portability
+changing jobs
+career transition
+transferable experience
+how to explain your experience
+career change without starting over
+career growth
+career pivot
+
+==================================================
+FINAL YOUTUBE DESCRIPTION
+==================================================
+
+I’m Temidayo Afonja, founder of The Density Group and creator of Capability Formation. I help experienced professionals understand what they can carry across roles, functions, employers and industries so they can make career pivots and internal moves without starting from zero.
+
+In this video, I share three things that helped me change jobs without treating every transition as a return to zero:
+
+✨ Look underneath the job title and identify what your work trained you to notice, decide and solve.
+
+✨ Explain what your work changed in language another employer can understand.
+
+✨ Preserve permitted evidence before you need a résumé, interview story or promotion case.
+
+Not everything transfers. A new role, employer or industry may require real relearning. But a new context does not make you new to everything.
+
+I also share one carefully bounded example from my own work: an onboarding redesign I led with my team, where one measure of how well new hires felt integrated moved from 47 to 75.
+
+What has your work built in you—and what could you still do if the title, employer or industry changed?
+
+🧭 CAPABILITY FORMATION FIELD KIT
+
+Complete your private Capability Position Read:
+
+https://temidayoafonja.com/fieldkit
+
+⏱️ CHAPTERS
+
+[INSERT WORKING CHAPTER ESTIMATES IN THE DOCUMENT]
+
+The editor must replace every working timestamp using the finished edit before publication.
+
+▶️ WATCH NEXT
+
+Is Your Job Making You Less Marketable?
+
+[ADD VIDEO 2 LINK WHEN LIVE]
+
+🔗 CONNECT AND EXPLORE
+
+Website:
+https://temidayoafonja.com
+
+LinkedIn:
+https://www.linkedin.com/in/temidayo-afonja
+
+Substack:
+https://temidayoafonja.substack.com
+
+#CareerGrowth #CareerChange #TransferableSkills
+
+==================================================
+WORKING CHAPTERS
+==================================================
+
+Use these approved chapter titles:
+
+Change Jobs Without Starting Over
+What My Career Shifts Taught Me
+Look Beyond Job Titles
+Three Questions That Reveal Transferable Skills
+Translate Your Impact
+Preserve Career Evidence Early
+Three Questions Before Your Next Move
+Capability Formation Field Kit
+Is Your Job Making You Less Marketable?
+
+Create working timestamp estimates from the revised script.
+
+Clearly label them:
+
+WORKING ESTIMATES — EDITOR MUST REPLACE FROM FINAL CUT
+
+Do not present script-derived timestamps as final.
+
+Do not force the finished edit to match the estimates.
+
+==================================================
+PINNED COMMENT
+==================================================
+
+Use this exact pinned comment:
+
+Before your next move, answer these three questions:
+
+1. What can I solve now that I could not solve two years ago?
+2. What result can I describe in language another employer would understand?
+3. What could I still do if the title, employer or industry changed?
+
+Which answer is clearest for you, and which one still needs evidence?
+
+The Capability Formation Field Kit is here for a fuller private assessment:
+
+https://temidayoafonja.com/fieldkit
+
+==================================================
+YOUTUBE TAG FIELD
+==================================================
+
+Include these as comma-separated tags in the publishing document:
+
+how to change jobs without starting over, how to change careers without starting over, change jobs without starting over, transferable skills for career change, transferable skills, changing jobs, career transition, career change, career change advice, how to identify transferable skills, how to explain your experience, career portability, transferable experience, career growth, Temidayo Afonja, Capability Formation
+
+Do not place the full tag field in the public description.
+
+==================================================
+SHORTS — RECORDING DOCUMENTS
+==================================================
+
+Create four separate DOCX files.
+
+Each Short document is Temidayo’s recording document.
+
+Do not place editor directions inside any of the four recording documents.
+
+Use this structure:
+
+VIDEO 1 SHORT
+
+Role
+
+Verbal hook
+
+Related long-form video
+
+RECORDING COPY
+
+--------------------------------------------------
+SHORT 1
+--------------------------------------------------
+
+Filename:
+
+Video_1_Short_1_New_Context_Not_Zero.docx
+
+Role:
+
+Recognition
+
+Verbal hook:
+
+A new job does not make you new to everything.
+
+Related long-form:
+
+How to Change Jobs Without Starting Your Career Over
+
+Recording copy:
+
+A new job does not make you new to everything.
+
+It may make you new to a company, an industry, a set of regulations or a particular way of working.
+
+That is a real learning curve.
+
+But it does not automatically erase the problems you have learned to diagnose, the decisions you can make or the situations people already trust you to handle.
+
+Before you call yourself a beginner, ask:
+
+What has my work made me able to do, and where else could that be useful?
+
+Portability is not pretending that everything transfers.
+
+It is knowing what you can carry and what you still need to learn.
+
+--------------------------------------------------
+SHORT 2
+--------------------------------------------------
+
+Filename:
+
+Video_1_Short_2_Experience_Needs_Evidence.docx
+
+Role:
+
+Distinction / myth
+
+Verbal hook:
+
+Years of experience do not automatically become portable.
+
+Related long-form:
+
+How to Change Jobs Without Starting Your Career Over
+
+Recording copy:
+
+Years of experience do not automatically become portable just because you have them.
+
+Some knowledge depends on company systems, internal relationships or industry context.
+
+What travels is usually more specific:
+
+Judgment you have demonstrated.
+
+Problems you know how to solve.
+
+And evidence another setting can understand.
+
+So do not say, “I have twenty years of experience,” and stop there.
+
+Ask:
+
+What can I now do because of those years?
+
+Where have I demonstrated it?
+
+And what would still be useful if the company language disappeared?
+
+Experience matters.
+
+Evidence is what helps another context understand it.
+
+--------------------------------------------------
+SHORT 3
+--------------------------------------------------
+
+Filename:
+
+Video_1_Short_3_Result_Needs_Context.docx
+
+Role:
+
+Proof / personal evidence
+
+Verbal hook:
+
+A project name is not proof of your value.
+
+Related long-form:
+
+How to Change Jobs Without Starting Your Career Over
+
+Recording copy:
+
+A project name is not proof of your value.
+
+I could say, “I led an onboarding redesign.”
+
+That is true, but somebody outside that organization still does not know what changed.
+
+A clearer version is:
+
+I led an onboarding redesign with my team, and one measure of how well new hires felt integrated moved from 47 to 75.
+
+The point is not that the number sounds impressive.
+
+The point is that I can explain what it measured, what I led and what changed.
+
+I am also careful to say it was one measure and team-based work.
+
+Evidence travels better when it is specific and honest.
+
+--------------------------------------------------
+SHORT 4
+--------------------------------------------------
+
+Filename:
+
+Video_1_Short_4_Look_Under_The_Title.docx
+
+Role:
+
+Practical test / action
+
+Verbal hook:
+
+Put your job title aside for one minute.
+
+Related long-form:
+
+How to Change Jobs Without Starting Your Career Over
+
+Recording copy:
+
+Put your job title aside for one minute.
+
+Underneath it, answer three questions.
+
+What problems do people repeatedly trust me to solve?
+
+What decisions can I now make with better judgment?
+
+And what could I do in another setting because of what I learned here?
+
+Then look for the verbs that repeat across your examples.
+
+Maybe you diagnose, stabilize, translate, design, align or build.
+
+Do not choose a word simply because it sounds good.
+
+Attach it to evidence.
+
+That is how you begin to see what your work built in you, rather than only where the work happened.
+
+==================================================
+SHORTS — EDITOR-ONLY DOCUMENT
+==================================================
+
+Create:
+
+Video_1_Shorts_EDITOR_ONLY_HIT_Brief.docx
+
+Clearly label the cover:
+
+EDITOR ONLY
+
+VIDEO 1 — FOUR STANDALONE SHORTS
+
+State clearly:
+
+These are separately recorded 9:16 Shorts.
+
+They are NOT excerpts cut from the long-form video.
+
+Each Short must have:
+
+- an immediate verbal hook;
+- corresponding on-screen hook;
+- meaningful visual movement;
+- accurate burned-in captions;
+- restrained editorial pacing;
+- Video 1 added as the YouTube Related Video when available.
+
+--------------------------------------------------
+SHORT 1
+--------------------------------------------------
+
+Role:
+
+Recognition
+
+On-screen hook:
+
+NEW CONTEXT ≠ ZERO EXPERIENCE
+
+Visual:
+
+Begin direct-to-camera.
+
+Allow these words to appear briefly:
+
+NEW COMPANY
+
+NEW CONTEXT
+
+NEW LANGUAGE
+
+Then resolve to:
+
+NOT NEW TO EVERYTHING
+
+Do not use beginner icons, a reset button or literal zero imagery.
+
+End visually on:
+
+WHAT CAN YOU CARRY?
+
+Related Video:
+
+Video 1
+
+--------------------------------------------------
+SHORT 2
+--------------------------------------------------
+
+Role:
+
+Distinction / myth
+
+On-screen hook:
+
+EXPERIENCE NEEDS EVIDENCE
+
+Use a restrained visual contrast:
+
+YEARS OF EXPERIENCE
+
+versus
+
+JUDGMENT + EVIDENCE
+
+When Temidayo says:
+
+“Do not say, ‘I have twenty years of experience,’ and stop there,”
+
+keep her visible.
+
+Do not use clocks, calendars, anniversary graphics or résumé B-roll.
+
+End visually on:
+
+WHAT CAN YOU NOW DO?
+
+Related Video:
+
+Video 1
+
+--------------------------------------------------
+SHORT 3
+--------------------------------------------------
+
+Role:
+
+Proof / personal evidence
+
+On-screen hook:
+
+THE RESULT NEEDS CONTEXT
+
+First show:
+
+LED AN ONBOARDING REDESIGN
+
+Then reveal:
+
+ONE MEASURE OF NEW-HIRE INTEGRATION
+
+47 → 75
+
+Keep this visible:
+
+WITH MY TEAM
+
+The edit must preserve the evidence boundary:
+
+- one measure;
+- new-hire integration;
+- team-based work;
+- Temidayo led the redesign;
+- not presented as solo work;
+- no other metrics attached.
+
+Do not add the 30% retention or more-than-$2-million figures.
+
+End visually on:
+
+SPECIFIC + HONEST
+
+Related Video:
+
+Video 1
+
+--------------------------------------------------
+SHORT 4
+--------------------------------------------------
+
+Role:
+
+Practical test / action
+
+On-screen hook:
+
+LOOK UNDER THE TITLE
+
+Reveal the three questions progressively:
+
+1
+WHAT PROBLEMS DO PEOPLE TRUST ME TO SOLVE?
+
+2
+WHAT DECISIONS CAN I NOW MAKE?
+
+3
+WHAT COULD I DO SOMEWHERE ELSE?
+
+Then show a restrained verb sequence:
+
+DIAGNOSE
+
+STABILIZE
+
+TRANSLATE
+
+DESIGN
+
+ALIGN
+
+BUILD
+
+End visually on:
+
+WHICH VERB HAS EVIDENCE?
+
+Do not overcrowd the screen.
+
+Related Video:
+
+Video 1
+
+==================================================
+ALL SHORTS — VISUAL BOUNDARIES
+==================================================
+
+Do not use:
+
+- hyperactive zooming;
+- fake shock expressions;
+- red warning graphics;
+- generic office B-roll;
+- stock résumé footage;
+- clocks or anniversary imagery;
+- literal luggage;
+- animated career ladders;
+- employer logos;
+- AI-style animated icons;
+- trendy caption templates;
+- individual words bouncing constantly;
+- flashy transitions.
+
+Keep captions:
+
+- accurate;
+- large;
+- mobile-safe;
+- restrained;
+- consistent with the deep navy, warm cream and muted-gold system.
+
+==================================================
+README
+==================================================
+
+Create README_FINAL.txt.
+
+State:
+
+VIDEO 1 — H.I.T. FINAL RECORDING PACKAGE
+
+Public title:
+How to Change Jobs Without Starting Your Career Over
+
+On-screen deck title:
+How I Changed Jobs Without Starting My Career Over
+
+Thumbnail:
+DON’T START FROM ZERO
+
+CTA:
+Capability Formation Field Kit
+
+CTA URL:
+https://temidayoafonja.com/fieldkit
+
+Watch next:
+Is Your Job Making You Less Marketable?
+
+Status:
+Replacement recording package.
+
+The existing published Video 1 remains untouched until the replacement recording and edit are approved.
+
+Long-form:
+Revised under the H.I.T. first-30-second standard.
+
+Slides:
+UNCHANGED.
+
+Reveal deck:
+UNCHANGED.
+
+Shorts:
+Four separately recorded vertical scripts.
+
+Editor instructions:
+Separated from all recording copy.
+
+Publishing description:
+Uses the current published description as its structural and tonal base, with targeted updates for the revised script.
+
+Also list every filename contained in the package.
+
+==================================================
+CHECKSUM CONVENTION
+==================================================
+
+Use the same clean convention approved for the final Video 3 package.
+
+Inside the ZIP:
+
+SHA256SUMS.txt must contain SHA-256 checksums for the other 12 user-facing files.
+
+It must not hash itself.
+
+It must not contain a ZIP checksum.
+
+It must not contain source, Python or working-file entries.
+
+Outside the ZIP:
+
+Video_1_HIT_FINAL_Recording_and_Shorts_Package.zip.sha256
+
+must contain the SHA-256 checksum for the final ZIP.
+
+==================================================
+QA / VALIDATION
+==================================================
+
+Before packaging:
+
+1. Confirm the teleprompter DOCX and TXT contain the same spoken language.
+2. Confirm the reading DOCX and TXT contain the same spoken language.
+3. Confirm removing slide markers from the teleprompter produces the same spoken sequence as the reading script.
+4. Confirm exactly 13 slide markers are present, ordered and mapped to Slides 1–13.
+5. Confirm the public title and on-screen deck title remain intentionally different.
+6. Confirm the four Short recording documents contain no editor instructions.
+7. Confirm the two EDITOR ONLY documents are clearly labeled.
+8. Confirm there are exactly four Short recording documents.
+9. Confirm the 47-to-75 evidence boundary appears correctly in:
+   - the long-form;
+   - the long-form editor brief;
+   - Short 3;
+   - the Shorts editor brief;
+   - the publishing package.
+10. Confirm no 30% retention or more-than-$2-million figure is attached to this story.
+11. Confirm the portability/relearning boundary remains explicit.
+12. Confirm no recording copy instructs viewers to retain employer-owned or confidential material.
+13. Confirm no existing PowerPoint slide changed.
+14. Confirm no reveal frame changed.
+15. Confirm the thumbnail did not change.
+16. Confirm the currently published YouTube video and description were not modified.
+17. Confirm no website, product or another video changed.
+18. Render and visually inspect every DOCX.
+19. Confirm there is no:
+   - clipped text;
+   - overlap;
+   - broken formatting;
+   - accidental blank page;
+   - nearly empty trailing page that can be cleanly avoided;
+   - missing punctuation or glyph.
+20. Create the final ZIP from an explicit 13-file allowlist.
+21. Confirm the ZIP contains exactly 13 files.
+22. Confirm no _source folder or Python file is inside the ZIP.
+23. Confirm README_FINAL.txt matches the actual archive contents.
+24. Confirm SHA256SUMS.txt contains exactly 12 checksum entries.
+25. Run sha256sum -c successfully against all 12 entries.
+26. Confirm the sibling .zip.sha256 matches the final ZIP.
+27. Working chapter timestamps must be clearly labeled as estimates and must be replaced from the finished edit.
+
+Do not make editorial changes while performing QA.
+
+==================================================
+COMPLETION REPORT
+==================================================
+
+At completion, report:
+
+- exact files created;
+- exact files modified;
+- full ZIP archive listing;
+- exact ZIP file count;
+- confirmation that _source is absent;
+- confirmation that all Python files are absent;
+- canonical spoken word count;
+- teleprompter/reading synchronization result;
+- 13-slide-marker validation result;
+- four-Short validation result;
+- evidence-boundary validation result;
+- confirmation that no PowerPoint, reveal deck or thumbnail changed;
+- confirmation that the current published Video 1 was untouched;
+- page count for each rendered DOCX;
+- final ZIP SHA-256;
+- exact sibling checksum filename;
+- any issue requiring Temidayo’s decision.
+
+Do not mark the package FINAL if any validation fails.
+
+Do not alter the approved wording without explicit approval.

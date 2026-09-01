@@ -1,74 +1,212 @@
-{
- "01_teleprompter_docx_equals_txt": true,
- "02_reading_docx_equals_txt": true,
- "03_teleprompter_minus_markers_equals_reading": true,
- "03b_both_equal_approved_script_verbatim": true,
- "04_markers_present_ordered": true,
- "04b_marker_count_is_13": true,
- "04c_marker_positions_match_source": true,
- "04d_markers_map_to_slides_1_to_13": true,
- "05_titles_intentionally_different": true,
- "06_shorts_free_of_editor_directions": true,
- "06b_offending": {},
- "07_editor_docs_labelled": true,
- "08_exactly_four_short_recording_docs": true,
- "08b_short_filenames": [
-  "Video_1_Short_1_New_Context_Not_Zero.docx",
-  "Video_1_Short_2_Experience_Needs_Evidence.docx",
-  "Video_1_Short_3_Result_Needs_Context.docx",
-  "Video_1_Short_4_Look_Under_The_Title.docx"
- ],
- "09_evidence_boundary_present": {
-  "long_form": true,
-  "long_form_editor_brief": true,
-  "short_3": true,
-  "shorts_editor_brief": true,
-  "publishing_package": true
+[
+ {
+  "n": 1,
+  "check": "title unchanged",
+  "result": "PASS",
+  "detail": ""
  },
- "09b_evidence_boundary_all_five": true,
- "10_no_forbidden_metric_in_recording_or_publishing_copy": true,
- "10b_offending": {},
- "10c_editor_briefs_explicitly_forbid_them": true,
- "11_portability_boundary_verbatim": true,
- "12_permission_boundary_verbatim": true,
- "12b_no_unsafe_retention_instruction": true,
- "12c_offending": {},
- "13_17_nothing_else_modified": true,
- "13_17b_unexpected_changes": [],
- "reading_has_no_markers": true,
- "reading_has_no_timestamps": true,
- "canonical_spoken_paragraphs": 111,
- "canonical_spoken_words": 1356,
- "21_zip_file_count": 13,
- "21b_zip_count_is_13": true,
- "20_zip_contents_exactly_as_specified": true,
- "22_no_source_folder": true,
- "22b_no_python_files": true,
- "22c_no_images_temp_or_hidden": true,
- "22d_zip_integrity": true,
- "24_sums_entry_count": 12,
- "24b_sums_has_12_entries": true,
- "24c_sums_does_not_hash_itself": true,
- "24d_sums_has_no_zip_or_python_entry": true,
- "25_every_listed_hash_matches": true,
- "25b_mismatched": [],
- "25c_sums_identical_inside_and_outside_zip": true,
- "23_readme_lists_13_files": true,
- "23b_readme_matches_archive": true,
- "26_sibling_checksum_matches": true,
- "26b_zip_sha256": "c49fcc42c010f49dab123b61cce330478edd57984cb9afa9bac3ae07a660b2a3",
- "27_chapters_marked_working_estimates": true,
- "C1_all_nine_chapter_lines_in_description": true,
- "C1b_no_placeholder_anywhere": true,
- "C1c_description_is_contiguous": true,
- "C1d_warning_is_outside_the_description": true,
- "C1e_reference_section_matches_description_exactly": true,
- "C1f_no_production_instruction_inside_description": true,
- "C2_shorts_brief_rendered_pages": 2,
- "C2b_shorts_brief_is_two_pages": true,
- "C2c_all_four_shorts_present": true,
- "C2d_all_13_visual_boundaries_present": true,
- "C2e_final_caption_sentence_present": true,
- "C2f_all_four_on_screen_hooks_intact": true,
- "ALL_BOOLEAN_CHECKS_PASS": true
-}
+ {
+  "n": 2,
+  "check": "thumbnail unchanged",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 3,
+  "check": "H.I.T. opening unchanged",
+  "result": "PASS",
+  "detail": "opening carried from v3.0 verbatim"
+ },
+ {
+  "n": 4,
+  "check": "'roughly eighteen years' unchanged",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 5,
+  "check": "onboarding proof exactly bounded",
+  "result": "PASS",
+  "detail": "47 to 75 present, team-based attribution present"
+ },
+ {
+  "n": 6,
+  "check": "no 30% retention figure",
+  "result": "PASS",
+  "detail": "[]"
+ },
+ {
+  "n": 7,
+  "check": "no >\\$2M figure",
+  "result": "PASS",
+  "detail": "[]"
+ },
+ {
+  "n": 8,
+  "check": "no claim that everything transfers",
+  "result": "PASS",
+  "detail": "[]"
+ },
+ {
+  "n": 9,
+  "check": "exactly one primary product/resource CTA in public copy",
+  "result": "PASS",
+  "detail": "['Career Evidence Starter']"
+ },
+ {
+  "n": 10,
+  "check": "Career Evidence Starter is that CTA",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 11,
+  "check": "Field Kit is not Video 1's product CTA",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 12,
+  "check": "Keep the Proof is not a competing CTA",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 13,
+  "check": "public URL exact",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 14,
+  "check": "no direct PDF URL anywhere",
+  "result": "PASS",
+  "detail": "[]"
+ },
+ {
+  "n": 15,
+  "check": "spoken CTA says about 10 to 15 focused minutes",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 16,
+  "check": "Proof Line language preserved",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 17,
+  "check": "Slide 12 matches the new CTA",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 18,
+  "check": "slides 1-11 and 13 unchanged",
+  "result": "PASS",
+  "detail": "['slide12.xml']"
+ },
+ {
+  "n": 19,
+  "check": "only the matching reveal frame changed",
+  "result": "PASS",
+  "detail": "['slide21.xml']"
+ },
+ {
+  "n": 20,
+  "check": "four Short recording scripts unchanged",
+  "result": "PASS",
+  "detail": "4/4 content-identical to v3.0"
+ },
+ {
+  "n": 21,
+  "check": "publishing package and description-only public copy identical",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 22,
+  "check": "no [INSERT] placeholder remains",
+  "result": "PASS",
+  "detail": "[]"
+ },
+ {
+  "n": 23,
+  "check": "working timestamps clearly marked as estimates",
+  "result": "PASS",
+  "detail": "warning outside copy-ready block"
+ },
+ {
+  "n": 24,
+  "check": "teleprompter DOCX == TXT",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 25,
+  "check": "reading DOCX == TXT",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 26,
+  "check": "teleprompter minus markers == reading script",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 27,
+  "check": "exactly 13 markers, ordered and mapped",
+  "result": "PASS",
+  "detail": "13 markers, 13 slides"
+ },
+ {
+  "n": 27.1,
+  "check": "canonical source verification",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 30,
+  "check": "ZIP contains exactly 13 files",
+  "result": "PASS",
+  "detail": "13"
+ },
+ {
+  "n": 30.1,
+  "check": "no _source, Python, temp or render files",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 31,
+  "check": "SHA256SUMS has exactly 12 entries",
+  "result": "PASS",
+  "detail": "12"
+ },
+ {
+  "n": 32,
+  "check": "sha256sum -c passes",
+  "result": "PASS",
+  "detail": "README_FINAL.txt: OK"
+ },
+ {
+  "n": 33,
+  "check": "sibling ZIP checksum matches",
+  "result": "PASS",
+  "detail": "b582e820c52d82af45b37e4d68928922d31758fd1a454ff3d2719713f940cb2b"
+ },
+ {
+  "n": 34,
+  "check": "description-only DOCX hash reported",
+  "result": "PASS",
+  "detail": "9c4f251fe67f979a248d0df549009cf1e87fcc9c12e5af5a9ef9e2d7e5d70ce6"
+ },
+ {
+  "n": 35,
+  "check": "current published Video 1 assets untouched",
+  "result": "PASS",
+  "detail": "only the v2.4 recording decks were edited"
+ }
+]
