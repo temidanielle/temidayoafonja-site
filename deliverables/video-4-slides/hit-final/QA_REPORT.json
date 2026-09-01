@@ -89,5 +89,47 @@
   "Video_4_Short_4_Three_Sentence": 1,
   "Video_4_Shorts_EDITOR_ONLY_HIT": 2
  },
- "ALL_BOOLEAN_CHECKS_PASS": true
+ "ALL_BOOLEAN_CHECKS_PASS": true,
+ "SOURCE_VERIFICATION": {
+  "canonical_file_requested": "Video_4_Code_Prompt_HIT_Final.txt",
+  "canonical_file_available": false,
+  "canonical_file_searched": [
+   "session uploads directory",
+   "whole filesystem by name",
+   "repository",
+   "any file containing the BEGIN APPROVED VIDEO 4 SCRIPT fence"
+  ],
+  "video_4_marked_final": false,
+  "reason": "The named canonical source file is not present. Per Temidayo's instruction the specified comparison could not be run and Video 4 is not marked final.",
+  "secondary_check": {
+   "what": "Literal extraction from the session transcript's machine-recorded copy of Temidayo's own brief, between the BEGIN/END APPROVED VIDEO 4 SCRIPT fences. Not a hand transcription and not normalised.",
+   "recorded_copies_of_the_script_found": 1,
+   "teleprompter_minus_markers_equals_source": true,
+   "reading_script_equals_source": true,
+   "paragraphs": 124,
+   "marker_names_match": true,
+   "marker_positions_match": true,
+   "source_characters": 8057,
+   "package_characters": 8057,
+   "sha256_of_joined_spoken_text_identical": true,
+   "compared": [
+    "every word",
+    "punctuation",
+    "apostrophes",
+    "quotation marks",
+    "em dashes",
+    "capitalization",
+    "paragraph order"
+   ],
+   "normalisation_applied": "none",
+   "status": "EXACT MATCH — corroboration only, not a substitute for the canonical file Temidayo named."
+  }
+ },
+ "KEEP_THE_PROOF_GATE": {
+  "status": "PASSED",
+  "date": "2026-09-01",
+  "verified_by": "Temidayo, signed-out check",
+  "verified_by_claude": false,
+  "note": "Outbound requests to temidayoafonja.com are refused by this environment's egress proxy. Routine pre-publication signed-out link check remains in the publishing SOP."
+ }
 }

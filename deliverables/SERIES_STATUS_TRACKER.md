@@ -33,11 +33,25 @@ for a visitor who is not signed in and is not holding a preview link. This is
 Temidayo's check to run; it is recorded in Video 3's README, publishing package
 and editor brief. The same check is worth running before Video 5 publishes.
 
+### `temidayoafonja.com/keep-the-proof` — PASSED, 1 September 2026
+
+**Temidayo independently checked the page signed out and confirmed it is live**,
+displaying Keep the Proof, "A 60-Minute Career Evidence System", $49 pricing and
+the Gumroad purchase route. This is no longer an open production blocker for
+Video 4 or Video 7.
+
+Recorded honestly: I could not verify it independently. Outbound requests to
+temidayoafonja.com are refused by this environment's egress proxy. The status
+above rests on Temidayo's signed-out check, not on one I ran.
+
+The routine pre-publication signed-out link check stays in the publishing SOP
+for every video that carries the URL.
+
 ### Other standing gates
 
 | Gate | Applies to |
 |---|---|
-| Confirm `temidayoafonja.com/keep-the-proof` is live | Videos 4 and 7 |
+| ~~Confirm `temidayoafonja.com/keep-the-proof` is live~~ **PASSED, 1 Sep 2026** | Videos 4 and 7 |
 | Chapter timestamps set from the real export, not the package estimates | All |
 | End-screen elements set at upload (see each package's QA README) | All |
 
@@ -96,16 +110,45 @@ labelled EDITOR ONLY briefs, out of every recording document. It is a
 description stay untouched until the replacement is recorded, edited, reviewed
 and uploaded.
 
-Video 4's H.I.T. rebuild is built at `deliverables/video-4-slides/hit-final/`
-and awaits approval. 124 spoken paragraphs, 1,322 words, 11 slide markers
-mapping to the unchanged 11-slide deck; the reveal deck (26 frames) is
-unchanged. Four standalone Shorts, and editor instruction held in two clearly
-labelled EDITOR ONLY briefs.
+Video 4's H.I.T. rebuild is built at `deliverables/video-4-slides/hit-final/`.
+Content and package structure are **approved**; the package is **not yet locked**
+— see the source-verification note below. 124 spoken paragraphs, 1,322 words,
+11 slide markers mapping to the unchanged 11-slide deck; the reveal deck
+(26 frames) is unchanged. Four standalone Shorts, and editor instruction held in
+two clearly labelled EDITOR ONLY briefs.
+
+| Video 4 | |
+|---|---|
+| Title | How to Explain Your Career Change |
+| Thumbnail | YOUR CAREER MAKES SENSE |
+| Current authoritative script | Video 4 H.I.T. rebuild |
+| Canonical spoken word count | 1,322 |
+| Previous script | 1,221 words |
+| Status of previous script | SUPERSEDED by the H.I.T. rebuild |
+| CTA | Keep the Proof |
+| Watch next | Should I Make an Internal Move? 3 Questions to Decide |
 
 **This supersedes Video 4's earlier locked script.** Videos 4 to 8 were locked
 at commit `de4363c` with Video 4 at 1,221 words. Temidayo instructed a full
 H.I.T. rebuild on 1 September 2026; the new package replaces that script for
 Video 4 only. Videos 5 to 8 remain locked at `de4363c` and are untouched.
+
+**Source verification — open.** Video 4's script arrived as message text rather
+than as a file, so it was hand-transcribed into the package. Temidayo asked for
+a literal comparison against `Video_4_Code_Prompt_HIT_Final.txt`. **That file is
+not present** in this session's uploads or in the repository, so the check she
+specified has not been run and Video 4 is **not marked final**.
+
+A secondary literal check was run against the one machine-recorded copy of the
+approved script that does exist — the session transcript's stored copy of
+Temidayo's own brief, extracted programmatically between the BEGIN/END APPROVED
+VIDEO 4 SCRIPT fences, with no normalisation. Against that source, the
+teleprompter script minus its slide markers and the clean reading script are
+both an **exact match**: 124 paragraphs, every word, apostrophe, quotation mark,
+em dash, capitalisation and paragraph order identical; 8,057 characters on both
+sides; identical SHA-256 of the joined spoken text. The 11 marker names and
+their positions also match exactly. This is corroboration, not a substitute for
+the canonical file Temidayo named.
 
 **Fact boundary carried into every Video 4 document.** The recurring "cat with
 nine lives" description is established — one of Temidayo's senior-manager

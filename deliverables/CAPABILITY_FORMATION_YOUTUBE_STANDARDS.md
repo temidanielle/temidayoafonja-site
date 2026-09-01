@@ -154,7 +154,7 @@ are the worked examples of this standard and are closed for revision.
 
 | Video | Approved title | First spoken line | Spoken words |
 |---|---|---|---|
-| 4 | How to Explain Your Career Change | "A senior colleague once called me a cat with nine lives." | 1,221 |
+| 4 | How to Explain Your Career Change | "A senior colleague once called me a cat with nine lives." | **1,322** |
 | 5 | Should I Make an Internal Move? 3 Questions to Decide | "You may not need to leave your company." | 1,639 |
 | 6 | Are You Growing—or Just Being Given More Work? | "Is this actually growth, or am I just being given more work?" | 1,649 |
 | 7 | How to Show Your Impact at Work When You Built It From Scratch | "How do you prove something when there was nothing there before you?" | 1,472 |
@@ -164,3 +164,27 @@ Word counts are canonical: spoken paragraphs only, excluding document headers,
 length statements, timed block headers, slide markers and production
 directions. The counting function is `script/canon.py` in each video's
 directory.
+
+**Video 4 was rebuilt under the H.I.T. standard on 1 September 2026.** The
+current authoritative Video 4 script is the H.I.T. rebuild at
+`deliverables/video-4-slides/hit-final/`, canonical spoken count **1,322**. The
+earlier 1,221-word script is **SUPERSEDED** and is no longer current. Its
+counting method differs from the other rows in this table: the H.I.T. packages
+count spoken paragraphs directly from the package's own `_source/script_text.py`
+rather than through `script/canon.py`, which does not exist in the H.I.T.
+package layout. The definition of a canonical count is unchanged.
+
+Video 4 record:
+
+| Field | Value |
+|---|---|
+| Title | How to Explain Your Career Change |
+| Thumbnail | YOUR CAREER MAKES SENSE |
+| Current authoritative script | Video 4 H.I.T. rebuild |
+| Canonical spoken word count | 1,322 |
+| Previous script | 1,221 words |
+| Status of previous script | SUPERSEDED by the H.I.T. rebuild |
+| CTA | Keep the Proof |
+| Watch next | Should I Make an Internal Move? 3 Questions to Decide |
+
+The standards for Videos 5 to 8 are unchanged.
