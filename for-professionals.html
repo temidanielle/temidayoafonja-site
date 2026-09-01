@@ -98,6 +98,10 @@
 /* Secondary line under a card's button. Two classes so it outranks
    .path-card > p (0,1,1) on margin and .path-card p (0,1,1) on size. */
 .path-card .path-alt { font-size: 12.5px; line-height: 1.5; margin: 12px 0 0; }
+/* Free self-directed entry point, under Your Path and above the paid cards.
+   Two classes on the anchor so it clears ".lean-page a { color: inherit }". */
+.path-free { font-size: 14.5px; line-height: 1.6; color: var(--muted); margin-top: 20px; }
+.lean-page .path-free a { color: var(--navy); font-weight: 700; text-decoration: underline; }
 
 /* Secondary: the shorter, earlier session sits lighter. */
 .path-card.secondary { background: var(--paper); border: 1px solid var(--line); }
@@ -186,7 +190,7 @@
   <div class="lean-wrap">
     <span class="lean-eyebrow fade-up delay-1">For Experienced Professionals</span>
     <h1 class="fade-up delay-2">Is Your Work Still Building You?</h1>
-    <p class="body fade-up delay-3">Two free sessions, a self-directed instrument, and a private interpretation service. Each is a different way into the Capability Formation method. Start where the question is sharpest.</p>
+    <p class="body fade-up delay-3">Free resources, self-directed tools, live sessions, and private interpretation for experienced professionals deciding what their work is building and where it can travel. Each is a different way into the Capability Formation method. Start where the question is sharpest.</p>
   </div>
 </section>
 
@@ -215,6 +219,7 @@
       </article>
 
     </div>
+    <p class="path-free">Not ready for a live session? <a href="/career-evidence-starter">Keep the Proof: The 10-Minute Career Evidence Starter</a> is free and self-directed. One accomplishment, one portable Proof Line, in about 10 to 15 focused minutes.</p>
   </div>
 </section>
 
