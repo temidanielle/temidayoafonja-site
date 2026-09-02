@@ -377,44 +377,60 @@ The package was not rebuilt or altered for the lock; no packaged file changed.
 
 #### Video 5 — Should I Make an Internal Move? 3 Questions to Decide
 
-**FINAL + LOCKED FOR RECORDING.** Locked at commit `51496ba`:
+**FINAL + LOCKED FOR RECORDING — v3.0 DIFFERENTIATED REBUILD.**
 `deliverables/video-5-slides/hit-final/`.
 
 | | |
 |---|---|
+| Canonical instruction | `Video_5_Code_Prompt_Differentiated_v3.0.txt` |
 | Title | Should I Make an Internal Move? 3 Questions to Decide |
 | Thumbnail | YOU MAY NOT NEED TO LEAVE |
-| Canonical spoken count | 1,403 |
+| Format | Searchable decision + organizational mechanics |
+| Canonical spoken count | 1,762 across 180 spoken paragraphs |
+| Memorable device | The three questions (no acronym, no second framework) |
 | Primary CTA | Career Decision Evidence Check |
 | CTA URL | https://temidayoafonja.com/career-decisions |
 | CTA production gate | SATISFIED |
 | Watch next | Video 6 — Are You Growing—or Just Being Given More Work? |
-| Long-form H.I.T. rebuild | FINAL + LOCKED |
-| Four standalone Shorts | FINAL + LOCKED |
-| Long-form EDITOR ONLY brief | FINAL |
+| Long-form v3.0 rebuild | FINAL + LOCKED |
+| Four standalone Shorts | FINAL + LOCKED (Short 3 renamed to Maternity_Return_Scope_Expansion) |
+| Long-form EDITOR ONLY brief | FINAL (11 required sections) |
 | Shorts EDITOR ONLY brief | FINAL |
 | Publishing package | FINAL |
+| Description-only DOCX | FINAL, outside the ZIP |
 | Canonical source verification | PASSED IN SAME BUILD PASS |
-| Slides | UNCHANGED (12 main slides) |
+| 52-point QA | 52 / 52 PASSED |
+| Slides | UNCHANGED (12 main slides) — no slide XML, geometry, typography, palette or media change |
 | Reveal deck | UNCHANGED (25 frames) |
+| Speaker notes | UPDATED to v3.0 — 12 main notes parts, 25 reveal notes parts |
+| Slide preview PDF | UNCHANGED (verified pixel-identical to a fresh render of the current deck) |
 | Thumbnail | UNCHANGED |
-| Final package ZIP SHA-256 | `3b9fcc52a0c79cae2b25da04f72e8f6eee34e270dad6f3b4bd731ac4ffa09854` |
+| Final package ZIP SHA-256 | `f54447a6323ddd28036c1c733b2be2c0e3f7fe61b01a2535cd25053eddd674b7` |
 | Sibling checksum | `Video_5_HIT_FINAL_Recording_and_Shorts_Package.zip.sha256` |
+| Description-only DOCX SHA-256 | `ff8c2387107388070f269c3f4180911f133286414a71c0b98ca89824897df6ec` |
+| Main deck SHA-256 | `764b0e11270322ab2773d5920f011826ca93cc99a48427baa026d5a59b6259b9` |
+| Reveal deck SHA-256 | `0568c956fcc4037153e6dcc7715a428d93e79c3763fa9c097cfa9dab4c156c06` |
+| Slide preview PDF SHA-256 | `b8443372b168308bc188863be45f903349f63246ab2c7af0a82913dfdfc5bdb1` |
 
-141 spoken paragraphs. The source comparison against
-`Video_5_Code_Prompt_HIT_Final.txt` ran inside the build pass and passed: exact
-match on both scripts across all 141 paragraphs, 8,588 characters on all three
-sides, identical SHA-256 of the joined spoken text, and all 12 slide-marker
-names and positions matching. The canonical prompt is archived at
-`video-5-slides/hit-final/_source/`.
+The literal comparison against the uploaded canonical TXT ran inside the build
+pass and passed on every axis: all 192 blocks, 180 spoken paragraphs, 12 slide
+markers by name and by position, and both DOCX and TXT forms of the
+teleprompter and reading scripts. Teleprompter minus markers equals the reading
+script exactly. All four Shorts match the canonical spoken copy verbatim.
 
-**The previous `de4363c` Video 5 script and package are SUPERSEDED as recording
-authority** by this H.I.T. rebuild. Retain them only as historical reference.
-
-The package was not rebuilt or altered for the lock; no packaged file changed.
+**The v2.0 H.I.T. package (ZIP `3b9fcc52…`, 1,403 spoken words) is SUPERSEDED as
+recording authority** by this v3.0 differentiated rebuild, and
+`Video_5_Code_Prompt_HIT_Final.txt` is superseded as the canonical instruction
+for Video 5. Retain both only as historical reference. The earlier `de4363c`
+script remains superseded as before.
 
 The old exception that delayed personal proof until roughly 1:35 is superseded;
 the proof now sits in the opening.
+
+Only speaker notes changed in the two decks. Part-level diffs confirm that the
+12 `ppt/notesSlides/notesSlideN.xml` parts of the main deck and the 25 of the
+reveal deck are the only parts that changed in either file — no slide XML, no
+media, no rels, no theme.
 
 #### Video 6 — Are You Growing—or Just Being Given More Work?
 

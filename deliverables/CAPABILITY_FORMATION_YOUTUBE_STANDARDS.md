@@ -254,15 +254,27 @@ dash, capitalisation and paragraph order matching, all 11 slide-marker names and
 positions matching, and no normalisation applied. The full evidence is retained
 in `video-4-slides/hit-final/QA_REPORT.json` and in the series tracker.
 
-Video 5 is **FINAL AND LOCKED FOR RECORDING** as of 1 September 2026, rebuilt
-under the H.I.T. standard at `deliverables/video-5-slides/hit-final/`, canonical
-spoken count **1,403**. Its script was verified literally against
-`Video_5_Code_Prompt_HIT_Final.txt` **inside the build pass** — exact match on
-both scripts across all 141 paragraphs and 8,588 characters, with every word,
-punctuation mark, apostrophe, quotation mark, em dash, capitalisation and
-paragraph order matching, all 12 slide-marker names and positions matching, and
-no normalisation applied. The earlier 1,639-word script is **SUPERSEDED** as
-recording authority and retained only as historical reference.
+Video 5 is **FINAL AND LOCKED FOR RECORDING** as of 2 September 2026, rebuilt
+to **v3.0** under the differentiation architecture at
+`deliverables/video-5-slides/hit-final/`, canonical spoken count **1,762** across
+180 spoken paragraphs. Its script was verified literally against
+`Video_5_Code_Prompt_Differentiated_v3.0.txt` **inside the build pass** — exact
+match on both scripts across all 192 blocks, with every word, punctuation mark,
+apostrophe, quotation mark, em dash, capitalisation and paragraph order matching,
+all 12 slide-marker names and positions matching, and no normalisation applied.
+Video 5 is the **first video rebuilt under the post–Videos 1–4 channel
+direction**: its format is *searchable decision + organizational mechanics*, and
+it carries the employee-plus-organization dual perspective alongside the
+searchable question. Its memorable device remains **the three questions** — will
+the work change, will your judgment expand, will the evidence travel — with no
+acronym and no second framework; CAR stays with Video 6 and the Career Evidence
+3 Cs stay with the evidence method. Its 12-slide deck and 25-frame reveal deck
+are **visually unchanged**; only the speaker notes were rewritten for v3.0, and
+part-level diffs confirm the 12 and 25 `notesSlideN.xml` parts were the only
+parts that changed. The v2.0 H.I.T. package (1,403 words) and
+`Video_5_Code_Prompt_HIT_Final.txt` are **SUPERSEDED** as recording authority
+and canonical instruction respectively; the earlier 1,639-word script remains
+superseded. Both are retained only as historical reference.
 
 Video 6 is **FINAL AND LOCKED FOR RECORDING** as of 1 September 2026, rebuilt
 under the H.I.T. standard at `deliverables/video-6-slides/hit-final/`, canonical
