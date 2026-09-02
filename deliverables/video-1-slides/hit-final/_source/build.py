@@ -329,14 +329,15 @@ keep(P(d,"Two type sizes came down because the new strings are materially "
        "the 5.00in button; at 14pt it is 4.51in and stays centred in it. "
        "Everything else on the slide is untouched.",size=10.5,color=DIM,
        before=4,after=8,spacing=1.25))
-p=P(d,"OUTSTANDING — CTA ARTWORK. Slide 12 and reveal frame 21 still carry the "
-     "two Capability Formation Field Kit page images. They must be replaced "
-     "with the real Career Evidence Starter artifact: Starter cover in front, "
-     "Portable Proof Line page visible behind, warm cream background. Do not "
-     "substitute generic AI graphics, an unrelated portrait, a decorative "
-     "quote card or a fake worksheet, and never show the direct PDF URL. The "
-     "artifact itself is the proof.",size=11,bold=True,color=RED,after=10,
-     spacing=1.25)
+p=P(d,"CTA ARTWORK — CORRECTED. Slide 12 and reveal frame 21 now carry the "
+     "REAL Career Evidence Starter artifact: the Starter cover in front and "
+     "the Portable Proof Line page visible behind it, on the warm cream "
+     "ground. Both images are the artifact's own pages, placed at the existing "
+     "picture positions and sizes. No Field Kit imagery remains anywhere in "
+     "either deck. Do not substitute generic AI graphics, an unrelated "
+     "portrait, a decorative quote card or a fake worksheet, and never show "
+     "the direct PDF URL. The artifact itself is the proof.",size=11,bold=True,
+     color=NAVY,after=10,spacing=1.25)
 shade(p,BAND_CREAM); keep(p)
 
 H1(d,"CTA and watch next",before=14)
@@ -707,8 +708,9 @@ R=["VIDEO 1 — H.I.T. FINAL RECORDING PACKAGE","",
  "                   The earlier %s CTA is SUPERSEDED"%OLD_CTA,
  "                   for this video by the live Free Career Evidence Starter.",
  "                   Slide 12 and reveal frame 21 carry the new CTA. The",
- "                   two Field Kit page images on that slide still need to be",
- "                   replaced with the real Starter artifact.",
+ "                   The supporting artwork on that slide is the REAL Career",
+ "                   Evidence Starter artifact: cover in front, Portable Proof",
+ "                   Line page behind. No Field Kit imagery remains.",
  "Watch next:        %s"%NEXT,"",
  "Status:            Replacement recording package. The existing published",
  "                   Video 1 remains untouched until the replacement",

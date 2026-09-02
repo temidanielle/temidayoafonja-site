@@ -104,8 +104,16 @@ def changed(o,n):
     A_,B_=_z.ZipFile(o),_z.ZipFile(n)
     return sorted(x.split("/")[-1] for x in set(A_.namelist()) if A_.read(x)!=B_.read(x))
 cm=changed("/tmp/v1hit/Main.orig.pptx",MAIN); cr=changed("/tmp/v1hit/Reveal.orig.pptx",REV)
-chk(18,"slides 1-11 and 13 unchanged",cm==["slide12.xml"],str(cm))
-chk(19,"only the matching reveal frame changed",cr==["slide21.xml"],str(cr))
+# vs the pristine pre-patch decks the expected delta is now the CTA slide XML
+# plus the two media parts carrying the Starter artifact. No other slide XML.
+EXP_MAIN=["image2.png","image3.png","slide12.xml"]
+EXP_REV =["image2.png","image3.png","slide21.xml"]
+chk(18,"slides 1-11 and 13 unchanged",cm==EXP_MAIN,str(cm))
+chk(19,"only the matching reveal frame changed",cr==EXP_REV,str(cr))
+chk(18.1,"no slide XML other than the CTA slide changed",
+    not [x for x in cm+cr if x.startswith("slide") and x not in ("slide12.xml","slide21.xml")])
+chk(18.2,"no rels or presentation XML changed",
+    not [x for x in cm+cr if x.endswith(".rels") or x=="presentation.xml"])
 shorts=sorted(f for f in os.listdir(SH) if f.startswith("Video_1_Short_"))
 prev="/home/user/temidayoafonja-site/deliverables/video-1-slides/hit-final/Video_1_HIT_FINAL/SHORTS/"
 def docxml(p):

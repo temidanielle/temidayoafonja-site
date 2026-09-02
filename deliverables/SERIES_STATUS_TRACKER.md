@@ -268,8 +268,8 @@ file disagrees, this section is current.
 
 #### Video 1 — How to Change Jobs Without Starting Your Career Over
 
-**v3.1 CAREER EVIDENCE STARTER PATCH APPLIED. NOT YET LOCKED — one item
-outstanding.** 1 September 2026.
+**FINAL + LOCKED FOR RE-RECORDING.** v3.1 Career Evidence Starter patch
+applied 1 September 2026; CTA artwork corrected 2 September 2026.
 
 The wording "roughly eighteen years" is **approved**. It is **not** an open
 issue and is not a pending decision.
@@ -297,20 +297,23 @@ A separate description-only document now exists for Video 1, matching the
 convention used for Videos 6 to 8.
 
 Package ZIP SHA-256:
-`b582e820c52d82af45b37e4d68928922d31758fd1a454ff3d2719713f940cb2b`
+`17e881ea97774f0d4a9e080f2077b093b6367f6f3ce14e22fe119ceb17a793e6`
+(supersedes `b582e820…`; the editor brief and README were rebuilt to record
+the artwork correction)
 Sibling checksum: `Video_1_HIT_FINAL_Recording_and_Shorts_Package.zip.sha256`
 Description-only DOCX:
 `9c4f251fe67f979a248d0df549009cf1e87fcc9c12e5af5a9ef9e2d7e5d70ce6`
 The earlier v3.0 archive `c49fcc42…` is superseded.
 
-**OUTSTANDING BEFORE LOCK — CTA artwork.** Slide 12 and reveal frame 21 still
-carry the two Capability Formation Field Kit page images (cover and the "Part
-Two: Optionality" interior page, whose footer reads *The Capability Formation
-Field Kit*). They must be replaced with the real Career Evidence Starter
-artifact — Starter cover in front, Portable Proof Line page visible behind,
-warm cream background. The artifact was shown in the conversation but has not
-been supplied as a file, and no substitute may be fabricated. Video 1 is **not
-locked** until those two images are replaced byte-identically, with checksums.
+**CTA artwork — CORRECTED 2 September 2026.** Slide 12 and reveal frame 21
+now carry the real Career Evidence Starter artifact, rendered from the
+approved PDF: the Starter cover (page 1) in front and the Portable Proof Line
+page (page 5) visible behind, on the warm cream ground. Both renders are
+1870x2420, the same pixel dimensions as the Field Kit images they replace, so
+every shape position, size and z-order is untouched. Only the two media parts
+changed — `ppt/media/image2.png` and `ppt/media/image3.png` in each deck — and
+NO slide XML or rels changed in that pass. No Field Kit imagery remains
+anywhere in either deck.
 
 Video 1 is **not** to be marked FINAL from a tracker update alone. Temidayo's
 advisor will independently review the corrected deliverable before lock.
@@ -570,13 +573,12 @@ now all follow that convention.
 | State | Videos |
 |---|---|
 | FINAL + LOCKED FOR RECORDING | 2, 3, 4, 5, 6, 7, 8 |
-| v3.1 patch applied — awaiting CTA artwork and independent review before lock | 1 |
+| FINAL + LOCKED FOR RE-RECORDING — awaiting independent advisor review | 1 |
 
 Videos 7 and 8 completed their H.I.T. rebuilds on 1 September 2026 and are
-locked. Video 1 is the only remaining item in the series. Its v3.1 Career
-Evidence Starter patch is applied and verified; it awaits the real Starter
-artifact images for Slide 12 and reveal frame 21, and independent advisor
-review, before lock.
+locked. Videos 1 to 8 are now all FINAL + LOCKED FOR RECORDING. Video 1's
+v3.1 patch and its CTA artwork correction are both applied and verified; the
+only remaining step is Temidayo's independent advisor review.
 
 Videos 5 to 8 are **not** to be reverted to their prior "locked" state merely
 because older packages still exist in the repository. The H.I.T. packages named

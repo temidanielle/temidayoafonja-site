@@ -11,8 +11,9 @@ CTA URL:           https://temidayoafonja.com/career-evidence-starter
                    The earlier Capability Formation Field Kit CTA is SUPERSEDED
                    for this video by the live Free Career Evidence Starter.
                    Slide 12 and reveal frame 21 carry the new CTA. The
-                   two Field Kit page images on that slide still need to be
-                   replaced with the real Starter artifact.
+                   The supporting artwork on that slide is the REAL Career
+                   Evidence Starter artifact: cover in front, Portable Proof
+                   Line page behind. No Field Kit imagery remains.
 Watch next:        Is Your Job Making You Less Marketable?
 
 Status:            Replacement recording package. The existing published

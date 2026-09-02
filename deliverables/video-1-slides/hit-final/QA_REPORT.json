@@ -105,13 +105,25 @@
   "n": 18,
   "check": "slides 1-11 and 13 unchanged",
   "result": "PASS",
-  "detail": "['slide12.xml']"
+  "detail": "['image2.png', 'image3.png', 'slide12.xml']"
  },
  {
   "n": 19,
   "check": "only the matching reveal frame changed",
   "result": "PASS",
-  "detail": "['slide21.xml']"
+  "detail": "['image2.png', 'image3.png', 'slide21.xml']"
+ },
+ {
+  "n": 18.1,
+  "check": "no slide XML other than the CTA slide changed",
+  "result": "PASS",
+  "detail": ""
+ },
+ {
+  "n": 18.2,
+  "check": "no rels or presentation XML changed",
+  "result": "PASS",
+  "detail": ""
  },
  {
   "n": 20,
@@ -195,7 +207,7 @@
   "n": 33,
   "check": "sibling ZIP checksum matches",
   "result": "PASS",
-  "detail": "b582e820c52d82af45b37e4d68928922d31758fd1a454ff3d2719713f940cb2b"
+  "detail": "17e881ea97774f0d4a9e080f2077b093b6367f6f3ce14e22fe119ceb17a793e6"
  },
  {
   "n": 34,
