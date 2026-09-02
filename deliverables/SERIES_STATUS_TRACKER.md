@@ -520,6 +520,41 @@ Description-only DOCX (outside the ZIP):
 
 Thumbnail direction: `YOUR EXPERIENCE STILL COUNTS`.
 
+### Memorable-shorthand standard — recorded 2 September 2026
+
+A standing rule now governs teaching devices across the series: at most one
+device per video, recognition before the letters, 2 to 4 letters only when
+they reflect a real method, no acronym in the title by default, repeated two
+or three times, every part explained in plain language, shown once in a
+restrained visual, and what/why/when/where taught before or alongside how.
+Factual discipline and one primary CTA are preserved. The full rule and the
+locked **3 Cs of Career Evidence** (Capture, Clarify, Carry) are recorded in
+`CAPABILITY_FORMATION_YOUTUBE_STANDARDS.md`.
+
+Per-video devices: Video 1 keeps its three practices and Video 4 keeps the
+three-sentence career explanation — **the 3 Cs must not be added to either**.
+Video 6's device is **the CAR test (Complexity, Authority, Return)** and Video
+8's is **the 3 Cs of an industry change (Capability, Context, Credential)**.
+
+### Final pre-recording patch pass — Videos 1, 4, 6, 8
+
+Requested 2 September 2026. **Three of the four patches cannot start.** The
+master instruction requires each patched script to be derived by applying the
+exact replacements in that video's PATCH file to its SOURCE file, and forbids
+hand-transcription. The bundle
+`Final_PreRecording_Patches_Videos_1_4_6_8_for_Code.zip` did not arrive; only
+the master file and the Video 1 SOURCE were received.
+
+| Video | Patch | State |
+|---|---|---|
+| 1 | Career Evidence Starter CTA | Script, documents and Slide 12 text **already applied** in v3.1. Blocked only by the Starter artwork. |
+| 4 | Replace Keep the Proof with the free Career Evidence Starter | **Not started — PATCH_Video_4_Career_Evidence_Starter.txt missing.** |
+| 6 | Name and repeat the CAR test | **Not started — PATCH_Video_6_CAR_Test.txt missing.** |
+| 8 | Name and repeat the 3 Cs of an industry change | **Not started — PATCH_Video_8_Three_Cs.txt missing.** |
+
+Videos 4, 6 and 8 remain FINAL + LOCKED at their current verified packages.
+Nothing in them was touched. Videos 2, 3, 5 and 7 were not touched.
+
 ### Series summary
 
 | State | Videos |

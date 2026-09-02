@@ -154,6 +154,59 @@ are the worked examples of this standard and are closed for revision.
 15. Preserve editorial integrity: no invented evidence, unsupported metrics,
     exaggerated outcomes, or claims created merely to strengthen a hook.
 
+## MEMORABLE-SHORTHAND STANDARD
+
+Standing rule, recorded 2 September 2026.
+
+- Use **one** memorable teaching device per video at most.
+- **Recognition comes before the letters or named test.**
+- Use 2 to 4 letters or words only when they reflect a real method.
+- Do not reverse-engineer awkward words.
+- Do not put the acronym in the title by default.
+- Repeat the shorthand naturally two or three times.
+- Explain every part in plain language.
+- Show it once in a restrained visual card, slide, or editor overlay.
+- Teach what / what not, why / why not, when / when not, and where / where
+  not before or alongside how.
+- Preserve factual discipline and one primary CTA.
+- Do not turn the script into slogans or acronym soup.
+
+### Locked career-evidence shorthand
+
+**THE 3 Cs OF CAREER EVIDENCE**
+
+**CAPTURE** — Capture one accomplishment while the details are still fresh.
+
+**CLARIFY** — Clarify what was true before, what the person contributed or
+decided, what changed, and what evidence supports the account.
+
+**CARRY** — Remove internal language, identify what the work shows the person
+could plausibly do again, explain it outside the original organization, and
+create one portable Proof Line.
+
+Preferred repeatable line:
+
+> Capture the work.
+> Clarify the evidence.
+> Carry the value.
+
+**Do not rename** Capability Formation, career portability, or
+"What travels when the context changes?"
+
+### Video-specific memory devices
+
+| Video | Device | Note |
+|---|---|---|
+| 1 | Look underneath the title / Explain what the work changed / Keep evidence before you need it | **Do NOT add the 3 Cs to Video 1.** |
+| 4 | The three-sentence career explanation | **Do NOT add the 3 Cs to Video 4.** |
+| 6 | The CAR test — Complexity, Authority, Return | Device decided; script patch not yet applied. |
+| 8 | The 3 Cs of an industry change — Capability, Context, Credential | Device decided; script patch not yet applied. |
+
+The Video 6 and Video 8 devices are **recorded as decided** here. Their
+packages still carry the pre-patch scripts: the authorised PATCH files that
+specify the exact spoken wording have not been supplied, and the wording must
+not be invented.
+
 ### The approved reference set
 
 | Video | Approved title | First spoken line | Spoken words |

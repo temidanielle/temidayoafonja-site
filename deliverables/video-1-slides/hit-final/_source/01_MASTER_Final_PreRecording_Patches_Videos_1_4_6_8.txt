@@ -1,0 +1,191 @@
+FINAL PRE-RECORDING PATCH PASS — VIDEOS 1, 4, 6 AND 8
+
+Purpose:
+Complete only the four narrow revisions Temidayo approved before recording.
+
+This is NOT permission to reopen Videos 1–8 generally.
+
+PROCESS THE FOUR VIDEOS INDEPENDENTLY, IN THIS ORDER:
+
+1. Video 1 — complete the already-approved Career Evidence Starter CTA patch.
+2. Video 4 — replace Keep the Proof with the free Career Evidence Starter.
+3. Video 6 — name and repeat the CAR test.
+4. Video 8 — name and repeat the 3 Cs of an industry change.
+
+Videos 2, 3, 5 and 7 are FINAL + LOCKED and must remain untouched.
+
+If a real conflict appears in one video:
+- stop changes to that video;
+- report the conflict;
+- continue the unaffected approved patches;
+- do not silently resolve anything.
+
+==================================================
+SOURCE FILES INCLUDED IN THIS BUNDLE
+==================================================
+
+Use these as the canonical pre-patch sources:
+
+SOURCE_Video_1_Code_Prompt_HIT_Final.txt
+SOURCE_Video_4_Code_Prompt_HIT_Final.txt
+SOURCE_Video_6_Code_Prompt_HIT_Final.txt
+SOURCE_Video_8_Code_Prompt_HIT_Final.txt
+
+Use these as the approved patch instructions:
+
+PATCH_Video_1_Career_Evidence_Starter.txt
+PATCH_Video_4_Career_Evidence_Starter.txt
+PATCH_Video_6_CAR_Test.txt
+PATCH_Video_8_Three_Cs.txt
+
+Do not hand-transcribe canonical scripts.
+
+For each video, derive the patched canonical script by applying only the exact authorized replacements in its PATCH file to the corresponding SOURCE file.
+
+==================================================
+GLOBAL MEMORABLE-SHORTHAND STANDARD — RECORD IT
+==================================================
+
+Update CAPABILITY_FORMATION_YOUTUBE_STANDARDS.md and the series tracker with this standing rule:
+
+- Use one memorable teaching device per video at most.
+- Recognition comes before the letters or named test.
+- Use 2–4 letters or words only when they reflect a real method.
+- Do not reverse-engineer awkward words.
+- Do not put the acronym in the title by default.
+- Repeat the shorthand naturally two or three times.
+- Explain every part in plain language.
+- Show it once in a restrained visual card, slide, or editor overlay.
+- Teach what/what not, why/why not, when/when not, and where/where not before or alongside how.
+- Preserve factual discipline and one primary CTA.
+- Do not turn the script into slogans or acronym soup.
+
+Locked career-evidence shorthand:
+
+THE 3 Cs OF CAREER EVIDENCE
+
+CAPTURE
+Capture one accomplishment while the details are still fresh.
+
+CLARIFY
+Clarify what was true before, what the person contributed or decided, what changed, and what evidence supports the account.
+
+CARRY
+Remove internal language, identify what the work shows the person could plausibly do again, explain it outside the original organization, and create one portable Proof Line.
+
+Preferred repeatable line:
+
+Capture the work.
+Clarify the evidence.
+Carry the value.
+
+Do not rename:
+- Capability Formation;
+- career portability;
+- “What travels when the context changes?”
+
+Record these video-specific memory devices:
+
+Video 1:
+Look underneath the title / Explain what the work changed / Keep evidence before you need it.
+Do NOT add the 3 Cs to Video 1.
+
+Video 4:
+The three-sentence career explanation.
+Do NOT add the 3 Cs to Video 4.
+
+Video 6:
+The CAR test — Complexity, Authority, Return.
+
+Video 8:
+The 3 Cs of an industry change — Capability, Context, Credential.
+
+==================================================
+VERSIONING AND PACKAGING
+==================================================
+
+Use a clear patch version:
+
+Video 1:
+v3.1, as specified in its existing patch brief.
+
+Video 4:
+v2.1 for the long-form teleprompter, clean reading copy, editor brief and publishing package.
+
+Video 6:
+v2.1 for the long-form teleprompter, clean reading copy, editor brief and publishing package.
+
+Video 8:
+v2.1 for the long-form teleprompter, clean reading copy, editor brief and publishing package.
+
+Each final ZIP must still contain exactly 13 clean user-facing files:
+- 6 LONG_FORM files;
+- 5 SHORTS files;
+- README_FINAL.txt;
+- SHA256SUMS.txt.
+
+The separate description-only DOCX remains outside the ZIP.
+
+No:
+- _source folders inside ZIPs;
+- Python files inside ZIPs;
+- generators;
+- QA utilities;
+- rendered images;
+- temporary files;
+- obsolete drafts;
+- duplicate files.
+
+Rebuild each affected ZIP because packaged content changes.
+
+Create a new sibling .zip.sha256 for each.
+
+Run sha256sum -c successfully for all 12 in-ZIP entries.
+
+==================================================
+LOCK BOUNDARIES
+==================================================
+
+Do not change:
+
+- any title;
+- any thumbnail copy;
+- any H.I.T. opening except the exact Video 6 CAR wording authorized in its patch;
+- any factual story;
+- any unsupported metric;
+- any Watch Next route;
+- any CTA outside Videos 1 and 4;
+- any slide outside the exact CTA slides authorized for Videos 1 and 4;
+- any PowerPoint for Videos 6 or 8;
+- the current published Video 1;
+- channel branding;
+- website files;
+- product files;
+- Videos 2, 3, 5 or 7.
+
+==================================================
+FINAL REPORT
+==================================================
+
+At completion, give one clear table for Videos 1, 4, 6 and 8 showing:
+
+- final status;
+- authoritative title;
+- mnemonic / teaching device;
+- primary CTA;
+- canonical spoken word count;
+- exact script comparison result;
+- slides changed;
+- reveal frames changed;
+- final ZIP SHA-256;
+- sibling checksum filename;
+- separate description-only DOCX SHA-256;
+- whether any decision remains open.
+
+Then confirm:
+
+VIDEOS 1–8 — FINAL + LOCKED FOR RECORDING
+
+only if all four approved patches pass.
+
+Do not mark a video final if its patch or canonical comparison fails.
