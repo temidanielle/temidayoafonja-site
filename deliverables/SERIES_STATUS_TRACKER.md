@@ -329,8 +329,14 @@ main `fbed816d195b32941c73190b7e1e318699844fbc849fcee106fa9589117a4ce0`,
 reveal `169cae1ffcb00b6f9d5fb98f06bf4f1395c7ec8d80a0fd5aa3d47683c117cad3`.
 The decks sit outside the 13-file ZIP, so the package hash is unchanged.
 
-Video 1 is **not** to be marked FINAL from a tracker update alone. Temidayo's
-advisor will independently review the corrected deliverable before lock.
+Video 1's independent review is **complete**. Temidayo accepted the notes
+correction and confirmed the locked status on 2 September 2026.
+
+Authoritative Video 1 hashes:
+package ZIP `17e881ea97774f0d4a9e080f2077b093b6367f6f3ce14e22fe119ceb17a793e6`,
+description-only DOCX `9c4f251fe67f979a248d0df549009cf1e87fcc9c12e5af5a9ef9e2d7e5d70ce6`,
+main deck `fbed816d195b32941c73190b7e1e318699844fbc849fcee106fa9589117a4ce0`,
+reveal deck `169cae1ffcb00b6f9d5fb98f06bf4f1395c7ec8d80a0fd5aa3d47683c117cad3`.
 
 Thumbnail text: `DON'T START FROM ZERO`. No new thumbnail decision is to be
 inferred beyond the approved existing production direction.
@@ -587,12 +593,14 @@ now all follow that convention.
 | State | Videos |
 |---|---|
 | FINAL + LOCKED FOR RECORDING | 2, 3, 4, 5, 6, 7, 8 |
-| FINAL + LOCKED FOR RE-RECORDING — awaiting independent advisor review | 1 |
+| FINAL + LOCKED FOR RE-RECORDING | 1 |
 
 Videos 7 and 8 completed their H.I.T. rebuilds on 1 September 2026 and are
-locked. Videos 1 to 8 are now all FINAL + LOCKED FOR RECORDING. Video 1's
-v3.1 patch and its CTA artwork correction are both applied and verified; the
-only remaining step is Temidayo's independent advisor review.
+**Videos 1 to 8 are CLOSED AND READY FOR RECORDING**, confirmed by Temidayo
+on 2 September 2026. Video 1's v3.1 CTA patch, its Starter artwork replacement
+and its deck notes correction are all applied and verified. No editorial or
+visual change is authorised for any of the eight videos before recording
+unless Temidayo explicitly reopens something.
 
 Videos 5 to 8 are **not** to be reverted to their prior "locked" state merely
 because older packages still exist in the repository. The H.I.T. packages named

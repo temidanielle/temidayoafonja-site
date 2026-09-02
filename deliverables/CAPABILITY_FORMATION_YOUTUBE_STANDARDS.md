@@ -303,5 +303,7 @@ named Video 5 as the approved example of personal proof arriving at roughly
 1:35. The H.I.T. rebuild moves that proof into the opening, and the exception no
 longer applies to any video.
 
-The standards themselves are unchanged. Videos 2 to 8 are now all
-FINAL AND LOCKED FOR RECORDING; Video 1 awaits independent advisor review.
+The standards themselves are unchanged. **Videos 1 to 8 are all FINAL AND
+LOCKED FOR RECORDING** as of 2 September 2026, and the series is closed for
+recording. No editorial or visual change is authorised before recording unless
+Temidayo explicitly reopens something.
