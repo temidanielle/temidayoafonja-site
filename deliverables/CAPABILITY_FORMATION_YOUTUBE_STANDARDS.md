@@ -199,23 +199,23 @@ Preferred repeatable line:
 |---|---|---|
 | 1 | Look underneath the title / Explain what the work changed / Keep evidence before you need it | **Do NOT add the 3 Cs to Video 1.** |
 | 4 | The three-sentence career explanation | **Do NOT add the 3 Cs to Video 4.** |
-| 6 | The CAR test — Complexity, Authority, Return | Device decided; script patch not yet applied. |
-| 8 | The 3 Cs of an industry change — Capability, Context, Credential | Device decided; script patch not yet applied. |
+| 6 | The CAR test — Complexity, Authority, Return | **Applied 2 Sep 2026.** Named 3× in long-form, 1× in Short 3. |
+| 8 | The 3 Cs of an industry change — Capability, Context, Credential | **Applied 2 Sep 2026.** Named 3× in long-form, 1× in Short 2. Capability→what travels, Context→what changes, Credential→what must be earned. |
 
-The Video 6 and Video 8 devices are **recorded as decided** here. Their
-packages still carry the pre-patch scripts: the authorised PATCH files that
-specify the exact spoken wording have not been supplied, and the wording must
-not be invented.
+All four devices are now **applied in the delivered packages**. Video 4's
+primary CTA moved from Keep the Proof to the free Career Evidence Starter in
+the same pass; Videos 6 and 8 keep the Capability Formation Field Kit. No
+video carries a second acronym or named framework.
 
 ### The approved reference set
 
 | Video | Approved title | First spoken line | Spoken words |
 |---|---|---|---|
-| 4 | How to Explain Your Career Change | "A senior colleague once called me a cat with nine lives." | **1,322** |
+| 4 | How to Explain Your Career Change | "A senior colleague once called me a cat with nine lives." | **1,261** |
 | 5 | Should I Make an Internal Move? 3 Questions to Decide | "You may not need to leave your company." | **1,403** |
-| 6 | Are You Growing—or Just Being Given More Work? | "Your workload can grow faster than your career." | **1,721** |
+| 6 | Are You Growing—or Just Being Given More Work? | "Your workload can grow faster than your career." | **1,727** |
 | 7 | How to Show Your Impact at Work When You Built It From Scratch | "Some of the hardest work to prove is the work that made everything else possible." | **1,632** |
-| 8 | How to Switch Industries Without Starting Over | "Changing industries does not make you entry-level at everything. It makes you new to a context." | **1,563** |
+| 8 | How to Switch Industries Without Starting Over | "Changing industries does not make you entry-level at everything. It makes you new to a context." | **1,582** |
 
 Word counts are canonical: spoken paragraphs only, excluding document headers,
 length statements, timed block headers, slide markers and production

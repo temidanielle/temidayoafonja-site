@@ -2,8 +2,12 @@ VIDEO 4 — H.I.T. FINAL RECORDING PACKAGE
 
 Title:             How to Explain Your Career Change
 Thumbnail:         YOUR CAREER MAKES SENSE
-CTA:               Keep the Proof — A 60-Minute Career Evidence System
-CTA URL:           https://temidayoafonja.com/keep-the-proof
+CTA:               Free Career Evidence Starter
+CTA URL:           https://temidayoafonja.com/career-evidence-starter
+                   The earlier Keep the Proof CTA is SUPERSEDED for this
+                   video by the free Career Evidence Starter. Slide 10 and
+                   reveal frame 25 carry the new CTA; every other slide and
+                   frame is byte-identical.
 Watch next:        Should I Make an Internal Move? 3 Questions to Decide
 
 Long-form:         Revised under H.I.T.
@@ -23,22 +27,22 @@ WHAT EACH FILE IS
 
 LONG_FORM/
 
-  Video4TeleprompterScriptwithslidemarkers_HIT_v2.0.docx
-  Video4TeleprompterScriptwithslidemarkers_HIT_v2.0.txt
+  Video4TeleprompterScriptwithslidemarkers_HIT_v2.1.docx
+  Video4TeleprompterScriptwithslidemarkers_HIT_v2.1.txt
       Temidayo's recording copy. Spoken script in large text; slide markers
       in tinted bands. The markers are not spoken.
 
-  Video4ReadingScriptnomarkers_HIT_v2.0.docx
-  Video4ReadingScriptnomarkers_HIT_v2.0.txt
+  Video4ReadingScriptnomarkers_HIT_v2.1.docx
+  Video4ReadingScriptnomarkers_HIT_v2.1.txt
       The same spoken words with the slide markers removed.
 
-  Video_4_EDITOR_ONLY_HIT_Brief_v2.0.docx
+  Video_4_EDITOR_ONLY_HIT_Brief_v2.1.docx
       For the editor. The H.I.T. first-30-second plan, editorial rhythm
       after 0:30, the existing 11-slide map, the let-the-visual-carry
       principle, and the fact and evidence boundaries.
       Not for the teleprompter.
 
-  Video_4_Publishing_Package_HIT_v2.0.docx
+  Video_4_Publishing_Package_HIT_v2.1.docx
       Title, thumbnail, search language, the copy-ready description,
       working chapter estimates, pinned comment and the tag field.
 
@@ -54,12 +58,12 @@ SHORTS/
 
 ALL FILES IN THIS PACKAGE
 
-  LONG_FORM/Video4ReadingScriptnomarkers_HIT_v2.0.docx
-  LONG_FORM/Video4ReadingScriptnomarkers_HIT_v2.0.txt
-  LONG_FORM/Video4TeleprompterScriptwithslidemarkers_HIT_v2.0.docx
-  LONG_FORM/Video4TeleprompterScriptwithslidemarkers_HIT_v2.0.txt
-  LONG_FORM/Video_4_EDITOR_ONLY_HIT_Brief_v2.0.docx
-  LONG_FORM/Video_4_Publishing_Package_HIT_v2.0.docx
+  LONG_FORM/Video4ReadingScriptnomarkers_HIT_v2.1.docx
+  LONG_FORM/Video4ReadingScriptnomarkers_HIT_v2.1.txt
+  LONG_FORM/Video4TeleprompterScriptwithslidemarkers_HIT_v2.1.docx
+  LONG_FORM/Video4TeleprompterScriptwithslidemarkers_HIT_v2.1.txt
+  LONG_FORM/Video_4_EDITOR_ONLY_HIT_Brief_v2.1.docx
+  LONG_FORM/Video_4_Publishing_Package_HIT_v2.1.docx
   SHORTS/Video_4_Short_1_Cat_With_Nine_Lives.docx
   SHORTS/Video_4_Short_2_Chronology_Not_Explanation.docx
   SHORTS/Video_4_Short_3_Not_A_Perfect_Plan.docx

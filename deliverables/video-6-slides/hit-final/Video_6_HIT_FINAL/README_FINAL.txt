@@ -2,6 +2,14 @@ VIDEO 6 — H.I.T. FINAL RECORDING PACKAGE
 
 Title:             Are You Growing—or Just Being Given More Work?
 Thumbnail:         MORE WORK ≠ GROWTH
+Memorable device:  THE CAR TEST — Complexity, Authority, Return.
+                   Named three times in the long-form script and once in
+                   Short 3. No second acronym or framework is introduced.
+                   The prior phrase "three tests" is superseded only where
+                   the patch explicitly replaces it. The later
+                   manager-conversation questions remain ordinary questions.
+                   NO PowerPoint or reveal-deck change: the CAR overlay is
+                   an editor cue over the existing deck.
 CTA:               Capability Formation Field Kit
 CTA URL:           https://temidayoafonja.com/fieldkit
 Watch next:        How to Show Your Impact at Work When You Built It From Scratch
@@ -30,22 +38,22 @@ WHAT EACH FILE IS
 
 LONG_FORM/
 
-  Video6TeleprompterScriptwithslidemarkers_HIT_v2.0.docx
-  Video6TeleprompterScriptwithslidemarkers_HIT_v2.0.txt
+  Video6TeleprompterScriptwithslidemarkers_HIT_v2.1.docx
+  Video6TeleprompterScriptwithslidemarkers_HIT_v2.1.txt
       Temidayo's recording copy. Spoken script in large text; slide markers
       in tinted bands. The markers are not spoken.
 
-  Video6ReadingScriptnomarkers_HIT_v2.0.docx
-  Video6ReadingScriptnomarkers_HIT_v2.0.txt
+  Video6ReadingScriptnomarkers_HIT_v2.1.docx
+  Video6ReadingScriptnomarkers_HIT_v2.1.txt
       The same spoken words with the slide markers removed.
 
-  Video_6_EDITOR_ONLY_HIT_Brief_v2.0.docx
+  Video_6_EDITOR_ONLY_HIT_Brief_v2.1.docx
       For the editor. The H.I.T. first-30-second plan, the Slide 12
       correction record, editorial rhythm after 0:30, the 12-slide map,
       the let-the-slides-carry principle, and the fact, proof and evidence
       boundaries. Not for the teleprompter.
 
-  Video_6_Publishing_Package_HIT_v2.0.docx
+  Video_6_Publishing_Package_HIT_v2.1.docx
       Title, thumbnail, search language, the copy-ready description with
       its approved emoji system, working chapter estimates, pinned comment
       and the tag field.
@@ -62,12 +70,12 @@ SHORTS/
 
 ALL FILES IN THIS PACKAGE
 
-  LONG_FORM/Video6ReadingScriptnomarkers_HIT_v2.0.docx
-  LONG_FORM/Video6ReadingScriptnomarkers_HIT_v2.0.txt
-  LONG_FORM/Video6TeleprompterScriptwithslidemarkers_HIT_v2.0.docx
-  LONG_FORM/Video6TeleprompterScriptwithslidemarkers_HIT_v2.0.txt
-  LONG_FORM/Video_6_EDITOR_ONLY_HIT_Brief_v2.0.docx
-  LONG_FORM/Video_6_Publishing_Package_HIT_v2.0.docx
+  LONG_FORM/Video6ReadingScriptnomarkers_HIT_v2.1.docx
+  LONG_FORM/Video6ReadingScriptnomarkers_HIT_v2.1.txt
+  LONG_FORM/Video6TeleprompterScriptwithslidemarkers_HIT_v2.1.docx
+  LONG_FORM/Video6TeleprompterScriptwithslidemarkers_HIT_v2.1.txt
+  LONG_FORM/Video_6_EDITOR_ONLY_HIT_Brief_v2.1.docx
+  LONG_FORM/Video_6_Publishing_Package_HIT_v2.1.docx
   SHORTS/Video_6_Short_1_Workload_Grows_Faster.docx
   SHORTS/Video_6_Short_2_Accountability_Not_Authority.docx
   SHORTS/Video_6_Short_3_More_Scope_Was_It_Growth.docx

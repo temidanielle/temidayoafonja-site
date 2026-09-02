@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Build the Video 6 H.I.T. final recording and Shorts package."""
 import os, sys, shutil, zipfile, hashlib
-sys.path.insert(0, "/tmp/v6hit")
+sys.path.insert(0, "/tmp/v6p")
 from script_text import LINES, SPOKEN, MARKERS
 from docx import Document
 from docx.shared import Pt, Inches, RGBColor
@@ -13,7 +13,7 @@ DIM=RGBColor(0x5A,0x6B,0x82); INK=RGBColor(0x1A,0x1A,0x1A)
 RED=RGBColor(0x9B,0x2C,0x10)
 BAND_NAVY="E8EDF4"; BAND_CREAM="F3F0E8"
 
-ROOT="/tmp/v6hit/Video_6_HIT_FINAL"
+ROOT="/tmp/v6p/Video_6_HIT_FINAL"
 LF=os.path.join(ROOT,"LONG_FORM"); SH=os.path.join(ROOT,"SHORTS")
 shutil.rmtree(ROOT, ignore_errors=True)
 os.makedirs(LF); os.makedirs(SH)
@@ -121,13 +121,13 @@ for line in LINES:
         shade(p,BAND_NAVY); bar(p,"0F2346"); keep(p,True)
     else:
         keep(P(d,line,size=13.5,color=INK,after=12,spacing=1.5))
-d.save(os.path.join(LF,"Video6TeleprompterScriptwithslidemarkers_HIT_v2.0.docx"))
+d.save(os.path.join(LF,"Video6TeleprompterScriptwithslidemarkers_HIT_v2.1.docx"))
 tel=[TITLE,"Video 6  ·  Teleprompter script with slide markers",""]
 for line in LINES:
     if line.startswith("[SLIDE:"):
         tel += ["", "SLIDE  —  %s"%line[len("[SLIDE:"):-1].strip(), ""]
     else: tel += [line, ""]
-open(os.path.join(LF,"Video6TeleprompterScriptwithslidemarkers_HIT_v2.0.txt"),
+open(os.path.join(LF,"Video6TeleprompterScriptwithslidemarkers_HIT_v2.1.txt"),
      "w").write("\n".join(tel).strip()+"\n")
 
 # ------------------------------------------------- 2. reading script DOCX+TXT
@@ -137,8 +137,8 @@ head(d,TITLE,"Video 6  ·  Reading script, no markers",
      "directions.")
 for line in SPOKEN:
     keep(P(d,line,size=13.5,color=INK,after=12,spacing=1.5))
-d.save(os.path.join(LF,"Video6ReadingScriptnomarkers_HIT_v2.0.docx"))
-open(os.path.join(LF,"Video6ReadingScriptnomarkers_HIT_v2.0.txt"),
+d.save(os.path.join(LF,"Video6ReadingScriptnomarkers_HIT_v2.1.docx"))
+open(os.path.join(LF,"Video6ReadingScriptnomarkers_HIT_v2.1.txt"),
      "w").write("\n\n".join(SPOKEN)+"\n")
 print("long-form scripts written")
 
@@ -220,6 +220,31 @@ for x in ["preserve natural pace;","use slides for distinctions and questions;",
  "do not make workload and growth visually alarmist."]:
     keep(P(d,"—  "+x,after=4))
 
+H1(d,"The CAR test — memorable teaching device",before=14)
+p=P(d,"This video has ONE memorable device: THE CAR TEST — Complexity, "
+     "Authority, Return. Do not add a second acronym or framework.",size=11,
+     bold=True,color=RED,after=8,spacing=1.25)
+shade(p,BAND_CREAM); keep(p)
+keep(P(d,"The spoken script names it three times: in the opening payoff, when "
+       "the framework is introduced, and at the pattern read. It means "
+       "Complexity, Authority and Return every time.",after=6,spacing=1.25))
+keep(P(d,"NO POWERPOINT OR REVEAL-DECK CHANGE. The overlay below is an editor "
+       "cue laid over the existing deck, not a slide edit.",bold=True,after=8))
+keep(P(d,"On the existing Complexity / Authority / Return slide, add one "
+       "restrained overlay:",after=5))
+for x in ["THE CAR TEST","     C — COMPLEXITY","     A — AUTHORITY",
+          "     R — RETURN"]:
+    keep(P(d,x,size=11,bold=True,color=GOLD,after=3))
+for x in ["clarify the acronym;","use existing brand typography and palette;",
+ "appear once;","avoid flashy animation;",
+ "do not obscure the underlying slide."]:
+    keep(P(d,"—  "+x,after=4))
+keep(P(d,"In the opening payoff, progressively reveal C / A / R with the full "
+       "words.",before=4,after=8,spacing=1.25))
+keep(P(d,"The manager-conversation questions later in the video remain "
+       "ordinary questions. They are NOT a second named framework.",bold=True,
+       after=8,spacing=1.25))
+
 H1(d,"Existing slide system",before=14)
 P(d,"Slides 1 to 11 are preserved unchanged. Slide 12 carries the authorised "
     "Watch Next title correction and nothing else.",after=8)
@@ -271,22 +296,22 @@ for x in ["use the direct Video 7 end-screen route once Video 7 is public;",
 keep(P(d,"Do not leave Subscribe as the only end-screen element.",bold=True,
        color=RED,before=4,after=8))
 compress(d)
-d.save(os.path.join(LF,"Video_6_EDITOR_ONLY_HIT_Brief_v2.0.docx"))
+d.save(os.path.join(LF,"Video_6_EDITOR_ONLY_HIT_Brief_v2.1.docx"))
 print("editor brief written")
 
 # The eleven working chapter lines, defined once and reused by the publishing
 # package, its reference section and the separate description-only document.
 CHAPTERS=[("00:00","Your Workload Can Grow Faster Than Your Career"),
- ("01:55","The 3 Tests for Real Growth"),
+ ("01:58","The CAR Test for Real Growth"),
  ("02:10","Test 1: Did the Problem Become More Complex?"),
- ("03:30","What Can You Do Now That You Couldn’t Before?"),
- ("04:15","Test 2: Did Your Authority Expand?"),
- ("05:20","Accountability Is Not Authority"),
- ("06:05","Test 3: What Did the Work Return?"),
- ("08:20","Read the Pattern"),
- ("09:45","What to Ask Before Your Scope Expands Again"),
+ ("03:32","What Can You Do Now That You Couldn’t Before?"),
+ ("04:19","Test 2: Did Your Authority Expand?"),
+ ("05:22","Accountability Is Not Authority"),
+ ("06:08","Test 3: What Did the Work Return?"),
+ ("08:21","Read the Pattern"),
+ ("09:50","What to Ask Before Your Scope Expands Again"),
  ("10:55","Capability Formation Field Kit"),
- ("11:20","How to Show Your Impact at Work When You Built It From Scratch")]
+ ("11:24","How to Show Your Impact at Work When You Built It From Scratch")]
 CHAPTER_LINES=["%s %s"%(t,c) for t,c in CHAPTERS]
 
 PRIMARY="are you growing or just being given more work"
@@ -301,8 +326,9 @@ TAGS=("are you growing or just being given more work, more responsibility at "
 DESC=[
  "More responsibility at work can look like career growth even when your "
  "workload is simply getting larger.",
- "In this video, I give you three tests for separating genuine development "
- "from a role that has simply learned to rely on you for more:",
+ "In this video, I use the CAR test—Complexity, Authority and Return—to "
+ "separate genuine development from a role that has simply learned to rely "
+ "on you for more:",
  "✨ Complexity — Did the problem become more difficult, or did the volume "
  "simply increase?",
  "✨ Authority — Did your ability to influence decisions expand with the "
@@ -323,13 +349,13 @@ DESC=[
  "LinkedIn:","https://www.linkedin.com/in/temidayo-afonja",
  "Substack:","https://temidayoafonja.substack.com","",
  "#CareerGrowth #CareerDevelopment #CapabilityFormation"]
-PINNED=["Which part of your role has grown the most recently?",
- "1. Complexity","2. Authority","3. Workload",
- "And what has that additional responsibility actually returned to your career?",
- "You do not need to share confidential details — I am more interested in the "
- "pattern you are seeing.",
- "If you want a fuller private read of what your current work is building, the "
- "Capability Formation Field Kit is here:", CTA_URL]
+PINNED=["Which part of the CAR test is clearest in your role right now?",
+ "C — Complexity","A — Authority","R — Return",
+ "And where is the gap between the responsibility you carry and what the work "
+ "is giving back to your career?",
+ "You do not need to share confidential details.",
+ "If you want a fuller private read of what your current work is building, "
+ "the Capability Formation Field Kit is here:", CTA_URL]
 
 EMOJI_NOTE=("The restrained emoji system is part of the approved standard: ✨ "
   "teaching points, 🧭 CTA, ⏱️ chapters, ▶️ Watch Next, 🔗 Connect and Explore. "
@@ -391,7 +417,7 @@ keep(P(d,NEXT,bold=True,after=5))
 keep(P(d,"Slide 12 now carries this title. The correction record is in the "
        "EDITOR ONLY brief.",size=10.5,color=DIM,after=8,spacing=1.25))
 compress(d)
-d.save(os.path.join(LF,"Video_6_Publishing_Package_HIT_v2.0.docx"))
+d.save(os.path.join(LF,"Video_6_Publishing_Package_HIT_v2.1.docx"))
 
 # ------------------------------- 4b. separate description-only document
 d=newdoc()
@@ -408,8 +434,8 @@ H1(d,"Watch next",before=14); keep(P(d,NEXT,bold=True,after=8))
 H1(d,"YouTube tag field",before=14)
 keep(P(d,"Paste into the tag field only.",size=10.5,italic=True,color=DIM,after=6))
 keep(P(d,TAGS,size=10.5,after=10))
-compress(d)
-DESC_DOC="/tmp/v6hit/Video_6_YouTube_Description_HIT.docx"
+compress(d, 1.14, 0.56)
+DESC_DOC="/tmp/v6p/Video_6_YouTube_Description_HIT.docx"
 d.save(DESC_DOC)
 print("publishing package and description-only document written")
 
@@ -450,7 +476,7 @@ SHORTS=[
    "than once.",
    "That taught me not to ask only:",
    "“How much more am I carrying?”",
-   "I ask three different questions.",
+   "I run it through the CAR test.",
    "Did the problem become harder?",
    "Did I gain more authority to influence the outcome?",
    "And what did the work return to my career?",
@@ -552,6 +578,14 @@ FILES=(["LONG_FORM/"+f for f in sorted(os.listdir(LF))]
 R=["VIDEO 6 — H.I.T. FINAL RECORDING PACKAGE","",
  "Title:             %s"%TITLE,
  "Thumbnail:         %s"%THUMB,
+ "Memorable device:  THE CAR TEST — Complexity, Authority, Return.",
+ "                   Named three times in the long-form script and once in",
+ "                   Short 3. No second acronym or framework is introduced.",
+ "                   The prior phrase \"three tests\" is superseded only where",
+ "                   the patch explicitly replaces it. The later",
+ "                   manager-conversation questions remain ordinary questions.",
+ "                   NO PowerPoint or reveal-deck change: the CAR overlay is",
+ "                   an editor cue over the existing deck.",
  "CTA:               %s"%CTA,
  "CTA URL:           %s"%CTA_URL,
  "Watch next:        %s"%NEXT,"",
@@ -573,19 +607,19 @@ R=["VIDEO 6 — H.I.T. FINAL RECORDING PACKAGE","",
  "live files:        12 main slides, 23 reveal-build frames.","",
  "-"*70,"","WHAT EACH FILE IS","",
  "LONG_FORM/","",
- "  Video6TeleprompterScriptwithslidemarkers_HIT_v2.0.docx",
- "  Video6TeleprompterScriptwithslidemarkers_HIT_v2.0.txt",
+ "  Video6TeleprompterScriptwithslidemarkers_HIT_v2.1.docx",
+ "  Video6TeleprompterScriptwithslidemarkers_HIT_v2.1.txt",
  "      Temidayo's recording copy. Spoken script in large text; slide markers",
  "      in tinted bands. The markers are not spoken.","",
- "  Video6ReadingScriptnomarkers_HIT_v2.0.docx",
- "  Video6ReadingScriptnomarkers_HIT_v2.0.txt",
+ "  Video6ReadingScriptnomarkers_HIT_v2.1.docx",
+ "  Video6ReadingScriptnomarkers_HIT_v2.1.txt",
  "      The same spoken words with the slide markers removed.","",
- "  Video_6_EDITOR_ONLY_HIT_Brief_v2.0.docx",
+ "  Video_6_EDITOR_ONLY_HIT_Brief_v2.1.docx",
  "      For the editor. The H.I.T. first-30-second plan, the Slide 12",
  "      correction record, editorial rhythm after 0:30, the 12-slide map,",
  "      the let-the-slides-carry principle, and the fact, proof and evidence",
  "      boundaries. Not for the teleprompter.","",
- "  Video_6_Publishing_Package_HIT_v2.0.docx",
+ "  Video_6_Publishing_Package_HIT_v2.1.docx",
  "      Title, thumbnail, search language, the copy-ready description with",
  "      its approved emoji system, working chapter estimates, pinned comment",
  "      and the tag field.","",
@@ -622,12 +656,12 @@ open(os.path.join(ROOT,"README_FINAL.txt"),"w").write("\n".join(R))
 
 # ------------------------------------------- 8. checksums and the master ZIP
 MANIFEST=[
- "LONG_FORM/Video6TeleprompterScriptwithslidemarkers_HIT_v2.0.docx",
- "LONG_FORM/Video6TeleprompterScriptwithslidemarkers_HIT_v2.0.txt",
- "LONG_FORM/Video6ReadingScriptnomarkers_HIT_v2.0.docx",
- "LONG_FORM/Video6ReadingScriptnomarkers_HIT_v2.0.txt",
- "LONG_FORM/Video_6_EDITOR_ONLY_HIT_Brief_v2.0.docx",
- "LONG_FORM/Video_6_Publishing_Package_HIT_v2.0.docx",
+ "LONG_FORM/Video6TeleprompterScriptwithslidemarkers_HIT_v2.1.docx",
+ "LONG_FORM/Video6TeleprompterScriptwithslidemarkers_HIT_v2.1.txt",
+ "LONG_FORM/Video6ReadingScriptnomarkers_HIT_v2.1.docx",
+ "LONG_FORM/Video6ReadingScriptnomarkers_HIT_v2.1.txt",
+ "LONG_FORM/Video_6_EDITOR_ONLY_HIT_Brief_v2.1.docx",
+ "LONG_FORM/Video_6_Publishing_Package_HIT_v2.1.docx",
  "SHORTS/Video_6_Short_1_Workload_Grows_Faster.docx",
  "SHORTS/Video_6_Short_2_Accountability_Not_Authority.docx",
  "SHORTS/Video_6_Short_3_More_Scope_Was_It_Growth.docx",
@@ -636,7 +670,7 @@ MANIFEST=[
  "README_FINAL.txt",
 ]
 SUMS="SHA256SUMS.txt"
-ZIP="/tmp/v6hit/Video_6_HIT_FINAL_Recording_and_Shorts_Package.zip"
+ZIP="/tmp/v6p/Video_6_HIT_FINAL_Recording_and_Shorts_Package.zip"
 
 def sha256(p):
     h=hashlib.sha256()
@@ -672,10 +706,10 @@ with zipfile.ZipFile(ZIP,"w",zipfile.ZIP_DEFLATED) as z:
 zsha=sha256(ZIP)
 open(ZIP+".sha256","w").write("%s  %s\n"%(zsha,os.path.basename(ZIP)))
 
-PROV="/tmp/v6hit/_source"
+PROV="/tmp/v6p/_source"
 shutil.rmtree(PROV,ignore_errors=True); os.makedirs(PROV)
 for f in ("script_text.py","build.py","qa.py","canonical_script.txt"):
-    src="/tmp/v6hit/"+f
+    src="/tmp/v6p/"+f
     if os.path.isfile(src): shutil.copy2(src, os.path.join(PROV,f))
 CANON_SRC=("/root/.claude/uploads/f121668d-e262-5eb8-9b22-0eaa1006a361/"
            "ca238dfe-Video_6_Code_Prompt_HIT_Final.txt")

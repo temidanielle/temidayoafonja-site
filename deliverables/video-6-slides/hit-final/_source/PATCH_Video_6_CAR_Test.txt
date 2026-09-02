@@ -1,0 +1,195 @@
+VIDEO 6 — FINAL MEMORABLE-SHORTHAND PATCH
+
+Current locked title:
+Are You Growing—or Just Being Given More Work?
+
+Thumbnail:
+MORE WORK ≠ GROWTH
+
+Primary CTA remains:
+Capability Formation Field Kit
+https://temidayoafonja.com/fieldkit
+
+Watch next remains:
+How to Show Your Impact at Work When You Built It From Scratch
+
+The video’s one memorable device is now:
+
+THE CAR TEST
+
+C — COMPLEXITY
+A — AUTHORITY
+R — RETURN
+
+Do not add another acronym or framework.
+Do not change the title, thumbnail, factual proof, CTA, Watch Next, or broader teaching.
+
+==================================================
+LONG-FORM SCRIPT — THREE EXACT REPLACEMENTS
+==================================================
+
+Use SOURCE_Video_6_Code_Prompt_HIT_Final.txt as the canonical pre-patch source.
+
+REPLACEMENT 1 — OPENING PAYOFF
+
+FROM:
+
+“Before you call more responsibility growth, check three things: did the problem get more complex, did your authority expand, and what did the work return to your career?”
+
+TO:
+
+“Before you call more responsibility growth, run it through the CAR test: did the problem get more complex, did your authority expand, and what did the work return to your career?”
+
+REPLACEMENT 2 — FRAMEWORK INTRODUCTION
+
+FROM:
+
+“So use three tests.
+
+Complexity.
+
+Authority.
+
+Return.”
+
+TO:
+
+“I call this the CAR test: Complexity, Authority and Return.”
+
+Preserve the three questions that immediately follow.
+
+REPLACEMENT 3 — PATTERN READ
+
+FROM:
+
+“Now put the three tests together.”
+
+TO:
+
+“Now put the CAR test together.”
+
+Do not alter any other long-form spoken wording.
+
+==================================================
+SHORT 3 — ONE EXACT REPLACEMENT
+==================================================
+
+In:
+
+Video_6_Short_3_More_Scope_Was_It_Growth.docx
+
+replace:
+
+“I ask three different questions.”
+
+with:
+
+“I run it through the CAR test.”
+
+Keep all other Short 3 wording unchanged.
+
+Keep Shorts 1, 2 and 4 unchanged.
+
+==================================================
+EDITOR-ONLY VISUAL DIRECTION
+==================================================
+
+Do not modify the PowerPoint or reveal deck.
+
+On the existing Complexity / Authority / Return slide, add a restrained editor cue:
+
+THE CAR TEST
+
+C — COMPLEXITY
+A — AUTHORITY
+R — RETURN
+
+The overlay should:
+- clarify the acronym;
+- use existing brand typography and palette;
+- appear once;
+- avoid flashy animation;
+- not obscure the underlying slide.
+
+In the opening payoff, progressively reveal C / A / R with the full words.
+
+==================================================
+PUBLISHING PACKAGE AND DESCRIPTION-ONLY DOCX
+==================================================
+
+Replace:
+
+“In this video, I give you three tests for separating genuine development from a role that has simply learned to rely on you for more:”
+
+with:
+
+“In this video, I use the CAR test—Complexity, Authority and Return—to separate genuine development from a role that has simply learned to rely on you for more:”
+
+Keep the three approved ✨ lines unchanged.
+
+Replace the working chapter title:
+
+The 3 Tests for Real Growth
+
+with:
+
+The CAR Test for Real Growth
+
+Use this pinned comment:
+
+Which part of the CAR test is clearest in your role right now?
+
+C — Complexity
+A — Authority
+R — Return
+
+And where is the gap between the responsibility you carry and what the work is giving back to your career?
+
+You do not need to share confidential details.
+
+If you want a fuller private read of what your current work is building, the Capability Formation Field Kit is here:
+
+https://temidayoafonja.com/fieldkit
+
+The public-copy block in the publishing package and separate Video_6_YouTube_Description_HIT.docx must match exactly.
+
+Recalculate working timestamps if the patched spoken length shifts.
+
+==================================================
+README / STANDARDS
+==================================================
+
+Record:
+
+Memorable teaching device:
+The CAR test — Complexity, Authority, Return.
+
+The prior phrase “three tests” is superseded only where the patch explicitly replaces it.
+
+The existing manager-conversation questions later in the video remain ordinary questions and are not a second named framework.
+
+==================================================
+QA
+==================================================
+
+Confirm:
+
+- only the three authorized long-form replacements changed;
+- only the one authorized Short 3 line changed;
+- title, thumbnail, CTA and Watch Next unchanged;
+- no PowerPoint or reveal deck changed;
+- editor overlay direction present;
+- CAR appears naturally two or three times in long-form;
+- CAR means Complexity, Authority, Return every time;
+- no second mnemonic introduced;
+- factual proof boundaries unchanged;
+- Field Kit remains the sole CTA;
+- four Shorts remain;
+- public description and description-only public copy identical;
+- working chapter title updated;
+- no [INSERT] placeholder;
+- canonical source comparison passes under exact patch-diff rules.
+
+If all pass, mark:
+
+VIDEO 6 — FINAL + LOCKED FOR RECORDING

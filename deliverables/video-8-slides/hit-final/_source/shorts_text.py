@@ -1,5 +1,10 @@
 # -*- coding: utf-8 -*-
-"""Video 8 Short recording copy, extracted verbatim from the canonical file."""
+"""Video 8 Short recording copy, extracted verbatim from the canonical
+SOURCE, with the single authorised Short 2 replacement applied:
+  "Before you change industries, separate three things:"
+  -> "Before you change industries, use the three Cs:"
+Shorts 1, 3 and 4 are untouched.
+"""
 
 SHORTS = [('Video_8_Short_1_New_Industry_Not_Starting_Over.docx',
   'Recognition',
@@ -22,7 +27,7 @@ SHORTS = [('Video_8_Short_1_New_Industry_Not_Starting_Over.docx',
   'Distinction',
   'Stop calling everything a transferable skill.',
   ['Stop calling everything a transferable skill.',
-   'Before you change industries, separate three things:',
+   'Before you change industries, use the three Cs:',
    'Capability.',
    'Context.',
    'Credential.',

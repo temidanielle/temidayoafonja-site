@@ -6,7 +6,7 @@ from the Videos 1-7 packages; only wording, metadata and the manifest
 are Video 8 specific.
 """
 import os, sys, shutil, zipfile, hashlib
-sys.path.insert(0, "/tmp/v8hit")
+sys.path.insert(0, "/tmp/v8p")
 from script_text import LINES, SPOKEN, MARKERS
 from docx import Document
 from docx.shared import Pt, Inches, RGBColor
@@ -18,7 +18,7 @@ DIM=RGBColor(0x5A,0x6B,0x82); INK=RGBColor(0x1A,0x1A,0x1A)
 RED=RGBColor(0x9B,0x2C,0x10)
 BAND_NAVY="E8EDF4"; BAND_CREAM="F3F0E8"
 
-ROOT="/tmp/v8hit/Video_8_HIT_FINAL"
+ROOT="/tmp/v8p/Video_8_HIT_FINAL"
 LF=os.path.join(ROOT,"LONG_FORM"); SH=os.path.join(ROOT,"SHORTS")
 shutil.rmtree(ROOT, ignore_errors=True)
 os.makedirs(LF); os.makedirs(SH)
@@ -117,10 +117,10 @@ def pairlist(d, items, indent="—  ", gap="        ", after=4, budget=78):
 
 
 # ------------------------------------------------- 1. teleprompter DOCX + TXT
-TEL_DOCX="Video8TeleprompterScriptwithslidemarkers_HIT_v2.0.docx"
-TEL_TXT ="Video8TeleprompterScriptwithslidemarkers_HIT_v2.0.txt"
-RD_DOCX ="Video8ReadingScriptnomarkers_HIT_v2.0.docx"
-RD_TXT  ="Video8ReadingScriptnomarkers_HIT_v2.0.txt"
+TEL_DOCX="Video8TeleprompterScriptwithslidemarkers_HIT_v2.1.docx"
+TEL_TXT ="Video8TeleprompterScriptwithslidemarkers_HIT_v2.1.txt"
+RD_DOCX ="Video8ReadingScriptnomarkers_HIT_v2.1.docx"
+RD_TXT  ="Video8ReadingScriptnomarkers_HIT_v2.1.txt"
 
 d=newdoc(True)
 head(d,TITLE,"Video 8  ·  Teleprompter script with slide markers",
@@ -194,6 +194,32 @@ for k,v in (("Title",TITLE),("Thumbnail",THUMB),("CTA",CTA),
              "everything. It makes you new to a context."),
             ("Credibility boundary","Not everything transfers.")):
     keep(P(d,"%-24s %s"%(k+":",v),size=11,after=5))
+
+H1(d,"The 3 Cs — memorable teaching device",before=14)
+p=P(d,"This video has ONE memorable device: THE 3 Cs OF AN INDUSTRY CHANGE — "
+     "Capability, Context, Credential. Do not add a second acronym or named "
+     "framework.",size=11,bold=True,color=RED,after=8,spacing=1.25)
+shade(p,BAND_CREAM); keep(p)
+keep(P(d,"Mapping:",after=5))
+for x in ["Capability  →  What travels","Context     →  What changes",
+          "Credential  →  What I must earn"]:
+    keep(P(d,x,size=11,bold=True,color=GOLD,after=3))
+keep(P(d,"The three-column exercise is the APPLICATION of the same mnemonic, "
+       "not a second framework.",bold=True,before=4,after=6,spacing=1.25))
+keep(P(d,"The spoken script names the three Cs three times: when the method is "
+       "named, when it is applied, and when it closes. They always mean "
+       "Capability, Context and Credential.",after=6,spacing=1.25))
+keep(P(d,"NO POWERPOINT OR REVEAL-DECK CHANGE. The cue below is an editor "
+       "overlay on the existing deck, not a slide edit.",bold=True,after=6))
+keep(P(d,"On the existing Capability / Context / Credential slide, add one "
+       "restrained cue:",after=5))
+for x in ["THE 3 Cs OF AN INDUSTRY CHANGE","     C — CAPABILITY",
+          "     C — CONTEXT","     C — CREDENTIAL"]:
+    keep(P(d,x,size=11,bold=True,color=GOLD,after=3))
+keep(P(d,"Use one clean visual card or initial-letter emphasis. Do not animate "
+       "each C excessively, add another mnemonic, obscure the existing slide, "
+       "change Slide 5's already-approved context correction, or change the "
+       "intentional Slide 12 playlist end card.",before=4,after=8,spacing=1.25))
 
 H1(d,"Script marker → slide number → live slide title",before=14)
 keep(P(d,"The twelve [SLIDE: ...] markers map to the twelve deck slides BY "
@@ -323,7 +349,7 @@ keep(P(d,"Watch next: %s  (Video 9)"%NEXT,bold=True,after=5))
 keep(P(d,"Do not leave Subscribe as the only end-screen element.",bold=True,
        color=RED,before=4,after=8))
 compress(d, 1.14, 0.56)
-d.save(os.path.join(LF,"Video_8_EDITOR_ONLY_HIT_Brief_v2.0.docx"))
+d.save(os.path.join(LF,"Video_8_EDITOR_ONLY_HIT_Brief_v2.1.docx"))
 print("editor brief written")
 
 # The twelve working chapter lines, defined once and reused by the publishing
@@ -332,16 +358,16 @@ print("editor brief written")
 # first sits at 00:00 and the rest at markers 2 to 12. They are estimates.
 CHAPTERS=[("00:00","New Industry Does Not Mean Starting Over"),
  ("01:27","What Actually Changes"),
- ("02:18","Capability, Context and Credential"),
- ("02:25","What Travels"),
- ("03:12","What Must Be Relearned"),
- ("04:06","What Must Be Earned"),
- ("04:53","Start From the Destination"),
- ("05:49","Translate, Do Not Recite"),
- ("06:48","Build Bridge Evidence"),
- ("08:15","The Three-Column Test"),
- ("09:47","Capability Formation Field Kit"),
- ("10:23","What to Do Before a Layoff Happens")]
+ ("02:18","The 3 Cs: Capability, Context and Credential"),
+ ("02:30","What Travels"),
+ ("03:18","What Must Be Relearned"),
+ ("04:12","What Must Be Earned"),
+ ("04:58","Start From the Destination"),
+ ("05:54","Translate, Do Not Recite"),
+ ("06:54","Build Bridge Evidence"),
+ ("08:20","The Three-Column Test"),
+ ("09:55","Capability Formation Field Kit"),
+ ("10:31","What to Do Before a Layoff Happens")]
 CHAPTER_LINES=["%s %s"%(t,c) for t,c in CHAPTERS]
 
 PRIMARY="how to switch industries without starting over"
@@ -357,8 +383,9 @@ TAGS=("how to switch industries without starting over, how to switch "
 DESC=[
  "Changing industries does not mean every part of your experience disappears "
  "— but it also does not mean everything transfers.",
- "In this video, I show you how to separate three different problems before "
- "an industry move:",
+ "In this video, I use the three Cs of an industry change—Capability, "
+ "Context and Credential—to separate three different problems before you "
+ "move:",
  "✨ What travels — the judgment, decisions and patterns that remain useful "
  "when the setting changes.",
  "✨ What changes — the language, stakeholders, incentives, regulation, "
@@ -387,9 +414,11 @@ DESC=[
  "LinkedIn:","https://www.linkedin.com/in/temidayo-afonja",
  "Substack:","https://temidayoafonja.substack.com","",
  "#CareerChange #CareerGrowth #CapabilityFormation"]
-PINNED=["If you were changing industries tomorrow, which column would be "
- "hardest for you?",
- "1. What travels","2. What changes","3. What I must earn",
+PINNED=["Which of the three Cs is the biggest gap in the industry you want "
+ "to enter?",
+ "1. Capability — what travels",
+ "2. Context — what changes",
+ "3. Credential — what I must earn",
  "You do not need to share confidential details.",
  "The useful exercise is to separate what your experience genuinely supports "
  "from what the new context still requires you to learn.",
@@ -458,7 +487,7 @@ keep(P(d,"Live slide 12 is the CONTINUE THE SERIES card and carries no video "
        "title. See the EDITOR ONLY brief.",size=10.5,color=DIM,after=8,
        spacing=1.25))
 compress(d)
-d.save(os.path.join(LF,"Video_8_Publishing_Package_HIT_v2.0.docx"))
+d.save(os.path.join(LF,"Video_8_Publishing_Package_HIT_v2.1.docx"))
 
 # ------------------------------- 3b. separate description-only document
 d=newdoc()
@@ -476,7 +505,7 @@ H1(d,"YouTube tag field",before=14)
 keep(P(d,"Paste into the tag field only.",size=10.5,italic=True,color=DIM,after=6))
 keep(P(d,TAGS,size=10.5,after=10))
 compress(d)
-DESC_DOC="/tmp/v8hit/Video_8_YouTube_Description_HIT.docx"
+DESC_DOC="/tmp/v8p/Video_8_YouTube_Description_HIT.docx"
 d.save(DESC_DOC)
 print("publishing package and description-only document written")
 
@@ -555,7 +584,14 @@ R=["VIDEO 8 — H.I.T. FINAL RECORDING PACKAGE","",
  "CTA:               %s"%CTA,
  "CTA URL:           %s"%CTA_URL,
  "Watch next:        %s"%NEXT,"",
- "Long-form:         Revised under H.I.T.","",
+ "Long-form:         Revised under H.I.T.",
+ "Memorable device:  THE 3 Cs OF AN INDUSTRY CHANGE — Capability, Context,",
+ "                   Credential. Capability maps to what travels, Context to",
+ "                   what changes, Credential to what must be earned. Named",
+ "                   three times in the long-form script and once in Short 2.",
+ "                   The three-column exercise is the application of the same",
+ "                   mnemonic, not a second framework. NO PowerPoint or",
+ "                   reveal-deck change: the 3 Cs cue is an editor overlay.","",
  "Approved proof:",
  "  - roughly eighteen-year cross-context career",
  "  - eight industries/sectors",
@@ -597,12 +633,12 @@ R=["VIDEO 8 — H.I.T. FINAL RECORDING PACKAGE","",
  "  "+RD_DOCX,
  "  "+RD_TXT,
  "      The same spoken words with the slide markers removed.","",
- "  Video_8_EDITOR_ONLY_HIT_Brief_v2.0.docx",
+ "  Video_8_EDITOR_ONLY_HIT_Brief_v2.1.docx",
  "      For the editor. Locked metadata, the script-marker to slide-number",
  "      mapping table, the Slide 5 correction record and the Slide 12",
  "      question, the H.I.T. first-30-second plan, the editing principle and",
  "      the factual boundary. Not for the teleprompter.","",
- "  Video_8_Publishing_Package_HIT_v2.0.docx",
+ "  Video_8_Publishing_Package_HIT_v2.1.docx",
  "      Title, thumbnail, search language, the copy-ready description with",
  "      its approved emoji system, working chapter estimates, pinned comment",
  "      and the tag field.","",
@@ -642,8 +678,8 @@ MANIFEST=[
  "LONG_FORM/"+TEL_TXT,
  "LONG_FORM/"+RD_DOCX,
  "LONG_FORM/"+RD_TXT,
- "LONG_FORM/Video_8_EDITOR_ONLY_HIT_Brief_v2.0.docx",
- "LONG_FORM/Video_8_Publishing_Package_HIT_v2.0.docx",
+ "LONG_FORM/Video_8_EDITOR_ONLY_HIT_Brief_v2.1.docx",
+ "LONG_FORM/Video_8_Publishing_Package_HIT_v2.1.docx",
  "SHORTS/Video_8_Short_1_New_Industry_Not_Starting_Over.docx",
  "SHORTS/Video_8_Short_2_Stop_Calling_Everything_Transferable.docx",
  "SHORTS/Video_8_Short_3_Not_Everything_Travels.docx",
@@ -652,7 +688,7 @@ MANIFEST=[
  "README_FINAL.txt",
 ]
 SUMS="SHA256SUMS.txt"
-ZIP="/tmp/v8hit/"+ZIPNAME
+ZIP="/tmp/v8p/"+ZIPNAME
 
 def sha256(p):
     h=hashlib.sha256()
@@ -688,11 +724,11 @@ with zipfile.ZipFile(ZIP,"w",zipfile.ZIP_DEFLATED) as z:
 zsha=sha256(ZIP)
 open(ZIP+".sha256","w").write("%s  %s\n"%(zsha,os.path.basename(ZIP)))
 
-PROV="/tmp/v8hit/_source"
+PROV="/tmp/v8p/_source"
 shutil.rmtree(PROV,ignore_errors=True); os.makedirs(PROV)
 for f in ("script_text.py","shorts_text.py","build.py","qa.py",
           "verify_canonical.py","fix_slide5.py"):
-    src="/tmp/v8hit/"+f
+    src="/tmp/v8p/"+f
     if os.path.isfile(src): shutil.copy2(src, os.path.join(PROV,f))
 CANON_SRC=("/root/.claude/uploads/f121668d-e262-5eb8-9b22-0eaa1006a361/"
            "7c400758-Video_8_Code_Prompt_HIT_Final.txt")

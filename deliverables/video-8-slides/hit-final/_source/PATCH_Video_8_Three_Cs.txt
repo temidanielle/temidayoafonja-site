@@ -1,0 +1,212 @@
+VIDEO 8 — FINAL MEMORABLE-SHORTHAND PATCH
+
+Current locked title:
+How to Switch Industries Without Starting Over
+
+Thumbnail:
+YOUR EXPERIENCE STILL COUNTS
+
+Primary CTA remains:
+Capability Formation Field Kit
+https://temidayoafonja.com/fieldkit
+
+Watch next remains:
+What to Do Before a Layoff Happens
+
+The video’s one memorable device is now:
+
+THE 3 Cs OF AN INDUSTRY CHANGE
+
+CAPABILITY
+CONTEXT
+CREDENTIAL
+
+Do not add another acronym or named framework.
+Do not change the title, thumbnail, H.I.T. proof, CISM boundary, CTA, Watch Next, or broader teaching.
+
+==================================================
+LONG-FORM SCRIPT — THREE EXACT REPLACEMENTS
+==================================================
+
+Use SOURCE_Video_8_Code_Prompt_HIT_Final.txt as the canonical pre-patch source.
+
+REPLACEMENT 1 — NAME THE METHOD
+
+FROM:
+
+“Capability. Context. Credential.
+
+They are not the same problem, so they should not get the same solution.”
+
+TO:
+
+“I think of these as the three Cs of an industry change: Capability, Context and Credential.
+
+They are not the same problem, so they should not get the same solution.”
+
+REPLACEMENT 2 — APPLY THE METHOD
+
+FROM:
+
+“Here is the exercise I want you to do.
+
+One page.
+
+Three columns.”
+
+TO:
+
+“Here is how you apply the three Cs.
+
+One page.
+
+Three columns.”
+
+REPLACEMENT 3 — CLOSE THE METHOD
+
+FROM:
+
+“That is the balance.”
+
+TO:
+
+“That is the balance the three Cs are meant to protect.”
+
+Do not alter any other long-form spoken wording.
+
+==================================================
+SHORT 2 — ONE EXACT REPLACEMENT
+==================================================
+
+In:
+
+Video_8_Short_2_Stop_Calling_Everything_Transferable.docx
+
+replace:
+
+“Before you change industries, separate three things:”
+
+with:
+
+“Before you change industries, use the three Cs:”
+
+Keep:
+
+Capability.
+Context.
+Credential.
+
+and all other Short 2 wording unchanged.
+
+Keep Shorts 1, 3 and 4 unchanged.
+
+==================================================
+EDITOR-ONLY VISUAL DIRECTION
+==================================================
+
+Do not modify the PowerPoint or reveal deck.
+
+On the existing Capability / Context / Credential slide, add a restrained editor cue:
+
+THE 3 Cs OF AN INDUSTRY CHANGE
+
+C — CAPABILITY
+C — CONTEXT
+C — CREDENTIAL
+
+Use one clean visual card or initial-letter emphasis.
+
+Do not:
+- animate each C excessively;
+- add another mnemonic;
+- obscure the existing slide;
+- change Slide 5’s already-approved context correction;
+- change the intentional Slide 12 playlist end card.
+
+==================================================
+PUBLISHING PACKAGE AND DESCRIPTION-ONLY DOCX
+==================================================
+
+Replace:
+
+“In this video, I show you how to separate three different problems before an industry move:”
+
+with:
+
+“In this video, I use the three Cs of an industry change—Capability, Context and Credential—to separate three different problems before you move:”
+
+Keep the three approved ✨ lines that follow.
+
+Replace the working chapter title:
+
+Capability, Context and Credential
+
+with:
+
+The 3 Cs: Capability, Context and Credential
+
+Use this pinned comment:
+
+Which of the three Cs is the biggest gap in the industry you want to enter?
+
+1. Capability — what travels
+2. Context — what changes
+3. Credential — what I must earn
+
+You do not need to share confidential details.
+
+The useful exercise is to separate what your experience genuinely supports from what the new context still requires you to learn.
+
+If you want a fuller private read of what your current work has built, the Capability Formation Field Kit is here:
+
+https://temidayoafonja.com/fieldkit
+
+The public-copy block in the publishing package and separate Video_8_YouTube_Description_HIT.docx must match exactly.
+
+Recalculate working timestamps if the patched spoken length shifts.
+
+==================================================
+README / STANDARDS
+==================================================
+
+Record:
+
+Memorable teaching device:
+The 3 Cs of an industry change — Capability, Context, Credential.
+
+Clarify the mapping:
+
+Capability → What travels
+Context → What changes
+Credential → What I must earn
+
+The three-column exercise is the application of the same mnemonic, not a second framework.
+
+==================================================
+QA
+==================================================
+
+Confirm:
+
+- only the three authorized long-form replacements changed;
+- only the one authorized Short 2 line changed;
+- title, thumbnail, CTA and Watch Next unchanged;
+- no PowerPoint or reveal deck changed;
+- editor cue present;
+- “three Cs” appears naturally two or three times in long-form;
+- the Cs always mean Capability, Context, Credential;
+- no second mnemonic introduced;
+- CISM first-attempt non-pass wording unchanged;
+- no claim that all experience transfers;
+- Field Kit remains sole CTA;
+- Slide 5 correction remains intact;
+- Slide 12 remains the intentional series / playlist end card;
+- four Shorts remain;
+- public description and description-only public copy identical;
+- working chapter title updated;
+- no [INSERT] placeholder;
+- canonical source comparison passes under exact patch-diff rules.
+
+If all pass, mark:
+
+VIDEO 8 — FINAL + LOCKED FOR RECORDING

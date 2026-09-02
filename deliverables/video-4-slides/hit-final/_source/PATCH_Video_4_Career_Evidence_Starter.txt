@@ -1,0 +1,208 @@
+VIDEO 4 — FINAL CTA PATCH TO FREE CAREER EVIDENCE STARTER
+
+Current locked title:
+How to Explain Your Career Change
+
+Thumbnail:
+YOUR CAREER MAKES SENSE
+
+Existing single teaching device:
+The three-sentence career explanation.
+
+Do NOT add the 3 Cs to Video 4.
+Do NOT change the opening, personal evidence, three-part method, honesty test, title, thumbnail, Shorts teaching, or Watch Next route.
+
+Current Watch Next:
+Should I Make an Internal Move? 3 Questions to Decide
+
+==================================================
+NEW PRIMARY CTA
+==================================================
+
+Replace Keep the Proof as Video 4’s primary CTA with:
+
+FREE CAREER EVIDENCE STARTER
+
+Public URL:
+https://temidayoafonja.com/career-evidence-starter
+
+Public descriptor:
+FREE CAREER ACCOMPLISHMENT TRACKER
+
+Promise:
+Turn one accomplishment into proof you can use in a performance review, interview, internal move or career pivot.
+
+Outcome:
+One portable Proof Line.
+
+Expected time:
+about 10 to 15 focused minutes.
+
+Use the landing-page URL publicly.
+Do not expose the direct PDF URL.
+
+Do not stack:
+- Career Evidence Starter;
+- Keep the Proof;
+- Field Kit;
+- Career Decision Evidence Check;
+- another offer.
+
+==================================================
+LONG-FORM SCRIPT — EXACT REPLACEMENT
+==================================================
+
+Use SOURCE_Video_4_Code_Prompt_HIT_Final.txt as the canonical pre-patch source.
+
+Replace this marker:
+
+[SLIDE: Keep the Proof]
+
+with:
+
+[SLIDE: Career Evidence Starter]
+
+Replace ONLY the existing Keep the Proof spoken CTA block:
+
+“And that is where Keep the Proof fits.
+
+If your career makes sense but the examples are hard to retrieve, Keep the Proof is a 60-minute career evidence system for capturing your work, your evidence and what that work shows while the context is still clear.
+
+It is not a tool for inventing a stronger story.
+
+It helps you preserve the proof behind the story you can actually support.
+
+Use only your own recollection and information you are permitted to retain.
+
+Do not take confidential, proprietary, customer, employee or employer-owned material.
+
+You can find Keep the Proof at temidayoafonja.com/keep-the-proof.”
+
+with this exact spoken block:
+
+“If you want to try this on one real accomplishment, I made a free Career Evidence Starter.
+
+Set aside about 10 to 15 focused minutes and you will leave with one portable Proof Line.
+
+I’ve linked it below.”
+
+Then continue with the existing:
+
+[SLIDE: Watch Next]
+
+Preserve every other spoken paragraph and punctuation mark exactly.
+
+==================================================
+CTA SLIDE — NARROW TEXT-ONLY CORRECTION
+==================================================
+
+Inspect the live Video 4 deck and reveal deck.
+
+The CTA slide is historically Slide 10.
+
+Replace only its Keep the Proof CTA text with:
+
+FREE CAREER EVIDENCE STARTER
+
+ONE ACCOMPLISHMENT → ONE PORTABLE PROOF LINE
+
+temidayoafonja.com/career-evidence-starter
+
+Preserve:
+- slide count;
+- reveal count;
+- design;
+- typography family;
+- colors;
+- layout;
+- end-screen structure;
+- Slide 11 Watch Next.
+
+Update only the reveal frame(s) that reproduce the CTA slide.
+
+If line breaks need adjustment, measure and render before applying.
+
+Do not add a product mockup to the PowerPoint.
+
+In the EDITOR ONLY brief, specify that the real Career Evidence Starter artifact is the preferred proof visual:
+- Starter cover in front;
+- Portable Proof Line page visible behind;
+- warm cream background.
+
+==================================================
+PUBLISHING PACKAGE AND DESCRIPTION-ONLY DOCX
+==================================================
+
+Replace the public CTA section with:
+
+🧭 FREE CAREER EVIDENCE STARTER
+
+Turn one accomplishment into a portable Proof Line you can use in a performance review, interview, internal move or career pivot:
+
+https://temidayoafonja.com/career-evidence-starter
+
+Preserve the approved public emoji system.
+
+Replace the working chapter title:
+
+Keep the Proof Behind Your Story
+
+with:
+
+Free Career Evidence Starter
+
+Keep timestamps marked as working estimates and recalculate them from the patched script if needed.
+
+Use this pinned comment:
+
+What part of your career looks disconnected from the outside—but taught you something you still use?
+
+Try completing this sentence:
+
+“Across my career, I keep being asked to…”
+
+Then ask yourself: what evidence sits behind that verb?
+
+If you want to try this on one accomplishment, the Career Evidence Starter is free.
+
+It takes about 10 to 15 focused minutes and helps you turn one piece of work into a portable Proof Line.
+
+https://temidayoafonja.com/career-evidence-starter
+
+The public-copy block in the publishing package and separate Video_4_YouTube_Description_HIT.docx must match exactly.
+
+==================================================
+SHORTS
+==================================================
+
+Keep all four Short recording scripts unchanged.
+
+Keep Video 4 as their Related Video.
+
+Do not insert the 3 Cs or a competing resource CTA into the Shorts.
+
+==================================================
+QA
+==================================================
+
+Confirm:
+
+- only the authorized CTA script block changed;
+- exactly 11 slide markers remain;
+- title and thumbnail unchanged;
+- Career Evidence Starter is the sole primary CTA;
+- Keep the Proof no longer appears as Video 4’s CTA;
+- no Field Kit or Decision Check CTA leak;
+- no direct PDF URL;
+- three-sentence framework unchanged;
+- all factual boundaries unchanged;
+- four Short recording scripts unchanged;
+- publishing and description-only public copy identical;
+- no [INSERT] placeholder;
+- CTA slide and corresponding reveal frame(s) corrected;
+- all other slides/reveals unchanged;
+- canonical source comparison passes under an exact patch-diff rule.
+
+If all pass, mark:
+
+VIDEO 4 — FINAL + LOCKED FOR RECORDING

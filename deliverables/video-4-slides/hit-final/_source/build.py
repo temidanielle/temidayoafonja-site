@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Build the Video 4 H.I.T. final recording and Shorts package."""
 import os, sys, shutil, zipfile, hashlib
-sys.path.insert(0, "/tmp/v4hit")
+sys.path.insert(0, "/tmp/v4p")
 from script_text import LINES, SPOKEN, MARKERS
 from docx import Document
 from docx.shared import Pt, Inches, RGBColor
@@ -13,16 +13,20 @@ DIM=RGBColor(0x5A,0x6B,0x82); INK=RGBColor(0x1A,0x1A,0x1A)
 RED=RGBColor(0x9B,0x2C,0x10)
 BAND_NAVY="E8EDF4"; BAND_CREAM="F3F0E8"
 
-ROOT="/tmp/v4hit/Video_4_HIT_FINAL"
+ROOT="/tmp/v4p/Video_4_HIT_FINAL"
 LF=os.path.join(ROOT,"LONG_FORM"); SH=os.path.join(ROOT,"SHORTS")
 shutil.rmtree(ROOT, ignore_errors=True)
 os.makedirs(LF); os.makedirs(SH)
 
 TITLE="How to Explain Your Career Change"
 THUMB="YOUR CAREER MAKES SENSE"
-CTA="Keep the Proof — A 60-Minute Career Evidence System"
-CTA_SHORT="Keep the Proof"
-CTA_URL="https://temidayoafonja.com/keep-the-proof"
+CTA="Free Career Evidence Starter"
+CTA_SHORT="Career Evidence Starter"
+CTA_URL="https://temidayoafonja.com/career-evidence-starter"
+CTA_DESCRIPTOR="FREE CAREER ACCOMPLISHMENT TRACKER"
+CTA_PROMISE=("Turn one accomplishment into proof you can use in a "
+             "performance review, interview, internal move or career pivot.")
+OLD_CTA="Keep the Proof"
 NEXT="Should I Make an Internal Move? 3 Questions to Decide"
 
 def newdoc(teleprompter=False):
@@ -120,7 +124,7 @@ for line in LINES:
         shade(p,BAND_NAVY); bar(p,"0F2346"); keep(p,True)
     else:
         keep(P(d,line,size=13.5,color=INK,after=12,spacing=1.5))
-d.save(os.path.join(LF,"Video4TeleprompterScriptwithslidemarkers_HIT_v2.0.docx"))
+d.save(os.path.join(LF,"Video4TeleprompterScriptwithslidemarkers_HIT_v2.1.docx"))
 
 tel=[TITLE,"Video 4  ·  Teleprompter script with slide markers",""]
 for line in LINES:
@@ -128,7 +132,7 @@ for line in LINES:
         tel += ["", "SLIDE  —  %s"%line[len("[SLIDE:"):-1].strip(), ""]
     else:
         tel += [line, ""]
-open(os.path.join(LF,"Video4TeleprompterScriptwithslidemarkers_HIT_v2.0.txt"),
+open(os.path.join(LF,"Video4TeleprompterScriptwithslidemarkers_HIT_v2.1.txt"),
      "w").write("\n".join(tel).strip()+"\n")
 
 # ------------------------------------------------- 2. reading script DOCX+TXT
@@ -138,8 +142,8 @@ head(d,TITLE,"Video 4  ·  Reading script, no markers",
      "directions.")
 for line in SPOKEN:
     keep(P(d,line,size=13.5,color=INK,after=12,spacing=1.5))
-d.save(os.path.join(LF,"Video4ReadingScriptnomarkers_HIT_v2.0.docx"))
-open(os.path.join(LF,"Video4ReadingScriptnomarkers_HIT_v2.0.txt"),
+d.save(os.path.join(LF,"Video4ReadingScriptnomarkers_HIT_v2.1.docx"))
+open(os.path.join(LF,"Video4ReadingScriptnomarkers_HIT_v2.1.txt"),
      "w").write("\n\n".join(SPOKEN)+"\n")
 print("long-form scripts written")
 
@@ -238,7 +242,8 @@ for n,job in enumerate(["Career Path","Chronology / Portability",
  "1 — Name the Chapters Briefly","2 — Find the Repeated Work",
  "Look Beneath the Nouns","3 — Explain the Direction",
  "Three-Sentence Structure","Do Not Invent a Perfect Plan",
- "Explanation Test","Keep the Proof","Watch Next"],1):
+ "Explanation Test","Career Evidence Starter  (CTA corrected)",
+ "Watch Next"],1):
     keep(P(d,"Slide %-3d %s"%(n,job),size=10.5,after=3))
 
 H1(d,"Let the visual carry information",before=14)
@@ -265,10 +270,44 @@ keep(P(d,"Evidence retention means Temidayo's own recollection and "
        "encourages taking confidential, proprietary, customer, employee or "
        "employer-owned material.",before=8,after=8,spacing=1.25))
 
+H1(d,"CTA slide correction — applied",before=14)
+p=P(d,"AUTHORISED AND APPLIED. The %s CTA is SUPERSEDED for this video by the "
+     "free Career Evidence Starter. Slide 10 and reveal frame 25 carry the new "
+     "CTA. Text only; slide and reveal counts, design, typography family, "
+     "colours, layout and the Slide 11 Watch Next card are unchanged."%OLD_CTA,
+     size=11,bold=True,color=RED,after=8,spacing=1.25)
+shade(p,BAND_CREAM); keep(p)
+for frm,to in (("KEEP THE PROOF","FREE CAREER EVIDENCE STARTER"),
+               ("A 60-Minute Career Evidence System",
+                "ONE ACCOMPLISHMENT → ONE PORTABLE PROOF LINE"),
+               ("temidayoafonja.com/keep-the-proof",
+                "temidayoafonja.com/career-evidence-starter")):
+    keep(P(d,"FROM:  %s"%frm,size=10.5,after=3))
+    keep(P(d,"TO:    %s"%to,size=10.5,bold=True,after=6))
+keep(P(d,"One type size came down. The headline measures 11.47in at the "
+       "existing 46pt in a 10.42in box, so it goes to 41pt and holds one line "
+       "at 10.21in, ending 0.21in clear of the gold rule; two lines at 46pt "
+       "would run 1.53in and cross it. The sub-copy (8.66in) and the URL "
+       "(10.07in) both fit at their existing sizes and were not resized. No "
+       "product mockup was added to the deck.",size=10.5,color=DIM,
+       before=4,after=8,spacing=1.25))
+p=P(d,"CTA VISUAL. The preferred proof visual is the REAL Career Evidence "
+     "Starter artifact: Starter cover in front, Portable Proof Line page "
+     "visible behind, warm cream background. Do not use generic AI graphics, "
+     "an unrelated portrait, a decorative quote card or a fake worksheet, and "
+     "never show the direct PDF URL. The artifact itself is the proof.",
+     size=11,bold=True,color=RED,after=10,spacing=1.25)
+shade(p,BAND_CREAM); keep(p)
+
 H1(d,"CTA and watch next",before=14)
 keep(P(d,"One product CTA only: %s — %s"%(CTA,CTA_URL),after=5))
-keep(P(d,"Do not add the Capability Formation Field Kit or the Career "
-       "Decision Evidence Check.",bold=True,after=8))
+keep(P(d,"Public descriptor: %s. Promise: %s Outcome: one portable Proof "
+       "Line. Expected time: about 10 to 15 focused minutes."
+       %(CTA_DESCRIPTOR,CTA_PROMISE),size=10.5,color=DIM,after=6,spacing=1.25))
+keep(P(d,"Use the landing-page URL publicly. Never expose the direct PDF URL.",
+       bold=True,color=RED,after=6))
+keep(P(d,"Do not add Keep the Proof, the Capability Formation Field Kit or the "
+       "Career Decision Evidence Check.",bold=True,after=8))
 keep(P(d,"Watch next: %s"%NEXT,bold=True,after=5))
 for x in ["use the direct Video 5 end-screen route when Video 5 is public;",
  "before Video 5 is public, use the Career Portability playlist if the "
@@ -279,23 +318,77 @@ for x in ["use the direct Video 5 end-screen route when Video 5 is public;",
 keep(P(d,"Do not leave Subscribe as the only end-screen element.",bold=True,
        color=RED,before=4,after=8))
 compress(d)
-d.save(os.path.join(LF,"Video_4_EDITOR_ONLY_HIT_Brief_v2.0.docx"))
+d.save(os.path.join(LF,"Video_4_EDITOR_ONLY_HIT_Brief_v2.1.docx"))
 print("editor brief written")
 
 # The eleven working chapter lines, defined once so the copy-ready description
 # and the reference section cannot drift apart.
 CHAPTERS=[("00:00","When a Career Looks Disconnected"),
- ("01:10","Chronology vs. Portability"),
- ("01:55","Name the Chapters Briefly"),
- ("02:55","Find the Repeated Work"),
- ("03:20","Look Beneath the Job Titles"),
+ ("01:13","Chronology vs. Portability"),
+ ("01:57","Name the Chapters Briefly"),
+ ("02:56","Find the Repeated Work"),
+ ("03:22","Look Beneath the Job Titles"),
  ("04:30","Explain Why the Direction Follows"),
- ("04:50","The Three-Sentence Career Explanation"),
- ("05:45","Do Not Invent a Perfect Plan"),
- ("06:30","Test Your Career Explanation"),
- ("07:55","Keep the Proof Behind Your Story"),
- ("08:35","Should You Make an Internal Move?")]
+ ("04:48","The Three-Sentence Career Explanation"),
+ ("05:46","Do Not Invent a Perfect Plan"),
+ ("06:32","Test Your Career Explanation"),
+ ("07:54","Free Career Evidence Starter"),
+ ("08:09","Should You Make an Internal Move?")]
 CHAPTER_LINES=["%s %s"%(t,c) for t,c in CHAPTERS]
+
+EMOJI_NOTE=("The restrained emoji system is part of the approved standard: "
+  "🧭 marks the CTA/resource section. Do not remove it and do not add more.")
+
+def description_block(d, heading_before=14, upload_doc=False):
+    """The copy-ready description, its end marker and the internal notes.
+
+    Shared verbatim by the publishing package and the separate description-only
+    document so their public copy cannot drift apart.
+    """
+    if upload_doc:
+        H1(d,"INTERNAL NOTE — DO NOT PASTE INTO YOUTUBE",before=heading_before)
+        p=P(d,EMOJI_NOTE,size=10.5,italic=True,color=RED,after=12,spacing=1.25)
+        shade(p,BAND_CREAM); keep(p)
+        p=keep(P(d,"COPY-READY YOUTUBE DESCRIPTION — BEGIN",size=11,bold=True,
+                 color=NAVY,before=14,after=12,spacing=1.2))
+        shade(p,BAND_NAVY)
+    for para in DESC:
+        keep(P(d,para if para else " ",after=7 if para else 3))
+    keep(P(d,"— END OF THE COPY-READY DESCRIPTION —",size=10,bold=True,
+           color=DIM,before=14,after=12,spacing=1.2))
+    H1(d,"Internal note — do not paste into YouTube",before=14)
+    p=P(d,"WORKING ESTIMATES — EDITOR MUST REPLACE FROM FINAL CUT",size=11,
+        bold=True,color=RED,after=6,spacing=1.25)
+    shade(p,BAND_CREAM); keep(p)
+    p=P(d,"These timestamps were estimated from the patched script, not "
+        "measured from the finished edit. Replace every timestamp using the "
+        "finished cut before publication. Do not force the edit to match "
+        "these estimates.",size=10.5,bold=True,italic=True,color=RED,
+        after=10,spacing=1.25)
+    shade(p,BAND_CREAM); keep(p)
+    H1(d,"Working chapters — reference copy",before=14)
+    keep(P(d,"Identical to the eleven chapter lines inside the description "
+           "above.",size=10.5,italic=True,color=DIM,after=8))
+    for line in CHAPTER_LINES: keep(P(d,line,size=11,after=4))
+
+TAGS=("how to explain your career change, how to explain a nonlinear "
+ "career, nonlinear career path, career pivot, career story, transferable "
+ "skills, career portability, career transition, career change, career "
+ "change advice, how to explain your experience, transferable experience, "
+ "experienced professionals, Temidayo Afonja, Capability Formation")
+
+PINNED=["What part of your career looks disconnected from the outside—but "
+ "taught you something you still use?",
+ "Try completing this sentence:",
+ "“Across my career, I keep being asked to…”",
+ "Then ask yourself: what evidence sits behind that verb?",
+ "If you want to try this on one accomplishment, the Career Evidence Starter "
+ "is free.",
+ "It takes about 10 to 15 focused minutes and helps you turn one piece of "
+ "work into a portable Proof Line.",
+ CTA_URL]
+
+
 
 # ----------------------------------------------------- 4. publishing package
 d=newdoc()
@@ -329,7 +422,9 @@ DESC=[
  "Not everything transfers. Different roles, functions and industries can "
  "require real relearning. The goal is not to invent a perfect career story. "
  "It is to make the continuity you can actually support easier to hear.","",
- "KEEP THE PROOF","A 60-Minute Career Evidence System", CTA_URL,"",
+ "🧭 FREE CAREER EVIDENCE STARTER",
+ "Turn one accomplishment into a portable Proof Line you can use in a "
+ "performance review, interview, internal move or career pivot:", CTA_URL,"",
  "CHAPTERS"]+CHAPTER_LINES+["",
  "WATCH NEXT", NEXT, "[ADD VIDEO 5 LINK WHEN LIVE]","",
  "PLAYLIST","Career Portability: Career Pivots, Internal Moves & Growth",
@@ -337,55 +432,46 @@ DESC=[
  "Temidayo Afonja helps experienced professionals understand what they can "
  "carry across roles, functions, employers and industries so they can make "
  "career pivots and internal moves without starting from zero."]
-for para in DESC:
-    keep(P(d,para if para else " ",after=7 if para else 3))
-
-keep(P(d,"— END OF THE COPY-READY DESCRIPTION —",size=10,bold=True,color=DIM,
-       before=14,after=12,spacing=1.2))
-
-H1(d,"Internal note — do not paste into YouTube",before=14)
-p=P(d,"WORKING ESTIMATES — EDITOR MUST REPLACE FROM FINAL CUT",size=11,
-    bold=True,color=RED,after=6,spacing=1.25)
-shade(p,BAND_CREAM); keep(p)
-p=P(d,"These timestamps were estimated from the script, not measured from the "
-    "finished edit. Replace every timestamp using the finished cut before "
-    "publication. Do not force the edit to match these estimates.",size=10.5,
-    bold=True,italic=True,color=RED,after=10,spacing=1.25)
-shade(p,BAND_CREAM); keep(p)
-
-H1(d,"Working chapters — reference copy",before=14)
-keep(P(d,"Identical to the eleven chapter lines inside the description above.",
-       size=10.5,italic=True,color=DIM,after=8))
-for line in CHAPTER_LINES: keep(P(d,line,size=11,after=4))
+description_block(d, upload_doc=True)
 
 H1(d,"Pinned comment",before=14)
-for para in ["What part of your career looks disconnected from the outside—but "
- "taught you something you still use?",
- "Try completing this sentence:",
- "“Across my career, I keep being asked to…”",
- "Then ask yourself: what evidence sits behind that verb?",
- "If retrieving the examples is the difficult part, Keep the Proof can help "
- "you capture the work, evidence and capability while the context is still "
- "clear:", CTA_URL]:
+for para in PINNED:
     keep(P(d,para,after=6))
 
 H1(d,"YouTube tag field",before=14)
 keep(P(d,"Paste into the tag field only. Do not place the full tag field in "
        "the public description.",size=10.5,italic=True,color=DIM,after=6))
-keep(P(d,"how to explain your career change, how to explain a nonlinear "
-       "career, nonlinear career path, career pivot, career story, "
-       "transferable skills, career portability, career transition, career "
-       "change, career change advice, how to explain your experience, "
-       "transferable experience, experienced professionals, Temidayo Afonja, "
-       "Capability Formation",size=10.5,after=10))
+keep(P(d,TAGS,size=10.5,after=10))
 
 H1(d,"Fact boundary for the description",before=14)
 keep(P(d,"The recurring “cat with nine lives” description is established. The "
        "original conversation that first prompted it is not established and "
        "is not described anywhere in this package.",bold=True,after=8,
        spacing=1.25))
+compress(d, 1.14, 0.56)
+d.save(os.path.join(LF,"Video_4_Publishing_Package_HIT_v2.1.docx"))
+
+# ------------------------------- 4b. separate description-only document
+# Outside the 13-file ZIP. Same architecture approved for Videos 1 and 6 to 8.
+d=newdoc()
+head(d,TITLE,"Video 4  ·  YouTube description",
+     "Upload copy only. Everything below the end marker is internal and must "
+     "not be pasted into YouTube.")
+H1(d,"Title",before=14); P(d,TITLE,size=12,after=10)
+H1(d,"Thumbnail",before=14); P(d,THUMB,size=12,bold=True,after=10)
+H1(d,"Primary search phrase",before=14)
+P(d,"how to explain your career change",after=10)
+description_block(d, upload_doc=True)
+H1(d,"Pinned comment",before=14)
+for para in PINNED: keep(P(d,para,after=6))
+H1(d,"Watch next",before=14); keep(P(d,NEXT,bold=True,after=8))
+H1(d,"YouTube tag field",before=14)
+keep(P(d,"Paste into the tag field only.",size=10.5,italic=True,color=DIM,after=6))
+keep(P(d,TAGS,size=10.5,after=10))
 compress(d)
-d.save(os.path.join(LF,"Video_4_Publishing_Package_HIT_v2.0.docx"))
+DESC_DOC="/tmp/v4p/Video_4_YouTube_Description_HIT.docx"
+d.save(DESC_DOC)
+print("publishing package and description-only document written")
 
 # ---------------------------------------------------------------- 5. Shorts
 SHORTS=[
@@ -530,6 +616,10 @@ R=["VIDEO 4 — H.I.T. FINAL RECORDING PACKAGE","",
  "Thumbnail:         %s"%THUMB,
  "CTA:               %s"%CTA,
  "CTA URL:           %s"%CTA_URL,
+ "                   The earlier %s CTA is SUPERSEDED for this"%OLD_CTA,
+ "                   video by the free Career Evidence Starter. Slide 10 and",
+ "                   reveal frame 25 carry the new CTA; every other slide and",
+ "                   frame is byte-identical.",
  "Watch next:        %s"%NEXT,"",
  "Long-form:         Revised under H.I.T.",
  "Slides:            UNCHANGED. 11 main slides.",
@@ -542,19 +632,19 @@ R=["VIDEO 4 — H.I.T. FINAL RECORDING PACKAGE","",
  "                   established and is not invented.","",
  "-"*70,"","WHAT EACH FILE IS","",
  "LONG_FORM/","",
- "  Video4TeleprompterScriptwithslidemarkers_HIT_v2.0.docx",
- "  Video4TeleprompterScriptwithslidemarkers_HIT_v2.0.txt",
+ "  Video4TeleprompterScriptwithslidemarkers_HIT_v2.1.docx",
+ "  Video4TeleprompterScriptwithslidemarkers_HIT_v2.1.txt",
  "      Temidayo's recording copy. Spoken script in large text; slide markers",
  "      in tinted bands. The markers are not spoken.","",
- "  Video4ReadingScriptnomarkers_HIT_v2.0.docx",
- "  Video4ReadingScriptnomarkers_HIT_v2.0.txt",
+ "  Video4ReadingScriptnomarkers_HIT_v2.1.docx",
+ "  Video4ReadingScriptnomarkers_HIT_v2.1.txt",
  "      The same spoken words with the slide markers removed.","",
- "  Video_4_EDITOR_ONLY_HIT_Brief_v2.0.docx",
+ "  Video_4_EDITOR_ONLY_HIT_Brief_v2.1.docx",
  "      For the editor. The H.I.T. first-30-second plan, editorial rhythm",
  "      after 0:30, the existing 11-slide map, the let-the-visual-carry",
  "      principle, and the fact and evidence boundaries.",
  "      Not for the teleprompter.","",
- "  Video_4_Publishing_Package_HIT_v2.0.docx",
+ "  Video_4_Publishing_Package_HIT_v2.1.docx",
  "      Title, thumbnail, search language, the copy-ready description,",
  "      working chapter estimates, pinned comment and the tag field.","",
  "SHORTS/","",
@@ -586,12 +676,12 @@ print("shorts editor brief and README written")
 
 # ------------------------------------------- 8. checksums and the master ZIP
 MANIFEST=[
- "LONG_FORM/Video4TeleprompterScriptwithslidemarkers_HIT_v2.0.docx",
- "LONG_FORM/Video4TeleprompterScriptwithslidemarkers_HIT_v2.0.txt",
- "LONG_FORM/Video4ReadingScriptnomarkers_HIT_v2.0.docx",
- "LONG_FORM/Video4ReadingScriptnomarkers_HIT_v2.0.txt",
- "LONG_FORM/Video_4_EDITOR_ONLY_HIT_Brief_v2.0.docx",
- "LONG_FORM/Video_4_Publishing_Package_HIT_v2.0.docx",
+ "LONG_FORM/Video4TeleprompterScriptwithslidemarkers_HIT_v2.1.docx",
+ "LONG_FORM/Video4TeleprompterScriptwithslidemarkers_HIT_v2.1.txt",
+ "LONG_FORM/Video4ReadingScriptnomarkers_HIT_v2.1.docx",
+ "LONG_FORM/Video4ReadingScriptnomarkers_HIT_v2.1.txt",
+ "LONG_FORM/Video_4_EDITOR_ONLY_HIT_Brief_v2.1.docx",
+ "LONG_FORM/Video_4_Publishing_Package_HIT_v2.1.docx",
  "SHORTS/Video_4_Short_1_Cat_With_Nine_Lives.docx",
  "SHORTS/Video_4_Short_2_Chronology_Not_Explanation.docx",
  "SHORTS/Video_4_Short_3_Not_A_Perfect_Plan.docx",
@@ -600,7 +690,7 @@ MANIFEST=[
  "README_FINAL.txt",
 ]
 SUMS="SHA256SUMS.txt"
-ZIP="/tmp/v4hit/Video_4_HIT_FINAL_Recording_and_Shorts_Package.zip"
+ZIP="/tmp/v4p/Video_4_HIT_FINAL_Recording_and_Shorts_Package.zip"
 
 def sha256(p):
     h=hashlib.sha256()
@@ -634,9 +724,10 @@ with zipfile.ZipFile(ZIP,"w",zipfile.ZIP_DEFLATED) as z:
 zsha=sha256(ZIP)
 open(ZIP+".sha256","w").write("%s  %s\n"%(zsha,os.path.basename(ZIP)))
 
-PROV="/tmp/v4hit/_source"
+PROV="/tmp/v4p/_source"
 shutil.rmtree(PROV,ignore_errors=True); os.makedirs(PROV)
 for f in ("script_text.py","build.py","qa.py"):
-    src="/tmp/v4hit/"+f
+    src="/tmp/v4p/"+f
     if os.path.isfile(src): shutil.copy2(src, os.path.join(PROV,f))
 print("ZIP sha256:",zsha)
+print("description-only doc sha256:",sha256(DESC_DOC))

@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Approved Video 8 H.I.T. script, extracted verbatim from the canonical file.
+"""Patched Video 8 spoken script.
 
-Source: Video_8_Code_Prompt_HIT_Final.txt, between the BEGIN/END fences.
-Extracted programmatically; no wording is retyped.
+Derived programmatically from SOURCE_Video_8_Code_Prompt_HIT_Final.txt by applying ONLY the exact
+replacements authorised in that video's PATCH file. No wording is
+retyped and no other paragraph is touched.
 """
 
 LINES = ['Changing industries does not make you entry-level at everything. It makes you new to a context.',
@@ -47,7 +48,7 @@ LINES = ['Changing industries does not make you entry-level at everything. It ma
  'But context changing does not automatically erase the judgment you formed before you arrived.',
  'So the first move is to separate three things that often get bundled together.',
  '[SLIDE: Capability Context Credential]',
- 'Capability. Context. Credential.',
+ 'I think of these as the three Cs of an industry change: Capability, Context and Credential.',
  'They are not the same problem, so they should not get the same solution.',
  '[SLIDE: What Travels]',
  'Capability is what remains useful when the setting changes.',
@@ -171,7 +172,7 @@ LINES = ['Changing industries does not make you entry-level at everything. It ma
  'A good bridge does not pretend the gap does not exist.',
  'It makes the gap specific enough to manage.',
  '[SLIDE: One Page Three Columns]',
- 'Here is the exercise I want you to do.',
+ 'Here is how you apply the three Cs.',
  'One page.',
  'Three columns.',
  'WHAT TRAVELS',
@@ -198,7 +199,7 @@ LINES = ['Changing industries does not make you entry-level at everything. It ma
  'what I already know how to do. And here is what I’m deliberately learning about this context.”',
  'You are not erasing your previous experience.',
  'And you are not pretending that experience gives you knowledge you have not earned.',
- 'That is the balance.',
+ 'That is the balance the three Cs are meant to protect.',
  '[SLIDE: Field Kit]',
  'If you need help doing that separation, that is what the Capability Formation Field Kit is for.',
  'It helps you examine what your work has actually formed in you, what appears portable and where '
@@ -255,7 +256,7 @@ SPOKEN = ['Changing industries does not make you entry-level at everything. It m
  'And you should respect it.',
  'But context changing does not automatically erase the judgment you formed before you arrived.',
  'So the first move is to separate three things that often get bundled together.',
- 'Capability. Context. Credential.',
+ 'I think of these as the three Cs of an industry change: Capability, Context and Credential.',
  'They are not the same problem, so they should not get the same solution.',
  'Capability is what remains useful when the setting changes.',
  'Not every skill.',
@@ -372,7 +373,7 @@ SPOKEN = ['Changing industries does not make you entry-level at everything. It m
  'What exposure do I need quickly?',
  'A good bridge does not pretend the gap does not exist.',
  'It makes the gap specific enough to manage.',
- 'Here is the exercise I want you to do.',
+ 'Here is how you apply the three Cs.',
  'One page.',
  'Three columns.',
  'WHAT TRAVELS',
@@ -399,7 +400,7 @@ SPOKEN = ['Changing industries does not make you entry-level at everything. It m
  'what I already know how to do. And here is what I’m deliberately learning about this context.”',
  'You are not erasing your previous experience.',
  'And you are not pretending that experience gives you knowledge you have not earned.',
- 'That is the balance.',
+ 'That is the balance the three Cs are meant to protect.',
  'If you need help doing that separation, that is what the Capability Formation Field Kit is for.',
  'It helps you examine what your work has actually formed in you, what appears portable and where '
  'you still need development, evidence or context.',

@@ -538,22 +538,32 @@ Video 6's device is **the CAR test (Complexity, Authority, Return)** and Video
 
 ### Final pre-recording patch pass — Videos 1, 4, 6, 8
 
-Requested 2 September 2026. **Three of the four patches cannot start.** The
-master instruction requires each patched script to be derived by applying the
-exact replacements in that video's PATCH file to its SOURCE file, and forbids
-hand-transcription. The bundle
-`Final_PreRecording_Patches_Videos_1_4_6_8_for_Code.zip` did not arrive; only
-the master file and the Video 1 SOURCE were received.
+Completed 2 September 2026 from
+`Final_PreRecording_Patches_Videos_1_4_6_8_for_Code.zip`. The bundle's own
+`SHA256SUMS.txt` verified, and all four SOURCE files were confirmed
+byte-identical to the canonical prompts the locked packages were built from.
+Every authorised FROM string was found verbatim and consecutively in its
+SOURCE before anything was changed. Videos 2, 3, 5 and 7 were not touched.
 
-| Video | Patch | State |
-|---|---|---|
-| 1 | Career Evidence Starter CTA | Script, documents and Slide 12 text **already applied** in v3.1. Blocked only by the Starter artwork. |
-| 4 | Replace Keep the Proof with the free Career Evidence Starter | **Not started — PATCH_Video_4_Career_Evidence_Starter.txt missing.** |
-| 6 | Name and repeat the CAR test | **Not started — PATCH_Video_6_CAR_Test.txt missing.** |
-| 8 | Name and repeat the 3 Cs of an industry change | **Not started — PATCH_Video_8_Three_Cs.txt missing.** |
+| Video | Patch | Script diff vs SOURCE | Slides / reveals |
+|---|---|---|---|
+| 1 | Career Evidence Starter CTA (v3.1) | one merged block: marker + 3 CTA paragraphs | main `slide12`, reveal `slide21` |
+| 4 | Keep the Proof → Career Evidence Starter (v2.1) | one merged block: marker + 7 CTA paragraphs → marker + 3 | main `slide10`, reveal `slide25` |
+| 6 | The CAR test (v2.1) | three blocks, exactly as authorised | **none** |
+| 8 | The 3 Cs of an industry change (v2.1) | three blocks, exactly as authorised | **none** |
 
-Videos 4, 6 and 8 remain FINAL + LOCKED at their current verified packages.
-Nothing in them was touched. Videos 2, 3, 5 and 7 were not touched.
+Canonical verification passes for all four: each patched script differs from
+its SOURCE only in the authorised diff blocks, and all four delivered script
+files match the derivation literally. 71 QA checks across Videos 4, 6 and 8
+pass. Every DOCX was rendered and visually inspected.
+
+Two documents needed a pagination fix and were retuned to
+`compress(1.14, 0.56)`, holding three pages across line-factor 1.06 to 1.20:
+the Video 4 publishing package spilled a near-empty fourth page under the
+patch, and the Video 6 description document already carried one before it.
+
+Video 4 gained a separate description-only document, so Videos 1 and 4 to 8
+now all follow that convention.
 
 ### Series summary
 
