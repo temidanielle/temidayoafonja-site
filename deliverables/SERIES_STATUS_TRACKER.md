@@ -315,6 +315,20 @@ changed — `ppt/media/image2.png` and `ppt/media/image3.png` in each deck — a
 NO slide XML or rels changed in that pass. No Field Kit imagery remains
 anywhere in either deck.
 
+**Speaker/editor notes — CORRECTED 2 September 2026.** Both decks carried
+stale Field Kit CTA language in the notes. Three corrections were applied
+across six notesSlide parts: the cue now reads "Career Evidence Starter
+invitation", the exact invitation is the canonical v3.1 spoken CTA verbatim,
+and "the only purchase invitation" reads "the only resource invitation". Only
+notes XML changed — no slide XML, media, rels or presentation.xml — so the
+approved Slide 12 visual is bit-for-bit unchanged. No Field Kit, fieldkit or
+keep-the-proof string remains anywhere in either deck.
+
+Deck SHA-256 after the notes correction:
+main `fbed816d195b32941c73190b7e1e318699844fbc849fcee106fa9589117a4ce0`,
+reveal `169cae1ffcb00b6f9d5fb98f06bf4f1395c7ec8d80a0fd5aa3d47683c117cad3`.
+The decks sit outside the 13-file ZIP, so the package hash is unchanged.
+
 Video 1 is **not** to be marked FINAL from a tracker update alone. Temidayo's
 advisor will independently review the corrected deliverable before lock.
 
