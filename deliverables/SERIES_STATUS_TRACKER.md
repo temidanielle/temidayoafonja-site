@@ -787,6 +787,108 @@ re-rendered and hold at 3 pages with healthy trailing pages.
 
 **VIDEOS 1-5 - FINAL + LOCKED. v5.1.1 PRECISION PASS COMPLETE.**
 
+### Videos 1-7 production handoff - manifest, 3 September 2026
+
+Seven individual package downloads were delivered to Temidayo, plus each
+video's main deck, reveal deck, description DOCX, sibling checksum and
+approved thumbnail where one exists.
+
+The delivered ZIPs were **byte-identical copies of the authoritative
+repository packages, renamed only** - nothing was rebuilt, so each ZIP's
+SHA-256 below is itself the proof of provenance. The staging directory used to
+assemble the download set was NOT committed: every file in it duplicated an
+already-tracked file, so committing it would have added roughly 14 MB of
+duplicate binaries to git history for a one-time delivery. This manifest is the
+durable record, and the set is reproducible from it in seconds.
+
+#### Video 1
+
+| Delivered as | Repository source | SHA-256 |
+|---|---|---|
+| `Video_1_FINAL_Recording_and_Shorts_Package.zip` | `video-1-slides/hit-final/Video_1_HIT_FINAL_Recording_and_Shorts_Package.zip` | `c20ba22f395a0051d4af8244256edc966693c927fd390909dede3412361557d0` |
+| `Video_1_MAIN_DECK.pptx` | `video-1-slides/out/Video-1-How-I-Changed-Jobs-Without-Starting-My-Career-Over_v2.4.pptx` | `c051f90c51474a17751ffb4c48843f51592de57a5de1285d0cf0c546cb478e38` |
+| `Video_1_REVEAL_BUILDS.pptx` | `video-1-slides/out/Video-1-Reveal-Builds_v2.4.pptx` | `112c38499b33e1727d8dbdd8154192f64f9203c25323aad5d6d5ffc248000c17` |
+| `Video_1_YouTube_Description_HIT.docx` | `video-1-slides/hit-final/Video_1_YouTube_Description_HIT.docx` | `152defc2aa200744bd88f327b98187ff76d9a686e6b4ea4b2675c34cd6eb8b44` |
+| thumbnail | — | **THUMBNAIL ASSET OUTSTANDING** |
+
+#### Video 2
+
+| Delivered as | Repository source | SHA-256 |
+|---|---|---|
+| `Video_2_FINAL_Recording_and_Shorts_Package.zip` | `video-2-slides/hit-final/Video_2_HIT_FINAL_Recording_and_Shorts_Package.zip` | `31cca714a477ea4f3c2d48abb72a93f008362b7358e323e05e7b2e02f45557fb` |
+| `Video_2_MAIN_DECK.pptx` | `video-2-slides/out/Video-2-Is-Your-Job-Making-You-Less-Marketable_v1.1.pptx` | `7e4c731c9a978244b9fa6158d3789f25c1d09daf5d54c393486296749b9a4503` |
+| `Video_2_REVEAL_BUILDS.pptx` | `video-2-slides/out/Video-2-Reveal-Builds_v1.1.pptx` | `de91230060b8aa7bda2105288d0452d119a6ead399ce9ff0b5739af5d07b6a8c` |
+| `Video_2_YouTube_Description_HIT.docx` | `video-2-slides/hit-final/Video_2_YouTube_Description_HIT.docx` | `99381854008c0e0aed6044f7df95e1f0cb5190a383b81e23f26df55f2085364b` |
+| thumbnail | — | **THUMBNAIL ASSET OUTSTANDING** |
+
+#### Video 3
+
+| Delivered as | Repository source | SHA-256 |
+|---|---|---|
+| `Video_3_FINAL_Recording_and_Shorts_Package.zip` | `video-3-slides/hit-final/Video_3_HIT_FINAL_Recording_and_Shorts_Package.zip` | `c06db1bbfddbed4d511b8a7b8fecc5954086e9a121ba3d2309ecc62daa1f0750` |
+| `Video_3_MAIN_DECK.pptx` | `video-3-slides/out/Video-3-3-Things-to-Do-Before-Quitting-Your-Job_v1.1.pptx` | `552a1db2780adf0756a6c9ad372432d57e84a4eedcc91b8d88c2d5331a45851e` |
+| `Video_3_REVEAL_BUILDS.pptx` | `video-3-slides/out/Video-3-Reveal-Builds_v1.1.pptx` | `8981839522e08409b50b4c17de04df99bc887652e4671b19aa73f915baa6ad44` |
+| `Video_3_YouTube_Description_HIT.docx` | `video-3-slides/hit-final/Video_3_YouTube_Description_HIT.docx` | `9398612c460edb87585af814ec17c8a2cfa278ba2c0d1ca0dc73c40c632208dd` |
+| thumbnail | `video-3-slides/thumbnail/VIDEO_3_THUMBNAIL_FINAL_A_3840x2160.png` | `5f6ae9fdc8df82c31f180a4f856877a6e4b246848429d1a8db9b36b6f4a23dd2` |
+
+#### Video 4
+
+| Delivered as | Repository source | SHA-256 |
+|---|---|---|
+| `Video_4_FINAL_Recording_and_Shorts_Package.zip` | `video-4-slides/hit-final/Video_4_HIT_FINAL_Recording_and_Shorts_Package.zip` | `698ae6352efcd0b907c8c3639a7ff2c110bf6adcd74848357521bde9deacf36d` |
+| `Video_4_MAIN_DECK.pptx` | `video-4-slides/out/Video_4_Main_Slides.pptx` | `e3d5325b3f297bdc9daa372b7afbbf7dd3ce29fbcfd631b0a20fe4cf4e5aaf04` |
+| `Video_4_REVEAL_BUILDS.pptx` | `video-4-slides/out/Video_4_Reveal_Builds.pptx` | `777626c7f6a8769c0b81258fc9111d7c1754b8bdb3a4d741a18b2079559f66ee` |
+| `Video_4_YouTube_Description_HIT.docx` | `video-4-slides/hit-final/Video_4_YouTube_Description_HIT.docx` | `b9bd84500cd8fb35f83e1de5ff2f331123890020c61784abd2cc70323e715787` |
+| thumbnail | `video-4-slides/thumbnail/Video_4_Thumbnail_A.png` | `9c6b31ea741965741aacc86f2a3ea15287a199676fc71505bc4e438984a3618f` |
+
+#### Video 5
+
+| Delivered as | Repository source | SHA-256 |
+|---|---|---|
+| `Video_5_FINAL_Recording_and_Shorts_Package.zip` | `video-5-slides/hit-final/Video_5_HIT_FINAL_Recording_and_Shorts_Package.zip` | `4ce583dc8d68520b2d9f9679166ed1ad7470c56b52207520b40e501a757847ff` |
+| `Video_5_MAIN_DECK.pptx` | `video-5-slides/out/Video_5_Main_Slides.pptx` | `5f13f656a7b196e8f62bd8f74cf8eea33f743f4a5f2c8631e5d1d8bd9ac067b2` |
+| `Video_5_REVEAL_BUILDS.pptx` | `video-5-slides/out/Video_5_Reveal_Builds.pptx` | `749d247141e02fef6585ec8ba9441911582fa1859b8a15400d7dd1f8778bd976` |
+| `Video_5_YouTube_Description_HIT.docx` | `video-5-slides/hit-final/Video_5_YouTube_Description_HIT.docx` | `841aa5063e2aadfb80ed54b1c0437afe0ddc66f6f120e993bc0deda9fc8eb501` |
+| thumbnail | `video-5-slides/thumbnail/Video_5_Thumbnail_A_Final.png` | `0ff8d7c495d6be648a2913b248ba23ac0dcd8083753ba4e9d2691ea9565af9c1` |
+
+#### Video 6
+
+| Delivered as | Repository source | SHA-256 |
+|---|---|---|
+| `Video_6_FINAL_Recording_and_Shorts_Package.zip` | `video-6-slides/hit-final/Video_6_HIT_FINAL_Recording_and_Shorts_Package.zip` | `4e11cac762dbac072a64c7818a3014aa124499133525910c26dda109a76cbdaf` |
+| `Video_6_MAIN_DECK.pptx` | `video-6-slides/out/Video_6_Main_Slides.pptx` | `fcf3051c579d111d36a5357bcf810dd4dfefe4eb92070ce9721587e82dfe91dd` |
+| `Video_6_REVEAL_BUILDS.pptx` | `video-6-slides/out/Video_6_Reveal_Builds.pptx` | `cb8127089944e9885d0411592383153ace98b78ea53dc8e380e587804c1a8f3a` |
+| `Video_6_YouTube_Description_HIT.docx` | `video-6-slides/hit-final/Video_6_YouTube_Description_HIT.docx` | `52d040580ce0eea6395f0467081b64112fa36638b31b57636851f30339c4a722` |
+| thumbnail | — | **THUMBNAIL ASSET OUTSTANDING** |
+
+#### Video 7
+
+| Delivered as | Repository source | SHA-256 |
+|---|---|---|
+| `Video_7_FINAL_Recording_and_Shorts_Package.zip` | `video-7-slides/hit-final/Video_7_HIT_FINAL_Recording_and_Shorts_Package.zip` | `898434afee0ab6ee26dfbe36f8d3c169baec4d99b07126719547cef84b83a10d` |
+| `Video_7_MAIN_DECK.pptx` | `video-7-slides/out/Video_7_Main_Slides.pptx` | `2bc375e0a6751ffbe63c477e7ee6018fd88764aef3c4083fd7620dfd6f523e21` |
+| `Video_7_REVEAL_BUILDS.pptx` | `video-7-slides/out/Video_7_Reveal_Builds.pptx` | `b0cee4e9595295a1e1026e8d7eb9dcc86e47f6e38206db805afce0840e89ff05` |
+| `Video_7_YouTube_Description_HIT.docx` | `video-7-slides/hit-final/Video_7_YouTube_Description_HIT.docx` | `6d608afb31be46be9f84808ec3dce4861d586f470f7bd0037205bc2ee2803815` |
+| thumbnail | — | **THUMBNAIL ASSET OUTSTANDING** |
+
+Thumbnail positions: Videos 3, 4 and 5 have an approved final in the
+repository and it was sent. Video 1's A/B selection is still open, Video 2's
+artwork still carries the superseded `YOUR SKILLS ARE STALLING` copy, Video 6's
+files are explicitly superseded by a pending Canva export, and Video 7 has no
+thumbnail asset on file. No substitute was sent for any of the four.
+
+All seven packages verified at delivery: exactly 13 files, 12-entry
+`SHA256SUMS.txt`, `sha256sum -c` passing, sibling checksum matching, and no
+source, Python, QA, render, temporary or superseded files.
+
+Visible slide content: verified NO change for all seven by unpacking every
+version of all fourteen decks across their full git history and diffing OOXML
+parts. Across the v5.0, v5.1 and v5.1.1 work only `ppt/notesSlides/*` parts
+ever changed; the roadmap commit `5c0e1ef` appears in no deck's history.
+
+Video 8 was deliberately excluded, HELD FOR RESEARCH-ALIGNMENT STRENGTHENING
+around the "direct industry experience" pain before it joins a final handoff.
+
 ### Forward roadmap - FILED as the current source of truth, 3 September 2026
 
 The missing roadmap was supplied and is now in the repository.
