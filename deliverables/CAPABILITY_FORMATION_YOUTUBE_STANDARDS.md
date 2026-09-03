@@ -294,9 +294,39 @@ package (1,403 words) and `Video_5_Code_Prompt_HIT_Final.txt`, and the earlier
 1,639-word script are all **SUPERSEDED** and retained only as historical
 reference.
 
-**VIDEOS 1–5 ARE FINAL AND LOCKED UNDER THE v5.0 BELONGING + IDENTITY
+**VIDEOS 1–5 ARE FINAL AND LOCKED UNDER THE v5.1 BELONGING + IDENTITY
 REGISTER** as of 3 September 2026. All five spoken scripts were rewritten from
-scratch. 230 QA checks pass.
+scratch again for v5.1. 230 QA checks pass, 0 failures.
+
+**The job-offer / Uber transition story is established, approved, and owned by
+Video 1.** An accepted offer; an acquisition rescinded the role before she ever
+started; within a few months she was driving Uber, thinking about income and
+uncertainty rather than career strategy; later a recruiter found her on
+LinkedIn about returning to Deloitte. It is the primary belonging beat of
+Video 1 and it opens the video.
+
+**The causality boundary is absolute and is now a channel standard.** Driving
+Uber did not lead to Deloitte. They were two parts of the same
+career-transition chapter. No edit, caption, cut or reordering may build that
+chain, and the protective line must stay adjacent to the recruiter line. No
+passenger referral, no networking-while-driving, no employer names for the
+rescinded offer or the acquisition, no dates, no income, no duration beyond
+"within a few months", no recruiter dialogue. The story is told as recognition
+— income uncertainty and the loss of a context — never as a comeback.
+
+**One story, one owner.** Video 1 tells it in full. Video 3 uses a single
+truthful bridge sentence, immediately followed by the line that separates it
+from the viewer's situation, because the rescinded role is *not* an example of
+choosing to quit. Videos 2, 4 and 5 do not reference it.
+
+**Portability is bounded, out loud.** Not every skill stays valuable. Markets
+change, skills go stale, a new field can require real relearning, and
+portability is not a promise that the next opportunity appears quickly. Video 1
+says so about Temidayo's own chapter: "Mine did not."
+
+The v5.0 packages are **SUPERSEDED** by v5.1 and retained only as historical
+reference; their hashes are preserved in the tracker and in each README change
+record.
 
 **Belonging before instruction is now the channel standard.** People must feel
 identified before they feel educated. Every long-form moves through
@@ -318,7 +348,7 @@ interruption.
 controls — recognising value, preserving evidence, translating experience,
 naming what travels and what does not, deciding what must be relearned. She
 promises nothing about layoffs, restructures, markets, hiring cycles,
-discrimination, health, caregiving, geography or immigration. Every v5.0 script
+discrimination, health, caregiving, geography or immigration. Every v5.1 script
 names its own limits out loud, and that refusal is what makes the rest
 credible.
 
@@ -327,7 +357,7 @@ second. Ordinary words before specialist ones. No consulting cadence, no HR or
 enterprise jargon, no stacked nouns, no unnecessary acronyms. The QA runs a
 long-word and jargon sweep on every script.
 
-Slides became changeable under v5.0 and still did not need to change: all five
+Slides became changeable under v5.0 and v5.1 and still did not need to change: all five
 decks were mapped against their new scripts and every slide continued to serve
 the story, so notes-only updates were made across all ten decks.
 

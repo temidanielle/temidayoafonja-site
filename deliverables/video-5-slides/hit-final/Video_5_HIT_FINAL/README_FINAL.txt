@@ -1,4 +1,4 @@
-VIDEO 5 — v5.0 BELONGING + IDENTITY FINAL RECORDING PACKAGE
+VIDEO 5 — v5.1 BELONGING + IDENTITY FINAL RECORDING PACKAGE
 
 Title:             Should I Make an Internal Move? 3 Questions to Decide
 Thumbnail:         YOU MAY NOT NEED TO LEAVE
@@ -8,9 +8,9 @@ Identity promise:  Become the professional who can read any opportunity -
                    them, instead of chasing the title and finding out
                    afterwards.
 
-Viewer recognition:Someone doing well who has quietly started looking at job
-                   adverts. Nothing is wrong; they want different work and
-                   assumed leaving was the only way to get it.
+Viewer recognition:Someone doing well and valued where they are, quietly
+                   wondering whether they have to leave in order to get
+                   different work. Nothing is wrong.
 
 Personal proof:    About six months after returning from maternity leave in
                    one career chapter, Temidayo's scope expanded beyond the
@@ -30,13 +30,13 @@ CTA production
 gate:              SATISFIED
 Watch next:        Video 6 — Are You Growing—or Just Being Given More Work?
 
-Script:            Freshly written for v5.0. 1,804 spoken words, about 12:26 at
+Script:            Freshly written for v5.1. 1,392 spoken words, about 9:36 at
                    145 words per minute.
 Slides:            UNCHANGED. All 12 slides were mapped against the new
                    script and every one still serves it.
 Reveal deck:       UNCHANGED. 25 frames.
-Speaker notes:     Rewritten for the v5.0 narration.
-Shorts:            All four rewritten for v5.0.
+Speaker notes:     Rewritten for the v5.1 narration.
+Shorts:            All four rewritten for v5.1.
 Editor directions: Separated from recording copy.
 
 ----------------------------------------------------------------------
@@ -45,22 +45,22 @@ WHAT EACH FILE IS
 
 LONG_FORM/
 
-  Video5TeleprompterScriptwithslidemarkers_HIT_v5.0.docx
-  Video5TeleprompterScriptwithslidemarkers_HIT_v5.0.txt
+  Video5TeleprompterScriptwithslidemarkers_HIT_v5.1.docx
+  Video5TeleprompterScriptwithslidemarkers_HIT_v5.1.txt
       Temidayo's recording copy. Spoken script in large text; slide markers
       in tinted bands. The markers are not spoken.
 
-  Video5ReadingScriptnomarkers_HIT_v5.0.docx
-  Video5ReadingScriptnomarkers_HIT_v5.0.txt
+  Video5ReadingScriptnomarkers_HIT_v5.1.docx
+  Video5ReadingScriptnomarkers_HIT_v5.1.txt
       The same spoken words with the slide markers removed.
 
-  Video_5_EDITOR_ONLY_HIT_Brief_v5.0.docx
+  Video_5_EDITOR_ONLY_HIT_Brief_v5.1.docx
       For the editor. Fourteen sections, from the locked metadata and the
       identity promise through the belonging beat, the first-30 H.I.T. map,
       the slide and reveal maps, factual boundaries, the identity exit and
       the notes record.
 
-  Video_5_Publishing_Package_HIT_v5.0.docx
+  Video_5_Publishing_Package_HIT_v5.1.docx
       Title, thumbnail, search language, the copy-ready description,
       working chapter estimates, pinned comment and tag field.
 
@@ -68,42 +68,46 @@ SHORTS/
 
   Four recording documents. Recording copy only, no editor directions.
 
-  Video_5_Shorts_EDITOR_ONLY_HIT_Brief_v5.0.docx
+  Video_5_Shorts_EDITOR_ONLY_HIT_Brief_v5.1.docx
       For the editor. Hooks and visual treatment for all four.
 
 ----------------------------------------------------------------------
 
 ALL FILES IN THIS PACKAGE
 
-  LONG_FORM/Video5ReadingScriptnomarkers_HIT_v5.0.docx
-  LONG_FORM/Video5ReadingScriptnomarkers_HIT_v5.0.txt
-  LONG_FORM/Video5TeleprompterScriptwithslidemarkers_HIT_v5.0.docx
-  LONG_FORM/Video5TeleprompterScriptwithslidemarkers_HIT_v5.0.txt
-  LONG_FORM/Video_5_EDITOR_ONLY_HIT_Brief_v5.0.docx
-  LONG_FORM/Video_5_Publishing_Package_HIT_v5.0.docx
-  SHORTS/Video_5_Short_1_You_May_Not_Need_To_Leave.docx
-  SHORTS/Video_5_Short_2_More_Tasks_Is_Not_More_Judgment.docx
-  SHORTS/Video_5_Short_3_Trusted_With_Different_Work.docx
-  SHORTS/Video_5_Short_4_Three_Questions_Before_You_Move.docx
-  SHORTS/Video_5_Shorts_EDITOR_ONLY_HIT_Brief_v5.0.docx
+  LONG_FORM/Video5ReadingScriptnomarkers_HIT_v5.1.docx
+  LONG_FORM/Video5ReadingScriptnomarkers_HIT_v5.1.txt
+  LONG_FORM/Video5TeleprompterScriptwithslidemarkers_HIT_v5.1.docx
+  LONG_FORM/Video5TeleprompterScriptwithslidemarkers_HIT_v5.1.txt
+  LONG_FORM/Video_5_EDITOR_ONLY_HIT_Brief_v5.1.docx
+  LONG_FORM/Video_5_Publishing_Package_HIT_v5.1.docx
+  SHORTS/Video_5_Short_1_Do_You_Have_To_Leave.docx
+  SHORTS/Video_5_Short_2_Movement_Is_Not_Growth.docx
+  SHORTS/Video_5_Short_3_More_Work_Was_Not_The_Point.docx
+  SHORTS/Video_5_Short_4_Will_The_Evidence_Travel.docx
+  SHORTS/Video_5_Shorts_EDITOR_ONLY_HIT_Brief_v5.1.docx
   README_FINAL.txt
   SHA256SUMS.txt
 
 ----------------------------------------------------------------------
 
-WHAT v5.0 CHANGED
+WHAT v5.1 CHANGED
 
-A genuine editorial rebuild, not a patch. The script was written fresh under
-the belonging-first register. It now opens on a specific, slightly private
-state - doing well and browsing job adverts anyway - names the assumption
-underneath it, and only then reframes the question. The maternity-return
-proof moved to the front as recognition rather than illustration, and the
-three questions do not arrive until about 1:18. The organisational beat is
-now about people being unable to imagine you in a different shape, which is
-kinder and more accurate than a fairness argument. The video ends on being
-able to read any opportunity without needing anyone else's verdict.
+The spoken script was written fresh again for v5.1. It opens on the exact
+question the viewer is holding - do I have to leave to get different work -
+and refuses to answer it generally: "It has your answer." The
+maternity-return proof arrives at about 0:32, inside the first minute, and
+carries the distinction the whole video runs on: more work is a load,
+different work is a signal. The three questions do not arrive until about
+2:04. The organisational beat now translates back to the viewer explicitly -
+the story your organisation tells about you is a year or two behind what you
+can do, and closing that gap is maintenance, not self-promotion. Video 1 owns
+the job-offer / Uber transition story; it is not retold here.
 
-The prior v4.0 package is superseded. Its hashes are preserved here:
+The prior v5.0 package is superseded. Its hash is preserved here:
+  package ZIP 28b5facd8cb85b385785be99dec783f29203428ec2205f69ba74ecd4babaaca0
+
+The v4.0 package before it is also on record:
   package ZIP da93ca06af102bf12f4ae23b445dbcb4bebcd579ba42bfe86e31c5f82e4ad65a
   main deck   a2d30edcc49e6f9b42be74b457aa16e5a049338feff7fe70e388c5c8743d5447
   reveal deck a1a85d9d9d3d486e54a6e6832d9ca372e557386969f07d21305b9cb3513e30c7

@@ -1,65 +1,75 @@
 # -*- coding: utf-8 -*-
-"""Video 5 Shorts — freshly written for v5.0. The maternity-return proof is
-bounded exactly: about six months after returning, scope expanded beyond the
-original box; the meaningful part was being trusted with different work. No
-employer, assignment, result or promotion anywhere."""
+"""Video 5 Shorts — freshly written for v5.1. The maternity-return proof is
+bounded exactly: about six months after returning, in one chapter of her career,
+Temidayo's scope expanded beyond the original box of the role, and the point is
+that she was trusted with different work. No employer, assignment, result,
+promotion or metric. No maternity or baby imagery anywhere."""
 
 SHORTS = [
- ("Video_5_Short_1_You_May_Not_Need_To_Leave.docx","Recognition / story",
-  "You are doing well where you are, and you have started looking at job adverts anyway.",
-  ["You are doing well where you are, and you have started looking at job "
-   "adverts anyway.",
-   "Not because anything is wrong.",
-   "You want different work, and somewhere along the way you decided the only "
-   "way to get it is to leave.",
-   "You may not need to leave.",
-   "You may need access to work your current role is not giving you yet.",
-   "Those are not the same problem, and they do not have the same solution.",
-   "A different employer is one way to reach different work.",
-   "It is not the only way.",
-   "So before you start the search, find out what is actually available inside "
-   "the building you are already in."]),
- ("Video_5_Short_2_More_Tasks_Is_Not_More_Judgment.docx","Distinction / myth",
-  "If someone offers you more responsibility, ask one more question.",
-  ["If someone offers you more responsibility, ask one more question.",
-   "More responsibility for what?",
-   "Because more tasks can mean volume, coordination, and work that had "
-   "nowhere else to go.",
-   "More judgment means interpretation, tradeoffs, and consequence you own.",
-   "Organisations give more to whoever is dependable. More projects. More "
-   "people to coordinate.",
-   "That will make you busier.",
-   "It will not necessarily make the work more developmental.",
-   "So ask: what will I be trusted to decide that I am not trusted to decide "
-   "now?",
-   "If the clearest answer is “you will have more to manage” — keep asking."]),
- ("Video_5_Short_3_Trusted_With_Different_Work.docx","Proof / personal evidence",
-  "Let me show you the moment I stopped treating more work as growth.",
-  ["Let me show you the moment I stopped treating more work as growth.",
-   "About six months after I came back from maternity leave in one chapter of "
+ ("Video_5_Short_1_Do_You_Have_To_Leave.docx","Recognition / story",
+  "You might be doing well exactly where you are, and still wondering whether you have to leave.",
+  ["You might be doing well exactly where you are, and still wondering whether "
+   "you have to leave to get different work.",
+   "That is a real question.",
+   "I do not think it has a general answer. It has your answer.",
+   "And I want to say the thing that usually goes unsaid.",
+   "The people who value you most may still see you through the role they "
+   "already know you for.",
+   "That is not disloyalty. It is how organisations remember people.",
+   "Somebody who has been excellent at one thing for four years becomes, in "
+   "everybody's head, the person who does that thing.",
+   "So the story your organisation tells about you is usually a year or two "
+   "behind what you can actually do now.",
+   "Closing that gap is not self-promotion.",
+   "It is maintenance."]),
+ ("Video_5_Short_2_Movement_Is_Not_Growth.docx","Distinction / myth",
+  "Movement is not automatically growth.",
+  ["Movement is not automatically growth.",
+   "A move can be sideways with a better title. It can be more of what you "
+   "already do, with more people watching. It can even be a promotion that "
+   "quietly narrows you.",
+   "Growth is when the work changes, your judgment gets bigger, and you come "
+   "out able to prove something you could not prove before.",
+   "So the test is not what you will do. It is what you will decide.",
+   "What will you have to decide that you do not decide now, where the answer "
+   "is not obvious and somebody has to live with the consequence?",
+   "If the move gives you more tasks and the same decisions, your judgment "
+   "will not grow. You will get faster, and more tired.",
+   "If it gives you fewer tasks and harder decisions, that is usually growth, "
+   "even when it looks like less on paper.",
+   "And the move that expands your judgment is often the one you have to ask "
+   "for specifically.",
+   "So ask specifically. Name the decision you want to be part of."]),
+ ("Video_5_Short_3_More_Work_Was_Not_The_Point.docx","Proof / personal evidence",
+  "More work and different work can feel the same from the inside.",
+  ["More work and different work can feel the same from the inside.",
+   "They are not the same thing at all.",
+   "About six months after I came back from maternity leave, in one chapter of "
    "my career, my scope expanded beyond the original box of the role.",
-   "More landed on me. That part is easy to describe.",
-   "But that is not the part that mattered.",
-   "What mattered was that I was being trusted with different work.",
-   "Not more of the same work. Different.",
-   "That distinction took me a while to see, and I could not unsee it "
-   "afterwards.",
-   "So when your scope grows, do not only ask how much more you are doing.",
-   "Ask what you are becoming trusted to do."]),
- ("Video_5_Short_4_Three_Questions_Before_You_Move.docx","Practical test / action",
-  "Before you accept an internal move, run it through three questions.",
-  ["Before you accept an internal move, run it through three questions.",
-   "Will the work change?",
-   "Will my judgment expand?",
-   "Will the evidence travel?",
-   "Three yeses and you have a strong developmental case.",
-   "Two yeses and there is something specific to go and negotiate before you "
-   "accept.",
-   "Zero or one, and you may be moving without adding much to what you can "
-   "carry next.",
-   "That does not make it wrong.",
-   "Better pay, better hours, a better manager, stability while your life is "
-   "complicated — those are real reasons.",
-   "Just name the trade honestly. You do not have to call every useful move "
-   "growth."]),
+   "It was not simply more work. It was different work.",
+   "And I did not see that clearly at the time. I noticed the load first, the "
+   "way most of us do.",
+   "What took longer to notice was that the kind of problem coming to me had "
+   "changed, and that somebody had decided I could hold it.",
+   "More work is a load.",
+   "Different work is a signal — about what the people around you are now "
+   "willing to trust you to learn, to decide, and to own.",
+   "So when something lands on you, that is the question worth asking.",
+   "What am I being trusted with?"]),
+ ("Video_5_Short_4_Will_The_Evidence_Travel.docx","Practical test / action",
+  "Before you take the move, ask what you will be able to show for it.",
+  ["Before you take the move, ask what you will be able to show for it.",
+   "In eighteen months, when this is finished, what is the evidence?",
+   "Three things make evidence travel.",
+   "A result somebody outside your company could understand.",
+   "A decision you made that shows judgment rather than effort.",
+   "And range — proof that you can work somewhere you had not worked before.",
+   "If a move produces none of those, it may still be a good year. It is just "
+   "not a good piece of evidence, and you want to know that before you take "
+   "it.",
+   "Be careful with internal moves in particular, because this is where they "
+   "are weakest.",
+   "A lot of internal work is legible only inside the building.",
+   "If you cannot describe the outcome without your employer's vocabulary, it "
+   "will not travel, however well it went."]),
 ]

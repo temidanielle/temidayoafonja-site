@@ -1,4 +1,4 @@
-VIDEO 4 — v5.0 BELONGING + IDENTITY FINAL RECORDING PACKAGE
+VIDEO 4 — v5.1 BELONGING + IDENTITY FINAL RECORDING PACKAGE
 
 Title:             How to Explain Your Career Change
 Thumbnail:         YOUR CAREER MAKES SENSE
@@ -13,10 +13,12 @@ Viewer recognition:Someone looking at their own CV thinking: this makes
 
 Personal proof:    A senior-manager friend at EY used to joke that Temidayo
                    was a cat with nine lives. That is the whole approved
-                   fact. The original conversation is not invented and NO
-                   cat imagery is used anywhere. Plus the December 2008
-                   accounting degree and financial-crisis context, and her
-                   own admission that she used to explain it badly.
+                   fact. The original conversation is not invented, the
+                   friend's pronouns are not established (the script says
+                   "they"), and NO cat imagery is used anywhere. Plus the
+                   December 2008 accounting degree and financial-crisis
+                   context, going back to school, and the professional
+                   certification not passed first time.
 
 Memory structure:  The three-sentence career explanation.
   "My career has moved across..."
@@ -27,13 +29,13 @@ Primary CTA:       Free Career Evidence Starter
 CTA URL:           https://temidayoafonja.com/career-evidence-starter
 Watch next:        Video 5 — Should I Make an Internal Move? 3 Questions to Decide
 
-Script:            Freshly written for v5.0. 1,548 spoken words, about 10:40 at
+Script:            Freshly written for v5.1. 1,366 spoken words, about 9:25 at
                    145 words per minute.
 Slides:            UNCHANGED. All 11 slides were mapped against the new
                    script and every one still serves it.
 Reveal deck:       UNCHANGED. 26 frames.
-Speaker notes:     Rewritten for the v5.0 narration.
-Shorts:            All four rewritten for v5.0.
+Speaker notes:     Rewritten for the v5.1 narration.
+Shorts:            All four rewritten for v5.1.
 Editor directions: Separated from recording copy.
 
 ----------------------------------------------------------------------
@@ -42,22 +44,22 @@ WHAT EACH FILE IS
 
 LONG_FORM/
 
-  Video4TeleprompterScriptwithslidemarkers_HIT_v5.0.docx
-  Video4TeleprompterScriptwithslidemarkers_HIT_v5.0.txt
+  Video4TeleprompterScriptwithslidemarkers_HIT_v5.1.docx
+  Video4TeleprompterScriptwithslidemarkers_HIT_v5.1.txt
       Temidayo's recording copy. Spoken script in large text; slide markers
       in tinted bands. The markers are not spoken.
 
-  Video4ReadingScriptnomarkers_HIT_v5.0.docx
-  Video4ReadingScriptnomarkers_HIT_v5.0.txt
+  Video4ReadingScriptnomarkers_HIT_v5.1.docx
+  Video4ReadingScriptnomarkers_HIT_v5.1.txt
       The same spoken words with the slide markers removed.
 
-  Video_4_EDITOR_ONLY_HIT_Brief_v5.0.docx
+  Video_4_EDITOR_ONLY_HIT_Brief_v5.1.docx
       For the editor. Fourteen sections, from the locked metadata and the
       identity promise through the belonging beat, the first-30 H.I.T. map,
       the slide and reveal maps, factual boundaries, the identity exit and
       the notes record.
 
-  Video_4_Publishing_Package_HIT_v5.0.docx
+  Video_4_Publishing_Package_HIT_v5.1.docx
       Title, thumbnail, search language, the copy-ready description,
       working chapter estimates, pinned comment and tag field.
 
@@ -65,40 +67,44 @@ SHORTS/
 
   Four recording documents. Recording copy only, no editor directions.
 
-  Video_4_Shorts_EDITOR_ONLY_HIT_Brief_v5.0.docx
+  Video_4_Shorts_EDITOR_ONLY_HIT_Brief_v5.1.docx
       For the editor. Hooks and visual treatment for all four.
 
 ----------------------------------------------------------------------
 
 ALL FILES IN THIS PACKAGE
 
-  LONG_FORM/Video4ReadingScriptnomarkers_HIT_v5.0.docx
-  LONG_FORM/Video4ReadingScriptnomarkers_HIT_v5.0.txt
-  LONG_FORM/Video4TeleprompterScriptwithslidemarkers_HIT_v5.0.docx
-  LONG_FORM/Video4TeleprompterScriptwithslidemarkers_HIT_v5.0.txt
-  LONG_FORM/Video_4_EDITOR_ONLY_HIT_Brief_v5.0.docx
-  LONG_FORM/Video_4_Publishing_Package_HIT_v5.0.docx
-  SHORTS/Video_4_Short_1_It_Is_Not_Landing.docx
-  SHORTS/Video_4_Short_2_Chronology_Is_Not_Explanation.docx
-  SHORTS/Video_4_Short_3_Context_Is_Not_An_Apology.docx
+  LONG_FORM/Video4ReadingScriptnomarkers_HIT_v5.1.docx
+  LONG_FORM/Video4ReadingScriptnomarkers_HIT_v5.1.txt
+  LONG_FORM/Video4TeleprompterScriptwithslidemarkers_HIT_v5.1.docx
+  LONG_FORM/Video4TeleprompterScriptwithslidemarkers_HIT_v5.1.txt
+  LONG_FORM/Video_4_EDITOR_ONLY_HIT_Brief_v5.1.docx
+  LONG_FORM/Video_4_Publishing_Package_HIT_v5.1.docx
+  SHORTS/Video_4_Short_1_A_Career_That_Needs_Explaining.docx
+  SHORTS/Video_4_Short_2_Chronology_Is_Not_Portability.docx
+  SHORTS/Video_4_Short_3_Do_Not_Invent_The_Plan.docx
   SHORTS/Video_4_Short_4_Three_Sentences.docx
-  SHORTS/Video_4_Shorts_EDITOR_ONLY_HIT_Brief_v5.0.docx
+  SHORTS/Video_4_Shorts_EDITOR_ONLY_HIT_Brief_v5.1.docx
   README_FINAL.txt
   SHA256SUMS.txt
 
 ----------------------------------------------------------------------
 
-WHAT v5.0 CHANGED
+WHAT v5.1 CHANGED
 
-A genuine editorial rebuild, not a patch. The script was written fresh under
-the belonging-first register. It now opens inside the viewer's head - your CV
-makes sense to you because you lived it - and then in the exact moment the
-problem shows up, halfway into the second job, when you can hear it not
-landing. Temidayo names her own failure before offering a method. The three
-sentences do not arrive until about 2:28. The video ends on no longer
-apologising for a career that makes sense.
+The spoken script was written fresh again for v5.1. It opens inside the
+viewer's head - your career makes sense to you because you lived it, and you
+are less sure it makes sense to anybody else - then hands them the joke a
+colleague made about Temidayo's own path. The chronology-versus-portability
+distinction now carries the interpretation, and the three sentences do not
+arrive until about 2:46. The video ends on describing a career that did not
+go in a straight line without apologising for it. Video 1 owns the job-offer
+/ Uber transition story; it is not retold here.
 
-The prior v4.0 package is superseded. Its hashes are preserved here:
+The prior v5.0 package is superseded. Its hash is preserved here:
+  package ZIP 1f59e2ba88c5c37b9363005030e037ce6d777bd0108d23c29a6f84fb2e2570d2
+
+The v4.0 package before it is also on record:
   package ZIP 245fd3be2e15090fb6f7bf86d0b5eea9332ab7d8f2171d8a9d48bef99463674d
   main deck   cd9b7b80fa2860b313ce19c501b601b2e69f9e6ed538adeeec56957673ff271f
   reveal deck 04cdf28e49d46d754f7db482697cd36d054f047bda7e64d6caadce955eb5bb1e

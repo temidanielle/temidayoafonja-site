@@ -1,67 +1,74 @@
 # -*- coding: utf-8 -*-
-"""Video 1 Shorts — freshly written for v5.0. Recognition before teaching,
-one simple idea each. Factual boundaries carried exactly from the source
-record: the 47 to 75 measure is ONE measure of new-hire integration, from a
-redesign Temidayo led WITH HER TEAM."""
+"""Video 1 Shorts — freshly written for v5.1. Short 1 carries the established
+job-offer / Uber transition story. It does not mention Deloitte at all, so no
+causality can be implied. Nothing here may be embellished."""
 
 SHORTS = [
- ("Video_1_Short_1_Does_It_Still_Count.docx","Recognition / story",
-  "You are about to change jobs, and part of you is wondering whether the last few years still count.",
-  ["You are about to change jobs, and part of you is wondering whether the "
-   "last few years still count.",
-   "I know that feeling. I have changed function and industry more than once.",
-   "Here is what I had to learn.",
-   "A new place makes you new to that place.",
-   "It does not make you new to every problem in it.",
-   "The rules change. The language changes. The people you have to convince "
-   "change.",
-   "But the thing you got good at — reading a situation, deciding under "
-   "pressure, making something complicated make sense — that walked in with "
-   "you.",
-   "You are not starting from zero.",
-   "You are starting from somewhere you have not learned to describe yet."]),
- ("Video_1_Short_2_A_Word_Is_Not_Evidence.docx","Distinction / myth",
-  "Years of experience do not turn into something you can carry just because you have them.",
-  ["Years of experience do not turn into something you can carry just because "
-   "you have them.",
-   "Some of what you know belongs to the company. The systems. The people. "
-   "The way that one place does things.",
-   "What actually travels is narrower, and better.",
-   "The judgment you have shown. The problems you know how to work through. "
-   "And evidence someone outside can understand.",
-   "So do not say “I have twenty years of experience” and stop there.",
-   "Ask yourself what you can do now because of those years.",
-   "Ask where you have already shown it.",
-   "And ask what would still be true if the company language disappeared.",
-   "A word you like is not evidence.",
-   "Evidence is something your work actually made you do."]),
+ ("Video_1_Short_1_The_Role_Disappeared.docx","Recognition / story",
+  "I had accepted a job offer, and then it stopped existing.",
+  ["I had accepted a job offer, and then it stopped existing.",
+   "An acquisition rescinded the role before I ever got to start it.",
+   "Within a few months, I was driving Uber.",
+   "I was not being strategic about my career. I was thinking about income, "
+   "and about what I was supposed to do next.",
+   "And underneath all of it was a question I could not name yet.",
+   "Did everything I had done before this still count?",
+   "Here is what took me too long to see.",
+   "The role had disappeared. My experience had not.",
+   "I still knew how to walk into a messy problem and find the shape of it. I "
+   "still knew how to read evidence and help people make a decision they had "
+   "been avoiding.",
+   "A changed circumstance can make you feel as though you lost your career.",
+   "What you actually lost was one context for using it."]),
+ ("Video_1_Short_2_New_Place_Not_New_To_Everything.docx","Distinction / myth",
+  "Being new to a place is not the same as being new to the work.",
+  ["Being new to a place is not the same as being new to the work.",
+   "When people change job, function or industry, they tend to make one of two "
+   "mistakes.",
+   "The first is assuming everything transfers. That one makes you "
+   "underestimate the learning curve and turn up overconfident.",
+   "The second is assuming nothing transfers. That one makes you delete years "
+   "of your own formation and start from a place you are not standing in.",
+   "Both are expensive.",
+   "And I want to be honest with you about the first one, because it is the "
+   "part career advice usually skips.",
+   "Some of what you know really does belong to a company, an industry, or the "
+   "people around the work. Markets change. Skills go stale.",
+   "You can know how to read a failing process and still need six months to "
+   "learn a new industry's language and risks.",
+   "That is not starting from zero.",
+   "That is bringing something proven into a real learning curve."]),
  ("Video_1_Short_3_Forty_Seven_To_Seventy_Five.docx","Proof / personal evidence",
-  "Let me show you the difference between naming a project and showing what changed.",
-  ["Let me show you the difference between naming a project and showing what "
-   "changed.",
-   "I could say: I led an onboarding redesign.",
-   "That is true. And someone outside that company still has no idea what "
-   "was different afterwards.",
-   "Here is the version that carries:",
-   "I led an onboarding redesign with my team, and one measure of how well "
-   "new hires felt integrated moved from 47 to 75.",
-   "The number is not the point.",
-   "The point is that I can say what it measured, what I led, and what "
-   "changed.",
-   "And I say plainly that it was one measure, and that it was team work.",
-   "Being careful about the edges of your claim does not weaken it.",
-   "It is the reason someone believes the middle of it."]),
- ("Video_1_Short_4_Look_Under_The_Title.docx","Practical test / action",
-  "Put your job title aside for one minute and try this.",
-  ["Put your job title aside for one minute and try this.",
-   "Write down three times people relied on your judgment.",
-   "Not three projects. Three moments where somebody needed you to work "
-   "something out.",
-   "Now look for the verb that keeps showing up.",
-   "Were you diagnosing? Stabilising something? Translating between people? "
-   "Designing? Getting people lined up behind a decision?",
-   "That repeated verb is usually the thing that travels.",
-   "But do not stop at the word.",
-   "Put your three moments underneath it.",
-   "The word is what you say. The moments are why anyone believes you."]),
+  "Here is the difference between naming your work and proving it.",
+  ["Here is the difference between naming your work and proving it.",
+   "Version one. I led an onboarding redesign.",
+   "That is true. But it names an activity. It does not tell anybody what was "
+   "different afterwards.",
+   "Version two. I led an onboarding redesign with my team, and one measure of "
+   "how well new hires felt integrated moved from 47 to 75.",
+   "That sentence is not stronger because there is a number in it.",
+   "It is stronger because somebody who was not there can hear what I led and "
+   "what changed.",
+   "And I want to be precise, because the precision is the point.",
+   "It was one measure of how well new hires felt integrated. It is not a "
+   "claim about everything that redesign touched. And it was my team's work, "
+   "which I led.",
+   "Being that careful makes the evidence stronger.",
+   "People trust the person who tells them the edges of their own claim."]),
+ ("Video_1_Short_4_Find_The_Repeated_Verb.docx","Practical test / action",
+  "Take one title off your CV and try this.",
+  ["Take one title off your CV and try this.",
+   "Your title tells people where your work sat. It says almost nothing about "
+   "what the work taught you to see.",
+   "So set the title aside for a minute.",
+   "Write down three moments when someone relied on your judgment. Not three "
+   "projects. Three moments.",
+   "Then look for the verb that keeps appearing.",
+   "Were you diagnosing? Steadying something? Translating between people who "
+   "could not hear each other? Designing? Getting a group to commit?",
+   "One caution before you do it. A word is not evidence. Calling yourself "
+   "strategic proves nothing to anybody.",
+   "The moments are the evidence. The verb is just what they have in common.",
+   "And that repeated verb is usually where the part that travels becomes "
+   "visible."]),
 ]

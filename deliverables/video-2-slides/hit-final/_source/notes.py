@@ -1,149 +1,15 @@
 # -*- coding: utf-8 -*-
-"""Video 2 v5.0 speaker/editor notes. Notes parts only; no slide XML.
-Timings are working estimates at 145 wpm for the 1,632-word script (~11:15)."""
-
-NOTES=[
-"""Timing: approximately 0:34 to 1:21.
-
-Do NOT open on this slide. Begin full-screen on Temidayo and let the opening
-land: the compliment that is meant, the private question, "I have had to answer
-that question about myself more than once", and the promise that this is not a
-scare video.
-
-Recognition comes before anything is taught.
-
-Bring the title up under the channel line, then hold for the tone-setting
-block: being valuable where you are is real value, it is not a trap and not a
-warning sign. Being paid well, being trusted, being the person everyone calls —
-none of that is the problem.
-
-NON-ALARMIST IS A HARD RULE for this whole video. No red, no warning graphics,
-no countdown, no urgency motifs, anywhere.""",
-"""Timing: approximately 1:21.
-
-The central distinction. Reveal the second question after the first has landed.
-
-This section explains the mechanism, and it must stay generous: the viewer's
-knowledge is real skill, some of it just belongs to the room they are standing
-in. The company knows why they matter because they watched it happen. Another
-company is not being unfair — it simply cannot read the evidence.
-
-Closing beat: "praise tells you that you matter here. It cannot tell you how
-easily what you do travels." Let it sit before the tests begin.""",
-"""Timing: approximately 2:50, holding to about 2:53.
-
-Section card. Hold briefly, then back to presenter.
-
-Note that the framework does not arrive until nearly three minutes. That is
-deliberate: the viewer is identified before they are taught.""",
-"""Timing: approximately 2:53.
-
-Show the company-bound sentence first, then the version that travels.
-
-Temidayo stands in as the listener — "Outside it, I hear the name of a process.
-I do not know what you are actually good at." Keep her on camera so it reads as
-a conversation.
-
-FACTUAL BOUNDARY: the QBR sentence is a generic example, not a real client. No
-employer, metric or result anywhere in this video.
-
-Close on the reassurance: if the sentence collapses, the value is real and the
-description was simply built for an audience that already knew them.""",
-"""Timing: approximately 4:16, holding to about 4:22.
-
-Section card. Hold briefly, then back to presenter.""",
-"""Timing: approximately 4:22.
-
-Reveal the evidence types one at a time.
-
-This test is explicitly not about visibility or popularity. No job offer, no
-audience, no public profile required. Say that plainly.
-
-The indispensable trap is named at the viewer and stays even-handed: depending
-on you raises how much they need you; it does not automatically make you
-easier for anyone else to understand. Two different kinds of value.
-
-Close on the permission line: if nothing comes to mind yet, that is not a
-verdict — it is something untested.""",
-"""Timing: approximately 5:56, holding to about 6:00.
-
-Section card. Hold briefly, then back to presenter.""",
-"""Timing: approximately 6:00.
-
-Reveal the three questions, then the new-judgment versus same-work-faster
-contrast.
-
-Speed is not dismissed. The line to protect is "You can get much better at work
-you already know how to do. That is real, and it is not the same thing as your
-range getting bigger." Both are allowed to be fine.""",
-"""Timing: approximately 7:07.
-
-The consolidation card. Reveal the three tests in order.
-
-Do not add a fourth item, an acronym or a slogan. The three tests are the only
-memory device in this video.""",
-"""Timing: approximately 7:21.
-
-Hold the two questions side by side while Temidayo walks the four readings.
-
-Two lines carry the tone here: "That is a translation problem, not a value
-problem", and "Not panic. Attention." Neither may be cut.
-
-One quarter is not a pattern. No diagnostic treatment, no scorecard.""",
-"""Timing: approximately 8:19.
-
-The section that keeps the video honest, and the longest single stretch. Give
-it room.
-
-Progressive reveal of the four options. The documentation option keeps its
-boundary verbatim: in your own words, at a level you are permitted to share,
-nothing confidential or employer-owned.
-
-Then the honest limits, spoken plainly: this will not stop a restructure, or
-control a hiring market or a reorg. What it changes is WHEN you find out.
-
-IDENTITY EXIT, at about 10:01: "Not a plan for leaving. The habit of checking —
-so you are the person who already knows what you carry, before anybody else
-makes the timing decision for you."
-
-That is the point of the video. If the edit runs long, cut something else.""",
-"""Timing: approximately 10:16.
-
-Calm and brief. The only resource invitation in the video, and it is the
-Capability Formation Field Kit.
-
-It lands AFTER the identity bridge, so it reads as the next step rather than an
-advert. Keep that order. Do not add Keep the Proof or the Career Evidence
-Starter.
-
-Show the real Field Kit artwork briefly. Before publishing, verify the live
-/fieldkit redirect and the current listing.""",
-"""Timing: approximately 10:49 to the end, about 11:15.
-
-This card was corrected: it reads "3 Things to Do Before Quitting Your Job",
-the locked Video 3 title, matching what Temidayo says. You can hold it on
-screen while she names the video.
-
-Closing lines: "Being valuable here is worth having. Being understood elsewhere
-is worth building." Stay on her for both.
-
-Do not summarize the video again.
-
-The right side of the frame is left open for the YouTube linked-video
-end-screen element. Hold the final frame for at least 12 seconds.""",
-]
-FRAMES=[1,1,1,2,1,4,1,4,1,1,4,1,1]
+"""Video 2 v5.1 speaker/editor notes. Notes parts only; no slide XML.
+Generated from the canonical v5.1 script and the hand-written per-slide
+directions. Timings are working estimates at 145 wpm."""
+NOTES=['Timing: approximately 0:34.\n\nSlide 1 — Title.\n\nCue — the line that lands on this slide:\n“I’m Temidayo Afonja.”\n\nDo NOT open on this slide. Begin full screen on Temidayo. The opening is\nfour beats: the compliment, the private question, “I have had to answer that\nquestion about myself more than once”, and the three tests.\n\nBring the title card in only on “I’m Temidayo Afonja.”\n\nNON-ALARMIST IS A HARD RULE for this whole video. What follows on this slide is\nthe explicit reassurance — being valuable where you are is real value, it is\nnot a trap and not a warning sign. If the edit makes praise, pay or being\nrelied on look like a symptom, the video has failed.\n\nSingle state. Reveal frame 1 in the build deck.', 'Timing: approximately 1:33.\n\nSlide 2 — Valuable Here / Legible Elsewhere.\n\nCue — the line that lands on this slide:\n“Here is what makes this so hard to notice.”\n\nThe mechanism slide. Reveal the contrast, then let her talk over it.\n\n“Your company knows exactly why you matter. They watched you earn it.” is a\ncompliment and must be delivered as one.\n\n“They are not being unfair when they cannot see it. They simply cannot read the\nevidence.” — this is the line that keeps the video generous about other\nemployers. Keep it.\n\nHer own crossings across functions, employers and industries are the proof\nhere. No employer, client, metric or result is attached to this beat, and there\nis no number anywhere in this video.\n\nSingle state. Reveal frame 2 in the build deck.', 'Timing: approximately 2:52.\n\nSlide 3 — 01 Remove the Company Nouns.\n\nCue — the line that lands on this slide:\n“The first test is to remove the company nouns.”\n\nSection break only. The three tests do not arrive until about 2:52, which is\ndeliberate — recognition first.\n\nSingle state. Reveal frame 3 in the build deck.', 'Timing: approximately 2:56.\n\nSlide 4 — Test One.\n\nCue — the line that lands on this slide:\n“Take one sentence you would use to describe your work, and delete every word that only exists inside your employer.”\n\nThe before and after sentence is the centre of this slide. Reveal the before,\nlet it sit, then the after.\n\nFACTUAL BOUNDARY: the QBR sentence is a generic worked example. There is no\nclient, employer, number or result behind it. Do not caption it as a case\nstudy, do not add a logo, do not imply it is real.\n\n“It is a diagnostic” — not CV advice. Keep that framing.\n\nReveal states: 2. Reveal frame 4–5 in the build deck.', 'Timing: approximately 4:10.\n\nSlide 5 — 02 Find Outside-Context Evidence.\n\nCue — the line that lands on this slide:\n“The second test is to find outside-context evidence.”\n\nSection break only.\n\nSingle state. Reveal frame 6 in the build deck.', 'Timing: approximately 4:13.\n\nSlide 6 — Test Two.\n\nCue — the line that lands on this slide:\n“Think of a time your judgment was useful beyond your immediate role, your immediate team, or your employer.”\n\nThe examples of outside-context evidence reveal one at a time.\n\n“It is the only evidence that has already been tested on people who did not owe\nyou the benefit of the doubt.” That is the reason the test exists. Do not cut\nit.\n\nThe paragraph about deep versus wide is the non-alarmist safeguard in this\nsection. Finding little outside-context evidence is not a verdict on the\nviewer. Keep both sentences.\n\nReveal states: 4. Reveal frame 7–10 in the build deck.', 'Timing: approximately 5:35.\n\nSlide 7 — 03 Read the Last 90 Days.\n\nCue — the line that lands on this slide:\n“The third test is to read your last 90 days.”\n\nSection break only.\n\nSingle state. Reveal frame 11 in the build deck.', 'Timing: approximately 5:39.\n\nSlide 8 — Test Three.\n\nCue — the line that lands on this slide:\n“Not whether you were busy.”\n\nThe questions reveal one at a time.\n\nThe skipped question — new judgment, or the same work faster — is the payoff of\nthe section. Give it room before the answer.\n\n“Both are fine. You just want to know which one you have been doing.” No\njudgement in the delivery, and no visual that codes speed as bad.\n\nReveal states: 4. Reveal frame 12–15 in the build deck.', 'Timing: approximately 6:36.\n\nSlide 9 — The Three Tests.\n\nCue — the line that lands on this slide:\n“So those are the three.”\n\nThe three tests together on screen for the first time. Short slide.\n\nSingle state. Reveal frame 16 in the build deck.', 'Timing: approximately 6:43.\n\nSlide 10 — Read the Pattern.\n\nCue — the line that lands on this slide:\n“And I want to tell you how to read them, because one test on one bad quarter tells you nothing.”\n\nThe two questions held side by side.\n\n“Do not diagnose your career from a single quarter.” This slide exists to stop\nthe video producing anxiety from one bad stretch. It is not optional.\n\nClose on “Not panic. Attention.” Let it land.\n\nSingle state. Reveal frame 17 in the build deck.', 'Timing: approximately 7:29.\n\nSlide 11 — Before You Leave.\n\nCue — the line that lands on this slide:\n“Which brings me to the part you might assume is coming, and it is not.”\n\nThe things the viewer could do without going anywhere reveal one at a time.\n\nThen the honest limits: this will not stop a restructure, control a hiring\nmarket, or turn a bad year into a good one.\n\nTHE IDENTITY EXIT sits at the end of this slide: “Not a plan for leaving. The\nhabit of checking.” It is the point of the video. If the edit runs long, cut\nsomething else.\n\nReveal states: 4. Reveal frame 18–21 in the build deck.', 'Timing: approximately 8:46.\n\nSlide 12 — Capability Formation Field Kit.\n\nCue — the line that lands on this slide:\n“If you want a fuller read than three tests can give you, I made the Capability Formation Field Kit.”\n\nShow the real Field Kit artwork briefly. One CTA in this video — do not add\nKeep the Proof or the Career Evidence Starter.\n\nBefore publishing, verify the live /fieldkit redirect and the current listing.\n\nSingle state. Reveal frame 22 in the build deck.', 'Timing: approximately 9:07.\n\nSlide 13 — Watch Next.\n\nCue — the line that lands on this slide:\n“And if you are further along than checking — if some part of you has already decided — there is a different conversation to have.”\n\nThe Video 3 route. This card already carries the corrected title, “3 Things\nto Do Before Quitting Your Job”. Verify it on the recording screen.\n\n“I am not going to try to talk you into staying. I want to help you leave with\nmore than exhaustion.” — that is the Video 3 promise, previewed honestly.\n\nSign off clean. No music sting over the last two lines.\n\nSingle state. Reveal frame 23 in the build deck.']
+FRAMES=[1, 1, 1, 2, 1, 4, 1, 4, 1, 1, 4, 1, 1]
 
 def reveal_notes():
     out=[]
-    for s,(n,note) in enumerate(zip(FRAMES,NOTES),1):
-        for k in range(1,n+1):
-            head=("Reveal frame %d of %d — main slide %d."%(k,n,s)
-                  if n>1 else "Single-state frame — main slide %d."%s)
+    for s,(k,note) in enumerate(zip(FRAMES,NOTES),1):
+        for j in range(1,k+1):
+            head=("Reveal frame %d of %d — main slide %d."%(j,k,s)
+                  if k>1 else "Single-state frame — main slide %d."%s)
             out.append(head+"\n\n"+note)
     return out
-
-if __name__=="__main__":
-    r=reveal_notes()
-    assert len(NOTES)==13 and len(r)==23, (len(NOTES),len(r))
-    print("main notes:",len(NOTES)," reveal notes:",len(r))

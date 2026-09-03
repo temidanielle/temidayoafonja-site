@@ -34,51 +34,56 @@ RECOGNITION=[
  "while they were still talking. That moment is the doorway into this video.",
  "They do not need confidence advice. They need a structure that lets a true "
  "story be heard."]
-BELONGING_LEAD=("Recognition first, then her own version of the same failure, "
- "then the distinction, and only then the method at about 2:28.")
+BELONGING_LEAD=("Recognition first, then the joke a colleague made about her "
+ "own career, then the chronology-versus-portability distinction, and only then "
+ "the method at about 2:46.")
 BELONGING=["The established fact in full: a senior-manager friend at EY used to "
  "joke that Temidayo was a cat with nine lives, because her career kept "
  "turning up somewhere that looked unrelated to the last place.",
  "Do NOT invent the original conversation, do not script the friend's words "
  "beyond the joke, and use NO cat imagery of any kind.",
- "Her own failure is named plainly: “for a long time, when I explained it, I "
- "made it sound even more scattered than it really was.” That admission is "
- "what earns the method.",
+ "Her own admission is named plainly: she made the chronology mistake herself "
+ "for years, and the first turn in 2008 was not a strategy at all. That "
+ "admission is what earns the method.",
+ "The friend's pronouns are not established. The script says “they”. Do not "
+ "change it to he or she in captions or in the description.",
  "December 2008 accounting degree and the financial crisis, exactly as spoken "
  "and no further detail."]
 
 HIT_ROWS=[
- ["0:00–0:06","“You look at your own CV and it makes sense to you, because you "
-  "lived it.”","Recognition, from inside the viewer's head.",
+ ["0:00–0:07","“You look at your own career and it makes sense to you, "
+  "because you lived it.”","Recognition, from inside the viewer's head.",
   "YOUR CAREER MAKES SENSE","Open on Temidayo, direct to camera. No title "
   "card. NO cat imagery.","None yet.","The viewer is described accurately in "
   "one sentence."],
- ["0:06–0:16","“Then someone asks you to walk them through it, and halfway "
-  "into the second job you can hear it — it is not landing.”",
-  "The exact moment the problem shows up.","—",
-  "Stay on her face. This is the doorway.","—",
+ ["0:07–0:11","“You are less sure it makes sense to anybody else.”",
+  "Names the private doubt in nine words.","—",
+  "Stay on her face. Do not cut on this line.","—",
   "The viewer recognises a specific experience, not a topic."],
- ["0:16–0:22","“A senior-manager friend at EY used to joke that I was a cat "
-  "with nine lives.”","Lived proof; a real remark, not a claim.","—",
+ ["0:11–0:19","“A friend of mine, a senior manager at EY, used to joke that I "
+  "was a cat with nine lives.”",
+  "Lived proof; a real remark, not a claim.","—",
   "No cat imagery. Restrained text only if anything at all.",
   "A real thing a colleague said about her real career.",
   "The viewer sees she has the same problem."],
- ["0:22–0:33","“The career was not the problem. The explanation was. So let me "
-  "show you how I learned to explain mine, and then we will do yours.”",
-  "The turn, and the offer.","3 STEPS","Return cleanly to Temidayo.",
+ ["0:19–0:30","“They meant my career had a lot of chapters, and they were not "
+  "wrong. So let me show you the three sentences I use to explain it now.”",
+  "The turn, and the offer.","3 SENTENCES","Return cleanly to Temidayo.",
   "Her own relearning becomes the viewer's method.",
-  "Payoff explicit by 33 seconds."]]
-HOOK=("You look at your own CV and it makes sense to you, because you lived it.",
- "YOUR CAREER MAKES SENSE",
+  "Payoff explicit by 30 seconds."]]
+HOOK=("You look at your own career and it makes sense to you, because you "
+ "lived it.","YOUR CAREER MAKES SENSE",
  "Direct to camera, then the chronology-versus-portability contrast. No "
  "résumé-scroll animation, no timeline gag, no cat imagery.",
- "The cat-with-nine-lives joke, her December 2008 start, and her own admission "
- "that she used to explain it badly.",
- "A three-sentence method for explaining a career change, by 0:33.")
+ "The cat-with-nine-lives joke, her December 2008 start, the eight industries, "
+ "and the certification she did not pass first time.",
+ "A three-sentence method for explaining a career change, by 0:30.")
 
 SLIDE_NOTE=("Eleven markers, mapping to the existing eleven-slide deck in "
- "order. The v5.0 script was mapped against the deck and every slide still "
- "serves the new story, so NO slide text was changed in this rebuild.")
+ "order. The freshly written v5.1 script was mapped against the deck slide by "
+ "slide and every slide still serves it, so NO visible slide text was changed "
+ "in this rebuild. Speaker notes were rewritten throughout for the v5.1 "
+ "narration.")
 SLIDE_MAP=["Career Path","Chronology / Portability","1 Name the Chapters Briefly",
  "2 Find the Repeated Work","Look Beneath the Nouns","3 Explain the Direction",
  "Three-Sentence Structure","Do Not Invent a Perfect Plan","Explanation Test",
@@ -113,24 +118,27 @@ CTA_NOTES=["It arrives after the identity bridge, so it reads as the next step "
  "rather than an advert. Keep that order.",
  "Use the direct public landing-page URL only. Do not expose a PDF link and "
  "do not restore Keep the Proof."]
-IDENTITY_LINE=("“I want you to stop apologising for a career that actually "
- "makes sense — and to be able to say what it built, plainly, without "
- "inventing a plan you never had.”")
+IDENTITY_LINE=("“I want you to reach the point where you can describe a career "
+ "that did not go in a straight line without apologising for it, and without "
+ "inventing a plan you were never running.”")
 IDENTITY_PLACEMENT=("It sits at the end of the Explanation Test section, after "
  "the honest limits about what this cannot do, and before the Starter. It is "
  "the point of the video. If the edit runs long, cut something else.")
-BEATS=["“I was handing the person across the table a pile of parts and asking "
- "them to assemble it.”","“Context explains a transition. It is not an "
- "apology.”","“A forced story is worse than a messy one.”",
- "“Out loud, not in your head.”","“If one of your chapters does not fit a tidy "
- "progression, leave it untidy.”"]
-SLIDE_XML_RECORD="Slide XML, geometry, typography, palette and media: UNCHANGED."
+BEATS=["“Written down like that, it looks like somebody who could not settle.”",
+ "“Your career does not become coherent because you pretend every move was "
+ "planned.”",
+ "“Justifying in sentence one is what makes a career sound defensive.”",
+ "“Say it in about forty seconds, and then stop talking.”",
+ "“Saying so is not a weakness in the story. It is what makes the rest of it "
+ "credible.”"]
+SLIDE_XML_RECORD=("Slide XML, geometry, typography, palette and media: "
+ "UNCHANGED. Speaker notes: rewritten for the v5.1 narration.")
 
-SHORT_BEATS=["“They could not. They were not there.”",
- "“Let me show you why my career was never a designed plan.”",
- "“Now say all three out loud about your own career.”"]
+SHORT_BEATS=["“You are less sure it makes sense to anybody else.”",
+ "“Chronology is where you have been. Portability is what travelled with "
+ "you.”","“Say it out loud, then stop talking.”"]
 SHORT_BLOCKS=[
- ("SHORT 1","Recognition / story","IT IS NOT LANDING",
+ ("SHORT 1","Recognition / story","A CAREER THAT NEEDS EXPLAINING",
   ["FACTUAL BOUNDARY: the joke is the whole fact. No invented conversation, no "
    "scripted words for the friend, and NO CAT IMAGERY.",
    "Visual:  A PILE OF PARTS  →  SOMETHING THEY CAN FOLLOW",
@@ -139,29 +147,27 @@ SHORT_BLOCKS=[
   ["Restrained two-column contrast. No résumé-scroll animation.",
    "Temidayo speaks as the listener here. Keep her on camera for it.",
    "End on:  WHAT CAME WITH YOU?"]),
- ("SHORT 3","Proof / personal evidence","CONTEXT IS NOT AN APOLOGY",
+ ("SHORT 3","Proof / personal evidence","DO NOT INVENT THE PLAN",
   ["FACTUAL BOUNDARY: the approved facts are the accounting degree, December "
-   "2008 and the financial crisis. No employer, metric or result, and no "
-   "implication the move was strategic.",
-   "End on:  LEAVE IT UNTIDY."]),
+   "2008, the financial crisis, going back to school, and the professional "
+   "certification not passed first time. No employer, metric or result, and no "
+   "implication the 2008 move was strategic.",
+   "End on:  HONEST BEATS TIDY."]),
  ("SHORT 4","Practical test / action","3 SENTENCES",
   ["Reveal the three stems one at a time as restrained text.",
    "The evidence rule is the payoff, not a throwaway. Give it room.",
    "End on:  WHICH ONE CAN YOU NOT FINISH YET?"])]
 
-CHAPTERS=[("00:00","When Your Career Does Not Land"),
- ("00:48","What I Used to Do With My Own Chapters"),
- ("01:35","Chronology vs. What Came With You"),
- ("02:28","Sentence 1: Name the Chapters Briefly"),
- ("03:26","Sentence 2: Find the Work That Repeated"),
- ("03:56","Look Underneath the Nouns"),
- ("05:28","Sentence 3: Explain the Direction"),
- ("05:49","The Three-Sentence Explanation, With Mine"),
- ("07:05","Do Not Invent a Perfect Plan"),
- ("08:03","Test It With Three Questions"),
- ("09:31","Who You Are Becoming"),
- ("09:50","Free Career Evidence Starter"),
- ("10:11","Should I Make an Internal Move?")]
+CHAPTERS=[("00:00","A Career That Needs Explaining"),
+ ("00:30","Eighteen Years, Four Chapters, Eight Industries"),
+ ("01:30","Chronology vs. What Travelled With You"),
+ ("02:46","Sentence 1: Name the Chapters Briefly"),
+ ("03:23","Sentence 2: Find the Work That Repeated"),
+ ("05:09","Sentence 3: Explain the Direction"),
+ ("05:57","Do Not Invent a Perfect Plan"),
+ ("07:00","Test It Before You Need It"),
+ ("08:17","Free Career Evidence Starter"),
+ ("08:45","Should I Make an Internal Move?")]
 TAGS=("how to explain your career change, nonlinear career, career pivot, "
  "career change explanation, career story, transferable skills, career "
  "transition, career portability, explain career gap, experienced "
@@ -180,25 +186,30 @@ PINNED=["Which part of this is happening in your situation right now?",
 
 def desc(CH):
     return [
- "Your CV makes sense to you, because you lived it. Then someone asks you to "
- "walk them through it, and halfway into the second job you can hear it — it "
- "is not landing.",
- "A senior-manager friend at EY used to joke that I was a cat with nine lives, "
- "because my career kept turning up somewhere that looked unrelated to the "
- "last place. For a long time, the way I explained it made it sound even more "
- "scattered than it was.",
- "The career was not the problem. The explanation was.",
- "A three-part method, taught the way I would coach one person:",
+ "You look at your own career and it makes sense to you, because you lived it. "
+ "You are less sure it makes sense to anybody else.",
+ "A friend of mine, a senior manager at EY, used to joke that I was a cat with "
+ "nine lives. They meant my career had a lot of chapters, and they were not "
+ "wrong: accounting and audit, then cybersecurity and privacy, then people and "
+ "employee experience, then enterprise transformation.",
+ "Written down like that, it looks like somebody who could not settle. And for "
+ "years I made it worse by answering the question with a chronology: first I "
+ "did this, then I moved here, then I did that.",
+ "Your career does not become coherent because you pretend every move was "
+ "planned. It becomes coherent when you can name what was underneath the "
+ "moves. Three sentences do that:",
  "✨ Name your chapters briefly — orientation, not defence.",
  "✨ Find the work that repeated underneath the titles — the verbs, not the "
  "nouns.",
  "✨ Explain why your next direction follows from what you have already built.",
- "A chronology tells people where you have been. An explanation tells them "
- "what came with you.",
- "Not everything transfers, and a career story does not become coherent by "
- "pretending every move was deliberate. Some moves answer a market, or "
- "caregiving, or health, or a restructure. If a chapter does not fit a tidy "
- "progression, leave it untidy and say what you carried out of it.",
+ "Chronology is where you have been. Portability is what travelled with you. "
+ "They are not the same thing, and only one of them answers the question you "
+ "were actually asked.",
+ "And I am honest about the limits. Not everything transfers. Some moves "
+ "answer a market, or caregiving, or health, or a restructure, and mine did "
+ "too — I finished an accounting degree in December 2008, in the middle of the "
+ "financial crisis, and took the door that was open. Saying so is not a "
+ "weakness in the story. It is what makes the rest of it credible.",
  "This will not make a hiring manager say yes or make a career change easy. "
  "What it removes is the part where your own experience works against you in "
  "the room.","",
@@ -229,10 +240,12 @@ def readme_head(W,RT):
  "                   makes sense to anyone else.","",
  "Personal proof:    A senior-manager friend at EY used to joke that Temidayo",
  "                   was a cat with nine lives. That is the whole approved",
- "                   fact. The original conversation is not invented and NO",
- "                   cat imagery is used anywhere. Plus the December 2008",
- "                   accounting degree and financial-crisis context, and her",
- "                   own admission that she used to explain it badly.","",
+ "                   fact. The original conversation is not invented, the",
+ "                   friend's pronouns are not established (the script says",
+ "                   \"they\"), and NO cat imagery is used anywhere. Plus the",
+ "                   December 2008 accounting degree and financial-crisis",
+ "                   context, going back to school, and the professional",
+ "                   certification not passed first time.","",
  "Memory structure:  The three-sentence career explanation.",
  "  \"My career has moved across...\"",
  "  \"Across those chapters, I kept being asked to...\"",
@@ -240,25 +253,28 @@ def readme_head(W,RT):
  "Primary CTA:       %s"%CTA,
  "CTA URL:           %s"%CTA_URL,
  "Watch next:        %s"%NEXT_FULL,"",
- "Script:            Freshly written for v5.0. %s spoken words, about %s at"%("{:,}".format(W),RT),
+ "Script:            Freshly written for v5.1. %s spoken words, about %s at"%("{:,}".format(W),RT),
  "                   145 words per minute.",
  "Slides:            UNCHANGED. All 11 slides were mapped against the new",
  "                   script and every one still serves it.",
  "Reveal deck:       UNCHANGED. 26 frames.",
- "Speaker notes:     Rewritten for the v5.0 narration.",
- "Shorts:            All four rewritten for v5.0.",
+ "Speaker notes:     Rewritten for the v5.1 narration.",
+ "Shorts:            All four rewritten for v5.1.",
  "Editor directions: Separated from recording copy.",""]
 
 def readme_tail():
-    return ["-"*70,"","WHAT v5.0 CHANGED","",
- "A genuine editorial rebuild, not a patch. The script was written fresh under",
- "the belonging-first register. It now opens inside the viewer's head - your CV",
- "makes sense to you because you lived it - and then in the exact moment the",
- "problem shows up, halfway into the second job, when you can hear it not",
- "landing. Temidayo names her own failure before offering a method. The three",
- "sentences do not arrive until about 2:28. The video ends on no longer",
- "apologising for a career that makes sense.","",
- "The prior v4.0 package is superseded. Its hashes are preserved here:",
+    return ["-"*70,"","WHAT v5.1 CHANGED","",
+ "The spoken script was written fresh again for v5.1. It opens inside the",
+ "viewer's head - your career makes sense to you because you lived it, and you",
+ "are less sure it makes sense to anybody else - then hands them the joke a",
+ "colleague made about Temidayo's own path. The chronology-versus-portability",
+ "distinction now carries the interpretation, and the three sentences do not",
+ "arrive until about 2:46. The video ends on describing a career that did not",
+ "go in a straight line without apologising for it. Video 1 owns the job-offer",
+ "/ Uber transition story; it is not retold here.","",
+ "The prior v5.0 package is superseded. Its hash is preserved here:",
+ "  package ZIP 1f59e2ba88c5c37b9363005030e037ce6d777bd0108d23c29a6f84fb2e2570d2","",
+ "The v4.0 package before it is also on record:",
  "  package ZIP 245fd3be2e15090fb6f7bf86d0b5eea9332ab7d8f2171d8a9d48bef99463674d",
  "  main deck   cd9b7b80fa2860b313ce19c501b601b2e69f9e6ed538adeeec56957673ff271f",
  "  reveal deck 04cdf28e49d46d754f7db482697cd36d054f047bda7e64d6caadce955eb5bb1e","",

@@ -29,14 +29,16 @@ IDENTITY_NOTE=("The last line of that section is the point: once the viewer can 
  "good. Do not cut it for pace.")
 
 RECOGNITION=[
- "Someone who is doing well and has quietly started looking at job adverts. "
- "Nothing is wrong. They want different work and have decided, without quite "
- "examining it, that leaving is the only way to get it.",
+ "Someone who is doing well and is valued where they are, and who has quietly "
+ "started wondering whether they have to leave in order to get different work. "
+ "Nothing is wrong.",
  "They are not unhappy enough to be in crisis and not settled enough to stop "
- "looking. That in-between is the doorway.",
- "The opening names that exact state before offering anything."]
-BELONGING_LEAD=("Recognition first, then the reframe, then the lived proof, "
- "then the interpretation, and only then the three questions at about 1:18.")
+ "wondering. That in-between is the doorway.",
+ "The opening names that exact state in one sentence, before offering "
+ "anything."]
+BELONGING_LEAD=("Recognition first, then the promise, then the lived proof at "
+ "about 0:32, then the interpretation, and only then the three questions at "
+ "about 2:04.")
 BELONGING=["About six months after Temidayo came back from maternity leave in "
  "one chapter of her career, her scope expanded beyond the original box of the "
  "role. More landed on her — and that is not the part that mattered.",
@@ -45,40 +47,45 @@ BELONGING=["About six months after Temidayo came back from maternity leave in "
  "Do NOT name the employer. Do NOT invent an assignment, a result, a promotion, "
  "a conversation or a metric. Do not use maternity or baby stock imagery and "
  "do not dramatise the reference.",
- "“That distinction took me a while to see, and once I saw it I could not "
- "unsee it.” That is the relearning beat. Keep it."]
+ "“I did not see that clearly at the time. I noticed the load first, the way "
+ "most of us do.” That is the relearning beat. It is what keeps the story from "
+ "sounding like hindsight wisdom. Keep it."]
 
 HIT_ROWS=[
- ["0:00–0:11","“There is a version of this you have probably already had: you "
-  "are doing well where you are, and you have started looking at job adverts "
-  "anyway.”","Recognition of a specific, slightly private state.",
+ ["0:00–0:09","“You might be doing well exactly where you are, and still "
+  "wondering whether you have to leave to get different work.”",
+  "Recognition of a specific, slightly private state.",
   "YOU MAY NOT NEED TO LEAVE","Open on Temidayo, direct to camera. No title "
   "card.","None yet.","The viewer is described precisely, without judgement."],
- ["0:11–0:20","“Not because anything is wrong. You want different work, and "
-  "you have quietly decided the only way to get it is to leave.”",
-  "Names the assumption the viewer has not examined.","—",
-  "Stay on her face.","—","The viewer notices an assumption they were making."],
- ["0:20–0:28","“You may not need to leave. You may need access to work your "
-  "current role is not giving you yet.”","The reframe, and the promise.",
-  "SAME COMPANY / DIFFERENT WORK",
-  "Restrained. No office-building footage, no transfer arrows.",
-  "—","The viewer sees the question has been re-cut."],
- ["0:28–0:38","“Let me show you what that looked like for me, and then I will "
-  "give you three questions to test your own situation.”",
-  "Offer: her case, then their turn.","3 QUESTIONS",
-  "Return cleanly to Temidayo, then into the proof.",
-  "The maternity-return scope expansion, bounded.",
-  "Payoff explicit by 38 seconds."]]
-HOOK=("You are doing well where you are, and you have started looking at job "
- "adverts anyway.","YOU MAY NOT NEED TO LEAVE",
- "Direct to camera, then SAME COMPANY / DIFFERENT WORK, then MORE WORK? / "
- "DIFFERENT WORK. No maternity or baby imagery at any point.",
- "The maternity-return scope expansion, and the distinction she took a while "
- "to see.","Three questions to test an internal move, by 0:38.")
+ ["0:09–0:16","“That is a real question. I do not think it has a general "
+  "answer. It has your answer.”",
+  "Refuses to sell a universal rule. This is the belonging move.","—",
+  "Stay on her face.","—","The viewer is treated as the one who decides."],
+ ["0:16–0:24","“So let me give you the three questions I use to read an "
+  "internal move honestly, before taking it.”","The payoff, stated plainly.",
+  "3 QUESTIONS","Restrained. No office-building footage, no transfer arrows.",
+  "—","Payoff explicit by 24 seconds."],
+ ["0:24–0:43","“About six months after I came back from maternity leave, in "
+  "one chapter of my career, my scope expanded beyond the original box of the "
+  "role. It was not simply more work. It was different work.”",
+  "The lived proof, and the distinction the whole video runs on.",
+  "MORE WORK? / DIFFERENT WORK",
+  "Return cleanly to Temidayo. NO maternity or baby imagery of any kind.",
+  "The maternity-return scope expansion, bounded. No employer, no assignment, "
+  "no result, no promotion.","Trust is established inside the first minute."]]
+HOOK=("You might be doing well exactly where you are, and still wondering "
+ "whether you have to leave to get different work.","YOU MAY NOT NEED TO LEAVE",
+ "Direct to camera, then MOVEMENT ≠ GROWTH, then MORE WORK? / DIFFERENT WORK. "
+ "No maternity or baby imagery at any point.",
+ "The maternity-return scope expansion, and the fact that she noticed the load "
+ "before she noticed the trust.",
+ "Three questions to test an internal move, by 0:24.")
 
 SLIDE_NOTE=("Twelve markers, mapping to the existing twelve-slide deck in "
- "order. The v5.0 script was mapped against the deck and every slide still "
- "serves the new story, so NO slide text was changed in this rebuild.")
+ "order. The freshly written v5.1 script was mapped against the deck slide by "
+ "slide and every slide still serves it, so NO visible slide text was changed "
+ "in this rebuild. Speaker notes were rewritten throughout for the v5.1 "
+ "narration.")
 SLIDE_MAP=["Core Distinction","The Three Questions","1 — Will the Work Change?",
  "Access Test","2 — Will Your Judgment Expand?","More Tasks / More Judgment",
  "3 — Will the Evidence Travel?","Result / Judgment / Range","Decision Read",
@@ -115,33 +122,36 @@ CTA_NOTES=["It arrives after the identity bridge, so it reads as the next step "
  "organise the evidence behind that choice.” Offered, not announced.",
  "CTA production gate: SATISFIED. Retain one signed-out link check in the "
  "final upload SOP."]
-IDENTITY_LINE=("“I am not only trying to help you decide this one move. I want "
- "you to be able to read any opportunity — inside or outside — for what it will "
- "actually build in you, instead of chasing the title and finding out "
- "afterwards. Once you can do that, you stop needing anyone to tell you "
- "whether an opportunity is good. You can see it yourself.”")
+IDENTITY_LINE=("“This is what I actually want for you. Not only a better "
+ "answer on this one move. I want you to get better at reading every "
+ "opportunity — internal, external, offered, or asked for — for what it will "
+ "actually build in you. That is a different kind of professional. Somebody "
+ "who does not need a title to tell them whether a year was worth it.”")
 IDENTITY_PLACEMENT=("It sits at the end of the Conversation Prompts section, "
  "after the limits and the life factors, and before the CTA. It is the point "
  "of the video. If the edit runs long, cut something else.")
-BEATS=["“Not because anything is wrong.”",
- "“More landed on me. That part is easy to describe. But that is not the part "
- "that mattered.”",
- "“That is not them being unfair. It is just how organisations build a picture "
- "of a person.”","“I just do not want you calling it development when it is "
- "relief. Both are allowed.”","“You can see it yourself.”"]
-SLIDE_XML_RECORD="Slide XML, geometry, typography, palette and media: UNCHANGED."
+BEATS=["“I do not think it has a general answer. It has your answer.”",
+ "“It was not simply more work. It was different work.”",
+ "“I noticed the load first, the way most of us do.”",
+ "“That is not disloyalty. It is how organisations remember people.”",
+ "“Somebody who does not need a title to tell them whether a year was worth "
+ "it.”"]
+SLIDE_XML_RECORD=("Slide XML, geometry, typography, palette and media: "
+ "UNCHANGED. Speaker notes: rewritten for the v5.1 narration.")
 
-SHORT_BEATS=["“You may not need to leave.”",
- "“Let me show you the moment I stopped treating more work as growth.”",
- "“Ask what you are becoming trusted to do.”"]
+SHORT_BEATS=["“It has your answer.”",
+ "“More work is a load. Different work is a signal.”",
+ "“Name the decision you want to be part of.”"]
 SHORT_BLOCKS=[
  ("SHORT 1","Recognition / story","YOU MAY NOT NEED TO LEAVE",
   ["Open on Temidayo. Recognition of the job-advert habit, without judgement.",
    "Visual:  SAME COMPANY  /  DIFFERENT WORK",
    "End on:  START WITH THE BUILDING YOU ARE IN."]),
- ("SHORT 2","Distinction / myth","MORE RESPONSIBILITY FOR WHAT?",
+ ("SHORT 2","Distinction / myth","MOVEMENT ≠ GROWTH",
   ["Restrained two-column contrast: MORE TASKS / MORE JUDGMENT.",
-   "End on:  KEEP ASKING."]),
+   "The closing turn is the organisational layer translated back to the "
+   "viewer: ask for the move specifically. Do not cut it.",
+   "End on:  NAME THE DECISION YOU WANT."]),
  ("SHORT 3","Proof / personal evidence","MORE WORK WASN’T THE POINT",
   ["FACTUAL BOUNDARY: about six months after returning from maternity leave, "
    "scope expanded beyond the original box. No employer, assignment, result, "
@@ -153,20 +163,18 @@ SHORT_BLOCKS=[
    "Do not gamify it. The life-factor boundary is not optional.",
    "End on:  NAME THE TRADE HONESTLY."])]
 
-CHAPTERS=[("00:00","You Have Started Looking at Job Adverts"),
- ("00:38","The Moment More Work Was Not the Point"),
- ("01:18","The Three Questions"),
- ("01:49","Will the Work Change?"),
- ("02:24","What Real Access Looks Like"),
- ("03:20","When People Still See You in One Shape"),
- ("04:33","Will Your Judgment Expand?"),
- ("04:41","More Tasks vs. More Judgment"),
- ("06:45","Will the Evidence Travel?"),
- ("08:08","Reading Your Three Answers"),
- ("09:08","What the Answers Say About the Organisation"),
- ("11:06","Who You Are Becoming"),
- ("11:33","Career Decision Evidence Check"),
- ("12:01","Are You Growing—or Just Being Given More Work?")]
+CHAPTERS=[("00:00","Do You Have to Leave to Get Different Work?"),
+ ("00:24","More Work Was Not the Point"),
+ ("01:29","Movement Is Not Automatically Growth"),
+ ("02:21","Question 1: Will the Work Change?"),
+ ("02:26","What Real Access Looks Like"),
+ ("03:36","Question 2: Will Your Judgment Expand?"),
+ ("03:57","When People Still See You in One Shape"),
+ ("05:23","Question 3: Will the Evidence Travel?"),
+ ("06:22","Reading Your Three Answers"),
+ ("07:21","How to Ask For It"),
+ ("08:21","Career Decision Evidence Check"),
+ ("08:42","Are You Growing—or Just Being Given More Work?")]
 TAGS=("should I make an internal move, internal move, internal mobility, "
  "internal job transfer, internal hiring, career growth, career decision, "
  "should I leave my company, career portability, internal career move, "
@@ -182,15 +190,14 @@ PINNED=["Which part of this is happening in your situation right now?",
 
 def desc(CH):
     return [
- "You are doing well where you are, and you have started looking at job "
- "adverts anyway. Not because anything is wrong — you want different work, and "
- "somewhere along the way you decided leaving is the only way to get it.",
- "You may not need to leave. You may need access to work your current role is "
- "not giving you yet.",
- "About six months after I came back from maternity leave in one chapter of my "
- "career, my scope expanded beyond the original box of the role. More landed "
- "on me — and that was not the part that mattered. What mattered was being "
- "trusted with different work.",
+ "You might be doing well exactly where you are, and still wondering whether "
+ "you have to leave to get different work. That is a real question, and I do "
+ "not think it has a general answer. It has your answer.",
+ "About six months after I came back from maternity leave, in one chapter of "
+ "my career, my scope expanded beyond the original box of the role. It was not "
+ "simply more work. It was different work.",
+ "More work is a load. Different work is a signal — about what the people "
+ "around you are now willing to trust you to learn, to decide, and to own.",
  "Movement is not automatically growth. Three questions to test an internal "
  "role, transfer, team change or stretch opportunity:",
  "✨ Will the work change?",
@@ -201,10 +208,13 @@ def desc(CH):
  "value you most can be the ones least able to imagine you doing something "
  "else.",
  "A move that does not change the work can still be right for you. Better pay, "
- "better hours, a better manager, stability while your life is loud. Just name "
- "the trade honestly.",
- "The goal is not deciding this one move. It is being able to read any "
- "opportunity — inside or outside — for what it will actually build in you.","",
+ "better hours, a better manager, stability while your life is loud. This "
+ "video will not tell you whether to stay or go — it knows nothing about your "
+ "pay, your manager, your commute, your family, or how tired you are. It only "
+ "tells you what the move is likely to build.",
+ "And the goal is not deciding this one move. It is getting better at reading "
+ "every opportunity — internal, external, offered, or asked for — for what it "
+ "will actually build in you.","",
  "🧭 CAREER DECISION EVIDENCE CHECK",
  "If you are actively weighing whether to stay, move internally or leave, use "
  "this to organise the evidence behind the choice:",
@@ -226,9 +236,9 @@ def readme_head(W,RT):
  "                   inside or outside - for what it will actually build in",
  "                   them, instead of chasing the title and finding out",
  "                   afterwards.","",
- "Viewer recognition:Someone doing well who has quietly started looking at job",
- "                   adverts. Nothing is wrong; they want different work and",
- "                   assumed leaving was the only way to get it.","",
+ "Viewer recognition:Someone doing well and valued where they are, quietly",
+ "                   wondering whether they have to leave in order to get",
+ "                   different work. Nothing is wrong.","",
  "Personal proof:    About six months after returning from maternity leave in",
  "                   one career chapter, Temidayo's scope expanded beyond the",
  "                   original box of the role. The meaningful part was being",
@@ -244,27 +254,30 @@ def readme_head(W,RT):
  "CTA production",
  "gate:              SATISFIED",
  "Watch next:        %s"%NEXT_FULL,"",
- "Script:            Freshly written for v5.0. %s spoken words, about %s at"%("{:,}".format(W),RT),
+ "Script:            Freshly written for v5.1. %s spoken words, about %s at"%("{:,}".format(W),RT),
  "                   145 words per minute.",
  "Slides:            UNCHANGED. All 12 slides were mapped against the new",
  "                   script and every one still serves it.",
  "Reveal deck:       UNCHANGED. 25 frames.",
- "Speaker notes:     Rewritten for the v5.0 narration.",
- "Shorts:            All four rewritten for v5.0.",
+ "Speaker notes:     Rewritten for the v5.1 narration.",
+ "Shorts:            All four rewritten for v5.1.",
  "Editor directions: Separated from recording copy.",""]
 
 def readme_tail():
-    return ["-"*70,"","WHAT v5.0 CHANGED","",
- "A genuine editorial rebuild, not a patch. The script was written fresh under",
- "the belonging-first register. It now opens on a specific, slightly private",
- "state - doing well and browsing job adverts anyway - names the assumption",
- "underneath it, and only then reframes the question. The maternity-return",
- "proof moved to the front as recognition rather than illustration, and the",
- "three questions do not arrive until about 1:18. The organisational beat is",
- "now about people being unable to imagine you in a different shape, which is",
- "kinder and more accurate than a fairness argument. The video ends on being",
- "able to read any opportunity without needing anyone else's verdict.","",
- "The prior v4.0 package is superseded. Its hashes are preserved here:",
+    return ["-"*70,"","WHAT v5.1 CHANGED","",
+ "The spoken script was written fresh again for v5.1. It opens on the exact",
+ "question the viewer is holding - do I have to leave to get different work -",
+ "and refuses to answer it generally: \"It has your answer.\" The",
+ "maternity-return proof arrives at about 0:32, inside the first minute, and",
+ "carries the distinction the whole video runs on: more work is a load,",
+ "different work is a signal. The three questions do not arrive until about",
+ "2:04. The organisational beat now translates back to the viewer explicitly -",
+ "the story your organisation tells about you is a year or two behind what you",
+ "can do, and closing that gap is maintenance, not self-promotion. Video 1 owns",
+ "the job-offer / Uber transition story; it is not retold here.","",
+ "The prior v5.0 package is superseded. Its hash is preserved here:",
+ "  package ZIP 28b5facd8cb85b385785be99dec783f29203428ec2205f69ba74ecd4babaaca0","",
+ "The v4.0 package before it is also on record:",
  "  package ZIP da93ca06af102bf12f4ae23b445dbcb4bebcd579ba42bfe86e31c5f82e4ad65a",
  "  main deck   a2d30edcc49e6f9b42be74b457aa16e5a049338feff7fe70e388c5c8743d5447",
  "  reveal deck a1a85d9d9d3d486e54a6e6832d9ca372e557386969f07d21305b9cb3513e30c7","",

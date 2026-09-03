@@ -710,6 +710,106 @@ patch, and the Video 6 description document already carried one before it.
 Video 4 gained a separate description-only document, so Videos 1 and 4 to 8
 now all follow that convention.
 
+### Videos 1–5 — v5.1 belonging-first rebuild with the established job-offer / Uber transition story, 3 September 2026
+
+Built under `Videos_1-5_Belonging_Identity_Full_Rebuild_Code_Prompt_v5.1_FINAL.txt`,
+which supersedes the v5.0 prompt. **All five spoken scripts were written from
+scratch again.** No v5.0 prose was carried forward on the grounds that it had
+passed QA; earlier scripts were used only as sources for established facts,
+teaching logic, boundaries, CTA, Watch Next and slide mapping.
+
+The substantive change is that **the job-offer / Uber transition story is now
+established and approved**, and it becomes the primary belonging beat of
+Video 1.
+
+#### The established story, and its boundaries
+
+Temidayo had accepted a job offer; an acquisition rescinded the role before she
+ever got to start it. Within a few months she was driving Uber, thinking about
+income and uncertainty rather than career strategy. The question underneath it
+was one she could not yet name: did everything I had done before this still
+count? The role had disappeared. Her experience had not. Later, a recruiter
+found her on LinkedIn and asked whether she would consider returning to
+Deloitte.
+
+**CAUSALITY BOUNDARY — ABSOLUTE. Driving Uber did not lead to Deloitte.** They
+were two parts of the same career-transition chapter. Video 1's script says so
+immediately after the recruiter line, and the editor brief, README and deck
+notes all carry the instruction that the protective line must stay adjacent to
+the recruiter line in the final cut.
+
+Not invented anywhere: a passenger referral, networking-while-driving
+causality, the employer of the rescinded offer, the acquiring company, an exact
+month, income, a duration beyond "within a few months", or any recruiter
+dialogue. The video does not rush to Deloitte as a triumphant ending; it is a
+recognition story about income uncertainty and loss of context.
+
+**Video 1 owns the full story.** Video 3 carries a single truthful bridge
+sentence — a role she had accepted was rescinded by an acquisition before she
+started — used only to make the point that access can change without anybody
+choosing it, with the very next line establishing that the viewer's situation
+differs because they may be the one choosing. Videos 2, 4 and 5 do not
+reference it at all.
+
+| Video | Words | Runtime | Method arrives | Identity bridge | Slides / reveals |
+|---|---|---|---|---|---|
+| 1 | 1,722 | 11:52 | 4:14 | 10:28 | 13 / 22 |
+| 2 | 1,411 | 9:43 | 2:52 | 8:30 | 13 / 23 |
+| 3 | 1,377 | 9:29 | 2:41 | 8:19 | 13 / 27 |
+| 4 | 1,366 | 9:25 | 2:46 | 7:52 | 11 / 26 |
+| 5 | 1,392 | 9:36 | 2:32 | 8:22 | 12 / 25 |
+
+**230 QA checks across the five videos pass, 0 failures.** All twenty Shorts
+were rewritten. Every editor brief carries the fourteen required sections
+including the identity promise and the identity exit. All five packages are
+exactly 13 files with 12-entry `SHA256SUMS.txt`, `sha256sum -c` passing, and a
+matching sibling `.zip.sha256`.
+
+**Slides were authorised to change under v5.1 and did not need to.** Every
+marker in all five videos was mapped against its deck slide by slide and every
+slide still serves the new script — including Video 1 slide 2, which now
+carries the job-offer and Uber chapter before it carries the career sequence.
+No slide text was changed anywhere. Only notes changed — 62 main and 123 reveal
+notes parts across the ten decks — with **no slide XML, media, rels or theme
+part touched in any file**, verified by part-level SHA-256 diff.
+
+All five slide-preview PDFs are byte-identical to their previous state.
+
+#### Source status — the Uber gap is CLOSED
+
+The v5.0 record noted that the Uber-driving transition story had no source in
+the repository and was therefore not used. **That gap is resolved as of v5.1**
+and must not be reported as open again. Two related findings still stand:
+"executive 1:1s" is not established and is not used, and no *additional*
+personal job-loss story beyond the rescinded offer is established.
+
+#### Videos 1–5 v5.1 hashes
+
+| Video | Package ZIP | Description DOCX | Main deck | Reveal deck | Preview PDF |
+|---|---|---|---|---|---|
+| 1 | `201be8c1cd02a432b9f926e9f921b2e2509e66bacb8d5832c01fdbe94aec206f` | `3b149f9e6efaabc1e25f851628b3a22543c5b4cf8ab0264bce19c507440d70b4` | `4032d1fdfadcc388af81365af947cf03bfff7c089cc1445706741897120acfad` | `d0d3376b8764aa9eeaca7b3c4c990cad805d1719e0c10fe9e39f1fd72c08e6fc` | `af4e763c0cdf56f758571b0a655c76aaf92fffabbbac082d49920a21e2c2bf3c` |
+| 2 | `1c37da1d6f4a918fe18e62587d58969bf4d6e1c3e34c64215fc171d43be222dd` | `48ff07344473c63e24d1e04a036f6a0757f6850198a9d1f04a0776e61caf6923` | `109073c5e7caa0986170d5f19969eeac8b1096fa4451ac06aa67c6d08f9246de` | `ad7e42ef93717c4e0dc0d1449a2a2d6bdce4e8e8a23ed90802e97dea28ef4d12` | `7917d0fafcc77d557d394e59427c37e5d6813cd2c28a210e35a0bc8415a190b0` |
+| 3 | `649fba6f8edcf543596f47d5aef9fcd1e9eacbef25059167d8e3db40d45726bb` | `7e0e1d902f0df0e1f0ea782b3e71646dd0c28eec2f34b3ebdd1c43a36e1ce791` | `a5004695b427fde4b2ef77713703b128fba70b73ed68ad712324d148462024ae` | `dc9e40a5137cf2262115977a639063946e87070646b8351f20a4f4574dd566ae` | `76f3bd78be4151e9adb5fcdec6b399e2f255feacec6e703deb74175b4e274ec4` |
+| 4 | `81eac17a3e6dcdc36c5bc20489231951c4a74a7002e7d1ba8703ce2f883f9c5b` | `bd516af6538a2bf022124e2702315bae7afbb0926f747ddea499f3d4904a533b` | `46300ad9b721c76b0df5d2caf147cd3d6579452e6cd9fe687a8a01b6674c834b` | `06c5203bded75431042cf147114c13f9a971e3cf0707a117a75b7e7c4c242e31` | `da482aff3ce4d4253c9f0d5417fddb53688207d24d0d9f6a72ca5b6a77f1b832` |
+| 5 | `868824de8ee1ea0b43b96310812a27f44f6ea38c562aecb900084e88bdaabf00` | `60f55f1ad687857d963cccadb9f12353035a773dded8bcef5d73ab3f97ce9235` | `c3f7ca7853a7d56d0f10724e78ceffc515bd4f37de4838972983f2e367e831eb` | `8d083e24eb2d6643b947976162e2535f9d77c6c6f7403915decdacb94423193d` | `b8443372b168308bc188863be45f903349f63246ab2c7af0a82913dfdfc5bdb1` |
+
+Prior v5.0 and v4.0 package hashes are preserved in each README change record.
+The v5.0 packages listed in the section below are superseded, not deleted from
+the record.
+
+**VIDEOS 1–5 — FINAL + LOCKED UNDER BELONGING-FIRST + IDENTITY-TRANSFORMATION +
+H.I.T. + DIRECT-ADDRESS REGISTER (v5.1).**
+
+Two Video 2 publishing assets remain open, neither a recording blocker: the
+approved Canva thumbnail export for `VALUABLE HERE. STUCK HERE?`, and a clean
+slide-preview PDF re-export from an environment that resolves the brand fonts
+correctly. Re-rendering the Video 2 preview here returns the brand font in the
+wrong weight, so it was deliberately not regenerated.
+
+One further note for the record: the Video 1 teleprompter's final page carries
+only the two sign-off lines. Recording copy is never compressed, so this is
+intentional and is not a pagination defect.
+
 ### Videos 1–5 — v5.0 belonging-first rebuild, 3 September 2026
 
 A genuine editorial reopening under
@@ -911,7 +1011,7 @@ part changed in any of the six decks; only notes parts changed.
 
 | State | Videos |
 |---|---|
-| FINAL + LOCKED UNDER THE v5.0 BELONGING + IDENTITY REGISTER | 1, 2, 3, 4, 5 |
+| FINAL + LOCKED UNDER THE v5.1 BELONGING + IDENTITY REGISTER | 1, 2, 3, 4, 5 |
 | FINAL + LOCKED FOR RECORDING | 6, 7, 8 |
 
 Videos 7 and 8 completed their H.I.T. rebuilds on 1 September 2026 and are
