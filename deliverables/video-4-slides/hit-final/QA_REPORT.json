@@ -29,7 +29,7 @@
    "B6": {
     "check": "Personal evidence illuminates the viewer, not Temidayo",
     "pass": true,
-    "detail": "you=50  I=28"
+    "detail": "you=50  I=29"
    },
    "B7": {
     "check": "An interpretation follows the story",
@@ -39,7 +39,7 @@
    "B8": {
     "check": "Framework arrives after recognition",
     "pass": true,
-    "detail": "method at 167s"
+    "detail": "method at 166s"
    },
    "B9": {
     "check": "Teaches a meaningful limit",
@@ -54,7 +54,7 @@
    "B11": {
     "check": "Identity bridge is specific to this video",
     "pass": true,
-    "detail": "without apologising for it, and without inventing a plan you were never running"
+    "detail": "without apologizing for it, and without inventing a plan you were never running"
    },
    "B12": {
     "check": "Does not overpromise control of external conditions",
@@ -124,10 +124,10 @@
    "X2": {
     "check": "Runtime in the 9-12 minute band",
     "pass": true,
-    "detail": "1366 words, 9:25"
+    "detail": "1364 words, 9:24"
    },
    "SH1": {
-    "check": "Four Shorts, all rewritten for v5.1",
+    "check": "Four Shorts, all rewritten for v5.1.1",
     "pass": true,
     "detail": "4"
    },
@@ -202,7 +202,7 @@
     "detail": ""
    },
    "P4": {
-    "check": "All notes parts carry v5.1 narration",
+    "check": "All notes parts carry v5.1.1 narration",
     "pass": true,
     "detail": "37"
    },
@@ -224,7 +224,7 @@
    "Z4": {
     "check": "sha256sum -c successful",
     "pass": true,
-    "detail": "lan.docx: OK\nSHORTS/Video_4_Short_4_Three_Sentences.docx: OK\nSHORTS/Video_4_Shorts_EDITOR_ONLY_HIT_Brief_v5.1.docx: OK\nREADME_FINAL.txt: OK\n"
+    "detail": "n.docx: OK\nSHORTS/Video_4_Short_4_Three_Sentences.docx: OK\nSHORTS/Video_4_Shorts_EDITOR_ONLY_HIT_Brief_v5.1.1.docx: OK\nREADME_FINAL.txt: OK\n"
    },
    "Z5": {
     "check": "Sibling checksum matches",
@@ -233,19 +233,19 @@
    }
   },
   "failures": [],
-  "words": 1366,
+  "words": 1364,
   "markers": 11,
   "slides": 11,
   "frames": 26,
   "notes": {
-   "main": 11,
-   "reveal": 26
+   "main": 0,
+   "reveal": 0
   },
   "hashes": {
-   "zip": "81eac17a3e6dcdc36c5bc20489231951c4a74a7002e7d1ba8703ce2f883f9c5b",
-   "desc": "bd516af6538a2bf022124e2702315bae7afbb0926f747ddea499f3d4904a533b",
-   "main": "46300ad9b721c76b0df5d2caf147cd3d6579452e6cd9fe687a8a01b6674c834b",
-   "reveal": "06c5203bded75431042cf147114c13f9a971e3cf0707a117a75b7e7c4c242e31",
+   "zip": "855d7c9a8973ab71841c639de422c00666ea6e0c1c3828ec4eb6054c523a395e",
+   "desc": "38e5bec84eba543ef777e6b4d73f05edc1f2715cd31eab9fe096656579f43b48",
+   "main": "e3d5325b3f297bdc9daa372b7afbbf7dd3ce29fbcfd631b0a20fe4cf4e5aaf04",
+   "reveal": "777626c7f6a8769c0b81258fc9111d7c1754b8bdb3a4d741a18b2079559f66ee",
    "pdf": "da482aff3ce4d4253c9f0d5417fddb53688207d24d0d9f6a72ca5b6a77f1b832"
   }
  }

@@ -84,7 +84,7 @@ HIT_ROWS=[
   "The lived moment, told plainly and without drama.","—",
   "No re-enactment. No car footage. No stock imagery. Her face only.",
   "A real, specific, unflattering career interruption.",
-  "The viewer recognises how fast circumstances can change."],
+  "The viewer recognizes how fast circumstances can change."],
  ["0:25–0:33","“Let me show you the three things I learned to do in that "
   "chapter, so that you are not working them out for the first time on the "
   "day something changes.”","Payoff, framed as protection rather than a "
@@ -168,7 +168,7 @@ BEATS=["“I had to answer that question in a way I did not choose.”",
  "did not.”",
  "“I did not carry the tasks forward. I carried that.”"]
 SLIDE_XML_RECORD=("Slide XML, geometry, typography, palette and media: "
- "UNCHANGED. Speaker notes: rewritten for the v5.1 narration.")
+ "UNCHANGED. Speaker notes: rewritten for the v5.1.1 narration.")
 
 SHORT_BEATS=["“I had to answer that question in a way I did not choose.”",
  "“The role had disappeared. My experience had not.”",
@@ -283,17 +283,31 @@ def readme_head(W,RT):
  "Primary CTA:       %s"%CTA,
  "CTA URL:           %s"%CTA_URL,
  "Watch next:        %s"%NEXT_FULL,"",
- "Script:            Freshly written for v5.1. %s spoken words, about %s at"%("{:,}".format(W),RT),
- "                   145 words per minute.",
+ "Script:            v5.1, corrected by the v5.1.1 precision pass.",
+ "                   %s spoken words, about %s at 145 words per minute."%("{:,}".format(W),RT),
  "Slides:            UNCHANGED. All 13 slides were mapped against the new",
  "                   script and every one still serves it.",
  "Reveal deck:       UNCHANGED. 22 frames.",
- "Speaker notes:     Rewritten for the v5.1 narration.",
- "Shorts:            All four rewritten for v5.1.",
+ "Speaker notes:     Rewritten for the v5.1.1 narration.",
+ "Shorts:            All four rewritten for v5.1, corrected for v5.1.1.",
  "Editor directions: Separated from recording copy.",""]
 
 def readme_tail():
-    return ["-"*70,"","WHAT v5.1 CHANGED","",
+    return ["-"*70,"","WHAT v5.1.1 CHANGED - PRECISION PASS","",
+ "A narrow correction pass after Temidayo's independent human read of all",
+ "five long-form scripts and all twenty Short recording scripts. No story,",
+ "structure, memory device, H.I.T. architecture, belonging sequence, identity",
+ "exit, CTA, Watch Next, factual boundary or slide changed.","",
+ "A detached framing in Short 2 was made direct: \"When people change job,",
+ "function or industry, they tend to make one of two mistakes\" became \"When",
+ "you change jobs, functions or industries, two mistakes are easy to make.\"",
+ "The two-mistake teaching and both limits are unchanged. The long-form",
+ "script needed no substantive change.",
+ "",
+ "Public-facing and recording text was also standardized to U.S. English",
+ "where no meaning changes: organisation, organisational, programme,",
+ "apologising and travelled. Proper nouns and quotations were not altered.","",
+ "-"*70,"","WHAT v5.1 CHANGED","",
  "The job-offer / Uber transition story is now established and approved, and",
  "it becomes the primary belonging beat of this video. The script was written",
  "fresh around it: the viewer's exposure, then the rescinded role and driving",

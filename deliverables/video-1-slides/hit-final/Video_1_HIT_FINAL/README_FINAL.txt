@@ -1,4 +1,4 @@
-VIDEO 1 — v5.1 BELONGING + IDENTITY FINAL RECORDING PACKAGE
+VIDEO 1 — v5.1.1 BELONGING + IDENTITY · PRECISION PASS FINAL RECORDING PACKAGE
 
 Public title:      How to Change Jobs Without Starting Your Career Over
 On-screen title:   How I Changed Jobs Without Starting My Career Over
@@ -30,13 +30,13 @@ Primary CTA:       Free Career Evidence Starter
 CTA URL:           https://temidayoafonja.com/career-evidence-starter
 Watch next:        Video 2 — Is Your Job Making You Less Marketable?
 
-Script:            Freshly written for v5.1. 1,722 spoken words, about 11:52 at
-                   145 words per minute.
+Script:            v5.1, corrected by the v5.1.1 precision pass.
+                   1,722 spoken words, about 11:52 at 145 words per minute.
 Slides:            UNCHANGED. All 13 slides were mapped against the new
                    script and every one still serves it.
 Reveal deck:       UNCHANGED. 22 frames.
-Speaker notes:     Rewritten for the v5.1 narration.
-Shorts:            All four rewritten for v5.1.
+Speaker notes:     Rewritten for the v5.1.1 narration.
+Shorts:            All four rewritten for v5.1, corrected for v5.1.1.
 Editor directions: Separated from recording copy.
 
 ----------------------------------------------------------------------
@@ -45,22 +45,22 @@ WHAT EACH FILE IS
 
 LONG_FORM/
 
-  Video1TeleprompterScriptwithslidemarkers_HIT_v5.1.docx
-  Video1TeleprompterScriptwithslidemarkers_HIT_v5.1.txt
+  Video1TeleprompterScriptwithslidemarkers_HIT_v5.1.1.docx
+  Video1TeleprompterScriptwithslidemarkers_HIT_v5.1.1.txt
       Temidayo's recording copy. Spoken script in large text; slide markers
       in tinted bands. The markers are not spoken.
 
-  Video1ReadingScriptnomarkers_HIT_v5.1.docx
-  Video1ReadingScriptnomarkers_HIT_v5.1.txt
+  Video1ReadingScriptnomarkers_HIT_v5.1.1.docx
+  Video1ReadingScriptnomarkers_HIT_v5.1.1.txt
       The same spoken words with the slide markers removed.
 
-  Video_1_EDITOR_ONLY_HIT_Brief_v5.1.docx
+  Video_1_EDITOR_ONLY_HIT_Brief_v5.1.1.docx
       For the editor. Fourteen sections, from the locked metadata and the
       identity promise through the belonging beat, the first-30 H.I.T. map,
       the slide and reveal maps, factual boundaries, the identity exit and
       the notes record.
 
-  Video_1_Publishing_Package_HIT_v5.1.docx
+  Video_1_Publishing_Package_HIT_v5.1.1.docx
       Title, thumbnail, search language, the copy-ready description,
       working chapter estimates, pinned comment and tag field.
 
@@ -68,26 +68,45 @@ SHORTS/
 
   Four recording documents. Recording copy only, no editor directions.
 
-  Video_1_Shorts_EDITOR_ONLY_HIT_Brief_v5.1.docx
+  Video_1_Shorts_EDITOR_ONLY_HIT_Brief_v5.1.1.docx
       For the editor. Hooks and visual treatment for all four.
 
 ----------------------------------------------------------------------
 
 ALL FILES IN THIS PACKAGE
 
-  LONG_FORM/Video1ReadingScriptnomarkers_HIT_v5.1.docx
-  LONG_FORM/Video1ReadingScriptnomarkers_HIT_v5.1.txt
-  LONG_FORM/Video1TeleprompterScriptwithslidemarkers_HIT_v5.1.docx
-  LONG_FORM/Video1TeleprompterScriptwithslidemarkers_HIT_v5.1.txt
-  LONG_FORM/Video_1_EDITOR_ONLY_HIT_Brief_v5.1.docx
-  LONG_FORM/Video_1_Publishing_Package_HIT_v5.1.docx
+  LONG_FORM/Video1ReadingScriptnomarkers_HIT_v5.1.1.docx
+  LONG_FORM/Video1ReadingScriptnomarkers_HIT_v5.1.1.txt
+  LONG_FORM/Video1TeleprompterScriptwithslidemarkers_HIT_v5.1.1.docx
+  LONG_FORM/Video1TeleprompterScriptwithslidemarkers_HIT_v5.1.1.txt
+  LONG_FORM/Video_1_EDITOR_ONLY_HIT_Brief_v5.1.1.docx
+  LONG_FORM/Video_1_Publishing_Package_HIT_v5.1.1.docx
   SHORTS/Video_1_Short_1_The_Role_Disappeared.docx
   SHORTS/Video_1_Short_2_New_Place_Not_New_To_Everything.docx
   SHORTS/Video_1_Short_3_Forty_Seven_To_Seventy_Five.docx
   SHORTS/Video_1_Short_4_Find_The_Repeated_Verb.docx
-  SHORTS/Video_1_Shorts_EDITOR_ONLY_HIT_Brief_v5.1.docx
+  SHORTS/Video_1_Shorts_EDITOR_ONLY_HIT_Brief_v5.1.1.docx
   README_FINAL.txt
   SHA256SUMS.txt
+
+----------------------------------------------------------------------
+
+WHAT v5.1.1 CHANGED - PRECISION PASS
+
+A narrow correction pass after Temidayo's independent human read of all
+five long-form scripts and all twenty Short recording scripts. No story,
+structure, memory device, H.I.T. architecture, belonging sequence, identity
+exit, CTA, Watch Next, factual boundary or slide changed.
+
+A detached framing in Short 2 was made direct: "When people change job,
+function or industry, they tend to make one of two mistakes" became "When
+you change jobs, functions or industries, two mistakes are easy to make."
+The two-mistake teaching and both limits are unchanged. The long-form
+script needed no substantive change.
+
+Public-facing and recording text was also standardized to U.S. English
+where no meaning changes: organisation, organisational, programme,
+apologising and travelled. Proper nouns and quotations were not altered.
 
 ----------------------------------------------------------------------
 

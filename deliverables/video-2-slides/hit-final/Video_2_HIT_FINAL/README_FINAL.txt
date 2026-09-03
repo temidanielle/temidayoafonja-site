@@ -1,4 +1,4 @@
-VIDEO 2 — v5.1 BELONGING + IDENTITY FINAL RECORDING PACKAGE
+VIDEO 2 — v5.1.1 BELONGING + IDENTITY · PRECISION PASS FINAL RECORDING PACKAGE
 
 Title:             Is Your Job Making You Less Marketable?
 Thumbnail:         VALUABLE HERE. STUCK HERE?
@@ -27,14 +27,14 @@ Primary CTA:       Capability Formation Field Kit
 CTA URL:           https://temidayoafonja.com/fieldkit
 Watch next:        Video 3 — 3 Things to Do Before Quitting Your Job
 
-Script:            Freshly written for v5.1. 1,411 spoken words, about 9:43 at
-                   145 words per minute.
+Script:            v5.1, corrected by the v5.1.1 precision pass.
+                   1,415 spoken words, about 9:45 at 145 words per minute.
 Slides:            UNCHANGED. All 13 slides were mapped against the new
                    script and every one still serves it. Slide 13 carries
                    the corrected Video 3 title.
 Reveal deck:       UNCHANGED. 23 frames.
-Speaker notes:     Rewritten for the v5.1 narration.
-Shorts:            All four rewritten for v5.1.
+Speaker notes:     Rewritten for the v5.1.1 narration.
+Shorts:            All four rewritten for v5.1, corrected for v5.1.1.
 Editor directions: Separated from recording copy.
 
 ----------------------------------------------------------------------
@@ -43,22 +43,22 @@ WHAT EACH FILE IS
 
 LONG_FORM/
 
-  Video2TeleprompterScriptwithslidemarkers_HIT_v5.1.docx
-  Video2TeleprompterScriptwithslidemarkers_HIT_v5.1.txt
+  Video2TeleprompterScriptwithslidemarkers_HIT_v5.1.1.docx
+  Video2TeleprompterScriptwithslidemarkers_HIT_v5.1.1.txt
       Temidayo's recording copy. Spoken script in large text; slide markers
       in tinted bands. The markers are not spoken.
 
-  Video2ReadingScriptnomarkers_HIT_v5.1.docx
-  Video2ReadingScriptnomarkers_HIT_v5.1.txt
+  Video2ReadingScriptnomarkers_HIT_v5.1.1.docx
+  Video2ReadingScriptnomarkers_HIT_v5.1.1.txt
       The same spoken words with the slide markers removed.
 
-  Video_2_EDITOR_ONLY_HIT_Brief_v5.1.docx
+  Video_2_EDITOR_ONLY_HIT_Brief_v5.1.1.docx
       For the editor. Fourteen sections, from the locked metadata and the
       identity promise through the belonging beat, the first-30 H.I.T. map,
       the slide and reveal maps, factual boundaries, the identity exit and
       the notes record.
 
-  Video_2_Publishing_Package_HIT_v5.1.docx
+  Video_2_Publishing_Package_HIT_v5.1.1.docx
       Title, thumbnail, search language, the copy-ready description,
       working chapter estimates, pinned comment and tag field.
 
@@ -66,26 +66,49 @@ SHORTS/
 
   Four recording documents. Recording copy only, no editor directions.
 
-  Video_2_Shorts_EDITOR_ONLY_HIT_Brief_v5.1.docx
+  Video_2_Shorts_EDITOR_ONLY_HIT_Brief_v5.1.1.docx
       For the editor. Hooks and visual treatment for all four.
 
 ----------------------------------------------------------------------
 
 ALL FILES IN THIS PACKAGE
 
-  LONG_FORM/Video2ReadingScriptnomarkers_HIT_v5.1.docx
-  LONG_FORM/Video2ReadingScriptnomarkers_HIT_v5.1.txt
-  LONG_FORM/Video2TeleprompterScriptwithslidemarkers_HIT_v5.1.docx
-  LONG_FORM/Video2TeleprompterScriptwithslidemarkers_HIT_v5.1.txt
-  LONG_FORM/Video_2_EDITOR_ONLY_HIT_Brief_v5.1.docx
-  LONG_FORM/Video_2_Publishing_Package_HIT_v5.1.docx
+  LONG_FORM/Video2ReadingScriptnomarkers_HIT_v5.1.1.docx
+  LONG_FORM/Video2ReadingScriptnomarkers_HIT_v5.1.1.txt
+  LONG_FORM/Video2TeleprompterScriptwithslidemarkers_HIT_v5.1.1.docx
+  LONG_FORM/Video2TeleprompterScriptwithslidemarkers_HIT_v5.1.1.txt
+  LONG_FORM/Video_2_EDITOR_ONLY_HIT_Brief_v5.1.1.docx
+  LONG_FORM/Video_2_Publishing_Package_HIT_v5.1.1.docx
   SHORTS/Video_2_Short_1_Could_Anyone_Outside_Tell.docx
   SHORTS/Video_2_Short_2_Valuable_Here_Legible_Elsewhere.docx
   SHORTS/Video_2_Short_3_Delete_The_Company_Words.docx
   SHORTS/Video_2_Short_4_Faster_Or_Broader.docx
-  SHORTS/Video_2_Shorts_EDITOR_ONLY_HIT_Brief_v5.1.docx
+  SHORTS/Video_2_Shorts_EDITOR_ONLY_HIT_Brief_v5.1.1.docx
   README_FINAL.txt
   SHA256SUMS.txt
+
+----------------------------------------------------------------------
+
+WHAT v5.1.1 CHANGED - PRECISION PASS
+
+A narrow correction pass after Temidayo's independent human read of all
+five long-form scripts and all twenty Short recording scripts. No story,
+structure, memory device, H.I.T. architecture, belonging sequence, identity
+exit, CTA, Watch Next, factual boundary or slide changed.
+
+Two universal claims were narrowed. "The better you get at one place, the
+more of your value gets wrapped inside that place" became "As you get
+better at one place, some of your value can become wrapped in that
+context", keeping the history / systems / relationships / trust examples.
+"Your company knows exactly why you matter. They watched you earn it"
+became "The people around you may know exactly why you matter, because
+they have seen the work." Short 1 got the same two corrections plus a
+direct-recognition opening in place of "There is a question good employees
+ask themselves quietly." The non-alarmist boundary is unchanged.
+
+Public-facing and recording text was also standardized to U.S. English
+where no meaning changes: organisation, organisational, programme,
+apologising and travelled. Proper nouns and quotations were not altered.
 
 ----------------------------------------------------------------------
 

@@ -22,7 +22,7 @@ METADATA_NOTES=[
  "NO CAT IMAGERY. Not in the edit, not in a graphic, not in the thumbnail."]
 
 IDENTITY=("Become the professional who can explain a nonlinear career without "
- "apologising for it and without inventing a plan they never had.")
+ "apologizing for it and without inventing a plan they never had.")
 IDENTITY_NOTE=("This video is about being heard, so it should feel the most "
  "conversational in the series. Temidayo repeatedly stands in as the person "
  "across the table. Those lines only work on her face.")
@@ -59,7 +59,7 @@ HIT_ROWS=[
  ["0:07–0:11","“You are less sure it makes sense to anybody else.”",
   "Names the private doubt in nine words.","—",
   "Stay on her face. Do not cut on this line.","—",
-  "The viewer recognises a specific experience, not a topic."],
+  "The viewer recognizes a specific experience, not a topic."],
  ["0:11–0:19","“A friend of mine, a senior manager at EY, used to joke that I "
   "was a cat with nine lives.”",
   "Lived proof; a real remark, not a claim.","—",
@@ -82,7 +82,7 @@ HOOK=("You look at your own career and it makes sense to you, because you "
 SLIDE_NOTE=("Eleven markers, mapping to the existing eleven-slide deck in "
  "order. The freshly written v5.1 script was mapped against the deck slide by "
  "slide and every slide still serves it, so NO visible slide text was changed "
- "in this rebuild. Speaker notes were rewritten throughout for the v5.1 "
+ "in this rebuild. Speaker notes were rewritten throughout for the v5.1.1 "
  "narration.")
 SLIDE_MAP=["Career Path","Chronology / Portability","1 Name the Chapters Briefly",
  "2 Find the Repeated Work","Look Beneath the Nouns","3 Explain the Direction",
@@ -119,7 +119,7 @@ CTA_NOTES=["It arrives after the identity bridge, so it reads as the next step "
  "Use the direct public landing-page URL only. Do not expose a PDF link and "
  "do not restore Keep the Proof."]
 IDENTITY_LINE=("“I want you to reach the point where you can describe a career "
- "that did not go in a straight line without apologising for it, and without "
+ "that did not go in a straight line without apologizing for it, and without "
  "inventing a plan you were never running.”")
 IDENTITY_PLACEMENT=("It sits at the end of the Explanation Test section, after "
  "the honest limits about what this cannot do, and before the Starter. It is "
@@ -132,10 +132,10 @@ BEATS=["“Written down like that, it looks like somebody who could not settle.�
  "“Saying so is not a weakness in the story. It is what makes the rest of it "
  "credible.”"]
 SLIDE_XML_RECORD=("Slide XML, geometry, typography, palette and media: "
- "UNCHANGED. Speaker notes: rewritten for the v5.1 narration.")
+ "UNCHANGED. Speaker notes: rewritten for the v5.1.1 narration.")
 
 SHORT_BEATS=["“You are less sure it makes sense to anybody else.”",
- "“Chronology is where you have been. Portability is what travelled with "
+ "“Chronology is where you have been. Portability is what traveled with "
  "you.”","“Say it out loud, then stop talking.”"]
 SHORT_BLOCKS=[
  ("SHORT 1","Recognition / story","A CAREER THAT NEEDS EXPLAINING",
@@ -160,7 +160,7 @@ SHORT_BLOCKS=[
 
 CHAPTERS=[("00:00","A Career That Needs Explaining"),
  ("00:30","Eighteen Years, Four Chapters, Eight Industries"),
- ("01:30","Chronology vs. What Travelled With You"),
+ ("01:30","Chronology vs. What Traveled With You"),
  ("02:46","Sentence 1: Name the Chapters Briefly"),
  ("03:23","Sentence 2: Find the Work That Repeated"),
  ("05:09","Sentence 3: Explain the Direction"),
@@ -202,7 +202,7 @@ def desc(CH):
  "✨ Find the work that repeated underneath the titles — the verbs, not the "
  "nouns.",
  "✨ Explain why your next direction follows from what you have already built.",
- "Chronology is where you have been. Portability is what travelled with you. "
+ "Chronology is where you have been. Portability is what traveled with you. "
  "They are not the same thing, and only one of them answers the question you "
  "were actually asked.",
  "And I am honest about the limits. Not everything transfers. Some moves "
@@ -233,7 +233,7 @@ def readme_head(W,RT):
  "Title:             %s"%TITLE,
  "Thumbnail:         %s"%THUMB,"",
  "Identity promise:  Become the professional who can explain a nonlinear",
- "                   career without apologising for it and without inventing",
+ "                   career without apologizing for it and without inventing",
  "                   a plan they never had.","",
  "Viewer recognition:Someone looking at their own CV thinking: this makes",
  "                   sense to me because I lived it, and I am not sure it",
@@ -253,24 +253,43 @@ def readme_head(W,RT):
  "Primary CTA:       %s"%CTA,
  "CTA URL:           %s"%CTA_URL,
  "Watch next:        %s"%NEXT_FULL,"",
- "Script:            Freshly written for v5.1. %s spoken words, about %s at"%("{:,}".format(W),RT),
- "                   145 words per minute.",
+ "Script:            v5.1, corrected by the v5.1.1 precision pass.",
+ "                   %s spoken words, about %s at 145 words per minute."%("{:,}".format(W),RT),
  "Slides:            UNCHANGED. All 11 slides were mapped against the new",
  "                   script and every one still serves it.",
  "Reveal deck:       UNCHANGED. 26 frames.",
- "Speaker notes:     Rewritten for the v5.1 narration.",
- "Shorts:            All four rewritten for v5.1.",
+ "Speaker notes:     Rewritten for the v5.1.1 narration.",
+ "Shorts:            All four rewritten for v5.1, corrected for v5.1.1.",
  "Editor directions: Separated from recording copy.",""]
 
 def readme_tail():
-    return ["-"*70,"","WHAT v5.1 CHANGED","",
+    return ["-"*70,"","WHAT v5.1.1 CHANGED - PRECISION PASS","",
+ "A narrow correction pass after Temidayo's independent human read of all",
+ "five long-form scripts and all twenty Short recording scripts. No story,",
+ "structure, memory device, H.I.T. architecture, belonging sequence, identity",
+ "exit, CTA, Watch Next, factual boundary or slide changed.","",
+ "Three speculative or universal lines were corrected. \"Here is the mistake",
+ "almost all of us make\" became \"Here is a mistake I made for years, and one",
+ "I still hear often.\" The script no longer speculates about what a listener",
+ "is privately thinking: \"they are quietly doing arithmetic about why you",
+ "left each place\" became \"you leave the other person to work out what",
+ "connects them.\" And the claim about every interviewer became \"Plenty of",
+ "experienced people have had unplanned turns of their own.\" Shorts 2 and 3",
+ "carry the same corrections. December 2008, the financial crisis, the",
+ "unplanned-turn honesty, the certification non-pass, the three-sentence",
+ "method and the identity exit are all unchanged.",
+ "",
+ "Public-facing and recording text was also standardized to U.S. English",
+ "where no meaning changes: organisation, organisational, programme,",
+ "apologising and travelled. Proper nouns and quotations were not altered.","",
+ "-"*70,"","WHAT v5.1 CHANGED","",
  "The spoken script was written fresh again for v5.1. It opens inside the",
  "viewer's head - your career makes sense to you because you lived it, and you",
  "are less sure it makes sense to anybody else - then hands them the joke a",
  "colleague made about Temidayo's own path. The chronology-versus-portability",
  "distinction now carries the interpretation, and the three sentences do not",
  "arrive until about 2:46. The video ends on describing a career that did not",
- "go in a straight line without apologising for it. Video 1 owns the job-offer",
+ "go in a straight line without apologizing for it. Video 1 owns the job-offer",
  "/ Uber transition story; it is not retold here.","",
  "The prior v5.0 package is superseded. Its hash is preserved here:",
  "  package ZIP 1f59e2ba88c5c37b9363005030e037ce6d777bd0108d23c29a6f84fb2e2570d2","",

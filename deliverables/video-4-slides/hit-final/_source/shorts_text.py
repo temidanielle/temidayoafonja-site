@@ -22,12 +22,12 @@ SHORTS = [
    "The career was not the problem.",
    "The explanation was."]),
  ("Video_4_Short_2_Chronology_Is_Not_Portability.docx","Distinction / myth",
-  "Chronology is where you have been. Portability is what travelled with you.",
-  ["Chronology is where you have been. Portability is what travelled with you.",
+  "Chronology is where you have been. Portability is what traveled with you.",
+  ["Chronology is where you have been. Portability is what traveled with you.",
    "They are not the same thing, and only one of them answers the question you "
    "were actually asked.",
-   "When you give somebody the chronology, they are quietly doing arithmetic "
-   "about why you left each place.",
+   "When you give somebody only the chronology, you leave them to work out what "
+   "connects the moves.",
    "Portability answers something different. What kept being true across all "
    "of it?",
    "And there is a worse move than chronology: going back and inventing the "
@@ -46,8 +46,7 @@ SHORTS = [
    "That was not a strategy. That was a door.",
    "And saying so is not a weakness in the story. It is what makes the rest of "
    "it credible.",
-   "Anybody experienced enough to be interviewing you has had their own "
-   "unplanned turns.",
+   "And you are not the only person whose path had turns they did not choose.",
    "The same goes for the other honest part. Do not claim everything "
    "transferred, because it did not.",
    "Every one of those moves came with real learning. New language, new rules, "

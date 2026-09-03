@@ -1,4 +1,4 @@
-VIDEO 3 — v5.1 BELONGING + IDENTITY FINAL RECORDING PACKAGE
+VIDEO 3 — v5.1.1 BELONGING + IDENTITY · PRECISION PASS FINAL RECORDING PACKAGE
 
 Title:             3 Things to Do Before Quitting Your Job
 Thumbnail:         WAIT BEFORE YOU QUIT
@@ -44,13 +44,13 @@ CTA production
 gate:              SATISFIED
 Watch next:        Video 1 — How to Change Jobs Without Starting Your Career Over
 
-Script:            Freshly written for v5.1. 1,377 spoken words, about 9:29 at
-                   145 words per minute.
+Script:            v5.1, corrected by the v5.1.1 precision pass.
+                   1,378 spoken words, about 9:30 at 145 words per minute.
 Slides:            UNCHANGED. All 13 slides were mapped against the new
                    script and every one still serves it.
 Reveal deck:       UNCHANGED. 27 frames.
-Speaker notes:     Rewritten for the v5.1 narration.
-Shorts:            All four rewritten for v5.1.
+Speaker notes:     Rewritten for the v5.1.1 narration.
+Shorts:            All four rewritten for v5.1, corrected for v5.1.1.
 Editor directions: Separated from recording copy.
 
 ----------------------------------------------------------------------
@@ -59,22 +59,22 @@ WHAT EACH FILE IS
 
 LONG_FORM/
 
-  Video3TeleprompterScriptwithslidemarkers_HIT_v5.1.docx
-  Video3TeleprompterScriptwithslidemarkers_HIT_v5.1.txt
+  Video3TeleprompterScriptwithslidemarkers_HIT_v5.1.1.docx
+  Video3TeleprompterScriptwithslidemarkers_HIT_v5.1.1.txt
       Temidayo's recording copy. Spoken script in large text; slide markers
       in tinted bands. The markers are not spoken.
 
-  Video3ReadingScriptnomarkers_HIT_v5.1.docx
-  Video3ReadingScriptnomarkers_HIT_v5.1.txt
+  Video3ReadingScriptnomarkers_HIT_v5.1.1.docx
+  Video3ReadingScriptnomarkers_HIT_v5.1.1.txt
       The same spoken words with the slide markers removed.
 
-  Video_3_EDITOR_ONLY_HIT_Brief_v5.1.docx
+  Video_3_EDITOR_ONLY_HIT_Brief_v5.1.1.docx
       For the editor. Fourteen sections, from the locked metadata and the
       identity promise through the belonging beat, the first-30 H.I.T. map,
       the slide and reveal maps, factual boundaries, the identity exit and
       the notes record.
 
-  Video_3_Publishing_Package_HIT_v5.1.docx
+  Video_3_Publishing_Package_HIT_v5.1.1.docx
       Title, thumbnail, search language, the copy-ready description,
       working chapter estimates, pinned comment and tag field.
 
@@ -82,26 +82,47 @@ SHORTS/
 
   Four recording documents. Recording copy only, no editor directions.
 
-  Video_3_Shorts_EDITOR_ONLY_HIT_Brief_v5.1.docx
+  Video_3_Shorts_EDITOR_ONLY_HIT_Brief_v5.1.1.docx
       For the editor. Hooks and visual treatment for all four.
 
 ----------------------------------------------------------------------
 
 ALL FILES IN THIS PACKAGE
 
-  LONG_FORM/Video3ReadingScriptnomarkers_HIT_v5.1.docx
-  LONG_FORM/Video3ReadingScriptnomarkers_HIT_v5.1.txt
-  LONG_FORM/Video3TeleprompterScriptwithslidemarkers_HIT_v5.1.docx
-  LONG_FORM/Video3TeleprompterScriptwithslidemarkers_HIT_v5.1.txt
-  LONG_FORM/Video_3_EDITOR_ONLY_HIT_Brief_v5.1.docx
-  LONG_FORM/Video_3_Publishing_Package_HIT_v5.1.docx
+  LONG_FORM/Video3ReadingScriptnomarkers_HIT_v5.1.1.docx
+  LONG_FORM/Video3ReadingScriptnomarkers_HIT_v5.1.1.txt
+  LONG_FORM/Video3TeleprompterScriptwithslidemarkers_HIT_v5.1.1.docx
+  LONG_FORM/Video3TeleprompterScriptwithslidemarkers_HIT_v5.1.1.txt
+  LONG_FORM/Video_3_EDITOR_ONLY_HIT_Brief_v5.1.1.docx
+  LONG_FORM/Video_3_Publishing_Package_HIT_v5.1.1.docx
   SHORTS/Video_3_Short_1_Not_Going_To_Talk_You_Into_Staying.docx
   SHORTS/Video_3_Short_2_Keep_The_Proof_Not_The_Files.docx
   SHORTS/Video_3_Short_3_Access_Changes_All_At_Once.docx
   SHORTS/Video_3_Short_4_Uses_Something_Proven.docx
-  SHORTS/Video_3_Shorts_EDITOR_ONLY_HIT_Brief_v5.1.docx
+  SHORTS/Video_3_Shorts_EDITOR_ONLY_HIT_Brief_v5.1.1.docx
   README_FINAL.txt
   SHA256SUMS.txt
+
+----------------------------------------------------------------------
+
+WHAT v5.1.1 CHANGED - PRECISION PASS
+
+A narrow correction pass after Temidayo's independent human read of all
+five long-form scripts and all twenty Short recording scripts. No story,
+structure, memory device, H.I.T. architecture, belonging sequence, identity
+exit, CTA, Watch Next, factual boundary or slide changed.
+
+Three absolute claims were softened. "They take a couple of evenings, and
+you cannot do them afterwards" became "They are much easier to do while
+you still have access. Parts of this become harder once you leave." The
+detail no longer blurs "almost immediately" but "faster than you expect".
+Short 3's invented two-week rule was removed: the difference is now "often
+what you take the time to capture before your access changes." Urgency is
+preserved; impossibility is not claimed.
+
+Public-facing and recording text was also standardized to U.S. English
+where no meaning changes: organisation, organisational, programme,
+apologising and travelled. Proper nouns and quotations were not altered.
 
 ----------------------------------------------------------------------
 

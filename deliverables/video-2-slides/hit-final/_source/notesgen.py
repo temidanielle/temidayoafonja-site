@@ -12,8 +12,8 @@ def build(n):
     sys.path.insert(0,B)
     C=importlib.import_module("cfg")
     D=importlib.import_module("directions").DIRECTIONS
-    txt=open(os.path.join(B,"canonical_v5.1.txt"),encoding="utf-8").read()
-    body=txt.split("BEGIN APPROVED VIDEO %d v5.1 SCRIPT"%n)[1].split("END APPROVED")[0]
+    txt=open(os.path.join(B,"canonical_v5.1.1.txt"),encoding="utf-8").read()
+    body=txt.split("BEGIN APPROVED VIDEO %d v5.1.1 SCRIPT"%n)[1].split("END APPROVED")[0]
     ps=[x.strip() for x in body.split("\n\n") if x.strip()]
     marks=[]; w=0; cue=None
     for i,p in enumerate(ps):

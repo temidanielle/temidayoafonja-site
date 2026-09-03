@@ -23,8 +23,8 @@ SHORTS = [
  ("Video_1_Short_2_New_Place_Not_New_To_Everything.docx","Distinction / myth",
   "Being new to a place is not the same as being new to the work.",
   ["Being new to a place is not the same as being new to the work.",
-   "When people change job, function or industry, they tend to make one of two "
-   "mistakes.",
+   "When you change jobs, functions or industries, two mistakes are easy to "
+   "make.",
    "The first is assuming everything transfers. That one makes you "
    "underestimate the learning curve and turn up overconfident.",
    "The second is assuming nothing transfers. That one makes you delete years "

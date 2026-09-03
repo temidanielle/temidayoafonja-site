@@ -295,8 +295,38 @@ package (1,403 words) and `Video_5_Code_Prompt_HIT_Final.txt`, and the earlier
 reference.
 
 **VIDEOS 1–5 ARE FINAL AND LOCKED UNDER THE v5.1 BELONGING + IDENTITY
-REGISTER** as of 3 September 2026. All five spoken scripts were rewritten from
-scratch again for v5.1. 230 QA checks pass, 0 failures.
+REGISTER, v5.1.1 PRECISION PASS COMPLETE** as of 3 September 2026. All five
+spoken scripts were rewritten from scratch for v5.1, then corrected by a narrow
+v5.1.1 precision pass. 230 QA checks pass, 0 failures.
+
+**Precision is a standard, not a polish step.** The v5.1.1 pass followed a human
+read of all five long-form scripts and all twenty Shorts, and it removed a class
+of line that automated QA does not catch. Four rules came out of it and now
+apply to every video in the series:
+
+1. **Do not universalize.** "The better you get at one place, the more of your
+   value gets wrapped inside that place" became "As you get better at one place,
+   *some* of your value *can* become wrapped in that context." Bounded verbs —
+   may, can, often — are not hedging; they are the difference between a claim
+   that holds and one that does not.
+2. **Do not speak for people who are not in the room.** Claims about what a
+   listener is privately thinking, what every interviewer has experienced, what
+   most managers feel, or why job descriptions are written the way they are, all
+   came out. Temidayo can say what she saw and what she would ask; she cannot
+   narrate someone else's interior.
+3. **Do not invent a number to make advice feel concrete.** A "two weeks before
+   you handed in your notice" rule had appeared with no source behind it. The
+   defensible version names the condition, not a duration: "before your access
+   changes."
+4. **Detached third person is a defect even when the sentence is true.** "There
+   is a question good employees ask themselves quietly" and "when people change
+   job, function or industry" were rewritten as direct address. The channel
+   speaks to one person across the table.
+
+**Public-facing and recording text is U.S. English.** organization,
+organizational, program, apologizing, traveled, recognizes. Proper nouns and
+quotations are never altered — including old wording quoted inside a change
+record.
 
 **The job-offer / Uber transition story is established, approved, and owned by
 Video 1.** An accepted offer; an acquisition rescinded the role before she ever

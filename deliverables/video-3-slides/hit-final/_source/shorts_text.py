@@ -48,7 +48,7 @@ SHORTS = [
    "The systems close. The files close. The internal directory closes.",
    "The people who could confirm what you actually did scatter into new roles "
    "and new companies.",
-   "And your own memory of the detail starts to blur almost immediately.",
+   "And the detail can start to blur faster than you expect.",
    "I know how quickly access can change without anybody choosing it. I once "
    "accepted a job offer that an acquisition rescinded before I ever got to "
    "start.",
@@ -56,8 +56,8 @@ SHORTS = [
    "the choosing.",
    "That is an advantage, and it is worth using while you still have it.",
    "Because the difference between leaving with a story and leaving with "
-   "evidence is mostly what you did in the two weeks before you handed in your "
-   "notice.",
+   "evidence is often what you take the time to capture before your access "
+   "changes.",
    "Write it down while you still can."]),
  ("Video_3_Short_4_Uses_Something_Proven.docx","Practical test / action",
   "Two questions to hold your next move up against.",

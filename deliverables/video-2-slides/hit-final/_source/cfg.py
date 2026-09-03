@@ -134,7 +134,7 @@ BEATS=["“I have had to answer that question about myself more than once.”",
  "“That is a translation problem, not a value problem.”",
  "“Not panic. Attention.”"]
 SLIDE_XML_RECORD=("Slide XML, geometry, typography, palette and media: "
- "UNCHANGED. Speaker notes: rewritten for the v5.1 narration.")
+ "UNCHANGED. Speaker notes: rewritten for the v5.1.1 narration.")
 
 SHORT_BEATS=["“That question is not a sign that something is wrong.”",
  "“Delete every word that only exists inside your employer.”",
@@ -200,14 +200,15 @@ def desc(CH):
  "and about finding that out calmly, now, rather than in a week when you have "
  "no choice about it.",
  "Three tests you can run on your own work this week:",
- "✨ Remove the company nouns — take the employer, programme, system and "
+ "✨ Remove the company nouns — take the employer, program, system and "
  "acronym out of one sentence and see what is left.",
  "✨ Find outside-context evidence — one time your judgment was useful beyond "
  "your immediate role, team or employer.",
  "✨ Read the last 90 days — new judgment, or the same work faster?",
- "Your company knows exactly why you matter. They watched you do it. Someone "
- "in another company has none of that context — they are not being unfair, "
- "they simply cannot read the evidence.",
+ "The people around you may know exactly why you matter, because they have "
+ "seen the work. Somebody in another company has none of that context — they "
+ "are not being unfair when they cannot see it, they simply cannot read the "
+ "evidence.",
  "This will not stop a restructure or control a hiring market. What it changes "
  "is when you find out — calmly, now, instead of during an urgent search.","",
  "🧭 CAPABILITY FORMATION FIELD KIT",
@@ -246,18 +247,36 @@ def readme_head(W,RT):
  "Primary CTA:       %s"%CTA,
  "CTA URL:           %s"%CTA_URL,
  "Watch next:        %s"%NEXT_FULL,"",
- "Script:            Freshly written for v5.1. %s spoken words, about %s at"%("{:,}".format(W),RT),
- "                   145 words per minute.",
+ "Script:            v5.1, corrected by the v5.1.1 precision pass.",
+ "                   %s spoken words, about %s at 145 words per minute."%("{:,}".format(W),RT),
  "Slides:            UNCHANGED. All 13 slides were mapped against the new",
  "                   script and every one still serves it. Slide 13 carries",
  "                   the corrected Video 3 title.",
  "Reveal deck:       UNCHANGED. 23 frames.",
- "Speaker notes:     Rewritten for the v5.1 narration.",
- "Shorts:            All four rewritten for v5.1.",
+ "Speaker notes:     Rewritten for the v5.1.1 narration.",
+ "Shorts:            All four rewritten for v5.1, corrected for v5.1.1.",
  "Editor directions: Separated from recording copy.",""]
 
 def readme_tail():
-    return ["-"*70,"","WHAT v5.1 CHANGED","",
+    return ["-"*70,"","WHAT v5.1.1 CHANGED - PRECISION PASS","",
+ "A narrow correction pass after Temidayo's independent human read of all",
+ "five long-form scripts and all twenty Short recording scripts. No story,",
+ "structure, memory device, H.I.T. architecture, belonging sequence, identity",
+ "exit, CTA, Watch Next, factual boundary or slide changed.","",
+ "Two universal claims were narrowed. \"The better you get at one place, the",
+ "more of your value gets wrapped inside that place\" became \"As you get",
+ "better at one place, some of your value can become wrapped in that",
+ "context\", keeping the history / systems / relationships / trust examples.",
+ "\"Your company knows exactly why you matter. They watched you earn it\"",
+ "became \"The people around you may know exactly why you matter, because",
+ "they have seen the work.\" Short 1 got the same two corrections plus a",
+ "direct-recognition opening in place of \"There is a question good employees",
+ "ask themselves quietly.\" The non-alarmist boundary is unchanged.",
+ "",
+ "Public-facing and recording text was also standardized to U.S. English",
+ "where no meaning changes: organisation, organisational, programme,",
+ "apologising and travelled. Proper nouns and quotations were not altered.","",
+ "-"*70,"","WHAT v5.1 CHANGED","",
  "The spoken script was written fresh again for v5.1 under the belonging-first,",
  "identity-transformation register. The viewer's situation and the private",
  "question underneath it come first, then the explicit reassurance that being",

@@ -29,7 +29,9 @@ the video — no acronym, no second framework, and CAR belongs to Video 6.""",
 # 4 Access Test
 """The four access variables reveal one at a time, in the order spoken.
 
-“Job descriptions are written to be approved, not to be accurate.” Keep it.
+“A job description can tell you the broad role. It may not tell you what an
+ordinary Monday will actually ask of you.” Keep the bounded form — the script
+does not claim job descriptions are written to be inaccurate.
 
 The permission beat matters: taking more of the same work can still be the
 right call this year, as long as the viewer takes it knowing what it is. Do not
@@ -46,22 +48,25 @@ her, not the volume. Bounded exactly as above.""",
 
 THE ORGANISATIONAL LAYER is on this slide: the people who value you most may
 still see you through the role they already know you for. Deliver it as
-description, not grievance — “That is not disloyalty. It is how organisations
+description, not grievance — “That is not disloyalty. It is how organizations
 remember people.”
 
-Then it is translated straight back to the viewer: the story your organisation
-tells about you is a year or two behind what you can do, and closing that gap
-is maintenance, not self-promotion. Do not cut the translation — without it the
-section becomes an HR observation.""",
+Then it is translated straight back to the viewer: the story people inside an
+organization tell about you can lag behind what you are actually ready to do
+now, and closing that gap is maintenance, not self-promotion. Do not cut the
+translation — without it the section becomes an HR observation. Note the
+bounded form: “can lag”, with no timescale attached.""",
 # 7 3 — Will the Evidence Travel?
 """Section break only.""",
 # 8 Result / Judgment / Range
 """RESULT / JUDGMENT / RANGE. Reveal one at a time.
 
-The internal-move weakness is the honest limit in this section: a lot of
-internal work is legible only inside the building. Keep it — it is the one
-place the video argues against its own thumbnail, which is what makes it
-trustworthy.""",
+The honest limit in this section is narrow and must stay narrow: internal moves
+can be especially easy to describe only in internal language, so if the outcome
+only makes sense to people inside the company it has to be translated before
+the viewer assumes the evidence will travel. It is NOT a claim that internal
+work is generally illegible. Keep it — it is the one place the video argues
+against its own thumbnail, which is what makes it trustworthy.""",
 # 9 Decision Read
 """The 3 / 2 / 0–1 read. Never gamified, never scored, no progress bar.
 

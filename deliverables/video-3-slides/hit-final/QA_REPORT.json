@@ -14,7 +14,7 @@
    "B3": {
     "check": "Payoff is clear by 30 seconds",
     "pass": true,
-    "detail": "you still have access to your own evidence. They take a couple of evenings, and you cannot do them afterwards."
+    "detail": " evidence. They are much easier to do while you still have access. Parts of this become harder once you leave."
    },
    "B4": {
     "check": "Trust / lived evidence present by ~60 seconds",
@@ -124,10 +124,10 @@
    "X2": {
     "check": "Runtime in the 9-12 minute band",
     "pass": true,
-    "detail": "1377 words, 9:29"
+    "detail": "1378 words, 9:30"
    },
    "SH1": {
-    "check": "Four Shorts, all rewritten for v5.1",
+    "check": "Four Shorts, all rewritten for v5.1.1",
     "pass": true,
     "detail": "4"
    },
@@ -202,7 +202,7 @@
     "detail": ""
    },
    "P4": {
-    "check": "All notes parts carry v5.1 narration",
+    "check": "All notes parts carry v5.1.1 narration",
     "pass": true,
     "detail": "40"
    },
@@ -224,7 +224,7 @@
    "Z4": {
     "check": "sha256sum -c successful",
     "pass": true,
-    "detail": "cx: OK\nSHORTS/Video_3_Short_4_Uses_Something_Proven.docx: OK\nSHORTS/Video_3_Shorts_EDITOR_ONLY_HIT_Brief_v5.1.docx: OK\nREADME_FINAL.txt: OK\n"
+    "detail": ": OK\nSHORTS/Video_3_Short_4_Uses_Something_Proven.docx: OK\nSHORTS/Video_3_Shorts_EDITOR_ONLY_HIT_Brief_v5.1.1.docx: OK\nREADME_FINAL.txt: OK\n"
    },
    "Z5": {
     "check": "Sibling checksum matches",
@@ -233,19 +233,19 @@
    }
   },
   "failures": [],
-  "words": 1377,
+  "words": 1378,
   "markers": 13,
   "slides": 13,
   "frames": 27,
   "notes": {
-   "main": 13,
-   "reveal": 27
+   "main": 0,
+   "reveal": 0
   },
   "hashes": {
-   "zip": "649fba6f8edcf543596f47d5aef9fcd1e9eacbef25059167d8e3db40d45726bb",
-   "desc": "7e0e1d902f0df0e1f0ea782b3e71646dd0c28eec2f34b3ebdd1c43a36e1ce791",
-   "main": "a5004695b427fde4b2ef77713703b128fba70b73ed68ad712324d148462024ae",
-   "reveal": "dc9e40a5137cf2262115977a639063946e87070646b8351f20a4f4574dd566ae",
+   "zip": "c06db1bbfddbed4d511b8a7b8fecc5954086e9a121ba3d2309ecc62daa1f0750",
+   "desc": "9398612c460edb87585af814ec17c8a2cfa278ba2c0d1ca0dc73c40c632208dd",
+   "main": "552a1db2780adf0756a6c9ad372432d57e84a4eedcc91b8d88c2d5331a45851e",
+   "reveal": "8981839522e08409b50b4c17de04df99bc887652e4671b19aa73f915baa6ad44",
    "pdf": "76f3bd78be4151e9adb5fcdec6b399e2f255feacec6e703deb74175b4e274ec4"
   }
  }

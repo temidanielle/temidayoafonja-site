@@ -710,6 +710,140 @@ patch, and the Video 6 description document already carried one before it.
 Video 4 gained a separate description-only document, so Videos 1 and 4 to 8
 now all follow that convention.
 
+### Videos 1-5 - v5.1.1 PRECISION PASS, 3 September 2026
+
+A narrow correction pass following Temidayo's independent human read of all five
+long-form scripts and all twenty Short recording scripts. **This is not a
+rewrite and not a v5.2.** Its purpose was to remove a small number of
+generalized, unsupported or detached lines that the automated QA did not catch,
+and to standardize public-facing spelling to U.S. English.
+
+Nothing changed in: titles, thumbnails, core stories, memory structures, H.I.T.
+architecture, belonging sequence, identity exits, CTAs, Watch Next, slide order,
+slide design, factual evidence, or overall script structure.
+
+#### The corrections, old to new
+
+**Video 1** - long form needed no substantive change. Short 2 only:
+
+- "When people change job, function or industry, they tend to make one of two
+  mistakes." -> "When you change jobs, functions or industries, two mistakes are
+  easy to make."
+
+**Video 2** - two universal claims narrowed, in the long form and in Short 1:
+
+- "The better you get at one place, the more of your value gets wrapped inside
+  that place." -> "As you get better at one place, some of your value can become
+  wrapped in that context." (history / systems / relationships / trust examples
+  kept)
+- "Your company knows exactly why you matter. They watched you earn it." -> "The
+  people around you may know exactly why you matter, because they have seen the
+  work."
+- Short 1 opening: "There is a question good employees ask themselves quietly."
+  -> "You can be very good at your job and still quietly wonder: would anyone
+  outside this company understand what I do?"
+
+**Video 3** - three absolutes softened:
+
+- "They take a couple of evenings, and you cannot do them afterwards." -> "They
+  are much easier to do while you still have access. Parts of this become harder
+  once you leave."
+- "your own memory of the detail starts to blur almost immediately" -> "the
+  detail can start to blur faster than you expect"
+- Short 3: "...is mostly what you did in the two weeks before you handed in your
+  notice." -> "...is often what you take the time to capture before your access
+  changes." **The invented two-week rule is gone.**
+
+**Video 4** - three speculative or universal lines corrected, plus Shorts 2 and 3:
+
+- "Here is the mistake almost all of us make, and I made it for years." -> "Here
+  is a mistake I made for years, and one I still hear often."
+- "...the person listening is quietly doing arithmetic about why you left each
+  place." -> "...you leave the other person to work out what connects them."
+  (Short 2: "When you give somebody only the chronology, you leave them to work
+  out what connects the moves.")
+- "Anybody experienced enough to be interviewing you has had their own unplanned
+  turns." -> "You are not the only person whose path had turns they did not
+  choose."
+
+**Video 5** - five overclaims removed, plus Shorts 1, 2 and 4:
+
+- "Job descriptions are written to be approved, not to be accurate." **Deleted.**
+  -> "A job description can tell you the broad role. It may not tell you what an
+  ordinary Monday will actually ask of you."
+- "The story your organisation tells about you is usually a year or two behind
+  what you can actually do now." -> "The story people inside an organization tell
+  about you can lag behind what you are actually ready to do now." ("Closing that
+  gap is not self-promotion. It is maintenance." is kept.)
+- "...and most good managers are relieved to be asked them." -> "They are
+  reasonable questions to ask a manager, because they show you are taking the
+  role seriously."
+- "...your judgment will not grow. You will get faster, and more tired." -> "...your
+  judgment may not expand very much. You may simply get faster at work you
+  already know."
+- Short 4: "Be careful with internal moves in particular, because this is where
+  they are weakest. A lot of internal work is legible only inside the building."
+  -> "Internal moves can be especially easy to describe only in internal
+  language. If the outcome only makes sense to people inside the company,
+  translate it before you assume the evidence will travel." The result / judgment
+  / range test is unchanged.
+
+#### U.S. English standardization
+
+`organisation` to `organization`, `organisational` to `organizational`,
+`programme` to `program`, `apologising` to `apologizing`. Two further instances
+of the same rule were applied and are recorded here: `travelled` to `traveled`
+and `recognises` to `recognizes`. Proper nouns were not altered, and the old
+wording quoted inside each README's change record was deliberately left as
+written.
+
+#### Verification
+
+**No slide XML change was required.** All ten decks were scanned for every
+corrected phrase and for every British spelling before any edit: none appears in
+visible slide copy anywhere, so nothing needed reporting or changing. Speaker
+notes were regenerated and reapplied - notes-only, with `NON-NOTES PARTS
+CHANGED: []` on all ten files. All five slide-preview PDFs remain
+byte-identical.
+
+| Video | Words | Runtime | Method arrives | Identity bridge | Slides / reveals |
+|---|---|---|---|---|---|
+| 1 | 1,722 | 11:52 | 4:14 | 10:28 | 13 / 22 |
+| 2 | 1,415 | 9:45 | 2:54 | 8:32 | 13 / 23 |
+| 3 | 1,378 | 9:30 | 2:41 | 8:20 | 13 / 27 |
+| 4 | 1,364 | 9:24 | 2:46 | 7:51 | 11 / 26 |
+| 5 | 1,395 | 9:37 | 2:32 | 8:22 | 12 / 25 |
+
+**230 QA checks pass, 0 failures**, re-run in full: canonical comparison,
+long-form/reading equivalence (teleprompter minus markers equals the reading
+script, all markers present, no markers in the reading copy), direct-address
+measurement, factual QA, simple-language and jargon sweeps, the 13-file
+allowlist, 12-entry `SHA256SUMS.txt` with `sha256sum -c` passing, and sibling
+ZIP checksums. All 50 documents were re-rendered and inspected; the only thin
+trailing page is the Video 1 teleprompter's two-line sign-off page, which is
+intentional because recording copy is never compressed.
+
+One regression was caught and fixed during the pass: Video 4's direct-address
+measure fell to 59% (threshold 60%) after the interviewer line was softened, so
+that line was reworded to address the viewer directly without reintroducing the
+overclaim. Video 4 now measures 61%.
+
+#### Videos 1-5 v5.1.1 hashes
+
+| Video | Package ZIP | Description DOCX | Main deck | Reveal deck | Preview PDF |
+|---|---|---|---|---|---|
+| 1 | `c20ba22f395a0051d4af8244256edc966693c927fd390909dede3412361557d0` | `152defc2aa200744bd88f327b98187ff76d9a686e6b4ea4b2675c34cd6eb8b44` | `b0cc7687ff2357a14fabf2d3c6c82732e93cfc6fdb268d307d91bb22eed9c636` | `f7047626d8d1ec5262e30ed7fce09427eec76d5dc7340ae627b4e9e01500cdf5` | `af4e763c0cdf56f758571b0a655c76aaf92fffabbbac082d49920a21e2c2bf3c` |
+| 2 | `31cca714a477ea4f3c2d48abb72a93f008362b7358e323e05e7b2e02f45557fb` | `99381854008c0e0aed6044f7df95e1f0cb5190a383b81e23f26df55f2085364b` | `6b27e196d0ed881ec7f7444a125dfefd950e24cb98d8f4d7974865c2aa5732d9` | `f84fac0af6022d7db5b07452ef0bda494fdcf5e0a11d30482f44fe842dbf8e2d` | `7917d0fafcc77d557d394e59427c37e5d6813cd2c28a210e35a0bc8415a190b0` |
+| 3 | `c06db1bbfddbed4d511b8a7b8fecc5954086e9a121ba3d2309ecc62daa1f0750` | `9398612c460edb87585af814ec17c8a2cfa278ba2c0d1ca0dc73c40c632208dd` | `552a1db2780adf0756a6c9ad372432d57e84a4eedcc91b8d88c2d5331a45851e` | `8981839522e08409b50b4c17de04df99bc887652e4671b19aa73f915baa6ad44` | `76f3bd78be4151e9adb5fcdec6b399e2f255feacec6e703deb74175b4e274ec4` |
+| 4 | `855d7c9a8973ab71841c639de422c00666ea6e0c1c3828ec4eb6054c523a395e` | `38e5bec84eba543ef777e6b4d73f05edc1f2715cd31eab9fe096656579f43b48` | `e3d5325b3f297bdc9daa372b7afbbf7dd3ce29fbcfd631b0a20fe4cf4e5aaf04` | `777626c7f6a8769c0b81258fc9111d7c1754b8bdb3a4d741a18b2079559f66ee` | `da482aff3ce4d4253c9f0d5417fddb53688207d24d0d9f6a72ca5b6a77f1b832` |
+| 5 | `4ce583dc8d68520b2d9f9679166ed1ad7470c56b52207520b40e501a757847ff` | `841aa5063e2aadfb80ed54b1c0437afe0ddc66f6f120e993bc0deda9fc8eb501` | `284d8c57307f4149a0c4508100a282f4b363951de6d0590ae7d3264beac99da1` | `d1d9041aa859c69827b4927909630a0bfd6a9c0e47ed787bb1829eef6e887afd` | `b8443372b168308bc188863be45f903349f63246ab2c7af0a82913dfdfc5bdb1` |
+
+Package filenames and in-document headers now carry `v5.1.1`. The superseded
+v5.1 package hashes are recorded in the section below; v5.0 and v4.0 hashes
+remain in each README change record.
+
+**VIDEOS 1-5 - FINAL + LOCKED. v5.1.1 PRECISION PASS COMPLETE.**
+
 ### Videos 1–5 — v5.1 belonging-first rebuild with the established job-offer / Uber transition story, 3 September 2026
 
 Built under `Videos_1-5_Belonging_Identity_Full_Rebuild_Code_Prompt_v5.1_FINAL.txt`,
@@ -1011,7 +1145,7 @@ part changed in any of the six decks; only notes parts changed.
 
 | State | Videos |
 |---|---|
-| FINAL + LOCKED UNDER THE v5.1 BELONGING + IDENTITY REGISTER | 1, 2, 3, 4, 5 |
+| FINAL + LOCKED - v5.1.1 PRECISION PASS COMPLETE | 1, 2, 3, 4, 5 |
 | FINAL + LOCKED FOR RECORDING | 6, 7, 8 |
 
 Videos 7 and 8 completed their H.I.T. rebuilds on 1 September 2026 and are

@@ -77,9 +77,9 @@ HIT_ROWS=[
   "Honest about the limits of her position.",
   "The viewer is treated as the authority on their own life."],
  ["0:24–0:36","“But there are three things worth doing before you resign, "
-  "while you still have access to your own evidence. They take a couple of "
-  "evenings, and you cannot do them afterwards.”","Payoff, plus the reason "
-  "it is time-bound.","3 CHECKS BEFORE YOU RESIGN",
+  "while you still have access to your own evidence. They are much easier to "
+  "do while you still have access. Parts of this become harder once you "
+  "leave.”","Payoff, plus the reason it is time-bound.","3 CHECKS BEFORE YOU RESIGN",
   "Restrained three-item reveal. No countdown, no warning graphic.",
   "The three checks are the promise.","Payoff explicit by 36 seconds."]]
 HOOK=("You may already know.","WAIT BEFORE YOU QUIT",
@@ -92,7 +92,7 @@ HOOK=("You may already know.","WAIT BEFORE YOU QUIT",
 SLIDE_NOTE=("Thirteen markers, mapping to the existing thirteen-slide deck in "
  "order. The freshly written v5.1 script was mapped against the deck slide by "
  "slide and every slide still serves it, so NO visible slide text was changed "
- "in this rebuild. Speaker notes were rewritten throughout for the v5.1 "
+ "in this rebuild. Speaker notes were rewritten throughout for the v5.1.1 "
  "narration.")
 SLIDE_MAP=["Title","Once You Leave, Access Changes","01 Preserve the Evidence",
  "What to Keep / What Not to Take","02 Name What Your Work Built",
@@ -151,7 +151,7 @@ BEATS=["“You may already know.”",
  "decision is legible before your access changes.”",
  "“I do want you to leave with more than exhaustion.”"]
 SLIDE_XML_RECORD=("Slide XML, geometry, typography, palette and media: "
- "UNCHANGED. Speaker notes: rewritten for the v5.1 narration.")
+ "UNCHANGED. Speaker notes: rewritten for the v5.1.1 narration.")
 
 SHORT_BEATS=["“I am not going to try to talk you into staying.”",
  "“If you have to think about whether a document is yours, it is not yours.”",
@@ -197,7 +197,7 @@ TAGS=("things to do before quitting your job, before you resign, should I quit "
  "Temidayo Afonja, Capability Formation")
 PINNED=["Which part of this is happening in your situation right now?",
  "1. You have decided, and you want to leave properly",
- "2. You are not sure whether the problem is the job or the whole organisation",
+ "2. You are not sure whether the problem is the job or the whole organization",
  "3. You know you need a bridge first and are not sure what kind",
  "Tell me which one. And if you had to write down what your strongest piece of "
  "work proves you can do, what would you put?",
@@ -215,8 +215,8 @@ def desc(CH):
  "is not what this is. You have information about your own situation that "
  "nobody watching from outside has.",
  "But the day you leave, access changes. The systems close. The files close. "
- "The people who could confirm what you actually did scatter. And your own "
- "memory of the detail starts to blur almost immediately.",
+ "The people who could confirm what you actually did scatter. And the detail "
+ "can start to blur faster than you expect.",
  "So before you go, three things:",
  "✨ Preserve the evidence — a truthful record of your own contribution, in "
  "your own words, using only what you are entitled to keep.",
@@ -281,17 +281,33 @@ def readme_head(W,RT):
  "CTA production",
  "gate:              SATISFIED",
  "Watch next:        %s"%NEXT_FULL,"",
- "Script:            Freshly written for v5.1. %s spoken words, about %s at"%("{:,}".format(W),RT),
- "                   145 words per minute.",
+ "Script:            v5.1, corrected by the v5.1.1 precision pass.",
+ "                   %s spoken words, about %s at 145 words per minute."%("{:,}".format(W),RT),
  "Slides:            UNCHANGED. All 13 slides were mapped against the new",
  "                   script and every one still serves it.",
  "Reveal deck:       UNCHANGED. 27 frames.",
- "Speaker notes:     Rewritten for the v5.1 narration.",
- "Shorts:            All four rewritten for v5.1.",
+ "Speaker notes:     Rewritten for the v5.1.1 narration.",
+ "Shorts:            All four rewritten for v5.1, corrected for v5.1.1.",
  "Editor directions: Separated from recording copy.",""]
 
 def readme_tail():
-    return ["-"*70,"","WHAT v5.1 CHANGED","",
+    return ["-"*70,"","WHAT v5.1.1 CHANGED - PRECISION PASS","",
+ "A narrow correction pass after Temidayo's independent human read of all",
+ "five long-form scripts and all twenty Short recording scripts. No story,",
+ "structure, memory device, H.I.T. architecture, belonging sequence, identity",
+ "exit, CTA, Watch Next, factual boundary or slide changed.","",
+ "Three absolute claims were softened. \"They take a couple of evenings, and",
+ "you cannot do them afterwards\" became \"They are much easier to do while",
+ "you still have access. Parts of this become harder once you leave.\" The",
+ "detail no longer blurs \"almost immediately\" but \"faster than you expect\".",
+ "Short 3's invented two-week rule was removed: the difference is now \"often",
+ "what you take the time to capture before your access changes.\" Urgency is",
+ "preserved; impossibility is not claimed.",
+ "",
+ "Public-facing and recording text was also standardized to U.S. English",
+ "where no meaning changes: organisation, organisational, programme,",
+ "apologising and travelled. Proper nouns and quotations were not altered.","",
+ "-"*70,"","WHAT v5.1 CHANGED","",
  "The spoken script was written fresh again for v5.1. It opens on where the",
  "viewer already is - \"You may already know\" - then removes the thing they are",
  "braced for: \"I am not going to try to talk you into staying.\" The safety",

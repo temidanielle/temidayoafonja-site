@@ -84,7 +84,7 @@ HOOK=("You might be doing well exactly where you are, and still wondering "
 SLIDE_NOTE=("Twelve markers, mapping to the existing twelve-slide deck in "
  "order. The freshly written v5.1 script was mapped against the deck slide by "
  "slide and every slide still serves it, so NO visible slide text was changed "
- "in this rebuild. Speaker notes were rewritten throughout for the v5.1 "
+ "in this rebuild. Speaker notes were rewritten throughout for the v5.1.1 "
  "narration.")
 SLIDE_MAP=["Core Distinction","The Three Questions","1 — Will the Work Change?",
  "Access Test","2 — Will Your Judgment Expand?","More Tasks / More Judgment",
@@ -119,10 +119,10 @@ DONOTUSE=["maternity or baby imagery;","stock office B-roll;",
 CTA_NOTES=["It arrives after the identity bridge, so it reads as the next step "
  "rather than an advert. Keep that order.",
  "Note the phrasing: “I made the Career Decision Evidence Check to help you "
- "organise the evidence behind that choice.” Offered, not announced.",
+ "organize the evidence behind that choice.” Offered, not announced.",
  "CTA production gate: SATISFIED. Retain one signed-out link check in the "
  "final upload SOP."]
-IDENTITY_LINE=("“This is what I actually want for you. Not only a better "
+IDENTITY_LINE=("“And this is what I actually want for you. Not only a better "
  "answer on this one move. I want you to get better at reading every "
  "opportunity — internal, external, offered, or asked for — for what it will "
  "actually build in you. That is a different kind of professional. Somebody "
@@ -133,11 +133,11 @@ IDENTITY_PLACEMENT=("It sits at the end of the Conversation Prompts section, "
 BEATS=["“I do not think it has a general answer. It has your answer.”",
  "“It was not simply more work. It was different work.”",
  "“I noticed the load first, the way most of us do.”",
- "“That is not disloyalty. It is how organisations remember people.”",
+ "“That is not disloyalty. It is how organizations remember people.”",
  "“Somebody who does not need a title to tell them whether a year was worth "
  "it.”"]
 SLIDE_XML_RECORD=("Slide XML, geometry, typography, palette and media: "
- "UNCHANGED. Speaker notes: rewritten for the v5.1 narration.")
+ "UNCHANGED. Speaker notes: rewritten for the v5.1.1 narration.")
 
 SHORT_BEATS=["“It has your answer.”",
  "“More work is a load. Different work is a signal.”",
@@ -149,7 +149,7 @@ SHORT_BLOCKS=[
    "End on:  START WITH THE BUILDING YOU ARE IN."]),
  ("SHORT 2","Distinction / myth","MOVEMENT ≠ GROWTH",
   ["Restrained two-column contrast: MORE TASKS / MORE JUDGMENT.",
-   "The closing turn is the organisational layer translated back to the "
+   "The closing turn is the organizational layer translated back to the "
    "viewer: ask for the move specifically. Do not cut it.",
    "End on:  NAME THE DECISION YOU WANT."]),
  ("SHORT 3","Proof / personal evidence","MORE WORK WASN’T THE POINT",
@@ -203,7 +203,7 @@ def desc(CH):
  "✨ Will the work change?",
  "✨ Will your judgment expand?",
  "✨ Will the evidence travel?",
- "I also look at the other side of the decision: what your organisation is "
+ "I also look at the other side of the decision: what your organization is "
  "actually willing to let you learn, decide and own — and why the people who "
  "value you most can be the ones least able to imagine you doing something "
  "else.",
@@ -217,7 +217,7 @@ def desc(CH):
  "will actually build in you.","",
  "🧭 CAREER DECISION EVIDENCE CHECK",
  "If you are actively weighing whether to stay, move internally or leave, use "
- "this to organise the evidence behind the choice:",
+ "this to organize the evidence behind the choice:",
  CTA_URL,"",
  "⏱️ CHAPTERS"]+CH+["",
  "▶️ WATCH NEXT","Are You Growing—or Just Being Given More Work?",
@@ -254,26 +254,50 @@ def readme_head(W,RT):
  "CTA production",
  "gate:              SATISFIED",
  "Watch next:        %s"%NEXT_FULL,"",
- "Script:            Freshly written for v5.1. %s spoken words, about %s at"%("{:,}".format(W),RT),
- "                   145 words per minute.",
+ "Script:            v5.1, corrected by the v5.1.1 precision pass.",
+ "                   %s spoken words, about %s at 145 words per minute."%("{:,}".format(W),RT),
  "Slides:            UNCHANGED. All 12 slides were mapped against the new",
  "                   script and every one still serves it.",
  "Reveal deck:       UNCHANGED. 25 frames.",
- "Speaker notes:     Rewritten for the v5.1 narration.",
- "Shorts:            All four rewritten for v5.1.",
+ "Speaker notes:     Rewritten for the v5.1.1 narration.",
+ "Shorts:            All four rewritten for v5.1, corrected for v5.1.1.",
  "Editor directions: Separated from recording copy.",""]
 
 def readme_tail():
-    return ["-"*70,"","WHAT v5.1 CHANGED","",
+    return ["-"*70,"","WHAT v5.1.1 CHANGED - PRECISION PASS","",
+ "A narrow correction pass after Temidayo's independent human read of all",
+ "five long-form scripts and all twenty Short recording scripts. No story,",
+ "structure, memory device, H.I.T. architecture, belonging sequence, identity",
+ "exit, CTA, Watch Next, factual boundary or slide changed.","",
+ "Five overclaims were removed. The assertion that job descriptions are",
+ "\"written to be approved, not to be accurate\" is gone, replaced by \"A job",
+ "description can tell you the broad role. It may not tell you what an",
+ "ordinary Monday will actually ask of you.\" The invented \"year or two\"",
+ "timeline is gone: the story people inside an organization tell about you",
+ "\"can lag behind what you are actually ready to do now\", and closing that",
+ "gap is still maintenance rather than self-promotion. \"Most good managers",
+ "are relieved to be asked them\" became \"They are reasonable questions to",
+ "ask a manager, because they show you are taking the role seriously.\" The",
+ "judgment claim was softened to \"your judgment may not expand very much.",
+ "You may simply get faster at work you already know.\" And the sweeping",
+ "internal-move claim became the narrow one: internal moves can be",
+ "especially easy to describe only in internal language. Shorts 1, 2 and 4",
+ "carry the same corrections. The result / judgment / range test is intact.",
+ "",
+ "Public-facing and recording text was also standardized to U.S. English",
+ "where no meaning changes: organisation, organisational, programme,",
+ "apologising and travelled. Proper nouns and quotations were not altered.","",
+ "-"*70,"","WHAT v5.1 CHANGED","",
  "The spoken script was written fresh again for v5.1. It opens on the exact",
  "question the viewer is holding - do I have to leave to get different work -",
  "and refuses to answer it generally: \"It has your answer.\" The",
  "maternity-return proof arrives at about 0:32, inside the first minute, and",
  "carries the distinction the whole video runs on: more work is a load,",
  "different work is a signal. The three questions do not arrive until about",
- "2:04. The organisational beat now translates back to the viewer explicitly -",
- "the story your organisation tells about you is a year or two behind what you",
- "can do, and closing that gap is maintenance, not self-promotion. Video 1 owns",
+ "2:04. The organizational beat now translates back to the viewer explicitly -",
+ "the story people inside an organization tell about you can lag behind what",
+ "you are ready to do, and closing that gap is maintenance, not",
+ "self-promotion. Video 1 owns",
  "the job-offer / Uber transition story; it is not retold here.","",
  "The prior v5.0 package is superseded. Its hash is preserved here:",
  "  package ZIP 28b5facd8cb85b385785be99dec783f29203428ec2205f69ba74ecd4babaaca0","",

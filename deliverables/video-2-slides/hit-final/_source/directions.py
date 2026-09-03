@@ -14,8 +14,10 @@ relied on look like a symptom, the video has failed.""",
 # 2 Valuable Here / Legible Elsewhere
 """The mechanism slide. Reveal the contrast, then let her talk over it.
 
-“Your company knows exactly why you matter. They watched you earn it.” is a
-compliment and must be delivered as one.
+“The people around you may know exactly why you matter, because they have
+seen the work.” This is a compliment and must be delivered as one. The claim is
+deliberately bounded — it says the people around you MAY know, not that every
+company reads its people correctly.
 
 “They are not being unfair when they cannot see it. They simply cannot read the
 evidence.” — this is the line that keeps the video generous about other

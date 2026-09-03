@@ -5,17 +5,18 @@ No client, employer, metric or result anywhere. The QBR line stays generic."""
 
 SHORTS = [
  ("Video_2_Short_1_Could_Anyone_Outside_Tell.docx","Recognition / story",
-  "There is a question good employees ask themselves quietly.",
-  ["There is a question good employees ask themselves quietly.",
-   "Would anyone outside this company actually understand what I do?",
-   "If you have asked it, I want to say something first.",
+  "You can be very good at your job and still quietly wonder.",
+  ["You can be very good at your job and still quietly wonder: would anyone "
+   "outside this company understand what I do?",
+   "If you have asked yourself that, I want to say something first.",
    "That question is not a sign that something is wrong. It usually turns up "
    "in the people who are best at their jobs.",
-   "Because the better you get at one place, the more of your value gets "
-   "wrapped inside that place. The history nobody wrote down. The systems. The "
+   "Because as you get better at one place, some of your value can become "
+   "wrapped in that context. The history nobody wrote down. The systems. The "
    "relationships. The shortcuts you can take because people trust you.",
-   "Your company knows exactly why you matter. They watched you earn it.",
-   "Somebody in another organisation has none of that.",
+   "The people around you may know exactly why you matter, because they have "
+   "seen the work.",
+   "Somebody in another organization has none of that.",
    "They are not being unfair when they cannot see it. They simply cannot read "
    "the evidence.",
    "So the question is not whether you are valuable.",
@@ -24,7 +25,7 @@ SHORTS = [
   "Valuable here and legible elsewhere are two different questions.",
   ["Valuable here and legible elsewhere are two different questions.",
    "And doing well at work only answers the first one.",
-   "Your organisation may depend on you because the undocumented history lives "
+   "Your organization may depend on you because the undocumented history lives "
    "in your head. Because certain relationships run through you. Because you "
    "are the one who rescues the fragile process.",
    "That makes you very hard to replace here.",
@@ -40,7 +41,7 @@ SHORTS = [
  ("Video_2_Short_3_Delete_The_Company_Words.docx","Proof / personal evidence",
   "Take one sentence about your work and delete every company word in it.",
   ["Take one sentence about your work and delete every company word in it.",
-   "The company name. The programme name. The internal system. The acronym. "
+   "The company name. The program name. The internal system. The acronym. "
    "Your team's private shorthand.",
    "Then read what is left.",
    "I have had to do this to my own work more than once, moving across "

@@ -18,7 +18,7 @@ accounting degree and the financial crisis, exactly as spoken.""",
 # 2 Chronology / Portability
 """Chronology beside portability. Reveal chronology first, then portability.
 
-“Chronology is where you have been. Portability is what travelled with you.”
+“Chronology is where you have been. Portability is what traveled with you.”
 This is the core interpretation of the video. Hold it.
 
 The inventing-the-plan warning is the honesty boundary arriving early. “It does
@@ -69,7 +69,7 @@ ask what they think you are good at.
 Reveal the two possible answers — a list of industries, or a kind of problem.
 
 THE IDENTITY EXIT sits at the end of this slide: describing a career that did
-not go in a straight line without apologising for it, and without inventing a
+not go in a straight line without apologizing for it, and without inventing a
 plan you were never running. It is the point of the video. If the edit runs
 long, cut something else.""",
 # 10 Career Evidence Starter

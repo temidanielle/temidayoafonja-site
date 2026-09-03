@@ -29,7 +29,7 @@
    "B6": {
     "check": "Personal evidence illuminates the viewer, not Temidayo",
     "pass": true,
-    "detail": "you=82  I=21"
+    "detail": "you=85  I=21"
    },
    "B7": {
     "check": "An interpretation follows the story",
@@ -64,7 +64,7 @@
    "S1": {
     "check": "Simple-language test",
     "pass": true,
-    "detail": "['organisational', 'reconstructing']"
+    "detail": "['organizational', 'reconstructing']"
    },
    "S2": {
     "check": "No consulting or HR jargon",
@@ -84,7 +84,7 @@
    "S5": {
     "check": "Direct address carries the viewer-facing content",
     "pass": true,
-    "detail": "40/50 = 80%"
+    "detail": "42/51 = 82%"
    },
    "H1": {
     "check": "No hype or creator bait",
@@ -124,10 +124,10 @@
    "X2": {
     "check": "Runtime in the 9-12 minute band",
     "pass": true,
-    "detail": "1392 words, 9:36"
+    "detail": "1395 words, 9:37"
    },
    "SH1": {
-    "check": "Four Shorts, all rewritten for v5.1",
+    "check": "Four Shorts, all rewritten for v5.1.1",
     "pass": true,
     "detail": "4"
    },
@@ -202,7 +202,7 @@
     "detail": ""
    },
    "P4": {
-    "check": "All notes parts carry v5.1 narration",
+    "check": "All notes parts carry v5.1.1 narration",
     "pass": true,
     "detail": "37"
    },
@@ -224,7 +224,7 @@
    "Z4": {
     "check": "sha256sum -c successful",
     "pass": true,
-    "detail": " OK\nSHORTS/Video_5_Short_4_Will_The_Evidence_Travel.docx: OK\nSHORTS/Video_5_Shorts_EDITOR_ONLY_HIT_Brief_v5.1.docx: OK\nREADME_FINAL.txt: OK\n"
+    "detail": "K\nSHORTS/Video_5_Short_4_Will_The_Evidence_Travel.docx: OK\nSHORTS/Video_5_Shorts_EDITOR_ONLY_HIT_Brief_v5.1.1.docx: OK\nREADME_FINAL.txt: OK\n"
    },
    "Z5": {
     "check": "Sibling checksum matches",
@@ -233,19 +233,19 @@
    }
   },
   "failures": [],
-  "words": 1392,
+  "words": 1395,
   "markers": 12,
   "slides": 12,
   "frames": 25,
   "notes": {
-   "main": 12,
-   "reveal": 25
+   "main": 0,
+   "reveal": 0
   },
   "hashes": {
-   "zip": "868824de8ee1ea0b43b96310812a27f44f6ea38c562aecb900084e88bdaabf00",
-   "desc": "60f55f1ad687857d963cccadb9f12353035a773dded8bcef5d73ab3f97ce9235",
-   "main": "c3f7ca7853a7d56d0f10724e78ceffc515bd4f37de4838972983f2e367e831eb",
-   "reveal": "8d083e24eb2d6643b947976162e2535f9d77c6c6f7403915decdacb94423193d",
+   "zip": "4ce583dc8d68520b2d9f9679166ed1ad7470c56b52207520b40e501a757847ff",
+   "desc": "841aa5063e2aadfb80ed54b1c0437afe0ddc66f6f120e993bc0deda9fc8eb501",
+   "main": "284d8c57307f4149a0c4508100a282f4b363951de6d0590ae7d3264beac99da1",
+   "reveal": "d1d9041aa859c69827b4927909630a0bfd6a9c0e47ed787bb1829eef6e887afd",
    "pdf": "b8443372b168308bc188863be45f903349f63246ab2c7af0a82913dfdfc5bdb1"
   }
  }
