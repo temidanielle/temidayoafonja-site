@@ -170,6 +170,21 @@
    "pass": true,
    "detail": "[]"
   },
+  "S5": {
+   "check": "Slide 13 Watch Next card carries the locked Video 3 title",
+   "pass": true,
+   "detail": "['', 'WATCH NEXT', '3 Things to Do\\x0bBefore Quitting\\x0bYour Job', '', '', '', '', '']"
+  },
+  "S6": {
+   "check": "Reveal frame 23 carries the locked Video 3 title",
+   "pass": true,
+   "detail": "['', 'WATCH NEXT', '3 Things to Do\\x0bBefore Quitting\\x0bYour Job', '', '', '', '', '']"
+  },
+  "S7": {
+   "check": "No stale Video 3 title anywhere in either deck",
+   "pass": true,
+   "detail": ""
+  },
   "S4": {
    "check": "All notes parts carry v4.0 notes",
    "pass": true,
@@ -219,16 +234,16 @@
  "frames": 23,
  "prior_ver": "v3.0 direct address",
  "prior_zip": "f8ebaa45f657d5fbd60440a54bde58127c343b15fd0b8956c84d6cf7701e18a9",
- "prior_source": "Video2TeleprompterScriptwithslidemarkers_HIT_v3.0_DIRECT_ADDRESS.txt",
+ "prior_source": "Video2TeleprompterScriptwithslidemarkers_HIT_v4.0.txt",
  "notes_rewritten": {
-  "main": 3,
-  "reveal": 6
+  "main": 1,
+  "reveal": 1
  },
  "hashes": {
-  "zip": "4f44a564c8e5826d6353a0e41efed69b4a4881c714e5579c3e802e008561d07a",
-  "desc": "db288cb632008939eae0057a751e25ac83a29576a292299e71c9d61c438dfdef",
-  "main": "d4c8755b187561111741c71f0b10928b2afdf0f571183155344be13f6d74d0f4",
-  "reveal": "4d0c7ac365518a657f3e98398c0e9ebe226157a3d68d29d3aaa9f56c4877b7fd",
+  "zip": "123ff006a80ef0260e317190ae808668bd89083d8ecbb83f546c43b47615ee3f",
+  "desc": "4b7e255d40759dbc148a096de62f9833b62764599b06227da65e786af8839b81",
+  "main": "362d0e51fdbfbddfda6375b0a795b4ffb96a804e9aa1e53e15b95cb205c534af",
+  "reveal": "cf7bad865313c5ea090f11ee104e2113c1e16e21119ff7d36cd5e542e41af617",
   "pdf": "7917d0fafcc77d557d394e59427c37e5d6813cd2c28a210e35a0bc8415a190b0"
  }
 }

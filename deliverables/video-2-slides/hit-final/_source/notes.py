@@ -146,12 +146,11 @@ straight from concern to resignation. There are three things I want you to
 check first. That is the next video: 3 Things to Do Before Quitting Your Job.
 Watch that one next."
 
-DECK DEFECT — NOT FIXED. This card still reads "Before You Quit Your Job, Check
-These 3 Things", which is the RETIRED Video 3 title. The locked title is "3
-Things to Do Before Quitting Your Job", which is what Temidayo says. No slide
-XML change was authorised in this pass. Until the card is corrected, do not
-hold it on screen while she names the video: stay on Temidayo, or cut to the
-end-screen route.
+WATCH NEXT CARD CORRECTED, 3 September 2026. This card previously carried the
+retired Video 3 title. It now reads "3 Things to Do Before Quitting Your Job",
+the locked Video 3 title, matching what Temidayo says. The correction was text
+only: same 40pt Montserrat Bold, same three-line block, same box, same colours,
+no media change. You can hold the card on screen while she names the video.
 
 Do not summarize this video again.
 

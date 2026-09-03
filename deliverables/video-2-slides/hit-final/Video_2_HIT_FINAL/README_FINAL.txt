@@ -109,13 +109,27 @@ This package:         v4.0, spoken word count 1,258.
 
 ----------------------------------------------------------------------
 
-OPEN DECK ITEM — NOT FIXED IN THIS PASS
+WATCH NEXT CARD — CORRECTED
 
-Slide 13 and reveal frame 23 still read "Before You Quit Your Job, Check
-These 3 Things". That is the retired Video 3 title. The locked Video 3
-title is "3 Things to Do Before Quitting Your Job", which is what Temidayo
-says in the script. No slide XML change was authorised in this pass, so the
-card was left alone and the correction is held for a separate approval.
+Slide 13 and reveal frame 23 previously carried the retired Video 3 title,
+"Before You Quit Your Job, Check These 3 Things". Both now read "3 Things
+to Do Before Quitting Your Job", the locked Video 3 title, which is what
+Temidayo says in the script.
+
+The correction was text only and was measured before it was applied: same
+40pt Montserrat Bold, same three-line block, same text box at the same
+position and size, same colours, no media change, and no change to the
+end-screen space on the right. The widest line went from 4.655 in to
+4.525 in inside a 6.667 in box, so it fits with more clearance, not less.
+Exactly one slide XML part changed in each deck: ppt/slides/slide13.xml in
+the main deck and ppt/slides/slide23.xml in the reveal deck.
+
+The slide-preview PDF was NOT regenerated. Re-rendering it in the current
+build environment returns Montserrat in the wrong weight, which would change
+typography that must be preserved, so page 13 of the PDF still shows the
+retired title. The two PowerPoint decks are authoritative and both carry the
+corrected card. Re-export the preview PDF cleanly before using it for
+review.
 
 ----------------------------------------------------------------------
 

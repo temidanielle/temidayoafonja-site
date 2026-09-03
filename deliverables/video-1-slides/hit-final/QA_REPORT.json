@@ -203,8 +203,8 @@
  },
  "failures": [],
  "change": {
-  "unchanged": 70,
-  "changed": 41,
+  "unchanged": 111,
+  "changed": 0,
   "inserted": 0,
   "removed": 0
  },
@@ -219,7 +219,7 @@
  "frames": 22,
  "prior_ver": "v3.1",
  "prior_zip": "17e881ea97774f0d4a9e080f2077b093b6367f6f3ce14e22fe119ceb17a793e6",
- "prior_source": "Video1TeleprompterScriptwithslidemarkers_HIT_v3.1.txt",
+ "prior_source": "Video1TeleprompterScriptwithslidemarkers_HIT_v4.0.txt",
  "notes_rewritten": {
   "main": 13,
   "reveal": 22

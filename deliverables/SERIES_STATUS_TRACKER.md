@@ -377,14 +377,22 @@ Video 2 previously had no package ZIP and no description-only document. Both
 were created in this pass, bringing it onto the convention used by Videos 1
 and 3 to 8.
 
-**OPEN DECK ITEM — REQUIRES SEPARATE AUTHORISATION.** Slide 13 and reveal frame
-23 still read `Before You Quit Your Job, Check These 3 Things`, the RETIRED
-Video 3 title. The locked Video 3 title is `3 Things to Do Before Quitting Your
-Job`, which is what the script says. This defect pre-dates the direct-address
-pass and was not created by it. No slide XML change was authorised in this
-pass, so the card was left alone; the editor brief, the README and the slide-13
-speaker note all record it and instruct the editor to stay on Temidayo rather
-than hold the stale card on screen.
+**SLIDE 13 WATCH NEXT — CORRECTED AND CLOSED, 3 September 2026.** Main slide 13
+and reveal frame 23 now read `3 Things to Do Before Quitting Your Job`,
+replacing the retired `Before You Quit Your Job, Check These 3 Things`. Text
+only: same 40pt Montserrat Bold, same three-line block, same box, same colours,
+no media change, end-screen clearance unchanged. Exactly one slide XML part
+changed per deck. The editor brief, README and slide-13 speaker note now record
+the correction rather than the defect. See the v4.0 section above for the full
+verification and for the one derived asset that is deliberately one page
+behind, the slide-preview PDF.
+
+Updated Video 2 hashes after the correction: package ZIP
+`123ff006a80ef0260e317190ae808668bd89083d8ecbb83f546c43b47615ee3f`,
+description-only DOCX
+`4b7e255d40759dbc148a096de62f9833b62764599b06227da65e786af8839b81`,
+main deck `362d0e51fdbfbddfda6375b0a795b4ffb96a804e9aa1e53e15b95cb205c534af`,
+reveal deck `cf7bad865313c5ea090f11ee104e2113c1e16e21119ff7d36cd5e542e41af617`.
 
 #### Video 3 — 3 Things to Do Before Quitting Your Job
 
@@ -723,7 +731,7 @@ paragraphs and now measures 77%.
 | 4 | v3.0 direct address | 1,355 | **1,355** | 0 / 123 | **74%** | 11 / 26 |
 | 5 | v3.1 | 1,980 | **1,980** | 0 / 191 | **85%** | 12 / 25 |
 
-**200 QA checks across the five videos pass, 0 failures.** No slide XML, media,
+**203 QA checks across the five videos pass, 0 failures** (200 at the v4.0 rebuild, plus three added for the Video 2 slide-13 correction). No slide XML, media,
 rels or theme part changed in any of the ten decks; only notes parts changed.
 
 What v4.0 newly added to every package: a **first-30-second H.I.T. audit table**
@@ -756,7 +764,7 @@ missing export is not a blocker for the recording package.
 | Video | Package ZIP | Description-only DOCX | Main deck | Reveal deck | Preview PDF |
 |---|---|---|---|---|---|
 | 1 | `fe9d1d6a59705ff0fd212bc1cac038e9a32e1cf8fb49741477abf0edda3e3c41` | `228e5314198e75acb0a29d046cf074ee50c93a6b840972bd01c2d7075ca1780b` | `bf3dee5f6ae946e1f25219bf13ca4d91250d52c18726e6f855c7bb4f97b490a1` | `27e575044b35348aa112aaeebf09ab50b65b22ba430cb5bd3905f3e998dcf955` | `af4e763c0cdf56f758571b0a655c76aaf92fffabbbac082d49920a21e2c2bf3c` |
-| 2 | `4f44a564c8e5826d6353a0e41efed69b4a4881c714e5579c3e802e008561d07a` | `db288cb632008939eae0057a751e25ac83a29576a292299e71c9d61c438dfdef` | `d4c8755b187561111741c71f0b10928b2afdf0f571183155344be13f6d74d0f4` | `4d0c7ac365518a657f3e98398c0e9ebe226157a3d68d29d3aaa9f56c4877b7fd` | `7917d0fafcc77d557d394e59427c37e5d6813cd2c28a210e35a0bc8415a190b0` |
+| 2 | `123ff006a80ef0260e317190ae808668bd89083d8ecbb83f546c43b47615ee3f` | `4b7e255d40759dbc148a096de62f9833b62764599b06227da65e786af8839b81` | `362d0e51fdbfbddfda6375b0a795b4ffb96a804e9aa1e53e15b95cb205c534af` | `cf7bad865313c5ea090f11ee104e2113c1e16e21119ff7d36cd5e542e41af617` | `7917d0fafcc77d557d394e59427c37e5d6813cd2c28a210e35a0bc8415a190b0` |
 | 3 | `3cc786b4ca291d78962dae2f2ae54de3d94c790532791e4d19db65767527d41e` | `bf3d98030c8da161d98e574de511f336b7dd8c1845cddc799f304225be477cd5` | `296d1fc8365fe72c4b68f51d5b7c9d190ac9f29db78beeccde8eb6e22e15ccb8` | `0f76384a14f6f4e1a8e82bc055dfeb2dcc09ce0b35c9c209f0f952f087f0195a` | `76f3bd78be4151e9adb5fcdec6b399e2f255feacec6e703deb74175b4e274ec4` |
 | 4 | `245fd3be2e15090fb6f7bf86d0b5eea9332ab7d8f2171d8a9d48bef99463674d` | `4a2f10109a5d5748522b3cfcb049c726475ab76000c3bbd01f200119893252ab` | `cd9b7b80fa2860b313ce19c501b601b2e69f9e6ed538adeeec56957673ff271f` | `04cdf28e49d46d754f7db482697cd36d054f047bda7e64d6caadce955eb5bb1e` | `da482aff3ce4d4253c9f0d5417fddb53688207d24d0d9f6a72ca5b6a77f1b832` |
 | 5 | `da93ca06af102bf12f4ae23b445dbcb4bebcd579ba42bfe86e31c5f82e4ad65a` | `d43d8a8a6666c612466aa7706f88a19c79af8fec7b784ed77e27ca86521e4f57` | `a2d30edcc49e6f9b42be74b457aa16e5a049338feff7fe70e388c5c8743d5447` | `a1a85d9d9d3d486e54a6e6832d9ca372e557386969f07d21305b9cb3513e30c7` | `b8443372b168308bc188863be45f903349f63246ab2c7af0a82913dfdfc5bdb1` |
@@ -768,8 +776,45 @@ Video 5 `0067d553…`.
 **VIDEOS 1–5 — FINAL + LOCKED UNDER H.I.T. + DIRECT-ADDRESS + DIFFERENTIATION +
 MULTI-LAYER HOOK REGISTER.**
 
-Video 2's open slide-13 Watch Next defect is unchanged and still requires a
-separate authorisation; it is recorded in the Video 2 section below.
+#### Video 2 slide 13 — CORRECTED AND CLOSED, 3 September 2026
+
+The stale Watch Next card is fixed. Main slide 13 and reveal frame 23 read
+
+  3 Things to Do Before Quitting Your Job
+
+replacing the retired `Before You Quit Your Job, Check These 3 Things`.
+
+The correction was measured before it was applied and was text only. The three
+existing runs were rewritten in place at the same 40pt Montserrat Bold, in the
+same three-line block, in the same text box at the same position and size, with
+the same colours, no media change and no change to the end-screen clearance on
+the right. The widest line moved from 4.655 in to 4.525 in inside a 6.667 in
+box, so it fits with more room than before.
+
+Exactly one slide XML part changed in each deck — `ppt/slides/slide13.xml` in
+the main deck and `ppt/slides/slide23.xml` in the reveal deck. No other slide,
+reveal, media, rels or theme part changed. The spoken Watch Next line was
+already correct and is unchanged. The slide-13 speaker note, the editor brief
+and the README were updated to record the correction instead of the defect,
+which is why the Video 2 package was rebuilt; Videos 1, 3, 4 and 5 were not
+reopened and their deck hashes are unchanged.
+
+**One derived asset is deliberately one page behind.** The Video 2
+slide-preview PDF was NOT regenerated. Re-rendering it in the current build
+environment returns Montserrat in the wrong weight — the published PDF is Bold,
+the re-render came back light — and replacing it would change typography that
+must be preserved. Page 13 of that PDF therefore still shows the retired title.
+The two PowerPoint decks are the authoritative artifacts and both carry the
+corrected card. The PDF needs one clean re-export from an environment that
+resolves the brand fonts correctly before it is used for review. This is a
+review-asset gap, not a recording blocker, and it is recorded in the Video 2
+editor brief and README.
+
+**Videos 1–5 status: FINAL + LOCKED UNDER H.I.T. + DIRECT-ADDRESS +
+DIFFERENTIATION + MULTI-LAYER HOOK REGISTER.** The only outstanding Video 2
+items are publishing assets, not recording blockers: the approved Canva
+thumbnail export for `VALUABLE HERE. STUCK HERE?`, and the clean slide-preview
+PDF re-export.
 
 ### Direct-address voice register — series standard, 3 September 2026
 

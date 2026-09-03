@@ -206,15 +206,24 @@ H1(d,"8.  CTA and watch next",before=14)
 keep(P(d,"One product CTA only: %s — %s"%(CTA,CTA_URL),after=5))
 keep(P(d,"Do not add Keep the Proof or the Career Evidence Starter.",bold=True,after=6))
 keep(P(d,"Watch next: %s"%NEXT,bold=True,after=5))
-p=P(d,"DECK DEFECT — NOT FIXED IN THIS PASS. Slide 13 and reveal frame 23 "
-     "still carry the retired Video 3 title, “Before You Quit Your Job, Check "
-     "These 3 Things”. The locked Video 3 title is “3 Things to Do Before "
-     "Quitting Your Job”, which is what Temidayo says. No slide XML change is "
-     "authorised in this pass, so the card is unchanged and the correction is "
-     "held for a separate authorisation. Until it is corrected, do not put "
-     "that card on screen while she names the video: stay on Temidayo, or use "
-     "the end-screen route.",size=11,bold=True,color=RED,before=6,after=10,
-     spacing=1.25)
+p=P(d,"WATCH NEXT CARD CORRECTED, 3 September 2026. Slide 13 and reveal frame "
+     "23 previously carried the retired Video 3 title, “Before You Quit Your "
+     "Job, Check These 3 Things”. Both now read “3 Things to Do Before "
+     "Quitting Your Job”, which is the locked Video 3 title and matches what "
+     "Temidayo says. The correction was text only: same 40pt Montserrat Bold, "
+     "same three-line block, same text box at the same position and size, same "
+     "colours, no media change and no change to the end-screen space on the "
+     "right. The card can now be held on screen while she names the video.",
+    size=11,bold=True,color=NAVY,before=6,after=10,spacing=1.25)
+shade(p,BAND_CREAM); keep(p)
+p=P(d,"SLIDE-PREVIEW PDF IS ONE PAGE BEHIND. The two PowerPoint decks are the "
+     "authoritative artifacts and both carry the corrected card. The "
+     "slide-preview PDF was NOT regenerated: re-rendering it in the current "
+     "build environment returns Montserrat in the wrong weight, which would "
+     "change typography that must be preserved. Its page 13 therefore still "
+     "shows the retired title. Work from the decks, and re-export the preview "
+     "PDF cleanly before using it for review.",size=11,bold=True,color=RED,
+    after=10,spacing=1.25)
 shade(p,BAND_CREAM); keep(p)
 keep(P(d,"Do not leave Subscribe as the only end-screen element.",bold=True,
        color=RED,after=8))
@@ -509,12 +518,24 @@ R+=["  README_FINAL.txt","  SHA256SUMS.txt","",
  "paragraph was deleted and no new claim was added.","",
  "Prior locked package: v2.0, spoken word count 1,131.",
  "This package:         v4.0, spoken word count 1,258.","",
- "-"*70,"","OPEN DECK ITEM — NOT FIXED IN THIS PASS","",
- "Slide 13 and reveal frame 23 still read \"Before You Quit Your Job, Check",
- "These 3 Things\". That is the retired Video 3 title. The locked Video 3",
- "title is \"3 Things to Do Before Quitting Your Job\", which is what Temidayo",
- "says in the script. No slide XML change was authorised in this pass, so the",
- "card was left alone and the correction is held for a separate approval.","",
+ "-"*70,"","WATCH NEXT CARD — CORRECTED","",
+ "Slide 13 and reveal frame 23 previously carried the retired Video 3 title,",
+ "\"Before You Quit Your Job, Check These 3 Things\". Both now read \"3 Things",
+ "to Do Before Quitting Your Job\", the locked Video 3 title, which is what",
+ "Temidayo says in the script.","",
+ "The correction was text only and was measured before it was applied: same",
+ "40pt Montserrat Bold, same three-line block, same text box at the same",
+ "position and size, same colours, no media change, and no change to the",
+ "end-screen space on the right. The widest line went from 4.655 in to",
+ "4.525 in inside a 6.667 in box, so it fits with more clearance, not less.",
+ "Exactly one slide XML part changed in each deck: ppt/slides/slide13.xml in",
+ "the main deck and ppt/slides/slide23.xml in the reveal deck.","",
+ "The slide-preview PDF was NOT regenerated. Re-rendering it in the current",
+ "build environment returns Montserrat in the wrong weight, which would change",
+ "typography that must be preserved, so page 13 of the PDF still shows the",
+ "retired title. The two PowerPoint decks are authoritative and both carry the",
+ "corrected card. Re-export the preview PDF cleanly before using it for",
+ "review.","",
  "-"*70,"","CHECKSUMS","",
  "SHA256SUMS.txt covers the other 12 user-facing files in this package. It",
  "does not hash itself, and it carries no ZIP checksum. The archive's own",
