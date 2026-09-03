@@ -377,55 +377,67 @@ The package was not rebuilt or altered for the lock; no packaged file changed.
 
 #### Video 5 — Should I Make an Internal Move? 3 Questions to Decide
 
-**FINAL + LOCKED FOR RECORDING — v3.0 DIFFERENTIATED REBUILD.**
+**FINAL + LOCKED FOR RECORDING — v3.1 DIRECT-ADDRESS REBUILD.**
 `deliverables/video-5-slides/hit-final/`.
 
 | | |
 |---|---|
-| Canonical instruction | `Video_5_Code_Prompt_Differentiated_v3.0.txt` |
+| Canonical instruction | `Video_5_Code_Prompt_Differentiated_Direct_Address_v3.1.txt` |
 | Title | Should I Make an Internal Move? 3 Questions to Decide |
 | Thumbnail | YOU MAY NOT NEED TO LEAVE |
 | Format | Searchable decision + organizational mechanics |
-| Canonical spoken count | 1,762 across 180 spoken paragraphs |
+| Voice register | Direct address — one experienced professional across the table, never lecturer to a crowd |
+| Canonical spoken count | 1,980 across 191 spoken paragraphs (203 blocks) |
+| Estimated runtime | ~13:39 at 145 wpm |
 | Memorable device | The three questions (no acronym, no second framework) |
 | Primary CTA | Career Decision Evidence Check |
 | CTA URL | https://temidayoafonja.com/career-decisions |
 | CTA production gate | SATISFIED |
 | Watch next | Video 6 — Are You Growing—or Just Being Given More Work? |
-| Long-form v3.0 rebuild | FINAL + LOCKED |
-| Four standalone Shorts | FINAL + LOCKED (Short 3 renamed to Maternity_Return_Scope_Expansion) |
-| Long-form EDITOR ONLY brief | FINAL (11 required sections) |
-| Shorts EDITOR ONLY brief | FINAL |
+| Long-form v3.1 rebuild | FINAL + LOCKED |
+| Four standalone Shorts | FINAL + LOCKED, all four rewritten in direct address |
+| Long-form EDITOR ONLY brief | FINAL — 12 sections, including the new Direct-address register |
+| Shorts EDITOR ONLY brief | FINAL — carries "Direct address is part of the creative" |
 | Publishing package | FINAL |
 | Description-only DOCX | FINAL, outside the ZIP |
 | Canonical source verification | PASSED IN SAME BUILD PASS |
-| 52-point QA | 52 / 52 PASSED |
+| QA | 64 / 64 PASSED (52 core + 12 direct-address) |
 | Slides | UNCHANGED (12 main slides) — no slide XML, geometry, typography, palette or media change |
 | Reveal deck | UNCHANGED (25 frames) |
-| Speaker notes | UPDATED to v3.0 — 12 main notes parts, 25 reveal notes parts |
+| Speaker notes | UPDATED to v3.1 — 12 main notes parts, 25 reveal notes parts |
 | Slide preview PDF | UNCHANGED (verified pixel-identical to a fresh render of the current deck) |
 | Thumbnail | UNCHANGED |
-| Final package ZIP SHA-256 | `f54447a6323ddd28036c1c733b2be2c0e3f7fe61b01a2535cd25053eddd674b7` |
+| Final package ZIP SHA-256 | `0067d5530c26d2625eec0bcce131ab61cfadba6f438f5febff30d557c04d2b23` |
 | Sibling checksum | `Video_5_HIT_FINAL_Recording_and_Shorts_Package.zip.sha256` |
-| Description-only DOCX SHA-256 | `ff8c2387107388070f269c3f4180911f133286414a71c0b98ca89824897df6ec` |
-| Main deck SHA-256 | `764b0e11270322ab2773d5920f011826ca93cc99a48427baa026d5a59b6259b9` |
-| Reveal deck SHA-256 | `0568c956fcc4037153e6dcc7715a428d93e79c3763fa9c097cfa9dab4c156c06` |
+| Description-only DOCX SHA-256 | `12cde0558c6109ac3a3d75c8b77f1e34947ccbabf8d128281640831987c3252a` |
+| Main deck SHA-256 | `8f6fec230dcd46adf0e57403da48140a23481474132738d37c64956c78669de8` |
+| Reveal deck SHA-256 | `ee43aefa88ed77234ffa1392185e10c0e57432d3d7d223c19a5074e6373a89fb` |
 | Slide preview PDF SHA-256 | `b8443372b168308bc188863be45f903349f63246ab2c7af0a82913dfdfc5bdb1` |
 
 The literal comparison against the uploaded canonical TXT ran inside the build
-pass and passed on every axis: all 192 blocks, 180 spoken paragraphs, 12 slide
+pass and passed on every axis: all 203 blocks, 191 spoken paragraphs, 12 slide
 markers by name and by position, and both DOCX and TXT forms of the
 teleprompter and reading scripts. Teleprompter minus markers equals the reading
 script exactly. All four Shorts match the canonical spoken copy verbatim.
 
-**The v2.0 H.I.T. package (ZIP `3b9fcc52…`, 1,403 spoken words) is SUPERSEDED as
-recording authority** by this v3.0 differentiated rebuild, and
-`Video_5_Code_Prompt_HIT_Final.txt` is superseded as the canonical instruction
-for Video 5. Retain both only as historical reference. The earlier `de4363c`
-script remains superseded as before.
+**Direct-address result.** No occurrence of "some people", "professionals
+often", "people may" or "a person should" anywhere in the long-form, the
+Shorts or the public copy. 92 of 124 substantive spoken paragraphs (74%)
+address the viewer directly, 56% across all 191 paragraphs — direct enough to
+carry the relationship, not so mechanical that every sentence repeats "you".
+35 paragraphs carry first-person lived voice. The first-person bridges are
+present and counted: "Let me show you" ×1, "I want to help you" ×3, "I want you
+to" ×9. "Experienced professionals" appears exactly once, in the
+channel-positioning sentence, and the script returns immediately to "you". All
+five organizational-mechanics lines are addressed to the viewer. No keynote
+markers.
 
-The old exception that delayed personal proof until roughly 1:35 is superseded;
-the proof now sits in the opening.
+**The v3.0 package (ZIP `f54447a6…`, 1,762 spoken words) is SUPERSEDED as
+recording authority**, and `Video_5_Code_Prompt_Differentiated_v3.0.txt` is
+superseded as the canonical instruction, by this v3.1 direct-address rebuild.
+The v3.0 prompt is retained in `_source/` as
+`Video_5_Code_Prompt_Differentiated_v3.0_SUPERSEDED.txt`. The v2.0 H.I.T.
+package and the earlier `de4363c` script remain superseded as before.
 
 Only speaker notes changed in the two decks. Part-level diffs confirm that the
 12 `ppt/notesSlides/notesSlideN.xml` parts of the main deck and the 25 of the

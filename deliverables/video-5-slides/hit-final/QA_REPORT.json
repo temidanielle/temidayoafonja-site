@@ -182,7 +182,7 @@
  "37": {
   "check": "Render and visually inspect every DOCX",
   "pass": true,
-  "detail": "{\"v5_1\": 13, \"v5_2\": 14, \"v5_3\": 5, \"v5_4\": 4, \"v5_5\": 1, \"v5_6\": 1, \"v5_7\": 1, \"v5_8\": 1, \"v5_9\": 2, \"v5_10\": 4}"
+  "detail": "{\"x5_1\": 13, \"x5_2\": 14, \"x5_3\": 5, \"x5_4\": 3, \"x5_5\": 1, \"x5_6\": 1, \"x5_7\": 1, \"x5_8\": 1, \"x5_9\": 2, \"x5_10\": 3}"
  },
  "38": {
   "check": "Render and visually inspect main slide deck",
@@ -197,12 +197,12 @@
  "40": {
   "check": "No clipping/overlap/broken glyph/blank/near-empty trailing page",
   "pass": true,
-  "detail": "{\"v5_1\": 19, \"v5_2\": 10, \"v5_3\": 59, \"v5_4\": 37, \"v5_5\": 63, \"v5_6\": 70, \"v5_7\": 81, \"v5_8\": 72, \"v5_9\": 53, \"v5_10\": 21}"
+  "detail": "{\"x5_1\": 74, \"x5_2\": 54, \"x5_3\": 71, \"x5_4\": 73, \"x5_5\": 61, \"x5_6\": 79, \"x5_7\": 73, \"x5_8\": 80, \"x5_9\": 69, \"x5_10\": 53}"
  },
  "41": {
   "check": "Build ZIP from explicit 13-file allowlist",
   "pass": true,
-  "detail": "['Video_5_HIT_FINAL/LONG_FORM/Video5TeleprompterScriptwithslidemarkers_HIT_v3.0.docx', 'Video_5_HIT_FINAL/LONG_FORM/Video5TeleprompterScriptwithslidemarkers_HIT_v3.0.txt', 'Video_5_HIT_FINAL/LONG_FORM/Video5ReadingScriptnomarkers_HIT_v3.0.docx', 'Video_5_HIT_FINAL/LONG_FORM/Video5ReadingScriptnomarkers_HIT_v3.0.txt', 'Video_5_HIT_FINAL/LONG_FORM/Video_5_EDITOR_ONLY_HIT_Brief_v3.0.docx', 'Video_5_HIT_FINAL/LONG_FORM/Video_5_Publishing_Package_HIT_v3.0.docx', 'Video_5_HIT_FINAL/SHORTS/Video_5_Short_1_You_May_Not_Need_To_Leave.docx', 'Video_5_HIT_FINAL/SHORTS/Video_5_Short_2_More_Tasks_Not_More_Judgment.docx', 'Video_5_HIT_FINAL/SHORTS/Video_5_Short_3_Maternity_Return_Scope_Expansion.docx', 'Video_5_HIT_FINAL/SHORTS/Video_5_Short_4_Three_Questions_Before_You_Move.docx', 'Video_5_HIT_FINAL/SHORTS/Video_5_Shorts_EDITOR_ONLY_HIT_Brief.docx', 'Video_5_HIT_FINAL/README_FINAL.txt', 'Video_5_HIT_FINAL/SHA256SUMS.txt']"
+  "detail": "['Video_5_HIT_FINAL/LONG_FORM/Video5TeleprompterScriptwithslidemarkers_HIT_v3.1.docx', 'Video_5_HIT_FINAL/LONG_FORM/Video5TeleprompterScriptwithslidemarkers_HIT_v3.1.txt', 'Video_5_HIT_FINAL/LONG_FORM/Video5ReadingScriptnomarkers_HIT_v3.1.docx', 'Video_5_HIT_FINAL/LONG_FORM/Video5ReadingScriptnomarkers_HIT_v3.1.txt', 'Video_5_HIT_FINAL/LONG_FORM/Video_5_EDITOR_ONLY_HIT_Brief_v3.1.docx', 'Video_5_HIT_FINAL/LONG_FORM/Video_5_Publishing_Package_HIT_v3.1.docx', 'Video_5_HIT_FINAL/SHORTS/Video_5_Short_1_You_May_Not_Need_To_Leave.docx', 'Video_5_HIT_FINAL/SHORTS/Video_5_Short_2_More_Tasks_Not_More_Judgment.docx', 'Video_5_HIT_FINAL/SHORTS/Video_5_Short_3_Maternity_Return_Scope_Expansion.docx', 'Video_5_HIT_FINAL/SHORTS/Video_5_Short_4_Three_Questions_Before_You_Move.docx', 'Video_5_HIT_FINAL/SHORTS/Video_5_Shorts_EDITOR_ONLY_HIT_Brief.docx', 'Video_5_HIT_FINAL/README_FINAL.txt', 'Video_5_HIT_FINAL/SHA256SUMS.txt']"
  },
  "42": {
   "check": "Exactly 13 files in ZIP",
@@ -232,22 +232,22 @@
  "47": {
   "check": "Sibling ZIP checksum matches",
   "pass": true,
-  "detail": "f54447a6323ddd28036c1c733b2be2c0e3f7fe61b01a2535cd25053eddd674b7 / f54447a6323ddd28036c1c733b2be2c0e3f7fe61b01a2535cd25053eddd674b7"
+  "detail": "0067d5530c26d2625eec0bcce131ab61cfadba6f438f5febff30d557c04d2b23 / 0067d5530c26d2625eec0bcce131ab61cfadba6f438f5febff30d557c04d2b23"
  },
  "48": {
   "check": "Description-only DOCX SHA-256 reported",
   "pass": true,
-  "detail": "ff8c2387107388070f269c3f4180911f133286414a71c0b98ca89824897df6ec"
+  "detail": "12cde0558c6109ac3a3d75c8b77f1e34947ccbabf8d128281640831987c3252a"
  },
  "49": {
   "check": "Main PPTX SHA-256 reported",
   "pass": true,
-  "detail": "764b0e11270322ab2773d5920f011826ca93cc99a48427baa026d5a59b6259b9"
+  "detail": "8f6fec230dcd46adf0e57403da48140a23481474132738d37c64956c78669de8"
  },
  "50": {
   "check": "Reveal PPTX SHA-256 reported",
   "pass": true,
-  "detail": "0568c956fcc4037153e6dcc7715a428d93e79c3763fa9c097cfa9dab4c156c06"
+  "detail": "ee43aefa88ed77234ffa1392185e10c0e57432d3d7d223c19a5074e6373a89fb"
  },
  "51": {
   "check": "Slide-preview PDF SHA-256 reported",
@@ -259,10 +259,72 @@
   "pass": true,
   "detail": "['M deliverables/video-5-slides/out/Video_5_Main_Slides.pptx', ' M deliverables/video-5-slides/out/Video_5_Reveal_Builds.pptx']"
  },
- "_zip_sha256": "f54447a6323ddd28036c1c733b2be2c0e3f7fe61b01a2535cd25053eddd674b7",
+ "53": {
+  "check": "No detached phrasing in the long-form",
+  "pass": true,
+  "detail": "[]"
+ },
+ "54": {
+  "check": "Viewer-facing content predominantly direct second person",
+  "pass": true,
+  "detail": "92 of 124 substantive paragraphs (74%); 56% across all 191 paragraphs; 35 carry first-person lived voice"
+ },
+ "55": {
+  "check": "Natural first-person bridges present",
+  "pass": true,
+  "detail": "{\"Let me show you\": 1, \"I want to help you\": 3, \"I want you to\": 9}"
+ },
+ "56": {
+  "check": "'experienced professionals' is positioning, used once",
+  "pass": true,
+  "detail": "count=1"
+ },
+ "57": {
+  "check": "Organizational mechanics translated back to the viewer",
+  "pass": true,
+  "detail": "5 of 5 org lines address the viewer"
+ },
+ "58": {
+  "check": "Direct address is not mechanically repeated every sentence",
+  "pass": true,
+  "detail": "56% of all spoken paragraphs contain second person"
+ },
+ "59": {
+  "check": "No conference or keynote tone",
+  "pass": true,
+  "detail": "[]"
+ },
+ "60": {
+  "check": "No generic third-person teaching in Shorts or public copy",
+  "pass": true,
+  "detail": "[]"
+ },
+ "61": {
+  "check": "Every Short speaks to one viewer",
+  "pass": true,
+  "detail": "{\"Video_5_Short_1_You_May_Not_Need_To_Leave.docx\": true, \"Video_5_Short_2_More_Tasks_Not_More_Judgment.docx\": true, \"Video_5_Short_3_Maternity_Return_Scope_Expansion.docx\": true, \"Video_5_Short_4_Three_Questions_Before_You_Move.docx\": true}"
+ },
+ "62": {
+  "check": "No additional mnemonic",
+  "pass": true,
+  "detail": ""
+ },
+ "63": {
+  "check": "Slides remain visually unchanged",
+  "pass": true,
+  "detail": ""
+ },
+ "64": {
+  "check": "Notes updated to v3.1",
+  "pass": true,
+  "detail": ""
+ },
+ "_zip_sha256": "0067d5530c26d2625eec0bcce131ab61cfadba6f438f5febff30d557c04d2b23",
  "_summary": {
-  "total": 52,
-  "passed": 52,
+  "total": 64,
+  "core": 52,
+  "direct_address": 12,
+  "passed": 64,
   "failed": 0,
   "failures": []
  }

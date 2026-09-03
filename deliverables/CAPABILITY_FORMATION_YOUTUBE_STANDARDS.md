@@ -254,27 +254,45 @@ dash, capitalisation and paragraph order matching, all 11 slide-marker names and
 positions matching, and no normalisation applied. The full evidence is retained
 in `video-4-slides/hit-final/QA_REPORT.json` and in the series tracker.
 
-Video 5 is **FINAL AND LOCKED FOR RECORDING** as of 2 September 2026, rebuilt
-to **v3.0** under the differentiation architecture at
-`deliverables/video-5-slides/hit-final/`, canonical spoken count **1,762** across
-180 spoken paragraphs. Its script was verified literally against
-`Video_5_Code_Prompt_Differentiated_v3.0.txt` **inside the build pass** — exact
-match on both scripts across all 192 blocks, with every word, punctuation mark,
-apostrophe, quotation mark, em dash, capitalisation and paragraph order matching,
-all 12 slide-marker names and positions matching, and no normalisation applied.
+Video 5 is **FINAL AND LOCKED FOR RECORDING** as of 3 September 2026, rebuilt
+to **v3.1** under the direct-address differentiation architecture at
+`deliverables/video-5-slides/hit-final/`, canonical spoken count **1,980** across
+191 spoken paragraphs. Its script was verified literally against
+`Video_5_Code_Prompt_Differentiated_Direct_Address_v3.1.txt` **inside the build
+pass** — exact match on both scripts across all 203 blocks, with every word,
+punctuation mark, apostrophe, quotation mark, em dash, capitalisation and
+paragraph order matching, all 12 slide-marker names and positions matching, and
+no normalisation applied.
+
 Video 5 is the **first video rebuilt under the post–Videos 1–4 channel
 direction**: its format is *searchable decision + organizational mechanics*, and
 it carries the employee-plus-organization dual perspective alongside the
 searchable question. Its memorable device remains **the three questions** — will
 the work change, will your judgment expand, will the evidence travel — with no
 acronym and no second framework; CAR stays with Video 6 and the Career Evidence
-3 Cs stay with the evidence method. Its 12-slide deck and 25-frame reveal deck
-are **visually unchanged**; only the speaker notes were rewritten for v3.0, and
-part-level diffs confirm the 12 and 25 `notesSlideN.xml` parts were the only
-parts that changed. The v2.0 H.I.T. package (1,403 words) and
-`Video_5_Code_Prompt_HIT_Final.txt` are **SUPERSEDED** as recording authority
-and canonical instruction respectively; the earlier 1,639-word script remains
-superseded. Both are retained only as historical reference.
+3 Cs stay with the evidence method.
+
+**Video 5 also sets the channel's DIRECT-ADDRESS VOICE REGISTER.** Temidayo
+speaks to one experienced professional sitting across from her, not to an
+abstract audience. Every paragraph must pass one test: would she naturally say
+this to one person sitting across the table? Prefer "you may…", "you might
+notice…", "let me show you…", "I want to help you…", "here is what I would ask
+you to look at…". Reduce detached phrasing — "some people", "professionals
+often", "people may", "a person should". Use "experienced professionals" only in
+the channel-positioning sentence, then return immediately to "you", and do not
+repeat "you" mechanically in every sentence; vary it with first-person lived
+evidence, direct questions, concrete examples and organizational perspective
+translated back to the viewer. The relationship is trusted practitioner to one
+viewer, never lecturer to a crowd. A **12-point direct-address QA** now runs
+alongside the 52-point package QA; Video 5 v3.1 passed 64 of 64.
+
+Its 12-slide deck and 25-frame reveal deck are **visually unchanged**; only the
+speaker notes were rewritten for v3.1, and part-level diffs confirm the 12 and
+25 `notesSlideN.xml` parts were the only parts that changed. The v3.0 package
+(1,762 words) and `Video_5_Code_Prompt_Differentiated_v3.0.txt`, the v2.0 H.I.T.
+package (1,403 words) and `Video_5_Code_Prompt_HIT_Final.txt`, and the earlier
+1,639-word script are all **SUPERSEDED** and retained only as historical
+reference.
 
 Video 6 is **FINAL AND LOCKED FOR RECORDING** as of 1 September 2026, rebuilt
 under the H.I.T. standard at `deliverables/video-6-slides/hit-final/`, canonical

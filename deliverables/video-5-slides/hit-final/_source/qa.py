@@ -1,11 +1,12 @@
 # -*- coding: utf-8 -*-
-"""Video 5 v3.0 — 52-point QA. Reports only; makes no editorial change."""
+"""Video 5 v3.1 — the 52-point QA plus the 12 new direct-address checks.
+Reports only; makes no editorial change."""
 import os, sys, json, hashlib, zipfile, subprocess, re
-sys.path.insert(0,"/tmp/v5v3")
+sys.path.insert(0,"/tmp/v5v31")
 from docx import Document
 from pptx import Presentation
 
-BASE="/tmp/v5v3"; ROOT=os.path.join(BASE,"Video_5_HIT_FINAL")
+BASE="/tmp/v5v31"; ROOT=os.path.join(BASE,"Video_5_HIT_FINAL")
 LF=os.path.join(ROOT,"LONG_FORM"); SH=os.path.join(ROOT,"SHORTS")
 OUT="/home/user/temidayoafonja-site/deliverables/video-5-slides/out"
 ZIP=os.path.join(BASE,"Video_5_HIT_FINAL_Recording_and_Shorts_Package.zip")
@@ -23,10 +24,10 @@ def sha(p):
         for b in iter(lambda: fh.read(1<<20), b""): h.update(b)
     return h.hexdigest()
 
-TEL=os.path.join(LF,"Video5TeleprompterScriptwithslidemarkers_HIT_v3.0")
-RDG=os.path.join(LF,"Video5ReadingScriptnomarkers_HIT_v3.0")
-EDB=os.path.join(LF,"Video_5_EDITOR_ONLY_HIT_Brief_v3.0.docx")
-PUB=os.path.join(LF,"Video_5_Publishing_Package_HIT_v3.0.docx")
+TEL=os.path.join(LF,"Video5TeleprompterScriptwithslidemarkers_HIT_v3.1")
+RDG=os.path.join(LF,"Video5ReadingScriptnomarkers_HIT_v3.1")
+EDB=os.path.join(LF,"Video_5_EDITOR_ONLY_HIT_Brief_v3.1.docx")
+PUB=os.path.join(LF,"Video_5_Publishing_Package_HIT_v3.1.docx")
 SEB=os.path.join(SH,"Video_5_Shorts_EDITOR_ONLY_HIT_Brief.docx")
 SHORT_FILES=["Video_5_Short_1_You_May_Not_Need_To_Leave.docx",
  "Video_5_Short_2_More_Tasks_Not_More_Judgment.docx",
@@ -50,11 +51,14 @@ chk(2,"Thumbnail exact", THUMB in pub and THUMB in desc and THUMB in readme)
 chk(3,"Primary search phrase exact", PRIMARY in pub and PRIMARY in desc)
 
 hit=["You may not need to leave your company.",
- "You may need access to work the company has not trusted you with yet.",
+ "You may need access to work your current role is not giving you yet.",
+ "Let me show you what this looked like for me.",
  "About six months after I returned from maternity leave in one chapter of my "
  "career, my scope expanded beyond the original box of the role.",
- "What mattered was not simply that I had more work.",
- "I was being trusted with different work."]
+ "The important part was not that I had more work.",
+ "I was being trusted with different work.",
+ "That changed how I think about internal moves, and I want to help you test "
+ "yours the same way."]
 chk(4,"H.I.T. first 30 seconds exact", all(h in spoken for h in hit),
     "; ".join(h[:40] for h in hit if h not in spoken))
 chk(5,"Maternity-return proof exact and bounded",
@@ -81,19 +85,22 @@ chk(9,"No second mnemonic",
     "CAR" not in re.sub(r"[a-z]","",spoken) and "3 Cs" not in (spoken+allpub)
     and "Capture" not in allpub)
 
-ORG=["It is also a decision the organization is making about what it is willing "
- "to trust you to do next.",
- "the same people who know your strengths may also know you too well inside one box",
- "sometimes the organizational problem is not your capability.",
- "A stretch opportunity is developmental when the person is trusted with more "
+ORG=["It is also a decision about what your organization is actually willing to "
+ "trust you to do next.",
+ "You can be deeply valued in your current role and still find that people "
+ "struggle to picture you somewhere else.",
+ "The problem may not be your capability.",
+ "A stretch opportunity becomes developmental when you are trusted with more "
  "judgment, not simply handed more volume.",
- "an internal move can fail even when the person is capable"]
+ "Because you can be capable and still end up in a poorly designed role."]
 chk(10,"Employee + organization dual perspective present",
     all(o.lower() in spoken.lower() for o in ORG),
     "; ".join(o[:40] for o in ORG if o.lower() not in spoken.lower()))
 chk(11,"Recognition issue present, no discrimination/resistance claim",
-    "It is recognition." in spoken
-    and "That is not a reason to assume the organization is wrong and you are right." in spoken)
+    "It may be whether people can see you beyond the work they already know you "
+    "for." in spoken
+    and "I am not telling you to assume the organization is wrong and you are "
+        "right." in spoken)
 
 def ctxscan(blob, phrase):
     """True if `phrase` appears in a paragraph that is NOT governed by a
@@ -103,22 +110,26 @@ def ctxscan(blob, phrase):
         if phrase.lower() in para.lower(): return True
     return False
 chk(12,"No claim that every internal move is growth",
-    "Do not call every useful move growth." in spoken
-    and "Just do not automatically call that development." in spoken
-    and "Movement may be happening without much formation." in spoken
-    and "But movement is not automatically growth." in allpub)
+    "You do not have to call every useful move growth." in spoken
+    and "I just do not want you to confuse a useful move with a developmental "
+        "one." in spoken
+    and "you may be moving without adding very much to what you can carry next."
+        in spoken)
 chk(13,"No claim that external move is automatically better",
     "The external role does not win simply because it is outside." in spoken
     and "The internal role does not win simply because it is familiar." in spoken)
 chk(14,"Pay/flexibility/benefits/stability/manager-fit tradeoff remains",
-    "pay, flexibility, stability or manager fit" in spoken
+    "Maybe the pay is better." in spoken and "Maybe the flexibility matters." in spoken
+    and "Maybe the manager is better." in spoken
+    and "Maybe you need stability right now." in spoken
     and "A better manager, more flexibility, higher pay, stronger benefits or "
-        "stability can legitimately make it the right decision." in spoken)
+        "stability may make it exactly the right choice for you." in spoken)
 chk(15,"Health/safety/harassment/discrimination boundary remains",
     "If your health or safety is at risk, or you are dealing with harassment or "
     "discrimination" in spoken and "harassment or discrimination" in edb)
 chk(16,"Caregiving/location/immigration/energy/timing boundary remains",
-    "Pay, benefits, caregiving, location, immigration status, energy and timing" in spoken)
+    "Pay, benefits, caregiving, location, immigration status, energy and timing" in spoken
+    and "They do not erase the rest of your life." in spoken)
 
 chk(17,"Career Decision Evidence Check is sole CTA",
     "Career Decision Evidence Check" in allpub
@@ -134,8 +145,11 @@ chk(20,"Four standalone Shorts exact",
     sorted(os.listdir(SH))==sorted(SHORT_FILES+[os.path.basename(SEB)]))
 chk(21,"Short 3 uses maternity-return proof, no invented detail",
     "maternity leave" in shorts[SHORT_FILES[2]]
+    and "Let me show you why I stopped treating more work as automatic growth."
+        in shorts[SHORT_FILES[2]]
     and not re.search(r"\b\d+\s?%", shorts[SHORT_FILES[2]]))
-EDWORDS=["Visual:","On-screen","B-roll","EDITOR","Reveal:","End on:","FACTUAL BOUNDARY"]
+EDWORDS=["Visual:","On-screen","B-roll","EDITOR","Reveal:","End on:",
+ "FACTUAL BOUNDARY","Related Video:"]
 bad=[(f,w) for f,t in shorts.items() for w in EDWORDS if w in t]
 chk(22,"Recording docs contain no editor instructions", not bad, str(bad))
 chk(23,"Both EDITOR ONLY docs clearly labelled",
@@ -145,7 +159,8 @@ EM=["✨","🧭","⏱️","▶️","🔗"]
 chk(24,"Public description contains restrained emojis",
     all(e in pub for e in EM) and all(e in desc for e in EM))
 chk(25,"Working chapters inserted directly in public copy",
-    "00:00 You May Not Need to Leave" in pub and "11:45 Are You Growing" in pub)
+    "00:00 You May Not Need to Leave" in pub and "13:14 Are You Growing" in pub
+    and "03:49 When People Still See the Old You" in pub)
 chk(26,"No [INSERT] placeholder", "[INSERT" not in (pub+desc+readme+edb+seb))
 chk(27,"Working-estimates warning outside public copy",
     "WORKING ESTIMATES — EDITOR MUST REPLACE FROM FINAL CUT" in pub
@@ -175,29 +190,32 @@ rev=Presentation(os.path.join(OUT,"Video_5_Reveal_Builds.pptx"))
 chk(33,"Main deck exact slide count reported", len(main.slides)==12, str(len(main.slides)))
 chk(34,"Reveal deck exact frame count reported", len(rev.slides)==25, str(len(rev.slides)))
 import json as _j
-prov=_j.load(open("/tmp/v5v3/_partdiff.json"))
+prov=_j.load(open("/tmp/v5v31/_partdiff.json"))
 chk(35,"No unauthorized visual slide/reveal change",
     prov["main_nonnotes"]==[] and prov["reveal_nonnotes"]==[], _j.dumps(prov))
 notes=[s.notes_slide.notes_text_frame.text for s in main.slides]+\
       [s.notes_slide.notes_text_frame.text for s in rev.slides]
-stale=["0:25","2:35 to 4:40","11:20","not live yet","PUBLICATION GATE"]
+stale=["0:25","2:35 to 4:40","11:20","not live yet","PUBLICATION GATE",
+ "approximately 0:38","approximately 1:58","approximately 2:14",
+ "approximately 4:32","approximately 11:17","approximately 11:45",
+ "about 12:09"]
 chk(36,"Speaker notes updated and stale v2.0 notes removed",
     all("Timing:" in n for n in notes)
     and not any(s in n for n in notes for s in stale))
 
-rend=_j.load(open("/tmp/v5v3/_render.json"))
+rend=_j.load(open("/tmp/v5v31/_render.json"))
 chk(37,"Render and visually inspect every DOCX", rend["docx_rendered"]==10, _j.dumps(rend["pages"]))
 chk(38,"Render and visually inspect main slide deck", rend["main_inspected"])
 chk(39,"Render and visually inspect reveal deck", rend["reveal_inspected"])
 chk(40,"No clipping/overlap/broken glyph/blank/near-empty trailing page",
     rend["pagination_stable"], _j.dumps(rend["fill"]))
 
-MANIFEST=["LONG_FORM/Video5TeleprompterScriptwithslidemarkers_HIT_v3.0.docx",
- "LONG_FORM/Video5TeleprompterScriptwithslidemarkers_HIT_v3.0.txt",
- "LONG_FORM/Video5ReadingScriptnomarkers_HIT_v3.0.docx",
- "LONG_FORM/Video5ReadingScriptnomarkers_HIT_v3.0.txt",
- "LONG_FORM/Video_5_EDITOR_ONLY_HIT_Brief_v3.0.docx",
- "LONG_FORM/Video_5_Publishing_Package_HIT_v3.0.docx"]+\
+MANIFEST=["LONG_FORM/Video5TeleprompterScriptwithslidemarkers_HIT_v3.1.docx",
+ "LONG_FORM/Video5TeleprompterScriptwithslidemarkers_HIT_v3.1.txt",
+ "LONG_FORM/Video5ReadingScriptnomarkers_HIT_v3.1.docx",
+ "LONG_FORM/Video5ReadingScriptnomarkers_HIT_v3.1.txt",
+ "LONG_FORM/Video_5_EDITOR_ONLY_HIT_Brief_v3.1.docx",
+ "LONG_FORM/Video_5_Publishing_Package_HIT_v3.1.docx"]+\
  ["SHORTS/"+f for f in SHORT_FILES]+["SHORTS/"+os.path.basename(SEB),
  "README_FINAL.txt","SHA256SUMS.txt"]
 names=zipfile.ZipFile(ZIP).namelist()
@@ -227,8 +245,71 @@ g=[x for x in g if x.strip()]
 outside=[x for x in g if "deliverables/" not in x]
 chk(52,"No website/product/other-video file changed", not outside, str(g))
 
+# ------------------------------------------------ DIRECT-ADDRESS QA (v3.1)
+DETACHED=["some people","professionals often","people may","a person should"]
+found=[]
+for phrase in DETACHED:
+    for i,para in enumerate(spoken.split("\n\n")):
+        if phrase in para.lower():
+            found.append({"phrase":phrase,"paragraph":i+1,"context":para.strip()})
+chk(53,"No detached phrasing in the long-form", not found, json.dumps(found))
+
+sp=[p.strip() for p in spoken.split("\n\n") if p.strip()]
+subst=[p for p in sp if len(p.split())>=8]
+second=[p for p in subst if re.search(r"\b(you|your|yours|yourself)\b",p,re.I)]
+firstp=[p for p in subst if re.search(r"\b(I|me|my)\b",p)]
+ratio=len(second)/len(subst)
+allratio=len([p for p in sp if re.search(r"\b(you|your|yours|yourself)\b",p,re.I)])/len(sp)
+chk(54,"Viewer-facing content predominantly direct second person", ratio>=0.70,
+    "%d of %d substantive paragraphs (%.0f%%); %.0f%% across all %d paragraphs; "
+    "%d carry first-person lived voice"
+    %(len(second),len(subst),100*ratio,100*allratio,len(sp),len(firstp)))
+
+BRIDGES=["Let me show you","I want to help you","I want you to"]
+bcount={b:spoken.count(b) for b in BRIDGES}
+chk(55,"Natural first-person bridges present", all(v>0 for v in bcount.values()),
+    json.dumps(bcount))
+
+ep=spoken.count("experienced professionals")
+epline="On this channel, I help experienced professionals understand what their " \
+       "work is building in them"
+chk(56,"'experienced professionals' is positioning, used once", ep==1 and epline in spoken,
+    "count=%d"%ep)
+
+orgviewer=[o for o in ORG if re.search(r"\b(you|your)\b",o,re.I)]
+chk(57,"Organizational mechanics translated back to the viewer",
+    len(orgviewer)==len(ORG), "%d of %d org lines address the viewer"%(len(orgviewer),len(ORG)))
+
+chk(58,"Direct address is not mechanically repeated every sentence", allratio<=0.90,
+    "%.0f%% of all spoken paragraphs contain second person"%(100*allratio))
+
+KEYNOTE=["ladies and gentlemen","in this presentation","as you can see on this slide",
+ "thank you for having me","let's dive in","let us dive in","in today's talk",
+ "welcome back to my channel","hey everyone","hi guys"]
+kn=[k for k in KEYNOTE if k in spoken.lower()]
+chk(59,"No conference or keynote tone", not kn, str(kn))
+
+generic=[d for d in DETACHED if d in (allpub+"".join(shorts.values())).lower()]
+chk(60,"No generic third-person teaching in Shorts or public copy", not generic, str(generic))
+
+sh_second={f:bool(re.search(r"\b(you|your|yourself|I want you)\b",t,re.I))
+           for f,t in shorts.items()}
+chk(61,"Every Short speaks to one viewer", all(sh_second.values()), json.dumps(sh_second))
+
+chk(62,"No additional mnemonic",
+    not re.search(r"\bCAR\b",spoken) and "3 Cs" not in (spoken+allpub)
+    and not re.search(r"\b(acronym|framework)\b",spoken,re.I))
+
+chk(63,"Slides remain visually unchanged",
+    prov["main_nonnotes"]==[] and prov["reveal_nonnotes"]==[])
+chk(64,"Notes updated to v3.1",
+    all("Timing:" in n for n in notes)
+    and any("13:14" in n for n in notes)
+    and any("Direct address" in n for n in notes))
+
 R["_zip_sha256"]=zsha
-R["_summary"]={"total":52,"passed":52-len(F),"failed":len(F),"failures":F}
+R["_summary"]={"total":64,"core":52,"direct_address":12,
+  "passed":64-len(F),"failed":len(F),"failures":F}
 print(json.dumps(R,indent=1)[:200])
 print("\nFAILURES:", F if F else "none")
-open("/tmp/v5v3/QA_REPORT.json","w").write(json.dumps(R,indent=1))
+open("/tmp/v5v31/QA_REPORT.json","w").write(json.dumps(R,indent=1))

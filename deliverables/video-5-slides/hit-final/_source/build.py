@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-"""Build the Video 5 DIFFERENTIATED v3.0 final recording and Shorts package."""
+"""Build the Video 5 DIRECT-ADDRESS DIFFERENTIATED v3.1 recording and Shorts package."""
 import os, sys, shutil, zipfile, hashlib
-sys.path.insert(0, "/tmp/v5v3")
+sys.path.insert(0, "/tmp/v5v31")
 from script_text import LINES, SPOKEN, MARKERS
 from shorts_text import SHORTS
 from docx import Document
@@ -14,7 +14,7 @@ DIM=RGBColor(0x5A,0x6B,0x82); INK=RGBColor(0x1A,0x1A,0x1A)
 RED=RGBColor(0x9B,0x2C,0x10)
 BAND_NAVY="E8EDF4"; BAND_CREAM="F3F0E8"
 
-BASE="/tmp/v5v3"
+BASE="/tmp/v5v31"
 ROOT=os.path.join(BASE,"Video_5_HIT_FINAL")
 LF=os.path.join(ROOT,"LONG_FORM"); SH=os.path.join(ROOT,"SHORTS")
 shutil.rmtree(ROOT, ignore_errors=True)
@@ -106,10 +106,10 @@ def pairlist(d, items, indent="—  ", gap="        ", after=4, budget=78):
     for group in lines:
         keep(P(d, gap.join(indent + x for x in group), after=after))
 
-TEL="Video5TeleprompterScriptwithslidemarkers_HIT_v3.0"
-RDG="Video5ReadingScriptnomarkers_HIT_v3.0"
-EDB="Video_5_EDITOR_ONLY_HIT_Brief_v3.0.docx"
-PUB="Video_5_Publishing_Package_HIT_v3.0.docx"
+TEL="Video5TeleprompterScriptwithslidemarkers_HIT_v3.1"
+RDG="Video5ReadingScriptnomarkers_HIT_v3.1"
+EDB="Video_5_EDITOR_ONLY_HIT_Brief_v3.1.docx"
+PUB="Video_5_Publishing_Package_HIT_v3.1.docx"
 SEB="Video_5_Shorts_EDITOR_ONLY_HIT_Brief.docx"
 
 # ------------------------------------------------- 1. teleprompter DOCX + TXT
@@ -155,7 +155,7 @@ REVEAL_MAP=[(1,"1–2",2),(2,"3–5",3),(3,"6",1),(4,"7–10",4),(5,"11",1),
 
 d=newdoc()
 P(d,"EDITOR ONLY",size=22,bold=True,color=RED,after=2)
-P(d,"VIDEO 5  ·  v3.0",size=12,bold=True,color=GOLD,after=2,caps=True)
+P(d,"VIDEO 5  ·  v3.1",size=12,bold=True,color=GOLD,after=2,caps=True)
 P(d,TITLE,size=20,bold=True,color=NAVY,after=6,spacing=1.1)
 p=P(d,"This document is for the editor. It is NOT Temidayo's teleprompter and "
      "must not be placed on the recording screen.",size=11,italic=True,
@@ -182,8 +182,40 @@ keep(P(d,"Do not add CAR — it belongs to Video 6. Do not add the Career "
        "Evidence 3 Cs — they belong to the evidence method, not this decision "
        "video.",bold=True,color=RED,after=8,spacing=1.25))
 
-# 2 --------------------------------------------------------------- H.I.T. map
-H1(d,"2.  First 30 seconds — H.I.T. map",before=14)
+# 2 ------------------------------------------------- direct-address register
+H1(d,"2.  Direct-address register — the locked voice for v3.1",before=14)
+p=P(d,"Temidayo is speaking to ONE experienced professional sitting across from "
+     "her. Not a crowd, not a conference room, not an abstract audience. Every "
+     "line was written to pass one test: would she naturally say this to one "
+     "person sitting across the table?",size=11,bold=True,color=NAVY,after=10,
+     spacing=1.25)
+shade(p,BAND_CREAM); keep(p)
+H2(d,"Editing should support intimacy",before=10)
+pairlist(d,["hold direct eye contact where possible;",
+ "avoid visual treatment that makes this feel like a keynote;",
+ "do not overuse full-screen quote cards;",
+ "let direct questions remain attached to Temidayo's face;",
+ "use the slides to carry structure, not personality;",
+ "keep the organizational layer translated back to the viewer."],after=3)
+H2(d,"Key relational beats — do not cut these as filler",before=10)
+for q in ["“Let me show you what this looked like for me.”",
+ "“I want to help you test yours the same way.”",
+ "“And I want to help you do the same here.”",
+ "“So here is what I would ask you.”",
+ "“I want you to compare which option gives you meaningful access…”"]:
+    keep(P(d,q,size=10.5,after=5,spacing=1.25))
+p=P(d,"They are part of the viewer relationship, not padding. Do not trim them "
+     "for pace, and do not let a graphic cover Temidayo while she says one.",
+     size=11,bold=True,color=RED,after=10,spacing=1.25)
+shade(p,BAND_CREAM); keep(p)
+keep(P(d,"“Experienced professionals” appears once, in the channel-positioning "
+       "sentence, and the script returns immediately to “you.” Do not "
+       "reintroduce detached phrasing — “some people,” “professionals often,” "
+       "“people may,” “a person should” — anywhere in the edit, the captions "
+       "or the on-screen text.",after=8,spacing=1.25))
+
+# 3 --------------------------------------------------------------- H.I.T. map
+H1(d,"3.  First 30 seconds — H.I.T. map",before=14)
 P(d,"H = Hook. I = Interest. T = Trust. The opening must work as one "
     "audiovisual unit: immediate conversational hook, meaningful visual "
     "interest, relevant lived proof, and a clear viewer payoff by 30 seconds. "
@@ -200,64 +232,68 @@ beat("0:00–0:05","You may not need to leave your company.","H = HOOK",
      ["Visual: direct to camera.",
       "On-screen text:  YOU MAY NOT NEED TO LEAVE",
       "No title card before this."])
-beat("0:05–0:10","You may need access to work the company has not trusted you "
-     "with yet.","I = INTEREST",
+beat("0:05–0:10","You may need access to work your current role is not giving "
+     "you yet.","I = INTEREST",
      ["On-screen:  SAME COMPANY  /  DIFFERENT WORK",
       "Keep it restrained. No office-building stock footage. No transfer "
       "arrows."])
-beat("0:10–0:21","About six months after I returned from maternity leave in "
-     "one chapter of my career, my scope expanded beyond the original box of "
-     "the role.","T = TRUST",
+beat("0:10–0:21","Let me show you what this looked like for me. About six "
+     "months after I returned from maternity leave in one chapter of my "
+     "career, my scope expanded beyond the original box of the role.",
+     "T = TRUST",
      ["Visual progression:  MORE WORK?  then  DIFFERENT WORK",
-      "The proof is Temidayo saying what actually happened. Keep her visible.",
+      "“Let me show you what this looked like for me” is the line that turns "
+      "the video from advice into a conversation. Stay on Temidayo's face for "
+      "it and do not cover it with a graphic.",
       "Do not use family or maternity stock imagery. Do not dramatize the "
       "maternity reference."])
-beat("0:21–0:30","Before you accept an internal move, ask three questions…",
-     "PAYOFF",
+beat("0:21–0:30","That changed how I think about internal moves, and I want to "
+     "help you test yours the same way.","PAYOFF",
      ["Progressively reveal:",
       "     WILL THE WORK CHANGE?",
       "     WILL YOUR JUDGMENT EXPAND?",
       "     WILL THE EVIDENCE TRAVEL?",
       "Viewer payoff is clear by 30 seconds. Then move into the deck."])
 
-# 3 ------------------------------------------- organizational-mechanics purpose
-H1(d,"3.  The organizational-mechanics purpose of this video",before=14)
+# 4 ------------------------------------------- organizational-mechanics purpose
+H1(d,"4.  The organizational-mechanics purpose of this video",before=14)
 P(d,"This video must not feel like “three tips for getting an internal job.” "
     "It should feel like: “Temidayo is teaching me how to read what an "
     "internal opportunity is actually designed to give me.”",after=8)
-P(d,"Use the employee + organization dual perspective throughout. An internal "
-    "move is not only a decision the employee makes; it is also a decision "
-    "about what work, context, judgment and ownership the organization is "
-    "willing to entrust to that person. Do not turn the organizational layer "
-    "into HR jargon or enterprise commentary that leaves the viewer behind.",
+P(d,"Use the employee + organization dual perspective throughout, and keep it "
+    "addressed to the viewer. An internal move is not only a decision the "
+    "viewer makes; it is also a decision about what work, context, judgment "
+    "and ownership the organization is willing to entrust to them. Do not turn "
+    "the organizational layer into HR jargon or enterprise commentary that "
+    "leaves the viewer behind, and do not let it drift into third person.",
     after=10)
 H2(d,"Lines to let breathe",before=10)
 for q in ["“An internal move is not only a decision you make. It is also a "
- "decision the organization is making about what it is willing to trust you "
- "to do next.”",
- "“The same people who know your strengths may also know you too well inside "
- "one box.”",
- "“Sometimes the organizational problem is not your capability. It is "
- "recognition.”",
- "“A stretch opportunity is developmental when the person is trusted with "
- "more judgment, not simply handed more volume.”",
- "“An internal move can fail even when the person is capable.”"]:
+ "decision about what your organization is actually willing to trust you to do "
+ "next.”",
+ "“You can be deeply valued in your current role and still find that people "
+ "struggle to picture you somewhere else.”",
+ "“The problem may not be your capability. It may be whether people can see "
+ "you beyond the work they already know you for.”",
+ "“A stretch opportunity becomes developmental when you are trusted with more "
+ "judgment, not simply handed more volume.”",
+ "“Because you can be capable and still end up in a poorly designed role.”"]:
     keep(P(d,q,size=10.5,after=6,spacing=1.25))
 p=P(d,"Do not convert these into motivational quote cards. Restrained text "
      "emphasis only, where it is genuinely useful.",size=11,bold=True,
      color=RED,after=8,spacing=1.25)
 shade(p,BAND_CREAM); keep(p)
 
-# 4 ---------------------------------------------------- slide-marker mapping
-H1(d,"4.  Slide marker → actual slide number",before=14)
+# 5 ---------------------------------------------------- slide-marker mapping
+H1(d,"5.  Slide marker → actual slide number",before=14)
 P(d,"The teleprompter carries twelve slide markers. They map to the existing "
     "twelve-slide deck in order, marker 1 to slide 1 through marker 12 to "
     "slide 12. Do not add, delete, redesign or reorder slides.",after=8)
 for n,job in enumerate(SLIDE_JOBS,1):
     keep(P(d,"Marker %-3d →  Slide %-3d %s"%(n,n,job),size=10.5,after=3))
 
-# 5 -------------------------------------------------------- reveal-frame map
-H1(d,"5.  Existing reveal-frame map",before=14)
+# 6 -------------------------------------------------------- reveal-frame map
+H1(d,"6.  Existing reveal-frame map",before=14)
 P(d,"The reveal-build deck contains 25 frames. This is the inspected count "
     "from the actual file, not an assumption. Reveal visuals are unchanged.",
     after=8)
@@ -275,8 +311,8 @@ for s_,note in [("Slide 2","carries the three-question preview."),
  ("Slide 10","carries the conversation prompts.")]:
     keep(P(d,"%s %s"%(s_,note),after=5))
 
-# 6 ---------------------------------------------------------- factual boundaries
-H1(d,"6.  Factual boundaries",before=14)
+# 7 ---------------------------------------------------------- factual boundaries
+H1(d,"7.  Factual boundaries",before=14)
 p=P(d,"FACTUAL BOUNDARY. The confirmed evidence is only this: about six months "
      "after Temidayo returned from maternity leave in one career chapter, her "
      "scope expanded beyond the original box of the role, and the meaningful "
@@ -294,24 +330,23 @@ keep(P(d,"The accurate learning is NOT “my scope got bigger, therefore I "
        "grew.” It is that being trusted with different work was the "
        "meaningful part.",after=8,spacing=1.25))
 
-# 7 ---------------------------------------------------------- safety boundaries
-H1(d,"7.  Safety and decision boundaries",before=14)
+# 8 ---------------------------------------------------------- safety boundaries
+H1(d,"8.  Safety and decision boundaries",before=14)
 P(d,"Preserve the script's explicit acknowledgment that:",after=6)
-for x in ["a lower-formation move may still be right for pay, flexibility, "
+pairlist(d,["a lower-formation move may still be right for pay, flexibility, "
  "benefits, stability or manager fit;","health and safety take priority;",
  "harassment or discrimination is not a situation to optimise around before "
  "seeking appropriate support;",
  "caregiving, immigration status, location, energy and timing may change the "
  "decision;",
  "an internal move will not solve every problem, and a capable person can "
- "still be overlooked."]:
-    keep(P(d,"—  "+x,after=4))
+ "still be overlooked."],after=3)
 keep(P(d,"Never claim that every internal move is growth, and never claim an "
        "external move is automatically better.",bold=True,color=RED,before=4,
        after=8,spacing=1.25))
 
-# 8 ---------------------------------------------------------- CTA + watch next
-H1(d,"8.  CTA and watch next",before=14)
+# 9 ---------------------------------------------------------- CTA + watch next
+H1(d,"9.  CTA and watch next",before=14)
 keep(P(d,"One resource CTA only: %s — %s"%(CTA,CTA_URL),after=5))
 keep(P(d,"Do not add the Capability Formation Field Kit, the Career Evidence "
        "Starter or Keep the Proof to this video.",bold=True,after=6))
@@ -326,8 +361,8 @@ for x in ["use direct Video 6 end-screen routing once Video 6 is public;",
 keep(P(d,"Do not leave Subscribe as the only end-screen element.",bold=True,
        color=RED,before=4,after=8))
 
-# 9 --------------------------------------------------------------- editing rhythm
-H1(d,"9.  Editing rhythm",before=14)
+# 10 --------------------------------------------------------------- editing rhythm
+H1(d,"10.  Editing rhythm",before=14)
 P(d,"After the first 30 seconds, let the deck carry the three questions, the "
     "access variables, the task-versus-judgment distinction, the evidence "
     "types, the decision read and the conversation prompts. Temidayo's voice "
@@ -337,8 +372,8 @@ pairlist(d,["preserve natural pacing;","avoid constant motion;",
  "avoid decorative B-roll;","avoid text duplication;",
  "avoid constant punch-ins;","allow reflective pauses."],after=3)
 
-# 10 --------------------------------------------------------- visual do-not-use
-H1(d,"10.  Visual “do not use” list",before=14)
+# 11 --------------------------------------------------------- visual do-not-use
+H1(d,"11.  Visual “do not use” list",before=14)
 pairlist(d,["maternity imagery;","baby imagery;","stock office B-roll;",
  "transfer arrows;","doors;","ladders;","job-change icons;",
  "generic org charts;","fake promotion graphics;","org-chart animation;",
@@ -346,35 +381,35 @@ pairlist(d,["maternity imagery;","baby imagery;","stock office B-roll;",
  "red warning graphics;","fake shock expressions;","AI-generated scenery;",
  "social-media template effects."],after=3)
 
-# 11 ------------------------------------------------- speaker-note update record
-H1(d,"11.  Speaker-note update record",before=14)
-P(d,"Both decks ship with speaker notes rewritten for the v3.0 script. The "
-    "superseded v2.0 timings and narration cues have been removed; nothing "
+# 12 ------------------------------------------------- speaker-note update record
+H1(d,"12.  Speaker-note update record",before=14)
+P(d,"Both decks ship with speaker notes rewritten for the v3.1 script. The "
+    "superseded v3.0 timings and narration cues have been removed; nothing "
     "on any slide was changed.",after=8)
 for x in ["Main deck: 12 notes parts rewritten, one per slide.",
  "Reveal deck: 25 notes parts rewritten, one per reveal frame.",
  "Slide XML, geometry, typography, palette and media: unchanged.",
  "Timings in the notes are script-derived working estimates at 145 words per "
- "minute. Replace them from the finished cut."]:
+ "minute for the 1,980-word v3.1 script. Replace them from the finished cut."]:
     keep(P(d,"—  "+x,after=4))
-compress(d, 1.12, 0.50)
+compress(d, 1.06, 0.30)
 d.save(os.path.join(LF,EDB))
 print("editor brief written")
 
 # --------------------------------------------------- chapters and description
 CHAPTERS=[("00:00","You May Not Need to Leave"),
- ("00:38","What an Internal Move Really Gives You"),
- ("01:58","The 3 Questions for an Internal Move"),
- ("02:14","Will the Work Change?"),
- ("03:06","When the Organization Still Sees the Old You"),
- ("04:32","Will Your Judgment Expand?"),
- ("04:39","More Tasks vs. More Judgment"),
- ("06:40","Will the Evidence Travel?"),
- ("08:00","Read the Three Answers"),
- ("09:00","What the Opportunity Says About the Organization"),
- ("10:32","When an Internal Move Will Not Solve the Problem"),
- ("11:17","Career Decision Evidence Check"),
- ("11:45","Are You Growing—or Just Being Given More Work?")]
+ ("00:46","What an Internal Move Really Gives You"),
+ ("02:19","The 3 Questions for an Internal Move"),
+ ("02:37","Will the Work Change?"),
+ ("03:49","When People Still See the Old You"),
+ ("05:24","Will Your Judgment Expand?"),
+ ("05:33","More Tasks vs. More Judgment"),
+ ("07:43","Will the Evidence Travel?"),
+ ("09:11","Read the Three Answers"),
+ ("10:26","What the Opportunity Says About the Organization"),
+ ("11:59","When an Internal Move Will Not Solve the Problem"),
+ ("12:45","Career Decision Evidence Check"),
+ ("13:14","Are You Growing—or Just Being Given More Work?")]
 CHAPTER_LINES=["%s %s"%(t,c) for t,c in CHAPTERS]
 
 EMOJI_NOTE=("The restrained emoji treatment on the section labels and the "
@@ -384,23 +419,21 @@ EMOJI_NOTE=("The restrained emoji treatment on the section labels and the "
 
 DESC=[
  "You may not need to leave your company to find work that expands your career.",
- "An internal move can give you access to different problems, broader "
- "judgment and evidence you can carry into future roles.",
- "But movement is not automatically growth.",
- "In this video, I use three questions to test an internal role, transfer, "
- "team change or stretch opportunity:",
+ "If you are considering an internal move, I want to help you look past the "
+ "title and test what the opportunity could actually build in you.",
+ "Use three questions:",
  "✨ Will the work change?",
  "✨ Will your judgment expand?",
  "✨ Will the evidence travel?",
- "I also look at the organizational side of the decision: what the company is "
- "actually willing to let you learn, decide and own — and why a capable "
- "person can still be overlooked for different work inside the same "
- "organization.",
+ "I also want you to look at the organizational side of the decision.",
+ "What is the company actually willing to let you learn, decide and own?",
+ "You can be deeply valued in your current role and still find that people "
+ "struggle to picture you somewhere else.",
  "The real question is not simply whether you moved.",
  "It is whether the move increased what you can carry afterward.","",
  "🧭 CAREER DECISION EVIDENCE CHECK",
  "If you are actively deciding whether to stay, move internally or leave, use "
- "the Career Decision Evidence Check to organize the evidence behind the "
+ "the Career Decision Evidence Check to organize the evidence behind your "
  "choice:",
  CTA_URL,"",
  "⏱️ CHAPTERS"]+CHAPTER_LINES+["",
@@ -411,10 +444,10 @@ DESC=[
  "Substack:","https://temidayoafonja.substack.com","",
  "#InternalMobility #CareerGrowth #CareerDecision"]
 
-PINNED=["If you are considering an internal move, which question is least clear?",
+PINNED=["If you are considering an internal move, which question is least clear for you?",
  "1. Will the work change?","2. Will my judgment expand?",
  "3. Will the evidence travel?",
- "Then ask one more question:",
+ "Then ask:",
  "What is the organization actually willing to trust me to do next?",
  "You do not need to share confidential details.",
  "If you are actively deciding whether to stay, move internally or leave, the "
@@ -461,7 +494,7 @@ def description_block(d, heading_before=14, upload_doc=False):
 
 # ----------------------------------------------------- 4. publishing package
 d=newdoc()
-head(d,TITLE,"Video 5  ·  Publishing package  ·  v3.0",
+head(d,TITLE,"Video 5  ·  Publishing package  ·  v3.1",
      "Everything needed to upload. Working timestamps must be replaced with "
      "real ones from the finished edit.")
 H1(d,"Title",before=14); P(d,TITLE,size=12,after=10)
@@ -482,7 +515,7 @@ keep(P(d,"SATISFIED. The Career Decision Evidence Check page is live and the "
        "core production journey has been verified. Video 5 is not blocked on "
        "it. Retain one normal signed-out link check in the final upload SOP.",
        bold=True,after=8,spacing=1.25))
-compress(d)
+compress(d, 1.08, 0.44)
 d.save(os.path.join(LF,PUB))
 
 # ------------------------------- 4b. separate description-only document
@@ -500,7 +533,7 @@ H1(d,"Watch next",before=14); keep(P(d,"%s  (Video 6)"%NEXT,bold=True,after=8))
 H1(d,"YouTube tag field",before=14)
 keep(P(d,"Paste into the tag field only.",size=10.5,italic=True,color=DIM,after=6))
 keep(P(d,TAGS,size=10.5,after=10))
-compress(d)
+compress(d, 1.08, 0.44)
 DESC_DOC=os.path.join(BASE,"Video_5_YouTube_Description_HIT.docx")
 d.save(DESC_DOC)
 print("publishing package and description-only document written")
@@ -512,7 +545,7 @@ for (fn,role,hook,copy),label in zip(SHORTS,LABELS):
     P(d,"VIDEO 5 SHORT",size=10,bold=True,color=GOLD,after=4,caps=True)
     P(d,label,size=20,bold=True,color=NAVY,after=8,spacing=1.1)
     keep(P(d,"Role:  %s"%role,size=11,color=DIM,after=5))
-    keep(P(d,"Verbal hook:  “%s”"%hook,size=11,color=DIM,after=5))
+    keep(P(d,"Opening line:  “%s”"%hook,size=11,color=DIM,after=5))
     keep(P(d,"Related long-form:  %s"%TITLE,size=11,color=DIM,after=10))
     H1(d,"RECORDING COPY",before=12)
     for line in copy:
@@ -539,6 +572,17 @@ pairlist(d,["an immediate verbal hook;","a corresponding on-screen hook;",
  "premium, restrained editorial pacing;",
  "Video 5 added as the Related Video when available."])
 
+H1(d,"Direct address is part of the creative",before=14)
+p=P(d,"Temidayo is speaking to ONE viewer in every one of these. Do not edit "
+     "them into generic motivational advice, and do not cut the relational "
+     "lines to save two seconds.",size=11,bold=True,color=NAVY,after=8,
+     spacing=1.25)
+shade(p,BAND_CREAM); keep(p)
+P(d,"Retain in full:",after=5)
+for q in ["“ask yourself”","“I want you to ask”","“Let me show you”",
+ "“That is the distinction I want you to look for too”"]:
+    keep(P(d,q,size=10.5,after=4))
+
 def short(label,role,onscreen,body):
     H1(d,label,before=14)
     keep(P(d,"Role:  %s"%role,size=11,color=DIM,after=5))
@@ -549,20 +593,23 @@ def short(label,role,onscreen,body):
 
 short("SHORT 1","Recognition","YOU MAY NOT NEED TO LEAVE",
  ["Visual:  SAME COMPANY  /  DIFFERENT WORK",
-  "End on:  WILL THE WORK CHANGE?"])
-short("SHORT 2","Distinction","MORE TASKS ≠ MORE JUDGMENT",
+  "Keep “ask yourself” attached to Temidayo's face.",
+  "End on:  WILL THE WORK ACTUALLY CHANGE?"])
+short("SHORT 2","Distinction","MORE RESPONSIBILITY FOR WHAT?",
  ["Use the existing restrained contrast:  MORE TASKS  vs  MORE JUDGMENT",
   "No generic office B-roll.",
-  "End on:  WHAT WILL YOU BE TRUSTED TO DECIDE?"])
+  "End on:  WHAT WILL I BE TRUSTED TO DECIDE?"])
 short("SHORT 3","Personal evidence","MORE WORK WASN’T THE POINT",
  ["Then:  TRUSTED WITH DIFFERENT WORK",
+  "“Let me show you why I stopped treating more work as automatic growth” "
+  "opens the Short. Stay on Temidayo for it.",
   "FACTUAL BOUNDARY: do not use maternity or baby stock imagery, do not name "
   "the employer, and do not add a metric or a result.",
   "End on:  WHAT AM I BECOMING TRUSTED TO DO?"])
-short("SHORT 4","Practical test","3 QUESTIONS BEFORE YOU MOVE",
+short("SHORT 4","Practical test","3 QUESTIONS BEFORE YOU SAY YES",
  ["Reveal:",
   "     WILL THE WORK CHANGE?",
-  "     WILL YOUR JUDGMENT EXPAND?",
+  "     WILL MY JUDGMENT EXPAND?",
   "     WILL THE EVIDENCE TRAVEL?",
   "Then:  3 YES  /  2 YES  /  0–1 YES",
   "Do not gamify it. Keep the life-factor boundary intact."])
@@ -574,24 +621,27 @@ pairlist(d,["generic office B-roll;","transfer-arrow clichés;",
  "flashy transitions;","constant zooms;","fake shock expressions;",
  "red warning graphics;","AI-generated scenery;",
  "social-media template effects."],after=3)
-compress(d, 1.18, 0.62)
+compress(d, 1.12, 0.46)
 d.save(os.path.join(SH,SEB))
 
 # ---------------------------------------------------------------- 7. README
 FILES=(["LONG_FORM/"+f for f in sorted(os.listdir(LF))]
       +["SHORTS/"+f for f in sorted(os.listdir(SH))])
-R=["VIDEO 5 — DIFFERENTIATED H.I.T. FINAL RECORDING PACKAGE v3.0","",
+R=["VIDEO 5 — DIFFERENTIATED DIRECT-ADDRESS FINAL PACKAGE v3.1","",
  "Title:             %s"%TITLE,
  "Thumbnail:         %s"%THUMB,
  "Format:            Searchable decision + organizational mechanics",
  "Core distinction:  Movement is not automatically growth.","",
+ "Voice:             Temidayo speaks to one experienced professional, not an",
+ "                   abstract audience. The relationship is trusted",
+ "                   practitioner to one viewer, never lecturer to a crowd.","",
  "Memory structure:",
  "  Will the work change?",
  "  Will your judgment expand?",
  "  Will the evidence travel?","",
  "Personal proof:    About six months after returning from maternity leave in",
  "                   one career chapter, Temidayo's scope expanded beyond the",
- "                   original box of the role; the meaningful part was being",
+ "                   original box of the role. The meaningful part was being",
  "                   trusted with different work.",
  "Public employer:   NOT NAMED.","",
  "Primary CTA:       %s"%CTA,
@@ -601,7 +651,7 @@ R=["VIDEO 5 — DIFFERENTIATED H.I.T. FINAL RECORDING PACKAGE v3.0","",
  "Watch next:        %s"%NEXT,"",
  "Slides:            Visual design and on-slide copy unchanged. 12 main",
  "                   slides.",
- "Speaker notes:     Updated for v3.0.",
+ "Speaker notes:     Updated for v3.1.",
  "Reveal deck:       Visual design and reveal states unchanged. 25 frames.",
  "Shorts:            Four separately recorded scripts.",
  "Description-only",
@@ -654,7 +704,10 @@ R+=["  README_FINAL.txt","  SHA256SUMS.txt","",
  "The Video 5 PowerPoint deck (12 slides), the reveal-build deck (25 frames),",
  "the approved thumbnail, the Career Decision Evidence Check page, every",
  "website file, every product and every other video are unchanged. Only the",
- "speaker notes in the two decks were updated, to match the v3.0 script.","",
+ "speaker notes in the two decks were updated, to match the v3.1 script and",
+ "its direct-address register.","",
+ "This package supersedes the v3.0 package as recording authority. v3.0 is",
+ "retained only as historical reference.","",
  "The 12-slide deck remains authoritative. The teleprompter's 12 slide markers",
  "map to it in order, slide 1 to slide 12.",""]
 open(os.path.join(ROOT,"README_FINAL.txt"),"w").write("\n".join(R))
@@ -695,7 +748,7 @@ for dp,dn,fn in os.walk(ROOT):
 unexpected=sorted(on_disk-set(MANIFEST)-{SUMS})
 assert not unexpected, "unexpected files in package directory: %r"%unexpected
 
-L=["# VIDEO 5 - DIFFERENTIATED H.I.T. FINAL RECORDING PACKAGE v3.0",
+L=["# VIDEO 5 - DIFFERENTIATED DIRECT-ADDRESS FINAL PACKAGE v3.1",
    "# SHA-256 of the 12 user-facing files in this package.",
    "# SHA256SUMS.txt cannot hash itself. The master ZIP cannot contain its own",
    "# checksum either; it is published in the sibling file",

@@ -4,8 +4,8 @@
 Only notesSlideN.xml parts may change. Every other part -- slide XML, media,
 rels, theme, presentation.xml -- must be byte-identical afterwards."""
 import sys, shutil, zipfile, hashlib, os, copy
-sys.path.insert(0,"/tmp/v5v3")
-from notes_v30 import NOTES, reveal_notes
+sys.path.insert(0,"/tmp/v5v31")
+from notes_v31 import NOTES, reveal_notes
 from pptx import Presentation
 from pptx.oxml.ns import qn
 
