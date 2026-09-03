@@ -30,7 +30,7 @@ is no number anywhere in this video.""",
 """Section break only. The three tests do not arrive until about 2:52, which is
 deliberate — recognition first.""",
 # 4 Test One
-"""The before and after sentence is the centre of this slide. Reveal the before,
+"""The before and after sentence is the center of this slide. Reveal the before,
 let it sit, then the after.
 
 FACTUAL BOUNDARY: the QBR sentence is a generic worked example. There is no

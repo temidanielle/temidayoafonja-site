@@ -198,7 +198,7 @@ def desc(CH):
  "Your career does not become coherent because you pretend every move was "
  "planned. It becomes coherent when you can name what was underneath the "
  "moves. Three sentences do that:",
- "✨ Name your chapters briefly — orientation, not defence.",
+ "✨ Name your chapters briefly — orientation, not defense.",
  "✨ Find the work that repeated underneath the titles — the verbs, not the "
  "nouns.",
  "✨ Explain why your next direction follows from what you have already built.",

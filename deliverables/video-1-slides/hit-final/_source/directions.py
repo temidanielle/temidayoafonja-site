@@ -61,7 +61,7 @@ cut it to save time.""",
 the before, let it sit, then the after.
 
 Set them in the same weight. If the after line is styled as the “good” version
-with colour or emphasis, the comparison stops being honest.""",
+with color or emphasis, the comparison stops being honest.""",
 # 7 One Result — 47 to 75
 """FACTUAL BOUNDARY: one measure of how well new hires felt integrated moved
 from 47 to 75. It is NOT retention, turnover, cost or engagement, and it is not

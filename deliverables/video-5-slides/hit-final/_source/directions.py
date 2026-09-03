@@ -46,7 +46,7 @@ her, not the volume. Bounded exactly as above.""",
 
 “Not what you will do. What you will decide.” This is the test. Give it room.
 
-THE ORGANISATIONAL LAYER is on this slide: the people who value you most may
+THE ORGANIZATIONAL LAYER is on this slide: the people who value you most may
 still see you through the role they already know you for. Deliver it as
 description, not grievance — “That is not disloyalty. It is how organizations
 remember people.”

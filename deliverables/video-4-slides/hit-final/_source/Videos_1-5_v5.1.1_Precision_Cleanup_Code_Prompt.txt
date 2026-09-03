@@ -1,0 +1,248 @@
+VIDEOS 1–5 — v5.1.1 PRECISION / EVIDENCE CLEANUP ONLY
+
+This is NOT a rebuild.
+
+The v5.1 belonging-first, identity-transformation, H.I.T. and direct-address architecture is approved.
+Do not rewrite Videos 1–5 because of the new audience research.
+Do not alter Videos 6–30 in this pass.
+
+Apply ONLY the narrow wording/evidence corrections below, then rebuild only files that actually change.
+
+LOCKED:
+- titles
+- thumbnails
+- overall scripts/structure
+- stories
+- memory devices
+- H.I.T. openings
+- identity exits
+- CTAs
+- Watch Next routes
+- slide order/design
+- factual evidence
+
+==================================================
+VIDEO 1
+==================================================
+
+Long form:
+No substantive change required.
+
+Short 2:
+Replace detached framing equivalent to:
+“When people change job, function or industry, they tend to make one of two mistakes.”
+
+Use natural direct address, e.g.:
+“When you change jobs, functions or industries, two mistakes are easy to make.”
+
+Preserve the two-mistake teaching and all limits.
+
+==================================================
+VIDEO 2
+==================================================
+
+Soften universal claims.
+
+CURRENT IDEA:
+“The better you get at one place, the more of your value gets wrapped inside that place.”
+
+Revise to the meaning:
+“As you get better at one place, some of your value can become wrapped in that context.”
+
+Keep the examples: history, systems, relationships, trust.
+
+CURRENT:
+“Your company knows exactly why you matter. They watched you earn it.”
+
+Revise to a defensible direct-address version such as:
+“The people around you may know exactly why you matter because they have seen the work.”
+
+Apply equivalent correction to Short 1.
+
+Short 1 detached opening equivalent to:
+“There is a question good employees ask themselves quietly.”
+
+Prefer:
+“You can be very good at your job and still quietly wonder: would anyone outside this company understand what I do?”
+
+Preserve the non-alarmist boundary.
+
+==================================================
+VIDEO 3
+==================================================
+
+CURRENT:
+“They take a couple of evenings, and you cannot do them afterwards.”
+
+Too absolute.
+
+Revise to:
+“They are much easier to do while you still have access. Parts of this become harder once you leave.”
+
+Where the script says memory/detail begins blurring “almost immediately,” soften to:
+“The detail can start to blur faster than you expect.”
+
+Short 3:
+Remove any unsupported claim that the difference between leaving with story vs evidence is mostly what happened in the two weeks before notice.
+
+Use the defensible meaning:
+“The difference is often what you take the time to capture before your access changes.”
+
+Do not invent a two-week rule.
+
+Preserve:
+- the safety boundary
+- no pressure to stay
+- confidentiality/evidence boundary
+- Decision Check CTA
+
+==================================================
+VIDEO 4
+==================================================
+
+CURRENT:
+“Here is the mistake almost all of us make, and I made it for years.”
+
+Revise to:
+“Here is a mistake I made for years, and one I still hear often.”
+
+CURRENT IDEA:
+“When you give somebody the chronology, they are quietly doing arithmetic about why you left each place.”
+
+Do not speculate about hidden thoughts.
+
+Prefer:
+“When you give somebody only the chronology, you leave them to work out what connects the moves.”
+
+Apply equivalent correction to Short 2.
+
+If Short 3 claims that anyone experienced enough to interview the viewer has had unplanned turns, soften it. Do not claim this of every interviewer.
+
+Preserve:
+- December 2008 / financial-crisis context where currently approved
+- cat-with-nine-lives anecdote boundaries
+- professional-certification non-pass
+- three-sentence method
+- identity exit
+- Career Evidence Starter CTA
+
+==================================================
+VIDEO 5
+==================================================
+
+CURRENT:
+“Job descriptions are written to be approved, not to be accurate.”
+
+DELETE this claim.
+
+Replace with:
+“A job description can tell you the broad role. It may not tell you what an ordinary Monday will actually ask of you.”
+
+CURRENT:
+“The story your organisation tells about you is usually a year or two behind what you can actually do now.”
+
+Remove the invented timeline.
+
+Replace with:
+“The story people inside an organization tell about you can lag behind what you are actually ready to do now.”
+
+Keep the meaning:
+Closing that gap is not self-promotion. It is maintenance.
+
+Apply equivalent correction to Short 1.
+
+CURRENT:
+“Most good managers are relieved to be asked them.”
+
+Remove.
+
+Replace with something like:
+“These are reasonable questions to ask a manager because they show you are taking the role seriously.”
+
+CURRENT:
+“If the move gives you more tasks and the same decisions, your judgment will not grow. You will get faster, and more tired.”
+
+Soften to:
+“If the move gives you more tasks and the same decisions, your judgment may not expand very much. You may simply get faster at work you already know.”
+
+Apply equivalent correction to Short 2.
+
+Short 4 current idea equivalent to:
+“Be careful with internal moves in particular, because this is where evidence is weakest. A lot of internal work is legible only inside the building.”
+
+Too sweeping.
+
+Replace with:
+“Internal moves can be especially easy to describe only in internal language. If the outcome only makes sense to people inside the company, translate it before you assume the evidence will travel.”
+
+Preserve the result / judgment / range test.
+
+==================================================
+U.S. ENGLISH CONSISTENCY
+==================================================
+
+Standardize public-facing and recording text where meaning does not change:
+
+organisation → organization
+organisational → organizational
+programme → program
+apologising → apologizing
+
+Do not alter proper nouns or quotations.
+
+==================================================
+RESEARCH ALIGNMENT — DO NOT REBUILD
+==================================================
+
+The new audience research is an alignment layer, not a rebuild trigger.
+
+Do NOT change Videos 1–7 strategy or sequence because of it.
+Do NOT add another framework.
+Do NOT insert new roadmap topics in this pass.
+
+Forward production notes are maintained in the newest research-aligned roadmap:
+Capability_Formation_YouTube_Roadmap_1-30_v5.1_Research_Aligned_FINAL.docx
+
+Key forward notes:
+- Video 8 must name the “direct experience” pain while preserving Capability / Context / Credential.
+- Video 13 must test search packaging around “How to Get Hired Without Direct Industry Experience” without auto-replacing the current title.
+- Video 14 is RESEARCH REQUIRED before scripting factual findings.
+- Video 19 must add employer trust / recency / directness.
+- Video 30 must distinguish restarting financially, by title, by scope, by context and in actual capability.
+
+Do not touch those future videos in this v5.1.1 pass.
+
+==================================================
+CHANGE CONTROL
+==================================================
+
+Label corrected records:
+v5.1.1 PRECISION PASS
+
+Only modify paragraphs needed for the corrections above.
+
+Do not alter slide XML unless one of these exact corrected phrases appears visibly on a slide and creates a contradiction. If so, stop and report before changing visible slide copy.
+
+Update speaker/editor notes where changed wording appears.
+Update corresponding Shorts and editor briefs.
+Rebuild only packages/documents that actually change.
+
+Re-run:
+- canonical comparison
+- teleprompter/reading equivalence
+- direct-address QA
+- factual QA
+- simple-language QA
+- U.S. English check
+- 13-file ZIP allowlist
+- SHA256SUMS verification
+- sibling ZIP checksum
+
+Return a concise OLD → NEW change log.
+
+If all checks pass, mark:
+
+VIDEOS 1–5 — FINAL + LOCKED
+v5.1.1 PRECISION PASS COMPLETE
+
+Do not make any additional editorial change.

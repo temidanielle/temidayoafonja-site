@@ -710,6 +710,109 @@ patch, and the Video 6 description document already carried one before it.
 Video 4 gained a separate description-only document, so Videos 1 and 4 to 8
 now all follow that convention.
 
+### Videos 1-5 - v5.1.1 precision pass, verification against the formal prompt, 3 September 2026
+
+`Videos_1-5_v5.1.1_Precision_Cleanup_Code_Prompt.txt` was received and checked
+line by line against the deployed packages. Every correction it specifies was
+already applied and committed. All fifteen were re-verified directly in the
+deployed files: the superseded wording is absent and the corrected wording is
+present in each of the five videos, their Shorts, editor briefs, publishing
+packages, descriptions and speaker notes.
+
+Preserved and re-confirmed as the prompt requires: the history / systems /
+relationships / trust examples in Video 2; the safety boundary, the no-pressure
+-to-stay stance, the confidentiality and evidence boundary and the Decision
+Check CTA in Video 3; December 2008 and the financial crisis, the
+cat-with-nine-lives boundaries, the certification non-pass, the three-sentence
+method, the identity exit and the Starter CTA in Video 4; and the result /
+judgment / range test plus "Closing that gap is not self-promotion. It is
+maintenance." in Video 5.
+
+#### One genuine miss found and fixed
+
+The original U.S. English sweep was case-sensitive and matched only the four
+listed words, so four British spellings survived. A case-insensitive sweep
+across every script, Short, brief, publishing document, description, speaker
+note and slide caught them:
+
+| Where | Old | New | Reaches |
+|---|---|---|---|
+| Video 4 public description bullet | "orientation, not defence." | "orientation, not defense." | publishing package + description DOCX |
+| Video 5 slide 6 speaker note | "THE ORGANISATIONAL LAYER" | "THE ORGANIZATIONAL LAYER" | deck notes only |
+| Video 1 slide 6 speaker note | "with colour or emphasis" | "with color or emphasis" | deck notes only |
+| Video 2 slide 4 speaker note | "is the centre of this slide" | "is the center of this slide" | deck notes only |
+
+A full case-insensitive sweep now returns clean across every recording,
+publishing, description, brief, speaker-note and slide surface. The only
+remaining British spellings anywhere are inside each README's own change record,
+which quotes the superseded wording deliberately, and the QA script's long-word
+allowlist, which is not reader-facing.
+
+#### Rebuild scope - only what actually changed
+
+Package documents were compared by CONTENT, not bytes, because python-docx
+re-stamps `docProps` timestamps on every save and would otherwise make all five
+packages look changed.
+
+- **Video 4 package rebuilt and redeployed.** "defence" reached the publishing
+  package and the description-only DOCX, so both changed. New package ZIP
+  `698ae6352efcd0b907c8c3639a7ff2c110bf6adcd74848357521bde9deacf36d`, new
+  description DOCX
+  `b9bd84500cd8fb35f83e1de5ff2f331123890020c61784abd2cc70323e715787`.
+- **Videos 1, 2, 3 and 5 packages NOT rebuilt.** Their packaged documents are
+  content-identical, so their deployed ZIPs, `SHA256SUMS.txt` files and sibling
+  checksums are untouched and still verify: V1 `c20ba22f…`, V2 `31cca714…`,
+  V3 `c06db1bb…`, V5 `4ce583dc…`.
+- **Decks: Videos 1, 2 and 5 only**, one main-deck note part and two reveal note
+  parts each - exactly the slides carrying the corrected word.
+  `NON-NOTES PARTS CHANGED: []` on all six files. Videos 3 and 4 decks untouched.
+
+| Deck | Main | Reveal |
+|---|---|---|
+| Video 1 | `c051f90c51474a17751ffb4c48843f51592de57a5de1285d0cf0c546cb478e38` | `112c38499b33e1727d8dbdd8154192f64f9203c25323aad5d6d5ffc248000c17` |
+| Video 2 | `7e4c731c9a978244b9fa6158d3789f25c1d09daf5d54c393486296749b9a4503` | `de91230060b8aa7bda2105288d0452d119a6ead399ce9ff0b5739af5d07b6a8c` |
+| Video 5 | `5f13f656a7b196e8f62bd8f74cf8eea33f743f4a5f2c8631e5d1d8bd9ac067b2` | `749d247141e02fef6585ec8ba9441911582fa1859b8a15400d7dd1f8778bd976` |
+
+All five slide-preview PDFs remain byte-identical. No visible slide copy
+contains any corrected phrase or any British spelling, so no slide XML change
+was required and nothing needed reporting before proceeding.
+
+#### Re-run in full
+
+230 QA checks pass, 0 failures: canonical comparison, teleprompter/reading
+equivalence, direct-address, factual, simple-language, U.S. English, the 13-file
+ZIP allowlist, 12-entry `SHA256SUMS.txt` with `sha256sum -c` passing, and
+sibling ZIP checksums on all five. Video 4's two changed documents were
+re-rendered and hold at 3 pages with healthy trailing pages.
+
+**VIDEOS 1-5 - FINAL + LOCKED. v5.1.1 PRECISION PASS COMPLETE.**
+
+### Forward roadmap - research alignment layer, NOT a rebuild trigger
+
+The newest forward source of truth is
+`Capability_Formation_YouTube_Roadmap_1-30_v5.1_Research_Aligned_FINAL.docx`.
+**That file has not been supplied to this repository yet** - it is not in
+`deliverables/` and was not uploaded. The roadmap document present here is the
+older `YouTube_Audience_and_20_Video_Roadmap_Audit_Aug28_2026.docx`, which the
+new file supersedes. The research notes below were recorded from the v5.1.1
+prompt so they are not lost; the DOCX should be added when available.
+
+The audience research is an **alignment layer**. It does NOT change Videos 1-7
+strategy or sequence, does NOT add another framework, and does NOT insert new
+roadmap topics. Videos 6-30 were not touched in this pass.
+
+Forward production notes, for those videos only:
+
+- **Video 8** - must name the "direct experience" pain while preserving
+  Capability / Context / Credential.
+- **Video 13** - must test search packaging around "How to Get Hired Without
+  Direct Industry Experience", WITHOUT auto-replacing the current title.
+- **Video 14** - **RESEARCH REQUIRED before any factual findings are scripted.**
+  Do not script findings for this video from memory or inference.
+- **Video 19** - must add employer trust, recency and directness.
+- **Video 30** - must distinguish restarting financially, by title, by scope, by
+  context, and in actual capability.
+
 ### Videos 1-5 - v5.1.1 PRECISION PASS, 3 September 2026
 
 A narrow correction pass following Temidayo's independent human read of all five
