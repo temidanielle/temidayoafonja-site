@@ -1,59 +1,65 @@
 # -*- coding: utf-8 -*-
-"""Video 5 v3.1 Short recording copy, extracted verbatim from the canonical
-prompt. The verbal hook is the Short's own first spoken line."""
+"""Video 5 Shorts — freshly written for v5.0. The maternity-return proof is
+bounded exactly: about six months after returning, scope expanded beyond the
+original box; the meaningful part was being trusted with different work. No
+employer, assignment, result or promotion anywhere."""
 
-SHORTS = [('Video_5_Short_1_You_May_Not_Need_To_Leave.docx',
-  'Recognition',
-  'You may not need to leave your company.',
-  ['You may not need to leave your company.',
-   'You may need access to work your current role is not giving you.',
-   'So before you start assuming the only answer is a new employer, ask yourself:',
-   'Will the work actually change if I move internally?',
-   'A good internal move can put you closer to different problems, systems, '
-   'stakeholders or decisions while letting you use context you have already built.',
-   'But a new title with the same work may move you on the org chart without '
-   'increasing what you can carry next.']),
- ('Video_5_Short_2_More_Tasks_Not_More_Judgment.docx',
-  'Distinction',
-  'If someone tells you an internal role comes with “more responsibility,” I want you '
-  'to ask one more question:',
-  ['If someone tells you an internal role comes with “more responsibility,” I want you '
-   'to ask one more question:',
-   'More responsibility for what?',
-   'More tasks can mean volume, coordination and work that needs somewhere to go.',
-   'More judgment means you have to interpret incomplete information, weigh tradeoffs, '
-   'recommend a direction or own the consequence.',
-   'So ask:',
-   'What will I be trusted to decide that I am not trusted to decide now?',
-   'If the clearest answer is:',
-   '“You’ll have more to manage,”',
-   'keep investigating.']),
- ('Video_5_Short_3_Maternity_Return_Scope_Expansion.docx',
-  'Personal evidence',
-  'Let me show you why I stopped treating more work as automatic growth.',
-  ['Let me show you why I stopped treating more work as automatic growth.',
-   'About six months after I returned from maternity leave in one chapter of my '
-   'career, my scope expanded beyond the original box of the role.',
-   'But more work was not the important part.',
-   'I was being trusted with different work.',
-   'That is the distinction I want you to look for too.',
-   'When your scope expands, do not ask only:',
-   'How much more am I doing?',
-   'Ask:',
-   'What am I becoming trusted to do?']),
- ('Video_5_Short_4_Three_Questions_Before_You_Move.docx',
-  'Practical test',
-  'If you are considering an internal move, I want you to ask three questions before '
-  'you say yes.',
-  ['If you are considering an internal move, I want you to ask three questions before '
-   'you say yes.',
-   'Will the work change?',
-   'Will my judgment expand?',
-   'Will the evidence travel?',
-   'Three yeses give you a strong developmental case.',
-   'Two yeses mean I would investigate or negotiate the missing dimension.',
-   'Zero or one may mean you are moving without adding very much to what you can carry '
-   'next.',
-   'That does not automatically make the move wrong.',
-   'Pay, flexibility, stability or a better manager may still make it right for you.',
-   'Just make the trade deliberately.'])]
+SHORTS = [
+ ("Video_5_Short_1_You_May_Not_Need_To_Leave.docx","Recognition / story",
+  "You are doing well where you are, and you have started looking at job adverts anyway.",
+  ["You are doing well where you are, and you have started looking at job "
+   "adverts anyway.",
+   "Not because anything is wrong.",
+   "You want different work, and somewhere along the way you decided the only "
+   "way to get it is to leave.",
+   "You may not need to leave.",
+   "You may need access to work your current role is not giving you yet.",
+   "Those are not the same problem, and they do not have the same solution.",
+   "A different employer is one way to reach different work.",
+   "It is not the only way.",
+   "So before you start the search, find out what is actually available inside "
+   "the building you are already in."]),
+ ("Video_5_Short_2_More_Tasks_Is_Not_More_Judgment.docx","Distinction / myth",
+  "If someone offers you more responsibility, ask one more question.",
+  ["If someone offers you more responsibility, ask one more question.",
+   "More responsibility for what?",
+   "Because more tasks can mean volume, coordination, and work that had "
+   "nowhere else to go.",
+   "More judgment means interpretation, tradeoffs, and consequence you own.",
+   "Organisations give more to whoever is dependable. More projects. More "
+   "people to coordinate.",
+   "That will make you busier.",
+   "It will not necessarily make the work more developmental.",
+   "So ask: what will I be trusted to decide that I am not trusted to decide "
+   "now?",
+   "If the clearest answer is “you will have more to manage” — keep asking."]),
+ ("Video_5_Short_3_Trusted_With_Different_Work.docx","Proof / personal evidence",
+  "Let me show you the moment I stopped treating more work as growth.",
+  ["Let me show you the moment I stopped treating more work as growth.",
+   "About six months after I came back from maternity leave in one chapter of "
+   "my career, my scope expanded beyond the original box of the role.",
+   "More landed on me. That part is easy to describe.",
+   "But that is not the part that mattered.",
+   "What mattered was that I was being trusted with different work.",
+   "Not more of the same work. Different.",
+   "That distinction took me a while to see, and I could not unsee it "
+   "afterwards.",
+   "So when your scope grows, do not only ask how much more you are doing.",
+   "Ask what you are becoming trusted to do."]),
+ ("Video_5_Short_4_Three_Questions_Before_You_Move.docx","Practical test / action",
+  "Before you accept an internal move, run it through three questions.",
+  ["Before you accept an internal move, run it through three questions.",
+   "Will the work change?",
+   "Will my judgment expand?",
+   "Will the evidence travel?",
+   "Three yeses and you have a strong developmental case.",
+   "Two yeses and there is something specific to go and negotiate before you "
+   "accept.",
+   "Zero or one, and you may be moving without adding much to what you can "
+   "carry next.",
+   "That does not make it wrong.",
+   "Better pay, better hours, a better manager, stability while your life is "
+   "complicated — those are real reasons.",
+   "Just name the trade honestly. You do not have to call every useful move "
+   "growth."]),
+]

@@ -1,158 +1,152 @@
 # -*- coding: utf-8 -*-
-"""Video 5 v4.0 speaker/editor notes. Notes parts only: no slide XML, no media.
-
-Timings are script-derived working estimates at 145 wpm for the 1,980-word
-direct-address script (about 13:39 total)."""
-
+"""Video 5 v5.0 speaker/editor notes. Notes parts only; no slide XML.
+Timings are working estimates at 145 wpm for the 1,804-word script (~12:26)."""
 NOTES=[
-# 1 Core Distinction
-"""Timing: approximately 0:46.
+"""Timing: approximately 0:38.
 
-Bring this up only after the H.I.T. opening has fully landed: the hook, SAME
-COMPANY / DIFFERENT WORK, "Let me show you what this looked like for me" and
-the maternity-return proof, then the three questions.
+Do NOT open on this slide. Begin full-screen on Temidayo and let the opening
+land: doing well and browsing job adverts anyway, the assumption underneath it,
+the reframe, and the offer.
 
-State one holds the main statement. Reveal the INTERNAL MOVE ≠ AUTOMATIC GROWTH
-line after the first statement has been made.
+Then this slide carries the proof.
 
-The not-equal sign is drawn rather than typeset: no brand font contains that
-glyph.
+FACTUAL BOUNDARY, exact: about six months after Temidayo came back from
+maternity leave in one chapter of her career, her scope expanded beyond the
+original box of the role. The meaningful part was being trusted with DIFFERENT
+work, not more of the same. No employer, assignment, result, promotion, metric
+or conversation. NO maternity or baby imagery — the proof is her saying what
+happened.
 
-Direct address: this section carries the one channel-positioning sentence about
-experienced professionals, and then returns immediately to "you." Hold on
-Temidayo through "And I want to help you do the same here" — do not cover it
-with a graphic.
+"More landed on me. That part is easy to describe. But that is not the part
+that mattered." Stay on her face for it.
 
-Hold through the organizational turn that follows: an internal move is also a
-decision about what the viewer's organization is willing to trust them to do
-next. Temidayo carries that on camera; no new slide.""",
-# 2 The Three Questions
-"""Timing: approximately 2:19.
+State one holds the main statement; reveal INTERNAL MOVE ≠ AUTOMATIC GROWTH
+after it. The not-equal sign is drawn, not typeset — no brand font has the
+glyph.""",
+"""Timing: approximately 1:18.
 
-Reveal one question at a time as each is named. These are the three tests the
-whole video runs on, so let each land before the next arrives.
+The channel line and the three questions.
 
-Do not put the answers here. The questions alone.
+Reveal one question at a time. These are the only memory device in the video —
+no acronym, no second framework, and CAR belongs to Video 6.
 
-Do not add an acronym or a second framework. The three questions are the only
-memory device in this video.""",
-# 3 Question 1
-"""Timing: approximately 2:37, holding to about 3:04.
+Close on the reframe: the point is not whether you moved, it is whether the
+move increased what you can carry afterwards.""",
+"""Timing: approximately 1:49, holding to about 2:24.
 
-Section break. Hold briefly, then return to presenter.
+Section break, then straight into the first question.
 
-The point being carried: do not start with the title. Temidayo asks the viewer
-to picture an ordinary Monday in the new role and say what would actually be
-different. Those are direct questions to one person — keep them attached to her
-face.""",
-# 4 Access Test
-"""Timing: approximately 3:04.
+The instruction is vivid and specific: picture an ordinary Monday four months
+in, not the announcement and not the first week. Keep that framing — it is what
+stops the viewer answering about the title.""",
+"""Timing: approximately 2:24.
 
-Reveal one line at a time as each is named.
+Reveal the four access variables one at a time.
 
-These are the four places to look for change before calling a move real access.
+Not all four are required. Familiarity is named as an advantage before it is
+named as a risk — keep that order, it is what makes the section fair.
 
-Stay on this slide through the recognition passage at about 3:49: familiarity
-can make a weak move look stronger than it is, and the problem may not be the
-viewer's capability but whether people can see them beyond the work they are
-already known for. Do not build a new graphic for it, and do not imply
-discrimination or deliberate resistance.
+At about 3:20 comes the organisational beat, and it is the most delicate thing
+in the video: the people who value you most may be the ones least able to
+imagine you doing something else, because every time you were excellent in one
+shape you made that shape more convincing. "That is not them being unfair."
+Do not let an edit turn this into a grievance.
 
-Also carried here: the limit. A move that does not change the work may still be
-right for pay, flexibility, a better manager or stability. Temidayo names those
-as legitimate. Do not cut the qualifier.""",
-# 5 Question 2
-"""Timing: approximately 5:24, holding to about 5:33.
+Then the questions to ask, then the limit: a move that does not change the work
+can still be right. "I just do not want you calling it development when it is
+relief. Both are allowed." Do not cut that.""",
+"""Timing: approximately 4:33, holding to about 4:41.
 
-Section break.
+Section break. Hold briefly, then back to presenter.""",
+"""Timing: approximately 4:41.
 
-This is where Temidayo asks the viewer to be careful with the phrase "more
-responsibility." More volume is not more judgment.""",
-# 6 More Tasks / More Judgment
-"""Timing: approximately 5:33.
+Show MORE TASKS alone first, then bring up MORE JUDGMENT.
 
-Show MORE TASKS first, on its own, while the point about volume is made.
+The authority point matters as much as the contrast: accountability without
+influence is "exposure without ownership, and a well-known way for capable
+people to end up looking worse than they are."
 
-Then contrast with MORE JUDGMENT and let it carry the weight. Temidayo is
-explicit that she is not saying the operational task does not matter — she is
-asking what the work is forming in the viewer. Keep that distinction intact.
-
-Hold long enough to cover the authority point and the organizational line: a
-stretch opportunity becomes developmental when the viewer is trusted with more
-judgment, not simply handed more volume.
-
-"So here is what I would ask you" is a relational beat. Stay on Temidayo.""",
-# 7 Question 3
-"""Timing: approximately 7:43, holding to about 8:07.
+Then the three questions to ask the hiring manager, and the closing test — if
+the clearest answer is "you will have more to manage", keep asking.""",
+"""Timing: approximately 6:45, holding to about 7:09.
 
 Section break.
 
-The viewer's credibility inside the company may not automatically make sense
-outside it. Portable evidence does not mean taking confidential material.""",
-# 8 Result / Judgment / Range
-"""Timing: approximately 8:07.
+Credibility inside a company does not automatically make sense outside it. The
+people around the viewer watched it happen; someone else did not.""",
+"""Timing: approximately 7:09.
 
-Reveal Result, Judgment and Range sequentially.
+Reveal Result, Judgment and Range in order.
 
-A move becomes more portable when it creates all three. "I want you to be able
-to say…" is spoken to one person — do not cut away from her for it.""",
-# 9 Decision Read
-"""Timing: approximately 9:11.
+The target sentence is the one to protect: "I moved into a new context, I was
+trusted to make this kind of call, and here is what was different because of
+it." That is what a portable answer sounds like.
 
-Reveal rows one at a time. Do not gamify the read.
+Close on the translation test — if you cannot say what the role could prove,
+you do not yet know what it will build.""",
+"""Timing: approximately 8:08.
 
-Two yeses is not a rejection. Temidayo gives the viewer the concrete questions
-to ask about the missing dimension.
+Reveal the rows one at a time. Do NOT gamify this — no scorecard treatment, no
+tally graphics.
 
-Zero or one yes may still be exactly the right choice for pay, flexibility,
-stability, benefits or a better manager. Keep "you do not have to call every
-useful move growth" — it is the closing line of this section.""",
-# 10 Conversation Prompts
-"""Timing: approximately 10:26.
+Two yeses is not a rejection; it is something specific to negotiate before
+accepting.
 
-Progressive reveal, one prompt at a time.
+Zero or one is not a verdict either. Better pay, better hours, a better
+manager, stability while life is complicated — all real reasons. "Just name the
+trade honestly. You do not have to call every useful move growth." """,
+"""Timing: approximately 9:08.
 
-These are for the viewer's internal hiring conversation. Listen for concrete
-work, not encouraging adjectives.
+Progressive reveal, one prompt at a time. Then Temidayo carries a long stretch
+on camera — no new slide for any of it.
 
-Stay with this slide through the organizational read and the limits section:
-what the answers say about how the opportunity is designed, that a capable
-person can still land in a poorly designed role, the same three questions
-applied to an external offer, and — from about 11:59 — the health, safety,
-harassment, discrimination, caregiving, location, immigration, energy and
-timing boundaries. Temidayo carries all of it; no new slide.
+What the answers say about the organisation. Being capable and still landing in
+a badly designed role. The same three questions applied to an external offer.
+When an internal move will not fix the problem.
 
-"I want you to compare which option gives you meaningful access…" is a
-relational beat. Do not trim it for pace.""",
-# 11 CTA
-"""Timing: approximately 12:45.
+THE SAFETY BOUNDARY sits here and is not optional: if health or safety is at
+risk, or the viewer is dealing with harassment or discrimination, they do not
+need a mobility strategy — they need to protect themselves and get proper
+support. Deliver it plainly, on camera, with captions. Not fine print.
 
-Simple CTA card. No competing offer on screen. Do not add Keep the Proof, the
-Capability Formation Field Kit or the Career Evidence Starter.
+Then the life factors: pay, caregiving, location, immigration status, energy,
+timing.
 
-Note the v4.0 phrasing: "I made the Career Decision Evidence Check to help you
-organize the evidence behind that choice." It is offered, not announced. Keep
-it that way.
+IDENTITY EXIT, at about 11:06: "I want you to be able to read any opportunity —
+inside or outside — for what it will actually build in you… Once you can do
+that, you stop needing anyone to tell you whether an opportunity is good. You
+can see it yourself."
 
-CTA PRODUCTION GATE: SATISFIED. temidayoafonja.com/career-decisions is live and
-the core production journey has been verified. Video 5 is not blocked on it.
-Retain one normal signed-out link check in the final upload SOP.""",
-# 12 Watch Next
-"""Timing: approximately 13:14 to the end, about 13:39.
+That last sentence is the point of the video. If the edit runs long, cut
+something else.""",
+"""Timing: approximately 11:33.
 
-All content is held left of x=1130 so the right side stays clear for YouTube
-end-screen elements.
+Calm and brief. The only invitation in the video, and it is the Career Decision
+Evidence Check — not the Field Kit, not Keep the Proof, not the Starter.
 
-Watch next is Video 6, Are You Growing—or Just Being Given More Work? Use direct
-end-screen routing once Video 6 is public; before that, the Career Portability
-playlist. Do not leave Subscribe as the only end-screen element.
+It lands AFTER the identity bridge. Keep that order.
 
-Closing lines are spoken to one person: "You may not need to leave. But your
-next move should increase what you can carry." Stay on Temidayo for both.""",
+The one-sentence exercise comes first, then the offer: "I made the Career
+Decision Evidence Check to help you organise the evidence behind that choice."
+Offered, not announced.
+
+CTA PRODUCTION GATE: SATISFIED. Retain one signed-out link check in the final
+upload SOP.""",
+"""Timing: approximately 12:01 to the end, about 12:26.
+
+All content is held left of x=1130 so the right side stays clear for the
+YouTube end-screen element.
+
+Watch next is Video 6, Are You Growing—or Just Being Given More Work? Use
+direct end-screen routing once Video 6 is public; before that, the Career
+Portability playlist. Do not leave Subscribe as the only end-screen element.
+
+Closing lines: "You may not need to leave. But the next move should increase
+what you can carry." Stay on her for both.
+
+Hold the final frame for at least 12 seconds.""",
 ]
-
 FRAMES=[2,3,1,4,1,2,1,3,3,3,1,1]
-
 def reveal_notes():
     out=[]
     for s,(n,note) in enumerate(zip(FRAMES,NOTES),1):
@@ -161,8 +155,6 @@ def reveal_notes():
                   if n>1 else "Single-state frame — main slide %d."%s)
             out.append(head+"\n\n"+note)
     return out
-
 if __name__=="__main__":
-    r=reveal_notes()
-    assert len(NOTES)==12 and len(r)==25, (len(NOTES),len(r))
+    r=reveal_notes(); assert len(NOTES)==12 and len(r)==25,(len(NOTES),len(r))
     print("main notes:",len(NOTES)," reveal notes:",len(r))

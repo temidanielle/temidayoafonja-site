@@ -1,163 +1,137 @@
 # -*- coding: utf-8 -*-
-"""Video 2 v4.0 speaker/editor notes. Notes parts only.
-
-Every quoted anchor below is verbatim from the v4.0 script, so
-the notes no longer carry the stale narration the decks were shipped with.
-Timings are script-derived working estimates at 145 wpm (1,258 words, ~8:40)."""
+"""Video 2 v5.0 speaker/editor notes. Notes parts only; no slide XML.
+Timings are working estimates at 145 wpm for the 1,632-word script (~11:15)."""
 
 NOTES=[
-# 1 Title
-"""Timing: approximately 0:38 to 0:57.
+"""Timing: approximately 0:34 to 1:21.
 
-Do NOT open on this slide. Begin full-screen on Temidayo and let the whole
-H.I.T. opening land first: the hook, the viewer bridge, her own cross-industry
-proof, the valuable-here / legible-elsewhere line and the three-test promise.
+Do NOT open on this slide. Begin full-screen on Temidayo and let the opening
+land: the compliment that is meant, the private question, "I have had to answer
+that question about myself more than once", and the promise that this is not a
+scare video.
 
-Bring the title up under the channel line: "I'm Temidayo Afonja. I help
-experienced professionals understand what their work has built, what can
-travel, and what still has to be learned when the context changes. And that is
-what I want to help you do here."
+Recognition comes before anything is taught.
 
-That second sentence is the turn from positioning to relationship. Stay on her
-face for it.
+Bring the title up under the channel line, then hold for the tone-setting
+block: being valuable where you are is real value, it is not a trap and not a
+warning sign. Being paid well, being trusted, being the person everyone calls —
+none of that is the problem.
 
-Do not make the opening alarmist.""",
-# 2 Valuable Here / Legible Elsewhere
-"""Timing: approximately 0:57.
+NON-ALARMIST IS A HARD RULE for this whole video. No red, no warning graphics,
+no countdown, no urgency motifs, anywhere.""",
+"""Timing: approximately 1:21.
 
-This is the central idea of the video. Let it sit.
+The central distinction. Reveal the second question after the first has landed.
 
-Reveal the second question after the first has been asked, not before.
+This section explains the mechanism, and it must stay generous: the viewer's
+knowledge is real skill, some of it just belongs to the room they are standing
+in. The company knows why they matter because they watched it happen. Another
+company is not being unfair — it simply cannot read the evidence.
 
-Temidayo is careful here and the edit must not undercut her: being relied on is
-real value, and none of this implies the viewer should leave. The closing beat
-of this section is "Praise tells you that you matter here. It cannot tell you
-how easily what you do travels."
+Closing beat: "praise tells you that you matter here. It cannot tell you how
+easily what you do travels." Let it sit before the tests begin.""",
+"""Timing: approximately 2:50, holding to about 2:53.
 
-Non-alarmist. No warning graphics, no red, no urgency motifs.""",
-# 3 01 — Remove the Company Nouns
-"""Timing: approximately 2:02, holding to about 2:06.
+Section card. Hold briefly, then back to presenter.
 
-Section card. Hold briefly, then return to presenter.""",
-# 4 Test One
-"""Timing: approximately 2:06.
+Note that the framework does not arrive until nearly three minutes. That is
+deliberate: the viewer is identified before they are taught.""",
+"""Timing: approximately 2:53.
 
-Show the company-bound sentence first, then the clearer description.
+Show the company-bound sentence first, then the version that travels.
 
-What remains after the nouns come out should still tell another person what
-problem the viewer solves and what judgment the work requires.
+Temidayo stands in as the listener — "Outside it, I hear the name of a process.
+I do not know what you are actually good at." Keep her on camera so it reads as
+a conversation.
 
-Note the direct-address framing: Temidayo says "Say you tell me: 'I own the QBR
-process for this business unit.'" and then "Outside it, I mostly hear the name
-of a process." She is standing in as the listener across the table. Keep her on
-camera for those two lines so the exchange reads as a conversation.
+FACTUAL BOUNDARY: the QBR sentence is a generic example, not a real client. No
+employer, metric or result anywhere in this video.
 
-Viewer action: one sentence from a résumé, a LinkedIn profile or the way they
-introduce their work.
+Close on the reassurance: if the sentence collapses, the value is real and the
+description was simply built for an audience that already knew them.""",
+"""Timing: approximately 4:16, holding to about 4:22.
 
-The example is generic. Keep it that way; no employer-specific or confidential
-material.""",
-# 5 02 — Find Outside-Context Evidence
-"""Timing: approximately 3:14, holding to about 3:17.
+Section card. Hold briefly, then back to presenter.""",
+"""Timing: approximately 4:22.
 
-Section card. Hold briefly, then return to presenter.""",
-# 6 Test Two
-"""Timing: approximately 3:17.
+Reveal the evidence types one at a time.
 
-Reveal the evidence types one at a time as each is named.
+This test is explicitly not about visibility or popularity. No job offer, no
+audience, no public profile required. Say that plainly.
 
-The evidence can be small. It only has to show that the usefulness survived
-some distance from where it was formed.
+The indispensable trap is named at the viewer and stays even-handed: depending
+on you raises how much they need you; it does not automatically make you
+easier for anyone else to understand. Two different kinds of value.
 
-This is where the indispensable trap is named — and in v4.0 it is named at the
-viewer: "This is where being indispensable can mislead you." Do not soften it
-into a general observation, and do not turn it into a warning.
+Close on the permission line: if nothing comes to mind yet, that is not a
+verdict — it is something untested.""",
+"""Timing: approximately 5:56, holding to about 6:00.
 
-Close on the permission line: if the viewer cannot think of an example yet,
-that is not a verdict on them. It is something to go and test.""",
-# 7 03 — Read the Last 90 Days
-"""Timing: approximately 4:38, holding to about 4:42.
+Section card. Hold briefly, then back to presenter.""",
+"""Timing: approximately 6:00.
 
-Section card. Hold briefly, then return to presenter.""",
-# 8 Test Three
-"""Timing: approximately 4:42.
+Reveal the three questions, then the new-judgment versus same-work-faster
+contrast.
 
-Reveal the three questions one at a time, then the new-judgment versus
-same-work-faster contrast.
+Speed is not dismissed. The line to protect is "You can get much better at work
+you already know how to do. That is real, and it is not the same thing as your
+range getting bigger." Both are allowed to be fine.""",
+"""Timing: approximately 7:07.
 
-Speed and efficiency are not dismissed. Temidayo says so explicitly. The
-distinction is proficiency versus expansion, and the edit should not tip it
-into a criticism of anyone who has become faster at familiar work.""",
-# 9 The Three Tests
-"""Timing: approximately 5:43.
-
-The consolidation card. Reveal the three in order.
+The consolidation card. Reveal the three tests in order.
 
 Do not add a fourth item, an acronym or a slogan. The three tests are the only
 memory device in this video.""",
-# 10 Read the Pattern
-"""Timing: approximately 5:58.
+"""Timing: approximately 7:21.
 
 Hold the two questions side by side while Temidayo walks the four readings.
 
-The governing line is hers and it is addressed to the viewer: "I am not asking
-you to diagnose yourself from one quarter or one frustrating assignment. What
-matters is the pattern."
+Two lines carry the tone here: "That is a translation problem, not a value
+problem", and "Not panic. Attention." Neither may be cut.
 
-No diagnostic tone. No scorecard treatment.""",
-# 11 Before You Leave
-"""Timing: approximately 6:50.
+One quarter is not a pattern. No diagnostic treatment, no scorecard.""",
+"""Timing: approximately 8:19.
 
-Progressive reveal, one option at a time.
+The section that keeps the video honest, and the longest single stretch. Give
+it room.
 
-This is the section that keeps the video non-alarmist, so give it room. A
-concern in one test does not mean resign.
+Progressive reveal of the four options. The documentation option keeps its
+boundary verbatim: in your own words, at a level you are permitted to share,
+nothing confidential or employer-owned.
 
-The documentation option keeps its boundary verbatim: in the viewer's own
-words, at a permitted high level, without taking confidential or
-employer-owned material. Do not trim that qualifier.
+Then the honest limits, spoken plainly: this will not stop a restructure, or
+control a hiring market or a reorg. What it changes is WHEN you find out.
 
-Close on "Before you change the employer, test whether you can change what the
-work is building in you." """,
-# 12 Capability Formation Field Kit
-"""Timing: approximately 7:49.
+IDENTITY EXIT, at about 10:01: "Not a plan for leaving. The habit of checking —
+so you are the person who already knows what you carry, before anybody else
+makes the timing decision for you."
 
-Exact invitation, verbatim from the v4.0 script:
+That is the point of the video. If the edit runs long, cut something else.""",
+"""Timing: approximately 10:16.
 
-"If these three tests tell you that you need a fuller read of what your current
-work is building and how portable it is, the Capability Formation Field Kit
-gives you a private, evidence-led assessment using the last 90 days of your
-actual work. It helps you see what is growing, what may be stalling, what looks
-portable and what you still need to investigate before you decide what comes
-next. You can find it at temidayoafonja.com/fieldkit."
+Calm and brief. The only resource invitation in the video, and it is the
+Capability Formation Field Kit.
 
-Calm and brief. This is the only resource invitation in the video. Show the
-real Field Kit artwork briefly. Do not add Keep the Proof or the Career
-Evidence Starter.
+It lands AFTER the identity bridge, so it reads as the next step rather than an
+advert. Keep that order. Do not add Keep the Proof or the Career Evidence
+Starter.
 
-Before publishing, verify the live /fieldkit redirect and the current listing.""",
-# 13 Watch Next
-"""Timing: approximately 8:21 to the end, about 8:40.
+Show the real Field Kit artwork briefly. Before publishing, verify the live
+/fieldkit redirect and the current listing.""",
+"""Timing: approximately 10:49 to the end, about 11:15.
 
-Exact bridge, verbatim from the v4.0 script:
+This card was corrected: it reads "3 Things to Do Before Quitting Your Job",
+the locked Video 3 title, matching what Temidayo says. You can hold it on
+screen while she names the video.
 
-"And if what you are seeing has you seriously considering an exit, do not move
-straight from concern to resignation. There are three things I want you to
-check first. That is the next video: 3 Things to Do Before Quitting Your Job.
-Watch that one next."
+Closing lines: "Being valuable here is worth having. Being understood elsewhere
+is worth building." Stay on her for both.
 
-WATCH NEXT CARD CORRECTED, 3 September 2026. This card previously carried the
-retired Video 3 title. It now reads "3 Things to Do Before Quitting Your Job",
-the locked Video 3 title, matching what Temidayo says. The correction was text
-only: same 40pt Montserrat Bold, same three-line block, same box, same colours,
-no media change. You can hold the card on screen while she names the video.
-
-Do not summarize this video again.
+Do not summarize the video again.
 
 The right side of the frame is left open for the YouTube linked-video
 end-screen element. Hold the final frame for at least 12 seconds.""",
 ]
-
 FRAMES=[1,1,1,2,1,4,1,4,1,1,4,1,1]
 
 def reveal_notes():

@@ -1,174 +1,148 @@
 # -*- coding: utf-8 -*-
-"""Video 4 v4.0 speaker/editor notes. Notes parts only.
-
-Timings are script-derived working estimates at 145 wpm (1,355 words, ~9:20).
-Every quoted anchor is verbatim from the v4.0 script."""
-
+"""Video 4 v5.0 speaker/editor notes. Notes parts only; no slide XML.
+Timings are working estimates at 145 wpm for the 1,548-word script (~10:40)."""
 NOTES=[
-# 1 Career Path
-"""Timing: approximately 0:32 to 1:21.
+"""Timing: approximately 0:48 to 1:35.
 
-Do NOT open on this slide. Begin full-screen on Temidayo and let the whole
-opening land first: the cat-with-nine-lives line, the disconnected-list
-problem, "The career wasn't the problem. The explanation was.", and the turn to
-the viewer — "So if your career looks disconnected on paper, let me show you how
-I learned to explain mine."
+Do NOT open on this slide. Begin full-screen on Temidayo and let the opening
+land: the viewer's CV making sense only to them, the exact moment halfway into
+the second job when it stops landing, the cat-with-nine-lives joke, "the career
+was not the problem, the explanation was", and the offer.
 
-FACTUAL BOUNDARY: the joke is the entire approved fact. Do not name the
-employer publicly, do not invent the original conversation, do not script the
-colleague's words beyond "a cat with nine lives", and use NO CAT IMAGERY
-anywhere — not in the edit, not in the thumbnail.
+FACTUAL BOUNDARY: the joke is the entire approved fact. A senior-manager friend
+at EY used to joke it. Do not invent the original conversation, do not script
+the friend's words, and use NO CAT IMAGERY anywhere — edit, graphic or
+thumbnail.
 
-Bring the chapters up as the chronology. Temidayo deliberately does not read
-them back: "The slide gives you the chronology, so I am not going to read every
-chapter back to you." Let the visual do that work.
+The chronology lives on the slide. Temidayo does not read it: "The slide has the
+chapters, so I am not going to read them to you."
 
-She then names the limits out loud — the work did not stay identical, some
-knowledge belonged to the context she was leaving, every move required real
-learning. Do not trim those.""",
-# 2 Chronology / Portability
-"""Timing: approximately 1:21.
+What she does instead is confess the old habit — listing the jobs and handing
+the listener a pile of parts. That admission earns the method. Keep it.""",
+"""Timing: approximately 1:35.
 
-The central distinction of the video. Reveal the second half after the first
-has been stated.
+The central distinction. Reveal the second half after the first has landed.
 
-Note the direct-address framing in v4.0: "when someone asks you, 'Walk me
-through your background,' you probably give them a list." The list that follows
-is the viewer's list, not a case study. Keep it restrained — no résumé-scroll
-animation, no timeline gag.
+The straight-line versus non-straight-line explanation is the mechanism of the
+whole video: for a nonlinear path, a chronology actively works against you,
+because every jump is one more thing the listener has to explain to themselves.
 
-Close on the instruction: give them enough chronology to orient them, then
-explain what the work repeatedly required you to become able to do.
+Restrained treatment. No résumé-scroll animation, no timeline gag.
 
-"There are three parts, and I want to walk you through each one" is the
-coaching turn. Stay on Temidayo.""",
-# 3 1 — Name the Chapters Briefly
-"""Timing: approximately 2:09.
+Close on the instruction, then the coaching turn: "There are three parts to it.
+I want to walk you through each one." """,
+"""Timing: approximately 2:28.
 
-Reveal the three cues as she names them.
+Reveal the cues as she names them.
 
-The coached framing is deliberate: "Your first sentence only has one job:
-orientation, not defense." Do not cut it.
+"Your first sentence has one job: orientation. Not defence." Do not cut it.
 
-Her own example chapters are spoken once, briefly. The 2008 financial-crisis
-context stays exactly as spoken and gains nothing: she graduated into that
-market, so the first turn was not part of a designed plan. No employer, no
-metric, no further detail.
+The December 2008 context stays exactly as spoken — accounting degree,
+financial crisis, took the door that was open, not a designed plan. Nothing is
+added.
 
-Close on the honesty line: a coherent career story does not require pretending
-every move was strategic.""",
-# 4 2 — Find the Repeated Work
-"""Timing: approximately 3:11, holding to about 3:40.
+Close on the honesty line: a career story does not become coherent by
+pretending every move was strategic.""",
+"""Timing: approximately 3:26, holding to about 3:56.
 
-Reveal NOTICE • TRANSLATE • BUILD • DECIDE as the questions are asked.
+Reveal NOTICE • TRANSLATE • BUILD • DECIDE as the questions arrive.
 
-"In the second sentence, I want you to look underneath the titles" is the
-coaching bridge into this section. Keep it.
+"In your second sentence, I want you to look under the labels." That is the
+coaching bridge into the section.
 
-The four questions are handed to the viewer one at a time. Let each land; do not
-stack them into a single graphic.""",
-# 5 Look Beneath the Nouns
-"""Timing: approximately 3:40.
+Four questions, one at a time. Do not stack them into a single graphic.""",
+"""Timing: approximately 3:56.
 
 Show the three nouns first, then the verb question.
 
-Temidayo's own recurring verbs — examine, translate, connect, build — are her
-evidence, not a template. The script is explicit that accounting, cybersecurity
-and people strategy are NOT the same profession, and that she would not force a
-connection the evidence does not support. In v4.0 that is turned to the viewer:
-"so do not force yours either." Do not cut either half.
+Her own verbs — examine, translate, connect, build — are her evidence, not a
+template for the viewer.
 
-Close on the rule: a portable capability is not a word you like, it is
-something your work repeatedly required you to demonstrate.""",
-# 6 3 — Explain the Direction
-"""Timing: approximately 4:52, holding to about 5:11.
+The script is explicit that accounting, cybersecurity and people strategy are
+NOT the same profession, and that she would not force a connection the evidence
+does not support. In v5.0 that is turned to the viewer as well: "and I do not
+want you to either. A forced story is worse than a messy one, because the
+person listening can feel it." Do not cut either half.
+
+Close on the rule: a portable capability is not a word you like the sound of.""",
+"""Timing: approximately 5:28, holding to about 5:49.
 
 Reveal PAST CHAPTERS → REPEATED CAPABILITY → NEXT VALUE.
 
-The goal is not to prove the next move was inevitable. It is to make the
-connection understandable. That distinction is the whole section.""",
-# 7 Three-Sentence Structure
-"""Timing: approximately 5:11.
+You are not proving the next move was inevitable. You are making the connection
+possible to hear. That distinction is the section.""",
+"""Timing: approximately 5:49.
 
 Reveal the three stems one at a time.
 
-"The third sentence explains why the next direction makes sense" is spoken as
-part of the coaching; it is not a caption.
+"The third sentence is doing the real work. It is where the past stops being a
+list and starts pointing somewhere." That is spoken coaching, not a caption.
 
-Her worked example is hers — "Here is mine:". Then note what it does NOT say:
-not every chapter was the same, not every move was planned, not everything
-transferred automatically. Those three denials are load-bearing and must not be
+Her worked example is hers. Then the three denials: not the same chapters, not
+planned, not everything transferred. All three are load-bearing and must not be
 trimmed for pace.
 
-Close on the hand-off: "Now try the same three sentences on your own career."
-Stay on Temidayo for it.
+Close on the hand-off: "Now try the same three sentences on your own career.
+Out loud, not in your head." The out-loud instruction is deliberate — it is how
+the viewer finds the sentence they cannot finish.
 
-This is the only memory device in the video. Do not add CAR, the Career
-Evidence 3 Cs, or any second framework.""",
-# 8 Do Not Invent a Perfect Plan
-"""Timing: approximately 6:17.
+This is the only memory device in the video. Do not add CAR or the 3 Cs.""",
+"""Timing: approximately 7:05.
 
 The honesty test, and the reason the video is credible. Give it room.
 
-"There is an honesty test here, and here is what I would not do." That framing
-is Temidayo taking the risk first, then handing the viewer the standard. Keep
-it.
+"And here is what I would not do." She takes the risk first, then hands the
+viewer the standard.
 
-Markets, caregiving, health, compensation, restructuring and unpredicted
-opportunity are all named as legitimate. Interruption, redirection and
-relearning are all allowed in a truthful explanation.
+Markets, caregiving, health, money, restructures and unpredicted opportunity
+are all named as legitimate. Interruption, redirection and relearning all
+belong in a truthful explanation.
 
-Close on: you are not trying to make your career look linear, you are trying to
-make your formation legible.""",
-# 9 Explanation Test
-"""Timing: approximately 7:08.
+"If one of your chapters does not fit a tidy progression, leave it untidy." Let
+that land — it is the permission the viewer came for.""",
+"""Timing: approximately 8:03.
 
-Reveal the three test questions one at a time, then the evidence challenges.
+Reveal the three test questions, then the evidence challenges.
 
-The three "if you say…" lines are the sharpest moment in the video and they are
-addressed straight at the viewer. Do not soften them and do not bury them under
-a graphic.
+The three "if you say…" lines are the sharpest moment in the video, and the
+follow-up "who disagreed first" is the one that makes it real. Do not soften
+them or bury them under a graphic.
 
-Then the written exercise: three or four chapters, the problem, the judgment,
-one piece of PERMITTED evidence, then circle the repeating verbs. The permitted
-qualifier is not optional.
+Then the written exercise, with the PERMITTED evidence qualifier intact.
 
-Close on the reassurance: if it still sounds disconnected, the problem may not
-be your path — you may just need better evidence behind the connection.""",
-# 10 Career Evidence Starter
-"""Timing: approximately 8:31.
+Then the honest limits: this will not make a hiring manager say yes, fix a
+market, make a change easy, or remove the relearning. What it removes is the
+part where the viewer's own experience works against them in the room.
 
-Calm and brief. This is the only invitation in the video, and it is the FREE
-Career Evidence Starter — not Keep the Proof, not the Capability Formation
-Field Kit.
+IDENTITY EXIT, at about 9:31: "I want you to stop apologising for a career that
+actually makes sense — and to be able to say what it built, plainly, without
+inventing a plan you never had."
 
-Exact invitation, verbatim from the v4.0 script:
+That is the point of the video. If the edit runs long, cut something else.""",
+"""Timing: approximately 9:50.
 
-"If you want to try this on one real accomplishment of yours, I made a free
-Career Evidence Starter. Set aside about 10 to 15 focused minutes and you will
-leave with one portable Proof Line. I've linked it below."
+Calm and brief. The only invitation in the video, and it is the FREE Career
+Evidence Starter — not Keep the Proof, not the Field Kit.
 
-Show the real Starter artwork. Use the direct public landing-page URL only —
-temidayoafonja.com/career-evidence-starter. Do not expose a PDF link.""",
-# 11 Watch Next
-"""Timing: approximately 8:48 to the end, about 9:20.
+It lands AFTER the identity bridge. Keep that order.
+
+Show the real Starter artwork. Direct public landing-page URL only — no PDF
+link.""",
+"""Timing: approximately 10:11 to the end, about 10:40.
 
 The card reads "Should I Make an Internal Move? 3 Questions to Decide" with the
-playlist line. That is the locked Video 5 title and it matches what Temidayo
-says.
+playlist line — the locked Video 5 title, matching what Temidayo says.
 
-Closing lines: "Your career does not have to look linear to make sense. But you
-do have to make the continuity visible." Stay on her for both.
+Closing lines: "Your career does not have to look linear to make sense. But
+somebody has to be able to hear it." Stay on her for both.
 
-Do not summarize this video again.
+Do not summarize the video again.
 
 The right side of the frame is left open for the YouTube linked-video
 end-screen element. Hold the final frame for at least 12 seconds. Do not leave
 Subscribe as the only end-screen element.""",
 ]
-
 FRAMES=[4,2,1,5,2,3,3,1,3,1,1]
-
 def reveal_notes():
     out=[]
     for s,(n,note) in enumerate(zip(FRAMES,NOTES),1):
@@ -177,8 +151,6 @@ def reveal_notes():
                   if n>1 else "Single-state frame — main slide %d."%s)
             out.append(head+"\n\n"+note)
     return out
-
 if __name__=="__main__":
-    r=reveal_notes()
-    assert len(NOTES)==11 and len(r)==26, (len(NOTES),len(r))
+    r=reveal_notes(); assert len(NOTES)==11 and len(r)==26,(len(NOTES),len(r))
     print("main notes:",len(NOTES)," reveal notes:",len(r))

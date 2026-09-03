@@ -1,23 +1,34 @@
-VIDEO 3 — FINAL RECORDING PACKAGE v4.0
+VIDEO 3 — v5.0 BELONGING + IDENTITY FINAL RECORDING PACKAGE
 
 Title:             3 Things to Do Before Quitting Your Job
 Thumbnail:         WAIT BEFORE YOU QUIT
-Strategic job:     Consequential decision / evidence check
-Core promise:      Help you make a cleaner decision before access changes.
 
-Voice:             Temidayo speaks to one experienced professional, not an
-                   abstract audience. The relationship is trusted
-                   practitioner to one viewer, never lecturer to a crowd.
+Identity promise:  Become the professional who closes a chapter properly -
+                   who walks out knowing what it built, what evidence
+                   stands behind it, and what the next move needs to use
+                   and needs to grow.
 
-Safety boundary:   If your health or safety is at risk, or you are facing
-                   harassment, discrimination or another urgent threat,
-                   nothing in this video is a reason to delay leaving. It
-                   is spoken in the opening, in full on slide 2, again in
-                   the decision reading and again in the pinned comment.
-                   Do not soften, shorten, move or cut any instance.
+Viewer recognition:Someone tired, angry, disappointed or simply done, who
+                   may already have decided, braced for another video
+                   telling them to be patient.
+
+Purpose:           NOT three reasons not to quit. If leaving is right, this
+                   helps them leave with clearer evidence and a better read
+                   of the next move.
+
+Safety boundary:   If health or safety is at risk, or the viewer is facing
+                   harassment or discrimination, nothing here is a reason to
+                   wait. Spoken in the first minute, in full on slide 2,
+                   again in the decision reading and again in the pinned
+                   comment. Do not soften, shorten, move or cut any
+                   instance.
 
 Evidence boundary: Preserve never means taking company material. Keep only
                    what you are entitled to keep.
+
+Personal proof:    Her own crossings and relearning only. NO personal
+                   job-loss or layoff story is established in the record,
+                   so none is used anywhere in this package.
 
 Memory structure:
   Preserve the evidence.
@@ -28,16 +39,15 @@ Primary CTA:       Career Decision Evidence Check
 CTA URL:           https://temidayoafonja.com/career-decisions
 CTA production
 gate:              SATISFIED
-Watch next:        How to Change Jobs Without Starting Your Career Over (Video 1)
+Watch next:        Video 1 — How to Change Jobs Without Starting Your Career Over
 
-Slides:            Visual design and on-slide copy unchanged. 13 main
-                   slides.
-Speaker notes:     Updated for v4.0.
-Reveal deck:       Visual design and reveal states unchanged. 27 frames.
-Shorts:            Four separately recorded scripts, revised for direct
-                   address.
-Description-only
-document:          Separate from this ZIP.
+Script:            Freshly written for v5.0. 1,446 spoken words, about 9:58 at
+                   145 words per minute.
+Slides:            UNCHANGED. All 13 slides were mapped against the new
+                   script and every one still serves it.
+Reveal deck:       UNCHANGED. 27 frames.
+Speaker notes:     Rewritten for the v5.0 narration.
+Shorts:            All four rewritten for v5.0.
 Editor directions: Separated from recording copy.
 
 ----------------------------------------------------------------------
@@ -46,74 +56,77 @@ WHAT EACH FILE IS
 
 LONG_FORM/
 
-  Video3TeleprompterScriptwithslidemarkers_HIT_v4.0.docx
-  Video3TeleprompterScriptwithslidemarkers_HIT_v4.0.txt
+  Video3TeleprompterScriptwithslidemarkers_HIT_v5.0.docx
+  Video3TeleprompterScriptwithslidemarkers_HIT_v5.0.txt
       Temidayo's recording copy. Spoken script in large text; slide markers
       in tinted bands. The markers are not spoken.
 
-  Video3ReadingScriptnomarkers_HIT_v4.0.docx
-  Video3ReadingScriptnomarkers_HIT_v4.0.txt
+  Video3ReadingScriptnomarkers_HIT_v5.0.docx
+  Video3ReadingScriptnomarkers_HIT_v5.0.txt
       The same spoken words with the slide markers removed.
 
-  Video_3_EDITOR_ONLY_HIT_Brief_v4.0.docx
-      For the editor. Locked metadata, the direct-address register, the
-      H.I.T. first-30-second map, the slide and reveal maps, the overlay
-      principle, the factual and tone boundaries, CTA and watch-next
-      routing, editing rhythm, the visual do-not-use list and the
-      speaker-note record. Not for the teleprompter.
+  Video_3_EDITOR_ONLY_HIT_Brief_v5.0.docx
+      For the editor. Fourteen sections, from the locked metadata and the
+      identity promise through the belonging beat, the first-30 H.I.T. map,
+      the slide and reveal maps, factual boundaries, the identity exit and
+      the notes record.
 
-  Video_3_Publishing_Package_HIT_v4.0.docx
+  Video_3_Publishing_Package_HIT_v5.0.docx
       Title, thumbnail, search language, the copy-ready description,
-      working chapter estimates and the pinned comment.
+      working chapter estimates, pinned comment and tag field.
 
 SHORTS/
 
-  Four recording documents, one per Short. These contain Temidayo's
-  recording copy and no editor directions.
+  Four recording documents. Recording copy only, no editor directions.
 
-  Video_3_Shorts_EDITOR_ONLY_HIT_Brief.docx
-      For the editor. On-screen hooks and visual treatment for all four.
+  Video_3_Shorts_EDITOR_ONLY_HIT_Brief_v5.0.docx
+      For the editor. Hooks and visual treatment for all four.
 
 ----------------------------------------------------------------------
 
 ALL FILES IN THIS PACKAGE
 
-  LONG_FORM/Video3ReadingScriptnomarkers_HIT_v4.0.docx
-  LONG_FORM/Video3ReadingScriptnomarkers_HIT_v4.0.txt
-  LONG_FORM/Video3TeleprompterScriptwithslidemarkers_HIT_v4.0.docx
-  LONG_FORM/Video3TeleprompterScriptwithslidemarkers_HIT_v4.0.txt
-  LONG_FORM/Video_3_EDITOR_ONLY_HIT_Brief_v4.0.docx
-  LONG_FORM/Video_3_Publishing_Package_HIT_v4.0.docx
-  SHORTS/Video_3_Short_1_Before_You_Lose_Context.docx
-  SHORTS/Video_3_Short_2_Keep_Proof_Not_Files.docx
-  SHORTS/Video_3_Short_3_Context_Disappears_Fast.docx
-  SHORTS/Video_3_Short_4_Three_Questions_Before_You_Quit.docx
-  SHORTS/Video_3_Shorts_EDITOR_ONLY_HIT_Brief.docx
+  LONG_FORM/Video3ReadingScriptnomarkers_HIT_v5.0.docx
+  LONG_FORM/Video3ReadingScriptnomarkers_HIT_v5.0.txt
+  LONG_FORM/Video3TeleprompterScriptwithslidemarkers_HIT_v5.0.docx
+  LONG_FORM/Video3TeleprompterScriptwithslidemarkers_HIT_v5.0.txt
+  LONG_FORM/Video_3_EDITOR_ONLY_HIT_Brief_v5.0.docx
+  LONG_FORM/Video_3_Publishing_Package_HIT_v5.0.docx
+  SHORTS/Video_3_Short_1_I_Am_Not_Going_To_Talk_You_Out_Of_It.docx
+  SHORTS/Video_3_Short_2_Keep_The_Proof_Not_The_Files.docx
+  SHORTS/Video_3_Short_3_A_New_Employer_Is_Not_A_New_Direction.docx
+  SHORTS/Video_3_Short_4_Three_Questions_Before_You_Resign.docx
+  SHORTS/Video_3_Shorts_EDITOR_ONLY_HIT_Brief_v5.0.docx
   README_FINAL.txt
   SHA256SUMS.txt
 
 ----------------------------------------------------------------------
 
-WORKING CHAPTER TIMESTAMPS
+WHAT v5.0 CHANGED
 
-The chapter timestamps in the publishing package are WORKING ESTIMATES
-derived from the script. They were not measured from an edit. The editor
-must replace every one of them from the finished cut before publishing.
+A genuine editorial rebuild, not a patch. The script was written fresh under
+the belonging-first register. It now opens by removing the thing the viewer
+is braced for - "I am not going to try to talk you out of it" - then refuses
+to pretend it knows their situation, then names the real cost of leaving
+unprepared. The safety boundary moved into the first minute. The three checks
+do not arrive until about 2:35. The video now ends on becoming someone who
+closes a chapter properly, rather than on a checklist.
+
+The prior v4.0 package is superseded. Its hashes are preserved here:
+  package ZIP 3cc786b4ca291d78962dae2f2ae54de3d94c790532791e4d19db65767527d41e
+  main deck   296d1fc8365fe72c4b68f51d5b7c9d190ac9f29db78beeccde8eb6e22e15ccb8
+  reveal deck 0f76384a14f6f4e1a8e82bc055dfeb2dcc09ce0b35c9c209f0f952f087f0195a
 
 ----------------------------------------------------------------------
 
-WHAT THIS REVISION CHANGED
+A SOURCE NOTE WORTH KEEPING
 
-This is a VOICE revision, not a rebuild. The three checks, every substantive
-claim, the safety boundary, the permitted-evidence boundary, the single CTA
-and the Watch Next route are all unchanged. 65 of the 108 prior spoken
-paragraphs are carried over verbatim; 44 were rewritten so that Temidayo is
-speaking to one experienced professional rather than to an abstract
-audience. No paragraph was deleted and no new claim was added.
-
-Prior locked package: v2.0, spoken word count 1,205,
-                      ZIP 2455a0d08105e3148215191e62ead6204c8e4cdf896525592a2983b8c14ea177.
-This package:         v4.0, spoken word count 1,251.
+The v5.0 brief allowed a more specific job-loss or transition story if an
+exact factual source were established. The repository was searched and no
+such source exists, so no job-loss story is used. The belonging beat is built
+from what is established: her own crossings between function and industry,
+the real relearning that came with them, and what she has watched happen to
+capable people who left a chapter with only exhaustion.
 
 ----------------------------------------------------------------------
 

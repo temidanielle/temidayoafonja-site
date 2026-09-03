@@ -710,6 +710,79 @@ patch, and the Video 6 description document already carried one before it.
 Video 4 gained a separate description-only document, so Videos 1 and 4 to 8
 now all follow that convention.
 
+### Videos 1–5 — v5.0 belonging-first rebuild, 3 September 2026
+
+A genuine editorial reopening under
+`Videos_1-5_Belonging_Identity_Full_Rebuild_Code_Prompt_v5.0.txt`. **All five
+spoken scripts were written from scratch.** The v4.0 scripts were not carried
+forward; they were used only as sources for established facts, teaching logic,
+boundaries, CTA, Watch Next and slide mapping.
+
+Every script now moves in the belonging order: the viewer's situation and the
+question underneath it, then a line that shows Temidayo has stood there,
+then her lived evidence as recognition rather than autobiography, then the
+interpretation — and only then the method. Each video ends on who the viewer is
+becoming, with the identity bridge placed **before** the CTA so the resource
+reads as a next step rather than an advert.
+
+| Video | Words | Runtime | Method arrives | Identity bridge | Slides / reveals |
+|---|---|---|---|---|---|
+| 1 | 1,727 | 11:54 | 3:09 | 9:22 | 13 / 22 |
+| 2 | 1,632 | 11:15 | 2:50 | 10:01 | 13 / 23 |
+| 3 | 1,446 | 9:58 | 2:35 | 8:42 | 13 / 27 |
+| 4 | 1,548 | 10:40 | 2:28 | 9:31 | 11 / 26 |
+| 5 | 1,804 | 12:26 | 1:49 | 11:06 | 12 / 25 |
+
+**230 QA checks across the five videos pass, 0 failures.** All twenty Shorts
+were rewritten. Every editor brief carries the fourteen required sections
+including the identity promise and the identity exit.
+
+**Slides were authorised to change under v5.0 and did not need to.** Every
+marker in all five videos was mapped against its deck and every slide still
+serves the new script, so no slide text was changed anywhere. Only notes
+changed — 62 main and 123 reveal notes parts across the ten decks — with no
+slide XML, media, rels or theme part touched in any file.
+
+#### Three source findings, recorded so they are not re-litigated
+
+The v5.0 brief allowed several stories only if an exact source were
+established. The repository was searched and:
+
+1. **The Uber-driving transition story has no source anywhere** in
+   `deliverables/` or `docs/`. It was not used.
+2. **No specific personal job-loss or layoff story is established** for
+   Temidayo. "Layoff" appears only as a generic category and as a future video
+   title. Video 3's belonging beat was therefore built from what *is*
+   established: her own crossings between function and industry, the real
+   relearning that came with them, and what she has observed happen to capable
+   people who left a chapter with only exhaustion.
+3. **"Executive 1:1s" is not established** and was not used.
+
+If a source for the first two is supplied later, Video 3's opening in
+particular could be rebuilt around it.
+
+#### Videos 1–5 v5.0 hashes
+
+| Video | Package ZIP | Description DOCX | Main deck | Reveal deck | Preview PDF |
+|---|---|---|---|---|---|
+| 1 | `df0bcad5d34ecfe703a9a9501d1cd5970cd8426180db68dc7d5da7ce48bca731` | `118e81fc6192f5a87a83d5da2808c6d4ee03aa668456f3a389c0ef8a3929c77e` | `6f5099f45fcd52c7133397935308f6c23c5ee4cd12f2573ed94a66a87da52dec` | `64ee9a7f2a773cf8f64d22c30249eb44c53311bc54d6c06153ba8cbbddb112f7` | `af4e763c0cdf56f758571b0a655c76aaf92fffabbbac082d49920a21e2c2bf3c` |
+| 2 | `87d336b72fb44e32aaeabcec36c224b6b38f14f33304f4309902419481c3f9b8` | `d9d41cf2eff06c8c94b0437c248ffd861661a246af245e90036df9794593cf3d` | `dcef2ae32d28e88db3044f05505f67ae8b83a5ba448ae2ae39623663ddbdce2e` | `6b03213abf25bd603fd6961a4aef0bcd3b1b0c89c33f2e986de5dc4fe445b578` | `7917d0fafcc77d557d394e59427c37e5d6813cd2c28a210e35a0bc8415a190b0` |
+| 3 | `2cd564565df7232a6dbf05918f11127dfcea46f299eba1402d68423292ce7b05` | `7e30e2719ff36898d51e8a9dd283639f5bb6c49828b3162d223b6ebf394a6196` | `a21b8b91a6b88003e39e4cfd213b2a1ec727dc768e0206cddf255cadd897dad3` | `d87749b90e9cdd4e590ebda7d53f37841f7ee7b1e553738722fe35dc3d38efa8` | `76f3bd78be4151e9adb5fcdec6b399e2f255feacec6e703deb74175b4e274ec4` |
+| 4 | `1f59e2ba88c5c37b9363005030e037ce6d777bd0108d23c29a6f84fb2e2570d2` | `ffebddc71472acb09d57aa1aa165387d0bb931388b08abd649b7b5078279a4f6` | `5eb8c3c4baa400dab32747cd90a24204ae1637b62439dd34ae971b3657573858` | `7130690f9c0e0179c613501f4452188c120eb00957f73150fff361806894cae4` | `da482aff3ce4d4253c9f0d5417fddb53688207d24d0d9f6a72ca5b6a77f1b832` |
+| 5 | `28b5facd8cb85b385785be99dec783f29203428ec2205f69ba74ecd4babaaca0` | `a94106338d41817487e80c03fcf223d3d2bb509373950ad60bcd76be6a15a345` | `719b4f510adb820d3c5479270006b481f65d3aea21753854bc8c7f53c933bca7` | `449a44bc35b3f1edc18013d44b5f202af2bf7c08657957d8ca08d92fafa4fe24` | `b8443372b168308bc188863be45f903349f63246ab2c7af0a82913dfdfc5bdb1` |
+
+Prior v4.0 package hashes are preserved in each README change record: Video 1
+`fe9d1d6a…`, Video 2 `123ff006…`, Video 3 `3cc786b4…`, Video 4 `245fd3be…`,
+Video 5 `da93ca06…`.
+
+**VIDEOS 1–5 — FINAL + LOCKED UNDER BELONGING-FIRST + IDENTITY-TRANSFORMATION +
+H.I.T. + DIRECT-ADDRESS REGISTER.**
+
+Two Video 2 publishing assets remain open, neither a recording blocker: the
+approved Canva thumbnail export for `VALUABLE HERE. STUCK HERE?`, and a clean
+slide-preview PDF re-export from an environment that resolves the brand fonts
+correctly.
+
 ### Videos 1–5 — v4.0 unified rebuild, 3 September 2026
 
 Rebuilt and reconciled under the compiled v4.0 register: **H.I.T. + direct
@@ -838,7 +911,7 @@ part changed in any of the six decks; only notes parts changed.
 
 | State | Videos |
 |---|---|
-| FINAL + LOCKED UNDER THE v4.0 REGISTER | 1, 2, 3, 4, 5 |
+| FINAL + LOCKED UNDER THE v5.0 BELONGING + IDENTITY REGISTER | 1, 2, 3, 4, 5 |
 | FINAL + LOCKED FOR RECORDING | 6, 7, 8 |
 
 Videos 7 and 8 completed their H.I.T. rebuilds on 1 September 2026 and are

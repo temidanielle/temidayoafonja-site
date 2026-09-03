@@ -1,40 +1,39 @@
-VIDEO 4 — FINAL RECORDING PACKAGE v4.0
+VIDEO 4 — v5.0 BELONGING + IDENTITY FINAL RECORDING PACKAGE
 
 Title:             How to Explain Your Career Change
 Thumbnail:         YOUR CAREER MAKES SENSE
-Strategic job:     Searchable problem + personal evidence
-Core distinction:  Chronology tells where you have been. A portability
-                   explanation shows what travelled.
 
-Voice:             Temidayo speaks to one experienced professional, not an
-                   abstract audience. This video is about explaining
-                   yourself to another person, so it is the most
-                   conversational in the series.
+Identity promise:  Become the professional who can explain a nonlinear
+                   career without apologising for it and without inventing
+                   a plan they never had.
 
-Personal proof:    A senior colleague once called Temidayo a cat with nine
-                   lives, meaning her career kept moving into work that
-                   looked unrelated. That is the whole approved fact. The
-                   employer is not named publicly, the original
-                   conversation is not invented, and no cat imagery is used
-                   anywhere.
+Viewer recognition:Someone looking at their own CV thinking: this makes
+                   sense to me because I lived it, and I am not sure it
+                   makes sense to anyone else.
+
+Personal proof:    A senior-manager friend at EY used to joke that Temidayo
+                   was a cat with nine lives. That is the whole approved
+                   fact. The original conversation is not invented and NO
+                   cat imagery is used anywhere. Plus the December 2008
+                   accounting degree and financial-crisis context, and her
+                   own admission that she used to explain it badly.
 
 Memory structure:  The three-sentence career explanation.
-  “My career has moved across…”
-  “Across those chapters, I kept being asked to…”
-  “That is why I am now focused on…”
+  "My career has moved across..."
+  "Across those chapters, I kept being asked to..."
+  "That is why I am now focused on..."
 
 Primary CTA:       Free Career Evidence Starter
 CTA URL:           https://temidayoafonja.com/career-evidence-starter
-Watch next:        Should I Make an Internal Move? 3 Questions to Decide
+Watch next:        Video 5 — Should I Make an Internal Move? 3 Questions to Decide
 
-Slides:            Visual design and on-slide copy unchanged. 11 main
-                   slides.
-Speaker notes:     Updated for v4.0.
-Reveal deck:       Visual design and reveal states unchanged. 26 frames.
-Shorts:            Four separately recorded scripts, revised for direct
-                   address.
-Description-only
-document:          Separate from this ZIP.
+Script:            Freshly written for v5.0. 1,548 spoken words, about 10:40 at
+                   145 words per minute.
+Slides:            UNCHANGED. All 11 slides were mapped against the new
+                   script and every one still serves it.
+Reveal deck:       UNCHANGED. 26 frames.
+Speaker notes:     Rewritten for the v5.0 narration.
+Shorts:            All four rewritten for v5.0.
 Editor directions: Separated from recording copy.
 
 ----------------------------------------------------------------------
@@ -43,88 +42,77 @@ WHAT EACH FILE IS
 
 LONG_FORM/
 
-  Video4TeleprompterScriptwithslidemarkers_HIT_v4.0.docx
-  Video4TeleprompterScriptwithslidemarkers_HIT_v4.0.txt
+  Video4TeleprompterScriptwithslidemarkers_HIT_v5.0.docx
+  Video4TeleprompterScriptwithslidemarkers_HIT_v5.0.txt
       Temidayo's recording copy. Spoken script in large text; slide markers
       in tinted bands. The markers are not spoken.
 
-  Video4ReadingScriptnomarkers_HIT_v4.0.docx
-  Video4ReadingScriptnomarkers_HIT_v4.0.txt
+  Video4ReadingScriptnomarkers_HIT_v5.0.docx
+  Video4ReadingScriptnomarkers_HIT_v5.0.txt
       The same spoken words with the slide markers removed.
 
-  Video_4_EDITOR_ONLY_HIT_Brief_v4.0.docx
-      For the editor. Locked metadata, the direct-address register, the
-      H.I.T. first-30-second map, the slide and reveal maps, the overlay
-      principle, the factual and tone boundaries, CTA and watch-next
-      routing, editing rhythm, the visual do-not-use list and the
-      speaker-note record. Not for the teleprompter.
+  Video_4_EDITOR_ONLY_HIT_Brief_v5.0.docx
+      For the editor. Fourteen sections, from the locked metadata and the
+      identity promise through the belonging beat, the first-30 H.I.T. map,
+      the slide and reveal maps, factual boundaries, the identity exit and
+      the notes record.
 
-  Video_4_Publishing_Package_HIT_v4.0.docx
+  Video_4_Publishing_Package_HIT_v5.0.docx
       Title, thumbnail, search language, the copy-ready description,
-      working chapter estimates and the pinned comment.
+      working chapter estimates, pinned comment and tag field.
 
 SHORTS/
 
-  Four recording documents, one per Short. These contain Temidayo's
-  recording copy and no editor directions.
+  Four recording documents. Recording copy only, no editor directions.
 
-  Video_4_Shorts_EDITOR_ONLY_HIT_Brief.docx
-      For the editor. On-screen hooks and visual treatment for all four.
+  Video_4_Shorts_EDITOR_ONLY_HIT_Brief_v5.0.docx
+      For the editor. Hooks and visual treatment for all four.
 
 ----------------------------------------------------------------------
 
 ALL FILES IN THIS PACKAGE
 
-  LONG_FORM/Video4ReadingScriptnomarkers_HIT_v4.0.docx
-  LONG_FORM/Video4ReadingScriptnomarkers_HIT_v4.0.txt
-  LONG_FORM/Video4TeleprompterScriptwithslidemarkers_HIT_v4.0.docx
-  LONG_FORM/Video4TeleprompterScriptwithslidemarkers_HIT_v4.0.txt
-  LONG_FORM/Video_4_EDITOR_ONLY_HIT_Brief_v4.0.docx
-  LONG_FORM/Video_4_Publishing_Package_HIT_v4.0.docx
-  SHORTS/Video_4_Short_1_Cat_With_Nine_Lives.docx
-  SHORTS/Video_4_Short_2_Chronology_Not_Explanation.docx
-  SHORTS/Video_4_Short_3_Not_A_Perfect_Plan.docx
+  LONG_FORM/Video4ReadingScriptnomarkers_HIT_v5.0.docx
+  LONG_FORM/Video4ReadingScriptnomarkers_HIT_v5.0.txt
+  LONG_FORM/Video4TeleprompterScriptwithslidemarkers_HIT_v5.0.docx
+  LONG_FORM/Video4TeleprompterScriptwithslidemarkers_HIT_v5.0.txt
+  LONG_FORM/Video_4_EDITOR_ONLY_HIT_Brief_v5.0.docx
+  LONG_FORM/Video_4_Publishing_Package_HIT_v5.0.docx
+  SHORTS/Video_4_Short_1_It_Is_Not_Landing.docx
+  SHORTS/Video_4_Short_2_Chronology_Is_Not_Explanation.docx
+  SHORTS/Video_4_Short_3_Context_Is_Not_An_Apology.docx
   SHORTS/Video_4_Short_4_Three_Sentences.docx
-  SHORTS/Video_4_Shorts_EDITOR_ONLY_HIT_Brief.docx
+  SHORTS/Video_4_Shorts_EDITOR_ONLY_HIT_Brief_v5.0.docx
   README_FINAL.txt
   SHA256SUMS.txt
 
 ----------------------------------------------------------------------
 
-WORKING CHAPTER TIMESTAMPS
+WHAT v5.0 CHANGED
 
-The chapter timestamps in the publishing package are WORKING ESTIMATES
-derived from the script. They were not measured from an edit. The editor
-must replace every one of them from the finished cut before publishing.
+A genuine editorial rebuild, not a patch. The script was written fresh under
+the belonging-first register. It now opens inside the viewer's head - your CV
+makes sense to you because you lived it - and then in the exact moment the
+problem shows up, halfway into the second job, when you can hear it not
+landing. Temidayo names her own failure before offering a method. The three
+sentences do not arrive until about 2:28. The video ends on no longer
+apologising for a career that makes sense.
 
-----------------------------------------------------------------------
-
-WHAT THIS REVISION CHANGED
-
-This is a VOICE revision, not a rebuild. The three-sentence method, every
-substantive claim, the cat-with-nine-lives boundary, the honesty boundary,
-the single CTA and the Watch Next route are all unchanged. 78 of the 120
-prior spoken paragraphs are carried over verbatim; 44 were rewritten and 1
-coaching line was added so that Temidayo is speaking to one experienced
-professional rather than to an abstract audience. No paragraph was deleted
-and no new claim was added.
-
-Prior locked package: v2.1, spoken word count 1,261,
-                      ZIP 6d9e8339a83a463ad231db8d180f6bb27025b07f41fd4bfc914778ea5f602684.
-This package:         v4.0, spoken word count 1,355.
+The prior v4.0 package is superseded. Its hashes are preserved here:
+  package ZIP 245fd3be2e15090fb6f7bf86d0b5eea9332ab7d8f2171d8a9d48bef99463674d
+  main deck   cd9b7b80fa2860b313ce19c501b601b2e69f9e6ed538adeeec56957673ff271f
+  reveal deck 04cdf28e49d46d754f7db482697cd36d054f047bda7e64d6caadce955eb5bb1e
 
 ----------------------------------------------------------------------
 
 BOUNDARIES THAT DID NOT MOVE
 
-Not everything transfers. Different roles, functions and industries can
-require real relearning, and the script says so more than once. Coherence is
-never a claim that every move was strategic. The 2008 financial-crisis
-context stays exactly as spoken and no further detail is added.
-
-The Free Career Evidence Starter is the only CTA. Keep the Proof is NOT
-restored. Only the direct public landing-page URL is used; no PDF link is
-exposed.
+The cat-with-nine-lives joke is the whole fact. No invented conversation, no
+scripted words for the friend, no cat imagery. The 2008 financial-crisis
+context stays exactly as spoken. Not every move was planned and not
+everything transfers - both are said out loud. The Free Career Evidence
+Starter is the only CTA and Keep the Proof is NOT restored; only the direct
+public landing-page URL is used.
 
 ----------------------------------------------------------------------
 

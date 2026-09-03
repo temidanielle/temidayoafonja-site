@@ -294,6 +294,43 @@ package (1,403 words) and `Video_5_Code_Prompt_HIT_Final.txt`, and the earlier
 1,639-word script are all **SUPERSEDED** and retained only as historical
 reference.
 
+**VIDEOS 1–5 ARE FINAL AND LOCKED UNDER THE v5.0 BELONGING + IDENTITY
+REGISTER** as of 3 September 2026. All five spoken scripts were rewritten from
+scratch. 230 QA checks pass.
+
+**Belonging before instruction is now the channel standard.** People must feel
+identified before they feel educated. Every long-form moves through
+recognition, belonging, lived evidence, interpretation, method, application and
+limit, identity, and one earned CTA — in that order. A story, a lived moment or
+a concrete contradiction opens the doorway *before* any framework arrives; in
+practice the method now lands between 1:49 and 3:09, never in the first minute.
+Stories are recognition infrastructure, not autobiography: Temidayo is evidence,
+not the hero, and any cut that makes her the subject rather than the proof is
+the wrong cut.
+
+**Every video must end on who the viewer is becoming.** Not "here are the
+steps" and not "use this tool". Each of the five carries its own future-self
+line, never a repeated formula, and it is placed *before* the CTA so the
+resource reads as the next step in that transformation rather than an
+interruption.
+
+**Certainty without overclaiming.** Temidayo is certain about what the method
+controls — recognising value, preserving evidence, translating experience,
+naming what travels and what does not, deciding what must be relearned. She
+promises nothing about layoffs, restructures, markets, hiring cycles,
+discrimination, health, caregiving, geography or immigration. Every v5.0 script
+names its own limits out loud, and that refusal is what makes the rest
+credible.
+
+**Simple language, written for the ear.** Public category first, specific proof
+second. Ordinary words before specialist ones. No consulting cadence, no HR or
+enterprise jargon, no stacked nouns, no unnecessary acronyms. The QA runs a
+long-word and jargon sweep on every script.
+
+Slides became changeable under v5.0 and still did not need to change: all five
+decks were mapped against their new scripts and every slide continued to serve
+the story, so notes-only updates were made across all ten decks.
+
 **VIDEOS 1–5 ARE FINAL AND LOCKED UNDER THE v4.0 REGISTER** as of 3 September
 2026: H.I.T. + direct address + differentiation + multi-layer hook system + one
 memorable teaching structure + factual discipline + one primary CTA. 200 QA

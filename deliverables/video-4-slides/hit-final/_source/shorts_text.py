@@ -1,66 +1,66 @@
 # -*- coding: utf-8 -*-
-"""Video 4 Shorts, revised into the direct-address register.
-Roles, the cat-with-nine-lives fact, the December 2008 context, the
-not-everything-transfers boundary and Related Video routing are unchanged."""
+"""Video 4 Shorts — freshly written for v5.0. The cat-with-nine-lives joke is
+the whole established fact: an EY senior-manager friend used to joke it. The
+original conversation is never invented and no cat imagery is used anywhere."""
 
 SHORTS = [
- ("Video_4_Short_1_Cat_With_Nine_Lives.docx","Recognition / story",
-  "A senior colleague once called me a cat with nine lives.",
-  ["A senior colleague once called me a cat with nine lives.",
-   "She meant my career kept moving into work that looked unrelated.",
-   "And for a while, the way I explained it made it sound even more "
-   "disconnected.",
-   "I would list the jobs.",
-   "The functions.",
-   "The industries.",
-   "And I was leaving the person listening to work out what connected them.",
-   "That is what changed for me, and it is what I want to help you change.",
-   "The career was not necessarily the problem.",
-   "The explanation was.",
-   "Your nonlinear career can make sense without pretending it was perfectly "
-   "planned.",
-   "You just have to make what traveled between your chapters easier to hear."]),
- ("Video_4_Short_2_Chronology_Not_Explanation.docx","Distinction / myth",
-  "A chronology is not the same as a career explanation.",
-  ["A chronology is not the same as a career explanation.",
-   "Chronology tells me where you have been.",
-   "A useful career explanation tells me what traveled with you.",
-   "If you only list titles, companies and industries, I know your sequence.",
-   "I still may not know what you became able to do.",
-   "So after the chronology, I want you to ask:",
-   "What kind of work kept finding me?",
-   "What judgment did people repeatedly trust me to use?",
-   "And what stayed useful when the context changed?",
-   "That is usually where a nonlinear career starts to make sense."]),
- ("Video_4_Short_3_Not_A_Perfect_Plan.docx","Proof / honesty",
-  "Let me show you why my career was not a carefully designed portfolio career.",
-  ["Let me show you why my career was not a carefully designed portfolio "
-   "career.",
-   "I graduated with an accounting degree in December 2008, during the "
-   "financial crisis.",
-   "So the first turn was already shaped by a market I did not control.",
-   "That matters to you, because career coherence is not the same as "
-   "pretending every move was strategic.",
-   "Some moves happen because of markets, caregiving, health, compensation, "
-   "restructuring or an unexpected opportunity.",
-   "You do not need to rewrite your history.",
-   "Name the context honestly.",
-   "Then ask what that chapter taught you to do that stayed useful later.",
-   "Context can explain a transition without becoming an apology."]),
+ ("Video_4_Short_1_It_Is_Not_Landing.docx","Recognition / story",
+  "Your CV makes sense to you, because you lived it.",
+  ["Your CV makes sense to you, because you lived it.",
+   "Then someone asks you to walk them through it, and halfway into the second "
+   "job you can hear it.",
+   "It is not landing.",
+   "A senior-manager friend at EY used to joke that I was a cat with nine "
+   "lives, because my career kept turning up somewhere that looked unrelated "
+   "to the last place.",
+   "And for a long time, the way I explained it made it sound even more "
+   "scattered than it was.",
+   "I was handing people a pile of parts and asking them to assemble it.",
+   "They could not. They were not there.",
+   "The career was not the problem.",
+   "The explanation was."]),
+ ("Video_4_Short_2_Chronology_Is_Not_Explanation.docx","Distinction / myth",
+  "A chronology is not a career explanation.",
+  ["A chronology is not a career explanation.",
+   "A chronology tells me where you have been.",
+   "An explanation tells me what came with you.",
+   "If your path is a straight line, the chronology does the work on its own. "
+   "The next step obviously follows the last one.",
+   "If your path is not straight, the chronology works against you.",
+   "Every jump is one more thing the listener has to explain to themselves, "
+   "and people who cannot explain something usually just move on.",
+   "So give them enough to get oriented.",
+   "Then tell them what the work kept requiring you to become."]),
+ ("Video_4_Short_3_Context_Is_Not_An_Apology.docx","Proof / personal evidence",
+  "Let me show you why my career was never a designed plan.",
+  ["Let me show you why my career was never a designed plan.",
+   "I finished an accounting degree in December 2008, in the middle of the "
+   "financial crisis, and I took the door that was open.",
+   "That first turn was not strategy. It was a market.",
+   "And saying that out loud costs me nothing.",
+   "Because a career story does not become coherent by pretending every move "
+   "was deliberate.",
+   "Some moves answer a market. Some happen because of caregiving, or health, "
+   "or money, or a restructure.",
+   "If one of your chapters does not fit a tidy progression, leave it untidy.",
+   "Say what made it necessary. Say what became clearer. Say what you carried "
+   "out of it.",
+   "Context explains a transition. It is not an apology."]),
  ("Video_4_Short_4_Three_Sentences.docx","Practical test / action",
-  "Use these three sentences to explain a career change.",
-  ["Use these three sentences to explain a career change.",
-   "“My career has moved across…”",
-   "“Across those chapters, I kept being asked to…”",
-   "“That is why I am now focused on…”",
-   "Your first sentence gives the chronology.",
-   "The second makes the repeated work visible.",
-   "The third explains your direction.",
-   "But there is one rule I want you to keep:",
-   "Do not put a verb in the second sentence unless you have evidence behind "
-   "it.",
-   "If you say you translate complexity, build alignment or solve ambiguous "
-   "problems, be ready to show where your work actually required you to do "
-   "that.",
-   "That is what makes your explanation credible."]),
+  "Three sentences will explain a career change better than a chronology will.",
+  ["Three sentences will explain a career change better than a chronology "
+   "will.",
+   "My career has moved across…",
+   "Across those chapters, I kept being asked to…",
+   "That is why I am now focused on…",
+   "The first gives them orientation. The second finds the work that "
+   "repeated. The third is where the past stops being a list and starts "
+   "pointing somewhere.",
+   "But there is one rule.",
+   "Do not put a verb in the second sentence unless you have evidence "
+   "underneath it.",
+   "If you say you translate complexity, be ready to say when that changed a "
+   "decision.",
+   "Now say all three out loud about your own career.",
+   "You will hear immediately which one you cannot finish yet."]),
 ]

@@ -1,177 +1,207 @@
 {
  "checks": {
-  "C1": {
-   "check": "Teleprompter TXT == v4.0 canonical",
+  "B1": {
+   "check": "First 15s carries a recognizable viewer situation",
+   "pass": true,
+   "detail": "If you are seriously thinking about quitting, I am not going to try to talk you out of it. That is not what th"
+  },
+  "B2": {
+   "check": "First 30s is not abstract theory",
+   "pass": true,
+   "detail": "If you are seriously thinking about quitting, I am not going to try to talk you "
+  },
+  "B3": {
+   "check": "Payoff is clear by 30 seconds",
+   "pass": true,
+   "detail": "than they earned, and they only find out later. So before you resign, there are three things I want you to do."
+  },
+  "B4": {
+   "check": "Trust / lived evidence present by ~60 seconds",
+   "pass": true,
+   "detail": " reason to wait. Get yourself out and get proper support. None of what follows is worth a single week of that."
+  },
+  "B5": {
+   "check": "Belonging line present before the method",
    "pass": true,
    "detail": ""
   },
-  "C2": {
-   "check": "Reading TXT == canonical spoken",
+  "B6": {
+   "check": "Personal evidence illuminates the viewer, not Temidayo",
+   "pass": true,
+   "detail": "you=111  I=28"
+  },
+  "B7": {
+   "check": "An interpretation follows the story",
    "pass": true,
    "detail": ""
   },
-  "C3": {
-   "check": "Teleprompter minus markers == reading script",
+  "B8": {
+   "check": "Framework arrives after recognition",
+   "pass": true,
+   "detail": "method at 156s"
+  },
+  "B9": {
+   "check": "Teaches a meaningful limit",
    "pass": true,
    "detail": ""
   },
-  "C4": {
-   "check": "Teleprompter DOCX == TXT",
+  "B10": {
+   "check": "Contains a future-self / identity bridge",
    "pass": true,
    "detail": ""
   },
-  "C5": {
-   "check": "Reading DOCX == TXT",
+  "B11": {
+   "check": "Identity bridge is specific to this video",
+   "pass": true,
+   "detail": "become someone who closes a chapter properly"
+  },
+  "B12": {
+   "check": "Does not overpromise control of external conditions",
    "pass": true,
    "detail": ""
-  },
-  "C6": {
-   "check": "Marker count preserved",
-   "pass": true,
-   "detail": "13"
-  },
-  "C7": {
-   "check": "No paragraph removed",
-   "pass": true,
-   "detail": "0"
-  },
-  "C8": {
-   "check": "No unsupported factual claim added",
-   "pass": true,
-   "detail": ""
-  },
-  "D1": {
-   "check": "No detached phrasing",
-   "pass": true,
-   "detail": "[]"
-  },
-  "D2": {
-   "check": "Viewer-facing second person",
-   "pass": true,
-   "detail": "53/60 = 88%"
-  },
-  "D3": {
-   "check": "First-person bridges present",
-   "pass": true,
-   "detail": "{'i want to help you': 1, 'i want you to': 3}"
-  },
-  "D4": {
-   "check": "'experienced professionals' is positioning",
-   "pass": true,
-   "detail": "1"
-  },
-  "D5": {
-   "check": "Not mechanically repetitive",
-   "pass": true,
-   "detail": "61%"
-  },
-  "D6": {
-   "check": "No keynote tone",
-   "pass": true,
-   "detail": ""
-  },
-  "H1": {
-   "check": "No hype or creator-bait phrasing",
-   "pass": true,
-   "detail": "[]"
-  },
-  "H2": {
-   "check": "'warning' occurrences justified",
-   "pass": true,
-   "detail": "none"
-  },
-  "H3": {
-   "check": "Editor brief names the first-30 audit table",
-   "pass": true,
-   "detail": ""
-  },
-  "H4": {
-   "check": "Editor brief names all five hook layers",
-   "pass": true,
-   "detail": ""
-  },
-  "H5": {
-   "check": "Shorts brief gives every Short a hook and a route",
-   "pass": true,
-   "detail": "4 hooks, 5 routes"
-  },
-  "M1": {
-   "check": "One memory structure, stated in plain language",
-   "pass": true,
-   "detail": "[]"
-  },
-  "M2": {
-   "check": "No second framework",
-   "pass": true,
-   "detail": ""
-  },
-  "T1": {
-   "check": "Title exact",
-   "pass": true,
-   "detail": ""
-  },
-  "T2": {
-   "check": "Thumbnail exact",
-   "pass": true,
-   "detail": ""
-  },
-  "T3": {
-   "check": "One primary CTA",
-   "pass": true,
-   "detail": "[]"
-  },
-  "T4": {
-   "check": "Watch Next correct",
-   "pass": true,
-   "detail": ""
-  },
-  "E1": {
-   "check": "Emoji system present",
-   "pass": true,
-   "detail": ""
-  },
-  "E2": {
-   "check": "Tag field present in both",
-   "pass": true,
-   "detail": ""
-  },
-  "E3": {
-   "check": "No [INSERT] placeholder",
-   "pass": true,
-   "detail": ""
-  },
-  "E4": {
-   "check": "Public block identical in both docs",
-   "pass": true,
-   "detail": ""
-  },
-  "E5": {
-   "check": "Working estimates flagged outside public copy",
-   "pass": true,
-   "detail": ""
-  },
-  "E6": {
-   "check": "Shorts recording docs are spoken copy only",
-   "pass": true,
-   "detail": "[]"
   },
   "S1": {
-   "check": "Main slide count",
+   "check": "Simple-language test",
    "pass": true,
-   "detail": "13"
+   "detail": "[]"
   },
   "S2": {
-   "check": "Reveal frame count",
+   "check": "No consulting or HR jargon",
    "pass": true,
-   "detail": "27"
+   "detail": "[]"
   },
   "S3": {
-   "check": "No slide XML, media or rels change",
+   "check": "One person across the table \u2014 no detached phrasing",
    "pass": true,
    "detail": "[]"
   },
   "S4": {
-   "check": "All notes parts carry v4.0 notes",
+   "check": "No keynote or article voice",
+   "pass": true,
+   "detail": ""
+  },
+  "S5": {
+   "check": "Direct address carries the viewer-facing content",
+   "pass": true,
+   "detail": "48/57 = 84%"
+  },
+  "H1": {
+   "check": "No hype or creator bait",
+   "pass": true,
+   "detail": "[]"
+  },
+  "C1": {
+   "check": "One primary CTA",
+   "pass": true,
+   "detail": "[]"
+  },
+  "C2": {
+   "check": "CTA reads as the next step, not an interruption",
+   "pass": true,
+   "detail": ""
+  },
+  "C3": {
+   "check": "Watch Next correct",
+   "pass": true,
+   "detail": ""
+  },
+  "M1": {
+   "check": "Memory device preserved, no new framework",
+   "pass": true,
+   "detail": "[]"
+  },
+  "F1": {
+   "check": "Factual boundaries held",
+   "pass": true,
+   "detail": "[]"
+  },
+  "X1": {
+   "check": "Marker count matches deck",
+   "pass": true,
+   "detail": "13"
+  },
+  "X2": {
+   "check": "Runtime in the 9-12 minute band",
+   "pass": true,
+   "detail": "1446 words, 9:58"
+  },
+  "SH1": {
+   "check": "Four Shorts, all rewritten for v5.0",
+   "pass": true,
+   "detail": "4"
+  },
+  "SH2": {
+   "check": "Every Short speaks to one viewer",
+   "pass": true,
+   "detail": ""
+  },
+  "SH3": {
+   "check": "Shorts recording docs are spoken copy only",
+   "pass": true,
+   "detail": "[]"
+  },
+  "SH4": {
+   "check": "Shorts brief gives each Short a hook and a route",
+   "pass": true,
+   "detail": ""
+  },
+  "EB1": {
+   "check": "Editor brief carries all fourteen sections",
+   "pass": true,
+   "detail": "[]"
+  },
+  "EB2": {
+   "check": "Editor brief carries the identity promise and exit",
+   "pass": true,
+   "detail": ""
+  },
+  "D1": {
+   "check": "Emoji system present in both docs",
+   "pass": true,
+   "detail": ""
+  },
+  "D2": {
+   "check": "Public block identical in both docs",
+   "pass": true,
+   "detail": ""
+  },
+  "D3": {
+   "check": "No [INSERT] placeholder",
+   "pass": true,
+   "detail": ""
+  },
+  "D4": {
+   "check": "Working estimates flagged outside public copy",
+   "pass": true,
+   "detail": ""
+  },
+  "D5": {
+   "check": "Tag field in both docs",
+   "pass": true,
+   "detail": ""
+  },
+  "D6": {
+   "check": "Pinned comment invites self-recognition",
+   "pass": true,
+   "detail": ""
+  },
+  "P1": {
+   "check": "Main slide count",
+   "pass": true,
+   "detail": "13"
+  },
+  "P2": {
+   "check": "Reveal frame count",
+   "pass": true,
+   "detail": "27"
+  },
+  "P3": {
+   "check": "No slide XML, media or rels change",
+   "pass": true,
+   "detail": ""
+  },
+  "P4": {
+   "check": "All notes parts carry v5.0 narration",
    "pass": true,
    "detail": "40"
   },
@@ -181,7 +211,7 @@
    "detail": "13"
   },
   "Z2": {
-   "check": "No _source, Python, QA or render files in ZIP",
+   "check": "No source, Python, QA or render files in ZIP",
    "pass": true,
    "detail": ""
   },
@@ -193,7 +223,7 @@
   "Z4": {
    "check": "sha256sum -c successful",
    "pass": true,
-   "detail": "appears_Fast.docx: OK\nSHORTS/Video_3_Short_4_Three_Questions_Before_You_Quit.docx: OK\nSHORTS/Video_3_Shorts_EDITOR_ONLY_HIT_Brief.docx: OK\nREADME_FINAL.txt: OK\n"
+   "detail": "S/Video_3_Short_4_Three_Questions_Before_You_Resign.docx: OK\nSHORTS/Video_3_Shorts_EDITOR_ONLY_HIT_Brief_v5.0.docx: OK\nREADME_FINAL.txt: OK\n"
   },
   "Z5": {
    "check": "Sibling checksum matches",
@@ -202,33 +232,19 @@
   }
  },
  "failures": [],
- "change": {
-  "unchanged": 108,
-  "changed": 0,
-  "inserted": 0,
-  "removed": 0
- },
- "voice": {
-  "viewer_facing": 60,
-  "second_person": 53,
-  "ratio": 0.883
- },
- "words": 1251,
+ "words": 1446,
  "markers": 13,
  "slides": 13,
  "frames": 27,
- "prior_ver": "v3.0 direct address",
- "prior_zip": "62af1ca5d1c2096a61309d7d0529e761c07af2237521c2e18ad51c821e890874",
- "prior_source": "Video3TeleprompterScriptwithslidemarkers_HIT_v4.0.txt",
- "notes_rewritten": {
-  "main": 3,
-  "reveal": 9
+ "notes": {
+  "main": 13,
+  "reveal": 27
  },
  "hashes": {
-  "zip": "3cc786b4ca291d78962dae2f2ae54de3d94c790532791e4d19db65767527d41e",
-  "desc": "bf3d98030c8da161d98e574de511f336b7dd8c1845cddc799f304225be477cd5",
-  "main": "296d1fc8365fe72c4b68f51d5b7c9d190ac9f29db78beeccde8eb6e22e15ccb8",
-  "reveal": "0f76384a14f6f4e1a8e82bc055dfeb2dcc09ce0b35c9c209f0f952f087f0195a",
+  "zip": "2cd564565df7232a6dbf05918f11127dfcea46f299eba1402d68423292ce7b05",
+  "desc": "7e30e2719ff36898d51e8a9dd283639f5bb6c49828b3162d223b6ebf394a6196",
+  "main": "a21b8b91a6b88003e39e4cfd213b2a1ec727dc768e0206cddf255cadd897dad3",
+  "reveal": "d87749b90e9cdd4e590ebda7d53f37841f7ee7b1e553738722fe35dc3d38efa8",
   "pdf": "76f3bd78be4151e9adb5fcdec6b399e2f255feacec6e703deb74175b4e274ec4"
  }
 }
