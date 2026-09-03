@@ -1,64 +1,67 @@
 # -*- coding: utf-8 -*-
-"""Video 1 Shorts, v4.0. Roles, the 47 to 75 measure, the led-with-my-team
-attribution and the not-everything-transfers boundary are unchanged; the voice
-moves into the direct-address register."""
+"""Video 1 Shorts — freshly written for v5.0. Recognition before teaching,
+one simple idea each. Factual boundaries carried exactly from the source
+record: the 47 to 75 measure is ONE measure of new-hire integration, from a
+redesign Temidayo led WITH HER TEAM."""
 
 SHORTS = [
- ("Video_1_Short_1_New_Context_Not_Zero.docx","Recognition",
-  "A new job does not make you new to everything.",
-  ["A new job does not make you new to everything.",
-   "It may make you new to a company, an industry, a set of regulations or a "
-   "particular way of working.",
-   "That is a real learning curve.",
-   "But it does not erase the problems you have learned to diagnose, the "
-   "decisions you can make, or the situations people already trust you to "
-   "handle.",
-   "So before you call yourself a beginner, ask:",
-   "What has my work made me able to do, and where else could that be useful?",
-   "Portability is not pretending that everything transfers.",
-   "It is knowing what you can carry and what you still need to learn."]),
- ("Video_1_Short_2_Experience_Needs_Evidence.docx","Distinction / myth",
-  "Years of experience do not automatically become portable.",
-  ["Years of experience do not automatically become portable just because you "
-   "have them.",
-   "Some of what you know depends on company systems, internal relationships "
-   "or industry context.",
-   "What travels is usually more specific:",
-   "Judgment you have demonstrated.",
-   "Problems you know how to solve.",
-   "And evidence another setting can understand.",
-   "So do not say, “I have twenty years of experience,” and stop there.",
-   "I want you to ask:",
-   "What can I now do because of those years?",
-   "Where have I demonstrated it?",
-   "And what would still be useful if the company language disappeared?",
-   "Your experience matters.",
-   "Evidence is what helps another context understand it."]),
- ("Video_1_Short_3_Result_Needs_Context.docx","Proof / personal evidence",
-  "Let me show you why a project name is not proof of your value.",
-  ["Let me show you why a project name is not proof of your value.",
-   "I could say, “I led an onboarding redesign.”",
-   "That is true, but somebody outside that organization still does not know "
-   "what changed.",
-   "Here is the clearer version:",
-   "I led an onboarding redesign with my team, and one measure of how well new "
-   "hires felt integrated moved from 47 to 75.",
-   "The point is not that the number sounds impressive.",
-   "The point is that I can explain what it measured, what I led and what "
+ ("Video_1_Short_1_Does_It_Still_Count.docx","Recognition / story",
+  "You are about to change jobs, and part of you is wondering whether the last few years still count.",
+  ["You are about to change jobs, and part of you is wondering whether the "
+   "last few years still count.",
+   "I know that feeling. I have changed function and industry more than once.",
+   "Here is what I had to learn.",
+   "A new place makes you new to that place.",
+   "It does not make you new to every problem in it.",
+   "The rules change. The language changes. The people you have to convince "
+   "change.",
+   "But the thing you got good at — reading a situation, deciding under "
+   "pressure, making something complicated make sense — that walked in with "
+   "you.",
+   "You are not starting from zero.",
+   "You are starting from somewhere you have not learned to describe yet."]),
+ ("Video_1_Short_2_A_Word_Is_Not_Evidence.docx","Distinction / myth",
+  "Years of experience do not turn into something you can carry just because you have them.",
+  ["Years of experience do not turn into something you can carry just because "
+   "you have them.",
+   "Some of what you know belongs to the company. The systems. The people. "
+   "The way that one place does things.",
+   "What actually travels is narrower, and better.",
+   "The judgment you have shown. The problems you know how to work through. "
+   "And evidence someone outside can understand.",
+   "So do not say “I have twenty years of experience” and stop there.",
+   "Ask yourself what you can do now because of those years.",
+   "Ask where you have already shown it.",
+   "And ask what would still be true if the company language disappeared.",
+   "A word you like is not evidence.",
+   "Evidence is something your work actually made you do."]),
+ ("Video_1_Short_3_Forty_Seven_To_Seventy_Five.docx","Proof / personal evidence",
+  "Let me show you the difference between naming a project and showing what changed.",
+  ["Let me show you the difference between naming a project and showing what "
    "changed.",
-   "And I am careful to say it was one measure, and team-based work.",
-   "Your evidence will travel better when it is specific and honest."]),
+   "I could say: I led an onboarding redesign.",
+   "That is true. And someone outside that company still has no idea what "
+   "was different afterwards.",
+   "Here is the version that carries:",
+   "I led an onboarding redesign with my team, and one measure of how well "
+   "new hires felt integrated moved from 47 to 75.",
+   "The number is not the point.",
+   "The point is that I can say what it measured, what I led, and what "
+   "changed.",
+   "And I say plainly that it was one measure, and that it was team work.",
+   "Being careful about the edges of your claim does not weaken it.",
+   "It is the reason someone believes the middle of it."]),
  ("Video_1_Short_4_Look_Under_The_Title.docx","Practical test / action",
-  "Put your job title aside for one minute.",
-  ["Put your job title aside for one minute.",
-   "Underneath it, I want you to answer three questions.",
-   "What problems do people repeatedly trust me to solve?",
-   "What decisions can I now make with better judgment?",
-   "And what could I do in another setting because of what I learned here?",
-   "Then look for the verbs that repeat across your examples.",
-   "Maybe you diagnose, stabilize, translate, design, align or build.",
-   "Do not choose a word just because it sounds good.",
-   "Attach it to your evidence.",
-   "That is how you start to see what your work built in you, rather than only "
-   "where the work happened."]),
+  "Put your job title aside for one minute and try this.",
+  ["Put your job title aside for one minute and try this.",
+   "Write down three times people relied on your judgment.",
+   "Not three projects. Three moments where somebody needed you to work "
+   "something out.",
+   "Now look for the verb that keeps showing up.",
+   "Were you diagnosing? Stabilising something? Translating between people? "
+   "Designing? Getting people lined up behind a decision?",
+   "That repeated verb is usually the thing that travels.",
+   "But do not stop at the word.",
+   "Put your three moments underneath it.",
+   "The word is what you say. The moments are why anyone believes you."]),
 ]
