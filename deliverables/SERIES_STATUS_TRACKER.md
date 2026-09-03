@@ -787,31 +787,107 @@ re-rendered and hold at 3 pages with healthy trailing pages.
 
 **VIDEOS 1-5 - FINAL + LOCKED. v5.1.1 PRECISION PASS COMPLETE.**
 
-### Forward roadmap - research alignment layer, NOT a rebuild trigger
+### Forward roadmap - FILED as the current source of truth, 3 September 2026
 
-The newest forward source of truth is
-`Capability_Formation_YouTube_Roadmap_1-30_v5.1_Research_Aligned_FINAL.docx`.
-**That file has not been supplied to this repository yet** - it is not in
-`deliverables/` and was not uploaded. The roadmap document present here is the
-older `YouTube_Audience_and_20_Video_Roadmap_Audit_Aug28_2026.docx`, which the
-new file supersedes. The research notes below were recorded from the v5.1.1
-prompt so they are not lost; the DOCX should be added when available.
+The missing roadmap was supplied and is now in the repository.
 
-The audience research is an **alignment layer**. It does NOT change Videos 1-7
-strategy or sequence, does NOT add another framework, and does NOT insert new
-roadmap topics. Videos 6-30 were not touched in this pass.
+    deliverables/roadmap/
+      Capability_Formation_YouTube_Roadmap_1-30_v5.1_Research_Aligned_FINAL.docx
+      SHA-256 58c8383965a854c8d7cd5baef7632694478eeaa9d4e3f3848441a923dacfe7b7
+      + sibling .sha256
+      + README.md  (source-of-truth marker, supersession record, preserved rules)
 
-Forward production notes, for those videos only:
+The filed copy is byte-identical to the file Temidayo supplied. **This is the
+CURRENT FORWARD SOURCE OF TRUTH for the Videos 1-30 roadmap.** The earlier gap
+note recorded here is closed.
+
+**Superseded:** `YouTube_Audience_and_20_Video_Roadmap_Audit_Aug28_2026.docx`
+(SHA-256 `df1754b8698d6ed7a149794893bf9fae21983ff70040da00b24339b611ff0a05`,
+copies in `deliverables/video-7-slides/reference/` and
+`deliverables/video-8-slides/reference/`) and all earlier September roadmap
+versions. The old copies were deliberately NOT deleted - they are the record of
+how the roadmap arrived here - and each folder now carries a
+`ROADMAP_SUPERSEDED.txt` pointing at the current file. Do not plan or draft from
+them, and do not reconcile the new roadmap against them.
+
+#### Filing it changed nothing editorially
+
+The roadmap is an **alignment layer, not a rebuild trigger**. Videos 1-7 are
+unchanged by this pass: no script, Short, CTA, thumbnail copy, slide content or
+structure was touched, and no video package or deck was rebuilt. Verified by
+hash - every Videos 1-8 package ZIP and every deck is byte-identical to the
+state committed in 13a3e83.
+
+One positive check worth recording. The roadmap's Videos 1-5 titles and
+thumbnail copy were compared field by field against the locked package configs
+and match exactly. CTA routes also match: the roadmap's per-video grid uses
+shorthand ("Decision Check", "Field Kit") while its own CTA-routing table names
+the products in full - Career Evidence Starter, Field Kit, Career Decision
+Evidence Check - which is what the packages carry. No conflict to report.
+
+#### Preserved from the roadmap - both audience states
+
+| Moment | Viewer state |
+|---|---|
+| **ACUTE** | "My context already changed. Help me move." |
+| **PREPAREDNESS** | "My context has not changed yet. Help me be ready if it does." |
+
+Serve both. The channel must not collapse into only one.
+
+#### Preserved - the permanent research audit
+
+On every professional-facing video: **What travels? What does not? What can I
+prove? What must I relearn?**
+
+#### Preserved - employer legibility as a differentiation seam
+
+Move beyond "How do I describe my transferable skills?" toward:
+**"What would make the other side trust that this experience is useful here?"**
+Show both sides where relevant - what the professional must prove AND what the
+hiring leader, manager or talent system must be able to trust - and always
+translate the organizational layer back to what it means for the viewer. Use
+ordinary viewer language ("direct experience") before proprietary terminology
+when that is the actual pain.
+
+#### Preserved - mandatory strengthening notes for Videos 8, 13, 14, 19, 30
 
 - **Video 8** - must name the "direct experience" pain while preserving
   Capability / Context / Credential.
 - **Video 13** - must test search packaging around "How to Get Hired Without
-  Direct Industry Experience", WITHOUT auto-replacing the current title.
-- **Video 14** - **RESEARCH REQUIRED before any factual findings are scripted.**
-  Do not script findings for this video from memory or inference.
-- **Video 19** - must add employer trust, recency and directness.
+  Direct Industry Experience", WITHOUT auto-replacing the current title. The
+  underlying hiring-manager trust argument stays.
+- **Video 14 - RESEARCH REQUIRED BEFORE SCRIPTING FACTUAL CONCLUSIONS.** Do not
+  script findings until 30 real, current, senior-level job descriptions have
+  been collected and documented. The title makes an empirical claim and the
+  claim must be earned before it is spoken. No findings from memory, inference
+  or plausibility. This marker stays until the research exists.
+- **Video 19** - must add employer trust, recency and directness: "My experience
+  is real, but is it recent enough or direct enough for this employer?"
 - **Video 30** - must distinguish restarting financially, by title, by scope, by
   context, and in actual capability.
+
+#### Preserved - future topic queue, QUEUED NOT SCHEDULED
+
+1. Will I Have to Take a Pay Cut to Change Careers?
+2. How to Pivot After a Layoff Without Starting Over
+3. Do I Need to Take a Lower Title to Change Industries?
+4. How to Prove You Can Do a Job You Haven't Done Before
+
+**Do not insert any of these into the locked 1-30 sequence unless Temidayo
+explicitly approves it.**
+
+#### Standing rules the roadmap carries forward
+
+No CTA stacking - route by viewer stage and the job of the video, not by which
+product needs promoting. The research does not justify more dramatic packaging;
+the gain is the spoken opening naming the lived pain underneath the thumbnail.
+First-shelf thumbnail copy stands. Brand stays exact deep navy `#112345` with
+the approved cream/gold values and real Temidayo photography. Permanent
+boundary: we cannot promise that employers will accept adjacent experience,
+eliminate ageism, overcome a weak market, or make every skill transfer. Before
+drafting, inspect the roadmap, the latest factual boundaries, current artifacts
+and proof, and any newer explicit decision - and never silently resolve a
+conflict.
 
 ### Videos 1-5 - v5.1.1 PRECISION PASS, 3 September 2026
 

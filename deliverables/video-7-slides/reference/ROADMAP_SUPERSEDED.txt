@@ -1,0 +1,18 @@
+SUPERSEDED — HISTORICAL REFERENCE ONLY
+======================================
+
+YouTube_Audience_and_20_Video_Roadmap_Audit_Aug28_2026.docx in this folder is
+SUPERSEDED as of 3 September 2026.
+
+The CURRENT FORWARD SOURCE OF TRUTH for the Videos 1-30 roadmap is:
+
+    deliverables/roadmap/
+      Capability_Formation_YouTube_Roadmap_1-30_v5.1_Research_Aligned_FINAL.docx
+      SHA-256 58c8383965a854c8d7cd5baef7632694478eeaa9d4e3f3848441a923dacfe7b7
+
+See deliverables/roadmap/README.md for what the new roadmap locks, what it
+supersedes, and the mandatory strengthening notes for Videos 8, 13, 14, 19
+and 30.
+
+The Aug 28 audit is kept only as the record of how the roadmap arrived here.
+Do not plan or draft from it. Do not reconcile the new roadmap against it.

@@ -294,6 +294,19 @@ package (1,403 words) and `Video_5_Code_Prompt_HIT_Final.txt`, and the earlier
 1,639-word script are all **SUPERSEDED** and retained only as historical
 reference.
 
+**THE FORWARD ROADMAP LIVES AT `deliverables/roadmap/`.** The current source of
+truth is
+`Capability_Formation_YouTube_Roadmap_1-30_v5.1_Research_Aligned_FINAL.docx`
+(SHA-256 `58c83839…dacfe7b7`), filed 3 September 2026. It supersedes
+`YouTube_Audience_and_20_Video_Roadmap_Audit_Aug28_2026.docx` and every earlier
+September version. Consult it before drafting any video from 8 onward. It is an
+alignment layer, not a rebuild trigger — Videos 1–7 do not reopen because of it.
+Two things it makes permanent: both audience states (ACUTE — "my context already
+changed"; PREPAREDNESS — "it has not changed yet") must be served, and every
+professional-facing video answers **what travels, what does not, what can I
+prove, what must I relearn** while asking the employer-legibility question,
+"what would make the other side trust that this experience is useful here?"
+
 **VIDEOS 1–5 ARE FINAL AND LOCKED UNDER THE v5.1 BELONGING + IDENTITY
 REGISTER, v5.1.1 PRECISION PASS COMPLETE** as of 3 September 2026. All five
 spoken scripts were rewritten from scratch for v5.1, then corrected by a narrow
