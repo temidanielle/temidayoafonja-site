@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Video 3 v3.0 direct-address speaker/editor notes. Notes parts only.
+"""Video 3 v4.0 speaker/editor notes. Notes parts only.
 
 Timings are script-derived working estimates at 145 wpm (1,251 words, ~8:37).
-Every quoted anchor is verbatim from the v3.0 direct-address script."""
+Every quoted anchor is verbatim from the v4.0 script."""
 
 NOTES=[
 # 1 Title
@@ -71,7 +71,7 @@ Section card. Hold briefly, then return to presenter.""",
 
 Reveal the four prompts one at a time as each is named.
 
-Note the direct-address framing in v3.0: Temidayo says "Say you tell me: 'I
+Note the direct-address framing in v4.0: Temidayo says "Say you tell me: 'I
 reduced the amount of time an internal process took.' That gives me an
 outcome." She is standing in as the listener across the table, and the example
 is then turned back on the viewer — "what you may have actually learned to do
@@ -116,7 +116,7 @@ the viewer and not telling them which direction is correct.
 Real constraints stay in: pay, benefits, caregiving and timing legitimately
 affect when someone moves.
 
-Say the line as written, in its v3.0 form: "I am not trying to make your
+Say the line as written, in its v4.0 form: "I am not trying to make your
 decision slow. I am trying to make it legible to you."
 
 The safety boundary is repeated here, briefly and plainly: a harmful situation
@@ -138,7 +138,7 @@ Calm and brief. This is the only invitation in the video, and it is the Career
 Decision Evidence Check — not the Field Kit, not Keep the Proof, not the Career
 Evidence Starter.
 
-Note the v3.0 phrasing: "that is what I made the Career Decision Evidence Check
+Note the v4.0 phrasing: "that is what I made the Career Decision Evidence Check
 for." It is offered, not announced. Keep it that way.
 
 CTA PRODUCTION GATE: SATISFIED. The page is live. One signed-out production

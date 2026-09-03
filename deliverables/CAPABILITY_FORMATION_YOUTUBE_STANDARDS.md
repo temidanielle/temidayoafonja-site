@@ -294,6 +294,48 @@ package (1,403 words) and `Video_5_Code_Prompt_HIT_Final.txt`, and the earlier
 1,639-word script are all **SUPERSEDED** and retained only as historical
 reference.
 
+**VIDEOS 1–5 ARE FINAL AND LOCKED UNDER THE v4.0 REGISTER** as of 3 September
+2026: H.I.T. + direct address + differentiation + multi-layer hook system + one
+memorable teaching structure + factual discipline + one primary CTA. 200 QA
+checks pass across the five.
+
+The pass was an audit first, not a rewrite. Videos 2 to 5 already met the
+direct-address, factual and memory standards, so their spoken scripts were
+carried forward with **zero paragraph changes**. Only Video 1 needed revision —
+it measured 54% second person across viewer-facing paragraphs and now measures
+77%, with 70 of its 111 paragraphs unchanged and none deleted.
+
+**Three things v4.0 adds to every package, and they are now the standard:**
+
+1. A **first-30-second H.I.T. audit table** in the long-form editor brief, as a
+   real Word table with seven columns: time, exact spoken line, verbal hook job,
+   on-screen hook, visual/editor cue, trust/proof beat, viewer payoff. The
+   existing opening is audited before anything is rewritten, and an opening is
+   revised only if it fails title/thumbnail match, one-breath first sentence,
+   recognition, visual interest, trust by 30 seconds, payoff by 30 seconds,
+   direct-address register or natural voice.
+2. An explicit **multi-layer hook block** naming all five layers — verbal hook,
+   on-screen hook, visual/editor movement, trust beat, viewer payoff — for the
+   long-form and for each of the four Shorts. A strong opening never rests on
+   the first spoken sentence alone.
+3. The **restrained emoji description system** (✨ teaching points, 🧭 CTA and
+   resource, ⏱️ chapters, ▶️ Watch Next, 🔗 Connect and Explore) plus the
+   **YouTube tag field**, in both the publishing package and the
+   description-only document, with identical public-copy blocks.
+
+**Hook discipline is a hard boundary.** No "you won't believe", "stop
+scrolling", "OMG", "hack", "secret", "99%", "listen up", "game changer" or
+"this changes everything" anywhere in a script or a Short. Ordinary words that
+happen to appear on that list are reported and justified rather than banned:
+Video 5's "I want to leave you with one warning underneath all of this" is the
+only occurrence across the five and it is approved.
+
+**One memorable device per video, and recognition comes before the framework.**
+Video 1 keeps its three practices, Video 2 its three tests, Video 3 its three
+checks, Video 4 its three-sentence career explanation, Video 5 its three
+questions. CAR belongs to Video 6 and the Career Evidence 3 Cs to the evidence
+method; neither may be added to Videos 1 to 5.
+
 **Videos 2, 3 and 4 are FINAL AND LOCKED UNDER THE DIRECT-ADDRESS REGISTER** as
 of 3 September 2026, revised in one pass from their locked packages. The
 register is now a series standard, not a Video 5 exception: Temidayo speaks to

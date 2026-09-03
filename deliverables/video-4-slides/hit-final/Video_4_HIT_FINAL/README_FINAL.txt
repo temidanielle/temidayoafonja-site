@@ -1,4 +1,4 @@
-VIDEO 4 — DIRECT-ADDRESS FINAL RECORDING PACKAGE v3.0
+VIDEO 4 — FINAL RECORDING PACKAGE v4.0
 
 Title:             How to Explain Your Career Change
 Thumbnail:         YOUR CAREER MAKES SENSE
@@ -29,7 +29,7 @@ Watch next:        Should I Make an Internal Move? 3 Questions to Decide
 
 Slides:            Visual design and on-slide copy unchanged. 11 main
                    slides.
-Speaker notes:     Updated for v3.0 direct address.
+Speaker notes:     Updated for v4.0.
 Reveal deck:       Visual design and reveal states unchanged. 26 frames.
 Shorts:            Four separately recorded scripts, revised for direct
                    address.
@@ -43,23 +43,23 @@ WHAT EACH FILE IS
 
 LONG_FORM/
 
-  Video4TeleprompterScriptwithslidemarkers_HIT_v3.0_DIRECT_ADDRESS.docx
-  Video4TeleprompterScriptwithslidemarkers_HIT_v3.0_DIRECT_ADDRESS.txt
+  Video4TeleprompterScriptwithslidemarkers_HIT_v4.0.docx
+  Video4TeleprompterScriptwithslidemarkers_HIT_v4.0.txt
       Temidayo's recording copy. Spoken script in large text; slide markers
       in tinted bands. The markers are not spoken.
 
-  Video4ReadingScriptnomarkers_HIT_v3.0_DIRECT_ADDRESS.docx
-  Video4ReadingScriptnomarkers_HIT_v3.0_DIRECT_ADDRESS.txt
+  Video4ReadingScriptnomarkers_HIT_v4.0.docx
+  Video4ReadingScriptnomarkers_HIT_v4.0.txt
       The same spoken words with the slide markers removed.
 
-  Video_4_EDITOR_ONLY_HIT_Brief_v3.0_DIRECT_ADDRESS.docx
+  Video_4_EDITOR_ONLY_HIT_Brief_v4.0.docx
       For the editor. Locked metadata, the direct-address register, the
       H.I.T. first-30-second map, the slide and reveal maps, the overlay
       principle, the factual and tone boundaries, CTA and watch-next
       routing, editing rhythm, the visual do-not-use list and the
       speaker-note record. Not for the teleprompter.
 
-  Video_4_Publishing_Package_HIT_v3.0_DIRECT_ADDRESS.docx
+  Video_4_Publishing_Package_HIT_v4.0.docx
       Title, thumbnail, search language, the copy-ready description,
       working chapter estimates and the pinned comment.
 
@@ -75,12 +75,12 @@ SHORTS/
 
 ALL FILES IN THIS PACKAGE
 
-  LONG_FORM/Video4ReadingScriptnomarkers_HIT_v3.0_DIRECT_ADDRESS.docx
-  LONG_FORM/Video4ReadingScriptnomarkers_HIT_v3.0_DIRECT_ADDRESS.txt
-  LONG_FORM/Video4TeleprompterScriptwithslidemarkers_HIT_v3.0_DIRECT_ADDRESS.docx
-  LONG_FORM/Video4TeleprompterScriptwithslidemarkers_HIT_v3.0_DIRECT_ADDRESS.txt
-  LONG_FORM/Video_4_EDITOR_ONLY_HIT_Brief_v3.0_DIRECT_ADDRESS.docx
-  LONG_FORM/Video_4_Publishing_Package_HIT_v3.0_DIRECT_ADDRESS.docx
+  LONG_FORM/Video4ReadingScriptnomarkers_HIT_v4.0.docx
+  LONG_FORM/Video4ReadingScriptnomarkers_HIT_v4.0.txt
+  LONG_FORM/Video4TeleprompterScriptwithslidemarkers_HIT_v4.0.docx
+  LONG_FORM/Video4TeleprompterScriptwithslidemarkers_HIT_v4.0.txt
+  LONG_FORM/Video_4_EDITOR_ONLY_HIT_Brief_v4.0.docx
+  LONG_FORM/Video_4_Publishing_Package_HIT_v4.0.docx
   SHORTS/Video_4_Short_1_Cat_With_Nine_Lives.docx
   SHORTS/Video_4_Short_2_Chronology_Not_Explanation.docx
   SHORTS/Video_4_Short_3_Not_A_Perfect_Plan.docx
@@ -111,7 +111,7 @@ and no new claim was added.
 
 Prior locked package: v2.1, spoken word count 1,261,
                       ZIP 6d9e8339a83a463ad231db8d180f6bb27025b07f41fd4bfc914778ea5f602684.
-This package:         v3.0 direct address, spoken word count 1,355.
+This package:         v4.0, spoken word count 1,355.
 
 ----------------------------------------------------------------------
 

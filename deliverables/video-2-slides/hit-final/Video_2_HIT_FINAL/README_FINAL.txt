@@ -1,7 +1,11 @@
-VIDEO 2 — DIRECT-ADDRESS FINAL RECORDING PACKAGE v3.0
+VIDEO 2 — FINAL RECORDING PACKAGE v4.0
 
 Title:             Is Your Job Making You Less Marketable?
-Thumbnail:         YOUR SKILLS ARE STALLING
+Thumbnail:         VALUABLE HERE. STUCK HERE?
+                   SUPERSEDES "YOUR SKILLS ARE STALLING". The thumbnail
+                   artwork in the repository still carries the old words:
+                   SUPERSEDED - REPLACE WITH APPROVED CANVA EXPORT BEFORE
+                   PUBLISHING.
 Strategic job:     Recognition / diagnosis
 Core distinction:  Being valuable here is not the same as being legible
                    somewhere else.
@@ -21,7 +25,7 @@ Watch next:        3 Things to Do Before Quitting Your Job
 
 Slides:            Visual design and on-slide copy unchanged. 13 main
                    slides.
-Speaker notes:     Updated for v3.0 direct address.
+Speaker notes:     Updated for v4.0.
 Reveal deck:       Visual design and reveal states unchanged. 23 frames.
 Shorts:            Four separately recorded scripts, revised for direct
                    address.
@@ -35,23 +39,23 @@ WHAT EACH FILE IS
 
 LONG_FORM/
 
-  Video2TeleprompterScriptwithslidemarkers_HIT_v3.0_DIRECT_ADDRESS.docx
-  Video2TeleprompterScriptwithslidemarkers_HIT_v3.0_DIRECT_ADDRESS.txt
+  Video2TeleprompterScriptwithslidemarkers_HIT_v4.0.docx
+  Video2TeleprompterScriptwithslidemarkers_HIT_v4.0.txt
       Temidayo's recording copy. Spoken script in large text; slide markers
       in tinted bands. The markers are not spoken.
 
-  Video2ReadingScriptnomarkers_HIT_v3.0_DIRECT_ADDRESS.docx
-  Video2ReadingScriptnomarkers_HIT_v3.0_DIRECT_ADDRESS.txt
+  Video2ReadingScriptnomarkers_HIT_v4.0.docx
+  Video2ReadingScriptnomarkers_HIT_v4.0.txt
       The same spoken words with the slide markers removed.
 
-  Video_2_EDITOR_ONLY_HIT_Brief_v3.0_DIRECT_ADDRESS.docx
+  Video_2_EDITOR_ONLY_HIT_Brief_v4.0.docx
       For the editor. Locked metadata, the direct-address register, the
       H.I.T. first-30-second map, the slide and reveal maps, the overlay
       principle, the factual and tone boundaries, CTA and watch-next
       routing, editing rhythm, the visual do-not-use list and the
       speaker-note record. Not for the teleprompter.
 
-  Video_2_Publishing_Package_HIT_v3.0_DIRECT_ADDRESS.docx
+  Video_2_Publishing_Package_HIT_v4.0.docx
       Title, thumbnail, search language, the copy-ready description,
       working chapter estimates and the pinned comment.
 
@@ -67,12 +71,12 @@ SHORTS/
 
 ALL FILES IN THIS PACKAGE
 
-  LONG_FORM/Video2ReadingScriptnomarkers_HIT_v3.0_DIRECT_ADDRESS.docx
-  LONG_FORM/Video2ReadingScriptnomarkers_HIT_v3.0_DIRECT_ADDRESS.txt
-  LONG_FORM/Video2TeleprompterScriptwithslidemarkers_HIT_v3.0_DIRECT_ADDRESS.docx
-  LONG_FORM/Video2TeleprompterScriptwithslidemarkers_HIT_v3.0_DIRECT_ADDRESS.txt
-  LONG_FORM/Video_2_EDITOR_ONLY_HIT_Brief_v3.0_DIRECT_ADDRESS.docx
-  LONG_FORM/Video_2_Publishing_Package_HIT_v3.0_DIRECT_ADDRESS.docx
+  LONG_FORM/Video2ReadingScriptnomarkers_HIT_v4.0.docx
+  LONG_FORM/Video2ReadingScriptnomarkers_HIT_v4.0.txt
+  LONG_FORM/Video2TeleprompterScriptwithslidemarkers_HIT_v4.0.docx
+  LONG_FORM/Video2TeleprompterScriptwithslidemarkers_HIT_v4.0.txt
+  LONG_FORM/Video_2_EDITOR_ONLY_HIT_Brief_v4.0.docx
+  LONG_FORM/Video_2_Publishing_Package_HIT_v4.0.docx
   SHORTS/Video_2_Short_1_Doing_Well_Fewer_Options.docx
   SHORTS/Video_2_Short_2_Indispensable_Not_Marketable.docx
   SHORTS/Video_2_Short_3_Not_Everything_Travels.docx
@@ -101,7 +105,7 @@ to one experienced professional rather than to an abstract audience. No
 paragraph was deleted and no new claim was added.
 
 Prior locked package: v2.0, spoken word count 1,131.
-This package:         v3.0 direct address, spoken word count 1,258.
+This package:         v4.0, spoken word count 1,258.
 
 ----------------------------------------------------------------------
 

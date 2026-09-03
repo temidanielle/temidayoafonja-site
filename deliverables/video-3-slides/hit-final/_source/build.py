@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Build the Video 3 v3.0 DIRECT ADDRESS recording and Shorts package."""
+"""Build the Video 3 v4.0 recording and Shorts package."""
 import os, sys, shutil
 sys.path.insert(0,"/tmp/da"); sys.path.insert(0,"/tmp/da/v3")
 from docxkit import *
@@ -21,15 +21,15 @@ CTA="Career Decision Evidence Check"
 CTA_URL="https://temidayoafonja.com/career-decisions"
 NEXT="How to Change Jobs Without Starting Your Career Over"
 
-CANON=os.path.join(BASE,"canonical_v3.0.txt")
-LINES=new_blocks(CANON,"BEGIN APPROVED VIDEO 3 v3.0 DIRECT-ADDRESS SCRIPT",
-                       "END APPROVED VIDEO 3 v3.0 DIRECT-ADDRESS SCRIPT")
+CANON=os.path.join(BASE,"canonical_v4.0.txt")
+LINES=new_blocks(CANON,"BEGIN APPROVED VIDEO 3 v4.0 SCRIPT",
+                       "END APPROVED VIDEO 3 v4.0 SCRIPT")
 SPOKEN=[x for x in LINES if not x.startswith("[SLIDE:")]
 
-TEL="Video3TeleprompterScriptwithslidemarkers_HIT_v3.0_DIRECT_ADDRESS"
-RDG="Video3ReadingScriptnomarkers_HIT_v3.0_DIRECT_ADDRESS"
-EDB="Video_3_EDITOR_ONLY_HIT_Brief_v3.0_DIRECT_ADDRESS.docx"
-PUB="Video_3_Publishing_Package_HIT_v3.0_DIRECT_ADDRESS.docx"
+TEL="Video3TeleprompterScriptwithslidemarkers_HIT_v4.0"
+RDG="Video3ReadingScriptnomarkers_HIT_v4.0"
+EDB="Video_3_EDITOR_ONLY_HIT_Brief_v4.0.docx"
+PUB="Video_3_Publishing_Package_HIT_v4.0.docx"
 SEB="Video_3_Shorts_EDITOR_ONLY_HIT_Brief.docx"
 scripts(VID,TITLE,LINES,SPOKEN,LF,TEL,RDG)
 print("long-form scripts written")
@@ -48,7 +48,7 @@ FRAMES=[1,1,1,4,1,5,1,4,1,3,3,1,1]
 # ------------------------------------------------------ long-form editor brief
 d=newdoc()
 P(d,"EDITOR ONLY",size=22,bold=True,color=RED,after=2)
-P(d,"VIDEO 3  ·  v3.0 DIRECT ADDRESS",size=12,bold=True,color=GOLD,after=2,caps=True)
+P(d,"VIDEO 3  ·  v4.0",size=12,bold=True,color=GOLD,after=2,caps=True)
 P(d,TITLE,size=20,bold=True,color=NAVY,after=6,spacing=1.1)
 p=P(d,"This document is for the editor. It is NOT Temidayo's teleprompter and "
      "must not be placed on the recording screen.",size=11,italic=True,
@@ -123,6 +123,56 @@ beat("0:31–0:40","And if your health or safety is at risk, this is not a "
       "Deliver it plainly and humanely. No legal-notice treatment, no fine "
       "print, no red alarm graphic, no cutaway.",
       "It is restated in full on slide 2. Do not cut either instance."])
+
+H2(d,"First-30-second audit table",before=12)
+keep(P(d,"Audited against the v4.0 standard. The existing opening passed on "
+       "every criterion — the safety line already sits inside the first 30 "
+       "seconds — so only the voice register was revised.",size=10.5,
+       italic=True,color=DIM,after=8))
+hit_table(d,[
+ ["0:00–0:12",
+  "“If you’re going to quit your job, don’t wait until after you leave to work "
+  "out what your work actually built in you.”",
+  "A real consequence the viewer is about to walk into.",
+  "WAIT BEFORE YOU QUIT",
+  "Open on Temidayo, direct to camera. No title card. Then ACCESS CHANGES · "
+  "SYSTEMS CLOSE · PEOPLE MOVE ON.",
+  "Spoken as a practitioner's warning, not a scare line.",
+  "The viewer learns there is something to do before resigning."],
+ ["0:12–0:25",
+  "“Before you resign, check three things: what you can preserve, what your "
+  "work proved you can do, and what your next move needs to build.”",
+  "Direct offer of the method.",
+  "3 CHECKS BEFORE YOU RESIGN",
+  "Restrained three-item reveal. No countdown, no warning graphic.",
+  "The three checks are the video's whole promise.",
+  "Payoff is explicit by 25 seconds."],
+ ["0:25–0:31",
+  "“I’ve worked inside systems where performance and talent decisions are "
+  "documented, so I know how quickly that context can disappear.”",
+  "Lived organizational vantage point.",
+  "—",
+  "Stay on Temidayo. No B-roll.",
+  "Observed evidence from inside performance and talent systems. No employer, "
+  "client, metric or result.",
+  "The viewer sees why she can read what disappears on exit."],
+ ["0:31–0:40",
+  "“And if your health or safety is at risk, this is not a reason to wait.”",
+  "Boundary stated before any advice can be misapplied.",
+  "—",
+  "Plain and humane, on camera, with captions. No red alarm graphic, no fine "
+  "print, no cutaway.",
+  "She gives up the advice rather than risk harm.",
+  "The viewer knows immediately whether the video applies to them."]])
+keep(P(d,"Hook layers for the long-form:",size=10.5,bold=True,color=NAVY,
+       before=10,after=5))
+hook_block(d,
+ "If you’re going to quit your job, don’t wait until after you leave to work "
+ "out what your work actually built in you.",
+ "WAIT BEFORE YOU QUIT",
+ "Direct to camera, then the three-loss line, then the three checks.",
+ "Temidayo's work inside documented performance and talent systems.",
+ "Three checks to run before resigning, promised by 0:25.")
 
 H1(d,"4.  Slide marker → actual slide number",before=14)
 P(d,"The teleprompter carries thirteen slide markers. They map to the existing "
@@ -231,22 +281,26 @@ DESC=[
  "uses something you have already proved while asking you to build something "
  "genuinely new.",
  "Your three checks are:",
- "1. Preserve the evidence.",
- "2. Name what the work built in you.",
- "3. Test the next move.",
+ "✨ Preserve the evidence.",
+ "✨ Name what the work built in you.",
+ "✨ Test the next move.",
  "This is not advice to delay leaving an unsafe or harmful situation. If your "
  "health or safety is at risk, or you are facing harassment, discrimination "
  "or another urgent threat, act on that first.",
  "And preserving career evidence does not mean taking confidential, "
  "proprietary, customer, employee or employer-owned material. Keep only what "
  "you are entitled to retain.","",
- "CAREER DECISION EVIDENCE CHECK",
+ "🧭 CAREER DECISION EVIDENCE CHECK",
  "If you want a structured way to read the evidence behind a stay, move or "
  "leave decision:",
  CTA_URL,"",
- "WATCH NEXT",
+ "▶️ WATCH NEXT",
  NEXT,"[ADD VIDEO 1 LINK]","",
- "CHAPTERS"]+CHAPTER_LINES+["",
+ "⏱️ CHAPTERS"]+CHAPTER_LINES+["",
+ "🔗 CONNECT AND EXPLORE",
+ "Website:","https://temidayoafonja.com",
+ "LinkedIn:","https://www.linkedin.com/in/temidayo-afonja",
+ "Substack:","https://temidayoafonja.substack.com","",
  "Temidayo Afonja helps experienced professionals understand what they can "
  "carry across roles, functions, employers and industries so they can make "
  "career pivots and internal moves without starting from zero."]
@@ -259,11 +313,16 @@ PINNED=["Before you resign, which of these three questions is hardest for you "
  "And if your health or safety is at risk, you do not need to delay leaving "
  "in order to finish a career exercise."]
 
+TAGS=("things to do before quitting your job, before you resign, should I "
+ "quit my job, career change, career transition, career decision, "
+ "quitting your job, career evidence, career portability, "
+ "experienced professionals, Temidayo Afonja, Capability Formation")
+
 def description_block(d, heading_before=14):
     H1(d,"INTERNAL NOTE — DO NOT PASTE INTO YOUTUBE",before=heading_before)
-    p=P(d,"Video 3's public copy carries no emoji section labels. That is the "
-         "approved treatment for this video and it is deliberately unchanged in "
-         "this pass; do not import the Videos 6 to 8 emoji system into it. The "
+    p=P(d,"The restrained emoji system is part of the approved v4.0 standard: "
+         "✨ teaching points, 🧭 CTA and resource, ⏱️ chapters, ▶️ Watch Next, "
+         "🔗 Connect and Explore. Do not remove it and do not add more. The "
          "safety paragraph and the permitted-evidence paragraph are part of the "
          "public copy and must be pasted with it.",
         size=10.5,italic=True,color=RED,after=12,spacing=1.25)
@@ -289,7 +348,7 @@ def description_block(d, heading_before=14):
     for line in CHAPTER_LINES: keep(P(d,line,size=11,after=4))
 
 d=newdoc()
-head(d,VID,TITLE,"Video 3  ·  Publishing package  ·  v3.0 direct address",
+head(d,VID,TITLE,"Video 3  ·  Publishing package  ·  v4.0",
      "Everything needed to upload. Working timestamps must be replaced with "
      "real ones from the finished edit.")
 H1(d,"Title",before=14); P(d,TITLE,size=12,after=10)
@@ -300,6 +359,10 @@ description_block(d)
 H1(d,"Pinned comment",before=14)
 for para in PINNED: keep(P(d,para,after=6))
 H1(d,"Watch next",before=14); keep(P(d,"%s  (Video 1)"%NEXT,bold=True,after=8))
+H1(d,"YouTube tag field",before=14)
+keep(P(d,"Paste into the tag field only. Do not put the full tag field in the "
+       "public description.",size=10.5,italic=True,color=DIM,after=6))
+keep(P(d,TAGS,size=10.5,after=10))
 H1(d,"Publication gate",before=14)
 keep(P(d,"The Career Decision Evidence Check page is confirmed live, so the "
        "gate is SATISFIED. One signed-out production check of the page is "
@@ -320,6 +383,9 @@ description_block(d)
 H1(d,"Pinned comment",before=14)
 for para in PINNED: keep(P(d,para,after=6))
 H1(d,"Watch next",before=14); keep(P(d,"%s  (Video 1)"%NEXT,bold=True,after=8))
+H1(d,"YouTube tag field",before=14)
+keep(P(d,"Paste into the tag field only.",size=10.5,italic=True,color=DIM,after=6))
+keep(P(d,TAGS,size=10.5,after=10))
 compress(d, 1.04, 0.34)
 DESC_DOC=os.path.join(BASE,"Video_3_YouTube_Description_HIT.docx")
 d.save(DESC_DOC)
@@ -411,7 +477,7 @@ d.save(os.path.join(SH,SEB))
 # ---------------------------------------------------------------- 6. README
 FILES=(["LONG_FORM/"+f for f in sorted(os.listdir(LF))]
       +["SHORTS/"+f for f in sorted(os.listdir(SH))])
-R=["VIDEO 3 — DIRECT-ADDRESS FINAL RECORDING PACKAGE v3.0","",
+R=["VIDEO 3 — FINAL RECORDING PACKAGE v4.0","",
  "Title:             %s"%TITLE,
  "Thumbnail:         %s"%THUMB,
  "Strategic job:     Consequential decision / evidence check",
@@ -438,7 +504,7 @@ R=["VIDEO 3 — DIRECT-ADDRESS FINAL RECORDING PACKAGE v3.0","",
  "Watch next:        %s (Video 1)"%NEXT,"",
  "Slides:            Visual design and on-slide copy unchanged. 13 main",
  "                   slides.",
- "Speaker notes:     Updated for v3.0 direct address.",
+ "Speaker notes:     Updated for v4.0.",
  "Reveal deck:       Visual design and reveal states unchanged. 27 frames.",
  "Shorts:            Four separately recorded scripts, revised for direct",
  "                   address.",
@@ -481,7 +547,7 @@ R+=["  README_FINAL.txt","  SHA256SUMS.txt","",
  "audience. No paragraph was deleted and no new claim was added.","",
  "Prior locked package: v2.0, spoken word count 1,205,",
  "                      ZIP 2455a0d08105e3148215191e62ead6204c8e4cdf896525592a2983b8c14ea177.",
- "This package:         v3.0 direct address, spoken word count 1,251.","",
+ "This package:         v4.0, spoken word count 1,251.","",
  "-"*70,"","CHECKSUMS","",
  "SHA256SUMS.txt covers the other 12 user-facing files in this package. It",
  "does not hash itself, and it carries no ZIP checksum. The archive's own",
@@ -495,7 +561,7 @@ MANIFEST=["LONG_FORM/%s.docx"%TEL,"LONG_FORM/%s.txt"%TEL,
  ["SHORTS/"+f for f,_,_,_ in SHORTS]+["SHORTS/"+SEB,"README_FINAL.txt"]
 ZIP=os.path.join(BASE,"Video_3_HIT_FINAL_Recording_and_Shorts_Package.zip")
 z=package(ROOT,MANIFEST,ZIP,"Video_3_HIT_FINAL",
-  ["# VIDEO 3 - DIRECT-ADDRESS FINAL RECORDING PACKAGE v3.0",
+  ["# VIDEO 3 - FINAL RECORDING PACKAGE v4.0",
    "# SHA-256 of the 12 user-facing files in this package.",
    "# SHA256SUMS.txt cannot hash itself. The master ZIP cannot contain its own",
    "# checksum either; it is published in the sibling file",

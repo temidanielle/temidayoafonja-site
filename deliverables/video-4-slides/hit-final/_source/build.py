@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Build the Video 4 v3.0 DIRECT ADDRESS recording and Shorts package."""
+"""Build the Video 4 v4.0 recording and Shorts package."""
 import os, sys, shutil
 sys.path.insert(0,"/tmp/da"); sys.path.insert(0,"/tmp/da/v4")
 from docxkit import *
@@ -21,15 +21,15 @@ CTA="Free Career Evidence Starter"
 CTA_URL="https://temidayoafonja.com/career-evidence-starter"
 NEXT="Should I Make an Internal Move? 3 Questions to Decide"
 
-CANON=os.path.join(BASE,"canonical_v3.0.txt")
-LINES=new_blocks(CANON,"BEGIN APPROVED VIDEO 4 v3.0 DIRECT-ADDRESS SCRIPT",
-                       "END APPROVED VIDEO 4 v3.0 DIRECT-ADDRESS SCRIPT")
+CANON=os.path.join(BASE,"canonical_v4.0.txt")
+LINES=new_blocks(CANON,"BEGIN APPROVED VIDEO 4 v4.0 SCRIPT",
+                       "END APPROVED VIDEO 4 v4.0 SCRIPT")
 SPOKEN=[x for x in LINES if not x.startswith("[SLIDE:")]
 
-TEL="Video4TeleprompterScriptwithslidemarkers_HIT_v3.0_DIRECT_ADDRESS"
-RDG="Video4ReadingScriptnomarkers_HIT_v3.0_DIRECT_ADDRESS"
-EDB="Video_4_EDITOR_ONLY_HIT_Brief_v3.0_DIRECT_ADDRESS.docx"
-PUB="Video_4_Publishing_Package_HIT_v3.0_DIRECT_ADDRESS.docx"
+TEL="Video4TeleprompterScriptwithslidemarkers_HIT_v4.0"
+RDG="Video4ReadingScriptnomarkers_HIT_v4.0"
+EDB="Video_4_EDITOR_ONLY_HIT_Brief_v4.0.docx"
+PUB="Video_4_Publishing_Package_HIT_v4.0.docx"
 SEB="Video_4_Shorts_EDITOR_ONLY_HIT_Brief.docx"
 scripts(VID,TITLE,LINES,SPOKEN,LF,TEL,RDG)
 print("long-form scripts written")
@@ -45,7 +45,7 @@ FRAMES=[4,2,1,5,2,3,3,1,3,1,1]
 # ------------------------------------------------------ long-form editor brief
 d=newdoc()
 P(d,"EDITOR ONLY",size=22,bold=True,color=RED,after=2)
-P(d,"VIDEO 4  ·  v3.0 DIRECT ADDRESS",size=12,bold=True,color=GOLD,after=2,caps=True)
+P(d,"VIDEO 4  ·  v4.0",size=12,bold=True,color=GOLD,after=2,caps=True)
 P(d,TITLE,size=20,bold=True,color=NAVY,after=6,spacing=1.1)
 p=P(d,"This document is for the editor. It is NOT Temidayo's teleprompter and "
      "must not be placed on the recording screen.",size=11,italic=True,
@@ -122,6 +122,51 @@ beat("0:26–0:32","So if your career looks disconnected on paper, let me show "
       "Optional small text: 3 STEPS",
       "The payoff, and the honesty boundary — “without pretending every move "
       "was planned” — must both be clear before the teaching starts."])
+
+H2(d,"First-30-second audit table",before=12)
+keep(P(d,"Audited against the v4.0 standard. The existing opening passed on "
+       "every criterion, so only the voice register was revised and the "
+       "viewer turn was sharpened.",size=10.5,italic=True,color=DIM,after=8))
+hit_table(d,[
+ ["0:00–0:10",
+  "“A senior colleague once called me a cat with nine lives.”",
+  "Personal-story opening; a real remark, not a claim.",
+  "YOUR CAREER MAKES SENSE",
+  "Open on Temidayo, direct to camera. No title card. NO cat imagery.",
+  "A real thing a colleague said about her real career.",
+  "The viewer recognises the nonlinear-career problem immediately."],
+ ["0:10–0:20",
+  "“When I explained it as a list of jobs, the path sounded more disconnected "
+  "than it was.”",
+  "The specific contradiction: the career was fine, the explanation was not.",
+  "CHRONOLOGY  vs.  PORTABILITY",
+  "Restrained text treatment of a plain job list, then the turn. No "
+  "résumé-scroll animation.",
+  "Her own failed explanation, named as a failure.",
+  "The viewer sees the problem is fixable and is about explanation."],
+ ["0:20–0:26",
+  "“The career wasn’t the problem. The explanation was.”",
+  "The line the video turns on.",
+  "—",
+  "Stay on Temidayo. Let it sit. Do not cover it.",
+  "A relearning moment, stated plainly.",
+  "The viewer knows what will actually be taught."],
+ ["0:26–0:32",
+  "“So if your career looks disconnected on paper, let me show you how I "
+  "learned to explain mine…”",
+  "Direct offer: her case becomes the viewer's method.",
+  "3 STEPS",
+  "Return cleanly to Temidayo.",
+  "The method is derived from her own case, not from advice.",
+  "Payoff and the honesty boundary are both clear before 30 seconds."]])
+keep(P(d,"Hook layers for the long-form:",size=10.5,bold=True,color=NAVY,
+       before=10,after=5))
+hook_block(d,
+ "A senior colleague once called me a cat with nine lives.",
+ "YOUR CAREER MAKES SENSE",
+ "Direct to camera, then the chronology-versus-portability contrast.",
+ "Her own nonlinear career and the explanation that kept failing.",
+ "A three-sentence method for explaining a career change, promised by 0:32.")
 
 H1(d,"4.  Slide marker → actual slide number",before=14)
 P(d,"The teleprompter carries eleven slide markers. They map to the existing "
@@ -216,8 +261,9 @@ CHAPTERS=[("00:00","When a Career Looks Disconnected"),
  ("08:48","Should You Make an Internal Move?")]
 CHAPTER_LINES=["%s %s"%(t,c) for t,c in CHAPTERS]
 
-EMOJI_NOTE=("The restrained emoji system is part of the approved standard: "
- "🧭 marks the CTA and resource section. Do not remove it and do not add more.")
+EMOJI_NOTE=("The restrained emoji system is part of the approved v4.0 standard: "
+ "✨ teaching points, 🧭 CTA and resource, ⏱️ chapters, ▶️ Watch Next, "
+ "🔗 Connect and Explore. Do not remove it and do not add more.")
 
 DESC=[
  "Does your career path look disconnected on paper?",
@@ -228,9 +274,9 @@ DESC=[
  "Over time I realized the problem was not necessarily the career. It was how "
  "I was explaining what had traveled between the chapters.",
  "I will walk you through a simple three-part method:",
- "1. Name your major career chapters briefly.",
- "2. Find the repeated work beneath the titles.",
- "3. Explain why your next direction follows from what you have already built.",
+ "✨ Name your major career chapters briefly.",
+ "✨ Find the repeated work beneath the titles.",
+ "✨ Explain why your next direction follows from what you have already built.",
  "A chronology tells people where you have been. A portability explanation "
  "tells them what traveled with you.",
  "Not everything transfers. Different roles, functions and industries can "
@@ -240,12 +286,16 @@ DESC=[
  "Turn one accomplishment into a portable Proof Line you can use in a "
  "performance review, interview, internal move or career pivot:",
  CTA_URL,"",
- "CHAPTERS"]+CHAPTER_LINES+["",
- "WATCH NEXT",
+ "⏱️ CHAPTERS"]+CHAPTER_LINES+["",
+ "▶️ WATCH NEXT",
  NEXT,"[ADD VIDEO 5 LINK WHEN LIVE]","",
  "PLAYLIST",
  "Career Portability: Career Pivots, Internal Moves & Growth",
  "[ADD PLAYLIST LINK]","",
+ "🔗 CONNECT AND EXPLORE",
+ "Website:","https://temidayoafonja.com",
+ "LinkedIn:","https://www.linkedin.com/in/temidayo-afonja",
+ "Substack:","https://temidayoafonja.substack.com","",
  "Temidayo Afonja helps experienced professionals understand what they can "
  "carry across roles, functions, employers and industries so they can make "
  "career pivots and internal moves without starting from zero."]
@@ -261,6 +311,11 @@ PINNED=["Which part of your career is hardest for you to explain?",
  "“That is why I am now focused on…”",
  "And if you want to try it on one real accomplishment, the free Career "
  "Evidence Starter is here:", CTA_URL]
+
+TAGS=("how to explain your career change, nonlinear career, career pivot, "
+ "career change explanation, career story, transferable skills, "
+ "career transition, career portability, explain career gap, "
+ "experienced professionals, Temidayo Afonja, Capability Formation")
 
 def description_block(d, heading_before=14):
     H1(d,"INTERNAL NOTE — DO NOT PASTE INTO YOUTUBE",before=heading_before)
@@ -287,7 +342,7 @@ def description_block(d, heading_before=14):
     for line in CHAPTER_LINES: keep(P(d,line,size=11,after=4))
 
 d=newdoc()
-head(d,VID,TITLE,"Video 4  ·  Publishing package  ·  v3.0 direct address",
+head(d,VID,TITLE,"Video 4  ·  Publishing package  ·  v4.0",
      "Everything needed to upload. Working timestamps must be replaced with "
      "real ones from the finished edit.")
 H1(d,"Title",before=14); P(d,TITLE,size=12,after=10)
@@ -301,10 +356,7 @@ H1(d,"Watch next",before=14); keep(P(d,"%s  (Video 5)"%NEXT,bold=True,after=8))
 H1(d,"YouTube tag field",before=14)
 keep(P(d,"Paste into the tag field only. Do not put the full tag field in the "
        "public description.",size=10.5,italic=True,color=DIM,after=6))
-keep(P(d,"how to explain your career change, nonlinear career, career pivot, "
-       "career change explanation, career story, transferable skills, career "
-       "transition, career portability, experienced professionals, "
-       "Temidayo Afonja, Capability Formation",size=10.5,after=10))
+keep(P(d,TAGS,size=10.5,after=10))
 compress(d, 1.08, 0.44)
 d.save(os.path.join(LF,PUB))
 
@@ -319,6 +371,9 @@ description_block(d)
 H1(d,"Pinned comment",before=14)
 for para in PINNED: keep(P(d,para,after=6))
 H1(d,"Watch next",before=14); keep(P(d,"%s  (Video 5)"%NEXT,bold=True,after=8))
+H1(d,"YouTube tag field",before=14)
+keep(P(d,"Paste into the tag field only.",size=10.5,italic=True,color=DIM,after=6))
+keep(P(d,TAGS,size=10.5,after=10))
 compress(d, 1.08, 0.44)
 DESC_DOC=os.path.join(BASE,"Video_4_YouTube_Description_HIT.docx")
 d.save(DESC_DOC)
@@ -406,7 +461,7 @@ d.save(os.path.join(SH,SEB))
 # ---------------------------------------------------------------- 6. README
 FILES=(["LONG_FORM/"+f for f in sorted(os.listdir(LF))]
       +["SHORTS/"+f for f in sorted(os.listdir(SH))])
-R=["VIDEO 4 — DIRECT-ADDRESS FINAL RECORDING PACKAGE v3.0","",
+R=["VIDEO 4 — FINAL RECORDING PACKAGE v4.0","",
  "Title:             %s"%TITLE,
  "Thumbnail:         %s"%THUMB,
  "Strategic job:     Searchable problem + personal evidence",
@@ -431,7 +486,7 @@ R=["VIDEO 4 — DIRECT-ADDRESS FINAL RECORDING PACKAGE v3.0","",
  "Watch next:        %s"%NEXT,"",
  "Slides:            Visual design and on-slide copy unchanged. 11 main",
  "                   slides.",
- "Speaker notes:     Updated for v3.0 direct address.",
+ "Speaker notes:     Updated for v4.0.",
  "Reveal deck:       Visual design and reveal states unchanged. 26 frames.",
  "Shorts:            Four separately recorded scripts, revised for direct",
  "                   address.",
@@ -475,7 +530,7 @@ R+=["  README_FINAL.txt","  SHA256SUMS.txt","",
  "and no new claim was added.","",
  "Prior locked package: v2.1, spoken word count 1,261,",
  "                      ZIP 6d9e8339a83a463ad231db8d180f6bb27025b07f41fd4bfc914778ea5f602684.",
- "This package:         v3.0 direct address, spoken word count 1,355.","",
+ "This package:         v4.0, spoken word count 1,355.","",
  "-"*70,"","BOUNDARIES THAT DID NOT MOVE","",
  "Not everything transfers. Different roles, functions and industries can",
  "require real relearning, and the script says so more than once. Coherence is",
@@ -497,7 +552,7 @@ MANIFEST=["LONG_FORM/%s.docx"%TEL,"LONG_FORM/%s.txt"%TEL,
  ["SHORTS/"+f for f,_,_,_ in SHORTS]+["SHORTS/"+SEB,"README_FINAL.txt"]
 ZIP=os.path.join(BASE,"Video_4_HIT_FINAL_Recording_and_Shorts_Package.zip")
 z=package(ROOT,MANIFEST,ZIP,"Video_4_HIT_FINAL",
-  ["# VIDEO 4 - DIRECT-ADDRESS FINAL RECORDING PACKAGE v3.0",
+  ["# VIDEO 4 - FINAL RECORDING PACKAGE v4.0",
    "# SHA-256 of the 12 user-facing files in this package.",
    "# SHA256SUMS.txt cannot hash itself. The master ZIP cannot contain its own",
    "# checksum either; it is published in the sibling file",

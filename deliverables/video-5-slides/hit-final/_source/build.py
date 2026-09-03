@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
-"""Build the Video 5 DIRECT-ADDRESS DIFFERENTIATED v3.1 recording and Shorts package."""
+"""Build the Video 5 v4.0 recording and Shorts package."""
 import os, sys, shutil, zipfile, hashlib
-sys.path.insert(0, "/tmp/v5v31")
+sys.path.insert(0, "/tmp/v4/v5")
+sys.path.insert(0, "/tmp/da")
+from docxkit import hit_table, hook_block
 from script_text import LINES, SPOKEN, MARKERS
 from shorts_text import SHORTS
 from docx import Document
@@ -14,7 +16,7 @@ DIM=RGBColor(0x5A,0x6B,0x82); INK=RGBColor(0x1A,0x1A,0x1A)
 RED=RGBColor(0x9B,0x2C,0x10)
 BAND_NAVY="E8EDF4"; BAND_CREAM="F3F0E8"
 
-BASE="/tmp/v5v31"
+BASE="/tmp/v4/v5"
 ROOT=os.path.join(BASE,"Video_5_HIT_FINAL")
 LF=os.path.join(ROOT,"LONG_FORM"); SH=os.path.join(ROOT,"SHORTS")
 shutil.rmtree(ROOT, ignore_errors=True)
@@ -106,10 +108,10 @@ def pairlist(d, items, indent="—  ", gap="        ", after=4, budget=78):
     for group in lines:
         keep(P(d, gap.join(indent + x for x in group), after=after))
 
-TEL="Video5TeleprompterScriptwithslidemarkers_HIT_v3.1"
-RDG="Video5ReadingScriptnomarkers_HIT_v3.1"
-EDB="Video_5_EDITOR_ONLY_HIT_Brief_v3.1.docx"
-PUB="Video_5_Publishing_Package_HIT_v3.1.docx"
+TEL="Video5TeleprompterScriptwithslidemarkers_HIT_v4.0"
+RDG="Video5ReadingScriptnomarkers_HIT_v4.0"
+EDB="Video_5_EDITOR_ONLY_HIT_Brief_v4.0.docx"
+PUB="Video_5_Publishing_Package_HIT_v4.0.docx"
 SEB="Video_5_Shorts_EDITOR_ONLY_HIT_Brief.docx"
 
 # ------------------------------------------------- 1. teleprompter DOCX + TXT
@@ -155,7 +157,7 @@ REVEAL_MAP=[(1,"1–2",2),(2,"3–5",3),(3,"6",1),(4,"7–10",4),(5,"11",1),
 
 d=newdoc()
 P(d,"EDITOR ONLY",size=22,bold=True,color=RED,after=2)
-P(d,"VIDEO 5  ·  v3.1",size=12,bold=True,color=GOLD,after=2,caps=True)
+P(d,"VIDEO 5  ·  v4.0",size=12,bold=True,color=GOLD,after=2,caps=True)
 P(d,TITLE,size=20,bold=True,color=NAVY,after=6,spacing=1.1)
 p=P(d,"This document is for the editor. It is NOT Temidayo's teleprompter and "
      "must not be placed on the recording screen.",size=11,italic=True,
@@ -183,7 +185,7 @@ keep(P(d,"Do not add CAR — it belongs to Video 6. Do not add the Career "
        "video.",bold=True,color=RED,after=8,spacing=1.25))
 
 # 2 ------------------------------------------------- direct-address register
-H1(d,"2.  Direct-address register — the locked voice for v3.1",before=14)
+H1(d,"2.  Direct-address register — the locked voice for v4.0",before=14)
 p=P(d,"Temidayo is speaking to ONE experienced professional sitting across from "
      "her. Not a crowd, not a conference room, not an abstract audience. Every "
      "line was written to pass one test: would she naturally say this to one "
@@ -285,6 +287,54 @@ p=P(d,"Do not convert these into motivational quote cards. Restrained text "
 shade(p,BAND_CREAM); keep(p)
 
 # 5 ---------------------------------------------------- slide-marker mapping
+H2(d,"First-30-second audit table",before=12)
+keep(P(d,"Audited against the v4.0 standard. The v3.1 direct-address opening "
+       "passed on every criterion, so it is carried forward unchanged.",
+       size=10.5,italic=True,color=DIM,after=8))
+hit_table(d,[
+ ["0:00–0:05",
+  "“You may not need to leave your company.”",
+  "Surprising but defensible statement against the obvious answer.",
+  "YOU MAY NOT NEED TO LEAVE",
+  "Direct to camera. No title card before this.",
+  "Stated as her considered position, not a slogan.",
+  "The viewer hears that leaving may not be the only option."],
+ ["0:05–0:10",
+  "“You may need access to work your current role is not giving you yet.”",
+  "Reframes the problem as access, not employer.",
+  "SAME COMPANY / DIFFERENT WORK",
+  "Restrained. No office-building stock footage, no transfer arrows.",
+  "The reframe comes from her own reading of internal mobility.",
+  "The viewer sees what the video will actually test."],
+ ["0:10–0:21",
+  "“Let me show you what this looked like for me. About six months after I "
+  "returned from maternity leave in one chapter of my career, my scope "
+  "expanded beyond the original box of the role.”",
+  "Personal-story proof, offered rather than announced.",
+  "MORE WORK?  then  DIFFERENT WORK",
+  "Stay on Temidayo. No family or maternity stock imagery, no dramatization.",
+  "Her own lived scope expansion, bounded: no employer, assignment, metric or "
+  "result.",
+  "The viewer sees the distinction that the whole video rests on."],
+ ["0:21–0:30",
+  "“That changed how I think about internal moves, and I want to help you test "
+  "yours the same way.”",
+  "Direct offer: her lesson becomes the viewer's test.",
+  "WILL THE WORK CHANGE? / WILL YOUR JUDGMENT EXPAND? / WILL THE EVIDENCE "
+  "TRAVEL?",
+  "Progressive reveal of the three questions, then into the deck.",
+  "The three questions are derived from her own case.",
+  "Payoff is explicit by 30 seconds."]])
+keep(P(d,"Hook layers for the long-form:",size=10.5,bold=True,color=NAVY,
+       before=10,after=5))
+hook_block(d,
+ "You may not need to leave your company.",
+ "YOU MAY NOT NEED TO LEAVE",
+ "Direct to camera, then SAME COMPANY / DIFFERENT WORK, then MORE WORK? / "
+ "DIFFERENT WORK.",
+ "Her maternity-return scope expansion, bounded and spoken.",
+ "Three questions to test an internal move, promised by 0:30.")
+
 H1(d,"5.  Slide marker → actual slide number",before=14)
 P(d,"The teleprompter carries twelve slide markers. They map to the existing "
     "twelve-slide deck in order, marker 1 to slide 1 through marker 12 to "
@@ -383,16 +433,16 @@ pairlist(d,["maternity imagery;","baby imagery;","stock office B-roll;",
 
 # 12 ------------------------------------------------- speaker-note update record
 H1(d,"12.  Speaker-note update record",before=14)
-P(d,"Both decks ship with speaker notes rewritten for the v3.1 script. The "
-    "superseded v3.0 timings and narration cues have been removed; nothing "
+P(d,"Both decks ship with speaker notes rewritten for the v4.0 script. The "
+    "superseded v3.0 and v3.1 timings and narration cues have been removed; nothing "
     "on any slide was changed.",after=8)
 for x in ["Main deck: 12 notes parts rewritten, one per slide.",
  "Reveal deck: 25 notes parts rewritten, one per reveal frame.",
  "Slide XML, geometry, typography, palette and media: unchanged.",
  "Timings in the notes are script-derived working estimates at 145 words per "
- "minute for the 1,980-word v3.1 script. Replace them from the finished cut."]:
+ "minute for the 1,980-word v4.0 script. Replace them from the finished cut."]:
     keep(P(d,"—  "+x,after=4))
-compress(d, 1.06, 0.30)
+compress(d, 1.00, 0.20)
 d.save(os.path.join(LF,EDB))
 print("editor brief written")
 
@@ -494,7 +544,7 @@ def description_block(d, heading_before=14, upload_doc=False):
 
 # ----------------------------------------------------- 4. publishing package
 d=newdoc()
-head(d,TITLE,"Video 5  ·  Publishing package  ·  v3.1",
+head(d,TITLE,"Video 5  ·  Publishing package  ·  v4.0",
      "Everything needed to upload. Working timestamps must be replaced with "
      "real ones from the finished edit.")
 H1(d,"Title",before=14); P(d,TITLE,size=12,after=10)
@@ -627,7 +677,7 @@ d.save(os.path.join(SH,SEB))
 # ---------------------------------------------------------------- 7. README
 FILES=(["LONG_FORM/"+f for f in sorted(os.listdir(LF))]
       +["SHORTS/"+f for f in sorted(os.listdir(SH))])
-R=["VIDEO 5 — DIFFERENTIATED DIRECT-ADDRESS FINAL PACKAGE v3.1","",
+R=["VIDEO 5 — FINAL RECORDING PACKAGE v4.0","",
  "Title:             %s"%TITLE,
  "Thumbnail:         %s"%THUMB,
  "Format:            Searchable decision + organizational mechanics",
@@ -651,7 +701,7 @@ R=["VIDEO 5 — DIFFERENTIATED DIRECT-ADDRESS FINAL PACKAGE v3.1","",
  "Watch next:        %s"%NEXT,"",
  "Slides:            Visual design and on-slide copy unchanged. 12 main",
  "                   slides.",
- "Speaker notes:     Updated for v3.1.",
+ "Speaker notes:     Updated for v4.0.",
  "Reveal deck:       Visual design and reveal states unchanged. 25 frames.",
  "Shorts:            Four separately recorded scripts.",
  "Description-only",
@@ -704,7 +754,7 @@ R+=["  README_FINAL.txt","  SHA256SUMS.txt","",
  "The Video 5 PowerPoint deck (12 slides), the reveal-build deck (25 frames),",
  "the approved thumbnail, the Career Decision Evidence Check page, every",
  "website file, every product and every other video are unchanged. Only the",
- "speaker notes in the two decks were updated, to match the v3.1 script and",
+ "speaker notes in the two decks were updated, to match the v4.0 script and",
  "its direct-address register.","",
  "This package supersedes the v3.0 package as recording authority. v3.0 is",
  "retained only as historical reference.","",
@@ -748,7 +798,7 @@ for dp,dn,fn in os.walk(ROOT):
 unexpected=sorted(on_disk-set(MANIFEST)-{SUMS})
 assert not unexpected, "unexpected files in package directory: %r"%unexpected
 
-L=["# VIDEO 5 - DIFFERENTIATED DIRECT-ADDRESS FINAL PACKAGE v3.1",
+L=["# VIDEO 5 - FINAL RECORDING PACKAGE v4.0",
    "# SHA-256 of the 12 user-facing files in this package.",
    "# SHA256SUMS.txt cannot hash itself. The master ZIP cannot contain its own",
    "# checksum either; it is published in the sibling file",

@@ -1,224 +1,234 @@
-[
- {
-  "n": 1,
-  "check": "title unchanged",
-  "result": "PASS",
-  "detail": ""
+{
+ "checks": {
+  "C1": {
+   "check": "Teleprompter TXT == v4.0 canonical",
+   "pass": true,
+   "detail": ""
+  },
+  "C2": {
+   "check": "Reading TXT == canonical spoken",
+   "pass": true,
+   "detail": ""
+  },
+  "C3": {
+   "check": "Teleprompter minus markers == reading script",
+   "pass": true,
+   "detail": ""
+  },
+  "C4": {
+   "check": "Teleprompter DOCX == TXT",
+   "pass": true,
+   "detail": ""
+  },
+  "C5": {
+   "check": "Reading DOCX == TXT",
+   "pass": true,
+   "detail": ""
+  },
+  "C6": {
+   "check": "Marker count preserved",
+   "pass": true,
+   "detail": "13"
+  },
+  "C7": {
+   "check": "No paragraph removed",
+   "pass": true,
+   "detail": "0"
+  },
+  "C8": {
+   "check": "No unsupported factual claim added",
+   "pass": true,
+   "detail": ""
+  },
+  "D1": {
+   "check": "No detached phrasing",
+   "pass": true,
+   "detail": "[]"
+  },
+  "D2": {
+   "check": "Viewer-facing second person",
+   "pass": true,
+   "detail": "48/62 = 77%"
+  },
+  "D3": {
+   "check": "First-person bridges present",
+   "pass": true,
+   "detail": "{'let me show you': 2, 'i want to help you': 1, 'i want you to': 3}"
+  },
+  "D4": {
+   "check": "'experienced professionals' is positioning",
+   "pass": true,
+   "detail": "1"
+  },
+  "D5": {
+   "check": "Not mechanically repetitive",
+   "pass": true,
+   "detail": "46%"
+  },
+  "D6": {
+   "check": "No keynote tone",
+   "pass": true,
+   "detail": ""
+  },
+  "H1": {
+   "check": "No hype or creator-bait phrasing",
+   "pass": true,
+   "detail": "[]"
+  },
+  "H2": {
+   "check": "'warning' occurrences justified",
+   "pass": true,
+   "detail": "none"
+  },
+  "H3": {
+   "check": "Editor brief names the first-30 audit table",
+   "pass": true,
+   "detail": ""
+  },
+  "H4": {
+   "check": "Editor brief names all five hook layers",
+   "pass": true,
+   "detail": ""
+  },
+  "H5": {
+   "check": "Shorts brief gives every Short a hook and a route",
+   "pass": true,
+   "detail": "4 hooks, 5 routes"
+  },
+  "M1": {
+   "check": "One memory structure, stated in plain language",
+   "pass": true,
+   "detail": "[]"
+  },
+  "M2": {
+   "check": "No second framework",
+   "pass": true,
+   "detail": ""
+  },
+  "T1": {
+   "check": "Title exact",
+   "pass": true,
+   "detail": ""
+  },
+  "T2": {
+   "check": "Thumbnail exact",
+   "pass": true,
+   "detail": ""
+  },
+  "T3": {
+   "check": "One primary CTA",
+   "pass": true,
+   "detail": "[]"
+  },
+  "T4": {
+   "check": "Watch Next correct",
+   "pass": true,
+   "detail": ""
+  },
+  "E1": {
+   "check": "Emoji system present",
+   "pass": true,
+   "detail": ""
+  },
+  "E2": {
+   "check": "Tag field present in both",
+   "pass": true,
+   "detail": ""
+  },
+  "E3": {
+   "check": "No [INSERT] placeholder",
+   "pass": true,
+   "detail": ""
+  },
+  "E4": {
+   "check": "Public block identical in both docs",
+   "pass": true,
+   "detail": ""
+  },
+  "E5": {
+   "check": "Working estimates flagged outside public copy",
+   "pass": true,
+   "detail": ""
+  },
+  "E6": {
+   "check": "Shorts recording docs are spoken copy only",
+   "pass": true,
+   "detail": "[]"
+  },
+  "S1": {
+   "check": "Main slide count",
+   "pass": true,
+   "detail": "13"
+  },
+  "S2": {
+   "check": "Reveal frame count",
+   "pass": true,
+   "detail": "22"
+  },
+  "S3": {
+   "check": "No slide XML, media or rels change",
+   "pass": true,
+   "detail": "[]"
+  },
+  "S4": {
+   "check": "All notes parts carry v4.0 notes",
+   "pass": true,
+   "detail": "35"
+  },
+  "Z1": {
+   "check": "Exactly 13 files in ZIP",
+   "pass": true,
+   "detail": "13"
+  },
+  "Z2": {
+   "check": "No _source, Python, QA or render files in ZIP",
+   "pass": true,
+   "detail": ""
+  },
+  "Z3": {
+   "check": "SHA256SUMS exactly 12 entries",
+   "pass": true,
+   "detail": "12"
+  },
+  "Z4": {
+   "check": "sha256sum -c successful",
+   "pass": true,
+   "detail": "_3_Result_Needs_Context.docx: OK\nSHORTS/Video_1_Short_4_Look_Under_The_Title.docx: OK\nSHORTS/Video_1_Shorts_EDITOR_ONLY_HIT_Brief.docx: OK\nREADME_FINAL.txt: OK\n"
+  },
+  "Z5": {
+   "check": "Sibling checksum matches",
+   "pass": true,
+   "detail": ""
+  }
  },
- {
-  "n": 2,
-  "check": "thumbnail unchanged",
-  "result": "PASS",
-  "detail": ""
+ "failures": [],
+ "change": {
+  "unchanged": 70,
+  "changed": 41,
+  "inserted": 0,
+  "removed": 0
  },
- {
-  "n": 3,
-  "check": "H.I.T. opening unchanged",
-  "result": "PASS",
-  "detail": "opening carried from v3.0 verbatim"
+ "voice": {
+  "viewer_facing": 62,
+  "second_person": 48,
+  "ratio": 0.774
  },
- {
-  "n": 4,
-  "check": "'roughly eighteen years' unchanged",
-  "result": "PASS",
-  "detail": ""
+ "words": 1409,
+ "markers": 13,
+ "slides": 13,
+ "frames": 22,
+ "prior_ver": "v3.1",
+ "prior_zip": "17e881ea97774f0d4a9e080f2077b093b6367f6f3ce14e22fe119ceb17a793e6",
+ "prior_source": "Video1TeleprompterScriptwithslidemarkers_HIT_v3.1.txt",
+ "notes_rewritten": {
+  "main": 13,
+  "reveal": 22
  },
- {
-  "n": 5,
-  "check": "onboarding proof exactly bounded",
-  "result": "PASS",
-  "detail": "47 to 75 present, team-based attribution present"
- },
- {
-  "n": 6,
-  "check": "no 30% retention figure",
-  "result": "PASS",
-  "detail": "[]"
- },
- {
-  "n": 7,
-  "check": "no >\\$2M figure",
-  "result": "PASS",
-  "detail": "[]"
- },
- {
-  "n": 8,
-  "check": "no claim that everything transfers",
-  "result": "PASS",
-  "detail": "[]"
- },
- {
-  "n": 9,
-  "check": "exactly one primary product/resource CTA in public copy",
-  "result": "PASS",
-  "detail": "['Career Evidence Starter']"
- },
- {
-  "n": 10,
-  "check": "Career Evidence Starter is that CTA",
-  "result": "PASS",
-  "detail": ""
- },
- {
-  "n": 11,
-  "check": "Field Kit is not Video 1's product CTA",
-  "result": "PASS",
-  "detail": ""
- },
- {
-  "n": 12,
-  "check": "Keep the Proof is not a competing CTA",
-  "result": "PASS",
-  "detail": ""
- },
- {
-  "n": 13,
-  "check": "public URL exact",
-  "result": "PASS",
-  "detail": ""
- },
- {
-  "n": 14,
-  "check": "no direct PDF URL anywhere",
-  "result": "PASS",
-  "detail": "[]"
- },
- {
-  "n": 15,
-  "check": "spoken CTA says about 10 to 15 focused minutes",
-  "result": "PASS",
-  "detail": ""
- },
- {
-  "n": 16,
-  "check": "Proof Line language preserved",
-  "result": "PASS",
-  "detail": ""
- },
- {
-  "n": 17,
-  "check": "Slide 12 matches the new CTA",
-  "result": "PASS",
-  "detail": ""
- },
- {
-  "n": 18,
-  "check": "slides 1-11 and 13 unchanged",
-  "result": "PASS",
-  "detail": "['image2.png', 'image3.png', 'slide12.xml']"
- },
- {
-  "n": 19,
-  "check": "only the matching reveal frame changed",
-  "result": "PASS",
-  "detail": "['image2.png', 'image3.png', 'slide21.xml']"
- },
- {
-  "n": 18.1,
-  "check": "no slide XML other than the CTA slide changed",
-  "result": "PASS",
-  "detail": ""
- },
- {
-  "n": 18.2,
-  "check": "no rels or presentation XML changed",
-  "result": "PASS",
-  "detail": ""
- },
- {
-  "n": 20,
-  "check": "four Short recording scripts unchanged",
-  "result": "PASS",
-  "detail": "4/4 content-identical to v3.0"
- },
- {
-  "n": 21,
-  "check": "publishing package and description-only public copy identical",
-  "result": "PASS",
-  "detail": ""
- },
- {
-  "n": 22,
-  "check": "no [INSERT] placeholder remains",
-  "result": "PASS",
-  "detail": "[]"
- },
- {
-  "n": 23,
-  "check": "working timestamps clearly marked as estimates",
-  "result": "PASS",
-  "detail": "warning outside copy-ready block"
- },
- {
-  "n": 24,
-  "check": "teleprompter DOCX == TXT",
-  "result": "PASS",
-  "detail": ""
- },
- {
-  "n": 25,
-  "check": "reading DOCX == TXT",
-  "result": "PASS",
-  "detail": ""
- },
- {
-  "n": 26,
-  "check": "teleprompter minus markers == reading script",
-  "result": "PASS",
-  "detail": ""
- },
- {
-  "n": 27,
-  "check": "exactly 13 markers, ordered and mapped",
-  "result": "PASS",
-  "detail": "13 markers, 13 slides"
- },
- {
-  "n": 27.1,
-  "check": "canonical source verification",
-  "result": "PASS",
-  "detail": ""
- },
- {
-  "n": 30,
-  "check": "ZIP contains exactly 13 files",
-  "result": "PASS",
-  "detail": "13"
- },
- {
-  "n": 30.1,
-  "check": "no _source, Python, temp or render files",
-  "result": "PASS",
-  "detail": ""
- },
- {
-  "n": 31,
-  "check": "SHA256SUMS has exactly 12 entries",
-  "result": "PASS",
-  "detail": "12"
- },
- {
-  "n": 32,
-  "check": "sha256sum -c passes",
-  "result": "PASS",
-  "detail": "README_FINAL.txt: OK"
- },
- {
-  "n": 33,
-  "check": "sibling ZIP checksum matches",
-  "result": "PASS",
-  "detail": "17e881ea97774f0d4a9e080f2077b093b6367f6f3ce14e22fe119ceb17a793e6"
- },
- {
-  "n": 34,
-  "check": "description-only DOCX hash reported",
-  "result": "PASS",
-  "detail": "9c4f251fe67f979a248d0df549009cf1e87fcc9c12e5af5a9ef9e2d7e5d70ce6"
- },
- {
-  "n": 35,
-  "check": "current published Video 1 assets untouched",
-  "result": "PASS",
-  "detail": "only the v2.4 recording decks were edited"
+ "hashes": {
+  "zip": "fe9d1d6a59705ff0fd212bc1cac038e9a32e1cf8fb49741477abf0edda3e3c41",
+  "desc": "228e5314198e75acb0a29d046cf074ee50c93a6b840972bd01c2d7075ca1780b",
+  "main": "bf3dee5f6ae946e1f25219bf13ca4d91250d52c18726e6f855c7bb4f97b490a1",
+  "reveal": "27e575044b35348aa112aaeebf09ab50b65b22ba430cb5bd3905f3e998dcf955",
+  "pdf": "af4e763c0cdf56f758571b0a655c76aaf92fffabbbac082d49920a21e2c2bf3c"
  }
-]
+}

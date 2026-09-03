@@ -1,0 +1,1066 @@
+VIDEO 5 — DIRECT-ADDRESS DIFFERENTIATED REBUILD v3.1
+
+This supersedes:
+Video_5_Code_Prompt_Differentiated_v3.0.txt
+
+Do NOT build from v3.0.
+
+Build Video 5 from this v3.1 prompt only.
+
+The strategic architecture, title, thumbnail, three-question method, CTA, slide system and organizational-mechanics layer remain approved.
+
+The reason for v3.1 is VOICE.
+
+Temidayo must sound like she is speaking to ONE experienced professional sitting across from her, not presenting to an abstract audience.
+
+==================================================
+NEW LOCKED VOICE REGISTER
+==================================================
+
+Write and deliver as though Temidayo is helping one viewer think through a consequential career decision.
+
+Prefer:
+- “you may be…”
+- “you might notice…”
+- “let me show you…”
+- “I want to help you…”
+- “here is what I would ask you to look at…”
+- “you do not need to…”
+- “let me show you what this looked like for me”
+- “now I want you to test the same thing in your own situation”
+
+Reduce detached phrasing such as:
+- “some people”
+- “professionals often”
+- “people may”
+- “a person should”
+- generic third-person career advice
+
+Use “experienced professionals” mainly in the channel-positioning sentence, then return immediately to “you.”
+
+Do not overuse “you” mechanically in every sentence.
+
+Vary naturally with:
+- first-person lived evidence;
+- direct questions;
+- concrete examples;
+- short explanations;
+- organizational perspective translated back to the viewer.
+
+The relationship should feel like:
+trusted practitioner → one viewer
+
+NOT:
+lecturer → crowd
+
+Every paragraph must pass this test:
+
+“Would Temidayo naturally say this to one person sitting across the table?”
+
+If not, rewrite it.
+
+==================================================
+LOCKED VIDEO 5 METADATA
+==================================================
+
+Title:
+Should I Make an Internal Move? 3 Questions to Decide
+
+Thumbnail:
+YOU MAY NOT NEED TO LEAVE
+
+Primary search phrase:
+should I make an internal move
+
+Primary CTA:
+Career Decision Evidence Check
+
+CTA URL:
+https://temidayoafonja.com/career-decisions
+
+Watch next:
+Are You Growing—or Just Being Given More Work?
+
+Format:
+Searchable decision + organizational mechanics
+
+Core distinction:
+MOVEMENT IS NOT AUTOMATICALLY GROWTH.
+
+One memorable device only:
+
+1. WILL THE WORK CHANGE?
+2. WILL YOUR JUDGMENT EXPAND?
+3. WILL THE EVIDENCE TRAVEL?
+
+Do not create an acronym.
+
+==================================================
+FACTUAL SOURCE OF TRUTH
+==================================================
+
+Approved personal evidence:
+
+About six months after Temidayo returned from maternity leave in one career chapter, her scope expanded beyond the original box of the role.
+
+Accurate lesson:
+The meaningful part was not simply more work.
+She was being trusted with different work.
+
+Do not name the employer publicly.
+
+Do not invent:
+- exact assignment;
+- exact role title connected to the moment unless separately established;
+- executive conversation;
+- quote;
+- promotion;
+- metric;
+- conflict;
+- resistance;
+- causal result.
+
+No dramatic resistance story.
+
+==================================================
+H.I.T. FIRST 30 SECONDS
+==================================================
+
+0:00–0:05
+
+Spoken:
+
+“You may not need to leave your company.”
+
+On-screen:
+YOU MAY NOT NEED TO LEAVE
+
+0:05–0:10
+
+Spoken:
+
+“You may need access to work your current role is not giving you yet.”
+
+On-screen:
+SAME COMPANY
+DIFFERENT WORK
+
+0:10–0:21
+
+Spoken:
+
+“Let me show you what this looked like for me. About six months after I returned from maternity leave in one chapter of my career, my scope expanded beyond the original box of the role. The important part was not that I had more work. I was being trusted with different work.”
+
+On-screen:
+MORE WORK?
+then
+DIFFERENT WORK
+
+0:21–0:30
+
+Spoken:
+
+“That changed how I think about internal moves, and I want to help you test yours the same way. Before you say yes, ask three questions: will the work change, will your judgment expand, and will the evidence travel?”
+
+Progressive reveal:
+WILL THE WORK CHANGE?
+WILL YOUR JUDGMENT EXPAND?
+WILL THE EVIDENCE TRAVEL?
+
+==================================================
+SLIDES / REVEAL BUILDS
+==================================================
+
+Preserve the existing approved 12-slide visual system.
+
+Do not change on-slide text unless a genuine contradiction with v3.1 is discovered.
+
+Inspect actual live decks and report:
+- main slide count;
+- reveal frame count;
+- exact notes parts requiring v3.1 update.
+
+The existing visual structure remains:
+
+1. Core distinction
+2. The three questions
+3. Will the work change?
+4. Access test
+5. Will your judgment expand?
+6. More tasks / more judgment
+7. Will the evidence travel?
+8. Result / judgment / range
+9. Decision read
+10. Conversation prompts
+11. Career Decision Evidence Check
+12. Watch Next
+
+Update speaker/editor notes so they match the v3.1 script and direct-address voice.
+
+If a slide visual itself contradicts v3.1:
+STOP and report it before changing slide XML.
+
+==================================================
+CREATE / DELIVER THESE ASSETS
+==================================================
+
+A. FINAL MAIN SLIDE DECK — outside ZIP
+- editable PPTX
+- visual slide content unchanged unless separately approved
+- notes updated to v3.1
+
+B. FINAL REVEAL-BUILD DECK — outside ZIP
+- editable PPTX
+- visual reveal content unchanged unless separately approved
+- notes updated to v3.1
+
+C. SLIDE PREVIEW PDF — outside ZIP
+
+D. FINAL 13-FILE PACKAGE ZIP
+
+Video_5_HIT_FINAL/
+    LONG_FORM/
+        Video5TeleprompterScriptwithslidemarkers_HIT_v3.1.docx
+        Video5TeleprompterScriptwithslidemarkers_HIT_v3.1.txt
+        Video5ReadingScriptnomarkers_HIT_v3.1.docx
+        Video5ReadingScriptnomarkers_HIT_v3.1.txt
+        Video_5_EDITOR_ONLY_HIT_Brief_v3.1.docx
+        Video_5_Publishing_Package_HIT_v3.1.docx
+
+    SHORTS/
+        Video_5_Short_1_You_May_Not_Need_To_Leave.docx
+        Video_5_Short_2_More_Tasks_Not_More_Judgment.docx
+        Video_5_Short_3_Maternity_Return_Scope_Expansion.docx
+        Video_5_Short_4_Three_Questions_Before_You_Move.docx
+        Video_5_Shorts_EDITOR_ONLY_HIT_Brief.docx
+
+    README_FINAL.txt
+    SHA256SUMS.txt
+
+Also create:
+Video_5_HIT_FINAL_Recording_and_Shorts_Package.zip
+
+Sibling:
+Video_5_HIT_FINAL_Recording_and_Shorts_Package.zip.sha256
+
+E. DESCRIPTION-ONLY DOCX — outside ZIP
+
+Video_5_YouTube_Description_HIT.docx
+
+==================================================
+LONG-FORM SCRIPT — CANONICAL v3.1
+==================================================
+
+Use the following EXACTLY.
+
+Do not polish it.
+Do not convert direct-address lines back into generic language.
+Do not add another framework.
+Do not add another story.
+
+BEGIN APPROVED VIDEO 5 v4.0 SCRIPT
+
+You may not need to leave your company.
+
+You may need access to work your current role is not giving you yet.
+
+Let me show you what this looked like for me.
+
+About six months after I returned from maternity leave in one chapter of my career, my scope expanded beyond the original box of the role.
+
+The important part was not that I had more work.
+
+I was being trusted with different work.
+
+That changed how I think about internal moves, and I want to help you test yours the same way.
+
+Before you say yes, ask three questions: will the work change, will your judgment expand, and will the evidence travel?
+
+[SLIDE: Core Distinction]
+
+On this channel, I help experienced professionals understand what their work is building in them, what they can carry into a different context and what they may still need to learn.
+
+And I want to help you do the same here.
+
+Sometimes leaving is the right decision.
+
+But you do not always have to change employers to reach work that expands you.
+
+An internal move can give you access to a different problem, function, customer, system or level of responsibility while letting you use context and credibility you have already built.
+
+That is one of the real advantages of moving internally.
+
+You are not beginning with zero context.
+
+But I also want you to look at the other side of the decision.
+
+An internal move is not only a decision you make.
+
+It is also a decision about what your organization is actually willing to trust you to do next.
+
+That matters to you because the same leaders who know your strengths may still see you through the work you already perform.
+
+You can be deeply valued in your current role and still find that people struggle to picture you somewhere else.
+
+So I do not want you to ask only:
+
+Do I want this role?
+
+I want you to ask:
+
+What is this organization actually willing to let me learn, decide and own?
+
+[SLIDE: The Three Questions]
+
+Here are the three questions I want you to use.
+
+Will the work change?
+
+Will your judgment expand?
+
+And will the evidence travel?
+
+The point is not simply whether you moved.
+
+The point is whether the move increased what you can carry afterward.
+
+[SLIDE: 1 — Will the Work Change?]
+
+Start with the first question:
+
+Will the work change?
+
+Do not start with the title.
+
+Picture an ordinary Monday in the new role.
+
+What would actually be different?
+
+What problems would you be close enough to understand?
+
+What systems would become visible to you?
+
+Which stakeholders would you have to influence?
+
+What context would you learn that you cannot see from where you sit today?
+
+[SLIDE: Access Test]
+
+I would look for at least some change in four places:
+
+New problems.
+
+New systems.
+
+New stakeholders.
+
+New context.
+
+You do not need everything to be unfamiliar.
+
+Part of the advantage of moving internally is that you already know some things.
+
+You may understand the culture, the decision process, the history or the relationships.
+
+That context can help you learn the new work faster.
+
+But familiarity can also make a weak move look stronger than it is.
+
+You could move to another team and discover that the nouns changed but the problems did not.
+
+You could receive a bigger title and keep solving the same problems with the same tools.
+
+And you may run into another issue that is easy to miss.
+
+The problem may not be your capability.
+
+It may be whether people can see you beyond the work they already know you for.
+
+You may find that people keep interpreting you through the role you already perform.
+
+So when you have an internal conversation, do not ask only:
+
+Is there an opening?
+
+Ask:
+
+What would I actually own in the first six months?
+
+What would I have to learn that I do not already know?
+
+What part of the organization would I understand differently because I held this role?
+
+And if people are not yet ready to trust you with the move, ask:
+
+What evidence would change that?
+
+That question matters because it turns a vague “not yet” into something you can examine.
+
+Listen for concrete work and concrete signals.
+
+If someone tells you the role is “strategic,” “visible” or “high impact,” keep going.
+
+Those words do not tell you what you will become able to do.
+
+And there is an important limit here.
+
+A move that does not change the work may still be right for you.
+
+Maybe the pay is better.
+
+Maybe the flexibility matters.
+
+Maybe the manager is better.
+
+Maybe you need stability right now.
+
+Those are legitimate reasons.
+
+I just do not want you to confuse a useful move with a developmental one.
+
+[SLIDE: 2 — Will Your Judgment Expand?]
+
+Now ask the second question:
+
+Will your judgment expand?
+
+This is where I want you to be careful with the phrase “more responsibility.”
+
+[SLIDE: More Tasks / More Judgment]
+
+More tasks can mean volume, coordination and work that no longer has a clear owner.
+
+More judgment means interpretation, tradeoffs and consequence.
+
+Your organization may give you more because you are dependable.
+
+More projects.
+
+More people to coordinate.
+
+More work that somebody needs you to absorb.
+
+That can make you busier without making the work more developmental.
+
+Your judgment is expanding when you have to work with incomplete information, weigh competing interests, recommend a direction, influence people who do not want the same thing, or own what happens after a decision.
+
+So here is what I would ask you:
+
+What will you be expected to notice that you are not expected to notice now?
+
+Which decisions will you make, shape or defend?
+
+What outcome will still be yours when the instructions are incomplete?
+
+A report can be a task.
+
+Deciding which pattern in the report matters, explaining the risk and recommending what happens next requires more judgment.
+
+Scheduling a cross-functional meeting can be a task.
+
+Creating enough shared understanding for several functions to make a decision is different work.
+
+I am not saying the operational task does not matter.
+
+I am asking what the work is forming in you.
+
+And I want you to clarify authority.
+
+If the role makes you accountable for an outcome but gives you very little ability to influence the decisions that produce it, you may be getting exposure without real ownership.
+
+This is also where the organization’s role matters.
+
+A stretch opportunity becomes developmental when you are trusted with more judgment, not simply handed more volume.
+
+So ask the hiring manager:
+
+Which decisions belong to this role?
+
+Where will I make a recommendation rather than only provide information?
+
+What will I be trusted to carry six months from now that I am not trusted to carry today?
+
+If the clearest answer is:
+
+“You’ll have more to manage,”
+
+keep investigating.
+
+[SLIDE: 3 — Will the Evidence Travel?]
+
+Then ask the third question:
+
+Will the evidence travel?
+
+This one matters because your credibility inside the company may not automatically make sense outside it.
+
+People around you may already know that you are the person who can get something done.
+
+Another employer will not have that context.
+
+They will need to understand what you actually did.
+
+[SLIDE: Result / Judgment / Range]
+
+I want you to look for three kinds of evidence.
+
+Result:
+
+What changed?
+
+Judgment:
+
+What did you notice or decide?
+
+Range:
+
+What new context can you now handle?
+
+A strong internal move should leave you with something more useful than:
+
+“I worked with a more senior team.”
+
+I want you to be able to say:
+
+I entered a new context.
+
+I was trusted to make this kind of judgment.
+
+And here is what changed because of the work.
+
+That is evidence somebody outside your company can understand.
+
+Before you accept the opportunity, ask how success will be measured.
+
+What would a strong first year allow you to point to?
+
+Which outcomes would you own rather than only support?
+
+And if you can only explain the opportunity using internal acronyms, relationships and visibility, translate it before you decide.
+
+If you cannot explain what the role could prove, you may not yet understand what it will build.
+
+[SLIDE: Decision Read]
+
+Now I want you to put the three answers together.
+
+If you have three yeses, you have a strong formation case.
+
+The work changes.
+
+Your judgment expands.
+
+The evidence can travel.
+
+That does not automatically mean you should take the role.
+
+You still need to think about the manager, compensation, workload, stability and the rest of your life.
+
+But the developmental case is strong.
+
+If you have two yeses, investigate the missing dimension.
+
+Maybe the work is new and the evidence will be visible, but the decision authority is vague.
+
+Now you have something concrete to ask about.
+
+What will I own?
+
+Which recommendations will be mine?
+
+What would have to happen for the scope to expand?
+
+If you have zero or one yes, you may be moving without adding very much to what you can carry next.
+
+Again, that does not automatically make the move wrong.
+
+A better manager, more flexibility, higher pay, stronger benefits or stability may make it exactly the right choice for you.
+
+Just name the trade accurately.
+
+You do not have to call every useful move growth.
+
+[SLIDE: Conversation Prompts]
+
+Before your next internal conversation, I want you to get answers to three things.
+
+What problems will I own in the first six months?
+
+Which decisions belong to this role?
+
+How will success be measured?
+
+Those questions will tell you much more than the title.
+
+And they will also tell you something about the organization.
+
+Is this opportunity actually designed to give you access to new work, clearer authority and visible outcomes?
+
+Because you can be capable and still end up in a poorly designed role.
+
+You may be given accountability without enough authority.
+
+You may be asked to absorb work instead of being developed into different work.
+
+Or you may find that people still see you only through the role you already perform.
+
+I am not telling you to assume the organization is wrong and you are right.
+
+I am telling you to get enough evidence before you call the opportunity growth.
+
+And you can use these same three questions on an external opportunity.
+
+The external role does not win simply because it is outside.
+
+The internal role does not win simply because it is familiar.
+
+I want you to compare which option gives you meaningful access to different work, stronger judgment and clearer evidence at a cost you can responsibly carry.
+
+That is a much better comparison than simply:
+
+Stay or go?
+
+There are also situations where an internal move will not solve the problem you are facing.
+
+The organization may not contain the work you need.
+
+The role may offer accountability without authority.
+
+Or the environment itself may be unhealthy.
+
+If your health or safety is at risk, or you are dealing with harassment or discrimination, you do not need to optimize an internal-mobility strategy before protecting yourself and getting appropriate support.
+
+And your career decision sits inside your actual life.
+
+Pay, benefits, caregiving, location, immigration status, energy and timing can all legitimately change the answer.
+
+These three questions help you read the work.
+
+They do not erase the rest of your life.
+
+[SLIDE: Career Decision Evidence Check]
+
+Before your next internal conversation, write one sentence under each question.
+
+What different work will I enter?
+
+What judgment will I be trusted to carry?
+
+What evidence could I explain a year from now?
+
+If you are actively deciding whether to stay, move internally or leave, I made the Career Decision Evidence Check to help you organize the evidence behind that choice.
+
+You can find it at temidayoafonja.com/career-decisions.
+
+[SLIDE: Watch Next]
+
+And I want to leave you with one warning underneath all of this.
+
+More responsibility can look like growth when it is really just more work.
+
+That is what I want to help you test next.
+
+Watch Are You Growing—or Just Being Given More Work?
+
+You may not need to leave.
+
+But your next move should increase what you can carry.
+
+END APPROVED VIDEO 5 v4.0 SCRIPT
+
+==================================================
+CLEAN READING SCRIPT
+==================================================
+
+Create:
+Video5ReadingScriptnomarkers_HIT_v3.1.docx
+Video5ReadingScriptnomarkers_HIT_v3.1.txt
+
+Exact spoken-language match to teleprompter after slide markers are removed.
+
+==================================================
+EDITOR-ONLY BRIEF
+==================================================
+
+Create:
+Video_5_EDITOR_ONLY_HIT_Brief_v3.1.docx
+
+Add a DIRECT-ADDRESS REGISTER section:
+
+Temidayo is speaking to one experienced professional.
+
+Editing should support intimacy:
+- hold direct eye contact where possible;
+- avoid visual treatment that makes this feel like a keynote;
+- do not overuse full-screen quote cards;
+- let direct questions remain attached to Temidayo’s face;
+- use slides to carry structure, not personality;
+- keep the organizational layer translated back to the viewer.
+
+Key relational beats:
+“Let me show you what this looked like for me.”
+“I want to help you test yours the same way.”
+“And I want to help you do the same here.”
+“Here is what I would ask you.”
+“I want you to compare…”
+
+Do not cut these as filler.
+They are part of the viewer relationship.
+
+==================================================
+PUBLISHING PACKAGE
+==================================================
+
+Create:
+Video_5_Publishing_Package_HIT_v3.1.docx
+
+Use the same metadata and description architecture as v3.0, with this revised copy-ready description:
+
+You may not need to leave your company to find work that expands your career.
+
+If you are considering an internal move, I want to help you look past the title and test what the opportunity could actually build in you.
+
+Use three questions:
+
+✨ Will the work change?
+
+✨ Will your judgment expand?
+
+✨ Will the evidence travel?
+
+I also want you to look at the organizational side of the decision.
+
+What is the company actually willing to let you learn, decide and own?
+
+You can be deeply valued in your current role and still find that people struggle to picture you somewhere else.
+
+The real question is not simply whether you moved.
+
+It is whether the move increased what you can carry afterward.
+
+🧭 CAREER DECISION EVIDENCE CHECK
+
+If you are actively deciding whether to stay, move internally or leave, use the Career Decision Evidence Check to organize the evidence behind your choice:
+
+https://temidayoafonja.com/career-decisions
+
+⏱️ CHAPTERS
+
+Generate script-derived WORKING timestamp estimates using:
+
+You May Not Need to Leave
+What an Internal Move Really Gives You
+The 3 Questions for an Internal Move
+Will the Work Change?
+When People Still See the Old You
+Will Your Judgment Expand?
+More Tasks vs. More Judgment
+Will the Evidence Travel?
+Read the Three Answers
+What the Opportunity Says About the Organization
+When an Internal Move Will Not Solve the Problem
+Career Decision Evidence Check
+Are You Growing—or Just Being Given More Work?
+
+Insert actual estimates directly.
+No [INSERT] placeholder.
+
+▶️ WATCH NEXT
+
+Are You Growing—or Just Being Given More Work?
+[ADD VIDEO 6 LINK WHEN LIVE]
+
+🔗 CONNECT AND EXPLORE
+
+Website:
+https://temidayoafonja.com
+
+LinkedIn:
+https://www.linkedin.com/in/temidayo-afonja
+
+Substack:
+https://temidayoafonja.substack.com
+
+#InternalMobility #CareerGrowth #CareerDecision
+
+PINNED COMMENT:
+
+If you are considering an internal move, which question is least clear for you?
+
+1. Will the work change?
+2. Will my judgment expand?
+3. Will the evidence travel?
+
+Then ask:
+
+What is the organization actually willing to trust me to do next?
+
+You do not need to share confidential details.
+
+If you are actively deciding whether to stay, move internally or leave, the Career Decision Evidence Check is here:
+
+https://temidayoafonja.com/career-decisions
+
+YOUTUBE TAG FIELD:
+
+should I make an internal move, internal move, internal mobility, internal job transfer, internal hiring, career growth, career decision, should I leave my company, career portability, internal career move, career transition, experienced professionals, Temidayo Afonja, Capability Formation
+
+==================================================
+DESCRIPTION-ONLY DOCX
+==================================================
+
+Create:
+Video_5_YouTube_Description_HIT.docx
+
+Outside ZIP.
+
+Public-copy block must be identical to publishing package.
+
+==================================================
+FOUR STANDALONE SHORTS — v3.1
+==================================================
+
+SHORT 1
+Filename:
+Video_5_Short_1_You_May_Not_Need_To_Leave.docx
+
+Spoken copy:
+
+You may not need to leave your company.
+
+You may need access to work your current role is not giving you.
+
+So before you start assuming the only answer is a new employer, ask yourself:
+
+Will the work actually change if I move internally?
+
+A good internal move can put you closer to different problems, systems, stakeholders or decisions while letting you use context you have already built.
+
+But a new title with the same work may move you on the org chart without increasing what you can carry next.
+
+SHORT 2
+Filename:
+Video_5_Short_2_More_Tasks_Not_More_Judgment.docx
+
+Spoken copy:
+
+If someone tells you an internal role comes with “more responsibility,” I want you to ask one more question:
+
+More responsibility for what?
+
+More tasks can mean volume, coordination and work that needs somewhere to go.
+
+More judgment means you have to interpret incomplete information, weigh tradeoffs, recommend a direction or own the consequence.
+
+So ask:
+
+What will I be trusted to decide that I am not trusted to decide now?
+
+If the clearest answer is:
+
+“You’ll have more to manage,”
+
+keep investigating.
+
+SHORT 3
+Filename:
+Video_5_Short_3_Maternity_Return_Scope_Expansion.docx
+
+Spoken copy:
+
+Let me show you why I stopped treating more work as automatic growth.
+
+About six months after I returned from maternity leave in one chapter of my career, my scope expanded beyond the original box of the role.
+
+But more work was not the important part.
+
+I was being trusted with different work.
+
+That is the distinction I want you to look for too.
+
+When your scope expands, do not ask only:
+
+How much more am I doing?
+
+Ask:
+
+What am I becoming trusted to do?
+
+SHORT 4
+Filename:
+Video_5_Short_4_Three_Questions_Before_You_Move.docx
+
+Spoken copy:
+
+If you are considering an internal move, I want you to ask three questions before you say yes.
+
+Will the work change?
+
+Will my judgment expand?
+
+Will the evidence travel?
+
+Three yeses give you a strong developmental case.
+
+Two yeses mean I would investigate or negotiate the missing dimension.
+
+Zero or one may mean you are moving without adding very much to what you can carry next.
+
+That does not automatically make the move wrong.
+
+Pay, flexibility, stability or a better manager may still make it right for you.
+
+Just make the trade deliberately.
+
+==================================================
+SHORTS EDITOR-ONLY BRIEF
+==================================================
+
+Create:
+Video_5_Shorts_EDITOR_ONLY_HIT_Brief.docx
+
+Add:
+DIRECT ADDRESS IS PART OF THE CREATIVE.
+
+Temidayo is speaking to one viewer.
+Do not edit the Shorts into generic motivational advice.
+
+Retain:
+- “ask yourself”
+- “I want you to ask”
+- “Let me show you”
+- “That is the distinction I want you to look for too”
+
+Keep all previous visual restrictions:
+- no maternity/baby stock;
+- no generic office B-roll;
+- no transfer arrows;
+- no fake shock;
+- no company logos.
+
+==================================================
+README
+==================================================
+
+Create README_FINAL.txt.
+
+Record:
+
+VIDEO 5 — DIFFERENTIATED DIRECT-ADDRESS FINAL PACKAGE v3.1
+
+Title:
+Should I Make an Internal Move? 3 Questions to Decide
+
+Thumbnail:
+YOU MAY NOT NEED TO LEAVE
+
+Voice:
+Temidayo speaks to one experienced professional, not an abstract audience.
+
+Format:
+Searchable decision + organizational mechanics
+
+Memory structure:
+Will the work change?
+Will your judgment expand?
+Will the evidence travel?
+
+Personal proof:
+About six months after returning from maternity leave in one career chapter, Temidayo’s scope expanded beyond the original box of the role. The meaningful part was being trusted with different work.
+
+Primary CTA:
+Career Decision Evidence Check
+
+CTA URL:
+https://temidayoafonja.com/career-decisions
+
+Watch next:
+Are You Growing—or Just Being Given More Work?
+
+==================================================
+CANONICAL SOURCE VERIFICATION
+==================================================
+
+Use this uploaded prompt file as canonical:
+
+Video_5_Code_Prompt_Differentiated_Direct_Address_v3.1.txt
+
+Extract:
+
+BEGIN APPROVED VIDEO 5 v4.0 SCRIPT
+to
+END APPROVED VIDEO 5 v4.0 SCRIPT
+
+Compare literally against:
+
+Video5TeleprompterScriptwithslidemarkers_HIT_v3.1.txt
+after removing only slide-marker lines,
+
+and:
+
+Video5ReadingScriptnomarkers_HIT_v3.1.txt
+
+Check:
+- every word;
+- punctuation;
+- apostrophes;
+- quotes;
+- em dashes;
+- capitalization;
+- paragraph order;
+- all 12 marker names;
+- all 12 marker positions.
+
+If canonical file missing:
+STOP final lock.
+Do not hand-transcribe.
+
+==================================================
+DIRECT-ADDRESS QA — ADD TO ALL PRIOR QA
+==================================================
+
+Run all prior Video 5 QA plus these:
+
+1. Search long-form for:
+   “some people”
+   “professionals often”
+   “people may”
+   “a person should”
+   Report any occurrence and its context.
+
+2. Confirm viewer-facing career situations predominantly use direct second person.
+
+3. Confirm the script contains natural first-person bridges:
+   - “Let me show you…”
+   - “I want to help you…”
+   - “I want you to…”
+
+4. Confirm “experienced professionals” is used as positioning, not as repeated detached audience language.
+
+5. Confirm organizational mechanics are translated back to what they mean for the viewer.
+
+6. Confirm direct address is not mechanically repeated every sentence.
+
+7. Confirm no conference/keynote tone.
+
+8. Confirm no generic “some people…” teaching where “you may…” is more natural.
+
+9. Confirm the Shorts also speak to one viewer.
+
+10. Confirm no additional mnemonic.
+
+11. Confirm slides remain visually unchanged unless an actual contradiction is separately approved.
+
+12. Confirm notes are updated to v3.1.
+
+==================================================
+FINAL COMPLETION
+==================================================
+
+Use the same clean 13-file allowlist, checksums, rendering, description comparison, slide/reveal verification, preview PDF, PPTX hashes and completion report requirements from v3.0.
+
+If all checks pass, mark:
+
+VIDEO 5 — FINAL + LOCKED FOR RECORDING
+
+This v3.1 supersedes v3.0.

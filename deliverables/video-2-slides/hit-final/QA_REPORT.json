@@ -1,7 +1,7 @@
 {
  "checks": {
   "C1": {
-   "check": "Teleprompter TXT == revised canonical",
+   "check": "Teleprompter TXT == v4.0 canonical",
    "pass": true,
    "detail": ""
   },
@@ -16,17 +16,17 @@
    "detail": ""
   },
   "C4": {
-   "check": "Teleprompter DOCX == canonical",
+   "check": "Teleprompter DOCX == TXT",
    "pass": true,
    "detail": ""
   },
   "C5": {
-   "check": "Reading DOCX == canonical spoken",
+   "check": "Reading DOCX == TXT",
    "pass": true,
    "detail": ""
   },
   "C6": {
-   "check": "Marker count and order preserved",
+   "check": "Marker count preserved",
    "pass": true,
    "detail": "13"
   },
@@ -36,134 +36,144 @@
    "detail": "0"
   },
   "C8": {
-   "check": "Revision is bounded, not a rewrite",
+   "check": "No unsupported factual claim added",
    "pass": true,
-   "detail": "unchanged 62 vs changed 46"
+   "detail": ""
   },
   "D1": {
-   "check": "No detached phrasing in long-form or Shorts",
+   "check": "No detached phrasing",
    "pass": true,
    "detail": "[]"
   },
   "D2": {
-   "check": "Viewer-facing situations predominantly second person",
+   "check": "Viewer-facing second person",
    "pass": true,
-   "detail": "39 of 44 viewer-facing paragraphs (89%)"
+   "detail": "39/44 = 89%"
   },
   "D3": {
-   "check": "First-person evidence bridges back to the viewer",
+   "check": "First-person bridges present",
    "pass": true,
-   "detail": "{'i want to help you': 1, 'i want you to': 5, 'that is what i want to help you': 1}"
+   "detail": "{'i want to help you': 1, 'i want you to': 5}"
   },
   "D4": {
-   "check": "'experienced professionals' is positioning language",
+   "check": "'experienced professionals' is positioning",
    "pass": true,
-   "detail": "count=1"
+   "detail": "1"
   },
   "D5": {
-   "check": "Organizational mechanics carry viewer consequence",
+   "check": "Not mechanically repetitive",
    "pass": true,
-   "detail": ""
+   "detail": "47%"
   },
   "D6": {
-   "check": "Direct address not mechanically repetitive",
+   "check": "No keynote tone",
    "pass": true,
-   "detail": "47% of all spoken paragraphs"
+   "detail": ""
   },
-  "D7": {
-   "check": "No keynote or conference voice",
+  "H1": {
+   "check": "No hype or creator-bait phrasing",
    "pass": true,
    "detail": "[]"
   },
-  "D8": {
-   "check": "No generic career-article phrasing",
+  "H2": {
+   "check": "'warning' occurrences justified",
+   "pass": true,
+   "detail": "none"
+  },
+  "H3": {
+   "check": "Editor brief names the first-30 audit table",
    "pass": true,
    "detail": ""
   },
-  "D9": {
-   "check": "No unsupported fact added",
+  "H4": {
+   "check": "Editor brief names all five hook layers",
    "pass": true,
-   "detail": "inserted 0"
+   "detail": ""
   },
-  "D10": {
-   "check": "No additional mnemonic",
+  "H5": {
+   "check": "Shorts brief gives every Short a hook and a route",
    "pass": true,
-   "detail": "'acronym' occurrences prior 1, revised 1"
+   "detail": "4 hooks, 5 routes"
   },
-  "D11": {
-   "check": "One primary CTA remains",
+  "M1": {
+   "check": "One memory structure, stated in plain language",
    "pass": true,
    "detail": "[]"
   },
-  "D12": {
-   "check": "Watch Next remains correct",
+  "M2": {
+   "check": "No second framework",
    "pass": true,
    "detail": ""
   },
-  "D13": {
-   "check": "Every Short speaks to one viewer",
-   "pass": true,
-   "detail": "{'Video_2_Short_1_Doing_Well_Fewer_Options.docx': True, 'Video_2_Short_2_Indispensable_Not_Marketable.docx': True, 'Video_2_Short_3_Not_Everything_Travels.docx': True, 'Video_2_Short_4_Remove_Company_Nouns.docx': True}"
-  },
-  "D14": {
-   "check": "Both editor briefs carry the direct-address section",
+  "T1": {
+   "check": "Title exact",
    "pass": true,
    "detail": ""
   },
-  "D15": {
-   "check": "Slides visually unchanged",
+  "T2": {
+   "check": "Thumbnail exact",
+   "pass": true,
+   "detail": ""
+  },
+  "T3": {
+   "check": "One primary CTA",
    "pass": true,
    "detail": "[]"
   },
-  "D16": {
-   "check": "Only notes parts changed in both PPTX",
-   "pass": true,
-   "detail": "13 / 23"
-  },
-  "D17": {
-   "check": "Public description searchable and copy-ready",
+  "T4": {
+   "check": "Watch Next correct",
    "pass": true,
    "detail": ""
   },
-  "D18": {
-   "check": "Working chapters flagged as estimates",
+  "E1": {
+   "check": "Emoji system present",
    "pass": true,
    "detail": ""
   },
-  "D19": {
+  "E2": {
+   "check": "Tag field present in both",
+   "pass": true,
+   "detail": ""
+  },
+  "E3": {
    "check": "No [INSERT] placeholder",
    "pass": true,
    "detail": ""
   },
-  "D20": {
-   "check": "Publishing public block == description-only public block",
+  "E4": {
+   "check": "Public block identical in both docs",
    "pass": true,
    "detail": ""
   },
-  "D21": {
-   "check": "Recording docs contain no editor instructions",
+  "E5": {
+   "check": "Working estimates flagged outside public copy",
+   "pass": true,
+   "detail": ""
+  },
+  "E6": {
+   "check": "Shorts recording docs are spoken copy only",
    "pass": true,
    "detail": "[]"
   },
-  "D22": {
-   "check": "Both EDITOR ONLY docs clearly labelled",
-   "pass": true,
-   "detail": ""
-  },
-  "P1": {
+  "S1": {
    "check": "Main slide count",
    "pass": true,
    "detail": "13"
   },
-  "P2": {
+  "S2": {
    "check": "Reveal frame count",
    "pass": true,
    "detail": "23"
   },
-  "P3": {
-   "check": "Notes updated to v3.0 direct address",
+  "S3": {
+   "check": "No slide XML, media or rels change",
    "pass": true,
-   "detail": ""
+   "detail": "[]"
+  },
+  "S4": {
+   "check": "All notes parts carry v4.0 notes",
+   "pass": true,
+   "detail": "36"
   },
   "Z1": {
    "check": "Exactly 13 files in ZIP",
@@ -171,35 +181,30 @@
    "detail": "13"
   },
   "Z2": {
-   "check": "No _source, Python, temp or render files in ZIP",
+   "check": "No _source, Python, QA or render files in ZIP",
    "pass": true,
    "detail": ""
   },
   "Z3": {
-   "check": "SHA256SUMS.txt exactly 12 entries",
+   "check": "SHA256SUMS exactly 12 entries",
    "pass": true,
    "detail": "12"
   },
   "Z4": {
    "check": "sha256sum -c successful",
    "pass": true,
-   "detail": "rketable.docx: OK\nSHORTS/Video_2_Short_3_Not_Everything_Travels.docx: OK\nSHORTS/Video_2_Short_4_Remove_Company_Nouns.docx: OK\nSHORTS/Video_2_Shorts_EDITOR_ONLY_HIT_Brief.docx: OK\nREADME_FINAL.txt: OK\n"
+   "detail": "_Not_Everything_Travels.docx: OK\nSHORTS/Video_2_Short_4_Remove_Company_Nouns.docx: OK\nSHORTS/Video_2_Shorts_EDITOR_ONLY_HIT_Brief.docx: OK\nREADME_FINAL.txt: OK\n"
   },
   "Z5": {
-   "check": "Sibling ZIP checksum matches",
-   "pass": true,
-   "detail": ""
-  },
-  "Z6": {
-   "check": "README matches archive",
+   "check": "Sibling checksum matches",
    "pass": true,
    "detail": ""
   }
  },
  "failures": [],
- "change_report": {
-  "unchanged": 62,
-  "changed": 46,
+ "change": {
+  "unchanged": 108,
+  "changed": 0,
   "inserted": 0,
   "removed": 0
  },
@@ -208,21 +213,22 @@
   "second_person": 39,
   "ratio": 0.886
  },
- "words_prior": 1131,
- "words_new": 1258,
+ "words": 1258,
  "markers": 13,
  "slides": 13,
  "frames": 23,
- "notes_parts": {
-  "main": 13,
-  "reveal": 23
+ "prior_ver": "v3.0 direct address",
+ "prior_zip": "f8ebaa45f657d5fbd60440a54bde58127c343b15fd0b8956c84d6cf7701e18a9",
+ "prior_source": "Video2TeleprompterScriptwithslidemarkers_HIT_v3.0_DIRECT_ADDRESS.txt",
+ "notes_rewritten": {
+  "main": 3,
+  "reveal": 6
  },
  "hashes": {
-  "zip": "f8ebaa45f657d5fbd60440a54bde58127c343b15fd0b8956c84d6cf7701e18a9",
-  "desc_docx": "50a84e39dfc168972125d75b528ba25cb34adf92c2321ea4797966c11d6af57f",
-  "main_pptx": "cc6ca0e8914b3f9d2248e6758793171a944c011c292aff2a6e09dd89aa1156d5",
-  "reveal_pptx": "35131b87a0802f970b674d8214f2be7a2de505e7770b1482f4be3d0e25f023e0",
-  "preview_pdf": "7917d0fafcc77d557d394e59427c37e5d6813cd2c28a210e35a0bc8415a190b0"
- },
- "prior_zip": null
+  "zip": "4f44a564c8e5826d6353a0e41efed69b4a4881c714e5579c3e802e008561d07a",
+  "desc": "db288cb632008939eae0057a751e25ac83a29576a292299e71c9d61c438dfdef",
+  "main": "d4c8755b187561111741c71f0b10928b2afdf0f571183155344be13f6d74d0f4",
+  "reveal": "4d0c7ac365518a657f3e98398c0e9ebe226157a3d68d29d3aaa9f56c4877b7fd",
+  "pdf": "7917d0fafcc77d557d394e59427c37e5d6813cd2c28a210e35a0bc8415a190b0"
+ }
 }

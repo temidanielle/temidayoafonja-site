@@ -167,3 +167,55 @@ def package(ROOT, MANIFEST, zippath, inner, header):
     zs=sha256(zippath)
     open(zippath+".sha256","w").write("%s  %s\n"%(zs,os.path.basename(zippath)))
     return zs
+
+
+# ---------------------------------------------------------------- v4.0 additions
+def hit_table(d, rows):
+    """The first-30-second H.I.T. audit table required by the v4.0 standard.
+
+    A real Word table, not space-padded columns: proportional fonts do not
+    align on spaces, and a collapsed table was a defect in an earlier pass."""
+    from docx.shared import Inches
+    from docx.enum.table import WD_TABLE_ALIGNMENT
+    HEAD=["Time","Exact spoken line","Verbal hook job","On-screen hook",
+          "Visual / editor cue","Trust / proof beat","Viewer payoff"]
+    t=d.add_table(rows=1, cols=len(HEAD))
+    t.alignment=WD_TABLE_ALIGNMENT.LEFT
+    t.style='Table Grid'
+    for i,h in enumerate(HEAD):
+        c=t.rows[0].cells[i]; c.text=""
+        p=c.paragraphs[0]; r=p.add_run(h)
+        r.bold=True; r.font.size=Pt(8); r.font.color.rgb=NAVY
+        p.paragraph_format.space_after=Pt(2)
+        shade(p,BAND_NAVY)
+    for row in rows:
+        cells=t.add_row().cells
+        for i,v in enumerate(row):
+            cells[i].text=""
+            p=cells[i].paragraphs[0]; r=p.add_run(v)
+            r.font.size=Pt(8)
+            p.paragraph_format.space_after=Pt(2)
+            p.paragraph_format.line_spacing=1.05
+    widths=[0.52,1.62,0.92,1.05,1.10,0.92,0.97]
+    for row in t.rows:
+        for i,w in enumerate(widths):
+            row.cells[i].width=Inches(w)
+    return t
+
+def hook_block(d, verbal, onscreen, visual, trust, payoff, heading=None):
+    """The five multi-layer hook elements the v4.0 standard requires to be
+    named explicitly for every long-form and every Short."""
+    if heading: H2(d,heading,before=10)
+    for label,val in (("Verbal hook",verbal),("On-screen hook",onscreen),
+                      ("Visual / editor",visual),("Trust beat",trust),
+                      ("Viewer payoff",payoff)):
+        keep(P(d,"%-18s %s"%(label+":",val),size=10.5,after=4))
+
+HYPE=["you won't believe","you won’t believe","stop scrolling","omg","hack",
+      "secret","99%","listen up","game changer","this changes everything"]
+
+def hype_scan(text):
+    """'warning' is handled separately: it is ordinary English and Video 5 uses
+    it in a legitimate sentence, so it is reported rather than banned."""
+    low=text.lower()
+    return [h for h in HYPE if h in low]

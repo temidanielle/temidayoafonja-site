@@ -1,331 +1,234 @@
 {
- "01": {
-  "check": "Title exact",
-  "pass": true,
-  "detail": ""
- },
- "02": {
-  "check": "Thumbnail exact",
-  "pass": true,
-  "detail": ""
- },
- "03": {
-  "check": "Primary search phrase exact",
-  "pass": true,
-  "detail": ""
- },
- "04": {
-  "check": "H.I.T. first 30 seconds exact",
-  "pass": true,
-  "detail": ""
- },
- "05": {
-  "check": "Maternity-return proof exact and bounded",
-  "pass": true,
-  "detail": ""
- },
- "06": {
-  "check": "Employer absent publicly",
-  "pass": true,
-  "detail": "[]"
- },
- "07": {
-  "check": "No invented assignment/result/metric/quote",
-  "pass": true,
-  "detail": "[]"
- },
- "08": {
-  "check": "Three-question structure preserved",
-  "pass": true,
-  "detail": ""
- },
- "09": {
-  "check": "No second mnemonic",
-  "pass": true,
-  "detail": ""
- },
- "10": {
-  "check": "Employee + organization dual perspective present",
-  "pass": true,
-  "detail": ""
- },
- "11": {
-  "check": "Recognition issue present, no discrimination/resistance claim",
-  "pass": true,
-  "detail": ""
- },
- "12": {
-  "check": "No claim that every internal move is growth",
-  "pass": true,
-  "detail": ""
- },
- "13": {
-  "check": "No claim that external move is automatically better",
-  "pass": true,
-  "detail": ""
- },
- "14": {
-  "check": "Pay/flexibility/benefits/stability/manager-fit tradeoff remains",
-  "pass": true,
-  "detail": ""
- },
- "15": {
-  "check": "Health/safety/harassment/discrimination boundary remains",
-  "pass": true,
-  "detail": ""
- },
- "16": {
-  "check": "Caregiving/location/immigration/energy/timing boundary remains",
-  "pass": true,
-  "detail": ""
- },
- "17": {
-  "check": "Career Decision Evidence Check is sole CTA",
-  "pass": true,
-  "detail": ""
- },
- "18": {
-  "check": "CTA production gate recorded as satisfied",
-  "pass": true,
-  "detail": ""
- },
- "19": {
-  "check": "Video 6 remains Watch Next",
-  "pass": true,
-  "detail": ""
- },
- "20": {
-  "check": "Four standalone Shorts exact",
-  "pass": true,
-  "detail": ""
- },
- "21": {
-  "check": "Short 3 uses maternity-return proof, no invented detail",
-  "pass": true,
-  "detail": ""
- },
- "22": {
-  "check": "Recording docs contain no editor instructions",
-  "pass": true,
-  "detail": "[]"
- },
- "23": {
-  "check": "Both EDITOR ONLY docs clearly labelled",
-  "pass": true,
-  "detail": ""
- },
- "24": {
-  "check": "Public description contains restrained emojis",
-  "pass": true,
-  "detail": ""
- },
- "25": {
-  "check": "Working chapters inserted directly in public copy",
-  "pass": true,
-  "detail": ""
- },
- "26": {
-  "check": "No [INSERT] placeholder",
-  "pass": true,
-  "detail": ""
- },
- "27": {
-  "check": "Working-estimates warning outside public copy",
-  "pass": true,
-  "detail": ""
- },
- "28": {
-  "check": "Publishing package public copy == description-only public copy",
-  "pass": true,
-  "detail": ""
- },
- "29": {
-  "check": "Teleprompter DOCX == TXT spoken language",
-  "pass": true,
-  "detail": ""
- },
- "30": {
-  "check": "Reading DOCX == TXT spoken language",
-  "pass": true,
-  "detail": ""
- },
- "31": {
-  "check": "Teleprompter minus markers == reading script",
-  "pass": true,
-  "detail": ""
- },
- "32": {
-  "check": "Exactly 12 slide markers, ordered one-to-one",
-  "pass": true,
-  "detail": "12"
- },
- "33": {
-  "check": "Main deck exact slide count reported",
-  "pass": true,
-  "detail": "12"
- },
- "34": {
-  "check": "Reveal deck exact frame count reported",
-  "pass": true,
-  "detail": "25"
- },
- "35": {
-  "check": "No unauthorized visual slide/reveal change",
-  "pass": true,
-  "detail": "{\"main_nonnotes\": [], \"reveal_nonnotes\": [], \"main_changed\": [\"ppt/notesSlides/notesSlide1.xml\", \"ppt/notesSlides/notesSlide2.xml\", \"ppt/notesSlides/notesSlide3.xml\", \"ppt/notesSlides/notesSlide4.xml\", \"ppt/notesSlides/notesSlide5.xml\", \"ppt/notesSlides/notesSlide6.xml\", \"ppt/notesSlides/notesSlide7.xml\", \"ppt/notesSlides/notesSlide8.xml\", \"ppt/notesSlides/notesSlide9.xml\", \"ppt/notesSlides/notesSlide10.xml\", \"ppt/notesSlides/notesSlide11.xml\", \"ppt/notesSlides/notesSlide12.xml\"], \"reveal_changed\": [\"ppt/notesSlides/notesSlide1.xml\", \"ppt/notesSlides/notesSlide2.xml\", \"ppt/notesSlides/notesSlide3.xml\", \"ppt/notesSlides/notesSlide4.xml\", \"ppt/notesSlides/notesSlide5.xml\", \"ppt/notesSlides/notesSlide6.xml\", \"ppt/notesSlides/notesSlide7.xml\", \"ppt/notesSlides/notesSlide8.xml\", \"ppt/notesSlides/notesSlide9.xml\", \"ppt/notesSlides/notesSlide10.xml\", \"ppt/notesSlides/notesSlide11.xml\", \"ppt/notesSlides/notesSlide12.xml\", \"ppt/notesSlides/notesSlide13.xml\", \"ppt/notesSlides/notesSlide14.xml\", \"ppt/notesSlides/notesSlide15.xml\", \"ppt/notesSlides/notesSlide16.xml\", \"ppt/notesSlides/notesSlide17.xml\", \"ppt/notesSlides/notesSlide18.xml\", \"ppt/notesSlides/notesSlide19.xml\", \"ppt/notesSlides/notesSlide20.xml\", \"ppt/notesSlides/notesSlide21.xml\", \"ppt/notesSlides/notesSlide22.xml\", \"ppt/notesSlides/notesSlide23.xml\", \"ppt/notesSlides/notesSlide24.xml\", \"ppt/notesSlides/notesSlide25.xml\"]}"
- },
- "36": {
-  "check": "Speaker notes updated and stale v2.0 notes removed",
-  "pass": true,
-  "detail": ""
- },
- "37": {
-  "check": "Render and visually inspect every DOCX",
-  "pass": true,
-  "detail": "{\"x5_1\": 13, \"x5_2\": 14, \"x5_3\": 5, \"x5_4\": 3, \"x5_5\": 1, \"x5_6\": 1, \"x5_7\": 1, \"x5_8\": 1, \"x5_9\": 2, \"x5_10\": 3}"
- },
- "38": {
-  "check": "Render and visually inspect main slide deck",
-  "pass": true,
-  "detail": ""
- },
- "39": {
-  "check": "Render and visually inspect reveal deck",
-  "pass": true,
-  "detail": ""
- },
- "40": {
-  "check": "No clipping/overlap/broken glyph/blank/near-empty trailing page",
-  "pass": true,
-  "detail": "{\"x5_1\": 74, \"x5_2\": 54, \"x5_3\": 71, \"x5_4\": 73, \"x5_5\": 61, \"x5_6\": 79, \"x5_7\": 73, \"x5_8\": 80, \"x5_9\": 69, \"x5_10\": 53}"
- },
- "41": {
-  "check": "Build ZIP from explicit 13-file allowlist",
-  "pass": true,
-  "detail": "['Video_5_HIT_FINAL/LONG_FORM/Video5TeleprompterScriptwithslidemarkers_HIT_v3.1.docx', 'Video_5_HIT_FINAL/LONG_FORM/Video5TeleprompterScriptwithslidemarkers_HIT_v3.1.txt', 'Video_5_HIT_FINAL/LONG_FORM/Video5ReadingScriptnomarkers_HIT_v3.1.docx', 'Video_5_HIT_FINAL/LONG_FORM/Video5ReadingScriptnomarkers_HIT_v3.1.txt', 'Video_5_HIT_FINAL/LONG_FORM/Video_5_EDITOR_ONLY_HIT_Brief_v3.1.docx', 'Video_5_HIT_FINAL/LONG_FORM/Video_5_Publishing_Package_HIT_v3.1.docx', 'Video_5_HIT_FINAL/SHORTS/Video_5_Short_1_You_May_Not_Need_To_Leave.docx', 'Video_5_HIT_FINAL/SHORTS/Video_5_Short_2_More_Tasks_Not_More_Judgment.docx', 'Video_5_HIT_FINAL/SHORTS/Video_5_Short_3_Maternity_Return_Scope_Expansion.docx', 'Video_5_HIT_FINAL/SHORTS/Video_5_Short_4_Three_Questions_Before_You_Move.docx', 'Video_5_HIT_FINAL/SHORTS/Video_5_Shorts_EDITOR_ONLY_HIT_Brief.docx', 'Video_5_HIT_FINAL/README_FINAL.txt', 'Video_5_HIT_FINAL/SHA256SUMS.txt']"
- },
- "42": {
-  "check": "Exactly 13 files in ZIP",
-  "pass": true,
-  "detail": "13"
- },
- "43": {
-  "check": "No _source/Python/temp/render files inside ZIP",
-  "pass": true,
-  "detail": ""
- },
- "44": {
-  "check": "README matches archive",
-  "pass": true,
-  "detail": ""
- },
- "45": {
-  "check": "SHA256SUMS.txt exactly 12 entries",
-  "pass": true,
-  "detail": "12"
- },
- "46": {
-  "check": "sha256sum -c successful",
-  "pass": true,
-  "detail": "_You_May_Not_Need_To_Leave.docx: OK\nSHORTS/Video_5_Short_2_More_Tasks_Not_More_Judgment.docx: OK\nSHORTS/Video_5_Short_3_Maternity_Return_Scope_Expansion.docx: OK\nSHORTS/Video_5_Short_4_Three_Questions_Before_You_Move.docx: OK\nSHORTS/Video_5_Shorts_EDITOR_ONLY_HIT_Brief.docx: OK\nREADME_FINAL.txt: OK\n"
- },
- "47": {
-  "check": "Sibling ZIP checksum matches",
-  "pass": true,
-  "detail": "0067d5530c26d2625eec0bcce131ab61cfadba6f438f5febff30d557c04d2b23 / 0067d5530c26d2625eec0bcce131ab61cfadba6f438f5febff30d557c04d2b23"
- },
- "48": {
-  "check": "Description-only DOCX SHA-256 reported",
-  "pass": true,
-  "detail": "12cde0558c6109ac3a3d75c8b77f1e34947ccbabf8d128281640831987c3252a"
- },
- "49": {
-  "check": "Main PPTX SHA-256 reported",
-  "pass": true,
-  "detail": "8f6fec230dcd46adf0e57403da48140a23481474132738d37c64956c78669de8"
- },
- "50": {
-  "check": "Reveal PPTX SHA-256 reported",
-  "pass": true,
-  "detail": "ee43aefa88ed77234ffa1392185e10c0e57432d3d7d223c19a5074e6373a89fb"
- },
- "51": {
-  "check": "Slide-preview PDF SHA-256 reported",
-  "pass": true,
-  "detail": "b8443372b168308bc188863be45f903349f63246ab2c7af0a82913dfdfc5bdb1"
- },
- "52": {
-  "check": "No website/product/other-video file changed",
-  "pass": true,
-  "detail": "['M deliverables/video-5-slides/out/Video_5_Main_Slides.pptx', ' M deliverables/video-5-slides/out/Video_5_Reveal_Builds.pptx']"
- },
- "53": {
-  "check": "No detached phrasing in the long-form",
-  "pass": true,
-  "detail": "[]"
- },
- "54": {
-  "check": "Viewer-facing content predominantly direct second person",
-  "pass": true,
-  "detail": "92 of 124 substantive paragraphs (74%); 56% across all 191 paragraphs; 35 carry first-person lived voice"
- },
- "55": {
-  "check": "Natural first-person bridges present",
-  "pass": true,
-  "detail": "{\"Let me show you\": 1, \"I want to help you\": 3, \"I want you to\": 9}"
- },
- "56": {
-  "check": "'experienced professionals' is positioning, used once",
-  "pass": true,
-  "detail": "count=1"
- },
- "57": {
-  "check": "Organizational mechanics translated back to the viewer",
-  "pass": true,
-  "detail": "5 of 5 org lines address the viewer"
- },
- "58": {
-  "check": "Direct address is not mechanically repeated every sentence",
-  "pass": true,
-  "detail": "56% of all spoken paragraphs contain second person"
- },
- "59": {
-  "check": "No conference or keynote tone",
-  "pass": true,
-  "detail": "[]"
- },
- "60": {
-  "check": "No generic third-person teaching in Shorts or public copy",
-  "pass": true,
-  "detail": "[]"
- },
- "61": {
-  "check": "Every Short speaks to one viewer",
-  "pass": true,
-  "detail": "{\"Video_5_Short_1_You_May_Not_Need_To_Leave.docx\": true, \"Video_5_Short_2_More_Tasks_Not_More_Judgment.docx\": true, \"Video_5_Short_3_Maternity_Return_Scope_Expansion.docx\": true, \"Video_5_Short_4_Three_Questions_Before_You_Move.docx\": true}"
- },
- "62": {
-  "check": "No additional mnemonic",
-  "pass": true,
-  "detail": ""
- },
- "63": {
-  "check": "Slides remain visually unchanged",
-  "pass": true,
-  "detail": ""
- },
- "64": {
-  "check": "Notes updated to v3.1",
-  "pass": true,
-  "detail": ""
- },
- "_zip_sha256": "0067d5530c26d2625eec0bcce131ab61cfadba6f438f5febff30d557c04d2b23",
- "_summary": {
-  "total": 64,
-  "core": 52,
-  "direct_address": 12,
-  "passed": 64,
-  "failed": 0,
-  "failures": []
+ "checks": {
+  "C1": {
+   "check": "Teleprompter TXT == v4.0 canonical",
+   "pass": true,
+   "detail": ""
+  },
+  "C2": {
+   "check": "Reading TXT == canonical spoken",
+   "pass": true,
+   "detail": ""
+  },
+  "C3": {
+   "check": "Teleprompter minus markers == reading script",
+   "pass": true,
+   "detail": ""
+  },
+  "C4": {
+   "check": "Teleprompter DOCX == TXT",
+   "pass": true,
+   "detail": ""
+  },
+  "C5": {
+   "check": "Reading DOCX == TXT",
+   "pass": true,
+   "detail": ""
+  },
+  "C6": {
+   "check": "Marker count preserved",
+   "pass": true,
+   "detail": "12"
+  },
+  "C7": {
+   "check": "No paragraph removed",
+   "pass": true,
+   "detail": "0"
+  },
+  "C8": {
+   "check": "No unsupported factual claim added",
+   "pass": true,
+   "detail": ""
+  },
+  "D1": {
+   "check": "No detached phrasing",
+   "pass": true,
+   "detail": "[]"
+  },
+  "D2": {
+   "check": "Viewer-facing second person",
+   "pass": true,
+   "detail": "89/105 = 85%"
+  },
+  "D3": {
+   "check": "First-person bridges present",
+   "pass": true,
+   "detail": "{'let me show you': 1, 'i want to help you': 3, 'i want you to': 9, 'here is what i would': 1}"
+  },
+  "D4": {
+   "check": "'experienced professionals' is positioning",
+   "pass": true,
+   "detail": "1"
+  },
+  "D5": {
+   "check": "Not mechanically repetitive",
+   "pass": true,
+   "detail": "55%"
+  },
+  "D6": {
+   "check": "No keynote tone",
+   "pass": true,
+   "detail": ""
+  },
+  "H1": {
+   "check": "No hype or creator-bait phrasing",
+   "pass": true,
+   "detail": "[]"
+  },
+  "H2": {
+   "check": "'warning' occurrences justified",
+   "pass": true,
+   "detail": "['And I want to leave you with one warning underneath all of this.']"
+  },
+  "H3": {
+   "check": "Editor brief names the first-30 audit table",
+   "pass": true,
+   "detail": ""
+  },
+  "H4": {
+   "check": "Editor brief names all five hook layers",
+   "pass": true,
+   "detail": ""
+  },
+  "H5": {
+   "check": "Shorts brief gives every Short a hook and a route",
+   "pass": true,
+   "detail": "4 hooks, 5 routes"
+  },
+  "M1": {
+   "check": "One memory structure, stated in plain language",
+   "pass": true,
+   "detail": "[]"
+  },
+  "M2": {
+   "check": "No second framework",
+   "pass": true,
+   "detail": ""
+  },
+  "T1": {
+   "check": "Title exact",
+   "pass": true,
+   "detail": ""
+  },
+  "T2": {
+   "check": "Thumbnail exact",
+   "pass": true,
+   "detail": ""
+  },
+  "T3": {
+   "check": "One primary CTA",
+   "pass": true,
+   "detail": "[]"
+  },
+  "T4": {
+   "check": "Watch Next correct",
+   "pass": true,
+   "detail": ""
+  },
+  "E1": {
+   "check": "Emoji system present",
+   "pass": true,
+   "detail": ""
+  },
+  "E2": {
+   "check": "Tag field present in both",
+   "pass": true,
+   "detail": ""
+  },
+  "E3": {
+   "check": "No [INSERT] placeholder",
+   "pass": true,
+   "detail": ""
+  },
+  "E4": {
+   "check": "Public block identical in both docs",
+   "pass": true,
+   "detail": ""
+  },
+  "E5": {
+   "check": "Working estimates flagged outside public copy",
+   "pass": true,
+   "detail": ""
+  },
+  "E6": {
+   "check": "Shorts recording docs are spoken copy only",
+   "pass": true,
+   "detail": "[]"
+  },
+  "S1": {
+   "check": "Main slide count",
+   "pass": true,
+   "detail": "12"
+  },
+  "S2": {
+   "check": "Reveal frame count",
+   "pass": true,
+   "detail": "25"
+  },
+  "S3": {
+   "check": "No slide XML, media or rels change",
+   "pass": true,
+   "detail": "[]"
+  },
+  "S4": {
+   "check": "All notes parts carry v4.0 notes",
+   "pass": true,
+   "detail": "37"
+  },
+  "Z1": {
+   "check": "Exactly 13 files in ZIP",
+   "pass": true,
+   "detail": "13"
+  },
+  "Z2": {
+   "check": "No _source, Python, QA or render files in ZIP",
+   "pass": true,
+   "detail": ""
+  },
+  "Z3": {
+   "check": "SHA256SUMS exactly 12 entries",
+   "pass": true,
+   "detail": "12"
+  },
+  "Z4": {
+   "check": "sha256sum -c successful",
+   "pass": true,
+   "detail": "pe_Expansion.docx: OK\nSHORTS/Video_5_Short_4_Three_Questions_Before_You_Move.docx: OK\nSHORTS/Video_5_Shorts_EDITOR_ONLY_HIT_Brief.docx: OK\nREADME_FINAL.txt: OK\n"
+  },
+  "Z5": {
+   "check": "Sibling checksum matches",
+   "pass": true,
+   "detail": ""
+  }
+ },
+ "failures": [],
+ "change": {
+  "unchanged": 191,
+  "changed": 0,
+  "inserted": 0,
+  "removed": 0
+ },
+ "voice": {
+  "viewer_facing": 105,
+  "second_person": 89,
+  "ratio": 0.848
+ },
+ "words": 1980,
+ "markers": 12,
+ "slides": 12,
+ "frames": 25,
+ "prior_ver": "v3.1",
+ "prior_zip": "0067d5530c26d2625eec0bcce131ab61cfadba6f438f5febff30d557c04d2b23",
+ "prior_source": "Video5TeleprompterScriptwithslidemarkers_HIT_v3.1.txt",
+ "notes_rewritten": {
+  "main": 1,
+  "reveal": 1
+ },
+ "hashes": {
+  "zip": "da93ca06af102bf12f4ae23b445dbcb4bebcd579ba42bfe86e31c5f82e4ad65a",
+  "desc": "d43d8a8a6666c612466aa7706f88a19c79af8fec7b784ed77e27ca86521e4f57",
+  "main": "a2d30edcc49e6f9b42be74b457aa16e5a049338feff7fe70e388c5c8743d5447",
+  "reveal": "a1a85d9d9d3d486e54a6e6832d9ca372e557386969f07d21305b9cb3513e30c7",
+  "pdf": "b8443372b168308bc188863be45f903349f63246ab2c7af0a82913dfdfc5bdb1"
  }
 }

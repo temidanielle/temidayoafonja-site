@@ -1,4 +1,4 @@
-VIDEO 3 — DIRECT-ADDRESS FINAL RECORDING PACKAGE v3.0
+VIDEO 3 — FINAL RECORDING PACKAGE v4.0
 
 Title:             3 Things to Do Before Quitting Your Job
 Thumbnail:         WAIT BEFORE YOU QUIT
@@ -32,7 +32,7 @@ Watch next:        How to Change Jobs Without Starting Your Career Over (Video 1
 
 Slides:            Visual design and on-slide copy unchanged. 13 main
                    slides.
-Speaker notes:     Updated for v3.0 direct address.
+Speaker notes:     Updated for v4.0.
 Reveal deck:       Visual design and reveal states unchanged. 27 frames.
 Shorts:            Four separately recorded scripts, revised for direct
                    address.
@@ -46,23 +46,23 @@ WHAT EACH FILE IS
 
 LONG_FORM/
 
-  Video3TeleprompterScriptwithslidemarkers_HIT_v3.0_DIRECT_ADDRESS.docx
-  Video3TeleprompterScriptwithslidemarkers_HIT_v3.0_DIRECT_ADDRESS.txt
+  Video3TeleprompterScriptwithslidemarkers_HIT_v4.0.docx
+  Video3TeleprompterScriptwithslidemarkers_HIT_v4.0.txt
       Temidayo's recording copy. Spoken script in large text; slide markers
       in tinted bands. The markers are not spoken.
 
-  Video3ReadingScriptnomarkers_HIT_v3.0_DIRECT_ADDRESS.docx
-  Video3ReadingScriptnomarkers_HIT_v3.0_DIRECT_ADDRESS.txt
+  Video3ReadingScriptnomarkers_HIT_v4.0.docx
+  Video3ReadingScriptnomarkers_HIT_v4.0.txt
       The same spoken words with the slide markers removed.
 
-  Video_3_EDITOR_ONLY_HIT_Brief_v3.0_DIRECT_ADDRESS.docx
+  Video_3_EDITOR_ONLY_HIT_Brief_v4.0.docx
       For the editor. Locked metadata, the direct-address register, the
       H.I.T. first-30-second map, the slide and reveal maps, the overlay
       principle, the factual and tone boundaries, CTA and watch-next
       routing, editing rhythm, the visual do-not-use list and the
       speaker-note record. Not for the teleprompter.
 
-  Video_3_Publishing_Package_HIT_v3.0_DIRECT_ADDRESS.docx
+  Video_3_Publishing_Package_HIT_v4.0.docx
       Title, thumbnail, search language, the copy-ready description,
       working chapter estimates and the pinned comment.
 
@@ -78,12 +78,12 @@ SHORTS/
 
 ALL FILES IN THIS PACKAGE
 
-  LONG_FORM/Video3ReadingScriptnomarkers_HIT_v3.0_DIRECT_ADDRESS.docx
-  LONG_FORM/Video3ReadingScriptnomarkers_HIT_v3.0_DIRECT_ADDRESS.txt
-  LONG_FORM/Video3TeleprompterScriptwithslidemarkers_HIT_v3.0_DIRECT_ADDRESS.docx
-  LONG_FORM/Video3TeleprompterScriptwithslidemarkers_HIT_v3.0_DIRECT_ADDRESS.txt
-  LONG_FORM/Video_3_EDITOR_ONLY_HIT_Brief_v3.0_DIRECT_ADDRESS.docx
-  LONG_FORM/Video_3_Publishing_Package_HIT_v3.0_DIRECT_ADDRESS.docx
+  LONG_FORM/Video3ReadingScriptnomarkers_HIT_v4.0.docx
+  LONG_FORM/Video3ReadingScriptnomarkers_HIT_v4.0.txt
+  LONG_FORM/Video3TeleprompterScriptwithslidemarkers_HIT_v4.0.docx
+  LONG_FORM/Video3TeleprompterScriptwithslidemarkers_HIT_v4.0.txt
+  LONG_FORM/Video_3_EDITOR_ONLY_HIT_Brief_v4.0.docx
+  LONG_FORM/Video_3_Publishing_Package_HIT_v4.0.docx
   SHORTS/Video_3_Short_1_Before_You_Lose_Context.docx
   SHORTS/Video_3_Short_2_Keep_Proof_Not_Files.docx
   SHORTS/Video_3_Short_3_Context_Disappears_Fast.docx
@@ -113,7 +113,7 @@ audience. No paragraph was deleted and no new claim was added.
 
 Prior locked package: v2.0, spoken word count 1,205,
                       ZIP 2455a0d08105e3148215191e62ead6204c8e4cdf896525592a2983b8c14ea177.
-This package:         v3.0 direct address, spoken word count 1,251.
+This package:         v4.0, spoken word count 1,251.
 
 ----------------------------------------------------------------------
 

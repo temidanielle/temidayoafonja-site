@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
-"""Video 4 v3.0 direct-address speaker/editor notes. Notes parts only.
+"""Video 4 v4.0 speaker/editor notes. Notes parts only.
 
 Timings are script-derived working estimates at 145 wpm (1,355 words, ~9:20).
-Every quoted anchor is verbatim from the v3.0 direct-address script."""
+Every quoted anchor is verbatim from the v4.0 script."""
 
 NOTES=[
 # 1 Career Path
@@ -32,7 +32,7 @@ learning. Do not trim those.""",
 The central distinction of the video. Reveal the second half after the first
 has been stated.
 
-Note the direct-address framing in v3.0: "when someone asks you, 'Walk me
+Note the direct-address framing in v4.0: "when someone asks you, 'Walk me
 through your background,' you probably give them a list." The list that follows
 is the viewer's list, not a case study. Keep it restrained — no résumé-scroll
 animation, no timeline gag.
@@ -75,7 +75,7 @@ Show the three nouns first, then the verb question.
 Temidayo's own recurring verbs — examine, translate, connect, build — are her
 evidence, not a template. The script is explicit that accounting, cybersecurity
 and people strategy are NOT the same profession, and that she would not force a
-connection the evidence does not support. In v3.0 that is turned to the viewer:
+connection the evidence does not support. In v4.0 that is turned to the viewer:
 "so do not force yours either." Do not cut either half.
 
 Close on the rule: a portable capability is not a word you like, it is
@@ -142,7 +142,7 @@ Calm and brief. This is the only invitation in the video, and it is the FREE
 Career Evidence Starter — not Keep the Proof, not the Capability Formation
 Field Kit.
 
-Exact invitation, verbatim from the v3.0 script:
+Exact invitation, verbatim from the v4.0 script:
 
 "If you want to try this on one real accomplishment of yours, I made a free
 Career Evidence Starter. Set aside about 10 to 15 focused minutes and you will

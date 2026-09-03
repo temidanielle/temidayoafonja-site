@@ -702,6 +702,75 @@ patch, and the Video 6 description document already carried one before it.
 Video 4 gained a separate description-only document, so Videos 1 and 4 to 8
 now all follow that convention.
 
+### Videos 1–5 — v4.0 unified rebuild, 3 September 2026
+
+Rebuilt and reconciled under the compiled v4.0 register: **H.I.T. + direct
+address + differentiation + multi-layer hook system + one memorable teaching
+structure + factual discipline + one primary CTA**, from
+`Videos_1-5_Unified_Final_Rebuild_Code_Prompt_v4.0.txt`.
+
+The pass began with an audit rather than a rewrite. Videos 2, 3, 4 and 5
+already passed the direct-address, factual and memory standards, so **their
+spoken scripts were carried forward with zero paragraph changes**. Only Video 1
+needed a voice revision: it measured 54% second person across viewer-facing
+paragraphs and now measures 77%.
+
+| Video | Prior version | Prior spoken | v4.0 spoken | Changed / unchanged paragraphs | Viewer-facing 2nd person | Slides / reveals |
+|---|---|---|---|---|---|---|
+| 1 | v3.1 | 1,329 | **1,409** | 41 / 70 | 54% → **77%** | 13 / 22 |
+| 2 | v3.0 direct address | 1,258 | **1,258** | 0 / 108 | **89%** | 13 / 23 |
+| 3 | v3.0 direct address | 1,251 | **1,251** | 0 / 108 | **88%** | 13 / 27 |
+| 4 | v3.0 direct address | 1,355 | **1,355** | 0 / 123 | **74%** | 11 / 26 |
+| 5 | v3.1 | 1,980 | **1,980** | 0 / 191 | **85%** | 12 / 25 |
+
+**200 QA checks across the five videos pass, 0 failures.** No slide XML, media,
+rels or theme part changed in any of the ten decks; only notes parts changed.
+
+What v4.0 newly added to every package: a **first-30-second H.I.T. audit table**
+in the long-form editor brief (time, exact spoken line, verbal hook job,
+on-screen hook, visual cue, trust beat, viewer payoff), an explicit
+**multi-layer hook block** naming all five hook layers, the **restrained emoji
+description system** and the **YouTube tag field** in both the publishing
+package and the description-only document. Videos 2 and 3 had neither the emoji
+system nor a tag field before this pass; Video 4 had only 🧭.
+
+**Video 1's authoritative decks were resolved by hash**, not by filename: the
+tracker's recorded deck hashes match `..._v2.4.pptx` and
+`Video-1-Reveal-Builds_v2.4.pptx`, so those are authoritative and the earlier
+v2, v2.1, v2.2 and v2.3 decks are archive.
+
+#### Video 2 thumbnail — SUPERSEDED, decided 3 September 2026
+
+The authoritative Video 2 thumbnail copy is **`VALUABLE HERE. STUCK HERE?`**.
+
+It **supersedes `YOUR SKILLS ARE STALLING`**, which must not reappear in any
+future package, tracker entry or publishing document.
+
+The thumbnail artwork in `deliverables/video-2-slides/thumbnail/` still carries
+the old words and is therefore **SUPERSEDED — REPLACE WITH APPROVED CANVA
+EXPORT BEFORE PUBLISHING**. No thumbnail was generated or redesigned; the
+missing export is not a blocker for the recording package.
+
+#### Videos 1–5 v4.0 hashes
+
+| Video | Package ZIP | Description-only DOCX | Main deck | Reveal deck | Preview PDF |
+|---|---|---|---|---|---|
+| 1 | `fe9d1d6a59705ff0fd212bc1cac038e9a32e1cf8fb49741477abf0edda3e3c41` | `228e5314198e75acb0a29d046cf074ee50c93a6b840972bd01c2d7075ca1780b` | `bf3dee5f6ae946e1f25219bf13ca4d91250d52c18726e6f855c7bb4f97b490a1` | `27e575044b35348aa112aaeebf09ab50b65b22ba430cb5bd3905f3e998dcf955` | `af4e763c0cdf56f758571b0a655c76aaf92fffabbbac082d49920a21e2c2bf3c` |
+| 2 | `4f44a564c8e5826d6353a0e41efed69b4a4881c714e5579c3e802e008561d07a` | `db288cb632008939eae0057a751e25ac83a29576a292299e71c9d61c438dfdef` | `d4c8755b187561111741c71f0b10928b2afdf0f571183155344be13f6d74d0f4` | `4d0c7ac365518a657f3e98398c0e9ebe226157a3d68d29d3aaa9f56c4877b7fd` | `7917d0fafcc77d557d394e59427c37e5d6813cd2c28a210e35a0bc8415a190b0` |
+| 3 | `3cc786b4ca291d78962dae2f2ae54de3d94c790532791e4d19db65767527d41e` | `bf3d98030c8da161d98e574de511f336b7dd8c1845cddc799f304225be477cd5` | `296d1fc8365fe72c4b68f51d5b7c9d190ac9f29db78beeccde8eb6e22e15ccb8` | `0f76384a14f6f4e1a8e82bc055dfeb2dcc09ce0b35c9c209f0f952f087f0195a` | `76f3bd78be4151e9adb5fcdec6b399e2f255feacec6e703deb74175b4e274ec4` |
+| 4 | `245fd3be2e15090fb6f7bf86d0b5eea9332ab7d8f2171d8a9d48bef99463674d` | `4a2f10109a5d5748522b3cfcb049c726475ab76000c3bbd01f200119893252ab` | `cd9b7b80fa2860b313ce19c501b601b2e69f9e6ed538adeeec56957673ff271f` | `04cdf28e49d46d754f7db482697cd36d054f047bda7e64d6caadce955eb5bb1e` | `da482aff3ce4d4253c9f0d5417fddb53688207d24d0d9f6a72ca5b6a77f1b832` |
+| 5 | `da93ca06af102bf12f4ae23b445dbcb4bebcd579ba42bfe86e31c5f82e4ad65a` | `d43d8a8a6666c612466aa7706f88a19c79af8fec7b784ed77e27ca86521e4f57` | `a2d30edcc49e6f9b42be74b457aa16e5a049338feff7fe70e388c5c8743d5447` | `a1a85d9d9d3d486e54a6e6832d9ca372e557386969f07d21305b9cb3513e30c7` | `b8443372b168308bc188863be45f903349f63246ab2c7af0a82913dfdfc5bdb1` |
+
+Prior package hashes are preserved in the change record: Video 1
+`17e881ea…`, Video 2 `f8ebaa45…`, Video 3 `62af1ca5…`, Video 4 `600bbf40…`,
+Video 5 `0067d553…`.
+
+**VIDEOS 1–5 — FINAL + LOCKED UNDER H.I.T. + DIRECT-ADDRESS + DIFFERENTIATION +
+MULTI-LAYER HOOK REGISTER.**
+
+Video 2's open slide-13 Watch Next defect is unchanged and still requires a
+separate authorisation; it is recorded in the Video 2 section below.
+
 ### Direct-address voice register — series standard, 3 September 2026
 
 Video 5 v3.1 set the register and Videos 2, 3 and 4 were revised into it in a
@@ -724,9 +793,8 @@ part changed in any of the six decks; only notes parts changed.
 
 | State | Videos |
 |---|---|
-| FINAL + LOCKED UNDER DIRECT-ADDRESS REGISTER | 2, 3, 4, 5 |
+| FINAL + LOCKED UNDER THE v4.0 REGISTER | 1, 2, 3, 4, 5 |
 | FINAL + LOCKED FOR RECORDING | 6, 7, 8 |
-| FINAL + LOCKED FOR RE-RECORDING | 1 |
 
 Videos 7 and 8 completed their H.I.T. rebuilds on 1 September 2026 and are
 **Videos 1 to 8 are CLOSED AND READY FOR RECORDING**, confirmed by Temidayo

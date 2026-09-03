@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
-"""Video 2 v3.0 direct-address speaker/editor notes. Notes parts only.
+"""Video 2 v4.0 speaker/editor notes. Notes parts only.
 
-Every quoted anchor below is verbatim from the v3.0 direct-address script, so
+Every quoted anchor below is verbatim from the v4.0 script, so
 the notes no longer carry the stale narration the decks were shipped with.
 Timings are script-derived working estimates at 145 wpm (1,258 words, ~8:40)."""
 
@@ -69,7 +69,7 @@ Reveal the evidence types one at a time as each is named.
 The evidence can be small. It only has to show that the usefulness survived
 some distance from where it was formed.
 
-This is where the indispensable trap is named — and in v3.0 it is named at the
+This is where the indispensable trap is named — and in v4.0 it is named at the
 viewer: "This is where being indispensable can mislead you." Do not soften it
 into a general observation, and do not turn it into a warning.
 
@@ -122,7 +122,7 @@ work is building in you." """,
 # 12 Capability Formation Field Kit
 """Timing: approximately 7:49.
 
-Exact invitation, verbatim from the v3.0 script:
+Exact invitation, verbatim from the v4.0 script:
 
 "If these three tests tell you that you need a fuller read of what your current
 work is building and how portable it is, the Capability Formation Field Kit
@@ -139,7 +139,7 @@ Before publishing, verify the live /fieldkit redirect and the current listing.""
 # 13 Watch Next
 """Timing: approximately 8:21 to the end, about 8:40.
 
-Exact bridge, verbatim from the v3.0 script:
+Exact bridge, verbatim from the v4.0 script:
 
 "And if what you are seeing has you seriously considering an exit, do not move
 straight from concern to resignation. There are three things I want you to
