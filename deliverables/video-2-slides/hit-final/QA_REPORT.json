@@ -1,0 +1,228 @@
+{
+ "checks": {
+  "C1": {
+   "check": "Teleprompter TXT == revised canonical",
+   "pass": true,
+   "detail": ""
+  },
+  "C2": {
+   "check": "Reading TXT == canonical spoken",
+   "pass": true,
+   "detail": ""
+  },
+  "C3": {
+   "check": "Teleprompter minus markers == reading script",
+   "pass": true,
+   "detail": ""
+  },
+  "C4": {
+   "check": "Teleprompter DOCX == canonical",
+   "pass": true,
+   "detail": ""
+  },
+  "C5": {
+   "check": "Reading DOCX == canonical spoken",
+   "pass": true,
+   "detail": ""
+  },
+  "C6": {
+   "check": "Marker count and order preserved",
+   "pass": true,
+   "detail": "13"
+  },
+  "C7": {
+   "check": "No paragraph removed",
+   "pass": true,
+   "detail": "0"
+  },
+  "C8": {
+   "check": "Revision is bounded, not a rewrite",
+   "pass": true,
+   "detail": "unchanged 62 vs changed 46"
+  },
+  "D1": {
+   "check": "No detached phrasing in long-form or Shorts",
+   "pass": true,
+   "detail": "[]"
+  },
+  "D2": {
+   "check": "Viewer-facing situations predominantly second person",
+   "pass": true,
+   "detail": "39 of 44 viewer-facing paragraphs (89%)"
+  },
+  "D3": {
+   "check": "First-person evidence bridges back to the viewer",
+   "pass": true,
+   "detail": "{'i want to help you': 1, 'i want you to': 5, 'that is what i want to help you': 1}"
+  },
+  "D4": {
+   "check": "'experienced professionals' is positioning language",
+   "pass": true,
+   "detail": "count=1"
+  },
+  "D5": {
+   "check": "Organizational mechanics carry viewer consequence",
+   "pass": true,
+   "detail": ""
+  },
+  "D6": {
+   "check": "Direct address not mechanically repetitive",
+   "pass": true,
+   "detail": "47% of all spoken paragraphs"
+  },
+  "D7": {
+   "check": "No keynote or conference voice",
+   "pass": true,
+   "detail": "[]"
+  },
+  "D8": {
+   "check": "No generic career-article phrasing",
+   "pass": true,
+   "detail": ""
+  },
+  "D9": {
+   "check": "No unsupported fact added",
+   "pass": true,
+   "detail": "inserted 0"
+  },
+  "D10": {
+   "check": "No additional mnemonic",
+   "pass": true,
+   "detail": "'acronym' occurrences prior 1, revised 1"
+  },
+  "D11": {
+   "check": "One primary CTA remains",
+   "pass": true,
+   "detail": "[]"
+  },
+  "D12": {
+   "check": "Watch Next remains correct",
+   "pass": true,
+   "detail": ""
+  },
+  "D13": {
+   "check": "Every Short speaks to one viewer",
+   "pass": true,
+   "detail": "{'Video_2_Short_1_Doing_Well_Fewer_Options.docx': True, 'Video_2_Short_2_Indispensable_Not_Marketable.docx': True, 'Video_2_Short_3_Not_Everything_Travels.docx': True, 'Video_2_Short_4_Remove_Company_Nouns.docx': True}"
+  },
+  "D14": {
+   "check": "Both editor briefs carry the direct-address section",
+   "pass": true,
+   "detail": ""
+  },
+  "D15": {
+   "check": "Slides visually unchanged",
+   "pass": true,
+   "detail": "[]"
+  },
+  "D16": {
+   "check": "Only notes parts changed in both PPTX",
+   "pass": true,
+   "detail": "13 / 23"
+  },
+  "D17": {
+   "check": "Public description searchable and copy-ready",
+   "pass": true,
+   "detail": ""
+  },
+  "D18": {
+   "check": "Working chapters flagged as estimates",
+   "pass": true,
+   "detail": ""
+  },
+  "D19": {
+   "check": "No [INSERT] placeholder",
+   "pass": true,
+   "detail": ""
+  },
+  "D20": {
+   "check": "Publishing public block == description-only public block",
+   "pass": true,
+   "detail": ""
+  },
+  "D21": {
+   "check": "Recording docs contain no editor instructions",
+   "pass": true,
+   "detail": "[]"
+  },
+  "D22": {
+   "check": "Both EDITOR ONLY docs clearly labelled",
+   "pass": true,
+   "detail": ""
+  },
+  "P1": {
+   "check": "Main slide count",
+   "pass": true,
+   "detail": "13"
+  },
+  "P2": {
+   "check": "Reveal frame count",
+   "pass": true,
+   "detail": "23"
+  },
+  "P3": {
+   "check": "Notes updated to v3.0 direct address",
+   "pass": true,
+   "detail": ""
+  },
+  "Z1": {
+   "check": "Exactly 13 files in ZIP",
+   "pass": true,
+   "detail": "13"
+  },
+  "Z2": {
+   "check": "No _source, Python, temp or render files in ZIP",
+   "pass": true,
+   "detail": ""
+  },
+  "Z3": {
+   "check": "SHA256SUMS.txt exactly 12 entries",
+   "pass": true,
+   "detail": "12"
+  },
+  "Z4": {
+   "check": "sha256sum -c successful",
+   "pass": true,
+   "detail": "rketable.docx: OK\nSHORTS/Video_2_Short_3_Not_Everything_Travels.docx: OK\nSHORTS/Video_2_Short_4_Remove_Company_Nouns.docx: OK\nSHORTS/Video_2_Shorts_EDITOR_ONLY_HIT_Brief.docx: OK\nREADME_FINAL.txt: OK\n"
+  },
+  "Z5": {
+   "check": "Sibling ZIP checksum matches",
+   "pass": true,
+   "detail": ""
+  },
+  "Z6": {
+   "check": "README matches archive",
+   "pass": true,
+   "detail": ""
+  }
+ },
+ "failures": [],
+ "change_report": {
+  "unchanged": 62,
+  "changed": 46,
+  "inserted": 0,
+  "removed": 0
+ },
+ "voice": {
+  "viewer_facing": 44,
+  "second_person": 39,
+  "ratio": 0.886
+ },
+ "words_prior": 1131,
+ "words_new": 1258,
+ "markers": 13,
+ "slides": 13,
+ "frames": 23,
+ "notes_parts": {
+  "main": 13,
+  "reveal": 23
+ },
+ "hashes": {
+  "zip": "f8ebaa45f657d5fbd60440a54bde58127c343b15fd0b8956c84d6cf7701e18a9",
+  "desc_docx": "50a84e39dfc168972125d75b528ba25cb34adf92c2321ea4797966c11d6af57f",
+  "main_pptx": "cc6ca0e8914b3f9d2248e6758793171a944c011c292aff2a6e09dd89aa1156d5",
+  "reveal_pptx": "35131b87a0802f970b674d8214f2be7a2de505e7770b1482f4be3d0e25f023e0",
+  "preview_pdf": "7917d0fafcc77d557d394e59427c37e5d6813cd2c28a210e35a0bc8415a190b0"
+ },
+ "prior_zip": null
+}

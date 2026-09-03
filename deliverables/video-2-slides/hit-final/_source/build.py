@@ -1,448 +1,455 @@
 # -*- coding: utf-8 -*-
-"""Build the Video 2 H.I.T. final recording and Shorts package."""
-import os, sys, shutil, zipfile, hashlib
-sys.path.insert(0, "/tmp/v2hit")
-from script_text import LINES, SPOKEN, MARKERS
-from docx import Document
-from docx.shared import Pt, Inches, RGBColor
-from docx.enum.text import WD_ALIGN_PARAGRAPH
-from docx.oxml.ns import qn
-from docx.oxml import OxmlElement
+"""Build the Video 2 v3.0 DIRECT ADDRESS recording and Shorts package."""
+import os, sys, shutil
+sys.path.insert(0,"/tmp/da"); sys.path.insert(0,"/tmp/da/v2")
+from docxkit import *
+from changereport import new_blocks
 
-NAVY=RGBColor(0x0F,0x23,0x46); GOLD=RGBColor(0x8A,0x6D,0x1E)
-DIM=RGBColor(0x5A,0x6B,0x82); INK=RGBColor(0x1A,0x1A,0x1A)
-BAND_NAVY="E8EDF4"; BAND_CREAM="F3F0E8"
-
-ROOT="/tmp/v2hit/Video_2_HIT_FINAL"
+BASE="/tmp/da/v2"
+ROOT=os.path.join(BASE,"Video_2_HIT_FINAL")
 LF=os.path.join(ROOT,"LONG_FORM"); SH=os.path.join(ROOT,"SHORTS")
-shutil.rmtree(ROOT, ignore_errors=True)
-os.makedirs(LF); os.makedirs(SH)
+shutil.rmtree(ROOT,ignore_errors=True); os.makedirs(LF); os.makedirs(SH)
 
+VID=2
 TITLE="Is Your Job Making You Less Marketable?"
 THUMB="YOUR SKILLS ARE STALLING"
+PRIMARY="is your job making you less marketable"
+SUPPORTING=("career stagnation · career marketability · transferable skills · "
+    "career growth · transferable experience · internal mobility · "
+    "career portability")
 CTA="Capability Formation Field Kit"
 CTA_URL="https://temidayoafonja.com/fieldkit"
 NEXT="3 Things to Do Before Quitting Your Job"
 
-def newdoc(teleprompter=False):
-    d=Document(); st=d.styles['Normal']
-    st.font.name='Calibri'; st.font.size=Pt(13 if teleprompter else 11)
-    ah=OxmlElement('w:autoHyphenation'); ah.set(qn('w:val'),'0')
-    d.settings.element.append(ah)
-    for s in d.sections:
-        s.top_margin=s.bottom_margin=Inches(0.9)
-        s.left_margin=s.right_margin=Inches(1.05)
-    return d
+CANON=os.path.join(BASE,"canonical_v3.0.txt")
+LINES=new_blocks(CANON,"BEGIN APPROVED VIDEO 2 v3.0 DIRECT-ADDRESS SCRIPT",
+                       "END APPROVED VIDEO 2 v3.0 DIRECT-ADDRESS SCRIPT")
+SPOKEN=[x for x in LINES if not x.startswith("[SLIDE:")]
 
-def keep(p,nxt=False):
-    pr=p._p.get_or_add_pPr()
-    for t in ('w:keepLines',)+(('w:keepNext',) if nxt else ()):
-        e=OxmlElement(t); e.set(qn('w:val'),'1'); pr.append(e)
-    return p
-
-def shade(p,fill):
-    pr=p._p.get_or_add_pPr(); s=OxmlElement('w:shd')
-    s.set(qn('w:val'),'clear'); s.set(qn('w:fill'),fill); pr.append(s)
-
-def bar(p,col):
-    pr=p._p.get_or_add_pPr(); b=OxmlElement('w:pBdr'); l=OxmlElement('w:left')
-    l.set(qn('w:val'),'single'); l.set(qn('w:sz'),'18')
-    l.set(qn('w:space'),'8'); l.set(qn('w:color'),col); b.append(l); pr.append(b)
-
-def P(d,t,size=11,bold=False,color=None,before=0,after=8,italic=False,
-      caps=False,spacing=1.3):
-    p=d.add_paragraph()
-    p.paragraph_format.space_before=Pt(before); p.paragraph_format.space_after=Pt(after)
-    p.paragraph_format.line_spacing=spacing
-    r=p.add_run(t); r.font.size=Pt(size); r.bold=bold; r.italic=italic
-    if color is not None: r.font.color.rgb=color
-    if caps: r.font.all_caps=True
-    return p
-
-def head(d,title,sub,note=None):
-    P(d,"CAPABILITY FORMATION   |   VIDEO 2",size=10,bold=True,color=GOLD,
-      after=4,caps=True)
-    P(d,title,size=20,bold=True,color=NAVY,after=4,spacing=1.1)
-    P(d,sub,size=11,color=DIM,after=6,spacing=1.1)
-    if note: P(d,note,size=10.5,italic=True,color=DIM,after=18,spacing=1.2)
-
-def H1(d,t): return keep(P(d,t,size=14,bold=True,color=NAVY,before=20,after=8),True)
-def H2(d,t): return keep(P(d,t,size=11.5,bold=True,color=NAVY,before=13,after=5),True)
-
-# ------------------------------------------------- 1. teleprompter DOCX + TXT
-d=newdoc(True)
-head(d,TITLE,"Video 2  ·  Teleprompter script with slide markers",
-     "Spoken script is the large text. A slide marker in a tinted band tells "
-     "the editor which slide to bring up; it is not spoken.")
-for line in LINES:
-    if line.startswith("[SLIDE:"):
-        name=line[len("[SLIDE:"):-1].strip()
-        p=P(d,"SLIDE  —  %s"%name,size=11,bold=True,color=NAVY,
-            before=14,after=14,spacing=1.1)
-        shade(p,BAND_NAVY); bar(p,"0F2346"); keep(p,True)
-    else:
-        keep(P(d,line,size=13.5,color=INK,after=12,spacing=1.5))
-d.save(os.path.join(LF,"Video2TeleprompterScriptwithslidemarkers_HIT_v2.0.docx"))
-
-tel_txt=[TITLE,"Video 2  ·  Teleprompter script with slide markers","",]
-for line in LINES:
-    if line.startswith("[SLIDE:"):
-        tel_txt += ["", "SLIDE  —  %s"%line[len("[SLIDE:"):-1].strip(), ""]
-    else:
-        tel_txt += [line, ""]
-open(os.path.join(LF,"Video2TeleprompterScriptwithslidemarkers_HIT_v2.0.txt"),
-     "w").write("\n".join(tel_txt).strip()+"\n")
-
-# ------------------------------------------------- 2. reading script DOCX+TXT
-d=newdoc(True)
-head(d,TITLE,"Video 2  ·  Reading script, no markers",
-     "Spoken language only. No slide markers, no timestamps, no production "
-     "directions.")
-for line in SPOKEN:
-    keep(P(d,line,size=13.5,color=INK,after=12,spacing=1.5))
-d.save(os.path.join(LF,"Video2ReadingScriptnomarkers_HIT_v2.0.docx"))
-open(os.path.join(LF,"Video2ReadingScriptnomarkers_HIT_v2.0.txt"),
-     "w").write("\n\n".join(SPOKEN)+"\n")
+TEL="Video2TeleprompterScriptwithslidemarkers_HIT_v3.0_DIRECT_ADDRESS"
+RDG="Video2ReadingScriptnomarkers_HIT_v3.0_DIRECT_ADDRESS"
+EDB="Video_2_EDITOR_ONLY_HIT_Brief_v3.0_DIRECT_ADDRESS.docx"
+PUB="Video_2_Publishing_Package_HIT_v3.0_DIRECT_ADDRESS.docx"
+SEB="Video_2_Shorts_EDITOR_ONLY_HIT_Brief.docx"
+scripts(VID,TITLE,LINES,SPOKEN,LF,TEL,RDG)
 print("long-form scripts written")
 
-# --------------------------------------------------- 3. long-form editor brief
+SLIDE_MAP=["Title","Valuable Here / Legible Elsewhere","01 Remove the Company Nouns",
+ "Test One","02 Find Outside-Context Evidence","Test Two",
+ "03 Read the Last 90 Days","Test Three","The Three Tests","Read the Pattern",
+ "Before You Leave","Capability Formation Field Kit","Watch Next"]
+REVEAL_MAP=[(1,"1",1),(2,"2",1),(3,"3",1),(4,"4–5",2),(5,"6",1),(6,"7–10",4),
+ (7,"11",1),(8,"12–15",4),(9,"16",1),(10,"17",1),(11,"18–21",4),(12,"22",1),
+ (13,"23",1)]
+FRAMES=[1,1,1,2,1,4,1,4,1,1,4,1,1]
+
+# ------------------------------------------------------ long-form editor brief
 d=newdoc()
-P(d,"EDITOR ONLY",size=22,bold=True,color=RGBColor(0x9B,0x2C,0x10),after=2)
-P(d,"VIDEO 2",size=12,bold=True,color=GOLD,after=2,caps=True)
+P(d,"EDITOR ONLY",size=22,bold=True,color=RED,after=2)
+P(d,"VIDEO 2  ·  v3.0 DIRECT ADDRESS",size=12,bold=True,color=GOLD,after=2,caps=True)
 P(d,TITLE,size=20,bold=True,color=NAVY,after=6,spacing=1.1)
 p=P(d,"This document is for the editor. It is NOT Temidayo's teleprompter and "
      "must not be placed on the recording screen.",size=11,italic=True,
      color=DIM,after=16,spacing=1.25)
 shade(p,BAND_CREAM)
 
-H1(d,"Locked metadata")
-for k,v in (("Title",TITLE),("Thumbnail",THUMB),("Primary CTA",CTA),
-            ("CTA URL",CTA_URL),("Watch next",NEXT),
-            ("Core distinction",
-             "VALUABLE HERE is not automatically the same as LEGIBLE ELSEWHERE.")):
-    keep(P(d,"%-18s %s"%(k+":",v),size=11,after=5))
+H1(d,"1.  Locked metadata",before=14)
+for k,v in (("Title",TITLE),("Thumbnail",THUMB),("Primary search phrase",PRIMARY),
+            ("Primary CTA",CTA),("CTA URL",CTA_URL),("Watch next",NEXT),
+            ("Strategic job","Recognition / diagnosis"),
+            ("Core distinction","VALUABLE HERE is not automatically the same "
+             "as LEGIBLE ELSEWHERE."),
+            ("Memory device","The three tests. No acronym, no second "
+             "framework.")):
+    keep(P(d,"%-24s %s"%(k+":",v),size=11,after=5))
+keep(P(d,"Do not add Keep the Proof, the Career Evidence Starter or a second "
+       "framework to this video.",bold=True,color=RED,after=8,spacing=1.25))
 
-H1(d,"First 30 seconds — H.I.T.")
-P(d,"H = Hook.  I = Interest.  T = Trust. The opening must work as an "
+direct_address_section(d,"2.  Direct address is part of the creative",
+ ["“And you may not notice it at first, because everything around you can "
+  "still look like success.”",
+  "“And that is what I want to help you do here.”",
+  "“Let me start you with two different questions.”",
+  "“The question I want you to answer is simple…”",
+  "“…here is what I want you to look at…”"])
+
+H1(d,"3.  First 30 seconds — H.I.T. map",before=14)
+P(d,"H = Hook. I = Interest. T = Trust. The opening must work as one "
     "audiovisual unit: immediate conversational hook, meaningful visual "
-    "interest, a concrete reason to trust Temidayo, and a clear viewer payoff "
-    "by roughly 20 to 30 seconds. Do not force a statistic into the opening.",
-  after=12)
-P(d,"This supersedes the older Video 2 opening and any earlier instruction "
-    "that kept Temidayo visually static or full-screen for approximately the "
-    "first 55 seconds.", italic=True, color=DIM, after=14)
+    "interest, relevant lived proof and a clear payoff by 30 seconds. No "
+    "title card before the promise.",after=8)
+p=P(d,"This supersedes the older Video 2 opening and any earlier instruction "
+     "that kept Temidayo visually static or fully off-camera in the first 30 "
+     "seconds.",size=11,bold=True,color=RED,after=10,spacing=1.25)
+shade(p,BAND_CREAM); keep(p)
 
 def beat(t,anchor,layer,body):
-    H2(d,t)
+    H2(d,t,before=10)
     p=P(d,"Spoken anchor:  “%s”"%anchor,size=10.5,italic=True,color=DIM,after=8)
     shade(p,BAND_CREAM)
     if layer: keep(P(d,layer,size=11,bold=True,color=GOLD,after=6))
     for b in body: keep(P(d,b,after=5))
 
-beat("0:00–0:06",
- "You can be doing very well at work and still be narrowing your next options.",
- "H = HOOK",
- ["Visual: begin on Temidayo, medium/tight, direct to camera.",
-  "On-screen text: DOING WELL. FEWER OPTIONS?",
-  "Do not use a title card before this."])
-beat("0:06–0:14",
- "My own career has crossed very different functions and industries…",
- "T = TRUST   ·   I = INTEREST",
- ["Show a restrained visual proof of the career path. Short labels only:",
-  "     ACCOUNTING & AUDIT  →  CYBER / PRIVACY  →  PEOPLE / EMPLOYEE "
-  "EXPERIENCE  →  TRANSFORMATION",
-  "IMPORTANT: Temidayo deliberately does NOT recite these chapters aloud. The "
-  "visual carries the chronology; her spoken words carry the meaning.",
-  "Do not change the PowerPoint deck to accomplish this. Use a simple "
-  "editorial overlay or approved visual treatment."])
-beat("0:14–0:23",
- "Being valuable here is not the same as being legible somewhere else.",
- None,
- ["Bring forward:  VALUABLE HERE  vs.  LEGIBLE ELSEWHERE",
-  "This should visually establish the central idea of the video."])
-beat("0:23–0:30",
- "Here are three tests…", None,
- ["Return cleanly to Temidayo.",
-  "Optional small text: 3 MARKETABILITY TESTS",
-  "The viewer should understand the payoff before the teaching begins."])
+beat("0:00–0:08","You can be doing very well at work and still be narrowing "
+     "your next options.","H = HOOK",
+     ["Visual: begin on Temidayo, medium or tight, direct to camera.",
+      "On-screen text:  DOING WELL. FEWER OPTIONS?",
+      "Do not use a title card before this.",
+      "The viewer bridge — “you may not notice it at first, because everything "
+      "around you can still look like success” — lands on her face. Do not "
+      "cover it."])
+beat("0:08–0:16","My own career has crossed very different functions and "
+     "industries…","T = TRUST   ·   I = INTEREST",
+     ["Show a restrained visual proof of the career path. Short labels only:",
+      "ACCOUNTING & AUDIT  →  CYBER / PRIVACY  →  PEOPLE / EMPLOYEE "
+      "EXPERIENCE  →  TRANSFORMATION",
+      "IMPORTANT: Temidayo deliberately does NOT recite these chapters aloud. "
+      "The visual carries the chronology; her voice carries the meaning.",
+      "Do not change the PowerPoint deck to accomplish this. Use a simple "
+      "editorial overlay or approved visual treatment."])
+beat("0:16–0:24","Here is what became clear to me: being valuable here is not "
+     "the same as being legible somewhere else.","",
+     ["Bring forward:  VALUABLE HERE  vs.  LEGIBLE ELSEWHERE",
+      "This should visually establish the central idea of the video."])
+beat("0:24–0:30","So let me give you three tests you can run on your own "
+     "work…","PAYOFF",
+     ["Return cleanly to Temidayo.",
+      "Optional small text: 3 MARKETABILITY TESTS",
+      "The viewer should understand the payoff before the teaching begins."])
 
-H1(d,"Editorial rhythm after 0:30")
-P(d,"The opening is intentionally more visually active than the remainder of "
-    "the video. Do NOT read H.I.T. as permission for constant visual movement.",
-  after=10)
-P(d,"Once the viewer is inside the teaching:",after=6)
-for x in ["preserve Temidayo's natural pacing;",
-          "use the existing slides as teaching support;",
-          "avoid decorative motion;","avoid constant punch-ins;",
-          "avoid stock office footage;","avoid generic résumé B-roll;",
-          "avoid red warning graphics;","avoid fake urgency;",
-          "avoid flashy transitions."]:
-    keep(P(d,"—  "+x,after=4))
-P(d,"The edit should feel premium, calm and editorial.",before=8,after=10)
+H1(d,"4.  Slide marker → actual slide number",before=14)
+P(d,"The teleprompter carries thirteen slide markers. They map to the existing "
+    "thirteen-slide deck in order, marker 1 to slide 1 through marker 13 to "
+    "slide 13. Do not add, delete, redesign or reorder slides.",after=8)
+for n,job in enumerate(SLIDE_MAP,1):
+    keep(P(d,"Marker %-3d →  Slide %-3d %s"%(n,n,job),size=10.5,after=3))
 
-H1(d,"Existing slides")
-P(d,"The existing 13-slide Video 2 deck remains UNCHANGED. Do not add or "
-    "redesign slides. Use each slide for its existing job:",after=8)
-for n,job in enumerate(["Title","Valuable Here / Legible Elsewhere",
- "01 Remove the Company Nouns","Test One","02 Find Outside-Context Evidence",
- "Test Two","03 Read the Last 90 Days","Test Three","The Three Tests",
- "Read the Pattern","Before You Leave","Capability Formation Field Kit",
- "Watch Next"],1):
-    keep(P(d,"Slide %-3d %s"%(n,job),size=10.5,after=3))
+H1(d,"5.  Existing reveal-frame map",before=14)
+P(d,"The reveal-build deck contains 23 frames. This is the inspected count "
+    "from the actual file. Reveal visuals are unchanged.",after=8)
+for n,rng,cnt in REVEAL_MAP:
+    keep(P(d,"Slide %-3d →  reveal frames %-8s (%d)"%(n,rng,cnt),size=10.5,after=3))
 
-H1(d,"Overlay principle")
+H1(d,"6.  Overlay principle",before=14)
 P(d,"When a visual can prove information more efficiently than Temidayo "
-    "speaking it, let the visual carry it. Do not duplicate every spoken "
-    "sentence on screen. The first-30-second career-path visual is a "
-    "deliberate example of this principle.",after=10)
+    "speaking it, let the visual carry it. Do not add spoken wording to "
+    "duplicate slide copy, and do not add slide copy to duplicate her.",after=8)
 
-H1(d,"CTA and watch next")
+H1(d,"7.  Factual and tone boundaries",before=14)
+p=P(d,"NON-ALARMIST. This video must never imply that praise, pay or internal "
+     "importance are themselves warning signs, that a strong job is "
+     "automatically bad, or that the viewer should quit because their "
+     "marketability may be narrowing.",size=11,bold=True,color=RED,after=8,
+     spacing=1.25)
+shade(p,BAND_CREAM); keep(p)
+pairlist(d,["no invented employer, metric or result;",
+ "no diagnosis from one quarter;","no urgency graphics;",
+ "no implication that context-bound value is worthless;",
+ "the documentation line keeps its permitted, non-confidential boundary."],after=3)
+
+H1(d,"8.  CTA and watch next",before=14)
 keep(P(d,"One product CTA only: %s — %s"%(CTA,CTA_URL),after=5))
-keep(P(d,"Do not add Keep the Proof.",bold=True,after=8))
-keep(P(d,"Watch next: route to %s."%NEXT,after=6))
-d.save(os.path.join(LF,"Video_2_EDITOR_ONLY_HIT_Brief_v2.0.docx"))
+keep(P(d,"Do not add Keep the Proof or the Career Evidence Starter.",bold=True,after=6))
+keep(P(d,"Watch next: %s"%NEXT,bold=True,after=5))
+p=P(d,"DECK DEFECT — NOT FIXED IN THIS PASS. Slide 13 and reveal frame 23 "
+     "still carry the retired Video 3 title, “Before You Quit Your Job, Check "
+     "These 3 Things”. The locked Video 3 title is “3 Things to Do Before "
+     "Quitting Your Job”, which is what Temidayo says. No slide XML change is "
+     "authorised in this pass, so the card is unchanged and the correction is "
+     "held for a separate authorisation. Until it is corrected, do not put "
+     "that card on screen while she names the video: stay on Temidayo, or use "
+     "the end-screen route.",size=11,bold=True,color=RED,before=6,after=10,
+     spacing=1.25)
+shade(p,BAND_CREAM); keep(p)
+keep(P(d,"Do not leave Subscribe as the only end-screen element.",bold=True,
+       color=RED,after=8))
+
+H1(d,"9.  Editing rhythm after 0:30",before=14)
+P(d,"The opening is intentionally more visually active than the rest of the "
+    "video. Do NOT read H.I.T. as permission to keep that density running. "
+    "Once the viewer is inside the teaching, the edit should feel premium, "
+    "calm and editorial.",after=8)
+pairlist(d,["preserve Temidayo's natural pacing;","use the slides as support;",
+ "avoid decorative motion;","avoid constant punch-ins;",
+ "avoid stock office footage;","avoid generic résumé B-roll;",
+ "avoid red warning graphics;","avoid fake urgency;",
+ "avoid flashy transitions."],after=3)
+
+H1(d,"10.  Visual “do not use” list",before=14)
+pairlist(d,["stock office B-roll;","generic résumé graphics;",
+ "employer logos;","red warning graphics;","fake shock expressions;",
+ "countdown or alarm motifs;","constant zooms;","AI-generated scenery;",
+ "social-media template effects."],after=3)
+
+H1(d,"11.  Speaker-note update record",before=14)
+P(d,"Both decks ship with speaker notes rewritten for the v3.0 direct-address "
+    "script. Nothing on any slide was changed.",after=8)
+pairlist(d,["Main deck: 13 notes parts rewritten, one per slide.",
+ "Reveal deck: 23 notes parts rewritten, one per frame.",
+ "Slide XML, geometry, typography, palette and media: unchanged.",
+ "Timings are script-derived working estimates at 145 words per minute for "
+ "the 1,258-word script. Replace them from the finished cut."],after=3)
+compress(d, 1.10, 0.40)
+d.save(os.path.join(LF,EDB))
 print("editor brief written")
 
-# ----------------------------------------------------- 4. publishing package
-d=newdoc()
-head(d,TITLE,"Video 2  ·  Publishing package",
-     "Everything needed to upload. Working timestamps must be replaced with "
-     "real ones from the finished edit.")
-H1(d,"Title"); P(d,TITLE,size=12,after=10)
-H1(d,"Thumbnail"); P(d,THUMB,size=12,bold=True,after=10)
-H1(d,"Primary search phrase"); P(d,"is your job making you less marketable",after=10)
-H1(d,"Supporting search language")
-P(d,"career stagnation · career marketability · transferable skills · career "
-    "growth · transferable experience · internal mobility · career "
-    "portability",after=10)
+# --------------------------------------------------------- publishing package
+CHAPTERS=[("00:00","Doing well can still narrow your options"),
+ ("00:57","Valuable here vs. legible elsewhere"),
+ ("02:02","Test 1: Remove the company nouns"),
+ ("03:14","Test 2: Find outside-context evidence"),
+ ("04:38","Test 3: Read the last 90 days"),
+ ("05:58","Read the pattern"),
+ ("06:50","What can you change before leaving?"),
+ ("07:49","Capability Formation Field Kit"),
+ ("08:21","Before you quit")]
+CHAPTER_LINES=["%s   %s"%(t,c) for t,c in CHAPTERS]
 
-H1(d,"Description")
-for para in [
- "Can you be successful in your current job and still become less marketable?",
- "In this video, I give you three practical tests for separating the value you "
+DESC=[
+ "Can you be doing well in your current job and still be getting less "
+ "marketable?",
+ "In this video I give you three practical tests for separating the value you "
  "have inside your current organization from the experience and judgment "
- "another employer, function or industry can recognize and use.",
- "You will learn how to remove company-specific language from the way you "
- "explain your work, find evidence that your judgment remains useful outside "
- "its original context, and read what the last 90 days have actually added to "
- "your capability.",
- "Being valuable where you are matters. But it answers a different question "
+ "another employer, function or industry can actually recognize and use.",
+ "You will remove company-specific language from the way you explain your "
+ "work, look for evidence that your judgment stays useful outside the place it "
+ "was formed, and read what your last 90 days have really added to what you "
+ "can do.",
+ "Being valuable where you are matters. It just answers a different question "
  "from whether your value can travel.","",
  "CAPABILITY FORMATION FIELD KIT",
  "A private, evidence-led assessment of what your current work is building, "
- "what appears portable and what needs attention next.",
+ "what looks portable and what needs your attention next.",
  CTA_URL,"",
- "WATCH NEXT", NEXT, "[ADD VIDEO LINK WHEN LIVE]","",
+ "WATCH NEXT",
+ NEXT,"[ADD VIDEO LINK WHEN LIVE]","",
+ "CHAPTERS"]+CHAPTER_LINES+["",
  "Temidayo Afonja helps experienced professionals understand what they can "
  "carry across roles, functions, employers and industries so they can make "
- "career pivots and internal moves without starting from zero."]:
-    keep(P(d,para if para else " ",after=7 if para else 3))
+ "career pivots and internal moves without starting from zero."]
 
-H1(d,"Working chapters")
-p=P(d,"WORKING TIMESTAMPS. The editor must replace every one of these with the "
-    "actual timestamps from the finished edit before publishing.",size=10.5,
-    bold=True,italic=True,color=RGBColor(0x9B,0x2C,0x10),after=10)
-shade(p,BAND_CREAM)
-for t,c in [("00:00","Doing well can still narrow your options"),
- ("00:30","Valuable here vs. legible elsewhere"),
- ("01:30","Test 1: Remove the company nouns"),
- ("03:00","Test 2: Find outside-context evidence"),
- ("04:30","Test 3: Read the last 90 days"),
- ("05:45","Read the pattern"),
- ("06:50","What can you change before leaving?"),
- ("07:55","Capability Formation Field Kit"),
- ("08:25","Before you quit")]:
-    keep(P(d,"%s   %s"%(t,c),size=11,after=4))
-
-H1(d,"Pinned comment")
-for para in ["Which of the three tests is hardest for you right now?",
- "1. Remove the company nouns","2. Find outside-context evidence",
+PINNED=["Which of the three tests is hardest for you right now?",
+ "1. Remove the company nouns",
+ "2. Find outside-context evidence",
  "3. Read the last 90 days",
- "And if you removed your employer, systems and internal language from the way "
- "you describe your work, what would still be left?"]:
-    keep(P(d,para,after=6))
-d.save(os.path.join(LF,"Video_2_Publishing_Package_HIT_v2.0.docx"))
+ "And if you removed your employer, your systems and your internal language "
+ "from the way you describe your work, what would still be left?"]
 
-# ---------------------------------------------------------------- 5. Shorts
-SHORTS=[
- ("Video_2_Short_1_Doing_Well_Fewer_Options.docx","SHORT 1","Recognition",
-  "You can be doing well at work and still be narrowing your options.",
-  ["You can be doing well at work and still be narrowing your options.",
-   "There are two questions I want experienced professionals to separate.",
-   "Am I valuable here?",
-   "And can someone somewhere else understand and use what I know how to do?",
-   "Those are not always the same.",
-   "You can be the person everyone relies on because you know the company, the "
-   "relationships, the history and the workarounds.",
-   "That is real value.",
-   "But if most of it only makes sense inside that environment, your "
-   "marketability may not be growing at the same rate.",
-   "In the full video, I give you three tests to check the difference."]),
- ("Video_2_Short_2_Indispensable_Not_Marketable.docx","SHORT 2",
-  "Distinction / myth",
-  "Being indispensable is not the same as being marketable.",
-  ["Being indispensable is not the same as being marketable.",
-   "Sometimes an organization depends on you because the undocumented history "
-   "sits in your head.",
-   "Certain relationships run through you.",
-   "Or you are the person who knows how to rescue a fragile process.",
-   "That can make you extremely valuable there.",
-   "But now remove the company.",
-   "Could another organization still recognize the judgment you bring and the "
-   "problem you know how to solve?",
-   "If the answer is hard to explain, that does not mean your experience has "
-   "no value.",
-   "It means you may need to separate what belongs to you from what belongs to "
-   "the context."]),
- ("Video_2_Short_3_Not_Everything_Travels.docx","SHORT 3",
-  "Proof / personal evidence",
-  "Changing contexts taught me that not everything travels.",
-  ["Changing contexts taught me that not everything travels.",
-   "My own career has crossed functions and industries that looked very "
-   "different on paper.",
-   "And the useful question was never, “Can I take everything with me?”",
-   "I could not.",
-   "Some knowledge belongs to the company, industry or moment where you "
-   "learned it.",
-   "The better question is:",
-   "What remains useful when the context changes?",
-   "Look for one example where your judgment was useful beyond your immediate "
-   "team, role or employer.",
-   "That is a much stronger clue to portability than simply being very good at "
-   "one company’s way of working."]),
- ("Video_2_Short_4_Remove_Company_Nouns.docx","SHORT 4",
-  "Practical test / action",
-  "Try this on one sentence from your résumé.",
-  ["Try this on one sentence from your résumé or LinkedIn profile.",
-   "Remove the employer.","Remove the internal program.",
-   "Remove the system name, product name and acronym.",
-   "Then read what is left.",
-   "If your sentence collapses, that is useful information.",
-   "For example, “I own the QBR process for this business unit” may "
-   "mean a lot inside one company.",
-   "Outside it, I still do not know what judgment you bring.",
-   "Rewrite the sentence around the problem you solve, the decisions you help "
-   "make and what becomes possible because of your work.",
-   "Now your experience is easier for another context to understand."])]
+def description_block(d, heading_before=14):
+    H1(d,"INTERNAL NOTE — DO NOT PASTE INTO YOUTUBE",before=heading_before)
+    p=P(d,"Video 2's public copy carries no emoji section labels. That is the "
+         "approved treatment for this video and it is deliberately unchanged in "
+         "this pass; do not import the Videos 6 to 8 emoji system into it.",
+        size=10.5,italic=True,color=RED,after=12,spacing=1.25)
+    shade(p,BAND_CREAM); keep(p)
+    p=keep(P(d,"COPY-READY YOUTUBE DESCRIPTION — BEGIN",size=11,bold=True,
+             color=NAVY,before=14,after=12,spacing=1.2))
+    shade(p,BAND_NAVY)
+    for para in DESC: keep(P(d,para if para else " ",after=7 if para else 3))
+    keep(P(d,"— END OF COPY-READY DESCRIPTION —",size=10,bold=True,color=DIM,
+           before=14,after=12,spacing=1.2))
+    H1(d,"Internal note — do not paste into YouTube",before=14)
+    p=P(d,"WORKING ESTIMATES — EDITOR MUST REPLACE FROM FINAL CUT",size=11,
+        bold=True,color=RED,after=6,spacing=1.25)
+    shade(p,BAND_CREAM); keep(p)
+    p=P(d,"These timestamps are script-derived, not measured from the finished "
+        "edit. Replace every one of them before publication. Do not force the "
+        "edit to match them.",size=10.5,bold=True,italic=True,color=RED,
+        after=10,spacing=1.25)
+    shade(p,BAND_CREAM); keep(p)
+    H1(d,"Working chapters — reference copy",before=14)
+    keep(P(d,"Identical to the nine chapter lines inside the description above.",
+           size=10.5,italic=True,color=DIM,after=8))
+    for line in CHAPTER_LINES: keep(P(d,line,size=11,after=4))
 
-for fn,label,role,hook,copy in SHORTS:
+d=newdoc()
+head(d,VID,TITLE,"Video 2  ·  Publishing package  ·  v3.0 direct address",
+     "Everything needed to upload. Working timestamps must be replaced with "
+     "real ones from the finished edit.")
+H1(d,"Title",before=14); P(d,TITLE,size=12,after=10)
+H1(d,"Thumbnail",before=14); P(d,THUMB,size=12,bold=True,after=10)
+H1(d,"Primary search phrase",before=14); P(d,PRIMARY,after=10)
+H1(d,"Supporting search language",before=14); P(d,SUPPORTING,after=10)
+description_block(d)
+H1(d,"Pinned comment",before=14)
+for para in PINNED: keep(P(d,para,after=6))
+H1(d,"Watch next",before=14); keep(P(d,"%s  (Video 3)"%NEXT,bold=True,after=8))
+compress(d, 1.08, 0.44)
+d.save(os.path.join(LF,PUB))
+
+d=newdoc()
+head(d,VID,TITLE,"Video 2  ·  YouTube description",
+     "Upload copy only. Everything below the end marker is internal and must "
+     "not be pasted into YouTube.")
+H1(d,"Title",before=14); P(d,TITLE,size=12,after=10)
+H1(d,"Thumbnail",before=14); P(d,THUMB,size=12,bold=True,after=10)
+H1(d,"Primary search phrase",before=14); P(d,PRIMARY,after=10)
+description_block(d)
+H1(d,"Pinned comment",before=14)
+for para in PINNED: keep(P(d,para,after=6))
+H1(d,"Watch next",before=14); keep(P(d,"%s  (Video 3)"%NEXT,bold=True,after=8))
+compress(d, 1.08, 0.44)
+DESC_DOC=os.path.join(BASE,"Video_2_YouTube_Description_HIT.docx")
+d.save(DESC_DOC)
+print("publishing package and description-only document written")
+
+# ---------------------------------------------------------------- 4. Shorts
+from shorts_text import SHORTS
+LABELS=["SHORT 1","SHORT 2","SHORT 3","SHORT 4"]
+for (fn,role,hook,copy),label in zip(SHORTS,LABELS):
     d=newdoc(True)
     P(d,"VIDEO 2 SHORT",size=10,bold=True,color=GOLD,after=4,caps=True)
     P(d,label,size=20,bold=True,color=NAVY,after=8,spacing=1.1)
     keep(P(d,"Role:  %s"%role,size=11,color=DIM,after=5))
     keep(P(d,"Verbal hook:  “%s”"%hook,size=11,color=DIM,after=5))
-    keep(P(d,"Related long-form:  %s"%TITLE,size=11,color=DIM,after=16))
-    H1(d,"RECORDING COPY")
+    keep(P(d,"Related long-form:  %s"%TITLE,size=11,color=DIM,after=10))
+    H1(d,"RECORDING COPY",before=12)
     for line in copy:
-        keep(P(d,line,size=13.5,color=INK,after=12,spacing=1.5))
+        keep(P(d,line,size=13.5,color=INK,after=10,spacing=1.5))
     d.save(os.path.join(SH,fn))
-print("publishing package and %d Shorts written"%len(SHORTS))
 
-# ------------------------------------------------------ 6. Shorts editor brief
+# ------------------------------------------------------ 5. Shorts editor brief
 d=newdoc()
-P(d,"EDITOR ONLY",size=22,bold=True,color=RGBColor(0x9B,0x2C,0x10),after=2)
-P(d,"VIDEO 2 — FOUR STANDALONE SHORTS",size=18,bold=True,color=NAVY,
-  after=8,spacing=1.1)
+P(d,"EDITOR ONLY",size=22,bold=True,color=RED,after=2)
+P(d,"VIDEO 2 — FOUR STANDALONE SHORTS",size=18,bold=True,color=NAVY,after=8,
+  spacing=1.1)
 p=P(d,"This document is for the editor. It is separate from the four Short "
      "recording documents and must not be placed on Temidayo's recording "
      "screen.",size=11,italic=True,color=DIM,after=16,spacing=1.25)
 shade(p,BAND_CREAM)
-
-H1(d,"How these are produced")
+H1(d,"How these are produced",before=14)
 keep(P(d,"These are separately recorded 9:16 Shorts. They are NOT excerpts cut "
        "from the long-form video.",bold=True,after=10))
-P(d,"Each Short should have:",after=6)
-for x in ["an immediate verbal hook;","a corresponding on-screen hook;",
-          "meaningful visual movement;","accurate burned-in captions;",
-          "restrained editorial pacing;",
-          "Video 2 added as the YouTube Related Video when available."]:
-    keep(P(d,"—  "+x,after=4))
+P(d,"Each Short needs:",after=6)
+pairlist(d,["an immediate verbal hook;","a corresponding on-screen hook;",
+ "meaningful visual movement;","accurate mobile-safe captions;",
+ "premium, restrained editorial pacing;",
+ "Video 2 added as the Related Video when available."])
+direct_address_section(d,"Direct address is part of the creative",
+ ["“There are two questions I want you to separate.”",
+  "“Let me show you what changing contexts taught me.”",
+  "“Try this on one sentence from your résumé.”"])
 
 def short(label,role,onscreen,body):
-    H1(d,label)
+    H1(d,label,before=14)
     keep(P(d,"Role:  %s"%role,size=11,color=DIM,after=5))
     p=keep(P(d,"On-screen hook:  %s"%onscreen,size=11,bold=True,color=GOLD,after=8))
     shade(p,BAND_CREAM)
     for b in body: keep(P(d,b,after=5))
+    keep(P(d,"Related Video:  Video 2",size=10.5,color=DIM,before=4,after=6))
 
 short("SHORT 1","Recognition","DOING WELL. FEWER OPTIONS?",
- ["Begin direct to camera.",
-  "Briefly introduce:  VALUABLE HERE  /  LEGIBLE ELSEWHERE",
-  "No generic office B-roll.",
-  "End: FULL VIDEO ON YOUTUBE, or use the YouTube Related Video route without "
-  "adding a forced verbal CTA."])
+ ["Visual:  VALUABLE HERE  /  LEGIBLE ELSEWHERE",
+  "Non-alarmist. Do not imply that being relied on is itself a warning sign.",
+  "End on:  CAN ANOTHER CONTEXT USE IT?"])
 short("SHORT 2","Distinction / myth","INDISPENSABLE ≠ MARKETABLE",
- ["Use a restrained contrast between YOU and THE CONTEXT.",
-  "When Temidayo mentions undocumented history, relationships and fragile "
-  "processes, do not illustrate each item with literal stock footage. Keep the "
-  "emphasis conceptual.",
-  "End with: WHAT ACTUALLY TRAVELS?"])
+ ["Restrained two-column contrast. No generic office B-roll.",
+  "End on:  WHAT BELONGS TO YOU, AND WHAT BELONGS TO THE CONTEXT?"])
 short("SHORT 3","Proof / personal evidence","NOT EVERYTHING TRAVELS",
- ["When Temidayo says “My own career has crossed functions and "
-  "industries…”, briefly show:",
-  "     ACCOUNTING & AUDIT  →  CYBER / PRIVACY  →  PEOPLE / EMPLOYEE "
-  "EXPERIENCE  →  TRANSFORMATION",
-  "Temidayo intentionally does not narrate the list.",
-  "End visually on: WHAT REMAINS USEFUL?"])
-short("SHORT 4","Practical action","REMOVE THE COMPANY NOUNS",
- ["Visually demonstrate removing: EMPLOYER · INTERNAL PROGRAM · SYSTEM NAME · "
-  "PRODUCT NAME · ACRONYM",
-  "Then show: “I own the QBR process for this business unit.”",
-  "Transition to a clearer capability-focused expression.",
-  "Do not overcrowd the screen with the entire replacement sentence at once. "
-  "Use progressive text."])
+ ["FACTUAL BOUNDARY: no employer, metric, role or result. The proof is that "
+  "Temidayo's career crossed functions and industries and she had to learn "
+  "what travels.",
+  "End on:  WHAT STAYS USEFUL WHEN THE CONTEXT CHANGES?"])
+short("SHORT 4","Practical test / action","REMOVE THE COMPANY NOUNS",
+ ["Show the before and after sentence as restrained text, not a graphic gag.",
+  "End on:  NOW IT IS EASIER TO UNDERSTAND."])
 
-H1(d,"All Shorts")
-for x in ["No hyperactive zooming.","No fake shock expressions.",
-          "No red warning graphics.","No generic career B-roll.",
-          "No stock résumé footage.","No AI-style animated icons.",
-          "Keep captions mobile-safe and accurate."]:
-    keep(P(d,"—  "+x,after=4))
-d.save(os.path.join(SH,"Video_2_Shorts_EDITOR_ONLY_HIT_Brief.docx"))
+H1(d,"All Shorts — visual boundaries",before=14)
+P(d,"Do not use:",after=5)
+pairlist(d,["stock office B-roll;","generic résumé graphics;","employer logos;",
+ "red warning graphics;","fake shock expressions;","countdown motifs;",
+ "constant zooms;","AI-generated scenery;","social-media template effects."],
+ after=3)
+compress(d, 1.12, 0.46)
+d.save(os.path.join(SH,SEB))
 
-# ---------------------------------------------------------------- 7. README
+# ---------------------------------------------------------------- 6. README
 FILES=(["LONG_FORM/"+f for f in sorted(os.listdir(LF))]
       +["SHORTS/"+f for f in sorted(os.listdir(SH))])
-R=["VIDEO 2 — H.I.T. FINAL RECORDING PACKAGE","",
- "Title:        %s"%TITLE,
- "Thumbnail:    %s"%THUMB,
- "CTA:          %s"%CTA,
- "              %s"%CTA_URL,
- "Watch next:   %s"%NEXT,"",
- "Long-form:    Revised under the H.I.T. first-30-second standard.",
- "Slides:       UNCHANGED.",
- "Shorts:       Four separately recorded vertical scripts.",
- "Editor",
- "instructions: Separated from all recording copy.","",
- "-"*70,"","WHAT EACH FILE IS","",
- "LONG_FORM/","",
- "  Video2TeleprompterScriptwithslidemarkers_HIT_v2.0.docx",
- "  Video2TeleprompterScriptwithslidemarkers_HIT_v2.0.txt",
+R=["VIDEO 2 — DIRECT-ADDRESS FINAL RECORDING PACKAGE v3.0","",
+ "Title:             %s"%TITLE,
+ "Thumbnail:         %s"%THUMB,
+ "Strategic job:     Recognition / diagnosis",
+ "Core distinction:  Being valuable here is not the same as being legible",
+ "                   somewhere else.","",
+ "Voice:             Temidayo speaks to one experienced professional, not an",
+ "                   abstract audience. The relationship is trusted",
+ "                   practitioner to one viewer, never lecturer to a crowd.","",
+ "Memory structure:",
+ "  Remove the company nouns.",
+ "  Find outside-context evidence.",
+ "  Read the last 90 days.","",
+ "Primary CTA:       %s"%CTA,
+ "CTA URL:           %s"%CTA_URL,
+ "Watch next:        %s"%NEXT,"",
+ "Slides:            Visual design and on-slide copy unchanged. 13 main",
+ "                   slides.",
+ "Speaker notes:     Updated for v3.0 direct address.",
+ "Reveal deck:       Visual design and reveal states unchanged. 23 frames.",
+ "Shorts:            Four separately recorded scripts, revised for direct",
+ "                   address.",
+ "Description-only",
+ "document:          Separate from this ZIP.",
+ "Editor directions: Separated from recording copy.","",
+ "-"*70,"","WHAT EACH FILE IS","","LONG_FORM/","",
+ "  %s.docx"%TEL,"  %s.txt"%TEL,
  "      Temidayo's recording copy. Spoken script in large text; slide markers",
  "      in tinted bands. The markers are not spoken.","",
- "  Video2ReadingScriptnomarkers_HIT_v2.0.docx",
- "  Video2ReadingScriptnomarkers_HIT_v2.0.txt",
+ "  %s.docx"%RDG,"  %s.txt"%RDG,
  "      The same spoken words with the slide markers removed.","",
- "  Video_2_EDITOR_ONLY_HIT_Brief_v2.0.docx",
- "      For the editor. The H.I.T. first-30-second plan, editorial rhythm",
- "      after 0:30, the existing slide map and the overlay principle.",
- "      Not for the teleprompter.","",
- "  Video_2_Publishing_Package_HIT_v2.0.docx",
- "      Title, thumbnail, search language, description, working chapters and",
- "      pinned comment.","",
+ "  %s"%EDB,
+ "      For the editor. Locked metadata, the direct-address register, the",
+ "      H.I.T. first-30-second map, the slide and reveal maps, the overlay",
+ "      principle, the factual and tone boundaries, CTA and watch-next",
+ "      routing, editing rhythm, the visual do-not-use list and the",
+ "      speaker-note record. Not for the teleprompter.","",
+ "  %s"%PUB,
+ "      Title, thumbnail, search language, the copy-ready description,",
+ "      working chapter estimates and the pinned comment.","",
  "SHORTS/","",
  "  Four recording documents, one per Short. These contain Temidayo's",
  "  recording copy and no editor directions.","",
- "  Video_2_Shorts_EDITOR_ONLY_HIT_Brief.docx",
+ "  %s"%SEB,
  "      For the editor. On-screen hooks and visual treatment for all four.","",
- "-"*70,"","ALL FILES IN THIS PACKAGE","",]
+ "-"*70,"","ALL FILES IN THIS PACKAGE",""]
 for f in FILES: R.append("  "+f)
 R+=["  README_FINAL.txt","  SHA256SUMS.txt","",
- "-"*70,"","WHAT WAS NOT CHANGED","",
- "The existing Video 2 PowerPoint deck, the reveal deck, the thumbnail, every",
- "website file, every product and every other video are unchanged. This",
- "revision is spoken script and editor instruction only.","",
- "The 13-slide deck remains authoritative. The teleprompter's 13 slide markers",
- "map to it in order, slide 1 to slide 13.",""]
+ "-"*70,"","WORKING CHAPTER TIMESTAMPS","",
+ "The chapter timestamps in the publishing package are WORKING ESTIMATES",
+ "derived from the script. They were not measured from an edit. The editor",
+ "must replace every one of them from the finished cut before publishing.","",
+ "-"*70,"","WHAT THIS REVISION CHANGED","",
+ "This is a VOICE revision, not a rebuild. The teaching structure, every",
+ "substantive claim, the factual and tone boundaries, the single CTA and the",
+ "Watch Next route are all unchanged. 62 of the 105 prior spoken paragraphs",
+ "are carried over verbatim; 46 were rewritten so that Temidayo is speaking",
+ "to one experienced professional rather than to an abstract audience. No",
+ "paragraph was deleted and no new claim was added.","",
+ "Prior locked package: v2.0, spoken word count 1,131.",
+ "This package:         v3.0 direct address, spoken word count 1,258.","",
+ "-"*70,"","OPEN DECK ITEM — NOT FIXED IN THIS PASS","",
+ "Slide 13 and reveal frame 23 still read \"Before You Quit Your Job, Check",
+ "These 3 Things\". That is the retired Video 3 title. The locked Video 3",
+ "title is \"3 Things to Do Before Quitting Your Job\", which is what Temidayo",
+ "says in the script. No slide XML change was authorised in this pass, so the",
+ "card was left alone and the correction is held for a separate approval.","",
+ "-"*70,"","CHECKSUMS","",
+ "SHA256SUMS.txt covers the other 12 user-facing files in this package. It",
+ "does not hash itself, and it carries no ZIP checksum. The archive's own",
+ "SHA-256 is in the sibling file:",
+ "  Video_2_HIT_FINAL_Recording_and_Shorts_Package.zip.sha256",""]
 open(os.path.join(ROOT,"README_FINAL.txt"),"w").write("\n".join(R))
-print("shorts editor brief and README written")
+
+MANIFEST=["LONG_FORM/%s.docx"%TEL,"LONG_FORM/%s.txt"%TEL,
+ "LONG_FORM/%s.docx"%RDG,"LONG_FORM/%s.txt"%RDG,
+ "LONG_FORM/%s"%EDB,"LONG_FORM/%s"%PUB]+\
+ ["SHORTS/"+f for f,_,_,_ in SHORTS]+["SHORTS/"+SEB,"README_FINAL.txt"]
+ZIP=os.path.join(BASE,"Video_2_HIT_FINAL_Recording_and_Shorts_Package.zip")
+z=package(ROOT,MANIFEST,ZIP,"Video_2_HIT_FINAL",
+  ["# VIDEO 2 - DIRECT-ADDRESS FINAL RECORDING PACKAGE v3.0",
+   "# SHA-256 of the 12 user-facing files in this package.",
+   "# SHA256SUMS.txt cannot hash itself. The master ZIP cannot contain its own",
+   "# checksum either; it is published in the sibling file",
+   "# Video_2_HIT_FINAL_Recording_and_Shorts_Package.zip.sha256"])
+print("ZIP sha256:",z)
+print("DESC-ONLY sha256:",sha256(DESC_DOC))

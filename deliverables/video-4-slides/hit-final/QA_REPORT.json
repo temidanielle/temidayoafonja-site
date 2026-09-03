@@ -1,162 +1,228 @@
 {
- "01_teleprompter_docx_equals_txt": true,
- "02_reading_docx_equals_txt": true,
- "03_teleprompter_minus_markers_equals_reading": true,
- "03b_both_equal_approved_script_verbatim": true,
- "04_markers_ordered_and_mapped": true,
- "04b_marker_count_is_11": true,
- "04c_marker_positions_match_source": true,
- "05_exactly_four_short_recording_docs": true,
- "05b_short_filenames": [
-  "Video_4_Short_1_Cat_With_Nine_Lives.docx",
-  "Video_4_Short_2_Chronology_Not_Explanation.docx",
-  "Video_4_Short_3_Not_A_Perfect_Plan.docx",
-  "Video_4_Short_4_Three_Sentences.docx"
- ],
- "06_shorts_free_of_editor_directions": true,
- "06b_offending": {},
- "07_editor_docs_labelled": true,
- "08_established_description_present": true,
- "09_no_invented_original_conversation": true,
- "09b_offending": {},
- "10_cat_imagery_only_as_prohibition": true,
- "10b_cat_mentions": [
-  {
-   "doc": "Video_4_EDITOR_ONLY_HIT_Brief_v2.0.docx",
-   "text": "Do NOT use cat imagery, animation, sound effect or reenactment.",
-   "prohibition": true
+ "checks": {
+  "C1": {
+   "check": "Teleprompter TXT == revised canonical",
+   "pass": true,
+   "detail": ""
   },
-  {
-   "doc": "Video_4_Shorts_EDITOR_ONLY_HIT_Brief.docx",
-   "text": "Do NOT use cat imagery or sounds.",
-   "prohibition": true
+  "C2": {
+   "check": "Reading TXT == canonical spoken",
+   "pass": true,
+   "detail": ""
   },
-  {
-   "doc": "Video_4_Shorts_EDITOR_ONLY_HIT_Brief.docx",
-   "text": "—  cat imagery;        —  cat sounds;        —  employer logos;",
-   "prohibition": true
+  "C3": {
+   "check": "Teleprompter minus markers == reading script",
+   "pass": true,
+   "detail": ""
+  },
+  "C4": {
+   "check": "Teleprompter DOCX == canonical",
+   "pass": true,
+   "detail": ""
+  },
+  "C5": {
+   "check": "Reading DOCX == canonical spoken",
+   "pass": true,
+   "detail": ""
+  },
+  "C6": {
+   "check": "Marker count and order preserved",
+   "pass": true,
+   "detail": "11"
+  },
+  "C7": {
+   "check": "No paragraph removed",
+   "pass": true,
+   "detail": "0"
+  },
+  "C8": {
+   "check": "Revision is bounded, not a rewrite",
+   "pass": true,
+   "detail": "unchanged 78 vs changed 44"
+  },
+  "D1": {
+   "check": "No detached phrasing in long-form or Shorts",
+   "pass": true,
+   "detail": "[]"
+  },
+  "D2": {
+   "check": "Viewer-facing situations predominantly second person",
+   "pass": true,
+   "detail": "45 of 61 viewer-facing paragraphs (74%)"
+  },
+  "D3": {
+   "check": "First-person evidence bridges back to the viewer",
+   "pass": true,
+   "detail": "{'let me show you': 1, 'i want you to': 1, 'here is what i would': 1, 'i want to walk you through': 1, 'now try the same': 1}"
+  },
+  "D4": {
+   "check": "'experienced professionals' is positioning language",
+   "pass": true,
+   "detail": "count=1"
+  },
+  "D5": {
+   "check": "Organizational mechanics carry viewer consequence",
+   "pass": true,
+   "detail": ""
+  },
+  "D6": {
+   "check": "Direct address not mechanically repetitive",
+   "pass": true,
+   "detail": "45% of all spoken paragraphs"
+  },
+  "D7": {
+   "check": "No keynote or conference voice",
+   "pass": true,
+   "detail": "[]"
+  },
+  "D8": {
+   "check": "No generic career-article phrasing",
+   "pass": true,
+   "detail": ""
+  },
+  "D9": {
+   "check": "No unsupported fact added",
+   "pass": true,
+   "detail": "inserted 1"
+  },
+  "D10": {
+   "check": "No additional mnemonic",
+   "pass": true,
+   "detail": "'acronym' occurrences prior 0, revised 0"
+  },
+  "D11": {
+   "check": "One primary CTA remains",
+   "pass": true,
+   "detail": "[]"
+  },
+  "D12": {
+   "check": "Watch Next remains correct",
+   "pass": true,
+   "detail": ""
+  },
+  "D13": {
+   "check": "Every Short speaks to one viewer",
+   "pass": true,
+   "detail": "{'Video_4_Short_1_Cat_With_Nine_Lives.docx': True, 'Video_4_Short_2_Chronology_Not_Explanation.docx': True, 'Video_4_Short_3_Not_A_Perfect_Plan.docx': True, 'Video_4_Short_4_Three_Sentences.docx': True}"
+  },
+  "D14": {
+   "check": "Both editor briefs carry the direct-address section",
+   "pass": true,
+   "detail": ""
+  },
+  "D15": {
+   "check": "Slides visually unchanged",
+   "pass": true,
+   "detail": "[]"
+  },
+  "D16": {
+   "check": "Only notes parts changed in both PPTX",
+   "pass": true,
+   "detail": "11 / 26"
+  },
+  "D17": {
+   "check": "Public description searchable and copy-ready",
+   "pass": true,
+   "detail": ""
+  },
+  "D18": {
+   "check": "Working chapters flagged as estimates",
+   "pass": true,
+   "detail": ""
+  },
+  "D19": {
+   "check": "No [INSERT] placeholder",
+   "pass": true,
+   "detail": ""
+  },
+  "D20": {
+   "check": "Publishing public block == description-only public block",
+   "pass": true,
+   "detail": ""
+  },
+  "D21": {
+   "check": "Recording docs contain no editor instructions",
+   "pass": true,
+   "detail": "[]"
+  },
+  "D22": {
+   "check": "Both EDITOR ONLY docs clearly labelled",
+   "pass": true,
+   "detail": ""
+  },
+  "P1": {
+   "check": "Main slide count",
+   "pass": true,
+   "detail": "11"
+  },
+  "P2": {
+   "check": "Reveal frame count",
+   "pass": true,
+   "detail": "26"
+  },
+  "P3": {
+   "check": "Notes updated to v3.0 direct address",
+   "pass": true,
+   "detail": ""
+  },
+  "Z1": {
+   "check": "Exactly 13 files in ZIP",
+   "pass": true,
+   "detail": "13"
+  },
+  "Z2": {
+   "check": "No _source, Python, temp or render files in ZIP",
+   "pass": true,
+   "detail": ""
+  },
+  "Z3": {
+   "check": "SHA256SUMS.txt exactly 12 entries",
+   "pass": true,
+   "detail": "12"
+  },
+  "Z4": {
+   "check": "sha256sum -c successful",
+   "pass": true,
+   "detail": "y_Not_Explanation.docx: OK\nSHORTS/Video_4_Short_3_Not_A_Perfect_Plan.docx: OK\nSHORTS/Video_4_Short_4_Three_Sentences.docx: OK\nSHORTS/Video_4_Shorts_EDITOR_ONLY_HIT_Brief.docx: OK\nREADME_FINAL.txt: OK\n"
+  },
+  "Z5": {
+   "check": "Sibling ZIP checksum matches",
+   "pass": true,
+   "detail": ""
+  },
+  "Z6": {
+   "check": "README matches archive",
+   "pass": true,
+   "detail": ""
   }
- ],
- "10c_recording_copy_cat_only_in_approved_hook": true,
- "10d_stray": [],
- "11_2008_context_accurate": true,
- "12_no_claim_every_move_planned": true,
- "13_relearning_boundary_explicit": true,
- "14_no_unsupported_metric": true,
- "14b_offending": {},
- "15_permission_boundary_verbatim": true,
- "15b_no_unsafe_retention_instruction": true,
- "16_keep_the_proof_is_sole_cta": true,
- "16b_offending": {},
- "16c_cta_url_present": true,
- "17_watch_next_is_video_5": true,
- "18_21_nothing_else_modified": true,
- "18_21b_unexpected_changes": [],
- "reading_has_no_markers": true,
- "reading_has_no_timestamps": true,
- "canonical_spoken_paragraphs": 124,
- "canonical_spoken_words": 1322,
- "25_zip_file_count": 13,
- "25b_zip_count_is_13": true,
- "24_zip_contents_exactly_as_specified": true,
- "26_no_source_folder": true,
- "26b_no_python_files": true,
- "26c_no_images_temp_or_hidden": true,
- "26d_zip_integrity": true,
- "28_sums_entry_count": 12,
- "28b_sums_has_12_entries": true,
- "28c_sums_does_not_hash_itself": true,
- "28d_sums_has_no_zip_entry": true,
- "29_every_listed_hash_matches": true,
- "29b_sums_identical_inside_and_outside_zip": true,
- "27_readme_lists_13_files": true,
- "27b_readme_matches_archive": true,
- "30_sibling_checksum_matches": true,
- "30b_zip_sha256": "5ca42003ff3c100d5afb2d071e87d418abe6d7777b6f45d956d5830ab46104a0",
- "31_chapters_marked_working_estimates": true,
- "D1_all_eleven_chapter_lines_in_description": true,
- "D2_no_placeholder_in_description": true,
- "D3_warning_outside_description": true,
- "D4_reference_matches_description": true,
- "22_23_rendered_page_counts": {
-  "Video4ReadingScriptnomarkers_H": 9,
-  "Video4TeleprompterScriptwithsl": 10,
-  "Video_4_EDITOR_ONLY_HIT_Brief_": 4,
-  "Video_4_Publishing_Package_HIT": 3,
-  "Video_4_Short_1_Cat_With_Nine_": 1,
-  "Video_4_Short_2_Chronology_Not": 1,
-  "Video_4_Short_3_Not_A_Perfect_": 1,
-  "Video_4_Short_4_Three_Sentence": 1,
-  "Video_4_Shorts_EDITOR_ONLY_HIT": 2
  },
- "ALL_BOOLEAN_CHECKS_PASS": true,
- "SOURCE_VERIFICATION": {
-  "status": "PASSED",
-  "date": "2026-09-01",
-  "canonical_file": "Video_4_Code_Prompt_HIT_Final.txt",
-  "canonical_file_available": true,
-  "canonical_file_sha256": "9d66cce6a94117542e1f1e514a1fc18d86e1543371f9a0c47146e96a641bc3e1",
-  "canonical_file_archived_at": "deliverables/video-4-slides/hit-final/_source/Video_4_Code_Prompt_HIT_Final.txt",
-  "method": "Text extracted only between the BEGIN/END APPROVED VIDEO 4 SCRIPT fences and compared literally. No normalisation of any kind was applied: no case folding, no whitespace collapsing, no quote or dash substitution.",
-  "source_blocks": 135,
-  "source_markers": 11,
-  "source_spoken_paragraphs": 124,
-  "source_spoken_words": 1322,
-  "teleprompter_txt_minus_markers_equals_source": true,
-  "reading_script_txt_equals_source": true,
-  "slide_marker_names_match": true,
-  "slide_marker_positions_match": true,
-  "characters_source": 8057,
-  "characters_reading": 8057,
-  "characters_teleprompter_minus_markers": 8057,
-  "sha256_joined_spoken_text": "bcbfab8720a5fb4a19198c9693be9dd6bda7ae51eed3e29dfbf666757b6c0097",
-  "sha256_identical_across_source_and_both_packaged_scripts": true,
-  "per_character_class_equal": {
-   "apostrophes": 2,
-   "left_double_quotes": 11,
-   "right_double_quotes": 11,
-   "em_dashes": 2,
-   "ellipses": 3,
-   "capital_letters": 163
-  },
-  "checked": [
-   "every word",
-   "punctuation",
-   "apostrophes",
-   "quotation marks",
-   "em dashes",
-   "capitalization",
-   "paragraph order"
-  ],
-  "result": "EXACT MATCH on both comparisons."
+ "failures": [],
+ "change_report": {
+  "unchanged": 78,
+  "changed": 44,
+  "inserted": 1,
+  "removed": 0
  },
- "KEEP_THE_PROOF_GATE": {
-  "status": "PASSED",
-  "date": "2026-09-01",
-  "verified_by": "Temidayo, signed-out check",
-  "verified_by_claude": false,
-  "note": "Outbound requests to temidayoafonja.com are refused by this environment's egress proxy. Routine pre-publication signed-out link check remains in the publishing SOP."
+ "voice": {
+  "viewer_facing": 61,
+  "second_person": 45,
+  "ratio": 0.738
  },
- "PACKAGE_INTEGRITY_AT_LOCK": {
-  "all_12_packaged_files_match_recorded_checksums": true,
-  "no_packaged_file_changed_since_reviewed_commit_e2d405f": true,
-  "zip_rebuilt": false,
-  "zip_entries": 13,
-  "zip_sha256": "5ca42003ff3c100d5afb2d071e87d418abe6d7777b6f45d956d5830ab46104a0",
-  "zip_sha256_retained": true
+ "words_prior": 1261,
+ "words_new": 1355,
+ "markers": 11,
+ "slides": 11,
+ "frames": 26,
+ "notes_parts": {
+  "main": 11,
+  "reveal": 26
  },
- "LOCK": {
-  "status": "FINAL AND LOCKED FOR RECORDING",
-  "date": "2026-09-01",
-  "title": "How to Explain Your Career Change",
-  "thumbnail": "YOUR CAREER MAKES SENSE",
-  "canonical_spoken_words": 1322,
-  "cta": "Keep the Proof",
-  "keep_the_proof_gate": "PASSED",
-  "watch_next": "Should I Make an Internal Move? 3 Questions to Decide",
-  "slides": "UNCHANGED",
-  "reveal_deck": "UNCHANGED",
-  "thumbnail_asset": "UNCHANGED",
-  "previous_1221_word_script": "SUPERSEDED"
- }
+ "hashes": {
+  "zip": "600bbf407b7d4c7da2d2339d16c9670896c310894588f836db4a8b627cd6a65f",
+  "desc_docx": "f96350b54d5f593c4ca088366e8ad710ba07e5f8b1c8ad330178a2174e46429d",
+  "main_pptx": "b4732a966af9dd587d14cd12544fbbe31fa22ffc26b54ac492bc7c023f73b33a",
+  "reveal_pptx": "ad74573ee7f47fcd79cc090eb7ec69e0b580eda91b1920b3f278b8464e4aac5a",
+  "preview_pdf": "da482aff3ce4d4253c9f0d5417fddb53688207d24d0d9f6a72ca5b6a77f1b832"
+ },
+ "prior_zip": "6d9e8339a83a463ad231db8d180f6bb27025b07f41fd4bfc914778ea5f602684"
 }

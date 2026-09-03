@@ -294,6 +294,33 @@ package (1,403 words) and `Video_5_Code_Prompt_HIT_Final.txt`, and the earlier
 1,639-word script are all **SUPERSEDED** and retained only as historical
 reference.
 
+**Videos 2, 3 and 4 are FINAL AND LOCKED UNDER THE DIRECT-ADDRESS REGISTER** as
+of 3 September 2026, revised in one pass from their locked packages. The
+register is now a series standard, not a Video 5 exception: Temidayo speaks to
+one experienced professional sitting across from her, and every paragraph must
+pass the test "would she naturally say this to one person sitting across the
+table?". Detached audience phrasing — "some people", "professionals often",
+"people may", "a person should", "employees often", "workers may", "many
+professionals" — is out. "Experienced professionals" appears only in the
+channel-positioning sentence. Direct address is never applied mechanically:
+first-person lived evidence, direct questions, imperatives and quoted example
+lines all keep their own voice, and the measured second-person share is taken
+over viewer-facing paragraphs only.
+
+Each revision is auditable as a voice revision rather than a rewrite. Video 2
+went from v2.0 (1,131 words) to v3.0 (1,258) with 62 paragraphs unchanged and
+46 rewritten; Video 3 from v2.0 (1,205) to v3.0 (1,251) with 65 unchanged and 44
+rewritten; Video 4 from v2.1 (1,261) to v3.0 (1,355) with 78 unchanged, 44
+rewritten and one coaching line added. No paragraph was deleted in any of the
+three, no factual claim was added, no CTA or Watch Next route moved, and no
+second framework appeared. Video 2 keeps its three tests, Video 3 its three
+checks, Video 4 its three-sentence career explanation. All six decks are
+visually untouched — only notes parts changed. 117 QA checks pass.
+
+Video 2 also gained its first package ZIP and description-only document in that
+pass, and Video 3 gained a description-only document, so Videos 1 to 8 now all
+follow the same package convention.
+
 Video 6 is **FINAL AND LOCKED FOR RECORDING** as of 1 September 2026, rebuilt
 under the H.I.T. standard at `deliverables/video-6-slides/hit-final/`, canonical
 spoken count **1,721**, first spoken line "Your workload can grow faster than

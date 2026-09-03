@@ -1,22 +1,44 @@
-VIDEO 3 — H.I.T. FINAL RECORDING PACKAGE
+VIDEO 3 — DIRECT-ADDRESS FINAL RECORDING PACKAGE v3.0
 
-Title:        3 Things to Do Before Quitting Your Job
-Thumbnail:    WAIT BEFORE YOU QUIT
-CTA:          Career Decision Evidence Check
-CTA URL:      https://temidayoafonja.com/career-decisions
-Publication
-gate:         Do not publish until the Career Decision Evidence Check page
-              is production-live and usable. The page is confirmed live,
-              so the gate is currently satisfied. One signed-out
-              production check is still required before Video 3 is
-              uploaded or scheduled.
-Watch next:   How to Change Jobs Without Starting Your Career Over
+Title:             3 Things to Do Before Quitting Your Job
+Thumbnail:         WAIT BEFORE YOU QUIT
+Strategic job:     Consequential decision / evidence check
+Core promise:      Help you make a cleaner decision before access changes.
 
-Long-form:    Revised under the H.I.T. first-30-second standard.
-Slides:       UNCHANGED.
-Shorts:       Four separately recorded vertical scripts.
-Editor
-instructions: Separated from all recording copy.
+Voice:             Temidayo speaks to one experienced professional, not an
+                   abstract audience. The relationship is trusted
+                   practitioner to one viewer, never lecturer to a crowd.
+
+Safety boundary:   If your health or safety is at risk, or you are facing
+                   harassment, discrimination or another urgent threat,
+                   nothing in this video is a reason to delay leaving. It
+                   is spoken in the opening, in full on slide 2, again in
+                   the decision reading and again in the pinned comment.
+                   Do not soften, shorten, move or cut any instance.
+
+Evidence boundary: Preserve never means taking company material. Keep only
+                   what you are entitled to keep.
+
+Memory structure:
+  Preserve the evidence.
+  Name what the work built in you.
+  Test the next move.
+
+Primary CTA:       Career Decision Evidence Check
+CTA URL:           https://temidayoafonja.com/career-decisions
+CTA production
+gate:              SATISFIED
+Watch next:        How to Change Jobs Without Starting Your Career Over (Video 1)
+
+Slides:            Visual design and on-slide copy unchanged. 13 main
+                   slides.
+Speaker notes:     Updated for v3.0 direct address.
+Reveal deck:       Visual design and reveal states unchanged. 27 frames.
+Shorts:            Four separately recorded scripts, revised for direct
+                   address.
+Description-only
+document:          Separate from this ZIP.
+Editor directions: Separated from recording copy.
 
 ----------------------------------------------------------------------
 
@@ -24,24 +46,25 @@ WHAT EACH FILE IS
 
 LONG_FORM/
 
-  Video3TeleprompterScriptwithslidemarkers_HIT_v2.0.docx
-  Video3TeleprompterScriptwithslidemarkers_HIT_v2.0.txt
+  Video3TeleprompterScriptwithslidemarkers_HIT_v3.0_DIRECT_ADDRESS.docx
+  Video3TeleprompterScriptwithslidemarkers_HIT_v3.0_DIRECT_ADDRESS.txt
       Temidayo's recording copy. Spoken script in large text; slide markers
       in tinted bands. The markers are not spoken.
 
-  Video3ReadingScriptnomarkers_HIT_v2.0.docx
-  Video3ReadingScriptnomarkers_HIT_v2.0.txt
+  Video3ReadingScriptnomarkers_HIT_v3.0_DIRECT_ADDRESS.docx
+  Video3ReadingScriptnomarkers_HIT_v3.0_DIRECT_ADDRESS.txt
       The same spoken words with the slide markers removed.
 
-  Video_3_EDITOR_ONLY_HIT_Brief_v2.0.docx
-      For the editor. The H.I.T. first-30-second plan, editorial rhythm
-      after 0:30, the existing 13-slide map, the reviewed slide 5 and 6
-      wording note and the safety and evidence boundaries.
-      Not for the teleprompter.
+  Video_3_EDITOR_ONLY_HIT_Brief_v3.0_DIRECT_ADDRESS.docx
+      For the editor. Locked metadata, the direct-address register, the
+      H.I.T. first-30-second map, the slide and reveal maps, the overlay
+      principle, the factual and tone boundaries, CTA and watch-next
+      routing, editing rhythm, the visual do-not-use list and the
+      speaker-note record. Not for the teleprompter.
 
-  Video_3_Publishing_Package_HIT_v2.0.docx
-      Title, thumbnail, search language, description, working chapter
-      estimates, pinned comment and the publication gate.
+  Video_3_Publishing_Package_HIT_v3.0_DIRECT_ADDRESS.docx
+      Title, thumbnail, search language, the copy-ready description,
+      working chapter estimates and the pinned comment.
 
 SHORTS/
 
@@ -55,12 +78,12 @@ SHORTS/
 
 ALL FILES IN THIS PACKAGE
 
-  LONG_FORM/Video3ReadingScriptnomarkers_HIT_v2.0.docx
-  LONG_FORM/Video3ReadingScriptnomarkers_HIT_v2.0.txt
-  LONG_FORM/Video3TeleprompterScriptwithslidemarkers_HIT_v2.0.docx
-  LONG_FORM/Video3TeleprompterScriptwithslidemarkers_HIT_v2.0.txt
-  LONG_FORM/Video_3_EDITOR_ONLY_HIT_Brief_v2.0.docx
-  LONG_FORM/Video_3_Publishing_Package_HIT_v2.0.docx
+  LONG_FORM/Video3ReadingScriptnomarkers_HIT_v3.0_DIRECT_ADDRESS.docx
+  LONG_FORM/Video3ReadingScriptnomarkers_HIT_v3.0_DIRECT_ADDRESS.txt
+  LONG_FORM/Video3TeleprompterScriptwithslidemarkers_HIT_v3.0_DIRECT_ADDRESS.docx
+  LONG_FORM/Video3TeleprompterScriptwithslidemarkers_HIT_v3.0_DIRECT_ADDRESS.txt
+  LONG_FORM/Video_3_EDITOR_ONLY_HIT_Brief_v3.0_DIRECT_ADDRESS.docx
+  LONG_FORM/Video_3_Publishing_Package_HIT_v3.0_DIRECT_ADDRESS.docx
   SHORTS/Video_3_Short_1_Before_You_Lose_Context.docx
   SHORTS/Video_3_Short_2_Keep_Proof_Not_Files.docx
   SHORTS/Video_3_Short_3_Context_Disappears_Fast.docx
@@ -79,21 +102,24 @@ must replace every one of them from the finished cut before publishing.
 
 ----------------------------------------------------------------------
 
-SLIDE WORDING — REVIEWED AND INTENTIONALLY RETAINED
+WHAT THIS REVISION CHANGED
 
-REVIEWED AND INTENTIONALLY RETAINED. Slides 5 and 6 use the conceptual
-heading “Name what the work built.” The spoken script addresses the
-viewer directly with “Name what your work built.” No slide change is
-required.
+This is a VOICE revision, not a rebuild. The three checks, every substantive
+claim, the safety boundary, the permitted-evidence boundary, the single CTA
+and the Watch Next route are all unchanged. 65 of the 108 prior spoken
+paragraphs are carried over verbatim; 44 were rewritten so that Temidayo is
+speaking to one experienced professional rather than to an abstract
+audience. No paragraph was deleted and no new claim was added.
+
+Prior locked package: v2.0, spoken word count 1,205,
+                      ZIP 2455a0d08105e3148215191e62ead6204c8e4cdf896525592a2983b8c14ea177.
+This package:         v3.0 direct address, spoken word count 1,251.
 
 ----------------------------------------------------------------------
 
-WHAT WAS NOT CHANGED
+CHECKSUMS
 
-The existing Video 3 PowerPoint deck, the reveal deck, the thumbnail, the
-Career Decision Evidence Check page, every website file, every product and
-every other video are unchanged. This revision is spoken script and editor
-instruction only.
-
-The 13-slide deck remains authoritative. The teleprompter's 13 slide markers
-map to it in order, slide 1 to slide 13.
+SHA256SUMS.txt covers the other 12 user-facing files in this package. It
+does not hash itself, and it carries no ZIP checksum. The archive's own
+SHA-256 is in the sibling file:
+  Video_3_HIT_FINAL_Recording_and_Shorts_Package.zip.sha256

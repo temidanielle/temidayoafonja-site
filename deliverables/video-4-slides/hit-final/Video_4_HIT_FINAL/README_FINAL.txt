@@ -1,25 +1,41 @@
-VIDEO 4 — H.I.T. FINAL RECORDING PACKAGE
+VIDEO 4 — DIRECT-ADDRESS FINAL RECORDING PACKAGE v3.0
 
 Title:             How to Explain Your Career Change
 Thumbnail:         YOUR CAREER MAKES SENSE
-CTA:               Free Career Evidence Starter
+Strategic job:     Searchable problem + personal evidence
+Core distinction:  Chronology tells where you have been. A portability
+                   explanation shows what travelled.
+
+Voice:             Temidayo speaks to one experienced professional, not an
+                   abstract audience. This video is about explaining
+                   yourself to another person, so it is the most
+                   conversational in the series.
+
+Personal proof:    A senior colleague once called Temidayo a cat with nine
+                   lives, meaning her career kept moving into work that
+                   looked unrelated. That is the whole approved fact. The
+                   employer is not named publicly, the original
+                   conversation is not invented, and no cat imagery is used
+                   anywhere.
+
+Memory structure:  The three-sentence career explanation.
+  “My career has moved across…”
+  “Across those chapters, I kept being asked to…”
+  “That is why I am now focused on…”
+
+Primary CTA:       Free Career Evidence Starter
 CTA URL:           https://temidayoafonja.com/career-evidence-starter
-                   The earlier Keep the Proof CTA is SUPERSEDED for this
-                   video by the free Career Evidence Starter. Slide 10 and
-                   reveal frame 25 carry the new CTA; every other slide and
-                   frame is byte-identical.
 Watch next:        Should I Make an Internal Move? 3 Questions to Decide
 
-Long-form:         Revised under H.I.T.
-Slides:            UNCHANGED. 11 main slides.
-Reveal deck:       UNCHANGED.
-Thumbnail:         UNCHANGED.
-Shorts:            Four separately recorded vertical scripts.
+Slides:            Visual design and on-slide copy unchanged. 11 main
+                   slides.
+Speaker notes:     Updated for v3.0 direct address.
+Reveal deck:       Visual design and reveal states unchanged. 26 frames.
+Shorts:            Four separately recorded scripts, revised for direct
+                   address.
+Description-only
+document:          Separate from this ZIP.
 Editor directions: Separated from recording copy.
-
-Fact boundary:     The recurring “cat with nine lives” description is
-                   established. The original first conversation is not
-                   established and is not invented.
 
 ----------------------------------------------------------------------
 
@@ -27,24 +43,25 @@ WHAT EACH FILE IS
 
 LONG_FORM/
 
-  Video4TeleprompterScriptwithslidemarkers_HIT_v2.1.docx
-  Video4TeleprompterScriptwithslidemarkers_HIT_v2.1.txt
+  Video4TeleprompterScriptwithslidemarkers_HIT_v3.0_DIRECT_ADDRESS.docx
+  Video4TeleprompterScriptwithslidemarkers_HIT_v3.0_DIRECT_ADDRESS.txt
       Temidayo's recording copy. Spoken script in large text; slide markers
       in tinted bands. The markers are not spoken.
 
-  Video4ReadingScriptnomarkers_HIT_v2.1.docx
-  Video4ReadingScriptnomarkers_HIT_v2.1.txt
+  Video4ReadingScriptnomarkers_HIT_v3.0_DIRECT_ADDRESS.docx
+  Video4ReadingScriptnomarkers_HIT_v3.0_DIRECT_ADDRESS.txt
       The same spoken words with the slide markers removed.
 
-  Video_4_EDITOR_ONLY_HIT_Brief_v2.1.docx
-      For the editor. The H.I.T. first-30-second plan, editorial rhythm
-      after 0:30, the existing 11-slide map, the let-the-visual-carry
-      principle, and the fact and evidence boundaries.
-      Not for the teleprompter.
+  Video_4_EDITOR_ONLY_HIT_Brief_v3.0_DIRECT_ADDRESS.docx
+      For the editor. Locked metadata, the direct-address register, the
+      H.I.T. first-30-second map, the slide and reveal maps, the overlay
+      principle, the factual and tone boundaries, CTA and watch-next
+      routing, editing rhythm, the visual do-not-use list and the
+      speaker-note record. Not for the teleprompter.
 
-  Video_4_Publishing_Package_HIT_v2.1.docx
+  Video_4_Publishing_Package_HIT_v3.0_DIRECT_ADDRESS.docx
       Title, thumbnail, search language, the copy-ready description,
-      working chapter estimates, pinned comment and the tag field.
+      working chapter estimates and the pinned comment.
 
 SHORTS/
 
@@ -58,12 +75,12 @@ SHORTS/
 
 ALL FILES IN THIS PACKAGE
 
-  LONG_FORM/Video4ReadingScriptnomarkers_HIT_v2.1.docx
-  LONG_FORM/Video4ReadingScriptnomarkers_HIT_v2.1.txt
-  LONG_FORM/Video4TeleprompterScriptwithslidemarkers_HIT_v2.1.docx
-  LONG_FORM/Video4TeleprompterScriptwithslidemarkers_HIT_v2.1.txt
-  LONG_FORM/Video_4_EDITOR_ONLY_HIT_Brief_v2.1.docx
-  LONG_FORM/Video_4_Publishing_Package_HIT_v2.1.docx
+  LONG_FORM/Video4ReadingScriptnomarkers_HIT_v3.0_DIRECT_ADDRESS.docx
+  LONG_FORM/Video4ReadingScriptnomarkers_HIT_v3.0_DIRECT_ADDRESS.txt
+  LONG_FORM/Video4TeleprompterScriptwithslidemarkers_HIT_v3.0_DIRECT_ADDRESS.docx
+  LONG_FORM/Video4TeleprompterScriptwithslidemarkers_HIT_v3.0_DIRECT_ADDRESS.txt
+  LONG_FORM/Video_4_EDITOR_ONLY_HIT_Brief_v3.0_DIRECT_ADDRESS.docx
+  LONG_FORM/Video_4_Publishing_Package_HIT_v3.0_DIRECT_ADDRESS.docx
   SHORTS/Video_4_Short_1_Cat_With_Nine_Lives.docx
   SHORTS/Video_4_Short_2_Chronology_Not_Explanation.docx
   SHORTS/Video_4_Short_3_Not_A_Perfect_Plan.docx
@@ -82,21 +99,38 @@ must replace every one of them from the finished cut before publishing.
 
 ----------------------------------------------------------------------
 
+WHAT THIS REVISION CHANGED
+
+This is a VOICE revision, not a rebuild. The three-sentence method, every
+substantive claim, the cat-with-nine-lives boundary, the honesty boundary,
+the single CTA and the Watch Next route are all unchanged. 78 of the 120
+prior spoken paragraphs are carried over verbatim; 44 were rewritten and 1
+coaching line was added so that Temidayo is speaking to one experienced
+professional rather than to an abstract audience. No paragraph was deleted
+and no new claim was added.
+
+Prior locked package: v2.1, spoken word count 1,261,
+                      ZIP 6d9e8339a83a463ad231db8d180f6bb27025b07f41fd4bfc914778ea5f602684.
+This package:         v3.0 direct address, spoken word count 1,355.
+
+----------------------------------------------------------------------
+
+BOUNDARIES THAT DID NOT MOVE
+
+Not everything transfers. Different roles, functions and industries can
+require real relearning, and the script says so more than once. Coherence is
+never a claim that every move was strategic. The 2008 financial-crisis
+context stays exactly as spoken and no further detail is added.
+
+The Free Career Evidence Starter is the only CTA. Keep the Proof is NOT
+restored. Only the direct public landing-page URL is used; no PDF link is
+exposed.
+
+----------------------------------------------------------------------
+
 CHECKSUMS
 
 SHA256SUMS.txt covers the other 12 user-facing files in this package. It
 does not hash itself, and it carries no ZIP checksum. The archive's own
 SHA-256 is in the sibling file:
   Video_4_HIT_FINAL_Recording_and_Shorts_Package.zip.sha256
-
-----------------------------------------------------------------------
-
-WHAT WAS NOT CHANGED
-
-The existing Video 4 PowerPoint deck (11 slides), the reveal-build deck,
-the approved thumbnail, every website file, every product and every other
-video are unchanged. This revision is spoken script, editor instruction and
-publishing copy only.
-
-The 11-slide deck remains authoritative. The teleprompter's 11 slide
-markers map to it in order, slide 1 to slide 11.

@@ -4,7 +4,7 @@ Series-level record of publication gates, open decisions and outstanding
 assets. Kept here so individual video packages do not have to be reopened to
 carry a cross-cutting note.
 
-Last updated: 1 September 2026.
+Last updated: 3 September 2026.
 
 ---
 
@@ -110,10 +110,10 @@ for every video that carries the URL.
 | # | Package | Recording scripts | Thumbnail |
 |---|---|---|---|
 | 1 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. content APPROVED** — corrected package pending final verification | `DON'T START FROM ZERO` — approved production direction |
-| 2 | slides, reveal deck and thumbnail **unchanged and authoritative** | **FINAL + LOCKED FOR RECORDING**, commit `d6883dd` | final, approved |
-| 3 | slides, reveal deck and thumbnail **unchanged and authoritative** | **FINAL + LOCKED + CLEARED TO PUBLISH**, commit `c961b63` | Final A approved; Final B archived |
-| 4 | slides, reveal deck and thumbnail **unchanged and authoritative** | **H.I.T. content + package APPROVED** — not yet final, see the note below | approved |
-| 5 | slides, reveal deck and thumbnail **unchanged and authoritative** | **FINAL + LOCKED FOR RECORDING**, commit `51496ba` | approved |
+| 2 | slides and reveal deck **unchanged**; see the open Slide 13 Watch Next defect | **FINAL + LOCKED UNDER DIRECT ADDRESS**, v3.0 | final, approved |
+| 3 | slides, reveal deck and thumbnail **unchanged and authoritative** | **FINAL + LOCKED UNDER DIRECT ADDRESS**, v3.0 | Final A approved; Final B archived |
+| 4 | slides, reveal deck and thumbnail **unchanged and authoritative** | **FINAL + LOCKED UNDER DIRECT ADDRESS**, v3.0 | approved |
+| 5 | slides, reveal deck and thumbnail **unchanged and authoritative** | **FINAL + LOCKED UNDER DIRECT ADDRESS**, v3.1 | approved |
 | 6 | Slides 1–11 and thumbnail **unchanged**; Slide 12 Watch Next title corrected | **FINAL + LOCKED FOR RECORDING** | task closed — finalising in Canva |
 | 7 | slides, reveal deck and thumbnail **unchanged and authoritative** | **REOPENED UNDER H.I.T.** — not yet revised, not locked | concept approved: `MAKE INVISIBLE WORK VISIBLE`, gesture version |
 | 8 | slides, reveal deck and thumbnail **unchanged and authoritative** | **REOPENED UNDER H.I.T.** — not yet revised, not locked | leading direction: `YOUR EXPERIENCE STILL COUNTS` |
@@ -129,11 +129,13 @@ repository as historical reference material and are no longer the authoritative
 recording scripts. Videos 5 to 8 are **not** to be described as locked for
 recording merely because the older packages still exist.
 
-Video 2 is locked separately at commit `d6883dd` under the H.I.T.
-first-30-second standard: `deliverables/video-2-slides/hit-final/`. 105 spoken
-paragraphs, 1,131 words, 13 slide markers mapping to the unchanged 13-slide
-deck. Four standalone Shorts, and editor instruction held in two clearly
-labelled EDITOR ONLY briefs, out of every recording document.
+Video 2 is now locked under the **direct-address register** at
+`deliverables/video-2-slides/hit-final/` as v3.0: 108 spoken paragraphs, 1,258
+words, 13 slide markers mapping to the unchanged 13-slide deck. Four standalone
+Shorts, and editor instruction held in two clearly labelled EDITOR ONLY briefs,
+out of every recording document. The earlier `d6883dd` H.I.T. lock (105
+paragraphs, 1,131 words, no package ZIP) is **superseded** and retained only as
+historical reference.
 
 **Video 2's working chapter timestamps are deliberately estimates.** They are
 not to be recalculated before recording. The editor replaces them with actual
@@ -343,37 +345,121 @@ inferred beyond the approved existing production direction.
 
 #### Video 2 — Is Your Job Making You Less Marketable?
 
-**FINAL + LOCKED FOR RECORDING.** H.I.T. package approved.
-
-#### Video 3 — 3 Things to Do Before Quitting Your Job
-
-**FINAL + LOCKED + CLEARED TO PUBLISH** once recording, edit and upload QA are
-complete. Career Decision Evidence Check gate: **SATISFIED**.
-
-#### Video 4 — How to Explain Your Career Change
-
-**FINAL + LOCKED FOR RECORDING.** Canonical source-file verification **PASSED**.
+**FINAL + LOCKED UNDER THE DIRECT-ADDRESS REGISTER — v3.0 DIRECT ADDRESS.**
+`deliverables/video-2-slides/hit-final/`.
 
 | | |
 |---|---|
+| Prior authoritative source | `Video2TeleprompterScriptwithslidemarkers_HIT_v2.0.txt` |
+| Prior package | v2.0, unpacked folder, **no ZIP existed** |
+| New package | v3.0 direct address, 13-file ZIP created for the first time |
+| Title | Is Your Job Making You Less Marketable? |
+| Thumbnail | YOUR SKILLS ARE STALLING |
+| Primary CTA | Capability Formation Field Kit — https://temidayoafonja.com/fieldkit |
+| Watch next | 3 Things to Do Before Quitting Your Job (Video 3) |
+| Spoken word count | 1,131 → **1,258** |
+| Change report | 62 paragraphs unchanged, 46 rewritten, 0 inserted, 0 removed |
+| Direct-address QA | PASSED — 89% of viewer-facing paragraphs in second person |
+| Slides | UNCHANGED, 13 main slides |
+| Reveal deck | UNCHANGED, 23 frames |
+| Notes parts changed | main 13, reveal 23 — no other part changed |
+| ZIP SHA-256 | `f8ebaa45f657d5fbd60440a54bde58127c343b15fd0b8956c84d6cf7701e18a9` |
+| Description-only DOCX | `50a84e39dfc168972125d75b528ba25cb34adf92c2321ea4797966c11d6af57f` |
+| Main deck | `cc6ca0e8914b3f9d2248e6758793171a944c011c292aff2a6e09dd89aa1156d5` |
+| Reveal deck | `35131b87a0802f970b674d8214f2be7a2de505e7770b1482f4be3d0e25f023e0` |
+| Preview PDF | `7917d0fafcc77d557d394e59427c37e5d6813cd2c28a210e35a0bc8415a190b0` |
+
+The thumbnail value in the revision prompt (`VALUABLE HERE. STUCK HERE?`)
+differs from the locked repository value. The prompt itself directs that the
+repository value wins, so `YOUR SKILLS ARE STALLING` is unchanged.
+
+Video 2 previously had no package ZIP and no description-only document. Both
+were created in this pass, bringing it onto the convention used by Videos 1
+and 3 to 8.
+
+**OPEN DECK ITEM — REQUIRES SEPARATE AUTHORISATION.** Slide 13 and reveal frame
+23 still read `Before You Quit Your Job, Check These 3 Things`, the RETIRED
+Video 3 title. The locked Video 3 title is `3 Things to Do Before Quitting Your
+Job`, which is what the script says. This defect pre-dates the direct-address
+pass and was not created by it. No slide XML change was authorised in this
+pass, so the card was left alone; the editor brief, the README and the slide-13
+speaker note all record it and instruct the editor to stay on Temidayo rather
+than hold the stale card on screen.
+
+#### Video 3 — 3 Things to Do Before Quitting Your Job
+
+**FINAL + LOCKED UNDER THE DIRECT-ADDRESS REGISTER — v3.0 DIRECT ADDRESS.**
+Career Decision Evidence Check gate: **SATISFIED**.
+`deliverables/video-3-slides/hit-final/`.
+
+| | |
+|---|---|
+| Prior authoritative source | `Video3TeleprompterScriptwithslidemarkers_HIT_v2.0.txt` |
+| Prior package | v2.0, ZIP `2455a0d08105e3148215191e62ead6204c8e4cdf896525592a2983b8c14ea177` |
+| New package | v3.0 direct address |
+| Title | 3 Things to Do Before Quitting Your Job |
+| Thumbnail | WAIT BEFORE YOU QUIT |
+| Primary CTA | Career Decision Evidence Check — https://temidayoafonja.com/career-decisions |
+| Watch next | How to Change Jobs Without Starting Your Career Over (Video 1) |
+| Spoken word count | 1,205 → **1,251** |
+| Change report | 65 paragraphs unchanged, 44 rewritten, 0 inserted, 0 removed |
+| Direct-address QA | PASSED — 88% of viewer-facing paragraphs in second person |
+| Slides | UNCHANGED, 13 main slides |
+| Reveal deck | UNCHANGED, 27 frames |
+| Notes parts changed | main 13, reveal 27 — no other part changed |
+| ZIP SHA-256 | `62af1ca5d1c2096a61309d7d0529e761c07af2237521c2e18ad51c821e890874` |
+| Description-only DOCX | `e0d002cff63a6adaeb24b7b67ed57eaddddbb75f9f58d82053dac04ae7e1fda2` |
+| Main deck | `d0c27f682fecac3a3d53ba61c06aef01c39e122dec9de281ff52e4cf827a7544` |
+| Reveal deck | `9680a4b50dce3ad9cf78fae70ca474b17f9d49623e05325a5471d95886ada5ae` |
+| Preview PDF | `76f3bd78be4151e9adb5fcdec6b399e2f255feacec6e703deb74175b4e274ec4` |
+
+The safety boundary is unchanged in meaning and prominence: it is spoken in the
+opening, in full on slide 2, again in the decision reading and again in the
+pinned comment. The permitted-evidence boundary — if you do not have the right
+to keep it, do not take it — is unchanged. The video remains a cleaner-decision
+video, not a case for staying. Slide 13 was inspected and carries the correct
+Video 1 title.
+
+Video 3 also gained a description-only document in this pass.
+
+#### Video 4 — How to Explain Your Career Change
+
+**FINAL + LOCKED UNDER THE DIRECT-ADDRESS REGISTER — v3.0 DIRECT ADDRESS.**
+`deliverables/video-4-slides/hit-final/`.
+
+| | |
+|---|---|
+| Prior authoritative source | `Video4TeleprompterScriptwithslidemarkers_HIT_v2.1.txt` |
+| Prior package | v2.1, ZIP `6d9e8339a83a463ad231db8d180f6bb27025b07f41fd4bfc914778ea5f602684` |
+| New package | v3.0 direct address |
 | Title | How to Explain Your Career Change |
 | Thumbnail | YOUR CAREER MAKES SENSE |
-| Canonical spoken count | 1,322 |
-| CTA | Keep the Proof |
-| Keep the Proof production gate | PASSED |
-| Watch next | Video 5 — Should I Make an Internal Move? 3 Questions to Decide |
-| Long-form H.I.T. rebuild | FINAL + LOCKED |
-| Four standalone Shorts | FINAL + LOCKED |
-| Long-form EDITOR ONLY brief | FINAL |
-| Shorts EDITOR ONLY brief | FINAL |
-| Publishing package | FINAL |
-| Slides | UNCHANGED |
-| Reveal deck | UNCHANGED |
-| Thumbnail | UNCHANGED |
-| Previous 1,221-word script | SUPERSEDED |
-| Final package ZIP SHA-256 | `5ca42003ff3c100d5afb2d071e87d418abe6d7777b6f45d956d5830ab46104a0` |
+| Primary CTA | Free Career Evidence Starter — https://temidayoafonja.com/career-evidence-starter |
+| Watch next | Should I Make an Internal Move? 3 Questions to Decide (Video 5) |
+| Spoken word count | 1,261 → **1,355** |
+| Change report | 78 paragraphs unchanged, 44 rewritten, 1 coaching line inserted, 0 removed |
+| Direct-address QA | PASSED — 74% of viewer-facing paragraphs in second person |
+| Slides | UNCHANGED, 11 main slides |
+| Reveal deck | UNCHANGED, 26 frames |
+| Notes parts changed | main 11, reveal 26 — no other part changed |
+| ZIP SHA-256 | `600bbf407b7d4c7da2d2339d16c9670896c310894588f836db4a8b627cd6a65f` |
+| Description-only DOCX | `f96350b54d5f593c4ca088366e8ad710ba07e5f8b1c8ad330178a2174e46429d` |
+| Main deck | `b4732a966af9dd587d14cd12544fbbe31fa22ffc26b54ac492bc7c023f73b33a` |
+| Reveal deck | `ad74573ee7f47fcd79cc090eb7ec69e0b580eda91b1920b3f278b8464e4aac5a` |
+| Preview PDF | `da482aff3ce4d4253c9f0d5417fddb53688207d24d0d9f6a72ca5b6a77f1b832` |
 
-The package was not rebuilt or altered for the lock; no packaged file changed.
+Video 4's second-person share is the lowest of the three because roughly a
+third of the script is Temidayo's own first-person career evidence, which is
+correct for this video and must not be converted.
+
+**The Video 4 record that previously appeared here was stale.** It recorded
+Keep the Proof as the CTA and ZIP `5ca42003…`. That was superseded by the
+2 September master pre-recording patch pass, which moved Video 4 to the Free
+Career Evidence Starter at v2.1. This entry replaces it. Keep the Proof is NOT
+restored, only the direct public landing-page URL is used, the cat-with-nine-
+lives fact stays bounded with no employer named and no cat imagery, the
+December 2008 financial-crisis context is unchanged, and the
+not-everything-transfers boundary is intact.
 
 #### Video 5 — Should I Make an Internal Move? 3 Questions to Decide
 
@@ -616,11 +702,30 @@ patch, and the Video 6 description document already carried one before it.
 Video 4 gained a separate description-only document, so Videos 1 and 4 to 8
 now all follow that convention.
 
+### Direct-address voice register — series standard, 3 September 2026
+
+Video 5 v3.1 set the register and Videos 2, 3 and 4 were revised into it in a
+single pass. Temidayo speaks to one experienced professional sitting across
+from her, never to an abstract audience. Each revision is auditable as a voice
+revision rather than a rewrite: no paragraph was deleted, no factual claim was
+added, no CTA or Watch Next route moved, and no second framework appeared.
+
+| Video | Prior | New | Unchanged / rewritten paragraphs | Viewer-facing second person |
+|---|---|---|---|---|
+| 2 | v2.0, 1,131 words | v3.0, 1,258 words | 62 / 46 | 89% |
+| 3 | v2.0, 1,205 words | v3.0, 1,251 words | 65 / 44 | 88% |
+| 4 | v2.1, 1,261 words | v3.0, 1,355 words | 78 / 44 (+1 inserted) | 74% |
+| 5 | v3.0, 1,762 words | v3.1, 1,980 words | rebuilt from canonical v3.1 | 74% |
+
+117 QA checks across Videos 2 to 4 pass. No slide XML, media, rels or theme
+part changed in any of the six decks; only notes parts changed.
+
 ### Series summary
 
 | State | Videos |
 |---|---|
-| FINAL + LOCKED FOR RECORDING | 2, 3, 4, 5, 6, 7, 8 |
+| FINAL + LOCKED UNDER DIRECT-ADDRESS REGISTER | 2, 3, 4, 5 |
+| FINAL + LOCKED FOR RECORDING | 6, 7, 8 |
 | FINAL + LOCKED FOR RE-RECORDING | 1 |
 
 Videos 7 and 8 completed their H.I.T. rebuilds on 1 September 2026 and are
