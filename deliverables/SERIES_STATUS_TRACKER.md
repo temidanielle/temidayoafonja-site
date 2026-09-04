@@ -787,6 +787,85 @@ re-rendered and hold at 3 pages with healthy trailing pages.
 
 **VIDEOS 1-5 - FINAL + LOCKED. v5.1.1 PRECISION PASS COMPLETE.**
 
+### Video 8 - v2.2.1 RESEARCH-ALIGNMENT PRECISION PASS, 4 September 2026
+
+Three narrow corrections plus a spelling sweep and a tag removal. Not a rewrite,
+no runtime tightening, and no direct-address chasing - all explicitly ruled out.
+
+**Visible slide copy changed for the first time in this series**, on the two
+slides Temidayo authorised with exact wording. Everything else on both decks is
+notes-only.
+
+| # | Where | Old | New |
+|---|---|---|---|
+| 1 | Main slide 2 + reveal frame 4 | `NONE OF THAT IS YOUR COMPETENCE.` / `ALL OF IT IS CONTEXT.` / "And context is learnable." | `NOT EVERY DIFFERENCE IS A CAPABILITY GAP.` / `MUCH OF IT IS CONTEXT.` / "Some can be researched. Some must be learned through exposure." |
+| 2 | Main slide 4 + reveal frame 9 | "None of these belong to an industry." | `THESE FORMS OF JUDGMENT CAN TRAVEL —` / `WHEN THE NEW CONTEXT NEEDS THEM.` |
+| 3 | Long form, direct-experience section | "Answer that honestly and you can usually tell which one you are looking at." | "Answer that honestly and you can start to see which part is a real gap you need to close, and which part is uncertainty the employer needs you to reduce." |
+| 3 | Short 1 | "…which of the two you are looking at. / One you have to close. / The other you have to give them a reason to trust." | "…separate what you genuinely need to learn from what the employer needs more evidence to trust. / One calls for learning or exposure. / The other calls for credible proof." |
+| 4 | All material | travelled, practised, recognised/recognising, licence | traveled, practiced, recognized/recognizing, license |
+| 5 | Tag field AND supporting search language | `career change after 40` | removed from both |
+
+The false binary is gone: a single "direct industry experience" requirement can
+contain both a real gap and employer uncertainty, and neither the long form nor
+Short 1 now forces a choice between them.
+
+#### Slide corrections were measured before they were made
+
+Both new strings were measured against the real box width with the actual brand
+fonts at 400 DPI. Slide 2's two headline lines fit as single lines (8.38" and
+4.42" against an 11.11" box) and its sub-line fits on one line at 8.29", so the
+block keeps its exact height - important, because that box sits 0.47" from the
+slide edge and a second line would have crowded it. Slide 4's new line measures
+12.13" against the same 11.11" box, so it **must** break in two, exactly as
+Temidayo wrote it; there is 1.51" of clear space below, so the auto-fit growth is
+safe.
+
+Edits touched only `<a:t>` run text plus one added `<a:br/>` on slide 4. Position,
+size, font, weight and colour were asserted identical before and after. Part-level
+diff: `slide2.xml`, `slide4.xml` on the main deck and `slide4.xml`, `slide9.xml`
+on the reveal deck - nothing else. Both slides were rendered and visually checked
+on main and reveal: no clipping, no overlap, design intact.
+
+#### A real defect this pass caught
+
+`script_text.py` holds `LINES` and `SPOKEN` as two separate literal lists. The
+first attempt at correction 3 used a single-occurrence replace, which patched
+`LINES` but not `SPOKEN` - so the teleprompter and the clean reading script
+silently diverged. The canonical equivalence check caught it immediately and the
+fix replaced all occurrences. Worth remembering: in this module a one-shot
+replace is never correct.
+
+#### Metadata
+
+Word count 1,890 (was 1,874). Runtime 13:02 (was 12:55) - accepted, no trimming.
+Recognition 0:00, payoff 0:24, evidence 0:34 and 0:50, framework 2:36, identity
+exit 11:47. Chapter timings recomputed again.
+
+#### QA
+
+48 of 48 checks pass, including five new v2.2.1 checks covering both slide
+corrections, the U.S.-English sweep, the tag removal and the removed binary.
+Canonical verification passes, with the preservation invariant now comparing
+modulo exactly the authorised spelling substitutions, plus a check that v2.2.1
+changed exactly one long-form paragraph. Check 17 was rebaselined against the
+committed v2.2 decks and now asserts that ONLY slides 2 and 4 (reveal 4 and 9)
+changed.
+
+#### Final hashes
+
+| Asset | SHA-256 |
+|---|---|
+| Package ZIP | `cb1bc55e46c18da5612420ce54ee915be91b4433b1a8525a6cd6bc50753b9dbb` |
+| Description DOCX | `dd8c653140d791e10bf902d7430d6b173f4674fe1de365d88d36c23599d9fb9a` |
+| Summary DOCX (v2.2.1) | `23f78c5da2fc0d71f9a4a77352a9a832ceb8dc40618795d08f704657ac32d60d` |
+| Main deck | `591aa103e223bfed5665df9185ea100b2bb7240dd0e1b80a955e6d3e3a3d2f95` |
+| Reveal deck | `720716cc13cc4ae5b26c8cd25aec24eb3b23287955f92350369f564f965de418` |
+
+Eight loose final recording scripts were also published outside the ZIP in
+`_loose_final_scripts/`, each verified byte-identical to its in-ZIP original.
+
+**VIDEO 8 - FINAL + LOCKED. v2.2.1 RESEARCH-ALIGNMENT PRECISION PASS COMPLETE.**
+
 ### Video 8 - RESEARCH-ALIGNMENT STRENGTHENING PASS, v2.2, 4 September 2026
 
 Video 8 was reopened for the narrow research-alignment strengthening recorded in

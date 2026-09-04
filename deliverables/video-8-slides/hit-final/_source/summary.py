@@ -52,7 +52,8 @@ def B(t,after=3):
     p=P("—  "+t,after=after); p.paragraph_format.left_indent=Inches(0.16); return p
 
 P("CAPABILITY FORMATION",size=9,bold=True,color=GOLD,after=2,caps=True)
-P("Video 8 — Final Content and Publishing Summary",size=19,bold=True,color=NAVY,after=4,spacing=1.05)
+P("Video 8 — Final Content and Publishing Summary",size=19,bold=True,color=NAVY,after=2,spacing=1.05)
+P("v2.2.1  ·  research-alignment precision pass",size=11,bold=True,color=GOLD,after=4)
 p=P("Reference sheet for Temidayo and the editing/publishing workflow. Not a recording "
     "document, and deliberately not inside the 13-file package ZIP.",size=10,italic=True,
     color=DIM,after=12,spacing=1.25); shade(p,BAND_CREAM)
@@ -61,7 +62,7 @@ H("Identity")
 KV("Video number:","8")
 KV("Final public title:","How to Switch Industries Without Starting Over")
 KV("Final thumbnail copy:","YOUR EXPERIENCE STILL COUNTS")
-KV("Status:","FINAL + RESEARCH-ALIGNED  ·  package v2.2")
+KV("Status:","FINAL + LOCKED  ·  v2.2.1 research-alignment precision pass complete")
 
 H("Video job / core question")
 P("What from my experience still counts when I move into a different industry, and what "
@@ -89,14 +90,14 @@ KV("Capability","What remains useful when the setting changes: the judgment, dec
    "that actually exists in the destination.")
 KV("Context","What must be learned because the environment is genuinely different — "
    "language, stakeholders, incentives, regulation, operating rhythm and risk. Some of it "
-   "can be researched; some has to be observed or practised.")
+   "can be researched; some has to be observed or practiced.")
 KV("Credential","What has to be formally earned. Sometimes genuinely required, in which "
    "case experience does not substitute for it; sometimes a signal that shortens the "
    "conversation; sometimes neither.")
 
 H("Permanent audit — answerable by the end of the video")
 for q,a in (("What travels?","The judgment, decisions and patterns that stay useful when the setting changes."),
-            ("What does not?","Knowledge tied to the old context, and anything that has to be learned, practised or formally earned."),
+            ("What does not?","Knowledge tied to the old context, and anything that has to be learned, practiced or formally earned."),
             ("What can I prove?","Judgment with evidence attached — a comparable decision, comparable complexity, a relevant outcome."),
             ("What must I relearn?","The context you have not earned yet, and any credential the destination genuinely requires.")):
     KV(q,a)
@@ -120,7 +121,7 @@ P("Nothing else is claimed. No employer, client, metric or result appears in thi
 H("Employer-legibility point")
 P("“Direct industry experience required” does not always mean the same thing. Sometimes it "
   "points at something real — a regulation to understand properly, domain knowledge that "
-  "takes time, a licence, decisions where being wrong carries real consequences. Sometimes "
+  "takes time, a license, decisions where being wrong carries real consequences. Sometimes "
   "it is shorthand for hiring risk: the employer is not sure how quickly somebody from "
   "outside becomes useful here.",spacing=1.3)
 P("The video does not tell the viewer to ignore the requirement either way. It asks: what "
@@ -128,12 +129,13 @@ P("The video does not tell the viewer to ignore the requirement either way. It a
   "four parts — what I can already do with evidence behind it; what context I could "
   "reasonably learn; what is a genuine gap I cannot talk my way around; and what this "
   "employer would need to see before they could trust the overlap.",spacing=1.3)
+P("The two are not mutually exclusive. A single “direct industry experience” requirement can contain both a real gap to close and uncertainty the employer needs reduced, and the script says so rather than forcing a choice between them.",spacing=1.3)
 
 H("Honest limits — what the video does NOT promise")
 for x in ("That all experience transfers. It says plainly that some knowledge becomes much "
           "less useful the moment the context changes.",
           "That framing or translation can overcome a genuine credential requirement.",
-          "That every context gap is an information gap. Some has to be observed or practised.",
+          "That every context gap is an information gap. Some has to be observed or practiced.",
           "That the Field Kit will tell the viewer which industry to choose, or remove the "
           "need to learn the field they are entering.",
           "That the third column should be empty. The script explicitly says do not try to "
@@ -181,8 +183,9 @@ P(PUB[87],size=10,spacing=1.25)
 H("Shorts — four standalone recordings")
 REL=("Standalone 9:16 recording, not an excerpt cut from the long-form video. "
      "Related long-form: How to Switch Industries Without Starting Over.")
-CORE=["Names the audience pain directly and teaches the viewer to tell a real "
-      "context/domain/credential gap from a hiring-risk signal. Deliberately not an "
+CORE=["Names the audience pain directly and helps the viewer separate what they "
+      "genuinely need to learn from what the employer needs more evidence to trust — "
+      "without presenting the two as mutually exclusive. Deliberately not an "
       "“ignore the requirement and apply anyway” Short.",
       "Separates the three Cs so the viewer stops solving all three problems with another "
       "certificate or an adjective.",
@@ -202,25 +205,31 @@ for i,((fn,role,hook,copy),core) in enumerate(zip(shm.SHORTS,CORE),1):
 H("Slide summary")
 KV("Main slides:","12")
 KV("Reveal frames:","24")
-KV("Visible slide content changed in this pass:","NO — none.")
-KV("What changed on the decks:","Speaker/editor notes only. Part-level SHA-256 diff "
-   "against the previous committed decks shows 12 and 24 notesSlides parts changed and "
-   "NON-NOTES PARTS CHANGED: [] on both files.")
-p=P("VISIBLE VIDEO 8 SLIDES UNCHANGED — NOTES/SCRIPT ALIGNMENT ONLY.",bold=True,
-    color=NAVY,before=6,after=6,spacing=1.25); shade(p,BAND_NAVY)
+KV("Visible slide content changed in this pass:","YES — two authorised precision "
+   "corrections, main slides 2 and 4, mirrored on reveal frames 4 and 9. Nothing else.")
+P("Slide 2 payoff — old: “NONE OF THAT IS YOUR COMPETENCE. / ALL OF IT IS CONTEXT.” with “And context is learnable.”  New: “NOT EVERY DIFFERENCE IS A CAPABILITY GAP. / MUCH OF IT IS CONTEXT.” with “Some can be researched. Some must be learned through exposure.” The list and visual design are unchanged.",spacing=1.3)
+P("Slide 4 closing line — old: “None of these belong to an industry.”  New: “THESE FORMS OF JUDGMENT CAN TRAVEL — / WHEN THE NEW CONTEXT NEEDS THEM.” Same position, same type, two lines instead of one.",spacing=1.3)
+KV("Everything else on the decks:","Speaker/editor notes only, with NON-NOTES PARTS "
+   "CHANGED: [] on both files apart from the two authorised slide parts each.")
+p=P("VISIBLE SLIDE CHANGES LIMITED TO THE TWO AUTHORISED PRECISION CORRECTIONS "
+    "(SLIDES 2 AND 4). GEOMETRY, LAYOUT, THEME, MEDIA AND FONT SIZES UNCHANGED.",
+    bold=True,color=NAVY,before=6,after=6,spacing=1.25); shade(p,BAND_NAVY)
 
 H("Production metadata")
 KV("Final spoken word count:","{:,}".format(WORDS))
 KV("Estimated runtime:","%s at 145 words per minute"%RUNTIME)
 KV("H.I.T. payoff timing:","0:24 — “what you can carry, what the new context changes, and "
    "what you actually have to earn”")
+KV("U.S. English:","Applied across scripts, Shorts, descriptions, decks and notes — "
+   "traveled, practiced, recognized, license.")
 KV("Recognition beat:","0:00 — “direct industry experience required”")
 KV("Lived evidence from:","0:34 (eight industries) and 0:50 (CISM non-pass)")
 KV("Framework arrives:","2:36 — the three Cs, after recognition")
-KV("Identity-exit timing:","11:40 — “a way of moving rather than a plan for one change”")
+KV("Identity-exit timing:","11:47 — “a way of moving rather than a plan for one change”")
 
 H("Final status")
-for t in ("VIDEO 8 — FINAL + RESEARCH-ALIGNED",
+for t in ("VIDEO 8 — FINAL + LOCKED",
+          "v2.2.1 RESEARCH-ALIGNMENT PRECISION PASS COMPLETE",
           "TITLE:  HOW TO SWITCH INDUSTRIES WITHOUT STARTING OVER",
           "THUMBNAIL:  YOUR EXPERIENCE STILL COUNTS"):
     p=P(t,size=11,bold=True,color=NAVY,after=5,spacing=1.25); shade(p,BAND_CREAM)

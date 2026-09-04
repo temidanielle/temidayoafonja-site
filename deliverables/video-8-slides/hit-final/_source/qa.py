@@ -112,6 +112,25 @@ chk(14, "revised Slide 5 text present on main slide 5",
     "IT CAN FEEL LIKE A COMPETENCE GAP." in MAINT[4]
     and "SOME CONTEXT CAN BE RESEARCHED." in MAINT[4]
     and "SOME MUST BE LEARNED THROUGH EXPOSURE." in MAINT[4])
+chk(14.1, "v2.2.1 slide 2 precision correction present",
+    "NOT EVERY DIFFERENCE IS A CAPABILITY GAP." in MAINT[1]
+    and "MUCH OF IT IS CONTEXT." in MAINT[1]
+    and "Some can be researched. Some must be learned through exposure." in MAINT[1]
+    and "NONE OF THAT IS YOUR COMPETENCE." not in DECKALL
+    and "And context is learnable." not in DECKALL)
+chk(14.2, "v2.2.1 slide 4 portability boundary present",
+    "THESE FORMS OF JUDGMENT CAN TRAVEL" in MAINT[3]
+    and "WHEN THE NEW CONTEXT NEEDS THEM." in MAINT[3]
+    and "None of these belong to an industry." not in DECKALL)
+chk(14.3, "US English across decks, scripts, Shorts and notes",
+    not [w for w in ("travelled","practised","recognised","licence",
+                     "Travelled","Practised","Recognised","Licence")
+         if w in DECKALL or w in a])
+chk(14.4, "'career change after 40' removed from the tag field",
+    "career change after 40" not in a)
+chk(14.5, "direct-experience false binary removed",
+    "which one you are looking at" not in a
+    and "which part is a real gap you need to close" in a)
 chk(15, "corresponding reveal-frame stale text corrected",
     "IT CAN FEEL LIKE A COMPETENCE GAP." in REVT[10]
     and not any("information gap" in t for t in REVT))
@@ -123,12 +142,18 @@ def changed(orig, now):
     A_, B_ = _zf.ZipFile(orig), _zf.ZipFile(now)
     return [x.split("/")[-1] for x in sorted(set(A_.namelist()))
             if A_.read(x) != B_.read(x)]
-cm = changed("/tmp/v8hit/Main.orig.pptx", DECKS + "Video_8_Main_Slides.pptx")
-cr = changed("/tmp/v8hit/Reveal.orig.pptx", DECKS + "Video_8_Reveal_Builds.pptx")
-chk(17, "no unauthorized slide changed",
-    cm == ["slide5.xml"] and cr == ["slide11.xml"], "main %s | reveal %s" % (cm, cr))
+# Baseline is the committed v2.2 deck. v2.2.1 authorises visible corrections on
+# main slides 2 and 4, which appear on reveal frames 4 and 9. Notes parts change
+# too and are not slide XML, so they are excluded from this check.
+cm = [x for x in changed("baseline/Main.v22.pptx", DECKS + "Video_8_Main_Slides.pptx")
+      if x.startswith("slide")]
+cr = [x for x in changed("baseline/Reveal.v22.pptx", DECKS + "Video_8_Reveal_Builds.pptx")
+      if x.startswith("slide")]
+chk(17, "only the authorised slides changed (2 and 4; reveal 4 and 9)",
+    cm == ["slide2.xml", "slide4.xml"] and cr == ["slide4.xml", "slide9.xml"],
+    "main %s | reveal %s" % (cm, cr))
 # marker-to-slide mapping
-import sys as _sys; _sys.path.insert(0, "/tmp/v8hit")
+import sys as _sys; _sys.path.insert(0, "/tmp/v8p")
 from script_text import MARKERS
 mk = [m[len("[SLIDE:"):-1].strip() for m in MARKERS]
 chk(18, "marker-to-slide mapping one-to-one and ordered",

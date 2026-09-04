@@ -373,12 +373,11 @@ CHAPTER_LINES=["%s %s"%(t,c) for t,c in CHAPTERS]
 PRIMARY="how to switch industries without starting over"
 SUPPORTING=("how to switch industries · change industries · career change · "
  "how to change careers without starting over · transferable skills · career "
- "transition · new industry · career portability · experienced professionals · "
- "career change after 40")
+ "transition · new industry · career portability · experienced professionals")
 TAGS=("how to switch industries without starting over, how to switch "
  "industries, change industries, career change, how to change careers without "
  "starting over, transferable skills, career transition, new industry, career "
- "portability, experienced professionals, career change after 40, capability "
+ "portability, experienced professionals, capability "
  "formation, Temidayo Afonja")
 DESC=[
  "You open a job description in another industry and see the same line: direct industry experience required. Sometimes that points at something real. Sometimes it is shorthand for risk. This video helps you tell the difference.",

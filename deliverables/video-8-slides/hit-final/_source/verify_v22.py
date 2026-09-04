@@ -16,8 +16,19 @@ import io, re, sys, importlib.util
 from docx import Document
 
 LF = "Video_8_HIT_FINAL/LONG_FORM/"
-V21 = ("/home/user/temidayoafonja-site/deliverables/video-8-slides/hit-final/"
-       "Video_8_HIT_FINAL/LONG_FORM/Video8ReadingScriptnomarkers_HIT_v2.1.txt")
+V21 = "baseline/reading_v2.1.txt"   # v2.1 as committed, extracted from git
+V22 = "baseline/reading_v2.2.txt"   # v2.2 as committed, the approved architecture
+
+# v2.2.1 authorised a U.S.-English sweep, which touches preserved wording. The
+# preservation invariant therefore compares modulo exactly those substitutions.
+US = [("travelled","traveled"),("Travelled","Traveled"),
+      ("practised","practiced"),("Practised","Practiced"),
+      ("recognised","recognized"),("Recognised","Recognized"),
+      ("recognising","recognizing"),("Recognising","Recognizing"),
+      ("licence","license"),("Licence","License")]
+def usnorm(s):
+    for x,y in US: s=s.replace(x,y)
+    return s
 nz = lambda x: re.sub(r"\s+", " ", x).strip()
 R = []
 def chk(label, ok, detail=""):
@@ -51,15 +62,25 @@ names = [re.match(r"\[SLIDE:\s*(.*)\]", m).group(1) for m in MARKERS]
 chk("twelve markers, present and ordered in the teleprompter",
     len(names) == 12 and all(n.upper() in nz(tel_txt).upper() for n in names))
 
-old = [nz(x) for x in io.open(V21, encoding="utf-8").read().split("\n\n") if x.strip()]
-missing = [p for p in old if p not in SPOKEN]
-added   = [p for p in SPOKEN if p not in old]
-chk("every v2.1 paragraph survives verbatim", not missing, str(missing[:2]))
+old = [usnorm(nz(x)) for x in io.open(V21, encoding="utf-8").read().split("\n\n") if x.strip()]
+v22 = [usnorm(nz(x)) for x in io.open(V22, encoding="utf-8").read().split("\n\n") if x.strip()]
+SPOKEN_US = [usnorm(p) for p in SPOKEN]
+missing = [p for p in old if p not in SPOKEN_US]
+added   = [p for p in SPOKEN_US if p not in old]
+chk("every v2.1 paragraph survives (modulo authorised US spelling)", not missing, str(missing[:2]))
 chk("exactly 16 authorised additions", len(added) == 16, "%d" % len(added))
-trace = [old.index(p) for p in SPOKEN if p in old]
+trace = [old.index(p) for p in SPOKEN_US if p in old]
 chk("opening resequence is exactly [0,4,1,2,3]", trace[:5] == [0, 4, 1, 2, 3], str(trace[:5]))
 chk("nothing after the opening was reordered",
     trace[5:] == list(range(5, len(old))))
+
+v22_missing = [p for p in v22 if p not in SPOKEN_US]
+v22_added   = [p for p in SPOKEN_US if p not in v22]
+chk("v2.2.1 changed exactly one long-form paragraph",
+    len(v22_missing) == 1 and len(v22_added) == 1
+    and "which one you are looking at" in v22_missing[0]
+    and "which part is a real gap you need to close" in v22_added[0],
+    "-%d +%d" % (len(v22_missing), len(v22_added)))
 
 w = sum(len(x.split()) for x in st.SPOKEN)
 print("VIDEO 8 v2.2 CANONICAL VERIFICATION")
