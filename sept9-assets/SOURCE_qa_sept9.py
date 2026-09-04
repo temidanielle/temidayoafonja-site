@@ -7,7 +7,7 @@ import fitz
 # The delivered file, not the build directory: a QA report that names a scratch
 # copy proves nothing about what shipped.
 DECK = ("sept9-assets/"
-        "How_to_Tell_If_Your_Career_Is_Stalling_Lightning_Lesson_v3.5.0_FINAL.pptx")
+        "How_to_Tell_If_Your_Career_Is_Stalling_Lightning_Lesson_v3.5.1_FINAL.pptx")
 PRIOR = ("deck-v340-assets/"
          "How_to_Tell_If_Your_Career_Is_Stalling_Lightning_Lesson_v3.4.1_FINAL.pptx")
 
