@@ -37,9 +37,9 @@ live files:        12 main slides, 24 reveal-build frames.
 
 Slide correction:  Slide 5 carried the stale conceptual framing
                    "It feels like a competence gap. It is an information
-                   gap." It was replaced under explicit authorisation with
+                   gap." It was replaced under explicit authorization with
                    the three approved statements. Text only; visual system,
-                   typography family, colours, composition and hierarchy
+                   typography family, colors, composition and hierarchy
                    unchanged. Reveal frame 11 carried the same line and
                    received the same correction. Main slides 1-4 and 6-12
                    and the other twenty-three reveal frames are
@@ -137,6 +137,6 @@ SHA-256 is in the sibling file:
 WHAT WAS NOT CHANGED
 
 Every website file, every product, the approved thumbnail and every other
-video are unchanged. The only visual change in this pass is the authorised
+video are unchanged. The only visual change in this pass is the authorized
 Slide 5 text correction, applied identically to main slide 5 and reveal
 frame 11.

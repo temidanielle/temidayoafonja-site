@@ -205,13 +205,13 @@ for i,((fn,role,hook,copy),core) in enumerate(zip(shm.SHORTS,CORE),1):
 H("Slide summary")
 KV("Main slides:","12")
 KV("Reveal frames:","24")
-KV("Visible slide content changed in this pass:","YES — two authorised precision "
+KV("Visible slide content changed in this pass:","YES — two authorized precision "
    "corrections, main slides 2 and 4, mirrored on reveal frames 4 and 9. Nothing else.")
 P("Slide 2 payoff — old: “NONE OF THAT IS YOUR COMPETENCE. / ALL OF IT IS CONTEXT.” with “And context is learnable.”  New: “NOT EVERY DIFFERENCE IS A CAPABILITY GAP. / MUCH OF IT IS CONTEXT.” with “Some can be researched. Some must be learned through exposure.” The list and visual design are unchanged.",spacing=1.3)
 P("Slide 4 closing line — old: “None of these belong to an industry.”  New: “THESE FORMS OF JUDGMENT CAN TRAVEL — / WHEN THE NEW CONTEXT NEEDS THEM.” Same position, same type, two lines instead of one.",spacing=1.3)
 KV("Everything else on the decks:","Speaker/editor notes only, with NON-NOTES PARTS "
-   "CHANGED: [] on both files apart from the two authorised slide parts each.")
-p=P("VISIBLE SLIDE CHANGES LIMITED TO THE TWO AUTHORISED PRECISION CORRECTIONS "
+   "CHANGED: [] on both files apart from the two authorized slide parts each.")
+p=P("VISIBLE SLIDE CHANGES LIMITED TO THE TWO AUTHORIZED PRECISION CORRECTIONS "
     "(SLIDES 2 AND 4). GEOMETRY, LAYOUT, THEME, MEDIA AND FONT SIZES UNCHANGED.",
     bold=True,color=NAVY,before=6,after=6,spacing=1.25); shade(p,BAND_NAVY)
 

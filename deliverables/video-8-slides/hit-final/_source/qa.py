@@ -122,10 +122,13 @@ chk(14.2, "v2.2.1 slide 4 portability boundary present",
     "THESE FORMS OF JUDGMENT CAN TRAVEL" in MAINT[3]
     and "WHEN THE NEW CONTEXT NEEDS THEM." in MAINT[3]
     and "None of these belong to an industry." not in DECKALL)
-chk(14.3, "US English across decks, scripts, Shorts and notes",
-    not [w for w in ("travelled","practised","recognised","licence",
-                     "Travelled","Practised","Recognised","Licence")
-         if w in DECKALL or w in a])
+BRIT = ("organis", "programme", "travell", "practis", "recognis", "licence",
+        "defence", "colour", "centre", "authoris", "behaviour", "analyse",
+        "favour", "judgement", "summaris", "prioritis", "utilis", "realis")
+chk(14.3, "US English across decks, scripts, Shorts, briefs, README and notes",
+    not [w for w in BRIT
+         if w in DECKALL.lower() or w in a.lower()],
+    str([w for w in BRIT if w in DECKALL.lower() or w in a.lower()]))
 chk(14.4, "'career change after 40' removed from the tag field",
     "career change after 40" not in a)
 chk(14.5, "direct-experience false binary removed",
@@ -142,16 +145,21 @@ def changed(orig, now):
     A_, B_ = _zf.ZipFile(orig), _zf.ZipFile(now)
     return [x.split("/")[-1] for x in sorted(set(A_.namelist()))
             if A_.read(x) != B_.read(x)]
-# Baseline is the committed v2.2 deck. v2.2.1 authorises visible corrections on
+# Baseline is the committed v2.2 deck. v2.2.1 authorizes visible corrections on
 # main slides 2 and 4, which appear on reveal frames 4 and 9. Notes parts change
 # too and are not slide XML, so they are excluded from this check.
 cm = [x for x in changed("baseline/Main.v22.pptx", DECKS + "Video_8_Main_Slides.pptx")
       if x.startswith("slide")]
 cr = [x for x in changed("baseline/Reveal.v22.pptx", DECKS + "Video_8_Reveal_Builds.pptx")
       if x.startswith("slide")]
-chk(17, "only the authorised slides changed (2 and 4; reveal 4 and 9)",
-    cm == ["slide2.xml", "slide4.xml"] and cr == ["slide4.xml", "slide9.xml"],
-    "main %s | reveal %s" % (cm, cr))
+# v2.2.1 authorizes visible corrections on main slides 2, 4 and 7, which appear
+# on reveal frames 4, 9 and 14. Slide 7 / frame 14 is the recognise -> recognize
+# spelling fix in the U.S.-English pass.
+def norm(v): return sorted(v, key=lambda x: int(x[5:-4]))
+chk(17, "only the authorized slides changed (2, 4, 7; reveal 4, 9, 14)",
+    norm(cm) == ["slide2.xml", "slide4.xml", "slide7.xml"]
+    and norm(cr) == ["slide4.xml", "slide9.xml", "slide14.xml"],
+    "main %s | reveal %s" % (norm(cm), norm(cr)))
 # marker-to-slide mapping
 import sys as _sys; _sys.path.insert(0, "/tmp/v8p")
 from script_text import MARKERS

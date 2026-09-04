@@ -3,12 +3,12 @@
 
 Replaces verify_canonical.py for v2.2. verify_canonical.py compared the built
 package against the ORIGINAL v2.1 code prompt; that comparison necessarily fails
-now that Temidayo authorised the research-alignment strengthening pass, so it is
+now that Temidayo authorized the research-alignment strengthening pass, so it is
 retained unchanged as the historical v2.1 record rather than edited to pass.
 
 This script verifies the two things that actually matter for v2.2:
   1. the built documents match the v2.2 canonical exactly;
-  2. v2.2 is v2.1 plus ONLY the authorised additions - every v2.1 paragraph
+  2. v2.2 is v2.1 plus ONLY the authorized additions - every v2.1 paragraph
      survives verbatim, nothing was deleted or reworded, and the sole sequence
      change is the documented opening move.
 """
@@ -19,7 +19,7 @@ LF = "Video_8_HIT_FINAL/LONG_FORM/"
 V21 = "baseline/reading_v2.1.txt"   # v2.1 as committed, extracted from git
 V22 = "baseline/reading_v2.2.txt"   # v2.2 as committed, the approved architecture
 
-# v2.2.1 authorised a U.S.-English sweep, which touches preserved wording. The
+# v2.2.1 authorized a U.S.-English sweep, which touches preserved wording. The
 # preservation invariant therefore compares modulo exactly those substitutions.
 US = [("travelled","traveled"),("Travelled","Traveled"),
       ("practised","practiced"),("Practised","Practiced"),
@@ -67,8 +67,8 @@ v22 = [usnorm(nz(x)) for x in io.open(V22, encoding="utf-8").read().split("\n\n"
 SPOKEN_US = [usnorm(p) for p in SPOKEN]
 missing = [p for p in old if p not in SPOKEN_US]
 added   = [p for p in SPOKEN_US if p not in old]
-chk("every v2.1 paragraph survives (modulo authorised US spelling)", not missing, str(missing[:2]))
-chk("exactly 16 authorised additions", len(added) == 16, "%d" % len(added))
+chk("every v2.1 paragraph survives (modulo authorized US spelling)", not missing, str(missing[:2]))
+chk("exactly 16 authorized additions", len(added) == 16, "%d" % len(added))
 trace = [old.index(p) for p in SPOKEN_US if p in old]
 chk("opening resequence is exactly [0,4,1,2,3]", trace[:5] == [0, 4, 1, 2, 3], str(trace[:5]))
 chk("nothing after the opening was reordered",

@@ -97,9 +97,9 @@
  },
  {
   "n": 14.3,
-  "check": "US English across decks, scripts, Shorts and notes",
+  "check": "US English across decks, scripts, Shorts, briefs, README and notes",
   "result": "PASS",
-  "detail": ""
+  "detail": "[]"
  },
  {
   "n": 14.4,
@@ -127,9 +127,9 @@
  },
  {
   "n": 17,
-  "check": "only the authorised slides changed (2 and 4; reveal 4 and 9)",
+  "check": "only the authorized slides changed (2, 4, 7; reveal 4, 9, 14)",
   "result": "PASS",
-  "detail": "main ['slide2.xml', 'slide4.xml'] | reveal ['slide4.xml', 'slide9.xml']"
+  "detail": "main ['slide2.xml', 'slide4.xml', 'slide7.xml'] | reveal ['slide4.xml', 'slide9.xml', 'slide14.xml']"
  },
  {
   "n": 18,
@@ -273,7 +273,7 @@
   "n": 42,
   "check": "sibling ZIP checksum matches the archive",
   "result": "PASS",
-  "detail": "cb1bc55e46c18da5612420ce54ee915be91b4433b1a8525a6cd6bc50753b9dbb"
+  "detail": "9b100f80354fefd4720c4878c823dba33f11cc921a75cf722c620048f4de25e8"
  },
  {
   "n": 42.1,
@@ -285,7 +285,7 @@
   "n": 43,
   "check": "description-only DOCX hash reported",
   "result": "PASS",
-  "detail": "dd8c653140d791e10bf902d7430d6b173f4674fe1de365d88d36c23599d9fb9a"
+  "detail": "4d266a53bd3dc60f184f6b5bb869b5dd0cafb41f766a8b3a1ec73a8588cb3b9b"
  }
 ]
 

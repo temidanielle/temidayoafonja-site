@@ -79,7 +79,7 @@ def H2(d,t,before=13):
 
 def compress(d, line_spacing=1.18, after_scale=0.80):
     """Tighten one document's vertical rhythm without touching type size,
-    weight, colour or wording. Keeps editor briefs off a near-empty last page."""
+    weight, color or wording. Keeps editor briefs off a near-empty last page."""
     for p in d.paragraphs:
         pf=p.paragraph_format
         if pf.line_spacing and 1.0 < pf.line_spacing < 1.4 and pf.line_spacing > line_spacing:
@@ -152,7 +152,7 @@ open(os.path.join(LF,RD_TXT),"w").write("\n\n".join(SPOKEN)+"\n")
 print("long-form scripts written")
 
 # --------------------------------------------------- 2. long-form editor brief
-# SCRIPT MARKER -> SLIDE NUMBER -> ACTUAL LIVE SLIDE TITLE AFTER THE AUTHORISED
+# SCRIPT MARKER -> SLIDE NUMBER -> ACTUAL LIVE SLIDE TITLE AFTER THE AUTHORIZED
 # CORRECTIONS. Mapping is by position; marker 12 is named Watch Next but the
 # live slide is the CONTINUE THE SERIES card, which is why this table exists.
 MAPPING=[
@@ -250,9 +250,9 @@ keep(P(d,"Validated in the live files: 12 markers, 12 slides, one-to-one and "
        "in order, no duplicate mapping, no missing slide, no reordered slide.",
        size=10.5,italic=True,color=DIM,before=4,after=8,spacing=1.25))
 
-H1(d,"Authorised slide correction — applied",before=14)
-p=P(d,"AUTHORISED AND APPLIED. Slide 5 carried stale conceptual framing. Text "
-     "only changed; visual system, typography family, colours, composition and "
+H1(d,"Authorized slide correction — applied",before=14)
+p=P(d,"AUTHORIZED AND APPLIED. Slide 5 carried stale conceptual framing. Text "
+     "only changed; visual system, typography family, colors, composition and "
      "hierarchy are unchanged.",size=11,bold=True,color=RED,after=8,spacing=1.25)
 shade(p,BAND_CREAM); keep(p)
 keep(P(d,"Slide 5 (gold emphasis line)",size=11,bold=True,color=NAVY,before=6,after=3))
@@ -610,9 +610,9 @@ R=["VIDEO 8 — H.I.T. FINAL RECORDING PACKAGE","",
  "live files:        12 main slides, 24 reveal-build frames.","",
  "Slide correction:  Slide 5 carried the stale conceptual framing",
  "                   \"It feels like a competence gap. It is an information",
- "                   gap.\" It was replaced under explicit authorisation with",
+ "                   gap.\" It was replaced under explicit authorization with",
  "                   the three approved statements. Text only; visual system,",
- "                   typography family, colours, composition and hierarchy",
+ "                   typography family, colors, composition and hierarchy",
  "                   unchanged. Reveal frame 11 carried the same line and",
  "                   received the same correction. Main slides 1-4 and 6-12",
  "                   and the other twenty-three reveal frames are",
@@ -667,7 +667,7 @@ R+=["  README_FINAL.txt","  SHA256SUMS.txt","",
  "  "+ZIPNAME+".sha256","",
  "-"*70,"","WHAT WAS NOT CHANGED","",
  "Every website file, every product, the approved thumbnail and every other",
- "video are unchanged. The only visual change in this pass is the authorised",
+ "video are unchanged. The only visual change in this pass is the authorized",
  "Slide 5 text correction, applied identically to main slide 5 and reveal",
  "frame 11.",""]
 open(os.path.join(ROOT,"README_FINAL.txt"),"w").write("\n".join(R))
