@@ -787,6 +787,45 @@ re-rendered and hold at 3 pages with healthy trailing pages.
 
 **VIDEOS 1-5 - FINAL + LOCKED. v5.1.1 PRECISION PASS COMPLETE.**
 
+### Video 8 - summary document correction, 4 September 2026 (documentation only)
+
+The summary document's slide record was incomplete: it stated that visible slide
+changes were limited to the two authorized precision corrections on slides 2 and
+4, which stopped being true once the U.S. English QA pass made a third visible
+change - the spelling-only fix on slide 7 and reveal frame 14.
+
+The summary now separates the two categories explicitly:
+
+- **CONTENT / PRECISION CHANGES** - slides 2 and 4 (reveal frames 4 and 9), with
+  the old and new wording for each.
+- **U.S. ENGLISH SPELLING-ONLY VISIBLE CHANGE** - slide 7 (reveal frame 14),
+  `recognise` to `recognize`, with an explicit note that no teaching, meaning,
+  emphasis or content changed there, that geometry, layout, theme, media and font
+  sizing were unchanged, and that Video 8 content remained locked during that
+  pass - the long-form script byte-identical, all four Shorts content-identical,
+  word count and runtime unchanged.
+
+Final status in the document now reads FINAL + LOCKED / v2.2.1 CONTENT UNCHANGED
+/ U.S. ENGLISH QA COMPLETE.
+
+**Documentation only.** The 13-file ZIP, every recording script, both decks, the
+description and the loose scripts are untouched and were not rebuilt - verified
+by hash before and after. The only changed files are the summary DOCX and its
+generator.
+
+One pagination note: the final-status block had begun splitting across pages, so
+it was given keep-with-next and keep-lines and now moves intact to its own page.
+The document runs to 8 pages, with the closing block whole rather than broken -
+the deliberate trade, consistent with how the Video 1 teleprompter sign-off was
+handled.
+
+| Asset | SHA-256 |
+|---|---|
+| Summary DOCX | `8cd772dba7bbdcd0fb0378cc0219aa0ac0d3bb1085fc345e6b73240f74b169e4` |
+| Package ZIP (unchanged) | `9b100f80354fefd4720c4878c823dba33f11cc921a75cf722c620048f4de25e8` |
+
+**VIDEO 8 - FINAL + LOCKED. v2.2.1 CONTENT UNCHANGED. U.S. ENGLISH QA COMPLETE.**
+
 ### Video 8 - U.S. ENGLISH QA, 4 September 2026 (content unchanged)
 
 Temidayo independently checked the delivered files and found residual British

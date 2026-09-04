@@ -39,6 +39,13 @@ def P(txt="",size=10.5,bold=False,italic=False,color=INK,after=5,before=0,spacin
 def shade(p,fill):
     sh=OxmlElement('w:shd'); sh.set(qn('w:val'),'clear'); sh.set(qn('w:fill'),fill)
     p._p.get_or_add_pPr().append(sh); return p
+def keep(p):
+    """Keep this paragraph with the next and never split its lines."""
+    pr=p._p.get_or_add_pPr()
+    for tag in ("keepNext","keepLines"):
+        e=OxmlElement("w:"+tag); e.set(qn("w:val"),"1"); pr.append(e)
+    return p
+
 def H(t):
     p=P(t,size=11,bold=True,color=NAVY,before=14,after=6,caps=True)
     pr=p._p.get_or_add_pPr(); b=OxmlElement('w:pBdr'); bt=OxmlElement('w:bottom')
@@ -205,14 +212,36 @@ for i,((fn,role,hook,copy),core) in enumerate(zip(shm.SHORTS,CORE),1):
 H("Slide summary")
 KV("Main slides:","12")
 KV("Reveal frames:","24")
-KV("Visible slide content changed in this pass:","YES — two authorized precision "
-   "corrections, main slides 2 and 4, mirrored on reveal frames 4 and 9. Nothing else.")
-P("Slide 2 payoff — old: “NONE OF THAT IS YOUR COMPETENCE. / ALL OF IT IS CONTEXT.” with “And context is learnable.”  New: “NOT EVERY DIFFERENCE IS A CAPABILITY GAP. / MUCH OF IT IS CONTEXT.” with “Some can be researched. Some must be learned through exposure.” The list and visual design are unchanged.",spacing=1.3)
-P("Slide 4 closing line — old: “None of these belong to an industry.”  New: “THESE FORMS OF JUDGMENT CAN TRAVEL — / WHEN THE NEW CONTEXT NEEDS THEM.” Same position, same type, two lines instead of one.",spacing=1.3)
+KV("Visible slide content changed:","YES — on three slides, in two separate and "
+   "distinct categories. Nothing else on either deck.")
+
+P("CONTENT / PRECISION CHANGES — slides 2 and 4 (reveal frames 4 and 9)",
+  size=10.5,bold=True,color=GOLD,before=8,after=4)
+P("Slide 2 payoff — old: \u201cNONE OF THAT IS YOUR COMPETENCE. / ALL OF IT IS "
+  "CONTEXT.\u201d with \u201cAnd context is learnable.\u201d  New: \u201cNOT EVERY "
+  "DIFFERENCE IS A CAPABILITY GAP. / MUCH OF IT IS CONTEXT.\u201d with \u201cSome can "
+  "be researched. Some must be learned through exposure.\u201d The list and visual "
+  "design are unchanged.",spacing=1.3)
+P("Slide 4 closing line — old: \u201cNone of these belong to an industry.\u201d  New: "
+  "\u201cTHESE FORMS OF JUDGMENT CAN TRAVEL — / WHEN THE NEW CONTEXT NEEDS THEM.\u201d "
+  "Same position, same type, two lines instead of one.",spacing=1.3)
+
+P("U.S. ENGLISH SPELLING-ONLY VISIBLE CHANGE — slide 7 (reveal frame 14)",
+  size=10.5,bold=True,color=GOLD,before=8,after=4)
+P("Slide 7 — old: \u201cWhich patterns do you already recognise early?\u201d  New: "
+  "\u201cWhich patterns do you already recognize early?\u201d",spacing=1.3)
+p=P("This is a spelling correction only. No teaching, meaning, emphasis or "
+    "content changed on slide 7. It was made during the U.S. English QA pass, "
+    "during which Video 8 content remained locked — the long-form script is "
+    "byte-identical to before that pass, all four Shorts are content-identical, "
+    "and the word count and runtime are unchanged.",spacing=1.3,after=6)
+shade(p,BAND_CREAM)
+
 KV("Everything else on the decks:","Speaker/editor notes only, with NON-NOTES PARTS "
-   "CHANGED: [] on both files apart from the two authorized slide parts each.")
+   "CHANGED: [] on both files apart from the three authorized slide parts each.")
 p=P("VISIBLE SLIDE CHANGES LIMITED TO THE TWO AUTHORIZED PRECISION CORRECTIONS "
-    "(SLIDES 2 AND 4). GEOMETRY, LAYOUT, THEME, MEDIA AND FONT SIZES UNCHANGED.",
+    "(SLIDES 2 AND 4) AND ONE SPELLING-ONLY CORRECTION (SLIDE 7). GEOMETRY, "
+    "LAYOUT, THEME, MEDIA AND FONT SIZING UNCHANGED THROUGHOUT.",
     bold=True,color=NAVY,before=6,after=6,spacing=1.25); shade(p,BAND_NAVY)
 
 H("Production metadata")
@@ -227,12 +256,15 @@ KV("Lived evidence from:","0:34 (eight industries) and 0:50 (CISM non-pass)")
 KV("Framework arrives:","2:36 — the three Cs, after recognition")
 KV("Identity-exit timing:","11:47 — “a way of moving rather than a plan for one change”")
 
-H("Final status")
-for t in ("VIDEO 8 — FINAL + LOCKED",
-          "v2.2.1 RESEARCH-ALIGNMENT PRECISION PASS COMPLETE",
-          "TITLE:  HOW TO SWITCH INDUSTRIES WITHOUT STARTING OVER",
-          "THUMBNAIL:  YOUR EXPERIENCE STILL COUNTS"):
+keep(H("Final status"))
+STATUS=("VIDEO 8 — FINAL + LOCKED",
+        "v2.2.1 CONTENT UNCHANGED",
+        "U.S. ENGLISH QA COMPLETE",
+        "TITLE:  HOW TO SWITCH INDUSTRIES WITHOUT STARTING OVER",
+        "THUMBNAIL:  YOUR EXPERIENCE STILL COUNTS")
+for i,t in enumerate(STATUS):
     p=P(t,size=11,bold=True,color=NAVY,after=5,spacing=1.25); shade(p,BAND_CREAM)
+    if i < len(STATUS)-1: keep(p)
 
 d.save("Video_8_FINAL_Content_and_Publishing_Summary.docx")
 print("summary written")
