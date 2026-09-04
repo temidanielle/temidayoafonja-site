@@ -787,6 +787,107 @@ re-rendered and hold at 3 pages with healthy trailing pages.
 
 **VIDEOS 1-5 - FINAL + LOCKED. v5.1.1 PRECISION PASS COMPLETE.**
 
+### Video 8 - RESEARCH-ALIGNMENT STRENGTHENING PASS, v2.2, 4 September 2026
+
+Video 8 was reopened for the narrow research-alignment strengthening recorded in
+the roadmap. **Not a rebuild.** The deck was not redesigned, no framework was
+invented, and the Capability / Context / Credential spine, Field Kit CTA, Watch
+Next route, H.I.T. structure and factual boundaries are unchanged.
+
+**VISIBLE VIDEO 8 SLIDES UNCHANGED - NOTES/SCRIPT ALIGNMENT ONLY.** Part-level
+SHA-256 diff against the previous committed decks: 12 and 24 `notesSlides` parts
+changed, `NON-NOTES PARTS CHANGED: []` on both files. No slide XML, media, theme,
+layout or presentation part differs.
+
+#### What changed
+
+Four additive script changes, all inside existing sections:
+
+1. **Recognition opening** naming the audience pain - "direct industry experience
+   required" - held full screen before slide 1. The existing v2.1 opening line
+   becomes the answer to it.
+2. **Interpretation of that phrase** at the end of the Credential section: a real
+   requirement (regulation, domain knowledge, licence, consequential decisions)
+   versus hiring-risk shorthand, resolved by asking what the employer is trying
+   not to get wrong. The viewer is never told to dismiss the requirement.
+3. **Employer-legibility separation** in Bridge Evidence: what I can already do
+   with evidence, what context I could reasonably learn, what is a genuine gap,
+   and what the employer would need to see to trust the overlap.
+4. **Identity exit** at One Page Three Columns.
+
+Short 1 was rewritten to carry the pain directly and renamed
+`Video_8_Short_1_Direct_Industry_Experience_Required.docx`. Shorts 2, 3 and 4
+were reviewed and needed no change.
+
+#### Preservation proved, not asserted
+
+All 174 v2.1 spoken paragraphs survive **verbatim** - none deleted, none
+reworded. Sixteen paragraphs were added. The only sequence change is in the
+opening, where the payoff promise moved ahead of the trust beat so the H.I.T.
+payoff still lands inside 30 seconds: `[0,4,1,2,3]`. Everything after the opening
+is in original order. `verify_v22.py` enforces all of this.
+
+`verify_canonical.py` compared the package against the ORIGINAL v2.1 code prompt.
+That comparison necessarily fails now that the script was authorised to change,
+so it was **retained unchanged** as the historical v2.1 record rather than edited
+to pass; `verify_v22.py` supersedes it.
+
+#### Production metadata
+
+| | |
+|---|---|
+| Word count | 1,874 (was 1,582) |
+| Runtime | 12:55 at 145 wpm (was 10:54) |
+| Recognition beat | 0:00 |
+| H.I.T. payoff | 0:24 |
+| Lived evidence | 0:34 and 0:50 |
+| Framework arrives | 2:36 |
+| Identity exit | 11:40 |
+| Main slides / reveal frames | 12 / 24, unchanged |
+
+Chapters were recomputed from the longer script and chapter 1 renamed to name the
+pain. The description opening now names it too.
+
+**Runtime is flagged, not hidden.** Adding the requested material to an existing
+10:54 script without cutting preserved content produces 12:55, longer than the
+9-12 band used for Videos 1-5. Nothing was trimmed to hide it; Video 8 has never
+been under that band and no runtime target is stated in its code prompt.
+
+**Direct address measures 57%**, against a v2.1 baseline of 55% - this pass
+improved it slightly. The 60% floor belongs to the v5.1 register, which Video 8
+has never been under. Preserved v2.1 prose was NOT rewritten to chase it; a
+direct-address pass on Video 8 would be a separate authorised change.
+
+#### QA
+
+43 of 43 package checks pass. Canonical verification passes, including
+teleprompter/reading equivalence in both directions. The four-question audit
+(what travels, what does not, what can I prove, what must I relearn) is
+answerable from the script. Employer/hiring-focused paragraphs are 5 of 190,
+about 3% - Video 8 has not become a hiring-manager persuasion video and remains
+distinct from Video 13.
+
+Two QA expectations were deliberately updated rather than worked around: check 7
+(the H.I.T. opening, which intentionally changed) and check 26 (chapter
+timestamps, which legitimately moved).
+
+#### Final hashes
+
+| Asset | SHA-256 |
+|---|---|
+| Package ZIP | `900dd26f15a8c7c758a551ae8b115dba2f13eb0c02b84b81fca45d0a4d23b27e` |
+| Description DOCX | `0c05a17a42c3044e4d8d3c966b00ae0e2b2566ecb577db61cb62c9094220d68a` |
+| Content & Publishing Summary DOCX | `041169b595fe006d29725e6f583498253a094b47b1cd6c52c190f5c9145909bc` |
+| Main deck | `6b1659b50d4e102f087662ace98750755326a6e61c8fb9c81b630c72a6b94bc5` |
+| Reveal deck | `710aa0e4466483d2ccfc6f9cfef8a34c62c320bdc925efea3d30f7dd81f0aa05` |
+
+A new reference sheet, `Video_8_FINAL_Content_and_Publishing_Summary.docx`, sits
+OUTSIDE the 13-file ZIP. The package remains exactly 13 files.
+
+**VIDEO 8 - FINAL + RESEARCH-ALIGNED.**
+Title: How to Switch Industries Without Starting Over.
+Thumbnail: YOUR EXPERIENCE STILL COUNTS.
+
 ### Videos 1-7 slide-deck handoff - manifest, 3 September 2026
 
 The 14 current authoritative decks were delivered individually under FINAL

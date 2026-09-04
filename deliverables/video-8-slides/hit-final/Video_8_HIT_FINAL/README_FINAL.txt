@@ -58,22 +58,22 @@ WHAT EACH FILE IS
 
 LONG_FORM/
 
-  Video8TeleprompterScriptwithslidemarkers_HIT_v2.1.docx
-  Video8TeleprompterScriptwithslidemarkers_HIT_v2.1.txt
+  Video8TeleprompterScriptwithslidemarkers_HIT_v2.2.docx
+  Video8TeleprompterScriptwithslidemarkers_HIT_v2.2.txt
       Temidayo's recording copy. Spoken script in large text; slide markers
       in tinted bands. The markers are not spoken.
 
-  Video8ReadingScriptnomarkers_HIT_v2.1.docx
-  Video8ReadingScriptnomarkers_HIT_v2.1.txt
+  Video8ReadingScriptnomarkers_HIT_v2.2.docx
+  Video8ReadingScriptnomarkers_HIT_v2.2.txt
       The same spoken words with the slide markers removed.
 
-  Video_8_EDITOR_ONLY_HIT_Brief_v2.1.docx
+  Video_8_EDITOR_ONLY_HIT_Brief_v2.2.docx
       For the editor. Locked metadata, the script-marker to slide-number
       mapping table, the Slide 5 correction record and the Slide 12
       question, the H.I.T. first-30-second plan, the editing principle and
       the factual boundary. Not for the teleprompter.
 
-  Video_8_Publishing_Package_HIT_v2.1.docx
+  Video_8_Publishing_Package_HIT_v2.2.docx
       Title, thumbnail, search language, the copy-ready description with
       its approved emoji system, working chapter estimates, pinned comment
       and the tag field.
@@ -90,13 +90,13 @@ SHORTS/
 
 ALL FILES IN THIS PACKAGE
 
-  LONG_FORM/Video8ReadingScriptnomarkers_HIT_v2.1.docx
-  LONG_FORM/Video8ReadingScriptnomarkers_HIT_v2.1.txt
-  LONG_FORM/Video8TeleprompterScriptwithslidemarkers_HIT_v2.1.docx
-  LONG_FORM/Video8TeleprompterScriptwithslidemarkers_HIT_v2.1.txt
-  LONG_FORM/Video_8_EDITOR_ONLY_HIT_Brief_v2.1.docx
-  LONG_FORM/Video_8_Publishing_Package_HIT_v2.1.docx
-  SHORTS/Video_8_Short_1_New_Industry_Not_Starting_Over.docx
+  LONG_FORM/Video8ReadingScriptnomarkers_HIT_v2.2.docx
+  LONG_FORM/Video8ReadingScriptnomarkers_HIT_v2.2.txt
+  LONG_FORM/Video8TeleprompterScriptwithslidemarkers_HIT_v2.2.docx
+  LONG_FORM/Video8TeleprompterScriptwithslidemarkers_HIT_v2.2.txt
+  LONG_FORM/Video_8_EDITOR_ONLY_HIT_Brief_v2.2.docx
+  LONG_FORM/Video_8_Publishing_Package_HIT_v2.2.docx
+  SHORTS/Video_8_Short_1_Direct_Industry_Experience_Required.docx
   SHORTS/Video_8_Short_2_Stop_Calling_Everything_Transferable.docx
   SHORTS/Video_8_Short_3_Not_Everything_Travels.docx
   SHORTS/Video_8_Short_4_Three_Columns.docx

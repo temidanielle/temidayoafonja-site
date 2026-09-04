@@ -1,7 +1,28 @@
-How to Switch Industries Without Starting Over
-Video 8  ·  Teleprompter script with slide markers
+VIDEO 8 — v2.2 CANONICAL SCRIPT
+RESEARCH-ALIGNMENT STRENGTHENING PASS
+
+Derived from the v2.1 canonical by four additive changes only. Every one of the
+174 v2.1 spoken paragraphs survives verbatim; none was deleted or reworded.
+Sixteen paragraphs were added. The only sequence change is in the opening, where
+the payoff promise moved ahead of the trust beat so the H.I.T. payoff still lands
+inside 30 seconds after the new recognition beat: [0,4,1,2,3].
+
+  A. recognition opening naming "direct industry experience required";
+  B. interpretation of that phrase in the Credential section;
+  C. employer-legibility four-part separation in Bridge Evidence;
+  D. identity exit at One Page Three Columns.
+
+Twelve slide markers, unchanged in name and order.
+
+BEGIN APPROVED VIDEO 8 v2.2 SCRIPT
+
+You may have fifteen or twenty years of experience, open a job description in another industry, and see the same line: direct industry experience required.
+
+That one phrase can make a career you are proud of suddenly feel like it does not count.
 
 Changing industries does not make you entry-level at everything. It makes you new to a context.
+
+So I’m going to help you separate three things: what you can carry, what the new context changes, and what you actually have to earn.
 
 Across nearly two decades, I’ve worked across eight industries and sectors, and I’ve had to learn the difference between what travelled with me and what I genuinely had to learn again.
 
@@ -9,10 +30,7 @@ And sometimes the relearning was real.
 
 When I moved toward cybersecurity and privacy, I prepared for the CISM exam and didn’t pass the first time.
 
-So I’m going to help you separate three things: what you can carry, what the new context changes, and what you actually have to earn.
-
-
-SLIDE  —  New to a Context
+[SLIDE: New to a Context]
 
 Because there are two mistakes experienced professionals make when they think about changing industries.
 
@@ -34,8 +52,7 @@ And some things cannot be translated at all. They have to be learned, practised 
 
 I’m Temidayo Afonja. I help experienced professionals understand what their work has built in them, what can travel and what the next context will require from them.
 
-
-SLIDE  —  What Actually Changes
+[SLIDE: What Actually Changes]
 
 When you enter a new industry, a lot can change without making you a beginner at everything.
 
@@ -69,15 +86,13 @@ But context changing does not automatically erase the judgment you formed before
 
 So the first move is to separate three things that often get bundled together.
 
-
-SLIDE  —  Capability Context Credential
+[SLIDE: Capability Context Credential]
 
 I think of these as the three Cs of an industry change: Capability, Context and Credential.
 
 They are not the same problem, so they should not get the same solution.
 
-
-SLIDE  —  What Travels
+[SLIDE: What Travels]
 
 Capability is what remains useful when the setting changes.
 
@@ -107,8 +122,7 @@ A capability is not portable simply because you call it transferable.
 
 It has to be useful against a problem that actually exists in the destination.
 
-
-SLIDE  —  What Must Be Relearned
+[SLIDE: What Must Be Relearned]
 
 Then there is context.
 
@@ -144,8 +158,7 @@ The useful question is:
 
 What here do I genuinely need to learn again?
 
-
-SLIDE  —  What Must Be Earned
+[SLIDE: What Must Be Earned]
 
 And then there is credential.
 
@@ -171,8 +184,21 @@ A credential cannot fix a poorly translated capability.
 
 And another course cannot substitute for context that you actually need to experience.
 
+And this is where that line you keep seeing belongs. Direct industry experience required.
 
-SLIDE  —  Start From the Destination
+It does not always mean the same thing.
+
+Sometimes it points at something real. A regulation you would have to understand properly. Domain knowledge that takes time. A licence. Decisions where being wrong carries real consequences.
+
+And sometimes it is shorthand for risk. The employer is not sure how quickly somebody from outside becomes useful here, and direct experience is the simplest way to reduce that uncertainty.
+
+I would not tell you to ignore it either way.
+
+The more useful question is this. What is this employer trying not to get wrong by asking for it?
+
+Answer that honestly and you can usually tell which one you are looking at.
+
+[SLIDE: Start From the Destination]
 
 The second move is to stop asking only:
 
@@ -216,8 +242,7 @@ Seen this pattern develop before other people recognised it?
 
 That is how you find the part of your experience that may travel.
 
-
-SLIDE  —  Translate Do Not Recite
+[SLIDE: Translate Do Not Recite]
 
 This is also why saying:
 
@@ -263,8 +288,7 @@ Not your task list.
 
 And not an adjective.
 
-
-SLIDE  —  Bridge Evidence
+[SLIDE: Bridge Evidence]
 
 The third move is to give someone a reason to believe that you can cross the gap.
 
@@ -273,6 +297,18 @@ Because they are taking a risk.
 You may know that you can do the work.
 
 They have less evidence.
+
+So before you try to close that gap, sort it into four parts.
+
+What can I already do, with evidence behind it.
+
+What about this context could I reasonably learn, and where would I start.
+
+What is a genuine gap I cannot talk my way around.
+
+And what would this employer need to see before they could trust the overlap.
+
+That last one is the part most of us skip. You can be right about your own capability and still hand somebody nothing they can act on.
 
 So build bridge evidence.
 
@@ -308,8 +344,7 @@ A good bridge does not pretend the gap does not exist.
 
 It makes the gap specific enough to manage.
 
-
-SLIDE  —  One Page Three Columns
+[SLIDE: One Page Three Columns]
 
 Here is how you apply the three Cs.
 
@@ -359,8 +394,9 @@ And you are not pretending that experience gives you knowledge you have not earn
 
 That is the balance the three Cs are meant to protect.
 
+And over time this becomes a way of moving rather than a plan for one change. You stop arriving as though you were starting from zero, and you stop arriving as though you were already qualified for everything.
 
-SLIDE  —  Field Kit
+[SLIDE: Field Kit]
 
 If you need help doing that separation, that is what the Capability Formation Field Kit is for.
 
@@ -376,11 +412,12 @@ You can find it at:
 
 temidayoafonja.com/fieldkit.
 
-
-SLIDE  —  Watch Next
+[SLIDE: Watch Next]
 
 And if part of the reason you are thinking about an industry move is that your current situation feels less secure than it once did, the next video is:
 
 What to Do Before a Layoff Happens.
 
 Because the best time to understand what you can carry is before somebody else decides when you have to move.
+
+END APPROVED VIDEO 8 v2.2 SCRIPT

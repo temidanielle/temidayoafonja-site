@@ -49,7 +49,7 @@ chk(1, "actual main-slide count", len(main.slides._sldIdLst) == 12,
     "%d main slides" % len(main.slides._sldIdLst))
 chk(2, "actual reveal-frame count", len(rev.slides._sldIdLst) == 24,
     "%d reveal frames" % len(rev.slides._sldIdLst))
-pub = text(LF + "/Video_8_Publishing_Package_HIT_v2.0.docx")
+pub = text(LF + "/Video_8_Publishing_Package_HIT_v2.2.docx")
 a = alltext(ALL_DOCS + TXTS)
 
 def blocks(p):
@@ -82,11 +82,13 @@ chk(5, "primary search phrase exact",
     "how to switch industries without starting over" in pub)
 chk(6, "'move into a new industry' not retained as public title",
     "move into a new industry" not in a.lower())
-tel = open(LF + "/Video8TeleprompterScriptwithslidemarkers_HIT_v2.0.txt",
+tel = open(LF + "/Video8TeleprompterScriptwithslidemarkers_HIT_v2.2.txt",
            encoding="utf-8").read()
-chk(7, "H.I.T. opening matches approved script",
-    "Changing industries does not make you entry-level at everything. It makes "
-    "you new to a context." in tel
+chk(7, "H.I.T. opening matches the approved v2.2 script",
+    # v2.2 opens on the audience pain, then the v2.1 line becomes the answer to it.
+    "direct industry experience required" in tel
+    and "Changing industries does not make you entry-level at everything. It makes "
+        "you new to a context." in tel
     and "prepared for the CISM exam and didn’t pass the first time" in tel)
 chk(8, "eight industries/sectors wording",
     "eight industries and sectors" in a)
@@ -139,7 +141,7 @@ DIRECTIVE = ["On-screen", "Visual:", "EDITOR", "Do not use", "Reveal:",
 bad = [(f, d) for f in shorts for d in DIRECTIVE
        if d.lower() in text(os.path.join(SH, f)).lower()]
 chk(20, "Short recording docs contain no editor directions", not bad, str(bad))
-e1 = paras(LF + "/Video_8_EDITOR_ONLY_HIT_Brief_v2.0.docx")
+e1 = paras(LF + "/Video_8_EDITOR_ONLY_HIT_Brief_v2.2.docx")
 e2 = paras(SH + "/Video_8_Shorts_EDITOR_ONLY_HIT_Brief.docx")
 chk(21, "both EDITOR ONLY docs labelled",
     e1[0] == "EDITOR ONLY" and e2[0] == "EDITOR ONLY")
@@ -158,8 +160,10 @@ found = sorted(set(ch for ch in desc_t if ord(ch) > 0x2000 and ch not in "—’
 chk(25, "approved emoji system present and not exceeded",
     all(e in desc_t for e in EMOJI_OK), "found: %r" % found)
 chk(26, "working chapters inserted directly into public description",
-    "00:00 New Industry Does Not Mean Starting Over" in desc_t
-    and "10:23 What to Do Before a Layoff Happens" in desc_t)
+    # v2.2: chapter 1 renamed to name the direct-experience pain and all
+    # timings recomputed from the longer v2.2 script.
+    "00:00 When the Job Says Direct Industry Experience Required" in desc_t
+    and "12:32 What to Do Before a Layoff Happens" in desc_t)
 chk(27, "no [INSERT] placeholder remains",
     not re.search(r"\[INSERT[^\]]*\]", a), str(re.findall(r"\[INSERT[^\]]*\]", a)))
 dp = paras(DESC_DOC)
@@ -171,12 +175,12 @@ chk(28, "working-estimates warning sits outside the copy-ready block",
 chk(28.1, "no internal note inside the copy-ready block",
     not any(re.search(r"INTERNAL|EDITOR MUST|WORKING ESTIMATES", x)
             for x in dp[begin + 1:end]))
-pp = paras(LF + "/Video_8_Publishing_Package_HIT_v2.0.docx")
+pp = paras(LF + "/Video_8_Publishing_Package_HIT_v2.2.docx")
 pb, pe = (pp.index("COPY-READY YOUTUBE DESCRIPTION — BEGIN"),
           pp.index("— END OF THE COPY-READY DESCRIPTION —"))
 chk(29, "description-only public copy == publishing-package public copy",
     dp[begin:end] == pp[pb:pe])
-cv = subprocess.run([sys.executable, "verify_canonical.py"],
+cv = subprocess.run([sys.executable, "verify_v22.py"],
                     capture_output=True, text=True)
 def line(sub): return [l for l in cv.stdout.splitlines() if sub in l][0]
 chk(30, "canonical source verification", "VERIFICATION: PASS" in cv.stdout)

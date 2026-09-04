@@ -117,10 +117,10 @@ def pairlist(d, items, indent="—  ", gap="        ", after=4, budget=78):
 
 
 # ------------------------------------------------- 1. teleprompter DOCX + TXT
-TEL_DOCX="Video8TeleprompterScriptwithslidemarkers_HIT_v2.1.docx"
-TEL_TXT ="Video8TeleprompterScriptwithslidemarkers_HIT_v2.1.txt"
-RD_DOCX ="Video8ReadingScriptnomarkers_HIT_v2.1.docx"
-RD_TXT  ="Video8ReadingScriptnomarkers_HIT_v2.1.txt"
+TEL_DOCX="Video8TeleprompterScriptwithslidemarkers_HIT_v2.2.docx"
+TEL_TXT ="Video8TeleprompterScriptwithslidemarkers_HIT_v2.2.txt"
+RD_DOCX ="Video8ReadingScriptnomarkers_HIT_v2.2.docx"
+RD_TXT  ="Video8ReadingScriptnomarkers_HIT_v2.2.txt"
 
 d=newdoc(True)
 head(d,TITLE,"Video 8  ·  Teleprompter script with slide markers",
@@ -349,25 +349,25 @@ keep(P(d,"Watch next: %s  (Video 9)"%NEXT,bold=True,after=5))
 keep(P(d,"Do not leave Subscribe as the only end-screen element.",bold=True,
        color=RED,before=4,after=8))
 compress(d, 1.14, 0.56)
-d.save(os.path.join(LF,"Video_8_EDITOR_ONLY_HIT_Brief_v2.1.docx"))
+d.save(os.path.join(LF,"Video_8_EDITOR_ONLY_HIT_Brief_v2.2.docx"))
 print("editor brief written")
 
 # The twelve working chapter lines, defined once and reused by the publishing
 # package, its reference section and the separate description-only document.
 # Offsets are script-derived at 145 wpm from the canonical spoken text; the
 # first sits at 00:00 and the rest at markers 2 to 12. They are estimates.
-CHAPTERS=[("00:00","New Industry Does Not Mean Starting Over"),
- ("01:27","What Actually Changes"),
- ("02:18","The 3 Cs: Capability, Context and Credential"),
- ("02:30","What Travels"),
- ("03:18","What Must Be Relearned"),
- ("04:12","What Must Be Earned"),
- ("04:58","Start From the Destination"),
- ("05:54","Translate, Do Not Recite"),
- ("06:54","Build Bridge Evidence"),
- ("08:20","The Three-Column Test"),
- ("09:55","Capability Formation Field Kit"),
- ("10:31","What to Do Before a Layoff Happens")]
+CHAPTERS=[("00:00","When the Job Says Direct Industry Experience Required"),
+ ("01:45","What Actually Changes"),
+ ("02:36","The 3 Cs: Capability, Context and Credential"),
+ ("02:48","What Travels"),
+ ("03:36","What Must Be Relearned"),
+ ("04:29","What Must Be Earned"),
+ ("06:08","Start From the Destination"),
+ ("07:04","Translate, Do Not Recite"),
+ ("08:03","Build Bridge Evidence"),
+ ("10:06","The Three-Column Test"),
+ ("11:56","Capability Formation Field Kit"),
+ ("12:32","What to Do Before a Layoff Happens")]
 CHAPTER_LINES=["%s %s"%(t,c) for t,c in CHAPTERS]
 
 PRIMARY="how to switch industries without starting over"
@@ -381,6 +381,7 @@ TAGS=("how to switch industries without starting over, how to switch "
  "portability, experienced professionals, career change after 40, capability "
  "formation, Temidayo Afonja")
 DESC=[
+ "You open a job description in another industry and see the same line: direct industry experience required. Sometimes that points at something real. Sometimes it is shorthand for risk. This video helps you tell the difference.",
  "Changing industries does not mean every part of your experience disappears "
  "— but it also does not mean everything transfers.",
  "In this video, I use the three Cs of an industry change—Capability, "
@@ -487,7 +488,7 @@ keep(P(d,"Live slide 12 is the CONTINUE THE SERIES card and carries no video "
        "title. See the EDITOR ONLY brief.",size=10.5,color=DIM,after=8,
        spacing=1.25))
 compress(d)
-d.save(os.path.join(LF,"Video_8_Publishing_Package_HIT_v2.1.docx"))
+d.save(os.path.join(LF,"Video_8_Publishing_Package_HIT_v2.2.docx"))
 
 # ------------------------------- 3b. separate description-only document
 d=newdoc()
@@ -633,12 +634,12 @@ R=["VIDEO 8 — H.I.T. FINAL RECORDING PACKAGE","",
  "  "+RD_DOCX,
  "  "+RD_TXT,
  "      The same spoken words with the slide markers removed.","",
- "  Video_8_EDITOR_ONLY_HIT_Brief_v2.1.docx",
+ "  Video_8_EDITOR_ONLY_HIT_Brief_v2.2.docx",
  "      For the editor. Locked metadata, the script-marker to slide-number",
  "      mapping table, the Slide 5 correction record and the Slide 12",
  "      question, the H.I.T. first-30-second plan, the editing principle and",
  "      the factual boundary. Not for the teleprompter.","",
- "  Video_8_Publishing_Package_HIT_v2.1.docx",
+ "  Video_8_Publishing_Package_HIT_v2.2.docx",
  "      Title, thumbnail, search language, the copy-ready description with",
  "      its approved emoji system, working chapter estimates, pinned comment",
  "      and the tag field.","",
@@ -678,9 +679,9 @@ MANIFEST=[
  "LONG_FORM/"+TEL_TXT,
  "LONG_FORM/"+RD_DOCX,
  "LONG_FORM/"+RD_TXT,
- "LONG_FORM/Video_8_EDITOR_ONLY_HIT_Brief_v2.1.docx",
- "LONG_FORM/Video_8_Publishing_Package_HIT_v2.1.docx",
- "SHORTS/Video_8_Short_1_New_Industry_Not_Starting_Over.docx",
+ "LONG_FORM/Video_8_EDITOR_ONLY_HIT_Brief_v2.2.docx",
+ "LONG_FORM/Video_8_Publishing_Package_HIT_v2.2.docx",
+ "SHORTS/Video_8_Short_1_Direct_Industry_Experience_Required.docx",
  "SHORTS/Video_8_Short_2_Stop_Calling_Everything_Transferable.docx",
  "SHORTS/Video_8_Short_3_Not_Everything_Travels.docx",
  "SHORTS/Video_8_Short_4_Three_Columns.docx",
