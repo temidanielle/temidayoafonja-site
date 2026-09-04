@@ -1786,6 +1786,67 @@ Canva PNG must eventually be inserted byte-identically, with a checksum.
 
 ---
 
+## Videos 1–7 export handoff — September 4, 2026
+
+An **export and verification** pass only. Nothing was rewritten, rebuilt,
+re-rendered or edited. The seven packages delivered are byte-identical copies of
+the authoritative package ZIPs already in the repository, renamed to
+`Video_N_FINAL_Recording_and_Shorts_Package.zip` for delivery. Renaming a file
+does not change its content, so each delivered ZIP carries the same SHA-256 as
+its repository original.
+
+| # | Repository package | SHA-256 | Files | Internal `SHA256SUMS.txt` |
+|---|---|---|---|---|
+| 1 | `video-1-slides/hit-final/Video_1_HIT_FINAL_Recording_and_Shorts_Package.zip` | `c20ba22f395a0051d4af8244256edc966693c927fd390909dede3412361557d0` | 13 | 12/12 OK |
+| 2 | `video-2-slides/hit-final/Video_2_HIT_FINAL_Recording_and_Shorts_Package.zip` | `31cca714a477ea4f3c2d48abb72a93f008362b7358e323e05e7b2e02f45557fb` | 13 | 12/12 OK |
+| 3 | `video-3-slides/hit-final/Video_3_HIT_FINAL_Recording_and_Shorts_Package.zip` | `c06db1bbfddbed4d511b8a7b8fecc5954086e9a121ba3d2309ecc62daa1f0750` | 13 | 12/12 OK |
+| 4 | `video-4-slides/hit-final/Video_4_HIT_FINAL_Recording_and_Shorts_Package.zip` | `698ae6352efcd0b907c8c3639a7ff2c110bf6adcd74848357521bde9deacf36d` | 13 | 12/12 OK |
+| 5 | `video-5-slides/hit-final/Video_5_HIT_FINAL_Recording_and_Shorts_Package.zip` | `4ce583dc8d68520b2d9f9679166ed1ad7470c56b52207520b40e501a757847ff` | 13 | 12/12 OK |
+| 6 | `video-6-slides/hit-final/Video_6_HIT_FINAL_Recording_and_Shorts_Package.zip` | `4e11cac762dbac072a64c7818a3014aa124499133525910c26dda109a76cbdaf` | 13 | 12/12 OK |
+| 7 | `video-7-slides/hit-final/Video_7_HIT_FINAL_Recording_and_Shorts_Package.zip` | `898434afee0ab6ee26dfbe36f8d3c169baec4d99b07126719547cef84b83a10d` | 13 | 12/12 OK |
+
+`SHA256SUMS.txt` covers the other twelve files in each package and does not hash
+itself, so twelve verified lines is the complete pass.
+
+Fifty-six loose recording scripts were also delivered — eight per video:
+teleprompter DOCX and TXT, clean reading DOCX and TXT, and the four Short DOCX
+files. Every one was extracted from the package ZIP and verified byte-identical
+to its in-package original before sending. **No alternate versions exist.**
+
+Video 8 was excluded from this handoff by instruction.
+
+### U.S. English QA — result of this pass
+
+**Recording scripts and public-facing copy are clean across all seven videos.**
+No teleprompter script, reading script, Short or publishing package carries a
+British spelling.
+
+Residual British spellings survive in **editor-facing material only**, and were
+**not corrected**, because this pass was export-and-verify. They are recorded
+here so a later authorised pass can close them:
+
+| # | File | Words |
+|---|---|---|
+| 2 | `README_FINAL.txt` | `travelling` |
+| 5 | `Video_5_EDITOR_ONLY_HIT_Brief_v5.1.1.docx` | `judgement` |
+| 5 | `Video_5_Shorts_EDITOR_ONLY_HIT_Brief_v5.1.1.docx` | `judgement` |
+| 6 | `Video_6_EDITOR_ONLY_HIT_Brief_v2.1.docx` | `AUTHORISED`, `authorised`, `authorises` |
+| 6 | `README_FINAL.txt` | `authorised` |
+| 7 | `Video_7_EDITOR_ONLY_HIT_Brief_v2.0.docx` | `authorised`, `Authorised`, `AUTHORISED` |
+| 7 | `README_FINAL.txt` | `authorisation`, `authorised` ×2 |
+
+Videos 6 and 7 predate the U.S. English standard and were never swept; the
+`authorised` family is the whole of their exposure.
+
+**Not findings.** Each of the Videos 1–5 `README_FINAL.txt` files contains
+British spellings inside a sentence that documents the spelling rule itself —
+"standardized to U.S. English where no meaning changes: organisation,
+organisational, programme, apologising and travelled. Proper nouns and
+quotations were not altered." Those words are the rule's own examples. Changing
+them would destroy the record. They are correctly preserved.
+
+---
+
 ## Open items — deferred to a separate thumbnail review
 
 Both are held open at Temidayo's instruction and are not blocking any package.
