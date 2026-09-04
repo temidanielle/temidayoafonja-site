@@ -787,6 +787,66 @@ re-rendered and hold at 3 pages with healthy trailing pages.
 
 **VIDEOS 1-5 - FINAL + LOCKED. v5.1.1 PRECISION PASS COMPLETE.**
 
+### Videos 1-7 slide-deck handoff - manifest, 3 September 2026
+
+The 14 current authoritative decks were delivered individually under FINAL
+names, plus a combined archive. Nothing was rebuilt, revised, regenerated or
+redesigned: every delivered PPTX is a **byte-identical copy** of its repository
+source, so each SHA-256 below is itself the proof of provenance.
+
+    Videos_1-7_FINAL_Slides_and_Reveal_Builds.zip
+    SHA-256 640a896e9cbf9dde3d905c7948e6b41cf1173db3cb49333335dba2fba0c3b033
+    15 entries: the 14 PPTX plus SHA256SUMS.txt
+    SHA256SUMS.txt inside covers the 14 decks, does not hash itself, and
+    carries no archive checksum; that lives in the sibling .sha256.
+
+The archive was built deterministically (fixed 2026-09-03 timestamps, fixed
+order, fixed compression), so it is reproducible byte-for-byte from the
+repository sources listed below.
+
+| # | Delivered as | Repository source | SHA-256 | Slides / frames |
+|---|---|---|---|---|
+| 1 | `Video_1_Main_Slides_FINAL.pptx` | `video-1-slides/out/Video-1-How-I-Changed-Jobs-Without-Starting-My-Career-Over_v2.4.pptx` | `c051f90c51474a17751ffb4c48843f51592de57a5de1285d0cf0c546cb478e38` | 13 |
+| 1 | `Video_1_Reveal_Builds_FINAL.pptx` | `video-1-slides/out/Video-1-Reveal-Builds_v2.4.pptx` | `112c38499b33e1727d8dbdd8154192f64f9203c25323aad5d6d5ffc248000c17` | 22 |
+| 2 | `Video_2_Main_Slides_FINAL.pptx` | `video-2-slides/out/Video-2-Is-Your-Job-Making-You-Less-Marketable_v1.1.pptx` | `7e4c731c9a978244b9fa6158d3789f25c1d09daf5d54c393486296749b9a4503` | 13 |
+| 2 | `Video_2_Reveal_Builds_FINAL.pptx` | `video-2-slides/out/Video-2-Reveal-Builds_v1.1.pptx` | `de91230060b8aa7bda2105288d0452d119a6ead399ce9ff0b5739af5d07b6a8c` | 23 |
+| 3 | `Video_3_Main_Slides_FINAL.pptx` | `video-3-slides/out/Video-3-3-Things-to-Do-Before-Quitting-Your-Job_v1.1.pptx` | `552a1db2780adf0756a6c9ad372432d57e84a4eedcc91b8d88c2d5331a45851e` | 13 |
+| 3 | `Video_3_Reveal_Builds_FINAL.pptx` | `video-3-slides/out/Video-3-Reveal-Builds_v1.1.pptx` | `8981839522e08409b50b4c17de04df99bc887652e4671b19aa73f915baa6ad44` | 27 |
+| 4 | `Video_4_Main_Slides_FINAL.pptx` | `video-4-slides/out/Video_4_Main_Slides.pptx` | `e3d5325b3f297bdc9daa372b7afbbf7dd3ce29fbcfd631b0a20fe4cf4e5aaf04` | 11 |
+| 4 | `Video_4_Reveal_Builds_FINAL.pptx` | `video-4-slides/out/Video_4_Reveal_Builds.pptx` | `777626c7f6a8769c0b81258fc9111d7c1754b8bdb3a4d741a18b2079559f66ee` | 26 |
+| 5 | `Video_5_Main_Slides_FINAL.pptx` | `video-5-slides/out/Video_5_Main_Slides.pptx` | `5f13f656a7b196e8f62bd8f74cf8eea33f743f4a5f2c8631e5d1d8bd9ac067b2` | 12 |
+| 5 | `Video_5_Reveal_Builds_FINAL.pptx` | `video-5-slides/out/Video_5_Reveal_Builds.pptx` | `749d247141e02fef6585ec8ba9441911582fa1859b8a15400d7dd1f8778bd976` | 25 |
+| 6 | `Video_6_Main_Slides_FINAL.pptx` | `video-6-slides/out/Video_6_Main_Slides.pptx` | `fcf3051c579d111d36a5357bcf810dd4dfefe4eb92070ce9721587e82dfe91dd` | 12 |
+| 6 | `Video_6_Reveal_Builds_FINAL.pptx` | `video-6-slides/out/Video_6_Reveal_Builds.pptx` | `cb8127089944e9885d0411592383153ace98b78ea53dc8e380e587804c1a8f3a` | 23 |
+| 7 | `Video_7_Main_Slides_FINAL.pptx` | `video-7-slides/out/Video_7_Main_Slides.pptx` | `2bc375e0a6751ffbe63c477e7ee6018fd88764aef3c4083fd7620dfd6f523e21` | 12 |
+| 7 | `Video_7_Reveal_Builds_FINAL.pptx` | `video-7-slides/out/Video_7_Reveal_Builds.pptx` | `b0cee4e9595295a1e1026e8d7eb9dcc86e47f6e38206db805afce0840e89ff05` | 24 |
+
+#### Visible slide content - verified unchanged on all 14 decks
+
+For each deck the most recent commit that changed ANY visible part was found by
+unpacking every historical version and diffing OOXML parts, then HEAD was
+compared against that commit. In every case the only difference is
+`ppt/notesSlides/*`. No `ppt/slides/`, `ppt/media/`, `ppt/theme/`,
+`ppt/slideLayouts/`, `ppt/slideMasters/` or `ppt/presentation.xml` part differs.
+
+| Video | Last visible change | Since then |
+|---|---|---|
+| 1 | `f97e9de` - replace the CTA artwork with the real Career Evidence Starter | notes parts only |
+| 2 | `828e819` - correct the stale Watch Next title on slide 13 | notes parts only |
+| 3 | `7598f27` - Video 3 v1.1: approved title, script package, upload copy | notes parts only |
+| 4 | `f8a4ac7` - Videos 4, 6, 8: final pre-recording patch pass | notes parts only |
+| 5 | `cf211bc` - Video 5 mobile-legibility pass on six supporting lines | notes parts only |
+| 6 | `0d4aab1` - Video 6: H.I.T. package built; Slide 12 Watch Next corrected | byte-identical |
+| 7 | `6d1536c` - Videos 7 and 8: final corrections, both FINAL + LOCKED | byte-identical |
+
+Videos 6 and 7 are byte-identical to their locked state - they were not part
+of the v5.0, v5.1 or v5.1.1 passes at all. The research-roadmap commit
+`5c0e1ef` appears in no deck's history.
+
+As with the package handoff, the staging directory was not committed: every
+PPTX in it duplicated a tracked file, and the archive is reproducible from this
+manifest. Video 8 was excluded from this handoff.
+
 ### Videos 1-7 production handoff - manifest, 3 September 2026
 
 Seven individual package downloads were delivered to Temidayo, plus each
