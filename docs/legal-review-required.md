@@ -254,7 +254,7 @@ Every transaction currently happens on an external platform, which limits exposu
 ### 2.2 Cancellations and rescheduling
 
 Not addressed. Material for the workshop, which is a dated live session, capped at 12
-participants, currently scheduled for September 16, 2026. Counsel should state who may cancel,
+participants, currently scheduled for September 23, 2026. Counsel should state who may cancel,
 by when, what happens if the session is rescheduled or does not run, and whether a seat is
 transferable.
 
