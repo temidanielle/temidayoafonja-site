@@ -30,7 +30,7 @@ const QUADRANT_SUFFIX = {
 };
 
 // Individuals (audit individual mode) get the plain sequences; org leaders
-// (audit org mode, and the diagnostic which sends no mode) get the "— Org" ones.
+// (audit org mode, and the diagnostic which sends no mode) get the "Org" ones.
 function sequenceEnvName(quadrant, mode) {
   const suffix = QUADRANT_SUFFIX[(quadrant || "").toLowerCase().trim()];
   if (!suffix) return null;

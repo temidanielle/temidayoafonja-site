@@ -1,0 +1,427 @@
+{
+  "$comment": [
+    "Single source of truth for temidayoafonja.com. Section 25 of the production",
+    "reconciliation brief. This file is a record, not a build input: nothing reads it at",
+    "runtime, because the site has no build step and netlify.toml publishes the repository",
+    "root as-is. Its purpose is to give one authoritative place to check a name, a date, a",
+    "price or a claim before publishing it anywhere.",
+    "",
+    "Every value here was read out of the pages in this repository on the revision date",
+    "below, not supplied from memory. Where a value is an operator decision that is",
+    "deliberately not published, it is recorded with published: false and the reason.",
+    "",
+    "If this file and the live site ever disagree, the live site is what visitors see, and",
+    "the disagreement is a defect to report rather than a value to copy from here."
+  ],
+
+  "revision": {
+    "date": "2026-08-14",
+    "verified_against": "repository at main, commit ba7512b, plus the accessibility pass on top of it",
+    "verified_by": "field-by-field extraction from the HTML, not from prior documentation",
+    "production_verified": false,
+    "production_note": "The container running this verification cannot reach temidayoafonja.com or the Netlify deploy previews; the egress proxy blocks both. Because publish is the repository root and there is no build step, the repository is the deployed artifact byte for byte, but the live site has not been checked directly."
+  },
+
+  "firm": {
+    "legal_name": "The Density Group LLC",
+    "display_name": "The Density Group",
+    "tagline": "Capability Formation Advisory",
+    "domain": "temidayoafonja.com",
+    "privacy_contact": "temidayo@thedensitygroup.com",
+    "postal_address": {
+      "published": false,
+      "note": "Operator decision: do not publish a residential address. CAN-SPAM requires a physical address in marketing email itself, which is an open item in docs/privacy-applicability-analysis.md section 3.4."
+    },
+    "governing_law": "Texas",
+    "venue": "Texas"
+  },
+
+  "founder": {
+    "name": "Temidayo Afonja",
+    "title": "Founder & Principal, Organizational Capability Architect",
+    "lockup_line": "Founded by Temidayo Afonja",
+    "experience_phrase": "nearly two decades",
+    "experience_phrase_note": "Replaced 'eighteen years' by operator decision, August 2026, alongside adding a 2008 to 2011 entry to the timeline on /about. Both are live: 'eighteen years' appears nowhere in the repository.",
+    "named_employers": {
+      "permitted_on": ["about.html"],
+      "names": ["Deloitte", "EY", "PwC"],
+      "note": "Operator decision. These three appear on /about only. No employer names on work.html or case-studies.html. Airship is anonymized sitewide."
+    }
+  },
+
+  "brand": {
+    "colors": {
+      "navy": "#0F2347",
+      "sand": "#F5F0E8",
+      "gold": "#C9A84C",
+      "rust": "#C1440E"
+    },
+    "text_safe_variants": {
+      "gold_ink": "#7F6A30",
+      "rust_ink": "#B6400D",
+      "note": "Added August 2026 for text on white and cream grounds, where brand gold measures 2.29:1 and brand rust 4.24:1. The four brand colours above are unchanged. See docs/accessibility-qa.md section 3."
+    },
+    "typefaces": ["Cormorant Garamond", "DM Sans", "Montserrat"],
+    "typeface_note": "Self-hosted from /fonts since August 2026. No request reaches Google.",
+    "editorial": {
+      "em_dashes": "never",
+      "framework_name": "Capability Formation Framework",
+      "timezone_abbreviation": "CT",
+      "evidence_phrase": "evidence-led"
+    }
+  },
+
+  "offers": {
+    "enterprise_pathway": {
+      "name": "Capability Formation",
+      "stages": [
+        {
+          "number": 1,
+          "label": "Executive Decision Review",
+          "name": "Capability Formation Executive Briefing",
+          "route": "/executive-briefing",
+          "standalone": true,
+          "fee": {
+            "published": false,
+            "published_language": "a fixed-fee, founder-led executive engagement",
+            "note": "Operator decision: the figure is not to appear on the site. The published language above is the only permitted form."
+          }
+        },
+        {
+          "number": 2,
+          "label": "Evidence",
+          "name": "Organizational Capability Formation Read",
+          "route": "/work",
+          "fee": { "published": false, "note": "Operator decision: scope and fee are not published." }
+        },
+        {
+          "number": 3,
+          "label": "Redesign",
+          "name": "Capability Formation Architecture",
+          "route": "/work"
+        },
+        {
+          "number": 4,
+          "label": "Ongoing",
+          "name": "Capability Formation Strategic Advisory",
+          "route": "/work"
+        }
+      ]
+    },
+
+    "professional_workshop": {
+      "name": "Stay or Leave? Live Career Growth Assessment",
+      "subtitle": "A Live Career Growth Assessment",
+      "method": "The Capability Position Read",
+      "route": "/for-professionals",
+      "price_usd": 0,
+      "price_display": "Free",
+      "price_change_note": "Was $500 with a 12-participant cap. Changed to a free, open-registration flagship by operator decision, August 13 2026.",
+      "participant_cap": null,
+      "participant_cap_display": "Open registration",
+      "duration": "60 minutes",
+      "duration_detail": "50-minute recorded guided assessment, then a 10-minute private question and answer",
+      "session": {
+        "date": "2026-09-23",
+        "date_display": "Wednesday, September 23, 2026",
+        "start_time": "18:00",
+        "end_time": "19:00",
+        "time_display": "6:00 PM CT",
+        "timezone": "America/Chicago"
+      },
+      "minimum_age": 18,
+      "minimum_age_published_on": ["terms.html"],
+      "minimum_age_note": "Operator decision, August 14 2026: the requirement is stated in the Terms of Use only. The line was removed from the enrollment box on for-professionals.html, reversing the earlier decision to show it in both places.",
+      "recording": "The teaching and assessment portion is recorded and made available to registrants. The live question and answer portion is not recorded and is not in the replay. Participants may not record.",
+      "refunds": "No fee, so nothing to refund. Where a session or product does carry a fee, Maven's terms govern and all fees are non-refundable.",
+      "transfers": {
+        "published": false,
+        "note": "Transfers are allowed in practice. Operator decision: do not publish a transfer policy."
+      },
+      "format": "live career growth assessment",
+      "format_note": "Titled Stay or Leave? Live Career Growth Assessment, matching the Maven listing. The session guides a room through the instrument rather than analysing one participant's position individually. Supersedes the August 14 2026 wording, which avoided calling it a live assessment.",
+      "includes": [
+        "60-minute guided session",
+        "Twelve-statement Capability Position Read, completed twice",
+        "Evidence-led second reading",
+        "Provisional state or boundary reading",
+        "Seven categories of move",
+        "Live Q&A as time allows"
+      ],
+      "includes_note": "Seven categories of move are taught in the session; the participant leaves having identified one category worth testing. Both figures are correct and describe different things. The Field Kit, the 30-day evidence process and the 90-day rescore are no longer included: they belonged to the paid version.",
+      "excludes": ["Written Next-Move Note"],
+      "excludes_note": "The written Next-Move Note moved to the paid Private Capability Position Read on August 14 2026 and must not be promised for the free session. Q&A is offered as time allows rather than guaranteed.",
+      "registration_url": {
+        "published": true,
+        "url": "https://maven.com/p/8b3c40/stay-or-leave-live-career-growth-assessment",
+        "appears_on": ["for-professionals.html", "diagnostic.html"],
+        "note": "Registration is open. The canonical URL is linked in three places: the September 23 card and the register section on for-professionals.html, and the results CTA on diagnostic.html. Recorded as unpublished until August 21 2026. Three earlier forms are superseded and must not be reused: the intended URL maven.com/temidayo-afonja/decide-whether-to-stay-or-leave-your-job, which was never linked on any page; the extended slug maven.com/p/8b3c40/stay-or-leave-your-job-live-career-growth-assessment; and the short form maven.com/p/8b3c40, which was canonical until the session was rescheduled to September 23 2026. Note that the current URL and the superseded extended slug differ by the two words your-job only, so check the slug character by character before reusing either."
+      }
+    },
+
+    "private_capability_position_read": {
+      "name": "Private Capability Position Read",
+      "label": "One to one",
+      "price_usd": 500,
+      "price_display": "$500",
+      "route": "/for-professionals",
+      "delivery": "One-to-one session in which Temidayo interprets the participant's evidence with them.",
+      "differentiator": "A personalized Next-Move Note based on the participant's specific position, rather than the provisional group reading the free session produces.",
+      "cta": "Request a Private Read",
+      "cta_destination": "mailto:temidayo@thedensitygroup.com?subject=Private%20Capability%20Position%20Read%20Inquiry",
+      "cta_destination_note": "Originally supplied as temidayo@temidayoafonja.com and flagged, because every other published address on the site is on thedensitygroup.com. Operator corrected it to thedensitygroup.com on 2026-08-14. Subject line unchanged.",
+      "added": "2026-08-14"
+    },
+
+    "lightning_lesson": {
+      "name": "How to Tell If Your Career Is Stalling",
+      "price_usd": 0,
+      "price_display": "Free",
+      "session": {
+        "date": "2026-09-09",
+        "date_display": "Wednesday, September 9, 2026",
+        "start_time": "18:00",
+        "end_time": "18:45",
+        "time_display": "6:00 PM CT",
+        "timezone": "America/Chicago"
+      },
+      "recording": "Recorded by the organizer. Participants may not record.",
+      "registration_url": "https://maven.com/p/5162f2/how-to-tell-if-your-career-is-stalling",
+      "appears_on": ["for-professionals.html", "diagnostic.html", "career-decisions.html"],
+      "retirement_note": "Time-bound, and retired two different ways depending on the page. On for-professionals.html the banner block is self-contained and marked in a comment for deletion when the session passes: that one is manual. On career-decisions.html it is NOT manual and must not be deleted by hand. That page holds the session in a single NEXT_STEP configuration block with an explicit expiry of 2026-09-09T18:45:00-05:00, the end of the session in Central time, and switches itself to the Field Kit at that instant with no deploy and no edit, and does so while the page is open rather than only on the next page load, so a tab left open across the cutoff does not keep showing a dead registration link. To retire it earlier than that, set NEXT_STEP.current to null rather than removing the block.",
+      "expiry_on_career_decisions": "2026-09-09T18:45:00-05:00"
+    }
+  },
+
+  "instruments": {
+    "naming_canon": {
+      "Scan": "the free organizational tool",
+      "Diagnostic": "the free individual tool",
+      "Read": "the paid engagements",
+      "note": "Operator decision. This distinction is load-bearing: a free tool must never be called a Read, and a paid engagement must never be called a Scan or a Diagnostic."
+    },
+    "free": [
+      {
+        "name": "The Capability Formation Diagnostic",
+        "audience": "individual",
+        "route": "/diagnostic",
+        "canonical_url": "https://temidayoafonja.com/diagnostic"
+      },
+      {
+        "name": "The Organizational Capability Formation Scan",
+        "audience": "organization",
+        "route": "/organizational-diagnostic",
+        "canonical_url": "https://temidayoafonja.com/organizational-diagnostic"
+      },
+      {
+        "name": "AI Capability Readiness Diagnostic",
+        "audience": "organization",
+        "route": "/ai-capability-readiness",
+        "in_footer_nav": false
+      }
+    ],
+    "paid_method": {
+      "name": "The Capability Position Read",
+      "used_by": "the professional workshop"
+    },
+    "dimensions": ["Density", "Optionality", "Alumni Capital"],
+    "dimensions_note": "Density and Optionality are the two scored axes that set quadrant placement. Alumni Capital is read alongside them and does not move the quadrant.",
+    "institutional_resilience": {
+      "status": "current framework vocabulary",
+      "appears_on": ["framework.html"],
+      "approved_construction": "The two readings inform it. Neither one produces it, and the four terms are not a causal sequence.",
+      "note": "Density is defined as the concentration of tested judgment; density-forming conditions are what develops it. Institutional Resilience must never be described as being produced by, or as the output of, the two readings."
+    }
+  },
+
+  "books_and_tools": {
+    "page": "/book",
+    "page_title": "Books & Tools",
+    "positioning_line": "One framework, three ways to engage with it.",
+    "published_book": {
+      "title": "The Capability Audit",
+      "subtitle": "A Field Guide to Career Risk in the Age of AI and Layoffs",
+      "status": "published",
+      "published_date": "2026-06",
+      "published_display": "published in June 2026",
+      "url": "https://www.amazon.com/dp/B0H4QY5GWY",
+      "price": {
+        "published": false,
+        "published_language": "Available in Kindle, Kindle Unlimited, and paperback editions. Current formats and pricing are shown on Amazon.",
+        "note": "No hard-coded Amazon price anywhere on the site, by design."
+      }
+    },
+    "forthcoming_book": {
+      "title": "Density",
+      "subtitle": "Building Capability That Outlasts Volatility",
+      "status": "Forthcoming",
+      "status_note": "Operator decision: 'Fall 2026' was removed. Use 'Forthcoming' with no date.",
+      "themes_language": "identifying and reducing concentration risk"
+    },
+    "field_kit": {
+      "name": "The Capability Formation Field Kit",
+      "price_usd": 150,
+      "price_display": "$150 &middot; instant digital access",
+      "purchase_url": "https://temidayoafonja.gumroad.com/l/czmqp",
+      "purchase_url_note": "Linked directly from for-professionals.html and book.html since August 14 2026. The /fieldkit forced redirect in netlify.toml still works and still serves links published elsewhere.",
+      "price_change_note": "Was $75. Raised to $150 by operator decision, August 13 2026, when the live assessment became free.",
+      "included_in_live_session": false,
+      "url": "https://temidayoafonja.gumroad.com/l/czmqp",
+      "url_note": "Correction, August 17 2026. This previously read 'not linked directly in page markup', which contradicted purchase_url_note directly above it and the markup itself. The Gumroad URL is linked directly at book.html:221 and for-professionals.html:290. The forced /fieldkit redirect also works and is the form to use in new public copy.",
+      "image_asset": {
+        "present": false,
+        "expected_asset": "linkedin_featured_03_field_kit_1600x900 (1).png",
+        "note": "Operator supplied this asset by name on August 17 2026 for the Field Kit section of book.html. It did not reach the working environment and no file matching it exists in the repository under any name. Every existing image was checked by dimension and the two 1584x396 LinkedIn banners were checked visually: neither is this asset. The book.html Field Kit section therefore still has no image, and book.html was left unchanged rather than filled with a substitute."
+      },
+      "image_alt_text_approved": "Capability Formation Field Kit cover and sample assessment pages.",
+      "included_in": null
+    }
+  },
+
+  "cta_language": {
+    "primary_enterprise": {
+      "text": "Bring a Consequential Decision",
+      "destination": "/executive-briefing#inquiry",
+      "destination_note": "Single destination as of August 14 2026. Three in-body buttons on the homepage previously pointed at work.html#get-in-touch while the nav and footer pointed at the briefing, so the same label led to two different places. Corrected by operator instruction.",
+      "occurrences": 39,
+      "nav_occurrences": 13,
+      "note": "Operator decision: this is the primary enterprise call to action sitewide."
+    },
+    "other_published_ctas": [
+      "Take the free diagnostic",
+      "Run the Preliminary Organizational Scan",
+      "Explore the Professional Assessment",
+      "Explore the full framework",
+      "Get the Field Guide on Amazon",
+      "Get the Field Kit",
+      "Register Free",
+      "Inquire About Speaking",
+      "Get notified when registration opens",
+      "Register Free",
+      "Skip to main content"
+    ],
+    "other_published_ctas_note": "Read off the rendered pages. 'Skip to main content' is the accessibility bypass link added August 2026, present on all fifteen pages."
+  },
+
+  "routes": {
+    "canonical": [
+      "/", "/framework.html", "/work.html", "/executive-briefing.html",
+      "/for-professionals.html", "/about.html", "/case-studies.html",
+      "/speaking.html", "/book.html", "/privacy.html", "/terms.html",
+      "/diagnostic", "/organizational-diagnostic", "/ai-capability-readiness",
+      "/career-decisions"
+    ],
+    "canonical_source": "sitemap.xml",
+    "career_decisions_note": [
+      "Added August 17 2026. /career-decisions is a URL and nothing else. The public-facing name",
+      "of the free resource served there is the Career Decision Evidence Check, and that is the",
+      "only name to use in copy, email, video and anywhere else. 'Career Decisions' is not a",
+      "product, a course, a diagnostic brand or a paid offer, and must never be presented as one.",
+      "The page does not replace /for-professionals, /book, the Field Kit, /diagnostic or the",
+      "Private Capability Position Read, and it is not in the main navigation."
+    ],
+    "permanent_redirects": {
+      "/career-decisions.html": "/career-decisions",
+      "/principles": "/framework",
+      "/principles.html": "/framework",
+      "/audit": "/diagnostic",
+      "/institutional-diagnostic": "/organizational-diagnostic",
+      "/organizational-diagnostic.html": "/organizational-diagnostic",
+      "/diagnostic?audience=org": "/organizational-diagnostic",
+      "/fieldkit": "https://temidayoafonja.gumroad.com/l/czmqp"
+    },
+    "blocked": {
+      "/dashboard": "404",
+      "/dashboard.html": "404",
+      "note": "Operator decision: dashboard.html stays in the repository for internal use and is blocked at the edge. It reads only local browser storage and never exposed server-side data."
+    },
+    "not_in_sitemap": ["/404.html", "/dashboard.html"]
+  },
+
+  "external_urls": {
+    "substack": "https://temidayoafonja.substack.com",
+    "amazon_book": "https://www.amazon.com/dp/B0H4QY5GWY",
+    "gumroad_field_kit": "https://temidayoafonja.gumroad.com/l/czmqp",
+    "maven_lightning_lesson": "https://maven.com/p/5162f2/how-to-tell-if-your-career-is-stalling",
+    "maven_terms": "https://maven.com/terms",
+    "analytics_script": "https://plausible.io/js/pa-hFo9m_622E0tElKtUlVnx.js",
+    "formspree_endpoints": {
+      "enterprise_inquiry": "https://formspree.io/f/xqpzegoj",
+      "workshop_priority_list": "https://formspree.io/f/xyegkbaq",
+      "speaking_inquiry": "https://formspree.io/f/xgawaegz",
+      "book_and_diagnostic_capture": "https://formspree.io/f/xjgapael",
+      "organizational_scan_capture": "https://formspree.io/f/mjgndvkp"
+    }
+  },
+
+  "approved_claims": {
+    "$comment": "Wording and verification status come from docs/claims-ledger.md. Publish only the approved_wording. 'needs_source' means the figure is live but no supporting document is held in this repository, which matters before enterprise outreach.",
+    "items": [
+      {
+        "id": "retention",
+        "approved_wording": "30% retention improvement within 18 months",
+        "status": "needs_source",
+        "attribution": "founder operating work, not a Density Group engagement",
+        "pages": ["index.html", "work.html", "case-studies.html"]
+      },
+      {
+        "id": "turnover_cost",
+        "approved_wording": "$2M+ estimated turnover cost avoidance",
+        "status": "needs_source",
+        "attribution": "founder operating work, not a Density Group engagement",
+        "pages": ["index.html", "work.html", "case-studies.html"],
+        "note": "'Estimated' is load-bearing and must not be dropped."
+      },
+      {
+        "id": "managers_reached",
+        "approved_wording": "1,000+ managers reached through global capability work",
+        "status": "operator_verified",
+        "pages": ["index.html", "work.html", "case-studies.html"]
+      },
+      {
+        "id": "critical_role_departures",
+        "approved_wording": "no critical-role departures recorded during the period",
+        "status": "operator_verified",
+        "pages": ["case-studies.html"],
+        "note": "Rewritten by operator ruling. Never restate as 'zero critical talent loss'."
+      },
+      {
+        "id": "onboarding_nps",
+        "approved_wording": "Onboarding NPS moved from 47 to 75",
+        "status": "needs_source",
+        "pages": ["case-studies.html"]
+      },
+      {
+        "id": "experience_span",
+        "approved_wording": "nearly two decades",
+        "status": "resolved",
+        "note": "Resolved by operator decision August 2026, replacing 'eighteen years'. docs/claims-ledger.md section 6 is updated to match."
+      }
+    ],
+    "prohibited_wording": [
+      "transformational consulting",
+      "produces Institutional Resilience",
+      "Organizational Masterwork",
+      "eighteen years",
+      "CST",
+      "evidence-backed",
+      "Fall 2026"
+    ],
+    "prohibited_wording_note": "Each of these was published at some point and has been retired. None appears in the repository as of the revision date, verified by search rather than by recollection.",
+    "prohibited_wording_correction": "An earlier draft of this file listed the bare term 'Institutional Resilience' as prohibited. That was wrong, and the live site is what corrected it. The term is current framework vocabulary on /framework; what was retired is the causal construction, where the two readings were said to produce it. The corrected copy states that the readings inform it, that neither one produces it, and that the four terms are not a causal sequence."
+  },
+
+  "compliance": {
+    "accessibility_target": "WCAG 2.2 Level AA",
+    "accessibility_status": "Zero automated violations across fifteen pages in three configurations, August 13 2026. See docs/accessibility-qa.md.",
+    "legal_status": "Counsel review pending. Neither /privacy nor /terms claims to have been reviewed by an attorney.",
+    "terms_deliberate_omissions": [
+      "mandatory arbitration",
+      "jury waiver",
+      "class-action waiver",
+      "broad indemnification",
+      "participant transfer policy"
+    ],
+    "terms_deliberate_omissions_note": "Operator decision: the first four are not to be included without counsel review; the fifth is not to be published at all."
+  }
+}

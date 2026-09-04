@@ -5,24 +5,101 @@
   directory = "netlify/functions"
   node_bundler = "esbuild"
 
+# Four directories hold material that belongs in the repository but not on the
+# web: internal engineering and legal-review documents, the source of truth with
+# its pricing history and operator decisions, the test suite, and the function
+# source. Because publish is the repository root, every file in all four is
+# otherwise fetchable by URL.
+#
+# These rules come first so nothing later can claim the paths, and each carries
+# force = true, which is required here: without it a real file on disk wins over
+# the rule and the file is served anyway. The files stay in the repository; they
+# are simply not served.
+#
+# /netlify/* is the function SOURCE. It does not touch the deployed functions,
+# which are served from /.netlify/functions/ with a leading dot and so never
+# match this pattern. The /api/* rules below are unaffected.
+[[redirects]]
+  from = "/docs/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/content/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/tests/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/netlify/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+# _build/ holds the print source and the build and QA scripts for the Career
+# Evidence Starter. Because publish is the repository root it would otherwise be
+# fetchable by URL, and starter-source.html carries the complete six-page product
+# copy: the whole free product would be readable without an email address.
+# force = true is required, since these are real files on disk and would
+# otherwise be served in preference to the rule. The files stay in the
+# repository; they are simply not served.
+[[redirects]]
+  from = "/_build/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
 [[redirects]]
   from = "/organizational-diagnostic"
   to = "/organizational-diagnostic.html"
   status = 200
+
+# Canonical route is /organizational-diagnostic. Send the .html form there so a
+# single URL accumulates search authority.
+[[redirects]]
+  from = "/organizational-diagnostic.html"
+  to = "/organizational-diagnostic"
+  status = 301
+  force = true
 
 [[redirects]]
   from = "/ai-capability-readiness"
   to = "/ai-capability-readiness.html"
   status = 200
 
+# The six governing principles live on the Framework page. principles.html was
+# deleted in August 2026, so there is no longer a static file to intercept these
+# rules and force = true is no longer required. Keep the rules permanently: old
+# inbound links still point at /principles, and search authority consolidates on
+# /framework.
+[[redirects]]
+  from = "/principles"
+  to = "/framework"
+  status = 301
+
+[[redirects]]
+  from = "/principles.html"
+  to = "/framework"
+  status = 301
+
+# Point at the canonical /organizational-diagnostic, not the .html form. Sending
+# these at the .html form produced a two-hop chain, because the rule above now
+# 301s the .html form onward to the canonical route.
 [[redirects]]
   from = "/institutional-diagnostic"
-  to = "/organizational-diagnostic.html"
+  to = "/organizational-diagnostic"
   status = 301
 
 [[redirects]]
   from = "/institutional-diagnostic.html"
-  to = "/organizational-diagnostic.html"
+  to = "/organizational-diagnostic"
   status = 301
 
 # Retired 2026-07-29: the in-page org-leader mode moved to /organizational-diagnostic.
@@ -51,8 +128,128 @@
 
 [[redirects]]
   from = "/fieldkit"
-  to = "https://temidayoafonja.gumroad.com/l/czmqp"
+  to = "/fieldkit.html"
+  status = 200
+
+# Published product page. Clean-URL rewrite so /keep-the-proof serves the file
+# while search authority consolidates on the canonical /keep-the-proof.
+[[redirects]]
+  from = "/keep-the-proof"
+  to = "/keep-the-proof.html"
+  status = 200
+
+# The Career Evidence Starter. PREVIEW: the page also carries a noindex tag,
+# and nothing on the site links to it yet. Remove that tag at launch.
+[[redirects]]
+  from = "/career-evidence-starter"
+  to = "/career-evidence-starter.html"
+  status = 200
+
+[[redirects]]
+  from = "/career-evidence-starter.html"
+  to = "/career-evidence-starter"
   status = 301
+  force = true
+
+# The Starter submission endpoint, under a clean path, rate limited.
+#
+# Same reasoning as the Career Decisions rule below, and the same numbers. The
+# function has its own limiter, ten per hour per salted IP hash, but it is built
+# on Netlify Blobs and is deliberately fail-open. Blobs has been failing
+# site-wide since 2026-08-20, so that limiter currently does nothing and this
+# endpoint would otherwise launch with no limit at all on a path that creates
+# mailing-list subscribers.
+#
+# This one is enforced by Netlify itself and depends on nothing this site
+# configures, so it holds whether or not Blobs recovers.
+[[redirects]]
+  from = "/api/career-evidence-starter-subscribe"
+  to = "/.netlify/functions/career-evidence-starter-subscribe"
+  status = 200
+  # Five submissions per 180 seconds from one address. A real visitor submits
+  # once; five leaves room for a retry after a network error and for two people
+  # behind one office address. No action is declared, so the default applies and
+  # an exceeded limit is refused with 429 rather than rewritten to a page, which
+  # is right for a path only ever reached by the form's fetch. The page already
+  # maps 429 to its own message.
+  #
+  # This sub-table must stay last in this rule. In TOML every key after it
+  # belongs to it, so a key added below would silently land inside the rate
+  # limit instead of on the redirect.
+  [redirects.rate_limit]
+    window_limit = 5
+    window_size = 180
+    aggregate_by = ["domain", "ip"]
+
+# The Career Decision Evidence Check. /career-decisions is the permanent URL and
+# is the only form that should ever accumulate authority, so the .html form is
+# sent to it, exactly as /organizational-diagnostic.html is above. force = true
+# because career-decisions.html is a real file at the publish root and would
+# otherwise be served directly, leaving two live URLs for one page.
+[[redirects]]
+  from = "/career-decisions"
+  to = "/career-decisions.html"
+  status = 200
+
+[[redirects]]
+  from = "/career-decisions.html"
+  to = "/career-decisions"
+  status = 301
+  force = true
+
+# The Career Decisions submission endpoint, under a clean path, rate limited.
+#
+# The function has its own limiter, ten per hour per salted IP hash, but it is
+# built on Netlify Blobs and is deliberately fail-open. Blobs has been failing
+# site-wide since 2026-08-20, so that limiter currently does nothing and the
+# form would otherwise launch with no limit at all.
+#
+# This one is enforced by Netlify itself and depends on nothing this site
+# configures. rate_limit is the key Netlify's own redirect parser recognises on
+# a redirect rule, confirmed by reading netlify-redirect-parser 14.4.0, which
+# passes it through to the backend for validation at post-processing.
+#
+# An edge function carrying a rateLimit config was tried first, on 2026-08-27,
+# and was not enforced: six sequential posts all reached the function. Netlify
+# reserves the /.netlify/ prefix, so the clean path below is still needed, and
+# the page posts to it.
+#
+# The raw /.netlify/functions/career-decisions-subscribe path remains reachable
+# and unlimited, as it is for every function on this site. The page does not use
+# it. See docs/forms-audit.md section 10.
+[[redirects]]
+  from = "/api/career-decisions-subscribe"
+  to = "/.netlify/functions/career-decisions-subscribe"
+  status = 200
+  # Five submissions per 180 seconds from one address. A real visitor submits
+  # once; five leaves room for a retry after a network error and for two people
+  # behind one office address. No action is declared, so the default applies and
+  # an exceeded limit is refused with 429 rather than rewritten to a page, which
+  # is right for a path only ever reached by the form's fetch.
+  #
+  # This sub-table must stay last in this rule. In TOML every key after it
+  # belongs to it, so a key added below would silently land inside the rate
+  # limit instead of on the redirect.
+  [redirects.rate_limit]
+    window_limit = 5
+    window_size = 180
+    aggregate_by = ["domain", "ip"]
+
+# dashboard.html is an internal working view. It reads only the operator's own
+# browser localStorage and contains no credentials, endpoints, or server calls,
+# so nothing was ever exposed by it being reachable. It is nonetheless not a
+# public page, so public access is blocked at the edge. The file stays in the
+# repository and still works when opened locally for internal use.
+[[redirects]]
+  from = "/dashboard"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/dashboard.html"
+  to = "/404.html"
+  status = 404
   force = true
 
 [[headers]]
@@ -60,7 +257,46 @@
   [headers.values]
     X-Content-Type-Options = "nosniff"
 
+# Netlify matches header rules against the requested path, not the file a 200
+# rewrite ultimately serves. The canonical route is /diagnostic, so the policy
+# has to be declared for both paths or it never applies on the canonical URL.
+[[headers]]
+  for = "/diagnostic"
+  [headers.values]
+    Content-Security-Policy = "script-src 'self' 'unsafe-inline' https://formspree.io https://plausible.io"
+
 [[headers]]
   for = "/diagnostic.html"
   [headers.values]
     Content-Security-Policy = "script-src 'self' 'unsafe-inline' https://formspree.io https://plausible.io"
+
+# Career Decision Evidence Check. Declared for both paths for the same reason as
+# the two rules above: Netlify matches the requested path, not the file the 200
+# rewrite serves. Plausible is the only third-party script this page loads. There
+# is deliberately no formspree.io here, because this page posts to its own
+# Netlify function and to nothing else.
+[[headers]]
+  for = "/career-decisions"
+  [headers.values]
+    Content-Security-Policy = "script-src 'self' 'unsafe-inline' https://plausible.io"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/career-decisions.html"
+  [headers.values]
+    Content-Security-Policy = "script-src 'self' 'unsafe-inline' https://plausible.io"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# /resources/ holds delivered lead-magnet files. These MUST serve: the download
+# link in the Kit delivery email points at one of them, so there is deliberately
+# no redirect rule here, only a header.
+#
+# The filename carries a random token so the URL cannot be guessed from the
+# product name, and this header keeps it out of search results even if it is
+# shared publicly. That is lead-magnet gating, not access control: anyone holding
+# the link can open it. True per-subscriber gating would need signed expiring
+# URLs and a token store, which is not warranted for a free resource.
+[[headers]]
+  for = "/resources/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"

@@ -30,22 +30,49 @@ Keep the prose tight and economical.`;
 // dependency. Fails open on any store error so a legitimate read is never blocked.
 // 25/hour lets a full leadership team run the instrument from one shared corporate
 // IP in a sitting, while capping abuse at roughly fifty cents an hour per IP.
-const { getStore } = require("@netlify/blobs");
+const { blobStore, blobsConfigured } = require("../lib/blobs");
+const crypto = require("crypto");
 const RATE_MAX = 25;
 const RATE_WINDOW_MS = 60 * 60 * 1000;
+
+// The rate-limit key is a salted SHA-256 of the caller's IP, never the address
+// itself. The limiter behaves identically, because the same IP always produces
+// the same key, but the store stops being a list of visitor IP addresses and
+// the hash cannot be reversed to one.
+//
+// RATE_LIMIT_SALT should be set to a long random string in the Netlify
+// environment. Without a salt an attacker who guessed the scheme could hash a
+// candidate IP and test for its presence; with one, they cannot. If the
+// variable is absent the function still hashes rather than storing plaintext,
+// which is degraded but never worse than the previous behaviour.
+function rateKey(ip) {
+  const salt = process.env.RATE_LIMIT_SALT || "density-group-rate-limit";
+  return crypto.createHash("sha256").update(salt + "|" + ip).digest("hex");
+}
+
+// Note on retention: records are reset when the window lapses but are not
+// deleted, so the store still grows one entry per distinct caller. That is
+// acceptable now only because an entry is a salted hash and a counter, which is
+// not personal data. Adding a purge remains on the follow-up list.
 async function isRateLimited(ip) {
   if (!ip) return false;
   try {
-    const store = getStore("diagnose-rate");
+    const store = blobStore("diagnose-rate");
+    const key = rateKey(ip);
     const now = Date.now();
-    const rec = await store.get(ip, { type: "json" });
+    const rec = await store.get(key, { type: "json" });
     let windowStart = rec && rec.windowStart ? rec.windowStart : now;
     let count = rec && rec.count ? rec.count : 0;
     if (now - windowStart > RATE_WINDOW_MS) { windowStart = now; count = 0; }
     count += 1;
-    await store.setJSON(ip, { windowStart, count });
+    await store.setJSON(key, { windowStart, count });
     return count > RATE_MAX;
   } catch (e) {
+    // Fail open: a storage problem must not take the endpoint down. It does have
+    // to be visible, though. This catch returned false silently for months while
+    // Blobs was unconfigured, which meant the rate limit was off and nothing
+    // anywhere said so. Logging it is what turns that into something findable.
+    console.error("blobs diagnose-rate failed, rate limiting is OFF. manual config present:", blobsConfigured(), e);
     return false;
   }
 }

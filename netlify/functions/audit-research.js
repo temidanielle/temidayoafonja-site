@@ -7,7 +7,7 @@
 // One blob per submission (store: "audit-research"), so concurrent completions
 // cannot clobber each other. Records where consent is false are STILL stored, but
 // flagged so they can be excluded from any research aggregate.
-const { getStore } = require("@netlify/blobs");
+const { blobStore, blobsConfigured } = require("../lib/blobs");
 
 const CORS = {
   "Access-Control-Allow-Origin": "*",
@@ -76,7 +76,7 @@ exports.handler = async (event) => {
   };
 
   try {
-    const store = getStore("audit-research");
+    const store = blobStore("audit-research");
 
     // Deduplicated path: when the client sends a submission_id, derive a deterministic
     // key from it. If a record with that key already exists, skip the write so a retry
@@ -102,6 +102,7 @@ exports.handler = async (event) => {
     await store.setJSON(key, record);
     return { statusCode: 200, headers: CORS, body: JSON.stringify({ ok: true, key }) };
   } catch (e) {
+    console.error("blobs audit-research write failed. manual config present:", blobsConfigured(), e);
     return { statusCode: 500, headers: CORS, body: JSON.stringify({ error: "storage_failed" }) };
   }
 };

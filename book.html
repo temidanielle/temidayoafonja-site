@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Capability Architecture &middot; Career Risk Audit &amp; Field Frameworks &middot; Temidayo Afonja</title>
-<meta name="description" content="The Capability Audit: A Field Guide to Career Risk in the Age of AI and Layoffs, the Capability Formation Field Kit, and Density, the forthcoming organizational masterwork from Temidayo Afonja. Read your capability position before the market decides it for you.">
+<title>Books &amp; Tools | The Density Group</title>
+<meta name="description" content="The Capability Audit: A Field Guide to Career Risk in the Age of AI and Layoffs, the Capability Formation Field Kit, and Density, the forthcoming book from Temidayo Afonja. Read your capability position before the market decides it for you.">
 <link rel="canonical" href="https://temidayoafonja.com/book.html">
 
 <!-- Open Graph / Twitter -->
 <meta property="og:type" content="book">
 <meta property="og:site_name" content="Temidayo Afonja">
 <meta property="og:url" content="https://temidayoafonja.com/book.html">
-<meta property="og:title" content="The Capability Architecture &middot; Career Risk Audit &amp; Field Frameworks &middot; Temidayo Afonja">
-<meta property="og:description" content="The Capability Audit: A Field Guide to Career Risk in the Age of AI and Layoffs, the Capability Formation Field Kit, and Density, the forthcoming organizational masterwork from Temidayo Afonja. Read your capability position before the market decides it for you.">
+<meta property="og:title" content="Books &amp; Tools | The Density Group">
+<meta property="og:description" content="The Capability Audit: A Field Guide to Career Risk in the Age of AI and Layoffs, the Capability Formation Field Kit, and Density, the forthcoming book from Temidayo Afonja. Read your capability position before the market decides it for you.">
 <meta property="og:image" content="https://temidayoafonja.com/og-book.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="The Capability Architecture &middot; Career Risk Audit &amp; Field Frameworks &middot; Temidayo Afonja">
-<meta name="twitter:description" content="The Capability Audit: A Field Guide to Career Risk in the Age of AI and Layoffs, the Capability Formation Field Kit, and Density, the forthcoming organizational masterwork from Temidayo Afonja. Read your capability position before the market decides it for you.">
+<meta name="twitter:title" content="Books &amp; Tools | The Density Group">
+<meta name="twitter:description" content="The Capability Audit: A Field Guide to Career Risk in the Age of AI and Layoffs, the Capability Formation Field Kit, and Density, the forthcoming book from Temidayo Afonja. Read your capability position before the market decides it for you.">
 <meta name="twitter:image" content="https://temidayoafonja.com/og-book.png">
 
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -25,10 +25,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/fonts.css">
 <link rel="stylesheet" href="/styles.css">
 
 <!-- Privacy-friendly analytics by Plausible -->
@@ -74,6 +71,13 @@
 .body-copy p, .subtitle, h2.book-title { overflow-wrap: break-word; }
 .cover { width: 100%; border-radius: 4px; box-shadow: 0 24px 60px rgba(0,0,0,0.35); line-height: 0; }
 .cover img { width: 100%; height: auto; display: block; border-radius: 4px; }
+
+/* Field Kit section: copy left, cover right (mirrors the /fieldkit hero) */
+.fieldkit-grid { display: grid; grid-template-columns: 1fr 360px; gap: 72px; align-items: center; }
+.fieldkit-grid > div { min-width: 0; }
+.fieldkit-cover-mount { border: 1px solid var(--line); border-radius: 4px; overflow: hidden;
+  line-height: 0; box-shadow: 0 24px 60px rgba(0,0,0,0.35); background: var(--navy); }
+.fieldkit-cover-mount img { width: 100%; height: auto; display: block; }
 h2.book-title { font-family: 'Cormorant Garamond', Georgia, serif; font-size: clamp(40px, 5vw, 58px);
   font-weight: 500; line-height: 1.08; margin-bottom: 10px; color: var(--white); }
 h2.book-title--long { font-size: clamp(28px, 3.4vw, 38px); line-height: 1.18; }
@@ -95,6 +99,27 @@ h2.book-title--long { font-size: clamp(28px, 3.4vw, 38px); line-height: 1.18; }
 .btn-ghost:hover { background: var(--gold); color: var(--navy); }
 .price-note { font-family: 'Montserrat', sans-serif; font-size: 12px; color: var(--cream-soft);
   margin-top: 14px; letter-spacing: 0.04em; }
+.reciprocal-link { font-family: 'Montserrat', sans-serif; font-size: 13px; color: var(--cream-soft);
+  margin-top: 22px; }
+.reciprocal-link a { color: var(--gold); font-weight: 600; border-bottom: 1px solid var(--gold-deep); }
+
+/* ── Warm bands, so this page alternates navy and cream like the rest of the
+      site rather than running solid navy top to bottom. ── */
+.warm-section.book-section { color: var(--ink); }
+.warm-section h2.book-title { color: var(--navy); }
+.warm-section .subtitle { color: var(--muted-warm); }
+.warm-section .body-copy p { color: var(--ink); }
+.warm-section .book-section .eyebrow,
+.warm-section .eyebrow { color: var(--rust); }
+.warm-section .section-label { color: var(--rust); }
+.warm-section .price-note { color: var(--muted-warm); }
+.warm-section .reciprocal-link { color: var(--muted-warm); }
+.warm-section .reciprocal-link a { color: var(--rust); border-bottom-color: rgba(193,68,14,0.45); }
+.warm-section .btn-ghost { border-color: var(--navy); color: var(--navy); }
+.warm-section .btn-ghost:hover { background: var(--navy); color: #fff; }
+.warm-section .cover { box-shadow: 0 20px 46px rgba(15,35,71,0.18); }
+.warm-section .badge-live { background: var(--rust); color: #fff; }
+.reciprocal-link a:hover { color: var(--gold-deep); }
 
 .divider-band { background: var(--navy-deep); border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line); padding: 56px 0; text-align: center; }
@@ -128,65 +153,50 @@ h2.book-title--long { font-size: clamp(28px, 3.4vw, 38px); line-height: 1.18; }
 .hero-sub-copy { font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 17px;
   line-height: 1.7; color: var(--cream-soft); max-width: 760px; }
 
-.ladder-section { padding-top: 0; }
-.ladder-section .eyebrow { display: block; }
-.ladder-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 22px; }
-.ladder-card { background: var(--navy-panel); border: 1px solid var(--line); border-radius: 6px;
-  padding: 32px; display: flex; flex-direction: column; }
-.ladder-card--primary { border-color: var(--gold); }
-.ladder-level { font-family: 'Montserrat', sans-serif; font-size: 11px; font-weight: 700;
-  letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
-.ladder-title { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500;
-  font-size: 28px; color: var(--white); margin-bottom: 6px; }
-.ladder-price { font-family: 'Montserrat', sans-serif; font-size: 15px; font-weight: 600;
-  color: var(--cream-soft); margin-bottom: 18px; }
-.ladder-job { font-family: 'DM Sans', sans-serif; font-weight: 300; font-size: 15px;
-  line-height: 1.7; color: var(--cream); flex-grow: 1; }
-.ladder-job strong { font-weight: 500; color: var(--white); }
-.ladder-label { display: block; font-family: 'Montserrat', sans-serif; font-size: 11px;
-  font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold);
-  margin-bottom: 8px; }
-.ladder-cta { margin-top: 22px; margin-left: 0; align-self: flex-start; }
-
 .scarcity-line { font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 600;
   letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 26px; }
 
 @media (max-width: 880px) {
   .book-grid { grid-template-columns: 1fr; gap: 40px; }
   .cover { max-width: 340px; margin: 0 auto; }
+  .fieldkit-grid { grid-template-columns: 1fr; gap: 40px; }
+  .fieldkit-cover-mount { max-width: 320px; margin: 0 auto; }
   .book-section { padding: 64px 0; }
   .book-hero { padding-top: 116px; }
-  .ladder-grid { grid-template-columns: 1fr; }
 }
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
 <nav>
-  <a href="index.html" class="nav-logo">Temidayo <span>Afonja</span></a>
+  <a href="index.html" class="nav-logo brand-lockup">
+    <span class="brand-primary">The Density Group</span>
+    <span class="brand-secondary">Capability Formation Advisory</span>
+    <span class="brand-tertiary">Founded by Temidayo Afonja</span>
+  </a>
   <ul class="nav-links">
-    <li><a href="framework.html">Framework</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="principles.html">Principles</a></li>
-    <li><a href="work.html">Work With Me</a></li>
-    <li><a href="case-studies.html">Case Studies</a></li>
-    <li><a href="speaking.html">Speaking</a></li>
-    <li><a href="book.html" class="active">Book</a></li>
-    <li><a href="https://temidayoafonja.substack.com" target="_blank" rel="noopener">Writing</a></li>
-    <li><a href="/diagnostic" class="nav-cta">Take the Diagnostic</a></li>
+    <li><a href="framework.html">Capability Formation</a></li>
+    <li><a href="work.html">Advisory</a></li>
+    <li><a href="executive-briefing.html">Executive Briefing</a></li>
+    <li><a href="case-studies.html">Evidence</a></li>
+    <li><a href="about.html">The Firm</a></li>
+    <li><a href="for-professionals.html">For Professionals</a></li>
+    <li><a href="executive-briefing.html#inquiry" class="nav-cta">Bring a Consequential Decision</a></li>
   </ul>
 </nav>
+<main id="main" tabindex="-1">
 
 <!-- HERO -->
 <section class="book-section book-hero">
   <div class="wrap">
-    <h1 class="hero-headline">The Capability Architecture: Read Your Position Before the Market Decides It For You.</h1>
-    <p class="hero-sub-copy">A central repository of the texts, diagnostics, and field frameworks engineered by Temidayo Afonja to audit corporate career density and protect professional portability through periods of disruption.</p>
+    <h1 class="hero-headline">Books &amp; Tools</h1>
+    <p class="hero-sub-copy">The published texts and research assets behind Capability Formation. The field guide, the Field Kit, and Density, the forthcoming organizational book.</p>
   </div>
 </section>
 
 <!-- ASSET 01: THE PUBLISHED FIELD GUIDE -->
-<section class="book-section">
+<section class="book-section warm-section">
   <div class="wrap book-grid">
     <div>
       <div class="cover">
@@ -194,7 +204,7 @@ h2.book-title--long { font-size: clamp(28px, 3.4vw, 38px); line-height: 1.18; }
       </div>
     </div>
     <div>
-      <span class="eyebrow">The Published Field Guide</span>
+      <span class="eyebrow">Read</span>
       <span class="badge badge-live">Out now</span>
       <h2 class="book-title book-title--long">The Capability Audit: A Field Guide to Career Risk in the Age of AI and Layoffs</h2>
       <p class="subtitle">Twelve statements. One sitting. One honest reading of where your career actually stands right now.</p>
@@ -203,30 +213,27 @@ h2.book-title--long { font-size: clamp(28px, 3.4vw, 38px); line-height: 1.18; }
       </div>
       <a class="btn btn-gold" href="https://www.amazon.com/dp/B0H4QY5GWY" target="_blank" rel="noopener">Get the Field Guide on Amazon &rarr;</a>
       <a class="btn btn-ghost" href="/diagnostic">Take the free diagnostic first</a>
-      <p class="price-note">$2.99 on Kindle &middot; free on Kindle Unlimited &middot; paperback $9.99</p>
+      <p class="price-note">Available in Kindle, Kindle Unlimited, and paperback editions. Current formats and pricing are shown on Amazon.</p>
     </div>
   </div>
 </section>
 
-<!-- CHOOSE YOUR WORKSPACE LEVEL -->
-<section class="book-section ladder-section">
-  <div class="wrap">
-    <span class="eyebrow">Choose Your Level</span>
-    <div class="ladder-grid">
-      <div class="ladder-card">
-        <div class="ladder-level">Level 01 &middot; The Conceptual Primer</div>
-        <h3 class="ladder-title">The Capability Audit</h3>
-        <div class="ladder-price">$2.99</div>
-        <p class="ladder-job"><span class="ladder-label">What it does:</span> builds the conceptual foundation. Read the guide to grasp the framework rules and understand how environments shape long-term human capability. Includes the baseline 12-statement matrix grid.</p>
-        <a class="btn btn-ghost ladder-cta" href="https://www.amazon.com/dp/B0H4QY5GWY" target="_blank" rel="noopener">Purchase on Amazon &rarr;</a>
+<!-- THE CAPABILITY FORMATION FIELD KIT -->
+<section class="book-section" id="field-kit">
+  <div class="wrap fieldkit-grid">
+    <div>
+      <span class="eyebrow">Apply</span>
+      <h2 class="book-title">The Capability Formation Field Kit</h2>
+      <div class="body-copy">
+        <p>An interactive digital operating manual designed to be executed in one sitting and rerun quarterly. It calibrates your self-score and tracks your baseline. It introduces the mandatory <strong>evidence rule</strong> to break self-scoring bias, grants direct access to the custom <strong>Self-Calibration Prompt</strong> to pressure-test your lived ninety days, and delivers the <strong>Standing-Still Worksheet</strong> to calculate the real dollar cost of professional stagnation.</p>
       </div>
-      <div class="ladder-card ladder-card--primary">
-        <div class="ladder-level">Level 02 &middot; The Working Diagnostic</div>
-        <h3 class="ladder-title">The Capability Formation Field Kit</h3>
-        <div class="ladder-price">$75</div>
-        <p class="ladder-job"><span class="ladder-label">What it does:</span> calibrates your self-score and tracks your baseline. An interactive digital operating manual designed to be executed in one sitting and rerun quarterly. It introduces the mandatory <strong>evidence rule</strong> to break self-scoring bias, grants direct access to the custom <strong>Self-Calibration Prompt</strong> to pressure-test your lived ninety days, and delivers the <strong>Standing-Still Worksheet</strong> to calculate the real dollar cost of professional stagnation.</p>
-        <a class="btn btn-gold ladder-cta" href="https://temidayoafonja.com/fieldkit" target="_blank" rel="noopener">Get the Field Kit &rarr;</a>
-      </div>
+      <a class="btn btn-gold" href="https://temidayoafonja.gumroad.com/l/czmqp" target="_blank" rel="noopener">Get the Field Kit &rarr;</a>
+      <p class="price-note">$150 &middot; instant digital access</p>
+      <p class="price-note" style="margin-top:8px;">The individual Capability Position Read uses Density and Optionality. Alumni Capital is a separate organizational reachability reading.</p>
+      <p class="reciprocal-link">The free guided session and the Field Kit are separate ways to work through the Capability Position Read method. Neither is a prerequisite for the other. <a href="for-professionals.html">Stay or Leave? Live Career Growth Assessment.</a></p>
+    </div>
+    <div class="fieldkit-cover-mount">
+      <img src="/fieldkit-cover.png" alt="The Capability Formation Field Kit cover: Read Your Position. Know Your Exposure.">
     </div>
   </div>
 </section>
@@ -234,12 +241,12 @@ h2.book-title--long { font-size: clamp(28px, 3.4vw, 38px); line-height: 1.18; }
 <!-- CONNECTIVE BAND -->
 <section class="divider-band">
   <div class="wrap">
-    <p>Two books, one framework. <span class="plain">The field guide and the Field Kit answer where you stand and why. Density answers what the squares cost the system you work inside, and how to engineer the way out at scale.</span></p>
+    <p>One framework, three ways to engage with it. <span class="plain">The field guide and the Field Kit answer where you stand and why. Density answers what the squares cost the system you work inside, and how to engineer the way out at scale.</span></p>
   </div>
 </section>
 
-<!-- ASSET 02: THE ORGANIZATIONAL MASTERWORK -->
-<section class="book-section">
+<!-- ASSET 02: THE FORTHCOMING BOOK -->
+<section class="book-section warm-section">
   <div class="wrap book-grid">
     <div>
       <div class="cover">
@@ -247,14 +254,14 @@ h2.book-title--long { font-size: clamp(28px, 3.4vw, 38px); line-height: 1.18; }
       </div>
     </div>
     <div>
-      <span class="eyebrow">The Organizational Masterwork</span>
+      <span class="eyebrow">Go Deeper</span>
       <h2 class="book-title">Density</h2>
       <p class="subtitle">Building Capability That Outlasts Volatility</p>
-      <p class="scarcity-line">Organizational Masterwork &middot; Advanced Executive Access &middot; Fall 2026</p>
+      <p class="scarcity-line">Forthcoming Book</p>
 
       <div class="body-copy">
         <p>There is a particular Tuesday that arrives in a working life, and you may have already had yours. Nothing is announced. The badge still opens the door. And something in the room has moved anyway: a tool demonstrated in the all-hands, a reorganization that slides your work under a leader who has never said your name, a contractor turning around in a weekend what your team had scoped for a quarter.</p>
-        <p><em>Density</em> is the book for the professional running the arithmetic that Tuesday starts, and the systemic blueprint for the C-suite leaders, Chief Human Resources Officers, and organizational architects who decide how many Tuesdays their people get. It scales the framework from the individual career to the enterprise asset engine: measuring learning velocity, eliminating concentration risk, and engineering resilience into talent infrastructure before volatility forces a restructuring cycle.</p>
+        <p><em>Density</em> is the book for the professional running the arithmetic that Tuesday starts, and the systemic blueprint for the C-suite leaders, Chief Human Resources Officers, and organizational architects who decide how many Tuesdays their people get. It scales the framework from the individual career to the enterprise asset engine: measuring learning velocity, identifying and reducing concentration risk, and engineering resilience into talent infrastructure before volatility forces a restructuring cycle.</p>
       </div>
 
       <div class="section-label">The argument</div>
@@ -267,7 +274,7 @@ h2.book-title--long { font-size: clamp(28px, 3.4vw, 38px); line-height: 1.18; }
 
       <div class="section-label">The seat it is written from</div>
       <div class="body-copy">
-        <p>This is not a book about capability written from the observation deck. For eighteen years the author designed and ran capability programs inside Big 4 consulting, a global life sciences company under regulatory oversight, and high-growth enterprise technology, the regulated, mission-critical rooms where getting capability formation wrong shows up in patient outcomes, compliance findings, and operational failures. The programs produced measured results: retention lifted by double digits, turnover costs cut by millions, leadership effectiveness raised across hundreds of managers in months. The full ledgers are in the chapters.</p>
+        <p>This is not a book about capability written from the observation deck. For nearly two decades the author designed and ran capability programs inside Big 4 consulting, a global life sciences company under regulatory oversight, and high-growth enterprise technology, the regulated, mission-critical rooms where getting capability formation wrong shows up in patient outcomes, compliance findings, and operational failures. The programs produced measured results: retention lifted by double digits, turnover costs cut by millions, leadership effectiveness raised across hundreds of managers in months. The full ledgers are in the chapters.</p>
         <p>The framework was also tested on its author. She graduated into the December 2008 financial crisis on an F-1 visa with an accounting degree and a thin margin for error, and learned in real time what does and does not travel. The 2008-to-2026 arc runs through the whole book, because the framework has to survive volatility to be worth teaching.</p>
       </div>
 
@@ -287,22 +294,38 @@ h2.book-title--long { font-size: clamp(28px, 3.4vw, 38px); line-height: 1.18; }
   </div>
 </section>
 
+</main>
+
 <footer>
   <div>
-    <div class="footer-logo">Temidayo <span>Afonja</span></div>
-    <div class="footer-tagline">The Capability Formation Framework &middot; Density, Optionality, Alumni Capital.</div>
+    <div class="footer-logo">The Density Group</div>
+    <div class="footer-tagline">The Density Group is a Capability Formation advisory firm founded by Temidayo Afonja.</div>
   </div>
-  <ul class="footer-links">
-    <li><a href="framework.html">Framework</a></li>
-    <li><a href="principles.html">Principles</a></li>
-    <li><a href="/diagnostic">Diagnostic</a></li>
-    <li><a href="/organizational-diagnostic">The Organizational Diagnostic</a></li>
-    <li><a href="work.html">Work With Me</a></li>
-    <li><a href="case-studies.html">Case Studies</a></li>
-    <li><a href="speaking.html">Speaking</a></li>
-    <li><a href="https://temidayoafonja.substack.com" target="_blank" rel="noopener">Substack</a></li>
-  </ul>
-  <div class="footer-copy">&copy; 2026 Temidayo Afonja. All rights reserved.</div>
+  <div class="footer-cols">
+    <div class="footer-col">
+      <div class="footer-col-label">The Firm</div>
+      <ul class="footer-links">
+        <li><a href="framework.html">Capability Formation</a></li>
+        <li><a href="work.html">Advisory</a></li>
+        <li><a href="executive-briefing.html">Executive Briefing</a></li>
+        <li><a href="case-studies.html">Evidence</a></li>
+        <li><a href="speaking.html">Speaking</a></li>
+        <li><a href="about.html">The Firm</a></li>
+        <li><a href="/organizational-diagnostic">Organizational Capability Formation Scan</a></li>
+        <li><a href="executive-briefing.html#inquiry">Bring a Consequential Decision</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-label">For Professionals</div>
+      <ul class="footer-links">
+        <li><a href="/diagnostic">Free Diagnostic</a></li>
+        <li><a href="for-professionals.html">Career Growth Assessment</a></li>
+        <li><a href="book.html">Books &amp; Tools</a></li>
+        <li><a href="https://temidayoafonja.substack.com" target="_blank" rel="noopener">Writing</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-copy">&copy; 2026 The Density Group LLC &middot; Capability Formation &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></div>
 </footer>
 
 <script>

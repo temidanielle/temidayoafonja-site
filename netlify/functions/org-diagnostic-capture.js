@@ -5,7 +5,7 @@
 // No Kit here: follow-up on these leads is personal, not an automated sequence.
 // When the Kit sequences exist and you want automation, re-point the gate at
 // /.netlify/functions/subscribe instead of this function.
-const { getStore } = require("@netlify/blobs");
+const { blobStore, blobsConfigured } = require("../lib/blobs");
 
 const CORS = {
   "Access-Control-Allow-Origin": "*",
@@ -46,17 +46,27 @@ exports.handler = async (event) => {
     email: d.email || "",
     organization: d.org || "",
     quadrant: d.quadrant || "",
+    // The page sends placementType and label. Both were being dropped, and
+    // quadrant is empty for every non-quadrant result, so a boundary, centre or
+    // insufficient lead arrived with no placement recorded at all. Those are the
+    // leads most worth a personal follow-up. Found August 14 2026 by reading the
+    // first real exported row.
+    placement_type: d.placementType || "",
+    label: d.label || "",
     density: d.density || "",
     optionality: d.optionality || "",
     alumni_capital: d.alumniCapital || "",
-    boundary: d.boundary === true || d.boundary === "true",
+    // Derived from placementType. This previously read d.boundary, a key the page
+    // has never sent, so the column was false for every lead regardless of where
+    // they actually landed.
+    boundary: d.placementType === "boundary-pair",
     standard: d.standard === true || d.standard === "true",
     reflection: d.reflection || "",
     source: d.source || "organizational_diagnostic"
   };
 
   try {
-    const store = getStore("org-diagnostic-leads");
+    const store = blobStore("org-diagnostic-leads");
     const id = (globalThis.crypto && crypto.randomUUID)
       ? crypto.randomUUID()
       : `${now.getTime()}-${Math.floor(Math.random() * 1e9)}`;
@@ -64,6 +74,7 @@ exports.handler = async (event) => {
     await store.setJSON(key, record);
     return { statusCode: 200, headers: CORS, body: JSON.stringify({ ok: true, key }) };
   } catch (e) {
+    console.error("blobs org-diagnostic-leads write failed. manual config present:", blobsConfigured(), e);
     return { statusCode: 500, headers: CORS, body: JSON.stringify({ error: "storage_failed" }) };
   }
 };

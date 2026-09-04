@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Framework. Temidayo Afonja</title>
-<meta name="description" content="The Capability Formation Framework: a diagnostic and design system mapping how capability compounds or erodes across Density, Optionality, and Alumni Capital.">
+<title>The Density Group | Capability Formation Framework</title>
+<meta name="description" content="The Density Group's proprietary framework for understanding how organizational capability forms, compounds, moves, and remains available.">
 <link rel="canonical" href="https://temidayoafonja.com/framework.html">
 
 <!-- Open Graph / Twitter -->
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Temidayo Afonja">
+<meta property="og:site_name" content="The Density Group">
 <meta property="og:url" content="https://temidayoafonja.com/framework.html">
-<meta property="og:title" content="The Capability Formation Framework">
-<meta property="og:description" content="A diagnostic and design system mapping how capability compounds or erodes across Density, Optionality, and Alumni Capital.">
+<meta property="og:title" content="The Density Group | Capability Formation Framework">
+<meta property="og:description" content="The Density Group's proprietary framework for understanding how organizational capability forms, compounds, moves, and remains available.">
 <meta property="og:image" content="https://temidayoafonja.com/og-framework.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="The Capability Formation Framework">
-<meta name="twitter:description" content="A diagnostic and design system mapping how capability compounds or erodes across Density, Optionality, and Alumni Capital.">
+<meta name="twitter:title" content="The Density Group | Capability Formation Framework">
+<meta name="twitter:description" content="The Density Group's proprietary framework for understanding how organizational capability forms, compounds, moves, and remains available.">
 <meta name="twitter:image" content="https://temidayoafonja.com/og-framework.png">
 
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -25,10 +25,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/fonts.css">
 <link rel="stylesheet" href="/styles.css">
 
 <!-- Privacy-friendly analytics by Plausible -->
@@ -40,25 +37,108 @@
 
 <style>
 /* ── Framework-specific ── */
-.page-hero { padding: 160px 48px 100px; position: relative; z-index: 1; max-width: 1160px; margin: 0 auto; }
-.framework-intro { display: grid; grid-template-columns: 2fr 1fr; gap: 80px; align-items: start; }
+/* Four States palette. Editorial pastels, all with navy text. Compounding is
+   the most saturated of the four and carries a heavier border, but stays in
+   the same family so the other three never read as disabled. */
+:root {
+  /* Each state keeps its hue. The glow and edge values are the same hue with
+     luminance and saturation shifted, so the fill reads like highlighter ink
+     pooling toward the edge rather than a flat matte block. */
+  --st-depth: #E7D79A;    --st-depth-glow: #F1E3AC;    --st-depth-edge: #EDD67D;    --st-depth-line: #C9B26A;
+  --st-compound: #A8CEA5; --st-compound-glow: #B5DDB2; --st-compound-edge: #90D18B; --st-compound-line: #5E9160;
+  --st-stagnant: #E7C2C2; --st-stagnant-glow: #F2D3D3; --st-stagnant-edge: #E8AAAA; --st-stagnant-line: #C99494;
+  --st-fragile: #F0C6A5;  --st-fragile-glow: #F8D5B9;  --st-fragile-edge: #F6B888;  --st-fragile-line: #D79A6B;
+}
+
+/* Highlighter ink. The fill is a translucent wash laid on a ::before layer and
+   multiplied into the paper beneath, the way real highlighter behaves, rather
+   than an opaque block. Slightly denser toward the base so the stroke has
+   weight. No hard outline: highlighter has no border. */
+.fwm-cell, .matrix-card { position: relative; z-index: 0; background: none; border: none; }
+.fwm-cell::before, .matrix-card::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  border-radius: 5px; mix-blend-mode: multiply;
+}
+.matrix-card::before { border-radius: 10px; }
+.fwm-cell.depth::before, .mc-depth::before {
+  background: linear-gradient(178deg, rgba(237,214,125,.20) 0%, rgba(237,214,125,.40) 62%, rgba(237,214,125,.33) 100%);
+}
+.fwm-cell.compound::before, .mc-compound::before {
+  background: linear-gradient(178deg, rgba(144,209,139,.26) 0%, rgba(144,209,139,.52) 62%, rgba(144,209,139,.43) 100%);
+}
+.fwm-cell.stagnant::before, .mc-stagnant::before {
+  background: linear-gradient(178deg, rgba(232,170,170,.20) 0%, rgba(232,170,170,.40) 62%, rgba(232,170,170,.33) 100%);
+}
+.fwm-cell.fragile::before, .mc-fragile::before {
+  background: linear-gradient(178deg, rgba(246,184,136,.20) 0%, rgba(246,184,136,.40) 62%, rgba(246,184,136,.33) 100%);
+}
+/* Compounding is the target state: a denser wash, plus a soft ink edge. */
+.fwm-cell.compound::before, .mc-compound::before { box-shadow: inset 0 0 0 1.5px rgba(94,145,96,.50); }
+
+.page-hero { padding: 160px 48px 72px; position: relative; z-index: 1; max-width: 1160px; margin: 0 auto; }
+.framework-intro { display: grid; grid-template-columns: 3fr 2fr; gap: 80px; align-items: start; }
 .page-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(48px, 6vw, 80px); font-weight: 300; line-height: 1.02; color: var(--white); margin-bottom: 24px; }
 .page-title em { font-style: italic; color: var(--gold-light); }
 .fw-intro-text { font-size: 17px; line-height: 1.85; color: var(--cream-70); margin-bottom: 16px; }
-.fw-equation-block { padding: 28px; border: 1px solid var(--gold-border); background: var(--gold-dim); text-align: center; }
-.fw-equation { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: var(--gold-light); line-height: 1.7; letter-spacing: 0.04em; }
-.fw-equation-produces { display: flex; align-items: center; justify-content: center; gap: 14px; font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase; color: var(--slate); margin: 20px 0 16px; }
-.fw-equation-produces::before, .fw-equation-produces::after { content: ""; height: 1px; width: 36px; background: var(--gold-border); }
-.fw-equation-outcome { font-family: 'Cormorant Garamond', serif; font-size: 26px; color: var(--white); line-height: 1.25; letter-spacing: 0.03em; }
-.fw-equation-label { font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--slate); margin-top: 12px; }
+
+/* ── Architecture: two readings, not a sequence ── */
+/* scroll-margin-top clears the fixed nav for anchors introduced in this phase. */
+.fw-architecture { padding: 0 48px 90px; position: relative; z-index: 1; scroll-margin-top: 104px; }
+.fw-arch-inner { max-width: 1160px; margin: 0 auto; }
+.fw-arch-head { max-width: 760px; margin-bottom: 40px; }
+.fw-arch-head h2 { margin-bottom: 16px; }
+.fw-arch-head p { font-size: 16px; line-height: 1.8; color: var(--cream-70); }
+.fw-arch-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: stretch; }
+.fw-arch-card { border: 1px solid var(--slate-dim); padding: 40px 36px; display: flex; flex-direction: column; min-width: 0; }
+.fw-arch-card.accent { border-color: var(--gold-border); background: var(--gold-dim); }
+.fw-arch-label { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; display: block; }
+.fw-arch-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(28px, 3vw, 36px); font-weight: 400; color: var(--white); line-height: 1.15; margin-bottom: 16px; }
+.fw-arch-text { font-size: 15px; line-height: 1.8; color: var(--cream-70); }
+.fw-matrix { margin-top: 30px; display: grid; grid-template-columns: 112px minmax(0,1fr) minmax(0,1fr); gap: 6px; }
+.fwm-head { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--slate); padding: 0 0 8px; align-self: end; }
+.fwm-rowhead { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--slate); display: flex; align-items: center; padding-right: 10px; }
+.fwm-cell { padding: 16px 14px; font-family: 'Cormorant Garamond', serif; font-size: 19px; color: var(--navy); border: 1px solid transparent; }
+.fw-separate { margin-top: 28px; border-top: 1px solid var(--gold-border); padding-top: 20px; }
+.fw-separate strong { display: block; font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; font-weight: 600; }
+.fw-separate p { font-size: 15px; line-height: 1.8; color: var(--cream-70); }
+/* Institutional Resilience: informed by the two readings, never produced by a
+   linear sequence. Rendered as a third band beneath the two cards. */
+/* 16px, tighter than the 24px grid gap, so the summary reads as a
+   continuation of the two cards rather than a separate section. */
+.fw-informs { margin-top: 16px; border: 1px solid var(--line-warm); background: #fff; padding: 30px 34px; }
+.fw-informs-flow { display: grid; grid-template-columns: 1fr auto 1fr; gap: 20px; align-items: stretch; margin-bottom: 22px; }
+.fw-informs-leg { border: 1px solid var(--line-warm); background: var(--cream); padding: 16px 18px; }
+.fw-informs-leg strong { display: block; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--rust); margin-bottom: 7px; }
+.fw-informs-leg span { font-family: 'Cormorant Garamond', serif; font-size: 19px; color: var(--navy); line-height: 1.25; }
+.fw-informs-plus { display: flex; align-items: center; font-family: 'Cormorant Garamond', serif; font-size: 26px; color: var(--rust); }
+.fw-informs-out strong { display: block; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--rust); margin-bottom: 8px; }
+.fw-informs-out h3 { font-family: 'Cormorant Garamond', serif; font-size: clamp(24px, 2.6vw, 30px); font-weight: 400; color: var(--navy); margin-bottom: 10px; }
+.fw-informs-out p { font-size: 15px; line-height: 1.8; color: var(--muted-warm); }
+
+/* ── Six governing principles ── */
+.fw-principles { padding: 90px 48px; position: relative; z-index: 1; border-top: 1px solid var(--slate-dim); scroll-margin-top: 104px; }
+.fw-principles-inner { max-width: 1160px; margin: 0 auto; }
+.fw-principles-head { max-width: 700px; margin-bottom: 48px; }
+.fw-principles-head h2 { margin-bottom: 16px; }
+.fw-principles-head p { font-size: 16px; line-height: 1.8; color: var(--cream-70); }
+.fw-principles-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; }
+.fw-principle { border: 1px solid var(--slate-dim); border-top: 2px solid var(--gold); padding: 36px 30px; transition: border-color 0.25s; }
+.fw-principle:hover { border-color: var(--gold-border); border-top-color: var(--gold); }
+.fw-principle-num { font-family: 'Cormorant Garamond', serif; font-size: 30px; color: var(--gold); opacity: 0.7; line-height: 1; margin-bottom: 14px; letter-spacing: 0.08em; }
+.fw-principle-name { font-family: 'Cormorant Garamond', serif; font-size: 25px; font-weight: 400; color: var(--white); line-height: 1.2; margin-bottom: 14px; }
+.fw-principle-body { font-size: 15px; line-height: 1.8; color: var(--cream-70); }
 
 .pillars-section { padding: 0 48px 100px; position: relative; z-index: 1; }
 .pillars-inner { max-width: 1160px; margin: 0 auto; }
 .pillar-block { display: grid; grid-template-columns: 1fr 2fr; gap: 64px; padding: 64px 0; border-top: 1px solid var(--slate-dim); align-items: start; }
-.pillar-num { font-family: 'Cormorant Garamond', serif; font-size: 80px; font-weight: 300; line-height: 1; color: var(--gold); opacity: 0.2; margin-bottom: -8px; }
+/* Opacity raised from 0.2 to 0.6. At 0.2 these numerals blended to #343e48 on
+   the navy, 1.42:1, against the 3:1 that large text needs. 0.6 gives 3.35:1. */
+.pillar-num { font-family: 'Cormorant Garamond', serif; font-size: 80px; font-weight: 300; line-height: 1; color: var(--gold); opacity: 0.6; margin-bottom: -8px; }
 .pillar-name { font-family: 'Cormorant Garamond', serif; font-size: 48px; font-weight: 300; color: var(--white); margin-bottom: 4px; }
 .pillar-subtitle { font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold); margin-bottom: 24px; }
 .pillar-desc { font-size: 17px; line-height: 1.85; color: var(--cream-70); margin-bottom: 20px; }
+.pillar-block.separate { border-top: 2px solid var(--gold-border); }
+.pillar-sep-label { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); line-height: 1.5; margin-bottom: 18px; max-width: 200px; }
 .pillar-signals { display: flex; flex-direction: column; gap: 10px; margin-top: 28px; }
 .pillar-signal { display: flex; gap: 14px; padding: 16px 18px; border: 1px solid var(--slate-dim); font-size: 15px; line-height: 1.65; color: var(--cream-70); }
 .signal-icon { color: var(--gold); min-width: 16px; }
@@ -66,68 +146,185 @@
 .matrix-section { padding: 80px 48px; background: var(--navy); position: relative; z-index: 1; }
 .matrix-inner { max-width: 1160px; margin: 0 auto; }
 .matrix-header { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: end; margin-bottom: 48px; }
-.matrix-grid-full { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
-.matrix-card { padding: 36px; border: 1px solid transparent; }
-.mc-compound { background: rgba(74,140,111,0.1); border-color: rgba(74,140,111,0.2); }
-.mc-depth { background: rgba(200,80,60,0.08); border-color: rgba(200,80,60,0.15); }
-.mc-stagnant { background: rgba(139,160,180,0.06); border-color: rgba(139,160,180,0.1); }
-.mc-fragile { background: rgba(201,168,76,0.07); border-color: rgba(201,168,76,0.12); }
+.matrix-grid-full { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 10px; }
+/* DOM order is the mobile stack: Stagnant, Fragile, Depth Trap, Compounding,
+   running lowest to highest capability formation. On desktop the cards form a
+   real 2x2, so reorder visually to put High Density on the top row. DOM is
+   untouched, so the mobile stack and reading order stay as authored. */
+@media (min-width: 901px) {
+  .matrix-grid-full .mc-depth     { order: 1; }
+  .matrix-grid-full .mc-compound  { order: 2; }
+  .matrix-grid-full .mc-stagnant  { order: 3; }
+  .matrix-grid-full .mc-fragile   { order: 4; }
+}
+.matrix-card { padding: 36px; }
 .mc-tag { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 14px; }
-.mc-compound .mc-tag { color: #6ab894; }
-.mc-depth .mc-tag { color: #e07060; }
-.mc-stagnant .mc-tag { color: var(--slate); }
-.mc-fragile .mc-tag { color: var(--gold); }
-.mc-name { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 400; color: var(--white); margin-bottom: 14px; }
+.mc-compound .mc-tag { color: #2D5631; }
+.mc-depth .mc-tag { color: #5E4D18; }
+.mc-stagnant .mc-tag { color: #703E3E; }
+.mc-fragile .mc-tag { color: #704018; }
+.mc-name { font-family: 'Cormorant Garamond', serif; font-size: 32px; font-weight: 400; color: var(--navy); margin-bottom: 14px; }
 .mc-desc { font-size: 15px; line-height: 1.75; color: var(--cream-70); }
 
 .fw-cta { padding: 80px 48px; text-align: center; position: relative; z-index: 1; }
 .fw-cta-inner { max-width: 620px; margin: 0 auto; }
 .fw-cta-inner p { font-size: 17px; line-height: 1.85; color: var(--cream-70); margin-bottom: 36px; }
 
+/* ── Warm band overrides: architecture + matrix sections run on cream ── */
+.warm-section.fw-architecture { padding-top: 80px; }
+.warm-section .fw-arch-card { border-color: var(--line-warm); background: #fff; }
+.warm-section .fw-arch-card.accent { border-color: rgba(201,168,76,0.55); background: rgba(201,168,76,0.10); }
+/* --rust-ink, not --rust: on the warm band these 11px uppercase labels measure
+   4.24:1 in brand rust, and 4.66:1 in --rust-ink. WCAG 1.4.3. */
+.warm-section .fw-arch-label { color: var(--rust-ink); }
+.warm-section .fw-arch-title { color: var(--navy); }
+.warm-section .fw-arch-head p { color: var(--muted-warm); }
+.warm-section .fw-arch-text { color: var(--muted-warm); }
+.warm-section .fwm-head,
+.warm-section .fwm-rowhead { color: var(--muted-warm); }
+.warm-section .fw-separate { border-top-color: rgba(201,168,76,0.45); }
+.warm-section .fw-separate strong { color: var(--rust-ink); }
+.warm-section .fw-separate p { color: var(--muted-warm); }
+
+.warm-section.matrix-section { background: var(--cream); }
+.warm-section .matrix-intro { color: var(--muted-warm); }
+.warm-section .mc-desc { color: #222F46; }
+
+.warm-section .mc-compound .mc-name::after {
+  content: "Target state";
+  display: block; margin-top: 8px;
+  font-family: 'DM Sans', sans-serif; font-size: 10px; font-weight: 500;
+  letter-spacing: 0.18em; text-transform: uppercase; color: #2D5631;
+}
+
 @media (max-width: 900px) {
-  .page-hero { padding: 120px 24px 60px; }
-  .framework-intro { grid-template-columns: 1fr; }
+  .page-hero { padding: 120px 24px 48px; }
+  .framework-intro { grid-template-columns: 1fr; gap: 32px; }
+  .fw-architecture { padding: 0 24px 60px; }
+  .fw-arch-grid { grid-template-columns: 1fr; }
+  .fw-informs { padding: 24px 22px; }
+  .fw-informs-flow { grid-template-columns: 1fr; gap: 12px; }
+  .fw-informs-plus { justify-content: center; }
+  .fw-arch-card { padding: 32px 24px; }
+  .fw-matrix { grid-template-columns: 52px minmax(0,1fr) minmax(0,1fr); }
+  /* The longest label, Compounding, has to sit inside its cell at phone
+     widths. Type and padding are sized so it does, and break-word is the
+     last-resort guard so it wraps rather than running over the box. */
+  .fwm-cell { padding: 14px 8px; font-size: 15px; overflow-wrap: break-word; }
+  .fwm-head, .fwm-rowhead { font-size: 9px; letter-spacing: 0.1em; }
+  .fw-principles { padding: 60px 24px; }
+  .fw-principles-grid { grid-template-columns: 1fr; }
   .pillars-section { padding: 0 24px 60px; }
   .pillar-block { grid-template-columns: 1fr; gap: 24px; }
   .matrix-section { padding: 60px 24px; }
   .matrix-header { grid-template-columns: 1fr; }
   .matrix-grid-full { grid-template-columns: 1fr; }
 }
+
+/* Narrowest phones. The matrix is the only element that runs out of room, so
+   the card gutter and the row-label column give it back what it needs. */
+@media (max-width: 380px) {
+  .fw-arch-card { padding: 28px 18px; }
+  .fw-matrix { grid-template-columns: 46px minmax(0,1fr) minmax(0,1fr); }
+  .fwm-cell { padding: 13px 7px; font-size: 13px; }
+}
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to main content</a>
 
 <nav>
-  <a href="index.html" class="nav-logo">Temidayo <span>Afonja</span></a>
+  <a href="index.html" class="nav-logo brand-lockup">
+    <span class="brand-primary">The Density Group</span>
+    <span class="brand-secondary">Capability Formation Advisory</span>
+    <span class="brand-tertiary">Founded by Temidayo Afonja</span>
+  </a>
   <ul class="nav-links">
-    <li><a href="framework.html" class="active">Framework</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="principles.html">Principles</a></li>
-    <li><a href="work.html">Work With Me</a></li>
-    <li><a href="case-studies.html">Case Studies</a></li>
-    <li><a href="speaking.html">Speaking</a></li>
-    <li><a href="book.html">Book</a></li>
-    <li><a href="https://temidayoafonja.substack.com" target="_blank" rel="noopener">Writing</a></li>
-    <li><a href="/diagnostic" class="nav-cta">Take the Diagnostic</a></li>
+    <li><a href="framework.html" class="active">Capability Formation</a></li>
+    <li><a href="work.html">Advisory</a></li>
+    <li><a href="executive-briefing.html">Executive Briefing</a></li>
+    <li><a href="case-studies.html">Evidence</a></li>
+    <li><a href="about.html">The Firm</a></li>
+    <li><a href="for-professionals.html">For Professionals</a></li>
+    <li><a href="executive-briefing.html#inquiry" class="nav-cta">Bring a Consequential Decision</a></li>
   </ul>
 </nav>
+<main id="main" tabindex="-1">
 
 <div class="page-hero">
   <span class="eyebrow fade-up delay-1">The Capability Formation Framework</span>
   <div class="framework-intro">
     <div>
       <h1 class="page-title fade-up delay-2">How do individuals<br>and organizations<br><em>build capability</em><br>when markets stop<br>being predictable?</h1>
-      <p class="fw-intro-text fade-up delay-3">The Capability Formation Framework is a diagnostic and design system for organizations that want to build capability that lasts, not just deploy the capability they happen to have. It maps how capability compounds or erodes across three interconnected mechanisms, and what it costs people and organizations when those mechanisms are ignored.</p>
-      <p class="fw-intro-text fade-up delay-4">Built from eighteen years of practice across Big 4 consulting, global life sciences, and high-growth technology. Designed for leaders who understand that building people well is not separate from building organizations well. It is the same work.</p>
     </div>
-    <div class="fw-equation-block fade-up delay-3">
-      <div class="fw-equation">Density<br>&darr;<br>Optionality<br>&darr;<br>Alumni Capital</div>
-      <div class="fw-equation-produces">produces</div>
-      <div class="fw-equation-outcome">Institutional Resilience</div>
-      <div class="fw-equation-label">in volatile markets</div>
+    <div>
+      <p class="fw-intro-text fade-up delay-3">The Capability Formation Framework is an evidence-led framework and decision architecture for organizations that want to build capability that lasts, not just deploy the capability they happen to have. It reads the capability position formed by Density and Optionality, reads Alumni Capital separately, and shows what it costs people and organizations when both are ignored.</p>
+      <p class="fw-intro-text fade-up delay-4">Built from nearly two decades of practice across Big 4 consulting, global life sciences, and high-growth technology. Designed for leaders who understand that building people well is not separate from building organizations well. It is the same work.</p>
     </div>
   </div>
 </div>
+
+<!-- THE ARCHITECTURE: two readings, not a linear sequence -->
+<section class="fw-architecture warm-section" id="architecture">
+  <div class="fw-arch-inner">
+    <div class="fw-arch-head">
+      <span class="eyebrow">The Architecture</span>
+      <h2>Two readings, not one sequence.</h2>
+      <p>Density and Optionality place the capability position. Alumni Capital is read separately. Together, the capability position and Alumni Capital inform what the organization can retain, redeploy, and reach when conditions change.</p>
+    </div>
+    <div class="fw-arch-grid">
+
+      <article class="fw-arch-card">
+        <span class="fw-arch-label">Reading One &middot; Capability Position</span>
+        <div class="fw-arch-title">Density x Optionality</div>
+        <p class="fw-arch-text">Density is the concentration of tested judgment a person or organization has developed. Density-forming conditions are the consequential work, variation, feedback, reflection, and repeated application through which that judgment develops.</p>
+        <p class="fw-arch-text" style="margin-top:14px;">Density is not workload, tenure, hardship, pressure, or the volume of responsibility a person carries.</p>
+        <p class="fw-arch-text" style="margin-top:14px;">Optionality is the transferability and usability of that capability across roles, contexts, and future conditions. It is not simply job mobility.</p>
+        <p class="fw-arch-text" style="margin-top:14px;">An organization is a distribution of capability positions across people, roles, and critical work. One person&rsquo;s self-report does not place an entire organization into a single quadrant.</p>
+        <div class="fw-matrix">
+          <div class="fwm-head"></div>
+          <div class="fwm-head">Low Optionality</div>
+          <div class="fwm-head">High Optionality</div>
+          <div class="fwm-rowhead">High Density</div>
+          <div class="fwm-cell depth">Depth Trap</div>
+          <div class="fwm-cell compound">Compounding</div>
+          <div class="fwm-rowhead">Low Density</div>
+          <div class="fwm-cell stagnant">Stagnant</div>
+          <div class="fwm-cell fragile">Fragile</div>
+        </div>
+      </article>
+
+      <article class="fw-arch-card accent">
+        <span class="fw-arch-label">Separate Organizational Reading</span>
+        <div class="fw-arch-title">Alumni Capital</div>
+        <p class="fw-arch-text">Alumni Capital measures the value, relationships, and organizational reachability that remain after a person exits. It does not create a fifth state or a third placement axis.</p>
+        <div class="fw-separate">
+          <strong>What it reveals</strong>
+          <p>Whether capability disappears at departure, remains accessible, or returns to the organization in new forms.</p>
+        </div>
+      </article>
+
+    </div>
+    <div class="fw-informs">
+      <div class="fw-informs-flow">
+        <div class="fw-informs-leg">
+          <strong>Reading One</strong>
+          <span>Density x Optionality gives the Four States placement</span>
+        </div>
+        <div class="fw-informs-plus">+</div>
+        <div class="fw-informs-leg">
+          <strong>Reading Two</strong>
+          <span>Alumni Capital gives the organizational reachability reading</span>
+        </div>
+      </div>
+      <div class="fw-informs-out">
+        <strong>Together they inform</strong>
+        <h3>Institutional Resilience</h3>
+        <p>A reading of whether the organization can retain, redeploy, recover, and reach the capability it needs when conditions change. The two readings inform it. Neither one produces it, and the four terms are not a causal sequence.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <hr class="section-divider" style="position:relative;z-index:1;">
 
@@ -138,15 +335,14 @@
       <div>
         <div class="pillar-num">01</div>
         <div class="pillar-name">Density</div>
-        <div class="pillar-subtitle">The Environment</div>
+        <div class="pillar-subtitle">What Builds Density</div>
       </div>
       <div>
-        <p class="pillar-desc">Density describes the conditions under which capability is forged. High-density environments are defined by challenge that is complex, consequential, and not yet solved. They expose people to volatility, force the development of new judgment, and produce talent that compounds rather than stagnates. They are also the environments where people most often discover what they are genuinely capable of, when given the chance.</p>
-        <p class="pillar-desc">Routine work produces fragile talent. Organizations that allow challenge concentration to thin out through administrative overhead, under-challenging assignments, or excessive process orientation gradually erode the capability base they depend on. They also quietly communicate to their best people that growth is not on offer here.</p>
+        <p class="pillar-desc">Density-forming conditions are the conditions under which tested judgment develops. High-density environments are defined by challenge that is complex, consequential, and not yet solved. They expose people to volatility, require the development of new judgment, and can produce capability that compounds rather than stagnates. They are also the environments where people most often discover what they are genuinely capable of, when given the chance.</p>
+        <p class="pillar-desc">Routine work can reduce Density when it stops exposing people to unfamiliar, consequential problems. Where challenge concentration thins out through administrative overhead, under-challenging assignments, or excessive process orientation, organizations can gradually erode the capability base they depend on. They also quietly communicate to their best people that growth is not on offer here.</p>
         <div class="pillar-signals">
           <div class="pillar-signal"><span class="signal-icon">→</span>What problems does your environment make people genuinely better at solving?</div>
           <div class="pillar-signal"><span class="signal-icon">→</span>Is challenge concentrated in your most important roles, or distributed by accident?</div>
-          <div class="pillar-signal"><span class="signal-icon">→</span>How quickly does your organization recover capability after a major departure?</div>
         </div>
       </div>
     </div>
@@ -155,10 +351,10 @@
       <div>
         <div class="pillar-num">02</div>
         <div class="pillar-name">Optionality</div>
-        <div class="pillar-subtitle">The Individual</div>
+        <div class="pillar-subtitle">Portability and Mobility</div>
       </div>
       <div>
-        <p class="pillar-desc">Optionality describes what capability enables when it compounds over time. High-optionality careers and roles produce leaders whose judgment is portable across industries, functions, and cycles. It is also the dimension that most directly determines whether a person's work life feels expansive or contracting. When people can see that what they are building belongs to them, not just to the organization, they bring more of themselves to it.</p>
+        <p class="pillar-desc">Optionality describes what capability enables when it compounds over time. High-optionality careers and roles produce leaders whose judgment is portable across industries, functions, and cycles. It is also the dimension most closely associated with whether a person's work life feels expansive or contracting. When people can see that what they are building belongs to them, not just to the organization, they bring more of themselves to it.</p>
         <p class="pillar-desc">The organizations that retain the best people are the ones that actively expand optionality through intentional role design, cross-functional mobility, and exposure to contexts that require new judgment. They understand that capability retained is not just a retention metric. It is a form of organizational care.</p>
         <div class="pillar-signals">
           <div class="pillar-signal"><span class="signal-icon">→</span>Are your roles designed to expand capability or to deploy it?</div>
@@ -168,19 +364,20 @@
       </div>
     </div>
 
-    <div class="pillar-block">
+    <div class="pillar-block separate">
       <div>
-        <div class="pillar-num">03</div>
+        <div class="pillar-sep-label">Separate Organizational Reading</div>
         <div class="pillar-name">Alumni Capital</div>
-        <div class="pillar-subtitle">The Organization</div>
+        <div class="pillar-subtitle">Read On Its Own</div>
       </div>
       <div>
-        <p class="pillar-desc">Alumni Capital is the framework's most differentiated concept. It describes the network value, organizational knowledge, and relationship infrastructure that persists and compounds after an employee's departure. How an organization treats capability at exit determines what it can recruit at entry, how strong its succession pipelines are, and how resilient its organizational memory is across restructurings and leadership transitions.</p>
+        <p class="pillar-desc">Alumni Capital is read separately from the capability position. It does not create a fifth state and it does not act as a third placement axis. It describes the network value, organizational knowledge, and relationship infrastructure that persists and compounds after an employee's departure. How an organization treats capability at exit can influence what it recruits at entry, the strength of its succession pipelines, and the resilience of its organizational memory across restructurings and leadership transitions.</p>
         <p class="pillar-desc">Most organizations treat departures as losses. The best organizations treat them as redistributions, building the systems to capture and circulate the value that leaves through the door. How you treat people on the way out reveals what you actually believe about them. And the people watching from the inside see it clearly.</p>
         <div class="pillar-signals">
           <div class="pillar-signal"><span class="signal-icon">→</span>What percentage of senior hires in the last three years came from your alumni network?</div>
           <div class="pillar-signal"><span class="signal-icon">→</span>How much organizational knowledge walks out the door in every restructuring?</div>
-          <div class="pillar-signal"><span class="signal-icon">→</span>How you treat exits determines what you attract at entry.</div>
+          <div class="pillar-signal"><span class="signal-icon">→</span>How quickly does your organization recover capability after a major departure?</div>
+          <div class="pillar-signal"><span class="signal-icon">→</span>How you treat exits can influence what you attract at entry.</div>
         </div>
       </div>
     </div>
@@ -188,16 +385,26 @@
   </div>
 </div>
 
-<section class="matrix-section">
+<section class="matrix-section warm-section">
   <div class="matrix-inner">
     <div class="matrix-header">
       <div>
-        <span class="eyebrow">The Career Strategy Matrix</span>
-        <h2>Where does your capability sit?</h2>
+        <span class="eyebrow">The Four States</span>
+        <h2>Where does your capability position sit?</h2>
       </div>
-      <p style="color:var(--cream-70);font-size:17px;line-height:1.85;">The matrix maps Density against Optionality to reveal four distinct capability conditions. Each applies to the individual building a career and the organization designing the environment. Each has its own cost, its own risk profile, and its own path forward.</p>
+      <p class="matrix-intro" style="font-size:17px;line-height:1.85;">The matrix maps Density against Optionality to reveal four distinct capability conditions. Each applies to the individual building a career and the organization designing the environment. Each has its own cost, its own risk profile, and its own path forward.</p>
     </div>
     <div class="matrix-grid-full">
+      <div class="matrix-card mc-stagnant">
+        <div class="mc-tag">Low Density &middot; Low Optionality</div>
+        <div class="mc-name">Stagnant</div>
+        <div class="mc-desc">The work stopped asking more than was already there. For the person inside, the gap between what is being built and what the next decade requires has been growing quietly. For the organization, this is a common and frequently overlooked condition.</div>
+      </div>
+      <div class="matrix-card mc-fragile">
+        <div class="mc-tag">Low Density &middot; High Optionality</div>
+        <div class="mc-name">Fragile</div>
+        <div class="mc-desc">Moved a lot. Built less than the movement suggests. The range is real but the depth behind it has not been tested. Holds up in stable conditions. Becomes visible under pressure, for the person and for the organization running them.</div>
+      </div>
       <div class="matrix-card mc-depth">
         <div class="mc-tag">High Density &middot; Low Optionality</div>
         <div class="mc-name">Depth Trap</div>
@@ -208,16 +415,56 @@
         <div class="mc-name">Compounding</div>
         <div class="mc-desc">This is where capability builds on itself. Harder problems, expanding judgment, genuine growth. What gets built here is portable. The question is whether it stays or walks out the door, and that is a design question, not a luck question.</div>
       </div>
-      <div class="matrix-card mc-stagnant">
-        <div class="mc-tag">Low Density &middot; Low Optionality</div>
-        <div class="mc-name">Stagnant</div>
-        <div class="mc-desc">The work stopped asking more than was already there. For the person inside, the gap between what is being built and what the next decade requires has been growing quietly. For the organization, this is the most common and least diagnosed condition.</div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SIX GOVERNING PRINCIPLES (absorbed from principles.html) -->
+<section class="fw-principles" id="principles">
+  <div class="fw-principles-inner">
+    <div class="fw-principles-head">
+      <span class="eyebrow">Six Governing Principles</span>
+      <h2>The framework in its most compressed form.</h2>
+    </div>
+    <div class="fw-principles-grid">
+
+      <div class="fw-principle">
+        <div class="fw-principle-num">01</div>
+        <div class="fw-principle-name">Work forms capability.</div>
+        <p class="fw-principle-body">People become more capable through the problems, decisions, feedback, and exposure their roles repeatedly provide.</p>
       </div>
-      <div class="matrix-card mc-fragile">
-        <div class="mc-tag">Low Density &middot; High Optionality</div>
-        <div class="mc-name">Fragile</div>
-        <div class="mc-desc">Moved a lot. Built less than the movement suggests. The range is real but the depth behind it has not been tested. Holds up in stable conditions. Becomes visible under pressure, for the person and for the organization running them.</div>
+
+      <div class="fw-principle">
+        <div class="fw-principle-num">02</div>
+        <div class="fw-principle-name">Tenure is not Density.</div>
+        <p class="fw-principle-body">Time in role can deepen judgment, repeat the familiar, or quietly narrow what remains portable.</p>
       </div>
+
+      <div class="fw-principle">
+        <div class="fw-principle-num">03</div>
+        <div class="fw-principle-name">Visibility is not Optionality.</div>
+        <p class="fw-principle-body">Being known inside one system is different from possessing capability that can travel beyond it.</p>
+      </div>
+
+      <div class="fw-principle">
+        <div class="fw-principle-num">04</div>
+        <div class="fw-principle-name">States aggregate.</div>
+        <p class="fw-principle-body">A team or organization is a distribution of capability positions, not a single score detached from its people.</p>
+      </div>
+
+      <div class="fw-principle">
+        <div class="fw-principle-num">05</div>
+        <div class="fw-principle-name">Exits reveal the design.</div>
+        <p class="fw-principle-body">What disappears, remains reachable, or returns after departure shows what the organization truly built.</p>
+      </div>
+
+      <div class="fw-principle">
+        <div class="fw-principle-num">06</div>
+        <div class="fw-principle-name">Resilience is built early.</div>
+        <p class="fw-principle-body">The ability to redeploy and recover capability must exist before volatility makes the need visible.</p>
+      </div>
+
     </div>
   </div>
 </section>
@@ -225,31 +472,47 @@
 <section class="fw-cta">
   <div class="fw-cta-inner">
     <span class="eyebrow">The Diagnostic</span>
-    <h2 style="margin-bottom:20px;">Find your quadrant.</h2>
-    <p>The Capability Formation Diagnostic scores you on two axes, Density and Optionality, and measures Alumni Capital separately, in twelve statements for individuals, eleven questions for organization leaders. Your results include a full diagnostic reading, risk profile, and a clear path forward. Most people find that seeing it clearly is the hardest and most important step.</p>
+    <h2 style="margin-bottom:20px;">Read your current capability position.</h2>
+    <p>Professionals can begin with the individual diagnostic. Organizational leaders can run a preliminary self-read or discuss a consequential decision with The Density Group.</p>
     <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:36px;">
       <a href="/diagnostic" class="btn-primary">Take the Diagnostic</a>
-      <a href="work.html" class="btn-secondary">Work With Me</a>
+      <a href="work.html" class="btn-secondary">Explore Advisory</a>
     </div>
   </div>
 </section>
 
+</main>
+
 <footer>
   <div>
-    <div class="footer-logo">Temidayo <span>Afonja</span></div>
-    <div class="footer-tagline">The Capability Formation Framework &middot; Density, Optionality, Alumni Capital.</div>
+    <div class="footer-logo">The Density Group</div>
+    <div class="footer-tagline">The Density Group is a Capability Formation advisory firm founded by Temidayo Afonja.</div>
   </div>
-  <ul class="footer-links">
-    <li><a href="framework.html">Framework</a></li>
-    <li><a href="principles.html">Principles</a></li>
-    <li><a href="/diagnostic">Diagnostic</a></li>
-    <li><a href="/organizational-diagnostic">The Organizational Diagnostic</a></li>
-    <li><a href="work.html">Work With Me</a></li>
-    <li><a href="case-studies.html">Case Studies</a></li>
-    <li><a href="speaking.html">Speaking</a></li>
-    <li><a href="https://temidayoafonja.substack.com" target="_blank" rel="noopener">Substack</a></li>
-  </ul>
-  <div class="footer-copy">&copy; 2026 Temidayo Afonja. All rights reserved.</div>
+  <div class="footer-cols">
+    <div class="footer-col">
+      <div class="footer-col-label">The Firm</div>
+      <ul class="footer-links">
+        <li><a href="framework.html">Capability Formation</a></li>
+        <li><a href="work.html">Advisory</a></li>
+        <li><a href="executive-briefing.html">Executive Briefing</a></li>
+        <li><a href="case-studies.html">Evidence</a></li>
+        <li><a href="speaking.html">Speaking</a></li>
+        <li><a href="about.html">The Firm</a></li>
+        <li><a href="/organizational-diagnostic">Organizational Capability Formation Scan</a></li>
+        <li><a href="executive-briefing.html#inquiry">Bring a Consequential Decision</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-label">For Professionals</div>
+      <ul class="footer-links">
+        <li><a href="/diagnostic">Free Diagnostic</a></li>
+        <li><a href="for-professionals.html">Career Growth Assessment</a></li>
+        <li><a href="book.html">Books &amp; Tools</a></li>
+        <li><a href="https://temidayoafonja.substack.com" target="_blank" rel="noopener">Writing</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-copy">&copy; 2026 The Density Group LLC &middot; Capability Formation &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></div>
 </footer>
 
 <script defer src="/nav.js"></script>

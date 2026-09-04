@@ -1,5 +1,9 @@
 User-agent: *
 Allow: /
 Disallow: /dashboard.html
+# Delivered lead-magnet files. The Kit delivery email links straight to one
+# of these, so they must serve, but they should never appear in search.
+# /resources/* also carries X-Robots-Tag noindex, nofollow in netlify.toml.
+Disallow: /resources/
 
 Sitemap: https://temidayoafonja.com/sitemap.xml

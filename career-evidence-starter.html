@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free Career Accomplishment Tracker | Keep the Proof Starter</title>
+<meta name="description" content="Keep the Proof: The 10-Minute Career Evidence Starter, a free tracker for experienced professionals. Turn one accomplishment into proof you can use in a performance review, interview, internal move or career pivot.">
+<link rel="canonical" href="https://temidayoafonja.com/career-evidence-starter">
+
+<!-- PREVIEW: not published. Remove this robots tag at launch, once the PDF and
+     the Kit sequence are approved. -->
+<meta name="robots" content="noindex, nofollow">
+
+<!-- Open Graph / Twitter. Starter-specific card at the site convention of
+     1200x630, built from the real cover render. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Density Group">
+<meta property="og:url" content="https://temidayoafonja.com/career-evidence-starter">
+<meta property="og:title" content="Free Career Accomplishment Tracker | Keep the Proof Starter">
+<meta property="og:description" content="Turn one accomplishment into proof you can use in a performance review, interview, internal move or career pivot.">
+<meta property="og:image" content="https://temidayoafonja.com/og-career-evidence-starter.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Keep the Proof: The 10-Minute Career Evidence Starter, a free career accomplishment tracker">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Career Accomplishment Tracker | Keep the Proof Starter">
+<meta name="twitter:description" content="Turn one accomplishment into proof you can use in a performance review, interview, internal move or career pivot.">
+<meta name="twitter:image" content="https://temidayoafonja.com/og-career-evidence-starter.png">
+<meta name="twitter:image:alt" content="Keep the Proof: The 10-Minute Career Evidence Starter, a free career accomplishment tracker">
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="/fonts.css">
+<link rel="stylesheet" href="/styles.css">
+
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-hFo9m_622E0tElKtUlVnx.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+
+<style>
+/* ── Career Evidence Starter ──
+   Page-scoped only. Every rule below is prefixed with .lean-page or a class
+   used nowhere else in the repository, so no existing page can regress from
+   this file. The visual register, the type stack, the spacing rhythm and the
+   button treatment are copied from for-professionals.html, which is the
+   closest existing professional-facing page. Nav, footer, focus ring, skip
+   link and motion come from the shared styles.css untouched.
+
+   Colours are the repository's own values: --navy, --cream, --gold and the
+   text-safe --rust-ink are read from styles.css. --rust, --ink, --muted,
+   --line, --paper are the same warm-register locals for-professionals.html
+   declares, repeated here so this page is self-contained. */
+:root {
+  --rust: #C1440E; --ink: #182238; --muted: #5D6676;
+  --line: rgba(15,35,71,.14); --paper: #FFFDF8; --soft-navy: #E9EDF4;
+}
+.lean-page { position: relative; z-index: 1; background: var(--cream); color: var(--ink); font-family: Arial, Helvetica, sans-serif; line-height: 1.56; padding-top: 96px; }
+.lean-page h1, .lean-page h2, .lean-page h3, .lean-page h4 { font-family: Georgia, 'Times New Roman', serif; font-weight: 500; letter-spacing: -.026em; color: var(--navy); margin: 0; }
+.lean-page p { margin: 0; color: var(--ink); font-size: 15px; line-height: 1.56; }
+.lean-page a { color: inherit; }
+.lean-wrap { width: min(900px, calc(100% - 48px)); margin: 0 auto; }
+.lean-wrap.wide { width: min(1120px, calc(100% - 48px)); }
+.lean-eyebrow { text-transform: uppercase; letter-spacing: .14em; font-size: 11px; font-weight: 800; color: var(--rust-ink); margin-bottom: 18px; display: block; }
+.lean-btn { display: inline-flex; align-items: center; justify-content: center; padding: 14px 22px; border-radius: 4px; font-weight: 700; font-size: 14px; font-family: Arial, Helvetica, sans-serif; text-decoration: none; cursor: pointer; border: none; }
+.lean-btn.light { background: #fff; color: var(--navy); }
+/* .primary had no rule on this page, so the hero call to action rendered as
+   bare text inside an invisible box. It is the rust fill used by the form
+   submit at the foot of the page, so the two reads as the same action. */
+.lean-btn.primary { background: var(--rust); color: #fff; letter-spacing: .06em;
+  text-transform: uppercase; font-size: 13px; padding: 16px 26px; }
+
+/* Hero. Same clamp, measure and rhythm as the hero on for-professionals.html. */
+.cd-hero { padding: 56px 0 44px; }
+.cd-hero h1 { font-size: clamp(32px, 4.6vw, 44px); line-height: 1.08; margin-bottom: 22px; }
+.cd-sub { font-family: Georgia, serif; font-size: 19px; color: var(--muted); max-width: 720px; }
+
+/* ── Capture band ──
+   The navy band and the paper form card are the approved capture treatment
+   already in production on for-professionals.html (.a-priority / .a-form-card).
+   Class names are new so the two pages never share a rule. */
+.cd-capture { background: var(--navy); padding: 64px 0; margin-top: 34px; scroll-margin-top: 104px; }
+.cd-capture .lean-eyebrow { color: var(--gold); }
+.cd-capture h2 { color: #fff; font-size: clamp(26px, 3.4vw, 38px); line-height: 1.12; margin-bottom: 14px; }
+.cd-capture > .lean-wrap > p { color: rgba(255,255,255,.74); font-size: 15px; max-width: 640px; margin-bottom: 30px; }
+.cd-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 50px; align-items: start; }
+.cd-useful .cd-label { font-size: 11px; text-transform: uppercase; letter-spacing: .13em; font-weight: 800; color: var(--gold); margin-bottom: 14px; }
+.cd-useful ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.cd-useful li { font-size: 14px; color: rgba(255,255,255,.78); padding-left: 18px; position: relative; line-height: 1.5; }
+.cd-useful li:before { content: "\2192"; position: absolute; left: 0; color: var(--gold); }
+
+.cd-card { background: var(--paper); border-radius: 10px; padding: 30px; }
+.cd-form { display: grid; grid-template-columns: 1fr; gap: 14px; }
+.cd-field { display: flex; flex-direction: column; }
+.cd-field label { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 7px; font-weight: 700; }
+.cd-field input, .cd-field textarea { width: 100%; border: 1px solid var(--line); background: #fff; color: var(--ink); border-radius: 4px; padding: 13px 14px; font: inherit; outline: none; }
+.cd-field textarea { min-height: 80px; resize: vertical; }
+/* Invalid state. Colour is never the only signal: the message below the field
+   carries the same information in text, and aria-invalid carries it to
+   assistive technology. --red-soft is the repository's own error colour. */
+.cd-field input[aria-invalid="true"], .cd-field textarea[aria-invalid="true"] { border-color: var(--red-soft); }
+/* These three are prefixed with .lean-page deliberately. ".lean-page p" above
+   is (0,1,1) and would otherwise outrank a bare (0,1,0) class selector, which
+   put the hint and error text at the 15px body size and made it louder than the
+   labels it sits under. Same specificity trap styles.css documents for
+   ".nav-logo span". */
+.lean-page .cd-note { font-size: 12px; color: var(--muted); margin-top: 6px; line-height: 1.45; }
+.lean-page .cd-error { font-size: 12.5px; color: #A83A2A; margin-top: 6px; font-weight: 700; line-height: 1.45; }
+.lean-page .cd-error:empty { display: none; }
+
+/* Consent. A real checkbox at its native size, never restyled away. */
+.cd-consent { display: flex; gap: 11px; align-items: flex-start; padding: 4px 0 2px; }
+.cd-consent input[type="checkbox"] { width: 17px; height: 17px; margin: 2px 0 0; flex: 0 0 auto; accent-color: var(--navy); }
+.cd-consent label { font-size: 12.5px; line-height: 1.5; color: var(--muted); text-transform: none; letter-spacing: 0; font-weight: 400; margin: 0; }
+.lean-page .cd-consent-note { font-size: 12px; line-height: 1.5; color: var(--muted); margin-top: 6px; }
+.cd-consent-note a, .cd-consent a { color: var(--navy); text-decoration: underline; }
+.cd-submit { background: var(--rust); color: #fff; border: none; border-radius: 4px; padding: 15px; font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; }
+.cd-submit[disabled] { opacity: .72; cursor: default; }
+/* The honeypot. Off screen rather than display:none, so a scripted client that
+   filters hidden inputs still sees it. Never focusable, never announced. */
+.cd-trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+/* ── Result ──
+   Hidden until the server confirms the subscription. Never revealed on a click
+   or on a failed request. */
+.cd-result { display: none; padding: 56px 0 8px; }
+.cd-result.is-open { display: block; }
+.cd-result:focus { outline: none; }
+.cd-result h2 { font-size: clamp(24px, 3vw, 32px); line-height: 1.14; margin-bottom: 14px; }
+.cd-result > .lean-wrap > p.cd-lede { color: var(--muted); font-size: 15.5px; max-width: 680px; margin-bottom: 30px; }
+.cd-q { display: flex; flex-direction: column; gap: 14px; margin-bottom: 38px; }
+.cd-q li { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 20px 22px; display: flex; gap: 16px; align-items: baseline; }
+.cd-q ol, .cd-q ul { margin: 0; padding: 0; list-style: none; }
+.cd-q .n { font-family: Georgia, serif; font-size: 20px; color: var(--gold-ink); flex: 0 0 auto; line-height: 1.2; }
+.cd-q .t { font-size: 15.5px; line-height: 1.55; color: var(--ink); }
+
+/* One next step. Single slot, filled from the NEXT_STEP block in the script. */
+.cd-step { background: var(--navy); border-radius: 14px; padding: 30px 32px; margin-bottom: 12px; }
+.cd-step .cd-step-label { font-size: 10px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); margin-bottom: 14px; }
+.cd-step h3 { color: #fff; font-size: clamp(20px, 2.2vw, 25px); line-height: 1.15; margin-bottom: 10px; }
+.cd-step p { color: rgba(255,255,255,.74); font-size: 14.5px; margin-bottom: 22px; }
+.cd-step .lean-btn { align-self: flex-start; }
+
+@media (max-width: 900px) {
+  .lean-page { padding-top: 76px; }
+  .cd-grid { grid-template-columns: 1fr; gap: 32px; }
+  .cd-step { padding: 26px 22px; }
+}
+/* 1.4.10 Reflow. At 320px the two column gap and the card padding are the only
+   things that push the measure, so both step down rather than the type. */
+@media (max-width: 380px) {
+  .lean-wrap, .lean-wrap.wide { width: calc(100% - 32px); }
+  .cd-card { padding: 22px 18px; }
+  .cd-q li { padding: 16px 16px; }
+}
+
+/* ── Career Evidence Starter: sections added on top of the shared cd-* system.
+   The capture card, consent treatment and live regions are the approved
+   pattern already in production on /career-decisions and are reused unchanged. */
+.ces-sec { padding: 76px 0; position: relative; z-index: 1; }
+.ces-sec--paper { background: #FFFDF8; border-top: 1px solid var(--line-warm); border-bottom: 1px solid var(--line-warm); }
+.ces-sec h2 { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(28px, 3.8vw, 42px);
+  line-height: 1.12; color: var(--navy); margin: 0 0 16px; max-width: 24ch; }
+.ces-sec p { font-size: 16px; line-height: 1.72; color: var(--ink); max-width: 62ch; margin: 0 0 14px; }
+.ces-sec p:last-child { margin-bottom: 0; }
+.ces-quote { font-family: 'Cormorant Garamond', serif; font-size: clamp(20px, 2.6vw, 27px);
+  line-height: 1.4; color: var(--navy); max-width: 30ch; margin: 0 0 22px; }
+.ces-leave { list-style: none; margin: 26px 0 0; padding: 0; display: grid; gap: 2px; max-width: 66ch; }
+.ces-leave li { position: relative; padding: 15px 0 15px 30px; font-size: 16px; line-height: 1.6;
+  color: var(--ink); border-bottom: 1px solid var(--line-warm); }
+.ces-leave li:first-child { border-top: 1px solid var(--line-warm); }
+.ces-leave li::before { content: ''; position: absolute; left: 0; top: 23px; width: 14px; height: 2px; background: var(--rust-ink); }
+.ces-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 30px; }
+.ces-step .n { font-family: 'Cormorant Garamond', serif; font-size: 32px; line-height: 1; color: var(--rust-ink); margin-bottom: 10px; }
+.ces-step h3 { font-family: 'Cormorant Garamond', serif; font-weight: 400; font-size: 20px; color: var(--navy); margin: 0 0 6px; }
+.ces-step p { font-size: 15px; line-height: 1.66; color: var(--muted-warm); }
+.ces-two { display: grid; grid-template-columns: 1fr 1fr; gap: 52px; align-items: start; }
+.ces-two h3 { font-family: 'DM Sans', sans-serif; font-size: 11px; font-weight: 800; letter-spacing: .16em;
+  text-transform: uppercase; color: var(--rust-ink); margin: 0 0 14px; }
+.ces-two ul { list-style: none; margin: 0; padding: 0; }
+.ces-two li { position: relative; padding: 0 0 11px 22px; font-size: 15.5px; line-height: 1.6; color: var(--ink); }
+.ces-two li::before { content: ''; position: absolute; left: 0; top: 11px; width: 12px; height: 2px; background: var(--rust-ink); }
+.ces-about { display: grid; grid-template-columns: 172px 1fr; gap: 34px; align-items: start; }
+.ces-about img { width: 100%; height: auto; border-radius: 4px; display: block; }
+.ces-ladder { margin-top: 30px; border-top: 1px solid var(--line-warm); padding-top: 22px; max-width: 66ch; }
+.ces-ladder p { font-size: 15px; line-height: 1.7; color: var(--muted-warm); }
+.ces-ladder strong { color: var(--navy); }
+
+/* ── Warmer register, carried over from the PDF ──
+   These four devices exist on the sheet itself: the gold descriptor label on
+   the cover, the four-strip build preview on the cover, the internal-language
+   transformation on page 4, and the timing line. Repeating them here is what
+   makes the page and the download read as one object. */
+/* --gold-ink on this gold ground measures 4.13:1, which fails AA. #756025 is
+   the same hue two steps darker and measures 4.80:1. Badge only, so the
+   site-wide --gold-ink is left alone. */
+.ces-badge { display: inline-block; text-transform: uppercase; letter-spacing: .15em;
+  font-size: 11px; font-weight: 800; color: #756025; background: #EFE4C6;
+  border-bottom: 2px solid var(--gold); padding: 7px 13px 6px; margin-bottom: 20px; }
+.ces-time { font-size: 15px; color: var(--muted-warm); margin-top: 22px;
+  border-top: 1px solid var(--line-warm); padding-top: 16px; max-width: 66ch; }
+
+/* Named areas rather than two columns, so the call to action can sit under the
+   copy on a wide screen and under the preview on a narrow one. The intended
+   read is category, transformation, the actual product, then the action, and
+   on a single column that only holds if the button moves last. */
+.ces-hero-grid { display: grid; grid-template-columns: 1fr 344px; column-gap: 46px;
+  align-items: center; grid-template-areas: "copy shot" "cta shot"; }
+.ces-copy { grid-area: copy; }
+.ces-shot { grid-area: shot; }
+.ces-cta  { grid-area: cta; }
+
+/* What you will build, kept from the sheet's own cover, now a single
+   left-to-right run so it reads as the transformation rather than a list. */
+/* Each arrow is glued to the chip that follows it, so a wrap never leaves a
+   dangling arrow at the end of a line. .lean-page p wins on specificity over a
+   single class, hence the .lean-page prefix on the caption margin. */
+.ces-flow { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; margin: 14px 0 0; }
+.ces-flow .step { display: inline-flex; align-items: center; gap: 7px; white-space: nowrap; }
+.ces-flow .step b { font-size: 9.5px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--navy); background: #fff; border: 1px solid var(--line-warm); border-radius: 3px;
+  padding: 6px 9px; }
+.ces-flow .step b.out { background: var(--navy); color: #fff; border-color: var(--navy); }
+.ces-flow .step i { color: var(--gold-ink); font-style: normal; font-size: 12px; }
+.lean-page .ces-flow-cap { text-transform: uppercase; letter-spacing: .14em; font-size: 10px;
+  font-weight: 800; color: var(--muted-warm); margin: 30px 0 0; }
+.ces-cta { margin-top: 32px; }
+
+/* The product preview. Two real page renders, the cover in front and the
+   Proof Line page showing behind it, so the reader sees the actual artifact
+   rather than a device mockup. */
+.ces-shot { position: relative; padding: 8px 0 0 34px; }
+/* height:auto matters: the width and height attributes are presentation hints,
+   so without it the images render at their intrinsic 1165px height. */
+.ces-shot img { display: block; height: auto; border-radius: 3px; }
+.ces-shot .front { width: 100%; position: relative; z-index: 2;
+  box-shadow: 0 18px 40px rgba(15,35,71,.17), 0 2px 6px rgba(15,35,71,.10);
+  border: 1px solid rgba(15,35,71,.10); }
+.ces-shot .back { position: absolute; left: 0; top: 0; width: 78%; z-index: 1;
+  transform: rotate(-4deg); transform-origin: bottom left; opacity: .96;
+  box-shadow: 0 10px 26px rgba(15,35,71,.13); border: 1px solid rgba(15,35,71,.10); }
+.ces-shot .tag { position: absolute; right: 0; bottom: -26px; z-index: 3;
+  font-size: 10px; font-weight: 800; letter-spacing: .13em; text-transform: uppercase;
+  color: var(--muted-warm); }
+
+.ces-xform { display: grid; grid-template-columns: 1fr 34px 1.3fr; align-items: stretch;
+  border: 1px solid var(--line-warm); border-radius: 5px; overflow: hidden; margin-top: 34px; max-width: 760px; }
+.ces-xcol { padding: 18px 20px; }
+.ces-xcol--in { background: #F3EDE2; }
+.ces-xcol--out { background: var(--navy); }
+.ces-xlbl { text-transform: uppercase; letter-spacing: .14em; font-size: 10px; font-weight: 800;
+  color: var(--muted-warm); margin-bottom: 10px; }
+.ces-xcol--out .ces-xlbl { color: var(--gold); }
+.ces-xcol p { font-size: 14.5px; line-height: 1.75; margin: 0; }
+.ces-xcol--out p { color: #fff; }
+.ces-xarrow { display: flex; align-items: center; justify-content: center;
+  background: #F3EDE2; color: var(--gold-ink); font-size: 17px; }
+.ces-xnote { font-size: 13px; color: var(--muted-warm); margin-top: 12px; max-width: 760px; }
+
+@media (max-width: 860px) {
+  .ces-steps, .ces-two, .ces-about, .ces-hero-grid { grid-template-columns: 1fr; gap: 30px; }
+  .ces-sec { padding: 56px 0; }
+  .ces-xform { grid-template-columns: 1fr; }
+  .ces-xarrow { padding: 6px 0; transform: rotate(90deg); }
+  /* Stacked, the preview would fill the viewport, so it is capped and centred. */
+  .ces-hero-grid { grid-template-columns: 1fr; grid-template-areas: "copy" "shot" "cta"; row-gap: 36px; }
+  .ces-shot { max-width: 300px; margin: 0 auto; padding: 6px 0 0 26px; }
+  .ces-cta { margin-top: 0; }
+  .ces-shot .tag { bottom: -22px; }
+  .lean-btn.primary { width: 100%; }
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<nav>
+  <a href="index.html" class="nav-logo brand-lockup">
+    <span class="brand-primary">The Density Group</span>
+    <span class="brand-secondary">Capability Formation Advisory</span>
+    <span class="brand-tertiary">Founded by Temidayo Afonja</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="framework.html">Capability Formation</a></li>
+    <li><a href="work.html">Advisory</a></li>
+    <li><a href="executive-briefing.html">Executive Briefing</a></li>
+    <li><a href="case-studies.html">Evidence</a></li>
+    <li><a href="about.html">The Firm</a></li>
+    <li><a href="for-professionals.html">For Professionals</a></li>
+    <li><a href="executive-briefing.html#inquiry" class="nav-cta">Bring a Consequential Decision</a></li>
+  </ul>
+</nav>
+<main id="main" tabindex="-1">
+
+<div class="lean-page">
+
+<!-- HERO -->
+<section class="cd-hero">
+  <div class="lean-wrap">
+    <div class="ces-hero-grid">
+      <div class="ces-copy">
+        <span class="ces-badge fade-up delay-1">Free Career Accomplishment Tracker</span>
+        <h1 class="fade-up delay-2">Turn One Accomplishment Into Proof You Can Actually Use.</h1>
+        <p class="cd-sub fade-up delay-3">Turn one real piece of work into a clear evidence statement you can carry beyond your current job title. Set aside about 10 to 15 focused minutes.</p>
+        <p class="ces-flow-cap fade-up delay-3">What you will build</p>
+        <div class="ces-flow fade-up delay-3">
+          <span class="step"><b>Before</b></span>
+          <span class="step"><i aria-hidden="true">&rarr;</i><b>Your contribution</b></span>
+          <span class="step"><i aria-hidden="true">&rarr;</i><b>What changed</b></span>
+          <span class="step"><i aria-hidden="true">&rarr;</i><b class="out">What travels</b></span>
+        </div>
+      </div>
+      <div class="ces-shot fade-up delay-3">
+        <img class="back" src="/career-evidence-starter-inside.png" alt="" aria-hidden="true" width="900" height="1165" loading="eager">
+        <img class="front" src="/career-evidence-starter-cover.png" alt="The cover of the Career Evidence Starter, a six-page fillable PDF" width="900" height="1165" loading="eager">
+        <span class="tag">Six pages, fillable</span>
+      </div>
+      <div class="ces-cta fade-up delay-3"><a class="lean-btn primary" href="#get-the-starter">Get the Free Career Evidence Starter</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- RECOGNITION -->
+<section class="ces-sec">
+  <div class="lean-wrap">
+    <span class="lean-eyebrow">The problem</span>
+    <p class="ces-quote">You know you did meaningful work. But months later, can you still explain exactly what changed, what part was yours, and why another employer should care?</p>
+    <p>The details fade first. Then the numbers become hard to recover, your contribution blurs into the team's, and the language you used at the time stops making sense to anyone outside the company.</p>
+    <p>The Starter takes one accomplishment and turns it into an evidence statement while the work is still close enough to document accurately.</p>
+  </div>
+</section>
+
+<!-- WHAT YOU LEAVE WITH -->
+<section class="ces-sec ces-sec--paper">
+  <div class="lean-wrap">
+    <span class="lean-eyebrow">What you leave with</span>
+    <h2>Three things, in one focused sitting.</h2>
+    <ul class="ces-leave">
+      <li>One completed Career Evidence Entry, built from a real piece of your own work</li>
+      <li>One portable Proof Line you can adapt for a review, an interview or a conversation</li>
+      <li>One way to repeat the thinking on the next piece of work worth keeping</li>
+    </ul>
+    <p class="ces-time">Set aside about 10 to 15 focused minutes.</p>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="ces-sec">
+  <div class="lean-wrap">
+    <span class="lean-eyebrow">How it works</span>
+    <h2>Six prompts, one line at the end.</h2>
+    <div class="ces-steps">
+      <div class="ces-step">
+        <div class="n">1</div>
+        <h3>Choose one accomplishment</h3>
+        <p>A project, decision, problem, improvement or piece of work where something changed because you were involved.</p>
+      </div>
+      <div class="ces-step">
+        <div class="n">2</div>
+        <h3>Build the evidence</h3>
+        <p>What was true before, what you specifically contributed, what changed, and what evidence supports the account.</p>
+      </div>
+      <div class="ces-step">
+        <div class="n">3</div>
+        <h3>Write the Proof Line</h3>
+        <p>Strip out the internal language and put it in one sentence someone outside your company would understand.</p>
+      </div>
+    </div>
+
+    <div class="ces-xform">
+      <div class="ces-xcol ces-xcol--in">
+        <div class="ces-xlbl">Inside your company</div>
+        <p>Project Horizon<br>QBR<br>XYZ Workflow</p>
+      </div>
+      <div class="ces-xarrow" aria-hidden="true">&rarr;</div>
+      <div class="ces-xcol ces-xcol--out">
+        <div class="ces-xlbl">Outside your company</div>
+        <p>Cross-functional onboarding redesign<br>Operating review<br>Customer intake process</p>
+      </div>
+    </div>
+    <p class="ces-xnote">This is an example of the distinction, not a claim that those terms are equivalent in every workplace.</p>
+  </div>
+</section>
+
+<!-- WHAT IT IS / IS NOT -->
+<section class="ces-sec ces-sec--paper">
+  <div class="lean-wrap">
+    <div class="ces-two">
+      <div>
+        <h3>What it is</h3>
+        <ul>
+          <li>A free six-page fillable PDF</li>
+          <li>One quick capture, six prompts and one Proof Line builder</li>
+          <li>A permission checklist so nothing you are not allowed to keep goes into it</li>
+          <li>Yours to save, reuse and print</li>
+        </ul>
+      </div>
+      <div>
+        <h3>What it is not</h3>
+        <ul>
+          <li>Not a resume-writing service</li>
+          <li>Not a job-search course</li>
+          <li>It does not tell you whether to stay in or leave your job</li>
+          <li>It is not the full Keep the Proof system, and does not include the reusable Career Evidence Ledger</li>
+        </ul>
+      </div>
+    </div>
+    <div class="ces-ladder">
+      <p><strong>This Starter</strong> proves one thing. <strong>Keep the Proof</strong>, the paid 60-minute system, builds and maintains the whole record. <strong>The Capability Formation Field Kit</strong> reads what your current position is building and whether it travels.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="ces-sec">
+  <div class="lean-wrap">
+    <span class="lean-eyebrow">Who made this</span>
+    <div class="ces-about">
+      <img src="/images/temidayo-gold-ivory.png" alt="Temidayo Afonja" width="172" height="172">
+      <div>
+        <h2 style="font-size:clamp(24px,3vw,32px);">Temidayo Afonja</h2>
+        <p>Career Portability Advisor and founder of The Density Group, a Capability Formation advisory firm. Her work draws on nearly two decades of practice across Big 4 consulting, global life sciences and high-growth technology.</p>
+        <p>The Starter uses the same method as Keep the Proof, the paid Career Evidence System, applied to a single piece of work.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CAPTURE -->
+<section class="cd-capture" id="get-the-starter">
+  <div class="lean-wrap wide">
+    <span class="lean-eyebrow">Get the free Starter</span>
+    <h2>Get the Free Career Evidence Starter.</h2>
+    <p>A six-page fillable PDF. Enter your name and email and it is sent to you.</p>
+    <div class="cd-grid">
+      <div class="cd-useful">
+        <div class="cd-label">Most useful when</div>
+        <ul>
+          <li>A review, promotion case or interview is coming and your examples are scattered.</li>
+          <li>You did the work but can no longer reconstruct what changed or which part was yours.</li>
+          <li>Your strongest examples only make sense inside your current company.</li>
+          <li>You want to capture the evidence before you urgently need it.</li>
+        </ul>
+      </div>
+
+      <div class="cd-card">
+        <form class="cd-form" id="cdForm" novalidate>
+          <div class="cd-field">
+            <label for="cdFirst">First name</label>
+            <input id="cdFirst" name="first_name" type="text" autocomplete="given-name" required aria-required="true" aria-describedby="cdFirstError">
+            <p class="cd-error" id="cdFirstError"></p>
+          </div>
+
+          <div class="cd-field">
+            <label for="cdEmail">Email</label>
+            <input id="cdEmail" name="email" type="email" autocomplete="email" required aria-required="true" aria-describedby="cdEmailError">
+            <p class="cd-error" id="cdEmailError"></p>
+          </div>
+
+          <div class="cd-field">
+            <label for="cdSituation">What is coming up for you? (optional)</label>
+            <textarea id="cdSituation" name="current_situation" autocomplete="off" aria-describedby="cdSituationNote"></textarea>
+            <p class="cd-note" id="cdSituationNote">Optional. Please leave out anything confidential about your employer or colleagues.</p>
+          </div>
+
+          <!-- Honeypot. Hidden from sight, from the tab order and from assistive
+               technology. A submission that fills it is refused server side. -->
+          <div class="cd-trap" aria-hidden="true">
+            <label for="cdRef">Starter reference</label>
+            <input id="cdRef" name="starter_reference" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <!-- Two separate purposes, two separate choices, both unchecked.
+               Delivery consent authorises the requested resource and nothing
+               else. Guidance consent is optional and is the only thing that
+               enrols anyone in ongoing marketing. Requesting the Starter
+               never implies the second. -->
+          <div class="cd-field">
+            <div class="cd-consent">
+              <input id="cdConsentDelivery" name="delivery_consent" type="checkbox" required aria-required="true" aria-describedby="cdConsentError">
+              <label for="cdConsentDelivery">Send me the Career Evidence Starter by email.</label>
+            </div>
+            <p class="cd-error" id="cdConsentError"></p>
+            <div class="cd-consent">
+              <input id="cdConsentGuidance" name="guidance_consent" type="checkbox">
+              <label for="cdConsentGuidance">Also send me occasional Capability Formation guidance from Temidayo Afonja. I can unsubscribe at any time.</label>
+            </div>
+            <p class="cd-consent-note">The first is needed to send you the Starter. The second is optional, and leaving it unticked does not affect the first. <a href="privacy.html">Privacy</a></p>
+          </div>
+
+          <button class="cd-submit" id="cdSubmit" type="submit">Get the Free Career Evidence Starter</button>
+
+          <!-- Live regions. Both are present in the DOM from first paint, which
+               is what makes an assistive technology announce a later change to
+               them. role=status for success, role=alert for failure. -->
+          <p class="cd-error" id="cdFormError" role="alert" aria-live="assertive"></p>
+          <p class="visually-hidden" id="cdStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESULT. Revealed only after the server confirms the subscription. -->
+<section class="cd-result" id="cdResult" tabindex="-1" aria-labelledby="cdResultTitle">
+  <div class="lean-wrap">
+    <span class="lean-eyebrow">Your Starter is on its way</span>
+    <h2 id="cdResultTitle">Pick your one accomplishment now.</h2>
+    <p class="cd-lede">The Starter is on its way to your inbox. While you wait, choose the single piece of work you will use. Pick something where at least one of these is true, and do not try to reconstruct your whole career.</p>
+    <div class="cd-q">
+      <ul>
+        <li><span class="n">1</span><span class="t">Something changed because you were involved.</span></li>
+        <li><span class="n">2</span><span class="t">You exercised judgment, not just activity.</span></li>
+        <li><span class="n">3</span><span class="t">You solved or prevented a meaningful problem.</span></li>
+      </ul>
+    </div>
+    <div class="cd-step" id="cdStep"></div>
+  </div>
+</section>
+
+</div>
+
+</main>
+
+<footer>
+  <div>
+    <div class="footer-logo">The Density Group</div>
+    <div class="footer-tagline">The Density Group is a Capability Formation advisory firm founded by Temidayo Afonja.</div>
+  </div>
+  <div class="footer-cols">
+    <div class="footer-col">
+      <div class="footer-col-label">The Firm</div>
+      <ul class="footer-links">
+        <li><a href="framework.html">Capability Formation</a></li>
+        <li><a href="work.html">Advisory</a></li>
+        <li><a href="executive-briefing.html">Executive Briefing</a></li>
+        <li><a href="case-studies.html">Evidence</a></li>
+        <li><a href="speaking.html">Speaking</a></li>
+        <li><a href="about.html">The Firm</a></li>
+        <li><a href="/organizational-diagnostic">Organizational Capability Formation Scan</a></li>
+        <li><a href="executive-briefing.html#inquiry">Bring a Consequential Decision</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-label">For Professionals</div>
+      <ul class="footer-links">
+        <li><a href="/diagnostic">Free Diagnostic</a></li>
+        <li><a href="for-professionals.html">Career Growth Assessment</a></li>
+        <li><a href="book.html">Books &amp; Tools</a></li>
+        <li><a href="https://temidayoafonja.substack.com" target="_blank" rel="noopener">Writing</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-copy">&copy; 2026 The Density Group LLC &middot; Capability Formation &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></div>
+</footer>
+
+<script>
+/* ═══════════════════════════════════════════════════════════════════════════
+   CAREER DECISION EVIDENCE CHECK
+   /career-evidence-starter is the permanent URL. The public name of the free resource
+   is the Career Evidence Starter. "Career Decisions" is never a product.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ─────────────────────────────────────────────────────────────────────────
+   1. THE ONE CONFIGURABLE BLOCK: THE CURRENT NEXT STEP
+   ─────────────────────────────────────────────────────────────────────────
+   This is the only place the next step is written. Nothing below reads an
+   offer name, price, date or URL from anywhere else, and no offer copy is
+   repeated elsewhere on this page. To change what the page offers next, edit
+   this block only. The permanent URL never changes.
+
+   How the choice is made: if "available_until" is still in the future, the
+   page shows "current". Once that moment passes it shows "fallback", with no
+   deploy and no edit required. Both are compared against the visitor's clock,
+   which is the honest reading of "has the event happened yet" for a visitor.
+
+   available_until is a fully qualified ISO 8601 instant, written with the
+   Central offset that is actually in force on the day of the session:
+
+       2026-09-02T18:45:00-05:00
+
+   That is 6:45 PM Central on Wednesday 2 September 2026, the end of the
+   session. September is Central Daylight Time, which is UTC minus 5, so the
+   same instant is 23:45 UTC. Writing the offset rather than a Z, and rather
+   than a date on its own, is deliberate:
+
+     - A date-only string ("2026-09-02") is parsed as UTC midnight, which would
+       retire the offer at 7:00 PM Central on the first of September, a whole
+       day early for the audience it is aimed at.
+     - Date.parse of a fully qualified instant and Date.now() are both absolute.
+       Neither depends on the visitor's local timezone, on the browser's guess
+       at a timezone, or on whatever timezone the Netlify host runs in. Every
+       visitor on earth switches from the Lightning Lesson to the Field Kit at
+       the same moment, and that moment is the one written above.
+
+   The session date itself is written once only, in current.body just below.
+
+   To retire the Lightning Lesson early, set "current" to null.
+   ───────────────────────────────────────────────────────────────────────── */
+/* The version of the privacy policy in force when a consent is recorded. It is
+   the "Last updated" date at the top of privacy.html, and the two must always
+   move together in the same commit. A consent record whose policy version
+   predates the wording the person actually read is not evidence of anything.
+   Raised from 2026-08-12 when the policy was revised to distinguish delivery of
+   a requested resource from ongoing guidance. */
+var POLICY_VERSION = "2026-08-18";
+
+var NEXT_STEP = {
+  current: {
+    id: "lightning-lesson",
+    available_until: "2026-09-02T18:45:00-05:00",
+    label: "One next step",
+    title: "How to Tell If Your Career Is Stalling",
+    body: "A free 45 minute Lightning Lesson on Wednesday, September 2, 2026, 6:00 to 6:45 PM CT. Three signs your role may have stopped building your capability and future options, even while you are performing well.",
+    cta: "Register free",
+    href: "https://maven.com/p/5162f2/how-to-tell-if-your-career-is-stalling",
+    external: true
+  },
+  fallback: {
+    id: "field-kit",
+    label: "One next step",
+    title: "The Capability Formation Field Kit",
+    body: "The complete private system for reading your capability position on your own. Collect your own evidence, calibrate without a room, and rerun the process as your situation changes. $150, instant digital access.",
+    cta: "Explore the Field Kit",
+    href: "https://temidayoafonja.com/fieldkit",
+    external: false
+  }
+};
+
+function currentNextStep() {
+  var c = NEXT_STEP.current;
+  if (!c || !c.available_until) return NEXT_STEP.fallback;
+  var until = Date.parse(c.available_until);
+  // A malformed timestamp must not silently retire a live offer, and must not
+  // silently keep a dead one alive either. Falling back is the safe direction:
+  // the Field Kit is always a valid next step, the Lightning Lesson is not.
+  if (isNaN(until)) return NEXT_STEP.fallback;
+  return Date.now() < until ? c : NEXT_STEP.fallback;
+}
+
+/* Handle for the single pending retirement timer, so a re-render can never
+   leave a second one running. */
+var nextStepTimer = null;
+
+/* The offer has to retire itself while the page is open, not only when the page
+   is loaded. Someone who opens this at 6:30 PM Central on the day and leaves the
+   tab sitting there must not still be looking at a live registration link at
+   6:46. One timer, armed for exactly the remaining milliseconds, is enough:
+   there is no polling, and nothing runs at all once the fallback is showing,
+   because the fallback has no expiry to wait for.
+
+   setTimeout tops out at a 32-bit signed millisecond delay, roughly 24.8 days.
+   A longer wait is clamped, fires a harmless re-render that reaches the same
+   conclusion, and re-arms. */
+var MAX_TIMEOUT_MS = 2147483647;
+
+function scheduleNextStepRetirement(step) {
+  if (nextStepTimer) { clearTimeout(nextStepTimer); nextStepTimer = null; }
+  if (!step || !step.available_until) return;
+  var until = Date.parse(step.available_until);
+  if (isNaN(until)) return;
+  var remaining = until - Date.now();
+  if (remaining <= 0) return;
+  nextStepTimer = setTimeout(renderNextStep, Math.min(remaining, MAX_TIMEOUT_MS));
+}
+
+function renderNextStep() {
+  var step = currentNextStep();
+  var slot = document.getElementById("cdStep");
+  if (!slot) return;
+  /* Re-render replaces the slot rather than appending to it, so the swap at the
+     cutoff cannot leave the retired offer stacked above the new one. */
+  while (slot.firstChild) slot.removeChild(slot.firstChild);
+  var label = document.createElement("div");
+  label.className = "cd-step-label";
+  label.textContent = step.label;
+  var h3 = document.createElement("h3");
+  h3.textContent = step.title;
+  var p = document.createElement("p");
+  p.textContent = step.body;
+  var a = document.createElement("a");
+  a.className = "lean-btn light";
+  a.href = step.href;
+  a.textContent = step.cta;
+  a.setAttribute("data-step", step.id);
+  if (step.external) { a.target = "_blank"; a.rel = "noopener"; }
+  slot.appendChild(label); slot.appendChild(h3); slot.appendChild(p); slot.appendChild(a);
+  scheduleNextStepRetirement(step);
+}
+
+/* ─────────────────────────────────────────────────────────────────────────
+   2. ATTRIBUTION
+   ─────────────────────────────────────────────────────────────────────────
+   Two touches are kept, never one.
+
+     first     the campaign visit that introduced this person to the page
+     current   the most recent explicit campaign visit in the same session
+
+   Why both. A viewer can find the page from one video, leave it open, come back
+   later in the same session from a different video, and only then subscribe.
+   Keeping only the first attributes the subscriber to a video they had already
+   moved on from. Keeping only the last erases the video that actually did the
+   work of finding them. Neither is the whole truth on its own, so both are
+   recorded and the first is never overwritten.
+
+   What counts as an explicit campaign visit: a page load whose query string
+   carries at least one campaign key, or a video slug. A bare return to
+   /career-evidence-starter with no parameters is not a new campaign visit and changes
+   nothing, because the visitor did not arrive from anywhere new.
+
+   Nothing is invented. "source" is whatever the visitor actually arrived with,
+   from ?source= or ?utm_source=. It is never defaulted to youtube. If no
+   parameter is present the value stays empty and the record says so.
+
+   The originating video is read from ?v= or ?video=, which is what the channel
+   links will carry.
+   ─────────────────────────────────────────────────────────────────────────── */
+var ATTR_KEYS = ["utm_source","utm_medium","utm_campaign","utm_content","utm_term","source"];
+var ATTR_STORE_KEY = "cd_attribution";
+
+/* Reads this page load as a single touch, and reports whether it carried any
+   explicit campaign information at all. */
+function readTouch() {
+  var params;
+  try { params = new URLSearchParams(window.location.search); } catch (e) { params = null; }
+
+  var touch = {};
+  var hasCampaign = false;
+  if (params) {
+    ATTR_KEYS.forEach(function (k) {
+      var v = params.get(k);
+      if (v) { touch[k] = String(v).slice(0, 200); hasCampaign = true; }
+    });
+    var video = params.get("video") || params.get("v");
+    if (video) { touch.video_slug = String(video).slice(0, 200); hasCampaign = true; }
+  }
+  touch.landing_page = (window.location.pathname + window.location.search).slice(0, 300);
+  touch.referrer = String(document.referrer || "").slice(0, 300);
+  touch.seen_at = new Date().toISOString();
+  return { touch: touch, hasCampaign: hasCampaign };
+}
+
+function readAttribution() {
+  var stored = null;
+  try {
+    var raw = window.sessionStorage.getItem(ATTR_STORE_KEY);
+    if (raw) stored = JSON.parse(raw);
+  } catch (e) { stored = null; }
+  if (!stored || typeof stored !== "object") stored = null;
+
+  var read = readTouch();
+
+  if (!stored || !stored.first) {
+    /* Nothing recorded yet, so this visit is both the first and the current
+       touch, campaign parameters or not. Recording it either way is what makes
+       first_landing_page meaningful for a visitor who arrived direct. */
+    stored = { first: read.touch, current: read.touch };
+  } else if (read.hasCampaign) {
+    /* An explicit new campaign visit moves the current touch only. The first
+       touch is never overwritten, for any reason. */
+    stored.current = read.touch;
+  }
+  if (!stored.current) stored.current = stored.first;
+
+  try { window.sessionStorage.setItem(ATTR_STORE_KEY, JSON.stringify(stored)); } catch (e) { /* private mode */ }
+  return stored;
+}
+
+var ATTRIBUTION = readAttribution();
+
+/* Readers used for analytics properties only. The submission sends the whole
+   first and current objects, untouched. */
+function attrOf(which, key) {
+  return (ATTRIBUTION && ATTRIBUTION[which] && ATTRIBUTION[which][key]) || "";
+}
+function analyticsSource()   { return attrOf("current", "source") || attrOf("current", "utm_source") || "direct"; }
+function analyticsCampaign() { return attrOf("current", "utm_campaign") || "none"; }
+function analyticsVideo()    { return attrOf("current", "video_slug") || "none"; }
+
+/* ─────────────────────────────────────────────────────────────────────────
+   3. ANALYTICS
+   ─────────────────────────────────────────────────────────────────────────
+   Five events, and only five:
+
+     Career Decisions Form Viewed        the form itself entered the viewport
+     Career Decisions Form Started       first real interaction with a field
+     Career Decisions Subscribed         the server confirmed a subscription
+     Career Decisions Submit Failed      a submission did not result in one
+     Career Decisions Next Step Clicked  the single next step was clicked
+
+   Form Viewed is not the page view. The automatic Plausible pageview from the
+   script in the head already counts arrivals, and is deliberately not fired
+   again here. Form Viewed counts the narrower thing worth knowing: how many
+   arrivals actually got as far as seeing the form.
+
+   "Career Decisions Subscribed" fires in one place only: after the server has
+   returned a confirmed subscription. A click, a validation failure, a rejected
+   request and a network error can never reach it.
+
+   No property on any event may carry personal information. Names, email
+   addresses and the free-text decision are never passed to track(), and a test
+   asserts that every property value is drawn from the small non-sensitive set
+   below: next_step, source, campaign, video_slug, reason, from.
+   ───────────────────────────────────────────────────────────────────────── */
+function track(name, props) {
+  try { if (window.plausible) window.plausible(name, props ? { props: props } : undefined); } catch (e) { /* analytics never breaks the page */ }
+}
+
+/* ───────────────────────────────────────────────────────────────────────── */
+document.addEventListener("DOMContentLoaded", function () {
+  renderNextStep();
+
+  var form = document.getElementById("cdForm");
+  var firstEl = document.getElementById("cdFirst");
+  var emailEl = document.getElementById("cdEmail");
+  var situationEl = document.getElementById("cdSituation");
+  var deliveryEl = document.getElementById("cdConsentDelivery");
+  var guidanceEl = document.getElementById("cdConsentGuidance");
+  var trapEl = document.getElementById("cdRef");
+  var submitEl = document.getElementById("cdSubmit");
+  var formError = document.getElementById("cdFormError");
+  var statusEl = document.getElementById("cdStatus");
+  var result = document.getElementById("cdResult");
+  if (!form) return;
+
+  /* Form viewed. Fires once, when the form itself scrolls into view, which is
+     a different and more useful number than the page view. Where
+     IntersectionObserver is missing the event simply fires on load rather than
+     never, so the funnel is never silently short by a browser. */
+  var viewed = false;
+  function markViewed() {
+    if (viewed) return;
+    viewed = true;
+    track("Career Decisions Form Viewed", { source: analyticsSource(), campaign: analyticsCampaign(), video_slug: analyticsVideo() });
+  }
+  if (window.IntersectionObserver) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) { markViewed(); io.disconnect(); }
+      });
+    }, { threshold: 0.25 });
+    io.observe(form);
+  } else {
+    markViewed();
+  }
+
+  /* Form start. Fires once, on the first real interaction with a field. */
+  var started = false;
+  function markStarted() {
+    if (started) return;
+    started = true;
+    track("Career Decisions Form Started", { source: analyticsSource(), campaign: analyticsCampaign(), video_slug: analyticsVideo() });
+  }
+  [firstEl, emailEl, situationEl, deliveryEl, guidanceEl].forEach(function (el) {
+    if (el) el.addEventListener("focus", markStarted, { once: true });
+  });
+
+  /* Inline validation. The same lenient address check the diagnostic uses, so
+     an unusual but valid address is never rejected. */
+  function validEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+
+  function setError(el, msgEl, message) {
+    if (message) {
+      el.setAttribute("aria-invalid", "true");
+      msgEl.textContent = message;
+    } else {
+      el.removeAttribute("aria-invalid");
+      msgEl.textContent = "";
+    }
+  }
+
+  /* Clear a field's error as soon as the visitor starts fixing it. */
+  [[firstEl, "cdFirstError"], [emailEl, "cdEmailError"]].forEach(function (pair) {
+    pair[0].addEventListener("input", function () {
+      if (pair[0].getAttribute("aria-invalid") === "true") setError(pair[0], document.getElementById(pair[1]), "");
+    });
+  });
+  deliveryEl.addEventListener("change", function () {
+    if (deliveryEl.getAttribute("aria-invalid") === "true") setError(deliveryEl, document.getElementById("cdConsentError"), "");
+  });
+
+  function validate() {
+    var problems = [];
+    var firstMsg = document.getElementById("cdFirstError");
+    var emailMsg = document.getElementById("cdEmailError");
+    var consentMsg = document.getElementById("cdConsentError");
+
+    if (!firstEl.value.trim()) { setError(firstEl, firstMsg, "Please enter your first name."); problems.push(firstEl); }
+    else setError(firstEl, firstMsg, "");
+
+    if (!emailEl.value.trim()) { setError(emailEl, emailMsg, "Please enter your email address."); problems.push(emailEl); }
+    else if (!validEmail(emailEl.value.trim())) { setError(emailEl, emailMsg, "Please enter a valid email address."); problems.push(emailEl); }
+    else setError(emailEl, emailMsg, "");
+
+    /* Delivery consent is required, because the Starter is delivered by
+       email and there is nothing to send it to without it. Guidance consent is
+       never required and is never validated: leaving it unticked is a complete,
+       valid submission, and must never block or nag. */
+    if (!deliveryEl.checked) { setError(deliveryEl, consentMsg, "Please tick the first box so the Starter can be emailed to you."); problems.push(deliveryEl); }
+    else setError(deliveryEl, consentMsg, "");
+
+    return problems;
+  }
+
+  /* Failure reasons are short non sensitive codes. No address, no message body
+     and no server detail is ever put into an analytics property. */
+  function fail(reasonCode, visibleMessage) {
+    formError.textContent = visibleMessage;
+    submitEl.disabled = false;
+    submitEl.textContent = "Send me the Starter";
+    track("Career Decisions Submit Failed", { reason: reasonCode });
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    formError.textContent = "";
+
+    var problems = validate();
+    if (problems.length) {
+      problems[0].focus();
+      track("Career Decisions Submit Failed", { reason: "validation" });
+      return;
+    }
+
+    submitEl.disabled = true;
+    submitEl.textContent = "Sending...";
+    statusEl.textContent = "Sending your Starter request.";
+
+    /* Two consents, recorded independently. Each carries its own timestamp and
+       its own policy version, and the guidance stamps are sent only when that
+       box was actually ticked, so an absent stamp is unambiguous evidence that
+       consent was not given rather than evidence that it was not recorded. */
+    var now = new Date().toISOString();
+    var guidance = guidanceEl.checked === true;
+    var payload = {
+      first_name: firstEl.value.trim(),
+      email: emailEl.value.trim(),
+      current_situation: situationEl.value.trim(),
+      delivery_consent: deliveryEl.checked === true,
+      delivery_consent_timestamp: now,
+      delivery_policy_version: POLICY_VERSION,
+      guidance_consent: guidance,
+      guidance_consent_timestamp: guidance ? now : "",
+      guidance_policy_version: guidance ? POLICY_VERSION : "",
+      starter_reference: trapEl ? trapEl.value : "",
+      attribution: ATTRIBUTION
+    };
+
+    fetch("/api/career-evidence-starter-subscribe", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    })
+    .then(function (res) {
+      return res.json().catch(function () { return {}; }).then(function (data) { return { status: res.status, ok: res.ok, data: data }; });
+    })
+    .then(function (r) {
+      /* Success is one thing only: the server confirmed the subscription. */
+      if (r.ok && r.data && r.data.ok === true) {
+        track("Career Decisions Subscribed", {
+          source: analyticsSource(),
+          campaign: analyticsCampaign(),
+          video_slug: analyticsVideo()
+        });
+        showResult();
+        return;
+      }
+      if (r.status === 429) { fail("rate_limited", "That is a lot of requests from this connection. Please wait a few minutes and try again."); return; }
+      if (r.status === 503) { fail("not_configured", "The Starter is not accepting signups just yet. Please try again shortly."); return; }
+      if (r.status === 400 || r.status === 422) { fail("rejected", "That submission could not be accepted. Please check your details and try again."); return; }
+      fail("server_error", "Something went wrong on our side. Please try again in a moment.");
+    })
+    .catch(function () {
+      fail("network_error", "We could not reach the server. Please check your connection and try again.");
+    });
+  });
+
+  function showResult() {
+    /* Announce first, then reveal, then move focus. The status region is
+       populated before the section is shown so the announcement is not
+       competing with the layout change. */
+    statusEl.textContent = "Success. Your Starter is on its way, and the three questions are now shown below.";
+    result.classList.add("is-open");
+    submitEl.textContent = "Sent";
+    submitEl.disabled = true;
+    [firstEl, emailEl, situationEl, deliveryEl, guidanceEl].forEach(function (el) { el.disabled = true; });
+    result.focus();
+    if (result.scrollIntoView) result.scrollIntoView({ block: "start", behavior: "smooth" });
+  }
+
+  /* ── Outbound click tracking ──
+     Delegated, so no extra links are added to the page for the sake of
+     measurement. The next step slot, and the Books and Tools link that is
+     already in the shared footer, are matched by destination. */
+  document.addEventListener("click", function (e) {
+    var a = e.target && e.target.closest ? e.target.closest("a[href]") : null;
+    if (!a) return;
+    var href = a.getAttribute("href") || "";
+    var step = a.getAttribute("data-step");
+    if (step) {
+      track("Career Decisions Next Step Clicked", {
+        next_step: step,
+        source: analyticsSource(),
+        campaign: analyticsCampaign(),
+        video_slug: analyticsVideo()
+      });
+    }
+    if (/\/fieldkit\/?$/.test(href)) track("Field Kit Click", { from: "career-evidence-starter" });
+    if (/(^|\/)book(\.html)?$/.test(href)) track("Books And Tools Click", { from: "career-evidence-starter" });
+  });
+});
+</script>
+
+<script defer src="/nav.js"></script>
+</body>
+</html>
