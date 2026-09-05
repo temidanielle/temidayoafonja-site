@@ -4,7 +4,76 @@ Series-level record of publication gates, open decisions and outstanding
 assets. Kept here so individual video packages do not have to be reopened to
 carry a cross-cutting note.
 
-Last updated: 3 September 2026.
+Last updated: 4 September 2026.
+
+---
+
+## FINAL STATUS — Videos 1–8
+
+Recorded at Temidayo's instruction on 4 September 2026, after she independently
+checked `Videos_1-7_FINAL_ALL_CONTENT.zip`
+(`b102266af3bca256453d7a09f04a3e3fa1b60838509e462b5d4f488adb72516d`) and
+accepted it as the authoritative production handoff.
+
+**VIDEOS 1–7 — CURRENT AUTHORITATIVE PRODUCTION HANDOFF COMPLETE**
+
+| Videos | Status |
+|---|---|
+| 1–5 | **FINAL + LOCKED v5.1.1** |
+| 6 | **FINAL + LOCKED v2.1** |
+| 7 | **FINAL + LOCKED v2.0** |
+| 8 | **FINAL + LOCKED v2.2.1** — research-alignment precision pass complete, U.S. English QA complete |
+
+Confirmed production state, as accepted:
+
+- authoritative recording packages complete
+- long-form recording scripts complete
+- four standalone Shorts per video complete
+- editor briefs complete
+- main and reveal slide decks complete
+- descriptions and publishing materials complete
+- thumbnails locked
+- YouTube banner locked
+- checksums verified
+
+**Videos 1–8 are not to be reopened editorially** unless Temidayo explicitly
+requests it, or later audience evidence gives a reason to revisit something.
+**Strategy and content preparation for Videos 1–8 is COMPLETE.**
+
+### Next phase — PRODUCTION
+
+1. recording
+2. editor handoff
+3. final edit QA
+4. YouTube upload and publishing QA
+5. replace working chapter timestamps with final-cut timestamps
+6. verify CTA links, end screens, cards, pinned comments and playlist routing
+
+### Two notes carried forward, not objections
+
+Recorded so the production phase is not surprised by them. Neither reopens any
+script, and neither is a content change.
+
+**Thumbnail and banner assets.** The status above is Temidayo's; she holds
+assets and approvals outside this repository. What this repository itself
+contains, last verified on 3 September 2026, is narrower: Videos 3, 4 and 5
+carry approved final thumbnail PNGs; Video 1's selection between the archived
+Option A and Option B artwork was still open; Video 2's stored artwork still
+carried the superseded `YOUR SKILLS ARE STALLING` line; Video 6's stored files
+were explicitly superseded by a pending Canva export; Video 7 had no thumbnail
+asset on file. No YouTube banner asset has been verified in this repository. If
+the locked finals live only in Canva or in Temidayo's local files, that is
+expected — but the repository is not the place to fetch them from at upload
+time.
+
+**Residual British spellings in editor-facing material.** Left uncorrected by
+instruction, since the September 4 pass was export-and-verify only. Recording
+scripts and public-facing copy are clean across all seven videos. Outstanding:
+`travelling` in Video 2's `README_FINAL.txt`; `judgement` in both Video 5 editor
+briefs; the `authorised` family in Video 6 and Video 7's editor briefs and
+`README_FINAL.txt`. These are visible to the editor, never to a viewer. Closing
+them would change four package ZIPs and their hashes, so it needs an explicit
+instruction.
 
 ---
 
@@ -1849,7 +1918,10 @@ them would destroy the record. They are correctly preserved.
 
 ## Open items — deferred to a separate thumbnail review
 
-Both are held open at Temidayo's instruction and are not blocking any package.
+**Superseded on 4 September 2026** by the FINAL STATUS section above, in which
+Temidayo records thumbnails as locked. Retained as the historical record of what
+this repository held and why. Both were held open at her instruction and neither
+blocked any package.
 
 1. **Video 1 thumbnail.** The approved production direction is
    `DON'T START FROM ZERO`. No new thumbnail decision is to be inferred beyond
