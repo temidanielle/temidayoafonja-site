@@ -10,8 +10,34 @@ Last updated: 7 September 2026.
 
 ## Videos 4 and 5 — FINAL / RECORD-READY
 
-Locked September 7, 2026 by Temidayo, after the targeted evidence pass. **No
-further editorial or structural changes unless a factual error is discovered.**
+**Approved and locked September 7, 2026 by Temidayo**, after the evidence pass
+and the addition of the dedicated Short-form scripts. **No further editorial,
+script, framework, visual-map, CTA, Watch Next or Shorts changes unless an
+actual factual or production defect is discovered.**
+
+The three package checksums recorded below are definitive. Every earlier
+checksum for these packages is superseded.
+
+### What was approved
+
+Both long-form scripts. The four dedicated vertical Short scripts for each
+video. The existing `Short_Form_Candidate_Map.docx` files, retained as fallback
+extraction maps from the horizontal recordings. The revised record-together one
+pager. The recording order and the session estimate below. The full-screen
+motion-graphic rule for long form and short form alike. The restrained
+sound-design approach. And the Watch Next rule: full screen, final visual, no
+return to camera.
+
+### Approved recording order
+
+1. Video 4 long form
+2. Video 5 long form
+3. Break, and switch the rig to vertical 9:16
+4. All eight dedicated Shorts
+
+Approximately **1 hour 50 minutes to 2 hours 25 minutes** in total, including
+resets, the break and the rig change. The eight Shorts do not fit inside the
+original 60 to 75 minute long-form estimate, and this figure says so.
 
 | | Video 4 | Video 5 |
 |---|---|---|
