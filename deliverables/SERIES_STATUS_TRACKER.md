@@ -8,6 +8,72 @@ Last updated: 7 September 2026.
 
 ---
 
+## Videos 4 and 5 — FINAL / RECORD-READY
+
+Locked September 7, 2026 by Temidayo, after the targeted evidence pass. **No
+further editorial or structural changes unless a factual error is discovered.**
+
+| | Video 4 | Video 5 |
+|---|---|---|
+| Title | Why Nobody Can Tell What You're Actually Good At | How to Explain a Career That Looks All Over the Place |
+| Thumbnail | THEY CAN'T READ YOU | YOUR CAREER MAKES SENSE |
+| Runtime | **18:29** | **13:13** |
+| Structure | The One-Line Test: Claim, Spine, Receipts | Chapters, Spine, Next direction |
+| CTA | Post your one-line Claim. No product ask. | Keep the Proof, temidayoafonja.com/keep-the-proof |
+| Watch Next | How to Change Jobs Without Starting Your Career Over | Why Nobody Can Tell What You're Actually Good At |
+| Package | `deliverables/new-video-4/` | `deliverables/new-video-5/` |
+
+Video 4's working Claim, approved:
+
+> "I get brought in when the evidence is incomplete and an important decision
+> still has to be made."
+
+### Locked archives
+
+| Archive | SHA-256 |
+|---|---|
+| `Video_4_FINAL_Recording_Package.zip` | `dd0544e3f9266f4209d6f9b109ead2449df5221a25a7bceab6a22b2169f5fb77` |
+| `Video_5_FINAL_Recording_Package.zip` | `8fb80d7f09f8016981b26d99bed03766e5234a86a7fba01a71701d0ecb6d8a24` |
+| `Videos_4_5_FINAL.zip` | `01c440d419e0b6ca8c9f8aba7885a6cfff33db41fdfaf0997553ea7a28ff85ff` |
+
+### Approved in the evidence pass
+
+The corrected Receipts, the removal of the unsupported "forty seconds" claim,
+the scoped Bureau of Labor Statistics inference, and the Spine consistency
+correction across Video 5's three scripts.
+
+### The Riverside production grammar, locked
+
+| Element | Treatment |
+|---|---|
+| Short text callout | May appear over Temidayo on camera |
+| Framework, comparison, multi-point idea | TRUE FULL-SCREEN motion graphic |
+| B-roll, video cutaway | TRUE FULL-SCREEN visual break |
+| CTA | TRUE FULL SCREEN |
+| Watch Next | TRUE FULL SCREEN, final visual, **no camera return after it** |
+
+TRUE FULL SCREEN means the entire 16:9 canvas, with Temidayo not visible behind
+the visual or around its edges, no smaller visual floating over camera footage,
+the visual treated as its own scene, her audio continuing underneath, then a
+clean cut back to her. Sound stays at roughly four to seven meaningful accents.
+
+### One correction made at lock time
+
+The build maps and Co-Creator prompts told the editor to cut back to camera
+after every full-screen scene, including Watch Next. That contradicted the
+approved rule that Watch Next is the final visual. Corrected in the build map,
+the per-scene prompts and the master prompt for both videos; the nine
+non-final scenes still return to camera as before. No script, frame, packaging
+or runtime changed.
+
+### Outstanding before publication
+
+Thumbnail artwork for both videos. Briefs are written; artwork is made in Canva
+and is not in this repository. Neither video publishes without the approved
+export.
+
+---
+
 ## September 7, 2026 roadmap revision
 
 Two new videos enter at slots 4 and 5. The former Video 4 is retired as a slot,

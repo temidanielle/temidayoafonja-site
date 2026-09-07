@@ -1,7 +1,8 @@
 # New Videos 4 and 5 — build source
 
-Source for the September 7, 2026 packages. Both are complete and ready to
-record. The finished packages live in `deliverables/new-video-4/` and
+Source for the September 7, 2026 packages. **Both are LOCKED and
+RECORD-READY**, locked by Temidayo on September 7 after the evidence pass. No
+further editorial or structural changes unless a factual error is discovered. The finished packages live in `deliverables/new-video-4/` and
 `deliverables/new-video-5/`; the combined archive is
 `deliverables/Videos_4_5_FINAL.zip`.
 

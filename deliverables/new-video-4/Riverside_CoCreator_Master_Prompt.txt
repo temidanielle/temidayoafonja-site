@@ -41,7 +41,9 @@ on the graphic is the message and captions cover it.
 Do not use generic corporate stock footage. No stock handshakes, no stock
 offices, no stock laptops.
 
-The Watch Next card is the final visual of the video. Nothing comes after it.
+The Watch Next card is the final visual of the video. Do not cut back to me
+after it, do not add an outro or a sting, and do not place anything after it.
+The video ends on that card.
 
 ------------------------------------------------------------------------------
 PER-SCENE PROMPTS, ONE UPLOAD AT A TIME
@@ -58,7 +60,7 @@ V01   01_Interesting_Background_Hard_To_Place.png
   filling the entire 16:9 canvas. Do not place it in a box over my camera
   footage and do not leave me visible behind it or around the edges.
   Headline first. Left column at 0.6s. Right column at 1.4s. Bottom line at
-  2.4s. Hold it for 6 to 8 seconds, then cut cleanly back to me. Suppress
+  2.4s. Hold it for 6 to 8 seconds. Then cut cleanly back to me. Suppress
   captions for the full hold."
 
 ------------------------------------------------------------------------------
@@ -72,7 +74,7 @@ V02   02_Category_Compression.png
   filling the entire 16:9 canvas. Do not place it in a box over my camera
   footage and do not leave me visible behind it or around the edges.
   Headline. Then the three rows one at a time, 0.8s apart. Hold on the third
-  row. Hold it for 9 to 11 seconds, then cut cleanly back to me. Suppress
+  row. Hold it for 9 to 11 seconds. Then cut cleanly back to me. Suppress
   captions. The right column is the payoff and must not be covered."
 
 ------------------------------------------------------------------------------
@@ -86,7 +88,7 @@ V03   03_The_One_Line_Test.png
   leave me visible behind it or around the edges. Three lines in sequence,
   0.7s apart, then the closing line at 3.0s. This frame returns briefly at
   each section change. Hold it for 8 to 10 seconds on first appearance, 3
-  seconds on each return., then cut cleanly back to me. Suppress captions
+  seconds on each return.. Then cut cleanly back to me. Suppress captions
   for the full hold."
 
 ------------------------------------------------------------------------------
@@ -101,7 +103,7 @@ V04   04_Claim_Resume_List_Vs_Problem.png
   not leave me visible behind it or around the edges. Left column first,
   held alone for 3s so it lands as the wrong answer. Right column at 3.5s.
   Bottom line at 5.5s. Hold it for 11 to 13 seconds. This is the longest
-  hold in the video., then cut cleanly back to me. Suppress captions. Both
+  hold in the video.. Then cut cleanly back to me. Suppress captions. Both
   columns are read on screen."
 
 ------------------------------------------------------------------------------
@@ -117,7 +119,7 @@ V05   05_Spine_Many_Rooms_One_Kind_Of_Work.png
   slightly overlapping, deliberately more than the eye can sort, held 1.5s.
   Then all three dim to 40 percent and the bottom line arrives at full
   strength at 3.0s. The dimming is the point: the list recedes, the pattern
-  lands. Hold it for 10 to 12 seconds, then cut cleanly back to me. Suppress
+  lands. Hold it for 10 to 12 seconds. Then cut cleanly back to me. Suppress
   captions. The bottom line is the reveal."
 
 ------------------------------------------------------------------------------
@@ -131,7 +133,7 @@ V06   06_Receipts_Three_Proofs.png
   footage and do not leave me visible behind it or around the edges. One row
   at a time, 1.2s apart, each held long enough to read the scope wording.
   Hold it for 12 to 14 seconds. Each spoken Receipt now carries its own
-  context, so this frame stays up longer than the others., then cut cleanly
+  context, so this frame stays up longer than the others.. Then cut cleanly
   back to me. Suppress captions. The scope qualifiers must be readable."
 
 ------------------------------------------------------------------------------
@@ -145,7 +147,7 @@ V07   07_Practical_Test_History_Or_Problem.png
   place it in a box over my camera footage and do not leave me visible
   behind it or around the edges. Headline, then the two outcomes 1.0s apart,
   then the exact sentence at the bottom at 3.0s and held. Hold it for 9 to
-  11 seconds, then cut cleanly back to me. Suppress captions. The bottom
+  11 seconds. Then cut cleanly back to me. Suppress captions. The bottom
   line is the takeaway sentence."
 
 ------------------------------------------------------------------------------
@@ -158,7 +160,7 @@ V08   08_Failure_Modes.png
   image must be the only visual filling the entire 16:9 canvas. Do not place
   it in a box over my camera footage and do not leave me visible behind it
   or around the edges. Three lines 0.8s apart. The limits line arrives last,
-  at 3.4s, and holds alone for two beats. Hold it for 9 to 11 seconds, then
+  at 3.4s, and holds alone for two beats. Hold it for 9 to 11 seconds. Then
   cut cleanly back to me. Suppress captions on the limits line in
   particular."
 
@@ -171,8 +173,8 @@ V09   09_CTA_Write_Your_Claim_Below.png
   OR REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This image must be the
   only visual filling the entire 16:9 canvas. Do not place it in a box over
   my camera footage and do not leave me visible behind it or around the
-  edges. Headline, then the question at 1.2s. Hold it for 8 to 10 seconds,
-  then cut cleanly back to me. Suppress captions."
+  edges. Headline, then the question at 1.2s. Hold it for 8 to 10 seconds.
+  Then cut cleanly back to me. Suppress captions."
 
 ------------------------------------------------------------------------------
 V10   10_Watch_Next_Change_Jobs.png
@@ -184,7 +186,9 @@ V10   10_Watch_Next_Change_Jobs.png
   entire 16:9 canvas. Do not place it in a box over my camera footage and do
   not leave me visible behind it or around the edges. Static. No animation
   on the final card. Hold it for 10 to 14 seconds, through the outro lines
-  and past the last word., then cut cleanly back to me. Suppress captions."
+  and past the last word.. This is the FINAL visual of the video. Do not cut
+  back to me after it. Do not add anything after it. The video ends on this
+  card. Suppress captions."
 
 ------------------------------------------------------------------------------
 SOUND DESIGN

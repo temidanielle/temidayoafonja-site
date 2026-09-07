@@ -42,7 +42,9 @@ caption or every cut. Sound effects stay quieter than my voice.
 
 Do not use generic corporate stock footage.
 
-The Watch Next card is the final visual of the video. Nothing comes after it.
+The Watch Next card is the final visual of the video. Do not cut back to me
+after it, do not add an outro or a sting, and do not place anything after it.
+The video ends on that card.
 
 ------------------------------------------------------------------------------
 PER-SCENE PROMPTS, ONE UPLOAD AT A TIME
@@ -58,7 +60,7 @@ V01   01_Chronology_Dump_Vs_Selected_Story.png
   visual filling the entire 16:9 canvas. Do not place it in a box over my
   camera footage and do not leave me visible behind it or around the edges.
   Headline, left column at 0.8s, right column at 1.8s, bottom line at 3.0s.
-  Hold it for 7 to 9 seconds, then cut cleanly back to me. Suppress
+  Hold it for 7 to 9 seconds. Then cut cleanly back to me. Suppress
   captions."
 
 ------------------------------------------------------------------------------
@@ -71,7 +73,7 @@ V02   02_One_Structure_Chapters_Spine_Next.png
   it in a box over my camera footage and do not leave me visible behind it
   or around the edges. Three lines 0.7s apart, closing line at 3.0s. Returns
   as a short callout above each script section. Hold it for 8 to 10 seconds
-  first time, 3 seconds on each return., then cut cleanly back to me.
+  first time, 3 seconds on each return.. Then cut cleanly back to me.
   Suppress captions."
 
 ------------------------------------------------------------------------------
@@ -86,7 +88,7 @@ V03   03_Three_Real_Moments.png
   leave me visible behind it or around the edges. All three rows visible.
   The active row is at full strength, the other two dimmed, so the same
   frame marks all three sections. Hold it for 4 to 6 seconds at each section
-  change., then cut cleanly back to me. Suppress captions."
+  change.. Then cut cleanly back to me. Suppress captions."
 
 ------------------------------------------------------------------------------
 V04   04_Twenty_Second_Structure.png
@@ -98,7 +100,7 @@ V04   04_Twenty_Second_Structure.png
   16:9 canvas. Do not place it in a box over my camera footage and do not
   leave me visible behind it or around the edges. Three lines 0.9s apart.
   Bottom line at 3.6s. Hold it for 9 to 11 seconds. Long enough to write
-  down., then cut cleanly back to me. Suppress captions. This frame gets
+  down.. Then cut cleanly back to me. Suppress captions. This frame gets
   copied."
 
 ------------------------------------------------------------------------------
@@ -111,7 +113,7 @@ V05   05_Ninety_Second_Structure.png
   filling the entire 16:9 canvas. Do not place it in a box over my camera
   footage and do not leave me visible behind it or around the edges. Three
   lines 1.0s apart. Bottom line at 4.0s. Hold it for 11 to 13 seconds. The
-  longest hold in the video., then cut cleanly back to me. Suppress
+  longest hold in the video.. Then cut cleanly back to me. Suppress
   captions. This frame gets paused and copied."
 
 ------------------------------------------------------------------------------
@@ -123,7 +125,7 @@ V06   06_Coherence_Is_Not_A_Perfect_Plan.png
   image must be the only visual filling the entire 16:9 canvas. Do not place
   it in a box over my camera footage and do not leave me visible behind it
   or around the edges. Headline, supporting line at 1.4s. Hold it for 5 to 7
-  seconds, then cut cleanly back to me. Suppress captions."
+  seconds. Then cut cleanly back to me. Suppress captions."
 
 ------------------------------------------------------------------------------
 V07   07_Objection_Structure.png
@@ -135,7 +137,7 @@ V07   07_Objection_Structure.png
   SCENE. This image must be the only visual filling the entire 16:9 canvas.
   Do not place it in a box over my camera footage and do not leave me
   visible behind it or around the edges. Four columns 0.7s apart. Bottom
-  line at 3.6s and held. Hold it for 10 to 12 seconds, then cut cleanly back
+  line at 3.6s and held. Hold it for 10 to 12 seconds. Then cut cleanly back
   to me. Suppress captions."
 
 ------------------------------------------------------------------------------
@@ -147,7 +149,7 @@ V08   08_Story_Explains_Proof_Supports.png
   This image must be the only visual filling the entire 16:9 canvas. Do not
   place it in a box over my camera footage and do not leave me visible
   behind it or around the edges. Headline, two columns 0.9s apart, bottom
-  line at 2.8s. Hold it for 7 to 9 seconds, then cut cleanly back to me.
+  line at 2.8s. Hold it for 7 to 9 seconds. Then cut cleanly back to me.
   Suppress captions."
 
 ------------------------------------------------------------------------------
@@ -160,7 +162,7 @@ V09   09_CTA_Keep_The_Proof.png
   visual filling the entire 16:9 canvas. Do not place it in a box over my
   camera footage and do not leave me visible behind it or around the edges.
   Logomark, then the headline at 0.6s, then the URL at 2.0s. Hold it for 9
-  to 11 seconds. Hold through the whole CTA line., then cut cleanly back to
+  to 11 seconds. Hold through the whole CTA line.. Then cut cleanly back to
   me. Suppress captions. Never cover the web address."
 
 ------------------------------------------------------------------------------
@@ -173,7 +175,9 @@ V10   10_Watch_Next_Why_Nobody_Can_Tell.png
   entire 16:9 canvas. Do not place it in a box over my camera footage and do
   not leave me visible behind it or around the edges. Static. No animation
   on the final card. Hold it for 10 to 14 seconds, through the outro and
-  past the last word., then cut cleanly back to me. Suppress captions."
+  past the last word.. This is the FINAL visual of the video. Do not cut
+  back to me after it. Do not add anything after it. The video ends on this
+  card. Suppress captions."
 
 ------------------------------------------------------------------------------
 SOUND DESIGN

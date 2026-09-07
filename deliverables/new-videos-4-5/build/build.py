@@ -272,12 +272,17 @@ def build_map(n, out):
                        "must not be visible behind it or around its edges. Her "
                        "audio continues underneath. Cut cleanly back to her "
                        "afterwards.", "    "), ""]
+        final = "Watch_Next" in f["file"]
         L += ["  PURPOSE", wrap(f["purpose"], "    "), "",
               "  WHAT APPEARS FIRST, AND THE REVEAL ORDER",
               wrap(f["reveal"], "    "), "",
               "  APPROXIMATE HOLD", "    " + f["hold"], "",
               "  RETURN TO CAMERA",
-              wrap("Cut back to Temidayo on the line immediately after the "
+              wrap("NONE. This is the final visual of the video. Do not cut "
+                   "back to Temidayo after this card, do not add an outro "
+                   "sting, and do not place anything after it. The video ends "
+                   "on this frame." if final else
+                   "Cut back to Temidayo on the line immediately after the "
                    "trigger passage ends. Do not dissolve the graphic away "
                    "while she is already back on screen.", "    "), "",
               "  CAPTIONS", wrap(f["captions"], "    "), "",
@@ -340,10 +345,16 @@ def cocreator(n, out):
                    "image must be the only visual filling the entire 16:9 "
                    "canvas. Do not place it in a box over my camera footage and "
                    "do not leave me visible behind it or around the edges. "
-                   "%s Hold it for %s, then cut cleanly back to me. %s\""
+                   "%s Hold it for %s. %s %s\""
                    % (first.get(f["id"], "the matching line"),
                       f["script"].strip('"')[:150].rstrip() + "...",
-                      f["reveal"], f["hold"], f["captions"]), "  ")]
+                      f["reveal"], f["hold"],
+                      "This is the FINAL visual of the video. Do not cut back "
+                      "to me after it. Do not add anything after it. The video "
+                      "ends on this card."
+                      if "Watch_Next" in f["file"]
+                      else "Then cut cleanly back to me.",
+                      f["captions"]), "  ")]
     L += ["", "-" * W, SOUND_PLAN, "", "=" * W, "END OF PROMPT SHEET", "=" * W]
     p = os.path.join(out, "Riverside_CoCreator_Master_Prompt.txt")
     open(p, "w").write("\n".join(L))
@@ -365,7 +376,7 @@ Captions: suppress captions while a full-screen graphic is on screen. The text o
 
 Do not use generic corporate stock footage. No stock handshakes, no stock offices, no stock laptops.
 
-The Watch Next card is the final visual of the video. Nothing comes after it.""",
+The Watch Next card is the final visual of the video. Do not cut back to me after it, do not add an outro or a sting, and do not place anything after it. The video ends on that card.""",
 5: """You are editing a horizontal 16:9 talking-head video called "How to Explain a Career That Looks All Over the Place". It runs about 13 minutes. The speaker is Temidayo Afonja, on camera for most of it. Please follow these rules exactly.
 
 MOST IMPORTANT RULE. Every motion graphic, every B-roll shot, the CTA card and the Watch Next card must be TRUE FULL SCREEN. That means: HIDE OR REMOVE THE CAMERA VISUALLY DURING THAT SCENE. The graphic must be the only visual filling the entire 16:9 canvas. Do not put the graphic in a smaller box floating over my camera footage. Do not leave me visible behind it. Do not leave me visible around the sides or edges. Treat each graphic as its own scene. My spoken audio continues underneath it. Then cut cleanly back to me. This has gone wrong before, so please check every graphic against this rule.
@@ -380,7 +391,7 @@ Pacing: two to four B-roll moments, three to five punch-ins, and four to seven r
 
 Do not use generic corporate stock footage.
 
-The Watch Next card is the final visual of the video. Nothing comes after it.""",
+The Watch Next card is the final visual of the video. Do not cut back to me after it, do not add an outro or a sting, and do not place anything after it. The video ends on that card.""",
 }
 
 
