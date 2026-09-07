@@ -1,0 +1,218 @@
+==============================================================================
+QA REPORT
+Video 4  ·  Why Nobody Can Tell What You're Actually Good At
+September 7, 2026
+==============================================================================
+
+25 checks run. 25 passed, 0 not applicable, 0 failed.
+
+  [PASS] Research document actually read
+         Video_4___Outlier_Research__Concept.docx, 6,601 words, 247
+         paragraphs and 7 tables, read in full before the scripts
+         were finalized. Findings applied are listed below.
+
+  [PASS] Video 4 Claim is the locked version
+         I get brought in when the evidence is incomplete and an
+         important decision still has to be made.
+
+  [PASS] System, not a list
+         One named framework, THE ONE-LINE TEST: Claim, Spine,
+         Receipts, and nothing else.
+
+  [PASS] Video 4 and Video 5 are differentiated
+         Video 4 is why they cannot read you. Video 5 is what you
+         say. Video 5 states the boundary out loud and does not
+         repeat Video 4's diagnosis.
+
+  [PASS] Insider truth plus consequence in the opening
+         The cold open names the sorting mechanism and its cost
+         before it promises anything.
+
+  [PASS] No abstract failed terminology in title or thumbnail
+         Checked against: non-linear, nonlinear, portability,
+         capability formation, transferable skills, reinvention
+
+  [PASS] No invented quotations or comment text
+         No YouTube comment is quoted anywhere; the research states
+         comment sections were not reliably fetchable and quotes
+         none. No Reddit paraphrase appears on screen or in the
+         script as a quotation. The "I'm a better X because Y"
+         formula is described by shape, without attribution to a
+         specific post and without a vote count.
+
+  [PASS] No vote counts cited
+         The research warns that 325, 157 and 51 belong to three
+         different threads and that mixing them is a factual error.
+         No vote count appears in either script, description, or
+         Short.
+
+  [PASS] Sourced claims carry their source
+         The three Receipts each carry their scope qualifier. The 30
+         percent retention and $2M turnover figures remain excluded
+         per the standing series rule.
+
+  [PASS] No chronological résumé dump
+         The domains appear once, out of order, as evidence after the
+         viewer has been taught what to look for. The résumé version
+         is spoken once, deliberately, as the wrong answer being
+         demonstrated.
+
+  [PASS] Cat with nine lives appears once, verbally only
+         1 occurrence in the script. No cat imagery in any frame,
+         thumbnail or B-roll direction.
+
+  [PASS] No recruiter grievance framing
+         The script states twice that the people reading the career
+         are usually making a defensible call on the information in
+         front of them.
+
+  [PASS] Framework arrives before the final quarter
+         Framework named at 6:33, Claim teaching from 7:08, in a
+         18:04 video.
+
+  [PASS] Viewer leaves with a usable sentence
+         The video ends with the viewer having written one Claim, and
+         the CTA is to post it.
+
+  [PASS] Full-screen motion graphic requirement stated
+         Present in the build map, the Co-Creator master prompt,
+         every per-scene prompt, the run of show and the frame notes.
+
+  [PASS] Full-screen B-roll requirement stated
+         Stated in the visual grammar block, which appears in the
+         build map, the master prompt and the run of show.
+
+  [PASS] No Temidayo-behind-visual treatment recommended
+         No artifact recommends an overlay for anything except short
+         text callouts of a few words.
+
+  [PASS] Sound design guidance included
+         A restrained 4 to 7 accent plan, plus the five strongest
+         manual placements if automation fails.
+
+  [PASS] CTA correct
+         Write your one-line Claim in the comments.  One ask only, no
+         product CTA.
+
+  [PASS] Watch Next correct and final
+         How to Change Jobs Without Starting Your Career Over. The
+         Watch Next card is stated as the final visual in the build
+         map, the master prompt and the run of show.
+
+  [PASS] U.S. English
+         Script and every visual frame swept against 26 British
+         stems.
+
+  [PASS] No em dashes
+         0 in script, 0 in frames.
+
+  [PASS] All PNGs 1920x1080
+         10 files, sizes observed: 1920x1080
+
+  [PASS] Frame geometry clean
+         Measured against the rendered DOM: no overlapping text,
+         nothing below the caption line at y=860, nothing inside the
+         120px safe margin.
+
+  [PASS] Runtime within target
+         2621 spoken words, about 18:04 at 145 wpm. Target 17:00 to
+         18:30.
+
+------------------------------------------------------------------------------
+THE FULL-SCREEN RULE, STATED HERE TOO
+------------------------------------------------------------------------------
+
+TRUE FULL SCREEN means all of the following:
+
+  - the visual occupies the ENTIRE 16:9 canvas
+  - Temidayo is NOT visible moving behind it
+  - Temidayo is NOT visible around the sides or the edges
+  - there is NO smaller graphic or video rectangle floating over her camera
+    footage
+  - the visual is its own scene, not an overlay
+  - her spoken audio continues underneath
+  - then cut cleanly back to her
+
+The instruction to give Co-Creator is not "make the graphic full screen." It is:
+
+  "HIDE / REMOVE THE CAMERA VISUALLY DURING THIS SCENE. The motion graphic or
+   B-roll must be the only visual filling the entire 16:9 canvas."
+
+This has been a recurring Riverside failure. State it on every scene.
+
+------------------------------------------------------------------------------
+WHAT THE RESEARCH CHANGED IN THIS PACKAGE
+------------------------------------------------------------------------------
+
+  •  The white-space beat was added. The research names the "I'm a better X
+  because Y" formula the single highest-signal solution in the whole corpus,
+  and names the gap in it: it tells you the shape of the sentence but not
+  how to find your Y, and it breaks when you have five Ys. The script now
+  describes the formula by shape, credits it as good, and positions the
+  Claim as what it lacks. It is not quoted and no vote count is attached.
+
+  •  The Spine frame was rebuilt. The research is explicit that narrating
+  all seven domains in order performs the exact problem the video diagnoses.
+  The frame now shows them out of chronological order, arriving fast and
+  deliberately unsortable, then dimming so the single sentence lands.
+
+  •  The word transfer does not appear in this script. The research's own
+  pressure test warns that Video 4 will drift into Video 1 territory unless
+  the operative word is translate.
+
+  •  The pre-record test was promoted into the run of show. The research
+  names it as the condition that decides whether the video works or
+  collapses into an essay: read the Claim to three people outside the field
+  first.
+
+  •  The thumbnail brief carries the literalism warning verbatim in
+  substance: THEY CAN'T READ YOU invites reading glasses and documents, and
+  the stronger image is a human misreading.
+
+  •  The measurable success signal from the research is recorded: judge this
+  on average view duration and on whether viewers post their own Claims, not
+  on week-one views.
+
+------------------------------------------------------------------------------
+OPEN ITEMS AND JUDGMENT CALLS
+------------------------------------------------------------------------------
+
+  •  THE COLD OPEN DEPARTS FROM THE RESEARCH'S RECOMMENDED HOOK,
+  DELIBERATELY. The research recommends Hook A, which states flatly that
+  "interesting background" is not a compliment. The production brief rules
+  that framing too absolute and forbids it. The brief is the newer
+  instruction, so the script acknowledges that the phrase is sometimes
+  genuine and then turns. This costs a little sharpness and buys accuracy.
+  If you would rather have the research's version, the first four paragraphs
+  are the only thing that changes.
+
+  •  THE THIRD THUMBNAIL OPTION CONFLICTS WITH THE SCRIPT. The research
+  ranks "Interesting Background" Is Not a Compliment as the most shareable
+  package. It is recorded in the thumbnail brief for completeness, but it
+  cannot be used against this script without also restoring the absolute
+  framing the brief rejected.
+
+  •  THE RESEARCH DOCUMENT REFERS TO TEMIDAYO AS HE AND HIM THROUGHOUT.
+  Every artifact in this repository uses she and her, including the live
+  site. The packages follow the repository. Worth correcting in the research
+  file so it does not propagate.
+
+  •  NO MISREAD STORY WAS INVENTED. The research asks for one move told in
+  full where Temidayo was clearly misread, with the room's wrong conclusion
+  made vivid. No such scene is documented anywhere in this repository, so
+  none was written. The cost beat instead uses what is supported: that she
+  could not answer the question herself for years. If a real misread moment
+  exists, it would strengthen the video and can be dropped into the story
+  section without disturbing anything else.
+
+  •  THE THIRD RECEIPT IS THE WEAKEST FIT FOR THE CLAIM. Onboarding and the
+  post-acquisition integration both sit squarely on incomplete evidence plus
+  a decision. The 1,000+ managers figure is a reach and scale claim rather
+  than a judgment-under-uncertainty claim. It is defensible and it is
+  operator-verified, but it supports the Claim less directly than the other
+  two. Flagged rather than swapped, because swapping it would mean either
+  broadening the Claim or using evidence that is not on file.
+
+==============================================================================
+END OF QA REPORT
+==============================================================================

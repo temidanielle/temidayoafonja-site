@@ -1,5 +1,12 @@
 # YouTube Roadmap — CURRENT FORWARD SOURCE OF TRUTH
 
+> **Superseded in part, September 7, 2026.** Two new videos enter at slots 4
+> and 5, the former Video 4 is retired as a slot, and Videos 5 to 8 shift down
+> by one. This roadmap's standing rule that Videos 1 to 5 must not be rebuilt on
+> research grounds is superseded for slots 4 and 5 only. The full renumbering
+> table is in `deliverables/SERIES_STATUS_TRACKER.md` under "September 7, 2026
+> roadmap revision". Everything else in this roadmap stands.
+
 ## The authoritative file
 
     Capability_Formation_YouTube_Roadmap_1-30_v5.1_Research_Aligned_FINAL.docx

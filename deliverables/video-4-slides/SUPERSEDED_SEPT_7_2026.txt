@@ -1,0 +1,20 @@
+SUPERSEDED  -  September 7, 2026
+
+This folder holds "How to Explain Your Career Change", which was Video 4 until
+the September 7, 2026 roadmap revision.
+
+THAT ROADMAP SLOT IS RETIRED. The video is not renumbered and is not scheduled.
+
+Video 4 is now:
+    Why Nobody Can Tell What You're Actually Good At
+    Thumbnail: THEY CAN'T READ YOU
+    Package: deliverables/new-video-4/
+
+Everything in this folder is retained as historical source material. It is not
+current, it is not the production package, and its Watch Next card, description
+and CTA map all refer to the pre-September-7 sequence. Do not record from it and
+do not publish it without an explicit new decision from Temidayo.
+
+The v5.1.1 recording package and its checksums remain byte-identical and
+untouched, so the archive is verifiable. Nothing here was edited to make this
+notice true.

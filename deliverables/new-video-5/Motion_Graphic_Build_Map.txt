@@ -1,0 +1,474 @@
+==============================================================================
+MOTION GRAPHIC BUILD MAP
+Video 5  ·  How to Explain a Career That Looks All Over the Place
+==============================================================================
+
+Motion graphics are the hero visual treatment for this video. The support deck
+and the PNGs are recording references, branded design guidance and backup
+assets. They are not meant to make the finished video a slide presentation.
+
+------------------------------------------------------------------------------
+THE RULE THAT MATTERS MOST
+------------------------------------------------------------------------------
+
+TRUE FULL SCREEN means all of the following:
+
+  - the visual occupies the ENTIRE 16:9 canvas
+  - Temidayo is NOT visible moving behind it
+  - Temidayo is NOT visible around the sides or the edges
+  - there is NO smaller graphic or video rectangle floating over her camera
+    footage
+  - the visual is its own scene, not an overlay
+  - her spoken audio continues underneath
+  - then cut cleanly back to her
+
+The instruction to give Co-Creator is not "make the graphic full screen." It is:
+
+  "HIDE / REMOVE THE CAMERA VISUALLY DURING THIS SCENE. The motion graphic or
+   B-roll must be the only visual filling the entire 16:9 canvas."
+
+This has been a recurring Riverside failure. State it on every scene.
+
+------------------------------------------------------------------------------
+VISUAL GRAMMAR
+------------------------------------------------------------------------------
+
+  SHORT TEXT CALLOUT                         May appear over Temidayo on camera.
+  FRAMEWORK, COMPARISON, MULTI-POINT IDEA    TRUE FULL-SCREEN motion graphic.
+  B-ROLL, VIDEO CUTAWAY                      TRUE FULL-SCREEN visual break.
+  CTA                                        TRUE FULL SCREEN.
+  WATCH NEXT                                 TRUE FULL SCREEN, and the final visual of the video.
+
+------------------------------------------------------------------------------
+SCENES
+------------------------------------------------------------------------------
+
+==============================================================================
+V01   01_Chronology_Dump_Vs_Selected_Story.png
+==============================================================================
+
+  SCRIPT TRIGGER (approx 0:43)
+    "So here's the rule this whole video runs on. Stop explaining your
+    career in order."
+
+  TREATMENT
+    Full-screen motion graphic
+
+  PURPOSE
+    Names the failure mode in the first minute and sets the rule the rest
+    of the video follows.
+
+  WHAT APPEARS FIRST, AND THE REVEAL ORDER
+    Headline, left column at 0.8s, right column at 1.8s, bottom line at
+    3.0s.
+
+  APPROXIMATE HOLD
+    7 to 9 seconds
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends. Do not dissolve the graphic away while she is already back on
+    screen.
+
+  CAPTIONS
+    Suppress captions.
+
+  SOUND
+    One accent on the right column.
+
+  VISUAL HIERARCHY AND BRAND
+    Deep navy #112345, warm cream #F5F1E8, muted gold #C9A84C. Montserrat
+    for display, DM Sans for body. Gold eyebrow and hairline at the top
+    left, then the headline, then the content. Numbered badges in gold.
+    Large type only. Motion is fade, slide and gentle scale. No bouncing,
+    spinning, aggressive zooms or constant animation.
+
+==============================================================================
+V02   02_One_Structure_Chapters_Spine_Next.png
+==============================================================================
+
+  SCRIPT TRIGGER (approx 2:06)
+    "Chapters. Spine. Next direction."
+
+  TREATMENT
+    Full-screen motion graphic
+
+  PURPOSE
+    The only structure in the video. It returns above each of the three
+    scripts.
+
+  WHAT APPEARS FIRST, AND THE REVEAL ORDER
+    Three lines 0.7s apart, closing line at 3.0s. Returns as a short
+    callout above each script section.
+
+  APPROXIMATE HOLD
+    8 to 10 seconds first time, 3 seconds on each return.
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends. Do not dissolve the graphic away while she is already back on
+    screen.
+
+  CAPTIONS
+    Suppress captions.
+
+  SOUND
+    Three ascending accents, one resolve.
+
+  VISUAL HIERARCHY AND BRAND
+    Deep navy #112345, warm cream #F5F1E8, muted gold #C9A84C. Montserrat
+    for display, DM Sans for body. Gold eyebrow and hairline at the top
+    left, then the headline, then the content. Numbered badges in gold.
+    Large type only. Motion is fade, slide and gentle scale. No bouncing,
+    spinning, aggressive zooms or constant animation.
+
+==============================================================================
+V03   03_Three_Real_Moments.png
+==============================================================================
+
+  SCRIPT TRIGGER (approx 2:48)
+    Appears at each version change: "Version one. Twenty seconds."
+    "Version two. Ninety seconds." "Version three. The objection."
+
+  TREATMENT
+    Full-screen motion graphic
+
+  PURPOSE
+    Anchors each script to the actual sentence a viewer will hear in a
+    room.
+
+  WHAT APPEARS FIRST, AND THE REVEAL ORDER
+    All three rows visible. The active row is at full strength, the other
+    two dimmed, so the same frame marks all three sections.
+
+  APPROXIMATE HOLD
+    4 to 6 seconds at each section change.
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends. Do not dissolve the graphic away while she is already back on
+    screen.
+
+  CAPTIONS
+    Suppress captions.
+
+  SOUND
+    One accent as the active row brightens.
+
+  VISUAL HIERARCHY AND BRAND
+    Deep navy #112345, warm cream #F5F1E8, muted gold #C9A84C. Montserrat
+    for display, DM Sans for body. Gold eyebrow and hairline at the top
+    left, then the headline, then the content. Numbered badges in gold.
+    Large type only. Motion is fade, slide and gentle scale. No bouncing,
+    spinning, aggressive zooms or constant animation.
+
+==============================================================================
+V04   04_Twenty_Second_Structure.png
+==============================================================================
+
+  SCRIPT TRIGGER (approx 3:09)
+    "Here's the template. I ... and then your work pattern."
+
+  TREATMENT
+    Full-screen motion graphic
+
+  PURPOSE
+    The template is the deliverable. A viewer can fill this in while
+    watching.
+
+  WHAT APPEARS FIRST, AND THE REVEAL ORDER
+    Three lines 0.9s apart. Bottom line at 3.6s.
+
+  APPROXIMATE HOLD
+    9 to 11 seconds. Long enough to write down.
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends. Do not dissolve the graphic away while she is already back on
+    screen.
+
+  CAPTIONS
+    Suppress captions. This frame gets copied.
+
+  SOUND
+    Three soft accents.
+
+  VISUAL HIERARCHY AND BRAND
+    Deep navy #112345, warm cream #F5F1E8, muted gold #C9A84C. Montserrat
+    for display, DM Sans for body. Gold eyebrow and hairline at the top
+    left, then the headline, then the content. Numbered badges in gold.
+    Large type only. Motion is fade, slide and gentle scale. No bouncing,
+    spinning, aggressive zooms or constant animation.
+
+==============================================================================
+V05   05_Ninety_Second_Structure.png
+==============================================================================
+
+  SCRIPT TRIGGER (approx 4:48)
+    "Here's the template to fill in. Sentence one ..." through sentence
+    three.
+
+  TREATMENT
+    Full-screen motion graphic
+
+  PURPOSE
+    The second template, in the same shape as the first, so the viewer
+    sees it is one system and not three tricks.
+
+  WHAT APPEARS FIRST, AND THE REVEAL ORDER
+    Three lines 1.0s apart. Bottom line at 4.0s.
+
+  APPROXIMATE HOLD
+    11 to 13 seconds. The longest hold in the video.
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends. Do not dissolve the graphic away while she is already back on
+    screen.
+
+  CAPTIONS
+    Suppress captions. This frame gets paused and copied.
+
+  SOUND
+    Three soft accents, one resolve.
+
+  VISUAL HIERARCHY AND BRAND
+    Deep navy #112345, warm cream #F5F1E8, muted gold #C9A84C. Montserrat
+    for display, DM Sans for body. Gold eyebrow and hairline at the top
+    left, then the headline, then the content. Numbered badges in gold.
+    Large type only. Motion is fade, slide and gentle scale. No bouncing,
+    spinning, aggressive zooms or constant animation.
+
+==============================================================================
+V06   06_Coherence_Is_Not_A_Perfect_Plan.png
+==============================================================================
+
+  SCRIPT TRIGGER (approx 6:32)
+    "And do not pretend it was planned."
+
+  TREATMENT
+    Full-screen motion graphic
+
+  PURPOSE
+    Protects the video from teaching a rehearsed-sounding answer, and
+    gives the viewer permission not to have had a plan.
+
+  WHAT APPEARS FIRST, AND THE REVEAL ORDER
+    Headline, supporting line at 1.4s.
+
+  APPROXIMATE HOLD
+    5 to 7 seconds
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends. Do not dissolve the graphic away while she is already back on
+    screen.
+
+  CAPTIONS
+    Suppress captions.
+
+  SOUND
+    One low accent. No resolve.
+
+  VISUAL HIERARCHY AND BRAND
+    Deep navy #112345, warm cream #F5F1E8, muted gold #C9A84C. Montserrat
+    for display, DM Sans for body. Gold eyebrow and hairline at the top
+    left, then the headline, then the content. Numbered badges in gold.
+    Large type only. Motion is fade, slide and gentle scale. No bouncing,
+    spinning, aggressive zooms or constant animation.
+
+==============================================================================
+V07   07_Objection_Structure.png
+==============================================================================
+
+  SCRIPT TRIGGER (approx 7:54)
+    "Four parts. Honest context, briefly. The Spine. What the changes
+    built. Why the current direction follows."
+
+  TREATMENT
+    Full-screen motion graphic
+
+  PURPOSE
+    Gives a defensible shape for the hardest question, without teaching
+    apology or concealment.
+
+  WHAT APPEARS FIRST, AND THE REVEAL ORDER
+    Four columns 0.7s apart. Bottom line at 3.6s and held.
+
+  APPROXIMATE HOLD
+    10 to 12 seconds
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends. Do not dissolve the graphic away while she is already back on
+    screen.
+
+  CAPTIONS
+    Suppress captions.
+
+  SOUND
+    Four flat accents, one resolve on the bottom line.
+
+  VISUAL HIERARCHY AND BRAND
+    Deep navy #112345, warm cream #F5F1E8, muted gold #C9A84C. Montserrat
+    for display, DM Sans for body. Gold eyebrow and hairline at the top
+    left, then the headline, then the content. Numbered badges in gold.
+    Large type only. Motion is fade, slide and gentle scale. No bouncing,
+    spinning, aggressive zooms or constant animation.
+
+==============================================================================
+V08   08_Story_Explains_Proof_Supports.png
+==============================================================================
+
+  SCRIPT TRIGGER (approx 11:43)
+    "A story explains. Proof supports."
+
+  TREATMENT
+    Full-screen motion graphic
+
+  PURPOSE
+    Earns the CTA through the teaching instead of bolting it on.
+
+  WHAT APPEARS FIRST, AND THE REVEAL ORDER
+    Headline, two columns 0.9s apart, bottom line at 2.8s.
+
+  APPROXIMATE HOLD
+    7 to 9 seconds
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends. Do not dissolve the graphic away while she is already back on
+    screen.
+
+  CAPTIONS
+    Suppress captions.
+
+  SOUND
+    Two accents, one resolve.
+
+  VISUAL HIERARCHY AND BRAND
+    Deep navy #112345, warm cream #F5F1E8, muted gold #C9A84C. Montserrat
+    for display, DM Sans for body. Gold eyebrow and hairline at the top
+    left, then the headline, then the content. Numbered badges in gold.
+    Large type only. Motion is fade, slide and gentle scale. No bouncing,
+    spinning, aggressive zooms or constant animation.
+
+==============================================================================
+V09   09_CTA_Keep_The_Proof.png
+==============================================================================
+
+  SCRIPT TRIGGER (approx 12:20)
+    "It's at temidayoafonja.com/keep-the-proof, and it's linked below."
+
+  TREATMENT
+    Full screen
+
+    FULL-SCREEN REQUIREMENT: hide or remove the camera visually during
+    this scene. This graphic must be the only visual filling the entire
+    16:9 canvas. Temidayo must not be visible behind it or around its
+    edges. Her audio continues underneath. Cut cleanly back to her
+    afterwards.
+
+  PURPOSE
+    The single CTA, placed after the teaching that earns it.
+
+  WHAT APPEARS FIRST, AND THE REVEAL ORDER
+    Logomark, then the headline at 0.6s, then the URL at 2.0s.
+
+  APPROXIMATE HOLD
+    9 to 11 seconds. Hold through the whole CTA line.
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends. Do not dissolve the graphic away while she is already back on
+    screen.
+
+  CAPTIONS
+    Suppress captions. Never cover the web address.
+
+  SOUND
+    One warm accent on the URL.
+
+  VISUAL HIERARCHY AND BRAND
+    Deep navy #112345, warm cream #F5F1E8, muted gold #C9A84C. Montserrat
+    for display, DM Sans for body. Gold eyebrow and hairline at the top
+    left, then the headline, then the content. Numbered badges in gold.
+    Large type only. Motion is fade, slide and gentle scale. No bouncing,
+    spinning, aggressive zooms or constant animation.
+
+==============================================================================
+V10   10_Watch_Next_Why_Nobody_Can_Tell.png
+==============================================================================
+
+  SCRIPT TRIGGER (approx 12:45)
+    "Watch Why Nobody Can Tell What You're Actually Good At next."
+
+  TREATMENT
+    Full screen, final visual
+
+    FULL-SCREEN REQUIREMENT: hide or remove the camera visually during
+    this scene. This graphic must be the only visual filling the entire
+    16:9 canvas. Temidayo must not be visible behind it or around its
+    edges. Her audio continues underneath. Cut cleanly back to her
+    afterwards.
+
+  PURPOSE
+    Final visual. Right of frame kept clear for the YouTube end screen.
+
+  WHAT APPEARS FIRST, AND THE REVEAL ORDER
+    Static. No animation on the final card.
+
+  APPROXIMATE HOLD
+    10 to 14 seconds, through the outro and past the last word.
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends. Do not dissolve the graphic away while she is already back on
+    screen.
+
+  CAPTIONS
+    Suppress captions.
+
+  SOUND
+    None.
+
+  VISUAL HIERARCHY AND BRAND
+    Deep navy #112345, warm cream #F5F1E8, muted gold #C9A84C. Montserrat
+    for display, DM Sans for body. Gold eyebrow and hairline at the top
+    left, then the headline, then the content. Numbered badges in gold.
+    Large type only. Motion is fade, slide and gentle scale. No bouncing,
+    spinning, aggressive zooms or constant animation.
+
+------------------------------------------------------------------------------
+SOUND DESIGN
+
+Four to seven restrained accents across a long-form video. Not one per caption
+and not one per cut. Every accent sits clearly under Temidayo's voice.
+
+Use an accent only on:
+  - a hero motion graphic entering
+  - the framework reveal
+  - a numbered section advancing
+  - a comparison flipping from one side to the other
+  - a major text emphasis
+  - a meaningful visual change
+
+Palette: soft whoosh, subtle click, gentle pop, restrained impact, clean sweep.
+
+If Riverside cannot place these automatically, do not treat sound as a blocker.
+Place the strongest few by hand and ship. The manual placements are listed per
+video in the build map.
+
+------------------------------------------------------------------------------
+THE STRONGEST MANUAL SOUND PLACEMENTS, IF AUTOMATION FAILS
+------------------------------------------------------------------------------
+
+  1. Chapters, Spine, Next direction entering at about 1:31.
+  2. The 20-second template at about 2:50.
+  3. The 90-second template at about 4:29.
+  4. Story explains, proof supports at about 11:20.
+  5. The CTA card at about 11:40.
+
+==============================================================================
+END OF BUILD MAP
+==============================================================================

@@ -1,0 +1,200 @@
+==============================================================================
+RIVERSIDE CO-CREATOR MASTER PROMPT
+Video 5  ·  How to Explain a Career That Looks All Over the Place
+==============================================================================
+
+Paste the block below into Co-Creator. If Co-Creator only accepts one image
+and one instruction at a time, use the per-scene prompts further down instead,
+one upload at a time.
+
+------------------------------------------------------------------------------
+MASTER PROMPT
+------------------------------------------------------------------------------
+
+You are editing a horizontal 16:9 talking-head video called "How to Explain a
+Career That Looks All Over the Place". It runs about 13 minutes. The speaker
+is Temidayo Afonja, on camera for most of it. Please follow these rules
+exactly.
+
+MOST IMPORTANT RULE. Every motion graphic, every B-roll shot, the CTA card and
+the Watch Next card must be TRUE FULL SCREEN. That means: HIDE OR REMOVE THE
+CAMERA VISUALLY DURING THAT SCENE. The graphic must be the only visual filling
+the entire 16:9 canvas. Do not put the graphic in a smaller box floating over
+my camera footage. Do not leave me visible behind it. Do not leave me visible
+around the sides or edges. Treat each graphic as its own scene. My spoken
+audio continues underneath it. Then cut cleanly back to me. This has gone
+wrong before, so please check every graphic against this rule.
+
+The only visuals that may sit over my camera footage are short text callouts
+of a few words. Anything with a framework, a comparison, or more than one
+point in it goes full screen.
+
+I will upload ten images. Each one has a matching line in the script and a
+hold time. Bring the image up on that line, hold it, then return to me.
+
+Two of the images are templates the viewer will pause and copy: the 20-second
+structure and the 90-second structure. Hold those longer than the others and
+do not put captions over them.
+
+Pacing: two to four B-roll moments, three to five punch-ins, and four to seven
+restrained sound accents across the whole video. Do not add an effect on every
+caption or every cut. Sound effects stay quieter than my voice.
+
+Do not use generic corporate stock footage.
+
+The Watch Next card is the final visual of the video. Nothing comes after it.
+
+------------------------------------------------------------------------------
+PER-SCENE PROMPTS, ONE UPLOAD AT A TIME
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+V01   01_Chronology_Dump_Vs_Selected_Story.png
+------------------------------------------------------------------------------
+
+  "Use this image at approximately 0:43, when I say: So here's the rule this
+  whole video runs on. Stop explaining your career in order.... HIDE OR
+  REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This image must be the only
+  visual filling the entire 16:9 canvas. Do not place it in a box over my
+  camera footage and do not leave me visible behind it or around the edges.
+  Headline, left column at 0.8s, right column at 1.8s, bottom line at 3.0s.
+  Hold it for 7 to 9 seconds, then cut cleanly back to me. Suppress
+  captions."
+
+------------------------------------------------------------------------------
+V02   02_One_Structure_Chapters_Spine_Next.png
+------------------------------------------------------------------------------
+
+  "Use this image at approximately 2:06, when I say: Chapters. Spine. Next
+  direction.... HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This
+  image must be the only visual filling the entire 16:9 canvas. Do not place
+  it in a box over my camera footage and do not leave me visible behind it
+  or around the edges. Three lines 0.7s apart, closing line at 3.0s. Returns
+  as a short callout above each script section. Hold it for 8 to 10 seconds
+  first time, 3 seconds on each return., then cut cleanly back to me.
+  Suppress captions."
+
+------------------------------------------------------------------------------
+V03   03_Three_Real_Moments.png
+------------------------------------------------------------------------------
+
+  "Use this image at approximately 2:48, when I say: Appears at each version
+  change: "Version one. Twenty seconds." "Version two. Ninety seconds."
+  "Version three. The objection.... HIDE OR REMOVE THE CAMERA VISUALLY
+  DURING THIS SCENE. This image must be the only visual filling the entire
+  16:9 canvas. Do not place it in a box over my camera footage and do not
+  leave me visible behind it or around the edges. All three rows visible.
+  The active row is at full strength, the other two dimmed, so the same
+  frame marks all three sections. Hold it for 4 to 6 seconds at each section
+  change., then cut cleanly back to me. Suppress captions."
+
+------------------------------------------------------------------------------
+V04   04_Twenty_Second_Structure.png
+------------------------------------------------------------------------------
+
+  "Use this image at approximately 3:09, when I say: Here's the template. I
+  ... and then your work pattern.... HIDE OR REMOVE THE CAMERA VISUALLY
+  DURING THIS SCENE. This image must be the only visual filling the entire
+  16:9 canvas. Do not place it in a box over my camera footage and do not
+  leave me visible behind it or around the edges. Three lines 0.9s apart.
+  Bottom line at 3.6s. Hold it for 9 to 11 seconds. Long enough to write
+  down., then cut cleanly back to me. Suppress captions. This frame gets
+  copied."
+
+------------------------------------------------------------------------------
+V05   05_Ninety_Second_Structure.png
+------------------------------------------------------------------------------
+
+  "Use this image at approximately 4:48, when I say: Here's the template to
+  fill in. Sentence one ..." through sentence three.... HIDE OR REMOVE THE
+  CAMERA VISUALLY DURING THIS SCENE. This image must be the only visual
+  filling the entire 16:9 canvas. Do not place it in a box over my camera
+  footage and do not leave me visible behind it or around the edges. Three
+  lines 1.0s apart. Bottom line at 4.0s. Hold it for 11 to 13 seconds. The
+  longest hold in the video., then cut cleanly back to me. Suppress
+  captions. This frame gets paused and copied."
+
+------------------------------------------------------------------------------
+V06   06_Coherence_Is_Not_A_Perfect_Plan.png
+------------------------------------------------------------------------------
+
+  "Use this image at approximately 6:32, when I say: And do not pretend it
+  was planned.... HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This
+  image must be the only visual filling the entire 16:9 canvas. Do not place
+  it in a box over my camera footage and do not leave me visible behind it
+  or around the edges. Headline, supporting line at 1.4s. Hold it for 5 to 7
+  seconds, then cut cleanly back to me. Suppress captions."
+
+------------------------------------------------------------------------------
+V07   07_Objection_Structure.png
+------------------------------------------------------------------------------
+
+  "Use this image at approximately 7:54, when I say: Four parts. Honest
+  context, briefly. The Spine. What the changes built. Why the current
+  direction follows.... HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS
+  SCENE. This image must be the only visual filling the entire 16:9 canvas.
+  Do not place it in a box over my camera footage and do not leave me
+  visible behind it or around the edges. Four columns 0.7s apart. Bottom
+  line at 3.6s and held. Hold it for 10 to 12 seconds, then cut cleanly back
+  to me. Suppress captions."
+
+------------------------------------------------------------------------------
+V08   08_Story_Explains_Proof_Supports.png
+------------------------------------------------------------------------------
+
+  "Use this image at approximately 11:43, when I say: A story explains.
+  Proof supports.... HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS SCENE.
+  This image must be the only visual filling the entire 16:9 canvas. Do not
+  place it in a box over my camera footage and do not leave me visible
+  behind it or around the edges. Headline, two columns 0.9s apart, bottom
+  line at 2.8s. Hold it for 7 to 9 seconds, then cut cleanly back to me.
+  Suppress captions."
+
+------------------------------------------------------------------------------
+V09   09_CTA_Keep_The_Proof.png
+------------------------------------------------------------------------------
+
+  "Use this image at approximately 12:20, when I say: It's at
+  temidayoafonja.com/keep-the-proof, and it's linked below.... HIDE OR
+  REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This image must be the only
+  visual filling the entire 16:9 canvas. Do not place it in a box over my
+  camera footage and do not leave me visible behind it or around the edges.
+  Logomark, then the headline at 0.6s, then the URL at 2.0s. Hold it for 9
+  to 11 seconds. Hold through the whole CTA line., then cut cleanly back to
+  me. Suppress captions. Never cover the web address."
+
+------------------------------------------------------------------------------
+V10   10_Watch_Next_Why_Nobody_Can_Tell.png
+------------------------------------------------------------------------------
+
+  "Use this image at approximately 12:45, when I say: Watch Why Nobody Can
+  Tell What You're Actually Good At next.... HIDE OR REMOVE THE CAMERA
+  VISUALLY DURING THIS SCENE. This image must be the only visual filling the
+  entire 16:9 canvas. Do not place it in a box over my camera footage and do
+  not leave me visible behind it or around the edges. Static. No animation
+  on the final card. Hold it for 10 to 14 seconds, through the outro and
+  past the last word., then cut cleanly back to me. Suppress captions."
+
+------------------------------------------------------------------------------
+SOUND DESIGN
+
+Four to seven restrained accents across a long-form video. Not one per caption
+and not one per cut. Every accent sits clearly under Temidayo's voice.
+
+Use an accent only on:
+  - a hero motion graphic entering
+  - the framework reveal
+  - a numbered section advancing
+  - a comparison flipping from one side to the other
+  - a major text emphasis
+  - a meaningful visual change
+
+Palette: soft whoosh, subtle click, gentle pop, restrained impact, clean sweep.
+
+If Riverside cannot place these automatically, do not treat sound as a blocker.
+Place the strongest few by hand and ship. The manual placements are listed per
+video in the build map.
+
+==============================================================================
+END OF PROMPT SHEET
+==============================================================================

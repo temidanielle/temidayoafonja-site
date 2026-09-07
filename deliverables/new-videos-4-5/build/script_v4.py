@@ -70,11 +70,11 @@ SCRIPT = [
        "life sciences company, where I built a capability function that didn't "
        "exist yet. Then employee experience inside an enterprise technology "
        "business."),
-(None, "Written out like that, it does sound like nine lives."),
+(None, "Written out like that, it does sound like a lot."),
 (None, "But underneath the joke there was a real question, and it took me "
-       "longer than it should have to hear it. If it takes nine lives to "
-       "describe you, what exactly are you asking the other person to do with "
-       "that?"),
+       "longer than it should have to hear it. If it takes that many "
+       "chapters to describe you, what exactly are you asking the other "
+       "person to do with that?"),
 (None, "Because I was making them do all of the work."),
 
 # ---------------------------------------------------------------- MECHANISM
@@ -139,7 +139,7 @@ SCRIPT = [
        "time, somewhere around the third item you stopped tracking and started "
        "sorting. You're trying to work out which one of those I actually am."),
 ("V04", "Here's the other version. “I get brought in when the evidence is "
-        "incomplete and a decision still has to be made.”"),
+        "incomplete and an important decision still has to be made.”"),
 (None, "That's a Claim. One sentence. No chronology. Nothing to decode."),
 (None, "And I want to show you the version I didn't use, because choosing "
        "between them is most of the work."),
@@ -159,6 +159,15 @@ SCRIPT = [
        "tell you where I worked, and for the first thirty seconds of a "
        "conversation, you don't need to know where I worked. You need to know "
        "what I'm for."),
+(None, "Now, there's a version of this that already goes around, and you may "
+       "have seen it. The formula is \u201cI'm a better something because I "
+       "used to be something else.\u201d I'm a better product manager because "
+       "I was a designer. I'm a better engineer because I worked in support."),
+(None, "It's a good formula, and it works, right up until you have five "
+       "somethings. Then you're back where you started, picking which one of "
+       "your past lives to be a better version of."),
+(None, "The Claim solves that differently. It doesn't pick a past life. It "
+       "names the problem all of them were solving."),
 (None, "Three tests for whether yours is actually a Claim."),
 (None, "Can you say it out loud without wincing. If it sounds like a consulting "
        "brochure, it isn't a Claim, it's positioning language, and people can "

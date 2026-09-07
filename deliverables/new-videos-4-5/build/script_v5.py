@@ -99,7 +99,7 @@ SCRIPT = [
        "ended."),
 (None, "Then the Spine, and this is the part that does the work."),
 ("V05", "“The thread through all of it is the same. I get brought in when "
-        "the evidence is incomplete and a decision still has to be made. In "
+        "the evidence is incomplete and an important decision still has to be made. In "
         "audit that looked like following evidence to what the reported story "
         "was missing. In life sciences it looked like building a function "
         "nobody had defined yet.”"),
@@ -164,6 +164,14 @@ SCRIPT = [
        "good sentence fixes everything is not worth your time."),
 (None, "A run of short tenures does concern some employers, and a "
        "well-constructed answer does not make that concern disappear."),
+(None, "Although it's worth knowing what normal actually looks like. As of "
+       "January 2024, the Bureau of Labor Statistics put median tenure for "
+       "workers aged 55 to 64 at 9.6 years, and for workers aged 25 to 34 at "
+       "2.7 years. Twenty-two percent of workers had been with their employer a "
+       "year or less."),
+(None, "So the long single-employer career that a lot of hiring conversations "
+       "still quietly assume is not the common case. That is not a defense, and "
+       "I would not lead with it. It's just context worth having."),
 (None, "What you can do is answer it before it becomes a theory. One sentence, "
        "flat delivery, no defensiveness. \u201cTwo of those were short. One was "
        "a restructure and one I left because the role wasn't what was "

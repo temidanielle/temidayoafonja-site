@@ -1,0 +1,173 @@
+==============================================================================
+QA REPORT
+Video 5  ·  How to Explain a Career That Looks All Over the Place
+September 7, 2026
+==============================================================================
+
+25 checks run. 23 passed, 2 not applicable, 0 failed.
+
+  [PASS] Research document actually read
+         Video_4___Outlier_Research__Concept.docx, 6,601 words, 247
+         paragraphs and 7 tables, read in full before the scripts
+         were finalized. Findings applied are listed below.
+
+  [PASS] Video 4 Claim is the locked version
+         Video 5 carries the same Spine sentence inside the 90-second
+         script, verbatim.
+
+  [PASS] A specific live conversation, not generic advice
+         Anchored throughout to the four sentences a viewer actually
+         hears: so what do you do, tell me about yourself, walk me
+         through your background, why so many changes.
+
+  [PASS] Video 4 and Video 5 are differentiated
+         Video 4 is why they cannot read you. Video 5 is what you
+         say. Video 5 states the boundary out loud and does not
+         repeat Video 4's diagnosis.
+
+  [N/A ] Insider truth plus consequence in the opening
+         Video 5 opens on the concrete failure mode instead, per the
+         brief.
+
+  [PASS] No abstract failed terminology in title or thumbnail
+         Checked against: non-linear, nonlinear, portability,
+         capability formation, transferable skills, reinvention
+
+  [PASS] No invented quotations or comment text
+         No YouTube comment is quoted anywhere; the research states
+         comment sections were not reliably fetchable and quotes
+         none. No Reddit paraphrase appears on screen or in the
+         script as a quotation. The "I'm a better X because Y"
+         formula is described by shape, without attribution to a
+         specific post and without a vote count.
+
+  [PASS] No vote counts cited
+         The research warns that 325, 157 and 51 belong to three
+         different threads and that mixing them is a factual error.
+         No vote count appears in either script, description, or
+         Short.
+
+  [PASS] Sourced claims carry their source
+         Video 5 cites U.S. Bureau of Labor Statistics tenure figures
+         with the date and the source named on camera and in the
+         description.
+
+  [PASS] No chronological résumé dump
+         The 90-second script uses three chapters, not seven, and
+         says so.
+
+  [PASS] Cat with nine lives appears once, verbally only
+         0 occurrence in the script. No cat imagery in any frame,
+         thumbnail or B-roll direction.
+
+  [PASS] No recruiter grievance framing
+         The script states twice that the people reading the career
+         are usually making a defensible call on the information in
+         front of them.
+
+  [N/A ] Framework arrives before the final quarter
+         Video 5 gives the structure at 1:31.
+
+  [PASS] Viewer leaves with a usable sentence
+         Three fill-in templates, one per version.
+
+  [PASS] Full-screen motion graphic requirement stated
+         Present in the build map, the Co-Creator master prompt,
+         every per-scene prompt, the run of show and the frame notes.
+
+  [PASS] Full-screen B-roll requirement stated
+         Stated in the visual grammar block, which appears in the
+         build map, the master prompt and the run of show.
+
+  [PASS] No Temidayo-behind-visual treatment recommended
+         No artifact recommends an overlay for anything except short
+         text callouts of a few words.
+
+  [PASS] Sound design guidance included
+         A restrained 4 to 7 accent plan, plus the five strongest
+         manual placements if automation fails.
+
+  [PASS] CTA correct
+         Keep the Proof, a 60-minute career evidence system.
+         https://temidayoafonja.com/keep-the-proof
+
+  [PASS] Watch Next correct and final
+         Why Nobody Can Tell What You're Actually Good At. The Watch
+         Next card is stated as the final visual in the build map,
+         the master prompt and the run of show.
+
+  [PASS] U.S. English
+         Script and every visual frame swept against 26 British
+         stems.
+
+  [PASS] No em dashes
+         0 in script, 0 in frames.
+
+  [PASS] All PNGs 1920x1080
+         10 files, sizes observed: 1920x1080
+
+  [PASS] Frame geometry clean
+         Measured against the rendered DOM: no overlapping text,
+         nothing below the caption line at y=860, nothing inside the
+         120px safe margin.
+
+  [PASS] Runtime within target
+         1875 spoken words, about 12:55 at 145 wpm. Target 12:00 to
+         14:00.
+
+------------------------------------------------------------------------------
+THE FULL-SCREEN RULE, STATED HERE TOO
+------------------------------------------------------------------------------
+
+TRUE FULL SCREEN means all of the following:
+
+  - the visual occupies the ENTIRE 16:9 canvas
+  - Temidayo is NOT visible moving behind it
+  - Temidayo is NOT visible around the sides or the edges
+  - there is NO smaller graphic or video rectangle floating over her camera
+    footage
+  - the visual is its own scene, not an overlay
+  - her spoken audio continues underneath
+  - then cut cleanly back to her
+
+The instruction to give Co-Creator is not "make the graphic full screen." It is:
+
+  "HIDE / REMOVE THE CAMERA VISUALLY DURING THIS SCENE. The motion graphic or
+   B-roll must be the only visual filling the entire 16:9 canvas."
+
+This has been a recurring Riverside failure. State it on every scene.
+
+------------------------------------------------------------------------------
+WHAT THE RESEARCH CHANGED IN THIS PACKAGE
+------------------------------------------------------------------------------
+
+  •  The Bureau of Labor Statistics tenure figures were added as a
+  credibility beat inside the limits section, exactly where the research
+  says they belong: useful as context, not as a hook. Both figures and the
+  date are said precisely and the source is named.
+
+  •  The research classifies this video as the safer, search-durable sibling
+  with a lower ceiling and an incumbent already ranking. The package treats
+  it that way: the search phrase is recorded, the chapters are built for
+  search, and the CTA routes to a product rather than to comments.
+
+  •  The three scripts are each fully spoken inside the recording so all
+  four Shorts can be lifted without a separate shoot.
+
+------------------------------------------------------------------------------
+OPEN ITEMS AND JUDGMENT CALLS
+------------------------------------------------------------------------------
+
+  •  THE 20-SECOND EXAMPLE USES A SHORTER SPINE THAN THE 90-SECOND VERSION.
+  That is deliberate and it is stated in the script, but it is the one place
+  where a viewer could hear two different sentences and think the system is
+  inconsistent. Worth watching in the edit.
+
+  •  THE BLS FIGURES NEED SAYING PRECISELY. 9.6 years for ages 55 to 64, 2.7
+  years for ages 25 to 34, January 2024, and 22 percent with a year or less.
+  If the delivery drifts on any of these, do the take again rather than
+  fixing it in the description.
+
+==============================================================================
+END OF QA REPORT
+==============================================================================

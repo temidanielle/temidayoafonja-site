@@ -1,0 +1,210 @@
+==============================================================================
+RIVERSIDE CO-CREATOR MASTER PROMPT
+Video 4  ·  Why Nobody Can Tell What You're Actually Good At
+==============================================================================
+
+Paste the block below into Co-Creator. If Co-Creator only accepts one image
+and one instruction at a time, use the per-scene prompts further down instead,
+one upload at a time.
+
+------------------------------------------------------------------------------
+MASTER PROMPT
+------------------------------------------------------------------------------
+
+You are editing a horizontal 16:9 talking-head video called "Why Nobody Can
+Tell What You're Actually Good At". It runs about 18 minutes. The speaker is
+Temidayo Afonja, on camera for most of it. Please follow these rules exactly.
+
+MOST IMPORTANT RULE. Every motion graphic, every B-roll shot, the CTA card and
+the Watch Next card must be TRUE FULL SCREEN. That means: HIDE OR REMOVE THE
+CAMERA VISUALLY DURING THAT SCENE. The graphic must be the only visual filling
+the entire 16:9 canvas. Do not put the graphic in a smaller box floating over
+my camera footage. Do not leave me visible behind it. Do not leave me visible
+around the sides or edges. Treat each graphic as its own scene. My spoken
+audio continues underneath it. Then cut cleanly back to me. This has gone
+wrong before, so please check every graphic against this rule.
+
+The only visuals that may sit over my camera footage are short text callouts
+of a few words. Anything with a framework, a comparison, or more than one
+point in it goes full screen.
+
+I will upload ten images. Each one has a matching line in the script and a
+hold time. Bring the image up on that line, hold it, then return to me.
+
+Pacing: two to four B-roll moments, three to five punch-ins, and four to seven
+restrained sound accents across the whole video. Do not add an effect on every
+caption or every cut. Sound effects stay quieter than my voice.
+
+Captions: suppress captions while a full-screen graphic is on screen. The text
+on the graphic is the message and captions cover it.
+
+Do not use generic corporate stock footage. No stock handshakes, no stock
+offices, no stock laptops.
+
+The Watch Next card is the final visual of the video. Nothing comes after it.
+
+------------------------------------------------------------------------------
+PER-SCENE PROMPTS, ONE UPLOAD AT A TIME
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+V01   01_Interesting_Background_Hard_To_Place.png
+------------------------------------------------------------------------------
+
+  "Use this image at approximately 0:14, when I say: And sometimes it is the
+  sound of a person who cannot quite place you, buying themselves a second
+  to work out what to do with what you just said.... HIDE OR REMOVE THE
+  CAMERA VISUALLY DURING THIS SCENE. This image must be the only visual
+  filling the entire 16:9 canvas. Do not place it in a box over my camera
+  footage and do not leave me visible behind it or around the edges.
+  Headline first. Left column at 0.6s. Right column at 1.4s. Bottom line at
+  2.4s. Hold it for 6 to 8 seconds, then cut cleanly back to me. Suppress
+  captions for the full hold."
+
+------------------------------------------------------------------------------
+V02   02_Category_Compression.png
+------------------------------------------------------------------------------
+
+  "Use this image at approximately 3:55, when I say: When somebody meets
+  your career for the first time, they are not reading it. They are sorting
+  it." through to "the audit person gets filed as an audit... HIDE OR REMOVE
+  THE CAMERA VISUALLY DURING THIS SCENE. This image must be the only visual
+  filling the entire 16:9 canvas. Do not place it in a box over my camera
+  footage and do not leave me visible behind it or around the edges.
+  Headline. Then the three rows one at a time, 0.8s apart. Hold on the third
+  row. Hold it for 9 to 11 seconds, then cut cleanly back to me. Suppress
+  captions. The right column is the payoff and must not be covered."
+
+------------------------------------------------------------------------------
+V03   03_The_One_Line_Test.png
+------------------------------------------------------------------------------
+
+  "Use this image at approximately 6:33, when I say: It's called the One-
+  Line Test. Claim. Spine. Receipts.... HIDE OR REMOVE THE CAMERA VISUALLY
+  DURING THIS SCENE. This image must be the only visual filling the entire
+  16:9 canvas. Do not place it in a box over my camera footage and do not
+  leave me visible behind it or around the edges. Three lines in sequence,
+  0.7s apart, then the closing line at 3.0s. This frame returns briefly at
+  each section change. Hold it for 8 to 10 seconds on first appearance, 3
+  seconds on each return., then cut cleanly back to me. Suppress captions
+  for the full hold."
+
+------------------------------------------------------------------------------
+V04   04_Claim_Resume_List_Vs_Problem.png
+------------------------------------------------------------------------------
+
+  "Use this image at approximately 7:08, when I say: A Claim is not a
+  summary of your resume. Watch what happens when I do that version."
+  through to "You need to know what I'm for.... HIDE OR REMOVE THE CAMERA
+  VISUALLY DURING THIS SCENE. This image must be the only visual filling the
+  entire 16:9 canvas. Do not place it in a box over my camera footage and do
+  not leave me visible behind it or around the edges. Left column first,
+  held alone for 3s so it lands as the wrong answer. Right column at 3.5s.
+  Bottom line at 5.5s. Hold it for 11 to 13 seconds. This is the longest
+  hold in the video., then cut cleanly back to me. Suppress captions. Both
+  columns are read on screen."
+
+------------------------------------------------------------------------------
+V05   05_Spine_Many_Rooms_One_Kind_Of_Work.png
+------------------------------------------------------------------------------
+
+  "Use this image at approximately 10:57, when I say: The better question is
+  this. What kept being true about the difficult work people trusted you
+  with?" through the rooms.... HIDE OR REMOVE THE CAMERA VISUALLY DURING
+  THIS SCENE. This image must be the only visual filling the entire 16:9
+  canvas. Do not place it in a box over my camera footage and do not leave
+  me visible behind it or around the edges. The three rows appear fast and
+  slightly overlapping, deliberately more than the eye can sort, held 1.5s.
+  Then all three dim to 40 percent and the bottom line arrives at full
+  strength at 3.0s. The dimming is the point: the list recedes, the pattern
+  lands. Hold it for 10 to 12 seconds, then cut cleanly back to me. Suppress
+  captions. The bottom line is the reveal."
+
+------------------------------------------------------------------------------
+V06   06_Receipts_Three_Eras.png
+------------------------------------------------------------------------------
+
+  "Use this image at approximately 13:04, when I say: A Receipt has to make
+  sense on its own." through the three receipts.... HIDE OR REMOVE THE
+  CAMERA VISUALLY DURING THIS SCENE. This image must be the only visual
+  filling the entire 16:9 canvas. Do not place it in a box over my camera
+  footage and do not leave me visible behind it or around the edges. One row
+  at a time, 1.2s apart, each held long enough to read the scope wording.
+  Hold it for 11 to 13 seconds, then cut cleanly back to me. Suppress
+  captions. The scope qualifiers must be readable."
+
+------------------------------------------------------------------------------
+V07   07_Practical_Test_History_Or_Problem.png
+------------------------------------------------------------------------------
+
+  "Use this image at approximately 14:30, when I say: Say this. Can I try
+  one sentence on you? Tell me what you think I actually help with." through
+  both outcomes.... HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS SCENE.
+  This image must be the only visual filling the entire 16:9 canvas. Do not
+  place it in a box over my camera footage and do not leave me visible
+  behind it or around the edges. Headline, then the two outcomes 1.0s apart,
+  then the exact sentence at the bottom at 3.0s and held. Hold it for 9 to
+  11 seconds, then cut cleanly back to me. Suppress captions. The bottom
+  line is the takeaway sentence."
+
+------------------------------------------------------------------------------
+V08   08_Failure_Modes.png
+------------------------------------------------------------------------------
+
+  "Use this image at approximately 15:26, when I say: Three reasons a Claim
+  doesn't land, and they get fixed in different ways." through the honest
+  limits.... HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This
+  image must be the only visual filling the entire 16:9 canvas. Do not place
+  it in a box over my camera footage and do not leave me visible behind it
+  or around the edges. Three lines 0.8s apart. The limits line arrives last,
+  at 3.4s, and holds alone for two beats. Hold it for 9 to 11 seconds, then
+  cut cleanly back to me. Suppress captions on the limits line in
+  particular."
+
+------------------------------------------------------------------------------
+V09   09_CTA_Write_Your_Claim_Below.png
+------------------------------------------------------------------------------
+
+  "Use this image at approximately 17:05, when I say: And then put it in the
+  comments. I mean that literally. Write your one-line Claim below.... HIDE
+  OR REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This image must be the
+  only visual filling the entire 16:9 canvas. Do not place it in a box over
+  my camera footage and do not leave me visible behind it or around the
+  edges. Headline, then the question at 1.2s. Hold it for 8 to 10 seconds,
+  then cut cleanly back to me. Suppress captions."
+
+------------------------------------------------------------------------------
+V10   10_Watch_Next_Change_Jobs.png
+------------------------------------------------------------------------------
+
+  "Use this image at approximately 17:54, when I say: Watch How to Change
+  Jobs Without Starting Your Career Over next.... HIDE OR REMOVE THE CAMERA
+  VISUALLY DURING THIS SCENE. This image must be the only visual filling the
+  entire 16:9 canvas. Do not place it in a box over my camera footage and do
+  not leave me visible behind it or around the edges. Static. No animation
+  on the final card. Hold it for 10 to 14 seconds, through the outro lines
+  and past the last word., then cut cleanly back to me. Suppress captions."
+
+------------------------------------------------------------------------------
+SOUND DESIGN
+
+Four to seven restrained accents across a long-form video. Not one per caption
+and not one per cut. Every accent sits clearly under Temidayo's voice.
+
+Use an accent only on:
+  - a hero motion graphic entering
+  - the framework reveal
+  - a numbered section advancing
+  - a comparison flipping from one side to the other
+  - a major text emphasis
+  - a meaningful visual change
+
+Palette: soft whoosh, subtle click, gentle pop, restrained impact, clean sweep.
+
+If Riverside cannot place these automatically, do not treat sound as a blocker.
+Place the strongest few by hand and ship. The manual placements are listed per
+video in the build map.
+
+==============================================================================
+END OF PROMPT SHEET
+==============================================================================

@@ -1,0 +1,19 @@
+RENUMBERED  -  September 7, 2026
+
+This folder holds "Should I Make an Internal Move? 3 Questions to Decide".
+
+IT IS NOW VIDEO 6, not Video 5.
+
+Video 5 is now:
+    How to Explain a Career That Looks All Over the Place
+    Thumbnail: YOUR CAREER MAKES SENSE
+    Package: deliverables/new-video-5/
+
+The content of this package is unchanged and remains approved. Only its position
+in the sequence moved. Its own Watch Next card and description still carry the
+pre-September-7 numbering, so check them against the September 7 roadmap before
+publishing.
+
+Filenames inside this folder still say Video_5. They were not renamed, because
+renaming would break the recorded checksums and the archive's verifiability.
+The number in the filename is historical; the number in this notice is current.

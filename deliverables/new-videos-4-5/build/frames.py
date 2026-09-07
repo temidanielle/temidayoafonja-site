@@ -74,8 +74,8 @@ V4 = [
            "Accounting, audit, IT audit, federal governance, privacy, "
            "capability, employee experience."),
           ("THE CLAIM",
-           "I get brought in when the evidence is incomplete and a decision "
-           "still has to be made."),
+           "I get brought in when the evidence is incomplete and an important "
+           "decision still has to be made."),
           foot="One of these makes the listener sort. One does not."),
       script="\"A Claim is not a summary of your resume. Watch what happens when "
              "I do that version.\" through to \"You need to know what I'm for.\"",
@@ -88,26 +88,26 @@ V4 = [
       captions="Suppress captions. Both columns are read on screen.",
       sound="Flat on the left column. One clear accent when the right arrives."),
 
- dict(id="V05", file="05_Spine_Different_Rooms_Same_Work.png",
-      draw=lambda c: L.quad(c, "Part two: the Spine",
-          "Four rooms. One kind of work.",
-          [("AUDIT", "Follow evidence to what the story is missing."),
-           ("FEDERAL GOVERNANCE", "Work out what a system cannot see about itself."),
-           ("PRIVACY AND CYBER", "Translate exposure into something people can act on."),
-           ("LIFE SCIENCES", "Build what nobody has defined yet.")],
+ dict(id="V05", file="05_Spine_Many_Rooms_One_Kind_Of_Work.png",
+      draw=lambda c: L.numbered(c, "Part two: the Spine",
+          ["Audit  ·  Governance  ·  Privacy and cyber",
+           "Consulting  ·  Life sciences",
+           "People strategy  ·  Technology"],
           foot="Find what the obvious story is missing. Build enough structure "
-               "to decide.", dark=True),
+               "that somebody can decide.", size=44, dark=True),
       script="\"The better question is this. What kept being true about the "
-             "difficult work people trusted you with?\" through the four rooms.",
-      purpose="Shows several contexts at once and then reveals the repeated "
-              "work, instead of narrating a chronology.",
+             "difficult work people trusted you with?\" through the rooms.",
+      purpose="The domains arrive as evidence, out of chronological order, and "
+              "resolve into one sentence. Narrating them in order would perform "
+              "the exact problem the video is diagnosing.",
       mode="Full-screen motion graphic",
-      reveal="All four columns appear together at low opacity, then the nouns "
-             "dim and the four descriptions brighten. Bottom line at 4.0s, "
-             "which is the actual reveal.",
+      reveal="The three rows appear fast and slightly overlapping, deliberately "
+             "more than the eye can sort, held 1.5s. Then all three dim to "
+             "40 percent and the bottom line arrives at full strength at 3.0s. "
+             "The dimming is the point: the list recedes, the pattern lands.",
       hold="10 to 12 seconds",
-      captions="Suppress captions for the full hold.",
-      sound="One soft accent as the four columns settle, one resolve on the "
+      captions="Suppress captions. The bottom line is the reveal.",
+      sound="One soft accent as the rows land, one clean resolve on the "
             "bottom line."),
 
  dict(id="V06", file="06_Receipts_Three_Eras.png",

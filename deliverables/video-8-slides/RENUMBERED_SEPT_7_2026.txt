@@ -1,0 +1,14 @@
+RENUMBERED  -  September 7, 2026
+
+This folder was Video 8. IT IS NOW VIDEO 9.
+
+The September 7, 2026 roadmap revision inserted two new videos at slots 4 and 5,
+retired the former Video 4, and shifted everything below it down by one.
+
+The content of this package is unchanged and remains approved. Only its position
+in the sequence moved. Its own Watch Next card and description still carry the
+pre-September-7 numbering, so check them against the September 7 roadmap before
+publishing.
+
+Filenames inside this folder still say Video_8. They were not renamed, because
+renaming would break the recorded checksums and the archive's verifiability.

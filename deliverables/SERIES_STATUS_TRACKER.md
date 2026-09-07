@@ -4,7 +4,56 @@ Series-level record of publication gates, open decisions and outstanding
 assets. Kept here so individual video packages do not have to be reopened to
 carry a cross-cutting note.
 
-Last updated: 4 September 2026.
+Last updated: 7 September 2026.
+
+---
+
+## September 7, 2026 roadmap revision
+
+Two new videos enter at slots 4 and 5. The former Video 4 is retired as a slot,
+and everything below it shifts down by one. This supersedes the prior lock and
+the roadmap's standing rule that Videos 1 to 5 were not to be rebuilt, both of
+which predate it.
+
+| Slot | Title | Change |
+|---|---|---|
+| Video 1 | How to Change Jobs Without Starting Your Career Over | unchanged |
+| Video 2 | Is Your Job Making You Less Marketable? | unchanged |
+| Video 3 | 3 Things to Do Before Quitting Your Job | unchanged |
+| **Video 4** | **Why Nobody Can Tell What You're Actually Good At** | **new** |
+| **Video 5** | **How to Explain a Career That Looks All Over the Place** | **new** |
+| retired | How to Explain Your Career Change | former Video 4, slot retired |
+| Video 6 | Should I Make an Internal Move? 3 Questions to Decide | was Video 5 |
+| Video 7 | Are You Growing, or Just Being Given More Work? | was Video 6 |
+| Video 8 | How to Show Your Impact at Work When You Built It From Scratch | was Video 7 |
+| Video 9 | How to Switch Industries Without Starting Over | was Video 8 |
+
+Videos 1 to 3 are untouched, and their Watch Next chain still resolves: 1 to 2,
+2 to 3, 3 back to 1. The new Video 4 hands off to Video 1, and the new Video 5
+hands off to the new Video 4.
+
+**The archived packages were not edited.** Each affected folder carries a notice
+naming its new slot, and the recording packages, their filenames and their
+checksums are byte-identical to what was locked. Renaming files inside them
+would have broken the verifiability of the archive for no gain. The number in an
+archived filename is historical; the number in its notice is current.
+
+**Watch Next cards inside the archived packages still carry the old numbering.**
+That is expected for an archive and is called out in each notice. If any of
+those videos is later scheduled, its Watch Next needs re-checking against this
+table first.
+
+### The new packages
+
+`deliverables/new-video-4/` and `deliverables/new-video-5/`, built September 7,
+2026 from the Outlier Research report, the production brief and the verified
+evidence base. Both are ready to record. Thumbnails are outstanding, as artwork
+is made in Canva and is not in this repository.
+
+Video 4's working Claim, confirmed before the build:
+
+> "I get brought in when the evidence is incomplete and an important decision
+> still has to be made."
 
 ---
 

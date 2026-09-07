@@ -1,0 +1,495 @@
+==============================================================================
+MOTION GRAPHIC BUILD MAP
+Video 4  ·  Why Nobody Can Tell What You're Actually Good At
+==============================================================================
+
+Motion graphics are the hero visual treatment for this video. The support deck
+and the PNGs are recording references, branded design guidance and backup
+assets. They are not meant to make the finished video a slide presentation.
+
+------------------------------------------------------------------------------
+THE RULE THAT MATTERS MOST
+------------------------------------------------------------------------------
+
+TRUE FULL SCREEN means all of the following:
+
+  - the visual occupies the ENTIRE 16:9 canvas
+  - Temidayo is NOT visible moving behind it
+  - Temidayo is NOT visible around the sides or the edges
+  - there is NO smaller graphic or video rectangle floating over her camera
+    footage
+  - the visual is its own scene, not an overlay
+  - her spoken audio continues underneath
+  - then cut cleanly back to her
+
+The instruction to give Co-Creator is not "make the graphic full screen." It is:
+
+  "HIDE / REMOVE THE CAMERA VISUALLY DURING THIS SCENE. The motion graphic or
+   B-roll must be the only visual filling the entire 16:9 canvas."
+
+This has been a recurring Riverside failure. State it on every scene.
+
+------------------------------------------------------------------------------
+VISUAL GRAMMAR
+------------------------------------------------------------------------------
+
+  SHORT TEXT CALLOUT                         May appear over Temidayo on camera.
+  FRAMEWORK, COMPARISON, MULTI-POINT IDEA    TRUE FULL-SCREEN motion graphic.
+  B-ROLL, VIDEO CUTAWAY                      TRUE FULL-SCREEN visual break.
+  CTA                                        TRUE FULL SCREEN.
+  WATCH NEXT                                 TRUE FULL SCREEN, and the final visual of the video.
+
+------------------------------------------------------------------------------
+SCENES
+------------------------------------------------------------------------------
+
+==============================================================================
+V01   01_Interesting_Background_Hard_To_Place.png
+==============================================================================
+
+  SCRIPT TRIGGER (approx 0:14)
+    "And sometimes it is the sound of a person who cannot quite place you,
+    buying themselves a second to work out what to do with what you just
+    said."
+
+  TREATMENT
+    Full-screen motion graphic
+
+  PURPOSE
+    Names the recognizable moment and the tension underneath it, without
+    claiming the phrase is always a bad sign.
+
+  WHAT APPEARS FIRST, AND THE REVEAL ORDER
+    Headline first. Left column at 0.6s. Right column at 1.4s. Bottom line
+    at 2.4s.
+
+  APPROXIMATE HOLD
+    6 to 8 seconds
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends. Do not dissolve the graphic away while she is already back on
+    screen.
+
+  CAPTIONS
+    Suppress captions for the full hold.
+
+  SOUND
+    One low soft accent on the right column.
+
+  VISUAL HIERARCHY AND BRAND
+    Deep navy #112345, warm cream #F5F1E8, muted gold #C9A84C. Montserrat
+    for display, DM Sans for body. Gold eyebrow and hairline at the top
+    left, then the headline, then the content. Numbered badges in gold.
+    Large type only. Motion is fade, slide and gentle scale. No bouncing,
+    spinning, aggressive zooms or constant animation.
+
+==============================================================================
+V02   02_Category_Compression.png
+==============================================================================
+
+  SCRIPT TRIGGER (approx 3:55)
+    "When somebody meets your career for the first time, they are not
+    reading it. They are sorting it." through to "the audit person gets
+    filed as an audit person, ten years after the audit."
+
+  TREATMENT
+    Full-screen motion graphic
+
+  PURPOSE
+    Explains the mechanism, so the viewer stops treating this as somebody
+    else's unfairness and starts treating it as information they control.
+
+  WHAT APPEARS FIRST, AND THE REVEAL ORDER
+    Headline. Then the three rows one at a time, 0.8s apart. Hold on the
+    third row.
+
+  APPROXIMATE HOLD
+    9 to 11 seconds
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends. Do not dissolve the graphic away while she is already back on
+    screen.
+
+  CAPTIONS
+    Suppress captions. The right column is the payoff and must not be
+    covered.
+
+  SOUND
+    One accent per row, descending.
+
+  VISUAL HIERARCHY AND BRAND
+    Deep navy #112345, warm cream #F5F1E8, muted gold #C9A84C. Montserrat
+    for display, DM Sans for body. Gold eyebrow and hairline at the top
+    left, then the headline, then the content. Numbered badges in gold.
+    Large type only. Motion is fade, slide and gentle scale. No bouncing,
+    spinning, aggressive zooms or constant animation.
+
+==============================================================================
+V03   03_The_One_Line_Test.png
+==============================================================================
+
+  SCRIPT TRIGGER (approx 6:33)
+    "It's called the One-Line Test. Claim. Spine. Receipts."
+
+  TREATMENT
+    Full-screen motion graphic
+
+  PURPOSE
+    The one named framework in the video. Everything after this hangs off
+    it.
+
+  WHAT APPEARS FIRST, AND THE REVEAL ORDER
+    Three lines in sequence, 0.7s apart, then the closing line at 3.0s.
+    This frame returns briefly at each section change.
+
+  APPROXIMATE HOLD
+    8 to 10 seconds on first appearance, 3 seconds on each return.
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends. Do not dissolve the graphic away while she is already back on
+    screen.
+
+  CAPTIONS
+    Suppress captions for the full hold.
+
+  SOUND
+    Three ascending accents, then one resolve on the closing line.
+
+  VISUAL HIERARCHY AND BRAND
+    Deep navy #112345, warm cream #F5F1E8, muted gold #C9A84C. Montserrat
+    for display, DM Sans for body. Gold eyebrow and hairline at the top
+    left, then the headline, then the content. Numbered badges in gold.
+    Large type only. Motion is fade, slide and gentle scale. No bouncing,
+    spinning, aggressive zooms or constant animation.
+
+==============================================================================
+V04   04_Claim_Resume_List_Vs_Problem.png
+==============================================================================
+
+  SCRIPT TRIGGER (approx 7:08)
+    "A Claim is not a summary of your resume. Watch what happens when I do
+    that version." through to "You need to know what I'm for."
+
+  TREATMENT
+    Full-screen motion graphic
+
+  PURPOSE
+    The live demonstration. The viewer sees the bad version and the better
+    version side by side, in Temidayo's own career.
+
+  WHAT APPEARS FIRST, AND THE REVEAL ORDER
+    Left column first, held alone for 3s so it lands as the wrong answer.
+    Right column at 3.5s. Bottom line at 5.5s.
+
+  APPROXIMATE HOLD
+    11 to 13 seconds. This is the longest hold in the video.
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends. Do not dissolve the graphic away while she is already back on
+    screen.
+
+  CAPTIONS
+    Suppress captions. Both columns are read on screen.
+
+  SOUND
+    Flat on the left column. One clear accent when the right arrives.
+
+  VISUAL HIERARCHY AND BRAND
+    Deep navy #112345, warm cream #F5F1E8, muted gold #C9A84C. Montserrat
+    for display, DM Sans for body. Gold eyebrow and hairline at the top
+    left, then the headline, then the content. Numbered badges in gold.
+    Large type only. Motion is fade, slide and gentle scale. No bouncing,
+    spinning, aggressive zooms or constant animation.
+
+==============================================================================
+V05   05_Spine_Many_Rooms_One_Kind_Of_Work.png
+==============================================================================
+
+  SCRIPT TRIGGER (approx 10:57)
+    "The better question is this. What kept being true about the difficult
+    work people trusted you with?" through the rooms.
+
+  TREATMENT
+    Full-screen motion graphic
+
+  PURPOSE
+    The domains arrive as evidence, out of chronological order, and
+    resolve into one sentence. Narrating them in order would perform the
+    exact problem the video is diagnosing.
+
+  WHAT APPEARS FIRST, AND THE REVEAL ORDER
+    The three rows appear fast and slightly overlapping, deliberately more
+    than the eye can sort, held 1.5s. Then all three dim to 40 percent and
+    the bottom line arrives at full strength at 3.0s. The dimming is the
+    point: the list recedes, the pattern lands.
+
+  APPROXIMATE HOLD
+    10 to 12 seconds
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends. Do not dissolve the graphic away while she is already back on
+    screen.
+
+  CAPTIONS
+    Suppress captions. The bottom line is the reveal.
+
+  SOUND
+    One soft accent as the rows land, one clean resolve on the bottom
+    line.
+
+  VISUAL HIERARCHY AND BRAND
+    Deep navy #112345, warm cream #F5F1E8, muted gold #C9A84C. Montserrat
+    for display, DM Sans for body. Gold eyebrow and hairline at the top
+    left, then the headline, then the content. Numbered badges in gold.
+    Large type only. Motion is fade, slide and gentle scale. No bouncing,
+    spinning, aggressive zooms or constant animation.
+
+==============================================================================
+V06   06_Receipts_Three_Eras.png
+==============================================================================
+
+  SCRIPT TRIGGER (approx 13:04)
+    "A Receipt has to make sense on its own." through the three receipts.
+
+  TREATMENT
+    Full-screen motion graphic
+
+  PURPOSE
+    Proves the Claim with evidence from different eras, and models the
+    scoping language that keeps each one defensible.
+
+  WHAT APPEARS FIRST, AND THE REVEAL ORDER
+    One row at a time, 1.2s apart, each held long enough to read the scope
+    wording.
+
+  APPROXIMATE HOLD
+    11 to 13 seconds
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends. Do not dissolve the graphic away while she is already back on
+    screen.
+
+  CAPTIONS
+    Suppress captions. The scope qualifiers must be readable.
+
+  SOUND
+    One accent per row, same pitch, deliberately unshowy.
+
+  VISUAL HIERARCHY AND BRAND
+    Deep navy #112345, warm cream #F5F1E8, muted gold #C9A84C. Montserrat
+    for display, DM Sans for body. Gold eyebrow and hairline at the top
+    left, then the headline, then the content. Numbered badges in gold.
+    Large type only. Motion is fade, slide and gentle scale. No bouncing,
+    spinning, aggressive zooms or constant animation.
+
+==============================================================================
+V07   07_Practical_Test_History_Or_Problem.png
+==============================================================================
+
+  SCRIPT TRIGGER (approx 14:30)
+    "Say this. Can I try one sentence on you? Tell me what you think I
+    actually help with." through both outcomes.
+
+  TREATMENT
+    Full-screen motion graphic
+
+  PURPOSE
+    Hands the viewer an exact sentence to use tonight and a way to read
+    the result.
+
+  WHAT APPEARS FIRST, AND THE REVEAL ORDER
+    Headline, then the two outcomes 1.0s apart, then the exact sentence at
+    the bottom at 3.0s and held.
+
+  APPROXIMATE HOLD
+    9 to 11 seconds
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends. Do not dissolve the graphic away while she is already back on
+    screen.
+
+  CAPTIONS
+    Suppress captions. The bottom line is the takeaway sentence.
+
+  SOUND
+    Two accents on the outcomes, one resolve on the sentence.
+
+  VISUAL HIERARCHY AND BRAND
+    Deep navy #112345, warm cream #F5F1E8, muted gold #C9A84C. Montserrat
+    for display, DM Sans for body. Gold eyebrow and hairline at the top
+    left, then the headline, then the content. Numbered badges in gold.
+    Large type only. Motion is fade, slide and gentle scale. No bouncing,
+    spinning, aggressive zooms or constant animation.
+
+==============================================================================
+V08   08_Failure_Modes.png
+==============================================================================
+
+  SCRIPT TRIGGER (approx 15:26)
+    "Three reasons a Claim doesn't land, and they get fixed in different
+    ways." through the honest limits.
+
+  TREATMENT
+    Full-screen motion graphic
+
+  PURPOSE
+    Keeps the promise honest and gives the viewer somewhere to go if the
+    exercise does not work first time.
+
+  WHAT APPEARS FIRST, AND THE REVEAL ORDER
+    Three lines 0.8s apart. The limits line arrives last, at 3.4s, and
+    holds alone for two beats.
+
+  APPROXIMATE HOLD
+    9 to 11 seconds
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends. Do not dissolve the graphic away while she is already back on
+    screen.
+
+  CAPTIONS
+    Suppress captions on the limits line in particular.
+
+  SOUND
+    Three flat accents. No resolve. This section should not feel
+    triumphant.
+
+  VISUAL HIERARCHY AND BRAND
+    Deep navy #112345, warm cream #F5F1E8, muted gold #C9A84C. Montserrat
+    for display, DM Sans for body. Gold eyebrow and hairline at the top
+    left, then the headline, then the content. Numbered badges in gold.
+    Large type only. Motion is fade, slide and gentle scale. No bouncing,
+    spinning, aggressive zooms or constant animation.
+
+==============================================================================
+V09   09_CTA_Write_Your_Claim_Below.png
+==============================================================================
+
+  SCRIPT TRIGGER (approx 17:05)
+    "And then put it in the comments. I mean that literally. Write your
+    one-line Claim below."
+
+  TREATMENT
+    Full screen
+
+    FULL-SCREEN REQUIREMENT: hide or remove the camera visually during
+    this scene. This graphic must be the only visual filling the entire
+    16:9 canvas. Temidayo must not be visible behind it or around its
+    edges. Her audio continues underneath. Cut cleanly back to her
+    afterwards.
+
+  PURPOSE
+    The single CTA. No product ask anywhere in this video.
+
+  WHAT APPEARS FIRST, AND THE REVEAL ORDER
+    Headline, then the question at 1.2s.
+
+  APPROXIMATE HOLD
+    8 to 10 seconds
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends. Do not dissolve the graphic away while she is already back on
+    screen.
+
+  CAPTIONS
+    Suppress captions.
+
+  SOUND
+    One warm accent.
+
+  VISUAL HIERARCHY AND BRAND
+    Deep navy #112345, warm cream #F5F1E8, muted gold #C9A84C. Montserrat
+    for display, DM Sans for body. Gold eyebrow and hairline at the top
+    left, then the headline, then the content. Numbered badges in gold.
+    Large type only. Motion is fade, slide and gentle scale. No bouncing,
+    spinning, aggressive zooms or constant animation.
+
+==============================================================================
+V10   10_Watch_Next_Change_Jobs.png
+==============================================================================
+
+  SCRIPT TRIGGER (approx 17:54)
+    "Watch How to Change Jobs Without Starting Your Career Over next."
+
+  TREATMENT
+    Full screen, final visual
+
+    FULL-SCREEN REQUIREMENT: hide or remove the camera visually during
+    this scene. This graphic must be the only visual filling the entire
+    16:9 canvas. Temidayo must not be visible behind it or around its
+    edges. Her audio continues underneath. Cut cleanly back to her
+    afterwards.
+
+  PURPOSE
+    Final visual. Right of frame kept clear for the YouTube end screen.
+
+  WHAT APPEARS FIRST, AND THE REVEAL ORDER
+    Static. No animation on the final card.
+
+  APPROXIMATE HOLD
+    10 to 14 seconds, through the outro lines and past the last word.
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends. Do not dissolve the graphic away while she is already back on
+    screen.
+
+  CAPTIONS
+    Suppress captions.
+
+  SOUND
+    None. Let the outro land dry.
+
+  VISUAL HIERARCHY AND BRAND
+    Deep navy #112345, warm cream #F5F1E8, muted gold #C9A84C. Montserrat
+    for display, DM Sans for body. Gold eyebrow and hairline at the top
+    left, then the headline, then the content. Numbered badges in gold.
+    Large type only. Motion is fade, slide and gentle scale. No bouncing,
+    spinning, aggressive zooms or constant animation.
+
+------------------------------------------------------------------------------
+SOUND DESIGN
+
+Four to seven restrained accents across a long-form video. Not one per caption
+and not one per cut. Every accent sits clearly under Temidayo's voice.
+
+Use an accent only on:
+  - a hero motion graphic entering
+  - the framework reveal
+  - a numbered section advancing
+  - a comparison flipping from one side to the other
+  - a major text emphasis
+  - a meaningful visual change
+
+Palette: soft whoosh, subtle click, gentle pop, restrained impact, clean sweep.
+
+If Riverside cannot place these automatically, do not treat sound as a blocker.
+Place the strongest few by hand and ship. The manual placements are listed per
+video in the build map.
+
+------------------------------------------------------------------------------
+THE STRONGEST MANUAL SOUND PLACEMENTS, IF AUTOMATION FAILS
+------------------------------------------------------------------------------
+
+  1. The One-Line Test entering at about 6:33. This is the framework reveal
+  and the single most important accent in the video.
+  2. The Claim arriving on the right of the comparison at about 7:40, after
+  the résumé version has been held alone.
+  3. The Spine bottom line at about 11:30, as the domain rows dim and the
+  sentence lands.
+  4. The first Receipt row at about 13:00, then nothing on rows two and
+  three. One accent establishes the pattern; three would be noise.
+  5. The CTA card at about 16:58.
+
+==============================================================================
+END OF BUILD MAP
+==============================================================================
