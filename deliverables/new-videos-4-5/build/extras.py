@@ -26,10 +26,10 @@ This video is one framework and one exercise. By the end you should have a singl
     ("6:33", "The One-Line Test"),
     ("7:08", "Part one: the Claim"),
     ("10:50", "Part two: the Spine"),
-    ("12:57", "Part three: Receipts"),
-    ("14:23", "A practical test"),
-    ("15:19", "When it still does not land"),
-    ("16:58", "Write your Claim below"),
+    ("13:04", "Part three: Receipts"),
+    ("14:57", "A practical test"),
+    ("15:53", "When it still does not land"),
+    ("17:32", "Write your Claim below"),
   ]),
 5: dict(
   body="""“Walk me through your background.” And you start at the beginning. First job, then the move, then the industry change, then the title, then the other title. By the time you reach the point, the person across from you has spent the whole conversation building the bridge you should have built for them.
@@ -55,9 +55,9 @@ You get the templates, my own filled-in examples, and the limits a good answer c
     ("6:36", "Do not pretend it was planned"),
     ("7:22", "“Why so many changes?”"),
     ("9:24", "The limits worth naming"),
-    ("10:46", "Say them out loud"),
-    ("11:20", "Story explains, proof supports"),
-    ("12:20", "Watch next"),
+    ("11:02", "Say them out loud"),
+    ("11:36", "Story explains, proof supports"),
+    ("12:36", "Watch next"),
   ]),
 }
 
@@ -80,7 +80,7 @@ SHORTS = {
  dict(n=3, title="The Resume Version and the Claim",
       hook="Watch what happens when I describe my career the normal way.",
       source="Live demonstration, 7:30 to 8:40",
-      body="The résumé list, then the Claim. The whole Short is the "
+      body="The resume list, then the Claim. The whole Short is the "
            "before and after, said out loud.",
       cta="Full video linked."),
  dict(n=4, title="The Sentence I Did Not Use",

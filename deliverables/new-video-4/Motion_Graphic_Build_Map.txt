@@ -130,7 +130,7 @@ V02   02_Category_Compression.png
 V03   03_The_One_Line_Test.png
 ==============================================================================
 
-  SCRIPT TRIGGER (approx 6:33)
+  SCRIPT TRIGGER (approx 6:34)
     "It's called the One-Line Test. Claim. Spine. Receipts."
 
   TREATMENT
@@ -169,7 +169,7 @@ V03   03_The_One_Line_Test.png
 V04   04_Claim_Resume_List_Vs_Problem.png
 ==============================================================================
 
-  SCRIPT TRIGGER (approx 7:08)
+  SCRIPT TRIGGER (approx 7:09)
     "A Claim is not a summary of your resume. Watch what happens when I do
     that version." through to "You need to know what I'm for."
 
@@ -209,7 +209,7 @@ V04   04_Claim_Resume_List_Vs_Problem.png
 V05   05_Spine_Many_Rooms_One_Kind_Of_Work.png
 ==============================================================================
 
-  SCRIPT TRIGGER (approx 10:57)
+  SCRIPT TRIGGER (approx 10:58)
     "The better question is this. What kept being true about the difficult
     work people trusted you with?" through the rooms.
 
@@ -250,25 +250,26 @@ V05   05_Spine_Many_Rooms_One_Kind_Of_Work.png
     spinning, aggressive zooms or constant animation.
 
 ==============================================================================
-V06   06_Receipts_Three_Eras.png
+V06   06_Receipts_Three_Proofs.png
 ==============================================================================
 
-  SCRIPT TRIGGER (approx 13:04)
+  SCRIPT TRIGGER (approx 13:02)
     "A Receipt has to make sense on its own." through the three receipts.
 
   TREATMENT
     Full-screen motion graphic
 
   PURPOSE
-    Proves the Claim with evidence from different eras, and models the
-    scoping language that keeps each one defensible.
+    Proves the Claim from three different organizations and three
+    different problems, and models the scoping language that keeps each
+    one defensible.
 
   WHAT APPEARS FIRST, AND THE REVEAL ORDER
     One row at a time, 1.2s apart, each held long enough to read the scope
     wording.
 
   APPROXIMATE HOLD
-    11 to 13 seconds
+    12 to 14 seconds. Each spoken Receipt now carries its own context, so this frame stays up longer than the others.
 
   RETURN TO CAMERA
     Cut back to Temidayo on the line immediately after the trigger passage
@@ -279,7 +280,7 @@ V06   06_Receipts_Three_Eras.png
     Suppress captions. The scope qualifiers must be readable.
 
   SOUND
-    One accent per row, same pitch, deliberately unshowy.
+    One accent on the first row only. Three would be noise.
 
   VISUAL HIERARCHY AND BRAND
     Deep navy #112345, warm cream #F5F1E8, muted gold #C9A84C. Montserrat
@@ -292,7 +293,7 @@ V06   06_Receipts_Three_Eras.png
 V07   07_Practical_Test_History_Or_Problem.png
 ==============================================================================
 
-  SCRIPT TRIGGER (approx 14:30)
+  SCRIPT TRIGGER (approx 14:55)
     "Say this. Can I try one sentence on you? Tell me what you think I
     actually help with." through both outcomes.
 
@@ -332,7 +333,7 @@ V07   07_Practical_Test_History_Or_Problem.png
 V08   08_Failure_Modes.png
 ==============================================================================
 
-  SCRIPT TRIGGER (approx 15:26)
+  SCRIPT TRIGGER (approx 15:52)
     "Three reasons a Claim doesn't land, and they get fixed in different
     ways." through the honest limits.
 
@@ -373,7 +374,7 @@ V08   08_Failure_Modes.png
 V09   09_CTA_Write_Your_Claim_Below.png
 ==============================================================================
 
-  SCRIPT TRIGGER (approx 17:05)
+  SCRIPT TRIGGER (approx 17:30)
     "And then put it in the comments. I mean that literally. Write your
     one-line Claim below."
 
@@ -417,7 +418,7 @@ V09   09_CTA_Write_Your_Claim_Below.png
 V10   10_Watch_Next_Change_Jobs.png
 ==============================================================================
 
-  SCRIPT TRIGGER (approx 17:54)
+  SCRIPT TRIGGER (approx 18:19)
     "Watch How to Change Jobs Without Starting Your Career Over next."
 
   TREATMENT
@@ -486,9 +487,9 @@ THE STRONGEST MANUAL SOUND PLACEMENTS, IF AUTOMATION FAILS
   the résumé version has been held alone.
   3. The Spine bottom line at about 11:30, as the domain rows dim and the
   sentence lands.
-  4. The first Receipt row at about 13:00, then nothing on rows two and
+  4. The first Receipt row at about 13:04, then nothing on rows two and
   three. One accent establishes the pattern; three would be noise.
-  5. The CTA card at about 16:58.
+  5. The CTA card at about 17:32.
 
 ==============================================================================
 END OF BUILD MAP

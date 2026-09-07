@@ -68,7 +68,7 @@ September 7, 2026
 
   [PASS] Framework arrives before the final quarter
          Framework named at 6:33, Claim teaching from 7:08, in a
-         18:04 video.
+         18:29 video.
 
   [PASS] Viewer leaves with a usable sentence
          The video ends with the viewer having written one Claim, and
@@ -115,7 +115,7 @@ September 7, 2026
          120px safe margin.
 
   [PASS] Runtime within target
-         2621 spoken words, about 18:04 at 145 wpm. Target 17:00 to
+         2682 spoken words, about 18:29 at 145 wpm. Target 17:00 to
          18:30.
 
 ------------------------------------------------------------------------------
@@ -205,13 +205,23 @@ OPEN ITEMS AND JUDGMENT CALLS
   exists, it would strengthen the video and can be dropped into the story
   section without disturbing anything else.
 
-  •  THE THIRD RECEIPT IS THE WEAKEST FIT FOR THE CLAIM. Onboarding and the
-  post-acquisition integration both sit squarely on incomplete evidence plus
-  a decision. The 1,000+ managers figure is a reach and scale claim rather
-  than a judgment-under-uncertainty claim. It is defensible and it is
-  operator-verified, but it supports the Claim less directly than the other
-  two. Flagged rather than swapped, because swapping it would mean either
-  broadening the Claim or using evidence that is not on file.
+  •  THE THIRD RECEIPT WAS REPLACED, September 7. It previously read "across
+  enterprise capability work, more than a thousand managers have come
+  through programs I built or led", which is a reach and scale claim rather
+  than a judgment-under-uncertainty claim. The same era supports a much
+  stronger framing, documented on case-studies.html and about.html: brought
+  in to a regulated global life sciences organization to build a capability
+  function that did not exist, where leadership expectations were written
+  down but nothing connected them to the decisions managers actually faced.
+  The 1,000+ figure is now the outcome of that work rather than the
+  substance of the claim. Nothing was invented and no new evidence was
+  needed.
+
+  •  THE ERA CLAIM WAS CORRECTED. The script previously said "different
+  decades, different industries, different job titles." The three Receipts
+  run 2021-2022 and 2022-2026, so different decades was not supportable. It
+  now reads different organizations, different problems, different years,
+  which is what the evidence shows.
 
 ==============================================================================
 END OF QA REPORT

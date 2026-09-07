@@ -110,22 +110,24 @@ V4 = [
       sound="One soft accent as the rows land, one clean resolve on the "
             "bottom line."),
 
- dict(id="V06", file="06_Receipts_Three_Eras.png",
+ dict(id="V06", file="06_Receipts_Three_Proofs.png",
       draw=lambda c: L.readings(c, "Part three: Receipts",
           "Three proofs. Each stands alone.",
-          [("Enterprise technology", "Onboarding: one integration measure moved 47 to 75."),
-           ("Post-acquisition", "No critical-role departures in the first 90 days."),
-           ("Capability work", "1,000+ managers through programs I built or led.")]),
+          [("Global software", "Two readings disagreed. Integration moved 47 to 75."),
+           ("An acquisition", "No critical-role departures in the first 90 days."),
+           ("Global life sciences", "Built the capability function that did not exist.")]),
       script="\"A Receipt has to make sense on its own.\" through the three "
              "receipts.",
-      purpose="Proves the Claim with evidence from different eras, and models "
-              "the scoping language that keeps each one defensible.",
+      purpose="Proves the Claim from three different organizations and three "
+              "different problems, and models the scoping language that keeps "
+              "each one defensible.",
       mode="Full-screen motion graphic",
       reveal="One row at a time, 1.2s apart, each held long enough to read the "
              "scope wording.",
-      hold="11 to 13 seconds",
+      hold="12 to 14 seconds. Each spoken Receipt now carries its own context, "
+           "so this frame stays up longer than the others.",
       captions="Suppress captions. The scope qualifiers must be readable.",
-      sound="One accent per row, same pitch, deliberately unshowy."),
+      sound="One accent on the first row only. Three would be noise."),
 
  dict(id="V07", file="07_Practical_Test_History_Or_Problem.png",
       draw=lambda c: L.duo(c, "A practical test",

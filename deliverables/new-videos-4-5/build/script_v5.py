@@ -65,9 +65,10 @@ SCRIPT = [
 (None, "Three parts. The work pattern. One clause of context. Where you're "
        "pointed now."),
 (None, "Mine goes like this."),
-("V04", "“I work on how organizations build what their people can do. I've "
-        "done that inside audit, inside life sciences, and inside tech. Right "
-        "now I'm doing it through my own firm.”"),
+("V04", "“I get brought in when something important is unclear and a decision "
+        "still has to be made. I've done that inside audit, inside life "
+        "sciences, and inside tech. Right now I'm doing it through my own "
+        "firm.”"),
 (None, "That's it. Twenty seconds, three sentences, and not one job title in "
        "it."),
 (None, "Here's the template. “I ...” and then your work pattern. "
@@ -169,9 +170,13 @@ SCRIPT = [
        "workers aged 55 to 64 at 9.6 years, and for workers aged 25 to 34 at "
        "2.7 years. Twenty-two percent of workers had been with their employer a "
        "year or less."),
-(None, "So the long single-employer career that a lot of hiring conversations "
-       "still quietly assume is not the common case. That is not a defense, and "
-       "I would not lead with it. It's just context worth having."),
+(None, "Now, that's a snapshot of how long people have been somewhere. It "
+       "isn't a count of how many employers a whole career contains, so I "
+       "wouldn't stretch it further than it goes. What it does show is that "
+       "being relatively new somewhere is ordinary. About one in five people "
+       "is."),
+(None, "That's not a defense, and I wouldn't lead with it. It's just context "
+       "worth having when somebody implies your history is unusual."),
 (None, "What you can do is answer it before it becomes a theory. One sentence, "
        "flat delivery, no defensiveness. \u201cTwo of those were short. One was "
        "a restructure and one I left because the role wasn't what was "

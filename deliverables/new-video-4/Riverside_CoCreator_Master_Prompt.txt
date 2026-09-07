@@ -79,7 +79,7 @@ V02   02_Category_Compression.png
 V03   03_The_One_Line_Test.png
 ------------------------------------------------------------------------------
 
-  "Use this image at approximately 6:33, when I say: It's called the One-
+  "Use this image at approximately 6:34, when I say: It's called the One-
   Line Test. Claim. Spine. Receipts.... HIDE OR REMOVE THE CAMERA VISUALLY
   DURING THIS SCENE. This image must be the only visual filling the entire
   16:9 canvas. Do not place it in a box over my camera footage and do not
@@ -93,7 +93,7 @@ V03   03_The_One_Line_Test.png
 V04   04_Claim_Resume_List_Vs_Problem.png
 ------------------------------------------------------------------------------
 
-  "Use this image at approximately 7:08, when I say: A Claim is not a
+  "Use this image at approximately 7:09, when I say: A Claim is not a
   summary of your resume. Watch what happens when I do that version."
   through to "You need to know what I'm for.... HIDE OR REMOVE THE CAMERA
   VISUALLY DURING THIS SCENE. This image must be the only visual filling the
@@ -108,7 +108,7 @@ V04   04_Claim_Resume_List_Vs_Problem.png
 V05   05_Spine_Many_Rooms_One_Kind_Of_Work.png
 ------------------------------------------------------------------------------
 
-  "Use this image at approximately 10:57, when I say: The better question is
+  "Use this image at approximately 10:58, when I say: The better question is
   this. What kept being true about the difficult work people trusted you
   with?" through the rooms.... HIDE OR REMOVE THE CAMERA VISUALLY DURING
   THIS SCENE. This image must be the only visual filling the entire 16:9
@@ -121,23 +121,24 @@ V05   05_Spine_Many_Rooms_One_Kind_Of_Work.png
   captions. The bottom line is the reveal."
 
 ------------------------------------------------------------------------------
-V06   06_Receipts_Three_Eras.png
+V06   06_Receipts_Three_Proofs.png
 ------------------------------------------------------------------------------
 
-  "Use this image at approximately 13:04, when I say: A Receipt has to make
+  "Use this image at approximately 13:02, when I say: A Receipt has to make
   sense on its own." through the three receipts.... HIDE OR REMOVE THE
   CAMERA VISUALLY DURING THIS SCENE. This image must be the only visual
   filling the entire 16:9 canvas. Do not place it in a box over my camera
   footage and do not leave me visible behind it or around the edges. One row
   at a time, 1.2s apart, each held long enough to read the scope wording.
-  Hold it for 11 to 13 seconds, then cut cleanly back to me. Suppress
-  captions. The scope qualifiers must be readable."
+  Hold it for 12 to 14 seconds. Each spoken Receipt now carries its own
+  context, so this frame stays up longer than the others., then cut cleanly
+  back to me. Suppress captions. The scope qualifiers must be readable."
 
 ------------------------------------------------------------------------------
 V07   07_Practical_Test_History_Or_Problem.png
 ------------------------------------------------------------------------------
 
-  "Use this image at approximately 14:30, when I say: Say this. Can I try
+  "Use this image at approximately 14:55, when I say: Say this. Can I try
   one sentence on you? Tell me what you think I actually help with." through
   both outcomes.... HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS SCENE.
   This image must be the only visual filling the entire 16:9 canvas. Do not
@@ -151,7 +152,7 @@ V07   07_Practical_Test_History_Or_Problem.png
 V08   08_Failure_Modes.png
 ------------------------------------------------------------------------------
 
-  "Use this image at approximately 15:26, when I say: Three reasons a Claim
+  "Use this image at approximately 15:52, when I say: Three reasons a Claim
   doesn't land, and they get fixed in different ways." through the honest
   limits.... HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This
   image must be the only visual filling the entire 16:9 canvas. Do not place
@@ -165,7 +166,7 @@ V08   08_Failure_Modes.png
 V09   09_CTA_Write_Your_Claim_Below.png
 ------------------------------------------------------------------------------
 
-  "Use this image at approximately 17:05, when I say: And then put it in the
+  "Use this image at approximately 17:30, when I say: And then put it in the
   comments. I mean that literally. Write your one-line Claim below.... HIDE
   OR REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This image must be the
   only visual filling the entire 16:9 canvas. Do not place it in a box over
@@ -177,7 +178,7 @@ V09   09_CTA_Write_Your_Claim_Below.png
 V10   10_Watch_Next_Change_Jobs.png
 ------------------------------------------------------------------------------
 
-  "Use this image at approximately 17:54, when I say: Watch How to Change
+  "Use this image at approximately 18:19, when I say: Watch How to Change
   Jobs Without Starting Your Career Over next.... HIDE OR REMOVE THE CAMERA
   VISUALLY DURING THIS SCENE. This image must be the only visual filling the
   entire 16:9 canvas. Do not place it in a box over my camera footage and do

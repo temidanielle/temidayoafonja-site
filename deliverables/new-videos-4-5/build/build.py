@@ -170,13 +170,13 @@ SECTIONS = {
      "version out loud, then the Claim, then the sentence you did not use."),
     ("Part two: the Spine", "10:50", "Contexts fast and out of order, then the "
      "single sentence underneath. Never chronological."),
-    ("Part three: Receipts", "12:57", "Three proofs, each with its scope "
+    ("Part three: Receipts", "13:04", "Three proofs, each with its scope "
      "qualifier said out loud. Do not drop the qualifiers."),
-    ("A practical test", "14:23", "Hand over the exact sentence. Practical, "
+    ("A practical test", "14:57", "Hand over the exact sentence. Practical, "
      "not scientific."),
-    ("When it still does not land", "15:19", "Three failure modes, then the "
+    ("When it still does not land", "15:53", "Three failure modes, then the "
      "honest limits. Do not sound triumphant here."),
-    ("CTA and close", "16:58", "One ask only. Then the Watch Next handoff and "
+    ("CTA and close", "17:32", "One ask only. Then the Watch Next handoff and "
      "the final two lines.")],
 5: [("Opening", "0:00", "The chronology dump and the moment they stop nodding. "
      "Light, recognizable, not bitter."),
@@ -193,10 +193,10 @@ SECTIONS = {
      "help, then the four-part shape and the template."),
     ("The limits", "9:24", "Short tenures, moves that do not compound, and the "
      "BLS context. Say the numbers precisely."),
-    ("Say them out loud", "10:46", "The practice instruction."),
-    ("CTA", "11:20", "Story explains, proof supports. Then Keep the Proof and "
+    ("Say them out loud", "11:02", "The practice instruction."),
+    ("CTA", "11:36", "Story explains, proof supports. Then Keep the Proof and "
      "the URL."),
-    ("Watch Next and close", "12:20", "Hand off to Video 4, then the final two "
+    ("Watch Next and close", "12:36", "Hand off to Video 4, then the final two "
      "lines.")],
 }
 
@@ -206,8 +206,9 @@ PICKUPS = {
     "The Claim, said cleanly and slowly: “%s”" % CLAIM,
     "The résumé version immediately before it. The demonstration needs both "
     "halves or it proves nothing.",
-    "All three Receipts with their scope qualifiers intact: one measure, the "
-    "initial ninety day period, programs I built or led.",
+    "All three Receipts in full. Each one now carries what was unclear, what "
+    "you had to work out, what you contributed and what happened. The scope "
+    "qualifiers stay in: one measure, my team's work, a ninety day window.",
     "The exact diagnostic sentence: “Can I try one sentence on you? Tell me "
     "what you think I actually help with.”",
     "The limits paragraph. Bias, the market, and a real gap in experience are "
@@ -306,14 +307,14 @@ MANUAL_SOUND = {
     "résumé version has been held alone.",
     "The Spine bottom line at about 11:30, as the domain rows dim and the "
     "sentence lands.",
-    "The first Receipt row at about 13:00, then nothing on rows two and three. "
+    "The first Receipt row at about 13:04, then nothing on rows two and three. "
     "One accent establishes the pattern; three would be noise.",
-    "The CTA card at about 16:58."],
+    "The CTA card at about 17:32."],
 5: ["Chapters, Spine, Next direction entering at about 1:31.",
     "The 20-second template at about 2:50.",
     "The 90-second template at about 4:29.",
-    "Story explains, proof supports at about 11:20.",
-    "The CTA card at about 11:40."],
+    "Story explains, proof supports at about 11:36.",
+    "The CTA card at about 11:56."],
 }
 
 
@@ -753,13 +754,22 @@ OPEN_ITEMS = {
     "not answer the question herself for years. If a real misread moment "
     "exists, it would strengthen the video and can be dropped into the story "
     "section without disturbing anything else.",
-    "THE THIRD RECEIPT IS THE WEAKEST FIT FOR THE CLAIM. Onboarding and the "
-    "post-acquisition integration both sit squarely on incomplete evidence plus "
-    "a decision. The 1,000+ managers figure is a reach and scale claim rather "
-    "than a judgment-under-uncertainty claim. It is defensible and it is "
-    "operator-verified, but it supports the Claim less directly than the other "
-    "two. Flagged rather than swapped, because swapping it would mean either "
-    "broadening the Claim or using evidence that is not on file."],
+    "THE THIRD RECEIPT WAS REPLACED, September 7. It previously read \"across "
+    "enterprise capability work, more than a thousand managers have come "
+    "through programs I built or led\", which is a reach and scale claim rather "
+    "than a judgment-under-uncertainty claim. The same era supports a much "
+    "stronger framing, documented on case-studies.html and about.html: brought "
+    "in to a regulated global life sciences organization to build a capability "
+    "function that did not exist, where leadership expectations were written "
+    "down but nothing connected them to the decisions managers actually faced. "
+    "The 1,000+ figure is now the outcome of that work rather than the "
+    "substance of the claim. Nothing was invented and no new evidence was "
+    "needed.",
+    "THE ERA CLAIM WAS CORRECTED. The script previously said \"different "
+    "decades, different industries, different job titles.\" The three Receipts "
+    "run 2021-2022 and 2022-2026, so different decades was not supportable. It "
+    "now reads different organizations, different problems, different years, "
+    "which is what the evidence shows."],
 5: ["THE 20-SECOND EXAMPLE USES A SHORTER SPINE THAN THE 90-SECOND VERSION. "
     "That is deliberate and it is stated in the script, but it is the one place "
     "where a viewer could hear two different sentences and think the system is "

@@ -112,7 +112,7 @@ September 7, 2026
          120px safe margin.
 
   [PASS] Runtime within target
-         1875 spoken words, about 12:55 at 145 wpm. Target 12:00 to
+         1917 spoken words, about 13:13 at 145 wpm. Target 12:00 to
          14:00.
 
 ------------------------------------------------------------------------------

@@ -204,7 +204,7 @@ V04   04_Twenty_Second_Structure.png
 V05   05_Ninety_Second_Structure.png
 ==============================================================================
 
-  SCRIPT TRIGGER (approx 4:48)
+  SCRIPT TRIGGER (approx 4:50)
     "Here's the template to fill in. Sentence one ..." through sentence
     three.
 
@@ -243,7 +243,7 @@ V05   05_Ninety_Second_Structure.png
 V06   06_Coherence_Is_Not_A_Perfect_Plan.png
 ==============================================================================
 
-  SCRIPT TRIGGER (approx 6:32)
+  SCRIPT TRIGGER (approx 6:35)
     "And do not pretend it was planned."
 
   TREATMENT
@@ -281,7 +281,7 @@ V06   06_Coherence_Is_Not_A_Perfect_Plan.png
 V07   07_Objection_Structure.png
 ==============================================================================
 
-  SCRIPT TRIGGER (approx 7:54)
+  SCRIPT TRIGGER (approx 7:56)
     "Four parts. Honest context, briefly. The Spine. What the changes
     built. Why the current direction follows."
 
@@ -320,7 +320,7 @@ V07   07_Objection_Structure.png
 V08   08_Story_Explains_Proof_Supports.png
 ==============================================================================
 
-  SCRIPT TRIGGER (approx 11:43)
+  SCRIPT TRIGGER (approx 12:01)
     "A story explains. Proof supports."
 
   TREATMENT
@@ -357,7 +357,7 @@ V08   08_Story_Explains_Proof_Supports.png
 V09   09_CTA_Keep_The_Proof.png
 ==============================================================================
 
-  SCRIPT TRIGGER (approx 12:20)
+  SCRIPT TRIGGER (approx 12:38)
     "It's at temidayoafonja.com/keep-the-proof, and it's linked below."
 
   TREATMENT
@@ -400,7 +400,7 @@ V09   09_CTA_Keep_The_Proof.png
 V10   10_Watch_Next_Why_Nobody_Can_Tell.png
 ==============================================================================
 
-  SCRIPT TRIGGER (approx 12:45)
+  SCRIPT TRIGGER (approx 13:02)
     "Watch Why Nobody Can Tell What You're Actually Good At next."
 
   TREATMENT
@@ -466,8 +466,8 @@ THE STRONGEST MANUAL SOUND PLACEMENTS, IF AUTOMATION FAILS
   1. Chapters, Spine, Next direction entering at about 1:31.
   2. The 20-second template at about 2:50.
   3. The 90-second template at about 4:29.
-  4. Story explains, proof supports at about 11:20.
-  5. The CTA card at about 11:40.
+  4. Story explains, proof supports at about 11:36.
+  5. The CTA card at about 11:56.
 
 ==============================================================================
 END OF BUILD MAP

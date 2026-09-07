@@ -82,8 +82,9 @@ SCRIPT = [
 ("V02", "When somebody meets your career for the first time, they are not "
         "reading it. They are sorting it."),
 (None, "That isn't laziness. It's what anybody does with a lot of unfamiliar "
-       "information and very little time. A recruiter has about forty seconds. "
-       "A hiring manager has one conversation. Somebody at an event has the "
+       "information and very little time. A recruiter is making a quick "
+       "first-pass judgment. A hiring manager has one conversation. Somebody "
+       "at an event has the "
        "length of a handshake. They're looking for a category, because a "
        "category tells them what to do next."),
 (None, "If your career offers one obvious category, they find it immediately, "
@@ -216,27 +217,32 @@ SCRIPT = [
        "usually simple."),
 
 # ----------------------------------------------------------------- RECEIPTS
-(None, "Receipts are the proof, and there's one rule here that matters more "
-       "than the others."),
+(None, "Receipts are the proof, and one rule matters most."),
 ("V06", "A Receipt has to make sense on its own."),
 (None, "If you have to explain three jobs before your evidence lands, you're "
-       "still making the listener do the translation. That's the same problem "
-       "wearing a different outfit."),
-(None, "Three Receipts, from different eras, each supporting the same Claim."),
-("V06", "One. In a global technology business, we redesigned onboarding, and "
-        "one measure of how well new hires felt integrated moved from 47 to 75. "
-        "That was my team's work, which I led, and it's one measure, not the "
-        "whole picture."),
-(None, "Two. During a post-acquisition integration, across the initial ninety "
-       "day period, no critical-role departures were recorded. That's a scope "
-       "and a period, not a permanent claim."),
-(None, "Three. Across enterprise capability work, more than a thousand managers "
-       "have come through programs I built or led."),
-(None, "Different decades. Different industries. Different job titles. Each one "
+       "still making the listener do the translation. Same problem, different "
+       "outfit."),
+("V06", "One. In a global software business, new hires were completing "
+        "onboarding and still not landing. The activity data looked fine. The "
+        "listening data didn't, and nobody had decided which to act on. "
+        "I led the redesign, and one measure of how integrated new hires felt "
+        "moved from 47 to 75. One measure, and my team's work."),
+(None, "Two. During an acquisition, the people holding the context were the "
+       "ones most likely to leave, and nobody had a clear picture of who they "
+       "were. I built the workforce integration for the first ninety days. "
+       "Across that period, no critical-role departures were recorded. A "
+       "ninety day window, not a permanent claim."),
+(None, "Three. In a regulated global life sciences organization, I was brought "
+       "in to build a capability function that didn't exist. Leadership "
+       "expectations were written down, but nothing connected them to the "
+       "decisions managers actually faced. I had to work out what was needed "
+       "before anybody could name it. More than a thousand managers came "
+       "through it."),
+(None, "Different organizations. Different problems. Different years. Each one "
        "stands up without the other two, and all three point at the same "
        "Claim."),
-(None, "That's what you're assembling. Not a career summary. Three things that "
-       "survive on their own."),
+(None, "That's what you're assembling. Not a career summary. Three things "
+       "that survive on their own."),
 
 # --------------------------------------------------------------- DIAGNOSTIC
 (None, "So how do you know whether your Claim is working? Here's a test. Not a "

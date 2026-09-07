@@ -9,8 +9,8 @@ record. The finished packages live in `deliverables/new-video-4/` and
 
 | file | what it is |
 |---|---|
-| `script_v4.py` | Video 4 script, 2,621 words, 18:04 at 145 wpm |
-| `script_v5.py` | Video 5 script, 1,875 words, 12:55 at 145 wpm |
+| `script_v4.py` | Video 4 script, 2,682 words, 18:29 at 145 wpm |
+| `script_v5.py` | Video 5 script, 1,917 words, 13:13 at 145 wpm |
 | `frames.py` | 8 teaching frames plus CTA and Watch Next per video |
 | `meta.py` | packaging, the renumbering table, the full-screen rule, the sound plan |
 | `extras.py` | descriptions, Shorts maps, thumbnail briefs |
@@ -35,19 +35,48 @@ Frame geometry is verified against the rendered DOM by
 | participation ask | minute 2 to 3 | 2:27 |
 | framework named | before the final quarter | 6:33 |
 | Claim teaching begins | minute 7 to 8 | 7:08 |
-| CTA | end | 16:58 |
-| total | 17:00 to 18:30 | 18:04 |
+| CTA | end | 17:32 |
+| total | 17:00 to 18:30 | 18:29 |
 
 ## The locked Claim
 
 > "I get brought in when the evidence is incomplete and an important decision
 > still has to be made."
 
-Tested against all five evidence areas. Four support it directly. The 1,000+
-managers Receipt is a reach and scale claim rather than a judgment-under-
-uncertainty claim, so it supports the Claim less directly than the other two;
-that is recorded in Video 4's QA report as a flag rather than fixed by
-broadening the Claim or substituting evidence that is not on file.
+Tested against all five evidence areas. All three Receipts now support it
+directly, after the September 7 evidence pass replaced the third one. See
+"Evidence pass" below.
+
+## Evidence pass, September 7
+
+A targeted factual pass after the first build. Five corrections, no creative
+rewrite:
+
+1. **Video 4's third Receipt was replaced.** It read "more than a thousand
+   managers have come through programs I built or led", which proves scale, not
+   the Claim. The same era supports a much stronger framing, already documented
+   on `case-studies.html` and `about.html`: brought in to a regulated global
+   life sciences organization to build a capability function that did not exist,
+   where leadership expectations were written down but nothing connected them to
+   the decisions managers actually faced. The 1,000+ figure is now the outcome
+   of that work rather than the substance of the claim.
+2. **All three Receipts now carry context.** Each one states what was unclear,
+   what had to be worked out, what Temidayo contributed and what happened, with
+   its scope qualifier intact.
+3. **"A recruiter has about forty seconds" was removed.** Nothing in the
+   research supports it. The research's only scan-time language is the author's
+   own rhetorical framing in the white-space statement, is unlabeled, and says
+   six seconds rather than forty. Replaced with non-numeric language.
+4. **"Different decades" was corrected to "different years".** The three
+   Receipts run 2021-2022 and 2022-2026, so different decades was not
+   supportable.
+5. **Video 5's BLS inference was scoped.** Median tenure is a snapshot of how
+   long people have been somewhere, not a count of employers across a whole
+   career, so it cannot support "the long single-employer career is not the
+   common case". The figures are unchanged; the conclusion now goes only as far
+   as the 22 percent figure does.
+6. **Video 5's 20-second script now carries the same Spine** as the 90-second
+   version, in slightly different words so it does not sound scripted.
 
 ## Judgment calls recorded, not resolved silently
 
