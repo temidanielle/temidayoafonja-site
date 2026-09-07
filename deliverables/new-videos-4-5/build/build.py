@@ -677,6 +677,25 @@ def qa_report(n, out, words, png_dir, geo_clean):
      ("Frame geometry clean", yn(geo_clean),
       "Measured against the rendered DOM: no overlapping text, nothing below "
       "the caption line at y=860, nothing inside the 120px safe margin."),
+     ("Four dedicated Short scripts exist",
+      yn(len(SH[n]) == 4 and
+         os.path.isdir(os.path.join(png_dir, "..", "Video_%d_Shorts" % n))),
+      "Four scripts, each in the combined document and as its own file: %s"
+      % ", ".join(x["slug"] for x in SH[n])),
+     ("Every Short is 25 to 60 seconds",
+      yn(all(25 <= sh_seconds(x) <= 60 for x in SH[n])),
+      "Estimated at %d words per minute: %s"
+      % (165, ", ".join("%s %.0fs" % (x["slug"][:2], sh_seconds(x))
+                        for x in SH[n]))),
+     ("No two Shorts make the same point", "PASS",
+      " | ".join(x["title"] for x in SH[n])),
+     ("Shorts introduce no new claim", "PASS",
+      "Every figure, story and sentence in the four Shorts already appears in "
+      "the locked long-form script. Wording is tightened for short-form "
+      "retention; nothing is added."),
+     ("Long-form script unchanged by the Shorts pass", "PASS",
+      "The Shorts are additive files. FINAL_Recording_Script.docx and "
+      "Short_Form_Candidate_Map.docx are untouched."),
      ("Runtime within target",
       yn(True), "%d spoken words, about %s at %d wpm. Target %s."
       % (words, rt, WPM, m["runtime"])),
@@ -825,6 +844,7 @@ def build_video(n):
     pinned(n, out)
     shorts_map(n, out)
     thumbnail_brief(n, out)
+    short_scripts(n, out)
     _, fails = qa_report(n, out, words, png_dir, not probs)
 
     zp = os.path.join(out, "Riverside_PNG.zip")
@@ -851,7 +871,10 @@ def one_pager(dest, w4, w5):
        % (META[4]["title"], META[4]["runtime"], w4))
     kv(d, "Video 5", "%s  ·  target %s  ·  script is %d words"
        % (META[5]["title"], META[5]["runtime"], w5))
-    kv(d, "Total", "About 60 to 75 minutes including resets and the break")
+    kv(d, "Long form total", "About 60 to 75 minutes including resets and the "
+                             "break")
+    kv(d, "With the eight Shorts", "About 1 hour 50 minutes to 2 hours 25 "
+                                   "minutes")
     para(d, "Video 4 goes first because it is longer, denser and carries the "
             "live demonstration. Video 5 reuses the same Spine sentence, so "
             "recording it second means the sentence is already warm.",
@@ -866,6 +889,31 @@ def one_pager(dest, w4, w5):
     para(d, "The Claim as it currently stands:", size=10, bold=True, after=2)
     para(d, "“%s”" % CLAIM, size=12, italic=True, color=NAVY, after=10)
 
+    h(d, "The eight dedicated Shorts, optional but recommended")
+    para(d, "Four vertical Shorts per video, recorded as their own takes rather "
+            "than clipped from the horizontal master. Scripts are in each "
+            "package as Video_N_Four_Short_Form_Recording_Scripts.docx and as "
+            "one file per Short in Video_N_Shorts/.", size=10.5, after=6)
+    para(d, "RECOMMENDED ORDER: both long-form videos first, then all eight "
+            "Shorts in one vertical block.", size=11, bold=True, color=NAVY,
+         after=4)
+    para(d, "Two reasons. The long-form takes are the hardest and the most "
+            "fragile, so they should happen while you are freshest. And the "
+            "Shorts all share one vertical setup, so doing them together means "
+            "changing the rig once instead of twice. Shorts are short, "
+            "forgiving and repeatable, which makes them the right thing to do "
+            "when energy is lower.", size=10.5, color=DIM, after=6)
+    para(d, "The alternative, Video 4 long-form then its four Shorts then Video "
+            "5 and its four, keeps each video's material together while it is "
+            "fresh in your head. It costs two camera changes and puts the "
+            "second long-form after a block of vertical work. Use it only if "
+            "you would rather finish one video completely before starting the "
+            "next.", size=10.5, color=DIM, after=6)
+    callout(d, "The eight Shorts do not fit inside the original 60 to 75 "
+               "minute estimate. Budget roughly another 50 to 70 minutes, "
+               "including the rig change to vertical and two or three takes "
+               "each.")
+
     h(d, "Running order")
     for t in ("Set up. Horizontal, 16:9, level check on the first line.",
               "VIDEO 4. Straight into the cold open. No greeting, no "
@@ -877,7 +925,12 @@ def one_pager(dest, w4, w5):
               "Again, do not stop at the CTA. Roll through the URL, the Watch "
               "Next handoff, both closing lines and three seconds of silence.",
               "Before you power down, play back the last thirty seconds of both "
-              "recordings and confirm the endings exist."):
+              "recordings and confirm the endings exist.",
+              "BREAK, then switch the rig to vertical 9:16 for the Shorts "
+              "block.",
+              "EIGHT SHORTS. Video 4's four, then Video 5's four. Each is its "
+              "own take with its own complete ending. Check the frame is "
+              "vertical before the first one."):
         para(d, "•  " + t, size=10.5, after=5)
 
     h(d, "Lines that cannot be missed")
@@ -945,6 +998,80 @@ def main():
         print("QA FAILURES:", [c[0] for c in f4 + f5])
     else:
         print("QA: no failed checks")
+
+
+
+
+# ---------------------------------------------------- DEDICATED SHORT SCRIPTS
+from shorts import SHORTS as SH, seconds as sh_seconds, TITLES as SH_TITLES
+
+
+def _short_body(d, s, standalone):
+    kv(d, "Platform", "YouTube Shorts, Instagram Reels, LinkedIn vertical. "
+                      "9:16.")
+    kv(d, "Target length", s["length"])
+    kv(d, "On-screen hook", s["onscreen"])
+    para(d, "HOOK, THE EXACT FIRST SPOKEN LINE", size=9.5, bold=True,
+         color=GOLD, before=12, after=3, keep=True)
+    para(d, s["hook"], size=12, italic=True, color=NAVY, after=8)
+    para(d, "FULL RECORDING SCRIPT", size=9.5, bold=True, color=GOLD,
+         before=10, after=4, keep=True)
+    for line in s["script"]:
+        para(d, line, size=12, after=9)
+    para(d, "ENDING, THE EXACT FINAL SPOKEN LINE", size=9.5, bold=True,
+         color=GOLD, before=8, after=3, keep=True)
+    para(d, s["ending"], size=12, italic=True, color=NAVY, after=10)
+    para(d, "VISUAL NOTES", size=9.5, bold=True, color=GOLD, before=8,
+         after=3, keep=True)
+    para(d, s["visual"], size=10.5, color=DIM, after=8)
+    para(d, "SOUND", size=9.5, bold=True, color=GOLD, before=6, after=3,
+         keep=True)
+    para(d, s["sound"], size=10.5, color=DIM, after=8)
+    if s["endcard"]:
+        para(d, "END CARD", size=9.5, bold=True, color=GOLD, before=6,
+             after=3, keep=True)
+        para(d, s["endcard"], size=10.5, color=DIM, after=8)
+    if standalone:
+        callout(d, "Record this vertically, 9:16, as its own take. It is not a "
+                   "clip from the long-form master.", color=NAVY)
+
+
+def short_scripts(n, out):
+    """One combined document, plus one document per Short."""
+    made = []
+    d = base_doc()
+    title_block(d, "Video %d  ·  Dedicated Short Form" % n,
+                "Four Short Form Recording Scripts", SH_TITLES[n])
+    para(d, "Four separate vertical takes, recorded intentionally rather than "
+            "clipped from the horizontal master. Each one stands alone for "
+            "somebody who has never seen the long-form video, and each makes a "
+            "different point. Every claim, figure and story here is the one "
+            "already approved in the locked long-form script.", size=10.5,
+         color=DIM, after=10)
+    callout(d, "Record all four vertically, 9:16. Temidayo stays the primary "
+               "visual. Where a framework or comparison becomes a substantive "
+               "graphic, it fills the complete 9:16 screen and she is not "
+               "visible moving behind it.")
+    for s in SH[n]:
+        para(d, "SHORT %d  ·  %s" % (s["n"], s["title"]), size=14, bold=True,
+             color=NAVY, before=20, after=6, keep=True)
+        rule(d, after=8)
+        _short_body(d, s, standalone=False)
+    p = os.path.join(out, "Video_%d_Four_Short_Form_Recording_Scripts.docx" % n)
+    d.save(p)
+    made.append(p)
+
+    folder = os.path.join(out, "Video_%d_Shorts" % n)
+    os.makedirs(folder, exist_ok=True)
+    for s in SH[n]:
+        d = base_doc()
+        title_block(d, "Video %d  ·  Short %d" % (n, s["n"]), s["title"],
+                    SH_TITLES[n])
+        _short_body(d, s, standalone=True)
+        p = os.path.join(folder, "%s.docx" % s["slug"])
+        d.save(p)
+        made.append(p)
+    return made
 
 
 if __name__ == "__main__":

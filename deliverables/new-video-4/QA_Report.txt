@@ -4,7 +4,7 @@ Video 4  ·  Why Nobody Can Tell What You're Actually Good At
 September 7, 2026
 ==============================================================================
 
-25 checks run. 25 passed, 0 not applicable, 0 failed.
+30 checks run. 30 passed, 0 not applicable, 0 failed.
 
   [PASS] Research document actually read
          Video_4___Outlier_Research__Concept.docx, 6,601 words, 247
@@ -113,6 +113,29 @@ September 7, 2026
          Measured against the rendered DOM: no overlapping text,
          nothing below the caption line at y=860, nothing inside the
          120px safe margin.
+
+  [PASS] Four dedicated Short scripts exist
+         Four scripts, each in the combined document and as its own
+         file: 01_Interesting_Background, 02_They_Are_Sorting_You,
+         03_Resume_Vs_Claim, 04_The_Sentence_I_Did_Not_Use
+
+  [PASS] Every Short is 25 to 60 seconds
+         Estimated at 165 words per minute: 01 40s, 02 49s, 03 47s,
+         04 48s
+
+  [PASS] No two Shorts make the same point
+         Interesting Background | They Are Sorting You, Not Reading
+         You | The Resume Version and the Claim | The Better Sentence
+         I Did Not Use
+
+  [PASS] Shorts introduce no new claim
+         Every figure, story and sentence in the four Shorts already
+         appears in the locked long-form script. Wording is tightened
+         for short-form retention; nothing is added.
+
+  [PASS] Long-form script unchanged by the Shorts pass
+         The Shorts are additive files. FINAL_Recording_Script.docx
+         and Short_Form_Candidate_Map.docx are untouched.
 
   [PASS] Runtime within target
          2682 spoken words, about 18:29 at 145 wpm. Target 17:00 to

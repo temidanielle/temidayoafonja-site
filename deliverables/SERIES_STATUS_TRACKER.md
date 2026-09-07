@@ -32,9 +32,34 @@ Video 4's working Claim, approved:
 
 | Archive | SHA-256 |
 |---|---|
-| `Video_4_FINAL_Recording_Package.zip` | `dd0544e3f9266f4209d6f9b109ead2449df5221a25a7bceab6a22b2169f5fb77` |
-| `Video_5_FINAL_Recording_Package.zip` | `8fb80d7f09f8016981b26d99bed03766e5234a86a7fba01a71701d0ecb6d8a24` |
-| `Videos_4_5_FINAL.zip` | `01c440d419e0b6ca8c9f8aba7885a6cfff33db41fdfaf0997553ea7a28ff85ff` |
+| `Video_4_FINAL_Recording_Package.zip` | `2aa9604dd389453ed22f65136dd2334c86292d51885683af743ff7be3bfb8df5` |
+| `Video_5_FINAL_Recording_Package.zip` | `6be8b22eedc2edd11543e50e38600d8f436d2a4619a294d416c62c6cb3e57eb2` |
+| `Videos_4_5_FINAL.zip` | `c8acd0375382e2117353fd09dcae0442f047b95dd162d2e508f09150b806344c` |
+
+Superseded checksums, from the lock before the Shorts were added:
+`dd0544e3...` (Video 4), `8fb80d7f...` (Video 5), `01c440d4...` (combined).
+
+### Dedicated Short-form scripts, added September 7
+
+Four vertical Short scripts per video, recorded as their own 9:16 takes rather
+than clipped from the horizontal master. Each is 40 to 49 seconds, stands alone,
+and makes a point none of the others makes. Every claim and story in them is
+already in the locked long-form script; nothing new was introduced.
+
+`Video_N_Four_Short_Form_Recording_Scripts.docx` plus `Video_N_Shorts/` with one
+file per Short. `Short_Form_Candidate_Map.docx` stays in both packages as the
+fallback extraction map from the horizontal recordings.
+
+**The long-form scripts were not reopened.** Verified by comparing extracted
+text: `FINAL_Recording_Script.docx`, `Short_Form_Candidate_Map.docx`, the
+descriptions, the support decks, the build maps and the Co-Creator prompts are
+all unchanged in content.
+
+**Session time.** The eight Shorts do not fit inside the original 60 to 75
+minute estimate. With them the session runs roughly 1 hour 50 minutes to 2 hours
+25 minutes. Recommended order: both long-form videos first, then all eight
+Shorts in one vertical block, so the hardest takes happen while energy is
+highest and the rig changes to vertical once.
 
 ### Approved in the evidence pass
 
