@@ -1,0 +1,132 @@
+==============================================================================
+RIVERSIDE SLIDE AUDIT
+Video 2  -  Is Your Job Making You Less Marketable?
+==============================================================================
+
+COUNTS
+  Original presentation deck        13 slides
+  Original reveal build deck        23 slides
+  Riverside edit asset set           9 slides
+  Reduction against the reveal deck 14 fewer
+
+Both original decks are untouched. This set is additive and lives in its own
+folder.
+
+------------------------------------------------------------------------------
+KEPT AND MERGED
+------------------------------------------------------------------------------
+
+  Main 2  Two different questions  [KEEP]
+    to: 02_Valuable_Here_Vs_Legible_Elsewhere.png
+    The central distinction of the video. Kept as a two-way comparison.
+
+  Main 4  Test one, before and after  [KEEP]
+    to: 03_Test_One_Remove_The_Company_Nouns.png
+    The rewrite is the teaching. Shown as one completed before and after.
+
+  Main 6  Test two, three evidence types  [MERGE]
+    to: 04_Test_Two_Outside_Context_Evidence.png
+    The three examples are spoken clearly on camera. The card keeps only
+    the name of the test and the one reason it counts.
+
+  Main 8  Test three, three questions  [MERGE]
+    to: 05_Test_Three_New_Judgment_Or_Same_Work_Faster.png
+    Reduced to the comparison a viewer is most likely to get wrong.
+
+  Main 9  The three tests  [MERGE]
+    to: 06_The_Three_Tests_Read_The_Pattern.png
+    Merged with main 10 so the summary and the pattern correction hold the
+    screen together instead of changing after about twenty seconds.
+
+  Main 10  Reading the pattern  [MERGE]
+    to: 06_The_Three_Tests_Read_The_Pattern.png
+    Merged into the summary card, above.
+
+  Main 11  Before you leave, four actions  [MERGE]
+    to: 07_None_Of_This_Means_You_Should_Leave.png
+    All four actions are spoken. The card carries only the reassurance, so
+    the section cannot read as a push to quit.
+
+  Main 12  Field Kit  [CTA]
+    to: 08_CTA_Capability_Formation_Field_Kit.png
+    Approved CTA and URL.
+
+  Main 13  Watch Next  [WATCH NEXT]
+    to: 09_Watch_Next_3_Things_Before_Quitting.png
+    Approved destination. Right of frame kept clear for the end screen.
+
+------------------------------------------------------------------------------
+REMOVED
+------------------------------------------------------------------------------
+
+  Main 1  Title card  [REMOVE]
+    A title card is presentation furniture. Temidayo on camera opens the
+    video.
+
+  Main 3, 5, 7  Section title cards for tests one, two and three  [REMOVE]
+    Three near-identical THREE MARKETABILITY TESTS cards that differ only
+    by which test is highlighted. Each test now has one card that does the
+    work.
+
+  Reveal 4 to 5  Test one build  [REMOVE]
+    Partial before-only state. Only the completed version is kept.
+
+  Reveal 7 to 10  Test two build  [REMOVE]
+    Progressive one, two and three item states, plus a repeat of the final
+    state.
+
+  Reveal 12 to 15  Test three build  [REMOVE]
+    Progressive question-by-question states.
+
+  Reveal 18 to 21  Before you leave build  [REMOVE]
+    Progressive action-by-action states.
+
+------------------------------------------------------------------------------
+ADDED
+------------------------------------------------------------------------------
+
+  01_Hook_Question_Would_Anyone_Outside_Understand.png
+    The hook question had no slide in the presentation deck because
+    Temidayo asked it straight to camera over a title card. As a Riverside
+    cutaway it makes the private question land as the viewer's own.
+    Wording is verbatim from the approved script.
+
+------------------------------------------------------------------------------
+SCRIPT AND SLIDE CONFLICTS THAT NEED YOUR DECISION
+------------------------------------------------------------------------------
+
+  Main 4, the after sentence
+
+    THE CONFLICT: The deck reads "I combine incomplete operating data,
+    surface the decision leaders are avoiding, and create a shared view of
+    what needs to happen." The approved v5.1.1 script reads "I take
+    incomplete operating data, surface the decision leaders are avoiding,
+    and get a group to a shared view of what happens next." The two have
+    never matched.
+
+    WHAT I DID: The Riverside card uses a shortened form of the script
+    wording, because 24 words does not read in six seconds on video: "I
+    take incomplete operating data and surface the decision people are
+    avoiding." Temidayo says the full sentence on camera. If you would
+    rather the card carried her exact words in full, say so and I will set
+    it at a smaller size.
+
+------------------------------------------------------------------------------
+BRAND VALUE WORTH ONE DECISION
+
+Your brief specifies deep navy #112345, and that is the value the standing
+brand
+rules and the roadmap README both carry, so these Riverside assets use it.
+
+Every existing slide deck in the repository, Videos 1 through 8, is built with
+#0F2346 instead. The two differ by two points of red and one of blue and are
+indistinguishable on screen, but they are not the same value, and the
+divergence
+predates this work.
+
+Nothing has been changed in any existing deck. If you want the two reconciled,
+say which value wins and it can be done as a separate pass.
+
+==============================================================================
+END OF AUDIT
+==============================================================================

@@ -1,0 +1,3 @@
+_preview/*
+!_preview/sheet_v*.png
+__pycache__/

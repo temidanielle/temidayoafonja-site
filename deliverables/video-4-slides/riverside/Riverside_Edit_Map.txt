@@ -1,0 +1,225 @@
+==============================================================================
+RIVERSIDE EDIT MAP
+Video 4  -  How to Explain Your Career Change
+==============================================================================
+
+9 visual assets for a talking-head edit. Temidayo is on camera for the long
+stretches between them. Each one is a full-frame 1920 x 1080 PNG, uploaded to
+Riverside individually, with its own prompt below.
+
+------------------------------------------------------------------------------
+SLIDE 1 OF 9
+
+  FILE
+    01_The_Chapters_The_Titles_Changed.png
+
+  SCRIPT MATCH
+    "Accounting and audit. Then cybersecurity and privacy. Then people and
+    employee experience. Then enterprise transformation."
+
+  PURPOSE
+    Lets the viewer see the chapters while I say them, so the story does
+    not have to be held by ear.
+
+  DISPLAY
+    Full screen
+
+  SUGGESTED SCREEN TIME
+    6 to 8 seconds
+
+  RIVERSIDE AI PROMPT  (copy and paste with this image)
+    "Show this slide while I name my four chapters. Keep it up until I
+    finish saying enterprise transformation, then cut back to me."
+
+------------------------------------------------------------------------------
+SLIDE 2 OF 9
+
+  FILE
+    02_Chronology_Vs_Portability.png
+
+  SCRIPT MATCH
+    "Chronology is where you have been. Portability is what traveled with
+    you. They are not the same thing."
+
+  PURPOSE
+    Carries the distinction the rest of the video depends on.
+
+  DISPLAY
+    Full screen
+
+  SUGGESTED SCREEN TIME
+    6 to 8 seconds
+
+  RIVERSIDE AI PROMPT  (copy and paste with this image)
+    "Bring this slide up when I say chronology is where you have been and
+    portability is what traveled with you. Hold it while I explain the
+    difference, then return to me."
+
+------------------------------------------------------------------------------
+SLIDE 3 OF 9
+
+  FILE
+    03_Do_Not_Invent_The_Plan.png
+
+  SCRIPT MATCH
+    "We go back and invent the plan, a fifteen-year strategy that you were
+    absolutely not running at the time. Do not do that."
+
+  PURPOSE
+    Makes the single strongest warning in the video memorable.
+
+  DISPLAY
+    Full screen
+
+  SUGGESTED SCREEN TIME
+    4 to 6 seconds
+
+  RIVERSIDE AI PROMPT  (copy and paste with this image)
+    "Use this slide when I warn against inventing the plan. Full screen
+    for a few seconds, then straight back to me."
+
+------------------------------------------------------------------------------
+SLIDE 4 OF 9
+
+  FILE
+    04_The_Three_Sentences.png
+
+  SCRIPT MATCH
+    "Three sentences do that. Not a story. Three sentences."
+
+  PURPOSE
+    Gives the viewer the actual template, which is the most reusable thing
+    in the video.
+
+  DISPLAY
+    Full screen
+
+  SUGGESTED SCREEN TIME
+    8 to 10 seconds
+
+  RIVERSIDE AI PROMPT  (copy and paste with this image)
+    "Show this slide when I introduce the three sentences, and bring it
+    back at the end when I say the whole thing out loud. Hold it long
+    enough to read all three."
+
+------------------------------------------------------------------------------
+SLIDE 5 OF 9
+
+  FILE
+    05_Sentence_Two_Look_Past_The_Nouns.png
+
+  SCRIPT MATCH
+    "Look past the nouns. Underneath the industries and the job titles,
+    what were you actually doing?"
+
+  PURPOSE
+    Shows what to discard and what to look for, which is hard to hold by
+    ear.
+
+  DISPLAY
+    Full screen
+
+  SUGGESTED SCREEN TIME
+    7 to 9 seconds
+
+  RIVERSIDE AI PROMPT  (copy and paste with this image)
+    "Use this slide when I say to look past the nouns. Keep it up while I
+    explain how to find the repeated work, then cut back to me."
+
+------------------------------------------------------------------------------
+SLIDE 6 OF 9
+
+  FILE
+    06_Two_Things_Not_To_Claim.png
+
+  SCRIPT MATCH
+    "Do not claim every move was intentional." through to "And do not
+    claim that everything transferred, because it did not."
+
+  PURPOSE
+    Holds both halves of the honesty boundary side by side.
+
+  DISPLAY
+    Full screen
+
+  SUGGESTED SCREEN TIME
+    7 to 9 seconds
+
+  RIVERSIDE AI PROMPT  (copy and paste with this image)
+    "Show this slide across the honesty boundary section, while I say not
+    to claim every move was intentional and not to claim everything
+    transferred."
+
+------------------------------------------------------------------------------
+SLIDE 7 OF 9
+
+  FILE
+    07_The_Test_What_Am_I_Good_At.png
+
+  SCRIPT MATCH
+    "Then ask them one question. What do you think I am good at?"
+
+  PURPOSE
+    Gives the viewer the test and how to read the answer in one frame.
+
+  DISPLAY
+    Full screen
+
+  SUGGESTED SCREEN TIME
+    6 to 8 seconds
+
+  RIVERSIDE AI PROMPT  (copy and paste with this image)
+    "Bring this slide up when I tell you to ask somebody what they think
+    you are good at. Hold it while I explain both answers, then return to
+    me."
+
+------------------------------------------------------------------------------
+SLIDE 8 OF 9
+
+  FILE
+    08_CTA_Career_Evidence_Starter.png
+
+  SCRIPT MATCH
+    "That is what the free Career Evidence Starter is for. About 10 to 15
+    focused minutes, one real accomplishment, turned into a proof line you
+    can use."
+
+  PURPOSE
+    Supports the CTA and shows the link while I say it.
+
+  DISPLAY
+    CTA
+
+  SUGGESTED SCREEN TIME
+    6 to 8 seconds
+
+  RIVERSIDE AI PROMPT  (copy and paste with this image)
+    "Show this CTA slide while I describe the Career Evidence Starter,
+    through to it being linked below. Do not cover the web address."
+
+------------------------------------------------------------------------------
+SLIDE 9 OF 9
+
+  FILE
+    09_Watch_Next_Should_I_Make_An_Internal_Move.png
+
+  SCRIPT MATCH
+    "Watch Should I Make an Internal Move? 3 Questions to Decide next."
+
+  PURPOSE
+    Supports the Watch Next ending, with the end-screen area kept clear.
+
+  DISPLAY
+    Watch Next
+
+  SUGGESTED SCREEN TIME
+    6 to 10 seconds
+
+  RIVERSIDE AI PROMPT  (copy and paste with this image)
+    "Use this as the closing slide when I say to watch Should I Make an
+    Internal Move? next. Keep the right side clear for the YouTube end
+    screen."
+
+==============================================================================
+END OF MAP
+==============================================================================

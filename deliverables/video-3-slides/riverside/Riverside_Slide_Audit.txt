@@ -1,0 +1,114 @@
+==============================================================================
+RIVERSIDE SLIDE AUDIT
+Video 3  -  3 Things to Do Before Quitting Your Job
+==============================================================================
+
+COUNTS
+  Original presentation deck        13 slides
+  Original reveal build deck        27 slides
+  Riverside edit asset set           9 slides
+  Reduction against the reveal deck 18 fewer
+
+Both original decks are untouched. This set is additive and lives in its own
+folder.
+
+------------------------------------------------------------------------------
+KEPT AND MERGED
+------------------------------------------------------------------------------
+
+  Main 2  Once you leave, access changes  [KEEP]
+    to: 01_Once_You_Leave_Access_Changes.png
+    The premise the whole video rests on.
+
+  Main 2  Safety exception  [KEEP]
+    to: 02_If_Your_Safety_Is_At_Risk_Do_Not_Wait.png
+    Split onto its own card. A viewer in that situation should not have to
+    catch it as a footnote under another point.
+
+  Main 4  Check one, yours to keep and not yours to take  [MERGE]
+    to: 03_Check_One_Preserve_The_Evidence.png
+    The deck lists eleven items across the two columns. Reduced to the
+    principle on each side, because Temidayo reads the detail aloud.
+
+  Main 6  Check two, four-part framework  [KEEP]
+    to: 04_Check_Two_Name_What_The_Work_Built.png
+    A named four-part framework, kept whole. Four columns rather than
+    bullets.
+
+  Main 8  Check three  [MERGE]
+    to: 05_Check_Three_Test_The_Next_Move.png
+    Kept as the two-way test. The three sub-questions are spoken.
+
+  Main 9  The three checks  [KEEP]
+    to: 06_The_Three_Checks.png
+    Summary, in the order she says it.
+
+  Main 10  Reading the evidence  [MERGE]
+    to: 07_How_The_Evidence_Reads.png
+    Rebuilt from the approved script. See the conflict noted below.
+
+  Main 12  Career Decision Evidence Check  [CTA]
+    to: 08_CTA_Career_Decision_Evidence_Check.png
+    Approved CTA and URL. Gating architecture unchanged.
+
+  Main 13  Watch Next  [WATCH NEXT]
+    to: 09_Watch_Next_Change_Jobs_Without_Starting_Over.png
+    Approved destination. Right of frame kept clear for the end screen.
+
+------------------------------------------------------------------------------
+REMOVED
+------------------------------------------------------------------------------
+
+  Main 1  Title card  [REMOVE]
+    Presentation furniture.
+
+  Main 3, 5, 7  Section title cards for checks one, two and three  [REMOVE]
+    Three near-identical THREE CHECKS BEFORE YOU RESIGN cards.
+
+  Main 11  Answer these three first  [REMOVE]
+    A third restatement of the same three checks, after main 9 and main
+    10. One summary card is enough.
+
+  Reveal builds across checks one, two and three  [REMOVE]
+    Fourteen progressive states. Only completed versions are kept.
+
+------------------------------------------------------------------------------
+SCRIPT AND SLIDE CONFLICTS THAT NEED YOUR DECISION
+------------------------------------------------------------------------------
+
+  Main 10, Reading the evidence
+
+    THE CONFLICT: The existing deck offers three outcomes: Leave,
+    Reposition inside, and Build a bridge. The approved v5.1.1 script
+    offers three different ones: if all three come out clear you are
+    leaving with a case; if the evidence is there but the next move does
+    not use it, the problem may be the direction; and if you cannot fill
+    in the evidence at all, sit with that for a week. These are not the
+    same taxonomy.
+
+    WHAT I DID: The Riverside card follows the approved script, because
+    the script is the locked v5.1.1 artifact and the deck predates it.
+    This needs your decision: either the deck is stale and should be
+    corrected separately, or the Leave / Reposition / Bridge framing is
+    still wanted and the script is the one that moved. I have changed
+    nothing in either original.
+
+------------------------------------------------------------------------------
+BRAND VALUE WORTH ONE DECISION
+
+Your brief specifies deep navy #112345, and that is the value the standing
+brand
+rules and the roadmap README both carry, so these Riverside assets use it.
+
+Every existing slide deck in the repository, Videos 1 through 8, is built with
+#0F2346 instead. The two differ by two points of red and one of blue and are
+indistinguishable on screen, but they are not the same value, and the
+divergence
+predates this work.
+
+Nothing has been changed in any existing deck. If you want the two reconciled,
+say which value wins and it can be done as a separate pass.
+
+==============================================================================
+END OF AUDIT
+==============================================================================

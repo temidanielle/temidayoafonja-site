@@ -1,0 +1,227 @@
+==============================================================================
+RIVERSIDE EDIT MAP
+Video 2  -  Is Your Job Making You Less Marketable?
+==============================================================================
+
+9 visual assets for a talking-head edit. Temidayo is on camera for the long
+stretches between them. Each one is a full-frame 1920 x 1080 PNG, uploaded to
+Riverside individually, with its own prompt below.
+
+------------------------------------------------------------------------------
+SLIDE 1 OF 9
+
+  FILE
+    01_Hook_Question_Would_Anyone_Outside_Understand.png
+
+  SCRIPT MATCH
+    "And somewhere underneath that, there may be a question you have never
+    said out loud. Would anyone outside this company actually understand
+    what I do?"
+
+  PURPOSE
+    Puts the private question on screen so it lands as the viewer's own.
+
+  DISPLAY
+    Full screen
+
+  SUGGESTED SCREEN TIME
+    5 to 7 seconds
+
+  RIVERSIDE AI PROMPT  (copy and paste with this image)
+    "Use this slide the moment I ask whether anyone outside the company
+    would understand what I do. Full screen, long enough to read once,
+    then cut back to me. Do not put captions over the text."
+
+------------------------------------------------------------------------------
+SLIDE 2 OF 9
+
+  FILE
+    02_Valuable_Here_Vs_Legible_Elsewhere.png
+
+  SCRIPT MATCH
+    "Valuable here and legible elsewhere are two different questions, and
+    doing well at work only answers the first one."
+
+  PURPOSE
+    Carries the central distinction of the video in one comparison.
+
+  DISPLAY
+    Full screen
+
+  SUGGESTED SCREEN TIME
+    6 to 8 seconds
+
+  RIVERSIDE AI PROMPT  (copy and paste with this image)
+    "Bring this slide up when I say that valuable here and legible
+    elsewhere are two different questions. Hold it full screen while I
+    explain both sides, then return to me."
+
+------------------------------------------------------------------------------
+SLIDE 3 OF 9
+
+  FILE
+    03_Test_One_Remove_The_Company_Nouns.png
+
+  SCRIPT MATCH
+    "Here is a before. I own the QBR process for this business unit."
+    through to "Same person. Same work. One version travels."
+
+  PURPOSE
+    Shows the rewrite rather than describing it, which is the whole test.
+
+  DISPLAY
+    Full screen
+
+  SUGGESTED SCREEN TIME
+    7 to 9 seconds
+
+  RIVERSIDE AI PROMPT  (copy and paste with this image)
+    "Show this slide when I read the before and after sentence. Keep it
+    full screen through both versions so the viewer can compare them, then
+    cut back to me."
+
+------------------------------------------------------------------------------
+SLIDE 4 OF 9
+
+  FILE
+    04_Test_Two_Outside_Context_Evidence.png
+
+  SCRIPT MATCH
+    "The second test is to find outside-context evidence."
+
+  PURPOSE
+    Names the test and the one reason it counts more than internal praise.
+
+  DISPLAY
+    Full screen
+
+  SUGGESTED SCREEN TIME
+    4 to 6 seconds
+
+  RIVERSIDE AI PROMPT  (copy and paste with this image)
+    "Use this slide when I introduce the second test. Full screen for a
+    few seconds, then back to me while I give the examples."
+
+------------------------------------------------------------------------------
+SLIDE 5 OF 9
+
+  FILE
+    05_Test_Three_New_Judgment_Or_Same_Work_Faster.png
+
+  SCRIPT MATCH
+    "Is the main change new judgment, or are you mostly doing the same
+    work faster?"
+
+  PURPOSE
+    Makes the distinction the viewer is most likely to get wrong visible.
+
+  DISPLAY
+    Full screen
+
+  SUGGESTED SCREEN TIME
+    6 to 8 seconds
+
+  RIVERSIDE AI PROMPT  (copy and paste with this image)
+    "Bring this slide in when I ask whether the change is new judgment or
+    the same work faster. Hold it while I explain both, then return to
+    me."
+
+------------------------------------------------------------------------------
+SLIDE 6 OF 9
+
+  FILE
+    06_The_Three_Tests_Read_The_Pattern.png
+
+  SCRIPT MATCH
+    "So those are the three. Remove the company nouns. Find outside-
+    context evidence. Read the last 90 days."
+
+  PURPOSE
+    Summarizes the teaching and corrects the one-quarter misreading in the
+    same frame.
+
+  DISPLAY
+    Full screen
+
+  SUGGESTED SCREEN TIME
+    7 to 9 seconds
+
+  RIVERSIDE AI PROMPT  (copy and paste with this image)
+    "Show this summary slide when I list the three tests together. Leave
+    it up while I explain reading the pattern rather than one quarter,
+    then cut back to me."
+
+------------------------------------------------------------------------------
+SLIDE 7 OF 9
+
+  FILE
+    07_None_Of_This_Means_You_Should_Leave.png
+
+  SCRIPT MATCH
+    "None of this means you should leave."
+
+  PURPOSE
+    Holds the nuance of the video so the section does not read as a push
+    to quit.
+
+  DISPLAY
+    Full screen
+
+  SUGGESTED SCREEN TIME
+    4 to 6 seconds
+
+  RIVERSIDE AI PROMPT  (copy and paste with this image)
+    "Use this slide the moment I say that none of this means you should
+    leave. Full screen briefly, then back to me for the list of things to
+    do from where you are."
+
+------------------------------------------------------------------------------
+SLIDE 8 OF 9
+
+  FILE
+    08_CTA_Capability_Formation_Field_Kit.png
+
+  SCRIPT MATCH
+    "If you want a fuller read than three tests can give you, I made the
+    Capability Formation Field Kit."
+
+  PURPOSE
+    Supports the CTA and puts the link on screen while I say it.
+
+  DISPLAY
+    CTA
+
+  SUGGESTED SCREEN TIME
+    6 to 8 seconds
+
+  RIVERSIDE AI PROMPT  (copy and paste with this image)
+    "Show this CTA slide while I describe the Field Kit. Keep it up until
+    I finish saying it is linked below. Do not cover the web address."
+
+------------------------------------------------------------------------------
+SLIDE 9 OF 9
+
+  FILE
+    09_Watch_Next_3_Things_Before_Quitting.png
+
+  SCRIPT MATCH
+    "Watch 3 Things to Do Before Quitting Your Job next."
+
+  PURPOSE
+    Supports the Watch Next ending, with the right of the frame left clear
+    for the YouTube end screen.
+
+  DISPLAY
+    Watch Next
+
+  SUGGESTED SCREEN TIME
+    6 to 10 seconds
+
+  RIVERSIDE AI PROMPT  (copy and paste with this image)
+    "Use this as the closing slide when I say to watch 3 Things to Do
+    Before Quitting Your Job next. Keep the right side of the screen clear
+    so the YouTube end screen can sit there."
+
+==============================================================================
+END OF MAP
+==============================================================================

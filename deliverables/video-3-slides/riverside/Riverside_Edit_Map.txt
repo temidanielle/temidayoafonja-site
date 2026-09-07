@@ -1,0 +1,222 @@
+==============================================================================
+RIVERSIDE EDIT MAP
+Video 3  -  3 Things to Do Before Quitting Your Job
+==============================================================================
+
+9 visual assets for a talking-head edit. Temidayo is on camera for the long
+stretches between them. Each one is a full-frame 1920 x 1080 PNG, uploaded to
+Riverside individually, with its own prompt below.
+
+------------------------------------------------------------------------------
+SLIDE 1 OF 9
+
+  FILE
+    01_Once_You_Leave_Access_Changes.png
+
+  SCRIPT MATCH
+    "The day you leave, a lot of things go at once."
+
+  PURPOSE
+    Establishes the premise the whole video rests on.
+
+  DISPLAY
+    Full screen
+
+  SUGGESTED SCREEN TIME
+    5 to 7 seconds
+
+  RIVERSIDE AI PROMPT  (copy and paste with this image)
+    "Bring this slide up when I say that the day you leave, a lot of
+    things go at once. Full screen while I list what closes, then back to
+    me."
+
+------------------------------------------------------------------------------
+SLIDE 2 OF 9
+
+  FILE
+    02_If_Your_Safety_Is_At_Risk_Do_Not_Wait.png
+
+  SCRIPT MATCH
+    "If your health or your safety is at risk, or you are facing
+    harassment or discrimination, none of this is a reason to wait."
+
+  PURPOSE
+    Puts the safety exception on screen, where a viewer in that situation
+    will not miss it.
+
+  DISPLAY
+    Full screen
+
+  SUGGESTED SCREEN TIME
+    6 to 8 seconds
+
+  RIVERSIDE AI PROMPT  (copy and paste with this image)
+    "Show this slide for the whole safety exception, from health and
+    safety through to getting proper support. Do not shorten it and do not
+    put captions over the text."
+
+------------------------------------------------------------------------------
+SLIDE 3 OF 9
+
+  FILE
+    03_Check_One_Preserve_The_Evidence.png
+
+  SCRIPT MATCH
+    "So the first thing is to preserve the evidence."
+
+  PURPOSE
+    Draws the line clearly, which matters because this is the part that
+    gets misread in both directions.
+
+  DISPLAY
+    Full screen
+
+  SUGGESTED SCREEN TIME
+    7 to 9 seconds
+
+  RIVERSIDE AI PROMPT  (copy and paste with this image)
+    "Use this slide across the whole first check, while I explain what you
+    are entitled to keep and what you never take. Hold it long enough to
+    read both sides."
+
+------------------------------------------------------------------------------
+SLIDE 4 OF 9
+
+  FILE
+    04_Check_Two_Name_What_The_Work_Built.png
+
+  SCRIPT MATCH
+    "So for each piece of work you wrote down, answer four things."
+
+  PURPOSE
+    Holds the four-part framework in view while I work through it.
+
+  DISPLAY
+    Full screen
+
+  SUGGESTED SCREEN TIME
+    8 to 10 seconds
+
+  RIVERSIDE AI PROMPT  (copy and paste with this image)
+    "Show this framework slide while I go through the four questions. Keep
+    it up for all four, then return to me for the warning about claiming
+    only what you can support."
+
+------------------------------------------------------------------------------
+SLIDE 5 OF 9
+
+  FILE
+    05_Check_Three_Test_The_Next_Move.png
+
+  SCRIPT MATCH
+    "The third thing is to test the next move."
+
+  PURPOSE
+    Shows both halves of the test at once, which is the point of it.
+
+  DISPLAY
+    Full screen
+
+  SUGGESTED SCREEN TIME
+    6 to 8 seconds
+
+  RIVERSIDE AI PROMPT  (copy and paste with this image)
+    "Bring this slide in when I introduce the third check and hold it
+    while I explain both questions, then cut back to me."
+
+------------------------------------------------------------------------------
+SLIDE 6 OF 9
+
+  FILE
+    06_The_Three_Checks.png
+
+  SCRIPT MATCH
+    "So those are the three. Preserve the evidence. Name what the work
+    built. Test the next move."
+
+  PURPOSE
+    Summarizes the teaching in the order I say it.
+
+  DISPLAY
+    Full screen
+
+  SUGGESTED SCREEN TIME
+    5 to 7 seconds
+
+  RIVERSIDE AI PROMPT  (copy and paste with this image)
+    "Use this summary slide when I list the three checks together. A few
+    seconds full screen, then back to me."
+
+------------------------------------------------------------------------------
+SLIDE 7 OF 9
+
+  FILE
+    07_How_The_Evidence_Reads.png
+
+  SCRIPT MATCH
+    "And here is how they tend to read."
+
+  PURPOSE
+    Gives the viewer a way to read their own result without me repeating
+    all three outcomes on camera.
+
+  DISPLAY
+    Full screen
+
+  SUGGESTED SCREEN TIME
+    8 to 10 seconds
+
+  RIVERSIDE AI PROMPT  (copy and paste with this image)
+    "Show this slide while I explain the three ways the checks tend to
+    read. Keep it up for all three, then return to me."
+
+------------------------------------------------------------------------------
+SLIDE 8 OF 9
+
+  FILE
+    08_CTA_Career_Decision_Evidence_Check.png
+
+  SCRIPT MATCH
+    "If you want help doing this properly, I made the Career Decision
+    Evidence Check."
+
+  PURPOSE
+    Supports the CTA and shows the link while I say it.
+
+  DISPLAY
+    CTA
+
+  SUGGESTED SCREEN TIME
+    6 to 8 seconds
+
+  RIVERSIDE AI PROMPT  (copy and paste with this image)
+    "Show this CTA slide while I describe the Career Decision Evidence
+    Check, through to it being linked below. Do not cover the web
+    address."
+
+------------------------------------------------------------------------------
+SLIDE 9 OF 9
+
+  FILE
+    09_Watch_Next_Change_Jobs_Without_Starting_Over.png
+
+  SCRIPT MATCH
+    "Watch How to Change Jobs Without Starting Your Career Over next."
+
+  PURPOSE
+    Supports the Watch Next ending, with the end-screen area kept clear.
+
+  DISPLAY
+    Watch Next
+
+  SUGGESTED SCREEN TIME
+    6 to 10 seconds
+
+  RIVERSIDE AI PROMPT  (copy and paste with this image)
+    "Use this as the closing slide when I say to watch How to Change Jobs
+    Without Starting Your Career Over next. Keep the right side clear for
+    the YouTube end screen."
+
+==============================================================================
+END OF MAP
+==============================================================================
