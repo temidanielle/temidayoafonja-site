@@ -1,0 +1,563 @@
+==============================================================================
+VISUAL BUILD MAP AND MOTION GRAPHIC MAP
+Video 5  ·  Why Nobody Can Tell What You're Actually Good At
+==============================================================================
+
+Hero teaching visuals, not a slide deck. Short callouts may sit over Temidayo;
+everything with a framework, comparison, numbered structure or multi-part idea
+in it becomes a true full-screen motion graphic. All on-screen wording comes
+from the approved Recording Master.
+
+------------------------------------------------------------------------------
+THE RULE THAT MATTERS MOST
+------------------------------------------------------------------------------
+
+TRUE FULL SCREEN means all of the following:
+
+  - the visual occupies the ENTIRE 16:9 canvas
+  - Temidayo is NOT visible moving behind it
+  - Temidayo is NOT visible around the sides or the edges
+  - there is NO smaller graphic or video rectangle floating over her footage
+  - the visual is its own scene, not an overlay
+  - her spoken audio continues underneath
+  - then cut cleanly back to her
+
+The instruction to give Co-Creator is not "make the graphic full screen." It is:
+
+  "HIDE / REMOVE THE CAMERA VISUALLY DURING THIS SCENE. The motion graphic or
+   B-roll must be the only visual filling the entire 16:9 canvas."
+
+This applies to substantive B-roll exactly as it applies to graphics.
+
+------------------------------------------------------------------------------
+VISUAL GRAMMAR
+------------------------------------------------------------------------------
+
+  SHORT SINGLE-LINE CALLOUT
+      May appear over Temidayo on camera.
+  FRAMEWORK, COMPARISON, NUMBERED STRUCTURE, MULTI-PART IDEA
+      TRUE FULL-SCREEN motion graphic.
+  SUBSTANTIVE B-ROLL
+      TRUE FULL-SCREEN visual break.
+  CTA AND RESOURCE
+      TRUE FULL SCREEN.
+  WATCH NEXT
+      TRUE FULL SCREEN, final visual, no return to camera after it.
+
+------------------------------------------------------------------------------
+MOBILE LEGIBILITY IS A HARD REQUIREMENT
+
+This comes from watching Videos 1 to 3 live on YouTube. Some earlier graphics
+were too small on a phone. Every substantive full-screen graphic in this package
+has to be understood at normal phone size in about one to two seconds.
+
+Use very large typography, bold hierarchy, strong contrast, short phrases, one
+dominant idea per state, sequential reveals, minimal support copy, and large key
+words.
+
+Avoid tiny labels, small footer copy, long sentences, dense grids, four-column
+layouts, several small information boxes, meaning hidden in support text, and
+shrinking everything just so it fits.
+
+If a design looks elegant on desktop but is hard to read on a phone, simplify
+it. The reference assets were checked by rendering them at 390 points wide and
+reading them at that size.
+
+------------------------------------------------------------------------------
+CAPTIONS
+
+Captions stay restrained over camera. Hide, move, simplify or suppress them
+during full-screen motion graphics, substantive B-roll, the resource and CTA
+card, and Watch Next. Captions must never compete with designed text.
+
+------------------------------------------------------------------------------
+SUBSCRIBE CUE
+
+One restrained visual cue, and it is a visual only. It adds no spoken dialogue
+and the recording script is not modified for it.
+
+  - place it after the Claim section, at the first real One-Line Test payoff
+  - about one second
+  - premium, small, restrained fade, slide or gentle scale
+  - a quiet click, a soft pop or a subtle whoosh
+
+Never in the opening seconds. No giant YouTube Subscribe animation and no loud
+sound.
+
+------------------------------------------------------------------------------
+SCENES
+------------------------------------------------------------------------------
+
+==============================================================================
+MG01   V5_MG01_Respected_But_Hard_To_Place.png
+==============================================================================
+
+  ON-SCREEN IDEA
+    RESPECTED. BUT HARD TO PLACE.
+
+  SCRIPT TRIGGER
+    "People can respect your experience and still have no idea what to do
+    with you."
+
+  PURPOSE
+    The tension of the video, on screen in the first thirty seconds.
+
+  TREATMENT
+    TRUE FULL-SCREEN motion graphic.
+
+    Hide or remove the camera visually during this scene. This graphic
+    must be the only visual filling the entire 16:9 canvas. Temidayo must
+    not be visible behind it or around its edges. Her audio continues
+    underneath.
+
+  REVEAL ORDER
+    First line alone for 1.2s, second line at 1.5s, supporting line at
+    2.6s.
+
+  APPROXIMATE HOLD
+    7 to 8 seconds
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends.
+
+  CAPTIONS
+    Suppress.
+
+  SOUND
+    Soft impact on the second line.
+
+  BRAND
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat display, DM Sans body. Large type only. Motion is fade,
+    slide and gentle scale.
+
+==============================================================================
+MG02   V5_MG02_Sorting_Mechanism.png
+==============================================================================
+
+  ON-SCREEN IDEA
+    MULTIPLE POSSIBLE CATEGORIES  to  NEAREST CATEGORY  to  A SMALLER BOX
+    THAN YOUR ACTUAL CAPABILITY
+
+  SCRIPT TRIGGER
+    "They grab the closest category they can see, and they put you there.
+    And that category is often smaller than what you can actually do."
+
+  PURPOSE
+    Shows the mechanism as three steps so the viewer stops reading it as
+    unfairness and starts reading it as information they control.
+
+  TREATMENT
+    TRUE FULL-SCREEN motion graphic.
+
+    Hide or remove the camera visually during this scene. This graphic
+    must be the only visual filling the entire 16:9 canvas. Temidayo must
+    not be visible behind it or around its edges. Her audio continues
+    underneath.
+
+  REVEAL ORDER
+    One step at a time, 1.0s apart, each replacing the emphasis of the one
+    before. The third step holds alone.
+
+  APPROXIMATE HOLD
+    9 to 10 seconds
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends.
+
+  CAPTIONS
+    Suppress.
+
+  SOUND
+    One accent per step, descending.
+
+  BRAND
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat display, DM Sans body. Large type only. Motion is fade,
+    slide and gentle scale.
+
+==============================================================================
+MG03   V5_MG03_The_One_Line_Test.png
+==============================================================================
+
+  ON-SCREEN IDEA
+    CLAIM / SPINE / RECEIPTS
+
+  SCRIPT TRIGGER
+    "That is where the One-Line Test comes in. Claim. Spine. Receipts."
+
+  PURPOSE
+    The hero framework. Returns briefly at each of the three section
+    changes.
+
+  TREATMENT
+    TRUE FULL-SCREEN motion graphic.
+
+    Hide or remove the camera visually during this scene. This graphic
+    must be the only visual filling the entire 16:9 canvas. Temidayo must
+    not be visible behind it or around its edges. Her audio continues
+    underneath.
+
+  REVEAL ORDER
+    One word at a time, 0.9s apart. Closing line at 3.2s.
+
+  APPROXIMATE HOLD
+    9 to 11 seconds first time, 3 seconds on each return.
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends.
+
+  CAPTIONS
+    Suppress.
+
+  SOUND
+    One accent per word, then a resolve.
+
+  BRAND
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat display, DM Sans body. Large type only. Motion is fade,
+    slide and gentle scale.
+
+==============================================================================
+MG04   V5_MG04_Sharper_Versus_Defensible.png
+==============================================================================
+
+  ON-SCREEN IDEA
+    SHARPER CLAIM vs DEFENSIBLE CLAIM
+
+  SCRIPT TRIGGER
+    "So the sharper sentence was not the more defensible sentence...
+    Choose the one you can defend."
+
+  PURPOSE
+    The judgment call at the heart of the Claim section, shown as a trade
+    rather than a mistake.
+
+  TREATMENT
+    TRUE FULL-SCREEN motion graphic.
+
+    Hide or remove the camera visually during this scene. This graphic
+    must be the only visual filling the entire 16:9 canvas. Temidayo must
+    not be visible behind it or around its edges. Her audio continues
+    underneath.
+
+  REVEAL ORDER
+    SHARPER first, held alone 1.5s so it lands as attractive. DEFENSIBLE
+    at 2.0s. Closing line at 3.4s.
+
+  APPROXIMATE HOLD
+    9 to 10 seconds
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends.
+
+  CAPTIONS
+    Suppress.
+
+  SOUND
+    One accent as DEFENSIBLE arrives.
+
+  BRAND
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat display, DM Sans body. Large type only. Motion is fade,
+    slide and gentle scale.
+
+==============================================================================
+MG05   V5_MG05_Remove_The_Nouns.png
+==============================================================================
+
+  ON-SCREEN IDEA
+    REMOVE THE NOUNS  /  LOOK AT THE VERBS
+
+  SCRIPT TRIGGER
+    "What broke it open was removing the nouns. Take out the industry. The
+    system. The title. The employer. Look at the verbs."
+
+  PURPOSE
+    Shows what to discard and what to look for. Hard to hold by ear, easy
+    to hold on screen.
+
+  TREATMENT
+    TRUE FULL-SCREEN motion graphic.
+
+    Hide or remove the camera visually during this scene. This graphic
+    must be the only visual filling the entire 16:9 canvas. Temidayo must
+    not be visible behind it or around its edges. Her audio continues
+    underneath.
+
+  REVEAL ORDER
+    The four nouns strike through one at a time, 0.7s apart, then the
+    closing line arrives at full weight at 3.4s.
+
+  APPROXIMATE HOLD
+    9 to 10 seconds
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends.
+
+  CAPTIONS
+    Suppress.
+
+  SOUND
+    A subtle click per strike, one clean resolve on the verbs line.
+
+  BRAND
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat display, DM Sans body. Large type only. Motion is fade,
+    slide and gentle scale.
+
+==============================================================================
+MG06   V5_MG06_Receipts.png
+==============================================================================
+
+  ON-SCREEN IDEA
+    DIFFERENT CONTEXTS. SAME CLAIM.
+
+  SCRIPT TRIGGER
+    "Different organizations. Different years. Different outputs. Each
+    Receipt stands on its own. And all three support the same Claim."
+
+  PURPOSE
+    States the rule that governs all three Receipts, rather than putting
+    three bounded evidence claims on screen where the qualifiers would
+    shrink to nothing on a phone.
+
+  TREATMENT
+    TRUE FULL-SCREEN motion graphic.
+
+    Hide or remove the camera visually during this scene. This graphic
+    must be the only visual filling the entire 16:9 canvas. Temidayo must
+    not be visible behind it or around its edges. Her audio continues
+    underneath.
+
+  REVEAL ORDER
+    First line, second line at 1.0s, supporting line at 2.2s.
+
+  APPROXIMATE HOLD
+    7 to 8 seconds
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends.
+
+  CAPTIONS
+    Suppress.
+
+  SOUND
+    One accent between the two lines.
+
+  BRAND
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat display, DM Sans body. Large type only. Motion is fade,
+    slide and gentle scale.
+
+==============================================================================
+MG07   V5_MG07_Test_The_Claim.png
+==============================================================================
+
+  ON-SCREEN IDEA
+    Does their next question ask about YOUR HISTORY or THE PROBLEM?
+
+  SCRIPT TRIGGER
+    "Listen to their next question."
+
+  PURPOSE
+    Gives the test and how to read the result in one frame.
+
+  TREATMENT
+    TRUE FULL-SCREEN motion graphic.
+
+    Hide or remove the camera visually during this scene. This graphic
+    must be the only visual filling the entire 16:9 canvas. Temidayo must
+    not be visible behind it or around its edges. Her audio continues
+    underneath.
+
+  REVEAL ORDER
+    Two outcomes 1.2s apart, then the exact sentence at the bottom at 3.0s
+    and held.
+
+  APPROXIMATE HOLD
+    9 to 10 seconds
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends.
+
+  CAPTIONS
+    Suppress.
+
+  SOUND
+    Two accents on the outcomes, one resolve on the sentence.
+
+  BRAND
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat display, DM Sans body. Large type only. Motion is fade,
+    slide and gentle scale.
+
+==============================================================================
+MG08   V5_MG08_Real_Limits.png
+==============================================================================
+
+  ON-SCREEN IDEA
+    A SENTENCE CANNOT ERASE: market conditions, bias, credentials, domain
+    gaps, real experience gaps
+
+  SCRIPT TRIGGER
+    "A better sentence cannot erase a weak market. It cannot erase bias or
+    age discrimination."
+
+  PURPOSE
+    Keeps the promise honest. Written as one line plus one sentence rather
+    than a dense list, so it reads on a phone.
+
+  TREATMENT
+    TRUE FULL-SCREEN motion graphic.
+
+    Hide or remove the camera visually during this scene. This graphic
+    must be the only visual filling the entire 16:9 canvas. Temidayo must
+    not be visible behind it or around its edges. Her audio continues
+    underneath.
+
+  REVEAL ORDER
+    Headline, then the supporting line at 1.6s. No item-by-item build;
+    this section should not feel like a checklist.
+
+  APPROXIMATE HOLD
+    7 to 8 seconds
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends.
+
+  CAPTIONS
+    Suppress.
+
+  SOUND
+    One flat accent. No resolve. This should not feel triumphant.
+
+  BRAND
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat display, DM Sans body. Large type only. Motion is fade,
+    slide and gentle scale.
+
+==============================================================================
+CTA   V5_CTA_Career_Evidence_Starter.png
+==============================================================================
+
+  ON-SCREEN IDEA
+    WRITE YOUR ONE-LINE CLAIM / Free 10-Minute Career Evidence Starter /
+    temidayoafonja.com/career-evidence-starter
+
+  SCRIPT TRIGGER
+    "If yes, write the Claim in the comments... I put the free 10-Minute
+    Career Evidence Starter in the pinned comment."
+
+  PURPOSE
+    Carries the spoken comment CTA and the pinned resource. No second
+    product route in this video.
+
+  TREATMENT
+    TRUE FULL-SCREEN motion graphic.
+
+    Hide or remove the camera visually during this scene. This graphic
+    must be the only visual filling the entire 16:9 canvas. Temidayo must
+    not be visible behind it or around its edges. Her audio continues
+    underneath.
+
+  REVEAL ORDER
+    Logomark, headline at 0.6s, URL at 2.0s.
+
+  APPROXIMATE HOLD
+    8 to 9 seconds
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends.
+
+  CAPTIONS
+    Suppress. Never cover the address.
+
+  SOUND
+    One warm accent on the URL.
+
+  BRAND
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat display, DM Sans body. Large type only. Motion is fade,
+    slide and gentle scale.
+
+==============================================================================
+WN   V5_WatchNext_Change_Jobs.png
+==============================================================================
+
+  ON-SCREEN IDEA
+    WATCH NEXT: HOW TO CHANGE JOBS WITHOUT STARTING YOUR CAREER OVER
+
+  SCRIPT TRIGGER
+    "Watch How to Change Jobs Without Starting Your Career Over next."
+
+  PURPOSE
+    Final visual. Routes to Video 1, not back to Video 4. Right of frame
+    kept clear for the clickable end-screen element.
+
+  TREATMENT
+    TRUE FULL-SCREEN motion graphic.
+
+    Hide or remove the camera visually during this scene. This graphic
+    must be the only visual filling the entire 16:9 canvas. Temidayo must
+    not be visible behind it or around its edges. Her audio continues
+    underneath.
+
+  REVEAL ORDER
+    Static. No animation on the final card.
+
+  APPROXIMATE HOLD
+    10 to 14 seconds, through both closing lines and past the last word.
+
+  RETURN TO CAMERA
+    NONE. This is the final visual of the video. Do not cut back to
+    Temidayo after this card, do not add an outro sting, and do not place
+    anything after it.
+
+  CAPTIONS
+    Suppress.
+
+  SOUND
+    None.
+
+  BRAND
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat display, DM Sans body. Large type only. Motion is fade,
+    slide and gentle scale.
+
+------------------------------------------------------------------------------
+SOUND DESIGN
+
+Four to seven restrained accents across the video, all quieter than her voice.
+
+Reserve them for the hero graphic entrance, the framework reveal, a section
+transition, a comparison reveal, the Subscribe cue, a key payoff, the resource
+entrance, and the Watch Next handoff. No constant effects.
+
+------------------------------------------------------------------------------
+B-ROLL
+------------------------------------------------------------------------------
+
+Two to four meaningful full-screen B-roll moments, only where they add
+meaning. Avoid handshakes, generic smiling offices, fake boardrooms,
+meaningless typing, cliche resume footage and AI-looking people. If B-roll
+does not add meaning, use a motion graphic instead.
+
+------------------------------------------------------------------------------
+PUNCH-INS
+------------------------------------------------------------------------------
+
+Three to five subtle punch-ins across the video. Do not overuse them.
+
+==============================================================================
+END OF MAP
+==============================================================================

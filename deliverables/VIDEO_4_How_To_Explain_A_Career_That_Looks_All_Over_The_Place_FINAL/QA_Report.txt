@@ -1,0 +1,126 @@
+==============================================================================
+QA REPORT
+Video 4  ·  How to Explain a Career That Looks All Over the Place
+September 8, 2026
+==============================================================================
+
+28 checks run. 28 passed, 0 failed.
+
+  [PASS] Numbered Video 4 everywhere
+         No asset prefix, filename or routing reference from the
+         other number survives in this package.
+
+  [PASS] Thumbnail line correct
+         STOP LISTING JOBS
+
+  [PASS] Superseded thumbnail line absent from active material
+         Checked across every package document except two that
+         legitimately name it in order to supersede it: the change
+         log, and the Recording Master's own note, which recommends
+         STOP LISTING JOBS because it is stronger than YOUR CAREER
+         MAKES SENSE. The master is the spoken source of truth and
+         was not edited.
+
+  [PASS] Locked opening preserved
+         When someone says, “Walk me through your background,” they
+         are not asking for your life st
+
+  [PASS] Recording Master is the spoken source of truth
+         The renumbered master differs from the supplied file by
+         exactly one paragraph, the header line. Verified by
+         paragraph comparison.
+
+  [PASS] Framework intact
+         Chapters, Spine, Next Direction
+
+  [PASS] Spoken CTA correct
+         Share your 20-second version in the comments.
+
+  [PASS] Pinned resource correct
+         Free 10-Minute Career Evidence Starter
+         https://temidayoafonja.com/career-evidence-starter
+
+  [PASS] Secondary resource handled correctly
+         Keep the Proof is secondary, in the description only,
+         mentioned once in the ending and absent from the CTA card.
+
+  [PASS] Watch Next correct
+         Why Nobody Can Tell What You're Actually Good At
+
+  [PASS] Watch Next is the final visual and there is no return to camera
+         Stated in the scene, the per-scene prompt and the master
+         prompt.
+
+  [PASS] Real limits preserved
+         Market, bias, credentials, domain knowledge and real
+         experience gaps are all named in the spoken copy and
+         repeated in the run of show.
+
+  [PASS] Mobile readability
+         Very large type, one dominant idea per state, sequential
+         reveals, no four-column layouts and no dense grids. Checked
+         by rendering the densest frames at 390 points wide and
+         reading them at that size.
+
+  [PASS] Full-screen hero graphics
+         Stated per scene with the hide-the-camera instruction
+         spelled out.
+
+  [PASS] Full-screen substantive B-roll
+         Stated in the grammar, the map's B-roll section and the
+         master prompt.
+
+  [PASS] Captions suppressed during hero visuals
+         Per scene and in a dedicated section of the map, run of show
+         and prompt.
+
+  [PASS] One restrained Subscribe cue
+         Visual only, adds no dialogue, placed after the 20-second
+         version has landed.
+
+  [PASS] Four to seven restrained sound accents
+         Stated in the map, the run of show and the master prompt.
+
+  [PASS] U.S. English
+         Spoken script, assets and every package document swept.
+
+  [PASS] No em dashes
+         0 in the spoken script, 0 in the assets, 0 across the
+         package.
+
+  [PASS] No invented claims
+         Nothing was added to the spoken copy. Asset wording and
+         Short wording come from the master.
+
+  [PASS] No invented speech
+         The master prompt forbids generating audio and requires a
+         pickup to be flagged instead.
+
+  [PASS] No invented music attribution
+         No license code appears. The publishing notes say to add
+         attribution only once the real track is known.
+
+  [PASS] No estimated final chapters
+         No chapter timestamps are supplied. The publishing notes say
+         to build them from the actual export.
+
+  [PASS] No dead footage after the ending
+         The master prompt instructs the editor to cut everything
+         after the last spoken word.
+
+  [PASS] Export specification 1920x1080 minimum
+         9 assets, sizes: 1920x1080
+
+  [PASS] Six dedicated Shorts with Priority A and B
+         A _Asking_You_To_Place_You 44s, A The_Twenty_Second_Answer
+         52s, A t_03_Why_So_Many_Changes 40s, B
+         nce_Is_Not_Inevitability 32s, B _Answer_The_Short_Tenure
+         40s, B _Explains_Proof_Supports 35s
+
+  [PASS] Editorial boundaries preserved
+         The run of show lists all seven never-imply boundaries as
+         lines to hold while speaking.
+
+==============================================================================
+VIDEO 4: READY FOR RECORDING / RIVERSIDE PRODUCTION
+==============================================================================

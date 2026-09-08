@@ -1,0 +1,192 @@
+==============================================================================
+RIVERSIDE CO-CREATOR MASTER PROMPT
+Video 4  ·  How to Explain a Career That Looks All Over the Place
+==============================================================================
+
+------------------------------------------------------------------------------
+MASTER PROMPT
+------------------------------------------------------------------------------
+
+You are editing a horizontal 16:9 talking-head video called "How to Explain a
+Career That Looks All Over the Place". The speaker is Temidayo Afonja,
+teaching to camera. Please follow these rules exactly.
+
+MOST IMPORTANT RULE. Every motion graphic, every substantive B-roll shot, the
+resource and CTA card, and the Watch Next card must be TRUE FULL SCREEN. That
+means: HIDE OR REMOVE THE CAMERA VISUALLY DURING THAT SCENE. The visual must
+be the only thing filling the entire 16:9 canvas. Do not put it in a smaller
+box floating over my camera footage. Do not leave me visible behind it. Do not
+leave me visible around the sides or edges. Treat each one as its own scene.
+My spoken audio continues underneath. Then cut cleanly back to me. Please
+check every graphic and every B-roll shot against this rule.
+
+The only visuals that may sit over my camera footage are short single-line
+callouts.
+
+PRESERVE THE SPEECH. The recorded wording is approved and final. Do not
+shorten thoughtful explanations, do not tighten my sentences, and do not
+remove pauses that are doing work. Clean the audio and the transcript, and
+remove false starts, stumbles and dead air. Do not over-shorten.
+
+DO NOT GENERATE OR SYNTHESIZE ANY SPEECH. If the closing lines, the CTA or the
+Watch Next handoff are missing from the recording, stop and tell me a pickup
+is needed. Do not create audio I did not record.
+
+PHONE READABILITY. Assume the viewer is on a phone. Keep type very large and
+bold, keep contrast high, and reveal multi-part ideas one part at a time. If
+something is hard to read at phone size, simplify it rather than shrinking it.
+
+CAPTIONS. Suppress, simplify or move captions during full-screen graphics,
+substantive B-roll, the resource card and Watch Next. Captions must never sit
+over designed text.
+
+PACING. Three to five subtle punch-ins. Two to four meaningful B-roll moments,
+each full screen. Four to seven restrained sound accents in total, all quieter
+than my voice.
+
+SUBSCRIBE. One restrained visual Subscribe cue, about one second, small and
+premium, with a quiet click or soft pop, placed after the 20-second version
+has landed. Never in the opening. No loud or cartoonish animation. This is a
+visual only and adds no dialogue.
+
+MUSIC. Subtle bed only, well under my voice. Never invent or add a music
+license code.
+
+PICTURE. Keep it natural. Restrained exposure, white balance, contrast,
+clarity, mild sharpening and mild noise reduction only. Preserve my real skin
+tone. No beauty filtering.
+
+ENDING. The Watch Next card is the final visual. Do not cut back to me after
+it. Do not add an outro or a sting. Cut everything after my last spoken word:
+no dead air, no waiting, no false starts, no adjusting the camera.
+
+EXPORT. 1920x1080 minimum.
+
+------------------------------------------------------------------------------
+PER-SCENE PROMPTS, ONE UPLOAD AT A TIME
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+MG01   V4_MG01_Stop_Explaining_In_Order.png
+------------------------------------------------------------------------------
+
+  "Use this image when I say: So here is the rule: Stop explaining your
+  career in order.... HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS SCENE.
+  This image must be the only visual filling the entire 16:9 canvas. Do not
+  place it in a box over my camera footage and do not leave me visible
+  behind it or around the edges. Three lines arriving one at a time, 0.5s
+  apart. Supporting line at 2.2s. Hold it for 6 to 7 seconds. Then cut
+  cleanly back to me. Suppress for the full hold."
+
+------------------------------------------------------------------------------
+MG02   V4_MG02_Chapters_Spine_Next_Direction.png
+------------------------------------------------------------------------------
+
+  "Use this image when I say: All three versions use the same structure
+  underneath. Chapters. Spine. Next Direction.... HIDE OR REMOVE THE CAMERA
+  VISUALLY DURING THIS SCENE. This image must be the only visual filling the
+  entire 16:9 canvas. Do not place it in a box over my camera footage and do
+  not leave me visible behind it or around the edges. One word at a time,
+  0.9s apart. Closing line at 3.2s. Hold the complete set. Hold it for 9 to
+  10 seconds first time, 3 seconds on each return.. Then cut cleanly back to
+  me. Suppress."
+
+------------------------------------------------------------------------------
+MG03   V4_MG03_Twenty_Second_Version.png
+------------------------------------------------------------------------------
+
+  "Use this image when I say: Your version is: I, and then the work pattern.
+  I've done that in, and then two or three contexts. Today I, and then your
+  current direction.... HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS
+  SCENE. This image must be the only visual filling the entire 16:9 canvas.
+  Do not place it in a box over my camera footage and do not leave me
+  visible behind it or around the edges. One stem at a time, 1.0s apart.
+  Closing line at 3.6s. Hold it for 10 to 12 seconds. The longest hold in
+  the video.. Then cut cleanly back to me. Suppress. This frame gets
+  screenshotted."
+
+------------------------------------------------------------------------------
+MG04   V4_MG04_Ninety_Second_Version.png
+------------------------------------------------------------------------------
+
+  "Use this image when I say: That is the ninety-second answer. Chapters.
+  Spine. Next Direction.... HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS
+  SCENE. This image must be the only visual filling the entire 16:9 canvas.
+  Do not place it in a box over my camera footage and do not leave me
+  visible behind it or around the edges. Three words together at reduced
+  weight, then the closing line at 1.4s at full weight. Deliberately quieter
+  than MG02. Hold it for 7 to 8 seconds. Then cut cleanly back to me.
+  Suppress."
+
+------------------------------------------------------------------------------
+MG05   V4_MG05_The_Objection.png
+------------------------------------------------------------------------------
+
+  "Use this image when I say: Now the harder one. Why so many changes?...
+  HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This image must be
+  the only visual filling the entire 16:9 canvas. Do not place it in a box
+  over my camera footage and do not leave me visible behind it or around the
+  edges. Question first, alone, for 1.5s. Supporting line at 2.0s. Hold it
+  for 6 to 7 seconds. Then cut cleanly back to me. Suppress."
+
+------------------------------------------------------------------------------
+MG06   V4_MG06_Story_Explains_Proof_Supports.png
+------------------------------------------------------------------------------
+
+  "Use this image when I say: And remember: A story explains. Proof
+  supports.... HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This
+  image must be the only visual filling the entire 16:9 canvas. Do not place
+  it in a box over my camera footage and do not leave me visible behind it
+  or around the edges. First line, second line at 1.0s, supporting line at
+  2.4s. Hold it for 7 to 8 seconds. Then cut cleanly back to me. Suppress."
+
+------------------------------------------------------------------------------
+MG07   V4_MG07_All_Three_Versions.png
+------------------------------------------------------------------------------
+
+  "Use this image when I say: So now you have all three. The twenty-second
+  version. The ninety-second version. The objection version.... HIDE OR
+  REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This image must be the only
+  visual filling the entire 16:9 canvas. Do not place it in a box over my
+  camera footage and do not leave me visible behind it or around the edges.
+  Three together, then the closing line at 1.6s. Hold it for 6 to 7 seconds.
+  Then cut cleanly back to me. Suppress."
+
+------------------------------------------------------------------------------
+CTA   V4_CTA_Career_Evidence_Starter.png
+------------------------------------------------------------------------------
+
+  "Use this image when I say: If you get your twenty-second version working,
+  put it in the comments... start with the free 10-Minute Career Evidence
+  Starter in the pinned... HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS
+  SCENE. This image must be the only visual filling the entire 16:9 canvas.
+  Do not place it in a box over my camera footage and do not leave me
+  visible behind it or around the edges. Logomark, headline at 0.6s, URL at
+  2.0s. Hold it for 8 to 9 seconds. Then cut cleanly back to me. Suppress.
+  Never cover the address."
+
+------------------------------------------------------------------------------
+WN   V4_WatchNext_Why_Nobody_Can_Tell.png
+------------------------------------------------------------------------------
+
+  "Use this image when I say: Watch Why Nobody Can Tell What You're Actually
+  Good At next.... HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS SCENE.
+  This image must be the only visual filling the entire 16:9 canvas. Do not
+  place it in a box over my camera footage and do not leave me visible
+  behind it or around the edges. Static. No animation on the final card.
+  Hold it for 10 to 14 seconds, through both closing lines and past the last
+  word.. This is the FINAL visual of the video. Do not cut back to me after
+  it. Do not add anything after it. Suppress."
+
+------------------------------------------------------------------------------
+SOUND DESIGN
+
+Four to seven restrained accents across the video, all quieter than her voice.
+
+Reserve them for the hero graphic entrance, the framework reveal, a section
+transition, a comparison reveal, the Subscribe cue, a key payoff, the resource
+entrance, and the Watch Next handoff. No constant effects.
+
+==============================================================================
+END
+==============================================================================

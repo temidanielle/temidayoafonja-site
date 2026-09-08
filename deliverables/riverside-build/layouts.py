@@ -79,13 +79,15 @@ def S(size, font=DISPLAY, color=NAVY, bold=False, spacing=1.14, tracking=0,
 
 
 # ---------------------------------------------------------------- layouts
-def statement(c, eye, headline, support=None, dark=False, size=88):
+def statement(c, eye, headline, support=None, dark=False, size=88,
+              support_size=46):
     """One strong statement or question, and at most one short line under it."""
     back, ink, dim, accent = _head(c, dark, eye)
     rows = [("text", headline, CW, S(size, color=ink, bold=True, spacing=1.12), 0)]
     gaps = []
     if support:
-        rows.append(("text", support, CW, S(46, BODY, dim, spacing=1.35), 0))
+        rows.append(("text", support, CW, S(support_size, BODY, dim,
+                                           spacing=1.35), 0))
         gaps.append(46)
     compose(c, MARGIN, rows, gaps=gaps)
 
@@ -108,7 +110,8 @@ def _columns(c, x, y, col_w, gap, cells, ink, dim, accent,
     return max(heights)
 
 
-def duo(c, eye, headline, left, right, foot=None, dark=False):
+def duo(c, eye, headline, left, right, foot=None, dark=False,
+        mobile=False):
     """A two-way comparison. Each side is a label and one short line.
 
     Type steps down through a small ladder until the whole card fits inside the
@@ -120,8 +123,10 @@ def duo(c, eye, headline, left, right, foot=None, dark=False):
     band_h = BAND_BOT - BAND_TOP
     gap_head, gap_foot = 64, 58
 
-    for head_s, lab_s, sub_s in ((72, 52, 42), (68, 48, 40), (64, 46, 38),
-                                 (60, 44, 36), (56, 42, 34)):
+    ladder = ((78, 58, 50), (74, 54, 48), (70, 52, 46), (66, 50, 44)) \
+        if mobile else ((72, 52, 42), (68, 48, 40), (64, 46, 38),
+                        (60, 44, 36), (56, 42, 34))
+    for head_s, lab_s, sub_s in ladder:
         hh = TH(headline, CW, DISPLAY, head_s, True, 1.12)
         cell_h = 0
         for label, sub in (left, right):

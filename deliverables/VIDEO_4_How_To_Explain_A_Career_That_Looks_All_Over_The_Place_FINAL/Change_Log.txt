@@ -1,0 +1,68 @@
+==============================================================================
+CHANGE LOG
+Video 4  ·  How to Explain a Career That Looks All Over the Place
+September 8, 2026
+==============================================================================
+
+This topic was Video 5. It is now Video 4. The swap is definitive: the
+previous numbering is not retained as an alternate system anywhere in this
+package.
+
+------------------------------------------------------------------------------
+WHAT CHANGED
+------------------------------------------------------------------------------
+
+  •  The number. Every asset, filename, prompt, document and routing
+  reference now says Video 4. Asset prefixes moved from V5_ to V4_.
+
+  •  The Recording Master. A new September 8 master replaced the previous
+  script. The opening is now "they are not asking for your life story, they
+  are asking you to help them place you", and the previous nodding-first
+  hook is gone and was not restored anywhere, including in the Shorts.
+
+  •  The thumbnail line. STOP LISTING JOBS replaces YOUR CAREER MAKES SENSE.
+
+  •  The spoken CTA. It is now "share your 20-second version in the
+  comments". The previous package used Keep the Proof as the primary product
+  CTA; Keep the Proof is now secondary and lives in the description,
+  mentioned once in the ending.
+
+  •  The pinned resource. The free 10-Minute Career Evidence Starter.
+
+  •  Watch Next. Now routes to Video 5, Why Nobody Can Tell What You're
+  Actually Good At. Routing across the series is now V4 to V5 to V1.
+
+  •  The assets. Seven hero teaching graphics plus a resource card and a
+  Watch Next card, all rebuilt at mobile-first sizes and checked by
+  rendering at 390 points wide.
+
+  •  The Shorts. Six dedicated 9:16 candidates, marked Priority A and B. The
+  old Stop Explaining In Order Short was replaced because it carried the
+  forbidden nodding hook. Two are new.
+
+------------------------------------------------------------------------------
+WHAT DID NOT CHANGE
+------------------------------------------------------------------------------
+
+The spoken script. The renumbered Recording Master differs from the file you
+supplied by exactly one paragraph, the header line. Every other paragraph is
+identical, verified by comparison after the copy was written.
+
+The thumbnail. Nothing was designed, generated, altered or replaced.
+
+------------------------------------------------------------------------------
+SUPERSEDED
+------------------------------------------------------------------------------
+
+The previous packages for both topics are isolated in
+deliverables/SUPERSEDED_DO_NOT_USE/ with a notice explaining why. They were
+built against both the old numbering and the previous Recording Masters, so
+their spoken scripts are superseded as well as their numbers.
+
+The thumbnail line YOUR CAREER MAKES SENSE is superseded and appears nowhere
+in this package as an active thumbnail. The active line for Video 4 is STOP
+LISTING JOBS.
+
+==============================================================================
+END OF CHANGE LOG
+==============================================================================

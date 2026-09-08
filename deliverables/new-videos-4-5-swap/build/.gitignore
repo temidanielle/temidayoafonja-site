@@ -1,0 +1,3 @@
+__pycache__/
+_prev/*
+!_prev/sheet_v*.png

@@ -4,9 +4,56 @@ Series-level record of publication gates, open decisions and outstanding
 assets. Kept here so individual video packages do not have to be reopened to
 carry a cross-cutting note.
 
-Last updated: 7 September 2026.
+Last updated: 8 September 2026.
 
 ---
+
+## September 8, 2026 — Videos 4 and 5 numbering swap
+
+**Definitive.** The two topics swapped positions. The previous numbering is not
+retained as an alternate system anywhere.
+
+| Slot | Title | Thumbnail | Watch Next | Previously |
+|---|---|---|---|---|
+| **Video 4** | How to Explain a Career That Looks All Over the Place | **STOP LISTING JOBS** | Video 5 | Video 5 |
+| **Video 5** | Why Nobody Can Tell What You're Actually Good At | **THEY CAN'T READ YOU** | Video 1 | Video 4 |
+
+Routing is now **V4 to V5 to V1**. Video 5 routes forward to Video 1 and does
+not route back to Video 4.
+
+Playlist: **Make Your Next Move Without Starting Over**,
+`https://www.youtube.com/playlist?list=PLJt1Qn1s6-3U`, ordered V1, V2, V3, V4,
+V5, then V6 onward.
+
+New Recording Masters were issued the same day, so the spoken scripts changed as
+well as the numbers. Video 4 now opens on "they are not asking for your life
+story, they are asking you to help them place you" and its spoken CTA is to
+share the 20-second version in the comments; Keep the Proof dropped from primary
+CTA to a secondary description link. Video 5 now opens on "people can respect
+your experience and still have no idea what to do with you".
+
+The renumbered Recording Masters differ from the supplied files by exactly one
+paragraph each, the header line. Verified by paragraph comparison.
+
+**Superseded material** is isolated in `deliverables/SUPERSEDED_DO_NOT_USE/`
+with a notice. The thumbnail line **YOUR CAREER MAKES SENSE** is superseded and
+appears in no active production material.
+
+Current packages:
+
+    deliverables/VIDEO_4_How_To_Explain_A_Career_That_Looks_All_Over_The_Place_FINAL/
+    deliverables/VIDEO_5_Why_Nobody_Can_Tell_What_Youre_Actually_Good_At_FINAL/
+    deliverables/Video_4_and_5_FINAL_RENUMBERED_Production_Packages.zip
+    deliverables/V4_V5_FINAL_MANIFEST.md
+
+**VIDEO 4: READY FOR RECORDING / RIVERSIDE PRODUCTION**
+**VIDEO 5: READY FOR RECORDING / RIVERSIDE PRODUCTION**
+
+---
+
+### Superseded by the September 8 swap
+
+The section below records the September 7 lock, which the swap above supersedes for numbering, packaging, scripts and routing. Retained as history.
 
 ## Videos 4 and 5 — FINAL / RECORD-READY
 

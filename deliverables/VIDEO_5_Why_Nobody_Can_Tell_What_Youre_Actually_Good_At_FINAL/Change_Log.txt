@@ -1,0 +1,70 @@
+==============================================================================
+CHANGE LOG
+Video 5  ·  Why Nobody Can Tell What You're Actually Good At
+September 8, 2026
+==============================================================================
+
+This topic was Video 4. It is now Video 5. The swap is definitive: the
+previous numbering is not retained as an alternate system anywhere in this
+package.
+
+------------------------------------------------------------------------------
+WHAT CHANGED
+------------------------------------------------------------------------------
+
+  •  The number. Every asset, filename, prompt, document and routing
+  reference now says Video 5. Asset prefixes moved from V4_ to V5_.
+
+  •  The Recording Master. A new September 8 master replaced the previous
+  script. It now opens on "people can respect your experience and still have
+  no idea what to do with you". The older opening that led directly with
+  "Interesting background" was not restored; that line now appears only in
+  its approved later position.
+
+  •  The thumbnail line is unchanged: THEY CAN'T READ YOU.
+
+  •  The spoken CTA is unchanged: write your one-line Claim in the comments.
+  The pinned resource is the free 10-Minute Career Evidence Starter.
+
+  •  Watch Next. Routes to Video 1, How to Change Jobs Without Starting Your
+  Career Over. It does not route back to Video 4.
+
+  •  The assets. Eight hero teaching graphics plus a resource card and a
+  Watch Next card, all rebuilt at mobile-first sizes.
+
+  •  The Receipts asset changed shape. The previous version put three
+  bounded evidence claims on one frame, which forced the scope qualifiers
+  down to a size that fails on a phone. The frame now carries the rule that
+  governs all three, and Temidayo states each Receipt and its qualifier
+  aloud.
+
+  •  The Shorts. Six dedicated 9:16 candidates, marked Priority A and B. The
+  old Interesting Background Short was replaced because its hook is no
+  longer the opening of the video. Two are new.
+
+------------------------------------------------------------------------------
+WHAT DID NOT CHANGE
+------------------------------------------------------------------------------
+
+The spoken script. The renumbered Recording Master differs from the file you
+supplied by exactly one paragraph, the header line. Every other paragraph is
+identical, verified by comparison after the copy was written.
+
+The thumbnail. Nothing was designed, generated, altered or replaced.
+
+------------------------------------------------------------------------------
+SUPERSEDED
+------------------------------------------------------------------------------
+
+The previous packages for both topics are isolated in
+deliverables/SUPERSEDED_DO_NOT_USE/ with a notice explaining why. They were
+built against both the old numbering and the previous Recording Masters, so
+their spoken scripts are superseded as well as their numbers.
+
+The thumbnail line YOUR CAREER MAKES SENSE is superseded and appears nowhere
+in this package as an active thumbnail. The active line for Video 4 is STOP
+LISTING JOBS.
+
+==============================================================================
+END OF CHANGE LOG
+==============================================================================
