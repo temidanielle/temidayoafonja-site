@@ -136,8 +136,15 @@ for (const card of (filters.length ? [] : config.cards ?? [])) {
     measure: `${card.measure}px`,
     titleMax: String(card.titleMax),
   });
+  if (card.vAlign) params.set('vAlign', card.vAlign);
+  if (card.vGap) params.set('vGap', String(card.vGap));
   // A card without a palette inherits the brand palette from the template.
   for (const [key, value] of Object.entries(card.palette ?? {})) params.set(key, value);
+  if (card.glow) {
+    params.set('glow', '1');
+    if (card.glow.color) params.set('glowColor', card.glow.color);
+    if (card.glow.strength) params.set('glowStrength', card.glow.strength);
+  }
 
   await page.setViewportSize({ width: w, height: h });
   await load(`http://127.0.0.1:${port}/covers/brief-cover.html?${params}`);

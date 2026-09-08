@@ -55,10 +55,19 @@ individually, though: a card never drags the edition family to a different type
 size, and `verify-covers.mjs` checks each card against its own configured canvas
 instead of against the family.
 
-A card that omits `palette` inherits the brand palette below, which is what the
-September newsletter card does: 1600 x 900 on the same navy, cream and gold as
-the edition covers. Set `palette` only when a card genuinely needs to leave the
+A card that omits `palette` inherits the brand palette below, which is what all
+three newsletter cards do: 1600 x 900 on the same navy, cream and gold as the
+edition covers. Set `palette` only when a card genuinely needs to leave the
 family.
+
+Two more knobs exist for taller titles. `vAlign: "band"` centres the title block
+in the space between the eyebrow and the byline instead of using the small
+downward nudge that suits a two line cover, and `vGap` sets the clear space kept
+at each end of that band. The title is then fitted on height as well as width,
+so a four line title shrinks to fit rather than crowding the byline. `glow` adds
+a restrained radial lift behind the title: `{"strength": "0.5", "color":
+"#082a72"}` is the December card's setting, worth about a 20 point lift in the
+blue channel at the centre and invisible at the corners.
 
 ## The system
 

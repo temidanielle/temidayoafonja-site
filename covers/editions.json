@@ -48,6 +48,50 @@
       "safex": 150,
       "measure": 1220,
       "titleMax": 96
+    },
+    {
+      "filename": "capability_formation_brief_november_2026.png",
+      "titleLines": [
+        "Before You Call",
+        "Someone Ready,",
+        "Check What They Have",
+        "Already Carried"
+      ],
+      "edition": "",
+      "date": "EDITION FIVE · NOVEMBER 2026",
+      "canvas": {
+        "w": 1600,
+        "h": 900
+      },
+      "safex": 150,
+      "measure": 1220,
+      "titleMax": 110,
+      "vAlign": "band",
+      "vGap": 88
+    },
+    {
+      "filename": "capability_formation_brief_december_2026.png",
+      "titleLines": [
+        "Before You Plan",
+        "Next Year,",
+        "Ask What This Year’s",
+        "Work Actually Built"
+      ],
+      "edition": "",
+      "date": "EDITION SIX · DECEMBER 2026",
+      "canvas": {
+        "w": 1600,
+        "h": 900
+      },
+      "safex": 150,
+      "measure": 1220,
+      "titleMax": 110,
+      "glow": {
+        "strength": "0.5",
+        "color": "#082a72"
+      },
+      "vAlign": "band",
+      "vGap": 88
     }
   ]
 }

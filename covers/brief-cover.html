@@ -124,6 +124,15 @@
     color: var(--gold);
   }
 
+  /* ---- optional glow ---------------------------------------------------
+     Off unless ?glow=1. A soft lift behind the title, nothing more: it must
+     read as depth in the field, never as a visible shape. */
+  .glow {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
   /* ---- optional motif --------------------------------------------------
      Off unless ?motif=1. Editorial texture only: a faint drift of hairlines
      and points across the lower third, no destination marker, nothing to
@@ -141,6 +150,7 @@
 </head>
 <body>
   <div class="cover">
+    <div class="glow" id="glow" hidden></div>
     <div class="publication" id="publication"></div>
 
     <div class="title-block">
@@ -205,15 +215,39 @@
       return range.getBoundingClientRect().width;
     };
 
+    // Vertical room: the band between the publication line and the byline,
+    // less a clear gap at each end so the block never crowds either.
+    const gap = Number(get('vGap', 48));
+    const pub = document.querySelector('.publication').getBoundingClientRect();
+    const foot = document.querySelector('.byline').getBoundingClientRect();
+    const band = (foot.top - gap) - (pub.bottom + gap);
+    const block = document.querySelector('.title-block');
+
+    // A three or four line title is too tall for the small downward nudge that
+    // suits a two line cover, so it centres in the band instead and the top and
+    // bottom gaps come out equal.
+    if (get('vAlign', 'fixed') === 'band') {
+      block.style.top = ((pub.bottom + foot.top) / 2) + 'px';
+    }
+
     let size = forced || Number(get('titleMax', 132));
     titleEl.style.fontSize = size + 'px';
     while (!forced && size > Number(get('titleMin', 72))) {
       const widest = Math.max(...[...titleEl.children].map(textWidth));
-      if (widest <= measure) break;
+      if (widest <= measure && block.getBoundingClientRect().height <= band) break;
       size -= 1;
       titleEl.style.fontSize = size + 'px';
     }
     window.__fittedSize = size;
+  }
+
+  if (params.get('glow') === '1') {
+    const glow = document.getElementById('glow');
+    glow.hidden = false;
+    glow.style.background =
+      `radial-gradient(ellipse 58% 42% at 50% 48%, ${get('glowColor', '#082a72')} 0%,` +
+      ` rgb(from ${get('glowColor', '#082a72')} r g b / 0) 72%)`;
+    glow.style.opacity = get('glowStrength', '0.5');
   }
 
   if (params.get('motif') === '1') {
