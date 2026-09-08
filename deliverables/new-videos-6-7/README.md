@@ -1,5 +1,20 @@
 # Videos 6 and 7 production packages
 
+> **SUPERSEDED, September 8, 2026.** This is the **v1.0** build. Both packages
+> were rebuilt on the v2.0 Revised Recording Masters, and Video 6 was retitled.
+> The current build is `deliverables/new-videos-6-7-v2/build/`.
+>
+> The three output paths named below no longer exist here: they were moved to
+> `deliverables/SUPERSEDED_DO_NOT_USE/` as `OLD_v1.0_video-6-package/`,
+> `OLD_v1.0_video-7-package/` and the v1.0 combined archive. **Do not run
+> `build67.py`.** It would recreate the superseded folders beside the current
+> packages, which are:
+>
+>     deliverables/VIDEO_6_Before_You_Take_An_Internal_Role_FINAL/
+>     deliverables/VIDEO_7_Are_You_Growing_Or_Just_Being_Given_More_Work_FINAL/
+>
+> Kept only so the v1.0 history is recoverable.
+
 Built September 8, 2026 from the two Revised Recording Masters v1.0. The
 finished packages are in `deliverables/new-video-6/` and
 `deliverables/new-video-7/`; the combined archive is
