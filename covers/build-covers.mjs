@@ -134,9 +134,10 @@ for (const card of (filters.length ? [] : config.cards ?? [])) {
     w: `${w}px`, h: `${h}px`,
     safex: `${card.safex}px`,
     measure: `${card.measure}px`,
-    bg: card.palette.bg, ink: card.palette.ink, accent: card.palette.accent,
     titleMax: String(card.titleMax),
   });
+  // A card without a palette inherits the brand palette from the template.
+  for (const [key, value] of Object.entries(card.palette ?? {})) params.set(key, value);
 
   await page.setViewportSize({ width: w, height: h });
   await load(`http://127.0.0.1:${port}/covers/brief-cover.html?${params}`);

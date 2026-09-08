@@ -55,9 +55,10 @@ individually, though: a card never drags the edition family to a different type
 size, and `verify-covers.mjs` checks each card against its own configured canvas
 instead of against the family.
 
-The September newsletter card, for example, runs 1600 x 900 on a royal blue
-field (`#082A72`) with ivory type (`#F3EEE3`) and a `#C8A35D` rule. Those are
-that card's own values, not the brand palette below.
+A card that omits `palette` inherits the brand palette below, which is what the
+September newsletter card does: 1600 x 900 on the same navy, cream and gold as
+the edition covers. Set `palette` only when a card genuinely needs to leave the
+family.
 
 ## The system
 

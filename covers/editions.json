@@ -45,11 +45,6 @@
         "w": 1600,
         "h": 900
       },
-      "palette": {
-        "bg": "#082A72",
-        "ink": "#F3EEE3",
-        "accent": "#C8A35D"
-      },
       "safex": 150,
       "measure": 1220,
       "titleMax": 96
