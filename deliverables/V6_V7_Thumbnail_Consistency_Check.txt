@@ -1,0 +1,53 @@
+==========================================================================
+TARGETED THUMBNAIL CONSISTENCY CHECK
+Videos 6 and 7, revised production packages v2.0
+==========================================================================
+
+7 checks run. 7 passed, 0 failed.
+
+  [PASS] Stale form 'MORE WORK is not GROWTH' never used as the thumbnail line
+         The locked Video 7 thumbnail is written only in its exact symbol form. 1 paragraph(s) still name the old rendering, and every one of them does so to record that it was replaced.
+
+  [PASS] VIDEO 6 active thumbnail is NEW TITLE, SAME WORK?
+         Named as the active line in 13 thumbnail fields.
+
+  [PASS] VIDEO 7 active thumbnail is MORE WORK ≠ GROWTH
+         Named in the exact locked symbol form in 7 thumbnail fields.
+
+  [PASS] BUSIER IS NOT BETTER labelled alternate in every package paragraph naming it
+         10 package-authored paragraphs name it; all 10 mark it alternate, not active.
+
+  [PASS] Video 7 master declares BUSIER IS NOT BETTER as ALTERNATE THUMBNAIL
+         The master's header table reads 'ALTERNATE THUMBNAIL | BUSIER IS NOT BETTER' and 'RECOMMENDED THUMBNAIL | MORE WORK ≠ GROWTH'. Its visual-map row 1 also lists the line as part of the opening frame's on-screen idea; that row is a visual instruction, and dropping the line from the frame for phone legibility is recorded as a deliberate omission in the change log, the QA report and the manifest.
+
+  [PASS] Superseded YOU MAY NOT NEED TO LEAVE never a live thumbnail
+         Every thumbnail paragraph naming it marks it old or superseded. The same words remain the approved closing spoken line, which is a different use and was not touched.
+
+  [PASS] No thumbnail line appears on a Video 7 asset
+         Video 6's opening asset carries NEW TITLE, SAME WORK? by design, since the revised hook is built on it. No Video 7 thumbnail or alternate line is on any asset. The only asset text containing the words 'more work' is Video 6's Watch Next card, which renders Video 7's TITLE as routing copy, not a thumbnail line.
+
+--------------------------------------------------------------------------
+ACTIVE THUMBNAIL FIELDS, AS THEY NOW READ
+--------------------------------------------------------------------------
+  VIDEO 6  Change_Log.txt                 Old active thumbnail: YOU MAY NOT NEED TO LEAVE New active thumbnail: NEW TITLE,
+  VIDEO 6  Change_Log.txt                 • MISSING PUBLISHING ASSET. The replacement thumbnail artwork for NEW TITLE, SAM
+  VIDEO 6  Change_Log.txt                 • THE THUMBNAIL LINE. Old active thumbnail: YOU MAY NOT NEED TO LEAVE. New activ
+  VIDEO 6  Publishing_Materials.docx      Active thumbnail line NEW TITLE, SAME WORK?
+  VIDEO 6  Publishing_Materials.docx      Old active thumbnail: YOU MAY NOT NEED TO LEAVE New active thumbnail: NEW TITLE,
+  VIDEO 6  QA_Report.txt                  VIDEO 6 active thumbnail NEW TITLE, SAME WORK? (artwork not yet supplied) VIDEO 
+  VIDEO 6  QA_Report.txt                  [PASS] Active thumbnail line correct NEW TITLE, SAME WORK? (ARTWORK NOT YET SUPP
+  VIDEO 6  QA_Report.txt                  • MISSING PUBLISHING ASSET. The replacement thumbnail artwork for NEW TITLE, SAM
+  VIDEO 6  Recording_Run_of_Show.docx     Old active thumbnail: YOU MAY NOT NEED TO LEAVE New active thumbnail: NEW TITLE,
+  VIDEO 6  Recording_Run_of_Show.docx     Thumbnail NEW TITLE, SAME WORK?
+  VIDEO 6  V6_V7_FINAL_MANIFEST.md        | | | |---|---| | Previous primary title | Should I Make an Internal Move? 3 Que
+  VIDEO 6  V6_V7_FINAL_MANIFEST.md        | | | |---|---| | Video 6 active thumbnail | **NEW TITLE, SAME WORK?** (artwork 
+  VIDEO 6  Video_6_Before_You_Take_An_Int RECOMMENDED THUMBNAIL | NEW TITLE, SAME WORK?
+  VIDEO 7  Publishing_Materials.docx      Active thumbnail line MORE WORK ≠ GROWTH
+  VIDEO 7  QA_Report.txt                  VIDEO 6 active thumbnail NEW TITLE, SAME WORK? (artwork not yet supplied) VIDEO 
+  VIDEO 7  QA_Report.txt                  [PASS] Active thumbnail line correct MORE WORK ≠ GROWTH (APPROVED, UNCHANGED IN 
+  VIDEO 7  Recording_Run_of_Show.docx     Thumbnail MORE WORK ≠ GROWTH
+  VIDEO 7  V6_V7_FINAL_MANIFEST.md        | | | |---|---| | Title | Unchanged | | Active thumbnail | **MORE WORK ≠ GROWTH*
+  VIDEO 7  V6_V7_FINAL_MANIFEST.md        | | | |---|---| | Video 6 active thumbnail | **NEW TITLE, SAME WORK?** (artwork 
+  VIDEO 7  Video_7_Are_You_Growing_Or_Jus RECOMMENDED THUMBNAIL | MORE WORK ≠ GROWTH
+
+RESULT: ALL CHECKS PASS

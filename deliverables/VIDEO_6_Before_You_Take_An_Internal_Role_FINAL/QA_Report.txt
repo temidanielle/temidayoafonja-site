@@ -179,3 +179,24 @@ VIDEO 6: READY FOR RECORDING / RIVERSIDE PRODUCTION
 PUBLISHING IS BLOCKED ON ONE EXTERNAL ITEM: the replacement thumbnail artwork
 for NEW TITLE, SAME WORK? Recording and editing are not blocked.
 ==============================================================================
+
+==============================================================================
+LOCKED  ·  September 8, 2026
+==============================================================================
+
+Video 6 is LOCKED as it stands. No further editorial, script, Shorts, asset,
+Riverside prompt, routing, publishing or production change unless an actual
+factual or production defect is found.
+
+Last change: the packaging-consistency correction of September 8, in which
+Video 7's active-thumbnail references were set to the exact locked form
+MORE WORK ≠ GROWTH. No script, Short, asset, prompt, CTA route or Watch Next
+route was touched. Spoken prose that naturally says "more work is not growth"
+or "more work can be part of growth" was deliberately left alone.
+
+  VIDEO 6 active thumbnail   NEW TITLE, SAME WORK?  (artwork not yet supplied)
+  VIDEO 7 active thumbnail   MORE WORK ≠ GROWTH     (approved, unchanged)
+  BUSIER IS NOT BETTER       alternate only, on no asset
+
+Verified by V6_V7_Thumbnail_Consistency_Check.txt: 7 checks, 7 passing.
+==============================================================================

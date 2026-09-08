@@ -32,7 +32,7 @@ the tag list so the topic still surfaces for people searching that way.
 | | |
 |---|---|
 | Title | Unchanged |
-| Active thumbnail | **MORE WORK is not GROWTH** (approved, unchanged) |
+| Active thumbnail | **MORE WORK ≠ GROWTH** (approved, unchanged) |
 | Alternate line | BUSIER IS NOT BETTER, alternate only, on no asset |
 | Framework | CAR test: Complexity, Authority, Return |
 | Target runtime | Approximately 11:30 to 12:30 finished |
@@ -94,9 +94,30 @@ Routing: **V6 to V7 to V8.**
 packages. They were built on the v1.0 Recording Masters, before the Video 6
 retitle, so their spoken scripts and their packaging are both superseded.
 
+## Packaging-consistency correction, September 8
+
+Video 7's active-thumbnail references were set to the exact locked form
+**MORE WORK ≠ GROWTH**, replacing the prose rendering "MORE WORK is not
+GROWTH". Only fields identifying the actual thumbnail text changed. No script,
+Short, visual asset, Riverside prompt, CTA route, Watch Next route or
+production decision was touched, and spoken prose that naturally says "more
+work is not growth" or "more work can be part of growth" was left alone.
+
+Confirmed by `V6_V7_Thumbnail_Consistency_Check.txt`, 7 checks and 7 passing:
+
+| | |
+|---|---|
+| Video 6 active thumbnail | **NEW TITLE, SAME WORK?** (artwork not yet supplied) |
+| Video 7 active thumbnail | **MORE WORK ≠ GROWTH** (approved, unchanged) |
+| BUSIER IS NOT BETTER | alternate only, on no asset |
+
 ## Status
 
-**VIDEO 6: READY FOR RECORDING / RIVERSIDE PRODUCTION**
+**VIDEO 6: LOCKED. READY FOR RECORDING / RIVERSIDE PRODUCTION**
 Publishing blocked only on the replacement thumbnail artwork.
 
-**VIDEO 7: READY FOR RECORDING / RIVERSIDE PRODUCTION**
+**VIDEO 7: LOCKED. READY FOR RECORDING / RIVERSIDE PRODUCTION**
+
+Locked September 8, 2026. No further editorial, script, Shorts, asset,
+Riverside prompt, routing, publishing or production change unless an actual
+factual or production defect is found.

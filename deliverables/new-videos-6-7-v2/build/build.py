@@ -623,7 +623,7 @@ CHANGES = {
     "September renumbering. It is Video 6. That is settled and is not an "
     "alternate system."],
 7: ["THE TITLE AND THE THUMBNAIL. Unchanged and approved: Are You Growing, or "
-    "Just Being Given More Work?, with the MORE WORK is not GROWTH thumbnail. "
+    "Just Being Given More Work?, with the MORE WORK \u2260 GROWTH thumbnail. "
     "The artwork was not touched.",
     "THE SPOKEN SCRIPT. Replaced by the v2.0 Revised Recording Master, "
     "reproduced verbatim. The opening now leads with the sharper tension line, "
@@ -1058,7 +1058,7 @@ the tag list so the topic still surfaces for people searching that way.
 | | |
 |---|---|
 | Title | Unchanged |
-| Active thumbnail | **MORE WORK is not GROWTH** (approved, unchanged) |
+| Active thumbnail | **MORE WORK ≠ GROWTH** (approved, unchanged) |
 | Alternate line | BUSIER IS NOT BETTER, alternate only, on no asset |
 | Framework | CAR test: Complexity, Authority, Return |
 | Target runtime | Approximately 11:30 to 12:30 finished |

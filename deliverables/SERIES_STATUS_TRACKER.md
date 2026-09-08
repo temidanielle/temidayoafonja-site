@@ -17,7 +17,7 @@ script was rewritten.
 | Slot | Title | Thumbnail | Watch Next |
 |---|---|---|---|
 | **Video 6** | Before You Take an Internal Role, Ask These 3 Questions | **NEW TITLE, SAME WORK?** | Video 7 |
-| **Video 7** | Are You Growing, or Just Being Given More Work? | **MORE WORK is not GROWTH** (unchanged) | Video 8 |
+| **Video 7** | Are You Growing, or Just Being Given More Work? | **MORE WORK ≠ GROWTH** (unchanged) | Video 8 |
 
 **Video 6 was retitled.**
 
@@ -72,16 +72,39 @@ Current packages:
     deliverables/VIDEO_7_Are_You_Growing_Or_Just_Being_Given_More_Work_FINAL/
     deliverables/Video_6_and_7_FINAL_REVISED_Production_Packages.zip
     deliverables/V6_V7_FINAL_MANIFEST.md
+    deliverables/V6_V7_Thumbnail_Consistency_Check.txt
 
     Video_6_and_7_FINAL_REVISED_Production_Packages.zip
-    cf3b9e8af29adfb6e24b24dc533b0e97544def289cf63430c735a88ac79be815
+    6e685650ea85c777c0f7821389ed65fd73882f2677bff0682c363d4187b80419
 
-**VIDEO 6: READY FOR RECORDING / RIVERSIDE PRODUCTION**
+The earlier checksum `cf3b9e8a...` is superseded by the September 8
+packaging-consistency correction below.
+
+**Packaging-consistency correction, September 8.** Video 7's active-thumbnail
+references were set to the exact locked form **MORE WORK ≠ GROWTH**, replacing
+the prose rendering "MORE WORK is not GROWTH". Only fields identifying the
+actual thumbnail text changed: the manifest, the tracker row above, Video 7's
+QA report, change log, publishing materials and run of show. The two DOCX edits
+were made at run level and verified to change exactly one paragraph each. No
+script, Short, visual asset, Riverside prompt, CTA route, Watch Next route or
+production decision was touched, and spoken prose that naturally says "more
+work is not growth" or "more work can be part of growth" was left alone.
+
+Confirmed by `deliverables/V6_V7_Thumbnail_Consistency_Check.txt`, 7 checks and
+7 passing: Video 6's active thumbnail is `NEW TITLE, SAME WORK?`, Video 7's is
+`MORE WORK ≠ GROWTH`, and `BUSIER IS NOT BETTER` is labelled alternate in every
+package paragraph naming it and appears on no asset.
+
+**VIDEO 6: LOCKED. READY FOR RECORDING / RIVERSIDE PRODUCTION**
 Publishing blocked only on the replacement thumbnail artwork.
 
-**VIDEO 7: READY FOR RECORDING / RIVERSIDE PRODUCTION**
+**VIDEO 7: LOCKED. READY FOR RECORDING / RIVERSIDE PRODUCTION**
 
-QA: 32 checks per video, all passing.
+Locked September 8, 2026. No further editorial, script, Shorts, asset,
+Riverside prompt, routing, publishing or production change unless an actual
+factual or production defect is found.
+
+QA: 32 checks per video, all passing, plus the 7-check thumbnail pass.
 
 ---
 
