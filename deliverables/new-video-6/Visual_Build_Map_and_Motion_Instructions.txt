@@ -1,0 +1,576 @@
+==============================================================================
+VISUAL BUILD MAP AND MOTION INSTRUCTIONS
+Video 6  ·  Should I Make an Internal Move? 3 Questions to Decide
+==============================================================================
+
+Every on-screen idea and every treatment below comes from the visual map in
+the approved Recording Master. Nothing was invented here. The PNG assets are
+reference frames for Riverside, not a presentation deck: short callouts may
+sit over Temidayo, and everything with a framework or a comparison in it
+becomes a true full-screen motion graphic.
+
+------------------------------------------------------------------------------
+THE RULE THAT MATTERS MOST
+------------------------------------------------------------------------------
+
+TRUE FULL SCREEN means all of the following:
+
+  - the visual occupies the ENTIRE 16:9 canvas
+  - Temidayo is NOT visible moving behind it
+  - Temidayo is NOT visible around the sides or the edges
+  - there is NO smaller graphic or video rectangle floating over her camera
+    footage
+  - the visual is its own scene, not an overlay
+  - her spoken audio continues underneath
+  - then cut cleanly back to her
+
+The instruction to give Co-Creator is not "make the graphic full screen." It is:
+
+  "HIDE / REMOVE THE CAMERA VISUALLY DURING THIS SCENE. The motion graphic or
+   B-roll must be the only visual filling the entire 16:9 canvas."
+
+This applies to substantive B-roll exactly as it applies to graphics.
+
+------------------------------------------------------------------------------
+VISUAL GRAMMAR
+------------------------------------------------------------------------------
+
+  SHORT SINGLE-LINE CALLOUT                                 
+      May appear over Temidayo on camera.
+  FRAMEWORK, COMPARISON, DECISION PATH, NUMBERED STRUCTURE, SUMMARY
+      TRUE FULL-SCREEN motion graphic.
+  MEANINGFUL B-ROLL                                         
+      TRUE FULL-SCREEN visual break.
+  CTA                                                       
+      TRUE FULL SCREEN.
+  WATCH NEXT                                                
+      TRUE FULL SCREEN, final visual, no return to camera after it.
+
+------------------------------------------------------------------------------
+MOBILE LEGIBILITY IS A HARD REQUIREMENT
+
+Every substantive full-screen graphic has to be readable on a normal phone held
+at arm's length. The reference assets in this package are built to that
+constraint, and any motion version must keep it.
+
+Use:
+  - large, bold typography
+  - high contrast
+  - very short support copy
+  - one dominant idea per visual state
+  - sequential reveals
+
+Avoid:
+  - tiny labels
+  - dense grids
+  - long paragraphs
+  - important text in a footer position
+  - elegant desktop layouts that stop working at phone size
+  - several small boxes each holding a full sentence
+
+Where a framework holds several ideas, reveal them one at a time rather than
+showing all of them small at once. Every reveal order in the build map is
+written to that rule.
+
+------------------------------------------------------------------------------
+CAPTIONS
+
+Suppress, simplify, hide or reposition captions during:
+  - full-screen motion graphics
+  - substantive B-roll
+  - the CTA
+  - Watch Next
+
+Captions must never compete with designed text. The words on the graphic are
+the message; a caption bar over them is a defect, not a preference.
+
+------------------------------------------------------------------------------
+SUBSCRIBE CUE
+
+One cue per video, and only after the viewer has already received something
+useful.
+
+  - about one second
+  - premium, small, and easy to miss if you are not looking for it
+  - subtle fade, slide, or gentle scale
+  - paired with a quiet click, a soft pop, or a restrained whoosh
+
+Never in the opening. Never a loud or cartoonish YouTube animation.
+
+------------------------------------------------------------------------------
+SCENES
+------------------------------------------------------------------------------
+
+==============================================================================
+A1   01_Same_Company_Not_Same_Work.png
+==============================================================================
+
+  VISUAL JOB
+    Opening distinction
+
+  EXACT ON-SCREEN IDEA, FROM THE RECORDING MASTER
+    SAME COMPANY IS NOT SAME WORK / What changes is the work you can
+    access.
+
+  SCRIPT TRIGGER
+    "That familiarity can make the opportunity look smaller than it is, or
+    safer than it really is."
+
+  TREATMENT
+    True full-screen motion graphic after the hook.
+
+    FULL-SCREEN REQUIREMENT: hide or remove the camera visually during
+    this scene. This graphic must be the only visual filling the entire
+    16:9 canvas. Temidayo must not be visible behind it or around its
+    edges. Her audio continues underneath.
+
+  REVEAL ORDER
+    Headline first, held alone for 1.2s. Supporting line at 1.8s. Gentle
+    fade, no movement.
+
+  APPROXIMATE HOLD
+    6 to 7 seconds
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends.
+
+  CAPTIONS
+    Captions off for the whole hold.
+
+  SOUND
+    Soft whoosh on the headline. Nothing on the second line.
+
+  BRAND AND HIERARCHY
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat for display, DM Sans for body. Gold eyebrow and hairline
+    top left, then the headline, then the content. Large type only. Motion
+    is fade, slide and gentle scale. No bouncing, spinning, aggressive
+    zooms or constant animation.
+
+==============================================================================
+A2   02_Three_Questions_Framework.png
+==============================================================================
+
+  VISUAL JOB
+    Three-question framework
+
+  EXACT ON-SCREEN IDEA, FROM THE RECORDING MASTER
+    1 WILL THE WORK CHANGE? / 2 WILL YOUR JUDGMENT EXPAND? / 3 WILL THE
+    EVIDENCE TRAVEL?
+
+  SCRIPT TRIGGER
+    "Before you make an internal move, I want you to answer three
+    questions."
+
+  TREATMENT
+    True full screen. This is the hero graphic of the video and returns
+    briefly at each section change.
+
+    FULL-SCREEN REQUIREMENT: hide or remove the camera visually during
+    this scene. This graphic must be the only visual filling the entire
+    16:9 canvas. Temidayo must not be visible behind it or around its
+    edges. Her audio continues underneath.
+
+  REVEAL ORDER
+    One question at a time, 0.9s apart. Hold the complete set for a full
+    beat before cutting away.
+
+  APPROXIMATE HOLD
+    9 to 11 seconds on first appearance, 3 seconds on each return.
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends.
+
+  CAPTIONS
+    Captions off.
+
+  SOUND
+    One restrained accent per question, then a resolve on the complete
+    set.
+
+  BRAND AND HIERARCHY
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat for display, DM Sans for body. Gold eyebrow and hairline
+    top left, then the headline, then the content. Large type only. Motion
+    is fade, slide and gentle scale. No bouncing, spinning, aggressive
+    zooms or constant animation.
+
+==============================================================================
+A3   03_An_Ordinary_Monday.png
+==============================================================================
+
+  VISUAL JOB
+    Question 1
+
+  EXACT ON-SCREEN IDEA, FROM THE RECORDING MASTER
+    WHAT WILL BE DIFFERENT ON AN ORDINARY MONDAY? / Problems, Systems,
+    Stakeholders, Context
+
+  SCRIPT TRIGGER
+    "Start with the most concrete question: What will actually be
+    different on an ordinary Monday?"
+
+  TREATMENT
+    Full-screen section graphic, then return to camera.
+
+    FULL-SCREEN REQUIREMENT: hide or remove the camera visually during
+    this scene. This graphic must be the only visual filling the entire
+    16:9 canvas. Temidayo must not be visible behind it or around its
+    edges. Her audio continues underneath.
+
+  REVEAL ORDER
+    Question first. The four words arrive together at 1.5s, not one at a
+    time.
+
+  APPROXIMATE HOLD
+    6 to 7 seconds
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends.
+
+  CAPTIONS
+    Captions off.
+
+  SOUND
+    One soft accent as the four words land.
+
+  BRAND AND HIERARCHY
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat for display, DM Sans for body. Gold eyebrow and hairline
+    top left, then the headline, then the content. Large type only. Motion
+    is fade, slide and gentle scale. No bouncing, spinning, aggressive
+    zooms or constant animation.
+
+==============================================================================
+A4   04_More_Tasks_Vs_More_Judgment.png
+==============================================================================
+
+  VISUAL JOB
+    Tasks vs judgment
+
+  EXACT ON-SCREEN IDEA, FROM THE RECORDING MASTER
+    MORE TASKS: Volume, Coordination, Absorption  /  MORE JUDGMENT:
+    Interpretation, Tradeoffs, Consequence
+
+  SCRIPT TRIGGER
+    "More tasks can mean volume, coordination, and absorption. More
+    judgment means you have to interpret incomplete information."
+
+  TREATMENT
+    True full-screen comparison.
+
+    FULL-SCREEN REQUIREMENT: hide or remove the camera visually during
+    this scene. This graphic must be the only visual filling the entire
+    16:9 canvas. Temidayo must not be visible behind it or around its
+    edges. Her audio continues underneath.
+
+  REVEAL ORDER
+    MORE TASKS first, held alone for 1.5s so it lands as the familiar one.
+    MORE JUDGMENT second.
+
+  APPROXIMATE HOLD
+    8 to 9 seconds
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends.
+
+  CAPTIONS
+    Captions off.
+
+  SOUND
+    Restrained click or sweep as MORE JUDGMENT arrives.
+
+  BRAND AND HIERARCHY
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat for display, DM Sans for body. Gold eyebrow and hairline
+    top left, then the headline, then the content. Large type only. Motion
+    is fade, slide and gentle scale. No bouncing, spinning, aggressive
+    zooms or constant animation.
+
+==============================================================================
+A5   05_Portable_Evidence.png
+==============================================================================
+
+  VISUAL JOB
+    Portable evidence
+
+  EXACT ON-SCREEN IDEA, FROM THE RECORDING MASTER
+    RESULT: What changed?  /  JUDGMENT: What did you notice or decide?  /
+    RANGE: What new context can you now handle?
+
+  SCRIPT TRIGGER
+    "I would look for three kinds of evidence: result, judgment, and
+    range."
+
+  TREATMENT
+    True full-screen three-part reveal.
+
+    FULL-SCREEN REQUIREMENT: hide or remove the camera visually during
+    this scene. This graphic must be the only visual filling the entire
+    16:9 canvas. Temidayo must not be visible behind it or around its
+    edges. Her audio continues underneath.
+
+  REVEAL ORDER
+    One row at a time, 1.1s apart. Hold long enough to read all three
+    together.
+
+  APPROXIMATE HOLD
+    9 to 10 seconds
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends.
+
+  CAPTIONS
+    Captions off.
+
+  SOUND
+    One accent on the first row only.
+
+  BRAND AND HIERARCHY
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat for display, DM Sans for body. Gold eyebrow and hairline
+    top left, then the headline, then the content. Large type only. Motion
+    is fade, slide and gentle scale. No bouncing, spinning, aggressive
+    zooms or constant animation.
+
+==============================================================================
+A6   06_Reading_The_Three_Answers.png
+==============================================================================
+
+  VISUAL JOB
+    Decision read
+
+  EXACT ON-SCREEN IDEA, FROM THE RECORDING MASTER
+    3 YES Strong growth case  /  2 YES Investigate or negotiate  /  0-1
+    YES Movement, not much growth
+
+  SCRIPT TRIGGER
+    "Now put the three answers together."
+
+  TREATMENT
+    True full-screen sequential reveal. No scorecard gamification: no
+    ticks, crosses, scores, colour coding or progress bars.
+
+    FULL-SCREEN REQUIREMENT: hide or remove the camera visually during
+    this scene. This graphic must be the only visual filling the entire
+    16:9 canvas. Temidayo must not be visible behind it or around its
+    edges. Her audio continues underneath.
+
+  REVEAL ORDER
+    One row at a time, 1.2s apart. The third row arrives at the same
+    visual weight as the others, never dimmed or marked as failure.
+
+  APPROXIMATE HOLD
+    9 to 10 seconds
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends.
+
+  CAPTIONS
+    Captions off.
+
+  SOUND
+    One flat accent per row, same pitch. Do not resolve upward or
+    downward.
+
+  BRAND AND HIERARCHY
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat for display, DM Sans for body. Gold eyebrow and hairline
+    top left, then the headline, then the content. Large type only. Motion
+    is fade, slide and gentle scale. No bouncing, spinning, aggressive
+    zooms or constant animation.
+
+==============================================================================
+A7   07_Questions_To_Ask.png
+==============================================================================
+
+  VISUAL JOB
+    Conversation prompts
+
+  EXACT ON-SCREEN IDEA, FROM THE RECORDING MASTER
+    What problems will I own? / Which decisions belong to me? / How will
+    success be measured?
+
+  SCRIPT TRIGGER
+    "Before you accept the opportunity, ask..."
+
+  TREATMENT
+    Full-screen progressive questions.
+
+    FULL-SCREEN REQUIREMENT: hide or remove the camera visually during
+    this scene. This graphic must be the only visual filling the entire
+    16:9 canvas. Temidayo must not be visible behind it or around its
+    edges. Her audio continues underneath.
+
+  REVEAL ORDER
+    One question at a time, 1.0s apart, with room to breathe. Hold all
+    three.
+
+  APPROXIMATE HOLD
+    8 to 9 seconds
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends.
+
+  CAPTIONS
+    Captions off.
+
+  SOUND
+    One soft accent per question.
+
+  BRAND AND HIERARCHY
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat for display, DM Sans for body. Gold eyebrow and hairline
+    top left, then the headline, then the content. Large type only. Motion
+    is fade, slide and gentle scale. No bouncing, spinning, aggressive
+    zooms or constant animation.
+
+==============================================================================
+CTA   08_CTA_Career_Decision_Evidence_Check.png
+==============================================================================
+
+  VISUAL JOB
+    CTA
+
+  EXACT ON-SCREEN IDEA, FROM THE RECORDING MASTER
+    CAREER DECISION EVIDENCE CHECK / temidayoafonja.com/career-decisions
+
+  SCRIPT TRIGGER
+    "the free Career Decision Evidence Check gives you a structured way to
+    read the evidence behind that choice. It is linked below."
+
+  TREATMENT
+    True full screen. One product route only in this video.
+
+    FULL-SCREEN REQUIREMENT: hide or remove the camera visually during
+    this scene. This graphic must be the only visual filling the entire
+    16:9 canvas. Temidayo must not be visible behind it or around its
+    edges. Her audio continues underneath.
+
+  REVEAL ORDER
+    Logomark, headline at 0.6s, URL at 2.0s.
+
+  APPROXIMATE HOLD
+    8 to 9 seconds, through the whole CTA line.
+
+  RETURN TO CAMERA
+    Cut back to Temidayo on the line immediately after the trigger passage
+    ends.
+
+  CAPTIONS
+    Captions off. Never cover the web address.
+
+  SOUND
+    One warm accent on the URL.
+
+  BRAND AND HIERARCHY
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat for display, DM Sans for body. Gold eyebrow and hairline
+    top left, then the headline, then the content. Large type only. Motion
+    is fade, slide and gentle scale. No bouncing, spinning, aggressive
+    zooms or constant animation.
+
+==============================================================================
+WN   09_Watch_Next_Are_You_Growing.png
+==============================================================================
+
+  VISUAL JOB
+    Watch Next
+
+  EXACT ON-SCREEN IDEA, FROM THE RECORDING MASTER
+    ARE YOU GROWING, OR JUST BEING GIVEN MORE WORK?
+
+  SCRIPT TRIGGER
+    "That is what we are testing next in Are You Growing, or Just Being
+    Given More Work?"
+
+  TREATMENT
+    True full screen and the FINAL visual of the video. Right of frame
+    kept clear for the YouTube end screen.
+
+    FULL-SCREEN REQUIREMENT: hide or remove the camera visually during
+    this scene. This graphic must be the only visual filling the entire
+    16:9 canvas. Temidayo must not be visible behind it or around its
+    edges. Her audio continues underneath.
+
+  REVEAL ORDER
+    Static. No animation on the final card.
+
+  APPROXIMATE HOLD
+    10 to 14 seconds, through the closing line and past the last word.
+
+  RETURN TO CAMERA
+    NONE. This is the final visual of the video. Do not cut back to
+    Temidayo after this card, do not add an outro sting, and do not place
+    anything after it. The video ends on this frame.
+
+  CAPTIONS
+    Captions off.
+
+  SOUND
+    None. Let the closing line land dry.
+
+  BRAND AND HIERARCHY
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat for display, DM Sans for body. Gold eyebrow and hairline
+    top left, then the headline, then the content. Large type only. Motion
+    is fade, slide and gentle scale. No bouncing, spinning, aggressive
+    zooms or constant animation.
+
+------------------------------------------------------------------------------
+SOUND DESIGN
+
+Four to seven restrained accents across the video. Not one per caption and not
+one per cut. Every accent sits clearly under Temidayo's voice.
+
+Reserve them for:
+  - the hero framework entering
+  - a major comparison
+  - a numbered reveal
+  - an important distinction
+  - the Subscribe cue
+  - the CTA entrance
+  - the Watch Next handoff
+
+Palette: soft whoosh, subtle click, gentle pop, restrained impact, clean sweep.
+
+------------------------------------------------------------------------------
+THE STRONGEST MANUAL SOUND PLACEMENTS, IF AUTOMATION FAILS
+------------------------------------------------------------------------------
+
+  1. The three-question framework entering. This is the hero graphic and the
+  single most important accent in the video.
+
+  2. MORE JUDGMENT arriving on the comparison, after MORE TASKS has been
+  held alone.
+
+  3. The first row of the portable-evidence reveal. One accent establishes
+  the pattern; three would be noise.
+
+  4. The Subscribe cue, once, after the viewer has had real value. Suggested
+  placement is just after the tasks-versus-judgment comparison lands.
+
+  5. The CTA card entering.
+
+  6. The Watch Next handoff. Then nothing at all.
+
+------------------------------------------------------------------------------
+B-ROLL
+------------------------------------------------------------------------------
+
+Two to four meaningful B-roll moments across the video. Each one is a TRUE
+FULL-SCREEN visual break under the same rule as the graphics: Temidayo is not
+visible behind it or around its edges. No generic corporate stock. No stock
+handshakes, stock offices or stock laptops. If no B-roll of the right quality
+exists, use fewer moments rather than filler.
+
+==============================================================================
+END OF BUILD MAP
+==============================================================================

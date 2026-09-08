@@ -1,0 +1,141 @@
+==============================================================================
+QA REPORT
+Video 7  ·  Are You Growing, or Just Being Given More Work?
+September 8, 2026
+==============================================================================
+
+22 checks run. 22 passed, 0 failed.
+
+  [PASS] Recording Master remains the spoken source of truth
+         Video_7_Revised_Recording_Master_v1.0.docx was reproduced
+         verbatim. Every spoken paragraph in this package is byte-
+         identical to the master; no wording was rewritten, shortened
+         or restructured. Production markers are carried through
+         unchanged.
+
+  [PASS] Production instructions correctly applied
+         All nine assets are built from the visual map in the
+         Recording Master, using its exact on-screen ideas and its
+         stated treatments.
+
+  [PASS] Thumbnail untouched
+         No thumbnail was designed, generated, altered or replaced.
+         The approved artwork is external to this package.
+
+  [PASS] U.S. English
+         Spoken script and every asset swept.
+
+  [PASS] No em dashes
+         0 in the spoken script, 0 in the assets.
+
+  [PASS] No invented claims
+         Nothing was added to the spoken copy. The assets carry only
+         wording already present in the Recording Master's visual
+         map.
+
+  [PASS] No implication that all experience transfers
+         The master's boundary section is preserved and restated in
+         the run of show as lines to hold while speaking.
+
+  [PASS] Genuine relearning and constraints preserved
+         The constraints section is intact in the spoken copy and
+         repeated in the run of show.
+
+  [PASS] No confidential or employer-owned evidence suggested
+         The script defines portable evidence as explaining problem,
+         role, judgment and permitted result without internal
+         acronyms or confidential material. Personal proof stays
+         bounded, with no employer, assignment, quotation or result
+         named.
+
+  [PASS] Mobile legibility
+         Large bold display type, high contrast, one dominant idea
+         per state, sequential reveals throughout. No dense grids and
+         no small boxes holding full sentences. Verified against the
+         rendered DOM: nothing below the caption line, nothing inside
+         the safe margin.
+
+  [PASS] Substantive graphics truly full screen
+         Stated per scene in the build map, in the Co-Creator master
+         prompt and in every per-scene prompt, with the hide-the-
+         camera instruction spelled out rather than implied.
+
+  [PASS] Substantive B-roll truly full screen
+         Carried in the visual grammar, the build map's B-roll
+         section and the master prompt.
+
+  [PASS] Captions do not compete with graphics
+         Caption suppression is stated per scene and in a dedicated
+         section of the build map, the run of show and the master
+         prompt.
+
+  [PASS] Subscribe cue appears once
+         One cue, about a second, placed after real value has landed.
+         Suggested placement is named in the manual sound list. Never
+         in the opening.
+
+  [PASS] Sound restrained
+         Four to seven accents, all under her voice, with the six
+         strongest manual placements listed if automation fails.
+
+  [PASS] CTA correct
+         Capability Formation Field Kit
+         https://temidayoafonja.com/fieldkit
+
+  [PASS] Watch Next correct
+         How to Show Your Impact at Work When You Built It From
+         Scratch (Video 8)
+
+  [PASS] Watch Next is the final visual
+         Stated in the build map scene, the per-scene prompt and the
+         master prompt.
+
+  [PASS] No return to camera after Watch Next
+         The Watch Next scene carries RETURN TO CAMERA: NONE, and the
+         master prompt repeats it.
+
+  [PASS] No dead footage after the ending
+         The master prompt instructs the editor to cut everything
+         after the last spoken word, and the run of show tells
+         Temidayo to hold three seconds of silence and then stop
+         moving.
+
+  [PASS] Export specification 1920x1080 minimum
+         9 assets, sizes observed: 1920x1080
+
+  [PASS] No synthesized speech
+         The master prompt forbids generating any audio and requires
+         a pickup to be flagged instead.
+
+------------------------------------------------------------------------------
+OBSERVATIONS AND ITEMS FOR TEMIDAYO
+------------------------------------------------------------------------------
+
+  •  RUNTIME. The spoken script is 1,455 words. At 145 words per minute that
+  is about 10:02, under the master's stated target of 11:30 to 12:30. At 130
+  words per minute it is about 11:11, just under target. The master says do
+  not pad, so nothing was added. Of the two videos this is the one more
+  likely to finish short, and its own master asks you to preserve natural
+  pacing and not over-shorten explanations, which points the same way: take
+  it slowly.
+
+  •  No factual contradiction was found between the Recording Master and the
+  locked packaging you supplied. Title, thumbnail, framework, CTA URL and
+  Watch Next all match exactly.
+
+  •  THUMBNAIL TEXT CONTAINS A SYMBOL. The approved thumbnail is MORE WORK
+  followed by the not-equal sign and GROWTH. The artwork already exists and
+  was not touched. Where that line has to appear as plain text in this
+  package, it is written out in words so it cannot be mangled by a font or
+  an encoding step.
+
+  •  HELD, PENDING THE FINAL PRODUCTION PACKAGE. The dedicated Shorts, the
+  description and publishing copy, the pinned comment, the tags and
+  hashtags, and the playlist routing are not in this package. The file that
+  governs them, Video_7_Final_Production_Package_v1.0.docx, was not
+  attached. Attach it and they can be added without touching anything
+  already built here.
+
+==============================================================================
+END OF QA REPORT
+==============================================================================
