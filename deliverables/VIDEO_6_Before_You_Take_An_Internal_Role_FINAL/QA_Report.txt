@@ -1,0 +1,181 @@
+==============================================================================
+QA REPORT
+Video 6  ·  Before You Take an Internal Role, Ask These 3 Questions
+Revised production package v2.0  ·  September 8, 2026
+==============================================================================
+
+32 checks run. 32 passed, 0 failed.
+
+  [PASS] Spoken copy verbatim from the v2.0 Recording Master
+         61 of 61 spoken paragraphs reproduced without alteration.
+         Nothing was rewritten, shortened or restructured.
+
+  [PASS] Primary title correct
+         Before You Take an Internal Role, Ask These 3 Questions
+
+  [PASS] Superseded Video 6 title never used as a live primary title
+         Every surviving occurrence of the old title is on a line
+         that labels it old, superseded, alternate or search
+         phrasing, or is inside the tag list where it still earns
+         search traffic. It is on no asset.
+
+  [PASS] Active thumbnail line correct
+         NEW TITLE, SAME WORK?   (ARTWORK NOT YET SUPPLIED)
+
+  [PASS] Superseded Video 6 thumbnail line never used as a live thumbnail
+         YOU MAY NOT NEED TO LEAVE is superseded AS A THUMBNAIL LINE
+         ONLY. The same words are still the approved closing spoken
+         line in the v2.0 master, so they legitimately appear in the
+         script, the reading copy, the run of show and one Short.
+         This check therefore tests the thing that actually matters:
+         the words appear on no asset, and every line that pairs them
+         with the word thumbnail also marks them old, superseded, or
+         less clickable than the new line.
+
+  [PASS] Alternate thumbnail line not used as active packaging
+         Not applicable. Video 6 has no alternate thumbnail line.
+
+  [PASS] Numbered Video 6 everywhere
+         No asset prefix from the other video appears in this
+         package.
+
+  [PASS] Approved opening preserved
+         An internal move can look safe because the logo does not
+         change.
+
+  [PASS] Approved closing line preserved
+         You may not need to leave. But the work does need to change.
+
+  [PASS] Framework intact
+         Three questions: Work, Judgment, Evidence
+
+  [PASS] One product route only
+         Career Decision Evidence Check
+         https://temidayoafonja.com/career-decisions. No second
+         product link anywhere: no Field Kit or Career Decision
+         Evidence Check crossover, no Keep the Proof, no Career
+         Evidence Starter, no book and no workshop.
+
+  [PASS] Watch Next correct
+         Are You Growing, or Just Being Given More Work?   (Video 7)
+
+  [PASS] Watch Next is the final visual and there is no return to camera
+         Stated in the scene, in the per-scene prompt and in the
+         master prompt.
+
+  [PASS] Real limits preserved
+         The limits this script is required to name are all present
+         in the spoken copy: bias, discriminat, harass, compensation,
+         safety, health, immigration, benefit, stability, energy,
+         caregiving, timing. They are repeated as boundaries in the
+         run of show. Video 6 names bias and age discrimination out
+         loud, in the section on what the test cannot solve, and it
+         says nobody needs a perfect internal-mobility strategy
+         before protecting themselves from harassment, discrimination
+         or an unsafe environment.
+
+  [PASS] Mobile readability
+         Very large type, one dominant idea per state, sequential
+         reveals, no four-box grids. Geometry measured against the
+         rendered DOM: zero overlaps, nothing in the caption zone,
+         nothing inside the safe edge. Every frame was then
+         downscaled to 390 points wide and read at that size.
+
+  [PASS] Full-screen hero graphics
+         Stated per scene with the hide-the-camera instruction
+         spelled out.
+
+  [PASS] Full-screen substantive B-roll
+         Stated in the grammar, the map's B-roll section and the
+         master prompt.
+
+  [PASS] Captions suppressed during hero visuals
+         Per scene and in a dedicated section of the map, run of show
+         and prompt.
+
+  [PASS] One restrained Subscribe cue
+         Visual only, adds no dialogue, placed after the three
+         questions have been named and the first one has landed.
+
+  [PASS] Four to seven restrained sound accents
+         Stated in the map, the run of show and the master prompt.
+
+  [PASS] Editorial boundaries preserved
+         The run of show lists all 9 never-imply boundaries from the
+         master as lines to hold while speaking.
+
+  [PASS] No confidential material advised
+         The boundaries state that evidence is your own account of
+         your own work, never proprietary, customer, employee or
+         employer-owned material.
+
+  [PASS] U.S. English
+         Spoken script, assets and every package document swept.
+
+  [PASS] No em dashes
+         0 in the spoken script, 0 in the assets, 0 across the
+         package.
+
+  [PASS] No invented claims
+         Nothing was added to the spoken copy. Asset wording, Short
+         wording and publishing copy all trace to the master.
+
+  [PASS] No invented speech
+         The master prompt forbids generating audio and requires a
+         pickup to be flagged instead.
+
+  [PASS] No invented music attribution
+         No track, artist or license code is supplied anywhere. The
+         publishing notes say to add attribution only once the real
+         track is known.
+
+  [PASS] No estimated final chapters
+         No chapter timestamps are supplied: zero lines anywhere
+         begin with a timestamp. The publishing notes and the master
+         prompt both say to build chapters from the actual export.
+
+  [PASS] No dead footage after the ending
+         The master prompt instructs the editor to cut everything
+         after the last spoken word.
+
+  [PASS] Export specification 1920x1080 minimum
+         9 assets, sizes: 1920x1080
+
+  [PASS] Six dedicated Shorts with Priority A and B
+         A 01_New_Title_Same_Work 42s, A ort_02_Three_Questions 39s,
+         A bility_Is_Not_Judgment 40s, B e_Ordinary_Monday_Test 37s,
+         B ll_The_Evidence_Travel 43s, B _May_Not_Need_To_Leave 50s
+
+  [PASS] Shorts are additional recording time, stated honestly
+         The Shorts document says the six vertical takes sit outside
+         the long-form estimate and budgets 35 to 50 extra minutes.
+
+------------------------------------------------------------------------------
+FLAGGED FOR YOUR DECISION, NOT SILENTLY CHANGED
+------------------------------------------------------------------------------
+
+  •  MISSING PUBLISHING ASSET. The replacement thumbnail artwork for NEW
+  TITLE, SAME WORK? does not exist. Nothing in the uploads contains it and
+  nothing in this package creates it. Per the brief, it was flagged rather
+  than independently redesigned. Video 6 cannot publish until that artwork
+  is supplied. Every document here names the new line as the active
+  thumbnail, so the package is ready for the artwork the moment it arrives.
+
+  •  WORDING DIFFERENCE RESOLVED, NOT AN ERROR. The visual map table inside
+  the v2.0 master writes the second question as WILL YOUR JUDGMENT EXPAND?
+  The master's own spoken hook says "Will my judgment expand?", and so does
+  the production brief. The asset uses MY, so that the graphic matches the
+  line Temidayo actually speaks. No spoken copy was changed.
+
+  •  WORDING DIFFERENCE RESOLVED, NOT AN ERROR. The master's decision-read
+  row reads "Movement, not much growth". The production brief asks for the
+  softer "May be movement without much growth", which also matches the
+  spoken line, "the opportunity may be movement without much growth". The
+  asset uses the softer wording. No spoken copy was changed.
+
+==============================================================================
+VIDEO 6: READY FOR RECORDING / RIVERSIDE PRODUCTION
+
+PUBLISHING IS BLOCKED ON ONE EXTERNAL ITEM: the replacement thumbnail artwork
+for NEW TITLE, SAME WORK? Recording and editing are not blocked.
+==============================================================================

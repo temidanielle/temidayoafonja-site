@@ -1,0 +1,94 @@
+==============================================================================
+CHANGE LOG
+Video 7  ·  Are You Growing, or Just Being Given More Work?
+Revised production package v2.0  ·  September 8, 2026
+==============================================================================
+
+This package replaces the Video 7 Final Production Package v1.0. It is built
+on the v2.0 Revised Recording Master, which is the definitive spoken source of
+truth. Where the v1.0 production package and the v2.0 master disagreed, the
+master won.
+
+------------------------------------------------------------------------------
+WHAT CHANGED
+------------------------------------------------------------------------------
+
+  •  THE TITLE AND THE THUMBNAIL. Unchanged and approved: Are You Growing,
+  or Just Being Given More Work?, with the MORE WORK is not GROWTH
+  thumbnail. The artwork was not touched.
+
+  •  THE SPOKEN SCRIPT. Replaced by the v2.0 Revised Recording Master,
+  reproduced verbatim. The opening now leads with the sharper tension line,
+  sometimes the reward for being dependable is not growth, it is more work,
+  before the concrete absorption scene.
+
+  •  THE ASSETS. Rebuilt from the v2.0 master's own visual map, at mobile-
+  first sizes. Ten 1920x1080 frames: eight teaching frames, a CTA card and a
+  Watch Next card. The opening frame is new. The scope conversation is split
+  across two frames so that every question stays large enough to read on a
+  phone.
+
+  •  THE PATTERN READ. Neutral rather than punitive. No red, no warning
+  icons and no scoring, because the master is explicit that a role expanding
+  as workload can be an acceptable short season and is not proof of bad
+  intent.
+
+  •  THE SHORTS. Six dedicated 9:16 candidates, marked Priority A and B, re-
+  audited against the v2.0 spoken copy. The boundaries the v2.0 master
+  states explicitly, including that not every assignment must produce
+  immediate promotion, were added where the earlier versions had dropped
+  them.
+
+  •  PUBLISHING. Description and pinned comment carried forward and
+  tightened against the v2.0 spoken copy, including the boundary and review-
+  date language. Tags and hashtags unchanged.
+
+  •  ONE PRODUCT ROUTE. The Capability Formation Field Kit only.
+
+  •  NUMBERING. This topic was labeled Video 6 in files older than the
+  September renumbering. It is Video 7. That is settled and is not an
+  alternate system.
+
+------------------------------------------------------------------------------
+WHAT DID NOT CHANGE
+------------------------------------------------------------------------------
+
+The spoken script was not rewritten. The v2.0 Recording Master copied into
+this folder is byte-identical to the file supplied: it already carried the
+correct number and title, so no header edit was needed and zero paragraphs
+differ.
+
+The approved opening and the approved closing line are preserved exactly and
+are quoted in the run of show so they cannot drift during the take.
+
+Watch Next remains the final visual, with no return to camera after it.
+
+No thumbnail artwork was designed, generated or altered for either video.
+
+------------------------------------------------------------------------------
+FLAGGED, NOT SILENTLY CHANGED
+------------------------------------------------------------------------------
+
+  •  DELIBERATE OMISSION FOR MOBILE LEGIBILITY. The visual map row for the
+  opening frame in the v2.0 master includes BUSIER IS NOT BETTER alongside
+  the two lines the frame already carries. Three competing lines forced all
+  of them below phone-readable size in testing. The brief states that BUSIER
+  IS NOT BETTER is an alternate only and should not be forced if it creates
+  too much copy, so it was dropped from the frame and is recorded in the
+  publishing materials as an alternate thumbnail line. The active thumbnail
+  is unchanged. No spoken copy was changed.
+
+  •  NO THUMBNAIL CHANGE. Video 7 keeps its approved title and its approved
+  thumbnail. No artwork was designed, generated or altered.
+
+------------------------------------------------------------------------------
+SUPERSEDED
+------------------------------------------------------------------------------
+
+The Video 7 Final Production Package v1.0 and the v1.0 Recording Master are
+superseded. The previously generated v1.0 package folder is isolated in
+deliverables/SUPERSEDED_DO_NOT_USE/ with a notice.
+
+==============================================================================
+END OF CHANGE LOG
+==============================================================================

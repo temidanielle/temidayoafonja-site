@@ -8,6 +8,83 @@ Last updated: 8 September 2026.
 
 ---
 
+## September 8, 2026 — Videos 6 and 7 revised production packages v2.0
+
+Rebuilt on the two **v2.0 Revised Recording Masters**. Where a v1.0 production
+package disagreed with a revised master, the master won. No approved spoken
+script was rewritten.
+
+| Slot | Title | Thumbnail | Watch Next |
+|---|---|---|---|
+| **Video 6** | Before You Take an Internal Role, Ask These 3 Questions | **NEW TITLE, SAME WORK?** | Video 7 |
+| **Video 7** | Are You Growing, or Just Being Given More Work? | **MORE WORK is not GROWTH** (unchanged) | Video 8 |
+
+**Video 6 was retitled.**
+
+    Old primary title:    Should I Make an Internal Move? 3 Questions to Decide
+    New primary title:    Before You Take an Internal Role, Ask These 3 Questions
+
+    Old active thumbnail: YOU MAY NOT NEED TO LEAVE
+    New active thumbnail: NEW TITLE, SAME WORK?
+
+The old title is retained as alternate and search phrasing only and stays in the
+tag list. The old thumbnail line is superseded **as a thumbnail**; the same words
+remain the approved closing spoken line in the v2.0 master, which is a different
+use and was not touched. Video 7's title and thumbnail are unchanged.
+
+Both openings and both closing lines are preserved exactly. Watch Next is the
+final visual in both videos, with no return to camera after it.
+
+Nine 1920x1080 assets for Video 6, ten for Video 7, built from each master's own
+visual map, geometry-checked against the rendered DOM and read at 390 points
+wide. Six dedicated 9:16 Shorts per video, Priority A three and B three, each 25
+to 60 seconds, re-audited against the v2.0 spoken copy.
+
+**Flagged, not silently changed.**
+
+1. **The Video 6 replacement thumbnail artwork does not exist.** The package
+   names `NEW TITLE, SAME WORK?` as the active line everywhere, but no artwork
+   was designed or generated. **Video 6 cannot publish until it is supplied.**
+   Recording and editing are not blocked.
+2. **Video 6, second question.** The master's visual map table writes `WILL YOUR
+   JUDGMENT EXPAND?`; its own spoken line and the brief both say *my*. The asset
+   uses **MY** so the graphic matches what is spoken.
+3. **Video 6, decision read.** The master's table reads "Movement, not much
+   growth"; the brief and the spoken line use the softer "may be movement
+   without much growth". The asset uses the softer wording.
+4. **Video 7, `BUSIER IS NOT BETTER`.** The master's opening visual row includes
+   it. Three competing lines fell below phone-readable size, and the brief states
+   it is an alternate only. Dropped from the frame, recorded as an alternate
+   thumbnail line, on no asset.
+
+No spoken copy was changed in any of the four cases.
+
+**Not supplied, by instruction.** No chapter timestamps. No music attribution or
+license code. No thumbnail artwork.
+
+**Superseded material** is isolated in `deliverables/SUPERSEDED_DO_NOT_USE/` as
+`OLD_v1.0_video-6-package/`, `OLD_v1.0_video-7-package/` and the v1.0 combined
+archive, with a notice.
+
+Current packages:
+
+    deliverables/VIDEO_6_Before_You_Take_An_Internal_Role_FINAL/
+    deliverables/VIDEO_7_Are_You_Growing_Or_Just_Being_Given_More_Work_FINAL/
+    deliverables/Video_6_and_7_FINAL_REVISED_Production_Packages.zip
+    deliverables/V6_V7_FINAL_MANIFEST.md
+
+    Video_6_and_7_FINAL_REVISED_Production_Packages.zip
+    cf3b9e8af29adfb6e24b24dc533b0e97544def289cf63430c735a88ac79be815
+
+**VIDEO 6: READY FOR RECORDING / RIVERSIDE PRODUCTION**
+Publishing blocked only on the replacement thumbnail artwork.
+
+**VIDEO 7: READY FOR RECORDING / RIVERSIDE PRODUCTION**
+
+QA: 32 checks per video, all passing.
+
+---
+
 ## September 8, 2026 — Videos 4 and 5 numbering swap
 
 **Definitive.** The two topics swapped positions. The previous numbering is not

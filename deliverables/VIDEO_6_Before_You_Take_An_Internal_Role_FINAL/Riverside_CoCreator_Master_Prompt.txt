@@ -1,0 +1,205 @@
+==============================================================================
+RIVERSIDE CO-CREATOR MASTER PROMPT
+Video 6  ·  Before You Take an Internal Role, Ask These 3 Questions
+Revised package v2.0  ·  September 8, 2026
+==============================================================================
+
+------------------------------------------------------------------------------
+MASTER PROMPT
+------------------------------------------------------------------------------
+
+You are editing a horizontal 16:9 talking-head video called "Before You Take
+an Internal Role, Ask These 3 Questions". The speaker is Temidayo Afonja,
+teaching to camera. Please follow these rules exactly.
+
+MOST IMPORTANT RULE. Every motion graphic, every substantive B-roll shot, the
+CTA card and the Watch Next card must be TRUE FULL SCREEN. That means: HIDE OR
+REMOVE THE CAMERA VISUALLY DURING THAT SCENE. The visual must be the only
+thing filling the entire 16:9 canvas. Do not put it in a smaller box floating
+over my camera footage. Do not leave me visible behind it. Do not leave me
+visible around the sides or edges. Treat each one as its own scene. My spoken
+audio continues underneath. Then cut cleanly back to me. Please check every
+graphic and every B-roll shot against this rule.
+
+The only visuals that may sit over my camera footage are short single-line
+callouts.
+
+PRESERVE THE SPEECH. The recorded wording is approved and final. Do not
+shorten thoughtful explanations, do not tighten my sentences, and do not
+remove pauses that are doing work. Clean the audio and the transcript, and
+remove false starts, stumbles and dead air. Do not over-shorten.
+
+DO NOT GENERATE OR SYNTHESIZE ANY SPEECH. If the closing line, the CTA or the
+Watch Next handoff is missing from the recording, stop and tell me a pickup is
+needed. Do not create audio I did not record.
+
+PHONE READABILITY. Assume the viewer is on a phone. Keep type very large and
+bold, keep contrast high, and reveal multi-part ideas one part at a time. If
+something is hard to read at phone size, simplify it rather than shrinking it.
+
+CAPTIONS. Suppress, simplify or move captions during full-screen graphics,
+substantive B-roll, the CTA and Watch Next. Captions must never sit over
+designed text.
+
+PACING. Three to five subtle punch-ins. Two to four meaningful B-roll moments,
+each full screen. Four to seven restrained sound accents in total, all quieter
+than my voice.
+
+SUBSCRIBE. One restrained visual Subscribe cue, about one second, small and
+premium, with a quiet click or soft pop, placed after the three questions have
+been named and the first one has landed. Never in the opening. No loud or
+cartoonish animation. This is a visual only and adds no dialogue.
+
+MUSIC. Subtle bed only, well under my voice. Never invent or add a music
+license code.
+
+PICTURE. Keep it natural. Restrained exposure, white balance, contrast,
+clarity, mild sharpening and mild noise reduction only. Preserve my real skin
+tone. No beauty filtering.
+
+CHAPTERS. Do not generate chapters from the script. I will build them from the
+finished export.
+
+ENDING. The Watch Next card is the final visual. Do not cut back to me after
+it. Do not add an outro or a sting. Cut everything after my last spoken word:
+no dead air, no waiting, no false starts, no adjusting the camera.
+
+EXPORT. 1920x1080 minimum.
+
+------------------------------------------------------------------------------
+PER-SCENE PROMPTS, ONE UPLOAD AT A TIME
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+MG01   V6_MG01_New_Title_Same_Work.png
+------------------------------------------------------------------------------
+
+  "Use this image when I say: An internal move can look safe because the
+  logo does not change. That is exactly why it can fool you.... HIDE OR
+  REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This image must be the only
+  visual filling the entire 16:9 canvas. Do not place it in a box over my
+  camera footage and do not leave me visible behind it or around the edges.
+  Headline alone for 1.4s, then the supporting line at 1.8s. Gentle fade, no
+  movement. Hold it for 6 to 7 seconds. Then cut cleanly back to me.
+  Captions off for the full hold."
+
+------------------------------------------------------------------------------
+MG02   V6_MG02_Three_Questions.png
+------------------------------------------------------------------------------
+
+  "Use this image when I say: Before you take an internal role, ask three
+  questions.... HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This
+  image must be the only visual filling the entire 16:9 canvas. Do not place
+  it in a box over my camera footage and do not leave me visible behind it
+  or around the edges. One question at a time, 0.9s apart. Hold the complete
+  set for a full beat before cutting away. Hold it for 9 to 11 seconds first
+  time, 3 seconds on each return.. Then cut cleanly back to me. Captions
+  off."
+
+------------------------------------------------------------------------------
+MG03   V6_MG03_Ordinary_Monday.png
+------------------------------------------------------------------------------
+
+  "Use this image when I say: Start with the most concrete question: What
+  will actually be different on an ordinary Monday?... HIDE OR REMOVE THE
+  CAMERA VISUALLY DURING THIS SCENE. This image must be the only visual
+  filling the entire 16:9 canvas. Do not place it in a box over my camera
+  footage and do not leave me visible behind it or around the edges.
+  Question first. The four words arrive together at 1.6s as a single line,
+  never as separate boxes. Hold it for 6 to 7 seconds. Then cut cleanly back
+  to me. Captions off."
+
+------------------------------------------------------------------------------
+MG04   V6_MG04_Tasks_Vs_Judgment.png
+------------------------------------------------------------------------------
+
+  "Use this image when I say: More tasks can mean volume, coordination, and
+  absorption. More judgment means you have to interpret incomplete
+  information.... HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This
+  image must be the only visual filling the entire 16:9 canvas. Do not place
+  it in a box over my camera footage and do not leave me visible behind it
+  or around the edges. MORE TASKS first, held alone 1.5s so it lands as the
+  familiar one. MORE JUDGMENT second. Hold it for 8 to 9 seconds. Then cut
+  cleanly back to me. Captions off."
+
+------------------------------------------------------------------------------
+MG05   V6_MG05_Portable_Evidence.png
+------------------------------------------------------------------------------
+
+  "Use this image when I say: I would look for three kinds of evidence:
+  result, judgment, and range.... HIDE OR REMOVE THE CAMERA VISUALLY DURING
+  THIS SCENE. This image must be the only visual filling the entire 16:9
+  canvas. Do not place it in a box over my camera footage and do not leave
+  me visible behind it or around the edges. One row at a time, 1.1s apart.
+  Hold long enough to read all three together. Hold it for 9 to 10 seconds.
+  Then cut cleanly back to me. Captions off."
+
+------------------------------------------------------------------------------
+MG06   V6_MG06_Decision_Read.png
+------------------------------------------------------------------------------
+
+  "Use this image when I say: Now put the three answers together.... HIDE OR
+  REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This image must be the only
+  visual filling the entire 16:9 canvas. Do not place it in a box over my
+  camera footage and do not leave me visible behind it or around the edges.
+  One row at a time, 1.2s apart. The third row arrives at the same visual
+  weight as the others, never dimmed or marked as failure. Hold it for 9 to
+  10 seconds. Then cut cleanly back to me. Captions off."
+
+------------------------------------------------------------------------------
+MG07   V6_MG07_Questions_To_Ask.png
+------------------------------------------------------------------------------
+
+  "Use this image when I say: Before you accept the opportunity, ask......
+  HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This image must be
+  the only visual filling the entire 16:9 canvas. Do not place it in a box
+  over my camera footage and do not leave me visible behind it or around the
+  edges. One question at a time, 1.0s apart, with room to breathe. Hold it
+  for 8 to 9 seconds. Then cut cleanly back to me. Captions off."
+
+------------------------------------------------------------------------------
+CTA   V6_CTA_Career_Decision_Evidence_Check.png
+------------------------------------------------------------------------------
+
+  "Use this image when I say: the free Career Decision Evidence Check gives
+  you a structured way to read the evidence behind that choice. It is linked
+  below.... HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This image
+  must be the only visual filling the entire 16:9 canvas. Do not place it in
+  a box over my camera footage and do not leave me visible behind it or
+  around the edges. Logomark, headline at 0.6s, URL at 2.0s. Hold it for 8
+  to 9 seconds. Then cut cleanly back to me. Captions off. Never cover the
+  address."
+
+------------------------------------------------------------------------------
+WN   V6_WATCH_NEXT_Are_You_Growing.png
+------------------------------------------------------------------------------
+
+  "Use this image when I say: That is what we are testing next in Are You
+  Growing, or Just Being Given More Work?... HIDE OR REMOVE THE CAMERA
+  VISUALLY DURING THIS SCENE. This image must be the only visual filling the
+  entire 16:9 canvas. Do not place it in a box over my camera footage and do
+  not leave me visible behind it or around the edges. Static. No animation
+  on the final card. Hold it for 10 to 14 seconds, through the closing line
+  and past the last word.. This is the FINAL visual of the video. Do not cut
+  back to me after it. Do not add anything after it. Captions off."
+
+------------------------------------------------------------------------------
+SOUND DESIGN
+
+Four to seven restrained accents across the video. Not one per caption and not
+one per cut. Every accent sits clearly under Temidayo's voice.
+
+Reserve them for:
+  - the hero framework entering
+  - a major comparison
+  - a numbered reveal
+  - an important distinction
+  - the Subscribe cue
+  - the CTA entrance
+  - the Watch Next handoff
+
+Palette: soft whoosh, subtle click, gentle pop, restrained impact, clean sweep.
+
+==============================================================================
+END
+==============================================================================

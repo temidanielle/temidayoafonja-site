@@ -44,3 +44,36 @@ The current packages are:
 Also superseded: the thumbnail line YOUR CAREER MAKES SENSE. It must not appear
 as the active thumbnail in any production material. The active line for the new
 Video 4 is STOP LISTING JOBS.
+
+
+================================================================================
+SEPTEMBER 8, 2026  ·  SECOND ADDITION  ·  VIDEOS 6 AND 7 v1.0
+================================================================================
+
+  OLD_v1.0_video-6-package/               v1.0 Video 6 package
+  OLD_v1.0_video-7-package/               v1.0 Video 7 package
+  Video_6_and_7_FINAL_Production_Packages.zip        v1.0 combined archive
+  Video_6_and_7_FINAL_Production_Packages.zip.sha256
+
+These were built on the v1.0 Revised Recording Masters. Two v2.0 Revised
+Recording Masters have since been issued, with new openings, and Video 6 has
+been retitled. Their spoken scripts and their packaging are both superseded.
+
+VIDEO 6 TITLE AND THUMBNAIL CHANGE
+
+  Old primary title:    Should I Make an Internal Move? 3 Questions to Decide
+  New primary title:    Before You Take an Internal Role, Ask These 3 Questions
+
+  Old active thumbnail: YOU MAY NOT NEED TO LEAVE
+  New active thumbnail: NEW TITLE, SAME WORK?
+
+The old title survives only as alternate and search phrasing. The old thumbnail
+line is superseded as a thumbnail; the same words remain the approved closing
+spoken line in the v2.0 master, which is a different use.
+
+VIDEO 7 keeps its approved title and its approved thumbnail.
+
+The current packages are:
+
+  deliverables/VIDEO_6_Before_You_Take_An_Internal_Role_FINAL/
+  deliverables/VIDEO_7_Are_You_Growing_Or_Just_Being_Given_More_Work_FINAL/
