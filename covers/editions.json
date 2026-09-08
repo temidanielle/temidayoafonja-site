@@ -5,21 +5,54 @@
   "editions": [
     {
       "slug": "edition-three-september-2026",
-      "titleLines": ["What Work Redesign Can", "Quietly Remove"],
+      "titleLines": [
+        "What Work Redesign Can",
+        "Quietly Remove"
+      ],
       "edition": "EDITION THREE",
       "date": "SEPTEMBER 2026"
     },
     {
       "slug": "edition-four-october-2026",
-      "titleLines": ["When Hiring Returns,", "What Are You Rebuilding?"],
+      "titleLines": [
+        "When Hiring Returns,",
+        "What Are You Rebuilding?"
+      ],
       "edition": "EDITION FOUR",
       "date": "OCTOBER 2026"
     },
     {
       "slug": "edition-five-november-2026",
-      "titleLines": ["Who Got to Practice", "Before You Needed Them?"],
+      "titleLines": [
+        "Who Got to Practice",
+        "Before You Needed Them?"
+      ],
       "edition": "EDITION FIVE",
       "date": "NOVEMBER 2026"
+    }
+  ],
+  "_cards_comment": "One-off title cards that share brief-cover.html but carry their own canvas and palette. Unlike the editions, each card is fitted on its own: it is not part of the shared-title-size family.",
+  "cards": [
+    {
+      "filename": "capability_formation_brief_september_cover.png",
+      "titleLines": [
+        "Your Experience Is Not the Proof.",
+        "The Decisions You’ve Carried Are."
+      ],
+      "edition": "",
+      "date": "SEPTEMBER 2026",
+      "canvas": {
+        "w": 1600,
+        "h": 900
+      },
+      "palette": {
+        "bg": "#082A72",
+        "ink": "#F3EEE3",
+        "accent": "#C8A35D"
+      },
+      "safex": 150,
+      "measure": 1220,
+      "titleMax": 96
     }
   ]
 }

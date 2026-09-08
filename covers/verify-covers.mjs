@@ -48,6 +48,9 @@ const server = createServer(async (req, res) => {
 const port = await new Promise(resolve =>
   server.listen(0, '127.0.0.1', () => resolve(server.address().port)));
 
+const config = JSON.parse(await readFile(join(ROOT, 'covers', 'editions.json'), 'utf8'));
+const cardFiles = new Map((config.cards ?? []).map(c => [c.filename, c]));
+
 const files = (await readdir(join(ROOT, 'covers', 'output')))
   .filter(f => f.endsWith('.png'))
   .sort();
@@ -91,19 +94,35 @@ for (const file of files) {
 await browser.close();
 server.close();
 
-const widths = results.map(r => r.width);
-const tops = results.map(r => r.top);
+const failures = [];
+const family = results.filter(r => !cardFiles.has(r.file));
+const cards = results.filter(r => cardFiles.has(r.file));
+
+const widths = family.map(r => r.width);
+const tops = family.map(r => r.top);
 const widthSpread = Math.max(...widths) - Math.min(...widths);
 const topSpread = Math.max(...tops) - Math.min(...tops);
 
-for (const r of results) {
+for (const r of family) {
   console.log(`${r.file.padEnd(64)} ${r.size}  title ${r.width}px wide, top ${r.top}`);
+}
+for (const r of cards) {
+  const want = cardFiles.get(r.file).canvas;
+  const ok = r.size === `${want.w}x${want.h}`;
+  console.log(`${r.file.padEnd(64)} ${r.size}  title ${r.width}px wide  ` +
+              `[title card, own canvas${ok ? '' : `, EXPECTED ${want.w}x${want.h}`}]`);
+  if (!ok) failures.push(`${r.file}: rendered ${r.size}, configured ${want.w}x${want.h}`);
 }
 console.log(`\ntitle width spread ${widthSpread}px (tolerance ${WIDTH_TOLERANCE})`);
 console.log(`title top spread   ${topSpread}px (tolerance ${TOP_TOLERANCE})`);
 
 if (widthSpread > WIDTH_TOLERANCE || topSpread > TOP_TOLERANCE) {
-  console.error('\nFAIL: a cover is out of family. Re-run covers/build-covers.mjs.');
+  failures.push('an edition cover is out of family');
+}
+if (failures.length) {
+  console.error('\nFAIL. Re-run covers/build-covers.mjs.');
+  for (const f of failures) console.error(`  ${f}`);
   process.exit(1);
 }
-console.log('\nOK: the covers are one family.');
+console.log(`\nOK: ${family.length} edition covers are one family` +
+            (cards.length ? `, ${cards.length} title card(s) at their configured size.` : '.'));

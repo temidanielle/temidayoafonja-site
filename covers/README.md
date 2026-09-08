@@ -7,7 +7,7 @@ edition stays in the same publication system as the July/August/September covers
 
 | File | What it is |
 | --- | --- |
-| `editions.json` | The copy. Publication line, title lines, edition, date, byline. |
+| `editions.json` | The copy. Publication line, title lines, edition, date, byline, plus any one-off title cards. |
 | `brief-cover.html` | The cover itself: one parameterised page, live DOM text. |
 | `build-covers.mjs` | Renders each edition to `output/` with Playwright. |
 | `verify-covers.mjs` | Reads the exported PNGs back and checks they are one family. |
@@ -40,6 +40,24 @@ exactly like a design decision — this is what tells the difference.
 Do not pipe the build's output through `head`; the render can be killed partway
 and leave a stale PNG behind that still looks plausible. That failure is the
 reason this check exists.
+
+## Title cards
+
+`editions.json` also carries a `cards` array for one-off covers, such as a
+LinkedIn newsletter title card, that share this template but need their own
+canvas or palette. A card entry sets `canvas`, `palette`, `safex`, `measure` and
+`titleMax`, and writes to its own `filename`. Leave `edition` empty and the
+metadata block drops to a single date line.
+
+Cards use the same template rather than a copy of it, so a change to the
+composition reaches the editions and the cards together. They are fitted
+individually, though: a card never drags the edition family to a different type
+size, and `verify-covers.mjs` checks each card against its own configured canvas
+instead of against the family.
+
+The September newsletter card, for example, runs 1600 x 900 on a royal blue
+field (`#082A72`) with ivory type (`#F3EEE3`) and a `#C8A35D` rule. Those are
+that card's own values, not the brand palette below.
 
 ## The system
 

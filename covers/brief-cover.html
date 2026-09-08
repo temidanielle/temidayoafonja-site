@@ -10,6 +10,9 @@
 <link rel="stylesheet" href="/fonts.css">
 <style>
   :root {
+    /* Defaults are the brand palette and the edition-cover canvas. Every one of
+       these can be overridden per render by a query parameter, which is how the
+       newsletter title card shares this template instead of forking it. */
     --navy: #0f2347;
     --cream: #f5f0e8;
     --gold: #c9a84c;
@@ -99,8 +102,12 @@
     line-height: 2.1;
   }
 
-  .meta .edition { color: rgba(245, 240, 232, 0.92); }
-  .meta .date { color: rgba(245, 240, 232, 0.55); }
+  /* Relative colour rather than opacity: it follows an overridden --cream while
+     still painting in one layer, so the antialiasing matches the original rgba. */
+  .meta .edition { color: rgb(from var(--cream) r g b / 0.92); }
+  .meta .date { color: rgb(from var(--cream) r g b / 0.55); }
+  /* With no edition line above it, the date carries the metadata on its own. */
+  .meta .date.solo { color: rgb(from var(--cream) r g b / 0.92); }
 
   /* ---- byline ---------------------------------------------------------- */
   .byline {
@@ -152,10 +159,26 @@
   const params = new URLSearchParams(location.search);
   const get = (key, fallback) => params.get(key) ?? fallback;
 
+  // Canvas and palette overrides, applied before any measuring happens.
+  const VARS = {
+    w: '--canvas-w', h: '--canvas-h', safex: '--safe-x', measure: '--title-measure',
+    bg: '--navy', ink: '--cream', accent: '--gold',
+  };
+  for (const [key, cssVar] of Object.entries(VARS)) {
+    const v = params.get(key);
+    if (v) document.documentElement.style.setProperty(cssVar, v);
+  }
+
   document.getElementById('publication').textContent =
     get('publication', 'THE CAPABILITY FORMATION BRIEF');
-  document.getElementById('edition').textContent = get('edition', 'EDITION THREE');
-  document.getElementById('date').textContent = get('date', 'SEPTEMBER 2026');
+  const editionEl = document.getElementById('edition');
+  const dateEl = document.getElementById('date');
+  editionEl.textContent = get('edition', 'EDITION THREE');
+  dateEl.textContent = get('date', 'SEPTEMBER 2026');
+  if (!editionEl.textContent) {
+    editionEl.remove();
+    dateEl.classList.add('solo');
+  }
   document.getElementById('byline').textContent = get('byline', 'TEMIDAYO AFONJA');
 
   const lines = get('title', 'What Work Redesign Can|Quietly Remove').split('|');
@@ -182,9 +205,9 @@
       return range.getBoundingClientRect().width;
     };
 
-    let size = forced || 132;
+    let size = forced || Number(get('titleMax', 132));
     titleEl.style.fontSize = size + 'px';
-    while (!forced && size > 72) {
+    while (!forced && size > Number(get('titleMin', 72))) {
       const widest = Math.max(...[...titleEl.children].map(textWidth));
       if (widest <= measure) break;
       size -= 1;

@@ -121,5 +121,29 @@ for (const edition of editions) {
   }
 }
 
+// Title cards: each carries its own canvas and palette and is fitted on its own,
+// so a card never drags the edition family to a different type size.
+for (const card of (filters.length ? [] : config.cards ?? [])) {
+  const { w, h } = card.canvas;
+  const params = new URLSearchParams({
+    publication: config.publication,
+    byline: config.byline,
+    title: card.titleLines.join('|'),
+    edition: card.edition ?? '',
+    date: card.date,
+    w: `${w}px`, h: `${h}px`,
+    safex: `${card.safex}px`,
+    measure: `${card.measure}px`,
+    bg: card.palette.bg, ink: card.palette.ink, accent: card.palette.accent,
+    titleMax: String(card.titleMax),
+  });
+
+  await page.setViewportSize({ width: w, height: h });
+  await load(`http://127.0.0.1:${port}/covers/brief-cover.html?${params}`);
+  await page.screenshot({ path: join(OUT_DIR, card.filename), type: 'png' });
+  const fitted = await page.evaluate(() => window.__fittedSize);
+  console.log(`wrote covers/output/${card.filename}  ${w * scale}x${h * scale}  title ${fitted}px`);
+}
+
 await browser.close();
 server.close();
