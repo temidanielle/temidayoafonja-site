@@ -92,6 +92,45 @@
       },
       "vAlign": "band",
       "vGap": 88
+    },
+    {
+      "canvas": {
+        "w": 1600,
+        "h": 900
+      },
+      "safex": 150,
+      "measure": 1220,
+      "titleMax": 110,
+      "vAlign": "band",
+      "vGap": 88,
+      "edition": "",
+      "date": "EDITION FOUR · OCTOBER 2026",
+      "filename": "capability_formation_brief_october_2026.png",
+      "titleLines": [
+        "Before You Rehire,",
+        "Ask What the Organization",
+        "Actually Lost"
+      ]
+    },
+    {
+      "canvas": {
+        "w": 1600,
+        "h": 900
+      },
+      "safex": 150,
+      "measure": 1220,
+      "titleMax": 110,
+      "vAlign": "band",
+      "vGap": 88,
+      "edition": "",
+      "date": "EDITION FOUR · OCTOBER 2026",
+      "filename": "capability_formation_brief_october_2026-as-specified.png",
+      "titleLines": [
+        "Before You Rehire,",
+        "Ask What the",
+        "Organization",
+        "Actually Lost"
+      ]
     }
   ]
 }
