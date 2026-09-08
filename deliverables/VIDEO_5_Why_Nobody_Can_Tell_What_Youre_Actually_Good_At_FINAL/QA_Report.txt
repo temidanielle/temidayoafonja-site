@@ -4,7 +4,7 @@ Video 5  ·  Why Nobody Can Tell What You're Actually Good At
 September 8, 2026
 ==============================================================================
 
-28 checks run. 28 passed, 0 failed.
+29 checks run. 29 passed, 0 failed.
 
   [PASS] Numbered Video 5 everywhere
          No asset prefix, filename or routing reference from the
@@ -14,12 +14,20 @@ September 8, 2026
          THEY CAN'T READ YOU
 
   [PASS] Superseded thumbnail line absent from active material
-         Checked across every package document except two that
-         legitimately name it in order to supersede it: the change
-         log, and the Recording Master's own note, which recommends
-         STOP LISTING JOBS because it is stronger than YOUR CAREER
-         MAKES SENSE. The master is the spoken source of truth and
-         was not edited.
+         The active thumbnail for Video 5 is THEY CAN'T READ YOU. No
+         superseded thumbnail line, and no other video's thumbnail
+         line, appears anywhere in this package outside the change
+         log, which records the September 8 swap. The Video 5
+         Recording Master carries no superseded thumbnail line at
+         all, so unlike Video 4 it needs no exclusion and is scanned
+         as active material. This note deliberately does not quote
+         the superseded lines, so that the strings themselves do not
+         appear in Video 5 material.
+
+  [PASS] No other video's thumbnail line appears as active packaging
+         The active thumbnail for this video is THEY CAN'T READ YOU.
+         The other video's thumbnail line appears nowhere in this
+         package's active material.
 
   [PASS] Locked opening preserved
          People can respect your experience and still have no idea

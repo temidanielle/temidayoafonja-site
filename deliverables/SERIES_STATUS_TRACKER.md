@@ -46,8 +46,26 @@ Current packages:
     deliverables/Video_4_and_5_FINAL_RENUMBERED_Production_Packages.zip
     deliverables/V4_V5_FINAL_MANIFEST.md
 
-**VIDEO 4: READY FOR RECORDING / RIVERSIDE PRODUCTION**
-**VIDEO 5: READY FOR RECORDING / RIVERSIDE PRODUCTION**
+**VIDEO 4: LOCKED. READY FOR RECORDING / RIVERSIDE PRODUCTION**
+**VIDEO 5: LOCKED. READY FOR RECORDING / RIVERSIDE PRODUCTION**
+
+Locked September 8, 2026 after the final QA correction. No further editorial,
+script, asset, Shorts, routing or production changes unless an actual factual or
+production defect is found.
+
+    Video_4_and_5_FINAL_RENUMBERED_Production_Packages.zip
+    9b92556b229f771c1d19dc61bdf820842a9aa3087bf4e3477aa545e4f4b44262
+
+Earlier checksums for this archive are superseded.
+
+**Final QA correction.** The Video 5 QA report had carried Video 4's thumbnail
+reasoning: it said the Video 5 Recording Master recommends STOP LISTING JOBS
+over YOUR CAREER MAKES SENSE. That is Video 4 logic, and the Video 5 master
+names neither line. Corrected, and the exclusion it rested on was removed for
+Video 5, so that master is now scanned as active material rather than exempted.
+A targeted check confirms neither line appears as active Video 5 packaging
+anywhere; the only occurrence in the package is in the change log. Only the two
+QA reports changed.
 
 ---
 

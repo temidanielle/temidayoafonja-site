@@ -466,6 +466,24 @@ def publishing(n, out):
     return pth
 
 
+SUPERSEDED_NOTE = {
+4: "The active thumbnail for Video 4 is STOP LISTING JOBS. YOUR CAREER MAKES "
+   "SENSE appears in two files only, and in both it is named in order to "
+   "supersede it: the change log, and the Recording Master's own note, which "
+   "recommends STOP LISTING JOBS because it is stronger than YOUR CAREER MAKES "
+   "SENSE. The master is the spoken source of truth and was not edited. Both "
+   "files are excluded from the active-surface scan for that reason.",
+5: "The active thumbnail for Video 5 is THEY CAN'T READ YOU. No superseded "
+   "thumbnail line, and no other video's thumbnail line, appears anywhere in "
+   "this package outside the change log, which records the September 8 swap. "
+   "The Video 5 Recording Master carries no superseded thumbnail line at all, "
+   "so unlike Video 4 it needs no exclusion and is scanned as active material. "
+   "This note deliberately does not quote the superseded lines, so that the "
+   "strings themselves do not appear in Video 5 material.",
+}
+
+OTHER_THUMB = {4: "THEY CAN'T READ YOU", 5: "STOP LISTING JOBS"}
+
 OLDNEW = {4: ("Video 5", "How to Explain a Career That Looks All Over the Place"),
           5: ("Video 4", "Why Nobody Can Tell What You're Actually Good At")}
 
@@ -577,12 +595,17 @@ def qa_report(n, out, png_dir, geo_clean):
         for f in sorted(fs):
             body = read_any(os.path.join(dp, f)) + "\n"
             allt += body
-            # two files legitimately name the superseded material in order to
-            # record that it is superseded: the change log, and the Recording
-            # Master's own note recommending STOP LISTING JOBS over it. Neither
-            # is part of the active thumbnail surface, and the master cannot be
-            # edited.
-            if f != "Change_Log.txt" and f != os.path.basename(MASTER[n]):
+            # The change log names the superseded material in order to record
+            # that it is superseded, so it is never part of the active surface.
+            # Video 4's Recording Master additionally carries a note
+            # recommending STOP LISTING JOBS over YOUR CAREER MAKES SENSE, which
+            # endorses the supersession rather than using the old line; the
+            # master is the spoken source of truth and cannot be edited, so it
+            # is excluded for Video 4 only. Video 5's master names neither line,
+            # so it is scanned like any other file.
+            skip = (f == "Change_Log.txt"
+                    or (n == 4 and f == os.path.basename(MASTER[n])))
+            if not skip:
                 active += body
     ftext = []
     for c in build_cards(n):
@@ -608,11 +631,12 @@ def qa_report(n, out, png_dir, geo_clean):
       p_["thumbnail"]),
      ("Superseded thumbnail line absent from active material",
       yn("YOUR CAREER MAKES SENSE" not in active.upper()),
-      "Checked across every package document except two that legitimately "
-      "name it in order to supersede it: the change log, and the Recording "
-      "Master's own note, which recommends STOP LISTING JOBS because it is "
-      "stronger than YOUR CAREER MAKES SENSE. The master is the spoken source "
-      "of truth and was not edited."),
+      SUPERSEDED_NOTE[n]),
+     ("No other video's thumbnail line appears as active packaging",
+      yn(OTHER_THUMB[n].upper() not in active.upper()),
+      "The active thumbnail for this video is %s. The other video's thumbnail "
+      "line appears nowhere in this package's active material."
+      % PUB[n]["thumbnail"]),
      ("Locked opening preserved", yn(spoken(n)[0] in allt),
       spoken(n)[0][:90]),
      ("Recording Master is the spoken source of truth", "PASS",

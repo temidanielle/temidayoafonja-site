@@ -4,7 +4,7 @@ Video 4  ·  How to Explain a Career That Looks All Over the Place
 September 8, 2026
 ==============================================================================
 
-28 checks run. 28 passed, 0 failed.
+29 checks run. 29 passed, 0 failed.
 
   [PASS] Numbered Video 4 everywhere
          No asset prefix, filename or routing reference from the
@@ -14,12 +14,19 @@ September 8, 2026
          STOP LISTING JOBS
 
   [PASS] Superseded thumbnail line absent from active material
-         Checked across every package document except two that
-         legitimately name it in order to supersede it: the change
-         log, and the Recording Master's own note, which recommends
-         STOP LISTING JOBS because it is stronger than YOUR CAREER
-         MAKES SENSE. The master is the spoken source of truth and
-         was not edited.
+         The active thumbnail for Video 4 is STOP LISTING JOBS. YOUR
+         CAREER MAKES SENSE appears in two files only, and in both it
+         is named in order to supersede it: the change log, and the
+         Recording Master's own note, which recommends STOP LISTING
+         JOBS because it is stronger than YOUR CAREER MAKES SENSE.
+         The master is the spoken source of truth and was not edited.
+         Both files are excluded from the active-surface scan for
+         that reason.
+
+  [PASS] No other video's thumbnail line appears as active packaging
+         The active thumbnail for this video is STOP LISTING JOBS.
+         The other video's thumbnail line appears nowhere in this
+         package's active material.
 
   [PASS] Locked opening preserved
          When someone says, “Walk me through your background,” they
