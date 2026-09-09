@@ -77,26 +77,59 @@ reuse claim is true.
 
 ### The QA reports are split
 
-Each `QA_Report.txt` separates **package checks completed now** (28 per video,
+Each `QA_Report.txt` separates **package checks completed now** (30 per video,
 all passing) from **final-export checks still pending**. Executed animation,
 recorded audio, audio balance, final pacing, actual runtime, caption placement,
 chapter timestamps, thumbnail artwork and live link reachability are listed as
 PENDING and are **not** claimed as verified. No earlier QA pass is reused as
 evidence.
 
+### September 9 clarifications, instruction only
+
+Added after the synchronization was accepted, on Temidayo's instruction. Neither
+changes a visual, a spoken line, an asset, the routing, or any runtime figure.
+
+1. **Return-to-camera exception.** The general full-screen rule ends "then cut
+   cleanly back to me." That is now qualified wherever it appears: return to
+   camera only where the scene map calls for it, and **never for Watch Next**,
+   which is the final visual, continues through the final spoken line and the
+   intentional closing hold, and has no camera return. The existing Watch Next
+   scene instructions were already correct and were left exactly as they were.
+2. **Sound cues are selective, not cumulative.** Scene notes suggesting an
+   accent per item, question, column, step or word are now labelled **OPTIONAL
+   SOUND CANDIDATES** rather than instructions. The whole long-form video still
+   gets approximately 4 to 7 restrained accents in total, including the
+   Subscribe cue. Adding up the per-scene suggestions would exceed that on its
+   own, so the budget wins.
+3. **Runtime unchanged.** Every figure remains an estimate. Nothing was padded
+   to reach an older cover target, and the runtime note now states explicitly
+   that a graphic or B-roll running underneath continuing narration does not add
+   separate runtime; only a deliberate silent hold does.
+
+Content changed in six files per package: the Co-Creator master prompt, the
+visual build map, the run of show, the recording master reference, the change
+log and the QA report. **The other 99 files are unchanged in content**, verified
+by comparing extracted text rather than bytes. The four support decks differ
+only in re-saved timestamps; their slide and note text is byte-for-byte
+identical, confirmed against the previous commit.
+
+QA per video is now **30 checks completed now**, including one that the
+return-to-camera exception is present and Watch Next is exempt, and one that
+every scene-level sound note is labelled optional.
+
 ### Deliverables
 
     deliverables/VIDEO_4_.../  VIDEO_5_.../  VIDEO_6_.../  VIDEO_7_.../
-    deliverables/Video_4_Sep09_Synchronized_Package.zip   cb2d082f043bfe42651c04b3d48be6f7ebbb94b43f053d270adc308d75834fab
-    deliverables/Video_5_Sep09_Synchronized_Package.zip   6059467661055ec04dd662860952c76e5b95a9a3c6a1f4864a9c7e3be30fbdea
-    deliverables/Video_6_Sep09_Synchronized_Package.zip   6fb8f7aaaea7a8e31e427e3a81ccefd40c6b2ed5c7af9f1d6fcc47d1b8eb311d
-    deliverables/Video_7_Sep09_Synchronized_Package.zip   2dcc007e1d528b938b3ed572d8e9f673177aadfa6b779f556217416e4bde79f6
+    deliverables/Video_4_Sep09_Synchronized_Package.zip   29fe240cb4c308ee74278f1dfc245eabec28ca0cda6f85ce17e112e0cffe6954
+    deliverables/Video_5_Sep09_Synchronized_Package.zip   46fa98f4378b44d481ce3f02c013894314fedeaef21febfb9e527f4d79fa84d4
+    deliverables/Video_6_Sep09_Synchronized_Package.zip   9855780bcef74c2541a23480627d853996700db85c3a384c2bdacbba4ca3e45b
+    deliverables/Video_7_Sep09_Synchronized_Package.zip   f5a8959d655a036ec58ccd79c35dbbf161b97b71b0cb775094f12fc85296b13a
     deliverables/Videos_4-7_Sep09_Synchronized_Handoff.zip
-    4f1f7b1ca3d67726086d1d802fca711fccd85b5b7d381ed4e5cae096f5bec2b2
+    79ff1df730e6e1492c6c044c36d13748f7ae682d934c5812b3fa1a1fbdd105b1
     deliverables/V4-V7_SEP09_SYNC_MANIFEST.md
     deliverables/V4-V7_Sep09_Synchronization_Summary.docx
     deliverables/Videos_4-7_Sep09_COMPLETE_Handoff.zip
-    9ea0c843e1ff55829b8708c86052531afa64c7bc4c10beaa72af87eae873912e
+    82d83a1e02371d2a3e57df1952e902b3345357a0d5be7d45ced84b24b0c56bac
 
 `Videos_4-7_Sep09_COMPLETE_Handoff.zip` is the single archive: the summary
 document and the manifest at its root, plus all four complete packages.
@@ -125,8 +158,15 @@ backlog. **No V8 to V15 script or artwork was started.**
 
 **VIDEOS 4, 5, 6 AND 7: PACKAGES SYNCHRONIZED TO THE SEPTEMBER 9 SCRIPT LOCK.**
 
+**TASK CLOSED, September 9, 2026.** Temidayo accepted the synchronization and
+the targeted asset updates, and the two instruction-only clarifications above
+were the final item. No further script, thumbnail, deck, routing or asset change
+for Videos 4 to 7 unless an actual factual or production defect is found.
+
 Ready for recording and Riverside production. Nothing about the recording or the
 export is verified, because neither exists yet.
+
+The V8 to V13 draft batch is a separate task and shares nothing with this one.
 
 ---
 

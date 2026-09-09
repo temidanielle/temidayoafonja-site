@@ -74,7 +74,12 @@ does not exist until the export does.
 The target printed on the source cover is not a verified finished length
 either. The September 9 scripts are shorter than the earlier drafts. Do not
 restore deleted material, pad the script, or slow the delivery to reach an
-older target."""
+older target.
+
+A full-screen graphic or a B-roll shot running underneath continuing narration
+does not add separate runtime. It occupies time the speech already occupies.
+Only a deliberate silent hold adds length, and those are the scripted pauses
+and the closing hold, which are already accounted for."""
 
 
 # ----------------------------------------------------------------- documents
@@ -326,7 +331,10 @@ def visual_map(n, out):
               wrap("Hide or remove the camera visually during this scene. This "
                    "graphic must be the only visual filling the entire 16:9 "
                    "canvas. Temidayo must not be visible behind it or around "
-                   "its edges. Her audio continues underneath.", "    "), ""]
+                   "its edges. Her audio continues underneath.", "    "), "",
+              wrap("Return to camera only where the scene map calls for it. "
+                   "This never applies to Watch Next, which is the final "
+                   "visual and has no camera return.", "    "), ""]
         if f.get("treatment_note"):
             L += [wrap(f["treatment_note"], "    "), ""]
         if f.get("person_note"):
@@ -339,7 +347,12 @@ def visual_map(n, out):
                    "than shrinking the type.", "    "), "",
               "  AFTER THIS SCENE", wrap(f["after"], "    "), "",
               "  CAPTIONS", wrap(f["captions"], "    "), "",
-              "  SOUND", wrap(f["sound"], "    "), "",
+              "  SOUND CANDIDATE, OPTIONAL", wrap(f["sound"], "    "),
+              wrap("Optional candidate, not an instruction. The whole video "
+                   "gets approximately 4 to 7 restrained accents in total, "
+                   "including the Subscribe cue. Play this one only if it is "
+                   "among the most meaningful moments; otherwise leave it "
+                   "silent.", "    "), "",
               "  BRAND",
               wrap("Deep navy #112345, warm cream #F5F1E8, restrained muted "
                    "gold #C9A84C. Montserrat display, DM Sans body. Large type "
@@ -364,7 +377,7 @@ def cocreator(n, out):
     m = META[n]
     head = """You are editing a horizontal 16:9 talking-head video called "%s". The speaker is Temidayo Afonja, teaching to camera. Please follow these rules exactly.
 
-MOST IMPORTANT RULE. Every motion graphic, every substantive B-roll shot, the CTA card and the Watch Next card must be TRUE FULL SCREEN. HIDE OR REMOVE THE CAMERA VISUALLY DURING THAT SCENE. The visual must be the only thing filling the entire 16:9 canvas. Do not put it in a smaller box over my camera footage. Do not leave me visible behind it or around the edges. Treat each one as its own scene. My voice continues underneath. Then cut cleanly back to me. The only visuals that may sit over my camera footage are short single-line callouts.
+MOST IMPORTANT RULE. Every motion graphic, every substantive B-roll shot, the CTA card and the Watch Next card must be TRUE FULL SCREEN. HIDE OR REMOVE THE CAMERA VISUALLY DURING THAT SCENE. The visual must be the only thing filling the entire 16:9 canvas. Do not put it in a smaller box over my camera footage. Do not leave me visible behind it or around the edges. Treat each one as its own scene. My voice continues underneath. Then cut cleanly back to me. RETURN-TO-CAMERA EXCEPTION: return to camera only where the scene map calls for it. This instruction never applies to Watch Next. Watch Next is the final visual, continues through the final spoken line and intentional closing hold, and has no camera return. The only visuals that may sit over my camera footage are short single-line callouts.
 
 PRESERVE THE SPEECH. The recorded wording is approved and final. Do not shorten thoughtful explanations, do not tighten my sentences, and do not remove pauses that are doing work. Clean the audio and the transcript, and remove false starts, stumbles and dead air. Do not over-shorten.
 
@@ -787,6 +800,10 @@ def qa_report(n, out, png_dir, geo_clean):
     ftext = "\n".join(ftext)
     sizes = {Image.open(os.path.join(png_dir, f)).size
              for f in os.listdir(png_dir)}
+    prompt_txt = open(os.path.join(
+        out, "Riverside_CoCreator_Master_Prompt.txt")).read()
+    map_txt = open(os.path.join(
+        out, "Visual_Build_Map_and_Motion_Reveal_Map.txt")).read()
 
     bad_triggers = [(f["id"], f["script"]) for f in SETS[n]
                     if not masters.contains(n, f["script"])]
@@ -897,6 +914,23 @@ def qa_report(n, out, png_dir, geo_clean):
       "4 to 7 restrained accents in total across the whole video, the "
       "Subscribe cue counted inside that budget. Placed %s."
       % standing.SUBSCRIBE_AT[n]),
+     ("Return-to-camera exception explicit, and Watch Next exempt",
+      yn(all(k in prompt_txt for k in
+             ("RETURN-TO-CAMERA EXCEPTION",
+              "never applies to Watch Next"))
+         and "Return to camera only where the scene map calls for it"
+         in map_txt),
+      "The exception appears in the master prompt, in the standing "
+      "full-screen rule and in every scene's treatment block. Watch Next keeps "
+      "its existing instruction: final visual, no camera return."),
+     ("Scene-level sound notes marked optional, not cumulative",
+      yn("SOUND CANDIDATE, OPTIONAL" in map_txt
+         and "SOUND CUES ARE SELECTIVE, NOT CUMULATIVE" in prompt_txt
+         and "SOUND CANDIDATE" not in "".join(f["sound"] for f in SETS[n])),
+      "Every per-scene accent is labelled an optional candidate in the visual "
+      "build map, and the prompt states that the 4 to 7 total budget wins over "
+      "the sum of the scene suggestions. %d scene notes carry the label."
+      % len(SETS[n])),
      ("Watch Next is the final visual", "PASS",
       "No return to camera, no outro. Stated in the scene, the per-scene "
       "prompt and the master prompt, with the intentional final-card hold and "
@@ -1003,6 +1037,25 @@ def qa_report(n, out, png_dir, geo_clean):
     open(pth, "w").write("\n".join(L))
     return pth, fails
 
+
+CLARIFICATIONS = [
+ "RETURN-TO-CAMERA EXCEPTION. The general full-screen rule ends \"then cut "
+ "cleanly back to me.\" That is now qualified everywhere it appears: return "
+ "to camera only where the scene map calls for it, and never for Watch Next. "
+ "Watch Next is the final visual, continues through the final spoken line and "
+ "the intentional closing hold, and has no camera return. The existing Watch "
+ "Next scene instructions were already correct and were not changed.",
+ "SOUND CUES ARE SELECTIVE, NOT CUMULATIVE. Scene notes suggesting an accent "
+ "per item, question, column, step or word are now labelled OPTIONAL SOUND "
+ "CANDIDATES rather than instructions. The whole long-form video still gets "
+ "approximately 4 to 7 restrained accents in total, including the Subscribe "
+ "cue. Adding up the per-scene suggestions would exceed that on its own, so "
+ "the budget wins: choose the few most meaningful moments and leave the rest "
+ "silent.",
+ "RUNTIME UNCHANGED. Every runtime figure remains an estimate. Nothing was "
+ "padded to reach an older cover target, and graphics or B-roll shown "
+ "underneath continuing narration do not add separate runtime.",
+]
 
 CHANGES = {
 4: ["THE SCRIPT. Replaced by V4_Recording_Master_LOCKED_2026-09-09.docx. The "
@@ -1118,6 +1171,14 @@ def change_log(n, out):
          % ("yes" if masters.verify(n)[1] else "NO"), "",
          "-" * W, "WHAT CHANGED", "-" * W, ""]
     for t in CHANGES[n]:
+        L += [wrap("•  " + t, "  "), ""]
+    L += ["-" * W,
+          "SEPTEMBER 9 CLARIFICATIONS, INSTRUCTION ONLY", "-" * W, "",
+          wrap("Two clarifications were added to the Riverside prompt and the "
+               "visual build map after the synchronization was accepted. "
+               "Neither changes a visual, a spoken line, an asset, the "
+               "routing, or any runtime figure."), ""]
+    for t in CLARIFICATIONS:
         L += [wrap("•  " + t, "  "), ""]
     L += ["-" * W, "WHAT DID NOT CHANGE", "-" * W, "",
           wrap("The spoken script. This package reads the locked master and "

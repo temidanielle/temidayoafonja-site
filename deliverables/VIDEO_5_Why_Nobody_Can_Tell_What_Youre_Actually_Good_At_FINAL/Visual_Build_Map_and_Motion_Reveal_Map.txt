@@ -27,6 +27,12 @@ following:
   - her voice continues underneath
   - then cut cleanly back to her
 
+RETURN-TO-CAMERA EXCEPTION
+
+Return to camera only where the scene map calls for it. This instruction never
+applies to Watch Next. Watch Next is the final visual, continues through the
+final spoken line and intentional closing hold, and has no camera return.
+
 Substantive B-roll also fills the entire frame, on the same rule.
 
 Short single-line callouts may sit over camera. Nothing else may.
@@ -79,6 +85,16 @@ four to seven sounds to every section, and not one per caption or per cut.
 
 Use them on selected entrances, transitions or payoffs. Keep the voice
 dominant, sound effects quieter than speech, and music subtle.
+
+SOUND CUES ARE SELECTIVE, NOT CUMULATIVE
+
+Scene notes that suggest an accent per item, per question, per column, per step
+or per word are OPTIONAL SOUND CANDIDATES, not instructions to execute. Do not
+play every suggested scene-level accent automatically. Choose the few most
+meaningful moments across the whole video and leave the others silent.
+
+Adding up the per-scene suggestions would exceed the budget on its own. The
+budget wins.
 
 Never invent music-license information. Add a music credit only when the real
 track and license from the finished project are known.
@@ -160,6 +176,10 @@ MG01   V5_MG01_Two_Versions_Of_The_Same_Career.png
     not be visible behind it or around its edges. Her audio continues
     underneath.
 
+    Return to camera only where the scene map calls for it. This never
+    applies to Watch Next, which is the final visual and has no camera
+    return.
+
   REVEAL ORDER
     Left column while the resume version is read, held alone. Right column
     arrives on the Claim. Closing line 1.4s after that.
@@ -176,8 +196,12 @@ MG01   V5_MG01_Two_Versions_Of_The_Same_Career.png
   CAPTIONS
     Suppress.
 
-  SOUND
+  SOUND CANDIDATE, OPTIONAL
     One accent as the Claim column arrives.
+    Optional candidate, not an instruction. The whole video gets
+    approximately 4 to 7 restrained accents in total, including the
+    Subscribe cue. Play this one only if it is among the most meaningful
+    moments; otherwise leave it silent.
 
   BRAND
     Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
@@ -212,6 +236,10 @@ MG02   V5_MG02_The_One_Line_Test.png
     not be visible behind it or around its edges. Her audio continues
     underneath.
 
+    Return to camera only where the scene map calls for it. This never
+    applies to Watch Next, which is the final visual and has no camera
+    return.
+
   REVEAL ORDER
     One word at a time, 0.9s apart. Closing line at 3.2s.
 
@@ -227,8 +255,12 @@ MG02   V5_MG02_The_One_Line_Test.png
   CAPTIONS
     Suppress.
 
-  SOUND
+  SOUND CANDIDATE, OPTIONAL
     One accent per word, then a resolve.
+    Optional candidate, not an instruction. The whole video gets
+    approximately 4 to 7 restrained accents in total, including the
+    Subscribe cue. Play this one only if it is among the most meaningful
+    moments; otherwise leave it silent.
 
   BRAND
     Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
@@ -262,6 +294,10 @@ MG03   V5_MG03_Sharper_Versus_Defensible.png
     not be visible behind it or around its edges. Her audio continues
     underneath.
 
+    Return to camera only where the scene map calls for it. This never
+    applies to Watch Next, which is the final visual and has no camera
+    return.
+
   REVEAL ORDER
     SHARPER first, held alone 1.5s so it lands as attractive. DEFENSIBLE
     at 2.0s. Closing line at 3.4s.
@@ -278,8 +314,12 @@ MG03   V5_MG03_Sharper_Versus_Defensible.png
   CAPTIONS
     Suppress.
 
-  SOUND
+  SOUND CANDIDATE, OPTIONAL
     One accent as DEFENSIBLE arrives.
+    Optional candidate, not an instruction. The whole video gets
+    approximately 4 to 7 restrained accents in total, including the
+    Subscribe cue. Play this one only if it is among the most meaningful
+    moments; otherwise leave it silent.
 
   BRAND
     Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
@@ -316,6 +356,10 @@ MG04   V5_MG04_Sorting_Mechanism.png
     not be visible behind it or around its edges. Her audio continues
     underneath.
 
+    Return to camera only where the scene map calls for it. This never
+    applies to Watch Next, which is the final visual and has no camera
+    return.
+
   REVEAL ORDER
     One step at a time, 1.0s apart, each replacing the emphasis of the one
     before. The third step holds alone.
@@ -332,8 +376,12 @@ MG04   V5_MG04_Sorting_Mechanism.png
   CAPTIONS
     Suppress.
 
-  SOUND
+  SOUND CANDIDATE, OPTIONAL
     One accent per step, descending.
+    Optional candidate, not an instruction. The whole video gets
+    approximately 4 to 7 restrained accents in total, including the
+    Subscribe cue. Play this one only if it is among the most meaningful
+    moments; otherwise leave it silent.
 
   BRAND
     Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
@@ -367,6 +415,10 @@ MG05   V5_MG05_Remove_The_Nouns.png
     not be visible behind it or around its edges. Her audio continues
     underneath.
 
+    Return to camera only where the scene map calls for it. This never
+    applies to Watch Next, which is the final visual and has no camera
+    return.
+
   REVEAL ORDER
     The four nouns strike through one at a time, 0.7s apart, then the
     closing line arrives at full weight at 3.4s.
@@ -383,8 +435,12 @@ MG05   V5_MG05_Remove_The_Nouns.png
   CAPTIONS
     Suppress.
 
-  SOUND
+  SOUND CANDIDATE, OPTIONAL
     A subtle click per strike, one clean resolve on the verbs line.
+    Optional candidate, not an instruction. The whole video gets
+    approximately 4 to 7 restrained accents in total, including the
+    Subscribe cue. Play this one only if it is among the most meaningful
+    moments; otherwise leave it silent.
 
   BRAND
     Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
@@ -420,6 +476,10 @@ MG06   V5_MG06_Receipts.png
     not be visible behind it or around its edges. Her audio continues
     underneath.
 
+    Return to camera only where the scene map calls for it. This never
+    applies to Watch Next, which is the final visual and has no camera
+    return.
+
   REVEAL ORDER
     First line, second line at 1.0s, supporting line at 2.2s.
 
@@ -435,8 +495,12 @@ MG06   V5_MG06_Receipts.png
   CAPTIONS
     Suppress.
 
-  SOUND
+  SOUND CANDIDATE, OPTIONAL
     One accent between the two lines.
+    Optional candidate, not an instruction. The whole video gets
+    approximately 4 to 7 restrained accents in total, including the
+    Subscribe cue. Play this one only if it is among the most meaningful
+    moments; otherwise leave it silent.
 
   BRAND
     Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
@@ -473,6 +537,10 @@ MG07   V5_MG07_Test_The_Claim.png
     not be visible behind it or around its edges. Her audio continues
     underneath.
 
+    Return to camera only where the scene map calls for it. This never
+    applies to Watch Next, which is the final visual and has no camera
+    return.
+
   REVEAL ORDER
     Two outcomes 1.2s apart, then the exact sentence at the bottom at 3.0s
     and held.
@@ -489,8 +557,12 @@ MG07   V5_MG07_Test_The_Claim.png
   CAPTIONS
     Suppress.
 
-  SOUND
+  SOUND CANDIDATE, OPTIONAL
     Two accents on the outcomes, one resolve on the sentence.
+    Optional candidate, not an instruction. The whole video gets
+    approximately 4 to 7 restrained accents in total, including the
+    Subscribe cue. Play this one only if it is among the most meaningful
+    moments; otherwise leave it silent.
 
   BRAND
     Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
@@ -525,6 +597,10 @@ MG08   V5_MG08_Real_Limits.png
     not be visible behind it or around its edges. Her audio continues
     underneath.
 
+    Return to camera only where the scene map calls for it. This never
+    applies to Watch Next, which is the final visual and has no camera
+    return.
+
   REVEAL ORDER
     Headline, then the supporting line at 1.6s. No item-by-item build;
     this section should not feel like a checklist.
@@ -541,8 +617,12 @@ MG08   V5_MG08_Real_Limits.png
   CAPTIONS
     Suppress.
 
-  SOUND
+  SOUND CANDIDATE, OPTIONAL
     One flat accent. No resolve. This should not feel triumphant.
+    Optional candidate, not an instruction. The whole video gets
+    approximately 4 to 7 restrained accents in total, including the
+    Subscribe cue. Play this one only if it is among the most meaningful
+    moments; otherwise leave it silent.
 
   BRAND
     Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
@@ -577,6 +657,10 @@ CTA   V5_CTA_Career_Evidence_Starter.png
     not be visible behind it or around its edges. Her audio continues
     underneath.
 
+    Return to camera only where the scene map calls for it. This never
+    applies to Watch Next, which is the final visual and has no camera
+    return.
+
   REVEAL ORDER
     Logomark, headline at 0.6s, URL at 2.0s.
 
@@ -592,8 +676,12 @@ CTA   V5_CTA_Career_Evidence_Starter.png
   CAPTIONS
     Suppress. Never cover the address.
 
-  SOUND
+  SOUND CANDIDATE, OPTIONAL
     One warm accent on the URL.
+    Optional candidate, not an instruction. The whole video gets
+    approximately 4 to 7 restrained accents in total, including the
+    Subscribe cue. Play this one only if it is among the most meaningful
+    moments; otherwise leave it silent.
 
   BRAND
     Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
@@ -626,6 +714,10 @@ WN   V5_WatchNext_Change_Jobs.png
     not be visible behind it or around its edges. Her audio continues
     underneath.
 
+    Return to camera only where the scene map calls for it. This never
+    applies to Watch Next, which is the final visual and has no camera
+    return.
+
   REVEAL ORDER
     Static. No animation on the final card.
 
@@ -641,8 +733,12 @@ WN   V5_WatchNext_Change_Jobs.png
   CAPTIONS
     Suppress.
 
-  SOUND
+  SOUND CANDIDATE, OPTIONAL
     None.
+    Optional candidate, not an instruction. The whole video gets
+    approximately 4 to 7 restrained accents in total, including the
+    Subscribe cue. Play this one only if it is among the most meaningful
+    moments; otherwise leave it silent.
 
   BRAND
     Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.

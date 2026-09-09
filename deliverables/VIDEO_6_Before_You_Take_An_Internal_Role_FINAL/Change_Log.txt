@@ -56,6 +56,33 @@ WHAT CHANGED
   corrected.
 
 ------------------------------------------------------------------------------
+SEPTEMBER 9 CLARIFICATIONS, INSTRUCTION ONLY
+------------------------------------------------------------------------------
+
+Two clarifications were added to the Riverside prompt and the visual build map
+after the synchronization was accepted. Neither changes a visual, a spoken
+line, an asset, the routing, or any runtime figure.
+
+  •  RETURN-TO-CAMERA EXCEPTION. The general full-screen rule ends "then cut
+  cleanly back to me." That is now qualified everywhere it appears: return
+  to camera only where the scene map calls for it, and never for Watch Next.
+  Watch Next is the final visual, continues through the final spoken line
+  and the intentional closing hold, and has no camera return. The existing
+  Watch Next scene instructions were already correct and were not changed.
+
+  •  SOUND CUES ARE SELECTIVE, NOT CUMULATIVE. Scene notes suggesting an
+  accent per item, question, column, step or word are now labelled OPTIONAL
+  SOUND CANDIDATES rather than instructions. The whole long-form video still
+  gets approximately 4 to 7 restrained accents in total, including the
+  Subscribe cue. Adding up the per-scene suggestions would exceed that on
+  its own, so the budget wins: choose the few most meaningful moments and
+  leave the rest silent.
+
+  •  RUNTIME UNCHANGED. Every runtime figure remains an estimate. Nothing
+  was padded to reach an older cover target, and graphics or B-roll shown
+  underneath continuing narration do not add separate runtime.
+
+------------------------------------------------------------------------------
 WHAT DID NOT CHANGE
 ------------------------------------------------------------------------------
 
@@ -100,6 +127,11 @@ The target printed on the source cover is not a verified finished length
 either. The September 9 scripts are shorter than the earlier drafts. Do not
 restore deleted material, pad the script, or slow the delivery to reach an
 older target.
+
+A full-screen graphic or a B-roll shot running underneath continuing narration
+does not add separate runtime. It occupies time the speech already occupies.
+Only a deliberate silent hold adds length, and those are the scripted pauses
+and the closing hold, which are already accounted for.
 
   Spoken words: 1151.  Speech-only estimate 7:56 to 8:51 at 140 to 165 wpm.
   Printed cover target, not a verified length: Approximately 10:30-11:30 finished. Do not pad to force runtime.

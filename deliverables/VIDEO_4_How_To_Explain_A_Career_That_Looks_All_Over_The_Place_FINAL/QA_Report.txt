@@ -16,7 +16,7 @@ package is aligned.
 SECTION 1: PACKAGE CHECKS COMPLETED NOW
 ==============================================================================
 
-28 checks run. 28 passed, 0 failed.
+30 checks run. 30 passed, 0 failed.
 
   [PASS] Synchronized to the exact September 9 script file
          V4_Recording_Master_LOCKED_2026-09-09.docx. SHA-256
@@ -45,7 +45,7 @@ SECTION 1: PACKAGE CHECKS COMPLETED NOW
          Co-Creator prompt.
 
   [PASS] No retired instruction survives
-         Checked across 1254 package paragraphs: the retired fixed-
+         Checked across 1287 package paragraphs: the retired fixed-
          order rule, the retired fixed-order framework line, the
          retired opening line. Each may appear only in a paragraph
          that records it as retired.
@@ -94,6 +94,18 @@ SECTION 1: PACKAGE CHECKS COMPLETED NOW
          the Subscribe cue counted inside that budget. Placed after
          the modeled twenty-second answer and its intentional
          silence.
+
+  [PASS] Return-to-camera exception explicit, and Watch Next exempt
+         The exception appears in the master prompt, in the standing
+         full-screen rule and in every scene's treatment block. Watch
+         Next keeps its existing instruction: final visual, no camera
+         return.
+
+  [PASS] Scene-level sound notes marked optional, not cumulative
+         Every per-scene accent is labelled an optional candidate in
+         the visual build map, and the prompt states that the 4 to 7
+         total budget wins over the sum of the scene suggestions. 10
+         scene notes carry the label.
 
   [PASS] Watch Next is the final visual
          No return to camera, no outro. Stated in the scene, the per-

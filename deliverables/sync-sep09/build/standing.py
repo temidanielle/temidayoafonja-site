@@ -19,6 +19,12 @@ following:
   - her voice continues underneath
   - then cut cleanly back to her
 
+RETURN-TO-CAMERA EXCEPTION
+
+Return to camera only where the scene map calls for it. This instruction never
+applies to Watch Next. Watch Next is the final visual, continues through the
+final spoken line and intentional closing hold, and has no camera return.
+
 Substantive B-roll also fills the entire frame, on the same rule.
 
 Short single-line callouts may sit over camera. Nothing else may.
@@ -77,6 +83,16 @@ four to seven sounds to every section, and not one per caption or per cut.
 
 Use them on selected entrances, transitions or payoffs. Keep the voice
 dominant, sound effects quieter than speech, and music subtle.
+
+SOUND CUES ARE SELECTIVE, NOT CUMULATIVE
+
+Scene notes that suggest an accent per item, per question, per column, per step
+or per word are OPTIONAL SOUND CANDIDATES, not instructions to execute. Do not
+play every suggested scene-level accent automatically. Choose the few most
+meaningful moments across the whole video and leave the others silent.
+
+Adding up the per-scene suggestions would exceed the budget on its own. The
+budget wins.
 
 Never invent music-license information. Add a music credit only when the real
 track and license from the finished project are known."""

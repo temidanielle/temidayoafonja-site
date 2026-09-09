@@ -172,6 +172,23 @@ def build_doc():
             "reuse claim true rather than relabelling it.", size=10.5,
          color=DIM, after=8)
 
+    h(d, "4b. September 9 clarifications, instruction only")
+    para(d, "Added after the synchronization was accepted. Neither changes a "
+            "visual, a spoken line, an asset, the routing, or any runtime "
+            "figure.", size=11, after=8)
+    for t in build.CLARIFICATIONS:
+        para(d, "•  " + t, size=10.5, after=6)
+    kv(d, "Files affected",
+       "Riverside_CoCreator_Master_Prompt.txt, "
+       "Visual_Build_Map_and_Motion_Reveal_Map.txt, Recording_Run_of_Show.docx, "
+       "Approved_Recording_Master_Reference.docx, Change_Log.txt and "
+       "QA_Report.txt, in all four packages.")
+    kv(d, "Files whose content did not change",
+       "All 99 others, including every asset, every Short, every publishing "
+       "file and every source manifest. Verified by comparing extracted text, "
+       "not bytes.")
+    kv(d, "Watch Next", "Existing scene instructions kept exactly as they were.")
+
     h(d, "5. Two checks I corrected rather than relaxed")
     para(d, "SENTENCE TRIGGERS. Six triggers I had written spanned two script "
             "paragraphs, so they did not exist as single spoken sentences. That "
@@ -197,7 +214,7 @@ def build_doc():
     para(d, "Each QA_Report.txt separates what can be checked now from what "
             "cannot be checked until the recording and the export exist.",
          size=11, after=8)
-    kv(d, "Package checks completed now", "28 per video, all passing")
+    kv(d, "Package checks completed now", "30 per video, all passing")
     kv(d, "Final-export checks still pending", "10 per video, none claimed")
     para(d, "Listed as PENDING and explicitly not verified: executed animation, "
             "recorded audio and delivery, audio balance, final pacing and "

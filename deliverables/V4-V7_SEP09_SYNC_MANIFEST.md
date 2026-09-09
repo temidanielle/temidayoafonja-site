@@ -38,7 +38,7 @@ as supplied.
 | Shorts | COPY UPDATE 2, REBUILD 1, REUSE 3 |
 | Package | `VIDEO_4_How_To_Explain_A_Career_That_Looks_All_Over_The_Place_FINAL/` |
 | ZIP | `Video_4_Sep09_Synchronized_Package.zip` |
-| ZIP SHA-256 | `cb2d082f043bfe42651c04b3d48be6f7ebbb94b43f053d270adc308d75834fab` |
+| ZIP SHA-256 | `29fe240cb4c308ee74278f1dfc245eabec28ca0cda6f85ce17e112e0cffe6954` |
 
 ## VIDEO 5
 
@@ -61,7 +61,7 @@ as supplied.
 | Shorts | REUSE 6 |
 | Package | `VIDEO_5_Why_Nobody_Can_Tell_What_Youre_Actually_Good_At_FINAL/` |
 | ZIP | `Video_5_Sep09_Synchronized_Package.zip` |
-| ZIP SHA-256 | `6059467661055ec04dd662860952c76e5b95a9a3c6a1f4864a9c7e3be30fbdea` |
+| ZIP SHA-256 | `46fa98f4378b44d481ce3f02c013894314fedeaef21febfb9e527f4d79fa84d4` |
 
 ## VIDEO 6
 
@@ -84,7 +84,7 @@ as supplied.
 | Shorts | COPY UPDATE 4, REBUILD 2 |
 | Package | `VIDEO_6_Before_You_Take_An_Internal_Role_FINAL/` |
 | ZIP | `Video_6_Sep09_Synchronized_Package.zip` |
-| ZIP SHA-256 | `6fb8f7aaaea7a8e31e427e3a81ccefd40c6b2ed5c7af9f1d6fcc47d1b8eb311d` |
+| ZIP SHA-256 | `9855780bcef74c2541a23480627d853996700db85c3a384c2bdacbba4ca3e45b` |
 
 ## VIDEO 7
 
@@ -107,7 +107,7 @@ as supplied.
 | Shorts | COPY UPDATE 1, REUSE 5 |
 | Package | `VIDEO_7_Are_You_Growing_Or_Just_Being_Given_More_Work_FINAL/` |
 | ZIP | `Video_7_Sep09_Synchronized_Package.zip` |
-| ZIP SHA-256 | `2dcc007e1d528b938b3ed572d8e9f673177aadfa6b779f556217416e4bde79f6` |
+| ZIP SHA-256 | `f5a8959d655a036ec58ccd79c35dbbf161b97b71b0cb775094f12fc85296b13a` |
 
 ## Routing
 
@@ -158,7 +158,7 @@ reused as evidence.
 ## Combined handoff
 
 `Videos_4-7_Sep09_Synchronized_Handoff.zip`
-`4f1f7b1ca3d67726086d1d802fca711fccd85b5b7d381ed4e5cae096f5bec2b2`
+`79ff1df730e6e1492c6c044c36d13748f7ae682d934c5812b3fa1a1fbdd105b1`
 
 ## Status
 
