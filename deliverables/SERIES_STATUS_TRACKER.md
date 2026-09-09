@@ -129,7 +129,7 @@ every scene-level sound note is labelled optional.
     deliverables/V4-V7_SEP09_SYNC_MANIFEST.md
     deliverables/V4-V7_Sep09_Synchronization_Summary.docx
     deliverables/Videos_4-7_Sep09_COMPLETE_Handoff.zip
-    82d83a1e02371d2a3e57df1952e902b3345357a0d5be7d45ced84b24b0c56bac
+    4fdbbef71df3bd5e3b306d63a0bdde13de292c5d39162f35dc53e526a2abe07c
 
 `Videos_4-7_Sep09_COMPLETE_Handoff.zip` is the single archive: the summary
 document and the manifest at its root, plus all four complete packages.

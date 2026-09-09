@@ -259,9 +259,21 @@ def build_doc():
     kv(d, build.COMBINED,
        open(DELIV + build.COMBINED + ".sha256").read().split()[0])
 
+    h(d, "12. Task closed")
+    para(d, "You accepted the September 9 synchronization and the targeted "
+            "asset updates, and the two instruction-only clarifications were "
+            "the final item. The Videos 4 to 7 synchronization task is closed "
+            "in the tracker.", size=11, after=8)
+    para(d, "No further script, thumbnail, deck, routing or asset change for "
+            "Videos 4 to 7 unless an actual factual or production defect is "
+            "found.", size=11, after=8)
+    para(d, "The V8 to V13 draft batch is a separate task and shares nothing "
+            "with this one.", size=11, after=8)
+
     rule(d)
     para(d, "VIDEOS 4, 5, 6 AND 7: PACKAGES SYNCHRONIZED TO THE SEPTEMBER 9 "
-            "SCRIPT LOCK.", size=12, bold=True, color=NAVY, before=10, after=6)
+            "SCRIPT LOCK. TASK CLOSED.", size=12, bold=True, color=NAVY,
+         before=10, after=6)
     para(d, "Ready for recording and Riverside production. Nothing about the "
             "recording or the export is verified, because neither exists yet.",
          size=11, color=DIM, after=6)
