@@ -1134,6 +1134,16 @@ def zip_dir(root, target):
     return h
 
 
+def qa_counts_line():
+    """Read the real counts out of the built QA reports."""
+    parts = []
+    for n in M.VIDEOS:
+        txt = open(os.path.join(d(n, SUB[7]), "V%d_QA_Report.txt" % n)).read()
+        m_ = re.search(r"(\d+) checks run\. (\d+) passed", txt)
+        parts.append("V%d %s of %s" % (n, m_.group(2), m_.group(1)))
+    return "; ".join(parts)
+
+
 def batch_manifest(hashes):
     rows = []
     for n in M.VIDEOS:
@@ -1209,7 +1219,10 @@ are not presented as such.
 ## QA is split
 
 Each `V*_QA_Report.txt` separates **package checks completed now** from
-**final-export checks still pending**. Actual delivery, runtime, executed
+**final-export checks still pending**. The completed counts are %s, all
+passing. They are not uniform and were not padded to look uniform: Video 11
+carries one additional check, the arithmetic validation against the supplied
+synthetic rows. Actual delivery, runtime, executed
 motion graphics, executed camera moves, B-roll placement, audio balance,
 picture quality, caption sync, chapters, end-card behavior, thumbnail artwork
 approval and public link accessibility are all listed as PENDING and are not
@@ -1229,10 +1242,15 @@ plus this manifest, the delivery summary and the roadmap patch.
 
 ## Status
 
-**V8 TO V13 PRODUCTION PACKAGES BUILT AGAINST LOCKED FINAL MASTERS.**
+**V8 TO V13 PRODUCTION PACKAGE BUILD CLOSED.**
 **READY FOR RECORDING AND RIVERSIDE PRODUCTION.**
 **FINAL-EXPORT QA AND THUMBNAIL ARTWORK APPROVAL PENDING.**
-""" % (BATCH, "\n".join(rows), P.SUPERSEDED)
+
+Closed September 9, 2026 after the reporting and metadata corrections. No
+further script, asset, Shorts, prompt, routing or publishing change unless an
+actual factual or production defect is found. These are packages ready for
+recording, not verified final videos.
+""" % (BATCH, "\n".join(rows), P.SUPERSEDED, qa_counts_line())
 
 
 def main():

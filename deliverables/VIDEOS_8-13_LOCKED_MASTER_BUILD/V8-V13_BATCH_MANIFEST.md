@@ -178,7 +178,10 @@ are not presented as such.
 ## QA is split
 
 Each `V*_QA_Report.txt` separates **package checks completed now** from
-**final-export checks still pending**. Actual delivery, runtime, executed
+**final-export checks still pending**. The completed counts are V8 19 of 19; V9 19 of 19; V10 19 of 19; V11 20 of 20; V12 19 of 19; V13 19 of 19, all
+passing. They are not uniform and were not padded to look uniform: Video 11
+carries one additional check, the arithmetic validation against the supplied
+synthetic rows. Actual delivery, runtime, executed
 motion graphics, executed camera moves, B-roll placement, audio balance,
 picture quality, caption sync, chapters, end-card behavior, thumbnail artwork
 approval and public link accessibility are all listed as PENDING and are not
@@ -198,6 +201,11 @@ plus this manifest, the delivery summary and the roadmap patch.
 
 ## Status
 
-**V8 TO V13 PRODUCTION PACKAGES BUILT AGAINST LOCKED FINAL MASTERS.**
+**V8 TO V13 PRODUCTION PACKAGE BUILD CLOSED.**
 **READY FOR RECORDING AND RIVERSIDE PRODUCTION.**
 **FINAL-EXPORT QA AND THUMBNAIL ARTWORK APPROVAL PENDING.**
+
+Closed September 9, 2026 after the reporting and metadata corrections. No
+further script, asset, Shorts, prompt, routing or publishing change unless an
+actual factual or production defect is found. These are packages ready for
+recording, not verified final videos.

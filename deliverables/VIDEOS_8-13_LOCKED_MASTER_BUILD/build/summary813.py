@@ -16,6 +16,33 @@ import build813 as B
 from docs import (base_doc, para, title_block, rule, h, kv, callout,
                   NAVY, GOLD, DIM, RED)
 
+CORRECTIONS = [
+ ("Video 12 spoken word count",
+  "1,185 words, 8:10 to 9:07 at 130 to 145 wpm, confirmed by recomputing from "
+  "the locked master. The package files, the batch manifest and this summary "
+  "all carried 1,185 correctly; only a delivery chat message said 1,105, and "
+  "that figure appears in no file. The V12 script was not altered."),
+ ("QA check counts",
+  "This summary previously said 20 package checks per video, which was wrong. "
+  "The real counts are read out of the built QA reports and reported as they "
+  "are: V8, V9, V10, V12 and V13 have 19 each, and V11 has 20 because it "
+  "carries the arithmetic validation the others have nothing to validate. No "
+  "check was added to make the counts look uniform."),
+ ("Combined archive checksum",
+  "This summary previously printed a checksum for the combined archive that "
+  "went stale the moment the archive was rebuilt around it. The checksum is "
+  "now kept only in the sibling Videos_8-13_Production_Packages.zip.sha256 "
+  "and in the delivery message, and is computed after the archive is final. "
+  "The per-video ZIP checksums are still printed here because they are stable: "
+  "those archives do not contain this document."),
+ ("Scope of the correction",
+  "Reporting and metadata only. No locked master, script, title, thumbnail "
+  "wording, framework, visual asset, Short, Riverside prompt, publishing "
+  "decision, resource route or Watch Next route was changed, and the six "
+  "per-video ZIPs were not rebuilt. Their checksums are unchanged, which is "
+  "verified on every run."),
+]
+
 PENDING = [
  ("Thumbnail artwork, all six videos",
   "The WORDING is locked and is in every package. No artwork was created, no "
@@ -63,6 +90,26 @@ FLAGGED = [
   "than a straight apostrophe. Worth knowing when the title is pasted into "
   "YouTube."),
 ]
+
+
+def qa_counts():
+    """Read the real check counts out of each built QA report.
+
+    Derived rather than asserted, so the summary cannot drift from the reports
+    again. Video 11 legitimately has one extra check, the arithmetic
+    validation, and the counts are reported as they are rather than padded to
+    look uniform.
+    """
+    import re as _re
+    out = {}
+    for n in M.VIDEOS:
+        p = os.path.join(B.d(n, B.SUB[7]), "V%d_QA_Report.txt" % n)
+        txt = open(p).read()
+        run = _re.search(r"(\d+) checks run\. (\d+) passed, (\d+) failed", txt)
+        pend = len(_re.findall(r"^  \[PENDING\] ", txt, _re.M))
+        out[n] = dict(run=int(run.group(1)), passed=int(run.group(2)),
+                      failed=int(run.group(3)), pending=pend)
+    return out
 
 
 def rows():
@@ -169,8 +216,19 @@ def build_doc():
               "is fabricated.", size=11, after=8)
 
     h(doc, "6. QA is split")
-    kv(doc, "Package checks completed now", "20 per video, all passing")
-    kv(doc, "Final-export checks still pending", "12 per video, none claimed")
+    qc = qa_counts()
+    kv(doc, "Package checks completed now",
+       ";  ".join("V%d %d passed of %d" % (n, qc[n]["passed"], qc[n]["run"])
+                  for n in M.VIDEOS)
+       + ".  All passing, no failures.")
+    para(doc, "The counts are not uniform, and were not padded to look "
+              "uniform. Video 11 carries one additional check, the arithmetic "
+              "validation against the supplied synthetic rows, which the other "
+              "five videos have nothing to validate. These numbers are read "
+              "directly out of the built QA reports.", size=10.5, color=DIM,
+         after=8)
+    kv(doc, "Final-export checks still pending",
+       "%d per video, none claimed" % qc[M.VIDEOS[0]]["pending"])
     para(doc, "Mobile readability was inspected, not asserted: every frame was "
               "measured against the rendered DOM for overlap, caption-zone and "
               "safe-edge violations, then rendered into a 390-point-wide "
@@ -203,21 +261,32 @@ def build_doc():
            open(os.path.join(ROOT, "V%d_Production_Package.zip.sha256" % n)
                 ).read().split()[0])
     kv(doc, "Videos_8-13_Production_Packages.zip",
-       open(os.path.join(ROOT, "Videos_8-13_Production_Packages.zip.sha256")
-            ).read().split()[0])
+       "Checksum in the sibling Videos_8-13_Production_Packages.zip.sha256. "
+       "It is deliberately not printed here: this document travels inside "
+       "that archive, so embedding the hash would change the file it "
+       "describes every time the archive is rebuilt.")
     kv(doc, "V8-V13_BATCH_MANIFEST.md", "Batch manifest")
     kv(doc, "V8-V13_ROADMAP_TRACKER_PATCH.md",
        "A scoped patch for the shared roadmap and tracker, prepared as its own "
        "file rather than written into the shared documents, so this batch "
        "never writes to a file the V4 to V7 task also owns.")
 
+    h(doc, "11. Reporting corrections applied after the build")
+    for name, body in CORRECTIONS:
+        kv(doc, name, body)
+
     rule(doc)
-    para(doc, "V8 TO V13 PRODUCTION PACKAGES BUILT AGAINST LOCKED FINAL "
-              "MASTERS.", size=12, bold=True, color=NAVY, before=10, after=4)
+    para(doc, "V8 TO V13 PRODUCTION PACKAGE BUILD CLOSED.", size=12,
+         bold=True, color=NAVY, before=10, after=4)
     para(doc, "READY FOR RECORDING AND RIVERSIDE PRODUCTION.", size=12,
          bold=True, color=NAVY, after=4)
     para(doc, "FINAL-EXPORT QA AND THUMBNAIL ARTWORK APPROVAL PENDING.",
          size=12, bold=True, color=RED, after=8)
+    para(doc, "Closed after the reporting and metadata corrections above. No "
+              "further script, asset, Shorts, prompt, routing or publishing "
+              "change unless an actual factual or production defect is found. "
+              "These are packages ready for recording, not verified final "
+              "videos.", size=10.5, color=DIM, after=8)
     p = os.path.join(ROOT, "V8-V13_DELIVERY_SUMMARY.docx")
     doc.save(p)
     return p
@@ -256,8 +325,9 @@ replacing *WHAT STILL NEEDS YOU?*. V12's is **WHAT CAN CHANGE NOW?**, replacing
 **Assets are new builds.** No prior rendered V8 to V13 artwork existed, so all
 54 PNGs are new builds from reusable concepts, not byte-identical reuse.
 
-**QA** is 20 package checks per video completed now, all passing, and 12
-final-export checks per video listed as pending and not claimed.
+**QA** is %s package checks completed now, all passing, and %d final-export
+checks per video listed as pending and not claimed. Video 11 carries one extra
+check, the arithmetic validation.
 
 **Pending:** thumbnail artwork and portrait selection for all six; YouTube and
 playlist URLs; the Watch Next scheduling dependency, with V9 needing to be
@@ -279,6 +349,15 @@ affected.
 """
 
 
+def patch_text():
+    qc = qa_counts()
+    return PATCH % (
+        patch_rows(),
+        "; ".join("V%d %d of %d" % (n, qc[n]["passed"], qc[n]["run"])
+                  for n in M.VIDEOS),
+        qc[M.VIDEOS[0]]["pending"])
+
+
 def patch_rows():
     out = []
     for n in M.VIDEOS:
@@ -294,5 +373,5 @@ if __name__ == "__main__":
     p = build_doc()
     print("wrote", p)
     q = os.path.join(ROOT, "V8-V13_ROADMAP_TRACKER_PATCH.md")
-    open(q, "w").write(PATCH % patch_rows())
+    open(q, "w").write(patch_text())
     print("wrote", q)

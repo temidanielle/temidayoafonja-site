@@ -36,8 +36,9 @@ replacing *WHAT STILL NEEDS YOU?*. V12's is **WHAT CAN CHANGE NOW?**, replacing
 **Assets are new builds.** No prior rendered V8 to V13 artwork existed, so all
 54 PNGs are new builds from reusable concepts, not byte-identical reuse.
 
-**QA** is 20 package checks per video completed now, all passing, and 12
-final-export checks per video listed as pending and not claimed.
+**QA** is V8 19 of 19; V9 19 of 19; V10 19 of 19; V11 20 of 20; V12 19 of 19; V13 19 of 19 package checks completed now, all passing, and 12 final-export
+checks per video listed as pending and not claimed. Video 11 carries one extra
+check, the arithmetic validation.
 
 **Pending:** thumbnail artwork and portrait selection for all six; YouTube and
 playlist URLs; the Watch Next scheduling dependency, with V9 needing to be
