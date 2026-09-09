@@ -1,0 +1,96 @@
+==============================================================================
+CURRENT-SCRIPT TRIGGER MAP
+Video 13  ·  A 30-Day Plan to Test Your Next Career Move
+Built against Video_13_FINAL_Revised_Recording_Master.docx  ·  September 9, 2026 locked final Recording Masters
+==============================================================================
+
+Every trigger below is an exact sentence from the locked master. The build
+verifies this and fails if one is not found, so no card can be cued by a
+sentence that was removed.
+
+SPOKEN TRIGGERS cue a visual. EDITORIAL CUES are production decisions and are
+not lines to listen for. They are separated deliberately.
+
+------------------------------------------------------------------------------
+SPOKEN TRIGGERS
+------------------------------------------------------------------------------
+
+  MG01  V13_MG01_Activity_Is_Not_A_Decision.png
+        mode:    TRUE FULL SCREEN
+        cue:     “It can make you feel productive without answering the decision.”
+        in the locked script: YES
+        exit:    Cut back to camera for the thirty-day proposal.
+
+  MG02  V13_MG02_Define_Investigate_Try_Decide.png
+        mode:    TRUE FULL SCREEN
+        cue:     “The plan is simple:”
+        in the locked script: YES
+        exit:    Cut back to camera for the setup.
+
+  MG03  V13_MG03_One_Destination_One_Hypothesis.png
+        mode:    TRUE FULL SCREEN
+        cue:     ““Something strategic” is too vague.”
+        in the locked script: YES
+        exit:    Cut back to camera for the self-introduction.
+        label:   ILLUSTRATION, NOT A REAL CASE
+
+  MG04  V13_MG04_Days_1_7_Define.png
+        mode:    TRUE FULL SCREEN
+        cue:     “Build a simple map:”
+        in the locked script: YES
+        exit:    Cut back to camera for the do-not-buy-a-qualification warning.
+
+  MG05  V13_MG05_Days_8_14_Investigate.png
+        mode:    TRUE FULL SCREEN
+        cue:     “Ask about the work.”
+        in the locked script: YES
+        exit:    Cut back to camera for the nobody-owes-you-access line.
+
+  MG06  V13_MG06_Days_15_21_Work_Sample.png
+        mode:    TRUE FULL SCREEN
+        cue:     “Use public, synthetic, or otherwise permitted material.”
+        in the locked script: YES
+        exit:    Cut back to camera for the one-page recommendation questions.
+        label:   A WORK SAMPLE, NOT PROFESSIONAL EXPERIENCE
+
+  MG07  V13_MG07_Continue_Modify_Stop.png
+        mode:    TRUE FULL SCREEN
+        cue:     “Then choose one of three decisions:”
+        in the locked script: YES
+        exit:    Cut back to camera for the illustration outcomes.
+
+  RES   V13_RESOURCE_Field_Kit.png
+        mode:    TRUE FULL SCREEN
+        cue:     “The Capability Formation Field Kit is linked below for a broader evidence-led read of your current position.”
+        in the locked script: YES
+        exit:    Cut back to camera for the two closing lines.
+
+  WN    V13_WATCH_NEXT_Change_Industries.png
+        mode:    TRUE FULL SCREEN, FINAL
+        cue:     “For a closer look at separating useful experience from unfamiliar context and actual requirements, watch “How to Change Industries Without Starting Over” next.”
+        in the locked script: YES
+        exit:    NONE. Final visual. No camera return, no outro.
+
+------------------------------------------------------------------------------
+EDITORIAL CUES, NOT SPOKEN TRIGGERS
+------------------------------------------------------------------------------
+
+These are camera, B-roll and pacing decisions taken from the script's
+structure. Do not treat any of them as a sentence to wait for.
+
+  Self-introduction. Temidayo introduces herself partway through, after the
+demonstration. Stay on camera. No graphic over it.
+
+  Section transitions. The hero framework card may return briefly at each
+section change, for about three seconds. That is an editorial decision, not a
+separate spoken cue.
+
+  Subscribe cue. Visual only, placed after the vague-versus-testable
+destination lands, once back on camera. It adds no spoken dialogue.
+
+  B-roll. Two to four meaningful full-screen moments where useful, not a
+quota, and never depicting an action the script prohibits.
+
+==============================================================================
+END
+==============================================================================

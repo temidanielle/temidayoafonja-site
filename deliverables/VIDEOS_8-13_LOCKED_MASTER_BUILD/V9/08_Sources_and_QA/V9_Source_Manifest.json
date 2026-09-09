@@ -1,0 +1,114 @@
+{
+  "video": 9,
+  "title": "How to Change Industries Without Starting Over",
+  "locked_master": {
+    "filename": "Video_9_FINAL_Revised_Recording_Master.docx",
+    "sha256": "690c0626c3a9e09efcd00841057fd35199a6d2c9e3e9e822a60aae321e92ab19",
+    "copied_unchanged_into": "01_Recording_Master/Video_9_FINAL_Revised_Recording_Master.docx",
+    "spoken_section": "after RECORDING SCRIPT STARTS HERE and before END OF SPOKEN SCRIPT",
+    "spoken_paragraphs": 104,
+    "spoken_words": 1153
+  },
+  "packaging": {
+    "title": "How to Change Industries Without Starting Over",
+    "thumbnail_wording": "NEW FIELD. NOT ZERO.",
+    "thumbnail_artwork": "PENDING. Not created in this build.",
+    "framework": "Capability. Context. Credentials.",
+    "resource": {
+      "name": "Capability Formation Field Kit",
+      "url": "https://temidayoafonja.com/fieldkit"
+    },
+    "watch_next": {
+      "video": 10,
+      "title": "Before a Layoff, Know What You Can Still Prove",
+      "url": null
+    },
+    "playlist": "Make Your Next Move Without Starting Over",
+    "playlist_url": null,
+    "printed_target": "Approximately 9:15 to 10:15",
+    "final_spoken_line": "Being new to an industry is not the same as being new to every problem inside it."
+  },
+  "runtime": {
+    "spoken_words": 1153,
+    "speech_only_estimate": "7:57 to 8:52 at 130 to 145 wpm",
+    "is_an_estimate_not_a_measurement": true
+  },
+  "secondary_reference_used": {
+    "archive": "Videos_8-13_Recording_and_Production_Components_v1.0.zip",
+    "used_for": "asset concepts and Shorts drafts only, each remapped to the locked master",
+    "not_used": [
+      "Recording_Master_v1.0_REVIEW files",
+      "Code_Build_Prompt_V8-V13.txt"
+    ]
+  },
+  "assets": [
+    {
+      "file": "V9_MG01_Direct_Industry_Experience.png",
+      "id": "MG01",
+      "label": null,
+      "sha256": "3f0c41c609639f286c63bf3e6d4b82b08a5946ac2de84085dd5b1093fefdbb26"
+    },
+    {
+      "file": "V9_MG02_Two_Mistakes.png",
+      "id": "MG02",
+      "label": null,
+      "sha256": "a64c4138e9a4a68e8051c8055f35572fabd582c30a14edba86c09ac083fd75bd"
+    },
+    {
+      "file": "V9_MG03_Capability_Context_Credentials.png",
+      "id": "MG03",
+      "label": null,
+      "sha256": "72dc682d2989b8696d458bc04744f47ac257187dbd7082c6fba26651b749eef8"
+    },
+    {
+      "file": "V9_MG04_Same_Verb_Different_Work.png",
+      "id": "MG04",
+      "label": "ILLUSTRATION, NOT A REAL CASE",
+      "sha256": "7df92d5d73d66e0825b76a5ab81fbfca51631218cc0e600a690d821448b1705c"
+    },
+    {
+      "file": "V9_MG05_What_Changes_With_The_Setting.png",
+      "id": "MG05",
+      "label": null,
+      "sha256": "3c4840aec0536ecfb8d59f8994fb3c80a5c009269bdc67c197c2ac06ebb7cd76"
+    },
+    {
+      "file": "V9_MG06_Confirmed_Preferred_Unclear.png",
+      "id": "MG06",
+      "label": null,
+      "sha256": "173e40d9d9a29cda0e6d3926e8f58b0e1b64abf54dbd5506bccdd32b53c65767"
+    },
+    {
+      "file": "V9_MG07_A_Defensible_Introduction.png",
+      "id": "MG07",
+      "label": null,
+      "sha256": "e70006714ebf74ff719704deaf1a9364e071d8a5b8332134a2bf4a26f108add3"
+    },
+    {
+      "file": "V9_RESOURCE_Field_Kit.png",
+      "id": "RES",
+      "label": null,
+      "sha256": "8d6a5e4f0ba723097b0ab6ddc8e81ebaeb7df432c5b9139bace881901cf2d4f7"
+    },
+    {
+      "file": "V9_WATCH_NEXT_Before_A_Layoff.png",
+      "id": "WN",
+      "label": null,
+      "sha256": "581f367e6355d481ae34afe7d246bf5a5a7e4efe309efe14f1a96bd15e9e41a1"
+    }
+  ],
+  "not_verified_here": [
+    "actual spoken delivery",
+    "actual runtime",
+    "executed motion graphics",
+    "executed push-ins and pull-backs",
+    "actual B-roll placement",
+    "voice, music and effect balance",
+    "final picture quality",
+    "caption placement and subtitle sync",
+    "final YouTube chapters",
+    "final end-card hold and clean file ending",
+    "thumbnail artwork approval",
+    "verified public link accessibility"
+  ]
+}

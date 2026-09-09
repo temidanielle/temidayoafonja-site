@@ -1,0 +1,26 @@
+The Number Improved. The Work Did Not.
+Priority A
+On-screen hook: SYNTHETIC DATA
+Source section: DEMONSTRATION | Faster output, unfinished decision
+126 words; estimated 46 seconds. Estimate until recorded.
+
+FIRST SPOKEN LINE
+Here is a small synthetic service report. These are invented teaching numbers, not customer data.
+
+RECORDING SCRIPT
+
+Here is a small synthetic service report. These are invented teaching numbers, not customer data.
+In the first period, sixty out of a hundred cases met the target. In the second, eighty out of a hundred did.
+Sixty percent to eighty percent. The headline looks better.
+Now separate routine cases from complex cases.
+Routine cases met the target ninety percent of the time in both periods. Complex cases met it forty percent of the time in both periods.
+What changed was the mix. The second period had far more routine cases and fewer complex ones.
+So the overall number improved even though the within-category rates did not.
+The AI-assisted summary prepared for this example identifies that distinction. This is not a story about AI missing things.
+
+FINAL SPOKEN LINE
+This is not a story about AI missing things.
+
+VISUAL AND CAPTION: Full-screen data frames with the SYNTHETIC DATA and PREPARED AI-ASSISTED EXAMPLE label visible throughout, camera hidden. Do not show a product interface.
+OPTIONAL SOUND: One restrained accent on the mix reveal only.
+QUALIFICATIONS THAT MUST REMAIN: Every figure recomputed from the supplied CSV. A rise of twenty percentage points, not twenty percent relative growth. Do not stage an AI failure and do not claim a live benchmark.

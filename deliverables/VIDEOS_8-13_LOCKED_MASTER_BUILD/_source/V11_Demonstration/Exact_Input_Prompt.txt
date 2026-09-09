@@ -1,0 +1,7 @@
+Using only these four synthetic rows, summarize the aggregate target rate and the within-category rates in no more than four sentences. Distinguish what the table establishes from what would need more information. Do not recommend a staffing change. The categories and target definitions are held constant for this constructed illustration. No live employer data or empirical performance test is represented.
+
+period,case_type,eligible_cases,met_target
+Period 1,Routine,40,36
+Period 1,Complex,60,24
+Period 2,Routine,80,72
+Period 2,Complex,20,8

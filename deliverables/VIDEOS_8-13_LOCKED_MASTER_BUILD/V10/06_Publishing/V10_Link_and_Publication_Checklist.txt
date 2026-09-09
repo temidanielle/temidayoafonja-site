@@ -1,0 +1,83 @@
+==============================================================================
+LINK AND PUBLICATION CHECKLIST
+Video 10  ·  Before a Layoff, Know What You Can Still Prove
+==============================================================================
+
+  LOCKED TITLE
+    Before a Layoff, Know What You Can Still Prove
+
+  LOCKED THUMBNAIL WORDING
+    BEFORE ACCESS ENDS
+
+  RESOURCE, ONE ROUTE ONLY
+    Keep the Proof   https://temidayoafonja.com/keep-the-proof
+
+  WATCH NEXT
+    Video 11: AI Can Do the Task. What Are You Still Paid For?
+
+------------------------------------------------------------------------------
+BEFORE PUBLICATION
+------------------------------------------------------------------------------
+
+  [ ] Replace [ADD VIDEO 11 LINK] with the real URL. Do not construct one
+  from a guessed identifier.
+  [ ] Replace [ADD PLAYLIST URL] with the real playlist URL for Make Your
+  Next Move Without Starting Over. Do not assume an older shortened
+  identifier is correct.
+  [ ] Confirm the Watch Next destination is PUBLICLY ACCESSIBLE when this
+  video publishes. A scheduled destination that is still private is not
+  publicly accessible. If it is not public yet, flag the scheduling
+  dependency. Do not change the approved spoken handoff.
+  [ ] Confirm the resource URL resolves for a viewer.
+  [ ] Attach the approved thumbnail artwork. Artwork and portrait selection
+  are PENDING and were not created in this build.
+  [ ] Build chapters from the actual final export. None are supplied.
+  [ ] Add music attribution only if music is used, using the real track and
+  license. Never invent one.
+  [ ] Remove every placeholder and every internal note.
+
+------------------------------------------------------------------------------
+SUPERSEDED PACKAGING, RECORDED SO IT IS NOT RESTORED
+
+  VIDEO 9   Superseded primary title: Before You Change Industries, Know What
+            Still Counts
+            Current locked title: How to Change Industries Without Starting
+            Over
+
+  VIDEO 11  Superseded thumbnail: WHAT STILL NEEDS YOU?
+            Current locked thumbnail: THE TASK ISN'T THE JOB
+
+  VIDEO 12  Superseded thumbnail: STUCK FOR NOW?
+            Current locked thumbnail: WHAT CAN CHANGE NOW?
+
+None of the superseded lines is used as active packaging anywhere in this
+batch. They appear only in this change record and in the QA report, both of
+which exist to document the replacement.
+
+------------------------------------------------------------------------------
+INTERNAL PUBLISHING NOTES, DO NOT PASTE INTO YOUTUBE
+
+  NO CHAPTER TIMESTAMPS. Build chapters from the actual final export.
+
+  NO MUSIC ATTRIBUTION. Add a music credit only when the real track and license
+  from the finished project are known. Never invent one.
+
+  NO YOUTUBE VIDEO IDS OR PLAYLIST URLS ARE SUPPLIED. Every Watch Next link and
+  the playlist URL is a marked placeholder. Do not construct one from a guessed
+  identifier, and do not assume an older shortened playlist identifier is
+  correct.
+
+  PLAYLIST: Make Your Next Move Without Starting Over.
+
+  SCHEDULING DEPENDENCY. A Watch Next destination must be publicly accessible
+  to viewers when this video publishes. A scheduled destination that is still
+  private is not publicly accessible. If the destination is not yet public,
+  flag the scheduling dependency. Do not silently change the approved spoken
+  handoff.
+
+  ONE RESOURCE ROUTE PER VIDEO. Do not add unrelated offers, workshops, books,
+  or an extra spoken CTA.
+
+  REMOVE ALL PLACEHOLDERS AND THESE NOTES BEFORE PUBLICATION.
+
+==============================================================================

@@ -1,0 +1,5 @@
+period,case_type,eligible_cases,met_target
+Period 1,Routine,40,36
+Period 1,Complex,60,24
+Period 2,Routine,80,72
+Period 2,Complex,20,8

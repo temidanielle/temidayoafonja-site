@@ -1,0 +1,114 @@
+{
+  "video": 10,
+  "title": "Before a Layoff, Know What You Can Still Prove",
+  "locked_master": {
+    "filename": "Video_10_FINAL_Revised_Recording_Master.docx",
+    "sha256": "de604a08916cbd0ee1b416c56c79aaed648333d86a62333a4c91189b0cedc69c",
+    "copied_unchanged_into": "01_Recording_Master/Video_10_FINAL_Revised_Recording_Master.docx",
+    "spoken_section": "after RECORDING SCRIPT STARTS HERE and before END OF SPOKEN SCRIPT",
+    "spoken_paragraphs": 98,
+    "spoken_words": 1106
+  },
+  "packaging": {
+    "title": "Before a Layoff, Know What You Can Still Prove",
+    "thumbnail_wording": "BEFORE ACCESS ENDS",
+    "thumbnail_artwork": "PENDING. Not created in this build.",
+    "framework": "Capture the contribution. Qualify the claim. Make it retrievable.",
+    "resource": {
+      "name": "Keep the Proof",
+      "url": "https://temidayoafonja.com/keep-the-proof"
+    },
+    "watch_next": {
+      "video": 11,
+      "title": "AI Can Do the Task. What Are You Still Paid For?",
+      "url": null
+    },
+    "playlist": "Make Your Next Move Without Starting Over",
+    "playlist_url": null,
+    "printed_target": "Approximately 9:00 to 10:00",
+    "final_spoken_line": "Keep an account of your contribution, not a copy of your employer's files."
+  },
+  "runtime": {
+    "spoken_words": 1106,
+    "speech_only_estimate": "7:38 to 8:30 at 130 to 145 wpm",
+    "is_an_estimate_not_a_measurement": true
+  },
+  "secondary_reference_used": {
+    "archive": "Videos_8-13_Recording_and_Production_Components_v1.0.zip",
+    "used_for": "asset concepts and Shorts drafts only, each remapped to the locked master",
+    "not_used": [
+      "Recording_Master_v1.0_REVIEW files",
+      "Code_Build_Prompt_V8-V13.txt"
+    ]
+  },
+  "assets": [
+    {
+      "file": "V10_MG01_Access_Not_Experience.png",
+      "id": "MG01",
+      "label": null,
+      "sha256": "e51b2ccae4256bc944542801ab2b1c5e244c5b58ced05636142deb551c0ebb51"
+    },
+    {
+      "file": "V10_MG02_Preparation_Is_Not_Extraction.png",
+      "id": "MG02",
+      "label": null,
+      "sha256": "9403fb6b4c09e35db1308376b32b8319bfcc4f3d62c28595fd9205b3e9124f8c"
+    },
+    {
+      "file": "V10_MG03_Capture_Qualify_Retrieve.png",
+      "id": "MG03",
+      "label": null,
+      "sha256": "3774941181db512f618830b99f34c1a348aa57477a0c162782fca75ed0962d16"
+    },
+    {
+      "file": "V10_MG04_Calendar_Versus_Contribution.png",
+      "id": "MG04",
+      "label": "ILLUSTRATION, NOT A REAL CASE",
+      "sha256": "b6f819edc738a588061f65607d544934236d1d1b9467f5a5509deed29e4e5207"
+    },
+    {
+      "file": "V10_MG05_Confirmed_Qualified_Not_Verified.png",
+      "id": "MG05",
+      "label": null,
+      "sha256": "80d6a697728993427bf8229922e8502e6d460fb26b95032331fa81309c77832c"
+    },
+    {
+      "file": "V10_MG06_Name_It_By_The_Problem.png",
+      "id": "MG06",
+      "label": null,
+      "sha256": "7ef4cc0dbf81ebfa251f19ea7a357e9931f9975909b736bd62d65c4cd1c277bb"
+    },
+    {
+      "file": "V10_MG07_Two_Reasons_Evidence_Is_Thin.png",
+      "id": "MG07",
+      "label": null,
+      "sha256": "7871bb01401c541a0323034aa4885435c3852f3123fc2a87d1ec698678e633fc"
+    },
+    {
+      "file": "V10_RESOURCE_Keep_The_Proof.png",
+      "id": "RES",
+      "label": null,
+      "sha256": "977d7f788518eae7b0c3095f19df43098d8db058d6ea31175ab30da43aca9909"
+    },
+    {
+      "file": "V10_WATCH_NEXT_AI_Can_Do_The_Task.png",
+      "id": "WN",
+      "label": null,
+      "sha256": "05395b9e4a42f62d92678a30a647c9d46544469b9e180d5009d6e5e43fba586b"
+    }
+  ],
+  "not_verified_here": [
+    "actual spoken delivery",
+    "actual runtime",
+    "executed motion graphics",
+    "executed push-ins and pull-backs",
+    "actual B-roll placement",
+    "voice, music and effect balance",
+    "final picture quality",
+    "caption placement and subtitle sync",
+    "final YouTube chapters",
+    "final end-card hold and clean file ending",
+    "thumbnail artwork approval",
+    "verified public link accessibility"
+  ]
+}

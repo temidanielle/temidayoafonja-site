@@ -1,0 +1,176 @@
+==============================================================================
+QA REPORT
+Video 11  ·  AI Can Do the Task. What Are You Still Paid For?
+Built against Video_11_FINAL_Revised_Recording_Master.docx  ·  September 9, 2026 locked final Recording Masters
+==============================================================================
+
+Split deliberately. Section 1 is what can be checked now against the locked
+master and the built package. Section 2 is what cannot be checked until the
+recording and the export exist, and is therefore NOT claimed.
+
+This is a first build against the final masters. No earlier draft-bundle QA is
+reused as evidence that these packages are aligned, and the earlier script-
+approval-pending status does not apply: the scripts, titles and thumbnail
+wording are already approved.
+
+==============================================================================
+SECTION 1: PACKAGE CHECKS COMPLETED NOW
+==============================================================================
+
+20 checks run. 20 passed, 0 failed.
+
+  [PASS] Correct locked master used
+         Video_11_FINAL_Revised_Recording_Master.docx, SHA-256 adcf76
+         1a759437fc0679b7c255e6d6303f1b556dc3a9e54e89ccd55219b49e2b
+
+  [PASS] Original master copied unchanged
+         Byte-identical copy in 01_Recording_Master, verified by
+         SHA-256.
+
+  [PASS] Reading copy preserves the approved speech
+         112 of 112 spoken paragraphs reproduced. The reading copy is
+         generated from the locked file, so there is no transcription
+         step in which a line could drift.
+
+  [PASS] Exact current title and thumbnail wording
+         AI Can Do the Task. What Are You Still Paid For?  ·  THE
+         TASK ISN'T THE JOB
+
+  [PASS] Correct framework, resource and Watch Next routing
+         Produce. Interpret. Decide. Verify across all three.  ·
+         Capability Formation Field Kit  ·  Watch Next Video 12, What
+         to Do When You Can’t Quit Your Job Yet
+
+  [PASS] Every spoken trigger exists in the new script
+         All 9 asset triggers matched against the locked spoken copy.
+
+  [PASS] Illustrative and synthetic material labelled honestly
+         3 asset(s) carry a required on-screen label: SYNTHETIC DATA
+         ·  PREPARED AI-ASSISTED EXAMPLE, SYNTHETIC DATA  ·  PREPARED
+         AI-ASSISTED EXAMPLE, SYNTHETIC DATA  ·  PREPARED AI-ASSISTED
+         EXAMPLE. Every labelled frame renders the label as a full-
+         width stamp, not a footer.
+
+  [PASS] Asset dimensions correct
+         9 PNGs, sizes: 1920x1080
+
+  [PASS] Reference graphics readable at phone size
+         Geometry measured against the rendered DOM: zero overlaps,
+         nothing in the caption zone, nothing inside the safe edge.
+         Every frame was then rendered into a 390-point-wide contact
+         sheet in 03_Visuals and read at that size. Not declared from
+         code inspection.
+
+  [PASS] V11 calculations reproduce the supplied data
+         Recomputed from the CSV in this package: 60% to 80%, a rise
+         of 20 percentage points. Relative growth would be 33.3%,
+         which is why every asset says percentage points. Routine 90%
+         and complex 40% in both periods. Matches the supplied
+         Arithmetic_Check.json.
+
+  [PASS] Resource and Watch Next cards are separate and legible
+         Two separate assets, not one combined final slide. Both are
+         full-screen cards with the address or title at display size.
+
+  [PASS] Six dedicated Shorts, four A and two B, 25 to 60 seconds
+         A1 42s, A2 46s, A3 41s, A4 37s, B5 40s, B6 38s
+
+  [PASS] Source boundaries and qualifications intact
+         6 video-specific boundaries and 7 batch boundaries carried
+         into the run of show and the evidence notes.
+
+  [PASS] No conflicting old packaging on active surfaces
+         Checked: the superseded V11 thumbnail. Each may appear only
+         where it is recorded as superseded.
+
+  [PASS] No invented claims, quotations, speech or media provenance
+         Nothing was added to the spoken copy. Asset wording, Shorts
+         and publishing copy all trace to the locked master. No music
+         attribution, no YouTube video ID, no playlist URL and no
+         thumbnail artwork is supplied.
+
+  [PASS] U.S. English
+         Assets and every newly created package document swept. The
+         locked master is the source of truth and is not modified by
+         this check.
+
+  [PASS] No em dashes in new materials
+         Assets and every newly created document. The supplied master
+         is excluded because it is not ours to edit.
+
+  [PASS] No invented final chapters
+         No chapter timestamps anywhere.
+
+  [PASS] Deliverable completeness
+         All eight folders present and non-empty:
+         01_Recording_Master, 02_Recording, 03_Visuals, 04_Riverside,
+         05_Shorts, 06_Publishing, 07_Viewer_Exercise,
+         08_Sources_and_QA
+
+  [PASS] No interference with Videos 1 to 7
+         This batch writes only inside
+         VIDEOS_8-13_LOCKED_MASTER_BUILD. It uses the shared render
+         engine read-only and adds no parameter to it, so the V4 to
+         V7 packages render byte-identically. Verified separately in
+         the batch QA.
+
+==============================================================================
+SECTION 2: FINAL-EXPORT CHECKS STILL PENDING
+==============================================================================
+
+None of the following is verified. A written prompt is not proof that an
+effect exists in the finished video.
+
+  [PENDING] Actual spoken delivery
+            Whether the approved script was spoken as written. If
+            recorded speech differs materially from the master,
+            that is a mismatch to flag, not something the edit can
+            restore.
+
+  [PENDING] Actual runtime
+            The estimate here is arithmetic on the word count. The
+            real runtime comes from the export.
+
+  [PENDING] Executed motion graphics
+            Reveal states, sequential builds and hold behavior
+            exist only as instructions and reference frames.
+
+  [PENDING] Executed push-ins and pull-backs
+            Whether the finished edit lands within 3 to 5 camera-
+            emphasis beats.
+
+  [PENDING] Actual B-roll placement
+            Whether the 2 to 4 moments are meaningful and whether
+            any prohibited action was inadvertently depicted.
+
+  [PENDING] Voice, music and effect balance
+            Voice dominant, effects quieter, music subtle. Not
+            testable before the mix. Also whether the total lands
+            within 4 to 7 accents.
+
+  [PENDING] Final picture quality
+            Natural skin tone and texture, no beauty-filter look.
+
+  [PENDING] Caption placement and subtitle sync
+            That designed captions are suppressed during full-
+            screen scenes and that the SRT carries the complete
+            speech and matches the final edit.
+
+  [PENDING] Final YouTube chapters
+            Built from the finished export. None supplied.
+
+  [PENDING] Final end-card hold and clean file ending
+            Watch Next held through the final line, with no camera
+            return, outro, sting, black tail or music-only tail.
+
+  [PENDING] Thumbnail artwork approval
+            Wording is locked. Artwork and portrait selection are
+            PENDING and were not created in this build.
+
+  [PENDING] Verified public link accessibility
+            That the resource URL, the playlist and the Watch Next
+            destination are reachable by a viewer at publication.
+
+==============================================================================
+VIDEO 11: PRODUCTION PACKAGE BUILT AGAINST THE LOCKED FINAL MASTER
+==============================================================================

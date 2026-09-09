@@ -1,0 +1,55 @@
+==============================================================================
+ESTIMATED SPEECH TIMING
+Video 9  ·  How to Change Industries Without Starting Over
+==============================================================================
+
+RUNTIME: ESTIMATE ONLY, NOT A MEASUREMENT
+
+The figure below is arithmetic on the locked script's spoken word count at 130
+to 145 words per minute, the established band. Spoken words are counted
+separately from section headings, production labels and the closing instruction
+about not reading the line.
+
+It is speech only. It excludes holds on full-screen graphics, B-roll and every
+edit decision. It is NOT a timed read and NOT a finished runtime.
+
+Narration continuing underneath a graphic or B-roll OVERLAPS that visual. Do
+not add every visual's duration to speech time.
+
+The printed target on the master's cover is an expectation, not a measured
+finished length. Do not pad the script or slow delivery unnaturally to meet it.
+
+Final timing and YouTube chapters come from the actual final export.
+
+------------------------------------------------------------------------------
+THE NUMBERS
+------------------------------------------------------------------------------
+
+  Spoken words (script section only)   1153
+  At 145 words per minute              7:57
+  At 130 words per minute              8:52
+  Printed cover target                 Approximately 9:15 to 10:15
+
+The speech-only estimate is BELOW the printed cover target. That is expected
+and is not a defect: the printed target is an expectation set before the
+script was finalized, and the locked script is what it is. Do not restore
+removed material, pad the script, or slow the delivery to close the gap.
+
+Holds on full-screen graphics, B-roll and pauses will add to the finished
+runtime, but narration continuing underneath a visual overlaps it rather than
+adding to it. The finished runtime does not exist until the export does.
+
+------------------------------------------------------------------------------
+SECTION SHAPE
+------------------------------------------------------------------------------
+
+  HOOK | New field does not mean zero                   11 paragraphs   126 words
+  DEMONSTRATION | Same underlying work, different envi  14 paragraphs   175 words
+  1 | Capability: What underlying work can you prove?   15 paragraphs   179 words
+  2 | Context: What changes when the setting changes?   23 paragraphs   237 words
+  3 | Credentials: What is actually a gate?             13 paragraphs   130 words
+  PUT IT TOGETHER | A defensible introduction           14 paragraphs   163 words
+  ACTION AND RESOURCE                                   11 paragraphs    94 words
+  WATCH NEXT | Final visual                              3 paragraphs    49 words
+
+==============================================================================

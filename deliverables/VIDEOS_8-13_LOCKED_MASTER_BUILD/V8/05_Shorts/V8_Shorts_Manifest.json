@@ -1,0 +1,68 @@
+{
+  "video": 8,
+  "built_from": "Video_8_FINAL_Revised_Recording_Master.docx",
+  "priority_a": 4,
+  "priority_b": 2,
+  "shorts": [
+    {
+      "n": 1,
+      "priority": "A",
+      "title": "Now It Looks Easy",
+      "slug": "V8_Short_01_Now_It_Looks_Easy",
+      "source_section": "HOOK | When your hardest work becomes invisible",
+      "words": 119,
+      "estimated_seconds": 43.3,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 2,
+      "priority": "A",
+      "title": "Existence, Use, Effect",
+      "slug": "V8_Short_02_Existence_Use_Effect",
+      "source_section": "3 | Keep the proof",
+      "words": 88,
+      "estimated_seconds": 32.0,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 3,
+      "priority": "A",
+      "title": "The Four-Sentence Account",
+      "slug": "V8_Short_03_Four_Sentences",
+      "source_section": "ASSEMBLE | Four sentences",
+      "words": 93,
+      "estimated_seconds": 33.8,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 4,
+      "priority": "A",
+      "title": "It Was Chaos Is Not a Before",
+      "slug": "V8_Short_04_Reconstruct_The_Before",
+      "source_section": "1 | Reconstruct the before",
+      "words": 116,
+      "estimated_seconds": 42.2,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 5,
+      "priority": "B",
+      "title": "Show the Judgment",
+      "slug": "V8_Short_05_Show_The_Judgment",
+      "source_section": "2 | Show the judgment",
+      "words": 96,
+      "estimated_seconds": 34.9,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 6,
+      "priority": "B",
+      "title": "Where the Evidence Ends",
+      "slug": "V8_Short_06_Where_The_Evidence_Ends",
+      "source_section": "ASSEMBLE | Four sentences",
+      "words": 102,
+      "estimated_seconds": 37.1,
+      "duration_is_estimate_until_recorded": true
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+==============================================================================
+CURRENT-SCRIPT TRIGGER MAP
+Video 11  ·  AI Can Do the Task. What Are You Still Paid For?
+Built against Video_11_FINAL_Revised_Recording_Master.docx  ·  September 9, 2026 locked final Recording Masters
+==============================================================================
+
+Every trigger below is an exact sentence from the locked master. The build
+verifies this and fails if one is not found, so no card can be cued by a
+sentence that was removed.
+
+SPOKEN TRIGGERS cue a visual. EDITORIAL CUES are production decisions and are
+not lines to listen for. They are separated deliberately.
+
+------------------------------------------------------------------------------
+SPOKEN TRIGGERS
+------------------------------------------------------------------------------
+
+  MG01  V11_MG01_Can_We_Reduce_The_Team.png
+        mode:    TRUE FULL SCREEN
+        cue:     ““Does this mean we can reduce the team?””
+        in the locked script: YES
+        exit:    Cut back to camera for the reframe.
+
+  MG02  V11_MG02_The_Headline_Rate.png
+        mode:    TRUE FULL SCREEN
+        cue:     “Sixty percent to eighty percent.”
+        in the locked script: YES
+        exit:    Cut back to camera for the separation into categories.
+        label:   SYNTHETIC DATA  ·  PREPARED AI-ASSISTED EXAMPLE
+
+  MG03  V11_MG03_The_Mix_Changed.png
+        mode:    TRUE FULL SCREEN
+        cue:     “What changed was the mix. The second period had far more routine cases and fewer complex ones.”
+        in the locked script: YES
+        exit:    Cut back to camera for the AI-assisted summary passage.
+        label:   SYNTHETIC DATA  ·  PREPARED AI-ASSISTED EXAMPLE
+
+  MG04  V11_MG04_Produce_Interpret_Decide.png
+        mode:    TRUE FULL SCREEN
+        cue:     “Produce. Interpret. Decide.”
+        in the locked script: YES
+        exit:    Cut back to camera.
+
+  MG05  V11_MG05_What_It_Does_Not_Establish.png
+        mode:    TRUE FULL SCREEN
+        cue:     “It means this evidence does not settle that decision.”
+        in the locked script: YES
+        exit:    Cut back to camera for the questions to investigate.
+        label:   SYNTHETIC DATA  ·  PREPARED AI-ASSISTED EXAMPLE
+
+  MG06  V11_MG06_Who_Owns_The_Consequence.png
+        mode:    TRUE FULL SCREEN
+        cue:     “It is a decision process.”
+        in the locked script: YES
+        exit:    Cut back to camera for the do-not-take-responsibility line.
+
+  MG07  V11_MG07_Map_Your_Role.png
+        mode:    TRUE FULL SCREEN
+        cue:     “Then put a verification question under each.”
+        in the locked script: YES
+        exit:    Cut back to camera for the honest-map passage.
+
+  RES   V11_RESOURCE_Field_Kit.png
+        mode:    TRUE FULL SCREEN
+        cue:     “The Capability Formation Field Kit is linked below for a broader read of what your current work is building and where your options may be expanding or narrowing.”
+        in the locked script: YES
+        exit:    Cut back to camera for the closing line.
+
+  WN    V11_WATCH_NEXT_Cant_Quit_Yet.png
+        mode:    TRUE FULL SCREEN, FINAL
+        cue:     “Watch “What to Do When You Can’t Quit Your Job Yet” next.”
+        in the locked script: YES
+        exit:    NONE. Final visual. No camera return, no outro.
+
+------------------------------------------------------------------------------
+EDITORIAL CUES, NOT SPOKEN TRIGGERS
+------------------------------------------------------------------------------
+
+These are camera, B-roll and pacing decisions taken from the script's
+structure. Do not treat any of them as a sentence to wait for.
+
+  Self-introduction. Temidayo introduces herself partway through, after the
+demonstration. Stay on camera. No graphic over it.
+
+  Section transitions. The hero framework card may return briefly at each
+section change, for about three seconds. That is an editorial decision, not a
+separate spoken cue.
+
+  Subscribe cue. Visual only, placed after the case-mix explanation lands,
+once back on camera. It adds no spoken dialogue.
+
+  B-roll. Two to four meaningful full-screen moments where useful, not a
+quota, and never depicting an action the script prohibits.
+
+==============================================================================
+END
+==============================================================================

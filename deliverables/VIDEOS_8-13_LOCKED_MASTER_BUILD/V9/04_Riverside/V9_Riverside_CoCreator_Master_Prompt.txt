@@ -1,0 +1,335 @@
+==============================================================================
+RIVERSIDE CO-CREATOR MASTER PROMPT
+Video 9  ·  How to Change Industries Without Starting Over
+Built against Video_9_FINAL_Revised_Recording_Master.docx  ·  September 9, 2026 locked final Recording Masters
+==============================================================================
+
+Self-contained. Paste the whole file. It assumes no previous conversation and
+no existing graphics.
+
+------------------------------------------------------------------------------
+MASTER PROMPT
+------------------------------------------------------------------------------
+
+I am giving you a NEW RECORDING. Create the visual and audio editing layer
+from this recording and its transcript. Do not look for existing graphics to
+convert, and do not assume any earlier version of this video exists.
+
+The approved Recording Master controls INTENDED MEANING. The actual recorded
+performance controls EDIT TIMING.
+
+If the recorded speech materially differs from the approved master, flag the
+mismatch and tell me which lines differ. Never manufacture missing speech, and
+never generate or synthesize audio I did not record.
+
+CAMERA-LED FORMAT
+
+Horizontal 16:9, exported at least 1920 x 1080.
+
+Clean false starts, unnecessary repetitions, and accidental waiting footage.
+
+Preserve useful pauses, natural rhythm, complete explanations, and the full ending. Do not over-shorten the teaching.
+
+TRUE FULL-SCREEN SCENES
+
+Frameworks, comparisons, multi-point teaching, substantive B-roll, the resource card and Watch Next must fill the entire canvas.
+
+Completely hide Temidayo visually during those scenes while her voice continues.
+
+  - no moving Temidayo behind or around the visual
+  - no smaller rectangle floating over her camera footage
+  - no transparent background revealing her behind a major graphic
+
+Use an opaque full-frame scene where necessary.
+
+Only short single-idea callouts and the restrained Subscribe cue may appear over camera.
+
+RETURN TO CAMERA
+
+Return only where the individual scene map calls for it.
+
+This instruction NEVER applies to Watch Next.
+
+Watch Next is final, with no camera return.
+
+MOBILE LEGIBILITY
+
+Use large bold typography, high contrast, short phrases, and sequential reveals.
+
+Use navy #112345, warm cream, and selective gold or yellow emphasis.
+
+Do not use tiny explanatory labels, dense grids, essential footer text, or long paragraphs inside small boxes.
+
+Keep evidence qualifications and illustration labels readable. Where a frame carries a SYNTHETIC DATA, PREPARED AI-ASSISTED EXAMPLE, ILLUSTRATION or WORK SAMPLE label, that label is part of the teaching and must stay legible at phone size.
+
+The headline should register quickly. Detailed comparisons need enough time to read.
+
+Split the visual instead of shrinking important information.
+
+ZOOM-INS AND ZOOM-OUTS
+
+Use approximately 3 to 5 deliberate camera-emphasis beats across the ENTIRE long-form video.
+
+Use gentle push-ins on insight, tension, or a reframe. Use occasional pull-backs, or a return to base framing, to reset the viewer's eye.
+
+This is ONE COMBINED camera-motion budget. It is not punch-ins plus an additional zoom quota.
+
+Keep movement smooth, minimal, and intentional. Preserve headroom and source quality.
+
+No aggressive crops, pulsing, or constant movement.
+
+B-ROLL
+
+Use approximately 2 to 4 meaningful full-screen moments where useful, not as a quota.
+
+Avoid generic handshakes, fake boardrooms, meaningless typing, AI-looking people, or private-looking documents presented as authentic.
+
+Motion graphics should do the main visual teaching.
+
+ONE VISUAL SUBSCRIBE CUE
+
+Add one brief, readable branded Subscribe cue after the first meaningful payoff, ideally once back on camera.
+
+It is VISUAL ONLY. Do not add spoken dialogue and do not modify the recording script for it.
+
+Allow about 2 to 3 seconds including its entrance and exit. Use a restrained fade, slide, or gentle scale with one quiet accent.
+
+Do not interrupt a useful pause or cover teaching text.
+
+SOUND BUDGET
+
+Use approximately 4 to 7 restrained sound accents TOTAL per long-form video, INCLUDING the Subscribe cue.
+
+Per-scene sound suggestions in the scene map are OPTIONAL CANDIDATES, not cumulative instructions. Do not add a sound to every question, item, caption, cut, or reveal. Adding up the per-scene suggestions would exceed the budget on its own. The budget wins.
+
+Select the strongest moments. Use soft whooshes, quiet clicks, gentle pops, or restrained sweeps where appropriate.
+
+Keep effects clearly quieter than the voice.
+
+MUSIC AND VOICE
+
+Voice remains clear and dominant. Keep music subtle.
+
+Do not over-compress, and do not compensate for quiet speech by making effects louder.
+
+Use real licensed music only where available. NEVER invent a track name, attribution, or license code.
+
+PICTURE
+
+Preserve natural skin tone and texture.
+
+Use modest exposure, white-balance, contrast, clarity, sharpness, and noise correction where supported.
+
+No beauty-filter look, no artificial face brightening, no heavy smoothing.
+
+CAPTIONS
+
+Keep normal on-camera captions clean.
+
+Suppress competing designed or burned-in captions during major graphics, B-roll, the resource card, and Watch Next.
+
+Do not delete the audio or the transcript words in order to hide a visual caption.
+
+A separate SRT must include the COMPLETE speech and must match the actual final edit.
+
+ENDING
+
+Preserve the complete resource mention, the Watch Next handoff, and the exact final spoken line.
+
+Watch Next is the final full-screen visual. Reserve a clean area for the clickable video element.
+
+No camera return, extra outro, unrelated sting, black tail, music-only tail, or unused footage afterward.
+
+Keep a purposeful final-card hold and a natural final 1 to 2 second music fade where appropriate.
+
+Do not blindly cut at the final word if that destroys the planned ending.
+
+If a required closing line was never recorded, flag a pickup. Do not invent it.
+
+UNSUPPORTED OPERATIONS
+
+If a requested operation cannot be performed automatically, identify the specific manual step or the supplied-asset fallback.
+
+Do not claim the effect was executed merely because this prompt requests it.
+
+Known fallbacks:
+  - if a reveal state cannot be animated separately, hold the supplied
+    reference PNG full frame for longer rather than shrinking the type
+  - if the camera cannot be hidden for a scene, cut to the supplied reference
+    PNG full frame for the hold rather than placing the graphic over footage
+  - if captions cannot be suppressed per scene, move them clear of the designed
+    text rather than letting them overlap it
+
+SUBSCRIBE CUE PLACEMENT FOR THIS VIDEO
+
+Place the single visual Subscribe cue after the two mistakes are named and the
+framework arrives, once back on camera.
+
+THE ENDING FOR THIS VIDEO
+
+Resource: Capability Formation Field Kit, https://temidayoafonja.com/fieldkit.
+Watch Next: Video 10, Before a Layoff, Know What You Can Still Prove. This is
+the final full-screen visual.
+The exact final spoken line is: “Being new to an industry is not the same as
+being new to every problem inside it.”
+Nothing follows it. No camera return, no outro, no sting, no black tail, no
+music-only tail.
+
+------------------------------------------------------------------------------
+PER-SCENE INSTRUCTIONS
+------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------
+MG01   V9_MG01_Direct_Industry_Experience.png
+------------------------------------------------------------------------------
+
+  "Use this image when I say: ““Direct industry experience required.”” HIDE
+  OR REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This image must be the
+  only visual filling the entire 16:9 canvas. Do not place it in a box over
+  my camera footage and do not leave me visible behind it or around the
+  edges.  Reveal order: Quoted line alone for 1.6s. Support line at 2.2s.
+  Hold for 6 to 7 seconds.. If you cannot hold a reveal state as described,
+  hold the whole frame longer rather than shrinking the type. Cut back to
+  camera for the two mistakes. Suppress."
+
+------------------------------------------------------------------------------
+MG02   V9_MG02_Two_Mistakes.png
+------------------------------------------------------------------------------
+
+  "Use this image when I say: “So do not make either mistake.” HIDE OR
+  REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This image must be the only
+  visual filling the entire 16:9 canvas. Do not place it in a box over my
+  camera footage and do not leave me visible behind it or around the edges.
+  Reveal order: Left column on the first mistake, right column on the
+  second. Closing line at 3.4s. Hold for 9 to 10 seconds.. If you cannot
+  hold a reveal state as described, hold the whole frame longer rather than
+  shrinking the type. Cut back to camera for the framework. Suppress."
+
+------------------------------------------------------------------------------
+MG03   V9_MG03_Capability_Context_Credentials.png
+------------------------------------------------------------------------------
+
+  "Use this image when I say: “Capability. Context. Credentials.” HIDE OR
+  REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This image must be the only
+  visual filling the entire 16:9 canvas. Do not place it in a box over my
+  camera footage and do not leave me visible behind it or around the edges.
+  Reveal order: One word at a time, 0.9s apart. Closing line at 3.2s. Hold
+  the complete set. Hold for 9 to 11 seconds first time, 3 seconds on each
+  return.. If you cannot hold a reveal state as described, hold the whole
+  frame longer rather than shrinking the type. Cut back to camera.
+  Suppress."
+
+------------------------------------------------------------------------------
+MG04   V9_MG04_Same_Verb_Different_Work.png
+------------------------------------------------------------------------------
+
+  "Use this image when I say: ““Approve” can mean checking a routine item in
+  one role and accepting a consequential risk in another.” HIDE OR REMOVE
+  THE CAMERA VISUALLY DURING THIS SCENE. This image must be the only visual
+  filling the entire 16:9 canvas. Do not place it in a box over my camera
+  footage and do not leave me visible behind it or around the edges.   The
+  supplied image carries a required label: ILLUSTRATION, NOT A REAL CASE.
+  Keep it readable at phone size and do not crop it out. Reveal order: Left
+  column first, 1.6s. Right column with the weight. Closing line at 3.6s.
+  Hold for 9 to 10 seconds.. If you cannot hold a reveal state as described,
+  hold the whole frame longer rather than shrinking the type. Cut back to
+  camera for the capability sentence. Suppress."
+
+------------------------------------------------------------------------------
+MG05   V9_MG05_What_Changes_With_The_Setting.png
+------------------------------------------------------------------------------
+
+  "Use this image when I say: “Look at the unfamiliar elements:” HIDE OR
+  REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This image must be the only
+  visual filling the entire 16:9 canvas. Do not place it in a box over my
+  camera footage and do not leave me visible behind it or around the edges.
+  Reveal order: Two at a time, 1.0s apart, then the closing line. Do not
+  reveal six separate states. Hold for 10 to 11 seconds. Six items need real
+  reading time.. If you cannot hold a reveal state as described, hold the
+  whole frame longer rather than shrinking the type. Cut back to camera for
+  the better question to ask. Suppress."
+
+------------------------------------------------------------------------------
+MG06   V9_MG06_Confirmed_Preferred_Unclear.png
+------------------------------------------------------------------------------
+
+  "Use this image when I say: “Write down:” HIDE OR REMOVE THE CAMERA
+  VISUALLY DURING THIS SCENE. This image must be the only visual filling the
+  entire 16:9 canvas. Do not place it in a box over my camera footage and do
+  not leave me visible behind it or around the edges.  Reveal order: One row
+  at a time, 1.1s apart. Closing line after a beat, at display weight. Hold
+  for 10 to 11 seconds.. If you cannot hold a reveal state as described,
+  hold the whole frame longer rather than shrinking the type. Cut back to
+  camera for the defensible introduction. Suppress."
+
+------------------------------------------------------------------------------
+MG07   V9_MG07_A_Defensible_Introduction.png
+------------------------------------------------------------------------------
+
+  "Use this image when I say: “It shows the shape of the decision:” HIDE OR
+  REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This image must be the only
+  visual filling the entire 16:9 canvas. Do not place it in a box over my
+  camera footage and do not leave me visible behind it or around the edges.
+  Reveal order: One at a time, 1.0s apart. Closing line at 3.4s. Hold for 9
+  to 10 seconds.. If you cannot hold a reveal state as described, hold the
+  whole frame longer rather than shrinking the type. Cut back to camera for
+  the tradeoff questions. Suppress."
+
+------------------------------------------------------------------------------
+RES   V9_RESOURCE_Field_Kit.png
+------------------------------------------------------------------------------
+
+  "Use this image when I say: “The Capability Formation Field Kit is linked
+  below for a broader evidence-led read of what your current work is
+  building and what you may be able to carry.” HIDE OR REMOVE THE CAMERA
+  VISUALLY DURING THIS SCENE. This image must be the only visual filling the
+  entire 16:9 canvas. Do not place it in a box over my camera footage and do
+  not leave me visible behind it or around the edges.  Reveal order:
+  Logomark, headline at 0.6s, URL at 2.0s. Hold for 8 to 9 seconds.. If you
+  cannot hold a reveal state as described, hold the whole frame longer
+  rather than shrinking the type. Cut back to camera for the Watch Next
+  bridge. Suppress. Never cover the address."
+
+------------------------------------------------------------------------------
+WN   V9_WATCH_NEXT_Before_A_Layoff.png
+------------------------------------------------------------------------------
+
+  "Use this image when I say: “Watch “Before a Layoff, Know What You Can
+  Still Prove” next.” HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS SCENE.
+  This image must be the only visual filling the entire 16:9 canvas. Do not
+  place it in a box over my camera footage and do not leave me visible
+  behind it or around the edges.  Reveal order: Static. Hold for 10 to 14
+  seconds, through the final spoken line and the closing hold.. If you
+  cannot hold a reveal state as described, hold the whole frame longer
+  rather than shrinking the type. This is the FINAL visual of the video. Do
+  not cut back to me after it. Reserve a clean area for the clickable video
+  element. Suppress."
+
+------------------------------------------------------------------------------
+CAMERA, SOUND, CAPTION AND ENDING PLAN
+------------------------------------------------------------------------------
+
+  CAMERA EMPHASIS
+    3 to 5 deliberate beats across the entire video, one combined budget.
+    Suggested anchors: the opening tension, the framework arriving, the
+    central distinction, and the closing line. Choose from these, do not
+    use all of them plus more.
+
+  SOUND
+    4 to 7 restrained accents in total including the Subscribe cue. The
+    per-scene candidates above add up to more than that on purpose, so
+    choose the strongest and leave the rest silent.
+
+  CAPTIONS
+    Clean on-camera captions. Suppressed or moved clear during every full-
+    screen scene listed above. The separate SRT must carry the complete
+    speech and match the final edit.
+
+  ENDING
+    Resource card, then the Watch Next card as the final visual, held
+    through the final spoken line and a purposeful closing beat, with a
+    natural 1 to 2 second music fade where appropriate.
+
+==============================================================================
+END
+==============================================================================

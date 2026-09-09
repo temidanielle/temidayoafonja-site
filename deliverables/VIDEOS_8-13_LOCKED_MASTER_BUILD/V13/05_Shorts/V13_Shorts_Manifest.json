@@ -1,0 +1,68 @@
+{
+  "video": 13,
+  "built_from": "Video_13_FINAL_Revised_Recording_Master.docx",
+  "priority_a": 4,
+  "priority_b": 2,
+  "shorts": [
+    {
+      "n": 1,
+      "priority": "A",
+      "title": "Stop Collecting Career Activity",
+      "slug": "V13_Short_01_Stop_Collecting_Activity",
+      "source_section": "HOOK | Stop collecting career activity",
+      "words": 126,
+      "estimated_seconds": 45.8,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 2,
+      "priority": "A",
+      "title": "One Destination, One Hypothesis",
+      "slug": "V13_Short_02_One_Destination_One_Hypothesis",
+      "source_section": "SETUP | One destination, one hypothesis",
+      "words": 114,
+      "estimated_seconds": 41.5,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 3,
+      "priority": "A",
+      "title": "Ask About the Work, Not Your Potential",
+      "slug": "V13_Short_03_Ask_About_The_Work",
+      "source_section": "DAYS 8-14 | Investigate with people who know the work",
+      "words": 110,
+      "estimated_seconds": 40.0,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 4,
+      "priority": "A",
+      "title": "Continue, Modify, or Stop",
+      "slug": "V13_Short_04_Continue_Modify_Stop",
+      "source_section": "DAYS 22-30 | Decide from the evidence",
+      "words": 131,
+      "estimated_seconds": 47.6,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 5,
+      "priority": "B",
+      "title": "A Work Sample Is Not Experience",
+      "slug": "V13_Short_05_A_Work_Sample_Not_Experience",
+      "source_section": "DAYS 15-21 | Try one bounded piece",
+      "words": 128,
+      "estimated_seconds": 46.5,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 6,
+      "priority": "B",
+      "title": "Do Not Confuse Effort With Evidence",
+      "slug": "V13_Short_06_Do_Not_Confuse_Effort_With_Evidence",
+      "source_section": "THE EVIDENCE STANDARD | What the month can prove",
+      "words": 118,
+      "estimated_seconds": 42.9,
+      "duration_is_estimate_until_recorded": true
+    }
+  ]
+}

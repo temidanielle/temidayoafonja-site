@@ -1,0 +1,100 @@
+==============================================================================
+SOURCE-TO-PRODUCTION ALIGNMENT LOG
+Video 12  ·  What to Do When You Can’t Quit Your Job Yet
+==============================================================================
+
+How the locked master became this package, and what was taken from the earlier
+Attachment B components.
+
+------------------------------------------------------------------------------
+SOURCE
+------------------------------------------------------------------------------
+
+  Primary   Video_12_FINAL_Revised_Recording_Master.docx
+  SHA-256   f9e5316370edbc6e0029382cdc4fd086fb2e0241ee9097d5ba8f2e4e00f26807
+  Secondary Videos_8-13_Recording_and_Production_Components_v1.0.zip
+
+  The Recording_Master_v1.0_REVIEW files in the secondary archive are NOT
+  current spoken sources and were not used. Code_Build_Prompt_V8-V13.txt was
+  not executed as a second instruction set.
+
+------------------------------------------------------------------------------
+WHAT CAME FROM THE EARLIER COMPONENTS
+------------------------------------------------------------------------------
+
+  MG01  CONSTRAINT, from the Attachment B spec. The distinction the whole
+video runs on.
+
+  MG02  New. The script puts safety before the career exercise and the
+Attachment B set had no dedicated frame for it.
+
+  MG03  New hero framework card.
+
+  MG04  PROTECT, from the Attachment B spec, using the script's own sentence
+stem.
+
+  MG05  PRIORITY, from the Attachment B spec, using the script's own two
+versions.
+
+  MG06  PREPARE, from the Attachment B spec, using the script's own
+comparison.
+
+  MG07  FOUR_LINES, from the Attachment B spec. The deliverable.
+
+  RES   Separate resource card.
+
+  WN    Separate Watch Next card. Final visual.
+
+------------------------------------------------------------------------------
+SHORTS
+------------------------------------------------------------------------------
+
+  A1  Uses the current thumbnail direction WHAT CAN CHANGE NOW?, not the
+superseded STUCK FOR NOW?
+
+  A2  Private exercise. Nothing asks the viewer to disclose the answer.
+
+  A3  The safety caveat is not optional. Negotiation is not presented as
+always safe or effective.
+
+  A4  The limited-capacity permission is kept. Rest is a legitimate response.
+
+  B5  No side-hustle or constant-networking framing.
+
+  B6  Closes on the long-form final spoken line. Rest is kept as a legitimate
+response.
+
+------------------------------------------------------------------------------
+PACKAGING CORRECTIONS
+------------------------------------------------------------------------------
+
+SUPERSEDED PACKAGING, RECORDED SO IT IS NOT RESTORED
+
+  VIDEO 9   Superseded primary title: Before You Change Industries, Know What
+            Still Counts
+            Current locked title: How to Change Industries Without Starting
+            Over
+
+  VIDEO 11  Superseded thumbnail: WHAT STILL NEEDS YOU?
+            Current locked thumbnail: THE TASK ISN'T THE JOB
+
+  VIDEO 12  Superseded thumbnail: STUCK FOR NOW?
+            Current locked thumbnail: WHAT CAN CHANGE NOW?
+
+None of the superseded lines is used as active packaging anywhere in this
+batch. They appear only in this change record and in the QA report, both of
+which exist to document the replacement.
+
+------------------------------------------------------------------------------
+WHAT WAS NOT CARRIED OVER
+------------------------------------------------------------------------------
+
+No rendered artwork. No prior rendered V8 to V13 asset exists, so every PNG in
+this package is a new build from a reusable concept, not a byte-identical
+reuse. The earlier asset specifications were proposed build specifications,
+not finished graphics, and are not presented as such.
+
+No draft script. The superseded review masters are not packaged anywhere in
+this batch, and no old draft sits in an active recording folder.
+
+==============================================================================

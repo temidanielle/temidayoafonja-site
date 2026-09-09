@@ -1,0 +1,95 @@
+==============================================================================
+CURRENT-SCRIPT TRIGGER MAP
+Video 9  ·  How to Change Industries Without Starting Over
+Built against Video_9_FINAL_Revised_Recording_Master.docx  ·  September 9, 2026 locked final Recording Masters
+==============================================================================
+
+Every trigger below is an exact sentence from the locked master. The build
+verifies this and fails if one is not found, so no card can be cued by a
+sentence that was removed.
+
+SPOKEN TRIGGERS cue a visual. EDITORIAL CUES are production decisions and are
+not lines to listen for. They are separated deliberately.
+
+------------------------------------------------------------------------------
+SPOKEN TRIGGERS
+------------------------------------------------------------------------------
+
+  MG01  V9_MG01_Direct_Industry_Experience.png
+        mode:    TRUE FULL SCREEN
+        cue:     ““Direct industry experience required.””
+        in the locked script: YES
+        exit:    Cut back to camera for the two mistakes.
+
+  MG02  V9_MG02_Two_Mistakes.png
+        mode:    TRUE FULL SCREEN
+        cue:     “So do not make either mistake.”
+        in the locked script: YES
+        exit:    Cut back to camera for the framework.
+
+  MG03  V9_MG03_Capability_Context_Credentials.png
+        mode:    TRUE FULL SCREEN
+        cue:     “Capability. Context. Credentials.”
+        in the locked script: YES
+        exit:    Cut back to camera.
+
+  MG04  V9_MG04_Same_Verb_Different_Work.png
+        mode:    TRUE FULL SCREEN
+        cue:     ““Approve” can mean checking a routine item in one role and accepting a consequential risk in another.”
+        in the locked script: YES
+        exit:    Cut back to camera for the capability sentence.
+        label:   ILLUSTRATION, NOT A REAL CASE
+
+  MG05  V9_MG05_What_Changes_With_The_Setting.png
+        mode:    TRUE FULL SCREEN
+        cue:     “Look at the unfamiliar elements:”
+        in the locked script: YES
+        exit:    Cut back to camera for the better question to ask.
+
+  MG06  V9_MG06_Confirmed_Preferred_Unclear.png
+        mode:    TRUE FULL SCREEN
+        cue:     “Write down:”
+        in the locked script: YES
+        exit:    Cut back to camera for the defensible introduction.
+
+  MG07  V9_MG07_A_Defensible_Introduction.png
+        mode:    TRUE FULL SCREEN
+        cue:     “It shows the shape of the decision:”
+        in the locked script: YES
+        exit:    Cut back to camera for the tradeoff questions.
+
+  RES   V9_RESOURCE_Field_Kit.png
+        mode:    TRUE FULL SCREEN
+        cue:     “The Capability Formation Field Kit is linked below for a broader evidence-led read of what your current work is building and what you may be able to carry.”
+        in the locked script: YES
+        exit:    Cut back to camera for the Watch Next bridge.
+
+  WN    V9_WATCH_NEXT_Before_A_Layoff.png
+        mode:    TRUE FULL SCREEN, FINAL
+        cue:     “Watch “Before a Layoff, Know What You Can Still Prove” next.”
+        in the locked script: YES
+        exit:    NONE. Final visual. No camera return, no outro.
+
+------------------------------------------------------------------------------
+EDITORIAL CUES, NOT SPOKEN TRIGGERS
+------------------------------------------------------------------------------
+
+These are camera, B-roll and pacing decisions taken from the script's
+structure. Do not treat any of them as a sentence to wait for.
+
+  Self-introduction. Temidayo introduces herself partway through, after the
+demonstration. Stay on camera. No graphic over it.
+
+  Section transitions. The hero framework card may return briefly at each
+section change, for about three seconds. That is an editorial decision, not a
+separate spoken cue.
+
+  Subscribe cue. Visual only, placed after the two mistakes are named and the
+framework arrives, once back on camera. It adds no spoken dialogue.
+
+  B-roll. Two to four meaningful full-screen moments where useful, not a
+quota, and never depicting an action the script prohibits.
+
+==============================================================================
+END
+==============================================================================

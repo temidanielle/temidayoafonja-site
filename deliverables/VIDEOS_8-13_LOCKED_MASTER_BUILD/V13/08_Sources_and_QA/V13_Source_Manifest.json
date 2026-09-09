@@ -1,0 +1,114 @@
+{
+  "video": 13,
+  "title": "A 30-Day Plan to Test Your Next Career Move",
+  "locked_master": {
+    "filename": "Video_13_FINAL_Revised_Recording_Master.docx",
+    "sha256": "f80d7d2afcb6f30081e7d860ad790a527ac5845c87e633312dd410e3df12dbc8",
+    "copied_unchanged_into": "01_Recording_Master/Video_13_FINAL_Revised_Recording_Master.docx",
+    "spoken_section": "after RECORDING SCRIPT STARTS HERE and before END OF SPOKEN SCRIPT",
+    "spoken_paragraphs": 125,
+    "spoken_words": 1274
+  },
+  "packaging": {
+    "title": "A 30-Day Plan to Test Your Next Career Move",
+    "thumbnail_wording": "TEST BEFORE YOU QUIT",
+    "thumbnail_artwork": "PENDING. Not created in this build.",
+    "framework": "Define. Investigate. Try. Decide.",
+    "resource": {
+      "name": "Capability Formation Field Kit",
+      "url": "https://temidayoafonja.com/fieldkit"
+    },
+    "watch_next": {
+      "video": 9,
+      "title": "How to Change Industries Without Starting Over",
+      "url": null
+    },
+    "playlist": "Make Your Next Move Without Starting Over",
+    "playlist_url": null,
+    "printed_target": "Approximately 9:45 to 10:45",
+    "final_spoken_line": "The best outcome of a test is a clearer decision, not necessarily the decision you hoped for."
+  },
+  "runtime": {
+    "spoken_words": 1274,
+    "speech_only_estimate": "8:47 to 9:48 at 130 to 145 wpm",
+    "is_an_estimate_not_a_measurement": true
+  },
+  "secondary_reference_used": {
+    "archive": "Videos_8-13_Recording_and_Production_Components_v1.0.zip",
+    "used_for": "asset concepts and Shorts drafts only, each remapped to the locked master",
+    "not_used": [
+      "Recording_Master_v1.0_REVIEW files",
+      "Code_Build_Prompt_V8-V13.txt"
+    ]
+  },
+  "assets": [
+    {
+      "file": "V13_MG01_Activity_Is_Not_A_Decision.png",
+      "id": "MG01",
+      "label": null,
+      "sha256": "20300f7ebfe63f5e6b74ef96e3691fc9781e3aa9c6b025aa7d7b7c42fa758525"
+    },
+    {
+      "file": "V13_MG02_Define_Investigate_Try_Decide.png",
+      "id": "MG02",
+      "label": null,
+      "sha256": "76ac633ce4cafc130057d3eda4d374202c8654e95e61b4a0cda50fb7b174e95d"
+    },
+    {
+      "file": "V13_MG03_One_Destination_One_Hypothesis.png",
+      "id": "MG03",
+      "label": "ILLUSTRATION, NOT A REAL CASE",
+      "sha256": "67d7961b79591e272c454be4b42e4f980fdf15593a7cbf01bbfac11edffd6836"
+    },
+    {
+      "file": "V13_MG04_Days_1_7_Define.png",
+      "id": "MG04",
+      "label": null,
+      "sha256": "93443ec453046e45f28af7c740250444f2dfa1502f5228decec5b66b883be1e7"
+    },
+    {
+      "file": "V13_MG05_Days_8_14_Investigate.png",
+      "id": "MG05",
+      "label": null,
+      "sha256": "53c038622a83ee8dfb2ea1dd9e45c93abe1ba0097c37b424e3638d446c407f84"
+    },
+    {
+      "file": "V13_MG06_Days_15_21_Work_Sample.png",
+      "id": "MG06",
+      "label": "A WORK SAMPLE, NOT PROFESSIONAL EXPERIENCE",
+      "sha256": "c9d968c3005f865d5c7ab4f4580b629180ee52856d53282d9ff4d6df10fa6e72"
+    },
+    {
+      "file": "V13_MG07_Continue_Modify_Stop.png",
+      "id": "MG07",
+      "label": null,
+      "sha256": "73da0d74c864f66760784ea942bc9051101c0dffd7696140d0523f7b48ec5159"
+    },
+    {
+      "file": "V13_RESOURCE_Field_Kit.png",
+      "id": "RES",
+      "label": null,
+      "sha256": "616ca3149a2465887575fc66b4142afc2b6a56c1d39af16ff4df66778a399780"
+    },
+    {
+      "file": "V13_WATCH_NEXT_Change_Industries.png",
+      "id": "WN",
+      "label": null,
+      "sha256": "fdcb0d05828f03ac50ad3252f3ad77fdac0f54f59a2970362691dd0fd59f92d5"
+    }
+  ],
+  "not_verified_here": [
+    "actual spoken delivery",
+    "actual runtime",
+    "executed motion graphics",
+    "executed push-ins and pull-backs",
+    "actual B-roll placement",
+    "voice, music and effect balance",
+    "final picture quality",
+    "caption placement and subtitle sync",
+    "final YouTube chapters",
+    "final end-card hold and clean file ending",
+    "thumbnail artwork approval",
+    "verified public link accessibility"
+  ]
+}

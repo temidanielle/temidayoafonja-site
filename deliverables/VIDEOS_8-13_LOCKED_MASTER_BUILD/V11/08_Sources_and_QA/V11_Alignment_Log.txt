@@ -1,0 +1,101 @@
+==============================================================================
+SOURCE-TO-PRODUCTION ALIGNMENT LOG
+Video 11  ·  AI Can Do the Task. What Are You Still Paid For?
+==============================================================================
+
+How the locked master became this package, and what was taken from the earlier
+Attachment B components.
+
+------------------------------------------------------------------------------
+SOURCE
+------------------------------------------------------------------------------
+
+  Primary   Video_11_FINAL_Revised_Recording_Master.docx
+  SHA-256   adcf761a759437fc0679b7c255e6d6303f1b556dc3a9e54e89ccd55219b49e2b
+  Secondary Videos_8-13_Recording_and_Production_Components_v1.0.zip
+
+  The Recording_Master_v1.0_REVIEW files in the secondary archive are NOT
+  current spoken sources and were not used. Code_Build_Prompt_V8-V13.txt was
+  not executed as a second instruction set.
+
+------------------------------------------------------------------------------
+WHAT CAME FROM THE EARLIER COMPONENTS
+------------------------------------------------------------------------------
+
+  MG01  OUTPUT_DECISION, from the Attachment B spec, rebuilt on the manager's
+question the hook quotes.
+
+  MG02  TOTAL_RATE, from the Attachment B spec. Built from the supplied
+synthetic rows and independently recomputed.
+
+  MG03  CASE_MIX, from the Attachment B spec. The core of the demonstration.
+
+  MG04  THREE_JOBS, from the Attachment B spec. The hero framework.
+
+  MG05  DECISION_CONTEXT, from the Attachment B spec, using the script's own
+two-sided statement.
+
+  MG06  New. The script's five decision-process questions had no single
+Attachment B asset.
+
+  MG07  ROLE_MAP, from the Attachment B spec. The viewer's exercise.
+
+  RES   Separate resource card.
+
+  WN    Separate Watch Next card. Final visual.
+
+------------------------------------------------------------------------------
+SHORTS
+------------------------------------------------------------------------------
+
+  A1  Closes on the long-form final spoken line. The thumbnail wording is the
+current THE TASK ISN'T THE JOB, not the superseded WHAT STILL NEEDS YOU?
+
+  A2  Every figure recomputed from the supplied CSV. A rise of twenty
+percentage points, not twenty percent relative growth. Do not stage an AI
+failure and do not claim a live benchmark.
+
+  A3  Keeps the approved-tools boundary.
+
+  A4  Does not claim job security. The master is explicit that none of this
+guarantees a role remains.
+
+  B5  Keeps the possibility that the role is automatable. Do not turn this
+into reassurance.
+
+  B6  Deliberately unreassuring, matching the master. No job-security promise.
+
+------------------------------------------------------------------------------
+PACKAGING CORRECTIONS
+------------------------------------------------------------------------------
+
+SUPERSEDED PACKAGING, RECORDED SO IT IS NOT RESTORED
+
+  VIDEO 9   Superseded primary title: Before You Change Industries, Know What
+            Still Counts
+            Current locked title: How to Change Industries Without Starting
+            Over
+
+  VIDEO 11  Superseded thumbnail: WHAT STILL NEEDS YOU?
+            Current locked thumbnail: THE TASK ISN'T THE JOB
+
+  VIDEO 12  Superseded thumbnail: STUCK FOR NOW?
+            Current locked thumbnail: WHAT CAN CHANGE NOW?
+
+None of the superseded lines is used as active packaging anywhere in this
+batch. They appear only in this change record and in the QA report, both of
+which exist to document the replacement.
+
+------------------------------------------------------------------------------
+WHAT WAS NOT CARRIED OVER
+------------------------------------------------------------------------------
+
+No rendered artwork. No prior rendered V8 to V13 asset exists, so every PNG in
+this package is a new build from a reusable concept, not a byte-identical
+reuse. The earlier asset specifications were proposed build specifications,
+not finished graphics, and are not presented as such.
+
+No draft script. The superseded review masters are not packaged anywhere in
+this batch, and no old draft sits in an active recording folder.
+
+==============================================================================

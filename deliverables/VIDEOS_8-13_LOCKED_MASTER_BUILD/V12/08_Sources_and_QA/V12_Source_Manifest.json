@@ -1,0 +1,114 @@
+{
+  "video": 12,
+  "title": "What to Do When You Can’t Quit Your Job Yet",
+  "locked_master": {
+    "filename": "Video_12_FINAL_Revised_Recording_Master.docx",
+    "sha256": "f9e5316370edbc6e0029382cdc4fd086fb2e0241ee9097d5ba8f2e4e00f26807",
+    "copied_unchanged_into": "01_Recording_Master/Video_12_FINAL_Revised_Recording_Master.docx",
+    "spoken_section": "after RECORDING SCRIPT STARTS HERE and before END OF SPOKEN SCRIPT",
+    "spoken_paragraphs": 110,
+    "spoken_words": 1185
+  },
+  "packaging": {
+    "title": "What to Do When You Can’t Quit Your Job Yet",
+    "thumbnail_wording": "WHAT CAN CHANGE NOW?",
+    "thumbnail_artwork": "PENDING. Not created in this build.",
+    "framework": "Protect what must hold. Bound what you can. Prepare one possible next step.",
+    "resource": {
+      "name": "Free Career Decision Evidence Check",
+      "url": "https://temidayoafonja.com/career-decisions"
+    },
+    "watch_next": {
+      "video": 13,
+      "title": "A 30-Day Plan to Test Your Next Career Move",
+      "url": null
+    },
+    "playlist": "Make Your Next Move Without Starting Over",
+    "playlist_url": null,
+    "printed_target": "Approximately 9:15 to 10:15",
+    "final_spoken_line": "You can respect your constraints without pretending the current situation is the whole story."
+  },
+  "runtime": {
+    "spoken_words": 1185,
+    "speech_only_estimate": "8:10 to 9:07 at 130 to 145 wpm",
+    "is_an_estimate_not_a_measurement": true
+  },
+  "secondary_reference_used": {
+    "archive": "Videos_8-13_Recording_and_Production_Components_v1.0.zip",
+    "used_for": "asset concepts and Shorts drafts only, each remapped to the locked master",
+    "not_used": [
+      "Recording_Master_v1.0_REVIEW files",
+      "Code_Build_Prompt_V8-V13.txt"
+    ]
+  },
+  "assets": [
+    {
+      "file": "V12_MG01_Constraint_Versus_Conclusion.png",
+      "id": "MG01",
+      "label": null,
+      "sha256": "1cdb9b48f5507e247801f0dd76c160bb3946065bb078bba358cc312f79d852be"
+    },
+    {
+      "file": "V12_MG02_Protection_First.png",
+      "id": "MG02",
+      "label": null,
+      "sha256": "ac5078b45b155fd3c5bfb12a3d7cfdd27c25334849fcbac4e3b3cc1626f8ba6f"
+    },
+    {
+      "file": "V12_MG03_Protect_Bound_Prepare.png",
+      "id": "MG03",
+      "label": null,
+      "sha256": "ff97af8de50a5476ed4d70144732da1d08d9521d865d0ebb0eedefad5e27bdc1"
+    },
+    {
+      "file": "V12_MG04_What_Must_Hold.png",
+      "id": "MG04",
+      "label": null,
+      "sha256": "5b36c635a408950586aa2d66b90e2344c801941c4d3736ec532d3b29d311f542"
+    },
+    {
+      "file": "V12_MG05_Make_The_Tradeoff_Visible.png",
+      "id": "MG05",
+      "label": null,
+      "sha256": "1d70070000ee8f92c2d23321f1081ef19ecb6f8d9b565106030090d4e48758a0"
+    },
+    {
+      "file": "V12_MG06_Question_Not_Activity.png",
+      "id": "MG06",
+      "label": null,
+      "sha256": "d81bfd638a01ab093a4188fbc42df0a8cec61657b4697ced6d7bc4c26826281a"
+    },
+    {
+      "file": "V12_MG07_The_Four_Lines.png",
+      "id": "MG07",
+      "label": null,
+      "sha256": "b023b16e6ce07df09882def71752f77b198555110bb31284e90e70738888dbcd"
+    },
+    {
+      "file": "V12_RESOURCE_Career_Decision_Evidence_Check.png",
+      "id": "RES",
+      "label": null,
+      "sha256": "5e881140e26506b4af38d3fb706995eeabd8a8895eb3c897e622a62b5566425f"
+    },
+    {
+      "file": "V12_WATCH_NEXT_Thirty_Day_Plan.png",
+      "id": "WN",
+      "label": null,
+      "sha256": "fa9f802a28edd5a45ad9c82204aa3121762c0759512f7f3ffdb14cea5bced397"
+    }
+  ],
+  "not_verified_here": [
+    "actual spoken delivery",
+    "actual runtime",
+    "executed motion graphics",
+    "executed push-ins and pull-backs",
+    "actual B-roll placement",
+    "voice, music and effect balance",
+    "final picture quality",
+    "caption placement and subtitle sync",
+    "final YouTube chapters",
+    "final end-card hold and clean file ending",
+    "thumbnail artwork approval",
+    "verified public link accessibility"
+  ]
+}

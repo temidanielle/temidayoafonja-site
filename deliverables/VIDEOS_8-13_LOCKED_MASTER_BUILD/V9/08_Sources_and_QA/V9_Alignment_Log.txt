@@ -1,0 +1,100 @@
+==============================================================================
+SOURCE-TO-PRODUCTION ALIGNMENT LOG
+Video 9  ·  How to Change Industries Without Starting Over
+==============================================================================
+
+How the locked master became this package, and what was taken from the earlier
+Attachment B components.
+
+------------------------------------------------------------------------------
+SOURCE
+------------------------------------------------------------------------------
+
+  Primary   Video_9_FINAL_Revised_Recording_Master.docx
+  SHA-256   690c0626c3a9e09efcd00841057fd35199a6d2c9e3e9e822a60aae321e92ab19
+  Secondary Videos_8-13_Recording_and_Production_Components_v1.0.zip
+
+  The Recording_Master_v1.0_REVIEW files in the secondary archive are NOT
+  current spoken sources and were not used. Code_Build_Prompt_V8-V13.txt was
+  not executed as a second instruction set.
+
+------------------------------------------------------------------------------
+WHAT CAME FROM THE EARLIER COMPONENTS
+------------------------------------------------------------------------------
+
+  MG01  DESTINATION, from the Attachment B spec, rebuilt on the sentence the
+hook actually quotes.
+
+  MG02  New. The script names two opposite errors and no Attachment B asset
+carried both.
+
+  MG03  THREE_PART_READ, from the Attachment B spec. The hero framework.
+
+  MG04  New. The script's sharpest transfer warning and no Attachment B asset
+carried it.
+
+  MG05  CONTEXT, from the Attachment B spec, using the script's own list.
+
+  MG06  REQUIREMENTS, from the Attachment B spec. The credential triage.
+
+  MG07  DESTINATION_READ, from the Attachment B spec, reduced to the three-
+part shape the script names.
+
+  RES   Separate resource card.
+
+  WN    Separate Watch Next card. Final visual.
+
+------------------------------------------------------------------------------
+SHORTS
+------------------------------------------------------------------------------
+
+  A1  Uses the new title's framing. The earlier draft referenced the
+superseded title Before You Change Industries, Know What Still Counts, which
+is removed.
+
+  A2  The constructed comparison stays labelled. No employer requirements are
+fabricated.
+
+  A3  No credential mandate, regulatory rule or eligibility claim is invented.
+
+  A4  Keeps the script's point that a relationship helps you learn context but
+does not prove you already know it.
+
+  B5  The limits sentence is kept verbatim from the master.
+
+  B6  No promise of preserved pay, title, authority or seniority.
+
+------------------------------------------------------------------------------
+PACKAGING CORRECTIONS
+------------------------------------------------------------------------------
+
+SUPERSEDED PACKAGING, RECORDED SO IT IS NOT RESTORED
+
+  VIDEO 9   Superseded primary title: Before You Change Industries, Know What
+            Still Counts
+            Current locked title: How to Change Industries Without Starting
+            Over
+
+  VIDEO 11  Superseded thumbnail: WHAT STILL NEEDS YOU?
+            Current locked thumbnail: THE TASK ISN'T THE JOB
+
+  VIDEO 12  Superseded thumbnail: STUCK FOR NOW?
+            Current locked thumbnail: WHAT CAN CHANGE NOW?
+
+None of the superseded lines is used as active packaging anywhere in this
+batch. They appear only in this change record and in the QA report, both of
+which exist to document the replacement.
+
+------------------------------------------------------------------------------
+WHAT WAS NOT CARRIED OVER
+------------------------------------------------------------------------------
+
+No rendered artwork. No prior rendered V8 to V13 asset exists, so every PNG in
+this package is a new build from a reusable concept, not a byte-identical
+reuse. The earlier asset specifications were proposed build specifications,
+not finished graphics, and are not presented as such.
+
+No draft script. The superseded review masters are not packaged anywhere in
+this batch, and no old draft sits in an active recording folder.
+
+==============================================================================

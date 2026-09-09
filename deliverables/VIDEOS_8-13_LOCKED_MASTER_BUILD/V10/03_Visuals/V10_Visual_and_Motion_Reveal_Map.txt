@@ -1,0 +1,556 @@
+==============================================================================
+VISUAL AND MOTION / REVEAL MAP
+Video 10  ·  Before a Layoff, Know What You Can Still Prove
+Built against Video_10_FINAL_Revised_Recording_Master.docx  ·  September 9, 2026 locked final Recording Masters
+==============================================================================
+
+9 assets: 7 teaching reference concepts plus a separate resource card and a
+separate Watch Next card. These are reference frames for Riverside and Co-
+Creator, not a presentation deck and not one slide per paragraph.
+
+NONE OF THESE IS A CARRIED-OVER RENDERED ASSET. No prior rendered artwork
+exists for Videos 8 to 13. Where a concept came from the earlier Attachment B
+specification, that is recorded per scene, and every anchor was remapped to
+the current script.
+
+------------------------------------------------------------------------------
+TRUE FULL-SCREEN SCENES
+
+Frameworks, comparisons, multi-point teaching, substantive B-roll, the resource card and Watch Next must fill the entire canvas.
+
+Completely hide Temidayo visually during those scenes while her voice continues.
+
+  - no moving Temidayo behind or around the visual
+  - no smaller rectangle floating over her camera footage
+  - no transparent background revealing her behind a major graphic
+
+Use an opaque full-frame scene where necessary.
+
+Only short single-idea callouts and the restrained Subscribe cue may appear over camera.
+
+------------------------------------------------------------------------------
+RETURN TO CAMERA
+
+Return only where the individual scene map calls for it.
+
+This instruction NEVER applies to Watch Next.
+
+Watch Next is final, with no camera return.
+
+------------------------------------------------------------------------------
+MOBILE LEGIBILITY
+
+Use large bold typography, high contrast, short phrases, and sequential reveals.
+
+Use navy #112345, warm cream, and selective gold or yellow emphasis.
+
+Do not use tiny explanatory labels, dense grids, essential footer text, or long paragraphs inside small boxes.
+
+Keep evidence qualifications and illustration labels readable. Where a frame carries a SYNTHETIC DATA, PREPARED AI-ASSISTED EXAMPLE, ILLUSTRATION or WORK SAMPLE label, that label is part of the teaching and must stay legible at phone size.
+
+The headline should register quickly. Detailed comparisons need enough time to read.
+
+Split the visual instead of shrinking important information.
+
+------------------------------------------------------------------------------
+SOUND BUDGET
+
+Use approximately 4 to 7 restrained sound accents TOTAL per long-form video, INCLUDING the Subscribe cue.
+
+Per-scene sound suggestions in the scene map are OPTIONAL CANDIDATES, not cumulative instructions. Do not add a sound to every question, item, caption, cut, or reveal. Adding up the per-scene suggestions would exceed the budget on its own. The budget wins.
+
+Select the strongest moments. Use soft whooshes, quiet clicks, gentle pops, or restrained sweeps where appropriate.
+
+Keep effects clearly quieter than the voice.
+
+------------------------------------------------------------------------------
+ONE VISUAL SUBSCRIBE CUE
+
+Add one brief, readable branded Subscribe cue after the first meaningful payoff, ideally once back on camera.
+
+It is VISUAL ONLY. Do not add spoken dialogue and do not modify the recording script for it.
+
+Allow about 2 to 3 seconds including its entrance and exit. Use a restrained fade, slide, or gentle scale with one quiet accent.
+
+Do not interrupt a useful pause or cover teaching text.
+
+------------------------------------------------------------------------------
+CAPTIONS
+
+Keep normal on-camera captions clean.
+
+Suppress competing designed or burned-in captions during major graphics, B-roll, the resource card, and Watch Next.
+
+Do not delete the audio or the transcript words in order to hide a visual caption.
+
+A separate SRT must include the COMPLETE speech and must match the actual final edit.
+
+------------------------------------------------------------------------------
+SCENES, IN THE LOCKED ORDER
+------------------------------------------------------------------------------
+
+==============================================================================
+MG01   V10_MG01_Access_Not_Experience.png
+==============================================================================
+
+  CONCEPT ORIGIN
+    CONTRIBUTION, from the Attachment B spec, rebuilt on the script's two-
+    line payoff.
+
+  MODE
+    TRUE FULL SCREEN
+
+  ON-SCREEN COPY
+    YOUR EXPERIENCE DID NOT DISAPPEAR. YOUR ACCESS TO THE EVIDENCE DID.
+
+  SPOKEN TRIGGER
+    “Your experience did not disappear.”
+
+  PURPOSE
+    The distinction the whole video rests on, at the end of the hook.
+
+  FIRST REVEAL AND REVEAL ORDER
+    First statement alone for 1.8s, then the second at 2.4s with a soft
+    impact.
+
+  EMPHASIS
+    The second statement.
+
+  READING AND HOLD
+    7 to 8 seconds.
+
+    If the animation cannot hold a reveal state as described, lengthen the
+    hold rather than shrinking the type.
+
+  EXIT AND NEXT SCENE
+    Cut back to camera for the not-a-prediction line.
+
+  CAPTION TREATMENT
+    Suppress.
+
+  OPTIONAL SOUND CANDIDATE
+    Optional: one soft impact as the second statement lands.
+    Optional candidate, not an instruction. The whole video gets
+    approximately 4 to 7 restrained accents in total, including the
+    Subscribe cue.
+
+  BRAND
+    Deep navy #112345, warm cream, selective gold and yellow emphasis.
+    Montserrat display, DM Sans body. Large type only.
+
+==============================================================================
+MG02   V10_MG02_Preparation_Is_Not_Extraction.png
+==============================================================================
+
+  CONCEPT ORIGIN
+    PERMISSION, from the Attachment B spec. The compliance boundary, kept
+    in its scripted position.
+
+  MODE
+    TRUE FULL SCREEN
+
+  ON-SCREEN COPY
+    PREPARATION IS NOT EXTRACTION / no forwarding internal emails,
+    downloading dashboards, copying customer information, or collecting
+    employee records
+
+  SPOKEN TRIGGER
+    “Access to a document does not mean you are entitled to keep it.”
+
+  PURPOSE
+    States the boundary plainly and early, exactly where the script places
+    it.
+
+  FIRST REVEAL AND REVEAL ORDER
+    Headline alone for 1.6s. The prohibition list at 2.2s, arriving as one
+    block rather than four separate accusatory reveals.
+
+  EMPHASIS
+    The headline. The list is supporting detail, not a countdown.
+
+  READING AND HOLD
+    9 to 10 seconds. The list must be readable.
+
+    If the animation cannot hold a reveal state as described, lengthen the
+    hold rather than shrinking the type.
+
+  EXIT AND NEXT SCENE
+    Cut back to camera for the get-guidance line.
+
+  CAPTION TREATMENT
+    Suppress.
+
+  OPTIONAL SOUND CANDIDATE
+    Optional: none. This should not feel dramatic.
+    Optional candidate, not an instruction. The whole video gets
+    approximately 4 to 7 restrained accents in total, including the
+    Subscribe cue.
+
+  EVIDENCE / ILLUSTRATION NOTE
+    Never animate any of these actions as a recommended behavior. This
+    frame is a prohibition, and the B-roll around it must not depict
+    extraction. The script places this boundary immediately after the
+    stakes; keep that placement.
+
+  BRAND
+    Deep navy #112345, warm cream, selective gold and yellow emphasis.
+    Montserrat display, DM Sans body. Large type only.
+
+==============================================================================
+MG03   V10_MG03_Capture_Qualify_Retrieve.png
+==============================================================================
+
+  CONCEPT ORIGIN
+    New hero framework card. The Attachment B set had no single three-part
+    frame.
+
+  MODE
+    TRUE FULL SCREEN
+
+  ON-SCREEN COPY
+    CAPTURE THE CONTRIBUTION / QUALIFY THE CLAIM / MAKE IT RETRIEVABLE
+
+  SPOKEN TRIGGER
+    “It is a simple evidence habit:”
+
+  PURPOSE
+    The hero framework. Returns briefly at each section change.
+
+  FIRST REVEAL AND REVEAL ORDER
+    One line at a time, 0.9s apart. Hold the complete set.
+
+  EMPHASIS
+    Equal weight.
+
+  READING AND HOLD
+    9 to 10 seconds first time, 3 seconds on each return.
+
+    If the animation cannot hold a reveal state as described, lengthen the
+    hold rather than shrinking the type.
+
+  EXIT AND NEXT SCENE
+    Cut back to camera.
+
+  CAPTION TREATMENT
+    Suppress.
+
+  OPTIONAL SOUND CANDIDATE
+    Optional: one accent per line, then a resolve. Or one resolve only.
+    Optional candidate, not an instruction. The whole video gets
+    approximately 4 to 7 restrained accents in total, including the
+    Subscribe cue.
+
+  BRAND
+    Deep navy #112345, warm cream, selective gold and yellow emphasis.
+    Montserrat display, DM Sans body. Large type only.
+
+==============================================================================
+MG04   V10_MG04_Calendar_Versus_Contribution.png
+==============================================================================
+
+  CONCEPT ORIGIN
+    TASK_ACCOUNT, from the Attachment B spec, using the script's own two
+    sentences.
+
+  MODE
+    TRUE FULL SCREEN
+
+  ON-SCREEN COPY
+    THE CALENDAR ENTRY: attended weekly implementation meetings / THE
+    CONTRIBUTION: I identified conflicting completion criteria
+
+  SPOKEN TRIGGER
+    “That is a calendar entry. It tells me where you spent time, not what
+    you contributed.”
+
+  PURPOSE
+    The clearest before and after in the video.
+
+  REQUIRED LABEL, MUST STAY READABLE
+    ILLUSTRATION, NOT A REAL CASE
+
+  FIRST REVEAL AND REVEAL ORDER
+    Calendar entry alone for 2.0s. Contribution on the reframe.
+
+  EMPHASIS
+    The right column.
+
+  READING AND HOLD
+    10 to 11 seconds. The right column is a long sentence.
+
+    If the animation cannot hold a reveal state as described, lengthen the
+    hold rather than shrinking the type.
+
+  EXIT AND NEXT SCENE
+    Cut back to camera for what the record does not claim.
+
+  CAPTION TREATMENT
+    Suppress.
+
+  OPTIONAL SOUND CANDIDATE
+    Optional: one soft click as the contribution arrives.
+    Optional candidate, not an instruction. The whole video gets
+    approximately 4 to 7 restrained accents in total, including the
+    Subscribe cue.
+
+  EVIDENCE / ILLUSTRATION NOTE
+    Hypothetical. It does not claim delays fell, and the frame must not
+    add a number.
+
+  BRAND
+    Deep navy #112345, warm cream, selective gold and yellow emphasis.
+    Montserrat display, DM Sans body. Large type only.
+
+==============================================================================
+MG05   V10_MG05_Confirmed_Qualified_Not_Verified.png
+==============================================================================
+
+  CONCEPT ORIGIN
+    CLAIM_STATUS, from the Attachment B spec. The three labels the brief
+    calls out.
+
+  MODE
+    TRUE FULL SCREEN
+
+  ON-SCREEN COPY
+    CONFIRMED / QUALIFIED / NOT YET VERIFIED
+
+  SPOKEN TRIGGER
+    “Now put one of three labels beside the result:”
+
+  PURPOSE
+    The heart of the video. Stops uncertainty disappearing when the story
+    gets shortened.
+
+  FIRST REVEAL AND REVEAL ORDER
+    One row at a time, 1.2s apart. Closing line after a beat.
+
+  EMPHASIS
+    The closing line.
+
+  READING AND HOLD
+    11 to 12 seconds. Each definition needs reading.
+
+    If the animation cannot hold a reveal state as described, lengthen the
+    hold rather than shrinking the type.
+
+  EXIT AND NEXT SCENE
+    Cut back to camera for the attribution passage.
+
+  CAPTION TREATMENT
+    Suppress.
+
+  OPTIONAL SOUND CANDIDATE
+    Optional: one flat accent per row, or one on the closing line.
+    Optional candidate, not an instruction. The whole video gets
+    approximately 4 to 7 restrained accents in total, including the
+    Subscribe cue.
+
+  EVIDENCE / ILLUSTRATION NOTE
+    These are labels for a private record, not a public grading scheme.
+    Keep the treatment neutral.
+
+  BRAND
+    Deep navy #112345, warm cream, selective gold and yellow emphasis.
+    Montserrat display, DM Sans body. Large type only.
+
+==============================================================================
+MG06   V10_MG06_Name_It_By_The_Problem.png
+==============================================================================
+
+  CONCEPT ORIGIN
+    RETRIEVAL, from the Attachment B spec, using the script's own
+    comparison.
+
+  MODE
+    TRUE FULL SCREEN
+
+  ON-SCREEN COPY
+    PROJECT ALPHA vs CONFLICTING HANDOFF CRITERIA
+
+  SPOKEN TRIGGER
+    ““Conflicting handoff criteria” is more useful than “Project Alpha,”
+    especially to somebody outside the company.”
+
+  PURPOSE
+    Makes retrievability concrete in one comparison.
+
+  FIRST REVEAL AND REVEAL ORDER
+    Left column first, 1.6s. Right column with the weight. Closing line at
+    3.6s.
+
+  EMPHASIS
+    The right column.
+
+  READING AND HOLD
+    9 to 10 seconds.
+
+    If the animation cannot hold a reveal state as described, lengthen the
+    hold rather than shrinking the type.
+
+  EXIT AND NEXT SCENE
+    Cut back to camera for the worked entry.
+
+  CAPTION TREATMENT
+    Suppress.
+
+  OPTIONAL SOUND CANDIDATE
+    Optional: one accent as the right column arrives.
+    Optional candidate, not an instruction. The whole video gets
+    approximately 4 to 7 restrained accents in total, including the
+    Subscribe cue.
+
+  BRAND
+    Deep navy #112345, warm cream, selective gold and yellow emphasis.
+    Montserrat display, DM Sans body. Large type only.
+
+==============================================================================
+MG07   V10_MG07_Two_Reasons_Evidence_Is_Thin.png
+==============================================================================
+
+  CONCEPT ORIGIN
+    MISSING, from the Attachment B spec. The distinction the script
+    insists on.
+
+  MODE
+    TRUE FULL SCREEN
+
+  ON-SCREEN COPY
+    YOU DID NOT CAPTURE IT: reconstruction / YOU NEVER HAD THE
+    OPPORTUNITY: an honest account
+
+  SPOKEN TRIGGER
+    “Do not solve both problems by writing a stronger sentence.”
+
+  PURPOSE
+    Keeps the video honest about what a better record cannot fix.
+
+  FIRST REVEAL AND REVEAL ORDER
+    Left column, right column at 1.8s, closing line at 3.6s.
+
+  EMPHASIS
+    The closing line.
+
+  READING AND HOLD
+    9 to 10 seconds.
+
+    If the animation cannot hold a reveal state as described, lengthen the
+    hold rather than shrinking the type.
+
+  EXIT AND NEXT SCENE
+    Cut back to camera for the already-laid-off passage.
+
+  CAPTION TREATMENT
+    Suppress.
+
+  OPTIONAL SOUND CANDIDATE
+    Optional: one flat accent. This should not feel triumphant.
+    Optional candidate, not an instruction. The whole video gets
+    approximately 4 to 7 restrained accents in total, including the
+    Subscribe cue.
+
+  BRAND
+    Deep navy #112345, warm cream, selective gold and yellow emphasis.
+    Montserrat display, DM Sans body. Large type only.
+
+==============================================================================
+RES   V10_RESOURCE_Keep_The_Proof.png
+==============================================================================
+
+  CONCEPT ORIGIN
+    Separate resource card.
+
+  MODE
+    TRUE FULL SCREEN
+
+  ON-SCREEN COPY
+    KEEP THE PROOF / temidayoafonja.com/keep-the-proof
+
+  SPOKEN TRIGGER
+    “Keep the Proof is linked below. It gives you the deeper evidence
+    system and reusable ledger.”
+
+  PURPOSE
+    The single resource route.
+
+  FIRST REVEAL AND REVEAL ORDER
+    Logomark, headline at 0.6s, URL at 2.0s.
+
+  EMPHASIS
+    The URL.
+
+  READING AND HOLD
+    8 to 9 seconds.
+
+    If the animation cannot hold a reveal state as described, lengthen the
+    hold rather than shrinking the type.
+
+  EXIT AND NEXT SCENE
+    Cut back to camera for the two closing lines.
+
+  CAPTION TREATMENT
+    Suppress. Never cover the address.
+
+  OPTIONAL SOUND CANDIDATE
+    Optional: one warm accent on the URL.
+    Optional candidate, not an instruction. The whole video gets
+    approximately 4 to 7 restrained accents in total, including the
+    Subscribe cue.
+
+  EVIDENCE / ILLUSTRATION NOTE
+    The support line is the script's own. Keep it.
+
+  BRAND
+    Deep navy #112345, warm cream, selective gold and yellow emphasis.
+    Montserrat display, DM Sans body. Large type only.
+
+==============================================================================
+WN   V10_WATCH_NEXT_AI_Can_Do_The_Task.png
+==============================================================================
+
+  CONCEPT ORIGIN
+    Separate Watch Next card. Final visual.
+
+  MODE
+    TRUE FULL SCREEN, FINAL
+
+  ON-SCREEN COPY
+    WATCH NEXT: AI CAN DO THE TASK. WHAT ARE YOU STILL PAID FOR?
+
+  SPOKEN TRIGGER
+    “Watch “AI Can Do the Task. What Are You Still Paid For?” next.”
+
+  PURPOSE
+    Final visual. Right of frame kept clear for the end-screen element.
+
+  FIRST REVEAL AND REVEAL ORDER
+    Static.
+
+  EMPHASIS
+    The title.
+
+  READING AND HOLD
+    10 to 14 seconds, through the final spoken line and the closing hold.
+
+    If the animation cannot hold a reveal state as described, lengthen the
+    hold rather than shrinking the type.
+
+  EXIT AND NEXT SCENE
+    NONE. Final visual. No camera return, no outro.
+
+  CAPTION TREATMENT
+    Suppress.
+
+  OPTIONAL SOUND CANDIDATE
+    Optional: none, then a natural music fade.
+    Optional candidate, not an instruction. The whole video gets
+    approximately 4 to 7 restrained accents in total, including the
+    Subscribe cue.
+
+  BRAND
+    Deep navy #112345, warm cream, selective gold and yellow emphasis.
+    Montserrat display, DM Sans body. Large type only.
+
+==============================================================================
+END OF MAP
+==============================================================================

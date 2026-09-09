@@ -1,0 +1,68 @@
+{
+  "video": 9,
+  "built_from": "Video_9_FINAL_Revised_Recording_Master.docx",
+  "priority_a": 4,
+  "priority_b": 2,
+  "shorts": [
+    {
+      "n": 1,
+      "priority": "A",
+      "title": "Direct Industry Experience Required",
+      "slug": "V9_Short_01_Direct_Industry_Experience",
+      "source_section": "HOOK | New field does not mean zero",
+      "words": 112,
+      "estimated_seconds": 40.7,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 2,
+      "priority": "A",
+      "title": "The Same Verb Is Not the Same Work",
+      "slug": "V9_Short_02_Same_Verb_Different_Work",
+      "source_section": "1 | Capability: What underlying work can you prove?",
+      "words": 104,
+      "estimated_seconds": 37.8,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 3,
+      "priority": "A",
+      "title": "Is It a Gate or a Preference?",
+      "slug": "V9_Short_03_Confirmed_Preferred_Unclear",
+      "source_section": "3 | Credentials: What is actually a gate?",
+      "words": 119,
+      "estimated_seconds": 43.3,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 4,
+      "priority": "A",
+      "title": "Ask a Better Question",
+      "slug": "V9_Short_04_Ask_About_The_Work",
+      "source_section": "2 | Context: What changes when the setting changes?",
+      "words": 116,
+      "estimated_seconds": 42.2,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 5,
+      "priority": "B",
+      "title": "A Defensible Introduction",
+      "slug": "V9_Short_05_A_Defensible_Introduction",
+      "source_section": "PUT IT TOGETHER | A defensible introduction",
+      "words": 105,
+      "estimated_seconds": 38.2,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 6,
+      "priority": "B",
+      "title": "What Are You Giving Up?",
+      "slug": "V9_Short_06_What_Are_You_Giving_Up",
+      "source_section": "PUT IT TOGETHER | A defensible introduction",
+      "words": 93,
+      "estimated_seconds": 33.8,
+      "duration_is_estimate_until_recorded": true
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "video": 10,
+  "built_from": "Video_10_FINAL_Revised_Recording_Master.docx",
+  "priority_a": 4,
+  "priority_b": 2,
+  "shorts": [
+    {
+      "n": 1,
+      "priority": "A",
+      "title": "Your Access Disappears First",
+      "slug": "V10_Short_01_Access_Not_Experience",
+      "source_section": "HOOK | The proof can disappear before the experience does",
+      "words": 107,
+      "estimated_seconds": 38.9,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 2,
+      "priority": "A",
+      "title": "Preparation Is Not Extraction",
+      "slug": "V10_Short_02_Preparation_Is_Not_Extraction",
+      "source_section": "THE BOUNDARY | Preparation is not extraction",
+      "words": 115,
+      "estimated_seconds": 41.8,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 3,
+      "priority": "A",
+      "title": "A Calendar Entry Is Not a Contribution",
+      "slug": "V10_Short_03_Calendar_Versus_Contribution",
+      "source_section": "1 | Capture the contribution, not the calendar",
+      "words": 117,
+      "estimated_seconds": 42.5,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 4,
+      "priority": "A",
+      "title": "Confirmed, Qualified, Not Yet Verified",
+      "slug": "V10_Short_04_Confirmed_Qualified_Not_Verified",
+      "source_section": "2 | Qualify the claim",
+      "words": 111,
+      "estimated_seconds": 40.4,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 5,
+      "priority": "B",
+      "title": "Name It by the Problem",
+      "slug": "V10_Short_05_Name_It_By_The_Problem",
+      "source_section": "3 | Make it retrievable",
+      "words": 93,
+      "estimated_seconds": 33.8,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 6,
+      "priority": "B",
+      "title": "Two Reasons the Evidence Is Thin",
+      "slug": "V10_Short_06_Two_Reasons_Evidence_Is_Thin",
+      "source_section": "WHEN THE EVIDENCE IS THIN",
+      "words": 115,
+      "estimated_seconds": 41.8,
+      "duration_is_estimate_until_recorded": true
+    }
+  ]
+}

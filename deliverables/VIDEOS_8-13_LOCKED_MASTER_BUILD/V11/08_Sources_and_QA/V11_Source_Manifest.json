@@ -1,0 +1,131 @@
+{
+  "video": 11,
+  "title": "AI Can Do the Task. What Are You Still Paid For?",
+  "locked_master": {
+    "filename": "Video_11_FINAL_Revised_Recording_Master.docx",
+    "sha256": "adcf761a759437fc0679b7c255e6d6303f1b556dc3a9e54e89ccd55219b49e2b",
+    "copied_unchanged_into": "01_Recording_Master/Video_11_FINAL_Revised_Recording_Master.docx",
+    "spoken_section": "after RECORDING SCRIPT STARTS HERE and before END OF SPOKEN SCRIPT",
+    "spoken_paragraphs": 112,
+    "spoken_words": 1198
+  },
+  "packaging": {
+    "title": "AI Can Do the Task. What Are You Still Paid For?",
+    "thumbnail_wording": "THE TASK ISN'T THE JOB",
+    "thumbnail_artwork": "PENDING. Not created in this build.",
+    "framework": "Produce. Interpret. Decide. Verify across all three.",
+    "resource": {
+      "name": "Capability Formation Field Kit",
+      "url": "https://temidayoafonja.com/fieldkit"
+    },
+    "watch_next": {
+      "video": 12,
+      "title": "What to Do When You Can’t Quit Your Job Yet",
+      "url": null
+    },
+    "playlist": "Make Your Next Move Without Starting Over",
+    "playlist_url": null,
+    "printed_target": "Approximately 9:30 to 10:30",
+    "final_spoken_line": "A faster output is not the same thing as a finished decision."
+  },
+  "runtime": {
+    "spoken_words": 1198,
+    "speech_only_estimate": "8:16 to 9:13 at 130 to 145 wpm",
+    "is_an_estimate_not_a_measurement": true
+  },
+  "secondary_reference_used": {
+    "archive": "Videos_8-13_Recording_and_Production_Components_v1.0.zip",
+    "used_for": "asset concepts and Shorts drafts only, each remapped to the locked master",
+    "not_used": [
+      "Recording_Master_v1.0_REVIEW files",
+      "Code_Build_Prompt_V8-V13.txt"
+    ]
+  },
+  "assets": [
+    {
+      "file": "V11_MG01_Can_We_Reduce_The_Team.png",
+      "id": "MG01",
+      "label": null,
+      "sha256": "72f62fed75b7282803a25826ba0035bc59a8aa3921b071e70dd99b9e3659d1f9"
+    },
+    {
+      "file": "V11_MG02_The_Headline_Rate.png",
+      "id": "MG02",
+      "label": "SYNTHETIC DATA  ·  PREPARED AI-ASSISTED EXAMPLE",
+      "sha256": "5be6f499fdd7d68edd3eb4bd1abb3b4ed3b9737fd92bb4c175afc5bb395dc42d"
+    },
+    {
+      "file": "V11_MG03_The_Mix_Changed.png",
+      "id": "MG03",
+      "label": "SYNTHETIC DATA  ·  PREPARED AI-ASSISTED EXAMPLE",
+      "sha256": "1bbefb70e569317430116e9dd4cc0493b436be300398f552a2724e1edac53a4e"
+    },
+    {
+      "file": "V11_MG04_Produce_Interpret_Decide.png",
+      "id": "MG04",
+      "label": null,
+      "sha256": "3645c468621a9dd6ae66a4f3f78fdaf331aca087e35b4f1bdb64f0155893f3d2"
+    },
+    {
+      "file": "V11_MG05_What_It_Does_Not_Establish.png",
+      "id": "MG05",
+      "label": "SYNTHETIC DATA  ·  PREPARED AI-ASSISTED EXAMPLE",
+      "sha256": "b77bbc11cbc0b04764182b8ea5cb351045c71ff098b7618cccd7737c759f17f1"
+    },
+    {
+      "file": "V11_MG06_Who_Owns_The_Consequence.png",
+      "id": "MG06",
+      "label": null,
+      "sha256": "2e6ca24efcde7459f0cdbb2ee4961f8bfc5dab3048b410887db8d4f9d2c69831"
+    },
+    {
+      "file": "V11_MG07_Map_Your_Role.png",
+      "id": "MG07",
+      "label": null,
+      "sha256": "d429c599503355af668fde171d5fbccff7471e79fab93b034915f20c531ec414"
+    },
+    {
+      "file": "V11_RESOURCE_Field_Kit.png",
+      "id": "RES",
+      "label": null,
+      "sha256": "78344af524e26e5f7218501a389101b2d7bd36f87e205bf10d34d1a9110cb038"
+    },
+    {
+      "file": "V11_WATCH_NEXT_Cant_Quit_Yet.png",
+      "id": "WN",
+      "label": null,
+      "sha256": "a3eab065945557493e8dedbc12d9cd89ccc9332ce1b946d905fc70c5854efb96"
+    }
+  ],
+  "not_verified_here": [
+    "actual spoken delivery",
+    "actual runtime",
+    "executed motion graphics",
+    "executed push-ins and pull-backs",
+    "actual B-roll placement",
+    "voice, music and effect balance",
+    "final picture quality",
+    "caption placement and subtitle sync",
+    "final YouTube chapters",
+    "final end-card hold and clean file ending",
+    "thumbnail artwork approval",
+    "verified public link accessibility"
+  ],
+  "demonstration": {
+    "files": [
+      "Arithmetic_Check.json",
+      "Exact_Input_Prompt.txt",
+      "Prepared_AI_Assisted_Summary.txt",
+      "README_DEMO_PROVENANCE.txt",
+      "synthetic_service_report.csv"
+    ],
+    "arithmetic_recomputed_from_csv": true,
+    "aggregate_change": "20 percentage points, 60% to 80%",
+    "relative_growth_would_be": "33.3 percent, which is why the assets say percentage points",
+    "routine_rate": "90 percent in both periods",
+    "complex_rate": "40 percent in both periods",
+    "routine_share": "40 percent then 80 percent",
+    "provenance": "Synthetic teaching rows. The summary is a prepared AI-assisted example, not a captured product run and not an independently invoked model evaluation.",
+    "live_capture": "OPTIONAL AND PENDING. Not required to complete these reference assets."
+  }
+}

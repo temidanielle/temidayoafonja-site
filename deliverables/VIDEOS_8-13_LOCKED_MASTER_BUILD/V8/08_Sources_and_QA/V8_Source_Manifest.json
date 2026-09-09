@@ -1,0 +1,114 @@
+{
+  "video": 8,
+  "title": "How to Show Your Impact at Work When You Built It From Scratch",
+  "locked_master": {
+    "filename": "Video_8_FINAL_Revised_Recording_Master.docx",
+    "sha256": "ab98d7806dfd27be5552fc8472ca6058064a88910b051e5ca6d14941e94e2a3a",
+    "copied_unchanged_into": "01_Recording_Master/Video_8_FINAL_Revised_Recording_Master.docx",
+    "spoken_section": "after RECORDING SCRIPT STARTS HERE and before END OF SPOKEN SCRIPT",
+    "spoken_paragraphs": 80,
+    "spoken_words": 1198
+  },
+  "packaging": {
+    "title": "How to Show Your Impact at Work When You Built It From Scratch",
+    "thumbnail_wording": "NOW IT LOOKS EASY",
+    "thumbnail_artwork": "PENDING. Not created in this build.",
+    "framework": "Reconstruct the before. Show the judgment. Keep the proof.",
+    "resource": {
+      "name": "Keep the Proof",
+      "url": "https://temidayoafonja.com/keep-the-proof"
+    },
+    "watch_next": {
+      "video": 9,
+      "title": "How to Change Industries Without Starting Over",
+      "url": null
+    },
+    "playlist": "Make Your Next Move Without Starting Over",
+    "playlist_url": null,
+    "printed_target": "Approximately 9:30 to 10:30",
+    "final_spoken_line": "A system looking easy now does not mean it was easy to build."
+  },
+  "runtime": {
+    "spoken_words": 1198,
+    "speech_only_estimate": "8:16 to 9:13 at 130 to 145 wpm",
+    "is_an_estimate_not_a_measurement": true
+  },
+  "secondary_reference_used": {
+    "archive": "Videos_8-13_Recording_and_Production_Components_v1.0.zip",
+    "used_for": "asset concepts and Shorts drafts only, each remapped to the locked master",
+    "not_used": [
+      "Recording_Master_v1.0_REVIEW files",
+      "Code_Build_Prompt_V8-V13.txt"
+    ]
+  },
+  "assets": [
+    {
+      "file": "V8_MG01_Now_It_Looks_Easy.png",
+      "id": "MG01",
+      "label": null,
+      "sha256": "b527d5385b9ac37bbffac5292558a021f99c5ca439f5c2652dde0b09fe008db3"
+    },
+    {
+      "file": "V8_MG02_Output_Versus_Problem.png",
+      "id": "MG02",
+      "label": null,
+      "sha256": "e40cd9cd257695cf9c004dc4e11d41c8d5d406a2af19e2033433d72f9aad7294"
+    },
+    {
+      "file": "V8_MG03_Reconstruct_The_Before.png",
+      "id": "MG03",
+      "label": "ILLUSTRATION, NOT A REAL CASE",
+      "sha256": "bc5b173eb904219d7918a7923ce554f1f4c69df65f0da683c60e5b86dc0c9a41"
+    },
+    {
+      "file": "V8_MG04_Show_The_Judgment.png",
+      "id": "MG04",
+      "label": null,
+      "sha256": "7f9ca8d5129d182e6e9d0c034f0462f72e78f5ee47440d9de17dacaa24236471"
+    },
+    {
+      "file": "V8_MG05_Existence_Use_Effect.png",
+      "id": "MG05",
+      "label": null,
+      "sha256": "4ab425d44e21c07a7c3f13d7dc4664faea7de62dacb3521b4794085cf4c83497"
+    },
+    {
+      "file": "V8_MG06_Four_Sentences.png",
+      "id": "MG06",
+      "label": null,
+      "sha256": "08b13c375ca5cf68dbd6ca2cbda0a4219a327e0c27d976671e90abbc808bd3ac"
+    },
+    {
+      "file": "V8_MG07_Where_The_Evidence_Ends.png",
+      "id": "MG07",
+      "label": null,
+      "sha256": "1a9a94ca710ae2664dbd5ebd6ef1ce331b846da1a6e3cface75ebff7867c1e62"
+    },
+    {
+      "file": "V8_RESOURCE_Keep_The_Proof.png",
+      "id": "RES",
+      "label": null,
+      "sha256": "fb5f4192e11f54d6917d7a9d65e7367bf15c146725839b2fb225e86a8afcd34e"
+    },
+    {
+      "file": "V8_WATCH_NEXT_Change_Industries.png",
+      "id": "WN",
+      "label": null,
+      "sha256": "fdcb0d05828f03ac50ad3252f3ad77fdac0f54f59a2970362691dd0fd59f92d5"
+    }
+  ],
+  "not_verified_here": [
+    "actual spoken delivery",
+    "actual runtime",
+    "executed motion graphics",
+    "executed push-ins and pull-backs",
+    "actual B-roll placement",
+    "voice, music and effect balance",
+    "final picture quality",
+    "caption placement and subtitle sync",
+    "final YouTube chapters",
+    "final end-card hold and clean file ending",
+    "thumbnail artwork approval",
+    "verified public link accessibility"
+  ]
+}

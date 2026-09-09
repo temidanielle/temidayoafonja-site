@@ -1,0 +1,55 @@
+==============================================================================
+ESTIMATED SPEECH TIMING
+Video 10  ·  Before a Layoff, Know What You Can Still Prove
+==============================================================================
+
+RUNTIME: ESTIMATE ONLY, NOT A MEASUREMENT
+
+The figure below is arithmetic on the locked script's spoken word count at 130
+to 145 words per minute, the established band. Spoken words are counted
+separately from section headings, production labels and the closing instruction
+about not reading the line.
+
+It is speech only. It excludes holds on full-screen graphics, B-roll and every
+edit decision. It is NOT a timed read and NOT a finished runtime.
+
+Narration continuing underneath a graphic or B-roll OVERLAPS that visual. Do
+not add every visual's duration to speech time.
+
+The printed target on the master's cover is an expectation, not a measured
+finished length. Do not pad the script or slow delivery unnaturally to meet it.
+
+Final timing and YouTube chapters come from the actual final export.
+
+------------------------------------------------------------------------------
+THE NUMBERS
+------------------------------------------------------------------------------
+
+  Spoken words (script section only)   1106
+  At 145 words per minute              7:38
+  At 130 words per minute              8:30
+  Printed cover target                 Approximately 9:00 to 10:00
+
+The speech-only estimate is BELOW the printed cover target. That is expected
+and is not a defect: the printed target is an expectation set before the
+script was finalized, and the locked script is what it is. Do not restore
+removed material, pad the script, or slow the delivery to close the gap.
+
+Holds on full-screen graphics, B-roll and pauses will add to the finished
+runtime, but narration continuing underneath a visual overlaps it rather than
+adding to it. The finished runtime does not exist until the export does.
+
+------------------------------------------------------------------------------
+SECTION SHAPE
+------------------------------------------------------------------------------
+
+  HOOK | The proof can disappear before the experience  14 paragraphs   134 words
+  THE BOUNDARY | Preparation is not extraction           6 paragraphs   124 words
+  1 | Capture the contribution, not the calendar        19 paragraphs   190 words
+  2 | Qualify the claim                                 22 paragraphs   187 words
+  3 | Make it retrievable                               15 paragraphs   177 words
+  WHEN THE EVIDENCE IS THIN                             11 paragraphs   166 words
+  ACTION AND RESOURCE                                    8 paragraphs    87 words
+  WATCH NEXT | Final visual                              3 paragraphs    41 words
+
+==============================================================================

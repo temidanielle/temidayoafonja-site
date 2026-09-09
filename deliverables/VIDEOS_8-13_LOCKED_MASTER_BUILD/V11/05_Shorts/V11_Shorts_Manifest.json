@@ -1,0 +1,68 @@
+{
+  "video": 11,
+  "built_from": "Video_11_FINAL_Revised_Recording_Master.docx",
+  "priority_a": 4,
+  "priority_b": 2,
+  "shorts": [
+    {
+      "n": 1,
+      "priority": "A",
+      "title": "Does This Mean We Can Reduce the Team?",
+      "slug": "V11_Short_01_Can_We_Reduce_The_Team",
+      "source_section": "HOOK | If AI can produce the output, what still belongs to you?",
+      "words": 116,
+      "estimated_seconds": 42.2,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 2,
+      "priority": "A",
+      "title": "The Number Improved. The Work Did Not.",
+      "slug": "V11_Short_02_The_Mix_Changed",
+      "source_section": "DEMONSTRATION | Faster output, unfinished decision",
+      "words": 126,
+      "estimated_seconds": 45.8,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 3,
+      "priority": "A",
+      "title": "Produce, Interpret, Decide",
+      "slug": "V11_Short_03_Produce_Interpret_Decide",
+      "source_section": "HOOK and 1 to 3",
+      "words": 113,
+      "estimated_seconds": 41.1,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 4,
+      "priority": "A",
+      "title": "Who Owns the Consequence?",
+      "slug": "V11_Short_04_Who_Owns_The_Consequence",
+      "source_section": "3 | Decide: Who owns the consequence?",
+      "words": 101,
+      "estimated_seconds": 36.7,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 5,
+      "priority": "B",
+      "title": "Map One Recurring Output",
+      "slug": "V11_Short_05_Map_One_Output",
+      "source_section": "MAP YOUR ROLE | Do not look for an AI-proof job",
+      "words": 111,
+      "estimated_seconds": 40.4,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 6,
+      "priority": "B",
+      "title": "Do Not Look for an AI-Proof Job",
+      "slug": "V11_Short_06_No_AI_Proof_Job",
+      "source_section": "MAP YOUR ROLE | Do not look for an AI-proof job",
+      "words": 104,
+      "estimated_seconds": 37.8,
+      "duration_is_estimate_until_recorded": true
+    }
+  ]
+}

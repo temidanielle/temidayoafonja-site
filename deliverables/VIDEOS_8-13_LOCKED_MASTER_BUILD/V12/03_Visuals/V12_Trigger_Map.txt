@@ -1,0 +1,94 @@
+==============================================================================
+CURRENT-SCRIPT TRIGGER MAP
+Video 12  ·  What to Do When You Can’t Quit Your Job Yet
+Built against Video_12_FINAL_Revised_Recording_Master.docx  ·  September 9, 2026 locked final Recording Masters
+==============================================================================
+
+Every trigger below is an exact sentence from the locked master. The build
+verifies this and fails if one is not found, so no card can be cued by a
+sentence that was removed.
+
+SPOKEN TRIGGERS cue a visual. EDITORIAL CUES are production decisions and are
+not lines to listen for. They are separated deliberately.
+
+------------------------------------------------------------------------------
+SPOKEN TRIGGERS
+------------------------------------------------------------------------------
+
+  MG01  V12_MG01_Constraint_Versus_Conclusion.png
+        mode:    TRUE FULL SCREEN
+        cue:     “They are not the same thing.”
+        in the locked script: YES
+        exit:    Cut back to camera for the no-second-full-time-job line.
+
+  MG02  V12_MG02_Protection_First.png
+        mode:    TRUE FULL SCREEN
+        cue:     “This is not a request to tolerate an unsafe or harmful situation.”
+        in the locked script: YES
+        exit:    Cut back to camera for the cannot-interpret line.
+
+  MG03  V12_MG03_Protect_Bound_Prepare.png
+        mode:    TRUE FULL SCREEN
+        cue:     “You need to protect what must hold, put boundaries where you can, and prepare one possible next step.”
+        in the locked script: YES
+        exit:    Cut back to camera.
+
+  MG04  V12_MG04_What_Must_Hold.png
+        mode:    TRUE FULL SCREEN
+        cue:     “Write one sentence:”
+        in the locked script: YES
+        exit:    Cut back to camera for the second step.
+
+  MG05  V12_MG05_Make_The_Tradeoff_Visible.png
+        mode:    TRUE FULL SCREEN
+        cue:     “That makes the tradeoff visible.”
+        in the locked script: YES
+        exit:    Cut back to camera for the no-room-to-negotiate passage.
+
+  MG06  V12_MG06_Question_Not_Activity.png
+        mode:    TRUE FULL SCREEN
+        cue:     “Choose a question before you choose an activity.”
+        in the locked script: YES
+        exit:    Cut back to camera for the exchange-not-add passage.
+
+  MG07  V12_MG07_The_Four_Lines.png
+        mode:    TRUE FULL SCREEN
+        cue:     “Put four lines on a page:”
+        in the locked script: YES
+        exit:    Cut back to camera for the limited-capacity passage.
+
+  RES   V12_RESOURCE_Career_Decision_Evidence_Check.png
+        mode:    TRUE FULL SCREEN
+        cue:     “The free Career Decision Evidence Check is linked below.”
+        in the locked script: YES
+        exit:    Cut back to camera for the closing line.
+
+  WN    V12_WATCH_NEXT_Thirty_Day_Plan.png
+        mode:    TRUE FULL SCREEN, FINAL
+        cue:     “Watch “A 30-Day Plan to Test Your Next Career Move” next.”
+        in the locked script: YES
+        exit:    NONE. Final visual. No camera return, no outro.
+
+------------------------------------------------------------------------------
+EDITORIAL CUES, NOT SPOKEN TRIGGERS
+------------------------------------------------------------------------------
+
+These are camera, B-roll and pacing decisions taken from the script's
+structure. Do not treat any of them as a sentence to wait for.
+
+  Self-introduction. Temidayo introduces herself partway through, after the
+demonstration. Stay on camera. No graphic over it.
+
+  Section transitions. The hero framework card may return briefly at each
+section change, for about three seconds. That is an editorial decision, not a
+separate spoken cue.
+
+  Subscribe cue. Visual only, placed after the constraint-versus-conclusion
+reframe lands, once back on camera. It adds no spoken dialogue.
+
+  B-roll. Two to four meaningful full-screen moments where useful, not a
+quota, and never depicting an action the script prohibits.
+
+==============================================================================
+END
+==============================================================================

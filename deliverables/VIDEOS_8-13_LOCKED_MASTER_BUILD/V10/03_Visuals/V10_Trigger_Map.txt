@@ -1,0 +1,95 @@
+==============================================================================
+CURRENT-SCRIPT TRIGGER MAP
+Video 10  ·  Before a Layoff, Know What You Can Still Prove
+Built against Video_10_FINAL_Revised_Recording_Master.docx  ·  September 9, 2026 locked final Recording Masters
+==============================================================================
+
+Every trigger below is an exact sentence from the locked master. The build
+verifies this and fails if one is not found, so no card can be cued by a
+sentence that was removed.
+
+SPOKEN TRIGGERS cue a visual. EDITORIAL CUES are production decisions and are
+not lines to listen for. They are separated deliberately.
+
+------------------------------------------------------------------------------
+SPOKEN TRIGGERS
+------------------------------------------------------------------------------
+
+  MG01  V10_MG01_Access_Not_Experience.png
+        mode:    TRUE FULL SCREEN
+        cue:     “Your experience did not disappear.”
+        in the locked script: YES
+        exit:    Cut back to camera for the not-a-prediction line.
+
+  MG02  V10_MG02_Preparation_Is_Not_Extraction.png
+        mode:    TRUE FULL SCREEN
+        cue:     “Access to a document does not mean you are entitled to keep it.”
+        in the locked script: YES
+        exit:    Cut back to camera for the get-guidance line.
+
+  MG03  V10_MG03_Capture_Qualify_Retrieve.png
+        mode:    TRUE FULL SCREEN
+        cue:     “It is a simple evidence habit:”
+        in the locked script: YES
+        exit:    Cut back to camera.
+
+  MG04  V10_MG04_Calendar_Versus_Contribution.png
+        mode:    TRUE FULL SCREEN
+        cue:     “That is a calendar entry. It tells me where you spent time, not what you contributed.”
+        in the locked script: YES
+        exit:    Cut back to camera for what the record does not claim.
+        label:   ILLUSTRATION, NOT A REAL CASE
+
+  MG05  V10_MG05_Confirmed_Qualified_Not_Verified.png
+        mode:    TRUE FULL SCREEN
+        cue:     “Now put one of three labels beside the result:”
+        in the locked script: YES
+        exit:    Cut back to camera for the attribution passage.
+
+  MG06  V10_MG06_Name_It_By_The_Problem.png
+        mode:    TRUE FULL SCREEN
+        cue:     ““Conflicting handoff criteria” is more useful than “Project Alpha,” especially to somebody outside the company.”
+        in the locked script: YES
+        exit:    Cut back to camera for the worked entry.
+
+  MG07  V10_MG07_Two_Reasons_Evidence_Is_Thin.png
+        mode:    TRUE FULL SCREEN
+        cue:     “Do not solve both problems by writing a stronger sentence.”
+        in the locked script: YES
+        exit:    Cut back to camera for the already-laid-off passage.
+
+  RES   V10_RESOURCE_Keep_The_Proof.png
+        mode:    TRUE FULL SCREEN
+        cue:     “Keep the Proof is linked below. It gives you the deeper evidence system and reusable ledger.”
+        in the locked script: YES
+        exit:    Cut back to camera for the two closing lines.
+
+  WN    V10_WATCH_NEXT_AI_Can_Do_The_Task.png
+        mode:    TRUE FULL SCREEN, FINAL
+        cue:     “Watch “AI Can Do the Task. What Are You Still Paid For?” next.”
+        in the locked script: YES
+        exit:    NONE. Final visual. No camera return, no outro.
+
+------------------------------------------------------------------------------
+EDITORIAL CUES, NOT SPOKEN TRIGGERS
+------------------------------------------------------------------------------
+
+These are camera, B-roll and pacing decisions taken from the script's
+structure. Do not treat any of them as a sentence to wait for.
+
+  Self-introduction. Temidayo introduces herself partway through, after the
+demonstration. Stay on camera. No graphic over it.
+
+  Section transitions. The hero framework card may return briefly at each
+section change, for about three seconds. That is an editorial decision, not a
+separate spoken cue.
+
+  Subscribe cue. Visual only, placed after the calendar-versus-contribution
+rewrite lands, once back on camera. It adds no spoken dialogue.
+
+  B-roll. Two to four meaningful full-screen moments where useful, not a
+quota, and never depicting an action the script prohibits.
+
+==============================================================================
+END
+==============================================================================

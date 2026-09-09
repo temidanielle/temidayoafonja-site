@@ -1,0 +1,68 @@
+{
+  "video": 12,
+  "built_from": "Video_12_FINAL_Revised_Recording_Master.docx",
+  "priority_a": 4,
+  "priority_b": 2,
+  "shorts": [
+    {
+      "n": 1,
+      "priority": "A",
+      "title": "A Constraint Is Not a Conclusion",
+      "slug": "V12_Short_01_Constraint_Versus_Conclusion",
+      "source_section": "HOOK | I cannot leave yet is not the same as nothing can change",
+      "words": 97,
+      "estimated_seconds": 35.3,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 2,
+      "priority": "A",
+      "title": "Name the Constraint Precisely",
+      "slug": "V12_Short_02_Protect_What_Must_Hold",
+      "source_section": "1 | Protect what must hold",
+      "words": 124,
+      "estimated_seconds": 45.1,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 3,
+      "priority": "A",
+      "title": "Make the Tradeoff Visible",
+      "slug": "V12_Short_03_Make_The_Tradeoff_Visible",
+      "source_section": "2 | Bound what you can",
+      "words": 124,
+      "estimated_seconds": 45.1,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 4,
+      "priority": "A",
+      "title": "The Four-Line Private Plan",
+      "slug": "V12_Short_04_The_Four_Lines",
+      "source_section": "THE PLAN | Four lines",
+      "words": 106,
+      "estimated_seconds": 38.5,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 5,
+      "priority": "B",
+      "title": "Choose a Question, Not an Activity",
+      "slug": "V12_Short_05_A_Question_Not_An_Activity",
+      "source_section": "3 | Prepare one possible next step",
+      "words": 119,
+      "estimated_seconds": 43.3,
+      "duration_is_estimate_until_recorded": true
+    },
+    {
+      "n": 6,
+      "priority": "B",
+      "title": "What a Plan Cannot Do",
+      "slug": "V12_Short_06_What_This_Cannot_Do",
+      "source_section": "WHAT THIS DOES AND DOES NOT DO",
+      "words": 108,
+      "estimated_seconds": 39.3,
+      "duration_is_estimate_until_recorded": true
+    }
+  ]
+}

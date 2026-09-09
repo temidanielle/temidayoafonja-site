@@ -1,0 +1,95 @@
+==============================================================================
+CURRENT-SCRIPT TRIGGER MAP
+Video 8  ·  How to Show Your Impact at Work When You Built It From Scratch
+Built against Video_8_FINAL_Revised_Recording_Master.docx  ·  September 9, 2026 locked final Recording Masters
+==============================================================================
+
+Every trigger below is an exact sentence from the locked master. The build
+verifies this and fails if one is not found, so no card can be cued by a
+sentence that was removed.
+
+SPOKEN TRIGGERS cue a visual. EDITORIAL CUES are production decisions and are
+not lines to listen for. They are separated deliberately.
+
+------------------------------------------------------------------------------
+SPOKEN TRIGGERS
+------------------------------------------------------------------------------
+
+  MG01  V8_MG01_Now_It_Looks_Easy.png
+        mode:    TRUE FULL SCREEN
+        cue:     “And that is exactly why your contribution can become harder to see.”
+        in the locked script: YES
+        exit:    Cut back to camera for the review and interview scene.
+
+  MG02  V8_MG02_Output_Versus_Problem.png
+        mode:    TRUE FULL SCREEN
+        cue:     “It names an output. It does not tell you why that output was needed or what had to be worked out before it could exist.”
+        in the locked script: YES
+        exit:    Cut back to camera for the self-introduction.
+
+  MG03  V8_MG03_Reconstruct_The_Before.png
+        mode:    TRUE FULL SCREEN
+        cue:     “The weak version is:”
+        in the locked script: YES
+        exit:    Cut back to camera for the sentence stem.
+        label:   ILLUSTRATION, NOT A REAL CASE
+
+  MG04  V8_MG04_Show_The_Judgment.png
+        mode:    TRUE FULL SCREEN
+        cue:     “So ask:”
+        in the locked script: YES
+        exit:    Cut back to camera for the attribution warning.
+
+  MG05  V8_MG05_Existence_Use_Effect.png
+        mode:    TRUE FULL SCREEN
+        cue:     “They are not interchangeable.”
+        in the locked script: YES
+        exit:    Cut back to camera for the prevention-work passage.
+
+  MG06  V8_MG06_Four_Sentences.png
+        mode:    TRUE FULL SCREEN
+        cue:     “Now put it together:”
+        in the locked script: YES
+        exit:    Cut back to camera for the worked example.
+
+  MG07  V8_MG07_Where_The_Evidence_Ends.png
+        mode:    TRUE FULL SCREEN
+        cue:     “That last sentence does not weaken the story. It tells the listener exactly where the evidence ends.”
+        in the locked script: YES
+        exit:    Cut back to camera for the strip-the-acronyms test.
+
+  RES   V8_RESOURCE_Keep_The_Proof.png
+        mode:    TRUE FULL SCREEN
+        cue:     “Keep the Proof is linked below if you want the deeper evidence system and reusable ledger.”
+        in the locked script: YES
+        exit:    Cut back to camera for the two closing lines.
+
+  WN    V8_WATCH_NEXT_Change_Industries.png
+        mode:    TRUE FULL SCREEN, FINAL
+        cue:     “Watch “How to Change Industries Without Starting Over” next.”
+        in the locked script: YES
+        exit:    NONE. This is the final visual. No camera return, no outro, nothing after it.
+
+------------------------------------------------------------------------------
+EDITORIAL CUES, NOT SPOKEN TRIGGERS
+------------------------------------------------------------------------------
+
+These are camera, B-roll and pacing decisions taken from the script's
+structure. Do not treat any of them as a sentence to wait for.
+
+  Self-introduction. Temidayo introduces herself partway through, after the
+demonstration. Stay on camera. No graphic over it.
+
+  Section transitions. The hero framework card may return briefly at each
+section change, for about three seconds. That is an editorial decision, not a
+separate spoken cue.
+
+  Subscribe cue. Visual only, placed after the output-versus-problem
+demonstration lands, once back on camera. It adds no spoken dialogue.
+
+  B-roll. Two to four meaningful full-screen moments where useful, not a
+quota, and never depicting an action the script prohibits.
+
+==============================================================================
+END
+==============================================================================

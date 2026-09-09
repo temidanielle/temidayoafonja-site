@@ -1,0 +1,21 @@
+{
+  "Period 1": {
+    "eligible": 100,
+    "met_target": 60,
+    "category_rates": {
+      "Routine": 0.9,
+      "Complex": 0.4
+    },
+    "rate": 0.6
+  },
+  "Period 2": {
+    "eligible": 100,
+    "met_target": 80,
+    "category_rates": {
+      "Routine": 0.9,
+      "Complex": 0.4
+    },
+    "rate": 0.8
+  },
+  "change_percentage_points": 20.0
+}
