@@ -94,6 +94,14 @@ evidence.
     deliverables/Videos_4-7_Sep09_Synchronized_Handoff.zip
     4f1f7b1ca3d67726086d1d802fca711fccd85b5b7d381ed4e5cae096f5bec2b2
     deliverables/V4-V7_SEP09_SYNC_MANIFEST.md
+    deliverables/V4-V7_Sep09_Synchronization_Summary.docx
+    deliverables/Videos_4-7_Sep09_COMPLETE_Handoff.zip
+    9ea0c843e1ff55829b8708c86052531afa64c7bc4c10beaa72af87eae873912e
+
+`Videos_4-7_Sep09_COMPLETE_Handoff.zip` is the single archive: the summary
+document and the manifest at its root, plus all four complete packages.
+`Videos_4-7_Sep09_Synchronized_Handoff.zip` is the same four packages without
+the summary, and is kept because the manifest and summary cite it by hash.
 
 Superseded material is isolated in `deliverables/SUPERSEDED_DO_NOT_USE/` as
 `OLD_Sep08_V4-V7_Scripts/` and `OLD_Sep08_Packages/`, each with a notice. Every
