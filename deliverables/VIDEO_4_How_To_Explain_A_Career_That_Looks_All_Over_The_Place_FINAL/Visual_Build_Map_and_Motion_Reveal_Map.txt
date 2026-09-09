@@ -1,0 +1,675 @@
+==============================================================================
+VISUAL BUILD MAP AND MOTION / REVEAL MAP
+Video 4  ·  How to Explain a Career That Looks All Over the Place
+Synchronized to V4_Recording_Master_LOCKED_2026-09-09.docx  ·  September 9, 2026
+==============================================================================
+
+10 support and reference assets: 8 teaching frames plus a CTA card and a Watch
+Next card. These are reference frames for Riverside and Co-Creator, not a
+slideshow covering the whole video. Riverside builds the finished animated
+scenes; these are the guide and the fallback.
+
+------------------------------------------------------------------------------
+THE RULE THAT MATTERS MOST
+------------------------------------------------------------------------------
+
+TRUE FULL-SCREEN GRAPHICS
+
+Hide the camera visually during every substantive framework, comparison,
+multi-point question, CTA and Watch Next scene. That means all of the
+following:
+
+  - the visual occupies the ENTIRE 16:9 canvas
+  - Temidayo is NOT visible moving behind it
+  - Temidayo is NOT visible around the sides or the edges
+  - there is NO smaller graphic or video rectangle floating over her footage
+  - the visual is its own scene, not an overlay
+  - her voice continues underneath
+  - then cut cleanly back to her
+
+Substantive B-roll also fills the entire frame, on the same rule.
+
+Short single-line callouts may sit over camera. Nothing else may.
+
+The instruction to give Co-Creator is not "make the graphic full screen." It is:
+
+  "HIDE / REMOVE THE CAMERA VISUALLY DURING THIS SCENE. The motion graphic or
+   B-roll must be the only visual filling the entire 16:9 canvas." 
+
+------------------------------------------------------------------------------
+MOBILE CLARITY
+
+Use large, bold typography, short phrases, high contrast, and one dominant idea
+per reveal.
+
+The main point should register quickly. But detailed comparisons need adequate
+reading time. Do not force all the information into a one- or two-second
+display, and do not shrink a comparison so that it fits a shorter hold.
+
+Do not rely on tiny labels or footer text.
+
+Check actual normal-phone-size previews rather than declaring success from font
+size alone. The reference assets in this package were checked that way: each
+frame was rendered at 1920 x 1080, downscaled to 390 points wide, and read at
+that size.
+
+------------------------------------------------------------------------------
+ZOOM-INS AND ZOOM-OUTS ON TEMIDAYO
+
+Use gentle push-ins on important insights, tension points and reframes. Use
+occasional pull-backs, or a return to the base composition, to reset the
+framing.
+
+Plan approximately 3 to 5 deliberate camera-emphasis beats across the ENTIRE
+long-form video. That is the whole budget. It is not three to five punch-ins
+plus a separate quota of zooms.
+
+Keep the motion smooth, minimal and intentional. Preserve comfortable headroom
+and source image quality.
+
+No aggressive zooms. No constant pulsing. No camera movement visible behind
+full-screen graphics.
+
+------------------------------------------------------------------------------
+SOUND AND MUSIC
+
+Plan approximately 4 to 7 restrained sound accents in total across the whole
+video, INCLUDING the Subscribe cue. That is the whole budget. Do not allocate
+four to seven sounds to every section, and not one per caption or per cut.
+
+Use them on selected entrances, transitions or payoffs. Keep the voice
+dominant, sound effects quieter than speech, and music subtle.
+
+Never invent music-license information. Add a music credit only when the real
+track and license from the finished project are known.
+
+------------------------------------------------------------------------------
+ONE VISUAL SUBSCRIBE CUE
+
+Add one brief, readable visual Subscribe cue after the modeled twenty-second answer and its intentional silence, once meaningful value has been
+delivered.
+
+This is a visual only. It is NOT new spoken dialogue and the recording script
+is not modified for it.
+
+  - about one second
+  - premium, small and restrained
+  - a subtle fade, slide or gentle scale, with a quiet click or soft pop
+
+Do not interrupt the speech. Do not cover important text. Do not create another
+closing CTA sequence. It counts inside the 4 to 7 sound budget.
+
+------------------------------------------------------------------------------
+MEANINGFUL B-ROLL
+
+Use approximately 2 to 4 meaningful full-screen moments where they are useful.
+This is a guide, not a quota. If a shot does not add meaning, use a motion
+graphic or stay on camera.
+
+Avoid generic handshakes, fake boardrooms, meaningless typing, cliche resume
+footage, AI-looking people, and invented private documents presented as
+authentic.
+
+Where a designed illustration could be mistaken for a real document or event,
+label it as an illustration.
+
+------------------------------------------------------------------------------
+CAPTIONS AND SUBTITLE FILES
+
+Suppress competing designed or burned-in captions during major graphics,
+substantive B-roll, the CTA and Watch Next. Captions must never compete with
+designed text.
+
+A separately delivered subtitle transcript must still include the COMPLETE
+spoken content. Do not delete spoken words from the transcript merely because a
+graphic replaces the camera on screen.
+
+------------------------------------------------------------------------------
+SCENES, IN THE LOCKED ORDER
+------------------------------------------------------------------------------
+
+==============================================================================
+MG01   V4_MG01_Introduction_Or_Defense.png
+==============================================================================
+
+  STATUS
+    REBUILD
+    The old frame carried STOP EXPLAINING YOUR CAREER IN ORDER, which the
+    locked script no longer says and now actively contradicts: the ninety-
+    second answer uses compressed Chapters on purpose. Rebuilt on the
+    opening beat the script does have.
+
+  ON-SCREEN IDEA
+    LESS LIKE AN INTRODUCTION. MORE LIKE A DEFENSE.
+
+  SPOKEN TRIGGER
+    “Now your answer feels less like an introduction and more like a
+    defense.”
+
+  PURPOSE
+    Names the problem the whole video solves, in the viewer's own
+    experience, inside the first thirty seconds.
+
+  TREATMENT
+    TRUE FULL-SCREEN motion graphic.
+
+    Hide or remove the camera visually during this scene. This graphic
+    must be the only visual filling the entire 16:9 canvas. Temidayo must
+    not be visible behind it or around its edges. Her audio continues
+    underneath.
+
+  REVEAL ORDER
+    Three lines one at a time, 0.5s apart. Supporting line at 2.2s.
+
+  APPROXIMATE HOLD
+    6 to 7 seconds
+
+    Hold length serves reading time. If the animation cannot hold a reveal
+    state as designed, lengthen the hold rather than shrinking the type.
+
+  AFTER THIS SCENE
+    Cut back to camera for the scripted [Pause.] The pause is performed on
+    camera, not over this graphic.
+
+  CAPTIONS
+    Suppress for the full hold.
+
+  SOUND
+    Soft impact as the third line lands.
+
+  BRAND
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat display, DM Sans body. Large type only. Motion is fade,
+    slide and gentle scale.
+
+==============================================================================
+MG02   V4_MG02_Chapters_Spine_Next_Direction.png
+==============================================================================
+
+  STATUS
+    COPY UPDATE
+    Design unchanged. The closing line said "The detail changes. The
+    structure does not.", which asserts a fixed order. The locked script
+    says the ingredients stay the same while the order and the amount of
+    detail depend on the question.
+
+  ON-SCREEN IDEA
+    CHAPTERS / SPINE / NEXT DIRECTION
+
+  SPOKEN TRIGGER
+    “All three answers use the same ingredients:”
+
+  PURPOSE
+    The hero framework, stated as ingredients rather than as a fixed
+    running order.
+
+  TREATMENT
+    TRUE FULL-SCREEN motion graphic.
+
+    Hide or remove the camera visually during this scene. This graphic
+    must be the only visual filling the entire 16:9 canvas. Temidayo must
+    not be visible behind it or around its edges. Her audio continues
+    underneath.
+
+  REVEAL ORDER
+    One word at a time, 0.9s apart. Closing line at 3.2s. Hold the
+    complete set.
+
+  APPROXIMATE HOLD
+    9 to 10 seconds first time, 3 seconds on each return.
+
+    Hold length serves reading time. If the animation cannot hold a reveal
+    state as designed, lengthen the hold rather than shrinking the type.
+
+  AFTER THIS SCENE
+    Cut back to camera.
+
+  CAPTIONS
+    Suppress.
+
+  SOUND
+    One accent per word, then a resolve.
+
+  BRAND
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat display, DM Sans body. Large type only. Motion is fade,
+    slide and gentle scale.
+
+==============================================================================
+MG03   V4_MG03_Order_Depends_On_The_Question.png
+==============================================================================
+
+  STATUS
+    REBUILD
+    New. The locked script draws a distinction the previous package had no
+    asset for and its framework card actively denied: the quick
+    introduction leads with the Spine, the longer answer uses Chapters to
+    make the Spine visible. This is the correction the brief asks for,
+    carried as one frame rather than a note.
+
+  ON-SCREEN IDEA
+    QUICK INTRODUCTION: lead with the Spine / LONGER ANSWER: use Chapters
+    to make the Spine visible
+
+  SPOKEN TRIGGER
+    “For a quick introduction, I lead with the Spine.”
+
+  PURPOSE
+    Replaces the retired fixed-order rule with what the script actually
+    teaches.
+
+  TREATMENT
+    TRUE FULL-SCREEN motion graphic.
+
+    Hide or remove the camera visually during this scene. This graphic
+    must be the only visual filling the entire 16:9 canvas. Temidayo must
+    not be visible behind it or around its edges. Her audio continues
+    underneath.
+
+  REVEAL ORDER
+    Left column first, held alone 1.4s. Right column at 1.8s. Closing line
+    at 3.4s.
+
+  APPROXIMATE HOLD
+    9 to 10 seconds
+
+    Hold length serves reading time. If the animation cannot hold a reveal
+    state as designed, lengthen the hold rather than shrinking the type.
+
+  AFTER THIS SCENE
+    Cut back to camera.
+
+  CAPTIONS
+    Suppress.
+
+  SOUND
+    One accent as the right column arrives, one resolve on the closing
+    line.
+
+  BRAND
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat display, DM Sans body. Large type only. Motion is fade,
+    slide and gentle scale.
+
+==============================================================================
+MG04   V4_MG04_Twenty_Second_Version.png
+==============================================================================
+
+  STATUS
+    REUSE
+    Artwork unchanged. Renumbered only, because the rebuilt opening and
+    the new order frame sit ahead of it.
+
+  ON-SCREEN IDEA
+    I ...  /  I've done that in ...  /  Today I ...
+
+  SPOKEN TRIGGER
+    ““I…” and then the work pattern.”
+
+  PURPOSE
+    The template a viewer will pause and screenshot.
+
+  TREATMENT
+    TRUE FULL-SCREEN motion graphic.
+
+    Hide or remove the camera visually during this scene. This graphic
+    must be the only visual filling the entire 16:9 canvas. Temidayo must
+    not be visible behind it or around its edges. Her audio continues
+    underneath.
+
+  REVEAL ORDER
+    One stem at a time, 1.0s apart. Closing line at 3.6s.
+
+  APPROXIMATE HOLD
+    10 to 12 seconds. The longest hold in the video.
+
+    Hold length serves reading time. If the animation cannot hold a reveal
+    state as designed, lengthen the hold rather than shrinking the type.
+
+  AFTER THIS SCENE
+    Cut back to camera.
+
+  CAPTIONS
+    Suppress. This frame gets screenshotted.
+
+  SOUND
+    One soft accent per stem.
+
+  BRAND
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat display, DM Sans body. Large type only. Motion is fade,
+    slide and gentle scale.
+
+==============================================================================
+MG05   V4_MG05_Ninety_Second_Version.png
+==============================================================================
+
+  STATUS
+    REUSE
+    Artwork unchanged. Both closing claims are still spoken: three
+    chapters rather than seven, two examples rather than five.
+
+  ON-SCREEN IDEA
+    CHAPTERS / SPINE / NEXT DIRECTION
+
+  SPOKEN TRIGGER
+    “That is the ninety-second answer.”
+
+  PURPOSE
+    Shows the same ingredients carrying a longer answer, so the viewer
+    sees one system rather than three tricks.
+
+  TREATMENT
+    TRUE FULL-SCREEN motion graphic.
+
+    Hide or remove the camera visually during this scene. This graphic
+    must be the only visual filling the entire 16:9 canvas. Temidayo must
+    not be visible behind it or around its edges. Her audio continues
+    underneath.
+
+  REVEAL ORDER
+    Three words together at reduced weight, then the closing line at 1.4s
+    at full weight. Deliberately quieter than MG02.
+
+  APPROXIMATE HOLD
+    7 to 8 seconds
+
+    Hold length serves reading time. If the animation cannot hold a reveal
+    state as designed, lengthen the hold rather than shrinking the type.
+
+  AFTER THIS SCENE
+    Cut back to camera.
+
+  CAPTIONS
+    Suppress.
+
+  SOUND
+    One accent on the closing line only.
+
+  BRAND
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat display, DM Sans body. Large type only. Motion is fade,
+    slide and gentle scale.
+
+==============================================================================
+MG06   V4_MG06_The_Objection.png
+==============================================================================
+
+  STATUS
+    REUSE
+    Artwork unchanged and the question is still spoken verbatim. Its
+    position moved: the acquisition beat now opens the objection section,
+    so this frame lands after that beat rather than cold.
+
+  ON-SCREEN IDEA
+    WHY SO MANY CHANGES?
+
+  SPOKEN TRIGGER
+    ““Why so many changes?””
+
+  PURPOSE
+    Puts the actual question on screen, then reframes it before the answer
+    is taught.
+
+  TREATMENT
+    TRUE FULL-SCREEN motion graphic.
+
+    Hide or remove the camera visually during this scene. This graphic
+    must be the only visual filling the entire 16:9 canvas. Temidayo must
+    not be visible behind it or around its edges. Her audio continues
+    underneath.
+
+  REVEAL ORDER
+    Question first, alone, for 1.5s. Supporting line at 2.0s.
+
+  APPROXIMATE HOLD
+    6 to 7 seconds
+
+    Hold length serves reading time. If the animation cannot hold a reveal
+    state as designed, lengthen the hold rather than shrinking the type.
+
+  AFTER THIS SCENE
+    Cut back to camera.
+
+  CAPTIONS
+    Suppress.
+
+  SOUND
+    One restrained accent on the supporting line.
+
+  BRAND
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat display, DM Sans body. Large type only. Motion is fade,
+    slide and gentle scale.
+
+==============================================================================
+MG07   V4_MG07_Story_Explains_Proof_Supports.png
+==============================================================================
+
+  STATUS
+    REUSE
+    Artwork unchanged. Both lines are spoken verbatim in the locked
+    script.
+
+  ON-SCREEN IDEA
+    A STORY EXPLAINS. PROOF SUPPORTS.
+
+  SPOKEN TRIGGER
+    “A story explains.”
+
+  PURPOSE
+    The line that earns the resource bridge without turning the ending
+    into a pitch.
+
+  TREATMENT
+    TRUE FULL-SCREEN motion graphic.
+
+    Hide or remove the camera visually during this scene. This graphic
+    must be the only visual filling the entire 16:9 canvas. Temidayo must
+    not be visible behind it or around its edges. Her audio continues
+    underneath.
+
+  REVEAL ORDER
+    First line, second line at 1.0s, supporting line at 2.4s.
+
+  APPROXIMATE HOLD
+    7 to 8 seconds
+
+    Hold length serves reading time. If the animation cannot hold a reveal
+    state as designed, lengthen the hold rather than shrinking the type.
+
+  AFTER THIS SCENE
+    Cut back to camera.
+
+  CAPTIONS
+    Suppress.
+
+  SOUND
+    One clean accent between the two lines.
+
+  BRAND
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat display, DM Sans body. Large type only. Motion is fade,
+    slide and gentle scale.
+
+==============================================================================
+MG08   V4_MG08_All_Three_Versions.png
+==============================================================================
+
+  STATUS
+    REUSE
+    Artwork unchanged. The summary and the say-it-out-loud instruction are
+    both still spoken.
+
+  ON-SCREEN IDEA
+    20 SECONDS / 90 SECONDS / THE OBJECTION
+
+  SPOKEN TRIGGER
+    “So now you have all three.”
+
+  PURPOSE
+    Summary before the practice instruction.
+
+  TREATMENT
+    TRUE FULL-SCREEN motion graphic.
+
+    Hide or remove the camera visually during this scene. This graphic
+    must be the only visual filling the entire 16:9 canvas. Temidayo must
+    not be visible behind it or around its edges. Her audio continues
+    underneath.
+
+  REVEAL ORDER
+    Three together, then the closing line at 1.6s.
+
+  APPROXIMATE HOLD
+    6 to 7 seconds
+
+    Hold length serves reading time. If the animation cannot hold a reveal
+    state as designed, lengthen the hold rather than shrinking the type.
+
+  AFTER THIS SCENE
+    Cut back to camera.
+
+  CAPTIONS
+    Suppress.
+
+  SOUND
+    One accent as the set completes.
+
+  BRAND
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat display, DM Sans body. Large type only. Motion is fade,
+    slide and gentle scale.
+
+==============================================================================
+CTA   V4_CTA_Career_Evidence_Starter.png
+==============================================================================
+
+  STATUS
+    REUSE
+    Artwork unchanged. The spoken participation CTA and the pinned
+    resource are both unchanged in the locked script. Keep the Proof stays
+    off this card and remains a description link only.
+
+  ON-SCREEN IDEA
+    SHARE YOUR 20-SECOND VERSION / Free 10-Minute Career Evidence Starter
+    / temidayoafonja.com/career-evidence-starter
+
+  SPOKEN TRIGGER
+    “If you get your twenty-second version working, put it in the
+    comments.”
+
+  PURPOSE
+    Carries the spoken comment CTA and the pinned resource in one card.
+
+  TREATMENT
+    TRUE FULL-SCREEN motion graphic.
+
+    Hide or remove the camera visually during this scene. This graphic
+    must be the only visual filling the entire 16:9 canvas. Temidayo must
+    not be visible behind it or around its edges. Her audio continues
+    underneath.
+
+  REVEAL ORDER
+    Logomark, headline at 0.6s, URL at 2.0s.
+
+  APPROXIMATE HOLD
+    8 to 9 seconds
+
+    Hold length serves reading time. If the animation cannot hold a reveal
+    state as designed, lengthen the hold rather than shrinking the type.
+
+  AFTER THIS SCENE
+    Cut back to camera for the bridge into Watch Next.
+
+  CAPTIONS
+    Suppress. Never cover the address.
+
+  SOUND
+    One warm accent on the URL.
+
+  BRAND
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat display, DM Sans body. Large type only. Motion is fade,
+    slide and gentle scale.
+
+==============================================================================
+WN   V4_WatchNext_Why_Nobody_Can_Tell.png
+==============================================================================
+
+  STATUS
+    REUSE
+    Artwork unchanged. Routing is unchanged: Video 4 to Video 5.
+
+  ON-SCREEN IDEA
+    WATCH NEXT: WHY NOBODY CAN TELL WHAT YOU'RE ACTUALLY GOOD AT
+
+  SPOKEN TRIGGER
+    “Watch “Why Nobody Can Tell What You’re Actually Good At” next.”
+
+  PURPOSE
+    Final visual. The right of frame is left clear for the clickable end-
+    screen element.
+
+  TREATMENT
+    TRUE FULL-SCREEN motion graphic.
+
+    Hide or remove the camera visually during this scene. This graphic
+    must be the only visual filling the entire 16:9 canvas. Temidayo must
+    not be visible behind it or around its edges. Her audio continues
+    underneath.
+
+  REVEAL ORDER
+    Static. No animation on the final card.
+
+  APPROXIMATE HOLD
+    10 to 14 seconds, through both closing lines and past the last word.
+
+    Hold length serves reading time. If the animation cannot hold a reveal
+    state as designed, lengthen the hold rather than shrinking the type.
+
+  AFTER THIS SCENE
+    NONE. Final visual.
+
+  CAPTIONS
+    Suppress.
+
+  SOUND
+    None. Let the closing land dry.
+
+  BRAND
+    Deep navy #112345, warm cream #F5F1E8, restrained muted gold #C9A84C.
+    Montserrat display, DM Sans body. Large type only. Motion is fade,
+    slide and gentle scale.
+
+    This is the FINAL visual of the video. No return to camera, no outro,
+    nothing after it. Keep a clear area for the clickable end-screen
+    element.
+
+------------------------------------------------------------------------------
+EDITORIAL CUES, NOT GRAPHICS
+------------------------------------------------------------------------------
+
+These beats are deliberately not graphics. They are camera and B-roll
+decisions and they are not spoken triggers.
+
+  Opening pause
+      The scripted [Pause.] after "more like a defense" is performed on
+      camera. Hold the frame. It is not dead air and it is not a
+      graphic.
+
+  The modeled 20-second answer
+      Stay on camera through the whole modeled answer, then hold the
+      scripted [Hold a short silence.] on camera before "And stop." The
+      silence demonstrates the point of the section. Do not cut it, do
+      not fill it with a graphic, and do not shorten it.
+
+  The acquisition beat
+      The acquisition that eliminated an accepted role now introduces
+      the objection section. Play it on camera or as one restrained
+      full-screen B-roll moment. Do not name an employer, invent a loss,
+      or show a document. MG06 follows on the spoken question.
+
+==============================================================================
+END OF MAP
+==============================================================================

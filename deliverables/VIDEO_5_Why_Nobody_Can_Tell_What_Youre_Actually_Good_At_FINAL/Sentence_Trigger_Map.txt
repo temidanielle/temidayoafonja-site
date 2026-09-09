@@ -1,0 +1,101 @@
+==============================================================================
+CURRENT-SCRIPT SENTENCE TRIGGER MAP
+Video 5  ·  Why Nobody Can Tell What You're Actually Good At
+Synchronized to V5_Recording_Master_LOCKED_2026-09-09.docx  ·  September 9, 2026
+==============================================================================
+
+Every trigger below is a sentence that exists in the September 9 locked
+script. The build verifies this: if a trigger is not found in the spoken copy,
+the QA pass fails and the package is not delivered.
+
+Beats listed under EDITORIAL CUES are NOT spoken triggers. They are camera and
+B-roll decisions, and they are labelled so that nobody mistakes one for a line
+to listen for.
+
+------------------------------------------------------------------------------
+GRAPHIC TRIGGERS
+------------------------------------------------------------------------------
+
+  MG01   V5_MG01_Two_Versions_Of_The_Same_Career.png
+         status: REBUILD
+         cue:    “One describes where I have been.”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  MG02   V5_MG02_The_One_Line_Test.png
+         status: REORDER
+         cue:    “Claim. Spine. Receipts.”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  MG03   V5_MG03_Sharper_Versus_Defensible.png
+         status: REORDER
+         cue:    “So the sharper sentence was not the more defensible sentence.”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  MG04   V5_MG04_Sorting_Mechanism.png
+         status: REORDER
+         cue:    “If your career gives them five categories, they normally do not keep all five.”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  MG05   V5_MG05_Remove_The_Nouns.png
+         status: REUSE
+         cue:    “What broke it open was removing the nouns.”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  MG06   V5_MG06_Receipts.png
+         status: REUSE
+         cue:    “Each Receipt stands on its own.”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  MG07   V5_MG07_Test_The_Claim.png
+         status: COPY UPDATE
+         cue:    “Listen to their next question.”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  MG08   V5_MG08_Real_Limits.png
+         status: REUSE
+         cue:    “A better sentence cannot erase a weak market.”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  CTA    V5_CTA_Career_Evidence_Starter.png
+         status: REUSE
+         cue:    “If yes, write the Claim in the comments.”
+         in the locked script: YES
+         after:  Cut back to camera for the bridge into Watch Next.
+
+  WN     V5_WatchNext_Change_Jobs.png
+         status: REUSE
+         cue:    “Watch “How to Change Jobs Without Starting Your Career Over” next.”
+         in the locked script: YES
+         after:  NONE. Final visual.
+
+------------------------------------------------------------------------------
+EDITORIAL CUES, NOT SPOKEN TRIGGERS
+------------------------------------------------------------------------------
+
+  Opening introduction scene
+      The outdated-title introduction is a camera and B-roll beat,
+      including the scripted [Pause.] Do not put a graphic over it.
+
+  Respected but hard to place
+      "People can respect your experience and still have no idea what to
+      do with you" is carried as a short single-line callout over
+      camera. It is no longer a full-screen frame, because the two-
+      versions comparison now occupies that slot.
+
+  The three Receipts
+      Each Receipt and its qualifier are spoken over camera or
+      restrained B-roll. The figures and their scope qualifiers never go
+      on screen, where the qualifier would shrink below phone-readable
+      size.
+
+==============================================================================
+END OF TRIGGER MAP
+==============================================================================

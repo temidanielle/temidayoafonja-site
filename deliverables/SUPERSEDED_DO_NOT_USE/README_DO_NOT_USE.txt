@@ -77,3 +77,18 @@ The current packages are:
 
   deliverables/VIDEO_6_Before_You_Take_An_Internal_Role_FINAL/
   deliverables/VIDEO_7_Are_You_Growing_Or_Just_Being_Given_More_Work_FINAL/
+
+
+================================================================================
+SEPTEMBER 9, 2026  ·  THIRD ADDITION  ·  V4 TO V7 SCRIPTS BEFORE THE LOCK
+================================================================================
+
+  OLD_Sep08_V4-V7_Scripts/     the four Recording Masters that were active
+                               until the September 9 script lock
+
+Those four files are superseded as the spoken source of truth. Every active
+script is now named ..._LOCKED_2026-09-09.docx and lives in its own package
+folder. See OLD_Sep08_V4-V7_Scripts/README_DO_NOT_USE.txt.
+
+The September 8 packaging corrections recorded above remain accurate history.
+They describe packaging, not the current spoken scripts.

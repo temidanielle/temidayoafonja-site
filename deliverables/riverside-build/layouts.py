@@ -174,14 +174,22 @@ def quad(c, eye, headline, items, foot=None, dark=False):
               [(foot, S(42, color=accent, bold=True, spacing=1.2))])
 
 
-def numbered(c, eye, items, foot=None, dark=False, size=62, headline=None):
-    """Named steps or questions, numbered. No explanatory copy under each one."""
+def numbered(c, eye, items, foot=None, dark=False, size=62, headline=None,
+             foot_size=42, foot_strong=False):
+    """Named steps or questions, numbered. No explanatory copy under each one.
+
+    foot_strong promotes the closing line from quiet body copy to a display-
+    weight payoff. Defaults leave existing callers byte-identical.
+    """
     back, ink, dim, accent = _head(c, dark, eye)
     gutter, row_gap = 132, 40
     tw = CW - gutter
+    f_font = DISPLAY if foot_strong else BODY
+    f_ink = ink if foot_strong else dim
+    f_space = 1.16 if foot_strong else 1.34
     hh = TH(headline, CW, DISPLAY, 60, True, 1.12) if headline else 0
     hs = [TH(t, tw, DISPLAY, size, True, 1.12) for t in items]
-    fh = TH(foot, CW, BODY, 42, False, 1.34) if foot else 0
+    fh = TH(foot, CW, f_font, foot_size, foot_strong, f_space) if foot else 0
     gap_head, gap_foot = 56, 62
     total = ((hh + gap_head) if headline else 0) + sum(hs) \
         + row_gap * (len(items) - 1) + (gap_foot + fh if foot else 0)
@@ -198,7 +206,8 @@ def numbered(c, eye, items, foot=None, dark=False, size=62, headline=None):
         y += h + row_gap
     if foot:
         block(c, MARGIN, y - row_gap + gap_foot, CW,
-              [(foot, S(42, BODY, dim, spacing=1.34))])
+              [(foot, S(foot_size, f_font, f_ink, bold=foot_strong,
+                        spacing=f_space))])
 
 
 def readings(c, eye, headline, rows_, dark=False):

@@ -1,0 +1,149 @@
+{
+  "video": 6,
+  "title": "Before You Take an Internal Role, Ask These 3 Questions",
+  "synchronized_to": {
+    "script_file_used": "V6_Recording_Master_LOCKED_2026-09-09.docx",
+    "handoff_archive": "YouTube_Roadmap_and_V4V7_Lock_Sep09_2026.zip",
+    "lock_date": "2026-09-09",
+    "canonical_sha256": "ce3639c3de1e35fc0ee1b33b886c909283510174da58f37d4265ea27512513ed",
+    "matches_lock_manifest": true,
+    "script_section_sha256": "766d3e4a86af004ba91abd50f8aa28dbd8552a1e954ef1d7e4c45ad580f464ba",
+    "original_source_filename": "Video_6_Before_You_Take_An_Internal_Role_FINAL_Revised_Recording_Master(1).docx",
+    "original_source_sha256": "766d75628c1c1177ce9c354fe2759f177ebfd743ee76341af50cde1200605a1c"
+  },
+  "spoken": {
+    "words": 1151,
+    "speech_only_estimate": "7:56 to 8:51 at 130 to 145 wpm",
+    "estimate_is_not_a_measurement": true,
+    "printed_cover_target": "Approximately 10:30-11:30 finished. Do not pad to force runtime.",
+    "sections": [
+      "HOOK",
+      "WHY AN INTERNAL MOVE CAN BE A REAL CAREER MOVE",
+      "QUESTION 1: WILL THE WORK CHANGE?",
+      "QUESTION 2: WILL YOUR JUDGMENT EXPAND?",
+      "QUESTION 3: WILL THE EVIDENCE TRAVEL?",
+      "READ THE THREE ANSWERS",
+      "WHAT THIS TEST CANNOT SOLVE",
+      "ONE NEXT STEP + CTA",
+      "WATCH NEXT"
+    ],
+    "delivery_directions": []
+  },
+  "packaging": {
+    "thumbnail": "NEW TITLE, SAME WORK?",
+    "thumbnail_rebuilt": false,
+    "resource": {
+      "name": "Career Decision Evidence Check",
+      "url": "https://temidayoafonja.com/career-decisions"
+    },
+    "secondary_resource": null,
+    "watch_next": "Are You Growing, or Just Being Given More Work?",
+    "watch_next_slot": "Video 7",
+    "watch_next_url": null
+  },
+  "assets": [
+    {
+      "file": "V6_MG01_New_Title_Same_Work.png",
+      "status": "COPY UPDATE",
+      "was": "V6_MG01_New_Title_Same_Work.png",
+      "sha256": "b29329bd0d1004f2a4aba2a5bf9f6b968b719e5503b6cf9c8e62db175fdd330c"
+    },
+    {
+      "file": "V6_MG02_Three_Questions.png",
+      "status": "REUSE",
+      "was": "V6_MG02_Three_Questions.png",
+      "sha256": "bef661ae4796cc502c2e749bf42a72935322b2f1ccf90babb5494179fc9704d4"
+    },
+    {
+      "file": "V6_MG03_Ordinary_Monday.png",
+      "status": "REUSE",
+      "was": "V6_MG03_Ordinary_Monday.png",
+      "sha256": "50d06e13438099752be758b592cfa24ef97d671b42a6c07129a1033786e903da"
+    },
+    {
+      "file": "V6_MG04_Tasks_Vs_Judgment.png",
+      "status": "REUSE",
+      "was": "V6_MG04_Tasks_Vs_Judgment.png",
+      "sha256": "d401791fe0b5fc41bfa5dc87702ec6771a390ee6f68bf2e47cb90383caf8c8e9"
+    },
+    {
+      "file": "V6_MG05_Portable_Evidence.png",
+      "status": "REUSE",
+      "was": "V6_MG05_Portable_Evidence.png",
+      "sha256": "62964f6a6538ca88b72dfa5aa686b7603100da5a6c332d0172f5b748ac3bc5d3"
+    },
+    {
+      "file": "V6_MG06_Decision_Read.png",
+      "status": "COPY UPDATE",
+      "was": "V6_MG06_Decision_Read.png",
+      "sha256": "8df208c2f706880d05b3ed41939d4508361e6683f5b2de93c1bd53746cc6d273"
+    },
+    {
+      "file": "V6_MG07_Questions_To_Ask.png",
+      "status": "COPY UPDATE",
+      "was": "V6_MG07_Questions_To_Ask.png",
+      "sha256": "cce03aa0454375419f1454c6aa10b22982c4039bfe5a878d6f00b6d9a6120512"
+    },
+    {
+      "file": "V6_CTA_Career_Decision_Evidence_Check.png",
+      "status": "REUSE",
+      "was": "V6_CTA_Career_Decision_Evidence_Check.png",
+      "sha256": "e845ab66c3101826d85dbc5b5d994996ad4d61dfaf53a00108447d3c2df749f7"
+    },
+    {
+      "file": "V6_WATCH_NEXT_Are_You_Growing.png",
+      "status": "REUSE",
+      "was": "V6_WATCH_NEXT_Are_You_Growing.png",
+      "sha256": "ea2ad5348438819c95c104513b3205eabd637ed93fce0f0141ee1f46c9b59f97"
+    }
+  ],
+  "shorts": [
+    {
+      "slug": "V6_Short_01_A_Year_From_Now",
+      "status": "REBUILD",
+      "priority": "A",
+      "estimated_seconds": 42.2
+    },
+    {
+      "slug": "V6_Short_02_Three_Questions",
+      "status": "COPY UPDATE",
+      "priority": "A",
+      "estimated_seconds": 46.2
+    },
+    {
+      "slug": "V6_Short_03_Responsibility_Is_Not_Judgment",
+      "status": "COPY UPDATE",
+      "priority": "A",
+      "estimated_seconds": 43.3
+    },
+    {
+      "slug": "V6_Short_04_The_Ordinary_Monday_Test",
+      "status": "COPY UPDATE",
+      "priority": "B",
+      "estimated_seconds": 45.5
+    },
+    {
+      "slug": "V6_Short_05_Will_The_Evidence_Travel",
+      "status": "REBUILD",
+      "priority": "B",
+      "estimated_seconds": 51.6
+    },
+    {
+      "slug": "V6_Short_06_You_May_Not_Need_To_Leave",
+      "status": "COPY UPDATE",
+      "priority": "B",
+      "estimated_seconds": 38.9
+    }
+  ],
+  "not_verified_here": [
+    "recorded audio",
+    "executed animation",
+    "audio balance",
+    "final pacing",
+    "actual finished runtime",
+    "caption placement",
+    "chapter timestamps",
+    "live reachability of linked destinations",
+    "thumbnail artwork"
+  ]
+}

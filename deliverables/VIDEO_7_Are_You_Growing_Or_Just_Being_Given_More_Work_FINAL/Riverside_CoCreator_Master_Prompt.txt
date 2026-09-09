@@ -1,7 +1,7 @@
 ==============================================================================
 RIVERSIDE CO-CREATOR MASTER PROMPT
 Video 7  ·  Are You Growing, or Just Being Given More Work?
-Revised package v2.0  ·  September 8, 2026
+Synchronized to V7_Recording_Master_LOCKED_2026-09-09.docx  ·  September 9, 2026
 ==============================================================================
 
 ------------------------------------------------------------------------------
@@ -13,15 +13,12 @@ or Just Being Given More Work?". The speaker is Temidayo Afonja, teaching to
 camera. Please follow these rules exactly.
 
 MOST IMPORTANT RULE. Every motion graphic, every substantive B-roll shot, the
-CTA card and the Watch Next card must be TRUE FULL SCREEN. That means: HIDE OR
-REMOVE THE CAMERA VISUALLY DURING THAT SCENE. The visual must be the only
-thing filling the entire 16:9 canvas. Do not put it in a smaller box floating
-over my camera footage. Do not leave me visible behind it. Do not leave me
-visible around the sides or edges. Treat each one as its own scene. My spoken
-audio continues underneath. Then cut cleanly back to me. Please check every
-graphic and every B-roll shot against this rule.
-
-The only visuals that may sit over my camera footage are short single-line
+CTA card and the Watch Next card must be TRUE FULL SCREEN. HIDE OR REMOVE THE
+CAMERA VISUALLY DURING THAT SCENE. The visual must be the only thing filling
+the entire 16:9 canvas. Do not put it in a smaller box over my camera footage.
+Do not leave me visible behind it or around the edges. Treat each one as its
+own scene. My voice continues underneath. Then cut cleanly back to me. The
+only visuals that may sit over my camera footage are short single-line
 callouts.
 
 PRESERVE THE SPEECH. The recorded wording is approved and final. Do not
@@ -29,187 +26,320 @@ shorten thoughtful explanations, do not tighten my sentences, and do not
 remove pauses that are doing work. Clean the audio and the transcript, and
 remove false starts, stumbles and dead air. Do not over-shorten.
 
-DO NOT GENERATE OR SYNTHESIZE ANY SPEECH. If the closing line, the CTA or the
-Watch Next handoff is missing from the recording, stop and tell me a pickup is
-needed. Do not create audio I did not record.
+DO NOT GENERATE OR SYNTHESIZE ANY SPEECH. If the closing lines, the CTA or the
+Watch Next handoff are missing from the recording, stop and tell me a pickup
+is needed. Do not create audio I did not record.
 
-PHONE READABILITY. Assume the viewer is on a phone. Keep type very large and
-bold, keep contrast high, and reveal multi-part ideas one part at a time. If
-something is hard to read at phone size, simplify it rather than shrinking it.
+PROTECTED MOMENTS. Protect "Praise is welcome. Praise alone is not role
+design." It is a major payoff and it has its own reveal state on the Return
+frame. Also protect the qualifications about temporary load, different forms
+of return, and real-life constraints. They are not filler.
 
-CAPTIONS. Suppress, simplify or move captions during full-screen graphics,
-substantive B-roll, the CTA and Watch Next. Captions must never sit over
+CAMERA-LED FORMAT
+
+Use 16:9 and export at least 1920 x 1080.
+
+Preserve meaning, thoughtful delivery and natural skin tone. Do not
+over-shorten the teaching. Do not apply a beauty-filter look. Restrained
+exposure, white balance, contrast, clarity, mild sharpening and mild noise
+reduction only.
+
+TRUE FULL-SCREEN GRAPHICS
+
+Hide the camera visually during every substantive framework, comparison,
+multi-point question, CTA and Watch Next scene. That means all of the
+following:
+
+  - the visual occupies the ENTIRE 16:9 canvas
+  - Temidayo is NOT visible moving behind it
+  - Temidayo is NOT visible around the sides or the edges
+  - there is NO smaller graphic or video rectangle floating over her footage
+  - the visual is its own scene, not an overlay
+  - her voice continues underneath
+  - then cut cleanly back to her
+
+Substantive B-roll also fills the entire frame, on the same rule.
+
+Short single-line callouts may sit over camera. Nothing else may.
+
+The instruction to give Co-Creator is not "make the graphic full screen." It is:
+
+  "HIDE / REMOVE THE CAMERA VISUALLY DURING THIS SCENE. The motion graphic or
+   B-roll must be the only visual filling the entire 16:9 canvas." 
+
+MOBILE CLARITY
+
+Use large, bold typography, short phrases, high contrast, and one dominant idea
+per reveal.
+
+The main point should register quickly. But detailed comparisons need adequate
+reading time. Do not force all the information into a one- or two-second
+display, and do not shrink a comparison so that it fits a shorter hold.
+
+Do not rely on tiny labels or footer text.
+
+Check actual normal-phone-size previews rather than declaring success from font
+size alone. The reference assets in this package were checked that way: each
+frame was rendered at 1920 x 1080, downscaled to 390 points wide, and read at
+that size.
+
+ZOOM-INS AND ZOOM-OUTS ON TEMIDAYO
+
+Use gentle push-ins on important insights, tension points and reframes. Use
+occasional pull-backs, or a return to the base composition, to reset the
+framing.
+
+Plan approximately 3 to 5 deliberate camera-emphasis beats across the ENTIRE
+long-form video. That is the whole budget. It is not three to five punch-ins
+plus a separate quota of zooms.
+
+Keep the motion smooth, minimal and intentional. Preserve comfortable headroom
+and source image quality.
+
+No aggressive zooms. No constant pulsing. No camera movement visible behind
+full-screen graphics.
+
+SOUND AND MUSIC
+
+Plan approximately 4 to 7 restrained sound accents in total across the whole
+video, INCLUDING the Subscribe cue. That is the whole budget. Do not allocate
+four to seven sounds to every section, and not one per caption or per cut.
+
+Use them on selected entrances, transitions or payoffs. Keep the voice
+dominant, sound effects quieter than speech, and music subtle.
+
+Never invent music-license information. Add a music credit only when the real
+track and license from the finished project are known.
+
+MEANINGFUL B-ROLL
+
+Use approximately 2 to 4 meaningful full-screen moments where they are useful.
+This is a guide, not a quota. If a shot does not add meaning, use a motion
+graphic or stay on camera.
+
+Avoid generic handshakes, fake boardrooms, meaningless typing, cliche resume
+footage, AI-looking people, and invented private documents presented as
+authentic.
+
+Where a designed illustration could be mistaken for a real document or event,
+label it as an illustration.
+
+CAPTIONS AND SUBTITLE FILES
+
+Suppress competing designed or burned-in captions during major graphics,
+substantive B-roll, the CTA and Watch Next. Captions must never compete with
 designed text.
 
-PACING. Three to five subtle punch-ins. Two to four meaningful B-roll moments,
-each full screen. Four to seven restrained sound accents in total, all quieter
-than my voice.
+A separately delivered subtitle transcript must still include the COMPLETE
+spoken content. Do not delete spoken words from the transcript merely because a
+graphic replaces the camera on screen.
 
-SUBSCRIBE. One restrained visual Subscribe cue, about one second, small and
-premium, with a quiet click or soft pop, placed after the CAR test has been
-named and Complexity has landed. Never in the opening. No loud or cartoonish
-animation. This is a visual only and adds no dialogue.
+ENDING
 
-MUSIC. Subtle bed only, well under my voice. Never invent or add a music
-license code.
+Preserve the complete recorded CTA, the Watch Next handoff and the final spoken
+line.
 
-PICTURE. Keep it natural. Restrained exposure, white balance, contrast,
-clarity, mild sharpening and mild noise reduction only. Preserve my real skin
-tone. No beauty filtering.
+Watch Next is the final visual, with a clear area for the clickable video
+element. No camera return and no extra outro afterward.
 
-CHAPTERS. Do not generate chapters from the script. I will build them from the
-finished export.
+Remove unused waiting footage, but preserve the intentional final-card hold and
+a natural one- to two-second music fade where appropriate. Do not blindly cut
+at the last word if that destroys the planned ending.
 
-ENDING. The Watch Next card is the final visual. Do not cut back to me after
-it. Do not add an outro or a sting. Cut everything after my last spoken word:
-no dead air, no waiting, no false starts, no adjusting the camera.
+If required closing speech was not recorded, flag a real pickup. Do not invent
+or synthesize it.
 
-EXPORT. 1920x1080 minimum.
+TIMING FOLLOWS THE ACTUAL FOOTAGE
+
+Actual footage controls edit timing. The approved script controls intended
+meaning.
+
+If recorded speech differs materially from the master, flag the mismatch. Do
+not claim that unrecorded words can be restored.
+
+Do not build YouTube chapters from the script. Build them from the finished
+export.
+
+IF A CAPABILITY IS UNAVAILABLE
+
+If any instruction here cannot be executed in Co-Creator as written, say which
+one and name the specific fallback or manual step. Do not report an instruction
+as applied when it was not.
+
+Known fallbacks:
+  - If a reveal state cannot be animated separately, hold the built reference
+    frame longer rather than shrinking the type to fit a shorter hold.
+  - If the camera cannot be hidden for a scene, cut to the reference PNG full
+    frame for the hold rather than placing the graphic over the footage.
+  - If captions cannot be suppressed per scene, move them clear of the designed
+    text rather than letting them overlap it.
+
+ONE VISUAL SUBSCRIBE CUE
+
+Add one brief, readable visual Subscribe cue after Complexity, once meaningful value has been
+delivered.
+
+This is a visual only. It is NOT new spoken dialogue and the recording script
+is not modified for it.
+
+  - about one second
+  - premium, small and restrained
+  - a subtle fade, slide or gentle scale, with a quiet click or soft pop
+
+Do not interrupt the speech. Do not cover important text. Do not create another
+closing CTA sequence. It counts inside the 4 to 7 sound budget.
 
 ------------------------------------------------------------------------------
 PER-SCENE PROMPTS, ONE UPLOAD AT A TIME
 ------------------------------------------------------------------------------
 
 ------------------------------------------------------------------------------
-MG01   V7_MG01_Opening_Consequence.png
+MG01   V7_MG01_Opening_Consequence.png   [REUSE]
 ------------------------------------------------------------------------------
 
-  "Use this image when I say: Maybe it is. Or maybe the organization has
-  simply learned that you will absorb more.... HIDE OR REMOVE THE CAMERA
-  VISUALLY DURING THIS SCENE. This image must be the only visual filling the
-  entire 16:9 canvas. Do not place it in a box over my camera footage and do
-  not leave me visible behind it or around the edges. First block, then the
-  second at 1.6s after a deliberate pause. Two states only. Hold it for 7 to
-  8 seconds. Then cut cleanly back to me. Captions off."
-
-------------------------------------------------------------------------------
-MG02   V7_MG02_CAR_Framework.png
-------------------------------------------------------------------------------
-
-  "Use this image when I say: So use the CAR test: Complexity, Authority,
-  Return.... HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This
-  image must be the only visual filling the entire 16:9 canvas. Do not place
-  it in a box over my camera footage and do not leave me visible behind it
-  or around the edges. C, A and R one at a time, 0.9s apart. Hold the
-  complete set. Hold it for 9 to 11 seconds first time, 3 seconds on each
-  return.. Then cut cleanly back to me. Captions off."
-
-------------------------------------------------------------------------------
-MG03   V7_MG03_Complexity.png
-------------------------------------------------------------------------------
-
-  "Use this image when I say: Did the problem become more complex, or did
-  the volume simply increase?... HIDE OR REMOVE THE CAMERA VISUALLY DURING
-  THIS SCENE. This image must be the only visual filling the entire 16:9
-  canvas. Do not place it in a box over my camera footage and do not leave
-  me visible behind it or around the edges. Left side first at reduced
-  emphasis, right side at 1.5s at full weight. Hold it for 8 to 9 seconds.
-  Then cut cleanly back to me. Captions off."
-
-------------------------------------------------------------------------------
-MG04   V7_MG04_Authority.png
-------------------------------------------------------------------------------
-
-  "Use this image when I say: Responsibility is what you are expected to
-  carry. Accountability is what you will answer for. Authority is what you
-  can influence or decide.... HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS
+  "Use this image when I say: “Or maybe the organization has simply learned
+  that you will absorb more.” HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS
   SCENE. This image must be the only visual filling the entire 16:9 canvas.
   Do not place it in a box over my camera footage and do not leave me
-  visible behind it or around the edges. One row at a time, 1.1s apart.
-  Never all three at once. Hold on the authority definition noticeably
-  longer than the other two. Hold it for 10 to 11 seconds. Then cut cleanly
-  back to me. Captions off."
+  visible behind it or around the edges. First statement alone for 1.6s,
+  then the second at 2.2s with a soft impact. Hold it for 7 to 8 seconds; if
+  you cannot hold a reveal state as described, hold the whole frame longer
+  rather than shrinking the type. Cut back to camera. Captions off."
 
 ------------------------------------------------------------------------------
-MG05   V7_MG05_Return.png
+MG02   V7_MG02_CAR_Framework.png   [REORDER]
 ------------------------------------------------------------------------------
 
-  "Use this image when I say: I would look for return in three places:
-  capability, evidence, and recognition.... HIDE OR REMOVE THE CAMERA
-  VISUALLY DURING THIS SCENE. This image must be the only visual filling the
-  entire 16:9 canvas. Do not place it in a box over my camera footage and do
-  not leave me visible behind it or around the edges. One item at a time,
-  1.0s apart, then the question line at 3.2s. Hold it for 9 to 10 seconds.
-  Then cut cleanly back to me. Captions off."
-
-------------------------------------------------------------------------------
-MG06   V7_MG06_Pattern_Read.png
-------------------------------------------------------------------------------
-
-  "Use this image when I say: If Complexity, Authority, and Return are all
-  expanding, you are probably looking at real growth.... HIDE OR REMOVE THE
-  CAMERA VISUALLY DURING THIS SCENE. This image must be the only visual
-  filling the entire 16:9 canvas. Do not place it in a box over my camera
-  footage and do not leave me visible behind it or around the edges. Left
-  side first, right side at 1.6s at the same visual weight and the same
-  color treatment. Hold it for 9 to 10 seconds. Then cut cleanly back to me.
+  "Use this image when I say: “That is the CAR test: Complexity, Authority,
+  Return.” HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This image
+  must be the only visual filling the entire 16:9 canvas. Do not place it in
+  a box over my camera footage and do not leave me visible behind it or
+  around the edges. One term at a time, 0.9s apart. Hold the complete set
+  before cutting away. Hold it for 9 to 11 seconds first time, 3 seconds on
+  each return.; if you cannot hold a reveal state as described, hold the
+  whole frame longer rather than shrinking the type. Cut back to camera.
   Captions off."
 
 ------------------------------------------------------------------------------
-MG07   V7_MG07_Scope_Conversation_A.png
+MG03   V7_MG03_Complexity.png   [COPY UPDATE]
 ------------------------------------------------------------------------------
 
-  "Use this image when I say: Then take four questions into the conversation
-  with your manager.... HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS
+  "Use this image when I say: “First: Did the problem become more complex,
+  or did the volume simply increase?” HIDE OR REMOVE THE CAMERA VISUALLY
+  DURING THIS SCENE. This image must be the only visual filling the entire
+  16:9 canvas. Do not place it in a box over my camera footage and do not
+  leave me visible behind it or around the edges. Left column first, held
+  alone 1.4s. Right column at 1.8s with more visual weight. Hold it for 8 to
+  9 seconds; if you cannot hold a reveal state as described, hold the whole
+  frame longer rather than shrinking the type. Cut back to camera. Captions
+  off."
+
+------------------------------------------------------------------------------
+MG04   V7_MG04_Authority.png   [REUSE]
+------------------------------------------------------------------------------
+
+  "Use this image when I say: “Responsibility is what you are expected to
+  carry. Accountability is what you will answer for. Authority is what you
+  can influence or decide.” HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS
   SCENE. This image must be the only visual filling the entire 16:9 canvas.
   Do not place it in a box over my camera footage and do not leave me
-  visible behind it or around the edges. One question at a time, 1.1s apart.
-  Hold it for 7 to 8 seconds. Then cut cleanly back to me. Captions off."
+  visible behind it or around the edges. One row at a time, 1.1s apart. Hold
+  the authority definition longest. Hold it for 9 to 10 seconds; if you
+  cannot hold a reveal state as described, hold the whole frame longer
+  rather than shrinking the type. Cut back to camera. Captions off."
 
 ------------------------------------------------------------------------------
-MG08   V7_MG08_Scope_Conversation_B.png
+MG05   V7_MG05_Return.png   [REBUILD]
 ------------------------------------------------------------------------------
 
-  "Use this image when I say: Which decisions need to belong to me for these
-  outcomes? And how and when will the expanded scope be formally
-  reviewed?... HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This
-  image must be the only visual filling the entire 16:9 canvas. Do not place
-  it in a box over my camera footage and do not leave me visible behind it
-  or around the edges. One question at a time, 1.1s apart. Hold both. Hold
-  it for 8 to 9 seconds. Then cut cleanly back to me. Captions off."
+  "Use this image when I say: “I would look in three places: capability,
+  evidence, and recognition.” HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS
+  SCENE. This image must be the only visual filling the entire 16:9 canvas.
+  Do not place it in a box over my camera footage and do not leave me
+  visible behind it or around the edges. One term at a time, 1.0s apart.
+  Then a clear beat, then the payoff line at display weight at 4.2s. The
+  payoff is its own reveal state, not a footer that arrives with the list.
+  Hold it for 11 to 13 seconds. The payoff line needs time to land.; if you
+  cannot hold a reveal state as described, hold the whole frame longer
+  rather than shrinking the type. Cut back to camera. Captions off."
 
 ------------------------------------------------------------------------------
-CTA   V7_CTA_Capability_Formation_Field_Kit.png
+MG06   V7_MG06_Pattern_Read.png   [COPY UPDATE]
 ------------------------------------------------------------------------------
 
-  "Use this image when I say: the Capability Formation Field Kit helps you
-  read the evidence in your role. It is linked below.... HIDE OR REMOVE THE
+  "Use this image when I say: “If Complexity, Authority, and Return are all
+  expanding, the career case for growth is visible.” HIDE OR REMOVE THE
   CAMERA VISUALLY DURING THIS SCENE. This image must be the only visual
   filling the entire 16:9 canvas. Do not place it in a box over my camera
-  footage and do not leave me visible behind it or around the edges.
-  Logomark, headline at 0.6s, URL at 2.0s. Hold it for 8 to 9 seconds. Then
-  cut cleanly back to me. Captions off. Never cover the address."
+  footage and do not leave me visible behind it or around the edges. Left
+  column first, held 1.6s. Right column at 2.0s at equal weight, not as a
+  penalty. Hold it for 8 to 9 seconds; if you cannot hold a reveal state as
+  described, hold the whole frame longer rather than shrinking the type. Cut
+  back to camera. Captions off."
 
 ------------------------------------------------------------------------------
-WN   V7_WATCH_NEXT_Built_It_From_Scratch.png
+MG07   V7_MG07_Scope_Conversation_A.png   [REUSE]
 ------------------------------------------------------------------------------
 
-  "Use this image when I say: In the next video, I will show you how to make
-  that work visible: How to Show Your Impact at Work When You Built It From
-  Scratch.... HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This
+  "Use this image when I say: “Which of these responsibilities should remain
+  with me?” HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This image
+  must be the only visual filling the entire 16:9 canvas. Do not place it in
+  a box over my camera footage and do not leave me visible behind it or
+  around the edges. One question at a time, 1.2s apart. Hold it for 7 to 8
+  seconds; if you cannot hold a reveal state as described, hold the whole
+  frame longer rather than shrinking the type. Cut back to camera. Captions
+  off."
+
+------------------------------------------------------------------------------
+MG08   V7_MG08_Scope_Conversation_B.png   [REUSE]
+------------------------------------------------------------------------------
+
+  "Use this image when I say: “Which decisions need to belong to me for
+  these outcomes?” HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS SCENE.
+  This image must be the only visual filling the entire 16:9 canvas. Do not
+  place it in a box over my camera footage and do not leave me visible
+  behind it or around the edges. One question at a time, 1.2s apart. Hold it
+  for 7 to 8 seconds; if you cannot hold a reveal state as described, hold
+  the whole frame longer rather than shrinking the type. Cut back to camera.
+  Captions off."
+
+------------------------------------------------------------------------------
+CTA   V7_CTA_Capability_Formation_Field_Kit.png   [REUSE]
+------------------------------------------------------------------------------
+
+  "Use this image when I say: “the Capability Formation Field Kit helps you
+  read the evidence in your role” HIDE OR REMOVE THE CAMERA VISUALLY DURING
+  THIS SCENE. This image must be the only visual filling the entire 16:9
+  canvas. Do not place it in a box over my camera footage and do not leave
+  me visible behind it or around the edges. Logomark, headline at 0.6s, URL
+  at 2.0s. Hold it for 8 to 9 seconds; if you cannot hold a reveal state as
+  described, hold the whole frame longer rather than shrinking the type. Cut
+  back to camera for the bridge into Watch Next. Captions off. Never cover
+  the address."
+
+------------------------------------------------------------------------------
+WN   V7_WATCH_NEXT_Built_It_From_Scratch.png   [REUSE]
+------------------------------------------------------------------------------
+
+  "Use this image when I say: “In the next video, I will show you how to
+  make that work visible: “How to Show Your Impact at Work When You Built It
+  From Scratch.”” HIDE OR REMOVE THE CAMERA VISUALLY DURING THIS SCENE. This
   image must be the only visual filling the entire 16:9 canvas. Do not place
   it in a box over my camera footage and do not leave me visible behind it
   or around the edges. Static. No animation on the final card. Hold it for
-  10 to 14 seconds, through the closing line and past the last word.. This
-  is the FINAL visual of the video. Do not cut back to me after it. Do not
-  add anything after it. Captions off."
+  10 to 14 seconds, through the closing line and past the last word.; if you
+  cannot hold a reveal state as described, hold the whole frame longer
+  rather than shrinking the type. This is the FINAL visual of the video. Do
+  not cut back to me after it. Do not add anything after it. Keep a clear
+  area for the clickable end-screen element. Captions off."
 
 ------------------------------------------------------------------------------
-SOUND DESIGN
+SCENES THAT ARE NOT GRAPHICS
+------------------------------------------------------------------------------
 
-Four to seven restrained accents across the video. Not one per caption and not
-one per cut. Every accent sits clearly under Temidayo's voice.
-
-Reserve them for:
-  - the hero framework entering
-  - a major comparison
-  - a numbered reveal
-  - an important distinction
-  - the Subscribe cue
-  - the CTA entrance
-  - the Watch Next handoff
-
-Palette: soft whoosh, subtle click, gentle pop, restrained impact, clean sweep.
+  The absorption scene
+      The colleague leaving, the unowned project and "Can you take this
+      too?" are camera and B-roll beats. MG01 follows them.
 
 ==============================================================================
 END

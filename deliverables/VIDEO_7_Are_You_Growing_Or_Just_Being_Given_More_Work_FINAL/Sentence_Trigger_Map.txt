@@ -1,0 +1,89 @@
+==============================================================================
+CURRENT-SCRIPT SENTENCE TRIGGER MAP
+Video 7  ·  Are You Growing, or Just Being Given More Work?
+Synchronized to V7_Recording_Master_LOCKED_2026-09-09.docx  ·  September 9, 2026
+==============================================================================
+
+Every trigger below is a sentence that exists in the September 9 locked
+script. The build verifies this: if a trigger is not found in the spoken copy,
+the QA pass fails and the package is not delivered.
+
+Beats listed under EDITORIAL CUES are NOT spoken triggers. They are camera and
+B-roll decisions, and they are labelled so that nobody mistakes one for a line
+to listen for.
+
+------------------------------------------------------------------------------
+GRAPHIC TRIGGERS
+------------------------------------------------------------------------------
+
+  MG01   V7_MG01_Opening_Consequence.png
+         status: REUSE
+         cue:    “Or maybe the organization has simply learned that you will absorb more.”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  MG02   V7_MG02_CAR_Framework.png
+         status: REORDER
+         cue:    “That is the CAR test: Complexity, Authority, Return.”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  MG03   V7_MG03_Complexity.png
+         status: COPY UPDATE
+         cue:    “First: Did the problem become more complex, or did the volume simply increase?”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  MG04   V7_MG04_Authority.png
+         status: REUSE
+         cue:    “Responsibility is what you are expected to carry. Accountability is what you will answer for. Authority is what you can influence or decide.”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  MG05   V7_MG05_Return.png
+         status: REBUILD
+         cue:    “I would look in three places: capability, evidence, and recognition.”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  MG06   V7_MG06_Pattern_Read.png
+         status: COPY UPDATE
+         cue:    “If Complexity, Authority, and Return are all expanding, the career case for growth is visible.”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  MG07   V7_MG07_Scope_Conversation_A.png
+         status: REUSE
+         cue:    “Which of these responsibilities should remain with me?”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  MG08   V7_MG08_Scope_Conversation_B.png
+         status: REUSE
+         cue:    “Which decisions need to belong to me for these outcomes?”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  CTA    V7_CTA_Capability_Formation_Field_Kit.png
+         status: REUSE
+         cue:    “the Capability Formation Field Kit helps you read the evidence in your role”
+         in the locked script: YES
+         after:  Cut back to camera for the bridge into Watch Next.
+
+  WN     V7_WATCH_NEXT_Built_It_From_Scratch.png
+         status: REUSE
+         cue:    “In the next video, I will show you how to make that work visible: “How to Show Your Impact at Work When You Built It From Scratch.””
+         in the locked script: YES
+         after:  NONE. Final visual.
+
+------------------------------------------------------------------------------
+EDITORIAL CUES, NOT SPOKEN TRIGGERS
+------------------------------------------------------------------------------
+
+  The absorption scene
+      The colleague leaving, the unowned project and "Can you take this
+      too?" are camera and B-roll beats. MG01 follows them.
+
+==============================================================================
+END OF TRIGGER MAP
+==============================================================================

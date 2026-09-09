@@ -1,133 +1,108 @@
 ==============================================================================
 CHANGE LOG
 Video 6  ·  Before You Take an Internal Role, Ask These 3 Questions
-Revised production package v2.0  ·  September 8, 2026
+September 9 script synchronization
 ==============================================================================
 
-This package replaces the Video 6 Final Production Package v1.0. It is built
-on the v2.0 Revised Recording Master, which is the definitive spoken source of
-truth. Where the v1.0 production package and the v2.0 master disagreed, the
-master won.
+This is a targeted synchronization with the September 9 script lock. It is not
+a strategy rebuild, not a numbering change, and not a new visual system.
+Assets were reused, reordered, corrected or rebuilt individually, and the
+reasons are in Asset_Reuse_and_Change_Table.txt.
 
 ------------------------------------------------------------------------------
-TITLE AND THUMBNAIL
+SOURCE
 ------------------------------------------------------------------------------
 
-VIDEO 6 TITLE AND THUMBNAIL CHANGE
-
-  Old primary title:    Should I Make an Internal Move? 3 Questions to Decide
-  New primary title:    Before You Take an Internal Role, Ask These 3 Questions
-
-  Old active thumbnail: YOU MAY NOT NEED TO LEAVE
-  New active thumbnail: NEW TITLE, SAME WORK?
-
-The old title is retained as an alternate and search phrasing only. It appears
-in the tag list so the topic still surfaces for people searching that way. It
-must not be used as the published primary title.
-
-The new thumbnail line is the active line. It creates doubt immediately, which
-is what the revised opening is built on. The replacement thumbnail artwork does
-not exist yet and is not created in this package. See the QA report.
+  Script file used:  V6_Recording_Master_LOCKED_2026-09-09.docx
+  Handoff archive:   YouTube_Roadmap_and_V4V7_Lock_Sep09_2026.zip
+  Canonical SHA-256: ce3639c3de1e35fc0ee1b33b886c909283510174da58f37d4265ea27512513ed
+  Verified against the handoff lock manifest: yes
 
 ------------------------------------------------------------------------------
 WHAT CHANGED
 ------------------------------------------------------------------------------
 
-  •  THE TITLE. Old primary title: Should I Make an Internal Move? 3
-  Questions to Decide. New primary title: Before You Take an Internal Role,
-  Ask These 3 Questions. Every document, prompt, asset note and publishing
-  file in this package now carries the new title. The old title is retained
-  as an alternate and search phrasing only, and it survives in the tag list
-  so the topic still surfaces for people searching that way.
+  •  THE SCRIPT. Replaced by V6_Recording_Master_LOCKED_2026-09-09.docx. The
+  opening is now the internal offer itself and the one-year question, and
+  the script is materially shorter.
 
-  •  THE THUMBNAIL LINE. Old active thumbnail: YOU MAY NOT NEED TO LEAVE.
-  New active thumbnail: NEW TITLE, SAME WORK? The new line is on the opening
-  asset because the revised hook is built on it. The replacement artwork
-  does not exist yet and was not created here.
+  •  THE LOGO OPENING IS RETIRED. "An internal move can look safe because
+  the logo does not change" is gone from the script, the opening frame, the
+  description and the Shorts.
 
-  •  THE SPOKEN SCRIPT. Replaced by the v2.0 Revised Recording Master,
-  reproduced verbatim. The opening now leads with the risk frame, an
-  internal move can look safe because the logo does not change. The
-  mechanism and the promise land immediately: different work, expanded
-  judgment, evidence that travels.
+  •  REMOVED EXAMPLES. The cross-functional meeting example, the internal-
+  credibility passage and the explicit confidential-material sentence are no
+  longer in the script. Every reference to them was removed from the assets,
+  the prompts and the Shorts. The confidentiality boundary is still held,
+  through the script's own phrase, the permitted result.
 
-  •  THE ASSETS. Rebuilt from the v2.0 master's own visual map, at mobile-
-  first sizes. Nine 1920x1080 frames: seven teaching frames, a CTA card and
-  a Watch Next card. The opening frame is new and carries the new thumbnail
-  line.
+  •  THE DECISION READ. "Strong growth case" became "Strong developmental
+  case", matching the locked wording. The zero-or-one row deliberately keeps
+  the spoken MAY BE rather than the master map's shorter phrasing, because
+  the script is explicit that zero or one yes does not make a move wrong.
 
-  •  THE DECISION READ. Now shows three states in plain, non-scored
-  language. No ticks, crosses, scores, gauges or progress bars, because the
-  master is explicit that zero or one yes does not automatically make a move
-  wrong.
+  •  FIRST VERSUS SECOND PERSON. Documented per frame rather than
+  standardized. The card that reproduces the spoken triad keeps MY. The card
+  that poses the test to the viewer uses the master map's YOU. The master
+  itself alternates by context and no speech was changed.
 
-  •  THE SHORTS. Six dedicated 9:16 candidates, marked Priority A and B, re-
-  audited against the v2.0 spoken copy. Candidates that used the old hook or
-  the old packaging were rewritten.
+  •  ASSETS. 7 teaching frames plus CTA and Watch Next. 6 unchanged, 3
+  corrected.
 
-  •  PUBLISHING. Description, pinned comment, tags and hashtags rewritten
-  around the new title and the new thumbnail line. The pinned comment now
-  uses the master's three closing questions, in its wording.
+  •  SHORTS. Two rebuilt on removed premises, four corrected for obsolete
+  references.
 
-  •  ONE PRODUCT ROUTE. The free Career Decision Evidence Check only. No
-  Field Kit, Keep the Proof, book or workshop.
-
-  •  NUMBERING. This topic was labeled Video 5 in files older than the
-  September renumbering. It is Video 6. That is settled and is not an
-  alternate system.
+  •  PUBLISHING. Description opening replaced. Pinned comment reading line
+  corrected.
 
 ------------------------------------------------------------------------------
 WHAT DID NOT CHANGE
 ------------------------------------------------------------------------------
 
-The spoken script was not rewritten. The v2.0 Recording Master copied into
-this folder is byte-identical to the file supplied: it already carried the
-correct number and title, so no header edit was needed and zero paragraphs
-differ.
+The spoken script. This package reads the locked master and never writes to
+it. The reading copy is generated from it directly, so there is no
+transcription step in which a line could drift.
 
-The approved opening and the approved closing line are preserved exactly and
-are quoted in the run of show so they cannot drift during the take.
+The thumbnail. Nothing was designed, generated or altered.
 
-Watch Next remains the final visual, with no return to camera after it.
+Videos 1, 2 and 3. Untouched.
 
-No thumbnail artwork was designed, generated or altered for either video.
+The presentation and reveal decks. No slide deck was rebuilt.
 
-------------------------------------------------------------------------------
-FLAGGED, NOT SILENTLY CHANGED
-------------------------------------------------------------------------------
+Numbering and routing. Video 4 to 5 to 1, and Video 6 to 7 to 8, exactly as
+approved. The stale numbers in the original upload filenames do not undo the
+approved swap and were not acted on.
 
-  •  MISSING PUBLISHING ASSET. The replacement thumbnail artwork for NEW
-  TITLE, SAME WORK? does not exist. Nothing in the uploads contains it and
-  nothing in this package creates it. Per the brief, it was flagged rather
-  than independently redesigned. Video 6 cannot publish until that artwork
-  is supplied. Every document here names the new line as the active
-  thumbnail, so the package is ready for the artwork the moment it arrives.
-
-  •  WORDING DIFFERENCE RESOLVED, NOT AN ERROR. The visual map table inside
-  the v2.0 master writes the second question as WILL YOUR JUDGMENT EXPAND?
-  The master's own spoken hook says "Will my judgment expand?", and so does
-  the production brief. The asset uses MY, so that the graphic matches the
-  line Temidayo actually speaks. No spoken copy was changed.
-
-  •  WORDING DIFFERENCE RESOLVED, NOT AN ERROR. The master's decision-read
-  row reads "Movement, not much growth". The production brief asks for the
-  softer "May be movement without much growth", which also matches the
-  spoken line, "the opportunity may be movement without much growth". The
-  asset uses the softer wording. No spoken copy was changed.
+Resource routes. https://temidayoafonja.com/career-decisions, unchanged.
 
 ------------------------------------------------------------------------------
-SUPERSEDED
+NOT SUPPLIED, BY INSTRUCTION
 ------------------------------------------------------------------------------
 
-The Video 6 Final Production Package v1.0 and the v1.0 Recording Master are
-superseded. The previously generated v1.0 package folder is isolated in
-deliverables/SUPERSEDED_DO_NOT_USE/ with a notice.
+No chapter timestamps. No music attribution or license code. No thumbnail
+artwork. No YouTube video URL for Watch Next; the description carries a
+placeholder.
 
-The thumbnail line YOU MAY NOT NEED TO LEAVE is superseded. It appears nowhere
-in this package as an active thumbnail line.
+------------------------------------------------------------------------------
+RUNTIME
+------------------------------------------------------------------------------
 
-The title Should I Make an Internal Move? 3 Questions to Decide is superseded
-as a primary title. It is retained only as alternate and search phrasing.
+RUNTIME: ESTIMATE ONLY, NOT A MEASUREMENT
+
+The figure below is arithmetic on the locked script's word count at 130 to 145
+words per minute, the band the September 9 roadmap itself uses. It is speech only. It excludes the scripted pauses, the holds
+on full-screen graphics, B-roll, and every edit decision.
+
+It is NOT a timed read and it is NOT a finished runtime. The finished runtime
+does not exist until the export does.
+
+The target printed on the source cover is not a verified finished length
+either. The September 9 scripts are shorter than the earlier drafts. Do not
+restore deleted material, pad the script, or slow the delivery to reach an
+older target.
+
+  Spoken words: 1151.  Speech-only estimate 7:56 to 8:51 at 140 to 165 wpm.
+  Printed cover target, not a verified length: Approximately 10:30-11:30 finished. Do not pad to force runtime.
 
 ==============================================================================
 END OF CHANGE LOG

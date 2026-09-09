@@ -1,0 +1,102 @@
+==============================================================================
+CURRENT-SCRIPT SENTENCE TRIGGER MAP
+Video 4  ·  How to Explain a Career That Looks All Over the Place
+Synchronized to V4_Recording_Master_LOCKED_2026-09-09.docx  ·  September 9, 2026
+==============================================================================
+
+Every trigger below is a sentence that exists in the September 9 locked
+script. The build verifies this: if a trigger is not found in the spoken copy,
+the QA pass fails and the package is not delivered.
+
+Beats listed under EDITORIAL CUES are NOT spoken triggers. They are camera and
+B-roll decisions, and they are labelled so that nobody mistakes one for a line
+to listen for.
+
+------------------------------------------------------------------------------
+GRAPHIC TRIGGERS
+------------------------------------------------------------------------------
+
+  MG01   V4_MG01_Introduction_Or_Defense.png
+         status: REBUILD
+         cue:    “Now your answer feels less like an introduction and more like a defense.”
+         in the locked script: YES
+         after:  Cut back to camera for the scripted [Pause.] The pause is performed on camera, not over this graphic.
+
+  MG02   V4_MG02_Chapters_Spine_Next_Direction.png
+         status: COPY UPDATE
+         cue:    “All three answers use the same ingredients:”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  MG03   V4_MG03_Order_Depends_On_The_Question.png
+         status: REBUILD
+         cue:    “For a quick introduction, I lead with the Spine.”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  MG04   V4_MG04_Twenty_Second_Version.png
+         status: REUSE
+         cue:    ““I…” and then the work pattern.”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  MG05   V4_MG05_Ninety_Second_Version.png
+         status: REUSE
+         cue:    “That is the ninety-second answer.”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  MG06   V4_MG06_The_Objection.png
+         status: REUSE
+         cue:    ““Why so many changes?””
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  MG07   V4_MG07_Story_Explains_Proof_Supports.png
+         status: REUSE
+         cue:    “A story explains.”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  MG08   V4_MG08_All_Three_Versions.png
+         status: REUSE
+         cue:    “So now you have all three.”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  CTA    V4_CTA_Career_Evidence_Starter.png
+         status: REUSE
+         cue:    “If you get your twenty-second version working, put it in the comments.”
+         in the locked script: YES
+         after:  Cut back to camera for the bridge into Watch Next.
+
+  WN     V4_WatchNext_Why_Nobody_Can_Tell.png
+         status: REUSE
+         cue:    “Watch “Why Nobody Can Tell What You’re Actually Good At” next.”
+         in the locked script: YES
+         after:  NONE. Final visual.
+
+------------------------------------------------------------------------------
+EDITORIAL CUES, NOT SPOKEN TRIGGERS
+------------------------------------------------------------------------------
+
+  Opening pause
+      The scripted [Pause.] after "more like a defense" is performed on
+      camera. Hold the frame. It is not dead air and it is not a
+      graphic.
+
+  The modeled 20-second answer
+      Stay on camera through the whole modeled answer, then hold the
+      scripted [Hold a short silence.] on camera before "And stop." The
+      silence demonstrates the point of the section. Do not cut it, do
+      not fill it with a graphic, and do not shorten it.
+
+  The acquisition beat
+      The acquisition that eliminated an accepted role now introduces
+      the objection section. Play it on camera or as one restrained
+      full-screen B-roll moment. Do not name an employer, invent a loss,
+      or show a document. MG06 follows on the spoken question.
+
+==============================================================================
+END OF TRIGGER MAP
+==============================================================================

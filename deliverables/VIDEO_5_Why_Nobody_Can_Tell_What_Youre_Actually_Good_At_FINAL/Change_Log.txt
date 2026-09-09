@@ -1,69 +1,108 @@
 ==============================================================================
 CHANGE LOG
 Video 5  ·  Why Nobody Can Tell What You're Actually Good At
-September 8, 2026
+September 9 script synchronization
 ==============================================================================
 
-This topic was Video 4. It is now Video 5. The swap is definitive: the
-previous numbering is not retained as an alternate system anywhere in this
-package.
+This is a targeted synchronization with the September 9 script lock. It is not
+a strategy rebuild, not a numbering change, and not a new visual system.
+Assets were reused, reordered, corrected or rebuilt individually, and the
+reasons are in Asset_Reuse_and_Change_Table.txt.
+
+------------------------------------------------------------------------------
+SOURCE
+------------------------------------------------------------------------------
+
+  Script file used:  V5_Recording_Master_LOCKED_2026-09-09.docx
+  Handoff archive:   YouTube_Roadmap_and_V4V7_Lock_Sep09_2026.zip
+  Canonical SHA-256: 7227ee1b61ea21516c5b5166f2381931873f68f2092fb533ee09d1e7ac7ce4f7
+  Verified against the handoff lock manifest: yes
 
 ------------------------------------------------------------------------------
 WHAT CHANGED
 ------------------------------------------------------------------------------
 
-  •  The number. Every asset, filename, prompt, document and routing
-  reference now says Video 5. Asset prefixes moved from V4_ to V5_.
+  •  THE SCRIPT. Replaced by V5_Recording_Master_LOCKED_2026-09-09.docx. The
+  video now opens on the outdated-title introduction, with a scripted pause,
+  and the two-versions-of-the-same-career demonstration comes early, before
+  the framework.
 
-  •  The Recording Master. A new September 8 master replaced the previous
-  script. It now opens on "people can respect your experience and still have
-  no idea what to do with you". The older opening that led directly with
-  "Interesting background" was not restored; that line now appears only in
-  its approved later position.
+  •  THE OPENING FRAME SLOT WAS ADAPTED. RESPECTED. BUT HARD TO PLACE. was
+  replaced by a two-versions comparison, because that is the demonstration
+  the script now leads with and no existing asset served it. The retired
+  frame's line is still spoken and is now a short single-line callout over
+  camera, so the set stayed compact instead of growing.
 
-  •  The thumbnail line is unchanged: THEY CAN'T READ YOU.
+  •  ORDER. The One-Line Test and the sharper-versus-defensible frame move
+  ahead of the sorting mechanism, matching the locked running order.
 
-  •  The spoken CTA is unchanged: write your one-line Claim in the comments.
-  The pinned resource is the free 10-Minute Career Evidence Starter.
+  •  THE CLAIM TEST IS NO LONGER A VERDICT. The outcomes read "Still
+  decoding" and "It is working". They now read "May still be decoding" and
+  "A better sign", matching the script's own qualifications, and the eyebrow
+  says the test is practical rather than scientific.
 
-  •  Watch Next. Routes to Video 1, How to Change Jobs Without Starting Your
-  Career Over. It does not route back to Video 4.
+  •  BOUNDED EVIDENCE. All three Receipts keep their qualifiers: one
+  measure, the team's work, the ninety-day window, and the approved life
+  sciences wording. They stay spoken and stay off the graphics.
 
-  •  The assets. Eight hero teaching graphics plus a resource card and a
-  Watch Next card, all rebuilt at mobile-first sizes.
+  •  ASSETS. 8 teaching frames plus CTA and Watch Next. 5 unchanged, 3
+  reordered unchanged, 1 corrected, 1 rebuilt.
 
-  •  The Receipts asset changed shape. The previous version put three
-  bounded evidence claims on one frame, which forced the scope qualifiers
-  down to a size that fails on a phone. The frame now carries the rule that
-  governs all three, and Temidayo states each Receipt and its qualifier
-  aloud.
+  •  SHORTS. All six carried unchanged. Each remains semantically aligned.
 
-  •  The Shorts. Six dedicated 9:16 candidates, marked Priority A and B. The
-  old Interesting Background Short was replaced because its hook is no
-  longer the opening of the video. Two are new.
+  •  PUBLISHING. Description opening replaced and the limits paragraph
+  extended. Pinned comment replaced with the Recording Master's own pinned
+  bridge.
 
 ------------------------------------------------------------------------------
 WHAT DID NOT CHANGE
 ------------------------------------------------------------------------------
 
-The spoken script. The renumbered Recording Master differs from the file you
-supplied by exactly one paragraph, the header line. Every other paragraph is
-identical, verified by comparison after the copy was written.
+The spoken script. This package reads the locked master and never writes to
+it. The reading copy is generated from it directly, so there is no
+transcription step in which a line could drift.
 
-The thumbnail. Nothing was designed, generated, altered or replaced.
+The thumbnail. Nothing was designed, generated or altered.
+
+Videos 1, 2 and 3. Untouched.
+
+The presentation and reveal decks. No slide deck was rebuilt.
+
+Numbering and routing. Video 4 to 5 to 1, and Video 6 to 7 to 8, exactly as
+approved. The stale numbers in the original upload filenames do not undo the
+approved swap and were not acted on.
+
+Resource routes. https://temidayoafonja.com/career-evidence-starter,
+unchanged.
 
 ------------------------------------------------------------------------------
-SUPERSEDED
+NOT SUPPLIED, BY INSTRUCTION
 ------------------------------------------------------------------------------
 
-The previous packages for both topics are isolated in
-deliverables/SUPERSEDED_DO_NOT_USE/ with a notice explaining why. They were
-built against both the old numbering and the previous Recording Masters, so
-their spoken scripts are superseded as well as their numbers.
+No chapter timestamps. No music attribution or license code. No thumbnail
+artwork. No YouTube video URL for Watch Next; the description carries a
+placeholder.
 
-The thumbnail line YOUR CAREER MAKES SENSE is superseded and appears nowhere
-in this package as an active thumbnail. The active line for Video 4 is STOP
-LISTING JOBS.
+------------------------------------------------------------------------------
+RUNTIME
+------------------------------------------------------------------------------
+
+RUNTIME: ESTIMATE ONLY, NOT A MEASUREMENT
+
+The figure below is arithmetic on the locked script's word count at 130 to 145
+words per minute, the band the September 9 roadmap itself uses. It is speech only. It excludes the scripted pauses, the holds
+on full-screen graphics, B-roll, and every edit decision.
+
+It is NOT a timed read and it is NOT a finished runtime. The finished runtime
+does not exist until the export does.
+
+The target printed on the source cover is not a verified finished length
+either. The September 9 scripts are shorter than the earlier drafts. Do not
+restore deleted material, pad the script, or slow the delivery to reach an
+older target.
+
+  Spoken words: 1801.  Speech-only estimate 12:25 to 13:51 at 140 to 165 wpm.
+  Printed cover target, not a verified length: Approximately 17:00 to 18:30
 
 ==============================================================================
 END OF CHANGE LOG

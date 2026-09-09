@@ -1,190 +1,198 @@
 ==============================================================================
 QA REPORT
 Video 7  ·  Are You Growing, or Just Being Given More Work?
-Revised production package v2.0  ·  September 8, 2026
+September 9 script synchronization
 ==============================================================================
 
-32 checks run. 32 passed, 0 failed.
+This report is split deliberately. The first section is what can be checked
+now, against the locked script and the package files. The second is what
+cannot be checked until the recording and the export exist, and is therefore
+NOT claimed as verified.
 
-  [PASS] Spoken copy verbatim from the v2.0 Recording Master
-         63 of 63 spoken paragraphs reproduced without alteration.
-         Nothing was rewritten, shortened or restructured.
+This is a fresh pass. No earlier QA result is reused as evidence that this
+package is aligned.
 
-  [PASS] Primary title correct
-         Are You Growing, or Just Being Given More Work?
+==============================================================================
+SECTION 1: PACKAGE CHECKS COMPLETED NOW
+==============================================================================
 
-  [PASS] Superseded Video 6 title never used as a live primary title
-         Not applicable. Video 7's title is unchanged.
+28 checks run. 28 passed, 0 failed.
 
-  [PASS] Active thumbnail line correct
-         MORE WORK ≠ GROWTH   (APPROVED, UNCHANGED IN THIS REVISION)
+  [PASS] Synchronized to the exact September 9 script file
+         V7_Recording_Master_LOCKED_2026-09-09.docx. SHA-256
+         recomputed and matched against the handoff lock manifest.
 
-  [PASS] Superseded Video 6 thumbnail line never used as a live thumbnail
-         Not applicable. Video 7 has no superseded thumbnail line.
+  [PASS] Recording Script section unchanged
+         This package reads the locked master and never writes to it.
+         The reading copy is generated from it, so no transcription
+         step exists where a line could drift. 66 spoken paragraphs,
+         1209 words.
 
-  [PASS] Alternate thumbnail line not used as active packaging
-         BUSIER IS NOT BETTER is recorded as an alternate line in the
-         publishing materials and appears on no asset. See the
-         flagged items.
+  [PASS] Video number, title, thumbnail, resource and Watch Next correct
+         Video 7 · Are You Growing, or Just Being Given More Work? ·
+         MORE WORK ≠ GROWTH · https://temidayoafonja.com/fieldkit ·
+         Watch Next How to Show Your Impact at Work When You Built It
+         From Scratch (Video 8)
 
-  [PASS] Numbered Video 7 everywhere
-         No asset prefix from the other video appears in this
-         package.
+  [PASS] Every spoken sentence trigger exists in the locked script
+         All 10 graphic triggers matched against the locked spoken
+         copy.
 
-  [PASS] Approved opening preserved
-         Sometimes the reward for being dependable is not growth.
+  [PASS] Non-spoken visual cues are labelled as editorial cues
+         1 beats are listed under EDITORIAL CUES, NOT SPOKEN TRIGGERS
+         in the trigger map and again in the visual build map and the
+         Co-Creator prompt.
 
-  [PASS] Approved closing line preserved
-         More work can be part of growth. It is not proof of it.
+  [PASS] No retired instruction survives
+         Checked across 1026 package paragraphs: no retired string
+         for this video. Each may appear only in a paragraph that
+         records it as retired.
 
-  [PASS] Framework intact
-         CAR test: Complexity, Authority, Return
+  [PASS] No removed opening is still required by a prompt
+         Checked: no opening was retired for this video. The locked
+         opening for this video is “Sometimes the reward for being
+         dependable is not growth. It is more work.”.
 
-  [PASS] One product route only
-         Capability Formation Field Kit
-         https://temidayoafonja.com/fieldkit. No second product link
-         anywhere: no Field Kit or Career Decision Evidence Check
-         crossover, no Keep the Proof, no Career Evidence Starter, no
-         book and no workshop.
+  [PASS] Intentional pauses protected
+         0 scripted delivery direction(s) carried into the run of
+         show, the trigger map and the Co-Creator prompt, each marked
+         as performed rather than edited around.
 
-  [PASS] Watch Next correct
-         How to Show Your Impact at Work When You Built It From
-         Scratch   (Video 8)
+  [PASS] Scoped evidence claims keep their qualifications
+         Personal proof stays bounded exactly as the master bounds
+         it. No employer, assignment, timeline or result is inferred
+         anywhere.
 
-  [PASS] Watch Next is the final visual and there is no return to camera
-         Stated in the scene, in the per-scene prompt and in the
-         master prompt.
+  [PASS] REUSE and REORDER assets are byte-identical to the previous package
+         7 of 10 assets carried over unchanged, verified by SHA-256
+         against the pre-synchronization package.
 
-  [PASS] Real limits preserved
-         The limits this script is required to name are all present
-         in the spoken copy: finance, family, visa, benefit,
-         compensation, energy, timing, authority, boundary, review.
-         They are repeated as boundaries in the run of show. Video 7
-         does not say bias, health or safety, and it is not required
-         to. Its spoken argument is about role design rather than
-         access, and its real limits are the trade clause and the
-         requirement that extra load carry a boundary, a review date
-         and a return. The never-imply boundary about bias,
-         credentials and weak labor markets is still carried in the
-         run of show, so the constraint governs the delivery even
-         though the script does not raise the subject. Neither script
-         says the word credentials; in both masters that constraint
-         is a not-spoken editorial boundary, and it is reproduced in
-         the run of show as one.
+  [PASS] Asset count stays compact
+         8 teaching frames plus a CTA card and a Watch Next card. No
+         new deck was created and no existing deck was rebuilt.
 
   [PASS] Mobile readability
-         Very large type, one dominant idea per state, sequential
-         reveals, no four-box grids. Geometry measured against the
-         rendered DOM: zero overlaps, nothing in the caption zone,
-         nothing inside the safe edge. Every frame was then
-         downscaled to 390 points wide and read at that size.
+         Geometry measured against the rendered DOM: zero overlaps,
+         nothing in the caption zone, nothing inside the safe edge.
+         Every changed frame was then downscaled to 390 points wide
+         and read at that size.
 
-  [PASS] Full-screen hero graphics
-         Stated per scene with the hide-the-camera instruction
-         spelled out.
+  [PASS] True full-screen rule is explicit
+         Stated in the master prompt, per scene in the visual build
+         map, and again in every per-scene prompt.
 
-  [PASS] Full-screen substantive B-roll
-         Stated in the grammar, the map's B-roll section and the
-         master prompt.
+  [PASS] Zoom budget stated as a total
+         3 to 5 deliberate camera-emphasis beats across the entire
+         video, written explicitly as the whole budget rather than as
+         punch-ins plus a separate zoom quota.
 
-  [PASS] Captions suppressed during hero visuals
-         Per scene and in a dedicated section of the map, run of show
-         and prompt.
+  [PASS] Sound budget includes the Subscribe cue
+         4 to 7 restrained accents in total across the whole video,
+         the Subscribe cue counted inside that budget. Placed after
+         Complexity.
 
-  [PASS] One restrained Subscribe cue
-         Visual only, adds no dialogue, placed after the CAR test has
-         been named and Complexity has landed.
+  [PASS] Watch Next is the final visual
+         No return to camera, no outro. Stated in the scene, the per-
+         scene prompt and the master prompt, with the intentional
+         final-card hold and music fade preserved.
 
-  [PASS] Four to seven restrained sound accents
-         Stated in the map, the run of show and the master prompt.
+  [PASS] Resource routes preserved
+         https://temidayoafonja.com/fieldkit. One product route only.
 
-  [PASS] Editorial boundaries preserved
-         The run of show lists all 9 never-imply boundaries from the
-         master as lines to hold while speaking.
+  [PASS] No thumbnail production introduced
+         No thumbnail was designed, generated or altered for any of
+         the four videos.
 
-  [PASS] No confidential material advised
-         The boundaries state that evidence is your own account of
-         your own work, never proprietary, customer, employee or
-         employer-owned material.
-
-  [PASS] U.S. English
-         Spoken script, assets and every package document swept.
-
-  [PASS] No em dashes
-         0 in the spoken script, 0 in the assets, 0 across the
-         package.
-
-  [PASS] No invented claims
-         Nothing was added to the spoken copy. Asset wording, Short
-         wording and publishing copy all trace to the master.
-
-  [PASS] No invented speech
-         The master prompt forbids generating audio and requires a
-         pickup to be flagged instead.
-
-  [PASS] No invented music attribution
-         No track, artist or license code is supplied anywhere. The
-         publishing notes say to add attribution only once the real
-         track is known.
-
-  [PASS] No estimated final chapters
-         No chapter timestamps are supplied: zero lines anywhere
-         begin with a timestamp. The publishing notes and the master
-         prompt both say to build chapters from the actual export.
-
-  [PASS] No dead footage after the ending
-         The master prompt instructs the editor to cut everything
-         after the last spoken word.
-
-  [PASS] Export specification 1920x1080 minimum
+  [PASS] Export specification 1920x1080
          10 assets, sizes: 1920x1080
 
-  [PASS] Six dedicated Shorts with Priority A and B
-         A d_For_Being_Dependable 34s, A _In_Forty_Five_Seconds 41s,
-         A ility_Versus_Authority 42s, B lume_Versus_Complexity 42s,
-         B ise_Is_Not_Role_Design 39s, B ons_When_Scope_Expands 30s
+  [PASS] Six Shorts, Priority A and B, 25 to 60 seconds
+         A1 REUSE 34s, A2 COPY UPDATE 43s, A3 REUSE 42s, B4 REUSE
+         42s, B5 REUSE 39s, B6 REUSE 30s
 
-  [PASS] Shorts are additional recording time, stated honestly
-         The Shorts document says the six vertical takes sit outside
-         the long-form estimate and budgets 35 to 50 extra minutes.
+  [PASS] Editorial boundaries preserved
+         11 never-imply boundaries carried into the run of show as
+         lines to hold while speaking.
 
-------------------------------------------------------------------------------
-FLAGGED FOR YOUR DECISION, NOT SILENTLY CHANGED
-------------------------------------------------------------------------------
+  [PASS] No confidential material advised
+         Evidence is the speaker's own account of their own work, and
+         the permitted result. Nothing suggests retaining
+         proprietary, customer, employee or employer-owned material.
 
-  •  DELIBERATE OMISSION FOR MOBILE LEGIBILITY. The visual map row for the
-  opening frame in the v2.0 master includes BUSIER IS NOT BETTER alongside
-  the two lines the frame already carries. Three competing lines forced all
-  of them below phone-readable size in testing. The brief states that BUSIER
-  IS NOT BETTER is an alternate only and should not be forced if it creates
-  too much copy, so it was dropped from the frame and is recorded in the
-  publishing materials as an alternate thumbnail line. The active thumbnail
-  is unchanged. No spoken copy was changed.
+  [PASS] U.S. English
+         Assets and every package document swept. The locked script
+         is the source of truth and is not modified by this check.
 
-  •  NO THUMBNAIL CHANGE. Video 7 keeps its approved title and its approved
-  thumbnail. No artwork was designed, generated or altered.
+  [PASS] No em dashes in the supporting materials
+         0 in the assets, 0 across the package documents.
+
+  [PASS] No estimated final chapters
+         No chapter timestamps anywhere. The publishing notes and the
+         master prompt both require them to be built from the actual
+         export.
+
+  [PASS] No invented music attribution
+         No track, artist or license code appears anywhere in the
+         package.
+
+  [PASS] No fabricated YouTube URLs
+         The Watch Next link is a placeholder in the description. No
+         YouTube video URL is constructed from a guessed identifier.
+
+  [PASS] Runtime presented as an estimate, not a measurement
+         1209 words, 8:20 to 9:18 speech only at 130 to 145 wpm,
+         labelled as arithmetic on the script and explicitly not a
+         timed read or a finished runtime.
 
 ==============================================================================
-VIDEO 7: READY FOR RECORDING / RIVERSIDE PRODUCTION
+SECTION 2: FINAL-EXPORT CHECKS STILL PENDING
 ==============================================================================
 
+None of the following is verified. Nothing in this package should be read as
+claiming otherwise.
+
+  [PENDING] Executed animation
+            Reveal states, sequential builds and hold behavior
+            exist only as instructions here. Verify against the
+            finished Co-Creator scenes.
+
+  [PENDING] Recorded audio and delivery
+            Whether the approved script was spoken as written,
+            including the intentional pauses. If recorded speech
+            differs materially from the master, that is a mismatch
+            to flag, not something the edit can restore.
+
+  [PENDING] Audio balance
+            Voice dominant, sound accents quieter than speech,
+            music subtle. Not testable before the mix.
+
+  [PENDING] Final pacing and actual runtime
+            The estimate in this package is arithmetic on the word
+            count. The real runtime comes from the export.
+
+  [PENDING] Caption placement
+            That captions are actually suppressed or moved clear
+            of designed text in each full-screen scene, and that
+            the separately delivered subtitle transcript still
+            carries the complete spoken content.
+
+  [PENDING] Chapter timestamps
+            Built from the finished export. None are supplied.
+
+  [PENDING] Thumbnail artwork
+            Not produced or altered here. Confirm the approved
+            artwork is attached at upload.
+
+  [PENDING] Linked destinations
+            That each resource URL and the playlist resolve for a
+            viewer at publication, and that the Watch Next
+            placeholder has been replaced with the real video URL.
+
+  [PENDING] Camera-emphasis and sound budgets as executed
+            That the finished edit actually lands within 3 to 5
+            camera-emphasis beats and 4 to 7 sound accents in
+            total.
+
 ==============================================================================
-LOCKED  ·  September 8, 2026
-==============================================================================
-
-Video 7 is LOCKED as it stands. No further editorial, script, Shorts, asset,
-Riverside prompt, routing, publishing or production change unless an actual
-factual or production defect is found.
-
-Last change: the packaging-consistency correction of September 8, in which
-Video 7's active-thumbnail references were set to the exact locked form
-MORE WORK ≠ GROWTH. No script, Short, asset, prompt, CTA route or Watch Next
-route was touched. Spoken prose that naturally says "more work is not growth"
-or "more work can be part of growth" was deliberately left alone.
-
-  VIDEO 6 active thumbnail   NEW TITLE, SAME WORK?  (artwork not yet supplied)
-  VIDEO 7 active thumbnail   MORE WORK ≠ GROWTH     (approved, unchanged)
-  BUSIER IS NOT BETTER       alternate only, on no asset
-
-Verified by V6_V7_Thumbnail_Consistency_Check.txt: 7 checks, 7 passing.
+VIDEO 7: PACKAGE SYNCHRONIZED TO THE SEPTEMBER 9 SCRIPT LOCK
 ==============================================================================

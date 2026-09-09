@@ -1,0 +1,230 @@
+==============================================================================
+ASSET REUSE AND CHANGE TABLE
+Video 7  ·  Are You Growing, or Just Being Given More Work?
+Synchronized to V7_Recording_Master_LOCKED_2026-09-09.docx  ·  September 9, 2026
+==============================================================================
+
+REUSE means the artwork did not change. That is proved, not asserted: every
+rendered file is hashed against the pre-synchronization package, and any REUSE
+asset whose bytes moved is reported as a QA failure.
+
+REORDER means the artwork did not change but its position in the running order
+did. COPY UPDATE means the design is the same and the wording was corrected
+against the locked script. REBUILD means the frame's job changed. REMOVE means
+it was dropped, with the reason recorded.
+
+  COPY UPDATE: 2   REBUILD: 1   REORDER: 1   REUSE: 6
+
+
+------------------------------------------------------------------------------
+  MG01   V7_MG01_Opening_Consequence.png
+         status:   REUSE
+         was:      V7_MG01_Opening_Consequence.png
+         proof:    bytes identical to the previous package
+         sha256:   34fbb3b6cd36ee119e495192a68023f6768b7f2f0b1c427d342a26fd4cd649eb
+
+         reason:
+           Artwork unchanged, and it now matches the master's map
+           row 1 exactly. The alternate line BUSIER IS NOT BETTER,
+           which the previous master's map listed on this row and
+           which was dropped for phone legibility, is no longer in
+           the master's map at all.
+
+------------------------------------------------------------------------------
+  MG02   V7_MG02_CAR_Framework.png
+         status:   REORDER
+         was:      V7_MG02_CAR_Framework.png
+         proof:    bytes identical to the previous package
+         sha256:   927d2e5854ee58eb7f51b41d3da1eeb085382a89fb741b28c869669d7b3a2015
+
+         reason:
+           Artwork unchanged. It moves earlier: the locked script
+           names the CAR test inside the hook rather than after the
+           setup section, so this hero frame now lands in the first
+           ninety seconds.
+
+------------------------------------------------------------------------------
+  MG03   V7_MG03_Complexity.png
+         status:   COPY UPDATE
+         was:      V7_MG03_Complexity.png
+         proof:    bytes changed, as intended
+         sha256:   0b289a04458311d727589a68a69e7aae61f3a99b44edc5de3f58f08cdb844f43
+
+         reason:
+           Design unchanged. The left column read "MORE UNITS OF
+           THE SAME PROBLEM" with a support line. The master's map
+           row 3 now simplifies it to MORE OF THE SAME, which reads
+           faster on a phone and matches the spoken contrast.
+
+------------------------------------------------------------------------------
+  MG04   V7_MG04_Authority.png
+         status:   REUSE
+         was:      V7_MG04_Authority.png
+         proof:    bytes identical to the previous package
+         sha256:   dfd62d0986cf25bf41df3d2275b3cbac4ccba752ab1355b5164a8d7441f3fd92
+
+         reason:
+           Artwork unchanged. All three definitions are spoken
+           verbatim and match the master's map row 4.
+
+------------------------------------------------------------------------------
+  MG05   V7_MG05_Return.png
+         status:   REBUILD
+         was:      V7_MG05_Return.png
+         proof:    bytes changed, as intended
+         sha256:   857baed66594a8bff3ec263947583d2e6d15b1cbed6cdab43eb7383941015b12
+
+         reason:
+           The three return categories are unchanged, but the brief
+           and the master's map row 5 both require "Praise alone is
+           not role design" to be a large, readable payoff inside
+           this treatment. It was previously only spoken. The frame
+           now carries it as a final reveal state at display weight
+           rather than as a quiet footer, which is why this is a
+           rebuild and not a copy update.
+
+------------------------------------------------------------------------------
+  MG06   V7_MG06_Pattern_Read.png
+         status:   COPY UPDATE
+         was:      V7_MG06_Pattern_Read.png
+         proof:    bytes changed, as intended
+         sha256:   6ddffe86c437a598b24e6efaab8e7ae5ab800e358867001e0d2de11e22731277
+
+         reason:
+           Design unchanged. The left column read "Real growth.",
+           an unconditional verdict. The locked script says the
+           career case for growth is visible, and the master's map
+           row 6 says GROWTH CASE VISIBLE. Corrected.
+
+------------------------------------------------------------------------------
+  MG07   V7_MG07_Scope_Conversation_A.png
+         status:   REUSE
+         was:      V7_MG07_Scope_Conversation_A.png
+         proof:    bytes identical to the previous package
+         sha256:   81b502e6fb40c293a01978616346a50c98da4d26921c70f6f277b0465e866110
+
+         reason:
+           Artwork unchanged. Both questions are spoken verbatim as
+           bullets in the scope conversation.
+
+------------------------------------------------------------------------------
+  MG08   V7_MG08_Scope_Conversation_B.png
+         status:   REUSE
+         was:      V7_MG08_Scope_Conversation_B.png
+         proof:    bytes identical to the previous package
+         sha256:   7c9dfb95368030eb02daccae0ba2d3126e9426de3e2c4b1a6e5b8d29f908927d
+
+         reason:
+           Artwork unchanged. Both questions are spoken verbatim as
+           bullets in the scope conversation.
+
+------------------------------------------------------------------------------
+  CTA    V7_CTA_Capability_Formation_Field_Kit.png
+         status:   REUSE
+         was:      V7_CTA_Capability_Formation_Field_Kit.png
+         proof:    bytes identical to the previous package
+         sha256:   eb3bb32df4a7158aba75000d76d7f8d84d8e56dcfb1447b396434294aa5be674
+
+         reason:
+           Artwork unchanged. One product route only, unchanged in
+           the locked script and in the master's cover table.
+
+------------------------------------------------------------------------------
+  WN     V7_WATCH_NEXT_Built_It_From_Scratch.png
+         status:   REUSE
+         was:      V7_WATCH_NEXT_Built_It_From_Scratch.png
+         proof:    bytes identical to the previous package
+         sha256:   fc5e5d7bab838d3d3104521c9d7285e90d8583d1d3a3995cd5501dccd2d1815d
+
+         reason:
+           Artwork unchanged. Routing is unchanged: Video 7 to
+           Video 8, and the locked script names that title in the
+           handoff.
+
+------------------------------------------------------------------------------
+SHORTS
+------------------------------------------------------------------------------
+
+  COPY UPDATE: 1   REUSE: 5
+
+
+  A1  Sometimes the Reward for Being Dependable Is More Work
+         status: REUSE
+         reason:
+           Semantically aligned with the locked script. It
+           paraphrases for a standalone vertical audience, which is
+           intended, and asserts nothing the script denies.
+
+  A2  The CAR Test in 45 Seconds
+         status: COPY UPDATE
+         reason:
+           The reading line said "you probably have a real growth
+           case." The locked script says the career case for growth
+           is visible, and the master's own visual map says GROWTH
+           CASE VISIBLE. The CAR explanation itself is unchanged.
+
+  A3  Responsibility, Accountability, Authority
+         status: REUSE
+         reason:
+           Semantically aligned with the locked script. It
+           paraphrases for a standalone vertical audience, which is
+           intended, and asserts nothing the script denies.
+
+  B4  Volume Is Not Complexity
+         status: REUSE
+         reason:
+           Semantically aligned with the locked script. It
+           paraphrases for a standalone vertical audience, which is
+           intended, and asserts nothing the script denies.
+
+  B5  Praise Is Not Role Design
+         status: REUSE
+         reason:
+           Semantically aligned with the locked script. It
+           paraphrases for a standalone vertical audience, which is
+           intended, and asserts nothing the script denies.
+
+  B6  Four Questions When Your Scope Expands
+         status: REUSE
+         reason:
+           Semantically aligned with the locked script. It
+           paraphrases for a standalone vertical audience, which is
+           intended, and asserts nothing the script denies.
+
+------------------------------------------------------------------------------
+PUBLISHING
+------------------------------------------------------------------------------
+
+  DESCRIPTION
+      TWO SENTENCES ADDED, NOTHING REMOVED. The opening, the CAR
+      bullets, the resource route, Watch Next and hashtags were already
+      accurate against the locked script. Added the "Praise alone is not
+      role design" payoff, which the script now makes a major beat, and
+      the script's nuance that some assignments return more in one
+      category than another. Title and thumbnail unchanged; the
+      thumbnail field keeps the exact locked symbol form.
+
+  PINNED COMMENT
+      COPY UPDATE. The CAR questions are unchanged. "A real growth case"
+      became "the career case for growth is visible," matching the
+      locked script, and the praise payoff was added because the script
+      now makes it a major beat.
+
+  TAGS AND HASHTAGS
+      Unchanged.
+
+------------------------------------------------------------------------------
+NOT REBUILT, DELIBERATELY
+------------------------------------------------------------------------------
+
+The thumbnail. No thumbnail was designed, generated or altered for any of the
+four videos.
+
+The presentation and reveal decks in video-7-slides/. This synchronization
+does not touch them.
+
+Videos 1, 2 and 3. Untouched.
+
+==============================================================================
+END OF TABLE
+==============================================================================

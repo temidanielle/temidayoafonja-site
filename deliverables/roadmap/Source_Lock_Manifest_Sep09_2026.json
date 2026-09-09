@@ -1,0 +1,401 @@
+{
+  "edition": "2026-09-09",
+  "created": "2026-09-09T05:51:46.416535-05:00",
+  "scope": "Latest V4-V7 spoken scripts; approved V8-V15 treatments; September7 V16-V30 preserved",
+  "numbering_rule": "Current V4 is the career-story topic from the upload labeled V5. Current V5 is the legibility topic from the upload labeled V4. No new swap.",
+  "recording_sources": [
+    {
+      "video": 4,
+      "title": "How to Explain a Career That Looks All Over the Place",
+      "thumbnail": "STOP LISTING JOBS",
+      "source_filename": "Video_5_How_To_Explain_A_Career_That_Looks_All_Over_The_Place_FINAL_Revised_Recording_Master(1).docx",
+      "canonical_filename": "V4_Recording_Master_LOCKED_2026-09-09.docx",
+      "source_sha256": "ea63295805bf38deab8f3b1c29d843ba16085c792312456d4cc6883fd6492509",
+      "canonical_sha256": "114134851b353058fbeeb312175f76e835c7c74b668e21ac634494199e285413",
+      "script_section_sha256": "78d39e806f26f17090372364f27b3c65360dbaf3293e48ab3f76e19ad1867eb0",
+      "script_section_identical": true,
+      "approx_spoken_word_count": 1580,
+      "non_spoken_changes": [
+        "Canonical number where needed",
+        "Added dated production-lock note",
+        "Core properties updated",
+        "Cover spacing/page-break formatting only; no script text changes"
+      ]
+    },
+    {
+      "video": 5,
+      "title": "Why Nobody Can Tell What You’re Actually Good At",
+      "thumbnail": "THEY CAN’T READ YOU",
+      "source_filename": "Video_4_Why_Nobody_Can_Tell_What_Youre_Good_At_FINAL_Revised_Recording_Master(1).docx",
+      "canonical_filename": "V5_Recording_Master_LOCKED_2026-09-09.docx",
+      "source_sha256": "f95b364e7214bf9fcc39c1aa4a2179680991110066012f1448b1190d102eaae0",
+      "canonical_sha256": "7227ee1b61ea21516c5b5166f2381931873f68f2092fb533ee09d1e7ac7ce4f7",
+      "script_section_sha256": "092833d6d6b2df0474213d4d60960858c439d0ab60809d8abd3149b210685bab",
+      "script_section_identical": true,
+      "approx_spoken_word_count": 1801,
+      "non_spoken_changes": [
+        "Canonical number where needed",
+        "Added dated production-lock note",
+        "Core properties updated",
+        "Cover spacing/page-break formatting only; no script text changes"
+      ]
+    },
+    {
+      "video": 6,
+      "title": "Before You Take an Internal Role, Ask These 3 Questions",
+      "thumbnail": "NEW TITLE, SAME WORK?",
+      "source_filename": "Video_6_Before_You_Take_An_Internal_Role_FINAL_Revised_Recording_Master(1).docx",
+      "canonical_filename": "V6_Recording_Master_LOCKED_2026-09-09.docx",
+      "source_sha256": "766d75628c1c1177ce9c354fe2759f177ebfd743ee76341af50cde1200605a1c",
+      "canonical_sha256": "ce3639c3de1e35fc0ee1b33b886c909283510174da58f37d4265ea27512513ed",
+      "script_section_sha256": "766d3e4a86af004ba91abd50f8aa28dbd8552a1e954ef1d7e4c45ad580f464ba",
+      "script_section_identical": true,
+      "approx_spoken_word_count": 1151,
+      "non_spoken_changes": [
+        "Canonical number where needed",
+        "Added dated production-lock note",
+        "Core properties updated",
+        "Cover spacing/page-break formatting only; no script text changes"
+      ]
+    },
+    {
+      "video": 7,
+      "title": "Are You Growing, or Just Being Given More Work?",
+      "thumbnail": "MORE WORK ≠ GROWTH",
+      "source_filename": "Video_7_Are_You_Growing_Or_Just_Being_Given_More_Work_FINAL_Revised_Recording_Master(1).docx",
+      "canonical_filename": "V7_Recording_Master_LOCKED_2026-09-09.docx",
+      "source_sha256": "4da2f71c1a1e1e91c554e354d03277d12423d196147a54a2c9b889038e00abe4",
+      "canonical_sha256": "aa1426c2423129801add5c82e91078b11e7a82a50c2048f44ad1888b6a3ee32c",
+      "script_section_sha256": "37aa121423cb61b985617bf5d7a091c30a6fa420800d2a6a68b50141af16fc2c",
+      "script_section_identical": true,
+      "approx_spoken_word_count": 1209,
+      "non_spoken_changes": [
+        "Canonical number where needed",
+        "Added dated production-lock note",
+        "Core properties updated",
+        "Cover spacing/page-break formatting only; no script text changes"
+      ]
+    }
+  ],
+  "roadmap": {
+    "1": {
+      "title": "How to Change Jobs Without Starting Your Career Over",
+      "thumb": "DON'T START FROM ZERO",
+      "lane": "Portability",
+      "cta": "Career Evidence Starter",
+      "mode": "Search",
+      "question": "Will another context be able to use it?",
+      "old_status": "Production locked",
+      "status": "Published; keep"
+    },
+    "2": {
+      "title": "Is Your Job Making You Less Marketable?",
+      "thumb": "VALUABLE HERE. STUCK HERE?",
+      "lane": "Formation",
+      "cta": "Field Kit",
+      "mode": "Hybrid",
+      "question": "What is this work building in me?",
+      "old_status": "Production locked",
+      "status": "Published; new thumbnail approved"
+    },
+    "3": {
+      "title": "3 Things to Do Before Quitting Your Job",
+      "thumb": "WAIT BEFORE YOU QUIT",
+      "lane": "Decision",
+      "cta": "Decision Check",
+      "mode": "Search",
+      "question": "Is this next move increasing what I can carry?",
+      "old_status": "Production finishing",
+      "status": "Published; keep"
+    },
+    "4": {
+      "title": "How to Explain a Career That Looks All Over the Place",
+      "thumb": "STOP LISTING JOBS",
+      "lane": "Translation",
+      "cta": "Comment + Starter; Keep the Proof secondary",
+      "mode": "Search-led / practical",
+      "question": "Can anyone else see what I have?",
+      "old_status": "Research locked | production next",
+      "status": "New script locked; sync assets"
+    },
+    "5": {
+      "title": "Why Nobody Can Tell What You’re Actually Good At",
+      "thumb": "THEY CAN’T READ YOU",
+      "lane": "Legibility",
+      "cta": "Claim comment + Starter",
+      "mode": "Browse / authority",
+      "question": "Will another context be able to use it?",
+      "old_status": "Research locked | production next",
+      "status": "New script locked; sync assets"
+    },
+    "6": {
+      "title": "Before You Take an Internal Role, Ask These 3 Questions",
+      "thumb": "NEW TITLE, SAME WORK?",
+      "lane": "Compounding",
+      "cta": "Decision Check",
+      "mode": "Decision / hybrid",
+      "question": "Is this next move increasing what I can carry?",
+      "old_status": "Renumber existing package",
+      "status": "New script locked; sync assets"
+    },
+    "7": {
+      "title": "Are You Growing, or Just Being Given More Work?",
+      "thumb": "MORE WORK ≠ GROWTH",
+      "lane": "Formation",
+      "cta": "Field Kit",
+      "mode": "Problem-led / hybrid",
+      "question": "What is this work building in me?",
+      "old_status": "Renumber existing package",
+      "status": "New script locked; sync assets"
+    },
+    "8": {
+      "title": "How to Show Your Impact at Work When You Built It From Scratch",
+      "thumb": "NOW IT LOOKS EASY",
+      "lane": "Evidence",
+      "cta": "Keep the Proof",
+      "mode": "Search",
+      "question": "Can the organization see and use capability it already has?",
+      "old_status": "Renumber existing package",
+      "status": "Title kept; new treatment"
+    },
+    "9": {
+      "title": "Before You Change Industries, Know What Still Counts",
+      "thumb": "NEW FIELD. NOT ZERO.",
+      "lane": "Portability",
+      "cta": "Field Kit",
+      "mode": "Search",
+      "question": "What must I genuinely relearn?",
+      "old_status": "Renumber existing package",
+      "status": "Approved direction"
+    },
+    "10": {
+      "title": "Before a Layoff, Know What You Can Still Prove",
+      "thumb": "BEFORE ACCESS ENDS",
+      "lane": "Evidence",
+      "cta": "Keep the Proof",
+      "mode": "Search",
+      "question": "Will another context be able to use it?",
+      "old_status": "Roadmap locked",
+      "status": "Approved direction"
+    },
+    "11": {
+      "title": "AI Can Do the Task. What Are You Still Paid For?",
+      "thumb": "WHAT STILL NEEDS YOU?",
+      "lane": "Formation",
+      "cta": "Field Kit",
+      "mode": "Search",
+      "question": "What is this work building in me?",
+      "old_status": "Roadmap locked",
+      "status": "Approved; demo required"
+    },
+    "12": {
+      "title": "What to Do When You Can’t Quit Your Job Yet",
+      "thumb": "STUCK FOR NOW?",
+      "lane": "Decision",
+      "cta": "Decision Check",
+      "mode": "Search",
+      "question": "Is this next move increasing what I can carry?",
+      "old_status": "Roadmap locked",
+      "status": "Title kept; new treatment"
+    },
+    "13": {
+      "title": "A 30-Day Plan to Test Your Next Career Move",
+      "thumb": "TEST BEFORE YOU QUIT",
+      "lane": "Compounding",
+      "cta": "Field Kit",
+      "mode": "Search",
+      "question": "Will another context be able to use it?",
+      "old_status": "Roadmap locked",
+      "status": "Plan, not completed results"
+    },
+    "14": {
+      "title": "I Compared 30 Job Descriptions Across 3 Industries",
+      "thumb": "WHAT REALLY TRANSFERS?",
+      "lane": "Portability",
+      "cta": "Field Kit",
+      "mode": "Search",
+      "question": "Will another context be able to use it?",
+      "old_status": "Roadmap locked",
+      "status": "Conditional on actual research"
+    },
+    "15": {
+      "title": "How to Stay Relevant After 40 Without Chasing Every Trend",
+      "thumb": "UPDATE. DON’T ERASE.",
+      "lane": "Portability",
+      "cta": "Field Kit",
+      "mode": "Search",
+      "question": "What must I genuinely relearn?",
+      "old_status": "Roadmap locked",
+      "status": "Approved direction"
+    },
+    "16": {
+      "title": "What to Do When Your Work Is Valued but You Are Overlooked",
+      "thumb": "VALUED - BUT OVERLOOKED",
+      "lane": "Visibility",
+      "cta": "Keep the Proof",
+      "mode": "Hybrid",
+      "question": "Can the organization see and use capability it already has?",
+      "old_status": "Roadmap locked",
+      "status": "Unchanged from Sep 7"
+    },
+    "17": {
+      "title": "How to Prove Your Value When AI Does More of the Task",
+      "thumb": "OUTPUT ISN'T ENOUGH",
+      "lane": "Evidence",
+      "cta": "Keep the Proof",
+      "mode": "Search",
+      "question": "Can the organization see and use capability it already has?",
+      "old_status": "Roadmap locked",
+      "status": "Unchanged from Sep 7"
+    },
+    "18": {
+      "title": "Should You Stay an Individual Contributor - or Become a Manager?",
+      "thumb": "YOU DON'T HAVE TO MANAGE",
+      "lane": "Decision",
+      "cta": "Decision Check",
+      "mode": "Search",
+      "question": "Is this next move increasing what I can carry?",
+      "old_status": "Roadmap locked",
+      "status": "Unchanged from Sep 7"
+    },
+    "19": {
+      "title": "Is Consulting a Real Next Step for Your Career?",
+      "thumb": "EXPERIENCE ISN'T AN OFFER",
+      "lane": "Decision",
+      "cta": "Decision Check",
+      "mode": "Search",
+      "question": "Will another context be able to use it?",
+      "old_status": "Roadmap locked",
+      "status": "Unchanged from Sep 7"
+    },
+    "20": {
+      "title": "How to Return After a Career Break Without Starting at Zero",
+      "thumb": "THE GAP ISN'T THE WHOLE STORY",
+      "lane": "Portability",
+      "cta": "Field Kit",
+      "mode": "Search",
+      "question": "What must I genuinely relearn?",
+      "old_status": "Roadmap locked",
+      "status": "Unchanged from Sep 7"
+    },
+    "21": {
+      "title": "What You Must Relearn When You Change Industries",
+      "thumb": "NOT EVERYTHING TRAVELS",
+      "lane": "Context",
+      "cta": "Field Kit",
+      "mode": "Search",
+      "question": "What must I genuinely relearn?",
+      "old_status": "Roadmap locked",
+      "status": "Unchanged from Sep 7"
+    },
+    "22": {
+      "title": "No Promotion? How to Know Whether to Wait or Move On",
+      "thumb": "WAIT OR MOVE?",
+      "lane": "Decision",
+      "cta": "Decision Check",
+      "mode": "Search",
+      "question": "Is this next move increasing what I can carry?",
+      "old_status": "Roadmap locked",
+      "status": "Unchanged from Sep 7"
+    },
+    "23": {
+      "title": "What Happens to Your Career When Your Company Gets Flatter?",
+      "thumb": "THE LADDER CHANGED",
+      "lane": "Compounding",
+      "cta": "Field Kit",
+      "mode": "Hybrid",
+      "question": "Can the organization see and use capability it already has?",
+      "old_status": "Roadmap locked",
+      "status": "Unchanged from Sep 7"
+    },
+    "24": {
+      "title": "How to Grow When You're Already Senior in Your Career",
+      "thumb": "WHAT'S NEXT AFTER SENIOR?",
+      "lane": "Formation",
+      "cta": "Field Kit",
+      "mode": "Search",
+      "question": "What is this work building in me?",
+      "old_status": "Roadmap locked",
+      "status": "Unchanged from Sep 7"
+    },
+    "25": {
+      "title": "How to Tell If Your Career Has Stopped Growing",
+      "thumb": "SUCCESSFUL - BUT STALLED",
+      "lane": "Formation",
+      "cta": "Field Kit",
+      "mode": "Search / Hybrid",
+      "question": "What is this work building in me?",
+      "old_status": "Roadmap locked | Sigelman seam",
+      "status": "Unchanged from Sep 7"
+    },
+    "26": {
+      "title": "What Is Your Job Still Teaching You Once AI Does More of the Work?",
+      "thumb": "WHAT ARE YOU STILL LEARNING?",
+      "lane": "Formation",
+      "cta": "Field Kit",
+      "mode": "Hybrid",
+      "question": "What is this work building in me?",
+      "old_status": "Roadmap locked | AI formation seam",
+      "status": "Unchanged from Sep 7"
+    },
+    "27": {
+      "title": "Why Companies Miss the Talent They Already Have",
+      "thumb": "THE TALENT IS ALREADY HERE",
+      "lane": "Enterprise crossover",
+      "cta": "Soft / Book",
+      "mode": "Authority",
+      "question": "Can the organization see and use capability it already has?",
+      "old_status": "Roadmap locked | enterprise seam",
+      "status": "Unchanged from Sep 7"
+    },
+    "28": {
+      "title": "How to Build a Career That Can Survive Industry Change",
+      "thumb": "BUILT TO TRAVEL",
+      "lane": "Longevity",
+      "cta": "Field Kit",
+      "mode": "Search",
+      "question": "Will another context be able to use it?",
+      "old_status": "Roadmap locked | longevity seam",
+      "status": "Unchanged from Sep 7"
+    },
+    "29": {
+      "title": "What to Do When Your Expertise Has Become Too Narrow",
+      "thumb": "TOO VALUABLE HERE?",
+      "lane": "Portability",
+      "cta": "Field Kit",
+      "mode": "Search",
+      "question": "Will another context be able to use it?",
+      "old_status": "Roadmap locked",
+      "status": "Unchanged from Sep 7"
+    },
+    "30": {
+      "title": "How to Choose Stretch Assignments That Actually Build Your Career",
+      "thumb": "NOT ALL STRETCH IS GROWTH",
+      "lane": "Compounding",
+      "cta": "Field Kit",
+      "mode": "Search / Hybrid",
+      "question": "Is this next assignment increasing what I can carry?",
+      "old_status": "Roadmap locked | mobility seam",
+      "status": "Unchanged from Sep 7"
+    }
+  },
+  "not_verified": [
+    "Final runtimes",
+    "Final video edits",
+    "External outlier example performance",
+    "Whether approved thumbnail replacements are live"
+  ],
+  "package_finalized_at": "2026-09-09T06:02:38.065415-05:00",
+  "document_qa": [
+    "V4: all 189 Recording Script paragraphs identical to the latest supplied source, including labels and delivery directions.",
+    "V5: all 209 Recording Script paragraphs identical to the latest supplied source, including labels and delivery directions.",
+    "V6: all 67 Recording Script paragraphs identical to the latest supplied source, including labels and delivery directions.",
+    "V7: all 76 Recording Script paragraphs identical to the latest supplied source, including labels and delivery directions.",
+    "V16-V30 titles and thumbnail directions equal the September 7 baseline; V31 retained in the roadmap backlog.",
+    "V8-V15 match the approved conversation directions; V13 is a plan and V14 is conditional on documented research.",
+    "V4 practical / V5 legibility numbering preserved; original stale source labels corrected only in nonspoken delivery labels.",
+    "No em dashes in delivered document text and the complete Code prompt.",
+    "All DOCX files rendered and every page visually inspected; roadmap table headings and cover-note pagination corrected.",
+    "This QA verifies the handoff documents and source preservation, not recorded audio, actual runtime, finished motion graphics, live links or the Code repository."
+  ]
+}

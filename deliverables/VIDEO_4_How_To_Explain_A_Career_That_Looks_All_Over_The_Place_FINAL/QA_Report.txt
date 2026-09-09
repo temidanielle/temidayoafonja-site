@@ -1,133 +1,203 @@
 ==============================================================================
 QA REPORT
 Video 4  ·  How to Explain a Career That Looks All Over the Place
-September 8, 2026
+September 9 script synchronization
 ==============================================================================
 
-29 checks run. 29 passed, 0 failed.
+This report is split deliberately. The first section is what can be checked
+now, against the locked script and the package files. The second is what
+cannot be checked until the recording and the export exist, and is therefore
+NOT claimed as verified.
 
-  [PASS] Numbered Video 4 everywhere
-         No asset prefix, filename or routing reference from the
-         other number survives in this package.
+This is a fresh pass. No earlier QA result is reused as evidence that this
+package is aligned.
 
-  [PASS] Thumbnail line correct
-         STOP LISTING JOBS
+==============================================================================
+SECTION 1: PACKAGE CHECKS COMPLETED NOW
+==============================================================================
 
-  [PASS] Superseded thumbnail line absent from active material
-         The active thumbnail for Video 4 is STOP LISTING JOBS. YOUR
-         CAREER MAKES SENSE appears in two files only, and in both it
-         is named in order to supersede it: the change log, and the
-         Recording Master's own note, which recommends STOP LISTING
-         JOBS because it is stronger than YOUR CAREER MAKES SENSE.
-         The master is the spoken source of truth and was not edited.
-         Both files are excluded from the active-surface scan for
-         that reason.
+28 checks run. 28 passed, 0 failed.
 
-  [PASS] No other video's thumbnail line appears as active packaging
-         The active thumbnail for this video is STOP LISTING JOBS.
-         The other video's thumbnail line appears nowhere in this
-         package's active material.
+  [PASS] Synchronized to the exact September 9 script file
+         V4_Recording_Master_LOCKED_2026-09-09.docx. SHA-256
+         recomputed and matched against the handoff lock manifest.
 
-  [PASS] Locked opening preserved
-         When someone says, “Walk me through your background,” they
-         are not asking for your life st
+  [PASS] Recording Script section unchanged
+         This package reads the locked master and never writes to it.
+         The reading copy is generated from it, so no transcription
+         step exists where a line could drift. 177 spoken paragraphs,
+         1580 words.
 
-  [PASS] Recording Master is the spoken source of truth
-         The renumbered master differs from the supplied file by
-         exactly one paragraph, the header line. Verified by
-         paragraph comparison.
+  [PASS] Video number, title, thumbnail, resource and Watch Next correct
+         Video 4 · How to Explain a Career That Looks All Over the
+         Place · STOP LISTING JOBS ·
+         https://temidayoafonja.com/career-evidence-starter · Watch
+         Next Why Nobody Can Tell What You’re Actually Good At (Video
+         5)
 
-  [PASS] Framework intact
-         Chapters, Spine, Next Direction
+  [PASS] Every spoken sentence trigger exists in the locked script
+         All 10 graphic triggers matched against the locked spoken
+         copy.
 
-  [PASS] Spoken CTA correct
-         Share your 20-second version in the comments.
+  [PASS] Non-spoken visual cues are labelled as editorial cues
+         3 beats are listed under EDITORIAL CUES, NOT SPOKEN TRIGGERS
+         in the trigger map and again in the visual build map and the
+         Co-Creator prompt.
 
-  [PASS] Pinned resource correct
-         Free 10-Minute Career Evidence Starter
-         https://temidayoafonja.com/career-evidence-starter
+  [PASS] No retired instruction survives
+         Checked across 1254 package paragraphs: the retired fixed-
+         order rule, the retired fixed-order framework line, the
+         retired opening line. Each may appear only in a paragraph
+         that records it as retired.
 
-  [PASS] Secondary resource handled correctly
-         Keep the Proof is secondary, in the description only,
-         mentioned once in the ending and absent from the CTA card.
+  [PASS] No removed opening is still required by a prompt
+         Checked: “When someone says walk me through your
+         background”. The locked opening for this video is “You’re
+         halfway through answering: Walk me through your
+         background.”.
 
-  [PASS] Watch Next correct
-         Why Nobody Can Tell What You're Actually Good At
+  [PASS] Intentional pauses protected
+         2 scripted delivery direction(s) carried into the run of
+         show, the trigger map and the Co-Creator prompt, each marked
+         as performed rather than edited around.
 
-  [PASS] Watch Next is the final visual and there is no return to camera
-         Stated in the scene, the per-scene prompt and the master
-         prompt.
+  [PASS] Scoped evidence claims keep their qualifications
+         Personal proof stays bounded exactly as the master bounds
+         it. No employer, assignment, timeline or result is inferred
+         anywhere.
 
-  [PASS] Real limits preserved
-         Market, bias, credentials, domain knowledge and real
-         experience gaps are all named in the spoken copy and
-         repeated in the run of show.
+  [PASS] REUSE and REORDER assets are byte-identical to the previous package
+         7 of 10 assets carried over unchanged, verified by SHA-256
+         against the pre-synchronization package.
+
+  [PASS] Asset count stays compact
+         8 teaching frames plus a CTA card and a Watch Next card. No
+         new deck was created and no existing deck was rebuilt.
 
   [PASS] Mobile readability
-         Very large type, one dominant idea per state, sequential
-         reveals, no four-column layouts and no dense grids. Checked
-         by rendering the densest frames at 390 points wide and
-         reading them at that size.
+         Geometry measured against the rendered DOM: zero overlaps,
+         nothing in the caption zone, nothing inside the safe edge.
+         Every changed frame was then downscaled to 390 points wide
+         and read at that size.
 
-  [PASS] Full-screen hero graphics
-         Stated per scene with the hide-the-camera instruction
-         spelled out.
+  [PASS] True full-screen rule is explicit
+         Stated in the master prompt, per scene in the visual build
+         map, and again in every per-scene prompt.
 
-  [PASS] Full-screen substantive B-roll
-         Stated in the grammar, the map's B-roll section and the
-         master prompt.
+  [PASS] Zoom budget stated as a total
+         3 to 5 deliberate camera-emphasis beats across the entire
+         video, written explicitly as the whole budget rather than as
+         punch-ins plus a separate zoom quota.
 
-  [PASS] Captions suppressed during hero visuals
-         Per scene and in a dedicated section of the map, run of show
-         and prompt.
+  [PASS] Sound budget includes the Subscribe cue
+         4 to 7 restrained accents in total across the whole video,
+         the Subscribe cue counted inside that budget. Placed after
+         the modeled twenty-second answer and its intentional
+         silence.
 
-  [PASS] One restrained Subscribe cue
-         Visual only, adds no dialogue, placed after the 20-second
-         version has landed.
+  [PASS] Watch Next is the final visual
+         No return to camera, no outro. Stated in the scene, the per-
+         scene prompt and the master prompt, with the intentional
+         final-card hold and music fade preserved.
 
-  [PASS] Four to seven restrained sound accents
-         Stated in the map, the run of show and the master prompt.
+  [PASS] Resource routes preserved
+         https://temidayoafonja.com/career-evidence-starter. Keep the
+         Proof is a description link only.
 
-  [PASS] U.S. English
-         Spoken script, assets and every package document swept.
+  [PASS] No thumbnail production introduced
+         No thumbnail was designed, generated or altered for any of
+         the four videos.
 
-  [PASS] No em dashes
-         0 in the spoken script, 0 in the assets, 0 across the
-         package.
+  [PASS] Export specification 1920x1080
+         10 assets, sizes: 1920x1080
 
-  [PASS] No invented claims
-         Nothing was added to the spoken copy. Asset wording and
-         Short wording come from the master.
-
-  [PASS] No invented speech
-         The master prompt forbids generating audio and requires a
-         pickup to be flagged instead.
-
-  [PASS] No invented music attribution
-         No license code appears. The publishing notes say to add
-         attribution only once the real track is known.
-
-  [PASS] No estimated final chapters
-         No chapter timestamps are supplied. The publishing notes say
-         to build them from the actual export.
-
-  [PASS] No dead footage after the ending
-         The master prompt instructs the editor to cut everything
-         after the last spoken word.
-
-  [PASS] Export specification 1920x1080 minimum
-         9 assets, sizes: 1920x1080
-
-  [PASS] Six dedicated Shorts with Priority A and B
-         A _Asking_You_To_Place_You 44s, A The_Twenty_Second_Answer
-         52s, A t_03_Why_So_Many_Changes 40s, B
-         nce_Is_Not_Inevitability 32s, B _Answer_The_Short_Tenure
-         40s, B _Explains_Proof_Supports 35s
+  [PASS] Six Shorts, Priority A and B, 25 to 60 seconds
+         A1 REBUILD 41s, A2 COPY UPDATE 52s, A3 REUSE 40s, B4 REUSE
+         32s, B5 REUSE 40s, B6 COPY UPDATE 28s
 
   [PASS] Editorial boundaries preserved
-         The run of show lists all seven never-imply boundaries as
+         10 never-imply boundaries carried into the run of show as
          lines to hold while speaking.
 
+  [PASS] No confidential material advised
+         Evidence is the speaker's own account of their own work, and
+         the permitted result. Nothing suggests retaining
+         proprietary, customer, employee or employer-owned material.
+
+  [PASS] U.S. English
+         Assets and every package document swept. The locked script
+         is the source of truth and is not modified by this check.
+
+  [PASS] No em dashes in the supporting materials
+         0 in the assets, 0 across the package documents.
+
+  [PASS] No estimated final chapters
+         No chapter timestamps anywhere. The publishing notes and the
+         master prompt both require them to be built from the actual
+         export.
+
+  [PASS] No invented music attribution
+         No track, artist or license code appears anywhere in the
+         package.
+
+  [PASS] No fabricated YouTube URLs
+         The Watch Next link is a placeholder in the description. No
+         YouTube video URL is constructed from a guessed identifier.
+
+  [PASS] Runtime presented as an estimate, not a measurement
+         1580 words, 10:54 to 12:09 speech only at 130 to 145 wpm,
+         labelled as arithmetic on the script and explicitly not a
+         timed read or a finished runtime.
+
 ==============================================================================
-VIDEO 4: READY FOR RECORDING / RIVERSIDE PRODUCTION
+SECTION 2: FINAL-EXPORT CHECKS STILL PENDING
+==============================================================================
+
+None of the following is verified. Nothing in this package should be read as
+claiming otherwise.
+
+  [PENDING] Executed animation
+            Reveal states, sequential builds and hold behavior
+            exist only as instructions here. Verify against the
+            finished Co-Creator scenes.
+
+  [PENDING] Recorded audio and delivery
+            Whether the approved script was spoken as written,
+            including the intentional pauses. If recorded speech
+            differs materially from the master, that is a mismatch
+            to flag, not something the edit can restore.
+
+  [PENDING] Audio balance
+            Voice dominant, sound accents quieter than speech,
+            music subtle. Not testable before the mix.
+
+  [PENDING] Final pacing and actual runtime
+            The estimate in this package is arithmetic on the word
+            count. The real runtime comes from the export.
+
+  [PENDING] Caption placement
+            That captions are actually suppressed or moved clear
+            of designed text in each full-screen scene, and that
+            the separately delivered subtitle transcript still
+            carries the complete spoken content.
+
+  [PENDING] Chapter timestamps
+            Built from the finished export. None are supplied.
+
+  [PENDING] Thumbnail artwork
+            Not produced or altered here. Confirm the approved
+            artwork is attached at upload.
+
+  [PENDING] Linked destinations
+            That each resource URL and the playlist resolve for a
+            viewer at publication, and that the Watch Next
+            placeholder has been replaced with the real video URL.
+
+  [PENDING] Camera-emphasis and sound budgets as executed
+            That the finished edit actually lands within 3 to 5
+            camera-emphasis beats and 4 to 7 sound accents in
+            total.
+
+==============================================================================
+VIDEO 4: PACKAGE SYNCHRONIZED TO THE SEPTEMBER 9 SCRIPT LOCK
 ==============================================================================

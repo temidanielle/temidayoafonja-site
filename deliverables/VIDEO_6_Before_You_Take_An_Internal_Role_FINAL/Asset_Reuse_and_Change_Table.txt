@@ -1,0 +1,230 @@
+==============================================================================
+ASSET REUSE AND CHANGE TABLE
+Video 6  ·  Before You Take an Internal Role, Ask These 3 Questions
+Synchronized to V6_Recording_Master_LOCKED_2026-09-09.docx  ·  September 9, 2026
+==============================================================================
+
+REUSE means the artwork did not change. That is proved, not asserted: every
+rendered file is hashed against the pre-synchronization package, and any REUSE
+asset whose bytes moved is reported as a QA failure.
+
+REORDER means the artwork did not change but its position in the running order
+did. COPY UPDATE means the design is the same and the wording was corrected
+against the locked script. REBUILD means the frame's job changed. REMOVE means
+it was dropped, with the reason recorded.
+
+  COPY UPDATE: 3   REUSE: 6
+
+
+------------------------------------------------------------------------------
+  MG01   V6_MG01_New_Title_Same_Work.png
+         status:   COPY UPDATE
+         was:      V6_MG01_New_Title_Same_Work.png
+         proof:    bytes changed, as intended
+         sha256:   b29329bd0d1004f2a4aba2a5bf9f6b968b719e5503b6cf9c8e62db175fdd330c
+
+         reason:
+           Headline unchanged. The support line said "Same company
+           does not automatically mean useful growth", which
+           paraphrased the retired logo opening. The locked script
+           opens on the offer itself and the one-year question,
+           which is what the master's own visual map row 1 now
+           carries.
+
+------------------------------------------------------------------------------
+  MG02   V6_MG02_Three_Questions.png
+         status:   REUSE
+         was:      V6_MG02_Three_Questions.png
+         proof:    bytes identical to the previous package
+         sha256:   bef661ae4796cc502c2e749bf42a72935322b2f1ccf90babb5494179fc9704d4
+
+         reason:
+           Artwork unchanged. All three questions are still spoken
+           verbatim in the hook.
+
+------------------------------------------------------------------------------
+  MG03   V6_MG03_Ordinary_Monday.png
+         status:   REUSE
+         was:      V6_MG03_Ordinary_Monday.png
+         proof:    bytes identical to the previous package
+         sha256:   50d06e13438099752be758b592cfa24ef97d671b42a6c07129a1033786e903da
+
+         reason:
+           Artwork unchanged. The question and all four support
+           terms match the locked script and the master's map row 3
+           exactly.
+
+------------------------------------------------------------------------------
+  MG04   V6_MG04_Tasks_Vs_Judgment.png
+         status:   REUSE
+         was:      V6_MG04_Tasks_Vs_Judgment.png
+         proof:    bytes identical to the previous package
+         sha256:   d401791fe0b5fc41bfa5dc87702ec6771a390ee6f68bf2e47cb90383caf8c8e9
+
+         reason:
+           Artwork unchanged. Both columns match the master's map
+           row 4 and the spoken definitions.
+
+------------------------------------------------------------------------------
+  MG05   V6_MG05_Portable_Evidence.png
+         status:   REUSE
+         was:      V6_MG05_Portable_Evidence.png
+         proof:    bytes identical to the previous package
+         sha256:   62964f6a6538ca88b72dfa5aa686b7603100da5a6c332d0172f5b748ac3bc5d3
+
+         reason:
+           Artwork unchanged. All three terms and their questions
+           are spoken verbatim as bullets in the locked script.
+
+------------------------------------------------------------------------------
+  MG06   V6_MG06_Decision_Read.png
+         status:   COPY UPDATE
+         was:      V6_MG06_Decision_Read.png
+         proof:    bytes changed, as intended
+         sha256:   8df208c2f706880d05b3ed41939d4508361e6683f5b2de93c1bd53746cc6d273
+
+         reason:
+           Design unchanged. The first row read "Strong growth
+           case"; the locked script now says the developmental case
+           is strong, which is also what the master's map row 6
+           says. The third row deliberately keeps the spoken
+           qualification MAY BE, rather than the map's shorter
+           "Movement, limited growth", because the script is
+           explicit that zero or one yes does not make a move
+           wrong.
+
+------------------------------------------------------------------------------
+  MG07   V6_MG07_Questions_To_Ask.png
+         status:   COPY UPDATE
+         was:      V6_MG07_Questions_To_Ask.png
+         proof:    bytes changed, as intended
+         sha256:   cce03aa0454375419f1454c6aa10b22982c4039bfe5a878d6f00b6d9a6120512
+
+         reason:
+           Design unchanged. The second question read "Which
+           decisions belong to me?"; the locked script asks "Which
+           decisions belong to this role?" during the interview.
+           Corrected so every question on the card is a sentence
+           the viewer actually hears.
+
+------------------------------------------------------------------------------
+  CTA    V6_CTA_Career_Decision_Evidence_Check.png
+         status:   REUSE
+         was:      V6_CTA_Career_Decision_Evidence_Check.png
+         proof:    bytes identical to the previous package
+         sha256:   e845ab66c3101826d85dbc5b5d994996ad4d61dfaf53a00108447d3c2df749f7
+
+         reason:
+           Artwork unchanged. One product route only, unchanged in
+           the locked script and in the master's cover table.
+
+------------------------------------------------------------------------------
+  WN     V6_WATCH_NEXT_Are_You_Growing.png
+         status:   REUSE
+         was:      V6_WATCH_NEXT_Are_You_Growing.png
+         proof:    bytes identical to the previous package
+         sha256:   ea2ad5348438819c95c104513b3205eabd637ed93fce0f0141ee1f46c9b59f97
+
+         reason:
+           Artwork unchanged. Routing is unchanged: Video 6 to
+           Video 7.
+
+------------------------------------------------------------------------------
+SHORTS
+------------------------------------------------------------------------------
+
+  COPY UPDATE: 4   REBUILD: 2
+
+
+  A1  A Year From Now
+         status: REBUILD
+         reason:
+           Obsolete premise. The entire Short was built on "an
+           internal move can look safe because the logo does not
+           change," which the locked script removed. The script now
+           opens on the offer itself and the one-year question.
+
+  A2  Three Questions Before an Internal Role
+         status: COPY UPDATE
+         reason:
+           Two corrections. The hook said "ask three questions"
+           where the script says "test three things," and the
+           reading line said "a strong growth case" where the
+           script now says the developmental case is strong. The
+           three questions themselves are unchanged.
+
+  A3  More Responsibility Is Not More Judgment
+         status: COPY UPDATE
+         reason:
+           Obsolete reference. The Short carried "neither one is
+           unimportant" and a cross-functional meeting example,
+           both of which the locked script removed. The report
+           example and the core distinction remain and are kept.
+
+  B4  The Ordinary Monday Test
+         status: COPY UPDATE
+         reason:
+           Obsolete reference. The closing said words like
+           strategic do not tell you what you will become able to
+           do; the locked script now says they are not enough if
+           nobody can tell you what will actually be different.
+
+  B5  Will the Evidence Travel?
+         status: REBUILD
+         reason:
+           Obsolete premise. The Short was built on "inside your
+           company, everybody may know you are the person who can
+           get something done, and another employer does not
+           inherit that reputation," which the locked script
+           removed, along with its explicit confidential-material
+           sentence. Rebuilt on the interview thought experiment
+           the script now uses, which carries the same boundary
+           through the phrase "the permitted result."
+
+  B6  You May Not Need to Leave
+         status: COPY UPDATE
+         reason:
+           The Short expanded the script's line into "you may not
+           need to leave your company to build a very different
+           career chapter." The locked script says it twice,
+           exactly, as "You may not need to leave. But the work
+           does need to change." Tightened to the spoken line.
+
+------------------------------------------------------------------------------
+PUBLISHING
+------------------------------------------------------------------------------
+
+  DESCRIPTION
+      OPENING PARAGRAPH REPLACED. The previous description opened on "an
+      internal move can look safe because the logo does not change,"
+      which the locked script no longer says. It now opens on the offer
+      and the one-year question, which is the script's actual opening.
+      The three questions, the boundaries paragraph, the resource route,
+      Watch Next and hashtags are unchanged.
+
+  PINNED COMMENT
+      COPY UPDATE. The three questions are unchanged and still spoken
+      verbatim. The reading line said "a strong growth case"; the locked
+      script says the developmental case is strong, and the zero-or-one
+      reading now carries the script's own MAY BE qualification.
+
+  TAGS AND HASHTAGS
+      Unchanged. The retired primary title is deliberately retained as a
+      search tag so the topic still surfaces for people searching that
+      way.
+
+------------------------------------------------------------------------------
+NOT REBUILT, DELIBERATELY
+------------------------------------------------------------------------------
+
+The thumbnail. No thumbnail was designed, generated or altered for any of the
+four videos.
+
+The presentation and reveal decks in video-6-slides/. This synchronization
+does not touch them.
+
+Videos 1, 2 and 3. Untouched.
+
+==============================================================================
+END OF TABLE
+==============================================================================

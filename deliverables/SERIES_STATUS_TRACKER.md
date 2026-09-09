@@ -4,7 +4,121 @@ Series-level record of publication gates, open decisions and outstanding
 assets. Kept here so individual video packages do not have to be reopened to
 carry a cross-cutting note.
 
-Last updated: 8 September 2026.
+Last updated: 9 September 2026.
+
+---
+
+## September 9, 2026 — V4 to V7 script lock and package synchronization
+
+The four September 9 Recording Masters are the spoken source of truth for
+Videos 4 to 7. The packages were synchronized to them. This was a targeted
+production update: assets were reused, reordered, corrected or rebuilt
+individually. **No new slide decks were created, no thumbnail was produced or
+altered, and Videos 1 to 3 were not touched.**
+
+Source: `YouTube_Roadmap_and_V4V7_Lock_Sep09_2026.zip`. Every master's SHA-256
+was recomputed and matched against the handoff's own `Source_Lock_Manifest.json`
+before anything was generated. The build reads those files and never writes to
+them, so no Recording Script section can drift.
+
+| # | Title | Thumbnail | Script file | Words | Speech-only estimate | Assets | Shorts |
+|---|---|---|---|---|---|---|---|
+| **V4** | How to Explain a Career That Looks All Over the Place | STOP LISTING JOBS | `V4_Recording_Master_LOCKED_2026-09-09.docx` | 1580 | 10:54 to 12:09 | COPY UPDATE 1, REBUILD 2, REUSE 7 | COPY UPDATE 2, REBUILD 1, REUSE 3 |
+| **V5** | Why Nobody Can Tell What You’re Actually Good At | THEY CAN’T READ YOU | `V5_Recording_Master_LOCKED_2026-09-09.docx` | 1801 | 12:25 to 13:51 | COPY UPDATE 1, REBUILD 1, REORDER 3, REUSE 5 | REUSE 6 |
+| **V6** | Before You Take an Internal Role, Ask These 3 Questions | NEW TITLE, SAME WORK? | `V6_Recording_Master_LOCKED_2026-09-09.docx` | 1151 | 7:56 to 8:51 | COPY UPDATE 3, REUSE 6 | COPY UPDATE 4, REBUILD 2 |
+| **V7** | Are You Growing, or Just Being Given More Work? | MORE WORK ≠ GROWTH | `V7_Recording_Master_LOCKED_2026-09-09.docx` | 1209 | 8:20 to 9:18 | COPY UPDATE 2, REBUILD 1, REORDER 1, REUSE 6 | COPY UPDATE 1, REUSE 5 |
+
+Speech-only estimates use the roadmap's own 130 to 145 wpm band and its own
+counting method, and reproduce its printed figures exactly. **They are
+arithmetic on the script, not a timed read and not a finished runtime.** The
+printed cover targets (V4 12:00 to 14:00, V5 17:00 to 18:30, V6 and V7 10:30 to
+11:30) are not verified finished lengths. The September 9 scripts are shorter.
+Nothing was padded to reach an older target.
+
+### What changed, per video
+
+- **V4.** New opening on "walk me through your background." The modeled
+  twenty-second answer now runs before the framework explanation and before the
+  self-introduction, and its intentional silence is protected as a performed
+  beat. **The fixed-order rule is retired:** "Stop explaining your career in
+  order" and "The detail changes. The structure does not" are both gone. The
+  ingredients stay the same; the order and the amount of detail depend on the
+  question. The opening frame was rebuilt and a new frame carries the corrected
+  rule at full size. The acquisition beat now introduces the objection section,
+  remapped without inventing an employer, a loss or an outcome.
+- **V5.** New opening on the outdated-title introduction. The
+  resume-versus-Claim demonstration moves early, so the opening frame slot was
+  adapted to carry it and the retired frame's line became a short over-camera
+  callout, which kept the set compact instead of growing it. The One-Line Test
+  and the sharper-versus-defensible frame move ahead of the sorting mechanism.
+  **The Claim test is no longer a verdict:** it now reads "May still be
+  decoding" and "A better sign," matching the script's own qualifications. Every
+  Receipt keeps its qualifier and stays off the graphics.
+- **V6.** New opening on the internal offer and the one-year question; the logo
+  opening is retired everywhere. Removed examples were stripped from assets,
+  prompts and Shorts. "Strong growth case" became "Strong developmental case,"
+  and the zero-or-one row keeps the spoken **may be** rather than hardening into
+  a verdict. First versus second person is documented per frame rather than
+  standardized, because the master itself alternates by context.
+- **V7.** CAR moves into the hook. The Complexity comparison is simplified to
+  the master's revised copy. **"Praise alone is not role design" is now a large
+  display-weight payoff with its own reveal state**, which is why that frame is
+  a rebuild. The pattern read says "Growth case visible," not "Real growth." The
+  thumbnail field already carried the exact locked symbol form, applied on
+  September 8; the roadmap asked this to be checked, and it was.
+
+### Reuse is proved, not asserted
+
+Every rendered asset is hashed against the pre-synchronization package. **28 of
+39 assets carried over byte-identical.** An asset marked REUSE or REORDER whose
+bytes moved is a QA failure, not a footnote. Three that drifted during the build
+were traced to draw calls retyped rather than copied, and were restored so the
+reuse claim is true.
+
+### The QA reports are split
+
+Each `QA_Report.txt` separates **package checks completed now** (28 per video,
+all passing) from **final-export checks still pending**. Executed animation,
+recorded audio, audio balance, final pacing, actual runtime, caption placement,
+chapter timestamps, thumbnail artwork and live link reachability are listed as
+PENDING and are **not** claimed as verified. No earlier QA pass is reused as
+evidence.
+
+### Deliverables
+
+    deliverables/VIDEO_4_.../  VIDEO_5_.../  VIDEO_6_.../  VIDEO_7_.../
+    deliverables/Video_4_Sep09_Synchronized_Package.zip   cb2d082f043bfe42651c04b3d48be6f7ebbb94b43f053d270adc308d75834fab
+    deliverables/Video_5_Sep09_Synchronized_Package.zip   6059467661055ec04dd662860952c76e5b95a9a3c6a1f4864a9c7e3be30fbdea
+    deliverables/Video_6_Sep09_Synchronized_Package.zip   6fb8f7aaaea7a8e31e427e3a81ccefd40c6b2ed5c7af9f1d6fcc47d1b8eb311d
+    deliverables/Video_7_Sep09_Synchronized_Package.zip   2dcc007e1d528b938b3ed572d8e9f673177aadfa6b779f556217416e4bde79f6
+    deliverables/Videos_4-7_Sep09_Synchronized_Handoff.zip
+    4f1f7b1ca3d67726086d1d802fca711fccd85b5b7d381ed4e5cae096f5bec2b2
+    deliverables/V4-V7_SEP09_SYNC_MANIFEST.md
+
+Superseded material is isolated in `deliverables/SUPERSEDED_DO_NOT_USE/` as
+`OLD_Sep08_V4-V7_Scripts/` and `OLD_Sep08_Packages/`, each with a notice. Every
+active script is named `..._LOCKED_2026-09-09.docx`; nothing superseded carries
+that name.
+
+### Not supplied, by instruction
+
+No chapter timestamps. No music attribution or license code. No thumbnail
+artwork. No YouTube URL built from a guessed identifier; each Watch Next
+placeholder is deliberate.
+
+### Roadmap
+
+`deliverables/roadmap/YouTube_Roadmap_1-30_LOCKED_Sep09_2026.docx` is the
+current forward roadmap. V4 to V7 hold their positions, V8 to V15 carry the
+approved directions with their evidence conditions intact (**V13 is a plan, V14
+is conditional on documented research, V11 requires verification**), V16 to V30
+are retained exactly as the September 7 map had them, and V31 stays in the
+backlog. **No V8 to V15 script or artwork was started.**
+
+**VIDEOS 4, 5, 6 AND 7: PACKAGES SYNCHRONIZED TO THE SEPTEMBER 9 SCRIPT LOCK.**
+
+Ready for recording and Riverside production. Nothing about the recording or the
+export is verified, because neither exists yet.
 
 ---
 

@@ -1,67 +1,103 @@
 ==============================================================================
 CHANGE LOG
 Video 4  ·  How to Explain a Career That Looks All Over the Place
-September 8, 2026
+September 9 script synchronization
 ==============================================================================
 
-This topic was Video 5. It is now Video 4. The swap is definitive: the
-previous numbering is not retained as an alternate system anywhere in this
-package.
+This is a targeted synchronization with the September 9 script lock. It is not
+a strategy rebuild, not a numbering change, and not a new visual system.
+Assets were reused, reordered, corrected or rebuilt individually, and the
+reasons are in Asset_Reuse_and_Change_Table.txt.
+
+------------------------------------------------------------------------------
+SOURCE
+------------------------------------------------------------------------------
+
+  Script file used:  V4_Recording_Master_LOCKED_2026-09-09.docx
+  Handoff archive:   YouTube_Roadmap_and_V4V7_Lock_Sep09_2026.zip
+  Canonical SHA-256: 114134851b353058fbeeb312175f76e835c7c74b668e21ac634494199e285413
+  Verified against the handoff lock manifest: yes
 
 ------------------------------------------------------------------------------
 WHAT CHANGED
 ------------------------------------------------------------------------------
 
-  •  The number. Every asset, filename, prompt, document and routing
-  reference now says Video 4. Asset prefixes moved from V5_ to V4_.
+  •  THE SCRIPT. Replaced by V4_Recording_Master_LOCKED_2026-09-09.docx. The
+  video now opens halfway through an answer to "walk me through your
+  background", the modeled twenty-second answer runs BEFORE the framework
+  explanation and before the self-introduction, and there are two scripted
+  silences to perform.
 
-  •  The Recording Master. A new September 8 master replaced the previous
-  script. The opening is now "they are not asking for your life story, they
-  are asking you to help them place you", and the previous nodding-first
-  hook is gone and was not restored anywhere, including in the Shorts.
+  •  THE FIXED-ORDER RULE IS RETIRED. "Stop explaining your career in order"
+  and "The detail changes. The structure does not" are both gone. The locked
+  script says the ingredients stay the same while the order and the amount
+  of detail depend on the question, and it uses compressed Chapters in the
+  ninety-second answer on purpose. The opening frame was rebuilt and a new
+  frame carries the corrected rule at full size.
 
-  •  The thumbnail line. STOP LISTING JOBS replaces YOUR CAREER MAKES SENSE.
+  •  THE OBJECTION SECTION. The acquisition that eliminated an accepted role
+  now introduces the section. It is remapped as a camera or restrained
+  B-roll beat with no employer, loss or outcome invented, and the WHY SO
+  MANY CHANGES? frame follows on the spoken question.
 
-  •  The spoken CTA. It is now "share your 20-second version in the
-  comments". The previous package used Keep the Proof as the primary product
-  CTA; Keep the Proof is now secondary and lives in the description,
-  mentioned once in the ending.
+  •  ASSETS. 8 teaching frames plus CTA and Watch Next. 7 carried over
+  unchanged and verified byte-identical, 1 corrected, 2 rebuilt.
 
-  •  The pinned resource. The free 10-Minute Career Evidence Starter.
+  •  SHORTS. One rebuilt because it argued the retired ordering rule, two
+  corrected for obsolete references, three carried unchanged.
 
-  •  Watch Next. Now routes to Video 5, Why Nobody Can Tell What You're
-  Actually Good At. Routing across the series is now V4 to V5 to V1.
-
-  •  The assets. Seven hero teaching graphics plus a resource card and a
-  Watch Next card, all rebuilt at mobile-first sizes and checked by
-  rendering at 390 points wide.
-
-  •  The Shorts. Six dedicated 9:16 candidates, marked Priority A and B. The
-  old Stop Explaining In Order Short was replaced because it carried the
-  forbidden nodding hook. Two are new.
+  •  PUBLISHING. Description opening and framework paragraphs rewritten.
+  Pinned comment replaced with the Recording Master's own pinned bridge.
 
 ------------------------------------------------------------------------------
 WHAT DID NOT CHANGE
 ------------------------------------------------------------------------------
 
-The spoken script. The renumbered Recording Master differs from the file you
-supplied by exactly one paragraph, the header line. Every other paragraph is
-identical, verified by comparison after the copy was written.
+The spoken script. This package reads the locked master and never writes to
+it. The reading copy is generated from it directly, so there is no
+transcription step in which a line could drift.
 
-The thumbnail. Nothing was designed, generated, altered or replaced.
+The thumbnail. Nothing was designed, generated or altered.
+
+Videos 1, 2 and 3. Untouched.
+
+The presentation and reveal decks. No slide deck was rebuilt.
+
+Numbering and routing. Video 4 to 5 to 1, and Video 6 to 7 to 8, exactly as
+approved. The stale numbers in the original upload filenames do not undo the
+approved swap and were not acted on.
+
+Resource routes. https://temidayoafonja.com/career-evidence-starter,
+unchanged. Keep the Proof remains the secondary description link.
 
 ------------------------------------------------------------------------------
-SUPERSEDED
+NOT SUPPLIED, BY INSTRUCTION
 ------------------------------------------------------------------------------
 
-The previous packages for both topics are isolated in
-deliverables/SUPERSEDED_DO_NOT_USE/ with a notice explaining why. They were
-built against both the old numbering and the previous Recording Masters, so
-their spoken scripts are superseded as well as their numbers.
+No chapter timestamps. No music attribution or license code. No thumbnail
+artwork. No YouTube video URL for Watch Next; the description carries a
+placeholder.
 
-The thumbnail line YOUR CAREER MAKES SENSE is superseded and appears nowhere
-in this package as an active thumbnail. The active line for Video 4 is STOP
-LISTING JOBS.
+------------------------------------------------------------------------------
+RUNTIME
+------------------------------------------------------------------------------
+
+RUNTIME: ESTIMATE ONLY, NOT A MEASUREMENT
+
+The figure below is arithmetic on the locked script's word count at 130 to 145
+words per minute, the band the September 9 roadmap itself uses. It is speech only. It excludes the scripted pauses, the holds
+on full-screen graphics, B-roll, and every edit decision.
+
+It is NOT a timed read and it is NOT a finished runtime. The finished runtime
+does not exist until the export does.
+
+The target printed on the source cover is not a verified finished length
+either. The September 9 scripts are shorter than the earlier drafts. Do not
+restore deleted material, pad the script, or slow the delivery to reach an
+older target.
+
+  Spoken words: 1580.  Speech-only estimate 10:54 to 12:09 at 140 to 165 wpm.
+  Printed cover target, not a verified length: Approximately 12:00 to 14:00
 
 ==============================================================================
 END OF CHANGE LOG

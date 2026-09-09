@@ -1,0 +1,82 @@
+==============================================================================
+CURRENT-SCRIPT SENTENCE TRIGGER MAP
+Video 6  ·  Before You Take an Internal Role, Ask These 3 Questions
+Synchronized to V6_Recording_Master_LOCKED_2026-09-09.docx  ·  September 9, 2026
+==============================================================================
+
+Every trigger below is a sentence that exists in the September 9 locked
+script. The build verifies this: if a trigger is not found in the spoken copy,
+the QA pass fails and the package is not delivered.
+
+Beats listed under EDITORIAL CUES are NOT spoken triggers. They are camera and
+B-roll decisions, and they are labelled so that nobody mistakes one for a line
+to listen for.
+
+------------------------------------------------------------------------------
+GRAPHIC TRIGGERS
+------------------------------------------------------------------------------
+
+  MG01   V6_MG01_New_Title_Same_Work.png
+         status: COPY UPDATE
+         cue:    “A year from now, what will I be able to do, decide, or prove that I cannot do today?”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  MG02   V6_MG02_Three_Questions.png
+         status: REUSE
+         cue:    “Before you take it, test three things:”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  MG03   V6_MG03_Ordinary_Monday.png
+         status: REUSE
+         cue:    “Start with the most concrete question: What will actually be different on an ordinary Monday?”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  MG04   V6_MG04_Tasks_Vs_Judgment.png
+         status: REUSE
+         cue:    “More tasks can mean volume, coordination, and absorption.”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  MG05   V6_MG05_Portable_Evidence.png
+         status: REUSE
+         cue:    “I would look for three kinds of evidence: result, judgment, and range.”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  MG06   V6_MG06_Decision_Read.png
+         status: COPY UPDATE
+         cue:    “If all three are yes, different work, expanded judgment, and evidence that travels, the developmental case is strong.”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  MG07   V6_MG07_Questions_To_Ask.png
+         status: COPY UPDATE
+         cue:    “Ask the internal hiring manager three things:”
+         in the locked script: YES
+         after:  Cut back to camera.
+
+  CTA    V6_CTA_Career_Decision_Evidence_Check.png
+         status: REUSE
+         cue:    “the free Career Decision Evidence Check gives you a structured way to read the evidence behind that choice”
+         in the locked script: YES
+         after:  Cut back to camera for the bridge into Watch Next.
+
+  WN     V6_WATCH_NEXT_Are_You_Growing.png
+         status: REUSE
+         cue:    “That is what we are testing next in “Are You Growing, or Just Being Given More Work?””
+         in the locked script: YES
+         after:  NONE. Final visual.
+
+------------------------------------------------------------------------------
+EDITORIAL CUES, NOT SPOKEN TRIGGERS
+------------------------------------------------------------------------------
+
+  The offer
+      The opening offer is a camera beat. MG01 follows it.
+
+==============================================================================
+END OF TRIGGER MAP
+==============================================================================

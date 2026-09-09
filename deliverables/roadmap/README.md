@@ -1,5 +1,75 @@
 # YouTube Roadmap — CURRENT FORWARD SOURCE OF TRUTH
 
+> **SUPERSEDED as the forward roadmap, September 9, 2026.** The current
+> roadmap is `YouTube_Roadmap_1-30_LOCKED_Sep09_2026.docx`, filed beside this
+> file. It keeps the 1 to 30 sequence, preserves the agreed V4/V5 swap, adopts
+> the approved V8 to V15 treatments with their evidence conditions intact, and
+> retains V16 to V30 exactly as the September 7 map had them, with V31 in the
+> backlog. See "September 9, 2026 script lock" in
+> `deliverables/SERIES_STATUS_TRACKER.md`.
+>
+> The v5.1 file below remains the record of how the roadmap arrived here.
+
+## The September 9, 2026 roadmap
+
+    YouTube_Roadmap_1-30_LOCKED_Sep09_2026.docx
+    SHA-256  85ccbed5e9648bd9b57c13319a25f551e3f05aeb72163d85eabcbe90456ed95f
+
+    Source_Lock_Manifest_Sep09_2026.json
+    SHA-256  6737c0ac438ea123bb78c3fa3cd9dcbe218f66fd86e7b8708518626695682f0d
+
+Both are byte-identical to the files supplied in
+`YouTube_Roadmap_and_V4V7_Lock_Sep09_2026.zip`. The lock manifest names the
+exact script file behind each of Videos 4 to 7 and carries the hashes that
+prove the spoken sections were preserved.
+
+### Videos 4 to 7: scripts locked, packages synchronized
+
+| # | Title | Thumbnail | Script file |
+|---|---|---|---|
+| V4 | How to Explain a Career That Looks All Over the Place | STOP LISTING JOBS | `V4_Recording_Master_LOCKED_2026-09-09.docx` |
+| V5 | Why Nobody Can Tell What You're Actually Good At | THEY CAN'T READ YOU | `V5_Recording_Master_LOCKED_2026-09-09.docx` |
+| V6 | Before You Take an Internal Role, Ask These 3 Questions | NEW TITLE, SAME WORK? | `V6_Recording_Master_LOCKED_2026-09-09.docx` |
+| V7 | Are You Growing, or Just Being Given More Work? | MORE WORK ≠ GROWTH | `V7_Recording_Master_LOCKED_2026-09-09.docx` |
+
+Routing is unchanged: **V4 to V5 to V1**, and **V6 to V7 to V8**.
+
+### Videos 8 to 15: approved directions only
+
+| # | Title / approved direction | Thumbnail | Status |
+|---|---|---|---|
+| V8 | How to Show Your Impact at Work When You Built It From Scratch | NOW IT LOOKS EASY | Title kept; new treatment |
+| V9 | Before You Change Industries, Know What Still Counts | NEW FIELD. NOT ZERO. | Approved direction |
+| V10 | Before a Layoff, Know What You Can Still Prove | BEFORE ACCESS ENDS | Approved direction |
+| V11 | AI Can Do the Task. What Are You Still Paid For? | WHAT STILL NEEDS YOU? | Approved; demo required |
+| V12 | What to Do When You Can't Quit Your Job Yet | STUCK FOR NOW? | Title kept; new treatment |
+| V13 | A 30-Day Plan to Test Your Next Career Move | TEST BEFORE YOU QUIT | **Plan, not completed results** |
+| V14 | I Compared 30 Job Descriptions Across 3 Industries | WHAT REALLY TRANSFERS? | **Conditional on actual research** |
+| V15 | How to Stay Relevant After 40 Without Chasing Every Trend | UPDATE. DON'T ERASE. | Approved direction |
+
+**V8's title is intact because Video 7's approved handoff names it out loud.**
+
+**Research conditions, preserved:**
+
+- **V13 is a PLAN.** A 30-day plan to test a next move. It is not a claim that
+  an experiment has already been completed.
+- **V14 is CONDITIONAL.** A numerical, past-tense research headline requires
+  that the research is actually completed and documented first. Use the real
+  sample size, never a target dressed as a result.
+- **V11 requires VERIFICATION.** Tool and task-capability claims must be
+  verified before scripting.
+
+No performance guarantee, invented ban, or claim that a view-to-subscriber
+ratio alone proves repeatable demand belongs anywhere in this roadmap.
+
+### Videos 16 to 30, and V31
+
+Retained exactly as the September 7 map had them. V31 remains in the backlog.
+
+**No V8 to V15 script or artwork was started in the September 9 synchronization
+task.** That work is scoped, not begun.
+
+---
 > **Superseded in part, September 7, 2026.** Two new videos enter at slots 4
 > and 5, the former Video 4 is retired as a slot, and Videos 5 to 8 shift down
 > by one. This roadmap's standing rule that Videos 1 to 5 must not be rebuilt on

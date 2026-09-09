@@ -1,0 +1,155 @@
+{
+  "video": 7,
+  "title": "Are You Growing, or Just Being Given More Work?",
+  "synchronized_to": {
+    "script_file_used": "V7_Recording_Master_LOCKED_2026-09-09.docx",
+    "handoff_archive": "YouTube_Roadmap_and_V4V7_Lock_Sep09_2026.zip",
+    "lock_date": "2026-09-09",
+    "canonical_sha256": "aa1426c2423129801add5c82e91078b11e7a82a50c2048f44ad1888b6a3ee32c",
+    "matches_lock_manifest": true,
+    "script_section_sha256": "37aa121423cb61b985617bf5d7a091c30a6fa420800d2a6a68b50141af16fc2c",
+    "original_source_filename": "Video_7_Are_You_Growing_Or_Just_Being_Given_More_Work_FINAL_Revised_Recording_Master(1).docx",
+    "original_source_sha256": "4da2f71c1a1e1e91c554e354d03277d12423d196147a54a2c9b889038e00abe4"
+  },
+  "spoken": {
+    "words": 1209,
+    "speech_only_estimate": "8:20 to 9:18 at 130 to 145 wpm",
+    "estimate_is_not_a_measurement": true,
+    "printed_cover_target": "Approximately 10:30-11:30 finished. Do not pad to force runtime.",
+    "sections": [
+      "HOOK",
+      "WHY THIS IS HARD TO SEE",
+      "C: COMPLEXITY",
+      "A: AUTHORITY",
+      "R: RETURN",
+      "READ THE CAR PATTERN",
+      "THE SCOPE CONVERSATION",
+      "CTA",
+      "WATCH NEXT"
+    ],
+    "delivery_directions": []
+  },
+  "packaging": {
+    "thumbnail": "MORE WORK ≠ GROWTH",
+    "thumbnail_rebuilt": false,
+    "resource": {
+      "name": "Capability Formation Field Kit",
+      "url": "https://temidayoafonja.com/fieldkit"
+    },
+    "secondary_resource": null,
+    "watch_next": "How to Show Your Impact at Work When You Built It From Scratch",
+    "watch_next_slot": "Video 8",
+    "watch_next_url": null
+  },
+  "assets": [
+    {
+      "file": "V7_MG01_Opening_Consequence.png",
+      "status": "REUSE",
+      "was": "V7_MG01_Opening_Consequence.png",
+      "sha256": "34fbb3b6cd36ee119e495192a68023f6768b7f2f0b1c427d342a26fd4cd649eb"
+    },
+    {
+      "file": "V7_MG02_CAR_Framework.png",
+      "status": "REORDER",
+      "was": "V7_MG02_CAR_Framework.png",
+      "sha256": "927d2e5854ee58eb7f51b41d3da1eeb085382a89fb741b28c869669d7b3a2015"
+    },
+    {
+      "file": "V7_MG03_Complexity.png",
+      "status": "COPY UPDATE",
+      "was": "V7_MG03_Complexity.png",
+      "sha256": "0b289a04458311d727589a68a69e7aae61f3a99b44edc5de3f58f08cdb844f43"
+    },
+    {
+      "file": "V7_MG04_Authority.png",
+      "status": "REUSE",
+      "was": "V7_MG04_Authority.png",
+      "sha256": "dfd62d0986cf25bf41df3d2275b3cbac4ccba752ab1355b5164a8d7441f3fd92"
+    },
+    {
+      "file": "V7_MG05_Return.png",
+      "status": "REBUILD",
+      "was": "V7_MG05_Return.png",
+      "sha256": "857baed66594a8bff3ec263947583d2e6d15b1cbed6cdab43eb7383941015b12"
+    },
+    {
+      "file": "V7_MG06_Pattern_Read.png",
+      "status": "COPY UPDATE",
+      "was": "V7_MG06_Pattern_Read.png",
+      "sha256": "6ddffe86c437a598b24e6efaab8e7ae5ab800e358867001e0d2de11e22731277"
+    },
+    {
+      "file": "V7_MG07_Scope_Conversation_A.png",
+      "status": "REUSE",
+      "was": "V7_MG07_Scope_Conversation_A.png",
+      "sha256": "81b502e6fb40c293a01978616346a50c98da4d26921c70f6f277b0465e866110"
+    },
+    {
+      "file": "V7_MG08_Scope_Conversation_B.png",
+      "status": "REUSE",
+      "was": "V7_MG08_Scope_Conversation_B.png",
+      "sha256": "7c9dfb95368030eb02daccae0ba2d3126e9426de3e2c4b1a6e5b8d29f908927d"
+    },
+    {
+      "file": "V7_CTA_Capability_Formation_Field_Kit.png",
+      "status": "REUSE",
+      "was": "V7_CTA_Capability_Formation_Field_Kit.png",
+      "sha256": "eb3bb32df4a7158aba75000d76d7f8d84d8e56dcfb1447b396434294aa5be674"
+    },
+    {
+      "file": "V7_WATCH_NEXT_Built_It_From_Scratch.png",
+      "status": "REUSE",
+      "was": "V7_WATCH_NEXT_Built_It_From_Scratch.png",
+      "sha256": "fc5e5d7bab838d3d3104521c9d7285e90d8583d1d3a3995cd5501dccd2d1815d"
+    }
+  ],
+  "shorts": [
+    {
+      "slug": "V7_Short_01_The_Reward_For_Being_Dependable",
+      "status": "REUSE",
+      "priority": "A",
+      "estimated_seconds": 34.2
+    },
+    {
+      "slug": "V7_Short_02_CAR_In_Forty_Five_Seconds",
+      "status": "COPY UPDATE",
+      "priority": "A",
+      "estimated_seconds": 42.9
+    },
+    {
+      "slug": "V7_Short_03_Responsibility_Versus_Authority",
+      "status": "REUSE",
+      "priority": "A",
+      "estimated_seconds": 41.8
+    },
+    {
+      "slug": "V7_Short_04_Volume_Versus_Complexity",
+      "status": "REUSE",
+      "priority": "B",
+      "estimated_seconds": 42.2
+    },
+    {
+      "slug": "V7_Short_05_Praise_Is_Not_Role_Design",
+      "status": "REUSE",
+      "priority": "B",
+      "estimated_seconds": 38.9
+    },
+    {
+      "slug": "V7_Short_06_Four_Questions_When_Scope_Expands",
+      "status": "REUSE",
+      "priority": "B",
+      "estimated_seconds": 30.2
+    }
+  ],
+  "not_verified_here": [
+    "recorded audio",
+    "executed animation",
+    "audio balance",
+    "final pacing",
+    "actual finished runtime",
+    "caption placement",
+    "chapter timestamps",
+    "live reachability of linked destinations",
+    "thumbnail artwork"
+  ]
+}

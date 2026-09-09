@@ -1,93 +1,106 @@
 ==============================================================================
 CHANGE LOG
 Video 7  ·  Are You Growing, or Just Being Given More Work?
-Revised production package v2.0  ·  September 8, 2026
+September 9 script synchronization
 ==============================================================================
 
-This package replaces the Video 7 Final Production Package v1.0. It is built
-on the v2.0 Revised Recording Master, which is the definitive spoken source of
-truth. Where the v1.0 production package and the v2.0 master disagreed, the
-master won.
+This is a targeted synchronization with the September 9 script lock. It is not
+a strategy rebuild, not a numbering change, and not a new visual system.
+Assets were reused, reordered, corrected or rebuilt individually, and the
+reasons are in Asset_Reuse_and_Change_Table.txt.
+
+------------------------------------------------------------------------------
+SOURCE
+------------------------------------------------------------------------------
+
+  Script file used:  V7_Recording_Master_LOCKED_2026-09-09.docx
+  Handoff archive:   YouTube_Roadmap_and_V4V7_Lock_Sep09_2026.zip
+  Canonical SHA-256: aa1426c2423129801add5c82e91078b11e7a82a50c2048f44ad1888b6a3ee32c
+  Verified against the handoff lock manifest: yes
 
 ------------------------------------------------------------------------------
 WHAT CHANGED
 ------------------------------------------------------------------------------
 
-  •  THE TITLE AND THE THUMBNAIL. Unchanged and approved: Are You Growing,
-  or Just Being Given More Work?, with the MORE WORK ≠ GROWTH thumbnail. The
-  artwork was not touched.
+  •  THE SCRIPT. Replaced by V7_Recording_Master_LOCKED_2026-09-09.docx. The
+  opening line is unchanged, but the CAR test is now named inside the hook
+  rather than after the setup section, and the middle examples are trimmed.
 
-  •  THE SPOKEN SCRIPT. Replaced by the v2.0 Revised Recording Master,
-  reproduced verbatim. The opening now leads with the sharper tension line,
-  sometimes the reward for being dependable is not growth, it is more work,
-  before the concrete absorption scene.
+  •  CAR MOVES EARLIER. The hero framework frame now lands in the first
+  ninety seconds. The artwork did not change.
 
-  •  THE ASSETS. Rebuilt from the v2.0 master's own visual map, at mobile-
-  first sizes. Ten 1920x1080 frames: eight teaching frames, a CTA card and a
-  Watch Next card. The opening frame is new. The scope conversation is split
-  across two frames so that every question stays large enough to read on a
+  •  COMPLEXITY SIMPLIFIED. "MORE UNITS OF THE SAME PROBLEM" became "MORE OF
+  THE SAME", following the master's own visual map. It reads faster on a
   phone.
 
-  •  THE PATTERN READ. Neutral rather than punitive. No red, no warning
-  icons and no scoring, because the master is explicit that a role expanding
-  as workload can be an acceptable short season and is not proof of bad
-  intent.
+  •  PRAISE ALONE IS NOT ROLE DESIGN. Previously spoken only. It is now a
+  large, display-weight payoff with its own reveal state inside the Return
+  frame, which is why that frame is a rebuild rather than a copy update.
 
-  •  THE SHORTS. Six dedicated 9:16 candidates, marked Priority A and B, re-
-  audited against the v2.0 spoken copy. The boundaries the v2.0 master
-  states explicitly, including that not every assignment must produce
-  immediate promotion, were added where the earlier versions had dropped
-  them.
+  •  NO UNCONDITIONAL GROWTH VERDICT. The pattern read said "Real growth."
+  It now says "Growth case visible.", matching the locked script and the
+  master's map.
 
-  •  PUBLISHING. Description and pinned comment carried forward and
-  tightened against the v2.0 spoken copy, including the boundary and review-
-  date language. Tags and hashtags unchanged.
+  •  THE THUMBNAIL FIELD. Already correct. Active thumbnail references use
+  the exact locked symbol form and natural spoken prose was not converted to
+  symbol notation anywhere.
 
-  •  ONE PRODUCT ROUTE. The Capability Formation Field Kit only.
+  •  ASSETS. 8 teaching frames plus CTA and Watch Next. 6 unchanged, 1
+  reordered unchanged, 2 corrected, 1 rebuilt.
 
-  •  NUMBERING. This topic was labeled Video 6 in files older than the
-  September renumbering. It is Video 7. That is settled and is not an
-  alternate system.
+  •  SHORTS. One corrected for the growth-case wording, five carried
+  unchanged.
+
+  •  PUBLISHING. Two sentences added, nothing removed.
 
 ------------------------------------------------------------------------------
 WHAT DID NOT CHANGE
 ------------------------------------------------------------------------------
 
-The spoken script was not rewritten. The v2.0 Recording Master copied into
-this folder is byte-identical to the file supplied: it already carried the
-correct number and title, so no header edit was needed and zero paragraphs
-differ.
+The spoken script. This package reads the locked master and never writes to
+it. The reading copy is generated from it directly, so there is no
+transcription step in which a line could drift.
 
-The approved opening and the approved closing line are preserved exactly and
-are quoted in the run of show so they cannot drift during the take.
+The thumbnail. Nothing was designed, generated or altered.
 
-Watch Next remains the final visual, with no return to camera after it.
+Videos 1, 2 and 3. Untouched.
 
-No thumbnail artwork was designed, generated or altered for either video.
+The presentation and reveal decks. No slide deck was rebuilt.
 
-------------------------------------------------------------------------------
-FLAGGED, NOT SILENTLY CHANGED
-------------------------------------------------------------------------------
+Numbering and routing. Video 4 to 5 to 1, and Video 6 to 7 to 8, exactly as
+approved. The stale numbers in the original upload filenames do not undo the
+approved swap and were not acted on.
 
-  •  DELIBERATE OMISSION FOR MOBILE LEGIBILITY. The visual map row for the
-  opening frame in the v2.0 master includes BUSIER IS NOT BETTER alongside
-  the two lines the frame already carries. Three competing lines forced all
-  of them below phone-readable size in testing. The brief states that BUSIER
-  IS NOT BETTER is an alternate only and should not be forced if it creates
-  too much copy, so it was dropped from the frame and is recorded in the
-  publishing materials as an alternate thumbnail line. The active thumbnail
-  is unchanged. No spoken copy was changed.
-
-  •  NO THUMBNAIL CHANGE. Video 7 keeps its approved title and its approved
-  thumbnail. No artwork was designed, generated or altered.
+Resource routes. https://temidayoafonja.com/fieldkit, unchanged.
 
 ------------------------------------------------------------------------------
-SUPERSEDED
+NOT SUPPLIED, BY INSTRUCTION
 ------------------------------------------------------------------------------
 
-The Video 7 Final Production Package v1.0 and the v1.0 Recording Master are
-superseded. The previously generated v1.0 package folder is isolated in
-deliverables/SUPERSEDED_DO_NOT_USE/ with a notice.
+No chapter timestamps. No music attribution or license code. No thumbnail
+artwork. No YouTube video URL for Watch Next; the description carries a
+placeholder.
+
+------------------------------------------------------------------------------
+RUNTIME
+------------------------------------------------------------------------------
+
+RUNTIME: ESTIMATE ONLY, NOT A MEASUREMENT
+
+The figure below is arithmetic on the locked script's word count at 130 to 145
+words per minute, the band the September 9 roadmap itself uses. It is speech only. It excludes the scripted pauses, the holds
+on full-screen graphics, B-roll, and every edit decision.
+
+It is NOT a timed read and it is NOT a finished runtime. The finished runtime
+does not exist until the export does.
+
+The target printed on the source cover is not a verified finished length
+either. The September 9 scripts are shorter than the earlier drafts. Do not
+restore deleted material, pad the script, or slow the delivery to reach an
+older target.
+
+  Spoken words: 1209.  Speech-only estimate 8:20 to 9:18 at 140 to 165 wpm.
+  Printed cover target, not a verified length: Approximately 10:30-11:30 finished. Do not pad to force runtime.
 
 ==============================================================================
 END OF CHANGE LOG

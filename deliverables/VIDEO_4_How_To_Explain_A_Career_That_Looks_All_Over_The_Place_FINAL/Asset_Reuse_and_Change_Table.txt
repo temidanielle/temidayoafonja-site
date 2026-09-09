@@ -1,0 +1,238 @@
+==============================================================================
+ASSET REUSE AND CHANGE TABLE
+Video 4  ·  How to Explain a Career That Looks All Over the Place
+Synchronized to V4_Recording_Master_LOCKED_2026-09-09.docx  ·  September 9, 2026
+==============================================================================
+
+REUSE means the artwork did not change. That is proved, not asserted: every
+rendered file is hashed against the pre-synchronization package, and any REUSE
+asset whose bytes moved is reported as a QA failure.
+
+REORDER means the artwork did not change but its position in the running order
+did. COPY UPDATE means the design is the same and the wording was corrected
+against the locked script. REBUILD means the frame's job changed. REMOVE means
+it was dropped, with the reason recorded.
+
+  COPY UPDATE: 1   REBUILD: 2   REUSE: 7
+
+
+------------------------------------------------------------------------------
+  MG01   V4_MG01_Introduction_Or_Defense.png
+         status:   REBUILD
+         was:      V4_MG01_Stop_Explaining_In_Order.png
+         proof:    bytes changed, as intended
+         sha256:   08615481a9f185f149e6baa979b28332f2f0b1c16423108b7faed188396529b7
+
+         reason:
+           The old frame carried STOP EXPLAINING YOUR CAREER IN
+           ORDER, which the locked script no longer says and now
+           actively contradicts: the ninety-second answer uses
+           compressed Chapters on purpose. Rebuilt on the opening
+           beat the script does have.
+
+------------------------------------------------------------------------------
+  MG02   V4_MG02_Chapters_Spine_Next_Direction.png
+         status:   COPY UPDATE
+         was:      V4_MG02_Chapters_Spine_Next_Direction.png
+         proof:    bytes changed, as intended
+         sha256:   7bc0438ef3bf4231116f3b7bcf387b7ad5fc2afb559cdcc972d9d19ddeed5cce
+
+         reason:
+           Design unchanged. The closing line said "The detail
+           changes. The structure does not.", which asserts a fixed
+           order. The locked script says the ingredients stay the
+           same while the order and the amount of detail depend on
+           the question.
+
+------------------------------------------------------------------------------
+  MG03   V4_MG03_Order_Depends_On_The_Question.png
+         status:   REBUILD
+         was:      (new)
+         proof:    new file
+         sha256:   708a0f6b0b326a4ed94fdc14838dbd18add1f2a1a86b11d1a9c9868b3b654eea
+
+         reason:
+           New. The locked script draws a distinction the previous
+           package had no asset for and its framework card actively
+           denied: the quick introduction leads with the Spine, the
+           longer answer uses Chapters to make the Spine visible.
+           This is the correction the brief asks for, carried as
+           one frame rather than a note.
+
+------------------------------------------------------------------------------
+  MG04   V4_MG04_Twenty_Second_Version.png
+         status:   REUSE
+         was:      V4_MG03_Twenty_Second_Version.png
+         proof:    bytes identical to the previous package
+         sha256:   4dd2eb6fc55e6469bade9a3463cd9899585758c3b87bcf9c6b0cedacad6d51ca
+
+         reason:
+           Artwork unchanged. Renumbered only, because the rebuilt
+           opening and the new order frame sit ahead of it.
+
+------------------------------------------------------------------------------
+  MG05   V4_MG05_Ninety_Second_Version.png
+         status:   REUSE
+         was:      V4_MG04_Ninety_Second_Version.png
+         proof:    bytes identical to the previous package
+         sha256:   f8e2b0931a879e45801db5ba9d7b1bc8715aecc5d7a93dd006908c3c762a544b
+
+         reason:
+           Artwork unchanged. Both closing claims are still spoken:
+           three chapters rather than seven, two examples rather
+           than five.
+
+------------------------------------------------------------------------------
+  MG06   V4_MG06_The_Objection.png
+         status:   REUSE
+         was:      V4_MG05_The_Objection.png
+         proof:    bytes identical to the previous package
+         sha256:   fa3231da729a41f424a93f211b9097cfa333aa2bd51039522e7efd0df34051ca
+
+         reason:
+           Artwork unchanged and the question is still spoken
+           verbatim. Its position moved: the acquisition beat now
+           opens the objection section, so this frame lands after
+           that beat rather than cold.
+
+------------------------------------------------------------------------------
+  MG07   V4_MG07_Story_Explains_Proof_Supports.png
+         status:   REUSE
+         was:      V4_MG06_Story_Explains_Proof_Supports.png
+         proof:    bytes identical to the previous package
+         sha256:   18a9f20392b7366f66f386814a8ef33ccd6ff821c58abb33a5c52eea0637dbc2
+
+         reason:
+           Artwork unchanged. Both lines are spoken verbatim in the
+           locked script.
+
+------------------------------------------------------------------------------
+  MG08   V4_MG08_All_Three_Versions.png
+         status:   REUSE
+         was:      V4_MG07_All_Three_Versions.png
+         proof:    bytes identical to the previous package
+         sha256:   6a66654278aa688fc9c788eaba80a53823f18925dd5a668a923817f28bee6e4b
+
+         reason:
+           Artwork unchanged. The summary and the say-it-out-loud
+           instruction are both still spoken.
+
+------------------------------------------------------------------------------
+  CTA    V4_CTA_Career_Evidence_Starter.png
+         status:   REUSE
+         was:      V4_CTA_Career_Evidence_Starter.png
+         proof:    bytes identical to the previous package
+         sha256:   d50b7803f09d15353c5ad7d9293436d145ba1b33e337843a9178c590fda5d9e1
+
+         reason:
+           Artwork unchanged. The spoken participation CTA and the
+           pinned resource are both unchanged in the locked script.
+           Keep the Proof stays off this card and remains a
+           description link only.
+
+------------------------------------------------------------------------------
+  WN     V4_WatchNext_Why_Nobody_Can_Tell.png
+         status:   REUSE
+         was:      V4_WatchNext_Why_Nobody_Can_Tell.png
+         proof:    bytes identical to the previous package
+         sha256:   b978a55659c952505093263c8d86a6f0ab866f66620ef9b913833a649990d386
+
+         reason:
+           Artwork unchanged. Routing is unchanged: Video 4 to
+           Video 5.
+
+------------------------------------------------------------------------------
+SHORTS
+------------------------------------------------------------------------------
+
+  COPY UPDATE: 2   REBUILD: 1   REUSE: 3
+
+
+  A1  Introduction or Defense?
+         status: REBUILD
+         reason:
+           Genuine contradiction. The Short's whole argument was
+           the retired rule "stop explaining your career in order",
+           and it said explaining moves in order makes a career
+           sound like a list of departures. The locked script uses
+           compressed Chapters in the ninety-second answer on
+           purpose. Rebuilt on the script's actual opening problem.
+
+  A2  The 20 Second Answer
+         status: COPY UPDATE
+         reason:
+           Obsolete reference. The hook framed the answer as a
+           reply to "so what do you do?", a question the locked
+           script does not use, and it said no job titles or
+           employer list while the script's own modeled answer
+           names three contexts. The template, the stop, and the
+           next-question line are all still spoken and are kept.
+
+  A3  Why So Many Changes
+         status: REUSE
+         reason:
+           Semantically aligned with the locked script. It
+           paraphrases for a standalone vertical audience, which is
+           intended, and asserts nothing the script denies.
+
+  B4  Coherence Is Not Inevitability
+         status: REUSE
+         reason:
+           Semantically aligned with the locked script. It
+           paraphrases for a standalone vertical audience, which is
+           intended, and asserts nothing the script denies.
+
+  B5  Answering the Short Tenure
+         status: REUSE
+         reason:
+           Semantically aligned with the locked script. It
+           paraphrases for a standalone vertical audience, which is
+           intended, and asserts nothing the script denies.
+
+  B6  A Story Explains, Proof Supports
+         status: COPY UPDATE
+         reason:
+           Obsolete reference. The closing used a door metaphor,
+           "the story is what opens the door, the proof is what
+           holds it open," which is not in the locked script.
+           Replaced with the script's own formulation.
+
+------------------------------------------------------------------------------
+PUBLISHING
+------------------------------------------------------------------------------
+
+  DESCRIPTION
+      REWRITTEN OPENING AND FRAMEWORK PARAGRAPHS. The previous
+      description opened on "they are not asking for your life story"
+      and stated the rule "stop explaining your career in order."
+      Neither survives in the locked script, and the second now
+      contradicts it, because the ninety-second answer uses compressed
+      Chapters on purpose. The description now opens on the script's own
+      opening beat and states the ingredients-plus-order rule. Resource
+      routes, Watch Next and hashtags unchanged.
+
+  PINNED COMMENT
+      REPLACED with the PINNED COMMENT BRIDGE from the Video 4 Recording
+      Master's own table, which is the authoritative wording. The
+      previous pinned comment also carried Temidayo's filled-in example;
+      the master's version does not, so it was dropped rather than kept
+      alongside an authoritative text.
+
+  TAGS AND HASHTAGS
+      Unchanged.
+
+------------------------------------------------------------------------------
+NOT REBUILT, DELIBERATELY
+------------------------------------------------------------------------------
+
+The thumbnail. No thumbnail was designed, generated or altered for any of the
+four videos.
+
+The presentation and reveal decks in video-4-slides/. This synchronization
+does not touch them.
+
+Videos 1, 2 and 3. Untouched.
+
+==============================================================================
+END OF TABLE
+==============================================================================

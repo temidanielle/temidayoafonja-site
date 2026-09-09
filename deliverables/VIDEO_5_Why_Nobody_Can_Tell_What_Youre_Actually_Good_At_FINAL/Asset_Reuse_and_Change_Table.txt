@@ -1,0 +1,233 @@
+==============================================================================
+ASSET REUSE AND CHANGE TABLE
+Video 5  ·  Why Nobody Can Tell What You're Actually Good At
+Synchronized to V5_Recording_Master_LOCKED_2026-09-09.docx  ·  September 9, 2026
+==============================================================================
+
+REUSE means the artwork did not change. That is proved, not asserted: every
+rendered file is hashed against the pre-synchronization package, and any REUSE
+asset whose bytes moved is reported as a QA failure.
+
+REORDER means the artwork did not change but its position in the running order
+did. COPY UPDATE means the design is the same and the wording was corrected
+against the locked script. REBUILD means the frame's job changed. REMOVE means
+it was dropped, with the reason recorded.
+
+  COPY UPDATE: 1   REBUILD: 1   REORDER: 3   REUSE: 5
+
+
+------------------------------------------------------------------------------
+  MG01   V5_MG01_Two_Versions_Of_The_Same_Career.png
+         status:   REBUILD
+         was:      V5_MG01_Respected_But_Hard_To_Place.png
+         proof:    bytes changed, as intended
+         sha256:   38fdd0946e1cbf2596a2032f101df5a6259f79c9a8e32419a1842e70b9598415
+
+         reason:
+           The locked script now opens by demonstrating the two
+           versions of the same career, and the brief asks for that
+           comparison early. No existing asset served it, so this
+           slot was adapted rather than added, which keeps the set
+           compact. The retired frame's line, "People can respect
+           your experience and still have no idea what to do with
+           you", is still spoken and is now carried as a short
+           single-line callout over camera.
+
+------------------------------------------------------------------------------
+  MG02   V5_MG02_The_One_Line_Test.png
+         status:   REORDER
+         was:      V5_MG03_The_One_Line_Test.png
+         proof:    bytes identical to the previous package
+         sha256:   db094d10ba87dffa005f93e613f9ff825bfa6de8a9696b4b2c05fdedaf435556
+
+         reason:
+           Artwork unchanged. It moves ahead of the sorting
+           mechanism, because the locked script names the framework
+           before it explains why people keep putting you in the
+           old box.
+
+------------------------------------------------------------------------------
+  MG03   V5_MG03_Sharper_Versus_Defensible.png
+         status:   REORDER
+         was:      V5_MG04_Sharper_Versus_Defensible.png
+         proof:    bytes identical to the previous package
+         sha256:   ec9d65a0aabd062ae8c45b0cd76e338cd9b7239720e36b396170f936d323e142
+
+         reason:
+           Artwork unchanged. It moves earlier with the Claim
+           section, which the locked script now reaches before the
+           sorting mechanism.
+
+------------------------------------------------------------------------------
+  MG04   V5_MG04_Sorting_Mechanism.png
+         status:   REORDER
+         was:      V5_MG02_Sorting_Mechanism.png
+         proof:    bytes identical to the previous package
+         sha256:   8e47f43543f11743927b022dbefe9643e103c965e81becc380a27a5bf6948951
+
+         reason:
+           Artwork unchanged and every step is still spoken,
+           including the five categories and picking the nearest
+           one. It now follows the Claim section rather than
+           preceding the framework.
+
+------------------------------------------------------------------------------
+  MG05   V5_MG05_Remove_The_Nouns.png
+         status:   REUSE
+         was:      V5_MG05_Remove_The_Nouns.png
+         proof:    bytes identical to the previous package
+         sha256:   b88878e8efede101ad3e42f4e6cfac5dcd620d8107dd1eb40f3a0fae67a0ba36
+
+         reason:
+           Artwork and position unchanged. Every struck noun is
+           still spoken in the Spine section.
+
+------------------------------------------------------------------------------
+  MG06   V5_MG06_Receipts.png
+         status:   REUSE
+         was:      V5_MG06_Receipts.png
+         proof:    bytes identical to the previous package
+         sha256:   d1e32a75442d9b07b590ab4939706de37219c5aa49ae65c6ee5ea151db4c7880
+
+         reason:
+           Artwork and position unchanged. The frame carries the
+           rule that governs all three Receipts. The bounded
+           figures stay spoken, with their qualifiers, and
+           deliberately never appear on screen where the qualifiers
+           would shrink below phone-readable size.
+
+------------------------------------------------------------------------------
+  MG07   V5_MG07_Test_The_Claim.png
+         status:   COPY UPDATE
+         was:      V5_MG07_Test_The_Claim.png
+         proof:    bytes changed, as intended
+         sha256:   77f1efe57c56cccb42d901de70423511f4accac01266953015defc982f619b4a
+
+         reason:
+           Design unchanged. The two outcomes read "Still
+           decoding." and "It is working.", which is a pass/fail
+           verdict. The locked script says the Claim MAY still be
+           making them decode, and that a question about the
+           problem is A BETTER SIGN. The frame now matches that,
+           and the eyebrow records that this is a practical signal
+           rather than a scientific test.
+
+------------------------------------------------------------------------------
+  MG08   V5_MG08_Real_Limits.png
+         status:   REUSE
+         was:      V5_MG08_Real_Limits.png
+         proof:    bytes identical to the previous package
+         sha256:   5eb858b58099752629a5a099bcc3fd357d614d697dd81f434d5e17e44d88d731
+
+         reason:
+           Artwork and position unchanged. Every limit named is
+           still spoken in the section on when the Claim does not
+           land.
+
+------------------------------------------------------------------------------
+  CTA    V5_CTA_Career_Evidence_Starter.png
+         status:   REUSE
+         was:      V5_CTA_Career_Evidence_Starter.png
+         proof:    bytes identical to the previous package
+         sha256:   4bf33dcfc2917deb25bf0e766d1b1e263b21a0c5e8520a7fb50820f61534bf43
+
+         reason:
+           Artwork unchanged. One resource route only, and the
+           locked script's spoken CTA is unchanged.
+
+------------------------------------------------------------------------------
+  WN     V5_WatchNext_Change_Jobs.png
+         status:   REUSE
+         was:      V5_WatchNext_Change_Jobs.png
+         proof:    bytes identical to the previous package
+         sha256:   e9a2de65857371a5125ceea5f89ece5ea62718bd9ed64a58f281df1834edd73b
+
+         reason:
+           Artwork unchanged. Routing is unchanged: Video 5 to
+           Video 1.
+
+------------------------------------------------------------------------------
+SHORTS
+------------------------------------------------------------------------------
+
+  REUSE: 6
+
+
+  A1  Respected But Hard To Place
+         status: REUSE
+         reason:
+           Semantically aligned with the locked script. It
+           paraphrases for a standalone vertical audience, which is
+           intended, and asserts nothing the script denies.
+
+  A2  They Are Sorting, Not Reading
+         status: REUSE
+         reason:
+           Semantically aligned with the locked script. It
+           paraphrases for a standalone vertical audience, which is
+           intended, and asserts nothing the script denies.
+
+  A3  The Resume Version and the Claim
+         status: REUSE
+         reason:
+           Semantically aligned with the locked script. It
+           paraphrases for a standalone vertical audience, which is
+           intended, and asserts nothing the script denies.
+
+  B4  The Sharper Sentence I Did Not Use
+         status: REUSE
+         reason:
+           Semantically aligned with the locked script. It
+           paraphrases for a standalone vertical audience, which is
+           intended, and asserts nothing the script denies.
+
+  B5  Remove the Nouns, Look at the Verbs
+         status: REUSE
+         reason:
+           Semantically aligned with the locked script. It
+           paraphrases for a standalone vertical audience, which is
+           intended, and asserts nothing the script denies.
+
+  B6  What a Better Sentence Cannot Do
+         status: REUSE
+         reason:
+           Semantically aligned with the locked script. It
+           paraphrases for a standalone vertical audience, which is
+           intended, and asserts nothing the script denies.
+
+------------------------------------------------------------------------------
+PUBLISHING
+------------------------------------------------------------------------------
+
+  DESCRIPTION
+      OPENING PARAGRAPH REPLACED, LIMITS PARAGRAPH EXTENDED. The
+      previous description opened on the sorting problem in the
+      abstract. The locked script opens on the outdated-title
+      introduction, so the description now does too, and the rejected-
+      sharper-Claim promise is named because the script promises it in
+      the first minute. The limits paragraph now matches the script's
+      own list. Framework, resource route, Watch Next and hashtags
+      unchanged.
+
+  PINNED COMMENT
+      REPLACED with the PINNED COMMENT BRIDGE from the Video 5 Recording
+      Master's own table.
+
+  TAGS AND HASHTAGS
+      Unchanged.
+
+------------------------------------------------------------------------------
+NOT REBUILT, DELIBERATELY
+------------------------------------------------------------------------------
+
+The thumbnail. No thumbnail was designed, generated or altered for any of the
+four videos.
+
+The presentation and reveal decks in video-5-slides/. This synchronization
+does not touch them.
+
+Videos 1, 2 and 3. Untouched.
+
+==============================================================================
+END OF TABLE
+==============================================================================

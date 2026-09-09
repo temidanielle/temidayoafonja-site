@@ -1,0 +1,158 @@
+{
+  "video": 5,
+  "title": "Why Nobody Can Tell What You're Actually Good At",
+  "synchronized_to": {
+    "script_file_used": "V5_Recording_Master_LOCKED_2026-09-09.docx",
+    "handoff_archive": "YouTube_Roadmap_and_V4V7_Lock_Sep09_2026.zip",
+    "lock_date": "2026-09-09",
+    "canonical_sha256": "7227ee1b61ea21516c5b5166f2381931873f68f2092fb533ee09d1e7ac7ce4f7",
+    "matches_lock_manifest": true,
+    "script_section_sha256": "092833d6d6b2df0474213d4d60960858c439d0ab60809d8abd3149b210685bab",
+    "original_source_filename": "Video_4_Why_Nobody_Can_Tell_What_Youre_Good_At_FINAL_Revised_Recording_Master(1).docx",
+    "original_source_sha256": "f95b364e7214bf9fcc39c1aa4a2179680991110066012f1448b1190d102eaae0"
+  },
+  "spoken": {
+    "words": 1801,
+    "speech_only_estimate": "12:25 to 13:51 at 130 to 145 wpm",
+    "estimate_is_not_a_measurement": true,
+    "printed_cover_target": "Approximately 17:00 to 18:30",
+    "sections": [
+      "(opening)",
+      "Two versions of the same career",
+      "The One-Line Test: Claim, Spine, Receipts",
+      "1. Claim",
+      "Why people keep putting you in the old box",
+      "2. Spine",
+      "3. Receipts",
+      "Test the Claim",
+      "When the Claim does not land",
+      "Closing"
+    ],
+    "delivery_directions": [
+      "[Pause.]"
+    ]
+  },
+  "packaging": {
+    "thumbnail": "THEY CAN’T READ YOU",
+    "thumbnail_rebuilt": false,
+    "resource": {
+      "name": "Career Evidence Starter",
+      "url": "https://temidayoafonja.com/career-evidence-starter"
+    },
+    "secondary_resource": null,
+    "watch_next": "How to Change Jobs Without Starting Your Career Over",
+    "watch_next_slot": "Video 1",
+    "watch_next_url": null
+  },
+  "assets": [
+    {
+      "file": "V5_MG01_Two_Versions_Of_The_Same_Career.png",
+      "status": "REBUILD",
+      "was": "V5_MG01_Respected_But_Hard_To_Place.png",
+      "sha256": "38fdd0946e1cbf2596a2032f101df5a6259f79c9a8e32419a1842e70b9598415"
+    },
+    {
+      "file": "V5_MG02_The_One_Line_Test.png",
+      "status": "REORDER",
+      "was": "V5_MG03_The_One_Line_Test.png",
+      "sha256": "db094d10ba87dffa005f93e613f9ff825bfa6de8a9696b4b2c05fdedaf435556"
+    },
+    {
+      "file": "V5_MG03_Sharper_Versus_Defensible.png",
+      "status": "REORDER",
+      "was": "V5_MG04_Sharper_Versus_Defensible.png",
+      "sha256": "ec9d65a0aabd062ae8c45b0cd76e338cd9b7239720e36b396170f936d323e142"
+    },
+    {
+      "file": "V5_MG04_Sorting_Mechanism.png",
+      "status": "REORDER",
+      "was": "V5_MG02_Sorting_Mechanism.png",
+      "sha256": "8e47f43543f11743927b022dbefe9643e103c965e81becc380a27a5bf6948951"
+    },
+    {
+      "file": "V5_MG05_Remove_The_Nouns.png",
+      "status": "REUSE",
+      "was": "V5_MG05_Remove_The_Nouns.png",
+      "sha256": "b88878e8efede101ad3e42f4e6cfac5dcd620d8107dd1eb40f3a0fae67a0ba36"
+    },
+    {
+      "file": "V5_MG06_Receipts.png",
+      "status": "REUSE",
+      "was": "V5_MG06_Receipts.png",
+      "sha256": "d1e32a75442d9b07b590ab4939706de37219c5aa49ae65c6ee5ea151db4c7880"
+    },
+    {
+      "file": "V5_MG07_Test_The_Claim.png",
+      "status": "COPY UPDATE",
+      "was": "V5_MG07_Test_The_Claim.png",
+      "sha256": "77f1efe57c56cccb42d901de70423511f4accac01266953015defc982f619b4a"
+    },
+    {
+      "file": "V5_MG08_Real_Limits.png",
+      "status": "REUSE",
+      "was": "V5_MG08_Real_Limits.png",
+      "sha256": "5eb858b58099752629a5a099bcc3fd357d614d697dd81f434d5e17e44d88d731"
+    },
+    {
+      "file": "V5_CTA_Career_Evidence_Starter.png",
+      "status": "REUSE",
+      "was": "V5_CTA_Career_Evidence_Starter.png",
+      "sha256": "4bf33dcfc2917deb25bf0e766d1b1e263b21a0c5e8520a7fb50820f61534bf43"
+    },
+    {
+      "file": "V5_WatchNext_Change_Jobs.png",
+      "status": "REUSE",
+      "was": "V5_WatchNext_Change_Jobs.png",
+      "sha256": "e9a2de65857371a5125ceea5f89ece5ea62718bd9ed64a58f281df1834edd73b"
+    }
+  ],
+  "shorts": [
+    {
+      "slug": "V5_Short_01_Respected_But_Hard_To_Place",
+      "status": "REUSE",
+      "priority": "A",
+      "estimated_seconds": 40.4
+    },
+    {
+      "slug": "V5_Short_02_They_Are_Sorting_You",
+      "status": "REUSE",
+      "priority": "A",
+      "estimated_seconds": 44.7
+    },
+    {
+      "slug": "V5_Short_03_Resume_Version_Versus_Claim",
+      "status": "REUSE",
+      "priority": "A",
+      "estimated_seconds": 44.4
+    },
+    {
+      "slug": "V5_Short_04_Sharper_Is_Not_Always_Better",
+      "status": "REUSE",
+      "priority": "B",
+      "estimated_seconds": 42.5
+    },
+    {
+      "slug": "V5_Short_05_Remove_The_Nouns",
+      "status": "REUSE",
+      "priority": "B",
+      "estimated_seconds": 40.0
+    },
+    {
+      "slug": "V5_Short_06_A_Sentence_Cannot_Erase",
+      "status": "REUSE",
+      "priority": "B",
+      "estimated_seconds": 29.1
+    }
+  ],
+  "not_verified_here": [
+    "recorded audio",
+    "executed animation",
+    "audio balance",
+    "final pacing",
+    "actual finished runtime",
+    "caption placement",
+    "chapter timestamps",
+    "live reachability of linked destinations",
+    "thumbnail artwork"
+  ]
+}
