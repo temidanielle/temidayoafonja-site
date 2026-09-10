@@ -263,7 +263,12 @@
   .ces-steps, .ces-two, .ces-about, .ces-hero-grid { grid-template-columns: 1fr; gap: 30px; }
   .ces-sec { padding: 56px 0; }
   .ces-xform { grid-template-columns: 1fr; }
-  .ces-xarrow { padding: 6px 0; transform: rotate(90deg); }
+  /* Stacked, the arrow has to point down instead of right. It must not be
+     rotated: transform turns the whole grid cell, cream background included,
+     so a 340x39 cell became a 39x340 bar painted down over both panels.
+     Swapping the glyph leaves the cell where it is. */
+  .ces-xarrow { padding: 6px 0; font-size: 0; }
+  .ces-xarrow::after { content: "\2193"; font-size: 17px; }
   /* Stacked, the preview would fill the viewport, so it is capped and centred. */
   .ces-hero-grid { grid-template-columns: 1fr; grid-template-areas: "copy" "shot" "cta"; row-gap: 36px; }
   .ces-shot { max-width: 300px; margin: 0 auto; padding: 6px 0 0 26px; }
