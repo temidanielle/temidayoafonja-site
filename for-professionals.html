@@ -77,13 +77,18 @@
 .a-included { display: grid; grid-template-columns: repeat(2,1fr); gap: 10px; margin-top: 8px; }
 .a-included div { background: #fff; border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px; font-size: 14.5px; color: var(--ink); }
 
-/* ── YOUR PATH: the two live sessions ──
+/* ── YOUR PATH: the live session ──
    Replaces the retired Lightning Lesson banner and the standalone price block.
-   Two columns on desktop; one column on phones, and because September 9 is
-   first in the markup it is also first when they stack, so the order stays
-   chronological without needing to reorder anything. */
+   Held two sessions until the September 9 Lightning Lesson was retired the day
+   after it ran; the Stay or Leave assessment on September 23 is the one that
+   remains. */
 .path-section { padding: 8px 0 48px; }
 .path-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: stretch; margin-top: 8px; }
+/* Only one live session remains, so its grid is a single column: two columns
+   would leave the card at half width with an empty cell beside it. Scoped to
+   .session-path deliberately. The paid-card grid further down still holds two
+   cards and must keep the two-column rule above. */
+.session-path .path-grid { grid-template-columns: 1fr; }
 .path-card { border-radius: 14px; padding: 30px 32px; display: flex; flex-direction: column; }
 .path-card h3 { font-size: clamp(20px, 2.2vw, 25px); line-height: 1.15; margin-bottom: 10px; }
 .path-card p { font-size: 14.5px; line-height: 1.6; }
@@ -194,21 +199,16 @@
   </div>
 </section>
 
-<!-- 5C YOUR PATH. Two sessions, side by side on desktop and stacked on phones
-     with September 9 first. Both are time-bound: to retire a card, delete its
-     <article> and the matching .path-* CSS stays in use by the other. -->
+<!-- 5C YOUR PATH. The September 9 Lightning Lesson card was deleted here on
+     September 10, the day after it ran. That is the manual retirement this page
+     was built for and that content/site-source-of-truth.json describes.
+     One session remains, so .path-grid is a single column. To put a second
+     session back, restore the two-column rule and add an <article> above this
+     one; the .path-* CSS is shared and was left in place. -->
 <section class="a-section path-section session-path">
   <div class="lean-wrap">
     <span class="lean-eyebrow">Your Path</span>
     <div class="path-grid">
-
-      <article class="path-card secondary">
-        <div class="path-label">Free Lightning Lesson</div>
-        <h3>How to Tell If Your Career Is Stalling</h3>
-        <div class="path-date">Wednesday, September 9, 2026 &middot; 6:00 PM CT</div>
-        <p>Three signs your role may have stopped building your capability and future options, even while you are performing well.</p>
-        <a class="lean-btn outline path-cta" href="https://maven.com/p/5162f2/how-to-tell-if-your-career-is-stalling" target="_blank" rel="noopener">Register Free &rarr;</a>
-      </article>
 
       <article class="path-card primary">
         <div class="path-label">Free Live Assessment</div>

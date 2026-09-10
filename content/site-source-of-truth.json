@@ -187,7 +187,10 @@
       },
       "recording": "Recorded by the organizer. Participants may not record.",
       "registration_url": "https://maven.com/p/5162f2/how-to-tell-if-your-career-is-stalling",
-      "appears_on": ["for-professionals.html", "diagnostic.html", "career-decisions.html"],
+      "status": "past",
+      "appears_on": ["diagnostic.html", "career-decisions.html"],
+      "removed_from_for_professionals": "2026-09-10, the day after the session ran. The card was deleted by hand, which is the manual retirement described below. With one session left, that page's .session-path grid was changed to a single column so the remaining card is not left at half width; the two-column rule still governs the paid-card grid below it.",
+      "still_linked_undated_on_diagnostic": "diagnostic.html carries a Lightning Lesson call to action with no date on it, pointing at the same Maven registration URL. It states no date so nothing on it is factually wrong, but the session it links to has passed. Reported to the operator on 2026-09-10 and left in place pending a decision.",
       "retirement_note": "Time-bound, and retired two different ways depending on the page. On for-professionals.html the banner block is self-contained and marked in a comment for deletion when the session passes: that one is manual. On career-decisions.html it is NOT manual and must not be deleted by hand. That page holds the session in a single NEXT_STEP configuration block with an explicit expiry of 2026-09-09T18:45:00-05:00, the end of the session in Central time, and switches itself to the Field Kit at that instant with no deploy and no edit, and does so while the page is open rather than only on the next page load, so a tab left open across the cutoff does not keep showing a dead registration link. To retire it earlier than that, set NEXT_STEP.current to null rather than removing the block.",
       "expiry_on_career_decisions": "2026-09-09T18:45:00-05:00"
     }
