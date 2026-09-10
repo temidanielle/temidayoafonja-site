@@ -1,0 +1,72 @@
+==============================================================================
+VIDEO 20  |  SENTENCE TRIGGER MAP
+==============================================================================
+
+How to Return After a Career Break Without Starting at Zero
+
+Every graphic with the exact spoken sentence that cues it.
+Each trigger was verified to exist inside a single thought block of
+the locked master, so no cue is built from words that span two
+takes.
+
+------------------------------------------------------------------------------
+
+ 1. v20_01_the_gap_is_not_the_whole_return
+    TRIGGER: The explanation matters. But it is not the whole return.
+    MODE:    SHORT CALLOUT OVER CAMERA for the headline, then FULL SCREEN for the support line.
+    AFTER:   Return to camera. The opening is a real personal account and should stay camera-led around this frame.
+
+ 2. v20_02_three_buckets
+    TRIGGER: Still current. Needs updating. Needs rebuilding.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 3. v20_03_six_things
+    TRIGGER: Inside those buckets, pay attention to six things: what stayed current, what decayed, what changed in the field, what changed in your circumstances, what is unproven rather than absent, and what genuinely has to be rebuilt.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 4. v20_04_unproven_is_not_absent
+    TRIGGER: This is the distinction I want you to remember most: unproven is not the same as absent.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 5. v20_05_unproven_response
+    TRIGGER: If it is unproven, the response is not automatically to relearn it from the beginning.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 6. v20_06_constructed_example
+    TRIGGER: Imagine someone returning to a finance role after several years away.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 7. v20_07_framing_and_bias
+    TRIGGER: Bias against career breaks exists, and a better explanation does not make every employer fair.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 8. v20_08_current_and_rebuilding
+    TRIGGER: A date matters because 'I plan to refresh this' and 'I started this in September and will complete it in November' are different signals.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 9. v20_09_cta
+    TRIGGER: The Field Kit is linked below if you want a broader evidence-led read of what still counts and what needs rebuilding.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+10. v20_10_watch_next
+    TRIGGER: A career break is part of the story. It is not the whole measure of what you can carry forward.
+    MODE:    FULL SCREEN
+    AFTER:   NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+BEATS THAT ARE DELIBERATELY NOT GRAPHICS
+
+  The real personal account in the opening, where the master has
+  one, stays camera-led.
+  Any moment where the master's honesty depends on the viewer
+  watching Temidayo say it.
+  Anything a graphic would only decorate.

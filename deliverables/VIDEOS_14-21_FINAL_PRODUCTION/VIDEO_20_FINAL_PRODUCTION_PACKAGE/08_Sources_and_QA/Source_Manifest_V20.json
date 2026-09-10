@@ -1,0 +1,156 @@
+{
+  "video": 20,
+  "title": "How to Return After a Career Break Without Starting at Zero",
+  "generated": "Thursday, September 10, 2026 | 2:31 PM CT (America/Chicago, UTC-05:00)",
+  "spoken_source_of_truth": {
+    "file": "Video_20_FINAL_Rebuilt_Recording_Master.docx",
+    "sha256": "d370d8743fb4fc6342adbe95ae2fa356a9f384aaf0822bcc72c0b3be1baabc92",
+    "note": "Copied unchanged into 01_Recording_Master. Never written to. This file overrides every earlier script."
+  },
+  "superseded": {
+    "package": "Videos_14-21_SCRIPT_DEVELOPMENT_REVIEW.zip",
+    "sha256": "80d9d54cf5049f77496c4546b624241a744a6cdeee27a6df7555866f0c64ea47",
+    "status": "SUPERSEDED. Development history only. Its scripts are not current speech and are not preserved as alternates."
+  },
+  "secondary_context": [
+    {
+      "file": "Videos_1421_Roadmap_Addendum.docx",
+      "sha256": "3f68bd6cf1c463551fe305b6c6d3ade6e6b030b5e58f5aa4b8f3df731f3a60ea"
+    },
+    {
+      "file": "Videos_1421_Development_Briefs.docx",
+      "sha256": "16e574b06772648a3cd4b197a37e75ff9061710174f55d8a5f09e61d2f17f736"
+    }
+  ],
+  "packaging": {
+    "thumbnail": "WHAT STILL COUNTS NOW?",
+    "framework": "Still current. Needs updating. Needs rebuilding.",
+    "primary_cta": "Name one thing you are rebuilding now, with a date.",
+    "resource": "Field Kit",
+    "watch_next": "V4: How to Explain a Career That Looks All Over the Place"
+  },
+  "script": {
+    "sections": 11,
+    "thought_blocks": 41,
+    "spoken_words": 754,
+    "speech_only_estimate": "5:12 to 5:48 at 130 to 145 words per minute",
+    "estimate_note": "Arithmetic on the script. Excludes pauses and visual holds. Not a timed read and not a runtime."
+  },
+  "assets": [
+    {
+      "file": "v20_01_the_gap_is_not_the_whole_return.png",
+      "status": "NEW",
+      "why": "The final master opens with Temidayo's real maternity-leave return, which the superseded draft did not have and explicitly forbade inventing. The frame is built so the opening stays camera-led.",
+      "mode": "SHORT CALLOUT OVER CAMERA for the headline, then FULL SCREEN for the support line.",
+      "trigger": "The explanation matters. But it is not the whole return."
+    },
+    {
+      "file": "v20_02_three_buckets.png",
+      "status": "REBUILD",
+      "why": "The superseded draft used a six-category sort. The final master uses three buckets with six things attended to inside them, so the frame is rebuilt to the master's structure.",
+      "mode": "FULL SCREEN",
+      "trigger": "Still current. Needs updating. Needs rebuilding."
+    },
+    {
+      "file": "v20_03_six_things.png",
+      "status": "COPY UPDATE",
+      "why": "The six categories existed in the superseded draft as the primary structure. Here they are secondary to the master's three buckets.",
+      "mode": "FULL SCREEN",
+      "trigger": "Inside those buckets, pay attention to six things: what stayed current, what decayed, what changed in the field, what changed in your circumstances, what is unproven rather than absent, and what genuinely has to be rebuilt."
+    },
+    {
+      "file": "v20_04_unproven_is_not_absent.png",
+      "status": "REUSE",
+      "why": "The distinction was the superseded draft's strongest frame and the master keeps it as the stated emphasis. The superseded package held written concepts, never rendered assets, so no frame here is byte-identical reuse.",
+      "mode": "FULL SCREEN",
+      "trigger": "This is the distinction I want you to remember most: unproven is not the same as absent."
+    },
+    {
+      "file": "v20_05_unproven_response.png",
+      "status": "NEW",
+      "why": "The master gives a specific list of ways to create a current instance that the superseded draft did not carry.",
+      "mode": "FULL SCREEN",
+      "trigger": "If it is unproven, the response is not automatically to relearn it from the beginning."
+    },
+    {
+      "file": "v20_06_constructed_example.png",
+      "status": "COPY UPDATE",
+      "why": "The superseded draft had a six-category sort for the same illustration. The master's four-row version replaces it. This is a constructed illustration and is labeled as one, which the real maternity-leave opening is not.",
+      "mode": "FULL SCREEN",
+      "trigger": "Imagine someone returning to a finance role after several years away."
+    },
+    {
+      "file": "v20_07_framing_and_bias.png",
+      "status": "REUSE",
+      "why": "The superseded draft carried the same limit and the master states it plainly. The superseded package held written concepts, never rendered assets, so no frame here is byte-identical reuse.",
+      "mode": "FULL SCREEN",
+      "trigger": "Bias against career breaks exists, and a better explanation does not make every employer fair."
+    },
+    {
+      "file": "v20_08_current_and_rebuilding.png",
+      "status": "COPY UPDATE",
+      "why": "The two-part record survives from the superseded draft with the master's wording.",
+      "mode": "FULL SCREEN",
+      "trigger": "A date matters because 'I plan to refresh this' and 'I started this in September and will complete it in November' are different signals."
+    },
+    {
+      "file": "v20_09_cta.png",
+      "status": "REUSE",
+      "why": "Route matches the master. The superseded package held written concepts, never rendered assets, so no frame here is byte-identical reuse.",
+      "mode": "FULL SCREEN",
+      "trigger": "The Field Kit is linked below if you want a broader evidence-led read of what still counts and what needs rebuilding."
+    },
+    {
+      "file": "v20_10_watch_next.png",
+      "status": "REUSE",
+      "why": "The superseded draft proposed V4 and the final master confirms it. The superseded package held written concepts, never rendered assets, so no frame here is byte-identical reuse.",
+      "mode": "FULL SCREEN",
+      "trigger": "A career break is part of the story. It is not the whole measure of what you can carry forward."
+    }
+  ],
+  "shorts": [
+    {
+      "slug": "v20_a1_not_the_whole_return",
+      "priority": "A",
+      "title": "The gap is not the whole return",
+      "source": "V20 hook and reframe."
+    },
+    {
+      "slug": "v20_a2_unproven_is_not_absent",
+      "priority": "A",
+      "title": "Unproven is not the same as absent",
+      "source": "V20 the distinction."
+    },
+    {
+      "slug": "v20_a3_three_buckets",
+      "priority": "A",
+      "title": "Three buckets instead of behind on everything",
+      "source": "V20 three buckets."
+    },
+    {
+      "slug": "v20_a4_put_a_date_on_it",
+      "priority": "A",
+      "title": "Put a date on it",
+      "source": "V20 application."
+    },
+    {
+      "slug": "v20_b1_bias_is_real",
+      "priority": "B",
+      "title": "A good explanation cannot remove bias",
+      "source": "V20 market reality."
+    },
+    {
+      "slug": "v20_b2_decay_vs_change",
+      "priority": "B",
+      "title": "Decay and change are different problems",
+      "source": "V20 needs updating."
+    }
+  ],
+  "not_verified": [
+    "Nothing in this package has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

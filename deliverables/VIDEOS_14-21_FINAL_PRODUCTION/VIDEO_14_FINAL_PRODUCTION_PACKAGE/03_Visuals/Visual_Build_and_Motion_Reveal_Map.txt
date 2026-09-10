@@ -1,0 +1,163 @@
+==============================================================================
+VIDEO 14  |  VISUAL BUILD MAP AND MOTION REVEAL MAP
+==============================================================================
+
+Which Parts of Your Experience Actually Transfer to Another Industry?
+
+Support and reference assets for the Riverside editor. This is not
+a deck that covers the script paragraph by paragraph, and it is not
+a mandatory slideshow.
+
+------------------------------------------------------------------------------
+
+ 1. v14_01_same_words_different_work.png
+    STATUS:    NEW
+    WHY:       The superseded draft had no research and therefore no same-word comparison. The final master's opening argument requires it.
+    PURPOSE:   The whole argument in one frame. The words are shared. The consequence underneath them is not.
+    TRIGGER:   All three appeared to ask for the same thing:
+    MODE:      FULL SCREEN
+    REVEAL:    Three industry headings together. Hold. MANAGE RISK appears beneath all three. Hold long. Then the three consequence lines appear one at a time, left to right.
+    EMPHASIS:  MANAGE RISK is the largest element and stays on screen while the three consequences arrive under it.
+    HOLD:      Hold the shared line for at least 2 seconds alone. Give each consequence line about 2 seconds. This frame can run long.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Strongest candidate in the video. One soft tick as MANAGE RISK lands, and optionally one as the third consequence appears.
+    AFTER:     Stay on the frame through the consequence list, then return to camera.
+
+ 2. v14_02_research_base.png
+    STATUS:    NEW
+    WHY:       The research did not exist when the earlier package was built.
+    PURPOSE:   State the sample plainly and let the viewer read it. Deliberately not a research table.
+    TRIGGER:   So I went through 28 senior project and program delivery job descriptions across those three industries to answer a question experienced professionals often get wrong in both directions:
+    MODE:      FULL SCREEN
+    REVEAL:    28 first, alone. Then the unit line. Then the three rows together. Then the date line.
+    EMPHASIS:  28 is the dominant element. The three-way split is secondary and the date is last.
+    HOLD:      Hold at least 3 seconds after the date line appears. This is the frame viewers will pause on.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one soft tick as 28 lands. Nothing on the breakdown rows.
+    AFTER:     Return to camera on the next spoken line.
+
+ 3. v14_03_two_question_test.png
+    STATUS:    REUSE
+    WHY:       The two-question test was the core of the earlier research design and survives into the final master unchanged. The superseded package held written concepts, never rendered assets, so no frame here is byte-identical reuse.
+    PURPOSE:   The method of the whole video, given at full size so it can be photographed.
+    TRIGGER:   For any requirement that looked similar across industries, I asked two questions:
+    MODE:      FULL SCREEN
+    REVEAL:    First question with its rule. Hold. Second question with its rule. Hold. Then the interpretation line.
+    EMPHASIS:  Both questions at equal weight. Neither is a subtitle of the other.
+    HOLD:      At least 2 seconds per question, then 3 seconds on the complete frame.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one light tap as the second question lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 4. v14_04_what_travels.png
+    STATUS:    NEW
+    WHY:       The five capabilities come from the completed research and are named in the final master.
+    PURPOSE:   Name the shared spine so the viewer can claim it specifically rather than saying transferable skills.
+    TRIGGER:   So what did travel across the sample?
+    MODE:      FULL SCREEN
+    REVEAL:    One item at a time, in the order spoken. Each stays on screen.
+    EMPHASIS:  The list builds. Nothing is highlighted over anything else.
+    HOLD:      About 2 seconds per item as it is named. Hold the complete list 3 seconds before leaving.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate, but the video has stronger moments. If used, one tick on the first item only, never one per item.
+    AFTER:     Return to camera on the next spoken line.
+
+ 5. v14_05_same_word_different_decision.png
+    STATUS:    NEW
+    WHY:       Grounded in the research and named in the final master.
+    PURPOSE:   One example at a time, as the master instructs. Governance is the clearest single-frame version.
+    TRIGGER:   “Governance” sounded portable until one posting meant an auditable control environment and another meant an executive decision cadence.
+    MODE:      FULL SCREEN
+    REVEAL:    The word alone. Hold. Then the left reading. Then the right reading.
+    EMPHASIS:  The word is largest and stays. The two readings are equal.
+    HOLD:      2 seconds on the word, then about 2 seconds per side.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the second reading replaces the emphasis.
+    AFTER:     Return to camera on the next spoken line.
+
+ 6. v14_06_four_bucket_audit.png
+    STATUS:    NEW
+    WHY:       The four-bucket audit is the final master's framework and did not exist in the superseded draft.
+    PURPOSE:   The framework the viewer takes away. The most photographed frame in the video.
+    TRIGGER:   Then sort the answer into four buckets.
+    MODE:      FULL SCREEN
+    REVEAL:    One bucket at a time, in the spoken order, each with its line.
+    EMPHASIS:  The four labels are equal. No bucket is styled as the good one.
+    HOLD:      About 2 to 3 seconds per bucket, then 4 seconds on the complete grid.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick on the first bucket. Do not tick all four.
+    AFTER:     Return to camera on the next spoken line.
+
+ 7. v14_07_employers_disagree.png
+    STATUS:    NEW
+    WHY:       A research finding. Employers are described by type on screen; the named sources stay in the production archive.
+    PURPOSE:   Stop the viewer generalizing in either direction.
+    TRIGGER:   One of the most useful findings was that employers themselves disagreed.
+    MODE:      FULL SCREEN
+    REVEAL:    Left side. Hold. Right side. Hold. Then the foot line.
+    EMPHASIS:  Neither side is styled as correct.
+    HOLD:      About 3 seconds per side. The right side needs the longer read.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate. Let this one land in silence.
+    AFTER:     Return to camera on the next spoken line.
+
+ 8. v14_08_research_boundary.png
+    STATUS:    NEW
+    WHY:       The final master speaks the boundary and the research requires it to be visible.
+    PURPOSE:   The limitation, at full size, in the video rather than only in the notes.
+    TRIGGER:   This research does not prove that two roles are interchangeable.
+    MODE:      FULL SCREEN
+    REVEAL:    Headline, then the support line.
+    EMPHASIS:  The headline. The support carries the sample limitation and must be readable, not a footnote.
+    HOLD:      At least 4 seconds. This frame is the honesty of the whole video and should not be rushed.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate. Silence is the correct treatment here.
+    AFTER:     Return to camera on the next spoken line.
+
+ 9. v14_09_cta.png
+    STATUS:    COPY UPDATE
+    WHY:       A CTA card existed as a concept in the superseded package with a different action. The final master's action replaces it, and no resource is added because the master names none.
+    PURPOSE:   The single spoken action. This master names no resource, so none is shown.
+    TRIGGER:   If you do one thing after this video, do not start with the title.
+    MODE:      FULL SCREEN
+    REVEAL:    Headline, support, then the question line.
+    EMPHASIS:  The question line in gold.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one clean transition sound as the card enters.
+    AFTER:     Stay on the card through the close, then move to Watch Next.
+
+10. v14_10_watch_next.png
+    STATUS:    COPY UPDATE
+    WHY:       A Watch Next card was planned. The destination is confirmed by the final master and the title string is taken from it.
+    PURPOSE:   The final visual.
+    TRIGGER:   Watch “The Career Gaps You Don’t See Until the Work Gets Harder” next.
+    MODE:      FULL SCREEN
+    REVEAL:    Label, rule, title, then the video number.
+    EMPHASIS:  The title.
+    HOLD:      Hold to the end of the video. Copy stays left so a YouTube end screen can sit on the right.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one restrained transition sound on entry, then let the music fade.
+    AFTER:     NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+FULL SCREEN
+  Frameworks, comparisons, multi-point concepts, substantive demonstrations, the resource card and Watch Next are TRUE FULL SCREEN. No moving Temidayo behind or around a major visual. Substantive B-roll fills the entire frame. Short single-idea callouts may sit over camera. After a full-screen teaching visual, return to camera only where the scene map calls for it. THIS NEVER APPLIES TO WATCH NEXT: Watch Next is the final visual and there is no return to camera afterward.
+
+CAMERA
+  About 3 to 5 deliberate camera-emphasis beats across the whole video. This is one combined budget: gentle push-ins on tension, insight or a reframe, with occasional pull-backs or a return to base framing to reset the rhythm. It is not 3 to 5 push-ins plus 3 to 5 pull-backs. No aggressive zooms, no pulsing, no constant reframing, no unnecessary digital movement. Preserve headroom and source quality.
+
+SOUND BUDGET
+  About 4 to 7 restrained audio accents for the ENTIRE video, including the one visual Subscribe cue. The per-frame sound candidates in the visual map are OPTIONAL and are not cumulative. Choose only the moments with the highest visual or intellectual payoff. Keep every effect clearly quieter than the voice. Pair the sound with a small visual action so both land together. If no sound improves the moment, leave it silent.
+
+B-ROLL
+  About 2 to 4 meaningful full-screen B-roll moments where useful. This is not a quota. No generic handshakes, fake boardrooms, smiling coworkers, meaningless typing, AI-looking people, or invented employer documents presented as real. Where an example is constructed, it carries its label.
+
+CAPTIONS
+  NO BURNED-IN OR OPEN CAPTIONS on the long-form video. Viewers use YouTube CC. Deliver a clean export with no persistent subtitles, a complete final transcript with names, frameworks, URLs and industry terms proofread, and an SRT generated against the FINAL edited timeline with synchronization checked after every jump cut and removal. Do not delete transcript words because the camera is hidden behind a graphic. Shorts and Reels may use designed captions.
+
+SUBSCRIBE
+  One brief visual Subscribe cue after meaningful value has already been delivered. Visual only. There is no spoken Subscribe request in the master and none is added. About 1 to 3 seconds including entrance and exit. Do not interrupt a useful pause or cover teaching content.

@@ -1,0 +1,111 @@
+==============================================================================
+VIDEO 20  |  QA REPORT
+==============================================================================
+
+How to Return After a Career Break Without Starting at Zero
+
+33 package checks completed now. 33 passed.
+Every check ran against the built package on disk, not against the
+build data, so a check cannot pass because of something that was
+true only in a source module.
+
+------------------------------------------------------------------------------
+
+PACKAGE CHECKS COMPLETED NOW
+
+  [PASS] Correct new final master used
+         Video_20_FINAL_Rebuilt_Recording_Master.docx
+  [PASS] Master copied unchanged
+         SHA-256 d370d8743fb4fc6342adbe95ae2fa356a9f384aaf0822bcc72c0b3be1baabc92
+  [PASS] Spoken reading copy matches the master
+         41 blocks present
+  [PASS] Script-only copy matches the master exactly
+         41 blocks, in order
+  [PASS] Correct title
+         How to Return After a Career Break Without Starting at Zero
+  [PASS] Correct thumbnail wording
+         WHAT STILL COUNTS NOW?
+  [PASS] Correct framework
+         Still current. Needs updating. Needs rebuilding.
+  [PASS] Correct CTA
+         Name one thing you are rebuilding now, with a date.
+  [PASS] Correct resource
+         Field Kit
+  [PASS] Correct Watch Next
+         V4: How to Explain a Career That Looks All Over the Place
+  [PASS] Current teaching sequence used
+         11 sections from the master
+  [PASS] All sentence triggers exist in the current master
+         10 triggers verified inside single blocks
+  [PASS] No Code-draft script contamination
+         no superseded draft wording found anywhere in the package
+  [PASS] Constructed examples labeled
+         the constructed example carries its label on the frame and is said aloud in the master
+  [PASS] No invented employer or personal claim
+         no invented employer, client or personal claim
+  [PASS] No em dashes or en dashes
+         clean
+  [PASS] U.S. English
+         no British spellings
+  [PASS] Assets 1920x1080 minimum
+         10 PNGs, sizes [(1920, 1080)]
+  [PASS] Mobile legibility inspected visually
+         phone-size contact sheet rendered and inspected by eye at 393 px per frame
+  [PASS] Editable source deck supplied
+         PowerPoint deck at 1920 by 1080
+  [PASS] True full-screen rules explicit
+         full-screen rule and the Watch Next exception both stated
+  [PASS] No burned-in caption instruction present
+         stated in the prompt
+  [PASS] SRT requirement present
+         SRT is required from the final timeline, not the script
+  [PASS] Camera movement budget correct
+         one combined budget of about 3 to 5 beats
+  [PASS] Sound budget correct
+         about 4 to 7 for the whole video, candidates not cumulative
+  [PASS] Audio and visual transition hooks present
+         the rule and its limit are both stated
+  [PASS] One visual Subscribe cue
+         visual only, and none is spoken
+  [PASS] Watch Next final, no return to camera
+         stated in the prompt and on the Watch Next scene
+  [PASS] Six Shorts
+         6 scripts, 4 Priority A and 2 Priority B
+  [PASS] Publishing copy aligned to the master
+         title and thumbnail taken from the master verbatim
+  [PASS] No invented URLs
+         only the four existing resource routes appear
+  [PASS] No invented chapters
+         no chapter list anywhere. Runtime estimates are labeled as estimates; chapters come from the final export
+  [PASS] No invented music attribution
+         no music credit or licence code recorded
+
+------------------------------------------------------------------------------
+
+FINAL-EXPORT CHECKS, STILL PENDING
+
+  These are NOT complete and are not claimed. A written prompt does
+  not prove an effect exists in the finished video.
+
+  [ PENDING ] Actual recorded delivery
+  [ PENDING ] Actual runtime
+  [ PENDING ] Actual executed jump cuts
+  [ PENDING ] Executed zoom-ins and pull-backs
+  [ PENDING ] Executed motion graphics
+  [ PENDING ] B-roll placement
+  [ PENDING ] Actual audio clarity
+  [ PENDING ] Final loudness
+  [ PENDING ] Music and effects balance
+  [ PENDING ] Picture quality
+  [ PENDING ] Caption absence on the exported video
+  [ PENDING ] SRT synchronization
+  [ PENDING ] Final chapters
+  [ PENDING ] Final Watch Next hold
+  [ PENDING ] Clean ending
+  [ PENDING ] Thumbnail artwork approval
+  [ PENDING ] Public link accessibility
+
+------------------------------------------------------------------------------
+
+  Nothing in this list can be checked until the video has been
+  recorded, edited and exported.

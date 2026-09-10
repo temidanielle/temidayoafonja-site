@@ -1,0 +1,72 @@
+==============================================================================
+VIDEO 15  |  SENTENCE TRIGGER MAP
+==============================================================================
+
+The Career Gaps You Don't See Until the Work Gets Harder
+
+Every graphic with the exact spoken sentence that cues it.
+Each trigger was verified to exist inside a single thought block of
+the locked master, so no cue is built from words that span two
+takes.
+
+------------------------------------------------------------------------------
+
+ 1. v15_01_the_question_changes
+    TRIGGER: Then someone turns to you and asks, "What do you recommend we do?"
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 2. v15_02_three_gaps
+    TRIGGER: Learn. Practice. Prove. Those are different problems, and they need different next moves.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 3. v15_03_learn_test
+    TRIGGER: Start with the simplest test: if someone competent walked you through the method, would that meaningfully close the gap?
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 4. v15_04_course_limit
+    TRIGGER: A course can teach a method.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 5. v15_05_practice_question
+    TRIGGER: Now ask a harder question: have I ever been the person who actually had to decide?
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 6. v15_06_knowing_isnt_owning
+    TRIGGER: You can understand a decision very well and still never have carried one.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 7. v15_07_three_reads
+    TRIGGER: Same discomfort. Three completely different next moves.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 8. v15_08_one_gap_one_step
+    TRIGGER: Ask three questions.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 9. v15_09_cta
+    TRIGGER: If you want a structured way to decide what the next move actually requires, the Career Decision Evidence Check is linked below.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+10. v15_10_watch_next
+    TRIGGER: Knowing the work and owning the decision are not the same thing.
+    MODE:    FULL SCREEN
+    AFTER:   NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+BEATS THAT ARE DELIBERATELY NOT GRAPHICS
+
+  The real personal account in the opening, where the master has
+  one, stays camera-led.
+  Any moment where the master's honesty depends on the viewer
+  watching Temidayo say it.
+  Anything a graphic would only decorate.

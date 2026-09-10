@@ -1,0 +1,163 @@
+==============================================================================
+VIDEO 16  |  VISUAL BUILD MAP AND MOTION REVEAL MAP
+==============================================================================
+
+What to Do When Your Work Is Valued but You Are Overlooked
+
+Support and reference assets for the Riverside editor. This is not
+a deck that covers the script paragraph by paragraph, and it is not
+a mandatory slideshow.
+
+------------------------------------------------------------------------------
+
+ 1. v16_01_called_then_skipped.png
+    STATUS:    REBUILD
+    WHY:       The superseded draft had a split-screen concept with different copy. The final master's three-call opening replaces it.
+    PURPOSE:   Land the specific frustration in the first fifteen seconds.
+    TRIGGER:   When something is urgent, they call you.
+    MODE:      FULL SCREEN
+    REVEAL:    Left column builds line by line as the three calls are spoken. Then the right column. Then the foot line.
+    EMPHASIS:  The imbalance between the two columns is the point.
+    HOLD:      Build with the speech, then hold the complete frame 3 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one soft tick as the right column appears.
+    AFTER:     Return to camera on the next spoken line.
+
+ 2. v16_02_four_separations.png
+    STATUS:    COPY UPDATE
+    WHY:       The four separations existed in the superseded draft as a concept. The wording is now the master's.
+    PURPOSE:   The structure of the video, given at full size.
+    TRIGGER:   Before you change how you behave, separate four things: is the work seen, is it attributed to you, are you trusted for delivery or considered for larger scope, and is the obstacle one you can actually remove?
+    MODE:      FULL SCREEN
+    REVEAL:    One question at a time, in spoken order.
+    EMPHASIS:  All four equal.
+    HOLD:      About 2 seconds each, 3 on the complete set.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick on the fourth as the set completes.
+    AFTER:     Return to camera on the next spoken line.
+
+ 3. v16_03_where_work_disappears.png
+    STATUS:    COPY UPDATE
+    WHY:       The concept survives; the copy is the master's.
+    PURPOSE:   Explain why the information problem exists without blaming anyone.
+    TRIGGER:   It disappears into a process that now runs smoothly.
+    MODE:      FULL SCREEN
+    REVEAL:    One column at a time. Prevention appears last and is the one worth holding.
+    EMPHASIS:  Prevention. The absence is the hardest to point at.
+    HOLD:      2 seconds per column, then 3 on the foot line.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate.
+    AFTER:     Return to camera on the next spoken line.
+
+ 4. v16_04_delivery_vs_scope.png
+    STATUS:    COPY UPDATE
+    WHY:       Concept retained, copy replaced with the master's wording.
+    PURPOSE:   The most surprising point in the video.
+    TRIGGER:   Delivery and scope are different judgments.
+    MODE:      FULL SCREEN
+    REVEAL:    Left, then right, then the foot line.
+    EMPHASIS:  The foot line, which is the insight.
+    HOLD:      At least 3 seconds on the foot line.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the foot line lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 5. v16_05_the_hinge.png
+    STATUS:    REUSE
+    WHY:       The hinge distinction was the strongest idea in the superseded draft and the final master keeps it. The superseded package held written concepts, never rendered assets, so no frame here is byte-identical reuse.
+    PURPOSE:   The pivot of the video and the most quotable frame.
+    TRIGGER:   This is the distinction I most want you to keep: a manager who does not know is a completely different situation from a manager who knows and does not act.
+    MODE:      FULL SCREEN
+    REVEAL:    Left. Hold. Right. Hold. Then the foot line.
+    EMPHASIS:  The two sides are different problems, not degrees of one.
+    HOLD:      At least 3 seconds per side and 3 on the foot line.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Strong candidate: one soft tick as the right side lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 6. v16_06_what_remains.png
+    STATUS:    NEW
+    WHY:       The final master states the limits as a list. The superseded draft carried them as prose.
+    PURPOSE:   Keep the video honest. The record has a limit and the limit is said out loud.
+    TRIGGER:   A clearer record does not override bias.
+    MODE:      FULL SCREEN
+    REVEAL:    All four appear together, then the foot line.
+    EMPHASIS:  The foot line.
+    HOLD:      At least 4 seconds. Do not rush the honesty frame.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate. Let this land in silence.
+    AFTER:     Return to camera on the next spoken line.
+
+ 7. v16_07_three_pieces_four_lines.png
+    STATUS:    COPY UPDATE
+    WHY:       The four-line record survives from the superseded draft with the master's revised fourth line.
+    PURPOSE:   The artifact the viewer builds.
+    TRIGGER:   For each, write four lines: what was true before, what you decided, what changed, and what evidence supports the account.
+    MODE:      FULL SCREEN
+    REVEAL:    One line at a time in spoken order.
+    EMPHASIS:  The fourth line, which is what makes it inspectable.
+    HOLD:      2 seconds per line, 4 on the complete frame. Viewers will pause here.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the fourth line lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 8. v16_08_needed_not_considered.png
+    STATUS:    NEW
+    WHY:       The final master's closing line differs from the superseded draft.
+    PURPOSE:   The final spoken line at full size.
+    TRIGGER:   Being needed is not the same as being considered for what comes next.
+    MODE:      FULL SCREEN
+    REVEAL:    Single state.
+    EMPHASIS:  The whole frame.
+    HOLD:      At least 3 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one clean transition sound on entry.
+    AFTER:     Move to the CTA card, then Watch Next.
+
+ 9. v16_09_cta.png
+    STATUS:    REUSE
+    WHY:       Route matches the master. The superseded package held written concepts, never rendered assets, so no frame here is byte-identical reuse.
+    PURPOSE:   The single resource route named by the master, after the value has been delivered.
+    TRIGGER:   Keep the Proof is linked below if you want the deeper evidence system.
+    MODE:      FULL SCREEN
+    REVEAL:    Label, headline, resource name, URL.
+    EMPHASIS:  The URL.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one clean transition sound on entry.
+    AFTER:     Return to camera on the next spoken line.
+
+10. v16_10_watch_next.png
+    STATUS:    REBUILD
+    WHY:       The superseded draft proposed V8 as a Watch Next and the final master confirms it. The card is built to the master's string.
+    PURPOSE:   The final visual.
+    TRIGGER:   Being needed is not the same as being considered for what comes next.
+    MODE:      FULL SCREEN
+    REVEAL:    Label, rule, title, number.
+    EMPHASIS:  The title.
+    HOLD:      Hold to the end.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one restrained transition sound, then music fade.
+    AFTER:     NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+FULL SCREEN
+  Frameworks, comparisons, multi-point concepts, substantive demonstrations, the resource card and Watch Next are TRUE FULL SCREEN. No moving Temidayo behind or around a major visual. Substantive B-roll fills the entire frame. Short single-idea callouts may sit over camera. After a full-screen teaching visual, return to camera only where the scene map calls for it. THIS NEVER APPLIES TO WATCH NEXT: Watch Next is the final visual and there is no return to camera afterward.
+
+CAMERA
+  About 3 to 5 deliberate camera-emphasis beats across the whole video. This is one combined budget: gentle push-ins on tension, insight or a reframe, with occasional pull-backs or a return to base framing to reset the rhythm. It is not 3 to 5 push-ins plus 3 to 5 pull-backs. No aggressive zooms, no pulsing, no constant reframing, no unnecessary digital movement. Preserve headroom and source quality.
+
+SOUND BUDGET
+  About 4 to 7 restrained audio accents for the ENTIRE video, including the one visual Subscribe cue. The per-frame sound candidates in the visual map are OPTIONAL and are not cumulative. Choose only the moments with the highest visual or intellectual payoff. Keep every effect clearly quieter than the voice. Pair the sound with a small visual action so both land together. If no sound improves the moment, leave it silent.
+
+B-ROLL
+  About 2 to 4 meaningful full-screen B-roll moments where useful. This is not a quota. No generic handshakes, fake boardrooms, smiling coworkers, meaningless typing, AI-looking people, or invented employer documents presented as real. Where an example is constructed, it carries its label.
+
+CAPTIONS
+  NO BURNED-IN OR OPEN CAPTIONS on the long-form video. Viewers use YouTube CC. Deliver a clean export with no persistent subtitles, a complete final transcript with names, frameworks, URLs and industry terms proofread, and an SRT generated against the FINAL edited timeline with synchronization checked after every jump cut and removal. Do not delete transcript words because the camera is hidden behind a graphic. Shorts and Reels may use designed captions.
+
+SUBSCRIBE
+  One brief visual Subscribe cue after meaningful value has already been delivered. Visual only. There is no spoken Subscribe request in the master and none is added. About 1 to 3 seconds including entrance and exit. Do not interrupt a useful pause or cover teaching content.

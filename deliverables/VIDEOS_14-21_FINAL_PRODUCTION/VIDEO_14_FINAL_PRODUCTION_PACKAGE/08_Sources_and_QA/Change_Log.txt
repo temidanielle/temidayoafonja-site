@@ -1,0 +1,78 @@
+==============================================================================
+VIDEO 14  |  CHANGE LOG
+==============================================================================
+
+Which Parts of Your Experience Actually Transfer to Another Industry?
+
+Generated: Thursday, September 10, 2026 | 2:31 PM CT (America/Chicago, UTC-05:00)
+
+------------------------------------------------------------------------------
+
+SOURCE HIERARCHY CHANGE
+
+  The locked final Recording Master is now the definitive spoken
+  source of truth for this video:
+
+    Video_14_Which_Parts_of_Your_Experience_Actually_Transfer_FINAL_Recording_Master.docx
+    SHA-256 4a36cc83b8bcc8279011974952b098aafa559e0c07b2dce1aab7c92b5c0e28ca
+
+  It OVERRIDES the script this workspace drafted earlier in
+  Videos_14-21_SCRIPT_DEVELOPMENT_REVIEW.zip. The two script sets
+  were not merged. The earlier draft was not used to reword the
+  master, and it is not retained as an alternate recording script.
+  It is development history.
+
+------------------------------------------------------------------------------
+
+WHAT WAS AUDITED AND REUSED
+
+  Every production concept from the earlier package was checked
+  against this master and classified:
+
+    REUSE        1
+    REORDER      0
+    COPY UPDATE  2
+    REBUILD      0
+    REMOVE       0
+    NEW          7
+
+  No frame is described as byte-identical reuse. The earlier
+  package held written concepts only. No rendered production asset
+  existed for any video in this range, so REUSE here means the
+  concept survived the final master unchanged, not that a file was
+  carried across.
+
+------------------------------------------------------------------------------
+
+WHAT WAS NOT CHANGED
+
+  The master was copied byte for byte and never written to.
+  No spoken text was tightened, expanded, restructured or
+  reworded. The hook, the examples, the qualifications, the CTA,
+  the resource, the Watch Next and the final line are the
+  master's.
+  No statistic, example, employer, person or outcome was added.
+  No spoken Subscribe request was added.
+
+------------------------------------------------------------------------------
+
+VIDEO 14 SPECIFICALLY
+
+  The research is complete. This video is no longer script
+  blocked.
+  The retained sample is 28 postings, not 30. 10 healthcare,
+  10 financial services, 8 technology, all collected
+  September 10, 2026. 30 was the target and was not reached.
+  The numerical past-tense title is NOT restored as active
+  packaging. The approved question title is used.
+  The mixed finding is preserved. The package does not say
+  that experience transfers, and it does not say that it does
+  not.
+
+------------------------------------------------------------------------------
+
+WHAT IS NOT SUPPLIED BY INSTRUCTION
+
+  Final chapters, an SRT, music attribution, thumbnail artwork and
+  any public URL. These come from the finished export and the
+  separate artwork approval.

@@ -1,0 +1,156 @@
+{
+  "video": 15,
+  "title": "The Career Gaps You Don't See Until the Work Gets Harder",
+  "generated": "Thursday, September 10, 2026 | 2:31 PM CT (America/Chicago, UTC-05:00)",
+  "spoken_source_of_truth": {
+    "file": "Video_15_FINAL_Rebuilt_Recording_Master.docx",
+    "sha256": "915dbff9c0139f4a263254047bb22feac81fa9ba6d69159978f5b0b0043d6e5a",
+    "note": "Copied unchanged into 01_Recording_Master. Never written to. This file overrides every earlier script."
+  },
+  "superseded": {
+    "package": "Videos_14-21_SCRIPT_DEVELOPMENT_REVIEW.zip",
+    "sha256": "80d9d54cf5049f77496c4546b624241a744a6cdeee27a6df7555866f0c64ea47",
+    "status": "SUPERSEDED. Development history only. Its scripts are not current speech and are not preserved as alternates."
+  },
+  "secondary_context": [
+    {
+      "file": "Videos_1421_Roadmap_Addendum.docx",
+      "sha256": "3f68bd6cf1c463551fe305b6c6d3ade6e6b030b5e58f5aa4b8f3df731f3a60ea"
+    },
+    {
+      "file": "Videos_1421_Development_Briefs.docx",
+      "sha256": "16e574b06772648a3cd4b197a37e75ff9061710174f55d8a5f09e61d2f17f736"
+    }
+  ],
+  "packaging": {
+    "thumbnail": "KNOWING ISN'T OWNING",
+    "framework": "Learn. Practice. Prove.",
+    "primary_cta": "Identify one gap and name the matching next step.",
+    "resource": "Career Decision Evidence Check",
+    "watch_next": "V16: What to Do When Your Work Is Valued but You Are Overlooked"
+  },
+  "script": {
+    "sections": 9,
+    "thought_blocks": 38,
+    "spoken_words": 859,
+    "speech_only_estimate": "5:55 to 6:36 at 130 to 145 words per minute",
+    "estimate_note": "Arithmetic on the script. Excludes pauses and visual holds. Not a timed read and not a runtime."
+  },
+  "assets": [
+    {
+      "file": "v15_01_the_question_changes.png",
+      "status": "REBUILD",
+      "why": "The concept existed in the superseded draft as a quote swap. The final master's wording differs, so the frame is built to the master's exact sentence.",
+      "mode": "FULL SCREEN",
+      "trigger": "Then someone turns to you and asks, \"What do you recommend we do?\""
+    },
+    {
+      "file": "v15_02_three_gaps.png",
+      "status": "COPY UPDATE",
+      "why": "The three-gap concept survives from the superseded draft; the labels and lines are replaced with the final master's wording.",
+      "mode": "FULL SCREEN",
+      "trigger": "Learn. Practice. Prove. Those are different problems, and they need different next moves."
+    },
+    {
+      "file": "v15_03_learn_test.png",
+      "status": "NEW",
+      "why": "The final master states each test as a distinct question. The superseded draft folded them into prose.",
+      "mode": "FULL SCREEN",
+      "trigger": "Start with the simplest test: if someone competent walked you through the method, would that meaningfully close the gap?"
+    },
+    {
+      "file": "v15_04_course_limit.png",
+      "status": "NEW",
+      "why": "Named explicitly in the final master and required by the brief's boundary.",
+      "mode": "FULL SCREEN",
+      "trigger": "A course can teach a method."
+    },
+    {
+      "file": "v15_05_practice_question.png",
+      "status": "NEW",
+      "why": "The final master separates the three tests into distinct questions.",
+      "mode": "FULL SCREEN",
+      "trigger": "Now ask a harder question: have I ever been the person who actually had to decide?"
+    },
+    {
+      "file": "v15_06_knowing_isnt_owning.png",
+      "status": "NEW",
+      "why": "The final master's thumbnail wording changed to KNOWING ISN'T OWNING, so the video needs the spoken line on screen.",
+      "mode": "FULL SCREEN",
+      "trigger": "You can understand a decision very well and still never have carried one."
+    },
+    {
+      "file": "v15_07_three_reads.png",
+      "status": "COPY UPDATE",
+      "why": "The superseded draft had a similar example. The final master's version is shorter and is what the frame now carries.",
+      "mode": "FULL SCREEN",
+      "trigger": "Same discomfort. Three completely different next moves."
+    },
+    {
+      "file": "v15_08_one_gap_one_step.png",
+      "status": "COPY UPDATE",
+      "why": "The pairing concept survives; the questions are the master's.",
+      "mode": "FULL SCREEN",
+      "trigger": "Ask three questions."
+    },
+    {
+      "file": "v15_09_cta.png",
+      "status": "REUSE",
+      "why": "The route matches the master. The superseded package held written concepts, never rendered assets, so no frame here is byte-identical reuse.",
+      "mode": "FULL SCREEN",
+      "trigger": "If you want a structured way to decide what the next move actually requires, the Career Decision Evidence Check is linked below."
+    },
+    {
+      "file": "v15_10_watch_next.png",
+      "status": "COPY UPDATE",
+      "why": "Destination taken from the final master.",
+      "mode": "FULL SCREEN",
+      "trigger": "Knowing the work and owning the decision are not the same thing."
+    }
+  ],
+  "shorts": [
+    {
+      "slug": "v15_a1_the_question_changes",
+      "priority": "A",
+      "title": "When the question changes",
+      "source": "V15 hook."
+    },
+    {
+      "slug": "v15_a2_three_gaps",
+      "priority": "A",
+      "title": "Learn, practice, prove",
+      "source": "V15 early payoff."
+    },
+    {
+      "slug": "v15_a3_course_limit",
+      "priority": "A",
+      "title": "What a course cannot do",
+      "source": "V15 learn."
+    },
+    {
+      "slug": "v15_a4_knowing_isnt_owning",
+      "priority": "A",
+      "title": "Knowing is not owning",
+      "source": "V15 practice."
+    },
+    {
+      "slug": "v15_b1_evidence_gap",
+      "priority": "B",
+      "title": "It might not be a development problem",
+      "source": "V15 prove."
+    },
+    {
+      "slug": "v15_b2_not_a_verdict",
+      "priority": "B",
+      "title": "This is not a verdict on you",
+      "source": "V15 boundary."
+    }
+  ],
+  "not_verified": [
+    "Nothing in this package has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "batch": "Videos 14 to 21 final production packages",
+  "generated": "Thursday, September 10, 2026 | 2:31 PM CT (America/Chicago, UTC-05:00)",
+  "source_hierarchy": {
+    "primary": "YouTube_V14-V21_FINAL_Complete_Recording_Masters.zip, eight locked final Recording Masters. Definitive spoken source of truth.",
+    "secondary_research": "what-really-transfers-research.md, the research source of truth for Video 14 only.",
+    "superseded": "Videos_14-21_SCRIPT_DEVELOPMENT_REVIEW.zip. Development history. Its scripts are not current speech.",
+    "context": [
+      "Videos_1421_Roadmap_Addendum.docx",
+      "Videos_1421_Development_Briefs.docx"
+    ]
+  },
+  "masters": {
+    "14": {
+      "file": "Video_14_Which_Parts_of_Your_Experience_Actually_Transfer_FINAL_Recording_Master.docx",
+      "sha256": "4a36cc83b8bcc8279011974952b098aafa559e0c07b2dce1aab7c92b5c0e28ca",
+      "title": "Which Parts of Your Experience Actually Transfer to Another Industry?",
+      "thumbnail": "WHAT REALLY TRANSFERS?",
+      "framework": "TRAVELS | LOOKS SIMILAR | MUST BE LEARNED | MUST BE EXPERIENCED",
+      "primary_cta": "Take one destination role and ask: What would I actually have to decide? What happens if I decide badly?",
+      "resource": null,
+      "watch_next": "Video 15: The Career Gaps You Don’t See Until the Work Gets Harder",
+      "spoken_words": 1259,
+      "speech_only_estimate": "8:41 to 9:41"
+    },
+    "15": {
+      "file": "Video_15_FINAL_Rebuilt_Recording_Master.docx",
+      "sha256": "915dbff9c0139f4a263254047bb22feac81fa9ba6d69159978f5b0b0043d6e5a",
+      "title": "The Career Gaps You Don't See Until the Work Gets Harder",
+      "thumbnail": "KNOWING ISN'T OWNING",
+      "framework": "Learn. Practice. Prove.",
+      "primary_cta": "Identify one gap and name the matching next step.",
+      "resource": "Career Decision Evidence Check",
+      "watch_next": "V16: What to Do When Your Work Is Valued but You Are Overlooked",
+      "spoken_words": 859,
+      "speech_only_estimate": "5:55 to 6:36"
+    },
+    "16": {
+      "file": "Video_16_FINAL_Rebuilt_Recording_Master.docx",
+      "sha256": "8ba435a6aef6a3120f49a342dd5cf7e1686621f1f51f4891c0983e4110cfac4f",
+      "title": "What to Do When Your Work Is Valued but You Are Overlooked",
+      "thumbnail": "THEY NEED YOU. THEN SKIP YOU.",
+      "framework": "Seen. Attributed. Considered. Removable.",
+      "primary_cta": "Write one decision you made and what it changed.",
+      "resource": "Keep the Proof",
+      "watch_next": "V8: How to Show Your Impact at Work When You Built It From Scratch",
+      "spoken_words": 641,
+      "speech_only_estimate": "4:25 to 4:56"
+    },
+    "17": {
+      "file": "Video_17_FINAL_Rebuilt_Recording_Master.docx",
+      "sha256": "75206d06a2b1d429c2e2086c3abe7a9602da9e63354c6d8984fec1ce27945ce3",
+      "title": "How to Prove Your Value When AI Does More of the Task",
+      "thumbnail": "WHAT DID YOU ACTUALLY DO?",
+      "framework": "Get right. Check. Conclude. Own.",
+      "primary_cta": "Capture what you checked and why.",
+      "resource": "Keep the Proof",
+      "watch_next": "V11: AI Can Do the Task. What Are You Still Paid For?",
+      "spoken_words": 564,
+      "speech_only_estimate": "3:53 to 4:20"
+    },
+    "18": {
+      "file": "Video_18_FINAL_Rebuilt_Recording_Master.docx",
+      "sha256": "3536bc26212d900fb1d3699c8bc4950e221a70f0fc56414b5b8e915ce210b072",
+      "title": "Should You Stay an Individual Contributor or Become a Manager?",
+      "thumbnail": "TWO DIFFERENT JOBS",
+      "framework": "Work. Path. Authority. Reversibility.",
+      "primary_cta": "Ask the four questions before deciding.",
+      "resource": "Career Decision Evidence Check",
+      "watch_next": "V16: What to Do When Your Work Is Valued but You Are Overlooked",
+      "spoken_words": 578,
+      "speech_only_estimate": "3:59 to 4:27"
+    },
+    "19": {
+      "file": "Video_19_FINAL_Rebuilt_Recording_Master.docx",
+      "sha256": "8b2e0b1a6384a2743479806a3ce6d16cc07d79b6ef98aced16524f67313c40d6",
+      "title": "Is Consulting a Real Next Step for Your Career?",
+      "thumbnail": "EXPERIENCE ISN'T AN OFFER",
+      "framework": "Expertise. Offer. Buyer. Repeatability.",
+      "primary_cta": "Write one deliverable sentence.",
+      "resource": "Career Decision Evidence Check",
+      "watch_next": "V13: A 30-Day Plan to Test Your Next Career Move",
+      "spoken_words": 622,
+      "speech_only_estimate": "4:17 to 4:47"
+    },
+    "20": {
+      "file": "Video_20_FINAL_Rebuilt_Recording_Master.docx",
+      "sha256": "d370d8743fb4fc6342adbe95ae2fa356a9f384aaf0822bcc72c0b3be1baabc92",
+      "title": "How to Return After a Career Break Without Starting at Zero",
+      "thumbnail": "WHAT STILL COUNTS NOW?",
+      "framework": "Still current. Needs updating. Needs rebuilding.",
+      "primary_cta": "Name one thing you are rebuilding now, with a date.",
+      "resource": "Field Kit",
+      "watch_next": "V4: How to Explain a Career That Looks All Over the Place",
+      "spoken_words": 754,
+      "speech_only_estimate": "5:12 to 5:48"
+    },
+    "21": {
+      "file": "Video_21_FINAL_Rebuilt_Recording_Master.docx",
+      "sha256": "57afb71683db3e8988a851d991d904a283d77e5317b4ee63dc291a92fc48a75d",
+      "title": "What You Must Relearn When You Change Industries",
+      "thumbnail": "NOT EVERYTHING TRAVELS",
+      "framework": "Domain. Requirements. Systems. Relationships. Decisions.",
+      "primary_cta": "Build a five-layer relearning inventory for one destination.",
+      "resource": "Field Kit",
+      "watch_next": "V9: How to Change Industries Without Starting Over",
+      "spoken_words": 624,
+      "speech_only_estimate": "4:18 to 4:48"
+    }
+  },
+  "research_archive": {
+    "file": "what-really-transfers-research.md",
+    "sha256": "a7eac1a71e2245e34e61267be9e19d8c5e3750a66236da40e78f9715ad3e6421",
+    "retained": 28,
+    "by_industry": {
+      "healthcare": 10,
+      "financial_services": 10,
+      "technology": 8
+    },
+    "collected": "2026-09-10"
+  },
+  "packages": {
+    "14": {
+      "zip": "Video_14_Final_Production_Package.zip",
+      "sha256": "faa3a2fabbd863717edd58e138cd4817f2e5d28f30db281b856ac6e59e129807",
+      "files": 37,
+      "checks_passed": 37,
+      "checks_total": 37,
+      "assets": 10,
+      "shorts": 6
+    },
+    "15": {
+      "zip": "Video_15_Final_Production_Package.zip",
+      "sha256": "499ec18fe84de63f37df6ad4c287f292e1379c8c77e0a8aad1cf6b72b49b9761",
+      "files": 36,
+      "checks_passed": 33,
+      "checks_total": 33,
+      "assets": 10,
+      "shorts": 6
+    },
+    "16": {
+      "zip": "Video_16_Final_Production_Package.zip",
+      "sha256": "3bedcc300318f6eb1998f0c77aedfdc3b1eb8ad904f64e75b5a3ea3c48fddf10",
+      "files": 36,
+      "checks_passed": 32,
+      "checks_total": 32,
+      "assets": 10,
+      "shorts": 6
+    },
+    "17": {
+      "zip": "Video_17_Final_Production_Package.zip",
+      "sha256": "0ce867618dcef13673fde53113606927f3a8b40b53896857f2c9660be47fb230",
+      "files": 36,
+      "checks_passed": 33,
+      "checks_total": 33,
+      "assets": 10,
+      "shorts": 6
+    },
+    "18": {
+      "zip": "Video_18_Final_Production_Package.zip",
+      "sha256": "625fd8e2c1e369432a9f6584edf99f03655dc058b1f25743337311bd20e46840",
+      "files": 36,
+      "checks_passed": 32,
+      "checks_total": 32,
+      "assets": 10,
+      "shorts": 6
+    },
+    "19": {
+      "zip": "Video_19_Final_Production_Package.zip",
+      "sha256": "f7b46ed1712698df760ee443b2639636dc71dbdf0373050f638bcf5e00a88546",
+      "files": 36,
+      "checks_passed": 32,
+      "checks_total": 32,
+      "assets": 10,
+      "shorts": 6
+    },
+    "20": {
+      "zip": "Video_20_Final_Production_Package.zip",
+      "sha256": "5aed769584caf7822b179859379f298efff7985ff669afb3607cacc7610fa438",
+      "files": 36,
+      "checks_passed": 33,
+      "checks_total": 33,
+      "assets": 10,
+      "shorts": 6
+    },
+    "21": {
+      "zip": "Video_21_Final_Production_Package.zip",
+      "sha256": "abee18dabeced7b757910ca91e9c50ec2a9c5ff8ad905f39c707b9428ac3dafd",
+      "files": 36,
+      "checks_passed": 32,
+      "checks_total": 32,
+      "assets": 10,
+      "shorts": 6
+    }
+  },
+  "asset_classification": {
+    "NEW": 20,
+    "REUSE": 31,
+    "COPY UPDATE": 25,
+    "REBUILD": 4
+  },
+  "not_verified": [
+    "No video has been recorded, edited or exported.",
+    "Every runtime figure is arithmetic on the script, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

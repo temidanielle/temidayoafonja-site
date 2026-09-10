@@ -1,0 +1,72 @@
+==============================================================================
+VIDEO 17  |  SENTENCE TRIGGER MAP
+==============================================================================
+
+How to Prove Your Value When AI Does More of the Task
+
+Every graphic with the exact spoken sentence that cues it.
+Each trigger was verified to exist inside a single thought block of
+the locked master, so no cue is built from words that span two
+takes.
+
+------------------------------------------------------------------------------
+
+ 1. v17_01_two_days_forty_minutes
+    TRIGGER: The report used to take you two days.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 2. v17_02_what_did_you_actually_do
+    TRIGGER: Until someone asks, "So what did you actually do?"
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 3. v17_03_record_moved
+    TRIGGER: The record used to be attached to the artifact. It now has to be attached to the decisions around the artifact.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 4. v17_04_four_lines
+    TRIGGER: For one AI-assisted piece of work, keep four lines.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 5. v17_05_line_two
+    TRIGGER: The second line is often the one people forget fastest.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 6. v17_06_speed_pressure
+    TRIGGER: The checking time becomes easier to squeeze because it is harder to see.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 7. v17_07_constructed_example
+    TRIGGER: Here is a constructed illustration, not a captured model test.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 8. v17_08_workflow_or_contribution
+    TRIGGER: The workflow is not the whole contribution.
+    MODE:    FULL SCREEN
+    AFTER:   Move to the CTA card, then Watch Next.
+
+ 9. v17_09_cta
+    TRIGGER: Keep the Proof is linked below if you want the broader evidence system.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+10. v17_10_watch_next
+    TRIGGER: The workflow is not the whole contribution.
+    MODE:    FULL SCREEN
+    AFTER:   NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+BEATS THAT ARE DELIBERATELY NOT GRAPHICS
+
+  The real personal account in the opening, where the master has
+  one, stays camera-led.
+  Any moment where the master's honesty depends on the viewer
+  watching Temidayo say it.
+  Anything a graphic would only decorate.

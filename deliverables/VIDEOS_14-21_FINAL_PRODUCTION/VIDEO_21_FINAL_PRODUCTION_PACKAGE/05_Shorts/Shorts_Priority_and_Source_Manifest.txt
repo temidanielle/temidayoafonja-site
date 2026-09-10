@@ -1,0 +1,52 @@
+==============================================================================
+VIDEO 21  |  SHORTS PRIORITY AND SOURCE MANIFEST
+==============================================================================
+
+What You Must Relearn When You Change Industries
+
+Six Shorts. Four Priority A, two Priority B.
+Timings are arithmetic at 165 words per minute. Not timed reads.
+
+------------------------------------------------------------------------------
+
+PRIORITY A  v21_a1_the_room_is_different
+    TITLE:  You can still do the work
+    WORDS:  80   ABOUT 29 SECONDS
+    FIRST:  You made the industry change.
+    FINAL:  Make the inventory for one destination, not the whole industry.
+    SOURCE: V21 hook.
+
+PRIORITY A  v21_a2_licensing_is_not_a_mindset
+    TITLE:  A licensing requirement is not a mindset issue
+    WORDS:  88   ABOUT 32 SECONDS
+    FIRST:  If a role requires a license, a registration, or a qualification you do not hold, adjacent experience does not erase that requirement.
+    FINAL:  Check the binding requirements before anything else.
+    SOURCE: V21 regulation and credentials.
+
+PRIORITY A  v21_a3_five_layers
+    TITLE:  Five layers to relearn
+    WORDS:  75   ABOUT 27 SECONDS
+    FIRST:  When you change industries, sort the relearning into five layers.
+    FINAL:  Reorder your list by what blocks you first.
+    SOURCE: V21 the five-layer inventory.
+
+PRIORITY A  v21_a4_easiest_layer_trap
+    TITLE:  Do not prepare for the easiest layer
+    WORDS:  76   ABOUT 28 SECONDS
+    FIRST:  Systems and tooling are often the most visible gaps, because they have names.
+    FINAL:  Give the harder layers real preparation time.
+    SOURCE: V21 systems and tooling.
+
+PRIORITY B  v21_b1_has_anyone_tried_this
+    TITLE:  Has anyone tried this before?
+    WORDS:  76   ABOUT 28 SECONDS
+    FIRST:  There is knowledge in a new organization you cannot read your way into.
+    FINAL:  Ask it before you propose anything.
+    SOURCE: V21 relationships and internal history.
+
+PRIORITY B  v21_b2_read_or_practice
+    TITLE:  Some of it you read. Some of it you practice.
+    WORDS:  77   ABOUT 28 SECONDS
+    FIRST:  Some parts of a new industry can be read. Requirements, documentation, domain facts, formal processes.
+    FINAL:  Start the readable items this week.
+    SOURCE: V21 read it or practice it.

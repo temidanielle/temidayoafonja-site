@@ -1,0 +1,156 @@
+{
+  "video": 21,
+  "title": "What You Must Relearn When You Change Industries",
+  "generated": "Thursday, September 10, 2026 | 2:31 PM CT (America/Chicago, UTC-05:00)",
+  "spoken_source_of_truth": {
+    "file": "Video_21_FINAL_Rebuilt_Recording_Master.docx",
+    "sha256": "57afb71683db3e8988a851d991d904a283d77e5317b4ee63dc291a92fc48a75d",
+    "note": "Copied unchanged into 01_Recording_Master. Never written to. This file overrides every earlier script."
+  },
+  "superseded": {
+    "package": "Videos_14-21_SCRIPT_DEVELOPMENT_REVIEW.zip",
+    "sha256": "80d9d54cf5049f77496c4546b624241a744a6cdeee27a6df7555866f0c64ea47",
+    "status": "SUPERSEDED. Development history only. Its scripts are not current speech and are not preserved as alternates."
+  },
+  "secondary_context": [
+    {
+      "file": "Videos_1421_Roadmap_Addendum.docx",
+      "sha256": "3f68bd6cf1c463551fe305b6c6d3ade6e6b030b5e58f5aa4b8f3df731f3a60ea"
+    },
+    {
+      "file": "Videos_1421_Development_Briefs.docx",
+      "sha256": "16e574b06772648a3cd4b197a37e75ff9061710174f55d8a5f09e61d2f17f736"
+    }
+  ],
+  "packaging": {
+    "thumbnail": "NOT EVERYTHING TRAVELS",
+    "framework": "Domain. Requirements. Systems. Relationships. Decisions.",
+    "primary_cta": "Build a five-layer relearning inventory for one destination.",
+    "resource": "Field Kit",
+    "watch_next": "V9: How to Change Industries Without Starting Over"
+  },
+  "script": {
+    "sections": 11,
+    "thought_blocks": 39,
+    "spoken_words": 624,
+    "speech_only_estimate": "4:18 to 4:48 at 130 to 145 words per minute",
+    "estimate_note": "Arithmetic on the script. Excludes pauses and visual holds. Not a timed read and not a runtime."
+  },
+  "assets": [
+    {
+      "file": "v21_01_the_room_is_different.png",
+      "status": "COPY UPDATE",
+      "why": "Concept retained from the superseded draft with the master's wording.",
+      "mode": "SHORT CALLOUT OVER CAMERA for the headline, then FULL SCREEN for the support line.",
+      "trigger": "And the surprising part is that you can still do the work."
+    },
+    {
+      "file": "v21_02_what_does_travel.png",
+      "status": "COPY UPDATE",
+      "why": "The superseded draft named what travels; the master's list replaces the copy.",
+      "mode": "FULL SCREEN",
+      "trigger": "Before we talk about relearning, name what came with you."
+    },
+    {
+      "file": "v21_03_five_layers.png",
+      "status": "REUSE",
+      "why": "The five layers were the superseded draft's framework and the master keeps them. The superseded package held written concepts, never rendered assets, so no frame here is byte-identical reuse.",
+      "mode": "FULL SCREEN",
+      "trigger": "I would sort the relearning into five layers: domain knowledge, regulation and credentials, systems and tooling, relationships and internal history, and how decisions get made here."
+    },
+    {
+      "file": "v21_04_licensing_is_not_a_mindset.png",
+      "status": "REUSE",
+      "why": "The line survives verbatim from the superseded draft into the master. The superseded package held written concepts, never rendered assets, so no frame here is byte-identical reuse.",
+      "mode": "FULL SCREEN",
+      "trigger": "A licensing requirement is not a mindset issue."
+    },
+    {
+      "file": "v21_05_easiest_layer_trap.png",
+      "status": "REUSE",
+      "why": "The observation was in the superseded draft and the master keeps it. The superseded package held written concepts, never rendered assets, so no frame here is byte-identical reuse.",
+      "mode": "FULL SCREEN",
+      "trigger": "Do not spend all your preparation time on the easiest-to-name layer while the harder context remains untouched."
+    },
+    {
+      "file": "v21_06_has_anyone_tried_this.png",
+      "status": "REUSE",
+      "why": "The question survives from the superseded draft into the master. The superseded package held written concepts, never rendered assets, so no frame here is byte-identical reuse.",
+      "mode": "FULL SCREEN",
+      "trigger": "A useful early question is: has anyone tried this before, and what happened?"
+    },
+    {
+      "file": "v21_07_read_it_or_practice_it.png",
+      "status": "REUSE",
+      "why": "The read-or-practice split was in the superseded draft and the master keeps it. The superseded package held written concepts, never rendered assets, so no frame here is byte-identical reuse.",
+      "mode": "FULL SCREEN",
+      "trigger": "Some parts can be read. Requirements, documentation, domain facts, formal processes."
+    },
+    {
+      "file": "v21_08_order_by_what_blocks_you.png",
+      "status": "REUSE",
+      "why": "The ordering rule was the superseded draft's application step and the master keeps it. The superseded package held written concepts, never rendered assets, so no frame here is byte-identical reuse.",
+      "mode": "FULL SCREEN",
+      "trigger": "Then reorder the list by one question: what stops me contributing usefully first?"
+    },
+    {
+      "file": "v21_09_cta.png",
+      "status": "REUSE",
+      "why": "Route matches the master. The superseded package held written concepts, never rendered assets, so no frame here is byte-identical reuse.",
+      "mode": "FULL SCREEN",
+      "trigger": "The Field Kit is linked below if you want a structured way to separate what travels from what still needs rebuilding."
+    },
+    {
+      "file": "v21_10_watch_next.png",
+      "status": "COPY UPDATE",
+      "why": "The superseded draft proposed V9 with the older roadmap title. The final master's string matches the title the built V9 package actually uses, so the card takes the master's string.",
+      "mode": "FULL SCREEN",
+      "trigger": "Being experienced in a new field can be true at the same time as having real things left to learn."
+    }
+  ],
+  "shorts": [
+    {
+      "slug": "v21_a1_the_room_is_different",
+      "priority": "A",
+      "title": "You can still do the work",
+      "source": "V21 hook."
+    },
+    {
+      "slug": "v21_a2_licensing_is_not_a_mindset",
+      "priority": "A",
+      "title": "A licensing requirement is not a mindset issue",
+      "source": "V21 regulation and credentials."
+    },
+    {
+      "slug": "v21_a3_five_layers",
+      "priority": "A",
+      "title": "Five layers to relearn",
+      "source": "V21 the five-layer inventory."
+    },
+    {
+      "slug": "v21_a4_easiest_layer_trap",
+      "priority": "A",
+      "title": "Do not prepare for the easiest layer",
+      "source": "V21 systems and tooling."
+    },
+    {
+      "slug": "v21_b1_has_anyone_tried_this",
+      "priority": "B",
+      "title": "Has anyone tried this before?",
+      "source": "V21 relationships and internal history."
+    },
+    {
+      "slug": "v21_b2_read_or_practice",
+      "priority": "B",
+      "title": "Some of it you read. Some of it you practice.",
+      "source": "V21 read it or practice it."
+    }
+  ],
+  "not_verified": [
+    "Nothing in this package has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

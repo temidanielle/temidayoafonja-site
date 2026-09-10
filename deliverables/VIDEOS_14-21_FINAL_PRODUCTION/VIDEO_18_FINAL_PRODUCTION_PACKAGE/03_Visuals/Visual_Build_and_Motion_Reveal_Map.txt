@@ -1,0 +1,163 @@
+==============================================================================
+VIDEO 18  |  VISUAL BUILD MAP AND MOTION REVEAL MAP
+==============================================================================
+
+Should You Stay an Individual Contributor or Become a Manager?
+
+Support and reference assets for the Riverside editor. This is not
+a deck that covers the script paragraph by paragraph, and it is not
+a mandatory slideshow.
+
+------------------------------------------------------------------------------
+
+ 1. v18_01_congratulated.png
+    STATUS:    COPY UPDATE
+    WHY:       The concept existed in the superseded draft. The master's wording replaces the copy.
+    PURPOSE:   The opening observation, recognizable immediately.
+    TRIGGER:   And before they explain what the job actually is, they congratulate you.
+    MODE:      FULL SCREEN
+    REVEAL:    Headline. Hold. Then the support line.
+    EMPHASIS:  The headline.
+    HOLD:      3 seconds on the headline, 3 on the support.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one soft tick as the support line lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 2. v18_02_two_different_jobs.png
+    STATUS:    NEW
+    WHY:       The final master's thumbnail is TWO DIFFERENT JOBS, so the frame carries that argument directly.
+    PURPOSE:   The reframe. The horizontal arrangement is the argument.
+    TRIGGER:   They are different jobs, with different days, different skills, and different hard parts.
+    MODE:      FULL SCREEN
+    REVEAL:    Both columns together, then the foot line.
+    EMPHASIS:  Neither column is above the other. Do not stack them.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the foot line lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 3. v18_03_five_variables.png
+    STATUS:    REUSE
+    WHY:       The five variables were the superseded draft's framework and the final master keeps them. The superseded package held written concepts, never rendered assets, so no frame here is byte-identical reuse.
+    PURPOSE:   Break the bundle. The teaching of the middle of the video.
+    TRIGGER:   Five things often get bundled together: scope, responsibility, compensation, authority, and people management.
+    MODE:      FULL SCREEN
+    REVEAL:    All five appear, then each shifts independently as the foot line is spoken. Do not animate them as one bar.
+    EMPHASIS:  The independence, not the list.
+    HOLD:      3 seconds on the list, 3 on the foot line.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the foot line lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 4. v18_04_four_questions.png
+    STATUS:    REUSE
+    WHY:       The four questions survive from the superseded draft with the master's wording. The superseded package held written concepts, never rendered assets, so no frame here is byte-identical reuse.
+    PURPOSE:   The frame viewers photograph. All four together, large.
+    TRIGGER:   But before you answer the offer, ask four questions: what does the job consume, does the other path really exist, what authority comes with it, and can you come back?
+    MODE:      FULL SCREEN
+    REVEAL:    All four together on the close, since the master speaks them as one list.
+    EMPHASIS:  Equal weight.
+    HOLD:      At least 5 seconds. This is the take-away frame.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one clean transition sound on entry.
+    AFTER:     Return to camera on the next spoken line.
+
+ 5. v18_05_what_the_job_consumes.png
+    STATUS:    COPY UPDATE
+    WHY:       Concept retained from the superseded draft with the master's list.
+    PURPOSE:   Make the job concrete rather than abstract.
+    TRIGGER:   One-to-ones, hiring, performance conversations, planning, reporting upward, absorbing pressure, deciding on work you will not personally do.
+    MODE:      FULL SCREEN
+    REVEAL:    All four together, then the foot line, which is the instruction.
+    EMPHASIS:  The foot line, because it is what the viewer does.
+    HOLD:      4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate.
+    AFTER:     Return to camera on the next spoken line.
+
+ 6. v18_06_ask_for_names.png
+    STATUS:    REUSE
+    WHY:       The instruction was in the superseded draft and survives verbatim in the master. The superseded package held written concepts, never rendered assets, so no frame here is byte-identical reuse.
+    PURPOSE:   The single most practical instruction in the video.
+    TRIGGER:   Ask for names.
+    MODE:      FULL SCREEN
+    REVEAL:    The instruction alone. Hold. Then the support line.
+    EMPHASIS:  Ask for names, at maximum size.
+    HOLD:      2 seconds alone, then 4 with the support.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Strong candidate: one soft tick as the two words land.
+    AFTER:     Return to camera on the next spoken line.
+
+ 7. v18_07_responsibility_vs_authority.png
+    STATUS:    REUSE
+    WHY:       The comparison survives from the superseded draft with the master's wording. The superseded package held written concepts, never rendered assets, so no frame here is byte-identical reuse.
+    PURPOSE:   The trap, made checkable.
+    TRIGGER:   If the responsibility list is much longer than the authority list, name that before you accept.
+    MODE:      FULL SCREEN
+    REVEAL:    Left. Then right. Then the foot line.
+    EMPHASIS:  The foot line.
+    HOLD:      3 seconds per side, 3 on the foot line.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the foot line lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 8. v18_08_neither_is_brave.png
+    STATUS:    REUSE
+    WHY:       The two-sidedness was the superseded draft's requirement and the master states it in one sentence. The superseded package held written concepts, never rendered assets, so no frame here is byte-identical reuse.
+    PURPOSE:   Hold the video two-sided at the point where it would be easiest to take a side.
+    TRIGGER:   Pick the path whose hard parts you would rather have, inside the organization you actually work in.
+    MODE:      FULL SCREEN
+    REVEAL:    Headline, then the support line.
+    EMPHASIS:  The headline.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate.
+    AFTER:     Return to camera on the next spoken line.
+
+ 9. v18_09_cta.png
+    STATUS:    REUSE
+    WHY:       Route matches the master. The superseded package held written concepts, never rendered assets, so no frame here is byte-identical reuse.
+    PURPOSE:   The single resource route named by the master.
+    TRIGGER:   The Career Decision Evidence Check is linked below if you want a structured way to think through the choice.
+    MODE:      FULL SCREEN
+    REVEAL:    Label, headline, resource name, URL.
+    EMPHASIS:  The URL.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one clean transition sound on entry.
+    AFTER:     Return to camera on the next spoken line.
+
+10. v18_10_watch_next.png
+    STATUS:    REUSE
+    WHY:       The superseded draft proposed V16 and the final master confirms it. The superseded package held written concepts, never rendered assets, so no frame here is byte-identical reuse.
+    PURPOSE:   The final visual.
+    TRIGGER:   Do not choose the title. Choose the work.
+    MODE:      FULL SCREEN
+    REVEAL:    Label, rule, title, number.
+    EMPHASIS:  The title.
+    HOLD:      Hold to the end.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one restrained transition sound, then music fade.
+    AFTER:     NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+FULL SCREEN
+  Frameworks, comparisons, multi-point concepts, substantive demonstrations, the resource card and Watch Next are TRUE FULL SCREEN. No moving Temidayo behind or around a major visual. Substantive B-roll fills the entire frame. Short single-idea callouts may sit over camera. After a full-screen teaching visual, return to camera only where the scene map calls for it. THIS NEVER APPLIES TO WATCH NEXT: Watch Next is the final visual and there is no return to camera afterward.
+
+CAMERA
+  About 3 to 5 deliberate camera-emphasis beats across the whole video. This is one combined budget: gentle push-ins on tension, insight or a reframe, with occasional pull-backs or a return to base framing to reset the rhythm. It is not 3 to 5 push-ins plus 3 to 5 pull-backs. No aggressive zooms, no pulsing, no constant reframing, no unnecessary digital movement. Preserve headroom and source quality.
+
+SOUND BUDGET
+  About 4 to 7 restrained audio accents for the ENTIRE video, including the one visual Subscribe cue. The per-frame sound candidates in the visual map are OPTIONAL and are not cumulative. Choose only the moments with the highest visual or intellectual payoff. Keep every effect clearly quieter than the voice. Pair the sound with a small visual action so both land together. If no sound improves the moment, leave it silent.
+
+B-ROLL
+  About 2 to 4 meaningful full-screen B-roll moments where useful. This is not a quota. No generic handshakes, fake boardrooms, smiling coworkers, meaningless typing, AI-looking people, or invented employer documents presented as real. Where an example is constructed, it carries its label.
+
+CAPTIONS
+  NO BURNED-IN OR OPEN CAPTIONS on the long-form video. Viewers use YouTube CC. Deliver a clean export with no persistent subtitles, a complete final transcript with names, frameworks, URLs and industry terms proofread, and an SRT generated against the FINAL edited timeline with synchronization checked after every jump cut and removal. Do not delete transcript words because the camera is hidden behind a graphic. Shorts and Reels may use designed captions.
+
+SUBSCRIBE
+  One brief visual Subscribe cue after meaningful value has already been delivered. Visual only. There is no spoken Subscribe request in the master and none is added. About 1 to 3 seconds including entrance and exit. Do not interrupt a useful pause or cover teaching content.

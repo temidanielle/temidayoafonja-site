@@ -1,0 +1,163 @@
+==============================================================================
+VIDEO 15  |  VISUAL BUILD MAP AND MOTION REVEAL MAP
+==============================================================================
+
+The Career Gaps You Don't See Until the Work Gets Harder
+
+Support and reference assets for the Riverside editor. This is not
+a deck that covers the script paragraph by paragraph, and it is not
+a mandatory slideshow.
+
+------------------------------------------------------------------------------
+
+ 1. v15_01_the_question_changes.png
+    STATUS:    REBUILD
+    WHY:       The concept existed in the superseded draft as a quote swap. The final master's wording differs, so the frame is built to the master's exact sentence.
+    PURPOSE:   The moment the whole video sits on. The first question is answerable. The second is a different job.
+    TRIGGER:   Then someone turns to you and asks, "What do you recommend we do?"
+    MODE:      FULL SCREEN
+    REVEAL:    First question. Hold. Struck through. Second question appears beneath it.
+    EMPHASIS:  The second question, at full weight, after the strike lands.
+    HOLD:      2 seconds on the first, then at least 3 on the second.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Strong candidate: one soft tick as the strike lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 2. v15_02_three_gaps.png
+    STATUS:    COPY UPDATE
+    WHY:       The three-gap concept survives from the superseded draft; the labels and lines are replaced with the final master's wording.
+    PURPOSE:   The framework, named early as the master's early payoff.
+    TRIGGER:   Learn. Practice. Prove. Those are different problems, and they need different next moves.
+    MODE:      FULL SCREEN
+    REVEAL:    One column at a time in spoken order. All three stay.
+    EMPHASIS:  Equal weight. None is the good outcome.
+    HOLD:      About 2 seconds per column, then 3 on the complete set.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick on the third column as the set completes.
+    AFTER:     Return to camera on the next spoken line.
+
+ 3. v15_03_learn_test.png
+    STATUS:    NEW
+    WHY:       The final master states each test as a distinct question. The superseded draft folded them into prose.
+    PURPOSE:   Give the viewer the first test as a sentence they can apply.
+    TRIGGER:   Start with the simplest test: if someone competent walked you through the method, would that meaningfully close the gap?
+    MODE:      FULL SCREEN
+    REVEAL:    Question, then the reading line.
+    EMPHASIS:  The question.
+    HOLD:      At least 3 seconds. It is meant to be answered on screen.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     No candidate. Leave it silent.
+    AFTER:     Return to camera on the next spoken line.
+
+ 4. v15_04_course_limit.png
+    STATUS:    NEW
+    WHY:       Named explicitly in the final master and required by the brief's boundary.
+    PURPOSE:   The most misread part of the topic. Stop the viewer buying training for a problem training does not solve.
+    TRIGGER:   A course can teach a method.
+    MODE:      FULL SCREEN
+    REVEAL:    Left side. Hold. Right side. Then the foot line.
+    EMPHASIS:  The right side is longer on purpose and carries the point.
+    HOLD:      At least 3 seconds on the right side.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate.
+    AFTER:     Return to camera on the next spoken line.
+
+ 5. v15_05_practice_question.png
+    STATUS:    NEW
+    WHY:       The final master separates the three tests into distinct questions.
+    PURPOSE:   The distinction between being near a decision and carrying one.
+    TRIGGER:   Now ask a harder question: have I ever been the person who actually had to decide?
+    MODE:      FULL SCREEN
+    REVEAL:    Question, then the qualifying line.
+    EMPHASIS:  The question.
+    HOLD:      At least 3 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     No candidate. Leave it silent.
+    AFTER:     Return to camera on the next spoken line.
+
+ 6. v15_06_knowing_isnt_owning.png
+    STATUS:    NEW
+    WHY:       The final master's thumbnail wording changed to KNOWING ISN'T OWNING, so the video needs the spoken line on screen.
+    PURPOSE:   The line the thumbnail is built from, at full size.
+    TRIGGER:   You can understand a decision very well and still never have carried one.
+    MODE:      FULL SCREEN
+    REVEAL:    Single state. No build.
+    EMPHASIS:  The whole frame is the emphasis.
+    HOLD:      At least 3 seconds in silence.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Strong candidate: one clean transition sound as it enters.
+    AFTER:     Return to camera on the next spoken line.
+
+ 7. v15_07_three_reads.png
+    STATUS:    COPY UPDATE
+    WHY:       The superseded draft had a similar example. The final master's version is shorter and is what the frame now carries.
+    PURPOSE:   Show the three gaps producing three readings of one moment.
+    TRIGGER:   Same discomfort. Three completely different next moves.
+    MODE:      FULL SCREEN
+    REVEAL:    One reading at a time, matching the spoken order.
+    EMPHASIS:  The three labels tie back to the framework frame.
+    HOLD:      About 2 seconds per reading, 3 on the complete set.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate.
+    AFTER:     Return to camera on the next spoken line.
+
+ 8. v15_08_one_gap_one_step.png
+    STATUS:    COPY UPDATE
+    WHY:       The pairing concept survives; the questions are the master's.
+    PURPOSE:   The take-away pairing. Each question matched to its own step.
+    TRIGGER:   Ask three questions.
+    MODE:      FULL SCREEN
+    REVEAL:    One pair at a time.
+    EMPHASIS:  The pairing, not the list.
+    HOLD:      About 2 seconds per pair, 3 on the complete frame.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the third pair completes.
+    AFTER:     Return to camera on the next spoken line.
+
+ 9. v15_09_cta.png
+    STATUS:    REUSE
+    WHY:       The route matches the master. The superseded package held written concepts, never rendered assets, so no frame here is byte-identical reuse.
+    PURPOSE:   The single resource route named by the master.
+    TRIGGER:   If you want a structured way to decide what the next move actually requires, the Career Decision Evidence Check is linked below.
+    MODE:      FULL SCREEN
+    REVEAL:    Label, headline, resource name, then the URL.
+    EMPHASIS:  The URL.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one clean transition sound on entry.
+    AFTER:     Return to camera on the next spoken line.
+
+10. v15_10_watch_next.png
+    STATUS:    COPY UPDATE
+    WHY:       Destination taken from the final master.
+    PURPOSE:   The final visual, entering on the last spoken line.
+    TRIGGER:   Knowing the work and owning the decision are not the same thing.
+    MODE:      FULL SCREEN
+    REVEAL:    Label, rule, title, number.
+    EMPHASIS:  The title.
+    HOLD:      Hold to the end.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one restrained transition sound, then music fade.
+    AFTER:     NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+FULL SCREEN
+  Frameworks, comparisons, multi-point concepts, substantive demonstrations, the resource card and Watch Next are TRUE FULL SCREEN. No moving Temidayo behind or around a major visual. Substantive B-roll fills the entire frame. Short single-idea callouts may sit over camera. After a full-screen teaching visual, return to camera only where the scene map calls for it. THIS NEVER APPLIES TO WATCH NEXT: Watch Next is the final visual and there is no return to camera afterward.
+
+CAMERA
+  About 3 to 5 deliberate camera-emphasis beats across the whole video. This is one combined budget: gentle push-ins on tension, insight or a reframe, with occasional pull-backs or a return to base framing to reset the rhythm. It is not 3 to 5 push-ins plus 3 to 5 pull-backs. No aggressive zooms, no pulsing, no constant reframing, no unnecessary digital movement. Preserve headroom and source quality.
+
+SOUND BUDGET
+  About 4 to 7 restrained audio accents for the ENTIRE video, including the one visual Subscribe cue. The per-frame sound candidates in the visual map are OPTIONAL and are not cumulative. Choose only the moments with the highest visual or intellectual payoff. Keep every effect clearly quieter than the voice. Pair the sound with a small visual action so both land together. If no sound improves the moment, leave it silent.
+
+B-ROLL
+  About 2 to 4 meaningful full-screen B-roll moments where useful. This is not a quota. No generic handshakes, fake boardrooms, smiling coworkers, meaningless typing, AI-looking people, or invented employer documents presented as real. Where an example is constructed, it carries its label.
+
+CAPTIONS
+  NO BURNED-IN OR OPEN CAPTIONS on the long-form video. Viewers use YouTube CC. Deliver a clean export with no persistent subtitles, a complete final transcript with names, frameworks, URLs and industry terms proofread, and an SRT generated against the FINAL edited timeline with synchronization checked after every jump cut and removal. Do not delete transcript words because the camera is hidden behind a graphic. Shorts and Reels may use designed captions.
+
+SUBSCRIBE
+  One brief visual Subscribe cue after meaningful value has already been delivered. Visual only. There is no spoken Subscribe request in the master and none is added. About 1 to 3 seconds including entrance and exit. Do not interrupt a useful pause or cover teaching content.

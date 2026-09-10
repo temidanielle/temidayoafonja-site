@@ -1,0 +1,52 @@
+==============================================================================
+VIDEO 14  |  SHORTS PRIORITY AND SOURCE MANIFEST
+==============================================================================
+
+Which Parts of Your Experience Actually Transfer to Another Industry?
+
+Six Shorts. Four Priority A, two Priority B.
+Timings are arithmetic at 165 words per minute. Not timed reads.
+
+------------------------------------------------------------------------------
+
+PRIORITY A  v14_a1_same_words
+    TITLE:  Same words, different job
+    WORDS:  83   ABOUT 30 SECONDS
+    FIRST:  Three job descriptions. A hospital. A bank. A technology company.
+    FINAL:  Ask those two questions about one role you are considering.
+    SOURCE: V14 hook and the two-question test.
+
+PRIORITY A  v14_a2_what_travels
+    TITLE:  What actually travels
+    WORDS:  74   ABOUT 27 SECONDS
+    FIRST:  Across 28 job descriptions in healthcare, financial services and technology, five things kept showing up.
+    FINAL:  Name which of the five you can actually evidence.
+    SOURCE: V14 what travels.
+
+PRIORITY A  v14_a3_two_questions
+    TITLE:  The two-question test
+    WORDS:  74   ABOUT 27 SECONDS
+    FIRST:  Here is a test that works better than a transferable-skills list.
+    FINAL:  Run it on one requirement today.
+    SOURCE: V14 the test.
+
+PRIORITY A  v14_a4_employers_disagree
+    TITLE:  Employers do not agree with each other
+    WORDS:  95   ABOUT 35 SECONDS
+    FIRST:  One of the most useful things in the research was that employers disagreed.
+    FINAL:  Read the posting for how much it trusts adjacent experience.
+    SOURCE: V14 employer disagreement.
+
+PRIORITY B  v14_b1_four_buckets
+    TITLE:  Four buckets, not one list
+    WORDS:  83   ABOUT 30 SECONDS
+    FIRST:  Instead of a transferable-skills list, sort one destination role into four buckets.
+    FINAL:  Sort one role you are considering.
+    SOURCE: V14 application.
+
+PRIORITY B  v14_b2_what_it_does_not_prove
+    TITLE:  What job descriptions cannot tell you
+    WORDS:  90   ABOUT 33 SECONDS
+    FIRST:  I read 28 job descriptions for this, and I want to be careful about what that can show.
+    FINAL:  Treat a posting as a clue, not a verdict.
+    SOURCE: V14 what not to claim.

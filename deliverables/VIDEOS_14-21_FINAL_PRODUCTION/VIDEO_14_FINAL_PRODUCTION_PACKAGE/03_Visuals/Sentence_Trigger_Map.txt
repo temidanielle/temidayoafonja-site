@@ -1,0 +1,72 @@
+==============================================================================
+VIDEO 14  |  SENTENCE TRIGGER MAP
+==============================================================================
+
+Which Parts of Your Experience Actually Transfer to Another Industry?
+
+Every graphic with the exact spoken sentence that cues it.
+Each trigger was verified to exist inside a single thought block of
+the locked master, so no cue is built from words that span two
+takes.
+
+------------------------------------------------------------------------------
+
+ 1. v14_01_same_words_different_work
+    TRIGGER: All three appeared to ask for the same thing:
+    MODE:    FULL SCREEN
+    AFTER:   Stay on the frame through the consequence list, then return to camera.
+
+ 2. v14_02_research_base
+    TRIGGER: So I went through 28 senior project and program delivery job descriptions across those three industries to answer a question experienced professionals often get wrong in both directions:
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 3. v14_03_two_question_test
+    TRIGGER: For any requirement that looked similar across industries, I asked two questions:
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 4. v14_04_what_travels
+    TRIGGER: So what did travel across the sample?
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 5. v14_05_same_word_different_decision
+    TRIGGER: “Governance” sounded portable until one posting meant an auditable control environment and another meant an executive decision cadence.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 6. v14_06_four_bucket_audit
+    TRIGGER: Then sort the answer into four buckets.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 7. v14_07_employers_disagree
+    TRIGGER: One of the most useful findings was that employers themselves disagreed.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 8. v14_08_research_boundary
+    TRIGGER: This research does not prove that two roles are interchangeable.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 9. v14_09_cta
+    TRIGGER: If you do one thing after this video, do not start with the title.
+    MODE:    FULL SCREEN
+    AFTER:   Stay on the card through the close, then move to Watch Next.
+
+10. v14_10_watch_next
+    TRIGGER: Watch “The Career Gaps You Don’t See Until the Work Gets Harder” next.
+    MODE:    FULL SCREEN
+    AFTER:   NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+BEATS THAT ARE DELIBERATELY NOT GRAPHICS
+
+  The real personal account in the opening, where the master has
+  one, stays camera-led.
+  Any moment where the master's honesty depends on the viewer
+  watching Temidayo say it.
+  Anything a graphic would only decorate.

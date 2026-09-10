@@ -1,0 +1,178 @@
+{
+  "video": 14,
+  "title": "Which Parts of Your Experience Actually Transfer to Another Industry?",
+  "generated": "Thursday, September 10, 2026 | 2:31 PM CT (America/Chicago, UTC-05:00)",
+  "spoken_source_of_truth": {
+    "file": "Video_14_Which_Parts_of_Your_Experience_Actually_Transfer_FINAL_Recording_Master.docx",
+    "sha256": "4a36cc83b8bcc8279011974952b098aafa559e0c07b2dce1aab7c92b5c0e28ca",
+    "note": "Copied unchanged into 01_Recording_Master. Never written to. This file overrides every earlier script."
+  },
+  "superseded": {
+    "package": "Videos_14-21_SCRIPT_DEVELOPMENT_REVIEW.zip",
+    "sha256": "80d9d54cf5049f77496c4546b624241a744a6cdeee27a6df7555866f0c64ea47",
+    "status": "SUPERSEDED. Development history only. Its scripts are not current speech and are not preserved as alternates."
+  },
+  "secondary_context": [
+    {
+      "file": "Videos_1421_Roadmap_Addendum.docx",
+      "sha256": "3f68bd6cf1c463551fe305b6c6d3ade6e6b030b5e58f5aa4b8f3df731f3a60ea"
+    },
+    {
+      "file": "Videos_1421_Development_Briefs.docx",
+      "sha256": "16e574b06772648a3cd4b197a37e75ff9061710174f55d8a5f09e61d2f17f736"
+    }
+  ],
+  "packaging": {
+    "thumbnail": "WHAT REALLY TRANSFERS?",
+    "framework": "TRAVELS | LOOKS SIMILAR | MUST BE LEARNED | MUST BE EXPERIENCED",
+    "primary_cta": "Take one destination role and ask: What would I actually have to decide? What happens if I decide badly?",
+    "resource": null,
+    "watch_next": "Video 15: The Career Gaps You Don’t See Until the Work Gets Harder"
+  },
+  "script": {
+    "sections": 11,
+    "thought_blocks": 29,
+    "spoken_words": 1259,
+    "speech_only_estimate": "8:41 to 9:41 at 130 to 145 words per minute",
+    "estimate_note": "Arithmetic on the script. Excludes pauses and visual holds. Not a timed read and not a runtime."
+  },
+  "assets": [
+    {
+      "file": "v14_01_same_words_different_work.png",
+      "status": "NEW",
+      "why": "The superseded draft had no research and therefore no same-word comparison. The final master's opening argument requires it.",
+      "mode": "FULL SCREEN",
+      "trigger": "All three appeared to ask for the same thing:"
+    },
+    {
+      "file": "v14_02_research_base.png",
+      "status": "NEW",
+      "why": "The research did not exist when the earlier package was built.",
+      "mode": "FULL SCREEN",
+      "trigger": "So I went through 28 senior project and program delivery job descriptions across those three industries to answer a question experienced professionals often get wrong in both directions:"
+    },
+    {
+      "file": "v14_03_two_question_test.png",
+      "status": "REUSE",
+      "why": "The two-question test was the core of the earlier research design and survives into the final master unchanged. The superseded package held written concepts, never rendered assets, so no frame here is byte-identical reuse.",
+      "mode": "FULL SCREEN",
+      "trigger": "For any requirement that looked similar across industries, I asked two questions:"
+    },
+    {
+      "file": "v14_04_what_travels.png",
+      "status": "NEW",
+      "why": "The five capabilities come from the completed research and are named in the final master.",
+      "mode": "FULL SCREEN",
+      "trigger": "So what did travel across the sample?"
+    },
+    {
+      "file": "v14_05_same_word_different_decision.png",
+      "status": "NEW",
+      "why": "Grounded in the research and named in the final master.",
+      "mode": "FULL SCREEN",
+      "trigger": "“Governance” sounded portable until one posting meant an auditable control environment and another meant an executive decision cadence."
+    },
+    {
+      "file": "v14_06_four_bucket_audit.png",
+      "status": "NEW",
+      "why": "The four-bucket audit is the final master's framework and did not exist in the superseded draft.",
+      "mode": "FULL SCREEN",
+      "trigger": "Then sort the answer into four buckets."
+    },
+    {
+      "file": "v14_07_employers_disagree.png",
+      "status": "NEW",
+      "why": "A research finding. Employers are described by type on screen; the named sources stay in the production archive.",
+      "mode": "FULL SCREEN",
+      "trigger": "One of the most useful findings was that employers themselves disagreed."
+    },
+    {
+      "file": "v14_08_research_boundary.png",
+      "status": "NEW",
+      "why": "The final master speaks the boundary and the research requires it to be visible.",
+      "mode": "FULL SCREEN",
+      "trigger": "This research does not prove that two roles are interchangeable."
+    },
+    {
+      "file": "v14_09_cta.png",
+      "status": "COPY UPDATE",
+      "why": "A CTA card existed as a concept in the superseded package with a different action. The final master's action replaces it, and no resource is added because the master names none.",
+      "mode": "FULL SCREEN",
+      "trigger": "If you do one thing after this video, do not start with the title."
+    },
+    {
+      "file": "v14_10_watch_next.png",
+      "status": "COPY UPDATE",
+      "why": "A Watch Next card was planned. The destination is confirmed by the final master and the title string is taken from it.",
+      "mode": "FULL SCREEN",
+      "trigger": "Watch “The Career Gaps You Don’t See Until the Work Gets Harder” next."
+    }
+  ],
+  "shorts": [
+    {
+      "slug": "v14_a1_same_words",
+      "priority": "A",
+      "title": "Same words, different job",
+      "source": "V14 hook and the two-question test."
+    },
+    {
+      "slug": "v14_a2_what_travels",
+      "priority": "A",
+      "title": "What actually travels",
+      "source": "V14 what travels."
+    },
+    {
+      "slug": "v14_a3_two_questions",
+      "priority": "A",
+      "title": "The two-question test",
+      "source": "V14 the test."
+    },
+    {
+      "slug": "v14_a4_employers_disagree",
+      "priority": "A",
+      "title": "Employers do not agree with each other",
+      "source": "V14 employer disagreement."
+    },
+    {
+      "slug": "v14_b1_four_buckets",
+      "priority": "B",
+      "title": "Four buckets, not one list",
+      "source": "V14 application."
+    },
+    {
+      "slug": "v14_b2_what_it_does_not_prove",
+      "priority": "B",
+      "title": "What job descriptions cannot tell you",
+      "source": "V14 what not to claim."
+    }
+  ],
+  "not_verified": [
+    "Nothing in this package has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ],
+  "research": {
+    "file": "what-really-transfers-research.md",
+    "sha256": "a7eac1a71e2245e34e61267be9e19d8c5e3750a66236da40e78f9715ad3e6421",
+    "retained_postings": 28,
+    "by_industry": {
+      "healthcare": 10,
+      "financial_services": 10,
+      "technology": 8
+    },
+    "collection_date": "2026-09-10",
+    "target_was": 30,
+    "claims_verified": 20,
+    "claims_total": 20,
+    "all_supported": true,
+    "limits": [
+      "A convenience sample of 28 postings. Not representative of any industry or of the labor market.",
+      "Cannot show two roles are interchangeable.",
+      "Cannot show that an adjacent-experience candidate would be hired or that a requirement would be waived.",
+      "Every count is a count within these 28 postings.",
+      "Several postings were mirrored, older or closed. Not every source is a currently live employer posting."
+    ]
+  }
+}

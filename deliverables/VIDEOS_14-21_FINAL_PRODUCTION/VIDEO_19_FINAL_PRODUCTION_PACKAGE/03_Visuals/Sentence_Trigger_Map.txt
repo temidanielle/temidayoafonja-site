@@ -1,0 +1,72 @@
+==============================================================================
+VIDEO 19  |  SENTENCE TRIGGER MAP
+==============================================================================
+
+Is Consulting a Real Next Step for Your Career?
+
+Every graphic with the exact spoken sentence that cues it.
+Each trigger was verified to exist inside a single thought block of
+the locked master, so no cue is built from words that span two
+takes.
+
+------------------------------------------------------------------------------
+
+ 1. v19_01_you_should_consult
+    TRIGGER: It usually happens right after you solve something difficult, which is why it feels flattering and why almost nobody examines it.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 2. v19_02_experience_is_not_an_offer
+    TRIGGER: Your experience tells you what you know. It does not automatically tell you what somebody will buy.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 3. v19_03_four_things
+    TRIGGER: Separate four things.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 4. v19_04_who_signs_it
+    TRIGGER: Not who suffers from it. Who actually pays somebody to solve it now?
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 5. v19_05_expertise_vs_deliverable
+    TRIGGER: “I advise on risk” is expertise. It is not yet an offer.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 6. v19_06_what_is_not_included
+    TRIGGER: Scope is part of the offer, not a legal footnote you discover after the work expands.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 7. v19_07_one_page
+    TRIGGER: Then write one page: the problem, the buyer, the deliverable, the scope, and the conditions that would need to be true before this is viable.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 8. v19_08_raw_material
+    TRIGGER: Experience can be the raw material. It is not the offer.
+    MODE:    FULL SCREEN
+    AFTER:   Move to the CTA card, then Watch Next.
+
+ 9. v19_09_cta
+    TRIGGER: The Career Decision Evidence Check is linked below if you want a structured way to test the decision.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+10. v19_10_watch_next
+    TRIGGER: Experience can be the raw material. It is not the offer.
+    MODE:    FULL SCREEN
+    AFTER:   NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+BEATS THAT ARE DELIBERATELY NOT GRAPHICS
+
+  The real personal account in the opening, where the master has
+  one, stays camera-led.
+  Any moment where the master's honesty depends on the viewer
+  watching Temidayo say it.
+  Anything a graphic would only decorate.

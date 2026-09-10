@@ -1,0 +1,156 @@
+{
+  "video": 16,
+  "title": "What to Do When Your Work Is Valued but You Are Overlooked",
+  "generated": "Thursday, September 10, 2026 | 2:31 PM CT (America/Chicago, UTC-05:00)",
+  "spoken_source_of_truth": {
+    "file": "Video_16_FINAL_Rebuilt_Recording_Master.docx",
+    "sha256": "8ba435a6aef6a3120f49a342dd5cf7e1686621f1f51f4891c0983e4110cfac4f",
+    "note": "Copied unchanged into 01_Recording_Master. Never written to. This file overrides every earlier script."
+  },
+  "superseded": {
+    "package": "Videos_14-21_SCRIPT_DEVELOPMENT_REVIEW.zip",
+    "sha256": "80d9d54cf5049f77496c4546b624241a744a6cdeee27a6df7555866f0c64ea47",
+    "status": "SUPERSEDED. Development history only. Its scripts are not current speech and are not preserved as alternates."
+  },
+  "secondary_context": [
+    {
+      "file": "Videos_1421_Roadmap_Addendum.docx",
+      "sha256": "3f68bd6cf1c463551fe305b6c6d3ade6e6b030b5e58f5aa4b8f3df731f3a60ea"
+    },
+    {
+      "file": "Videos_1421_Development_Briefs.docx",
+      "sha256": "16e574b06772648a3cd4b197a37e75ff9061710174f55d8a5f09e61d2f17f736"
+    }
+  ],
+  "packaging": {
+    "thumbnail": "THEY NEED YOU. THEN SKIP YOU.",
+    "framework": "Seen. Attributed. Considered. Removable.",
+    "primary_cta": "Write one decision you made and what it changed.",
+    "resource": "Keep the Proof",
+    "watch_next": "V8: How to Show Your Impact at Work When You Built It From Scratch"
+  },
+  "script": {
+    "sections": 9,
+    "thought_blocks": 35,
+    "spoken_words": 641,
+    "speech_only_estimate": "4:25 to 4:56 at 130 to 145 words per minute",
+    "estimate_note": "Arithmetic on the script. Excludes pauses and visual holds. Not a timed read and not a runtime."
+  },
+  "assets": [
+    {
+      "file": "v16_01_called_then_skipped.png",
+      "status": "REBUILD",
+      "why": "The superseded draft had a split-screen concept with different copy. The final master's three-call opening replaces it.",
+      "mode": "FULL SCREEN",
+      "trigger": "When something is urgent, they call you."
+    },
+    {
+      "file": "v16_02_four_separations.png",
+      "status": "COPY UPDATE",
+      "why": "The four separations existed in the superseded draft as a concept. The wording is now the master's.",
+      "mode": "FULL SCREEN",
+      "trigger": "Before you change how you behave, separate four things: is the work seen, is it attributed to you, are you trusted for delivery or considered for larger scope, and is the obstacle one you can actually remove?"
+    },
+    {
+      "file": "v16_03_where_work_disappears.png",
+      "status": "COPY UPDATE",
+      "why": "The concept survives; the copy is the master's.",
+      "mode": "FULL SCREEN",
+      "trigger": "It disappears into a process that now runs smoothly."
+    },
+    {
+      "file": "v16_04_delivery_vs_scope.png",
+      "status": "COPY UPDATE",
+      "why": "Concept retained, copy replaced with the master's wording.",
+      "mode": "FULL SCREEN",
+      "trigger": "Delivery and scope are different judgments."
+    },
+    {
+      "file": "v16_05_the_hinge.png",
+      "status": "REUSE",
+      "why": "The hinge distinction was the strongest idea in the superseded draft and the final master keeps it. The superseded package held written concepts, never rendered assets, so no frame here is byte-identical reuse.",
+      "mode": "FULL SCREEN",
+      "trigger": "This is the distinction I most want you to keep: a manager who does not know is a completely different situation from a manager who knows and does not act."
+    },
+    {
+      "file": "v16_06_what_remains.png",
+      "status": "NEW",
+      "why": "The final master states the limits as a list. The superseded draft carried them as prose.",
+      "mode": "FULL SCREEN",
+      "trigger": "A clearer record does not override bias."
+    },
+    {
+      "file": "v16_07_three_pieces_four_lines.png",
+      "status": "COPY UPDATE",
+      "why": "The four-line record survives from the superseded draft with the master's revised fourth line.",
+      "mode": "FULL SCREEN",
+      "trigger": "For each, write four lines: what was true before, what you decided, what changed, and what evidence supports the account."
+    },
+    {
+      "file": "v16_08_needed_not_considered.png",
+      "status": "NEW",
+      "why": "The final master's closing line differs from the superseded draft.",
+      "mode": "FULL SCREEN",
+      "trigger": "Being needed is not the same as being considered for what comes next."
+    },
+    {
+      "file": "v16_09_cta.png",
+      "status": "REUSE",
+      "why": "Route matches the master. The superseded package held written concepts, never rendered assets, so no frame here is byte-identical reuse.",
+      "mode": "FULL SCREEN",
+      "trigger": "Keep the Proof is linked below if you want the deeper evidence system."
+    },
+    {
+      "file": "v16_10_watch_next.png",
+      "status": "REBUILD",
+      "why": "The superseded draft proposed V8 as a Watch Next and the final master confirms it. The card is built to the master's string.",
+      "mode": "FULL SCREEN",
+      "trigger": "Being needed is not the same as being considered for what comes next."
+    }
+  ],
+  "shorts": [
+    {
+      "slug": "v16_a1_called_then_skipped",
+      "priority": "A",
+      "title": "They call you. Then they skip you.",
+      "source": "V16 hook."
+    },
+    {
+      "slug": "v16_a2_the_hinge",
+      "priority": "A",
+      "title": "Does not know, or knows and does not act",
+      "source": "V16 the hinge."
+    },
+    {
+      "slug": "v16_a3_where_work_disappears",
+      "priority": "A",
+      "title": "Where good work disappears",
+      "source": "V16 is the work seen."
+    },
+    {
+      "slug": "v16_a4_three_pieces_four_lines",
+      "priority": "A",
+      "title": "Three pieces, four lines each",
+      "source": "V16 what to build."
+    },
+    {
+      "slug": "v16_b1_trusted_vs_considered",
+      "priority": "B",
+      "title": "Trusted to deliver is not the same as considered for scope",
+      "source": "V16 trusted or considered."
+    },
+    {
+      "slug": "v16_b2_what_it_does_not_fix",
+      "priority": "B",
+      "title": "What a clearer record does not fix",
+      "source": "V16 what this does not fix."
+    }
+  ],
+  "not_verified": [
+    "Nothing in this package has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

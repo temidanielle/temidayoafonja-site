@@ -1,0 +1,63 @@
+==============================================================================
+VIDEO 19  |  CHANGE LOG
+==============================================================================
+
+Is Consulting a Real Next Step for Your Career?
+
+Generated: Thursday, September 10, 2026 | 2:31 PM CT (America/Chicago, UTC-05:00)
+
+------------------------------------------------------------------------------
+
+SOURCE HIERARCHY CHANGE
+
+  The locked final Recording Master is now the definitive spoken
+  source of truth for this video:
+
+    Video_19_FINAL_Rebuilt_Recording_Master.docx
+    SHA-256 8b2e0b1a6384a2743479806a3ce6d16cc07d79b6ef98aced16524f67313c40d6
+
+  It OVERRIDES the script this workspace drafted earlier in
+  Videos_14-21_SCRIPT_DEVELOPMENT_REVIEW.zip. The two script sets
+  were not merged. The earlier draft was not used to reword the
+  master, and it is not retained as an alternate recording script.
+  It is development history.
+
+------------------------------------------------------------------------------
+
+WHAT WAS AUDITED AND REUSED
+
+  Every production concept from the earlier package was checked
+  against this master and classified:
+
+    REUSE        4
+    REORDER      0
+    COPY UPDATE  5
+    REBUILD      0
+    REMOVE       0
+    NEW          1
+
+  No frame is described as byte-identical reuse. The earlier
+  package held written concepts only. No rendered production asset
+  existed for any video in this range, so REUSE here means the
+  concept survived the final master unchanged, not that a file was
+  carried across.
+
+------------------------------------------------------------------------------
+
+WHAT WAS NOT CHANGED
+
+  The master was copied byte for byte and never written to.
+  No spoken text was tightened, expanded, restructured or
+  reworded. The hook, the examples, the qualifications, the CTA,
+  the resource, the Watch Next and the final line are the
+  master's.
+  No statistic, example, employer, person or outcome was added.
+  No spoken Subscribe request was added.
+
+------------------------------------------------------------------------------
+
+WHAT IS NOT SUPPLIED BY INSTRUCTION
+
+  Final chapters, an SRT, music attribution, thumbnail artwork and
+  any public URL. These come from the finished export and the
+  separate artwork approval.
