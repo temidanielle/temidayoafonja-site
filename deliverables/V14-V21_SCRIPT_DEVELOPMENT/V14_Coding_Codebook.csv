@@ -1,0 +1,25 @@
+field,type,definition,allowed_values_or_format
+posting_id,identifier,Unique identifier for the posting within this study.,"Industry prefix and a sequence number, for example HC-01."
+industry,category,Which of the three selected industries the employer sits in.,One of the three approved industry labels.
+source,text,Where the posting was found.,Site or platform name.
+source_url,text,Direct link to the posting.,Full URL.
+collection_date,date,The date the posting text was captured.,YYYY-MM-DD.
+employer_type,category,"The kind of organization, not its name.","For example: public sector, large private, small private, nonprofit."
+job_title,text,"The posting's own title, verbatim.",Verbatim.
+problem_the_role_solves,text,"In the coder's words, what this role exists to fix or produce.",One or two sentences.
+decisions_the_role_owns,text,"What the person would decide, as opposed to perform. Where the posting does not say, record NOT STATED.","List, or NOT STATED."
+core_responsibilities,text,"The main duties, condensed but not reinterpreted.",List.
+assumed_domain_knowledge,text,"Industry or subject knowledge the posting assumes, verbatim where possible, then classified.","Verbatim text plus readable, observable or gated."
+tools_platforms,text,"Named systems, platforms or software.","List, or NOT STATED."
+credentials,text,Qualifications or certifications named.,"Verbatim, plus issuing body if named, or NOT STATED."
+licensing,text,"Registration or license named, and whether the posting presents it as legally required.","Verbatim, plus required, preferred, or NOT DETERMINABLE FROM POSTING."
+years_of_experience,text,Stated quantity or type of prior experience.,"Verbatim figure or range, or NOT STATED."
+stakeholder_scope,text,"Who the role works across: teams, functions, external parties, seniority of the people involved.","List, or NOT STATED."
+accountability,text,What the person is answerable for if it goes wrong.,"Text, or NOT STATED."
+decision_authority,text,What the posting says the person may decide without approval.,"Text, or NOT STATED."
+work_arrangement,category,"On site, hybrid, remote, or not stated.",One of four values.
+industry_terminology,text,Industry-specific words used for activities that exist elsewhere under other names. This field feeds the central comparison.,List of terms with the plain-language equivalent.
+requirement_categories,text,Each stated requirement assigned to exactly one category.,"CAPABILITY, DOMAIN, CREDENTIAL, TOOL or EXPERIENCE."
+hard_or_preferred,text,How each requirement is framed by the posting.,"HARD, PREFERRED or AMBIGUOUS, per requirement."
+overlap_test_note,text,"For any requirement that looks shared with another industry: what the person has to decide, and what happens if they decide it badly.",Free text. Feeds the real-overlap versus apparent-overlap count.
+coder_notes,text,"Ambiguities, judgment calls, and anything a second reader should check.",Free text.
