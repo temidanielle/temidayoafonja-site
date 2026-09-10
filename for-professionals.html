@@ -109,6 +109,12 @@
 .path-card.secondary .path-date { color: var(--navy); }
 .path-card.secondary p { color: var(--muted); }
 
+/* Keep the Proof: the second individual product on this page. Same secondary
+   card, but framed in the Keep the Proof page's rust accent -- a full rust
+   border plus a heavier rust left edge -- so it reads as a distinct offer
+   beside the neutral-bordered Field Kit card rather than a duplicate of it. */
+.path-card.secondary.ktp-evidence { border-color: var(--rust); border-left: 3px solid var(--rust); }
+
 /* Primary: the flagship carries the navy treatment. --gold on navy is 6.80:1;
    white at .74 is 8.9:1. */
 .path-card.primary { background: var(--navy); border: 1px solid var(--navy); }
@@ -257,6 +263,17 @@
         <p>A one-to-one session where Temidayo interprets your evidence with you. You receive a personalized Next-Move Note based on your specific position, not a provisional group reading. For professionals facing a high-cost career decision who want expert interpretation before they move.</p>
         <a class="lean-btn light path-cta" href="mailto:temidayo@thedensitygroup.com?subject=Private%20Capability%20Position%20Read%20Inquiry">Request a Private Read</a>
         <p class="path-alt">Or email <a href="mailto:temidayo@thedensitygroup.com?subject=Private%20Capability%20Position%20Read%20Inquiry">temidayo@thedensitygroup.com</a> directly.</p>
+      </article>
+
+      <!-- Keep the Proof: the second individual product, directly below the Field
+           Kit card on desktop. Rust-accented to distinguish it from the Field Kit.
+           Its CTA is an internal link (same tab), not the external Gumroad tab. -->
+      <article class="path-card secondary ktp-evidence">
+        <div class="path-label">Career Evidence</div>
+        <h3>Keep the Proof</h3>
+        <div class="path-date">$49</div>
+        <p>In 60 minutes, assemble proof of what you contributed, what changed, and what your work demonstrates you can do. Includes a guided fillable system, reusable Career Evidence Ledger, and Start Here guide.</p>
+        <a class="lean-btn outline path-cta" href="https://temidayoafonja.com/keep-the-proof">Explore Keep the Proof &mdash; $49</a>
       </article>
 
     </div>
