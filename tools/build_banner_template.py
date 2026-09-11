@@ -18,8 +18,8 @@ INK        = (28,28,32)
 BROWN      = (138,90,58)
 TERRA      = (176,111,71)
 
-PORTRAIT = os.environ.get('PORTRAIT_SRC','cut_full.png')
-CROPBOX  = tuple(int(v) for v in os.environ.get('PORTRAIT_CROP','312,192,1047,927').split(','))
+PORTRAIT = os.environ.get('PORTRAIT_SRC','images/temidayo-terracotta.jpg')
+CROPBOX  = tuple(int(v) for v in os.environ.get('PORTRAIT_CROP','454,180,1154,880').split(','))
 
 def font(n,s): return ImageFont.truetype('ttf/'+n, s)
 SCRIPT='DancingScript-700.ttf'; SERIF='CormorantGaramond-500.ttf'; SERIF6='CormorantGaramond-600.ttf'
@@ -99,23 +99,48 @@ art = art.resize((W,H), Image.LANCZOS)
 img = Image.alpha_composite(img.convert('RGBA'), art).convert('RGB')
 
 # ───────────────── portrait disc ─────────────────
+from collections import deque
 D = 300; DISC_X, DISC_Y = 562+D/2, (ST+SB)/2
-src = Image.open(PORTRAIT)
-por = src.crop(CROPBOX)
-if por.mode != 'RGBA': por = por.convert('RGBA')
-por = por.resize((D*4,D*4), Image.LANCZOS)
-disc = Image.new('RGB',(D*4,D*4)); dd=ImageDraw.Draw(disc)
-for i in range(D*4):
-    t=i/(D*4-1); dd.line([(0,i),(D*4,i)], fill=(int(184-28*t),int(121-25*t),int(80-20*t)))
-disc.paste(por,(0,0),por)
+photo = Image.open(PORTRAIT).convert('RGB').crop(CROPBOX)
+pa = np.asarray(photo).astype(np.float32)
+pR,pG,pB = pa[...,0],pa[...,1],pa[...,2]
+pL = 0.299*pR+0.587*pG+0.114*pB
+
+# isolate the studio wall: bright, warm, and connected to the crop border
+wall = (pL>132) & ((pR-pB)<120) & (pG>pB+18)
+hh,ww = wall.shape; seen = np.zeros_like(wall); dq = deque()
+for x in range(ww):
+    for y in (0,hh-1):
+        if wall[y,x] and not seen[y,x]: seen[y,x]=True; dq.append((y,x))
+for y in range(hh):
+    for x in (0,ww-1):
+        if wall[y,x] and not seen[y,x]: seen[y,x]=True; dq.append((y,x))
+while dq:
+    y,x = dq.popleft()
+    for ny,nx in ((y-1,x),(y+1,x),(y,x-1),(y,x+1)):
+        if 0<=ny<hh and 0<=nx<ww and wall[ny,nx] and not seen[ny,nx]:
+            seen[ny,nx]=True; dq.append((ny,nx))
+wm = (np.asarray(Image.fromarray((seen*255).astype(np.uint8))
+        .filter(ImageFilter.MaxFilter(5)).filter(ImageFilter.GaussianBlur(2.5)))
+        .astype(np.float32)/255.)[...,None]
+
+# grade the wall to the reference terracotta, then flatten it
+vgrad = np.linspace(0,1,hh,dtype=np.float32)[:,None,None]
+terra = np.array([182,118,78],float) + (np.array([150,92,58],float)-np.array([182,118,78],float))*vgrad
+graded = np.clip(pa*(1-wm) + (pa*0.22 + terra*0.78)*wm, 0, 255)
+inner = (np.asarray(Image.fromarray((seen*255).astype(np.uint8))
+          .filter(ImageFilter.MinFilter(9)).filter(ImageFilter.GaussianBlur(6)))
+          .astype(np.float32)/255.)[...,None]
+blur = np.asarray(Image.fromarray(graded.astype(np.uint8)).filter(ImageFilter.GaussianBlur(26))).astype(np.float32)
+graded = graded*(1-inner) + blur*inner
+
+disc = Image.fromarray(graded.astype(np.uint8)).resize((D*4,D*4), Image.LANCZOS)
 m = Image.new('L',(D*4,D*4),0); ImageDraw.Draw(m).ellipse((0,0,D*4-1,D*4-1),fill=255)
-disc, m = disc.resize((D,D), Image.LANCZOS), m.resize((D,D), Image.LANCZOS)
-img.paste(disc,(int(DISC_X-D/2),int(DISC_Y-D/2)), m)
+img.paste(disc.resize((D,D),Image.LANCZOS),(int(DISC_X-D/2),int(DISC_Y-D/2)), m.resize((D,D),Image.LANCZOS))
 ring = Image.new('RGBA',(W*SS,H*SS),(0,0,0,0))
 ImageDraw.Draw(ring).ellipse([(DISC_X-D/2-8)*SS,(DISC_Y-D/2-8)*SS,(DISC_X+D/2+8)*SS,(DISC_Y+D/2+8)*SS],
                              outline=TERRA+(150,), width=3*SS)
-ring = ring.resize((W,H), Image.LANCZOS)
-img = Image.alpha_composite(img.convert('RGBA'), ring).convert('RGB')
+img = Image.alpha_composite(img.convert('RGBA'), ring.resize((W,H), Image.LANCZOS)).convert('RGB')
 
 # ───────────────── type ─────────────────
 d = ImageDraw.Draw(img)
