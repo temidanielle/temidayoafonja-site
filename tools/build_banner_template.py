@@ -217,5 +217,3 @@ gd.text((SL+8,ST-40),"ALL-DEVICES SAFE AREA 1546 x 423",font=font('DMSans-400.tt
 gi.save('/home/user/temidayoafonja-site/temidayo_afonja_youtube_banner_template_SAFEAREA_GUIDE.png',optimize=True)
 P='/home/user/temidayoafonja-site/banner-previews/'; os.makedirs(P,exist_ok=True)
 img.crop((int(CX-773),int(CY-211),int(CX+773),int(CY+212))).save(P+'template_mobile_1546x423.png')
-img.crop((int(CX-773),int(CY-211),int(CX+773),int(CY+212))).resize((960,262)).save('t_m.png')
-img.resize((1100,619)).save('t_f.png')
