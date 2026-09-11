@@ -87,6 +87,12 @@ sprig((-30,230),(140,150),(300,20), 6, 105, 24, 0.95, LEAF_B+(165,), None)
 sprig((60,360),(180,300),(330,250), 5,  85, 20, 1.05, LEAF_B+(140,), None)
 for p in [(300,160),(330,205),(275,120),(355,255),(240,95)]:
     A.ellipse([(p[0]-5)*SS,(p[1]-5)*SS,(p[0]+5)*SS,(p[1]+5)*SS], fill=LEAF_A+(150,))
+# lower-left sprig: balances the right-hand group inside the 423px band.
+# Stem stops at x=300 so even the longest leaf stays well clear of the safe edge (507).
+sprig((0,700),(185,850),(290,1140), 8, 155, 35, 0.82, None, LEAF_A+(185,))
+sprig((0,930),(150,1040),(255,1330), 6, 128, 29, 0.92, None, LEAF_B+(165,))
+for p in [(268,980),(310,1040),(232,916),(300,1130)]:
+    A.ellipse([(p[0]-5)*SS,(p[1]-5)*SS,(p[0]+5)*SS,(p[1]+5)*SS], fill=LEAF_A+(140,))
 # right-hand sprig group (outlined, like the reference)
 sprig((2555,760),(2330,900),(2230,1180), 8, 165, 38, 0.80, None, LEAF_A+(185,))
 sprig((2560,980),(2380,1100),(2300,1370), 7, 140, 32, 0.90, None, LEAF_B+(165,))
