@@ -175,7 +175,7 @@ TXT_L, TXT_R = DISC_X+D/2+86, SR-PAD
 AXIS, COLW = (TXT_L+TXT_R)/2, TXT_R-TXT_L
 
 NAME="Temidayo Afonja"; TAG="Make your next move without starting over"
-CATS=["CAREER PIVOTS","INTERNAL MOVES","REAL CONVERSATIONS"]
+CATS=["CAREER PIVOTS","INTERNAL MOVES","WHAT STILL COUNTS"]
 f_name = fit(NAME, SCRIPT, 170, min(COLW,860))
 f_tag  = fit(TAG,  SERIF,   60, min(COLW,960))          # +20% on the previous 50px
 f_cat  = fit("   ".join(CATS), SERIF6, 28, min(COLW,900), 3.2)
