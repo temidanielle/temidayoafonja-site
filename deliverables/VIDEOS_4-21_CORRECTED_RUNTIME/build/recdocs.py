@@ -10,11 +10,21 @@ from docs421f import (base_doc, para, title_block, rule, h, kv, callout,
 
 
 def copy_master(n, outdir):
-    """The untouched locked master, copied byte for byte. Never written to."""
-    dst = os.path.join(outdir, M.FILES[n])
+    """The spoken source of truth, copied byte for byte. Never written to.
+
+    For V6, V7 and V8 that is the restored derivative. The supplied
+    September 11 master is copied in beside it, unchanged, so the package
+    carries the file it superseded rather than pretending it never existed.
+    """
+    dst = os.path.join(outdir, M.filename(n))
     shutil.copy2(M.path(n), dst)
     if M.sha256(dst) != M.verify(n):
         raise SystemExit("V%d master copy does not match the source" % n)
+    if n in M.RESTORED:
+        sup = os.path.join(outdir, "SUPERSEDED_" + M.FILES[n])
+        shutil.copy2(M.supplied_path(n), sup)
+        if M.sha256(sup) != M.read(n)["supplied_sha"]:
+            raise SystemExit("V%d supplied master copy does not match" % n)
     return dst
 
 

@@ -152,7 +152,13 @@ DESC = {
      "do, decide or prove that you cannot do today?\n\n"
      "A role does not have to maximize growth to be a good decision. The "
      "problem is calling every move development when the work underneath it "
-     "has barely changed."),
+     "has barely changed.\n\n"
+     "It is also honest about what three questions cannot settle. Your "
+     "company may not contain the work you need. A manager may control "
+     "access. Compensation bands, politics, bias and age discrimination "
+     "shape who gets access to opportunities. And caregiving, benefits, "
+     "immigration status, health, safety and timing can legitimately "
+     "outweigh the developmental case."),
  7: ("You can become more valuable to your organization without becoming "
      "more valuable to your own future. It took me years to learn that being "
      "trusted with more is not the same as being developed for more.\n\n"
@@ -163,7 +169,12 @@ DESC = {
      "You will leave able to run CAR on one responsibility you added in the "
      "last six months, and to ask for the review point before temporary "
      "scope becomes permanent.\n\n"
-     "More work can be part of growth. It is not proof of it."),
+     "More work can be part of growth. It is not proof of it.\n\n"
+     "It ends with the conversation, not only the diagnosis. Four questions "
+     "to take to your manager: which of these responsibilities should "
+     "remain with me, what should come off my plate, which decisions need "
+     "to belong to me, and how and when will the expanded scope be formally "
+     "reviewed?"),
  8: ("If you build something well enough, eventually nobody can see how hard "
      "it was. The process exists, people use it, and the uncertainty you "
      "solved at the beginning has disappeared from view.\n\n"
@@ -667,7 +678,13 @@ EX = {
       "history with you, without internal acronyms.",
       "Then answer the 12-month question in one sentence.",
       "If one area is weak, write what would have to be redesigned before "
-      "you accept."],
+      "you accept.",
+      "Read the three answers together. Three yes means you can see what "
+      "the work will build. Two yes means negotiate the missing one rather "
+      "than reject the role. Zero or one means movement, so be accurate "
+      "about what it gives you.",
+      "Last, write what this test cannot settle for you: what your employer "
+      "controls, and what your own life requires."],
      ["A role does not have to maximize growth to be a good decision.",
       "This exercise does not tell you whether to take the role. It tells "
       "you what you would be taking it for."]),
@@ -680,7 +697,15 @@ EX = {
       "Return. Write what came back in capability, evidence, or "
       "recognition.",
       "Then write the sentence you will use before the next request, "
-      "including when the additional scope will be reviewed."],
+      "including when the additional scope will be reviewed.",
+      "Read the three together. All three expanding means demanding work "
+      "you can see the shape of. Complexity alone means a stretch "
+      "assignment with a design problem. Volume alone means the role "
+      "expanded as workload, and that season needs a boundary.",
+      "Then take four questions to your manager: which of these "
+      "responsibilities should remain with me, what should come off my "
+      "plate, which decisions need to belong to me, and how and when will "
+      "the expanded scope be formally reviewed?"],
      ["CAR is not a score. You are looking for a pattern.",
       "Some of the best growth opportunities begin outside the job "
       "description. The question is what the extra work is building."]),
@@ -695,7 +720,11 @@ EX = {
       "Proof. Mark your evidence as Existence, Use or Effect, and keep only "
       "what it supports.",
       "Remove the employer name and internal acronyms. Can a stranger still "
-      "understand the contribution?"],
+      "understand the contribution?",
+      "Then look at the judgment sentence. Could you use that judgment "
+      "again somewhere else, or did it depend on relationships, authority, "
+      "regulation or domain knowledge you would have to rebuild? Either "
+      "answer is useful."],
      ["Keep only information you are permitted to retain.",
       "Do not jump from existence to effect because effect sounds more "
       "impressive."]),

@@ -39,7 +39,7 @@ for _n in ("docs421f", "masters421", "content421", "recdocs", "prodocs",
 import masters421 as M
 import recdocs, prodocs, shortsdocs
 import editorial421, flags421, prior421, summary421
-import assetclass421, priortext421
+import assetclass421, priortext421, restore678, verifyrestore
 import publish421, exercise421, qa421, shootall421, riverside421
 import research14
 from frames421 import SETS
@@ -422,8 +422,27 @@ def build_one(n, stamp_):
     evidence_notes(n, pkg, os.path.join(d(SUB[7]),
                                         "Factual_and_Evidence_Notes.txt"))
     change_log(n, pkg, os.path.join(d(SUB[7]), "Change_Log.txt"), stamp_)
+    if n in M.RESTORED:
+        mono(os.path.join(d(SUB[7]), "Restoration_Provenance.txt"),
+             head("VIDEO %d  |  RESTORATION PROVENANCE" % n)
+             + [M.title(n), "",
+                "The September 11 master supplied for this video carried "
+                "about half",
+                "the approved teaching. This package is built from a "
+                "restored",
+                "derivative. The supplied file is unchanged in _source/ and "
+                "still",
+                "matches its original checksum:", "",
+                "    %s" % M.FILES[n],
+                "    SHA-256 %s" % M.read(n)["supplied_sha"], "",
+                "    %s" % M.filename(n),
+                "    SHA-256 %s" % M.read(n)["sha"], "", hr(), ""]
+             + restore678.provenance_report(n))
     with open(os.path.join(d(SUB[7]), "Source_Hashes.txt"), "w") as f:
-        f.write("%s  %s\n" % (M.read(n)["sha"], M.FILES[n]))
+        f.write("%s  %s\n" % (M.read(n)["sha"], M.filename(n)))
+        if n in M.RESTORED:
+            f.write("%s  %s  (supplied, superseded)\n"
+                    % (M.read(n)["supplied_sha"], M.FILES[n]))
         if n == 14:
             f.write("%s  what-really-transfers-research.md\n"
                     % M.research_hash())

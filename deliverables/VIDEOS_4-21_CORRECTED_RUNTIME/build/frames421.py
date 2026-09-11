@@ -542,6 +542,26 @@ SETS[6] = [
        "corrected master names three specific returns, so the copy is "
        "replaced."),
 
+ F(key="v6_07_read_the_three_answers",
+   draw=lambda c: X.trio(
+     c, "Read the three answers", None,
+     [("ALL THREE YES", "You can see what the work is likely to build."),
+      ("TWO YES", "Negotiate the missing one, do not reject the role."),
+      ("ZERO OR ONE", "Movement. Be accurate about what it gives you.")],
+     foot="A new employer can give you a new logo and the same work."),
+   trigger="If two are yes, identify the missing dimension.",
+   purpose="The read, which is where the framework becomes a decision.",
+   mode="FULL SCREEN",
+   reveal="One column per answer as each is named, then the foot line.",
+   emphasis="The foot line.",
+   hold="3 seconds per column, 5 on the complete frame.",
+   captions="Suppressed.",
+   sound="Candidate: one tick as the foot line lands.",
+   after="Return to camera.",
+   status="NEW",
+   why="The section it serves was cut out of the compressed master and is "
+       "restored from the approved September 9 master, so no prior card "
+       "exists for it."),
  F(key="v6_07_twelve_month_question",
    draw=lambda c: X.statement(
      c, "The 12-month question",
@@ -561,6 +581,34 @@ SETS[6] = [
    why="The 12-month question is named in the corrected framework and has "
        "no prior asset."),
 
+ F(key="v6_08_what_this_cannot_solve",
+   draw=lambda c: X.labeled_rows(
+     c, "What this test cannot solve", None,
+     [("THE EMPLOYER",
+       "Your company may not contain the work. A manager may control "
+       "access. Compensation bands and politics set limits."),
+      ("BIAS",
+       "Bias and age discrimination shape who gets access to "
+       "opportunities."),
+      ("YOUR LIFE",
+       "Caregiving, benefits, immigration status, health and timing can "
+       "outweigh the developmental case.")],
+     dark=True),
+   trigger="These three questions read the work. They do not replace the "
+           "rest of the decision.",
+   purpose="The boundary. The channel never implies that reading the work "
+           "settles the decision.",
+   mode="FULL SCREEN",
+   reveal="One row at a time.",
+   emphasis="THE EMPLOYER.",
+   hold="3 seconds per row, 5 on the complete frame.",
+   captions="Suppressed.",
+   sound="Not a candidate. Let this one land quietly.",
+   after="Return to camera.",
+   status="NEW",
+   why="The section it serves was cut out of the compressed master and is "
+       "restored from the approved September 9 master, so no prior card "
+       "exists for it."),
  F(key="v6_08_yes_no_negotiate",
    draw=lambda c: X.three_lines(
      c, "Before your next move", None,
@@ -581,12 +629,14 @@ SETS[6] = [
        "master ends on a written yes, no or negotiate decision."),
 
  F(key="v6_09_cta",
-   draw=lambda c: X.cta_action(
-     c, "Before your next move", "Write one sentence under each.",
-     "Work. Judgment. Evidence.",
-     "If one area is weak, ask whether it can be redesigned."),
-   trigger="A different title can be useful. But a bigger title and a bigger "
-           "career are not automatically the same thing.",
+   draw=lambda c: X.cta(
+     c, "One sentence each", "Work. Judgment. Evidence.",
+     "Career Decision Evidence Check",
+     "temidayoafonja.com/career-decisions"),
+   trigger="If you are actively deciding whether to stay, move internally, or "
+           "leave, the free Career Decision Evidence Check gives you a "
+           "structured way to read the evidence behind that choice. It is "
+           "linked below.",
    purpose="The single action named by the corrected master. The resource "
            "route lives in the description and the pinned comment, not on "
            "this card.",
@@ -595,19 +645,18 @@ SETS[6] = [
    hold="At least 4 seconds.",
    sound="Candidate: one clean transition sound on entry.",
    status="REBUILD",
-   why="Rebuilt. The September 10 card put the resource name and its "
-       "URL on screen. The corrected master routes the Career Decision Evidence Check "
-       "to the description and the pinned comment and states plainly "
-       "that it is not a second CTA, and the script never speaks it, "
-       "so the card would have been an unnarrated second ask. It now "
-       "carries the one primary action the master does name."),
+   why="Rebuilt for the restored master. The compressed September 11 "
+       "master had no spoken CTA at all, so this card correctly "
+       "carried the action alone. The restored master speaks the Career Decision Evidence Check "
+       "once after the teaching, exactly as the approved September 9 "
+       "master did, so the card carries the route again."),
 
  F(key="v6_10_watch_next",
    draw=lambda c: X.watch_next(
      c, "It Took Me Years to Stop Mistaking More Work for Career Growth",
      "Video 7"),
-   trigger="A different title can be useful. But a bigger title and a bigger "
-           "career are not automatically the same thing.",
+   trigger="That is what we are testing next in 'It Took Me Years to Stop "
+           "Mistaking More Work for Career Growth.'",
    purpose="The final visual.",
    reveal="Label, rule, title, number.",
    emphasis="The title.",
@@ -615,8 +664,10 @@ SETS[6] = [
    sound="Candidate: one restrained transition sound, then music fade.",
    after="NO RETURN TO CAMERA. Watch Next is final.",
    status="COPY UPDATE",
-   why="V6_WATCH_NEXT_Are_You_Growing.png pointed at V7 under its previous "
-       "title. Destination unchanged, title corrected."),
+   why="Card unchanged. The trigger moves to the restored "
+       "spoken Watch Next line. The compressed master had "
+       "no spoken handoff, so the card had been cued off "
+       "the final teaching sentence instead."),
 ]
 
 # ------------------------------------------------------------------- V7
@@ -761,6 +812,28 @@ SETS[7] = [
        "same three returns and the praise line, both preserved by the "
        "corrected master."),
 
+ F(key="v7_07_read_the_car_pattern",
+   draw=lambda c: X.trio(
+     c, "Read CAR as a pattern", None,
+     [("ALL THREE EXPANDING", "Demanding, but you can see what it builds."),
+      ("COMPLEXITY ONLY", "A stretch assignment with a design problem."),
+      ("VOLUME ONLY", "The role expanded mainly as workload.")],
+     foot="Give the season a boundary. Coverage without a review date "
+          "becomes the baseline."),
+   trigger="If volume increased but Complexity, Authority, and Return did "
+           "not, the role has expanded mainly as workload.",
+   purpose="The read. CAR is a pattern, not a score.",
+   mode="FULL SCREEN",
+   reveal="One column at a time, then the foot line.",
+   emphasis="The foot line.",
+   hold="3 seconds per column, 5 on the complete frame.",
+   captions="Suppressed.",
+   sound="Candidate: one tick as the foot line lands.",
+   after="Return to camera.",
+   status="NEW",
+   why="The section it serves was cut out of the compressed master and is "
+       "restored from the approved September 9 master, so no prior card "
+       "exists for it."),
  F(key="v7_07_review_point",
    draw=lambda c: X.three_lines(
      c, "Before the next 'Can you take this too?'", None,
@@ -781,6 +854,28 @@ SETS[7] = [
    why="V7_MG06_Pattern_Read.png covered reading the pattern. The corrected "
        "master ends on three questions asked before saying yes."),
 
+ F(key="v7_08_scope_conversation",
+   draw=lambda c: X.numbered(
+     c, "Take four questions to your manager",
+     ["Which of these responsibilities should remain with me?",
+      "What should come off my plate as this becomes part of my role?",
+      "Which decisions need to belong to me for these outcomes?",
+      "How and when will the expanded scope be formally reviewed?"],
+     foot="Stronger than 'I have too much work.'", size=46),
+   trigger="Then take four questions into the conversation with your "
+           "manager: Which of these responsibilities should remain with me?",
+   purpose="The viewer tool. This is the conversation the video is for.",
+   mode="FULL SCREEN",
+   reveal="One question at a time, then the foot line.",
+   emphasis="The fourth question.",
+   hold="2 seconds per question, 5 on the complete frame.",
+   captions="Suppressed.",
+   sound="Candidate: one soft tick per question.",
+   after="Return to camera.",
+   status="NEW",
+   why="The section it serves was cut out of the compressed master and is "
+       "restored from the approved September 9 master, so no prior card "
+       "exists for it."),
  F(key="v7_08_more_work_is_not_proof",
    draw=lambda c: X.statement(
      c, None, "More work can be part of growth. It is not proof of it.",
@@ -798,12 +893,14 @@ SETS[7] = [
        "ending."),
 
  F(key="v7_09_cta",
-   draw=lambda c: X.cta_action(
+   draw=lambda c: X.cta(
      c, "Run CAR", "On one responsibility you added in the last six months.",
-     "Complexity. Authority. Return.",
-     "If the only thing that moved was volume, name it accurately."),
-   trigger="Run CAR on one responsibility you have added in the last six "
-           "months.",
+     "Capability Formation Field Kit", "temidayoafonja.com/fieldkit"),
+   trigger="If you want a structured way to examine what your current work is "
+           "actually building in you, the Capability Formation Field Kit helps "
+           "you read the evidence in your role, see where your options may be "
+           "expanding or narrowing, and identify where the role may need a "
+           "boundary or redesign. It is linked below.",
    purpose="The single action named by the corrected master. The resource "
            "route lives in the description and the pinned comment, not on "
            "this card.",
@@ -812,27 +909,29 @@ SETS[7] = [
    hold="At least 4 seconds.",
    sound="Candidate: one clean transition sound on entry.",
    status="REBUILD",
-   why="Rebuilt. The September 10 card put the resource name and its "
-       "URL on screen. The corrected master routes the Field Kit "
-       "to the description and the pinned comment and states plainly "
-       "that it is not a second CTA, and the script never speaks it, "
-       "so the card would have been an unnarrated second ask. It now "
-       "carries the one primary action the master does name."),
+   why="Rebuilt for the restored master. The compressed September 11 "
+       "master had no spoken CTA at all, so this card correctly "
+       "carried the action alone. The restored master speaks the Field Kit "
+       "once after the teaching, exactly as the approved September 9 "
+       "master did, so the card carries the route again."),
 
  F(key="v7_10_watch_next",
    draw=lambda c: X.watch_next(
      c, "How to Show Your Impact at Work When You Built It From Scratch",
      "Video 8"),
-   trigger="More work can be part of growth. It is not proof of it.",
+   trigger="In the next video, I will show you how to make that work visible: "
+           "'How to Show Your Impact at Work When You Built It From Scratch.'",
    purpose="The final visual.",
    reveal="Label, rule, title, number.",
    emphasis="The title.",
    hold="Hold to the end.",
    sound="Candidate: one restrained transition sound, then music fade.",
    after="NO RETURN TO CAMERA. Watch Next is final.",
-   status="REUSE",
-   why="The September 9 package already routed V7 into V8 and the corrected "
-       "master keeps that destination and title."),
+   status="COPY UPDATE",
+   why="Card unchanged. The trigger moves to the restored "
+       "spoken Watch Next line. The compressed master had "
+       "no spoken handoff, so the card had been cued off "
+       "the final teaching sentence instead."),
 ]
 
 # ------------------------------------------------------------------- V8
@@ -979,6 +1078,25 @@ SETS[8] = [
    why="Existence / Use / Effect is new to the corrected master and is the "
        "most important addition in this video."),
 
+ F(key="v8_08_evidence_boundary",
+   draw=lambda c: X.statement(
+     c, "The boundary", "Proof does not mean taking your employer's files.",
+     "Removing a name does not create permission to keep restricted "
+     "material. Your own written account can preserve the structure of the "
+     "evidence without preserving confidential material.",
+     dark=True, size=72, support_size=40),
+   trigger="Proof does not mean taking your employer's files.",
+   purpose="The legal and ethical boundary, stated plainly on screen.",
+   mode="FULL SCREEN",
+   reveal="Headline alone. Hold. Then the support line.",
+   emphasis="The headline.",
+   hold="3 seconds alone, 4 with the support.",
+   captions="Suppressed.",
+   sound="Not a candidate.",
+   after="Return to camera.",
+   status="NEW",
+   why="The corrected master carries this boundary and no prior rendered "
+       "card presented it full screen."),
  F(key="v8_08_four_sentence_account",
    draw=lambda c: X.labeled_rows(
      c, "The four-sentence impact account", None,
@@ -998,13 +1116,13 @@ SETS[8] = [
        "master specifies four named sentences, so the artifact is rebuilt."),
 
  F(key="v8_09_cta",
-   draw=lambda c: X.cta_action(
+   draw=lambda c: X.cta(
      c, "One thing people take for granted",
      "Write the four sentences.",
-     "Before. My Part. Judgment. Proof.",
-     "Make the invisible judgment visible."),
-   trigger="Choose one thing people now take for granted because it works. "
-           "Write the four sentences.",
+     "Keep the Proof", "temidayoafonja.com/keep-the-proof"),
+   trigger="Keep the Proof is linked below if you want the deeper evidence "
+           "system and reusable ledger. But the four-sentence account from "
+           "this video stands on its own.",
    purpose="The single action named by the corrected master. The resource "
            "route lives in the description and the pinned comment, not on "
            "this card.",
@@ -1013,27 +1131,27 @@ SETS[8] = [
    hold="At least 4 seconds.",
    sound="Candidate: one clean transition sound on entry.",
    status="REBUILD",
-   why="Rebuilt. The September 10 card put the resource name and its "
-       "URL on screen. The corrected master routes Keep the Proof "
-       "to the description and the pinned comment and states plainly "
-       "that it is not a second CTA, and the script never speaks it, "
-       "so the card would have been an unnarrated second ask. It now "
-       "carries the one primary action the master does name."),
+   why="Rebuilt for the restored master. The compressed September 11 "
+       "master had no spoken CTA at all, so this card correctly "
+       "carried the action alone. The restored master speaks Keep the Proof "
+       "once after the teaching, exactly as the approved September 9 "
+       "master did, so the card carries the route again."),
 
  F(key="v8_10_watch_next",
    draw=lambda c: X.watch_next(
      c, "How to Change Industries Without Starting Over", "Video 9"),
-   trigger="Your job is not to make the story bigger. Your job is to make "
-           "the invisible judgment visible.",
+   trigger="Watch 'How to Change Industries Without Starting Over' next.",
    purpose="The final visual.",
    reveal="Label, rule, title, number.",
    emphasis="The title.",
    hold="Hold to the end.",
    sound="Candidate: one restrained transition sound, then music fade.",
    after="NO RETURN TO CAMERA. Watch Next is final.",
-   status="REUSE",
-   why="The prior package routed V8 into V9 and the corrected master keeps "
-       "the destination and the title."),
+   status="COPY UPDATE",
+   why="Card unchanged. The trigger moves to the restored "
+       "spoken Watch Next line. The compressed master had "
+       "no spoken handoff, so the card had been cued off "
+       "the final teaching sentence instead."),
 ]
 
 # ------------------------------------------------------------------- V9

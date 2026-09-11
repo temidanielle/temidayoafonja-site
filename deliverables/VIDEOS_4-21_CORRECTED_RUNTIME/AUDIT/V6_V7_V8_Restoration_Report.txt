@@ -1,0 +1,263 @@
+==============================================================================
+VIDEOS 6, 7 AND 8  |  RESTORATION REPORT
+==============================================================================
+
+Generated: Friday, September 11, 2026 | 5:48 PM CT
+
+------------------------------------------------------------------------------
+
+WHAT WAS DONE
+
+  The September 11 masters supplied for Videos 6, 7 and 8 carried
+  about half the previously approved spoken script. Each has been
+  restored to full regular long-form depth.
+
+  The corrected master's title, thumbnail, hook, personal framing
+  and framework architecture are kept exactly as supplied. The
+  teaching that the compression pass removed is restored from the
+  last full-length approved master.
+
+  For Video 8 the corrected four-part architecture takes
+  precedence, as directed. BEFORE, MY PART, JUDGMENT and PROOF
+  are kept, together with Existence, Use and Effect, and the
+  approved depth is mapped into that structure rather than the
+  previous three-part one being restored over it.
+
+  No master was padded to reach a clock. Every restored line is
+  approved speech.
+
+------------------------------------------------------------------------------
+
+SOURCE INTEGRITY
+
+  The supplied September 11 masters are NOT modified. Each is
+  retained in _source/ and still matches its original checksum,
+  and each is copied into its package as a superseded file. The
+  restored derivatives are separate documents in
+  _source_restored/.
+
+------------------------------------------------------------------------------
+
+RESULT
+
+  V    RESTORED  PREVIOUS  OF PREV  SPEECH ONLY      SECTIONS
+  --------------------------------------------------------------------------
+  V6   1202      1151      104%     8:17 to 9:14     10
+  V7   1229      1209      102%     8:28 to 9:27     10
+  V8   1289      1198      108%     8:53 to 9:54     11
+
+  Speech-only, at 130 to 145 words per minute. It excludes
+  pauses, framework holds, full-screen demonstrations and
+  transitions, so the finished runtime will be longer.
+
+------------------------------------------------------------------------------
+
+NEWLY AUTHORED SPEECH
+
+  None. Zero lines of new teaching were written. Every line in
+  all three restored scripts is either the corrected master's
+  own speech or previously approved speech.
+
+------------------------------------------------------------------------------
+
+PER-VIDEO DETAIL
+
+==========================================================================
+VIDEO 6
+==========================================================================
+
+  spoken source of truth: Video_6_RESTORED_Regular_Length_Recording_Master.docx
+      SHA-256 f39ff30ea07906e3642599479442cd16fe35ba7096090e390521156f684dcd18
+
+  supplied, superseded:   Video_6_FINAL_Revised_Recording_Master.docx
+      SHA-256 439251708277714118617b8be910e459cfd3eee5f17746868200eff1ba63133d
+
+  depth source:           V6_Recording_Master_LOCKED_2026-09-09.docx
+
+  line provenance: CUR 22, SEP09 20, SEP09-ADJ 3, SEP09-SPLIT 1
+
+  SECTIONS AND WHERE EACH LINE CAME FROM
+
+    HOOK | Movement can look like growth before the work  102  CUR:4
+    WHY THIS GETS HARDER LATER IN YOUR CAREER              84  CUR:3
+    1 | WORK: Will the problem actually change?           145  CUR:3 ADJ:1
+    2 | JUDGMENT: Will your decision rights expand?       182  CUR:3 SEP09:4
+    3 | EVIDENCE: Will you be able to prove the growth s  172  CUR:3 SEP09:4 ADJ:1
+    READ THE THREE ANSWERS                                154  SEP09:5
+    THE 12-MONTH QUESTION                                  71  CUR:3
+    WHAT THIS TEST CANNOT SOLVE                           109  SEP09:4
+    CLOSE | Make a cleaner yes, no, or negotiate decisio  127  CUR:3 SEP09:1 SPLIT:1
+    WATCH NEXT | Final visual                              56  SEP09:2 ADJ:1
+
+  MINIMAL ADJUSTMENTS TO APPROVED SPEECH
+
+    [SEP09-ADJ] 1 | WORK: Will the problem actually change?
+        Ask the hiring manager three things: What are the most important
+        problems this person will own in the first six months? What will I
+        have to learn that I do not already know? What will I understand
+        differently because I held this role?
+          September 9 read 'Ask the internal hiring manager three
+          things'. The corrected Video 6 covers external moves as well
+          as internal ones, so 'internal' is dropped. Nothing else
+          changed.
+
+    [SEP09-ADJ] 3 | EVIDENCE: Will you be able to prove the growth somewhere else?
+        The strongest moves eventually let you say: 'I entered a new
+        context. I was trusted to make this kind of judgment. Here is what
+        changed.'
+          September 9 read 'The strongest internal moves'. 'internal' is
+          dropped for the corrected video's wider scope. Nothing else
+          changed.
+
+    [SEP09-SPLIT] CLOSE | Make a cleaner yes, no, or negotiate decision
+        What different work will I enter? What judgment will I be trusted
+        to carry? What evidence could I explain a year from now?
+          September 9 set these three questions as separate lines under
+          'Before your next internal conversation, write one sentence
+          under each question'. That lead-in is dropped because the
+          corrected master's own line above already says it. The three
+          questions are unchanged.
+
+    [SEP09-ADJ] WATCH NEXT | Final visual
+        That is what we are testing next in 'It Took Me Years to Stop
+        Mistaking More Work for Career Growth.'
+          September 9 named the destination by its former title, 'Are
+          You Growing, or Just Being Given More Work?'. Video 7's
+          corrected master carries a different title, so the destination
+          is named by the title it actually has. Nothing else changed.
+
+==========================================================================
+VIDEO 7
+==========================================================================
+
+  spoken source of truth: Video_7_RESTORED_Regular_Length_Recording_Master.docx
+      SHA-256 1ebe2b9c0132c4f87d1b3c38b82ad33729c6200414aedd2ff93c0066fcf43c14
+
+  supplied, superseded:   Video_7_FINAL_Revised_Recording_Master.docx
+      SHA-256 69024f5223662c6edb73763a2cc435ebcc5394548905c31aa39833925125b158
+
+  depth source:           V7_Recording_Master_LOCKED_2026-09-09.docx
+
+  line provenance: CUR 24, SEP09 23, SEP09-SPLIT 2
+
+  SECTIONS AND WHERE EACH LINE CAME FROM
+
+    HOOK | More valuable to the company, not necessarily   99  CUR:5
+    WHY DEPENDABLE PEOPLE ARE VULNERABLE TO THIS          103  CUR:3 SEP09:1
+    C | COMPLEXITY: Did the problem get harder, or did t  151  CUR:3 SEP09:1
+    A | AUTHORITY: Did your decision rights move with th  147  CUR:3 SEP09:2
+    R | RETURN: What is the extra work giving back?       194  CUR:4 SEP09:6
+    READ THE CAR PATTERN                                  189  SEP09:7
+    USE CAR BEFORE YOU SAY YES TO MORE                     55  CUR:3
+    THE SCOPE CONVERSATION                                117  SEP09:2 SPLIT:2
+    CLOSE | Stop using workload as the growth metric      105  CUR:3 SEP09:1
+    WATCH NEXT | Final visual                              69  SEP09:3
+
+  MINIMAL ADJUSTMENTS TO APPROVED SPEECH
+
+    [SEP09-SPLIT] THE SCOPE CONVERSATION
+        For each one, write three things: What became more complex? What
+        can I now influence or decide? What did the work return?
+          September 9 set the three items as separate lines under 'For
+          each one, write three things:'. They are joined into one
+          spoken paragraph. No word changed.
+
+    [SEP09-SPLIT] THE SCOPE CONVERSATION
+        Then take four questions into the conversation with your manager:
+        Which of these responsibilities should remain with me? What should
+        come off my plate as this becomes part of my role? Which decisions
+        need to belong to me for these outcomes? How and when will the
+        expanded scope be formally reviewed?
+          September 9 set the four questions as separate lines under
+          'Then take four questions into the conversation with your
+          manager:'. They are joined into one spoken paragraph. No word
+          changed.
+
+==========================================================================
+VIDEO 8
+==========================================================================
+
+  spoken source of truth: Video_8_RESTORED_Regular_Length_Recording_Master.docx
+      SHA-256 65836d600d7ca3f65ff95d6d5ba16cfe7c4bea7c9221c03ccd2382ca84ebb822
+
+  supplied, superseded:   Video_8_FINAL_Revised_Recording_Master.docx
+      SHA-256 a7a416e673efbfb90b8660ea8cca7747873e5921ad0c18454e767dba04952f5c
+
+  depth source:           Video_8_FINAL_Revised_Recording_Master.docx
+
+  line provenance: CUR 26, SEP09 19, SEP09-SPLIT 6
+
+  SECTIONS AND WHERE EACH LINE CAME FROM
+
+    HOOK | Success can hide how hard the work was         141  CUR:5
+    THE PROBLEM | Finished work hides unfinished conditi  214  CUR:3 SEP09:4 SPLIT:1
+    1 | BEFORE: Reconstruct what was true before your so  176  CUR:3 SEP09:3 SPLIT:1
+    2 | MY PART: Make attribution accurate                 85  CUR:2 SEP09:1
+    3 | JUDGMENT: Show what was not obvious               117  CUR:2 SEP09:2 SPLIT:1
+    4 | PROOF: Keep only what the evidence supports       180  CUR:4 SEP09:3
+    EVIDENCE BOUNDARY | Do not take what you are not all   42  CUR:2
+    THE FOUR-SENTENCE IMPACT ACCOUNT                      199  CUR:2 SEP09:3 SPLIT:2
+    ACTION AND RESOURCE                                    54  SEP09:1 SPLIT:1
+    CLOSE | Do not let successful work disappear           46  CUR:3
+    WATCH NEXT | Final visual                              35  SEP09:2
+
+  MINIMAL ADJUSTMENTS TO APPROVED SPEECH
+
+    [SEP09-SPLIT] THE PROBLEM | Finished work hides unfinished conditions
+        Leadership expectations were already there. The missing connection
+        was between those expectations, the decisions managers needed to
+        make, and the operating situations where they would use them.
+          September 9 opened this paragraph with 'In a regulated life-
+          sciences organization, I was brought in to build a capability
+          function that did not exist.' That sentence is dropped because
+          the corrected master's hook already says it. The rest is
+          unchanged.
+
+    [SEP09-SPLIT] 1 | BEFORE: Reconstruct what was true before your solution
+        Your first sentence is: 'Before this work, people could not
+        consistently...' Finish it with the actual problem.
+          September 9 set the sentence stem and its instruction as three
+          separate lines. They are joined into one spoken paragraph. No
+          word changed.
+
+    [SEP09-SPLIT] 3 | JUDGMENT: Show what was not obvious
+        Next, show what you had to work out. Not every action. The
+        decisions that made the solution usable.
+          September 9 set 'Next, show what you had to work out.' and
+          'Not every action. The decisions that made the solution
+          usable.' as two lines. They are joined into one spoken
+          paragraph. No word changed.
+
+    [SEP09-SPLIT] THE FOUR-SENTENCE IMPACT ACCOUNT
+        Before: what was true before the work existed? My Part: what did I
+        personally own, recommend, or lead? Judgment: what did I have to
+        work out that was not obvious? Proof: what is the strongest result
+        I can support without overstating causation?
+          The corrected master sets the four prompts as four separate
+          lines. They are joined into one spoken paragraph so the
+          account reads as one instruction. No word changed.
+
+    [SEP09-SPLIT] THE FOUR-SENTENCE IMPACT ACCOUNT
+        Then look at the judgment sentence. Does it show something you
+        could use again in another context? Or did it depend heavily on
+        relationships, authority, regulation, or domain knowledge you
+        would have to rebuild? Either answer is useful.
+          September 9 set 'Then look at the judgment sentence.', the two
+          questions and 'Either answer is useful.' as four lines. They
+          are joined into one spoken paragraph. No word changed.
+
+    [SEP09-SPLIT] ACTION AND RESOURCE
+        You do not need to make your work sound harder than it was. You
+        need to stop leaving out the part that made the finished thing
+        possible.
+          September 9 set these as two lines. They are joined into one
+          spoken paragraph. No word changed.
+
+------------------------------------------------------------------------------
+
+VIDEOS 9 TO 13 WERE NOT TOUCHED
+
+  Their corrected masters match the previously approved masters
+  to the word. Their speech-only estimates sitting below the
+  printed finished-runtime targets is the ordinary difference
+  between speech time and finished time. Nothing was padded.

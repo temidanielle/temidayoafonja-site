@@ -25,7 +25,10 @@ from docs421f import (base_doc, para, title_block, rule, h, kv, callout,
 OUT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 PRIMARY = ("YouTube_V4-V21_CORRECTED_RUNTIME_Recording_Masters, "
-           "18 corrected September 11, 2026 recording masters")
+           "18 corrected September 11, 2026 recording masters. For Videos "
+           "6, 7 and 8 the spoken source of truth is the restored "
+           "derivative, because the supplied file for each was compressed "
+           "to roughly half the approved teaching.")
 
 SECONDARY = [
  ("Videos 4 to 7 handoff package, September 9, 2026",
@@ -54,6 +57,13 @@ def source_hierarchy(out_path, stamp):
         m = M.read(n)
         L += ["    V%-2d  %s" % (n, m["file"]),
               "         SHA-256 %s" % m["sha"]]
+        if m["restored"]:
+            L += ["         RESTORED DERIVATIVE. Supersedes the supplied "
+                  "file below,",
+                  "         which is retained unchanged and is not used for "
+                  "recording:",
+                  "         %s" % m["supplied_file"],
+                  "         SHA-256 %s" % m["supplied_sha"]]
     L += ["", hr(), "", "SECONDARY REFERENCE ONLY", ""]
     for name, note in SECONDARY:
         L += ["  %s" % name, "      %s" % note]
@@ -237,6 +247,17 @@ def superseded_index(out_path, stamp, rows, prior):
     for n, old, new in superseded_titles():
         L += ["    V%-3d was: %s" % (n, old),
               "         now: %s" % new]
+    L += ["", hr(), "",
+          "SUPERSEDED RECORDING MASTERS", "",
+          "  The September 11 masters supplied for Videos 6, 7 and 8. Each",
+          "  carried about half the approved teaching after a compression",
+          "  pass that should only ever have applied to Videos 4 and 5. They",
+          "  are retained unchanged, and they are not used for recording.",
+          ""]
+    for n in sorted(M.RESTORED):
+        m = M.read(n)
+        L += ["    %s" % m["supplied_file"],
+              "        SHA-256 %s" % m["supplied_sha"]]
     L += ["", hr(), "",
           "SUPERSEDED WRITTEN MATERIAL", "",
           "  Videos_14-21_SCRIPT_DEVELOPMENT_REVIEW.zip. Development history.",

@@ -44,9 +44,7 @@ def runtime_flags():
                 out.append((n, "as short as the 5-minute experiment, but "
                             "designated regular long-form",
                             "%d words, %s to %s at 130 to 145 wpm. This "
-                            "master states no runtime target. The video is "
-                            "NOT part of the V4 and V5 experiment and is NOT "
-                            "lengthened to reach a longer target."
+                            "master states no runtime target."
                             % (words, fast, slow)))
             continue
         # A master that states its own target. The target is written either
@@ -100,9 +98,31 @@ def typography_flags():
     return out
 
 
+def restoration_notes():
+    """Videos whose supplied master was compressed and has been restored.
+
+    Recorded as a note rather than a flag: the defect is resolved, but the
+    fact that the supplied file was not the full-depth script has to stay
+    visible, and the supplied file itself is retained unchanged."""
+    out = []
+    for n in sorted(M.RESTORED):
+        prev = {6: 1151, 7: 1209, 8: 1198}[n]
+        words, fast, slow = M.estimate(n)
+        out.append((n, "restored from a compressed supplied master",
+                    "The September 11 master carried about half the approved "
+                    "teaching. The spoken source of truth is now %s, %d "
+                    "words, %s to %s at 130 to 145 wpm, against %d in the "
+                    "last full-length approved master. The supplied file is "
+                    "unchanged in _source/ and still matches its original "
+                    "checksum. No new teaching was authored."
+                    % (M.RESTORED[n], words, fast, slow, prev)))
+    return out
+
+
 def all_flags():
     return ([(n, "RUNTIME", a, b) for n, a, b in runtime_flags()] +
-            [(n, "TYPOGRAPHY", a, b) for n, a, b in typography_flags()])
+            [(n, "TYPOGRAPHY", a, b) for n, a, b in typography_flags()] +
+            [(n, "RESTORED", a, b) for n, a, b in restoration_notes()])
 
 
 if __name__ == "__main__":

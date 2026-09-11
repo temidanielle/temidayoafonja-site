@@ -25,6 +25,7 @@ sys.path.append("/home/user/temidayoafonja-site/deliverables/"
 import masters421 as M
 import research14
 import publish421 as PUB
+import restore678
 from frames421 import SETS
 from shorts421 import SHORTS
 
@@ -55,7 +56,8 @@ def text_units(path):
 # findings, so reading it back would report a violation it created itself.
 def _authored_only(p, n):
     base = os.path.basename(p)
-    if base == M.FILES[n] or base == M.RESEARCH:
+    if base in (M.FILES[n], M.filename(n), M.RESEARCH) or \
+            base == "SUPERSEDED_" + M.FILES[n]:
         return False
     if base == "QA_Report.txt":
         return False
@@ -112,7 +114,7 @@ def run(n, pkg):
     # House style applies to what this build authored, not to the supplied
     # master or the supplied research archive.
     authored = all_units(pkg, n, authored_only=True)
-    master_copy = os.path.join(pkg, "01_Recording_Master", M.FILES[n])
+    master_copy = os.path.join(pkg, "01_Recording_Master", M.filename(n))
     reading = os.path.join(pkg, "01_Recording_Master",
                            "Approved_Recording_Master_Reference.docx")
     script_only = os.path.join(pkg, "01_Recording_Master",
@@ -120,7 +122,21 @@ def run(n, pkg):
 
     # --- the master itself -------------------------------------------
     ck("Correct new final master used", os.path.exists(master_copy),
-       M.FILES[n])
+       M.filename(n))
+    if n in M.RESTORED:
+        sup = os.path.join(pkg, "01_Recording_Master",
+                           "SUPERSEDED_" + M.FILES[n])
+        ck("Supplied compressed master retained unchanged",
+           os.path.exists(sup) and sha256(sup) == m["supplied_sha"],
+           "%s, SHA-256 %s" % (M.FILES[n], m["supplied_sha"]))
+        ck("Restored to the approved depth",
+           M.word_count(n) >= 0.9 * {6: 1151, 7: 1209, 8: 1198}[n],
+           "%d spoken words against %d in the last full-length approved "
+           "master" % (M.word_count(n), {6: 1151, 7: 1209, 8: 1198}[n]))
+        ck("Restoration adds no newly authored speech",
+           not any(p["src"] == "BRIDGE"
+                   for _, ps in restore678.SCRIPTS[n] for p in ps),
+           "every restored line traces to approved speech")
     ck("Master copied unchanged",
        os.path.exists(master_copy) and sha256(master_copy) == m["sha"],
        "SHA-256 %s" % m["sha"])

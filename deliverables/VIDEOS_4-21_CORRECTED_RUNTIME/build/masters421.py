@@ -26,6 +26,17 @@ from docx.oxml.ns import qn
 HERE = os.path.dirname(os.path.abspath(__file__))
 SRC = os.path.join(os.path.dirname(HERE), "_source")
 
+# Videos 6, 7 and 8 were supplied compressed to roughly half the approved
+# teaching. Their restored full-depth derivatives live beside the supplied
+# files and are the spoken source of truth for those three videos. The
+# supplied masters are untouched in _source/ and keep their checksums.
+RESTORED_SRC = os.path.join(os.path.dirname(HERE), "_source_restored")
+RESTORED = {
+ 6: "Video_6_RESTORED_Regular_Length_Recording_Master.docx",
+ 7: "Video_7_RESTORED_Regular_Length_Recording_Master.docx",
+ 8: "Video_8_RESTORED_Regular_Length_Recording_Master.docx",
+}
+
 VIDEOS = tuple(range(4, 22))
 FIVE_MIN = (4, 5)                  # the only runtime experiment
 REGULAR = tuple(range(6, 22))
@@ -71,7 +82,22 @@ _cache = {}
 
 
 def path(n):
+    """The file that is the spoken source of truth for this video."""
+    if n in RESTORED:
+        return os.path.join(RESTORED_SRC, RESTORED[n])
     return os.path.join(SRC, FILES[n])
+
+
+def supplied_path(n):
+    """The file as supplied on September 11, always. For V6, V7 and V8 this
+    is the compressed master that the restoration supersedes; it is kept so
+    its checksum can still be reported and so nothing pretends it never
+    existed."""
+    return os.path.join(SRC, FILES[n])
+
+
+def filename(n):
+    return RESTORED[n] if n in RESTORED else FILES[n]
 
 
 def sha256(p):
@@ -90,7 +116,34 @@ def manifest():
     return out
 
 
+def restored_manifest():
+    out = {}
+    f = os.path.join(RESTORED_SRC, "RESTORED_SOURCE_HASHES.txt")
+    for line in open(f):
+        line = line.strip()
+        if line:
+            h, name = line.split(None, 1)
+            out[name.strip()] = h
+    return out
+
+
 def verify(n):
+    """The spoken source must match its recorded hash, and for V6, V7 and V8
+    the supplied compressed master must ALSO still match its original hash.
+    A restoration that quietly edited the supplied file would pass the first
+    check and fail the second."""
+    if n in RESTORED:
+        got = sha256(supplied_path(n))
+        want = manifest()[FILES[n]]
+        if got != want:
+            raise SystemExit("V%d supplied master was modified: %s != %s"
+                             % (n, got, want))
+        got = sha256(path(n))
+        want = restored_manifest()[RESTORED[n]]
+        if got != want:
+            raise SystemExit("V%d restored master changed on disk: %s != %s"
+                             % (n, got, want))
+        return got
     got, want = sha256(path(n)), manifest()[FILES[n]]
     if got != want:
         raise SystemExit("V%d master changed on disk: %s != %s"
@@ -169,7 +222,10 @@ def read(n):
     head = flat[:start - 1]
     cands = [t for t in head
              if " | " not in t and t != t.upper() and len(t) > 12]
-    out = dict(num=n, file=FILES[n], sha=sha256(path(n)),
+    out = dict(num=n, file=filename(n), sha=sha256(path(n)),
+               supplied_file=FILES[n],
+               supplied_sha=sha256(supplied_path(n)),
+               restored=(n in RESTORED),
                eyebrow=flat[0], title=(cands[-1] if cands else flat[1]),
                kind=flat[2] if len(flat) > 2 else "",
                meta=meta, tables=tables, sections=sections,
