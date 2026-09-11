@@ -18,10 +18,11 @@ INK        = (28,28,32)
 BROWN      = (138,90,58)
 TERRA      = (176,111,71)
 
-PORTRAIT = os.environ.get('PORTRAIT_SRC','images/temidayo-terracotta.jpg')
+PORTRAIT = os.environ.get('PORTRAIT_SRC', os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'images/temidayo-terracotta.jpg'))
 CROPBOX  = tuple(int(v) for v in os.environ.get('PORTRAIT_CROP','454,180,1154,880').split(','))
 
-def font(n,s): return ImageFont.truetype('ttf/'+n, s)
+_FD = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'fonts')
+def font(n,s): return ImageFont.truetype(os.path.join(_FD, n), s)
 SCRIPT='DancingScript-700.ttf'; SERIF='CormorantGaramond-500.ttf'; SERIF6='CormorantGaramond-600.ttf'
 
 # ───────────────── background washes ─────────────────
@@ -174,16 +175,15 @@ TXT_L, TXT_R = DISC_X+D/2+86, SR-PAD
 AXIS, COLW = (TXT_L+TXT_R)/2, TXT_R-TXT_L
 
 NAME="Temidayo Afonja"; TAG="Make your next move without starting over"
-CATS=["CAREER","TRANSITIONS","PRACTICAL STRATEGIES","REAL CONVERSATIONS"]; URL="www.temidayoafonja.com"
+CATS=["CAREER PIVOTS","INTERNAL MOVES","REAL CONVERSATIONS"]
 f_name = fit(NAME, SCRIPT, 170, min(COLW,860))
-f_tag  = fit(TAG,  SERIF,   50, min(COLW,800))
-f_cat  = fit("   ".join(CATS), SERIF6, 27, min(COLW,900), 3.2)
-f_url  = fit(URL,  SERIF,   32, min(COLW,520), 1.0)
+f_tag  = fit(TAG,  SERIF,   60, min(COLW,960))          # +20% on the previous 50px
+f_cat  = fit("   ".join(CATS), SERIF6, 28, min(COLW,900), 3.2)
 
-mn,mt,mg,mu = met(NAME,f_name), met(TAG,f_tag), met(CATS[0],f_cat,3.2), met(URL,f_url,1.0)
-G1,G2,G3 = 6, 30, 26
-y0=0.0; y1=y0+mn[3]+G1-mt[1]; y2=y1+mt[3]+G2-mg[1]; y3=y2+mg[3]+G3-mu[1]
-top,bot = y0+mn[1], y3+mu[3]
+mn,mt,mg = met(NAME,f_name), met(TAG,f_tag), met(CATS[0],f_cat,3.2)
+G1,G2 = 10, 38
+y0=0.0; y1=y0+mn[3]+G1-mt[1]; y2=y1+mt[3]+G2-mg[1]
+top,bot = y0+mn[1], y2+mg[3]
 dy = (ST+SB)/2-(top+bot)/2
 
 r1=put(NAME,f_name,INK,  AXIS,y0+dy)
@@ -203,11 +203,10 @@ for i,(c,w) in enumerate(seg):
         d.line([(mx,y2+dy+mg[1]-3),(mx,y2+dy+mg[3]+3)], fill=(198,166,138), width=2)
         x+=SPC
 r3=(cat_l, y2+dy+mg[1], x, y2+dy+mg[3])
-r4=put(URL,f_url,INK, AXIS,y3+dy,1.0)
 
 OUT='/home/user/temidayoafonja-site/temidayo_afonja_youtube_banner_template.png'
 img.save(OUT, optimize=True)
-for lbl,r in (("name",r1),("tagline",r2),("cats",r3),("url",r4)):
+for lbl,r in (("name",r1),("tagline",r2),("cats",r3)):
     print(f"  {lbl:8s} x {r[0]:7.1f}..{r[2]:7.1f}  y {r[1]:6.1f}..{r[3]:6.1f}")
 print(f"  disc     x {DISC_X-D/2:7.1f}..{DISC_X+D/2:7.1f}  y {DISC_Y-D/2:6.1f}..{DISC_Y+D/2:6.1f}")
 
