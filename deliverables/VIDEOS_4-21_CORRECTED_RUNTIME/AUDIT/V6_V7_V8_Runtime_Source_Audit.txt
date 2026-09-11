@@ -1,0 +1,197 @@
+==============================================================================
+VIDEOS 6, 7 AND 8  |  RUNTIME SOURCE-INTEGRITY AUDIT
+==============================================================================
+
+The question this audit answers is not whether the corrected master
+says 'regular long-form'. It is whether the script inside it is the
+full-depth script. A runtime estimate cannot answer that on its own,
+because an estimate taken from a compressed file reports the
+compression as a fact.
+
+------------------------------------------------------------------------------
+PARSER CONTROL
+------------------------------------------------------------------------------
+
+Before trusting any word count, the extractor is tested against five
+masters whose previously approved counts are known. If it reproduces
+those exactly, a short count elsewhere is the file, not the reader.
+
+  V9   corrected 1153   previously approved 1153    identical
+  V10  corrected 1106   previously approved 1106    identical
+  V11  corrected 1198   previously approved 1198    identical
+  V12  corrected 1185   previously approved 1185    identical
+  V13  corrected 1274   previously approved 1274    identical
+
+  Five of five match to the word. The extractor is not the cause.
+
+==============================================================================
+VIDEO 6  |  CASE C
+==============================================================================
+
+  the corrected master carries 54% of the previously approved spoken script
+
+  exact source compared:
+      V6_Recording_Master_LOCKED_2026-09-09.docx
+
+                                     CORRECTED          PREVIOUSLY APPROVED
+  spoken words                       617                1151
+  speech-only estimate               4:15 to 4:45       7:56 to 8:51
+  sections                           7                  9
+  depth retained                     54%
+
+  SECTIONS IN THE PREVIOUSLY APPROVED MASTER
+      HOOK                                                        115
+      WHY AN INTERNAL MOVE CAN BE A REAL CAREER MOVE              119
+      QUESTION 1: WILL THE WORK CHANGE?                           196
+      QUESTION 2: WILL YOUR JUDGMENT EXPAND?                      169
+      QUESTION 3: WILL THE EVIDENCE TRAVEL?                       155
+      READ THE THREE ANSWERS                                      154
+      WHAT THIS TEST CANNOT SOLVE                                 109
+      ONE NEXT STEP + CTA                                          68
+      WATCH NEXT                                                   66
+
+  SECTIONS IN THE CORRECTED MASTER
+      HOOK | Movement can look like growth before the work chang  102
+      WHY THIS GETS HARDER LATER IN YOUR CAREER                    84
+      1 | WORK: Will the problem actually change?                 102
+      2 | JUDGMENT: Will your decision rights expand?              98
+      3 | EVIDENCE: Will you be able to prove the growth somewhe   90
+      THE 12-MONTH QUESTION                                        71
+      CLOSE | Make a cleaner yes, no, or negotiate decision        70
+
+  TEACHING PRESENT IN BOTH (4)
+      kept     application: the ordinary Monday test
+      kept     framework: Work
+      kept     framework: Judgment
+      kept     framework: Evidence
+
+  TEACHING PRESENT PREVIOUSLY AND ABSENT NOW (8)
+      DROPPED  employer constraint: the company may not contain the work
+      DROPPED  employer constraint: a manager may control access
+      DROPPED  employer constraint: compensation bands
+      DROPPED  life constraint: caregiving
+      DROPPED  life constraint: immigration status
+      DROPPED  safety: harassment
+      DROPPED  safety: discrimination
+      DROPPED  resource named: Career Decision Evidence Check
+
+==============================================================================
+VIDEO 7  |  CASE C
+==============================================================================
+
+  the corrected master carries 48% of the previously approved spoken script
+
+  exact source compared:
+      V7_Recording_Master_LOCKED_2026-09-09.docx
+
+                                     CORRECTED          PREVIOUSLY APPROVED
+  spoken words                       575                1209
+  speech-only estimate               3:58 to 4:25       8:20 to 9:18
+  sections                           7                  9
+  depth retained                     48%
+
+  SECTIONS IN THE PREVIOUSLY APPROVED MASTER
+      HOOK                                                        112
+      WHY THIS IS HARD TO SEE                                     138
+      C: COMPLEXITY                                               161
+      A: AUTHORITY                                                156
+      R: RETURN                                                   200
+      READ THE CAR PATTERN                                        189
+      THE SCOPE CONVERSATION                                      117
+      CTA                                                          54
+      WATCH NEXT                                                   82
+
+  SECTIONS IN THE CORRECTED MASTER
+      HOOK | More valuable to the company, not necessarily to yo   99
+      WHY DEPENDABLE PEOPLE ARE VULNERABLE TO THIS                 81
+      C | COMPLEXITY: Did the problem get harder, or did the vol  110
+      A | AUTHORITY: Did your decision rights move with the resp  109
+      R | RETURN: What is the extra work giving back?              70
+      USE CAR BEFORE YOU SAY YES TO MORE                           55
+      CLOSE | Stop using workload as the growth metric             51
+
+  TEACHING PRESENT IN BOTH (5)
+      kept     boundary: praise is not role design
+      kept     application: the review point
+      kept     framework: Complexity
+      kept     framework: Authority
+      kept     framework: Return
+
+  TEACHING PRESENT PREVIOUSLY AND ABSENT NOW (5)
+      DROPPED  manager question: what should remain with me
+      DROPPED  manager question: what comes off my plate
+      DROPPED  manager question: how and when reviewed
+      DROPPED  boundary: a vacancy is not the problem
+      DROPPED  resource named: Field Kit
+
+==============================================================================
+VIDEO 8  |  CASE C
+==============================================================================
+
+  the corrected master carries 56% of the previously approved spoken script
+
+  exact source compared:
+      Video_8_FINAL_Revised_Recording_Master.docx
+
+                                     CORRECTED          PREVIOUSLY APPROVED
+  spoken words                       669                1198
+  speech-only estimate               4:37 to 5:09       8:15 to 9:12
+  sections                           9                  8
+  depth retained                     56%
+
+  SECTIONS IN THE PREVIOUSLY APPROVED MASTER
+      HOOK | When your hardest work becomes invisible             123
+      DEMONSTRATION | The finished thing hides the difficult par  185
+      1 | Reconstruct the before                                  186
+      2 | Show the judgment                                       185
+      3 | Keep the proof                                          212
+      ASSEMBLE | Four sentences                                   181
+      ACTION AND RESOURCE                                          78
+      WATCH NEXT | Final visual                                    48
+
+  SECTIONS IN THE CORRECTED MASTER
+      HOOK | Success can hide how hard the work was               141
+      THE PROBLEM | Finished work hides unfinished conditions      80
+      1 | BEFORE: Reconstruct what was true before your solution   87
+      2 | MY PART: Make attribution accurate                       46
+      3 | JUDGMENT: Show what was not obvious                      67
+      4 | PROOF: Keep only what the evidence supports              87
+      EVIDENCE BOUNDARY | Do not take what you are not allowed t   42
+      THE FOUR-SENTENCE IMPACT ACCOUNT                             73
+      CLOSE | Do not let successful work disappear                 46
+
+  TEACHING PRESENT IN BOTH (10)
+      kept     evidence level: Existence
+      kept     evidence level: Use
+      kept     evidence level: Effect
+      kept     application: the stranger test
+      kept     application: remove internal acronyms
+      kept     boundary: keep only permitted material
+      kept     framework: Before
+      kept     framework: My Part
+      kept     framework: Judgment
+      kept     framework: Proof
+
+  TEACHING PRESENT PREVIOUSLY AND ABSENT NOW (1)
+      DROPPED  resource named: Keep the Proof
+
+==============================================================================
+VERDICT
+==============================================================================
+
+  V6, V7 and V8 are CASE C. Each corrected master carries about half
+  the previously approved spoken script. This is not a measurement
+  error, and it is not a full script whose finished runtime will
+  simply run longer: a 575-word script cannot become an 11:30 to
+  12:30 finished video without roughly six minutes of silence.
+
+  NOTHING HAS BEEN EXPANDED. No approved speech has been edited,
+  rewritten or padded. The corrected masters are untouched and their
+  checksums are unchanged. This audit reports; it does not repair.
+
+  V9 to V13 are CASE B. Their corrected masters match the previously
+  approved masters to the word, so their speech-only estimates
+  sitting below the printed finished-runtime targets is the normal
+  difference between speech time and finished time. They are not
+  padded and must not be.
+

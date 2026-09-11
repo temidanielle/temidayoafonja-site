@@ -1,0 +1,30 @@
+# Built packages are withheld from version control until the Videos 6, 7 and
+# 8 depth question is resolved.
+#
+# The packages currently on disk were built from corrected masters that the
+# source-integrity audit shows carry about half the previously approved
+# spoken script for V6, V7 and V8 (see AUDIT/). Committing them would put a
+# compressed V6, V7 and V8 into the repository labeled "regular long-form",
+# which is the exact thing the correction exists to prevent. They also
+# predate the Video 14 Watch Next normalization.
+#
+# Everything needed to reproduce them is tracked: build/ holds the complete
+# build, and _source/ holds the 18 corrected masters with their checksums.
+#
+#   cd build && python3 build421.py
+#
+# Once the V6 to V8 restoration is approved and applied, remove this file and
+# commit the rebuilt packages.
+
+VIDEO_*_CORRECTED_RUNTIME_PACKAGE/
+Video_*_Corrected_Runtime_Package.zip
+Video_*_Corrected_Runtime_Package.zip.sha256
+Videos_4-21_CORRECTED_RUNTIME_Production_Packages.zip
+Videos_4-21_CORRECTED_RUNTIME_Production_Packages.zip.sha256
+Videos_4-21_Delivery_Summary.docx
+SHA256_Manifest.txt
+Prior_Asset_Reuse_and_Change_Table.txt
+Superseded_Materials_Index.txt
+Source_Hierarchy_Manifest.txt
+Runtime_Correction_and_Change_Log.txt
+build/__pycache__/
