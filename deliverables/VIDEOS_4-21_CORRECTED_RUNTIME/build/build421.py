@@ -40,6 +40,7 @@ import masters421 as M
 import recdocs, prodocs, shortsdocs
 import editorial421, flags421, prior421, summary421
 import assetclass421, priortext421, restore678, verifyrestore
+import docqa421
 import publish421, exercise421, qa421, shootall421, riverside421
 import research14
 from frames421 import SETS
@@ -515,6 +516,23 @@ def main():
         for name, ok, detail in rows:
             if not ok:
                 print("        FAIL %s :: %s" % (name, detail))
+
+    # Every Word document in every package, measured before anything is
+    # archived. Rendering 250-odd documents and looking at each is slower
+    # and shallower than measuring them, because the failure modes here are
+    # structural. A sample covering every document type is looked at by eye
+    # separately; this is what stops a broken one reaching a ZIP.
+    docs = docqa421.all_docs(OUT)
+    docbad = [(p_, probs) for p_ in docs for probs in [docqa421.check(p_)]
+              if probs]
+    if docbad:
+        for p_, probs in docbad:
+            print("DOC %s" % os.path.relpath(p_, OUT))
+            for x in probs:
+                print("      %s" % x)
+        raise SystemExit("a Word document is structurally broken")
+    print("document QA: %d Word documents, 0 structural problems"
+          % len(docs))
 
     # Batch-level deliverables.
     combined = "Videos_4-21_CORRECTED_RUNTIME_Production_Packages.zip"

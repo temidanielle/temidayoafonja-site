@@ -22,7 +22,7 @@ import masters421 as M
 from content421 import PSO
 from publish421 import primary_cta, route
 from docs421f import (base_doc, para, title_block, rule, h, kv, callout,
-                      table, bullets, sub, footer_note, numbered,
+                      table, bullets, sub, caption, footer_note, numbered,
                       NAVY, GOLD, DIM, RED)
 
 VIEWER = re.compile(r"\byou\b|\byour\b|\byours\b", re.I)
@@ -117,8 +117,9 @@ def build(n, out_path, stamp):
 
     h(d, "The one primary action")
     para(d, ask, size=12, bold=True, color=NAVY)
-    sub(d, "Spoken at: %s" % cue)
-    sub(d, "Resource route: %s" % (res or "none, and none is added"))
+    caption(d, "Spoken at: %s" % cue)
+    caption(d, "Resource route: %s"
+            % (res or "none, and none is added"))
 
     h(d, "Tests against the corrected master")
     table(d, ["Test", "Result", "Measured"],

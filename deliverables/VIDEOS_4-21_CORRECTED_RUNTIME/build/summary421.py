@@ -19,7 +19,8 @@ import publish421 as PUB
 from frames421 import SETS
 from shorts421 import SHORTS
 from docs421f import (base_doc, para, title_block, rule, h, kv, callout,
-                      table, bullets, sub, footer_note, numbered, mono, hr,
+                      table, bullets, sub, caption, footer_note, numbered,
+                      mono, hr,
                       head, NAVY, GOLD, DIM, RED)
 
 OUT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -328,9 +329,10 @@ def delivery_summary(out_path, stamp, results, combined, rows):
             "%s to %s" % M.estimate(n)[1:],
             M.runtime_intent(n) or "none stated"] for n in M.VIDEOS],
           widths=[0.35, 1.25, 0.6, 1.5, 2.9], size=8)
-    sub(d, "Every figure is arithmetic on the script at 130 to 145 words per "
-           "minute. It is speech only and excludes pauses and visual holds, "
-           "so a recorded runtime will be longer. None of these is measured.")
+    caption(d, "Every figure is arithmetic on the script at 130 to 145 words "
+               "per minute. It is speech only and excludes pauses and visual "
+               "holds, so a recorded runtime will be longer. None of these "
+               "is measured.")
 
     h(d, "What was built")
     table(d, ["V", "Title", "Assets", "Shorts", "Checks", "Files"],
@@ -370,9 +372,9 @@ def delivery_summary(out_path, stamp, results, combined, rows):
               widths=[0.4, 1.0, 5.3], size=8)
     else:
         para(d, "Nothing flagged.")
-    sub(d, "None of these was corrected. Approved speech is not edited, and "
-           "a difference between two approved masters is not resolved by "
-           "rewriting one of them.")
+    caption(d, "None of these was corrected. Approved speech is not edited, "
+               "and a difference between two approved masters is not "
+               "resolved by rewriting one of them.")
 
     h(d, "Package checks")
     para(d, "%d of %d package checks passed. Every check ran against the "

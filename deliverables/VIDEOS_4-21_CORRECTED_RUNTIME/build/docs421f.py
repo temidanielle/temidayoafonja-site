@@ -35,6 +35,16 @@ def block(d, text, size=12.5, after=14):
     return p
 
 
+def caption(d, text, size=9.5):
+    """A quiet note under a block.
+
+    sub() is a short gold label set in capitals. A full sentence passed to
+    it renders as a paragraph of shouting, so anything sentence-shaped
+    belongs here instead.
+    """
+    return para(d, text, size=size, color=DIM, before=5, after=10)
+
+
 def section_label(d, text):
     """A working label from the master. Never spoken."""
     return para(d, text.upper(), size=8.5, bold=True, color=GOLD,
