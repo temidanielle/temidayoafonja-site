@@ -4,7 +4,7 @@ Series-level record of publication gates, open decisions and outstanding
 assets. Kept here so individual video packages do not have to be reopened to
 carry a cross-cutting note.
 
-Last updated: 9 September 2026.
+Last updated: 12 September 2026.
 
 ---
 
@@ -2440,6 +2440,124 @@ held outside this repository, tying either figure to a specific role and
 intervention, with a stated population, baseline and measurement method? If one
 exists, the claims ledger should be updated at the same time as any script that
 would carry the figure.
+
+---
+
+## September 12, 2026 — V4 to V21 source-integrity lock, and two future reservations
+
+### The lock
+
+The V6 to V8 restoration audit is accepted and the restoration report is the
+final source-integrity decision for this correction. Locked:
+
+- **Videos 4 and 5 are the only approximately 5-minute retention-test videos.**
+  The experiment does not extend past V5 and is not a channel-wide runtime
+  strategy.
+- **V6 uses `Video_6_RESTORED_Regular_Length_Recording_Master.docx`.**
+- **V7 uses `Video_7_RESTORED_Regular_Length_Recording_Master.docx`.**
+- **V8 uses `Video_8_RESTORED_Regular_Length_Recording_Master.docx`.**
+- The shortened September 11 V6, V7 and V8 files are **superseded** and remain
+  audit and history files only. They are retained unmodified in `_source/` and
+  travel in each package as `SUPERSEDED_`.
+- **V9 to V14 remain regular long-form.**
+- **V15 to V21 remain the restored fuller regular-length versions**, preserving
+  the approximately 9 to 12 minute teaching depth where specified.
+
+**No further compression pass. Runtime strategy is not reopened.**
+
+The approved restoration approach, for any future correction of this kind:
+preserve the corrected September 11 hooks and architecture; restore previously
+approved teaching depth; invent no new teaching; retain the three documented V6
+adjustments; preserve V8's BEFORE / MY PART / JUDGMENT / PROOF structure; and
+preserve all required boundaries, CTA material and Watch Next routing.
+
+The source-integrity methodology in the restoration report is approved: control
+the parser against masters of known count before trusting any measurement, tag
+every restored line with its provenance, and check the tags against the source
+rather than asserting them.
+
+Restoration report: `VIDEOS_4-21_CORRECTED_RUNTIME/AUDIT/V6_V7_V8_Restoration_Report.docx`.
+
+### Future reservations — RESERVED, UNNUMBERED, RESEARCH / DEVELOPMENT
+
+Neither concept has a video number. **Do not assign one, do not move or
+renumber V4 to V21, and do not build final production packages.** Research and
+editorial development come first. Final scripts are not to be written yet.
+
+#### Future Video A
+
+| Field | Value |
+|---|---|
+| Working title | How to Turn One Accomplishment Into Career Proof So Fast, It Feels Like Cheating |
+| Working thumbnail | ONE WIN → PROOF |
+| Status | Reserved, unnumbered, research / development |
+
+**Painful problem.** An experienced professional knows they did meaningful work
+but struggles to explain why the accomplishment proves anything beyond
+completing a task. The résumé or interview answer becomes "I managed…", "I
+led…", "I supported…" without making the judgment, difficulty, contribution or
+evidence visible.
+
+**Solution direction.** A rapid four-line career-evidence conversion helping the
+viewer identify: what problem or condition existed; what part was actually
+theirs; what judgment, decision or tradeoff they exercised; and what permitted
+evidence supports the result. **The framework name is not final.** Research and
+editorial review may sharpen the language.
+
+**Viewer outcome.** One accomplishment becomes one usable proof statement for a
+performance review, an interview, an internal move or a career pivot.
+
+**Boundaries.** Connects naturally to the Career Evidence Starter. It must NOT
+imply that every accomplishment becomes portable proof — the destination still
+determines what evidence matters.
+
+#### Future Video B
+
+| Field | Value |
+|---|---|
+| Working title | How to Read a Job Description for What Actually Matters So Fast, It Feels Like Cheating |
+| Working thumbnail | IGNORE THE TITLE |
+| Format | WATCH-ME-THINK, using real, current public job descriptions |
+| Status | Reserved, unnumbered, research / development |
+
+**Not** an ATS-keyword video. **Not** generic résumé advice.
+
+**Painful problem.** Experienced professionals misread job descriptions in one
+of two directions: they see unfamiliar titles, terminology or industry language
+and disqualify themselves too quickly; or they see familiar responsibilities and
+assume their experience transfers more cleanly than it actually does.
+
+**Solution direction.** Read the job description through four questions. **Do
+not force an acronym.**
+
+1. **Problem.** What is this person actually being hired to solve?
+2. **Decisions.** What judgment, tradeoffs or decisions will this person
+   actually own or influence?
+3. **Proof.** What evidence would make an employer believe someone can operate
+   at this level?
+4. **Real gap.** What is genuinely context-specific and must be learned, earned,
+   practiced or experienced?
+
+**Viewer outcome.** The viewer can determine whether the role deserves deeper
+investigation, what underlying work looks familiar, what they can actually
+prove, what is only similar language, and what is a real learning or experience
+gap.
+
+**Format note.** This video should visibly demonstrate Temidayo's judgment. The
+viewer should watch her read actual job descriptions and see what she notices
+that a surface reading misses.
+
+#### Research sequencing
+
+- **Future Video B is blocked on the current-job-description research package.**
+  Do not script before it lands.
+- **Future Video A** may draw on the same job descriptions to establish what
+  kinds of evidence employers actually need to see.
+- **Do not assume generic accomplishment language is equally persuasive across
+  destination roles.**
+
+These two are separate from the older four-item future topic queue above and do
+not displace it.
 
 ---
 
