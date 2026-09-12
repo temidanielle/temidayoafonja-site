@@ -23,9 +23,17 @@ card in an old slot.
 """
 import difflib, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import re
 import priortext421 as PT
 import masters421 as M
 from frames421 import SETS
+
+
+def exact(s):
+    """Whitespace and case only. Punctuation is preserved, because the
+    apostrophe a card draws is part of what the viewer reads: normalizing
+    one is a copy change, not a rendering artifact."""
+    return re.sub(r"\s+", " ", s).strip().lower()
 
 UPDATE_FLOOR = 0.60
 NEW_CEILING = 0.25
@@ -44,7 +52,7 @@ def measure(identical_keys):
                 out.append((n, f["key"], "REUSE",
                             "byte-identical to the prior rendered file"))
                 continue
-            if any(nn == p for _, p in pool):
+            if any(exact(new) == exact(raw) for raw, _ in pool):
                 out.append((n, f["key"], "REUSE, RE-RENDERED",
                             "the card's words are unchanged; this build drew "
                             "them, so the file differs"))

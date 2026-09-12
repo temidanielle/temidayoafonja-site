@@ -663,11 +663,13 @@ SETS[6] = [
    hold="Hold to the end.",
    sound="Candidate: one restrained transition sound, then music fade.",
    after="NO RETURN TO CAMERA. Watch Next is final.",
-   status="COPY UPDATE",
-   why="Card unchanged. The trigger moves to the restored "
-       "spoken Watch Next line. The compressed master had "
-       "no spoken handoff, so the card had been cued off "
-       "the final teaching sentence instead."),
+   status="REBUILD",
+   why="The destination is still Video 7, but its title changed entirely "
+       "in the correction, so every word this card draws is different from "
+       "the September 9 card, which read 'Are You Growing, or Just Being "
+       "Given More Work?'. The spoken cue also moves to the restored Watch "
+       "Next line; the compressed master had no spoken handoff, so the card "
+       "had been cued off the final teaching sentence instead."),
 ]
 
 # ------------------------------------------------------------------- V7
@@ -927,11 +929,12 @@ SETS[7] = [
    hold="Hold to the end.",
    sound="Candidate: one restrained transition sound, then music fade.",
    after="NO RETURN TO CAMERA. Watch Next is final.",
-   status="COPY UPDATE",
-   why="Card unchanged. The trigger moves to the restored "
-       "spoken Watch Next line. The compressed master had "
-       "no spoken handoff, so the card had been cued off "
-       "the final teaching sentence instead."),
+   status="REUSE",
+   why="The rendered card is byte-identical to the prior one. Only the "
+       "spoken cue moved, to the restored Watch Next line, and a cue is a "
+       "direction to the reader rather than anything drawn on the card. "
+       "The compressed master had no spoken handoff, so the card had been "
+       "cued off the final teaching sentence instead."),
 ]
 
 # ------------------------------------------------------------------- V8
@@ -1147,11 +1150,12 @@ SETS[8] = [
    hold="Hold to the end.",
    sound="Candidate: one restrained transition sound, then music fade.",
    after="NO RETURN TO CAMERA. Watch Next is final.",
-   status="COPY UPDATE",
-   why="Card unchanged. The trigger moves to the restored "
-       "spoken Watch Next line. The compressed master had "
-       "no spoken handoff, so the card had been cued off "
-       "the final teaching sentence instead."),
+   status="REUSE",
+   why="The rendered card is byte-identical to the prior one. Only the "
+       "spoken cue moved, to the restored Watch Next line, and a cue is a "
+       "direction to the reader rather than anything drawn on the card. "
+       "The compressed master had no spoken handoff, so the card had been "
+       "cued off the final teaching sentence instead."),
 ]
 
 # ------------------------------------------------------------------- V9
@@ -3124,7 +3128,7 @@ SETS[20] = [
    status="REUSE",
    why="Concept and trigger both survive into the restored master. The "
        "opening sentence itself is reworded, and it remains a real personal "
-       "account that is never labelled an illustration."),
+       "account that is never labeled an illustration."),
 
  F(key="v20_02_what_can_you_prove",
    draw=lambda c: X.duo(
@@ -3227,7 +3231,7 @@ SETS[20] = [
    sound="Not a candidate. The label needs to be read.",
    status="COPY UPDATE",
    why="Concept preserved; trigger and copy updated. This constructed "
-       "illustration is labelled; the opening personal account is not, and "
+       "illustration is labeled; the opening personal account is not, and "
        "the two must never be confused."),
 
  F(key="v20_07_framing_and_bias",

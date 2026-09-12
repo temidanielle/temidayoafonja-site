@@ -170,7 +170,7 @@ SHORTS[5] = [
      "Translation is not changing the story. It is removing the "
      "context-specific language so the useful judgment becomes visible.",
    ],
-   visual="An internal programme name replaced by the underlying work.",
+   visual="An internal program name replaced by the underlying work.",
    cta="Translate one accomplishment out of its old context.",
    source="V5 translate."),
  S(priority="A", slug="v5_a4_prove_the_level",
@@ -367,7 +367,7 @@ SHORTS[7] = [
      "Authority is what you can influence or decide.",
      "Those three do not always expand together.",
      "You can own a deadline and still be unable to reduce scope. You can be "
-     "accountable for a programme and still be unable to secure the people "
+     "accountable for a program and still be unable to secure the people "
      "it requires.",
      "Your judgment should have somewhere to go.",
    ],
@@ -605,7 +605,7 @@ SHORTS[9] = [
      "That is not a script to memorize. It shows the shape of the decision.",
      "Relevant evidence. Named learning. Verified requirements.",
    ],
-   visual="The three parts of the introduction, labelled.",
+   visual="The three parts of the introduction, labeled.",
    cta="Build yours from evidence, learning, and verification.",
    source="V9 put it together."),
  S(priority="B", slug="v9_b2_the_tradeoff",
@@ -845,7 +845,7 @@ SHORTS[12] = [
      "Nothing can change. That is a conclusion.",
      "They are not the same thing.",
    ],
-   visual="The two sentences side by side, labelled.",
+   visual="The two sentences side by side, labeled.",
    cta="Name your constraint precisely enough to plan around it.",
    source="V12 hook."),
  S(priority="A", slug="v12_a2_name_the_constraint",

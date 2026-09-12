@@ -98,6 +98,44 @@ def sha256(p):
     return h.hexdigest()
 
 
+def master_corpus(n):
+    """Everything the supplied or restored master says, as one string.
+
+    House style is a rule about what this build writes. Several masters
+    carry en dashes of their own, in a runtime row or a section name, and
+    the change log and manifests quote those rows back verbatim. Flagging
+    the quotation would be asking the package to correct approved copy,
+    which is the one thing it must not do.
+    """
+    m = M.read(n)
+    parts = [M.spoken_text(n)]
+    parts += [str(v) for v in m["meta"].values()]
+    parts += [nm for nm, _ in m["sections"]]
+    parts += list(m["tail"])
+    if n in M.RESTORED:
+        parts.append(m["supplied_file"])
+    return _norm(" ".join(parts)).lower()
+
+
+def quoted(n, unit, hit, window=42):
+    """True when the offending fragment is the master's own wording."""
+    # Case-folded: a manifest or change log may set a master's own section
+    # name in capitals, and that is a typographic choice by this build, not
+    # a different sentence.
+    u, corpus = _norm(unit).lower(), master_corpus(n)
+    i = u.find(_norm(hit).lower())
+    if i < 0:
+        return False
+    frag = u[max(0, i - window):i + len(_norm(hit)) + window].strip()
+    # Walk inward until a fragment long enough to be meaningful is found
+    # inside the master, so a short coincidence cannot excuse a real slip.
+    while len(frag) > 18:
+        if frag in corpus:
+            return True
+        frag = frag[2:-2].strip() if len(frag) > 24 else frag[1:].strip()
+    return False
+
+
 def _norm(s):
     return re.sub(r"\s+", " ", s.replace("’", "'").replace("“", '"')
                   .replace("”", '"').replace("—", "-").replace("–", "-"))
@@ -291,12 +329,20 @@ def run(n, pkg):
        "no invented employer, client or personal claim")
 
     # --- language ------------------------------------------------------
-    dash = [u[:70] for u in authored if "—" in u or "–" in u]
-    ck("No em dashes or en dashes", not dash, dash[:2] or "clean")
-    brit = [u[:70] for u in authored
-            if re.search(r"\b(colour|behaviour|organis(e|ed|ing|ation)|"
-                         r"recognis(e|ed|ing)|analys(e|ed)|labelled|centre|"
-                         r"programme|whilst|amongst)\b", u, re.I)]
+    dash = [u[:70] for u in authored
+            if ("—" in u or "–" in u)
+            and not quoted(n, u, "—" if "—" in u else "–")]
+    ck("No em dashes or en dashes", not dash, dash[:2] or
+       "clean in everything this build authored. Master wording carrying "
+       "its own dashes is quoted verbatim and not corrected")
+    BRIT = re.compile(r"\b(colour|behaviour|organis(e|ed|ing|ation)|"
+                      r"recognis(e|ed|ing)|analys(e|ed)|labelled|centre|"
+                      r"programme|whilst|amongst)\b", re.I)
+    brit = []
+    for u in authored:
+        m_ = BRIT.search(u)
+        if m_ and not quoted(n, u, m_.group(0)):
+            brit.append("%s :: %s" % (m_.group(0), u[:60]))
     ck("U.S. English", not brit, brit[:2] or "no British spellings")
 
     # --- assets ---------------------------------------------------------
@@ -373,11 +419,19 @@ def run(n, pkg):
     stray = {u.replace("https://", "") for u in urls} - allowed
     ck("No invented URLs", not stray, stray or
        "only the four existing resource routes appear")
-    chapters = [u[:60] for u in us
-                if re.search(r"(?m)^\s*\d{1,2}:\d{2}(:\d{2})?\s+[A-Za-z]",
-                             u)]
+    # A YouTube chapter list starts at 0:00 and has several entries. A
+    # single timestamp at the start of a line is far more likely to be a
+    # wrapped runtime estimate, which every package states deliberately, so
+    # matching one of those would fail the package for saying what it must.
+    STAMP = re.compile(r"(?m)^\s*(\d{1,2}:\d{2}(?::\d{2})?)\s+[A-Za-z]")
+    chapters = []
+    for u in us:
+        stamps = STAMP.findall(u)
+        if len(stamps) >= 3 and any(s_.startswith(("0:00", "00:00"))
+                                    for s_ in stamps):
+            chapters.append(u[:60])
     ck("No invented chapters", not chapters, chapters[:2] or
-       "no chapter list anywhere. Runtime estimates are labeled as "
+       "no chapter list anywhere. Runtime estimates are stated as "
        "estimates; chapters come from the final export")
     ck("No invented music attribution",
        not any(re.search(r"music (by|from|licen[cs]e)|track:", u, re.I)
