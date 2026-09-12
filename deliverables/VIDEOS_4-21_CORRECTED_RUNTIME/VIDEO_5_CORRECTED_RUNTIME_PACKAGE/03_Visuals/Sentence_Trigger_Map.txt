@@ -1,0 +1,72 @@
+==============================================================================
+VIDEO 5  |  SENTENCE TRIGGER MAP
+==============================================================================
+
+I Changed Career Tracks Without Starting Over. Here's What I Carried With Me.
+
+Every graphic with the exact spoken sentence that cues it.
+Each trigger was verified to exist inside a single thought block of
+the locked master, so no cue is built from words that span two
+takes.
+
+------------------------------------------------------------------------------
+
+ 1. v5_01_changed_tracks_not_zero
+    TRIGGER: When you change career tracks, other people can start reading you like a beginner. The more expensive mistake is when you start doing it to yourself.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 2. v5_02_four_things
+    TRIGGER: What helped was separating four things: what I could Carry, what I had to Translate, what I genuinely needed to Relearn, and what I could Prove.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 3. v5_03_carry_test
+    TRIGGER: Ask: if the employer name, old title, and industry language disappeared, which parts of my experience would still help me solve the destination problem?
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 4. v5_04_translate
+    TRIGGER: Do not repeat the old label and hope they understand it. Translate the underlying work.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 5. v5_05_relearn_without_beginner
+    TRIGGER: Those gaps matter. Your experience does not make them optional. But needing to learn them does not erase everything you already know how to do.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 6. v5_06_confidence_both_directions
+    TRIGGER: You do not need to apologize for every gap. But you also do not get to rename a real domain or credential requirement as a transferable skill because that makes the move easier to explain.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 7. v5_07_prove_the_level
+    TRIGGER: Do not rely on 'I have fifteen years of experience' or 'I was a director.' Those statements tell me duration and title, not what level of judgment you can carry into a new context.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 8. v5_08_four_line_move_case
+    TRIGGER: For one move you are considering, write four lines:
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 9. v5_09_cta
+    TRIGGER: That gives you a more honest position than either 'I am starting over' or 'everything I have done transfers.'
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+10. v5_10_watch_next
+    TRIGGER: The job is to know what travels, translate it clearly, relearn what does not, and prove the level you are asking someone else to trust.
+    MODE:    FULL SCREEN
+    AFTER:   NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+BEATS THAT ARE DELIBERATELY NOT GRAPHICS
+
+  The real personal account in the opening, where the master has
+  one, stays camera-led.
+  Any moment where the master's honesty depends on the viewer
+  watching Temidayo say it.
+  Anything a graphic would only decorate.

@@ -1,0 +1,182 @@
+{
+  "video": 7,
+  "title": "It Took Me Years to Stop Mistaking More Work for Career Growth",
+  "generated": "Saturday, September 12, 2026 | 5:28 AM CT (America/Chicago, UTC-05:00)",
+  "spoken_source_of_truth": {
+    "file": "Video_7_RESTORED_Regular_Length_Recording_Master.docx",
+    "sha256": "1ebe2b9c0132c4f87d1b3c38b82ad33729c6200414aedd2ff93c0066fcf43c14",
+    "note": "Copied unchanged into 01_Recording_Master. Never written to. This file overrides every earlier script."
+  },
+  "secondary_reference": [
+    {
+      "body": "SEP09_V4_V7",
+      "description": "Videos 4 to 7 handoff package, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP09_V8_V13",
+      "description": "Videos 8 to 13 production packages, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP10_V14_V21",
+      "description": "Videos 14 to 21 final production packages, September 10, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    }
+  ],
+  "runtime": {
+    "mode": "REGULAR LONG-FORM",
+    "is_five_minute_test": false,
+    "restored_regular_depth": false,
+    "target_stated_by_master": "Regular long-form. Restored to the approved September 9 depth: approximately 8:28 to 9:27 speech-only.",
+    "note": "Videos 4 and 5 are the only 5-minute retention test. Videos 6 to 21 are regular long-form and were not shortened to meet a 5-minute target."
+  },
+  "packaging": {
+    "thumbnail": "MORE WORK ≠ GROWTH",
+    "framework": "CAR: Complexity | Authority | Return",
+    "primary_cta": "On one responsibility you added in the last six months.",
+    "primary_cta_spoken_at": "If you want a structured way to examine what your current work is actually building in you, the Capability Formation Field Kit helps you read the evidence in your role, see where your options may be expanding or narrowing, and identify where the role may need a boundary or redesign. It is linked below.",
+    "resource": "Capability Formation Field Kit",
+    "resource_spoken": true,
+    "watch_next": "Video 8: How to Show Your Impact at Work When You Built It From Scratch",
+    "watch_next_source": "the master's Watch Next row"
+  },
+  "script": {
+    "sections": 10,
+    "thought_blocks": 49,
+    "spoken_words": 1229,
+    "speech_only_estimate": "8:29 to 9:27 at 130 to 145 words per minute",
+    "estimate_note": "Arithmetic on the script. Excludes pauses and visual holds. Not a timed read and not a runtime."
+  },
+  "assets": [
+    {
+      "file": "v7_01_valuable_to_them_not_to_you.png",
+      "status": "REBUILD",
+      "why": "V7_MG01_Opening_Consequence.png opened on a different consequence. The corrected master opens on the value trade, so the frame is rebuilt.",
+      "mode": "FULL SCREEN",
+      "trigger": "You can become more valuable to your organization without becoming more valuable to your own future."
+    },
+    {
+      "file": "v7_02_car.png",
+      "status": "NEW",
+      "why": "Reclassified from REUSE to NEW. Measured: nothing in the prior package resembles it; the closest card shares 10% of its text. The editorial note written when this card was built, kept as written: V7_MG02_CAR_Framework.png carries the same framework and the corrected master preserves CAR exactly. Regenerated because the question wording under each letter is updated.",
+      "mode": "FULL SCREEN",
+      "trigger": "I use three tests now: Complexity, Authority, Return. CAR."
+    },
+    {
+      "file": "v7_03_dependable_people.png",
+      "status": "NEW",
+      "why": "The corrected master adds this mechanism section.",
+      "mode": "FULL SCREEN",
+      "trigger": "Reliability attracts work quickly. Authority, support, recognition, and formal scope often arrive later, if they arrive at all."
+    },
+    {
+      "file": "v7_04_complexity.png",
+      "status": "NEW",
+      "why": "Reclassified from REUSE to NEW. Measured: nothing in the prior package resembles it; the closest card shares 6% of its text. The editorial note written when this card was built, kept as written: V7_MG03_Complexity.png covers the same test and the corrected master preserves it. Copy updated to the corrected variable list.",
+      "mode": "FULL SCREEN",
+      "trigger": "Complexity changes when the variables change: a new customer, a new regulation, a different operating model, conflicting priorities, incomplete instructions, stakeholders whose incentives do not line up."
+    },
+    {
+      "file": "v7_05_authority.png",
+      "status": "COPY UPDATE",
+      "why": "Reclassified from REUSE to COPY UPDATE. Measured: 70% of the text is shared with the prior card, which read: A IS FOR AUTHORITY Three words people use as one. RESPONSIBILITY What you carry. ACCOUNTABILITY What you answ…. The editorial note written when this card was built, kept as written: V7_MG04_Authority.png carries the same three-way separation, preserved by the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "Responsibility is what you are expected to carry. Accountability is what you will answer for. Authority is what you can influence or decide. Those three do not always expand together."
+    },
+    {
+      "file": "v7_06_return.png",
+      "status": "REBUILD",
+      "why": "Reclassified from REUSE to REBUILD. Measured: only 44% of the text is shared with the closest prior card, which read: R IS FOR RETURN 01 CAPABILITY 02 EVIDENCE 03 RECOGNITION What did the work return?. The editorial note written when this card was built, kept as written: V7_MG05_Return.png carries the same three returns and the praise line, both preserved by the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "I look in three places: capability, evidence, and recognition."
+    },
+    {
+      "file": "v7_07_read_the_car_pattern.png",
+      "status": "NEW",
+      "why": "The section it serves was cut out of the compressed master and is restored from the approved September 9 master, so no prior card exists for it.",
+      "mode": "FULL SCREEN",
+      "trigger": "If volume increased but Complexity, Authority, and Return did not, the role has expanded mainly as workload."
+    },
+    {
+      "file": "v7_07_review_point.png",
+      "status": "COPY UPDATE",
+      "why": "V7_MG06_Pattern_Read.png covered reading the pattern. The corrected master ends on three questions asked before saying yes.",
+      "mode": "FULL SCREEN",
+      "trigger": "Before the next ‘Can you take this too?’, ask: what becomes more complex? What authority comes with it? When will we review what this additional scope returns?"
+    },
+    {
+      "file": "v7_08_scope_conversation.png",
+      "status": "NEW",
+      "why": "The section it serves was cut out of the compressed master and is restored from the approved September 9 master, so no prior card exists for it.",
+      "mode": "FULL SCREEN",
+      "trigger": "Then take four questions into the conversation with your manager: Which of these responsibilities should remain with me?"
+    },
+    {
+      "file": "v7_08_more_work_is_not_proof.png",
+      "status": "NEW",
+      "why": "The corrected master's closing line differs from the September 9 ending.",
+      "mode": "FULL SCREEN",
+      "trigger": "More work can be part of growth. It is not proof of it."
+    },
+    {
+      "file": "v7_09_cta.png",
+      "status": "REBUILD",
+      "why": "Rebuilt for the restored master. The compressed September 11 master had no spoken CTA at all, so this card correctly carried the action alone. The restored master speaks the Field Kit once after the teaching, exactly as the approved September 9 master did, so the card carries the route again.",
+      "mode": "FULL SCREEN",
+      "trigger": "If you want a structured way to examine what your current work is actually building in you, the Capability Formation Field Kit helps you read the evidence in your role, see where your options may be expanding or narrowing, and identify where the role may need a boundary or redesign. It is linked below."
+    },
+    {
+      "file": "v7_10_watch_next.png",
+      "status": "REUSE",
+      "why": "The rendered card is byte-identical to the prior one. Only the spoken cue moved, to the restored Watch Next line, and a cue is a direction to the reader rather than anything drawn on the card. The compressed master had no spoken handoff, so the card had been cued off the final teaching sentence instead.",
+      "mode": "FULL SCREEN",
+      "trigger": "In the next video, I will show you how to make that work visible: 'How to Show Your Impact at Work When You Built It From Scratch.'"
+    }
+  ],
+  "shorts": [
+    {
+      "slug": "v7_a1_valuable_to_them",
+      "priority": "A",
+      "title": "More valuable to them, not to your future",
+      "source": "V7 hook."
+    },
+    {
+      "slug": "v7_a2_complexity",
+      "priority": "A",
+      "title": "Did the problem get harder, or did the volume get bigger?",
+      "source": "V7 complexity."
+    },
+    {
+      "slug": "v7_a3_authority",
+      "priority": "A",
+      "title": "Three things that do not expand together",
+      "source": "V7 authority."
+    },
+    {
+      "slug": "v7_a4_review_point",
+      "priority": "A",
+      "title": "Ask for the review point",
+      "source": "V7 use CAR before you say yes."
+    },
+    {
+      "slug": "v7_b1_dependable_people",
+      "priority": "B",
+      "title": "Why dependable people are vulnerable",
+      "source": "V7 why dependable people are vulnerable."
+    },
+    {
+      "slug": "v7_b2_praise_is_not_role_design",
+      "priority": "B",
+      "title": "Praise alone is not role design",
+      "source": "V7 return."
+    }
+  ],
+  "not_verified": [
+    "Nothing in this package has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

@@ -1,0 +1,119 @@
+==============================================================================
+VIDEO 5  |  QA REPORT
+==============================================================================
+
+I Changed Career Tracks Without Starting Over. Here's What I Carried With Me.
+
+37 package checks completed now. 37 passed.
+Every check ran against the built package on disk, not against the
+build data, so a check cannot pass because of something that was
+true only in a source module.
+
+------------------------------------------------------------------------------
+
+PACKAGE CHECKS COMPLETED NOW
+
+  [PASS] Correct new final master used
+         Video_5_FINAL_5_Minute_Test_Recording_Master.docx
+  [PASS] Master copied unchanged
+         SHA-256 afbf7211669c436d25c34713537234e7d9b35264d2cc8dc45c425e4d1d37b092
+  [PASS] Spoken reading copy matches the master
+         22 blocks present
+  [PASS] Script-only copy matches the master exactly
+         22 blocks, in order
+  [PASS] Correct title
+         I Changed Career Tracks Without Starting Over. Here's What I Carried With Me.
+  [PASS] Correct thumbnail wording
+         CHANGED TRACKS. NOT ZERO.
+  [PASS] Correct framework
+         none stated by the master
+  [PASS] Correct CTA
+         Write the four lines. Carry. Translate. Relearn. Prove. More honest than 'I am starting over' or 'everything transfers.'
+  [PASS] The CTA is the one the master speaks
+         That gives you a more honest position than either 'I am starting over' or 'everything I have done transfers.'
+  [PASS] No resource added where the master names none
+         master names none; none added
+  [PASS] Correct Watch Next
+         Video 6: I've Worked Across 8 Industries and Sectors. Here's How I Know If a New Role Is Actually Growth. (from the Watch Next card in the production deck)
+  [PASS] Watch Next names the destination master's exact title
+         I've Worked Across 8 Industries and Sectors. Here's How I Know If a New Role Is Actually Growth.
+  [PASS] Current teaching sequence used
+         7 sections from the master
+  [PASS] All sentence triggers exist in the current master
+         10 triggers verified inside single blocks
+  [PASS] No Code-draft script contamination
+         no superseded draft wording found anywhere in the package
+  [PASS] Runtime mode stated correctly
+         5-MINUTE RETENTION TEST, stated in the package
+  [PASS] Marked as the 5-minute retention test
+         V4 and V5 are the only two videos in the experiment
+  [PASS] The experiment is scoped to V4 and V5 only
+         the package says the experiment does not extend past V5
+  [PASS] No invented employer or personal claim
+         no invented employer, client or personal claim
+  [PASS] No em dashes or en dashes
+         clean in everything this build authored. Master wording carrying its own dashes is quoted verbatim and not corrected
+  [PASS] U.S. English
+         no British spellings
+  [PASS] Assets 1920x1080 minimum
+         10 PNGs, sizes [(1920, 1080)]
+  [PASS] Mobile legibility inspected visually
+         phone-size contact sheet rendered and inspected by eye at 393 px per frame
+  [PASS] Editable source deck supplied
+         PowerPoint deck at 1920 by 1080
+  [PASS] True full-screen rules explicit
+         full-screen rule and the Watch Next exception both stated
+  [PASS] No burned-in caption instruction present
+         stated in the prompt
+  [PASS] SRT requirement present
+         SRT is required from the final timeline, not the script
+  [PASS] Camera movement budget correct
+         one combined budget of about 3 to 5 beats
+  [PASS] Sound budget correct
+         about 4 to 7 for the whole video, candidates not cumulative
+  [PASS] Audio and visual transition hooks present
+         the rule and its limit are both stated
+  [PASS] One visual Subscribe cue
+         visual only, and none is spoken
+  [PASS] Watch Next final, no return to camera
+         stated in the prompt and on the Watch Next scene
+  [PASS] Six Shorts
+         6 scripts, 4 Priority A and 2 Priority B
+  [PASS] Publishing copy aligned to the master
+         title and thumbnail taken from the master verbatim
+  [PASS] No invented URLs
+         only the four existing resource routes appear
+  [PASS] No invented chapters
+         no chapter list anywhere. Runtime estimates are stated as estimates; chapters come from the final export
+  [PASS] No invented music attribution
+         no music credit or licence code recorded
+
+------------------------------------------------------------------------------
+
+FINAL-EXPORT CHECKS, STILL PENDING
+
+  These are NOT complete and are not claimed. A written prompt does
+  not prove an effect exists in the finished video.
+
+  [ PENDING ] Actual recorded delivery
+  [ PENDING ] Actual runtime
+  [ PENDING ] Actual executed jump cuts
+  [ PENDING ] Executed zoom-ins and pull-backs
+  [ PENDING ] Executed motion graphics
+  [ PENDING ] B-roll placement
+  [ PENDING ] Actual audio clarity
+  [ PENDING ] Final loudness
+  [ PENDING ] Music and effects balance
+  [ PENDING ] Picture quality
+  [ PENDING ] Caption absence on the exported video
+  [ PENDING ] SRT synchronization
+  [ PENDING ] Final chapters
+  [ PENDING ] Final Watch Next hold
+  [ PENDING ] Clean ending
+  [ PENDING ] Thumbnail artwork approval
+  [ PENDING ] Public link accessibility
+
+------------------------------------------------------------------------------
+
+  Nothing in this list can be checked until the video has been
+  recorded, edited and exported.

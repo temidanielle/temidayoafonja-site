@@ -1,0 +1,168 @@
+{
+  "video": 11,
+  "title": "AI Can Do the Task. What Are You Still Paid For?",
+  "generated": "Saturday, September 12, 2026 | 5:28 AM CT (America/Chicago, UTC-05:00)",
+  "spoken_source_of_truth": {
+    "file": "Video_11_FINAL_Revised_Recording_Master.docx",
+    "sha256": "adcf761a759437fc0679b7c255e6d6303f1b556dc3a9e54e89ccd55219b49e2b",
+    "note": "Copied unchanged into 01_Recording_Master. Never written to. This file overrides every earlier script."
+  },
+  "secondary_reference": [
+    {
+      "body": "SEP09_V4_V7",
+      "description": "Videos 4 to 7 handoff package, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP09_V8_V13",
+      "description": "Videos 8 to 13 production packages, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP10_V14_V21",
+      "description": "Videos 14 to 21 final production packages, September 10, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    }
+  ],
+  "runtime": {
+    "mode": "REGULAR LONG-FORM",
+    "is_five_minute_test": false,
+    "restored_regular_depth": false,
+    "target_stated_by_master": "Approximately 9:30 to 10:30",
+    "note": "Videos 4 and 5 are the only 5-minute retention test. Videos 6 to 21 are regular long-form and were not shortened to meet a 5-minute target."
+  },
+  "packaging": {
+    "thumbnail": "THE TASK ISN'T THE JOB",
+    "framework": "Produce. Interpret. Decide. Verify across all three.",
+    "primary_cta": "Build the three-column map.",
+    "primary_cta_spoken_at": "Choose one recurring output before your next role conversation.",
+    "resource": "Capability Formation Field Kit",
+    "resource_spoken": true,
+    "watch_next": "Video 12: What to Do When You Can’t Quit Your Job Yet",
+    "watch_next_source": "the master's Watch Next row"
+  },
+  "script": {
+    "sections": 8,
+    "thought_blocks": 112,
+    "spoken_words": 1198,
+    "speech_only_estimate": "8:16 to 9:13 at 130 to 145 words per minute",
+    "estimate_note": "Arithmetic on the script. Excludes pauses and visual holds. Not a timed read and not a runtime."
+  },
+  "assets": [
+    {
+      "file": "v11_01_can_we_reduce_the_team.png",
+      "status": "COPY UPDATE",
+      "why": "Reclassified from REUSE to COPY UPDATE. Measured: 88% of the text is shared with the prior card, which read: “DOES THIS MEAN WE CAN REDUCE THE TEAM?” That is the moment the job changes.. The editorial note written when this card was built, kept as written: V11_MG01_Can_We_Reduce_The_Team.png carries the same opening question, preserved by the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "“Does this mean we can reduce the team?”"
+    },
+    {
+      "file": "v11_02_task_is_not_the_job.png",
+      "status": "REBUILD",
+      "why": "Reclassified from REUSE to REBUILD. Measured: only 50% of the text is shared with the closest prior card, which read: THE FRAMEWORK 01 PRODUCE 02 INTERPRET 03 DECIDE And verify across all three.. The editorial note written when this card was built, kept as written: V11_MG04_Produce_Interpret_Decide.png carries the same framework, preserved by the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "Produce. Interpret. Decide."
+    },
+    {
+      "file": "v11_03_headline_rate.png",
+      "status": "NEW",
+      "why": "Reclassified from REUSE to NEW. Measured: nothing in the prior package resembles it; the closest card shares 8% of its text. The editorial note written when this card was built, kept as written: V11_MG02_The_Headline_Rate.png carries the same synthetic figures and label, preserved by the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "Here is a small synthetic service report. These are invented teaching numbers, not customer data and not a result from my career."
+    },
+    {
+      "file": "v11_04_the_mix_changed.png",
+      "status": "NEW",
+      "why": "Reclassified from REUSE to NEW. Measured: nothing in the prior package resembles it; the closest card shares 21% of its text. The editorial note written when this card was built, kept as written: V11_MG03_The_Mix_Changed.png carries the same reveal, preserved by the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "What changed was the mix. The second period had far more routine cases and fewer complex ones."
+    },
+    {
+      "file": "v11_05_what_it_does_not_establish.png",
+      "status": "NEW",
+      "why": "Reclassified from REUSE to NEW. Measured: nothing in the prior package resembles it; the closest card shares 4% of its text. The editorial note written when this card was built, kept as written: V11_MG05_What_It_Does_Not_Establish.png carries the same boundary, preserved by the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "It does not establish that people became more effective within each category."
+    },
+    {
+      "file": "v11_06_the_boundary_is_not.png",
+      "status": "NEW",
+      "why": "The corrected master adds this explicit refusal, which the prior package did not carry.",
+      "mode": "FULL SCREEN",
+      "trigger": "So the boundary is not:"
+    },
+    {
+      "file": "v11_07_who_owns_the_consequence.png",
+      "status": "COPY UPDATE",
+      "why": "Reclassified from REUSE to COPY UPDATE. Measured: 74% of the text is shared with the prior card, which read: THREE | DECIDE 01 Who is authorized to make the change? 02 Which risks must be accepted or reduced? 03 What a…. The editorial note written when this card was built, kept as written: V11_MG06_Who_Owns_The_Consequence.png carries the same set, preserved by the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "Those are organizational responsibilities."
+    },
+    {
+      "file": "v11_08_map_your_role.png",
+      "status": "REBUILD",
+      "why": "Reclassified from REUSE to REBUILD. Measured: only 29% of the text is shared with the closest prior card, which read: CAPABILITY FORMATION FIELD KIT A broader read of what your work is building. Not an AI certification and not …. The editorial note written when this card was built, kept as written: V11_MG07_Map_Your_Role.png carries the same application. Copy updated to attach the corrected master's limit.",
+      "mode": "FULL SCREEN",
+      "trigger": "Take one recurring output from your job."
+    },
+    {
+      "file": "v11_09_cta.png",
+      "status": "COPY UPDATE",
+      "why": "The prior package routed V11 to the Field Kit and the corrected master keeps that route. The headline changes with the corrected action.",
+      "mode": "FULL SCREEN",
+      "trigger": "Choose one recurring output before your next role conversation."
+    },
+    {
+      "file": "v11_10_watch_next.png",
+      "status": "COPY UPDATE",
+      "why": "Reclassified from REUSE to COPY UPDATE. Measured: 92% of the text is shared with the prior card, which read: WATCH NEXT What to Do When You Can’t Quit Your Job Yet. The editorial note written when this card was built, kept as written: Destination and title unchanged from the prior package.",
+      "mode": "FULL SCREEN",
+      "trigger": "Watch “What to Do When You Can’t Quit Your Job Yet” next."
+    }
+  ],
+  "shorts": [
+    {
+      "slug": "v11_a1_can_we_reduce_the_team",
+      "priority": "A",
+      "title": "Does this mean we can reduce the team?",
+      "source": "V11 hook."
+    },
+    {
+      "slug": "v11_a2_the_mix_changed",
+      "priority": "A",
+      "title": "The headline improved. The work did not.",
+      "source": "V11 demonstration."
+    },
+    {
+      "slug": "v11_a3_produce_interpret_decide",
+      "priority": "A",
+      "title": "The task is not the whole job",
+      "source": "V11 map your role."
+    },
+    {
+      "slug": "v11_a4_output_is_not_a_decision",
+      "priority": "A",
+      "title": "A report is an output. Reducing a team is a decision.",
+      "source": "V11 decide."
+    },
+    {
+      "slug": "v11_b1_the_boundary",
+      "priority": "B",
+      "title": "The boundary is not machines never interpret",
+      "source": "V11 interpret."
+    },
+    {
+      "slug": "v11_b2_no_ai_proof_job",
+      "priority": "B",
+      "title": "Do not look for an AI-proof job",
+      "source": "V11 map your role."
+    }
+  ],
+  "not_verified": [
+    "Nothing in this package has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

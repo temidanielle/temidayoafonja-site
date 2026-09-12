@@ -1,0 +1,168 @@
+{
+  "video": 13,
+  "title": "A 30-Day Plan to Test Your Next Career Move",
+  "generated": "Saturday, September 12, 2026 | 5:28 AM CT (America/Chicago, UTC-05:00)",
+  "spoken_source_of_truth": {
+    "file": "Video_13_FINAL_Revised_Recording_Master.docx",
+    "sha256": "f80d7d2afcb6f30081e7d860ad790a527ac5845c87e633312dd410e3df12dbc8",
+    "note": "Copied unchanged into 01_Recording_Master. Never written to. This file overrides every earlier script."
+  },
+  "secondary_reference": [
+    {
+      "body": "SEP09_V4_V7",
+      "description": "Videos 4 to 7 handoff package, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP09_V8_V13",
+      "description": "Videos 8 to 13 production packages, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP10_V14_V21",
+      "description": "Videos 14 to 21 final production packages, September 10, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    }
+  ],
+  "runtime": {
+    "mode": "REGULAR LONG-FORM",
+    "is_five_minute_test": false,
+    "restored_regular_depth": false,
+    "target_stated_by_master": "Approximately 9:45 to 10:45",
+    "note": "Videos 4 and 5 are the only 5-minute retention test. Videos 6 to 21 are regular long-form and were not shortened to meet a 5-minute target."
+  },
+  "packaging": {
+    "thumbnail": "TEST BEFORE YOU QUIT",
+    "framework": "Define. Investigate. Try. Decide.",
+    "primary_cta": "Write the hypothesis before you add another course.",
+    "primary_cta_spoken_at": "Choose one destination and write the hypothesis before you add another course or application to the list.",
+    "resource": "Capability Formation Field Kit",
+    "resource_spoken": true,
+    "watch_next": "Video 9: How to Change Industries Without Starting Over",
+    "watch_next_source": "the master's Watch Next row"
+  },
+  "script": {
+    "sections": 9,
+    "thought_blocks": 125,
+    "spoken_words": 1274,
+    "speech_only_estimate": "8:47 to 9:48 at 130 to 145 words per minute",
+    "estimate_note": "Arithmetic on the script. Excludes pauses and visual holds. Not a timed read and not a runtime."
+  },
+  "assets": [
+    {
+      "file": "v13_01_career_activity.png",
+      "status": "COPY UPDATE",
+      "why": "The prior package opened differently. The corrected master leads with the anti-activity hook.",
+      "mode": "FULL SCREEN",
+      "trigger": "It can make you feel productive without answering the decision."
+    },
+    {
+      "file": "v13_02_define_investigate_try_decide.png",
+      "status": "REBUILD",
+      "why": "Reclassified from REUSE to REBUILD. Measured: only 40% of the text is shared with the closest prior card, which read: THE PLAN 01 DEFINE 02 INVESTIGATE 03 TRY 04 DECIDE And “not this option” is allowed to be a good result.. The editorial note written when this card was built, kept as written: The prior package carried the same four-phase plan and the corrected master preserves it. Copy updated with the day ranges.",
+      "mode": "FULL SCREEN",
+      "trigger": "Define."
+    },
+    {
+      "file": "v13_03_not_this_option_is_allowed.png",
+      "status": "NEW",
+      "why": "The corrected master states this condition in the hook.",
+      "mode": "FULL SCREEN",
+      "trigger": "And the test only works if “not this option” is allowed to be a good result."
+    },
+    {
+      "file": "v13_04_destination_specific_enough.png",
+      "status": "NEW",
+      "why": "New to the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "“Something strategic” is too vague."
+    },
+    {
+      "file": "v13_05_ask_about_the_work.png",
+      "status": "COPY UPDATE",
+      "why": "The prior package covered the conversations phase. The corrected master specifies these three questions.",
+      "mode": "FULL SCREEN",
+      "trigger": "Do not ask for blanket reassurance about your potential."
+    },
+    {
+      "file": "v13_06_work_sample_boundary.png",
+      "status": "NEW",
+      "why": "The corrected master states this boundary explicitly.",
+      "mode": "FULL SCREEN",
+      "trigger": "Do not recreate a confidential employer process."
+    },
+    {
+      "file": "v13_07_three_decisions.png",
+      "status": "NEW",
+      "why": "Reclassified from REUSE to NEW. Measured: nothing in the prior package resembles it; the closest card shares 20% of its text. The editorial note written when this card was built, kept as written: The prior package ended on continue, modify or stop and the corrected master preserves it, adding the inconclusive result.",
+      "mode": "FULL SCREEN",
+      "trigger": "Then choose one of three decisions:"
+    },
+    {
+      "file": "v13_08_effort_is_not_evidence.png",
+      "status": "NEW",
+      "why": "New to the corrected master and editorially load-bearing.",
+      "mode": "FULL SCREEN",
+      "trigger": "Do not confuse effort with evidence."
+    },
+    {
+      "file": "v13_09_cta.png",
+      "status": "COPY UPDATE",
+      "why": "The prior package routed V13 to the Field Kit and the corrected master keeps that route with a new action line.",
+      "mode": "FULL SCREEN",
+      "trigger": "Choose one destination and write the hypothesis before you add another course or application to the list."
+    },
+    {
+      "file": "v13_10_watch_next.png",
+      "status": "REUSE",
+      "why": "Reclassified from COPY UPDATE to REUSE. Measured: byte- identical to the prior rendered file. The editorial note written when this card was built, kept as written: The corrected master routes V13 back to V9 rather than forward. The destination changed, so the card is rebuilt.",
+      "mode": "FULL SCREEN",
+      "trigger": "For a closer look at separating useful experience from unfamiliar context and actual requirements, watch “How to Change Industries Without Starting Over” next."
+    }
+  ],
+  "shorts": [
+    {
+      "slug": "v13_a1_stop_collecting_activity",
+      "priority": "A",
+      "title": "Stop collecting career activity",
+      "source": "V13 hook."
+    },
+    {
+      "slug": "v13_a2_testable_destination",
+      "priority": "A",
+      "title": "Choose a destination specific enough to test",
+      "source": "V13 setup."
+    },
+    {
+      "slug": "v13_a3_ask_about_the_work",
+      "priority": "A",
+      "title": "Do not ask for reassurance. Ask about the work.",
+      "source": "V13 days 8 to 14."
+    },
+    {
+      "slug": "v13_a4_effort_is_not_evidence",
+      "priority": "A",
+      "title": "Do not confuse effort with evidence",
+      "source": "V13 the evidence standard."
+    },
+    {
+      "slug": "v13_b1_bounded_sample",
+      "priority": "B",
+      "title": "Try one bounded piece",
+      "source": "V13 days 15 to 21."
+    },
+    {
+      "slug": "v13_b2_stop_is_a_good_result",
+      "priority": "B",
+      "title": "Stop is a real result",
+      "source": "V13 days 22 to 30."
+    }
+  ],
+  "not_verified": [
+    "Nothing in this package has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

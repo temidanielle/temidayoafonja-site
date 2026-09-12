@@ -1,0 +1,52 @@
+==============================================================================
+VIDEO 8  |  SHORTS PRIORITY AND SOURCE MANIFEST
+==============================================================================
+
+How to Show Your Impact at Work When You Built It From Scratch
+
+Six Shorts. Four Priority A, two Priority B.
+Timings are arithmetic at 165 words per minute. Not timed reads.
+
+------------------------------------------------------------------------------
+
+PRIORITY A  v8_a1_now_it_looks_easy
+    TITLE:  If you build it well enough, nobody sees how hard it was
+    WORDS:  96   ABOUT 35 SECONDS
+    FIRST:  One of the strangest things about building something from scratch is that if you do it well enough, eventually nobody can see how hard it was.
+    FINAL:  Reconstruct the before, your part, the judgment, and the proof.
+    SOURCE: V8 hook.
+
+PRIORITY A  v8_a2_the_before
+    TITLE:  Reconstruct what was true before
+    WORDS:  84   ABOUT 31 SECONDS
+    FIRST:  The finished thing hides the conditions you started with.
+    FINAL:  Write the specific version of what was true before.
+    SOURCE: V8 before.
+
+PRIORITY A  v8_a3_existence_use_effect
+    TITLE:  Existence, use, effect
+    WORDS:  83   ABOUT 30 SECONDS
+    FIRST:  For foundational work, separate three levels of evidence.
+    FINAL:  Mark which level your evidence actually supports.
+    SOURCE: V8 proof.
+
+PRIORITY A  v8_a4_four_sentences
+    TITLE:  The four-sentence impact account
+    WORDS:  82   ABOUT 30 SECONDS
+    FIRST:  Choose one thing people now take for granted because it works.
+    FINAL:  Write the four sentences for one thing you built.
+    SOURCE: V8 the four-sentence impact account.
+
+PRIORITY B  v8_b1_accurate_attribution
+    TITLE:  You do not need sole credit
+    WORDS:  83   ABOUT 30 SECONDS
+    FIRST:  Be careful with nothing existed before me.
+    FINAL:  Name your part accurately rather than broadly.
+    SOURCE: V8 my part.
+
+PRIORITY B  v8_b2_evidence_boundary
+    TITLE:  Proof does not mean taking files
+    WORDS:  83   ABOUT 30 SECONDS
+    FIRST:  One boundary worth saying plainly.
+    FINAL:  Keep the account, not the file.
+    SOURCE: V8 evidence boundary.

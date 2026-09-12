@@ -1,0 +1,82 @@
+==============================================================================
+VIDEO 6  |  SENTENCE TRIGGER MAP
+==============================================================================
+
+I've Worked Across 8 Industries and Sectors. Here's How I Know If a New Role Is Actually Growth.
+
+Every graphic with the exact spoken sentence that cues it.
+Each trigger was verified to exist inside a single thought block of
+the locked master, so no cue is built from words that span two
+takes.
+
+------------------------------------------------------------------------------
+
+ 1. v6_01_movement_is_not_growth
+    TRIGGER: I have worked across eight industries and sectors, and one thing that taught me is that movement can look like career growth long before the work actually changes.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 2. v6_02_work_judgment_evidence
+    TRIGGER: So when I judge a new role now, I want three things answered: will the Work change, will my Judgment expand, and will the Evidence travel?
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 3. v6_03_harder_later
+    TRIGGER: Earlier in a career, almost any new responsibility can teach you something.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 4. v6_04_ordinary_monday
+    TRIGGER: Start with an ordinary Monday.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 5. v6_05_responsibility_is_not_judgment
+    TRIGGER: Responsibility is not the same as judgment.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 6. v6_06_three_kinds_of_return
+    TRIGGER: I look for three kinds of return: a result I can support, judgment I can explain, and range I did not have before.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 7. v6_07_read_the_three_answers
+    TRIGGER: If two are yes, identify the missing dimension.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera.
+
+ 8. v6_07_twelve_month_question
+    TRIGGER: Then ask one question: twelve months from now, what will I be able to do, decide, or prove that I cannot do today?
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 9. v6_08_what_this_cannot_solve
+    TRIGGER: These three questions read the work. They do not replace the rest of the decision.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera.
+
+10. v6_08_yes_no_negotiate
+    TRIGGER: Before your next move, write one sentence under Work, Judgment, and Evidence.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+11. v6_09_cta
+    TRIGGER: If you are actively deciding whether to stay, move internally, or leave, the free Career Decision Evidence Check gives you a structured way to read the evidence behind that choice. It is linked below.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+12. v6_10_watch_next
+    TRIGGER: That is what we are testing next in 'It Took Me Years to Stop Mistaking More Work for Career Growth.'
+    MODE:    FULL SCREEN
+    AFTER:   NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+BEATS THAT ARE DELIBERATELY NOT GRAPHICS
+
+  The real personal account in the opening, where the master has
+  one, stays camera-led.
+  Any moment where the master's honesty depends on the viewer
+  watching Temidayo say it.
+  Anything a graphic would only decorate.

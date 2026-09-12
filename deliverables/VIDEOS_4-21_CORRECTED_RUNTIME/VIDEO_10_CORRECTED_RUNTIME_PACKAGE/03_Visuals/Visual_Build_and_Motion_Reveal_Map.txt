@@ -1,0 +1,163 @@
+==============================================================================
+VIDEO 10  |  VISUAL BUILD MAP AND MOTION REVEAL MAP
+==============================================================================
+
+Before a Layoff, Know What You Can Still Prove
+
+Support and reference assets for the Riverside editor. This is not
+a deck that covers the script paragraph by paragraph, and it is not
+a mandatory slideshow.
+
+------------------------------------------------------------------------------
+
+ 1. v10_01_access_ends.png
+    STATUS:    REBUILD
+    WHY:       Reclassified from REUSE to REBUILD. Measured: only 57% of the text is shared with the closest prior card, which read: YOUR EXPERIENCE DID NOT DISAPPEAR. YOUR ACCESS TO THE EVIDENCE DID.. The editorial note written when this card was built, kept as written: V10_MG01_Access_Not_Experience.png carries the same distinction and the corrected master preserves it.
+    PURPOSE:   The hook, in one comparison.
+    TRIGGER:   Your experience did not disappear.
+    MODE:      FULL SCREEN
+    REVEAL:    Left. Then right. Then the foot line.
+    EMPHASIS:  The right side.
+    HOLD:      2 seconds per side, 3 on the foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one soft tick as the right side lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 2. v10_02_preparation_not_extraction.png
+    STATUS:    REBUILD
+    WHY:       Reclassified from REUSE to REBUILD. Measured: only 49% of the text is shared with the closest prior card, which read: THE BOUNDARY PREPARATION IS NOT EXTRACTION. No forwarding internal emails, downloading dashboards, copying cu…. The editorial note written when this card was built, kept as written: V10_MG02_Preparation_Is_Not_Extraction.png carries the same boundary, preserved by the corrected master.
+    PURPOSE:   The compliance boundary, placed immediately after the stakes.
+    TRIGGER:   Access to a document does not mean you are entitled to keep it. Removing a company name does not automatically make restricted material yours to retain.
+    MODE:      FULL SCREEN
+    REVEAL:    Headline alone. Hold. Then the support.
+    EMPHASIS:  The headline, at maximum size.
+    HOLD:      3 seconds alone, 4 with the support. Do not rush this.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate. This frame should land in silence.
+    AFTER:     Return to camera on the next spoken line.
+
+ 3. v10_03_capture_qualify_retrieve.png
+    STATUS:    COPY UPDATE
+    WHY:       Reclassified from REUSE to COPY UPDATE. Measured: 68% of the text is shared with the prior card, which read: THE EVIDENCE HABIT 01 CAPTURE THE CONTRIBUTION 02 QUALIFY THE CLAIM 03 MAKE IT RETRIEVABLE. The editorial note written when this card was built, kept as written: V10_MG03_Capture_Qualify_Retrieve.png carries the same three steps, preserved by the corrected master.
+    PURPOSE:   The framework.
+    TRIGGER:   Capture the contribution.
+    MODE:      FULL SCREEN
+    REVEAL:    One column at a time.
+    EMPHASIS:  Equal.
+    HOLD:      2 seconds each, 4 on the complete set.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the third column lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 4. v10_04_calendar_vs_contribution.png
+    STATUS:    COPY UPDATE
+    WHY:       Reclassified from REUSE to COPY UPDATE. Measured: 85% of the text is shared with the prior card, which read: One | Capture the contribution, not the calendar. THE CALENDAR ENTRY “Attended weekly implementation meetings…. The editorial note written when this card was built, kept as written: V10_MG04_Calendar_Versus_Contribution.png carries the same comparison. Copy updated to the corrected example.
+    PURPOSE:   Show the standard rather than describing it.
+    TRIGGER:   “Attended weekly implementation meetings.”
+    MODE:      FULL SCREEN
+    REVEAL:    The calendar entry. Hold. Struck. Then the real record.
+    EMPHASIS:  The strike.
+    HOLD:      2 seconds before the strike, 4 after.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Strong candidate: one soft tick as the strike lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 5. v10_05_three_labels.png
+    STATUS:    NEW
+    WHY:       Reclassified from REUSE to NEW. Measured: nothing in the prior package resembles it; the closest card shares 4% of its text. The editorial note written when this card was built, kept as written: V10_MG05_Confirmed_Qualified_Not_Verified.png carries the same three labels, preserved by the corrected master.
+    PURPOSE:   The discipline that makes the record survive scrutiny.
+    TRIGGER:   Now put one of three labels beside the result:
+    MODE:      FULL SCREEN
+    REVEAL:    One label at a time, then the foot line.
+    EMPHASIS:  The foot line.
+    HOLD:      2 seconds each, 3 on the foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the third label lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 6. v10_06_language_that_survives.png
+    STATUS:    NEW
+    WHY:       New framing in the corrected master.
+    PURPOSE:   Pre-empt the reading that qualification is weakness.
+    TRIGGER:   This is not timid language.
+    MODE:      FULL SCREEN
+    REVEAL:    Headline, then the three questions.
+    EMPHASIS:  The headline.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the headline lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 7. v10_07_name_it_by_the_problem.png
+    STATUS:    REBUILD
+    WHY:       Reclassified from REUSE to REBUILD. Measured: only 39% of the text is shared with the closest prior card, which read: THREE | MAKE IT RETRIEVABLE Name the entry by the problem, not the project. “PROJECT ALPHA” Means nothing out…. The editorial note written when this card was built, kept as written: V10_MG06_Name_It_By_The_Problem.png carries the same habit, preserved by the corrected master.
+    PURPOSE:   One concrete habit the viewer can adopt immediately.
+    TRIGGER:   “Conflicting handoff criteria” is more useful than “Project Alpha,” especially to somebody outside the company.
+    MODE:      FULL SCREEN
+    REVEAL:    The internal name. Hold. Struck. Then the problem name.
+    EMPHASIS:  The strike.
+    HOLD:      2 seconds before the strike, 3 after.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the strike lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 8. v10_08_two_reasons_evidence_is_thin.png
+    STATUS:    NEW
+    WHY:       Reclassified from REUSE to NEW. Measured: nothing in the prior package resembles it; the closest card shares 20% of its text. The editorial note written when this card was built, kept as written: V10_MG07_Two_Reasons_Evidence_Is_Thin.png carries the same distinction, preserved by the corrected master.
+    PURPOSE:   The honesty beat, and the most useful diagnostic in the video.
+    TRIGGER:   Do not solve both problems by writing a stronger sentence.
+    MODE:      FULL SCREEN
+    REVEAL:    Left. Then right. Then the foot line.
+    EMPHASIS:  The foot line.
+    HOLD:      3 seconds per side, 3 on the foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate.
+    AFTER:     Return to camera on the next spoken line.
+
+ 9. v10_09_cta.png
+    STATUS:    REBUILD
+    WHY:       Reclassified from REUSE to REBUILD. Measured: only 44% of the text is shared with the closest prior card, which read: THE EVIDENCE HABIT 01 CAPTURE THE CONTRIBUTION 02 QUALIFY THE CLAIM 03 MAKE IT RETRIEVABLE. The editorial note written when this card was built, kept as written: V10_RESOURCE_Keep_The_Proof.png routes to the same resource, preserved by the corrected master.
+    PURPOSE:   The resource route named by the corrected master.
+    TRIGGER:   Start with one entry.
+    MODE:      FULL SCREEN
+    REVEAL:    Label, headline, resource name, URL.
+    EMPHASIS:  The URL.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one clean transition sound on entry.
+    AFTER:     Return to camera on the next spoken line.
+
+10. v10_10_watch_next.png
+    STATUS:    REUSE
+    WHY:       V10_WATCH_NEXT_AI_Can_Do_The_Task.png points at the same destination with the same title.
+    PURPOSE:   The final visual, cued by the spoken handoff.
+    TRIGGER:   Watch “AI Can Do the Task. What Are You Still Paid For?” next.
+    MODE:      FULL SCREEN
+    REVEAL:    Label, rule, title, number.
+    EMPHASIS:  The title.
+    HOLD:      Hold to the end.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one restrained transition sound, then music fade.
+    AFTER:     NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+FULL SCREEN
+  Frameworks, comparisons, multi-point concepts, substantive demonstrations, the resource card and Watch Next are TRUE FULL SCREEN. No moving Temidayo behind or around a major visual. Substantive B-roll fills the entire frame. Short single-idea callouts may sit over camera. After a full-screen teaching visual, return to camera only where the scene map calls for it. THIS NEVER APPLIES TO WATCH NEXT: Watch Next is the final visual and there is no return to camera afterward.
+
+CAMERA
+  About 3 to 5 deliberate camera-emphasis beats across the whole video. This is one combined budget: gentle push-ins on tension, insight or a reframe, with occasional pull-backs or a return to base framing to reset the rhythm. It is not 3 to 5 push-ins plus 3 to 5 pull-backs. No aggressive zooms, no pulsing, no constant reframing, no unnecessary digital movement. Preserve headroom and source quality.
+
+SOUND BUDGET
+  About 4 to 7 restrained audio accents for the ENTIRE video, including the one visual Subscribe cue. The per-frame sound candidates in the visual map are OPTIONAL and are not cumulative. Choose only the moments with the highest visual or intellectual payoff. Keep every effect clearly quieter than the voice. Pair the sound with a small visual action so both land together. If no sound improves the moment, leave it silent.
+
+B-ROLL
+  About 2 to 4 meaningful full-screen B-roll moments where useful. This is not a quota. No generic handshakes, fake boardrooms, smiling coworkers, meaningless typing, AI-looking people, or invented employer documents presented as real. Where an example is constructed, it carries its label.
+
+CAPTIONS
+  NO BURNED-IN OR OPEN CAPTIONS on the long-form video. Viewers use YouTube CC. Deliver a clean export with no persistent subtitles, a complete final transcript with names, frameworks, URLs and industry terms proofread, and an SRT generated against the FINAL edited timeline with synchronization checked after every jump cut and removal. Do not delete transcript words because the camera is hidden behind a graphic. Shorts and Reels may use designed captions.
+
+SUBSCRIBE
+  One brief visual Subscribe cue after meaningful value has already been delivered. Visual only. There is no spoken Subscribe request in the master and none is added. About 1 to 3 seconds including entrance and exit. Do not interrupt a useful pause or cover teaching content.

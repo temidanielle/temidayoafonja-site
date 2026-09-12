@@ -1,0 +1,168 @@
+{
+  "video": 17,
+  "title": "How to Prove Your Value When AI Does More of the Task",
+  "generated": "Saturday, September 12, 2026 | 5:28 AM CT (America/Chicago, UTC-05:00)",
+  "spoken_source_of_truth": {
+    "file": "Video_17_FINAL_Regular_Length_Recording_Master.docx",
+    "sha256": "797e0cd2aac89e8eb457871f81aadebb07a05b731b8b2b2ce50ad407a9d6d888",
+    "note": "Copied unchanged into 01_Recording_Master. Never written to. This file overrides every earlier script."
+  },
+  "secondary_reference": [
+    {
+      "body": "SEP09_V4_V7",
+      "description": "Videos 4 to 7 handoff package, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP09_V8_V13",
+      "description": "Videos 8 to 13 production packages, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP10_V14_V21",
+      "description": "Videos 14 to 21 final production packages, September 10, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    }
+  ],
+  "runtime": {
+    "mode": "REGULAR LONG-FORM",
+    "is_five_minute_test": false,
+    "restored_regular_depth": true,
+    "target_stated_by_master": "Regular long-form. Preserve the original 9–12 minute target where that was the approved draft target.",
+    "note": "Videos 4 and 5 are the only 5-minute retention test. Videos 6 to 21 are regular long-form and were not shortened to meet a 5-minute target."
+  },
+  "packaging": {
+    "thumbnail": "WHAT DID YOU ACTUALLY DO?",
+    "framework": null,
+    "primary_cta": "Write what you checked and why.",
+    "primary_cta_spoken_at": "If you want the longer version of building a contribution record properly, that is Keep the Proof, linked below.",
+    "resource": "Keep the Proof",
+    "resource_spoken": true,
+    "watch_next": "Video 11: AI Can Do the Task. What Are You Still Paid For?",
+    "watch_next_source": "the Watch Next card in the production deck"
+  },
+  "script": {
+    "sections": 11,
+    "thought_blocks": 44,
+    "spoken_words": 1309,
+    "speech_only_estimate": "9:02 to 10:04 at 130 to 145 words per minute",
+    "estimate_note": "Arithmetic on the script. Excludes pauses and visual holds. Not a timed read and not a runtime."
+  },
+  "assets": [
+    {
+      "file": "v17_01_two_days_forty_minutes.png",
+      "status": "COPY UPDATE",
+      "why": "Reclassified from REUSE to COPY UPDATE. Measured: 61% of the text is shared with the prior card, which read: THE VISIBLE PART GOT EASIER Before The report used to take you two days. Now A tool produces most of it in fo…. The editorial note written when this card was built, kept as written: Concept and trigger both survive into the restored master.",
+      "mode": "FULL SCREEN",
+      "trigger": "The report used to take you two days."
+    },
+    {
+      "file": "v17_02_what_did_you_actually_do.png",
+      "status": "REUSE",
+      "why": "Concept and trigger both survive into the restored master.",
+      "mode": "FULL SCREEN",
+      "trigger": "Until someone asks, \"So what did you actually do?\""
+    },
+    {
+      "file": "v17_03_output_is_not_contribution.png",
+      "status": "COPY UPDATE",
+      "why": "Reclassified from REUSE to COPY UPDATE. Measured: 63% of the text is shared with the prior card, which read: WHERE THE RECORD LIVES It used to be Attached to the artifact. It now has to be Attached to the decisions aro…. The editorial note written when this card was built, kept as written: Concept and trigger both survive into the restored master.",
+      "mode": "FULL SCREEN",
+      "trigger": "The record used to be attached to the artifact. It now has to be attached to the decisions around the artifact."
+    },
+    {
+      "file": "v17_04_four_lines.png",
+      "status": "COPY UPDATE",
+      "why": "Concept preserved; the restored master shortens each line, so the copy and trigger are updated.",
+      "mode": "FULL SCREEN",
+      "trigger": "So here are the four lines. They are deliberately short, because a record you will not maintain is not a record."
+    },
+    {
+      "file": "v17_05_line_two.png",
+      "status": "COPY UPDATE",
+      "why": "Concept preserved; trigger updated to the restored sentence.",
+      "mode": "FULL SCREEN",
+      "trigger": "If you only keep one of those, keep the second."
+    },
+    {
+      "file": "v17_06_which_parts_leave_a_record.png",
+      "status": "NEW",
+      "why": "The restored master brings back this section, which the shortened version had lost.",
+      "mode": "FULL SCREEN",
+      "trigger": "Now mark the parts that leave nothing."
+    },
+    {
+      "file": "v17_07_speed_is_not_correctness.png",
+      "status": "NEW",
+      "why": "The restored master brings this section back in full.",
+      "mode": "FULL SCREEN",
+      "trigger": "But the report that used to take two days is now expected on the same afternoon, and the checking time is the part that quietly gets compressed, because checking is the part nobody can see."
+    },
+    {
+      "file": "v17_08_worked_example.png",
+      "status": "COPY UPDATE",
+      "why": "Concept preserved; the restored master's example replaces the copy and the trigger.",
+      "mode": "FULL SCREEN",
+      "trigger": "Let me make that concrete. I have constructed this example so the structure is visible. It is an illustration, not a captured case."
+    },
+    {
+      "file": "v17_09_cta.png",
+      "status": "COPY UPDATE",
+      "why": "Route unchanged. Trigger moved to the restored resource sentence.",
+      "mode": "FULL SCREEN",
+      "trigger": "If you want the longer version of building a contribution record properly, that is Keep the Proof, linked below."
+    },
+    {
+      "file": "v17_10_watch_next.png",
+      "status": "REUSE",
+      "why": "Reclassified from COPY UPDATE to REUSE. Measured: byte- identical to the prior rendered file. The editorial note written when this card was built, kept as written: Destination unchanged. Trigger moved to the restored final line.",
+      "mode": "FULL SCREEN",
+      "trigger": "I would genuinely like to read those, because that sentence is the one that is disappearing, and it is the one worth keeping."
+    }
+  ],
+  "shorts": [
+    {
+      "slug": "v17_a1_what_did_you_actually_do",
+      "priority": "A",
+      "title": "So what did you actually do?",
+      "source": "V17 hook and reversal."
+    },
+    {
+      "slug": "v17_a2_four_lines",
+      "priority": "A",
+      "title": "Four lines that prove the contribution",
+      "source": "V17 the four lines."
+    },
+    {
+      "slug": "v17_a3_line_two",
+      "priority": "A",
+      "title": "The line people forget fastest",
+      "source": "V17 why line two matters."
+    },
+    {
+      "slug": "v17_a4_speed_pressure",
+      "priority": "A",
+      "title": "Speed changes the pressure",
+      "source": "V17 speed changes the pressure."
+    },
+    {
+      "slug": "v17_b1_output_vs_contribution",
+      "priority": "B",
+      "title": "Output is not contribution",
+      "source": "V17 the reversal."
+    },
+    {
+      "slug": "v17_b2_not_reassurance",
+      "priority": "B",
+      "title": "This is not AI reassurance",
+      "source": "V17 boundary."
+    }
+  ],
+  "not_verified": [
+    "Nothing in this package has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

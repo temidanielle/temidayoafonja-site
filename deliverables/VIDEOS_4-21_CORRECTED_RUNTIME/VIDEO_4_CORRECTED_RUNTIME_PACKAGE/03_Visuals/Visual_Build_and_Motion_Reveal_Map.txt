@@ -1,0 +1,163 @@
+==============================================================================
+VIDEO 4  |  VISUAL BUILD MAP AND MOTION REVEAL MAP
+==============================================================================
+
+I Was First in 3 New Roles in 5 Years. Here's What I Stopped Doing.
+
+Support and reference assets for the Riverside editor. This is not
+a deck that covers the script paragraph by paragraph, and it is not
+a mandatory slideshow.
+
+------------------------------------------------------------------------------
+
+ 1. v4_01_title_new_work_not_new.png
+    STATUS:    REMOVE, replaced by NEW
+    WHY:       The September 9 V4 opened on the interview question and the twenty-second answer. That script is superseded entirely. V4_MG01_Introduction_Or_Defense.png has no place in the corrected script.
+    PURPOSE:   The hook, stated as the distinction the whole video rests on.
+    TRIGGER:   Three times in five years, I stepped into a role that did not have a predecessor. Each time, the title was new to me. But the work underneath it was not completely new.
+    MODE:      FULL SCREEN
+    REVEAL:    Single state. Let the sentence land.
+    EMPHASIS:  The second half of the sentence.
+    HOLD:      At least 3 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one clean transition sound on entry.
+    AFTER:     Return to camera on the next spoken line.
+
+ 2. v4_02_three_stops.png
+    STATUS:    NEW
+    WHY:       The three-stop structure does not exist in any prior V4 asset.
+    PURPOSE:   The spine of the video, given in the first minute.
+    TRIGGER:   What changed was how I judged whether I was ready. I stopped waiting for an exact title match. I stopped proving myself with a task list. And I stopped treating every learning gap like evidence that I was not ready.
+    MODE:      FULL SCREEN
+    REVEAL:    One line at a time in the spoken order.
+    EMPHASIS:  Equal weight.
+    HOLD:      About 2 seconds each, 3 on the complete set.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the third line lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 3. v4_03_three_questions.png
+    STATUS:    NEW
+    WHY:       New framing introduced by the corrected master.
+    PURPOSE:   The early payoff. The viewer can act on this alone.
+    TRIGGER:   If you are looking at a role you have never held before, use three questions instead: What problem will I be trusted to solve? What can I already prove? What do I genuinely need to learn?
+    MODE:      FULL SCREEN
+    REVEAL:    One question at a time.
+    EMPHASIS:  All three equal.
+    HOLD:      2 seconds each, 4 on the complete frame. Viewers will pause here.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick on the third question.
+    AFTER:     Return to camera on the next spoken line.
+
+ 4. v4_04_remove_the_title.png
+    STATUS:    REBUILD
+    WHY:       V4_MG03_Order_Depends_On_The_Question.png tested a different idea. The comparison shape is reusable; the content is entirely new.
+    PURPOSE:   Make stop one usable rather than reassuring.
+    TRIGGER:   A useful way to test this is to compare the old and new role without their titles.
+    MODE:      FULL SCREEN
+    REVEAL:    Left. Then right. Then the foot line.
+    EMPHASIS:  The foot line.
+    HOLD:      3 seconds on the right side, 3 on the foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the foot line lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 5. v4_05_task_list_vs_judgment.png
+    STATUS:    NEW
+    WHY:       Judgment-over-activity is new to the corrected V4.
+    PURPOSE:   The most useful correction in the video.
+    TRIGGER:   For unfamiliar work, look for evidence of judgment.
+    MODE:      FULL SCREEN
+    REVEAL:    Left. Then right. Then the foot line.
+    EMPHASIS:  The foot line, which is the standard.
+    HOLD:      2 seconds left, 4 right, 3 foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one soft tick as the foot line lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 6. v4_06_gap_is_not_a_verdict.png
+    STATUS:    NEW
+    WHY:       No prior V4 asset carried this.
+    PURPOSE:   Protect the channel's standing position that not everything transfers, inside a five-minute cut.
+    TRIGGER:   A credible readiness case is not, 'I can already do every part of this.' It is, 'Here is what I can carry, here is the proof, and here is what I still need to learn.'
+    MODE:      FULL SCREEN
+    REVEAL:    The weak claim. Hold. Struck. Then the credible version.
+    EMPHASIS:  The strike.
+    HOLD:      2 seconds before the strike, 4 after.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Strong candidate: one soft tick as the strike lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 7. v4_07_three_line_readiness_case.png
+    STATUS:    NEW
+    WHY:       The readiness case replaces the prior twenty-second and ninety-second answer assets entirely.
+    PURPOSE:   The artifact. The frame viewers photograph.
+    TRIGGER:   Take one role you have never held and write three lines.
+    MODE:      FULL SCREEN
+    REVEAL:    One row at a time.
+    EMPHASIS:  All three equal. The Gap row is not styled as a weakness.
+    HOLD:      3 seconds per row, 4 on the complete frame.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the third row lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 8. v4_08_what_it_does_not_guarantee.png
+    STATUS:    REBUILD
+    WHY:       Reclassified from REUSE to REBUILD. Measured: only 33% of the text is shared with the closest prior card, which read: A STORY EXPLAINS. PROOF SUPPORTS. The story gets the question. Evidence answers it.. The editorial note written when this card was built, kept as written: V4_MG08 carried a limits concept and the corrected master keeps a limits beat, but the wording is new, so the render is rebuilt while the editorial slot is preserved.
+    PURPOSE:   The honesty beat. Required by the standing editorial rule and spoken in the master.
+    TRIGGER:   A strong readiness case does not guarantee that an employer will choose you.
+    MODE:      FULL SCREEN
+    REVEAL:    Headline, then the support line.
+    EMPHASIS:  The headline.
+    HOLD:      At least 4 seconds. Do not rush it because the video is short.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate. Let this land in silence.
+    AFTER:     Return to camera on the next spoken line.
+
+ 9. v4_09_cta.png
+    STATUS:    REBUILD
+    WHY:       V4_CTA_Career_Evidence_Starter.png routed to a resource. The corrected master names no resource, so no route is shown and none is added.
+    PURPOSE:   The single action. This master names no resource route, so none is shown.
+    TRIGGER:   Being new to the title does not automatically mean being new to the work.
+    MODE:      FULL SCREEN
+    REVEAL:    Headline, support, then the closing line.
+    EMPHASIS:  The closing line in gold.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one clean transition sound on entry.
+    AFTER:     Return to camera on the next spoken line.
+
+10. v4_10_watch_next.png
+    STATUS:    COPY UPDATE
+    WHY:       V4_WatchNext_Why_Nobody_Can_Tell.png pointed at the old V5 title. The destination is still V5; its title changed, so the card is rebuilt with the corrected title.
+    PURPOSE:   The final visual.
+    TRIGGER:   Being new to the title does not automatically mean being new to the work.
+    MODE:      FULL SCREEN
+    REVEAL:    Label, rule, title, number.
+    EMPHASIS:  The title.
+    HOLD:      Hold to the end.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one restrained transition sound, then music fade.
+    AFTER:     NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+FULL SCREEN
+  Frameworks, comparisons, multi-point concepts, substantive demonstrations, the resource card and Watch Next are TRUE FULL SCREEN. No moving Temidayo behind or around a major visual. Substantive B-roll fills the entire frame. Short single-idea callouts may sit over camera. After a full-screen teaching visual, return to camera only where the scene map calls for it. THIS NEVER APPLIES TO WATCH NEXT: Watch Next is the final visual and there is no return to camera afterward.
+
+CAMERA
+  About 3 to 5 deliberate camera-emphasis beats across the whole video. This is one combined budget: gentle push-ins on tension, insight or a reframe, with occasional pull-backs or a return to base framing to reset the rhythm. It is not 3 to 5 push-ins plus 3 to 5 pull-backs. No aggressive zooms, no pulsing, no constant reframing, no unnecessary digital movement. Preserve headroom and source quality.
+
+SOUND BUDGET
+  About 4 to 7 restrained audio accents for the ENTIRE video, including the one visual Subscribe cue. The per-frame sound candidates in the visual map are OPTIONAL and are not cumulative. Choose only the moments with the highest visual or intellectual payoff. Keep every effect clearly quieter than the voice. Pair the sound with a small visual action so both land together. If no sound improves the moment, leave it silent.
+
+B-ROLL
+  About 2 to 4 meaningful full-screen B-roll moments where useful. This is not a quota. No generic handshakes, fake boardrooms, smiling coworkers, meaningless typing, AI-looking people, or invented employer documents presented as real. Where an example is constructed, it carries its label.
+
+CAPTIONS
+  NO BURNED-IN OR OPEN CAPTIONS on the long-form video. Viewers use YouTube CC. Deliver a clean export with no persistent subtitles, a complete final transcript with names, frameworks, URLs and industry terms proofread, and an SRT generated against the FINAL edited timeline with synchronization checked after every jump cut and removal. Do not delete transcript words because the camera is hidden behind a graphic. Shorts and Reels may use designed captions.
+
+SUBSCRIBE
+  One brief visual Subscribe cue after meaningful value has already been delivered. Visual only. There is no spoken Subscribe request in the master and none is added. About 1 to 3 seconds including entrance and exit. Do not interrupt a useful pause or cover teaching content.

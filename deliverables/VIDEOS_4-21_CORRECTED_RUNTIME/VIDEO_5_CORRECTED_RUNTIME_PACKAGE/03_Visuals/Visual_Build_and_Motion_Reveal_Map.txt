@@ -1,0 +1,163 @@
+==============================================================================
+VIDEO 5  |  VISUAL BUILD MAP AND MOTION REVEAL MAP
+==============================================================================
+
+I Changed Career Tracks Without Starting Over. Here's What I Carried With Me.
+
+Support and reference assets for the Riverside editor. This is not
+a deck that covers the script paragraph by paragraph, and it is not
+a mandatory slideshow.
+
+------------------------------------------------------------------------------
+
+ 1. v5_01_changed_tracks_not_zero.png
+    STATUS:    REMOVE, replaced by NEW
+    WHY:       V5_MG01_Two_Versions_Of_The_Same_Career.png belonged to the superseded legibility script.
+    PURPOSE:   The hook. The risk is self-erasure, not other people's opinion.
+    TRIGGER:   When you change career tracks, other people can start reading you like a beginner. The more expensive mistake is when you start doing it to yourself.
+    MODE:      FULL SCREEN
+    REVEAL:    Headline. Hold. Then the support line.
+    EMPHASIS:  The support line.
+    HOLD:      2 seconds, then 3 with the support.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one soft tick as the support line lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 2. v5_02_four_things.png
+    STATUS:    NEW
+    WHY:       Carry / Translate / Relearn / Prove does not exist in the prior package.
+    PURPOSE:   The framework, delivered in the first minute.
+    TRIGGER:   What helped was separating four things: what I could Carry, what I had to Translate, what I genuinely needed to Relearn, and what I could Prove.
+    MODE:      FULL SCREEN
+    REVEAL:    One bucket at a time in spoken order.
+    EMPHASIS:  Equal. None is the good outcome.
+    HOLD:      2 seconds each, 4 on the complete grid.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick on the fourth bucket.
+    AFTER:     Return to camera on the next spoken line.
+
+ 3. v5_03_carry_test.png
+    STATUS:    NEW
+    WHY:       New test introduced by the corrected master.
+    PURPOSE:   Make Carry a test rather than a claim.
+    TRIGGER:   Ask: if the employer name, old title, and industry language disappeared, which parts of my experience would still help me solve the destination problem?
+    MODE:      FULL SCREEN
+    REVEAL:    Question, then the one-line answer.
+    EMPHASIS:  The question.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate.
+    AFTER:     Return to camera on the next spoken line.
+
+ 4. v5_04_translate.png
+    STATUS:    REBUILD
+    WHY:       V5_MG05_Remove_The_Nouns.png tested an adjacent idea. The shape is reusable; the corrected content replaces it.
+    PURPOSE:   The most practical section of the video.
+    TRIGGER:   Do not repeat the old label and hope they understand it. Translate the underlying work.
+    MODE:      FULL SCREEN
+    REVEAL:    Left. Then right. Then the foot line.
+    EMPHASIS:  The foot line, which prevents the obvious misreading.
+    HOLD:      2 seconds left, 4 right, 3 foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the foot line lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 5. v5_05_relearn_without_beginner.png
+    STATUS:    NEW
+    WHY:       New to the corrected master.
+    PURPOSE:   Hold both halves of the channel's position in one frame.
+    TRIGGER:   Those gaps matter. Your experience does not make them optional. But needing to learn them does not erase everything you already know how to do.
+    MODE:      FULL SCREEN
+    REVEAL:    Headline, then the list of what is genuinely new.
+    EMPHASIS:  The headline.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate.
+    AFTER:     Return to camera on the next spoken line.
+
+ 6. v5_06_confidence_both_directions.png
+    STATUS:    NEW
+    WHY:       New to the corrected master and editorially load-bearing.
+    PURPOSE:   The line that protects the whole body of work from sounding like everything transfers.
+    TRIGGER:   You do not need to apologize for every gap. But you also do not get to rename a real domain or credential requirement as a transferable skill because that makes the move easier to explain.
+    MODE:      FULL SCREEN
+    REVEAL:    Left. Then right. Then the foot line.
+    EMPHASIS:  The right side.
+    HOLD:      At least 4 seconds on the right side.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate. Let this land in silence.
+    AFTER:     Return to camera on the next spoken line.
+
+ 7. v5_07_prove_the_level.png
+    STATUS:    REBUILD
+    WHY:       V5_MG07_Test_The_Claim.png tested a different claim. Rebuilt to the corrected content.
+    PURPOSE:   Replace duration and title with evidence.
+    TRIGGER:   Do not rely on 'I have fifteen years of experience' or 'I was a director.' Those statements tell me duration and title, not what level of judgment you can carry into a new context.
+    MODE:      FULL SCREEN
+    REVEAL:    Both weak claims. Hold. Struck. Then the questions.
+    EMPHASIS:  The strike.
+    HOLD:      2 seconds before the strike, 4 after.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Strong candidate: one soft tick as the strike lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 8. v5_08_four_line_move_case.png
+    STATUS:    NEW
+    WHY:       Replaces the prior Claim and Receipts artifact entirely.
+    PURPOSE:   The artifact. The frame viewers photograph.
+    TRIGGER:   For one move you are considering, write four lines:
+    MODE:      FULL SCREEN
+    REVEAL:    One row at a time.
+    EMPHASIS:  Equal weight.
+    HOLD:      2 seconds per row, 4 on the complete frame.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the fourth row lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 9. v5_09_cta.png
+    STATUS:    REBUILD
+    WHY:       V5_CTA_Career_Evidence_Starter.png routed to a resource. The corrected master names none, so none is shown.
+    PURPOSE:   The single action. This master names no resource route.
+    TRIGGER:   That gives you a more honest position than either 'I am starting over' or 'everything I have done transfers.'
+    MODE:      FULL SCREEN
+    REVEAL:    Headline, support, then the closing line.
+    EMPHASIS:  The closing line in gold.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one clean transition sound on entry.
+    AFTER:     Return to camera on the next spoken line.
+
+10. v5_10_watch_next.png
+    STATUS:    COPY UPDATE
+    WHY:       V5_WatchNext_Change_Jobs.png pointed at V1. The corrected sequence runs V5 into V6, so the destination and the copy both change.
+    PURPOSE:   The final visual.
+    TRIGGER:   The job is to know what travels, translate it clearly, relearn what does not, and prove the level you are asking someone else to trust.
+    MODE:      FULL SCREEN
+    REVEAL:    Label, rule, title, number.
+    EMPHASIS:  The title.
+    HOLD:      Hold to the end.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one restrained transition sound, then music fade.
+    AFTER:     NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+FULL SCREEN
+  Frameworks, comparisons, multi-point concepts, substantive demonstrations, the resource card and Watch Next are TRUE FULL SCREEN. No moving Temidayo behind or around a major visual. Substantive B-roll fills the entire frame. Short single-idea callouts may sit over camera. After a full-screen teaching visual, return to camera only where the scene map calls for it. THIS NEVER APPLIES TO WATCH NEXT: Watch Next is the final visual and there is no return to camera afterward.
+
+CAMERA
+  About 3 to 5 deliberate camera-emphasis beats across the whole video. This is one combined budget: gentle push-ins on tension, insight or a reframe, with occasional pull-backs or a return to base framing to reset the rhythm. It is not 3 to 5 push-ins plus 3 to 5 pull-backs. No aggressive zooms, no pulsing, no constant reframing, no unnecessary digital movement. Preserve headroom and source quality.
+
+SOUND BUDGET
+  About 4 to 7 restrained audio accents for the ENTIRE video, including the one visual Subscribe cue. The per-frame sound candidates in the visual map are OPTIONAL and are not cumulative. Choose only the moments with the highest visual or intellectual payoff. Keep every effect clearly quieter than the voice. Pair the sound with a small visual action so both land together. If no sound improves the moment, leave it silent.
+
+B-ROLL
+  About 2 to 4 meaningful full-screen B-roll moments where useful. This is not a quota. No generic handshakes, fake boardrooms, smiling coworkers, meaningless typing, AI-looking people, or invented employer documents presented as real. Where an example is constructed, it carries its label.
+
+CAPTIONS
+  NO BURNED-IN OR OPEN CAPTIONS on the long-form video. Viewers use YouTube CC. Deliver a clean export with no persistent subtitles, a complete final transcript with names, frameworks, URLs and industry terms proofread, and an SRT generated against the FINAL edited timeline with synchronization checked after every jump cut and removal. Do not delete transcript words because the camera is hidden behind a graphic. Shorts and Reels may use designed captions.
+
+SUBSCRIBE
+  One brief visual Subscribe cue after meaningful value has already been delivered. Visual only. There is no spoken Subscribe request in the master and none is added. About 1 to 3 seconds including entrance and exit. Do not interrupt a useful pause or cover teaching content.

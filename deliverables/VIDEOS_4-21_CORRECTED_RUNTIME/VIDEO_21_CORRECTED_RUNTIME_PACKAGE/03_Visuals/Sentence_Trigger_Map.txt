@@ -1,0 +1,72 @@
+==============================================================================
+VIDEO 21  |  SENTENCE TRIGGER MAP
+==============================================================================
+
+What You Must Relearn When You Change Industries
+
+Every graphic with the exact spoken sentence that cues it.
+Each trigger was verified to exist inside a single thought block of
+the locked master, so no cue is built from words that span two
+takes.
+
+------------------------------------------------------------------------------
+
+ 1. v21_01_the_room_is_different
+    TRIGGER: And the surprising part is that you can still do the work.
+    MODE:    SHORT CALLOUT OVER CAMERA for the headline, then FULL SCREEN for the support line.
+    AFTER:   Return to camera on the next spoken line.
+
+ 2. v21_02_what_does_travel
+    TRIGGER: First, quickly, what does travel, because it is real and it is easy to lose sight of in the first difficult month.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 3. v21_03_five_layers
+    TRIGGER: Layer one, and the one that blocks you soonest: what the work is actually about here.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 4. v21_04_licensing_is_not_a_mindset
+    TRIGGER: That is not a confidence issue and it is not a mindset problem.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 5. v21_05_easiest_layer_trap
+    TRIGGER: Layer three. Systems and tooling. This is usually the layer people worry about most and it is generally the smallest.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 6. v21_06_has_anyone_tried_this
+    TRIGGER: The single most useful question in a first few months is some version of has anybody tried this before, and what happened.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 7. v21_07_first_ninety_days
+    TRIGGER: You are not going to arrive and contribute at the level you left at.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 8. v21_08_order_by_what_blocks_you
+    TRIGGER: Then order the whole thing by one question, which is what stops me contributing usefully first.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 9. v21_09_cta
+    TRIGGER: If you want a structured version of the inventory, that is what the Field Kit is for, linked below.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+10. v21_10_watch_next
+    TRIGGER: It is the difference between a plan that will work and a reading list that would have made you feel productive for a month.
+    MODE:    FULL SCREEN
+    AFTER:   NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+BEATS THAT ARE DELIBERATELY NOT GRAPHICS
+
+  The real personal account in the opening, where the master has
+  one, stays camera-led.
+  Any moment where the master's honesty depends on the viewer
+  watching Temidayo say it.
+  Anything a graphic would only decorate.

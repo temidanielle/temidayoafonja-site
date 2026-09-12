@@ -1,0 +1,52 @@
+==============================================================================
+VIDEO 16  |  SHORTS PRIORITY AND SOURCE MANIFEST
+==============================================================================
+
+What to Do When Your Work Is Valued but You Are Overlooked
+
+Six Shorts. Four Priority A, two Priority B.
+Timings are arithmetic at 165 words per minute. Not timed reads.
+
+------------------------------------------------------------------------------
+
+PRIORITY A  v16_a1_called_then_skipped
+    TITLE:  They call you. Then they skip you.
+    WORDS:  82   ABOUT 30 SECONDS
+    FIRST:  When something is urgent, they call you.
+    FINAL:  Before you speak up more, work out which problem you actually have.
+    SOURCE: V16 hook.
+
+PRIORITY A  v16_a2_the_hinge
+    TITLE:  Does not know, or knows and does not act
+    WORDS:  90   ABOUT 33 SECONDS
+    FIRST:  There is one distinction worth more than any advice about visibility.
+    FINAL:  Fix the information problem first, so you can read what is left.
+    SOURCE: V16 the hinge.
+
+PRIORITY A  v16_a3_where_work_disappears
+    TITLE:  Where good work disappears
+    WORDS:  81   ABOUT 29 SECONDS
+    FIRST:  Good work disappears in predictable places.
+    FINAL:  Write the version where nothing went wrong, and why.
+    SOURCE: V16 is the work seen.
+
+PRIORITY A  v16_a4_three_pieces_four_lines
+    TITLE:  Three pieces, four lines each
+    WORDS:  89   ABOUT 32 SECONDS
+    FIRST:  If your work is trusted and your name is not in the room, build this.
+    FINAL:  Write one decision you made and what it changed.
+    SOURCE: V16 what to build.
+
+PRIORITY B  v16_b1_trusted_vs_considered
+    TITLE:  Trusted to deliver is not the same as considered for scope
+    WORDS:  85   ABOUT 31 SECONDS
+    FIRST:  This is where dependable people get stuck.
+    FINAL:  Ask what scope you are being considered for, not just trusted with.
+    SOURCE: V16 trusted or considered.
+
+PRIORITY B  v16_b2_what_it_does_not_fix
+    TITLE:  What a clearer record does not fix
+    WORDS:  92   ABOUT 33 SECONDS
+    FIRST:  I want to be honest about the limit of this.
+    FINAL:  Remove the obstacle that is yours, then read what is left.
+    SOURCE: V16 what this does not fix.

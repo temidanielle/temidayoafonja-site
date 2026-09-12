@@ -1,0 +1,163 @@
+==============================================================================
+VIDEO 19  |  VISUAL BUILD MAP AND MOTION REVEAL MAP
+==============================================================================
+
+Should You Become a Consultant? The Part Everyone Leaves Out
+
+Support and reference assets for the Riverside editor. This is not
+a deck that covers the script paragraph by paragraph, and it is not
+a mandatory slideshow.
+
+------------------------------------------------------------------------------
+
+ 1. v19_01_you_should_consult.png
+    STATUS:    COPY UPDATE
+    WHY:       Concept preserved; the restored master adds the twenty-years line, which becomes the trigger and the support copy.
+    PURPOSE:   The way in, and the sentence that stops it being flattery.
+    TRIGGER:   But twenty years of experience can still leave you with nothing a client knows how to buy.
+    MODE:      FULL SCREEN
+    REVEAL:    The quote alone. Hold. Then the support line.
+    EMPHASIS:  The quote, then the support.
+    HOLD:      2 seconds alone, 4 with the support.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one soft tick as the support line lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 2. v19_02_experience_is_not_an_offer.png
+    STATUS:    REBUILD
+    WHY:       Reclassified from REUSE to REBUILD. Measured: only 58% of the text is shared with the closest prior card, which read: TWO DIFFERENT QUESTIONS Your experience tells you What you know. It does not tell you What somebody will buy.…. The editorial note written when this card was built, kept as written: Concept and trigger both survive into the restored master.
+    PURPOSE:   The reversal and the thumbnail's argument.
+    TRIGGER:   Your experience tells you what you know. It does not automatically tell you what somebody will buy.
+    MODE:      FULL SCREEN
+    REVEAL:    Left. Then right. Then the foot line.
+    EMPHASIS:  The right side.
+    HOLD:      2 seconds per side, 4 on the foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Strong candidate: one soft tick as the right side lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 3. v19_03_four_things.png
+    STATUS:    COPY UPDATE
+    WHY:       Concept preserved; the restored master renames two of the four, so the copy and trigger are updated.
+    PURPOSE:   The framework. Most people have the first only.
+    TRIGGER:   Start by separating four things that get bundled under the word consulting.
+    MODE:      FULL SCREEN
+    REVEAL:    One bucket at a time.
+    EMPHASIS:  The gap after the first bucket.
+    HOLD:      2 seconds each, 4 on the complete grid.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick on the first bucket only.
+    AFTER:     Return to camera on the next spoken line.
+
+ 4. v19_04_who_signs_it.png
+    STATUS:    COPY UPDATE
+    WHY:       Concept preserved; trigger and copy updated to the restored wording.
+    PURPOSE:   The question that decides whether anything else applies.
+    TRIGGER:   Not who has the problem. Almost everybody has problems.
+    MODE:      FULL SCREEN
+    REVEAL:    Left. Then right. Then the foot line.
+    EMPHASIS:  The right side.
+    HOLD:      3 seconds per side, 3 on the foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the right side lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 5. v19_05_expertise_vs_deliverable.png
+    STATUS:    COPY UPDATE
+    WHY:       Concept preserved; the restored master supplies both the unbuyable sentences and the specific deliverable, so the copy is replaced.
+    PURPOSE:   The strongest single comparison in the video.
+    TRIGGER:   Those sentences are true and nobody can buy them.
+    MODE:      FULL SCREEN
+    REVEAL:    Both unbuyable sentences. Hold. Struck. Then the buyable one.
+    EMPHASIS:  The strike.
+    HOLD:      2 seconds before the strike, 5 after. The replacement is long and needs reading time.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Strong candidate: one soft tick as the strike lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 6. v19_06_what_is_not_included.png
+    STATUS:    COPY UPDATE
+    WHY:       Concept preserved; trigger and copy updated to the restored wording.
+    PURPOSE:   The line that protects a fixed fee.
+    TRIGGER:   The absence of that line is where a fixed fee turns into five months of work.
+    MODE:      FULL SCREEN
+    REVEAL:    Single state.
+    EMPHASIS:  The whole frame.
+    HOLD:      At least 3 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate.
+    AFTER:     Return to camera on the next spoken line.
+
+ 7. v19_07_repeatable_delivery.png
+    STATUS:    NEW
+    WHY:       The restored master brings back the repeatable-delivery section.
+    PURPOSE:   Develop the third of the four, which the shortened version skipped.
+    TRIGGER:   The first engagement is always partly invention. The question is what survives it.
+    MODE:      FULL SCREEN
+    REVEAL:    One at a time, then the foot line.
+    EMPHASIS:  The foot line, which connects repeatability to pricing.
+    HOLD:      2 seconds each, 4 on the foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the foot line lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 8. v19_08_the_costs.png
+    STATUS:    NEW
+    WHY:       The restored master brings back the costs section, which the shortened version compressed.
+    PURPOSE:   The honesty beat, restored in full.
+    TRIGGER:   The time you spend finding work is not paid.
+    MODE:      FULL SCREEN
+    REVEAL:    One column at a time, then the foot line.
+    EMPHASIS:  The foot line.
+    HOLD:      2 seconds each, 4 on the foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate.
+    AFTER:     Return to camera on the next spoken line.
+
+ 9. v19_09_cta.png
+    STATUS:    REUSE
+    WHY:       Reclassified from COPY UPDATE to REUSE. Measured: byte- identical to the prior rendered file. The editorial note written when this card was built, kept as written: Route unchanged. Trigger moved to the restored resource sentence.
+    PURPOSE:   The single resource route named by the restored master.
+    TRIGGER:   If you want a structured way to record that decision and what it rests on, the Career Decision Evidence Check is linked below.
+    MODE:      FULL SCREEN
+    REVEAL:    Label, headline, resource name, URL.
+    EMPHASIS:  The URL.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one clean transition sound on entry.
+    AFTER:     Return to camera on the next spoken line.
+
+10. v19_10_watch_next.png
+    STATUS:    REUSE
+    WHY:       Reclassified from COPY UPDATE to REUSE. Measured: byte- identical to the prior rendered file. The editorial note written when this card was built, kept as written: Destination unchanged. Trigger moved to the restored final line.
+    PURPOSE:   The final visual.
+    TRIGGER:   It usually means the offer is still a description of you rather than a description of something a person can buy.
+    MODE:      FULL SCREEN
+    REVEAL:    Label, rule, title, number.
+    EMPHASIS:  The title.
+    HOLD:      Hold to the end.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one restrained transition sound, then music fade.
+    AFTER:     NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+FULL SCREEN
+  Frameworks, comparisons, multi-point concepts, substantive demonstrations, the resource card and Watch Next are TRUE FULL SCREEN. No moving Temidayo behind or around a major visual. Substantive B-roll fills the entire frame. Short single-idea callouts may sit over camera. After a full-screen teaching visual, return to camera only where the scene map calls for it. THIS NEVER APPLIES TO WATCH NEXT: Watch Next is the final visual and there is no return to camera afterward.
+
+CAMERA
+  About 3 to 5 deliberate camera-emphasis beats across the whole video. This is one combined budget: gentle push-ins on tension, insight or a reframe, with occasional pull-backs or a return to base framing to reset the rhythm. It is not 3 to 5 push-ins plus 3 to 5 pull-backs. No aggressive zooms, no pulsing, no constant reframing, no unnecessary digital movement. Preserve headroom and source quality.
+
+SOUND BUDGET
+  About 4 to 7 restrained audio accents for the ENTIRE video, including the one visual Subscribe cue. The per-frame sound candidates in the visual map are OPTIONAL and are not cumulative. Choose only the moments with the highest visual or intellectual payoff. Keep every effect clearly quieter than the voice. Pair the sound with a small visual action so both land together. If no sound improves the moment, leave it silent.
+
+B-ROLL
+  About 2 to 4 meaningful full-screen B-roll moments where useful. This is not a quota. No generic handshakes, fake boardrooms, smiling coworkers, meaningless typing, AI-looking people, or invented employer documents presented as real. Where an example is constructed, it carries its label.
+
+CAPTIONS
+  NO BURNED-IN OR OPEN CAPTIONS on the long-form video. Viewers use YouTube CC. Deliver a clean export with no persistent subtitles, a complete final transcript with names, frameworks, URLs and industry terms proofread, and an SRT generated against the FINAL edited timeline with synchronization checked after every jump cut and removal. Do not delete transcript words because the camera is hidden behind a graphic. Shorts and Reels may use designed captions.
+
+SUBSCRIBE
+  One brief visual Subscribe cue after meaningful value has already been delivered. Visual only. There is no spoken Subscribe request in the master and none is added. About 1 to 3 seconds including entrance and exit. Do not interrupt a useful pause or cover teaching content.

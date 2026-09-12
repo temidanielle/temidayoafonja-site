@@ -1,0 +1,168 @@
+{
+  "video": 20,
+  "title": "How to Return After a Career Break Without Starting at Zero",
+  "generated": "Saturday, September 12, 2026 | 5:28 AM CT (America/Chicago, UTC-05:00)",
+  "spoken_source_of_truth": {
+    "file": "Video_20_FINAL_Regular_Length_Recording_Master.docx",
+    "sha256": "6cbb78129aab76109f9515b808a18ed2054c9531ab892f2293537377de83c379",
+    "note": "Copied unchanged into 01_Recording_Master. Never written to. This file overrides every earlier script."
+  },
+  "secondary_reference": [
+    {
+      "body": "SEP09_V4_V7",
+      "description": "Videos 4 to 7 handoff package, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP09_V8_V13",
+      "description": "Videos 8 to 13 production packages, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP10_V14_V21",
+      "description": "Videos 14 to 21 final production packages, September 10, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    }
+  ],
+  "runtime": {
+    "mode": "REGULAR LONG-FORM",
+    "is_five_minute_test": false,
+    "restored_regular_depth": true,
+    "target_stated_by_master": "Regular long-form. Preserve the original 9–12 minute target where that was the approved draft target.",
+    "note": "Videos 4 and 5 are the only 5-minute retention test. Videos 6 to 21 are regular long-form and were not shortened to meet a 5-minute target."
+  },
+  "packaging": {
+    "thumbnail": "WHAT STILL COUNTS NOW?",
+    "framework": null,
+    "primary_cta": "One thing you are rebuilding, with a date on it.",
+    "primary_cta_spoken_at": "If you want a structured way to build the evidence side of that, the Field Kit is linked below.",
+    "resource": "Capability Formation Field Kit",
+    "resource_spoken": true,
+    "watch_next": "Video 4: I Was First in 3 New Roles in 5 Years. Here's What I Stopped Doing.",
+    "watch_next_source": "the Watch Next card in the production deck"
+  },
+  "script": {
+    "sections": 10,
+    "thought_blocks": 41,
+    "spoken_words": 1281,
+    "speech_only_estimate": "8:50 to 9:51 at 130 to 145 words per minute",
+    "estimate_note": "Arithmetic on the script. Excludes pauses and visual holds. Not a timed read and not a runtime."
+  },
+  "assets": [
+    {
+      "file": "v20_01_the_gap_is_not_the_whole_return.png",
+      "status": "REUSE",
+      "why": "Concept and trigger both survive into the restored master. The opening sentence itself is reworded, and it remains a real personal account that is never labeled an illustration.",
+      "mode": "SHORT CALLOUT OVER CAMERA for the headline, then FULL SCREEN for the question.",
+      "trigger": "The explanation matters. But it is not the whole return."
+    },
+    {
+      "file": "v20_02_what_can_you_prove.png",
+      "status": "NEW",
+      "why": "The restored master separates the reframe into its own section.",
+      "mode": "FULL SCREEN",
+      "trigger": "But the conversation eventually moves to a harder question: what can you do now, and what can you prove?"
+    },
+    {
+      "file": "v20_03_six_categories.png",
+      "status": "REBUILD",
+      "why": "The September 10 master used three buckets with six things inside. The restored master uses six categories directly, so the frame is rebuilt to the corrected structure.",
+      "mode": "FULL SCREEN",
+      "trigger": "So before the applications, sort what you have into six categories."
+    },
+    {
+      "file": "v20_04_unproven_is_not_absent.png",
+      "status": "COPY UPDATE",
+      "why": "Reclassified from REUSE to COPY UPDATE. Measured: 65% of the text is shared with the prior card, which read: Unproven is not the same as absent. You may still know how to do something and simply have no recent evidence…. The editorial note written when this card was built, kept as written: The distinction survives into the restored master. Trigger updated to the restored sentence.",
+      "mode": "FULL SCREEN",
+      "trigger": "There is a difference between not being able to do something and not being able to point at recent evidence that you can."
+    },
+    {
+      "file": "v20_05_current_instance.png",
+      "status": "COPY UPDATE",
+      "why": "Concept preserved; trigger and copy updated to the restored wording.",
+      "mode": "FULL SCREEN",
+      "trigger": "If it is unproven, you do not need to relearn it. You need a current instance of it."
+    },
+    {
+      "file": "v20_06_the_sort.png",
+      "status": "COPY UPDATE",
+      "why": "Concept preserved; trigger and copy updated. This constructed illustration is labeled; the opening personal account is not, and the two must never be confused.",
+      "mode": "FULL SCREEN",
+      "trigger": "Let me show you the sort. This is a constructed example, put together to make the categories visible rather than a real person's case."
+    },
+    {
+      "file": "v20_07_framing_and_bias.png",
+      "status": "COPY UPDATE",
+      "why": "Concept preserved; trigger and copy updated to the restored wording.",
+      "mode": "FULL SCREEN",
+      "trigger": "Bias against career breaks is real."
+    },
+    {
+      "file": "v20_08_routes_back.png",
+      "status": "NEW",
+      "why": "The restored master brings back the routes section, which the shortened version had lost.",
+      "mode": "FULL SCREEN",
+      "trigger": "On the routes back, there are usually several and each one costs something different."
+    },
+    {
+      "file": "v20_09_cta.png",
+      "status": "COPY UPDATE",
+      "why": "Route unchanged. Trigger moved to the restored resource sentence.",
+      "mode": "FULL SCREEN",
+      "trigger": "If you want a structured way to build the evidence side of that, the Field Kit is linked below."
+    },
+    {
+      "file": "v20_10_watch_next.png",
+      "status": "REBUILD",
+      "why": "Destination unchanged, card copy rebuilt. The September 10 card carried Video 4's former descriptive title, 'How to Explain a Career That Looks All Over the Place', which no longer names any video. The corrected September 11 V4 master is the authority, so the card now reads its exact title.",
+      "mode": "FULL SCREEN",
+      "trigger": "It turns the part of this you can control into something that has already started."
+    }
+  ],
+  "shorts": [
+    {
+      "slug": "v20_a1_not_the_whole_return",
+      "priority": "A",
+      "title": "The gap is not the whole return",
+      "source": "V20 hook and reframe."
+    },
+    {
+      "slug": "v20_a2_unproven_is_not_absent",
+      "priority": "A",
+      "title": "Unproven is not the same as absent",
+      "source": "V20 the distinction."
+    },
+    {
+      "slug": "v20_a3_six_categories",
+      "priority": "A",
+      "title": "Six categories instead of behind on everything",
+      "source": "V20 the six categories."
+    },
+    {
+      "slug": "v20_a4_put_a_date_on_it",
+      "priority": "A",
+      "title": "Put a date on it",
+      "source": "V20 application."
+    },
+    {
+      "slug": "v20_b1_bias_is_real",
+      "priority": "B",
+      "title": "A good explanation cannot remove bias",
+      "source": "V20 market reality."
+    },
+    {
+      "slug": "v20_b2_decay_vs_change",
+      "priority": "B",
+      "title": "Decay and change are different problems",
+      "source": "V20 needs updating."
+    }
+  ],
+  "not_verified": [
+    "Nothing in this package has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

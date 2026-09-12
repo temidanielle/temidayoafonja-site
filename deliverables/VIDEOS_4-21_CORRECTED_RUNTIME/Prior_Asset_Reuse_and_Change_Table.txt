@@ -1,0 +1,1149 @@
+==============================================================================
+VIDEOS 4 TO 21  |  PRIOR-ASSET REUSE AND CHANGE TABLE
+==============================================================================
+
+Generated: Saturday, September 12, 2026 | 5:28 AM CT (America/Chicago, UTC-05:00)
+
+------------------------------------------------------------------------------
+
+THE TEST
+
+  An asset is REUSE only when a prior rendered asset exists and
+  the newly rendered PNG is byte-identical to it. A similar visual
+  topic, a similar headline or a shared layout is not reuse.
+
+  28 of 185 newly rendered assets are byte-identical to a prior
+  rendered asset.
+
+------------------------------------------------------------------------------
+
+DECLARED CLASSIFICATION
+
+    NEW                      61
+    COPY UPDATE              60
+    REBUILD                  33
+    REUSE                    29
+    REMOVE, replaced by NEW  2
+
+------------------------------------------------------------------------------
+
+CONTRADICTIONS BETWEEN THE LABEL AND THE BYTES
+
+  V20  v20_01_the_gap_is_not_the_whole_return declared REUSE but no prior rendered asset is byte-identical
+
+------------------------------------------------------------------------------
+
+EVERY ASSET
+
+  ASSET                              CLASSIFICATION         IDENTICAL  MATCHED PRIOR FILE
+  --------------------------------------------------------------------------------------------------------------
+  v4_01_title_new_work_not_new       REMOVE, replaced by NEW no         
+  v4_02_three_stops                  NEW                    no         
+  v4_03_three_questions              NEW                    no         
+  v4_04_remove_the_title             REBUILD                no         
+  v4_05_task_list_vs_judgment        NEW                    no         
+  v4_06_gap_is_not_a_verdict         NEW                    no         
+  v4_07_three_line_readiness_case    NEW                    no         
+  v4_08_what_it_does_not_guarantee   REBUILD                no         
+  v4_09_cta                          REBUILD                no         
+  v4_10_watch_next                   COPY UPDATE            no         
+  v5_01_changed_tracks_not_zero      REMOVE, replaced by NEW no         
+  v5_02_four_things                  NEW                    no         
+  v5_03_carry_test                   NEW                    no         
+  v5_04_translate                    REBUILD                no         
+  v5_05_relearn_without_beginner     NEW                    no         
+  v5_06_confidence_both_directions   NEW                    no         
+  v5_07_prove_the_level              REBUILD                no         
+  v5_08_four_line_move_case          NEW                    no         
+  v5_09_cta                          REBUILD                no         
+  v5_10_watch_next                   COPY UPDATE            no         
+  v6_01_movement_is_not_growth       NEW                    no         
+  v6_02_work_judgment_evidence       NEW                    no         
+  v6_03_harder_later                 NEW                    no         
+  v6_04_ordinary_monday              REBUILD                no         
+  v6_05_responsibility_is_not_judgment COPY UPDATE            no         
+  v6_06_three_kinds_of_return        COPY UPDATE            no         
+  v6_07_read_the_three_answers       NEW                    no         
+  v6_07_twelve_month_question        NEW                    no         
+  v6_08_what_this_cannot_solve       NEW                    no         
+  v6_08_yes_no_negotiate             COPY UPDATE            no         
+  v6_09_cta                          REBUILD                no         
+  v6_10_watch_next                   REBUILD                no         
+  v7_01_valuable_to_them_not_to_you  REBUILD                no         
+  v7_02_car                          NEW                    no         
+  v7_03_dependable_people            NEW                    no         
+  v7_04_complexity                   NEW                    no         
+  v7_05_authority                    COPY UPDATE            no         
+  v7_06_return                       REBUILD                no         
+  v7_07_read_the_car_pattern         NEW                    no         
+  v7_07_review_point                 COPY UPDATE            no         
+  v7_08_scope_conversation           NEW                    no         
+  v7_08_more_work_is_not_proof       NEW                    no         
+  v7_09_cta                          REBUILD                no         
+  v7_10_watch_next                   REUSE                  yes        SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_16_FINAL_PRODUCTION_PACKAGE/03_Visuals/Watch_Next_Card.png
+  v8_01_success_hides_the_work       REBUILD                no         
+  v8_02_four_things                  REBUILD                no         
+  v8_03_finished_hides_conditions    NEW                    no         
+  v8_04_weak_and_strong_before       NEW                    no         
+  v8_05_accurate_attribution         REBUILD                no         
+  v8_06_judgment_not_the_artifact    NEW                    no         
+  v8_07_existence_use_effect         NEW                    no         
+  v8_08_evidence_boundary            NEW                    no         
+  v8_08_four_sentence_account        REBUILD                no         
+  v8_09_cta                          REBUILD                no         
+  v8_10_watch_next                   REUSE                  yes        SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_21_FINAL_PRODUCTION_PACKAGE/03_Visuals/Watch_Next_Card.png
+  v9_01_direct_industry_experience   COPY UPDATE            no         
+  v9_02_neither_mistake              NEW                    no         
+  v9_03_capability_context_credentials REBUILD                no         
+  v9_04_same_verb_different_decision NEW                    no         
+  v9_05_capability_sentence          NEW                    no         
+  v9_06_context_is_not_vocabulary    NEW                    no         
+  v9_07_better_question_to_ask       NEW                    no         
+  v9_08_credential_three_labels      COPY UPDATE            no         
+  v9_09_cta                          REBUILD                no         
+  v9_10_watch_next                   COPY UPDATE            no         
+  v10_01_access_ends                 REBUILD                no         
+  v10_02_preparation_not_extraction  REBUILD                no         
+  v10_03_capture_qualify_retrieve    COPY UPDATE            no         
+  v10_04_calendar_vs_contribution    COPY UPDATE            no         
+  v10_05_three_labels                NEW                    no         
+  v10_06_language_that_survives      NEW                    no         
+  v10_07_name_it_by_the_problem      REBUILD                no         
+  v10_08_two_reasons_evidence_is_thin NEW                    no         
+  v10_09_cta                         REBUILD                no         
+  v10_10_watch_next                  REUSE                  yes        SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_17_FINAL_PRODUCTION_PACKAGE/03_Visuals/Watch_Next_Card.png
+  v11_01_can_we_reduce_the_team      COPY UPDATE            no         
+  v11_02_task_is_not_the_job         REBUILD                no         
+  v11_03_headline_rate               NEW                    no         
+  v11_04_the_mix_changed             NEW                    no         
+  v11_05_what_it_does_not_establish  NEW                    no         
+  v11_06_the_boundary_is_not         NEW                    no         
+  v11_07_who_owns_the_consequence    COPY UPDATE            no         
+  v11_08_map_your_role               REBUILD                no         
+  v11_09_cta                         COPY UPDATE            no         
+  v11_10_watch_next                  COPY UPDATE            no         
+  v12_01_constraint_not_conclusion   COPY UPDATE            no         
+  v12_02_protection_first            NEW                    no         
+  v12_03_three_moves                 COPY UPDATE            no         
+  v12_04_name_the_constraint         NEW                    no         
+  v12_05_make_the_tradeoff_visible   COPY UPDATE            no         
+  v12_06_question_before_activity    NEW                    no         
+  v12_07_exchange_not_add            NEW                    no         
+  v12_08_four_lines                  COPY UPDATE            no         
+  v12_09_cta                         REBUILD                no         
+  v12_10_watch_next                  REUSE                  yes        SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_19_FINAL_PRODUCTION_PACKAGE/03_Visuals/Watch_Next_Card.png
+  v13_01_career_activity             COPY UPDATE            no         
+  v13_02_define_investigate_try_decide REBUILD                no         
+  v13_03_not_this_option_is_allowed  NEW                    no         
+  v13_04_destination_specific_enough NEW                    no         
+  v13_05_ask_about_the_work          COPY UPDATE            no         
+  v13_06_work_sample_boundary        NEW                    no         
+  v13_07_three_decisions             NEW                    no         
+  v13_08_effort_is_not_evidence      NEW                    no         
+  v13_09_cta                         COPY UPDATE            no         
+  v13_10_watch_next                  REUSE                  yes        SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_21_FINAL_PRODUCTION_PACKAGE/03_Visuals/Watch_Next_Card.png
+  v14_01_same_words_different_work   REUSE                  yes        SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_14_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v14_01_same_words_different_work.png
+  v14_02_research_base               REUSE                  yes        SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_14_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v14_02_research_base.png
+  v14_03_two_question_test           REUSE                  yes        SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_14_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v14_03_two_question_test.png
+  v14_04_what_travels                REUSE                  yes        SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_14_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v14_04_what_travels.png
+  v14_05_same_word_different_decision REUSE                  yes        SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_14_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v14_05_same_word_different_decision.png
+  v14_06_four_bucket_audit           REUSE                  yes        SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_14_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v14_06_four_bucket_audit.png
+  v14_07_employers_disagree          REUSE                  yes        SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_14_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v14_07_employers_disagree.png
+  v14_08_research_boundary           REUSE                  yes        SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_14_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v14_08_research_boundary.png
+  v14_09_cta                         REUSE                  yes        SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_14_FINAL_PRODUCTION_PACKAGE/03_Visuals/Resource_Card.png
+  v14_10_watch_next                  COPY UPDATE            no         
+  v15_01_the_question_changes        REUSE                  yes        SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_15_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v15_01_the_question_changes.png
+  v15_02_three_gaps                  COPY UPDATE            no         
+  v15_03_learn_test                  COPY UPDATE            no         
+  v15_04_course_limit                COPY UPDATE            no         
+  v15_05_practice_question           COPY UPDATE            no         
+  v15_06_organizational_constraint   NEW                    no         
+  v15_07_three_reads                 COPY UPDATE            no         
+  v15_08_not_a_diagnostic            NEW                    no         
+  v15_09_cta                         REBUILD                no         
+  v15_10_watch_next                  REUSE                  yes        SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_18_FINAL_PRODUCTION_PACKAGE/03_Visuals/Watch_Next_Card.png
+  v16_01_called_then_skipped         REUSE                  yes        SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_16_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v16_01_called_then_skipped.png
+  v16_02_four_separations            COPY UPDATE            no         
+  v16_03_where_work_disappears       COPY UPDATE            no         
+  v16_04_delivery_vs_scope           COPY UPDATE            no         
+  v16_05_the_hinge                   NEW                    no         
+  v16_06_what_this_does_not_fix      COPY UPDATE            no         
+  v16_07_three_pieces_four_lines     COPY UPDATE            no         
+  v16_08_waiting_or_testing          NEW                    no         
+  v16_09_cta                         REUSE                  yes        SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_16_FINAL_PRODUCTION_PACKAGE/03_Visuals/Resource_Card.png
+  v16_10_watch_next                  REUSE                  yes        SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_16_FINAL_PRODUCTION_PACKAGE/03_Visuals/Watch_Next_Card.png
+  v17_01_two_days_forty_minutes      COPY UPDATE            no         
+  v17_02_what_did_you_actually_do    REUSE                  yes        SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_17_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v17_02_what_did_you_actually_do.png
+  v17_03_output_is_not_contribution  COPY UPDATE            no         
+  v17_04_four_lines                  COPY UPDATE            no         
+  v17_05_line_two                    COPY UPDATE            no         
+  v17_06_which_parts_leave_a_record  NEW                    no         
+  v17_07_speed_is_not_correctness    NEW                    no         
+  v17_08_worked_example              COPY UPDATE            no         
+  v17_09_cta                         COPY UPDATE            no         
+  v17_10_watch_next                  REUSE                  yes        SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_17_FINAL_PRODUCTION_PACKAGE/03_Visuals/Watch_Next_Card.png
+  v18_01_congratulated               REUSE                  yes        SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_18_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v18_01_congratulated.png
+  v18_02_two_different_jobs          REUSE                  yes        SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_18_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v18_02_two_different_jobs.png
+  v18_03_five_variables              COPY UPDATE            no         
+  v18_04_responsibility_without_authority NEW                    no         
+  v18_05_what_the_job_consumes       COPY UPDATE            no         
+  v18_06_ask_for_names               REBUILD                no         
+  v18_07_the_other_job_demands       NEW                    no         
+  v18_08_four_questions              COPY UPDATE            no         
+  v18_09_cta                         COPY UPDATE            no         
+  v18_10_watch_next                  REUSE                  yes        SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_18_FINAL_PRODUCTION_PACKAGE/03_Visuals/Watch_Next_Card.png
+  v19_01_you_should_consult          COPY UPDATE            no         
+  v19_02_experience_is_not_an_offer  REBUILD                no         
+  v19_03_four_things                 COPY UPDATE            no         
+  v19_04_who_signs_it                COPY UPDATE            no         
+  v19_05_expertise_vs_deliverable    COPY UPDATE            no         
+  v19_06_what_is_not_included        COPY UPDATE            no         
+  v19_07_repeatable_delivery         NEW                    no         
+  v19_08_the_costs                   NEW                    no         
+  v19_09_cta                         REUSE                  yes        SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_19_FINAL_PRODUCTION_PACKAGE/03_Visuals/Resource_Card.png
+  v19_10_watch_next                  REUSE                  yes        SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_19_FINAL_PRODUCTION_PACKAGE/03_Visuals/Watch_Next_Card.png
+  v20_01_the_gap_is_not_the_whole_return REUSE                  no         
+  v20_02_what_can_you_prove          NEW                    no         
+  v20_03_six_categories              REBUILD                no         
+  v20_04_unproven_is_not_absent      COPY UPDATE            no         
+  v20_05_current_instance            COPY UPDATE            no         
+  v20_06_the_sort                    COPY UPDATE            no         
+  v20_07_framing_and_bias            COPY UPDATE            no         
+  v20_08_routes_back                 NEW                    no         
+  v20_09_cta                         COPY UPDATE            no         
+  v20_10_watch_next                  REBUILD                no         
+  v21_01_the_room_is_different       REUSE                  yes        SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_21_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v21_01_the_room_is_different.png
+  v21_02_what_does_travel            COPY UPDATE            no         
+  v21_03_five_layers                 REBUILD                no         
+  v21_04_licensing_is_not_a_mindset  COPY UPDATE            no         
+  v21_05_easiest_layer_trap          COPY UPDATE            no         
+  v21_06_has_anyone_tried_this       COPY UPDATE            no         
+  v21_07_first_ninety_days           NEW                    no         
+  v21_08_order_by_what_blocks_you    COPY UPDATE            no         
+  v21_09_cta                         COPY UPDATE            no         
+  v21_10_watch_next                  REUSE                  yes        SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_21_FINAL_PRODUCTION_PACKAGE/03_Visuals/Watch_Next_Card.png
+
+------------------------------------------------------------------------------
+
+WHY EACH ASSET CARRIES ITS CLASSIFICATION
+
+  V4   v4_01_title_new_work_not_new
+        The September 9 V4 opened on the interview question and the
+        twenty-second answer. That script is superseded entirely.
+        V4_MG01_Introduction_Or_Defense.png has no place in the corrected
+        script.
+
+  V4   v4_02_three_stops
+        The three-stop structure does not exist in any prior V4 asset.
+
+  V4   v4_03_three_questions
+        New framing introduced by the corrected master.
+
+  V4   v4_04_remove_the_title
+        V4_MG03_Order_Depends_On_The_Question.png tested a different idea. The
+        comparison shape is reusable; the content is entirely new.
+
+  V4   v4_05_task_list_vs_judgment
+        Judgment-over-activity is new to the corrected V4.
+
+  V4   v4_06_gap_is_not_a_verdict
+        No prior V4 asset carried this.
+
+  V4   v4_07_three_line_readiness_case
+        The readiness case replaces the prior twenty-second and ninety-second
+        answer assets entirely.
+
+  V4   v4_08_what_it_does_not_guarantee
+        Reclassified from REUSE to REBUILD. Measured: only 33% of the text is
+        shared with the closest prior card, which read: A STORY EXPLAINS.
+        PROOF SUPPORTS. The story gets the question. Evidence answers it.. The
+        editorial note written when this card was built, kept as written:
+        V4_MG08 carried a limits concept and the corrected master keeps a
+        limits beat, but the wording is new, so the render is rebuilt while
+        the editorial slot is preserved.
+
+  V4   v4_09_cta
+        V4_CTA_Career_Evidence_Starter.png routed to a resource. The corrected
+        master names no resource, so no route is shown and none is added.
+
+  V4   v4_10_watch_next
+        V4_WatchNext_Why_Nobody_Can_Tell.png pointed at the old V5 title. The
+        destination is still V5; its title changed, so the card is rebuilt
+        with the corrected title.
+
+  V5   v5_01_changed_tracks_not_zero
+        V5_MG01_Two_Versions_Of_The_Same_Career.png belonged to the superseded
+        legibility script.
+
+  V5   v5_02_four_things
+        Carry / Translate / Relearn / Prove does not exist in the prior
+        package.
+
+  V5   v5_03_carry_test
+        New test introduced by the corrected master.
+
+  V5   v5_04_translate
+        V5_MG05_Remove_The_Nouns.png tested an adjacent idea. The shape is
+        reusable; the corrected content replaces it.
+
+  V5   v5_05_relearn_without_beginner
+        New to the corrected master.
+
+  V5   v5_06_confidence_both_directions
+        New to the corrected master and editorially load-bearing.
+
+  V5   v5_07_prove_the_level
+        V5_MG07_Test_The_Claim.png tested a different claim. Rebuilt to the
+        corrected content.
+
+  V5   v5_08_four_line_move_case
+        Replaces the prior Claim and Receipts artifact entirely.
+
+  V5   v5_09_cta
+        V5_CTA_Career_Evidence_Starter.png routed to a resource. The corrected
+        master names none, so none is shown.
+
+  V5   v5_10_watch_next
+        V5_WatchNext_Change_Jobs.png pointed at V1. The corrected sequence
+        runs V5 into V6, so the destination and the copy both change.
+
+  V6   v6_01_movement_is_not_growth
+        The eight-industries warrant is new to the corrected master.
+        V6_MG01_New_Title_Same_Work.png opened differently.
+
+  V6   v6_02_work_judgment_evidence
+        Reclassified from REUSE to NEW. Measured: nothing in the prior package
+        resembles it; the closest card shares 22% of its text. The editorial
+        note written when this card was built, kept as written:
+        V6_MG02_Three_Questions.png carries the same Work / Judgment /
+        Evidence framework and the corrected master preserves it. The copy is
+        updated to the corrected question wording, so the render is
+        regenerated rather than carried across as a file.
+
+  V6   v6_03_harder_later
+        The broader role-growth argument is new to the corrected master.
+
+  V6   v6_04_ordinary_monday
+        Reclassified from REUSE to REBUILD. Measured: only 44% of the text is
+        shared with the closest prior card, which read: QUESTION ONE WHAT WILL
+        BE DIFFERENT ON AN ORDINARY MONDAY? Problems · Systems · Stakeholders
+        · Context. The editorial note written when this card was built, kept
+        as written: V6_MG03_Ordinary_Monday.png carries the same instruction
+        and the corrected master keeps it verbatim. Regenerated because the
+        supporting questions changed.
+
+  V6   v6_05_responsibility_is_not_judgment
+        V6_MG04_Tasks_Vs_Judgment.png held the adjacent tasks-versus-judgment
+        idea. The corrected master sharpens it into
+        responsibility-versus-judgment, so the copy is replaced.
+
+  V6   v6_06_three_kinds_of_return
+        V6_MG05_Portable_Evidence.png covered portable evidence. The corrected
+        master names three specific returns, so the copy is replaced.
+
+  V6   v6_07_read_the_three_answers
+        The section it serves was cut out of the compressed master and is
+        restored from the approved September 9 master, so no prior card exists
+        for it.
+
+  V6   v6_07_twelve_month_question
+        The 12-month question is named in the corrected framework and has no
+        prior asset.
+
+  V6   v6_08_what_this_cannot_solve
+        The section it serves was cut out of the compressed master and is
+        restored from the approved September 9 master, so no prior card exists
+        for it.
+
+  V6   v6_08_yes_no_negotiate
+        V6_MG07_Questions_To_Ask.png covered the asking step. The corrected
+        master ends on a written yes, no or negotiate decision.
+
+  V6   v6_09_cta
+        Rebuilt for the restored master. The compressed September 11 master
+        had no spoken CTA at all, so this card correctly carried the action
+        alone. The restored master speaks the Career Decision Evidence Check
+        once after the teaching, exactly as the approved September 9 master
+        did, so the card carries the route again.
+
+  V6   v6_10_watch_next
+        The destination is still Video 7, but its title changed entirely in
+        the correction, so every word this card draws is different from the
+        September 9 card, which read 'Are You Growing, or Just Being Given
+        More Work?'. The spoken cue also moves to the restored Watch Next
+        line; the compressed master had no spoken handoff, so the card had
+        been cued off the final teaching sentence instead.
+
+  V7   v7_01_valuable_to_them_not_to_you
+        V7_MG01_Opening_Consequence.png opened on a different consequence. The
+        corrected master opens on the value trade, so the frame is rebuilt.
+
+  V7   v7_02_car
+        Reclassified from REUSE to NEW. Measured: nothing in the prior package
+        resembles it; the closest card shares 10% of its text. The editorial
+        note written when this card was built, kept as written:
+        V7_MG02_CAR_Framework.png carries the same framework and the corrected
+        master preserves CAR exactly. Regenerated because the question wording
+        under each letter is updated.
+
+  V7   v7_03_dependable_people
+        The corrected master adds this mechanism section.
+
+  V7   v7_04_complexity
+        Reclassified from REUSE to NEW. Measured: nothing in the prior package
+        resembles it; the closest card shares 6% of its text. The editorial
+        note written when this card was built, kept as written:
+        V7_MG03_Complexity.png covers the same test and the corrected master
+        preserves it. Copy updated to the corrected variable list.
+
+  V7   v7_05_authority
+        Reclassified from REUSE to COPY UPDATE. Measured: 70% of the text is
+        shared with the prior card, which read: A IS FOR AUTHORITY Three words
+        people use as one. RESPONSIBILITY What you carry. ACCOUNTABILITY What
+        you answ…. The editorial note written when this card was built, kept
+        as written: V7_MG04_Authority.png carries the same three-way
+        separation, preserved by the corrected master.
+
+  V7   v7_06_return
+        Reclassified from REUSE to REBUILD. Measured: only 44% of the text is
+        shared with the closest prior card, which read: R IS FOR RETURN 01
+        CAPABILITY 02 EVIDENCE 03 RECOGNITION What did the work return?. The
+        editorial note written when this card was built, kept as written:
+        V7_MG05_Return.png carries the same three returns and the praise line,
+        both preserved by the corrected master.
+
+  V7   v7_07_read_the_car_pattern
+        The section it serves was cut out of the compressed master and is
+        restored from the approved September 9 master, so no prior card exists
+        for it.
+
+  V7   v7_07_review_point
+        V7_MG06_Pattern_Read.png covered reading the pattern. The corrected
+        master ends on three questions asked before saying yes.
+
+  V7   v7_08_scope_conversation
+        The section it serves was cut out of the compressed master and is
+        restored from the approved September 9 master, so no prior card exists
+        for it.
+
+  V7   v7_08_more_work_is_not_proof
+        The corrected master's closing line differs from the September 9
+        ending.
+
+  V7   v7_09_cta
+        Rebuilt for the restored master. The compressed September 11 master
+        had no spoken CTA at all, so this card correctly carried the action
+        alone. The restored master speaks the Field Kit once after the
+        teaching, exactly as the approved September 9 master did, so the card
+        carries the route again.
+
+  V7   v7_10_watch_next
+        The rendered card is byte-identical to the prior one. Only the spoken
+        cue moved, to the restored Watch Next line, and a cue is a direction
+        to the reader rather than anything drawn on the card. The compressed
+        master had no spoken handoff, so the card had been cued off the final
+        teaching sentence instead.
+
+  V8   v8_01_success_hides_the_work
+        Reclassified from REUSE to REBUILD. Measured: only 32% of the text is
+        shared with the closest prior card, which read: THE WORKED EXAMPLE
+        “ITS EFFECT HAD NOT YET BEEN ESTABLISHED.” That last sentence does not
+        weaken the story. I…. The editorial note written when this card was
+        built, kept as written: The prior package opened on the same
+        disappearance idea and the corrected master preserves it. Copy updated
+        to the corrected wording.
+
+  V8   v8_02_four_things
+        The prior package used reconstruct-the-before, show-the-judgment,
+        keep-the-proof as three steps. The corrected master uses four named
+        elements, so the framework asset is rebuilt.
+
+  V8   v8_03_finished_hides_conditions
+        New section in the corrected master.
+
+  V8   v8_04_weak_and_strong_before
+        New to the corrected master.
+
+  V8   v8_05_accurate_attribution
+        Reclassified from REUSE to REBUILD. Measured: only 38% of the text is
+        shared with the closest prior card, which read: NOW IT LOOKS EASY.
+        That is exactly why your contribution can become harder to see.. The
+        editorial note written when this card was built, kept as written: The
+        prior package carried a do-not-imply-sole-authorship boundary and the
+        corrected master states it as a positive rule.
+
+  V8   v8_06_judgment_not_the_artifact
+        New example and new framing in the corrected master.
+
+  V8   v8_07_existence_use_effect
+        Existence / Use / Effect is new to the corrected master and is the
+        most important addition in this video.
+
+  V8   v8_08_evidence_boundary
+        The corrected master carries this boundary and no prior rendered card
+        presented it full screen.
+
+  V8   v8_08_four_sentence_account
+        The prior package had a before-and-after account. The corrected master
+        specifies four named sentences, so the artifact is rebuilt.
+
+  V8   v8_09_cta
+        Rebuilt for the restored master. The compressed September 11 master
+        had no spoken CTA at all, so this card correctly carried the action
+        alone. The restored master speaks Keep the Proof once after the
+        teaching, exactly as the approved September 9 master did, so the card
+        carries the route again.
+
+  V8   v8_10_watch_next
+        The rendered card is byte-identical to the prior one. Only the spoken
+        cue moved, to the restored Watch Next line, and a cue is a direction
+        to the reader rather than anything drawn on the card. The compressed
+        master had no spoken handoff, so the card had been cued off the final
+        teaching sentence instead.
+
+  V9   v9_01_direct_industry_experience
+        V9's prior opening asset addressed the same status tension. The
+        corrected master sharpens it to the posting sentence itself.
+
+  V9   v9_02_neither_mistake
+        The corrected master states both mistakes explicitly in the hook.
+
+  V9   v9_03_capability_context_credentials
+        Reclassified from REUSE to REBUILD. Measured: only 48% of the text is
+        shared with the closest prior card, which read: THE THREE-PART READ 01
+        CAPABILITY 02 CONTEXT 03 CREDENTIALS What can you prove? What changes
+        here? What is ac…. The editorial note written when this card was
+        built, kept as written: The prior V9 package carries the same
+        three-part framework and the corrected master preserves it. Copy
+        updated to the corrected questions.
+
+  V9   v9_04_same_verb_different_decision
+        The corrected master adds this explicit equivalence warning.
+
+  V9   v9_05_capability_sentence
+        New to the corrected master.
+
+  V9   v9_06_context_is_not_vocabulary
+        New to the corrected master.
+
+  V9   v9_07_better_question_to_ask
+        New to the corrected master.
+
+  V9   v9_08_credential_three_labels
+        The prior package addressed credentials. The corrected master
+        specifies these three labels, so the copy is replaced.
+
+  V9   v9_09_cta
+        Reclassified from REUSE to REBUILD. Measured: only 41% of the text is
+        shared with the closest prior card, which read: THE THREE-PART READ 01
+        CAPABILITY 02 CONTEXT 03 CREDENTIALS What can you prove? What changes
+        here? What is ac…. The editorial note written when this card was
+        built, kept as written: The prior package routed V9 to the Field Kit
+        and the corrected master keeps that route.
+
+  V9   v9_10_watch_next
+        Reclassified from REUSE to COPY UPDATE. Measured: 93% of the text is
+        shared with the prior card, which read: WATCH NEXT Before a Layoff,
+        Know What You Can Still Prove. The editorial note written when this
+        card was built, kept as written: Destination and title unchanged from
+        the prior package.
+
+  V10  v10_01_access_ends
+        Reclassified from REUSE to REBUILD. Measured: only 57% of the text is
+        shared with the closest prior card, which read: YOUR EXPERIENCE DID
+        NOT DISAPPEAR. YOUR ACCESS TO THE EVIDENCE DID.. The editorial note
+        written when this card was built, kept as written:
+        V10_MG01_Access_Not_Experience.png carries the same distinction and
+        the corrected master preserves it.
+
+  V10  v10_02_preparation_not_extraction
+        Reclassified from REUSE to REBUILD. Measured: only 49% of the text is
+        shared with the closest prior card, which read: THE BOUNDARY
+        PREPARATION IS NOT EXTRACTION. No forwarding internal emails,
+        downloading dashboards, copying cu…. The editorial note written when
+        this card was built, kept as written:
+        V10_MG02_Preparation_Is_Not_Extraction.png carries the same boundary,
+        preserved by the corrected master.
+
+  V10  v10_03_capture_qualify_retrieve
+        Reclassified from REUSE to COPY UPDATE. Measured: 68% of the text is
+        shared with the prior card, which read: THE EVIDENCE HABIT 01 CAPTURE
+        THE CONTRIBUTION 02 QUALIFY THE CLAIM 03 MAKE IT RETRIEVABLE. The
+        editorial note written when this card was built, kept as written:
+        V10_MG03_Capture_Qualify_Retrieve.png carries the same three steps,
+        preserved by the corrected master.
+
+  V10  v10_04_calendar_vs_contribution
+        Reclassified from REUSE to COPY UPDATE. Measured: 85% of the text is
+        shared with the prior card, which read: One | Capture the
+        contribution, not the calendar. THE CALENDAR ENTRY “Attended weekly
+        implementation meetings…. The editorial note written when this card
+        was built, kept as written: V10_MG04_Calendar_Versus_Contribution.png
+        carries the same comparison. Copy updated to the corrected example.
+
+  V10  v10_05_three_labels
+        Reclassified from REUSE to NEW. Measured: nothing in the prior package
+        resembles it; the closest card shares 4% of its text. The editorial
+        note written when this card was built, kept as written:
+        V10_MG05_Confirmed_Qualified_Not_Verified.png carries the same three
+        labels, preserved by the corrected master.
+
+  V10  v10_06_language_that_survives
+        New framing in the corrected master.
+
+  V10  v10_07_name_it_by_the_problem
+        Reclassified from REUSE to REBUILD. Measured: only 39% of the text is
+        shared with the closest prior card, which read: THREE | MAKE IT
+        RETRIEVABLE Name the entry by the problem, not the project. “PROJECT
+        ALPHA” Means nothing out…. The editorial note written when this card
+        was built, kept as written: V10_MG06_Name_It_By_The_Problem.png
+        carries the same habit, preserved by the corrected master.
+
+  V10  v10_08_two_reasons_evidence_is_thin
+        Reclassified from REUSE to NEW. Measured: nothing in the prior package
+        resembles it; the closest card shares 20% of its text. The editorial
+        note written when this card was built, kept as written:
+        V10_MG07_Two_Reasons_Evidence_Is_Thin.png carries the same
+        distinction, preserved by the corrected master.
+
+  V10  v10_09_cta
+        Reclassified from REUSE to REBUILD. Measured: only 44% of the text is
+        shared with the closest prior card, which read: THE EVIDENCE HABIT 01
+        CAPTURE THE CONTRIBUTION 02 QUALIFY THE CLAIM 03 MAKE IT RETRIEVABLE.
+        The editorial note written when this card was built, kept as written:
+        V10_RESOURCE_Keep_The_Proof.png routes to the same resource, preserved
+        by the corrected master.
+
+  V10  v10_10_watch_next
+        V10_WATCH_NEXT_AI_Can_Do_The_Task.png points at the same destination
+        with the same title.
+
+  V11  v11_01_can_we_reduce_the_team
+        Reclassified from REUSE to COPY UPDATE. Measured: 88% of the text is
+        shared with the prior card, which read: “DOES THIS MEAN WE CAN REDUCE
+        THE TEAM?” That is the moment the job changes.. The editorial note
+        written when this card was built, kept as written:
+        V11_MG01_Can_We_Reduce_The_Team.png carries the same opening question,
+        preserved by the corrected master.
+
+  V11  v11_02_task_is_not_the_job
+        Reclassified from REUSE to REBUILD. Measured: only 50% of the text is
+        shared with the closest prior card, which read: THE FRAMEWORK 01
+        PRODUCE 02 INTERPRET 03 DECIDE And verify across all three.. The
+        editorial note written when this card was built, kept as written:
+        V11_MG04_Produce_Interpret_Decide.png carries the same framework,
+        preserved by the corrected master.
+
+  V11  v11_03_headline_rate
+        Reclassified from REUSE to NEW. Measured: nothing in the prior package
+        resembles it; the closest card shares 8% of its text. The editorial
+        note written when this card was built, kept as written:
+        V11_MG02_The_Headline_Rate.png carries the same synthetic figures and
+        label, preserved by the corrected master.
+
+  V11  v11_04_the_mix_changed
+        Reclassified from REUSE to NEW. Measured: nothing in the prior package
+        resembles it; the closest card shares 21% of its text. The editorial
+        note written when this card was built, kept as written:
+        V11_MG03_The_Mix_Changed.png carries the same reveal, preserved by the
+        corrected master.
+
+  V11  v11_05_what_it_does_not_establish
+        Reclassified from REUSE to NEW. Measured: nothing in the prior package
+        resembles it; the closest card shares 4% of its text. The editorial
+        note written when this card was built, kept as written:
+        V11_MG05_What_It_Does_Not_Establish.png carries the same boundary,
+        preserved by the corrected master.
+
+  V11  v11_06_the_boundary_is_not
+        The corrected master adds this explicit refusal, which the prior
+        package did not carry.
+
+  V11  v11_07_who_owns_the_consequence
+        Reclassified from REUSE to COPY UPDATE. Measured: 74% of the text is
+        shared with the prior card, which read: THREE | DECIDE 01 Who is
+        authorized to make the change? 02 Which risks must be accepted or
+        reduced? 03 What a…. The editorial note written when this card was
+        built, kept as written: V11_MG06_Who_Owns_The_Consequence.png carries
+        the same set, preserved by the corrected master.
+
+  V11  v11_08_map_your_role
+        Reclassified from REUSE to REBUILD. Measured: only 29% of the text is
+        shared with the closest prior card, which read: CAPABILITY FORMATION
+        FIELD KIT A broader read of what your work is building. Not an AI
+        certification and not …. The editorial note written when this card was
+        built, kept as written: V11_MG07_Map_Your_Role.png carries the same
+        application. Copy updated to attach the corrected master's limit.
+
+  V11  v11_09_cta
+        The prior package routed V11 to the Field Kit and the corrected master
+        keeps that route. The headline changes with the corrected action.
+
+  V11  v11_10_watch_next
+        Reclassified from REUSE to COPY UPDATE. Measured: 92% of the text is
+        shared with the prior card, which read: WATCH NEXT What to Do When You
+        Can’t Quit Your Job Yet. The editorial note written when this card was
+        built, kept as written: Destination and title unchanged from the prior
+        package.
+
+  V12  v12_01_constraint_not_conclusion
+        Reclassified from REUSE to COPY UPDATE. Measured: 79% of the text is
+        shared with the prior card, which read: These are not the same thing.
+        “I CANNOT LEAVE YET.” That is a constraint. “NOTHING CAN CHANGE.” That
+        is a con…. The editorial note written when this card was built, kept
+        as written: The prior V12 package carried the same
+        constraint-versus-conclusion distinction and the corrected master
+        preserves it.
+
+  V12  v12_02_protection_first
+        The corrected master places this boundary early and explicitly.
+
+  V12  v12_03_three_moves
+        The prior package separated protection, boundaries, development and
+        preparation. The corrected master uses three, so the copy is replaced.
+
+  V12  v12_04_name_the_constraint
+        New to the corrected master.
+
+  V12  v12_05_make_the_tradeoff_visible
+        The prior package covered boundary language. The corrected master's
+        example replaces the copy.
+
+  V12  v12_06_question_before_activity
+        New to the corrected master.
+
+  V12  v12_07_exchange_not_add
+        New to the corrected master.
+
+  V12  v12_08_four_lines
+        The prior package ended on a next-step plan. The corrected master
+        specifies these four lines and adds the reduced version.
+
+  V12  v12_09_cta
+        Reclassified from REUSE to REBUILD. Measured: only 41% of the text is
+        shared with the closest prior card, which read: FREE CAREER DECISION
+        EVIDENCE CHECK Read the evidence behind staying, moving, or leaving.
+        It does not replace…. The editorial note written when this card was
+        built, kept as written: The prior package routed V12 to the Decision
+        Check and the corrected master keeps that route.
+
+  V12  v12_10_watch_next
+        Destination and title unchanged from the prior package.
+
+  V13  v13_01_career_activity
+        The prior package opened differently. The corrected master leads with
+        the anti-activity hook.
+
+  V13  v13_02_define_investigate_try_decide
+        Reclassified from REUSE to REBUILD. Measured: only 40% of the text is
+        shared with the closest prior card, which read: THE PLAN 01 DEFINE 02
+        INVESTIGATE 03 TRY 04 DECIDE And “not this option” is allowed to be a
+        good result.. The editorial note written when this card was built,
+        kept as written: The prior package carried the same four-phase plan
+        and the corrected master preserves it. Copy updated with the day
+        ranges.
+
+  V13  v13_03_not_this_option_is_allowed
+        The corrected master states this condition in the hook.
+
+  V13  v13_04_destination_specific_enough
+        New to the corrected master.
+
+  V13  v13_05_ask_about_the_work
+        The prior package covered the conversations phase. The corrected
+        master specifies these three questions.
+
+  V13  v13_06_work_sample_boundary
+        The corrected master states this boundary explicitly.
+
+  V13  v13_07_three_decisions
+        Reclassified from REUSE to NEW. Measured: nothing in the prior package
+        resembles it; the closest card shares 20% of its text. The editorial
+        note written when this card was built, kept as written: The prior
+        package ended on continue, modify or stop and the corrected master
+        preserves it, adding the inconclusive result.
+
+  V13  v13_08_effort_is_not_evidence
+        New to the corrected master and editorially load-bearing.
+
+  V13  v13_09_cta
+        The prior package routed V13 to the Field Kit and the corrected master
+        keeps that route with a new action line.
+
+  V13  v13_10_watch_next
+        Reclassified from COPY UPDATE to REUSE. Measured: byte- identical to
+        the prior rendered file. The editorial note written when this card was
+        built, kept as written: The corrected master routes V13 back to V9
+        rather than forward. The destination changed, so the card is rebuilt.
+
+  V14  v14_01_same_words_different_work
+        The corrected V14 master is byte-identical to the master this frame
+        was built against, SHA-256 4a36cc83. The specification and the render
+        are carried across unchanged, and the build proves the PNG is
+        byte-identical.
+
+  V14  v14_02_research_base
+        The corrected V14 master is byte-identical to the master this frame
+        was built against, SHA-256 4a36cc83. The specification and the render
+        are carried across unchanged, and the build proves the PNG is
+        byte-identical.
+
+  V14  v14_03_two_question_test
+        The corrected V14 master is byte-identical to the master this frame
+        was built against, SHA-256 4a36cc83. The specification and the render
+        are carried across unchanged, and the build proves the PNG is
+        byte-identical.
+
+  V14  v14_04_what_travels
+        The corrected V14 master is byte-identical to the master this frame
+        was built against, SHA-256 4a36cc83. The specification and the render
+        are carried across unchanged, and the build proves the PNG is
+        byte-identical.
+
+  V14  v14_05_same_word_different_decision
+        The corrected V14 master is byte-identical to the master this frame
+        was built against, SHA-256 4a36cc83. The specification and the render
+        are carried across unchanged, and the build proves the PNG is
+        byte-identical.
+
+  V14  v14_06_four_bucket_audit
+        The corrected V14 master is byte-identical to the master this frame
+        was built against, SHA-256 4a36cc83. The specification and the render
+        are carried across unchanged, and the build proves the PNG is
+        byte-identical.
+
+  V14  v14_07_employers_disagree
+        The corrected V14 master is byte-identical to the master this frame
+        was built against, SHA-256 4a36cc83. The specification and the render
+        are carried across unchanged, and the build proves the PNG is
+        byte-identical.
+
+  V14  v14_08_research_boundary
+        The corrected V14 master is byte-identical to the master this frame
+        was built against, SHA-256 4a36cc83. The specification and the render
+        are carried across unchanged, and the build proves the PNG is
+        byte-identical.
+
+  V14  v14_09_cta
+        The corrected V14 master is byte-identical to the master this frame
+        was built against, SHA-256 4a36cc83. The specification and the render
+        are carried across unchanged, and the build proves the PNG is
+        byte-identical.
+
+  V14  v14_10_watch_next
+        The card now carries V15's canonical approved title exactly. The
+        September 10 card took the title from V14's Watch Next row, which
+        spells it with a curly apostrophe where V15's own Title row uses a
+        straight one. Normalizing the production-facing card is the whole
+        change. The locked V14 master is unaltered and its SHA-256 is
+        unchanged.
+
+  V15  v15_01_the_question_changes
+        The concept and the trigger both survive into the restored master
+        unchanged.
+
+  V15  v15_02_three_gaps
+        Reclassified from REUSE to COPY UPDATE. Measured: 97% of the text is
+        shared with the prior card, which read: THREE GAPS, THREE RESPONSES
+        LEARN Something you genuinely do not know yet. PRACTICE You know how
+        the decision…. The editorial note written when this card was built,
+        kept as written: Concept and trigger both survive into the restored
+        master.
+
+  V15  v15_03_learn_test
+        The restored master rewords the test, so the frame copy and the
+        trigger are both updated to the corrected sentence.
+
+  V15  v15_04_course_limit
+        Concept preserved; the restored master's wording replaces the copy and
+        the trigger.
+
+  V15  v15_05_practice_question
+        The restored master rewords the question, so the trigger and the copy
+        are updated.
+
+  V15  v15_06_organizational_constraint
+        The restored master brings back the organizational-constraint section,
+        which the shortened version had lost.
+
+  V15  v15_07_three_reads
+        The restored master lengthens the example and changes the closing
+        line, so the copy and trigger are updated.
+
+  V15  v15_08_not_a_diagnostic
+        The restored master brings back a full limits section, which the
+        shortened version compressed into a single clause.
+
+  V15  v15_09_cta
+        The September 10 card carried a resource URL. The restored master's
+        metadata names no resource, so the card carries the action instead and
+        no route is added.
+
+  V15  v15_10_watch_next
+        Reclassified from COPY UPDATE to REUSE. Measured: byte- identical to
+        the prior rendered file. The editorial note written when this card was
+        built, kept as written: Destination unchanged. The trigger moves to
+        the restored master's actual final line.
+
+  V16  v16_01_called_then_skipped
+        Concept and trigger both survive into the restored master.
+
+  V16  v16_02_four_separations
+        Reclassified from REUSE to COPY UPDATE. Measured: 94% of the text is
+        shared with the prior card, which read: BEFORE YOU CHANGE HOW YOU
+        BEHAVE 1 Is the work seen? 2 Is it attributed to you? 3 Trusted to
+        deliver, or cons…. The editorial note written when this card was
+        built, kept as written: Concept and trigger both survive into the
+        restored master.
+
+  V16  v16_03_where_work_disappears
+        Concept preserved; the restored master's wording replaces the copy and
+        the trigger.
+
+  V16  v16_04_delivery_vs_scope
+        Concept preserved; trigger and copy updated to the restored wording.
+
+  V16  v16_05_the_hinge
+        Reclassified from REUSE to NEW. Measured: nothing in the prior package
+        resembles it; the closest card shares 19% of its text. The editorial
+        note written when this card was built, kept as written: The hinge
+        survives into the restored master and the trigger is the same
+        sentence.
+
+  V16  v16_06_what_this_does_not_fix
+        Concept preserved; trigger and copy updated to the restored wording.
+
+  V16  v16_07_three_pieces_four_lines
+        Concept preserved; the restored master renames the fourth line, so the
+        copy and trigger are updated.
+
+  V16  v16_08_waiting_or_testing
+        The restored master brings back the keep-or-test decision section.
+
+  V16  v16_09_cta
+        Reclassified from COPY UPDATE to REUSE. Measured: byte- identical to
+        the prior rendered file. The editorial note written when this card was
+        built, kept as written: Route unchanged. The trigger moves to the
+        restored master's own resource sentence.
+
+  V16  v16_10_watch_next
+        Reclassified from COPY UPDATE to REUSE. Measured: byte- identical to
+        the prior rendered file. The editorial note written when this card was
+        built, kept as written: Destination unchanged. Trigger moved to the
+        restored final line.
+
+  V17  v17_01_two_days_forty_minutes
+        Reclassified from REUSE to COPY UPDATE. Measured: 61% of the text is
+        shared with the prior card, which read: THE VISIBLE PART GOT EASIER
+        Before The report used to take you two days. Now A tool produces most
+        of it in fo…. The editorial note written when this card was built,
+        kept as written: Concept and trigger both survive into the restored
+        master.
+
+  V17  v17_02_what_did_you_actually_do
+        Concept and trigger both survive into the restored master.
+
+  V17  v17_03_output_is_not_contribution
+        Reclassified from REUSE to COPY UPDATE. Measured: 63% of the text is
+        shared with the prior card, which read: WHERE THE RECORD LIVES It used
+        to be Attached to the artifact. It now has to be Attached to the
+        decisions aro…. The editorial note written when this card was built,
+        kept as written: Concept and trigger both survive into the restored
+        master.
+
+  V17  v17_04_four_lines
+        Concept preserved; the restored master shortens each line, so the copy
+        and trigger are updated.
+
+  V17  v17_05_line_two
+        Concept preserved; trigger updated to the restored sentence.
+
+  V17  v17_06_which_parts_leave_a_record
+        The restored master brings back this section, which the shortened
+        version had lost.
+
+  V17  v17_07_speed_is_not_correctness
+        The restored master brings this section back in full.
+
+  V17  v17_08_worked_example
+        Concept preserved; the restored master's example replaces the copy and
+        the trigger.
+
+  V17  v17_09_cta
+        Route unchanged. Trigger moved to the restored resource sentence.
+
+  V17  v17_10_watch_next
+        Reclassified from COPY UPDATE to REUSE. Measured: byte- identical to
+        the prior rendered file. The editorial note written when this card was
+        built, kept as written: Destination unchanged. Trigger moved to the
+        restored final line.
+
+  V18  v18_01_congratulated
+        Concept and trigger both survive into the restored master.
+
+  V18  v18_02_two_different_jobs
+        Concept and trigger both survive into the restored master.
+
+  V18  v18_03_five_variables
+        Concept preserved; the restored master defines each of the five, so
+        the copy gains the definitions and the trigger is updated.
+
+  V18  v18_04_responsibility_without_authority
+        The restored master states the trap explicitly in the framework
+        section.
+
+  V18  v18_05_what_the_job_consumes
+        Concept preserved; trigger and copy updated to the restored wording.
+
+  V18  v18_06_ask_for_names
+        Reclassified from REUSE to REBUILD. Measured: only 57% of the text is
+        shared with the closest prior card, which read: DOES THE OTHER PATH
+        REALLY EXIST HERE? Ask for names. Ask what those people are trusted to
+        decide. Ask how th…. The editorial note written when this card was
+        built, kept as written: Concept and trigger both survive into the
+        restored master.
+
+  V18  v18_07_the_other_job_demands
+        The restored master brings back this section, which the shortened
+        version had lost.
+
+  V18  v18_08_four_questions
+        Concept preserved; trigger updated to the restored close.
+
+  V18  v18_09_cta
+        Route unchanged. Trigger moved to the restored resource sentence.
+
+  V18  v18_10_watch_next
+        Reclassified from COPY UPDATE to REUSE. Measured: byte- identical to
+        the prior rendered file. The editorial note written when this card was
+        built, kept as written: Destination unchanged. Trigger moved to the
+        restored final line.
+
+  V19  v19_01_you_should_consult
+        Concept preserved; the restored master adds the twenty-years line,
+        which becomes the trigger and the support copy.
+
+  V19  v19_02_experience_is_not_an_offer
+        Reclassified from REUSE to REBUILD. Measured: only 58% of the text is
+        shared with the closest prior card, which read: TWO DIFFERENT
+        QUESTIONS Your experience tells you What you know. It does not tell
+        you What somebody will buy.…. The editorial note written when this
+        card was built, kept as written: Concept and trigger both survive into
+        the restored master.
+
+  V19  v19_03_four_things
+        Concept preserved; the restored master renames two of the four, so the
+        copy and trigger are updated.
+
+  V19  v19_04_who_signs_it
+        Concept preserved; trigger and copy updated to the restored wording.
+
+  V19  v19_05_expertise_vs_deliverable
+        Concept preserved; the restored master supplies both the unbuyable
+        sentences and the specific deliverable, so the copy is replaced.
+
+  V19  v19_06_what_is_not_included
+        Concept preserved; trigger and copy updated to the restored wording.
+
+  V19  v19_07_repeatable_delivery
+        The restored master brings back the repeatable-delivery section.
+
+  V19  v19_08_the_costs
+        The restored master brings back the costs section, which the shortened
+        version compressed.
+
+  V19  v19_09_cta
+        Reclassified from COPY UPDATE to REUSE. Measured: byte- identical to
+        the prior rendered file. The editorial note written when this card was
+        built, kept as written: Route unchanged. Trigger moved to the restored
+        resource sentence.
+
+  V19  v19_10_watch_next
+        Reclassified from COPY UPDATE to REUSE. Measured: byte- identical to
+        the prior rendered file. The editorial note written when this card was
+        built, kept as written: Destination unchanged. Trigger moved to the
+        restored final line.
+
+  V20  v20_01_the_gap_is_not_the_whole_return
+        Concept and trigger both survive into the restored master. The opening
+        sentence itself is reworded, and it remains a real personal account
+        that is never labeled an illustration.
+
+  V20  v20_02_what_can_you_prove
+        The restored master separates the reframe into its own section.
+
+  V20  v20_03_six_categories
+        The September 10 master used three buckets with six things inside. The
+        restored master uses six categories directly, so the frame is rebuilt
+        to the corrected structure.
+
+  V20  v20_04_unproven_is_not_absent
+        Reclassified from REUSE to COPY UPDATE. Measured: 65% of the text is
+        shared with the prior card, which read: Unproven is not the same as
+        absent. You may still know how to do something and simply have no
+        recent evidence…. The editorial note written when this card was built,
+        kept as written: The distinction survives into the restored master.
+        Trigger updated to the restored sentence.
+
+  V20  v20_05_current_instance
+        Concept preserved; trigger and copy updated to the restored wording.
+
+  V20  v20_06_the_sort
+        Concept preserved; trigger and copy updated. This constructed
+        illustration is labeled; the opening personal account is not, and the
+        two must never be confused.
+
+  V20  v20_07_framing_and_bias
+        Concept preserved; trigger and copy updated to the restored wording.
+
+  V20  v20_08_routes_back
+        The restored master brings back the routes section, which the
+        shortened version had lost.
+
+  V20  v20_09_cta
+        Route unchanged. Trigger moved to the restored resource sentence.
+
+  V20  v20_10_watch_next
+        Destination unchanged, card copy rebuilt. The September 10 card
+        carried Video 4's former descriptive title, 'How to Explain a Career
+        That Looks All Over the Place', which no longer names any video. The
+        corrected September 11 V4 master is the authority, so the card now
+        reads its exact title.
+
+  V21  v21_01_the_room_is_different
+        Concept and trigger both survive into the restored master.
+
+  V21  v21_02_what_does_travel
+        Concept preserved; trigger and copy updated to the restored wording.
+
+  V21  v21_03_five_layers
+        The five layers survive into the restored master, but the card copy
+        did not. The September 10 card labeled layer one 'Domain knowledge'
+        and layer five 'How decisions get made here'. The corrected master
+        names them 'what the work is actually about here' and 'how decisions
+        actually get made', so the card now carries the master's own headings
+        and the slide agrees with the speech.
+
+  V21  v21_04_licensing_is_not_a_mindset
+        Concept preserved; the restored master rewords the line, so the
+        trigger and the headline are updated to the corrected sentence.
+
+  V21  v21_05_easiest_layer_trap
+        Concept preserved; trigger and copy updated to the restored wording.
+
+  V21  v21_06_has_anyone_tried_this
+        Concept preserved; trigger and copy updated to the restored wording.
+
+  V21  v21_07_first_ninety_days
+        The restored master brings back the pace section. The frame states no
+        timeline, because the master explicitly refuses to give one.
+
+  V21  v21_08_order_by_what_blocks_you
+        Concept preserved; trigger and copy updated to the restored wording.
+
+  V21  v21_09_cta
+        Route unchanged. Trigger moved to the restored resource sentence.
+
+  V21  v21_10_watch_next
+        Destination and title both match V9's corrected master. Trigger moved
+        to the restored final line.

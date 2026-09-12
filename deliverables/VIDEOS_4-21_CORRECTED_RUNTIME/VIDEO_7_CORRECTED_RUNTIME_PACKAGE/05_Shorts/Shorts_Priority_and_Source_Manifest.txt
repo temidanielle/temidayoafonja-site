@@ -1,0 +1,52 @@
+==============================================================================
+VIDEO 7  |  SHORTS PRIORITY AND SOURCE MANIFEST
+==============================================================================
+
+It Took Me Years to Stop Mistaking More Work for Career Growth
+
+Six Shorts. Four Priority A, two Priority B.
+Timings are arithmetic at 165 words per minute. Not timed reads.
+
+------------------------------------------------------------------------------
+
+PRIORITY A  v7_a1_valuable_to_them
+    TITLE:  More valuable to them, not to your future
+    WORDS:  94   ABOUT 34 SECONDS
+    FIRST:  You can become more valuable to your organization without becoming more valuable to your own future.
+    FINAL:  Run complexity, authority and return on that extra responsibility.
+    SOURCE: V7 hook.
+
+PRIORITY A  v7_a2_complexity
+    TITLE:  Did the problem get harder, or did the volume get bigger?
+    WORDS:  88   ABOUT 32 SECONDS
+    FIRST:  If you managed three nearly identical projects last year and now manage eight, your capacity is being used more heavily.
+    FINAL:  Name what variables are actually new.
+    SOURCE: V7 complexity.
+
+PRIORITY A  v7_a3_authority
+    TITLE:  Three things that do not expand together
+    WORDS:  73   ABOUT 27 SECONDS
+    FIRST:  Responsibility is what you are expected to carry.
+    FINAL:  Ask which decisions now belong to you.
+    SOURCE: V7 authority.
+
+PRIORITY A  v7_a4_review_point
+    TITLE:  Ask for the review point
+    WORDS:  93   ABOUT 34 SECONDS
+    FIRST:  Before the next can you take this too, ask three things.
+    FINAL:  Ask for the review point before you say yes.
+    SOURCE: V7 use CAR before you say yes.
+
+PRIORITY B  v7_b1_dependable_people
+    TITLE:  Why dependable people are vulnerable
+    WORDS:  78   ABOUT 28 SECONDS
+    FIRST:  Reliability attracts work quickly.
+    FINAL:  Ask what the extra work is building and returning.
+    SOURCE: V7 why dependable people are vulnerable.
+
+PRIORITY B  v7_b2_praise_is_not_role_design
+    TITLE:  Praise alone is not role design
+    WORDS:  77   ABOUT 28 SECONDS
+    FIRST:  Extra responsibility costs time, attention, and energy. Something should be coming back.
+    FINAL:  Check what the extra work is actually returning.
+    SOURCE: V7 return.

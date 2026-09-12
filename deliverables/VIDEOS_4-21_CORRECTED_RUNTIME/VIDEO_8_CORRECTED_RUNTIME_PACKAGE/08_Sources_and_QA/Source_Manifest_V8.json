@@ -1,0 +1,175 @@
+{
+  "video": 8,
+  "title": "How to Show Your Impact at Work When You Built It From Scratch",
+  "generated": "Saturday, September 12, 2026 | 5:28 AM CT (America/Chicago, UTC-05:00)",
+  "spoken_source_of_truth": {
+    "file": "Video_8_RESTORED_Regular_Length_Recording_Master.docx",
+    "sha256": "65836d600d7ca3f65ff95d6d5ba16cfe7c4bea7c9221c03ccd2382ca84ebb822",
+    "note": "Copied unchanged into 01_Recording_Master. Never written to. This file overrides every earlier script."
+  },
+  "secondary_reference": [
+    {
+      "body": "SEP09_V4_V7",
+      "description": "Videos 4 to 7 handoff package, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP09_V8_V13",
+      "description": "Videos 8 to 13 production packages, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP10_V14_V21",
+      "description": "Videos 14 to 21 final production packages, September 10, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    }
+  ],
+  "runtime": {
+    "mode": "REGULAR LONG-FORM",
+    "is_five_minute_test": false,
+    "restored_regular_depth": false,
+    "target_stated_by_master": "Regular long-form. Restored to the approved September 9 depth: approximately 8:53 to 9:54 speech-only.",
+    "note": "Videos 4 and 5 are the only 5-minute retention test. Videos 6 to 21 are regular long-form and were not shortened to meet a 5-minute target."
+  },
+  "packaging": {
+    "thumbnail": "NOW IT LOOKS EASY",
+    "framework": "Before | My Part | Judgment | Proof; evidence levels: Existence | Use | Effect",
+    "primary_cta": "Write the four sentences.",
+    "primary_cta_spoken_at": "Keep the Proof is linked below if you want the deeper evidence system and reusable ledger. But the four-sentence account from this video stands on its own.",
+    "resource": "Keep the Proof",
+    "resource_spoken": true,
+    "watch_next": "Video 9: How to Change Industries Without Starting Over",
+    "watch_next_source": "the master's Watch Next row"
+  },
+  "script": {
+    "sections": 11,
+    "thought_blocks": 51,
+    "spoken_words": 1289,
+    "speech_only_estimate": "8:53 to 9:55 at 130 to 145 words per minute",
+    "estimate_note": "Arithmetic on the script. Excludes pauses and visual holds. Not a timed read and not a runtime."
+  },
+  "assets": [
+    {
+      "file": "v8_01_success_hides_the_work.png",
+      "status": "REBUILD",
+      "why": "Reclassified from REUSE to REBUILD. Measured: only 32% of the text is shared with the closest prior card, which read: THE WORKED EXAMPLE “ITS EFFECT HAD NOT YET BEEN ESTABLISHED.” That last sentence does not weaken the story. I…. The editorial note written when this card was built, kept as written: The prior package opened on the same disappearance idea and the corrected master preserves it. Copy updated to the corrected wording.",
+      "mode": "FULL SCREEN",
+      "trigger": "One of the strangest things about building something from scratch is that if you do it well enough, eventually nobody can see how hard it was."
+    },
+    {
+      "file": "v8_02_four_things.png",
+      "status": "REBUILD",
+      "why": "The prior package used reconstruct-the-before, show-the-judgment, keep-the-proof as three steps. The corrected master uses four named elements, so the framework asset is rebuilt.",
+      "mode": "FULL SCREEN",
+      "trigger": "So I use four things: the Before, My Part, the Judgment, and the Proof."
+    },
+    {
+      "file": "v8_03_finished_hides_conditions.png",
+      "status": "NEW",
+      "why": "New section in the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "The solution is not to make the story more dramatic. It is to put the missing information back."
+    },
+    {
+      "file": "v8_04_weak_and_strong_before.png",
+      "status": "NEW",
+      "why": "New to the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "A weak Before is ‘It was chaos.’ A stronger Before is ‘There was no shared way to prioritize requests or decide which issues needed escalation.’"
+    },
+    {
+      "file": "v8_05_accurate_attribution.png",
+      "status": "REBUILD",
+      "why": "Reclassified from REUSE to REBUILD. Measured: only 38% of the text is shared with the closest prior card, which read: NOW IT LOOKS EASY. That is exactly why your contribution can become harder to see.. The editorial note written when this card was built, kept as written: The prior package carried a do-not-imply-sole-authorship boundary and the corrected master states it as a positive rule.",
+      "mode": "FULL SCREEN",
+      "trigger": "You do not need sole credit to make your contribution legible. You need accurate attribution."
+    },
+    {
+      "file": "v8_06_judgment_not_the_artifact.png",
+      "status": "NEW",
+      "why": "New example and new framing in the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "If you created an intake form, the form may be the least interesting part."
+    },
+    {
+      "file": "v8_07_existence_use_effect.png",
+      "status": "NEW",
+      "why": "Existence / Use / Effect is new to the corrected master and is the most important addition in this video.",
+      "mode": "FULL SCREEN",
+      "trigger": "For foundational work, I separate three levels of evidence: Existence, Use, Effect."
+    },
+    {
+      "file": "v8_08_evidence_boundary.png",
+      "status": "NEW",
+      "why": "The corrected master carries this boundary and no prior rendered card presented it full screen.",
+      "mode": "FULL SCREEN",
+      "trigger": "Proof does not mean taking your employer's files."
+    },
+    {
+      "file": "v8_08_four_sentence_account.png",
+      "status": "REBUILD",
+      "why": "The prior package had a before-and-after account. The corrected master specifies four named sentences, so the artifact is rebuilt.",
+      "mode": "FULL SCREEN",
+      "trigger": "Put it together in four sentences."
+    },
+    {
+      "file": "v8_09_cta.png",
+      "status": "REBUILD",
+      "why": "Rebuilt for the restored master. The compressed September 11 master had no spoken CTA at all, so this card correctly carried the action alone. The restored master speaks Keep the Proof once after the teaching, exactly as the approved September 9 master did, so the card carries the route again.",
+      "mode": "FULL SCREEN",
+      "trigger": "Keep the Proof is linked below if you want the deeper evidence system and reusable ledger. But the four-sentence account from this video stands on its own."
+    },
+    {
+      "file": "v8_10_watch_next.png",
+      "status": "REUSE",
+      "why": "The rendered card is byte-identical to the prior one. Only the spoken cue moved, to the restored Watch Next line, and a cue is a direction to the reader rather than anything drawn on the card. The compressed master had no spoken handoff, so the card had been cued off the final teaching sentence instead.",
+      "mode": "FULL SCREEN",
+      "trigger": "Watch 'How to Change Industries Without Starting Over' next."
+    }
+  ],
+  "shorts": [
+    {
+      "slug": "v8_a1_now_it_looks_easy",
+      "priority": "A",
+      "title": "If you build it well enough, nobody sees how hard it was",
+      "source": "V8 hook."
+    },
+    {
+      "slug": "v8_a2_the_before",
+      "priority": "A",
+      "title": "Reconstruct what was true before",
+      "source": "V8 before."
+    },
+    {
+      "slug": "v8_a3_existence_use_effect",
+      "priority": "A",
+      "title": "Existence, use, effect",
+      "source": "V8 proof."
+    },
+    {
+      "slug": "v8_a4_four_sentences",
+      "priority": "A",
+      "title": "The four-sentence impact account",
+      "source": "V8 the four-sentence impact account."
+    },
+    {
+      "slug": "v8_b1_accurate_attribution",
+      "priority": "B",
+      "title": "You do not need sole credit",
+      "source": "V8 my part."
+    },
+    {
+      "slug": "v8_b2_evidence_boundary",
+      "priority": "B",
+      "title": "Proof does not mean taking files",
+      "source": "V8 evidence boundary."
+    }
+  ],
+  "not_verified": [
+    "Nothing in this package has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

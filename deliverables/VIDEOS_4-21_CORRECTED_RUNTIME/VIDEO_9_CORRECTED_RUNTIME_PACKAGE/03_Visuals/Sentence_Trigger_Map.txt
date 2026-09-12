@@ -1,0 +1,72 @@
+==============================================================================
+VIDEO 9  |  SENTENCE TRIGGER MAP
+==============================================================================
+
+How to Change Industries Without Starting Over
+
+Every graphic with the exact spoken sentence that cues it.
+Each trigger was verified to exist inside a single thought block of
+the locked master, so no cue is built from words that span two
+takes.
+
+------------------------------------------------------------------------------
+
+ 1. v9_01_direct_industry_experience
+    TRIGGER: “Direct industry experience required.”
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 2. v9_02_neither_mistake
+    TRIGGER: Do not say, “I can already do all of this.”
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 3. v9_03_capability_context_credentials
+    TRIGGER: Capability. Context. Credentials.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 4. v9_04_same_verb_different_decision
+    TRIGGER: “Approve” can mean checking a routine item in one role and accepting a consequential risk in another.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 5. v9_05_capability_sentence
+    TRIGGER: Write the capability sentence this way:
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 6. v9_06_context_is_not_vocabulary
+    TRIGGER: Context is not just vocabulary you can learn over a weekend.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 7. v9_07_better_question_to_ask
+    TRIGGER: “Do you think I could switch industries?”
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 8. v9_08_credential_three_labels
+    TRIGGER: Write down:
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 9. v9_09_cta
+    TRIGGER: Choose one destination role. Not five industries at once.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+10. v9_10_watch_next
+    TRIGGER: Watch “Before a Layoff, Know What You Can Still Prove” next.
+    MODE:    FULL SCREEN
+    AFTER:   NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+BEATS THAT ARE DELIBERATELY NOT GRAPHICS
+
+  The real personal account in the opening, where the master has
+  one, stays camera-led.
+  Any moment where the master's honesty depends on the viewer
+  watching Temidayo say it.
+  Anything a graphic would only decorate.

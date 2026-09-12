@@ -1,0 +1,94 @@
+==============================================================================
+VIDEO 6  |  CHANGE LOG
+==============================================================================
+
+I've Worked Across 8 Industries and Sectors. Here's How I Know If a New Role Is Actually Growth.
+
+Generated: Saturday, September 12, 2026 | 5:28 AM CT (America/Chicago, UTC-05:00)
+
+------------------------------------------------------------------------------
+
+SOURCE HIERARCHY CHANGE
+
+  The locked final Recording Master is now the definitive spoken
+  source of truth for this video:
+
+    Video_6_RESTORED_Regular_Length_Recording_Master.docx
+    SHA-256 f39ff30ea07906e3642599479442cd16fe35ba7096090e390521156f684dcd18
+
+  It OVERRIDES every earlier script, package, brief and roadmap
+  for this video. The corrected September 11 recording master wins
+  in every conflict. The script sets were not merged, no earlier
+  wording was carried back into the master, and the master was not
+  rewritten, tightened, expanded or shortened.
+
+------------------------------------------------------------------------------
+
+RUNTIME
+
+  Mode: REGULAR LONG-FORM
+
+  This is regular long-form. It is NOT part of the V4 and V5
+  5-minute experiment, and it was not shortened to meet a
+  5-minute target.
+
+  1202 spoken words. 8:17 to 9:15 at 130 to 145 words per minute.
+  Target stated by the master: Regular long-form. Restored to the approved September 9 depth: approximately 8:17 to 9:14 speech-only.
+  The estimate is speech only. It excludes pauses and visual
+  holds, so the recorded runtime will be longer. It is not a
+  measured runtime.
+
+  FLAGGED, NOT REPAIRED:
+
+    [RESTORED] restored from a compressed supplied master
+          The September 11 master carried about half the approved teaching.
+          The spoken source of truth is now
+          Video_6_RESTORED_Regular_Length_Recording_Master.docx, 1202 words,
+          8:17 to 9:15 at 130 to 145 wpm, against 1151 in the last full-length
+          approved master. The supplied file is unchanged in _source/ and
+          still matches its original checksum. No new teaching was authored.
+
+------------------------------------------------------------------------------
+
+WHAT WAS AUDITED AND REUSED
+
+  Every rendered asset in the earlier packages was checked against
+  this master and classified. A card is REUSE only when the newly
+  rendered file is byte-identical to the earlier one. Not when the
+  visual topic sounds similar.
+
+    COPY UPDATE                3
+    REBUILD                    3
+    NEW                        6
+
+  0 of 12 newly rendered assets are byte-identical to a
+  prior rendered asset:
+
+    none
+
+  Every other asset in this package changed. Where a card was
+  first written down as reuse and the rendered bytes did not
+  bear that out, the label was corrected and the card's own
+  note records both the measurement and what was originally
+  written.
+
+
+------------------------------------------------------------------------------
+
+WHAT WAS NOT CHANGED
+
+  The master was copied byte for byte and never written to.
+  No spoken text was tightened, expanded, restructured or
+  reworded. The hook, the examples, the qualifications, the CTA,
+  the resource, the Watch Next and the final line are the
+  master's.
+  No statistic, example, employer, person or outcome was added.
+  No spoken Subscribe request was added.
+
+------------------------------------------------------------------------------
+
+WHAT IS NOT SUPPLIED BY INSTRUCTION
+
+  Final chapters, an SRT, music attribution, thumbnail artwork and
+  any public URL. These come from the finished export and the
+  separate artwork approval.

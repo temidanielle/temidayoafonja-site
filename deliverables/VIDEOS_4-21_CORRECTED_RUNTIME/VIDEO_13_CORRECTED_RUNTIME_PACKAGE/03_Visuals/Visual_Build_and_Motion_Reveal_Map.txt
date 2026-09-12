@@ -1,0 +1,163 @@
+==============================================================================
+VIDEO 13  |  VISUAL BUILD MAP AND MOTION REVEAL MAP
+==============================================================================
+
+A 30-Day Plan to Test Your Next Career Move
+
+Support and reference assets for the Riverside editor. This is not
+a deck that covers the script paragraph by paragraph, and it is not
+a mandatory slideshow.
+
+------------------------------------------------------------------------------
+
+ 1. v13_01_career_activity.png
+    STATUS:    COPY UPDATE
+    WHY:       The prior package opened differently. The corrected master leads with the anti-activity hook.
+    PURPOSE:   The hook, aimed at the actual failure mode.
+    TRIGGER:   It can make you feel productive without answering the decision.
+    MODE:      FULL SCREEN
+    REVEAL:    Headline. Hold. Then the support line.
+    EMPHASIS:  The headline.
+    HOLD:      3 seconds, then 3 with the support.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one clean transition sound on entry.
+    AFTER:     Return to camera on the next spoken line.
+
+ 2. v13_02_define_investigate_try_decide.png
+    STATUS:    REBUILD
+    WHY:       Reclassified from REUSE to REBUILD. Measured: only 40% of the text is shared with the closest prior card, which read: THE PLAN 01 DEFINE 02 INVESTIGATE 03 TRY 04 DECIDE And “not this option” is allowed to be a good result.. The editorial note written when this card was built, kept as written: The prior package carried the same four-phase plan and the corrected master preserves it. Copy updated with the day ranges.
+    PURPOSE:   The whole plan in one frame, delivered early.
+    TRIGGER:   Define.
+    MODE:      FULL SCREEN
+    REVEAL:    One bucket at a time.
+    EMPHASIS:  Equal.
+    HOLD:      2 seconds each, 5 on the complete grid. Viewers will pause here.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick on the fourth bucket.
+    AFTER:     Return to camera on the next spoken line.
+
+ 3. v13_03_not_this_option_is_allowed.png
+    STATUS:    NEW
+    WHY:       The corrected master states this condition in the hook.
+    PURPOSE:   The condition that makes the whole plan honest.
+    TRIGGER:   And the test only works if “not this option” is allowed to be a good result.
+    MODE:      FULL SCREEN
+    REVEAL:    Headline, then the support line.
+    EMPHASIS:  The headline.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Strong candidate: one soft tick as the headline lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 4. v13_04_destination_specific_enough.png
+    STATUS:    NEW
+    WHY:       New to the corrected master.
+    PURPOSE:   Show the standard for a testable destination.
+    TRIGGER:   “Something strategic” is too vague.
+    MODE:      FULL SCREEN
+    REVEAL:    The vague version. Hold. Struck. Then the testable one.
+    EMPHASIS:  The strike.
+    HOLD:      2 seconds before the strike, 4 after.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the strike lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 5. v13_05_ask_about_the_work.png
+    STATUS:    COPY UPDATE
+    WHY:       The prior package covered the conversations phase. The corrected master specifies these three questions.
+    PURPOSE:   Give the viewer the actual questions.
+    TRIGGER:   Do not ask for blanket reassurance about your potential.
+    MODE:      FULL SCREEN
+    REVEAL:    One question at a time, then the foot line.
+    EMPHASIS:  The foot line.
+    HOLD:      2 seconds each, 3 on the foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate.
+    AFTER:     Return to camera on the next spoken line.
+
+ 6. v13_06_work_sample_boundary.png
+    STATUS:    NEW
+    WHY:       The corrected master states this boundary explicitly.
+    PURPOSE:   The compliance boundary on the sampling week.
+    TRIGGER:   Do not recreate a confidential employer process.
+    MODE:      FULL SCREEN
+    REVEAL:    Left. Then right. Then the foot line.
+    EMPHASIS:  The foot line.
+    HOLD:      3 seconds per side, 3 on the foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate.
+    AFTER:     Return to camera on the next spoken line.
+
+ 7. v13_07_three_decisions.png
+    STATUS:    NEW
+    WHY:       Reclassified from REUSE to NEW. Measured: nothing in the prior package resembles it; the closest card shares 20% of its text. The editorial note written when this card was built, kept as written: The prior package ended on continue, modify or stop and the corrected master preserves it, adding the inconclusive result.
+    PURPOSE:   The decision point, with the inconclusive option preserved.
+    TRIGGER:   Then choose one of three decisions:
+    MODE:      FULL SCREEN
+    REVEAL:    One column at a time, then the foot line.
+    EMPHASIS:  The foot line.
+    HOLD:      2 seconds each, 4 on the foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the foot line lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 8. v13_08_effort_is_not_evidence.png
+    STATUS:    NEW
+    WHY:       New to the corrected master and editorially load-bearing.
+    PURPOSE:   The sharpest line in the video.
+    TRIGGER:   Do not confuse effort with evidence.
+    MODE:      FULL SCREEN
+    REVEAL:    Headline alone. Hold. Then the support.
+    EMPHASIS:  The headline, at maximum size.
+    HOLD:      3 seconds alone, 4 with the support.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Strong candidate: one soft tick as the headline lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 9. v13_09_cta.png
+    STATUS:    COPY UPDATE
+    WHY:       The prior package routed V13 to the Field Kit and the corrected master keeps that route with a new action line.
+    PURPOSE:   The resource route named by the corrected master.
+    TRIGGER:   Choose one destination and write the hypothesis before you add another course or application to the list.
+    MODE:      FULL SCREEN
+    REVEAL:    Label, headline, resource name, URL.
+    EMPHASIS:  The URL.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one clean transition sound on entry.
+    AFTER:     Return to camera on the next spoken line.
+
+10. v13_10_watch_next.png
+    STATUS:    REUSE
+    WHY:       Reclassified from COPY UPDATE to REUSE. Measured: byte- identical to the prior rendered file. The editorial note written when this card was built, kept as written: The corrected master routes V13 back to V9 rather than forward. The destination changed, so the card is rebuilt.
+    PURPOSE:   The final visual, cued by the spoken handoff.
+    TRIGGER:   For a closer look at separating useful experience from unfamiliar context and actual requirements, watch “How to Change Industries Without Starting Over” next.
+    MODE:      FULL SCREEN
+    REVEAL:    Label, rule, title, number.
+    EMPHASIS:  The title.
+    HOLD:      Hold to the end.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one restrained transition sound, then music fade.
+    AFTER:     NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+FULL SCREEN
+  Frameworks, comparisons, multi-point concepts, substantive demonstrations, the resource card and Watch Next are TRUE FULL SCREEN. No moving Temidayo behind or around a major visual. Substantive B-roll fills the entire frame. Short single-idea callouts may sit over camera. After a full-screen teaching visual, return to camera only where the scene map calls for it. THIS NEVER APPLIES TO WATCH NEXT: Watch Next is the final visual and there is no return to camera afterward.
+
+CAMERA
+  About 3 to 5 deliberate camera-emphasis beats across the whole video. This is one combined budget: gentle push-ins on tension, insight or a reframe, with occasional pull-backs or a return to base framing to reset the rhythm. It is not 3 to 5 push-ins plus 3 to 5 pull-backs. No aggressive zooms, no pulsing, no constant reframing, no unnecessary digital movement. Preserve headroom and source quality.
+
+SOUND BUDGET
+  About 4 to 7 restrained audio accents for the ENTIRE video, including the one visual Subscribe cue. The per-frame sound candidates in the visual map are OPTIONAL and are not cumulative. Choose only the moments with the highest visual or intellectual payoff. Keep every effect clearly quieter than the voice. Pair the sound with a small visual action so both land together. If no sound improves the moment, leave it silent.
+
+B-ROLL
+  About 2 to 4 meaningful full-screen B-roll moments where useful. This is not a quota. No generic handshakes, fake boardrooms, smiling coworkers, meaningless typing, AI-looking people, or invented employer documents presented as real. Where an example is constructed, it carries its label.
+
+CAPTIONS
+  NO BURNED-IN OR OPEN CAPTIONS on the long-form video. Viewers use YouTube CC. Deliver a clean export with no persistent subtitles, a complete final transcript with names, frameworks, URLs and industry terms proofread, and an SRT generated against the FINAL edited timeline with synchronization checked after every jump cut and removal. Do not delete transcript words because the camera is hidden behind a graphic. Shorts and Reels may use designed captions.
+
+SUBSCRIBE
+  One brief visual Subscribe cue after meaningful value has already been delivered. Visual only. There is no spoken Subscribe request in the master and none is added. About 1 to 3 seconds including entrance and exit. Do not interrupt a useful pause or cover teaching content.

@@ -1,0 +1,168 @@
+{
+  "video": 19,
+  "title": "Should You Become a Consultant? The Part Everyone Leaves Out",
+  "generated": "Saturday, September 12, 2026 | 5:28 AM CT (America/Chicago, UTC-05:00)",
+  "spoken_source_of_truth": {
+    "file": "Video_19_FINAL_Regular_Length_Recording_Master.docx",
+    "sha256": "f6734637399c7f744b4ff88b4fe37e886401cb34446c6fb60bfea608bcd08785",
+    "note": "Copied unchanged into 01_Recording_Master. Never written to. This file overrides every earlier script."
+  },
+  "secondary_reference": [
+    {
+      "body": "SEP09_V4_V7",
+      "description": "Videos 4 to 7 handoff package, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP09_V8_V13",
+      "description": "Videos 8 to 13 production packages, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP10_V14_V21",
+      "description": "Videos 14 to 21 final production packages, September 10, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    }
+  ],
+  "runtime": {
+    "mode": "REGULAR LONG-FORM",
+    "is_five_minute_test": false,
+    "restored_regular_depth": true,
+    "target_stated_by_master": "Regular long-form. Preserve the original 9–12 minute target where that was the approved draft target.",
+    "note": "Videos 4 and 5 are the only 5-minute retention test. Videos 6 to 21 are regular long-form and were not shortened to meet a 5-minute target."
+  },
+  "packaging": {
+    "thumbnail": "EXPERIENCE ISN'T AN OFFER",
+    "framework": null,
+    "primary_cta": "What would somebody receive from you, and by when?",
+    "primary_cta_spoken_at": "If you want a structured way to record that decision and what it rests on, the Career Decision Evidence Check is linked below.",
+    "resource": "Career Decision Evidence Check",
+    "resource_spoken": true,
+    "watch_next": "Video 13: A 30-Day Plan to Test Your Next Career Move",
+    "watch_next_source": "the Watch Next card in the production deck"
+  },
+  "script": {
+    "sections": 12,
+    "thought_blocks": 45,
+    "spoken_words": 1470,
+    "speech_only_estimate": "10:08 to 11:18 at 130 to 145 words per minute",
+    "estimate_note": "Arithmetic on the script. Excludes pauses and visual holds. Not a timed read and not a runtime."
+  },
+  "assets": [
+    {
+      "file": "v19_01_you_should_consult.png",
+      "status": "COPY UPDATE",
+      "why": "Concept preserved; the restored master adds the twenty-years line, which becomes the trigger and the support copy.",
+      "mode": "FULL SCREEN",
+      "trigger": "But twenty years of experience can still leave you with nothing a client knows how to buy."
+    },
+    {
+      "file": "v19_02_experience_is_not_an_offer.png",
+      "status": "REBUILD",
+      "why": "Reclassified from REUSE to REBUILD. Measured: only 58% of the text is shared with the closest prior card, which read: TWO DIFFERENT QUESTIONS Your experience tells you What you know. It does not tell you What somebody will buy.…. The editorial note written when this card was built, kept as written: Concept and trigger both survive into the restored master.",
+      "mode": "FULL SCREEN",
+      "trigger": "Your experience tells you what you know. It does not automatically tell you what somebody will buy."
+    },
+    {
+      "file": "v19_03_four_things.png",
+      "status": "COPY UPDATE",
+      "why": "Concept preserved; the restored master renames two of the four, so the copy and trigger are updated.",
+      "mode": "FULL SCREEN",
+      "trigger": "Start by separating four things that get bundled under the word consulting."
+    },
+    {
+      "file": "v19_04_who_signs_it.png",
+      "status": "COPY UPDATE",
+      "why": "Concept preserved; trigger and copy updated to the restored wording.",
+      "mode": "FULL SCREEN",
+      "trigger": "Not who has the problem. Almost everybody has problems."
+    },
+    {
+      "file": "v19_05_expertise_vs_deliverable.png",
+      "status": "COPY UPDATE",
+      "why": "Concept preserved; the restored master supplies both the unbuyable sentences and the specific deliverable, so the copy is replaced.",
+      "mode": "FULL SCREEN",
+      "trigger": "Those sentences are true and nobody can buy them."
+    },
+    {
+      "file": "v19_06_what_is_not_included.png",
+      "status": "COPY UPDATE",
+      "why": "Concept preserved; trigger and copy updated to the restored wording.",
+      "mode": "FULL SCREEN",
+      "trigger": "The absence of that line is where a fixed fee turns into five months of work."
+    },
+    {
+      "file": "v19_07_repeatable_delivery.png",
+      "status": "NEW",
+      "why": "The restored master brings back the repeatable-delivery section.",
+      "mode": "FULL SCREEN",
+      "trigger": "The first engagement is always partly invention. The question is what survives it."
+    },
+    {
+      "file": "v19_08_the_costs.png",
+      "status": "NEW",
+      "why": "The restored master brings back the costs section, which the shortened version compressed.",
+      "mode": "FULL SCREEN",
+      "trigger": "The time you spend finding work is not paid."
+    },
+    {
+      "file": "v19_09_cta.png",
+      "status": "REUSE",
+      "why": "Reclassified from COPY UPDATE to REUSE. Measured: byte- identical to the prior rendered file. The editorial note written when this card was built, kept as written: Route unchanged. Trigger moved to the restored resource sentence.",
+      "mode": "FULL SCREEN",
+      "trigger": "If you want a structured way to record that decision and what it rests on, the Career Decision Evidence Check is linked below."
+    },
+    {
+      "file": "v19_10_watch_next.png",
+      "status": "REUSE",
+      "why": "Reclassified from COPY UPDATE to REUSE. Measured: byte- identical to the prior rendered file. The editorial note written when this card was built, kept as written: Destination unchanged. Trigger moved to the restored final line.",
+      "mode": "FULL SCREEN",
+      "trigger": "It usually means the offer is still a description of you rather than a description of something a person can buy."
+    }
+  ],
+  "shorts": [
+    {
+      "slug": "v19_a1_experience_is_not_an_offer",
+      "priority": "A",
+      "title": "Experience is not an offer",
+      "source": "V19 hook and reversal."
+    },
+    {
+      "slug": "v19_a2_who_signs_it",
+      "priority": "A",
+      "title": "Who already pays for this?",
+      "source": "V19 the buyer question."
+    },
+    {
+      "slug": "v19_a3_deliverable",
+      "priority": "A",
+      "title": "I advise on risk is not an offer",
+      "source": "V19 turn expertise into a deliverable."
+    },
+    {
+      "slug": "v19_a4_test_before_you_leave",
+      "priority": "A",
+      "title": "Test it before you leave anything",
+      "source": "V19 test before you leave."
+    },
+    {
+      "slug": "v19_b1_repeatability",
+      "priority": "B",
+      "title": "Can you do it a second time?",
+      "source": "V19 repeatability."
+    },
+    {
+      "slug": "v19_b2_costs",
+      "priority": "B",
+      "title": "The costs the compliment leaves out",
+      "source": "V19 the costs."
+    }
+  ],
+  "not_verified": [
+    "Nothing in this package has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

@@ -1,0 +1,52 @@
+==============================================================================
+VIDEO 9  |  SHORTS PRIORITY AND SOURCE MANIFEST
+==============================================================================
+
+How to Change Industries Without Starting Over
+
+Six Shorts. Four Priority A, two Priority B.
+Timings are arithmetic at 165 words per minute. Not timed reads.
+
+------------------------------------------------------------------------------
+
+PRIORITY A  v9_a1_new_field_not_zero
+    TITLE:  New field does not mean zero
+    WORDS:  98   ABOUT 36 SECONDS
+    FIRST:  You can be very experienced and still read one sentence in a job description that makes you feel like a beginner again.
+    FINAL:  Sort one destination role into those three.
+    SOURCE: V9 hook.
+
+PRIORITY A  v9_a2_same_verb_different_decision
+    TITLE:  The same verb can hide a different decision
+    WORDS:  88   ABOUT 32 SECONDS
+    FIRST:  Do not declare equivalence just because two roles use the same verb.
+    FINAL:  Write both halves of the capability sentence.
+    SOURCE: V9 capability.
+
+PRIORITY A  v9_a3_better_question
+    TITLE:  Ask a better question than can I switch
+    WORDS:  83   ABOUT 30 SECONDS
+    FIRST:  Instead of asking somebody in the field, do you think I could switch industries, ask this.
+    FINAL:  Ask about the work, not about your potential.
+    SOURCE: V9 context.
+
+PRIORITY A  v9_a4_credentials
+    TITLE:  Is it a gate, or did you assume it?
+    WORDS:  88   ABOUT 32 SECONDS
+    FIRST:  Separate a preference from a requirement, and a requirement from something you have simply assumed.
+    FINAL:  Verify one requirement before you assume it.
+    SOURCE: V9 credentials.
+
+PRIORITY B  v9_b1_defensible_introduction
+    TITLE:  A defensible introduction
+    WORDS:  75   ABOUT 27 SECONDS
+    FIRST:  A careful version of the introduction might sound like this.
+    FINAL:  Build yours from evidence, learning, and verification.
+    SOURCE: V9 put it together.
+
+PRIORITY B  v9_b2_the_tradeoff
+    TITLE:  What are you giving up, and for how long?
+    WORDS:  98   ABOUT 36 SECONDS
+    FIRST:  A new industry may value some of your experience without preserving all of your current scope, pay, authority, or status.
+    FINAL:  Investigate the tradeoff before you commit.
+    SOURCE: V9 put it together.

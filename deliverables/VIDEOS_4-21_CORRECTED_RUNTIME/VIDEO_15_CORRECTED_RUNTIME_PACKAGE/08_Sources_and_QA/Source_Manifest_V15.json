@@ -1,0 +1,168 @@
+{
+  "video": 15,
+  "title": "The Career Gaps You Don't See Until the Work Gets Harder",
+  "generated": "Saturday, September 12, 2026 | 5:28 AM CT (America/Chicago, UTC-05:00)",
+  "spoken_source_of_truth": {
+    "file": "Video_15_FINAL_Regular_Length_Recording_Master.docx",
+    "sha256": "f219fd15ac4c7d7abaa9f271ff15b6e105b2c71b1cdd137873187018aa9601c3",
+    "note": "Copied unchanged into 01_Recording_Master. Never written to. This file overrides every earlier script."
+  },
+  "secondary_reference": [
+    {
+      "body": "SEP09_V4_V7",
+      "description": "Videos 4 to 7 handoff package, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP09_V8_V13",
+      "description": "Videos 8 to 13 production packages, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP10_V14_V21",
+      "description": "Videos 14 to 21 final production packages, September 10, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    }
+  ],
+  "runtime": {
+    "mode": "REGULAR LONG-FORM",
+    "is_five_minute_test": false,
+    "restored_regular_depth": true,
+    "target_stated_by_master": "Regular long-form. Preserve the original 9–12 minute target where that was the approved draft target.",
+    "note": "Videos 4 and 5 are the only 5-minute retention test. Videos 6 to 21 are regular long-form and were not shortened to meet a 5-minute target."
+  },
+  "packaging": {
+    "thumbnail": "KNOWING ISN'T OWNING",
+    "framework": null,
+    "primary_cta": "Put your one gap in the comments. In a single sentence, using one of the three words. Learn. Practice. Prove.",
+    "primary_cta_spoken_at": "Put your one gap in the comments, in a single sentence, using one of the three words. Learn. Practice. Prove.",
+    "resource": null,
+    "resource_spoken": false,
+    "watch_next": "Video 16: What to Do When Your Work Is Valued but You Are Overlooked",
+    "watch_next_source": "the Watch Next card in the production deck"
+  },
+  "script": {
+    "sections": 10,
+    "thought_blocks": 40,
+    "spoken_words": 1390,
+    "speech_only_estimate": "9:35 to 10:42 at 130 to 145 words per minute",
+    "estimate_note": "Arithmetic on the script. Excludes pauses and visual holds. Not a timed read and not a runtime."
+  },
+  "assets": [
+    {
+      "file": "v15_01_the_question_changes.png",
+      "status": "REUSE",
+      "why": "The concept and the trigger both survive into the restored master unchanged.",
+      "mode": "FULL SCREEN",
+      "trigger": "Then someone turns to you and asks, \"What do you recommend we do?\""
+    },
+    {
+      "file": "v15_02_three_gaps.png",
+      "status": "COPY UPDATE",
+      "why": "Reclassified from REUSE to COPY UPDATE. Measured: 97% of the text is shared with the prior card, which read: THREE GAPS, THREE RESPONSES LEARN Something you genuinely do not know yet. PRACTICE You know how the decision…. The editorial note written when this card was built, kept as written: Concept and trigger both survive into the restored master.",
+      "mode": "FULL SCREEN",
+      "trigger": "Learn. Practice. Prove. Those are different problems, and they need different next moves."
+    },
+    {
+      "file": "v15_03_learn_test.png",
+      "status": "COPY UPDATE",
+      "why": "The restored master rewords the test, so the frame copy and the trigger are both updated to the corrected sentence.",
+      "mode": "FULL SCREEN",
+      "trigger": "Ask yourself this. If someone sat with me and walked me through it once, could I then do it?"
+    },
+    {
+      "file": "v15_04_course_limit.png",
+      "status": "COPY UPDATE",
+      "why": "Concept preserved; the restored master's wording replaces the copy and the trigger.",
+      "mode": "FULL SCREEN",
+      "trigger": "A course can teach you a method. A course cannot give you the experience of having made a decision that mattered, with incomplete information, and then living with what happened next."
+    },
+    {
+      "file": "v15_05_practice_question.png",
+      "status": "COPY UPDATE",
+      "why": "The restored master rewords the question, so the trigger and the copy are updated.",
+      "mode": "FULL SCREEN",
+      "trigger": "Ask a different question. Have I ever been the person whose name was on the decision?"
+    },
+    {
+      "file": "v15_06_organizational_constraint.png",
+      "status": "NEW",
+      "why": "The restored master brings back the organizational-constraint section, which the shortened version had lost.",
+      "mode": "FULL SCREEN",
+      "trigger": "That is an organizational constraint, and calling it a personal weakness will send you off to fix the wrong thing."
+    },
+    {
+      "file": "v15_07_three_reads.png",
+      "status": "COPY UPDATE",
+      "why": "The restored master lengthens the example and changes the closing line, so the copy and trigger are updated.",
+      "mode": "FULL SCREEN",
+      "trigger": "Same moment. Same discomfort. Three completely different next twelve months."
+    },
+    {
+      "file": "v15_08_not_a_diagnostic.png",
+      "status": "NEW",
+      "why": "The restored master brings back a full limits section, which the shortened version compressed into a single clause.",
+      "mode": "FULL SCREEN",
+      "trigger": "This is not a diagnostic. There is no score at the end of it, no level, no type."
+    },
+    {
+      "file": "v15_09_cta.png",
+      "status": "REBUILD",
+      "why": "The September 10 card carried a resource URL. The restored master's metadata names no resource, so the card carries the action instead and no route is added.",
+      "mode": "FULL SCREEN",
+      "trigger": "Put your one gap in the comments, in a single sentence, using one of the three words. Learn. Practice. Prove."
+    },
+    {
+      "file": "v15_10_watch_next.png",
+      "status": "REUSE",
+      "why": "Reclassified from COPY UPDATE to REUSE. Measured: byte- identical to the prior rendered file. The editorial note written when this card was built, kept as written: Destination unchanged. The trigger moves to the restored master's actual final line.",
+      "mode": "FULL SCREEN",
+      "trigger": "Writing it down as one of those three is most of the value, because the moment you have to choose a word, you find out whether you actually know which problem you have."
+    }
+  ],
+  "shorts": [
+    {
+      "slug": "v15_a1_the_question_changes",
+      "priority": "A",
+      "title": "When the question changes",
+      "source": "V15 hook."
+    },
+    {
+      "slug": "v15_a2_three_gaps",
+      "priority": "A",
+      "title": "Learn, practice, prove",
+      "source": "V15 early payoff."
+    },
+    {
+      "slug": "v15_a3_course_limit",
+      "priority": "A",
+      "title": "What a course cannot do",
+      "source": "V15 learn."
+    },
+    {
+      "slug": "v15_a4_knowing_isnt_owning",
+      "priority": "A",
+      "title": "Knowing is not owning",
+      "source": "V15 practice."
+    },
+    {
+      "slug": "v15_b1_evidence_gap",
+      "priority": "B",
+      "title": "It might not be a development problem",
+      "source": "V15 prove."
+    },
+    {
+      "slug": "v15_b2_not_a_verdict",
+      "priority": "B",
+      "title": "This is not a verdict on you",
+      "source": "V15 boundary."
+    }
+  ],
+  "not_verified": [
+    "Nothing in this package has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

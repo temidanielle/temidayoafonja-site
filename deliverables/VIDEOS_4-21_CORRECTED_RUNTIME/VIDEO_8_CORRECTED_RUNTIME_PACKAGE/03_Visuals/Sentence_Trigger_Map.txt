@@ -1,0 +1,77 @@
+==============================================================================
+VIDEO 8  |  SENTENCE TRIGGER MAP
+==============================================================================
+
+How to Show Your Impact at Work When You Built It From Scratch
+
+Every graphic with the exact spoken sentence that cues it.
+Each trigger was verified to exist inside a single thought block of
+the locked master, so no cue is built from words that span two
+takes.
+
+------------------------------------------------------------------------------
+
+ 1. v8_01_success_hides_the_work
+    TRIGGER: One of the strangest things about building something from scratch is that if you do it well enough, eventually nobody can see how hard it was.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 2. v8_02_four_things
+    TRIGGER: So I use four things: the Before, My Part, the Judgment, and the Proof.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 3. v8_03_finished_hides_conditions
+    TRIGGER: The solution is not to make the story more dramatic. It is to put the missing information back.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 4. v8_04_weak_and_strong_before
+    TRIGGER: A weak Before is ‘It was chaos.’ A stronger Before is ‘There was no shared way to prioritize requests or decide which issues needed escalation.’
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 5. v8_05_accurate_attribution
+    TRIGGER: You do not need sole credit to make your contribution legible. You need accurate attribution.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 6. v8_06_judgment_not_the_artifact
+    TRIGGER: If you created an intake form, the form may be the least interesting part.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 7. v8_07_existence_use_effect
+    TRIGGER: For foundational work, I separate three levels of evidence: Existence, Use, Effect.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 8. v8_08_evidence_boundary
+    TRIGGER: Proof does not mean taking your employer's files.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera.
+
+ 9. v8_08_four_sentence_account
+    TRIGGER: Put it together in four sentences.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+10. v8_09_cta
+    TRIGGER: Keep the Proof is linked below if you want the deeper evidence system and reusable ledger. But the four-sentence account from this video stands on its own.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+11. v8_10_watch_next
+    TRIGGER: Watch 'How to Change Industries Without Starting Over' next.
+    MODE:    FULL SCREEN
+    AFTER:   NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+BEATS THAT ARE DELIBERATELY NOT GRAPHICS
+
+  The real personal account in the opening, where the master has
+  one, stays camera-led.
+  Any moment where the master's honesty depends on the viewer
+  watching Temidayo say it.
+  Anything a graphic would only decorate.

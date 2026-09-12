@@ -1,0 +1,163 @@
+==============================================================================
+VIDEO 21  |  VISUAL BUILD MAP AND MOTION REVEAL MAP
+==============================================================================
+
+What You Must Relearn When You Change Industries
+
+Support and reference assets for the Riverside editor. This is not
+a deck that covers the script paragraph by paragraph, and it is not
+a mandatory slideshow.
+
+------------------------------------------------------------------------------
+
+ 1. v21_01_the_room_is_different.png
+    STATUS:    REUSE
+    WHY:       Concept and trigger both survive into the restored master.
+    PURPOSE:   The hook. The surprise is context, not competence.
+    TRIGGER:   And the surprising part is that you can still do the work.
+    MODE:      SHORT CALLOUT OVER CAMERA for the headline, then FULL SCREEN for the support line.
+    REVEAL:    Headline as a callout over camera, then full screen.
+    EMPHASIS:  The support line.
+    HOLD:      2 seconds on the callout, 3 on the support.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one soft tick as the frame goes full screen.
+    AFTER:     Return to camera on the next spoken line.
+
+ 2. v21_02_what_does_travel.png
+    STATUS:    COPY UPDATE
+    WHY:       Concept preserved; trigger and copy updated to the restored wording.
+    PURPOSE:   Say what travels clearly and early.
+    TRIGGER:   First, quickly, what does travel, because it is real and it is easy to lose sight of in the first difficult month.
+    MODE:      FULL SCREEN
+    REVEAL:    One at a time, then the foot line.
+    EMPHASIS:  The foot line.
+    HOLD:      2 seconds each, 3 on the foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate.
+    AFTER:     Return to camera on the next spoken line.
+
+ 3. v21_03_five_layers.png
+    STATUS:    REBUILD
+    WHY:       The five layers survive into the restored master, but the card copy did not. The September 10 card labeled layer one 'Domain knowledge' and layer five 'How decisions get made here'. The corrected master names them 'what the work is actually about here' and 'how decisions actually get made', so the card now carries the master's own headings and the slide agrees with the speech.
+    PURPOSE:   The framework of the video.
+    TRIGGER:   Layer one, and the one that blocks you soonest: what the work is actually about here.
+    MODE:      FULL SCREEN
+    REVEAL:    One layer at a time as each is named, then the foot question.
+    EMPHASIS:  The foot question.
+    HOLD:      2 seconds per layer, 5 on the complete frame.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the foot question lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 4. v21_04_licensing_is_not_a_mindset.png
+    STATUS:    COPY UPDATE
+    WHY:       Concept preserved; the restored master rewords the line, so the trigger and the headline are updated to the corrected sentence.
+    PURPOSE:   The line that protects the whole channel from sounding like it claims everything transfers.
+    TRIGGER:   That is not a confidence issue and it is not a mindset problem.
+    MODE:      FULL SCREEN
+    REVEAL:    Headline alone. Hold. Then the support line.
+    EMPHASIS:  The headline, at maximum size.
+    HOLD:      3 seconds alone, 4 with the support.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Strong candidate: one soft tick as the headline lands. The single most important beat in the video.
+    AFTER:     Return to camera on the next spoken line.
+
+ 5. v21_05_easiest_layer_trap.png
+    STATUS:    COPY UPDATE
+    WHY:       Concept preserved; trigger and copy updated to the restored wording.
+    PURPOSE:   Stop the viewer spending preparation time on the wrong layer.
+    TRIGGER:   Layer three. Systems and tooling. This is usually the layer people worry about most and it is generally the smallest.
+    MODE:      FULL SCREEN
+    REVEAL:    Headline, then the support line.
+    EMPHASIS:  The headline.
+    HOLD:      At least 3 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate.
+    AFTER:     Return to camera on the next spoken line.
+
+ 6. v21_06_has_anyone_tried_this.png
+    STATUS:    COPY UPDATE
+    WHY:       Concept preserved; trigger and copy updated to the restored wording.
+    PURPOSE:   One practical instruction the viewer can use in week one.
+    TRIGGER:   The single most useful question in a first few months is some version of has anybody tried this before, and what happened.
+    MODE:      FULL SCREEN
+    REVEAL:    The question, then the support line.
+    EMPHASIS:  The question.
+    HOLD:      At least 3 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one clean transition sound on entry.
+    AFTER:     Return to camera on the next spoken line.
+
+ 7. v21_07_first_ninety_days.png
+    STATUS:    NEW
+    WHY:       The restored master brings back the pace section. The frame states no timeline, because the master explicitly refuses to give one.
+    PURPOSE:   Set expectations without inventing a timeline.
+    TRIGGER:   You are not going to arrive and contribute at the level you left at.
+    MODE:      FULL SCREEN
+    REVEAL:    Headline, then the support line.
+    EMPHASIS:  The headline.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate.
+    AFTER:     Return to camera on the next spoken line.
+
+ 8. v21_08_order_by_what_blocks_you.png
+    STATUS:    COPY UPDATE
+    WHY:       Concept preserved; trigger and copy updated to the restored wording.
+    PURPOSE:   The ordering rule, which is the useful part of the inventory.
+    TRIGGER:   Then order the whole thing by one question, which is what stops me contributing usefully first.
+    MODE:      FULL SCREEN
+    REVEAL:    Question, then the support line.
+    EMPHASIS:  The question.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the question lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 9. v21_09_cta.png
+    STATUS:    COPY UPDATE
+    WHY:       Route unchanged. Trigger moved to the restored resource sentence.
+    PURPOSE:   The single resource route named by the restored master.
+    TRIGGER:   If you want a structured version of the inventory, that is what the Field Kit is for, linked below.
+    MODE:      FULL SCREEN
+    REVEAL:    Label, headline, resource name, URL.
+    EMPHASIS:  The URL.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one clean transition sound on entry.
+    AFTER:     Return to camera on the next spoken line.
+
+10. v21_10_watch_next.png
+    STATUS:    REUSE
+    WHY:       Destination and title both match V9's corrected master. Trigger moved to the restored final line.
+    PURPOSE:   The final visual.
+    TRIGGER:   It is the difference between a plan that will work and a reading list that would have made you feel productive for a month.
+    MODE:      FULL SCREEN
+    REVEAL:    Label, rule, title, number.
+    EMPHASIS:  The title.
+    HOLD:      Hold to the end.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one restrained transition sound, then music fade.
+    AFTER:     NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+FULL SCREEN
+  Frameworks, comparisons, multi-point concepts, substantive demonstrations, the resource card and Watch Next are TRUE FULL SCREEN. No moving Temidayo behind or around a major visual. Substantive B-roll fills the entire frame. Short single-idea callouts may sit over camera. After a full-screen teaching visual, return to camera only where the scene map calls for it. THIS NEVER APPLIES TO WATCH NEXT: Watch Next is the final visual and there is no return to camera afterward.
+
+CAMERA
+  About 3 to 5 deliberate camera-emphasis beats across the whole video. This is one combined budget: gentle push-ins on tension, insight or a reframe, with occasional pull-backs or a return to base framing to reset the rhythm. It is not 3 to 5 push-ins plus 3 to 5 pull-backs. No aggressive zooms, no pulsing, no constant reframing, no unnecessary digital movement. Preserve headroom and source quality.
+
+SOUND BUDGET
+  About 4 to 7 restrained audio accents for the ENTIRE video, including the one visual Subscribe cue. The per-frame sound candidates in the visual map are OPTIONAL and are not cumulative. Choose only the moments with the highest visual or intellectual payoff. Keep every effect clearly quieter than the voice. Pair the sound with a small visual action so both land together. If no sound improves the moment, leave it silent.
+
+B-ROLL
+  About 2 to 4 meaningful full-screen B-roll moments where useful. This is not a quota. No generic handshakes, fake boardrooms, smiling coworkers, meaningless typing, AI-looking people, or invented employer documents presented as real. Where an example is constructed, it carries its label.
+
+CAPTIONS
+  NO BURNED-IN OR OPEN CAPTIONS on the long-form video. Viewers use YouTube CC. Deliver a clean export with no persistent subtitles, a complete final transcript with names, frameworks, URLs and industry terms proofread, and an SRT generated against the FINAL edited timeline with synchronization checked after every jump cut and removal. Do not delete transcript words because the camera is hidden behind a graphic. Shorts and Reels may use designed captions.
+
+SUBSCRIBE
+  One brief visual Subscribe cue after meaningful value has already been delivered. Visual only. There is no spoken Subscribe request in the master and none is added. About 1 to 3 seconds including entrance and exit. Do not interrupt a useful pause or cover teaching content.

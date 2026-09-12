@@ -1,0 +1,163 @@
+==============================================================================
+VIDEO 20  |  VISUAL BUILD MAP AND MOTION REVEAL MAP
+==============================================================================
+
+How to Return After a Career Break Without Starting at Zero
+
+Support and reference assets for the Riverside editor. This is not
+a deck that covers the script paragraph by paragraph, and it is not
+a mandatory slideshow.
+
+------------------------------------------------------------------------------
+
+ 1. v20_01_the_gap_is_not_the_whole_return.png
+    STATUS:    REUSE
+    WHY:       Concept and trigger both survive into the restored master. The opening sentence itself is reworded, and it remains a real personal account that is never labeled an illustration.
+    PURPOSE:   The reframe, close to the opening.
+    TRIGGER:   The explanation matters. But it is not the whole return.
+    MODE:      SHORT CALLOUT OVER CAMERA for the headline, then FULL SCREEN for the question.
+    REVEAL:    Headline as a callout while Temidayo is on camera, then full screen for the three-part question.
+    EMPHASIS:  The three-part question.
+    HOLD:      2 seconds on the callout, 4 on the full-screen question.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one soft tick as the full-screen question lands.
+    AFTER:     Return to camera. The opening is Temidayo's own account and stays camera-led.
+
+ 2. v20_02_what_can_you_prove.png
+    STATUS:    NEW
+    WHY:       The restored master separates the reframe into its own section.
+    PURPOSE:   Move the preparation to where it pays.
+    TRIGGER:   But the conversation eventually moves to a harder question: what can you do now, and what can you prove?
+    MODE:      FULL SCREEN
+    REVEAL:    Left. Then right. Then the foot line.
+    EMPHASIS:  The right side.
+    HOLD:      2 seconds left, 3 right, 3 foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the right side lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 3. v20_03_six_categories.png
+    STATUS:    REBUILD
+    WHY:       The September 10 master used three buckets with six things inside. The restored master uses six categories directly, so the frame is rebuilt to the corrected structure.
+    PURPOSE:   The structure. The fifth is the one the next frame enlarges.
+    TRIGGER:   So before the applications, sort what you have into six categories.
+    MODE:      FULL SCREEN
+    REVEAL:    One at a time in spoken order.
+    EMPHASIS:  The fifth.
+    HOLD:      2 seconds each, 5 on the complete set.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate. The next frame is the stronger moment.
+    AFTER:     Return to camera on the next spoken line.
+
+ 4. v20_04_unproven_is_not_absent.png
+    STATUS:    COPY UPDATE
+    WHY:       Reclassified from REUSE to COPY UPDATE. Measured: 65% of the text is shared with the prior card, which read: Unproven is not the same as absent. You may still know how to do something and simply have no recent evidence…. The editorial note written when this card was built, kept as written: The distinction survives into the restored master. Trigger updated to the restored sentence.
+    PURPOSE:   The distinction that saves the most viewers.
+    TRIGGER:   There is a difference between not being able to do something and not being able to point at recent evidence that you can.
+    MODE:      FULL SCREEN
+    REVEAL:    Headline alone. Hold. Then the support line.
+    EMPHASIS:  The headline, at maximum size.
+    HOLD:      3 seconds alone, 4 with the support.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Strong candidate: one soft tick as the headline lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 5. v20_05_current_instance.png
+    STATUS:    COPY UPDATE
+    WHY:       Concept preserved; trigger and copy updated to the restored wording.
+    PURPOSE:   Turn the distinction into an action.
+    TRIGGER:   If it is unproven, you do not need to relearn it. You need a current instance of it.
+    MODE:      FULL SCREEN
+    REVEAL:    Left. Then right. Then the foot line.
+    EMPHASIS:  The foot line.
+    HOLD:      2 seconds left, 4 right, 3 foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the foot line lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 6. v20_06_the_sort.png
+    STATUS:    COPY UPDATE
+    WHY:       Concept preserved; trigger and copy updated. This constructed illustration is labeled; the opening personal account is not, and the two must never be confused.
+    PURPOSE:   Show the sort done once. The label stays for the whole hold.
+    TRIGGER:   Let me show you the sort. This is a constructed example, put together to make the categories visible rather than a real person's case.
+    MODE:      FULL SCREEN
+    REVEAL:    One row at a time. The label never leaves.
+    EMPHASIS:  The unproven row.
+    HOLD:      3 seconds per row, 4 on the complete frame.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate. The label needs to be read.
+    AFTER:     Return to camera on the next spoken line.
+
+ 7. v20_07_framing_and_bias.png
+    STATUS:    COPY UPDATE
+    WHY:       Concept preserved; trigger and copy updated to the restored wording.
+    PURPOSE:   Keep the video honest about what framing can and cannot do.
+    TRIGGER:   Bias against career breaks is real.
+    MODE:      FULL SCREEN
+    REVEAL:    Headline, then the support line.
+    EMPHASIS:  The headline.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate. Let this land in silence.
+    AFTER:     Return to camera on the next spoken line.
+
+ 8. v20_08_routes_back.png
+    STATUS:    NEW
+    WHY:       The restored master brings back the routes section, which the shortened version had lost.
+    PURPOSE:   Give the viewer the real options with their real prices.
+    TRIGGER:   On the routes back, there are usually several and each one costs something different.
+    MODE:      FULL SCREEN
+    REVEAL:    One at a time, then the foot line.
+    EMPHASIS:  The foot line, because the frame must not rank them.
+    HOLD:      2 seconds each, 4 on the foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate.
+    AFTER:     Return to camera on the next spoken line.
+
+ 9. v20_09_cta.png
+    STATUS:    COPY UPDATE
+    WHY:       Route unchanged. Trigger moved to the restored resource sentence.
+    PURPOSE:   The single resource route named by the restored master.
+    TRIGGER:   If you want a structured way to build the evidence side of that, the Field Kit is linked below.
+    MODE:      FULL SCREEN
+    REVEAL:    Label, headline, resource name, URL.
+    EMPHASIS:  The URL.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one clean transition sound on entry.
+    AFTER:     Return to camera on the next spoken line.
+
+10. v20_10_watch_next.png
+    STATUS:    REBUILD
+    WHY:       Destination unchanged, card copy rebuilt. The September 10 card carried Video 4's former descriptive title, 'How to Explain a Career That Looks All Over the Place', which no longer names any video. The corrected September 11 V4 master is the authority, so the card now reads its exact title.
+    PURPOSE:   The final visual.
+    TRIGGER:   It turns the part of this you can control into something that has already started.
+    MODE:      FULL SCREEN
+    REVEAL:    Label, rule, title, number.
+    EMPHASIS:  The title.
+    HOLD:      Hold to the end.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one restrained transition sound, then music fade.
+    AFTER:     NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+FULL SCREEN
+  Frameworks, comparisons, multi-point concepts, substantive demonstrations, the resource card and Watch Next are TRUE FULL SCREEN. No moving Temidayo behind or around a major visual. Substantive B-roll fills the entire frame. Short single-idea callouts may sit over camera. After a full-screen teaching visual, return to camera only where the scene map calls for it. THIS NEVER APPLIES TO WATCH NEXT: Watch Next is the final visual and there is no return to camera afterward.
+
+CAMERA
+  About 3 to 5 deliberate camera-emphasis beats across the whole video. This is one combined budget: gentle push-ins on tension, insight or a reframe, with occasional pull-backs or a return to base framing to reset the rhythm. It is not 3 to 5 push-ins plus 3 to 5 pull-backs. No aggressive zooms, no pulsing, no constant reframing, no unnecessary digital movement. Preserve headroom and source quality.
+
+SOUND BUDGET
+  About 4 to 7 restrained audio accents for the ENTIRE video, including the one visual Subscribe cue. The per-frame sound candidates in the visual map are OPTIONAL and are not cumulative. Choose only the moments with the highest visual or intellectual payoff. Keep every effect clearly quieter than the voice. Pair the sound with a small visual action so both land together. If no sound improves the moment, leave it silent.
+
+B-ROLL
+  About 2 to 4 meaningful full-screen B-roll moments where useful. This is not a quota. No generic handshakes, fake boardrooms, smiling coworkers, meaningless typing, AI-looking people, or invented employer documents presented as real. Where an example is constructed, it carries its label.
+
+CAPTIONS
+  NO BURNED-IN OR OPEN CAPTIONS on the long-form video. Viewers use YouTube CC. Deliver a clean export with no persistent subtitles, a complete final transcript with names, frameworks, URLs and industry terms proofread, and an SRT generated against the FINAL edited timeline with synchronization checked after every jump cut and removal. Do not delete transcript words because the camera is hidden behind a graphic. Shorts and Reels may use designed captions.
+
+SUBSCRIBE
+  One brief visual Subscribe cue after meaningful value has already been delivered. Visual only. There is no spoken Subscribe request in the master and none is added. About 1 to 3 seconds including entrance and exit. Do not interrupt a useful pause or cover teaching content.

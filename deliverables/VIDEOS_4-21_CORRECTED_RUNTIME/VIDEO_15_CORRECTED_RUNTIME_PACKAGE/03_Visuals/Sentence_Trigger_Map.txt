@@ -1,0 +1,72 @@
+==============================================================================
+VIDEO 15  |  SENTENCE TRIGGER MAP
+==============================================================================
+
+The Career Gaps You Don't See Until the Work Gets Harder
+
+Every graphic with the exact spoken sentence that cues it.
+Each trigger was verified to exist inside a single thought block of
+the locked master, so no cue is built from words that span two
+takes.
+
+------------------------------------------------------------------------------
+
+ 1. v15_01_the_question_changes
+    TRIGGER: Then someone turns to you and asks, "What do you recommend we do?"
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 2. v15_02_three_gaps
+    TRIGGER: Learn. Practice. Prove. Those are different problems, and they need different next moves.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 3. v15_03_learn_test
+    TRIGGER: Ask yourself this. If someone sat with me and walked me through it once, could I then do it?
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 4. v15_04_course_limit
+    TRIGGER: A course can teach you a method. A course cannot give you the experience of having made a decision that mattered, with incomplete information, and then living with what happened next.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 5. v15_05_practice_question
+    TRIGGER: Ask a different question. Have I ever been the person whose name was on the decision?
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 6. v15_06_organizational_constraint
+    TRIGGER: That is an organizational constraint, and calling it a personal weakness will send you off to fix the wrong thing.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 7. v15_07_three_reads
+    TRIGGER: Same moment. Same discomfort. Three completely different next twelve months.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 8. v15_08_not_a_diagnostic
+    TRIGGER: This is not a diagnostic. There is no score at the end of it, no level, no type.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 9. v15_09_cta
+    TRIGGER: Put your one gap in the comments, in a single sentence, using one of the three words. Learn. Practice. Prove.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+10. v15_10_watch_next
+    TRIGGER: Writing it down as one of those three is most of the value, because the moment you have to choose a word, you find out whether you actually know which problem you have.
+    MODE:    FULL SCREEN
+    AFTER:   NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+BEATS THAT ARE DELIBERATELY NOT GRAPHICS
+
+  The real personal account in the opening, where the master has
+  one, stays camera-led.
+  Any moment where the master's honesty depends on the viewer
+  watching Temidayo say it.
+  Anything a graphic would only decorate.

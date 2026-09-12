@@ -1,0 +1,123 @@
+==============================================================================
+VIDEO 16  |  QA REPORT
+==============================================================================
+
+What to Do When Your Work Is Valued but You Are Overlooked
+
+39 package checks completed now. 39 passed.
+Every check ran against the built package on disk, not against the
+build data, so a check cannot pass because of something that was
+true only in a source module.
+
+------------------------------------------------------------------------------
+
+PACKAGE CHECKS COMPLETED NOW
+
+  [PASS] Correct new final master used
+         Video_16_FINAL_Regular_Length_Recording_Master.docx
+  [PASS] Master copied unchanged
+         SHA-256 3ec0c0e95c21e83ef87b7c7ae35d7b2313cc0d00f0ef8ac83312b7151c32ba30
+  [PASS] Spoken reading copy matches the master
+         38 blocks present
+  [PASS] Script-only copy matches the master exactly
+         38 blocks, in order
+  [PASS] Correct title
+         What to Do When Your Work Is Valued but You Are Overlooked
+  [PASS] Correct thumbnail wording
+         THEY NEED YOU. THEN SKIP YOU.
+  [PASS] Correct framework
+         none stated by the master
+  [PASS] Correct CTA
+         Write one decision you made and what it changed.
+  [PASS] The CTA is the one the master speaks
+         If you want the longer version of how to build that record properly, Keep the Proof is where I have put it, and the link is below.
+  [PASS] Correct resource
+         Keep the Proof
+  [PASS] Correct Watch Next
+         Video 8: How to Show Your Impact at Work When You Built It From Scratch (from the Watch Next card in the production deck)
+  [PASS] Watch Next names the destination master's exact title
+         How to Show Your Impact at Work When You Built It From Scratch
+  [PASS] Current teaching sequence used
+         10 sections from the master
+  [PASS] All sentence triggers exist in the current master
+         10 triggers verified inside single blocks
+  [PASS] No Code-draft script contamination
+         no superseded draft wording found anywhere in the package
+  [PASS] Runtime mode stated correctly
+         REGULAR LONG-FORM, stated in the package
+  [PASS] Marked as regular long-form
+         not part of the 5-minute experiment
+  [PASS] Not shortened to a 5-minute target
+         no 5-minute target is applied to this video
+  [PASS] Restored to regular long-form depth
+         1176 spoken words, 8:07 to 9:03 at 130 to 145 words per minute, against a restored 9 to 12 minute target
+  [PASS] The restored runtime target is recorded
+         Regular long-form. Preserve the original 9–12 minute target where that was the approved draft target.
+  [PASS] No invented employer or personal claim
+         no invented employer, client or personal claim
+  [PASS] No em dashes or en dashes
+         clean in everything this build authored. Master wording carrying its own dashes is quoted verbatim and not corrected
+  [PASS] U.S. English
+         no British spellings
+  [PASS] Assets 1920x1080 minimum
+         10 PNGs, sizes [(1920, 1080)]
+  [PASS] Mobile legibility inspected visually
+         phone-size contact sheet rendered and inspected by eye at 393 px per frame
+  [PASS] Editable source deck supplied
+         PowerPoint deck at 1920 by 1080
+  [PASS] True full-screen rules explicit
+         full-screen rule and the Watch Next exception both stated
+  [PASS] No burned-in caption instruction present
+         stated in the prompt
+  [PASS] SRT requirement present
+         SRT is required from the final timeline, not the script
+  [PASS] Camera movement budget correct
+         one combined budget of about 3 to 5 beats
+  [PASS] Sound budget correct
+         about 4 to 7 for the whole video, candidates not cumulative
+  [PASS] Audio and visual transition hooks present
+         the rule and its limit are both stated
+  [PASS] One visual Subscribe cue
+         visual only, and none is spoken
+  [PASS] Watch Next final, no return to camera
+         stated in the prompt and on the Watch Next scene
+  [PASS] Six Shorts
+         6 scripts, 4 Priority A and 2 Priority B
+  [PASS] Publishing copy aligned to the master
+         title and thumbnail taken from the master verbatim
+  [PASS] No invented URLs
+         only the four existing resource routes appear
+  [PASS] No invented chapters
+         no chapter list anywhere. Runtime estimates are stated as estimates; chapters come from the final export
+  [PASS] No invented music attribution
+         no music credit or licence code recorded
+
+------------------------------------------------------------------------------
+
+FINAL-EXPORT CHECKS, STILL PENDING
+
+  These are NOT complete and are not claimed. A written prompt does
+  not prove an effect exists in the finished video.
+
+  [ PENDING ] Actual recorded delivery
+  [ PENDING ] Actual runtime
+  [ PENDING ] Actual executed jump cuts
+  [ PENDING ] Executed zoom-ins and pull-backs
+  [ PENDING ] Executed motion graphics
+  [ PENDING ] B-roll placement
+  [ PENDING ] Actual audio clarity
+  [ PENDING ] Final loudness
+  [ PENDING ] Music and effects balance
+  [ PENDING ] Picture quality
+  [ PENDING ] Caption absence on the exported video
+  [ PENDING ] SRT synchronization
+  [ PENDING ] Final chapters
+  [ PENDING ] Final Watch Next hold
+  [ PENDING ] Clean ending
+  [ PENDING ] Thumbnail artwork approval
+  [ PENDING ] Public link accessibility
+
+------------------------------------------------------------------------------
+
+  Nothing in this list can be checked until the video has been
+  recorded, edited and exported.

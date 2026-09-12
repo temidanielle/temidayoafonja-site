@@ -1,0 +1,168 @@
+{
+  "video": 18,
+  "title": "Should You Stay an Individual Contributor or Become a Manager?",
+  "generated": "Saturday, September 12, 2026 | 5:28 AM CT (America/Chicago, UTC-05:00)",
+  "spoken_source_of_truth": {
+    "file": "Video_18_FINAL_Regular_Length_Recording_Master.docx",
+    "sha256": "f0195cce6337cd9c55864c6577d46e361082d4d526cb895882aa91c42c73b91e",
+    "note": "Copied unchanged into 01_Recording_Master. Never written to. This file overrides every earlier script."
+  },
+  "secondary_reference": [
+    {
+      "body": "SEP09_V4_V7",
+      "description": "Videos 4 to 7 handoff package, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP09_V8_V13",
+      "description": "Videos 8 to 13 production packages, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP10_V14_V21",
+      "description": "Videos 14 to 21 final production packages, September 10, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    }
+  ],
+  "runtime": {
+    "mode": "REGULAR LONG-FORM",
+    "is_five_minute_test": false,
+    "restored_regular_depth": true,
+    "target_stated_by_master": "Regular long-form. Preserve the original 9–12 minute target where that was the approved draft target.",
+    "note": "Videos 4 and 5 are the only 5-minute retention test. Videos 6 to 21 are regular long-form and were not shortened to meet a 5-minute target."
+  },
+  "packaging": {
+    "thumbnail": "TWO DIFFERENT JOBS",
+    "framework": null,
+    "primary_cta": "Ask the four questions.",
+    "primary_cta_spoken_at": "If you want a structured version of that decision record, the Career Decision Evidence Check is linked below.",
+    "resource": "Career Decision Evidence Check",
+    "resource_spoken": true,
+    "watch_next": "Video 16: What to Do When Your Work Is Valued but You Are Overlooked",
+    "watch_next_source": "the Watch Next card in the production deck"
+  },
+  "script": {
+    "sections": 12,
+    "thought_blocks": 46,
+    "spoken_words": 1290,
+    "speech_only_estimate": "8:54 to 9:55 at 130 to 145 words per minute",
+    "estimate_note": "Arithmetic on the script. Excludes pauses and visual holds. Not a timed read and not a runtime."
+  },
+  "assets": [
+    {
+      "file": "v18_01_congratulated.png",
+      "status": "REUSE",
+      "why": "Concept and trigger both survive into the restored master.",
+      "mode": "FULL SCREEN",
+      "trigger": "And before they explain what the job actually is, they congratulate you."
+    },
+    {
+      "file": "v18_02_two_different_jobs.png",
+      "status": "REUSE",
+      "why": "Concept and trigger both survive into the restored master.",
+      "mode": "FULL SCREEN",
+      "trigger": "They are different jobs, with different days, different skills, and different hard parts."
+    },
+    {
+      "file": "v18_03_five_variables.png",
+      "status": "COPY UPDATE",
+      "why": "Concept preserved; the restored master defines each of the five, so the copy gains the definitions and the trigger is updated.",
+      "mode": "FULL SCREEN",
+      "trigger": "Five things are bundled together in most people's heads, and they do not reliably move together."
+    },
+    {
+      "file": "v18_04_responsibility_without_authority.png",
+      "status": "NEW",
+      "why": "The restored master states the trap explicitly in the framework section.",
+      "mode": "FULL SCREEN",
+      "trigger": "Often they did not, and the most common bad version of this is more responsibility and no more authority, which is a genuinely difficult place to spend two years."
+    },
+    {
+      "file": "v18_05_what_the_job_consumes.png",
+      "status": "COPY UPDATE",
+      "why": "Concept preserved; trigger and copy updated to the restored wording.",
+      "mode": "FULL SCREEN",
+      "trigger": "Not what does it sound like. What fills the day."
+    },
+    {
+      "file": "v18_06_ask_for_names.png",
+      "status": "REBUILD",
+      "why": "Reclassified from REUSE to REBUILD. Measured: only 57% of the text is shared with the closest prior card, which read: DOES THE OTHER PATH REALLY EXIST HERE? Ask for names. Ask what those people are trusted to decide. Ask how th…. The editorial note written when this card was built, kept as written: Concept and trigger both survive into the restored master.",
+      "mode": "FULL SCREEN",
+      "trigger": "Ask for names."
+    },
+    {
+      "file": "v18_07_the_other_job_demands.png",
+      "status": "NEW",
+      "why": "The restored master brings back this section, which the shortened version had lost.",
+      "mode": "FULL SCREEN",
+      "trigger": "In most places it means influence without authority, which is harder than it sounds."
+    },
+    {
+      "file": "v18_08_four_questions.png",
+      "status": "COPY UPDATE",
+      "why": "Concept preserved; trigger updated to the restored close.",
+      "mode": "FULL SCREEN",
+      "trigger": "Ask the four questions. What does the job consume, does the other path exist here, what authority comes with it, and can I come back."
+    },
+    {
+      "file": "v18_09_cta.png",
+      "status": "COPY UPDATE",
+      "why": "Route unchanged. Trigger moved to the restored resource sentence.",
+      "mode": "FULL SCREEN",
+      "trigger": "If you want a structured version of that decision record, the Career Decision Evidence Check is linked below."
+    },
+    {
+      "file": "v18_10_watch_next.png",
+      "status": "REUSE",
+      "why": "Reclassified from COPY UPDATE to REUSE. Measured: byte- identical to the prior rendered file. The editorial note written when this card was built, kept as written: Destination unchanged. Trigger moved to the restored final line.",
+      "mode": "FULL SCREEN",
+      "trigger": "In my experience it is usually the second one, and it is usually the one that changes the decision."
+    }
+  ],
+  "shorts": [
+    {
+      "slug": "v18_a1_congratulated",
+      "priority": "A",
+      "title": "They congratulate you before they describe the job",
+      "source": "V18 hook and reframe."
+    },
+    {
+      "slug": "v18_a2_five_things",
+      "priority": "A",
+      "title": "Five things that do not move together",
+      "source": "V18 five things."
+    },
+    {
+      "slug": "v18_a3_ask_for_names",
+      "priority": "A",
+      "title": "Ask for names",
+      "source": "V18 question two."
+    },
+    {
+      "slug": "v18_a4_responsibility_without_authority",
+      "priority": "A",
+      "title": "Responsibility without authority",
+      "source": "V18 question three."
+    },
+    {
+      "slug": "v18_b1_can_you_come_back",
+      "priority": "B",
+      "title": "Can you come back?",
+      "source": "V18 question four."
+    },
+    {
+      "slug": "v18_b2_neither_is_brave",
+      "priority": "B",
+      "title": "Neither answer is the brave one",
+      "source": "V18 boundary and close."
+    }
+  ],
+  "not_verified": [
+    "Nothing in this package has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

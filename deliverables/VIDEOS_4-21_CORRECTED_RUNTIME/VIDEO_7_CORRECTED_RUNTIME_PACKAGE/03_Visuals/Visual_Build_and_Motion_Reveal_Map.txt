@@ -1,0 +1,189 @@
+==============================================================================
+VIDEO 7  |  VISUAL BUILD MAP AND MOTION REVEAL MAP
+==============================================================================
+
+It Took Me Years to Stop Mistaking More Work for Career Growth
+
+Support and reference assets for the Riverside editor. This is not
+a deck that covers the script paragraph by paragraph, and it is not
+a mandatory slideshow.
+
+------------------------------------------------------------------------------
+
+ 1. v7_01_valuable_to_them_not_to_you.png
+    STATUS:    REBUILD
+    WHY:       V7_MG01_Opening_Consequence.png opened on a different consequence. The corrected master opens on the value trade, so the frame is rebuilt.
+    PURPOSE:   The hook, and the sentence the title is built from.
+    TRIGGER:   You can become more valuable to your organization without becoming more valuable to your own future.
+    MODE:      FULL SCREEN
+    REVEAL:    Headline. Hold. Then the personal line.
+    EMPHASIS:  The headline.
+    HOLD:      3 seconds, then 3 with the support.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one clean transition sound on entry.
+    AFTER:     Return to camera on the next spoken line.
+
+ 2. v7_02_car.png
+    STATUS:    NEW
+    WHY:       Reclassified from REUSE to NEW. Measured: nothing in the prior package resembles it; the closest card shares 10% of its text. The editorial note written when this card was built, kept as written: V7_MG02_CAR_Framework.png carries the same framework and the corrected master preserves CAR exactly. Regenerated because the question wording under each letter is updated.
+    PURPOSE:   The framework, delivered in the first minute.
+    TRIGGER:   I use three tests now: Complexity, Authority, Return. CAR.
+    MODE:      FULL SCREEN
+    REVEAL:    One column at a time.
+    EMPHASIS:  Equal.
+    HOLD:      2 seconds each, 4 on the complete set.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the third column lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 3. v7_03_dependable_people.png
+    STATUS:    NEW
+    WHY:       The corrected master adds this mechanism section.
+    PURPOSE:   Explain the mechanism so the viewer does not read it as a personal failing.
+    TRIGGER:   Reliability attracts work quickly. Authority, support, recognition, and formal scope often arrive later, if they arrive at all.
+    MODE:      FULL SCREEN
+    REVEAL:    Left. Then right. Then the foot line.
+    EMPHASIS:  The foot line.
+    HOLD:      2 seconds per side, 3 on the foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the foot line lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 4. v7_04_complexity.png
+    STATUS:    NEW
+    WHY:       Reclassified from REUSE to NEW. Measured: nothing in the prior package resembles it; the closest card shares 6% of its text. The editorial note written when this card was built, kept as written: V7_MG03_Complexity.png covers the same test and the corrected master preserves it. Copy updated to the corrected variable list.
+    PURPOSE:   The first test, made checkable.
+    TRIGGER:   Complexity changes when the variables change: a new customer, a new regulation, a different operating model, conflicting priorities, incomplete instructions, stakeholders whose incentives do not line up.
+    MODE:      FULL SCREEN
+    REVEAL:    Left. Then right. Then the foot line.
+    EMPHASIS:  The foot line.
+    HOLD:      3 seconds per side, 3 on the foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate.
+    AFTER:     Return to camera on the next spoken line.
+
+ 5. v7_05_authority.png
+    STATUS:    COPY UPDATE
+    WHY:       Reclassified from REUSE to COPY UPDATE. Measured: 70% of the text is shared with the prior card, which read: A IS FOR AUTHORITY Three words people use as one. RESPONSIBILITY What you carry. ACCOUNTABILITY What you answ…. The editorial note written when this card was built, kept as written: V7_MG04_Authority.png carries the same three-way separation, preserved by the corrected master.
+    PURPOSE:   The three-way separation that makes the second test usable.
+    TRIGGER:   Responsibility is what you are expected to carry. Accountability is what you will answer for. Authority is what you can influence or decide. Those three do not always expand together.
+    MODE:      FULL SCREEN
+    REVEAL:    One column at a time, then the foot line.
+    EMPHASIS:  The foot line.
+    HOLD:      2 seconds each, 3 on the foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the foot line lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 6. v7_06_return.png
+    STATUS:    REBUILD
+    WHY:       Reclassified from REUSE to REBUILD. Measured: only 44% of the text is shared with the closest prior card, which read: R IS FOR RETURN 01 CAPABILITY 02 EVIDENCE 03 RECOGNITION What did the work return?. The editorial note written when this card was built, kept as written: V7_MG05_Return.png carries the same three returns and the praise line, both preserved by the corrected master.
+    PURPOSE:   The third test, and the line that lands hardest.
+    TRIGGER:   I look in three places: capability, evidence, and recognition.
+    MODE:      FULL SCREEN
+    REVEAL:    One column at a time, then the foot line, which holds longest.
+    EMPHASIS:  The foot line.
+    HOLD:      2 seconds each, 4 on the foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Strong candidate: one soft tick as the foot line lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 7. v7_07_read_the_car_pattern.png
+    STATUS:    NEW
+    WHY:       The section it serves was cut out of the compressed master and is restored from the approved September 9 master, so no prior card exists for it.
+    PURPOSE:   The read. CAR is a pattern, not a score.
+    TRIGGER:   If volume increased but Complexity, Authority, and Return did not, the role has expanded mainly as workload.
+    MODE:      FULL SCREEN
+    REVEAL:    One column at a time, then the foot line.
+    EMPHASIS:  The foot line.
+    HOLD:      3 seconds per column, 5 on the complete frame.
+    CAPTIONS:  Suppressed.
+    SOUND:     Candidate: one tick as the foot line lands.
+    AFTER:     Return to camera.
+
+ 8. v7_07_review_point.png
+    STATUS:    COPY UPDATE
+    WHY:       V7_MG06_Pattern_Read.png covered reading the pattern. The corrected master ends on three questions asked before saying yes.
+    PURPOSE:   The application. The third question is the one people omit.
+    TRIGGER:   Before the next ‘Can you take this too?’, ask: what becomes more complex? What authority comes with it? When will we review what this additional scope returns?
+    MODE:      FULL SCREEN
+    REVEAL:    One question at a time. The third holds longest.
+    EMPHASIS:  The third question.
+    HOLD:      2 seconds each, 4 on the foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the third question lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 9. v7_08_scope_conversation.png
+    STATUS:    NEW
+    WHY:       The section it serves was cut out of the compressed master and is restored from the approved September 9 master, so no prior card exists for it.
+    PURPOSE:   The viewer tool. This is the conversation the video is for.
+    TRIGGER:   Then take four questions into the conversation with your manager: Which of these responsibilities should remain with me?
+    MODE:      FULL SCREEN
+    REVEAL:    One question at a time, then the foot line.
+    EMPHASIS:  The fourth question.
+    HOLD:      2 seconds per question, 5 on the complete frame.
+    CAPTIONS:  Suppressed.
+    SOUND:     Candidate: one soft tick per question.
+    AFTER:     Return to camera.
+
+10. v7_08_more_work_is_not_proof.png
+    STATUS:    NEW
+    WHY:       The corrected master's closing line differs from the September 9 ending.
+    PURPOSE:   The final spoken line at full size, and the thumbnail's argument.
+    TRIGGER:   More work can be part of growth. It is not proof of it.
+    MODE:      FULL SCREEN
+    REVEAL:    Single state.
+    EMPHASIS:  The whole frame.
+    HOLD:      At least 3 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one clean transition sound on entry.
+    AFTER:     Move to the resource card, then Watch Next.
+
+11. v7_09_cta.png
+    STATUS:    REBUILD
+    WHY:       Rebuilt for the restored master. The compressed September 11 master had no spoken CTA at all, so this card correctly carried the action alone. The restored master speaks the Field Kit once after the teaching, exactly as the approved September 9 master did, so the card carries the route again.
+    PURPOSE:   The single action named by the corrected master. The resource route lives in the description and the pinned comment, not on this card.
+    TRIGGER:   If you want a structured way to examine what your current work is actually building in you, the Capability Formation Field Kit helps you read the evidence in your role, see where your options may be expanding or narrowing, and identify where the role may need a boundary or redesign. It is linked below.
+    MODE:      FULL SCREEN
+    REVEAL:    Label, headline, the three words, then the closing line.
+    EMPHASIS:  The three words.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one clean transition sound on entry.
+    AFTER:     Return to camera on the next spoken line.
+
+12. v7_10_watch_next.png
+    STATUS:    REUSE
+    WHY:       The rendered card is byte-identical to the prior one. Only the spoken cue moved, to the restored Watch Next line, and a cue is a direction to the reader rather than anything drawn on the card. The compressed master had no spoken handoff, so the card had been cued off the final teaching sentence instead.
+    PURPOSE:   The final visual.
+    TRIGGER:   In the next video, I will show you how to make that work visible: 'How to Show Your Impact at Work When You Built It From Scratch.'
+    MODE:      FULL SCREEN
+    REVEAL:    Label, rule, title, number.
+    EMPHASIS:  The title.
+    HOLD:      Hold to the end.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one restrained transition sound, then music fade.
+    AFTER:     NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+FULL SCREEN
+  Frameworks, comparisons, multi-point concepts, substantive demonstrations, the resource card and Watch Next are TRUE FULL SCREEN. No moving Temidayo behind or around a major visual. Substantive B-roll fills the entire frame. Short single-idea callouts may sit over camera. After a full-screen teaching visual, return to camera only where the scene map calls for it. THIS NEVER APPLIES TO WATCH NEXT: Watch Next is the final visual and there is no return to camera afterward.
+
+CAMERA
+  About 3 to 5 deliberate camera-emphasis beats across the whole video. This is one combined budget: gentle push-ins on tension, insight or a reframe, with occasional pull-backs or a return to base framing to reset the rhythm. It is not 3 to 5 push-ins plus 3 to 5 pull-backs. No aggressive zooms, no pulsing, no constant reframing, no unnecessary digital movement. Preserve headroom and source quality.
+
+SOUND BUDGET
+  About 4 to 7 restrained audio accents for the ENTIRE video, including the one visual Subscribe cue. The per-frame sound candidates in the visual map are OPTIONAL and are not cumulative. Choose only the moments with the highest visual or intellectual payoff. Keep every effect clearly quieter than the voice. Pair the sound with a small visual action so both land together. If no sound improves the moment, leave it silent.
+
+B-ROLL
+  About 2 to 4 meaningful full-screen B-roll moments where useful. This is not a quota. No generic handshakes, fake boardrooms, smiling coworkers, meaningless typing, AI-looking people, or invented employer documents presented as real. Where an example is constructed, it carries its label.
+
+CAPTIONS
+  NO BURNED-IN OR OPEN CAPTIONS on the long-form video. Viewers use YouTube CC. Deliver a clean export with no persistent subtitles, a complete final transcript with names, frameworks, URLs and industry terms proofread, and an SRT generated against the FINAL edited timeline with synchronization checked after every jump cut and removal. Do not delete transcript words because the camera is hidden behind a graphic. Shorts and Reels may use designed captions.
+
+SUBSCRIBE
+  One brief visual Subscribe cue after meaningful value has already been delivered. Visual only. There is no spoken Subscribe request in the master and none is added. About 1 to 3 seconds including entrance and exit. Do not interrupt a useful pause or cover teaching content.

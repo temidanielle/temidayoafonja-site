@@ -1,0 +1,72 @@
+==============================================================================
+VIDEO 10  |  SENTENCE TRIGGER MAP
+==============================================================================
+
+Before a Layoff, Know What You Can Still Prove
+
+Every graphic with the exact spoken sentence that cues it.
+Each trigger was verified to exist inside a single thought block of
+the locked master, so no cue is built from words that span two
+takes.
+
+------------------------------------------------------------------------------
+
+ 1. v10_01_access_ends
+    TRIGGER: Your experience did not disappear.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 2. v10_02_preparation_not_extraction
+    TRIGGER: Access to a document does not mean you are entitled to keep it. Removing a company name does not automatically make restricted material yours to retain.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 3. v10_03_capture_qualify_retrieve
+    TRIGGER: Capture the contribution.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 4. v10_04_calendar_vs_contribution
+    TRIGGER: “Attended weekly implementation meetings.”
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 5. v10_05_three_labels
+    TRIGGER: Now put one of three labels beside the result:
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 6. v10_06_language_that_survives
+    TRIGGER: This is not timid language.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 7. v10_07_name_it_by_the_problem
+    TRIGGER: “Conflicting handoff criteria” is more useful than “Project Alpha,” especially to somebody outside the company.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 8. v10_08_two_reasons_evidence_is_thin
+    TRIGGER: Do not solve both problems by writing a stronger sentence.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 9. v10_09_cta
+    TRIGGER: Start with one entry.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+10. v10_10_watch_next
+    TRIGGER: Watch “AI Can Do the Task. What Are You Still Paid For?” next.
+    MODE:    FULL SCREEN
+    AFTER:   NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+BEATS THAT ARE DELIBERATELY NOT GRAPHICS
+
+  The real personal account in the opening, where the master has
+  one, stays camera-led.
+  Any moment where the master's honesty depends on the viewer
+  watching Temidayo say it.
+  Anything a graphic would only decorate.

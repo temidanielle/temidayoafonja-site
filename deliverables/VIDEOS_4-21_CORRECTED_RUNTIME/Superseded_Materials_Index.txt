@@ -1,0 +1,465 @@
+==============================================================================
+VIDEOS 4 TO 21  |  SUPERSEDED MATERIALS INDEX
+==============================================================================
+
+Generated: Saturday, September 12, 2026 | 5:28 AM CT (America/Chicago, UTC-05:00)
+
+------------------------------------------------------------------------------
+
+WHAT THIS LISTS
+
+  Every rendered asset in an earlier package that has NO
+  byte-identical successor in this corrected build. Each one is
+  superseded: it was built against an earlier script and must not
+  be used for recording, editing or publishing.
+
+  These files are not deleted. They remain where they are as
+  history. They are simply not current.
+
+------------------------------------------------------------------------------
+
+Videos 4 to 7 handoff package, September 9, 2026
+  47 superseded rendered assets
+
+    VIDEO_4_How_To_Explain_A_Career_That_Looks_All_Over_The_Place_FINAL/CTA_Asset.png
+        SHA-256 d50b7803f09d15353c5ad7d9293436d145ba1b33e337843a9178c590fda5d9e1
+    VIDEO_4_How_To_Explain_A_Career_That_Looks_All_Over_The_Place_FINAL/Support_Reference_PNG/V4_CTA_Career_Evidence_Starter.png
+        SHA-256 d50b7803f09d15353c5ad7d9293436d145ba1b33e337843a9178c590fda5d9e1
+    VIDEO_4_How_To_Explain_A_Career_That_Looks_All_Over_The_Place_FINAL/Support_Reference_PNG/V4_MG01_Introduction_Or_Defense.png
+        SHA-256 08615481a9f185f149e6baa979b28332f2f0b1c16423108b7faed188396529b7
+    VIDEO_4_How_To_Explain_A_Career_That_Looks_All_Over_The_Place_FINAL/Support_Reference_PNG/V4_MG02_Chapters_Spine_Next_Direction.png
+        SHA-256 7bc0438ef3bf4231116f3b7bcf387b7ad5fc2afb559cdcc972d9d19ddeed5cce
+    VIDEO_4_How_To_Explain_A_Career_That_Looks_All_Over_The_Place_FINAL/Support_Reference_PNG/V4_MG03_Order_Depends_On_The_Question.png
+        SHA-256 708a0f6b0b326a4ed94fdc14838dbd18add1f2a1a86b11d1a9c9868b3b654eea
+    VIDEO_4_How_To_Explain_A_Career_That_Looks_All_Over_The_Place_FINAL/Support_Reference_PNG/V4_MG04_Twenty_Second_Version.png
+        SHA-256 4dd2eb6fc55e6469bade9a3463cd9899585758c3b87bcf9c6b0cedacad6d51ca
+    VIDEO_4_How_To_Explain_A_Career_That_Looks_All_Over_The_Place_FINAL/Support_Reference_PNG/V4_MG05_Ninety_Second_Version.png
+        SHA-256 f8e2b0931a879e45801db5ba9d7b1bc8715aecc5d7a93dd006908c3c762a544b
+    VIDEO_4_How_To_Explain_A_Career_That_Looks_All_Over_The_Place_FINAL/Support_Reference_PNG/V4_MG06_The_Objection.png
+        SHA-256 fa3231da729a41f424a93f211b9097cfa333aa2bd51039522e7efd0df34051ca
+    VIDEO_4_How_To_Explain_A_Career_That_Looks_All_Over_The_Place_FINAL/Support_Reference_PNG/V4_MG07_Story_Explains_Proof_Supports.png
+        SHA-256 18a9f20392b7366f66f386814a8ef33ccd6ff821c58abb33a5c52eea0637dbc2
+    VIDEO_4_How_To_Explain_A_Career_That_Looks_All_Over_The_Place_FINAL/Support_Reference_PNG/V4_MG08_All_Three_Versions.png
+        SHA-256 6a66654278aa688fc9c788eaba80a53823f18925dd5a668a923817f28bee6e4b
+    VIDEO_4_How_To_Explain_A_Career_That_Looks_All_Over_The_Place_FINAL/Support_Reference_PNG/V4_WatchNext_Why_Nobody_Can_Tell.png
+        SHA-256 b978a55659c952505093263c8d86a6f0ab866f66620ef9b913833a649990d386
+    VIDEO_4_How_To_Explain_A_Career_That_Looks_All_Over_The_Place_FINAL/Watch_Next_Asset.png
+        SHA-256 b978a55659c952505093263c8d86a6f0ab866f66620ef9b913833a649990d386
+    VIDEO_5_Why_Nobody_Can_Tell_What_Youre_Actually_Good_At_FINAL/CTA_Asset.png
+        SHA-256 4bf33dcfc2917deb25bf0e766d1b1e263b21a0c5e8520a7fb50820f61534bf43
+    VIDEO_5_Why_Nobody_Can_Tell_What_Youre_Actually_Good_At_FINAL/Support_Reference_PNG/V5_CTA_Career_Evidence_Starter.png
+        SHA-256 4bf33dcfc2917deb25bf0e766d1b1e263b21a0c5e8520a7fb50820f61534bf43
+    VIDEO_5_Why_Nobody_Can_Tell_What_Youre_Actually_Good_At_FINAL/Support_Reference_PNG/V5_MG01_Two_Versions_Of_The_Same_Career.png
+        SHA-256 38fdd0946e1cbf2596a2032f101df5a6259f79c9a8e32419a1842e70b9598415
+    VIDEO_5_Why_Nobody_Can_Tell_What_Youre_Actually_Good_At_FINAL/Support_Reference_PNG/V5_MG02_The_One_Line_Test.png
+        SHA-256 db094d10ba87dffa005f93e613f9ff825bfa6de8a9696b4b2c05fdedaf435556
+    VIDEO_5_Why_Nobody_Can_Tell_What_Youre_Actually_Good_At_FINAL/Support_Reference_PNG/V5_MG03_Sharper_Versus_Defensible.png
+        SHA-256 ec9d65a0aabd062ae8c45b0cd76e338cd9b7239720e36b396170f936d323e142
+    VIDEO_5_Why_Nobody_Can_Tell_What_Youre_Actually_Good_At_FINAL/Support_Reference_PNG/V5_MG04_Sorting_Mechanism.png
+        SHA-256 8e47f43543f11743927b022dbefe9643e103c965e81becc380a27a5bf6948951
+    VIDEO_5_Why_Nobody_Can_Tell_What_Youre_Actually_Good_At_FINAL/Support_Reference_PNG/V5_MG05_Remove_The_Nouns.png
+        SHA-256 b88878e8efede101ad3e42f4e6cfac5dcd620d8107dd1eb40f3a0fae67a0ba36
+    VIDEO_5_Why_Nobody_Can_Tell_What_Youre_Actually_Good_At_FINAL/Support_Reference_PNG/V5_MG06_Receipts.png
+        SHA-256 d1e32a75442d9b07b590ab4939706de37219c5aa49ae65c6ee5ea151db4c7880
+    VIDEO_5_Why_Nobody_Can_Tell_What_Youre_Actually_Good_At_FINAL/Support_Reference_PNG/V5_MG07_Test_The_Claim.png
+        SHA-256 77f1efe57c56cccb42d901de70423511f4accac01266953015defc982f619b4a
+    VIDEO_5_Why_Nobody_Can_Tell_What_Youre_Actually_Good_At_FINAL/Support_Reference_PNG/V5_MG08_Real_Limits.png
+        SHA-256 5eb858b58099752629a5a099bcc3fd357d614d697dd81f434d5e17e44d88d731
+    VIDEO_5_Why_Nobody_Can_Tell_What_Youre_Actually_Good_At_FINAL/Support_Reference_PNG/V5_WatchNext_Change_Jobs.png
+        SHA-256 e9a2de65857371a5125ceea5f89ece5ea62718bd9ed64a58f281df1834edd73b
+    VIDEO_5_Why_Nobody_Can_Tell_What_Youre_Actually_Good_At_FINAL/Watch_Next_Asset.png
+        SHA-256 e9a2de65857371a5125ceea5f89ece5ea62718bd9ed64a58f281df1834edd73b
+    VIDEO_6_Before_You_Take_An_Internal_Role_FINAL/CTA_Asset.png
+        SHA-256 e845ab66c3101826d85dbc5b5d994996ad4d61dfaf53a00108447d3c2df749f7
+    VIDEO_6_Before_You_Take_An_Internal_Role_FINAL/Support_Reference_PNG/V6_CTA_Career_Decision_Evidence_Check.png
+        SHA-256 e845ab66c3101826d85dbc5b5d994996ad4d61dfaf53a00108447d3c2df749f7
+    VIDEO_6_Before_You_Take_An_Internal_Role_FINAL/Support_Reference_PNG/V6_MG01_New_Title_Same_Work.png
+        SHA-256 b29329bd0d1004f2a4aba2a5bf9f6b968b719e5503b6cf9c8e62db175fdd330c
+    VIDEO_6_Before_You_Take_An_Internal_Role_FINAL/Support_Reference_PNG/V6_MG02_Three_Questions.png
+        SHA-256 bef661ae4796cc502c2e749bf42a72935322b2f1ccf90babb5494179fc9704d4
+    VIDEO_6_Before_You_Take_An_Internal_Role_FINAL/Support_Reference_PNG/V6_MG03_Ordinary_Monday.png
+        SHA-256 50d06e13438099752be758b592cfa24ef97d671b42a6c07129a1033786e903da
+    VIDEO_6_Before_You_Take_An_Internal_Role_FINAL/Support_Reference_PNG/V6_MG04_Tasks_Vs_Judgment.png
+        SHA-256 d401791fe0b5fc41bfa5dc87702ec6771a390ee6f68bf2e47cb90383caf8c8e9
+    VIDEO_6_Before_You_Take_An_Internal_Role_FINAL/Support_Reference_PNG/V6_MG05_Portable_Evidence.png
+        SHA-256 62964f6a6538ca88b72dfa5aa686b7603100da5a6c332d0172f5b748ac3bc5d3
+    VIDEO_6_Before_You_Take_An_Internal_Role_FINAL/Support_Reference_PNG/V6_MG06_Decision_Read.png
+        SHA-256 8df208c2f706880d05b3ed41939d4508361e6683f5b2de93c1bd53746cc6d273
+    VIDEO_6_Before_You_Take_An_Internal_Role_FINAL/Support_Reference_PNG/V6_MG07_Questions_To_Ask.png
+        SHA-256 cce03aa0454375419f1454c6aa10b22982c4039bfe5a878d6f00b6d9a6120512
+    VIDEO_6_Before_You_Take_An_Internal_Role_FINAL/Support_Reference_PNG/V6_WATCH_NEXT_Are_You_Growing.png
+        SHA-256 ea2ad5348438819c95c104513b3205eabd637ed93fce0f0141ee1f46c9b59f97
+    VIDEO_6_Before_You_Take_An_Internal_Role_FINAL/Watch_Next_Asset.png
+        SHA-256 ea2ad5348438819c95c104513b3205eabd637ed93fce0f0141ee1f46c9b59f97
+    VIDEO_7_Are_You_Growing_Or_Just_Being_Given_More_Work_FINAL/CTA_Asset.png
+        SHA-256 eb3bb32df4a7158aba75000d76d7f8d84d8e56dcfb1447b396434294aa5be674
+    VIDEO_7_Are_You_Growing_Or_Just_Being_Given_More_Work_FINAL/Support_Reference_PNG/V7_CTA_Capability_Formation_Field_Kit.png
+        SHA-256 eb3bb32df4a7158aba75000d76d7f8d84d8e56dcfb1447b396434294aa5be674
+    VIDEO_7_Are_You_Growing_Or_Just_Being_Given_More_Work_FINAL/Support_Reference_PNG/V7_MG01_Opening_Consequence.png
+        SHA-256 34fbb3b6cd36ee119e495192a68023f6768b7f2f0b1c427d342a26fd4cd649eb
+    VIDEO_7_Are_You_Growing_Or_Just_Being_Given_More_Work_FINAL/Support_Reference_PNG/V7_MG02_CAR_Framework.png
+        SHA-256 927d2e5854ee58eb7f51b41d3da1eeb085382a89fb741b28c869669d7b3a2015
+    VIDEO_7_Are_You_Growing_Or_Just_Being_Given_More_Work_FINAL/Support_Reference_PNG/V7_MG03_Complexity.png
+        SHA-256 0b289a04458311d727589a68a69e7aae61f3a99b44edc5de3f58f08cdb844f43
+    VIDEO_7_Are_You_Growing_Or_Just_Being_Given_More_Work_FINAL/Support_Reference_PNG/V7_MG04_Authority.png
+        SHA-256 dfd62d0986cf25bf41df3d2275b3cbac4ccba752ab1355b5164a8d7441f3fd92
+    VIDEO_7_Are_You_Growing_Or_Just_Being_Given_More_Work_FINAL/Support_Reference_PNG/V7_MG05_Return.png
+        SHA-256 857baed66594a8bff3ec263947583d2e6d15b1cbed6cdab43eb7383941015b12
+    VIDEO_7_Are_You_Growing_Or_Just_Being_Given_More_Work_FINAL/Support_Reference_PNG/V7_MG06_Pattern_Read.png
+        SHA-256 6ddffe86c437a598b24e6efaab8e7ae5ab800e358867001e0d2de11e22731277
+    VIDEO_7_Are_You_Growing_Or_Just_Being_Given_More_Work_FINAL/Support_Reference_PNG/V7_MG07_Scope_Conversation_A.png
+        SHA-256 81b502e6fb40c293a01978616346a50c98da4d26921c70f6f277b0465e866110
+    VIDEO_7_Are_You_Growing_Or_Just_Being_Given_More_Work_FINAL/Support_Reference_PNG/V7_MG08_Scope_Conversation_B.png
+        SHA-256 7c9dfb95368030eb02daccae0ba2d3126e9426de3e2c4b1a6e5b8d29f908927d
+    VIDEO_7_Are_You_Growing_Or_Just_Being_Given_More_Work_FINAL/Support_Reference_PNG/V7_WATCH_NEXT_Built_It_From_Scratch.png
+        SHA-256 fc5e5d7bab838d3d3104521c9d7285e90d8583d1d3a3995cd5501dccd2d1815d
+    VIDEO_7_Are_You_Growing_Or_Just_Being_Given_More_Work_FINAL/Watch_Next_Asset.png
+        SHA-256 fc5e5d7bab838d3d3104521c9d7285e90d8583d1d3a3995cd5501dccd2d1815d
+
+------------------------------------------------------------------------------
+
+Videos 8 to 13 production packages, September 9, 2026
+  72 superseded rendered assets
+
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V10/03_Visuals/PNG_1920x1080/V10_MG01_Access_Not_Experience.png
+        SHA-256 e51b2ccae4256bc944542801ab2b1c5e244c5b58ced05636142deb551c0ebb51
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V10/03_Visuals/PNG_1920x1080/V10_MG02_Preparation_Is_Not_Extraction.png
+        SHA-256 9403fb6b4c09e35db1308376b32b8319bfcc4f3d62c28595fd9205b3e9124f8c
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V10/03_Visuals/PNG_1920x1080/V10_MG03_Capture_Qualify_Retrieve.png
+        SHA-256 3774941181db512f618830b99f34c1a348aa57477a0c162782fca75ed0962d16
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V10/03_Visuals/PNG_1920x1080/V10_MG04_Calendar_Versus_Contribution.png
+        SHA-256 b6f819edc738a588061f65607d544934236d1d1b9467f5a5509deed29e4e5207
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V10/03_Visuals/PNG_1920x1080/V10_MG05_Confirmed_Qualified_Not_Verified.png
+        SHA-256 80d6a697728993427bf8229922e8502e6d460fb26b95032331fa81309c77832c
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V10/03_Visuals/PNG_1920x1080/V10_MG06_Name_It_By_The_Problem.png
+        SHA-256 7ef4cc0dbf81ebfa251f19ea7a357e9931f9975909b736bd62d65c4cd1c277bb
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V10/03_Visuals/PNG_1920x1080/V10_MG07_Two_Reasons_Evidence_Is_Thin.png
+        SHA-256 7871bb01401c541a0323034aa4885435c3852f3123fc2a87d1ec698678e633fc
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V10/03_Visuals/PNG_1920x1080/V10_RESOURCE_Keep_The_Proof.png
+        SHA-256 977d7f788518eae7b0c3095f19df43098d8db058d6ea31175ab30da43aca9909
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V10/03_Visuals/PNG_1920x1080/V10_WATCH_NEXT_AI_Can_Do_The_Task.png
+        SHA-256 05395b9e4a42f62d92678a30a647c9d46544469b9e180d5009d6e5e43fba586b
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V10/03_Visuals/V10_Phone_Size_Contact_Sheet.png
+        SHA-256 f2517d9653f1f7b6ce9d99a8a4b10901be02599319166439dad040011eee0cea
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V10/03_Visuals/V10_Resource_Card.png
+        SHA-256 977d7f788518eae7b0c3095f19df43098d8db058d6ea31175ab30da43aca9909
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V10/03_Visuals/V10_Watch_Next_Card.png
+        SHA-256 05395b9e4a42f62d92678a30a647c9d46544469b9e180d5009d6e5e43fba586b
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V11/03_Visuals/PNG_1920x1080/V11_MG01_Can_We_Reduce_The_Team.png
+        SHA-256 72f62fed75b7282803a25826ba0035bc59a8aa3921b071e70dd99b9e3659d1f9
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V11/03_Visuals/PNG_1920x1080/V11_MG02_The_Headline_Rate.png
+        SHA-256 5be6f499fdd7d68edd3eb4bd1abb3b4ed3b9737fd92bb4c175afc5bb395dc42d
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V11/03_Visuals/PNG_1920x1080/V11_MG03_The_Mix_Changed.png
+        SHA-256 1bbefb70e569317430116e9dd4cc0493b436be300398f552a2724e1edac53a4e
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V11/03_Visuals/PNG_1920x1080/V11_MG04_Produce_Interpret_Decide.png
+        SHA-256 3645c468621a9dd6ae66a4f3f78fdaf331aca087e35b4f1bdb64f0155893f3d2
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V11/03_Visuals/PNG_1920x1080/V11_MG05_What_It_Does_Not_Establish.png
+        SHA-256 b77bbc11cbc0b04764182b8ea5cb351045c71ff098b7618cccd7737c759f17f1
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V11/03_Visuals/PNG_1920x1080/V11_MG06_Who_Owns_The_Consequence.png
+        SHA-256 2e6ca24efcde7459f0cdbb2ee4961f8bfc5dab3048b410887db8d4f9d2c69831
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V11/03_Visuals/PNG_1920x1080/V11_MG07_Map_Your_Role.png
+        SHA-256 d429c599503355af668fde171d5fbccff7471e79fab93b034915f20c531ec414
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V11/03_Visuals/PNG_1920x1080/V11_RESOURCE_Field_Kit.png
+        SHA-256 78344af524e26e5f7218501a389101b2d7bd36f87e205bf10d34d1a9110cb038
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V11/03_Visuals/PNG_1920x1080/V11_WATCH_NEXT_Cant_Quit_Yet.png
+        SHA-256 a3eab065945557493e8dedbc12d9cd89ccc9332ce1b946d905fc70c5854efb96
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V11/03_Visuals/V11_Phone_Size_Contact_Sheet.png
+        SHA-256 c357fc545e673ecbba51dddbbde47f569b6e4967d49a37a84af18b47d2014051
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V11/03_Visuals/V11_Resource_Card.png
+        SHA-256 78344af524e26e5f7218501a389101b2d7bd36f87e205bf10d34d1a9110cb038
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V11/03_Visuals/V11_Watch_Next_Card.png
+        SHA-256 a3eab065945557493e8dedbc12d9cd89ccc9332ce1b946d905fc70c5854efb96
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V12/03_Visuals/PNG_1920x1080/V12_MG01_Constraint_Versus_Conclusion.png
+        SHA-256 1cdb9b48f5507e247801f0dd76c160bb3946065bb078bba358cc312f79d852be
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V12/03_Visuals/PNG_1920x1080/V12_MG02_Protection_First.png
+        SHA-256 ac5078b45b155fd3c5bfb12a3d7cfdd27c25334849fcbac4e3b3cc1626f8ba6f
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V12/03_Visuals/PNG_1920x1080/V12_MG03_Protect_Bound_Prepare.png
+        SHA-256 ff97af8de50a5476ed4d70144732da1d08d9521d865d0ebb0eedefad5e27bdc1
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V12/03_Visuals/PNG_1920x1080/V12_MG04_What_Must_Hold.png
+        SHA-256 5b36c635a408950586aa2d66b90e2344c801941c4d3736ec532d3b29d311f542
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V12/03_Visuals/PNG_1920x1080/V12_MG05_Make_The_Tradeoff_Visible.png
+        SHA-256 1d70070000ee8f92c2d23321f1081ef19ecb6f8d9b565106030090d4e48758a0
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V12/03_Visuals/PNG_1920x1080/V12_MG06_Question_Not_Activity.png
+        SHA-256 d81bfd638a01ab093a4188fbc42df0a8cec61657b4697ced6d7bc4c26826281a
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V12/03_Visuals/PNG_1920x1080/V12_MG07_The_Four_Lines.png
+        SHA-256 b023b16e6ce07df09882def71752f77b198555110bb31284e90e70738888dbcd
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V12/03_Visuals/PNG_1920x1080/V12_RESOURCE_Career_Decision_Evidence_Check.png
+        SHA-256 5e881140e26506b4af38d3fb706995eeabd8a8895eb3c897e622a62b5566425f
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V12/03_Visuals/PNG_1920x1080/V12_WATCH_NEXT_Thirty_Day_Plan.png
+        SHA-256 fa9f802a28edd5a45ad9c82204aa3121762c0759512f7f3ffdb14cea5bced397
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V12/03_Visuals/V12_Phone_Size_Contact_Sheet.png
+        SHA-256 5053336acd7eb17a0c18b18628c82b5281edd8dd2e2ee06aaf075d66d3bf70c9
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V12/03_Visuals/V12_Resource_Card.png
+        SHA-256 5e881140e26506b4af38d3fb706995eeabd8a8895eb3c897e622a62b5566425f
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V12/03_Visuals/V12_Watch_Next_Card.png
+        SHA-256 fa9f802a28edd5a45ad9c82204aa3121762c0759512f7f3ffdb14cea5bced397
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V13/03_Visuals/PNG_1920x1080/V13_MG01_Activity_Is_Not_A_Decision.png
+        SHA-256 20300f7ebfe63f5e6b74ef96e3691fc9781e3aa9c6b025aa7d7b7c42fa758525
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V13/03_Visuals/PNG_1920x1080/V13_MG02_Define_Investigate_Try_Decide.png
+        SHA-256 76ac633ce4cafc130057d3eda4d374202c8654e95e61b4a0cda50fb7b174e95d
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V13/03_Visuals/PNG_1920x1080/V13_MG03_One_Destination_One_Hypothesis.png
+        SHA-256 67d7961b79591e272c454be4b42e4f980fdf15593a7cbf01bbfac11edffd6836
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V13/03_Visuals/PNG_1920x1080/V13_MG04_Days_1_7_Define.png
+        SHA-256 93443ec453046e45f28af7c740250444f2dfa1502f5228decec5b66b883be1e7
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V13/03_Visuals/PNG_1920x1080/V13_MG05_Days_8_14_Investigate.png
+        SHA-256 53c038622a83ee8dfb2ea1dd9e45c93abe1ba0097c37b424e3638d446c407f84
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V13/03_Visuals/PNG_1920x1080/V13_MG06_Days_15_21_Work_Sample.png
+        SHA-256 c9d968c3005f865d5c7ab4f4580b629180ee52856d53282d9ff4d6df10fa6e72
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V13/03_Visuals/PNG_1920x1080/V13_MG07_Continue_Modify_Stop.png
+        SHA-256 73da0d74c864f66760784ea942bc9051101c0dffd7696140d0523f7b48ec5159
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V13/03_Visuals/PNG_1920x1080/V13_RESOURCE_Field_Kit.png
+        SHA-256 616ca3149a2465887575fc66b4142afc2b6a56c1d39af16ff4df66778a399780
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V13/03_Visuals/PNG_1920x1080/V13_WATCH_NEXT_Change_Industries.png
+        SHA-256 fdcb0d05828f03ac50ad3252f3ad77fdac0f54f59a2970362691dd0fd59f92d5
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V13/03_Visuals/V13_Phone_Size_Contact_Sheet.png
+        SHA-256 17b7fa7fd9f69eaea4311fb8f034b94353f555d907fcc591a833bf61e0d08359
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V13/03_Visuals/V13_Resource_Card.png
+        SHA-256 616ca3149a2465887575fc66b4142afc2b6a56c1d39af16ff4df66778a399780
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V13/03_Visuals/V13_Watch_Next_Card.png
+        SHA-256 fdcb0d05828f03ac50ad3252f3ad77fdac0f54f59a2970362691dd0fd59f92d5
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V8/03_Visuals/PNG_1920x1080/V8_MG01_Now_It_Looks_Easy.png
+        SHA-256 b527d5385b9ac37bbffac5292558a021f99c5ca439f5c2652dde0b09fe008db3
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V8/03_Visuals/PNG_1920x1080/V8_MG02_Output_Versus_Problem.png
+        SHA-256 e40cd9cd257695cf9c004dc4e11d41c8d5d406a2af19e2033433d72f9aad7294
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V8/03_Visuals/PNG_1920x1080/V8_MG03_Reconstruct_The_Before.png
+        SHA-256 bc5b173eb904219d7918a7923ce554f1f4c69df65f0da683c60e5b86dc0c9a41
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V8/03_Visuals/PNG_1920x1080/V8_MG04_Show_The_Judgment.png
+        SHA-256 7f9ca8d5129d182e6e9d0c034f0462f72e78f5ee47440d9de17dacaa24236471
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V8/03_Visuals/PNG_1920x1080/V8_MG05_Existence_Use_Effect.png
+        SHA-256 4ab425d44e21c07a7c3f13d7dc4664faea7de62dacb3521b4794085cf4c83497
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V8/03_Visuals/PNG_1920x1080/V8_MG06_Four_Sentences.png
+        SHA-256 08b13c375ca5cf68dbd6ca2cbda0a4219a327e0c27d976671e90abbc808bd3ac
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V8/03_Visuals/PNG_1920x1080/V8_MG07_Where_The_Evidence_Ends.png
+        SHA-256 1a9a94ca710ae2664dbd5ebd6ef1ce331b846da1a6e3cface75ebff7867c1e62
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V8/03_Visuals/PNG_1920x1080/V8_RESOURCE_Keep_The_Proof.png
+        SHA-256 fb5f4192e11f54d6917d7a9d65e7367bf15c146725839b2fb225e86a8afcd34e
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V8/03_Visuals/PNG_1920x1080/V8_WATCH_NEXT_Change_Industries.png
+        SHA-256 fdcb0d05828f03ac50ad3252f3ad77fdac0f54f59a2970362691dd0fd59f92d5
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V8/03_Visuals/V8_Phone_Size_Contact_Sheet.png
+        SHA-256 b0e16bfb651c7796ef4bbda56814da8ae2773084bf54f8b3108e690d28ba83f6
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V8/03_Visuals/V8_Resource_Card.png
+        SHA-256 fb5f4192e11f54d6917d7a9d65e7367bf15c146725839b2fb225e86a8afcd34e
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V8/03_Visuals/V8_Watch_Next_Card.png
+        SHA-256 fdcb0d05828f03ac50ad3252f3ad77fdac0f54f59a2970362691dd0fd59f92d5
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V9/03_Visuals/PNG_1920x1080/V9_MG01_Direct_Industry_Experience.png
+        SHA-256 3f0c41c609639f286c63bf3e6d4b82b08a5946ac2de84085dd5b1093fefdbb26
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V9/03_Visuals/PNG_1920x1080/V9_MG02_Two_Mistakes.png
+        SHA-256 a64c4138e9a4a68e8051c8055f35572fabd582c30a14edba86c09ac083fd75bd
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V9/03_Visuals/PNG_1920x1080/V9_MG03_Capability_Context_Credentials.png
+        SHA-256 72dc682d2989b8696d458bc04744f47ac257187dbd7082c6fba26651b749eef8
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V9/03_Visuals/PNG_1920x1080/V9_MG04_Same_Verb_Different_Work.png
+        SHA-256 7df92d5d73d66e0825b76a5ab81fbfca51631218cc0e600a690d821448b1705c
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V9/03_Visuals/PNG_1920x1080/V9_MG05_What_Changes_With_The_Setting.png
+        SHA-256 3c4840aec0536ecfb8d59f8994fb3c80a5c009269bdc67c197c2ac06ebb7cd76
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V9/03_Visuals/PNG_1920x1080/V9_MG06_Confirmed_Preferred_Unclear.png
+        SHA-256 173e40d9d9a29cda0e6d3926e8f58b0e1b64abf54dbd5506bccdd32b53c65767
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V9/03_Visuals/PNG_1920x1080/V9_MG07_A_Defensible_Introduction.png
+        SHA-256 e70006714ebf74ff719704deaf1a9364e071d8a5b8332134a2bf4a26f108add3
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V9/03_Visuals/PNG_1920x1080/V9_RESOURCE_Field_Kit.png
+        SHA-256 8d6a5e4f0ba723097b0ab6ddc8e81ebaeb7df432c5b9139bace881901cf2d4f7
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V9/03_Visuals/PNG_1920x1080/V9_WATCH_NEXT_Before_A_Layoff.png
+        SHA-256 581f367e6355d481ae34afe7d246bf5a5a7e4efe309efe14f1a96bd15e9e41a1
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V9/03_Visuals/V9_Phone_Size_Contact_Sheet.png
+        SHA-256 d5d880604b6f3cbed89a0826312ab4694cb60638757431430668c019d67696da
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V9/03_Visuals/V9_Resource_Card.png
+        SHA-256 8d6a5e4f0ba723097b0ab6ddc8e81ebaeb7df432c5b9139bace881901cf2d4f7
+    VIDEOS_8-13_LOCKED_MASTER_BUILD/V9/03_Visuals/V9_Watch_Next_Card.png
+        SHA-256 581f367e6355d481ae34afe7d246bf5a5a7e4efe309efe14f1a96bd15e9e41a1
+
+------------------------------------------------------------------------------
+
+Videos 14 to 21 final production packages, September 10, 2026
+  72 superseded rendered assets
+
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_14_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v14_10_watch_next.png
+        SHA-256 06182c2714cd4c7ee9e59d5b64a007bbb81253427f86f20e689eb8fe49007a81
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_14_FINAL_PRODUCTION_PACKAGE/03_Visuals/V14_Phone_Size_Contact_Sheet.png
+        SHA-256 ed677d60f64333bfc68731354035a2301e02b0742f5ec2dcee0b63fc0eaa407c
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_14_FINAL_PRODUCTION_PACKAGE/03_Visuals/Watch_Next_Card.png
+        SHA-256 06182c2714cd4c7ee9e59d5b64a007bbb81253427f86f20e689eb8fe49007a81
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_15_FINAL_PRODUCTION_PACKAGE/03_Visuals/Resource_Card.png
+        SHA-256 df66ed88ffa489e616cf1a71eb462c16c12e8a99be506ed0dfadd1cfd6151265
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_15_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v15_02_three_gaps.png
+        SHA-256 f4e5acbb8c3710830d777737188e6342ade9dd609950b837bdcc72dc6ff64a1f
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_15_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v15_03_learn_test.png
+        SHA-256 4cfa3ccea0b7374e8fccdbef30de09de50d2bac652503363669e7152b7f11426
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_15_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v15_04_course_limit.png
+        SHA-256 f2f5a208abc292e3cdf166baa2ce560ceae7e3e16cbcafdaeca6664d78a4860e
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_15_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v15_05_practice_question.png
+        SHA-256 413bbd8f14fa1cb239c2273d5e1f89a4cdf5d472a8e2f0107a3eb86210161e8d
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_15_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v15_06_knowing_isnt_owning.png
+        SHA-256 c357c824abe3808db3f300675bc940436574fb4f4387a787cd3ee36fa66976ec
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_15_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v15_07_three_reads.png
+        SHA-256 872aae47b3a9a2433c45c3b9564b4283a5849ea031448c3fc20a8f8f2c2272e8
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_15_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v15_08_one_gap_one_step.png
+        SHA-256 4a237ae3e5eb3c38d491430290c8b940ddea1d4b37def18ccd4d019be4f71555
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_15_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v15_09_cta.png
+        SHA-256 df66ed88ffa489e616cf1a71eb462c16c12e8a99be506ed0dfadd1cfd6151265
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_15_FINAL_PRODUCTION_PACKAGE/03_Visuals/V15_Phone_Size_Contact_Sheet.png
+        SHA-256 9ceef5eff7dd20610c382781f768c9e1622a1ed7a8b10c6069bbe16715dfd2fb
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_16_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v16_02_four_separations.png
+        SHA-256 29627d67ccba88877c6ff8e1f09ebb10b8461e46206993be22448ab11d7a4091
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_16_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v16_03_where_work_disappears.png
+        SHA-256 4edfd58a1316de7a921ee7fb164df7359b2fa541baed1b14195bd11d520709ec
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_16_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v16_04_delivery_vs_scope.png
+        SHA-256 bb5d8f6935353a6629019405827f76d1caaba6eed458d5588d31bd0792c4550e
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_16_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v16_05_the_hinge.png
+        SHA-256 efd14bf7bab4703dff4ba473808eddd53f37e30890accd487b56d8849cb31b00
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_16_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v16_06_what_remains.png
+        SHA-256 25e059c92ff1a9f53ab15629c370b5ee3ed8e59acc9883f2c1ab4c46e1837ca5
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_16_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v16_07_three_pieces_four_lines.png
+        SHA-256 eeb09d15b52e3ec4d11ff37fe059639eef667c1dcf31444fa0af393b5d6c358b
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_16_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v16_08_needed_not_considered.png
+        SHA-256 14e091925dc0b565257c03aba99cf23546afd34fee3555f55ae77f342a767133
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_16_FINAL_PRODUCTION_PACKAGE/03_Visuals/V16_Phone_Size_Contact_Sheet.png
+        SHA-256 68b55bc5f210dd4ab9e4e40bdb716f4a4c9ba399d7fdbabfbca8721e8d08c4c2
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_17_FINAL_PRODUCTION_PACKAGE/03_Visuals/Resource_Card.png
+        SHA-256 8ec5fee6c64711ae70b9d69d165a6d3ac88c033de7d15b61d0d7b89f5d5afbcd
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_17_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v17_01_two_days_forty_minutes.png
+        SHA-256 657a9066cfb490bb0818295e8cd7f9c943994b7ea18dba410580fe3f2738902d
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_17_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v17_03_record_moved.png
+        SHA-256 31fc1cb280d2c15b6c4c1ab145bad31aea0136c224361cce54a90e9f75f46174
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_17_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v17_04_four_lines.png
+        SHA-256 3ce3aec58b483ec51d63c21328bdc1e9bba242d693a64496ee584fe411859404
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_17_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v17_05_line_two.png
+        SHA-256 2c45a9432d39a10d0e3fd8bc1b8f3000650c6c18d6f68232d15296ec62ef7e75
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_17_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v17_06_speed_pressure.png
+        SHA-256 578bc00899c11e9ea7876d28d0aea602810c4b5ea008c4ddc35022e388c16817
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_17_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v17_07_constructed_example.png
+        SHA-256 61cbbd587553a4867a2ff60aa2e912f592867082cea623e61d0c4d3803901f51
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_17_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v17_08_workflow_or_contribution.png
+        SHA-256 9333fec952abb45a50cd519b2fa718e46d57e6f31d8983f65a1b024eb9b12aaf
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_17_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v17_09_cta.png
+        SHA-256 8ec5fee6c64711ae70b9d69d165a6d3ac88c033de7d15b61d0d7b89f5d5afbcd
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_17_FINAL_PRODUCTION_PACKAGE/03_Visuals/V17_Phone_Size_Contact_Sheet.png
+        SHA-256 19eee36314185fcfd57167e110d76e507def29e6f860cfff363118f1789df5e9
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_18_FINAL_PRODUCTION_PACKAGE/03_Visuals/Resource_Card.png
+        SHA-256 b0ac432157235c2f7d7bfafde0a7ad7f32a4d701e16209e5537eb211bc0b79a0
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_18_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v18_03_five_variables.png
+        SHA-256 6a70ee72350b799c282fcb74e567ef181f5135a4e184f2a0e2b102794a17c9f5
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_18_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v18_04_four_questions.png
+        SHA-256 2a994e1d618c6c8c5fc3ff43d360937702cf43e3eaa7b01e7ec2c039f2f7971e
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_18_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v18_05_what_the_job_consumes.png
+        SHA-256 cab48a769984641c160d0bc4978cf32ee48c41f1a7dd9c3c90226bb110ef7eca
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_18_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v18_06_ask_for_names.png
+        SHA-256 5ccdc5032f5713b13939cfb33a8c10f244d9e04e4d499e55b440c0e5149f21b0
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_18_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v18_07_responsibility_vs_authority.png
+        SHA-256 fe6c05fc074f4fe496153bc56d3afff946415eb57bd8da52e020b889ea79a1b0
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_18_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v18_08_neither_is_brave.png
+        SHA-256 743d1bf9a0b28349a27d4bade6dd541d09a4d85dbac281328f55000d7cb41706
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_18_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v18_09_cta.png
+        SHA-256 b0ac432157235c2f7d7bfafde0a7ad7f32a4d701e16209e5537eb211bc0b79a0
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_18_FINAL_PRODUCTION_PACKAGE/03_Visuals/V18_Phone_Size_Contact_Sheet.png
+        SHA-256 048f374d31cb7c4fc99a7da4170681e76d06a0ae8acec1d796a2d11dde23701d
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_19_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v19_01_you_should_consult.png
+        SHA-256 707253d66a6dc39cd6d29094f6e2a5f0191fa3b6a62bd677d1c4b7fbafe25603
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_19_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v19_02_experience_is_not_an_offer.png
+        SHA-256 535727dc9bfc0918f923f1a0ea964c2fd3aa51bd85e06ec4cc0376d7bd80cdb3
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_19_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v19_03_four_things.png
+        SHA-256 bb8ad896adb21d506d1c3248ce0ef70fbc423e9bdb0722488bcdc8480f542e2f
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_19_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v19_04_who_signs_it.png
+        SHA-256 7e787aef6914d05aa33264189c6aec9294f7ff5225a5bb868c67f7d2290f6ee1
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_19_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v19_05_expertise_vs_deliverable.png
+        SHA-256 735818463451f2e28f30e50f3a29cbc9bb11d95e7579e2ba41be2a931e3675e4
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_19_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v19_06_what_is_not_included.png
+        SHA-256 42726d6efa59fc942b2500342a98d4a09712ad9eee0ab2d3badb0a92b91aaf7e
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_19_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v19_07_one_page.png
+        SHA-256 556b724848e66e411378423c35c0e02a1f8a6b4945fb9c76a986c80ab697b623
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_19_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v19_08_raw_material.png
+        SHA-256 9d2df430a1175c939e34f1baed080a2940ab9d628fff2d81f830a5172bb6066b
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_19_FINAL_PRODUCTION_PACKAGE/03_Visuals/V19_Phone_Size_Contact_Sheet.png
+        SHA-256 22da334acafe96c1d52452f1a1b0ea1073b826736e83041bc47f10a0fed9e88b
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_20_FINAL_PRODUCTION_PACKAGE/03_Visuals/Resource_Card.png
+        SHA-256 9950d97467f34c83f0e83de29904ccd5e6b247525f0c39951ed5d16f3ed2f4d4
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_20_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v20_01_the_gap_is_not_the_whole_return.png
+        SHA-256 7d1bb48044f5ad25eaef1543b78a70009a32083c43317d2fdd14d102227ce97b
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_20_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v20_02_three_buckets.png
+        SHA-256 b39d42d7700f2ed9830c7b95b11c8642bb87137b922f2e0d51b5b41d98693a51
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_20_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v20_03_six_things.png
+        SHA-256 2f9e78c54195ddfb80a360fe9c804a255027a341508d0ec55f4e0de24f21626b
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_20_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v20_04_unproven_is_not_absent.png
+        SHA-256 09a9f411458a63881afa9d5d3cd83f3dda4a68652087feed90503ac52b48b399
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_20_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v20_05_unproven_response.png
+        SHA-256 909427f2af0f77a9aa62717c23a3feec4e4a5bd87fee320b5a0fa1f945eceae9
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_20_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v20_06_constructed_example.png
+        SHA-256 69aadc4bc6f08e7493893df9d15a4eeff7a6b02b670f94d219cf7cd8b83359e4
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_20_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v20_07_framing_and_bias.png
+        SHA-256 a9bbd2cfcc3f44e8186085fc66a757fc1785a6f83131a0af592849c5fd56379f
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_20_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v20_08_current_and_rebuilding.png
+        SHA-256 6f0be31b81474a5b28f6908d5d4f61ca12a57f9befe61d9ae6bdaaf8e6ce4212
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_20_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v20_09_cta.png
+        SHA-256 9950d97467f34c83f0e83de29904ccd5e6b247525f0c39951ed5d16f3ed2f4d4
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_20_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v20_10_watch_next.png
+        SHA-256 43aedd3975413833f40afeb6a69f0a88d8aec83ce4feb48eb0c74634987c2613
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_20_FINAL_PRODUCTION_PACKAGE/03_Visuals/V20_Phone_Size_Contact_Sheet.png
+        SHA-256 432383937559e9ada5efd089b1aff81bb2b22f8616a79dc434ef7bcc378f437e
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_20_FINAL_PRODUCTION_PACKAGE/03_Visuals/Watch_Next_Card.png
+        SHA-256 43aedd3975413833f40afeb6a69f0a88d8aec83ce4feb48eb0c74634987c2613
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_21_FINAL_PRODUCTION_PACKAGE/03_Visuals/Resource_Card.png
+        SHA-256 fa4f286465330db0ac9315e8760b7b4287d810383fcba7da532f5b4f55d3471d
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_21_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v21_02_what_does_travel.png
+        SHA-256 b8550a72ea5f9aac75585a5b1330ef978ceb4485df947ed187c27129e51e87ab
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_21_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v21_03_five_layers.png
+        SHA-256 65499e98214b1aecc9650c09c9e30e24ac1bc891f8574aeb5cfbd3f758bef3be
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_21_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v21_04_licensing_is_not_a_mindset.png
+        SHA-256 f2c56befabf809b9a6f446bdec419ad3fed6bb6b940f68a75244c8a1b5fde92d
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_21_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v21_05_easiest_layer_trap.png
+        SHA-256 5849701c21b48bfcf71356af4a4dc9dea22c8acb9cd9bb4731caedaddbfd89c7
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_21_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v21_06_has_anyone_tried_this.png
+        SHA-256 599220b3408d5131eb7f72f09ae8bb972de0bf7747471b56d2b273937130cbe9
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_21_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v21_07_read_it_or_practice_it.png
+        SHA-256 4b1df18ffcff8437965e65e5e838d658df26013e83f6315e9fa162addd3a3358
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_21_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v21_08_order_by_what_blocks_you.png
+        SHA-256 7979a87951d737da13b4bb40b58371a781798afa08bd2d56b0d3b71ae664a9d5
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_21_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v21_09_cta.png
+        SHA-256 fa4f286465330db0ac9315e8760b7b4287d810383fcba7da532f5b4f55d3471d
+    VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_21_FINAL_PRODUCTION_PACKAGE/03_Visuals/V21_Phone_Size_Contact_Sheet.png
+        SHA-256 c509e58f6ed73f1bcd40a81b35aa605f443e181ccd18196fc5812d42487c574e
+
+------------------------------------------------------------------------------
+
+SUPERSEDED TITLES
+
+  Titles the earlier packages carried that no corrected master
+  carries. Any document still using one of these is out of date.
+
+    V4   was: How To Explain A Career That Looks All Over The Place
+         now: I Was First in 3 New Roles in 5 Years. Here's What I Stopped Doing.
+    V5   was: Why Nobody Can Tell What Youre Actually Good At
+         now: I Changed Career Tracks Without Starting Over. Here's What I Carried With Me.
+    V6   was: Before You Take An Internal Role
+         now: I've Worked Across 8 Industries and Sectors. Here's How I Know If a New Role Is Actually Growth.
+    V7   was: Are You Growing Or Just Being Given More Work
+         now: It Took Me Years to Stop Mistaking More Work for Career Growth
+    V19  was: Is Consulting a Real Next Step for Your Career?
+         now: Should You Become a Consultant? The Part Everyone Leaves Out
+
+------------------------------------------------------------------------------
+
+SUPERSEDED RECORDING MASTERS
+
+  The September 11 masters supplied for Videos 6, 7 and 8. Each
+  carried about half the approved teaching after a compression
+  pass that should only ever have applied to Videos 4 and 5. They
+  are retained unchanged, and they are not used for recording.
+
+    Video_6_FINAL_Revised_Recording_Master.docx
+        SHA-256 439251708277714118617b8be910e459cfd3eee5f17746868200eff1ba63133d
+    Video_7_FINAL_Revised_Recording_Master.docx
+        SHA-256 69024f5223662c6edb73763a2cc435ebcc5394548905c31aa39833925125b158
+    Video_8_FINAL_Revised_Recording_Master.docx
+        SHA-256 a7a416e673efbfb90b8660ea8cca7747873e5921ad0c18454e767dba04952f5c
+
+------------------------------------------------------------------------------
+
+SUPERSEDED WRITTEN MATERIAL
+
+  Videos_14-21_SCRIPT_DEVELOPMENT_REVIEW.zip. Development history.
+  Its scripts are not current speech and are not retained as
+  alternates.
+
+  Any earlier runtime statement that applies a 5-minute target to
+  a video other than V4 or V5.
+
+  Any earlier document using one of the superseded titles listed
+  above. The corrected masters are the authority on every title.

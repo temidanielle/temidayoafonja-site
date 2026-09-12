@@ -1,0 +1,163 @@
+==============================================================================
+VIDEO 15  |  VISUAL BUILD MAP AND MOTION REVEAL MAP
+==============================================================================
+
+The Career Gaps You Don't See Until the Work Gets Harder
+
+Support and reference assets for the Riverside editor. This is not
+a deck that covers the script paragraph by paragraph, and it is not
+a mandatory slideshow.
+
+------------------------------------------------------------------------------
+
+ 1. v15_01_the_question_changes.png
+    STATUS:    REUSE
+    WHY:       The concept and the trigger both survive into the restored master unchanged.
+    PURPOSE:   The moment the whole video sits on.
+    TRIGGER:   Then someone turns to you and asks, "What do you recommend we do?"
+    MODE:      FULL SCREEN
+    REVEAL:    First question. Hold. Struck. Second question beneath it.
+    EMPHASIS:  The second question.
+    HOLD:      2 seconds on the first, at least 3 on the second.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Strong candidate: one soft tick as the strike lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 2. v15_02_three_gaps.png
+    STATUS:    COPY UPDATE
+    WHY:       Reclassified from REUSE to COPY UPDATE. Measured: 97% of the text is shared with the prior card, which read: THREE GAPS, THREE RESPONSES LEARN Something you genuinely do not know yet. PRACTICE You know how the decision…. The editorial note written when this card was built, kept as written: Concept and trigger both survive into the restored master.
+    PURPOSE:   The framework, named as the early payoff.
+    TRIGGER:   Learn. Practice. Prove. Those are different problems, and they need different next moves.
+    MODE:      FULL SCREEN
+    REVEAL:    One column at a time in spoken order.
+    EMPHASIS:  Equal weight.
+    HOLD:      2 seconds each, 3 on the complete set.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the third column lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 3. v15_03_learn_test.png
+    STATUS:    COPY UPDATE
+    WHY:       The restored master rewords the test, so the frame copy and the trigger are both updated to the corrected sentence.
+    PURPOSE:   The first test as a sentence the viewer can apply.
+    TRIGGER:   Ask yourself this. If someone sat with me and walked me through it once, could I then do it?
+    MODE:      FULL SCREEN
+    REVEAL:    Question, then the reading line.
+    EMPHASIS:  The question.
+    HOLD:      At least 3 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate.
+    AFTER:     Return to camera on the next spoken line.
+
+ 4. v15_04_course_limit.png
+    STATUS:    COPY UPDATE
+    WHY:       Concept preserved; the restored master's wording replaces the copy and the trigger.
+    PURPOSE:   Stop the viewer buying training for a problem training does not solve.
+    TRIGGER:   A course can teach you a method. A course cannot give you the experience of having made a decision that mattered, with incomplete information, and then living with what happened next.
+    MODE:      FULL SCREEN
+    REVEAL:    Left. Hold. Right. Then the foot line.
+    EMPHASIS:  The right side.
+    HOLD:      At least 3 seconds on the right side.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate.
+    AFTER:     Return to camera on the next spoken line.
+
+ 5. v15_05_practice_question.png
+    STATUS:    COPY UPDATE
+    WHY:       The restored master rewords the question, so the trigger and the copy are updated.
+    PURPOSE:   The distinction between being near a decision and carrying one.
+    TRIGGER:   Ask a different question. Have I ever been the person whose name was on the decision?
+    MODE:      FULL SCREEN
+    REVEAL:    Question, then the qualifying line.
+    EMPHASIS:  The question.
+    HOLD:      At least 3 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the question lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 6. v15_06_organizational_constraint.png
+    STATUS:    NEW
+    WHY:       The restored master brings back the organizational-constraint section, which the shortened version had lost.
+    PURPOSE:   The fairness beat the restored depth brings back.
+    TRIGGER:   That is an organizational constraint, and calling it a personal weakness will send you off to fix the wrong thing.
+    MODE:      FULL SCREEN
+    REVEAL:    Headline alone. Hold. Then the support.
+    EMPHASIS:  The headline.
+    HOLD:      2 seconds alone, 4 with the support.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Strong candidate: one soft tick as the headline lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 7. v15_07_three_reads.png
+    STATUS:    COPY UPDATE
+    WHY:       The restored master lengthens the example and changes the closing line, so the copy and trigger are updated.
+    PURPOSE:   Show the three gaps producing three readings of one moment.
+    TRIGGER:   Same moment. Same discomfort. Three completely different next twelve months.
+    MODE:      FULL SCREEN
+    REVEAL:    One reading at a time. The label never leaves.
+    EMPHASIS:  The foot line.
+    HOLD:      2 seconds per reading, 4 on the foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate. The label needs to be read.
+    AFTER:     Return to camera on the next spoken line.
+
+ 8. v15_08_not_a_diagnostic.png
+    STATUS:    NEW
+    WHY:       The restored master brings back a full limits section, which the shortened version compressed into a single clause.
+    PURPOSE:   The boundary, at full size, in the video rather than the notes.
+    TRIGGER:   This is not a diagnostic. There is no score at the end of it, no level, no type.
+    MODE:      FULL SCREEN
+    REVEAL:    Headline alone. Hold. Then the support.
+    EMPHASIS:  The headline.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate. Silence is the correct treatment.
+    AFTER:     Return to camera on the next spoken line.
+
+ 9. v15_09_cta.png
+    STATUS:    REBUILD
+    WHY:       The September 10 card carried a resource URL. The restored master's metadata names no resource, so the card carries the action instead and no route is added.
+    PURPOSE:   The single spoken action. The restored master names no resource route in its own metadata, so none is shown.
+    TRIGGER:   Put your one gap in the comments, in a single sentence, using one of the three words. Learn. Practice. Prove.
+    MODE:      FULL SCREEN
+    REVEAL:    Headline, support, then the three words.
+    EMPHASIS:  The three words in gold.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one clean transition sound on entry.
+    AFTER:     Return to camera on the next spoken line.
+
+10. v15_10_watch_next.png
+    STATUS:    REUSE
+    WHY:       Reclassified from COPY UPDATE to REUSE. Measured: byte- identical to the prior rendered file. The editorial note written when this card was built, kept as written: Destination unchanged. The trigger moves to the restored master's actual final line.
+    PURPOSE:   The final visual, entering on the last spoken line.
+    TRIGGER:   Writing it down as one of those three is most of the value, because the moment you have to choose a word, you find out whether you actually know which problem you have.
+    MODE:      FULL SCREEN
+    REVEAL:    Label, rule, title, number.
+    EMPHASIS:  The title.
+    HOLD:      Hold to the end.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one restrained transition sound, then music fade.
+    AFTER:     NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+FULL SCREEN
+  Frameworks, comparisons, multi-point concepts, substantive demonstrations, the resource card and Watch Next are TRUE FULL SCREEN. No moving Temidayo behind or around a major visual. Substantive B-roll fills the entire frame. Short single-idea callouts may sit over camera. After a full-screen teaching visual, return to camera only where the scene map calls for it. THIS NEVER APPLIES TO WATCH NEXT: Watch Next is the final visual and there is no return to camera afterward.
+
+CAMERA
+  About 3 to 5 deliberate camera-emphasis beats across the whole video. This is one combined budget: gentle push-ins on tension, insight or a reframe, with occasional pull-backs or a return to base framing to reset the rhythm. It is not 3 to 5 push-ins plus 3 to 5 pull-backs. No aggressive zooms, no pulsing, no constant reframing, no unnecessary digital movement. Preserve headroom and source quality.
+
+SOUND BUDGET
+  About 4 to 7 restrained audio accents for the ENTIRE video, including the one visual Subscribe cue. The per-frame sound candidates in the visual map are OPTIONAL and are not cumulative. Choose only the moments with the highest visual or intellectual payoff. Keep every effect clearly quieter than the voice. Pair the sound with a small visual action so both land together. If no sound improves the moment, leave it silent.
+
+B-ROLL
+  About 2 to 4 meaningful full-screen B-roll moments where useful. This is not a quota. No generic handshakes, fake boardrooms, smiling coworkers, meaningless typing, AI-looking people, or invented employer documents presented as real. Where an example is constructed, it carries its label.
+
+CAPTIONS
+  NO BURNED-IN OR OPEN CAPTIONS on the long-form video. Viewers use YouTube CC. Deliver a clean export with no persistent subtitles, a complete final transcript with names, frameworks, URLs and industry terms proofread, and an SRT generated against the FINAL edited timeline with synchronization checked after every jump cut and removal. Do not delete transcript words because the camera is hidden behind a graphic. Shorts and Reels may use designed captions.
+
+SUBSCRIBE
+  One brief visual Subscribe cue after meaningful value has already been delivered. Visual only. There is no spoken Subscribe request in the master and none is added. About 1 to 3 seconds including entrance and exit. Do not interrupt a useful pause or cover teaching content.

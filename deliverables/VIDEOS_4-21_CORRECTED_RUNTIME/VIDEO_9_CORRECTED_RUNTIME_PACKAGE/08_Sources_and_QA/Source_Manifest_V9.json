@@ -1,0 +1,168 @@
+{
+  "video": 9,
+  "title": "How to Change Industries Without Starting Over",
+  "generated": "Saturday, September 12, 2026 | 5:28 AM CT (America/Chicago, UTC-05:00)",
+  "spoken_source_of_truth": {
+    "file": "Video_9_FINAL_Revised_Recording_Master.docx",
+    "sha256": "690c0626c3a9e09efcd00841057fd35199a6d2c9e3e9e822a60aae321e92ab19",
+    "note": "Copied unchanged into 01_Recording_Master. Never written to. This file overrides every earlier script."
+  },
+  "secondary_reference": [
+    {
+      "body": "SEP09_V4_V7",
+      "description": "Videos 4 to 7 handoff package, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP09_V8_V13",
+      "description": "Videos 8 to 13 production packages, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP10_V14_V21",
+      "description": "Videos 14 to 21 final production packages, September 10, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    }
+  ],
+  "runtime": {
+    "mode": "REGULAR LONG-FORM",
+    "is_five_minute_test": false,
+    "restored_regular_depth": false,
+    "target_stated_by_master": "Approximately 9:15 to 10:15",
+    "note": "Videos 4 and 5 are the only 5-minute retention test. Videos 6 to 21 are regular long-form and were not shortened to meet a 5-minute target."
+  },
+  "packaging": {
+    "thumbnail": "NEW FIELD. NOT ZERO.",
+    "framework": "Capability. Context. Credentials.",
+    "primary_cta": "Capability. Context. Credentials.",
+    "primary_cta_spoken_at": "Choose one destination role. Not five industries at once.",
+    "resource": "Capability Formation Field Kit",
+    "resource_spoken": true,
+    "watch_next": "Video 10: Before a Layoff, Know What You Can Still Prove",
+    "watch_next_source": "the master's Watch Next row"
+  },
+  "script": {
+    "sections": 8,
+    "thought_blocks": 104,
+    "spoken_words": 1153,
+    "speech_only_estimate": "7:57 to 8:52 at 130 to 145 words per minute",
+    "estimate_note": "Arithmetic on the script. Excludes pauses and visual holds. Not a timed read and not a runtime."
+  },
+  "assets": [
+    {
+      "file": "v9_01_direct_industry_experience.png",
+      "status": "COPY UPDATE",
+      "why": "V9's prior opening asset addressed the same status tension. The corrected master sharpens it to the posting sentence itself.",
+      "mode": "FULL SCREEN",
+      "trigger": "“Direct industry experience required.”"
+    },
+    {
+      "file": "v9_02_neither_mistake.png",
+      "status": "NEW",
+      "why": "The corrected master states both mistakes explicitly in the hook.",
+      "mode": "FULL SCREEN",
+      "trigger": "Do not say, “I can already do all of this.”"
+    },
+    {
+      "file": "v9_03_capability_context_credentials.png",
+      "status": "REBUILD",
+      "why": "Reclassified from REUSE to REBUILD. Measured: only 48% of the text is shared with the closest prior card, which read: THE THREE-PART READ 01 CAPABILITY 02 CONTEXT 03 CREDENTIALS What can you prove? What changes here? What is ac…. The editorial note written when this card was built, kept as written: The prior V9 package carries the same three-part framework and the corrected master preserves it. Copy updated to the corrected questions.",
+      "mode": "FULL SCREEN",
+      "trigger": "Capability. Context. Credentials."
+    },
+    {
+      "file": "v9_04_same_verb_different_decision.png",
+      "status": "NEW",
+      "why": "The corrected master adds this explicit equivalence warning.",
+      "mode": "FULL SCREEN",
+      "trigger": "“Approve” can mean checking a routine item in one role and accepting a consequential risk in another."
+    },
+    {
+      "file": "v9_05_capability_sentence.png",
+      "status": "NEW",
+      "why": "New to the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "Write the capability sentence this way:"
+    },
+    {
+      "file": "v9_06_context_is_not_vocabulary.png",
+      "status": "NEW",
+      "why": "New to the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "Context is not just vocabulary you can learn over a weekend."
+    },
+    {
+      "file": "v9_07_better_question_to_ask.png",
+      "status": "NEW",
+      "why": "New to the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "“Do you think I could switch industries?”"
+    },
+    {
+      "file": "v9_08_credential_three_labels.png",
+      "status": "COPY UPDATE",
+      "why": "The prior package addressed credentials. The corrected master specifies these three labels, so the copy is replaced.",
+      "mode": "FULL SCREEN",
+      "trigger": "Write down:"
+    },
+    {
+      "file": "v9_09_cta.png",
+      "status": "REBUILD",
+      "why": "Reclassified from REUSE to REBUILD. Measured: only 41% of the text is shared with the closest prior card, which read: THE THREE-PART READ 01 CAPABILITY 02 CONTEXT 03 CREDENTIALS What can you prove? What changes here? What is ac…. The editorial note written when this card was built, kept as written: The prior package routed V9 to the Field Kit and the corrected master keeps that route.",
+      "mode": "FULL SCREEN",
+      "trigger": "Choose one destination role. Not five industries at once."
+    },
+    {
+      "file": "v9_10_watch_next.png",
+      "status": "COPY UPDATE",
+      "why": "Reclassified from REUSE to COPY UPDATE. Measured: 93% of the text is shared with the prior card, which read: WATCH NEXT Before a Layoff, Know What You Can Still Prove. The editorial note written when this card was built, kept as written: Destination and title unchanged from the prior package.",
+      "mode": "FULL SCREEN",
+      "trigger": "Watch “Before a Layoff, Know What You Can Still Prove” next."
+    }
+  ],
+  "shorts": [
+    {
+      "slug": "v9_a1_new_field_not_zero",
+      "priority": "A",
+      "title": "New field does not mean zero",
+      "source": "V9 hook."
+    },
+    {
+      "slug": "v9_a2_same_verb_different_decision",
+      "priority": "A",
+      "title": "The same verb can hide a different decision",
+      "source": "V9 capability."
+    },
+    {
+      "slug": "v9_a3_better_question",
+      "priority": "A",
+      "title": "Ask a better question than can I switch",
+      "source": "V9 context."
+    },
+    {
+      "slug": "v9_a4_credentials",
+      "priority": "A",
+      "title": "Is it a gate, or did you assume it?",
+      "source": "V9 credentials."
+    },
+    {
+      "slug": "v9_b1_defensible_introduction",
+      "priority": "B",
+      "title": "A defensible introduction",
+      "source": "V9 put it together."
+    },
+    {
+      "slug": "v9_b2_the_tradeoff",
+      "priority": "B",
+      "title": "What are you giving up, and for how long?",
+      "source": "V9 put it together."
+    }
+  ],
+  "not_verified": [
+    "Nothing in this package has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

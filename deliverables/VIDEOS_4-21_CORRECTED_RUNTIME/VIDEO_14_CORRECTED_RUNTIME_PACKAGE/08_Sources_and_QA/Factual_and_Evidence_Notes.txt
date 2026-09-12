@@ -1,0 +1,72 @@
+==============================================================================
+VIDEO 14  |  FACTUAL AND EVIDENCE NOTES
+==============================================================================
+
+Which Parts of Your Experience Actually Transfer to Another Industry?
+
+CARRIED FROM THE MASTER, NOT SPOKEN
+
+  MAJOR VISUAL AND MOTION-GRAPHIC MAP
+  RESEARCH INTEGRITY NOTES | NOT SPOKEN
+  All findings in this master are grounded in the supplied September 10, 2026 research report.
+  Use 28, never 30, if the sample count appears on screen or in publishing copy.
+  Do not convert the convenience sample into a labor-market percentage.
+  Do not claim that adjacent-experience candidates would be hired or that stated requirements would be waived.
+  Preserve exact source captures for any employer-specific example used on screen. Several source postings were mirrored, older, or closed.
+  If the editor names Humana, Wells Fargo, Mass General Brigham, JPMorgan, or another employer on screen, use the preserved source wording and keep the original capture with the production archive.
+  Do not use a numerical title unless the final packaging is intentionally changed later. Current locked recommendation is the question title plus WHAT REALLY TRANSFERS?
+  No em dashes. U.S. English. No burned-in captions for long-form.
+
+------------------------------------------------------------------------------
+
+PACKAGE-LEVEL BOUNDARIES
+
+  Nothing in this package adds a claim, an outcome or a certainty
+  that the master does not carry.
+  Constructed examples are labeled on the frame and are said aloud
+  as constructed in the master.
+  Runtime figures are arithmetic on the script, not measured.
+  No employer, colleague, client or outcome is invented anywhere.
+
+------------------------------------------------------------------------------
+
+VIDEO 14 RESEARCH REFERENCE MAP
+
+  Archive: what-really-transfers-research.md
+  SHA-256 a7eac1a71e2245e34e61267be9e19d8c5e3750a66236da40e78f9715ad3e6421
+
+  Every claim in this package was verified against that file
+  at build time. 20 of 20 verified.
+
+  [OK] 28 postings retained
+  [OK] 10 healthcare, 10 financial services, 8 technology
+  [OK] Collection date September 10, 2026
+  [OK] The target was 30 and was not reached
+  [OK] Manage risk means a project risk register in one healthcare posting
+  [OK] Manage risk means enterprise risk programs at one financial employer
+  [OK] Manage risk means patient movement during an infectious-disease surge
+  [OK] One healthcare employer accepts limited content knowledge
+  [OK] One wealth-management posting gates on financial services experience
+  [OK] Same-industry experience is a hard gate in 6 of 28
+  [OK] The five shared capabilities
+  [OK] Governance means two different things
+  [OK] The sample cannot show two roles are interchangeable
+  [OK] The sample cannot show a candidate would be hired
+  [OK] The sample is a convenience sample and not representative
+  [OK] Counts are counts within these 28 postings
+  [OK] Several postings are dated 2025 or early 2026 or came from mirrors
+  [OK] The number must be 28, never 30
+  [OK] The question title is the recommended packaging
+  [OK] WHAT REALLY TRANSFERS? fits the evidence
+
+  Employer material. The master's notes permit Humana,
+  Wells Fargo, Mass General Brigham and JPMorgan to be named
+  on screen only with the preserved source wording. No
+  rendered frame in this package names an employer: the
+  employer-disagreement frame describes them by type. If the
+  editor names one, the source capture must travel with the
+  production archive.
+
+  Several source postings were mirrored, older or closed. Do
+  not present every source as a currently live employer
+  posting.

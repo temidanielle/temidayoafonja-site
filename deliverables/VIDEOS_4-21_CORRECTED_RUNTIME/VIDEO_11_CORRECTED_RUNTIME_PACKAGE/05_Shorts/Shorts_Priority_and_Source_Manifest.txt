@@ -1,0 +1,52 @@
+==============================================================================
+VIDEO 11  |  SHORTS PRIORITY AND SOURCE MANIFEST
+==============================================================================
+
+AI Can Do the Task. What Are You Still Paid For?
+
+Six Shorts. Four Priority A, two Priority B.
+Timings are arithmetic at 165 words per minute. Not timed reads.
+
+------------------------------------------------------------------------------
+
+PRIORITY A  v11_a1_can_we_reduce_the_team
+    TITLE:  Does this mean we can reduce the team?
+    WORDS:  90   ABOUT 33 SECONDS
+    FIRST:  The report is ready. AI helped produce it.
+    FINAL:  Map one recurring output into produce, interpret, and decide.
+    SOURCE: V11 hook.
+
+PRIORITY A  v11_a2_the_mix_changed
+    TITLE:  The headline improved. The work did not.
+    WORDS:  89   ABOUT 32 SECONDS
+    FIRST:  These are invented teaching numbers, not customer data.
+    FINAL:  Ask what the aggregate number is hiding.
+    SOURCE: V11 demonstration.
+
+PRIORITY A  v11_a3_produce_interpret_decide
+    TITLE:  The task is not the whole job
+    WORDS:  70   ABOUT 25 SECONDS
+    FIRST:  Take one recurring output from your job. Not your whole profession.
+    FINAL:  Build the three-column map for one output.
+    SOURCE: V11 map your role.
+
+PRIORITY A  v11_a4_output_is_not_a_decision
+    TITLE:  A report is an output. Reducing a team is a decision.
+    WORDS:  85   ABOUT 31 SECONDS
+    FIRST:  A report is an output. Reducing a team is a decision.
+    FINAL:  Write that sentence for one output you produce.
+    SOURCE: V11 decide.
+
+PRIORITY B  v11_b1_the_boundary
+    TITLE:  The boundary is not machines never interpret
+    WORDS:  94   ABOUT 34 SECONDS
+    FIRST:  I do not want to build this on a fake premise that AI can only write and people do all the thinking.
+    FINAL:  Ask whether the interpretation is sufficient for this decision.
+    SOURCE: V11 interpret.
+
+PRIORITY B  v11_b2_no_ai_proof_job
+    TITLE:  Do not look for an AI-proof job
+    WORDS:  102   ABOUT 37 SECONDS
+    FIRST:  Put your own contribution on the map honestly.
+    FINAL:  Be clear about the judgment and consequences the work still requires.
+    SOURCE: V11 map your role.

@@ -1,0 +1,52 @@
+==============================================================================
+VIDEO 13  |  SHORTS PRIORITY AND SOURCE MANIFEST
+==============================================================================
+
+A 30-Day Plan to Test Your Next Career Move
+
+Six Shorts. Four Priority A, two Priority B.
+Timings are arithmetic at 165 words per minute. Not timed reads.
+
+------------------------------------------------------------------------------
+
+PRIORITY A  v13_a1_stop_collecting_activity
+    TITLE:  Stop collecting career activity
+    WORDS:  88   ABOUT 32 SECONDS
+    FIRST:  You have saved the jobs. Rewritten the headline. Maybe started a course.
+    FINAL:  Choose one destination and write the hypothesis.
+    SOURCE: V13 hook.
+
+PRIORITY A  v13_a2_testable_destination
+    TITLE:  Choose a destination specific enough to test
+    WORDS:  74   ABOUT 27 SECONDS
+    FIRST:  Something strategic is too vague to test.
+    FINAL:  Write the hypothesis and what would change your mind.
+    SOURCE: V13 setup.
+
+PRIORITY A  v13_a3_ask_about_the_work
+    TITLE:  Do not ask for reassurance. Ask about the work.
+    WORDS:  76   ABOUT 28 SECONDS
+    FIRST:  In the investigation week, do not ask for blanket reassurance about your potential.
+    FINAL:  Ask those three, not whether you could do it.
+    SOURCE: V13 days 8 to 14.
+
+PRIORITY A  v13_a4_effort_is_not_evidence
+    TITLE:  Do not confuse effort with evidence
+    WORDS:  75   ABOUT 27 SECONDS
+    FIRST:  At the end of the month, stop collecting activities and read the record.
+    FINAL:  Write why you will continue, modify, or stop.
+    SOURCE: V13 the evidence standard.
+
+PRIORITY B  v13_b1_bounded_sample
+    TITLE:  Try one bounded piece
+    WORDS:  102   ABOUT 37 SECONDS
+    FIRST:  In the third week, test one important part of the destination where a safe and relevant sample is possible.
+    FINAL:  Set the time limit before you start.
+    SOURCE: V13 days 15 to 21.
+
+PRIORITY B  v13_b2_stop_is_a_good_result
+    TITLE:  Stop is a real result
+    WORDS:  82   ABOUT 30 SECONDS
+    FIRST:  Continue does not mean resign tomorrow. It could mean a targeted conversation, an application, or a specific learning commitment now supported by evidence.
+    FINAL:  Let the evidence choose, not the sunk time.
+    SOURCE: V13 days 22 to 30.

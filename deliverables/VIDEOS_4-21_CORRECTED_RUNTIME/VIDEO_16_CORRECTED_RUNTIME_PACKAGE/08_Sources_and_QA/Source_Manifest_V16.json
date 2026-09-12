@@ -1,0 +1,168 @@
+{
+  "video": 16,
+  "title": "What to Do When Your Work Is Valued but You Are Overlooked",
+  "generated": "Saturday, September 12, 2026 | 5:28 AM CT (America/Chicago, UTC-05:00)",
+  "spoken_source_of_truth": {
+    "file": "Video_16_FINAL_Regular_Length_Recording_Master.docx",
+    "sha256": "3ec0c0e95c21e83ef87b7c7ae35d7b2313cc0d00f0ef8ac83312b7151c32ba30",
+    "note": "Copied unchanged into 01_Recording_Master. Never written to. This file overrides every earlier script."
+  },
+  "secondary_reference": [
+    {
+      "body": "SEP09_V4_V7",
+      "description": "Videos 4 to 7 handoff package, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP09_V8_V13",
+      "description": "Videos 8 to 13 production packages, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP10_V14_V21",
+      "description": "Videos 14 to 21 final production packages, September 10, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    }
+  ],
+  "runtime": {
+    "mode": "REGULAR LONG-FORM",
+    "is_five_minute_test": false,
+    "restored_regular_depth": true,
+    "target_stated_by_master": "Regular long-form. Preserve the original 9–12 minute target where that was the approved draft target.",
+    "note": "Videos 4 and 5 are the only 5-minute retention test. Videos 6 to 21 are regular long-form and were not shortened to meet a 5-minute target."
+  },
+  "packaging": {
+    "thumbnail": "THEY NEED YOU. THEN SKIP YOU.",
+    "framework": null,
+    "primary_cta": "Write one decision you made and what it changed.",
+    "primary_cta_spoken_at": "If you want the longer version of how to build that record properly, Keep the Proof is where I have put it, and the link is below.",
+    "resource": "Keep the Proof",
+    "resource_spoken": true,
+    "watch_next": "Video 8: How to Show Your Impact at Work When You Built It From Scratch",
+    "watch_next_source": "the Watch Next card in the production deck"
+  },
+  "script": {
+    "sections": 10,
+    "thought_blocks": 38,
+    "spoken_words": 1176,
+    "speech_only_estimate": "8:07 to 9:03 at 130 to 145 words per minute",
+    "estimate_note": "Arithmetic on the script. Excludes pauses and visual holds. Not a timed read and not a runtime."
+  },
+  "assets": [
+    {
+      "file": "v16_01_called_then_skipped.png",
+      "status": "REUSE",
+      "why": "Concept and trigger both survive into the restored master.",
+      "mode": "FULL SCREEN",
+      "trigger": "When something is urgent, they call you."
+    },
+    {
+      "file": "v16_02_four_separations.png",
+      "status": "COPY UPDATE",
+      "why": "Reclassified from REUSE to COPY UPDATE. Measured: 94% of the text is shared with the prior card, which read: BEFORE YOU CHANGE HOW YOU BEHAVE 1 Is the work seen? 2 Is it attributed to you? 3 Trusted to deliver, or cons…. The editorial note written when this card was built, kept as written: Concept and trigger both survive into the restored master.",
+      "mode": "FULL SCREEN",
+      "trigger": "Before you change how you behave, separate four things: is the work seen, is it attributed to you, are you trusted for delivery or considered for larger scope, and is the obstacle one you can actually remove?"
+    },
+    {
+      "file": "v16_03_where_work_disappears.png",
+      "status": "COPY UPDATE",
+      "why": "Concept preserved; the restored master's wording replaces the copy and the trigger.",
+      "mode": "FULL SCREEN",
+      "trigger": "Work disappears in predictable places."
+    },
+    {
+      "file": "v16_04_delivery_vs_scope.png",
+      "status": "COPY UPDATE",
+      "why": "Concept preserved; trigger and copy updated to the restored wording.",
+      "mode": "FULL SCREEN",
+      "trigger": "So delivery and scope are being judged separately."
+    },
+    {
+      "file": "v16_05_the_hinge.png",
+      "status": "NEW",
+      "why": "Reclassified from REUSE to NEW. Measured: nothing in the prior package resembles it; the closest card shares 19% of its text. The editorial note written when this card was built, kept as written: The hinge survives into the restored master and the trigger is the same sentence.",
+      "mode": "FULL SCREEN",
+      "trigger": "A manager who does not know is a completely different situation from a manager who knows and does not act."
+    },
+    {
+      "file": "v16_06_what_this_does_not_fix.png",
+      "status": "COPY UPDATE",
+      "why": "Concept preserved; trigger and copy updated to the restored wording.",
+      "mode": "FULL SCREEN",
+      "trigger": "This does not override bias."
+    },
+    {
+      "file": "v16_07_three_pieces_four_lines.png",
+      "status": "COPY UPDATE",
+      "why": "Concept preserved; the restored master renames the fourth line, so the copy and trigger are updated.",
+      "mode": "FULL SCREEN",
+      "trigger": "Take three pieces of work from the last year."
+    },
+    {
+      "file": "v16_08_waiting_or_testing.png",
+      "status": "NEW",
+      "why": "The restored master brings back the keep-or-test decision section.",
+      "mode": "FULL SCREEN",
+      "trigger": "Waiting is a legitimate choice when you can point at the specific thing you are waiting for."
+    },
+    {
+      "file": "v16_09_cta.png",
+      "status": "REUSE",
+      "why": "Reclassified from COPY UPDATE to REUSE. Measured: byte- identical to the prior rendered file. The editorial note written when this card was built, kept as written: Route unchanged. The trigger moves to the restored master's own resource sentence.",
+      "mode": "FULL SCREEN",
+      "trigger": "If you want the longer version of how to build that record properly, Keep the Proof is where I have put it, and the link is below."
+    },
+    {
+      "file": "v16_10_watch_next.png",
+      "status": "REUSE",
+      "why": "Reclassified from COPY UPDATE to REUSE. Measured: byte- identical to the prior rendered file. The editorial note written when this card was built, kept as written: Destination unchanged. Trigger moved to the restored final line.",
+      "mode": "FULL SCREEN",
+      "trigger": "If it is difficult to write, that is worth knowing."
+    }
+  ],
+  "shorts": [
+    {
+      "slug": "v16_a1_called_then_skipped",
+      "priority": "A",
+      "title": "They call you. Then they skip you.",
+      "source": "V16 hook."
+    },
+    {
+      "slug": "v16_a2_the_hinge",
+      "priority": "A",
+      "title": "Does not know, or knows and does not act",
+      "source": "V16 the hinge."
+    },
+    {
+      "slug": "v16_a3_where_work_disappears",
+      "priority": "A",
+      "title": "Where good work disappears",
+      "source": "V16 is the work seen."
+    },
+    {
+      "slug": "v16_a4_three_pieces_four_lines",
+      "priority": "A",
+      "title": "Three pieces, four lines each",
+      "source": "V16 what to build."
+    },
+    {
+      "slug": "v16_b1_trusted_vs_considered",
+      "priority": "B",
+      "title": "Trusted to deliver is not the same as considered for scope",
+      "source": "V16 trusted or considered."
+    },
+    {
+      "slug": "v16_b2_what_it_does_not_fix",
+      "priority": "B",
+      "title": "What a clearer record does not fix",
+      "source": "V16 what this does not fix."
+    }
+  ],
+  "not_verified": [
+    "Nothing in this package has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

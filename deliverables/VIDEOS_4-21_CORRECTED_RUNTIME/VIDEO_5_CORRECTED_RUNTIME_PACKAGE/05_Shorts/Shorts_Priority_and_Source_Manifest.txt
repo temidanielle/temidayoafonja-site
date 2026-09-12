@@ -1,0 +1,52 @@
+==============================================================================
+VIDEO 5  |  SHORTS PRIORITY AND SOURCE MANIFEST
+==============================================================================
+
+I Changed Career Tracks Without Starting Over. Here's What I Carried With Me.
+
+Six Shorts. Four Priority A, two Priority B.
+Timings are arithmetic at 165 words per minute. Not timed reads.
+
+------------------------------------------------------------------------------
+
+PRIORITY A  v5_a1_changed_tracks_not_zero
+    TITLE:  Changed tracks. Not zero.
+    WORDS:  89   ABOUT 32 SECONDS
+    FIRST:  When you change career tracks, other people can start reading you like a beginner.
+    FINAL:  Sort one move you are considering into those four.
+    SOURCE: V5 hook.
+
+PRIORITY A  v5_a2_carry
+    TITLE:  What actually carries
+    WORDS:  74   ABOUT 27 SECONDS
+    FIRST:  Years of experience do not travel by themselves.
+    FINAL:  Name the parts that survive the removal.
+    SOURCE: V5 carry.
+
+PRIORITY A  v5_a3_translate
+    TITLE:  Translate, do not repeat the label
+    WORDS:  85   ABOUT 31 SECONDS
+    FIRST:  The same accomplishment can sound valuable in one room and irrelevant in another, because the listener does not know the old context.
+    FINAL:  Translate one accomplishment out of its old context.
+    SOURCE: V5 translate.
+
+PRIORITY A  v5_a4_prove_the_level
+    TITLE:  Fifteen years is not a level
+    WORDS:  100   ABOUT 36 SECONDS
+    FIRST:  Do not rely on I have fifteen years of experience, or I was a director.
+    FINAL:  Write one example that supports the level you are claiming.
+    SOURCE: V5 prove the level.
+
+PRIORITY B  v5_b1_relearn
+    TITLE:  Relearn without calling yourself a beginner
+    WORDS:  80   ABOUT 29 SECONDS
+    FIRST:  Every real context change creates things you have to learn from inside the new environment.
+    FINAL:  Name the gap accurately before you decide.
+    SOURCE: V5 relearn.
+
+PRIORITY B  v5_b2_both_directions
+    TITLE:  Confidence misleads in both directions
+    WORDS:  84   ABOUT 31 SECONDS
+    FIRST:  This is where confidence can become misleading, and it goes both ways.
+    FINAL:  Check which direction you are overcorrecting in.
+    SOURCE: V5 relearn and close.

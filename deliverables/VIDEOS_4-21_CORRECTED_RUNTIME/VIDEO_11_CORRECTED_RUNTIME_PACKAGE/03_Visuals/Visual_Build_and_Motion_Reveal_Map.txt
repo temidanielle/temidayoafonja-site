@@ -1,0 +1,163 @@
+==============================================================================
+VIDEO 11  |  VISUAL BUILD MAP AND MOTION REVEAL MAP
+==============================================================================
+
+AI Can Do the Task. What Are You Still Paid For?
+
+Support and reference assets for the Riverside editor. This is not
+a deck that covers the script paragraph by paragraph, and it is not
+a mandatory slideshow.
+
+------------------------------------------------------------------------------
+
+ 1. v11_01_can_we_reduce_the_team.png
+    STATUS:    COPY UPDATE
+    WHY:       Reclassified from REUSE to COPY UPDATE. Measured: 88% of the text is shared with the prior card, which read: “DOES THIS MEAN WE CAN REDUCE THE TEAM?” That is the moment the job changes.. The editorial note written when this card was built, kept as written: V11_MG01_Can_We_Reduce_The_Team.png carries the same opening question, preserved by the corrected master.
+    PURPOSE:   The hook. A status threat, not an abstract AI question.
+    TRIGGER:   “Does this mean we can reduce the team?”
+    MODE:      FULL SCREEN
+    REVEAL:    The question alone. Hold. Then the line under it.
+    EMPHASIS:  The question.
+    HOLD:      2 seconds alone, 3 with the support.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one clean transition sound on entry.
+    AFTER:     Return to camera on the next spoken line.
+
+ 2. v11_02_task_is_not_the_job.png
+    STATUS:    REBUILD
+    WHY:       Reclassified from REUSE to REBUILD. Measured: only 50% of the text is shared with the closest prior card, which read: THE FRAMEWORK 01 PRODUCE 02 INTERPRET 03 DECIDE And verify across all three.. The editorial note written when this card was built, kept as written: V11_MG04_Produce_Interpret_Decide.png carries the same framework, preserved by the corrected master.
+    PURPOSE:   The framework, and the thumbnail's argument.
+    TRIGGER:   Produce. Interpret. Decide.
+    MODE:      FULL SCREEN
+    REVEAL:    One column at a time, then the foot line.
+    EMPHASIS:  The foot line, because verification runs through all three.
+    HOLD:      2 seconds each, 4 on the foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the foot line lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 3. v11_03_headline_rate.png
+    STATUS:    NEW
+    WHY:       Reclassified from REUSE to NEW. Measured: nothing in the prior package resembles it; the closest card shares 8% of its text. The editorial note written when this card was built, kept as written: V11_MG02_The_Headline_Rate.png carries the same synthetic figures and label, preserved by the corrected master.
+    PURPOSE:   Establish the demonstration and its label in the same frame.
+    TRIGGER:   Here is a small synthetic service report. These are invented teaching numbers, not customer data and not a result from my career.
+    MODE:      FULL SCREEN
+    REVEAL:    The label first and permanently, then the numbers.
+    EMPHASIS:  The label is not a footer. It stays for the whole hold.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one soft tick as the rate appears.
+    AFTER:     Return to camera on the next spoken line.
+
+ 4. v11_04_the_mix_changed.png
+    STATUS:    NEW
+    WHY:       Reclassified from REUSE to NEW. Measured: nothing in the prior package resembles it; the closest card shares 21% of its text. The editorial note written when this card was built, kept as written: V11_MG03_The_Mix_Changed.png carries the same reveal, preserved by the corrected master.
+    PURPOSE:   The reveal the whole demonstration exists for.
+    TRIGGER:   What changed was the mix. The second period had far more routine cases and fewer complex ones.
+    MODE:      FULL SCREEN
+    REVEAL:    Left. Then right. Then the foot line, which holds longest.
+    EMPHASIS:  The foot line.
+    HOLD:      3 seconds per side, 5 on the foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Strong candidate: one soft tick as the foot line lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 5. v11_05_what_it_does_not_establish.png
+    STATUS:    NEW
+    WHY:       Reclassified from REUSE to NEW. Measured: nothing in the prior package resembles it; the closest card shares 4% of its text. The editorial note written when this card was built, kept as written: V11_MG05_What_It_Does_Not_Establish.png carries the same boundary, preserved by the corrected master.
+    PURPOSE:   The interpretive discipline, stated without overclaiming.
+    TRIGGER:   It does not establish that people became more effective within each category.
+    MODE:      FULL SCREEN
+    REVEAL:    Left. Then right. Then the foot line.
+    EMPHASIS:  The foot line, which keeps the video fair.
+    HOLD:      3 seconds per side, 4 on the foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate.
+    AFTER:     Return to camera on the next spoken line.
+
+ 6. v11_06_the_boundary_is_not.png
+    STATUS:    NEW
+    WHY:       The corrected master adds this explicit refusal, which the prior package did not carry.
+    PURPOSE:   Refuse the easy anti-AI framing the topic invites.
+    TRIGGER:   So the boundary is not:
+    MODE:      FULL SCREEN
+    REVEAL:    The weak claim. Hold. Struck. Then the real question.
+    EMPHASIS:  The strike.
+    HOLD:      2 seconds before the strike, 4 after.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the strike lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 7. v11_07_who_owns_the_consequence.png
+    STATUS:    COPY UPDATE
+    WHY:       Reclassified from REUSE to COPY UPDATE. Measured: 74% of the text is shared with the prior card, which read: THREE | DECIDE 01 Who is authorized to make the change? 02 Which risks must be accepted or reduced? 03 What a…. The editorial note written when this card was built, kept as written: V11_MG06_Who_Owns_The_Consequence.png carries the same set, preserved by the corrected master.
+    PURPOSE:   The third stage, made concrete.
+    TRIGGER:   Those are organizational responsibilities.
+    MODE:      FULL SCREEN
+    REVEAL:    One question at a time, then the foot line.
+    EMPHASIS:  The foot line.
+    HOLD:      2 seconds each, 4 on the foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the foot line lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 8. v11_08_map_your_role.png
+    STATUS:    REBUILD
+    WHY:       Reclassified from REUSE to REBUILD. Measured: only 29% of the text is shared with the closest prior card, which read: CAPABILITY FORMATION FIELD KIT A broader read of what your work is building. Not an AI certification and not …. The editorial note written when this card was built, kept as written: V11_MG07_Map_Your_Role.png carries the same application. Copy updated to attach the corrected master's limit.
+    PURPOSE:   The application, with the honesty attached rather than separated.
+    TRIGGER:   Take one recurring output from your job.
+    MODE:      FULL SCREEN
+    REVEAL:    Headline, then the limit.
+    EMPHASIS:  The headline.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate.
+    AFTER:     Return to camera on the next spoken line.
+
+ 9. v11_09_cta.png
+    STATUS:    COPY UPDATE
+    WHY:       The prior package routed V11 to the Field Kit and the corrected master keeps that route. The headline changes with the corrected action.
+    PURPOSE:   The resource route named by the corrected master.
+    TRIGGER:   Choose one recurring output before your next role conversation.
+    MODE:      FULL SCREEN
+    REVEAL:    Label, headline, resource name, URL.
+    EMPHASIS:  The URL.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one clean transition sound on entry.
+    AFTER:     Return to camera on the next spoken line.
+
+10. v11_10_watch_next.png
+    STATUS:    COPY UPDATE
+    WHY:       Reclassified from REUSE to COPY UPDATE. Measured: 92% of the text is shared with the prior card, which read: WATCH NEXT What to Do When You Can’t Quit Your Job Yet. The editorial note written when this card was built, kept as written: Destination and title unchanged from the prior package.
+    PURPOSE:   The final visual, cued by the spoken handoff.
+    TRIGGER:   Watch “What to Do When You Can’t Quit Your Job Yet” next.
+    MODE:      FULL SCREEN
+    REVEAL:    Label, rule, title, number.
+    EMPHASIS:  The title.
+    HOLD:      Hold to the end.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one restrained transition sound, then music fade.
+    AFTER:     NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+FULL SCREEN
+  Frameworks, comparisons, multi-point concepts, substantive demonstrations, the resource card and Watch Next are TRUE FULL SCREEN. No moving Temidayo behind or around a major visual. Substantive B-roll fills the entire frame. Short single-idea callouts may sit over camera. After a full-screen teaching visual, return to camera only where the scene map calls for it. THIS NEVER APPLIES TO WATCH NEXT: Watch Next is the final visual and there is no return to camera afterward.
+
+CAMERA
+  About 3 to 5 deliberate camera-emphasis beats across the whole video. This is one combined budget: gentle push-ins on tension, insight or a reframe, with occasional pull-backs or a return to base framing to reset the rhythm. It is not 3 to 5 push-ins plus 3 to 5 pull-backs. No aggressive zooms, no pulsing, no constant reframing, no unnecessary digital movement. Preserve headroom and source quality.
+
+SOUND BUDGET
+  About 4 to 7 restrained audio accents for the ENTIRE video, including the one visual Subscribe cue. The per-frame sound candidates in the visual map are OPTIONAL and are not cumulative. Choose only the moments with the highest visual or intellectual payoff. Keep every effect clearly quieter than the voice. Pair the sound with a small visual action so both land together. If no sound improves the moment, leave it silent.
+
+B-ROLL
+  About 2 to 4 meaningful full-screen B-roll moments where useful. This is not a quota. No generic handshakes, fake boardrooms, smiling coworkers, meaningless typing, AI-looking people, or invented employer documents presented as real. Where an example is constructed, it carries its label.
+
+CAPTIONS
+  NO BURNED-IN OR OPEN CAPTIONS on the long-form video. Viewers use YouTube CC. Deliver a clean export with no persistent subtitles, a complete final transcript with names, frameworks, URLs and industry terms proofread, and an SRT generated against the FINAL edited timeline with synchronization checked after every jump cut and removal. Do not delete transcript words because the camera is hidden behind a graphic. Shorts and Reels may use designed captions.
+
+SUBSCRIBE
+  One brief visual Subscribe cue after meaningful value has already been delivered. Visual only. There is no spoken Subscribe request in the master and none is added. About 1 to 3 seconds including entrance and exit. Do not interrupt a useful pause or cover teaching content.

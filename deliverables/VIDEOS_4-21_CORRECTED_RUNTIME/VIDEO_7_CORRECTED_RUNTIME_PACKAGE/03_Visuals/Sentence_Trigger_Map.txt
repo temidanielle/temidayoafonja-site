@@ -1,0 +1,82 @@
+==============================================================================
+VIDEO 7  |  SENTENCE TRIGGER MAP
+==============================================================================
+
+It Took Me Years to Stop Mistaking More Work for Career Growth
+
+Every graphic with the exact spoken sentence that cues it.
+Each trigger was verified to exist inside a single thought block of
+the locked master, so no cue is built from words that span two
+takes.
+
+------------------------------------------------------------------------------
+
+ 1. v7_01_valuable_to_them_not_to_you
+    TRIGGER: You can become more valuable to your organization without becoming more valuable to your own future.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 2. v7_02_car
+    TRIGGER: I use three tests now: Complexity, Authority, Return. CAR.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 3. v7_03_dependable_people
+    TRIGGER: Reliability attracts work quickly. Authority, support, recognition, and formal scope often arrive later, if they arrive at all.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 4. v7_04_complexity
+    TRIGGER: Complexity changes when the variables change: a new customer, a new regulation, a different operating model, conflicting priorities, incomplete instructions, stakeholders whose incentives do not line up.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 5. v7_05_authority
+    TRIGGER: Responsibility is what you are expected to carry. Accountability is what you will answer for. Authority is what you can influence or decide. Those three do not always expand together.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 6. v7_06_return
+    TRIGGER: I look in three places: capability, evidence, and recognition.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 7. v7_07_read_the_car_pattern
+    TRIGGER: If volume increased but Complexity, Authority, and Return did not, the role has expanded mainly as workload.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera.
+
+ 8. v7_07_review_point
+    TRIGGER: Before the next ‘Can you take this too?’, ask: what becomes more complex? What authority comes with it? When will we review what this additional scope returns?
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 9. v7_08_scope_conversation
+    TRIGGER: Then take four questions into the conversation with your manager: Which of these responsibilities should remain with me?
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera.
+
+10. v7_08_more_work_is_not_proof
+    TRIGGER: More work can be part of growth. It is not proof of it.
+    MODE:    FULL SCREEN
+    AFTER:   Move to the resource card, then Watch Next.
+
+11. v7_09_cta
+    TRIGGER: If you want a structured way to examine what your current work is actually building in you, the Capability Formation Field Kit helps you read the evidence in your role, see where your options may be expanding or narrowing, and identify where the role may need a boundary or redesign. It is linked below.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+12. v7_10_watch_next
+    TRIGGER: In the next video, I will show you how to make that work visible: 'How to Show Your Impact at Work When You Built It From Scratch.'
+    MODE:    FULL SCREEN
+    AFTER:   NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+BEATS THAT ARE DELIBERATELY NOT GRAPHICS
+
+  The real personal account in the opening, where the master has
+  one, stays camera-led.
+  Any moment where the master's honesty depends on the viewer
+  watching Temidayo say it.
+  Anything a graphic would only decorate.

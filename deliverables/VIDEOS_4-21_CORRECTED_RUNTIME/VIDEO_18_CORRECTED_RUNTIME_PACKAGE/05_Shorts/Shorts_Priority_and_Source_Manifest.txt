@@ -1,0 +1,52 @@
+==============================================================================
+VIDEO 18  |  SHORTS PRIORITY AND SOURCE MANIFEST
+==============================================================================
+
+Should You Stay an Individual Contributor or Become a Manager?
+
+Six Shorts. Four Priority A, two Priority B.
+Timings are arithmetic at 165 words per minute. Not timed reads.
+
+------------------------------------------------------------------------------
+
+PRIORITY A  v18_a1_congratulated
+    TITLE:  They congratulate you before they describe the job
+    WORDS:  83   ABOUT 30 SECONDS
+    FIRST:  Someone offers you a management role.
+    FINAL:  Before you answer, ask what the job actually consumes.
+    SOURCE: V18 hook and reframe.
+
+PRIORITY A  v18_a2_five_things
+    TITLE:  Five things that do not move together
+    WORDS:  71   ABOUT 26 SECONDS
+    FIRST:  Five things get bundled together when a bigger role is offered.
+    FINAL:  Ask which of the five this offer actually changes.
+    SOURCE: V18 five things.
+
+PRIORITY A  v18_a3_ask_for_names
+    TITLE:  Ask for names
+    WORDS:  82   ABOUT 30 SECONDS
+    FIRST:  If you want to stay an individual contributor, ask what senior individual work looks like here, and whether it exists in practice.
+    FINAL:  Ask for names before you decide.
+    SOURCE: V18 question two.
+
+PRIORITY A  v18_a4_responsibility_without_authority
+    TITLE:  Responsibility without authority
+    WORDS:  84   ABOUT 31 SECONDS
+    FIRST:  Before you accept a bigger role, write two lists.
+    FINAL:  Compare the two lists before you answer.
+    SOURCE: V18 question three.
+
+PRIORITY B  v18_b1_can_you_come_back
+    TITLE:  Can you come back?
+    WORDS:  78   ABOUT 28 SECONDS
+    FIRST:  One question people forget to ask before moving into management.
+    FINAL:  Look for two people who have actually come back.
+    SOURCE: V18 question four.
+
+PRIORITY B  v18_b2_neither_is_brave
+    TITLE:  Neither answer is the brave one
+    WORDS:  69   ABOUT 25 SECONDS
+    FIRST:  Staying an individual contributor is not automatically the more authentic choice.
+    FINAL:  Choose the hard parts you would rather have.
+    SOURCE: V18 boundary and close.

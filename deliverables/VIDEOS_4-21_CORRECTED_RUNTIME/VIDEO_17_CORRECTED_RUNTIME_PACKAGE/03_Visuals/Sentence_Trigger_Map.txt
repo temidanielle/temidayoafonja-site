@@ -1,0 +1,72 @@
+==============================================================================
+VIDEO 17  |  SENTENCE TRIGGER MAP
+==============================================================================
+
+How to Prove Your Value When AI Does More of the Task
+
+Every graphic with the exact spoken sentence that cues it.
+Each trigger was verified to exist inside a single thought block of
+the locked master, so no cue is built from words that span two
+takes.
+
+------------------------------------------------------------------------------
+
+ 1. v17_01_two_days_forty_minutes
+    TRIGGER: The report used to take you two days.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 2. v17_02_what_did_you_actually_do
+    TRIGGER: Until someone asks, "So what did you actually do?"
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 3. v17_03_output_is_not_contribution
+    TRIGGER: The record used to be attached to the artifact. It now has to be attached to the decisions around the artifact.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 4. v17_04_four_lines
+    TRIGGER: So here are the four lines. They are deliberately short, because a record you will not maintain is not a record.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 5. v17_05_line_two
+    TRIGGER: If you only keep one of those, keep the second.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 6. v17_06_which_parts_leave_a_record
+    TRIGGER: Now mark the parts that leave nothing.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 7. v17_07_speed_is_not_correctness
+    TRIGGER: But the report that used to take two days is now expected on the same afternoon, and the checking time is the part that quietly gets compressed, because checking is the part nobody can see.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 8. v17_08_worked_example
+    TRIGGER: Let me make that concrete. I have constructed this example so the structure is visible. It is an illustration, not a captured case.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 9. v17_09_cta
+    TRIGGER: If you want the longer version of building a contribution record properly, that is Keep the Proof, linked below.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+10. v17_10_watch_next
+    TRIGGER: I would genuinely like to read those, because that sentence is the one that is disappearing, and it is the one worth keeping.
+    MODE:    FULL SCREEN
+    AFTER:   NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+BEATS THAT ARE DELIBERATELY NOT GRAPHICS
+
+  The real personal account in the opening, where the master has
+  one, stays camera-led.
+  Any moment where the master's honesty depends on the viewer
+  watching Temidayo say it.
+  Anything a graphic would only decorate.

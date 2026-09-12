@@ -1,0 +1,122 @@
+==============================================================================
+VIDEOS 4 TO 21  |  RUNTIME CORRECTION AND CHANGE LOG
+==============================================================================
+
+Generated: Saturday, September 12, 2026 | 5:28 AM CT (America/Chicago, UTC-05:00)
+
+------------------------------------------------------------------------------
+
+WHAT WAS CORRECTED
+
+  Videos 4 and 5 are approximately 5-minute test videos. They are
+  a deliberate retention experiment and they are the only two.
+
+  Videos 6 through 21 are regular long-form. The 5-minute
+  experiment is NOT a channel-wide runtime strategy and has not
+  been applied to them.
+
+  Videos 15 through 21 keep the fuller original regular long-form
+  depth, approximately 9 to 12 minutes where that was the approved
+  target. Nothing in that range was shortened to meet a 5-minute
+  target.
+
+------------------------------------------------------------------------------
+
+EVERY VIDEO, AND WHERE IT SITS
+
+  V    MODE        WORDS   SPEECH ONLY     TARGET STATED BY MASTER
+  --------------------------------------------------------------------------------------------
+  V4   5-MIN TEST  662     4:34 to 5:06    Approximately 4:30–5:30 at Temidayo’s natural pace
+  V5   5-MIN TEST  656     4:31 to 5:03    Approximately 4:30–5:30 at Temidayo’s natural pace
+  V6   LONG-FORM   1202    8:17 to 9:15    Regular long-form. Restored to the approved September 9 depth: approximately 8:17 to 9:14 speech-only.
+  V7   LONG-FORM   1229    8:29 to 9:27    Regular long-form. Restored to the approved September 9 depth: approximately 8:28 to 9:27 speech-only.
+  V8   LONG-FORM   1289    8:53 to 9:55    Regular long-form. Restored to the approved September 9 depth: approximately 8:53 to 9:54 speech-only.
+  V9   LONG-FORM   1153    7:57 to 8:52    Approximately 9:15 to 10:15
+  V10  LONG-FORM   1106    7:38 to 8:30    Approximately 9:00 to 10:00
+  V11  LONG-FORM   1198    8:16 to 9:13    Approximately 9:30 to 10:30
+  V12  LONG-FORM   1185    8:10 to 9:07    Approximately 9:15 to 10:15
+  V13  LONG-FORM   1274    8:47 to 9:48    Approximately 9:45 to 10:45
+  V14  LONG-FORM   1259    8:41 to 9:41    none stated
+  V15  LONG-FORM   1390    9:35 to 10:42   Regular long-form. Preserve the original 9–12 minute target where that was the approved draft target.
+  V16  LONG-FORM   1176    8:07 to 9:03    Regular long-form. Preserve the original 9–12 minute target where that was the approved draft target.
+  V17  LONG-FORM   1309    9:02 to 10:04   Regular long-form. Preserve the original 9–12 minute target where that was the approved draft target.
+  V18  LONG-FORM   1290    8:54 to 9:55    Regular long-form. Preserve the original 9–12 minute target where that was the approved draft target.
+  V19  LONG-FORM   1470    10:08 to 11:18  Regular long-form. Preserve the original 9–12 minute target where that was the approved draft target.
+  V20  LONG-FORM   1281    8:50 to 9:51    Regular long-form. Preserve the original 9–12 minute target where that was the approved draft target.
+  V21  LONG-FORM   1298    8:57 to 9:59    Regular long-form. Preserve the original 9–12 minute target where that was the approved draft target.
+
+  Every figure is arithmetic on the script at 130 to 145 words per
+  minute. It is speech only. It excludes pauses, visual holds and
+  delivery, so a recorded runtime will be longer than the range
+  shown. No figure here is a measured runtime.
+
+------------------------------------------------------------------------------
+
+SUPERSEDED RUNTIME LANGUAGE
+
+  Any earlier document that describes a 5-minute target for a
+  video other than V4 or V5 is superseded by this log. Any earlier
+  document that describes the 5-minute experiment as the channel's
+  runtime direction is superseded by this log.
+
+------------------------------------------------------------------------------
+
+FLAGGED, NOT REPAIRED
+
+  V9   [RUNTIME] below the target its own master states
+        1153 words, 7:57 to 8:52 at 130 to 145 wpm against 'Approximately 9:15
+        to 10:15'. The estimate is speech only and excludes pauses and visual
+        holds. Not lengthened.
+
+  V10  [RUNTIME] below the target its own master states
+        1106 words, 7:38 to 8:30 at 130 to 145 wpm against 'Approximately 9:00
+        to 10:00'. The estimate is speech only and excludes pauses and visual
+        holds. Not lengthened.
+
+  V11  [RUNTIME] below the target its own master states
+        1198 words, 8:16 to 9:13 at 130 to 145 wpm against 'Approximately 9:30
+        to 10:30'. The estimate is speech only and excludes pauses and visual
+        holds. Not lengthened.
+
+  V12  [RUNTIME] below the target its own master states
+        1185 words, 8:10 to 9:07 at 130 to 145 wpm against 'Approximately 9:15
+        to 10:15'. The estimate is speech only and excludes pauses and visual
+        holds. Not lengthened.
+
+  V14  [TYPOGRAPHY] apostrophe glyph differs from the destination master's own title
+        V14's Watch Next row writes it as 'The Career Gaps You Don’t See Until
+        the Work Gets Harder'. V15's Title row writes it as "The Career Gaps You
+        Don't See Until the Work Gets Harder". Same words, different apostrophe.
+        RESOLVED on the production side: the Watch Next card carries V15's
+        canonical title exactly. Neither locked master is edited and both keep
+        their checksums.
+
+  V6   [RESTORED] restored from a compressed supplied master
+        The September 11 master carried about half the approved teaching. The
+        spoken source of truth is now
+        Video_6_RESTORED_Regular_Length_Recording_Master.docx, 1202 words, 8:17
+        to 9:15 at 130 to 145 wpm, against 1151 in the last full-length approved
+        master. The supplied file is unchanged in _source/ and still matches its
+        original checksum. No new teaching was authored.
+
+  V7   [RESTORED] restored from a compressed supplied master
+        The September 11 master carried about half the approved teaching. The
+        spoken source of truth is now
+        Video_7_RESTORED_Regular_Length_Recording_Master.docx, 1229 words, 8:29
+        to 9:27 at 130 to 145 wpm, against 1209 in the last full-length approved
+        master. The supplied file is unchanged in _source/ and still matches its
+        original checksum. No new teaching was authored.
+
+  V8   [RESTORED] restored from a compressed supplied master
+        The September 11 master carried about half the approved teaching. The
+        spoken source of truth is now
+        Video_8_RESTORED_Regular_Length_Recording_Master.docx, 1289 words, 8:53
+        to 9:55 at 130 to 145 wpm, against 1198 in the last full-length approved
+        master. The supplied file is unchanged in _source/ and still matches its
+        original checksum. No new teaching was authored.
+
+------------------------------------------------------------------------------
+
+  None of the above was corrected in any package. Approved speech
+  is not edited, and a difference between two approved masters is
+  not resolved by rewriting one of them.

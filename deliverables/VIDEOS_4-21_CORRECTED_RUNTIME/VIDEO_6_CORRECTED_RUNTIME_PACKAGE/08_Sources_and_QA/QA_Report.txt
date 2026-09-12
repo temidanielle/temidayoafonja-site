@@ -1,0 +1,125 @@
+==============================================================================
+VIDEO 6  |  QA REPORT
+==============================================================================
+
+I've Worked Across 8 Industries and Sectors. Here's How I Know If a New Role Is Actually Growth.
+
+40 package checks completed now. 40 passed.
+Every check ran against the built package on disk, not against the
+build data, so a check cannot pass because of something that was
+true only in a source module.
+
+------------------------------------------------------------------------------
+
+PACKAGE CHECKS COMPLETED NOW
+
+  [PASS] Correct new final master used
+         Video_6_RESTORED_Regular_Length_Recording_Master.docx
+  [PASS] Supplied compressed master retained unchanged
+         Video_6_FINAL_Revised_Recording_Master.docx, SHA-256 439251708277714118617b8be910e459cfd3eee5f17746868200eff1ba63133d
+  [PASS] Restored to the approved depth
+         1202 spoken words against 1151 in the last full-length approved master
+  [PASS] Restoration adds no newly authored speech
+         every restored line traces to approved speech
+  [PASS] Master copied unchanged
+         SHA-256 f39ff30ea07906e3642599479442cd16fe35ba7096090e390521156f684dcd18
+  [PASS] Spoken reading copy matches the master
+         46 blocks present
+  [PASS] Script-only copy matches the master exactly
+         46 blocks, in order
+  [PASS] Correct title
+         I've Worked Across 8 Industries and Sectors. Here's How I Know If a New Role Is Actually Growth.
+  [PASS] Correct thumbnail wording
+         NEW TITLE. SAME WORK?
+  [PASS] Correct framework
+         Work | Judgment | Evidence + the 12-month question
+  [PASS] Correct CTA
+         Work. Judgment. Evidence.
+  [PASS] The CTA is the one the master speaks
+         If you are actively deciding whether to stay, move internally, or leave, the free Career Decision Evidence Check gives you a structured way to read the evidence behind that choice. It is linked below.
+  [PASS] Correct resource
+         Career Decision Evidence Check
+  [PASS] Correct Watch Next
+         Video 7: It Took Me Years to Stop Mistaking More Work for Career Growth (from the master's Watch Next row)
+  [PASS] Watch Next names the destination master's exact title
+         It Took Me Years to Stop Mistaking More Work for Career Growth
+  [PASS] Current teaching sequence used
+         10 sections from the master
+  [PASS] All sentence triggers exist in the current master
+         12 triggers verified inside single blocks
+  [PASS] No Code-draft script contamination
+         no superseded draft wording found anywhere in the package
+  [PASS] Runtime mode stated correctly
+         REGULAR LONG-FORM, stated in the package
+  [PASS] Marked as regular long-form
+         not part of the 5-minute experiment
+  [PASS] Not shortened to a 5-minute target
+         no 5-minute target is applied to this video
+  [PASS] No invented employer or personal claim
+         no invented employer, client or personal claim
+  [PASS] No em dashes or en dashes
+         clean in everything this build authored. Master wording carrying its own dashes is quoted verbatim and not corrected
+  [PASS] U.S. English
+         no British spellings
+  [PASS] Assets 1920x1080 minimum
+         12 PNGs, sizes [(1920, 1080)]
+  [PASS] Mobile legibility inspected visually
+         phone-size contact sheet rendered and inspected by eye at 393 px per frame
+  [PASS] Editable source deck supplied
+         PowerPoint deck at 1920 by 1080
+  [PASS] True full-screen rules explicit
+         full-screen rule and the Watch Next exception both stated
+  [PASS] No burned-in caption instruction present
+         stated in the prompt
+  [PASS] SRT requirement present
+         SRT is required from the final timeline, not the script
+  [PASS] Camera movement budget correct
+         one combined budget of about 3 to 5 beats
+  [PASS] Sound budget correct
+         about 4 to 7 for the whole video, candidates not cumulative
+  [PASS] Audio and visual transition hooks present
+         the rule and its limit are both stated
+  [PASS] One visual Subscribe cue
+         visual only, and none is spoken
+  [PASS] Watch Next final, no return to camera
+         stated in the prompt and on the Watch Next scene
+  [PASS] Six Shorts
+         6 scripts, 4 Priority A and 2 Priority B
+  [PASS] Publishing copy aligned to the master
+         title and thumbnail taken from the master verbatim
+  [PASS] No invented URLs
+         only the four existing resource routes appear
+  [PASS] No invented chapters
+         no chapter list anywhere. Runtime estimates are stated as estimates; chapters come from the final export
+  [PASS] No invented music attribution
+         no music credit or licence code recorded
+
+------------------------------------------------------------------------------
+
+FINAL-EXPORT CHECKS, STILL PENDING
+
+  These are NOT complete and are not claimed. A written prompt does
+  not prove an effect exists in the finished video.
+
+  [ PENDING ] Actual recorded delivery
+  [ PENDING ] Actual runtime
+  [ PENDING ] Actual executed jump cuts
+  [ PENDING ] Executed zoom-ins and pull-backs
+  [ PENDING ] Executed motion graphics
+  [ PENDING ] B-roll placement
+  [ PENDING ] Actual audio clarity
+  [ PENDING ] Final loudness
+  [ PENDING ] Music and effects balance
+  [ PENDING ] Picture quality
+  [ PENDING ] Caption absence on the exported video
+  [ PENDING ] SRT synchronization
+  [ PENDING ] Final chapters
+  [ PENDING ] Final Watch Next hold
+  [ PENDING ] Clean ending
+  [ PENDING ] Thumbnail artwork approval
+  [ PENDING ] Public link accessibility
+
+------------------------------------------------------------------------------
+
+  Nothing in this list can be checked until the video has been
+  recorded, edited and exported.

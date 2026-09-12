@@ -1,0 +1,89 @@
+==============================================================================
+VIDEO 21  |  CHANGE LOG
+==============================================================================
+
+What You Must Relearn When You Change Industries
+
+Generated: Saturday, September 12, 2026 | 5:28 AM CT (America/Chicago, UTC-05:00)
+
+------------------------------------------------------------------------------
+
+SOURCE HIERARCHY CHANGE
+
+  The locked final Recording Master is now the definitive spoken
+  source of truth for this video:
+
+    Video_21_FINAL_Regular_Length_Recording_Master.docx
+    SHA-256 12edc8634d7b8be0d374ffbf0d6218cf698ebf89a67d4f0c2b382ae8ff8d8a09
+
+  It OVERRIDES every earlier script, package, brief and roadmap
+  for this video. The corrected September 11 recording master wins
+  in every conflict. The script sets were not merged, no earlier
+  wording was carried back into the master, and the master was not
+  rewritten, tightened, expanded or shortened.
+
+------------------------------------------------------------------------------
+
+RUNTIME
+
+  Mode: REGULAR LONG-FORM
+
+  This is regular long-form. It is NOT part of the V4 and V5
+  5-minute experiment, and it was not shortened to meet a
+  5-minute target.
+  Its fuller original regular long-form depth is preserved,
+  approximately 9 to 12 minutes, which was the approved
+  target.
+
+  1298 spoken words. 8:57 to 9:59 at 130 to 145 words per minute.
+  Target stated by the master: Regular long-form. Preserve the original 9–12 minute target where that was the approved draft target.
+  The estimate is speech only. It excludes pauses and visual
+  holds, so the recorded runtime will be longer. It is not a
+  measured runtime.
+
+------------------------------------------------------------------------------
+
+WHAT WAS AUDITED AND REUSED
+
+  Every rendered asset in the earlier packages was checked against
+  this master and classified. A card is REUSE only when the newly
+  rendered file is byte-identical to the earlier one. Not when the
+  visual topic sounds similar.
+
+    REUSE                      2
+    COPY UPDATE                6
+    REBUILD                    1
+    NEW                        1
+
+  2 of 10 newly rendered assets are byte-identical to a
+  prior rendered asset:
+
+    v21_01_the_room_is_different       matches SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_21_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v21_01_the_room_is_different.png
+    v21_10_watch_next                  matches SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_21_FINAL_PRODUCTION_PACKAGE/03_Visuals/Watch_Next_Card.png
+
+  Every other asset in this package changed. Where a card was
+  first written down as reuse and the rendered bytes did not
+  bear that out, the label was corrected and the card's own
+  note records both the measurement and what was originally
+  written.
+
+
+------------------------------------------------------------------------------
+
+WHAT WAS NOT CHANGED
+
+  The master was copied byte for byte and never written to.
+  No spoken text was tightened, expanded, restructured or
+  reworded. The hook, the examples, the qualifications, the CTA,
+  the resource, the Watch Next and the final line are the
+  master's.
+  No statistic, example, employer, person or outcome was added.
+  No spoken Subscribe request was added.
+
+------------------------------------------------------------------------------
+
+WHAT IS NOT SUPPLIED BY INSTRUCTION
+
+  Final chapters, an SRT, music attribution, thumbnail artwork and
+  any public URL. These come from the finished export and the
+  separate artwork approval.

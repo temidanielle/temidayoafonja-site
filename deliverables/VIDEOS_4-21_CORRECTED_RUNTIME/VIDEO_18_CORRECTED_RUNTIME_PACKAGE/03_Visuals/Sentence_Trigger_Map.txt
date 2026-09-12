@@ -1,0 +1,72 @@
+==============================================================================
+VIDEO 18  |  SENTENCE TRIGGER MAP
+==============================================================================
+
+Should You Stay an Individual Contributor or Become a Manager?
+
+Every graphic with the exact spoken sentence that cues it.
+Each trigger was verified to exist inside a single thought block of
+the locked master, so no cue is built from words that span two
+takes.
+
+------------------------------------------------------------------------------
+
+ 1. v18_01_congratulated
+    TRIGGER: And before they explain what the job actually is, they congratulate you.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 2. v18_02_two_different_jobs
+    TRIGGER: They are different jobs, with different days, different skills, and different hard parts.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 3. v18_03_five_variables
+    TRIGGER: Five things are bundled together in most people's heads, and they do not reliably move together.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 4. v18_04_responsibility_without_authority
+    TRIGGER: Often they did not, and the most common bad version of this is more responsibility and no more authority, which is a genuinely difficult place to spend two years.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 5. v18_05_what_the_job_consumes
+    TRIGGER: Not what does it sound like. What fills the day.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 6. v18_06_ask_for_names
+    TRIGGER: Ask for names.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 7. v18_07_the_other_job_demands
+    TRIGGER: In most places it means influence without authority, which is harder than it sounds.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 8. v18_08_four_questions
+    TRIGGER: Ask the four questions. What does the job consume, does the other path exist here, what authority comes with it, and can I come back.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 9. v18_09_cta
+    TRIGGER: If you want a structured version of that decision record, the Career Decision Evidence Check is linked below.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+10. v18_10_watch_next
+    TRIGGER: In my experience it is usually the second one, and it is usually the one that changes the decision.
+    MODE:    FULL SCREEN
+    AFTER:   NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+BEATS THAT ARE DELIBERATELY NOT GRAPHICS
+
+  The real personal account in the opening, where the master has
+  one, stays camera-led.
+  Any moment where the master's honesty depends on the viewer
+  watching Temidayo say it.
+  Anything a graphic would only decorate.

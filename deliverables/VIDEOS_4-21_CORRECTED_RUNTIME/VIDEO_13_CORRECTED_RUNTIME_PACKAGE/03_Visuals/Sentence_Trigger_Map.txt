@@ -1,0 +1,72 @@
+==============================================================================
+VIDEO 13  |  SENTENCE TRIGGER MAP
+==============================================================================
+
+A 30-Day Plan to Test Your Next Career Move
+
+Every graphic with the exact spoken sentence that cues it.
+Each trigger was verified to exist inside a single thought block of
+the locked master, so no cue is built from words that span two
+takes.
+
+------------------------------------------------------------------------------
+
+ 1. v13_01_career_activity
+    TRIGGER: It can make you feel productive without answering the decision.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 2. v13_02_define_investigate_try_decide
+    TRIGGER: Define.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 3. v13_03_not_this_option_is_allowed
+    TRIGGER: And the test only works if “not this option” is allowed to be a good result.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 4. v13_04_destination_specific_enough
+    TRIGGER: “Something strategic” is too vague.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 5. v13_05_ask_about_the_work
+    TRIGGER: Do not ask for blanket reassurance about your potential.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 6. v13_06_work_sample_boundary
+    TRIGGER: Do not recreate a confidential employer process.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 7. v13_07_three_decisions
+    TRIGGER: Then choose one of three decisions:
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 8. v13_08_effort_is_not_evidence
+    TRIGGER: Do not confuse effort with evidence.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 9. v13_09_cta
+    TRIGGER: Choose one destination and write the hypothesis before you add another course or application to the list.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+10. v13_10_watch_next
+    TRIGGER: For a closer look at separating useful experience from unfamiliar context and actual requirements, watch “How to Change Industries Without Starting Over” next.
+    MODE:    FULL SCREEN
+    AFTER:   NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+BEATS THAT ARE DELIBERATELY NOT GRAPHICS
+
+  The real personal account in the opening, where the master has
+  one, stays camera-led.
+  Any moment where the master's honesty depends on the viewer
+  watching Temidayo say it.
+  Anything a graphic would only decorate.

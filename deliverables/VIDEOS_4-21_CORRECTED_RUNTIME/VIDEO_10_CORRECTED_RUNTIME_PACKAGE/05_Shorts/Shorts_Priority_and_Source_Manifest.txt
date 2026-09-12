@@ -1,0 +1,52 @@
+==============================================================================
+VIDEO 10  |  SHORTS PRIORITY AND SOURCE MANIFEST
+==============================================================================
+
+Before a Layoff, Know What You Can Still Prove
+
+Six Shorts. Four Priority A, two Priority B.
+Timings are arithmetic at 165 words per minute. Not timed reads.
+
+------------------------------------------------------------------------------
+
+PRIORITY A  v10_a1_before_access_ends
+    TITLE:  The proof disappears before the experience does
+    WORDS:  94   ABOUT 34 SECONDS
+    FIRST:  Imagine the job ends tomorrow. Your access is gone.
+    FINAL:  Start one entry while you still have access.
+    SOURCE: V10 hook.
+
+PRIORITY A  v10_a2_preparation_not_extraction
+    TITLE:  Preparation is not extraction
+    WORDS:  79   ABOUT 29 SECONDS
+    FIRST:  One boundary before anything else.
+    FINAL:  Keep the account, not the file.
+    SOURCE: V10 the boundary.
+
+PRIORITY A  v10_a3_calendar_vs_contribution
+    TITLE:  A calendar entry is not a contribution
+    WORDS:  97   ABOUT 35 SECONDS
+    FIRST:  Suppose your note says, attended weekly implementation meetings.
+    FINAL:  Rewrite one calendar entry as a contribution.
+    SOURCE: V10 capture the contribution.
+
+PRIORITY A  v10_a4_qualify_the_claim
+    TITLE:  Confirmed, qualified, not yet verified
+    WORDS:  77   ABOUT 28 SECONDS
+    FIRST:  Put one of three labels beside every result you record.
+    FINAL:  Label one result you have been rounding up.
+    SOURCE: V10 qualify the claim.
+
+PRIORITY B  v10_b1_name_it_by_the_problem
+    TITLE:  Name it by the problem, not the project
+    WORDS:  76   ABOUT 28 SECONDS
+    FIRST:  A good record is useless if you cannot find it when the question changes.
+    FINAL:  Rename one entry by its problem.
+    SOURCE: V10 make it retrievable.
+
+PRIORITY B  v10_b2_two_reasons
+    TITLE:  Two reasons the evidence is thin
+    WORDS:  107   ABOUT 39 SECONDS
+    FIRST:  There are two very different reasons an example may be missing.
+    FINAL:  Work out which of the two you are actually looking at.
+    SOURCE: V10 when the evidence is thin.

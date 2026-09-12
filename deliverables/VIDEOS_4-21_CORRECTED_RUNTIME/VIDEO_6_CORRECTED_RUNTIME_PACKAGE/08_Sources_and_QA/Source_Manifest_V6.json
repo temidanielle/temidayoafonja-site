@@ -1,0 +1,182 @@
+{
+  "video": 6,
+  "title": "I've Worked Across 8 Industries and Sectors. Here's How I Know If a New Role Is Actually Growth.",
+  "generated": "Saturday, September 12, 2026 | 5:28 AM CT (America/Chicago, UTC-05:00)",
+  "spoken_source_of_truth": {
+    "file": "Video_6_RESTORED_Regular_Length_Recording_Master.docx",
+    "sha256": "f39ff30ea07906e3642599479442cd16fe35ba7096090e390521156f684dcd18",
+    "note": "Copied unchanged into 01_Recording_Master. Never written to. This file overrides every earlier script."
+  },
+  "secondary_reference": [
+    {
+      "body": "SEP09_V4_V7",
+      "description": "Videos 4 to 7 handoff package, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP09_V8_V13",
+      "description": "Videos 8 to 13 production packages, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP10_V14_V21",
+      "description": "Videos 14 to 21 final production packages, September 10, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    }
+  ],
+  "runtime": {
+    "mode": "REGULAR LONG-FORM",
+    "is_five_minute_test": false,
+    "restored_regular_depth": false,
+    "target_stated_by_master": "Regular long-form. Restored to the approved September 9 depth: approximately 8:17 to 9:14 speech-only.",
+    "note": "Videos 4 and 5 are the only 5-minute retention test. Videos 6 to 21 are regular long-form and were not shortened to meet a 5-minute target."
+  },
+  "packaging": {
+    "thumbnail": "NEW TITLE. SAME WORK?",
+    "framework": "Work | Judgment | Evidence + the 12-month question",
+    "primary_cta": "Work. Judgment. Evidence.",
+    "primary_cta_spoken_at": "If you are actively deciding whether to stay, move internally, or leave, the free Career Decision Evidence Check gives you a structured way to read the evidence behind that choice. It is linked below.",
+    "resource": "Career Decision Evidence Check",
+    "resource_spoken": true,
+    "watch_next": "Video 7: It Took Me Years to Stop Mistaking More Work for Career Growth",
+    "watch_next_source": "the master's Watch Next row"
+  },
+  "script": {
+    "sections": 10,
+    "thought_blocks": 46,
+    "spoken_words": 1202,
+    "speech_only_estimate": "8:17 to 9:15 at 130 to 145 words per minute",
+    "estimate_note": "Arithmetic on the script. Excludes pauses and visual holds. Not a timed read and not a runtime."
+  },
+  "assets": [
+    {
+      "file": "v6_01_movement_is_not_growth.png",
+      "status": "NEW",
+      "why": "The eight-industries warrant is new to the corrected master. V6_MG01_New_Title_Same_Work.png opened differently.",
+      "mode": "FULL SCREEN",
+      "trigger": "I have worked across eight industries and sectors, and one thing that taught me is that movement can look like career growth long before the work actually changes."
+    },
+    {
+      "file": "v6_02_work_judgment_evidence.png",
+      "status": "NEW",
+      "why": "Reclassified from REUSE to NEW. Measured: nothing in the prior package resembles it; the closest card shares 22% of its text. The editorial note written when this card was built, kept as written: V6_MG02_Three_Questions.png carries the same Work / Judgment / Evidence framework and the corrected master preserves it. The copy is updated to the corrected question wording, so the render is regenerated rather than carried across as a file.",
+      "mode": "FULL SCREEN",
+      "trigger": "So when I judge a new role now, I want three things answered: will the Work change, will my Judgment expand, and will the Evidence travel?"
+    },
+    {
+      "file": "v6_03_harder_later.png",
+      "status": "NEW",
+      "why": "The broader role-growth argument is new to the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "Earlier in a career, almost any new responsibility can teach you something."
+    },
+    {
+      "file": "v6_04_ordinary_monday.png",
+      "status": "REBUILD",
+      "why": "Reclassified from REUSE to REBUILD. Measured: only 44% of the text is shared with the closest prior card, which read: QUESTION ONE WHAT WILL BE DIFFERENT ON AN ORDINARY MONDAY? Problems · Systems · Stakeholders · Context. The editorial note written when this card was built, kept as written: V6_MG03_Ordinary_Monday.png carries the same instruction and the corrected master keeps it verbatim. Regenerated because the supporting questions changed.",
+      "mode": "FULL SCREEN",
+      "trigger": "Start with an ordinary Monday."
+    },
+    {
+      "file": "v6_05_responsibility_is_not_judgment.png",
+      "status": "COPY UPDATE",
+      "why": "V6_MG04_Tasks_Vs_Judgment.png held the adjacent tasks-versus-judgment idea. The corrected master sharpens it into responsibility-versus-judgment, so the copy is replaced.",
+      "mode": "FULL SCREEN",
+      "trigger": "Responsibility is not the same as judgment."
+    },
+    {
+      "file": "v6_06_three_kinds_of_return.png",
+      "status": "COPY UPDATE",
+      "why": "V6_MG05_Portable_Evidence.png covered portable evidence. The corrected master names three specific returns, so the copy is replaced.",
+      "mode": "FULL SCREEN",
+      "trigger": "I look for three kinds of return: a result I can support, judgment I can explain, and range I did not have before."
+    },
+    {
+      "file": "v6_07_read_the_three_answers.png",
+      "status": "NEW",
+      "why": "The section it serves was cut out of the compressed master and is restored from the approved September 9 master, so no prior card exists for it.",
+      "mode": "FULL SCREEN",
+      "trigger": "If two are yes, identify the missing dimension."
+    },
+    {
+      "file": "v6_07_twelve_month_question.png",
+      "status": "NEW",
+      "why": "The 12-month question is named in the corrected framework and has no prior asset.",
+      "mode": "FULL SCREEN",
+      "trigger": "Then ask one question: twelve months from now, what will I be able to do, decide, or prove that I cannot do today?"
+    },
+    {
+      "file": "v6_08_what_this_cannot_solve.png",
+      "status": "NEW",
+      "why": "The section it serves was cut out of the compressed master and is restored from the approved September 9 master, so no prior card exists for it.",
+      "mode": "FULL SCREEN",
+      "trigger": "These three questions read the work. They do not replace the rest of the decision."
+    },
+    {
+      "file": "v6_08_yes_no_negotiate.png",
+      "status": "COPY UPDATE",
+      "why": "V6_MG07_Questions_To_Ask.png covered the asking step. The corrected master ends on a written yes, no or negotiate decision.",
+      "mode": "FULL SCREEN",
+      "trigger": "Before your next move, write one sentence under Work, Judgment, and Evidence."
+    },
+    {
+      "file": "v6_09_cta.png",
+      "status": "REBUILD",
+      "why": "Rebuilt for the restored master. The compressed September 11 master had no spoken CTA at all, so this card correctly carried the action alone. The restored master speaks the Career Decision Evidence Check once after the teaching, exactly as the approved September 9 master did, so the card carries the route again.",
+      "mode": "FULL SCREEN",
+      "trigger": "If you are actively deciding whether to stay, move internally, or leave, the free Career Decision Evidence Check gives you a structured way to read the evidence behind that choice. It is linked below."
+    },
+    {
+      "file": "v6_10_watch_next.png",
+      "status": "REBUILD",
+      "why": "The destination is still Video 7, but its title changed entirely in the correction, so every word this card draws is different from the September 9 card, which read 'Are You Growing, or Just Being Given More Work?'. The spoken cue also moves to the restored Watch Next line; the compressed master had no spoken handoff, so the card had been cued off the final teaching sentence instead.",
+      "mode": "FULL SCREEN",
+      "trigger": "That is what we are testing next in 'It Took Me Years to Stop Mistaking More Work for Career Growth.'"
+    }
+  ],
+  "shorts": [
+    {
+      "slug": "v6_a1_movement_is_not_growth",
+      "priority": "A",
+      "title": "Movement can look like growth",
+      "source": "V6 hook."
+    },
+    {
+      "slug": "v6_a2_ordinary_monday",
+      "priority": "A",
+      "title": "Start with an ordinary Monday",
+      "source": "V6 work."
+    },
+    {
+      "slug": "v6_a3_responsibility_is_not_judgment",
+      "priority": "A",
+      "title": "Responsibility is not judgment",
+      "source": "V6 judgment."
+    },
+    {
+      "slug": "v6_a4_twelve_month_question",
+      "priority": "A",
+      "title": "The 12-month question",
+      "source": "V6 the 12-month question."
+    },
+    {
+      "slug": "v6_b1_harder_later",
+      "priority": "B",
+      "title": "This gets harder later in a career",
+      "source": "V6 why this gets harder."
+    },
+    {
+      "slug": "v6_b2_negotiate_before_you_accept",
+      "priority": "B",
+      "title": "You can redesign the role before you accept",
+      "source": "V6 close."
+    }
+  ],
+  "not_verified": [
+    "Nothing in this package has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

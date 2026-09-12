@@ -1,0 +1,52 @@
+==============================================================================
+VIDEO 12  |  SHORTS PRIORITY AND SOURCE MANIFEST
+==============================================================================
+
+What to Do When You Can’t Quit Your Job Yet
+
+Six Shorts. Four Priority A, two Priority B.
+Timings are arithmetic at 165 words per minute. Not timed reads.
+
+------------------------------------------------------------------------------
+
+PRIORITY A  v12_a1_constraint_not_conclusion
+    TITLE:  I cannot leave yet is not nothing can change
+    WORDS:  75   ABOUT 27 SECONDS
+    FIRST:  Just leave is easy advice when nobody has asked what your paycheck has to cover.
+    FINAL:  Name your constraint precisely enough to plan around it.
+    SOURCE: V12 hook.
+
+PRIORITY A  v12_a2_name_the_constraint
+    TITLE:  Name the constraint precisely
+    WORDS:  93   ABOUT 34 SECONDS
+    FIRST:  I cannot leave is a conclusion. What is underneath it?
+    FINAL:  Finish that sentence privately today.
+    SOURCE: V12 protect what must hold.
+
+PRIORITY A  v12_a3_make_the_tradeoff_visible
+    TITLE:  Make the tradeoff visible
+    WORDS:  86   ABOUT 31 SECONDS
+    FIRST:  Not everything that needs changing requires a resignation. But not everything can be negotiated either.
+    FINAL:  Describe one recurring cost concretely.
+    SOURCE: V12 bound what you can.
+
+PRIORITY A  v12_a4_question_before_activity
+    TITLE:  Choose a question before you choose an activity
+    WORDS:  81   ABOUT 29 SECONDS
+    FIRST:  Preparation does not have to mean another course or another project.
+    FINAL:  Write the question your next small step would answer.
+    SOURCE: V12 prepare one possible next step.
+
+PRIORITY B  v12_b1_exchange_not_add
+    TITLE:  Exchange, not automatically add
+    WORDS:  82   ABOUT 30 SECONDS
+    FIRST:  If there is room inside the current job, development might come from exchanging a repetitive responsibility for one that involves a new decision.
+    FINAL:  Ask what comes off before anything goes on.
+    SOURCE: V12 prepare one possible next step.
+
+PRIORITY B  v12_b2_four_lines
+    TITLE:  Four lines, and permission to do less
+    WORDS:  100   ABOUT 36 SECONDS
+    FIRST:  Put four lines on a page.
+    FINAL:  Write the lines your capacity actually allows.
+    SOURCE: V12 the plan.

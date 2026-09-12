@@ -1,0 +1,102 @@
+==============================================================================
+VIDEOS 4 TO 21  |  SOURCE HIERARCHY MANIFEST
+==============================================================================
+
+Generated: Saturday, September 12, 2026 | 5:28 AM CT (America/Chicago, UTC-05:00)
+
+------------------------------------------------------------------------------
+
+THE RULE
+
+  The corrected September 11, 2026 recording master wins in every
+  conflict. Where any earlier package, script, brief or roadmap
+  disagrees with it, the master is right and the earlier material
+  is wrong.
+
+  The script sets were not merged. No earlier wording was carried
+  back into a master, and no master was rewritten, tightened,
+  expanded or shortened.
+
+------------------------------------------------------------------------------
+
+PRIMARY, AND DEFINITIVE
+
+  YouTube_V4-V21_CORRECTED_RUNTIME_Recording_Masters, 18 corrected September 11, 2026 recording masters. For Videos 6, 7 and 8 the spoken source of truth is the restored derivative, because the supplied file for each was compressed to roughly half the approved teaching.
+
+    V4   Video_4_FINAL_5_Minute_Test_Recording_Master.docx
+         SHA-256 e10d1c820d85de5dc07570621540d3296745ddbd2e7f59c2bf0cf3747057725f
+    V5   Video_5_FINAL_5_Minute_Test_Recording_Master.docx
+         SHA-256 afbf7211669c436d25c34713537234e7d9b35264d2cc8dc45c425e4d1d37b092
+    V6   Video_6_RESTORED_Regular_Length_Recording_Master.docx
+         SHA-256 f39ff30ea07906e3642599479442cd16fe35ba7096090e390521156f684dcd18
+         RESTORED DERIVATIVE. Supersedes the supplied file below,
+         which is retained unchanged and is not used for recording:
+         Video_6_FINAL_Revised_Recording_Master.docx
+         SHA-256 439251708277714118617b8be910e459cfd3eee5f17746868200eff1ba63133d
+    V7   Video_7_RESTORED_Regular_Length_Recording_Master.docx
+         SHA-256 1ebe2b9c0132c4f87d1b3c38b82ad33729c6200414aedd2ff93c0066fcf43c14
+         RESTORED DERIVATIVE. Supersedes the supplied file below,
+         which is retained unchanged and is not used for recording:
+         Video_7_FINAL_Revised_Recording_Master.docx
+         SHA-256 69024f5223662c6edb73763a2cc435ebcc5394548905c31aa39833925125b158
+    V8   Video_8_RESTORED_Regular_Length_Recording_Master.docx
+         SHA-256 65836d600d7ca3f65ff95d6d5ba16cfe7c4bea7c9221c03ccd2382ca84ebb822
+         RESTORED DERIVATIVE. Supersedes the supplied file below,
+         which is retained unchanged and is not used for recording:
+         Video_8_FINAL_Revised_Recording_Master.docx
+         SHA-256 a7a416e673efbfb90b8660ea8cca7747873e5921ad0c18454e767dba04952f5c
+    V9   Video_9_FINAL_Revised_Recording_Master.docx
+         SHA-256 690c0626c3a9e09efcd00841057fd35199a6d2c9e3e9e822a60aae321e92ab19
+    V10  Video_10_FINAL_Revised_Recording_Master.docx
+         SHA-256 de604a08916cbd0ee1b416c56c79aaed648333d86a62333a4c91189b0cedc69c
+    V11  Video_11_FINAL_Revised_Recording_Master.docx
+         SHA-256 adcf761a759437fc0679b7c255e6d6303f1b556dc3a9e54e89ccd55219b49e2b
+    V12  Video_12_FINAL_Revised_Recording_Master.docx
+         SHA-256 f9e5316370edbc6e0029382cdc4fd086fb2e0241ee9097d5ba8f2e4e00f26807
+    V13  Video_13_FINAL_Revised_Recording_Master.docx
+         SHA-256 f80d7d2afcb6f30081e7d860ad790a527ac5845c87e633312dd410e3df12dbc8
+    V14  Video_14_Which_Parts_of_Your_Experience_Actually_Transfer_FINAL_Recording_Master.docx
+         SHA-256 4a36cc83b8bcc8279011974952b098aafa559e0c07b2dce1aab7c92b5c0e28ca
+    V15  Video_15_FINAL_Regular_Length_Recording_Master.docx
+         SHA-256 f219fd15ac4c7d7abaa9f271ff15b6e105b2c71b1cdd137873187018aa9601c3
+    V16  Video_16_FINAL_Regular_Length_Recording_Master.docx
+         SHA-256 3ec0c0e95c21e83ef87b7c7ae35d7b2313cc0d00f0ef8ac83312b7151c32ba30
+    V17  Video_17_FINAL_Regular_Length_Recording_Master.docx
+         SHA-256 797e0cd2aac89e8eb457871f81aadebb07a05b731b8b2b2ce50ad407a9d6d888
+    V18  Video_18_FINAL_Regular_Length_Recording_Master.docx
+         SHA-256 f0195cce6337cd9c55864c6577d46e361082d4d526cb895882aa91c42c73b91e
+    V19  Video_19_FINAL_Regular_Length_Recording_Master.docx
+         SHA-256 f6734637399c7f744b4ff88b4fe37e886401cb34446c6fb60bfea608bcd08785
+    V20  Video_20_FINAL_Regular_Length_Recording_Master.docx
+         SHA-256 6cbb78129aab76109f9515b808a18ed2054c9531ab892f2293537377de83c379
+    V21  Video_21_FINAL_Regular_Length_Recording_Master.docx
+         SHA-256 12edc8634d7b8be0d374ffbf0d6218cf698ebf89a67d4f0c2b382ae8ff8d8a09
+
+------------------------------------------------------------------------------
+
+SECONDARY REFERENCE ONLY
+
+  Videos 4 to 7 handoff package, September 9, 2026
+      Secondary reference. Superseded wherever it differs.
+  Videos 8 to 13 production packages, September 9, 2026
+      Secondary reference. Superseded wherever it differs.
+  Videos 14 to 21 final production packages, September 10, 2026
+      Secondary reference. Superseded wherever it differs.
+
+------------------------------------------------------------------------------
+
+RESEARCH SOURCE OF TRUTH, VIDEO 14 ONLY
+
+  what-really-transfers-research.md
+  SHA-256 a7eac1a71e2245e34e61267be9e19d8c5e3750a66236da40e78f9715ad3e6421
+  28 retained postings. 10 healthcare, 10 financial services,
+  8 technology, collected September 10, 2026. 30 was the target
+  and was not reached, so 30 is never used as a count.
+
+------------------------------------------------------------------------------
+
+WHAT EACH PACKAGE COPIES UNCHANGED
+
+  01_Recording_Master holds the master itself, copied byte for
+  byte and never written to. Every other document in the package
+  is derived from it and states the master's SHA-256.

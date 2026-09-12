@@ -1,0 +1,116 @@
+==============================================================================
+VIDEO 14  |  CHANGE LOG
+==============================================================================
+
+Which Parts of Your Experience Actually Transfer to Another Industry?
+
+Generated: Saturday, September 12, 2026 | 5:28 AM CT (America/Chicago, UTC-05:00)
+
+------------------------------------------------------------------------------
+
+SOURCE HIERARCHY CHANGE
+
+  The locked final Recording Master is now the definitive spoken
+  source of truth for this video:
+
+    Video_14_Which_Parts_of_Your_Experience_Actually_Transfer_FINAL_Recording_Master.docx
+    SHA-256 4a36cc83b8bcc8279011974952b098aafa559e0c07b2dce1aab7c92b5c0e28ca
+
+  It OVERRIDES every earlier script, package, brief and roadmap
+  for this video. The corrected September 11 recording master wins
+  in every conflict. The script sets were not merged, no earlier
+  wording was carried back into the master, and the master was not
+  rewritten, tightened, expanded or shortened.
+
+------------------------------------------------------------------------------
+
+RUNTIME
+
+  Mode: REGULAR LONG-FORM
+
+  This is regular long-form. It is NOT part of the V4 and V5
+  5-minute experiment, and it was not shortened to meet a
+  5-minute target.
+
+  1259 spoken words. 8:41 to 9:41 at 130 to 145 words per minute.
+  Target stated by the master: none stated
+  The estimate is speech only. It excludes pauses and visual
+  holds, so the recorded runtime will be longer. It is not a
+  measured runtime.
+
+  FLAGGED, NOT REPAIRED:
+
+    [TYPOGRAPHY] apostrophe glyph differs from the destination master's own title
+          V14's Watch Next row writes it as 'The Career Gaps You Don’t See
+          Until the Work Gets Harder'. V15's Title row writes it as "The
+          Career Gaps You Don't See Until the Work Gets Harder". Same words,
+          different apostrophe. RESOLVED on the production side: the Watch
+          Next card carries V15's canonical title exactly. Neither locked
+          master is edited and both keep their checksums.
+
+------------------------------------------------------------------------------
+
+WHAT WAS AUDITED AND REUSED
+
+  Every rendered asset in the earlier packages was checked against
+  this master and classified. A card is REUSE only when the newly
+  rendered file is byte-identical to the earlier one. Not when the
+  visual topic sounds similar.
+
+    REUSE                      9
+    COPY UPDATE                1
+
+  9 of 10 newly rendered assets are byte-identical to a
+  prior rendered asset:
+
+    v14_01_same_words_different_work   matches SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_14_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v14_01_same_words_different_work.png
+    v14_02_research_base               matches SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_14_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v14_02_research_base.png
+    v14_03_two_question_test           matches SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_14_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v14_03_two_question_test.png
+    v14_04_what_travels                matches SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_14_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v14_04_what_travels.png
+    v14_05_same_word_different_decision matches SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_14_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v14_05_same_word_different_decision.png
+    v14_06_four_bucket_audit           matches SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_14_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v14_06_four_bucket_audit.png
+    v14_07_employers_disagree          matches SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_14_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v14_07_employers_disagree.png
+    v14_08_research_boundary           matches SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_14_FINAL_PRODUCTION_PACKAGE/03_Visuals/Support_Reference_PNG/v14_08_research_boundary.png
+    v14_09_cta                         matches SEP10_V14_V21/VIDEOS_14-21_FINAL_PRODUCTION/VIDEO_14_FINAL_PRODUCTION_PACKAGE/03_Visuals/Resource_Card.png
+
+  Every other asset in this package changed. Where a card was
+  first written down as reuse and the rendered bytes did not
+  bear that out, the label was corrected and the card's own
+  note records both the measurement and what was originally
+  written.
+
+
+------------------------------------------------------------------------------
+
+WHAT WAS NOT CHANGED
+
+  The master was copied byte for byte and never written to.
+  No spoken text was tightened, expanded, restructured or
+  reworded. The hook, the examples, the qualifications, the CTA,
+  the resource, the Watch Next and the final line are the
+  master's.
+  No statistic, example, employer, person or outcome was added.
+  No spoken Subscribe request was added.
+
+------------------------------------------------------------------------------
+
+VIDEO 14 SPECIFICALLY
+
+  The research is complete. This video is no longer script
+  blocked.
+  The retained sample is 28 postings, not 30. 10 healthcare,
+  10 financial services, 8 technology, all collected
+  September 10, 2026. 30 was the target and was not reached.
+  The numerical past-tense title is NOT restored as active
+  packaging. The approved question title is used.
+  The mixed finding is preserved. The package does not say
+  that experience transfers, and it does not say that it does
+  not.
+
+------------------------------------------------------------------------------
+
+WHAT IS NOT SUPPLIED BY INSTRUCTION
+
+  Final chapters, an SRT, music attribution, thumbnail artwork and
+  any public URL. These come from the finished export and the
+  separate artwork approval.

@@ -1,0 +1,72 @@
+==============================================================================
+VIDEO 16  |  SENTENCE TRIGGER MAP
+==============================================================================
+
+What to Do When Your Work Is Valued but You Are Overlooked
+
+Every graphic with the exact spoken sentence that cues it.
+Each trigger was verified to exist inside a single thought block of
+the locked master, so no cue is built from words that span two
+takes.
+
+------------------------------------------------------------------------------
+
+ 1. v16_01_called_then_skipped
+    TRIGGER: When something is urgent, they call you.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 2. v16_02_four_separations
+    TRIGGER: Before you change how you behave, separate four things: is the work seen, is it attributed to you, are you trusted for delivery or considered for larger scope, and is the obstacle one you can actually remove?
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 3. v16_03_where_work_disappears
+    TRIGGER: Work disappears in predictable places.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 4. v16_04_delivery_vs_scope
+    TRIGGER: So delivery and scope are being judged separately.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 5. v16_05_the_hinge
+    TRIGGER: A manager who does not know is a completely different situation from a manager who knows and does not act.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 6. v16_06_what_this_does_not_fix
+    TRIGGER: This does not override bias.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 7. v16_07_three_pieces_four_lines
+    TRIGGER: Take three pieces of work from the last year.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 8. v16_08_waiting_or_testing
+    TRIGGER: Waiting is a legitimate choice when you can point at the specific thing you are waiting for.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 9. v16_09_cta
+    TRIGGER: If you want the longer version of how to build that record properly, Keep the Proof is where I have put it, and the link is below.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+10. v16_10_watch_next
+    TRIGGER: If it is difficult to write, that is worth knowing.
+    MODE:    FULL SCREEN
+    AFTER:   NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+BEATS THAT ARE DELIBERATELY NOT GRAPHICS
+
+  The real personal account in the opening, where the master has
+  one, stays camera-led.
+  Any moment where the master's honesty depends on the viewer
+  watching Temidayo say it.
+  Anything a graphic would only decorate.

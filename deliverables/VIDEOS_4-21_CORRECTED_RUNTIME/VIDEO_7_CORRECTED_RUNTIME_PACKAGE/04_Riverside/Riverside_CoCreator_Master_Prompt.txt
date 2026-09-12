@@ -1,0 +1,359 @@
+==============================================================================
+VIDEO 7  |  RIVERSIDE CO-CREATOR MASTER PROMPT
+==============================================================================
+
+It Took Me Years to Stop Mistaking More Work for Career Growth
+
+Paste this whole file into Riverside Co-Creator after uploading the
+new recording. It is self-contained.
+
+------------------------------------------------------------------------------
+
+1. WHAT THIS IS
+
+  I am giving you a new recording. Create the visual and audio editing
+  layer from this recording and its transcript. Do not look for existing
+  graphics to convert, and do not treat any supplied reference asset as a
+  mandatory slideshow.
+
+  The approved Recording Master controls intended meaning. The actual
+  recorded performance controls timing. If the recorded speech materially
+  differs from the approved master, FLAG IT and tell me where. Do not
+  manufacture missing speech, and do not write new lines to bridge a gap.
+
+------------------------------------------------------------------------------
+
+2. THE VIDEO
+
+  Title:      It Took Me Years to Stop Mistaking More Work for Career Growth
+  Thumbnail:  MORE WORK ≠ GROWTH
+  Framework:  CAR: Complexity | Authority | Return
+  CTA:        
+  Resource:   Capability Formation Field Kit (spoken once, after the teaching, then description and pinned comment)
+  Watch Next: Video 8: How to Show Your Impact at Work When You Built It From Scratch
+  Estimate:   8:29 to 9:27 from 1,229 spoken words. Planning arithmetic, not a runtime.
+
+  The exact final spoken line:
+
+    In the next video, I will show you how to make that work visible: 'How
+    to Show Your Impact at Work When You Built It From Scratch.'
+
+  Nothing appears after Watch Next.
+
+------------------------------------------------------------------------------
+
+3. EDIT SHAPE
+
+  - Horizontal 16:9. Minimum 1920 by 1080.
+  - Camera-led teaching edit. Thoughtful pacing, not hyperactive.
+  - Intentional jump cuts. Clean up false starts and restarts.
+  - Do not over-shorten a thoughtful explanation to raise pace.
+  - Preserve the approved structure. Do not manufacture an extra hook,
+  reorder the teaching, or move the opening.
+
+------------------------------------------------------------------------------
+
+4. FULL-SCREEN RULE
+
+  Frameworks, comparisons, multi-point concepts, substantive
+  demonstrations, the resource card and Watch Next are TRUE FULL SCREEN. No
+  moving Temidayo behind or around a major visual. Substantive B-roll fills
+  the entire frame. Short single-idea callouts may sit over camera. After a
+  full-screen teaching visual, return to camera only where the scene map
+  calls for it. THIS NEVER APPLIES TO WATCH NEXT: Watch Next is the final
+  visual and there is no return to camera afterward.
+
+------------------------------------------------------------------------------
+
+5. CAMERA MOVEMENT
+
+  About 3 to 5 deliberate camera-emphasis beats across the whole video.
+  This is one combined budget: gentle push-ins on tension, insight or a
+  reframe, with occasional pull-backs or a return to base framing to reset
+  the rhythm. It is not 3 to 5 push-ins plus 3 to 5 pull-backs. No
+  aggressive zooms, no pulsing, no constant reframing, no unnecessary
+  digital movement. Preserve headroom and source quality.
+
+------------------------------------------------------------------------------
+
+6. B-ROLL
+
+  About 2 to 4 meaningful full-screen B-roll moments where useful. This is
+  not a quota. No generic handshakes, fake boardrooms, smiling coworkers,
+  meaningless typing, AI-looking people, or invented employer documents
+  presented as real. Where an example is constructed, it carries its label.
+
+------------------------------------------------------------------------------
+
+7. CAPTIONS AND SRT
+
+  NO BURNED-IN OR OPEN CAPTIONS on the long-form video. Viewers use YouTube
+  CC. Deliver a clean export with no persistent subtitles, a complete final
+  transcript with names, frameworks, URLs and industry terms proofread, and
+  an SRT generated against the FINAL edited timeline with synchronization
+  checked after every jump cut and removal. Do not delete transcript words
+  because the camera is hidden behind a graphic. Shorts and Reels may use
+  designed captions.
+
+------------------------------------------------------------------------------
+
+8. SUBSCRIBE CUE
+
+  One brief visual Subscribe cue after meaningful value has already been
+  delivered. Visual only. There is no spoken Subscribe request in the
+  master and none is added. About 1 to 3 seconds including entrance and
+  exit. Do not interrupt a useful pause or cover teaching content.
+
+------------------------------------------------------------------------------
+
+9. AUDIO AND VISUAL TRANSITION HOOKS
+
+  Apply this only after the final recorded footage is uploaded.
+
+  Use restrained sound design to make important visual changes feel
+  intentional. When a key full-screen graphic, comparison, image, framework
+  step, or important text reveal appears, consider a subtle click, a soft
+  tick, a light tap, a restrained whoosh, or a clean transition sound.
+
+  Prefer subtle click or tick sounds when a new item appears, a comparison
+  changes from one side to the other, a framework advances a step, a card
+  or image replaces the previous one, or one important word or result is
+  revealed.
+
+  The sound reinforces the visual change. It is not the attraction. Do NOT
+  add a click to every bullet, every cut, every sentence or every screen
+  change.
+
+  About 4 to 7 restrained audio accents for the ENTIRE video, including the
+  one visual Subscribe cue. The per-frame sound candidates in the visual
+  map are OPTIONAL and are not cumulative. Choose only the moments with the
+  highest visual or intellectual payoff. Keep every effect clearly quieter
+  than the voice. Pair the sound with a small visual action so both land
+  together. If no sound improves the moment, leave it silent.
+
+  Pair sound with a small visual action wherever possible: text appearing,
+  a divider moving, a number changing, a card switching, a phrase
+  highlighting. Sound and movement land together. The treatment should feel
+  polished, modern and editorial, not gamified, cartoonish or hyperactive.
+  If no sound improves the moment, leave it silent.
+
+------------------------------------------------------------------------------
+
+10. AUDIO FINISHING
+
+  Recorded on a Shure microphone and the source may sit quieter than the
+  final publishing level. Even out the speaking volume gently, keep natural
+  dynamics, and improve dialogue consistency before the final loudness
+  pass. No aggressive compression. No over-processed noise reduction, and
+  no metallic or underwater artifacts. Preserve breaths and natural pauses
+  where they sound normal. Keep the voice clearly dominant over music and
+  effects and prevent clipping on louder words. Check by listening through
+  headphones for intelligibility, room echo, breath pops, clipping,
+  noise-reduction artifacts, abrupt gain changes and music masking the
+  voice. Do not record audio as verified until the actual exported file has
+  been listened to.
+
+------------------------------------------------------------------------------
+
+11. LOOK
+
+  - Natural skin tone. Do not push saturation or warmth.
+  - Subtle music, well under the voice, with a natural final fade where
+  useful.
+  - Voice dominant over music and effects at every point.
+  - No black tail. No dead footage after the ending.
+
+------------------------------------------------------------------------------
+
+12. SCENE BY SCENE
+
+  Reference assets are supplied in 03_Visuals as 1920 by 1080 PNGs
+  and as an editable deck. Use them as references or as fallback
+  assets. Build the motion version where you can do better.
+
+  SCENE 1  |  v7_01_valuable_to_them_not_to_you
+    TRIGGER: You can become more valuable to your organization without
+    becoming more valuable to your own future.
+    MODE: FULL SCREEN
+    PURPOSE: The hook, and the sentence the title is built from.
+    REVEAL: Headline. Hold. Then the personal line.
+    EMPHASIS: The headline.
+    HOLD: 3 seconds, then 3 with the support.
+    CAPTIONS: No burned-in captions. Suppress any designed caption for the
+    whole hold.
+    SOUND CANDIDATE: Candidate: one clean transition sound on entry.
+    AFTER: Return to camera on the next spoken line.
+
+  SCENE 2  |  v7_02_car
+    TRIGGER: I use three tests now: Complexity, Authority, Return. CAR.
+    MODE: FULL SCREEN
+    PURPOSE: The framework, delivered in the first minute.
+    REVEAL: One column at a time.
+    EMPHASIS: Equal.
+    HOLD: 2 seconds each, 4 on the complete set.
+    CAPTIONS: No burned-in captions. Suppress any designed caption for the
+    whole hold.
+    SOUND CANDIDATE: Candidate: one tick as the third column lands.
+    AFTER: Return to camera on the next spoken line.
+
+  SCENE 3  |  v7_03_dependable_people
+    TRIGGER: Reliability attracts work quickly. Authority, support,
+    recognition, and formal scope often arrive later, if they arrive at
+    all.
+    MODE: FULL SCREEN
+    PURPOSE: Explain the mechanism so the viewer does not read it as a
+    personal failing.
+    REVEAL: Left. Then right. Then the foot line.
+    EMPHASIS: The foot line.
+    HOLD: 2 seconds per side, 3 on the foot.
+    CAPTIONS: No burned-in captions. Suppress any designed caption for the
+    whole hold.
+    SOUND CANDIDATE: Candidate: one tick as the foot line lands.
+    AFTER: Return to camera on the next spoken line.
+
+  SCENE 4  |  v7_04_complexity
+    TRIGGER: Complexity changes when the variables change: a new customer,
+    a new regulation, a different operating model, conflicting priorities,
+    incomplete instructions, stakeholders whose incentives do not line up.
+    MODE: FULL SCREEN
+    PURPOSE: The first test, made checkable.
+    REVEAL: Left. Then right. Then the foot line.
+    EMPHASIS: The foot line.
+    HOLD: 3 seconds per side, 3 on the foot.
+    CAPTIONS: No burned-in captions. Suppress any designed caption for the
+    whole hold.
+    SOUND CANDIDATE: Not a candidate.
+    AFTER: Return to camera on the next spoken line.
+
+  SCENE 5  |  v7_05_authority
+    TRIGGER: Responsibility is what you are expected to carry.
+    Accountability is what you will answer for. Authority is what you can
+    influence or decide. Those three do not always expand together.
+    MODE: FULL SCREEN
+    PURPOSE: The three-way separation that makes the second test usable.
+    REVEAL: One column at a time, then the foot line.
+    EMPHASIS: The foot line.
+    HOLD: 2 seconds each, 3 on the foot.
+    CAPTIONS: No burned-in captions. Suppress any designed caption for the
+    whole hold.
+    SOUND CANDIDATE: Candidate: one tick as the foot line lands.
+    AFTER: Return to camera on the next spoken line.
+
+  SCENE 6  |  v7_06_return
+    TRIGGER: I look in three places: capability, evidence, and recognition.
+    MODE: FULL SCREEN
+    PURPOSE: The third test, and the line that lands hardest.
+    REVEAL: One column at a time, then the foot line, which holds longest.
+    EMPHASIS: The foot line.
+    HOLD: 2 seconds each, 4 on the foot.
+    CAPTIONS: No burned-in captions. Suppress any designed caption for the
+    whole hold.
+    SOUND CANDIDATE: Strong candidate: one soft tick as the foot line
+    lands.
+    AFTER: Return to camera on the next spoken line.
+
+  SCENE 7  |  v7_07_read_the_car_pattern
+    TRIGGER: If volume increased but Complexity, Authority, and Return did
+    not, the role has expanded mainly as workload.
+    MODE: FULL SCREEN
+    PURPOSE: The read. CAR is a pattern, not a score.
+    REVEAL: One column at a time, then the foot line.
+    EMPHASIS: The foot line.
+    HOLD: 3 seconds per column, 5 on the complete frame.
+    CAPTIONS: Suppressed.
+    SOUND CANDIDATE: Candidate: one tick as the foot line lands.
+    AFTER: Return to camera.
+
+  SCENE 8  |  v7_07_review_point
+    TRIGGER: Before the next ‘Can you take this too?’, ask: what becomes
+    more complex? What authority comes with it? When will we review what
+    this additional scope returns?
+    MODE: FULL SCREEN
+    PURPOSE: The application. The third question is the one people omit.
+    REVEAL: One question at a time. The third holds longest.
+    EMPHASIS: The third question.
+    HOLD: 2 seconds each, 4 on the foot.
+    CAPTIONS: No burned-in captions. Suppress any designed caption for the
+    whole hold.
+    SOUND CANDIDATE: Candidate: one tick as the third question lands.
+    AFTER: Return to camera on the next spoken line.
+
+  SCENE 9  |  v7_08_scope_conversation
+    TRIGGER: Then take four questions into the conversation with your
+    manager: Which of these responsibilities should remain with me?
+    MODE: FULL SCREEN
+    PURPOSE: The viewer tool. This is the conversation the video is for.
+    REVEAL: One question at a time, then the foot line.
+    EMPHASIS: The fourth question.
+    HOLD: 2 seconds per question, 5 on the complete frame.
+    CAPTIONS: Suppressed.
+    SOUND CANDIDATE: Candidate: one soft tick per question.
+    AFTER: Return to camera.
+
+  SCENE 10  |  v7_08_more_work_is_not_proof
+    TRIGGER: More work can be part of growth. It is not proof of it.
+    MODE: FULL SCREEN
+    PURPOSE: The final spoken line at full size, and the thumbnail's
+    argument.
+    REVEAL: Single state.
+    EMPHASIS: The whole frame.
+    HOLD: At least 3 seconds.
+    CAPTIONS: No burned-in captions. Suppress any designed caption for the
+    whole hold.
+    SOUND CANDIDATE: Candidate: one clean transition sound on entry.
+    AFTER: Move to the resource card, then Watch Next.
+
+  SCENE 11  |  v7_09_cta
+    TRIGGER: If you want a structured way to examine what your current work
+    is actually building in you, the Capability Formation Field Kit helps
+    you read the evidence in your role, see where your options may be
+    expanding or narrowing, and identify where the role may need a boundary
+    or redesign. It is linked below.
+    MODE: FULL SCREEN
+    PURPOSE: The single action named by the corrected master. The resource
+    route lives in the description and the pinned comment, not on this
+    card.
+    REVEAL: Label, headline, the three words, then the closing line.
+    EMPHASIS: The three words.
+    HOLD: At least 4 seconds.
+    CAPTIONS: No burned-in captions. Suppress any designed caption for the
+    whole hold.
+    SOUND CANDIDATE: Candidate: one clean transition sound on entry.
+    AFTER: Return to camera on the next spoken line.
+
+  SCENE 12  |  v7_10_watch_next
+    TRIGGER: In the next video, I will show you how to make that work
+    visible: 'How to Show Your Impact at Work When You Built It From
+    Scratch.'
+    MODE: FULL SCREEN
+    PURPOSE: The final visual.
+    REVEAL: Label, rule, title, number.
+    EMPHASIS: The title.
+    HOLD: Hold to the end.
+    CAPTIONS: No burned-in captions. Suppress any designed caption for the
+    whole hold.
+    SOUND CANDIDATE: Candidate: one restrained transition sound, then music
+    fade.
+    AFTER: NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+13. WHAT TO FLAG RATHER THAN FIX
+
+  - Recorded speech that materially differs from the approved master.
+  - A scene where the trigger sentence was not spoken.
+  - Any effect or scene you cannot build. Name the specific item for manual
+  completion rather than substituting something.
+  - Audio you cannot clean without artifacts.
+  - Anything that would require inventing speech, a statistic, an employer,
+  a person or an outcome.
+
+------------------------------------------------------------------------------
+
+14. DELIVER
+
+  - The edited video, clean export, no persistent burned-in subtitles.
+  - A complete final transcript.
+  - An SRT generated against the FINAL edited timeline, synchronization
+  checked after every cut and removal.
+  - A list of anything you flagged.

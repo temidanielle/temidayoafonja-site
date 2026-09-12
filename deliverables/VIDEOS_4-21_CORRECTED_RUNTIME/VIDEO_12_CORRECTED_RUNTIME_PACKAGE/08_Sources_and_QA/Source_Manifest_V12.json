@@ -1,0 +1,168 @@
+{
+  "video": 12,
+  "title": "What to Do When You Can’t Quit Your Job Yet",
+  "generated": "Saturday, September 12, 2026 | 5:28 AM CT (America/Chicago, UTC-05:00)",
+  "spoken_source_of_truth": {
+    "file": "Video_12_FINAL_Revised_Recording_Master.docx",
+    "sha256": "f9e5316370edbc6e0029382cdc4fd086fb2e0241ee9097d5ba8f2e4e00f26807",
+    "note": "Copied unchanged into 01_Recording_Master. Never written to. This file overrides every earlier script."
+  },
+  "secondary_reference": [
+    {
+      "body": "SEP09_V4_V7",
+      "description": "Videos 4 to 7 handoff package, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP09_V8_V13",
+      "description": "Videos 8 to 13 production packages, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP10_V14_V21",
+      "description": "Videos 14 to 21 final production packages, September 10, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    }
+  ],
+  "runtime": {
+    "mode": "REGULAR LONG-FORM",
+    "is_five_minute_test": false,
+    "restored_regular_depth": false,
+    "target_stated_by_master": "Approximately 9:15 to 10:15",
+    "note": "Videos 4 and 5 are the only 5-minute retention test. Videos 6 to 21 are regular long-form and were not shortened to meet a 5-minute target."
+  },
+  "packaging": {
+    "thumbnail": "WHAT CAN CHANGE NOW?",
+    "framework": "Protect what must hold. Bound what you can. Prepare one possible next step.",
+    "primary_cta": "Keep the action small enough that it can actually happen.",
+    "primary_cta_spoken_at": "Write the four lines privately.",
+    "resource": "Career Decision Evidence Check",
+    "resource_spoken": true,
+    "watch_next": "Video 13: A 30-Day Plan to Test Your Next Career Move",
+    "watch_next_source": "the master's Watch Next row"
+  },
+  "script": {
+    "sections": 9,
+    "thought_blocks": 110,
+    "spoken_words": 1185,
+    "speech_only_estimate": "8:10 to 9:07 at 130 to 145 words per minute",
+    "estimate_note": "Arithmetic on the script. Excludes pauses and visual holds. Not a timed read and not a runtime."
+  },
+  "assets": [
+    {
+      "file": "v12_01_constraint_not_conclusion.png",
+      "status": "COPY UPDATE",
+      "why": "Reclassified from REUSE to COPY UPDATE. Measured: 79% of the text is shared with the prior card, which read: These are not the same thing. “I CANNOT LEAVE YET.” That is a constraint. “NOTHING CAN CHANGE.” That is a con…. The editorial note written when this card was built, kept as written: The prior V12 package carried the same constraint-versus-conclusion distinction and the corrected master preserves it.",
+      "mode": "FULL SCREEN",
+      "trigger": "“I cannot leave yet.”"
+    },
+    {
+      "file": "v12_02_protection_first.png",
+      "status": "NEW",
+      "why": "The corrected master places this boundary early and explicitly.",
+      "mode": "FULL SCREEN",
+      "trigger": "If health, safety, harassment, discrimination, or another urgent issue is involved, appropriate support comes before a career exercise."
+    },
+    {
+      "file": "v12_03_three_moves.png",
+      "status": "COPY UPDATE",
+      "why": "The prior package separated protection, boundaries, development and preparation. The corrected master uses three, so the copy is replaced.",
+      "mode": "FULL SCREEN",
+      "trigger": "You need to protect what must hold, put boundaries where you can, and prepare one possible next step."
+    },
+    {
+      "file": "v12_04_name_the_constraint.png",
+      "status": "NEW",
+      "why": "New to the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "Write one sentence:"
+    },
+    {
+      "file": "v12_05_make_the_tradeoff_visible.png",
+      "status": "COPY UPDATE",
+      "why": "The prior package covered boundary language. The corrected master's example replaces the copy.",
+      "mode": "FULL SCREEN",
+      "trigger": "“This job is impossible” may capture the feeling."
+    },
+    {
+      "file": "v12_06_question_before_activity.png",
+      "status": "NEW",
+      "why": "New to the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "Choose a question before you choose an activity."
+    },
+    {
+      "file": "v12_07_exchange_not_add.png",
+      "status": "NEW",
+      "why": "New to the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "Exchange, not automatically add."
+    },
+    {
+      "file": "v12_08_four_lines.png",
+      "status": "COPY UPDATE",
+      "why": "The prior package ended on a next-step plan. The corrected master specifies these four lines and adds the reduced version.",
+      "mode": "FULL SCREEN",
+      "trigger": "Put four lines on a page:"
+    },
+    {
+      "file": "v12_09_cta.png",
+      "status": "REBUILD",
+      "why": "Reclassified from REUSE to REBUILD. Measured: only 41% of the text is shared with the closest prior card, which read: FREE CAREER DECISION EVIDENCE CHECK Read the evidence behind staying, moving, or leaving. It does not replace…. The editorial note written when this card was built, kept as written: The prior package routed V12 to the Decision Check and the corrected master keeps that route.",
+      "mode": "FULL SCREEN",
+      "trigger": "Write the four lines privately."
+    },
+    {
+      "file": "v12_10_watch_next.png",
+      "status": "REUSE",
+      "why": "Destination and title unchanged from the prior package.",
+      "mode": "FULL SCREEN",
+      "trigger": "Watch “A 30-Day Plan to Test Your Next Career Move” next."
+    }
+  ],
+  "shorts": [
+    {
+      "slug": "v12_a1_constraint_not_conclusion",
+      "priority": "A",
+      "title": "I cannot leave yet is not nothing can change",
+      "source": "V12 hook."
+    },
+    {
+      "slug": "v12_a2_name_the_constraint",
+      "priority": "A",
+      "title": "Name the constraint precisely",
+      "source": "V12 protect what must hold."
+    },
+    {
+      "slug": "v12_a3_make_the_tradeoff_visible",
+      "priority": "A",
+      "title": "Make the tradeoff visible",
+      "source": "V12 bound what you can."
+    },
+    {
+      "slug": "v12_a4_question_before_activity",
+      "priority": "A",
+      "title": "Choose a question before you choose an activity",
+      "source": "V12 prepare one possible next step."
+    },
+    {
+      "slug": "v12_b1_exchange_not_add",
+      "priority": "B",
+      "title": "Exchange, not automatically add",
+      "source": "V12 prepare one possible next step."
+    },
+    {
+      "slug": "v12_b2_four_lines",
+      "priority": "B",
+      "title": "Four lines, and permission to do less",
+      "source": "V12 the plan."
+    }
+  ],
+  "not_verified": [
+    "Nothing in this package has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

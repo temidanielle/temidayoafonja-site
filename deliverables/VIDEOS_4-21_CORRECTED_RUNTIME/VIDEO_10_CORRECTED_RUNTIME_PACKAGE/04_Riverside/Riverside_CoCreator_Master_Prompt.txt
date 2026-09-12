@@ -1,0 +1,318 @@
+==============================================================================
+VIDEO 10  |  RIVERSIDE CO-CREATOR MASTER PROMPT
+==============================================================================
+
+Before a Layoff, Know What You Can Still Prove
+
+Paste this whole file into Riverside Co-Creator after uploading the
+new recording. It is self-contained.
+
+------------------------------------------------------------------------------
+
+1. WHAT THIS IS
+
+  I am giving you a new recording. Create the visual and audio editing
+  layer from this recording and its transcript. Do not look for existing
+  graphics to convert, and do not treat any supplied reference asset as a
+  mandatory slideshow.
+
+  The approved Recording Master controls intended meaning. The actual
+  recorded performance controls timing. If the recorded speech materially
+  differs from the approved master, FLAG IT and tell me where. Do not
+  manufacture missing speech, and do not write new lines to bridge a gap.
+
+------------------------------------------------------------------------------
+
+2. THE VIDEO
+
+  Title:      Before a Layoff, Know What You Can Still Prove
+  Thumbnail:  BEFORE ACCESS ENDS
+  Framework:  Capture the contribution. Qualify the claim. Make it retrievable.
+  CTA:        
+  Resource:   Keep the Proof
+  Watch Next: V11: AI Can Do the Task. What Are You Still Paid For?
+  Estimate:   7:38 to 8:30 from 1,106 spoken words. Planning arithmetic, not a runtime.
+
+  The exact final spoken line:
+
+    Keep an account of your contribution, not a copy of your employer’s
+    files.
+
+  Nothing appears after Watch Next.
+
+------------------------------------------------------------------------------
+
+3. EDIT SHAPE
+
+  - Horizontal 16:9. Minimum 1920 by 1080.
+  - Camera-led teaching edit. Thoughtful pacing, not hyperactive.
+  - Intentional jump cuts. Clean up false starts and restarts.
+  - Do not over-shorten a thoughtful explanation to raise pace.
+  - Preserve the approved structure. Do not manufacture an extra hook,
+  reorder the teaching, or move the opening.
+
+------------------------------------------------------------------------------
+
+4. FULL-SCREEN RULE
+
+  Frameworks, comparisons, multi-point concepts, substantive
+  demonstrations, the resource card and Watch Next are TRUE FULL SCREEN. No
+  moving Temidayo behind or around a major visual. Substantive B-roll fills
+  the entire frame. Short single-idea callouts may sit over camera. After a
+  full-screen teaching visual, return to camera only where the scene map
+  calls for it. THIS NEVER APPLIES TO WATCH NEXT: Watch Next is the final
+  visual and there is no return to camera afterward.
+
+------------------------------------------------------------------------------
+
+5. CAMERA MOVEMENT
+
+  About 3 to 5 deliberate camera-emphasis beats across the whole video.
+  This is one combined budget: gentle push-ins on tension, insight or a
+  reframe, with occasional pull-backs or a return to base framing to reset
+  the rhythm. It is not 3 to 5 push-ins plus 3 to 5 pull-backs. No
+  aggressive zooms, no pulsing, no constant reframing, no unnecessary
+  digital movement. Preserve headroom and source quality.
+
+------------------------------------------------------------------------------
+
+6. B-ROLL
+
+  About 2 to 4 meaningful full-screen B-roll moments where useful. This is
+  not a quota. No generic handshakes, fake boardrooms, smiling coworkers,
+  meaningless typing, AI-looking people, or invented employer documents
+  presented as real. Where an example is constructed, it carries its label.
+
+------------------------------------------------------------------------------
+
+7. CAPTIONS AND SRT
+
+  NO BURNED-IN OR OPEN CAPTIONS on the long-form video. Viewers use YouTube
+  CC. Deliver a clean export with no persistent subtitles, a complete final
+  transcript with names, frameworks, URLs and industry terms proofread, and
+  an SRT generated against the FINAL edited timeline with synchronization
+  checked after every jump cut and removal. Do not delete transcript words
+  because the camera is hidden behind a graphic. Shorts and Reels may use
+  designed captions.
+
+------------------------------------------------------------------------------
+
+8. SUBSCRIBE CUE
+
+  One brief visual Subscribe cue after meaningful value has already been
+  delivered. Visual only. There is no spoken Subscribe request in the
+  master and none is added. About 1 to 3 seconds including entrance and
+  exit. Do not interrupt a useful pause or cover teaching content.
+
+------------------------------------------------------------------------------
+
+9. AUDIO AND VISUAL TRANSITION HOOKS
+
+  Apply this only after the final recorded footage is uploaded.
+
+  Use restrained sound design to make important visual changes feel
+  intentional. When a key full-screen graphic, comparison, image, framework
+  step, or important text reveal appears, consider a subtle click, a soft
+  tick, a light tap, a restrained whoosh, or a clean transition sound.
+
+  Prefer subtle click or tick sounds when a new item appears, a comparison
+  changes from one side to the other, a framework advances a step, a card
+  or image replaces the previous one, or one important word or result is
+  revealed.
+
+  The sound reinforces the visual change. It is not the attraction. Do NOT
+  add a click to every bullet, every cut, every sentence or every screen
+  change.
+
+  About 4 to 7 restrained audio accents for the ENTIRE video, including the
+  one visual Subscribe cue. The per-frame sound candidates in the visual
+  map are OPTIONAL and are not cumulative. Choose only the moments with the
+  highest visual or intellectual payoff. Keep every effect clearly quieter
+  than the voice. Pair the sound with a small visual action so both land
+  together. If no sound improves the moment, leave it silent.
+
+  Pair sound with a small visual action wherever possible: text appearing,
+  a divider moving, a number changing, a card switching, a phrase
+  highlighting. Sound and movement land together. The treatment should feel
+  polished, modern and editorial, not gamified, cartoonish or hyperactive.
+  If no sound improves the moment, leave it silent.
+
+------------------------------------------------------------------------------
+
+10. AUDIO FINISHING
+
+  Recorded on a Shure microphone and the source may sit quieter than the
+  final publishing level. Even out the speaking volume gently, keep natural
+  dynamics, and improve dialogue consistency before the final loudness
+  pass. No aggressive compression. No over-processed noise reduction, and
+  no metallic or underwater artifacts. Preserve breaths and natural pauses
+  where they sound normal. Keep the voice clearly dominant over music and
+  effects and prevent clipping on louder words. Check by listening through
+  headphones for intelligibility, room echo, breath pops, clipping,
+  noise-reduction artifacts, abrupt gain changes and music masking the
+  voice. Do not record audio as verified until the actual exported file has
+  been listened to.
+
+------------------------------------------------------------------------------
+
+11. LOOK
+
+  - Natural skin tone. Do not push saturation or warmth.
+  - Subtle music, well under the voice, with a natural final fade where
+  useful.
+  - Voice dominant over music and effects at every point.
+  - No black tail. No dead footage after the ending.
+
+------------------------------------------------------------------------------
+
+12. SCENE BY SCENE
+
+  Reference assets are supplied in 03_Visuals as 1920 by 1080 PNGs
+  and as an editable deck. Use them as references or as fallback
+  assets. Build the motion version where you can do better.
+
+  SCENE 1  |  v10_01_access_ends
+    TRIGGER: Your experience did not disappear.
+    MODE: FULL SCREEN
+    PURPOSE: The hook, in one comparison.
+    REVEAL: Left. Then right. Then the foot line.
+    EMPHASIS: The right side.
+    HOLD: 2 seconds per side, 3 on the foot.
+    CAPTIONS: No burned-in captions. Suppress any designed caption for the
+    whole hold.
+    SOUND CANDIDATE: Candidate: one soft tick as the right side lands.
+    AFTER: Return to camera on the next spoken line.
+
+  SCENE 2  |  v10_02_preparation_not_extraction
+    TRIGGER: Access to a document does not mean you are entitled to keep
+    it. Removing a company name does not automatically make restricted
+    material yours to retain.
+    MODE: FULL SCREEN
+    PURPOSE: The compliance boundary, placed immediately after the stakes.
+    REVEAL: Headline alone. Hold. Then the support.
+    EMPHASIS: The headline, at maximum size.
+    HOLD: 3 seconds alone, 4 with the support. Do not rush this.
+    CAPTIONS: No burned-in captions. Suppress any designed caption for the
+    whole hold.
+    SOUND CANDIDATE: Not a candidate. This frame should land in silence.
+    AFTER: Return to camera on the next spoken line.
+
+  SCENE 3  |  v10_03_capture_qualify_retrieve
+    TRIGGER: Capture the contribution.
+    MODE: FULL SCREEN
+    PURPOSE: The framework.
+    REVEAL: One column at a time.
+    EMPHASIS: Equal.
+    HOLD: 2 seconds each, 4 on the complete set.
+    CAPTIONS: No burned-in captions. Suppress any designed caption for the
+    whole hold.
+    SOUND CANDIDATE: Candidate: one tick as the third column lands.
+    AFTER: Return to camera on the next spoken line.
+
+  SCENE 4  |  v10_04_calendar_vs_contribution
+    TRIGGER: “Attended weekly implementation meetings.”
+    MODE: FULL SCREEN
+    PURPOSE: Show the standard rather than describing it.
+    REVEAL: The calendar entry. Hold. Struck. Then the real record.
+    EMPHASIS: The strike.
+    HOLD: 2 seconds before the strike, 4 after.
+    CAPTIONS: No burned-in captions. Suppress any designed caption for the
+    whole hold.
+    SOUND CANDIDATE: Strong candidate: one soft tick as the strike lands.
+    AFTER: Return to camera on the next spoken line.
+
+  SCENE 5  |  v10_05_three_labels
+    TRIGGER: Now put one of three labels beside the result:
+    MODE: FULL SCREEN
+    PURPOSE: The discipline that makes the record survive scrutiny.
+    REVEAL: One label at a time, then the foot line.
+    EMPHASIS: The foot line.
+    HOLD: 2 seconds each, 3 on the foot.
+    CAPTIONS: No burned-in captions. Suppress any designed caption for the
+    whole hold.
+    SOUND CANDIDATE: Candidate: one tick as the third label lands.
+    AFTER: Return to camera on the next spoken line.
+
+  SCENE 6  |  v10_06_language_that_survives
+    TRIGGER: This is not timid language.
+    MODE: FULL SCREEN
+    PURPOSE: Pre-empt the reading that qualification is weakness.
+    REVEAL: Headline, then the three questions.
+    EMPHASIS: The headline.
+    HOLD: At least 4 seconds.
+    CAPTIONS: No burned-in captions. Suppress any designed caption for the
+    whole hold.
+    SOUND CANDIDATE: Candidate: one tick as the headline lands.
+    AFTER: Return to camera on the next spoken line.
+
+  SCENE 7  |  v10_07_name_it_by_the_problem
+    TRIGGER: “Conflicting handoff criteria” is more useful than “Project
+    Alpha,” especially to somebody outside the company.
+    MODE: FULL SCREEN
+    PURPOSE: One concrete habit the viewer can adopt immediately.
+    REVEAL: The internal name. Hold. Struck. Then the problem name.
+    EMPHASIS: The strike.
+    HOLD: 2 seconds before the strike, 3 after.
+    CAPTIONS: No burned-in captions. Suppress any designed caption for the
+    whole hold.
+    SOUND CANDIDATE: Candidate: one tick as the strike lands.
+    AFTER: Return to camera on the next spoken line.
+
+  SCENE 8  |  v10_08_two_reasons_evidence_is_thin
+    TRIGGER: Do not solve both problems by writing a stronger sentence.
+    MODE: FULL SCREEN
+    PURPOSE: The honesty beat, and the most useful diagnostic in the video.
+    REVEAL: Left. Then right. Then the foot line.
+    EMPHASIS: The foot line.
+    HOLD: 3 seconds per side, 3 on the foot.
+    CAPTIONS: No burned-in captions. Suppress any designed caption for the
+    whole hold.
+    SOUND CANDIDATE: Not a candidate.
+    AFTER: Return to camera on the next spoken line.
+
+  SCENE 9  |  v10_09_cta
+    TRIGGER: Start with one entry.
+    MODE: FULL SCREEN
+    PURPOSE: The resource route named by the corrected master.
+    REVEAL: Label, headline, resource name, URL.
+    EMPHASIS: The URL.
+    HOLD: At least 4 seconds.
+    CAPTIONS: No burned-in captions. Suppress any designed caption for the
+    whole hold.
+    SOUND CANDIDATE: Candidate: one clean transition sound on entry.
+    AFTER: Return to camera on the next spoken line.
+
+  SCENE 10  |  v10_10_watch_next
+    TRIGGER: Watch “AI Can Do the Task. What Are You Still Paid For?” next.
+    MODE: FULL SCREEN
+    PURPOSE: The final visual, cued by the spoken handoff.
+    REVEAL: Label, rule, title, number.
+    EMPHASIS: The title.
+    HOLD: Hold to the end.
+    CAPTIONS: No burned-in captions. Suppress any designed caption for the
+    whole hold.
+    SOUND CANDIDATE: Candidate: one restrained transition sound, then music
+    fade.
+    AFTER: NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+13. WHAT TO FLAG RATHER THAN FIX
+
+  - Recorded speech that materially differs from the approved master.
+  - A scene where the trigger sentence was not spoken.
+  - Any effect or scene you cannot build. Name the specific item for manual
+  completion rather than substituting something.
+  - Audio you cannot clean without artifacts.
+  - Anything that would require inventing speech, a statistic, an employer,
+  a person or an outcome.
+
+------------------------------------------------------------------------------
+
+14. DELIVER
+
+  - The edited video, clean export, no persistent burned-in subtitles.
+  - A complete final transcript.
+  - An SRT generated against the FINAL edited timeline, synchronization
+  checked after every cut and removal.
+  - A list of anything you flagged.

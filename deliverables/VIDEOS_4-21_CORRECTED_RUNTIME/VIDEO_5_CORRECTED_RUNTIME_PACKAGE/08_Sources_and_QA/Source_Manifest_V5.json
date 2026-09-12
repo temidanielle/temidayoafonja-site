@@ -1,0 +1,168 @@
+{
+  "video": 5,
+  "title": "I Changed Career Tracks Without Starting Over. Here's What I Carried With Me.",
+  "generated": "Saturday, September 12, 2026 | 5:28 AM CT (America/Chicago, UTC-05:00)",
+  "spoken_source_of_truth": {
+    "file": "Video_5_FINAL_5_Minute_Test_Recording_Master.docx",
+    "sha256": "afbf7211669c436d25c34713537234e7d9b35264d2cc8dc45c425e4d1d37b092",
+    "note": "Copied unchanged into 01_Recording_Master. Never written to. This file overrides every earlier script."
+  },
+  "secondary_reference": [
+    {
+      "body": "SEP09_V4_V7",
+      "description": "Videos 4 to 7 handoff package, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP09_V8_V13",
+      "description": "Videos 8 to 13 production packages, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP10_V14_V21",
+      "description": "Videos 14 to 21 final production packages, September 10, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    }
+  ],
+  "runtime": {
+    "mode": "5-MINUTE RETENTION TEST",
+    "is_five_minute_test": true,
+    "restored_regular_depth": false,
+    "target_stated_by_master": "Approximately 4:30–5:30 at Temidayo’s natural pace",
+    "note": "Videos 4 and 5 are the only 5-minute retention test. Videos 6 to 21 are regular long-form and were not shortened to meet a 5-minute target."
+  },
+  "packaging": {
+    "thumbnail": "CHANGED TRACKS. NOT ZERO.",
+    "framework": null,
+    "primary_cta": "Write the four lines. Carry. Translate. Relearn. Prove. More honest than 'I am starting over' or 'everything transfers.'",
+    "primary_cta_spoken_at": "That gives you a more honest position than either 'I am starting over' or 'everything I have done transfers.'",
+    "resource": null,
+    "resource_spoken": false,
+    "watch_next": "Video 6: I've Worked Across 8 Industries and Sectors. Here's How I Know If a New Role Is Actually Growth.",
+    "watch_next_source": "the Watch Next card in the production deck"
+  },
+  "script": {
+    "sections": 7,
+    "thought_blocks": 22,
+    "spoken_words": 656,
+    "speech_only_estimate": "4:31 to 5:03 at 130 to 145 words per minute",
+    "estimate_note": "Arithmetic on the script. Excludes pauses and visual holds. Not a timed read and not a runtime."
+  },
+  "assets": [
+    {
+      "file": "v5_01_changed_tracks_not_zero.png",
+      "status": "REMOVE, replaced by NEW",
+      "why": "V5_MG01_Two_Versions_Of_The_Same_Career.png belonged to the superseded legibility script.",
+      "mode": "FULL SCREEN",
+      "trigger": "When you change career tracks, other people can start reading you like a beginner. The more expensive mistake is when you start doing it to yourself."
+    },
+    {
+      "file": "v5_02_four_things.png",
+      "status": "NEW",
+      "why": "Carry / Translate / Relearn / Prove does not exist in the prior package.",
+      "mode": "FULL SCREEN",
+      "trigger": "What helped was separating four things: what I could Carry, what I had to Translate, what I genuinely needed to Relearn, and what I could Prove."
+    },
+    {
+      "file": "v5_03_carry_test.png",
+      "status": "NEW",
+      "why": "New test introduced by the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "Ask: if the employer name, old title, and industry language disappeared, which parts of my experience would still help me solve the destination problem?"
+    },
+    {
+      "file": "v5_04_translate.png",
+      "status": "REBUILD",
+      "why": "V5_MG05_Remove_The_Nouns.png tested an adjacent idea. The shape is reusable; the corrected content replaces it.",
+      "mode": "FULL SCREEN",
+      "trigger": "Do not repeat the old label and hope they understand it. Translate the underlying work."
+    },
+    {
+      "file": "v5_05_relearn_without_beginner.png",
+      "status": "NEW",
+      "why": "New to the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "Those gaps matter. Your experience does not make them optional. But needing to learn them does not erase everything you already know how to do."
+    },
+    {
+      "file": "v5_06_confidence_both_directions.png",
+      "status": "NEW",
+      "why": "New to the corrected master and editorially load-bearing.",
+      "mode": "FULL SCREEN",
+      "trigger": "You do not need to apologize for every gap. But you also do not get to rename a real domain or credential requirement as a transferable skill because that makes the move easier to explain."
+    },
+    {
+      "file": "v5_07_prove_the_level.png",
+      "status": "REBUILD",
+      "why": "V5_MG07_Test_The_Claim.png tested a different claim. Rebuilt to the corrected content.",
+      "mode": "FULL SCREEN",
+      "trigger": "Do not rely on 'I have fifteen years of experience' or 'I was a director.' Those statements tell me duration and title, not what level of judgment you can carry into a new context."
+    },
+    {
+      "file": "v5_08_four_line_move_case.png",
+      "status": "NEW",
+      "why": "Replaces the prior Claim and Receipts artifact entirely.",
+      "mode": "FULL SCREEN",
+      "trigger": "For one move you are considering, write four lines:"
+    },
+    {
+      "file": "v5_09_cta.png",
+      "status": "REBUILD",
+      "why": "V5_CTA_Career_Evidence_Starter.png routed to a resource. The corrected master names none, so none is shown.",
+      "mode": "FULL SCREEN",
+      "trigger": "That gives you a more honest position than either 'I am starting over' or 'everything I have done transfers.'"
+    },
+    {
+      "file": "v5_10_watch_next.png",
+      "status": "COPY UPDATE",
+      "why": "V5_WatchNext_Change_Jobs.png pointed at V1. The corrected sequence runs V5 into V6, so the destination and the copy both change.",
+      "mode": "FULL SCREEN",
+      "trigger": "The job is to know what travels, translate it clearly, relearn what does not, and prove the level you are asking someone else to trust."
+    }
+  ],
+  "shorts": [
+    {
+      "slug": "v5_a1_changed_tracks_not_zero",
+      "priority": "A",
+      "title": "Changed tracks. Not zero.",
+      "source": "V5 hook."
+    },
+    {
+      "slug": "v5_a2_carry",
+      "priority": "A",
+      "title": "What actually carries",
+      "source": "V5 carry."
+    },
+    {
+      "slug": "v5_a3_translate",
+      "priority": "A",
+      "title": "Translate, do not repeat the label",
+      "source": "V5 translate."
+    },
+    {
+      "slug": "v5_a4_prove_the_level",
+      "priority": "A",
+      "title": "Fifteen years is not a level",
+      "source": "V5 prove the level."
+    },
+    {
+      "slug": "v5_b1_relearn",
+      "priority": "B",
+      "title": "Relearn without calling yourself a beginner",
+      "source": "V5 relearn."
+    },
+    {
+      "slug": "v5_b2_both_directions",
+      "priority": "B",
+      "title": "Confidence misleads in both directions",
+      "source": "V5 relearn and close."
+    }
+  ],
+  "not_verified": [
+    "Nothing in this package has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

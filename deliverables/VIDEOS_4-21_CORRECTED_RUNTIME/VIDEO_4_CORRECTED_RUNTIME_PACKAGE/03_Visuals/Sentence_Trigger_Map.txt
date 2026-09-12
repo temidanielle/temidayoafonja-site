@@ -1,0 +1,72 @@
+==============================================================================
+VIDEO 4  |  SENTENCE TRIGGER MAP
+==============================================================================
+
+I Was First in 3 New Roles in 5 Years. Here's What I Stopped Doing.
+
+Every graphic with the exact spoken sentence that cues it.
+Each trigger was verified to exist inside a single thought block of
+the locked master, so no cue is built from words that span two
+takes.
+
+------------------------------------------------------------------------------
+
+ 1. v4_01_title_new_work_not_new
+    TRIGGER: Three times in five years, I stepped into a role that did not have a predecessor. Each time, the title was new to me. But the work underneath it was not completely new.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 2. v4_02_three_stops
+    TRIGGER: What changed was how I judged whether I was ready. I stopped waiting for an exact title match. I stopped proving myself with a task list. And I stopped treating every learning gap like evidence that I was not ready.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 3. v4_03_three_questions
+    TRIGGER: If you are looking at a role you have never held before, use three questions instead: What problem will I be trusted to solve? What can I already prove? What do I genuinely need to learn?
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 4. v4_04_remove_the_title
+    TRIGGER: A useful way to test this is to compare the old and new role without their titles.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 5. v4_05_task_list_vs_judgment
+    TRIGGER: For unfamiliar work, look for evidence of judgment.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 6. v4_06_gap_is_not_a_verdict
+    TRIGGER: A credible readiness case is not, 'I can already do every part of this.' It is, 'Here is what I can carry, here is the proof, and here is what I still need to learn.'
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 7. v4_07_three_line_readiness_case
+    TRIGGER: Take one role you have never held and write three lines.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 8. v4_08_what_it_does_not_guarantee
+    TRIGGER: A strong readiness case does not guarantee that an employer will choose you.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 9. v4_09_cta
+    TRIGGER: Being new to the title does not automatically mean being new to the work.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+10. v4_10_watch_next
+    TRIGGER: Being new to the title does not automatically mean being new to the work.
+    MODE:    FULL SCREEN
+    AFTER:   NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+BEATS THAT ARE DELIBERATELY NOT GRAPHICS
+
+  The real personal account in the opening, where the master has
+  one, stays camera-led.
+  Any moment where the master's honesty depends on the viewer
+  watching Temidayo say it.
+  Anything a graphic would only decorate.

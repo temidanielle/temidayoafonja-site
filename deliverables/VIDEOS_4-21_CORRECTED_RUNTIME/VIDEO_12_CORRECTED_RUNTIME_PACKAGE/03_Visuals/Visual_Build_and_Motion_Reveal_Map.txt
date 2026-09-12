@@ -1,0 +1,163 @@
+==============================================================================
+VIDEO 12  |  VISUAL BUILD MAP AND MOTION REVEAL MAP
+==============================================================================
+
+What to Do When You Can’t Quit Your Job Yet
+
+Support and reference assets for the Riverside editor. This is not
+a deck that covers the script paragraph by paragraph, and it is not
+a mandatory slideshow.
+
+------------------------------------------------------------------------------
+
+ 1. v12_01_constraint_not_conclusion.png
+    STATUS:    COPY UPDATE
+    WHY:       Reclassified from REUSE to COPY UPDATE. Measured: 79% of the text is shared with the prior card, which read: These are not the same thing. “I CANNOT LEAVE YET.” That is a constraint. “NOTHING CAN CHANGE.” That is a con…. The editorial note written when this card was built, kept as written: The prior V12 package carried the same constraint-versus-conclusion distinction and the corrected master preserves it.
+    PURPOSE:   The hook and the whole argument in one frame.
+    TRIGGER:   “I cannot leave yet.”
+    MODE:      FULL SCREEN
+    REVEAL:    Left. Then right. Then the foot line.
+    EMPHASIS:  The foot line.
+    HOLD:      2 seconds per side, 3 on the foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Strong candidate: one soft tick as the foot line lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 2. v12_02_protection_first.png
+    STATUS:    NEW
+    WHY:       The corrected master places this boundary early and explicitly.
+    PURPOSE:   The safety boundary, placed before any advice.
+    TRIGGER:   If health, safety, harassment, discrimination, or another urgent issue is involved, appropriate support comes before a career exercise.
+    MODE:      FULL SCREEN
+    REVEAL:    Headline alone. Hold. Then the support.
+    EMPHASIS:  The headline.
+    HOLD:      3 seconds alone, 4 with the support. Do not rush it.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate. Silence is the correct treatment.
+    AFTER:     Return to camera on the next spoken line.
+
+ 3. v12_03_three_moves.png
+    STATUS:    COPY UPDATE
+    WHY:       The prior package separated protection, boundaries, development and preparation. The corrected master uses three, so the copy is replaced.
+    PURPOSE:   The framework.
+    TRIGGER:   You need to protect what must hold, put boundaries where you can, and prepare one possible next step.
+    MODE:      FULL SCREEN
+    REVEAL:    One column at a time, then the foot line.
+    EMPHASIS:  The foot line.
+    HOLD:      2 seconds each, 4 on the foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the foot line lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 4. v12_04_name_the_constraint.png
+    STATUS:    NEW
+    WHY:       New to the corrected master.
+    PURPOSE:   Turn a vague constraint into a planning input.
+    TRIGGER:   Write one sentence:
+    MODE:      FULL SCREEN
+    REVEAL:    The sentence stem, then the instruction.
+    EMPHASIS:  The stem.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate.
+    AFTER:     Return to camera on the next spoken line.
+
+ 5. v12_05_make_the_tradeoff_visible.png
+    STATUS:    COPY UPDATE
+    WHY:       The prior package covered boundary language. The corrected master's example replaces the copy.
+    PURPOSE:   Show the difference between a feeling and something actionable.
+    TRIGGER:   “This job is impossible” may capture the feeling.
+    MODE:      FULL SCREEN
+    REVEAL:    The feeling. Hold. Struck. Then the specific version.
+    EMPHASIS:  The strike.
+    HOLD:      2 seconds before the strike, 4 after.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Strong candidate: one soft tick as the strike lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 6. v12_06_question_before_activity.png
+    STATUS:    NEW
+    WHY:       New to the corrected master.
+    PURPOSE:   The most useful correction in the video.
+    TRIGGER:   Choose a question before you choose an activity.
+    MODE:      FULL SCREEN
+    REVEAL:    Left. Then right. Then the foot line.
+    EMPHASIS:  The foot line.
+    HOLD:      3 seconds per side, 3 on the foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the foot line lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 7. v12_07_exchange_not_add.png
+    STATUS:    NEW
+    WHY:       New to the corrected master.
+    PURPOSE:   The line that respects the viewer's actual capacity.
+    TRIGGER:   Exchange, not automatically add.
+    MODE:      FULL SCREEN
+    REVEAL:    Headline alone. Hold. Then the support.
+    EMPHASIS:  The headline.
+    HOLD:      2 seconds alone, 4 with the support.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the headline lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 8. v12_08_four_lines.png
+    STATUS:    COPY UPDATE
+    WHY:       The prior package ended on a next-step plan. The corrected master specifies these four lines and adds the reduced version.
+    PURPOSE:   The artifact, with the permission to do less attached.
+    TRIGGER:   Put four lines on a page:
+    MODE:      FULL SCREEN
+    REVEAL:    One line at a time, then the foot line.
+    EMPHASIS:  The foot line.
+    HOLD:      2 seconds each, 4 on the foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the fourth line lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 9. v12_09_cta.png
+    STATUS:    REBUILD
+    WHY:       Reclassified from REUSE to REBUILD. Measured: only 41% of the text is shared with the closest prior card, which read: FREE CAREER DECISION EVIDENCE CHECK Read the evidence behind staying, moving, or leaving. It does not replace…. The editorial note written when this card was built, kept as written: The prior package routed V12 to the Decision Check and the corrected master keeps that route.
+    PURPOSE:   The resource route named by the corrected master.
+    TRIGGER:   Write the four lines privately.
+    MODE:      FULL SCREEN
+    REVEAL:    Label, headline, resource name, URL.
+    EMPHASIS:  The URL.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one clean transition sound on entry.
+    AFTER:     Return to camera on the next spoken line.
+
+10. v12_10_watch_next.png
+    STATUS:    REUSE
+    WHY:       Destination and title unchanged from the prior package.
+    PURPOSE:   The final visual, cued by the spoken handoff.
+    TRIGGER:   Watch “A 30-Day Plan to Test Your Next Career Move” next.
+    MODE:      FULL SCREEN
+    REVEAL:    Label, rule, title, number.
+    EMPHASIS:  The title.
+    HOLD:      Hold to the end.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one restrained transition sound, then music fade.
+    AFTER:     NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+FULL SCREEN
+  Frameworks, comparisons, multi-point concepts, substantive demonstrations, the resource card and Watch Next are TRUE FULL SCREEN. No moving Temidayo behind or around a major visual. Substantive B-roll fills the entire frame. Short single-idea callouts may sit over camera. After a full-screen teaching visual, return to camera only where the scene map calls for it. THIS NEVER APPLIES TO WATCH NEXT: Watch Next is the final visual and there is no return to camera afterward.
+
+CAMERA
+  About 3 to 5 deliberate camera-emphasis beats across the whole video. This is one combined budget: gentle push-ins on tension, insight or a reframe, with occasional pull-backs or a return to base framing to reset the rhythm. It is not 3 to 5 push-ins plus 3 to 5 pull-backs. No aggressive zooms, no pulsing, no constant reframing, no unnecessary digital movement. Preserve headroom and source quality.
+
+SOUND BUDGET
+  About 4 to 7 restrained audio accents for the ENTIRE video, including the one visual Subscribe cue. The per-frame sound candidates in the visual map are OPTIONAL and are not cumulative. Choose only the moments with the highest visual or intellectual payoff. Keep every effect clearly quieter than the voice. Pair the sound with a small visual action so both land together. If no sound improves the moment, leave it silent.
+
+B-ROLL
+  About 2 to 4 meaningful full-screen B-roll moments where useful. This is not a quota. No generic handshakes, fake boardrooms, smiling coworkers, meaningless typing, AI-looking people, or invented employer documents presented as real. Where an example is constructed, it carries its label.
+
+CAPTIONS
+  NO BURNED-IN OR OPEN CAPTIONS on the long-form video. Viewers use YouTube CC. Deliver a clean export with no persistent subtitles, a complete final transcript with names, frameworks, URLs and industry terms proofread, and an SRT generated against the FINAL edited timeline with synchronization checked after every jump cut and removal. Do not delete transcript words because the camera is hidden behind a graphic. Shorts and Reels may use designed captions.
+
+SUBSCRIBE
+  One brief visual Subscribe cue after meaningful value has already been delivered. Visual only. There is no spoken Subscribe request in the master and none is added. About 1 to 3 seconds including entrance and exit. Do not interrupt a useful pause or cover teaching content.

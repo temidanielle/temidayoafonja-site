@@ -1,0 +1,168 @@
+{
+  "video": 4,
+  "title": "I Was First in 3 New Roles in 5 Years. Here's What I Stopped Doing.",
+  "generated": "Saturday, September 12, 2026 | 5:28 AM CT (America/Chicago, UTC-05:00)",
+  "spoken_source_of_truth": {
+    "file": "Video_4_FINAL_5_Minute_Test_Recording_Master.docx",
+    "sha256": "e10d1c820d85de5dc07570621540d3296745ddbd2e7f59c2bf0cf3747057725f",
+    "note": "Copied unchanged into 01_Recording_Master. Never written to. This file overrides every earlier script."
+  },
+  "secondary_reference": [
+    {
+      "body": "SEP09_V4_V7",
+      "description": "Videos 4 to 7 handoff package, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP09_V8_V13",
+      "description": "Videos 8 to 13 production packages, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP10_V14_V21",
+      "description": "Videos 14 to 21 final production packages, September 10, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    }
+  ],
+  "runtime": {
+    "mode": "5-MINUTE RETENTION TEST",
+    "is_five_minute_test": true,
+    "restored_regular_depth": false,
+    "target_stated_by_master": "Approximately 4:30–5:30 at Temidayo’s natural pace",
+    "note": "Videos 4 and 5 are the only 5-minute retention test. Videos 6 to 21 are regular long-form and were not shortened to meet a 5-minute target."
+  },
+  "packaging": {
+    "thumbnail": "I'D NEVER HELD THE ROLE",
+    "framework": null,
+    "primary_cta": "Write the three lines. Problem. Proof. Gap. Being new to the title is not being new to the work.",
+    "primary_cta_spoken_at": "Being new to the title does not automatically mean being new to the work.",
+    "resource": null,
+    "resource_spoken": false,
+    "watch_next": "Video 5: I Changed Career Tracks Without Starting Over. Here's What I Carried With Me.",
+    "watch_next_source": "the Watch Next card in the production deck"
+  },
+  "script": {
+    "sections": 6,
+    "thought_blocks": 20,
+    "spoken_words": 662,
+    "speech_only_estimate": "4:34 to 5:06 at 130 to 145 words per minute",
+    "estimate_note": "Arithmetic on the script. Excludes pauses and visual holds. Not a timed read and not a runtime."
+  },
+  "assets": [
+    {
+      "file": "v4_01_title_new_work_not_new.png",
+      "status": "REMOVE, replaced by NEW",
+      "why": "The September 9 V4 opened on the interview question and the twenty-second answer. That script is superseded entirely. V4_MG01_Introduction_Or_Defense.png has no place in the corrected script.",
+      "mode": "FULL SCREEN",
+      "trigger": "Three times in five years, I stepped into a role that did not have a predecessor. Each time, the title was new to me. But the work underneath it was not completely new."
+    },
+    {
+      "file": "v4_02_three_stops.png",
+      "status": "NEW",
+      "why": "The three-stop structure does not exist in any prior V4 asset.",
+      "mode": "FULL SCREEN",
+      "trigger": "What changed was how I judged whether I was ready. I stopped waiting for an exact title match. I stopped proving myself with a task list. And I stopped treating every learning gap like evidence that I was not ready."
+    },
+    {
+      "file": "v4_03_three_questions.png",
+      "status": "NEW",
+      "why": "New framing introduced by the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "If you are looking at a role you have never held before, use three questions instead: What problem will I be trusted to solve? What can I already prove? What do I genuinely need to learn?"
+    },
+    {
+      "file": "v4_04_remove_the_title.png",
+      "status": "REBUILD",
+      "why": "V4_MG03_Order_Depends_On_The_Question.png tested a different idea. The comparison shape is reusable; the content is entirely new.",
+      "mode": "FULL SCREEN",
+      "trigger": "A useful way to test this is to compare the old and new role without their titles."
+    },
+    {
+      "file": "v4_05_task_list_vs_judgment.png",
+      "status": "NEW",
+      "why": "Judgment-over-activity is new to the corrected V4.",
+      "mode": "FULL SCREEN",
+      "trigger": "For unfamiliar work, look for evidence of judgment."
+    },
+    {
+      "file": "v4_06_gap_is_not_a_verdict.png",
+      "status": "NEW",
+      "why": "No prior V4 asset carried this.",
+      "mode": "FULL SCREEN",
+      "trigger": "A credible readiness case is not, 'I can already do every part of this.' It is, 'Here is what I can carry, here is the proof, and here is what I still need to learn.'"
+    },
+    {
+      "file": "v4_07_three_line_readiness_case.png",
+      "status": "NEW",
+      "why": "The readiness case replaces the prior twenty-second and ninety-second answer assets entirely.",
+      "mode": "FULL SCREEN",
+      "trigger": "Take one role you have never held and write three lines."
+    },
+    {
+      "file": "v4_08_what_it_does_not_guarantee.png",
+      "status": "REBUILD",
+      "why": "Reclassified from REUSE to REBUILD. Measured: only 33% of the text is shared with the closest prior card, which read: A STORY EXPLAINS. PROOF SUPPORTS. The story gets the question. Evidence answers it.. The editorial note written when this card was built, kept as written: V4_MG08 carried a limits concept and the corrected master keeps a limits beat, but the wording is new, so the render is rebuilt while the editorial slot is preserved.",
+      "mode": "FULL SCREEN",
+      "trigger": "A strong readiness case does not guarantee that an employer will choose you."
+    },
+    {
+      "file": "v4_09_cta.png",
+      "status": "REBUILD",
+      "why": "V4_CTA_Career_Evidence_Starter.png routed to a resource. The corrected master names no resource, so no route is shown and none is added.",
+      "mode": "FULL SCREEN",
+      "trigger": "Being new to the title does not automatically mean being new to the work."
+    },
+    {
+      "file": "v4_10_watch_next.png",
+      "status": "COPY UPDATE",
+      "why": "V4_WatchNext_Why_Nobody_Can_Tell.png pointed at the old V5 title. The destination is still V5; its title changed, so the card is rebuilt with the corrected title.",
+      "mode": "FULL SCREEN",
+      "trigger": "Being new to the title does not automatically mean being new to the work."
+    }
+  ],
+  "shorts": [
+    {
+      "slug": "v4_a1_never_held_the_role",
+      "priority": "A",
+      "title": "I'd never held the role",
+      "source": "V4 hook."
+    },
+    {
+      "slug": "v4_a2_remove_the_title",
+      "priority": "A",
+      "title": "Compare the roles without their titles",
+      "source": "V4 stop one."
+    },
+    {
+      "slug": "v4_a3_evidence_of_judgment",
+      "priority": "A",
+      "title": "Stop proving readiness with a task list",
+      "source": "V4 stop two."
+    },
+    {
+      "slug": "v4_a4_three_line_readiness_case",
+      "priority": "A",
+      "title": "The 3-line readiness case",
+      "source": "V4 the 3-line readiness case."
+    },
+    {
+      "slug": "v4_b1_name_the_gap",
+      "priority": "B",
+      "title": "Do not hide the gap",
+      "source": "V4 stop three."
+    },
+    {
+      "slug": "v4_b2_what_it_does_not_guarantee",
+      "priority": "B",
+      "title": "What a readiness case cannot do",
+      "source": "V4 close."
+    }
+  ],
+  "not_verified": [
+    "Nothing in this package has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

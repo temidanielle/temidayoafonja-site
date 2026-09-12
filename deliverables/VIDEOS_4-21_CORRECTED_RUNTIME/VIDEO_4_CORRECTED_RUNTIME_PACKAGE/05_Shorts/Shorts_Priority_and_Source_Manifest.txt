@@ -1,0 +1,52 @@
+==============================================================================
+VIDEO 4  |  SHORTS PRIORITY AND SOURCE MANIFEST
+==============================================================================
+
+I Was First in 3 New Roles in 5 Years. Here's What I Stopped Doing.
+
+Six Shorts. Four Priority A, two Priority B.
+Timings are arithmetic at 165 words per minute. Not timed reads.
+
+------------------------------------------------------------------------------
+
+PRIORITY A  v4_a1_never_held_the_role
+    TITLE:  I'd never held the role
+    WORDS:  89   ABOUT 32 SECONDS
+    FIRST:  Three times in five years, I stepped into a role that did not have a predecessor.
+    FINAL:  Ask what problem the role needs solved, what you can prove, and what you need to learn.
+    SOURCE: V4 hook.
+
+PRIORITY A  v4_a2_remove_the_title
+    TITLE:  Compare the roles without their titles
+    WORDS:  96   ABOUT 35 SECONDS
+    FIRST:  Titles are useful, but they are incomplete.
+    FINAL:  Do the comparison on one role you are considering.
+    SOURCE: V4 stop one.
+
+PRIORITY A  v4_a3_evidence_of_judgment
+    TITLE:  Stop proving readiness with a task list
+    WORDS:  99   ABOUT 36 SECONDS
+    FIRST:  A task list works when the new job is almost identical to the old one.
+    FINAL:  Write one example with a decision, a constraint, and a result.
+    SOURCE: V4 stop two.
+
+PRIORITY A  v4_a4_three_line_readiness_case
+    TITLE:  The 3-line readiness case
+    WORDS:  85   ABOUT 31 SECONDS
+    FIRST:  Take one role you have never held and write three lines.
+    FINAL:  Write the three lines for one role this week.
+    SOURCE: V4 the 3-line readiness case.
+
+PRIORITY B  v4_b1_name_the_gap
+    TITLE:  Do not hide the gap
+    WORDS:  74   ABOUT 27 SECONDS
+    FIRST:  A real move should contain things you do not know yet.
+    FINAL:  Name the gap instead of hiding it.
+    SOURCE: V4 stop three.
+
+PRIORITY B  v4_b2_what_it_does_not_guarantee
+    TITLE:  What a readiness case cannot do
+    WORDS:  69   ABOUT 25 SECONDS
+    FIRST:  I want to be straight about the limit of this.
+    FINAL:  Work out which of those two problems you actually have.
+    SOURCE: V4 close.

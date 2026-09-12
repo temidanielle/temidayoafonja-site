@@ -1,0 +1,72 @@
+==============================================================================
+VIDEO 12  |  SENTENCE TRIGGER MAP
+==============================================================================
+
+What to Do When You Can’t Quit Your Job Yet
+
+Every graphic with the exact spoken sentence that cues it.
+Each trigger was verified to exist inside a single thought block of
+the locked master, so no cue is built from words that span two
+takes.
+
+------------------------------------------------------------------------------
+
+ 1. v12_01_constraint_not_conclusion
+    TRIGGER: “I cannot leave yet.”
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 2. v12_02_protection_first
+    TRIGGER: If health, safety, harassment, discrimination, or another urgent issue is involved, appropriate support comes before a career exercise.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 3. v12_03_three_moves
+    TRIGGER: You need to protect what must hold, put boundaries where you can, and prepare one possible next step.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 4. v12_04_name_the_constraint
+    TRIGGER: Write one sentence:
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 5. v12_05_make_the_tradeoff_visible
+    TRIGGER: “This job is impossible” may capture the feeling.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 6. v12_06_question_before_activity
+    TRIGGER: Choose a question before you choose an activity.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 7. v12_07_exchange_not_add
+    TRIGGER: Exchange, not automatically add.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 8. v12_08_four_lines
+    TRIGGER: Put four lines on a page:
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+ 9. v12_09_cta
+    TRIGGER: Write the four lines privately.
+    MODE:    FULL SCREEN
+    AFTER:   Return to camera on the next spoken line.
+
+10. v12_10_watch_next
+    TRIGGER: Watch “A 30-Day Plan to Test Your Next Career Move” next.
+    MODE:    FULL SCREEN
+    AFTER:   NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+BEATS THAT ARE DELIBERATELY NOT GRAPHICS
+
+  The real personal account in the opening, where the master has
+  one, stays camera-led.
+  Any moment where the master's honesty depends on the viewer
+  watching Temidayo say it.
+  Anything a graphic would only decorate.

@@ -1,0 +1,168 @@
+{
+  "video": 10,
+  "title": "Before a Layoff, Know What You Can Still Prove",
+  "generated": "Saturday, September 12, 2026 | 5:28 AM CT (America/Chicago, UTC-05:00)",
+  "spoken_source_of_truth": {
+    "file": "Video_10_FINAL_Revised_Recording_Master.docx",
+    "sha256": "de604a08916cbd0ee1b416c56c79aaed648333d86a62333a4c91189b0cedc69c",
+    "note": "Copied unchanged into 01_Recording_Master. Never written to. This file overrides every earlier script."
+  },
+  "secondary_reference": [
+    {
+      "body": "SEP09_V4_V7",
+      "description": "Videos 4 to 7 handoff package, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP09_V8_V13",
+      "description": "Videos 8 to 13 production packages, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP10_V14_V21",
+      "description": "Videos 14 to 21 final production packages, September 10, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    }
+  ],
+  "runtime": {
+    "mode": "REGULAR LONG-FORM",
+    "is_five_minute_test": false,
+    "restored_regular_depth": false,
+    "target_stated_by_master": "Approximately 9:00 to 10:00",
+    "note": "Videos 4 and 5 are the only 5-minute retention test. Videos 6 to 21 are regular long-form and were not shortened to meet a 5-minute target."
+  },
+  "packaging": {
+    "thumbnail": "BEFORE ACCESS ENDS",
+    "framework": "Capture the contribution. Qualify the claim. Make it retrievable.",
+    "primary_cta": "Capture. Qualify. Make it retrievable.",
+    "primary_cta_spoken_at": "Start with one entry.",
+    "resource": "Keep the Proof",
+    "resource_spoken": true,
+    "watch_next": "Video 11: AI Can Do the Task. What Are You Still Paid For?",
+    "watch_next_source": "the master's Watch Next row"
+  },
+  "script": {
+    "sections": 8,
+    "thought_blocks": 98,
+    "spoken_words": 1106,
+    "speech_only_estimate": "7:38 to 8:30 at 130 to 145 words per minute",
+    "estimate_note": "Arithmetic on the script. Excludes pauses and visual holds. Not a timed read and not a runtime."
+  },
+  "assets": [
+    {
+      "file": "v10_01_access_ends.png",
+      "status": "REBUILD",
+      "why": "Reclassified from REUSE to REBUILD. Measured: only 57% of the text is shared with the closest prior card, which read: YOUR EXPERIENCE DID NOT DISAPPEAR. YOUR ACCESS TO THE EVIDENCE DID.. The editorial note written when this card was built, kept as written: V10_MG01_Access_Not_Experience.png carries the same distinction and the corrected master preserves it.",
+      "mode": "FULL SCREEN",
+      "trigger": "Your experience did not disappear."
+    },
+    {
+      "file": "v10_02_preparation_not_extraction.png",
+      "status": "REBUILD",
+      "why": "Reclassified from REUSE to REBUILD. Measured: only 49% of the text is shared with the closest prior card, which read: THE BOUNDARY PREPARATION IS NOT EXTRACTION. No forwarding internal emails, downloading dashboards, copying cu…. The editorial note written when this card was built, kept as written: V10_MG02_Preparation_Is_Not_Extraction.png carries the same boundary, preserved by the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "Access to a document does not mean you are entitled to keep it. Removing a company name does not automatically make restricted material yours to retain."
+    },
+    {
+      "file": "v10_03_capture_qualify_retrieve.png",
+      "status": "COPY UPDATE",
+      "why": "Reclassified from REUSE to COPY UPDATE. Measured: 68% of the text is shared with the prior card, which read: THE EVIDENCE HABIT 01 CAPTURE THE CONTRIBUTION 02 QUALIFY THE CLAIM 03 MAKE IT RETRIEVABLE. The editorial note written when this card was built, kept as written: V10_MG03_Capture_Qualify_Retrieve.png carries the same three steps, preserved by the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "Capture the contribution."
+    },
+    {
+      "file": "v10_04_calendar_vs_contribution.png",
+      "status": "COPY UPDATE",
+      "why": "Reclassified from REUSE to COPY UPDATE. Measured: 85% of the text is shared with the prior card, which read: One | Capture the contribution, not the calendar. THE CALENDAR ENTRY “Attended weekly implementation meetings…. The editorial note written when this card was built, kept as written: V10_MG04_Calendar_Versus_Contribution.png carries the same comparison. Copy updated to the corrected example.",
+      "mode": "FULL SCREEN",
+      "trigger": "“Attended weekly implementation meetings.”"
+    },
+    {
+      "file": "v10_05_three_labels.png",
+      "status": "NEW",
+      "why": "Reclassified from REUSE to NEW. Measured: nothing in the prior package resembles it; the closest card shares 4% of its text. The editorial note written when this card was built, kept as written: V10_MG05_Confirmed_Qualified_Not_Verified.png carries the same three labels, preserved by the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "Now put one of three labels beside the result:"
+    },
+    {
+      "file": "v10_06_language_that_survives.png",
+      "status": "NEW",
+      "why": "New framing in the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "This is not timid language."
+    },
+    {
+      "file": "v10_07_name_it_by_the_problem.png",
+      "status": "REBUILD",
+      "why": "Reclassified from REUSE to REBUILD. Measured: only 39% of the text is shared with the closest prior card, which read: THREE | MAKE IT RETRIEVABLE Name the entry by the problem, not the project. “PROJECT ALPHA” Means nothing out…. The editorial note written when this card was built, kept as written: V10_MG06_Name_It_By_The_Problem.png carries the same habit, preserved by the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "“Conflicting handoff criteria” is more useful than “Project Alpha,” especially to somebody outside the company."
+    },
+    {
+      "file": "v10_08_two_reasons_evidence_is_thin.png",
+      "status": "NEW",
+      "why": "Reclassified from REUSE to NEW. Measured: nothing in the prior package resembles it; the closest card shares 20% of its text. The editorial note written when this card was built, kept as written: V10_MG07_Two_Reasons_Evidence_Is_Thin.png carries the same distinction, preserved by the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "Do not solve both problems by writing a stronger sentence."
+    },
+    {
+      "file": "v10_09_cta.png",
+      "status": "REBUILD",
+      "why": "Reclassified from REUSE to REBUILD. Measured: only 44% of the text is shared with the closest prior card, which read: THE EVIDENCE HABIT 01 CAPTURE THE CONTRIBUTION 02 QUALIFY THE CLAIM 03 MAKE IT RETRIEVABLE. The editorial note written when this card was built, kept as written: V10_RESOURCE_Keep_The_Proof.png routes to the same resource, preserved by the corrected master.",
+      "mode": "FULL SCREEN",
+      "trigger": "Start with one entry."
+    },
+    {
+      "file": "v10_10_watch_next.png",
+      "status": "REUSE",
+      "why": "V10_WATCH_NEXT_AI_Can_Do_The_Task.png points at the same destination with the same title.",
+      "mode": "FULL SCREEN",
+      "trigger": "Watch “AI Can Do the Task. What Are You Still Paid For?” next."
+    }
+  ],
+  "shorts": [
+    {
+      "slug": "v10_a1_before_access_ends",
+      "priority": "A",
+      "title": "The proof disappears before the experience does",
+      "source": "V10 hook."
+    },
+    {
+      "slug": "v10_a2_preparation_not_extraction",
+      "priority": "A",
+      "title": "Preparation is not extraction",
+      "source": "V10 the boundary."
+    },
+    {
+      "slug": "v10_a3_calendar_vs_contribution",
+      "priority": "A",
+      "title": "A calendar entry is not a contribution",
+      "source": "V10 capture the contribution."
+    },
+    {
+      "slug": "v10_a4_qualify_the_claim",
+      "priority": "A",
+      "title": "Confirmed, qualified, not yet verified",
+      "source": "V10 qualify the claim."
+    },
+    {
+      "slug": "v10_b1_name_it_by_the_problem",
+      "priority": "B",
+      "title": "Name it by the problem, not the project",
+      "source": "V10 make it retrievable."
+    },
+    {
+      "slug": "v10_b2_two_reasons",
+      "priority": "B",
+      "title": "Two reasons the evidence is thin",
+      "source": "V10 when the evidence is thin."
+    }
+  ],
+  "not_verified": [
+    "Nothing in this package has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

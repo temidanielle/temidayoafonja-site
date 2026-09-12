@@ -1,0 +1,85 @@
+==============================================================================
+VIDEO 4  |  CHANGE LOG
+==============================================================================
+
+I Was First in 3 New Roles in 5 Years. Here's What I Stopped Doing.
+
+Generated: Saturday, September 12, 2026 | 5:28 AM CT (America/Chicago, UTC-05:00)
+
+------------------------------------------------------------------------------
+
+SOURCE HIERARCHY CHANGE
+
+  The locked final Recording Master is now the definitive spoken
+  source of truth for this video:
+
+    Video_4_FINAL_5_Minute_Test_Recording_Master.docx
+    SHA-256 e10d1c820d85de5dc07570621540d3296745ddbd2e7f59c2bf0cf3747057725f
+
+  It OVERRIDES every earlier script, package, brief and roadmap
+  for this video. The corrected September 11 recording master wins
+  in every conflict. The script sets were not merged, no earlier
+  wording was carried back into the master, and the master was not
+  rewritten, tightened, expanded or shortened.
+
+------------------------------------------------------------------------------
+
+RUNTIME
+
+  Mode: 5-MINUTE RETENTION TEST
+
+  This is one of the two approximately 5-minute test videos.
+  V4 and V5 are the only two. The experiment does not extend
+  past V5.
+
+  662 spoken words. 4:34 to 5:06 at 130 to 145 words per minute.
+  Target stated by the master: Approximately 4:30–5:30 at Temidayo’s natural pace
+  The estimate is speech only. It excludes pauses and visual
+  holds, so the recorded runtime will be longer. It is not a
+  measured runtime.
+
+------------------------------------------------------------------------------
+
+WHAT WAS AUDITED AND REUSED
+
+  Every rendered asset in the earlier packages was checked against
+  this master and classified. A card is REUSE only when the newly
+  rendered file is byte-identical to the earlier one. Not when the
+  visual topic sounds similar.
+
+    COPY UPDATE                1
+    REBUILD                    3
+    NEW                        5
+    REMOVE, replaced by NEW    1
+
+  0 of 10 newly rendered assets are byte-identical to a
+  prior rendered asset:
+
+    none
+
+  Every other asset in this package changed. Where a card was
+  first written down as reuse and the rendered bytes did not
+  bear that out, the label was corrected and the card's own
+  note records both the measurement and what was originally
+  written.
+
+
+------------------------------------------------------------------------------
+
+WHAT WAS NOT CHANGED
+
+  The master was copied byte for byte and never written to.
+  No spoken text was tightened, expanded, restructured or
+  reworded. The hook, the examples, the qualifications, the CTA,
+  the resource, the Watch Next and the final line are the
+  master's.
+  No statistic, example, employer, person or outcome was added.
+  No spoken Subscribe request was added.
+
+------------------------------------------------------------------------------
+
+WHAT IS NOT SUPPLIED BY INSTRUCTION
+
+  Final chapters, an SRT, music attribution, thumbnail artwork and
+  any public URL. These come from the finished export and the
+  separate artwork approval.

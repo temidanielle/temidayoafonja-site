@@ -1,0 +1,168 @@
+{
+  "video": 21,
+  "title": "What You Must Relearn When You Change Industries",
+  "generated": "Saturday, September 12, 2026 | 5:28 AM CT (America/Chicago, UTC-05:00)",
+  "spoken_source_of_truth": {
+    "file": "Video_21_FINAL_Regular_Length_Recording_Master.docx",
+    "sha256": "12edc8634d7b8be0d374ffbf0d6218cf698ebf89a67d4f0c2b382ae8ff8d8a09",
+    "note": "Copied unchanged into 01_Recording_Master. Never written to. This file overrides every earlier script."
+  },
+  "secondary_reference": [
+    {
+      "body": "SEP09_V4_V7",
+      "description": "Videos 4 to 7 handoff package, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP09_V8_V13",
+      "description": "Videos 8 to 13 production packages, September 9, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    },
+    {
+      "body": "SEP10_V14_V21",
+      "description": "Videos 14 to 21 final production packages, September 10, 2026",
+      "status": "Secondary reference only. Superseded wherever it differs from the corrected master."
+    }
+  ],
+  "runtime": {
+    "mode": "REGULAR LONG-FORM",
+    "is_five_minute_test": false,
+    "restored_regular_depth": true,
+    "target_stated_by_master": "Regular long-form. Preserve the original 9–12 minute target where that was the approved draft target.",
+    "note": "Videos 4 and 5 are the only 5-minute retention test. Videos 6 to 21 are regular long-form and were not shortened to meet a 5-minute target."
+  },
+  "packaging": {
+    "thumbnail": "NOT EVERYTHING TRAVELS",
+    "framework": null,
+    "primary_cta": "Name the first item.",
+    "primary_cta_spoken_at": "If you want a structured version of the inventory, that is what the Field Kit is for, linked below.",
+    "resource": "Capability Formation Field Kit",
+    "resource_spoken": true,
+    "watch_next": "Video 9: How to Change Industries Without Starting Over",
+    "watch_next_source": "the Watch Next card in the production deck"
+  },
+  "script": {
+    "sections": 12,
+    "thought_blocks": 42,
+    "spoken_words": 1298,
+    "speech_only_estimate": "8:57 to 9:59 at 130 to 145 words per minute",
+    "estimate_note": "Arithmetic on the script. Excludes pauses and visual holds. Not a timed read and not a runtime."
+  },
+  "assets": [
+    {
+      "file": "v21_01_the_room_is_different.png",
+      "status": "REUSE",
+      "why": "Concept and trigger both survive into the restored master.",
+      "mode": "SHORT CALLOUT OVER CAMERA for the headline, then FULL SCREEN for the support line.",
+      "trigger": "And the surprising part is that you can still do the work."
+    },
+    {
+      "file": "v21_02_what_does_travel.png",
+      "status": "COPY UPDATE",
+      "why": "Concept preserved; trigger and copy updated to the restored wording.",
+      "mode": "FULL SCREEN",
+      "trigger": "First, quickly, what does travel, because it is real and it is easy to lose sight of in the first difficult month."
+    },
+    {
+      "file": "v21_03_five_layers.png",
+      "status": "REBUILD",
+      "why": "The five layers survive into the restored master, but the card copy did not. The September 10 card labeled layer one 'Domain knowledge' and layer five 'How decisions get made here'. The corrected master names them 'what the work is actually about here' and 'how decisions actually get made', so the card now carries the master's own headings and the slide agrees with the speech.",
+      "mode": "FULL SCREEN",
+      "trigger": "Layer one, and the one that blocks you soonest: what the work is actually about here."
+    },
+    {
+      "file": "v21_04_licensing_is_not_a_mindset.png",
+      "status": "COPY UPDATE",
+      "why": "Concept preserved; the restored master rewords the line, so the trigger and the headline are updated to the corrected sentence.",
+      "mode": "FULL SCREEN",
+      "trigger": "That is not a confidence issue and it is not a mindset problem."
+    },
+    {
+      "file": "v21_05_easiest_layer_trap.png",
+      "status": "COPY UPDATE",
+      "why": "Concept preserved; trigger and copy updated to the restored wording.",
+      "mode": "FULL SCREEN",
+      "trigger": "Layer three. Systems and tooling. This is usually the layer people worry about most and it is generally the smallest."
+    },
+    {
+      "file": "v21_06_has_anyone_tried_this.png",
+      "status": "COPY UPDATE",
+      "why": "Concept preserved; trigger and copy updated to the restored wording.",
+      "mode": "FULL SCREEN",
+      "trigger": "The single most useful question in a first few months is some version of has anybody tried this before, and what happened."
+    },
+    {
+      "file": "v21_07_first_ninety_days.png",
+      "status": "NEW",
+      "why": "The restored master brings back the pace section. The frame states no timeline, because the master explicitly refuses to give one.",
+      "mode": "FULL SCREEN",
+      "trigger": "You are not going to arrive and contribute at the level you left at."
+    },
+    {
+      "file": "v21_08_order_by_what_blocks_you.png",
+      "status": "COPY UPDATE",
+      "why": "Concept preserved; trigger and copy updated to the restored wording.",
+      "mode": "FULL SCREEN",
+      "trigger": "Then order the whole thing by one question, which is what stops me contributing usefully first."
+    },
+    {
+      "file": "v21_09_cta.png",
+      "status": "COPY UPDATE",
+      "why": "Route unchanged. Trigger moved to the restored resource sentence.",
+      "mode": "FULL SCREEN",
+      "trigger": "If you want a structured version of the inventory, that is what the Field Kit is for, linked below."
+    },
+    {
+      "file": "v21_10_watch_next.png",
+      "status": "REUSE",
+      "why": "Destination and title both match V9's corrected master. Trigger moved to the restored final line.",
+      "mode": "FULL SCREEN",
+      "trigger": "It is the difference between a plan that will work and a reading list that would have made you feel productive for a month."
+    }
+  ],
+  "shorts": [
+    {
+      "slug": "v21_a1_the_room_is_different",
+      "priority": "A",
+      "title": "You can still do the work",
+      "source": "V21 hook."
+    },
+    {
+      "slug": "v21_a2_licensing_is_not_a_mindset",
+      "priority": "A",
+      "title": "A licensing requirement is not a mindset issue",
+      "source": "V21 regulation and credentials."
+    },
+    {
+      "slug": "v21_a3_five_layers",
+      "priority": "A",
+      "title": "Five layers to relearn",
+      "source": "V21 the five-layer inventory."
+    },
+    {
+      "slug": "v21_a4_easiest_layer_trap",
+      "priority": "A",
+      "title": "Do not prepare for the easiest layer",
+      "source": "V21 systems and tooling."
+    },
+    {
+      "slug": "v21_b1_has_anyone_tried_this",
+      "priority": "B",
+      "title": "Has anyone tried this before?",
+      "source": "V21 relationships and internal history."
+    },
+    {
+      "slug": "v21_b2_read_or_practice",
+      "priority": "B",
+      "title": "Some of it you read. Some of it you practice.",
+      "source": "V21 read it or practice it."
+    }
+  ],
+  "not_verified": [
+    "Nothing in this package has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

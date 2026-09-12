@@ -246,6 +246,7 @@ def build(path, stamp, qa=None):
         kv(d, "Combined archive", qa["zip"])
         kv(d, "Archive SHA-256", qa["sha"])
         kv(d, "Prior-asset audit", qa["audit"])
+        kv(d, "Document QA", qa.get("docs", ""))
     bullets(d, [
       "Nothing in this work has been recorded, edited or exported.",
       "Every runtime figure is arithmetic on the script, not a measurement.",
@@ -261,7 +262,7 @@ if __name__ == "__main__":
         ["env", "TZ=America/Chicago", "date",
          "+%A, %B %d, %Y | %-I:%M %p CT"]).decode().strip()
     qa = None
-    log = "/tmp/build8.log"
+    log = sys.argv[1] if len(sys.argv) > 1 else "/tmp/build9.log"
     if os.path.exists(log):
         txt = open(log).read()
         import re
@@ -269,11 +270,14 @@ if __name__ == "__main__":
         z = re.search(r"(Videos_4-21_[^\s]+\.zip)\s+(\d+) entries", txt)
         sh = re.search(r"sha256 ([0-9a-f]{64})", txt)
         ad = re.search(r"(prior-asset audit: .*)", txt)
+        dq = re.search(r"(document QA: .*)", txt)
         if m:
             qa = dict(passed=int(m.group(1)), total=int(m.group(2)),
                       zip=z.group(1) if z else "", sha=sh.group(1) if sh else "",
                       audit=ad.group(1).replace("prior-asset audit: ", "")
-                      if ad else "")
+                      if ad else "",
+                      docs=dq.group(1).replace("document QA: ", "")
+                      if dq else "")
     os.makedirs(OUT, exist_ok=True)
     print(build(os.path.join(OUT, "V6_V7_V8_Restoration_Report.docx"),
                 stamp, qa))

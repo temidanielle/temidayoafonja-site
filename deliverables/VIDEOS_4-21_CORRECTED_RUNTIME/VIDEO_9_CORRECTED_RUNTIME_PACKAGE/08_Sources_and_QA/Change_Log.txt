@@ -1,0 +1,91 @@
+==============================================================================
+VIDEO 9  |  CHANGE LOG
+==============================================================================
+
+How to Change Industries Without Starting Over
+
+Generated: Saturday, September 12, 2026 | 5:28 AM CT (America/Chicago, UTC-05:00)
+
+------------------------------------------------------------------------------
+
+SOURCE HIERARCHY CHANGE
+
+  The locked final Recording Master is now the definitive spoken
+  source of truth for this video:
+
+    Video_9_FINAL_Revised_Recording_Master.docx
+    SHA-256 690c0626c3a9e09efcd00841057fd35199a6d2c9e3e9e822a60aae321e92ab19
+
+  It OVERRIDES every earlier script, package, brief and roadmap
+  for this video. The corrected September 11 recording master wins
+  in every conflict. The script sets were not merged, no earlier
+  wording was carried back into the master, and the master was not
+  rewritten, tightened, expanded or shortened.
+
+------------------------------------------------------------------------------
+
+RUNTIME
+
+  Mode: REGULAR LONG-FORM
+
+  This is regular long-form. It is NOT part of the V4 and V5
+  5-minute experiment, and it was not shortened to meet a
+  5-minute target.
+
+  1153 spoken words. 7:57 to 8:52 at 130 to 145 words per minute.
+  Target stated by the master: Approximately 9:15 to 10:15
+  The estimate is speech only. It excludes pauses and visual
+  holds, so the recorded runtime will be longer. It is not a
+  measured runtime.
+
+  FLAGGED, NOT REPAIRED:
+
+    [RUNTIME] below the target its own master states
+          1153 words, 7:57 to 8:52 at 130 to 145 wpm against 'Approximately
+          9:15 to 10:15'. The estimate is speech only and excludes pauses and
+          visual holds. Not lengthened.
+
+------------------------------------------------------------------------------
+
+WHAT WAS AUDITED AND REUSED
+
+  Every rendered asset in the earlier packages was checked against
+  this master and classified. A card is REUSE only when the newly
+  rendered file is byte-identical to the earlier one. Not when the
+  visual topic sounds similar.
+
+    COPY UPDATE                3
+    REBUILD                    2
+    NEW                        5
+
+  0 of 10 newly rendered assets are byte-identical to a
+  prior rendered asset:
+
+    none
+
+  Every other asset in this package changed. Where a card was
+  first written down as reuse and the rendered bytes did not
+  bear that out, the label was corrected and the card's own
+  note records both the measurement and what was originally
+  written.
+
+
+------------------------------------------------------------------------------
+
+WHAT WAS NOT CHANGED
+
+  The master was copied byte for byte and never written to.
+  No spoken text was tightened, expanded, restructured or
+  reworded. The hook, the examples, the qualifications, the CTA,
+  the resource, the Watch Next and the final line are the
+  master's.
+  No statistic, example, employer, person or outcome was added.
+  No spoken Subscribe request was added.
+
+------------------------------------------------------------------------------
+
+WHAT IS NOT SUPPLIED BY INSTRUCTION
+
+  Final chapters, an SRT, music attribution, thumbnail artwork and
+  any public URL. These come from the finished export and the
+  separate artwork approval.

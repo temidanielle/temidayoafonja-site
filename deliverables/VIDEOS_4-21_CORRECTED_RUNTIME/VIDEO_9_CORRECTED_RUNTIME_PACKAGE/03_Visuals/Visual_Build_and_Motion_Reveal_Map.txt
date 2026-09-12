@@ -1,0 +1,163 @@
+==============================================================================
+VIDEO 9  |  VISUAL BUILD MAP AND MOTION REVEAL MAP
+==============================================================================
+
+How to Change Industries Without Starting Over
+
+Support and reference assets for the Riverside editor. This is not
+a deck that covers the script paragraph by paragraph, and it is not
+a mandatory slideshow.
+
+------------------------------------------------------------------------------
+
+ 1. v9_01_direct_industry_experience.png
+    STATUS:    COPY UPDATE
+    WHY:       V9's prior opening asset addressed the same status tension. The corrected master sharpens it to the posting sentence itself.
+    PURPOSE:   The hook. The exact sentence that triggers the feeling.
+    TRIGGER:   “Direct industry experience required.”
+    MODE:      FULL SCREEN
+    REVEAL:    The quoted line alone. Hold. Then the support.
+    EMPHASIS:  The quoted line.
+    HOLD:      2 seconds alone, 3 with the support.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one clean transition sound on entry.
+    AFTER:     Return to camera on the next spoken line.
+
+ 2. v9_02_neither_mistake.png
+    STATUS:    NEW
+    WHY:       The corrected master states both mistakes explicitly in the hook.
+    PURPOSE:   Kill both failure modes before the framework arrives.
+    TRIGGER:   Do not say, “I can already do all of this.”
+    MODE:      FULL SCREEN
+    REVEAL:    Both claims. Hold. Struck. Then the better question.
+    EMPHASIS:  The strike, then the question.
+    HOLD:      2 seconds before the strike, 4 after.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Strong candidate: one soft tick as the strike lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 3. v9_03_capability_context_credentials.png
+    STATUS:    REBUILD
+    WHY:       Reclassified from REUSE to REBUILD. Measured: only 48% of the text is shared with the closest prior card, which read: THE THREE-PART READ 01 CAPABILITY 02 CONTEXT 03 CREDENTIALS What can you prove? What changes here? What is ac…. The editorial note written when this card was built, kept as written: The prior V9 package carries the same three-part framework and the corrected master preserves it. Copy updated to the corrected questions.
+    PURPOSE:   The framework, delivered inside the first ninety seconds.
+    TRIGGER:   Capability. Context. Credentials.
+    MODE:      FULL SCREEN
+    REVEAL:    One column at a time.
+    EMPHASIS:  Equal.
+    HOLD:      2 seconds each, 4 on the complete set.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the third column lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 4. v9_04_same_verb_different_decision.png
+    STATUS:    NEW
+    WHY:       The corrected master adds this explicit equivalence warning.
+    PURPOSE:   The transfer boundary, in one frame.
+    TRIGGER:   “Approve” can mean checking a routine item in one role and accepting a consequential risk in another.
+    MODE:      FULL SCREEN
+    REVEAL:    The verb alone. Hold. Then each reading.
+    EMPHASIS:  The verb.
+    HOLD:      2 seconds on the verb, 2 per side.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the second reading lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 5. v9_05_capability_sentence.png
+    STATUS:    NEW
+    WHY:       New to the corrected master.
+    PURPOSE:   Turn the first layer into one writable sentence.
+    TRIGGER:   Write the capability sentence this way:
+    MODE:      FULL SCREEN
+    REVEAL:    The sentence, then the condition.
+    EMPHASIS:  The sentence.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Not a candidate.
+    AFTER:     Return to camera on the next spoken line.
+
+ 6. v9_06_context_is_not_vocabulary.png
+    STATUS:    NEW
+    WHY:       New to the corrected master.
+    PURPOSE:   The line that stops the viewer underestimating the second layer.
+    TRIGGER:   Context is not just vocabulary you can learn over a weekend.
+    MODE:      FULL SCREEN
+    REVEAL:    Headline, then the support line.
+    EMPHASIS:  The support line.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Strong candidate: one soft tick as the support line lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 7. v9_07_better_question_to_ask.png
+    STATUS:    NEW
+    WHY:       New to the corrected master.
+    PURPOSE:   The single most practical instruction in the video.
+    TRIGGER:   “Do you think I could switch industries?”
+    MODE:      FULL SCREEN
+    REVEAL:    The weak question. Hold. Struck. Then the better one.
+    EMPHASIS:  The strike.
+    HOLD:      2 seconds before the strike, 4 after.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one tick as the strike lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 8. v9_08_credential_three_labels.png
+    STATUS:    COPY UPDATE
+    WHY:       The prior package addressed credentials. The corrected master specifies these three labels, so the copy is replaced.
+    PURPOSE:   Make the third layer checkable, and state the hard boundary.
+    TRIGGER:   Write down:
+    MODE:      FULL SCREEN
+    REVEAL:    One label at a time, then the foot line.
+    EMPHASIS:  The foot line.
+    HOLD:      2 seconds each, 4 on the foot.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Strong candidate: one soft tick as the foot line lands.
+    AFTER:     Return to camera on the next spoken line.
+
+ 9. v9_09_cta.png
+    STATUS:    REBUILD
+    WHY:       Reclassified from REUSE to REBUILD. Measured: only 41% of the text is shared with the closest prior card, which read: THE THREE-PART READ 01 CAPABILITY 02 CONTEXT 03 CREDENTIALS What can you prove? What changes here? What is ac…. The editorial note written when this card was built, kept as written: The prior package routed V9 to the Field Kit and the corrected master keeps that route.
+    PURPOSE:   The resource route named by the corrected master.
+    TRIGGER:   Choose one destination role. Not five industries at once.
+    MODE:      FULL SCREEN
+    REVEAL:    Label, headline, resource name, URL.
+    EMPHASIS:  The URL.
+    HOLD:      At least 4 seconds.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one clean transition sound on entry.
+    AFTER:     Return to camera on the next spoken line.
+
+10. v9_10_watch_next.png
+    STATUS:    COPY UPDATE
+    WHY:       Reclassified from REUSE to COPY UPDATE. Measured: 93% of the text is shared with the prior card, which read: WATCH NEXT Before a Layoff, Know What You Can Still Prove. The editorial note written when this card was built, kept as written: Destination and title unchanged from the prior package.
+    PURPOSE:   The final visual, cued by the spoken handoff.
+    TRIGGER:   Watch “Before a Layoff, Know What You Can Still Prove” next.
+    MODE:      FULL SCREEN
+    REVEAL:    Label, rule, title, number.
+    EMPHASIS:  The title.
+    HOLD:      Hold to the end.
+    CAPTIONS:  No burned-in captions. Suppress any designed caption for the whole hold.
+    SOUND:     Candidate: one restrained transition sound, then music fade.
+    AFTER:     NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+FULL SCREEN
+  Frameworks, comparisons, multi-point concepts, substantive demonstrations, the resource card and Watch Next are TRUE FULL SCREEN. No moving Temidayo behind or around a major visual. Substantive B-roll fills the entire frame. Short single-idea callouts may sit over camera. After a full-screen teaching visual, return to camera only where the scene map calls for it. THIS NEVER APPLIES TO WATCH NEXT: Watch Next is the final visual and there is no return to camera afterward.
+
+CAMERA
+  About 3 to 5 deliberate camera-emphasis beats across the whole video. This is one combined budget: gentle push-ins on tension, insight or a reframe, with occasional pull-backs or a return to base framing to reset the rhythm. It is not 3 to 5 push-ins plus 3 to 5 pull-backs. No aggressive zooms, no pulsing, no constant reframing, no unnecessary digital movement. Preserve headroom and source quality.
+
+SOUND BUDGET
+  About 4 to 7 restrained audio accents for the ENTIRE video, including the one visual Subscribe cue. The per-frame sound candidates in the visual map are OPTIONAL and are not cumulative. Choose only the moments with the highest visual or intellectual payoff. Keep every effect clearly quieter than the voice. Pair the sound with a small visual action so both land together. If no sound improves the moment, leave it silent.
+
+B-ROLL
+  About 2 to 4 meaningful full-screen B-roll moments where useful. This is not a quota. No generic handshakes, fake boardrooms, smiling coworkers, meaningless typing, AI-looking people, or invented employer documents presented as real. Where an example is constructed, it carries its label.
+
+CAPTIONS
+  NO BURNED-IN OR OPEN CAPTIONS on the long-form video. Viewers use YouTube CC. Deliver a clean export with no persistent subtitles, a complete final transcript with names, frameworks, URLs and industry terms proofread, and an SRT generated against the FINAL edited timeline with synchronization checked after every jump cut and removal. Do not delete transcript words because the camera is hidden behind a graphic. Shorts and Reels may use designed captions.
+
+SUBSCRIBE
+  One brief visual Subscribe cue after meaningful value has already been delivered. Visual only. There is no spoken Subscribe request in the master and none is added. About 1 to 3 seconds including entrance and exit. Do not interrupt a useful pause or cover teaching content.
