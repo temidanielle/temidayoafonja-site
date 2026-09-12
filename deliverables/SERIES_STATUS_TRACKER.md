@@ -2499,10 +2499,22 @@ typography, and a structural Word-document QA gate. It changed no spoken master,
 framework, rendered teaching asset, Short, publishing copy, resource route or
 Watch Next destination.
 
-**The V4 to V21 package is closed. No further build is required.** Final-export
+**VIDEOS 4 TO 21 PRODUCTION HANDOFF CLOSED AND LOCKED.** Independently
+verified against the delivered archive on 12 September 2026. Do not rebuild,
+do not regenerate, and do not modify the archive to update a note or a
+timestamp. No further build is required.
+
+Final-export
 items — recorded delivery, actual runtime, executed motion, caption absence on
 the export, SRT sync, final chapters, thumbnail artwork approval, public link —
 remain pending until real recordings and edits exist.
+
+### Script-Only Thought Block copies — produced outside this build
+
+The final Script-Only Thought Block recording copies are being created directly
+from the locked masters in the accepted archive, in ChatGPT. **Do not run
+another V4 to V21 thought-block build.** No further Code build is needed for
+that task.
 
 ### Future engineering improvement — NOT to be applied to the locked archive
 
@@ -2518,9 +2530,13 @@ It is a change for a future batch.
 
 Neither concept has a video number. **Do not assign one, do not move or
 renumber V4 to V21, and do not build final production packages.** Research and
-editorial development come first. Final scripts are not to be written yet.
+editorial development come first. Final scripts are not to be written yet, and
+no thumbnail artwork is to be created.
 
-#### Future Video A
+They are named by title below rather than lettered, because the two have been
+referred to as A and B in both orders. The titles are unambiguous.
+
+#### Future concept — One accomplishment into career proof
 
 | Field | Value |
 |---|---|
@@ -2547,7 +2563,7 @@ performance review, an interview, an internal move or a career pivot.
 imply that every accomplishment becomes portable proof — the destination still
 determines what evidence matters.
 
-#### Future Video B
+#### Future concept — Reading a job description
 
 | Field | Value |
 |---|---|
@@ -2585,9 +2601,11 @@ that a surface reading misses.
 
 #### Research sequencing
 
-- **Future Video B is blocked on the current-job-description research package.**
+- **The job-description concept is blocked on the current-job-description
+  research package.**
   Do not script before it lands.
-- **Future Video A** may draw on the same job descriptions to establish what
+- **The career-proof concept** may draw on the same job descriptions to
+  establish what
   kinds of evidence employers actually need to see.
 - **Do not assume generic accomplishment language is equally persuasive across
   destination roles.**
