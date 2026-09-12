@@ -2478,6 +2478,42 @@ rather than asserting them.
 
 Restoration report: `VIDEOS_4-21_CORRECTED_RUNTIME/AUDIT/V6_V7_V8_Restoration_Report.docx`.
 
+### Handoff accepted — the delivered archive is the controlling artifact
+
+**`Videos_4-21_CORRECTED_RUNTIME_Production_Packages.zip`**
+**SHA-256 `7dbf2d56add4a91fd50f4f1f75c15908ec996a5932d70128bf7db190f8e0dfcb`**
+
+Accepted at 701 of 701 package checks. This acceptance is recorded here rather
+than inside the package, so the locked archive is not modified to carry a note
+about itself.
+
+`dcd8434320dce9cfb4d89d26365eaf20349efe0de46f5f643af60fea5e91445f` is
+**superseded**. It was the archive from the build immediately before the
+typographic correction, and it cannot be reproduced: every build writes its own
+clock time into the documents it generates, so any rebuild yields a third
+value. **Do not attempt to reproduce it, and do not rebuild.** Analysis:
+`VIDEOS_4-21_CORRECTED_RUNTIME/AUDIT/Handoff_Checksum_Condition_Analysis.docx`.
+
+The accepted rebuild carries corrected sentence-case explanatory text, corrected
+typography, and a structural Word-document QA gate. It changed no spoken master,
+framework, rendered teaching asset, Short, publishing copy, resource route or
+Watch Next destination.
+
+**The V4 to V21 package is closed. No further build is required.** Final-export
+items — recorded delivery, actual runtime, executed motion, caption absence on
+the export, SRT sync, final chapters, thumbnail artwork approval, public link —
+remain pending until real recordings and edits exist.
+
+### Future engineering improvement — NOT to be applied to the locked archive
+
+Make the document build timestamp **injectable** rather than read from the
+current clock, so that the same inputs plus the same injected build metadata
+produce the same output bytes and therefore a reproducible checksum. Today a
+checksum can only certify one specific artifact, never a rebuild of it.
+
+**Do not implement this by modifying the currently locked V4 to V21 archive.**
+It is a change for a future batch.
+
 ### Future reservations — RESERVED, UNNUMBERED, RESEARCH / DEVELOPMENT
 
 Neither concept has a video number. **Do not assign one, do not move or
@@ -2555,6 +2591,14 @@ that a surface reading misses.
   kinds of evidence employers actually need to see.
 - **Do not assume generic accomplishment language is equally persuasive across
   destination roles.**
+- **Use real, current public job postings only. Synthetic or model-generated
+  postings — Gemini's or any other's — must never be used as factual
+  evidence.**
+
+Evidence work for both concepts is being conducted separately in Claude Chat.
+Until the completed real-posting research package arrives **and** is explicitly
+approved, neither concept gets a video number, a script, a production package
+or thumbnail artwork, and nothing in V4 to V21 changes.
 
 These two are separate from the older four-item future topic queue above and do
 not displace it.
