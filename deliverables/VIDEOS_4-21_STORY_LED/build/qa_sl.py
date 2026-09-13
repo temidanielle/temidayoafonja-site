@@ -58,6 +58,38 @@ def all_units(pkg, authored_only=False, n=None):
     return out
 
 
+def source_corpus(n):
+    """Everything the story-led script and its labels actually say.
+
+    House style and content rules apply to what this build writes, not to
+    the source quoted back. Video 6 says "the better logo" in approved
+    speech, and Video 13's own section labels carry en dashes. Flagging a
+    derived document for repeating them would be asking the package to
+    correct approved copy, which is the one thing it must not do.
+    """
+    parts = [M.spoken_text(n)] + [lbl for lbl, _ in M.sections(n)]
+    parts += [M.title(n), M.thumbnail(n)]
+    return _flat(" ".join(parts)).lower()
+
+
+def _flat(x):
+    return re.sub(r"\s+", " ", x.replace("’", "'")).strip()
+
+
+def quoted(n, unit, hit, window=40):
+    """True when the offending fragment is the source's own wording."""
+    u, corpus = _flat(unit).lower(), source_corpus(n)
+    i = u.find(_flat(hit).lower())
+    if i < 0:
+        return False
+    frag = u[max(0, i - window):i + len(_flat(hit)) + window].strip()
+    while len(frag) > 16:
+        if frag in corpus:
+            return True
+        frag = frag[2:-2].strip() if len(frag) > 22 else frag[1:].strip()
+    return False
+
+
 def sha256(p):
     import hashlib
     h = hashlib.sha256()
@@ -165,9 +197,15 @@ def run(n, pkg):
         # Only a unit that specifies such a visual counts.
         FORBIDS = re.compile(r"\b(do not|does not|never|no |without)\b",
                              re.I)
-        specified = [u[:70] for u in authored
-                     if re.search(r"\b(logo|logos|screenshot|screenshots)\b",
-                                  u, re.I) and not FORBIDS.search(u)]
+        specified = []
+        for u in authored:
+            m_ = re.search(r"\b(logo|logos|screenshot|screenshots)\b", u,
+                           re.I)
+            if not m_ or FORBIDS.search(u):
+                continue
+            if quoted(n, u, m_.group(0)):
+                continue      # the script's own word, quoted back
+            specified.append(u[:70])
         ck("Constructed scenes are not dressed as real records",
            not specified,
            specified[:2] or "no logo, screenshot or real-company visual is "
@@ -175,8 +213,18 @@ def run(n, pkg):
            "prohibitions.")
 
     # ---- language
-    dash = [u[:70] for u in authored if "—" in u or "–" in u]
-    ck("No em dashes or en dashes", not dash, dash[:2] or "clean")
+    # Text documents are read in blocks, and a block can hold a rule line
+    # beside a label. Test the LINE the dash sits on, not the whole block,
+    # or the surrounding rule characters stop the fragment matching.
+    dash = []
+    for u in authored:
+        for line in u.split("\n"):
+            if "—" in line or "–" in line:
+                if not quoted(n, line, "—" if "—" in line else "–"):
+                    dash.append(line.strip()[:70])
+    ck("No em dashes or en dashes", not dash, dash[:2] or
+       "clean in everything this build authored. Source wording carrying "
+       "its own dashes is quoted verbatim and not corrected")
     brit = []
     for u in authored:
         m = BRIT.search(u)
