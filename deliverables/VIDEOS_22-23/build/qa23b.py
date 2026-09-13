@@ -14,6 +14,7 @@ import spine23b as SP
 import recdocs23b as R
 import shorts23b as SH
 import publish23b as PUB
+import langcheck23 as LANG
 from qa23 import (units, _flat, negated, NEG, sha256, BRITISH, EM_DASH)
 
 from docx import Document
@@ -92,10 +93,21 @@ def run(n, pkg, geo_problems, assets, reuse_rows):
     ck("Spoken wording unchanged",
        M.spoken_text(n) == "\n".join(M.paragraphs(n)),
        "the build reads the script and never rewrites it")
-    ck("Spoken words = %d by whitespace count" % M.word_count(n),
-       M.word_count(n) == (978 if n == 22 else 895),
-       "%d; supplied figure %d, explained in the source hierarchy"
-       % (M.word_count(n), M.DECLARED_WORDS[n]))
+    w, c = M.counts(n)
+    ck("Spoken words = %d by whitespace count" % w,
+       w == (980 if n == 22 else 897),
+       "%d whitespace, %d with the currency symbol counted separately; was "
+       "%d before the source-language correction"
+       % (w, c, M.WHITESPACE_PRE_CORRECTION[n]))
+
+    lang = LANG.findings(M.spoken_text(n))
+    ck("No unsupported audience-behavior claim in the spoken script",
+       not lang,
+       ["%s <- %s" % (a[:70], b) for a, b in lang]
+       or "%d sentences read; the check fires on both corrected sentences "
+          "and stays silent on quoted employer language, bounded "
+          "observations, possibility statements and viewer instructions"
+          % len(list(LANG._sentences(M.spoken_text(n)))))
 
     # ---------------------------------------------------------- packaging
     ck("Title exact", any(u.strip() == M.title(n) for u in us), M.title(n))

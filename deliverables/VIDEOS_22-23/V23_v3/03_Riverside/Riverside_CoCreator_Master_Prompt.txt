@@ -1,0 +1,510 @@
+==============================================================================
+VIDEO 23  |  RIVERSIDE CO-CREATOR MASTER EDITING PROMPT
+==============================================================================
+
+Turn One Accomplishment Into Proof in 10 Minutes
+Thumbnail: CAN YOU PROVE IT?
+Generated Sunday, September 13, 2026 | 6:13 PM CT
+
+897 spoken words by whitespace count. 18 camera stretches against 12
+full-screen cues, and 739 of the spoken words are delivered on camera.
+Runtime is observed at Temidayo's delivery pace. This script
+carries no timing markers, so nothing in it can be mistaken for a
+runtime, a chapter or an SRT time.
+
+------------------------------------------------------------------------------
+
+HOW TO USE THIS
+
+  Work down the spine. Where it says CAMERA, stay on Temidayo
+  for the whole stretch. Where it says FULL SCREEN, cut to the
+  named asset on the exact trigger sentence and follow the
+  reveal order. The copy on each card is already final; do not
+  retype it, and do not add teaching that is not in the script.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+  CAMERA-LED
+      Story, recognition, consequence and interpretation stay on Temidayo.
+      Do not cover a strong human opening with a graphic because an asset
+      exists. These scripts are shorter than the previous drafts and carry
+      fewer cues on purpose.
+
+  TRUE FULL SCREEN
+      Frameworks, comparisons, substantive examples and meaningful source
+      evidence take the whole screen. No presenter moving behind them, no
+      corner placement, no semi-transparent overlay for substantive
+      teaching.
+
+  ONE ACTIVE IDEA AT A TIME
+      Establish a structure whole, then activate one component, teach it,
+      and move on. Never leave four components competing while one is
+      explained.
+
+  SEQUENTIAL REVEALS, NOT BUTTONS
+      A numbered point is a reading order. YouTube is not interactive and
+      nothing should look clickable.
+
+  RESTRAINT
+      No constant zooming, no pulsing the frame, no accent on every
+      reveal, no animating every line. Stillness is allowed when the
+      viewer needs to read.
+
+  CAPTIONS
+      No burned-in captions in the long-form video. Generate the SRT in
+      Riverside after the final edit and verify it against the final
+      export.
+
+  WATCH NEXT
+      The Watch Next card is full screen and final. There is no return to
+      camera after it. The card is silent and no spoken line introduces
+      it.
+
+  RETIRED ASSETS
+      Cards the previous package carried are listed at the end of this
+      prompt. They have no cue in this script and must not be cut back in.
+
+------------------------------------------------------------------------------
+
+THE SPINE
+
+
+------------------------------------------------------------------------------
+SECTION 1  HOOK
+------------------------------------------------------------------------------
+
+  MODE:     FULL SCREEN
+  CLASS:    COPY UPDATE
+  TRIGGER:  "Led a cross-functional transformation that improved on-time delivery by 18 percent."
+  PURPOSE:
+      Put the weak sentence on screen exactly as a reader would meet it.
+  LAYOUT:
+      Claim card. One sentence, nothing to interpret it.
+  REVEAL ORDER:
+      1. ASSET: V23_FS_01_CLAIM.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold through the three short sentences after it. Cut to camera on
+      'And a stranger still cannot tell what you actually did.'
+  SOUND:
+      One accent as it lands.
+  SOURCE NOTE:
+      Synthetic example. Label carried because 18 percent is visible.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 3 paragraphs, 28 words.
+  FROM:  That sounds like a strong resume sentence.
+  TO:    And a stranger still cannot tell what you actually did.
+
+  MODE:     FULL SCREEN
+  CLASS:    COPY UPDATE
+  TRIGGER:  They cannot see what was broken before. They cannot see what you were allowed to decide. They cannot see what was hard. And they cannot see where the 18 percent came from.
+  PURPOSE:
+      Show what the sentence leaves unanswered, one question at a time, in
+      the four things the new hook names.
+  LAYOUT:
+      Sequential reveal. Earlier questions stay but quiet.
+  REVEAL ORDER:
+      1. ASSET: V23_FS_02A_BROKEN_BEFORE.png
+         On 'what was broken before'.
+      2. ASSET: V23_FS_02B_ALLOWED_TO_DECIDE.png
+         On 'what you were allowed to decide'.
+      3. ASSET: V23_FS_02C_WHAT_WAS_HARD.png
+         On 'what was hard'.
+      4. ASSET: V23_FS_02D_WHERE_THE_NUMBER_CAME_FROM.png
+         On 'where the 18 percent came from'. All four readable
+         together.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Build across the one spoken paragraph. Cut to camera for 'You did
+      the work. I believe you. The sentence does not.' That is the
+      strongest human moment in the video and must not be covered.
+  SOUND:
+      One quiet accent per question.
+  SOURCE NOTE:
+      Synthetic example. Label carried because 18 percent is visible.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 3 paragraphs, 11 words.
+  FROM:  You did the work.
+  TO:    The sentence does not.
+
+
+------------------------------------------------------------------------------
+SECTION 2  THE PROMISE
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 5 paragraphs, 70 words.
+  FROM:  Give me one accomplishment and I want you to rebuild it in four...
+  TO:    The point is to make it easier for someone who was not there to...
+
+
+------------------------------------------------------------------------------
+SECTION 3  THE FINISHED VERSION
+------------------------------------------------------------------------------
+
+  MODE:     FULL SCREEN
+  CLASS:    COPY UPDATE
+  TRIGGER:  Let me show you the finished version first.
+  PURPOSE:
+      Show the finished version first. The viewer sees what the framework
+      produces before being asked to learn it.
+  LAYOUT:
+      Completed four-line proof, then one line active at a time.
+  REVEAL ORDER:
+      1. ASSET: V23_FS_03_FOUR_LINE_PROOF.png
+         Establish. All four lines complete and readable.
+      2. ASSET: V23_FS_03A_PROBLEM_BEFORE.png
+         Activate line 1.
+      3. ASSET: V23_FS_03B_MINE_TO_DECIDE.png
+         Activate line 2.
+      4. ASSET: V23_FS_03C_JUDGMENT.png
+         Activate line 3.
+      5. ASSET: V23_FS_03D_PROOF_AND_HOW.png
+         Activate line 4.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Establish on 'Let me show you the finished version first.' Then one
+      activation per spoken line. Do not cut to camera between them.
+  SOUND:
+      One accent on establish. None on the activations.
+  SOURCE NOTE:
+      Synthetic example. 71 and 89 percent are both visible, so the label
+      is persistent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 5 paragraphs, 125 words.
+  FROM:  Problem before: Three depots ran their own dispatch. On-time del...
+  TO:    Same accomplishment.
+
+  MODE:     FULL SCREEN
+  CLASS:    COPY UPDATE
+  TRIGGER:  But now another person can question it, test it, and understand it.
+  PURPOSE:
+      One claim beside one reconstructed proof, because the contrast is
+      the whole teaching.
+  LAYOUT:
+      Side-by-side contrast.
+  REVEAL ORDER:
+      1. ASSET: V23_FS_04_CLAIM_VS_PROOF.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold through the sentence, then return to camera.
+  SOUND:
+      One accent.
+  SOURCE NOTE:
+      Synthetic example. 18 percent visible.
+
+
+------------------------------------------------------------------------------
+SECTION 4  LINE 1: PROBLEM BEFORE
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 8 paragraphs, 70 words.
+  FROM:  First, what was true before you stepped in?
+  TO:    Two sentences is usually enough.
+
+
+------------------------------------------------------------------------------
+SECTION 5  LINE 2: WHAT WAS MINE TO DECIDE
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 7 paragraphs, 68 words.
+  FROM:  This is the line I want you to spend the most time on.
+  TO:    Execution still contains decisions.
+
+  MODE:     FULL SCREEN
+  CLASS:    COPY UPDATE
+  TRIGGER:  What did you sequence? What did you escalate? What did you challenge? What did you recommend? What tradeoff did you put in front of someone else?
+  PURPOSE:
+      Protect execution. The five questions are the script's own, and
+      there are exactly five.
+  LAYOUT:
+      Five short questions, all visible.
+  REVEAL ORDER:
+      1. ASSET: V23_FS_07_EXECUTION_CONTAINS_CHOICES.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold through the five questions, then cut to camera for the sentence
+      about the postings.
+  SOUND:
+      One accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 14 words.
+  FROM:  Several senior roles in the postings I studied clearly described...
+  TO:    Several senior roles in the postings I studied clearly described...
+
+  MODE:     FULL SCREEN
+  CLASS:    COPY UPDATE
+  TRIGGER:  So this is not about pretending you had more authority than you did.
+  PURPOSE:
+      Draw the boundary explicitly, so naming a decision is not read as
+      claiming authority that was not there.
+  LAYOUT:
+      Two sides of one distinction.
+  REVEAL ORDER:
+      1. ASSET: V23_FS_08_AUTHORITY_BOUNDARY.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Cut on 'So this is not about pretending' and hold through 'the
+      decisions that were genuinely yours.'
+  SOUND:
+      One accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 10 words.
+  FROM:  It is about finding the decisions that were genuinely yours.
+  TO:    It is about finding the decisions that were genuinely yours.
+
+
+------------------------------------------------------------------------------
+SECTION 6  LINE 3: JUDGMENT
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 4 paragraphs, 42 words.
+  FROM:  Now ask:
+  TO:    That is where judgment starts to show.
+
+  MODE:     FULL SCREEN
+  CLASS:    COPY UPDATE
+  TRIGGER:  In the depot example, the distinctive part was not running the numbers.
+  PURPOSE:
+      Name the distinctive call after the viewer has felt it on camera,
+      not before.
+  LAYOUT:
+      Two sides of one decision. No figures.
+  REVEAL ORDER:
+      1. ASSET: V23_FS_10_THE_CALL.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Cut only after the scene has played on camera. Hold through 'That
+      call could have been wrong.'
+  SOUND:
+      No accent. The beat should stay quiet.
+  SOURCE NOTE:
+      Synthetic example. Label carried although no figure is shown.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 6 paragraphs, 54 words.
+  FROM:  It was deciding not to start with the worst depot.
+  TO:    You saw uncertainty, made a choice, and had a reason.
+
+
+------------------------------------------------------------------------------
+SECTION 7  LINE 4: PROOF AND HOW I KNOW
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 2 paragraphs, 9 words.
+  FROM:  Last line:
+  TO:    What changed, and how do you know?
+
+  MODE:     FULL SCREEN
+  CLASS:    COPY UPDATE
+  TRIGGER:  Those are two separate things.
+  PURPOSE:
+      Result and mechanism are two separate things. Show them joined, not
+      opposed.
+  LAYOUT:
+      Two-part card, filled with the example on the second state.
+  REVEAL ORDER:
+      1. ASSET: V23_FS_12A_TWO_HALVES.png
+         The two halves, named.
+      2. ASSET: V23_FS_12B_FILLED.png
+         Fill both halves from the example, in the script's own words.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      A on 'Those are two separate things.' B across the two quoted
+      sentences.
+  SOUND:
+      One accent on A, one on B.
+  SOURCE NOTE:
+      Synthetic example. 89 percent visible on B.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 7 paragraphs, 75 words.
+  FROM:  "On-time delivery reached 89 percent" is the result.
+  TO:    Show me why I should believe the number.
+
+
+------------------------------------------------------------------------------
+SECTION 8  WHAT CHANGED
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 4 paragraphs, 51 words.
+  FROM:  Now compare the weak sentence with the four-line version.
+  TO:    what was broken, what you did and did not own, what decision was...
+
+  MODE:     FULL SCREEN
+  CLASS:    REUSE
+  TRIGGER:  Good proof does not make your role sound bigger than it was.
+  PURPOSE:
+      The central editorial payoff of the video, given the screen.
+  LAYOUT:
+      Statement.
+  REVEAL ORDER:
+      1. ASSET: V23_FS_13_THE_PAYOFF.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Cut on the sentence and hold through the one that follows it.
+  SOUND:
+      One restrained accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 9 words.
+  FROM:  It makes what you actually carried easier to judge.
+  TO:    It makes what you actually carried easier to judge.
+
+
+------------------------------------------------------------------------------
+SECTION 9  THE CATCH
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 5 paragraphs, 39 words.
+  FROM:  There is one catch.
+  TO:    Another may care that you delivered without formal authority.
+
+  MODE:     FULL SCREEN
+  CLASS:    COPY UPDATE
+  TRIGGER:  And another may still require domain knowledge, a credential, regulated experience, or direct exposure you do not have.
+  PURPOSE:
+      Close the video without implying that better evidence removes a real
+      requirement.
+  LAYOUT:
+      Four requirements the script names, all visible.
+  REVEAL ORDER:
+      1. ASSET: V23_FS_16_REAL_GAP_REMAINS.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold through the sentence.
+  SOUND:
+      No accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 3 paragraphs, 21 words.
+  FROM:  So reconstruct the accomplishment once.
+  TO:    Do not rewrite history to fit the role.
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  Change the emphasis, not the truth.
+  PURPOSE:
+      The final distinction of the video, given its own card because it is
+      the line that keeps the whole method honest.
+  LAYOUT:
+      Statement.
+  REVEAL ORDER:
+      1. ASSET: V23_FS_18_CHANGE_THE_EMPHASIS.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold until the sentence lands, then cut back.
+  SOUND:
+      One restrained accent.
+
+
+------------------------------------------------------------------------------
+SECTION 10  CTA
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 3 paragraphs, 12 words.
+  FROM:  Pick one accomplishment you remember clearly.
+  TO:    Just one.
+
+  MODE:     FULL SCREEN
+  CLASS:    COPY UPDATE
+  TRIGGER:  Write four lines:
+  PURPOSE:
+      One action and one resource. Nothing stacked behind them.
+  LAYOUT:
+      Action card, then the single resource line.
+  REVEAL ORDER:
+      1. ASSET: V23_FS_17A_FOUR_LINES.png
+         The four lines, on the sentence that names them.
+      2. ASSET: V23_FS_17B_RESOURCE.png
+         Add the one resource, on the sentence that names it.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      A on 'Write four lines:'. B on the resource sentence, held to the
+      end of the spoken line.
+  SOUND:
+      One accent on A, one on B.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 2 paragraphs, 31 words.
+  FROM:  Problem before. What was mine to decide. Judgment. Proof and how...
+  TO:    If you want the prompts and worked examples in one place, the Ca...
+
+------------------------------------------------------------------------------
+
+RETIRED. DO NOT CUT THESE BACK IN.
+
+  V23_FS_05_WHY_THE_ROLE_EXISTS
+      The new script does not make the fifteen-of-fifteen claim.
+
+  V23_FS_06_KINDS_OF_AUTHORITY
+      The new script does not list the authority verbs in V23.
+
+  V23_FS_09_JUDGMENT_IS_NOT_ONLY_ANALYSIS
+      The new judgment section teaches through the depot scene rather than
+      through a list of forms of judgment.
+
+  V23_FS_11_NINE_OF_FIFTEEN
+      The new script states the research in bounded prose and makes no
+      nine-of-fifteen claim.
+
+  V23_FS_14_SAME_COMPANY
+      The new script drops the same-company comparison entirely.
+
+  V23_FS_15_DIFFERENT_DOOR
+      With the comparison gone there is no different-door conclusion to
+      land.
+
+------------------------------------------------------------------------------
+
+AFTER THE EDIT
+
+  Generate the SRT in Riverside and verify it against the final
+  export. Create chapters from real export timing. Neither exists
+  in this package and neither should be invented before the cut.

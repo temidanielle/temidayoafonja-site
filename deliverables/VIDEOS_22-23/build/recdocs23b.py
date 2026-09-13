@@ -12,8 +12,10 @@ WPM_LOW, WPM_HIGH = 130, 145
 def header(d, n, kind, stamp):
     title_block(d, "capability formation | v%d" % n, M.title(n), kind)
     kv(d, "Thumbnail", M.script_header_thumbnail(n))
-    kv(d, "Spoken words", "%s by whitespace count, %s as supplied"
-       % (format(M.word_count(n), ","), format(M.DECLARED_WORDS[n], ",")))
+    w, c = M.counts(n)
+    kv(d, "Spoken words", "%s by whitespace count, %s with the currency "
+                          "symbol counted separately"
+       % (format(w, ","), format(c, ",")))
     lo, hi = M.estimate(n)
     kv(d, "Arithmetic estimate", "%s to %s at %d to %d words per minute"
        % (lo, hi, WPM_LOW, WPM_HIGH))

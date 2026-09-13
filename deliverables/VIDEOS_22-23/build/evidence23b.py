@@ -186,6 +186,20 @@ def claim_notes(n, path, stamp):
     return path
 
 
+def _wrap(t, w):
+    out, cur = [], ""
+    for x in t.split():
+        s = (cur + " " + x).strip()
+        if len(s) > w and cur:
+            out.append(cur)
+            cur = x
+        else:
+            cur = s
+    if cur:
+        out.append(cur)
+    return out
+
+
 def hierarchy(path, stamp, prior_sha):
     L = head("V22 AND V23  |  SOURCE HIERARCHY AND MANIFEST")
     L += ["Generated %s" % stamp, "", hr(), "",
@@ -214,7 +228,7 @@ def hierarchy(path, stamp, prior_sha):
           "  production document this build writes, which QA checks rather",
           "  than assumes.",
           "", hr(), "", "PRIOR PACKAGE, PRESERVED", "",
-          "  YouTube_V22-V23_FINAL_Production_Packages_2026-09-13.zip",
+          "  YouTube_V22-V23_FINAL_Production_Packages_2026-09-13_v2.zip",
           "  sha256 %s" % prior_sha,
           "",
           "  Not modified and not overwritten. It is no longer the active",
@@ -229,18 +243,34 @@ def hierarchy(path, stamp, prior_sha):
               "      TITLE      %s" % M.title(n),
               "      THUMBNAIL  %s" % M.script_header_thumbnail(n),
               "      WORDS      %s spoken" % format(M.word_count(n), ","), ""]
-    L += [hr(), "", "WORD COUNT, AND WHY TWO FIGURES EXIST", "",
-          "  The supplied figures are V22 982 and V23 895.",
-          "  Whitespace tokenization of the spoken text gives V22 978 and",
-          "  V23 895.",
+    L += [hr(), "", "SOURCE-LANGUAGE CORRECTIONS", "",
+          "  Two sentences were replaced in the FINAL scripts, each",
+          "  authorized explicitly and each the only change to its script.",
+          "  Both removed an unsupported claim about what people do without",
+          "  altering the teaching.", ""]
+    for n in M.VIDEOS:
+        old, new = M.CORRECTIONS[n]
+        L += ["  V%d" % n]
+        L += ["      WAS  %s" % x for x in _wrap(old, 64)]
+        L += ["      NOW  %s" % x for x in _wrap(new, 64)]
+        L.append("")
+    L += [hr(), "", "WORD COUNT", ""]
+    for n in M.VIDEOS:
+        w, c = M.counts(n)
+        L += ["  V%d  %d spoken words by whitespace count" % (n, w),
+              "       %d with the currency symbol counted separately" % c,
+              "       %d before the correction; the roadmap supplied %d"
+              % (M.WHITESPACE_PRE_CORRECTION[n],
+                 M.SUPPLIED_PRE_CORRECTION[n])]
+    L += ["",
+          "  The two counting methods differ only by the currency figures.",
+          "  V22 contains exactly four: $61,500, $248,000, $180,000 and",
+          "  $440,000. A counter that separates the symbol from the numeral",
+          "  counts each as two tokens. V23 contains none, which is why the",
+          "  two methods agree there exactly.",
           "",
-          "  The V22 difference is fully explained and nothing was changed.",
-          "  The script contains exactly four currency figures: $61,500,",
-          "  $248,000, $180,000 and $440,000. A counter that separates the",
-          "  currency symbol from the numeral counts each as two tokens,",
-          "  which is 978 plus 4, or 982. V23 contains no currency figure,",
-          "  which is why the two methods agree there exactly.",
-          "",
-          "  Both figures describe the same unchanged script. No wording was",
-          "  altered to make either number work.", ""]
+          "  The roadmap's supplied figures describe the scripts before the",
+          "  corrections above and are kept as the historical record, not as",
+          "  a live target. No wording was altered to make any number work.",
+          ""]
     return mono(path, L)

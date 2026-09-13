@@ -25,8 +25,23 @@ VIDEOS = (22, 23)
 BUILD_DATE = "September 13, 2026"
 CAPTURE_DATE = "September 12, 2026"
 
-# The supplied counts, asserted rather than assumed.
-DECLARED_WORDS = {22: 982, 23: 895}
+# The roadmap supplied 982 and 895. Those figures describe the scripts as
+# they stood BEFORE the September 13 source-language corrections, and they are
+# kept here as the historical record rather than as a live target.
+SUPPLIED_PRE_CORRECTION = {22: 982, 23: 895}
+WHITESPACE_PRE_CORRECTION = {22: 978, 23: 895}
+
+# The two corrections, for the record. Each was authorized explicitly and
+# each replaced exactly one paragraph.
+CORRECTIONS = {
+ 22: ("Then ask the question people sometimes skip because they want the "
+      "move to work:",
+      "Then ask the question that is easy to skip when you want the move to "
+      "work:"),
+ 23: ("This is the line I think experienced professionals struggle with "
+      "most.",
+      "This is the line I want you to spend the most time on."),
+}
 
 LABEL = re.compile(r"^\[([^\]]+)\]\s*")
 META = re.compile(r"^(THUMBNAIL:|Created |Editorial role:)")
@@ -170,10 +185,33 @@ def manifest():
     return rows
 
 
+def currency_tokens(n):
+    """Figures beginning with a currency symbol.
+
+    A counter that separates the symbol from the numeral counts each of these
+    as two tokens. That is the whole of the difference between the roadmap's
+    supplied figure and a whitespace count of the same text.
+    """
+    return [w for w in spoken_text(n).split() if w.startswith("$")]
+
+
+def counts(n):
+    """(whitespace, currency-separated) word counts for the current script."""
+    w = word_count(n)
+    return w, w + len(currency_tokens(n))
+
+
 def verify_counts():
-    """The supplied word counts, checked rather than trusted."""
-    bad = [(n, word_count(n), DECLARED_WORDS[n]) for n in VIDEOS
-           if word_count(n) != DECLARED_WORDS[n]]
+    """The two counting methods must still differ by exactly the currency
+    tokens, and each script must still carry its correction."""
+    bad = []
+    for n in VIDEOS:
+        w, c = counts(n)
+        if c - w != len(currency_tokens(n)):
+            bad.append((n, "currency reconciliation", w, c))
+        old, new = CORRECTIONS[n]
+        if old in spoken_text(n) or new not in spoken_text(n):
+            bad.append((n, "correction not applied", old[:40], new[:40]))
     return not bad, bad
 
 
@@ -183,8 +221,12 @@ if __name__ == "__main__":
         print("    thumbnail (script header)  %s" % script_header_thumbnail(n))
         print("    sections   %d" % len(sections(n)))
         print("    paragraphs %d" % len(paragraphs(n)))
-        print("    words      %d  (declared %d)"
-              % (word_count(n), DECLARED_WORDS[n]))
+        w, c = counts(n)
+        print("    words      %d whitespace, %d with the currency symbol "
+              "counted separately" % (w, c))
+        print("    was        %d whitespace, %d supplied, before the "
+              "correction" % (WHITESPACE_PRE_CORRECTION[n],
+                              SUPPLIED_PRE_CORRECTION[n]))
         print("    estimate   %s to %s" % estimate(n))
         print("    sha        %s" % read(n)["sha"])
         for lab, ps in sections(n):

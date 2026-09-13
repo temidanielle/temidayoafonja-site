@@ -34,8 +34,8 @@ SUB = ["00_Source_Hierarchy", "01_Recording", "02_Run_of_Show",
        "03_Riverside", "04_Visual_Assets", "05_Shorts", "06_Publishing",
        "07_Evidence", "08_QA"]
 ZIP_DT = (2026, 9, 13, 0, 0, 0)
-ARCHIVE = "YouTube_V22-V23_FINAL_Production_Packages_2026-09-13_v2.zip"
-PRIOR = "YouTube_V22-V23_FINAL_Production_Packages_2026-09-13.zip"
+ARCHIVE = "YouTube_V22-V23_FINAL_Production_Packages_2026-09-13_v3.zip"
+PRIOR = "YouTube_V22-V23_FINAL_Production_Packages_2026-09-13_v2.zip"
 
 
 def stamp():
@@ -137,8 +137,10 @@ def qa_report(n, path, st, rows, geo, made, svgs):
     cam, full = SP.counts(n)
     kv(d, "Spine", "%d camera stretches against %d full-screen cues"
        % (cam, full))
-    kv(d, "Spoken words", "%s by whitespace count, %s as supplied"
-       % (format(M.word_count(n), ","), format(M.DECLARED_WORDS[n], ",")))
+    w, c = M.counts(n)
+    kv(d, "Spoken words", "%s by whitespace count, %s with the currency "
+                          "symbol counted separately"
+       % (format(w, ","), format(c, ",")))
     callout(d, "No spoken wording was changed. Every figure here is "
                "arithmetic on the approved script; nothing has been "
                "recorded, edited or exported.")
@@ -152,7 +154,7 @@ def qa_report(n, path, st, rows, geo, made, svgs):
 
 
 def package(n, st, reuse_rows):
-    pkg = os.path.join(OUT, "V%d_v2" % n)
+    pkg = os.path.join(OUT, "V%d_v3" % n)
     if os.path.isdir(pkg):
         shutil.rmtree(pkg)
     for s in SUB:
@@ -195,7 +197,7 @@ def changelog(path, st, reuse_rows, prior):
     d = base_doc()
     title_block(d, "capability formation | v22 and v23",
                 "Master changelog and source hierarchy",
-                "Synchronization pass against the September 13 FINAL scripts")
+                "Source-language micro-sync against the corrected FINAL scripts")
     kv(d, "Generated", st)
     kv(d, "Prior archive", PRIOR)
     kv(d, "Prior SHA-256", prior)
@@ -207,8 +209,8 @@ def changelog(path, st, reuse_rows, prior):
           [["V22 title", "How to Decode a Job Description", M.title(22)],
            ["V22 thumbnail", "IGNORE THE TITLE",
             M.script_header_thumbnail(22)],
-           ["V22 spoken words", "1,345", "%d by whitespace count, %d as "
-            "supplied" % (M.word_count(22), M.DECLARED_WORDS[22])],
+           ["V22 spoken words", "1,345", "%d by whitespace count, %d with "
+            "the currency symbol counted separately" % M.counts(22)],
            ["V23 title", "Turn One Accomplishment Into Career Proof",
             M.title(23)],
            ["V23 thumbnail", "YOU DID IT. CAN YOU PROVE IT?",
@@ -294,8 +296,15 @@ def main():
     st = stamp()
     print("stamp:", st)
     ok, bad = M.verify_counts()
-    print("supplied word counts reproduced by whitespace count:", ok,
+    print("source-language corrections applied and counts reconciled:", ok,
           "" if ok else bad)
+    for n in M.VIDEOS:
+        w, c = M.counts(n)
+        print("   V%d  %d whitespace, %d currency-separated (was %d, "
+              "supplied %d)" % (n, w, c, M.WHITESPACE_PRE_CORRECTION[n],
+                                M.SUPPLIED_PRE_CORRECTION[n]))
+    if not ok:
+        raise SystemExit("source verification failed")
     reuse_rows = RU.run()
     mm = [r for r in reuse_rows if r[2] != r[3]]
     print("reuse classes measured against the previous package: %d families, "
@@ -322,7 +331,7 @@ def main():
             print("      FAIL  %s  ->  %s" % (nm, dd))
         pkgs[n] = pkg
 
-    sh = os.path.join(OUT, "Shared_v2")
+    sh = os.path.join(OUT, "Shared_v3")
     if os.path.isdir(sh):
         shutil.rmtree(sh)
     os.makedirs(sh)
@@ -333,7 +342,7 @@ def main():
     qa_summary(os.path.join(sh, "V22-V23_PACKAGE_QA_SUMMARY.docx"), st,
                results)
 
-    tmp = os.path.join(OUT, "_stage_v2")
+    tmp = os.path.join(OUT, "_stage_v3")
     if os.path.isdir(tmp):
         shutil.rmtree(tmp)
     os.makedirs(tmp)

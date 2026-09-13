@@ -38,9 +38,10 @@ def run_of_show(n, path, stamp):
     para(d, M.script_header_thumbnail(n), size=13, bold=True, after=12)
     caption(d, "Both are exact. Thumbnail artwork is approved separately and "
                "is not part of this package.")
-    kv(d, "Spoken words", "%s by whitespace count, %s as supplied"
-       % (format(M.word_count(n), ","),
-          format(M.DECLARED_WORDS[n], ",")))
+    w, c = M.counts(n)
+    kv(d, "Spoken words", "%s by whitespace count, %s with the currency "
+                          "symbol counted separately"
+       % (format(w, ","), format(c, ",")))
     kv(d, "Arithmetic estimate", "%s to %s. Not a runtime." % (lo, hi))
     kv(d, "Generated", stamp)
     callout(d, "The numbers in the first column are sequence positions, not "

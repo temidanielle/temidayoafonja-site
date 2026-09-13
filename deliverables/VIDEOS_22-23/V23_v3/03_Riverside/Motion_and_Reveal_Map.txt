@@ -1,0 +1,132 @@
+==============================================================================
+VIDEO 23  |  MOTION AND REVEAL MAP
+==============================================================================
+
+Turn One Accomplishment Into Proof in 10 Minutes
+
+Reveal order for every card that has more than one state, and the
+emphasis state of each. Because YouTube is not interactive, a
+numbered point is a reading order, never a button.
+
+------------------------------------------------------------------------------
+
+V23_FS_01_CLAIM   (COPY UPDATE)
+    TRIGGER:    "Led a cross-functional transformation that improved on-time delivery by 18 percent."
+    LAYOUT:     Claim card. One sentence, nothing to interpret it.
+    TREATMENT:  ARTIFACT
+    BUILD:      SINGLE
+    1. V23_FS_01_CLAIM                            Single state.
+    HOLD:       Hold through the three short sentences after it. Cut to camera on 'And a stranger still cannot tell what you actually did.'
+
+V23_FS_02_UNANSWERED   (COPY UPDATE)
+    TRIGGER:    They cannot see what was broken before. They cannot see what you were allowed to decide. They cannot see what was hard. And they cannot see where the 18 percent came from.
+    LAYOUT:     Sequential reveal. Earlier questions stay but quiet.
+    TREATMENT:  SEQUENCE
+    BUILD:      ARRIVE
+    1. V23_FS_02A_BROKEN_BEFORE                   On 'what was broken before'.
+    2. V23_FS_02B_ALLOWED_TO_DECIDE               On 'what you were allowed to decide'.
+    3. V23_FS_02C_WHAT_WAS_HARD                   On 'what was hard'.
+    4. V23_FS_02D_WHERE_THE_NUMBER_CAME_FROM      On 'where the 18 percent came from'. All four readable together.
+    HOLD:       Build across the one spoken paragraph. Cut to camera for 'You did the work. I believe you. The sentence does not.' That is the strongest human moment in the video and must not be covered.
+
+V23_FS_03_FOUR_LINE_PROOF   (COPY UPDATE)
+    TRIGGER:    Let me show you the finished version first.
+    LAYOUT:     Completed four-line proof, then one line active at a time.
+    TREATMENT:  SEQUENCE
+    BUILD:      ESTABLISH
+    1. V23_FS_03_FOUR_LINE_PROOF                  Establish. All four lines complete and readable.
+    2. V23_FS_03A_PROBLEM_BEFORE                  Activate line 1.
+    3. V23_FS_03B_MINE_TO_DECIDE                  Activate line 2.
+    4. V23_FS_03C_JUDGMENT                        Activate line 3.
+    5. V23_FS_03D_PROOF_AND_HOW                   Activate line 4.
+    HOLD:       Establish on 'Let me show you the finished version first.' Then one activation per spoken line. Do not cut to camera between them.
+
+V23_FS_04_CLAIM_VS_PROOF   (COPY UPDATE)
+    TRIGGER:    But now another person can question it, test it, and understand it.
+    LAYOUT:     Side-by-side contrast.
+    TREATMENT:  COMPARISON
+    BUILD:      SINGLE
+    1. V23_FS_04_CLAIM_VS_PROOF                   Single state.
+    HOLD:       Hold through the sentence, then return to camera.
+
+V23_FS_07_EXECUTION_CONTAINS_CHOICES   (COPY UPDATE)
+    TRIGGER:    What did you sequence? What did you escalate? What did you challenge? What did you recommend? What tradeoff did you put in front of someone else?
+    LAYOUT:     Five short questions, all visible.
+    TREATMENT:  SEQUENCE
+    BUILD:      SINGLE
+    1. V23_FS_07_EXECUTION_CONTAINS_CHOICES       Single state.
+    HOLD:       Hold through the five questions, then cut to camera for the sentence about the postings.
+
+V23_FS_08_AUTHORITY_BOUNDARY   (COPY UPDATE)
+    TRIGGER:    So this is not about pretending you had more authority than you did.
+    LAYOUT:     Two sides of one distinction.
+    TREATMENT:  COMPARISON
+    BUILD:      SINGLE
+    1. V23_FS_08_AUTHORITY_BOUNDARY               Single state.
+    HOLD:       Cut on 'So this is not about pretending' and hold through 'the decisions that were genuinely yours.'
+
+V23_FS_10_THE_CALL   (COPY UPDATE)
+    TRIGGER:    In the depot example, the distinctive part was not running the numbers.
+    LAYOUT:     Two sides of one decision. No figures.
+    TREATMENT:  COMPARISON
+    BUILD:      SINGLE
+    1. V23_FS_10_THE_CALL                         Single state.
+    HOLD:       Cut only after the scene has played on camera. Hold through 'That call could have been wrong.'
+
+V23_FS_12_TWO_HALVES   (COPY UPDATE)
+    TRIGGER:    Those are two separate things.
+    LAYOUT:     Two-part card, filled with the example on the second state.
+    TREATMENT:  COMPARISON
+    BUILD:      BUILD
+    1. V23_FS_12A_TWO_HALVES                      The two halves, named.
+    2. V23_FS_12B_FILLED                          Fill both halves from the example, in the script's own words.
+    HOLD:       A on 'Those are two separate things.' B across the two quoted sentences.
+
+V23_FS_13_THE_PAYOFF   (REUSE)
+    TRIGGER:    Good proof does not make your role sound bigger than it was.
+    LAYOUT:     Statement.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. V23_FS_13_THE_PAYOFF                       Single state.
+    HOLD:       Cut on the sentence and hold through the one that follows it.
+
+V23_FS_16_REAL_GAP_REMAINS   (COPY UPDATE)
+    TRIGGER:    And another may still require domain knowledge, a credential, regulated experience, or direct exposure you do not have.
+    LAYOUT:     Four requirements the script names, all visible.
+    TREATMENT:  SEQUENCE
+    BUILD:      SINGLE
+    1. V23_FS_16_REAL_GAP_REMAINS                 Single state.
+    HOLD:       Hold through the sentence.
+
+V23_FS_18_CHANGE_THE_EMPHASIS   (NEW)
+    TRIGGER:    Change the emphasis, not the truth.
+    LAYOUT:     Statement.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. V23_FS_18_CHANGE_THE_EMPHASIS              Single state.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+V23_FS_17_CTA   (COPY UPDATE)
+    TRIGGER:    Write four lines:
+    LAYOUT:     Action card, then the single resource line.
+    TREATMENT:  CTA
+    BUILD:      BUILD
+    1. V23_FS_17A_FOUR_LINES                      The four lines, on the sentence that names them.
+    2. V23_FS_17B_RESOURCE                        Add the one resource, on the sentence that names it.
+    HOLD:       A on 'Write four lines:'. B on the resource sentence, held to the end of the spoken line.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+  One active idea at a time. When a framework is being taught,
+  one component is warm and the rest are quiet.
+
+  Establish the whole structure before activating any part of it.
+
+  No animation whose only purpose is to keep the screen moving.
+  Stillness is allowed when the viewer needs to read or think.
+
+  No fake buttons, progress bars, quiz interfaces or dashboards.
+
+  A card never moves while the presenter moves behind it.

@@ -1,0 +1,118 @@
+==============================================================================
+V22 AND V23  |  SOURCE HIERARCHY AND MANIFEST
+==============================================================================
+
+Generated Sunday, September 13, 2026 | 6:13 PM CT
+
+------------------------------------------------------------------------------
+
+ORDER OF AUTHORITY
+
+  1  Video_22_FINAL_Story_Led_Recording_Script.docx
+  2  Video_23_FINAL_Story_Led_Recording_Script.docx
+        Title, thumbnail, spoken wording and editorial sequence.
+        These supersede the 50CHAR advisor-review scripts the
+        previous package was built from.
+
+  3  V22-V38_Roadmap_Extension_Overview_and_Editorial_Map.docx
+        Locked packaging and the runtime map. It does not
+        override exact spoken wording.
+
+  4  Internal Source Capture Packet
+        Provenance, employer and posting evidence, research
+        boundaries, source presentation, anonymization and the
+        synthetic-example rules. Unchanged by this pass.
+
+------------------------------------------------------------------------------
+
+SUPERSEDED. NOT USED AS CURRENT SOURCE.
+
+  Title:     How to Decode a Job Description
+  Title:     Turn One Accomplishment Into Career Proof
+  Thumbnail: YOU DID IT. CAN YOU PROVE IT?
+
+  The 50CHAR advisor-review scripts are no longer current
+  spoken source. None of the above appears in any active
+  production document this build writes, which QA checks rather
+  than assumes.
+
+------------------------------------------------------------------------------
+
+PRIOR PACKAGE, PRESERVED
+
+  YouTube_V22-V23_FINAL_Production_Packages_2026-09-13_v2.zip
+  sha256 4b87c7bc35c30fdd6ff212f3fd1a66887174d1d705950d877aacef6cc4416682
+
+  Not modified and not overwritten. It is no longer the active
+  production handoff.
+
+------------------------------------------------------------------------------
+
+SOURCE FILES, AS SUPPLIED
+
+  Video_22_FINAL_Story_Led_Recording_Script.docx
+      sha256  e1c2ddd79da7c73e6046d8f8d3a6281509ae9c584b61a40164a678b330b3f972
+      bytes   39,845
+
+  Video_23_FINAL_Story_Led_Recording_Script.docx
+      sha256  719d2359600cc8b03d997e76e9b24c14b49a0674e0b37708b028f4702406de38
+      bytes   39,586
+
+  V22-V38_Roadmap_Extension_Overview_and_Editorial_Map.docx
+      sha256  ff256c3269aae160a8a1afa39a07e642e5766f95c0ecf0de4160d8f864a06d20
+      bytes   40,325
+
+------------------------------------------------------------------------------
+
+LOCKED PACKAGING
+
+  V22
+      TITLE      Decode a Job Description in 10 Minutes
+      THUMBNAIL  IGNORE THE TITLE
+      WORDS      980 spoken
+
+  V23
+      TITLE      Turn One Accomplishment Into Proof in 10 Minutes
+      THUMBNAIL  CAN YOU PROVE IT?
+      WORDS      897 spoken
+
+------------------------------------------------------------------------------
+
+SOURCE-LANGUAGE CORRECTIONS
+
+  Two sentences were replaced in the FINAL scripts, each
+  authorized explicitly and each the only change to its script.
+  Both removed an unsupported claim about what people do without
+  altering the teaching.
+
+  V22
+      WAS  Then ask the question people sometimes skip because they want
+      WAS  the move to work:
+      NOW  Then ask the question that is easy to skip when you want the
+      NOW  move to work:
+
+  V23
+      WAS  This is the line I think experienced professionals struggle with
+      WAS  most.
+      NOW  This is the line I want you to spend the most time on.
+
+------------------------------------------------------------------------------
+
+WORD COUNT
+
+  V22  980 spoken words by whitespace count
+       984 with the currency symbol counted separately
+       978 before the correction; the roadmap supplied 982
+  V23  897 spoken words by whitespace count
+       897 with the currency symbol counted separately
+       895 before the correction; the roadmap supplied 895
+
+  The two counting methods differ only by the currency figures.
+  V22 contains exactly four: $61,500, $248,000, $180,000 and
+  $440,000. A counter that separates the symbol from the numeral
+  counts each as two tokens. V23 contains none, which is why the
+  two methods agree there exactly.
+
+  The roadmap's supplied figures describe the scripts before the
+  corrections above and are kept as the historical record, not as
+  a live target. No wording was altered to make any number work.
