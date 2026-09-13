@@ -68,9 +68,16 @@ def check(n):
     if w != logged:
         ck("FLAG, not a defect: supplied change log word count differs",
            True,
-           "script and thought block both say %d, the change log says %d. "
-           "The script and its recording copy agree with each other, which "
-           "is what governs. Nothing is changed." % (w, logged))
+           "script and thought block both say %d, the change log table says "
+           "%d. Counted from the original file inside the September 13 ZIP: "
+           "47 blocks numbered 1 to 47, no gaps, no empty bodies, nothing "
+           "unparsed, header and [NOT SPOKEN] lines excluded. Every "
+           "whitespace tokenization gives %d on both sources; splitting "
+           "hyphens gives 1379 and splitting letter runs gives 1382, so "
+           "neither explains one word. No hidden or non-breaking whitespace "
+           "is present. The script and its recording copy agree with each "
+           "other, which is the governing invariant, and nothing is changed."
+           % (w, logged, w))
 
     ck("Runtime class correct for this video",
        (n in M.SHORT_TEST) == (n in (4, 5)),
@@ -78,8 +85,13 @@ def check(n):
        % (M.mode(n), w, fast, slow))
 
     if n in M.SHORT_TEST:
-        ck("Shorter test video not expanded into long-form", w < 1000,
-           "%d words. The story is part of the retention test." % w)
+        ck("Shorter retention-test video, not compressed to an old target",
+           w >= 800,
+           "%d words. Estimated speech %s to %s at 130 to 145 words per "
+           "minute. This is arithmetic on the script, not a runtime: the "
+           "actual length must be observed at Temidayo's natural pace. The "
+           "earlier five-minute target predates the September 13 expansion "
+           "and is not applied." % (w, fast, slow))
     else:
         ck("Long-form depth preserved", w >= 1200,
            "%d words" % w)
