@@ -260,7 +260,10 @@ def publish_materials(n, path, s):
     numbered(d, [
       "Thumbnail artwork approved separately, checked at 200 px wide. "
       "Artwork is NOT rebuilt by this pass.",
-      "Title and thumbnail wording match the story-led script header.",
+      ("Title matches the story-led script header; thumbnail wording "
+       "matches the locked V4 to V21 roadmap."
+       if PK.is_exception(n) else
+       "Title and thumbnail wording match the story-led script header."),
       "Description resource link tested while signed out." if res else
       "No resource link appears anywhere, because the script names none.",
       "Watch Next URL inserted once that video is published. Not before.",

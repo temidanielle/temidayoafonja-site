@@ -91,6 +91,35 @@ def quoted(n, unit, hit, window=40):
     return False
 
 
+# Wording that asserts the thumbnail follows the script header.
+_HEADER_CLAIM = re.compile(
+    r"thumbnail[^.]{0,80}\b(match|matches|taken from|comes from|from)\b"
+    r"[^.]{0,40}script header|"
+    r"title and thumbnail[^.]{0,60}\bscript header\b", re.I)
+
+
+def _header_thumbnail_claims(pkg):
+    """Sentences that would read as the script header being the thumbnail
+    authority. A sentence that denies it is not a claim."""
+    out = []
+    for p in _pkg_files(pkg):
+        for u in units(p) if p.endswith(".docx") else [
+                l for l in open(p, encoding="utf-8").read().split("\n")
+                if l.strip()]:
+            flat = _flat(u)
+            for m in _HEADER_CLAIM.finditer(flat):
+                start = max(flat.rfind(". ", 0, m.start()), m.start() - 160,
+                            0)
+                lead = flat[start:m.start()].lower()
+                if any(w in lead for w in ("not ", "does not", "never",
+                                           "rather than", "instead of",
+                                           "no ")):
+                    continue
+                out.append("%s: %s" % (os.path.basename(p),
+                                       flat[m.start():m.end()][:90]))
+    return out
+
+
 def _pkg_files(pkg):
     out = []
     for root, _, names in os.walk(pkg):
@@ -181,6 +210,17 @@ def run(n, pkg):
     # The script header's thumbnail metadata is not packaging authority. Where
     # it differs from the roadmap it may be recorded as a named exception, but
     # it must never stand anywhere as the thumbnail of record.
+    # A publishing checklist may not claim the thumbnail follows the script
+    # header when this video is a known metadata exception. The document can
+    # still describe the exception; what it cannot do is assert the thing the
+    # exception exists to deny.
+    claims = _header_thumbnail_claims(pkg) if PK.is_exception(n) else []
+    ck("The publishing checklist does not claim the thumbnail follows the "
+       "script header", not claims,
+       claims or ("the checklist names the roadmap as the thumbnail source"
+                  if PK.is_exception(n)
+                  else "not an exception: the header and the roadmap agree"))
+
     hdr = PK.script_header_thumbnail(n)
     stray = [os.path.basename(f) for f in _pkg_files(pkg)
              if PK.is_exception(n) and _states_as_packaging(f, hdr)]

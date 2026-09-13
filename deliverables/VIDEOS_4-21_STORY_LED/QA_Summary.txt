@@ -2,16 +2,16 @@
 VIDEOS 4 TO 21  |  STORY-LED PACKAGE QA SUMMARY
 ==============================================================================
 
-Generated: Sunday, September 13, 2026 | 4:40 PM CT
+Generated: Sunday, September 13, 2026 | 5:12 PM CT
 
-605 package checks. 605 passed, 0 failed.
+623 package checks. 623 passed, 0 failed.
 
 Every check ran against the built package on disk, not against build data,
 so a check cannot pass because of something that was true only in a module.
 
 ------------------------------------------------------------------------------
 
-VIDEO 4   33 of 33
+VIDEO 4   34 of 34
 
   [PASS] Story-led script copied unchanged
          SHA-256 3c3c1c899d9b3b32cdab7223f72046107d81ab9523033749509df48f274d367b
@@ -25,6 +25,8 @@ VIDEO 4   33 of 33
          I Was First in 3 New Roles in 5 Years. Here's What I Stopped Doing.
   [PASS] Correct thumbnail wording, from the locked roadmap
          I'D NEVER HELD THE ROLE
+  [PASS] The publishing checklist does not claim the thumbnail follows the script header
+         the checklist names the roadmap as the thumbnail source
   [PASS] Script-header thumbnail metadata is not treated as packaging
          recorded as a known metadata exception: header 'NO EXPERIENCE? NOT EXACTLY.', record "I'D NEVER HELD THE ROLE"
   [PASS] Every visual cue exists in the story-led script
@@ -80,7 +82,7 @@ VIDEO 4   33 of 33
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 5   34 of 34
+VIDEO 5   35 of 35
 
   [PASS] Story-led script copied unchanged
          SHA-256 ca60422a8f485fd218079401e96c795f809f9ed0818c6748bc8fd6f87a02dbdd
@@ -94,6 +96,8 @@ VIDEO 5   34 of 34
          I Changed Career Tracks Without Starting Over. Here's What I Carried With Me.
   [PASS] Correct thumbnail wording, from the locked roadmap
          CHANGED TRACKS. NOT ZERO.
+  [PASS] The publishing checklist does not claim the thumbnail follows the script header
+         the checklist names the roadmap as the thumbnail source
   [PASS] Script-header thumbnail metadata is not treated as packaging
          recorded as a known metadata exception: header 'WHAT COMES WITH YOU?', record 'CHANGED TRACKS. NOT ZERO.'
   [PASS] Every visual cue exists in the story-led script
@@ -151,7 +155,7 @@ VIDEO 5   34 of 34
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 6   34 of 34
+VIDEO 6   35 of 35
 
   [PASS] Story-led script copied unchanged
          SHA-256 20fcec00cf5c5ea3ca173c03f14dc4600944d48caaa097dd3a1b5d204dde9ad1
@@ -165,6 +169,8 @@ VIDEO 6   34 of 34
          I've Worked Across 8 Industries and Sectors. Here's How I Know If a New Role Is Actually Growth.
   [PASS] Correct thumbnail wording, from the locked roadmap
          NEW TITLE. SAME WORK?
+  [PASS] The publishing checklist does not claim the thumbnail follows the script header
+         not an exception: the header and the roadmap agree
   [PASS] Script-header thumbnail metadata is not treated as packaging
          the header and the roadmap agree for this video
   [PASS] Every visual cue exists in the story-led script
@@ -222,7 +228,7 @@ VIDEO 6   34 of 34
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 7   33 of 33
+VIDEO 7   34 of 34
 
   [PASS] Story-led script copied unchanged
          SHA-256 10d5e872df12e51665113895a9a56cb674b0763eee705818361fdc19589f7c2a
@@ -236,6 +242,8 @@ VIDEO 7   33 of 33
          It Took Me Years to Stop Mistaking More Work for Career Growth
   [PASS] Correct thumbnail wording, from the locked roadmap
          MORE WORK ≠ GROWTH
+  [PASS] The publishing checklist does not claim the thumbnail follows the script header
+         not an exception: the header and the roadmap agree
   [PASS] Script-header thumbnail metadata is not treated as packaging
          the header and the roadmap agree for this video
   [PASS] Every visual cue exists in the story-led script
@@ -291,7 +299,7 @@ VIDEO 7   33 of 33
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 8   34 of 34
+VIDEO 8   35 of 35
 
   [PASS] Story-led script copied unchanged
          SHA-256 d90ade46f5dc74085fb43c92ab5748a2145a37bab29a506808553279f51f18bc
@@ -305,6 +313,8 @@ VIDEO 8   34 of 34
          How to Show Your Impact at Work When You Built It From Scratch
   [PASS] Correct thumbnail wording, from the locked roadmap
          NOW IT LOOKS EASY
+  [PASS] The publishing checklist does not claim the thumbnail follows the script header
+         not an exception: the header and the roadmap agree
   [PASS] Script-header thumbnail metadata is not treated as packaging
          the header and the roadmap agree for this video
   [PASS] Every visual cue exists in the story-led script
@@ -362,7 +372,7 @@ VIDEO 8   34 of 34
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 9   34 of 34
+VIDEO 9   35 of 35
 
   [PASS] Story-led script copied unchanged
          SHA-256 fecf057ccfbb96b9eb17414c86a60dd1e7592936483b705633e20ec09f4516b6
@@ -376,6 +386,8 @@ VIDEO 9   34 of 34
          How to Change Industries Without Starting Over
   [PASS] Correct thumbnail wording, from the locked roadmap
          NEW FIELD. NOT ZERO.
+  [PASS] The publishing checklist does not claim the thumbnail follows the script header
+         not an exception: the header and the roadmap agree
   [PASS] Script-header thumbnail metadata is not treated as packaging
          the header and the roadmap agree for this video
   [PASS] Every visual cue exists in the story-led script
@@ -433,7 +445,7 @@ VIDEO 9   34 of 34
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 10   34 of 34
+VIDEO 10   35 of 35
 
   [PASS] Story-led script copied unchanged
          SHA-256 8a75bc3f0f5bf92e4931090bc2f7d092f81fe7361dc503474187ce04790d035c
@@ -447,6 +459,8 @@ VIDEO 10   34 of 34
          Before a Layoff, Know What You Can Still Prove
   [PASS] Correct thumbnail wording, from the locked roadmap
          BEFORE ACCESS ENDS
+  [PASS] The publishing checklist does not claim the thumbnail follows the script header
+         not an exception: the header and the roadmap agree
   [PASS] Script-header thumbnail metadata is not treated as packaging
          the header and the roadmap agree for this video
   [PASS] Every visual cue exists in the story-led script
@@ -504,7 +518,7 @@ VIDEO 10   34 of 34
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 11   34 of 34
+VIDEO 11   35 of 35
 
   [PASS] Story-led script copied unchanged
          SHA-256 8ab8c8d0b3cf703392aa79139b69d0f32211886ffd9ef5e034b8801735e2795d
@@ -518,6 +532,8 @@ VIDEO 11   34 of 34
          AI Can Do the Task. What Are You Still Paid For?
   [PASS] Correct thumbnail wording, from the locked roadmap
          THE TASK ISN'T THE JOB
+  [PASS] The publishing checklist does not claim the thumbnail follows the script header
+         not an exception: the header and the roadmap agree
   [PASS] Script-header thumbnail metadata is not treated as packaging
          the header and the roadmap agree for this video
   [PASS] Every visual cue exists in the story-led script
@@ -575,7 +591,7 @@ VIDEO 11   34 of 34
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 12   34 of 34
+VIDEO 12   35 of 35
 
   [PASS] Story-led script copied unchanged
          SHA-256 c7eb1e687b9404a7968136601a9c6be78091153bbf5da824f8903942228018b3
@@ -589,6 +605,8 @@ VIDEO 12   34 of 34
          What to Do When You Can’t Quit Your Job Yet
   [PASS] Correct thumbnail wording, from the locked roadmap
          WHAT CAN CHANGE NOW?
+  [PASS] The publishing checklist does not claim the thumbnail follows the script header
+         not an exception: the header and the roadmap agree
   [PASS] Script-header thumbnail metadata is not treated as packaging
          the header and the roadmap agree for this video
   [PASS] Every visual cue exists in the story-led script
@@ -646,7 +664,7 @@ VIDEO 12   34 of 34
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 13   34 of 34
+VIDEO 13   35 of 35
 
   [PASS] Story-led script copied unchanged
          SHA-256 e103ebb6977362de1675f88b9321a1f5d597cf4a293cb26c3c76cd5cc73ecd7f
@@ -660,6 +678,8 @@ VIDEO 13   34 of 34
          A 30-Day Plan to Test Your Next Career Move
   [PASS] Correct thumbnail wording, from the locked roadmap
          TEST BEFORE YOU QUIT
+  [PASS] The publishing checklist does not claim the thumbnail follows the script header
+         not an exception: the header and the roadmap agree
   [PASS] Script-header thumbnail metadata is not treated as packaging
          the header and the roadmap agree for this video
   [PASS] Every visual cue exists in the story-led script
@@ -717,7 +737,7 @@ VIDEO 13   34 of 34
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 14   33 of 33
+VIDEO 14   34 of 34
 
   [PASS] Story-led script copied unchanged
          SHA-256 1e2f735018d24ee4ccc7a680379b48714bd990b329fdbd94d1d10b1b9b053c3f
@@ -731,6 +751,8 @@ VIDEO 14   33 of 33
          Which Parts of Your Experience Actually Transfer to Another Industry?
   [PASS] Correct thumbnail wording, from the locked roadmap
          WHAT REALLY TRANSFERS?
+  [PASS] The publishing checklist does not claim the thumbnail follows the script header
+         not an exception: the header and the roadmap agree
   [PASS] Script-header thumbnail metadata is not treated as packaging
          the header and the roadmap agree for this video
   [PASS] Every visual cue exists in the story-led script
@@ -786,7 +808,7 @@ VIDEO 14   33 of 33
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 15   34 of 34
+VIDEO 15   35 of 35
 
   [PASS] Story-led script copied unchanged
          SHA-256 b5ae27eda8da5993769021db113cfbf0b7155dbca16f86078055d12ef6bfd3ea
@@ -800,6 +822,8 @@ VIDEO 15   34 of 34
          The Career Gaps You Don't See Until the Work Gets Harder
   [PASS] Correct thumbnail wording, from the locked roadmap
          KNOWING ISN'T OWNING
+  [PASS] The publishing checklist does not claim the thumbnail follows the script header
+         not an exception: the header and the roadmap agree
   [PASS] Script-header thumbnail metadata is not treated as packaging
          the header and the roadmap agree for this video
   [PASS] Every visual cue exists in the story-led script
@@ -857,7 +881,7 @@ VIDEO 15   34 of 34
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 16   33 of 33
+VIDEO 16   34 of 34
 
   [PASS] Story-led script copied unchanged
          SHA-256 0349d5904a7e520c9a6b7b6ee6dc6111b55b68dc9bd33a286e769582631c1c0b
@@ -871,6 +895,8 @@ VIDEO 16   33 of 33
          What to Do When Your Work Is Valued but You Are Overlooked
   [PASS] Correct thumbnail wording, from the locked roadmap
          THEY NEED YOU. THEN SKIP YOU.
+  [PASS] The publishing checklist does not claim the thumbnail follows the script header
+         not an exception: the header and the roadmap agree
   [PASS] Script-header thumbnail metadata is not treated as packaging
          the header and the roadmap agree for this video
   [PASS] Every visual cue exists in the story-led script
@@ -926,7 +952,7 @@ VIDEO 16   33 of 33
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 17   34 of 34
+VIDEO 17   35 of 35
 
   [PASS] Story-led script copied unchanged
          SHA-256 29331de0edac6f8d8777d1db464cb56ca764e13bc9ebc81cd28b4829c6c0e40c
@@ -940,6 +966,8 @@ VIDEO 17   34 of 34
          How to Prove Your Value When AI Does More of the Task
   [PASS] Correct thumbnail wording, from the locked roadmap
          WHAT DID YOU ACTUALLY DO?
+  [PASS] The publishing checklist does not claim the thumbnail follows the script header
+         not an exception: the header and the roadmap agree
   [PASS] Script-header thumbnail metadata is not treated as packaging
          the header and the roadmap agree for this video
   [PASS] Every visual cue exists in the story-led script
@@ -997,7 +1025,7 @@ VIDEO 17   34 of 34
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 18   33 of 33
+VIDEO 18   34 of 34
 
   [PASS] Story-led script copied unchanged
          SHA-256 0a428ff64cd7a287a34cbd093d0682d3c6ca5365fc1b58b58b03d66ab19c9035
@@ -1011,6 +1039,8 @@ VIDEO 18   33 of 33
          Should You Stay an Individual Contributor or Become a Manager?
   [PASS] Correct thumbnail wording, from the locked roadmap
          TWO DIFFERENT JOBS
+  [PASS] The publishing checklist does not claim the thumbnail follows the script header
+         not an exception: the header and the roadmap agree
   [PASS] Script-header thumbnail metadata is not treated as packaging
          the header and the roadmap agree for this video
   [PASS] Every visual cue exists in the story-led script
@@ -1066,7 +1096,7 @@ VIDEO 18   33 of 33
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 19   33 of 33
+VIDEO 19   34 of 34
 
   [PASS] Story-led script copied unchanged
          SHA-256 9e1b61f36e25196d3ff5d106e2c115e68be93e02730258c914bc4b2a59b9cd7a
@@ -1080,6 +1110,8 @@ VIDEO 19   33 of 33
          Should You Become a Consultant? The Part Everyone Leaves Out
   [PASS] Correct thumbnail wording, from the locked roadmap
          EXPERIENCE ISN'T AN OFFER
+  [PASS] The publishing checklist does not claim the thumbnail follows the script header
+         not an exception: the header and the roadmap agree
   [PASS] Script-header thumbnail metadata is not treated as packaging
          the header and the roadmap agree for this video
   [PASS] Every visual cue exists in the story-led script
@@ -1135,7 +1167,7 @@ VIDEO 19   33 of 33
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 20   34 of 34
+VIDEO 20   35 of 35
 
   [PASS] Story-led script copied unchanged
          SHA-256 0030e35d3268922b40e285893cf838237d8254ab01ece97eb620e68d8f7e0fa8
@@ -1149,6 +1181,8 @@ VIDEO 20   34 of 34
          How to Return After a Career Break Without Starting at Zero
   [PASS] Correct thumbnail wording, from the locked roadmap
          WHAT STILL COUNTS NOW?
+  [PASS] The publishing checklist does not claim the thumbnail follows the script header
+         not an exception: the header and the roadmap agree
   [PASS] Script-header thumbnail metadata is not treated as packaging
          the header and the roadmap agree for this video
   [PASS] Every visual cue exists in the story-led script
@@ -1206,7 +1240,7 @@ VIDEO 20   34 of 34
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 21   33 of 33
+VIDEO 21   34 of 34
 
   [PASS] Story-led script copied unchanged
          SHA-256 a78f0507f661cc21d98ceae2bb3515a0801b1af2775ed545ddb2044d2e3c24ec
@@ -1220,6 +1254,8 @@ VIDEO 21   33 of 33
          What You Must Relearn When You Change Industries
   [PASS] Correct thumbnail wording, from the locked roadmap
          NOT EVERYTHING TRAVELS
+  [PASS] The publishing checklist does not claim the thumbnail follows the script header
+         not an exception: the header and the roadmap agree
   [PASS] Script-header thumbnail metadata is not treated as packaging
          the header and the roadmap agree for this video
   [PASS] Every visual cue exists in the story-led script

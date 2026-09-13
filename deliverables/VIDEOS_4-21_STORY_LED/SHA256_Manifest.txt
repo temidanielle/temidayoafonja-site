@@ -2,7 +2,7 @@
 VIDEOS 4 TO 21  |  STORY-LED SHA-256 MANIFEST
 ==============================================================================
 
-Generated: Sunday, September 13, 2026 | 4:40 PM CT
+Generated: Sunday, September 13, 2026 | 5:12 PM CT
 
 ------------------------------------------------------------------------------
 
@@ -49,8 +49,8 @@ SPOKEN SOURCE OF TRUTH
 
 PACKAGE ARCHIVES
 
-  84824ecaea0b0688e495e29e40b1599ec771415e42acfe6e56cb73db737ce9c1  Video_4_Story_Led_Package.zip
-  9d2622f295066c1085a2963cd3f3f17d76b2470cd70cd1fb3c124fc9b1489b27  Video_5_Story_Led_Package.zip
+  6370522c72914038ece678b6dd8ada550f4653499239f441c7e8f0de5271909c  Video_4_Story_Led_Package.zip
+  36d0e8c1abe46b6540b15d579d7532ce8dd7c5cfc8e68d902215e7fb3ea39dd2  Video_5_Story_Led_Package.zip
   f359b298b214e408dbe6bff504fb66e8103f9d6820297cdaf4a420eb43f71a46  Video_6_Story_Led_Package.zip
   ec01aca2c6ef522d2ac165b0e4a31dca4b66023e37d566f8637e7ce4f7d6b164  Video_7_Story_Led_Package.zip
   c74945c228a36c89940eda059c7714f5cb21e40443c3ff532521d0b164116556  Video_8_Story_Led_Package.zip
@@ -74,14 +74,14 @@ EVERY FILE IN EVERY PACKAGE
 
   VIDEO 4
 
-    f70d0de6e1715d92cadb0a9ca2d638d5a73457c4bd4cb5ba446c5250af476432  01_Recording_Master/Reading_Reference.docx
+    7696142bee839fffa977adda32a052b5cea3ccc50eecec59064179235ce1a6c2  01_Recording_Master/Reading_Reference.docx
     3c3c1c899d9b3b32cdab7223f72046107d81ab9523033749509df48f274d367b  01_Recording_Master/Video_4_FINAL_Story_Led_Conversational_Recording_Script.docx
     329bd6a5b4e44a119f23cd3d25468e3cb6b0b814dcd11012da14d90f516c1283  01_Recording_Master/Video_4_Thought_Block_Recording_Copy_Story_Led.docx
-    a12e915e728777d171c31764d3b8d03214b8ef5167df289e39aa2a36bb1d0623  02_Recording/Recording_Run_of_Show.docx
+    84a39a0fd42920040061ff8f8fff4bfee85c81c911f51f4c67fb90967eb7978f  02_Recording/Recording_Run_of_Show.docx
     46c6cf166525ac16fc28e4388d217c084a130cbb744bb4fdb048f5eda56e79b7  03_Visuals/Camera_and_Full_Screen_Map.txt
     5fdc3c774fabe6c4dd9166cb312fc5a1fd2e3a3873e8bb249526c2a78f352145  03_Visuals/Resource_Card.png
     ea71fd28cf295dde2d1dbf7b13aa677cc1cb4fcb234ba0eac2a052c6e5403d68  03_Visuals/V4_Phone_Size_Contact_Sheet.png
-    b9dcebd1f9d9d26fb83c75389e970c5eb2f72ce5d4b6173daa3d37f0dfd545d9  03_Visuals/V4_Reference_Deck.pptx
+    bb67742d8b17b214613b4fdf50c40e71c40f4d3dd44bbcc7c645a0858e5ab19e  03_Visuals/V4_Reference_Deck.pptx
     afdf1f257a86be3cb255fb0d232a9ada25b554c95332fd705a9d02e23ceb5af0  03_Visuals/Visual_Build_and_Motion_Reveal_Map.txt
     2734fdc88f5defba359160a85e0d114f7ba86ca5247fed3e39c18b69b3829335  03_Visuals/Watch_Next_Card.png
     387ca24b21e114567525160f5036e5257244f6d09120b437b9f3aa1892adda3d  03_Visuals/Support_Reference_PNG/v4_02_three_stops.png
@@ -95,31 +95,31 @@ EVERY FILE IN EVERY PACKAGE
     2734fdc88f5defba359160a85e0d114f7ba86ca5247fed3e39c18b69b3829335  03_Visuals/Support_Reference_PNG/v4_10_watch_next.png
     bd59ce2bc35a7cda9f1a25061e435640e5b718cf9bad6a456fafa5e48c0d0373  04_Riverside/Riverside_CoCreator_Master_Prompt.txt
     f6860e9013a2032aeee1a9c12ee3b5c52946bc74dd1b67c2c9f4171fb6d75323  05_Shorts/Shorts_Story_Led_Audit.txt
-    dbf6778a5aa64e32203bb8458ff5d4f2035a45ce6dbd42c850094f6e54ddaa26  05_Shorts/Video_4_Six_Short_Form_Scripts.docx
-    341815cb58b7f4d3e190412385af93ca878e708dabb998a6c0d9fe6a0ba83212  05_Shorts/Individual/v4_a1_never_held_the_role.docx
-    c9b49c0e1b21c2a97fa319f39a0ca88b29a375422c0688220d56be78ba0b652b  05_Shorts/Individual/v4_a2_remove_the_title.docx
-    50424d82154d818802529613688379d78d262015049f5cc3159607dca241a8c9  05_Shorts/Individual/v4_a3_evidence_of_judgment.docx
-    f3ef40e0e86cba357944be701e46f28001adc9b6fe9b4d7c070f6a6569f76f4c  05_Shorts/Individual/v4_a4_three_line_readiness_case.docx
-    057c81ef4cc6b13b8685a2a4b0907cbf404bc54b485eae9e46dece2892998723  05_Shorts/Individual/v4_b1_name_the_gap.docx
-    00e7abe680c7c140ad89656366265081bdf67e9e0f57ab411d6470679f112ed7  05_Shorts/Individual/v4_b2_what_it_does_not_guarantee.docx
-    270b250ca6cf58953e0d3a32917b18a74d79e98a917c12686391c92500f68644  06_Publishing/Publishing_Materials.docx
-    00037cf0ad914599f33bf2d16a9e0de54a3ca662d007e581710fad2bf6508b9d  07_Viewer_Exercise/Editorial_Check.docx
-    d7092ca230ad04df350a661a8c51054f4909167505b18f22a6cbe698c3bd6113  07_Viewer_Exercise/Viewer_Exercise.docx
-    68dc5dc6a0a8d20f5e03834e01a38a553c90f441cf897498f70277b77cade681  08_Sources_and_QA/Change_Log.txt
+    0bfc97bc10b8426ef3319a2d7c7a618638877bde53dea9d03081515c81a30fba  05_Shorts/Video_4_Six_Short_Form_Scripts.docx
+    2cef68c903f625b4d30b025715d1d0045057ea3db665c80931506497607836bc  05_Shorts/Individual/v4_a1_never_held_the_role.docx
+    a1c84607659fa48984d21c9836e1a7ec537289ae699ed2940a4d7f5195776892  05_Shorts/Individual/v4_a2_remove_the_title.docx
+    9e695a6572beaf086734fc62ffb3387f0fca5f803b9a32c7151a284f0a0b488a  05_Shorts/Individual/v4_a3_evidence_of_judgment.docx
+    2fd282e12ec7bafe5adcd4302c26ae2d2804717d7da3b542553dd4a5b948187c  05_Shorts/Individual/v4_a4_three_line_readiness_case.docx
+    18f362090927aa98d33fd52e4a9b68c80e0826044f758a18287fdd3d2ae6c617  05_Shorts/Individual/v4_b1_name_the_gap.docx
+    6a78462abce284c8fdb6a4d5252d0dd9b86586973462c265bce3e6b972705d11  05_Shorts/Individual/v4_b2_what_it_does_not_guarantee.docx
+    cc9d9cc54375b2807cd1bc404afad5c465b2a2de2a772476b362b56d40378b55  06_Publishing/Publishing_Materials.docx
+    31eb672e79b5fd6658d51343cc4fbc117fd5c9a1cd638c260053a2679ad6d9b3  07_Viewer_Exercise/Editorial_Check.docx
+    77c2d0bd02cc80c18e95491b312516175d6e82e4bcb379748b4fd2eaf84e355f  07_Viewer_Exercise/Viewer_Exercise.docx
+    969473651b0d9b933e03bf1baa153f68c1ad8deb73afc01ce5859565b18fc906  08_Sources_and_QA/Change_Log.txt
     5d5ae60489b5ea266422f6c7ee9cd4b99c861960965f312b6c15a37cd14dc2e6  08_Sources_and_QA/Source_Hashes.txt
-    45d0ae4ef877364ffd9b4ec2dc8bb19af828dccb076e87d7f5e4b46487a4ab48  08_Sources_and_QA/Source_Manifest_V4.json
+    d1330039029b923c9a8a0f8b8e7d90c9adbb547b494ab15d2006d94542f09e2c  08_Sources_and_QA/Source_Manifest_V4.json
     aa0aac73ad021c2547ca8a71d7ca34d7aa0d60abbd9bb7ba1efc0931f09ac6f5  08_Sources_and_QA/Source_QA.txt
 
   VIDEO 5
 
-    1456fc80bc0f8d33f09313d723252f43a48f5f251f0c8d922a4cb4799afbcfd5  01_Recording_Master/Reading_Reference.docx
+    baf9e4e4c5cf93b5123ec95c3861b73178eb91093b0b7abcf592bb1dd6cc863d  01_Recording_Master/Reading_Reference.docx
     ca60422a8f485fd218079401e96c795f809f9ed0818c6748bc8fd6f87a02dbdd  01_Recording_Master/Video_5_FINAL_Story_Led_Conversational_Recording_Script.docx
     4936675180f66fa40ad3593f47003f632c0729c0b7d5ce14d324856ae9dd363f  01_Recording_Master/Video_5_Thought_Block_Recording_Copy_Story_Led.docx
-    2f00889b21de81c8413aaca47689d928ce6d134e5feacada64d0e845aa59b84d  02_Recording/Recording_Run_of_Show.docx
+    1397cdadc8c18870b219ebc7a4d3f10e6d36ef14a53af303e444ecf32d6fb0fd  02_Recording/Recording_Run_of_Show.docx
     754bc849718233437696a9dabd835eb6e9df0102ec87ffa3a94d4ffc64a20eb1  03_Visuals/Camera_and_Full_Screen_Map.txt
     ec01f8768a3ab01387a459159a7f8a95f2f441a516e5457e4498da03dfd9c1f7  03_Visuals/Resource_Card.png
     0ed730cfbce04ee1990d5b9afed2e72f1c963324d34add0e69508b20b36861a3  03_Visuals/V5_Phone_Size_Contact_Sheet.png
-    1cf3872150e52d2e5655b8ca6b1970a36553dc8b389fcd7eaaf03c738b45c241  03_Visuals/V5_Reference_Deck.pptx
+    1fd19d52e6b3f70cf05fc745beb925f1f1eb4e568e74d6ddb9f26f9504d2c606  03_Visuals/V5_Reference_Deck.pptx
     ffd6ff69897a83919fb5c98398759b2590f0390cdfd9242db6625842e2d15a9b  03_Visuals/Visual_Build_and_Motion_Reveal_Map.txt
     748b63e7d8a3d1a0af8334e623f75e16752a4861e91c2a8cbb5c2fcb417001d4  03_Visuals/Watch_Next_Card.png
     ff56c8abb54df497ef8585bdfebbd16ec3c63ce30780db3a57a5145637a913a4  03_Visuals/Support_Reference_PNG/v5_02_four_things.png
@@ -133,19 +133,19 @@ EVERY FILE IN EVERY PACKAGE
     748b63e7d8a3d1a0af8334e623f75e16752a4861e91c2a8cbb5c2fcb417001d4  03_Visuals/Support_Reference_PNG/v5_10_watch_next.png
     cbab2208ed54fce6ddbd33c2e92b4e21392f0b9d70566a73bcd5e0043499c7f1  04_Riverside/Riverside_CoCreator_Master_Prompt.txt
     0fe1bc5e915e8da3557f67992daffae40eb42246edd8b0ca29bc889af1204aed  05_Shorts/Shorts_Story_Led_Audit.txt
-    ed0cc80734cf29f9b9b02259fa1c50eca48c273b651d83fecfafea1b57238409  05_Shorts/Video_5_Six_Short_Form_Scripts.docx
-    c9bc40bba5ed48d2d481ee62e4c19daa459496d348e4791019ad3b08329c6e47  05_Shorts/Individual/v5_a1_changed_tracks_not_zero.docx
-    08bb08c0c23ade756d233665236f1906cd7885a3257d3427b019370fc46a150c  05_Shorts/Individual/v5_a2_carry.docx
-    526d3ed37902b54801810b7dd560e2357ba8868bd7d8365a840533b97941f687  05_Shorts/Individual/v5_a3_translate.docx
-    ba3f0e7ebcfd4770e3692717e767db7eed4d5f2a41ac0e2a48452cb3feeeefe1  05_Shorts/Individual/v5_a4_prove_the_level.docx
-    d0258357fbcfe158e6c34d15b590273ca25770feb6d810ea8d000cae92ab1142  05_Shorts/Individual/v5_b1_relearn.docx
-    d7797121f6feb9854fc2bead3d160870dde0589f9abe120f55e11d4a9f635592  05_Shorts/Individual/v5_b2_both_directions.docx
-    5108cbdfc70609acbb4c298e9b6a3a4cca07bd461fd993a70e22202e53b74568  06_Publishing/Publishing_Materials.docx
-    94833832670a3fcd479aa3c857fdcad5bcc3210391874603bb0375710428dc3a  07_Viewer_Exercise/Editorial_Check.docx
-    68c75a0200632cfb6a9f35c84e14b48fbba03e776ea0f572a4a8661992b41cd0  07_Viewer_Exercise/Viewer_Exercise.docx
-    cb4ea19e6fc0430892c3ef71ae5f2a5b35464f1220578c8c977ec86a99cf4f20  08_Sources_and_QA/Change_Log.txt
+    71e34bddecb1ce99a28884dd763ea5c44c2168e21b03b151db5b9f13d9f67547  05_Shorts/Video_5_Six_Short_Form_Scripts.docx
+    473a27cc8b36ce21520d90405ab19387ea2264ee47aabea97769179438c98f2b  05_Shorts/Individual/v5_a1_changed_tracks_not_zero.docx
+    fea3743ae7a3722162176d9c8eedbe80b2b1da0d876d41f1967ab842e5af2dad  05_Shorts/Individual/v5_a2_carry.docx
+    300290013126c64d41e1c59b2f83a3dcd459fc552a77732d4844b9c9e473dc7f  05_Shorts/Individual/v5_a3_translate.docx
+    2685705b6de5f8727a52df1d2c7fab8e1f0251c512f1f304392ee70715a2e110  05_Shorts/Individual/v5_a4_prove_the_level.docx
+    56066dd1a58ddd273a0243756df2d7b949485899d947817df6eb25439ca4661c  05_Shorts/Individual/v5_b1_relearn.docx
+    89f2657b435311dd4612c7d98ab4b28f2f6d7d7abf3ef0f808f5c9834d1ca3d8  05_Shorts/Individual/v5_b2_both_directions.docx
+    5f5076380f7d58194a2f2f550848bf1209b83f6f4b0dce741d173ab8d46b4767  06_Publishing/Publishing_Materials.docx
+    0d58c03c014587bcceff579c2bfc40eccab325069ebe65df4f09a16bcb709cad  07_Viewer_Exercise/Editorial_Check.docx
+    bd29124d831dfe1f20b1ef7b5cb4ca831d647ae8ee38209e1c85334abcf90853  07_Viewer_Exercise/Viewer_Exercise.docx
+    f01fec464dd751a3a64a2a474786e2a2dcbdd628b2e2499b7c59e52c76457c60  08_Sources_and_QA/Change_Log.txt
     f4b5649daae0e4bfe721dd1f33b259d4763677da6a08bbbede268294c0f09f1f  08_Sources_and_QA/Source_Hashes.txt
-    ea747dbe5ff82475afb053e7ace43901c659d3325e25f93d266d5f4330f6eeeb  08_Sources_and_QA/Source_Manifest_V5.json
+    2a7fa582197e6aa1c7e66d07e2e95cff066d9be371d2f8cc49c7fe67dd991397  08_Sources_and_QA/Source_Manifest_V5.json
     bf7c0bbdbb63072f6dd49a0b8bcf1a05da8e06102393383b82e6f54fe8a95b27  08_Sources_and_QA/Source_QA.txt
 
   VIDEO 6
