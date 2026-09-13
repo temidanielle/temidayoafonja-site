@@ -1,0 +1,147 @@
+{
+  "video": 5,
+  "title": "I Changed Career Tracks Without Starting Over. Here's What I Carried With Me.",
+  "thumbnail": "WHAT COMES WITH YOU?",
+  "generated": "Sunday, September 13, 2026 | 2:34 PM CT",
+  "spoken_source_of_truth": {
+    "script": "Video_5_FINAL_Story_Led_Conversational_Recording_Script.docx",
+    "script_sha256": "ca60422a8f485fd218079401e96c795f809f9ed0818c6748bc8fd6f87a02dbdd",
+    "thought_block": "Video_5_Thought_Block_Recording_Copy_Story_Led.docx",
+    "thought_block_sha256": "4936675180f66fa40ad3593f47003f632c0729c0b7d5ce14d324856ae9dd363f",
+    "note": "Both copied unchanged into 01_Recording_Master and never written to. They override the pre-story-led package."
+  },
+  "pre_story_led_baseline": {
+    "archive": "Videos_4-21_CORRECTED_RUNTIME_Production_Packages.zip",
+    "sha256": "7dbf2d56add4a91fd50f4f1f75c15908ec996a5932d70128bf7db190f8e0dfcb",
+    "status": "Preserved and auditable. Not modified, not overwritten, and no longer the active production handoff."
+  },
+  "runtime": {
+    "class": "SHORTER RETENTION TEST",
+    "spoken_words": 867,
+    "estimated_speech": "5:58 to 6:40 at 130 to 145 words per minute",
+    "note": "Arithmetic on the script. Not a runtime and not a target. The actual length is observed at Temidayo's natural pace."
+  },
+  "assets": [
+    {
+      "file": "v5_02_four_things.png",
+      "status": "COPY UPDATE",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and still teaches what this part of the story-led script teaches. Only the sentence it lands on changed, so the cue is re-anchored. The four questions now arrive out of the car analogy rather than as the opening claim.",
+      "cue": "I use four questions:"
+    },
+    {
+      "file": "v5_03_carry_test.png",
+      "status": "COPY UPDATE",
+      "treatment": "STATEMENT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and still teaches what this part of the story-led script teaches. Only the sentence it lands on changed, so the cue is re-anchored.",
+      "cue": "Start with the parts of your experience that still matter in the new setting."
+    },
+    {
+      "file": "v5_04_translate.png",
+      "status": "COPY UPDATE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and still teaches what this part of the story-led script teaches. Only the sentence it lands on changed, so the cue is re-anchored.",
+      "cue": "The next step is translation."
+    },
+    {
+      "file": "v5_05_relearn_without_beginner.png",
+      "status": "COPY UPDATE",
+      "treatment": "STATEMENT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and still teaches what this part of the story-led script teaches. Only the sentence it lands on changed, so the cue is re-anchored.",
+      "cue": "Then comes the part people sometimes want to skip."
+    },
+    {
+      "file": "v5_06_confidence_both_directions.png",
+      "status": "COPY UPDATE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and still teaches what this part of the story-led script teaches. Only the sentence it lands on changed, so the cue is re-anchored.",
+      "cue": "You do not have to erase your past."
+    },
+    {
+      "file": "v5_07_prove_the_level.png",
+      "status": "COPY UPDATE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and still teaches what this part of the story-led script teaches. Only the sentence it lands on changed, so the cue is re-anchored.",
+      "cue": "If the new role asks for a higher level of work, your proof also needs to show that level."
+    },
+    {
+      "file": "v5_08_four_line_move_case.png",
+      "status": "REBUILD",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The teaching moment survives but the story-led script rewrites it materially, so the cue is re-anchored and the card copy checked against the new wording.",
+      "cue": "If you are thinking about changing tracks, write four lines."
+    },
+    {
+      "file": "v5_09_cta.png",
+      "status": "COPY UPDATE",
+      "treatment": "CTA",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and still teaches what this part of the story-led script teaches. Only the sentence it lands on changed, so the cue is re-anchored.",
+      "cue": "If you are thinking about changing tracks, write four lines."
+    },
+    {
+      "file": "v5_10_watch_next.png",
+      "status": "COPY UPDATE",
+      "treatment": "WATCH NEXT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged. The story-led V5 speaks no Watch Next line, so the card is cued off the final spoken sentence and remains the last full-screen visual.",
+      "cue": "But it does require you to know what is actually coming with you."
+    }
+  ],
+  "assets_removed": [
+    {
+      "file": "v5_01_changed_tracks_not_zero.png",
+      "why": "The story-led V5 opens on Temidayo's own track changes and then moves into the car analogy, which is a spoken image rather than a diagram. Both are camera-led. The two-mistakes point this card carried is still made in the speech, immediately, so nothing is lost by staying on her."
+    }
+  ],
+  "asset_classification": {
+    "COPY UPDATE": 8,
+    "REBUILD": 1
+  },
+  "shorts": [
+    {
+      "slug": "v5_a1_changed_tracks_not_zero",
+      "state": "REUSE",
+      "support": 0.78
+    },
+    {
+      "slug": "v5_a2_carry",
+      "state": "COPY UPDATE",
+      "support": 0.56
+    },
+    {
+      "slug": "v5_a3_translate",
+      "state": "COPY UPDATE",
+      "support": 0.6
+    },
+    {
+      "slug": "v5_a4_prove_the_level",
+      "state": "COPY UPDATE",
+      "support": 0.65
+    },
+    {
+      "slug": "v5_b1_relearn",
+      "state": "COPY UPDATE",
+      "support": 0.61
+    },
+    {
+      "slug": "v5_b2_both_directions",
+      "state": "COPY UPDATE",
+      "support": 0.59
+    }
+  ],
+  "not_verified": [
+    "Nothing here has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

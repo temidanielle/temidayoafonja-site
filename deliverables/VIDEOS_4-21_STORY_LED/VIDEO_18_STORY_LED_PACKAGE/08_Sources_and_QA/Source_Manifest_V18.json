@@ -1,0 +1,150 @@
+{
+  "video": 18,
+  "title": "Should You Stay an Individual Contributor or Become a Manager?",
+  "thumbnail": "TWO DIFFERENT JOBS",
+  "generated": "Sunday, September 13, 2026 | 2:34 PM CT",
+  "spoken_source_of_truth": {
+    "script": "Video_18_FINAL_Story_Led_Conversational_Recording_Script.docx",
+    "script_sha256": "0a428ff64cd7a287a34cbd093d0682d3c6ca5365fc1b58b58b03d66ab19c9035",
+    "thought_block": "Video_18_Thought_Block_Recording_Copy_Story_Led.docx",
+    "thought_block_sha256": "5508fd834f48cef97004daacfb063cd27477f9b9451838af2436cb71dee5b08c",
+    "note": "Both copied unchanged into 01_Recording_Master and never written to. They override the pre-story-led package."
+  },
+  "pre_story_led_baseline": {
+    "archive": "Videos_4-21_CORRECTED_RUNTIME_Production_Packages.zip",
+    "sha256": "7dbf2d56add4a91fd50f4f1f75c15908ec996a5932d70128bf7db190f8e0dfcb",
+    "status": "Preserved and auditable. Not modified, not overwritten, and no longer the active production handoff."
+  },
+  "runtime": {
+    "class": "REGULAR LONG-FORM",
+    "spoken_words": 1400,
+    "estimated_speech": "9:39 to 10:46 at 130 to 145 words per minute",
+    "note": "Arithmetic on the script. Not a runtime and not a target. The actual length is observed at Temidayo's natural pace."
+  },
+  "assets": [
+    {
+      "file": "v18_01_congratulated.png",
+      "status": "COPY UPDATE",
+      "treatment": "STATEMENT",
+      "mode": "FULL SCREEN",
+      "why": "Re-anchored one beat later. The story-led script opens this video on a recognition moment, and the old cue sat on the scene prose itself, where a full-screen card would cover the very thing the pass was written to create. The card is unchanged and now lands on the line the scene builds to.",
+      "cue": "Management is often offered as a reward. But it is not a reward. It is a different job."
+    },
+    {
+      "file": "v18_02_two_different_jobs.png",
+      "status": "REUSE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "They are different jobs, with different days, different skills, and different hard parts."
+    },
+    {
+      "file": "v18_03_five_variables.png",
+      "status": "REUSE",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Five things are bundled together in most people's heads, and they do not reliably move together."
+    },
+    {
+      "file": "v18_04_responsibility_without_authority.png",
+      "status": "REUSE",
+      "treatment": "STATEMENT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Often they did not, and the most common bad version of this is more responsibility and no more authority, which is a genuinely difficult place to spend two years."
+    },
+    {
+      "file": "v18_05_what_the_job_consumes.png",
+      "status": "REUSE",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Not what does it sound like. What fills the day."
+    },
+    {
+      "file": "v18_06_ask_for_names.png",
+      "status": "REUSE",
+      "treatment": "STATEMENT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Ask for names."
+    },
+    {
+      "file": "v18_07_the_other_job_demands.png",
+      "status": "REUSE",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "In most places it means influence without authority, which is harder than it sounds."
+    },
+    {
+      "file": "v18_08_four_questions.png",
+      "status": "REUSE",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Ask the four questions. What does the job consume, does the other path exist here, what authority comes with it, and can I come back."
+    },
+    {
+      "file": "v18_09_cta.png",
+      "status": "REUSE",
+      "treatment": "CTA",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "If you want a structured version of that decision record, the Career Decision Evidence Check is linked below."
+    },
+    {
+      "file": "v18_10_watch_next.png",
+      "status": "REUSE",
+      "treatment": "WATCH NEXT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "In my experience it is usually the second one, and it is usually the one that changes the decision."
+    }
+  ],
+  "assets_removed": [],
+  "asset_classification": {
+    "COPY UPDATE": 1,
+    "REUSE": 9
+  },
+  "shorts": [
+    {
+      "slug": "v18_a1_congratulated",
+      "state": "REUSE",
+      "support": 0.97
+    },
+    {
+      "slug": "v18_a2_five_things",
+      "state": "REUSE",
+      "support": 0.8
+    },
+    {
+      "slug": "v18_a3_ask_for_names",
+      "state": "REUSE",
+      "support": 0.83
+    },
+    {
+      "slug": "v18_a4_responsibility_without_authority",
+      "state": "REUSE",
+      "support": 0.85
+    },
+    {
+      "slug": "v18_b1_can_you_come_back",
+      "state": "REUSE",
+      "support": 0.87
+    },
+    {
+      "slug": "v18_b2_neither_is_brave",
+      "state": "REUSE",
+      "support": 0.83
+    }
+  ],
+  "not_verified": [
+    "Nothing here has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

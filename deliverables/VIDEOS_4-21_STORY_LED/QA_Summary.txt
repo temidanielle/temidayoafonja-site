@@ -1,0 +1,1228 @@
+==============================================================================
+VIDEOS 4 TO 21  |  STORY-LED PACKAGE QA SUMMARY
+==============================================================================
+
+Generated: Sunday, September 13, 2026 | 2:34 PM CT
+
+569 package checks. 569 passed, 0 failed.
+
+Every check ran against the built package on disk, not against build data,
+so a check cannot pass because of something that was true only in a module.
+
+------------------------------------------------------------------------------
+
+VIDEO 4   31 of 31
+
+  [PASS] Story-led script copied unchanged
+         SHA-256 3c3c1c899d9b3b32cdab7223f72046107d81ab9523033749509df48f274d367b
+  [PASS] Story-led thought block copied unchanged
+         Video_4_Thought_Block_Recording_Copy_Story_Led.docx
+  [PASS] Thought block matches the script exactly
+         91 blocks carry the script's 874 spoken words exactly, in order
+  [PASS] No superseded pre-story-led master is active in this folder
+         only the story-led pair is present
+  [PASS] Correct title
+         I Was First in 3 New Roles in 5 Years. Here's What I Stopped Doing.
+  [PASS] Correct thumbnail wording
+         NO EXPERIENCE? NOT EXACTLY.
+  [PASS] Every visual cue exists in the story-led script
+         9 cues verified inside single spoken paragraphs
+  [PASS] No visual cue is a section label
+         labels are production aids and cue nothing
+  [PASS] The video stays camera-led overall
+         9 camera stretches against 9 full-screen frames
+  [PASS] The map distinguishes camera from full screen
+         both are marked throughout the spine
+  [PASS] Every frame carries a treatment
+         COMPARISON, CTA, SEQUENCE, STATEMENT, WATCH NEXT
+  [PASS] Only a resource the script speaks appears
+         this script names no resource
+  [PASS] Watch Next names the destination's story-led title
+         Video 5: I Changed Career Tracks Without Starting Over. Here's What I Carried With Me.
+  [PASS] Watch Next is final, with no return to camera
+         stated in the production documents
+  [PASS] Six Shorts, audited against the story-led script
+         COPY UPDATE, REUSE
+  [PASS] No Short rests on a framework the script dropped
+         3 reuse, 3 copy update
+  [PASS] Editorial standard holds
+         recognizable situation, painful problem, solution, viewer outcome
+  [PASS] No invented employer or personal claim
+         none found
+  [PASS] No em dashes or en dashes
+         clean in everything this build authored. Source wording carrying its own dashes is quoted verbatim and not corrected
+  [PASS] U.S. English
+         no British spellings
+  [PASS] Assets 1920 by 1080 minimum
+         9 PNGs, [(1920, 1080)]
+  [PASS] Mobile legibility inspected at phone size
+         contact sheet rendered at 393 px per frame and inspected
+  [PASS] Riverside prompt is story-led, not a renamed file
+         present in the prompt
+  [PASS] No burned-in caption instruction
+         present in the prompt
+  [PASS] SRT from the final edited timeline
+         present in the prompt
+  [PASS] Camera movement budget
+         present in the prompt
+  [PASS] Sound budget
+         present in the prompt
+  [PASS] Visual Subscribe cue only
+         present in the prompt
+  [PASS] Watch Next final
+         present in the prompt
+  [PASS] Graphics may not add teaching
+         present in the prompt
+  [PASS] Every graphic is specified, not merely requested
+         present in the prompt
+
+VIDEO 5   32 of 32
+
+  [PASS] Story-led script copied unchanged
+         SHA-256 ca60422a8f485fd218079401e96c795f809f9ed0818c6748bc8fd6f87a02dbdd
+  [PASS] Story-led thought block copied unchanged
+         Video_5_Thought_Block_Recording_Copy_Story_Led.docx
+  [PASS] Thought block matches the script exactly
+         110 blocks carry the script's 867 spoken words exactly, in order
+  [PASS] No superseded pre-story-led master is active in this folder
+         only the story-led pair is present
+  [PASS] Correct title
+         I Changed Career Tracks Without Starting Over. Here's What I Carried With Me.
+  [PASS] Correct thumbnail wording
+         WHAT COMES WITH YOU?
+  [PASS] Every visual cue exists in the story-led script
+         9 cues verified inside single spoken paragraphs
+  [PASS] No visual cue is a section label
+         labels are production aids and cue nothing
+  [PASS] The video stays camera-led overall
+         10 camera stretches against 9 full-screen frames
+  [PASS] The map distinguishes camera from full screen
+         both are marked throughout the spine
+  [PASS] Every frame carries a treatment
+         COMPARISON, CTA, SEQUENCE, STATEMENT, WATCH NEXT
+  [PASS] Only a resource the script speaks appears
+         this script names no resource
+  [PASS] Watch Next names the destination's story-led title
+         Video 6: I've Worked Across 8 Industries and Sectors. Here's How I Know If a New Role Is Actually Growth.
+  [PASS] Watch Next is final, with no return to camera
+         stated in the production documents
+  [PASS] Six Shorts, audited against the story-led script
+         COPY UPDATE, REUSE
+  [PASS] No Short rests on a framework the script dropped
+         1 reuse, 5 copy update
+  [PASS] Editorial standard holds
+         recognizable situation, painful problem, solution, viewer outcome
+  [PASS] No invented employer or personal claim
+         none found
+  [PASS] Constructed scenes are not dressed as real records
+         no logo, screenshot or real-company visual is specified anywhere. Where these words appear they are prohibitions.
+  [PASS] No em dashes or en dashes
+         clean in everything this build authored. Source wording carrying its own dashes is quoted verbatim and not corrected
+  [PASS] U.S. English
+         no British spellings
+  [PASS] Assets 1920 by 1080 minimum
+         9 PNGs, [(1920, 1080)]
+  [PASS] Mobile legibility inspected at phone size
+         contact sheet rendered at 393 px per frame and inspected
+  [PASS] Riverside prompt is story-led, not a renamed file
+         present in the prompt
+  [PASS] No burned-in caption instruction
+         present in the prompt
+  [PASS] SRT from the final edited timeline
+         present in the prompt
+  [PASS] Camera movement budget
+         present in the prompt
+  [PASS] Sound budget
+         present in the prompt
+  [PASS] Visual Subscribe cue only
+         present in the prompt
+  [PASS] Watch Next final
+         present in the prompt
+  [PASS] Graphics may not add teaching
+         present in the prompt
+  [PASS] Every graphic is specified, not merely requested
+         present in the prompt
+
+VIDEO 6   32 of 32
+
+  [PASS] Story-led script copied unchanged
+         SHA-256 20fcec00cf5c5ea3ca173c03f14dc4600944d48caaa097dd3a1b5d204dde9ad1
+  [PASS] Story-led thought block copied unchanged
+         Video_6_Thought_Block_Recording_Copy_Story_Led.docx
+  [PASS] Thought block matches the script exactly
+         50 blocks carry the script's 1340 spoken words exactly, in order
+  [PASS] No superseded pre-story-led master is active in this folder
+         only the story-led pair is present
+  [PASS] Correct title
+         I've Worked Across 8 Industries and Sectors. Here's How I Know If a New Role Is Actually Growth.
+  [PASS] Correct thumbnail wording
+         NEW TITLE. SAME WORK?
+  [PASS] Every visual cue exists in the story-led script
+         12 cues verified inside single spoken paragraphs
+  [PASS] No visual cue is a section label
+         labels are production aids and cue nothing
+  [PASS] The video stays camera-led overall
+         15 camera stretches against 12 full-screen frames
+  [PASS] The map distinguishes camera from full screen
+         both are marked throughout the spine
+  [PASS] Every frame carries a treatment
+         COMPARISON, CTA, SEQUENCE, STATEMENT, WATCH NEXT
+  [PASS] Only a resource the script speaks appears
+         Career Decision Evidence Check
+  [PASS] Watch Next names the destination's story-led title
+         Video 7: It Took Me Years to Stop Mistaking More Work for Career Growth
+  [PASS] Watch Next is final, with no return to camera
+         stated in the production documents
+  [PASS] Six Shorts, audited against the story-led script
+         REUSE
+  [PASS] No Short rests on a framework the script dropped
+         6 reuse, 0 copy update
+  [PASS] Editorial standard holds
+         recognizable situation, painful problem, solution, viewer outcome
+  [PASS] No invented employer or personal claim
+         none found
+  [PASS] Constructed scenes are not dressed as real records
+         no logo, screenshot or real-company visual is specified anywhere. Where these words appear they are prohibitions.
+  [PASS] No em dashes or en dashes
+         clean in everything this build authored. Source wording carrying its own dashes is quoted verbatim and not corrected
+  [PASS] U.S. English
+         no British spellings
+  [PASS] Assets 1920 by 1080 minimum
+         12 PNGs, [(1920, 1080)]
+  [PASS] Mobile legibility inspected at phone size
+         contact sheet rendered at 393 px per frame and inspected
+  [PASS] Riverside prompt is story-led, not a renamed file
+         present in the prompt
+  [PASS] No burned-in caption instruction
+         present in the prompt
+  [PASS] SRT from the final edited timeline
+         present in the prompt
+  [PASS] Camera movement budget
+         present in the prompt
+  [PASS] Sound budget
+         present in the prompt
+  [PASS] Visual Subscribe cue only
+         present in the prompt
+  [PASS] Watch Next final
+         present in the prompt
+  [PASS] Graphics may not add teaching
+         present in the prompt
+  [PASS] Every graphic is specified, not merely requested
+         present in the prompt
+
+VIDEO 7   31 of 31
+
+  [PASS] Story-led script copied unchanged
+         SHA-256 10d5e872df12e51665113895a9a56cb674b0763eee705818361fdc19589f7c2a
+  [PASS] Story-led thought block copied unchanged
+         Video_7_Thought_Block_Recording_Copy_Story_Led.docx
+  [PASS] Thought block matches the script exactly
+         54 blocks carry the script's 1345 spoken words exactly, in order
+  [PASS] No superseded pre-story-led master is active in this folder
+         only the story-led pair is present
+  [PASS] Correct title
+         It Took Me Years to Stop Mistaking More Work for Career Growth
+  [PASS] Correct thumbnail wording
+         MORE WORK ≠ GROWTH
+  [PASS] Every visual cue exists in the story-led script
+         12 cues verified inside single spoken paragraphs
+  [PASS] No visual cue is a section label
+         labels are production aids and cue nothing
+  [PASS] The video stays camera-led overall
+         16 camera stretches against 12 full-screen frames
+  [PASS] The map distinguishes camera from full screen
+         both are marked throughout the spine
+  [PASS] Every frame carries a treatment
+         COMPARISON, CTA, SEQUENCE, STATEMENT, WATCH NEXT
+  [PASS] Only a resource the script speaks appears
+         Capability Formation Field Kit
+  [PASS] Watch Next names the destination's story-led title
+         Video 8: How to Show Your Impact at Work When You Built It From Scratch
+  [PASS] Watch Next is final, with no return to camera
+         stated in the production documents
+  [PASS] Six Shorts, audited against the story-led script
+         REUSE
+  [PASS] No Short rests on a framework the script dropped
+         6 reuse, 0 copy update
+  [PASS] Editorial standard holds
+         recognizable situation, painful problem, solution, viewer outcome
+  [PASS] No invented employer or personal claim
+         none found
+  [PASS] No em dashes or en dashes
+         clean in everything this build authored. Source wording carrying its own dashes is quoted verbatim and not corrected
+  [PASS] U.S. English
+         no British spellings
+  [PASS] Assets 1920 by 1080 minimum
+         12 PNGs, [(1920, 1080)]
+  [PASS] Mobile legibility inspected at phone size
+         contact sheet rendered at 393 px per frame and inspected
+  [PASS] Riverside prompt is story-led, not a renamed file
+         present in the prompt
+  [PASS] No burned-in caption instruction
+         present in the prompt
+  [PASS] SRT from the final edited timeline
+         present in the prompt
+  [PASS] Camera movement budget
+         present in the prompt
+  [PASS] Sound budget
+         present in the prompt
+  [PASS] Visual Subscribe cue only
+         present in the prompt
+  [PASS] Watch Next final
+         present in the prompt
+  [PASS] Graphics may not add teaching
+         present in the prompt
+  [PASS] Every graphic is specified, not merely requested
+         present in the prompt
+
+VIDEO 8   32 of 32
+
+  [PASS] Story-led script copied unchanged
+         SHA-256 d90ade46f5dc74085fb43c92ab5748a2145a37bab29a506808553279f51f18bc
+  [PASS] Story-led thought block copied unchanged
+         Video_8_Thought_Block_Recording_Copy_Story_Led.docx
+  [PASS] Thought block matches the script exactly
+         55 blocks carry the script's 1413 spoken words exactly, in order
+  [PASS] No superseded pre-story-led master is active in this folder
+         only the story-led pair is present
+  [PASS] Correct title
+         How to Show Your Impact at Work When You Built It From Scratch
+  [PASS] Correct thumbnail wording
+         NOW IT LOOKS EASY
+  [PASS] Every visual cue exists in the story-led script
+         11 cues verified inside single spoken paragraphs
+  [PASS] No visual cue is a section label
+         labels are production aids and cue nothing
+  [PASS] The video stays camera-led overall
+         16 camera stretches against 11 full-screen frames
+  [PASS] The map distinguishes camera from full screen
+         both are marked throughout the spine
+  [PASS] Every frame carries a treatment
+         COMPARISON, CTA, SEQUENCE, STATEMENT, WATCH NEXT
+  [PASS] Only a resource the script speaks appears
+         Keep the Proof
+  [PASS] Watch Next names the destination's story-led title
+         Video 9: How to Change Industries Without Starting Over
+  [PASS] Watch Next is final, with no return to camera
+         stated in the production documents
+  [PASS] Six Shorts, audited against the story-led script
+         REUSE
+  [PASS] No Short rests on a framework the script dropped
+         6 reuse, 0 copy update
+  [PASS] Editorial standard holds
+         recognizable situation, painful problem, solution, viewer outcome
+  [PASS] No invented employer or personal claim
+         none found
+  [PASS] Constructed scenes are not dressed as real records
+         no logo, screenshot or real-company visual is specified anywhere. Where these words appear they are prohibitions.
+  [PASS] No em dashes or en dashes
+         clean in everything this build authored. Source wording carrying its own dashes is quoted verbatim and not corrected
+  [PASS] U.S. English
+         no British spellings
+  [PASS] Assets 1920 by 1080 minimum
+         11 PNGs, [(1920, 1080)]
+  [PASS] Mobile legibility inspected at phone size
+         contact sheet rendered at 393 px per frame and inspected
+  [PASS] Riverside prompt is story-led, not a renamed file
+         present in the prompt
+  [PASS] No burned-in caption instruction
+         present in the prompt
+  [PASS] SRT from the final edited timeline
+         present in the prompt
+  [PASS] Camera movement budget
+         present in the prompt
+  [PASS] Sound budget
+         present in the prompt
+  [PASS] Visual Subscribe cue only
+         present in the prompt
+  [PASS] Watch Next final
+         present in the prompt
+  [PASS] Graphics may not add teaching
+         present in the prompt
+  [PASS] Every graphic is specified, not merely requested
+         present in the prompt
+
+VIDEO 9   32 of 32
+
+  [PASS] Story-led script copied unchanged
+         SHA-256 fecf057ccfbb96b9eb17414c86a60dd1e7592936483b705633e20ec09f4516b6
+  [PASS] Story-led thought block copied unchanged
+         Video_9_Thought_Block_Recording_Copy_Story_Led.docx
+  [PASS] Thought block matches the script exactly
+         107 blocks carry the script's 1278 spoken words exactly, in order
+  [PASS] No superseded pre-story-led master is active in this folder
+         only the story-led pair is present
+  [PASS] Correct title
+         How to Change Industries Without Starting Over
+  [PASS] Correct thumbnail wording
+         NEW FIELD. NOT ZERO.
+  [PASS] Every visual cue exists in the story-led script
+         10 cues verified inside single spoken paragraphs
+  [PASS] No visual cue is a section label
+         labels are production aids and cue nothing
+  [PASS] The video stays camera-led overall
+         16 camera stretches against 10 full-screen frames
+  [PASS] The map distinguishes camera from full screen
+         both are marked throughout the spine
+  [PASS] Every frame carries a treatment
+         COMPARISON, CTA, SEQUENCE, STATEMENT, WATCH NEXT
+  [PASS] Only a resource the script speaks appears
+         Capability Formation Field Kit
+  [PASS] Watch Next names the destination's story-led title
+         Video 10: Before a Layoff, Know What You Can Still Prove
+  [PASS] Watch Next is final, with no return to camera
+         stated in the production documents
+  [PASS] Six Shorts, audited against the story-led script
+         REUSE
+  [PASS] No Short rests on a framework the script dropped
+         6 reuse, 0 copy update
+  [PASS] Editorial standard holds
+         recognizable situation, painful problem, solution, viewer outcome
+  [PASS] No invented employer or personal claim
+         none found
+  [PASS] Constructed scenes are not dressed as real records
+         no logo, screenshot or real-company visual is specified anywhere. Where these words appear they are prohibitions.
+  [PASS] No em dashes or en dashes
+         clean in everything this build authored. Source wording carrying its own dashes is quoted verbatim and not corrected
+  [PASS] U.S. English
+         no British spellings
+  [PASS] Assets 1920 by 1080 minimum
+         10 PNGs, [(1920, 1080)]
+  [PASS] Mobile legibility inspected at phone size
+         contact sheet rendered at 393 px per frame and inspected
+  [PASS] Riverside prompt is story-led, not a renamed file
+         present in the prompt
+  [PASS] No burned-in caption instruction
+         present in the prompt
+  [PASS] SRT from the final edited timeline
+         present in the prompt
+  [PASS] Camera movement budget
+         present in the prompt
+  [PASS] Sound budget
+         present in the prompt
+  [PASS] Visual Subscribe cue only
+         present in the prompt
+  [PASS] Watch Next final
+         present in the prompt
+  [PASS] Graphics may not add teaching
+         present in the prompt
+  [PASS] Every graphic is specified, not merely requested
+         present in the prompt
+
+VIDEO 10   32 of 32
+
+  [PASS] Story-led script copied unchanged
+         SHA-256 8a75bc3f0f5bf92e4931090bc2f7d092f81fe7361dc503474187ce04790d035c
+  [PASS] Story-led thought block copied unchanged
+         Video_10_Thought_Block_Recording_Copy_Story_Led.docx
+  [PASS] Thought block matches the script exactly
+         101 blocks carry the script's 1229 spoken words exactly, in order
+  [PASS] No superseded pre-story-led master is active in this folder
+         only the story-led pair is present
+  [PASS] Correct title
+         Before a Layoff, Know What You Can Still Prove
+  [PASS] Correct thumbnail wording
+         BEFORE ACCESS ENDS
+  [PASS] Every visual cue exists in the story-led script
+         10 cues verified inside single spoken paragraphs
+  [PASS] No visual cue is a section label
+         labels are production aids and cue nothing
+  [PASS] The video stays camera-led overall
+         16 camera stretches against 11 full-screen frames
+  [PASS] The map distinguishes camera from full screen
+         both are marked throughout the spine
+  [PASS] Every frame carries a treatment
+         COMPARISON, CTA, SEQUENCE, STATEMENT, WATCH NEXT
+  [PASS] Only a resource the script speaks appears
+         Keep the Proof
+  [PASS] Watch Next names the destination's story-led title
+         Video 11: AI Can Do the Task. What Are You Still Paid For?
+  [PASS] Watch Next is final, with no return to camera
+         stated in the production documents
+  [PASS] Six Shorts, audited against the story-led script
+         REUSE
+  [PASS] No Short rests on a framework the script dropped
+         6 reuse, 0 copy update
+  [PASS] Editorial standard holds
+         recognizable situation, painful problem, solution, viewer outcome
+  [PASS] No invented employer or personal claim
+         none found
+  [PASS] Constructed scenes are not dressed as real records
+         no logo, screenshot or real-company visual is specified anywhere. Where these words appear they are prohibitions.
+  [PASS] No em dashes or en dashes
+         clean in everything this build authored. Source wording carrying its own dashes is quoted verbatim and not corrected
+  [PASS] U.S. English
+         no British spellings
+  [PASS] Assets 1920 by 1080 minimum
+         10 PNGs, [(1920, 1080)]
+  [PASS] Mobile legibility inspected at phone size
+         contact sheet rendered at 393 px per frame and inspected
+  [PASS] Riverside prompt is story-led, not a renamed file
+         present in the prompt
+  [PASS] No burned-in caption instruction
+         present in the prompt
+  [PASS] SRT from the final edited timeline
+         present in the prompt
+  [PASS] Camera movement budget
+         present in the prompt
+  [PASS] Sound budget
+         present in the prompt
+  [PASS] Visual Subscribe cue only
+         present in the prompt
+  [PASS] Watch Next final
+         present in the prompt
+  [PASS] Graphics may not add teaching
+         present in the prompt
+  [PASS] Every graphic is specified, not merely requested
+         present in the prompt
+
+VIDEO 11   32 of 32
+
+  [PASS] Story-led script copied unchanged
+         SHA-256 8ab8c8d0b3cf703392aa79139b69d0f32211886ffd9ef5e034b8801735e2795d
+  [PASS] Story-led thought block copied unchanged
+         Video_11_Thought_Block_Recording_Copy_Story_Led.docx
+  [PASS] Thought block matches the script exactly
+         116 blocks carry the script's 1302 spoken words exactly, in order
+  [PASS] No superseded pre-story-led master is active in this folder
+         only the story-led pair is present
+  [PASS] Correct title
+         AI Can Do the Task. What Are You Still Paid For?
+  [PASS] Correct thumbnail wording
+         THE TASK ISN'T THE JOB
+  [PASS] Every visual cue exists in the story-led script
+         10 cues verified inside single spoken paragraphs
+  [PASS] No visual cue is a section label
+         labels are production aids and cue nothing
+  [PASS] The video stays camera-led overall
+         15 camera stretches against 10 full-screen frames
+  [PASS] The map distinguishes camera from full screen
+         both are marked throughout the spine
+  [PASS] Every frame carries a treatment
+         ARTIFACT, COMPARISON, CTA, SEQUENCE, STATEMENT, WATCH NEXT
+  [PASS] Only a resource the script speaks appears
+         Capability Formation Field Kit
+  [PASS] Watch Next names the destination's story-led title
+         Video 12: What to Do When You Can’t Quit Your Job Yet
+  [PASS] Watch Next is final, with no return to camera
+         stated in the production documents
+  [PASS] Six Shorts, audited against the story-led script
+         REUSE
+  [PASS] No Short rests on a framework the script dropped
+         6 reuse, 0 copy update
+  [PASS] Editorial standard holds
+         recognizable situation, painful problem, solution, viewer outcome
+  [PASS] No invented employer or personal claim
+         none found
+  [PASS] Constructed scenes are not dressed as real records
+         no logo, screenshot or real-company visual is specified anywhere. Where these words appear they are prohibitions.
+  [PASS] No em dashes or en dashes
+         clean in everything this build authored. Source wording carrying its own dashes is quoted verbatim and not corrected
+  [PASS] U.S. English
+         no British spellings
+  [PASS] Assets 1920 by 1080 minimum
+         10 PNGs, [(1920, 1080)]
+  [PASS] Mobile legibility inspected at phone size
+         contact sheet rendered at 393 px per frame and inspected
+  [PASS] Riverside prompt is story-led, not a renamed file
+         present in the prompt
+  [PASS] No burned-in caption instruction
+         present in the prompt
+  [PASS] SRT from the final edited timeline
+         present in the prompt
+  [PASS] Camera movement budget
+         present in the prompt
+  [PASS] Sound budget
+         present in the prompt
+  [PASS] Visual Subscribe cue only
+         present in the prompt
+  [PASS] Watch Next final
+         present in the prompt
+  [PASS] Graphics may not add teaching
+         present in the prompt
+  [PASS] Every graphic is specified, not merely requested
+         present in the prompt
+
+VIDEO 12   32 of 32
+
+  [PASS] Story-led script copied unchanged
+         SHA-256 c7eb1e687b9404a7968136601a9c6be78091153bbf5da824f8903942228018b3
+  [PASS] Story-led thought block copied unchanged
+         Video_12_Thought_Block_Recording_Copy_Story_Led.docx
+  [PASS] Thought block matches the script exactly
+         114 blocks carry the script's 1299 spoken words exactly, in order
+  [PASS] No superseded pre-story-led master is active in this folder
+         only the story-led pair is present
+  [PASS] Correct title
+         What to Do When You Can’t Quit Your Job Yet
+  [PASS] Correct thumbnail wording
+         WHAT CAN CHANGE NOW?
+  [PASS] Every visual cue exists in the story-led script
+         10 cues verified inside single spoken paragraphs
+  [PASS] No visual cue is a section label
+         labels are production aids and cue nothing
+  [PASS] The video stays camera-led overall
+         17 camera stretches against 10 full-screen frames
+  [PASS] The map distinguishes camera from full screen
+         both are marked throughout the spine
+  [PASS] Every frame carries a treatment
+         COMPARISON, CTA, SEQUENCE, STATEMENT, WATCH NEXT
+  [PASS] Only a resource the script speaks appears
+         Career Decision Evidence Check
+  [PASS] Watch Next names the destination's story-led title
+         Video 13: A 30-Day Plan to Test Your Next Career Move
+  [PASS] Watch Next is final, with no return to camera
+         stated in the production documents
+  [PASS] Six Shorts, audited against the story-led script
+         REUSE
+  [PASS] No Short rests on a framework the script dropped
+         6 reuse, 0 copy update
+  [PASS] Editorial standard holds
+         recognizable situation, painful problem, solution, viewer outcome
+  [PASS] No invented employer or personal claim
+         none found
+  [PASS] Constructed scenes are not dressed as real records
+         no logo, screenshot or real-company visual is specified anywhere. Where these words appear they are prohibitions.
+  [PASS] No em dashes or en dashes
+         clean in everything this build authored. Source wording carrying its own dashes is quoted verbatim and not corrected
+  [PASS] U.S. English
+         no British spellings
+  [PASS] Assets 1920 by 1080 minimum
+         10 PNGs, [(1920, 1080)]
+  [PASS] Mobile legibility inspected at phone size
+         contact sheet rendered at 393 px per frame and inspected
+  [PASS] Riverside prompt is story-led, not a renamed file
+         present in the prompt
+  [PASS] No burned-in caption instruction
+         present in the prompt
+  [PASS] SRT from the final edited timeline
+         present in the prompt
+  [PASS] Camera movement budget
+         present in the prompt
+  [PASS] Sound budget
+         present in the prompt
+  [PASS] Visual Subscribe cue only
+         present in the prompt
+  [PASS] Watch Next final
+         present in the prompt
+  [PASS] Graphics may not add teaching
+         present in the prompt
+  [PASS] Every graphic is specified, not merely requested
+         present in the prompt
+
+VIDEO 13   32 of 32
+
+  [PASS] Story-led script copied unchanged
+         SHA-256 e103ebb6977362de1675f88b9321a1f5d597cf4a293cb26c3c76cd5cc73ecd7f
+  [PASS] Story-led thought block copied unchanged
+         Video_13_Thought_Block_Recording_Copy_Story_Led.docx
+  [PASS] Thought block matches the script exactly
+         128 blocks carry the script's 1377 spoken words exactly, in order
+  [PASS] No superseded pre-story-led master is active in this folder
+         only the story-led pair is present
+  [PASS] Correct title
+         A 30-Day Plan to Test Your Next Career Move
+  [PASS] Correct thumbnail wording
+         TEST BEFORE YOU QUIT
+  [PASS] Every visual cue exists in the story-led script
+         10 cues verified inside single spoken paragraphs
+  [PASS] No visual cue is a section label
+         labels are production aids and cue nothing
+  [PASS] The video stays camera-led overall
+         17 camera stretches against 11 full-screen frames
+  [PASS] The map distinguishes camera from full screen
+         both are marked throughout the spine
+  [PASS] Every frame carries a treatment
+         COMPARISON, CTA, SEQUENCE, STATEMENT, WATCH NEXT
+  [PASS] Only a resource the script speaks appears
+         Capability Formation Field Kit
+  [PASS] Watch Next names the destination's story-led title
+         Video 9: How to Change Industries Without Starting Over
+  [PASS] Watch Next is final, with no return to camera
+         stated in the production documents
+  [PASS] Six Shorts, audited against the story-led script
+         REUSE
+  [PASS] No Short rests on a framework the script dropped
+         6 reuse, 0 copy update
+  [PASS] Editorial standard holds
+         recognizable situation, painful problem, solution, viewer outcome
+  [PASS] No invented employer or personal claim
+         none found
+  [PASS] Constructed scenes are not dressed as real records
+         no logo, screenshot or real-company visual is specified anywhere. Where these words appear they are prohibitions.
+  [PASS] No em dashes or en dashes
+         clean in everything this build authored. Source wording carrying its own dashes is quoted verbatim and not corrected
+  [PASS] U.S. English
+         no British spellings
+  [PASS] Assets 1920 by 1080 minimum
+         10 PNGs, [(1920, 1080)]
+  [PASS] Mobile legibility inspected at phone size
+         contact sheet rendered at 393 px per frame and inspected
+  [PASS] Riverside prompt is story-led, not a renamed file
+         present in the prompt
+  [PASS] No burned-in caption instruction
+         present in the prompt
+  [PASS] SRT from the final edited timeline
+         present in the prompt
+  [PASS] Camera movement budget
+         present in the prompt
+  [PASS] Sound budget
+         present in the prompt
+  [PASS] Visual Subscribe cue only
+         present in the prompt
+  [PASS] Watch Next final
+         present in the prompt
+  [PASS] Graphics may not add teaching
+         present in the prompt
+  [PASS] Every graphic is specified, not merely requested
+         present in the prompt
+
+VIDEO 14   31 of 31
+
+  [PASS] Story-led script copied unchanged
+         SHA-256 1e2f735018d24ee4ccc7a680379b48714bd990b329fdbd94d1d10b1b9b053c3f
+  [PASS] Story-led thought block copied unchanged
+         Video_14_Thought_Block_Recording_Copy_Story_Led.docx
+  [PASS] Thought block matches the script exactly
+         47 blocks carry the script's 1364 spoken words exactly, in order
+  [PASS] No superseded pre-story-led master is active in this folder
+         only the story-led pair is present
+  [PASS] Correct title
+         Which Parts of Your Experience Actually Transfer to Another Industry?
+  [PASS] Correct thumbnail wording
+         WHAT REALLY TRANSFERS?
+  [PASS] Every visual cue exists in the story-led script
+         10 cues verified inside single spoken paragraphs
+  [PASS] No visual cue is a section label
+         labels are production aids and cue nothing
+  [PASS] The video stays camera-led overall
+         12 camera stretches against 10 full-screen frames
+  [PASS] The map distinguishes camera from full screen
+         both are marked throughout the spine
+  [PASS] Every frame carries a treatment
+         ARTIFACT, COMPARISON, CTA, SEQUENCE, WATCH NEXT
+  [PASS] Only a resource the script speaks appears
+         this script names no resource
+  [PASS] Watch Next names the destination's story-led title
+         Video 15: The Career Gaps You Don't See Until the Work Gets Harder
+  [PASS] Watch Next is final, with no return to camera
+         stated in the production documents
+  [PASS] Six Shorts, audited against the story-led script
+         REUSE
+  [PASS] No Short rests on a framework the script dropped
+         6 reuse, 0 copy update
+  [PASS] Editorial standard holds
+         recognizable situation, painful problem, solution, viewer outcome
+  [PASS] No invented employer or personal claim
+         none found
+  [PASS] No em dashes or en dashes
+         clean in everything this build authored. Source wording carrying its own dashes is quoted verbatim and not corrected
+  [PASS] U.S. English
+         no British spellings
+  [PASS] Assets 1920 by 1080 minimum
+         10 PNGs, [(1920, 1080)]
+  [PASS] Mobile legibility inspected at phone size
+         contact sheet rendered at 393 px per frame and inspected
+  [PASS] Riverside prompt is story-led, not a renamed file
+         present in the prompt
+  [PASS] No burned-in caption instruction
+         present in the prompt
+  [PASS] SRT from the final edited timeline
+         present in the prompt
+  [PASS] Camera movement budget
+         present in the prompt
+  [PASS] Sound budget
+         present in the prompt
+  [PASS] Visual Subscribe cue only
+         present in the prompt
+  [PASS] Watch Next final
+         present in the prompt
+  [PASS] Graphics may not add teaching
+         present in the prompt
+  [PASS] Every graphic is specified, not merely requested
+         present in the prompt
+
+VIDEO 15   32 of 32
+
+  [PASS] Story-led script copied unchanged
+         SHA-256 b5ae27eda8da5993769021db113cfbf0b7155dbca16f86078055d12ef6bfd3ea
+  [PASS] Story-led thought block copied unchanged
+         Video_15_Thought_Block_Recording_Copy_Story_Led.docx
+  [PASS] Thought block matches the script exactly
+         50 blocks carry the script's 1493 spoken words exactly, in order
+  [PASS] No superseded pre-story-led master is active in this folder
+         only the story-led pair is present
+  [PASS] Correct title
+         The Career Gaps You Don't See Until the Work Gets Harder
+  [PASS] Correct thumbnail wording
+         KNOWING ISN'T OWNING
+  [PASS] Every visual cue exists in the story-led script
+         10 cues verified inside single spoken paragraphs
+  [PASS] No visual cue is a section label
+         labels are production aids and cue nothing
+  [PASS] The video stays camera-led overall
+         12 camera stretches against 10 full-screen frames
+  [PASS] The map distinguishes camera from full screen
+         both are marked throughout the spine
+  [PASS] Every frame carries a treatment
+         COMPARISON, CTA, SEQUENCE, STATEMENT, WATCH NEXT
+  [PASS] Only a resource the script speaks appears
+         this script names no resource
+  [PASS] Watch Next names the destination's story-led title
+         Video 16: What to Do When Your Work Is Valued but You Are Overlooked
+  [PASS] Watch Next is final, with no return to camera
+         stated in the production documents
+  [PASS] Six Shorts, audited against the story-led script
+         COPY UPDATE, REUSE
+  [PASS] No Short rests on a framework the script dropped
+         5 reuse, 1 copy update
+  [PASS] Editorial standard holds
+         recognizable situation, painful problem, solution, viewer outcome
+  [PASS] No invented employer or personal claim
+         none found
+  [PASS] Constructed scenes are not dressed as real records
+         no logo, screenshot or real-company visual is specified anywhere. Where these words appear they are prohibitions.
+  [PASS] No em dashes or en dashes
+         clean in everything this build authored. Source wording carrying its own dashes is quoted verbatim and not corrected
+  [PASS] U.S. English
+         no British spellings
+  [PASS] Assets 1920 by 1080 minimum
+         10 PNGs, [(1920, 1080)]
+  [PASS] Mobile legibility inspected at phone size
+         contact sheet rendered at 393 px per frame and inspected
+  [PASS] Riverside prompt is story-led, not a renamed file
+         present in the prompt
+  [PASS] No burned-in caption instruction
+         present in the prompt
+  [PASS] SRT from the final edited timeline
+         present in the prompt
+  [PASS] Camera movement budget
+         present in the prompt
+  [PASS] Sound budget
+         present in the prompt
+  [PASS] Visual Subscribe cue only
+         present in the prompt
+  [PASS] Watch Next final
+         present in the prompt
+  [PASS] Graphics may not add teaching
+         present in the prompt
+  [PASS] Every graphic is specified, not merely requested
+         present in the prompt
+
+VIDEO 16   31 of 31
+
+  [PASS] Story-led script copied unchanged
+         SHA-256 0349d5904a7e520c9a6b7b6ee6dc6111b55b68dc9bd33a286e769582631c1c0b
+  [PASS] Story-led thought block copied unchanged
+         Video_16_Thought_Block_Recording_Copy_Story_Led.docx
+  [PASS] Thought block matches the script exactly
+         46 blocks carry the script's 1311 spoken words exactly, in order
+  [PASS] No superseded pre-story-led master is active in this folder
+         only the story-led pair is present
+  [PASS] Correct title
+         What to Do When Your Work Is Valued but You Are Overlooked
+  [PASS] Correct thumbnail wording
+         THEY NEED YOU. THEN SKIP YOU.
+  [PASS] Every visual cue exists in the story-led script
+         10 cues verified inside single spoken paragraphs
+  [PASS] No visual cue is a section label
+         labels are production aids and cue nothing
+  [PASS] The video stays camera-led overall
+         16 camera stretches against 10 full-screen frames
+  [PASS] The map distinguishes camera from full screen
+         both are marked throughout the spine
+  [PASS] Every frame carries a treatment
+         COMPARISON, CTA, SEQUENCE, WATCH NEXT
+  [PASS] Only a resource the script speaks appears
+         Keep the Proof
+  [PASS] Watch Next names the destination's story-led title
+         Video 8: How to Show Your Impact at Work When You Built It From Scratch
+  [PASS] Watch Next is final, with no return to camera
+         stated in the production documents
+  [PASS] Six Shorts, audited against the story-led script
+         COPY UPDATE, REUSE
+  [PASS] No Short rests on a framework the script dropped
+         5 reuse, 1 copy update
+  [PASS] Editorial standard holds
+         recognizable situation, painful problem, solution, viewer outcome
+  [PASS] No invented employer or personal claim
+         none found
+  [PASS] No em dashes or en dashes
+         clean in everything this build authored. Source wording carrying its own dashes is quoted verbatim and not corrected
+  [PASS] U.S. English
+         no British spellings
+  [PASS] Assets 1920 by 1080 minimum
+         10 PNGs, [(1920, 1080)]
+  [PASS] Mobile legibility inspected at phone size
+         contact sheet rendered at 393 px per frame and inspected
+  [PASS] Riverside prompt is story-led, not a renamed file
+         present in the prompt
+  [PASS] No burned-in caption instruction
+         present in the prompt
+  [PASS] SRT from the final edited timeline
+         present in the prompt
+  [PASS] Camera movement budget
+         present in the prompt
+  [PASS] Sound budget
+         present in the prompt
+  [PASS] Visual Subscribe cue only
+         present in the prompt
+  [PASS] Watch Next final
+         present in the prompt
+  [PASS] Graphics may not add teaching
+         present in the prompt
+  [PASS] Every graphic is specified, not merely requested
+         present in the prompt
+
+VIDEO 17   32 of 32
+
+  [PASS] Story-led script copied unchanged
+         SHA-256 29331de0edac6f8d8777d1db464cb56ca764e13bc9ebc81cd28b4829c6c0e40c
+  [PASS] Story-led thought block copied unchanged
+         Video_17_Thought_Block_Recording_Copy_Story_Led.docx
+  [PASS] Thought block matches the script exactly
+         51 blocks carry the script's 1432 spoken words exactly, in order
+  [PASS] No superseded pre-story-led master is active in this folder
+         only the story-led pair is present
+  [PASS] Correct title
+         How to Prove Your Value When AI Does More of the Task
+  [PASS] Correct thumbnail wording
+         WHAT DID YOU ACTUALLY DO?
+  [PASS] Every visual cue exists in the story-led script
+         10 cues verified inside single spoken paragraphs
+  [PASS] No visual cue is a section label
+         labels are production aids and cue nothing
+  [PASS] The video stays camera-led overall
+         15 camera stretches against 10 full-screen frames
+  [PASS] The map distinguishes camera from full screen
+         both are marked throughout the spine
+  [PASS] Every frame carries a treatment
+         COMPARISON, CTA, SEQUENCE, STATEMENT, WATCH NEXT
+  [PASS] Only a resource the script speaks appears
+         Keep the Proof
+  [PASS] Watch Next names the destination's story-led title
+         Video 11: AI Can Do the Task. What Are You Still Paid For?
+  [PASS] Watch Next is final, with no return to camera
+         stated in the production documents
+  [PASS] Six Shorts, audited against the story-led script
+         REUSE
+  [PASS] No Short rests on a framework the script dropped
+         6 reuse, 0 copy update
+  [PASS] Editorial standard holds
+         recognizable situation, painful problem, solution, viewer outcome
+  [PASS] No invented employer or personal claim
+         none found
+  [PASS] Constructed scenes are not dressed as real records
+         no logo, screenshot or real-company visual is specified anywhere. Where these words appear they are prohibitions.
+  [PASS] No em dashes or en dashes
+         clean in everything this build authored. Source wording carrying its own dashes is quoted verbatim and not corrected
+  [PASS] U.S. English
+         no British spellings
+  [PASS] Assets 1920 by 1080 minimum
+         10 PNGs, [(1920, 1080)]
+  [PASS] Mobile legibility inspected at phone size
+         contact sheet rendered at 393 px per frame and inspected
+  [PASS] Riverside prompt is story-led, not a renamed file
+         present in the prompt
+  [PASS] No burned-in caption instruction
+         present in the prompt
+  [PASS] SRT from the final edited timeline
+         present in the prompt
+  [PASS] Camera movement budget
+         present in the prompt
+  [PASS] Sound budget
+         present in the prompt
+  [PASS] Visual Subscribe cue only
+         present in the prompt
+  [PASS] Watch Next final
+         present in the prompt
+  [PASS] Graphics may not add teaching
+         present in the prompt
+  [PASS] Every graphic is specified, not merely requested
+         present in the prompt
+
+VIDEO 18   31 of 31
+
+  [PASS] Story-led script copied unchanged
+         SHA-256 0a428ff64cd7a287a34cbd093d0682d3c6ca5365fc1b58b58b03d66ab19c9035
+  [PASS] Story-led thought block copied unchanged
+         Video_18_Thought_Block_Recording_Copy_Story_Led.docx
+  [PASS] Thought block matches the script exactly
+         51 blocks carry the script's 1400 spoken words exactly, in order
+  [PASS] No superseded pre-story-led master is active in this folder
+         only the story-led pair is present
+  [PASS] Correct title
+         Should You Stay an Individual Contributor or Become a Manager?
+  [PASS] Correct thumbnail wording
+         TWO DIFFERENT JOBS
+  [PASS] Every visual cue exists in the story-led script
+         10 cues verified inside single spoken paragraphs
+  [PASS] No visual cue is a section label
+         labels are production aids and cue nothing
+  [PASS] The video stays camera-led overall
+         15 camera stretches against 10 full-screen frames
+  [PASS] The map distinguishes camera from full screen
+         both are marked throughout the spine
+  [PASS] Every frame carries a treatment
+         COMPARISON, CTA, SEQUENCE, STATEMENT, WATCH NEXT
+  [PASS] Only a resource the script speaks appears
+         Career Decision Evidence Check
+  [PASS] Watch Next names the destination's story-led title
+         Video 16: What to Do When Your Work Is Valued but You Are Overlooked
+  [PASS] Watch Next is final, with no return to camera
+         stated in the production documents
+  [PASS] Six Shorts, audited against the story-led script
+         REUSE
+  [PASS] No Short rests on a framework the script dropped
+         6 reuse, 0 copy update
+  [PASS] Editorial standard holds
+         recognizable situation, painful problem, solution, viewer outcome
+  [PASS] No invented employer or personal claim
+         none found
+  [PASS] No em dashes or en dashes
+         clean in everything this build authored. Source wording carrying its own dashes is quoted verbatim and not corrected
+  [PASS] U.S. English
+         no British spellings
+  [PASS] Assets 1920 by 1080 minimum
+         10 PNGs, [(1920, 1080)]
+  [PASS] Mobile legibility inspected at phone size
+         contact sheet rendered at 393 px per frame and inspected
+  [PASS] Riverside prompt is story-led, not a renamed file
+         present in the prompt
+  [PASS] No burned-in caption instruction
+         present in the prompt
+  [PASS] SRT from the final edited timeline
+         present in the prompt
+  [PASS] Camera movement budget
+         present in the prompt
+  [PASS] Sound budget
+         present in the prompt
+  [PASS] Visual Subscribe cue only
+         present in the prompt
+  [PASS] Watch Next final
+         present in the prompt
+  [PASS] Graphics may not add teaching
+         present in the prompt
+  [PASS] Every graphic is specified, not merely requested
+         present in the prompt
+
+VIDEO 19   31 of 31
+
+  [PASS] Story-led script copied unchanged
+         SHA-256 9e1b61f36e25196d3ff5d106e2c115e68be93e02730258c914bc4b2a59b9cd7a
+  [PASS] Story-led thought block copied unchanged
+         Video_19_Thought_Block_Recording_Copy_Story_Led.docx
+  [PASS] Thought block matches the script exactly
+         52 blocks carry the script's 1577 spoken words exactly, in order
+  [PASS] No superseded pre-story-led master is active in this folder
+         only the story-led pair is present
+  [PASS] Correct title
+         Should You Become a Consultant? The Part Everyone Leaves Out
+  [PASS] Correct thumbnail wording
+         EXPERIENCE ISN'T AN OFFER
+  [PASS] Every visual cue exists in the story-led script
+         10 cues verified inside single spoken paragraphs
+  [PASS] No visual cue is a section label
+         labels are production aids and cue nothing
+  [PASS] The video stays camera-led overall
+         17 camera stretches against 10 full-screen frames
+  [PASS] The map distinguishes camera from full screen
+         both are marked throughout the spine
+  [PASS] Every frame carries a treatment
+         COMPARISON, CTA, SEQUENCE, STATEMENT, WATCH NEXT
+  [PASS] Only a resource the script speaks appears
+         Career Decision Evidence Check
+  [PASS] Watch Next names the destination's story-led title
+         Video 13: A 30-Day Plan to Test Your Next Career Move
+  [PASS] Watch Next is final, with no return to camera
+         stated in the production documents
+  [PASS] Six Shorts, audited against the story-led script
+         COPY UPDATE, REUSE
+  [PASS] No Short rests on a framework the script dropped
+         5 reuse, 1 copy update
+  [PASS] Editorial standard holds
+         recognizable situation, painful problem, solution, viewer outcome
+  [PASS] No invented employer or personal claim
+         none found
+  [PASS] No em dashes or en dashes
+         clean in everything this build authored. Source wording carrying its own dashes is quoted verbatim and not corrected
+  [PASS] U.S. English
+         no British spellings
+  [PASS] Assets 1920 by 1080 minimum
+         10 PNGs, [(1920, 1080)]
+  [PASS] Mobile legibility inspected at phone size
+         contact sheet rendered at 393 px per frame and inspected
+  [PASS] Riverside prompt is story-led, not a renamed file
+         present in the prompt
+  [PASS] No burned-in caption instruction
+         present in the prompt
+  [PASS] SRT from the final edited timeline
+         present in the prompt
+  [PASS] Camera movement budget
+         present in the prompt
+  [PASS] Sound budget
+         present in the prompt
+  [PASS] Visual Subscribe cue only
+         present in the prompt
+  [PASS] Watch Next final
+         present in the prompt
+  [PASS] Graphics may not add teaching
+         present in the prompt
+  [PASS] Every graphic is specified, not merely requested
+         present in the prompt
+
+VIDEO 20   32 of 32
+
+  [PASS] Story-led script copied unchanged
+         SHA-256 0030e35d3268922b40e285893cf838237d8254ab01ece97eb620e68d8f7e0fa8
+  [PASS] Story-led thought block copied unchanged
+         Video_20_Thought_Block_Recording_Copy_Story_Led.docx
+  [PASS] Thought block matches the script exactly
+         51 blocks carry the script's 1413 spoken words exactly, in order
+  [PASS] No superseded pre-story-led master is active in this folder
+         only the story-led pair is present
+  [PASS] Correct title
+         How to Return After a Career Break Without Starting at Zero
+  [PASS] Correct thumbnail wording
+         WHAT STILL COUNTS NOW?
+  [PASS] Every visual cue exists in the story-led script
+         10 cues verified inside single spoken paragraphs
+  [PASS] No visual cue is a section label
+         labels are production aids and cue nothing
+  [PASS] The video stays camera-led overall
+         14 camera stretches against 10 full-screen frames
+  [PASS] The map distinguishes camera from full screen
+         both are marked throughout the spine
+  [PASS] Every frame carries a treatment
+         COMPARISON, CTA, SEQUENCE, STATEMENT, WATCH NEXT
+  [PASS] Only a resource the script speaks appears
+         Capability Formation Field Kit
+  [PASS] Watch Next names the destination's story-led title
+         Video 4: I Was First in 3 New Roles in 5 Years. Here's What I Stopped Doing.
+  [PASS] Watch Next is final, with no return to camera
+         stated in the production documents
+  [PASS] Six Shorts, audited against the story-led script
+         COPY UPDATE, REUSE
+  [PASS] No Short rests on a framework the script dropped
+         4 reuse, 2 copy update
+  [PASS] Editorial standard holds
+         recognizable situation, painful problem, solution, viewer outcome
+  [PASS] No invented employer or personal claim
+         none found
+  [PASS] Constructed scenes are not dressed as real records
+         no logo, screenshot or real-company visual is specified anywhere. Where these words appear they are prohibitions.
+  [PASS] No em dashes or en dashes
+         clean in everything this build authored. Source wording carrying its own dashes is quoted verbatim and not corrected
+  [PASS] U.S. English
+         no British spellings
+  [PASS] Assets 1920 by 1080 minimum
+         10 PNGs, [(1920, 1080)]
+  [PASS] Mobile legibility inspected at phone size
+         contact sheet rendered at 393 px per frame and inspected
+  [PASS] Riverside prompt is story-led, not a renamed file
+         present in the prompt
+  [PASS] No burned-in caption instruction
+         present in the prompt
+  [PASS] SRT from the final edited timeline
+         present in the prompt
+  [PASS] Camera movement budget
+         present in the prompt
+  [PASS] Sound budget
+         present in the prompt
+  [PASS] Visual Subscribe cue only
+         present in the prompt
+  [PASS] Watch Next final
+         present in the prompt
+  [PASS] Graphics may not add teaching
+         present in the prompt
+  [PASS] Every graphic is specified, not merely requested
+         present in the prompt
+
+VIDEO 21   31 of 31
+
+  [PASS] Story-led script copied unchanged
+         SHA-256 a78f0507f661cc21d98ceae2bb3515a0801b1af2775ed545ddb2044d2e3c24ec
+  [PASS] Story-led thought block copied unchanged
+         Video_21_Thought_Block_Recording_Copy_Story_Led.docx
+  [PASS] Thought block matches the script exactly
+         50 blocks carry the script's 1437 spoken words exactly, in order
+  [PASS] No superseded pre-story-led master is active in this folder
+         only the story-led pair is present
+  [PASS] Correct title
+         What You Must Relearn When You Change Industries
+  [PASS] Correct thumbnail wording
+         NOT EVERYTHING TRAVELS
+  [PASS] Every visual cue exists in the story-led script
+         10 cues verified inside single spoken paragraphs
+  [PASS] No visual cue is a section label
+         labels are production aids and cue nothing
+  [PASS] The video stays camera-led overall
+         16 camera stretches against 10 full-screen frames
+  [PASS] The map distinguishes camera from full screen
+         both are marked throughout the spine
+  [PASS] Every frame carries a treatment
+         CTA, SEQUENCE, STATEMENT, WATCH NEXT
+  [PASS] Only a resource the script speaks appears
+         Capability Formation Field Kit
+  [PASS] Watch Next names the destination's story-led title
+         Video 9: How to Change Industries Without Starting Over
+  [PASS] Watch Next is final, with no return to camera
+         stated in the production documents
+  [PASS] Six Shorts, audited against the story-led script
+         COPY UPDATE, REUSE
+  [PASS] No Short rests on a framework the script dropped
+         4 reuse, 2 copy update
+  [PASS] Editorial standard holds
+         recognizable situation, painful problem, solution, viewer outcome
+  [PASS] No invented employer or personal claim
+         none found
+  [PASS] No em dashes or en dashes
+         clean in everything this build authored. Source wording carrying its own dashes is quoted verbatim and not corrected
+  [PASS] U.S. English
+         no British spellings
+  [PASS] Assets 1920 by 1080 minimum
+         10 PNGs, [(1920, 1080)]
+  [PASS] Mobile legibility inspected at phone size
+         contact sheet rendered at 393 px per frame and inspected
+  [PASS] Riverside prompt is story-led, not a renamed file
+         present in the prompt
+  [PASS] No burned-in caption instruction
+         present in the prompt
+  [PASS] SRT from the final edited timeline
+         present in the prompt
+  [PASS] Camera movement budget
+         present in the prompt
+  [PASS] Sound budget
+         present in the prompt
+  [PASS] Visual Subscribe cue only
+         present in the prompt
+  [PASS] Watch Next final
+         present in the prompt
+  [PASS] Graphics may not add teaching
+         present in the prompt
+  [PASS] Every graphic is specified, not merely requested
+         present in the prompt
+
+------------------------------------------------------------------------------
+
+FINAL-EXPORT QA, STILL PENDING
+
+  Not complete and not claimed. These cannot be checked until the video has
+  been recorded, edited and exported.
+
+  [ PENDING ] Actual recorded runtime
+  [ PENDING ] Actual pacing
+  [ PENDING ] Executed jump cuts
+  [ PENDING ] Executed push-ins and pull-backs
+  [ PENDING ] Final graphics
+  [ PENDING ] B-roll placement
+  [ PENDING ] Audio clarity
+  [ PENDING ] Final loudness
+  [ PENDING ] Music and effects balance
+  [ PENDING ] Final picture quality
+  [ PENDING ] Final SRT synchronization
+  [ PENDING ] Chapter timestamps
+  [ PENDING ] Final Watch Next hold
+  [ PENDING ] Thumbnail artwork
+  [ PENDING ] Public URL verification
+  [ PENDING ] Clean final export ending

@@ -1,0 +1,101 @@
+==============================================================================
+VIDEO 9  |  VISUAL BUILD AND MOTION REVEAL MAP
+==============================================================================
+
+How to Change Industries Without Starting Over
+
+------------------------------------------------------------------------------
+
+STANDING DIRECTION
+
+  Camera-led teaching governs. Recognition, personal story, tension and the moments that bring an idea back to the viewer stay on Temidayo.
+  A graphic earns the screen when seeing the idea is easier than hearing it alone. It is not a decoration for a spoken point.
+  Substantive teaching is TRUE full screen. Never a moving Temidayo behind or beside a framework. Never the teaching graphic shrunk into a corner.
+  Editorial, not corporate training. Generous whitespace, strong hierarchy, clean cards, short labels, obvious reading order. No fake interactivity, no progress bars, no decorative icons, no quiz styling.
+  Mobile legibility is not negotiable. Large type, few words, high contrast, generous margins. Simplify the graphic rather than shrink the type.
+  Restraint holds: about 3 to 5 camera-emphasis beats, about 2 to 4 meaningful B-roll moments, about 4 to 7 restrained sound accents for the whole video. A framework sequence is one visual event, not one event per frame.
+  A graphic may clarify, organize, compare, visualize, sequence or reinforce. It may never introduce a framework, a claim, a figure or a lesson the September 13 script does not already teach.
+
+------------------------------------------------------------------------------
+
+PALETTE
+
+  Deep navy #112345 carries authority and is the usual ground.
+  Warm cream is breathing room, and the light ground where legibility needs it.
+  Muted gold marks the ACTIVE idea only: the selected item, the number,
+  the underline, the one distinction that matters. Never decoration.
+  No other color system is introduced.
+
+------------------------------------------------------------------------------
+
+FRAME BY FRAME
+
+  v9_01_direct_industry_experience
+      treatment STATEMENT, built on the statement layout
+      cue: “Direct industry experience required.”
+      reveal: The quoted line alone. Hold. Then the support.
+      hold: 2 seconds alone, 3 with the support.
+      sound: Candidate: one clean transition sound on entry.
+
+  v9_02_neither_mistake
+      treatment COMPARISON, built on the struck layout
+      cue: Do not say, “I can already do all of this.”
+      reveal: Both claims. Hold. Struck. Then the better question.
+      hold: 2 seconds before the strike, 4 after.
+      sound: Strong candidate: one soft tick as the strike lands.
+
+  v9_03_capability_context_credentials
+      treatment SEQUENCE, built on the trio layout
+      cue: Capability. Context. Credentials.
+      reveal: One column at a time.
+      hold: 2 seconds each, 4 on the complete set.
+      sound: Candidate: one tick as the third column lands.
+
+  v9_04_same_verb_different_decision
+      treatment COMPARISON, built on the word_vs_work layout
+      cue: “Approve” can mean checking a routine item in one role and accepting a consequential ris
+      reveal: The verb alone. Hold. Then each reading.
+      hold: 2 seconds on the verb, 2 per side.
+      sound: Candidate: one tick as the second reading lands.
+
+  v9_05_capability_sentence
+      treatment STATEMENT, built on the statement layout
+      cue: Write the capability sentence this way:
+      reveal: The sentence, then the condition.
+      hold: At least 4 seconds.
+      sound: Not a candidate.
+
+  v9_06_context_is_not_vocabulary
+      treatment STATEMENT, built on the statement layout
+      cue: Context is not just vocabulary you can learn over a weekend.
+      reveal: Headline, then the support line.
+      hold: At least 4 seconds.
+      sound: Strong candidate: one soft tick as the support line lands.
+
+  v9_07_better_question_to_ask
+      treatment COMPARISON, built on the struck layout
+      cue: “Do you think I could switch industries?”
+      reveal: The weak question. Hold. Struck. Then the better one.
+      hold: 2 seconds before the strike, 4 after.
+      sound: Candidate: one tick as the strike lands.
+
+  v9_08_credential_three_labels
+      treatment SEQUENCE, built on the three_lines layout
+      cue: Write down:
+      reveal: One label at a time, then the foot line.
+      hold: 2 seconds each, 4 on the foot.
+      sound: Strong candidate: one soft tick as the foot line lands.
+
+  v9_09_cta
+      treatment CTA, built on the cta layout
+      cue: Choose one destination role. Not five industries at once.
+      reveal: Label, headline, resource name, URL.
+      hold: At least 4 seconds.
+      sound: Candidate: one clean transition sound on entry.
+
+  v9_10_watch_next
+      treatment WATCH NEXT, built on the watch_next layout
+      cue: Watch “Before a Layoff, Know What You Can Still Prove” next.
+      reveal: Label, rule, title, number.
+      hold: Hold to the end.
+      sound: Candidate: one restrained transition sound, then music fade.

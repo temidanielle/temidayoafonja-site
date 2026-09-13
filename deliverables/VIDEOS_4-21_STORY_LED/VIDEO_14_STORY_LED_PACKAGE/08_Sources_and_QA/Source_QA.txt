@@ -1,0 +1,26 @@
+==============================================================================
+VIDEO 14  |  SOURCE QA
+==============================================================================
+
+  [PASS] Source files match their intake hashes
+         script and thought block both unchanged on disk
+  [PASS] Thought block matches the script exactly
+         47 blocks carry the script's 1364 spoken words exactly, in order
+  [PASS] Section labels are not in the spoken copy
+         11 labels held out of the spoken script
+  [PASS] No production direction inside the spoken copy
+         no camera, B-roll or graphics direction is spoken
+  [PASS] No em dashes or en dashes
+         clean
+  [PASS] U.S. English
+         no British spellings
+  [PASS] Spoken word count agrees with the thought block
+         1364 spoken words in both
+  [PASS] FLAG, not a defect: supplied change log word count differs
+         script and thought block both say 1364, the change log table says 1365. Counted from the original file inside the September 13 ZIP: 47 blocks numbered 1 to 47, no gaps, no empty bodies, nothing unparsed, header and [NOT SPOKEN] lines excluded. Every whitespace tokenization gives 1364 on both sources; splitting hyphens gives 1379 and splitting letter runs gives 1382, so neither explains one word. No hidden or non-breaking whitespace is present. The script and its recording copy agree with each other, which is the governing invariant, and nothing is changed.
+  [PASS] Runtime class correct for this video
+         REGULAR LONG-FORM. 1364 words, 9:24 to 10:29 at 130 to 145 words per minute
+  [PASS] Long-form depth preserved
+         1364 words
+  [PASS] Opens on a recognizable situation, not on the framework
+         addresses the viewer, Temidayo's own experience, quoted speech: Three job descriptions. Healthcare. Financial services. Techno

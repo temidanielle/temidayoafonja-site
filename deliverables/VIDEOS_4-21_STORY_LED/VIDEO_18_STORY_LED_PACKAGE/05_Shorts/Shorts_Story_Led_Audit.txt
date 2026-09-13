@@ -1,0 +1,41 @@
+==============================================================================
+VIDEO 18  |  SHORTS AUDIT AGAINST THE STORY-LED SCRIPT
+==============================================================================
+
+Should You Stay an Individual Contributor or Become a Manager?
+
+A Short is a standalone idea. It is not rebuilt because the long-form
+reworded a supporting sentence. It is changed when the framework it rests
+on is gone, or its hook no longer matches the story-led approach.
+
+------------------------------------------------------------------------------
+
+  v18_a1_congratulated               REUSE
+      priority A, V18 hook and reframe.
+      support against the story-led script: 0.97
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v18_a2_five_things                 REUSE
+      priority A, V18 five things.
+      support against the story-led script: 0.80
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v18_a3_ask_for_names               REUSE
+      priority A, V18 question two.
+      support against the story-led script: 0.83
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v18_a4_responsibility_without_authority REUSE
+      priority A, V18 question three.
+      support against the story-led script: 0.85
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v18_b1_can_you_come_back           REUSE
+      priority B, V18 question four.
+      support against the story-led script: 0.87
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v18_b2_neither_is_brave            REUSE
+      priority B, V18 boundary and close.
+      support against the story-led script: 0.83
+      The story-led script still carries this Short's language. Nothing to change.

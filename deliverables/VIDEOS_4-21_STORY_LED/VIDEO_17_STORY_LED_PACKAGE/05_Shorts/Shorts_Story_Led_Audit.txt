@@ -1,0 +1,41 @@
+==============================================================================
+VIDEO 17  |  SHORTS AUDIT AGAINST THE STORY-LED SCRIPT
+==============================================================================
+
+How to Prove Your Value When AI Does More of the Task
+
+A Short is a standalone idea. It is not rebuilt because the long-form
+reworded a supporting sentence. It is changed when the framework it rests
+on is gone, or its hook no longer matches the story-led approach.
+
+------------------------------------------------------------------------------
+
+  v17_a1_what_did_you_actually_do    REUSE
+      priority A, V17 hook and reversal.
+      support against the story-led script: 1.00
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v17_a2_four_lines                  REUSE
+      priority A, V17 the four lines.
+      support against the story-led script: 0.88
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v17_a3_line_two                    REUSE
+      priority A, V17 why line two matters.
+      support against the story-led script: 0.98
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v17_a4_speed_pressure              REUSE
+      priority A, V17 speed changes the pressure.
+      support against the story-led script: 0.75
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v17_b1_output_vs_contribution      REUSE
+      priority B, V17 the reversal.
+      support against the story-led script: 0.86
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v17_b2_not_reassurance             REUSE
+      priority B, V17 boundary.
+      support against the story-led script: 0.78
+      The story-led script still carries this Short's language. Nothing to change.

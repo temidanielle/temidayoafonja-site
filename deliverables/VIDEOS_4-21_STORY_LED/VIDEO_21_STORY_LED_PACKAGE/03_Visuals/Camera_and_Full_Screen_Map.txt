@@ -1,0 +1,287 @@
+==============================================================================
+VIDEO 21  |  CAMERA AND FULL-SCREEN TRIGGER MAP
+==============================================================================
+
+What You Must Relearn When You Change Industries
+
+Every stretch of this video is marked. A row that says CAMERA is a stretch
+where Temidayo carries the moment and no graphic should appear.
+
+------------------------------------------------------------------------------
+
+HOW TO READ THIS
+
+  CAMERA        stay on Temidayo. Recognition, lived experience,
+                tension, a reflective turn, or bringing the idea
+                back to the viewer.
+  FULL SCREEN   a true full-screen frame. No camera behind it and
+                no shrinking it into a corner.
+
+  Do not alternate mechanically. Several camera stretches in a row are
+  correct where the script is telling a story.
+
+------------------------------------------------------------------------------
+
+
+==========================================================================
+HOOK | You can still do the work, but the room is different
+==========================================================================
+
+  [ CAMERA ]  1 spoken paragraph, about 5 words
+              opens: You made the industry change.
+              stay on Temidayo through this stretch.
+
+  [ FULL SCREEN ]  v21_01_the_room_is_different
+      cue, exact words: And the surprising part is that you can still do the work.
+      treatment:  STATEMENT
+      purpose:    The hook. The surprise is context, not competence.
+      reveal:     Headline as a callout over camera, then full screen.
+                  One idea, full screen, large. Headline first, then the support line if there is one.
+                  Hold it still. Stillness is correct here: the viewer is reading or thinking.
+                  No motion beyond the entrance. No sound unless this is one of the few beats that earns it.
+      hold:       2 seconds on the callout, 3 on the support.
+      sound:      Candidate: one soft tick as the frame goes full screen.
+      after:      Return to camera on the next spoken line.
+      status:     REUSE
+
+  [ CAMERA ]  5 spoken paragraphs, about 158 words
+              opens: What keeps catching you are the things nobody thought to explain
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+THE REFRAME | Not everything travels
+==========================================================================
+
+  [ CAMERA ]  4 spoken paragraphs, about 57 words
+              opens: Before we talk about relearning, name what came with you.
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+WHAT DOES TRAVEL
+==========================================================================
+
+  [ FULL SCREEN ]  v21_02_what_does_travel
+      cue, exact words: First, quickly, what does travel, because it is real and it is easy to lose sight of in the first difficult month.
+      treatment:  SEQUENCE
+      purpose:    Say what travels clearly and early.
+      reveal:     One at a time, then the foot line.
+                  Establish the complete structure first, all items visible but even in weight, so the viewer sees the shape.
+                  Then activate ONE item at a time as Temidayo explains it: that item comes up in gold, the others sit back in a dimmer neutral. Do not emphasize all of them at once.
+                  Return to the complete structure, evenly weighted, only after the last item.
+                  One sound accent at most across the whole sequence, not one per item.
+      hold:       2 seconds each, 3 on the foot.
+      sound:      Not a candidate.
+      after:      Return to camera on the next spoken line.
+      status:     REUSE
+
+  [ CAMERA ]  2 spoken paragraphs, about 79 words
+              opens: How you break a problem into parts. How you tell whether a piece
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+LAYER ONE, DOMAIN KNOWLEDGE
+==========================================================================
+
+  [ FULL SCREEN ]  v21_03_five_layers
+      cue, exact words: Layer one, and the one that blocks you soonest: what the work is actually about here.
+      treatment:  SEQUENCE
+      purpose:    The framework of the video.
+      reveal:     One layer at a time as each is named, then the foot question.
+                  Establish the complete structure first, all items visible but even in weight, so the viewer sees the shape.
+                  Then activate ONE item at a time as Temidayo explains it: that item comes up in gold, the others sit back in a dimmer neutral. Do not emphasize all of them at once.
+                  Return to the complete structure, evenly weighted, only after the last item.
+                  One sound accent at most across the whole sequence, not one per item.
+      hold:       2 seconds per layer, 5 on the complete frame.
+      sound:      Candidate: one tick as the foot question lands.
+      after:      Return to camera on the next spoken line.
+      status:     REUSE
+
+  [ CAMERA ]  2 spoken paragraphs, about 85 words
+              opens: Not the vocabulary, though you will need that too. The underlyin
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+LAYER TWO, REGULATION AND CREDENTIALS
+==========================================================================
+
+  [ CAMERA ]  1 spoken paragraph, about 15 words
+              opens: Layer two. Regulation and credentials. And I want to be very pla
+              stay on Temidayo through this stretch.
+
+  [ FULL SCREEN ]  v21_04_licensing_is_not_a_mindset
+      cue, exact words: That is not a confidence issue and it is not a mindset problem.
+      treatment:  STATEMENT
+      purpose:    The line that protects the whole channel from sounding like it claims everything transfers.
+      reveal:     Headline alone. Hold. Then the support line.
+                  One idea, full screen, large. Headline first, then the support line if there is one.
+                  Hold it still. Stillness is correct here: the viewer is reading or thinking.
+                  No motion beyond the entrance. No sound unless this is one of the few beats that earns it.
+      hold:       3 seconds alone, 4 with the support.
+      sound:      Strong candidate: one soft tick as the headline lands. The single most important beat in the video.
+      after:      Return to camera on the next spoken line.
+      status:     REUSE
+
+  [ CAMERA ]  2 spoken paragraphs, about 84 words
+              opens: Some industries are full of these. Some have almost none. If you
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+LAYER THREE, SYSTEMS AND TOOLING
+==========================================================================
+
+  [ FULL SCREEN ]  v21_05_easiest_layer_trap
+      cue, exact words: Layer three. Systems and tooling. This is usually the layer people worry about most and it is generally the smallest.
+      treatment:  STATEMENT
+      purpose:    Stop the viewer spending preparation time on the wrong layer.
+      reveal:     Headline, then the support line.
+                  One idea, full screen, large. Headline first, then the support line if there is one.
+                  Hold it still. Stillness is correct here: the viewer is reading or thinking.
+                  No motion beyond the entrance. No sound unless this is one of the few beats that earns it.
+      hold:       At least 3 seconds.
+      sound:      Not a candidate.
+      after:      Return to camera on the next spoken line.
+      status:     REUSE
+
+  [ CAMERA ]  2 spoken paragraphs, about 66 words
+              opens: New platforms, new internal systems, a different way of tracking
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+LAYER FOUR, RELATIONSHIPS AND INTERNAL HISTORY
+==========================================================================
+
+  [ CAMERA ]  2 spoken paragraphs, about 68 words
+              opens: Layer four. Relationships and internal history. Nobody writes th
+              stay on Temidayo through this stretch.
+
+  [ FULL SCREEN ]  v21_06_has_anyone_tried_this
+      cue, exact words: The single most useful question in a first few months is some version of has anybody tried this before, and what happened.
+      treatment:  STATEMENT
+      purpose:    One practical instruction the viewer can use in week one.
+      reveal:     The question, then the support line.
+                  One idea, full screen, large. Headline first, then the support line if there is one.
+                  Hold it still. Stillness is correct here: the viewer is reading or thinking.
+                  No motion beyond the entrance. No sound unless this is one of the few beats that earns it.
+      hold:       At least 3 seconds.
+      sound:      Candidate: one clean transition sound on entry.
+      after:      Return to camera on the next spoken line.
+      status:     REUSE
+
+
+==========================================================================
+LAYER FIVE, HOW DECISIONS GET MADE HERE
+==========================================================================
+
+  [ CAMERA ]  3 spoken paragraphs, about 108 words
+              opens: Layer five. How decisions actually get made.
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+READ IT, OR DO IT
+==========================================================================
+
+  [ CAMERA ]  4 spoken paragraphs, about 131 words
+              opens: One distinction that runs across all five.
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+THE FIRST NINETY DAYS, HONESTLY
+==========================================================================
+
+  [ CAMERA ]  1 spoken paragraph, about 14 words
+              opens: A word about pace, because expectations are where a lot of this 
+              stay on Temidayo through this stretch.
+
+  [ FULL SCREEN ]  v21_07_first_ninety_days
+      cue, exact words: You are not going to arrive and contribute at the level you left at.
+      treatment:  STATEMENT
+      purpose:    Set expectations without inventing a timeline.
+      reveal:     Headline, then the support line.
+                  One idea, full screen, large. Headline first, then the support line if there is one.
+                  Hold it still. Stillness is correct here: the viewer is reading or thinking.
+                  No motion beyond the entrance. No sound unless this is one of the few beats that earns it.
+      hold:       At least 4 seconds.
+      sound:      Not a candidate.
+      after:      Return to camera on the next spoken line.
+      status:     REUSE
+
+  [ CAMERA ]  2 spoken paragraphs, about 129 words
+              opens: I am not going to tell you it takes ninety days, or six months, 
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+APPLICATION
+==========================================================================
+
+  [ CAMERA ]  1 spoken paragraph, about 28 words
+              opens: So build the inventory, for one specific destination. Not for th
+              stay on Temidayo through this stretch.
+
+  [ FULL SCREEN ]  v21_08_order_by_what_blocks_you
+      cue, exact words: Then order the whole thing by one question, which is what stops me contributing usefully first.
+      treatment:  STATEMENT
+      purpose:    The ordering rule, which is the useful part of the inventory.
+      reveal:     Question, then the support line.
+                  One idea, full screen, large. Headline first, then the support line if there is one.
+                  Hold it still. Stillness is correct here: the viewer is reading or thinking.
+                  No motion beyond the entrance. No sound unless this is one of the few beats that earns it.
+      hold:       At least 4 seconds.
+      sound:      Candidate: one tick as the question lands.
+      after:      Return to camera on the next spoken line.
+      status:     REUSE
+
+  [ CAMERA ]  2 spoken paragraphs, about 55 words
+              opens: That ordering is the useful part, because it will not match what
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+CLOSE AND CTA
+==========================================================================
+
+  [ FULL SCREEN ]  v21_09_cta
+      cue, exact words: If you want a structured version of the inventory, that is what the Field Kit is for, linked below.
+      treatment:  CTA
+      purpose:    The single resource route named by the restored master.
+      reveal:     Label, headline, resource name, URL.
+                  Full screen, and simpler than the teaching graphics. The action is the only thing competing for attention.
+                  Resource name and route appear only where the script speaks them.
+      hold:       At least 4 seconds.
+      sound:      Candidate: one clean transition sound on entry.
+      after:      Return to camera on the next spoken line.
+      status:     REUSE
+
+  [ CAMERA ]  1 spoken paragraph, about 27 words
+              opens: The thing to do now is name the first item. One destination, fiv
+              stay on Temidayo through this stretch.
+
+  [ FULL SCREEN ]  v21_10_watch_next
+      cue, exact words: It is the difference between a plan that will work and a reading list that would have made you feel productive for a month.
+      treatment:  WATCH NEXT
+      purpose:    The final visual.
+      reveal:     Label, rule, title, number.
+                  Full screen and final. Label, rule, destination title, video number.
+                  Keep the copy to the left so an end screen can sit on the right.
+                  Never return to camera after this frame. Nothing follows it.
+      hold:       Hold to the end.
+      sound:      Candidate: one restrained transition sound, then music fade.
+      after:      NO RETURN TO CAMERA. Watch Next is final.
+      status:     REUSE
+
+
+------------------------------------------------------------------------------
+
+SPINE SUMMARY
+
+  16 camera stretches, 10 full-screen frames.
+  The video stays on Temidayo for most of its length, which is the point
+  of the story-led pass.

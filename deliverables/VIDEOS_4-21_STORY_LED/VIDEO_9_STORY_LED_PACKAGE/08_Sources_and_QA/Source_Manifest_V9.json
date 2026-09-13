@@ -1,0 +1,149 @@
+{
+  "video": 9,
+  "title": "How to Change Industries Without Starting Over",
+  "thumbnail": "NEW FIELD. NOT ZERO.",
+  "generated": "Sunday, September 13, 2026 | 2:34 PM CT",
+  "spoken_source_of_truth": {
+    "script": "Video_9_FINAL_Story_Led_Conversational_Recording_Script.docx",
+    "script_sha256": "fecf057ccfbb96b9eb17414c86a60dd1e7592936483b705633e20ec09f4516b6",
+    "thought_block": "Video_9_Thought_Block_Recording_Copy_Story_Led.docx",
+    "thought_block_sha256": "3d23c7d0f6531fa5276e05819dd6746ba7f674c828e7754e47545a157cea7f2c",
+    "note": "Both copied unchanged into 01_Recording_Master and never written to. They override the pre-story-led package."
+  },
+  "pre_story_led_baseline": {
+    "archive": "Videos_4-21_CORRECTED_RUNTIME_Production_Packages.zip",
+    "sha256": "7dbf2d56add4a91fd50f4f1f75c15908ec996a5932d70128bf7db190f8e0dfcb",
+    "status": "Preserved and auditable. Not modified, not overwritten, and no longer the active production handoff."
+  },
+  "runtime": {
+    "class": "REGULAR LONG-FORM",
+    "spoken_words": 1278,
+    "estimated_speech": "8:48 to 9:49 at 130 to 145 words per minute",
+    "note": "Arithmetic on the script. Not a runtime and not a target. The actual length is observed at Temidayo's natural pace."
+  },
+  "assets": [
+    {
+      "file": "v9_01_direct_industry_experience.png",
+      "status": "REUSE",
+      "treatment": "STATEMENT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "“Direct industry experience required.”"
+    },
+    {
+      "file": "v9_02_neither_mistake.png",
+      "status": "REUSE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Do not say, “I can already do all of this.”"
+    },
+    {
+      "file": "v9_03_capability_context_credentials.png",
+      "status": "REUSE",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Capability. Context. Credentials."
+    },
+    {
+      "file": "v9_04_same_verb_different_decision.png",
+      "status": "REUSE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "“Approve” can mean checking a routine item in one role and accepting a consequential risk in another."
+    },
+    {
+      "file": "v9_05_capability_sentence.png",
+      "status": "REUSE",
+      "treatment": "STATEMENT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Write the capability sentence this way:"
+    },
+    {
+      "file": "v9_06_context_is_not_vocabulary.png",
+      "status": "REUSE",
+      "treatment": "STATEMENT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Context is not just vocabulary you can learn over a weekend."
+    },
+    {
+      "file": "v9_07_better_question_to_ask.png",
+      "status": "REUSE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "“Do you think I could switch industries?”"
+    },
+    {
+      "file": "v9_08_credential_three_labels.png",
+      "status": "REUSE",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Write down:"
+    },
+    {
+      "file": "v9_09_cta.png",
+      "status": "REUSE",
+      "treatment": "CTA",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Choose one destination role. Not five industries at once."
+    },
+    {
+      "file": "v9_10_watch_next.png",
+      "status": "REUSE",
+      "treatment": "WATCH NEXT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Watch “Before a Layoff, Know What You Can Still Prove” next."
+    }
+  ],
+  "assets_removed": [],
+  "asset_classification": {
+    "REUSE": 10
+  },
+  "shorts": [
+    {
+      "slug": "v9_a1_new_field_not_zero",
+      "state": "REUSE",
+      "support": 1.0
+    },
+    {
+      "slug": "v9_a2_same_verb_different_decision",
+      "state": "REUSE",
+      "support": 1.0
+    },
+    {
+      "slug": "v9_a3_better_question",
+      "state": "REUSE",
+      "support": 0.98
+    },
+    {
+      "slug": "v9_a4_credentials",
+      "state": "REUSE",
+      "support": 1.0
+    },
+    {
+      "slug": "v9_b1_defensible_introduction",
+      "state": "REUSE",
+      "support": 1.0
+    },
+    {
+      "slug": "v9_b2_the_tradeoff",
+      "state": "REUSE",
+      "support": 0.98
+    }
+  ],
+  "not_verified": [
+    "Nothing here has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

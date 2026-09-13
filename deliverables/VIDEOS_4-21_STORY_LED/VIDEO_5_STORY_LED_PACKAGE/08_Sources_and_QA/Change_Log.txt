@@ -1,0 +1,112 @@
+==============================================================================
+VIDEO 5  |  STORY-LED SYNCHRONIZATION CHANGE LOG
+==============================================================================
+
+I Changed Career Tracks Without Starting Over. Here's What I Carried With Me.
+
+Generated: Sunday, September 13, 2026 | 2:34 PM CT
+
+------------------------------------------------------------------------------
+
+WHAT CHANGED
+
+  The delivery changed, not the architecture. The viewer now meets a
+  recognizable situation first, then gets help making sense of it, then
+  gets the framework.
+
+  This is not a framework rebuild, a runtime-strategy rebuild, an offer
+  rebuild or a roadmap rebuild.
+
+------------------------------------------------------------------------------
+
+SPOKEN SOURCE
+
+  Video_5_FINAL_Story_Led_Conversational_Recording_Script.docx
+  SHA-256 ca60422a8f485fd218079401e96c795f809f9ed0818c6748bc8fd6f87a02dbdd
+
+  Video_5_Thought_Block_Recording_Copy_Story_Led.docx
+  SHA-256 4936675180f66fa40ad3593f47003f632c0729c0b7d5ce14d324856ae9dd363f
+
+  867 spoken words. Estimated speech 5:58 to 6:40 at 130 to 145 words per
+  minute, which is arithmetic and not a runtime.
+
+------------------------------------------------------------------------------
+
+VISUAL ASSETS
+
+    COPY UPDATE    8
+    REBUILD        1
+
+  v5_02_four_things  COPY UPDATE
+      The card is unchanged and still teaches what this part of the
+      story-led script teaches. Only the sentence it lands on changed, so
+      the cue is re-anchored. The four questions now arrive out of the car
+      analogy rather than as the opening claim.
+
+  v5_03_carry_test  COPY UPDATE
+      The card is unchanged and still teaches what this part of the
+      story-led script teaches. Only the sentence it lands on changed, so
+      the cue is re-anchored.
+
+  v5_04_translate  COPY UPDATE
+      The card is unchanged and still teaches what this part of the
+      story-led script teaches. Only the sentence it lands on changed, so
+      the cue is re-anchored.
+
+  v5_05_relearn_without_beginner  COPY UPDATE
+      The card is unchanged and still teaches what this part of the
+      story-led script teaches. Only the sentence it lands on changed, so
+      the cue is re-anchored.
+
+  v5_06_confidence_both_directions  COPY UPDATE
+      The card is unchanged and still teaches what this part of the
+      story-led script teaches. Only the sentence it lands on changed, so
+      the cue is re-anchored.
+
+  v5_07_prove_the_level  COPY UPDATE
+      The card is unchanged and still teaches what this part of the
+      story-led script teaches. Only the sentence it lands on changed, so
+      the cue is re-anchored.
+
+  v5_08_four_line_move_case  REBUILD
+      The teaching moment survives but the story-led script rewrites it
+      materially, so the cue is re-anchored and the card copy checked
+      against the new wording.
+
+  v5_09_cta  COPY UPDATE
+      The card is unchanged and still teaches what this part of the
+      story-led script teaches. Only the sentence it lands on changed, so
+      the cue is re-anchored.
+
+  v5_10_watch_next  COPY UPDATE
+      The card is unchanged. The story-led V5 speaks no Watch Next line,
+      so the card is cued off the final spoken sentence and remains the
+      last full-screen visual.
+
+  REMOVED
+
+  v5_01_changed_tracks_not_zero
+      The story-led V5 opens on Temidayo's own track changes and then
+      moves into the car analogy, which is a spoken image rather than a
+      diagram. Both are camera-led. The two-mistakes point this card
+      carried is still made in the speech, immediately, so nothing is lost
+      by staying on her.
+
+------------------------------------------------------------------------------
+
+WHAT DID NOT CHANGE
+
+  The approved frameworks, evidence boundaries, real-world constraints,
+  CTA intent, resource route and Watch Next destination are all preserved.
+  The title is unchanged. No spoken wording was edited at the production
+  layer, and no graphic introduces teaching the script does not carry.
+
+------------------------------------------------------------------------------
+
+THE PRE-STORY-LED BASELINE
+
+  Videos_4-21_CORRECTED_RUNTIME_Production_Packages.zip
+  SHA-256 7dbf2d56add4a91fd50f4f1f75c15908ec996a5932d70128bf7db190f8e0dfcb
+
+  Preserved and auditable. Not modified and not overwritten. It is no
+  longer the active production handoff.

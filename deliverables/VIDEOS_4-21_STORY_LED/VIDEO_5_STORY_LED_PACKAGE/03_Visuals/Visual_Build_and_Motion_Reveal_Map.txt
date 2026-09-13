@@ -1,0 +1,94 @@
+==============================================================================
+VIDEO 5  |  VISUAL BUILD AND MOTION REVEAL MAP
+==============================================================================
+
+I Changed Career Tracks Without Starting Over. Here's What I Carried With Me.
+
+------------------------------------------------------------------------------
+
+STANDING DIRECTION
+
+  Camera-led teaching governs. Recognition, personal story, tension and the moments that bring an idea back to the viewer stay on Temidayo.
+  A graphic earns the screen when seeing the idea is easier than hearing it alone. It is not a decoration for a spoken point.
+  Substantive teaching is TRUE full screen. Never a moving Temidayo behind or beside a framework. Never the teaching graphic shrunk into a corner.
+  Editorial, not corporate training. Generous whitespace, strong hierarchy, clean cards, short labels, obvious reading order. No fake interactivity, no progress bars, no decorative icons, no quiz styling.
+  Mobile legibility is not negotiable. Large type, few words, high contrast, generous margins. Simplify the graphic rather than shrink the type.
+  Restraint holds: about 3 to 5 camera-emphasis beats, about 2 to 4 meaningful B-roll moments, about 4 to 7 restrained sound accents for the whole video. A framework sequence is one visual event, not one event per frame.
+  A graphic may clarify, organize, compare, visualize, sequence or reinforce. It may never introduce a framework, a claim, a figure or a lesson the September 13 script does not already teach.
+
+------------------------------------------------------------------------------
+
+PALETTE
+
+  Deep navy #112345 carries authority and is the usual ground.
+  Warm cream is breathing room, and the light ground where legibility needs it.
+  Muted gold marks the ACTIVE idea only: the selected item, the number,
+  the underline, the one distinction that matters. Never decoration.
+  No other color system is introduced.
+
+------------------------------------------------------------------------------
+
+FRAME BY FRAME
+
+  v5_02_four_things
+      treatment SEQUENCE, built on the four_bucket layout
+      cue: I use four questions:
+      reveal: One bucket at a time in spoken order.
+      hold: 2 seconds each, 4 on the complete grid.
+      sound: Candidate: one tick on the fourth bucket.
+
+  v5_03_carry_test
+      treatment STATEMENT, built on the statement layout
+      cue: Start with the parts of your experience that still matter in the new setting.
+      reveal: Question, then the one-line answer.
+      hold: At least 4 seconds.
+      sound: Not a candidate.
+
+  v5_04_translate
+      treatment COMPARISON, built on the duo layout
+      cue: The next step is translation.
+      reveal: Left. Then right. Then the foot line.
+      hold: 2 seconds left, 4 right, 3 foot.
+      sound: Candidate: one tick as the foot line lands.
+
+  v5_05_relearn_without_beginner
+      treatment STATEMENT, built on the statement layout
+      cue: Then comes the part people sometimes want to skip.
+      reveal: Headline, then the list of what is genuinely new.
+      hold: At least 4 seconds.
+      sound: Not a candidate.
+
+  v5_06_confidence_both_directions
+      treatment COMPARISON, built on the duo layout
+      cue: You do not have to erase your past.
+      reveal: Left. Then right. Then the foot line.
+      hold: At least 4 seconds on the right side.
+      sound: Not a candidate. Let this land in silence.
+
+  v5_07_prove_the_level
+      treatment COMPARISON, built on the struck layout
+      cue: If the new role asks for a higher level of work, your proof also needs to show that leve
+      reveal: Both weak claims. Hold. Struck. Then the questions.
+      hold: 2 seconds before the strike, 4 after.
+      sound: Strong candidate: one soft tick as the strike lands.
+
+  v5_08_four_line_move_case
+      treatment SEQUENCE, built on the labeled_rows layout
+      cue: If you are thinking about changing tracks, write four lines.
+      reveal: One row at a time.
+      hold: 2 seconds per row, 4 on the complete frame.
+      sound: Candidate: one tick as the fourth row lands.
+
+  v5_09_cta
+      treatment CTA, built on the cta_action layout
+      cue: If you are thinking about changing tracks, write four lines.
+      reveal: Headline, support, then the closing line.
+      hold: At least 4 seconds.
+      sound: Candidate: one clean transition sound on entry.
+
+  v5_10_watch_next
+      treatment WATCH NEXT, built on the watch_next layout
+      cue: But it does require you to know what is actually coming with you.
+      reveal: Label, rule, title, number.
+      hold: Hold to the end.
+      sound: Candidate: one restrained transition sound, then music fade.

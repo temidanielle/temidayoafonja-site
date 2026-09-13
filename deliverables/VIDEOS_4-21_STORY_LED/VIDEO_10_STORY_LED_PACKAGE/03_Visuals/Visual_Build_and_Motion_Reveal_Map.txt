@@ -1,0 +1,101 @@
+==============================================================================
+VIDEO 10  |  VISUAL BUILD AND MOTION REVEAL MAP
+==============================================================================
+
+Before a Layoff, Know What You Can Still Prove
+
+------------------------------------------------------------------------------
+
+STANDING DIRECTION
+
+  Camera-led teaching governs. Recognition, personal story, tension and the moments that bring an idea back to the viewer stay on Temidayo.
+  A graphic earns the screen when seeing the idea is easier than hearing it alone. It is not a decoration for a spoken point.
+  Substantive teaching is TRUE full screen. Never a moving Temidayo behind or beside a framework. Never the teaching graphic shrunk into a corner.
+  Editorial, not corporate training. Generous whitespace, strong hierarchy, clean cards, short labels, obvious reading order. No fake interactivity, no progress bars, no decorative icons, no quiz styling.
+  Mobile legibility is not negotiable. Large type, few words, high contrast, generous margins. Simplify the graphic rather than shrink the type.
+  Restraint holds: about 3 to 5 camera-emphasis beats, about 2 to 4 meaningful B-roll moments, about 4 to 7 restrained sound accents for the whole video. A framework sequence is one visual event, not one event per frame.
+  A graphic may clarify, organize, compare, visualize, sequence or reinforce. It may never introduce a framework, a claim, a figure or a lesson the September 13 script does not already teach.
+
+------------------------------------------------------------------------------
+
+PALETTE
+
+  Deep navy #112345 carries authority and is the usual ground.
+  Warm cream is breathing room, and the light ground where legibility needs it.
+  Muted gold marks the ACTIVE idea only: the selected item, the number,
+  the underline, the one distinction that matters. Never decoration.
+  No other color system is introduced.
+
+------------------------------------------------------------------------------
+
+FRAME BY FRAME
+
+  v10_01_access_ends
+      treatment COMPARISON, built on the duo layout
+      cue: Your experience did not disappear.
+      reveal: Left. Then right. Then the foot line.
+      hold: 2 seconds per side, 3 on the foot.
+      sound: Candidate: one soft tick as the right side lands.
+
+  v10_02_preparation_not_extraction
+      treatment STATEMENT, built on the statement layout
+      cue: Access to a document does not mean you are entitled to keep it. Removing a company name 
+      reveal: Headline alone. Hold. Then the support.
+      hold: 3 seconds alone, 4 with the support. Do not rush this.
+      sound: Not a candidate. This frame should land in silence.
+
+  v10_03_capture_qualify_retrieve
+      treatment SEQUENCE, built on the trio layout
+      cue: Capture the contribution.
+      reveal: One column at a time.
+      hold: 2 seconds each, 4 on the complete set.
+      sound: Candidate: one tick as the third column lands.
+
+  v10_04_calendar_vs_contribution
+      treatment COMPARISON, built on the struck layout
+      cue: “Attended weekly implementation meetings.”
+      reveal: The calendar entry. Hold. Struck. Then the real record.
+      hold: 2 seconds before the strike, 4 after.
+      sound: Strong candidate: one soft tick as the strike lands.
+
+  v10_05_three_labels
+      treatment SEQUENCE, built on the trio layout
+      cue: Now put one of three labels beside the result:
+      reveal: One label at a time, then the foot line.
+      hold: 2 seconds each, 3 on the foot.
+      sound: Candidate: one tick as the third label lands.
+
+  v10_06_language_that_survives
+      treatment STATEMENT, built on the statement layout
+      cue: This is not timid language.
+      reveal: Headline, then the three questions.
+      hold: At least 4 seconds.
+      sound: Candidate: one tick as the headline lands.
+
+  v10_07_name_it_by_the_problem
+      treatment COMPARISON, built on the struck layout
+      cue: “Conflicting handoff criteria” is more useful than “Project Alpha,” especially to somebo
+      reveal: The internal name. Hold. Struck. Then the problem name.
+      hold: 2 seconds before the strike, 3 after.
+      sound: Candidate: one tick as the strike lands.
+
+  v10_08_two_reasons_evidence_is_thin
+      treatment COMPARISON, built on the duo layout
+      cue: Do not solve both problems by writing a stronger sentence.
+      reveal: Left. Then right. Then the foot line.
+      hold: 3 seconds per side, 3 on the foot.
+      sound: Not a candidate.
+
+  v10_09_cta
+      treatment CTA, built on the cta layout
+      cue: Start with one entry.
+      reveal: Label, headline, resource name, URL.
+      hold: At least 4 seconds.
+      sound: Candidate: one clean transition sound on entry.
+
+  v10_10_watch_next
+      treatment WATCH NEXT, built on the watch_next layout
+      cue: Watch “AI Can Do the Task. What Are You Still Paid For?” next.
+      reveal: Label, rule, title, number.
+      hold: Hold to the end.
+      sound: Candidate: one restrained transition sound, then music fade.

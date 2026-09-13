@@ -1,0 +1,41 @@
+==============================================================================
+VIDEO 12  |  SHORTS AUDIT AGAINST THE STORY-LED SCRIPT
+==============================================================================
+
+What to Do When You Can’t Quit Your Job Yet
+
+A Short is a standalone idea. It is not rebuilt because the long-form
+reworded a supporting sentence. It is changed when the framework it rests
+on is gone, or its hook no longer matches the story-led approach.
+
+------------------------------------------------------------------------------
+
+  v12_a1_constraint_not_conclusion   REUSE
+      priority A, V12 hook.
+      support against the story-led script: 1.00
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v12_a2_name_the_constraint         REUSE
+      priority A, V12 protect what must hold.
+      support against the story-led script: 1.00
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v12_a3_make_the_tradeoff_visible   REUSE
+      priority A, V12 bound what you can.
+      support against the story-led script: 1.00
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v12_a4_question_before_activity    REUSE
+      priority A, V12 prepare one possible next step.
+      support against the story-led script: 1.00
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v12_b1_exchange_not_add            REUSE
+      priority B, V12 prepare one possible next step.
+      support against the story-led script: 0.98
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v12_b2_four_lines                  REUSE
+      priority B, V12 the plan.
+      support against the story-led script: 1.00
+      The story-led script still carries this Short's language. Nothing to change.

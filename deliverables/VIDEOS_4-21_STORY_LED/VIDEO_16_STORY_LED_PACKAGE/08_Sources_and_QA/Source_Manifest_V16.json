@@ -1,0 +1,150 @@
+{
+  "video": 16,
+  "title": "What to Do When Your Work Is Valued but You Are Overlooked",
+  "thumbnail": "THEY NEED YOU. THEN SKIP YOU.",
+  "generated": "Sunday, September 13, 2026 | 2:34 PM CT",
+  "spoken_source_of_truth": {
+    "script": "Video_16_FINAL_Story_Led_Conversational_Recording_Script.docx",
+    "script_sha256": "0349d5904a7e520c9a6b7b6ee6dc6111b55b68dc9bd33a286e769582631c1c0b",
+    "thought_block": "Video_16_Thought_Block_Recording_Copy_Story_Led.docx",
+    "thought_block_sha256": "6a6a1492800e47853150a48b15942773122a0a7a69d481d0b1c4132958345c66",
+    "note": "Both copied unchanged into 01_Recording_Master and never written to. They override the pre-story-led package."
+  },
+  "pre_story_led_baseline": {
+    "archive": "Videos_4-21_CORRECTED_RUNTIME_Production_Packages.zip",
+    "sha256": "7dbf2d56add4a91fd50f4f1f75c15908ec996a5932d70128bf7db190f8e0dfcb",
+    "status": "Preserved and auditable. Not modified, not overwritten, and no longer the active production handoff."
+  },
+  "runtime": {
+    "class": "REGULAR LONG-FORM",
+    "spoken_words": 1311,
+    "estimated_speech": "9:02 to 10:05 at 130 to 145 words per minute",
+    "note": "Arithmetic on the script. Not a runtime and not a target. The actual length is observed at Temidayo's natural pace."
+  },
+  "assets": [
+    {
+      "file": "v16_01_called_then_skipped.png",
+      "status": "COPY UPDATE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "Re-anchored one beat later. The story-led script opens this video on a recognition moment, and the old cue sat on the scene prose itself, where a full-screen card would cover the very thing the pass was written to create. The card is unchanged and now lands on the line the scene builds to. It now punctuates the end of the scene rather than opening over it.",
+      "cue": "And you are not in the conversation."
+    },
+    {
+      "file": "v16_02_four_separations.png",
+      "status": "REUSE",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Before you change how you behave, separate four things: is the work seen, is it attributed to you, are you trusted for delivery or considered for larger scope, and is the obstacle one you can actually remove?"
+    },
+    {
+      "file": "v16_03_where_work_disappears.png",
+      "status": "REUSE",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Work disappears in predictable places."
+    },
+    {
+      "file": "v16_04_delivery_vs_scope.png",
+      "status": "REUSE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "So delivery and scope are being judged separately."
+    },
+    {
+      "file": "v16_05_the_hinge.png",
+      "status": "REUSE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "A manager who does not know is a completely different situation from a manager who knows and does not act."
+    },
+    {
+      "file": "v16_06_what_this_does_not_fix.png",
+      "status": "REUSE",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "This does not override bias."
+    },
+    {
+      "file": "v16_07_three_pieces_four_lines.png",
+      "status": "REUSE",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Take three pieces of work from the last year."
+    },
+    {
+      "file": "v16_08_waiting_or_testing.png",
+      "status": "REUSE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Waiting is a legitimate choice when you can point at the specific thing you are waiting for."
+    },
+    {
+      "file": "v16_09_cta.png",
+      "status": "REUSE",
+      "treatment": "CTA",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "If you want the longer version of how to build that record properly, Keep the Proof is where I have put it, and the link is below."
+    },
+    {
+      "file": "v16_10_watch_next.png",
+      "status": "REUSE",
+      "treatment": "WATCH NEXT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "If it is difficult to write, that is worth knowing."
+    }
+  ],
+  "assets_removed": [],
+  "asset_classification": {
+    "COPY UPDATE": 1,
+    "REUSE": 9
+  },
+  "shorts": [
+    {
+      "slug": "v16_a1_called_then_skipped",
+      "state": "REUSE",
+      "support": 1.0
+    },
+    {
+      "slug": "v16_a2_the_hinge",
+      "state": "REUSE",
+      "support": 0.93
+    },
+    {
+      "slug": "v16_a3_where_work_disappears",
+      "state": "REUSE",
+      "support": 0.91
+    },
+    {
+      "slug": "v16_a4_three_pieces_four_lines",
+      "state": "REUSE",
+      "support": 0.81
+    },
+    {
+      "slug": "v16_b1_trusted_vs_considered",
+      "state": "COPY UPDATE",
+      "support": 0.69
+    },
+    {
+      "slug": "v16_b2_what_it_does_not_fix",
+      "state": "REUSE",
+      "support": 0.84
+    }
+  ],
+  "not_verified": [
+    "Nothing here has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

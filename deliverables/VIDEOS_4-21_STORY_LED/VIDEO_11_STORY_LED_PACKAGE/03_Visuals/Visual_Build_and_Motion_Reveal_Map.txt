@@ -1,0 +1,101 @@
+==============================================================================
+VIDEO 11  |  VISUAL BUILD AND MOTION REVEAL MAP
+==============================================================================
+
+AI Can Do the Task. What Are You Still Paid For?
+
+------------------------------------------------------------------------------
+
+STANDING DIRECTION
+
+  Camera-led teaching governs. Recognition, personal story, tension and the moments that bring an idea back to the viewer stay on Temidayo.
+  A graphic earns the screen when seeing the idea is easier than hearing it alone. It is not a decoration for a spoken point.
+  Substantive teaching is TRUE full screen. Never a moving Temidayo behind or beside a framework. Never the teaching graphic shrunk into a corner.
+  Editorial, not corporate training. Generous whitespace, strong hierarchy, clean cards, short labels, obvious reading order. No fake interactivity, no progress bars, no decorative icons, no quiz styling.
+  Mobile legibility is not negotiable. Large type, few words, high contrast, generous margins. Simplify the graphic rather than shrink the type.
+  Restraint holds: about 3 to 5 camera-emphasis beats, about 2 to 4 meaningful B-roll moments, about 4 to 7 restrained sound accents for the whole video. A framework sequence is one visual event, not one event per frame.
+  A graphic may clarify, organize, compare, visualize, sequence or reinforce. It may never introduce a framework, a claim, a figure or a lesson the September 13 script does not already teach.
+
+------------------------------------------------------------------------------
+
+PALETTE
+
+  Deep navy #112345 carries authority and is the usual ground.
+  Warm cream is breathing room, and the light ground where legibility needs it.
+  Muted gold marks the ACTIVE idea only: the selected item, the number,
+  the underline, the one distinction that matters. Never decoration.
+  No other color system is introduced.
+
+------------------------------------------------------------------------------
+
+FRAME BY FRAME
+
+  v11_01_can_we_reduce_the_team
+      treatment STATEMENT, built on the statement layout
+      cue: “Does this mean we can reduce the team?”
+      reveal: The question alone. Hold. Then the line under it.
+      hold: 2 seconds alone, 3 with the support.
+      sound: Candidate: one clean transition sound on entry.
+
+  v11_02_task_is_not_the_job
+      treatment SEQUENCE, built on the trio layout
+      cue: Produce. Interpret. Decide.
+      reveal: One column at a time, then the foot line.
+      hold: 2 seconds each, 4 on the foot.
+      sound: Candidate: one tick as the foot line lands.
+
+  v11_03_headline_rate
+      treatment ARTIFACT, built on the statfacts layout
+      cue: Here is a small synthetic service report. These are invented teaching numbers, not custo
+      reveal: The label first and permanently, then the numbers.
+      hold: At least 4 seconds.
+      sound: Candidate: one soft tick as the rate appears.
+
+  v11_04_the_mix_changed
+      treatment COMPARISON, built on the duo layout
+      cue: What changed was the mix. The second period had far more routine cases and fewer complex
+      reveal: Left. Then right. Then the foot line, which holds longest.
+      hold: 3 seconds per side, 5 on the foot.
+      sound: Strong candidate: one soft tick as the foot line lands.
+
+  v11_05_what_it_does_not_establish
+      treatment COMPARISON, built on the duo layout
+      cue: It does not establish that people became more effective within each category.
+      reveal: Left. Then right. Then the foot line.
+      hold: 3 seconds per side, 4 on the foot.
+      sound: Not a candidate.
+
+  v11_06_the_boundary_is_not
+      treatment COMPARISON, built on the struck layout
+      cue: So the boundary is not:
+      reveal: The weak claim. Hold. Struck. Then the real question.
+      hold: 2 seconds before the strike, 4 after.
+      sound: Candidate: one tick as the strike lands.
+
+  v11_07_who_owns_the_consequence
+      treatment SEQUENCE, built on the ladder layout
+      cue: Those are organizational responsibilities.
+      reveal: One question at a time, then the foot line.
+      hold: 2 seconds each, 4 on the foot.
+      sound: Candidate: one tick as the foot line lands.
+
+  v11_08_map_your_role
+      treatment STATEMENT, built on the statement layout
+      cue: Take one recurring output from your job.
+      reveal: Headline, then the limit.
+      hold: At least 4 seconds.
+      sound: Not a candidate.
+
+  v11_09_cta
+      treatment CTA, built on the cta layout
+      cue: Choose one recurring output before your next role conversation.
+      reveal: Label, headline, resource name, URL.
+      hold: At least 4 seconds.
+      sound: Candidate: one clean transition sound on entry.
+
+  v11_10_watch_next
+      treatment WATCH NEXT, built on the watch_next layout
+      cue: Watch “What to Do When You Can’t Quit Your Job Yet” next.
+      reveal: Label, rule, title, number.
+      hold: Hold to the end.
+      sound: Candidate: one restrained transition sound, then music fade.

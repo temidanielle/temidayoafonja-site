@@ -1,0 +1,101 @@
+==============================================================================
+VIDEO 21  |  VISUAL BUILD AND MOTION REVEAL MAP
+==============================================================================
+
+What You Must Relearn When You Change Industries
+
+------------------------------------------------------------------------------
+
+STANDING DIRECTION
+
+  Camera-led teaching governs. Recognition, personal story, tension and the moments that bring an idea back to the viewer stay on Temidayo.
+  A graphic earns the screen when seeing the idea is easier than hearing it alone. It is not a decoration for a spoken point.
+  Substantive teaching is TRUE full screen. Never a moving Temidayo behind or beside a framework. Never the teaching graphic shrunk into a corner.
+  Editorial, not corporate training. Generous whitespace, strong hierarchy, clean cards, short labels, obvious reading order. No fake interactivity, no progress bars, no decorative icons, no quiz styling.
+  Mobile legibility is not negotiable. Large type, few words, high contrast, generous margins. Simplify the graphic rather than shrink the type.
+  Restraint holds: about 3 to 5 camera-emphasis beats, about 2 to 4 meaningful B-roll moments, about 4 to 7 restrained sound accents for the whole video. A framework sequence is one visual event, not one event per frame.
+  A graphic may clarify, organize, compare, visualize, sequence or reinforce. It may never introduce a framework, a claim, a figure or a lesson the September 13 script does not already teach.
+
+------------------------------------------------------------------------------
+
+PALETTE
+
+  Deep navy #112345 carries authority and is the usual ground.
+  Warm cream is breathing room, and the light ground where legibility needs it.
+  Muted gold marks the ACTIVE idea only: the selected item, the number,
+  the underline, the one distinction that matters. Never decoration.
+  No other color system is introduced.
+
+------------------------------------------------------------------------------
+
+FRAME BY FRAME
+
+  v21_01_the_room_is_different
+      treatment STATEMENT, built on the statement layout
+      cue: And the surprising part is that you can still do the work.
+      reveal: Headline as a callout over camera, then full screen.
+      hold: 2 seconds on the callout, 3 on the support.
+      sound: Candidate: one soft tick as the frame goes full screen.
+
+  v21_02_what_does_travel
+      treatment SEQUENCE, built on the ladder layout
+      cue: First, quickly, what does travel, because it is real and it is easy to lose sight of in 
+      reveal: One at a time, then the foot line.
+      hold: 2 seconds each, 3 on the foot.
+      sound: Not a candidate.
+
+  v21_03_five_layers
+      treatment SEQUENCE, built on the ladder layout
+      cue: Layer one, and the one that blocks you soonest: what the work is actually about here.
+      reveal: One layer at a time as each is named, then the foot question.
+      hold: 2 seconds per layer, 5 on the complete frame.
+      sound: Candidate: one tick as the foot question lands.
+
+  v21_04_licensing_is_not_a_mindset
+      treatment STATEMENT, built on the statement layout
+      cue: That is not a confidence issue and it is not a mindset problem.
+      reveal: Headline alone. Hold. Then the support line.
+      hold: 3 seconds alone, 4 with the support.
+      sound: Strong candidate: one soft tick as the headline lands. The single most important beat in the video.
+
+  v21_05_easiest_layer_trap
+      treatment STATEMENT, built on the statement layout
+      cue: Layer three. Systems and tooling. This is usually the layer people worry about most and 
+      reveal: Headline, then the support line.
+      hold: At least 3 seconds.
+      sound: Not a candidate.
+
+  v21_06_has_anyone_tried_this
+      treatment STATEMENT, built on the statement layout
+      cue: The single most useful question in a first few months is some version of has anybody tri
+      reveal: The question, then the support line.
+      hold: At least 3 seconds.
+      sound: Candidate: one clean transition sound on entry.
+
+  v21_07_first_ninety_days
+      treatment STATEMENT, built on the statement layout
+      cue: You are not going to arrive and contribute at the level you left at.
+      reveal: Headline, then the support line.
+      hold: At least 4 seconds.
+      sound: Not a candidate.
+
+  v21_08_order_by_what_blocks_you
+      treatment STATEMENT, built on the statement layout
+      cue: Then order the whole thing by one question, which is what stops me contributing usefully
+      reveal: Question, then the support line.
+      hold: At least 4 seconds.
+      sound: Candidate: one tick as the question lands.
+
+  v21_09_cta
+      treatment CTA, built on the cta layout
+      cue: If you want a structured version of the inventory, that is what the Field Kit is for, li
+      reveal: Label, headline, resource name, URL.
+      hold: At least 4 seconds.
+      sound: Candidate: one clean transition sound on entry.
+
+  v21_10_watch_next
+      treatment WATCH NEXT, built on the watch_next layout
+      cue: It is the difference between a plan that will work and a reading list that would have ma
+      reveal: Label, rule, title, number.
+      hold: Hold to the end.
+      sound: Candidate: one restrained transition sound, then music fade.

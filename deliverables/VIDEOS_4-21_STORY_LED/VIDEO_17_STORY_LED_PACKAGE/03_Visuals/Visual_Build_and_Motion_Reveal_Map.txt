@@ -1,0 +1,101 @@
+==============================================================================
+VIDEO 17  |  VISUAL BUILD AND MOTION REVEAL MAP
+==============================================================================
+
+How to Prove Your Value When AI Does More of the Task
+
+------------------------------------------------------------------------------
+
+STANDING DIRECTION
+
+  Camera-led teaching governs. Recognition, personal story, tension and the moments that bring an idea back to the viewer stay on Temidayo.
+  A graphic earns the screen when seeing the idea is easier than hearing it alone. It is not a decoration for a spoken point.
+  Substantive teaching is TRUE full screen. Never a moving Temidayo behind or beside a framework. Never the teaching graphic shrunk into a corner.
+  Editorial, not corporate training. Generous whitespace, strong hierarchy, clean cards, short labels, obvious reading order. No fake interactivity, no progress bars, no decorative icons, no quiz styling.
+  Mobile legibility is not negotiable. Large type, few words, high contrast, generous margins. Simplify the graphic rather than shrink the type.
+  Restraint holds: about 3 to 5 camera-emphasis beats, about 2 to 4 meaningful B-roll moments, about 4 to 7 restrained sound accents for the whole video. A framework sequence is one visual event, not one event per frame.
+  A graphic may clarify, organize, compare, visualize, sequence or reinforce. It may never introduce a framework, a claim, a figure or a lesson the September 13 script does not already teach.
+
+------------------------------------------------------------------------------
+
+PALETTE
+
+  Deep navy #112345 carries authority and is the usual ground.
+  Warm cream is breathing room, and the light ground where legibility needs it.
+  Muted gold marks the ACTIVE idea only: the selected item, the number,
+  the underline, the one distinction that matters. Never decoration.
+  No other color system is introduced.
+
+------------------------------------------------------------------------------
+
+FRAME BY FRAME
+
+  v17_01_two_days_forty_minutes
+      treatment COMPARISON, built on the duo layout
+      cue: Now a tool produces most of it in forty minutes.
+      reveal: Left. Then right. Then the foot line.
+      hold: 2 seconds per side, 3 on the foot.
+      sound: Candidate: one soft tick as the right side lands.
+
+  v17_02_what_did_you_actually_do
+      treatment STATEMENT, built on the statement layout
+      cue: Until someone asks, "So what did you actually do?"
+      reveal: Single state, entering hard.
+      hold: About 2 seconds. Short, and it lands.
+      sound: Strong candidate: one clean transition sound on entry.
+
+  v17_03_output_is_not_contribution
+      treatment COMPARISON, built on the duo layout
+      cue: The record used to be attached to the artifact. It now has to be attached to the decisio
+      reveal: Left, then right, then the foot line.
+      hold: 3 seconds on the right side.
+      sound: Candidate: one tick as the right side lands.
+
+  v17_04_four_lines
+      treatment SEQUENCE, built on the ladder layout
+      cue: They are deliberately short, because a record you will not maintain is not a record.
+      reveal: One line at a time.
+      hold: 3 seconds per line, 4 on the complete frame.
+      sound: Candidate: one tick on the first line only.
+
+  v17_05_line_two
+      treatment STATEMENT, built on the statement layout
+      cue: If you only keep one of those, keep the second.
+      reveal: Question, then the support line.
+      hold: At least 4 seconds.
+      sound: Strong candidate: one soft tick as the question lands.
+
+  v17_06_which_parts_leave_a_record
+      treatment COMPARISON, built on the duo layout
+      cue: Now mark the parts that leave nothing.
+      reveal: Left. Then right. Then the foot line.
+      hold: 3 seconds per side, 4 on the foot.
+      sound: Candidate: one tick as the foot line lands.
+
+  v17_07_speed_is_not_correctness
+      treatment STATEMENT, built on the statement layout
+      cue: But the report that used to take two days is now expected on the same afternoon, and the
+      reveal: Headline, then the support line.
+      hold: At least 4 seconds.
+      sound: Not a candidate.
+
+  v17_08_worked_example
+      treatment SEQUENCE, built on the labeled_rows layout
+      cue: Let me make that concrete. I have constructed this example so the structure is visible. 
+      reveal: One row at a time. The label never leaves.
+      hold: 3 seconds per row, 4 on the complete frame.
+      sound: Not a candidate. The label needs to be read.
+
+  v17_09_cta
+      treatment CTA, built on the cta layout
+      cue: If you want the longer version of building a contribution record properly, that is Keep 
+      reveal: Label, headline, resource name, URL.
+      hold: At least 4 seconds.
+      sound: Candidate: one clean transition sound on entry.
+
+  v17_10_watch_next
+      treatment WATCH NEXT, built on the watch_next layout
+      cue: I would genuinely like to read those, because that sentence is the one that is disappear
+      reveal: Label, rule, title, number.
+      hold: Hold to the end.
+      sound: Candidate: one restrained transition sound, then music fade.

@@ -1,0 +1,41 @@
+==============================================================================
+VIDEO 15  |  SHORTS AUDIT AGAINST THE STORY-LED SCRIPT
+==============================================================================
+
+The Career Gaps You Don't See Until the Work Gets Harder
+
+A Short is a standalone idea. It is not rebuilt because the long-form
+reworded a supporting sentence. It is changed when the framework it rests
+on is gone, or its hook no longer matches the story-led approach.
+
+------------------------------------------------------------------------------
+
+  v15_a1_the_question_changes        REUSE
+      priority A, V15 hook.
+      support against the story-led script: 0.91
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v15_a2_three_gaps                  REUSE
+      priority A, V15 early payoff.
+      support against the story-led script: 0.95
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v15_a3_course_limit                REUSE
+      priority A, V15 learn.
+      support against the story-led script: 0.88
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v15_a4_knowing_isnt_owning         REUSE
+      priority A, V15 practice.
+      support against the story-led script: 0.86
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v15_b1_evidence_gap                REUSE
+      priority B, V15 prove.
+      support against the story-led script: 0.76
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v15_b2_not_a_verdict               COPY UPDATE
+      priority B, V15 boundary.
+      support against the story-led script: 0.73
+      The framework this Short rests on is still taught, but the story-led script rewords the supporting lines, so the Short's wording is brought to the current script. The standalone idea is unchanged.

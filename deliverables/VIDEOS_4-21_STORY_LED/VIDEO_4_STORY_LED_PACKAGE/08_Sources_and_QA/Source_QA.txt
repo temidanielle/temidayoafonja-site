@@ -1,0 +1,24 @@
+==============================================================================
+VIDEO 4  |  SOURCE QA
+==============================================================================
+
+  [PASS] Source files match their intake hashes
+         script and thought block both unchanged on disk
+  [PASS] Thought block matches the script exactly
+         91 blocks carry the script's 874 spoken words exactly, in order
+  [PASS] Section labels are not in the spoken copy
+         6 labels held out of the spoken script
+  [PASS] No production direction inside the spoken copy
+         no camera, B-roll or graphics direction is spoken
+  [PASS] No em dashes or en dashes
+         clean
+  [PASS] U.S. English
+         no British spellings
+  [PASS] Spoken word count agrees with the thought block
+         874 spoken words in both
+  [PASS] Runtime class correct for this video
+         SHORTER RETENTION TEST. 874 words, 6:01 to 6:43 at 130 to 145 words per minute
+  [PASS] Shorter retention-test video, not compressed to an old target
+         874 words. Estimated speech 6:01 to 6:43 at 130 to 145 words per minute. This is arithmetic on the script, not a runtime: the actual length must be observed at Temidayo's natural pace. The earlier five-minute target predates the September 13 expansion and is not applied.
+  [PASS] Opens on a recognizable situation, not on the framework
+         Temidayo's own experience: Three times in five years, I stepped into a role that no one h

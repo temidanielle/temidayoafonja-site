@@ -1,0 +1,41 @@
+==============================================================================
+VIDEO 4  |  SHORTS AUDIT AGAINST THE STORY-LED SCRIPT
+==============================================================================
+
+I Was First in 3 New Roles in 5 Years. Here's What I Stopped Doing.
+
+A Short is a standalone idea. It is not rebuilt because the long-form
+reworded a supporting sentence. It is changed when the framework it rests
+on is gone, or its hook no longer matches the story-led approach.
+
+------------------------------------------------------------------------------
+
+  v4_a1_never_held_the_role          REUSE
+      priority A, V4 hook.
+      support against the story-led script: 0.85
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v4_a2_remove_the_title             COPY UPDATE
+      priority A, V4 stop one.
+      support against the story-led script: 0.69
+      The framework this Short rests on is still taught, but the story-led script rewords the supporting lines, so the Short's wording is brought to the current script. The standalone idea is unchanged.
+
+  v4_a3_evidence_of_judgment         REUSE
+      priority A, V4 stop two.
+      support against the story-led script: 0.77
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v4_a4_three_line_readiness_case    REUSE
+      priority A, V4 the 3-line readiness case.
+      support against the story-led script: 0.90
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v4_b1_name_the_gap                 COPY UPDATE
+      priority B, V4 stop three.
+      support against the story-led script: 0.74
+      The framework this Short rests on is still taught, but the story-led script rewords the supporting lines, so the Short's wording is brought to the current script. The standalone idea is unchanged.
+
+  v4_b2_what_it_does_not_guarantee   COPY UPDATE
+      priority B, V4 close.
+      support against the story-led script: 0.74
+      The framework this Short rests on is still taught, but the story-led script rewords the supporting lines, so the Short's wording is brought to the current script. The standalone idea is unchanged.

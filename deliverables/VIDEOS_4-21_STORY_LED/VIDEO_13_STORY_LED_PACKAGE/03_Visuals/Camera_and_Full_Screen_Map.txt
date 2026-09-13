@@ -1,0 +1,293 @@
+==============================================================================
+VIDEO 13  |  CAMERA AND FULL-SCREEN TRIGGER MAP
+==============================================================================
+
+A 30-Day Plan to Test Your Next Career Move
+
+Every stretch of this video is marked. A row that says CAMERA is a stretch
+where Temidayo carries the moment and no graphic should appear.
+
+------------------------------------------------------------------------------
+
+HOW TO READ THIS
+
+  CAMERA        stay on Temidayo. Recognition, lived experience,
+                tension, a reflective turn, or bringing the idea
+                back to the viewer.
+  FULL SCREEN   a true full-screen frame. No camera behind it and
+                no shrinking it into a corner.
+
+  Do not alternate mechanically. Several camera stretches in a row are
+  correct where the script is telling a story.
+
+------------------------------------------------------------------------------
+
+
+==========================================================================
+HOOK | Stop collecting career activity
+==========================================================================
+
+  [ CAMERA ]  5 spoken paragraphs, about 35 words
+              opens: You have saved the jobs.
+              stay on Temidayo through this stretch.
+
+  [ FULL SCREEN ]  v13_01_career_activity
+      cue, exact words: It can make you feel productive without answering the decision.
+      treatment:  STATEMENT
+      purpose:    The hook, aimed at the actual failure mode.
+      reveal:     Headline. Hold. Then the support line.
+                  One idea, full screen, large. Headline first, then the support line if there is one.
+                  Hold it still. Stillness is correct here: the viewer is reading or thinking.
+                  No motion beyond the entrance. No sound unless this is one of the few beats that earns it.
+      hold:       3 seconds, then 3 with the support.
+      sound:      Candidate: one clean transition sound on entry.
+      after:      Return to camera on the next spoken line.
+      status:     REUSE
+
+  [ CAMERA ]  8 spoken paragraphs, about 65 words
+              opens: So before you make a high-cost commitment, choose one destinatio
+              stay on Temidayo through this stretch.
+
+  [ FULL SCREEN ]  v13_02_define_investigate_try_decide
+      cue, exact words: Define.
+      treatment:  SEQUENCE
+      purpose:    The whole plan in one frame, delivered early.
+      reveal:     One bucket at a time.
+                  Establish the complete structure first, all items visible but even in weight, so the viewer sees the shape.
+                  Then activate ONE item at a time as Temidayo explains it: that item comes up in gold, the others sit back in a dimmer neutral. Do not emphasize all of them at once.
+                  Return to the complete structure, evenly weighted, only after the last item.
+                  One sound accent at most across the whole sequence, not one per item.
+      hold:       2 seconds each, 5 on the complete grid. Viewers will pause here.
+      sound:      Candidate: one tick on the fourth bucket.
+      after:      Return to camera on the next spoken line.
+      status:     REUSE
+
+  [ CAMERA ]  3 spoken paragraphs, about 3 words
+              opens: Investigate.
+              stay on Temidayo through this stretch.
+
+  [ FULL SCREEN ]  v13_03_not_this_option_is_allowed
+      cue, exact words: And the test only works if “not this option” is allowed to be a good result.
+      treatment:  STATEMENT
+      purpose:    The condition that makes the whole plan honest.
+      reveal:     Headline, then the support line.
+                  One idea, full screen, large. Headline first, then the support line if there is one.
+                  Hold it still. Stillness is correct here: the viewer is reading or thinking.
+                  No motion beyond the entrance. No sound unless this is one of the few beats that earns it.
+      hold:       At least 4 seconds.
+      sound:      Strong candidate: one soft tick as the headline lands.
+      after:      Return to camera on the next spoken line.
+      status:     REUSE
+
+  [ CAMERA ]  2 spoken paragraphs, about 77 words
+              opens: A lot of people test a career move entirely in their head. They 
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+SETUP | One destination, one hypothesis
+==========================================================================
+
+  [ CAMERA ]  1 spoken paragraph, about 7 words
+              opens: Choose a destination specific enough to test.
+              stay on Temidayo through this stretch.
+
+  [ FULL SCREEN ]  v13_04_destination_specific_enough
+      cue, exact words: “Something strategic” is too vague.
+      treatment:  COMPARISON
+      purpose:    Show the standard for a testable destination.
+      reveal:     The vague version. Hold. Struck. Then the testable one.
+                  Two large sides, full screen. Short label on each side, then the short content under it.
+                  Reveal the left side first and let it sit. Reveal the right side only when Temidayo reaches it. Do not present both at once.
+                  Gold marks the distinction that matters, on one side only. Everything else stays navy on cream or cream on navy.
+                  No camera behind the graphic. This is a true full-screen frame.
+      hold:       2 seconds before the strike, 4 after.
+      sound:      Candidate: one tick as the strike lands.
+      after:      Return to camera on the next spoken line.
+      status:     REUSE
+
+  [ CAMERA ]  13 spoken paragraphs, about 185 words
+              opens: “An internal operations-improvement role that uses my cross-team
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+DAYS 1–7 | Define the work and the gaps
+==========================================================================
+
+  [ CAMERA ]  20 spoken paragraphs, about 181 words
+              opens: In the first week, look at the work behind the title.
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+DAYS 8–14 | Investigate with people who know the work
+==========================================================================
+
+  [ CAMERA ]  1 spoken paragraph, about 20 words
+              opens: Use the second week to check your interpretation with people who
+              stay on Temidayo through this stretch.
+
+  [ FULL SCREEN ]  v13_05_ask_about_the_work
+      cue, exact words: Do not ask for blanket reassurance about your potential.
+      treatment:  SEQUENCE
+      purpose:    Give the viewer the actual questions.
+      reveal:     One question at a time, then the foot line.
+                  Establish the complete structure first, all items visible but even in weight, so the viewer sees the shape.
+                  Then activate ONE item at a time as Temidayo explains it: that item comes up in gold, the others sit back in a dimmer neutral. Do not emphasize all of them at once.
+                  Return to the complete structure, evenly weighted, only after the last item.
+                  One sound accent at most across the whole sequence, not one per item.
+      hold:       2 seconds each, 3 on the foot.
+      sound:      Not a candidate.
+      after:      Return to camera on the next spoken line.
+      status:     REUSE
+
+  [ CAMERA ]  9 spoken paragraphs, about 109 words
+              opens: Ask about the work.
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+DAYS 15–21 | Try one bounded piece
+==========================================================================
+
+  [ CAMERA ]  2 spoken paragraphs, about 26 words
+              opens: For the third week, test one important part of the destination w
+              stay on Temidayo through this stretch.
+
+  [ FULL SCREEN ]  v13_06_work_sample_boundary
+      cue, exact words: Do not recreate a confidential employer process.
+      treatment:  COMPARISON
+      purpose:    The compliance boundary on the sampling week.
+      reveal:     Left. Then right. Then the foot line.
+                  Two large sides, full screen. Short label on each side, then the short content under it.
+                  Reveal the left side first and let it sit. Reveal the right side only when Temidayo reaches it. Do not present both at once.
+                  Gold marks the distinction that matters, on one side only. Everything else stays navy on cream or cream on navy.
+                  No camera behind the graphic. This is a true full-screen frame.
+      hold:       3 seconds per side, 3 on the foot.
+      sound:      Not a candidate.
+      after:      Return to camera on the next spoken line.
+      status:     REUSE
+
+  [ CAMERA ]  19 spoken paragraphs, about 189 words
+              opens: Do not turn the exercise into unpaid operational work for a pros
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+DAYS 22–30 | Decide from the evidence
+==========================================================================
+
+  [ CAMERA ]  6 spoken paragraphs, about 33 words
+              opens: Now stop collecting activities.
+              stay on Temidayo through this stretch.
+
+  [ FULL SCREEN ]  v13_07_three_decisions
+      cue, exact words: Then choose one of three decisions:
+      treatment:  SEQUENCE
+      purpose:    The decision point, with the inconclusive option preserved.
+      reveal:     One column at a time, then the foot line.
+                  Establish the complete structure first, all items visible but even in weight, so the viewer sees the shape.
+                  Then activate ONE item at a time as Temidayo explains it: that item comes up in gold, the others sit back in a dimmer neutral. Do not emphasize all of them at once.
+                  Return to the complete structure, evenly weighted, only after the last item.
+                  One sound accent at most across the whole sequence, not one per item.
+      hold:       2 seconds each, 4 on the foot.
+      sound:      Candidate: one tick as the foot line lands.
+      after:      Return to camera on the next spoken line.
+      status:     REUSE
+
+  [ CAMERA ]  11 spoken paragraphs, about 140 words
+              opens: Continue.
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+THE EVIDENCE STANDARD | What the month can prove
+==========================================================================
+
+  [ CAMERA ]  3 spoken paragraphs, about 44 words
+              opens: This plan can help you understand a destination and choose a bet
+              stay on Temidayo through this stretch.
+
+  [ FULL SCREEN ]  v13_08_effort_is_not_evidence
+      cue, exact words: Do not confuse effort with evidence.
+      treatment:  STATEMENT
+      purpose:    The sharpest line in the video.
+      reveal:     Headline alone. Hold. Then the support.
+                  One idea, full screen, large. Headline first, then the support line if there is one.
+                  Hold it still. Stillness is correct here: the viewer is reading or thinking.
+                  No motion beyond the entrance. No sound unless this is one of the few beats that earns it.
+      hold:       3 seconds alone, 4 with the support.
+      sound:      Strong candidate: one soft tick as the headline lands.
+      after:      Return to camera on the next spoken line.
+      status:     REUSE
+
+  [ CAMERA ]  7 spoken paragraphs, about 85 words
+              opens: Reading descriptions, having conversations, and making a sample 
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+ACTION AND RESOURCE
+==========================================================================
+
+  [ FULL SCREEN ]  v13_09_cta
+      cue, exact words: Choose one destination and write the idea to test before you add another course or application to the list.
+      treatment:  CTA
+      purpose:    The resource route named by the corrected master.
+      reveal:     Label, headline, resource name, URL.
+                  Full screen, and simpler than the teaching graphics. The action is the only thing competing for attention.
+                  Resource name and route appear only where the script speaks them.
+      hold:       At least 4 seconds.
+      sound:      Candidate: one clean transition sound on entry.
+      after:      Return to camera on the next spoken line.
+      status:     COPY UPDATE
+
+  [ FULL SCREEN ]  v13_02_define_investigate_try_decide
+      cue, exact words: Define.
+      treatment:  SEQUENCE
+      purpose:    The whole plan in one frame, delivered early.
+      reveal:     One bucket at a time.
+                  Establish the complete structure first, all items visible but even in weight, so the viewer sees the shape.
+                  Then activate ONE item at a time as Temidayo explains it: that item comes up in gold, the others sit back in a dimmer neutral. Do not emphasize all of them at once.
+                  Return to the complete structure, evenly weighted, only after the last item.
+                  One sound accent at most across the whole sequence, not one per item.
+      hold:       2 seconds each, 5 on the complete grid. Viewers will pause here.
+      sound:      Candidate: one tick on the fourth bucket.
+      after:      Return to camera on the next spoken line.
+      status:     REUSE
+
+  [ CAMERA ]  6 spoken paragraphs, about 58 words
+              opens: Investigate.
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+WATCH NEXT | Final visual
+==========================================================================
+
+  [ FULL SCREEN ]  v13_10_watch_next
+      cue, exact words: For a closer look at separating useful experience from unfamiliar context and actual requirements, watch “How to Change Industries Without Starting Over” next.
+      treatment:  WATCH NEXT
+      purpose:    The final visual, cued by the spoken handoff.
+      reveal:     Label, rule, title, number.
+                  Full screen and final. Label, rule, destination title, video number.
+                  Keep the copy to the left so an end screen can sit on the right.
+                  Never return to camera after this frame. Nothing follows it.
+      hold:       Hold to the end.
+      sound:      Candidate: one restrained transition sound, then music fade.
+      after:      NO RETURN TO CAMERA. Watch Next is final.
+      status:     REUSE
+
+  [ CAMERA ]  1 spoken paragraph, about 17 words
+              opens: The best outcome of a test is a clearer decision, not necessaril
+              stay on Temidayo through this stretch.
+
+
+------------------------------------------------------------------------------
+
+SPINE SUMMARY
+
+  17 camera stretches, 11 full-screen frames.
+  The video stays on Temidayo for most of its length, which is the point
+  of the story-led pass.

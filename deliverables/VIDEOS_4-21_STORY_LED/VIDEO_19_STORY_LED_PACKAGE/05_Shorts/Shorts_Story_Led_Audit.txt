@@ -1,0 +1,41 @@
+==============================================================================
+VIDEO 19  |  SHORTS AUDIT AGAINST THE STORY-LED SCRIPT
+==============================================================================
+
+Should You Become a Consultant? The Part Everyone Leaves Out
+
+A Short is a standalone idea. It is not rebuilt because the long-form
+reworded a supporting sentence. It is changed when the framework it rests
+on is gone, or its hook no longer matches the story-led approach.
+
+------------------------------------------------------------------------------
+
+  v19_a1_experience_is_not_an_offer  REUSE
+      priority A, V19 hook and reversal.
+      support against the story-led script: 1.00
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v19_a2_who_signs_it                REUSE
+      priority A, V19 the buyer question.
+      support against the story-led script: 0.82
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v19_a3_deliverable                 COPY UPDATE
+      priority A, V19 turn expertise into a deliverable.
+      support against the story-led script: 0.68
+      The framework this Short rests on is still taught, but the story-led script rewords the supporting lines, so the Short's wording is brought to the current script. The standalone idea is unchanged.
+
+  v19_a4_test_before_you_leave       REUSE
+      priority A, V19 test before you leave.
+      support against the story-led script: 0.86
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v19_b1_repeatability               REUSE
+      priority B, V19 repeatability.
+      support against the story-led script: 0.81
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v19_b2_costs                       REUSE
+      priority B, V19 the costs.
+      support against the story-led script: 0.83
+      The story-led script still carries this Short's language. Nothing to change.

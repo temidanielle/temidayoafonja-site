@@ -1,0 +1,149 @@
+{
+  "video": 10,
+  "title": "Before a Layoff, Know What You Can Still Prove",
+  "thumbnail": "BEFORE ACCESS ENDS",
+  "generated": "Sunday, September 13, 2026 | 2:34 PM CT",
+  "spoken_source_of_truth": {
+    "script": "Video_10_FINAL_Story_Led_Conversational_Recording_Script.docx",
+    "script_sha256": "8a75bc3f0f5bf92e4931090bc2f7d092f81fe7361dc503474187ce04790d035c",
+    "thought_block": "Video_10_Thought_Block_Recording_Copy_Story_Led.docx",
+    "thought_block_sha256": "bb303370724085a058238b0b06e466980796d87f389ed8b3674be63380b91fb8",
+    "note": "Both copied unchanged into 01_Recording_Master and never written to. They override the pre-story-led package."
+  },
+  "pre_story_led_baseline": {
+    "archive": "Videos_4-21_CORRECTED_RUNTIME_Production_Packages.zip",
+    "sha256": "7dbf2d56add4a91fd50f4f1f75c15908ec996a5932d70128bf7db190f8e0dfcb",
+    "status": "Preserved and auditable. Not modified, not overwritten, and no longer the active production handoff."
+  },
+  "runtime": {
+    "class": "REGULAR LONG-FORM",
+    "spoken_words": 1229,
+    "estimated_speech": "8:28 to 9:27 at 130 to 145 words per minute",
+    "note": "Arithmetic on the script. Not a runtime and not a target. The actual length is observed at Temidayo's natural pace."
+  },
+  "assets": [
+    {
+      "file": "v10_01_access_ends.png",
+      "status": "REUSE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Your experience did not disappear."
+    },
+    {
+      "file": "v10_02_preparation_not_extraction.png",
+      "status": "REUSE",
+      "treatment": "STATEMENT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Access to a document does not mean you are entitled to keep it. Removing a company name does not automatically make restricted material yours to retain."
+    },
+    {
+      "file": "v10_03_capture_qualify_retrieve.png",
+      "status": "REUSE",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Capture the contribution."
+    },
+    {
+      "file": "v10_04_calendar_vs_contribution.png",
+      "status": "REUSE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "“Attended weekly implementation meetings.”"
+    },
+    {
+      "file": "v10_05_three_labels.png",
+      "status": "REUSE",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Now put one of three labels beside the result:"
+    },
+    {
+      "file": "v10_06_language_that_survives.png",
+      "status": "REUSE",
+      "treatment": "STATEMENT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "This is not timid language."
+    },
+    {
+      "file": "v10_07_name_it_by_the_problem.png",
+      "status": "REUSE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "“Conflicting handoff criteria” is more useful than “Project Alpha,” especially to somebody outside the company."
+    },
+    {
+      "file": "v10_08_two_reasons_evidence_is_thin.png",
+      "status": "REUSE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Do not solve both problems by writing a stronger sentence."
+    },
+    {
+      "file": "v10_09_cta.png",
+      "status": "REUSE",
+      "treatment": "CTA",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Start with one entry."
+    },
+    {
+      "file": "v10_10_watch_next.png",
+      "status": "REUSE",
+      "treatment": "WATCH NEXT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Watch “AI Can Do the Task. What Are You Still Paid For?” next."
+    }
+  ],
+  "assets_removed": [],
+  "asset_classification": {
+    "REUSE": 10
+  },
+  "shorts": [
+    {
+      "slug": "v10_a1_before_access_ends",
+      "state": "REUSE",
+      "support": 0.98
+    },
+    {
+      "slug": "v10_a2_preparation_not_extraction",
+      "state": "REUSE",
+      "support": 0.98
+    },
+    {
+      "slug": "v10_a3_calendar_vs_contribution",
+      "state": "REUSE",
+      "support": 1.0
+    },
+    {
+      "slug": "v10_a4_qualify_the_claim",
+      "state": "REUSE",
+      "support": 1.0
+    },
+    {
+      "slug": "v10_b1_name_it_by_the_problem",
+      "state": "REUSE",
+      "support": 1.0
+    },
+    {
+      "slug": "v10_b2_two_reasons",
+      "state": "REUSE",
+      "support": 1.0
+    }
+  ],
+  "not_verified": [
+    "Nothing here has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

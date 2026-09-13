@@ -1,0 +1,24 @@
+==============================================================================
+VIDEO 6  |  SOURCE QA
+==============================================================================
+
+  [PASS] Source files match their intake hashes
+         script and thought block both unchanged on disk
+  [PASS] Thought block matches the script exactly
+         50 blocks carry the script's 1340 spoken words exactly, in order
+  [PASS] Section labels are not in the spoken copy
+         10 labels held out of the spoken script
+  [PASS] No production direction inside the spoken copy
+         no camera, B-roll or graphics direction is spoken
+  [PASS] No em dashes or en dashes
+         clean
+  [PASS] U.S. English
+         no British spellings
+  [PASS] Spoken word count agrees with the thought block
+         1340 spoken words in both
+  [PASS] Runtime class correct for this video
+         REGULAR LONG-FORM. 1340 words, 9:14 to 10:18 at 130 to 145 words per minute
+  [PASS] Long-form depth preserved
+         1340 words
+  [PASS] Opens on a recognizable situation, not on the framework
+         addresses the viewer, Temidayo's own experience: I have worked across eight industries and sectors, and one thi

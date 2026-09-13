@@ -1,0 +1,273 @@
+==============================================================================
+VIDEO 14  |  CAMERA AND FULL-SCREEN TRIGGER MAP
+==============================================================================
+
+Which Parts of Your Experience Actually Transfer to Another Industry?
+
+Every stretch of this video is marked. A row that says CAMERA is a stretch
+where Temidayo carries the moment and no graphic should appear.
+
+------------------------------------------------------------------------------
+
+HOW TO READ THIS
+
+  CAMERA        stay on Temidayo. Recognition, lived experience,
+                tension, a reflective turn, or bringing the idea
+                back to the viewer.
+  FULL SCREEN   a true full-screen frame. No camera behind it and
+                no shrinking it into a corner.
+
+  Do not alternate mechanically. Several camera stretches in a row are
+  correct where the script is telling a story.
+
+------------------------------------------------------------------------------
+
+
+==========================================================================
+HOOK | Same words, different work
+==========================================================================
+
+  [ FULL SCREEN ]  v14_01_same_words_different_work
+      cue, exact words: All three appeared to ask for the same thing:
+      treatment:  COMPARISON
+      purpose:    The whole argument in one frame. The words are shared. The consequence underneath them is not.
+      reveal:     Three industry headings together. Hold. MANAGE RISK appears beneath all three. Hold long. Then the three consequence lines appear one at a time, left to right.
+                  Two large sides, full screen. Short label on each side, then the short content under it.
+                  Reveal the left side first and let it sit. Reveal the right side only when Temidayo reaches it. Do not present both at once.
+                  Gold marks the distinction that matters, on one side only. Everything else stays navy on cream or cream on navy.
+                  No camera behind the graphic. This is a true full-screen frame.
+      hold:       Hold the shared line for at least 2 seconds alone. Give each consequence line about 2 seconds. This frame can run long.
+      sound:      Strongest candidate in the video. One soft tick as MANAGE RISK lands, and optionally one as the third consequence appears.
+      after:      Stay on the frame through the consequence list, then return to camera.
+      status:     REUSE
+
+  [ CAMERA ]  1 spoken paragraph, about 36 words
+              opens: In one role, getting it wrong could mean a project slips. In ano
+              stay on Temidayo through this stretch.
+
+  [ FULL SCREEN ]  v14_02_research_base
+      cue, exact words: So I went through 28 senior project and program delivery job descriptions across those three industries to answer a question experienced professionals often get wrong in both directions:
+      treatment:  ARTIFACT
+      purpose:    State the sample plainly and let the viewer read it. Deliberately not a research table.
+      reveal:     28 first, alone. Then the unit line. Then the three rows together. Then the date line.
+                  The artifact is the frame. Give it roughly two thirds of the screen at a size that reads on a phone, with a short explainer panel beside it.
+                  Place numbered markers on the artifact, all visible but subdued to begin with, so the viewer can see how many there are.
+                  Then walk them: highlight marker one in gold, neutralize the rest, and show only that marker's line in the panel. Advance as Temidayo reaches each one.
+                  Never show every explanatory line at once. The panel holds one idea.
+                  If the real artifact is too dense to read on a phone, simplify the artifact. Do not shrink the type.
+      hold:       Hold at least 3 seconds after the date line appears. This is the frame viewers will pause on.
+      sound:      Candidate: one soft tick as 28 lands. Nothing on the breakdown rows.
+      after:      Return to camera on the next spoken line.
+      status:     REUSE
+
+  [ CAMERA ]  2 spoken paragraphs, about 61 words
+              opens: When I compared these postings, I kept seeing the same words. Ma
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+WHAT THE RESEARCH ACTUALLY SHOWED
+==========================================================================
+
+  [ CAMERA ]  3 spoken paragraphs, about 104 words
+              opens: The answer was mixed. There was a real shared spine across the p
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+THE TEST | Compare the decision, not the noun
+==========================================================================
+
+  [ FULL SCREEN ]  v14_03_two_question_test
+      cue, exact words: For any requirement that looked similar across industries, I asked two questions:
+      treatment:  COMPARISON
+      purpose:    The method of the whole video, given at full size so it can be photographed.
+      reveal:     First question with its rule. Hold. Second question with its rule. Hold. Then the interpretation line.
+                  Two large sides, full screen. Short label on each side, then the short content under it.
+                  Reveal the left side first and let it sit. Reveal the right side only when Temidayo reaches it. Do not present both at once.
+                  Gold marks the distinction that matters, on one side only. Everything else stays navy on cream or cream on navy.
+                  No camera behind the graphic. This is a true full-screen frame.
+      hold:       At least 2 seconds per question, then 3 seconds on the complete frame.
+      sound:      Candidate: one light tap as the second question lands.
+      after:      Return to camera on the next spoken line.
+      status:     REUSE
+
+  [ FULL SCREEN ]  v14_05_same_word_different_decision
+      cue, exact words: “Governance” sounded useful in another setting until one posting meant an auditable control environment and another meant an executive decision cadence.
+      treatment:  COMPARISON
+      purpose:    One example at a time, as the master instructs. Governance is the clearest single-frame version.
+      reveal:     The word alone. Hold. Then the left reading. Then the right reading.
+                  Two large sides, full screen. Short label on each side, then the short content under it.
+                  Reveal the left side first and let it sit. Reveal the right side only when Temidayo reaches it. Do not present both at once.
+                  Gold marks the distinction that matters, on one side only. Everything else stays navy on cream or cream on navy.
+                  No camera behind the graphic. This is a true full-screen frame.
+      hold:       2 seconds on the word, then about 2 seconds per side.
+      sound:      Candidate: one tick as the second reading replaces the emphasis.
+      after:      Return to camera on the next spoken line.
+      status:     COPY UPDATE
+
+
+==========================================================================
+1 | WHAT TRAVELS
+==========================================================================
+
+  [ FULL SCREEN ]  v14_04_what_travels
+      cue, exact words: So what did travel across the sample?
+      treatment:  SEQUENCE
+      purpose:    Name the shared spine so the viewer can claim it specifically rather than saying transferable skills.
+      reveal:     One item at a time, in the order spoken. Each stays on screen.
+                  Establish the complete structure first, all items visible but even in weight, so the viewer sees the shape.
+                  Then activate ONE item at a time as Temidayo explains it: that item comes up in gold, the others sit back in a dimmer neutral. Do not emphasize all of them at once.
+                  Return to the complete structure, evenly weighted, only after the last item.
+                  One sound accent at most across the whole sequence, not one per item.
+      hold:       About 2 seconds per item as it is named. Hold the complete list 3 seconds before leaving.
+      sound:      Candidate, but the video has stronger moments. If used, one tick on the first item only, never one per item.
+      after:      Return to camera on the next spoken line.
+      status:     REUSE
+
+  [ CAMERA ]  4 spoken paragraphs, about 135 words
+              opens: Second, influence without direct authority. The industries chang
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+2 | WHAT ONLY LOOKS SIMILAR
+==========================================================================
+
+  [ CAMERA ]  2 spoken paragraphs, about 106 words
+              opens: Now the harder category. Some things look transferable because t
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+3 | WHAT MUST BE LEARNED
+==========================================================================
+
+  [ CAMERA ]  2 spoken paragraphs, about 99 words
+              opens: The research also showed a large category of knowledge that may 
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+4 | WHAT MUST BE EXPERIENCED
+==========================================================================
+
+  [ CAMERA ]  2 spoken paragraphs, about 96 words
+              opens: Then there is the category that cannot be solved by reading alon
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+EMPLOYERS DO NOT ALL READ ADJACENT EXPERIENCE THE SAME WAY
+==========================================================================
+
+  [ FULL SCREEN ]  v14_07_employers_disagree
+      cue, exact words: One of the most useful findings was that employers themselves disagreed.
+      treatment:  COMPARISON
+      purpose:    Stop the viewer generalizing in either direction.
+      reveal:     Left side. Hold. Right side. Hold. Then the foot line.
+                  Two large sides, full screen. Short label on each side, then the short content under it.
+                  Reveal the left side first and let it sit. Reveal the right side only when Temidayo reaches it. Do not present both at once.
+                  Gold marks the distinction that matters, on one side only. Everything else stays navy on cream or cream on navy.
+                  No camera behind the graphic. This is a true full-screen frame.
+      hold:       About 3 seconds per side. The right side needs the longer read.
+      sound:      Not a candidate. Let this one land in silence.
+      after:      Return to camera on the next spoken line.
+      status:     REUSE
+
+  [ CAMERA ]  1 spoken paragraph, about 57 words
+              opens: That matters because transferability is not only a property of y
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+WHAT NOT TO CLAIM
+==========================================================================
+
+  [ FULL SCREEN ]  v14_08_research_boundary
+      cue, exact words: This research does not prove that two roles are the same.
+      treatment:  COMPARISON
+      purpose:    The limitation, at full size, in the video rather than only in the notes.
+      reveal:     Headline, then the support line.
+                  Two large sides, full screen. Short label on each side, then the short content under it.
+                  Reveal the left side first and let it sit. Reveal the right side only when Temidayo reaches it. Do not present both at once.
+                  Gold marks the distinction that matters, on one side only. Everything else stays navy on cream or cream on navy.
+                  No camera behind the graphic. This is a true full-screen frame.
+      hold:       At least 4 seconds. This frame is the honesty of the whole video and should not be rushed.
+      sound:      Not a candidate. Silence is the correct treatment here.
+      after:      Return to camera on the next spoken line.
+      status:     COPY UPDATE
+
+  [ CAMERA ]  2 spoken paragraphs, about 66 words
+              opens: The postings tell us what these employers chose to write down. T
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+APPLICATION | Audit one destination role
+==========================================================================
+
+  [ CAMERA ]  1 spoken paragraph, about 41 words
+              opens: Here is how I would use this if you are considering a move. Take
+              stay on Temidayo through this stretch.
+
+  [ FULL SCREEN ]  v14_06_four_bucket_audit
+      cue, exact words: Then sort the answer into four buckets.
+      treatment:  SEQUENCE
+      purpose:    The framework the viewer takes away. The most photographed frame in the video.
+      reveal:     One bucket at a time, in the spoken order, each with its line.
+                  Establish the complete structure first, all items visible but even in weight, so the viewer sees the shape.
+                  Then activate ONE item at a time as Temidayo explains it: that item comes up in gold, the others sit back in a dimmer neutral. Do not emphasize all of them at once.
+                  Return to the complete structure, evenly weighted, only after the last item.
+                  One sound accent at most across the whole sequence, not one per item.
+      hold:       About 2 to 3 seconds per bucket, then 4 seconds on the complete grid.
+      sound:      Candidate: one tick on the first bucket. Do not tick all four.
+      after:      Return to camera on the next spoken line.
+      status:     REUSE
+
+  [ CAMERA ]  1 spoken paragraph, about 43 words
+              opens: That is a much harder exercise than writing a transferable-skill
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+CLOSE | One usable test
+==========================================================================
+
+  [ FULL SCREEN ]  v14_09_cta
+      cue, exact words: If you do one thing after this video, do not start with the title.
+      treatment:  CTA
+      purpose:    The single spoken action. This master names no resource, so none is shown.
+      reveal:     Headline, support, then the question line.
+                  Full screen, and simpler than the teaching graphics. The action is the only thing competing for attention.
+                  Resource name and route appear only where the script speaks them.
+      hold:       At least 4 seconds.
+      sound:      Candidate: one clean transition sound as the card enters.
+      after:      Stay on the card through the close, then move to Watch Next.
+      status:     REUSE
+
+  [ FULL SCREEN ]  v14_10_watch_next
+      cue, exact words: Watch “The Career Gaps You Don’t See Until the Work Gets Harder” next.
+      treatment:  WATCH NEXT
+      purpose:    The final visual.
+      reveal:     Label, rule, title, then the video number.
+                  Full screen and final. Label, rule, destination title, video number.
+                  Keep the copy to the left so an end screen can sit on the right.
+                  Never return to camera after this frame. Nothing follows it.
+      hold:       Hold to the end of the video. Copy stays left so a YouTube end screen can sit on the right.
+      sound:      Candidate: one restrained transition sound on entry, then let the music fade.
+      after:      NO RETURN TO CAMERA. Watch Next is final.
+      status:     REUSE
+
+  [ CAMERA ]  1 spoken paragraph, about 12 words
+              opens: What travels is not the word. It is the judgment underneath it.
+              stay on Temidayo through this stretch.
+
+
+------------------------------------------------------------------------------
+
+SPINE SUMMARY
+
+  12 camera stretches, 10 full-screen frames.
+  The video stays on Temidayo for most of its length, which is the point
+  of the story-led pass.

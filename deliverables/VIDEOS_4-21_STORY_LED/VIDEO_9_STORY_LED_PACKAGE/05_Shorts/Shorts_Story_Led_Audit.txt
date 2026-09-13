@@ -1,0 +1,41 @@
+==============================================================================
+VIDEO 9  |  SHORTS AUDIT AGAINST THE STORY-LED SCRIPT
+==============================================================================
+
+How to Change Industries Without Starting Over
+
+A Short is a standalone idea. It is not rebuilt because the long-form
+reworded a supporting sentence. It is changed when the framework it rests
+on is gone, or its hook no longer matches the story-led approach.
+
+------------------------------------------------------------------------------
+
+  v9_a1_new_field_not_zero           REUSE
+      priority A, V9 hook.
+      support against the story-led script: 1.00
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v9_a2_same_verb_different_decision REUSE
+      priority A, V9 capability.
+      support against the story-led script: 1.00
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v9_a3_better_question              REUSE
+      priority A, V9 context.
+      support against the story-led script: 0.98
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v9_a4_credentials                  REUSE
+      priority A, V9 credentials.
+      support against the story-led script: 1.00
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v9_b1_defensible_introduction      REUSE
+      priority B, V9 put it together.
+      support against the story-led script: 1.00
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v9_b2_the_tradeoff                 REUSE
+      priority B, V9 put it together.
+      support against the story-led script: 0.98
+      The story-led script still carries this Short's language. Nothing to change.

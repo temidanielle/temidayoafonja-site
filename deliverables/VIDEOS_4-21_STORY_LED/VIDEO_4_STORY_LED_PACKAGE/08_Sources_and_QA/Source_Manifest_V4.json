@@ -1,0 +1,147 @@
+{
+  "video": 4,
+  "title": "I Was First in 3 New Roles in 5 Years. Here's What I Stopped Doing.",
+  "thumbnail": "NO EXPERIENCE? NOT EXACTLY.",
+  "generated": "Sunday, September 13, 2026 | 2:34 PM CT",
+  "spoken_source_of_truth": {
+    "script": "Video_4_FINAL_Story_Led_Conversational_Recording_Script.docx",
+    "script_sha256": "3c3c1c899d9b3b32cdab7223f72046107d81ab9523033749509df48f274d367b",
+    "thought_block": "Video_4_Thought_Block_Recording_Copy_Story_Led.docx",
+    "thought_block_sha256": "329bd6a5b4e44a119f23cd3d25468e3cb6b0b814dcd11012da14d90f516c1283",
+    "note": "Both copied unchanged into 01_Recording_Master and never written to. They override the pre-story-led package."
+  },
+  "pre_story_led_baseline": {
+    "archive": "Videos_4-21_CORRECTED_RUNTIME_Production_Packages.zip",
+    "sha256": "7dbf2d56add4a91fd50f4f1f75c15908ec996a5932d70128bf7db190f8e0dfcb",
+    "status": "Preserved and auditable. Not modified, not overwritten, and no longer the active production handoff."
+  },
+  "runtime": {
+    "class": "SHORTER RETENTION TEST",
+    "spoken_words": 874,
+    "estimated_speech": "6:01 to 6:43 at 130 to 145 words per minute",
+    "note": "Arithmetic on the script. Not a runtime and not a target. The actual length is observed at Temidayo's natural pace."
+  },
+  "assets": [
+    {
+      "file": "v4_02_three_stops.png",
+      "status": "COPY UPDATE",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and still teaches what this part of the story-led script teaches. Only the sentence it lands on changed, so the cue is re-anchored. It now lands after the opening scene rather than inside it, so the three stops arrive once the viewer has recognized the situation.",
+      "cue": "I stopped doing three things."
+    },
+    {
+      "file": "v4_03_three_questions.png",
+      "status": "REBUILD",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The teaching moment survives but the story-led script rewrites it materially, so the cue is re-anchored and the card copy checked against the new wording.",
+      "cue": "If you are looking at a role you have never held before, I want you to ask three different questions:"
+    },
+    {
+      "file": "v4_04_remove_the_title.png",
+      "status": "COPY UPDATE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and still teaches what this part of the story-led script teaches. Only the sentence it lands on changed, so the cue is re-anchored.",
+      "cue": "Take the title away for a minute."
+    },
+    {
+      "file": "v4_05_task_list_vs_judgment.png",
+      "status": "COPY UPDATE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and still teaches what this part of the story-led script teaches. Only the sentence it lands on changed, so the cue is re-anchored.",
+      "cue": "A task list can help when the new job looks almost exactly like your old job."
+    },
+    {
+      "file": "v4_06_gap_is_not_a_verdict.png",
+      "status": "COPY UPDATE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and still teaches what this part of the story-led script teaches. Only the sentence it lands on changed, so the cue is re-anchored.",
+      "cue": "A real career move should probably include things you do not know yet."
+    },
+    {
+      "file": "v4_07_three_line_readiness_case.png",
+      "status": "COPY UPDATE",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and still teaches what this part of the story-led script teaches. Only the sentence it lands on changed, so the cue is re-anchored.",
+      "cue": "Here is the test I want you to use."
+    },
+    {
+      "file": "v4_08_what_it_does_not_guarantee.png",
+      "status": "REBUILD",
+      "treatment": "STATEMENT",
+      "mode": "FULL SCREEN",
+      "why": "The teaching moment survives but the story-led script rewrites it materially, so the cue is re-anchored and the card copy checked against the new wording.",
+      "cue": "This does not mean an employer has to choose you."
+    },
+    {
+      "file": "v4_09_cta.png",
+      "status": "COPY UPDATE",
+      "treatment": "CTA",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged. The story-led script rewords the sentence it lands on, so only the cue moved.",
+      "cue": "Being new to the title does not always mean being new to the work."
+    },
+    {
+      "file": "v4_10_watch_next.png",
+      "status": "COPY UPDATE",
+      "treatment": "WATCH NEXT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged. The story-led script rewords the sentence it lands on, so only the cue moved.",
+      "cue": "Being new to the title does not always mean being new to the work."
+    }
+  ],
+  "assets_removed": [
+    {
+      "file": "v4_01_title_new_work_not_new.png",
+      "why": "The story-led V4 opens on Temidayo's own experience of stepping into three roles nobody had held. That is a recognition moment and it should stay on camera. A full-screen card over the first two sentences would cover exactly the moment the pass was written to create."
+    }
+  ],
+  "asset_classification": {
+    "COPY UPDATE": 7,
+    "REBUILD": 2
+  },
+  "shorts": [
+    {
+      "slug": "v4_a1_never_held_the_role",
+      "state": "REUSE",
+      "support": 0.85
+    },
+    {
+      "slug": "v4_a2_remove_the_title",
+      "state": "COPY UPDATE",
+      "support": 0.69
+    },
+    {
+      "slug": "v4_a3_evidence_of_judgment",
+      "state": "REUSE",
+      "support": 0.77
+    },
+    {
+      "slug": "v4_a4_three_line_readiness_case",
+      "state": "REUSE",
+      "support": 0.9
+    },
+    {
+      "slug": "v4_b1_name_the_gap",
+      "state": "COPY UPDATE",
+      "support": 0.74
+    },
+    {
+      "slug": "v4_b2_what_it_does_not_guarantee",
+      "state": "COPY UPDATE",
+      "support": 0.74
+    }
+  ],
+  "not_verified": [
+    "Nothing here has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

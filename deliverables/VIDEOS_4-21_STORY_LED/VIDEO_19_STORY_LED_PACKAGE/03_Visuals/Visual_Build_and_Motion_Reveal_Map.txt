@@ -1,0 +1,101 @@
+==============================================================================
+VIDEO 19  |  VISUAL BUILD AND MOTION REVEAL MAP
+==============================================================================
+
+Should You Become a Consultant? The Part Everyone Leaves Out
+
+------------------------------------------------------------------------------
+
+STANDING DIRECTION
+
+  Camera-led teaching governs. Recognition, personal story, tension and the moments that bring an idea back to the viewer stay on Temidayo.
+  A graphic earns the screen when seeing the idea is easier than hearing it alone. It is not a decoration for a spoken point.
+  Substantive teaching is TRUE full screen. Never a moving Temidayo behind or beside a framework. Never the teaching graphic shrunk into a corner.
+  Editorial, not corporate training. Generous whitespace, strong hierarchy, clean cards, short labels, obvious reading order. No fake interactivity, no progress bars, no decorative icons, no quiz styling.
+  Mobile legibility is not negotiable. Large type, few words, high contrast, generous margins. Simplify the graphic rather than shrink the type.
+  Restraint holds: about 3 to 5 camera-emphasis beats, about 2 to 4 meaningful B-roll moments, about 4 to 7 restrained sound accents for the whole video. A framework sequence is one visual event, not one event per frame.
+  A graphic may clarify, organize, compare, visualize, sequence or reinforce. It may never introduce a framework, a claim, a figure or a lesson the September 13 script does not already teach.
+
+------------------------------------------------------------------------------
+
+PALETTE
+
+  Deep navy #112345 carries authority and is the usual ground.
+  Warm cream is breathing room, and the light ground where legibility needs it.
+  Muted gold marks the ACTIVE idea only: the selected item, the number,
+  the underline, the one distinction that matters. Never decoration.
+  No other color system is introduced.
+
+------------------------------------------------------------------------------
+
+FRAME BY FRAME
+
+  v19_01_you_should_consult
+      treatment STATEMENT, built on the statement layout
+      cue: But twenty years of experience can still leave you with nothing a client knows how to bu
+      reveal: The quote alone. Hold. Then the support line.
+      hold: 2 seconds alone, 4 with the support.
+      sound: Candidate: one soft tick as the support line lands.
+
+  v19_02_experience_is_not_an_offer
+      treatment COMPARISON, built on the duo layout
+      cue: Your experience tells you what you know. It does not automatically tell you what somebod
+      reveal: Left. Then right. Then the foot line.
+      hold: 2 seconds per side, 4 on the foot.
+      sound: Strong candidate: one soft tick as the right side lands.
+
+  v19_03_four_things
+      treatment SEQUENCE, built on the four_bucket layout
+      cue: Start by separating four things that get bundled under the word consulting.
+      reveal: One bucket at a time.
+      hold: 2 seconds each, 4 on the complete grid.
+      sound: Candidate: one tick on the first bucket only.
+
+  v19_04_who_signs_it
+      treatment COMPARISON, built on the duo layout
+      cue: Not who has the problem. Almost everybody has problems.
+      reveal: Left. Then right. Then the foot line.
+      hold: 3 seconds per side, 3 on the foot.
+      sound: Candidate: one tick as the right side lands.
+
+  v19_05_expertise_vs_deliverable
+      treatment COMPARISON, built on the struck layout
+      cue: Those sentences are true and nobody can buy them.
+      reveal: Both unbuyable sentences. Hold. Struck. Then the buyable one.
+      hold: 2 seconds before the strike, 5 after. The replacement is long and needs reading time.
+      sound: Strong candidate: one soft tick as the strike lands.
+
+  v19_06_what_is_not_included
+      treatment STATEMENT, built on the statement layout
+      cue: The absence of that line is where a fixed fee turns into five months of work.
+      reveal: Single state.
+      hold: At least 3 seconds.
+      sound: Not a candidate.
+
+  v19_07_repeatable_delivery
+      treatment SEQUENCE, built on the ladder layout
+      cue: The first engagement is always partly invention. The question is what survives it.
+      reveal: One at a time, then the foot line.
+      hold: 2 seconds each, 4 on the foot.
+      sound: Candidate: one tick as the foot line lands.
+
+  v19_08_the_costs
+      treatment SEQUENCE, built on the trio layout
+      cue: The time you spend finding work is not paid.
+      reveal: One column at a time, then the foot line.
+      hold: 2 seconds each, 4 on the foot.
+      sound: Not a candidate.
+
+  v19_09_cta
+      treatment CTA, built on the cta layout
+      cue: If you want a structured way to record that decision and what it rests on, the Career De
+      reveal: Label, headline, resource name, URL.
+      hold: At least 4 seconds.
+      sound: Candidate: one clean transition sound on entry.
+
+  v19_10_watch_next
+      treatment WATCH NEXT, built on the watch_next layout
+      cue: It usually means the offer is still a description of you rather than a description of so
+      reveal: Label, rule, title, number.
+      hold: Hold to the end.
+      sound: Candidate: one restrained transition sound, then music fade.

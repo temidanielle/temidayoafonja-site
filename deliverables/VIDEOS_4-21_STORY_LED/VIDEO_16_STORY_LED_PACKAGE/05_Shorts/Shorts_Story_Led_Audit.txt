@@ -1,0 +1,41 @@
+==============================================================================
+VIDEO 16  |  SHORTS AUDIT AGAINST THE STORY-LED SCRIPT
+==============================================================================
+
+What to Do When Your Work Is Valued but You Are Overlooked
+
+A Short is a standalone idea. It is not rebuilt because the long-form
+reworded a supporting sentence. It is changed when the framework it rests
+on is gone, or its hook no longer matches the story-led approach.
+
+------------------------------------------------------------------------------
+
+  v16_a1_called_then_skipped         REUSE
+      priority A, V16 hook.
+      support against the story-led script: 1.00
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v16_a2_the_hinge                   REUSE
+      priority A, V16 the hinge.
+      support against the story-led script: 0.93
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v16_a3_where_work_disappears       REUSE
+      priority A, V16 is the work seen.
+      support against the story-led script: 0.91
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v16_a4_three_pieces_four_lines     REUSE
+      priority A, V16 what to build.
+      support against the story-led script: 0.81
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v16_b1_trusted_vs_considered       COPY UPDATE
+      priority B, V16 trusted or considered.
+      support against the story-led script: 0.69
+      The framework this Short rests on is still taught, but the story-led script rewords the supporting lines, so the Short's wording is brought to the current script. The standalone idea is unchanged.
+
+  v16_b2_what_it_does_not_fix        REUSE
+      priority B, V16 what this does not fix.
+      support against the story-led script: 0.84
+      The story-led script still carries this Short's language. Nothing to change.

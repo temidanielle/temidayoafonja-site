@@ -1,0 +1,101 @@
+==============================================================================
+VIDEO 14  |  VISUAL BUILD AND MOTION REVEAL MAP
+==============================================================================
+
+Which Parts of Your Experience Actually Transfer to Another Industry?
+
+------------------------------------------------------------------------------
+
+STANDING DIRECTION
+
+  Camera-led teaching governs. Recognition, personal story, tension and the moments that bring an idea back to the viewer stay on Temidayo.
+  A graphic earns the screen when seeing the idea is easier than hearing it alone. It is not a decoration for a spoken point.
+  Substantive teaching is TRUE full screen. Never a moving Temidayo behind or beside a framework. Never the teaching graphic shrunk into a corner.
+  Editorial, not corporate training. Generous whitespace, strong hierarchy, clean cards, short labels, obvious reading order. No fake interactivity, no progress bars, no decorative icons, no quiz styling.
+  Mobile legibility is not negotiable. Large type, few words, high contrast, generous margins. Simplify the graphic rather than shrink the type.
+  Restraint holds: about 3 to 5 camera-emphasis beats, about 2 to 4 meaningful B-roll moments, about 4 to 7 restrained sound accents for the whole video. A framework sequence is one visual event, not one event per frame.
+  A graphic may clarify, organize, compare, visualize, sequence or reinforce. It may never introduce a framework, a claim, a figure or a lesson the September 13 script does not already teach.
+
+------------------------------------------------------------------------------
+
+PALETTE
+
+  Deep navy #112345 carries authority and is the usual ground.
+  Warm cream is breathing room, and the light ground where legibility needs it.
+  Muted gold marks the ACTIVE idea only: the selected item, the number,
+  the underline, the one distinction that matters. Never decoration.
+  No other color system is introduced.
+
+------------------------------------------------------------------------------
+
+FRAME BY FRAME
+
+  v14_01_same_words_different_work
+      treatment COMPARISON, built on the shared_then_split layout
+      cue: All three appeared to ask for the same thing:
+      reveal: Three industry headings together. Hold. MANAGE RISK appears beneath all three. Hold long. Then the three consequence lines appear one at a time, left to right.
+      hold: Hold the shared line for at least 2 seconds alone. Give each consequence line about 2 seconds. This frame can run long.
+      sound: Strongest candidate in the video. One soft tick as MANAGE RISK lands, and optionally one as the third consequence appears.
+
+  v14_02_research_base
+      treatment ARTIFACT, built on the statfacts layout
+      cue: So I went through 28 senior project and program delivery job descriptions across those t
+      reveal: 28 first, alone. Then the unit line. Then the three rows together. Then the date line.
+      hold: Hold at least 3 seconds after the date line appears. This is the frame viewers will pause on.
+      sound: Candidate: one soft tick as 28 lands. Nothing on the breakdown rows.
+
+  v14_03_two_question_test
+      treatment COMPARISON, built on the two_questions layout
+      cue: For any requirement that looked similar across industries, I asked two questions:
+      reveal: First question with its rule. Hold. Second question with its rule. Hold. Then the interpretation line.
+      hold: At least 2 seconds per question, then 3 seconds on the complete frame.
+      sound: Candidate: one light tap as the second question lands.
+
+  v14_04_what_travels
+      treatment SEQUENCE, built on the ladder layout
+      cue: So what did travel across the sample?
+      reveal: One item at a time, in the order spoken. Each stays on screen.
+      hold: About 2 seconds per item as it is named. Hold the complete list 3 seconds before leaving.
+      sound: Candidate, but the video has stronger moments. If used, one tick on the first item only, never one per item.
+
+  v14_05_same_word_different_decision
+      treatment COMPARISON, built on the word_vs_work layout
+      cue: “Governance” sounded useful in another setting until one posting meant an auditable cont
+      reveal: The word alone. Hold. Then the left reading. Then the right reading.
+      hold: 2 seconds on the word, then about 2 seconds per side.
+      sound: Candidate: one tick as the second reading replaces the emphasis.
+
+  v14_06_four_bucket_audit
+      treatment SEQUENCE, built on the four_bucket layout
+      cue: Then sort the answer into four buckets.
+      reveal: One bucket at a time, in the spoken order, each with its line.
+      hold: About 2 to 3 seconds per bucket, then 4 seconds on the complete grid.
+      sound: Candidate: one tick on the first bucket. Do not tick all four.
+
+  v14_07_employers_disagree
+      treatment COMPARISON, built on the duo layout
+      cue: One of the most useful findings was that employers themselves disagreed.
+      reveal: Left side. Hold. Right side. Hold. Then the foot line.
+      hold: About 3 seconds per side. The right side needs the longer read.
+      sound: Not a candidate. Let this one land in silence.
+
+  v14_08_research_boundary
+      treatment COMPARISON, built on the two_questions layout
+      cue: This research does not prove that two roles are the same.
+      reveal: Headline, then the support line.
+      hold: At least 4 seconds. This frame is the honesty of the whole video and should not be rushed.
+      sound: Not a candidate. Silence is the correct treatment here.
+
+  v14_09_cta
+      treatment CTA, built on the cta_action layout
+      cue: If you do one thing after this video, do not start with the title.
+      reveal: Headline, support, then the question line.
+      hold: At least 4 seconds.
+      sound: Candidate: one clean transition sound as the card enters.
+
+  v14_10_watch_next
+      treatment WATCH NEXT, built on the watch_next layout
+      cue: Watch “The Career Gaps You Don’t See Until the Work Gets Harder” next.
+      reveal: Label, rule, title, then the video number.
+      hold: Hold to the end of the video. Copy stays left so a YouTube end screen can sit on the right.
+      sound: Candidate: one restrained transition sound on entry, then let the music fade.

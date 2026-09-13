@@ -1,0 +1,149 @@
+{
+  "video": 11,
+  "title": "AI Can Do the Task. What Are You Still Paid For?",
+  "thumbnail": "THE TASK ISN'T THE JOB",
+  "generated": "Sunday, September 13, 2026 | 2:34 PM CT",
+  "spoken_source_of_truth": {
+    "script": "Video_11_FINAL_Story_Led_Conversational_Recording_Script.docx",
+    "script_sha256": "8ab8c8d0b3cf703392aa79139b69d0f32211886ffd9ef5e034b8801735e2795d",
+    "thought_block": "Video_11_Thought_Block_Recording_Copy_Story_Led.docx",
+    "thought_block_sha256": "73ac69a24c158f7c9aacf8439eba01b866ecdab58a3c80b81598d0e3d2d87e67",
+    "note": "Both copied unchanged into 01_Recording_Master and never written to. They override the pre-story-led package."
+  },
+  "pre_story_led_baseline": {
+    "archive": "Videos_4-21_CORRECTED_RUNTIME_Production_Packages.zip",
+    "sha256": "7dbf2d56add4a91fd50f4f1f75c15908ec996a5932d70128bf7db190f8e0dfcb",
+    "status": "Preserved and auditable. Not modified, not overwritten, and no longer the active production handoff."
+  },
+  "runtime": {
+    "class": "REGULAR LONG-FORM",
+    "spoken_words": 1302,
+    "estimated_speech": "8:58 to 10:00 at 130 to 145 words per minute",
+    "note": "Arithmetic on the script. Not a runtime and not a target. The actual length is observed at Temidayo's natural pace."
+  },
+  "assets": [
+    {
+      "file": "v11_01_can_we_reduce_the_team.png",
+      "status": "REUSE",
+      "treatment": "STATEMENT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "“Does this mean we can reduce the team?”"
+    },
+    {
+      "file": "v11_02_task_is_not_the_job.png",
+      "status": "REUSE",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Produce. Interpret. Decide."
+    },
+    {
+      "file": "v11_03_headline_rate.png",
+      "status": "REUSE",
+      "treatment": "ARTIFACT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Here is a small synthetic service report. These are invented teaching numbers, not customer data and not a result from my career."
+    },
+    {
+      "file": "v11_04_the_mix_changed.png",
+      "status": "REUSE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "What changed was the mix. The second period had far more routine cases and fewer complex ones."
+    },
+    {
+      "file": "v11_05_what_it_does_not_establish.png",
+      "status": "REUSE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "It does not establish that people became more effective within each category."
+    },
+    {
+      "file": "v11_06_the_boundary_is_not.png",
+      "status": "REUSE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "So the boundary is not:"
+    },
+    {
+      "file": "v11_07_who_owns_the_consequence.png",
+      "status": "REUSE",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Those are organizational responsibilities."
+    },
+    {
+      "file": "v11_08_map_your_role.png",
+      "status": "REUSE",
+      "treatment": "STATEMENT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Take one recurring output from your job."
+    },
+    {
+      "file": "v11_09_cta.png",
+      "status": "REUSE",
+      "treatment": "CTA",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Choose one recurring output before your next role conversation."
+    },
+    {
+      "file": "v11_10_watch_next.png",
+      "status": "REUSE",
+      "treatment": "WATCH NEXT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Watch “What to Do When You Can’t Quit Your Job Yet” next."
+    }
+  ],
+  "assets_removed": [],
+  "asset_classification": {
+    "REUSE": 10
+  },
+  "shorts": [
+    {
+      "slug": "v11_a1_can_we_reduce_the_team",
+      "state": "REUSE",
+      "support": 1.0
+    },
+    {
+      "slug": "v11_a2_the_mix_changed",
+      "state": "REUSE",
+      "support": 1.0
+    },
+    {
+      "slug": "v11_a3_produce_interpret_decide",
+      "state": "REUSE",
+      "support": 0.95
+    },
+    {
+      "slug": "v11_a4_output_is_not_a_decision",
+      "state": "REUSE",
+      "support": 1.0
+    },
+    {
+      "slug": "v11_b1_the_boundary",
+      "state": "REUSE",
+      "support": 1.0
+    },
+    {
+      "slug": "v11_b2_no_ai_proof_job",
+      "state": "REUSE",
+      "support": 1.0
+    }
+  ],
+  "not_verified": [
+    "Nothing here has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

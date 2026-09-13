@@ -1,0 +1,152 @@
+==============================================================================
+VIDEOS 4 TO 21  |  STORY-LED SYNCHRONIZATION CHANGE LOG
+==============================================================================
+
+Generated: Sunday, September 13, 2026 | 2:34 PM CT
+
+------------------------------------------------------------------------------
+
+PREVIOUS DELIVERY
+
+  Clearer, simplified, production-synchronized teaching.
+
+NEW DELIVERY
+
+  Story-led conversational teaching.
+
+WHAT THE CHANGE IS
+
+  A delivery and sequencing layer that helps the viewer recognize the
+  situation before receiving the framework.
+
+WHAT THE CHANGE IS NOT
+
+  Not a framework rebuild. Not a runtime-strategy rebuild. Not an offer
+  rebuild. Not a roadmap rebuild.
+
+------------------------------------------------------------------------------
+
+RUNTIME
+
+  V    CLASS          WORDS    ESTIMATED SPEECH
+  --------------------------------------------------------
+  V4   SHORTER TEST   874      6:01 to 6:43
+  V5   SHORTER TEST   867      5:58 to 6:40
+  V6   LONG-FORM      1340     9:14 to 10:18
+  V7   LONG-FORM      1345     9:16 to 10:20
+  V8   LONG-FORM      1413     9:44 to 10:52
+  V9   LONG-FORM      1278     8:48 to 9:49
+  V10  LONG-FORM      1229     8:28 to 9:27
+  V11  LONG-FORM      1302     8:58 to 10:00
+  V12  LONG-FORM      1299     8:57 to 9:59
+  V13  LONG-FORM      1377     9:29 to 10:35
+  V14  LONG-FORM      1364     9:24 to 10:29
+  V15  LONG-FORM      1493     10:17 to 11:29
+  V16  LONG-FORM      1311     9:02 to 10:05
+  V17  LONG-FORM      1432     9:52 to 11:00
+  V18  LONG-FORM      1400     9:39 to 10:46
+  V19  LONG-FORM      1577     10:52 to 12:07
+  V20  LONG-FORM      1413     9:44 to 10:52
+  V21  LONG-FORM      1437     9:54 to 11:03
+
+  Every figure is arithmetic on the script at 130 to 145 words per minute.
+  None is a runtime and none is a target. Videos 4 and 5 have no locked
+  five-minute target: that predates the September 13 expansion. Actual
+  runtime is observed at Temidayo's natural delivery pace.
+
+  Nothing was compressed. Every script grew.
+
+------------------------------------------------------------------------------
+
+WHICH VISUAL MAPS CHANGED
+
+  All eighteen. The trigger map is now a camera and full-screen spine that
+  marks every stretch of the video, because a map that lists only graphics
+  cannot show where the camera-led moments are.
+
+WHICH RIVERSIDE PROMPTS CHANGED
+
+  All eighteen, rewritten rather than renamed. Each one now states where to
+  stay on camera, and specifies what every graphic actually is rather than
+  asking for a visual.
+
+WHICH SHORTS CHANGED
+
+    REUSE          93
+    COPY UPDATE    15
+
+WHICH PUBLISHING MATERIALS CHANGED
+
+    V5   description and pinned comment
+    V15  pinned comment
+    V4   thumbnail wording, from "I'D NEVER HELD THE ROLE" to 'NO EXPERIENCE? NOT EXACTLY.'
+    V5   thumbnail wording, from 'CHANGED TRACKS. NOT ZERO.' to 'WHAT COMES WITH YOU?'
+
+WHICH ASSETS REMAINED BYTE-IDENTICAL
+
+    149 of 183 carried across with the card unchanged.
+
+WHICH ASSETS WERE REMOVED BECAUSE THEY INTERRUPTED STORY-LED DELIVERY
+
+    v4_01_title_new_work_not_new
+        The story-led V4 opens on Temidayo's own experience of stepping into
+        three roles nobody had held. That is a recognition moment and it
+        should stay on camera. A full-screen card over the first two
+        sentences would cover exactly the moment the pass was written to
+        create.
+
+    v5_01_changed_tracks_not_zero
+        The story-led V5 opens on Temidayo's own track changes and then
+        moves into the car analogy, which is a spoken image rather than a
+        diagram. Both are camera-led. The two-mistakes point this card
+        carried is still made in the speech, immediately, so nothing is lost
+        by staying on her.
+
+------------------------------------------------------------------------------
+
+ASSET CLASSIFICATION
+
+    REUSE          149
+    COPY UPDATE    30
+    REBUILD        4
+    REMOVE         2
+
+------------------------------------------------------------------------------
+
+VISUAL DIRECTION ADDED BY THIS PASS
+
+  Camera-led teaching governs. Recognition, personal story, tension and
+  the moments that bring an idea back to the viewer stay on Temidayo.
+
+  A graphic earns the screen when seeing the idea is easier than hearing
+  it alone. It is not a decoration for a spoken point.
+
+  Substantive teaching is TRUE full screen. Never a moving Temidayo behind
+  or beside a framework. Never the teaching graphic shrunk into a corner.
+
+  Editorial, not corporate training. Generous whitespace, strong
+  hierarchy, clean cards, short labels, obvious reading order. No fake
+  interactivity, no progress bars, no decorative icons, no quiz styling.
+
+  Mobile legibility is not negotiable. Large type, few words, high
+  contrast, generous margins. Simplify the graphic rather than shrink the
+  type.
+
+  Restraint holds: about 3 to 5 camera-emphasis beats, about 2 to 4
+  meaningful B-roll moments, about 4 to 7 restrained sound accents for the
+  whole video. A framework sequence is one visual event, not one event per
+  frame.
+
+  A graphic may clarify, organize, compare, visualize, sequence or
+  reinforce. It may never introduce a framework, a claim, a figure or a
+  lesson the September 13 script does not already teach.
+
+------------------------------------------------------------------------------
+
+THE PRE-STORY-LED BASELINE
+
+  Videos_4-21_CORRECTED_RUNTIME_Production_Packages.zip
+  SHA-256 7dbf2d56add4a91fd50f4f1f75c15908ec996a5932d70128bf7db190f8e0dfcb
+
+  Preserved and auditable. Not modified, not overwritten, and no longer
+  the active production handoff.

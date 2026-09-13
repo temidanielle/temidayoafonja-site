@@ -1,0 +1,101 @@
+==============================================================================
+VIDEO 18  |  VISUAL BUILD AND MOTION REVEAL MAP
+==============================================================================
+
+Should You Stay an Individual Contributor or Become a Manager?
+
+------------------------------------------------------------------------------
+
+STANDING DIRECTION
+
+  Camera-led teaching governs. Recognition, personal story, tension and the moments that bring an idea back to the viewer stay on Temidayo.
+  A graphic earns the screen when seeing the idea is easier than hearing it alone. It is not a decoration for a spoken point.
+  Substantive teaching is TRUE full screen. Never a moving Temidayo behind or beside a framework. Never the teaching graphic shrunk into a corner.
+  Editorial, not corporate training. Generous whitespace, strong hierarchy, clean cards, short labels, obvious reading order. No fake interactivity, no progress bars, no decorative icons, no quiz styling.
+  Mobile legibility is not negotiable. Large type, few words, high contrast, generous margins. Simplify the graphic rather than shrink the type.
+  Restraint holds: about 3 to 5 camera-emphasis beats, about 2 to 4 meaningful B-roll moments, about 4 to 7 restrained sound accents for the whole video. A framework sequence is one visual event, not one event per frame.
+  A graphic may clarify, organize, compare, visualize, sequence or reinforce. It may never introduce a framework, a claim, a figure or a lesson the September 13 script does not already teach.
+
+------------------------------------------------------------------------------
+
+PALETTE
+
+  Deep navy #112345 carries authority and is the usual ground.
+  Warm cream is breathing room, and the light ground where legibility needs it.
+  Muted gold marks the ACTIVE idea only: the selected item, the number,
+  the underline, the one distinction that matters. Never decoration.
+  No other color system is introduced.
+
+------------------------------------------------------------------------------
+
+FRAME BY FRAME
+
+  v18_01_congratulated
+      treatment STATEMENT, built on the statement layout
+      cue: Management is often offered as a reward. But it is not a reward. It is a different job.
+      reveal: Headline. Hold. Then the support line.
+      hold: 3 seconds each.
+      sound: Candidate: one soft tick as the support line lands.
+
+  v18_02_two_different_jobs
+      treatment COMPARISON, built on the duo layout
+      cue: They are different jobs, with different days, different skills, and different hard parts
+      reveal: Both columns together, then the foot line.
+      hold: At least 4 seconds.
+      sound: Candidate: one tick as the foot line lands.
+
+  v18_03_five_variables
+      treatment SEQUENCE, built on the ladder layout
+      cue: Five things are bundled together in most people's heads, and they do not reliably move t
+      reveal: One at a time, then show them shifting independently. Never animate them as one bar.
+      hold: 2 seconds each, 4 on the complete set.
+      sound: Candidate: one tick as the fifth lands.
+
+  v18_04_responsibility_without_authority
+      treatment STATEMENT, built on the statement layout
+      cue: Often they did not, and the most common bad version of this is more responsibility and n
+      reveal: Headline alone. Hold. Then the support.
+      hold: 2 seconds alone, 4 with the support.
+      sound: Strong candidate: one soft tick as the headline lands.
+
+  v18_05_what_the_job_consumes
+      treatment SEQUENCE, built on the quad layout
+      cue: Not what does it sound like. What fills the day.
+      reveal: All four, then the foot line.
+      hold: 4 seconds.
+      sound: Not a candidate.
+
+  v18_06_ask_for_names
+      treatment STATEMENT, built on the statement layout
+      cue: Ask for names.
+      reveal: The instruction alone. Hold. Then the support line.
+      hold: 2 seconds alone, 4 with the support.
+      sound: Strong candidate: one soft tick as the two words land.
+
+  v18_07_the_other_job_demands
+      treatment SEQUENCE, built on the ladder layout
+      cue: In most places it means influence without authority, which is harder than it sounds.
+      reveal: One at a time, then the foot line.
+      hold: 2 seconds each, 4 on the foot.
+      sound: Candidate: one tick as the foot line lands.
+
+  v18_08_four_questions
+      treatment SEQUENCE, built on the ladder layout
+      cue: Ask the four questions. What does the job consume, does the other path exist here, what 
+      reveal: All four together, since the master speaks them as one list.
+      hold: At least 5 seconds.
+      sound: Candidate: one clean transition sound on entry.
+
+  v18_09_cta
+      treatment CTA, built on the cta layout
+      cue: If you want a structured version of that decision record, the Career Decision Evidence C
+      reveal: Label, headline, resource name, URL.
+      hold: At least 4 seconds.
+      sound: Candidate: one clean transition sound on entry.
+
+  v18_10_watch_next
+      treatment WATCH NEXT, built on the watch_next layout
+      cue: In my experience it is usually the second one, and it is usually the one that changes th
+      reveal: Label, rule, title, number.
+      hold: Hold to the end.
+      sound: Candidate: one restrained transition sound, then music fade.

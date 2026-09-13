@@ -1,0 +1,41 @@
+==============================================================================
+VIDEO 7  |  SHORTS AUDIT AGAINST THE STORY-LED SCRIPT
+==============================================================================
+
+It Took Me Years to Stop Mistaking More Work for Career Growth
+
+A Short is a standalone idea. It is not rebuilt because the long-form
+reworded a supporting sentence. It is changed when the framework it rests
+on is gone, or its hook no longer matches the story-led approach.
+
+------------------------------------------------------------------------------
+
+  v7_a1_valuable_to_them             REUSE
+      priority A, V7 hook.
+      support against the story-led script: 1.00
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v7_a2_complexity                   REUSE
+      priority A, V7 complexity.
+      support against the story-led script: 0.94
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v7_a3_authority                    REUSE
+      priority A, V7 authority.
+      support against the story-led script: 1.00
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v7_a4_review_point                 REUSE
+      priority A, V7 use CAR before you say yes.
+      support against the story-led script: 0.96
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v7_b1_dependable_people            REUSE
+      priority B, V7 why dependable people are vulnerable.
+      support against the story-led script: 0.98
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v7_b2_praise_is_not_role_design    REUSE
+      priority B, V7 return.
+      support against the story-led script: 1.00
+      The story-led script still carries this Short's language. Nothing to change.

@@ -1,0 +1,416 @@
+==============================================================================
+VIDEOS 4 TO 21  |  ASSET REUSE AND CHANGE TABLE
+==============================================================================
+
+Generated: Sunday, September 13, 2026 | 2:34 PM CT
+
+------------------------------------------------------------------------------
+
+THE TEST
+
+  An asset is not rebuilt because a sentence was reworded. Each existing
+  visual was checked against the story-led script and classified by what
+  the evidence supports.
+
+------------------------------------------------------------------------------
+
+CLASSIFICATION
+
+    REUSE          149
+    COPY UPDATE    30
+    REBUILD        4
+    REMOVE         2
+
+------------------------------------------------------------------------------
+
+EVERY ASSET
+
+  ASSET                                STATUS        TREATMENT    CUE
+  ----------------------------------------------------------------------------------------------------------------
+  v4_02_three_stops                    COPY UPDATE   SEQUENCE     I stopped doing three things.
+  v4_03_three_questions                REBUILD       SEQUENCE     If you are looking at a role you have never 
+  v4_04_remove_the_title               COPY UPDATE   COMPARISON   Take the title away for a minute.
+  v4_05_task_list_vs_judgment          COPY UPDATE   COMPARISON   A task list can help when the new job looks 
+  v4_06_gap_is_not_a_verdict           COPY UPDATE   COMPARISON   A real career move should probably include t
+  v4_07_three_line_readiness_case      COPY UPDATE   SEQUENCE     Here is the test I want you to use.
+  v4_08_what_it_does_not_guarantee     REBUILD       STATEMENT    This does not mean an employer has to choose
+  v4_09_cta                            COPY UPDATE   CTA          Being new to the title does not always mean 
+  v4_10_watch_next                     COPY UPDATE   WATCH NEXT   Being new to the title does not always mean 
+  v5_02_four_things                    COPY UPDATE   SEQUENCE     I use four questions:
+  v5_03_carry_test                     COPY UPDATE   STATEMENT    Start with the parts of your experience that
+  v5_04_translate                      COPY UPDATE   COMPARISON   The next step is translation.
+  v5_05_relearn_without_beginner       COPY UPDATE   STATEMENT    Then comes the part people sometimes want to
+  v5_06_confidence_both_directions     COPY UPDATE   COMPARISON   You do not have to erase your past.
+  v5_07_prove_the_level                COPY UPDATE   COMPARISON   If the new role asks for a higher level of w
+  v5_08_four_line_move_case            REBUILD       SEQUENCE     If you are thinking about changing tracks, w
+  v5_09_cta                            COPY UPDATE   CTA          If you are thinking about changing tracks, w
+  v5_10_watch_next                     COPY UPDATE   WATCH NEXT   But it does require you to know what is actu
+  v6_01_movement_is_not_growth         COPY UPDATE   STATEMENT    A role can come with more money, more visibi
+  v6_02_work_judgment_evidence         REUSE         SEQUENCE     So when I judge a new role now, I want three
+  v6_03_harder_later                   REUSE         COMPARISON   Earlier in a career, almost any new responsi
+  v6_04_ordinary_monday                REUSE         STATEMENT    Start with an ordinary Monday.
+  v6_05_responsibility_is_not_judgment REUSE         COMPARISON   Responsibility is not the same as judgment.
+  v6_06_three_kinds_of_return          REUSE         SEQUENCE     I look for three kinds of return: a result I
+  v6_07_read_the_three_answers         REUSE         SEQUENCE     If two are yes, identify the missing dimensi
+  v6_07_twelve_month_question          REUSE         STATEMENT    Then ask one question: twelve months from no
+  v6_08_what_this_cannot_solve         REUSE         SEQUENCE     These three questions read the work. They do
+  v6_08_yes_no_negotiate               REUSE         SEQUENCE     Before your next move, write one sentence un
+  v6_09_cta                            REUSE         CTA          If you are actively deciding whether to stay
+  v6_10_watch_next                     REUSE         WATCH NEXT   That is what we are testing next in 'It Took
+  v7_01_valuable_to_them_not_to_you    REUSE         STATEMENT    You can become more valuable to your organiz
+  v7_02_car                            REUSE         SEQUENCE     I use three tests now: Complexity, Authority
+  v7_03_dependable_people              COPY UPDATE   COMPARISON   Reliability attracts work quickly. Authority
+  v7_04_complexity                     COPY UPDATE   COMPARISON   Complexity changes when the variables change
+  v7_05_authority                      REUSE         SEQUENCE     Responsibility is what you are expected to c
+  v7_06_return                         REUSE         SEQUENCE     I look in three places: capability, evidence
+  v7_07_read_the_car_pattern           REUSE         SEQUENCE     If volume increased but Complexity, Authorit
+  v7_07_review_point                   COPY UPDATE   SEQUENCE     Before the next 'Can you take this too?', as
+  v7_08_scope_conversation             REUSE         SEQUENCE     Then take four questions into the conversati
+  v7_08_more_work_is_not_proof         REUSE         STATEMENT    More work can be part of growth. It is not p
+  v7_09_cta                            REUSE         CTA          If you want a structured way to examine what
+  v7_10_watch_next                     REUSE         WATCH NEXT   In the next video, I will show you how to ma
+  v8_01_success_hides_the_work         COPY UPDATE   STATEMENT    The process exists. People use it. The decis
+  v8_02_four_things                    REUSE         SEQUENCE     So I use four things: the Before, My Part, t
+  v8_03_finished_hides_conditions      REUSE         COMPARISON   The solution is not to make the story more d
+  v8_04_weak_and_strong_before         COPY UPDATE   COMPARISON   A weak Before is 'It was chaos.' A stronger 
+  v8_05_accurate_attribution           COPY UPDATE   STATEMENT    You do not need sole credit to make your con
+  v8_06_judgment_not_the_artifact      REUSE         COMPARISON   If you created an intake form, the form may 
+  v8_07_existence_use_effect           COPY UPDATE   SEQUENCE     For work you build from scratch, I separate 
+  v8_08_evidence_boundary              REUSE         STATEMENT    Proof does not mean taking your employer's f
+  v8_08_four_sentence_account          REUSE         SEQUENCE     Put it together in four sentences.
+  v8_09_cta                            REUSE         CTA          Keep the Proof is linked below if you want t
+  v8_10_watch_next                     REUSE         WATCH NEXT   Watch 'How to Change Industries Without Star
+  v9_01_direct_industry_experience     REUSE         STATEMENT    “Direct industry experience required.”
+  v9_02_neither_mistake                REUSE         COMPARISON   Do not say, “I can already do all of this.”
+  v9_03_capability_context_credentials REUSE         SEQUENCE     Capability. Context. Credentials.
+  v9_04_same_verb_different_decision   REUSE         COMPARISON   “Approve” can mean checking a routine item i
+  v9_05_capability_sentence            REUSE         STATEMENT    Write the capability sentence this way:
+  v9_06_context_is_not_vocabulary      REUSE         STATEMENT    Context is not just vocabulary you can learn
+  v9_07_better_question_to_ask         REUSE         COMPARISON   “Do you think I could switch industries?”
+  v9_08_credential_three_labels        REUSE         SEQUENCE     Write down:
+  v9_09_cta                            REUSE         CTA          Choose one destination role. Not five indust
+  v9_10_watch_next                     REUSE         WATCH NEXT   Watch “Before a Layoff, Know What You Can St
+  v10_01_access_ends                   REUSE         COMPARISON   Your experience did not disappear.
+  v10_02_preparation_not_extraction    REUSE         STATEMENT    Access to a document does not mean you are e
+  v10_03_capture_qualify_retrieve      REUSE         SEQUENCE     Capture the contribution.
+  v10_04_calendar_vs_contribution      REUSE         COMPARISON   “Attended weekly implementation meetings.”
+  v10_05_three_labels                  REUSE         SEQUENCE     Now put one of three labels beside the resul
+  v10_06_language_that_survives        REUSE         STATEMENT    This is not timid language.
+  v10_07_name_it_by_the_problem        REUSE         COMPARISON   “Conflicting handoff criteria” is more usefu
+  v10_08_two_reasons_evidence_is_thin  REUSE         COMPARISON   Do not solve both problems by writing a stro
+  v10_09_cta                           REUSE         CTA          Start with one entry.
+  v10_10_watch_next                    REUSE         WATCH NEXT   Watch “AI Can Do the Task. What Are You Stil
+  v11_01_can_we_reduce_the_team        REUSE         STATEMENT    “Does this mean we can reduce the team?”
+  v11_02_task_is_not_the_job           REUSE         SEQUENCE     Produce. Interpret. Decide.
+  v11_03_headline_rate                 REUSE         ARTIFACT     Here is a small synthetic service report. Th
+  v11_04_the_mix_changed               REUSE         COMPARISON   What changed was the mix. The second period 
+  v11_05_what_it_does_not_establish    REUSE         COMPARISON   It does not establish that people became mor
+  v11_06_the_boundary_is_not           REUSE         COMPARISON   So the boundary is not:
+  v11_07_who_owns_the_consequence      REUSE         SEQUENCE     Those are organizational responsibilities.
+  v11_08_map_your_role                 REUSE         STATEMENT    Take one recurring output from your job.
+  v11_09_cta                           REUSE         CTA          Choose one recurring output before your next
+  v11_10_watch_next                    REUSE         WATCH NEXT   Watch “What to Do When You Can’t Quit Your J
+  v12_01_constraint_not_conclusion     REUSE         COMPARISON   “I cannot leave yet.”
+  v12_02_protection_first              REUSE         STATEMENT    If health, safety, harassment, discriminatio
+  v12_03_three_moves                   REUSE         SEQUENCE     You need to protect what must hold, put boun
+  v12_04_name_the_constraint           REUSE         STATEMENT    Write one sentence:
+  v12_05_make_the_tradeoff_visible     REUSE         COMPARISON   “This job is impossible” may capture the fee
+  v12_06_question_before_activity      REUSE         COMPARISON   Choose a question before you choose an activ
+  v12_07_exchange_not_add              REUSE         STATEMENT    Exchange, not automatically add.
+  v12_08_four_lines                    REUSE         SEQUENCE     Put four lines on a page:
+  v12_09_cta                           REUSE         CTA          Write the four lines privately.
+  v12_10_watch_next                    REUSE         WATCH NEXT   Watch “A 30-Day Plan to Test Your Next Caree
+  v13_01_career_activity               REUSE         STATEMENT    It can make you feel productive without answ
+  v13_02_define_investigate_try_decide REUSE         SEQUENCE     Define.
+  v13_03_not_this_option_is_allowed    REUSE         STATEMENT    And the test only works if “not this option”
+  v13_04_destination_specific_enough   REUSE         COMPARISON   “Something strategic” is too vague.
+  v13_05_ask_about_the_work            REUSE         SEQUENCE     Do not ask for blanket reassurance about you
+  v13_06_work_sample_boundary          REUSE         COMPARISON   Do not recreate a confidential employer proc
+  v13_07_three_decisions               REUSE         SEQUENCE     Then choose one of three decisions:
+  v13_08_effort_is_not_evidence        REUSE         STATEMENT    Do not confuse effort with evidence.
+  v13_09_cta                           COPY UPDATE   CTA          Choose one destination and write the idea to
+  v13_10_watch_next                    REUSE         WATCH NEXT   For a closer look at separating useful exper
+  v14_01_same_words_different_work     REUSE         COMPARISON   All three appeared to ask for the same thing
+  v14_02_research_base                 REUSE         ARTIFACT     So I went through 28 senior project and prog
+  v14_03_two_question_test             REUSE         COMPARISON   For any requirement that looked similar acro
+  v14_04_what_travels                  REUSE         SEQUENCE     So what did travel across the sample?
+  v14_05_same_word_different_decision  COPY UPDATE   COMPARISON   “Governance” sounded useful in another setti
+  v14_06_four_bucket_audit             REUSE         SEQUENCE     Then sort the answer into four buckets.
+  v14_07_employers_disagree            REUSE         COMPARISON   One of the most useful findings was that emp
+  v14_08_research_boundary             COPY UPDATE   COMPARISON   This research does not prove that two roles 
+  v14_09_cta                           REUSE         CTA          If you do one thing after this video, do not
+  v14_10_watch_next                    REUSE         WATCH NEXT   Watch “The Career Gaps You Don’t See Until t
+  v15_01_the_question_changes          REUSE         COMPARISON   Then someone turns to you and asks, "What do
+  v15_02_three_gaps                    REUSE         SEQUENCE     Learn. Practice. Prove. Those are different 
+  v15_03_learn_test                    REUSE         STATEMENT    Ask yourself this. If someone sat with me an
+  v15_04_course_limit                  REUSE         COMPARISON   A course can teach you a method. A course ca
+  v15_05_practice_question             REUSE         STATEMENT    Ask a different question. Have I ever been t
+  v15_06_organizational_constraint     REUSE         STATEMENT    That is an organizational constraint, and ca
+  v15_07_three_reads                   REUSE         SEQUENCE     Same moment. Same discomfort. Three complete
+  v15_08_not_a_diagnostic              REUSE         STATEMENT    This is not a diagnostic. There is no score 
+  v15_09_cta                           REUSE         CTA          Put your one gap in the comments, in a singl
+  v15_10_watch_next                    REUSE         WATCH NEXT   Writing it down as one of those three is mos
+  v16_01_called_then_skipped           COPY UPDATE   COMPARISON   And you are not in the conversation.
+  v16_02_four_separations              REUSE         SEQUENCE     Before you change how you behave, separate f
+  v16_03_where_work_disappears         REUSE         SEQUENCE     Work disappears in predictable places.
+  v16_04_delivery_vs_scope             REUSE         COMPARISON   So delivery and scope are being judged separ
+  v16_05_the_hinge                     REUSE         COMPARISON   A manager who does not know is a completely 
+  v16_06_what_this_does_not_fix        REUSE         SEQUENCE     This does not override bias.
+  v16_07_three_pieces_four_lines       REUSE         SEQUENCE     Take three pieces of work from the last year
+  v16_08_waiting_or_testing            REUSE         COMPARISON   Waiting is a legitimate choice when you can 
+  v16_09_cta                           REUSE         CTA          If you want the longer version of how to bui
+  v16_10_watch_next                    REUSE         WATCH NEXT   If it is difficult to write, that is worth k
+  v17_01_two_days_forty_minutes        COPY UPDATE   COMPARISON   Now a tool produces most of it in forty minu
+  v17_02_what_did_you_actually_do      REUSE         STATEMENT    Until someone asks, "So what did you actuall
+  v17_03_output_is_not_contribution    REUSE         COMPARISON   The record used to be attached to the artifa
+  v17_04_four_lines                    COPY UPDATE   SEQUENCE     They are deliberately short, because a recor
+  v17_05_line_two                      REUSE         STATEMENT    If you only keep one of those, keep the seco
+  v17_06_which_parts_leave_a_record    REUSE         COMPARISON   Now mark the parts that leave nothing.
+  v17_07_speed_is_not_correctness      REUSE         STATEMENT    But the report that used to take two days is
+  v17_08_worked_example                REUSE         SEQUENCE     Let me make that concrete. I have constructe
+  v17_09_cta                           REUSE         CTA          If you want the longer version of building a
+  v17_10_watch_next                    REUSE         WATCH NEXT   I would genuinely like to read those, becaus
+  v18_01_congratulated                 COPY UPDATE   STATEMENT    Management is often offered as a reward. But
+  v18_02_two_different_jobs            REUSE         COMPARISON   They are different jobs, with different days
+  v18_03_five_variables                REUSE         SEQUENCE     Five things are bundled together in most peo
+  v18_04_responsibility_without_authority REUSE         STATEMENT    Often they did not, and the most common bad 
+  v18_05_what_the_job_consumes         REUSE         SEQUENCE     Not what does it sound like. What fills the 
+  v18_06_ask_for_names                 REUSE         STATEMENT    Ask for names.
+  v18_07_the_other_job_demands         REUSE         SEQUENCE     In most places it means influence without au
+  v18_08_four_questions                REUSE         SEQUENCE     Ask the four questions. What does the job co
+  v18_09_cta                           REUSE         CTA          If you want a structured version of that dec
+  v18_10_watch_next                    REUSE         WATCH NEXT   In my experience it is usually the second on
+  v19_01_you_should_consult            REUSE         STATEMENT    But twenty years of experience can still lea
+  v19_02_experience_is_not_an_offer    REUSE         COMPARISON   Your experience tells you what you know. It 
+  v19_03_four_things                   REUSE         SEQUENCE     Start by separating four things that get bun
+  v19_04_who_signs_it                  REUSE         COMPARISON   Not who has the problem. Almost everybody ha
+  v19_05_expertise_vs_deliverable      REUSE         COMPARISON   Those sentences are true and nobody can buy 
+  v19_06_what_is_not_included          REUSE         STATEMENT    The absence of that line is where a fixed fe
+  v19_07_repeatable_delivery           REUSE         SEQUENCE     The first engagement is always partly invent
+  v19_08_the_costs                     REUSE         SEQUENCE     The time you spend finding work is not paid.
+  v19_09_cta                           REUSE         CTA          If you want a structured way to record that 
+  v19_10_watch_next                    REUSE         WATCH NEXT   It usually means the offer is still a descri
+  v20_01_the_gap_is_not_the_whole_return REUSE         STATEMENT    The explanation matters. But it is not the w
+  v20_02_what_can_you_prove            REUSE         COMPARISON   But the conversation eventually moves to a h
+  v20_03_six_categories                REBUILD       SEQUENCE     Before you start applying, I would sort what
+  v20_04_unproven_is_not_absent        REUSE         STATEMENT    There is a difference between not being able
+  v20_05_current_instance              REUSE         COMPARISON   If it is unproven, you do not need to relear
+  v20_06_the_sort                      REUSE         SEQUENCE     Let me show you the sort. This is a construc
+  v20_07_framing_and_bias              REUSE         STATEMENT    Bias against career breaks is real.
+  v20_08_routes_back                   REUSE         SEQUENCE     On the routes back, there are usually severa
+  v20_09_cta                           REUSE         CTA          If you want a structured way to build the ev
+  v20_10_watch_next                    REUSE         WATCH NEXT   It turns the part of this you can control in
+  v21_01_the_room_is_different         REUSE         STATEMENT    And the surprising part is that you can stil
+  v21_02_what_does_travel              REUSE         SEQUENCE     First, quickly, what does travel, because it
+  v21_03_five_layers                   REUSE         SEQUENCE     Layer one, and the one that blocks you soone
+  v21_04_licensing_is_not_a_mindset    REUSE         STATEMENT    That is not a confidence issue and it is not
+  v21_05_easiest_layer_trap            REUSE         STATEMENT    Layer three. Systems and tooling. This is us
+  v21_06_has_anyone_tried_this         REUSE         STATEMENT    The single most useful question in a first f
+  v21_07_first_ninety_days             REUSE         STATEMENT    You are not going to arrive and contribute a
+  v21_08_order_by_what_blocks_you      REUSE         STATEMENT    Then order the whole thing by one question, 
+  v21_09_cta                           REUSE         CTA          If you want a structured version of the inve
+  v21_10_watch_next                    REUSE         WATCH NEXT   It is the difference between a plan that wil
+
+------------------------------------------------------------------------------
+
+WHY EACH CHANGED ASSET CHANGED
+
+  V4   v4_02_three_stops  [COPY UPDATE]
+        The card is unchanged and still teaches what this part of the
+        story-led script teaches. Only the sentence it lands on changed, so
+        the cue is re-anchored. It now lands after the opening scene rather
+        than inside it, so the three stops arrive once the viewer has
+        recognized the situation.
+
+  V4   v4_03_three_questions  [REBUILD]
+        The teaching moment survives but the story-led script rewrites it
+        materially, so the cue is re-anchored and the card copy checked
+        against the new wording.
+
+  V4   v4_04_remove_the_title  [COPY UPDATE]
+        The card is unchanged and still teaches what this part of the
+        story-led script teaches. Only the sentence it lands on changed, so
+        the cue is re-anchored.
+
+  V4   v4_05_task_list_vs_judgment  [COPY UPDATE]
+        The card is unchanged and still teaches what this part of the
+        story-led script teaches. Only the sentence it lands on changed, so
+        the cue is re-anchored.
+
+  V4   v4_06_gap_is_not_a_verdict  [COPY UPDATE]
+        The card is unchanged and still teaches what this part of the
+        story-led script teaches. Only the sentence it lands on changed, so
+        the cue is re-anchored.
+
+  V4   v4_07_three_line_readiness_case  [COPY UPDATE]
+        The card is unchanged and still teaches what this part of the
+        story-led script teaches. Only the sentence it lands on changed, so
+        the cue is re-anchored.
+
+  V4   v4_08_what_it_does_not_guarantee  [REBUILD]
+        The teaching moment survives but the story-led script rewrites it
+        materially, so the cue is re-anchored and the card copy checked
+        against the new wording.
+
+  V4   v4_09_cta  [COPY UPDATE]
+        The card is unchanged. The story-led script rewords the sentence it
+        lands on, so only the cue moved.
+
+  V4   v4_10_watch_next  [COPY UPDATE]
+        The card is unchanged. The story-led script rewords the sentence it
+        lands on, so only the cue moved.
+
+  V5   v5_02_four_things  [COPY UPDATE]
+        The card is unchanged and still teaches what this part of the
+        story-led script teaches. Only the sentence it lands on changed, so
+        the cue is re-anchored. The four questions now arrive out of the car
+        analogy rather than as the opening claim.
+
+  V5   v5_03_carry_test  [COPY UPDATE]
+        The card is unchanged and still teaches what this part of the
+        story-led script teaches. Only the sentence it lands on changed, so
+        the cue is re-anchored.
+
+  V5   v5_04_translate  [COPY UPDATE]
+        The card is unchanged and still teaches what this part of the
+        story-led script teaches. Only the sentence it lands on changed, so
+        the cue is re-anchored.
+
+  V5   v5_05_relearn_without_beginner  [COPY UPDATE]
+        The card is unchanged and still teaches what this part of the
+        story-led script teaches. Only the sentence it lands on changed, so
+        the cue is re-anchored.
+
+  V5   v5_06_confidence_both_directions  [COPY UPDATE]
+        The card is unchanged and still teaches what this part of the
+        story-led script teaches. Only the sentence it lands on changed, so
+        the cue is re-anchored.
+
+  V5   v5_07_prove_the_level  [COPY UPDATE]
+        The card is unchanged and still teaches what this part of the
+        story-led script teaches. Only the sentence it lands on changed, so
+        the cue is re-anchored.
+
+  V5   v5_08_four_line_move_case  [REBUILD]
+        The teaching moment survives but the story-led script rewrites it
+        materially, so the cue is re-anchored and the card copy checked
+        against the new wording.
+
+  V5   v5_09_cta  [COPY UPDATE]
+        The card is unchanged and still teaches what this part of the
+        story-led script teaches. Only the sentence it lands on changed, so
+        the cue is re-anchored.
+
+  V5   v5_10_watch_next  [COPY UPDATE]
+        The card is unchanged. The story-led V5 speaks no Watch Next line, so
+        the card is cued off the final spoken sentence and remains the last
+        full-screen visual.
+
+  V6   v6_01_movement_is_not_growth  [COPY UPDATE]
+        Re-anchored one beat later. The story-led script opens this video on a
+        recognition moment, and the old cue sat on the scene prose itself,
+        where a full-screen card would cover the very thing the pass was
+        written to create. The card is unchanged and now lands on the line the
+        scene builds to.
+
+  V7   v7_03_dependable_people  [COPY UPDATE]
+        The card is unchanged. The story-led script rewords the sentence it
+        lands on, so only the cue moved.
+
+  V7   v7_04_complexity  [COPY UPDATE]
+        The card is unchanged. The story-led script rewords the sentence it
+        lands on, so only the cue moved.
+
+  V7   v7_07_review_point  [COPY UPDATE]
+        The card is unchanged. The story-led script rewords the sentence it
+        lands on, so only the cue moved.
+
+  V8   v8_01_success_hides_the_work  [COPY UPDATE]
+        Re-anchored one beat later. The story-led script opens this video on a
+        recognition moment, and the old cue sat on the scene prose itself,
+        where a full-screen card would cover the very thing the pass was
+        written to create. The card is unchanged and now lands on the line the
+        scene builds to.
+
+  V8   v8_04_weak_and_strong_before  [COPY UPDATE]
+        The card is unchanged. The story-led script rewords the sentence it
+        lands on, so only the cue moved.
+
+  V8   v8_05_accurate_attribution  [COPY UPDATE]
+        The card is unchanged. The story-led script rewords the sentence it
+        lands on, so only the cue moved.
+
+  V8   v8_07_existence_use_effect  [COPY UPDATE]
+        The card is unchanged. The story-led script rewords the sentence it
+        lands on, so only the cue moved.
+
+  V13  v13_09_cta  [COPY UPDATE]
+        The card is unchanged. The story-led script rewords the sentence it
+        lands on, so only the cue moved.
+
+  V14  v14_05_same_word_different_decision  [COPY UPDATE]
+        The card is unchanged. The story-led script rewords the sentence it
+        lands on, so only the cue moved.
+
+  V14  v14_08_research_boundary  [COPY UPDATE]
+        The card is unchanged. The story-led script rewords the sentence it
+        lands on, so only the cue moved.
+
+  V16  v16_01_called_then_skipped  [COPY UPDATE]
+        Re-anchored one beat later. The story-led script opens this video on a
+        recognition moment, and the old cue sat on the scene prose itself,
+        where a full-screen card would cover the very thing the pass was
+        written to create. The card is unchanged and now lands on the line the
+        scene builds to. It now punctuates the end of the scene rather than
+        opening over it.
+
+  V17  v17_01_two_days_forty_minutes  [COPY UPDATE]
+        Re-anchored one beat later. The story-led script opens this video on a
+        recognition moment, and the old cue sat on the scene prose itself,
+        where a full-screen card would cover the very thing the pass was
+        written to create. The card is unchanged and now lands on the line the
+        scene builds to. The card shows the two-days-to-forty-minutes
+        contrast, so it lands where the contrast completes.
+
+  V17  v17_04_four_lines  [COPY UPDATE]
+        The card is unchanged. The story-led script rewords the sentence it
+        lands on, so only the cue moved.
+
+  V18  v18_01_congratulated  [COPY UPDATE]
+        Re-anchored one beat later. The story-led script opens this video on a
+        recognition moment, and the old cue sat on the scene prose itself,
+        where a full-screen card would cover the very thing the pass was
+        written to create. The card is unchanged and now lands on the line the
+        scene builds to.
+
+  V20  v20_03_six_categories  [REBUILD]
+        The teaching moment survives but the story-led script rewrites it
+        materially, so the cue is re-anchored and the card copy checked
+        against the new wording.
+
+------------------------------------------------------------------------------
+
+REMOVED, AND WHY
+
+  v4_01_title_new_work_not_new
+      The story-led V4 opens on Temidayo's own experience of stepping into
+      three roles nobody had held. That is a recognition moment and it
+      should stay on camera. A full-screen card over the first two sentences
+      would cover exactly the moment the pass was written to create.
+
+  v5_01_changed_tracks_not_zero
+      The story-led V5 opens on Temidayo's own track changes and then moves
+      into the car analogy, which is a spoken image rather than a diagram.
+      Both are camera-led. The two-mistakes point this card carried is still
+      made in the speech, immediately, so nothing is lost by staying on her.
+
+------------------------------------------------------------------------------
+
+SHORTS
+
+    REUSE          93
+    COPY UPDATE    15
+
+  No Short was rebuilt or removed. Every framework a Short rests on is
+  still taught in the story-led script; where the long-form reworded the
+  supporting lines, the Short's wording was brought to the current script.

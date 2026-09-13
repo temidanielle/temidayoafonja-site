@@ -1,0 +1,299 @@
+==============================================================================
+VIDEO 8  |  CAMERA AND FULL-SCREEN TRIGGER MAP
+==============================================================================
+
+How to Show Your Impact at Work When You Built It From Scratch
+
+Every stretch of this video is marked. A row that says CAMERA is a stretch
+where Temidayo carries the moment and no graphic should appear.
+
+------------------------------------------------------------------------------
+
+HOW TO READ THIS
+
+  CAMERA        stay on Temidayo. Recognition, lived experience,
+                tension, a reflective turn, or bringing the idea
+                back to the viewer.
+  FULL SCREEN   a true full-screen frame. No camera behind it and
+                no shrinking it into a corner.
+
+  Do not alternate mechanically. Several camera stretches in a row are
+  correct where the script is telling a story.
+
+------------------------------------------------------------------------------
+
+
+==========================================================================
+HOOK | Success can hide how hard the work was
+==========================================================================
+
+  [ CAMERA ]  1 spoken paragraph, about 26 words
+              opens: One of the strangest things about building something from scratc
+              stay on Temidayo through this stretch.
+
+  [ FULL SCREEN ]  v8_01_success_hides_the_work
+      cue, exact words: The process exists. People use it. The decisions have become routine.
+      treatment:  STATEMENT
+      purpose:    The hook.
+      reveal:     Headline. Hold. Then the support line.
+                  One idea, full screen, large. Headline first, then the support line if there is one.
+                  Hold it still. Stillness is correct here: the viewer is reading or thinking.
+                  No motion beyond the entrance. No sound unless this is one of the few beats that earns it.
+      hold:       3 seconds, then 3 with the support.
+      sound:      Candidate: one clean transition sound on entry.
+      after:      Return to camera on the next spoken line.
+      status:     COPY UPDATE
+
+  [ CAMERA ]  2 spoken paragraphs, about 78 words
+              opens: I have been the first person in a role more than once. In one of
+              stay on Temidayo through this stretch.
+
+  [ FULL SCREEN ]  v8_02_four_things
+      cue, exact words: So I use four things: the Before, My Part, the Judgment, and the Proof.
+      treatment:  SEQUENCE
+      purpose:    The framework, delivered early.
+      reveal:     One bucket at a time in spoken order.
+                  Establish the complete structure first, all items visible but even in weight, so the viewer sees the shape.
+                  Then activate ONE item at a time as Temidayo explains it: that item comes up in gold, the others sit back in a dimmer neutral. Do not emphasize all of them at once.
+                  Return to the complete structure, evenly weighted, only after the last item.
+                  One sound accent at most across the whole sequence, not one per item.
+      hold:       2 seconds each, 4 on the complete grid.
+      sound:      Candidate: one tick on the fourth bucket.
+      after:      Return to camera on the next spoken line.
+      status:     REUSE
+
+  [ CAMERA ]  2 spoken paragraphs, about 87 words
+              opens: At the beginning, everybody can see the mess because you are sta
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+THE PROBLEM | Finished work hides unfinished conditions
+==========================================================================
+
+  [ CAMERA ]  7 spoken paragraphs, about 199 words
+              opens: Work you build from scratch is easy to lose because the finished
+              stay on Temidayo through this stretch.
+
+  [ FULL SCREEN ]  v8_03_finished_hides_conditions
+      cue, exact words: The solution is not to make the story more dramatic. It is to put the missing information back.
+      treatment:  COMPARISON
+      purpose:    Name the mechanism so the fix is obvious.
+      reveal:     Left. Then right. Then the foot line.
+                  Two large sides, full screen. Short label on each side, then the short content under it.
+                  Reveal the left side first and let it sit. Reveal the right side only when Temidayo reaches it. Do not present both at once.
+                  Gold marks the distinction that matters, on one side only. Everything else stays navy on cream or cream on navy.
+                  No camera behind the graphic. This is a true full-screen frame.
+      hold:       2 seconds left, 4 right, 3 foot.
+      sound:      Candidate: one tick as the foot line lands.
+      after:      Return to camera on the next spoken line.
+      status:     REUSE
+
+
+==========================================================================
+1 | BEFORE: Reconstruct what was true before your solution
+==========================================================================
+
+  [ CAMERA ]  3 spoken paragraphs, about 91 words
+              opens: Ask: what could people not do consistently? What decision had no
+              stay on Temidayo through this stretch.
+
+  [ FULL SCREEN ]  v8_04_weak_and_strong_before
+      cue, exact words: A weak Before is 'It was chaos.' A stronger Before is 'There was no shared way to prioritize requests or decide which issues needed escalation.'
+      treatment:  COMPARISON
+      purpose:    Show the standard rather than describing it.
+      reveal:     The weak version. Hold. Struck. Then the strong version.
+                  Two large sides, full screen. Short label on each side, then the short content under it.
+                  Reveal the left side first and let it sit. Reveal the right side only when Temidayo reaches it. Do not present both at once.
+                  Gold marks the distinction that matters, on one side only. Everything else stays navy on cream or cream on navy.
+                  No camera behind the graphic. This is a true full-screen frame.
+      hold:       2 seconds before the strike, 4 after.
+      sound:      Strong candidate: one soft tick as the strike lands.
+      after:      Return to camera on the next spoken line.
+      status:     COPY UPDATE
+
+  [ CAMERA ]  3 spoken paragraphs, about 60 words
+              opens: That tells the listener what problem the process was supposed to
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+2 | MY PART: Make attribution accurate
+==========================================================================
+
+  [ CAMERA ]  1 spoken paragraph, about 31 words
+              opens: Now name your part. If somebody else held the final decision, sa
+              stay on Temidayo through this stretch.
+
+  [ FULL SCREEN ]  v8_05_accurate_attribution
+      cue, exact words: You do not need sole credit to make your contribution clear. You need accurate credit.
+      treatment:  STATEMENT
+      purpose:    The line that keeps the video honest about team work.
+      reveal:     Headline, then the support line.
+                  One idea, full screen, large. Headline first, then the support line if there is one.
+                  Hold it still. Stillness is correct here: the viewer is reading or thinking.
+                  No motion beyond the entrance. No sound unless this is one of the few beats that earns it.
+      hold:       At least 4 seconds.
+      sound:      Not a candidate.
+      after:      Return to camera on the next spoken line.
+      status:     COPY UPDATE
+
+  [ CAMERA ]  1 spoken paragraph, about 39 words
+              opens: A stronger version of the example is: 'I helped the team agree a
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+3 | JUDGMENT: Show what was not obvious
+==========================================================================
+
+  [ CAMERA ]  1 spoken paragraph, about 18 words
+              opens: Next, show what you had to work out. Not every action. The decis
+              stay on Temidayo through this stretch.
+
+  [ FULL SCREEN ]  v8_06_judgment_not_the_artifact
+      cue, exact words: If you created an intake form, the form may be the least interesting part.
+      treatment:  COMPARISON
+      purpose:    The most transferable insight in the video.
+      reveal:     Left. Then right. Then the foot question.
+                  Two large sides, full screen. Short label on each side, then the short content under it.
+                  Reveal the left side first and let it sit. Reveal the right side only when Temidayo reaches it. Do not present both at once.
+                  Gold marks the distinction that matters, on one side only. Everything else stays navy on cream or cream on navy.
+                  No camera behind the graphic. This is a true full-screen frame.
+      hold:       2 seconds left, 4 right, 3 foot.
+      sound:      Candidate: one tick as the right side lands.
+      after:      Return to camera on the next spoken line.
+      status:     REUSE
+
+  [ CAMERA ]  3 spoken paragraphs, about 58 words
+              opens: That work disappears inside the finished form.
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+4 | PROOF: Keep only what the evidence supports
+==========================================================================
+
+  [ FULL SCREEN ]  v8_07_existence_use_effect
+      cue, exact words: For work you build from scratch, I separate three levels of evidence: Existence, Use, Effect.
+      treatment:  SEQUENCE
+      purpose:    The sharpest distinction in the video and the reason it is credible.
+      reveal:     One level at a time, then the foot line.
+                  Establish the complete structure first, all items visible but even in weight, so the viewer sees the shape.
+                  Then activate ONE item at a time as Temidayo explains it: that item comes up in gold, the others sit back in a dimmer neutral. Do not emphasize all of them at once.
+                  Return to the complete structure, evenly weighted, only after the last item.
+                  One sound accent at most across the whole sequence, not one per item.
+      hold:       2 seconds each, 4 on the foot.
+      sound:      Strong candidate: one soft tick as the foot line lands.
+      after:      Return to camera on the next spoken line.
+      status:     COPY UPDATE
+
+  [ CAMERA ]  6 spoken paragraphs, about 169 words
+              opens: Existence means the process, framework, or function was created.
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+EVIDENCE BOUNDARY | Do not take what you are not allowed to keep
+==========================================================================
+
+  [ FULL SCREEN ]  v8_08_evidence_boundary
+      cue, exact words: Proof does not mean taking your employer's files.
+      treatment:  STATEMENT
+      purpose:    The legal and ethical boundary, stated plainly on screen.
+      reveal:     Headline alone. Hold. Then the support line.
+                  One idea, full screen, large. Headline first, then the support line if there is one.
+                  Hold it still. Stillness is correct here: the viewer is reading or thinking.
+                  No motion beyond the entrance. No sound unless this is one of the few beats that earns it.
+      hold:       3 seconds alone, 4 with the support.
+      sound:      Not a candidate.
+      after:      Return to camera.
+      status:     REUSE
+
+  [ CAMERA ]  1 spoken paragraph, about 15 words
+              opens: Your own written account can preserve the structure of the evide
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+THE FOUR-SENTENCE IMPACT ACCOUNT
+==========================================================================
+
+  [ FULL SCREEN ]  v8_08_four_sentence_account
+      cue, exact words: Put it together in four sentences.
+      treatment:  SEQUENCE
+      purpose:    The artifact. The frame viewers photograph.
+      reveal:     One row at a time.
+                  Establish the complete structure first, all items visible but even in weight, so the viewer sees the shape.
+                  Then activate ONE item at a time as Temidayo explains it: that item comes up in gold, the others sit back in a dimmer neutral. Do not emphasize all of them at once.
+                  Return to the complete structure, evenly weighted, only after the last item.
+                  One sound accent at most across the whole sequence, not one per item.
+      hold:       3 seconds per row, 4 on the complete frame.
+      sound:      Candidate: one tick as the fourth row lands.
+      after:      Return to camera on the next spoken line.
+      status:     REUSE
+
+  [ CAMERA ]  7 spoken paragraphs, about 220 words
+              opens: Before: what was true before the work existed? My Part: what did
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+ACTION AND RESOURCE
+==========================================================================
+
+  [ FULL SCREEN ]  v8_09_cta
+      cue, exact words: Keep the Proof is linked below if you want the deeper evidence system and reusable ledger. But the four-sentence account from this video stands on its own.
+      treatment:  CTA
+      purpose:    The single action named by the corrected master. The resource route lives in the description and the pinned comment, not on this card.
+      reveal:     Label, headline, the four words, then the closing line.
+                  Full screen, and simpler than the teaching graphics. The action is the only thing competing for attention.
+                  Resource name and route appear only where the script speaks them.
+      hold:       At least 4 seconds.
+      sound:      Candidate: one clean transition sound on entry.
+      after:      Return to camera on the next spoken line.
+      status:     REUSE
+
+  [ CAMERA ]  1 spoken paragraph, about 27 words
+              opens: You do not need to make your work sound harder than it was. You 
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+CLOSE | Do not let successful work disappear
+==========================================================================
+
+  [ CAMERA ]  3 spoken paragraphs, about 46 words
+              opens: Choose one thing people now take for granted because it works. W
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+WATCH NEXT | Final visual
+==========================================================================
+
+  [ CAMERA ]  1 spoken paragraph, about 26 words
+              opens: Once you can explain the work, the next question is where else i
+              stay on Temidayo through this stretch.
+
+  [ FULL SCREEN ]  v8_10_watch_next
+      cue, exact words: Watch 'How to Change Industries Without Starting Over' next.
+      treatment:  WATCH NEXT
+      purpose:    The final visual.
+      reveal:     Label, rule, title, number.
+                  Full screen and final. Label, rule, destination title, video number.
+                  Keep the copy to the left so an end screen can sit on the right.
+                  Never return to camera after this frame. Nothing follows it.
+      hold:       Hold to the end.
+      sound:      Candidate: one restrained transition sound, then music fade.
+      after:      NO RETURN TO CAMERA. Watch Next is final.
+      status:     REUSE
+
+
+------------------------------------------------------------------------------
+
+SPINE SUMMARY
+
+  16 camera stretches, 11 full-screen frames.
+  The video stays on Temidayo for most of its length, which is the point
+  of the story-led pass.

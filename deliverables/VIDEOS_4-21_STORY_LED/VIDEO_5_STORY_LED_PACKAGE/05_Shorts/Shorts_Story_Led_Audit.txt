@@ -1,0 +1,41 @@
+==============================================================================
+VIDEO 5  |  SHORTS AUDIT AGAINST THE STORY-LED SCRIPT
+==============================================================================
+
+I Changed Career Tracks Without Starting Over. Here's What I Carried With Me.
+
+A Short is a standalone idea. It is not rebuilt because the long-form
+reworded a supporting sentence. It is changed when the framework it rests
+on is gone, or its hook no longer matches the story-led approach.
+
+------------------------------------------------------------------------------
+
+  v5_a1_changed_tracks_not_zero      REUSE
+      priority A, V5 hook.
+      support against the story-led script: 0.78
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v5_a2_carry                        COPY UPDATE
+      priority A, V5 carry.
+      support against the story-led script: 0.56
+      The framework this Short rests on is still taught, but the story-led script rewords the supporting lines, so the Short's wording is brought to the current script. The standalone idea is unchanged.
+
+  v5_a3_translate                    COPY UPDATE
+      priority A, V5 translate.
+      support against the story-led script: 0.60
+      The framework this Short rests on is still taught, but the story-led script rewords the supporting lines, so the Short's wording is brought to the current script. The standalone idea is unchanged.
+
+  v5_a4_prove_the_level              COPY UPDATE
+      priority A, V5 prove the level.
+      support against the story-led script: 0.65
+      The framework this Short rests on is still taught, but the story-led script rewords the supporting lines, so the Short's wording is brought to the current script. The standalone idea is unchanged.
+
+  v5_b1_relearn                      COPY UPDATE
+      priority B, V5 relearn.
+      support against the story-led script: 0.61
+      The framework this Short rests on is still taught, but the story-led script rewords the supporting lines, so the Short's wording is brought to the current script. The standalone idea is unchanged.
+
+  v5_b2_both_directions              COPY UPDATE
+      priority B, V5 relearn and close.
+      support against the story-led script: 0.59
+      The framework this Short rests on is still taught, but the story-led script rewords the supporting lines, so the Short's wording is brought to the current script. The standalone idea is unchanged.

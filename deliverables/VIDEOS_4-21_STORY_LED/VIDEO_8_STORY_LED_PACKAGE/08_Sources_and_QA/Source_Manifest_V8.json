@@ -1,0 +1,158 @@
+{
+  "video": 8,
+  "title": "How to Show Your Impact at Work When You Built It From Scratch",
+  "thumbnail": "NOW IT LOOKS EASY",
+  "generated": "Sunday, September 13, 2026 | 2:34 PM CT",
+  "spoken_source_of_truth": {
+    "script": "Video_8_FINAL_Story_Led_Conversational_Recording_Script.docx",
+    "script_sha256": "d90ade46f5dc74085fb43c92ab5748a2145a37bab29a506808553279f51f18bc",
+    "thought_block": "Video_8_Thought_Block_Recording_Copy_Story_Led.docx",
+    "thought_block_sha256": "1563f76f42601c40fe2e8d9b84208518e8d6e04661fa840f79b98ba1adb9b65c",
+    "note": "Both copied unchanged into 01_Recording_Master and never written to. They override the pre-story-led package."
+  },
+  "pre_story_led_baseline": {
+    "archive": "Videos_4-21_CORRECTED_RUNTIME_Production_Packages.zip",
+    "sha256": "7dbf2d56add4a91fd50f4f1f75c15908ec996a5932d70128bf7db190f8e0dfcb",
+    "status": "Preserved and auditable. Not modified, not overwritten, and no longer the active production handoff."
+  },
+  "runtime": {
+    "class": "REGULAR LONG-FORM",
+    "spoken_words": 1413,
+    "estimated_speech": "9:44 to 10:52 at 130 to 145 words per minute",
+    "note": "Arithmetic on the script. Not a runtime and not a target. The actual length is observed at Temidayo's natural pace."
+  },
+  "assets": [
+    {
+      "file": "v8_01_success_hides_the_work.png",
+      "status": "COPY UPDATE",
+      "treatment": "STATEMENT",
+      "mode": "FULL SCREEN",
+      "why": "Re-anchored one beat later. The story-led script opens this video on a recognition moment, and the old cue sat on the scene prose itself, where a full-screen card would cover the very thing the pass was written to create. The card is unchanged and now lands on the line the scene builds to.",
+      "cue": "The process exists. People use it. The decisions have become routine."
+    },
+    {
+      "file": "v8_02_four_things.png",
+      "status": "REUSE",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "So I use four things: the Before, My Part, the Judgment, and the Proof."
+    },
+    {
+      "file": "v8_03_finished_hides_conditions.png",
+      "status": "REUSE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "The solution is not to make the story more dramatic. It is to put the missing information back."
+    },
+    {
+      "file": "v8_04_weak_and_strong_before.png",
+      "status": "COPY UPDATE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged. The story-led script rewords the sentence it lands on, so only the cue moved.",
+      "cue": "A weak Before is 'It was chaos.' A stronger Before is 'There was no shared way to prioritize requests or decide which issues needed escalation.'"
+    },
+    {
+      "file": "v8_05_accurate_attribution.png",
+      "status": "COPY UPDATE",
+      "treatment": "STATEMENT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged. The story-led script rewords the sentence it lands on, so only the cue moved.",
+      "cue": "You do not need sole credit to make your contribution clear. You need accurate credit."
+    },
+    {
+      "file": "v8_06_judgment_not_the_artifact.png",
+      "status": "REUSE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "If you created an intake form, the form may be the least interesting part."
+    },
+    {
+      "file": "v8_07_existence_use_effect.png",
+      "status": "COPY UPDATE",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged. The story-led script rewords the sentence it lands on, so only the cue moved.",
+      "cue": "For work you build from scratch, I separate three levels of evidence: Existence, Use, Effect."
+    },
+    {
+      "file": "v8_08_evidence_boundary.png",
+      "status": "REUSE",
+      "treatment": "STATEMENT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Proof does not mean taking your employer's files."
+    },
+    {
+      "file": "v8_08_four_sentence_account.png",
+      "status": "REUSE",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Put it together in four sentences."
+    },
+    {
+      "file": "v8_09_cta.png",
+      "status": "REUSE",
+      "treatment": "CTA",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Keep the Proof is linked below if you want the deeper evidence system and reusable ledger. But the four-sentence account from this video stands on its own."
+    },
+    {
+      "file": "v8_10_watch_next.png",
+      "status": "REUSE",
+      "treatment": "WATCH NEXT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Watch 'How to Change Industries Without Starting Over' next."
+    }
+  ],
+  "assets_removed": [],
+  "asset_classification": {
+    "COPY UPDATE": 4,
+    "REUSE": 7
+  },
+  "shorts": [
+    {
+      "slug": "v8_a1_now_it_looks_easy",
+      "state": "REUSE",
+      "support": 0.98
+    },
+    {
+      "slug": "v8_a2_the_before",
+      "state": "REUSE",
+      "support": 1.0
+    },
+    {
+      "slug": "v8_a3_existence_use_effect",
+      "state": "REUSE",
+      "support": 0.96
+    },
+    {
+      "slug": "v8_a4_four_sentences",
+      "state": "REUSE",
+      "support": 1.0
+    },
+    {
+      "slug": "v8_b1_accurate_attribution",
+      "state": "REUSE",
+      "support": 0.94
+    },
+    {
+      "slug": "v8_b2_evidence_boundary",
+      "state": "REUSE",
+      "support": 0.78
+    }
+  ],
+  "not_verified": [
+    "Nothing here has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

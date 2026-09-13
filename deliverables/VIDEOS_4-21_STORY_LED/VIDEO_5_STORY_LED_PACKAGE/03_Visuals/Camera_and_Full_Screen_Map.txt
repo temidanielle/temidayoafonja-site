@@ -1,0 +1,229 @@
+==============================================================================
+VIDEO 5  |  CAMERA AND FULL-SCREEN TRIGGER MAP
+==============================================================================
+
+I Changed Career Tracks Without Starting Over. Here's What I Carried With Me.
+
+Every stretch of this video is marked. A row that says CAMERA is a stretch
+where Temidayo carries the moment and no graphic should appear.
+
+------------------------------------------------------------------------------
+
+HOW TO READ THIS
+
+  CAMERA        stay on Temidayo. Recognition, lived experience,
+                tension, a reflective turn, or bringing the idea
+                back to the viewer.
+  FULL SCREEN   a true full-screen frame. No camera behind it and
+                no shrinking it into a corner.
+
+  Do not alternate mechanically. Several camera stretches in a row are
+  correct where the script is telling a story.
+
+------------------------------------------------------------------------------
+
+
+==========================================================================
+HOOK
+==========================================================================
+
+  [ CAMERA ]  14 spoken paragraphs, about 182 words
+              opens: I have changed career tracks more than once.
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+THE CAR ANALOGY
+==========================================================================
+
+  [ CAMERA ]  7 spoken paragraphs, about 71 words
+              opens: When I think about changing career tracks, I like to think about
+              stay on Temidayo through this stretch.
+
+  [ FULL SCREEN ]  v5_02_four_things
+      cue, exact words: I use four questions:
+      treatment:  SEQUENCE
+      purpose:    The framework, delivered in the first minute.
+      reveal:     One bucket at a time in spoken order.
+                  Establish the complete structure first, all items visible but even in weight, so the viewer sees the shape.
+                  Then activate ONE item at a time as Temidayo explains it: that item comes up in gold, the others sit back in a dimmer neutral. Do not emphasize all of them at once.
+                  Return to the complete structure, evenly weighted, only after the last item.
+                  One sound accent at most across the whole sequence, not one per item.
+      hold:       2 seconds each, 4 on the complete grid.
+      sound:      Candidate: one tick on the fourth bucket.
+      after:      Return to camera on the next spoken line.
+      status:     COPY UPDATE
+
+  [ CAMERA ]  8 spoken paragraphs, about 23 words
+              opens: What can I CARRY?
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+1. CARRY
+==========================================================================
+
+  [ FULL SCREEN ]  v5_03_carry_test
+      cue, exact words: Start with the parts of your experience that still matter in the new setting.
+      treatment:  STATEMENT
+      purpose:    Make Carry a test rather than a claim.
+      reveal:     Question, then the one-line answer.
+                  One idea, full screen, large. Headline first, then the support line if there is one.
+                  Hold it still. Stillness is correct here: the viewer is reading or thinking.
+                  No motion beyond the entrance. No sound unless this is one of the few beats that earns it.
+      hold:       At least 4 seconds.
+      sound:      Not a candidate.
+      after:      Return to camera on the next spoken line.
+      status:     COPY UPDATE
+
+  [ CAMERA ]  16 spoken paragraphs, about 109 words
+              opens: Not just the tasks.
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+2. TRANSLATE
+==========================================================================
+
+  [ FULL SCREEN ]  v5_04_translate
+      cue, exact words: The next step is translation.
+      treatment:  COMPARISON
+      purpose:    The most practical section of the video.
+      reveal:     Left. Then right. Then the foot line.
+                  Two large sides, full screen. Short label on each side, then the short content under it.
+                  Reveal the left side first and let it sit. Reveal the right side only when Temidayo reaches it. Do not present both at once.
+                  Gold marks the distinction that matters, on one side only. Everything else stays navy on cream or cream on navy.
+                  No camera behind the graphic. This is a true full-screen frame.
+      hold:       2 seconds left, 4 right, 3 foot.
+      sound:      Candidate: one tick as the foot line lands.
+      after:      Return to camera on the next spoken line.
+      status:     COPY UPDATE
+
+  [ CAMERA ]  14 spoken paragraphs, about 110 words
+              opens: The same ability can look different in another field.
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+3. RELEARN
+==========================================================================
+
+  [ FULL SCREEN ]  v5_05_relearn_without_beginner
+      cue, exact words: Then comes the part people sometimes want to skip.
+      treatment:  STATEMENT
+      purpose:    Hold both halves of the channel's position in one frame.
+      reveal:     Headline, then the list of what is genuinely new.
+                  One idea, full screen, large. Headline first, then the support line if there is one.
+                  Hold it still. Stillness is correct here: the viewer is reading or thinking.
+                  No motion beyond the entrance. No sound unless this is one of the few beats that earns it.
+      hold:       At least 4 seconds.
+      sound:      Not a candidate.
+      after:      Return to camera on the next spoken line.
+      status:     COPY UPDATE
+
+  [ CAMERA ]  16 spoken paragraphs, about 86 words
+              opens: What do you genuinely need to learn again?
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+4. PROVE
+==========================================================================
+
+  [ CAMERA ]  11 spoken paragraphs, about 46 words
+              opens: And then you need proof.
+              stay on Temidayo through this stretch.
+
+  [ FULL SCREEN ]  v5_07_prove_the_level
+      cue, exact words: If the new role asks for a higher level of work, your proof also needs to show that level.
+      treatment:  COMPARISON
+      purpose:    Replace duration and title with evidence.
+      reveal:     Both weak claims. Hold. Struck. Then the questions.
+                  Two large sides, full screen. Short label on each side, then the short content under it.
+                  Reveal the left side first and let it sit. Reveal the right side only when Temidayo reaches it. Do not present both at once.
+                  Gold marks the distinction that matters, on one side only. Everything else stays navy on cream or cream on navy.
+                  No camera behind the graphic. This is a true full-screen frame.
+      hold:       2 seconds before the strike, 4 after.
+      sound:      Strong candidate: one soft tick as the strike lands.
+      after:      Return to camera on the next spoken line.
+      status:     COPY UPDATE
+
+  [ CAMERA ]  3 spoken paragraphs, about 68 words
+              opens: Not just that you did something similar.
+              stay on Temidayo through this stretch.
+
+
+==========================================================================
+THE FOUR-LINE MOVE CASE
+==========================================================================
+
+  [ FULL SCREEN ]  v5_08_four_line_move_case
+      cue, exact words: If you are thinking about changing tracks, write four lines.
+      treatment:  SEQUENCE
+      purpose:    The artifact. The frame viewers photograph.
+      reveal:     One row at a time.
+                  Establish the complete structure first, all items visible but even in weight, so the viewer sees the shape.
+                  Then activate ONE item at a time as Temidayo explains it: that item comes up in gold, the others sit back in a dimmer neutral. Do not emphasize all of them at once.
+                  Return to the complete structure, evenly weighted, only after the last item.
+                  One sound accent at most across the whole sequence, not one per item.
+      hold:       2 seconds per row, 4 on the complete frame.
+      sound:      Candidate: one tick as the fourth row lands.
+      after:      Return to camera on the next spoken line.
+      status:     REBUILD
+
+  [ FULL SCREEN ]  v5_09_cta
+      cue, exact words: If you are thinking about changing tracks, write four lines.
+      treatment:  CTA
+      purpose:    The single action. This master names no resource route.
+      reveal:     Headline, support, then the closing line.
+                  Full screen, and simpler than the teaching graphics. The action is the only thing competing for attention.
+                  Resource name and route appear only where the script speaks them.
+      hold:       At least 4 seconds.
+      sound:      Candidate: one clean transition sound on entry.
+      after:      Return to camera on the next spoken line.
+      status:     COPY UPDATE
+
+  [ CAMERA ]  5 spoken paragraphs, about 49 words
+              opens: CARRY:
+What from my old work still matters here?
+              stay on Temidayo through this stretch.
+
+  [ FULL SCREEN ]  v5_06_confidence_both_directions
+      cue, exact words: You do not have to erase your past.
+      treatment:  COMPARISON
+      purpose:    The line that protects the whole body of work from sounding like everything transfers.
+      reveal:     Left. Then right. Then the foot line.
+                  Two large sides, full screen. Short label on each side, then the short content under it.
+                  Reveal the left side first and let it sit. Reveal the right side only when Temidayo reaches it. Do not present both at once.
+                  Gold marks the distinction that matters, on one side only. Everything else stays navy on cream or cream on navy.
+                  No camera behind the graphic. This is a true full-screen frame.
+      hold:       At least 4 seconds on the right side.
+      sound:      Not a candidate. Let this land in silence.
+      after:      Return to camera on the next spoken line.
+      status:     COPY UPDATE
+
+  [ CAMERA ]  6 spoken paragraphs, about 41 words
+              opens: And you do not have to pretend your past gives you everything.
+              stay on Temidayo through this stretch.
+
+  [ FULL SCREEN ]  v5_10_watch_next
+      cue, exact words: But it does require you to know what is actually coming with you.
+      treatment:  WATCH NEXT
+      purpose:    The final visual.
+      reveal:     Label, rule, title, number.
+                  Full screen and final. Label, rule, destination title, video number.
+                  Keep the copy to the left so an end screen can sit on the right.
+                  Never return to camera after this frame. Nothing follows it.
+      hold:       Hold to the end.
+      sound:      Candidate: one restrained transition sound, then music fade.
+      after:      NO RETURN TO CAMERA. Watch Next is final.
+      status:     COPY UPDATE
+
+
+------------------------------------------------------------------------------
+
+SPINE SUMMARY
+
+  10 camera stretches, 9 full-screen frames.
+  The video stays on Temidayo for most of its length, which is the point
+  of the story-led pass.

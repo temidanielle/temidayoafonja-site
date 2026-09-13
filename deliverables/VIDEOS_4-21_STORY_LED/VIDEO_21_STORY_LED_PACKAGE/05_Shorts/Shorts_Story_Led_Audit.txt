@@ -1,0 +1,41 @@
+==============================================================================
+VIDEO 21  |  SHORTS AUDIT AGAINST THE STORY-LED SCRIPT
+==============================================================================
+
+What You Must Relearn When You Change Industries
+
+A Short is a standalone idea. It is not rebuilt because the long-form
+reworded a supporting sentence. It is changed when the framework it rests
+on is gone, or its hook no longer matches the story-led approach.
+
+------------------------------------------------------------------------------
+
+  v21_a1_the_room_is_different       REUSE
+      priority A, V21 hook.
+      support against the story-led script: 1.00
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v21_a2_licensing_is_not_a_mindset  REUSE
+      priority A, V21 regulation and credentials.
+      support against the story-led script: 0.82
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v21_a3_five_layers                 REUSE
+      priority A, V21 the five-layer inventory.
+      support against the story-led script: 0.86
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v21_a4_easiest_layer_trap          COPY UPDATE
+      priority A, V21 systems and tooling.
+      support against the story-led script: 0.71
+      The framework this Short rests on is still taught, but the story-led script rewords the supporting lines, so the Short's wording is brought to the current script. The standalone idea is unchanged.
+
+  v21_b1_has_anyone_tried_this       REUSE
+      priority B, V21 relationships and internal history.
+      support against the story-led script: 0.78
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v21_b2_read_or_practice            COPY UPDATE
+      priority B, V21 read it or practice it.
+      support against the story-led script: 0.67
+      The framework this Short rests on is still taught, but the story-led script rewords the supporting lines, so the Short's wording is brought to the current script. The standalone idea is unchanged.

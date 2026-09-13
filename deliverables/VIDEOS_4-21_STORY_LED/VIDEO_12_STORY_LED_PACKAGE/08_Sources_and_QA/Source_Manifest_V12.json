@@ -1,0 +1,149 @@
+{
+  "video": 12,
+  "title": "What to Do When You Can’t Quit Your Job Yet",
+  "thumbnail": "WHAT CAN CHANGE NOW?",
+  "generated": "Sunday, September 13, 2026 | 2:34 PM CT",
+  "spoken_source_of_truth": {
+    "script": "Video_12_FINAL_Story_Led_Conversational_Recording_Script.docx",
+    "script_sha256": "c7eb1e687b9404a7968136601a9c6be78091153bbf5da824f8903942228018b3",
+    "thought_block": "Video_12_Thought_Block_Recording_Copy_Story_Led.docx",
+    "thought_block_sha256": "f2cdf75b725323e24b556d1be851bb00e20f3a9184af92304acbf0c4974876ae",
+    "note": "Both copied unchanged into 01_Recording_Master and never written to. They override the pre-story-led package."
+  },
+  "pre_story_led_baseline": {
+    "archive": "Videos_4-21_CORRECTED_RUNTIME_Production_Packages.zip",
+    "sha256": "7dbf2d56add4a91fd50f4f1f75c15908ec996a5932d70128bf7db190f8e0dfcb",
+    "status": "Preserved and auditable. Not modified, not overwritten, and no longer the active production handoff."
+  },
+  "runtime": {
+    "class": "REGULAR LONG-FORM",
+    "spoken_words": 1299,
+    "estimated_speech": "8:57 to 9:59 at 130 to 145 words per minute",
+    "note": "Arithmetic on the script. Not a runtime and not a target. The actual length is observed at Temidayo's natural pace."
+  },
+  "assets": [
+    {
+      "file": "v12_01_constraint_not_conclusion.png",
+      "status": "REUSE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "“I cannot leave yet.”"
+    },
+    {
+      "file": "v12_02_protection_first.png",
+      "status": "REUSE",
+      "treatment": "STATEMENT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "If health, safety, harassment, discrimination, or another urgent issue is involved, appropriate support comes before a career exercise."
+    },
+    {
+      "file": "v12_03_three_moves.png",
+      "status": "REUSE",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "You need to protect what must hold, put boundaries where you can, and prepare one possible next step."
+    },
+    {
+      "file": "v12_04_name_the_constraint.png",
+      "status": "REUSE",
+      "treatment": "STATEMENT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Write one sentence:"
+    },
+    {
+      "file": "v12_05_make_the_tradeoff_visible.png",
+      "status": "REUSE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "“This job is impossible” may capture the feeling."
+    },
+    {
+      "file": "v12_06_question_before_activity.png",
+      "status": "REUSE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Choose a question before you choose an activity."
+    },
+    {
+      "file": "v12_07_exchange_not_add.png",
+      "status": "REUSE",
+      "treatment": "STATEMENT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Exchange, not automatically add."
+    },
+    {
+      "file": "v12_08_four_lines.png",
+      "status": "REUSE",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Put four lines on a page:"
+    },
+    {
+      "file": "v12_09_cta.png",
+      "status": "REUSE",
+      "treatment": "CTA",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Write the four lines privately."
+    },
+    {
+      "file": "v12_10_watch_next.png",
+      "status": "REUSE",
+      "treatment": "WATCH NEXT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Watch “A 30-Day Plan to Test Your Next Career Move” next."
+    }
+  ],
+  "assets_removed": [],
+  "asset_classification": {
+    "REUSE": 10
+  },
+  "shorts": [
+    {
+      "slug": "v12_a1_constraint_not_conclusion",
+      "state": "REUSE",
+      "support": 1.0
+    },
+    {
+      "slug": "v12_a2_name_the_constraint",
+      "state": "REUSE",
+      "support": 1.0
+    },
+    {
+      "slug": "v12_a3_make_the_tradeoff_visible",
+      "state": "REUSE",
+      "support": 1.0
+    },
+    {
+      "slug": "v12_a4_question_before_activity",
+      "state": "REUSE",
+      "support": 1.0
+    },
+    {
+      "slug": "v12_b1_exchange_not_add",
+      "state": "REUSE",
+      "support": 0.98
+    },
+    {
+      "slug": "v12_b2_four_lines",
+      "state": "REUSE",
+      "support": 1.0
+    }
+  ],
+  "not_verified": [
+    "Nothing here has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

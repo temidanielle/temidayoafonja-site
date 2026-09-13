@@ -1,0 +1,41 @@
+==============================================================================
+VIDEO 13  |  SHORTS AUDIT AGAINST THE STORY-LED SCRIPT
+==============================================================================
+
+A 30-Day Plan to Test Your Next Career Move
+
+A Short is a standalone idea. It is not rebuilt because the long-form
+reworded a supporting sentence. It is changed when the framework it rests
+on is gone, or its hook no longer matches the story-led approach.
+
+------------------------------------------------------------------------------
+
+  v13_a1_stop_collecting_activity    REUSE
+      priority A, V13 hook.
+      support against the story-led script: 1.00
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v13_a2_testable_destination        REUSE
+      priority A, V13 setup.
+      support against the story-led script: 0.98
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v13_a3_ask_about_the_work          REUSE
+      priority A, V13 days 8 to 14.
+      support against the story-led script: 1.00
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v13_a4_effort_is_not_evidence      REUSE
+      priority A, V13 the evidence standard.
+      support against the story-led script: 1.00
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v13_b1_bounded_sample              REUSE
+      priority B, V13 days 15 to 21.
+      support against the story-led script: 1.00
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v13_b2_stop_is_a_good_result       REUSE
+      priority B, V13 days 22 to 30.
+      support against the story-led script: 1.00
+      The story-led script still carries this Short's language. Nothing to change.

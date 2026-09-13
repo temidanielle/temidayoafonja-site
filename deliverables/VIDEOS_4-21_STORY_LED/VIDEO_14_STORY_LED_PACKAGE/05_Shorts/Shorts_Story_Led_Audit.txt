@@ -1,0 +1,41 @@
+==============================================================================
+VIDEO 14  |  SHORTS AUDIT AGAINST THE STORY-LED SCRIPT
+==============================================================================
+
+Which Parts of Your Experience Actually Transfer to Another Industry?
+
+A Short is a standalone idea. It is not rebuilt because the long-form
+reworded a supporting sentence. It is changed when the framework it rests
+on is gone, or its hook no longer matches the story-led approach.
+
+------------------------------------------------------------------------------
+
+  v14_a1_same_words                  REUSE
+      priority A, V14 hook and the two-question test.
+      support against the story-led script: 0.88
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v14_a2_what_travels                REUSE
+      priority A, V14 what travels.
+      support against the story-led script: 0.88
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v14_a3_two_questions               REUSE
+      priority A, V14 the test.
+      support against the story-led script: 0.90
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v14_a4_employers_disagree          REUSE
+      priority A, V14 employer disagreement.
+      support against the story-led script: 0.98
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v14_b1_four_buckets                REUSE
+      priority B, V14 application.
+      support against the story-led script: 0.96
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v14_b2_what_it_does_not_prove      REUSE
+      priority B, V14 what not to claim.
+      support against the story-led script: 0.87
+      The story-led script still carries this Short's language. Nothing to change.

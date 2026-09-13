@@ -1,0 +1,101 @@
+==============================================================================
+VIDEO 20  |  VISUAL BUILD AND MOTION REVEAL MAP
+==============================================================================
+
+How to Return After a Career Break Without Starting at Zero
+
+------------------------------------------------------------------------------
+
+STANDING DIRECTION
+
+  Camera-led teaching governs. Recognition, personal story, tension and the moments that bring an idea back to the viewer stay on Temidayo.
+  A graphic earns the screen when seeing the idea is easier than hearing it alone. It is not a decoration for a spoken point.
+  Substantive teaching is TRUE full screen. Never a moving Temidayo behind or beside a framework. Never the teaching graphic shrunk into a corner.
+  Editorial, not corporate training. Generous whitespace, strong hierarchy, clean cards, short labels, obvious reading order. No fake interactivity, no progress bars, no decorative icons, no quiz styling.
+  Mobile legibility is not negotiable. Large type, few words, high contrast, generous margins. Simplify the graphic rather than shrink the type.
+  Restraint holds: about 3 to 5 camera-emphasis beats, about 2 to 4 meaningful B-roll moments, about 4 to 7 restrained sound accents for the whole video. A framework sequence is one visual event, not one event per frame.
+  A graphic may clarify, organize, compare, visualize, sequence or reinforce. It may never introduce a framework, a claim, a figure or a lesson the September 13 script does not already teach.
+
+------------------------------------------------------------------------------
+
+PALETTE
+
+  Deep navy #112345 carries authority and is the usual ground.
+  Warm cream is breathing room, and the light ground where legibility needs it.
+  Muted gold marks the ACTIVE idea only: the selected item, the number,
+  the underline, the one distinction that matters. Never decoration.
+  No other color system is introduced.
+
+------------------------------------------------------------------------------
+
+FRAME BY FRAME
+
+  v20_01_the_gap_is_not_the_whole_return
+      treatment STATEMENT, built on the statement layout
+      cue: The explanation matters. But it is not the whole return.
+      reveal: Headline as a callout while Temidayo is on camera, then full screen for the three-part question.
+      hold: 2 seconds on the callout, 4 on the full-screen question.
+      sound: Candidate: one soft tick as the full-screen question lands.
+
+  v20_02_what_can_you_prove
+      treatment COMPARISON, built on the duo layout
+      cue: But the conversation eventually moves to a harder question: what can you do now, and wha
+      reveal: Left. Then right. Then the foot line.
+      hold: 2 seconds left, 3 right, 3 foot.
+      sound: Candidate: one tick as the right side lands.
+
+  v20_03_six_categories
+      treatment SEQUENCE, built on the ladder layout
+      cue: Before you start applying, I would sort what you have into six categories.
+      reveal: One at a time in spoken order.
+      hold: 2 seconds each, 5 on the complete set.
+      sound: Not a candidate. The next frame is the stronger moment.
+
+  v20_04_unproven_is_not_absent
+      treatment STATEMENT, built on the statement layout
+      cue: There is a difference between not being able to do something and not being able to point
+      reveal: Headline alone. Hold. Then the support line.
+      hold: 3 seconds alone, 4 with the support.
+      sound: Strong candidate: one soft tick as the headline lands.
+
+  v20_05_current_instance
+      treatment COMPARISON, built on the duo layout
+      cue: If it is unproven, you do not need to relearn it. You need a current instance of it.
+      reveal: Left. Then right. Then the foot line.
+      hold: 2 seconds left, 4 right, 3 foot.
+      sound: Candidate: one tick as the foot line lands.
+
+  v20_06_the_sort
+      treatment SEQUENCE, built on the labeled_rows layout
+      cue: Let me show you the sort. This is a constructed example, put together to make the catego
+      reveal: One row at a time. The label never leaves.
+      hold: 3 seconds per row, 4 on the complete frame.
+      sound: Not a candidate. The label needs to be read.
+
+  v20_07_framing_and_bias
+      treatment STATEMENT, built on the statement layout
+      cue: Bias against career breaks is real.
+      reveal: Headline, then the support line.
+      hold: At least 4 seconds.
+      sound: Not a candidate. Let this land in silence.
+
+  v20_08_routes_back
+      treatment SEQUENCE, built on the quad layout
+      cue: On the routes back, there are usually several and each one costs something different.
+      reveal: One at a time, then the foot line.
+      hold: 2 seconds each, 4 on the foot.
+      sound: Not a candidate.
+
+  v20_09_cta
+      treatment CTA, built on the cta layout
+      cue: If you want a structured way to build the evidence side of that, the Field Kit is linked
+      reveal: Label, headline, resource name, URL.
+      hold: At least 4 seconds.
+      sound: Candidate: one clean transition sound on entry.
+
+  v20_10_watch_next
+      treatment WATCH NEXT, built on the watch_next layout
+      cue: It turns the part of this you can control into something that has already started.
+      reveal: Label, rule, title, number.
+      hold: Hold to the end.
+      sound: Candidate: one restrained transition sound, then music fade.

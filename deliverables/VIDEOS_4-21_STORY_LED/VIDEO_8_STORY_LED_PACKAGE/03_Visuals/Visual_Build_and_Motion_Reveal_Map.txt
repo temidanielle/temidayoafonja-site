@@ -1,0 +1,108 @@
+==============================================================================
+VIDEO 8  |  VISUAL BUILD AND MOTION REVEAL MAP
+==============================================================================
+
+How to Show Your Impact at Work When You Built It From Scratch
+
+------------------------------------------------------------------------------
+
+STANDING DIRECTION
+
+  Camera-led teaching governs. Recognition, personal story, tension and the moments that bring an idea back to the viewer stay on Temidayo.
+  A graphic earns the screen when seeing the idea is easier than hearing it alone. It is not a decoration for a spoken point.
+  Substantive teaching is TRUE full screen. Never a moving Temidayo behind or beside a framework. Never the teaching graphic shrunk into a corner.
+  Editorial, not corporate training. Generous whitespace, strong hierarchy, clean cards, short labels, obvious reading order. No fake interactivity, no progress bars, no decorative icons, no quiz styling.
+  Mobile legibility is not negotiable. Large type, few words, high contrast, generous margins. Simplify the graphic rather than shrink the type.
+  Restraint holds: about 3 to 5 camera-emphasis beats, about 2 to 4 meaningful B-roll moments, about 4 to 7 restrained sound accents for the whole video. A framework sequence is one visual event, not one event per frame.
+  A graphic may clarify, organize, compare, visualize, sequence or reinforce. It may never introduce a framework, a claim, a figure or a lesson the September 13 script does not already teach.
+
+------------------------------------------------------------------------------
+
+PALETTE
+
+  Deep navy #112345 carries authority and is the usual ground.
+  Warm cream is breathing room, and the light ground where legibility needs it.
+  Muted gold marks the ACTIVE idea only: the selected item, the number,
+  the underline, the one distinction that matters. Never decoration.
+  No other color system is introduced.
+
+------------------------------------------------------------------------------
+
+FRAME BY FRAME
+
+  v8_01_success_hides_the_work
+      treatment STATEMENT, built on the statement layout
+      cue: The process exists. People use it. The decisions have become routine.
+      reveal: Headline. Hold. Then the support line.
+      hold: 3 seconds, then 3 with the support.
+      sound: Candidate: one clean transition sound on entry.
+
+  v8_02_four_things
+      treatment SEQUENCE, built on the four_bucket layout
+      cue: So I use four things: the Before, My Part, the Judgment, and the Proof.
+      reveal: One bucket at a time in spoken order.
+      hold: 2 seconds each, 4 on the complete grid.
+      sound: Candidate: one tick on the fourth bucket.
+
+  v8_03_finished_hides_conditions
+      treatment COMPARISON, built on the duo layout
+      cue: The solution is not to make the story more dramatic. It is to put the missing informatio
+      reveal: Left. Then right. Then the foot line.
+      hold: 2 seconds left, 4 right, 3 foot.
+      sound: Candidate: one tick as the foot line lands.
+
+  v8_04_weak_and_strong_before
+      treatment COMPARISON, built on the struck layout
+      cue: A weak Before is 'It was chaos.' A stronger Before is 'There was no shared way to priori
+      reveal: The weak version. Hold. Struck. Then the strong version.
+      hold: 2 seconds before the strike, 4 after.
+      sound: Strong candidate: one soft tick as the strike lands.
+
+  v8_05_accurate_attribution
+      treatment STATEMENT, built on the statement layout
+      cue: You do not need sole credit to make your contribution clear. You need accurate credit.
+      reveal: Headline, then the support line.
+      hold: At least 4 seconds.
+      sound: Not a candidate.
+
+  v8_06_judgment_not_the_artifact
+      treatment COMPARISON, built on the duo layout
+      cue: If you created an intake form, the form may be the least interesting part.
+      reveal: Left. Then right. Then the foot question.
+      hold: 2 seconds left, 4 right, 3 foot.
+      sound: Candidate: one tick as the right side lands.
+
+  v8_07_existence_use_effect
+      treatment SEQUENCE, built on the trio layout
+      cue: For work you build from scratch, I separate three levels of evidence: Existence, Use, Ef
+      reveal: One level at a time, then the foot line.
+      hold: 2 seconds each, 4 on the foot.
+      sound: Strong candidate: one soft tick as the foot line lands.
+
+  v8_08_evidence_boundary
+      treatment STATEMENT, built on the statement layout
+      cue: Proof does not mean taking your employer's files.
+      reveal: Headline alone. Hold. Then the support line.
+      hold: 3 seconds alone, 4 with the support.
+      sound: Not a candidate.
+
+  v8_08_four_sentence_account
+      treatment SEQUENCE, built on the labeled_rows layout
+      cue: Put it together in four sentences.
+      reveal: One row at a time.
+      hold: 3 seconds per row, 4 on the complete frame.
+      sound: Candidate: one tick as the fourth row lands.
+
+  v8_09_cta
+      treatment CTA, built on the cta layout
+      cue: Keep the Proof is linked below if you want the deeper evidence system and reusable ledge
+      reveal: Label, headline, the four words, then the closing line.
+      hold: At least 4 seconds.
+      sound: Candidate: one clean transition sound on entry.
+
+  v8_10_watch_next
+      treatment WATCH NEXT, built on the watch_next layout
+      cue: Watch 'How to Change Industries Without Starting Over' next.
+      reveal: Label, rule, title, number.
+      hold: Hold to the end.
+      sound: Candidate: one restrained transition sound, then music fade.

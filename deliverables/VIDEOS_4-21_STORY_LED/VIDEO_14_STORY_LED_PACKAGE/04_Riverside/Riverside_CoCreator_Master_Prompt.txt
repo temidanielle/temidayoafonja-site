@@ -1,0 +1,309 @@
+==============================================================================
+VIDEO 14  |  RIVERSIDE CO-CREATOR MASTER PROMPT
+==============================================================================
+
+Which Parts of Your Experience Actually Transfer to Another Industry?
+
+Source: Video_14_FINAL_Story_Led_Conversational_Recording_Script.docx
+SHA-256 1e2f735018d24ee4ccc7a680379b48714bd990b329fdbd94d1d10b1b9b053c3f
+
+This prompt is written for the September 13 story-led script. The pacing
+and the scene structure are different from the previous version, so read it
+rather than assuming the old instructions still apply.
+
+------------------------------------------------------------------------------
+
+WHAT THIS VIDEO IS
+
+  A story-led teaching video. The viewer meets a recognizable situation
+  first, then gets help making sense of it, then gets the framework.
+
+  REGULAR LONG-FORM. About 1364 spoken words, roughly 9:24 to 10:29 at 130 to 145 words
+  per minute. That is arithmetic on the script, NOT a target runtime. Do
+  not speed up delivery or cut scenes to reach a number.
+
+------------------------------------------------------------------------------
+
+THE ONE RULE THAT MATTERS MOST HERE
+
+  The opening is a recognition moment. Leave it on camera.
+
+  The story-led pass exists to make these videos feel human. Covering the
+  opening scene with an instructional graphic undoes exactly what it did.
+  Let the story establish tension before any framework appears.
+
+  Do not interrupt a human recognition moment with a graphic. Do not
+  alternate camera and graphics mechanically. Several camera stretches in
+  a row are correct where the script is telling a story.
+
+------------------------------------------------------------------------------
+
+THE SHAPE TO EDIT TOWARD
+
+  CAMERA        Temidayo creates the problem or the tension
+  FULL SCREEN   the graphic makes the distinction visible
+  CAMERA        Temidayo interprets what it means
+  FULL SCREEN   the framework or example applies the idea
+  CAMERA        Temidayo brings it back to the viewer
+
+  Use judgment. This is a shape, not a metronome.
+
+------------------------------------------------------------------------------
+
+STANDING VISUAL DIRECTION
+
+  Camera-led teaching governs. Recognition, personal story, tension and the moments that bring an idea back to the viewer stay on Temidayo.
+
+  A graphic earns the screen when seeing the idea is easier than hearing it alone. It is not a decoration for a spoken point.
+
+  Substantive teaching is TRUE full screen. Never a moving Temidayo behind or beside a framework. Never the teaching graphic shrunk into a corner.
+
+  Editorial, not corporate training. Generous whitespace, strong hierarchy, clean cards, short labels, obvious reading order. No fake interactivity, no progress bars, no decorative icons, no quiz styling.
+
+  Mobile legibility is not negotiable. Large type, few words, high contrast, generous margins. Simplify the graphic rather than shrink the type.
+
+  Restraint holds: about 3 to 5 camera-emphasis beats, about 2 to 4 meaningful B-roll moments, about 4 to 7 restrained sound accents for the whole video. A framework sequence is one visual event, not one event per frame.
+
+  A graphic may clarify, organize, compare, visualize, sequence or reinforce. It may never introduce a framework, a claim, a figure or a lesson the September 13 script does not already teach.
+
+------------------------------------------------------------------------------
+
+PALETTE
+
+  Deep navy #112345 carries authority and is the usual ground.
+  Warm cream is breathing room and the light ground where legibility needs it.
+  Muted gold marks the ACTIVE idea only: the selected item, the number, the
+  underline, the one distinction that matters. Never decoration.
+  Do not introduce another color system.
+
+------------------------------------------------------------------------------
+
+EVERY GRAPHIC IN THIS VIDEO, AND WHAT IT IS
+
+  Each of these is a true full-screen frame. The PNG is supplied in
+  03_Visuals. Build the reveal as described rather than showing the
+  finished card all at once.
+
+  1. FULL-SCREEN COMPARISON
+     file:   v14_01_same_words_different_work.png
+     cue:    All three appeared to ask for the same thing:
+     job:    The whole argument in one frame. The words are shared. The consequence underneath them is not.
+     reveal: Three industry headings together. Hold. MANAGE RISK appears beneath all three. Hold long. Then the three consequence lines appear one at a time, left to right.
+             Two large sides, full screen. Short label on each side, then the short content under it.
+             Reveal the left side first and let it sit. Reveal the right side only when Temidayo reaches it. Do not present both at once.
+             Gold marks the distinction that matters, on one side only. Everything else stays navy on cream or cream on navy.
+             No camera behind the graphic. This is a true full-screen frame.
+     hold:   Hold the shared line for at least 2 seconds alone. Give each consequence line about 2 seconds. This frame can run long.
+     sound:  Strongest candidate in the video. One soft tick as MANAGE RISK lands, and optionally one as the third consequence appears.
+     after:  Stay on the frame through the consequence list, then return to camera.
+
+  2. FULL-SCREEN ARTIFACT
+     file:   v14_02_research_base.png
+     cue:    So I went through 28 senior project and program delivery job descriptions across those three industries to answer a question experienced professionals often get wrong in both directions:
+     job:    State the sample plainly and let the viewer read it. Deliberately not a research table.
+     reveal: 28 first, alone. Then the unit line. Then the three rows together. Then the date line.
+             The artifact is the frame. Give it roughly two thirds of the screen at a size that reads on a phone, with a short explainer panel beside it.
+             Place numbered markers on the artifact, all visible but subdued to begin with, so the viewer can see how many there are.
+             Then walk them: highlight marker one in gold, neutralize the rest, and show only that marker's line in the panel. Advance as Temidayo reaches each one.
+             Never show every explanatory line at once. The panel holds one idea.
+             If the real artifact is too dense to read on a phone, simplify the artifact. Do not shrink the type.
+     hold:   Hold at least 3 seconds after the date line appears. This is the frame viewers will pause on.
+     sound:  Candidate: one soft tick as 28 lands. Nothing on the breakdown rows.
+     after:  Return to camera on the next spoken line.
+
+  3. FULL-SCREEN COMPARISON
+     file:   v14_03_two_question_test.png
+     cue:    For any requirement that looked similar across industries, I asked two questions:
+     job:    The method of the whole video, given at full size so it can be photographed.
+     reveal: First question with its rule. Hold. Second question with its rule. Hold. Then the interpretation line.
+             Two large sides, full screen. Short label on each side, then the short content under it.
+             Reveal the left side first and let it sit. Reveal the right side only when Temidayo reaches it. Do not present both at once.
+             Gold marks the distinction that matters, on one side only. Everything else stays navy on cream or cream on navy.
+             No camera behind the graphic. This is a true full-screen frame.
+     hold:   At least 2 seconds per question, then 3 seconds on the complete frame.
+     sound:  Candidate: one light tap as the second question lands.
+     after:  Return to camera on the next spoken line.
+
+  4. FULL-SCREEN SEQUENCE
+     file:   v14_04_what_travels.png
+     cue:    So what did travel across the sample?
+     job:    Name the shared spine so the viewer can claim it specifically rather than saying transferable skills.
+     reveal: One item at a time, in the order spoken. Each stays on screen.
+             Establish the complete structure first, all items visible but even in weight, so the viewer sees the shape.
+             Then activate ONE item at a time as Temidayo explains it: that item comes up in gold, the others sit back in a dimmer neutral. Do not emphasize all of them at once.
+             Return to the complete structure, evenly weighted, only after the last item.
+             One sound accent at most across the whole sequence, not one per item.
+     hold:   About 2 seconds per item as it is named. Hold the complete list 3 seconds before leaving.
+     sound:  Candidate, but the video has stronger moments. If used, one tick on the first item only, never one per item.
+     after:  Return to camera on the next spoken line.
+
+  5. FULL-SCREEN COMPARISON
+     file:   v14_05_same_word_different_decision.png
+     cue:    “Governance” sounded useful in another setting until one posting meant an auditable control environment and another meant an executive decision cadence.
+     job:    One example at a time, as the master instructs. Governance is the clearest single-frame version.
+     reveal: The word alone. Hold. Then the left reading. Then the right reading.
+             Two large sides, full screen. Short label on each side, then the short content under it.
+             Reveal the left side first and let it sit. Reveal the right side only when Temidayo reaches it. Do not present both at once.
+             Gold marks the distinction that matters, on one side only. Everything else stays navy on cream or cream on navy.
+             No camera behind the graphic. This is a true full-screen frame.
+     hold:   2 seconds on the word, then about 2 seconds per side.
+     sound:  Candidate: one tick as the second reading replaces the emphasis.
+     after:  Return to camera on the next spoken line.
+
+  6. FULL-SCREEN SEQUENCE
+     file:   v14_06_four_bucket_audit.png
+     cue:    Then sort the answer into four buckets.
+     job:    The framework the viewer takes away. The most photographed frame in the video.
+     reveal: One bucket at a time, in the spoken order, each with its line.
+             Establish the complete structure first, all items visible but even in weight, so the viewer sees the shape.
+             Then activate ONE item at a time as Temidayo explains it: that item comes up in gold, the others sit back in a dimmer neutral. Do not emphasize all of them at once.
+             Return to the complete structure, evenly weighted, only after the last item.
+             One sound accent at most across the whole sequence, not one per item.
+     hold:   About 2 to 3 seconds per bucket, then 4 seconds on the complete grid.
+     sound:  Candidate: one tick on the first bucket. Do not tick all four.
+     after:  Return to camera on the next spoken line.
+
+  7. FULL-SCREEN COMPARISON
+     file:   v14_07_employers_disagree.png
+     cue:    One of the most useful findings was that employers themselves disagreed.
+     job:    Stop the viewer generalizing in either direction.
+     reveal: Left side. Hold. Right side. Hold. Then the foot line.
+             Two large sides, full screen. Short label on each side, then the short content under it.
+             Reveal the left side first and let it sit. Reveal the right side only when Temidayo reaches it. Do not present both at once.
+             Gold marks the distinction that matters, on one side only. Everything else stays navy on cream or cream on navy.
+             No camera behind the graphic. This is a true full-screen frame.
+     hold:   About 3 seconds per side. The right side needs the longer read.
+     sound:  Not a candidate. Let this one land in silence.
+     after:  Return to camera on the next spoken line.
+
+  8. FULL-SCREEN COMPARISON
+     file:   v14_08_research_boundary.png
+     cue:    This research does not prove that two roles are the same.
+     job:    The limitation, at full size, in the video rather than only in the notes.
+     reveal: Headline, then the support line.
+             Two large sides, full screen. Short label on each side, then the short content under it.
+             Reveal the left side first and let it sit. Reveal the right side only when Temidayo reaches it. Do not present both at once.
+             Gold marks the distinction that matters, on one side only. Everything else stays navy on cream or cream on navy.
+             No camera behind the graphic. This is a true full-screen frame.
+     hold:   At least 4 seconds. This frame is the honesty of the whole video and should not be rushed.
+     sound:  Not a candidate. Silence is the correct treatment here.
+     after:  Return to camera on the next spoken line.
+
+  9. FULL-SCREEN CTA
+     file:   v14_09_cta.png
+     cue:    If you do one thing after this video, do not start with the title.
+     job:    The single spoken action. This master names no resource, so none is shown.
+     reveal: Headline, support, then the question line.
+             Full screen, and simpler than the teaching graphics. The action is the only thing competing for attention.
+             Resource name and route appear only where the script speaks them.
+     hold:   At least 4 seconds.
+     sound:  Candidate: one clean transition sound as the card enters.
+     after:  Stay on the card through the close, then move to Watch Next.
+
+  10. FULL-SCREEN WATCH NEXT
+     file:   v14_10_watch_next.png
+     cue:    Watch “The Career Gaps You Don’t See Until the Work Gets Harder” next.
+     job:    The final visual.
+     reveal: Label, rule, title, then the video number.
+             Full screen and final. Label, rule, destination title, video number.
+             Keep the copy to the left so an end screen can sit on the right.
+             Never return to camera after this frame. Nothing follows it.
+     hold:   Hold to the end of the video. Copy stays left so a YouTube end screen can sit on the right.
+     sound:  Candidate: one restrained transition sound on entry, then let the music fade.
+     after:  NO RETURN TO CAMERA. Watch Next is final.
+
+------------------------------------------------------------------------------
+
+WHERE TO STAY ON CAMERA
+
+  These stretches carry no graphic. They are the video.
+
+  about  36 words, opening: In one role, getting it wrong could mean a project slips. In
+  about  61 words, opening: When I compared these postings, I kept seeing the same words
+  about 104 words, opening: The answer was mixed. There was a real shared spine across t
+  about 135 words, opening: Second, influence without direct authority. The industries c
+  about 106 words, opening: Now the harder category. Some things look transferable becau
+  about  99 words, opening: The research also showed a large category of knowledge that 
+  about  96 words, opening: Then there is the category that cannot be solved by reading 
+  about  57 words, opening: That matters because transferability is not only a property 
+  about  66 words, opening: The postings tell us what these employers chose to write dow
+  about  41 words, opening: Here is how I would use this if you are considering a move. 
+  about  43 words, opening: That is a much harder exercise than writing a transferable-s
+  about  12 words, opening: What travels is not the word. It is the judgment underneath 
+
+------------------------------------------------------------------------------
+
+CAMERA MOVEMENT
+
+  About 3 to 5 deliberate camera-emphasis beats for the ENTIRE video. One
+  combined budget, not per section.
+  Gentle push-ins, an occasional pull-back, and a return to base framing.
+  Do not pulse, do not zoom every sentence, and do not make the story
+  scenes hyperactive. The story-led script needs room to breathe.
+
+------------------------------------------------------------------------------
+
+B-ROLL
+
+  About 2 to 4 meaningful full-screen B-roll moments where useful. Not a
+  quota. Substantive B-roll is TRUE FULL SCREEN.
+  Do not cut to B-roll simply because a story is being told.
+  No generic offices, handshakes, fake meetings, random typing, AI-looking
+  people, or stock footage that competes with Temidayo's delivery.
+  If the scene is stronger with Temidayo speaking, stay on her.
+
+------------------------------------------------------------------------------
+
+SOUND
+
+  About 4 to 7 restrained audio accents for the ENTIRE video, including the
+  visual Subscribe cue. Candidates are not cumulative.
+  A soft click, a tick, a restrained whoosh, a light tap, a clean transition.
+  Do NOT add a click to every bullet or a sound to every cut. Voice stays
+  dominant. Stillness is allowed when the viewer needs to read or think.
+
+------------------------------------------------------------------------------
+
+SUBSCRIBE
+
+  One brief visual Subscribe cue after meaningful value, about 1 to 3 seconds
+  including entrance and exit. Premium and restrained. There is no spoken
+  Subscribe request anywhere in this script and none is to be added.
+
+------------------------------------------------------------------------------
+
+CAPTIONS
+
+  NO BURNED-IN OR OPEN CAPTIONS ANYWHERE IN THIS LONG-FORM VIDEO.
+  Deliver a clean final video, a complete transcript, and an SRT generated
+  against the FINAL edited timeline, not against the script.
+  Proofread names, frameworks, URLs and industry terminology in the SRT.
+  Text inside a graphic is instructional design. It is not captioning.
+
+------------------------------------------------------------------------------
+
+CTA AND WATCH NEXT
+
+  The CTA card is full screen and simpler than the teaching graphics.
+  Watch Next is TRUE FULL SCREEN and FINAL. Nothing appears after it and
+  there is NO RETURN TO CAMERA afterward. No black tail, no dead footage.
+
+------------------------------------------------------------------------------
+
+WHAT NOT TO DO
+
+  Do not add a framework, a claim, a figure or a lesson that the script does
+  not already teach, however good the graphic would look.
+  Do not add employer logos, fake screenshots, fake names, fake quotes or
+  real-company visuals to a constructed example. Where the script says
+  imagine, or maybe, or here is what this can look like, it is an illustration
+  and must not be dressed as a real record.
+  Do not re-cut the spoken script. If something does not work, raise it.
+
+------------------------------------------------------------------------------
+
+EXPORT
+
+  Horizontal 16:9, minimum 1920 by 1080. Natural skin tone. Subtle music
+  under a dominant voice. Intentional jump cuts and false-start cleanup.
+  Clean ending with no black tail and no dead footage.

@@ -1,0 +1,166 @@
+{
+  "video": 7,
+  "title": "It Took Me Years to Stop Mistaking More Work for Career Growth",
+  "thumbnail": "MORE WORK ≠ GROWTH",
+  "generated": "Sunday, September 13, 2026 | 2:34 PM CT",
+  "spoken_source_of_truth": {
+    "script": "Video_7_FINAL_Story_Led_Conversational_Recording_Script.docx",
+    "script_sha256": "10d5e872df12e51665113895a9a56cb674b0763eee705818361fdc19589f7c2a",
+    "thought_block": "Video_7_Thought_Block_Recording_Copy_Story_Led.docx",
+    "thought_block_sha256": "9659c54a3caa9d6dc7ef4302b4665ffe374773d341a23220455bd351732c1625",
+    "note": "Both copied unchanged into 01_Recording_Master and never written to. They override the pre-story-led package."
+  },
+  "pre_story_led_baseline": {
+    "archive": "Videos_4-21_CORRECTED_RUNTIME_Production_Packages.zip",
+    "sha256": "7dbf2d56add4a91fd50f4f1f75c15908ec996a5932d70128bf7db190f8e0dfcb",
+    "status": "Preserved and auditable. Not modified, not overwritten, and no longer the active production handoff."
+  },
+  "runtime": {
+    "class": "REGULAR LONG-FORM",
+    "spoken_words": 1345,
+    "estimated_speech": "9:16 to 10:20 at 130 to 145 words per minute",
+    "note": "Arithmetic on the script. Not a runtime and not a target. The actual length is observed at Temidayo's natural pace."
+  },
+  "assets": [
+    {
+      "file": "v7_01_valuable_to_them_not_to_you.png",
+      "status": "REUSE",
+      "treatment": "STATEMENT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "You can become more valuable to your organization without becoming more valuable to your own future."
+    },
+    {
+      "file": "v7_02_car.png",
+      "status": "REUSE",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "I use three tests now: Complexity, Authority, Return. CAR."
+    },
+    {
+      "file": "v7_03_dependable_people.png",
+      "status": "COPY UPDATE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged. The story-led script rewords the sentence it lands on, so only the cue moved.",
+      "cue": "Reliability attracts work quickly. Authority, support, recognition, and official scope often arrive later, if they arrive at all."
+    },
+    {
+      "file": "v7_04_complexity.png",
+      "status": "COPY UPDATE",
+      "treatment": "COMPARISON",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged. The story-led script rewords the sentence it lands on, so only the cue moved.",
+      "cue": "Complexity changes when the variables change: a new customer, a new regulation, a different operating model, conflicting priorities, incomplete instructions, stakeholders whose goals do not line up."
+    },
+    {
+      "file": "v7_05_authority.png",
+      "status": "REUSE",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Responsibility is what you are expected to carry. Accountability is what you will answer for. Authority is what you can influence or decide. Those three do not always expand together."
+    },
+    {
+      "file": "v7_06_return.png",
+      "status": "REUSE",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "I look in three places: capability, evidence, and recognition."
+    },
+    {
+      "file": "v7_07_read_the_car_pattern.png",
+      "status": "REUSE",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "If volume increased but Complexity, Authority, and Return did not, the role has expanded mainly as workload."
+    },
+    {
+      "file": "v7_07_review_point.png",
+      "status": "COPY UPDATE",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged. The story-led script rewords the sentence it lands on, so only the cue moved.",
+      "cue": "Before the next 'Can you take this too?', ask: what becomes more complex? What authority comes with it? When will we review what this additional scope returns?"
+    },
+    {
+      "file": "v7_08_scope_conversation.png",
+      "status": "REUSE",
+      "treatment": "SEQUENCE",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "Then take four questions into the conversation with your manager: Which of these responsibilities should remain with me?"
+    },
+    {
+      "file": "v7_08_more_work_is_not_proof.png",
+      "status": "REUSE",
+      "treatment": "STATEMENT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "More work can be part of growth. It is not proof of it."
+    },
+    {
+      "file": "v7_09_cta.png",
+      "status": "REUSE",
+      "treatment": "CTA",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "If you want a structured way to examine what your current work is actually building in you, the Capability Formation Field Kit helps you read the evidence in your role, see where your options may be expanding or narrowing, and identify where the role may need a boundary or redesign. It is linked below."
+    },
+    {
+      "file": "v7_10_watch_next.png",
+      "status": "REUSE",
+      "treatment": "WATCH NEXT",
+      "mode": "FULL SCREEN",
+      "why": "The card is unchanged and its trigger sentence still exists word for word in the story-led script.",
+      "cue": "In the next video, I will show you how to make that work visible: 'How to Show Your Impact at Work When You Built It From Scratch.'"
+    }
+  ],
+  "assets_removed": [],
+  "asset_classification": {
+    "REUSE": 9,
+    "COPY UPDATE": 3
+  },
+  "shorts": [
+    {
+      "slug": "v7_a1_valuable_to_them",
+      "state": "REUSE",
+      "support": 1.0
+    },
+    {
+      "slug": "v7_a2_complexity",
+      "state": "REUSE",
+      "support": 0.94
+    },
+    {
+      "slug": "v7_a3_authority",
+      "state": "REUSE",
+      "support": 1.0
+    },
+    {
+      "slug": "v7_a4_review_point",
+      "state": "REUSE",
+      "support": 0.96
+    },
+    {
+      "slug": "v7_b1_dependable_people",
+      "state": "REUSE",
+      "support": 0.98
+    },
+    {
+      "slug": "v7_b2_praise_is_not_role_design",
+      "state": "REUSE",
+      "support": 1.0
+    }
+  ],
+  "not_verified": [
+    "Nothing here has been recorded, edited or exported.",
+    "Runtime figures are arithmetic, not measured.",
+    "No thumbnail artwork exists or is approved.",
+    "No chapters, SRT or music attribution exists.",
+    "No public link has been checked."
+  ]
+}

@@ -1,0 +1,41 @@
+==============================================================================
+VIDEO 11  |  SHORTS AUDIT AGAINST THE STORY-LED SCRIPT
+==============================================================================
+
+AI Can Do the Task. What Are You Still Paid For?
+
+A Short is a standalone idea. It is not rebuilt because the long-form
+reworded a supporting sentence. It is changed when the framework it rests
+on is gone, or its hook no longer matches the story-led approach.
+
+------------------------------------------------------------------------------
+
+  v11_a1_can_we_reduce_the_team      REUSE
+      priority A, V11 hook.
+      support against the story-led script: 1.00
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v11_a2_the_mix_changed             REUSE
+      priority A, V11 demonstration.
+      support against the story-led script: 1.00
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v11_a3_produce_interpret_decide    REUSE
+      priority A, V11 map your role.
+      support against the story-led script: 0.95
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v11_a4_output_is_not_a_decision    REUSE
+      priority A, V11 decide.
+      support against the story-led script: 1.00
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v11_b1_the_boundary                REUSE
+      priority B, V11 interpret.
+      support against the story-led script: 1.00
+      The story-led script still carries this Short's language. Nothing to change.
+
+  v11_b2_no_ai_proof_job             REUSE
+      priority B, V11 map your role.
+      support against the story-led script: 1.00
+      The story-led script still carries this Short's language. Nothing to change.
