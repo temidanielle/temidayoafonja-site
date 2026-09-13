@@ -1,0 +1,177 @@
+==============================================================================
+VIDEO 22  |  ASSET INDEX
+==============================================================================
+
+How to Decode a Job Description
+
+20 cards, 41 image states, plus 2 Watch Next candidate cards.
+PNG is 1920 x 1080. An SVG is provided where a designer may need
+to re-time or recolor the card; its text is live and the brand
+faces are embedded.
+
+------------------------------------------------------------------------------
+
+V22_FS_01_TITLE_ONLY
+    PURPOSE:    Let the title sit alone long enough for the viewer to form an assumption about the level and the pay before anything contradicts it.
+    MODE:       FULL SCREEN
+    TREATMENT:  ARTIFACT
+    V22_FS_01_TITLE_ONLY.png                   V22_FS_01_TITLE_ONLY.png
+    SOURCE:     A1. HCSC, requisition R0055598.
+
+V22_FS_02_THE_CONTRADICTION
+    PURPOSE:    Break the assumption the title created, in two beats rather than one.
+    MODE:       FULL SCREEN
+    TREATMENT:  ARTIFACT
+    V22_FS_02A_FLOOR.png                       V22_FS_02A_FLOOR.png
+    V22_FS_02B_FEEDBACK.png                    V22_FS_02B_FEEDBACK.png
+    SOURCE:     A1. Preserved text, capture packet.
+
+V22_FS_03_THE_SAMPLE
+    PURPOSE:    Put the denominator on screen the moment it is spoken, so every later claim is read against it.
+    MODE:       FULL SCREEN
+    TREATMENT:  STATEMENT
+    V22_FS_03_THE_SAMPLE.png                   V22_FS_03_THE_SAMPLE.png
+
+V22_FS_04_THREE_QUESTIONS
+    PURPOSE:    Three questions the viewer will carry through the whole video, arriving one at a time so none of them is skimmed.
+    MODE:       FULL SCREEN
+    TREATMENT:  SEQUENCE
+    V22_FS_04A_COULD_I_DO_IT.png               V22_FS_04A_COULD_I_DO_IT.png
+    V22_FS_04B_CAN_I_PROVE_IT.png              V22_FS_04B_CAN_I_PROVE_IT.png
+    V22_FS_04C_DO_I_MEET_THE_GATES.png         V22_FS_04C_DO_I_MEET_THE_GATES.png
+
+V22_FS_05_PARP
+    PURPOSE:    Establish the whole method once, then teach one component at a time so four ideas never compete while one is being explained.
+    MODE:       FULL SCREEN
+    TREATMENT:  SEQUENCE
+    V22_FS_05_PARP_FRAMEWORK.png               V22_FS_05_PARP_FRAMEWORK.png, V22_FS_05_PARP_FRAMEWORK.svg
+    V22_FS_05A_PROBLEM.png                     V22_FS_05A_PROBLEM.png
+    V22_FS_05B_AUTHORITY.png                   V22_FS_05B_AUTHORITY.png
+    V22_FS_05C_PROOF.png                       V22_FS_05C_PROOF.png
+    V22_FS_05D_REAL_GAP.png                    V22_FS_05D_REAL_GAP.png
+
+V22_FS_06_HCSC_WALKTHROUGH
+    PURPOSE:    Run the method across one real posting, with the artifact large enough to read on a phone and only the point being taught explained beside it.
+    MODE:       FULL SCREEN
+    TREATMENT:  ARTIFACT
+    V22_FS_06A_PROBLEM.png                     V22_FS_06A_PROBLEM.png, V22_FS_06A_PROBLEM.svg
+    V22_FS_06B_AUTHORITY.png                   V22_FS_06B_AUTHORITY.png
+    V22_FS_06C_PROOF.png                       V22_FS_06C_PROOF.png
+    V22_FS_06D_REAL_GAP.png                    V22_FS_06D_REAL_GAP.png
+    SOURCE:     A1. Preserved text, capture packet.
+
+V22_FS_07_TITLE_VS_FILE
+    PURPOSE:    Land the first example as three facts the viewer can hold at once.
+    MODE:       FULL SCREEN
+    TREATMENT:  ARTIFACT
+    V22_FS_07_TITLE_VS_FILE.png                V22_FS_07_TITLE_VS_FILE.png
+    SOURCE:     A1.
+
+V22_FS_08_RULE01_VERB_BEFORE_TITLE
+    PURPOSE:    Fix the first rule in the viewer's memory in the words the script uses.
+    MODE:       FULL SCREEN
+    TREATMENT:  STATEMENT
+    V22_FS_08_RULE01_VERB_BEFORE_TITLE.png     V22_FS_08_RULE01_VERB_BEFORE_TITLE.png
+
+V22_FS_09_PREDEFINED_DECISIONS
+    PURPOSE:    Show that the same employer writes a quarter-million-dollar role in execution language, without mocking the role.
+    MODE:       FULL SCREEN
+    TREATMENT:  ARTIFACT
+    V22_FS_09A_SAME_COMPANY.png                V22_FS_09A_SAME_COMPANY.png
+    V22_FS_09B_PREDEFINED.png                  V22_FS_09B_PREDEFINED.png
+    SOURCE:     A2. Claim limit: the posting establishes predefined decisions. It does not establish who created them, and nothing on screen says otherwise.
+
+V22_FS_10_DIRECTOR_COMPARE
+    PURPOSE:    Two roles that share a title word, read side by side so the difference is visible rather than asserted.
+    MODE:       FULL SCREEN
+    TREATMENT:  COMPARISON
+    V22_FS_10A_SAME_WORD.png                   V22_FS_10A_SAME_WORD.png, V22_FS_10A_SAME_WORD.svg
+    V22_FS_10B_SCOPE.png                       V22_FS_10B_SCOPE.png
+    V22_FS_10C_FLOORS.png                      V22_FS_10C_FLOORS.png
+    SOURCE:     A3 and A4.
+
+V22_FS_11_DIRECTOR_BOUNDARY
+    PURPOSE:    State the limit of the comparison on screen, immediately after the money, so the number cannot be carried away on its own.
+    MODE:       FULL SCREEN
+    TREATMENT:  STATEMENT
+    V22_FS_11_DIRECTOR_BOUNDARY.png            V22_FS_11_DIRECTOR_BOUNDARY.png
+
+V22_FS_12_DIRECTOR_LESSON
+    PURPOSE:    The lesson of the pair, in four words.
+    MODE:       FULL SCREEN
+    TREATMENT:  STATEMENT
+    V22_FS_12_DIRECTOR_LESSON.png              V22_FS_12_DIRECTOR_LESSON.png
+
+V22_FS_13_ACRONYM_WALL
+    PURPOSE:    Let the unfamiliar title and the density of the language register before the reversal lands.
+    MODE:       FULL SCREEN
+    TREATMENT:  ARTIFACT
+    V22_FS_13A_UNFAMILIAR_TITLE.png            V22_FS_13A_UNFAMILIAR_TITLE.png
+    V22_FS_13B_ACRONYM_WALL.png                V22_FS_13B_ACRONYM_WALL.png
+    SOURCE:     A5. Acronyms shown as captured.
+
+V22_FS_14_AUTHORITY_POSTURES
+    PURPOSE:    Four authority postures in one document, arriving one at a time so none of them is read as the whole role.
+    MODE:       FULL SCREEN
+    TREATMENT:  SEQUENCE
+    V22_FS_14_AUTHORITY_POSTURES.png           V22_FS_14_AUTHORITY_POSTURES.png, V22_FS_14_AUTHORITY_POSTURES.svg
+    V22_FS_14A_EXECUTES.png                    V22_FS_14A_EXECUTES.png
+    V22_FS_14B_LEADS.png                       V22_FS_14B_LEADS.png
+    V22_FS_14C_ADVISES.png                     V22_FS_14C_ADVISES.png
+    V22_FS_14D_ACROSS_TEAMS.png                V22_FS_14D_ACROSS_TEAMS.png
+    SOURCE:     A5. Preserved text.
+
+V22_FS_15_CEILING
+    PURPOSE:    Hold the salary reveal to the end of the beat, and keep the sample boundary attached to the claim.
+    MODE:       FULL SCREEN
+    TREATMENT:  STATEMENT
+    V22_FS_15A_RANGE.png                       V22_FS_15A_RANGE.png
+    V22_FS_15B_IN_THIS_SAMPLE.png              V22_FS_15B_IN_THIS_SAMPLE.png
+    SOURCE:     A5. Claim is bounded to the fifteen-posting sample.
+
+V22_FS_16_RULE02_READ_DONT_SKIP
+    PURPOSE:    The second rule, paired visually with the first.
+    MODE:       FULL SCREEN
+    TREATMENT:  STATEMENT
+    V22_FS_16_RULE02_READ_DONT_SKIP.png        V22_FS_16_RULE02_READ_DONT_SKIP.png
+
+V22_FS_17_REAL_GAP
+    PURPOSE:    Show that a real gap is not always a credential, using the one posting that said so outright.
+    MODE:       FULL SCREEN
+    TREATMENT:  COMPARISON
+    V22_FS_17A_GEOGRAPHIC.png                  V22_FS_17A_GEOGRAPHIC.png
+    V22_FS_17B_TIME_ZONE.png                   V22_FS_17B_TIME_ZONE.png
+    SOURCE:     A6. GiveDirectly, named on camera, past tense as spoken. The 7 or 8 a.m. figure is locality-dependent and carries the Central Time qualifier.
+
+V22_FS_18_WHAT_IT_WILL_NOT_DO
+    PURPOSE:    Put the limits of the method on screen in the same weight as the method itself.
+    MODE:       FULL SCREEN
+    TREATMENT:  STATEMENT
+    V22_FS_18_WHAT_IT_WILL_NOT_DO.png          V22_FS_18_WHAT_IT_WILL_NOT_DO.png
+
+V22_FS_19_FOUR_THINGS
+    PURPOSE:    Close on the recurring audit this channel returns to, in the script's own four phrases.
+    MODE:       FULL SCREEN
+    TREATMENT:  SEQUENCE
+    V22_FS_19_FOUR_THINGS.png                  V22_FS_19_FOUR_THINGS.png, V22_FS_19_FOUR_THINGS.svg
+
+V22_FS_20_CTA
+    PURPOSE:    One ask. No product, no second offer.
+    MODE:       FULL SCREEN
+    TREATMENT:  CTA
+    V22_FS_20A_RUN_THE_FOUR.png                V22_FS_20A_RUN_THE_FOUR.png
+    V22_FS_20B_FIND_THE_VERB.png               V22_FS_20B_FIND_THE_VERB.png
+
+V22_WN_01_V14
+    PURPOSE:    Watch Next candidate. Full screen and final. Nothing returns to camera after it.
+    MODE:       FULL SCREEN
+    TREATMENT:  WATCH NEXT
+    V22_WN_01_V14.png                          V22_WN_01_V14.png
+    SOURCE:     Destination is Video 14 of the locked V4 to V21 set.
+
+V22_WN_02_V21
+    PURPOSE:    Watch Next candidate. Full screen and final. Nothing returns to camera after it.
+    MODE:       FULL SCREEN
+    TREATMENT:  WATCH NEXT
+    V22_WN_02_V21.png                          V22_WN_02_V21.png
+    SOURCE:     Destination is Video 21 of the locked V4 to V21 set.

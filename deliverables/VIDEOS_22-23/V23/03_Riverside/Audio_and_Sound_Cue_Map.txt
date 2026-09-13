@@ -1,0 +1,67 @@
+==============================================================================
+VIDEO 23  |  AUDIO AND SOUND CUE MAP
+==============================================================================
+
+Turn One Accomplishment Into Career Proof
+
+Four to seven restrained accents across the video. Not every
+reveal gets one, and nothing is scored to keep energy up.
+
+------------------------------------------------------------------------------
+
+V23_FS_01_CLAIM
+    One accent as it lands.
+
+V23_FS_02_UNANSWERED
+    One quiet accent per question.
+
+V23_FS_03_FOUR_LINE_PROOF
+    One accent on establish. None on the activations.
+
+V23_FS_04_CLAIM_VS_PROOF
+    One accent.
+
+V23_FS_05_WHY_THE_ROLE_EXISTS
+    One accent.
+
+V23_FS_06_KINDS_OF_AUTHORITY
+    One accent.
+
+V23_FS_07_EXECUTION_CONTAINS_CHOICES
+    One accent.
+
+V23_FS_08_AUTHORITY_BOUNDARY
+    One accent.
+
+V23_FS_09_JUDGMENT_IS_NOT_ONLY_ANALYSIS
+    One accent.
+
+V23_FS_11_NINE_OF_FIFTEEN
+    One accent.
+
+V23_FS_12_TWO_HALVES
+    One accent on A, one on B.
+
+V23_FS_13_THE_PAYOFF
+    One restrained accent.
+
+V23_FS_14_SAME_COMPANY
+    One accent on B only.
+
+V23_FS_15_DIFFERENT_DOOR
+    One accent.
+
+V23_FS_17_CTA
+    One accent on A, one on B.
+
+------------------------------------------------------------------------------
+
+SILENT BY DESIGN
+
+  V23_FS_10_THE_CALL                           No accent. The beat should stay quiet.
+  V23_FS_16_REAL_GAP_REMAINS                   No accent.
+
+------------------------------------------------------------------------------
+
+  Music: no track is licensed or selected in this package.
+  Loudness, balance and picture quality are final-export QA.

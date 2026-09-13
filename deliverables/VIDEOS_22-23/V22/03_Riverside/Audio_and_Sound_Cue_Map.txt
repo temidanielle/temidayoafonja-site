@@ -1,0 +1,74 @@
+==============================================================================
+VIDEO 22  |  AUDIO AND SOUND CUE MAP
+==============================================================================
+
+How to Decode a Job Description
+
+Four to seven restrained accents across the video. Not every
+reveal gets one, and nothing is scored to keep energy up.
+
+------------------------------------------------------------------------------
+
+V22_FS_01_TITLE_ONLY
+    One restrained reveal accent as the card lands, then nothing.
+
+V22_FS_02_THE_CONTRADICTION
+    One accent on A. One quieter accent on B.
+
+V22_FS_03_THE_SAMPLE
+    One accent.
+
+V22_FS_04_THREE_QUESTIONS
+    One accent per reveal, quiet.
+
+V22_FS_05_PARP
+    One accent on establish. No accent on the activations.
+
+V22_FS_06_HCSC_WALKTHROUGH
+    One quiet accent per point.
+
+V22_FS_07_TITLE_VS_FILE
+    One accent.
+
+V22_FS_08_RULE01_VERB_BEFORE_TITLE
+    One restrained accent.
+
+V22_FS_09_PREDEFINED_DECISIONS
+    One accent on A. One on B.
+
+V22_FS_10_DIRECTOR_COMPARE
+    One accent on establish. One on the floors reveal. Nothing on B.
+
+V22_FS_12_DIRECTOR_LESSON
+    One accent.
+
+V22_FS_13_ACRONYM_WALL
+    One accent on B only.
+
+V22_FS_15_CEILING
+    One accent on A. One on B.
+
+V22_FS_16_RULE02_READ_DONT_SKIP
+    One restrained accent.
+
+V22_FS_17_REAL_GAP
+    One accent on each.
+
+V22_FS_19_FOUR_THINGS
+    One accent.
+
+V22_FS_20_CTA
+    One accent on A, one on B.
+
+------------------------------------------------------------------------------
+
+SILENT BY DESIGN
+
+  V22_FS_11_DIRECTOR_BOUNDARY                  No accent. The line should feel like a correction, not a reveal.
+  V22_FS_14_AUTHORITY_POSTURES                 No accents on the activations.
+  V22_FS_18_WHAT_IT_WILL_NOT_DO                No accent.
+
+------------------------------------------------------------------------------
+
+  Music: no track is licensed or selected in this package.
+  Loudness, balance and picture quality are final-export QA.

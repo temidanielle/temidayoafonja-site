@@ -1,0 +1,156 @@
+==============================================================================
+VIDEO 23  |  MOTION AND REVEAL MAP
+==============================================================================
+
+Turn One Accomplishment Into Career Proof
+
+Reveal order for every card that has more than one state, and the
+emphasis state of each. Because YouTube is not interactive, a
+numbered point is a reading order, never a button.
+
+------------------------------------------------------------------------------
+
+V23_FS_01_CLAIM
+    TRIGGER:    Led a cross-functional transformation that improved on-time delivery by eighteen percent.
+    LAYOUT:     Claim card. One sentence, nothing to interpret it.
+    TREATMENT:  ARTIFACT
+    1. V23_FS_01_CLAIM                          Single state.
+    HOLD:       Hold through the opening line and the three short sentences after it. Cut to camera on 'And it proves almost nothing.'
+
+V23_FS_02_UNANSWERED
+    TRIGGER:    Because a stranger reading it still cannot tell what you decided, what was hard about it, or where eighteen percent came from. Eighteen percent from what? Measured how? Compared to what?
+    LAYOUT:     Sequential reveal. Earlier questions stay but quiet.
+    TREATMENT:  SEQUENCE
+    1. V23_FS_02A_WHAT_DID_YOU_DECIDE           On 'what you decided'.
+    2. V23_FS_02B_FROM_WHAT                     On 'Eighteen percent from what?'
+    3. V23_FS_02C_MEASURED_HOW                  On 'Measured how?'
+    4. V23_FS_02D_COMPARED_TO_WHAT              On 'Compared to what?' All four readable together.
+    HOLD:       Build across the sentence. Cut to camera for 'You did the work. I believe you. The sentence does not.' That line is the strongest human moment in the video and must not be covered.
+
+V23_FS_03_FOUR_LINE_PROOF
+    TRIGGER:    Four lines can make that accomplishment much easier to judge. I want to show you the finished version first, then we will pull it apart.
+    LAYOUT:     Completed four-line proof, then one line active at a time.
+    TREATMENT:  SEQUENCE
+    1. V23_FS_03_FOUR_LINE_PROOF                Establish. All four lines complete and readable.
+    2. V23_FS_03A_PROBLEM_BEFORE                Activate line 1.
+    3. V23_FS_03B_MINE_TO_DECIDE                Activate line 2.
+    4. V23_FS_03C_JUDGMENT                      Activate line 3.
+    5. V23_FS_03D_PROOF_AND_HOW                 Activate line 4.
+    HOLD:       Establish on 'I want to show you the finished version first.' Then one activation per spoken line. Do not cut to camera between them.
+
+V23_FS_04_CLAIM_VS_PROOF
+    TRIGGER:    Same accomplishment. One is a claim. The other one a stranger can question, test, and understand.
+    LAYOUT:     Side-by-side contrast.
+    TREATMENT:  COMPARISON
+    1. V23_FS_04_CLAIM_VS_PROOF                 Single state.
+    HOLD:       Hold through the sentence, then return to camera.
+
+V23_FS_05_WHY_THE_ROLE_EXISTS
+    TRIGGER:    Every one of the fifteen job descriptions I studied for this was written around something the organization could not do. That is why the role exists.
+    LAYOUT:     One figure with its own limit underneath.
+    TREATMENT:  STATEMENT
+    1. V23_FS_05_WHY_THE_ROLE_EXISTS            Single state.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+V23_FS_06_KINDS_OF_AUTHORITY
+    TRIGGER:    I use that wording on purpose because employers use it too. In the postings I read, they separate people who govern, negotiate, co-own, recommend, influence, support, and execute. Those are different kinds of authority, and one role can contain more than one.
+    LAYOUT:     One row of the words the postings actually separate.
+    TREATMENT:  SEQUENCE
+    1. V23_FS_06_KINDS_OF_AUTHORITY             Single state.
+    HOLD:       Hold through the sentence that lists them, then cut back.
+
+V23_FS_07_EXECUTION_CONTAINS_CHOICES
+    TRIGGER:    What did you sequence? What did you escalate? What evidence did you challenge?
+    LAYOUT:     Three short questions, all visible.
+    TREATMENT:  SEQUENCE
+    1. V23_FS_07_EXECUTION_CONTAINS_CHOICES     Single state.
+    HOLD:       Hold through the three questions, then cut to camera for the line about not owning the whole program.
+
+V23_FS_08_AUTHORITY_BOUNDARY
+    TRIGGER:    Those choices are not the same as owning the whole program. But they are still yours. Name one.
+    LAYOUT:     Side-by-side, using the example already on screen.
+    TREATMENT:  COMPARISON
+    1. V23_FS_08_AUTHORITY_BOUNDARY             Single state.
+    HOLD:       Cut on 'Those choices are not the same as owning the whole program.' Hold through 'Name one.'
+
+V23_FS_09_JUDGMENT_IS_NOT_ONLY_ANALYSIS
+    TRIGGER:    Judgment can include analysis, but it is not only spreadsheets and tradeoff matrices. In the postings I read, judgment also showed up as negotiating, sequencing, knowing what to escalate, getting a stakeholder to agree, or committing to an interpretation when the information was not perfectly clear.
+    LAYOUT:     Five short forms, all visible, with the sample named on the card.
+    TREATMENT:  SEQUENCE
+    1. V23_FS_09_JUDGMENT_IS_NOT_ONLY_ANALYSIS  Single state.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+V23_FS_10_THE_CALL
+    TRIGGER:    In the depot example, running the numbers was not the distinctive part. The judgment was reading the situation and deciding that a temporary dip in the reported numbers could cost the program its sponsor before the fix had time to work.
+    LAYOUT:     Two sides of one decision. No figures.
+    TREATMENT:  COMPARISON
+    1. V23_FS_10_THE_CALL                       Single state.
+    HOLD:       Cut only after the scene has played on camera. Hold through 'They had a reason. They could have been wrong.'
+
+V23_FS_11_NINE_OF_FIFTEEN
+    TRIGGER:    Nine of the fifteen job descriptions I studied did not ask for a result by itself. They asked for the mechanism with it: business cases with benefit tracking, cost-benefit analysis, defined KPIs, metrics used to drive decisions, value realization.
+    LAYOUT:     One figure with the denominator in the label, never implied.
+    TREATMENT:  STATEMENT
+    1. V23_FS_11_NINE_OF_FIFTEEN                Single state.
+    HOLD:       Hold through the list of mechanisms.
+
+V23_FS_12_TWO_HALVES
+    TRIGGER:    So proof has two halves: what changed, and how anyone knows it changed.
+    LAYOUT:     Two-part card, filled with the example on the second state.
+    TREATMENT:  COMPARISON
+    1. V23_FS_12A_TWO_HALVES                    The two halves, empty of example.
+    2. V23_FS_12B_FILLED                        Fill both halves from the example.
+    HOLD:       A on 'proof has two halves'. B on the sentence that fills them.
+
+V23_FS_13_THE_PAYOFF
+    TRIGGER:    This is the part I want you to remember: good proof does not make your role sound bigger than it was. It makes what you actually carried easier to judge.
+    LAYOUT:     Statement.
+    TREATMENT:  STATEMENT
+    1. V23_FS_13_THE_PAYOFF                     Single state.
+    HOLD:       Cut on 'This is the part I want you to remember.' Hold through both sentences. Do not cut away early.
+
+V23_FS_14_SAME_COMPANY
+    TRIGGER:    I read two job descriptions from the same company, at the same level, written in almost identical language. Both wanted someone who could make tradeoffs in an ambiguous environment.
+    LAYOUT:     Side-by-side, anonymized, with the divergence revealed second.
+    TREATMENT:  COMPARISON
+    1. V23_FS_14A_NEAR_IDENTICAL                Establish the overlap only.
+    2. V23_FS_14B_DIFFERENT_DOOR                Reveal the requirement that actually differs.
+    HOLD:       A on the sentence about reading two descriptions. B on the sentence that names the two requirements.
+
+V23_FS_15_DIFFERENT_DOOR
+    TRIGGER:    Same sentence near the top. Different door.
+    LAYOUT:     Statement.
+    TREATMENT:  STATEMENT
+    1. V23_FS_15_DIFFERENT_DOOR                 Single state.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+V23_FS_16_REAL_GAP_REMAINS
+    TRIGGER:    And sometimes there is a real gap you still have to learn, earn, or experience. Better proof does not erase that.
+    LAYOUT:     Three words, and the limit stated under them.
+    TREATMENT:  STATEMENT
+    1. V23_FS_16_REAL_GAP_REMAINS               Single state.
+    HOLD:       Hold through both sentences.
+
+V23_FS_17_CTA
+    TRIGGER:    Write four lines: Problem before. What was mine to decide. Judgment. Proof and how I know.
+    LAYOUT:     Action card, then the single resource line.
+    TREATMENT:  CTA
+    1. V23_FS_17A_FOUR_LINES                    The four lines, on the sentence that names them.
+    2. V23_FS_17B_RESOURCE                      Add the one resource, on the sentence that names it.
+    HOLD:       A on the four-lines sentence. Hold A through 'It is a harder question than it looks.' B on the resource sentence, and hold to the end of the spoken line.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+  One active idea at a time. When a framework is being taught,
+  one component is warm and the rest are quiet.
+
+  Establish the whole structure before activating any part of it.
+
+  No animation whose only purpose is to keep the screen moving.
+  Stillness is allowed when the viewer needs to read or think.
+
+  No fake buttons, progress bars, quiz interfaces or dashboards.
+
+  A card never moves while the presenter moves behind it.

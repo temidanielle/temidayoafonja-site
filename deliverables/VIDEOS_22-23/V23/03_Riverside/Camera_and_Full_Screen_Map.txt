@@ -1,0 +1,222 @@
+==============================================================================
+VIDEO 23  |  CAMERA AND FULL-SCREEN MAP
+==============================================================================
+
+Turn One Accomplishment Into Career Proof
+
+Every stretch of this video is marked. CAMERA means Temidayo
+carries the moment and no graphic should appear over her.
+FULL SCREEN means the idea takes the screen, with no presenter
+moving behind it and no semi-transparent overlay.
+
+------------------------------------------------------------------------------
+
+  19 camera stretches
+  17 full-screen cues, one per card
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+0:00  COLD OPEN
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  V23_FS_01_CLAIM
+      TRIGGER:  Led a cross-functional transformation that improved on-time delivery by eighteen percent.
+      STATES:   V23_FS_01_CLAIM
+      HOLD:     Hold through the opening line and the three short sentences after it. Cut to camera on 'And it proves almost nothing.'
+
+  [ CAMERA ]  2 paragraphs, 23 words
+      That sounds like a good resume sentence. It has a verb. It has scope. It has a number.
+      And it proves almost nothing.
+
+  [ FULL SCREEN ]  V23_FS_02_UNANSWERED
+      TRIGGER:  Because a stranger reading it still cannot tell what you decided, what was hard about it, or where eighteen percent came from. Eighteen percent from what? Measured how? Compared to what?
+      STATES:   V23_FS_02A_WHAT_DID_YOU_DECIDE, V23_FS_02B_FROM_WHAT, V23_FS_02C_MEASURED_HOW, V23_FS_02D_COMPARED_TO_WHAT
+      HOLD:     Build across the sentence. Cut to camera for 'You did the work. I believe you. The sentence does not.' That line is the strongest human moment in the video and must not be covered.
+
+  [ CAMERA ]  1 paragraph, 11 words
+      You did the work. I believe you. The sentence does not.
+
+
+------------------------------------------------------------------------------
+0:31  THE PAYOFF
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  V23_FS_03_FOUR_LINE_PROOF
+      TRIGGER:  Four lines can make that accomplishment much easier to judge. I want to show you the finished version first, then we will pull it apart.
+      STATES:   V23_FS_03_FOUR_LINE_PROOF, V23_FS_03A_PROBLEM_BEFORE, V23_FS_03B_MINE_TO_DECIDE, V23_FS_03C_JUDGMENT, V23_FS_03D_PROOF_AND_HOW
+      HOLD:     Establish on 'I want to show you the finished version first.' Then one activation per spoken line. Do not cut to camera between them.
+
+  [ CAMERA ]  4 paragraphs, 139 words
+      Problem before. Three depots ran their own dispatch. On-time delivery sat at seventy-one percent...
+      What was mine to decide. I did not own the depots or the budget. I owned the definition of on-ti...
+      Judgment. The obvious move was to convert all three at once in the slow quarter. I put the worst...
+      Proof and how I know. On-time reached eighty-nine percent across all three inside seven months, ...
+
+  [ FULL SCREEN ]  V23_FS_04_CLAIM_VS_PROOF
+      TRIGGER:  Same accomplishment. One is a claim. The other one a stranger can question, test, and understand.
+      STATES:   V23_FS_04_CLAIM_VS_PROOF
+      HOLD:     Hold through the sentence, then return to camera.
+
+
+------------------------------------------------------------------------------
+1:44  LINE ONE: WHAT WAS TRUE BEFORE?
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  3 paragraphs, 52 words
+      First, what was the condition before?
+      This is easy to skip, but without it your number has no scale. Eighteen percent could be a major...
+      The before state does something else too. It shows that you understood the problem, not just the...
+
+  [ FULL SCREEN ]  V23_FS_05_WHY_THE_ROLE_EXISTS
+      TRIGGER:  Every one of the fifteen job descriptions I studied for this was written around something the organization could not do. That is why the role exists.
+      STATES:   V23_FS_05_WHY_THE_ROLE_EXISTS
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  1 paragraph, 18 words
+      So tell me what was broken before you tell me what you fixed. Two sentences is often enough.
+
+
+------------------------------------------------------------------------------
+2:27  LINE TWO: WHAT WAS MINE TO DECIDE?
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  3 paragraphs, 40 words
+      Now this next part is where experienced professionals often undersell themselves.
+      We ask, “What was I responsible for?” And then we answer with the job title or a list of tasks.
+      Try a harder question: What was mine to decide?
+
+  [ FULL SCREEN ]  V23_FS_06_KINDS_OF_AUTHORITY
+      TRIGGER:  I use that wording on purpose because employers use it too. In the postings I read, they separate people who govern, negotiate, co-own, recommend, influence, support, and execute. Those are different kinds of authority, and one role can contain more than one.
+      STATES:   V23_FS_06_KINDS_OF_AUTHORITY
+      HOLD:     Hold through the sentence that lists them, then cut back.
+
+  [ CAMERA ]  2 paragraphs, 34 words
+      Now maybe your honest answer is, “I had no budget. I did not own the final decision. I was execu...
+      Execution still contains choices.
+
+  [ FULL SCREEN ]  V23_FS_07_EXECUTION_CONTAINS_CHOICES
+      TRIGGER:  What did you sequence? What did you escalate? What evidence did you challenge?
+      STATES:   V23_FS_07_EXECUTION_CONTAINS_CHOICES
+      HOLD:     Hold through the three questions, then cut to camera for the line about not owning the whole program.
+
+  [ FULL SCREEN ]  V23_FS_08_AUTHORITY_BOUNDARY
+      TRIGGER:  Those choices are not the same as owning the whole program. But they are still yours. Name one.
+      STATES:   V23_FS_08_AUTHORITY_BOUNDARY
+      HOLD:     Cut on 'Those choices are not the same as owning the whole program.' Hold through 'Name one.'
+
+
+------------------------------------------------------------------------------
+3:53  LINE THREE: WHAT WAS NOT OBVIOUS?
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  3 paragraphs, 52 words
+      Then comes judgment. The simplest question is: what was not obvious?
+      Imagine you are halfway through fixing a system, and the cleanest technical move is also the mov...
+      That is the kind of moment I mean.
+
+  [ FULL SCREEN ]  V23_FS_09_JUDGMENT_IS_NOT_ONLY_ANALYSIS
+      TRIGGER:  Judgment can include analysis, but it is not only spreadsheets and tradeoff matrices. In the postings I read, judgment also showed up as negotiating, sequencing, knowing what to escalate, getting a stakeholder to agree, or committing to an interpretation when the information was not perfectly clear.
+      STATES:   V23_FS_09_JUDGMENT_IS_NOT_ONLY_ANALYSIS
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ FULL SCREEN ]  V23_FS_10_THE_CALL
+      TRIGGER:  In the depot example, running the numbers was not the distinctive part. The judgment was reading the situation and deciding that a temporary dip in the reported numbers could cost the program its sponsor before the fix had time to work.
+      STATES:   V23_FS_10_THE_CALL
+      HOLD:     Cut only after the scene has played on camera. Hold through 'They had a reason. They could have been wrong.'
+
+  [ CAMERA ]  2 paragraphs, 32 words
+      Somebody made that call. They had a reason. They could have been wrong.
+      That is the kind of judgment another employer may be able to evaluate even when the task itself ...
+
+
+------------------------------------------------------------------------------
+5:03  LINE FOUR: WHAT CHANGED, AND HOW DO YOU KNOW?
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  1 paragraph, 15 words
+      Fourth, proof. And this is where the research changed the way I write an accomplishment.
+
+  [ FULL SCREEN ]  V23_FS_11_NINE_OF_FIFTEEN
+      TRIGGER:  Nine of the fifteen job descriptions I studied did not ask for a result by itself. They asked for the mechanism with it: business cases with benefit tracking, cost-benefit analysis, defined KPIs, metrics used to drive decisions, value realization.
+      STATES:   V23_FS_11_NINE_OF_FIFTEEN
+      HOLD:     Hold through the list of mechanisms.
+
+  [ CAMERA ]  1 paragraph, 20 words
+      In other words, they were not only asking, “Did the number move?” They were also asking, “How do...
+
+  [ FULL SCREEN ]  V23_FS_12_TWO_HALVES
+      TRIGGER:  So proof has two halves: what changed, and how anyone knows it changed.
+      STATES:   V23_FS_12A_TWO_HALVES, V23_FS_12B_FILLED
+      HOLD:     A on 'proof has two halves'. B on the sentence that fills them.
+
+  [ CAMERA ]  2 paragraphs, 46 words
+      Eighty-nine percent is the first half. Measured against one shared definition, with the baseline...
+      That second half matters because it survives scrutiny. It also shows that you thought about whet...
+
+
+------------------------------------------------------------------------------
+6:12  WHAT CHANGED
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  3 paragraphs, 69 words
+      Now put the two versions next to each other.
+      The weak one claims a transformation and gives a number.
+      The four-line version does something different. It tells you what the person did not own, which ...
+
+  [ FULL SCREEN ]  V23_FS_13_THE_PAYOFF
+      TRIGGER:  This is the part I want you to remember: good proof does not make your role sound bigger than it was. It makes what you actually carried easier to judge.
+      STATES:   V23_FS_13_THE_PAYOFF
+      HOLD:     Cut on 'This is the part I want you to remember.' Hold through both sentences. Do not cut away early.
+
+  [ CAMERA ]  1 paragraph, 20 words
+      That is why being more honest about the limits of your authority can actually make the evidence ...
+
+
+------------------------------------------------------------------------------
+7:02  THE CATCH
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  2 paragraphs, 21 words
+      One catch, because the same proof does not land equally everywhere.
+      The destination decides which part of your accomplishment matters most.
+
+  [ FULL SCREEN ]  V23_FS_14_SAME_COMPANY
+      TRIGGER:  I read two job descriptions from the same company, at the same level, written in almost identical language. Both wanted someone who could make tradeoffs in an ambiguous environment.
+      STATES:   V23_FS_14A_NEAR_IDENTICAL, V23_FS_14B_DIFFERENT_DOOR
+      HOLD:     A on the sentence about reading two descriptions. B on the sentence that names the two requirements.
+
+  [ CAMERA ]  1 paragraph, 18 words
+      But one required years of experience with card products. The other required years on directly re...
+
+  [ FULL SCREEN ]  V23_FS_15_DIFFERENT_DOOR
+      TRIGGER:  Same sentence near the top. Different door.
+      STATES:   V23_FS_15_DIFFERENT_DOOR
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  2 paragraphs, 46 words
+      So reconstruct the accomplishment once. Then look at the destination role and decide which part ...
+      Sometimes it is your judgment. Sometimes it is the way you measured the result. Sometimes it is ...
+
+  [ FULL SCREEN ]  V23_FS_16_REAL_GAP_REMAINS
+      TRIGGER:  And sometimes there is a real gap you still have to learn, earn, or experience. Better proof does not erase that.
+      STATES:   V23_FS_16_REAL_GAP_REMAINS
+      HOLD:     Hold through both sentences.
+
+
+------------------------------------------------------------------------------
+8:05  CTA
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  1 paragraph, 14 words
+      Pick one thing you did. Not your best thing. Just one you remember clearly.
+
+  [ FULL SCREEN ]  V23_FS_17_CTA
+      TRIGGER:  Write four lines: Problem before. What was mine to decide. Judgment. Proof and how I know.
+      STATES:   V23_FS_17A_FOUR_LINES, V23_FS_17B_RESOURCE
+      HOLD:     A on the four-lines sentence. Hold A through 'It is a harder question than it looks.' B on the resource sentence, and hold to the end of the spoken line.
+
+  [ CAMERA ]  2 paragraphs, 38 words
+      The second line may take you the longest. That is the point. It is a harder question than it loo...
+      If you want the prompts and worked examples in one place, the Career Evidence Starter is linked ...

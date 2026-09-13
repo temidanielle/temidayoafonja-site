@@ -1,0 +1,96 @@
+==============================================================================
+V22 AND V23  |  SOURCE HIERARCHY AND MANIFEST
+==============================================================================
+
+Generated Sunday, September 13, 2026 | 4:33 PM CT
+
+Input archive V22_V23_CODE_BUILD_INPUTS_2026-09-13.zip
+  sha256  eb84bbb49566e30de403343071da8893ff577fb3fb537f7452ba77ca986c9a1d
+
+------------------------------------------------------------------------------
+
+ORDER OF AUTHORITY
+
+  1  V22 UPDATED 50CHAR script document
+        V22 title, thumbnail, spoken wording, editorial
+        sequence and CTA wording.
+
+  2  V23 UPDATED 50CHAR script document
+        The same, for V23.
+
+  3  V22-V23 UPDATED Advisor Overview
+        Editorial rationale, the distinction between the two
+        videos, preserved boundaries and what changed in the
+        advisor pass. It does not override exact spoken wording.
+
+  4  Internal Source Capture Packet
+        Provenance, employer and posting evidence, research
+        boundaries, source presentation, anonymization and the
+        synthetic-example rules.
+
+  5  Visual reference screenshots
+        Information-design principles only. None of their
+        branding, color, interface, icons, layout or visual
+        identity is used.
+
+------------------------------------------------------------------------------
+
+SUPERSEDED. NOT USED AS CURRENT SOURCE.
+
+  Title:     How to Read a Job Description for What Actually Matters So Fast, It Feels Like Cheating
+  Title:     How to Turn One Accomplishment Into Career Proof So Fast, It Feels Like Cheating
+  Thumbnail: ONE WIN → PROOF
+
+  Older Video A and Video B scripts are not current spoken
+  source. None of the above appears in any file this build
+  writes, which QA checks rather than assumes.
+
+------------------------------------------------------------------------------
+
+INPUT FILES, AS SUPPLIED
+
+  Authoritative_Scripts/V22_UPDATED_50CHAR_Advisor_Review_Title_Thumbnail_and_Script.docx
+      sha256  291f06e355bdbe4a809f65f93f17dc281605d65ff74e6a24b0a8dc482001c522
+      bytes   42,022
+
+  Authoritative_Scripts/V23_UPDATED_50CHAR_Advisor_Review_Title_Thumbnail_and_Script.docx
+      sha256  bbda104462ae44966b87671eb6b5c4a9391893fdc809d1458d2ae196c395a503
+      bytes   41,496
+
+  Authoritative_Scripts/V22-V23_UPDATED_50CHAR_Advisor_Overview_and_Editorial_Rationale.docx
+      sha256  44f9d7922b6650ee1dfe1e490a281966560dbf7fd8bd66be767f2f452a56a1d0
+      bytes   40,549
+
+  Evidence/Internal_Source_Capture_Packet.docx
+      sha256  b5da09c6fe6192ed290296fc63c8f4e811e8b4ecdd70a6ffb47fffac93d391d8
+      bytes   16,437
+
+  Visual_Reference_Only/Screenshot 2026-09-13 at 12.30.58 PM.png
+      sha256  d74db6ae3c4777473e5619d0f2763acc2eda0e80d9bc71352efe6d2a2bcc0b10
+      bytes   1,147,922
+
+  Visual_Reference_Only/Screenshot 2026-09-13 at 12.31.08 PM.png
+      sha256  d708d8b959e5211cdbd90e7fafb8d216e033271a93397690066309085ffea91b
+      bytes   1,182,263
+
+  Visual_Reference_Only/Screenshot 2026-09-13 at 12.31.27 PM.png
+      sha256  bf6f97abfffb9e7878cbdc5cc2ac9802c1591a5121f63105aa3cc52222dd0150
+      bytes   1,158,009
+
+  Visual_Reference_Only/Screenshot 2026-09-13 at 12.41.41 PM.png
+      sha256  b94f29539714027e54bfa66c7a9757c3211b2e230c12920c90917f9900a35629
+      bytes   462,667
+
+------------------------------------------------------------------------------
+
+LOCKED PACKAGING
+
+  V22
+      TITLE      How to Decode a Job Description
+      THUMBNAIL  IGNORE THE TITLE
+      WORDS      1,345
+
+  V23
+      TITLE      Turn One Accomplishment Into Career Proof
+      THUMBNAIL  YOU DID IT. CAN YOU PROVE IT?
+      WORDS      1,132

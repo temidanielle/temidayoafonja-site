@@ -1,0 +1,679 @@
+==============================================================================
+VIDEO 22  |  RIVERSIDE CO-CREATOR MASTER EDITING PROMPT
+==============================================================================
+
+How to Decode a Job Description
+Thumbnail: IGNORE THE TITLE
+Generated Sunday, September 13, 2026 | 4:33 PM CT
+
+1,345 spoken words. 22 camera stretches against 20 full-screen cues.
+Runtime is observed at Temidayo's delivery pace. No figure in
+this prompt is a measured runtime, a chapter or an SRT time.
+
+------------------------------------------------------------------------------
+
+HOW TO USE THIS
+
+  Work down the spine. Where it says CAMERA, stay on Temidayo
+  for the whole stretch. Where it says FULL SCREEN, cut to the
+  named asset on the exact trigger sentence and follow the
+  reveal order. The copy on each card is already final; do not
+  retype it, and do not add teaching that is not in the script.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+  CAMERA-LED
+      Story, recognition, consequence and interpretation stay on Temidayo.
+      Do not cover a strong human opening with a graphic because an asset
+      exists.
+
+  TRUE FULL SCREEN
+      Frameworks, comparisons, substantive examples and meaningful source
+      evidence take the whole screen. No presenter moving behind them, no
+      corner placement, no semi-transparent overlay for substantive
+      teaching.
+
+  ONE ACTIVE IDEA AT A TIME
+      Establish a structure whole, then activate one component, teach it,
+      and move on. Never leave four components competing while one is
+      explained.
+
+  SEQUENTIAL REVEALS, NOT BUTTONS
+      A numbered point is a reading order. YouTube is not interactive and
+      nothing should look clickable.
+
+  RESTRAINT
+      No constant zooming, no pulsing the frame, no accent on every
+      reveal, no animating every line. Stillness is allowed when the
+      viewer needs to read.
+
+  CAPTIONS
+      No burned-in captions in the long-form video. Generate the SRT in
+      Riverside after the final edit and verify it against the final
+      export.
+
+  WATCH NEXT
+      The Watch Next card is full screen and final. There is no return to
+      camera after it. The card is silent and no spoken line introduces
+      it.
+
+------------------------------------------------------------------------------
+
+THE SPINE
+
+
+------------------------------------------------------------------------------
+0:00  COLD OPEN
+------------------------------------------------------------------------------
+
+  MODE:     FULL SCREEN
+  TRIGGER:  Senior Divisional Strategy Consultant, Governance.
+  PURPOSE:
+      Let the title sit alone long enough for the viewer to form an
+      assumption about the level and the pay before anything contradicts
+      it.
+  LAYOUT:
+      Artifact. Nothing else on screen.
+  REVEAL ORDER:
+      1. ASSET: V22_FS_01_TITLE_ONLY.png
+         Single state. No build.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold four to five seconds on the title alone. The silence is the
+      point. Do not reveal the range yet.
+  SOUND:
+      One restrained reveal accent as the card lands, then nothing.
+  SOURCE NOTE:
+      A1. HCSC, requisition R0055598.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 2 paragraphs, 13 words.
+  FROM:  Read that and tell me what you think it pays.
+  TO:    Senior. Strategy. Governance.
+
+  MODE:     FULL SCREEN
+  TRIGGER:  The bottom of the published range is sixty-one thousand five hundred dollars.
+  PURPOSE:
+      Break the assumption the title created, in two beats rather than
+      one.
+  LAYOUT:
+      Same artifact, two preserved lines, one active at a time.
+  REVEAL ORDER:
+      1. ASSET: V22_FS_02A_FLOOR.png
+         State A on the range sentence. The floor is active.
+      2. ASSET: V22_FS_02B_FEEDBACK.png
+         State B on the next sentence. The requirement line becomes
+         active and the floor quiets.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Two seconds on A, then cut to B on 'And buried in the required
+      qualifications'. Return to camera on 'That is a real posting.'
+  SOUND:
+      One accent on A. One quieter accent on B.
+  SOURCE NOTE:
+      A1. Preserved text, capture packet.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 2 paragraphs, 44 words.
+  FROM:  And buried in the required qualifications, in the same list as t...
+  TO:    That is a real posting. And if you trusted the title, you would...
+
+
+------------------------------------------------------------------------------
+0:31  THE PROMISE
+------------------------------------------------------------------------------
+
+  MODE:     FULL SCREEN
+  TRIGGER:  In September 2026, I read fifteen postings from eleven employers.
+  PURPOSE:
+      Put the denominator on screen the moment it is spoken, so every
+      later claim is read against it.
+  LAYOUT:
+      One figure held large with its own limit underneath.
+  REVEAL ORDER:
+      1. ASSET: V22_FS_03_THE_SAMPLE.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold until the sentence lands, then cut back.
+  SOUND:
+      One accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 11 words.
+  FROM:  I want to show you how I read them, out loud.
+  TO:    I want to show you how I read them, out loud.
+
+  MODE:     FULL SCREEN
+  TRIGGER:  By the end, you will know where to look in a posting to answer three different questions quickly: Could I do this work? Can I prove relevant evidence? Do I meet the stated gates?
+  PURPOSE:
+      Three questions the viewer will carry through the whole video,
+      arriving one at a time so none of them is skimmed.
+  LAYOUT:
+      Sequential reveal. Earlier questions stay but quiet.
+  REVEAL ORDER:
+      1. ASSET: V22_FS_04A_COULD_I_DO_IT.png
+         State A on 'Could I do this work?'
+      2. ASSET: V22_FS_04B_CAN_I_PROVE_IT.png
+         State B on 'Can I prove relevant evidence?'
+      3. ASSET: V22_FS_04C_DO_I_MEET_THE_GATES.png
+         State C on 'Do I meet the stated gates?' All three are now
+         readable together.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Build across the sentence. Hold C through the next line, then cut
+      back to camera.
+  SOUND:
+      One accent per reveal, quiet.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 14 words.
+  FROM:  Those are three different questions. And the title does not answ...
+  TO:    Those are three different questions. And the title does not answ...
+
+
+------------------------------------------------------------------------------
+1:02  THE METHOD
+------------------------------------------------------------------------------
+
+  MODE:     FULL SCREEN
+  TRIGGER:  I use four things every time.
+  PURPOSE:
+      Establish the whole method once, then teach one component at a time
+      so four ideas never compete while one is being explained.
+  LAYOUT:
+      Framework established whole, then activated one row at a time.
+  REVEAL ORDER:
+      1. ASSET: V22_FS_05_PARP_FRAMEWORK.png
+         Establish. All four visible, none emphasized.
+      2. ASSET: V22_FS_05A_PROBLEM.png
+         Activate 1 on 'Problem.'
+      3. ASSET: V22_FS_05B_AUTHORITY.png
+         Activate 2 on 'Authority.'
+      4. ASSET: V22_FS_05C_PROOF.png
+         Activate 3 on 'Proof.'
+      5. ASSET: V22_FS_05D_REAL_GAP.png
+         Activate 4 on 'Real gap.'
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Establish lands on 'I use four things every time.' Each activation
+      lands on its own sentence. Cut back to camera on 'Let me show you
+      what that looks like.'
+  SOUND:
+      One accent on establish. No accent on the activations.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 5 paragraphs, 67 words.
+  FROM:  Problem. What can this organization not do right now?
+  TO:    Problem. Authority. Proof. Real gap. Let me show you what that l...
+
+
+------------------------------------------------------------------------------
+1:33  EXAMPLE ONE
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 5 words.
+  FROM:  Back to that first posting.
+  TO:    Back to that first posting.
+
+  MODE:     FULL SCREEN
+  TRIGGER:  The problem is not really “strategy.” A division inside a large insurer is evaluating opportunities and does not have a consistent way to track them or report on them. Somebody has to build the structure around that work.
+  PURPOSE:
+      Run the method across one real posting, with the artifact large
+      enough to read on a phone and only the point being taught explained
+      beside it.
+  LAYOUT:
+      Artifact with numbered teaching points, one active at a time.
+  REVEAL ORDER:
+      1. ASSET: V22_FS_06A_PROBLEM.png
+         Point 1 active on the problem sentence.
+      2. ASSET: V22_FS_06B_AUTHORITY.png
+         Point 2 active on 'Now look at authority.'
+      3. ASSET: V22_FS_06C_PROOF.png
+         Point 3 active on 'Now proof.'
+      4. ASSET: V22_FS_06D_REAL_GAP.png
+         Point 4 active on 'Then the real gap.'
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      One state per method sentence. Between points 2 and 3 the script
+      interprets the verb; hold point 2 rather than cutting to camera.
+  SOUND:
+      One quiet accent per point.
+  SOURCE NOTE:
+      A1. Preserved text, capture packet.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 4 paragraphs, 111 words.
+  FROM:  Now look at authority. Here is the verb: supporting. Supporting...
+  TO:    Then the real gap. The experience has to be in healthcare or con...
+
+  MODE:     FULL SCREEN
+  TRIGGER:  Four authority-sounding words in the title. A sixty-one-thousand-five-hundred-dollar floor. Filed internally under Information Technology.
+  PURPOSE:
+      Land the first example as three facts the viewer can hold at once.
+  LAYOUT:
+      Three short lines, all visible, no build.
+  REVEAL ORDER:
+      1. ASSET: V22_FS_07_TITLE_VS_FILE.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold until the sentence lands, then cut back.
+  SOUND:
+      One accent.
+  SOURCE NOTE:
+      A1.
+
+  MODE:     FULL SCREEN
+  TRIGGER:  So the first rule is simple: read the verb before you trust the title.
+  PURPOSE:
+      Fix the first rule in the viewer's memory in the words the script
+      uses.
+  LAYOUT:
+      Rule card. Navy ground, one line.
+  REVEAL ORDER:
+      1. ASSET: V22_FS_08_RULE01_VERB_BEFORE_TITLE.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold through the sentence, then cut to camera for the transition.
+  SOUND:
+      One restrained accent.
+
+
+------------------------------------------------------------------------------
+2:52  EXAMPLE TWO
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 24 words.
+  FROM:  Now, you could hear that and think, fine. Maybe that is just a j...
+  TO:    Now, you could hear that and think, fine. Maybe that is just a j...
+
+  MODE:     FULL SCREEN
+  TRIGGER:  So look at another posting from the same company, in a different department: Director of Enterprise Resilience.
+  PURPOSE:
+      Show that the same employer writes a quarter-million-dollar role in
+      execution language, without mocking the role.
+  LAYOUT:
+      Artifact, establish then activate the requirement line.
+  REVEAL ORDER:
+      1. ASSET: V22_FS_09A_SAME_COMPANY.png
+         Establish on the title sentence. Same employer, different
+         department, and the published range.
+      2. ASSET: V22_FS_09B_PREDEFINED.png
+         Activate the requirement line on 'Predefined decisions.'
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Establish under the title sentence and the range sentence. Cut to B
+      on the two-word paragraph, hold two seconds, then return to camera.
+      The defense of the role is delivered on camera, not on a card.
+  SOUND:
+      One accent on A. One on B.
+  SOURCE NOTE:
+      A2. Claim limit: the posting establishes predefined decisions. It
+      does not establish who created them, and nothing on screen says
+      otherwise.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 8 paragraphs, 143 words.
+  FROM:  The published range tops out just under two hundred forty-eight...
+  TO:    But if you took the role expecting to set the crisis strategy, t...
+
+
+------------------------------------------------------------------------------
+4:20  EXAMPLE THREE
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 3 paragraphs, 48 words.
+  FROM:  Now let me remove the easiest excuse. These next two roles have...
+  TO:    The other is Director of Strategic Initiatives at an insurance b...
+
+  MODE:     FULL SCREEN
+  TRIGGER:  Same title word. Similar experience floor. So what is actually different?
+  PURPOSE:
+      Two roles that share a title word, read side by side so the
+      difference is visible rather than asserted.
+  LAYOUT:
+      Side-by-side comparison, three reveals in the same frame.
+  REVEAL ORDER:
+      1. ASSET: V22_FS_10A_SAME_WORD.png
+         Establish. Titles and experience floors only.
+      2. ASSET: V22_FS_10B_SCOPE.png
+         Add scope, reporting relationship and authority language
+         across the two script sentences that describe them.
+      3. ASSET: V22_FS_10C_FLOORS.png
+         Reveal both compensation floors together, last.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Establish on 'So what is actually different?' B builds across the
+      two description sentences. C lands on the floors sentence and must
+      be followed immediately by the boundary card.
+  SOUND:
+      One accent on establish. One on the floors reveal. Nothing on B.
+  SOURCE NOTE:
+      A3 and A4.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 4 paragraphs, 78 words.
+  FROM:  The first role leads operational execution of the employee lifec...
+  TO:    The compensation floors are about sixty-five thousand dollars ap...
+
+  MODE:     FULL SCREEN
+  TRIGGER:  And I want to be precise here. That does not tell you which person is “more senior” in some universal sense. It tells you what these two employers will pay for these two jobs.
+  PURPOSE:
+      State the limit of the comparison on screen, immediately after the
+      money, so the number cannot be carried away on its own.
+  LAYOUT:
+      Statement. Navy ground.
+  REVEAL ORDER:
+      1. ASSET: V22_FS_11_DIRECTOR_BOUNDARY.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Cut on 'And I want to be precise here.' Hold through the sentence.
+  SOUND:
+      No accent. The line should feel like a correction, not a reveal.
+
+  MODE:     FULL SCREEN
+  TRIGGER:  The useful lesson is simpler: Director did not tell you enough. You had to read the rest.
+  PURPOSE:
+      The lesson of the pair, in four words.
+  LAYOUT:
+      Statement.
+  REVEAL ORDER:
+      1. ASSET: V22_FS_12_DIRECTOR_LESSON.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold until the sentence lands, then cut back.
+  SOUND:
+      One accent.
+
+
+------------------------------------------------------------------------------
+5:52  EXAMPLE FOUR
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 7 words.
+  FROM:  Last one. And this is the reversal.
+  TO:    Last one. And this is the reversal.
+
+  MODE:     FULL SCREEN
+  TRIGGER:  Member of Technical Staff, Governance Risk Compliance.
+  PURPOSE:
+      Let the unfamiliar title and the density of the language register
+      before the reversal lands.
+  LAYOUT:
+      Artifact, then the captured acronym line at full size.
+  REVEAL ORDER:
+      1. ASSET: V22_FS_13A_UNFAMILIAR_TITLE.png
+         Title alone, held.
+      2. ASSET: V22_FS_13B_ACRONYM_WALL.png
+         Add the acronym line, as captured and unedited.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      A holds through 'That title tells you almost nothing about level.' B
+      lands on the acronym sentence and holds through 'somebody else's
+      world.'
+  SOUND:
+      One accent on B only.
+  SOURCE NOTE:
+      A5. Acronyms shown as captured.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 3 paragraphs, 73 words.
+  FROM:  That title tells you almost nothing about level. Then the descri...
+  TO:    So start with the problem. An AI company wants to sell into fede...
+
+  MODE:     FULL SCREEN
+  TRIGGER:  Authority is mixed, and the posting is unusually clear about it. The role executes compliance work. It leads the authorization process. It advises leadership as the expert in the room. It also works across teams. Four different authority postures in one document.
+  PURPOSE:
+      Four authority postures in one document, arriving one at a time so
+      none of them is read as the whole role.
+  LAYOUT:
+      Numbered sequence, established whole, then activated one at a time.
+  REVEAL ORDER:
+      1. ASSET: V22_FS_14_AUTHORITY_POSTURES.png
+         Establish on 'Authority is mixed.'
+      2. ASSET: V22_FS_14A_EXECUTES.png
+         Activate 1.
+      3. ASSET: V22_FS_14B_LEADS.png
+         Activate 2.
+      4. ASSET: V22_FS_14C_ADVISES.png
+         Activate 3.
+      5. ASSET: V22_FS_14D_ACROSS_TEAMS.png
+         Activate 4.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      One activation per clause inside the authority sentence. Do not show
+      all four explanations at once.
+  SOUND:
+      No accents on the activations.
+  SOURCE NOTE:
+      A5. Preserved text.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 3 paragraphs, 87 words.
+  FROM:  And the company says outright that it runs flat, and that leader...
+  TO:    The real gap is real too. The federal process knowledge is speci...
+
+  MODE:     FULL SCREEN
+  TRIGGER:  The published range is one hundred eighty thousand to four hundred forty thousand dollars.
+  PURPOSE:
+      Hold the salary reveal to the end of the beat, and keep the sample
+      boundary attached to the claim.
+  LAYOUT:
+      One figure, then the claim with its limit stated on the same card.
+  REVEAL ORDER:
+      1. ASSET: V22_FS_15A_RANGE.png
+         The published range, alone.
+      2. ASSET: V22_FS_15B_IN_THIS_SAMPLE.png
+         The claim, with 'in this sample' on screen, never implied.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      A lands on the range sentence. B lands on 'The least informative
+      title in this sample.' Hold B through the sentence.
+  SOUND:
+      One accent on A. One on B.
+  SOURCE NOTE:
+      A5. Claim is bounded to the fifteen-posting sample.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 15 words.
+  FROM:  The least informative title in this sample sits on the highest p...
+  TO:    The least informative title in this sample sits on the highest p...
+
+  MODE:     FULL SCREEN
+  TRIGGER:  So the second rule: a title that tells you very little is a reason to read, not a reason to skip.
+  PURPOSE:
+      The second rule, paired visually with the first.
+  LAYOUT:
+      Rule card, same construction as rule one.
+  REVEAL ORDER:
+      1. ASSET: V22_FS_16_RULE02_READ_DONT_SKIP.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold until the sentence lands, then cut back.
+  SOUND:
+      One restrained accent.
+
+
+------------------------------------------------------------------------------
+7:51  REAL GAP
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 14 words.
+  FROM:  One more thing about real gaps, because a gap is not always a cr...
+  TO:    One more thing about real gaps, because a gap is not always a cr...
+
+  MODE:     FULL SCREEN
+  TRIGGER:  One posting in the fifteen simply said what would not transfer. GiveDirectly was hiring a Director of Global Talent Acquisition, and the posting said candidates whose recruiting experience was exclusively in one geographic context were unlikely to be a strong fit.
+  PURPOSE:
+      Show that a real gap is not always a credential, using the one
+      posting that said so outright.
+  LAYOUT:
+      Two stated constraints, the second added when it is spoken.
+  REVEAL ORDER:
+      1. ASSET: V22_FS_17A_GEOGRAPHIC.png
+         The geographic constraint, active.
+      2. ASSET: V22_FS_17B_TIME_ZONE.png
+         The time-zone gate becomes active. The Central Time qualifier
+         is on screen with it and never without it.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      A lands on the GiveDirectly sentence. B lands on the overlap
+      sentence. This beat runs about 45 seconds and must not expand.
+  SOUND:
+      One accent on each.
+  SOURCE NOTE:
+      A6. GiveDirectly, named on camera, past tense as spoken. The 7 or 8
+      a.m. figure is locality-dependent and carries the Central Time
+      qualifier.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 4 paragraphs, 98 words.
+  FROM:  No guesswork. They told you.
+  TO:    Only one posting in the fifteen was that direct. When you find a...
+
+
+------------------------------------------------------------------------------
+8:57  THE BOUNDARY
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 10 words.
+  FROM:  Here is what this method will not do for you.
+  TO:    Here is what this method will not do for you.
+
+  MODE:     FULL SCREEN
+  TRIGGER:  A job posting cannot tell you who will get hired. It cannot tell you whether the authority described on paper exists in practice. It cannot tell you what the manager is like, or whether the employer would stretch on a requirement for the right person.
+  PURPOSE:
+      Put the limits of the method on screen in the same weight as the
+      method itself.
+  LAYOUT:
+      Three lines, all visible. No build, because they are spoken as one
+      list.
+  REVEAL ORDER:
+      1. ASSET: V22_FS_18_WHAT_IT_WILL_NOT_DO.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold through the list, then cut to camera for 'It improves your
+      aim.' That line stays on Temidayo.
+  SOUND:
+      No accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 15 words.
+  FROM:  Reading the posting better does not improve your odds by itself....
+  TO:    Reading the posting better does not improve your odds by itself....
+
+  MODE:     FULL SCREEN
+  TRIGGER:  What you get is a cleaner read on four things: what travels, what does not, what you can prove, and what you would have to relearn.
+  PURPOSE:
+      Close on the recurring audit this channel returns to, in the
+      script's own four phrases.
+  LAYOUT:
+      Framework, established whole and left whole.
+  REVEAL ORDER:
+      1. ASSET: V22_FS_19_FOUR_THINGS.png
+         Single state, no activation.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold until the sentence lands, then cut back.
+  SOUND:
+      One accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 10 words.
+  FROM:  That is a lot more useful than trusting the title.
+  TO:    That is a lot more useful than trusting the title.
+
+
+------------------------------------------------------------------------------
+9:39  CTA
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 2 paragraphs, 19 words.
+  FROM:  So here is the one thing I want you to do.
+  TO:    Take one job description you are actually considering.
+
+  MODE:     FULL SCREEN
+  TRIGGER:  Run it through four questions: Problem. Authority. Proof. Real gap.
+  PURPOSE:
+      One ask. No product, no second offer.
+  LAYOUT:
+      Action card, navy ground. The comment ask is added last.
+  REVEAL ORDER:
+      1. ASSET: V22_FS_20A_RUN_THE_FOUR.png
+         The four questions, on the sentence that names them.
+      2. ASSET: V22_FS_20B_FIND_THE_VERB.png
+         Add the single ask.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      A on the four-questions sentence. B on 'Find the verb.' Hold B to
+      the end of the spoken line.
+  SOUND:
+      One accent on A, one on B.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 21 words.
+  FROM:  Find the verb. Then tell me in the comments what it said, and wh...
+  TO:    Find the verb. Then tell me in the comments what it said, and wh...
+
+------------------------------------------------------------------------------
+
+AFTER THE EDIT
+
+  Generate the SRT in Riverside and verify it against the final
+  export. Create chapters from real export timing. Neither exists
+  in this package and neither should be invented before the cut.

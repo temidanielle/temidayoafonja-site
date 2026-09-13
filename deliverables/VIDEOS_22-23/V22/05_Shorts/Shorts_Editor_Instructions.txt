@@ -1,0 +1,90 @@
+==============================================================================
+VIDEO 22  |  SHORTS VISUAL AND EDITOR INSTRUCTIONS
+==============================================================================
+
+How to Decode a Job Description
+
+Six candidates. Current cadence is about three per long-form
+video, so three of these six ship.
+
+------------------------------------------------------------------------------
+
+SHARED RULES
+
+  9:16. The same navy, cream and warm gold system as the video.
+  Large type. One idea per card. Generous margins.
+  Reuse the long-form card where one exists, reframed to 9:16,
+  rather than rebuilding a different-looking version of it.
+  Every evidence boundary in the source video travels with the
+  line that needs it. A Short may not be the place the boundary
+  gets dropped.
+  One ask at the end. Never two.
+
+------------------------------------------------------------------------------
+
+v22_s1_what_do_you_think_it_pays
+    STOP SCROLL:  Stop scroll: the title
+    LENGTH:       79 words, about 0:29 at 165 wpm
+    ONE ASK:      Read the verb before you trust the title.
+    BOUNDARY:
+        One posting, captured September 12, 2026. Not a claim about
+        all employers.
+    EDITOR:
+        Open on the title card alone. Reveal the floor, then the
+        requirement line. No generalization on screen.
+
+v22_s2_read_the_verb
+    STOP SCROLL:  Stop scroll: four authority-sounding words
+    LENGTH:       89 words, about 0:32 at 165 wpm
+    ONE ASK:      Take one job description and find the verb.
+    BOUNDARY:
+        One posting. The verb describes the authority posture in that
+        document.
+    EDITOR:
+        Artifact card with the verb active. Rule one card to close.
+
+v22_s3_predefined_decisions
+    STOP SCROLL:  Stop scroll: a quarter-million-dollar role
+    LENGTH:       102 words, about 0:37 at 165 wpm
+    ONE ASK:      Read the verb before you assume the level.
+    BOUNDARY:
+        The posting establishes predefined decisions. It does not
+        establish who created them, and the Short must not say or
+        imply that it does.
+    EDITOR:
+        The defense of the role stays in. Execution under pressure is
+        hard, and nothing on screen mocks the job.
+
+v22_s4_director_did_not_tell_you_enough
+    STOP SCROLL:  Stop scroll: same title word
+    LENGTH:       117 words, about 0:43 at 165 wpm
+    ONE ASK:      Read the rest of the posting, not the title.
+    BOUNDARY:
+        The compensation difference applies to these two jobs at these
+        two employers. It is not a rule about Directors.
+    EDITOR:
+        The boundary card must follow the money reveal immediately,
+        inside the Short. Do not cut the Short before it.
+
+v22_s5_least_informative_title
+    STOP SCROLL:  Stop scroll: the title that says nothing
+    LENGTH:       92 words, about 0:33 at 165 wpm
+    ONE ASK:      A title that tells you very little is a reason to read.
+    BOUNDARY:
+        Highest published ceiling in this sample of fifteen postings.
+        Never the market.
+    EDITOR:
+        The words IN THIS SAMPLE stay on screen with the figure, in
+        the same card, for as long as the figure is visible.
+
+v22_s6_gap_is_not_a_credential
+    STOP SCROLL:  Stop scroll: the gap nobody mentions
+    LENGTH:       131 words, about 0:48 at 165 wpm
+    ONE ASK:      When a posting tells you what will not transfer, believe it.
+    BOUNDARY:
+        One posting out of fifteen was that direct. The 7 or 8 a.m.
+        figure is for someone on Central Time and must carry that
+        qualifier.
+    EDITOR:
+        GiveDirectly is named, in the past tense, as the script says
+        it.

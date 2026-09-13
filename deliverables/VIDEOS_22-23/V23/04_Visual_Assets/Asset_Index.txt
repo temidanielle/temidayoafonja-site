@@ -1,0 +1,150 @@
+==============================================================================
+VIDEO 23  |  ASSET INDEX
+==============================================================================
+
+Turn One Accomplishment Into Career Proof
+
+17 cards, 27 image states, plus 2 Watch Next candidate cards.
+PNG is 1920 x 1080. An SVG is provided where a designer may need
+to re-time or recolor the card; its text is live and the brand
+faces are embedded.
+
+------------------------------------------------------------------------------
+
+V23_FS_01_CLAIM
+    PURPOSE:    Put the weak sentence on screen exactly as a reader would meet it.
+    MODE:       FULL SCREEN
+    TREATMENT:  ARTIFACT
+    V23_FS_01_CLAIM.png                        V23_FS_01_CLAIM.png
+    SOURCE:     Synthetic example. The label is on screen because 18 percent is visible.
+
+V23_FS_02_UNANSWERED
+    PURPOSE:    Show what the sentence leaves unanswered, one question at a time, so each one is felt rather than skimmed.
+    MODE:       FULL SCREEN
+    TREATMENT:  SEQUENCE
+    V23_FS_02A_WHAT_DID_YOU_DECIDE.png         V23_FS_02A_WHAT_DID_YOU_DECIDE.png
+    V23_FS_02B_FROM_WHAT.png                   V23_FS_02B_FROM_WHAT.png
+    V23_FS_02C_MEASURED_HOW.png                V23_FS_02C_MEASURED_HOW.png
+    V23_FS_02D_COMPARED_TO_WHAT.png            V23_FS_02D_COMPARED_TO_WHAT.png
+    SOURCE:     Synthetic example. Label carried because 18 percent is visible.
+
+V23_FS_03_FOUR_LINE_PROOF
+    PURPOSE:    Show the finished version first. The viewer sees what the framework produces before being asked to learn it.
+    MODE:       FULL SCREEN
+    TREATMENT:  SEQUENCE
+    V23_FS_03_FOUR_LINE_PROOF.png              V23_FS_03_FOUR_LINE_PROOF.png, V23_FS_03_FOUR_LINE_PROOF.svg
+    V23_FS_03A_PROBLEM_BEFORE.png              V23_FS_03A_PROBLEM_BEFORE.png
+    V23_FS_03B_MINE_TO_DECIDE.png              V23_FS_03B_MINE_TO_DECIDE.png
+    V23_FS_03C_JUDGMENT.png                    V23_FS_03C_JUDGMENT.png
+    V23_FS_03D_PROOF_AND_HOW.png               V23_FS_03D_PROOF_AND_HOW.png
+    SOURCE:     Synthetic example. 71 and 89 percent are both visible in this beat, so the label is persistent.
+
+V23_FS_04_CLAIM_VS_PROOF
+    PURPOSE:    One claim beside one reconstructed proof, because the contrast is the whole teaching.
+    MODE:       FULL SCREEN
+    TREATMENT:  COMPARISON
+    V23_FS_04_CLAIM_VS_PROOF.png               V23_FS_04_CLAIM_VS_PROOF.png
+    SOURCE:     Synthetic example. 18 percent visible.
+
+V23_FS_05_WHY_THE_ROLE_EXISTS
+    PURPOSE:    Keep the denominator visible when the research is cited.
+    MODE:       FULL SCREEN
+    TREATMENT:  STATEMENT
+    V23_FS_05_WHY_THE_ROLE_EXISTS.png          V23_FS_05_WHY_THE_ROLE_EXISTS.png
+    SOURCE:     The fifteen-posting sample. No generalization beyond it.
+
+V23_FS_06_KINDS_OF_AUTHORITY
+    PURPOSE:    Show that authority has several shapes, so the viewer does not read formal authority as the only valuable kind.
+    MODE:       FULL SCREEN
+    TREATMENT:  SEQUENCE
+    V23_FS_06_KINDS_OF_AUTHORITY.png           V23_FS_06_KINDS_OF_AUTHORITY.png, V23_FS_06_KINDS_OF_AUTHORITY.svg
+    SOURCE:     Authority verbs as separated in the fifteen-posting sample.
+
+V23_FS_07_EXECUTION_CONTAINS_CHOICES
+    PURPOSE:    Protect execution. The three questions are the script's own, and there are exactly three.
+    MODE:       FULL SCREEN
+    TREATMENT:  SEQUENCE
+    V23_FS_07_EXECUTION_CONTAINS_CHOICES.png   V23_FS_07_EXECUTION_CONTAINS_CHOICES.png
+
+V23_FS_08_AUTHORITY_BOUNDARY
+    PURPOSE:    Draw the authority boundary explicitly, so naming a decision is not read as claiming the program.
+    MODE:       FULL SCREEN
+    TREATMENT:  COMPARISON
+    V23_FS_08_AUTHORITY_BOUNDARY.png           V23_FS_08_AUTHORITY_BOUNDARY.png
+    SOURCE:     Synthetic example, no figures shown. The label is carried anyway because the card describes the invented scenario.
+
+V23_FS_09_JUDGMENT_IS_NOT_ONLY_ANALYSIS
+    PURPOSE:    Widen judgment past analysis, using only the forms the postings showed.
+    MODE:       FULL SCREEN
+    TREATMENT:  SEQUENCE
+    V23_FS_09_JUDGMENT_IS_NOT_ONLY_ANALYSIS.png V23_FS_09_JUDGMENT_IS_NOT_ONLY_ANALYSIS.png
+    SOURCE:     Sample-bounded. No categories added beyond the script's list.
+
+V23_FS_10_THE_CALL
+    PURPOSE:    Name the distinctive call after the viewer has felt it on camera, not before.
+    MODE:       FULL SCREEN
+    TREATMENT:  COMPARISON
+    V23_FS_10_THE_CALL.png                     V23_FS_10_THE_CALL.png
+    SOURCE:     Synthetic example. Label carried although no figure is shown.
+
+V23_FS_11_NINE_OF_FIFTEEN
+    PURPOSE:    Keep the denominator on screen where the research claim is strongest.
+    MODE:       FULL SCREEN
+    TREATMENT:  STATEMENT
+    V23_FS_11_NINE_OF_FIFTEEN.png              V23_FS_11_NINE_OF_FIFTEEN.png
+    SOURCE:     Nine of fifteen. Not most employers, not the market.
+
+V23_FS_12_TWO_HALVES
+    PURPOSE:    Proof has two halves. Show them joined, not opposed.
+    MODE:       FULL SCREEN
+    TREATMENT:  COMPARISON
+    V23_FS_12A_TWO_HALVES.png                  V23_FS_12A_TWO_HALVES.png
+    V23_FS_12B_FILLED.png                      V23_FS_12B_FILLED.png
+    SOURCE:     Synthetic example. 89 percent visible on B.
+
+V23_FS_13_THE_PAYOFF
+    PURPOSE:    The central editorial payoff of the video, given the screen.
+    MODE:       FULL SCREEN
+    TREATMENT:  STATEMENT
+    V23_FS_13_THE_PAYOFF.png                   V23_FS_13_THE_PAYOFF.png
+
+V23_FS_14_SAME_COMPANY
+    PURPOSE:    Two near-identical postings whose requirements diverge. The employer is not named, shown, or styled.
+    MODE:       FULL SCREEN
+    TREATMENT:  COMPARISON
+    V23_FS_14A_NEAR_IDENTICAL.png              V23_FS_14A_NEAR_IDENTICAL.png, V23_FS_14A_NEAR_IDENTICAL.svg
+    V23_FS_14B_DIFFERENT_DOOR.png              V23_FS_14B_DIFFERENT_DOOR.png
+    SOURCE:     B1 and B2. Anonymized by closed editorial decision: no employer name, no logo, no URL, no identifying styling.
+
+V23_FS_15_DIFFERENT_DOOR
+    PURPOSE:    Land the catch in five words.
+    MODE:       FULL SCREEN
+    TREATMENT:  STATEMENT
+    V23_FS_15_DIFFERENT_DOOR.png               V23_FS_15_DIFFERENT_DOOR.png
+
+V23_FS_16_REAL_GAP_REMAINS
+    PURPOSE:    Close the video without implying that better evidence removes a real requirement.
+    MODE:       FULL SCREEN
+    TREATMENT:  STATEMENT
+    V23_FS_16_REAL_GAP_REMAINS.png             V23_FS_16_REAL_GAP_REMAINS.png
+
+V23_FS_17_CTA
+    PURPOSE:    One action and one resource. Nothing stacked behind them.
+    MODE:       FULL SCREEN
+    TREATMENT:  CTA
+    V23_FS_17A_FOUR_LINES.png                  V23_FS_17A_FOUR_LINES.png
+    V23_FS_17B_RESOURCE.png                    V23_FS_17B_RESOURCE.png
+
+V23_WN_01_V8
+    PURPOSE:    Watch Next candidate. Full screen and final. Nothing returns to camera after it.
+    MODE:       FULL SCREEN
+    TREATMENT:  WATCH NEXT
+    V23_WN_01_V8.png                           V23_WN_01_V8.png
+    SOURCE:     Destination is Video 8 of the locked V4 to V21 set.
+
+V23_WN_02_V10
+    PURPOSE:    Watch Next candidate. Full screen and final. Nothing returns to camera after it.
+    MODE:       FULL SCREEN
+    TREATMENT:  WATCH NEXT
+    V23_WN_02_V10.png                          V23_WN_02_V10.png
+    SOURCE:     Destination is Video 10 of the locked V4 to V21 set.
