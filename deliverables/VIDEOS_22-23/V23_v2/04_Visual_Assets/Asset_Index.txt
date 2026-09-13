@@ -1,0 +1,141 @@
+==============================================================================
+VIDEO 23  |  ASSET INDEX
+==============================================================================
+
+Turn One Accomplishment Into Proof in 10 Minutes
+
+12 active families, 21 image states, plus 2 Watch Next candidate cards.
+PNG is 1920 x 1080. An SVG is provided where a designer may need
+to re-time or recolor the card; its text is live and the brand
+faces are embedded.
+
+------------------------------------------------------------------------------
+
+V23_FS_01_CLAIM
+    CLASS:      COPY UPDATE
+    PURPOSE:    Put the weak sentence on screen exactly as a reader would meet it.
+    TREATMENT:  ARTIFACT
+    V23_FS_01_CLAIM.png                          V23_FS_01_CLAIM.png
+    SOURCE:     Synthetic example. Label carried because 18 percent is visible.
+
+V23_FS_02_UNANSWERED
+    CLASS:      COPY UPDATE
+    PURPOSE:    Show what the sentence leaves unanswered, one question at a time, in the four things the new hook names.
+    TREATMENT:  SEQUENCE
+    V23_FS_02A_BROKEN_BEFORE.png                 V23_FS_02A_BROKEN_BEFORE.png
+    V23_FS_02B_ALLOWED_TO_DECIDE.png             V23_FS_02B_ALLOWED_TO_DECIDE.png
+    V23_FS_02C_WHAT_WAS_HARD.png                 V23_FS_02C_WHAT_WAS_HARD.png
+    V23_FS_02D_WHERE_THE_NUMBER_CAME_FROM.png    V23_FS_02D_WHERE_THE_NUMBER_CAME_FROM.png
+    SOURCE:     Synthetic example. Label carried because 18 percent is visible.
+
+V23_FS_03_FOUR_LINE_PROOF
+    CLASS:      COPY UPDATE
+    PURPOSE:    Show the finished version first. The viewer sees what the framework produces before being asked to learn it.
+    TREATMENT:  SEQUENCE
+    V23_FS_03_FOUR_LINE_PROOF.png                V23_FS_03_FOUR_LINE_PROOF.png, V23_FS_03_FOUR_LINE_PROOF.svg
+    V23_FS_03A_PROBLEM_BEFORE.png                V23_FS_03A_PROBLEM_BEFORE.png
+    V23_FS_03B_MINE_TO_DECIDE.png                V23_FS_03B_MINE_TO_DECIDE.png
+    V23_FS_03C_JUDGMENT.png                      V23_FS_03C_JUDGMENT.png
+    V23_FS_03D_PROOF_AND_HOW.png                 V23_FS_03D_PROOF_AND_HOW.png
+    SOURCE:     Synthetic example. 71 and 89 percent are both visible, so the label is persistent.
+
+V23_FS_04_CLAIM_VS_PROOF
+    CLASS:      COPY UPDATE
+    PURPOSE:    One claim beside one reconstructed proof, because the contrast is the whole teaching.
+    TREATMENT:  COMPARISON
+    V23_FS_04_CLAIM_VS_PROOF.png                 V23_FS_04_CLAIM_VS_PROOF.png
+    SOURCE:     Synthetic example. 18 percent visible.
+
+V23_FS_07_EXECUTION_CONTAINS_CHOICES
+    CLASS:      COPY UPDATE
+    PURPOSE:    Protect execution. The five questions are the script's own, and there are exactly five.
+    TREATMENT:  SEQUENCE
+    V23_FS_07_EXECUTION_CONTAINS_CHOICES.png     V23_FS_07_EXECUTION_CONTAINS_CHOICES.png
+
+V23_FS_08_AUTHORITY_BOUNDARY
+    CLASS:      COPY UPDATE
+    PURPOSE:    Draw the boundary explicitly, so naming a decision is not read as claiming authority that was not there.
+    TREATMENT:  COMPARISON
+    V23_FS_08_AUTHORITY_BOUNDARY.png             V23_FS_08_AUTHORITY_BOUNDARY.png
+
+V23_FS_10_THE_CALL
+    CLASS:      COPY UPDATE
+    PURPOSE:    Name the distinctive call after the viewer has felt it on camera, not before.
+    TREATMENT:  COMPARISON
+    V23_FS_10_THE_CALL.png                       V23_FS_10_THE_CALL.png
+    SOURCE:     Synthetic example. Label carried although no figure is shown.
+
+V23_FS_12_TWO_HALVES
+    CLASS:      COPY UPDATE
+    PURPOSE:    Result and mechanism are two separate things. Show them joined, not opposed.
+    TREATMENT:  COMPARISON
+    V23_FS_12A_TWO_HALVES.png                    V23_FS_12A_TWO_HALVES.png, V23_FS_12A_TWO_HALVES.svg
+    V23_FS_12B_FILLED.png                        V23_FS_12B_FILLED.png
+    SOURCE:     Synthetic example. 89 percent visible on B.
+
+V23_FS_13_THE_PAYOFF
+    CLASS:      REUSE
+    PURPOSE:    The central editorial payoff of the video, given the screen.
+    TREATMENT:  STATEMENT
+    V23_FS_13_THE_PAYOFF.png                     V23_FS_13_THE_PAYOFF.png
+
+V23_FS_16_REAL_GAP_REMAINS
+    CLASS:      COPY UPDATE
+    PURPOSE:    Close the video without implying that better evidence removes a real requirement.
+    TREATMENT:  SEQUENCE
+    V23_FS_16_REAL_GAP_REMAINS.png               V23_FS_16_REAL_GAP_REMAINS.png
+
+V23_FS_18_CHANGE_THE_EMPHASIS
+    CLASS:      NEW
+    PURPOSE:    The final distinction of the video, given its own card because it is the line that keeps the whole method honest.
+    TREATMENT:  STATEMENT
+    V23_FS_18_CHANGE_THE_EMPHASIS.png            V23_FS_18_CHANGE_THE_EMPHASIS.png
+
+V23_FS_17_CTA
+    CLASS:      COPY UPDATE
+    PURPOSE:    One action and one resource. Nothing stacked behind them.
+    TREATMENT:  CTA
+    V23_FS_17A_FOUR_LINES.png                    V23_FS_17A_FOUR_LINES.png
+    V23_FS_17B_RESOURCE.png                      V23_FS_17B_RESOURCE.png
+
+V23_WN_01_V8
+    CLASS:      REUSE
+    PURPOSE:    Watch Next candidate. Full screen and final. Nothing returns to camera after it.
+    TREATMENT:  WATCH NEXT
+    V23_WN_01_V8.png                             V23_WN_01_V8.png
+    SOURCE:     Destination is Video 8 of the locked V4 to V21 set.
+
+V23_WN_02_V10
+    CLASS:      REUSE
+    PURPOSE:    Watch Next candidate. Full screen and final. Nothing returns to camera after it.
+    TREATMENT:  WATCH NEXT
+    V23_WN_02_V10.png                            V23_WN_02_V10.png
+    SOURCE:     Destination is Video 10 of the locked V4 to V21 set.
+
+------------------------------------------------------------------------------
+
+RETIRED FROM THE ACTIVE EDIT
+
+  These families were in the previous package. The new script
+  does not teach them, so they carry no cue and no file here.
+
+  V23_FS_05_WHY_THE_ROLE_EXISTS
+      The new script does not make the fifteen-of-fifteen claim.
+
+  V23_FS_06_KINDS_OF_AUTHORITY
+      The new script does not list the authority verbs in V23.
+
+  V23_FS_09_JUDGMENT_IS_NOT_ONLY_ANALYSIS
+      The new judgment section teaches through the depot scene rather than
+      through a list of forms of judgment.
+
+  V23_FS_11_NINE_OF_FIFTEEN
+      The new script states the research in bounded prose and makes no
+      nine-of-fifteen claim.
+
+  V23_FS_14_SAME_COMPANY
+      The new script drops the same-company comparison entirely.
+
+  V23_FS_15_DIFFERENT_DOOR
+      With the comparison gone there is no different-door conclusion to
+      land.

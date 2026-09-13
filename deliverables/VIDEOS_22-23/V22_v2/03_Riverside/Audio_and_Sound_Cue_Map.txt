@@ -1,0 +1,70 @@
+==============================================================================
+VIDEO 22  |  AUDIO AND SOUND CUE MAP
+==============================================================================
+
+Decode a Job Description in 10 Minutes
+
+Four to seven restrained accents across the video. Not every
+reveal gets one, and nothing is scored to keep energy up.
+
+------------------------------------------------------------------------------
+
+V22_FS_01_TITLE_ONLY
+    One restrained reveal accent, then nothing.
+
+V22_FS_02_THE_CONTRADICTION
+    One accent on A, one quieter on B.
+
+V22_FS_03_THE_SAMPLE
+    One accent.
+
+V22_FS_05_PARP
+    One accent.
+
+V22_FS_04_THREE_QUESTIONS
+    One quiet accent per reveal.
+
+V22_FS_06_HCSC_WALKTHROUGH
+    One quiet accent per point.
+
+V22_FS_08_RULE01_READ_THE_VERBS
+    One restrained accent.
+
+V22_FS_09_PREDEFINED_DECISIONS
+    One accent on A, one on B.
+
+V22_FS_17_REAL_GAP
+    One accent on each.
+
+V22_FS_10_DIRECTOR_COMPARE
+    One accent on establish. Nothing on B.
+
+V22_FS_12_DIRECTOR_LESSON
+    One quiet accent per line.
+
+V22_FS_13_ACRONYM_WALL
+    One accent on B only.
+
+V22_FS_15_CEILING
+    One accent on A, one on B.
+
+V22_FS_16_RULE02_READ_THE_WORK
+    One restrained accent.
+
+V22_FS_19_FOUR_THINGS
+    One accent.
+
+V22_FS_20_CTA
+    One accent on A, one on B.
+
+------------------------------------------------------------------------------
+
+SILENT BY DESIGN
+
+  V22_FS_14_AUTHORITY_POSTURES                 No accents on the activations.
+  V22_FS_18_WHAT_IT_WILL_NOT_DO                No accent.
+
+------------------------------------------------------------------------------
+
+  Music: no track is licensed or selected in this package.
+  Loudness, balance and picture quality are final-export QA.

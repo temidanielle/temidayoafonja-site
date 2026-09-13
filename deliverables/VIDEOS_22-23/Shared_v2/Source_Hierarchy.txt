@@ -1,0 +1,95 @@
+==============================================================================
+V22 AND V23  |  SOURCE HIERARCHY AND MANIFEST
+==============================================================================
+
+Generated Sunday, September 13, 2026 | 5:06 PM CT
+
+------------------------------------------------------------------------------
+
+ORDER OF AUTHORITY
+
+  1  Video_22_FINAL_Story_Led_Recording_Script.docx
+  2  Video_23_FINAL_Story_Led_Recording_Script.docx
+        Title, thumbnail, spoken wording and editorial sequence.
+        These supersede the 50CHAR advisor-review scripts the
+        previous package was built from.
+
+  3  V22-V38_Roadmap_Extension_Overview_and_Editorial_Map.docx
+        Locked packaging and the runtime map. It does not
+        override exact spoken wording.
+
+  4  Internal Source Capture Packet
+        Provenance, employer and posting evidence, research
+        boundaries, source presentation, anonymization and the
+        synthetic-example rules. Unchanged by this pass.
+
+------------------------------------------------------------------------------
+
+SUPERSEDED. NOT USED AS CURRENT SOURCE.
+
+  Title:     How to Decode a Job Description
+  Title:     Turn One Accomplishment Into Career Proof
+  Thumbnail: YOU DID IT. CAN YOU PROVE IT?
+
+  The 50CHAR advisor-review scripts are no longer current
+  spoken source. None of the above appears in any active
+  production document this build writes, which QA checks rather
+  than assumes.
+
+------------------------------------------------------------------------------
+
+PRIOR PACKAGE, PRESERVED
+
+  YouTube_V22-V23_FINAL_Production_Packages_2026-09-13.zip
+  sha256 fdfb5f7306ae800b8af204a52eab76d978a59e021698ba7803e207893d5dcb6d
+
+  Not modified and not overwritten. It is no longer the active
+  production handoff.
+
+------------------------------------------------------------------------------
+
+SOURCE FILES, AS SUPPLIED
+
+  Video_22_FINAL_Story_Led_Recording_Script.docx
+      sha256  c6732223d206e92f1bcde618112cb66a62fbc4465819af39d2f14461933971f6
+      bytes   39,844
+
+  Video_23_FINAL_Story_Led_Recording_Script.docx
+      sha256  d21872db2294794c72a4c835df81353f55690b8a094d874d4996c0a122bb2dbd
+      bytes   39,597
+
+  V22-V38_Roadmap_Extension_Overview_and_Editorial_Map.docx
+      sha256  ff256c3269aae160a8a1afa39a07e642e5766f95c0ecf0de4160d8f864a06d20
+      bytes   40,325
+
+------------------------------------------------------------------------------
+
+LOCKED PACKAGING
+
+  V22
+      TITLE      Decode a Job Description in 10 Minutes
+      THUMBNAIL  IGNORE THE TITLE
+      WORDS      978 spoken
+
+  V23
+      TITLE      Turn One Accomplishment Into Proof in 10 Minutes
+      THUMBNAIL  CAN YOU PROVE IT?
+      WORDS      895 spoken
+
+------------------------------------------------------------------------------
+
+WORD COUNT, AND WHY TWO FIGURES EXIST
+
+  The supplied figures are V22 982 and V23 895.
+  Whitespace tokenization of the spoken text gives V22 978 and
+  V23 895.
+
+  The V22 difference is fully explained and nothing was changed.
+  The script contains exactly four currency figures: $61,500,
+  $248,000, $180,000 and $440,000. A counter that separates the
+  currency symbol from the numeral counts each as two tokens,
+  which is 978 plus 4, or 982. V23 contains no currency figure,
+  which is why the two methods agree there exactly.
+
+  Both figures describe the same unchanged script. No wording was
+  altered to make either number work.

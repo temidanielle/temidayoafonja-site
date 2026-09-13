@@ -1,0 +1,185 @@
+==============================================================================
+VIDEO 22  |  ASSET INDEX
+==============================================================================
+
+Decode a Job Description in 10 Minutes
+
+18 active families, 36 image states, plus 2 Watch Next candidate cards.
+PNG is 1920 x 1080. An SVG is provided where a designer may need
+to re-time or recolor the card; its text is live and the brand
+faces are embedded.
+
+------------------------------------------------------------------------------
+
+V22_FS_01_TITLE_ONLY
+    CLASS:      REUSE
+    PURPOSE:    Let the title sit alone long enough for the viewer to form an assumption before anything contradicts it.
+    TREATMENT:  ARTIFACT
+    V22_FS_01_TITLE_ONLY.png                     V22_FS_01_TITLE_ONLY.png
+    SOURCE:     A1. HCSC, requisition R0055598.
+
+V22_FS_02_THE_CONTRADICTION
+    CLASS:      REUSE
+    PURPOSE:    Break the assumption the title created, in two beats rather than one.
+    TREATMENT:  ARTIFACT
+    V22_FS_02A_FLOOR.png                         V22_FS_02A_FLOOR.png
+    V22_FS_02B_FEEDBACK.png                      V22_FS_02B_FEEDBACK.png
+    SOURCE:     A1. Preserved text, capture packet.
+
+V22_FS_03_THE_SAMPLE
+    CLASS:      COPY UPDATE
+    PURPOSE:    Put the denominator on screen the moment it is spoken, so every later claim is read against it.
+    TREATMENT:  STATEMENT
+    V22_FS_03_THE_SAMPLE.png                     V22_FS_03_THE_SAMPLE.png
+
+V22_FS_05_PARP
+    CLASS:      COPY UPDATE
+    PURPOSE:    Name the method once, in the four words the script uses, before any section teaches one of them.
+    TREATMENT:  SEQUENCE
+    V22_FS_05_PARP_FRAMEWORK.png                 V22_FS_05_PARP_FRAMEWORK.png, V22_FS_05_PARP_FRAMEWORK.svg
+
+V22_FS_04_THREE_QUESTIONS
+    CLASS:      COPY UPDATE
+    PURPOSE:    Three questions the viewer carries through the whole video, arriving one at a time so none is skimmed.
+    TREATMENT:  SEQUENCE
+    V22_FS_04A_COULD_I_DO_IT.png                 V22_FS_04A_COULD_I_DO_IT.png
+    V22_FS_04B_CAN_I_PROVE_IT.png                V22_FS_04B_CAN_I_PROVE_IT.png
+    V22_FS_04C_DO_I_MEET_THE_GATES.png           V22_FS_04C_DO_I_MEET_THE_GATES.png
+
+V22_FS_06_HCSC_WALKTHROUGH
+    CLASS:      COPY UPDATE
+    PURPOSE:    Run the method across one real posting, with the artifact large enough to read on a phone and only the point being taught explained beside it.
+    TREATMENT:  ARTIFACT
+    V22_FS_06A_PROBLEM.png                       V22_FS_06A_PROBLEM.png, V22_FS_06A_PROBLEM.svg
+    V22_FS_06B_AUTHORITY.png                     V22_FS_06B_AUTHORITY.png
+    V22_FS_06C_PROOF.png                         V22_FS_06C_PROOF.png
+    SOURCE:     A1. Preserved text, capture packet.
+
+V22_FS_08_RULE01_READ_THE_VERBS
+    CLASS:      COPY UPDATE
+    PURPOSE:    Fix the second step in the viewer's memory in the words the script now uses.
+    TREATMENT:  STATEMENT
+    V22_FS_08_RULE01_READ_THE_VERBS.png          V22_FS_08_RULE01_READ_THE_VERBS.png
+
+V22_FS_09_PREDEFINED_DECISIONS
+    CLASS:      REUSE
+    PURPOSE:    Show that the same employer writes a role near a quarter of a million dollars in bounded-decision language, without mocking the role.
+    TREATMENT:  ARTIFACT
+    V22_FS_09A_SAME_COMPANY.png                  V22_FS_09A_SAME_COMPANY.png
+    V22_FS_09B_PREDEFINED.png                    V22_FS_09B_PREDEFINED.png
+    SOURCE:     A2. Claim limit: the posting establishes predefined decisions. It does not establish who created them, and nothing on screen says otherwise.
+
+V22_FS_17_REAL_GAP
+    CLASS:      COPY UPDATE
+    PURPOSE:    Show that a real gap is not always a skill gap, using the one posting that said so outright.
+    TREATMENT:  COMPARISON
+    V22_FS_17A_GEOGRAPHIC.png                    V22_FS_17A_GEOGRAPHIC.png
+    V22_FS_17B_TIME_ZONE.png                     V22_FS_17B_TIME_ZONE.png
+    SOURCE:     A6. GiveDirectly, named on camera, past tense as spoken. The posting states the overlap requirement; no local meeting time is stated or implied.
+
+V22_FS_10_DIRECTOR_COMPARE
+    CLASS:      COPY UPDATE
+    PURPOSE:    Two roles that share a level word, read side by side so the difference is visible rather than asserted.
+    TREATMENT:  COMPARISON
+    V22_FS_10A_SAME_WORD.png                     V22_FS_10A_SAME_WORD.png, V22_FS_10A_SAME_WORD.svg
+    V22_FS_10B_SCOPE.png                         V22_FS_10B_SCOPE.png
+    SOURCE:     A3 and A4. No compensation comparison is made: the script no longer draws one.
+
+V22_FS_12_DIRECTOR_LESSON
+    CLASS:      REBUILD
+    PURPOSE:    Land the section in the four beats the script actually speaks.
+    TREATMENT:  SEQUENCE
+    V22_FS_12A_SAME_WORD.png                     V22_FS_12A_SAME_WORD.png
+    V22_FS_12B_DIFFERENT_WORK.png                V22_FS_12B_DIFFERENT_WORK.png
+    V22_FS_12C_DIFFERENT_AUTHORITY.png           V22_FS_12C_DIFFERENT_AUTHORITY.png
+    V22_FS_12D_DIFFERENT_CONTEXT.png             V22_FS_12D_DIFFERENT_CONTEXT.png
+
+V22_FS_13_ACRONYM_WALL
+    CLASS:      REUSE
+    PURPOSE:    Let the unfamiliar title and the density of the language register before the reversal lands.
+    TREATMENT:  ARTIFACT
+    V22_FS_13A_UNFAMILIAR_TITLE.png              V22_FS_13A_UNFAMILIAR_TITLE.png
+    V22_FS_13B_ACRONYM_WALL.png                  V22_FS_13B_ACRONYM_WALL.png
+    SOURCE:     A5. Acronyms shown as captured.
+
+V22_FS_14_AUTHORITY_POSTURES
+    CLASS:      COPY UPDATE
+    PURPOSE:    Four things the posting says the person does, arriving one at a time so none is read as the whole role.
+    TREATMENT:  SEQUENCE
+    V22_FS_14_AUTHORITY_POSTURES.png             V22_FS_14_AUTHORITY_POSTURES.png, V22_FS_14_AUTHORITY_POSTURES.svg
+    V22_FS_14A_LEADS.png                         V22_FS_14A_LEADS.png
+    V22_FS_14B_ADVISES.png                       V22_FS_14B_ADVISES.png
+    V22_FS_14C_COORDINATES.png                   V22_FS_14C_COORDINATES.png
+    V22_FS_14D_SUBJECT_MATTER_EXPERT.png         V22_FS_14D_SUBJECT_MATTER_EXPERT.png
+    SOURCE:     A5. Preserved text. The old EXECUTES posture is retired: the new script does not say it.
+
+V22_FS_15_CEILING
+    CLASS:      COPY UPDATE
+    PURPOSE:    Hold the salary reveal to the end of the beat, and keep the sample boundary attached to the claim.
+    TREATMENT:  STATEMENT
+    V22_FS_15A_RANGE.png                         V22_FS_15A_RANGE.png
+    V22_FS_15B_IN_THIS_SAMPLE.png                V22_FS_15B_IN_THIS_SAMPLE.png
+    SOURCE:     A5. Claim bounded to the 15-posting sample.
+
+V22_FS_16_RULE02_READ_THE_WORK
+    CLASS:      COPY UPDATE
+    PURPOSE:    The second rule, paired visually with the first.
+    TREATMENT:  STATEMENT
+    V22_FS_16_RULE02_READ_THE_WORK.png           V22_FS_16_RULE02_READ_THE_WORK.png
+
+V22_FS_18_WHAT_IT_WILL_NOT_DO
+    CLASS:      REBUILD
+    PURPOSE:    Put the limits of the method on screen in the same weight as the method itself, and only the limits the script speaks.
+    TREATMENT:  STATEMENT
+    V22_FS_18_WHAT_IT_WILL_NOT_DO.png            V22_FS_18_WHAT_IT_WILL_NOT_DO.png
+
+V22_FS_19_FOUR_THINGS
+    CLASS:      COPY UPDATE
+    PURPOSE:    Close on the recurring audit this channel returns to, in the script's own four phrases.
+    TREATMENT:  SEQUENCE
+    V22_FS_19_FOUR_THINGS.png                    V22_FS_19_FOUR_THINGS.png, V22_FS_19_FOUR_THINGS.svg
+
+V22_FS_20_CTA
+    CLASS:      COPY UPDATE
+    PURPOSE:    One ask. No product, no comment ask, nothing stacked.
+    TREATMENT:  CTA
+    V22_FS_20A_WRITE_FOUR_LINES.png              V22_FS_20A_WRITE_FOUR_LINES.png
+    V22_FS_20B_STRONGEST_VERB.png                V22_FS_20B_STRONGEST_VERB.png
+
+V22_WN_01_V14
+    CLASS:      REUSE
+    PURPOSE:    Watch Next candidate. Full screen and final. Nothing returns to camera after it.
+    TREATMENT:  WATCH NEXT
+    V22_WN_01_V14.png                            V22_WN_01_V14.png
+    SOURCE:     Destination is Video 14 of the locked V4 to V21 set.
+
+V22_WN_02_V21
+    CLASS:      REUSE
+    PURPOSE:    Watch Next candidate. Full screen and final. Nothing returns to camera after it.
+    TREATMENT:  WATCH NEXT
+    V22_WN_02_V21.png                            V22_WN_02_V21.png
+    SOURCE:     Destination is Video 21 of the locked V4 to V21 set.
+
+------------------------------------------------------------------------------
+
+RETIRED FROM THE ACTIVE EDIT
+
+  These families were in the previous package. The new script
+  does not teach them, so they carry no cue and no file here.
+
+  V22_FS_06D_REAL_GAP
+      The new Real Gap section is taught on the GiveDirectly posting, not
+      on the first HCSC posting, so the fourth walkthrough point has no
+      spoken job.
+
+  V22_FS_07_TITLE_VS_FILE
+      The new script no longer teaches the internal Information Technology
+      filing point.
+
+  V22_FS_10C_FLOORS
+      The new script draws no compensation comparison between the two
+      Director roles.
+
+  V22_FS_11_DIRECTOR_BOUNDARY
+      With no compensation comparison there is no compensation boundary to
+      state.

@@ -1,0 +1,189 @@
+==============================================================================
+VIDEO 22  |  MOTION AND REVEAL MAP
+==============================================================================
+
+Decode a Job Description in 10 Minutes
+
+Reveal order for every card that has more than one state, and the
+emphasis state of each. Because YouTube is not interactive, a
+numbered point is a reading order, never a button.
+
+------------------------------------------------------------------------------
+
+V22_FS_01_TITLE_ONLY   (REUSE)
+    TRIGGER:    Senior Divisional Strategy Consultant, Governance.
+    LAYOUT:     Artifact. Nothing else on screen.
+    TREATMENT:  ARTIFACT
+    BUILD:      SINGLE
+    1. V22_FS_01_TITLE_ONLY                       Single state. No build.
+    HOLD:       Hold four to five seconds on the title alone. Do not reveal the range yet.
+
+V22_FS_02_THE_CONTRADICTION   (REUSE)
+    TRIGGER:    Now here is the part that should slow you down. The bottom of the published range was $61,500, and one of the required qualifications was the ability to accept direction and feedback.
+    LAYOUT:     Same artifact, two preserved lines, one active at a time.
+    TREATMENT:  ARTIFACT
+    BUILD:      BUILD
+    1. V22_FS_02A_FLOOR                           State A on the published range clause. The floor is active.
+    2. V22_FS_02B_FEEDBACK                        State B on the required-qualifications clause of the same sentence. The requirement line becomes active.
+    HOLD:       Both states sit inside one spoken sentence. Cut to B on 'and one of the required qualifications'. Return to camera on 'That is why I do not start with the title anymore.'
+
+V22_FS_03_THE_SAMPLE   (COPY UPDATE)
+    TRIGGER:    I read 15 postings from 11 employers for this research.
+    LAYOUT:     One figure held large with its own limit underneath.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. V22_FS_03_THE_SAMPLE                       Single state.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+V22_FS_05_PARP   (COPY UPDATE)
+    TRIGGER:    The four things are:
+    LAYOUT:     Framework, established whole and left whole.
+    TREATMENT:  SEQUENCE
+    BUILD:      SINGLE
+    1. V22_FS_05_PARP_FRAMEWORK                   Single state. Establish only. Each of the four is taught by its own section, so nothing is activated here.
+    HOLD:       Lands on 'The four things are:' and holds through the four words.
+
+V22_FS_04_THREE_QUESTIONS   (COPY UPDATE)
+    TRIGGER:    Could I do this work? Can I prove relevant evidence? Do I meet the stated gates?
+    LAYOUT:     Sequential reveal. Earlier questions stay but quiet.
+    TREATMENT:  SEQUENCE
+    BUILD:      ARRIVE
+    1. V22_FS_04A_COULD_I_DO_IT                   On 'Could I do this work?'
+    2. V22_FS_04B_CAN_I_PROVE_IT                  On 'Can I prove relevant evidence?'
+    3. V22_FS_04C_DO_I_MEET_THE_GATES             On 'Do I meet the stated gates?' All three readable together.
+    HOLD:       Build across the one spoken paragraph, then hold through 'Those are not the same question.'
+
+V22_FS_06_HCSC_WALKTHROUGH   (COPY UPDATE)
+    TRIGGER:    In that Senior Divisional Strategy Consultant role, the work was not "be strategic." The division needed a consistent way to evaluate opportunities, track them, and report on them.
+    LAYOUT:     Artifact with numbered teaching points, one active at a time. Three points now: the real gap is taught on a different posting.
+    TREATMENT:  ARTIFACT
+    BUILD:      ARRIVE
+    1. V22_FS_06A_PROBLEM                         Point 1 active, on the sentence that names what the division needed.
+    2. V22_FS_06B_AUTHORITY                       Point 2 active, on the sentence that names the verb.
+    3. V22_FS_06C_PROOF                           Point 3 active, on the sentence that lists the evidence.
+    HOLD:       The three states are spread across the PROBLEM, AUTHORITY and PROOF sections. Cut away to camera between them; each returns to the same artifact.
+
+V22_FS_08_RULE01_READ_THE_VERBS   (COPY UPDATE)
+    TRIGGER:    Next, read the verbs.
+    LAYOUT:     Rule card. Navy ground, one line.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. V22_FS_08_RULE01_READ_THE_VERBS            Single state.
+    HOLD:       Hold through the next sentence, then cut back to camera.
+
+V22_FS_09_PREDEFINED_DECISIONS   (REUSE)
+    TRIGGER:    Director of Enterprise Resilience. The range went to just under $248,000.
+    LAYOUT:     Artifact, establish then activate the requirement line.
+    TREATMENT:  ARTIFACT
+    BUILD:      BUILD
+    1. V22_FS_09A_SAME_COMPANY                    Establish on the title and range sentence.
+    2. V22_FS_09B_PREDEFINED                      Activate the requirement line on the sentence that quotes it.
+    HOLD:       Establish under the title sentence. Cut to B on the requirement sentence, then return to camera. The defense of the role is delivered on camera, not on a card.
+
+V22_FS_17_REAL_GAP   (COPY UPDATE)
+    TRIGGER:    One posting in the sample was unusually direct. GiveDirectly was hiring a Director of Global Talent Acquisition and said candidates whose recruiting experience was exclusively in one geographic context were unlikely to be a strong fit.
+    LAYOUT:     Two stated constraints, the second added when it is spoken.
+    TREATMENT:  COMPARISON
+    BUILD:      BUILD
+    1. V22_FS_17A_GEOGRAPHIC                      The geographic boundary, active.
+    2. V22_FS_17B_TIME_ZONE                       The overlap requirement becomes active, with the script's own reading of it on the card.
+    HOLD:       A on the GiveDirectly sentence. B on the overlap sentence, held through 'It is an operating constraint.'
+
+V22_FS_10_DIRECTOR_COMPARE   (COPY UPDATE)
+    TRIGGER:    One was Director, Talent Management. The other was Director of Strategic Initiatives.
+    LAYOUT:     Side-by-side comparison, scope revealed second.
+    TREATMENT:  COMPARISON
+    BUILD:      BUILD
+    1. V22_FS_10A_SAME_WORD                       Establish. The two titles and their experience minimums.
+    2. V22_FS_10B_SCOPE                           Add scope and reporting relationship across the two sentences that describe them.
+    HOLD:       Establish on the two-titles sentence. B builds across the two description sentences, then cut to camera for the four-line distinction.
+
+V22_FS_12_DIRECTOR_LESSON   (REBUILD)
+    TRIGGER:    Same broad level word.
+    LAYOUT:     Four short lines, arriving one at a time.
+    TREATMENT:  SEQUENCE
+    BUILD:      ARRIVE
+    1. V22_FS_12A_SAME_WORD                       On 'Same broad level word.'
+    2. V22_FS_12B_DIFFERENT_WORK                  On 'Different work.'
+    3. V22_FS_12C_DIFFERENT_AUTHORITY             On 'Different authority.'
+    4. V22_FS_12D_DIFFERENT_CONTEXT               On 'Different context.' All four readable together.
+    HOLD:       One beat per spoken line. Hold the fourth through the sentence about a title not finishing the read.
+
+V22_FS_13_ACRONYM_WALL   (REUSE)
+    TRIGGER:    One posting was called Member of Technical Staff, Governance Risk Compliance.
+    LAYOUT:     Artifact, then the captured acronym line at full size.
+    TREATMENT:  ARTIFACT
+    BUILD:      BUILD
+    1. V22_FS_13A_UNFAMILIAR_TITLE                Title alone, held.
+    2. V22_FS_13B_ACRONYM_WALL                    Add the acronym line, as captured and unedited.
+    HOLD:       A holds through 'The title tells you almost nothing about seniority.' B lands on the acronym sentence.
+
+V22_FS_14_AUTHORITY_POSTURES   (COPY UPDATE)
+    TRIGGER:    But underneath that, the person was expected to lead authorization work, advise leadership, coordinate across teams, and operate as a subject-matter expert.
+    LAYOUT:     Numbered sequence, established whole, then activated one at a time.
+    TREATMENT:  SEQUENCE
+    BUILD:      ESTABLISH
+    1. V22_FS_14_AUTHORITY_POSTURES               Establish on 'But underneath that'.
+    2. V22_FS_14A_LEADS                           Activate 1 on 'lead authorization work'.
+    3. V22_FS_14B_ADVISES                         Activate 2 on 'advise leadership'.
+    4. V22_FS_14C_COORDINATES                     Activate 3 on 'coordinate across teams'.
+    5. V22_FS_14D_SUBJECT_MATTER_EXPERT           Activate 4 on 'operate as a subject-matter expert'.
+    HOLD:       One activation per clause inside the one spoken sentence. Do not show all four explanations at once.
+
+V22_FS_15_CEILING   (COPY UPDATE)
+    TRIGGER:    The published range went from $180,000 to $440,000.
+    LAYOUT:     One figure, then the claim with its limit stated on the same card.
+    TREATMENT:  STATEMENT
+    BUILD:      BUILD
+    1. V22_FS_15A_RANGE                           The published range, alone.
+    2. V22_FS_15B_IN_THIS_SAMPLE                  The claim, with 'in the sample' on screen, never implied.
+    HOLD:       A on the range sentence. B on the least-informative-title sentence.
+
+V22_FS_16_RULE02_READ_THE_WORK   (COPY UPDATE)
+    TRIGGER:    So if a title confuses you, do not automatically skip the job.
+    LAYOUT:     Rule card, same construction as rule one.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. V22_FS_16_RULE02_READ_THE_WORK             Single state.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+V22_FS_18_WHAT_IT_WILL_NOT_DO   (REBUILD)
+    TRIGGER:    This method will not tell you who will get hired.
+    LAYOUT:     Six short lines, all visible. Spoken as one boundary passage.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. V22_FS_18_WHAT_IT_WILL_NOT_DO              Single state.
+    HOLD:       Lands on the first boundary sentence and holds through 'Reading better does not guarantee a better outcome.' Cut to camera for 'It gives you a cleaner read.'
+
+V22_FS_19_FOUR_THINGS   (COPY UPDATE)
+    TRIGGER:    That is enough to tell you what may travel, what may not, what you can prove, and what you would still need to learn.
+    LAYOUT:     Framework, established whole and left whole.
+    TREATMENT:  SEQUENCE
+    BUILD:      SINGLE
+    1. V22_FS_19_FOUR_THINGS                      Single state.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+V22_FS_20_CTA   (COPY UPDATE)
+    TRIGGER:    Write four lines:
+    LAYOUT:     Action card, navy ground. The verb instruction is added last.
+    TREATMENT:  CTA
+    BUILD:      BUILD
+    1. V22_FS_20A_WRITE_FOUR_LINES                The four lines, on the sentence that names them.
+    2. V22_FS_20B_STRONGEST_VERB                  Add the closing instruction.
+    HOLD:       A on 'Write four lines:'. B on 'Then find the strongest verb'. Hold B to the end of the spoken line.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+  One active idea at a time. When a framework is being taught,
+  one component is warm and the rest are quiet.
+
+  Establish the whole structure before activating any part of it.
+
+  No animation whose only purpose is to keep the screen moving.
+  Stillness is allowed when the viewer needs to read or think.
+
+  No fake buttons, progress bars, quiz interfaces or dashboards.
+
+  A card never moves while the presenter moves behind it.

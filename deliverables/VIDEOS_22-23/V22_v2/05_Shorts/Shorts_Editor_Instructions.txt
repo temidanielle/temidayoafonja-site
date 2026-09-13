@@ -1,0 +1,90 @@
+==============================================================================
+VIDEO 22  |  SHORTS VISUAL AND EDITOR INSTRUCTIONS
+==============================================================================
+
+Decode a Job Description in 10 Minutes
+
+Six candidates. Current cadence is about three per long-form
+video, so three of these six ship.
+
+------------------------------------------------------------------------------
+
+SHARED RULES
+
+  9:16. The same navy, cream and warm gold system as the video.
+  Large type. One idea per card. Generous margins.
+  Reuse the long-form card where one exists, reframed to 9:16,
+  rather than rebuilding a different-looking version of it.
+  Every evidence boundary in the source video travels with the
+  line that needs it. A Short may not be the place the boundary
+  gets dropped.
+  One ask at the end. Never two.
+
+------------------------------------------------------------------------------
+
+v22_s1_what_the_person_actually_owns
+    STOP SCROLL:  Stop scroll: what does this person actually own?
+    LENGTH:       67 words, about 0:24 at 165 wpm
+    ONE ASK:      Do not start with the title.
+    BOUNDARY:
+        One posting, captured September 12, 2026. Not a claim about
+        all employers.
+    EDITOR:
+        Open on the title card alone. Reveal the floor, then the
+        requirement line. No generalization on screen.
+
+v22_s2_read_the_verbs
+    STOP SCROLL:  Stop scroll: read the verbs
+    LENGTH:       61 words, about 0:22 at 165 wpm
+    ONE ASK:      Find the verb before you judge the level.
+    BOUNDARY:
+        One posting. The verb tells you where the authority appears to
+        sit in that document.
+    EDITOR:
+        Artifact card with the verb active, then the rule card.
+        Nothing claims the role is unimportant.
+
+v22_s3_predefined_decisions
+    STOP SCROLL:  Stop scroll: a Director who does not own every decision
+    LENGTH:       78 words, about 0:28 at 165 wpm
+    ONE ASK:      Ask what this person is actually trusted to decide.
+    BOUNDARY:
+        The posting establishes predefined decisions. It does not
+        establish who created them, and the Short must not say or
+        imply that it does.
+    EDITOR:
+        The line about a serious role under pressure stays in. Nothing
+        on screen mocks the job.
+
+v22_s4_same_word_different_work
+    STOP SCROLL:  Stop scroll: same title, different job
+    LENGTH:       50 words, about 0:18 at 165 wpm
+    ONE ASK:      A title can help you find a posting. It cannot finish the read.
+    BOUNDARY:
+        Two postings from two employers. No compensation comparison is
+        drawn: the script no longer makes one.
+    EDITOR:
+        The comparison card, then the four-beat distinction. Do not
+        add a money reveal.
+
+v22_s5_least_informative_title
+    STOP SCROLL:  Stop scroll: the title that tells you nothing
+    LENGTH:       58 words, about 0:21 at 165 wpm
+    ONE ASK:      Read the work.
+    BOUNDARY:
+        Highest published ceiling in the sample of 15 postings. Never
+        the market.
+    EDITOR:
+        The words IN THE SAMPLE stay on screen with the figure, in the
+        same card, for as long as the figure is visible.
+
+v22_s6_operating_constraint
+    STOP SCROLL:  Stop scroll: the gap that is not a skill gap
+    LENGTH:       88 words, about 0:32 at 165 wpm
+    ONE ASK:      Read the constraints, not just the requirements.
+    BOUNDARY:
+        One posting in the sample. The posting states the overlap
+        requirement; no local meeting time is stated or implied.
+    EDITOR:
+        GiveDirectly is named, in the past tense, as the script says
+        it. No time-of-day figure appears on screen.

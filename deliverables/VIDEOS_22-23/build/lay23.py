@@ -536,7 +536,7 @@ def claim_card(c, eye, label, text, foot=None, dark=False,
 
 
 def questions(c, eye, headline, items, active=None, foot=None, dark=True,
-              synthetic=False):
+              synthetic=False, size=62):
     """Questions arriving one at a time, earlier ones held but quiet."""
     back, ink, dim = _ground(c, dark, eye, synthetic)
     _active(c, 0 if active is None else 1)
@@ -556,9 +556,9 @@ def questions(c, eye, headline, items, active=None, foot=None, dark=True,
         ry = y + i * (rowh + gap)
         rect(c, MARGIN, ry + 8, 8, rowh - 16,
              fill=RUST if on else (RULE_NAVY if dark else RULE_CREAM))
-        qh = TH(q, CW - 76, DISPLAY, 62, True, 1.12)
+        qh = TH(q, CW - 76, DISPLAY, size, True, 1.12)
         block(c, MARGIN + 38, ry + (rowh - qh) / 2.0, CW - 76,
-              [(q, S(62, color=GOLD if on and active is not None else ink,
+              [(q, S(size, color=GOLD if on and active is not None else ink,
                      bold=True, spacing=1.12))])
     if foot:
         stamp(c, foot, dark)

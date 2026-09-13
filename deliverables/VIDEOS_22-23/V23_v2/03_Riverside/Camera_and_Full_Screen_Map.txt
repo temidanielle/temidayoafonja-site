@@ -1,0 +1,258 @@
+==============================================================================
+VIDEO 23  |  CAMERA AND FULL-SCREEN MAP
+==============================================================================
+
+Turn One Accomplishment Into Proof in 10 Minutes
+
+Every stretch of this video is marked. CAMERA means Temidayo
+carries the moment and no graphic should appear over her.
+FULL SCREEN means the idea takes the screen, with no presenter
+moving behind it and no semi-transparent overlay.
+
+------------------------------------------------------------------------------
+
+  18 camera stretches
+  12 full-screen cues, one per active card
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+SECTION 1  HOOK
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  V23_FS_01_CLAIM   (COPY UPDATE)
+      TRIGGER:  "Led a cross-functional transformation that improved on-time delivery by 18 percent."
+      STATES:   V23_FS_01_CLAIM
+      HOLD:     Hold through the three short sentences after it. Cut to camera on 'And a stranger still cannot tell what you actually did.'
+
+  [ CAMERA ]  3 paragraphs, 28 words
+      That sounds like a strong resume sentence.
+      It has a verb. It has scope. It has a number.
+      And a stranger still cannot tell what you actually did.
+
+  [ FULL SCREEN ]  V23_FS_02_UNANSWERED   (COPY UPDATE)
+      TRIGGER:  They cannot see what was broken before. They cannot see what you were allowed to decide. They cannot see what was hard. And they cannot see where the 18 percent came from.
+      STATES:   V23_FS_02A_BROKEN_BEFORE, V23_FS_02B_ALLOWED_TO_DECIDE, V23_FS_02C_WHAT_WAS_HARD, V23_FS_02D_WHERE_THE_NUMBER_CAME_FROM
+      HOLD:     Build across the one spoken paragraph. Cut to camera for 'You did the work. I believe you. The sentence does not.' That is the strongest human moment in the video and must not be covered.
+
+  [ CAMERA ]  3 paragraphs, 11 words
+      You did the work.
+      I believe you.
+      The sentence does not.
+
+
+------------------------------------------------------------------------------
+SECTION 2  THE PROMISE
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  5 paragraphs, 70 words
+      Give me one accomplishment and I want you to rebuild it in four lines:
+      Problem before. What was mine to decide. Judgment. Proof and how I know.
+      You can do this in about 10 minutes once you know the questions.
+      And the point is not to make the story sound bigger.
+      The point is to make it easier for someone who was not there to judge what you actually carried.
+
+
+------------------------------------------------------------------------------
+SECTION 3  THE FINISHED VERSION
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  V23_FS_03_FOUR_LINE_PROOF   (COPY UPDATE)
+      TRIGGER:  Let me show you the finished version first.
+      STATES:   V23_FS_03_FOUR_LINE_PROOF, V23_FS_03A_PROBLEM_BEFORE, V23_FS_03B_MINE_TO_DECIDE, V23_FS_03C_JUDGMENT, V23_FS_03D_PROOF_AND_HOW
+      HOLD:     Establish on 'Let me show you the finished version first.' Then one activation per spoken line. Do not cut to camera between them.
+
+  [ CAMERA ]  5 paragraphs, 125 words
+      Problem before: Three depots ran their own dispatch. On-time delivery sat at 71 percent, and the...
+      What was mine to decide: I did not own the depots or the budget. I owned the definition of on-ti...
+      Judgment: The obvious move was to convert all three at once. I put the worst depot last because ...
+      Proof and how I know: On-time delivery reached 89 percent across all three within seven months, ...
+      Same accomplishment.
+
+  [ FULL SCREEN ]  V23_FS_04_CLAIM_VS_PROOF   (COPY UPDATE)
+      TRIGGER:  But now another person can question it, test it, and understand it.
+      STATES:   V23_FS_04_CLAIM_VS_PROOF
+      HOLD:     Hold through the sentence, then return to camera.
+
+
+------------------------------------------------------------------------------
+SECTION 4  LINE 1: PROBLEM BEFORE
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  8 paragraphs, 70 words
+      First, what was true before you stepped in?
+      This is easy to skip because you remember the whole story.
+      The reader does not.
+      Without the before state, a number has no scale.
+      An 18 percent improvement could be huge or almost meaningless depending on what was happening be...
+      So name the problem plainly.
+      What was broken? What was inconsistent? What could the organization not do?
+      Two sentences is usually enough.
+
+
+------------------------------------------------------------------------------
+SECTION 5  LINE 2: WHAT WAS MINE TO DECIDE
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  7 paragraphs, 66 words
+      This is the line I think experienced professionals struggle with most.
+      We are used to answering, "What were you responsible for?"
+      Then we give a title or a list of duties.
+      Try a harder question:
+      What was mine to decide?
+      And if your first answer is, "Honestly, I did not own much authority. I mostly executed," do not...
+      Execution still contains decisions.
+
+  [ FULL SCREEN ]  V23_FS_07_EXECUTION_CONTAINS_CHOICES   (COPY UPDATE)
+      TRIGGER:  What did you sequence? What did you escalate? What did you challenge? What did you recommend? What tradeoff did you put in front of someone else?
+      STATES:   V23_FS_07_EXECUTION_CONTAINS_CHOICES
+      HOLD:     Hold through the five questions, then cut to camera for the sentence about the postings.
+
+  [ CAMERA ]  1 paragraph, 14 words
+      Several senior roles in the postings I studied clearly described support or execution postures.
+
+  [ FULL SCREEN ]  V23_FS_08_AUTHORITY_BOUNDARY   (COPY UPDATE)
+      TRIGGER:  So this is not about pretending you had more authority than you did.
+      STATES:   V23_FS_08_AUTHORITY_BOUNDARY
+      HOLD:     Cut on 'So this is not about pretending' and hold through 'the decisions that were genuinely yours.'
+
+  [ CAMERA ]  1 paragraph, 10 words
+      It is about finding the decisions that were genuinely yours.
+
+
+------------------------------------------------------------------------------
+SECTION 6  LINE 3: JUDGMENT
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  4 paragraphs, 42 words
+      Now ask:
+      What was not obvious?
+      Imagine you are halfway through fixing a system and the technically cleanest move is also the mo...
+      That is where judgment starts to show.
+
+  [ FULL SCREEN ]  V23_FS_10_THE_CALL   (COPY UPDATE)
+      TRIGGER:  In the depot example, the distinctive part was not running the numbers.
+      STATES:   V23_FS_10_THE_CALL
+      HOLD:     Cut only after the scene has played on camera. Hold through 'That call could have been wrong.'
+
+  [ CAMERA ]  6 paragraphs, 54 words
+      It was deciding not to start with the worst depot.
+      Why?
+      Because a temporary dip could have made the program look like it was failing before the fix had ...
+      That call could have been wrong.
+      That is what makes it judgment.
+      You saw uncertainty, made a choice, and had a reason.
+
+
+------------------------------------------------------------------------------
+SECTION 7  LINE 4: PROOF AND HOW I KNOW
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  2 paragraphs, 9 words
+      Last line:
+      What changed, and how do you know?
+
+  [ FULL SCREEN ]  V23_FS_12_TWO_HALVES   (COPY UPDATE)
+      TRIGGER:  Those are two separate things.
+      STATES:   V23_FS_12A_TWO_HALVES, V23_FS_12B_FILLED
+      HOLD:     A on 'Those are two separate things.' B across the two quoted sentences.
+
+  [ CAMERA ]  7 paragraphs, 75 words
+      "On-time delivery reached 89 percent" is the result.
+      "Measured against one shared definition, with the baseline recalculated backward" is the mechani...
+      That second part is what makes the result easier to trust.
+      In the job postings I reviewed, employers often asked for more than outcomes. They asked for ben...
+      In other words:
+      Do not only tell me the number moved.
+      Show me why I should believe the number.
+
+
+------------------------------------------------------------------------------
+SECTION 8  WHAT CHANGED
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  4 paragraphs, 51 words
+      Now compare the weak sentence with the four-line version.
+      The weak one says: I led something and it improved.
+      The stronger one tells me:
+      what was broken, what you did and did not own, what decision was actually yours, what was not ob...
+
+  [ FULL SCREEN ]  V23_FS_13_THE_PAYOFF   (REUSE)
+      TRIGGER:  Good proof does not make your role sound bigger than it was.
+      STATES:   V23_FS_13_THE_PAYOFF
+      HOLD:     Cut on the sentence and hold through the one that follows it.
+
+  [ CAMERA ]  1 paragraph, 9 words
+      It makes what you actually carried easier to judge.
+
+
+------------------------------------------------------------------------------
+SECTION 9  THE CATCH
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  5 paragraphs, 39 words
+      There is one catch.
+      The same accomplishment will not matter in the same way everywhere.
+      A new employer may care most about your judgment.
+      Another may care about the measurement.
+      Another may care that you delivered without formal authority.
+
+  [ FULL SCREEN ]  V23_FS_16_REAL_GAP_REMAINS   (COPY UPDATE)
+      TRIGGER:  And another may still require domain knowledge, a credential, regulated experience, or direct exposure you do not have.
+      STATES:   V23_FS_16_REAL_GAP_REMAINS
+      HOLD:     Hold through the sentence.
+
+  [ CAMERA ]  3 paragraphs, 21 words
+      So reconstruct the accomplishment once.
+      Then decide which part matters for the destination.
+      Do not rewrite history to fit the role.
+
+  [ FULL SCREEN ]  V23_FS_18_CHANGE_THE_EMPHASIS   (NEW)
+      TRIGGER:  Change the emphasis, not the truth.
+      STATES:   V23_FS_18_CHANGE_THE_EMPHASIS
+      HOLD:     Hold until the sentence lands, then cut back.
+
+
+------------------------------------------------------------------------------
+SECTION 10  CTA
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  3 paragraphs, 12 words
+      Pick one accomplishment you remember clearly.
+      Not your best one.
+      Just one.
+
+  [ FULL SCREEN ]  V23_FS_17_CTA   (COPY UPDATE)
+      TRIGGER:  Write four lines:
+      STATES:   V23_FS_17A_FOUR_LINES, V23_FS_17B_RESOURCE
+      HOLD:     A on 'Write four lines:'. B on the resource sentence, held to the end of the spoken line.
+
+  [ CAMERA ]  2 paragraphs, 31 words
+      Problem before. What was mine to decide. Judgment. Proof and how I know.
+      If you want the prompts and worked examples in one place, the Career Evidence Starter is linked ...
+
+------------------------------------------------------------------------------
+
+RETIRED FROM THE ACTIVE EDIT
+
+  V23_FS_05_WHY_THE_ROLE_EXISTS
+      The new script does not make the fifteen-of-fifteen claim.
+
+  V23_FS_06_KINDS_OF_AUTHORITY
+      The new script does not list the authority verbs in V23.
+
+  V23_FS_09_JUDGMENT_IS_NOT_ONLY_ANALYSIS
+      The new judgment section teaches through the depot scene rather than
+      through a list of forms of judgment.
+
+  V23_FS_11_NINE_OF_FIFTEEN
+      The new script states the research in bounded prose and makes no
+      nine-of-fifteen claim.
+
+  V23_FS_14_SAME_COMPANY
+      The new script drops the same-company comparison entirely.
+
+  V23_FS_15_DIFFERENT_DOOR
+      With the comparison gone there is no different-door conclusion to
+      land.

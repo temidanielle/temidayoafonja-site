@@ -1,0 +1,86 @@
+==============================================================================
+VIDEO 23  |  SHORTS VISUAL AND EDITOR INSTRUCTIONS
+==============================================================================
+
+Turn One Accomplishment Into Proof in 10 Minutes
+
+Six candidates. Current cadence is about three per long-form
+video, so three of these six ship.
+
+------------------------------------------------------------------------------
+
+SHARED RULES
+
+  9:16. The same navy, cream and warm gold system as the video.
+  Large type. One idea per card. Generous margins.
+  Reuse the long-form card where one exists, reframed to 9:16,
+  rather than rebuilding a different-looking version of it.
+  Every evidence boundary in the source video travels with the
+  line that needs it. A Short may not be the place the boundary
+  gets dropped.
+  One ask at the end. Never two.
+
+------------------------------------------------------------------------------
+
+v23_s1_the_sentence_does_not
+    STOP SCROLL:  Stop scroll: a strong resume sentence
+    LENGTH:       47 words, about 0:17 at 165 wpm
+    ONE ASK:      Write what you decided, not just what moved.
+    BOUNDARY:
+        Synthetic example. The label travels with the 18 percent
+        figure.
+    EDITOR:
+        Claim card, then the questions one at a time. SYNTHETIC
+        EXAMPLE is on screen whenever 18 percent is.
+
+v23_s2_what_was_mine_to_decide
+    STOP SCROLL:  Stop scroll: the question we answer wrong
+    LENGTH:       46 words, about 0:17 at 165 wpm
+    ONE ASK:      Ask what was mine to decide.
+    BOUNDARY:
+        No synthetic figure appears, so no figure label is needed.
+    EDITOR:
+        Camera-led. The harder question lands on screen, nothing else.
+
+v23_s3_execution_contains_decisions
+    STOP SCROLL:  Stop scroll: I was just executing
+    LENGTH:       82 words, about 0:30 at 165 wpm
+    ONE ASK:      Name one decision that was genuinely yours.
+    BOUNDARY:
+        Several senior roles in the postings described support or
+        execution postures. Nothing is claimed beyond that.
+    EDITOR:
+        The five questions card, then the boundary card. The Short
+        must not imply that execution means no judgment.
+
+v23_s4_what_was_not_obvious
+    STOP SCROLL:  Stop scroll: what was not obvious?
+    LENGTH:       75 words, about 0:27 at 165 wpm
+    ONE ASK:      Find the call that could have been wrong.
+    BOUNDARY:
+        Synthetic example. Label carried because the card describes
+        the invented scenario.
+    EDITOR:
+        Let the scene play on camera before the card names the call.
+
+v23_s5_result_versus_mechanism
+    STOP SCROLL:  Stop scroll: the number is only half of it
+    LENGTH:       50 words, about 0:18 at 165 wpm
+    ONE ASK:      Give the result and the mechanism.
+    BOUNDARY:
+        Synthetic example. 89 percent is visible, so the label is on
+        screen. The research is stated only as the script states it.
+    EDITOR:
+        The two-part card. Do not add a denominator the script does
+        not say.
+
+v23_s6_change_the_emphasis
+    STOP SCROLL:  Stop scroll: do not rewrite history
+    LENGTH:       62 words, about 0:23 at 165 wpm
+    ONE ASK:      Change the emphasis, not the truth.
+    BOUNDARY:
+        Domain knowledge, credentials, regulated experience and direct
+        exposure stay named as real requirements.
+    EDITOR:
+        The catch card, then the closing statement. No employer
+        comparison appears: the script no longer makes one.
