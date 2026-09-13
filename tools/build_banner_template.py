@@ -4,7 +4,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageFilter
 W,H = 2560,1440
 CX,CY = W/2, H/2
 SL,SR,ST,SB = 507.0, 2053.0, 508.5, 931.5
-PAD = 50
+PAD = 46
 SS  = 2                                   # supersample for vector art
 
 CREAM      = (250,243,233)
@@ -105,49 +105,52 @@ for p in [(2270,1000),(2310,1060),(2245,930),(2350,1150),(2220,1120)]:
 art = art.resize((W,H), Image.LANCZOS)
 img = Image.alpha_composite(img.convert('RGBA'), art).convert('RGB')
 
-# ───────────────── portrait disc ─────────────────
-from collections import deque
-D = 300; DISC_X, DISC_Y = 562+D/2, (ST+SB)/2
-photo = Image.open(PORTRAIT).convert('RGB').crop(CROPBOX)
-pa = np.asarray(photo).astype(np.float32)
-pR,pG,pB = pa[...,0],pa[...,1],pa[...,2]
-pL = 0.299*pR+0.587*pG+0.114*pB
+WITH_PORTRAIT = os.environ.get("PORTRAIT","0") == "1"   # set PORTRAIT=1 to bring the disc back
+if WITH_PORTRAIT:
+    # ───────────────── portrait disc ─────────────────
+    from collections import deque
+    D = 300; DISC_X, DISC_Y = 562+D/2, (ST+SB)/2
+    photo = Image.open(PORTRAIT).convert('RGB').crop(CROPBOX)
+    pa = np.asarray(photo).astype(np.float32)
+    pR,pG,pB = pa[...,0],pa[...,1],pa[...,2]
+    pL = 0.299*pR+0.587*pG+0.114*pB
 
-# isolate the studio wall: bright, warm, and connected to the crop border
-wall = (pL>132) & ((pR-pB)<120) & (pG>pB+18)
-hh,ww = wall.shape; seen = np.zeros_like(wall); dq = deque()
-for x in range(ww):
-    for y in (0,hh-1):
-        if wall[y,x] and not seen[y,x]: seen[y,x]=True; dq.append((y,x))
-for y in range(hh):
-    for x in (0,ww-1):
-        if wall[y,x] and not seen[y,x]: seen[y,x]=True; dq.append((y,x))
-while dq:
-    y,x = dq.popleft()
-    for ny,nx in ((y-1,x),(y+1,x),(y,x-1),(y,x+1)):
-        if 0<=ny<hh and 0<=nx<ww and wall[ny,nx] and not seen[ny,nx]:
-            seen[ny,nx]=True; dq.append((ny,nx))
-wm = (np.asarray(Image.fromarray((seen*255).astype(np.uint8))
-        .filter(ImageFilter.MaxFilter(5)).filter(ImageFilter.GaussianBlur(2.5)))
-        .astype(np.float32)/255.)[...,None]
+    # isolate the studio wall: bright, warm, and connected to the crop border
+    wall = (pL>132) & ((pR-pB)<120) & (pG>pB+18)
+    hh,ww = wall.shape; seen = np.zeros_like(wall); dq = deque()
+    for x in range(ww):
+        for y in (0,hh-1):
+            if wall[y,x] and not seen[y,x]: seen[y,x]=True; dq.append((y,x))
+    for y in range(hh):
+        for x in (0,ww-1):
+            if wall[y,x] and not seen[y,x]: seen[y,x]=True; dq.append((y,x))
+    while dq:
+        y,x = dq.popleft()
+        for ny,nx in ((y-1,x),(y+1,x),(y,x-1),(y,x+1)):
+            if 0<=ny<hh and 0<=nx<ww and wall[ny,nx] and not seen[ny,nx]:
+                seen[ny,nx]=True; dq.append((ny,nx))
+    wm = (np.asarray(Image.fromarray((seen*255).astype(np.uint8))
+            .filter(ImageFilter.MaxFilter(5)).filter(ImageFilter.GaussianBlur(2.5)))
+            .astype(np.float32)/255.)[...,None]
 
-# grade the wall to the reference terracotta, then flatten it
-vgrad = np.linspace(0,1,hh,dtype=np.float32)[:,None,None]
-terra = np.array([182,118,78],float) + (np.array([150,92,58],float)-np.array([182,118,78],float))*vgrad
-graded = np.clip(pa*(1-wm) + (pa*0.22 + terra*0.78)*wm, 0, 255)
-inner = (np.asarray(Image.fromarray((seen*255).astype(np.uint8))
-          .filter(ImageFilter.MinFilter(9)).filter(ImageFilter.GaussianBlur(6)))
-          .astype(np.float32)/255.)[...,None]
-blur = np.asarray(Image.fromarray(graded.astype(np.uint8)).filter(ImageFilter.GaussianBlur(26))).astype(np.float32)
-graded = graded*(1-inner) + blur*inner
+    # grade the wall to the reference terracotta, then flatten it
+    vgrad = np.linspace(0,1,hh,dtype=np.float32)[:,None,None]
+    terra = np.array([182,118,78],float) + (np.array([150,92,58],float)-np.array([182,118,78],float))*vgrad
+    graded = np.clip(pa*(1-wm) + (pa*0.22 + terra*0.78)*wm, 0, 255)
+    inner = (np.asarray(Image.fromarray((seen*255).astype(np.uint8))
+              .filter(ImageFilter.MinFilter(9)).filter(ImageFilter.GaussianBlur(6)))
+              .astype(np.float32)/255.)[...,None]
+    blur = np.asarray(Image.fromarray(graded.astype(np.uint8)).filter(ImageFilter.GaussianBlur(26))).astype(np.float32)
+    graded = graded*(1-inner) + blur*inner
 
-disc = Image.fromarray(graded.astype(np.uint8)).resize((D*4,D*4), Image.LANCZOS)
-m = Image.new('L',(D*4,D*4),0); ImageDraw.Draw(m).ellipse((0,0,D*4-1,D*4-1),fill=255)
-img.paste(disc.resize((D,D),Image.LANCZOS),(int(DISC_X-D/2),int(DISC_Y-D/2)), m.resize((D,D),Image.LANCZOS))
-ring = Image.new('RGBA',(W*SS,H*SS),(0,0,0,0))
-ImageDraw.Draw(ring).ellipse([(DISC_X-D/2-8)*SS,(DISC_Y-D/2-8)*SS,(DISC_X+D/2+8)*SS,(DISC_Y+D/2+8)*SS],
-                             outline=TERRA+(150,), width=3*SS)
-img = Image.alpha_composite(img.convert('RGBA'), ring.resize((W,H), Image.LANCZOS)).convert('RGB')
+    disc = Image.fromarray(graded.astype(np.uint8)).resize((D*4,D*4), Image.LANCZOS)
+    m = Image.new('L',(D*4,D*4),0); ImageDraw.Draw(m).ellipse((0,0,D*4-1,D*4-1),fill=255)
+    img.paste(disc.resize((D,D),Image.LANCZOS),(int(DISC_X-D/2),int(DISC_Y-D/2)), m.resize((D,D),Image.LANCZOS))
+    ring = Image.new('RGBA',(W*SS,H*SS),(0,0,0,0))
+    ImageDraw.Draw(ring).ellipse([(DISC_X-D/2-8)*SS,(DISC_Y-D/2-8)*SS,(DISC_X+D/2+8)*SS,(DISC_Y+D/2+8)*SS],
+                                 outline=TERRA+(150,), width=3*SS)
+    img = Image.alpha_composite(img.convert('RGBA'), ring.resize((W,H), Image.LANCZOS)).convert('RGB')
+
 
 # ───────────────── type ─────────────────
 d = ImageDraw.Draw(img)
@@ -171,17 +174,47 @@ def fit(t,name,cap,maxw,ls=0.0,lo=12):
         s-=1
     return font(name,lo)
 
-TXT_L, TXT_R = DISC_X+D/2+86, SR-PAD
-AXIS, COLW = (TXT_L+TXT_R)/2, TXT_R-TXT_L
+AXIS = (SL+SR)/2                      # centred: no portrait to balance against
+MAXW = (SR-PAD) - (SL+PAD)            # widest a line may be
+MAXH = (SB-PAD) - (ST+PAD)            # tallest the whole block may be
 
 NAME="Temidayo Afonja"; TAG="Make your next move without starting over"
 CATS=["CAREER PIVOTS","INTERNAL MOVES","WHAT STILL COUNTS"]
-f_name = fit(NAME, SCRIPT, 170, min(COLW,860))
-f_tag  = fit(TAG,  SERIF,   60, min(COLW,960))          # +20% on the previous 50px
-f_cat  = fit("   ".join(CATS), SERIF6, 28, min(COLW,900), 3.2)
+CAT_LS, CAT_SPC = 3.2, 46.0
 
-mn,mt,mg = met(NAME,f_name), met(TAG,f_tag), met(CATS[0],f_cat,3.2)
-G1,G2 = 10, 38
+# scale every line together and take the largest step that clears both limits.
+# with the disc gone the band height binds before the width does.
+# the name grows gently (sqrt of the step) while the tagline and strapline
+# take the step in full - those are the lines that needed the size.
+BASE = (150, 60, 28)
+def sizes_at(sc):
+    return (max(1,int(round(BASE[0]*sc**0.5))),
+            max(1,int(round(BASE[1]*sc))),
+            max(1,int(round(BASE[2]*sc))))
+def block_metrics(ns, ts, cs):
+    fn, ft, fc = font(SCRIPT, ns), font(SERIF, ts), font(SERIF6, cs)
+    mn, mt = met(NAME, fn), met(TAG, ft)
+    segw = [sum(fc.getlength(ch)+CAT_LS for ch in c)-CAT_LS for c in CATS]
+    cw   = sum(segw) + CAT_SPC*(len(CATS)-1)
+    mg   = met(CATS[0], fc, CAT_LS)
+    g1, g2 = 0.22*ts, 0.58*ts
+    h = (mn[3]-mn[1]) + g1 + (mt[3]-mt[1]) + g2 + (mg[3]-mg[1])
+    w = max(mn[2]-mn[0], mt[2]-mt[0], cw)
+    return fn, ft, fc, mn, mt, mg, segw, cw, g1, g2, h, w
+
+scale = 1.00
+sc = 1.60
+while sc >= 1.00:
+    ns, ts, cs = sizes_at(sc)
+    *_, h, w = block_metrics(ns, ts, cs)
+    if h <= MAXH and w <= MAXW:
+        scale = sc; break
+    sc -= 0.01
+ns, ts, cs = sizes_at(scale)
+f_name, f_tag, f_cat, mn, mt, mg, segw, catw, G1, G2, blkh, blkw = block_metrics(ns, ts, cs)
+print(f"  type scale x{scale:.2f}  ->  name {ns}px  tagline {ts}px  strapline {cs}px"
+      f"  | block {blkw:.0f} x {blkh:.0f} in {MAXW:.0f} x {MAXH:.0f}")
+
 y0=0.0; y1=y0+mn[3]+G1-mt[1]; y2=y1+mt[3]+G2-mg[1]
 top,bot = y0+mn[1], y2+mg[3]
 dy = (ST+SB)/2-(top+bot)/2
@@ -189,14 +222,14 @@ dy = (ST+SB)/2-(top+bot)/2
 r1=put(NAME,f_name,INK,  AXIS,y0+dy)
 r2=put(TAG, f_tag, INK,  AXIS,y1+dy)
 # category strip with thin dividers
-seg=[(c, sum(f_cat.getlength(ch)+3.2 for ch in c)-3.2) for c in CATS]
-SPC=46.0
-total=sum(w for _,w in seg)+SPC*(len(seg)-1)
+seg=list(zip(CATS, segw))
+SPC=CAT_SPC
+total=catw
 x=AXIS-total/2; cat_l=x
 for i,(c,w) in enumerate(seg):
     xx=x
     for ch in c:
-        d.text((xx,y2+dy),ch,font=f_cat,fill=BROWN); xx+=f_cat.getlength(ch)+3.2
+        d.text((xx,y2+dy),ch,font=f_cat,fill=BROWN); xx+=f_cat.getlength(ch)+CAT_LS
     x+=w
     if i<len(seg)-1:
         mx=x+SPC/2
@@ -208,7 +241,7 @@ OUT='/home/user/temidayoafonja-site/temidayo_afonja_youtube_banner_template.png'
 img.save(OUT, optimize=True)
 for lbl,r in (("name",r1),("tagline",r2),("cats",r3)):
     print(f"  {lbl:8s} x {r[0]:7.1f}..{r[2]:7.1f}  y {r[1]:6.1f}..{r[3]:6.1f}")
-print(f"  disc     x {DISC_X-D/2:7.1f}..{DISC_X+D/2:7.1f}  y {DISC_Y-D/2:6.1f}..{DISC_Y+D/2:6.1f}")
+if WITH_PORTRAIT: print(f"  disc     x {DISC_X-D/2:7.1f}..{DISC_X+D/2:7.1f}  y {DISC_Y-D/2:6.1f}..{DISC_Y+D/2:6.1f}")
 
 gi=img.copy(); gd=ImageDraw.Draw(gi,'RGBA')
 gd.rectangle([SL,ST,SR,SB],outline=(200,60,60,255),width=4)
