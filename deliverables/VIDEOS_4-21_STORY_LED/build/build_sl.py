@@ -24,6 +24,7 @@ for _n in ("masters_sl", "recdocs_sl", "publish_sl"):
     _local(_n)
 
 import masters_sl as M
+import packaging_sl as PK
 import recdocs_sl, prodocs_sl, riverside_sl, editorial_sl, publish_sl
 import shorts_sl, qa_sl, geocheck_sl, visualdir_sl, wncheck_sl, srcqa_sl
 import exercise_sl
@@ -195,18 +196,21 @@ def publish_materials(n, path, s):
     kv(d, "Generated", s)
     kv(d, "Spoken source", "%s  ·  SHA-256 %s"
        % (M.read(n)["file"], M.read(n)["sha"]))
-    callout(d, "Title and thumbnail wording are taken from the story-led "
-               "script header. No URL, chapter timestamp, music credit or "
+    callout(d, "Title wording is taken from the story-led script header. "
+               "Thumbnail wording of record comes from the locked V4 to V21 "
+               "roadmap. No URL, chapter timestamp, music credit or "
                "performance claim is invented anywhere in this document.")
     h(d, "YouTube title")
     para(d, M.title(n), size=13, bold=True, color=NAVY)
     h(d, "Thumbnail text")
-    para(d, M.thumbnail(n), size=13, bold=True, color=NAVY)
-    if a["thumbnail_changed"]:
-        caption(d, "Changed by the story-led pass. The previous package "
-                   "carried %r. The script header wins. Thumbnail ARTWORK "
-                   "is not rebuilt; only the wording of record changes."
-                   % a["thumbnail_was"])
+    para(d, PK.thumbnail(n), size=13, bold=True, color=NAVY)
+    if PK.is_exception(n):
+        caption(d, "Unchanged from the locked roadmap. The story-led script "
+                   "document header carries %r as non-spoken metadata. That "
+                   "metadata is not packaging authority and does not "
+                   "override the roadmap. The source document was not "
+                   "edited and its hash is unchanged."
+                   % PK.script_header_thumbnail(n))
     h(d, "Description")
     for b in publish_sl.DESC[n].split("\n\n"):
         para(d, b)
@@ -273,7 +277,13 @@ def source_manifest(n, pkg, s):
     m = M.read(n)
     w, fast, slow = M.estimate(n)
     data = {
-      "video": n, "title": M.title(n), "thumbnail": M.thumbnail(n),
+      "video": n, "title": M.title(n), "thumbnail": PK.thumbnail(n),
+      "thumbnail_source": "locked V4 to V21 roadmap",
+      "script_header_thumbnail": PK.script_header_thumbnail(n),
+      "thumbnail_metadata_exception": PK.is_exception(n),
+      "thumbnail_note": (PK.EXCEPTION_NOTE if PK.is_exception(n)
+                         else "The script header and the locked roadmap "
+                              "agree for this video."),
       "generated": s,
       "spoken_source_of_truth": {
         "script": m["file"], "script_sha256": m["sha"],
@@ -397,6 +407,25 @@ def source_hierarchy(path, s):
           "  framework lands, the examples, the application moments, the "
           "closing,",
           "  the CTA wording and the Watch Next intent.", "", hr(), "",
+          "WHAT THE SCRIPT LAYER DOES NOT CONTROL", "",
+          "  The script document header also carries title and thumbnail "
+          "metadata.",
+          "  That metadata is NOT spoken, and it is NOT packaging authority. "
+          "The",
+          "  separately locked V4 to V21 roadmap decides thumbnail wording. "
+          "Where the",
+          "  two differ, the roadmap is the thumbnail of record and the "
+          "header value",
+          "  is carried below as a known metadata exception.", ""]
+    if PK.exceptions():
+        for n, hdr, rec in PK.exceptions():
+            L += ["  V%-3d script header metadata  %r" % (n, hdr),
+                  "        thumbnail of record    %r  (locked roadmap)" % rec]
+    else:
+        L += ["  There are currently no exceptions."]
+    L += ["", "  No source document was edited to resolve this, and every "
+              "source hash",
+          "  below is unchanged.", "", hr(), "",
           "PRIMARY, AND DEFINITIVE", ""]
     for n in M.VIDEOS:
         L += ["  V%-2d %s" % (n, M.read(n)["file"]),
@@ -498,11 +527,21 @@ def superseded_index(path, s):
     for k, v in REMOVED.items():
         L += ["  %s.png" % k] + ["      %s" % x for x in _wrap(v, 70)] + [""]
     L += [hr(), "", "SUPERSEDED THUMBNAIL WORDING", ""]
-    for n, was in publish_sl.THUMB_CHANGED.items():
-        L += ["  V%-3d was %r" % (n, was),
-              "        now %r" % M.thumbnail(n),
-              "        The story-led script header wins. Thumbnail ARTWORK "
-              "is not rebuilt.", ""]
+    if publish_sl.THUMB_CHANGED:
+        for n, was in publish_sl.THUMB_CHANGED.items():
+            L += ["  V%-3d was %r" % (n, was),
+                  "        now %r" % PK.thumbnail(n), ""]
+    else:
+        L += ["  None. Every thumbnail of record is the locked V4 to V21",
+              "  roadmap wording, unchanged by this pass.", ""]
+    L += [hr(), "", "THUMBNAIL METADATA EXCEPTIONS", ""]
+    if PK.exceptions():
+        L += ["  %s" % x for x in _wrap(PK.EXCEPTION_NOTE, 70)] + [""]
+        for n, hdr, rec in PK.exceptions():
+            L += ["  V%-3d script header metadata  %r" % (n, hdr),
+                  "        thumbnail of record    %r" % rec, ""]
+    else:
+        L += ["  None in this package.", ""]
     L += [hr(), "", "SUPERSEDED PUBLISHING COPY", ""]
     for n, what in publish_sl.CHANGED.items():
         L += ["  V%-3d the %s, because the story-led script changed the hook "
@@ -565,9 +604,25 @@ def change_log_batch(path, s):
     L += ["", "WHICH PUBLISHING MATERIALS CHANGED", ""]
     for n, what in publish_sl.CHANGED.items():
         L += ["    V%-3d %s" % (n, what)]
-    for n, was in publish_sl.THUMB_CHANGED.items():
-        L += ["    V%-3d thumbnail wording, from %r to %r"
-              % (n, was, M.thumbnail(n))]
+    if publish_sl.THUMB_CHANGED:
+        for n, was in publish_sl.THUMB_CHANGED.items():
+            L += ["    V%-3d thumbnail wording, from %r to %r"
+                  % (n, was, PK.thumbnail(n))]
+    else:
+        L += ["    No thumbnail wording changed. Every thumbnail of record "
+              "is the",
+              "    locked V4 to V21 roadmap wording."]
+    L += ["", "THUMBNAIL METADATA EXCEPTIONS", ""]
+    for n, hdr, rec in PK.exceptions():
+        L += ["    V%-3d script header says %r" % (n, hdr),
+              "         thumbnail of record  %r" % rec]
+    L += ["", "    The script layer is authoritative for spoken wording and "
+              "recording",
+          "    delivery. Its header thumbnail text is non-spoken metadata "
+          "and is not",
+          "    packaging authority. No source document was edited and no "
+          "source hash",
+          "    changed."]
     L += ["", "WHICH ASSETS REMAINED BYTE-IDENTICAL", "",
           "    %d of %d carried across with the card unchanged."
           % (cnt.get("REUSE", 0), sum(cnt.values())),
@@ -677,17 +732,37 @@ def main():
         raise SystemExit("Watch Next mismatch: %s" % bad)
     print("Watch Next: %d cards, 0 mismatches" % len(rows))
 
+    # A correction pass rebuilds only the packages its corrections
+    # invalidate. Every other package is left exactly as it is on disk, and
+    # QA still runs against it, so the check count covers all eighteen
+    # whether or not they were rewritten this run.
+    only = os.environ.get("REBUILD_ONLY", "").strip()
+    rebuild = ({int(x) for x in only.replace(",", " ").split()} if only
+               else set(M.VIDEOS))
+    if only:
+        print("rebuilding only: %s" % ", ".join("V%d" % n
+                                                for n in sorted(rebuild)))
+        print("every other package is left untouched and re-checked in place")
+
     results = {}
     for n in M.VIDEOS:
-        pkg = build_one(n, s)
-        qa_rows = qa_sl.run(n, pkg)
-        z, cnt = zip_dir(pkg, os.path.join(
-            OUT, "Video_%d_Story_Led_Package.zip" % n))
+        zp = os.path.join(OUT, "Video_%d_Story_Led_Package.zip" % n)
+        if n in rebuild:
+            pkg = build_one(n, s)
+            qa_rows = qa_sl.run(n, pkg)
+            z, cnt = zip_dir(pkg, zp)
+            mark = ""
+        else:
+            pkg = os.path.join(OUT, "VIDEO_%d_STORY_LED_PACKAGE" % n)
+            qa_rows = qa_sl.run(n, pkg)
+            z = zp
+            cnt = sum(len(f) for _, _, f in os.walk(pkg))
+            mark = "  unchanged"
         passed = sum(1 for _, ok, _ in qa_rows if ok)
         results[n] = dict(pkg=pkg, zip=z, files=cnt, rows=qa_rows,
                           passed=passed, total=len(qa_rows), sha=sha256(z))
-        print("V%-3d %2d/%2d checks  %3d files" % (n, passed, len(qa_rows),
-                                                   cnt))
+        print("V%-3d %2d/%2d checks  %3d files%s" % (n, passed, len(qa_rows),
+                                                     cnt, mark))
         for name, ok, detail in qa_rows:
             if not ok:
                 print("        FAIL %s :: %s" % (name, detail))

@@ -2,7 +2,7 @@
 VIDEOS 4 TO 21  |  STORY-LED SYNCHRONIZATION CHANGE LOG
 ==============================================================================
 
-Generated: Sunday, September 13, 2026 | 3:52 PM CT
+Generated: Sunday, September 13, 2026 | 4:40 PM CT
 
 ------------------------------------------------------------------------------
 
@@ -79,8 +79,20 @@ WHICH PUBLISHING MATERIALS CHANGED
 
     V5   description and pinned comment
     V15  pinned comment
-    V4   thumbnail wording, from "I'D NEVER HELD THE ROLE" to 'NO EXPERIENCE? NOT EXACTLY.'
-    V5   thumbnail wording, from 'CHANGED TRACKS. NOT ZERO.' to 'WHAT COMES WITH YOU?'
+    No thumbnail wording changed. Every thumbnail of record is the
+    locked V4 to V21 roadmap wording.
+
+THUMBNAIL METADATA EXCEPTIONS
+
+    V4   script header says 'NO EXPERIENCE? NOT EXACTLY.'
+         thumbnail of record  "I'D NEVER HELD THE ROLE"
+    V5   script header says 'WHAT COMES WITH YOU?'
+         thumbnail of record  'CHANGED TRACKS. NOT ZERO.'
+
+    The script layer is authoritative for spoken wording and recording
+    delivery. Its header thumbnail text is non-spoken metadata and is not
+    packaging authority. No source document was edited and no source hash
+    changed.
 
 WHICH ASSETS REMAINED BYTE-IDENTICAL
 

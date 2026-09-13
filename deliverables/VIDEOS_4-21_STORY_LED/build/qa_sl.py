@@ -13,6 +13,7 @@ from docx import Document
 from docx.oxml.ns import qn
 from PIL import Image
 import masters_sl as M
+import packaging_sl as PK
 import publish_sl as PUB
 import prodocs_sl as P
 import visualdir_sl as V
@@ -90,6 +91,53 @@ def quoted(n, unit, hit, window=40):
     return False
 
 
+def _pkg_files(pkg):
+    out = []
+    for root, _, names in os.walk(pkg):
+        for nm in sorted(names):
+            if nm.endswith((".docx", ".txt", ".json")):
+                out.append(os.path.join(root, nm))
+    return out
+
+
+# Labels under which a value would be read as the thumbnail of record.
+_PACKAGING_LABEL = ("thumbnail text", "\"thumbnail\"", "thumbnail of record",
+                    "locked thumbnail", "thumbnail:")
+
+
+def _states_as_packaging(path, value):
+    """Does this file present `value` as the thumbnail of record?
+
+    A file may name the script header metadata, but only as metadata. It
+    fails if the value stands under a packaging label, or on its own line as
+    the document's thumbnail statement.
+    """
+    v = _flat(value).lower()
+    if path.endswith(".json"):
+        import json
+        try:
+            d = json.load(open(path, encoding="utf-8"))
+        except Exception:
+            return False
+        return _flat(str(d.get("thumbnail", ""))).lower() == v
+    if path.endswith(".docx"):
+        raw = units(path)
+    else:
+        raw = [x for x in open(path, encoding="utf-8").read().split("\n")
+               if x.strip()]
+    lines = [_flat(u) for u in raw]
+    for i, u in enumerate(lines):
+        low = u.lower()
+        if low == v:
+            prev = lines[i - 1].lower() if i else ""
+            if any(lab in prev for lab in _PACKAGING_LABEL):
+                return True
+        for lab in _PACKAGING_LABEL:
+            if lab in low and low.split(lab)[-1].strip(" :\"',") == v:
+                return True
+    return False
+
+
 def sha256(p):
     import hashlib
     h = hashlib.sha256()
@@ -128,8 +176,20 @@ def run(n, pkg):
     # ---- packaging
     ck("Correct title", any(M.title(n) == u.strip() for u in us),
        M.title(n))
-    ck("Correct thumbnail wording",
-       any(M.thumbnail(n) == u.strip() for u in us), M.thumbnail(n))
+    ck("Correct thumbnail wording, from the locked roadmap",
+       any(PK.thumbnail(n) == u.strip() for u in us), PK.thumbnail(n))
+    # The script header's thumbnail metadata is not packaging authority. Where
+    # it differs from the roadmap it may be recorded as a named exception, but
+    # it must never stand anywhere as the thumbnail of record.
+    hdr = PK.script_header_thumbnail(n)
+    stray = [os.path.basename(f) for f in _pkg_files(pkg)
+             if PK.is_exception(n) and _states_as_packaging(f, hdr)]
+    ck("Script-header thumbnail metadata is not treated as packaging",
+       not stray,
+       stray or ("recorded as a known metadata exception: header %r, "
+                 "record %r" % (hdr, PK.thumbnail(n))
+                 if PK.is_exception(n)
+                 else "the header and the roadmap agree for this video"))
 
     # ---- triggers
     miss = [f["key"] for f in SETS[n] if not M.trigger_ok(n, f["trigger"])]

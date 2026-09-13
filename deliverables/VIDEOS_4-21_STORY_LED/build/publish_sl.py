@@ -14,6 +14,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 sys.path.append("/home/user/temidayoafonja-site/deliverables/"
                 "VIDEOS_4-21_CORRECTED_RUNTIME/build")
 import masters_sl as M
+import packaging_sl as PK
 from content421 import (ROUTES, PLAYLIST, DESC as _D, PINNED as _P,
                         TAGS, HASH, PSO, EX)
 
@@ -61,9 +62,10 @@ PINNED[15] = (
 
 CHANGED = {5: "description and pinned comment", 15: "pinned comment"}
 
-# Thumbnail wording comes from the story-led header. Two differ from the
-# previously locked package.
-THUMB_CHANGED = {4: "I'D NEVER HELD THE ROLE", 5: "CHANGED TRACKS. NOT ZERO."}
+# Thumbnail wording of record comes from the locked V4 to V21 roadmap, not
+# from the story-led script header. Nothing changed: THUMB_CHANGED is empty
+# and the two divergences are carried as metadata exceptions instead.
+THUMB_CHANGED = {}
 
 SPOKEN_NAME = {
  "Capability Formation Field Kit": ("field kit",),
@@ -102,8 +104,11 @@ def audit(n):
     """What changed in this video's publishing copy, and what did not."""
     return dict(
         title=M.title(n), title_changed=False,
-        thumbnail=M.thumbnail(n),
+        thumbnail=PK.thumbnail(n),
         thumbnail_changed=n in THUMB_CHANGED,
         thumbnail_was=THUMB_CHANGED.get(n),
+        thumbnail_source="locked V4 to V21 roadmap",
+        script_header_thumbnail=PK.script_header_thumbnail(n),
+        thumbnail_metadata_exception=PK.is_exception(n),
         copy_changed=CHANGED.get(n),
         route=route(n))

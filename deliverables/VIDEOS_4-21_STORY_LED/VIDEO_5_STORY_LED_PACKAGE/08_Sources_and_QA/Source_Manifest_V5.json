@@ -1,8 +1,12 @@
 {
   "video": 5,
   "title": "I Changed Career Tracks Without Starting Over. Here's What I Carried With Me.",
-  "thumbnail": "WHAT COMES WITH YOU?",
-  "generated": "Sunday, September 13, 2026 | 3:52 PM CT",
+  "thumbnail": "CHANGED TRACKS. NOT ZERO.",
+  "thumbnail_source": "locked V4 to V21 roadmap",
+  "script_header_thumbnail": "WHAT COMES WITH YOU?",
+  "thumbnail_metadata_exception": true,
+  "thumbnail_note": "The September 13 script layer is authoritative for current spoken wording and recording delivery. The thumbnail text in its document header is non-spoken metadata and does not override the separately locked V4 to V21 roadmap and packaging decisions. Where the two differ, the roadmap is the thumbnail of record and the script header is carried here as a known metadata exception. No source document was edited, and every source hash is unchanged.",
+  "generated": "Sunday, September 13, 2026 | 4:40 PM CT",
   "spoken_source_of_truth": {
     "script": "Video_5_FINAL_Story_Led_Conversational_Recording_Script.docx",
     "script_sha256": "ca60422a8f485fd218079401e96c795f809f9ed0818c6748bc8fd6f87a02dbdd",

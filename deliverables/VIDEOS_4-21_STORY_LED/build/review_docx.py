@@ -11,6 +11,7 @@ sys.path.append("/home/user/temidayoafonja-site/deliverables/"
                 "VIDEOS_4-21_CORRECTED_RUNTIME/build")
 sys.path.append("/home/user/temidayoafonja-site/deliverables/riverside-build")
 import masters_sl as M
+import packaging_sl as PK
 import frames_sl as F
 import shorts_sl as SH
 import publish_sl as PUB
@@ -173,14 +174,24 @@ def build(path, stamp):
 
     sub(d, "One. Thumbnail wording on Videos 4 and 5")
     para(d, "The story-led script headers carry different thumbnail wording "
-            "from the locked package. The rule is that the script header "
-            "wins, so the wording of record changed on both. Thumbnail "
-            "ARTWORK was not rebuilt, because nothing asked for that and "
-            "artwork is approved separately.")
-    table(d, ["V", "Was", "Now"],
-          [["V%d" % n, PUB.THUMB_CHANGED[n], M.thumbnail(n)]
-           for n in sorted(PUB.THUMB_CHANGED)],
+            "from the locked roadmap. This pass originally read the script "
+            "header as the wording of record and changed both. That was "
+            "wrong and has been corrected.")
+    para(d, "The script layer is authoritative for current spoken wording "
+            "and recording delivery. The thumbnail text in its document "
+            "header is non-spoken metadata and is not packaging authority: "
+            "the separately locked V4 to V21 roadmap decides thumbnail "
+            "wording. Both thumbnails of record are the roadmap wording, "
+            "unchanged.", before=6)
+    table(d, ["V", "Thumbnail of record", "Script header metadata"],
+          [["V%d" % n, rec, hdr] for n, hdr, rec in PK.exceptions()],
           widths=[0.5, 3.1, 3.1], size=9)
+    caption(d, "No source document was edited to resolve this and no source "
+               "hash changed. The divergence is carried as a named metadata "
+               "exception in the source hierarchy manifest, both change "
+               "logs, both source manifests and both publishing documents, "
+               "and QA now fails if the header value ever stands anywhere "
+               "as the thumbnail of record.")
 
     sub(d, "Two. Two opening cards removed")
     para(d, "Both sat on an opening that is now Temidayo telling her own "
@@ -268,6 +279,34 @@ def build(path, stamp):
             "it was written for: it fails on Videos 10 and 13 when the old "
             "placement is restored, and stays silent on videos that never "
             "had the problem.")
+
+    h(d, "The correction pass")
+    para(d, "An independent audit of the uploaded archive found it was the "
+            "pre-fix build. Two corrections followed. Nothing else was "
+            "reopened: no script, framework, asset, Short, research "
+            "boundary, Riverside treatment, CTA intent or Watch Next route "
+            "was touched.")
+    table(d, ["", "What the audit found", "What was done"],
+          [["1", "The uploaded archive still cued two graphics twice, in "
+                 "Videos 10 and 13.",
+            "Already corrected on disk before the audit arrived. Verified "
+            "in the built maps: 183 assets, 183 placements, zero "
+            "duplicates, and the check runs on all eighteen videos."],
+           ["2", "Videos 4 and 5 carried the script header's thumbnail "
+                 "wording instead of the locked roadmap wording.",
+            "Corrected in the production layer. A packaging-authority module "
+            "now supplies the thumbnail of record, and every derived record "
+            "asks it instead of the script header."]],
+          widths=[0.3, 3.0, 3.4], size=8.5)
+    para(d, "Only Videos 4 and 5 were rebuilt. Every other package was left "
+            "exactly as it stood on disk and re-checked in place, so the "
+            "check count covers all eighteen without rewriting fourteen "
+            "packages that needed nothing.", before=8)
+    para(d, "Two checks were added and both were tested against an injected "
+            "violation before being trusted: reverting either the JSON "
+            "manifest or the publishing document to the header wording "
+            "fails the pass, and a video with no divergence is not "
+            "flagged.", before=6)
 
     h(d, "Flagged, not fixed")
     bullets(d, [

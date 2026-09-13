@@ -2,7 +2,7 @@
 VIDEOS 4 TO 21  |  SUPERSEDED MATERIALS INDEX
 ==============================================================================
 
-Generated: Sunday, September 13, 2026 | 3:52 PM CT
+Generated: Sunday, September 13, 2026 | 4:40 PM CT
 
 ------------------------------------------------------------------------------
 
@@ -49,13 +49,26 @@ SUPERSEDED VISUAL ASSETS
 
 SUPERSEDED THUMBNAIL WORDING
 
-  V4   was "I'D NEVER HELD THE ROLE"
-        now 'NO EXPERIENCE? NOT EXACTLY.'
-        The story-led script header wins. Thumbnail ARTWORK is not rebuilt.
+  None. Every thumbnail of record is the locked V4 to V21
+  roadmap wording, unchanged by this pass.
 
-  V5   was 'CHANGED TRACKS. NOT ZERO.'
-        now 'WHAT COMES WITH YOU?'
-        The story-led script header wins. Thumbnail ARTWORK is not rebuilt.
+------------------------------------------------------------------------------
+
+THUMBNAIL METADATA EXCEPTIONS
+
+  The September 13 script layer is authoritative for current spoken
+  wording and recording delivery. The thumbnail text in its document
+  header is non-spoken metadata and does not override the separately
+  locked V4 to V21 roadmap and packaging decisions. Where the two
+  differ, the roadmap is the thumbnail of record and the script header
+  is carried here as a known metadata exception. No source document was
+  edited, and every source hash is unchanged.
+
+  V4   script header metadata  'NO EXPERIENCE? NOT EXACTLY.'
+        thumbnail of record    "I'D NEVER HELD THE ROLE"
+
+  V5   script header metadata  'WHAT COMES WITH YOU?'
+        thumbnail of record    'CHANGED TRACKS. NOT ZERO.'
 
 ------------------------------------------------------------------------------
 
