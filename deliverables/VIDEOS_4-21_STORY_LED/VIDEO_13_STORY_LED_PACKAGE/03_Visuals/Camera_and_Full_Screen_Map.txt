@@ -243,22 +243,8 @@ ACTION AND RESOURCE
       after:      Return to camera on the next spoken line.
       status:     COPY UPDATE
 
-  [ FULL SCREEN ]  v13_02_define_investigate_try_decide
-      cue, exact words: Define.
-      treatment:  SEQUENCE
-      purpose:    The whole plan in one frame, delivered early.
-      reveal:     One bucket at a time.
-                  Establish the complete structure first, all items visible but even in weight, so the viewer sees the shape.
-                  Then activate ONE item at a time as Temidayo explains it: that item comes up in gold, the others sit back in a dimmer neutral. Do not emphasize all of them at once.
-                  Return to the complete structure, evenly weighted, only after the last item.
-                  One sound accent at most across the whole sequence, not one per item.
-      hold:       2 seconds each, 5 on the complete grid. Viewers will pause here.
-      sound:      Candidate: one tick on the fourth bucket.
-      after:      Return to camera on the next spoken line.
-      status:     REUSE
-
-  [ CAMERA ]  6 spoken paragraphs, about 58 words
-              opens: Investigate.
+  [ CAMERA ]  7 spoken paragraphs, about 59 words
+              opens: Define.
               stay on Temidayo through this stretch.
 
 
@@ -288,6 +274,6 @@ WATCH NEXT | Final visual
 
 SPINE SUMMARY
 
-  17 camera stretches, 11 full-screen frames.
+  17 camera stretches, 10 full-screen frames.
   The video stays on Temidayo for most of its length, which is the point
   of the story-led pass.

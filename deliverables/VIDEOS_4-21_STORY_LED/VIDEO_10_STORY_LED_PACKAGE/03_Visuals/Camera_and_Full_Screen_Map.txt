@@ -231,22 +231,8 @@ ACTION AND RESOURCE
       after:      Return to camera on the next spoken line.
       status:     REUSE
 
-  [ FULL SCREEN ]  v10_03_capture_qualify_retrieve
-      cue, exact words: Capture the contribution.
-      treatment:  SEQUENCE
-      purpose:    The framework.
-      reveal:     One column at a time.
-                  Establish the complete structure first, all items visible but even in weight, so the viewer sees the shape.
-                  Then activate ONE item at a time as Temidayo explains it: that item comes up in gold, the others sit back in a dimmer neutral. Do not emphasize all of them at once.
-                  Return to the complete structure, evenly weighted, only after the last item.
-                  One sound accent at most across the whole sequence, not one per item.
-      hold:       2 seconds each, 4 on the complete set.
-      sound:      Candidate: one tick as the third column lands.
-      after:      Return to camera on the next spoken line.
-      status:     REUSE
-
-  [ CAMERA ]  6 spoken paragraphs, about 83 words
-              opens: Qualify the claim.
+  [ CAMERA ]  7 spoken paragraphs, about 86 words
+              opens: Capture the contribution.
               stay on Temidayo through this stretch.
 
 
@@ -280,6 +266,6 @@ WATCH NEXT | Final visual
 
 SPINE SUMMARY
 
-  16 camera stretches, 11 full-screen frames.
+  16 camera stretches, 10 full-screen frames.
   The video stays on Temidayo for most of its length, which is the point
   of the story-led pass.

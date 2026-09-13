@@ -30,10 +30,21 @@ def spine(n):
     cue = {}
     for f in SETS[n]:
         q = M._norm(f["trigger"])
+        # A few trigger sentences are spoken twice. "Capture the contribution."
+        # opens the habit in V10's hook and is repeated as the action, and V13
+        # says "Define." in both places. The card belongs at the first spoken
+        # occurrence, where the idea arrives. Placing it again in the action
+        # section would cue the same graphic twice, directly after that
+        # section's own CTA card. Stop at the first match.
+        placed = False
         for li, (label, ps) in enumerate(M.sections(n)):
             for pi, p in enumerate(ps):
                 if q in M._norm(p):
                     cue.setdefault((li, pi), []).append(f)
+                    placed = True
+                    break
+            if placed:
+                break
     out = []
     for li, (label, ps) in enumerate(M.sections(n)):
         out.append(("SECTION", label))

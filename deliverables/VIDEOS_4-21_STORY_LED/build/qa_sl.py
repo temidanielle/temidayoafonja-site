@@ -143,6 +143,11 @@ def run(n, pkg):
     # ---- camera and full screen
     cam = sum(1 for x in P.spine(n) if x[0] == "CAMERA")
     full = sum(1 for x in P.spine(n) if x[0] == "FRAME")
+    placed = [x[1]["key"] for x in P.spine(n) if x[0] == "FRAME"]
+    twice = sorted({k for k in placed if placed.count(k) > 1})
+    ck("Every card is cued once and only once",
+       not twice and len(placed) == len(SETS[n]),
+       twice or "%d cards, %d placements" % (len(SETS[n]), len(placed)))
     ck("The video stays camera-led overall", cam >= full,
        "%d camera stretches against %d full-screen frames" % (cam, full))
     tmap = os.path.join(pkg, "03_Visuals", "Camera_and_Full_Screen_Map.txt")

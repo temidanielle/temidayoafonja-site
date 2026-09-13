@@ -2,16 +2,16 @@
 VIDEOS 4 TO 21  |  STORY-LED PACKAGE QA SUMMARY
 ==============================================================================
 
-Generated: Sunday, September 13, 2026 | 2:34 PM CT
+Generated: Sunday, September 13, 2026 | 3:52 PM CT
 
-569 package checks. 569 passed, 0 failed.
+587 package checks. 587 passed, 0 failed.
 
 Every check ran against the built package on disk, not against build data,
 so a check cannot pass because of something that was true only in a module.
 
 ------------------------------------------------------------------------------
 
-VIDEO 4   31 of 31
+VIDEO 4   32 of 32
 
   [PASS] Story-led script copied unchanged
          SHA-256 3c3c1c899d9b3b32cdab7223f72046107d81ab9523033749509df48f274d367b
@@ -29,6 +29,8 @@ VIDEO 4   31 of 31
          9 cues verified inside single spoken paragraphs
   [PASS] No visual cue is a section label
          labels are production aids and cue nothing
+  [PASS] Every card is cued once and only once
+         9 cards, 9 placements
   [PASS] The video stays camera-led overall
          9 camera stretches against 9 full-screen frames
   [PASS] The map distinguishes camera from full screen
@@ -76,7 +78,7 @@ VIDEO 4   31 of 31
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 5   32 of 32
+VIDEO 5   33 of 33
 
   [PASS] Story-led script copied unchanged
          SHA-256 ca60422a8f485fd218079401e96c795f809f9ed0818c6748bc8fd6f87a02dbdd
@@ -94,6 +96,8 @@ VIDEO 5   32 of 32
          9 cues verified inside single spoken paragraphs
   [PASS] No visual cue is a section label
          labels are production aids and cue nothing
+  [PASS] Every card is cued once and only once
+         9 cards, 9 placements
   [PASS] The video stays camera-led overall
          10 camera stretches against 9 full-screen frames
   [PASS] The map distinguishes camera from full screen
@@ -143,7 +147,7 @@ VIDEO 5   32 of 32
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 6   32 of 32
+VIDEO 6   33 of 33
 
   [PASS] Story-led script copied unchanged
          SHA-256 20fcec00cf5c5ea3ca173c03f14dc4600944d48caaa097dd3a1b5d204dde9ad1
@@ -161,6 +165,8 @@ VIDEO 6   32 of 32
          12 cues verified inside single spoken paragraphs
   [PASS] No visual cue is a section label
          labels are production aids and cue nothing
+  [PASS] Every card is cued once and only once
+         12 cards, 12 placements
   [PASS] The video stays camera-led overall
          15 camera stretches against 12 full-screen frames
   [PASS] The map distinguishes camera from full screen
@@ -210,7 +216,7 @@ VIDEO 6   32 of 32
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 7   31 of 31
+VIDEO 7   32 of 32
 
   [PASS] Story-led script copied unchanged
          SHA-256 10d5e872df12e51665113895a9a56cb674b0763eee705818361fdc19589f7c2a
@@ -228,6 +234,8 @@ VIDEO 7   31 of 31
          12 cues verified inside single spoken paragraphs
   [PASS] No visual cue is a section label
          labels are production aids and cue nothing
+  [PASS] Every card is cued once and only once
+         12 cards, 12 placements
   [PASS] The video stays camera-led overall
          16 camera stretches against 12 full-screen frames
   [PASS] The map distinguishes camera from full screen
@@ -275,7 +283,7 @@ VIDEO 7   31 of 31
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 8   32 of 32
+VIDEO 8   33 of 33
 
   [PASS] Story-led script copied unchanged
          SHA-256 d90ade46f5dc74085fb43c92ab5748a2145a37bab29a506808553279f51f18bc
@@ -293,6 +301,8 @@ VIDEO 8   32 of 32
          11 cues verified inside single spoken paragraphs
   [PASS] No visual cue is a section label
          labels are production aids and cue nothing
+  [PASS] Every card is cued once and only once
+         11 cards, 11 placements
   [PASS] The video stays camera-led overall
          16 camera stretches against 11 full-screen frames
   [PASS] The map distinguishes camera from full screen
@@ -342,7 +352,7 @@ VIDEO 8   32 of 32
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 9   32 of 32
+VIDEO 9   33 of 33
 
   [PASS] Story-led script copied unchanged
          SHA-256 fecf057ccfbb96b9eb17414c86a60dd1e7592936483b705633e20ec09f4516b6
@@ -360,6 +370,8 @@ VIDEO 9   32 of 32
          10 cues verified inside single spoken paragraphs
   [PASS] No visual cue is a section label
          labels are production aids and cue nothing
+  [PASS] Every card is cued once and only once
+         10 cards, 10 placements
   [PASS] The video stays camera-led overall
          16 camera stretches against 10 full-screen frames
   [PASS] The map distinguishes camera from full screen
@@ -409,7 +421,7 @@ VIDEO 9   32 of 32
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 10   32 of 32
+VIDEO 10   33 of 33
 
   [PASS] Story-led script copied unchanged
          SHA-256 8a75bc3f0f5bf92e4931090bc2f7d092f81fe7361dc503474187ce04790d035c
@@ -427,8 +439,10 @@ VIDEO 10   32 of 32
          10 cues verified inside single spoken paragraphs
   [PASS] No visual cue is a section label
          labels are production aids and cue nothing
+  [PASS] Every card is cued once and only once
+         10 cards, 10 placements
   [PASS] The video stays camera-led overall
-         16 camera stretches against 11 full-screen frames
+         16 camera stretches against 10 full-screen frames
   [PASS] The map distinguishes camera from full screen
          both are marked throughout the spine
   [PASS] Every frame carries a treatment
@@ -476,7 +490,7 @@ VIDEO 10   32 of 32
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 11   32 of 32
+VIDEO 11   33 of 33
 
   [PASS] Story-led script copied unchanged
          SHA-256 8ab8c8d0b3cf703392aa79139b69d0f32211886ffd9ef5e034b8801735e2795d
@@ -494,6 +508,8 @@ VIDEO 11   32 of 32
          10 cues verified inside single spoken paragraphs
   [PASS] No visual cue is a section label
          labels are production aids and cue nothing
+  [PASS] Every card is cued once and only once
+         10 cards, 10 placements
   [PASS] The video stays camera-led overall
          15 camera stretches against 10 full-screen frames
   [PASS] The map distinguishes camera from full screen
@@ -543,7 +559,7 @@ VIDEO 11   32 of 32
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 12   32 of 32
+VIDEO 12   33 of 33
 
   [PASS] Story-led script copied unchanged
          SHA-256 c7eb1e687b9404a7968136601a9c6be78091153bbf5da824f8903942228018b3
@@ -561,6 +577,8 @@ VIDEO 12   32 of 32
          10 cues verified inside single spoken paragraphs
   [PASS] No visual cue is a section label
          labels are production aids and cue nothing
+  [PASS] Every card is cued once and only once
+         10 cards, 10 placements
   [PASS] The video stays camera-led overall
          17 camera stretches against 10 full-screen frames
   [PASS] The map distinguishes camera from full screen
@@ -610,7 +628,7 @@ VIDEO 12   32 of 32
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 13   32 of 32
+VIDEO 13   33 of 33
 
   [PASS] Story-led script copied unchanged
          SHA-256 e103ebb6977362de1675f88b9321a1f5d597cf4a293cb26c3c76cd5cc73ecd7f
@@ -628,8 +646,10 @@ VIDEO 13   32 of 32
          10 cues verified inside single spoken paragraphs
   [PASS] No visual cue is a section label
          labels are production aids and cue nothing
+  [PASS] Every card is cued once and only once
+         10 cards, 10 placements
   [PASS] The video stays camera-led overall
-         17 camera stretches against 11 full-screen frames
+         17 camera stretches against 10 full-screen frames
   [PASS] The map distinguishes camera from full screen
          both are marked throughout the spine
   [PASS] Every frame carries a treatment
@@ -677,7 +697,7 @@ VIDEO 13   32 of 32
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 14   31 of 31
+VIDEO 14   32 of 32
 
   [PASS] Story-led script copied unchanged
          SHA-256 1e2f735018d24ee4ccc7a680379b48714bd990b329fdbd94d1d10b1b9b053c3f
@@ -695,6 +715,8 @@ VIDEO 14   31 of 31
          10 cues verified inside single spoken paragraphs
   [PASS] No visual cue is a section label
          labels are production aids and cue nothing
+  [PASS] Every card is cued once and only once
+         10 cards, 10 placements
   [PASS] The video stays camera-led overall
          12 camera stretches against 10 full-screen frames
   [PASS] The map distinguishes camera from full screen
@@ -742,7 +764,7 @@ VIDEO 14   31 of 31
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 15   32 of 32
+VIDEO 15   33 of 33
 
   [PASS] Story-led script copied unchanged
          SHA-256 b5ae27eda8da5993769021db113cfbf0b7155dbca16f86078055d12ef6bfd3ea
@@ -760,6 +782,8 @@ VIDEO 15   32 of 32
          10 cues verified inside single spoken paragraphs
   [PASS] No visual cue is a section label
          labels are production aids and cue nothing
+  [PASS] Every card is cued once and only once
+         10 cards, 10 placements
   [PASS] The video stays camera-led overall
          12 camera stretches against 10 full-screen frames
   [PASS] The map distinguishes camera from full screen
@@ -809,7 +833,7 @@ VIDEO 15   32 of 32
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 16   31 of 31
+VIDEO 16   32 of 32
 
   [PASS] Story-led script copied unchanged
          SHA-256 0349d5904a7e520c9a6b7b6ee6dc6111b55b68dc9bd33a286e769582631c1c0b
@@ -827,6 +851,8 @@ VIDEO 16   31 of 31
          10 cues verified inside single spoken paragraphs
   [PASS] No visual cue is a section label
          labels are production aids and cue nothing
+  [PASS] Every card is cued once and only once
+         10 cards, 10 placements
   [PASS] The video stays camera-led overall
          16 camera stretches against 10 full-screen frames
   [PASS] The map distinguishes camera from full screen
@@ -874,7 +900,7 @@ VIDEO 16   31 of 31
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 17   32 of 32
+VIDEO 17   33 of 33
 
   [PASS] Story-led script copied unchanged
          SHA-256 29331de0edac6f8d8777d1db464cb56ca764e13bc9ebc81cd28b4829c6c0e40c
@@ -892,6 +918,8 @@ VIDEO 17   32 of 32
          10 cues verified inside single spoken paragraphs
   [PASS] No visual cue is a section label
          labels are production aids and cue nothing
+  [PASS] Every card is cued once and only once
+         10 cards, 10 placements
   [PASS] The video stays camera-led overall
          15 camera stretches against 10 full-screen frames
   [PASS] The map distinguishes camera from full screen
@@ -941,7 +969,7 @@ VIDEO 17   32 of 32
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 18   31 of 31
+VIDEO 18   32 of 32
 
   [PASS] Story-led script copied unchanged
          SHA-256 0a428ff64cd7a287a34cbd093d0682d3c6ca5365fc1b58b58b03d66ab19c9035
@@ -959,6 +987,8 @@ VIDEO 18   31 of 31
          10 cues verified inside single spoken paragraphs
   [PASS] No visual cue is a section label
          labels are production aids and cue nothing
+  [PASS] Every card is cued once and only once
+         10 cards, 10 placements
   [PASS] The video stays camera-led overall
          15 camera stretches against 10 full-screen frames
   [PASS] The map distinguishes camera from full screen
@@ -1006,7 +1036,7 @@ VIDEO 18   31 of 31
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 19   31 of 31
+VIDEO 19   32 of 32
 
   [PASS] Story-led script copied unchanged
          SHA-256 9e1b61f36e25196d3ff5d106e2c115e68be93e02730258c914bc4b2a59b9cd7a
@@ -1024,6 +1054,8 @@ VIDEO 19   31 of 31
          10 cues verified inside single spoken paragraphs
   [PASS] No visual cue is a section label
          labels are production aids and cue nothing
+  [PASS] Every card is cued once and only once
+         10 cards, 10 placements
   [PASS] The video stays camera-led overall
          17 camera stretches against 10 full-screen frames
   [PASS] The map distinguishes camera from full screen
@@ -1071,7 +1103,7 @@ VIDEO 19   31 of 31
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 20   32 of 32
+VIDEO 20   33 of 33
 
   [PASS] Story-led script copied unchanged
          SHA-256 0030e35d3268922b40e285893cf838237d8254ab01ece97eb620e68d8f7e0fa8
@@ -1089,6 +1121,8 @@ VIDEO 20   32 of 32
          10 cues verified inside single spoken paragraphs
   [PASS] No visual cue is a section label
          labels are production aids and cue nothing
+  [PASS] Every card is cued once and only once
+         10 cards, 10 placements
   [PASS] The video stays camera-led overall
          14 camera stretches against 10 full-screen frames
   [PASS] The map distinguishes camera from full screen
@@ -1138,7 +1172,7 @@ VIDEO 20   32 of 32
   [PASS] Every graphic is specified, not merely requested
          present in the prompt
 
-VIDEO 21   31 of 31
+VIDEO 21   32 of 32
 
   [PASS] Story-led script copied unchanged
          SHA-256 a78f0507f661cc21d98ceae2bb3515a0801b1af2775ed545ddb2044d2e3c24ec
@@ -1156,6 +1190,8 @@ VIDEO 21   31 of 31
          10 cues verified inside single spoken paragraphs
   [PASS] No visual cue is a section label
          labels are production aids and cue nothing
+  [PASS] Every card is cued once and only once
+         10 cards, 10 placements
   [PASS] The video stays camera-led overall
          16 camera stretches against 10 full-screen frames
   [PASS] The map distinguishes camera from full screen
