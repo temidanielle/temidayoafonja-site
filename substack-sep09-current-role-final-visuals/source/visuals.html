@@ -12,7 +12,9 @@
   :root {
     --navy: #0F2347;
     --cream: #F5F0E8;
-    --gold: #B8952E;   /* brand gold on light, the readable value on cream */
+    --gold: #B8952E;      /* brand gold on light, the readable value on cream */
+    --gold-dark: #C9A84C; /* brand gold on dark, for type inside a navy card */
+    --rust: #C1440E;      /* brand rust, the accent the real artifact uses */
     --white: #FFFFFF;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -30,7 +32,14 @@
   #starter { width: 1600px; height: 1000px; }
 
   .serif { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; }
-  .rule { background: var(--gold); }
+  .rule { background: var(--rust); }
+
+  .frame {
+    position: absolute;
+    inset: 26px;
+    border: 1px solid rgb(from var(--gold) r g b / 0.55);
+    pointer-events: none;
+  }
 
   .tracked {
     font-weight: 600;
@@ -46,36 +55,45 @@
     padding: 96px 150px;
     text-align: center;
   }
-  #cover h1 { font-size: 104px; line-height: 1.12; letter-spacing: -0.004em; white-space: nowrap; }
+  #cover .panel {
+    background: var(--navy);
+    border-radius: 30px;
+    padding: 78px 84px 72px;
+    max-width: 1240px;   /* cream still reads as the field, not a margin */
+    text-align: center;
+  }
+  #cover h1 { font-size: 104px; line-height: 1.12; letter-spacing: -0.004em; white-space: nowrap; color: var(--cream); }
   #cover h1 span { display: block; }
-  #cover .rule { width: 104px; height: 3px; margin: 52px 0 46px; }
-  #cover .supporting { font-size: 21px; letter-spacing: 0.24em; text-indent: 0.24em; font-weight: 600; color: var(--gold); }
+  #cover .rule { width: 104px; height: 3px; margin: 44px auto 40px; }
+  #cover .supporting {
+    font-size: 21px; letter-spacing: 0.24em; text-indent: 0.24em;
+    font-weight: 600; color: var(--gold-dark);
+  }
   #cover .footer {
-    position: absolute; left: 0; right: 0; bottom: 74px;
+    position: absolute; left: 0; right: 0; bottom: 58px;
     text-align: center; font-size: 18px; letter-spacing: 0.26em; text-indent: 0.26em;
-    font-weight: 500; color: rgb(from var(--navy) r g b / 0.55);
+    font-weight: 600; color: var(--navy);
   }
 
   /* ---------------- 2. three Ps ---------------- */
   #threeps .inner { position: absolute; inset: 0; padding: 96px 110px 88px; display: flex; flex-direction: column; justify-content: center; }
   #threeps h2 { font-size: 64px; line-height: 1.16; letter-spacing: 0.012em; text-align: center; white-space: nowrap; }
-  #threeps .rule { width: 104px; height: 3px; margin: 40px auto 0; }
+  #threeps .rule { width: 104px; height: 3px; margin: 38px auto 0; }
   /* Cards size to their content: a stretched card leaves a dead white field
      under three short questions. */
   #threeps .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 34px; margin-top: 72px; align-items: stretch; }
   #threeps .card {
-    background: var(--white);
-    border: 1px solid rgb(from var(--navy) r g b / 0.10);
-    border-top: 4px solid var(--gold);
+    background: var(--navy);
+    border-radius: 22px;
     padding: 54px 46px 62px;
     min-height: 360px;
     display: flex; flex-direction: column;
   }
-  #threeps .card .label { font-size: 23px; color: var(--navy); }
-  #threeps .card .q { margin-top: 32px; font-size: 45px; line-height: 1.28; }
+  #threeps .card .label { font-size: 23px; color: var(--gold-dark); }
+  #threeps .card .q { margin-top: 32px; font-size: 45px; line-height: 1.28; color: var(--cream); }
   #threeps .supporting {
     margin-top: 62px; text-align: center; font-size: 24px; line-height: 1.5;
-    color: rgb(from var(--navy) r g b / 0.62);
+    color: rgb(from var(--navy) r g b / 0.70);
   }
 
   /* ---------------- 3. starter artifact ---------------- */
@@ -92,22 +110,26 @@
   #starter .caption {
     position: absolute; left: 0; right: 0; bottom: 76px;
     text-align: center; font-size: 20px; letter-spacing: 0.26em; text-indent: 0.26em;
-    font-weight: 600; text-transform: uppercase; color: var(--gold);
+    font-weight: 600; text-transform: uppercase; color: var(--navy);
   }
 </style>
 </head>
 <body>
 
 <section class="sheet" id="cover">
+  <div class="frame"></div>
   <div class="inner">
-    <h1 class="serif" id="cover-title"></h1>
-    <div class="rule"></div>
-    <div class="supporting" id="cover-supporting"></div>
+    <div class="panel">
+      <h1 class="serif" id="cover-title"></h1>
+      <div class="rule"></div>
+      <div class="supporting" id="cover-supporting"></div>
+    </div>
   </div>
   <div class="footer" id="cover-footer"></div>
 </section>
 
 <section class="sheet" id="threeps">
+  <div class="frame"></div>
   <div class="inner">
     <h2 class="serif" id="ps-title"></h2>
     <div class="rule"></div>
@@ -117,6 +139,7 @@
 </section>
 
 <section class="sheet" id="starter">
+  <div class="frame"></div>
   <div class="inner">
     <div class="stage">
       <img class="behind" id="starter-behind" alt="">
@@ -179,7 +202,7 @@
 
   function fitCover() {
     const el = document.getElementById('cover-title');
-    const measure = 1180;
+    const measure = 1240 - 84 * 2 - 24;
     const textWidth = node => {
       const r = document.createRange();
       r.selectNodeContents(node);

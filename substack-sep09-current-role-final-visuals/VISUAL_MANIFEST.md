@@ -88,9 +88,18 @@ node substack-sep09-current-role-final-visuals/source/verify-visuals.mjs <essay-
 
 ## Design system
 
-Navy `#0F2347`, warm cream `#F5F0E8`, muted gold `#B8952E` on cream, white
-`#FFFFFF` for the card panels. Display type is Cormorant Garamond, labels and
-supporting copy are DM Sans. Both families are already self hosted in the
+Navy `#0F2347`, warm cream `#F5F0E8`, gold `#B8952E` on cream and `#C9A84C`
+inside a navy panel, rust `#C1440E` for the short divider rules. The three
+sheets follow the Capability Audit treatment: a cream field inside a thin gold
+hairline frame, with the content carried on filled navy panels with rounded
+corners, cream serif type on the navy and gold small capitals for labels.
+Display type is Cormorant Garamond, labels and supporting copy are DM Sans.
+
+Rust is used only for the divider rules, which is where the real Career
+Evidence Starter uses it. It is deliberately not used as a card fill on the
+3 Ps. In the Capability Audit grid the rust card marks the destination among
+four states, and the essay is explicit that none of the three Ps outranks the
+others. Both families are already self hosted in the
 repository, and both are the families the Career Evidence Starter itself uses,
 so the visuals and the real artifact read as one system.
 

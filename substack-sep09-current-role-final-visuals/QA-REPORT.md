@@ -21,8 +21,12 @@ Automated gate: `source/verify-visuals.mjs`, currently passing.
    8.6px and 7.5px. The 3 Ps questions, the element that carries the meaning,
    render at 45px, which is 16.9px in that column. A 600px proof was reviewed.
 5. **Palette matches the system.** Navy `#0F2347`, cream `#F5F0E8`, gold
-   `#B8952E` on cream, white card panels. These are the values the real Career
-   Evidence Starter is drawn in, sampled from the artifact renders themselves.
+   `#B8952E` on cream and `#C9A84C` on navy, rust `#C1440E` for the divider
+   rules. Navy and cream were sampled from the real artifact renders. The rust
+   rule on the artifact page samples `#BD3700`, within rendering tolerance of the
+   brand value used here. The three sheets now follow the Capability Audit
+   treatment: gold hairline frame, filled navy panels with rounded corners,
+   cream serif on navy.
 6. **Three assets, two in body.** The cover is marked cover only in the
    manifest and is not placed in the body.
 7. **No older graphic reused.** The repository was searched for an existing
