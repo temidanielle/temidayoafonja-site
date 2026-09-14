@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Current role essay visuals</title>
+<!-- Self-hosted Cormorant Garamond and DM Sans, the two families the Career
+     Evidence Starter itself is set in, so these visuals and the real artifact
+     read as one system. Served over http by build-visuals.mjs so the /fonts/
+     paths inside fonts.css resolve. Text stays live DOM text. -->
+<link rel="stylesheet" href="/fonts.css">
+<style>
+  :root {
+    --navy: #0F2347;
+    --cream: #F5F0E8;
+    --gold: #B8952E;   /* brand gold on light, the readable value on cream */
+    --white: #FFFFFF;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: #fff; -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; }
+
+  .sheet {
+    position: relative;
+    background: var(--cream);
+    color: var(--navy);
+    font-family: 'DM Sans', system-ui, sans-serif;
+    overflow: hidden;
+  }
+  #cover   { width: 1600px; height: 900px; }
+  #threeps { width: 1600px; height: 1000px; }
+  #starter { width: 1600px; height: 1000px; }
+
+  .serif { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 500; }
+  .rule { background: var(--gold); }
+
+  .tracked {
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-indent: 0.22em;   /* letter-spacing pads the right edge; recentre it */
+    text-transform: uppercase;
+  }
+
+  /* ---------------- 1. cover ---------------- */
+  #cover .inner {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    padding: 96px 150px;
+    text-align: center;
+  }
+  #cover h1 { font-size: 104px; line-height: 1.12; letter-spacing: -0.004em; white-space: nowrap; }
+  #cover h1 span { display: block; }
+  #cover .rule { width: 104px; height: 3px; margin: 52px 0 46px; }
+  #cover .supporting { font-size: 21px; letter-spacing: 0.24em; text-indent: 0.24em; font-weight: 600; color: var(--gold); }
+  #cover .footer {
+    position: absolute; left: 0; right: 0; bottom: 74px;
+    text-align: center; font-size: 18px; letter-spacing: 0.26em; text-indent: 0.26em;
+    font-weight: 500; color: rgb(from var(--navy) r g b / 0.55);
+  }
+
+  /* ---------------- 2. three Ps ---------------- */
+  #threeps .inner { position: absolute; inset: 0; padding: 96px 110px 88px; display: flex; flex-direction: column; justify-content: center; }
+  #threeps h2 { font-size: 64px; line-height: 1.16; letter-spacing: 0.012em; text-align: center; white-space: nowrap; }
+  #threeps .rule { width: 104px; height: 3px; margin: 40px auto 0; }
+  /* Cards size to their content: a stretched card leaves a dead white field
+     under three short questions. */
+  #threeps .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 34px; margin-top: 72px; align-items: stretch; }
+  #threeps .card {
+    background: var(--white);
+    border: 1px solid rgb(from var(--navy) r g b / 0.10);
+    border-top: 4px solid var(--gold);
+    padding: 54px 46px 62px;
+    min-height: 360px;
+    display: flex; flex-direction: column;
+  }
+  #threeps .card .label { font-size: 23px; color: var(--navy); }
+  #threeps .card .q { margin-top: 32px; font-size: 45px; line-height: 1.28; }
+  #threeps .supporting {
+    margin-top: 62px; text-align: center; font-size: 24px; line-height: 1.5;
+    color: rgb(from var(--navy) r g b / 0.62);
+  }
+
+  /* ---------------- 3. starter artifact ---------------- */
+  #starter .inner { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
+  #starter .stage { position: relative; width: 980px; height: 760px; }
+  #starter img {
+    position: absolute;
+    border: 1px solid rgb(from var(--navy) r g b / 0.09);
+    /* a single soft shadow so the pages read as paper, nothing more */
+    box-shadow: 0 26px 60px rgb(from var(--navy) r g b / 0.13);
+  }
+  #starter .behind { right: 0; top: 0; width: 520px; }
+  #starter .front  { left: 0; bottom: 0; width: 560px; }
+  #starter .caption {
+    position: absolute; left: 0; right: 0; bottom: 76px;
+    text-align: center; font-size: 20px; letter-spacing: 0.26em; text-indent: 0.26em;
+    font-weight: 600; text-transform: uppercase; color: var(--gold);
+  }
+</style>
+</head>
+<body>
+
+<section class="sheet" id="cover">
+  <div class="inner">
+    <h1 class="serif" id="cover-title"></h1>
+    <div class="rule"></div>
+    <div class="supporting" id="cover-supporting"></div>
+  </div>
+  <div class="footer" id="cover-footer"></div>
+</section>
+
+<section class="sheet" id="threeps">
+  <div class="inner">
+    <h2 class="serif" id="ps-title"></h2>
+    <div class="rule"></div>
+    <div class="cards" id="ps-cards"></div>
+    <div class="supporting" id="ps-supporting"></div>
+  </div>
+</section>
+
+<section class="sheet" id="starter">
+  <div class="inner">
+    <div class="stage">
+      <img class="behind" id="starter-behind" alt="">
+      <img class="front" id="starter-front" alt="">
+    </div>
+  </div>
+  <div class="caption" id="starter-caption"></div>
+</section>
+
+<script type="module">
+  // Copy lives in copy.json so the wording stays editable without touching layout.
+  const copy = await (await fetch('./copy.json')).json();
+
+  // 1. cover
+  const t = document.getElementById('cover-title');
+  for (const line of copy.cover.titleLines) {
+    const s = document.createElement('span');
+    s.textContent = line;
+    t.appendChild(s);
+  }
+  document.getElementById('cover-supporting').textContent = copy.cover.supporting;
+  document.getElementById('cover-footer').textContent = copy.cover.footer;
+
+  // 2. three Ps
+  document.getElementById('ps-title').textContent = copy.threePs.title;
+  const cards = document.getElementById('ps-cards');
+  for (const c of copy.threePs.cards) {
+    const el = document.createElement('div');
+    el.className = 'card';
+    const label = document.createElement('div');
+    label.className = 'label tracked';
+    label.textContent = c.label;
+    const q = document.createElement('div');
+    q.className = 'q serif';
+    q.textContent = c.question;
+    el.append(label, q);
+    cards.appendChild(el);
+  }
+  document.getElementById('ps-supporting').textContent = copy.threePs.supporting;
+
+  // 3. real artifact pages, placed unmodified
+  document.getElementById('starter-front').src = copy.starter.front;
+  document.getElementById('starter-behind').src = copy.starter.behind;
+  document.getElementById('starter-caption').textContent = copy.starter.caption;
+
+  // Titles are set as large as they can be without crossing their measure.
+  function fitOneLine(el, measure, max, min) {
+    let size = max;
+    el.style.fontSize = size + 'px';
+    const width = () => {
+      const r = document.createRange();
+      r.selectNodeContents(el);
+      return r.getBoundingClientRect().width;
+    };
+    while (size > min && width() > measure) {
+      size -= 1;
+      el.style.fontSize = size + 'px';
+    }
+  }
+
+  function fitCover() {
+    const el = document.getElementById('cover-title');
+    const measure = 1180;
+    const textWidth = node => {
+      const r = document.createRange();
+      r.selectNodeContents(node);
+      return r.getBoundingClientRect().width;
+    };
+    let size = 104;
+    el.style.fontSize = size + 'px';
+    while (size > 56 && Math.max(...[...el.children].map(textWidth)) > measure) {
+      size -= 1;
+      el.style.fontSize = size + 'px';
+    }
+  }
+
+  await document.fonts.ready;
+  await Promise.all([...document.images].map(im => im.complete ? 0 : im.decode().catch(() => 0)));
+  fitCover();
+  fitOneLine(document.getElementById('ps-title'), 1380, 64, 40);
+  requestAnimationFrame(() => { document.documentElement.dataset.ready = 'true'; });
+</script>
+</body>
+</html>
