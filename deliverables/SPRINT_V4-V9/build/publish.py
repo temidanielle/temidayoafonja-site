@@ -10,85 +10,11 @@ from sdocs import (base_doc, title_block, h, kv, para, callout, sub, caption,
                    table, bullets, footer_note, mono, hr, head, _wrap,
                    EYEBROW, GOLD as GOLD_LABEL, DIM as DIM_LABEL)
 from content421 import PLAYLIST
+import descsrc as DS
 
-DESCRIPTION = {
- 4: ["The first draft used to be yours. The first analysis used to be "
-     "yours. It was messy and slow, and doing it taught you what good "
-     "looked like.",
-     "",
-     "Now AI does the first pass in seconds. That is not the problem. The "
-     "question is what replaces the learning that used to come with the "
-     "task.",
-     "",
-     "Three things to watch: exposure, ownership, feedback.",
-     "",
-     "Different jobs will answer this differently. In some work AI may "
-     "increase learning. In regulated work human review may remain "
-     "essential. In others the task may truly disappear. This video does "
-     "not claim one outcome. It says the learning path should not be "
-     "treated as automatic."],
- 5: ["They call you when something breaks. They ask you to train the new "
-     "person. Then a bigger opportunity opens and your name is not on it.",
-     "",
-     "Being needed and being developed are not the same thing. Your value "
-     "to the current role and your value to your future are not always "
-     "aligned, and that does not mean anyone is plotting against you.",
-     "",
-     "This video is about the difference between dependence and "
-     "development, what to ask for instead of a promotion, and what to do "
-     "when the answer is still no."],
- 6: ["Senior Divisional Strategy Consultant, Governance. The bottom of the "
-     "published range was $61,500, and one of the required qualifications "
-     "was the ability to accept direction and feedback.",
-     "",
-     "That is why I do not start with the title anymore.",
-     "",
-     "I read 15 postings from 11 employers for this research. The read is "
-     "four things: Problem. Authority. Proof. Real gap.",
-     "",
-     "It will not tell you who gets hired, whether the authority on paper "
-     "exists in practice, or whether a manager would flex. Reading better "
-     "does not guarantee a better outcome. It gives you a cleaner read."],
- 7: ["I have sat in rooms where two people were both capable, both "
-     "respected, and both doing good work. Then a bigger role opened, and "
-     "the difference was not always who worked harder.",
-     "",
-     "Four things tend to matter: visible proof, judgment, trust, and "
-     "sponsorship or access.",
-     "",
-     "That is not a formula, and this is not a video about working harder. "
-     "Organizations are not clean systems. Politics, bias, timing, budget "
-     "and manager behavior all shape who gets the shot. The point of "
-     "reading the situation is to separate what you can build, what you "
-     "can ask for, and what the organization may not be willing to give."],
- 8: ["The day your access ends, your memory is still yours. Your work may "
-     "not be. The dashboard is gone. The project folder is gone. And six "
-     "months later somebody asks what exactly changed because of your "
-     "work.",
-     "",
-     "Keep the proof. Not the property.",
-     "",
-     "This is not about taking company files. It is about keeping a lawful "
-     "record of your own contribution: the baseline, the scope, the "
-     "decision, the result, and how you know the result was real.",
-     "",
-     "Ten minutes a month, in your own words, while you are still "
-     "employed."],
- 9: ["When you think about changing industries, the obvious first "
-     "question is what skills transfer. It sounds sensible, and I think "
-     "it is incomplete.",
-     "",
-     "Four questions instead: What travels? What does not? What can I "
-     "prove? What must I relearn?",
-     "",
-     "This is not an argument that nothing transfers. It is an argument "
-     "for accuracy. An employer may still prefer direct experience. A "
-     "credential may be non-negotiable. Bias may affect how adjacent "
-     "experience is read. None of that disappears because you can explain "
-     "your capability well, and you make a better decision when you know "
-     "exactly what you are asking the next employer to believe."],
-}
-
+# The previously authored descriptions were superseded by the approved
+# revised package of September 14 and are not kept here: a stale copy
+# beside the real one is a trap. See descsrc.py.
 PINNED = {
  4: "Take one task AI now helps you with and write three columns: Before "
     "AI. With AI. Still mine. If the third column is rich, good. If it is "
@@ -185,16 +111,36 @@ def materials(n, path, stamp):
                "availability, and do not invent a fallback destination.")
 
     h(d, "Description")
-    for line in DESCRIPTION[n]:
-        para(d, line, size=10.5, after=6)
-    para(d, "", after=4)
-    para(d, "WATCH NEXT", size=9, bold=True, after=2)
-    para(d, S.watch_next(n), size=10.5, after=6)
-    para(d, "PLAYLIST", size=9, bold=True, after=2)
-    para(d, PLAYLIST, size=10.5, after=6)
+    caption(d, "Copy-ready, from the approved revised description package "
+               "of September 14, 2026. Reproduced exactly: wording, emojis, "
+               "resource name and URL are not edited here.")
+    blk = DS.block(n)
+    for line in DS.lines(n):
+        if not line:
+            para(d, "", after=2)
+        elif line[:1] in DS.EMOJI or line in (DS.WATCH, DS.PLAYLIST):
+            para(d, line, size=10.5, bold=True, before=4, after=2)
+        elif line.startswith("http") or line.startswith("[PASTE"):
+            para(d, line, size=10.5, color=GOLD_LABEL, after=6)
+        else:
+            para(d, line, size=10.5, after=6)
     para(d, "[ EDITOR: paste the real video and playlist URLs here after "
-            "upload. No URL in this package is a live link. ]", size=9,
-         color=DIM_LABEL)
+            "upload. No URL in this package is a live link. The resource "
+            "URL above is the approved destination and is left as written. ]",
+         size=9, color=DIM_LABEL, before=6)
+
+    h(d, "Resource block")
+    if blk["resource"]:
+        r = blk["resource"]
+        kv(d, "Resource", r["name"])
+        kv(d, "Label", r["emoji"] + " " + r["label"])
+        kv(d, "URL", r["url"])
+        caption(d, "One relevant resource, and only one. No other product "
+                   "appears in this description.")
+    else:
+        para(d, "No offer or resource block, intentionally.", size=11,
+             bold=True)
+        caption(d, blk["note"])
 
     h(d, "Pinned comment")
     para(d, PINNED[n], size=10.5)
@@ -204,7 +150,11 @@ def materials(n, path, stamp):
       "The CTA card is full screen.",
       "There is one spoken ask and it is the script's own. No second CTA "
       "was added and no product CTA appears.",
-      "No resource URL appears in this package: the script names none.",
+      "The script names no resource, so no resource is spoken. The "
+      "description carries one, and it is the approved one.",
+      "The resource and Watch Next are kept apart. They do different jobs: "
+      "the resource is optional deeper help, Watch Next is the next "
+      "content path.",
     ])
 
     h(d, "Search language")

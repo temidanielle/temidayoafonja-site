@@ -37,7 +37,9 @@ for n in S.VIDEOS:
        "%d" % len(now))
     d = [(a, b) for a, b in zip(pre, now) if a != b]
     changed += [(n, a, b) for a, b in d]
-ck("Exactly five spoken sentences changed", len(changed) == 5,
+# Five source-language corrections on September 13, plus one public
+# employer anonymization in NEW V6 on September 14.
+ck("Exactly six spoken sentences changed, all authorized", len(changed) == 6,
    "%d changed" % len(changed))
 for n in (4, 5, 7):
     ck("NEW V%d spoken script unchanged" % n,
@@ -82,12 +84,13 @@ for n in S.VIDEOS:
        bad or "no Short contains a corrected sentence")
 
 # --------------------------------------------------- packages and archives
-results, rr = {}, RU.check(6)
+results, rr, ar = {}, RU.check(6), RU.anonymized(6)
 for n in S.VIDEOS:
     pkg = pkg_dir(n)
     geo = G.check(n)[0]
     assets = sorted(glob.glob(os.path.join(pkg, "04_VISUAL_ASSETS", "*.png")))
-    results[n] = QA.run(n, pkg, geo, assets, rr if n == 6 else None)
+    results[n] = QA.run(n, pkg, geo, assets, rr if n == 6 else None,
+                        ar if n == 6 else None)
     bad = [x for x in results[n] if not x[1]]
     ck("NEW V%d package checks all pass" % n, not bad,
        "%d checks" % len(results[n]))
@@ -117,16 +120,36 @@ def git_sha(rel):
 for n in S.VIDEOS:
     zp = glob.glob(os.path.join(
         OUT, "NEW_V%d_*_Sprint_Production_Package.zip" % n))[0]
-    rel = os.path.relpath(zp, "/home/user/temidayoafonja-site")
-    same = git_sha(rel) == sha256(zp)
-    if n in (4, 5, 7):
-        ck("NEW V%d archive byte-identical to the accepted build" % n, same,
-           "not rebuilt")
-    else:
-        ck("NEW V%d archive rebuilt" % n, not same, "rebuilt for the "
-                                                    "correction")
     ck("NEW V%d archive matches its sidecar" % n,
        open(zp + ".sha256").read().split()[0] == sha256(zp), "")
+
+# ------------------------------------------ public employer anonymization
+import audit_public as AP
+import descsrc as DS
+ck("No employer name is drawn on any public card, any video",
+   not [h for n in S.VIDEOS for h in AP.scan(n)], "all six audited off the "
+                                                  "drawn card")
+ck("No employer name in any spoken stream",
+   not [1 for n in S.VIDEOS if AP.RX.search(S.spoken_text(n))], "clean")
+ck("No employer name in any Short",
+   not [1 for n in S.VIDEOS for sh in S.shorts(n)
+        if AP.RX.search(sh["hook"] + sh["body"] + sh["ask"])], "clean")
+ck("NEW V6 carries exactly two authorized replacements",
+   len(S.CORRECTIONS[6]) == 2, "one correction, one anonymization")
+ck("NEW V6 spoken word count", S.word_count(6) == 1010, "1,010")
+ck("NEW V6 stays under the ten-minute promise",
+   S.word_count(6) / 130.0 < 10, "%.1f minutes at the slow end"
+   % (S.word_count(6) / 130.0))
+
+# --------------------------------------------------- approved descriptions
+ck("Approved description package verified", DS.sha256() == DS.SHA, DS.SHA[:24])
+for n in S.VIDEOS:
+    pkg = pkg_dir(n)
+    us = QA.all_units(pkg)
+    ok, det = QA._description(n, us)
+    ck("NEW V%d description is the approved copy, verbatim" % n, ok, det)
+    ok, det = QA._resource(n, us)
+    ck("NEW V%d resource assignment correct" % n, ok, det)
 
 # ------------------------------------------------------------- the locks
 ck("Historical V4 to V21 archive untouched",

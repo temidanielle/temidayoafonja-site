@@ -125,6 +125,28 @@ EVIDENCE_NOTE = {
 }
 
 
+# The internal posting register. Anonymizing the public teaching layer must
+# not cost the research its traceability, so every posting shown on a card
+# is recorded here against the employer it actually came from. This is the
+# named layer, and it stays named.
+POSTING_REGISTER = (
+ ("Posting one", "Sr Divisional Strategy Consultant, Governance",
+  "Health Care Service Corporation (HCSC), requisition R0055598",
+  "Large Health Insurer"),
+ ("Posting two", "Director of Enterprise Resilience",
+  "Health Care Service Corporation (HCSC), same employer as posting one",
+  "Large Health Insurer"),
+ ("Posting three", "Director, Talent Management", "Zeta Global",
+  "Marketing Technology Company"),
+ ("Posting four", "Director of Strategic Initiatives",
+  "Patriot Growth Insurance Services", "Insurance Brokerage"),
+ ("Posting five", "Member of Technical Staff, Governance Risk Compliance",
+  "xAI", "AI Company"),
+ ("Posting six", "Director of Global Talent Acquisition", "GiveDirectly",
+  "A global nonprofit, spoken"),
+)
+
+
 def source_hierarchy(n, path, stamp, zips):
     L = head("NEW V%d  (FORMER ROADMAP V%d)  |  SOURCE MANIFEST AND NUMBER "
              "MAP" % (n, S.NUMBERS[n]))
@@ -195,6 +217,20 @@ def claim_notes(n, path, stamp):
           widths=[1.4, 2.3, 3.0], size=8)
     h(d, "Research and evidence in this video")
     para(d, EVIDENCE_NOTE[n], size=10.5)
+    if n == 6:
+        h(d, "Internal posting register")
+        para(d, "The public teaching layer carries a generic label instead "
+                "of an employer name. The research stays fully traceable "
+                "here. These are real captured postings, not synthetic "
+                "examples, and this register records exactly which "
+                "employer each one came from.", size=10.5)
+        table(d, ["", "Role as posted", "Employer, internal",
+                  "Public label"],
+              [[a, b, c, e] for a, b, c, e in POSTING_REGISTER],
+              widths=[0.8, 2.2, 2.2, 1.5], size=7.5)
+        caption(d, "Internal record. Never display copy. Captured "
+                   "September 12, 2026. 15 postings across 11 employers; "
+                   "the six above are the ones a card shows.")
     h(d, "Never, in any sprint video")
     bullets(d, [
       "No invented research, employer behavior, personal experience or "

@@ -4,9 +4,9 @@ NEW V6  (FORMER ROADMAP V22)  |  RIVERSIDE CO-CREATOR MASTER PROMPT
 
 Decode a Job Description in 10 Minutes
 Thumbnail: IGNORE THE TITLE
-Generated Sunday, September 13, 2026 | 8:44 PM CT
+Generated Monday, September 14, 2026 | 5:48 AM CT
 
-1,008 spoken words. 23 camera stretches against 18 full-screen cues,
+1,010 spoken words. 23 camera stretches against 18 full-screen cues,
 and 756 of the spoken words are delivered on camera.
 This script carries no timing markers, so nothing in it can be
 mistaken for a runtime, a chapter or an SRT time.
@@ -80,7 +80,7 @@ SECTION 1  HOOK
 ------------------------------------------------------------------------------
 
   MODE:     FULL SCREEN
-  CLASS:    REUSE
+  CLASS:    ANONYMIZED
   TRIGGER:  Senior Divisional Strategy Consultant, Governance.
   PURPOSE:
       Let the title sit alone long enough for the viewer to form an
@@ -296,7 +296,7 @@ SECTION 4  2. AUTHORITY
   TO:    Here is another example from the same employer.
 
   MODE:     FULL SCREEN
-  CLASS:    REUSE
+  CLASS:    ANONYMIZED
   TRIGGER:  Director of Enterprise Resilience. The range went to just under $248,000.
   PURPOSE:
       Show that the same employer writes a senior role in bounded-decision
@@ -347,7 +347,7 @@ SECTION 6  4. REAL GAP
 
   MODE:     FULL SCREEN
   CLASS:    REUSE
-  TRIGGER:  One posting in the sample was unusually direct. GiveDirectly was hiring a Director of Global Talent Acquisition and said candidates whose recruiting experience was exclusively in one geographic context were unlikely to be a strong fit.
+  TRIGGER:  One posting in the sample was unusually direct. A global nonprofit was hiring a Director of Global Talent Acquisition and said candidates whose recruiting experience was exclusively in one geographic context were unlikely to be a strong fit.
   PURPOSE:
       Show that a real gap is not always a skill gap, using the one
       posting that said so outright.
@@ -386,7 +386,7 @@ SECTION 7  THE TITLE TEST
   TO:    I looked at two Director roles in two different industries.
 
   MODE:     FULL SCREEN
-  CLASS:    REUSE
+  CLASS:    ANONYMIZED
   TRIGGER:  One was Director, Talent Management. The other was Director of Strategic Initiatives.
   PURPOSE:
       Two roles that share a level word, read side by side.
@@ -455,7 +455,7 @@ SECTION 8  THE REVERSE
   TO:    A title can sound less impressive than the work.
 
   MODE:     FULL SCREEN
-  CLASS:    REUSE
+  CLASS:    ANONYMIZED
   TRIGGER:  One posting was called Member of Technical Staff, Governance Risk Compliance.
   PURPOSE:
       Let the unfamiliar title and the density of the language register.

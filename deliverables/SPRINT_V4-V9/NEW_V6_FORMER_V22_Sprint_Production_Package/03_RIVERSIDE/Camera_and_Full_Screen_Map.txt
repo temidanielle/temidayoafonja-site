@@ -13,7 +13,7 @@ moving behind it and no semi-transparent overlay.
 
   23 camera stretches
   18 full-screen cues, one per card
-  756 of 1008 spoken words delivered on camera
+  756 of 1010 spoken words delivered on camera
 
 ------------------------------------------------------------------------------
 
@@ -22,7 +22,7 @@ moving behind it and no semi-transparent overlay.
 SECTION 1  HOOK
 ------------------------------------------------------------------------------
 
-  [ FULL SCREEN ]  NEW_V6_FS_01_TITLE_ONLY   (REUSE)
+  [ FULL SCREEN ]  NEW_V6_FS_01_TITLE_ONLY   (ANONYMIZED)
       TRIGGER:  Senior Divisional Strategy Consultant, Governance.
       STATES:   NEW_V6_FS_01_TITLE_ONLY
       HOLD:     Hold four to five seconds on the title alone. Do not reveal the range yet.
@@ -79,7 +79,7 @@ SECTION 3  1. PROBLEM
       First, ignore the title for a moment and ask:
       What can this organization not do right now?
 
-  [ FULL SCREEN ]  NEW_V6_FS_06_HCSC_WALKTHROUGH   (REUSE)
+  [ FULL SCREEN ]  NEW_V6_FS_06_POSTING_WALKTHROUGH   (REUSE)
       TRIGGER:  In that Senior Divisional Strategy Consultant role, the work was not "be strategic." The division needed a consistent way to evaluate opportunities, track them, and report on them.
       STATES:   NEW_V6_FS_06A_PROBLEM, NEW_V6_FS_06B_AUTHORITY, NEW_V6_FS_06C_PROOF
       HOLD:     The three states are spread across the PROBLEM, AUTHORITY and PROOF sections. Cut away to camera between them.
@@ -106,7 +106,7 @@ SECTION 4  2. AUTHORITY
       This does not make the role unimportant. It tells you where the authority appears to sit.
       Here is another example from the same employer.
 
-  [ FULL SCREEN ]  NEW_V6_FS_09_PREDEFINED_DECISIONS   (REUSE)
+  [ FULL SCREEN ]  NEW_V6_FS_09_PREDEFINED_DECISIONS   (ANONYMIZED)
       TRIGGER:  Director of Enterprise Resilience. The range went to just under $248,000.
       STATES:   NEW_V6_FS_09A_SAME_COMPANY, NEW_V6_FS_09B_PREDEFINED
       HOLD:     The defense of the role is delivered on camera, not on a card.
@@ -145,7 +145,7 @@ SECTION 6  4. REAL GAP
       It is a requirement that is specific enough to matter in this employer's world.
 
   [ FULL SCREEN ]  NEW_V6_FS_17_REAL_GAP   (REUSE)
-      TRIGGER:  One posting in the sample was unusually direct. GiveDirectly was hiring a Director of Global Talent Acquisition and said candidates whose recruiting experience was exclusively in one geographic context were unlikely to be a strong fit.
+      TRIGGER:  One posting in the sample was unusually direct. A global nonprofit was hiring a Director of Global Talent Acquisition and said candidates whose recruiting experience was exclusively in one geographic context were unlikely to be a strong fit.
       STATES:   NEW_V6_FS_17A_GEOGRAPHIC, NEW_V6_FS_17B_TIME_ZONE
       HOLD:     Hold until the sentence lands, then cut back.
 
@@ -164,7 +164,7 @@ SECTION 7  THE TITLE TEST
       Now let me show you why I keep saying not to trust the title.
       I looked at two Director roles in two different industries.
 
-  [ FULL SCREEN ]  NEW_V6_FS_10_DIRECTOR_COMPARE   (REUSE)
+  [ FULL SCREEN ]  NEW_V6_FS_10_DIRECTOR_COMPARE   (ANONYMIZED)
       TRIGGER:  One was Director, Talent Management. The other was Director of Strategic Initiatives.
       STATES:   NEW_V6_FS_10A_SAME_WORD, NEW_V6_FS_10B_SCOPE
       HOLD:     Hold until the sentence lands, then cut back.
@@ -195,7 +195,7 @@ SECTION 8  THE REVERSE
       And sometimes the opposite happens.
       A title can sound less impressive than the work.
 
-  [ FULL SCREEN ]  NEW_V6_FS_13_ACRONYM_WALL   (REUSE)
+  [ FULL SCREEN ]  NEW_V6_FS_13_ACRONYM_WALL   (ANONYMIZED)
       TRIGGER:  One posting was called Member of Technical Staff, Governance Risk Compliance.
       STATES:   NEW_V6_FS_13A_UNFAMILIAR_TITLE, NEW_V6_FS_13B_ACRONYM_WALL
       HOLD:     Hold until the sentence lands, then cut back.

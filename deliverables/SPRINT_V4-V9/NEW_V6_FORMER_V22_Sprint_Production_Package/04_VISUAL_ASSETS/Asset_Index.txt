@@ -12,7 +12,7 @@ faces are embedded.
 ------------------------------------------------------------------------------
 
 NEW_V6_FS_01_TITLE_ONLY
-    CLASS:      REUSE
+    CLASS:      ANONYMIZED
     PURPOSE:    Let the title sit alone long enough for the viewer to form an assumption before anything contradicts it.
     TREATMENT:  ARTIFACT
     NEW_V6_FS_01_TITLE_ONLY.png                    NEW_V6_FS_01_TITLE_ONLY.png
@@ -56,7 +56,7 @@ NEW_V6_FS_04_THREE_QUESTIONS
     SOURCE:
         Cards reused unchanged from the former V22 package.
 
-NEW_V6_FS_06_HCSC_WALKTHROUGH
+NEW_V6_FS_06_POSTING_WALKTHROUGH
     CLASS:      REUSE
     PURPOSE:    Run the method across one real posting, with the artifact large enough to read on a phone.
     TREATMENT:  ARTIFACT
@@ -75,7 +75,7 @@ NEW_V6_FS_08_READ_THE_VERBS
         Card reused unchanged from the former V22 package.
 
 NEW_V6_FS_09_PREDEFINED_DECISIONS
-    CLASS:      REUSE
+    CLASS:      ANONYMIZED
     PURPOSE:    Show that the same employer writes a senior role in bounded-decision language, without mocking the role.
     TREATMENT:  ARTIFACT
     NEW_V6_FS_09A_SAME_COMPANY.png                 NEW_V6_FS_09A_SAME_COMPANY.png
@@ -97,7 +97,7 @@ NEW_V6_FS_17_REAL_GAP
         unchanged from the former V22 package.
 
 NEW_V6_FS_10_DIRECTOR_COMPARE
-    CLASS:      REUSE
+    CLASS:      ANONYMIZED
     PURPOSE:    Two roles that share a level word, read side by side.
     TREATMENT:  COMPARISON
     NEW_V6_FS_10A_SAME_WORD.png                    NEW_V6_FS_10A_SAME_WORD.png, NEW_V6_FS_10A_SAME_WORD.svg
@@ -118,7 +118,7 @@ NEW_V6_FS_12_TITLE_TEST
         Cards reused unchanged from the former V22 package.
 
 NEW_V6_FS_13_ACRONYM_WALL
-    CLASS:      REUSE
+    CLASS:      ANONYMIZED
     PURPOSE:    Let the unfamiliar title and the density of the language register.
     TREATMENT:  ARTIFACT
     NEW_V6_FS_13A_UNFAMILIAR_TITLE.png             NEW_V6_FS_13A_UNFAMILIAR_TITLE.png

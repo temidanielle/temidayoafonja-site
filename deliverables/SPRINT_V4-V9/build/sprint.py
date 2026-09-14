@@ -34,7 +34,17 @@ CORRECTIONS = {
  6: ((u"Then ask the question people sometimes skip because they want the "
       u"move to work:",
       u"Then ask the question that is easy to skip when you want the move "
-      u"to work:"),),
+      u"to work:"),
+     # Public anonymization, September 14. The employer stays named in the
+     # evidence layer; the public teaching layer carries the generic label.
+     (u"One posting in the sample was unusually direct. GiveDirectly was "
+      u"hiring a Director of Global Talent Acquisition and said candidates "
+      u"whose recruiting experience was exclusively in one geographic "
+      u"context were unlikely to be a strong fit.",
+      u"One posting in the sample was unusually direct. A global nonprofit "
+      u"was hiring a Director of Global Talent Acquisition and said "
+      u"candidates whose recruiting experience was exclusively in one "
+      u"geographic context were unlikely to be a strong fit."),),
  8: ((u"This happens because most people treat evidence like something "
       u"they will collect later.",
       u"This happens when evidence gets treated like something to collect "

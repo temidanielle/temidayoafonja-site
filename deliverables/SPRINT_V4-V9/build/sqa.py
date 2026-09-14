@@ -9,6 +9,7 @@ import spine as SP
 import sshorts as SH
 import publish as PUB
 import langcheck23 as LANG
+import descsrc as DS
 from qa23 import units, _flat, negated as _negated, BRITISH, EM_DASH
 
 # A production document that names what a video must not be read as
@@ -45,13 +46,14 @@ def language(text):
 
 
 def authored_copy(n):
-    """Everything this build wrote for publication, as one blob."""
-    parts = []
-    for blob in (PUB.DESCRIPTION, PUB.PINNED):
-        v = blob.get(n)
-        if v:
-            parts.append(" ".join(v) if isinstance(v, list) else str(v))
-    return "\n".join(parts)
+    """Everything this build wrote for publication, as one blob.
+
+    The description is no longer in this set: it is approved source now,
+    reproduced verbatim from the September 14 package, and the checker
+    reports on approved copy rather than asking the package to edit it.
+    """
+    v = PUB.PINNED.get(n)
+    return str(v) if v else ""
 
 
 def negated(text, at, window=140):
@@ -125,7 +127,7 @@ def forbidden(n, us, phrases):
     return hits
 
 
-def run(n, pkg, geo, assets, reuse_rows=None):
+def run(n, pkg, geo, assets, reuse_rows=None, anon_rows=None):
     R = []
 
     def ck(name, ok, detail):
@@ -264,13 +266,17 @@ def run(n, pkg, geo, assets, reuse_rows=None):
                                            "claim in this script")
     ck("Corrected sentences replaced, nothing else touched",
        *_corrections(n))
+    ck("Description is the approved revised copy, verbatim",
+       *_description(n, us))
+    ck("One relevant resource at most, no stacking",
+       *_resource(n, us))
     if n == 6:
-        # 1,008 after the authorized correction: the replacement sentence
-        # is two words longer. Nothing was added to the spoken stream.
+        # 1,010 after the two authorized corrections. Nothing was added to
+        # the spoken stream; both were sentence-for-sentence replacements.
         ck("The ten-minute promise is protected",
-           S.word_count(6) == 1008 and not _added_spoken(6),
-           "1,008 spoken words, the supplied script plus one authorized "
-           "sentence replacement. No spoken material "
+           S.word_count(6) == 1010 and not _added_spoken(6),
+           "1,010 spoken words, the supplied script plus two authorized "
+           "sentence replacements. No spoken material "
            "added, no second CTA.")
         ck("Problem, Authority, Proof and Real Gap all present",
            all(S.contains(6, x) for x in ("Problem.", "Authority.", "Proof.",
@@ -281,6 +287,50 @@ def run(n, pkg, geo, assets, reuse_rows=None):
                "package", all(ok for _, ok, _ in reuse_rows),
                "%d families verified against the locked V22 bytes"
                % len(reuse_rows))
+        if anon_rows is not None:
+            ck("Every anonymized card changed the employer label and "
+               "nothing else", all(ok for _, ok, _ in anon_rows),
+               "%d families: restoring the name returns the former V22 "
+               "bytes exactly" % len(anon_rows))
+        # ------------------------------------------- public anonymization
+        import audit_public as AP
+        ck("No employer name is drawn on any public V6 card",
+           not AP.scan(6), AP.scan(6) or "%d states audited off the drawn "
+                                         "card, not the source"
+           % sum(len(f["states"]) for f in F.SETS[6]))
+        for who in ("HCSC", "Health Care Service", "xAI", "Zeta Global",
+                    "Patriot Growth", "GiveDirectly"):
+            ck("No public-facing V6 graphic identifies %s" % who,
+               not [h for h in AP.scan(6) if who.lower() in h[1].lower()],
+               "absent from every drawn state and every filename")
+        ck("No employer name remains in V6 spoken copy",
+           not AP.RX.search(S.spoken_text(6)), "clean")
+        ck("No employer URL appears anywhere public in V6",
+           not _public_urls(pkg), _public_urls(pkg) or "none")
+        ck("The internal evidence layer still names every employer",
+           _evidence_named(pkg),
+           "the evidence and provenance records keep the real identities")
+        # This evidence lives on the cards, so it is read off the drawn
+        # card and the documents together rather than from documents alone.
+        seen = _drawn_and_written(6, pkg)
+        ck("Posting titles, ranges and quoted language are unchanged",
+           all(x.lower() in seen for x in
+               ("Sr Divisional Strategy Consultant, Governance",
+                "$133,400 to $247,700",
+                "Member of Technical Staff, Governance Risk Compliance",
+                "predefined decisions", "Director, Talent Management",
+                "Director of Strategic Initiatives")),
+           "anonymizing the employer removed no evidence")
+        ck("Capture provenance is intact",
+           "captured september 12, 2026" in seen,
+           "every posting still carries its capture date")
+        ck("The 15-posting, 11-employer boundary is intact",
+           "15 postings" in body and "11 employers" in body,
+           "denominator unchanged")
+        ck("The ceiling claim stays bounded to the sample",
+           "in this sample" in body or "in the sample" in body,
+           "the highest range is the highest in this sample, not the "
+           "market, even though the card now says AI Company")
     if n == 9:
         ck("The full four-part audit is preserved",
            all(S.contains(9, x) for x in ("What travels?", "What does not?",
@@ -293,6 +343,110 @@ def run(n, pkg, geo, assets, reuse_rows=None):
                                  "forward the", "copy the file")),
            "no file, screenshot, download or system appears in any asset")
     return R
+
+
+# The resource each description is authorized to carry, and the one it may
+# never stack with another.
+RESOURCE = {4: None,
+            5: ("Career Decision Evidence Check",
+                "https://temidayoafonja.com/career-decisions"),
+            6: ("Career Evidence Starter",
+                "https://temidayoafonja.com/career-evidence-starter"),
+            7: ("Career Evidence Starter",
+                "https://temidayoafonja.com/career-evidence-starter"),
+            8: ("Keep the Proof",
+                "https://temidayoafonja.com/keep-the-proof"),
+            9: ("Career Decision Evidence Check",
+                "https://temidayoafonja.com/career-decisions")}
+OTHER_OFFERS = ("Field Kit", "the book", "workshop")
+
+
+# Public-facing parts of a package. The evidence and provenance records are
+# deliberately outside this set: they stay named.
+PUBLIC_DIRS = ("01_RECORDING", "02_RUN_OF_SHOW", "04_VISUAL_ASSETS",
+               "05_SHORTS", "06_PUBLISHING")
+EMPLOYER_URL = re.compile(
+    r"\b(?:givedirectly\.org|zetaglobal\.com|hcsc\.com|patriotgrowth\.com"
+    r"|x\.ai)\b", re.I)
+
+
+def _drawn_and_written(n, pkg):
+    """Everything the package shows or says, cards included, lowercased."""
+    import audit_public as AP
+    import frames as FR
+    out = []
+    for f in FR.SETS[n]:
+        for st in f["states"]:
+            out += AP.state_text(st)
+    out += all_units(pkg)
+    return _flat(" ".join(out)).lower()
+
+
+def _public_urls(pkg):
+    out = []
+    for sub in PUBLIC_DIRS:
+        d = os.path.join(pkg, sub)
+        for root, _, names in os.walk(d):
+            for nm in sorted(names):
+                if not nm.endswith((".docx", ".txt")):
+                    continue
+                for u in units(os.path.join(root, nm)):
+                    if EMPLOYER_URL.search(u):
+                        out.append("%s: %s" % (nm, u[:50]))
+    return out
+
+
+def _evidence_named(pkg):
+    """The internal layer must still carry the real employer identities."""
+    want = ("HCSC", "GiveDirectly", "xAI", "Zeta Global", "Patriot Growth")
+    blob = ""
+    for sub in ("00_SOURCE_HIERARCHY", "07_EVIDENCE", "04_VISUAL_ASSETS"):
+        d = os.path.join(pkg, sub)
+        for root, _, names in os.walk(d):
+            for nm in sorted(names):
+                if nm.endswith((".docx", ".txt")):
+                    blob += " " + _flat(" ".join(
+                        units(os.path.join(root, nm))))
+    return all(w.lower() in blob.lower() for w in want)
+
+
+def _description(n, us):
+    """Every approved line reaches the publishing document unedited."""
+    body = _flat(" ".join(us))
+    missing = [l for l in DS.lines(n) if l.strip()
+               and _flat(l) not in body]
+    if missing:
+        return False, ["missing: %s" % m[:60] for m in missing]
+    d = DS.block(n)
+    if _flat(d["title"]) != _flat(S.title(n)):
+        return False, "title in the description package does not match"
+    if _flat(d["watch_next"]) != _flat(S.watch_next(n)):
+        return False, "Watch Next in the description package does not match"
+    return True, ("%d approved lines, reproduced exactly, with the playlist "
+                  "placeholder left in place" % len(DS.lines(n)))
+
+
+def _resource(n, us):
+    body = _flat(" ".join(us))
+    want = RESOURCE[n]
+    urls = set(re.findall(r"https://temidayoafonja\.com/[a-z0-9\-]+", body))
+    if want is None:
+        if urls:
+            return False, "carries a resource URL but should carry none: %s" \
+                          % sorted(urls)
+        return True, "no offer or resource block, intentionally"
+    name, url = want
+    if _flat(name) not in body:
+        return False, "missing the approved resource: %s" % name
+    if url not in urls:
+        return False, "missing the approved URL: %s" % url
+    extra = urls - {url}
+    if extra:
+        return False, "stacks another resource: %s" % sorted(extra)
+    stacked = [o for o in OTHER_OFFERS if o.lower() in body.lower()]
+    if stacked:
+        return False, "names another offer: %s" % stacked
+    return True, "%s, and only that one" % name
 
 
 def _corrections(n):

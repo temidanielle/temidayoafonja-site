@@ -21,6 +21,10 @@ import sprint as S
 import lay23 as L
 
 REUSE, COPY, NEW = "REUSE", "COPY UPDATE", "NEW"
+# A card whose architecture is the former V22's but whose copy carries a
+# generic employer label instead of the name. It is no longer byte-
+# identical, so it may not claim reuse.
+ANON = "ANONYMIZED"
 
 
 def P(n, i):
@@ -413,10 +417,10 @@ V6 = [
    [dict(name="NEW_V6_FS_01_TITLE_ONLY", reveal="Single state. No build.",
          draw=lambda c: L.artifact(
              c, "posting one", HCSC1,
-             [("Employer", "Health Care Service Corporation"),
+             [("Employer", "Large Health Insurer"),
               ("Location", "Chicago, Illinois. Remote.")],
              source=CAPTURED, head_size=72))],
-   cls=REUSE,
+   cls=ANON,
    hold="Hold four to five seconds on the title alone. Do not reveal the "
         "range yet.",
    sound="One restrained reveal accent, then nothing.",
@@ -501,7 +505,7 @@ V6 = [
    treatment="SEQUENCE",
    source="Cards reused unchanged from the former V22 package."),
 
- F("NEW_V6_FS_06_HCSC_WALKTHROUGH", 6, 15,
+ F("NEW_V6_FS_06_POSTING_WALKTHROUGH", 6, 15,
    "Run the method across one real posting, with the artifact large enough "
    "to read on a phone.",
    "Artifact with numbered teaching points, one active at a time.",
@@ -537,7 +541,7 @@ V6 = [
          draw=lambda c: L.artifact(
              c, "posting two", "Director of Enterprise Resilience",
              [("Same employer, different department",
-               "Health Care Service Corporation"),
+               "Large Health Insurer"),
               ("Published range", "$133,400 to $247,700"),
               ("Requirement", "Work with executive leadership to make quick "
                               "decisions based on predefined decisions")],
@@ -548,12 +552,12 @@ V6 = [
          draw=lambda c: L.artifact(
              c, "posting two", "Director of Enterprise Resilience",
              [("Same employer, different department",
-               "Health Care Service Corporation"),
+               "Large Health Insurer"),
               ("Published range", "$133,400 to $247,700"),
               ("Requirement", "Work with executive leadership to make quick "
                               "decisions based on predefined decisions")],
              active=2, source=CAPTURED))],
-   cls=REUSE,
+   cls=ANON,
    hold="The defense of the role is delivered on camera, not on a card.",
    sound="One accent on A, one on B.",
    source="A2. Claim limit: the posting establishes predefined decisions. It "
@@ -596,10 +600,10 @@ V6 = [
          draw=lambda c: L.compare(
              c, "two director roles", "Two different industries.",
              ("posting three", "Director, Talent Management",
-              [("Employer", "Zeta Global"),
+              [("Employer", "Marketing Technology Company"),
                ("Experience minimum", "5 to 7 years")]),
              ("posting four", "Director of Strategic Initiatives",
-              [("Employer", "Patriot Growth Insurance Services"),
+              [("Employer", "Insurance Brokerage"),
                ("Experience minimum", "5 or more years")]),
              foot=CAPTURED)),
     dict(name="NEW_V6_FS_10B_SCOPE", reveal="Add scope and reporting.",
@@ -612,7 +616,7 @@ V6 = [
               [("Focus", "Runs a transformation office"),
                ("Partners with", "A Chief Transformation Officer")]),
              foot=CAPTURED))],
-   cls=REUSE, svg=True,
+   cls=ANON, svg=True,
    sound="One accent on establish. Nothing on B.",
    source="A3 and A4. No compensation comparison: the script draws none. "
           "Cards reused unchanged from the former V22 package.",
@@ -655,17 +659,17 @@ V6 = [
    [dict(name="NEW_V6_FS_13A_UNFAMILIAR_TITLE", reveal="Title alone.",
          draw=lambda c: L.artifact(
              c, "posting five", XAI,
-             [("Employer", "xAI"),
+             [("Employer", "AI Company"),
               ("Location", "Palo Alto, California and Washington, DC")],
              source=CAPTURED, head_size=66)),
     dict(name="NEW_V6_FS_13B_ACRONYM_WALL",
          reveal="Add the acronym line, as captured and unedited.",
          draw=lambda c: L.artifact(
              c, "posting five", XAI,
-             [("Employer", "xAI"),
+             [("Employer", "AI Company"),
               ("In the description", "FedRAMP.  ATO.  POAM.  3PAO.  STIG.")],
              active=1, source=CAPTURED, head_size=66, body_size=52))],
-   cls=REUSE, sound="One accent on B only.",
+   cls=ANON, sound="One accent on B only.",
    source="A5. Cards reused unchanged from the former V22 package.",
    treatment="ARTIFACT"),
 

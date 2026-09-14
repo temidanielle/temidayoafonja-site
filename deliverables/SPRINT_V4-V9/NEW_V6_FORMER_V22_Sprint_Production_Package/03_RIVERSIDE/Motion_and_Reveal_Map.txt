@@ -10,7 +10,7 @@ never a button.
 
 ------------------------------------------------------------------------------
 
-NEW_V6_FS_01_TITLE_ONLY   (REUSE)
+NEW_V6_FS_01_TITLE_ONLY   (ANONYMIZED)
     TRIGGER:    Senior Divisional Strategy Consultant, Governance.
     LAYOUT:     Artifact. Nothing else on screen.
     TREATMENT:  ARTIFACT
@@ -53,7 +53,7 @@ NEW_V6_FS_04_THREE_QUESTIONS   (REUSE)
     3. NEW_V6_FS_04C_DO_I_MEET_THE_GATES            On 'Do I meet the stated gates?'
     HOLD:       Hold until the sentence lands, then cut back.
 
-NEW_V6_FS_06_HCSC_WALKTHROUGH   (REUSE)
+NEW_V6_FS_06_POSTING_WALKTHROUGH   (REUSE)
     TRIGGER:    In that Senior Divisional Strategy Consultant role, the work was not "be strategic." The division needed a consistent way to evaluate opportunities, track them, and report on them.
     LAYOUT:     Artifact with numbered teaching points, one active at a time.
     TREATMENT:  ARTIFACT
@@ -71,7 +71,7 @@ NEW_V6_FS_08_READ_THE_VERBS   (REUSE)
     1. NEW_V6_FS_08_READ_THE_VERBS                  Single state.
     HOLD:       Hold until the sentence lands, then cut back.
 
-NEW_V6_FS_09_PREDEFINED_DECISIONS   (REUSE)
+NEW_V6_FS_09_PREDEFINED_DECISIONS   (ANONYMIZED)
     TRIGGER:    Director of Enterprise Resilience. The range went to just under $248,000.
     LAYOUT:     Artifact, establish then activate the requirement line.
     TREATMENT:  ARTIFACT
@@ -81,7 +81,7 @@ NEW_V6_FS_09_PREDEFINED_DECISIONS   (REUSE)
     HOLD:       The defense of the role is delivered on camera, not on a card.
 
 NEW_V6_FS_17_REAL_GAP   (REUSE)
-    TRIGGER:    One posting in the sample was unusually direct. GiveDirectly was hiring a Director of Global Talent Acquisition and said candidates whose recruiting experience was exclusively in one geographic context were unlikely to be a strong fit.
+    TRIGGER:    One posting in the sample was unusually direct. A global nonprofit was hiring a Director of Global Talent Acquisition and said candidates whose recruiting experience was exclusively in one geographic context were unlikely to be a strong fit.
     LAYOUT:     Two stated constraints, the second added when it is spoken.
     TREATMENT:  COMPARISON
     BUILD:      BUILD
@@ -89,7 +89,7 @@ NEW_V6_FS_17_REAL_GAP   (REUSE)
     2. NEW_V6_FS_17B_TIME_ZONE                      The overlap requirement becomes active.
     HOLD:       Hold until the sentence lands, then cut back.
 
-NEW_V6_FS_10_DIRECTOR_COMPARE   (REUSE)
+NEW_V6_FS_10_DIRECTOR_COMPARE   (ANONYMIZED)
     TRIGGER:    One was Director, Talent Management. The other was Director of Strategic Initiatives.
     LAYOUT:     Side-by-side comparison, scope revealed second.
     TREATMENT:  COMPARISON
@@ -109,7 +109,7 @@ NEW_V6_FS_12_TITLE_TEST   (REUSE)
     4. NEW_V6_FS_12D_DIFFERENT_CONTEXT              On 'Different context.'
     HOLD:       Hold until the sentence lands, then cut back.
 
-NEW_V6_FS_13_ACRONYM_WALL   (REUSE)
+NEW_V6_FS_13_ACRONYM_WALL   (ANONYMIZED)
     TRIGGER:    One posting was called Member of Technical Staff, Governance Risk Compliance.
     LAYOUT:     Artifact, then the captured acronym line at full size.
     TREATMENT:  ARTIFACT

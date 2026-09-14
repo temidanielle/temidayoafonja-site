@@ -3,7 +3,7 @@ NEW V6  (FORMER ROADMAP V22)  |  SOURCE MANIFEST AND NUMBER MAP
 ==============================================================================
 
 Decode a Job Description in 10 Minutes
-Generated Sunday, September 13, 2026 | 8:44 PM CT
+Generated Monday, September 14, 2026 | 5:48 AM CT
 
 ------------------------------------------------------------------------------
 
@@ -44,21 +44,21 @@ SOURCE FILES
       sha256  55e7ad9f4cb79ddcdb3643b62fe45b56533f257fe5bfc1e04dc4583053a41360
 
   NEW_V6_FORMER_V22_Final_Sprint_Script_and_3_Shorts.docx
-      sha256  5fac0d7f5de04fc4538370b117d15702d5776b094d2f677a346e27a98395aa66
+      sha256  72a2b19fc317abbd59e43a939b767e45b39fd2be68daba9c44c5c0bc0e264c5b
 
   NEW_V6_FORMER_V22_Thought_Block_Recording_Copy.docx
-      sha256  d6ee215e5dba592ff5d6abe2fd4605eabaa85def75d4e8d003cb133427c5d4c4
+      sha256  95a61d24357bb0411f0a835fed2aea61eeba994764f549ddc672613fc474b5bb
 
 ------------------------------------------------------------------------------
 
 SPOKEN SCRIPT
 
-  11 sections, 84 spoken paragraphs, 1,008 spoken words.
-  Arithmetic estimate 6:57 to 7:45 at 130 to 145 words per minute.
+  11 sections, 84 spoken paragraphs, 1,010 spoken words.
+  Arithmetic estimate 6:58 to 7:46 at 130 to 145 words per minute.
   That is arithmetic on the script. It is not a runtime, a
   chapter, a Riverside time or an SRT time.
 
-  Thought-block match: 1008 words, identical and in order
+  Thought-block match: 1010 words, identical and in order
 
 ------------------------------------------------------------------------------
 

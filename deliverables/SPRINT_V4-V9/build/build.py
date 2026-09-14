@@ -23,6 +23,7 @@ import sshorts as SH
 import publish as PUB
 import evidence as EV
 import sqa as QA
+import descsrc as DS
 from sdocs import (base_doc, title_block, h, kv, para, callout, sub, caption,
                    table, bullets, footer_note, EYEBROW)
 
@@ -127,10 +128,10 @@ def qa_report(n, path, st, rows, geo, made, svgs):
     return path
 
 
-# Videos the correction actually touched. Everything else is re-checked
-# where it stands and never regenerated, because every document carries a
-# generation stamp and rebuilding one would change bytes for no reason.
-REBUILD = set(S.CORRECTED)
+# The approved revised descriptions of September 14 change the publishing
+# document in every package, so this pass rebuilds all six. V6 additionally
+# carries the public employer anonymization.
+REBUILD = set(S.VIDEOS)
 
 
 def reuse_package(n):
@@ -220,18 +221,26 @@ def master_hierarchy(path, st, zips):
             "order."]],
           widths=[0.4, 2.0, 4.3], size=8.5)
     h(d, "Source layer")
-    para(d, "Five spoken sentences were replaced across NEW V6, NEW V8 and "
-            "NEW V9 by explicit authorization on September 13. The supplied "
-            "source is never edited: the corrected documents live in "
-            "_source_v2, and a byte-identical copy of every supplied file "
-            "is preserved under _source_v2/_pre_correction, so the change "
-            "can be audited in both directions. The hashes below are the "
-            "corrected layer, which is what every package was built from.",
-         size=10.5)
+    para(d, "Six spoken sentences have been replaced by explicit "
+            "authorization: five source-language corrections on September "
+            "13 across NEW V6, NEW V8 and NEW V9, and one public employer "
+            "anonymization in NEW V6 on September 14. The supplied source "
+            "is never edited: the corrected documents live in _source_v2, "
+            "and a byte-identical copy of every supplied file is preserved "
+            "under _source_v2/_pre_correction, so the change can be audited "
+            "in both directions. The hashes below are the corrected layer, "
+            "which is what every package was built from.", size=10.5)
     table(d, ["", "Supplied source, before correction", "Sentences replaced"],
           [["NEW V%d" % n, S.sha256(S.pre_script_path(n)),
             "%d" % len(S.CORRECTIONS[n]) if n in S.CORRECTIONS else "none"]
            for n in S.VIDEOS], widths=[0.8, 4.2, 1.7], size=7.5)
+
+    h(d, "Approved description package")
+    kv(d, "File", os.path.basename(DS.SRC))
+    kv(d, "SHA-256", DS.sha256())
+    caption(d, "Approved September 14, 2026. Supersedes the description "
+               "copy this build previously authored, and is reproduced "
+               "verbatim in every publishing document.")
 
     h(d, "Source files")
     rows = [[nm, sha] for nm, sha in zips]
@@ -254,13 +263,15 @@ def master_hierarchy(path, st, zips):
     return path
 
 
-def changelog(path, st, reuse_rows):
+def changelog(path, st, reuse_rows, anon_rows):
     d = base_doc()
     title_block(d, EYEBROW, "Sprint production changelog",
                 "What was built, from what, and what was flagged")
     kv(d, "Generated", st)
-    callout(d, "Five spoken sentences were replaced across NEW V6, NEW V8 "
-               "and NEW V9 by explicit authorization on September 13. No "
+    callout(d, "Six spoken sentences have been replaced by explicit "
+               "authorization: five source-language corrections on "
+               "September 13 across NEW V6, NEW V8 and NEW V9, and one "
+               "public employer anonymization in NEW V6 on September 14. No "
                "other spoken wording changed anywhere in the six scripts. "
                "NEW V4, NEW V5 and NEW V7 are identical to the supplied "
                "source, verified against the preserved copy rather than "
@@ -324,6 +335,55 @@ def changelog(path, st, reuse_rows):
                 "Only the NEW V6, NEW V8 and NEW V9 package archives were "
                 "rebuilt. NEW V4, NEW V5 and NEW V7 were re-checked in place "
                 "and their archives are byte-identical."], size=10)
+    h(d, "NEW V6 public employer anonymization")
+    para(d, "The research stays fully traceable internally and the public "
+            "teaching layer no longer names an employer. The video teaches "
+            "how to read a job description; it is not a company review. One "
+            "spoken sentence was replaced and seven card states across four "
+            "families now carry a generic label.", size=10.5)
+    table(d, ["Employer, internal", "Public label"],
+          [[b, a] for a, b in RU.LABELS]
+          + [["GiveDirectly", "A global nonprofit, spoken"]],
+          widths=[3.3, 3.4], size=8.5)
+    para(d, "Each anonymized card was proved to differ by the label and "
+            "nothing else: restoring the employer name returns the card to "
+            "the exact bytes the locked V22 package shipped.", size=10.5,
+         before=6)
+    table(d, ["Anonymized family", "Verified"],
+          [[k, det] for k, ok, det in anon_rows], widths=[2.6, 4.1],
+          size=7.5)
+    bullets(d, ["The evidence layer keeps every real employer identity: "
+                "source manifest, provenance and evidence notes are "
+                "unchanged.",
+                "Job titles, published ranges, quoted requirement language, "
+                "authority verbs and the September 12, 2026 capture date "
+                "all remain. Anonymizing identity removed no evidence.",
+                "The 15-posting, 11-employer denominator is unchanged, and "
+                "the ceiling claim stays bounded to this sample.",
+                "One card family was renamed so the employer no longer "
+                "appears in a filename, a map or the asset index.",
+                "No Short changed: no employer name appears in any Short, "
+                "spoken or visual, which was verified rather than assumed."],
+        size=10)
+
+    h(d, "Revised YouTube descriptions")
+    para(d, "The approved revised description package of September 14 "
+            "supersedes the description copy this build previously "
+            "authored. Each description is reproduced verbatim: wording, "
+            "emojis, resource name and URL are not edited. The superseded "
+            "copy was removed from the build rather than left beside the "
+            "real one.", size=10.5)
+    table(d, ["", "Resource", "URL"],
+          [["NEW V%d" % n,
+            DS.block(n)["resource"]["name"] if DS.block(n)["resource"]
+            else "None, intentionally",
+            DS.block(n)["resource"]["url"] if DS.block(n)["resource"]
+            else ""] for n in S.VIDEOS],
+          widths=[0.9, 2.4, 3.4], size=8.5)
+    caption(d, "One relevant resource at most. The resource and Watch Next "
+               "are kept apart: optional deeper help is not the next "
+               "content path.")
+
     footer_note(d, "Runtime, chapters, SRT timing and thumbnail artwork are "
                    "all decided after the final edit.")
     d.save(path)
@@ -340,14 +400,11 @@ def qa_summary(path, st, results):
     kv(d, "Checks run", "%d" % tot)
     kv(d, "Passes", "%d" % ok)
     kv(d, "Failures", "%d" % (tot - ok))
-    callout(d, "NEW V6, NEW V8 and NEW V9 were rebuilt for the source-"
-               "language correction. NEW V4, NEW V5 and NEW V7 were not: "
-               "their packages and archives are byte-identical to the "
-               "accepted build, verified against their sidecar checksums. "
-               "Those three were re-checked where they stand, so the QA "
-               "report inside each of them reflects the check set at its "
-               "own build time and this summary is the authoritative "
-               "current result for all six.")
+    callout(d, "All six packages were rebuilt in this pass: the approved "
+               "revised descriptions change the publishing document in "
+               "every one of them. NEW V6 additionally carries the public "
+               "employer anonymization. Every package therefore holds a "
+               "current QA report, and this summary agrees with all six.")
     table(d, ["", "Package", "Checks", "Result"],
           [["NEW V%d" % n,
             "rebuilt" if n in REBUILD else "unchanged, re-checked in place",
@@ -387,11 +444,20 @@ def main():
                              % (n, det))
     print("  six scripts, six thought-block copies, all match exactly")
 
+    print("  descriptions: %s" % ("approved package verified"
+                                   if DS.sha256() == DS.SHA else "MISMATCH"))
+    if DS.sha256() != DS.SHA:
+        raise SystemExit("description source mismatch")
+
     reuse_rows = RU.check(6)
     if not all(ok for _, ok, _ in reuse_rows):
         raise SystemExit("V6 reuse verification failed")
-    print("  NEW V6: %d reused families verified against the locked V22 bytes"
-          % len(reuse_rows))
+    anon_rows = RU.anonymized(6)
+    if not all(ok for _, ok, _ in anon_rows):
+        raise SystemExit("V6 anonymization changed more than the label")
+    print("  NEW V6: %d reused families verified against the locked V22 "
+          "bytes, %d anonymized families verified to differ by the label "
+          "alone" % (len(reuse_rows), len(anon_rows)))
 
     results, pkgs = {}, {}
     for n in S.VIDEOS:
@@ -401,11 +467,12 @@ def main():
         else:
             pkg, made, svgs, sheet = reuse_package(n)
         rr = reuse_rows if n == 6 else None
+        ar = anon_rows if n == 6 else None
         if n in REBUILD:
             qa_report(n, os.path.join(pkg, "08_QA",
                                       "Package_QA_Report.docx"),
-                      st, QA.run(n, pkg, geo, made, rr), geo, made, svgs)
-        results[n] = QA.run(n, pkg, geo, made, rr)
+                      st, QA.run(n, pkg, geo, made, rr, ar), geo, made, svgs)
+        results[n] = QA.run(n, pkg, geo, made, rr, ar)
         bad = [x for x in results[n] if not x[1]]
         print("NEW V%-2d (former V%-2d)  %2d/%2d checks   %2d png   %d svg   "
               "%-9s %s"
@@ -429,7 +496,7 @@ def main():
           shared, "NEW_V4-V9_SPRINT_PACKAGE_QA_SUMMARY.docx"), st, results),
       changelog(os.path.join(
           shared, "NEW_V4-V9_SPRINT_PRODUCTION_CHANGELOG.docx"), st,
-          reuse_rows),
+          reuse_rows, anon_rows),
     ]
 
     # one archive per video, then the outer archive. An untouched package
