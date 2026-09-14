@@ -1,0 +1,136 @@
+{
+  "_comment": "Cover copy for The Capability Formation Brief. Text stays editable here; covers/build-covers.mjs renders each entry to covers/output/. Titles are title case, exactly as the line array breaks them. No subtitles on covers.",
+  "publication": "THE CAPABILITY FORMATION BRIEF",
+  "byline": "TEMIDAYO AFONJA",
+  "editions": [
+    {
+      "slug": "edition-three-september-2026",
+      "titleLines": [
+        "What Work Redesign Can",
+        "Quietly Remove"
+      ],
+      "edition": "EDITION THREE",
+      "date": "SEPTEMBER 2026"
+    },
+    {
+      "slug": "edition-four-october-2026",
+      "titleLines": [
+        "When Hiring Returns,",
+        "What Are You Rebuilding?"
+      ],
+      "edition": "EDITION FOUR",
+      "date": "OCTOBER 2026"
+    },
+    {
+      "slug": "edition-five-november-2026",
+      "titleLines": [
+        "Who Got to Practice",
+        "Before You Needed Them?"
+      ],
+      "edition": "EDITION FIVE",
+      "date": "NOVEMBER 2026"
+    }
+  ],
+  "_cards_comment": "One-off title cards that share brief-cover.html but carry their own canvas and palette. Unlike the editions, each card is fitted on its own: it is not part of the shared-title-size family.",
+  "cards": [
+    {
+      "filename": "capability_formation_brief_september_cover.png",
+      "titleLines": [
+        "Your Experience Is Not the Proof.",
+        "The Decisions You’ve Carried Are."
+      ],
+      "edition": "",
+      "date": "SEPTEMBER 2026",
+      "canvas": {
+        "w": 1600,
+        "h": 900
+      },
+      "safex": 150,
+      "measure": 1220,
+      "titleMax": 96
+    },
+    {
+      "filename": "capability_formation_brief_november_2026.png",
+      "titleLines": [
+        "Before You Call",
+        "Someone Ready,",
+        "Check What They Have",
+        "Already Carried"
+      ],
+      "edition": "",
+      "date": "EDITION FIVE · NOVEMBER 2026",
+      "canvas": {
+        "w": 1600,
+        "h": 900
+      },
+      "safex": 150,
+      "measure": 1220,
+      "titleMax": 110,
+      "vAlign": "band",
+      "vGap": 88
+    },
+    {
+      "filename": "capability_formation_brief_december_2026.png",
+      "titleLines": [
+        "Before You Plan",
+        "Next Year,",
+        "Ask What This Year’s",
+        "Work Actually Built"
+      ],
+      "edition": "",
+      "date": "EDITION SIX · DECEMBER 2026",
+      "canvas": {
+        "w": 1600,
+        "h": 900
+      },
+      "safex": 150,
+      "measure": 1220,
+      "titleMax": 110,
+      "glow": {
+        "strength": "0.5",
+        "color": "#082a72"
+      },
+      "vAlign": "band",
+      "vGap": 88
+    },
+    {
+      "canvas": {
+        "w": 1600,
+        "h": 900
+      },
+      "safex": 150,
+      "measure": 1220,
+      "titleMax": 110,
+      "vAlign": "band",
+      "vGap": 88,
+      "edition": "",
+      "date": "EDITION FOUR · OCTOBER 2026",
+      "filename": "capability_formation_brief_october_2026.png",
+      "titleLines": [
+        "Before You Rehire,",
+        "Ask What the Organization",
+        "Actually Lost"
+      ]
+    },
+    {
+      "canvas": {
+        "w": 1600,
+        "h": 900
+      },
+      "safex": 150,
+      "measure": 1220,
+      "titleMax": 110,
+      "vAlign": "band",
+      "vGap": 88,
+      "edition": "",
+      "date": "EDITION FOUR · OCTOBER 2026",
+      "filename": "capability_formation_brief_october_2026-as-specified.png",
+      "titleLines": [
+        "Before You Rehire,",
+        "Ask What the",
+        "Organization",
+        "Actually Lost"
+      ]
+    }
+  ]
+}
