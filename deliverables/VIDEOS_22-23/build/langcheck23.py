@@ -29,9 +29,11 @@ BEHAVIOR = (r"(?:struggle|struggles|skip|skips|assume|assumes|think|thinks|"
             r"feel|feels|believe|believes|fear|fears|want|wants|avoid|"
             r"avoids|forget|forgets|tend|tends|undersell|undersells|"
             r"overestimate|overestimates|underestimate|underestimates|"
-            r"fail|fails|never|always)")
+            r"fail|fails|never|always|treat|treats|wait|waits|ask|asks|"
+            r"erase|erases|confuse|confuses|default|defaults|"
+            r"react|reacts|hesitate|hesitates|ignore|ignores)")
 CLAIM = re.compile(
-    r"\b%s\b[^.?!]{0,40}?\b%s\b" % (GROUP, BEHAVIOR), re.I)
+    r"\b%s\b[^.?!]{0,60}?\b%s\b" % (GROUP, BEHAVIOR), re.I)
 
 # A bound that makes an observation legitimate.
 BOUND = re.compile(
@@ -51,24 +53,49 @@ QUOTED = re.compile(r"[\"“][^\"”]{6,}[\"”]")
 
 
 def _sentences(text):
+    """(sentence, the paragraph it came from).
+
+    The paragraph travels with the sentence because quoted speech is often
+    split across sentences: 'Development sounds like: "Here is something you
+    have not done before. We want you to learn it."' is one quotation, and
+    the closing half must not be read as a claim about people.
+    """
     for chunk in text.split("\n"):
         chunk = chunk.strip()
         if not chunk:
             continue
         for s in re.split(r"(?<=[.?!:])\s+", chunk):
             if s.strip():
-                yield s.strip()
+                yield s.strip(), chunk
+
+
+def _inside_quote(para, sentence, m):
+    """Is the match inside quoted speech somewhere in its paragraph?"""
+    i = para.find(sentence)
+    if i < 0:
+        return bool(QUOTED.search(sentence))
+    at = i + m.start()
+    opens = sum(para.count(q, 0, at) for q in ('"', "\u201c"))
+    closes = sum(para.count(q, 0, at) for q in ('"', "\u201d"))
+    # an odd number of quote marks before the match means we are inside one
+    if (opens + closes) % 2 == 1:
+        return True
+    # or the match sits between a quote pair that spans it
+    for mq in QUOTED.finditer(para):
+        if mq.start() <= at < mq.end():
+            return True
+    return False
 
 
 def findings(text):
     """[(sentence, matched phrase)] for unsupported behavior claims."""
     out = []
-    for s in _sentences(text):
+    for s, para in _sentences(text):
         m = CLAIM.search(s)
         if not m:
             continue
         span = s[max(0, m.start() - 60):m.end() + 60]
-        if QUOTED.search(s) and m.start() > s.find('"') >= 0:
+        if _inside_quote(para, s, m):
             continue
         if BOUND.search(span):
             continue
@@ -115,6 +142,12 @@ if __name__ == "__main__":
       "result.",
       "One posting in the sample said candidates want a clearer scope.",
       "A manager might assume the title describes the authority.",
+      "Development sounds like: \u201cHere is something you have not done "
+      "before. We want you to learn it.\u201d",
+      "Dependence sounds like: \u201cWe cannot do this without you.\u201d",
+      "We talk a lot about tasks disappearing.",
+      "We talk less about what people used to learn while doing those "
+      "tasks.",
     ]
     print()
     print("=== must stay silent")
@@ -129,6 +162,10 @@ if __name__ == "__main__":
       "Experienced professionals struggle with this line.",
       "Candidates always want more authority than they had.",
       "Everyone forgets the before state.",
+      "Most people treat evidence like something they will collect later.",
+      "People wait because collecting evidence feels self-promotional.",
+      "When people talk about changing industries, they usually ask one "
+      "question.",
     ]
     for s_ in VIOLATIONS:
         f = findings(s_)

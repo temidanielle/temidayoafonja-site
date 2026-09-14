@@ -1,0 +1,191 @@
+==============================================================================
+NEW V6  (FORMER ROADMAP V22)  |  ASSET INDEX
+==============================================================================
+
+Decode a Job Description in 10 Minutes
+
+19 families, 37 image states.
+PNG is 1920 x 1080. An SVG is provided where a designer may need
+to re-time or recolor the card; its text is live and the brand
+faces are embedded.
+
+------------------------------------------------------------------------------
+
+NEW_V6_FS_01_TITLE_ONLY
+    CLASS:      REUSE
+    PURPOSE:    Let the title sit alone long enough for the viewer to form an assumption before anything contradicts it.
+    TREATMENT:  ARTIFACT
+    NEW_V6_FS_01_TITLE_ONLY.png                    NEW_V6_FS_01_TITLE_ONLY.png
+    SOURCE:
+        A1. HCSC, requisition R0055598. Card reused unchanged from the
+        former V22 package.
+
+NEW_V6_FS_02_THE_CONTRADICTION
+    CLASS:      REUSE
+    PURPOSE:    Break the assumption the title created, in two beats rather than one.
+    TREATMENT:  ARTIFACT
+    NEW_V6_FS_02A_FLOOR.png                        NEW_V6_FS_02A_FLOOR.png
+    NEW_V6_FS_02B_FEEDBACK.png                     NEW_V6_FS_02B_FEEDBACK.png
+    SOURCE:
+        A1. Preserved text. Cards reused unchanged from the former V22
+        package.
+
+NEW_V6_FS_03_THE_SAMPLE
+    CLASS:      REUSE
+    PURPOSE:    Put the denominator on screen the moment it is spoken.
+    TREATMENT:  STATEMENT
+    NEW_V6_FS_03_THE_SAMPLE.png                    NEW_V6_FS_03_THE_SAMPLE.png
+    SOURCE:
+        Card reused unchanged from the former V22 package.
+
+NEW_V6_FS_05_PARP
+    CLASS:      REUSE
+    PURPOSE:    Name the method once, in the four words the script uses.
+    TREATMENT:  SEQUENCE
+    NEW_V6_FS_05_PARP_FRAMEWORK.png                NEW_V6_FS_05_PARP_FRAMEWORK.png, NEW_V6_FS_05_PARP_FRAMEWORK.svg
+    SOURCE:
+        Card reused unchanged from the former V22 package.
+
+NEW_V6_FS_04_THREE_QUESTIONS
+    CLASS:      REUSE
+    PURPOSE:    Three questions the viewer carries through the video, arriving one at a time.
+    TREATMENT:  SEQUENCE
+    NEW_V6_FS_04A_COULD_I_DO_IT.png                NEW_V6_FS_04A_COULD_I_DO_IT.png
+    NEW_V6_FS_04B_CAN_I_PROVE_IT.png               NEW_V6_FS_04B_CAN_I_PROVE_IT.png
+    NEW_V6_FS_04C_DO_I_MEET_THE_GATES.png          NEW_V6_FS_04C_DO_I_MEET_THE_GATES.png
+    SOURCE:
+        Cards reused unchanged from the former V22 package.
+
+NEW_V6_FS_06_HCSC_WALKTHROUGH
+    CLASS:      REUSE
+    PURPOSE:    Run the method across one real posting, with the artifact large enough to read on a phone.
+    TREATMENT:  ARTIFACT
+    NEW_V6_FS_06A_PROBLEM.png                      NEW_V6_FS_06A_PROBLEM.png, NEW_V6_FS_06A_PROBLEM.svg
+    NEW_V6_FS_06B_AUTHORITY.png                    NEW_V6_FS_06B_AUTHORITY.png
+    NEW_V6_FS_06C_PROOF.png                        NEW_V6_FS_06C_PROOF.png
+    SOURCE:
+        A1. Cards reused unchanged from the former V22 package.
+
+NEW_V6_FS_08_READ_THE_VERBS
+    CLASS:      REUSE
+    PURPOSE:    Fix the second step in the viewer's memory.
+    TREATMENT:  STATEMENT
+    NEW_V6_FS_08_READ_THE_VERBS.png                NEW_V6_FS_08_READ_THE_VERBS.png
+    SOURCE:
+        Card reused unchanged from the former V22 package.
+
+NEW_V6_FS_09_PREDEFINED_DECISIONS
+    CLASS:      REUSE
+    PURPOSE:    Show that the same employer writes a senior role in bounded-decision language, without mocking the role.
+    TREATMENT:  ARTIFACT
+    NEW_V6_FS_09A_SAME_COMPANY.png                 NEW_V6_FS_09A_SAME_COMPANY.png
+    NEW_V6_FS_09B_PREDEFINED.png                   NEW_V6_FS_09B_PREDEFINED.png
+    SOURCE:
+        A2. Claim limit: the posting establishes predefined decisions.
+        It does not establish who created them. Cards reused unchanged
+        from the former V22 package.
+
+NEW_V6_FS_17_REAL_GAP
+    CLASS:      REUSE
+    PURPOSE:    Show that a real gap is not always a skill gap, using the one posting that said so outright.
+    TREATMENT:  COMPARISON
+    NEW_V6_FS_17A_GEOGRAPHIC.png                   NEW_V6_FS_17A_GEOGRAPHIC.png
+    NEW_V6_FS_17B_TIME_ZONE.png                    NEW_V6_FS_17B_TIME_ZONE.png
+    SOURCE:
+        A6. GiveDirectly, named on camera, past tense as spoken. No
+        local meeting time is stated or implied. Cards reused
+        unchanged from the former V22 package.
+
+NEW_V6_FS_10_DIRECTOR_COMPARE
+    CLASS:      REUSE
+    PURPOSE:    Two roles that share a level word, read side by side.
+    TREATMENT:  COMPARISON
+    NEW_V6_FS_10A_SAME_WORD.png                    NEW_V6_FS_10A_SAME_WORD.png, NEW_V6_FS_10A_SAME_WORD.svg
+    NEW_V6_FS_10B_SCOPE.png                        NEW_V6_FS_10B_SCOPE.png
+    SOURCE:
+        A3 and A4. No compensation comparison: the script draws none.
+        Cards reused unchanged from the former V22 package.
+
+NEW_V6_FS_12_TITLE_TEST
+    CLASS:      REUSE
+    PURPOSE:    Land the section in the four beats the script speaks.
+    TREATMENT:  SEQUENCE
+    NEW_V6_FS_12A_SAME_WORD.png                    NEW_V6_FS_12A_SAME_WORD.png
+    NEW_V6_FS_12B_DIFFERENT_WORK.png               NEW_V6_FS_12B_DIFFERENT_WORK.png
+    NEW_V6_FS_12C_DIFFERENT_AUTHORITY.png          NEW_V6_FS_12C_DIFFERENT_AUTHORITY.png
+    NEW_V6_FS_12D_DIFFERENT_CONTEXT.png            NEW_V6_FS_12D_DIFFERENT_CONTEXT.png
+    SOURCE:
+        Cards reused unchanged from the former V22 package.
+
+NEW_V6_FS_13_ACRONYM_WALL
+    CLASS:      REUSE
+    PURPOSE:    Let the unfamiliar title and the density of the language register.
+    TREATMENT:  ARTIFACT
+    NEW_V6_FS_13A_UNFAMILIAR_TITLE.png             NEW_V6_FS_13A_UNFAMILIAR_TITLE.png
+    NEW_V6_FS_13B_ACRONYM_WALL.png                 NEW_V6_FS_13B_ACRONYM_WALL.png
+    SOURCE:
+        A5. Cards reused unchanged from the former V22 package.
+
+NEW_V6_FS_14_AUTHORITY_POSTURES
+    CLASS:      REUSE
+    PURPOSE:    Four things the posting says the person does, one at a time.
+    TREATMENT:  SEQUENCE
+    NEW_V6_FS_14_AUTHORITY_POSTURES.png            NEW_V6_FS_14_AUTHORITY_POSTURES.png, NEW_V6_FS_14_AUTHORITY_POSTURES.svg
+    NEW_V6_FS_14A_LEADS.png                        NEW_V6_FS_14A_LEADS.png
+    NEW_V6_FS_14B_ADVISES.png                      NEW_V6_FS_14B_ADVISES.png
+    NEW_V6_FS_14C_COORDINATES.png                  NEW_V6_FS_14C_COORDINATES.png
+    NEW_V6_FS_14D_SUBJECT_MATTER_EXPERT.png        NEW_V6_FS_14D_SUBJECT_MATTER_EXPERT.png
+    SOURCE:
+        A5. Cards reused unchanged from the former V22 package.
+
+NEW_V6_FS_15_CEILING
+    CLASS:      REUSE
+    PURPOSE:    Hold the salary reveal to the end of the beat, with the sample boundary attached.
+    TREATMENT:  STATEMENT
+    NEW_V6_FS_15A_RANGE.png                        NEW_V6_FS_15A_RANGE.png
+    NEW_V6_FS_15B_IN_THE_SAMPLE.png                NEW_V6_FS_15B_IN_THE_SAMPLE.png
+    SOURCE:
+        A5. Claim bounded to the 15-posting sample. Cards reused
+        unchanged from the former V22 package.
+
+NEW_V6_FS_16_READ_THE_WORK
+    CLASS:      REUSE
+    PURPOSE:    The second rule, paired visually with the first.
+    TREATMENT:  STATEMENT
+    NEW_V6_FS_16_READ_THE_WORK.png                 NEW_V6_FS_16_READ_THE_WORK.png
+    SOURCE:
+        Card reused unchanged from the former V22 package.
+
+NEW_V6_FS_18_WHAT_IT_WILL_NOT_DO
+    CLASS:      REUSE
+    PURPOSE:    Put the limits of the method on screen in the same weight as the method.
+    TREATMENT:  STATEMENT
+    NEW_V6_FS_18_WHAT_IT_WILL_NOT_DO.png           NEW_V6_FS_18_WHAT_IT_WILL_NOT_DO.png
+    SOURCE:
+        Card reused unchanged from the former V22 package.
+
+NEW_V6_FS_19_FOUR_THINGS
+    CLASS:      REUSE
+    PURPOSE:    Close on the recurring audit, in the script's own four phrases.
+    TREATMENT:  SEQUENCE
+    NEW_V6_FS_19_FOUR_THINGS.png                   NEW_V6_FS_19_FOUR_THINGS.png, NEW_V6_FS_19_FOUR_THINGS.svg
+    SOURCE:
+        Card reused unchanged from the former V22 package.
+
+NEW_V6_FS_20_CTA
+    CLASS:      REUSE
+    PURPOSE:    One ask. No product, no comment ask, nothing stacked, and no second spoken CTA.
+    TREATMENT:  CTA
+    NEW_V6_FS_20A_WRITE_FOUR_LINES.png             NEW_V6_FS_20A_WRITE_FOUR_LINES.png
+    NEW_V6_FS_20B_STRONGEST_VERB.png               NEW_V6_FS_20B_STRONGEST_VERB.png
+    SOURCE:
+        Cards reused unchanged from the former V22 package.
+
+NEW_V6_WATCH_NEXT
+    CLASS:      NEW
+    PURPOSE:    The destination the script speaks. Full screen and final: nothing returns to camera after it.
+    TREATMENT:  WATCH NEXT
+    NEW_V6_WATCH_NEXT.png                          NEW_V6_WATCH_NEXT.png
+    SOURCE:
+        Intended destination, spoken in the script. Confirm it is
+        publicly live before upload.

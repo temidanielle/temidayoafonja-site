@@ -1,0 +1,110 @@
+==============================================================================
+NEW V8  (FORMER ROADMAP V28)  |  ASSET INDEX
+==============================================================================
+
+What Disappears When Your Work Access Ends
+
+13 families, 18 image states.
+PNG is 1920 x 1080. An SVG is provided where a designer may need
+to re-time or recolor the card; its text is live and the brand
+faces are embedded.
+
+------------------------------------------------------------------------------
+
+NEW_V8_FS_01_MEMORY_NOT_PROOF
+    CLASS:      NEW
+    PURPOSE:    Name the loss precisely: the memory survives and the proof does not.
+    TREATMENT:  STATEMENT
+    NEW_V8_FS_01_MEMORY_NOT_PROOF.png              NEW_V8_FS_01_MEMORY_NOT_PROOF.png
+
+NEW_V8_FS_02_FIVE_KINDS
+    CLASS:      NEW
+    PURPOSE:    Establish the five kinds of evidence, then take them one at a time so each is heard as a separate thing to record.
+    TREATMENT:  SEQUENCE
+    NEW_V8_FS_02_FIVE_KINDS.png                    NEW_V8_FS_02_FIVE_KINDS.png, NEW_V8_FS_02_FIVE_KINDS.svg
+    NEW_V8_FS_02A_BASELINE.png                     NEW_V8_FS_02A_BASELINE.png
+    NEW_V8_FS_02B_SCOPE.png                        NEW_V8_FS_02B_SCOPE.png
+    NEW_V8_FS_02C_DECISION.png                     NEW_V8_FS_02C_DECISION.png
+    NEW_V8_FS_02D_RESULT.png                       NEW_V8_FS_02D_RESULT.png
+    NEW_V8_FS_02E_MECHANISM.png                    NEW_V8_FS_02E_MECHANISM.png
+
+NEW_V8_FS_03_KEEP_THE_PROOF
+    CLASS:      NEW
+    PURPOSE:    The ethical rule of the video, given the screen the moment it is spoken.
+    TREATMENT:  STATEMENT
+    NEW_V8_FS_03_KEEP_THE_PROOF.png                NEW_V8_FS_03_KEEP_THE_PROOF.png
+    SOURCE:
+        Ethical boundary. No card in this package depicts a file, a
+        screenshot, a download or any circumvention of access control.
+
+NEW_V8_FS_04_NOT_THE_ARTIFACT
+    CLASS:      NEW
+    PURPOSE:    State what the habit is for, so the rule is not only a prohibition.
+    TREATMENT:  COMPARISON
+    NEW_V8_FS_04_NOT_THE_ARTIFACT.png              NEW_V8_FS_04_NOT_THE_ARTIFACT.png
+    SOURCE:
+        Lawful-record framing, in the script's own words.
+
+NEW_V8_FS_05_IN_YOUR_OWN_WORDS
+    CLASS:      NEW
+    PURPOSE:    Show what a lawful record looks like, using the script's own examples and nothing resembling an employer system.
+    TREATMENT:  SEQUENCE
+    NEW_V8_FS_05_IN_YOUR_OWN_WORDS.png             NEW_V8_FS_05_IN_YOUR_OWN_WORDS.png, NEW_V8_FS_05_IN_YOUR_OWN_WORDS.svg
+    SOURCE:
+        Reconstructed examples with placeholders, exactly as the
+        script speaks them. No real or fabricated employer record
+        appears.
+
+NEW_V8_FS_06_THE_DETAILS_BLUR
+    CLASS:      NEW
+    PURPOSE:    Show how fast the detail goes, using the script's own three questions.
+    TREATMENT:  SEQUENCE
+    NEW_V8_FS_06_THE_DETAILS_BLUR.png              NEW_V8_FS_06_THE_DETAILS_BLUR.png
+    SOURCE:
+        The numbers are the script's own illustration of forgetting,
+        not a claim about a real project.
+
+NEW_V8_FS_07_TEN_MINUTE_HABIT
+    CLASS:      NEW
+    PURPOSE:    The habit, as five questions the viewer can answer in ten minutes.
+    TREATMENT:  SEQUENCE
+    NEW_V8_FS_07_TEN_MINUTE_HABIT.png              NEW_V8_FS_07_TEN_MINUTE_HABIT.png
+
+NEW_V8_FS_08_CAREER_HYGIENE
+    CLASS:      NEW
+    PURPOSE:    Move the habit out of the layoff frame, which is what keeps the video from reading as a job-loss prediction.
+    TREATMENT:  STATEMENT
+    NEW_V8_FS_08_CAREER_HYGIENE.png                NEW_V8_FS_08_CAREER_HYGIENE.png
+
+NEW_V8_FS_09_STILL_NOT_ENOUGH
+    CLASS:      NEW
+    PURPOSE:    Keep the boundary visible: good evidence does not remove every hiring problem.
+    TREATMENT:  STATEMENT
+    NEW_V8_FS_09_STILL_NOT_ENOUGH.png              NEW_V8_FS_09_STILL_NOT_ENOUGH.png
+
+NEW_V8_FS_10_NOT_ONLY_A_METRIC
+    CLASS:      NEW
+    PURPOSE:    Widen what counts as evidence, so a viewer with no number still has a record to keep.
+    TREATMENT:  SEQUENCE
+    NEW_V8_FS_10_NOT_ONLY_A_METRIC.png             NEW_V8_FS_10_NOT_ONLY_A_METRIC.png, NEW_V8_FS_10_NOT_ONLY_A_METRIC.svg
+
+NEW_V8_FS_11_A_FACTUAL_RECORD
+    CLASS:      NEW
+    PURPOSE:    Answer the discomfort directly: this is a record, not self-promotion.
+    TREATMENT:  COMPARISON
+    NEW_V8_FS_11_A_FACTUAL_RECORD.png              NEW_V8_FS_11_A_FACTUAL_RECORD.png
+
+NEW_V8_FS_12_CTA
+    CLASS:      NEW
+    PURPOSE:    The closing rule, which is the ask.
+    TREATMENT:  CTA
+    NEW_V8_FS_12_CTA.png                           NEW_V8_FS_12_CTA.png
+
+NEW_V8_WATCH_NEXT
+    CLASS:      NEW
+    PURPOSE:    The destination the script speaks. Full screen and final: nothing returns to camera after it.
+    TREATMENT:  WATCH NEXT
+    NEW_V8_WATCH_NEXT.png                          NEW_V8_WATCH_NEXT.png
+    SOURCE:
+        Intended destination, spoken in the script. Confirm it is
+        publicly live before upload.

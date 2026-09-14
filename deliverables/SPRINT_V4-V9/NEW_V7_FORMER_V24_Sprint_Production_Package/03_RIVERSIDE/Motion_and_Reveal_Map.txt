@@ -1,0 +1,143 @@
+==============================================================================
+NEW V7  (FORMER ROADMAP V24)  |  MOTION AND REVEAL MAP
+==============================================================================
+
+I’ve Seen Who Gets the Bigger Role and Why
+
+Reveal order for every card with more than one state, and the
+emphasis state of each. A numbered point is a reading order,
+never a button.
+
+------------------------------------------------------------------------------
+
+NEW_V7_FS_01_NOT_ALWAYS_WHO_WORKED_HARDER   (NEW)
+    TRIGGER:    And the difference was not always who worked harder.
+    LAYOUT:     Statement.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. NEW_V7_FS_01_NOT_ALWAYS_WHO_WORKED_HARDER    Single state.
+    HOLD:       Cut on the sentence. The scene before it stays on camera.
+
+NEW_V7_FS_02_TWO_QUESTIONS   (NEW)
+    TRIGGER:    At that point, people are not only asking, "Who is good?"
+    LAYOUT:     Side-by-side contrast, quoting both.
+    TREATMENT:  COMPARISON
+    BUILD:      SINGLE
+    1. NEW_V7_FS_02_TWO_QUESTIONS                   Single state.
+    HOLD:       Cut on 'At that point, people are not only asking' and hold through 'Those are different questions.'
+
+NEW_V7_FS_03_USEFUL_NOT_PICTURED   (NEW)
+    TRIGGER:    You can become more useful without becoming easier to picture at the next level.
+    LAYOUT:     Statement.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. NEW_V7_FS_03_USEFUL_NOT_PICTURED             Single state.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V7_FS_04_FOUR_THINGS   (NEW)
+    TRIGGER:    When I have seen larger scope get handed out, four things tend to matter.
+    LAYOUT:     Framework established whole, then activated one component at a time.
+    TREATMENT:  SEQUENCE
+    BUILD:      ESTABLISH
+    1. NEW_V7_FS_04_FOUR_THINGS                     Establish on 'four things tend to matter.'
+    2. NEW_V7_FS_04A_VISIBLE_PROOF                  Activate 1 on 'First: visible proof.'
+    3. NEW_V7_FS_04B_JUDGMENT                       Activate 2 on 'Second: judgment.'
+    4. NEW_V7_FS_04C_TRUST                          Activate 3 on 'Third: trust.'
+    5. NEW_V7_FS_04D_SPONSORSHIP                    Activate 4 on 'Fourth: sponsorship and access.'
+    HOLD:       One activation per spoken item. Hold the fourth through the lines about bias, relationships and manager support.
+
+NEW_V7_FS_05_NOT_MERIT   (NEW)
+    TRIGGER:    Bias matters. Relationships matter. Manager support matters. Who gets access to developmental work matters.
+    LAYOUT:     Short rows, all visible.
+    TREATMENT:  SEQUENCE
+    BUILD:      SINGLE
+    1. NEW_V7_FS_05_NOT_MERIT                       Single state.
+    HOLD:       Hold through the list and the sentence that refuses to reduce this to merit.
+
+NEW_V7_FS_06_EVIDENCE_FOR_WHICH_ROLE   (NEW)
+    TRIGGER:    The problem may be that the evidence people see is evidence for the role you already have.
+    LAYOUT:     Statement.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. NEW_V7_FS_06_EVIDENCE_FOR_WHICH_ROLE         Single state.
+    HOLD:       Cut on the sentence and hold through it. The line protecting the viewer's work is on the card.
+
+NEW_V7_FS_07_ASK_WHAT_KIND   (NEW)
+    TRIGGER:    What decisions will I get to make? What level of stakeholder will I work with? What problem will I own end to end? What evidence would show readiness for the next level?
+    LAYOUT:     Questions card.
+    TREATMENT:  SEQUENCE
+    BUILD:      SINGLE
+    1. NEW_V7_FS_07_ASK_WHAT_KIND                   Single state.
+    HOLD:       Cut on 'Ask what kind.' and hold through the three questions.
+
+NEW_V7_FS_08_CHANGES_THE_CONVERSATION   (NEW)
+    TRIGGER:    That changes the conversation from:
+    LAYOUT:     Side-by-side contrast, quoting both.
+    TREATMENT:  COMPARISON
+    BUILD:      SINGLE
+    1. NEW_V7_FS_08_CHANGES_THE_CONVERSATION        Single state.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V7_FS_09_THE_BOUNDARY   (NEW)
+    TRIGGER:    There can be politics, bias, favoritism, timing, budget limits, headcount rules, or a manager who simply does not want to let a strong person move.
+    LAYOUT:     Short rows, all visible.
+    TREATMENT:  SEQUENCE
+    BUILD:      SINGLE
+    1. NEW_V7_FS_09_THE_BOUNDARY                    Single state.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V7_FS_10_SEPARATE_THREE_THINGS   (NEW)
+    TRIGGER:    It is to separate:
+    LAYOUT:     Three short rows, all visible.
+    TREATMENT:  SEQUENCE
+    BUILD:      SINGLE
+    1. NEW_V7_FS_10_SEPARATE_THREE_THINGS           Single state.
+    HOLD:       Cut on 'It is to separate:' and hold through the three lines.
+
+NEW_V7_FS_11_READ_YOUR_OWN_SITUATION   (NEW)
+    TRIGGER:    For each one, ask:
+    LAYOUT:     Questions card.
+    TREATMENT:  SEQUENCE
+    BUILD:      SINGLE
+    1. NEW_V7_FS_11_READ_YOUR_OWN_SITUATION         Single state.
+    HOLD:       Cut on 'For each one, ask:' and hold through the four questions.
+
+NEW_V7_FS_12_THE_MISSING_LINE   (NEW)
+    TRIGGER:    Now look for the missing line.
+    LAYOUT:     Statement.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. NEW_V7_FS_12_THE_MISSING_LINE                Single state.
+    HOLD:       Hold through the four 'maybe' lines that follow.
+
+NEW_V7_FS_13_CTA   (NEW)
+    TRIGGER:    Ask:
+    LAYOUT:     Action card.
+    TREATMENT:  CTA
+    BUILD:      SINGLE
+    1. NEW_V7_FS_13_CTA                             Single state.
+    HOLD:       Cut on 'Ask:' and hold to the end of the spoken line.
+
+NEW_V7_WATCH_NEXT   (NEW)
+    TRIGGER:    the spoken Watch Next line
+    LAYOUT:     Watch Next card, house layout.
+    TREATMENT:  WATCH NEXT
+    BUILD:      SINGLE
+    1. NEW_V7_WATCH_NEXT                            Single state. Final card.
+    HOLD:       Cut here on the spoken Watch Next line and end the video on it.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+  One active idea at a time. When a framework is being taught,
+  one component is warm and the rest are quiet.
+
+  Establish the whole structure before activating any part of it.
+
+  No animation whose only purpose is to keep the screen moving.
+  Stillness is allowed when the viewer needs to read or think.
+
+  No fake buttons, progress bars, quiz interfaces or dashboards.
+
+  A card never moves while the presenter moves behind it.

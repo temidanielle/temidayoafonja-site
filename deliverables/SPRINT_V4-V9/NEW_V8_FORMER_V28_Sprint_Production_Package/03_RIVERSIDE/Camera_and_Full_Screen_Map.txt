@@ -1,0 +1,271 @@
+==============================================================================
+NEW V8  (FORMER ROADMAP V28)  |  CAMERA AND FULL-SCREEN MAP
+==============================================================================
+
+What Disappears When Your Work Access Ends
+
+Every stretch of this video is marked. CAMERA means Temidayo
+carries the moment and no graphic should appear over her.
+FULL SCREEN means the idea takes the screen, with no presenter
+moving behind it and no semi-transparent overlay.
+
+------------------------------------------------------------------------------
+
+  21 camera stretches
+  12 full-screen cues, one per card
+  650 of 730 spoken words delivered on camera
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+SECTION 1  HOOK
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  8 paragraphs, 56 words
+      The day your access ends, your memory is still yours.
+      Your work may not be.
+      The dashboard is gone.
+      The project folder is gone.
+      The exact metric you improved is somewhere behind a login you cannot use anymore.
+      And six months later, somebody asks:
+      "What exactly changed because of your work?"
+      You remember that it mattered.
+
+  [ FULL SCREEN ]  NEW_V8_FS_01_MEMORY_NOT_PROOF   (NEW)
+      TRIGGER:  You just cannot prove it cleanly.
+      STATES:   NEW_V8_FS_01_MEMORY_NOT_PROOF
+      HOLD:     Cut on the sentence. The list of what is gone stays on camera.
+
+
+------------------------------------------------------------------------------
+SECTION 2  THE PROBLEM
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  4 paragraphs, 43 words
+      This happens because most people treat evidence like something they will collect later.
+      After the project. Before the interview. When they update the resume.
+      But by then, the context may be gone.
+      And the most useful details are often the easiest to forget.
+
+
+------------------------------------------------------------------------------
+SECTION 3  WHAT DISAPPEARS
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  NEW_V8_FS_02_FIVE_KINDS   (NEW)
+      TRIGGER:  When access ends, you can lose five kinds of evidence.
+      STATES:   NEW_V8_FS_02_FIVE_KINDS, NEW_V8_FS_02A_BASELINE, NEW_V8_FS_02B_SCOPE, NEW_V8_FS_02C_DECISION, NEW_V8_FS_02D_RESULT, NEW_V8_FS_02E_MECHANISM
+      HOLD:     One activation per spoken pair. Hold the fifth through 'the details that turn a memory into proof.'
+
+  [ CAMERA ]  11 paragraphs, 52 words
+      The baseline.
+      What was true before you started.
+      The scope.
+      How many people, teams, customers, locations, or systems were involved.
+      The decision.
+      What was actually yours to choose.
+      The result.
+      What changed.
+      And the mechanism.
+      How you know the result was real.
+      Those are the details that turn a memory into proof.
+
+
+------------------------------------------------------------------------------
+SECTION 4  THE IMPORTANT BOUNDARY
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  1 paragraph, 7 words
+      I need to be very clear here.
+
+  [ FULL SCREEN ]  NEW_V8_FS_03_KEEP_THE_PROOF   (NEW)
+      TRIGGER:  Keeping proof does not mean taking company property.
+      STATES:   NEW_V8_FS_03_KEEP_THE_PROOF
+      HOLD:     Cut on the sentence and hold through the list of what not to take. Nothing on screen depicts taking anything.
+
+  [ CAMERA ]  3 paragraphs, 30 words
+      Do not forward confidential documents to yourself.
+      Do not copy customer data.
+      Do not take proprietary reports, screenshots, source code, internal financials, or anything you ...
+
+  [ FULL SCREEN ]  NEW_V8_FS_04_NOT_THE_ARTIFACT   (NEW)
+      TRIGGER:  The goal is not to keep the artifact.
+      STATES:   NEW_V8_FS_04_NOT_THE_ARTIFACT
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  1 paragraph, 12 words
+      The goal is to keep a lawful record of your own work.
+
+
+------------------------------------------------------------------------------
+SECTION 5  WHAT TO CAPTURE
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  1 paragraph, 8 words
+      You can capture things in your own words.
+
+  [ FULL SCREEN ]  NEW_V8_FS_05_IN_YOUR_OWN_WORDS   (NEW)
+      TRIGGER:  For example:
+      STATES:   NEW_V8_FS_05_IN_YOUR_OWN_WORDS
+      HOLD:     Cut on 'For example:' and hold through the five lines.
+
+  [ CAMERA ]  6 paragraphs, 51 words
+      "Reduced onboarding time from X to Y over six months."
+      "Built the first process for X."
+      "Owned the decision on Y, but budget approval remained with Z."
+      "Presented the recommendation to X level."
+      "Measured the result using Y."
+      You are preserving the shape of the evidence, not taking the company's files.
+
+
+------------------------------------------------------------------------------
+SECTION 6  STORY
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  6 paragraphs, 45 words
+      Think about a project that felt routine while you were inside it.
+      You knew the metric because you saw it every week.
+      You knew who approved the decision.
+      You knew the old process.
+      You knew the ugly part nobody wanted to touch.
+      Then you leave.
+
+  [ FULL SCREEN ]  NEW_V8_FS_06_THE_DETAILS_BLUR   (NEW)
+      TRIGGER:  Three months later, the details blur.
+      STATES:   NEW_V8_FS_06_THE_DETAILS_BLUR
+      HOLD:     Cut on 'Three months later, the details blur.' and hold through the three questions.
+
+  [ CAMERA ]  4 paragraphs, 36 words
+      Was the starting number 47 or 52?
+      Was the result measured at 12 months or 18?
+      Did you own the design or only the rollout?
+      That is why evidence should be captured close to the work.
+
+
+------------------------------------------------------------------------------
+SECTION 7  THE 10-MINUTE HABIT
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  NEW_V8_FS_07_TEN_MINUTE_HABIT   (NEW)
+      TRIGGER:  Once a month, take ten minutes and write down:
+      STATES:   NEW_V8_FS_07_TEN_MINUTE_HABIT
+      HOLD:     Cut on 'take ten minutes and write down:' and hold through the sentence about the last question.
+
+  [ CAMERA ]  3 paragraphs, 42 words
+      What changed? What was mine? What was hard? What evidence do I have? What would I be allowed to ...
+      That last question matters.
+      You want a version of the accomplishment that is both useful and appropriate to carry.
+
+
+------------------------------------------------------------------------------
+SECTION 8  WHEN THE EXIT IS SUDDEN
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  3 paragraphs, 22 words
+      Sometimes you do not get much warning.
+      A layoff can happen quickly.
+      A system can lock before you have processed what happened.
+
+  [ FULL SCREEN ]  NEW_V8_FS_08_CAREER_HYGIENE   (NEW)
+      TRIGGER:  That is why this is not only a layoff task.
+      STATES:   NEW_V8_FS_08_CAREER_HYGIENE
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  2 paragraphs, 14 words
+      It is a career hygiene task.
+      Keep your evidence while you are still employed.
+
+
+------------------------------------------------------------------------------
+SECTION 9  BOUNDARY
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  NEW_V8_FS_09_STILL_NOT_ENOUGH   (NEW)
+      TRIGGER:  Good evidence will not remove every hiring problem.
+      STATES:   NEW_V8_FS_09_STILL_NOT_ENOUGH
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  3 paragraphs, 37 words
+      A future employer can still discount the experience.
+      They may care about a credential, direct domain experience, or context you do not have.
+      But if your own proof is gone, you have made their job even harder.
+
+
+------------------------------------------------------------------------------
+SECTION 10  WHAT COUNTS AS EVIDENCE
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  3 paragraphs, 29 words
+      Evidence is not only a metric.
+      Sometimes the strongest proof is a decision, a before-and-after process, a role boundary, or a s...
+      Maybe you cannot share the number.
+
+  [ FULL SCREEN ]  NEW_V8_FS_10_NOT_ONLY_A_METRIC   (NEW)
+      TRIGGER:  You can still record:
+      STATES:   NEW_V8_FS_10_NOT_ONLY_A_METRIC
+      HOLD:     Cut on 'You can still record:' and hold through the four lines.
+
+  [ CAMERA ]  3 paragraphs, 43 words
+      how the process worked before, what you changed, what you were trusted to decide, what the organ...
+      That gives you more than "worked on transformation."
+      It gives you a story another person can evaluate.
+
+
+------------------------------------------------------------------------------
+SECTION 11  WHY PEOPLE WAIT
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  3 paragraphs, 26 words
+      People wait because collecting evidence can feel self-promotional while you are employed.
+      I would frame it differently.
+      You are not writing an award nomination every month.
+
+  [ FULL SCREEN ]  NEW_V8_FS_11_A_FACTUAL_RECORD   (NEW)
+      TRIGGER:  You are keeping a factual record.
+      STATES:   NEW_V8_FS_11_A_FACTUAL_RECORD
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  5 paragraphs, 40 words
+      Future you should not have to reconstruct five years of work from memory after a hard exit.
+      The habit can be quiet.
+      It can be private.
+      It can take ten minutes.
+      But it needs to happen before the login disappears.
+
+
+------------------------------------------------------------------------------
+SECTION 12  CLOSE
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  4 paragraphs, 32 words
+      Your company owns its systems.
+      It may own the documents.
+      It may own the data.
+      But you should not have to leave your own career history behind because the login stopped workin...
+
+  [ FULL SCREEN ]  NEW_V8_FS_12_CTA   (NEW)
+      TRIGGER:  Keep the proof.
+      STATES:   NEW_V8_FS_12_CTA
+      HOLD:     Cut on 'Keep the proof.' and hold through 'Not the property.'
+
+  [ CAMERA ]  1 paragraph, 3 words
+      Not the property.
+
+
+------------------------------------------------------------------------------
+SECTION 13  WATCH NEXT
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  1 paragraph, 22 words
+      And if you want to know what to capture before a layoff or sudden exit takes that access away, w...
+
+
+------------------------------------------------------------------------------
+WATCH NEXT  |  FULL SCREEN AND FINAL
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  NEW_V8_WATCH_NEXT
+      SPOKEN LINE: And if you want to know what to capture before a layoff or sudden exit takes that access away, watch this next.
+      DESTINATION: Before a Layoff, Know What You Can Still Prove
+      Nothing returns to camera after this card.

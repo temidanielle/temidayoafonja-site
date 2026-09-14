@@ -1,0 +1,103 @@
+==============================================================================
+NEW V7  (FORMER ROADMAP V24)  |  ASSET INDEX
+==============================================================================
+
+I’ve Seen Who Gets the Bigger Role and Why
+
+14 families, 18 image states.
+PNG is 1920 x 1080. An SVG is provided where a designer may need
+to re-time or recolor the card; its text is live and the brand
+faces are embedded.
+
+------------------------------------------------------------------------------
+
+NEW_V7_FS_01_NOT_ALWAYS_WHO_WORKED_HARDER
+    CLASS:      NEW
+    PURPOSE:    Name the observation the video is built on, without yet explaining it.
+    TREATMENT:  STATEMENT
+    NEW_V7_FS_01_NOT_ALWAYS_WHO_WORKED_HARDER.png  NEW_V7_FS_01_NOT_ALWAYS_WHO_WORKED_HARDER.png
+
+NEW_V7_FS_02_TWO_QUESTIONS
+    CLASS:      NEW
+    PURPOSE:    Separate the two questions a room is actually asking, which is the distinction the whole video rests on.
+    TREATMENT:  COMPARISON
+    NEW_V7_FS_02_TWO_QUESTIONS.png                 NEW_V7_FS_02_TWO_QUESTIONS.png
+
+NEW_V7_FS_03_USEFUL_NOT_PICTURED
+    CLASS:      NEW
+    PURPOSE:    The trap for dependable people, in the script's own sentence.
+    TREATMENT:  STATEMENT
+    NEW_V7_FS_03_USEFUL_NOT_PICTURED.png           NEW_V7_FS_03_USEFUL_NOT_PICTURED.png
+
+NEW_V7_FS_04_FOUR_THINGS
+    CLASS:      NEW
+    PURPOSE:    Establish the four, then take them one at a time, with the limit on the card from the first frame so it never reads as a formula.
+    TREATMENT:  SEQUENCE
+    NEW_V7_FS_04_FOUR_THINGS.png                   NEW_V7_FS_04_FOUR_THINGS.png, NEW_V7_FS_04_FOUR_THINGS.svg
+    NEW_V7_FS_04A_VISIBLE_PROOF.png                NEW_V7_FS_04A_VISIBLE_PROOF.png
+    NEW_V7_FS_04B_JUDGMENT.png                     NEW_V7_FS_04B_JUDGMENT.png
+    NEW_V7_FS_04C_TRUST.png                        NEW_V7_FS_04C_TRUST.png
+    NEW_V7_FS_04D_SPONSORSHIP.png                  NEW_V7_FS_04D_SPONSORSHIP.png
+
+NEW_V7_FS_05_NOT_MERIT
+    CLASS:      NEW
+    PURPOSE:    Keep the boundary visible: advancement is not reduced to merit, and the card says so in the script's own list.
+    TREATMENT:  SEQUENCE
+    NEW_V7_FS_05_NOT_MERIT.png                     NEW_V7_FS_05_NOT_MERIT.png
+
+NEW_V7_FS_06_EVIDENCE_FOR_WHICH_ROLE
+    CLASS:      NEW
+    PURPOSE:    The precise reason dependable work does not read as readiness.
+    TREATMENT:  STATEMENT
+    NEW_V7_FS_06_EVIDENCE_FOR_WHICH_ROLE.png       NEW_V7_FS_06_EVIDENCE_FOR_WHICH_ROLE.png
+
+NEW_V7_FS_07_ASK_WHAT_KIND
+    CLASS:      NEW
+    PURPOSE:    What to ask for instead of more responsibility.
+    TREATMENT:  SEQUENCE
+    NEW_V7_FS_07_ASK_WHAT_KIND.png                 NEW_V7_FS_07_ASK_WHAT_KIND.png
+
+NEW_V7_FS_08_CHANGES_THE_CONVERSATION
+    CLASS:      NEW
+    PURPOSE:    Show the shift the question produces, in the script's own two lines.
+    TREATMENT:  COMPARISON
+    NEW_V7_FS_08_CHANGES_THE_CONVERSATION.png      NEW_V7_FS_08_CHANGES_THE_CONVERSATION.png
+
+NEW_V7_FS_09_THE_BOUNDARY
+    CLASS:      NEW
+    PURPOSE:    Name what the organization may simply not give, so the video cannot be read as work-harder advice.
+    TREATMENT:  SEQUENCE
+    NEW_V7_FS_09_THE_BOUNDARY.png                  NEW_V7_FS_09_THE_BOUNDARY.png, NEW_V7_FS_09_THE_BOUNDARY.svg
+
+NEW_V7_FS_10_SEPARATE_THREE_THINGS
+    CLASS:      NEW
+    PURPOSE:    The separation the whole boundary section exists to produce.
+    TREATMENT:  SEQUENCE
+    NEW_V7_FS_10_SEPARATE_THREE_THINGS.png         NEW_V7_FS_10_SEPARATE_THREE_THINGS.png
+
+NEW_V7_FS_11_READ_YOUR_OWN_SITUATION
+    CLASS:      NEW
+    PURPOSE:    The instrument: four questions against the last three times the viewer was trusted with something bigger.
+    TREATMENT:  SEQUENCE
+    NEW_V7_FS_11_READ_YOUR_OWN_SITUATION.png       NEW_V7_FS_11_READ_YOUR_OWN_SITUATION.png
+
+NEW_V7_FS_12_THE_MISSING_LINE
+    CLASS:      NEW
+    PURPOSE:    Name the diagnostic the exercise produces.
+    TREATMENT:  STATEMENT
+    NEW_V7_FS_12_THE_MISSING_LINE.png              NEW_V7_FS_12_THE_MISSING_LINE.png
+
+NEW_V7_FS_13_CTA
+    CLASS:      NEW
+    PURPOSE:    The closing ask, in the three questions the script speaks.
+    TREATMENT:  CTA
+    NEW_V7_FS_13_CTA.png                           NEW_V7_FS_13_CTA.png
+
+NEW_V7_WATCH_NEXT
+    CLASS:      NEW
+    PURPOSE:    The destination the script speaks. Full screen and final: nothing returns to camera after it.
+    TREATMENT:  WATCH NEXT
+    NEW_V7_WATCH_NEXT.png                          NEW_V7_WATCH_NEXT.png
+    SOURCE:
+        Intended destination, spoken in the script. Confirm it is
+        publicly live before upload.

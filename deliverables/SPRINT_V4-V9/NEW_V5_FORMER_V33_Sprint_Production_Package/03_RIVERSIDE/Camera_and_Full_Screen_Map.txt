@@ -1,0 +1,243 @@
+==============================================================================
+NEW V5  (FORMER ROADMAP V33)  |  CAMERA AND FULL-SCREEN MAP
+==============================================================================
+
+If Your Company Needs You but Won’t Grow You
+
+Every stretch of this video is marked. CAMERA means Temidayo
+carries the moment and no graphic should appear over her.
+FULL SCREEN means the idea takes the screen, with no presenter
+moving behind it and no semi-transparent overlay.
+
+------------------------------------------------------------------------------
+
+  17 camera stretches
+  10 full-screen cues, one per card
+  604 of 692 spoken words delivered on camera
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+SECTION 1  HOOK
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  6 paragraphs, 46 words
+      They call you when something breaks.
+      They ask you to train the new person.
+      They need you in the meeting because you know how everything works.
+      Then a bigger opportunity opens.
+      And somehow your name is not on it.
+      That is a painful place to be:
+
+  [ FULL SCREEN ]  NEW_V5_FS_01_NEEDED_NOT_GROWN   (NEW)
+      TRIGGER:  needed by the company, but not necessarily grown by it.
+      STATES:   NEW_V5_FS_01_NEEDED_NOT_GROWN
+      HOLD:     Cut on the two-line paragraph and hold through it.
+
+
+------------------------------------------------------------------------------
+SECTION 2  THE TRAP
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  5 paragraphs, 54 words
+      Being useful can feel like career security.
+      Sometimes it is.
+      But usefulness can also make it expensive to move you.
+      If you are the person holding the current system together, your manager may have a real operatio...
+      That does not mean they are plotting against you.
+
+  [ FULL SCREEN ]  NEW_V5_FS_02_NOT_ALIGNED   (NEW)
+      TRIGGER:  It means your value to the current role and your value to your future are not always aligned.
+      STATES:   NEW_V5_FS_02_NOT_ALIGNED
+      HOLD:     Hold through the sentence. The line that protects the manager is on the card, not only on camera.
+
+
+------------------------------------------------------------------------------
+SECTION 3  WHAT IT LOOKS LIKE
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  1 paragraph, 3 words
+      Watch for patterns.
+
+  [ FULL SCREEN ]  NEW_V5_FS_03_WATCH_FOR_PATTERNS   (NEW)
+      TRIGGER:  More rescue work.
+      STATES:   NEW_V5_FS_03_WATCH_FOR_PATTERNS
+      HOLD:     Cut on 'Watch for patterns.' and hold through the list and the two lines that close it.
+
+  [ CAMERA ]  9 paragraphs, 43 words
+      More knowledge transfer.
+      More dependence on you.
+      But no new decision room.
+      No developmental assignment.
+      No exposure to a different problem.
+      No review point for the extra scope.
+      No conversation about what comes next.
+      One moment does not prove anything.
+      A pattern does.
+
+
+------------------------------------------------------------------------------
+SECTION 4  THE QUESTION
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  1 paragraph, 1 words
+      Ask:
+
+  [ FULL SCREEN ]  NEW_V5_FS_04_THE_QUESTION   (NEW)
+      TRIGGER:  What is this organization building in me beyond my ability to keep this role running?
+      STATES:   NEW_V5_FS_04_THE_QUESTION
+      HOLD:     Hold through the two sentences that follow, which protect the employer.
+
+  [ CAMERA ]  2 paragraphs, 27 words
+      That can feel like a strange question because employers do not owe us a custom career path.
+      But you still need to know the answer for yourself.
+
+
+------------------------------------------------------------------------------
+SECTION 5  STORY
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  7 paragraphs, 59 words
+      Imagine you are the only person who knows a process end to end.
+      Every time someone leaves, you absorb part of the work.
+      You become more valuable because fewer people can operate without you.
+      But your experience becomes more tied to the internal system.
+      You know the exceptions.
+      You know the personalities.
+      You know which workaround saves the month.
+
+  [ FULL SCREEN ]  NEW_V5_FS_05_INDISPENSABLE_AND_LESS_PORTABLE   (NEW)
+      TRIGGER:  That can make you indispensable and less portable at the same time.
+      STATES:   NEW_V5_FS_05_INDISPENSABLE_AND_LESS_PORTABLE
+      HOLD:     Hold until the sentence lands, then cut back.
+
+
+------------------------------------------------------------------------------
+SECTION 6  WHAT TO ASK FOR
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  1 paragraph, 7 words
+      Do not only ask for a promotion.
+
+  [ FULL SCREEN ]  NEW_V5_FS_06_ASK_FOR_DEVELOPMENT   (NEW)
+      TRIGGER:  Ask for developmental movement.
+      STATES:   NEW_V5_FS_06_ASK_FOR_DEVELOPMENT
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  8 paragraphs, 71 words
+      A new decision.
+      A new problem.
+      A project outside your usual lane.
+      Exposure to a different leader.
+      A chance to build evidence beyond rescue work.
+      You can say:
+      "I am glad the team trusts me with this work. I also want to make sure my scope is developing, n...
+      That is a real conversation.
+
+
+------------------------------------------------------------------------------
+SECTION 7  BOUNDARY
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  NEW_V5_FS_07_THE_ANSWER_MAY_BE_NO   (NEW)
+      TRIGGER:  The answer may still be no.
+      STATES:   NEW_V5_FS_07_THE_ANSWER_MAY_BE_NO
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  6 paragraphs, 35 words
+      There may be no budget.
+      No opening.
+      A manager may need you where you are.
+      Bias may shape who gets opportunities.
+      The company may simply not have the path you need.
+      That is information too.
+
+
+------------------------------------------------------------------------------
+SECTION 8  WHEN TO LOOK OUTSIDE
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  7 paragraphs, 51 words
+      If you keep asking for development and the only return is more of the same work, you may need to...
+      That does not mean quit tomorrow.
+      It means start building options.
+      Proof.
+      Relationships.
+      Market understanding.
+      A clearer read on what travels.
+
+
+------------------------------------------------------------------------------
+SECTION 9  THE DIFFERENCE BETWEEN DEPENDENCE AND DEVELOPMENT
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  NEW_V5_FS_08_DEPENDENCE_VS_DEVELOPMENT   (NEW)
+      TRIGGER:  Dependence sounds like:
+      STATES:   NEW_V5_FS_08_DEPENDENCE_VS_DEVELOPMENT
+      HOLD:     Cut on 'Dependence sounds like:' and hold through both quotations and the line that says an assignment can contain both.
+
+  [ CAMERA ]  8 paragraphs, 68 words
+      "We cannot do this without you."
+      Development sounds like:
+      "Here is something you have not done before. We want you to learn it."
+      Sometimes the same assignment contains both.
+      That is fine.
+      The problem is when dependence is the only thing growing.
+      You become the person who knows every workaround, carries every emergency, and keeps the current...
+      But the next machine is being built somewhere else.
+
+
+------------------------------------------------------------------------------
+SECTION 10  THE REVIEW POINT
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  2 paragraphs, 21 words
+      If you take on extra scope because the company needs you, set a review point.
+      "Let's revisit this in 90 days."
+
+  [ FULL SCREEN ]  NEW_V5_FS_09_REVIEW_POINT   (NEW)
+      TRIGGER:  At that review, ask:
+      STATES:   NEW_V5_FS_09_REVIEW_POINT
+      HOLD:     Cut on 'At that review, ask:' and hold through the four questions.
+
+  [ CAMERA ]  3 paragraphs, 51 words
+      What became permanent? What did I learn? What authority changed? What recognition or role design...
+      Without a review point, temporary dependence can quietly become your new normal.
+      And once the organization has adjusted to you carrying it, it can be harder to unwind.
+
+
+------------------------------------------------------------------------------
+SECTION 11  CLOSE
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  3 paragraphs, 25 words
+      Being needed feels good.
+      It can also keep you still.
+      So if your company keeps proving how much it needs you, ask one more question:
+
+  [ FULL SCREEN ]  NEW_V5_FS_10_CTA   (NEW)
+      TRIGGER:  Is it also helping you become more capable, more visible, or more portable?
+      STATES:   NEW_V5_FS_10_CTA
+      HOLD:     Cut on the question and hold to the end of the spoken line.
+
+  [ CAMERA ]  1 paragraph, 10 words
+      If not, usefulness may be the reason you are stuck.
+
+
+------------------------------------------------------------------------------
+SECTION 12  WATCH NEXT
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  1 paragraph, 32 words
+      And if you are carrying more because people know you will get it done, watch this next. I will s...
+
+
+------------------------------------------------------------------------------
+WATCH NEXT  |  FULL SCREEN AND FINAL
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  NEW_V5_WATCH_NEXT
+      SPOKEN LINE: And if you are carrying more because people know you will get it done, watch this next. I will show you how to tell whether that extra responsibility is actually career growth.
+      DESTINATION: It Took Me Years to Stop Mistaking More Work for Career Growth
+      Nothing returns to camera after this card.

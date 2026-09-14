@@ -1,0 +1,81 @@
+==============================================================================
+NEW V5  (FORMER ROADMAP V33)  |  ASSET INDEX
+==============================================================================
+
+If Your Company Needs You but Won’t Grow You
+
+11 families, 11 image states.
+PNG is 1920 x 1080. An SVG is provided where a designer may need
+to re-time or recolor the card; its text is live and the brand
+faces are embedded.
+
+------------------------------------------------------------------------------
+
+NEW_V5_FS_01_NEEDED_NOT_GROWN
+    CLASS:      NEW
+    PURPOSE:    Name the painful position in the script's own two lines, before any analysis of it.
+    TREATMENT:  COMPARISON
+    NEW_V5_FS_01_NEEDED_NOT_GROWN.png              NEW_V5_FS_01_NEEDED_NOT_GROWN.png
+
+NEW_V5_FS_02_NOT_ALIGNED
+    CLASS:      NEW
+    PURPOSE:    Protect the manager and the organization while keeping the tension real.
+    TREATMENT:  STATEMENT
+    NEW_V5_FS_02_NOT_ALIGNED.png                   NEW_V5_FS_02_NOT_ALIGNED.png
+
+NEW_V5_FS_03_WATCH_FOR_PATTERNS
+    CLASS:      NEW
+    PURPOSE:    The pattern, as the script lists it, with the limit attached.
+    TREATMENT:  SEQUENCE
+    NEW_V5_FS_03_WATCH_FOR_PATTERNS.png            NEW_V5_FS_03_WATCH_FOR_PATTERNS.png, NEW_V5_FS_03_WATCH_FOR_PATTERNS.svg
+
+NEW_V5_FS_04_THE_QUESTION
+    CLASS:      NEW
+    PURPOSE:    The question the video wants the viewer to hold, in full.
+    TREATMENT:  STATEMENT
+    NEW_V5_FS_04_THE_QUESTION.png                  NEW_V5_FS_04_THE_QUESTION.png
+
+NEW_V5_FS_05_INDISPENSABLE_AND_LESS_PORTABLE
+    CLASS:      NEW
+    PURPOSE:    The cost of depth in one system, stated without judgment.
+    TREATMENT:  COMPARISON
+    NEW_V5_FS_05_INDISPENSABLE_AND_LESS_PORTABLE.png NEW_V5_FS_05_INDISPENSABLE_AND_LESS_PORTABLE.png
+
+NEW_V5_FS_06_ASK_FOR_DEVELOPMENT
+    CLASS:      NEW
+    PURPOSE:    What to ask for, in the script's own list.
+    TREATMENT:  SEQUENCE
+    NEW_V5_FS_06_ASK_FOR_DEVELOPMENT.png           NEW_V5_FS_06_ASK_FOR_DEVELOPMENT.png, NEW_V5_FS_06_ASK_FOR_DEVELOPMENT.svg
+
+NEW_V5_FS_07_THE_ANSWER_MAY_BE_NO
+    CLASS:      NEW
+    PURPOSE:    Keep the boundary visible: the video does not promise the ask works.
+    TREATMENT:  SEQUENCE
+    NEW_V5_FS_07_THE_ANSWER_MAY_BE_NO.png          NEW_V5_FS_07_THE_ANSWER_MAY_BE_NO.png
+
+NEW_V5_FS_08_DEPENDENCE_VS_DEVELOPMENT
+    CLASS:      NEW
+    PURPOSE:    The central distinction of the video, in the two sentences the script uses to voice it.
+    TREATMENT:  COMPARISON
+    NEW_V5_FS_08_DEPENDENCE_VS_DEVELOPMENT.png     NEW_V5_FS_08_DEPENDENCE_VS_DEVELOPMENT.png, NEW_V5_FS_08_DEPENDENCE_VS_DEVELOPMENT.svg
+
+NEW_V5_FS_09_REVIEW_POINT
+    CLASS:      NEW
+    PURPOSE:    The practical instrument: what to ask at a review point.
+    TREATMENT:  SEQUENCE
+    NEW_V5_FS_09_REVIEW_POINT.png                  NEW_V5_FS_09_REVIEW_POINT.png
+
+NEW_V5_FS_10_CTA
+    CLASS:      NEW
+    PURPOSE:    The closing question, which is the ask.
+    TREATMENT:  CTA
+    NEW_V5_FS_10_CTA.png                           NEW_V5_FS_10_CTA.png
+
+NEW_V5_WATCH_NEXT
+    CLASS:      NEW
+    PURPOSE:    The destination the script speaks. Full screen and final: nothing returns to camera after it.
+    TREATMENT:  WATCH NEXT
+    NEW_V5_WATCH_NEXT.png                          NEW_V5_WATCH_NEXT.png
+    SOURCE:
+        Intended destination, spoken in the script. Confirm it is
+        publicly live before upload.

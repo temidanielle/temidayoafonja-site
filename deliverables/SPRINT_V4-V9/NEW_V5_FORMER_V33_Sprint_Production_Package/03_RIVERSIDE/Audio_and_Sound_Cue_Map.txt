@@ -1,0 +1,49 @@
+==============================================================================
+NEW V5  (FORMER ROADMAP V33)  |  AUDIO AND SOUND CUE MAP
+==============================================================================
+
+If Your Company Needs You but Won’t Grow You
+
+Four to seven restrained accents across the video. Not every
+reveal gets one, and nothing is scored to keep energy up.
+
+------------------------------------------------------------------------------
+
+NEW_V5_FS_01_NEEDED_NOT_GROWN
+    One accent.
+
+NEW_V5_FS_02_NOT_ALIGNED
+    One restrained accent.
+
+NEW_V5_FS_03_WATCH_FOR_PATTERNS
+    One accent.
+
+NEW_V5_FS_04_THE_QUESTION
+    One restrained accent.
+
+NEW_V5_FS_05_INDISPENSABLE_AND_LESS_PORTABLE
+    One accent.
+
+NEW_V5_FS_06_ASK_FOR_DEVELOPMENT
+    One accent.
+
+NEW_V5_FS_08_DEPENDENCE_VS_DEVELOPMENT
+    One accent.
+
+NEW_V5_FS_09_REVIEW_POINT
+    One accent.
+
+NEW_V5_FS_10_CTA
+    One accent.
+
+------------------------------------------------------------------------------
+
+SILENT BY DESIGN
+
+  NEW_V5_FS_07_THE_ANSWER_MAY_BE_NO              No accent.
+  NEW_V5_WATCH_NEXT                              No accent.
+
+------------------------------------------------------------------------------
+
+  Music: no track is licensed or selected in this package.
+  Loudness, balance and picture quality are final-export QA.

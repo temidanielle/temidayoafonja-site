@@ -1,0 +1,276 @@
+==============================================================================
+NEW V9  (FORMER ROADMAP V27)  |  CAMERA AND FULL-SCREEN MAP
+==============================================================================
+
+Transferable Skills Advice Is Missing Something
+
+Every stretch of this video is marked. CAMERA means Temidayo
+carries the moment and no graphic should appear over her.
+FULL SCREEN means the idea takes the screen, with no presenter
+moving behind it and no semi-transparent overlay.
+
+------------------------------------------------------------------------------
+
+  21 camera stretches
+  12 full-screen cues, one per card
+  676 of 786 spoken words delivered on camera
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+SECTION 1  HOOK
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  3 paragraphs, 17 words
+      When people talk about changing industries, they usually ask one question:
+      "What skills transfer?"
+      It sounds sensible.
+
+  [ FULL SCREEN ]  NEW_V9_FS_01_INCOMPLETE_QUESTION   (NEW)
+      TRIGGER:  But I think the question is incomplete.
+      STATES:   NEW_V9_FS_01_INCOMPLETE_QUESTION
+      HOLD:     Cut on the sentence. The quoted question before it stays on camera.
+
+  [ CAMERA ]  2 paragraphs, 22 words
+      Because the hardest part of a career move is not only knowing what comes with you.
+      It is knowing what does not.
+
+
+------------------------------------------------------------------------------
+SECTION 2  THE DEFAULT
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  NEW_V9_FS_02_WHY_THE_ADVICE_HELPS   (NEW)
+      TRIGGER:  Transferable skills advice is useful because it stops experienced people from erasing themselves.
+      STATES:   NEW_V9_FS_02_WHY_THE_ADVICE_HELPS
+      HOLD:     Hold through the sentence about talking as if ten years disappeared.
+
+  [ CAMERA ]  4 paragraphs, 48 words
+      You change fields and suddenly start talking as if your last ten years disappeared.
+      That is not right either.
+      You may carry judgment, problem solving, leadership, pattern recognition, or ways of working tha...
+      But if the conversation stops there, you can walk into a move overconfident.
+
+
+------------------------------------------------------------------------------
+SECTION 3  THE FOUR QUESTIONS
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  NEW_V9_FS_03_FOUR_QUESTIONS   (NEW)
+      TRIGGER:  I use four questions instead.
+      STATES:   NEW_V9_FS_03_FOUR_QUESTIONS, NEW_V9_FS_03A_WHAT_TRAVELS, NEW_V9_FS_03B_WHAT_DOES_NOT, NEW_V9_FS_03C_WHAT_CAN_I_PROVE, NEW_V9_FS_03D_WHAT_MUST_I_RELEARN
+      HOLD:     Establish on the four-questions paragraph and hold through 'That is a more honest read.' The four activations are cut at the head of each matching section, so all four questions are on screen together before any one of them is emphasized.
+
+  [ CAMERA ]  5 paragraphs, 19 words
+      What travels?
+      What does not?
+      What can I prove?
+      What must I relearn?
+      That is a more honest read.
+
+
+------------------------------------------------------------------------------
+SECTION 4  WHAT TRAVELS
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  5 paragraphs, 47 words
+      What travels is not a generic list of soft skills.
+      It is capability you have already demonstrated in a way the next context can use.
+      Maybe you have handled ambiguity.
+      Maybe you have built a process where none existed.
+      Maybe you have made risk decisions under pressure.
+
+  [ FULL SCREEN ]  NEW_V9_FS_04_DEMONSTRATED_NOT_CLAIMED   (NEW)
+      TRIGGER:  The key word is demonstrated.
+      STATES:   NEW_V9_FS_04_DEMONSTRATED_NOT_CLAIMED
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  1 paragraph, 2 words
+      Not claimed.
+
+
+------------------------------------------------------------------------------
+SECTION 5  WHAT DOES NOT
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  NEW_V9_FS_05_TIED_TO_THE_OLD_CONTEXT   (NEW)
+      TRIGGER:  Then ask what is tied to the old context.
+      STATES:   NEW_V9_FS_05_TIED_TO_THE_OLD_CONTEXT
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  6 paragraphs, 39 words
+      Internal relationships.
+      Company-specific systems.
+      The language everyone around you understood without explanation.
+      Informal authority.
+      Knowledge of how that particular employer really gets things done.
+      Those things can make you excellent where you are and much less legible somewhere else.
+
+
+------------------------------------------------------------------------------
+SECTION 6  WHAT CAN I PROVE
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  2 paragraphs, 18 words
+      Next, what can another person actually see?
+      If you say, "I can lead transformation," what evidence supports that?
+
+  [ FULL SCREEN ]  NEW_V9_FS_06_WHAT_CAN_ANOTHER_PERSON_SEE   (NEW)
+      TRIGGER:  What was broken? What did you decide? What changed? How do you know?
+      STATES:   NEW_V9_FS_06_WHAT_CAN_ANOTHER_PERSON_SEE
+      HOLD:     Hold through 'Experience becomes portable when another person can evaluate it.'
+
+  [ CAMERA ]  1 paragraph, 9 words
+      Experience becomes portable when another person can evaluate it.
+
+
+------------------------------------------------------------------------------
+SECTION 7  WHAT MUST I RELEARN
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  2 paragraphs, 18 words
+      And then there is the part people sometimes want to skip.
+      What does the new environment genuinely require?
+
+  [ FULL SCREEN ]  NEW_V9_FS_07_WHAT_THE_NEW_CONTEXT_REQUIRES   (NEW)
+      TRIGGER:  Regulation. Credentials. Domain knowledge. Customer knowledge. Technical depth. Local relationships. A different operating model.
+      STATES:   NEW_V9_FS_07_WHAT_THE_NEW_CONTEXT_REQUIRES
+      HOLD:     Hold through 'They are part of the move.'
+
+  [ CAMERA ]  2 paragraphs, 13 words
+      Those are not insults to your experience.
+      They are part of the move.
+
+
+------------------------------------------------------------------------------
+SECTION 8  STORY
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  1 paragraph, 15 words
+      When I think about changing context, I do not picture a suitcase where everything fits.
+
+  [ FULL SCREEN ]  NEW_V9_FS_08_SORTING   (NEW)
+      TRIGGER:  I picture sorting.
+      STATES:   NEW_V9_FS_08_SORTING
+      HOLD:     Cut on 'I picture sorting.' and hold through the four lines.
+
+  [ CAMERA ]  6 paragraphs, 53 words
+      Some things come with you exactly as they are.
+      Some things need translating.
+      Some things were useful only because of where you were.
+      And some things have to be learned again.
+      That is why "transferable skills" can be too easy if it becomes a list.
+      A list does not tell you the boundary.
+
+
+------------------------------------------------------------------------------
+SECTION 9  APPLICATION
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  1 paragraph, 4 words
+      Take one target role.
+
+  [ FULL SCREEN ]  NEW_V9_FS_09_FOUR_COLUMNS   (NEW)
+      TRIGGER:  Make four columns.
+      STATES:   NEW_V9_FS_09_FOUR_COLUMNS
+      HOLD:     Cut on 'Make four columns.' and hold through the three lines that read the result.
+
+  [ CAMERA ]  8 paragraphs, 75 words
+      Travels. Does not travel. Proof. Relearn.
+      Do not try to make every line land in the first column.
+      That is not the goal.
+      The goal is accuracy.
+      If the relearn column is large, that does not automatically mean no.
+      It tells you the size of the move.
+      If the proof column is weak, you know what evidence you need.
+      If the context-bound column is bigger than you expected, you know what you were relying on.
+
+
+------------------------------------------------------------------------------
+SECTION 10  BOUNDARY
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  NEW_V9_FS_10_BOUNDARY   (NEW)
+      TRIGGER:  An employer may still prefer someone with direct experience.
+      STATES:   NEW_V9_FS_10_BOUNDARY
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  6 paragraphs, 52 words
+      A credential may be non-negotiable.
+      Bias may affect how your adjacent experience is read.
+      Compensation may reset.
+      The market may be crowded.
+      None of this disappears because you can explain your capability well.
+      But you make a better decision when you know exactly what you are asking the next employer to be...
+
+
+------------------------------------------------------------------------------
+SECTION 11  WHY THIS IS HARDER FOR EXPERIENCED PEOPLE
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  NEW_V9_FS_11_FLUENCY_AND_PORTABILITY   (NEW)
+      TRIGGER:  The longer you stay in one context, the easier it is to confuse fluency with portability.
+      STATES:   NEW_V9_FS_11_FLUENCY_AND_PORTABILITY
+      HOLD:     Hold through the lines about knowing who to call and which meeting matters.
+
+  [ CAMERA ]  9 paragraphs, 72 words
+      You know who to call.
+      You know which meeting matters.
+      You know which rule is flexible and which one is not.
+      You can move quickly because you understand the environment.
+      That is real expertise.
+      But part of that expertise may belong to the environment, not only to you.
+      That is why a move can feel strangely humbling even when you are very experienced.
+      The capability is still there.
+      The shortcuts are not.
+
+
+------------------------------------------------------------------------------
+SECTION 12  HOW TO EXPLAIN THIS IN AN INTERVIEW
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  7 paragraphs, 91 words
+      If someone asks why your experience should count in a new context, you do not need to say, "Ever...
+      Try:
+      "The part of my experience that is most relevant here is X. I have used it to solve Y kind of pr...
+      That answer does two things.
+      It makes the transfer visible.
+      And it shows that you understand the gap.
+      That combination is often more credible than pretending the move is smaller than it is.
+
+
+------------------------------------------------------------------------------
+SECTION 13  CLOSE
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  3 paragraphs, 11 words
+      So yes, ask what transfers.
+      Just do not stop there.
+      Ask:
+
+  [ FULL SCREEN ]  NEW_V9_FS_12_THE_AUDIT_AGAIN   (NEW)
+      TRIGGER:  What travels? What does not? What can I prove? What must I relearn?
+      STATES:   NEW_V9_FS_12_THE_AUDIT_AGAIN
+      HOLD:     Cut on 'Ask:' and hold through the four questions and the closing sentence.
+
+  [ CAMERA ]  1 paragraph, 19 words
+      That is how you change context without pretending you are either starting from zero or carrying ...
+
+
+------------------------------------------------------------------------------
+SECTION 14  WATCH NEXT
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  1 paragraph, 32 words
+      And if you are trying to move into a different industry, watch this next. I break down how to te...
+
+
+------------------------------------------------------------------------------
+WATCH NEXT  |  FULL SCREEN AND FINAL
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  NEW_V9_WATCH_NEXT
+      SPOKEN LINE: And if you are trying to move into a different industry, watch this next. I break down how to tell which parts of your experience really travel and which parts do not.
+      DESTINATION: Which Parts of Your Experience Actually Transfer to Another Industry?
+      Nothing returns to camera after this card.

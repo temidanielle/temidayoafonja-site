@@ -1,0 +1,197 @@
+==============================================================================
+NEW V6  (FORMER ROADMAP V22)  |  MOTION AND REVEAL MAP
+==============================================================================
+
+Decode a Job Description in 10 Minutes
+
+Reveal order for every card with more than one state, and the
+emphasis state of each. A numbered point is a reading order,
+never a button.
+
+------------------------------------------------------------------------------
+
+NEW_V6_FS_01_TITLE_ONLY   (REUSE)
+    TRIGGER:    Senior Divisional Strategy Consultant, Governance.
+    LAYOUT:     Artifact. Nothing else on screen.
+    TREATMENT:  ARTIFACT
+    BUILD:      SINGLE
+    1. NEW_V6_FS_01_TITLE_ONLY                      Single state. No build.
+    HOLD:       Hold four to five seconds on the title alone. Do not reveal the range yet.
+
+NEW_V6_FS_02_THE_CONTRADICTION   (REUSE)
+    TRIGGER:    Now here is the part that should slow you down. The bottom of the published range was $61,500, and one of the required qualifications was the ability to accept direction and feedback.
+    LAYOUT:     Same artifact, two preserved lines, one active at a time.
+    TREATMENT:  ARTIFACT
+    BUILD:      BUILD
+    1. NEW_V6_FS_02A_FLOOR                          State A on the published range clause.
+    2. NEW_V6_FS_02B_FEEDBACK                       State B on the required-qualifications clause of the same sentence.
+    HOLD:       Both states sit inside one spoken sentence. Return to camera on 'That is why I do not start with the title anymore.'
+
+NEW_V6_FS_03_THE_SAMPLE   (REUSE)
+    TRIGGER:    I read 15 postings from 11 employers for this research.
+    LAYOUT:     One figure held large with its own limit underneath.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. NEW_V6_FS_03_THE_SAMPLE                      Single state.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V6_FS_05_PARP   (REUSE)
+    TRIGGER:    The four things are:
+    LAYOUT:     Framework, established whole and left whole.
+    TREATMENT:  SEQUENCE
+    BUILD:      SINGLE
+    1. NEW_V6_FS_05_PARP_FRAMEWORK                  Single state. Each of the four is taught by its own section, so nothing is activated here.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V6_FS_04_THREE_QUESTIONS   (REUSE)
+    TRIGGER:    Could I do this work? Can I prove relevant evidence? Do I meet the stated gates?
+    LAYOUT:     Sequential reveal. Earlier questions stay but quiet.
+    TREATMENT:  SEQUENCE
+    BUILD:      ARRIVE
+    1. NEW_V6_FS_04A_COULD_I_DO_IT                  On 'Could I do this work?'
+    2. NEW_V6_FS_04B_CAN_I_PROVE_IT                 On 'Can I prove relevant evidence?'
+    3. NEW_V6_FS_04C_DO_I_MEET_THE_GATES            On 'Do I meet the stated gates?'
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V6_FS_06_HCSC_WALKTHROUGH   (REUSE)
+    TRIGGER:    In that Senior Divisional Strategy Consultant role, the work was not "be strategic." The division needed a consistent way to evaluate opportunities, track them, and report on them.
+    LAYOUT:     Artifact with numbered teaching points, one active at a time.
+    TREATMENT:  ARTIFACT
+    BUILD:      ARRIVE
+    1. NEW_V6_FS_06A_PROBLEM                        Point 1 active.
+    2. NEW_V6_FS_06B_AUTHORITY                      Point 2 active.
+    3. NEW_V6_FS_06C_PROOF                          Point 3 active.
+    HOLD:       The three states are spread across the PROBLEM, AUTHORITY and PROOF sections. Cut away to camera between them.
+
+NEW_V6_FS_08_READ_THE_VERBS   (REUSE)
+    TRIGGER:    Next, read the verbs.
+    LAYOUT:     Rule card.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. NEW_V6_FS_08_READ_THE_VERBS                  Single state.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V6_FS_09_PREDEFINED_DECISIONS   (REUSE)
+    TRIGGER:    Director of Enterprise Resilience. The range went to just under $248,000.
+    LAYOUT:     Artifact, establish then activate the requirement line.
+    TREATMENT:  ARTIFACT
+    BUILD:      BUILD
+    1. NEW_V6_FS_09A_SAME_COMPANY                   Establish.
+    2. NEW_V6_FS_09B_PREDEFINED                     Activate the requirement line on the sentence that quotes it.
+    HOLD:       The defense of the role is delivered on camera, not on a card.
+
+NEW_V6_FS_17_REAL_GAP   (REUSE)
+    TRIGGER:    One posting in the sample was unusually direct. GiveDirectly was hiring a Director of Global Talent Acquisition and said candidates whose recruiting experience was exclusively in one geographic context were unlikely to be a strong fit.
+    LAYOUT:     Two stated constraints, the second added when it is spoken.
+    TREATMENT:  COMPARISON
+    BUILD:      BUILD
+    1. NEW_V6_FS_17A_GEOGRAPHIC                     The geographic boundary.
+    2. NEW_V6_FS_17B_TIME_ZONE                      The overlap requirement becomes active.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V6_FS_10_DIRECTOR_COMPARE   (REUSE)
+    TRIGGER:    One was Director, Talent Management. The other was Director of Strategic Initiatives.
+    LAYOUT:     Side-by-side comparison, scope revealed second.
+    TREATMENT:  COMPARISON
+    BUILD:      BUILD
+    1. NEW_V6_FS_10A_SAME_WORD                      Establish.
+    2. NEW_V6_FS_10B_SCOPE                          Add scope and reporting.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V6_FS_12_TITLE_TEST   (REUSE)
+    TRIGGER:    Same broad level word.
+    LAYOUT:     Four short lines, arriving one at a time.
+    TREATMENT:  SEQUENCE
+    BUILD:      ARRIVE
+    1. NEW_V6_FS_12A_SAME_WORD                      On 'Same broad level word.'
+    2. NEW_V6_FS_12B_DIFFERENT_WORK                 On 'Different work.'
+    3. NEW_V6_FS_12C_DIFFERENT_AUTHORITY            On 'Different authority.'
+    4. NEW_V6_FS_12D_DIFFERENT_CONTEXT              On 'Different context.'
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V6_FS_13_ACRONYM_WALL   (REUSE)
+    TRIGGER:    One posting was called Member of Technical Staff, Governance Risk Compliance.
+    LAYOUT:     Artifact, then the captured acronym line at full size.
+    TREATMENT:  ARTIFACT
+    BUILD:      BUILD
+    1. NEW_V6_FS_13A_UNFAMILIAR_TITLE               Title alone.
+    2. NEW_V6_FS_13B_ACRONYM_WALL                   Add the acronym line, as captured and unedited.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V6_FS_14_AUTHORITY_POSTURES   (REUSE)
+    TRIGGER:    But underneath that, the person was expected to lead authorization work, advise leadership, coordinate across teams, and operate as a subject-matter expert.
+    LAYOUT:     Numbered sequence, established whole, then activated one at a time.
+    TREATMENT:  SEQUENCE
+    BUILD:      ESTABLISH
+    1. NEW_V6_FS_14_AUTHORITY_POSTURES              Establish.
+    2. NEW_V6_FS_14A_LEADS                          Activate 1.
+    3. NEW_V6_FS_14B_ADVISES                        Activate 2.
+    4. NEW_V6_FS_14C_COORDINATES                    Activate 3.
+    5. NEW_V6_FS_14D_SUBJECT_MATTER_EXPERT          Activate 4.
+    HOLD:       One activation per clause inside the one spoken sentence.
+
+NEW_V6_FS_15_CEILING   (REUSE)
+    TRIGGER:    The published range went from $180,000 to $440,000.
+    LAYOUT:     One figure, then the claim with its limit on the same card.
+    TREATMENT:  STATEMENT
+    BUILD:      BUILD
+    1. NEW_V6_FS_15A_RANGE                          The published range, alone.
+    2. NEW_V6_FS_15B_IN_THE_SAMPLE                  The claim, with 'in the sample' on screen.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V6_FS_16_READ_THE_WORK   (REUSE)
+    TRIGGER:    So if a title confuses you, do not automatically skip the job.
+    LAYOUT:     Rule card.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. NEW_V6_FS_16_READ_THE_WORK                   Single state.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V6_FS_18_WHAT_IT_WILL_NOT_DO   (REUSE)
+    TRIGGER:    This method will not tell you who will get hired.
+    LAYOUT:     Six short lines, all visible.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. NEW_V6_FS_18_WHAT_IT_WILL_NOT_DO             Single state.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V6_FS_19_FOUR_THINGS   (REUSE)
+    TRIGGER:    That is enough to tell you what may travel, what may not, what you can prove, and what you would still need to learn.
+    LAYOUT:     Framework, established whole and left whole.
+    TREATMENT:  SEQUENCE
+    BUILD:      SINGLE
+    1. NEW_V6_FS_19_FOUR_THINGS                     Single state.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V6_FS_20_CTA   (REUSE)
+    TRIGGER:    Write four lines:
+    LAYOUT:     Action card. The verb instruction is added last.
+    TREATMENT:  CTA
+    BUILD:      BUILD
+    1. NEW_V6_FS_20A_WRITE_FOUR_LINES               The four lines.
+    2. NEW_V6_FS_20B_STRONGEST_VERB                 Add the closing instruction.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V6_WATCH_NEXT   (NEW)
+    TRIGGER:    the spoken Watch Next line
+    LAYOUT:     Watch Next card, house layout.
+    TREATMENT:  WATCH NEXT
+    BUILD:      SINGLE
+    1. NEW_V6_WATCH_NEXT                            Single state. Final card.
+    HOLD:       Cut here on the spoken Watch Next line and end the video on it.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+  One active idea at a time. When a framework is being taught,
+  one component is warm and the rest are quiet.
+
+  Establish the whole structure before activating any part of it.
+
+  No animation whose only purpose is to keep the screen moving.
+  Stillness is allowed when the viewer needs to read or think.
+
+  No fake buttons, progress bars, quiz interfaces or dashboards.
+
+  A card never moves while the presenter moves behind it.

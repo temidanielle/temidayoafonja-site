@@ -1,0 +1,265 @@
+==============================================================================
+NEW V7  (FORMER ROADMAP V24)  |  CAMERA AND FULL-SCREEN MAP
+==============================================================================
+
+I’ve Seen Who Gets the Bigger Role and Why
+
+Every stretch of this video is marked. CAMERA means Temidayo
+carries the moment and no graphic should appear over her.
+FULL SCREEN means the idea takes the screen, with no presenter
+moving behind it and no semi-transparent overlay.
+
+------------------------------------------------------------------------------
+
+  21 camera stretches
+  13 full-screen cues, one per card
+  810 of 966 spoken words delivered on camera
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+SECTION 1  HOOK
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  4 paragraphs, 35 words
+      I have sat in rooms where two people were both capable, both respected, and both doing good work...
+      Then a bigger role opened.
+      One person got pulled into the conversation.
+      The other person did not.
+
+  [ FULL SCREEN ]  NEW_V7_FS_01_NOT_ALWAYS_WHO_WORKED_HARDER   (NEW)
+      TRIGGER:  And the difference was not always who worked harder.
+      STATES:   NEW_V7_FS_01_NOT_ALWAYS_WHO_WORKED_HARDER
+      HOLD:     Cut on the sentence. The scene before it stays on camera.
+
+  [ CAMERA ]  3 paragraphs, 36 words
+      That is what I want to talk about.
+      Because when you are the person who was not chosen, the easy story is, "Maybe I am just not good...
+      Sometimes that is not the right read.
+
+
+------------------------------------------------------------------------------
+SECTION 2  THE SCENE
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  2 paragraphs, 41 words
+      A bigger assignment usually arrives before the title does.
+      A leader needs somebody to take over a messy project. A team needs a temporary owner. A client p...
+
+  [ FULL SCREEN ]  NEW_V7_FS_02_TWO_QUESTIONS   (NEW)
+      TRIGGER:  At that point, people are not only asking, "Who is good?"
+      STATES:   NEW_V7_FS_02_TWO_QUESTIONS
+      HOLD:     Cut on 'At that point, people are not only asking' and hold through 'Those are different questions.'
+
+  [ CAMERA ]  2 paragraphs, 14 words
+      They are asking, "Who do I trust at this level?"
+      Those are different questions.
+
+
+------------------------------------------------------------------------------
+SECTION 3  WHAT PEOPLE USUALLY DO
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  4 paragraphs, 45 words
+      When someone wants the bigger role, the default response is often to work harder.
+      Take on more. Say yes faster. Stay later. Be the dependable person.
+      That can help your reputation.
+      But it does not automatically show the kind of readiness the larger role requires.
+
+  [ FULL SCREEN ]  NEW_V7_FS_03_USEFUL_NOT_PICTURED   (NEW)
+      TRIGGER:  You can become more useful without becoming easier to picture at the next level.
+      STATES:   NEW_V7_FS_03_USEFUL_NOT_PICTURED
+      HOLD:     Hold until the sentence lands, then cut back.
+
+
+------------------------------------------------------------------------------
+SECTION 4  THE FOUR THINGS I LOOK FOR
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  NEW_V7_FS_04_FOUR_THINGS   (NEW)
+      TRIGGER:  When I have seen larger scope get handed out, four things tend to matter.
+      STATES:   NEW_V7_FS_04_FOUR_THINGS, NEW_V7_FS_04A_VISIBLE_PROOF, NEW_V7_FS_04B_JUDGMENT, NEW_V7_FS_04C_TRUST, NEW_V7_FS_04D_SPONSORSHIP
+      HOLD:     One activation per spoken item. Hold the fourth through the lines about bias, relationships and manager support.
+
+  [ CAMERA ]  13 paragraphs, 115 words
+      Not as a guaranteed formula.
+      As a way to read what may be happening.
+      First: visible proof.
+      Has this person already handled something that looks like part of the next role?
+      Not the title.
+      The problem.
+      Second: judgment.
+      When there was no clear answer, did they make a sound call?
+      Third: trust.
+      Do leaders believe this person will surface a problem early, tell the truth when the news is bad...
+      Fourth: sponsorship and access.
+      Is someone in the room able and willing to say, "I have seen them do this. Give them the shot."
+      That last one matters because careers do not happen in a vacuum.
+
+  [ FULL SCREEN ]  NEW_V7_FS_05_NOT_MERIT   (NEW)
+      TRIGGER:  Bias matters. Relationships matter. Manager support matters. Who gets access to developmental work matters.
+      STATES:   NEW_V7_FS_05_NOT_MERIT
+      HOLD:     Hold through the list and the sentence that refuses to reduce this to merit.
+
+  [ CAMERA ]  1 paragraph, 10 words
+      So I do not want to reduce this to merit.
+
+
+------------------------------------------------------------------------------
+SECTION 5  VISIBLE PROOF
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  5 paragraphs, 61 words
+      Visible proof is where dependable people can get stuck.
+      You may be carrying hard work every day.
+      But if the work is mostly rescue, cleanup, or execution, people may see you as essential to the ...
+      That is painful because your value is real.
+      The problem is not that you have done nothing.
+
+  [ FULL SCREEN ]  NEW_V7_FS_06_EVIDENCE_FOR_WHICH_ROLE   (NEW)
+      TRIGGER:  The problem may be that the evidence people see is evidence for the role you already have.
+      STATES:   NEW_V7_FS_06_EVIDENCE_FOR_WHICH_ROLE
+      HOLD:     Cut on the sentence and hold through it. The line protecting the viewer's work is on the card.
+
+
+------------------------------------------------------------------------------
+SECTION 6  WHAT TO DO WITH THIS
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  2 paragraphs, 16 words
+      If you want a bigger role, do not only ask for "more responsibility."
+      Ask what kind.
+
+  [ FULL SCREEN ]  NEW_V7_FS_07_ASK_WHAT_KIND   (NEW)
+      TRIGGER:  What decisions will I get to make? What level of stakeholder will I work with? What problem will I own end to end? What evidence would show readiness for the next level?
+      STATES:   NEW_V7_FS_07_ASK_WHAT_KIND
+      HOLD:     Cut on 'Ask what kind.' and hold through the three questions.
+
+  [ FULL SCREEN ]  NEW_V7_FS_08_CHANGES_THE_CONVERSATION   (NEW)
+      TRIGGER:  That changes the conversation from:
+      STATES:   NEW_V7_FS_08_CHANGES_THE_CONVERSATION
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  3 paragraphs, 15 words
+      "Can I help more?"
+      to:
+      "What would let me practice the next level of work?"
+
+
+------------------------------------------------------------------------------
+SECTION 7  THE CONVERSATION
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  6 paragraphs, 72 words
+      You can say something like:
+      "I want to be ready for larger scope. When you think about the next level here, what would you n...
+      That question does not force a promise.
+      It gives you information.
+      And if the answer is vague, ask for an example.
+      "What kind of decision?" "What kind of project?" "What kind of risk?" "What kind of stakeholder?...
+
+
+------------------------------------------------------------------------------
+SECTION 8  THE BOUNDARY
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  2 paragraphs, 21 words
+      This does not mean that if you collect the right evidence, you will get the opportunity.
+      Organizations are not clean systems.
+
+  [ FULL SCREEN ]  NEW_V7_FS_09_THE_BOUNDARY   (NEW)
+      TRIGGER:  There can be politics, bias, favoritism, timing, budget limits, headcount rules, or a manager who simply does not want to let a strong person move.
+      STATES:   NEW_V7_FS_09_THE_BOUNDARY
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  2 paragraphs, 20 words
+      You need to know that too.
+      The point of reading the situation is not to blame yourself for every outcome.
+
+  [ FULL SCREEN ]  NEW_V7_FS_10_SEPARATE_THREE_THINGS   (NEW)
+      TRIGGER:  It is to separate:
+      STATES:   NEW_V7_FS_10_SEPARATE_THREE_THINGS
+      HOLD:     Cut on 'It is to separate:' and hold through the three lines.
+
+  [ CAMERA ]  1 paragraph, 20 words
+      what you can build, what you can ask for, and what the organization may not be willing to give y...
+
+
+------------------------------------------------------------------------------
+SECTION 9  HOW TO READ YOUR OWN SITUATION
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  2 paragraphs, 31 words
+      Here is a simple way to read your own position before the next opportunity appears.
+      Write down the last three times you were trusted with something bigger than your normal role.
+
+  [ FULL SCREEN ]  NEW_V7_FS_11_READ_YOUR_OWN_SITUATION   (NEW)
+      TRIGGER:  For each one, ask:
+      STATES:   NEW_V7_FS_11_READ_YOUR_OWN_SITUATION
+      HOLD:     Cut on 'For each one, ask:' and hold through the four questions.
+
+  [ CAMERA ]  1 paragraph, 21 words
+      What problem was I trusted with? What decision was mine? Who saw me handle it? What changed beca...
+
+  [ FULL SCREEN ]  NEW_V7_FS_12_THE_MISSING_LINE   (NEW)
+      TRIGGER:  Now look for the missing line.
+      STATES:   NEW_V7_FS_12_THE_MISSING_LINE
+      HOLD:     Hold through the four 'maybe' lines that follow.
+
+  [ CAMERA ]  5 paragraphs, 59 words
+      Maybe you have strong proof, but nobody senior has seen it.
+      Maybe people trust your execution, but not your judgment yet.
+      Maybe you have judgment, but only inside one narrow context.
+      Maybe you have done the work, but the organization still reads your title as the ceiling.
+      That is useful because it gives you something concrete to work on.
+
+
+------------------------------------------------------------------------------
+SECTION 10  WHAT NOT TO DO
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  6 paragraphs, 76 words
+      Do not turn this into performing readiness all day.
+      You do not need to volunteer for every broken project.
+      You do not need to be the person who is always "on."
+      The goal is not endless visibility.
+      The goal is enough relevant evidence that when the bigger role appears, somebody can point to wo...
+      That is a very different strategy from simply doing more.
+
+
+------------------------------------------------------------------------------
+SECTION 11  CLOSE
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  1 paragraph, 21 words
+      If a bigger role keeps going to someone else, do not only ask, "What do they have that I do not?...
+
+  [ FULL SCREEN ]  NEW_V7_FS_13_CTA   (NEW)
+      TRIGGER:  Ask:
+      STATES:   NEW_V7_FS_13_CTA
+      HOLD:     Cut on 'Ask:' and hold to the end of the spoken line.
+
+  [ CAMERA ]  4 paragraphs, 59 words
+      What proof of the next level is visible? What judgment have I already been allowed to practice? ...
+      Sometimes the answer tells you what to build.
+      Sometimes it tells you what to negotiate.
+      And sometimes it tells you that the next opportunity may have to come from somewhere else.
+
+
+------------------------------------------------------------------------------
+SECTION 12  WATCH NEXT
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  1 paragraph, 22 words
+      And if the frustrating part is that your work is clearly valued but you still keep getting overl...
+
+
+------------------------------------------------------------------------------
+WATCH NEXT  |  FULL SCREEN AND FINAL
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  NEW_V7_WATCH_NEXT
+      SPOKEN LINE: And if the frustrating part is that your work is clearly valued but you still keep getting overlooked, watch this one next.
+      DESTINATION: What to Do When Your Work Is Valued but You Are Overlooked
+      Nothing returns to camera after this card.

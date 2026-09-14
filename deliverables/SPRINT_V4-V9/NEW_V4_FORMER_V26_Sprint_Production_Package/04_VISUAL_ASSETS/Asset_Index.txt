@@ -1,0 +1,90 @@
+==============================================================================
+NEW V4  (FORMER ROADMAP V26)  |  ASSET INDEX
+==============================================================================
+
+AI Took the Task. Who Gets the Experience?
+
+12 families, 15 image states.
+PNG is 1920 x 1080. An SVG is provided where a designer may need
+to re-time or recolor the card; its text is live and the brand
+faces are embedded.
+
+------------------------------------------------------------------------------
+
+NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE
+    CLASS:      NEW
+    PURPOSE:    Put the video's question on screen in the words the script uses, before any framework appears.
+    TREATMENT:  STATEMENT
+    NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE.png       NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE.png
+
+NEW_V4_FS_02_INEFFICIENT_AND_DEVELOPMENTAL
+    CLASS:      NEW
+    PURPOSE:    Separate what a task costs from what it teaches, which is the whole distinction the video turns on.
+    TREATMENT:  COMPARISON
+    NEW_V4_FS_02_INEFFICIENT_AND_DEVELOPMENTAL.png NEW_V4_FS_02_INEFFICIENT_AND_DEVELOPMENTAL.png
+
+NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT
+    CLASS:      NEW
+    PURPOSE:    Name what the removed work was teaching, in the script's own three lines, so the loss is specific rather than atmospheric.
+    TREATMENT:  SEQUENCE
+    NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT.png          NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT.png, NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT.svg
+
+NEW_V4_FS_04_THE_REAL_QUESTION
+    CLASS:      NEW
+    PURPOSE:    State the question the video is actually asking, immediately after the script has ruled out the anti-AI reading.
+    TREATMENT:  STATEMENT
+    NEW_V4_FS_04_THE_REAL_QUESTION.png             NEW_V4_FS_04_THE_REAL_QUESTION.png
+
+NEW_V4_FS_05_THREE_THINGS
+    CLASS:      NEW
+    PURPOSE:    Establish the three things to watch, then take them one at a time so none is read as the whole test.
+    TREATMENT:  SEQUENCE
+    NEW_V4_FS_05_THREE_THINGS.png                  NEW_V4_FS_05_THREE_THINGS.png, NEW_V4_FS_05_THREE_THINGS.svg
+    NEW_V4_FS_05A_EXPOSURE.png                     NEW_V4_FS_05A_EXPOSURE.png
+    NEW_V4_FS_05B_OWNERSHIP.png                    NEW_V4_FS_05B_OWNERSHIP.png
+    NEW_V4_FS_05C_FEEDBACK.png                     NEW_V4_FS_05C_FEEDBACK.png
+
+NEW_V4_FS_06_MOVED_OR_REMOVED
+    CLASS:      NEW
+    PURPOSE:    Show the two futures for the same automated task without deciding which one any viewer is in.
+    TREATMENT:  COMPARISON
+    NEW_V4_FS_06_MOVED_OR_REMOVED.png              NEW_V4_FS_06_MOVED_OR_REMOVED.png
+
+NEW_V4_FS_07_WHAT_DID_IT_TEACH
+    CLASS:      NEW
+    PURPOSE:    Give managers the design question in one line.
+    TREATMENT:  STATEMENT
+    NEW_V4_FS_07_WHAT_DID_IT_TEACH.png             NEW_V4_FS_07_WHAT_DID_IT_TEACH.png
+
+NEW_V4_FS_08_STILL_PRACTICING
+    CLASS:      NEW
+    PURPOSE:    Five questions the viewer can ask themselves, all visible because the script delivers them as one run.
+    TREATMENT:  SEQUENCE
+    NEW_V4_FS_08_STILL_PRACTICING.png              NEW_V4_FS_08_STILL_PRACTICING.png
+
+NEW_V4_FS_09_NOT_ONE_OUTCOME
+    CLASS:      NEW
+    PURPOSE:    Keep the boundary visible: the video claims no single outcome for every job.
+    TREATMENT:  SEQUENCE
+    NEW_V4_FS_09_NOT_ONE_OUTCOME.png               NEW_V4_FS_09_NOT_ONE_OUTCOME.png
+
+NEW_V4_FS_10_THREE_COLUMNS
+    CLASS:      NEW
+    PURPOSE:    The action, as three columns the viewer can actually draw.
+    TREATMENT:  CTA
+    NEW_V4_FS_10_THREE_COLUMNS.png                 NEW_V4_FS_10_THREE_COLUMNS.png
+
+NEW_V4_FS_11_TASK_IS_NOT_THE_JOB
+    CLASS:      NEW
+    PURPOSE:    The closing distinction, which is also the video's protection against being read as a job-loss prediction.
+    TREATMENT:  STATEMENT
+    NEW_V4_FS_11_TASK_IS_NOT_THE_JOB.png           NEW_V4_FS_11_TASK_IS_NOT_THE_JOB.png
+
+NEW_V4_WATCH_NEXT
+    CLASS:      NEW
+    PURPOSE:    The destination the script speaks. Full screen and final: nothing returns to camera after it.
+    TREATMENT:  WATCH NEXT
+    NEW_V4_WATCH_NEXT.png                          NEW_V4_WATCH_NEXT.png
+    SOURCE:
+        Intended destination, spoken in the script. Confirm it is
+        publicly live before upload.

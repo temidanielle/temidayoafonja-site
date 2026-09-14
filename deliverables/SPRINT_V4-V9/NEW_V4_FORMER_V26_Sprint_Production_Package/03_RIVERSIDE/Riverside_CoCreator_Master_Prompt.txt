@@ -1,0 +1,462 @@
+==============================================================================
+NEW V4  (FORMER ROADMAP V26)  |  RIVERSIDE CO-CREATOR MASTER PROMPT
+==============================================================================
+
+AI Took the Task. Who Gets the Experience?
+Thumbnail: WHO LEARNS NOW?
+Generated Sunday, September 13, 2026 | 8:00 PM CT
+
+826 spoken words. 17 camera stretches against 11 full-screen cues,
+and 746 of the spoken words are delivered on camera.
+This script carries no timing markers, so nothing in it can be
+mistaken for a runtime, a chapter or an SRT time.
+
+------------------------------------------------------------------------------
+
+HOW TO USE THIS
+
+  Work down the spine. Where it says CAMERA, stay on Temidayo
+  for the whole stretch. Where it says FULL SCREEN, cut to the
+  named asset on the exact trigger sentence and follow the
+  reveal order. The copy on each card is final; do not retype
+  it, and do not add teaching that is not in the script.
+
+------------------------------------------------------------------------------
+
+THIS VIDEO SPECIFICALLY
+
+  Do not frame this video as AI equals threat, job loss, or bad. The
+  teaching question is what developmental work changes and what
+  replaces it. Use AI imagery only where it is substantive; this video
+  needs none. No glowing robots, no futuristic stock.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+  CAMERA-LED
+      Story, recognition, consequence, tension and interpretation stay on
+      Temidayo. Do not cover a strong human moment with a graphic because
+      an asset exists. These scripts are short and carry few cues on
+      purpose.
+
+  TRUE FULL SCREEN
+      Frameworks, comparisons, meaningful evidence and multi-step teaching
+      take the whole screen. No presenter moving behind them, no corner
+      placement, no semi-transparent overlay for substantive teaching.
+
+  ONE ACTIVE IDEA AT A TIME
+      Establish a structure whole, then activate one component, teach it,
+      and move on. Never leave several components competing while one is
+      explained.
+
+  SEQUENTIAL REVEALS, NOT BUTTONS
+      A numbered point is a reading order. YouTube is not interactive and
+      nothing should look clickable.
+
+  RESTRAINT
+      No constant zooming, no pulsing the frame, no accent on every
+      reveal, no animating every line. Stillness is allowed when the
+      viewer needs to read.
+
+  CAPTIONS
+      No burned-in captions in the long-form video. Generate the SRT in
+      Riverside after the final edit and verify it against the final
+      export.
+
+  WATCH NEXT
+      Full screen and final. There is no return to camera after it. The
+      spoken line that introduces it is the script's own and was not
+      changed.
+
+------------------------------------------------------------------------------
+
+THE SPINE
+
+
+------------------------------------------------------------------------------
+SECTION 1  HOOK
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 7 paragraphs, 49 words.
+  FROM:  Imagine you are early in your career.
+  TO:    Great.
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  But who gets the experience that used to come from doing the work?
+  PURPOSE:
+      Put the video's question on screen in the words the script uses,
+      before any framework appears.
+  LAYOUT:
+      Statement. Navy ground.
+  REVEAL ORDER:
+      1. ASSET: NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Cut on the question and hold through it. The three short lines
+      before it stay on camera.
+  SOUND:
+      One restrained accent.
+
+
+------------------------------------------------------------------------------
+SECTION 2  THE TENSION
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 3 paragraphs, 35 words.
+  FROM:  This is the part of the AI conversation I think we need to watch...
+  TO:    We talk less about what people used to learn while doing those t...
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  Because a task can be inefficient and still be developmental.
+  PURPOSE:
+      Separate what a task costs from what it teaches, which is the whole
+      distinction the video turns on.
+  LAYOUT:
+      Two sides of one idea, joined rather than opposed.
+  REVEAL ORDER:
+      1. ASSET: NEW_V4_FS_02_INEFFICIENT_AND_DEVELOPMENTAL.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold until the sentence lands, then cut back.
+  SOUND:
+      One accent.
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  Repetition teaches pattern recognition.
+  PURPOSE:
+      Name what the removed work was teaching, in the script's own three
+      lines, so the loss is specific rather than atmospheric.
+  LAYOUT:
+      Three short rows, all visible. Spoken as one list.
+  REVEAL ORDER:
+      1. ASSET: NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold until the sentence lands, then cut back.
+  SOUND:
+      One accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 5 paragraphs, 40 words.
+  FROM:  Fixing mistakes teaches judgment.
+  TO:    How will the person learn?
+
+
+------------------------------------------------------------------------------
+SECTION 3  NOT AN ANTI-AI ARGUMENT
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 7 paragraphs, 56 words.
+  FROM:  I want to be clear.
+  TO:    The question is:
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  "If AI does the task, what replaces the learning?"
+  PURPOSE:
+      State the question the video is actually asking, immediately after
+      the script has ruled out the anti-AI reading.
+  LAYOUT:
+      Statement.
+  REVEAL ORDER:
+      1. ASSET: NEW_V4_FS_04_THE_REAL_QUESTION.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Cut on the question. The three sentences that protect automation
+      stay on camera before it.
+  SOUND:
+      One restrained accent.
+
+
+------------------------------------------------------------------------------
+SECTION 4  THREE THINGS TO WATCH
+------------------------------------------------------------------------------
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  I would watch three things.
+  PURPOSE:
+      Establish the three things to watch, then take them one at a time so
+      none is read as the whole test.
+  LAYOUT:
+      Numbered sequence, established whole, then activated one at a time.
+  REVEAL ORDER:
+      1. ASSET: NEW_V4_FS_05_THREE_THINGS.png
+         Establish on 'I would watch three things.'
+      2. ASSET: NEW_V4_FS_05A_EXPOSURE.png
+         Activate 1 on 'First: exposure.'
+      3. ASSET: NEW_V4_FS_05B_OWNERSHIP.png
+         Activate 2 on 'Second: ownership.'
+      4. ASSET: NEW_V4_FS_05C_FEEDBACK.png
+         Activate 3 on 'Third: feedback.'
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      One activation per spoken item. Cut back to camera for the sentence
+      about judgment being formed.
+  SOUND:
+      One accent on establish. None on the activations.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 8 paragraphs, 67 words.
+  FROM:  First: exposure.
+  TO:    It has to be formed somewhere.
+
+
+------------------------------------------------------------------------------
+SECTION 5  STORY
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 6 paragraphs, 68 words.
+  FROM:  Think about a junior analyst who used to build a model from scra...
+  TO:    If the analyst still has to test the assumptions, challenge the...
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  But if their job becomes:
+  PURPOSE:
+      Show the two futures for the same automated task without deciding
+      which one any viewer is in.
+  LAYOUT:
+      Side-by-side contrast.
+  REVEAL ORDER:
+      1. ASSET: NEW_V4_FS_06_MOVED_OR_REMOVED.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Cut on 'But if their job becomes:' and hold through the three short
+      lines that follow.
+  SOUND:
+      One accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 3 paragraphs, 23 words.
+  FROM:  run the tool, copy the result, send it upward,
+  TO:    They may become faster without becoming better at the underlying...
+
+
+------------------------------------------------------------------------------
+SECTION 6  FOR MANAGERS
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 4 paragraphs, 18 words.
+  FROM:  If you manage people, this becomes a design question.
+  TO:    Ask:
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  "What did this task used to teach?"
+  PURPOSE:
+      Give managers the design question in one line.
+  LAYOUT:
+      Rule card.
+  REVEAL ORDER:
+      1. ASSET: NEW_V4_FS_07_WHAT_DID_IT_TEACH.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold until the sentence lands, then cut back.
+  SOUND:
+      One restrained accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 3 paragraphs, 41 words.
+  FROM:  Then decide how that learning happens now.
+  TO:    But somebody has to design the replacement.
+
+
+------------------------------------------------------------------------------
+SECTION 7  FOR PROFESSIONALS
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 10 words.
+  FROM:  If you are the person using the AI, ask yourself:
+  TO:    If you are the person using the AI, ask yourself:
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  What am I still practicing?
+  PURPOSE:
+      Five questions the viewer can ask themselves, all visible because
+      the script delivers them as one run.
+  LAYOUT:
+      Questions card, sized so five fit and stay readable on a phone.
+  REVEAL ORDER:
+      1. ASSET: NEW_V4_FS_08_STILL_PRACTICING.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold through the five questions and the line about future evidence.
+  SOUND:
+      One accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 5 paragraphs, 42 words.
+  FROM:  What am I no longer practicing?
+  TO:    That last question matters for your future evidence too.
+
+
+------------------------------------------------------------------------------
+SECTION 8  BOUNDARY
+------------------------------------------------------------------------------
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  Different jobs will answer this differently.
+  PURPOSE:
+      Keep the boundary visible: the video claims no single outcome for
+      every job.
+  LAYOUT:
+      Three short rows, all visible.
+  REVEAL ORDER:
+      1. ASSET: NEW_V4_FS_09_NOT_ONE_OUTCOME.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold through the list and the sentence that refuses a single
+      outcome.
+  SOUND:
+      No accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 5 paragraphs, 50 words.
+  FROM:  In some work, AI may increase learning because people can test m...
+  TO:    I am saying the learning path should not be treated as automatic...
+
+
+------------------------------------------------------------------------------
+SECTION 9  WHY THIS MATTERS LATER
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 7 paragraphs, 86 words.
+  FROM:  The reason I care about this is not only the junior employee.
+  TO:    It means the pipeline has to be designed.
+
+
+------------------------------------------------------------------------------
+SECTION 10  AN AUDIT FOR YOUR ROLE
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 14 words.
+  FROM:  You can do a quick audit of one task AI now helps you with.
+  TO:    You can do a quick audit of one task AI now helps you with.
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  Write three columns:
+  PURPOSE:
+      The action, as three columns the viewer can actually draw.
+  LAYOUT:
+      Action card. The three columns are the ask.
+  REVEAL ORDER:
+      1. ASSET: NEW_V4_FS_10_THREE_COLUMNS.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Cut on 'Write three columns:' and hold through the three lines that
+      define them.
+  SOUND:
+      One accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 7 paragraphs, 65 words.
+  FROM:  Before AI. With AI. Still mine.
+  TO:    That is the conversation I want more teams to have.
+
+
+------------------------------------------------------------------------------
+SECTION 11  CLOSE
+------------------------------------------------------------------------------
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  AI taking the task is not the same as AI taking the job.
+  PURPOSE:
+      The closing distinction, which is also the video's protection
+      against being read as a job-loss prediction.
+  LAYOUT:
+      Statement.
+  REVEAL ORDER:
+      1. ASSET: NEW_V4_FS_11_TASK_IS_NOT_THE_JOB.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold until the sentence lands, then cut back.
+  SOUND:
+      One restrained accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 6 paragraphs, 47 words.
+  FROM:  But there is another possibility worth watching.
+  TO:    Who gets the experience?
+
+
+------------------------------------------------------------------------------
+SECTION 12  WATCH NEXT
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 35 words.
+  FROM:  And if AI is already doing more of your work, the next question...
+  TO:    And if AI is already doing more of your work, the next question...
+
+
+------------------------------------------------------------------------------
+
+WATCH NEXT  |  FULL SCREEN AND FINAL
+
+  ASSET:        NEW_V4_WATCH_NEXT.png
+  SPOKEN LINE:  And if AI is already doing more of your work, the next question is what part of the result you can still honestly claim. I made a video about exactly that. Watch that one next.
+  DESTINATION:  How to Prove Your Value When AI Does More of the Task
+  The spoken wording above is the script's own and was not
+  changed. Cut to the card on that line and end the video on it.
+  Nothing returns to camera afterward.
+
+  Before upload, confirm the destination is publicly live. If it
+  is not, the publishing materials carry an EDITORIAL FALLBACK
+  REQUIRED flag for approval. Do not invent a fallback here.
+
+------------------------------------------------------------------------------
+
+AFTER THE EDIT
+
+  Generate the SRT in Riverside and verify it against the final
+  export. Create chapters from real export timing. Neither exists
+  in this package and neither should be invented before the cut.

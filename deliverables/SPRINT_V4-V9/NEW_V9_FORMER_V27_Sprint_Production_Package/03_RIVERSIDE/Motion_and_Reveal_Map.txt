@@ -1,0 +1,135 @@
+==============================================================================
+NEW V9  (FORMER ROADMAP V27)  |  MOTION AND REVEAL MAP
+==============================================================================
+
+Transferable Skills Advice Is Missing Something
+
+Reveal order for every card with more than one state, and the
+emphasis state of each. A numbered point is a reading order,
+never a button.
+
+------------------------------------------------------------------------------
+
+NEW_V9_FS_01_INCOMPLETE_QUESTION   (NEW)
+    TRIGGER:    But I think the question is incomplete.
+    LAYOUT:     Statement.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. NEW_V9_FS_01_INCOMPLETE_QUESTION             Single state.
+    HOLD:       Cut on the sentence. The quoted question before it stays on camera.
+
+NEW_V9_FS_02_WHY_THE_ADVICE_HELPS   (NEW)
+    TRIGGER:    Transferable skills advice is useful because it stops experienced people from erasing themselves.
+    LAYOUT:     Statement.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. NEW_V9_FS_02_WHY_THE_ADVICE_HELPS            Single state.
+    HOLD:       Hold through the sentence about talking as if ten years disappeared.
+
+NEW_V9_FS_03_FOUR_QUESTIONS   (NEW)
+    TRIGGER:    I use four questions instead.
+    LAYOUT:     Framework established whole, then activated one at a time.
+    TREATMENT:  SEQUENCE
+    BUILD:      ESTABLISH
+    1. NEW_V9_FS_03_FOUR_QUESTIONS                  Establish on 'I use four questions instead.' All four stay on screen together.
+    2. NEW_V9_FS_03A_WHAT_TRAVELS                   Activate 1 at the WHAT TRAVELS section.
+    3. NEW_V9_FS_03B_WHAT_DOES_NOT                  Activate 2 at the WHAT DOES NOT section.
+    4. NEW_V9_FS_03C_WHAT_CAN_I_PROVE               Activate 3 at the WHAT CAN I PROVE section.
+    5. NEW_V9_FS_03D_WHAT_MUST_I_RELEARN            Activate 4 at the WHAT MUST I RELEARN section.
+    HOLD:       Establish on the four-questions paragraph and hold through 'That is a more honest read.' The four activations are cut at the head of each matching section, so all four questions are on screen together before any one of them is emphasized.
+
+NEW_V9_FS_04_DEMONSTRATED_NOT_CLAIMED   (NEW)
+    TRIGGER:    The key word is demonstrated.
+    LAYOUT:     Side-by-side contrast.
+    TREATMENT:  COMPARISON
+    BUILD:      SINGLE
+    1. NEW_V9_FS_04_DEMONSTRATED_NOT_CLAIMED        Single state.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V9_FS_05_TIED_TO_THE_OLD_CONTEXT   (NEW)
+    TRIGGER:    Then ask what is tied to the old context.
+    LAYOUT:     Short rows, all visible.
+    TREATMENT:  SEQUENCE
+    BUILD:      SINGLE
+    1. NEW_V9_FS_05_TIED_TO_THE_OLD_CONTEXT         Single state.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V9_FS_06_WHAT_CAN_ANOTHER_PERSON_SEE   (NEW)
+    TRIGGER:    What was broken? What did you decide? What changed? How do you know?
+    LAYOUT:     Questions card.
+    TREATMENT:  SEQUENCE
+    BUILD:      SINGLE
+    1. NEW_V9_FS_06_WHAT_CAN_ANOTHER_PERSON_SEE     Single state.
+    HOLD:       Hold through 'Experience becomes portable when another person can evaluate it.'
+
+NEW_V9_FS_07_WHAT_THE_NEW_CONTEXT_REQUIRES   (NEW)
+    TRIGGER:    Regulation. Credentials. Domain knowledge. Customer knowledge. Technical depth. Local relationships. A different operating model.
+    LAYOUT:     Short rows, all visible.
+    TREATMENT:  SEQUENCE
+    BUILD:      SINGLE
+    1. NEW_V9_FS_07_WHAT_THE_NEW_CONTEXT_REQUIRES   Single state.
+    HOLD:       Hold through 'They are part of the move.'
+
+NEW_V9_FS_08_SORTING   (NEW)
+    TRIGGER:    I picture sorting.
+    LAYOUT:     Four short rows, all visible.
+    TREATMENT:  SEQUENCE
+    BUILD:      SINGLE
+    1. NEW_V9_FS_08_SORTING                         Single state.
+    HOLD:       Cut on 'I picture sorting.' and hold through the four lines.
+
+NEW_V9_FS_09_FOUR_COLUMNS   (NEW)
+    TRIGGER:    Make four columns.
+    LAYOUT:     Action card.
+    TREATMENT:  CTA
+    BUILD:      SINGLE
+    1. NEW_V9_FS_09_FOUR_COLUMNS                    Single state.
+    HOLD:       Cut on 'Make four columns.' and hold through the three lines that read the result.
+
+NEW_V9_FS_10_BOUNDARY   (NEW)
+    TRIGGER:    An employer may still prefer someone with direct experience.
+    LAYOUT:     Short rows, all visible.
+    TREATMENT:  SEQUENCE
+    BUILD:      SINGLE
+    1. NEW_V9_FS_10_BOUNDARY                        Single state.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V9_FS_11_FLUENCY_AND_PORTABILITY   (NEW)
+    TRIGGER:    The longer you stay in one context, the easier it is to confuse fluency with portability.
+    LAYOUT:     Statement.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. NEW_V9_FS_11_FLUENCY_AND_PORTABILITY         Single state.
+    HOLD:       Hold through the lines about knowing who to call and which meeting matters.
+
+NEW_V9_FS_12_THE_AUDIT_AGAIN   (NEW)
+    TRIGGER:    What travels? What does not? What can I prove? What must I relearn?
+    LAYOUT:     Framework, established whole and left whole.
+    TREATMENT:  SEQUENCE
+    BUILD:      SINGLE
+    1. NEW_V9_FS_12_THE_AUDIT_AGAIN                 Single state.
+    HOLD:       Cut on 'Ask:' and hold through the four questions and the closing sentence.
+
+NEW_V9_WATCH_NEXT   (NEW)
+    TRIGGER:    the spoken Watch Next line
+    LAYOUT:     Watch Next card, house layout.
+    TREATMENT:  WATCH NEXT
+    BUILD:      SINGLE
+    1. NEW_V9_WATCH_NEXT                            Single state. Final card.
+    HOLD:       Cut here on the spoken Watch Next line and end the video on it.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+  One active idea at a time. When a framework is being taught,
+  one component is warm and the rest are quiet.
+
+  Establish the whole structure before activating any part of it.
+
+  No animation whose only purpose is to keep the screen moving.
+  Stillness is allowed when the viewer needs to read or think.
+
+  No fake buttons, progress bars, quiz interfaces or dashboards.
+
+  A card never moves while the presenter moves behind it.

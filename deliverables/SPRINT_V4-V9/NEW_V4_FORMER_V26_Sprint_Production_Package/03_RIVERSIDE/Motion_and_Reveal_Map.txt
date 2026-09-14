@@ -1,0 +1,126 @@
+==============================================================================
+NEW V4  (FORMER ROADMAP V26)  |  MOTION AND REVEAL MAP
+==============================================================================
+
+AI Took the Task. Who Gets the Experience?
+
+Reveal order for every card with more than one state, and the
+emphasis state of each. A numbered point is a reading order,
+never a button.
+
+------------------------------------------------------------------------------
+
+NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE   (NEW)
+    TRIGGER:    But who gets the experience that used to come from doing the work?
+    LAYOUT:     Statement. Navy ground.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE         Single state.
+    HOLD:       Cut on the question and hold through it. The three short lines before it stay on camera.
+
+NEW_V4_FS_02_INEFFICIENT_AND_DEVELOPMENTAL   (NEW)
+    TRIGGER:    Because a task can be inefficient and still be developmental.
+    LAYOUT:     Two sides of one idea, joined rather than opposed.
+    TREATMENT:  COMPARISON
+    BUILD:      SINGLE
+    1. NEW_V4_FS_02_INEFFICIENT_AND_DEVELOPMENTAL   Single state.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT   (NEW)
+    TRIGGER:    Repetition teaches pattern recognition.
+    LAYOUT:     Three short rows, all visible. Spoken as one list.
+    TREATMENT:  SEQUENCE
+    BUILD:      SINGLE
+    1. NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT            Single state.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V4_FS_04_THE_REAL_QUESTION   (NEW)
+    TRIGGER:    "If AI does the task, what replaces the learning?"
+    LAYOUT:     Statement.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. NEW_V4_FS_04_THE_REAL_QUESTION               Single state.
+    HOLD:       Cut on the question. The three sentences that protect automation stay on camera before it.
+
+NEW_V4_FS_05_THREE_THINGS   (NEW)
+    TRIGGER:    I would watch three things.
+    LAYOUT:     Numbered sequence, established whole, then activated one at a time.
+    TREATMENT:  SEQUENCE
+    BUILD:      ESTABLISH
+    1. NEW_V4_FS_05_THREE_THINGS                    Establish on 'I would watch three things.'
+    2. NEW_V4_FS_05A_EXPOSURE                       Activate 1 on 'First: exposure.'
+    3. NEW_V4_FS_05B_OWNERSHIP                      Activate 2 on 'Second: ownership.'
+    4. NEW_V4_FS_05C_FEEDBACK                       Activate 3 on 'Third: feedback.'
+    HOLD:       One activation per spoken item. Cut back to camera for the sentence about judgment being formed.
+
+NEW_V4_FS_06_MOVED_OR_REMOVED   (NEW)
+    TRIGGER:    But if their job becomes:
+    LAYOUT:     Side-by-side contrast.
+    TREATMENT:  COMPARISON
+    BUILD:      SINGLE
+    1. NEW_V4_FS_06_MOVED_OR_REMOVED                Single state.
+    HOLD:       Cut on 'But if their job becomes:' and hold through the three short lines that follow.
+
+NEW_V4_FS_07_WHAT_DID_IT_TEACH   (NEW)
+    TRIGGER:    "What did this task used to teach?"
+    LAYOUT:     Rule card.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. NEW_V4_FS_07_WHAT_DID_IT_TEACH               Single state.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V4_FS_08_STILL_PRACTICING   (NEW)
+    TRIGGER:    What am I still practicing?
+    LAYOUT:     Questions card, sized so five fit and stay readable on a phone.
+    TREATMENT:  SEQUENCE
+    BUILD:      SINGLE
+    1. NEW_V4_FS_08_STILL_PRACTICING                Single state.
+    HOLD:       Hold through the five questions and the line about future evidence.
+
+NEW_V4_FS_09_NOT_ONE_OUTCOME   (NEW)
+    TRIGGER:    Different jobs will answer this differently.
+    LAYOUT:     Three short rows, all visible.
+    TREATMENT:  SEQUENCE
+    BUILD:      SINGLE
+    1. NEW_V4_FS_09_NOT_ONE_OUTCOME                 Single state.
+    HOLD:       Hold through the list and the sentence that refuses a single outcome.
+
+NEW_V4_FS_10_THREE_COLUMNS   (NEW)
+    TRIGGER:    Write three columns:
+    LAYOUT:     Action card. The three columns are the ask.
+    TREATMENT:  CTA
+    BUILD:      SINGLE
+    1. NEW_V4_FS_10_THREE_COLUMNS                   Single state.
+    HOLD:       Cut on 'Write three columns:' and hold through the three lines that define them.
+
+NEW_V4_FS_11_TASK_IS_NOT_THE_JOB   (NEW)
+    TRIGGER:    AI taking the task is not the same as AI taking the job.
+    LAYOUT:     Statement.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. NEW_V4_FS_11_TASK_IS_NOT_THE_JOB             Single state.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V4_WATCH_NEXT   (NEW)
+    TRIGGER:    the spoken Watch Next line
+    LAYOUT:     Watch Next card, house layout.
+    TREATMENT:  WATCH NEXT
+    BUILD:      SINGLE
+    1. NEW_V4_WATCH_NEXT                            Single state. Final card.
+    HOLD:       Cut here on the spoken Watch Next line and end the video on it.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+  One active idea at a time. When a framework is being taught,
+  one component is warm and the rest are quiet.
+
+  Establish the whole structure before activating any part of it.
+
+  No animation whose only purpose is to keep the screen moving.
+  Stillness is allowed when the viewer needs to read or think.
+
+  No fake buttons, progress bars, quiz interfaces or dashboards.
+
+  A card never moves while the presenter moves behind it.

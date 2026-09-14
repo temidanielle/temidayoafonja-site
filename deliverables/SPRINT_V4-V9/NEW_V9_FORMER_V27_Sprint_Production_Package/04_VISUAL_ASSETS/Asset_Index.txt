@@ -1,0 +1,97 @@
+==============================================================================
+NEW V9  (FORMER ROADMAP V27)  |  ASSET INDEX
+==============================================================================
+
+Transferable Skills Advice Is Missing Something
+
+13 families, 17 image states.
+PNG is 1920 x 1080. An SVG is provided where a designer may need
+to re-time or recolor the card; its text is live and the brand
+faces are embedded.
+
+------------------------------------------------------------------------------
+
+NEW_V9_FS_01_INCOMPLETE_QUESTION
+    CLASS:      NEW
+    PURPOSE:    State the argument precisely: the question is incomplete, not wrong. This is what keeps the video from reading as anti-transferability.
+    TREATMENT:  STATEMENT
+    NEW_V9_FS_01_INCOMPLETE_QUESTION.png           NEW_V9_FS_01_INCOMPLETE_QUESTION.png
+
+NEW_V9_FS_02_WHY_THE_ADVICE_HELPS
+    CLASS:      NEW
+    PURPOSE:    Give transferable-skills advice its due before complicating it.
+    TREATMENT:  STATEMENT
+    NEW_V9_FS_02_WHY_THE_ADVICE_HELPS.png          NEW_V9_FS_02_WHY_THE_ADVICE_HELPS.png
+
+NEW_V9_FS_03_FOUR_QUESTIONS
+    CLASS:      NEW
+    PURPOSE:    The audit at the centre of the video, established whole so no single question can stand for the set, then taken one at a time.
+    TREATMENT:  SEQUENCE
+    NEW_V9_FS_03_FOUR_QUESTIONS.png                NEW_V9_FS_03_FOUR_QUESTIONS.png, NEW_V9_FS_03_FOUR_QUESTIONS.svg
+    NEW_V9_FS_03A_WHAT_TRAVELS.png                 NEW_V9_FS_03A_WHAT_TRAVELS.png
+    NEW_V9_FS_03B_WHAT_DOES_NOT.png                NEW_V9_FS_03B_WHAT_DOES_NOT.png
+    NEW_V9_FS_03C_WHAT_CAN_I_PROVE.png             NEW_V9_FS_03C_WHAT_CAN_I_PROVE.png
+    NEW_V9_FS_03D_WHAT_MUST_I_RELEARN.png          NEW_V9_FS_03D_WHAT_MUST_I_RELEARN.png
+
+NEW_V9_FS_04_DEMONSTRATED_NOT_CLAIMED
+    CLASS:      NEW
+    PURPOSE:    The test for the first column, in two words.
+    TREATMENT:  COMPARISON
+    NEW_V9_FS_04_DEMONSTRATED_NOT_CLAIMED.png      NEW_V9_FS_04_DEMONSTRATED_NOT_CLAIMED.png
+
+NEW_V9_FS_05_TIED_TO_THE_OLD_CONTEXT
+    CLASS:      NEW
+    PURPOSE:    Name what does not travel, in the script's own list, without implying it was worthless.
+    TREATMENT:  SEQUENCE
+    NEW_V9_FS_05_TIED_TO_THE_OLD_CONTEXT.png       NEW_V9_FS_05_TIED_TO_THE_OLD_CONTEXT.png, NEW_V9_FS_05_TIED_TO_THE_OLD_CONTEXT.svg
+
+NEW_V9_FS_06_WHAT_CAN_ANOTHER_PERSON_SEE
+    CLASS:      NEW
+    PURPOSE:    The proof column, as the four questions the script speaks.
+    TREATMENT:  SEQUENCE
+    NEW_V9_FS_06_WHAT_CAN_ANOTHER_PERSON_SEE.png   NEW_V9_FS_06_WHAT_CAN_ANOTHER_PERSON_SEE.png
+
+NEW_V9_FS_07_WHAT_THE_NEW_CONTEXT_REQUIRES
+    CLASS:      NEW
+    PURPOSE:    Name the real requirements without treating them as insults to the viewer's experience.
+    TREATMENT:  SEQUENCE
+    NEW_V9_FS_07_WHAT_THE_NEW_CONTEXT_REQUIRES.png NEW_V9_FS_07_WHAT_THE_NEW_CONTEXT_REQUIRES.png, NEW_V9_FS_07_WHAT_THE_NEW_CONTEXT_REQUIRES.svg
+
+NEW_V9_FS_08_SORTING
+    CLASS:      NEW
+    PURPOSE:    The image the script uses instead of a suitcase.
+    TREATMENT:  SEQUENCE
+    NEW_V9_FS_08_SORTING.png                       NEW_V9_FS_08_SORTING.png
+
+NEW_V9_FS_09_FOUR_COLUMNS
+    CLASS:      NEW
+    PURPOSE:    The application, as four columns the viewer can actually draw.
+    TREATMENT:  CTA
+    NEW_V9_FS_09_FOUR_COLUMNS.png                  NEW_V9_FS_09_FOUR_COLUMNS.png
+
+NEW_V9_FS_10_BOUNDARY
+    CLASS:      NEW
+    PURPOSE:    Keep every real gate visible, which is what the thumbnail's tension is resolved by.
+    TREATMENT:  SEQUENCE
+    NEW_V9_FS_10_BOUNDARY.png                      NEW_V9_FS_10_BOUNDARY.png
+
+NEW_V9_FS_11_FLUENCY_AND_PORTABILITY
+    CLASS:      NEW
+    PURPOSE:    The hardest idea in the video, and the reason it is aimed at experienced people.
+    TREATMENT:  STATEMENT
+    NEW_V9_FS_11_FLUENCY_AND_PORTABILITY.png       NEW_V9_FS_11_FLUENCY_AND_PORTABILITY.png
+
+NEW_V9_FS_12_THE_AUDIT_AGAIN
+    CLASS:      NEW
+    PURPOSE:    Close on the full audit, so the video resolves the tension its title created rather than leaving it.
+    TREATMENT:  SEQUENCE
+    NEW_V9_FS_12_THE_AUDIT_AGAIN.png               NEW_V9_FS_12_THE_AUDIT_AGAIN.png, NEW_V9_FS_12_THE_AUDIT_AGAIN.svg
+
+NEW_V9_WATCH_NEXT
+    CLASS:      NEW
+    PURPOSE:    The destination the script speaks. Full screen and final: nothing returns to camera after it.
+    TREATMENT:  WATCH NEXT
+    NEW_V9_WATCH_NEXT.png                          NEW_V9_WATCH_NEXT.png
+    SOURCE:
+        Intended destination, spoken in the script. Confirm it is
+        publicly live before upload.

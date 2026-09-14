@@ -1,0 +1,256 @@
+==============================================================================
+NEW V4  (FORMER ROADMAP V26)  |  CAMERA AND FULL-SCREEN MAP
+==============================================================================
+
+AI Took the Task. Who Gets the Experience?
+
+Every stretch of this video is marked. CAMERA means Temidayo
+carries the moment and no graphic should appear over her.
+FULL SCREEN means the idea takes the screen, with no presenter
+moving behind it and no semi-transparent overlay.
+
+------------------------------------------------------------------------------
+
+  17 camera stretches
+  11 full-screen cues, one per card
+  746 of 826 spoken words delivered on camera
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+SECTION 1  HOOK
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  7 paragraphs, 49 words
+      Imagine you are early in your career.
+      The first draft used to be yours.
+      The first analysis used to be yours.
+      The first version was messy, slow, and sometimes wrong.
+      But doing it taught you what good looked like.
+      Now AI does the first draft in thirty seconds.
+      Great.
+
+  [ FULL SCREEN ]  NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE   (NEW)
+      TRIGGER:  But who gets the experience that used to come from doing the work?
+      STATES:   NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE
+      HOLD:     Cut on the question and hold through it. The three short lines before it stay on camera.
+
+
+------------------------------------------------------------------------------
+SECTION 2  THE TENSION
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  3 paragraphs, 35 words
+      This is the part of the AI conversation I think we need to watch closely.
+      We talk a lot about tasks disappearing.
+      We talk less about what people used to learn while doing those tasks.
+
+  [ FULL SCREEN ]  NEW_V4_FS_02_INEFFICIENT_AND_DEVELOPMENTAL   (NEW)
+      TRIGGER:  Because a task can be inefficient and still be developmental.
+      STATES:   NEW_V4_FS_02_INEFFICIENT_AND_DEVELOPMENTAL
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ FULL SCREEN ]  NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT   (NEW)
+      TRIGGER:  Repetition teaches pattern recognition.
+      STATES:   NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  5 paragraphs, 40 words
+      Fixing mistakes teaches judgment.
+      Seeing ten bad examples teaches you why the eleventh one is different.
+      If AI removes the repetition, the organization may gain speed.
+      But it still has to answer a harder question:
+      How will the person learn?
+
+
+------------------------------------------------------------------------------
+SECTION 3  NOT AN ANTI-AI ARGUMENT
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  7 paragraphs, 56 words
+      I want to be clear.
+      This is not an argument for keeping pointless work just because people used to suffer through it...
+      Some work should disappear.
+      Some automation gives people time for better work.
+      Some tools can teach faster than the old process did.
+      The question is not, "Should AI do the task?"
+      The question is:
+
+  [ FULL SCREEN ]  NEW_V4_FS_04_THE_REAL_QUESTION   (NEW)
+      TRIGGER:  "If AI does the task, what replaces the learning?"
+      STATES:   NEW_V4_FS_04_THE_REAL_QUESTION
+      HOLD:     Cut on the question. The three sentences that protect automation stay on camera before it.
+
+
+------------------------------------------------------------------------------
+SECTION 4  THREE THINGS TO WATCH
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  NEW_V4_FS_05_THREE_THINGS   (NEW)
+      TRIGGER:  I would watch three things.
+      STATES:   NEW_V4_FS_05_THREE_THINGS, NEW_V4_FS_05A_EXPOSURE, NEW_V4_FS_05B_OWNERSHIP, NEW_V4_FS_05C_FEEDBACK
+      HOLD:     One activation per spoken item. Cut back to camera for the sentence about judgment being formed.
+
+  [ CAMERA ]  8 paragraphs, 67 words
+      First: exposure.
+      Does the person still see enough examples to learn the pattern?
+      Second: ownership.
+      Do they still have to make a choice, or are they only checking whether the output looks reasonab...
+      Third: feedback.
+      When the output is wrong, do they understand why?
+      Those three things matter because judgment does not appear just because somebody has a senior ti...
+      It has to be formed somewhere.
+
+
+------------------------------------------------------------------------------
+SECTION 5  STORY
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  6 paragraphs, 68 words
+      Think about a junior analyst who used to build a model from scratch.
+      They had to decide which assumptions belonged.
+      They had to notice when a number looked strange.
+      They had to explain why the answer changed.
+      Now the tool produces the model.
+      If the analyst still has to test the assumptions, challenge the output, and defend the recommend...
+
+  [ FULL SCREEN ]  NEW_V4_FS_06_MOVED_OR_REMOVED   (NEW)
+      TRIGGER:  But if their job becomes:
+      STATES:   NEW_V4_FS_06_MOVED_OR_REMOVED
+      HOLD:     Cut on 'But if their job becomes:' and hold through the three short lines that follow.
+
+  [ CAMERA ]  3 paragraphs, 23 words
+      run the tool, copy the result, send it upward,
+      that is different.
+      They may become faster without becoming better at the underlying judgment.
+
+
+------------------------------------------------------------------------------
+SECTION 6  FOR MANAGERS
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  4 paragraphs, 18 words
+      If you manage people, this becomes a design question.
+      Do not only ask:
+      "What can we automate?"
+      Ask:
+
+  [ FULL SCREEN ]  NEW_V4_FS_07_WHAT_DID_IT_TEACH   (NEW)
+      TRIGGER:  "What did this task used to teach?"
+      STATES:   NEW_V4_FS_07_WHAT_DID_IT_TEACH
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  3 paragraphs, 41 words
+      Then decide how that learning happens now.
+      Maybe it becomes review. Maybe simulation. Maybe shadowing. Maybe deliberate practice on edge ca...
+      But somebody has to design the replacement.
+
+
+------------------------------------------------------------------------------
+SECTION 7  FOR PROFESSIONALS
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  1 paragraph, 10 words
+      If you are the person using the AI, ask yourself:
+
+  [ FULL SCREEN ]  NEW_V4_FS_08_STILL_PRACTICING   (NEW)
+      TRIGGER:  What am I still practicing?
+      STATES:   NEW_V4_FS_08_STILL_PRACTICING
+      HOLD:     Hold through the five questions and the line about future evidence.
+
+  [ CAMERA ]  5 paragraphs, 42 words
+      What am I no longer practicing?
+      What decisions are still mine?
+      What mistakes am I still learning from?
+      And can I explain the difference between what the tool produced and what I contributed?
+      That last question matters for your future evidence too.
+
+
+------------------------------------------------------------------------------
+SECTION 8  BOUNDARY
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  NEW_V4_FS_09_NOT_ONE_OUTCOME   (NEW)
+      TRIGGER:  Different jobs will answer this differently.
+      STATES:   NEW_V4_FS_09_NOT_ONE_OUTCOME
+      HOLD:     Hold through the list and the sentence that refuses a single outcome.
+
+  [ CAMERA ]  5 paragraphs, 50 words
+      In some work, AI may increase learning because people can test more scenarios faster.
+      In regulated or high-risk work, human review may remain essential.
+      In other roles, the task may truly disappear.
+      I am not claiming one outcome.
+      I am saying the learning path should not be treated as automatic.
+
+
+------------------------------------------------------------------------------
+SECTION 9  WHY THIS MATTERS LATER
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  7 paragraphs, 86 words
+      The reason I care about this is not only the junior employee.
+      It is the future senior employee.
+      Senior judgment does not arrive the day somebody gets promoted.
+      It is built from hundreds of smaller decisions made earlier.
+      If those decisions disappear from the learning path, organizations may discover the gap years la...
+      That does not mean the pipeline is doomed.
+      It means the pipeline has to be designed.
+
+
+------------------------------------------------------------------------------
+SECTION 10  AN AUDIT FOR YOUR ROLE
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  1 paragraph, 14 words
+      You can do a quick audit of one task AI now helps you with.
+
+  [ FULL SCREEN ]  NEW_V4_FS_10_THREE_COLUMNS   (NEW)
+      TRIGGER:  Write three columns:
+      STATES:   NEW_V4_FS_10_THREE_COLUMNS
+      HOLD:     Cut on 'Write three columns:' and hold through the three lines that define them.
+
+  [ CAMERA ]  7 paragraphs, 65 words
+      Before AI. With AI. Still mine.
+      Before AI, what did you personally have to notice or decide?
+      With AI, what does the tool now do?
+      Still mine, what judgment, verification, or accountability remains with you?
+      If the third column is rich, good.
+      If it is almost empty, ask where the learning will come from next.
+      That is the conversation I want more teams to have.
+
+
+------------------------------------------------------------------------------
+SECTION 11  CLOSE
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  NEW_V4_FS_11_TASK_IS_NOT_THE_JOB   (NEW)
+      TRIGGER:  AI taking the task is not the same as AI taking the job.
+      STATES:   NEW_V4_FS_11_TASK_IS_NOT_THE_JOB
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  6 paragraphs, 47 words
+      But there is another possibility worth watching.
+      AI can take the part of the work where people used to become good enough to do the harder work l...
+      If that happens, the question is not only:
+      Who does the task now?
+      It is:
+      Who gets the experience?
+
+
+------------------------------------------------------------------------------
+SECTION 12  WATCH NEXT
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  1 paragraph, 35 words
+      And if AI is already doing more of your work, the next question is what part of the result you c...
+
+
+------------------------------------------------------------------------------
+WATCH NEXT  |  FULL SCREEN AND FINAL
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  NEW_V4_WATCH_NEXT
+      SPOKEN LINE: And if AI is already doing more of your work, the next question is what part of the result you can still honestly claim. I made a video about exactly that. Watch that one next.
+      DESTINATION: How to Prove Your Value When AI Does More of the Task
+      Nothing returns to camera after this card.

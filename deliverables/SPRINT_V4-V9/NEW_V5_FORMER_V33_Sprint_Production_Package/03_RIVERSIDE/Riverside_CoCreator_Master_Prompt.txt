@@ -1,0 +1,429 @@
+==============================================================================
+NEW V5  (FORMER ROADMAP V33)  |  RIVERSIDE CO-CREATOR MASTER PROMPT
+==============================================================================
+
+If Your Company Needs You but Won’t Grow You
+Thumbnail: USEFUL. STILL STUCK.
+Generated Sunday, September 13, 2026 | 8:00 PM CT
+
+692 spoken words. 17 camera stretches against 10 full-screen cues,
+and 604 of the spoken words are delivered on camera.
+This script carries no timing markers, so nothing in it can be
+mistaken for a runtime, a chapter or an SRT time.
+
+------------------------------------------------------------------------------
+
+HOW TO USE THIS
+
+  Work down the spine. Where it says CAMERA, stay on Temidayo
+  for the whole stretch. Where it says FULL SCREEN, cut to the
+  named asset on the exact trigger sentence and follow the
+  reveal order. The copy on each card is final; do not retype
+  it, and do not add teaching that is not in the script.
+
+------------------------------------------------------------------------------
+
+THIS VIDEO SPECIFICALLY
+
+  Do not imply that being needed is inherently bad, and do not imply
+  the organization owes an automatic promotion. The tension is whether
+  dependence is increasing while portable growth is not.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+  CAMERA-LED
+      Story, recognition, consequence, tension and interpretation stay on
+      Temidayo. Do not cover a strong human moment with a graphic because
+      an asset exists. These scripts are short and carry few cues on
+      purpose.
+
+  TRUE FULL SCREEN
+      Frameworks, comparisons, meaningful evidence and multi-step teaching
+      take the whole screen. No presenter moving behind them, no corner
+      placement, no semi-transparent overlay for substantive teaching.
+
+  ONE ACTIVE IDEA AT A TIME
+      Establish a structure whole, then activate one component, teach it,
+      and move on. Never leave several components competing while one is
+      explained.
+
+  SEQUENTIAL REVEALS, NOT BUTTONS
+      A numbered point is a reading order. YouTube is not interactive and
+      nothing should look clickable.
+
+  RESTRAINT
+      No constant zooming, no pulsing the frame, no accent on every
+      reveal, no animating every line. Stillness is allowed when the
+      viewer needs to read.
+
+  CAPTIONS
+      No burned-in captions in the long-form video. Generate the SRT in
+      Riverside after the final edit and verify it against the final
+      export.
+
+  WATCH NEXT
+      Full screen and final. There is no return to camera after it. The
+      spoken line that introduces it is the script's own and was not
+      changed.
+
+------------------------------------------------------------------------------
+
+THE SPINE
+
+
+------------------------------------------------------------------------------
+SECTION 1  HOOK
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 6 paragraphs, 46 words.
+  FROM:  They call you when something breaks.
+  TO:    That is a painful place to be:
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  needed by the company, but not necessarily grown by it.
+  PURPOSE:
+      Name the painful position in the script's own two lines, before any
+      analysis of it.
+  LAYOUT:
+      Two sides of one position.
+  REVEAL ORDER:
+      1. ASSET: NEW_V5_FS_01_NEEDED_NOT_GROWN.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Cut on the two-line paragraph and hold through it.
+  SOUND:
+      One accent.
+
+
+------------------------------------------------------------------------------
+SECTION 2  THE TRAP
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 5 paragraphs, 54 words.
+  FROM:  Being useful can feel like career security.
+  TO:    That does not mean they are plotting against you.
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  It means your value to the current role and your value to your future are not always aligned.
+  PURPOSE:
+      Protect the manager and the organization while keeping the tension
+      real.
+  LAYOUT:
+      Statement.
+  REVEAL ORDER:
+      1. ASSET: NEW_V5_FS_02_NOT_ALIGNED.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold through the sentence. The line that protects the manager is on
+      the card, not only on camera.
+  SOUND:
+      One restrained accent.
+
+
+------------------------------------------------------------------------------
+SECTION 3  WHAT IT LOOKS LIKE
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 3 words.
+  FROM:  Watch for patterns.
+  TO:    Watch for patterns.
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  More rescue work.
+  PURPOSE:
+      The pattern, as the script lists it, with the limit attached.
+  LAYOUT:
+      Short rows, all visible, with the one-moment limit on the card.
+  REVEAL ORDER:
+      1. ASSET: NEW_V5_FS_03_WATCH_FOR_PATTERNS.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Cut on 'Watch for patterns.' and hold through the list and the two
+      lines that close it.
+  SOUND:
+      One accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 9 paragraphs, 43 words.
+  FROM:  More knowledge transfer.
+  TO:    A pattern does.
+
+
+------------------------------------------------------------------------------
+SECTION 4  THE QUESTION
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 1 words.
+  FROM:  Ask:
+  TO:    Ask:
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  What is this organization building in me beyond my ability to keep this role running?
+  PURPOSE:
+      The question the video wants the viewer to hold, in full.
+  LAYOUT:
+      Statement.
+  REVEAL ORDER:
+      1. ASSET: NEW_V5_FS_04_THE_QUESTION.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold through the two sentences that follow, which protect the
+      employer.
+  SOUND:
+      One restrained accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 2 paragraphs, 27 words.
+  FROM:  That can feel like a strange question because employers do not o...
+  TO:    But you still need to know the answer for yourself.
+
+
+------------------------------------------------------------------------------
+SECTION 5  STORY
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 7 paragraphs, 59 words.
+  FROM:  Imagine you are the only person who knows a process end to end.
+  TO:    You know which workaround saves the month.
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  That can make you indispensable and less portable at the same time.
+  PURPOSE:
+      The cost of depth in one system, stated without judgment.
+  LAYOUT:
+      Two sides of the same fact.
+  REVEAL ORDER:
+      1. ASSET: NEW_V5_FS_05_INDISPENSABLE_AND_LESS_PORTABLE.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold until the sentence lands, then cut back.
+  SOUND:
+      One accent.
+
+
+------------------------------------------------------------------------------
+SECTION 6  WHAT TO ASK FOR
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 7 words.
+  FROM:  Do not only ask for a promotion.
+  TO:    Do not only ask for a promotion.
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  Ask for developmental movement.
+  PURPOSE:
+      What to ask for, in the script's own list.
+  LAYOUT:
+      Short rows, all visible.
+  REVEAL ORDER:
+      1. ASSET: NEW_V5_FS_06_ASK_FOR_DEVELOPMENT.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold until the sentence lands, then cut back.
+  SOUND:
+      One accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 8 paragraphs, 71 words.
+  FROM:  A new decision.
+  TO:    That is a real conversation.
+
+
+------------------------------------------------------------------------------
+SECTION 7  BOUNDARY
+------------------------------------------------------------------------------
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  The answer may still be no.
+  PURPOSE:
+      Keep the boundary visible: the video does not promise the ask works.
+  LAYOUT:
+      Short rows, all visible.
+  REVEAL ORDER:
+      1. ASSET: NEW_V5_FS_07_THE_ANSWER_MAY_BE_NO.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold until the sentence lands, then cut back.
+  SOUND:
+      No accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 6 paragraphs, 35 words.
+  FROM:  There may be no budget.
+  TO:    That is information too.
+
+
+------------------------------------------------------------------------------
+SECTION 8  WHEN TO LOOK OUTSIDE
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 7 paragraphs, 51 words.
+  FROM:  If you keep asking for development and the only return is more o...
+  TO:    A clearer read on what travels.
+
+
+------------------------------------------------------------------------------
+SECTION 9  THE DIFFERENCE BETWEEN DEPENDENCE AND DEVELOPMENT
+------------------------------------------------------------------------------
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  Dependence sounds like:
+  PURPOSE:
+      The central distinction of the video, in the two sentences the
+      script uses to voice it.
+  LAYOUT:
+      Side-by-side contrast, quoting both.
+  REVEAL ORDER:
+      1. ASSET: NEW_V5_FS_08_DEPENDENCE_VS_DEVELOPMENT.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Cut on 'Dependence sounds like:' and hold through both quotations
+      and the line that says an assignment can contain both.
+  SOUND:
+      One accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 8 paragraphs, 68 words.
+  FROM:  "We cannot do this without you."
+  TO:    But the next machine is being built somewhere else.
+
+
+------------------------------------------------------------------------------
+SECTION 10  THE REVIEW POINT
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 2 paragraphs, 21 words.
+  FROM:  If you take on extra scope because the company needs you, set a...
+  TO:    "Let's revisit this in 90 days."
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  At that review, ask:
+  PURPOSE:
+      The practical instrument: what to ask at a review point.
+  LAYOUT:
+      Questions card.
+  REVEAL ORDER:
+      1. ASSET: NEW_V5_FS_09_REVIEW_POINT.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Cut on 'At that review, ask:' and hold through the four questions.
+  SOUND:
+      One accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 3 paragraphs, 51 words.
+  FROM:  What became permanent? What did I learn? What authority changed?...
+  TO:    And once the organization has adjusted to you carrying it, it ca...
+
+
+------------------------------------------------------------------------------
+SECTION 11  CLOSE
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 3 paragraphs, 25 words.
+  FROM:  Being needed feels good.
+  TO:    So if your company keeps proving how much it needs you, ask one...
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  Is it also helping you become more capable, more visible, or more portable?
+  PURPOSE:
+      The closing question, which is the ask.
+  LAYOUT:
+      Action card.
+  REVEAL ORDER:
+      1. ASSET: NEW_V5_FS_10_CTA.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Cut on the question and hold to the end of the spoken line.
+  SOUND:
+      One accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 10 words.
+  FROM:  If not, usefulness may be the reason you are stuck.
+  TO:    If not, usefulness may be the reason you are stuck.
+
+
+------------------------------------------------------------------------------
+SECTION 12  WATCH NEXT
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 32 words.
+  FROM:  And if you are carrying more because people know you will get it...
+  TO:    And if you are carrying more because people know you will get it...
+
+
+------------------------------------------------------------------------------
+
+WATCH NEXT  |  FULL SCREEN AND FINAL
+
+  ASSET:        NEW_V5_WATCH_NEXT.png
+  SPOKEN LINE:  And if you are carrying more because people know you will get it done, watch this next. I will show you how to tell whether that extra responsibility is actually career growth.
+  DESTINATION:  It Took Me Years to Stop Mistaking More Work for Career Growth
+  The spoken wording above is the script's own and was not
+  changed. Cut to the card on that line and end the video on it.
+  Nothing returns to camera afterward.
+
+  Before upload, confirm the destination is publicly live. If it
+  is not, the publishing materials carry an EDITORIAL FALLBACK
+  REQUIRED flag for approval. Do not invent a fallback here.
+
+------------------------------------------------------------------------------
+
+AFTER THE EDIT
+
+  Generate the SRT in Riverside and verify it against the final
+  export. Create chapters from real export timing. Neither exists
+  in this package and neither should be invented before the cut.

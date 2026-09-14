@@ -1,0 +1,285 @@
+==============================================================================
+NEW V6  (FORMER ROADMAP V22)  |  CAMERA AND FULL-SCREEN MAP
+==============================================================================
+
+Decode a Job Description in 10 Minutes
+
+Every stretch of this video is marked. CAMERA means Temidayo
+carries the moment and no graphic should appear over her.
+FULL SCREEN means the idea takes the screen, with no presenter
+moving behind it and no semi-transparent overlay.
+
+------------------------------------------------------------------------------
+
+  23 camera stretches
+  18 full-screen cues, one per card
+  754 of 1006 spoken words delivered on camera
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+SECTION 1  HOOK
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  NEW_V6_FS_01_TITLE_ONLY   (REUSE)
+      TRIGGER:  Senior Divisional Strategy Consultant, Governance.
+      STATES:   NEW_V6_FS_01_TITLE_ONLY
+      HOLD:     Hold four to five seconds on the title alone. Do not reveal the range yet.
+
+  [ CAMERA ]  2 paragraphs, 16 words
+      Read that title and tell me what you think the person actually owns.
+      Senior. Strategy. Governance.
+
+  [ FULL SCREEN ]  NEW_V6_FS_02_THE_CONTRADICTION   (REUSE)
+      TRIGGER:  Now here is the part that should slow you down. The bottom of the published range was $61,500, and one of the required qualifications was the ability to accept direction and feedback.
+      STATES:   NEW_V6_FS_02A_FLOOR, NEW_V6_FS_02B_FEEDBACK
+      HOLD:     Both states sit inside one spoken sentence. Return to camera on 'That is why I do not start with the title anymore.'
+
+  [ CAMERA ]  2 paragraphs, 36 words
+      That is why I do not start with the title anymore.
+      If you are looking at a role and trying to decide whether you fit, the title can be the least us...
+
+
+------------------------------------------------------------------------------
+SECTION 2  THE PROMISE
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  NEW_V6_FS_03_THE_SAMPLE   (REUSE)
+      TRIGGER:  I read 15 postings from 11 employers for this research.
+      STATES:   NEW_V6_FS_03_THE_SAMPLE
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  1 paragraph, 31 words
+      I want to show you the four things I look for, and I want to do it fast enough that you can use ...
+
+  [ FULL SCREEN ]  NEW_V6_FS_05_PARP   (REUSE)
+      TRIGGER:  The four things are:
+      STATES:   NEW_V6_FS_05_PARP_FRAMEWORK
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  2 paragraphs, 17 words
+      Problem. Authority. Proof. Real gap.
+      By the end, you should be able to answer three different questions:
+
+  [ FULL SCREEN ]  NEW_V6_FS_04_THREE_QUESTIONS   (REUSE)
+      TRIGGER:  Could I do this work? Can I prove relevant evidence? Do I meet the stated gates?
+      STATES:   NEW_V6_FS_04A_COULD_I_DO_IT, NEW_V6_FS_04B_CAN_I_PROVE_IT, NEW_V6_FS_04C_DO_I_MEET_THE_GATES
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  1 paragraph, 6 words
+      Those are not the same question.
+
+
+------------------------------------------------------------------------------
+SECTION 3  1. PROBLEM
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  2 paragraphs, 17 words
+      First, ignore the title for a moment and ask:
+      What can this organization not do right now?
+
+  [ FULL SCREEN ]  NEW_V6_FS_06_HCSC_WALKTHROUGH   (REUSE)
+      TRIGGER:  In that Senior Divisional Strategy Consultant role, the work was not "be strategic." The division needed a consistent way to evaluate opportunities, track them, and report on them.
+      STATES:   NEW_V6_FS_06A_PROBLEM, NEW_V6_FS_06B_AUTHORITY, NEW_V6_FS_06C_PROOF
+      HOLD:     The three states are spread across the PROBLEM, AUTHORITY and PROOF sections. Cut away to camera between them.
+
+  [ CAMERA ]  2 paragraphs, 27 words
+      That tells you what the job exists to fix.
+      When you can name the problem, you stop matching yourself to labels and start matching yourself ...
+
+
+------------------------------------------------------------------------------
+SECTION 4  2. AUTHORITY
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  NEW_V6_FS_08_READ_THE_VERBS   (REUSE)
+      TRIGGER:  Next, read the verbs.
+      STATES:   NEW_V6_FS_08_READ_THE_VERBS
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  6 paragraphs, 67 words
+      This is where job descriptions become much more honest.
+      Does the person govern? Decide? Negotiate? Recommend? Influence? Support? Execute?
+      In that same posting, one of the key verbs was "supporting." Supporting the development of divis...
+      That is different from setting the strategy.
+      This does not make the role unimportant. It tells you where the authority appears to sit.
+      Here is another example from the same employer.
+
+  [ FULL SCREEN ]  NEW_V6_FS_09_PREDEFINED_DECISIONS   (REUSE)
+      TRIGGER:  Director of Enterprise Resilience. The range went to just under $248,000.
+      STATES:   NEW_V6_FS_09A_SAME_COMPANY, NEW_V6_FS_09B_PREDEFINED
+      HOLD:     The defense of the role is delivered on camera, not on a card.
+
+  [ CAMERA ]  6 paragraphs, 75 words
+      You might assume a Director at that level owns every crisis decision.
+      But the posting said the person would work with executive leadership to make quick decisions bas...
+      That matters.
+      It describes a serious role under pressure, but it also tells you that some of the most importan...
+      So do not ask only, "Is this senior?"
+      Ask, "What is this person actually trusted to decide?"
+
+
+------------------------------------------------------------------------------
+SECTION 5  3. PROOF
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  7 paragraphs, 90 words
+      Third, ask what evidence would make this employer believe you can do the work.
+      Not what skills you can list.
+      What would they need to see?
+      In the first posting, the evidence included strategic planning or market research, business anal...
+      That last one matters because it tells you the role may be much more hands-on than the title sug...
+      Proof is where you compare the posting with your actual record.
+      What have you built? What have you decided? What have you improved? What can you show?
+
+
+------------------------------------------------------------------------------
+SECTION 6  4. REAL GAP
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  4 paragraphs, 45 words
+      Then ask the question people sometimes skip because they want the move to work:
+      What is the real gap?
+      A real gap is not just something you have not done before.
+      It is a requirement that is specific enough to matter in this employer's world.
+
+  [ FULL SCREEN ]  NEW_V6_FS_17_REAL_GAP   (REUSE)
+      TRIGGER:  One posting in the sample was unusually direct. GiveDirectly was hiring a Director of Global Talent Acquisition and said candidates whose recruiting experience was exclusively in one geographic context were unlikely to be a strong fit.
+      STATES:   NEW_V6_FS_17A_GEOGRAPHIC, NEW_V6_FS_17B_TIME_ZONE
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  4 paragraphs, 50 words
+      That is a real boundary.
+      The same posting also required at least three hours of overlap with East Africa Time.
+      That is not a skill gap at all. It is an operating constraint.
+      You can be good at the work and still decide the role does not fit your life.
+
+
+------------------------------------------------------------------------------
+SECTION 7  THE TITLE TEST
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  2 paragraphs, 24 words
+      Now let me show you why I keep saying not to trust the title.
+      I looked at two Director roles in two different industries.
+
+  [ FULL SCREEN ]  NEW_V6_FS_10_DIRECTOR_COMPARE   (REUSE)
+      TRIGGER:  One was Director, Talent Management. The other was Director of Strategic Initiatives.
+      STATES:   NEW_V6_FS_10A_SAME_WORD, NEW_V6_FS_10B_SCOPE
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  4 paragraphs, 52 words
+      The experience minimums were in roughly the same range.
+      But the jobs were not the same height, the same room, or the same kind of authority.
+      One focused heavily on operational execution and reported to a Senior Director.
+      The other ran a transformation office and partnered directly with a Chief Transformation Officer...
+
+  [ FULL SCREEN ]  NEW_V6_FS_12_TITLE_TEST   (REUSE)
+      TRIGGER:  Same broad level word.
+      STATES:   NEW_V6_FS_12A_SAME_WORD, NEW_V6_FS_12B_DIFFERENT_WORK, NEW_V6_FS_12C_DIFFERENT_AUTHORITY, NEW_V6_FS_12D_DIFFERENT_CONTEXT
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  4 paragraphs, 25 words
+      Different work.
+      Different authority.
+      Different context.
+      That is why a title can help you find a posting, but it cannot finish the read for you.
+
+
+------------------------------------------------------------------------------
+SECTION 8  THE REVERSE
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  2 paragraphs, 14 words
+      And sometimes the opposite happens.
+      A title can sound less impressive than the work.
+
+  [ FULL SCREEN ]  NEW_V6_FS_13_ACRONYM_WALL   (REUSE)
+      TRIGGER:  One posting was called Member of Technical Staff, Governance Risk Compliance.
+      STATES:   NEW_V6_FS_13A_UNFAMILIAR_TITLE, NEW_V6_FS_13B_ACRONYM_WALL
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  2 paragraphs, 18 words
+      The title tells you almost nothing about seniority.
+      The description was full of federal compliance language and acronyms.
+
+  [ FULL SCREEN ]  NEW_V6_FS_14_AUTHORITY_POSTURES   (REUSE)
+      TRIGGER:  But underneath that, the person was expected to lead authorization work, advise leadership, coordinate across teams, and operate as a subject-matter expert.
+      STATES:   NEW_V6_FS_14_AUTHORITY_POSTURES, NEW_V6_FS_14A_LEADS, NEW_V6_FS_14B_ADVISES, NEW_V6_FS_14C_COORDINATES, NEW_V6_FS_14D_SUBJECT_MATTER_EXPERT
+      HOLD:     One activation per clause inside the one spoken sentence.
+
+  [ FULL SCREEN ]  NEW_V6_FS_15_CEILING   (REUSE)
+      TRIGGER:  The published range went from $180,000 to $440,000.
+      STATES:   NEW_V6_FS_15A_RANGE, NEW_V6_FS_15B_IN_THE_SAMPLE
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  1 paragraph, 15 words
+      The least informative title in the sample sat on the highest published ceiling I found.
+
+  [ FULL SCREEN ]  NEW_V6_FS_16_READ_THE_WORK   (REUSE)
+      TRIGGER:  So if a title confuses you, do not automatically skip the job.
+      STATES:   NEW_V6_FS_16_READ_THE_WORK
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  1 paragraph, 3 words
+      Read the work.
+
+
+------------------------------------------------------------------------------
+SECTION 9  BOUNDARY
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  NEW_V6_FS_18_WHAT_IT_WILL_NOT_DO   (REUSE)
+      TRIGGER:  This method will not tell you who will get hired.
+      STATES:   NEW_V6_FS_18_WHAT_IT_WILL_NOT_DO
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  5 paragraphs, 58 words
+      It cannot tell you whether the authority described on paper exists in practice.
+      It cannot tell you whether a manager would flex on a requirement, whether bias will shape the de...
+      Reading better does not guarantee a better outcome.
+      It gives you a cleaner read.
+      Problem. Authority. Proof. Real gap.
+
+  [ FULL SCREEN ]  NEW_V6_FS_19_FOUR_THINGS   (REUSE)
+      TRIGGER:  That is enough to tell you what may travel, what may not, what you can prove, and what you would still need to learn.
+      STATES:   NEW_V6_FS_19_FOUR_THINGS
+      HOLD:     Hold until the sentence lands, then cut back.
+
+
+------------------------------------------------------------------------------
+SECTION 10  CTA
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  2 paragraphs, 14 words
+      Take one job description you are actually considering.
+      Do not start with the title.
+
+  [ FULL SCREEN ]  NEW_V6_FS_20_CTA   (REUSE)
+      TRIGGER:  Write four lines:
+      STATES:   NEW_V6_FS_20A_WRITE_FOUR_LINES, NEW_V6_FS_20B_STRONGEST_VERB
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  3 paragraphs, 26 words
+      Problem. Authority. Proof. Real gap.
+      Then find the strongest verb in the posting.
+      That verb may tell you more about the job than the title does.
+
+
+------------------------------------------------------------------------------
+SECTION 11  WATCH NEXT
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  1 paragraph, 28 words
+      Once you know how to read what the role actually requires, the next question is whether your own...
+
+
+------------------------------------------------------------------------------
+WATCH NEXT  |  FULL SCREEN AND FINAL
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  NEW_V6_WATCH_NEXT
+      SPOKEN LINE: Once you know how to read what the role actually requires, the next question is whether your own experience gives you the proof for it. Watch this next.
+      DESTINATION: Turn One Accomplishment Into Proof in 10 Minutes
+      Nothing returns to camera after this card.

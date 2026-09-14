@@ -1,0 +1,515 @@
+==============================================================================
+NEW V7  (FORMER ROADMAP V24)  |  RIVERSIDE CO-CREATOR MASTER PROMPT
+==============================================================================
+
+I’ve Seen Who Gets the Bigger Role and Why
+Thumbnail: THEY CHOSE SOMEONE ELSE
+Generated Sunday, September 13, 2026 | 8:00 PM CT
+
+966 spoken words. 21 camera stretches against 13 full-screen cues,
+and 810 of the spoken words are delivered on camera.
+This script carries no timing markers, so nothing in it can be
+mistaken for a runtime, a chapter or an SRT time.
+
+------------------------------------------------------------------------------
+
+HOW TO USE THIS
+
+  Work down the spine. Where it says CAMERA, stay on Temidayo
+  for the whole stretch. Where it says FULL SCREEN, cut to the
+  named asset on the exact trigger sentence and follow the
+  reveal order. The copy on each card is final; do not retype
+  it, and do not add teaching that is not in the script.
+
+------------------------------------------------------------------------------
+
+THIS VIDEO SPECIFICALLY
+
+  Temidayo's experience is warrant, not destination. Do not turn this
+  into why she succeeded. The viewer remains the subject, and bias,
+  politics, sponsorship, access, timing, manager behavior and
+  organizational constraint stay visible.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+  CAMERA-LED
+      Story, recognition, consequence, tension and interpretation stay on
+      Temidayo. Do not cover a strong human moment with a graphic because
+      an asset exists. These scripts are short and carry few cues on
+      purpose.
+
+  TRUE FULL SCREEN
+      Frameworks, comparisons, meaningful evidence and multi-step teaching
+      take the whole screen. No presenter moving behind them, no corner
+      placement, no semi-transparent overlay for substantive teaching.
+
+  ONE ACTIVE IDEA AT A TIME
+      Establish a structure whole, then activate one component, teach it,
+      and move on. Never leave several components competing while one is
+      explained.
+
+  SEQUENTIAL REVEALS, NOT BUTTONS
+      A numbered point is a reading order. YouTube is not interactive and
+      nothing should look clickable.
+
+  RESTRAINT
+      No constant zooming, no pulsing the frame, no accent on every
+      reveal, no animating every line. Stillness is allowed when the
+      viewer needs to read.
+
+  CAPTIONS
+      No burned-in captions in the long-form video. Generate the SRT in
+      Riverside after the final edit and verify it against the final
+      export.
+
+  WATCH NEXT
+      Full screen and final. There is no return to camera after it. The
+      spoken line that introduces it is the script's own and was not
+      changed.
+
+------------------------------------------------------------------------------
+
+THE SPINE
+
+
+------------------------------------------------------------------------------
+SECTION 1  HOOK
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 4 paragraphs, 35 words.
+  FROM:  I have sat in rooms where two people were both capable, both res...
+  TO:    The other person did not.
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  And the difference was not always who worked harder.
+  PURPOSE:
+      Name the observation the video is built on, without yet explaining
+      it.
+  LAYOUT:
+      Statement.
+  REVEAL ORDER:
+      1. ASSET: NEW_V7_FS_01_NOT_ALWAYS_WHO_WORKED_HARDER.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Cut on the sentence. The scene before it stays on camera.
+  SOUND:
+      One restrained accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 3 paragraphs, 36 words.
+  FROM:  That is what I want to talk about.
+  TO:    Sometimes that is not the right read.
+
+
+------------------------------------------------------------------------------
+SECTION 2  THE SCENE
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 2 paragraphs, 41 words.
+  FROM:  A bigger assignment usually arrives before the title does.
+  TO:    A leader needs somebody to take over a messy project. A team nee...
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  At that point, people are not only asking, "Who is good?"
+  PURPOSE:
+      Separate the two questions a room is actually asking, which is the
+      distinction the whole video rests on.
+  LAYOUT:
+      Side-by-side contrast, quoting both.
+  REVEAL ORDER:
+      1. ASSET: NEW_V7_FS_02_TWO_QUESTIONS.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Cut on 'At that point, people are not only asking' and hold through
+      'Those are different questions.'
+  SOUND:
+      One accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 2 paragraphs, 14 words.
+  FROM:  They are asking, "Who do I trust at this level?"
+  TO:    Those are different questions.
+
+
+------------------------------------------------------------------------------
+SECTION 3  WHAT PEOPLE USUALLY DO
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 4 paragraphs, 45 words.
+  FROM:  When someone wants the bigger role, the default response is ofte...
+  TO:    But it does not automatically show the kind of readiness the lar...
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  You can become more useful without becoming easier to picture at the next level.
+  PURPOSE:
+      The trap for dependable people, in the script's own sentence.
+  LAYOUT:
+      Statement.
+  REVEAL ORDER:
+      1. ASSET: NEW_V7_FS_03_USEFUL_NOT_PICTURED.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold until the sentence lands, then cut back.
+  SOUND:
+      One restrained accent.
+
+
+------------------------------------------------------------------------------
+SECTION 4  THE FOUR THINGS I LOOK FOR
+------------------------------------------------------------------------------
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  When I have seen larger scope get handed out, four things tend to matter.
+  PURPOSE:
+      Establish the four, then take them one at a time, with the limit on
+      the card from the first frame so it never reads as a formula.
+  LAYOUT:
+      Framework established whole, then activated one component at a time.
+  REVEAL ORDER:
+      1. ASSET: NEW_V7_FS_04_FOUR_THINGS.png
+         Establish on 'four things tend to matter.'
+      2. ASSET: NEW_V7_FS_04A_VISIBLE_PROOF.png
+         Activate 1 on 'First: visible proof.'
+      3. ASSET: NEW_V7_FS_04B_JUDGMENT.png
+         Activate 2 on 'Second: judgment.'
+      4. ASSET: NEW_V7_FS_04C_TRUST.png
+         Activate 3 on 'Third: trust.'
+      5. ASSET: NEW_V7_FS_04D_SPONSORSHIP.png
+         Activate 4 on 'Fourth: sponsorship and access.'
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      One activation per spoken item. Hold the fourth through the lines
+      about bias, relationships and manager support.
+  SOUND:
+      One accent on establish. None on the activations.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 13 paragraphs, 115 words.
+  FROM:  Not as a guaranteed formula.
+  TO:    That last one matters because careers do not happen in a vacuum.
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  Bias matters. Relationships matter. Manager support matters. Who gets access to developmental work matters.
+  PURPOSE:
+      Keep the boundary visible: advancement is not reduced to merit, and
+      the card says so in the script's own list.
+  LAYOUT:
+      Short rows, all visible.
+  REVEAL ORDER:
+      1. ASSET: NEW_V7_FS_05_NOT_MERIT.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold through the list and the sentence that refuses to reduce this
+      to merit.
+  SOUND:
+      No accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 10 words.
+  FROM:  So I do not want to reduce this to merit.
+  TO:    So I do not want to reduce this to merit.
+
+
+------------------------------------------------------------------------------
+SECTION 5  VISIBLE PROOF
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 5 paragraphs, 61 words.
+  FROM:  Visible proof is where dependable people can get stuck.
+  TO:    The problem is not that you have done nothing.
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  The problem may be that the evidence people see is evidence for the role you already have.
+  PURPOSE:
+      The precise reason dependable work does not read as readiness.
+  LAYOUT:
+      Statement.
+  REVEAL ORDER:
+      1. ASSET: NEW_V7_FS_06_EVIDENCE_FOR_WHICH_ROLE.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Cut on the sentence and hold through it. The line protecting the
+      viewer's work is on the card.
+  SOUND:
+      One restrained accent.
+
+
+------------------------------------------------------------------------------
+SECTION 6  WHAT TO DO WITH THIS
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 2 paragraphs, 16 words.
+  FROM:  If you want a bigger role, do not only ask for "more responsibil...
+  TO:    Ask what kind.
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  What decisions will I get to make? What level of stakeholder will I work with? What problem will I own end to end? What evidence would show readiness for the next level?
+  PURPOSE:
+      What to ask for instead of more responsibility.
+  LAYOUT:
+      Questions card.
+  REVEAL ORDER:
+      1. ASSET: NEW_V7_FS_07_ASK_WHAT_KIND.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Cut on 'Ask what kind.' and hold through the three questions.
+  SOUND:
+      One accent.
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  That changes the conversation from:
+  PURPOSE:
+      Show the shift the question produces, in the script's own two lines.
+  LAYOUT:
+      Side-by-side contrast, quoting both.
+  REVEAL ORDER:
+      1. ASSET: NEW_V7_FS_08_CHANGES_THE_CONVERSATION.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold until the sentence lands, then cut back.
+  SOUND:
+      One accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 3 paragraphs, 15 words.
+  FROM:  "Can I help more?"
+  TO:    "What would let me practice the next level of work?"
+
+
+------------------------------------------------------------------------------
+SECTION 7  THE CONVERSATION
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 6 paragraphs, 72 words.
+  FROM:  You can say something like:
+  TO:    "What kind of decision?" "What kind of project?" "What kind of r...
+
+
+------------------------------------------------------------------------------
+SECTION 8  THE BOUNDARY
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 2 paragraphs, 21 words.
+  FROM:  This does not mean that if you collect the right evidence, you w...
+  TO:    Organizations are not clean systems.
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  There can be politics, bias, favoritism, timing, budget limits, headcount rules, or a manager who simply does not want to let a strong person move.
+  PURPOSE:
+      Name what the organization may simply not give, so the video cannot
+      be read as work-harder advice.
+  LAYOUT:
+      Short rows, all visible.
+  REVEAL ORDER:
+      1. ASSET: NEW_V7_FS_09_THE_BOUNDARY.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold until the sentence lands, then cut back.
+  SOUND:
+      No accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 2 paragraphs, 20 words.
+  FROM:  You need to know that too.
+  TO:    The point of reading the situation is not to blame yourself for...
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  It is to separate:
+  PURPOSE:
+      The separation the whole boundary section exists to produce.
+  LAYOUT:
+      Three short rows, all visible.
+  REVEAL ORDER:
+      1. ASSET: NEW_V7_FS_10_SEPARATE_THREE_THINGS.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Cut on 'It is to separate:' and hold through the three lines.
+  SOUND:
+      One accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 20 words.
+  FROM:  what you can build, what you can ask for, and what the organizat...
+  TO:    what you can build, what you can ask for, and what the organizat...
+
+
+------------------------------------------------------------------------------
+SECTION 9  HOW TO READ YOUR OWN SITUATION
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 2 paragraphs, 31 words.
+  FROM:  Here is a simple way to read your own position before the next o...
+  TO:    Write down the last three times you were trusted with something...
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  For each one, ask:
+  PURPOSE:
+      The instrument: four questions against the last three times the
+      viewer was trusted with something bigger.
+  LAYOUT:
+      Questions card.
+  REVEAL ORDER:
+      1. ASSET: NEW_V7_FS_11_READ_YOUR_OWN_SITUATION.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Cut on 'For each one, ask:' and hold through the four questions.
+  SOUND:
+      One accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 21 words.
+  FROM:  What problem was I trusted with? What decision was mine? Who saw...
+  TO:    What problem was I trusted with? What decision was mine? Who saw...
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  Now look for the missing line.
+  PURPOSE:
+      Name the diagnostic the exercise produces.
+  LAYOUT:
+      Statement.
+  REVEAL ORDER:
+      1. ASSET: NEW_V7_FS_12_THE_MISSING_LINE.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold through the four 'maybe' lines that follow.
+  SOUND:
+      One restrained accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 5 paragraphs, 59 words.
+  FROM:  Maybe you have strong proof, but nobody senior has seen it.
+  TO:    That is useful because it gives you something concrete to work o...
+
+
+------------------------------------------------------------------------------
+SECTION 10  WHAT NOT TO DO
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 6 paragraphs, 76 words.
+  FROM:  Do not turn this into performing readiness all day.
+  TO:    That is a very different strategy from simply doing more.
+
+
+------------------------------------------------------------------------------
+SECTION 11  CLOSE
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 21 words.
+  FROM:  If a bigger role keeps going to someone else, do not only ask, "...
+  TO:    If a bigger role keeps going to someone else, do not only ask, "...
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  Ask:
+  PURPOSE:
+      The closing ask, in the three questions the script speaks.
+  LAYOUT:
+      Action card.
+  REVEAL ORDER:
+      1. ASSET: NEW_V7_FS_13_CTA.png
+         Single state.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Cut on 'Ask:' and hold to the end of the spoken line.
+  SOUND:
+      One accent.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 4 paragraphs, 59 words.
+  FROM:  What proof of the next level is visible? What judgment have I al...
+  TO:    And sometimes it tells you that the next opportunity may have to...
+
+
+------------------------------------------------------------------------------
+SECTION 12  WATCH NEXT
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 22 words.
+  FROM:  And if the frustrating part is that your work is clearly valued...
+  TO:    And if the frustrating part is that your work is clearly valued...
+
+
+------------------------------------------------------------------------------
+
+WATCH NEXT  |  FULL SCREEN AND FINAL
+
+  ASSET:        NEW_V7_WATCH_NEXT.png
+  SPOKEN LINE:  And if the frustrating part is that your work is clearly valued but you still keep getting overlooked, watch this one next.
+  DESTINATION:  What to Do When Your Work Is Valued but You Are Overlooked
+  The spoken wording above is the script's own and was not
+  changed. Cut to the card on that line and end the video on it.
+  Nothing returns to camera afterward.
+
+  Before upload, confirm the destination is publicly live. If it
+  is not, the publishing materials carry an EDITORIAL FALLBACK
+  REQUIRED flag for approval. Do not invent a fallback here.
+
+------------------------------------------------------------------------------
+
+AFTER THE EDIT
+
+  Generate the SRT in Riverside and verify it against the final
+  export. Create chapters from real export timing. Neither exists
+  in this package and neither should be invented before the cut.

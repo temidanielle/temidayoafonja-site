@@ -1,0 +1,88 @@
+==============================================================================
+NEW V6  (FORMER ROADMAP V22)  |  SOURCE MANIFEST AND NUMBER MAP
+==============================================================================
+
+Decode a Job Description in 10 Minutes
+Generated Sunday, September 13, 2026 | 8:00 PM CT
+
+------------------------------------------------------------------------------
+
+NUMBER MAP
+
+  NEW PUBLIC NUMBER      V6
+  FORMER ROADMAP NUMBER  V22
+
+  The former number is retained for traceability and source
+  lineage only. It does not control the public publishing order,
+  and the historical locked V4 to V21 production archive is a
+  separate layer that this sprint does not touch.
+
+------------------------------------------------------------------------------
+
+ORDER OF AUTHORITY
+
+  1  FINAL sprint script
+        Spoken wording, new and former number, title, thumbnail,
+        section order, long-form CTA, spoken Watch Next wording,
+        three candidate Shorts, and the claim boundaries the
+        script itself carries.
+
+  2  Thought-Block Recording Copy
+        A recording-format derivative of the script above. It
+        carries the same spoken wording exactly. Where the two
+        disagree the script wins; QA reports rather than
+        repairs, and no discrepancy was found.
+
+------------------------------------------------------------------------------
+
+SOURCE FILES
+
+  sprint_scripts.zip
+      sha256  72ffcb09ae7b1dac351be089bf5ec5e0650305271d6701053b5cbcddf917609a
+
+  thought_blocks.zip
+      sha256  55e7ad9f4cb79ddcdb3643b62fe45b56533f257fe5bfc1e04dc4583053a41360
+
+  NEW_V6_FORMER_V22_Final_Sprint_Script_and_3_Shorts.docx
+      sha256  042f0cbfc8d3f4acf98c71632e2c79b448c571fd268966b50d4041b3bed7b0af
+
+  NEW_V6_FORMER_V22_Thought_Block_Recording_Copy.docx
+      sha256  bda792550665f7ab8a81682c1d02336651865fae41c26d97fea6ece257a5f36b
+
+------------------------------------------------------------------------------
+
+SPOKEN SCRIPT
+
+  11 sections, 84 spoken paragraphs, 1,006 spoken words.
+  Arithmetic estimate 6:56 to 7:44 at 130 to 145 words per minute.
+  That is arithmetic on the script. It is not a runtime, a
+  chapter, a Riverside time or an SRT time.
+
+  Thought-block match: 1006 words, identical and in order
+
+------------------------------------------------------------------------------
+
+LOCKED PACKAGING
+
+  TITLE      Decode a Job Description in 10 Minutes
+  THUMBNAIL  IGNORE THE TITLE
+  WATCH NEXT Turn One Accomplishment Into Proof in 10 Minutes
+
+------------------------------------------------------------------------------
+
+THREE CANDIDATE SHORTS
+
+  SHORT 1  Read the Verb Before You Trust the Title
+      55 words. Supplied inside the FINAL sprint script and
+      reproduced word for word. Not part of the spoken
+      long-form script.
+
+  SHORT 2  The $61,500 Strategy Title
+      61 words. Supplied inside the FINAL sprint script and
+      reproduced word for word. Not part of the spoken
+      long-form script.
+
+  SHORT 3  The $440K Title That Tells You Almost Nothing
+      59 words. Supplied inside the FINAL sprint script and
+      reproduced word for word. Not part of the spoken
+      long-form script.

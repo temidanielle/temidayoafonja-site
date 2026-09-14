@@ -19,7 +19,7 @@ from rdeck import (W, H, MARGIN, CW, NAVY, CREAM, GOLD, RUST, CREAM_DIM,
                    NAVY_DIM, RULE_NAVY, RULE_CREAM, DISPLAY, BODY,
                    bg, rect, block, eyebrow, logomark, text_height)
 from layouts import (TH, S, compose, BAND_TOP, BAND_BOT, EYE_Y, EYE_RULE_Y,
-                     cta, watch_next, duo, quad, numbered)
+                     cta, duo, quad, numbered)
 import layouts as _house
 
 # Bright warm yellow for the active state, kept distinct from the structural
@@ -504,6 +504,16 @@ def lines(c, eye, headline, items, active=None, foot=None, dark=False,
     if synthetic:
         badge(c)
     mark(c, dark)
+
+
+def watch_next(c, title, playlist=None):
+    """The house Watch Next card, declaring that it emphasizes nothing.
+
+    layouts.watch_next is called unchanged so the card is identical to every
+    other batch's; only the declaration is added here.
+    """
+    _house.watch_next(c, title, playlist)
+    _active(c, 0)
 
 
 def statement(c, eye, headline, support=None, dark=False, size=88,

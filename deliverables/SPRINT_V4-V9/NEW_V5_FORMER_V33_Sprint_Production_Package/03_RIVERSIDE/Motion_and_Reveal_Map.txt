@@ -1,0 +1,115 @@
+==============================================================================
+NEW V5  (FORMER ROADMAP V33)  |  MOTION AND REVEAL MAP
+==============================================================================
+
+If Your Company Needs You but Won’t Grow You
+
+Reveal order for every card with more than one state, and the
+emphasis state of each. A numbered point is a reading order,
+never a button.
+
+------------------------------------------------------------------------------
+
+NEW_V5_FS_01_NEEDED_NOT_GROWN   (NEW)
+    TRIGGER:    needed by the company, but not necessarily grown by it.
+    LAYOUT:     Two sides of one position.
+    TREATMENT:  COMPARISON
+    BUILD:      SINGLE
+    1. NEW_V5_FS_01_NEEDED_NOT_GROWN                Single state.
+    HOLD:       Cut on the two-line paragraph and hold through it.
+
+NEW_V5_FS_02_NOT_ALIGNED   (NEW)
+    TRIGGER:    It means your value to the current role and your value to your future are not always aligned.
+    LAYOUT:     Statement.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. NEW_V5_FS_02_NOT_ALIGNED                     Single state.
+    HOLD:       Hold through the sentence. The line that protects the manager is on the card, not only on camera.
+
+NEW_V5_FS_03_WATCH_FOR_PATTERNS   (NEW)
+    TRIGGER:    More rescue work.
+    LAYOUT:     Short rows, all visible, with the one-moment limit on the card.
+    TREATMENT:  SEQUENCE
+    BUILD:      SINGLE
+    1. NEW_V5_FS_03_WATCH_FOR_PATTERNS              Single state.
+    HOLD:       Cut on 'Watch for patterns.' and hold through the list and the two lines that close it.
+
+NEW_V5_FS_04_THE_QUESTION   (NEW)
+    TRIGGER:    What is this organization building in me beyond my ability to keep this role running?
+    LAYOUT:     Statement.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. NEW_V5_FS_04_THE_QUESTION                    Single state.
+    HOLD:       Hold through the two sentences that follow, which protect the employer.
+
+NEW_V5_FS_05_INDISPENSABLE_AND_LESS_PORTABLE   (NEW)
+    TRIGGER:    That can make you indispensable and less portable at the same time.
+    LAYOUT:     Two sides of the same fact.
+    TREATMENT:  COMPARISON
+    BUILD:      SINGLE
+    1. NEW_V5_FS_05_INDISPENSABLE_AND_LESS_PORTABLE Single state.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V5_FS_06_ASK_FOR_DEVELOPMENT   (NEW)
+    TRIGGER:    Ask for developmental movement.
+    LAYOUT:     Short rows, all visible.
+    TREATMENT:  SEQUENCE
+    BUILD:      SINGLE
+    1. NEW_V5_FS_06_ASK_FOR_DEVELOPMENT             Single state.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V5_FS_07_THE_ANSWER_MAY_BE_NO   (NEW)
+    TRIGGER:    The answer may still be no.
+    LAYOUT:     Short rows, all visible.
+    TREATMENT:  SEQUENCE
+    BUILD:      SINGLE
+    1. NEW_V5_FS_07_THE_ANSWER_MAY_BE_NO            Single state.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V5_FS_08_DEPENDENCE_VS_DEVELOPMENT   (NEW)
+    TRIGGER:    Dependence sounds like:
+    LAYOUT:     Side-by-side contrast, quoting both.
+    TREATMENT:  COMPARISON
+    BUILD:      SINGLE
+    1. NEW_V5_FS_08_DEPENDENCE_VS_DEVELOPMENT       Single state.
+    HOLD:       Cut on 'Dependence sounds like:' and hold through both quotations and the line that says an assignment can contain both.
+
+NEW_V5_FS_09_REVIEW_POINT   (NEW)
+    TRIGGER:    At that review, ask:
+    LAYOUT:     Questions card.
+    TREATMENT:  SEQUENCE
+    BUILD:      SINGLE
+    1. NEW_V5_FS_09_REVIEW_POINT                    Single state.
+    HOLD:       Cut on 'At that review, ask:' and hold through the four questions.
+
+NEW_V5_FS_10_CTA   (NEW)
+    TRIGGER:    Is it also helping you become more capable, more visible, or more portable?
+    LAYOUT:     Action card.
+    TREATMENT:  CTA
+    BUILD:      SINGLE
+    1. NEW_V5_FS_10_CTA                             Single state.
+    HOLD:       Cut on the question and hold to the end of the spoken line.
+
+NEW_V5_WATCH_NEXT   (NEW)
+    TRIGGER:    the spoken Watch Next line
+    LAYOUT:     Watch Next card, house layout.
+    TREATMENT:  WATCH NEXT
+    BUILD:      SINGLE
+    1. NEW_V5_WATCH_NEXT                            Single state. Final card.
+    HOLD:       Cut here on the spoken Watch Next line and end the video on it.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+  One active idea at a time. When a framework is being taught,
+  one component is warm and the rest are quiet.
+
+  Establish the whole structure before activating any part of it.
+
+  No animation whose only purpose is to keep the screen moving.
+  Stillness is allowed when the viewer needs to read or think.
+
+  No fake buttons, progress bars, quiz interfaces or dashboards.
+
+  A card never moves while the presenter moves behind it.
