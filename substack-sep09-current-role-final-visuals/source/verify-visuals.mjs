@@ -110,11 +110,15 @@ const extract = process.argv[2];
 if (extract) {
   const body = (await readFile(extract, 'utf8')).replace(/\s+/g, ' ');
   const check = [
-    ['cover title', copy.cover.titleLines.join(' ')],
-    ...copy.threePs.cards.map(c => [`${c.label} question`, c.question]),
+    ['cover title', copy.cover.titleLines.join(' '), false],
+    ...copy.threePs.cards.map(c => [`${c.label} question`, c.question, Boolean(c.approvedRewrite)]),
   ];
-  for (const [what, str] of check) {
-    if (!body.includes(str)) problems.push(`${what} not found verbatim in the essay: "${str}"`);
+  for (const [what, str, rewritten] of check) {
+    if (body.includes(str)) continue;
+    // An approved rewrite is reported, not failed. Anything else is a failure,
+    // so the check cannot be weakened without leaving a record in copy.json.
+    if (rewritten) notes.push(`${what} is an approved rewrite, not verbatim: "${str}"`);
+    else problems.push(`${what} not found verbatim in the essay: "${str}"`);
   }
   for (const anchor of ['That is what the 3 Ps help you see.',
                         'Practice: What are you becoming better able to handle?',

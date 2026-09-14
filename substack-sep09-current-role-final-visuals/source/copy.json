@@ -8,25 +8,48 @@
   },
   "cover": {
     "file": "01-current-role-cover-1600x900.png",
-    "canvas": { "w": 1600, "h": 900 },
-    "titleLines": ["What Your Current Role", "Should Be Doing", "for Your Future"],
+    "canvas": {
+      "w": 1600,
+      "h": 900
+    },
+    "titleLines": [
+      "What Your Current Role",
+      "Should Be Doing",
+      "for Your Future"
+    ],
     "supporting": "BETTER DECISIONS · CLEAR PROOF · MORE OPTIONS",
     "footer": "CAPABILITY FORMATION · TEMIDAYO AFONJA"
   },
   "threePs": {
     "file": "02-three-ps-role-builds-future.png",
-    "canvas": { "w": 1600, "h": 1000 },
+    "canvas": {
+      "w": 1600,
+      "h": 1000
+    },
     "title": "THE 3 Ps OF A ROLE THAT BUILDS YOUR FUTURE",
     "cards": [
-      { "label": "PRACTICE", "question": "What are you becoming better able to handle?" },
-      { "label": "PROOF", "question": "Can you show what changed because you were involved?" },
-      { "label": "PORTABILITY", "question": "Could someone somewhere else understand and use it?" }
+      {
+        "label": "PRACTICE",
+        "question": "What can you handle now that was harder before?",
+        "approvedRewrite": "Approved rewrite. The essay's Practice heading reads 'What are you becoming better able to handle?' and its 90-day question reads 'What can I handle now that was genuinely harder for me before?'. This line is the 90-day question in second person, approved because the heading did not read naturally on the card. Proof and Portability are unchanged and still verbatim."
+      },
+      {
+        "label": "PROOF",
+        "question": "Can you show what changed because you were involved?"
+      },
+      {
+        "label": "PORTABILITY",
+        "question": "Could someone somewhere else understand and use it?"
+      }
     ],
     "supporting": "A role does not need to maximize all three every quarter. Over time, look for evidence of each."
   },
   "starter": {
     "file": "03-career-evidence-starter-artifact.png",
-    "canvas": { "w": 1600, "h": 1000 },
+    "canvas": {
+      "w": 1600,
+      "h": 1000
+    },
     "caption": "Career Evidence Starter",
     "front": "/career-evidence-starter-cover.png",
     "behind": "/career-evidence-starter-inside.png",

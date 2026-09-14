@@ -8,7 +8,8 @@ Automated gate: `source/verify-visuals.mjs`, currently passing.
 
 1. **Copy is exact.** Every string on every sheet is compared against
    `source/copy.json` by the gate, and the three card questions plus the cover
-   title are compared against the essay text. All match verbatim.
+   title are compared against the essay text. All match verbatim except the
+   Practice question, which is an approved rewrite. See item 7 below.
 2. **Placement anchors are present and unaltered** in v5.2. All four were found
    verbatim: "That is what the 3 Ps help you see.", "Practice: What are you
    becoming better able to handle?", "That is exactly where the Starter
@@ -45,6 +46,16 @@ Automated gate: `source/verify-visuals.mjs`, currently passing.
 12. **The article document was not modified.**
 
 ## Could not verify, or decided rather than guessed
+
+0. **The Practice question is an approved rewrite, at your direction.** The card
+   now reads "What can you handle now that was harder before?" This is the
+   essay's own 90-day question, "What can I handle now that was genuinely harder
+   for me before?", put into second person to match the other two cards. The
+   essay heading it replaces, "What are you becoming better able to handle?", did
+   not read naturally on the card. Proof and Portability are unchanged and still
+   verbatim. The rewrite is recorded in `source/copy.json` under
+   `approvedRewrite`, and the gate reports it rather than failing on it, so the
+   verbatim check stays in force for every other line.
 
 1. **Two copy lines differ between the build request and v5.2, and I used the
    build request.** Flagging rather than silently reconciling:
