@@ -3,7 +3,7 @@ NEW V8  (FORMER ROADMAP V28)  |  SOURCE MANIFEST AND NUMBER MAP
 ==============================================================================
 
 What Disappears When Your Work Access Ends
-Generated Sunday, September 13, 2026 | 8:00 PM CT
+Generated Sunday, September 13, 2026 | 8:44 PM CT
 
 ------------------------------------------------------------------------------
 
@@ -44,21 +44,21 @@ SOURCE FILES
       sha256  55e7ad9f4cb79ddcdb3643b62fe45b56533f257fe5bfc1e04dc4583053a41360
 
   NEW_V8_FORMER_V28_Final_Sprint_Script_and_3_Shorts.docx
-      sha256  aa4e3846517ab590ac91011f3b31e0967a425470cee6546f54169423036c1128
+      sha256  20da1bfd3c1cc8134a6acfc3b10628294455044bbd7bc6662916f9c5dcc51066
 
   NEW_V8_FORMER_V28_Thought_Block_Recording_Copy.docx
-      sha256  47484e7f2d170c51e7a2fb5216ca65cdbc4283ce693d821b1252fa3882fedf96
+      sha256  0b0c4b1bb0302328c98947dc721f487d9f33b463fd1fe63f623c755b382fd56c
 
 ------------------------------------------------------------------------------
 
 SPOKEN SCRIPT
 
-  13 sections, 88 spoken paragraphs, 730 spoken words.
-  Arithmetic estimate 5:02 to 5:37 at 130 to 145 words per minute.
+  13 sections, 88 spoken paragraphs, 732 spoken words.
+  Arithmetic estimate 5:03 to 5:38 at 130 to 145 words per minute.
   That is arithmetic on the script. It is not a runtime, a
   chapter, a Riverside time or an SRT time.
 
-  Thought-block match: 730 words, identical and in order
+  Thought-block match: 732 words, identical and in order
 
 ------------------------------------------------------------------------------
 

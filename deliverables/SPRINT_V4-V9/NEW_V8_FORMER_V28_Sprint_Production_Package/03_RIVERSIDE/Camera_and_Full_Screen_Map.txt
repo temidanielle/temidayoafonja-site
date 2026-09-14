@@ -13,7 +13,7 @@ moving behind it and no semi-transparent overlay.
 
   21 camera stretches
   12 full-screen cues, one per card
-  650 of 730 spoken words delivered on camera
+  652 of 732 spoken words delivered on camera
 
 ------------------------------------------------------------------------------
 
@@ -42,8 +42,8 @@ SECTION 1  HOOK
 SECTION 2  THE PROBLEM
 ------------------------------------------------------------------------------
 
-  [ CAMERA ]  4 paragraphs, 43 words
-      This happens because most people treat evidence like something they will collect later.
+  [ CAMERA ]  4 paragraphs, 41 words
+      This happens when evidence gets treated like something to collect later.
       After the project. Before the interview. When they update the resume.
       But by then, the context may be gone.
       And the most useful details are often the easiest to forget.
@@ -216,8 +216,8 @@ SECTION 10  WHAT COUNTS AS EVIDENCE
 SECTION 11  WHY PEOPLE WAIT
 ------------------------------------------------------------------------------
 
-  [ CAMERA ]  3 paragraphs, 26 words
-      People wait because collecting evidence can feel self-promotional while you are employed.
+  [ CAMERA ]  3 paragraphs, 30 words
+      Collecting evidence while you are employed can feel self-promotional, which makes it easy to put...
       I would frame it differently.
       You are not writing an award nomination every month.
 

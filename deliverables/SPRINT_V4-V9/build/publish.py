@@ -74,9 +74,9 @@ DESCRIPTION = {
      "",
      "Ten minutes a month, in your own words, while you are still "
      "employed."],
- 9: ["When people talk about changing industries, the usual question is "
-     "what skills transfer. It sounds sensible, and I think it is "
-     "incomplete.",
+ 9: ["When you think about changing industries, the obvious first "
+     "question is what skills transfer. It sounds sensible, and I think "
+     "it is incomplete.",
      "",
      "Four questions instead: What travels? What does not? What can I "
      "prove? What must I relearn?",

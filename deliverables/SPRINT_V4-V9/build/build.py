@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """Build the six NEW PUBLIC V4-V9 sprint production packages."""
-import os, sys, math, shutil, zipfile, hashlib, subprocess
+import os, sys, math, glob, shutil, zipfile, hashlib, subprocess
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.dirname(HERE)
 DELIV = "/home/user/temidayoafonja-site/deliverables/"
@@ -127,6 +127,22 @@ def qa_report(n, path, st, rows, geo, made, svgs):
     return path
 
 
+# Videos the correction actually touched. Everything else is re-checked
+# where it stands and never regenerated, because every document carries a
+# generation stamp and rebuilding one would change bytes for no reason.
+REBUILD = set(S.CORRECTED)
+
+
+def reuse_package(n):
+    """Take an untouched package as it already is on disk."""
+    pkg = os.path.join(OUT, pkg_name(n))
+    vis = os.path.join(pkg, "04_VISUAL_ASSETS")
+    made = sorted(glob.glob(os.path.join(vis, "*.png")))
+    sheet = os.path.join(vis, "Phone_Size_Contact_Sheet.png")
+    return (pkg, [x for x in made if x != sheet],
+            sorted(glob.glob(os.path.join(vis, "*.svg"))), sheet)
+
+
 def package(n, st, zips, reuse_rows):
     pkg = os.path.join(OUT, pkg_name(n))
     if os.path.isdir(pkg):
@@ -203,6 +219,20 @@ def master_hierarchy(path, st, zips):
             "Traceability and source lineage only. Not the publishing "
             "order."]],
           widths=[0.4, 2.0, 4.3], size=8.5)
+    h(d, "Source layer")
+    para(d, "Five spoken sentences were replaced across NEW V6, NEW V8 and "
+            "NEW V9 by explicit authorization on September 13. The supplied "
+            "source is never edited: the corrected documents live in "
+            "_source_v2, and a byte-identical copy of every supplied file "
+            "is preserved under _source_v2/_pre_correction, so the change "
+            "can be audited in both directions. The hashes below are the "
+            "corrected layer, which is what every package was built from.",
+         size=10.5)
+    table(d, ["", "Supplied source, before correction", "Sentences replaced"],
+          [["NEW V%d" % n, S.sha256(S.pre_script_path(n)),
+            "%d" % len(S.CORRECTIONS[n]) if n in S.CORRECTIONS else "none"]
+           for n in S.VIDEOS], widths=[0.8, 4.2, 1.7], size=7.5)
+
     h(d, "Source files")
     rows = [[nm, sha] for nm, sha in zips]
     for n in S.VIDEOS:
@@ -224,15 +254,17 @@ def master_hierarchy(path, st, zips):
     return path
 
 
-def changelog(path, st, flags, reuse_rows):
+def changelog(path, st, reuse_rows):
     d = base_doc()
     title_block(d, EYEBROW, "Sprint production changelog",
                 "What was built, from what, and what was flagged")
     kv(d, "Generated", st)
-    callout(d, "No spoken wording was changed in any of the six scripts. The "
-               "supplied Thought-Block copies were not rewritten, shortened "
-               "or regenerated: each was verified against its script and "
-               "copied into the package unchanged.")
+    callout(d, "Five spoken sentences were replaced across NEW V6, NEW V8 "
+               "and NEW V9 by explicit authorization on September 13. No "
+               "other spoken wording changed anywhere in the six scripts. "
+               "NEW V4, NEW V5 and NEW V7 are identical to the supplied "
+               "source, verified against the preserved copy rather than "
+               "assumed.")
     h(d, "What was built")
     table(d, ["", "Families", "States", "Camera stretches", "Full-screen "
               "cues", "Shorts"],
@@ -258,21 +290,40 @@ def changelog(path, st, flags, reuse_rows):
           [[k, det] for k, ok, det in reuse_rows],
           widths=[2.6, 4.1], size=7.5)
 
-    h(d, "Flagged, not fixed")
+    h(d, "Source-language corrections")
     para(d, "A source-language integrity check reads every spoken script for "
             "unsupported claims about what people do, feel or struggle with. "
             "It reports; it never rewrites. Five sentences were flagged "
-            "across the six scripts and none was changed.", size=10.5)
-    table(d, ["Video", "The sentence", "Why it is flagged"],
-          [["NEW V%d (former V%d)" % (n, S.NUMBERS[n]), sent, why]
-           for n, sent, why in flags], widths=[1.3, 2.9, 2.5], size=8)
-    callout(d, "The NEW V6 flag is a genuine conflict, not a style note. "
-               "That exact sentence was replaced in the separately locked "
-               "V22 package on the same day, by explicit authorization, for "
-               "exactly this reason. The sprint script still carries the "
-               "earlier wording, so the two layers now differ by one "
-               "sentence. The FINAL sprint script is authoritative here and "
-               "was not touched. This needs a decision, not a fix.")
+            "across the six scripts, and all five were then replaced by "
+            "explicit authorization. The replacements are reproduced here "
+            "exactly as authorized.", size=10.5)
+    table(d, ["Video", "Was", "Now"],
+          [["NEW V%d (former V%d)" % (n, S.NUMBERS[n]), old, new]
+           for n in S.CORRECTED for old, new in S.CORRECTIONS[n]],
+          widths=[1.2, 2.8, 2.7], size=8)
+    para(d, "The NEW V6 correction restores the wording already approved in "
+            "the separately locked V22 package, which replaced that exact "
+            "sentence on the same day for exactly this reason. The two "
+            "layers now agree.", size=10.5, before=6)
+    callout(d, "The source-language check now reports nothing across all six "
+               "scripts. It still runs, and it still fires: it was tested "
+               "against injected phrasing rather than assumed to work.")
+
+    h(d, "What the correction did and did not touch")
+    bullets(d, ["Each of the five sentences appears exactly once in its own "
+                "spoken stream and once in its Thought-Block copy, and in no "
+                "Short, no visual asset and no other script. That was "
+                "measured before anything was edited.",
+                "The Thought-Block copies for NEW V6, NEW V8 and NEW V9 were "
+                "corrected in place, so every block label and [NOT SPOKEN] "
+                "marker is untouched and each copy still matches its script "
+                "exactly and in order.",
+                "No visual asset was rebuilt: none of the five sentences "
+                "appears on a card.",
+                "No Short changed, and the three-per-video bank is unchanged.",
+                "Only the NEW V6, NEW V8 and NEW V9 package archives were "
+                "rebuilt. NEW V4, NEW V5 and NEW V7 were re-checked in place "
+                "and their archives are byte-identical."], size=10)
     footer_note(d, "Runtime, chapters, SRT timing and thumbnail artwork are "
                    "all decided after the final edit.")
     d.save(path)
@@ -289,6 +340,22 @@ def qa_summary(path, st, results):
     kv(d, "Checks run", "%d" % tot)
     kv(d, "Passes", "%d" % ok)
     kv(d, "Failures", "%d" % (tot - ok))
+    callout(d, "NEW V6, NEW V8 and NEW V9 were rebuilt for the source-"
+               "language correction. NEW V4, NEW V5 and NEW V7 were not: "
+               "their packages and archives are byte-identical to the "
+               "accepted build, verified against their sidecar checksums. "
+               "Those three were re-checked where they stand, so the QA "
+               "report inside each of them reflects the check set at its "
+               "own build time and this summary is the authoritative "
+               "current result for all six.")
+    table(d, ["", "Package", "Checks", "Result"],
+          [["NEW V%d" % n,
+            "rebuilt" if n in REBUILD else "unchanged, re-checked in place",
+            "%d" % len(results[n]),
+            "%d pass, %d fail"
+            % (sum(1 for _, o, _ in results[n] if o),
+               sum(1 for _, o, _ in results[n] if not o))]
+           for n in S.VIDEOS], widths=[0.9, 2.8, 0.8, 2.2], size=8.5)
     for n in S.VIDEOS:
         h(d, "NEW V%d (former roadmap V%d)  %s" % (n, S.NUMBERS[n],
                                                    S.title(n)))
@@ -302,26 +369,6 @@ def qa_summary(path, st, results):
     return path
 
 
-FLAGS = [
- (6, "Then ask the question people sometimes skip because they want the "
-     "move to work:",
-  "Asserts what people do and why. The separately locked V22 package "
-  "replaced this exact sentence on September 13 by explicit authorization. "
-  "The sprint script still carries it, so the two layers differ by one "
-  "sentence. Not changed here: the FINAL sprint script is authoritative."),
- (8, "This happens because most people treat evidence like something they "
-     "will collect later.",
-  "Asserts what most people do. The teaching survives without the claim, "
-  "but the sentence is approved source and was not touched."),
- (8, "People wait because collecting evidence can feel self-promotional "
-     "while you are employed.",
-  "Asserts a motive for a population. Not changed."),
- (9, "When people talk about changing industries, they usually ask one "
-     "question:",
-  "Asserts what people usually ask. Not changed."),
- (9, "And then there is the part people sometimes want to skip.",
-  "Asserts what people want to do. Not changed."),
-]
 
 
 def main():
@@ -349,16 +396,22 @@ def main():
     results, pkgs = {}, {}
     for n in S.VIDEOS:
         geo, _, _, _ = G.check(n)
-        pkg, made, svgs, sheet = package(n, st, zips, reuse_rows)
+        if n in REBUILD:
+            pkg, made, svgs, sheet = package(n, st, zips, reuse_rows)
+        else:
+            pkg, made, svgs, sheet = reuse_package(n)
         rr = reuse_rows if n == 6 else None
-        QA.run(n, pkg, geo, made, rr)
-        qa_report(n, os.path.join(pkg, "08_QA", "Package_QA_Report.docx"),
-                  st, QA.run(n, pkg, geo, made, rr), geo, made, svgs)
+        if n in REBUILD:
+            qa_report(n, os.path.join(pkg, "08_QA",
+                                      "Package_QA_Report.docx"),
+                      st, QA.run(n, pkg, geo, made, rr), geo, made, svgs)
         results[n] = QA.run(n, pkg, geo, made, rr)
         bad = [x for x in results[n] if not x[1]]
-        print("NEW V%-2d (former V%-2d)  %2d/%2d checks   %2d png   %d svg   %s"
+        print("NEW V%-2d (former V%-2d)  %2d/%2d checks   %2d png   %d svg   "
+              "%-9s %s"
               % (n, S.NUMBERS[n], len(results[n]) - len(bad),
                  len(results[n]), len(made), len(svgs),
+                 "rebuilt" if n in REBUILD else "unchanged",
                  "OK" if not bad else "FAILURES"))
         for nm, o, dd in bad:
             print("      FAIL  %s  ->  %s" % (nm, dd))
@@ -375,14 +428,24 @@ def main():
       qa_summary(os.path.join(
           shared, "NEW_V4-V9_SPRINT_PACKAGE_QA_SUMMARY.docx"), st, results),
       changelog(os.path.join(
-          shared, "NEW_V4-V9_SPRINT_PRODUCTION_CHANGELOG.docx"), st, FLAGS,
+          shared, "NEW_V4-V9_SPRINT_PRODUCTION_CHANGELOG.docx"), st,
           reuse_rows),
     ]
 
-    # one archive per video, then the outer archive
+    # one archive per video, then the outer archive. An untouched package
+    # keeps the archive it already has: it is verified against its sidecar
+    # and left alone, rather than re-zipped and declared identical.
     members = []
     for n in S.VIDEOS:
         zp = os.path.join(OUT, pkg_name(n) + ".zip")
+        if n not in REBUILD:
+            want = open(zp + ".sha256").read().split()[0]
+            if sha256(zp) != want:
+                raise SystemExit("NEW V%d archive does not match its sidecar"
+                                 % n)
+            print("  NEW V%d archive kept, verified against its sidecar" % n)
+            members += [zp, zp + ".sha256"]
+            continue
         names = []
         for root, _, files in os.walk(pkgs[n]):
             for f_ in files:

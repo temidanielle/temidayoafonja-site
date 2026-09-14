@@ -4,10 +4,10 @@ NEW V9  (FORMER ROADMAP V27)  |  RIVERSIDE CO-CREATOR MASTER PROMPT
 
 Transferable Skills Advice Is Missing Something
 Thumbnail: NOT EVERYTHING TRAVELS
-Generated Sunday, September 13, 2026 | 8:00 PM CT
+Generated Sunday, September 13, 2026 | 8:44 PM CT
 
-786 spoken words. 21 camera stretches against 12 full-screen cues,
-and 676 of the spoken words are delivered on camera.
+785 spoken words. 21 camera stretches against 12 full-screen cues,
+and 675 of the spoken words are delivered on camera.
 This script carries no timing markers, so nothing in it can be
 mistaken for a runtime, a chapter or an SRT time.
 
@@ -80,7 +80,7 @@ SECTION 1  HOOK
 
   MODE:  CAMERA
   Stay on Temidayo for 3 paragraphs, 17 words.
-  FROM:  When people talk about changing industries, they usually ask one...
+  FROM:  When you think about changing industries, the obvious first ques...
   TO:    It sounds sensible.
 
   MODE:     FULL SCREEN
@@ -278,8 +278,8 @@ SECTION 7  WHAT MUST I RELEARN
 ------------------------------------------------------------------------------
 
   MODE:  CAMERA
-  Stay on Temidayo for 2 paragraphs, 18 words.
-  FROM:  And then there is the part people sometimes want to skip.
+  Stay on Temidayo for 2 paragraphs, 17 words.
+  FROM:  And then there is the harder part of the audit.
   TO:    What does the new environment genuinely require?
 
   MODE:     FULL SCREEN

@@ -3,7 +3,7 @@ NEW V9  (FORMER ROADMAP V27)  |  SOURCE MANIFEST AND NUMBER MAP
 ==============================================================================
 
 Transferable Skills Advice Is Missing Something
-Generated Sunday, September 13, 2026 | 8:00 PM CT
+Generated Sunday, September 13, 2026 | 8:44 PM CT
 
 ------------------------------------------------------------------------------
 
@@ -44,21 +44,21 @@ SOURCE FILES
       sha256  55e7ad9f4cb79ddcdb3643b62fe45b56533f257fe5bfc1e04dc4583053a41360
 
   NEW_V9_FORMER_V27_Final_Sprint_Script_and_3_Shorts.docx
-      sha256  9fe70bcc5bff91b6a2eb84b410b006cb2bfb656f6a8d4a79119cefe7a3c8960f
+      sha256  f1027f75871d155762459e0a814b5feffa69a8a520f0bb384060335f7b468040
 
   NEW_V9_FORMER_V27_Thought_Block_Recording_Copy.docx
-      sha256  12102cbb7ebcaee38edd4bf8ac459959525b64acb1e63d6ba127953f602e6842
+      sha256  514a4de8471a7793d9bba16b3ce80aa93df9a04d6614db7bd99342a228ea10fa
 
 ------------------------------------------------------------------------------
 
 SPOKEN SCRIPT
 
-  14 sections, 88 spoken paragraphs, 786 spoken words.
-  Arithmetic estimate 5:25 to 6:03 at 130 to 145 words per minute.
+  14 sections, 88 spoken paragraphs, 785 spoken words.
+  Arithmetic estimate 5:25 to 6:02 at 130 to 145 words per minute.
   That is arithmetic on the script. It is not a runtime, a
   chapter, a Riverside time or an SRT time.
 
-  Thought-block match: 786 words, identical and in order
+  Thought-block match: 785 words, identical and in order
 
 ------------------------------------------------------------------------------
 

@@ -4,10 +4,10 @@ NEW V6  (FORMER ROADMAP V22)  |  RIVERSIDE CO-CREATOR MASTER PROMPT
 
 Decode a Job Description in 10 Minutes
 Thumbnail: IGNORE THE TITLE
-Generated Sunday, September 13, 2026 | 8:00 PM CT
+Generated Sunday, September 13, 2026 | 8:44 PM CT
 
-1,006 spoken words. 23 camera stretches against 18 full-screen cues,
-and 754 of the spoken words are delivered on camera.
+1,008 spoken words. 23 camera stretches against 18 full-screen cues,
+and 756 of the spoken words are delivered on camera.
 This script carries no timing markers, so nothing in it can be
 mistaken for a runtime, a chapter or an SRT time.
 
@@ -341,8 +341,8 @@ SECTION 6  4. REAL GAP
 ------------------------------------------------------------------------------
 
   MODE:  CAMERA
-  Stay on Temidayo for 4 paragraphs, 45 words.
-  FROM:  Then ask the question people sometimes skip because they want th...
+  Stay on Temidayo for 4 paragraphs, 47 words.
+  FROM:  Then ask the question that is easy to skip when you want the mov...
   TO:    It is a requirement that is specific enough to matter in this em...
 
   MODE:     FULL SCREEN

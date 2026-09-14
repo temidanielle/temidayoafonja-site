@@ -13,7 +13,7 @@ moving behind it and no semi-transparent overlay.
 
   21 camera stretches
   12 full-screen cues, one per card
-  676 of 786 spoken words delivered on camera
+  675 of 785 spoken words delivered on camera
 
 ------------------------------------------------------------------------------
 
@@ -23,7 +23,7 @@ SECTION 1  HOOK
 ------------------------------------------------------------------------------
 
   [ CAMERA ]  3 paragraphs, 17 words
-      When people talk about changing industries, they usually ask one question:
+      When you think about changing industries, the obvious first question is:
       "What skills transfer?"
       It sounds sensible.
 
@@ -129,8 +129,8 @@ SECTION 6  WHAT CAN I PROVE
 SECTION 7  WHAT MUST I RELEARN
 ------------------------------------------------------------------------------
 
-  [ CAMERA ]  2 paragraphs, 18 words
-      And then there is the part people sometimes want to skip.
+  [ CAMERA ]  2 paragraphs, 17 words
+      And then there is the harder part of the audit.
       What does the new environment genuinely require?
 
   [ FULL SCREEN ]  NEW_V9_FS_07_WHAT_THE_NEW_CONTEXT_REQUIRES   (NEW)

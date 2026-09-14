@@ -18,6 +18,42 @@ EXTRA_NEG = ("protection against", "keeps the video from", "read as",
              "does not claim", "is not a")
 
 
+# The shared checker keeps discourse verbs out of scope so that inclusive
+# editorial phrasing is not rewritten. The authorized V9 correction shows
+# where that line actually falls: the claim was never "talk", it was
+# "usually ask". This layer adds that one pattern without touching the
+# checker the locked V22/V23 batch is verified against.
+HABIT = re.compile(
+    r"\b(?:people|professionals|candidates|everyone|they)\b[^.?!]{0,60}?"
+    r"\b(?:usually|typically|normally|generally|tend to|tends to)\b"
+    r"|\bthe usual (?:question|answer|advice|assumption|move)\b"
+    r"|\bmost people\b", re.I)
+
+
+def language(text):
+    """Unsupported audience-behavior phrasing, shared rules plus HABIT."""
+    out = list(LANG.findings(text))
+    for m in HABIT.finditer(text):
+        seg = text[max(0, m.start() - 70):m.end() + 70]
+        if LANG.MODAL.search(seg) or LANG.VIEWER.search(text[:m.end()]):
+            continue
+        if LANG.QUOTED.search(seg):
+            continue
+        out.append((text[max(0, m.start() - 40):m.end() + 40].strip(),
+                    "asserts what people usually do"))
+    return out
+
+
+def authored_copy(n):
+    """Everything this build wrote for publication, as one blob."""
+    parts = []
+    for blob in (PUB.DESCRIPTION, PUB.PINNED):
+        v = blob.get(n)
+        if v:
+            parts.append(" ".join(v) if isinstance(v, list) else str(v))
+    return "\n".join(parts)
+
+
 def negated(text, at, window=140):
     if _negated(text, at, window):
         return True
@@ -222,14 +258,19 @@ def run(n, pkg, geo, assets, reuse_rows=None):
     hits = forbidden(n, us, FORBIDDEN[n])
     ck("Video-specific boundary preserved", not hits,
        hits or _BOUNDARY_SUMMARY[n])
-    lang = LANG.findings(S.spoken_text(n))
-    ck("Source-language integrity, reported not repaired", True,
+    lang = language(S.spoken_text(n)) + language(authored_copy(n))
+    ck("No unsupported audience-behavior phrasing remains", not lang,
        ["%s" % a[:80] for a, b in lang] or "no unsupported audience-behavior "
                                            "claim in this script")
+    ck("Corrected sentences replaced, nothing else touched",
+       *_corrections(n))
     if n == 6:
+        # 1,008 after the authorized correction: the replacement sentence
+        # is two words longer. Nothing was added to the spoken stream.
         ck("The ten-minute promise is protected",
-           S.word_count(6) == 1006 and not _added_spoken(6),
-           "1,006 spoken words, exactly as supplied. No spoken material "
+           S.word_count(6) == 1008 and not _added_spoken(6),
+           "1,008 spoken words, the supplied script plus one authorized "
+           "sentence replacement. No spoken material "
            "added, no second CTA.")
         ck("Problem, Authority, Proof and Real Gap all present",
            all(S.contains(6, x) for x in ("Problem.", "Authority.", "Proof.",
@@ -252,6 +293,36 @@ def run(n, pkg, geo, assets, reuse_rows=None):
                                  "forward the", "copy the file")),
            "no file, screenshot, download or system appears in any asset")
     return R
+
+
+def _corrections(n):
+    """The five authorized replacements, and only those.
+
+    A corrected video must carry every replacement and none of the sentences
+    they replaced. A video outside the correction set must be identical to
+    the supplied script, which is checked against the preserved copy rather
+    than assumed.
+    """
+    spoken = _flat(" ".join(S.paragraphs(n)))
+    if n not in S.CORRECTIONS:
+        same = _flat(" ".join(S.pre_paragraphs(n))) == spoken
+        return same, ("not in the correction set, identical to the supplied "
+                      "script" if same else "differs from the supplied "
+                      "script")
+    bad = []
+    for old, new in S.CORRECTIONS[n]:
+        if _flat(old) in spoken:
+            bad.append("still carries: %s" % old[:50])
+        if _flat(new) not in spoken:
+            bad.append("missing: %s" % new[:50])
+    pre = _flat(" ".join(S.pre_paragraphs(n)))
+    for old, new in S.CORRECTIONS[n]:
+        pre = pre.replace(_flat(old), _flat(new))
+    if pre != spoken:
+        bad.append("the script differs beyond the authorized sentences")
+    return not bad, bad or ("%d authorized replacement%s, nothing else"
+                            % (len(S.CORRECTIONS[n]),
+                               "" if len(S.CORRECTIONS[n]) == 1 else "s"))
 
 
 _BOUNDARY_SUMMARY = {

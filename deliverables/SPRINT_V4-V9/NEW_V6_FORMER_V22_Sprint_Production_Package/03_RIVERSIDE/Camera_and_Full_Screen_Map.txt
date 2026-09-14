@@ -13,7 +13,7 @@ moving behind it and no semi-transparent overlay.
 
   23 camera stretches
   18 full-screen cues, one per card
-  754 of 1006 spoken words delivered on camera
+  756 of 1008 spoken words delivered on camera
 
 ------------------------------------------------------------------------------
 
@@ -138,8 +138,8 @@ SECTION 5  3. PROOF
 SECTION 6  4. REAL GAP
 ------------------------------------------------------------------------------
 
-  [ CAMERA ]  4 paragraphs, 45 words
-      Then ask the question people sometimes skip because they want the move to work:
+  [ CAMERA ]  4 paragraphs, 47 words
+      Then ask the question that is easy to skip when you want the move to work:
       What is the real gap?
       A real gap is not just something you have not done before.
       It is a requirement that is specific enough to matter in this employer's world.

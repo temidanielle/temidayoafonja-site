@@ -18,8 +18,69 @@ from docx.oxml.ns import qn
 HERE = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.dirname(HERE)
 SRC = os.path.join(OUT, "_source")
-SCRIPTS = os.path.join(SRC, "sprint_scripts")
-BLOCKS = os.path.join(SRC, "thought_blocks")
+
+# The corrected source layer. Five sentences across NEW V6, V8 and V9 were
+# replaced by explicit authorization on September 13; the supplied _source
+# tree is kept byte-identical beside it, and again under
+# _source_v2/_pre_correction, so the change is auditable in both
+# directions. Everything downstream reads the corrected layer.
+SRC_V2 = os.path.join(OUT, "_source_v2")
+PRE = os.path.join(SRC_V2, "_pre_correction")
+SCRIPTS = os.path.join(SRC_V2, "sprint_scripts")
+BLOCKS = os.path.join(SRC_V2, "thought_blocks")
+
+# new public number -> the sentences replaced in it
+CORRECTIONS = {
+ 6: ((u"Then ask the question people sometimes skip because they want the "
+      u"move to work:",
+      u"Then ask the question that is easy to skip when you want the move "
+      u"to work:"),),
+ 8: ((u"This happens because most people treat evidence like something "
+      u"they will collect later.",
+      u"This happens when evidence gets treated like something to collect "
+      u"later."),
+     (u"People wait because collecting evidence can feel self-promotional "
+      u"while you are employed.",
+      u"Collecting evidence while you are employed can feel "
+      u"self-promotional, which makes it easy to put off."),),
+ 9: ((u"When people talk about changing industries, they usually ask one "
+      u"question:",
+      u"When you think about changing industries, the obvious first "
+      u"question is:"),
+     (u"And then there is the part people sometimes want to skip.",
+      u"And then there is the harder part of the audit."),),
+}
+CORRECTED = tuple(sorted(CORRECTIONS))
+
+
+def pre_script_path(n):
+    """The supplied script, before correction."""
+    return os.path.join(PRE, "sprint_scripts",
+                        os.path.basename(script_path(n)))
+
+
+def pre_block_path(n):
+    return os.path.join(PRE, "thought_blocks",
+                        os.path.basename(block_path(n)))
+
+
+def pre_paragraphs(n):
+    """The spoken stream of the supplied script, before correction.
+
+    Read through the same parser as the corrected script so the comparison
+    is like for like.
+    """
+    real, pre = script_path, pre_script_path(n)
+    globals()["script_path"] = lambda _n, _p=pre: _p
+    keep = _CACHE.pop(n, None)
+    try:
+        out = paragraphs(n)
+    finally:
+        globals()["script_path"] = real
+        _CACHE.pop(n, None)
+        if keep is not None:
+            _CACHE[n] = keep
+    return out
 
 # new public number -> former roadmap number
 NUMBERS = {4: 26, 5: 33, 6: 22, 7: 24, 8: 28, 9: 27}
@@ -279,3 +340,21 @@ if __name__ == "__main__":
               shorts_in_spoken(n) or "none")
         print("    number map in the document: new V%d, former V%d"
               % (r["meta"]["new"], r["meta"]["former"]))
+
+# Packaging as accepted on September 13, before the source-language
+# correction. The correction may not move any of it, so these are recorded
+# here and compared against rather than re-read from the same document.
+TITLES_AT_ACCEPTANCE = {
+ 4: u"AI Took the Task. Who Gets the Experience?",
+ 5: u"If Your Company Needs You but Won\u2019t Grow You",
+ 6: u"Decode a Job Description in 10 Minutes",
+ 7: u"I\u2019ve Seen Who Gets the Bigger Role and Why",
+ 8: u"What Disappears When Your Work Access Ends",
+ 9: u"Transferable Skills Advice Is Missing Something",
+}
+THUMBNAILS_AT_ACCEPTANCE = {
+ 4: u"WHO LEARNS NOW?", 5: u"USEFUL. STILL STUCK.",
+ 6: u"IGNORE THE TITLE", 7: u"THEY CHOSE SOMEONE ELSE",
+ 8: u"YOU CAN\u2019T PROVE IT LATER", 9: u"NOT EVERYTHING TRAVELS",
+}
+NUMBERS_AT_ACCEPTANCE = {4: 26, 5: 33, 6: 22, 7: 24, 8: 28, 9: 27}
