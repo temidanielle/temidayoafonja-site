@@ -41,6 +41,9 @@
 
 const crypto = require("crypto");
 const { blobStore, blobsConfigured } = require("../lib/blobs");
+// Imported here, not through the shared helper, because this file needs the
+// zero-configuration form directly. netlify/lib/blobs.js is untouched.
+const { getStore } = require("@netlify/blobs");
 
 const STORE = "career-decisions-leads";
 
@@ -131,17 +134,51 @@ function flatten(rec) {
 // Which route blobStore() takes for this call. Defined here rather than in the
 // shared helper deliberately: netlify/lib/blobs.js is used by all nine Blobs
 // functions, four of them live on production, and nothing in this branch should
-// reach them. This mirrors the helper's precedence and must be kept in step
-// with it: manual credentials win when both are present.
-//
-// It exists because on 2026-08-26 a site-wide Blobs failure could not be
-// attributed without knowing which of the two routes was in use. It reported
-// "manual", which established that Netlify is injecting no Blobs context here
-// and that the failing request is the API one.
+// reach them. It mirrors the helper's precedence and must be kept in step with
+// it: manual credentials win when both are present, and the fallback is the
+// zero-configuration form.
 function blobsRoute() {
-  if (blobsConfigured()) return "manual";
-  if (globalThis.netlifyBlobsContext || process.env.NETLIFY_BLOBS_CONTEXT) return "auto";
-  return "unconfigured";
+  return blobsConfigured() ? "manual" : "zero-config";
+}
+
+// Whether zero-configuration initialises.
+//
+// This replaces an earlier probe that read NETLIFY_BLOBS_CONTEXT directly.
+// Netlify support case #1099659 states that application code should not read or
+// parse that variable, and that the v8 SDK reads the injected context itself. So
+// the question is asked through their SDK rather than around it: this tests the
+// exact call their proposed remedy depends on.
+//
+// ── What it does, and does not do ──
+//
+// It constructs a store handle and nothing else. getStore() reads the injected
+// context, validates the store name and returns an object. **No read, no write,
+// no list, no record operation of any kind.** A true here therefore proves only
+// that zero-configuration initialises. It does not prove that a subsequent
+// network read or write would succeed; that has to be verified separately, on
+// the preview of the eventual shared fix.
+//
+// ── Why any throw is false ──
+//
+// A draft of this returned true for exceptions other than
+// MissingBlobsEnvironmentError, which would have reported a network or SDK
+// failure as a pass. That is the same shape of defect this incident has already
+// produced twice, and it was caught in review. The rule is now absolute: true
+// only on a clean return.
+//
+// ── Disclosure ──
+//
+// One boolean. The exception is caught and discarded without being read, so no
+// name, message, stack or cause can reach the response, and neither can the
+// context value, its structure or its length. No credential and no record is
+// involved at any point.
+function zeroConfigInitializes() {
+  try {
+    getStore(STORE);
+    return true;
+  } catch (e) {
+    return false;
+  }
 }
 
 // ── Blobs failure classification ───────────────────────────────────────────
@@ -310,7 +347,8 @@ exports.handler = async (event) => {
           // manual API credentials fail for unrelated reasons, and nothing in
           // the error itself says which one was in use.
           mode: blobsRoute(),
-          blobs_manual_config: blobsConfigured()
+          blobs_manual_config: blobsConfigured(),
+          zero_config_initializes: zeroConfigInitializes()
         })
       };
     }

@@ -288,6 +288,25 @@ is only reachable by a caller who has already presented the token.
 
 These five differences are confined to that file; the three older exports are unchanged.
 
+### Production verification, 2026-08-31
+
+The full core journey passed on `https://temidayoafonja.com/career-decisions`:
+
+- The page loads, and the Lightning Lesson with its Register free call to action is present but
+  hidden until a submission is confirmed, which is the intended behaviour.
+- A genuinely new address subscribed, the three questions and the offer appeared, and the delivery
+  email arrived immediately and is visible in Kit's Email History.
+- Kit created the subscriber with **Confirmed** status. Tags: `Career Decision Evidence Check —
+  Requested` and `YouTube`. **No `Ongoing Guidance` tag**, which is the check that matters most.
+- `delivery_consent` true, `delivery_policy_version` `2026-08-18`, `guidance_consent` false, and both
+  guidance stamp fields empty.
+- Attribution recorded: source `youtube`, medium `video`, campaign and video slug both
+  `launch-check`.
+
+Two earlier attempts used addresses already cancelled in Kit. **Kit correctly preserved their
+unsubscribe status and did not reactivate them**, which is the behaviour to want and which makes
+reused addresses useless for testing.
+
 ### Accepted limitation at launch: no durable first-party record
 
 Netlify Blobs has been failing site-wide since 2026-08-20. Every read and write returns HTTP 400
@@ -310,8 +329,126 @@ What this means for the Career Decision Evidence Check at launch:
   have never durably recorded a submission either. That is the same incident.
 - Nothing is lost silently. The failure is reported in the response, logged, and the export endpoint
   names the fault class, so the gap is visible rather than assumed.
-- When Blobs is repaired, records begin being written with no code change. Submissions taken before
-  that point are not recoverable into the store, and Kit remains the record for them.
+- **Repair requires a code change, not only a fix on Netlify's side.** This was previously recorded
+  as resuming with no code change, which was wrong. Netlify support case #1099659 states the Blobs
+  context is injected when the function runs, and that the remedy is zero-configuration
+  `getStore("name")` rather than the manual `{ name, siteID, token }` form. `netlify/lib/blobs.js`
+  prefers manual configuration whenever `BLOBS_SITE_ID` and `BLOBS_TOKEN` are both set, which they
+  are, so zero-configuration is never reached. Changing that preference touches a file shared by all
+  nine Blobs functions and is tracked as a separate incident, not as part of this work.
+- Submissions taken before that repair are not recoverable into the store. There is no backfill, and
+  Kit remains the record for them.
+
+### On Netlify's proposed cause, and why it was not acted on
+
+Netlify support case #1099659 proposed that esbuild replaces the runtime environment reference with
+`undefined` during bundling, and described this as likely rather than established. **It was checked
+before any shared code was touched, and the mechanism does not hold.** Three findings, 2026-08-29:
+
+1. **The client never uses a statically replaceable reference.** `getEnvironmentContext` in
+   `@netlify/blobs` 8.2.0 reads `globalThis.netlifyBlobsContext` or calls `getEnvironment().get(...)`,
+   and `getEnvironment` destructures `process` off `globalThis` and reads `process?.env[key]`, a
+   dynamic computed access. No esbuild `define` can match that shape.
+2. **Netlify's own bundler passes no `define`.** The `build()` call in `@netlify/zip-it-and-ship-it`,
+   in `runtimes/node/bundlers/esbuild/bundler.js`, sets `bundle`, `entryPoints`, `external`,
+   `format`, `platform`, `plugins`, `target` and related options. There is no `define` key, so no
+   compile-time environment substitution occurs.
+3. **The compiled bundle preserves everything.** Bundling this repository's
+   `career-decisions-subscribe.js` with esbuild leaves `NETLIFY_BLOBS_CONTEXT` intact as a string
+   literal passed to a runtime lookup, leaves `globalThis.netlifyBlobsContext` intact, and leaves all
+   nine `process.env.*` reads unreplaced.
+
+A fourth point comes from live behaviour rather than inspection: if `process.env` reads were being
+replaced, `BLOBS_SITE_ID` and `BLOBS_TOKEN` would be `undefined` too. The export endpoint reported
+`blobs_manual_config: true` in production, so those reads demonstrably work at runtime.
+
+**What is established** is narrower, and is in this repository's own code: `blobStore()` selects the
+manual form whenever both variables are set, so zero-configuration is never attempted. That is a real
+and sufficient explanation for which mode is used. It is **not** established that zero-configuration
+would succeed: a probe on 2026-08-26 found no Blobs context present at runtime, which would make that
+call throw instead. That question is open and must be answered by observation before the shared
+helper is changed.
+
+### Netlify's clarification, case #1099659, 2026-08-31
+
+A second reply from Netlify supersedes the esbuild explanation above. Their position:
+
+- This site uses default Functions bundling, so **no `netlify.toml` or custom esbuild change is
+  required.**
+- **Application code should not read or parse `NETLIFY_BLOBS_CONTEXT` directly.**
+- Zero-configuration `getStore("store-name")` is sufficient, because the v8 SDK reads the injected
+  runtime context internally.
+- No `region` parameter is needed.
+- Behaviour should be identical in production Functions and Deploy Preview Functions.
+- Switching from manual `{ siteID, token }` to zero-configuration should reach the same site-wide
+  namespace and the existing records.
+- The uncreated stores are consistent with their first writes being rejected by the same HTTP 400.
+
+This confirms the finding above that no bundler change is needed. **It does not resolve the
+conflict.** On 2026-08-26 a deployed check found no Blobs context present at runtime. Netlify's
+assurance that the context is injected in both contexts, and that observation, cannot both be
+right. The conflict is open and no code action has been taken on it.
+
+Their second point also lands on the diagnostic in this branch, which reads the variable directly.
+The SDK's own check is the same expression, so the two should agree, but "should agree" is the
+assumption that has already been wrong twice in this incident. When the diagnostic resumes it will
+therefore test Netlify's claim **through their SDK** rather than around it: construct a store handle
+with `getStore("career-decisions-leads")` and report one boolean, `zero_config_initializes`. That
+replacement was made on 2026-08-31; the direct read is gone.
+
+The rule for that boolean is strict, and deliberately so:
+
+- **`true` only if `getStore("career-decisions-leads")` returns without throwing.**
+- **`false` if it throws anything at all.** An exception other than `MissingBlobsEnvironmentError`
+  must never be read as success. An earlier draft of this test did exactly that, which would have
+  turned a network or SDK failure into a pass.
+
+It constructs a handle and nothing else: no read, no write, no list, no record operation. It
+exposes no exception name, message, context value, structure or length, and no credential or record.
+
+**What it proves is narrow.** It proves only that zero-configuration initialises. It does not prove
+that a later network read or write will succeed. That has to be verified separately, on the preview
+of the eventual shared fix, if initialisation passes.
+
+### Diagnostic result, 2026-09-01: zero-configuration does not initialise
+
+Run against Deploy Preview `6a970296da5e430008a8c6f8`, PR #108, through the protected export. That
+deploy's log reads `Now using node v22.23.2 (npm v10.9.8)`, which **rules out an older runtime** as
+a cause: `@netlify/blobs` 8.2.0 requires `^14.16.0 || >=16.0.0`, and nothing in this repository pins
+a Node version, so functions run on Netlify's current default.
+
+```
+{ status: 500, error: "export_failed", reason: "blobs_api_400",
+  mode: "manual", zero_config_initializes: false }
+```
+
+Four things are established.
+
+**The function executes.** A 500 carrying this body, rather than a 404, confirms PR #110's
+`/netlify/*` rule does not intercept `/.netlify/functions/*`.
+
+**The manual route still fails the same way.** `reason: blobs_api_400` is unchanged, and `mode:
+manual` confirms the shared helper's precedence is untouched.
+
+**Netlify's prescribed remedy does not initialise.** `getStore("career-decisions-leads")`, the exact
+zero-configuration call in their guidance, threw. Reading the SDK, the only throw available at that
+point is `MissingBlobsEnvironmentError`, which the client raises when it finds neither an injected
+context nor supplied credentials. **That means no Blobs context is present in the function runtime.**
+
+**Two independent methods now agree.** The direct read of 2026-08-26 found no context. Netlify
+advised that application code should not read the variable and that their SDK reads it internally,
+so the test was rebuilt to ask through the SDK. It returns the same answer. The earlier observation
+was not a measurement artefact.
+
+**This contradicts Netlify support case #1099659**, which states the context is injected in both
+production and Deploy Preview functions and that switching to zero-configuration is sufficient. On
+this project it is not. Had the shared helper been changed on that assurance, all nine Blobs
+functions would have moved from a failing manual route to a route that cannot initialise at all.
+
+**No shared change is authorised and none has been made.** `netlify/lib/blobs.js`, the credentials,
+the bundler configuration and every capture function are untouched. The result goes back to Netlify.
+
+Not established: what the underlying 400 is. That question is unchanged and still open.
 
 ### Rate limiting does not depend on Blobs
 
@@ -326,7 +463,8 @@ to a page, which is right for a path only ever reached by the form's fetch. **As
 is accepted by Netlify but has not been observed to fire.** See the status below before relying on
 it. Netlify caps the window at 180 seconds, so the hour-long ceiling the Blobs limiter expresses
 cannot be reproduced here. The two are complementary and both are kept: this one stops bursts now,
-and the Blobs limiter resumes enforcing the sustained hourly ceiling when storage is repaired.
+and the Blobs limiter enforces the sustained hourly ceiling again once storage is repaired, which
+needs the shared-helper change described above and not only a fix on Netlify's side.
 
 Because Netlify reserves the `/.netlify/` prefix for its own routing, the page posts to
 `/api/career-decisions-subscribe`, which is rewritten to the function with status 200 and is the
@@ -362,10 +500,18 @@ and must not be assumed**. Another is that a limit on a redirect does not apply 
 is a 200 rewrite to a Netlify Function, which would mean production behaves the same way. Both are
 open questions in the Netlify support ticket.
 
-**Until the production probe demonstrates otherwise, treat this form as having no per-IP rate
-limit.** The probe is six sequential empty-body POSTs to
-`https://temidayoafonja.com/api/career-decisions-subscribe`; the sixth must return 429. A green
-deploy alone establishes nothing: the earlier edge attempt deployed green and did nothing.
+**Production result, 2026-08-31: the rule is not enforced there either.** Six sequential empty-body
+POSTs to `https://temidayoafonja.com/api/career-decisions-subscribe` from one browser and one IP
+returned `[400, 400, 400, 400, 400, 400]`. Every request reached the function. That is the same
+result the deploy preview gave, so preview-scoped non-enforcement is **ruled out** as the
+explanation, and the remaining hypothesis, that a rate limit on a redirect does not apply when the
+redirect is a 200 rewrite to a Netlify Function, is the one still standing.
+
+**Treat this endpoint as having no effective per-IP rate limit.** Two mechanisms have now been tried
+and neither is enforced. No third is being attempted: the result is in the Netlify rate-limiting
+escalation and the limitation stands until Netlify answers. A green deploy establishes nothing here,
+and neither does an accepted rule: this one appeared in post-processing with its path condition, its
+`"type": "ip"` aggregate and `"status_code": 429`, and still did not fire.
 
 **On the consequences of abuse.** Junk Kit subscribers can be removed. Not everything downstream of
 a flood can be undone that easily: sustained submissions consume Kit API quota and generate outbound
