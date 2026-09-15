@@ -17,7 +17,7 @@ import Module from "node:module";
 import { createRequire } from "node:module";
 
 /* ── In-memory Netlify Blobs stub ──────────────────────────────────────── */
-const blobs = { stores: new Map(), failWrites: false, failReads: false, calls: [] };
+const blobs = { stores: new Map(), failWrites: false, failReads: false, calls: [], getOpts: [] };
 
 // The Blobs context as Netlify delivers it to a Lambda-compatible function:
 // base64 JSON on event.blobs, never in the environment.
@@ -26,7 +26,8 @@ function fakeStore(name) {
   if (!blobs.stores.has(name)) blobs.stores.set(name, new Map());
   const m = blobs.stores.get(name);
   return {
-    async get(key) {
+    async get(key, opts) {
+      blobs.getOpts.push(opts || {});
       if (blobs.failReads) throw new Error("stub read failure");
       return m.has(key) ? m.get(key) : null;
     },
@@ -121,6 +122,7 @@ function touches(first, current) {
 // default and quietly supply one, hiding the fail-closed path.
 function call(body, { method = "POST", ip = "203.0.113.7", blobsContext = CONTEXT } = {}) {
   blobs.calls = [];
+  blobs.getOpts = [];
   return handler({
     httpMethod: method,
     blobs: blobsContext,
@@ -541,6 +543,22 @@ test("the rate limiter receives the event, not just the address", async () => {
   await call(payload());
   assert.ok(blobs.calls.includes("connectLambda"),
     "the rate limiter's own store access must connect first");
+});
+
+test("the limiter never asks Blobs for strong consistency", async () => {
+  reset();
+  await call(payload());
+  // In Lambda compatibility mode connectLambda supplies deployID, edgeURL,
+  // siteID and token, and no uncachedEdgeURL. Strong consistency is routed
+  // through uncachedEdgeURL, so asking for it raises BlobsConsistencyError
+  // before any network call. That throw would be swallowed by the limiter's
+  // fail-open catch and rate limiting would be off entirely. Reading stale and
+  // under-counting is the lesser fault, and it is the deliberate choice here.
+  assert.ok(blobs.getOpts.length > 0, "the limiter must have read the counter");
+  for (const o of blobs.getOpts) {
+    assert.notEqual(o.consistency, "strong",
+      "strong consistency is unavailable in Lambda mode and would disable the limiter");
+  }
 });
 
 test("a missing Blobs context does not break the subscription", async () => {
