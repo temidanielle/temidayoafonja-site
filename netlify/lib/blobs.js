@@ -1,41 +1,75 @@
 // Shared Netlify Blobs accessor.
 //
-// Why this file exists. Netlify normally injects a Blobs context into the
-// function environment, and getStore("name") picks it up with no configuration.
-// On this site that injection does not happen: every getStore() call threw
-// MissingBlobsEnvironmentError in production, across all seven functions that
-// use Blobs, and a fresh deploy did not resolve it. Found August 13 2026 by
-// calling the export endpoints against the live site.
+// ── Why this file looks the way it does ──
 //
-// The error message names the remedy: supply siteID and token when creating the
-// store. That is Blobs' documented manual mode, and it is what this helper does.
+// These functions use the Lambda-compatible signature, `exports.handler =
+// async (event) => ...`. In that mode Netlify does **not** put the Blobs
+// context in the environment. It arrives on `event.blobs`, as base64 JSON,
+// alongside the `x-nf-site-id` and `x-nf-deploy-id` request headers, and
+// `connectLambda(event)` is what unpacks it into the context the client reads.
+// Until that call runs, `getStore()` has nothing to find.
 //
-// It falls back to automatic mode when the two variables are absent, so if
-// Netlify's injection starts working, or this runs somewhere that already has a
-// context, nothing here has to change. The fallback is also what keeps local
-// development and any future Netlify CLI use working.
+// That is the whole of the site-wide Blobs failure that began on 2026-08-13 and
+// was confirmed by Netlify support case #1099659 on 2026-09-15, who reproduced
+// it against this repository's own export function: it fails without
+// connectLambda(event) and succeeds with it. There was no project flag, no
+// provisioning defect, no bundler problem and no credential problem. The
+// earlier manual `{ siteID, token }` configuration in this file was a workaround
+// for a cause that had been misdiagnosed, and it is gone.
 //
-// Environment variables, both set in Netlify:
-//   BLOBS_SITE_ID  the project's API ID
-//   BLOBS_TOKEN    a Netlify personal access token
+// ── Fail closed ──
 //
-// The names deliberately avoid the NETLIFY_ prefix, which Netlify reserves and
-// will not let you set as a project variable.
-const { getStore } = require("@netlify/blobs");
+// If the Lambda context is absent, these functions throw. They do not fall back
+// to manual credentials. A silent fallback is what hid this fault for a month:
+// every call took a route that could not work, reported a plausible-looking
+// error, and nothing anywhere said the real route had never been attempted.
+// BLOBS_SITE_ID and BLOBS_TOKEN are no longer read here at all.
+const { connectLambda, getStore } = require("@netlify/blobs");
 
-function blobStore(name) {
-  const siteID = process.env.BLOBS_SITE_ID;
-  const token = process.env.BLOBS_TOKEN;
-  if (siteID && token) {
-    return getStore({ name, siteID, token });
+// One connect per invocation. connectLambda sets a module-global context, so
+// repeating it is harmless, but the event object is a reliable identity for
+// "this invocation" and a WeakSet keeps no reference alive after it.
+const connected = new WeakSet();
+
+/**
+ * Unpacks the Blobs context carried on a Lambda event. Must run before any
+ * getStore() call in the same invocation.
+ *
+ * Throws rather than returning a flag: a caller that has not connected cannot
+ * do anything useful with a store, so there is no correct way to continue.
+ */
+function connectBlobs(event) {
+  if (!event || typeof event !== "object") {
+    throw new Error("blobs_event_missing");
   }
+  if (connected.has(event)) return;
+  if (!event.blobs) {
+    // Netlify did not attach a Blobs context to this invocation. Nothing about
+    // the event is logged or thrown: the message is a fixed code.
+    throw new Error("blobs_context_missing");
+  }
+  connectLambda(event);
+  connected.add(event);
+}
+
+/**
+ * A store handle, on the connected zero-configuration path.
+ *
+ * `event` is required. Every call site passes the event of the invocation it is
+ * serving, including helpers that previously took only their own arguments.
+ */
+function blobStore(name, event) {
+  connectBlobs(event);
   return getStore(name);
 }
 
-// True when manual configuration is present. Used only for diagnostics, so a
-// failure can be attributed to a missing variable rather than guessed at.
-function blobsConfigured() {
-  return Boolean(process.env.BLOBS_SITE_ID && process.env.BLOBS_TOKEN);
+/**
+ * Whether this invocation can reach Blobs at all, without throwing. For
+ * diagnostics and for branching on best-effort writes. Never reports anything
+ * about the context beyond its presence.
+ */
+function blobsAvailable(event) {
+  return Boolean(event && typeof event === "object" && event.blobs);
 }
 
-module.exports = { blobStore, blobsConfigured };
+module.exports = { blobStore, connectBlobs, blobsAvailable };

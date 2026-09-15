@@ -288,6 +288,43 @@ is only reachable by a caller who has already presented the token.
 
 These five differences are confined to that file; the three older exports are unchanged.
 
+### Root cause and repair, 2026-09-15
+
+**Netlify support case #1099659 found it and reproduced it against this repository's own export
+function.** These twelve functions use the Lambda-compatible signature, `exports.handler = async
+(event) => ...`. In that mode Netlify does not put the Blobs context in the environment. It arrives
+on **`event.blobs`**, as base64 JSON, alongside the `x-nf-site-id` and `x-nf-deploy-id` headers, and
+**`connectLambda(event)` must run before any `getStore()` call**. Without it, `getStore()` has
+nothing to find. With it, the function writes, lists, reads and returns 200.
+
+There was no project flag, no provisioning defect, no bundler problem, no region problem and no
+credential problem. The manual `{ siteID, token }` configuration added on 2026-08-13 was a
+workaround for a cause that had been misdiagnosed from the start.
+
+**Two defects in this repository's own diagnostics made the investigation worse, and both are
+fixed.**
+
+The reported `blobs_api_400` was **fabricated by our own code**. `blobsErrorStatus()` scanned any
+error message for the first three-digit number and reported it as an upstream HTTP status. Netlify
+confirm their Blobs API never received a request. For a fortnight that number pointed the
+investigation at an API that was never called. The scan is gone: a status is now read only from a
+numeric `status` property or from the exact anchored shape `BlobsInternalError` builds, on an error
+that class actually raised.
+
+A 404 could have turned a failure into a **successful empty export**. The endpoint treated
+`blobs_api_404` as "the store does not exist yet" and answered 200 with no records. Combined with
+the fabricated status above, any error whose message happened to contain 404 could have reported an
+empty but successful export of a store that was never read. The branch is removed rather than
+narrowed: every storage fault is now a 500, and the only empty export is one that comes from a
+successful listing.
+
+**The repair, in `netlify/lib/blobs.js` and all ten Blobs-using functions.** `blobStore(name, event)`
+now connects first and then calls bare `getStore(name)`. Fourteen call sites pass their event,
+including three rate limiters that previously took only an IP address and so had no event to connect
+with, which is why rate limiting was silently dead site-wide. If the Lambda context is absent the
+helper **throws**; there is no fallback to manual credentials, and `BLOBS_SITE_ID` and `BLOBS_TOKEN`
+are no longer read anywhere in the codebase. A silent fallback is what hid this fault for a month.
+
 ### Accepted limitation at launch: no durable first-party record
 
 Netlify Blobs has been failing site-wide since 2026-08-20. Every read and write returns HTTP 400

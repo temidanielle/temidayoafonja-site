@@ -30,7 +30,7 @@ Keep the prose tight and economical.`;
 // dependency. Fails open on any store error so a legitimate read is never blocked.
 // 25/hour lets a full leadership team run the instrument from one shared corporate
 // IP in a sitting, while capping abuse at roughly fifty cents an hour per IP.
-const { blobStore, blobsConfigured } = require("../lib/blobs");
+const { blobStore, blobsAvailable } = require("../lib/blobs");
 const crypto = require("crypto");
 const RATE_MAX = 25;
 const RATE_WINDOW_MS = 60 * 60 * 1000;
@@ -54,10 +54,10 @@ function rateKey(ip) {
 // deleted, so the store still grows one entry per distinct caller. That is
 // acceptable now only because an entry is a salted hash and a counter, which is
 // not personal data. Adding a purge remains on the follow-up list.
-async function isRateLimited(ip) {
+async function isRateLimited(event, ip) {
   if (!ip) return false;
   try {
-    const store = blobStore("diagnose-rate");
+    const store = blobStore("diagnose-rate", event);
     const key = rateKey(ip);
     const now = Date.now();
     const rec = await store.get(key, { type: "json" });
@@ -72,7 +72,7 @@ async function isRateLimited(ip) {
     // to be visible, though. This catch returned false silently for months while
     // Blobs was unconfigured, which meant the rate limit was off and nothing
     // anywhere said so. Logging it is what turns that into something findable.
-    console.error("blobs diagnose-rate failed, rate limiting is OFF. manual config present:", blobsConfigured(), e);
+    console.error("blobs diagnose-rate failed, rate limiting is OFF. manual config present:", blobsAvailable(event), e);
     return false;
   }
 }
@@ -87,7 +87,7 @@ exports.handler = async (event) => {
 
   const h = event.headers || {};
   const ip = (h["x-nf-client-connection-ip"] || (h["x-forwarded-for"] || "").split(",")[0] || "").trim();
-  if (await isRateLimited(ip)) {
+  if (await isRateLimited(event, ip)) {
     // The front end shows the standard retry message on 429.
     return { statusCode: 429, body: JSON.stringify({ error: "Rate limit exceeded. Try again later." }) };
   }

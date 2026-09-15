@@ -19,35 +19,51 @@ import { createRequire } from "node:module";
 // listError lets a test choose the exact error the storage layer throws, which
 // is what the fault-class tests below need. failList stays for the plain
 // "something broke" case.
-const blobs = { stores: new Map(), failList: false, listError: null, lastGetStoreArg: null };
+// calls records the order of SDK calls, which is what proves connectLambda
+// ran before getStore. connectError lets a test make the connect itself fail.
+const blobs = {
+  stores: new Map(), failList: false, listError: null,
+  lastGetStoreArg: null, getStoreError: null, connectError: null,
+  calls: [], lastConnectEvent: null,
+  ops: { list: 0, get: 0, setJSON: 0, delete: 0 }
+};
 function fakeStore(name) {
   if (!blobs.stores.has(name)) blobs.stores.set(name, new Map());
   const m = blobs.stores.get(name);
   return {
     async list() {
+      blobs.ops.list += 1;
       if (blobs.listError) throw blobs.listError;
       if (blobs.failList) throw new Error("stub list failure");
       return { blobs: [...m.keys()].map((key) => ({ key })) };
     },
     async get(key) {
+      blobs.ops.get += 1;
       if (blobs.listError) throw blobs.listError;
       if (blobs.failList) throw new Error("stub read failure");
       // Return a copy, so a mutation by the handler cannot reach the store.
       return m.has(key) ? JSON.parse(JSON.stringify(m.get(key))) : null;
     },
-    async setJSON(key, value) { m.set(key, value); },
-    async delete(key) { m.delete(key); }
+    async setJSON(key, value) { blobs.ops.setJSON += 1; m.set(key, value); },
+    async delete(key) { blobs.ops.delete += 1; m.delete(key); }
   };
 }
 const originalLoad = Module._load;
 Module._load = function (request) {
   if (request === "@netlify/blobs") {
     return {
+      connectLambda: (event) => {
+        blobs.calls.push("connectLambda");
+        blobs.lastConnectEvent = event;
+        if (blobs.connectError) throw blobs.connectError;
+        // The real one throws on an absent context; the stub must too, or the
+        // fail-closed behaviour would only be tested in the helper.
+        if (!event || !event.blobs) throw new Error("stub: no event.blobs");
+      },
       getStore: (arg) => {
-        // Record the call shape. A string is the injected-context route, an
-        // object carrying siteID and token is the manual one, and which of the
-        // two the helper picks is the whole point of the change it guards.
+        blobs.calls.push("getStore");
         blobs.lastGetStoreArg = arg;
+        if (blobs.getStoreError) throw blobs.getStoreError;
         return fakeStore(typeof arg === "string" ? arg : arg.name);
       }
     };
@@ -113,8 +129,11 @@ function reset({ token = TOKEN, seedRecords = null } = {}) {
   // The manual Blobs configuration is present in every test unless a test
   // deliberately removes it. Without this, every storage fault would classify
   // as blobs_not_configured and the other fault classes would never be reached.
-  process.env.BLOBS_SITE_ID = "test-site-id";
-  process.env.BLOBS_TOKEN = "test-blobs-token";
+  // No BLOBS_SITE_ID or BLOBS_TOKEN anywhere. The manual path is gone.
+  blobs.getStoreError = null;
+  blobs.connectError = null;
+  blobs.calls = [];
+  blobs.lastConnectEvent = null;
   // No injected context by default, so the default route is manual, which is
   // what production and the deploy previews have been using.
   delete process.env.NETLIFY_BLOBS_CONTEXT;
@@ -125,13 +144,23 @@ function reset({ token = TOKEN, seedRecords = null } = {}) {
   if (token === null) delete process.env.RESEARCH_EXPORT_TOKEN;
   else process.env.RESEARCH_EXPORT_TOKEN = token;
   seed(seedRecords || { "2026-08-19T14-15-00-000Z__aaa": record() });
+  // After seeding: seed() writes through the fake store, so zeroing earlier
+  // would count the fixture's own write against the handler.
+  blobs.ops = { list: 0, get: 0, setJSON: 0, delete: 0 };
 }
 
-function call({ token = null, bearer = null, query = {}, method = "GET" } = {}) {
+// A Lambda event shaped like the real one: the Blobs context arrives as
+// base64 JSON on event.blobs, never in the environment.
+const CONTEXT = Buffer.from(JSON.stringify({ url: "https://blobs.example", token: "x" })).toString("base64");
+
+function call({ token = null, bearer = null, query = {}, method = "GET", blobsContext = CONTEXT } = {}) {
+  // null means "Netlify attached no context". undefined would hit the default
+  // above and quietly supply one, so the fail-closed path would never be tested.
   const q = Object.assign({}, query);
   if (token !== null) q.token = token;
   return handler({
     httpMethod: method,
+    blobs: blobsContext,
     headers: bearer === null ? {} : { authorization: "Bearer " + bearer },
     queryStringParameters: q
   });
@@ -200,6 +229,7 @@ test("a header reports itself as the source even when a query token was also sen
   // into the address bar is never consulted.
   const res = await handler({
     httpMethod: "GET",
+    blobs: CONTEXT,
     headers: { authorization: "Bearer wrong" },
     queryStringParameters: { token: TOKEN }
   });
@@ -242,15 +272,15 @@ test("accepts the correct token as a bearer header", async () => {
   reset();
   const res = await call({ bearer: TOKEN });
   assert.equal(res.statusCode, 200);
-  const lower = await handler({ httpMethod: "GET", headers: { Authorization: "Bearer " + TOKEN }, queryStringParameters: {} });
+  const lower = await handler({ httpMethod: "GET", blobs: CONTEXT, headers: { Authorization: "Bearer " + TOKEN }, queryStringParameters: {} });
   assert.equal(lower.statusCode, 200, "a capitalised header name works too");
 });
 
 test("the header wins over a wrong query parameter, and a wrong header is not rescued by a right query", async () => {
   reset();
-  const good = await handler({ httpMethod: "GET", headers: { authorization: "Bearer " + TOKEN }, queryStringParameters: { token: "wrong" } });
+  const good = await handler({ httpMethod: "GET", blobs: CONTEXT, headers: { authorization: "Bearer " + TOKEN }, queryStringParameters: { token: "wrong" } });
   assert.equal(good.statusCode, 200);
-  const bad = await handler({ httpMethod: "GET", headers: { authorization: "Bearer wrong" }, queryStringParameters: { token: TOKEN } });
+  const bad = await handler({ httpMethod: "GET", blobs: CONTEXT, headers: { authorization: "Bearer wrong" }, queryStringParameters: { token: TOKEN } });
   assert.equal(bad.statusCode, 401, "a supplied header is the token, and a bad one is not silently ignored");
 });
 
@@ -417,33 +447,6 @@ function blobsApiError(status, { detail = null, requestId = null, onObject = fal
   return e;
 }
 
-test("a store that does not exist yet is an empty export, not a server error", async () => {
-  reset();
-  blobs.listError = blobsApiError(404);
-  const res = await call({ token: TOKEN, query: { format: "json" } });
-  assert.equal(res.statusCode, 200);
-  const body = JSON.parse(res.body);
-  assert.equal(body.count, 0);
-  assert.deepEqual(body.records, []);
-  // The one field that tells the operator the store has never been written to,
-  // as opposed to having been read and found empty.
-  assert.equal(body.store_exists, false);
-});
-
-test("a store that does not exist yet yields a CSV header row and nothing else", async () => {
-  reset();
-  blobs.listError = blobsApiError(404);
-  const res = await call({ token: TOKEN });
-  assert.equal(res.statusCode, 200);
-  assert.equal(res.body.split("\n").length, 1);
-  assert.ok(res.body.startsWith("key,"));
-});
-
-test("store_exists is true on a normal export", async () => {
-  reset();
-  const res = await call({ token: TOKEN, query: { format: "json" } });
-  assert.equal(JSON.parse(res.body).store_exists, true);
-});
 
 test("a storage failure is a 500 that says nothing about the store's contents", async () => {
   reset();
@@ -463,62 +466,11 @@ test("an unrecognised storage failure classifies as blobs_error", async () => {
   assert.equal(JSON.parse(res.body).reason, "blobs_error");
 });
 
-test("a missing Blobs configuration is named rather than guessed at", async () => {
-  reset();
-  delete process.env.BLOBS_SITE_ID;
-  delete process.env.BLOBS_TOKEN;
-  blobs.listError = new Error("anything at all");
-  const res = await call({ token: TOKEN });
-  assert.equal(res.statusCode, 500);
-  const body = JSON.parse(res.body);
-  assert.equal(body.reason, "blobs_not_configured");
-  assert.equal(body.blobs_manual_config, false);
-});
-
-test("a MissingBlobsEnvironmentError is named", async () => {
-  reset();
-  const e = new Error("The environment has not been configured to use Netlify Blobs");
-  e.name = "MissingBlobsEnvironmentError";
-  blobs.listError = e;
-  const res = await call({ token: TOKEN });
-  assert.equal(JSON.parse(res.body).reason, "blobs_env_missing");
-});
-
-test("a non-404 Blobs API status is reported with its status, from the message", async () => {
-  reset();
-  blobs.listError = blobsApiError(401);
-  const res = await call({ token: TOKEN });
-  assert.equal(res.statusCode, 500);
-  assert.equal(JSON.parse(res.body).reason, "blobs_api_401");
-});
-
-test("a non-404 Blobs API status is reported with its status, from the error object", async () => {
-  reset();
-  blobs.listError = blobsApiError(500, { onObject: true });
-  const res = await call({ token: TOKEN });
-  assert.equal(JSON.parse(res.body).reason, "blobs_api_500");
-});
-
-test("a 404 carried on the error object is also treated as an empty store", async () => {
-  reset();
-  blobs.listError = blobsApiError(404, { onObject: true });
-  const res = await call({ token: TOKEN, query: { format: "json" } });
-  assert.equal(res.statusCode, 200);
-  assert.equal(JSON.parse(res.body).store_exists, false);
-});
-
 /* ── The upstream detail ───────────────────────────────────────────────── */
 //
 // Netlify explains some refusals in an x-nf-error header. That text is the only
 // thing separating one 400 from another, and it is otherwise visible only in a
 // function log.
-
-test("the worded reason Netlify sends is returned", async () => {
-  reset();
-  blobs.listError = blobsApiError(400, { detail: "Invalid site ID" });
-  const res = await call({ token: TOKEN });
-  assert.equal(JSON.parse(res.body).detail, "Invalid site ID");
-});
 
 test("a bare status carries the request ID, which is what Netlify support needs", async () => {
   reset();
@@ -526,16 +478,6 @@ test("a bare status carries the request ID, which is what Netlify support needs"
   const body = JSON.parse((await call({ token: TOKEN })).body);
   assert.equal(body.reason, "blobs_api_400");
   assert.equal(body.detail, "400 status code, ID: 01JABCDEF");
-});
-
-test("a worded reason with no status still classifies, and still reports", async () => {
-  reset();
-  blobs.listError = blobsApiError(400, { detail: "store not found" });
-  const body = JSON.parse((await call({ token: TOKEN })).body);
-  // No parseable status in the message, so the class falls back rather than
-  // inventing one. The detail is what carries the meaning here.
-  assert.equal(body.reason, "blobs_error");
-  assert.equal(body.detail, "store not found");
 });
 
 test("only a BlobsInternalError has its message returned", async () => {
@@ -554,15 +496,6 @@ test("a long upstream string is truncated", async () => {
   assert.equal(body.detail.length, 200);
 });
 
-test("a secret appearing in the upstream string is redacted", async () => {
-  reset();
-  process.env.BLOBS_TOKEN = "blobs-token-MUST-NOT-LEAK";
-  blobs.listError = blobsApiError(400, { detail: "rejected token blobs-token-MUST-NOT-LEAK here" });
-  const res = await call({ token: TOKEN });
-  assert.ok(!res.body.includes("blobs-token-MUST-NOT-LEAK"));
-  assert.match(JSON.parse(res.body).detail, /\[redacted\]/);
-});
-
 test("the export token is redacted from an upstream string too", async () => {
   reset();
   blobs.listError = blobsApiError(400, { detail: "saw " + TOKEN + " in the request" });
@@ -572,57 +505,138 @@ test("the export token is redacted from an upstream string too", async () => {
 
 /* ── Which route the call took ─────────────────────────────────────────── */
 
-test("a failure reports the manual route when no context is injected", async () => {
-  reset();
-  blobs.failList = true;
-  assert.equal(JSON.parse((await call({ token: TOKEN })).body).mode, "manual");
-});
-
-test("a failure reports the injected route when only a context is present", async () => {
-  reset();
-  delete process.env.BLOBS_SITE_ID;
-  delete process.env.BLOBS_TOKEN;
-  process.env.NETLIFY_BLOBS_CONTEXT = "eyJzaXRlSUQiOiJ4In0=";
-  blobs.failList = true;
-  assert.equal(JSON.parse((await call({ token: TOKEN })).body).mode, "auto");
-});
-
-test("a failure reports neither route when nothing is configured", async () => {
-  reset();
-  delete process.env.BLOBS_SITE_ID;
-  delete process.env.BLOBS_TOKEN;
-  delete process.env.NETLIFY_BLOBS_CONTEXT;
-  blobs.failList = true;
-  const body = JSON.parse((await call({ token: TOKEN })).body);
-  assert.equal(body.mode, "unconfigured");
-  assert.equal(body.reason, "blobs_not_configured");
-});
-
-test("the manual credentials are used whenever they are present", async () => {
-  reset();
-  // Guards the precedence blobsRoute() mirrors. An injected context present
-  // alongside the manual credentials does not change which route is taken.
-  process.env.NETLIFY_BLOBS_CONTEXT = "eyJzaXRlSUQiOiJ4In0=";
-  await call({ token: TOKEN });
-  assert.deepEqual(blobs.lastGetStoreArg, {
-    name: "career-decisions-leads",
-    siteID: "test-site-id",
-    token: "test-blobs-token"
-  });
-});
-
-test("the injected route is used when the manual credentials are absent", async () => {
-  reset();
-  delete process.env.BLOBS_SITE_ID;
-  delete process.env.BLOBS_TOKEN;
-  process.env.NETLIFY_BLOBS_CONTEXT = "eyJzaXRlSUQiOiJ4In0=";
-  await call({ token: TOKEN });
-  assert.equal(blobs.lastGetStoreArg, "career-decisions-leads");
-});
-
 test("the failure body names the store so the fault is attributable", async () => {
   reset();
   blobs.failList = true;
   const res = await call({ token: TOKEN });
   assert.equal(JSON.parse(res.body).store, "career-decisions-leads");
+});
+
+/* ── The Lambda connect contract ───────────────────────────────────────── */
+//
+// Netlify support case #1099659, 2026-09-15: these functions run in Lambda
+// compatibility mode, the Blobs context arrives on event.blobs rather than in
+// the environment, and connectLambda(event) must run before getStore(). These
+// tests pin that, and pin the two defects the same investigation exposed in
+// this file's own diagnostics.
+
+test("connectLambda runs before getStore, every time", async () => {
+  reset();
+  await call({ token: TOKEN });
+  const first = blobs.calls.indexOf("connectLambda");
+  const store = blobs.calls.indexOf("getStore");
+  assert.ok(first !== -1, "connectLambda must be called at all");
+  assert.ok(store !== -1, "getStore must be called at all");
+  assert.ok(first < store, `connectLambda must precede getStore, got ${blobs.calls.join(" then ")}`);
+});
+
+test("the event handed to connectLambda is the invocation's own", async () => {
+  reset();
+  const marker = Buffer.from(JSON.stringify({ url: "https://marker", token: "t" })).toString("base64");
+  await call({ token: TOKEN, blobsContext: marker });
+  assert.equal(blobs.lastConnectEvent.blobs, marker,
+    "a stale or synthesised event would connect to the wrong deploy");
+});
+
+test("the store is asked for by name only, with no credentials", async () => {
+  reset();
+  await call({ token: TOKEN });
+  // A string is the zero-configuration form. An object carrying siteID and
+  // token would be the manual path this repair removed.
+  assert.equal(typeof blobs.lastGetStoreArg, "string");
+  assert.equal(blobs.lastGetStoreArg, "career-decisions-leads");
+});
+
+test("a missing Blobs context fails closed, and says so", async () => {
+  reset();
+  const res = await call({ token: TOKEN, blobsContext: null });
+  assert.equal(res.statusCode, 500);
+  const body = JSON.parse(res.body);
+  assert.equal(body.reason, "blobs_context_missing");
+  assert.equal(body.blobs_context_present, false);
+  // No silent fallback: nothing may be read or written without a context.
+  assert.equal(blobs.ops.list, 0);
+  assert.equal(blobs.ops.get, 0);
+});
+
+test("no manual credential path exists to fall back to", async () => {
+  reset();
+  process.env.BLOBS_SITE_ID = "should-be-ignored";
+  process.env.BLOBS_TOKEN = "should-be-ignored";
+  try {
+    const res = await call({ token: TOKEN, blobsContext: null });
+    // Even with both variables set, an absent context is still a hard failure.
+    assert.equal(res.statusCode, 500);
+    assert.equal(JSON.parse(res.body).reason, "blobs_context_missing");
+  } finally {
+    delete process.env.BLOBS_SITE_ID;
+    delete process.env.BLOBS_TOKEN;
+  }
+});
+
+/* ── The fabricated-status defect ──────────────────────────────────────── */
+//
+// blobsErrorStatus used to scan any message for the first three-digit number.
+// Netlify confirmed that is where the reported blobs_api_400 came from: their
+// API never received a request. These are the messages that used to lie.
+
+test("a plain error mentioning 300, 400 or 404 is never a Blobs API status", async () => {
+  for (const message of [
+    "connect ECONNREFUSED 400",
+    "timeout of 300 ms exceeded",
+    "no route to host 404",
+    "site 6a90-400-abc is unavailable",
+    "404"
+  ]) {
+    reset();
+    blobs.listError = new Error(message);
+    const body = JSON.parse((await call({ token: TOKEN })).body);
+    assert.equal(body.reason, "blobs_error",
+      `"${message}" must not be classified as an API status, got ${body.reason}`);
+  }
+});
+
+test("a status is read only from a structured source", async () => {
+  reset();
+  blobs.listError = blobsApiError(500, { onObject: true });
+  assert.equal(JSON.parse((await call({ token: TOKEN })).body).reason, "blobs_api_500",
+    "a numeric status property is structured and is trusted");
+
+  reset();
+  blobs.listError = blobsApiError(503);
+  assert.equal(JSON.parse((await call({ token: TOKEN })).body).reason, "blobs_api_503",
+    "the exact anchored BlobsInternalError shape is trusted");
+
+  reset();
+  // Same words, but a plain Error rather than one BlobsInternalError raised.
+  blobs.listError = new Error("Netlify Blobs has generated an internal error (401 status code)");
+  assert.equal(JSON.parse((await call({ token: TOKEN })).body).reason, "blobs_error",
+    "the message shape alone is not a structured source");
+});
+
+/* ── The false-success defect ──────────────────────────────────────────── */
+
+test("no error can produce a successful empty export", async () => {
+  for (const err of [
+    new Error("404"),
+    new Error("not found 404"),
+    blobsApiError(404),
+    blobsApiError(404, { onObject: true }),
+    Object.assign(new Error("nope"), { status: 404 })
+  ]) {
+    reset();
+    blobs.listError = err;
+    const res = await call({ token: TOKEN, query: { format: "json" } });
+    assert.equal(res.statusCode, 500,
+      "a storage fault must never be reported as an empty but successful export");
+    assert.equal(JSON.parse(res.body).error, "export_failed");
+  }
+});
+
+test("a genuinely empty store is still a normal empty export", async () => {
+  // The legitimate empty case comes from a successful list, not from an error.
+  reset({ seedRecords: {} });
+  const res = await call({ token: TOKEN, query: { format: "json" } });
+  assert.equal(res.statusCode, 200);
+  assert.equal(JSON.parse(res.body).count, 0);
 });

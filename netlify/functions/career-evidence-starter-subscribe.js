@@ -41,7 +41,8 @@
 // write from this function, so a subscriber can never end up half enrolled.
 //
 // ── Optional, and what is lost without them ──
-//   BLOBS_SITE_ID, BLOBS_TOKEN   Netlify Blobs. Without both: no durable
+//   (Blobs needs no variables. The context arrives on the Lambda event.)
+//   Without a Blobs context: no durable
 //                                first-party record and no rate limiting. The
 //                                subscription itself still completes, and the
 //                                response says which of the two happened.
@@ -52,7 +53,7 @@
 // Node 18+ (global fetch). See docs/forms-audit.md and docs/data-inventory.md.
 
 const crypto = require("crypto");
-const { blobStore, blobsConfigured } = require("../lib/blobs");
+const { blobStore, blobsAvailable } = require("../lib/blobs");
 
 // The page that calls this function is served from the same origin, so the
 // browser never applies a CORS check to a real submission and never sends a
@@ -107,10 +108,10 @@ function rateKey(ip) {
   return crypto.createHash("sha256").update(salt + "|" + ip).digest("hex");
 }
 
-async function isRateLimited(ip) {
+async function isRateLimited(event, ip) {
   if (!ip) return false;
   try {
-    const store = blobStore("career-evidence-starter-rate");
+    const store = blobStore("career-evidence-starter-rate", event);
     const key = rateKey(ip);
     const now = Date.now();
     const rec = await store.get(key, { type: "json" });
@@ -124,7 +125,7 @@ async function isRateLimited(ip) {
     // Fail open, and say so. A storage problem must not take the form down, but
     // silently running with no rate limit is how the Scan spent months
     // unprotected without anything anywhere reporting it.
-    console.error("blobs career-evidence-starter-rate failed, rate limiting is OFF. manual config present:", blobsConfigured(), e);
+    console.error("blobs career-evidence-starter-rate failed, rate limiting is OFF. manual config present:", blobsAvailable(event), e);
     return false;
   }
 }
@@ -197,7 +198,7 @@ exports.handler = async (event) => {
           "Create the Kit tag for YouTube arrivals, then set KIT_TAG_YOUTUBE to its numeric id.",
           "Set KIT_API_KEY to the Kit v3 API key.",
           "Create these Kit custom fields before launch so the submitted values are stored as intended: current_situation, delivery_consent, delivery_consent_timestamp, delivery_policy_version, guidance_consent, guidance_consent_timestamp, guidance_policy_version, first_utm_source, first_utm_medium, first_utm_campaign, first_utm_content, first_utm_term, first_source, first_video_slug, first_landing_page, first_referrer, first_seen_at, current_utm_source, current_utm_medium, current_utm_campaign, current_utm_content, current_utm_term, current_source, current_video_slug, current_landing_page, current_referrer, current_seen_at.",
-          "Optional but recommended: set BLOBS_SITE_ID and BLOBS_TOKEN for the durable first-party record and the rate limit, and RATE_LIMIT_SALT to a long random string.",
+          "Set RATE_LIMIT_SALT to a long random string. Blobs needs no variables: its context arrives on the Lambda event.",
           "Confirm in Kit whether double opt in is on for this sequence. It is an account level setting and cannot be set or read from this repository."
         ]
       })
@@ -206,7 +207,7 @@ exports.handler = async (event) => {
 
   const h = event.headers || {};
   const ip = (h["x-nf-client-connection-ip"] || (h["x-forwarded-for"] || "").split(",")[0] || "").trim();
-  if (await isRateLimited(ip)) {
+  if (await isRateLimited(event, ip)) {
     return { statusCode: 429, headers: JSON_HEADERS, body: JSON.stringify({ error: "rate_limited" }) };
   }
 
@@ -369,9 +370,9 @@ exports.handler = async (event) => {
   // there is no ambiguity about what was stored.
   let durableRecord = false;
   let recordKey = null;
-  if (blobsConfigured()) {
+  if (blobsAvailable(event)) {
     try {
-      const store = blobStore("career-evidence-starter-leads");
+      const store = blobStore("career-evidence-starter-leads", event);
       const id = (globalThis.crypto && crypto.randomUUID) ? crypto.randomUUID() : `${now.getTime()}-${Math.floor(Math.random() * 1e9)}`;
       recordKey = `${now.toISOString().replace(/[:.]/g, "-")}__${id}`;
       await store.setJSON(recordKey, {
@@ -398,11 +399,11 @@ exports.handler = async (event) => {
       });
       durableRecord = true;
     } catch (e) {
-      console.error("blobs career-evidence-starter-leads write failed. manual config present:", blobsConfigured(), e);
+      console.error("blobs career-evidence-starter-leads write failed. manual config present:", blobsAvailable(event), e);
       recordKey = null;
     }
   } else {
-    console.error("BLOBS_SITE_ID / BLOBS_TOKEN are not set: no durable first-party record was written for a confirmed subscriber.");
+    console.error("No Netlify Blobs context on this invocation: no durable first-party record was written for a confirmed subscriber.");
   }
 
   // ok:true means one thing: Kit confirmed the subscription. The page reveals
