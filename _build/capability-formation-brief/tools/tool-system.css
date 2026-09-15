@@ -1,0 +1,127 @@
+/* The Capability Formation Brief: shared print system for the paid decision tools.
+   Distinct from the website product family: deeper navy (#112345), the Brief's
+   own accent yellow, and a tighter worksheet grid. US Letter, print-first.
+   No em dashes anywhere in the tools by house rule. */
+
+@font-face { font-family:'Cormorant'; font-weight:500; font-style:normal;
+  src:url('/fonts/CormorantGaramond-500-normal-latin-abcaa8.woff2') format('woff2'); font-display:swap; }
+@font-face { font-family:'Cormorant'; font-weight:600; font-style:normal;
+  src:url('/fonts/CormorantGaramond-600-normal-latin-abcaa8.woff2') format('woff2'); font-display:swap; }
+@font-face { font-family:'Cormorant'; font-weight:500; font-style:italic;
+  src:url('/fonts/CormorantGaramond-500-italic-latin-4db21d.woff2') format('woff2'); font-display:swap; }
+@font-face { font-family:'DM Sans'; font-weight:400; font-style:normal;
+  src:url('/fonts/DMSans-400-normal-latin-1c49a6.woff2') format('woff2'); font-display:swap; }
+@font-face { font-family:'DM Sans'; font-weight:500; font-style:normal;
+  src:url('/fonts/DMSans-500-normal-latin-1c49a6.woff2') format('woff2'); font-display:swap; }
+@font-face { font-family:'DM Sans'; font-weight:600; font-style:normal;
+  src:url('/fonts/DMSans-600-normal-latin-1c49a6.woff2') format('woff2'); font-display:swap; }
+
+:root{
+  --navy:#112345; --cream:#F5F1E8; --gold:#C9A84C; --accent:#F2C44C;
+  --ink:#232C3D; --muted:#5B6472; --line:rgba(17,35,69,.20);
+  --hair:rgba(17,35,69,.12); --white:#ffffff; --paper:#FCFAF5;
+}
+
+*{ box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+html,body{ margin:0; padding:0; background:#e7e2d6; }
+@page{ size:Letter; margin:0; }
+
+.page{
+  position:relative; width:8.5in; height:11in; background:var(--cream);
+  padding:0.5in 0.72in 0.5in; overflow:hidden;
+  font-family:'DM Sans',Arial,sans-serif; color:var(--ink);
+  page-break-after:always; break-after:page;
+}
+.page:last-child{ page-break-after:auto; break-after:auto; }
+@media screen{ .page{ margin:22px auto; box-shadow:0 10px 40px rgba(0,0,0,.22); } }
+
+/* Masthead */
+.mast{ display:flex; justify-content:space-between; align-items:baseline;
+  border-bottom:1px solid var(--line); padding-bottom:8px; }
+.mast .brand{ font-size:8.5px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:var(--navy); }
+.mast .cat{ font-size:8.5px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; color:var(--gold); }
+
+/* Title block */
+.eyebrow{ font-size:10.5px; font-weight:600; letter-spacing:.2em; text-transform:uppercase; color:var(--gold); margin:15px 0 8px; }
+h1{ font-family:'Cormorant',Georgia,serif; font-weight:600; color:var(--navy);
+  font-size:37px; line-height:1.02; letter-spacing:-.005em; margin:0; }
+.subtitle{ font-family:'Cormorant',Georgia,serif; font-style:italic; font-weight:500;
+  color:var(--muted); font-size:17px; margin:7px 0 0; }
+.accent-rule{ width:52px; height:4px; background:var(--accent); margin:13px 0 0; }
+
+.lead{ font-size:12px; line-height:1.5; color:var(--ink); margin:12px 0 0; max-width:60ch; }
+.lead strong{ color:var(--navy); font-weight:600; }
+
+/* Section label */
+.slabel{ font-size:11px; font-weight:600; letter-spacing:.14em; text-transform:uppercase;
+  color:var(--navy); margin:14px 0 8px; display:flex; align-items:center; gap:9px; }
+.slabel::before{ content:""; width:14px; height:2px; background:var(--gold); display:inline-block; }
+
+/* The four reads / definition rows */
+.reads{ display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:2px; }
+.read{ background:var(--white); border:1px solid var(--line); border-left:3px solid var(--navy); border-radius:3px; padding:9px 12px; }
+.read.accent{ border-left-color:var(--accent); }
+.read .tag{ font-family:'Cormorant',serif; font-weight:600; font-size:18px; color:var(--navy); line-height:1; }
+.read .tag b{ color:var(--gold); }
+.read .rd-name{ font-size:11px; font-weight:600; color:var(--navy); text-transform:uppercase; letter-spacing:.08em; margin:3px 0 4px; }
+.read p{ font-size:11px; line-height:1.45; color:var(--ink); margin:0; }
+
+/* Guided questions */
+.qrow{ border-top:1px solid var(--hair); padding:6px 0; }
+.qrow:last-child{ border-bottom:1px solid var(--hair); }
+.qnum{ font-family:'Cormorant',serif; font-weight:600; color:var(--gold); font-size:16px; }
+.qtext{ font-size:12px; line-height:1.4; color:var(--ink); }
+.qtext b{ color:var(--navy); font-weight:600; }
+.opts{ display:flex; gap:16px; margin-top:6px; }
+.opt{ display:flex; align-items:center; gap:6px; font-size:10.5px; color:var(--muted); }
+.box{ width:11px; height:11px; border:1.4px solid var(--navy); border-radius:2px; display:inline-block; }
+
+.howto{ background:var(--paper); border:1px solid var(--hair); border-radius:3px; padding:9px 12px; margin-top:9px; }
+.howto p{ font-size:10.2px; line-height:1.45; color:var(--ink); margin:0 0 4px; }
+.howto p:last-child{ margin-bottom:0; }
+.howto b{ color:var(--navy); }
+
+/* Result capture */
+.result{ display:flex; align-items:center; gap:14px; margin:4px 0 0; }
+.result .pick{ display:flex; gap:10px; }
+.pick .p{ width:34px; height:34px; border:1.6px solid var(--navy); border-radius:50%;
+  display:flex; align-items:center; justify-content:center; font-family:'Cormorant',serif;
+  font-weight:600; font-size:19px; color:var(--navy); }
+.result .rlab{ font-size:11px; color:var(--muted); }
+
+/* Output blocks */
+.out{ margin-top:14px; }
+.out .oh{ display:flex; align-items:baseline; gap:10px; }
+.out .oh .n{ font-family:'Cormorant',serif; font-weight:600; font-size:16px; color:var(--gold); }
+.out .oh .t{ font-size:11.5px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--navy); }
+.out .hint{ font-size:10px; color:var(--muted); margin:2px 0 7px 26px; }
+.lines{ margin-left:26px; }
+.ln{ height:.30in; border-bottom:1px solid var(--line); }
+.ln.short{ width:70%; }
+
+.write{ background:var(--white); border:1px solid var(--line); border-radius:3px; }
+.write .ln{ margin:0 12px; }
+
+/* Closing + footer */
+.closing{ font-family:'Cormorant',serif; font-style:italic; font-size:14px; color:var(--navy);
+  margin-top:16px; padding-top:12px; border-top:1px solid var(--gold); }
+.foot{ position:absolute; left:0.72in; right:0.72in; bottom:0.38in;
+  display:flex; justify-content:space-between; align-items:center;
+  font-size:8.5px; letter-spacing:.06em; color:var(--muted); border-top:1px solid var(--hair); padding-top:7px; }
+.foot .site{ color:var(--navy); font-weight:600; }
+
+.two{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.meta-chip{ display:inline-block; font-size:9.5px; font-weight:600; letter-spacing:.08em;
+  text-transform:uppercase; color:var(--navy); background:rgba(201,168,76,.16);
+  border:1px solid var(--gold-border,rgba(201,168,76,.4)); border-radius:20px; padding:3px 10px; }
+
+/* 3P Role Read blocks */
+.pblock{ background:var(--white); border:1px solid var(--line); border-left:3px solid var(--gold); border-radius:3px; padding:12px 14px; margin-top:10px; }
+.phead{ display:flex; align-items:baseline; gap:12px; }
+.pmark{ font-family:'Cormorant',serif; font-weight:600; font-size:21px; color:var(--navy); line-height:1; min-width:96px; }
+.pq{ font-size:12px; color:var(--ink); }
+.pq b{ color:var(--navy); font-weight:600; }
+.prate{ display:flex; gap:18px; margin:9px 0 8px; }
+.pwrite-label{ font-size:10px; color:var(--muted); margin-top:2px; }
+.synth{ margin-top:14px; }
+.synth .oh .t{ color:var(--navy); }
