@@ -3,7 +3,7 @@
 // Stores one Netlify Blob per lead (store: "ai-readiness-leads"). This is the
 // record you control; the page ALSO posts to Formspree for the email ping.
 // No Kit here: follow-up on these leads is personal, not an automated sequence.
-const { blobStore, blobsConfigured } = require("../lib/blobs");
+const { blobStore, blobsAvailable } = require("../lib/blobs");
 
 const CORS = {
   "Access-Control-Allow-Origin": "*",
@@ -59,7 +59,7 @@ exports.handler = async (event) => {
   };
 
   try {
-    const store = blobStore("ai-readiness-leads");
+    const store = blobStore("ai-readiness-leads", event);
     const id = (globalThis.crypto && crypto.randomUUID)
       ? crypto.randomUUID()
       : `${now.getTime()}-${Math.floor(Math.random() * 1e9)}`;
@@ -67,7 +67,7 @@ exports.handler = async (event) => {
     await store.setJSON(key, record);
     return { statusCode: 200, headers: CORS, body: JSON.stringify({ ok: true, key }) };
   } catch (e) {
-    console.error("blobs ai-readiness-leads write failed. manual config present:", blobsConfigured(), e);
+    console.error("blobs ai-readiness-leads write failed. manual config present:", blobsAvailable(event), e);
     return { statusCode: 500, headers: CORS, body: JSON.stringify({ error: "storage_failed" }) };
   }
 };

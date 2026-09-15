@@ -17,12 +17,17 @@ import Module from "node:module";
 import { createRequire } from "node:module";
 
 /* ── In-memory Netlify Blobs stub ──────────────────────────────────────── */
-const blobs = { stores: new Map(), failWrites: false, failReads: false };
+const blobs = { stores: new Map(), failWrites: false, failReads: false, calls: [], getOpts: [] };
+
+// The Blobs context as Netlify delivers it to a Lambda-compatible function:
+// base64 JSON on event.blobs, never in the environment.
+const CONTEXT = Buffer.from(JSON.stringify({ url: "https://blobs.example", token: "x" })).toString("base64");
 function fakeStore(name) {
   if (!blobs.stores.has(name)) blobs.stores.set(name, new Map());
   const m = blobs.stores.get(name);
   return {
-    async get(key) {
+    async get(key, opts) {
+      blobs.getOpts.push(opts || {});
       if (blobs.failReads) throw new Error("stub read failure");
       return m.has(key) ? m.get(key) : null;
     },
@@ -35,7 +40,16 @@ function fakeStore(name) {
 const originalLoad = Module._load;
 Module._load = function (request, parent, isMain) {
   if (request === "@netlify/blobs") {
-    return { getStore: (arg) => fakeStore(typeof arg === "string" ? arg : arg.name) };
+    return {
+      connectLambda: (event) => {
+        blobs.calls.push("connectLambda");
+        if (!event || !event.blobs) throw new Error("stub: no event.blobs");
+      },
+      getStore: (arg) => {
+        blobs.calls.push("getStore");
+        return fakeStore(typeof arg === "string" ? arg : arg.name);
+      }
+    };
   }
   return originalLoad.apply(this, arguments);
 };
@@ -104,9 +118,14 @@ function touches(first, current) {
   return { first: first || {}, current: current || first || {} };
 }
 
-function call(body, { method = "POST", ip = "203.0.113.7" } = {}) {
+// blobsContext null means Netlify attached none. undefined would hit the
+// default and quietly supply one, hiding the fail-closed path.
+function call(body, { method = "POST", ip = "203.0.113.7", blobsContext = CONTEXT } = {}) {
+  blobs.calls = [];
+  blobs.getOpts = [];
   return handler({
     httpMethod: method,
+    blobs: blobsContext,
     headers: { "x-nf-client-connection-ip": ip },
     body: typeof body === "string" ? body : JSON.stringify(body)
   });
@@ -353,9 +372,12 @@ test("a storage failure after a confirmed subscription still confirms, and says 
   assert.equal(body.durable_record, false, "and the response must say the record was not stored");
 });
 
-test("with Blobs unconfigured the subscription still completes and durable_record is false", async () => {
-  reset({ env: { BLOBS_SITE_ID: undefined, BLOBS_TOKEN: undefined } });
-  const res = await call(payload());
+test("with no Blobs context the subscription still completes and durable_record is false", async () => {
+  // Was expressed as BLOBS_SITE_ID and BLOBS_TOKEN being unset. Those variables
+  // are no longer read anywhere: the context arrives on the Lambda event, so
+  // its absence is what this case now means.
+  reset();
+  const res = await call(payload(), { blobsContext: null });
   assert.equal(res.statusCode, 200);
   assert.equal(parse(res).durable_record, false);
 });
@@ -500,4 +522,52 @@ test("a storage failure turns the rate limit off rather than the endpoint", asyn
   blobs.failReads = true;
   const res = await call(payload());
   assert.equal(res.statusCode, 200, "a legitimate submission must still succeed");
+});
+
+
+/* ── The Lambda connect contract ───────────────────────────────────────── */
+
+test("connectLambda runs before getStore on the subscribe path too", async () => {
+  reset();
+  await call(payload());
+  const first = blobs.calls.indexOf("connectLambda");
+  const store = blobs.calls.indexOf("getStore");
+  assert.ok(first !== -1 && store !== -1, blobs.calls.join(" then "));
+  assert.ok(first < store, `got ${blobs.calls.join(" then ")}`);
+});
+
+test("the rate limiter receives the event, not just the address", async () => {
+  reset();
+  // isRateLimited used to take only the IP, so it had no way to connect. It
+  // failed open on every request, which is why the limiter was silently dead.
+  await call(payload());
+  assert.ok(blobs.calls.includes("connectLambda"),
+    "the rate limiter's own store access must connect first");
+});
+
+test("the limiter never asks Blobs for strong consistency", async () => {
+  reset();
+  await call(payload());
+  // In Lambda compatibility mode connectLambda supplies deployID, edgeURL,
+  // siteID and token, and no uncachedEdgeURL. Strong consistency is routed
+  // through uncachedEdgeURL, so asking for it raises BlobsConsistencyError
+  // before any network call. That throw would be swallowed by the limiter's
+  // fail-open catch and rate limiting would be off entirely. Reading stale and
+  // under-counting is the lesser fault, and it is the deliberate choice here.
+  assert.ok(blobs.getOpts.length > 0, "the limiter must have read the counter");
+  for (const o of blobs.getOpts) {
+    assert.notEqual(o.consistency, "strong",
+      "strong consistency is unavailable in Lambda mode and would disable the limiter");
+  }
+});
+
+test("a missing Blobs context does not break the subscription", async () => {
+  reset();
+  const res = await call(payload(), { blobsContext: null });
+  // The durable write and the rate limit are best effort by design: a storage
+  // fault must not cost the visitor the thing they asked for.
+  assert.equal(res.statusCode, 200);
+  assert.equal(parse(res).ok, true);
+  assert.equal(parse(res).durable_record, false,
+    "and the absence must be reported, not hidden");
 });
