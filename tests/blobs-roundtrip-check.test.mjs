@@ -140,3 +140,28 @@ test("no response carries the token, a key, or record content", async () => {
   assert.ok(!/roundtrip-[0-9a-f]{8}/.test(res.body), "the disposable key is not disclosed");
   assert.ok(!res.body.includes("written_at"), "no record content");
 });
+
+test("it is refused outright in the production context, token or not", async () => {
+  reset();
+  process.env.CONTEXT = "production";
+  try {
+    // A valid token must not be enough. This endpoint has no business running
+    // against the live site.
+    const res = await call();
+    assert.equal(res.statusCode, 404);
+    assert.equal(JSON.parse(res.body).error, "not_found");
+    assert.equal(blobs.calls.length, 0, "no storage call in production, ever");
+  } finally {
+    delete process.env.CONTEXT;
+  }
+});
+
+test("it runs on a deploy preview", async () => {
+  reset();
+  process.env.CONTEXT = "deploy-preview";
+  try {
+    assert.equal((await call()).statusCode, 200);
+  } finally {
+    delete process.env.CONTEXT;
+  }
+});

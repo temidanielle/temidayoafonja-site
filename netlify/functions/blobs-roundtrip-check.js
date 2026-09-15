@@ -16,8 +16,9 @@
 // GET only, and returns booleans and counts. No record content, no context, no
 // credential and no exception text ever appears in the response.
 //
-// This exists to verify the repair on a deploy preview. It should be removed
-// once the repair is merged and confirmed; it is not part of the site.
+// It is refused outright in the production context, so it cannot run on the
+// live site even with a valid token. It should still be deleted once the repair
+// is merged and confirmed; it is not part of the site.
 const crypto = require("crypto");
 const { blobStore } = require("../lib/blobs");
 
@@ -50,6 +51,13 @@ function suppliedToken(event) {
 exports.handler = async (event) => {
   if (event.httpMethod && event.httpMethod !== "GET") {
     return { statusCode: 405, headers: BASE_HEADERS, body: JSON.stringify({ error: "method_not_allowed" }) };
+  }
+  // Never available on the live site, whatever token is presented. Netlify sets
+  // CONTEXT to "production", "deploy-preview" or "branch-deploy". This endpoint
+  // exists to verify a repair on a preview; it has no business running against
+  // the production site, and a token alone should not be enough to let it.
+  if (process.env.CONTEXT === "production") {
+    return { statusCode: 404, headers: BASE_HEADERS, body: JSON.stringify({ error: "not_found" }) };
   }
   if (!process.env.RESEARCH_EXPORT_TOKEN) {
     return { statusCode: 503, headers: BASE_HEADERS, body: JSON.stringify({ error: "server_token_not_configured" }) };
