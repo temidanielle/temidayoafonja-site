@@ -1,0 +1,224 @@
+==============================================================================
+NEW PUBLIC V11  |  CAMERA AND FULL-SCREEN MAP
+==============================================================================
+
+What to Do When Your New Job Isn’t the Job You Accepted
+
+Every stretch of this video is marked. CAMERA means Temidayo
+carries the moment and no graphic should appear over her.
+FULL SCREEN means the idea takes the screen, with no presenter
+moving behind it and no semi-transparent overlay.
+
+------------------------------------------------------------------------------
+
+  18 camera stretches
+  12 full-screen cues, one per card
+  873 of 1116 spoken words delivered on camera
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+SECTION 1  HOOK
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  4 paragraphs, 80 words
+      You accepted one job. Then you started doing another.
+      Maybe the title is the same. Maybe the salary is the same. But three or six weeks in, the work i...
+      Before you call it a bait-and-switch, I want you to slow the read down. Roles change. Priorities...
+      But there is a point where normal evolution becomes something you need to evaluate.
+
+  [ FULL SCREEN ]  NEW_V11_FS_01_FOUR_QUESTIONS   (NEW)
+      TRIGGER:  I use four questions for that: EXPECTED. ACTUAL. COST. CHOICE.
+      STATES:   NEW_V11_FS_01_ESTABLISH, NEW_V11_FS_01A_EXPECTED, NEW_V11_FS_01B_ACTUAL, NEW_V11_FS_01C_COST, NEW_V11_FS_01D_CHOICE
+      HOLD:     Hold the complete frame before the first activation.
+
+  [ CAMERA ]  1 paragraph, 40 words
+      By the end of this video, you should be able to tell whether you are adjusting to a new context,...
+
+
+------------------------------------------------------------------------------
+SECTION 2  1 | EXPECTED
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  2 paragraphs, 37 words
+      Start with EXPECTED. What did you reasonably believe you were accepting?
+      Not the fantasy version of the role. The version supported by the job description, the interview...
+
+  [ FULL SCREEN ]  NEW_V11_FS_02_WRITE_IT_DOWN   (NEW)
+      TRIGGER:  Write down the parts that mattered to your decision. Scope. Authority. Reporting line. Location. Travel. Compensation. Team. The kind of work you expected to spend meaningful time doing.
+      STATES:   NEW_V11_FS_02_WRITE_IT_DOWN
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  2 paragraphs, 36 words
+      This matters because memory gets fuzzy once the new reality becomes normal.
+      If you cannot name what you expected, every disappointment can start to feel like drift, even wh...
+
+
+------------------------------------------------------------------------------
+SECTION 3  2 | ACTUAL
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  4 paragraphs, 83 words
+      Then write ACTUAL. What is the job asking from you now?
+      Do not judge it from one bad week. Look for the recurring pattern.
+      What work is actually consuming your time? What decisions are actually yours? What access do you...
+      Sometimes the actual role is better than the one you expected. You may have more scope, more vis...
+
+  [ FULL SCREEN ]  NEW_V11_FS_03_EXPECTED_VS_ACTUAL   (NEW)
+      TRIGGER:  And sometimes the actual role is narrower. You were hired for strategy and spend most of your time coordinating. You expected to lead a team and the team never arrived. You were told a decision was yours and discover that you can only recommend.
+      STATES:   NEW_V11_FS_03A_BOTH_DIRECTIONS, NEW_V11_FS_03B_NARROWER
+      HOLD:     Hold long enough to read both columns.
+
+  [ FULL SCREEN ]  NEW_V11_FS_04_THE_REAL_QUESTION   (NEW)
+      TRIGGER:  The question is not, “Is this exactly what was written?” The question is, “Is the actual role still close enough to the role I agreed to build my life and career around?”
+      STATES:   NEW_V11_FS_04_THE_REAL_QUESTION
+      HOLD:     Hold until the sentence lands, then cut back.
+
+
+------------------------------------------------------------------------------
+SECTION 4  3 | COST
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  3 paragraphs, 39 words
+      Then ask COST. What does the difference actually cost you?
+      Not every mismatch deserves the same response.
+      Imagine you expected a strategic role, but the first month is unusually operational because a la...
+
+  [ FULL SCREEN ]  NEW_V11_FS_05_TEMPORARY_OR_NOT   (NEW)
+      TRIGGER:  Now imagine six months later the strategic work still has not appeared, you are still doing work you already knew how to do, and there is no credible path to the scope you accepted.
+      STATES:   NEW_V11_FS_05_TEMPORARY_OR_NOT
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  3 paragraphs, 85 words
+      That difference has a career cost. It may affect the capability you are building, the evidence y...
+      There can also be a positive cost calculation. The job may be different but better. Maybe you ga...
+      The point is not to punish change. The point is to understand the consequence of the change.
+
+
+------------------------------------------------------------------------------
+SECTION 5  THE FOUR COST LENSES
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  NEW_V11_FS_06_FOUR_COST_LENSES   (NEW)
+      TRIGGER:  I would look at four costs.
+      STATES:   NEW_V11_FS_06_ESTABLISH, NEW_V11_FS_06A_CAPABILITY, NEW_V11_FS_06B_EVIDENCE, NEW_V11_FS_06C_COMPENSATION, NEW_V11_FS_06D_LIFE
+      HOLD:     End on the complete frame.
+
+  [ CAMERA ]  5 paragraphs, 87 words
+      CAPABILITY. Is this role building judgment, scope, and experience you want to carry forward?
+      EVIDENCE. Will you be able to prove meaningful work from this version of the job?
+      COMPENSATION. Has the scope changed enough that the pay, level, or agreement needs to be revisit...
+      LIFE. Did the practical cost change: travel, hours, location, caregiving, health, or something e...
+      A mismatch can be manageable in one category and unacceptable in another. You need to know which...
+
+
+------------------------------------------------------------------------------
+SECTION 6  4 | CHOICE
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  2 paragraphs, 17 words
+      Then comes CHOICE. What can you clarify, negotiate, test, or decide next?
+      Start with clarification before accusation.
+
+  [ FULL SCREEN ]  NEW_V11_FS_07_CLARIFICATION_SCRIPT   (NEW)
+      TRIGGER:  I would say something like: “When we discussed this role, I expected X. In practice, I am seeing Y. Is that temporary, or is this the role as it now exists?”
+      STATES:   NEW_V11_FS_07_CLARIFICATION_SCRIPT
+      HOLD:     Hold the complete card long enough to screenshot.
+
+  [ CAMERA ]  3 paragraphs, 95 words
+      That question gives the other person room to explain what changed without requiring you to prete...
+      If the answer is temporary, ask what changes, by when, and what you should expect to own when th...
+      If the answer is that this is now the role, you have a different decision. You can negotiate sco...
+
+
+------------------------------------------------------------------------------
+SECTION 7  WHAT NOT TO DO
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  NEW_V11_FS_08_TWO_EXTREMES   (NEW)
+      TRIGGER:  I would avoid two extremes.
+      STATES:   NEW_V11_FS_08_TWO_EXTREMES
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  3 paragraphs, 57 words
+      Do not convince yourself that every mismatch is a betrayal. A job can change for legitimate reas...
+      And do not keep making career decisions based on the job you accepted when the job you are actua...
+      The problem is not that reality changed. The problem is refusing to update your read.
+
+
+------------------------------------------------------------------------------
+SECTION 8  THE ROLE-DRIFT READ
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  4 paragraphs, 41 words
+      So put the four lines next to each other.
+      EXPECTED. What did I reasonably believe I was accepting?
+      ACTUAL. What is true now, based on the recurring pattern?
+      COST. What is the difference doing to my capability, evidence, compensation, or life?
+
+  [ FULL SCREEN ]  NEW_V11_FS_09_THE_ROLE_DRIFT_READ   (NEW)
+      TRIGGER:  CHOICE. What can I clarify, negotiate, test, or decide next?
+      STATES:   NEW_V11_FS_09_ESTABLISH, NEW_V11_FS_09A_EXPECTED, NEW_V11_FS_09B_ACTUAL, NEW_V11_FS_09C_COST, NEW_V11_FS_09D_CHOICE
+      HOLD:     End on the complete frame and hold. This is the card the video is for.
+
+  [ CAMERA ]  1 paragraph, 28 words
+      That is a role-drift read. It gives you something more useful than “I hate this job” and somethi...
+
+
+------------------------------------------------------------------------------
+SECTION 9  THE BOUNDARY
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  NEW_V11_FS_10_THE_BOUNDARY   (NEW)
+      TRIGGER:  This framework does not tell you whether to leave.
+      STATES:   NEW_V11_FS_10_THE_BOUNDARY
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  3 paragraphs, 45 words
+      Sometimes the right choice is to stay because the drift is temporary or the actual role is bette...
+      Sometimes you stay because leaving is not practical yet.
+      And sometimes the gap is large enough that you need to plan an exit.
+
+  [ FULL SCREEN ]  NEW_V11_FS_11_YOUR_CONSTRAINTS   (NEW)
+      TRIGGER:  Your constraints are real. Compensation, health, caregiving, immigration, geography, timing, the market, and financial runway can all shape what is possible.
+      STATES:   NEW_V11_FS_11_YOUR_CONSTRAINTS
+      HOLD:     Hold until the sentence lands, then cut back.
+
+  [ CAMERA ]  1 paragraph, 21 words
+      The goal is not to force a dramatic decision. It is to make the decision from the job that actua...
+
+
+------------------------------------------------------------------------------
+SECTION 10  CLOSE
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  1 paragraph, 19 words
+      The job description got you into the role. The first few months tell you what the role really is...
+
+  [ FULL SCREEN ]  NEW_V11_FS_12_NAME_THE_DIFFERENCE   (NEW)
+      TRIGGER:  If those two versions are different, name the difference before you normalize it.
+      STATES:   NEW_V11_FS_12_NAME_THE_DIFFERENCE
+      HOLD:     Hold, then go to the Watch Next card.
+
+  [ CAMERA ]  2 paragraphs, 35 words
+      Expected. Actual. Cost. Choice.
+      You do not need the job to stay frozen exactly as it was sold. But you do need to know what chan...
+
+
+------------------------------------------------------------------------------
+SECTION 11  WATCH NEXT
+------------------------------------------------------------------------------
+
+  [ CAMERA ]  1 paragraph, 28 words
+      And if the role is depending on you more and more without building anything new in you, watch “I...
+
+
+------------------------------------------------------------------------------
+WATCH NEXT  |  FULL SCREEN AND FINAL
+------------------------------------------------------------------------------
+
+  [ FULL SCREEN ]  NEW_V11_WATCH_NEXT
+      SPOKEN LINE: And if the role is depending on you more and more without building anything new in you, watch “If Your Company Needs You but Won’t Grow You” next.
+      DESTINATION: If Your Company Needs You but Won’t Grow You
+      Nothing returns to camera after this card.

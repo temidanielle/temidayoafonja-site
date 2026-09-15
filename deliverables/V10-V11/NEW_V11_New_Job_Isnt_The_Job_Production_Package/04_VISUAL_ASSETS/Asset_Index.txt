@@ -1,0 +1,139 @@
+==============================================================================
+NEW PUBLIC V11  |  ASSET INDEX
+==============================================================================
+
+What to Do When Your New Job Isn’t the Job You Accepted
+
+13 families, 26 image states.
+PNG is 1920 x 1080. An SVG is provided where a designer may need
+to re-time or recolor the card; its text is live and the brand
+faces are embedded.
+
+------------------------------------------------------------------------------
+
+NEW_V11_FS_01_FOUR_QUESTIONS
+    CLASS:      NEW
+    PURPOSE:    The framework arrives only after the mismatch is recognizable. Sequential, one word at a time.
+    TREATMENT:  SEQUENCE
+    NEW_V11_FS_01_ESTABLISH.png                    NEW_V11_FS_01_ESTABLISH.png, NEW_V11_FS_01_ESTABLISH.svg
+    NEW_V11_FS_01A_EXPECTED.png                    NEW_V11_FS_01A_EXPECTED.png
+    NEW_V11_FS_01B_ACTUAL.png                      NEW_V11_FS_01B_ACTUAL.png
+    NEW_V11_FS_01C_COST.png                        NEW_V11_FS_01C_COST.png
+    NEW_V11_FS_01D_CHOICE.png                      NEW_V11_FS_01D_CHOICE.png
+    SOURCE:
+        Spoken: EXPECTED. ACTUAL. COST. CHOICE. Each support line is
+        the script's own question for that word.
+
+NEW_V11_FS_02_WRITE_IT_DOWN
+    CLASS:      NEW
+    PURPOSE:    The parts of the offer that mattered to the decision. A list, because the viewer is being asked to actually write it down.
+    TREATMENT:  STATEMENT
+    NEW_V11_FS_02_WRITE_IT_DOWN.png                NEW_V11_FS_02_WRITE_IT_DOWN.png
+    SOURCE:
+        Spoken, word for word, in the script's order.
+
+NEW_V11_FS_03_EXPECTED_VS_ACTUAL
+    CLASS:      NEW
+    PURPOSE:    The comparison the brief asks for. The viewer needs to see the difference between what was reasonably accepted and what the recurring reality has become. Both directions are shown: the script says the actual role is sometimes better.
+    TREATMENT:  COMPARISON
+    NEW_V11_FS_03A_BOTH_DIRECTIONS.png             NEW_V11_FS_03A_BOTH_DIRECTIONS.png, NEW_V11_FS_03A_BOTH_DIRECTIONS.svg
+    NEW_V11_FS_03B_NARROWER.png                    NEW_V11_FS_03B_NARROWER.png
+    SOURCE:
+        Spoken, word for word. Both directions are kept because the
+        script keeps both: the actual role is sometimes better.
+
+NEW_V11_FS_04_THE_REAL_QUESTION
+    CLASS:      NEW
+    PURPOSE:    The script replaces the obvious question with a better one. The replacement is what belongs on screen.
+    TREATMENT:  STATEMENT
+    NEW_V11_FS_04_THE_REAL_QUESTION.png            NEW_V11_FS_04_THE_REAL_QUESTION.png
+    SOURCE:
+        Both questions are spoken, word for word.
+
+NEW_V11_FS_05_TEMPORARY_OR_NOT
+    CLASS:      NEW
+    PURPOSE:    The difference between a temporary condition and a settled one is the heart of the cost read, and it is a contrast the viewer can see.
+    TREATMENT:  COMPARISON
+    NEW_V11_FS_05_TEMPORARY_OR_NOT.png             NEW_V11_FS_05_TEMPORARY_OR_NOT.png
+    SOURCE:
+        Spoken, word for word. The script offers the temporary reading
+        first and this card keeps that order.
+
+NEW_V11_FS_06_FOUR_COST_LENSES
+    CLASS:      NEW
+    PURPOSE:    The four cost lenses. One active idea at a time, because the viewer is being asked to work out which one they are reacting to.
+    TREATMENT:  FRAMEWORK
+    NEW_V11_FS_06_ESTABLISH.png                    NEW_V11_FS_06_ESTABLISH.png, NEW_V11_FS_06_ESTABLISH.svg
+    NEW_V11_FS_06A_CAPABILITY.png                  NEW_V11_FS_06A_CAPABILITY.png
+    NEW_V11_FS_06B_EVIDENCE.png                    NEW_V11_FS_06B_EVIDENCE.png
+    NEW_V11_FS_06C_COMPENSATION.png                NEW_V11_FS_06C_COMPENSATION.png
+    NEW_V11_FS_06D_LIFE.png                        NEW_V11_FS_06D_LIFE.png
+    SOURCE:
+        All four lenses are spoken, word for word, in the script's
+        order.
+
+NEW_V11_FS_07_CLARIFICATION_SCRIPT
+    CLASS:      NEW
+    PURPOSE:    The save-worthy card. This is the sentence the viewer will screenshot and use, so it is given the whole frame and no decoration.
+    TREATMENT:  STATEMENT
+    NEW_V11_FS_07_CLARIFICATION_SCRIPT.png         NEW_V11_FS_07_CLARIFICATION_SCRIPT.png, NEW_V11_FS_07_CLARIFICATION_SCRIPT.svg
+    SOURCE:
+        Spoken, word for word. The question is written to invite an
+        explanation, not to accuse.
+
+NEW_V11_FS_08_TWO_EXTREMES
+    CLASS:      NEW
+    PURPOSE:    The boundary card. Both failure modes are given equal weight so neither the employer nor the viewer is cast as the villain.
+    TREATMENT:  COMPARISON
+    NEW_V11_FS_08_TWO_EXTREMES.png                 NEW_V11_FS_08_TWO_EXTREMES.png
+    SOURCE:
+        Spoken, word for word. The first half is the script's own
+        protection for legitimate role change.
+
+NEW_V11_FS_09_THE_ROLE_DRIFT_READ
+    CLASS:      NEW
+    PURPOSE:    The final tool. Four lines arriving one at a time, then complete.
+    TREATMENT:  FRAMEWORK
+    NEW_V11_FS_09_ESTABLISH.png                    NEW_V11_FS_09_ESTABLISH.png, NEW_V11_FS_09_ESTABLISH.svg
+    NEW_V11_FS_09A_EXPECTED.png                    NEW_V11_FS_09A_EXPECTED.png
+    NEW_V11_FS_09B_ACTUAL.png                      NEW_V11_FS_09B_ACTUAL.png
+    NEW_V11_FS_09C_COST.png                        NEW_V11_FS_09C_COST.png
+    NEW_V11_FS_09D_CHOICE.png                      NEW_V11_FS_09D_CHOICE.png
+    SOURCE:
+        All four lines are spoken, word for word, in the script's
+        order.
+
+NEW_V11_FS_10_THE_BOUNDARY
+    CLASS:      NEW
+    PURPOSE:    The boundary, stated plainly. The framework is a read, not a verdict, and the card says exactly that.
+    TREATMENT:  STATEMENT
+    NEW_V11_FS_10_THE_BOUNDARY.png                 NEW_V11_FS_10_THE_BOUNDARY.png
+    SOURCE:
+        Spoken, word for word. The script keeps every one of these
+        options open and the card keeps them open too.
+
+NEW_V11_FS_11_YOUR_CONSTRAINTS
+    CLASS:      NEW
+    PURPOSE:    The constraints that shape what is possible. Named, because leaving them out would turn the video into advice for people with no constraints.
+    TREATMENT:  STATEMENT
+    NEW_V11_FS_11_YOUR_CONSTRAINTS.png             NEW_V11_FS_11_YOUR_CONSTRAINTS.png
+    SOURCE:
+        Spoken, word for word.
+
+NEW_V11_FS_12_NAME_THE_DIFFERENCE
+    CLASS:      NEW
+    PURPOSE:    The closing instruction. It is the CTA the script actually speaks: no product ask was added.
+    TREATMENT:  ACTION
+    NEW_V11_FS_12_NAME_THE_DIFFERENCE.png          NEW_V11_FS_12_NAME_THE_DIFFERENCE.png
+    SOURCE:
+        Spoken, word for word. The script names no product and none
+        appears on any card.
+
+NEW_V11_WATCH_NEXT
+    CLASS:      NEW
+    PURPOSE:    The destination the script speaks. Full screen and final: nothing returns to camera after it.
+    TREATMENT:  WATCH NEXT
+    NEW_V11_WATCH_NEXT.png                         NEW_V11_WATCH_NEXT.png
+    SOURCE:
+        Intended destination, named on the script's final full-screen
+        card. Confirm it is publicly live before upload.

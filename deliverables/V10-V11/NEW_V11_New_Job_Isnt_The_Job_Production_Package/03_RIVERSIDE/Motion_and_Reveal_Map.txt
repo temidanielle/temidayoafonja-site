@@ -1,0 +1,144 @@
+==============================================================================
+NEW PUBLIC V11  |  MOTION AND REVEAL MAP
+==============================================================================
+
+What to Do When Your New Job Isn’t the Job You Accepted
+
+Reveal order for every card with more than one state, and the
+emphasis state of each. A numbered point is a reading order,
+never a button.
+
+------------------------------------------------------------------------------
+
+NEW_V11_FS_01_FOUR_QUESTIONS   (NEW)
+    TRIGGER:    I use four questions for that: EXPECTED. ACTUAL. COST. CHOICE.
+    LAYOUT:     Sequence, established whole then activated one line at a time.
+    TREATMENT:  SEQUENCE
+    BUILD:      ESTABLISH
+    1. NEW_V11_FS_01_ESTABLISH                      Establish all four.
+    2. NEW_V11_FS_01A_EXPECTED                      Activate EXPECTED.
+    3. NEW_V11_FS_01B_ACTUAL                        Activate ACTUAL.
+    4. NEW_V11_FS_01C_COST                          Activate COST.
+    5. NEW_V11_FS_01D_CHOICE                        Activate CHOICE.
+    HOLD:       Hold the complete frame before the first activation.
+
+NEW_V11_FS_02_WRITE_IT_DOWN   (NEW)
+    TRIGGER:    Write down the parts that mattered to your decision. Scope. Authority. Reporting line. Location. Travel. Compensation. Team. The kind of work you expected to spend meaningful time doing.
+    LAYOUT:     Lines card. Established whole, no activation: all of it matters equally here.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. NEW_V11_FS_02_WRITE_IT_DOWN                  Single state. The whole list.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V11_FS_03_EXPECTED_VS_ACTUAL   (NEW)
+    TRIGGER:    And sometimes the actual role is narrower. You were hired for strategy and spend most of your time coordinating. You expected to lead a team and the team never arrived. You were told a decision was yours and discover that you can only recommend.
+    LAYOUT:     Side-by-side comparison, the narrower reading activated second.
+    TREATMENT:  COMPARISON
+    BUILD:      BUILD
+    1. NEW_V11_FS_03A_BOTH_DIRECTIONS               Establish. Both readings are on the table.
+    2. NEW_V11_FS_03B_NARROWER                      Activate the narrower reading, which is the one the viewer came for.
+    HOLD:       Hold long enough to read both columns.
+
+NEW_V11_FS_04_THE_REAL_QUESTION   (NEW)
+    TRIGGER:    The question is not, “Is this exactly what was written?” The question is, “Is the actual role still close enough to the role I agreed to build my life and career around?”
+    LAYOUT:     Struck comparison. The discarded question, then the real one.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. NEW_V11_FS_04_THE_REAL_QUESTION              Single state. The first question is struck through.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V11_FS_05_TEMPORARY_OR_NOT   (NEW)
+    TRIGGER:    Now imagine six months later the strategic work still has not appeared, you are still doing work you already knew how to do, and there is no credible path to the scope you accepted.
+    LAYOUT:     Side-by-side comparison. Two timelines, read together.
+    TREATMENT:  COMPARISON
+    BUILD:      SINGLE
+    1. NEW_V11_FS_05_TEMPORARY_OR_NOT               Single state. Both halves land together.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V11_FS_06_FOUR_COST_LENSES   (NEW)
+    TRIGGER:    I would look at four costs.
+    LAYOUT:     Numbered framework, established then activated one lens at a time.
+    TREATMENT:  FRAMEWORK
+    BUILD:      ESTABLISH
+    1. NEW_V11_FS_06_ESTABLISH                      Establish all four.
+    2. NEW_V11_FS_06A_CAPABILITY                    Activate CAPABILITY.
+    3. NEW_V11_FS_06B_EVIDENCE                      Activate EVIDENCE.
+    4. NEW_V11_FS_06C_COMPENSATION                  Activate COMPENSATION.
+    5. NEW_V11_FS_06D_LIFE                          Activate LIFE.
+    HOLD:       End on the complete frame.
+
+NEW_V11_FS_07_CLARIFICATION_SCRIPT   (NEW)
+    TRIGGER:    I would say something like: “When we discussed this role, I expected X. In practice, I am seeing Y. Is that temporary, or is this the role as it now exists?”
+    LAYOUT:     Claim card. The sentence, at size, alone.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. NEW_V11_FS_07_CLARIFICATION_SCRIPT           Single state. No build.
+    HOLD:       Hold the complete card long enough to screenshot.
+
+NEW_V11_FS_08_TWO_EXTREMES   (NEW)
+    TRIGGER:    I would avoid two extremes.
+    LAYOUT:     Two-part card. Two extremes, held side by side.
+    TREATMENT:  COMPARISON
+    BUILD:      SINGLE
+    1. NEW_V11_FS_08_TWO_EXTREMES                   Single state. Both halves land together.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V11_FS_09_THE_ROLE_DRIFT_READ   (NEW)
+    TRIGGER:    CHOICE. What can I clarify, negotiate, test, or decide next?
+    LAYOUT:     Numbered framework, established then activated one line at a time, ending on the complete frame.
+    TREATMENT:  FRAMEWORK
+    BUILD:      ESTABLISH
+    1. NEW_V11_FS_09_ESTABLISH                      Establish the frame.
+    2. NEW_V11_FS_09A_EXPECTED                      Activate EXPECTED.
+    3. NEW_V11_FS_09B_ACTUAL                        Activate ACTUAL.
+    4. NEW_V11_FS_09C_COST                          Activate COST.
+    5. NEW_V11_FS_09D_CHOICE                        Activate CHOICE.
+    HOLD:       End on the complete frame and hold. This is the card the video is for.
+
+NEW_V11_FS_10_THE_BOUNDARY   (NEW)
+    TRIGGER:    This framework does not tell you whether to leave.
+    LAYOUT:     Statement with support.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. NEW_V11_FS_10_THE_BOUNDARY                   Single state. No build.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V11_FS_11_YOUR_CONSTRAINTS   (NEW)
+    TRIGGER:    Your constraints are real. Compensation, health, caregiving, immigration, geography, timing, the market, and financial runway can all shape what is possible.
+    LAYOUT:     Lines card. The whole list, no activation.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. NEW_V11_FS_11_YOUR_CONSTRAINTS               Single state. The whole list.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V11_FS_12_NAME_THE_DIFFERENCE   (NEW)
+    TRIGGER:    If those two versions are different, name the difference before you normalize it.
+    LAYOUT:     Action card. One instruction and the four words.
+    TREATMENT:  ACTION
+    BUILD:      SINGLE
+    1. NEW_V11_FS_12_NAME_THE_DIFFERENCE            Single state. Final tool.
+    HOLD:       Hold, then go to the Watch Next card.
+
+NEW_V11_WATCH_NEXT   (NEW)
+    TRIGGER:    the spoken Watch Next line
+    LAYOUT:     Watch Next card, house layout.
+    TREATMENT:  WATCH NEXT
+    BUILD:      SINGLE
+    1. NEW_V11_WATCH_NEXT                           Single state. Final card.
+    HOLD:       Cut here on the spoken Watch Next line and end the video on it.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+  One active idea at a time. When a framework is being taught,
+  one component is warm and the rest are quiet.
+
+  Establish the whole structure before activating any part of it.
+
+  No animation whose only purpose is to keep the screen moving.
+  Stillness is allowed when the viewer needs to read or think.
+
+  No fake buttons, progress bars, quiz interfaces or dashboards.
+
+  A card never moves while the presenter moves behind it.

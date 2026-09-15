@@ -1,0 +1,539 @@
+==============================================================================
+NEW PUBLIC V11  |  RIVERSIDE CO-CREATOR MASTER PROMPT
+==============================================================================
+
+What to Do When Your New Job Isn’t the Job You Accepted
+Thumbnail: THIS ISN'T THE JOB
+Generated Monday, September 14, 2026 | 8:40 PM CT
+
+1,116 spoken words. 18 camera stretches against 12 full-screen cues,
+and 873 of the spoken words are delivered on camera.
+This script carries no timing markers, so nothing in it can be
+mistaken for a runtime, a chapter or an SRT time.
+
+------------------------------------------------------------------------------
+
+HOW TO USE THIS
+
+  Work down the spine. Where it says CAMERA, stay on Temidayo
+  for the whole stretch. Where it says FULL SCREEN, cut to the
+  named asset on the exact trigger sentence and follow the
+  reveal order. The copy on each card is final; do not retype
+  it, and do not add teaching that is not in the script.
+
+------------------------------------------------------------------------------
+
+THIS VIDEO SPECIFICALLY
+
+  Keep the opening on camera until the mismatch is recognizable. Do
+  not begin with the framework. The employer and the manager are never
+  the villain in this edit: no card, no B-roll and no sound choice may
+  frame the organization as having lied. Bait-and-switch appears once,
+  in the script, as the reading Temidayo asks the viewer to slow down,
+  and it is never used as a label. Keep the legitimate reasons a role
+  changes and the real constraints that shape what is possible on
+  screen wherever the script puts them.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+  CAMERA-LED
+      Story, recognition, consequence, tension and interpretation stay on
+      Temidayo. Do not cover a strong human moment with a graphic because
+      an asset exists. These scripts are short and carry few cues on
+      purpose.
+
+  TRUE FULL SCREEN
+      Frameworks, comparisons, meaningful evidence and multi-step teaching
+      take the whole screen. No presenter moving behind them, no corner
+      placement, no semi-transparent overlay for substantive teaching.
+
+  ONE ACTIVE IDEA AT A TIME
+      Establish a structure whole, then activate one component, teach it,
+      and move on. Never leave several components competing while one is
+      explained.
+
+  SEQUENTIAL REVEALS, NOT BUTTONS
+      A numbered point is a reading order. YouTube is not interactive and
+      nothing should look clickable.
+
+  RESTRAINT
+      No constant zooming, no pulsing the frame, no accent on every
+      reveal, no animating every line. Stillness is allowed when the
+      viewer needs to read.
+
+  CAPTIONS
+      No burned-in captions in the long-form video. Generate the SRT in
+      Riverside after the final edit and verify it against the final
+      export.
+
+  WATCH NEXT
+      Full screen and final. There is no return to camera after it. The
+      spoken line that introduces it is the script's own and was not
+      changed.
+
+------------------------------------------------------------------------------
+
+THE SPINE
+
+
+------------------------------------------------------------------------------
+SECTION 1  HOOK
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 4 paragraphs, 80 words.
+  FROM:  You accepted one job. Then you started doing another.
+  TO:    But there is a point where normal evolution becomes something yo...
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  I use four questions for that: EXPECTED. ACTUAL. COST. CHOICE.
+  PURPOSE:
+      The framework arrives only after the mismatch is recognizable.
+      Sequential, one word at a time.
+  LAYOUT:
+      Sequence, established whole then activated one line at a time.
+  REVEAL ORDER:
+      1. ASSET: NEW_V11_FS_01_ESTABLISH.png
+         Establish all four.
+      2. ASSET: NEW_V11_FS_01A_EXPECTED.png
+         Activate EXPECTED.
+      3. ASSET: NEW_V11_FS_01B_ACTUAL.png
+         Activate ACTUAL.
+      4. ASSET: NEW_V11_FS_01C_COST.png
+         Activate COST.
+      5. ASSET: NEW_V11_FS_01D_CHOICE.png
+         Activate CHOICE.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold the complete frame before the first activation.
+  SOUND:
+      One quiet accent per reveal.
+  SOURCE NOTE:
+      Spoken: EXPECTED. ACTUAL. COST. CHOICE. Each support line is the
+      script's own question for that word.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 40 words.
+  FROM:  By the end of this video, you should be able to tell whether you...
+  TO:    By the end of this video, you should be able to tell whether you...
+
+
+------------------------------------------------------------------------------
+SECTION 2  1 | EXPECTED
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 2 paragraphs, 37 words.
+  FROM:  Start with EXPECTED. What did you reasonably believe you were ac...
+  TO:    Not the fantasy version of the role. The version supported by th...
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  Write down the parts that mattered to your decision. Scope. Authority. Reporting line. Location. Travel. Compensation. Team. The kind of work you expected to spend meaningful time doing.
+  PURPOSE:
+      The parts of the offer that mattered to the decision. A list,
+      because the viewer is being asked to actually write it down.
+  LAYOUT:
+      Lines card. Established whole, no activation: all of it matters
+      equally here.
+  REVEAL ORDER:
+      1. ASSET: NEW_V11_FS_02_WRITE_IT_DOWN.png
+         Single state. The whole list.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold until the sentence lands, then cut back.
+  SOUND:
+      One accent.
+  SOURCE NOTE:
+      Spoken, word for word, in the script's order.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 2 paragraphs, 36 words.
+  FROM:  This matters because memory gets fuzzy once the new reality beco...
+  TO:    If you cannot name what you expected, every disappointment can s...
+
+
+------------------------------------------------------------------------------
+SECTION 3  2 | ACTUAL
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 4 paragraphs, 83 words.
+  FROM:  Then write ACTUAL. What is the job asking from you now?
+  TO:    Sometimes the actual role is better than the one you expected. Y...
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  And sometimes the actual role is narrower. You were hired for strategy and spend most of your time coordinating. You expected to lead a team and the team never arrived. You were told a decision was yours and discover that you can only recommend.
+  PURPOSE:
+      The comparison the brief asks for. The viewer needs to see the
+      difference between what was reasonably accepted and what the
+      recurring reality has become. Both directions are shown: the script
+      says the actual role is sometimes better.
+  LAYOUT:
+      Side-by-side comparison, the narrower reading activated second.
+  REVEAL ORDER:
+      1. ASSET: NEW_V11_FS_03A_BOTH_DIRECTIONS.png
+         Establish. Both readings are on the table.
+      2. ASSET: NEW_V11_FS_03B_NARROWER.png
+         Activate the narrower reading, which is the one the viewer
+         came for.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold long enough to read both columns.
+  SOUND:
+      One accent on the second.
+  SOURCE NOTE:
+      Spoken, word for word. Both directions are kept because the script
+      keeps both: the actual role is sometimes better.
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  The question is not, “Is this exactly what was written?” The question is, “Is the actual role still close enough to the role I agreed to build my life and career around?”
+  PURPOSE:
+      The script replaces the obvious question with a better one. The
+      replacement is what belongs on screen.
+  LAYOUT:
+      Struck comparison. The discarded question, then the real one.
+  REVEAL ORDER:
+      1. ASSET: NEW_V11_FS_04_THE_REAL_QUESTION.png
+         Single state. The first question is struck through.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold until the sentence lands, then cut back.
+  SOUND:
+      One accent.
+  SOURCE NOTE:
+      Both questions are spoken, word for word.
+
+
+------------------------------------------------------------------------------
+SECTION 4  3 | COST
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 3 paragraphs, 39 words.
+  FROM:  Then ask COST. What does the difference actually cost you?
+  TO:    Imagine you expected a strategic role, but the first month is un...
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  Now imagine six months later the strategic work still has not appeared, you are still doing work you already knew how to do, and there is no credible path to the scope you accepted.
+  PURPOSE:
+      The difference between a temporary condition and a settled one is
+      the heart of the cost read, and it is a contrast the viewer can see.
+  LAYOUT:
+      Side-by-side comparison. Two timelines, read together.
+  REVEAL ORDER:
+      1. ASSET: NEW_V11_FS_05_TEMPORARY_OR_NOT.png
+         Single state. Both halves land together.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold until the sentence lands, then cut back.
+  SOUND:
+      One accent.
+  SOURCE NOTE:
+      Spoken, word for word. The script offers the temporary reading first
+      and this card keeps that order.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 3 paragraphs, 85 words.
+  FROM:  That difference has a career cost. It may affect the capability...
+  TO:    The point is not to punish change. The point is to understand th...
+
+
+------------------------------------------------------------------------------
+SECTION 5  THE FOUR COST LENSES
+------------------------------------------------------------------------------
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  I would look at four costs.
+  PURPOSE:
+      The four cost lenses. One active idea at a time, because the viewer
+      is being asked to work out which one they are reacting to.
+  LAYOUT:
+      Numbered framework, established then activated one lens at a time.
+  REVEAL ORDER:
+      1. ASSET: NEW_V11_FS_06_ESTABLISH.png
+         Establish all four.
+      2. ASSET: NEW_V11_FS_06A_CAPABILITY.png
+         Activate CAPABILITY.
+      3. ASSET: NEW_V11_FS_06B_EVIDENCE.png
+         Activate EVIDENCE.
+      4. ASSET: NEW_V11_FS_06C_COMPENSATION.png
+         Activate COMPENSATION.
+      5. ASSET: NEW_V11_FS_06D_LIFE.png
+         Activate LIFE.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      End on the complete frame.
+  SOUND:
+      One quiet accent per reveal.
+  SOURCE NOTE:
+      All four lenses are spoken, word for word, in the script's order.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 5 paragraphs, 87 words.
+  FROM:  CAPABILITY. Is this role building judgment, scope, and experienc...
+  TO:    A mismatch can be manageable in one category and unacceptable in...
+
+
+------------------------------------------------------------------------------
+SECTION 6  4 | CHOICE
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 2 paragraphs, 17 words.
+  FROM:  Then comes CHOICE. What can you clarify, negotiate, test, or dec...
+  TO:    Start with clarification before accusation.
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  I would say something like: “When we discussed this role, I expected X. In practice, I am seeing Y. Is that temporary, or is this the role as it now exists?”
+  PURPOSE:
+      The save-worthy card. This is the sentence the viewer will
+      screenshot and use, so it is given the whole frame and no
+      decoration.
+  LAYOUT:
+      Claim card. The sentence, at size, alone.
+  REVEAL ORDER:
+      1. ASSET: NEW_V11_FS_07_CLARIFICATION_SCRIPT.png
+         Single state. No build.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold the complete card long enough to screenshot.
+  SOUND:
+      One accent.
+  SOURCE NOTE:
+      Spoken, word for word. The question is written to invite an
+      explanation, not to accuse.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 3 paragraphs, 95 words.
+  FROM:  That question gives the other person room to explain what change...
+  TO:    If the answer is that this is now the role, you have a different...
+
+
+------------------------------------------------------------------------------
+SECTION 7  WHAT NOT TO DO
+------------------------------------------------------------------------------
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  I would avoid two extremes.
+  PURPOSE:
+      The boundary card. Both failure modes are given equal weight so
+      neither the employer nor the viewer is cast as the villain.
+  LAYOUT:
+      Two-part card. Two extremes, held side by side.
+  REVEAL ORDER:
+      1. ASSET: NEW_V11_FS_08_TWO_EXTREMES.png
+         Single state. Both halves land together.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold until the sentence lands, then cut back.
+  SOUND:
+      One accent.
+  SOURCE NOTE:
+      Spoken, word for word. The first half is the script's own protection
+      for legitimate role change.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 3 paragraphs, 57 words.
+  FROM:  Do not convince yourself that every mismatch is a betrayal. A jo...
+  TO:    The problem is not that reality changed. The problem is refusing...
+
+
+------------------------------------------------------------------------------
+SECTION 8  THE ROLE-DRIFT READ
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 4 paragraphs, 41 words.
+  FROM:  So put the four lines next to each other.
+  TO:    COST. What is the difference doing to my capability, evidence, c...
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  CHOICE. What can I clarify, negotiate, test, or decide next?
+  PURPOSE:
+      The final tool. Four lines arriving one at a time, then complete.
+  LAYOUT:
+      Numbered framework, established then activated one line at a time,
+      ending on the complete frame.
+  REVEAL ORDER:
+      1. ASSET: NEW_V11_FS_09_ESTABLISH.png
+         Establish the frame.
+      2. ASSET: NEW_V11_FS_09A_EXPECTED.png
+         Activate EXPECTED.
+      3. ASSET: NEW_V11_FS_09B_ACTUAL.png
+         Activate ACTUAL.
+      4. ASSET: NEW_V11_FS_09C_COST.png
+         Activate COST.
+      5. ASSET: NEW_V11_FS_09D_CHOICE.png
+         Activate CHOICE.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      End on the complete frame and hold. This is the card the video is
+      for.
+  SOUND:
+      One quiet accent per reveal.
+  SOURCE NOTE:
+      All four lines are spoken, word for word, in the script's order.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 28 words.
+  FROM:  That is a role-drift read. It gives you something more useful th...
+  TO:    That is a role-drift read. It gives you something more useful th...
+
+
+------------------------------------------------------------------------------
+SECTION 9  THE BOUNDARY
+------------------------------------------------------------------------------
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  This framework does not tell you whether to leave.
+  PURPOSE:
+      The boundary, stated plainly. The framework is a read, not a
+      verdict, and the card says exactly that.
+  LAYOUT:
+      Statement with support.
+  REVEAL ORDER:
+      1. ASSET: NEW_V11_FS_10_THE_BOUNDARY.png
+         Single state. No build.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold until the sentence lands, then cut back.
+  SOUND:
+      No accent.
+  SOURCE NOTE:
+      Spoken, word for word. The script keeps every one of these options
+      open and the card keeps them open too.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 3 paragraphs, 45 words.
+  FROM:  Sometimes the right choice is to stay because the drift is tempo...
+  TO:    And sometimes the gap is large enough that you need to plan an e...
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  Your constraints are real. Compensation, health, caregiving, immigration, geography, timing, the market, and financial runway can all shape what is possible.
+  PURPOSE:
+      The constraints that shape what is possible. Named, because leaving
+      them out would turn the video into advice for people with no
+      constraints.
+  LAYOUT:
+      Lines card. The whole list, no activation.
+  REVEAL ORDER:
+      1. ASSET: NEW_V11_FS_11_YOUR_CONSTRAINTS.png
+         Single state. The whole list.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold until the sentence lands, then cut back.
+  SOUND:
+      No accent.
+  SOURCE NOTE:
+      Spoken, word for word.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 21 words.
+  FROM:  The goal is not to force a dramatic decision. It is to make the...
+  TO:    The goal is not to force a dramatic decision. It is to make the...
+
+
+------------------------------------------------------------------------------
+SECTION 10  CLOSE
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 19 words.
+  FROM:  The job description got you into the role. The first few months...
+  TO:    The job description got you into the role. The first few months...
+
+  MODE:     FULL SCREEN
+  CLASS:    NEW
+  TRIGGER:  If those two versions are different, name the difference before you normalize it.
+  PURPOSE:
+      The closing instruction. It is the CTA the script actually speaks:
+      no product ask was added.
+  LAYOUT:
+      Action card. One instruction and the four words.
+  REVEAL ORDER:
+      1. ASSET: NEW_V11_FS_12_NAME_THE_DIFFERENCE.png
+         Single state. Final tool.
+  EMPHASIS:
+      Active item in the bright warm yellow wash with the
+      rust rule. Everything else quiet. Never two active.
+  HOLD:
+      Hold, then go to the Watch Next card.
+  SOUND:
+      One accent.
+  SOURCE NOTE:
+      Spoken, word for word. The script names no product and none appears
+      on any card.
+
+  MODE:  CAMERA
+  Stay on Temidayo for 2 paragraphs, 35 words.
+  FROM:  Expected. Actual. Cost. Choice.
+  TO:    You do not need the job to stay frozen exactly as it was sold. B...
+
+
+------------------------------------------------------------------------------
+SECTION 11  WATCH NEXT
+------------------------------------------------------------------------------
+
+  MODE:  CAMERA
+  Stay on Temidayo for 1 paragraph, 28 words.
+  FROM:  And if the role is depending on you more and more without buildi...
+  TO:    And if the role is depending on you more and more without buildi...
+
+
+------------------------------------------------------------------------------
+
+WATCH NEXT  |  FULL SCREEN AND FINAL
+
+  ASSET:        NEW_V11_WATCH_NEXT.png
+  SPOKEN LINE:  And if the role is depending on you more and more without building anything new in you, watch “If Your Company Needs You but Won’t Grow You” next.
+  DESTINATION:  If Your Company Needs You but Won’t Grow You
+  The spoken wording above is the script's own and was not
+  changed. Cut to the card on that line and end the video on it.
+  Nothing returns to camera afterward.
+
+  Before upload, confirm the destination is publicly live. If it
+  is not, the publishing materials carry an EDITORIAL FALLBACK
+  REQUIRED flag for approval. Do not invent a fallback here.
+
+------------------------------------------------------------------------------
+
+AFTER THE EDIT
+
+  Generate the SRT in Riverside and verify it against the final
+  export. Create chapters from real export timing. Neither exists
+  in this package and neither should be invented before the cut.

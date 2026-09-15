@@ -1,0 +1,160 @@
+==============================================================================
+NEW PUBLIC V10  |  ASSET INDEX
+==============================================================================
+
+Your First 90 Days in a New Job: What Really Matters
+
+15 families, 36 image states.
+PNG is 1920 x 1080. An SVG is provided where a designer may need
+to re-time or recolor the card; its text is live and the brand
+faces are embedded.
+
+------------------------------------------------------------------------------
+
+NEW_V10_FS_01_READ_TEST_PROVE
+    CLASS:      NEW
+    PURPOSE:    The framework arrives only after the pressure has landed on camera. Sequential, so the viewer meets one word at a time.
+    TREATMENT:  SEQUENCE
+    NEW_V10_FS_01A_ESTABLISH.png                   NEW_V10_FS_01A_ESTABLISH.png, NEW_V10_FS_01A_ESTABLISH.svg
+    NEW_V10_FS_01B_READ.png                        NEW_V10_FS_01B_READ.png
+    NEW_V10_FS_01C_TEST.png                        NEW_V10_FS_01C_TEST.png
+    NEW_V10_FS_01D_PROVE.png                       NEW_V10_FS_01D_PROVE.png
+    SOURCE:
+        Spoken: READ. TEST. PROVE. The three questions are the
+        script's own, in the script's order.
+
+NEW_V10_FS_02_EXPERIENCED_BUT_NEW
+    CLASS:      NEW
+    PURPOSE:    The distinction the whole video rests on. It is a consequential statement, so it is stated plainly and alone.
+    TREATMENT:  STATEMENT
+    NEW_V10_FS_02_EXPERIENCED_BUT_NEW.png          NEW_V10_FS_02_EXPERIENCED_BUT_NEW.png
+    SOURCE:
+        Spoken, word for word.
+
+NEW_V10_FS_03_READ_FOUR_THINGS
+    CLASS:      NEW
+    PURPOSE:    The four things to pay attention to during READ, one at a time so the viewer can actually hold each one.
+    TREATMENT:  SEQUENCE
+    NEW_V10_FS_03_ESTABLISH.png                    NEW_V10_FS_03_ESTABLISH.png
+    NEW_V10_FS_03A_RESPONSIBLE.png                 NEW_V10_FS_03A_RESPONSIBLE.png
+    NEW_V10_FS_03B_DECISIONS.png                   NEW_V10_FS_03B_DECISIONS.png
+    NEW_V10_FS_03C_SUCCESS.png                     NEW_V10_FS_03C_SUCCESS.png
+    NEW_V10_FS_03D_UNWRITTEN.png                   NEW_V10_FS_03D_UNWRITTEN.png
+    SOURCE:
+        Spoken, word for word, in the script's order.
+
+NEW_V10_FS_04_FORMAL_VS_REAL
+    CLASS:      NEW
+    PURPOSE:    The comparison the brief asks for: what the document says against what the first weeks show. Side by side so the difference is visible, not described.
+    TREATMENT:  COMPARISON
+    NEW_V10_FS_04_FORMAL_VS_REAL.png               NEW_V10_FS_04_FORMAL_VS_REAL.png, NEW_V10_FS_04_FORMAL_VS_REAL.svg
+    SOURCE:
+        Spoken: a job description can tell you the formal job, the
+        first few weeks start showing you the real one.
+
+NEW_V10_FS_05_TWO_SENTENCES
+    CLASS:      NEW
+    PURPOSE:    The difference between the two sentences is the whole lesson of this section, and it is easier to see than to hear.
+    TREATMENT:  COMPARISON
+    NEW_V10_FS_05A_BOTH.png                        NEW_V10_FS_05A_BOTH.png
+    NEW_V10_FS_05B_SECOND.png                      NEW_V10_FS_05B_SECOND.png
+    SOURCE:
+        Both sentences are quoted from the script, word for word.
+
+NEW_V10_FS_06_MANAGER_CONVERSATION
+    CLASS:      NEW
+    PURPOSE:    The save-worthy card. These are the questions the viewer will pause and screenshot, so they are given room and no decoration.
+    TREATMENT:  QUESTIONS
+    NEW_V10_FS_06_ESTABLISH.png                    NEW_V10_FS_06_ESTABLISH.png, NEW_V10_FS_06_ESTABLISH.svg
+    NEW_V10_FS_06A_PICK_UP.png                     NEW_V10_FS_06A_PICK_UP.png
+    NEW_V10_FS_06B_CONTEXT.png                     NEW_V10_FS_06B_CONTEXT.png
+    NEW_V10_FS_06C_OLD_ENVIRONMENT.png             NEW_V10_FS_06C_OLD_ENVIRONMENT.png
+    SOURCE:
+        All three questions are spoken, word for word.
+
+NEW_V10_FS_07_THE_DAY_90_QUESTION
+    CLASS:      NEW
+    PURPOSE:    The fourth question is the one that reframes the whole 90 days, so it gets its own card rather than a fourth line on the last one.
+    TREATMENT:  STATEMENT
+    NEW_V10_FS_07_THE_DAY_90_QUESTION.png          NEW_V10_FS_07_THE_DAY_90_QUESTION.png
+    SOURCE:
+        Spoken, word for word.
+
+NEW_V10_FS_08_PROVE_QUESTION
+    CLASS:      NEW
+    PURPOSE:    The script replaces the quick-win question rather than repeating it. The replacement is what belongs on screen.
+    TREATMENT:  STATEMENT
+    NEW_V10_FS_08_PROVE_QUESTION.png               NEW_V10_FS_08_PROVE_QUESTION.png
+    SOURCE:
+        Spoken, word for word. The script does not require a visible
+        win by day 90 and this card does not imply one.
+
+NEW_V10_FS_09_PROOF_SENTENCES
+    CLASS:      NEW
+    PURPOSE:    The sentences the viewer should be able to finish. Save-worthy, so they are set as a list rather than read past.
+    TREATMENT:  SEQUENCE
+    NEW_V10_FS_09_ESTABLISH.png                    NEW_V10_FS_09_ESTABLISH.png
+    NEW_V10_FS_09A_ASSUMING.png                    NEW_V10_FS_09A_ASSUMING.png
+    NEW_V10_FS_09B_HELPED_MOST.png                 NEW_V10_FS_09B_HELPED_MOST.png
+    NEW_V10_FS_09C_RELEARN.png                     NEW_V10_FS_09C_RELEARN.png
+    SOURCE:
+        Spoken, word for word.
+
+NEW_V10_FS_10_THE_REVERSAL
+    CLASS:      NEW
+    PURPOSE:    The story turn. It is the one line in the video that should feel like the ground moving, so it arrives alone, at size, after a beat of silence.
+    TREATMENT:  STATEMENT
+    NEW_V10_FS_10_THE_REVERSAL.png                 NEW_V10_FS_10_THE_REVERSAL.png
+    SOURCE:
+        Spoken, word for word.
+
+NEW_V10_FS_11_YOUR_EVIDENCE
+    CLASS:      NEW
+    PURPOSE:    The questions the viewer is entitled to ask about the job, kept together so the point reads as evidence gathering, not grievance.
+    TREATMENT:  QUESTIONS
+    NEW_V10_FS_11_ESTABLISH.png                    NEW_V10_FS_11_ESTABLISH.png
+    NEW_V10_FS_11A_THE_JOB.png                     NEW_V10_FS_11A_THE_JOB.png
+    NEW_V10_FS_11B_AUTHORITY.png                   NEW_V10_FS_11B_AUTHORITY.png
+    NEW_V10_FS_11C_ACCESS.png                      NEW_V10_FS_11C_ACCESS.png
+    SOURCE:
+        Spoken, word for word.
+
+NEW_V10_FS_12_NOT_AUTOMATICALLY_LEAVE
+    CLASS:      NEW
+    PURPOSE:    The boundary. The reversal must not read as an instruction to quit, and the script says so directly.
+    TREATMENT:  STATEMENT
+    NEW_V10_FS_12_NOT_AUTOMATICALLY_LEAVE.png      NEW_V10_FS_12_NOT_AUTOMATICALLY_LEAVE.png
+    SOURCE:
+        Spoken, word for word. The script protects legitimate role
+        change here and the card carries that protection.
+
+NEW_V10_FS_13_THE_TOOL
+    CLASS:      NEW
+    PURPOSE:    The final tool, and the bridge into V11. Four lines, arriving one at a time, then complete.
+    TREATMENT:  FRAMEWORK
+    NEW_V10_FS_13_ESTABLISH.png                    NEW_V10_FS_13_ESTABLISH.png, NEW_V10_FS_13_ESTABLISH.svg
+    NEW_V10_FS_13A_READ.png                        NEW_V10_FS_13A_READ.png
+    NEW_V10_FS_13B_TEST.png                        NEW_V10_FS_13B_TEST.png
+    NEW_V10_FS_13C_PROVE.png                       NEW_V10_FS_13C_PROVE.png
+    NEW_V10_FS_13D_ROLE_CHECK.png                  NEW_V10_FS_13D_ROLE_CHECK.png
+    SOURCE:
+        All four lines are spoken, word for word, in the script's
+        order. ROLE CHECK is the bridge into NEW V11.
+
+NEW_V10_FS_14_THE_PLAN
+    CLASS:      NEW
+    PURPOSE:    The closing instruction, four short imperatives. It is the CTA the script actually speaks: no product ask was added.
+    TREATMENT:  ACTION
+    NEW_V10_FS_14_THE_PLAN.png                     NEW_V10_FS_14_THE_PLAN.png
+    SOURCE:
+        Spoken, word for word. The script names no product and none
+        appears on any card.
+
+NEW_V10_WATCH_NEXT
+    CLASS:      NEW
+    PURPOSE:    The destination the script speaks. Full screen and final: nothing returns to camera after it.
+    TREATMENT:  WATCH NEXT
+    NEW_V10_WATCH_NEXT.png                         NEW_V10_WATCH_NEXT.png
+    SOURCE:
+        Intended destination, named on the script's final full-screen
+        card. Confirm it is publicly live before upload.

@@ -1,0 +1,100 @@
+==============================================================================
+NEW PUBLIC V10  |  SOURCE MANIFEST AND NUMBER MAP
+==============================================================================
+
+Your First 90 Days in a New Job: What Really Matters
+Generated Monday, September 14, 2026 | 8:40 PM CT
+
+------------------------------------------------------------------------------
+
+NUMBER MAP
+
+  NEW PUBLIC NUMBER      V10
+  FORMER ROADMAP NUMBER  None. This is a new concept.
+
+  Neither V10 nor V11 came from the earlier roadmap, so there is
+  no lineage number to carry and none was invented. V10 follows
+  NEW PUBLIC V9 and V11 follows NEW PUBLIC V10.
+
+------------------------------------------------------------------------------
+
+ORDER OF AUTHORITY
+
+  1  FINAL story-led recording script
+        Spoken wording, title, thumbnail, framework, section
+        order, CTA and Watch Next wording, and the claim
+        boundaries the script itself carries.
+
+  2  Thought-Block Recording Copy
+        A recording-format derivative of the script above. It
+        carries the same spoken wording exactly and in order.
+        Where the two disagree the script wins; QA reports
+        rather than repairs, and no discrepancy was found.
+
+  3  Advisor and Code Handoff
+        Production architecture, visual language, resource
+        mapping, Shorts strategy and boundaries. It does not
+        control spoken wording.
+
+------------------------------------------------------------------------------
+
+SOURCE FILES
+
+  handoff.zip
+      sha256  f3c094174b7c1d0856399c19618e26fa6e30180bc84f4f2ee7c70af6f04c7b82
+
+  CODE_BUILD_PROMPT_NEW_V10_V11.txt
+      sha256  8f9a0647ac1a21d190b54bd2fd08ac4b13549be0b7d640909192441fd82d2266
+
+  NEW_V10-V11_Advisor_and_Code_Handoff.docx
+      sha256  6744c44cda0d838f7a45da3e2c22a9acee89f084afdd7b96b9424e7b4a05020b
+
+  NEW_V10_First_90_Days_FINAL_Story_Led_Recording_Script.docx
+      sha256  9a6a40bc42e46f2360b7ac7157ec3af15fccee8c4dcc7bb36954011af5969c7c
+
+  NEW_V10_First_90_Days_Thought_Block_Recording_Copy.docx
+      sha256  6a0b7befdc4df9e2ccb9f20e10185f59b1de3f519419202657f02210f41fc0ea
+
+  NEW_V11_New_Job_Isnt_The_Job_FINAL_Story_Led_Recording_Script.docx
+      sha256  d29197fcf43dde43428e032a07d6c7dd3b5303f70acc844301cc2ba268e14a06
+
+  NEW_V11_New_Job_Isnt_The_Job_Thought_Block_Recording_Copy.docx
+      sha256  3c300d69fd9f87d05de7de5b8db6cb27559577566b93fe7e6ebef8fe24b9b3b6
+
+------------------------------------------------------------------------------
+
+SPOKEN SCRIPT
+
+  12 sections, 60 spoken paragraphs, 1,486 spoken words.
+  Arithmetic estimate 10:14 to 11:25 at 130 to 145 words per minute.
+  That is arithmetic on the script. It is not a runtime, a
+  chapter, a Riverside time or an SRT time.
+
+  Thought-block match: 60 paragraphs, identical and in order
+
+------------------------------------------------------------------------------
+
+LOCKED PACKAGING
+
+  TITLE      Your First 90 Days in a New Job: What Really Matters
+  THUMBNAIL  DON'T PROVE YOURSELF YET
+  WATCH NEXT What to Do When Your New Job Isn’t the Job You Accepted
+
+------------------------------------------------------------------------------
+
+THREE CANDIDATE SHORTS
+
+  SHORT 1  DON'T PROVE YOURSELF YET
+      79 words. Every line is a whole sentence lifted
+      verbatim from this video's spoken script. No Short
+      wording was invented, and the bank is three, not six.
+
+  SHORT 2  EXPERIENCED BUT NEW TO THE CONTEXT
+      87 words. Every line is a whole sentence lifted
+      verbatim from this video's spoken script. No Short
+      wording was invented, and the bank is three, not six.
+
+  SHORT 3  ASK YOUR MANAGER THIS BY DAY 90
+      82 words. Every line is a whole sentence lifted
+      verbatim from this video's spoken script. No Short
+      wording was invented, and the bank is three, not six.

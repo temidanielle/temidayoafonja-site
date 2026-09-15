@@ -1,0 +1,168 @@
+==============================================================================
+NEW PUBLIC V10  |  MOTION AND REVEAL MAP
+==============================================================================
+
+Your First 90 Days in a New Job: What Really Matters
+
+Reveal order for every card with more than one state, and the
+emphasis state of each. A numbered point is a reading order,
+never a button.
+
+------------------------------------------------------------------------------
+
+NEW_V10_FS_01_READ_TEST_PROVE   (NEW)
+    TRIGGER:    I think about that as READ. TEST. PROVE. By the end of this video, I want you to be able to use those three words to build your own first-90-days plan.
+    LAYOUT:     Sequence, established whole then activated one line at a time.
+    TREATMENT:  SEQUENCE
+    BUILD:      ESTABLISH
+    1. NEW_V10_FS_01A_ESTABLISH                     Establish all three.
+    2. NEW_V10_FS_01B_READ                          Activate READ.
+    3. NEW_V10_FS_01C_TEST                          Activate TEST.
+    4. NEW_V10_FS_01D_PROVE                         Activate PROVE.
+    HOLD:       Hold the complete frame before the first activation.
+
+NEW_V10_FS_02_EXPERIENCED_BUT_NEW   (NEW)
+    TRIGGER:    You can be experienced and still be new to the context. Those two things can be true at the same time.
+    LAYOUT:     Statement. Nothing else on screen.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. NEW_V10_FS_02_EXPERIENCED_BUT_NEW            Single state. No build.
+    HOLD:       Hold four to five seconds. Let it sit before returning to camera.
+
+NEW_V10_FS_03_READ_FOUR_THINGS   (NEW)
+    TRIGGER:    During READ, pay attention to four things: What is this team actually responsible for? Where do the important decisions sit? What does success mean here? And what do people around me know that was never written in the job description?
+    LAYOUT:     Numbered sequence, established whole then activated one at a time.
+    TREATMENT:  SEQUENCE
+    BUILD:      ESTABLISH
+    1. NEW_V10_FS_03_ESTABLISH                      Establish.
+    2. NEW_V10_FS_03A_RESPONSIBLE                   Activate the first.
+    3. NEW_V10_FS_03B_DECISIONS                     Activate the second.
+    4. NEW_V10_FS_03C_SUCCESS                       Activate the third.
+    5. NEW_V10_FS_03D_UNWRITTEN                     Activate the fourth.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V10_FS_04_FORMAL_VS_REAL   (NEW)
+    TRIGGER:    A job description can tell you the formal job. The first few weeks start showing you the real one.
+    LAYOUT:     Side-by-side comparison. Two artifacts, read together.
+    TREATMENT:  COMPARISON
+    BUILD:      SINGLE
+    1. NEW_V10_FS_04_FORMAL_VS_REAL                 Single state. Both halves land together.
+    HOLD:       Hold long enough to read both sides.
+
+NEW_V10_FS_05_TWO_SENTENCES   (NEW)
+    TRIGGER:    There is a difference between saying, “At my old company, we did it this way,” and saying, “I have seen a similar problem before. Can you help me understand what makes it different here?”
+    LAYOUT:     Two quoted sentences, side by side, the second activated.
+    TREATMENT:  COMPARISON
+    BUILD:      BUILD
+    1. NEW_V10_FS_05A_BOTH                          Establish both.
+    2. NEW_V10_FS_05B_SECOND                        Activate the second.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V10_FS_06_MANAGER_CONVERSATION   (NEW)
+    TRIGGER:    Ask something more useful: “What have you seen me pick up quickly?” “Where do I still need more context?” “Is there anything I am treating like my old environment that works differently here?”
+    LAYOUT:     Questions card, established whole then activated one at a time.
+    TREATMENT:  QUESTIONS
+    BUILD:      ESTABLISH
+    1. NEW_V10_FS_06_ESTABLISH                      Establish.
+    2. NEW_V10_FS_06A_PICK_UP                       Activate the first.
+    3. NEW_V10_FS_06B_CONTEXT                       Activate the second.
+    4. NEW_V10_FS_06C_OLD_ENVIRONMENT               Activate the third.
+    HOLD:       Hold the complete card long enough to screenshot.
+
+NEW_V10_FS_07_THE_DAY_90_QUESTION   (NEW)
+    TRIGGER:    And ask: “What would you want to trust me with by the end of my first 90 days that you would not have trusted me with on day one?”
+    LAYOUT:     Claim card. One question, at size.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. NEW_V10_FS_07_THE_DAY_90_QUESTION            Single state. No build.
+    HOLD:       Hold. This is the card people will save.
+
+NEW_V10_FS_08_PROVE_QUESTION   (NEW)
+    TRIGGER:    So I would use a different question: What can I prove here by day 90 that I could not prove on day one?
+    LAYOUT:     Claim card. The different question, alone.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. NEW_V10_FS_08_PROVE_QUESTION                 Single state. No build.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V10_FS_09_PROOF_SENTENCES   (NEW)
+    TRIGGER:    “I came in assuming X. I learned Y.” “The part of my previous experience that helped most was X.” “The part I had to relearn was Y.”
+    LAYOUT:     Lines card, established then activated one at a time.
+    TREATMENT:  SEQUENCE
+    BUILD:      ESTABLISH
+    1. NEW_V10_FS_09_ESTABLISH                      Establish.
+    2. NEW_V10_FS_09A_ASSUMING                      Activate the first.
+    3. NEW_V10_FS_09B_HELPED_MOST                   Activate the second.
+    4. NEW_V10_FS_09C_RELEARN                       Activate the third.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V10_FS_10_THE_REVERSAL   (NEW)
+    TRIGGER:    There is one more part of the first 90 days I want to add. They are not the only ones evaluating.
+    LAYOUT:     Statement. Full bleed. Nothing else on screen.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. NEW_V10_FS_10_THE_REVERSAL                   Single state. Cut to it clean, on the pause.
+    HOLD:       Cut to camera, hold a brief pause, then cut here. Hold five seconds. Return to Temidayo for the interpretation.
+
+NEW_V10_FS_11_YOUR_EVIDENCE   (NEW)
+    TRIGGER:    You are collecting evidence too. Is this actually the job you accepted? Does the authority match what you were told? Are you getting access to the work you came here to do?
+    LAYOUT:     Questions card, established then activated one at a time.
+    TREATMENT:  QUESTIONS
+    BUILD:      ESTABLISH
+    1. NEW_V10_FS_11_ESTABLISH                      Establish.
+    2. NEW_V10_FS_11A_THE_JOB                       Activate the first.
+    3. NEW_V10_FS_11B_AUTHORITY                     Activate the second.
+    4. NEW_V10_FS_11C_ACCESS                        Activate the third.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V10_FS_12_NOT_AUTOMATICALLY_LEAVE   (NEW)
+    TRIGGER:    That does not automatically mean leave. Roles change. Priorities change. Organizations have real constraints. But you should notice the difference.
+    LAYOUT:     Statement with support. Camera-adjacent in tone, deliberately quiet.
+    TREATMENT:  STATEMENT
+    BUILD:      SINGLE
+    1. NEW_V10_FS_12_NOT_AUTOMATICALLY_LEAVE        Single state. No build.
+    HOLD:       Hold until the sentence lands, then cut back.
+
+NEW_V10_FS_13_THE_TOOL   (NEW)
+    TRIGGER:    And add one more line: ROLE CHECK. What have these 90 days taught me about the job itself?
+    LAYOUT:     Numbered framework, established then activated one line at a time, ending on the complete frame.
+    TREATMENT:  FRAMEWORK
+    BUILD:      ESTABLISH
+    1. NEW_V10_FS_13_ESTABLISH                      Establish the frame.
+    2. NEW_V10_FS_13A_READ                          Activate READ.
+    3. NEW_V10_FS_13B_TEST                          Activate TEST.
+    4. NEW_V10_FS_13C_PROVE                         Activate PROVE.
+    5. NEW_V10_FS_13D_ROLE_CHECK                    Activate ROLE CHECK.
+    HOLD:       End on the complete frame and hold. This is the card the video is for.
+
+NEW_V10_FS_14_THE_PLAN   (NEW)
+    TRIGGER:    Read the context. Test what traveled. Build new proof. And read the role back.
+    LAYOUT:     Action card. Four steps, no resource.
+    TREATMENT:  ACTION
+    BUILD:      SINGLE
+    1. NEW_V10_FS_14_THE_PLAN                       Single state. Final tool.
+    HOLD:       Hold, then go to the Watch Next card.
+
+NEW_V10_WATCH_NEXT   (NEW)
+    TRIGGER:    the spoken Watch Next line
+    LAYOUT:     Watch Next card, house layout.
+    TREATMENT:  WATCH NEXT
+    BUILD:      SINGLE
+    1. NEW_V10_WATCH_NEXT                           Single state. Final card.
+    HOLD:       Cut here on the spoken Watch Next line and end the video on it.
+
+------------------------------------------------------------------------------
+
+STANDING RULES
+
+  One active idea at a time. When a framework is being taught,
+  one component is warm and the rest are quiet.
+
+  Establish the whole structure before activating any part of it.
+
+  No animation whose only purpose is to keep the screen moving.
+  Stillness is allowed when the viewer needs to read or think.
+
+  No fake buttons, progress bars, quiz interfaces or dashboards.
+
+  A card never moves while the presenter moves behind it.

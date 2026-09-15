@@ -1,0 +1,61 @@
+==============================================================================
+NEW PUBLIC V10  |  AUDIO AND SOUND CUE MAP
+==============================================================================
+
+Your First 90 Days in a New Job: What Really Matters
+
+Four to seven restrained accents across the video. Not every
+reveal gets one, and nothing is scored to keep energy up.
+
+------------------------------------------------------------------------------
+
+NEW_V10_FS_01_READ_TEST_PROVE
+    One quiet accent per reveal. Four in total, not one per word.
+
+NEW_V10_FS_02_EXPERIENCED_BUT_NEW
+    One restrained accent.
+
+NEW_V10_FS_03_READ_FOUR_THINGS
+    One quiet accent per reveal.
+
+NEW_V10_FS_04_FORMAL_VS_REAL
+    One accent.
+
+NEW_V10_FS_05_TWO_SENTENCES
+    One accent on the second.
+
+NEW_V10_FS_06_MANAGER_CONVERSATION
+    One quiet accent per reveal.
+
+NEW_V10_FS_07_THE_DAY_90_QUESTION
+    One accent.
+
+NEW_V10_FS_08_PROVE_QUESTION
+    One accent.
+
+NEW_V10_FS_09_PROOF_SENTENCES
+    One quiet accent per reveal.
+
+NEW_V10_FS_10_THE_REVERSAL
+    One deliberate accent, and a subtle shift underneath it. This is the reversal: it is the strongest sound moment in the video.
+
+NEW_V10_FS_11_YOUR_EVIDENCE
+    One quiet accent per reveal.
+
+NEW_V10_FS_13_THE_TOOL
+    One quiet accent per reveal.
+
+NEW_V10_FS_14_THE_PLAN
+    One accent.
+
+------------------------------------------------------------------------------
+
+SILENT BY DESIGN
+
+  NEW_V10_FS_12_NOT_AUTOMATICALLY_LEAVE          No accent.
+  NEW_V10_WATCH_NEXT                             No accent.
+
+------------------------------------------------------------------------------
+
+  Music: no track is licensed or selected in this package.
+  Loudness, balance and picture quality are final-export QA.

@@ -1,0 +1,178 @@
+CAPABILITY FORMATION YOUTUBE
+NEW PUBLIC V10 + V11 FULL PRODUCTION PACKAGE BUILD
+SEPTEMBER 14, 2026
+
+Build two NEW primary YouTube production packages that follow the locked NEW PUBLIC V4-V9 sprint.
+
+ATTACHMENTS
+1. NEW_V10_First_90_Days_FINAL_Story_Led_Recording_Script.docx
+2. NEW_V10_First_90_Days_Thought_Block_Recording_Copy.docx
+3. NEW_V11_New_Job_Isnt_The_Job_FINAL_Story_Led_Recording_Script.docx
+4. NEW_V11_New_Job_Isnt_The_Job_Thought_Block_Recording_Copy.docx
+5. NEW_V10-V11_Advisor_and_Code_Handoff.docx
+
+SOURCE HIERARCHY
+1. FINAL scripts control exact spoken wording, titles, thumbnails, frameworks, CTA/Watch Next wording, and section order.
+2. Thought-Block copies are exact recording-format derivatives. If any mismatch exists, STOP and report it. The FINAL script wins.
+3. Advisor + Code Handoff controls production architecture, visual language, resource mapping, Shorts strategy, and boundaries.
+
+LOCKED ROADMAP
+NEW PUBLIC V10
+Title: Your First 90 Days in a New Job: What Really Matters
+Thumbnail: DON'T PROVE YOURSELF YET
+Whitespace spoken-word count: 1486
+Framework: READ / TEST / PROVE + ROLE CHECK
+
+NEW PUBLIC V11
+Title: What to Do When Your New Job Isn’t the Job You Accepted
+Thumbnail: THIS ISN'T THE JOB
+Whitespace spoken-word count: 1116
+Framework: EXPECTED / ACTUAL / COST / CHOICE
+
+These are NEW concepts. Do not invent former-roadmap numbers.
+
+PAIR LOGIC
+V10 = entering a new context well when experienced but new to the environment.
+V11 = evaluating material drift between the role accepted and the role that actually exists.
+
+Do not collapse them into one topic.
+
+V10 REQUIRED PRODUCTION MOMENTS
+- Opening stays camera-led until the pressure to prove yourself lands.
+- TRUE FULL-SCREEN READ / TEST / PROVE sequential reveal.
+- TRUE FULL-SCREEN formal job vs. real job comparison.
+- TRUE FULL-SCREEN manager conversation card.
+- Late narrative reversal: THEY ARE NOT THE ONLY ONES EVALUATING.
+- Final READ / TEST / PROVE / ROLE CHECK tool.
+- CTA and Watch Next full-screen.
+- Intended Watch Next = V11. If V11 is not live at launch, mark PENDING LIVE AVAILABILITY and require editorial fallback.
+- Description resource = Career Evidence Starter: https://temidayoafonja.com/career-evidence-starter
+
+V11 REQUIRED PRODUCTION MOMENTS
+- Opening stays camera-led until the mismatch is recognizable.
+- TRUE FULL-SCREEN EXPECTED / ACTUAL / COST / CHOICE.
+- TRUE FULL-SCREEN four cost lenses: CAPABILITY / EVIDENCE / COMPENSATION / LIFE.
+- Save-worthy full-screen clarification script:
+  “When we discussed this role, I expected X. In practice, I am seeing Y. Is that temporary, or is this the role as it now exists?”
+- Final role-drift read.
+- Do not frame employer/manager as villain.
+- Do not use bait-and-switch as a blanket label.
+- Intended Watch Next = NEW PUBLIC V5, If Your Company Needs You but Won’t Grow You.
+- Description resource = Career Decision Evidence Check: https://temidayoafonja.com/career-decisions
+
+HOUSE EDITING LANGUAGE
+Use creator-native clarity plus story architecture: expectation, tension, reversal, purposeful visual illustration, callbacks, and bookending.
+Do not copy external creator branding or proprietary presentation styles.
+The edit should feel like the viewer is discovering something with Temidayo, not watching a lecture with graphics added later.
+
+VISUAL SYSTEM
+16:9
+1920x1080 minimum
+Deep navy #112345
+Warm cream #F5F1E8
+Muted gold #C9A34A
+Bright warm yellow #F2C94C
+
+Mobile readability mandatory.
+Substantive frameworks/comparisons true full-screen.
+Camera primary for recognition, interpretation, nuance, boundaries, and consequential statements.
+No long-form burned-in captions.
+Riverside SRT only after final edit.
+Watch Next full-screen and FINAL. Never return to camera.
+
+EDITING RESTRAINT
+3-5 deliberate camera-emphasis beats
+2-4 meaningful B-roll moments where useful
+4-7 restrained sound accents
+One brief Subscribe cue after value
+No constant zooming/pulsing.
+Sound marks new information, reversal, or consequence.
+
+SHORTS
+Create THREE candidate Shorts per video, not six.
+
+V10:
+1. DON'T PROVE YOURSELF YET
+2. EXPERIENCED BUT NEW TO THE CONTEXT
+3. ASK YOUR MANAGER THIS BY DAY 90
+
+V11:
+1. THIS ISN'T THE JOB
+2. EXPECTED VS ACTUAL
+3. WHAT IS THE COST OF ROLE DRIFT?
+
+Every Short: STOP SCROLL → HOLD ATTENTION → ONE ASK.
+Stand-alone idea, not trailer. Do not invent spoken wording.
+
+PUBLISHING MATERIALS
+Create final title, thumbnail wording, description with one approved resource, pinned comment, upload checklist, intended Watch Next, launch-day Watch Next status.
+Use:
+🧰 Free evidence starter
+🧭 Free career decision check
+🎥 Watch next
+📺 Playlist
+No resource stacking.
+Chapters: CREATE AFTER FINAL EDIT.
+SRT: GENERATE AFTER FINAL EDIT.
+
+PACKAGE STRUCTURE
+00_SOURCE_HIERARCHY
+01_RECORDING
+02_RUN_OF_SHOW
+03_RIVERSIDE
+04_VISUAL_ASSETS
+05_SHORTS
+06_PUBLISHING
+07_EVIDENCE
+08_QA
+
+Include source manifest, final script, supplied Thought-Block copy, run of show, Riverside master prompt, Camera/Full-Screen map, Motion/Reveal map, B-roll notes, audio/sound map, 1920x1080 PNG assets, SVG where useful, asset index, phone-size contact sheet, three Shorts, Shorts editor notes, publishing materials, evidence/boundary notes, QA report.
+
+FINAL PACKAGE NAMES
+NEW_V10_First_90_Days_Production_Package.zip
+NEW_V11_New_Job_Isnt_The_Job_Production_Package.zip
+
+COMBINED
+YouTube_NEW_PUBLIC_V10-V11_FINAL_Production_Packages_2026-09-14.zip
+YouTube_NEW_PUBLIC_V10-V11_FINAL_Production_Packages_2026-09-14.zip.sha256
+NEW_V10-V11_MASTER_SOURCE_HIERARCHY_AND_NUMBER_MAP.docx
+NEW_V10-V11_PACKAGE_QA_SUMMARY.docx
+NEW_V10-V11_PRODUCTION_CHANGELOG.docx
+
+QA
+Verify:
+- exact script wording unchanged
+- Thought-Block exact and in order
+- titles/thumbnails exact
+- no former-roadmap numbers invented
+- frameworks intact
+- no unsupported audience-behavior claims added
+- U.S. English
+- no em dashes in build-authored copy
+- no invented runtime/research/outcome
+- no chapters/SRT timing before final edit
+- resources only in descriptions
+- substantive teaching true full-screen
+- camera-led balance
+- Watch Next full-screen and final
+- 1920x1080 minimum
+- mobile-readable
+- exactly three candidate Shorts per video
+
+FINAL REPORT
+Return:
+1. exact files created
+2. final spoken-word count V10
+3. final spoken-word count V11
+4. Thought-Block match result
+5. visual asset counts
+6. camera-stretch counts
+7. full-screen cue counts
+8. Shorts count
+9. QA checks / passes / failures
+10. unresolved publishing decisions
+11. final outer SHA-256
+12. confirmation no spoken wording changed
+
+If all checks pass:
+LOCK NEW PUBLIC V10 + V11 PRODUCTION AND STOP.
