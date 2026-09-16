@@ -288,6 +288,106 @@ is only reachable by a caller who has already presented the token.
 
 These five differences are confined to that file; the three older exports are unchanged.
 
+### Root cause and repair, 2026-09-15
+
+**Netlify support case #1099659 found it and reproduced it against this repository's own export
+function.** These twelve functions use the Lambda-compatible signature, `exports.handler = async
+(event) => ...`. In that mode Netlify does not put the Blobs context in the environment. It arrives
+on **`event.blobs`**, as base64 JSON, alongside the `x-nf-site-id` and `x-nf-deploy-id` headers, and
+**`connectLambda(event)` must run before any `getStore()` call**. Without it, `getStore()` has
+nothing to find. With it, the function writes, lists, reads and returns 200.
+
+There was no project flag, no provisioning defect, no bundler problem, no region problem and no
+credential problem. The manual `{ siteID, token }` configuration added on 2026-08-13 was a
+workaround for a cause that had been misdiagnosed from the start.
+
+**Two defects in this repository's own diagnostics made the investigation worse, and both are
+fixed.**
+
+The reported `blobs_api_400` was **fabricated by our own code**. `blobsErrorStatus()` scanned any
+error message for the first three-digit number and reported it as an upstream HTTP status. Netlify
+confirm their Blobs API never received a request. For a fortnight that number pointed the
+investigation at an API that was never called. The scan is gone: a status is now read only from a
+numeric `status` property or from the exact anchored shape `BlobsInternalError` builds, on an error
+that class actually raised.
+
+A 404 could have turned a failure into a **successful empty export**. The endpoint treated
+`blobs_api_404` as "the store does not exist yet" and answered 200 with no records. Combined with
+the fabricated status above, any error whose message happened to contain 404 could have reported an
+empty but successful export of a store that was never read. The branch is removed rather than
+narrowed: every storage fault is now a 500, and the only empty export is one that comes from a
+successful listing.
+
+**The repair, in `netlify/lib/blobs.js` and all ten Blobs-using functions.** `blobStore(name, event)`
+now connects first and then calls bare `getStore(name)`. Thirteen permanent call sites pass their event,
+including three rate limiters that previously took only an IP address and so had no event to connect
+with, which is why rate limiting was silently dead site-wide. If the Lambda context is absent the
+helper **throws**; there is no fallback to manual credentials, and `BLOBS_SITE_ID` and `BLOBS_TOKEN`
+are no longer read anywhere in the codebase. A silent fallback is what hid this fault for a month.
+
+### Deploy Preview verification of the repair, 2026-09-15
+
+Two checks were run against the Deploy Preview for the repair. **One passed and one failed, and they
+are not the same question.**
+
+**Storage round trip: PASSED.** A protected, preview-only endpoint connected, wrote a disposable key,
+listed it, read it back, deleted it and confirmed it was gone. All six steps returned true and the
+store reported exactly one key during the test. No real subscriber record was read, written or
+deleted. This is the direct evidence that the repair works: the connected zero-config path reaches
+Netlify Blobs and completes a full write and read cycle.
+
+That endpoint was temporary and **has been removed**, along with its tests, before merge. It was
+never reachable in the production context: it answered 404 there before authenticating or touching
+storage. Nothing in the site references it and no redirect exposed it, so removing the two files
+removes the whole surface. The `blobs-roundtrip-check` store it used may survive as an empty store on
+the preview; it never held anything but the disposable key, which the check deleted and confirmed
+gone.
+
+**Per-IP rate limit: FAILED.** Eleven sequential requests to the capture endpoint returned eleven
+400s and no 429, where the eleventh should have been refused.
+
+The log was checked afterwards for the window covering those eleven invocations. **No
+`rate limiting is OFF` entry and no limiter error appears**, which rules out the fail-open path: the
+limiter ran, reached storage and counted. The wiring is correct and was checked line by line. `career-decisions-subscribe.js` calls
+`blobStore("career-decisions-rate", event)` and reaches it through `isRateLimited(event, ip)`, and
+`blobStore()` runs `connectLambda(event)` before `getStore()`. The rate-limit gate also runs *before*
+body validation, so every one of those eleven rejected requests did pass through the limiter. The
+fault is not in the connection and not in the ordering.
+
+**The cause is that on `@netlify/blobs` 8.2.0, in Lambda compatibility mode, a Blobs counter cannot
+enforce a burst limit.** Every point below is scoped to that version and that mode. None of it is a
+general claim about Netlify Blobs, and a later release or the modern Functions API may differ. It was
+verified by running the installed 8.2.0 against a synthetic Lambda event rather than by inference:
+
+- `store.get()` defaults to `consistency: "eventual"`. Reads are served from a cached edge URL, so a
+  value written by one request is not reliably visible to the next. Eleven requests in quick
+  succession can each read a stale count and each write 1, so the threshold is never crossed.
+- `connectLambda(event)` builds an environment context containing exactly `deployID`, `edgeURL`,
+  `siteID` and `token`. It does **not** supply `uncachedEdgeURL`.
+- Strong consistency is routed through `uncachedEdgeURL`. Without it the SDK raises
+  `BlobsConsistencyError` before any network call. Asking for `consistency: "strong"` here would
+  therefore throw, the limiter's catch would swallow it, and rate limiting would be turned **off
+  entirely**. The obvious one-line fix is worse than the defect.
+- In 8.2.0, `set()` and `setJSON()` accept only `{ metadata }`. That version offers no conditional
+  write, no compare-and-swap and no atomic increment, so on this pinning the counter cannot be made
+  correct another way.
+
+**This is not a regression introduced by the repair.** Before it, the limiter threw on every request
+and failed open. After it, it reaches storage without error. That is an improvement in the storage
+path, and it is the whole of what has been shown.
+
+**What has and has not been established, stated plainly.** Established: the limiter can now reach
+Blobs, and the eleven-request burst was not enforced. **Not** established: that the counter reliably
+enforces any ceiling, over any window. Eventual-consistency reads may or may not accumulate
+dependably over an hour; that has not been measured, and nothing here should be read as saying it
+has. **No rate-limit enforcement should be relied on at present.** The Netlify-native edge limit
+remains accepted but unenforced and is a separate open item. Until it is enforced, or the endpoint is
+moved to a runtime where strong consistency is available, this site has no demonstrated rate
+limiting. Upgrading
+`@netlify/blobs` past 8.2.0 is a third option, if a later release adds an atomic counter. Whether the
+modern runtime supplies `uncachedEdgeURL`, and whether any later release adds such a primitive, both
+need confirming before anything is built on them. Neither has been verified here.
+
 ### Accepted limitation at launch: no durable first-party record
 
 Netlify Blobs has been failing site-wide since 2026-08-20. Every read and write returns HTTP 400
@@ -319,14 +419,22 @@ Added 2026-08-27, for the same incident. The submission function's own limiter, 
 salted IP hash, is built on Blobs and is deliberately fail-open, so while Blobs is broken **the form
 has no working limit from that limiter at all**. That is not an acceptable state to launch in.
 
+**Update, 2026-09-15.** Storage is repaired and that limiter no longer fails open: it reaches Blobs
+without error. It still did not stop an eleven-request burst, for a reason unrelated to the outage.
+On `@netlify/blobs` 8.2.0 reads default to eventual consistency, and in Lambda compatibility mode
+strong consistency is unavailable, so a rapid burst can each read a stale count. See "Deploy Preview
+verification of the repair" above. **This does not restore any demonstrated ceiling.** The sentence
+below, that the Blobs limiter resumes enforcing a sustained hourly ceiling once storage is repaired,
+was written as an expectation and has never been observed. Treat it as superseded by this note.
+
 `netlify.toml` therefore carries a Netlify-native limit on the submission rule, depending on nothing
 this site configures: **five submissions per 180 seconds, aggregated by domain and IP.** No `action`
 is declared, so the default applies and an exceeded limit is refused with 429 rather than rewritten
 to a page, which is right for a path only ever reached by the form's fetch. **As of launch this rule
 is accepted by Netlify but has not been observed to fire.** See the status below before relying on
 it. Netlify caps the window at 180 seconds, so the hour-long ceiling the Blobs limiter expresses
-cannot be reproduced here. The two are complementary and both are kept: this one stops bursts now,
-and the Blobs limiter resumes enforcing the sustained hourly ceiling when storage is repaired.
+cannot be reproduced here. The two were intended as complementary and both are kept. Neither has been
+observed to enforce anything: see the 2026-09-15 update above.
 
 Because Netlify reserves the `/.netlify/` prefix for its own routing, the page posts to
 `/api/career-decisions-subscribe`, which is rewritten to the function with status 200 and is the

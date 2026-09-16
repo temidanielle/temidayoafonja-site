@@ -40,7 +40,7 @@
 // Node 18+. See docs/forms-audit.md section 10 and docs/data-inventory.md.
 
 const crypto = require("crypto");
-const { blobStore, blobsConfigured } = require("../lib/blobs");
+const { blobStore, blobsAvailable } = require("../lib/blobs");
 
 const STORE = "career-decisions-leads";
 
@@ -128,62 +128,28 @@ function flatten(rec) {
   return flat;
 }
 
-// Which route blobStore() takes for this call. Defined here rather than in the
-// shared helper deliberately: netlify/lib/blobs.js is used by all nine Blobs
-// functions, four of them live on production, and nothing in this branch should
-// reach them. This mirrors the helper's precedence and must be kept in step
-// with it: manual credentials win when both are present.
+// The status of a Blobs API error, when and only when one is genuinely
+// available from a structured source.
 //
-// It exists because on 2026-08-26 a site-wide Blobs failure could not be
-// attributed without knowing which of the two routes was in use. It reported
-// "manual", which established that Netlify is injecting no Blobs context here
-// and that the failing request is the API one.
-function blobsRoute() {
-  if (blobsConfigured()) return "manual";
-  if (globalThis.netlifyBlobsContext || process.env.NETLIFY_BLOBS_CONTEXT) return "auto";
-  return "unconfigured";
-}
-
-// ── Blobs failure classification ───────────────────────────────────────────
+// This used to scan any error's message for the first three-digit number. On
+// 2026-09-15 Netlify confirmed that is where the reported blobs_api_400 came
+// from: their Blobs API never received a request at all, and the "400" was
+// extracted by this regex out of an unrelated message. A diagnostic that
+// fabricates an upstream status sends an investigation somewhere the fault is
+// not, and this one did, for a fortnight.
 //
-// Added 2026-08-20 after a Deploy Preview run of this endpoint returned a bare
-// export_failed. The token was correct, so the fault was inside the storage
-// read, but the response said only that something went wrong, and the Netlify
-// log for that invocation had already rolled past by the time it was opened.
-// An endpoint that can fail for four unrelated reasons and reports all four
-// identically cannot be diagnosed from outside, so it now names the class.
-//
-// Nothing here is sensitive. A fault class, a store name and a boolean saying
-// whether the two Blobs variables are present are all that is returned, and
-// only to a caller who has already presented the token. No credential, no email
-// address and no record content appears in any of these paths.
-
-// @netlify/blobs raises BlobsInternalError when the Blobs API answers with a
-// non-200. Which version puts the status on the error object and which only
-// writes it into the message text has changed across releases, so both forms
-// are read and an unrecognised error yields null rather than a wrong number.
+// Two sources are trusted now, both structured: a numeric `status` property,
+// and the exact anchored shape @netlify/blobs builds in BlobsInternalError, on
+// an error that class actually raised. Anything else yields null.
 function blobsErrorStatus(e) {
   if (!e) return null;
   if (typeof e.status === "number") return e.status;
-  const m = /\b([1-5]\d\d)\b/.exec(String(e.message || ""));
+  if (e.name !== "BlobsInternalError") return null;
+  const m = /^Netlify Blobs has generated an internal error \((\d{3}) status code/
+    .exec(String(e.message || ""));
   return m ? Number(m[1]) : null;
 }
 
-// Netlify's API can explain a refusal in words, in an x-nf-error response
-// header. @netlify/blobs folds that header, or the bare status when there is no
-// header, into the error message as:
-//
-//   Netlify Blobs has generated an internal error (<detail>[, ID: <request id>])
-//
-// That detail is the only thing that distinguishes one 400 from another, and it
-// is otherwise visible only in a function log that has usually rolled by the
-// time anyone looks. It is returned here.
-//
-// Two deliberate limits. Only BlobsInternalError is read, because its message
-// is a known bounded shape produced by the client itself; the message of an
-// arbitrary error is never returned, since nothing constrains what it might
-// contain. And the result is truncated, so a long upstream string cannot turn
-// a diagnostic into a payload.
 const MAX_DETAIL = 200;
 
 function blobsFailureDetail(e) {
@@ -200,7 +166,7 @@ function blobsFailureDetail(e) {
 // rather than resting on that staying true.
 function redactSecrets(text) {
   let out = String(text);
-  for (const secret of [process.env.BLOBS_TOKEN, process.env.RESEARCH_EXPORT_TOKEN]) {
+  for (const secret of [process.env.RESEARCH_EXPORT_TOKEN]) {
     if (secret && String(secret).length >= 8) out = out.split(String(secret)).join("[redacted]");
   }
   return out;
@@ -209,13 +175,22 @@ function redactSecrets(text) {
 // A short, stable code for the fault class. Order matters: an absent pair of
 // Blobs variables is the explanation for everything downstream of it, so it is
 // checked first.
-function blobsFailureCode(e) {
-  if (!blobsConfigured()) return "blobs_not_configured";
-  if (e && e.name === "MissingBlobsEnvironmentError") return "blobs_env_missing";
+
+// A short, stable code for the fault class. Order matters: an absent pair of
+// Blobs variables is the explanation for everything downstream of it, so it is
+// checked first.
+function blobsFailureCode(e, event) {
+  // Our own fail-closed throws come first: they are the only ones that mean the
+  // call never reached Netlify at all.
+  if (e && e.message === "blobs_event_missing") return "blobs_event_missing";
+  if (e && e.message === "blobs_context_missing") return "blobs_context_missing";
+  if (!blobsAvailable(event)) return "blobs_context_missing";
+  if (e && e.name === "MissingBlobsEnvironmentError") return "blobs_not_connected";
   const status = blobsErrorStatus(e);
   if (status) return "blobs_api_" + status;
   return "blobs_error";
 }
+
 
 exports.handler = async (event) => {
   // Read only, in the plainest sense: nothing but GET is answered at all.
@@ -279,43 +254,44 @@ exports.handler = async (event) => {
   }
 
   let records = [];
-  let storeExists = true;
   try {
-    const store = blobStore(STORE);
+    const store = blobStore(STORE, event);
     const listing = await store.list();
     for (const b of (listing && listing.blobs) || []) {
       const rec = await store.get(b.key, { type: "json" });
       if (rec) { rec.key = b.key; records.push(rec); }
     }
   } catch (e) {
-    const code = blobsFailureCode(e);
-    console.error("blobs " + STORE + " read failed:", code, blobsFailureDetail(e) || "", "manual config present:", blobsConfigured(), e);
+    const code = blobsFailureCode(e, event);
+    console.error("blobs " + STORE + " read failed:", code, blobsFailureDetail(e) || "",
+      "lambda blobs context present:", blobsAvailable(event), e);
 
-    // A store that has never had a blob written to it does not exist, and the
-    // Blobs API answers 404 for it. That is an empty export, not a server
-    // error. Reporting it as a 500 is precisely what made the first live run of
-    // this endpoint impossible to interpret: a store with nothing in it and a
-    // store that could not be reached produced the same response. Only 404 is
-    // treated this way. Every other fault is still a 500.
-    if (code !== "blobs_api_404") {
-      return {
-        statusCode: 500,
-        headers: headers({ "Content-Type": "application/json" }),
-        body: JSON.stringify({
-          error: "export_failed",
-          reason: code,
-          detail: blobsFailureDetail(e),
-          store: STORE,
-          // Which of the two routes the call took. The injected context and the
-          // manual API credentials fail for unrelated reasons, and nothing in
-          // the error itself says which one was in use.
-          mode: blobsRoute(),
-          blobs_manual_config: blobsConfigured()
-        })
-      };
-    }
-    storeExists = false;
-    records = [];
+    // Every storage fault is a 500. There is deliberately no path from an
+    // exception to a successful empty export.
+    //
+    // There used to be one: a 404 was reported as an empty store with a 200.
+    // Two things were wrong with it. The client already treats 404 as an empty
+    // listing internally and never throws it, so the branch was unreachable by
+    // its intended route; and the only way to reach it was the fabricated
+    // status above, which means the single thing it could ever have done was
+    // turn an unrelated error into a successful-looking export of no records.
+    // An empty result that looks like success is the worst answer this endpoint
+    // can give, so the branch is gone rather than narrowed.
+    return {
+      statusCode: 500,
+      headers: headers({ "Content-Type": "application/json" }),
+      body: JSON.stringify({
+        error: "export_failed",
+        reason: code,
+        detail: blobsFailureDetail(e),
+        store: STORE,
+        // Whether Netlify attached a Blobs context to this invocation. One
+        // boolean, and the only thing about the context that ever leaves here:
+        // no value, structure, length or credential. False means the connect
+        // could not have happened and the fault is upstream of this endpoint.
+        blobs_context_present: blobsAvailable(event)
+      })
+    };
   }
 
   records.sort((a, b) => String(b.received_at_utc).localeCompare(String(a.received_at_utc)));
@@ -324,7 +300,7 @@ exports.handler = async (event) => {
     return {
       statusCode: 200,
       headers: headers({ "Content-Type": "application/json" }),
-      body: JSON.stringify({ store: STORE, store_exists: storeExists, count: records.length, records }, null, 2)
+      body: JSON.stringify({ store: STORE, count: records.length, records }, null, 2)
     };
   }
 
