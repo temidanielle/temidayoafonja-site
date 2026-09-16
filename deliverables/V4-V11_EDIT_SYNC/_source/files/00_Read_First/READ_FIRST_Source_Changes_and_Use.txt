@@ -1,0 +1,46 @@
+TEMIDAYO AFONJA | NEW PUBLIC V4-V11
+RECORDING + EARLY CURIOSITY / OUTCOME EDITING HANDOFF
+Created Wednesday, September 16, 2026 | 10:06 AM CT (CDT, UTC-05:00)
+
+WHAT IS IN THIS FOLDER
+01_Recording_Scripts: eight clean recording scripts.
+02_Thought_Blocks: eight word-for-word recording-format derivatives.
+03_Editing_Briefs: eight video-specific early-edit instructions.
+00_Read_First: this note, scoped Code/Riverside prompt, source manifest and QA.
+
+WHICH FILE TO USE
+Record from the script or its thought blocks. Give Code/the editor the complete ZIP, not a recording file alone.
+Production directions are deliberately outside the thought blocks.
+
+WHAT CHANGED
+The source is the latest September 16 BEAST MODE archive. No new retention narration, framework, personal story, bio, research claim, title, thumbnail or Watch Next was added.
+The curiosity and outcome lens is made explicit in each editing brief. Early opening text, a meaningful cutaway and an audio stinger no longer wait for a later framework section. Each brief assigns five sound accents on exact spoken triggers and four camera-emphasis beats.
+
+ONE SPOKEN CORRECTION
+V6: “GiveDirectly was hiring a Director of Global Talent Acquisition.” becomes “A global nonprofit was hiring a Director of Global Talent Acquisition.”
+This implements the already-approved public-anonymization boundary. All named evidence stays in the internal source layer. This adds two whitespace-delimited words. No other spoken text changed.
+
+THOUGHT-BLOCK CORRECTIONS
+The supplied derivatives mistakenly labeled spoken framework words NOT SPOKEN:
+V4: BEFORE AI. WITH AI. STILL MINE.
+V6: PROBLEM. AUTHORITY. PROOF. REAL GAP.
+V9: TRAVELS. DOES NOT TRAVEL. PROOF. RELEARN.
+These words are spoken in the parent masters. The new copies restore their spoken status. All blocks were regrouped around complete ideas without changing words or order. Section labels remain NOT SPOKEN. The final production-graphic instruction stays in the editor brief, not in the recording copy.
+
+SOURCE CONTROL
+The original archive is untouched. V14-V21 are not revised. Historical production packages are not overwritten.
+V10 thumbnail remains DON’T SPEND YOUR FIRST 90 DAYS PROVING YOURSELF.
+The current house colors remain #112345 / #F5F1E8 / #C9A84C / #F2C44C.
+
+IMPORTANT LIMITS
+This is a source-and-edit handoff, not rebuilt slide assets or a completed edit. No actual retention improvement, final runtime, footage QA, audio mix, SRT or chapter timing is claimed.
+Quoted trigger excerpts are checked against the current master. Visual copy is identified as editorial display copy and is not a substitute transcript.
+Existing factual/generalized claims are preserved, not independently reverified by this task. The V4 30-seconds/three-hours opening is not a substantiated benchmark in this handoff. Do not turn it into measured research or a speed statistic graphic; resolve its evidence status before public release if needed. Do not use a blanket word-search pass as evidence that every factual claim is verified.
+
+V6 TEN-MINUTE PROMISE
+Delivered spoken words: 1096 (whitespace count, labels and metadata excluded).
+At 130-145 words/minute, speech-only arithmetic is approximately 7.56-8.43 minutes. This is not a measured runtime.
+Do not add narration or long silent slide holds. Check the actual finished edit before publishing under the ten-minute title. Timing claims elsewhere in historical packages are not automatically synchronized.
+
+RELEASE CHECK
+Match current source, trigger maps, on-screen wording, captions/Shorts extracts and publishing metadata. Reuse correct assets. Revise only affected dependencies. One primary ask. Watch Next is full-screen and final. Stop when the affected set is correct.

@@ -1,0 +1,1502 @@
+[
+ {
+  "video": 4,
+  "key": "NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "Who gets the experience that used to come from doing the work?"
+  ],
+  "labels": []
+ },
+ {
+  "video": 4,
+  "key": "NEW_V4_FS_02_INEFFICIENT_AND_DEVELOPMENTAL",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "COMPARISON",
+  "missing": [
+   "A task can be both.",
+   "It taught you what good looked like.",
+   "Slow, repetitive, sometimes wrong."
+  ],
+  "labels": [
+   "DEVELOPMENTAL",
+   "INEFFICIENT",
+   "THE TENSION"
+  ]
+ },
+ {
+  "video": 4,
+  "key": "NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "Pattern recognition",
+   "Why the eleventh one is different"
+  ],
+  "labels": [
+   "FIXING MISTAKES",
+   "REPETITION",
+   "SEEING TEN BAD EXAMPLES",
+   "WHAT THE WORK TAUGHT"
+  ]
+ },
+ {
+  "video": 4,
+  "key": "NEW_V4_FS_04_THE_REAL_QUESTION",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "Not: should AI do the task?"
+  ],
+  "labels": [
+   "NOT AN ANTI-AI ARGUMENT"
+  ]
+ },
+ {
+  "video": 4,
+  "key": "NEW_V4_FS_05_THREE_THINGS",
+  "anchor": "HELD",
+  "states": 4,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "Do they still have to make a choice?",
+   "What to watch when a task is automated.",
+   "When the output is wrong, do they understand why?"
+  ],
+  "labels": [
+   "THREE THINGS TO WATCH"
+  ]
+ },
+ {
+  "video": 4,
+  "key": "NEW_V4_FS_06_MOVED_OR_REMOVED",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "COMPARISON",
+  "missing": [
+   "Run the tool. Copy the result. Send it upward.",
+   "Test the assumptions. Challenge the output. Defend the recommendation."
+  ],
+  "labels": [
+   "THE SAME TASK, TWO OUTCOMES",
+   "THE WORK LEFT",
+   "THE WORK MOVED"
+  ]
+ },
+ {
+  "video": 4,
+  "key": "NEW_V4_FS_07_WHAT_DID_IT_TEACH",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "Then decide how that learning happens now."
+  ],
+  "labels": [
+   "FOR MANAGERS"
+  ]
+ },
+ {
+  "video": 4,
+  "key": "NEW_V4_FS_08_STILL_PRACTICING",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "Can I explain what I contributed?"
+  ],
+  "labels": [
+   "FOR PROFESSIONALS"
+  ]
+ },
+ {
+  "video": 4,
+  "key": "NEW_V4_FS_09_NOT_ONE_OUTCOME",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "AI may increase learning",
+   "Different jobs will answer differently.",
+   "Human review may remain essential",
+   "The task may truly disappear"
+  ],
+  "labels": [
+   "IN OTHER ROLES",
+   "IN SOME WORK",
+   "NOT A CLAIM ABOUT ONE OUTCOME",
+   "THE BOUNDARY"
+  ]
+ },
+ {
+  "video": 4,
+  "key": "NEW_V4_FS_10_THREE_COLUMNS",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "CTA",
+  "missing": [
+   "Audit one task AI now helps you with.",
+   "If the third column is almost empty, ask where the learning comes from"
+  ],
+  "labels": [
+   "ONE THING TO DO"
+  ]
+ },
+ {
+  "video": 4,
+  "key": "NEW_V4_FS_11_TASK_IS_NOT_THE_JOB",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [],
+  "labels": [
+   "CLOSE"
+  ]
+ },
+ {
+  "video": 4,
+  "key": "NEW_V4_WATCH_NEXT",
+  "anchor": null,
+  "states": 1,
+  "treatment": "WATCH NEXT",
+  "missing": [],
+  "labels": [
+   "WATCH NEXT"
+  ]
+ },
+ {
+  "video": 5,
+  "key": "NEW_V5_FS_01_NEEDED_NOT_GROWN",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "COMPARISON",
+  "missing": [
+   "They call you when something breaks."
+  ],
+  "labels": [
+   "A PAINFUL PLACE TO BE",
+   "BUT NOT NECESSARILY GROWN BY IT",
+   "NEEDED BY THE COMPANY"
+  ]
+ },
+ {
+  "video": 5,
+  "key": "NEW_V5_FS_02_NOT_ALIGNED",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "That does not mean anyone is plotting against you.",
+   "Your value to the current role and your value to your future are not a"
+  ],
+  "labels": [
+   "THE TRAP"
+  ]
+ },
+ {
+  "video": 5,
+  "key": "NEW_V5_FS_03_WATCH_FOR_PATTERNS",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [],
+  "labels": [
+   "BUT NO NEW DECISION ROOM",
+   "MORE DEPENDENCE ON YOU",
+   "MORE KNOWLEDGE TRANSFER",
+   "NO CONVERSATION ABOUT WHAT COMES NEXT",
+   "NO DEVELOPMENTAL ASSIGNMENT",
+   "ONE MOMENT DOES NOT PROVE ANYTHING. A PATTERN DOES.",
+   "WHAT IT LOOKS LIKE"
+  ]
+ },
+ {
+  "video": 5,
+  "key": "NEW_V5_FS_04_THE_QUESTION",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "What is this organization building in me beyond my ability to keep thi"
+  ],
+  "labels": []
+ },
+ {
+  "video": 5,
+  "key": "NEW_V5_FS_05_INDISPENSABLE_AND_LESS_PORTABLE",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "COMPARISON",
+  "missing": [
+   "At the same time.",
+   "Fewer people can operate without you.",
+   "Your experience becomes tied to the internal system."
+  ],
+  "labels": [
+   "LESS PORTABLE",
+   "MORE INDISPENSABLE",
+   "STORY"
+  ]
+ },
+ {
+  "video": 5,
+  "key": "NEW_V5_FS_06_ASK_FOR_DEVELOPMENT",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "Not only a promotion."
+  ],
+  "labels": [
+   "A PROJECT OUTSIDE YOUR USUAL LANE",
+   "EVIDENCE BEYOND RESCUE WORK",
+   "EXPOSURE TO A DIFFERENT LEADER",
+   "WHAT TO ASK FOR"
+  ]
+ },
+ {
+  "video": 5,
+  "key": "NEW_V5_FS_07_THE_ANSWER_MAY_BE_NO",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "The answer may still be no."
+  ],
+  "labels": [
+   "A MANAGER MAY NEED YOU WHERE YOU ARE",
+   "BIAS MAY SHAPE WHO GETS OPPORTUNITIES",
+   "BOUNDARY",
+   "NO OPENING",
+   "THAT IS INFORMATION TOO",
+   "THE COMPANY MAY NOT HAVE THE PATH YOU NEED"
+  ]
+ },
+ {
+  "video": 5,
+  "key": "NEW_V5_FS_08_DEPENDENCE_VS_DEVELOPMENT",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "COMPARISON",
+  "missing": [],
+  "labels": [
+   "SOMETIMES THE SAME ASSIGNMENT CONTAINS BOTH",
+   "THE DIFFERENCE"
+  ]
+ },
+ {
+  "video": 5,
+  "key": "NEW_V5_FS_09_REVIEW_POINT",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "What authority changed?",
+   "What recognition or role design follows?"
+  ],
+  "labels": [
+   "AT THE REVIEW POINT"
+  ]
+ },
+ {
+  "video": 5,
+  "key": "NEW_V5_FS_10_CTA",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "CTA",
+  "missing": [
+   "If not, usefulness may be the reason you are stuck.",
+   "Is it also helping you become:",
+   "More capable.",
+   "More portable.",
+   "More visible."
+  ],
+  "labels": [
+   "ONE QUESTION TO ASK"
+  ]
+ },
+ {
+  "video": 5,
+  "key": "NEW_V5_WATCH_NEXT",
+  "anchor": null,
+  "states": 1,
+  "treatment": "WATCH NEXT",
+  "missing": [],
+  "labels": [
+   "WATCH NEXT"
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_01_TITLE_ONLY",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "ARTIFACT",
+  "missing": [
+   "Chicago, Illinois. Remote.",
+   "Large Health Insurer",
+   "Sr Divisional Strategy Consultant, Governance"
+  ],
+  "labels": [
+   "CAPTURED SEPTEMBER 12, 2026",
+   "LOCATION",
+   "POSTING ONE"
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_02_THE_CONTRADICTION",
+  "anchor": "LOST",
+  "states": 2,
+  "treatment": "ARTIFACT",
+  "missing": [
+   "$61,500 to $136,100",
+   "Sr Divisional Strategy Consultant, Governance",
+   "The ability to accept direction and feedback"
+  ],
+  "labels": [
+   "CAPTURED SEPTEMBER 12, 2026",
+   "POSTING ONE",
+   "PUBLISHED RANGE",
+   "REQUIRED QUALIFICATIONS"
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_03_THE_SAMPLE",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "Read for this research. A bounded sample, not the labor market."
+  ],
+  "labels": [
+   "POSTINGS. 11 EMPLOYERS.",
+   "THE EVIDENCE"
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_05_PARP",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "The four things."
+  ],
+  "labels": [
+   "THE METHOD"
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_04_THREE_QUESTIONS",
+  "anchor": "LOST",
+  "states": 3,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "Can I prove relevant evidence?",
+   "Do I meet the stated gates?",
+   "Three different questions."
+  ],
+  "labels": [
+   "WHAT TO LOOK FOR"
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_06_POSTING_WALKTHROUGH",
+  "anchor": "LOST",
+  "states": 3,
+  "treatment": "ARTIFACT",
+  "missing": [
+   "A consistent way to evaluate opportunities, track them, and report on ",
+   "Access is unusually specific. The role may be far more hands-on than t",
+   "Business analytics. Microsoft Access.",
+   "Sr Divisional Strategy Consultant, Governance",
+   "Supporting the development of divisional strategies",
+   "Supporting the development of strategies. Not setting them.",
+   "Tracking strategic opportunities"
+  ],
+  "labels": [
+   "1  PROBLEM",
+   "2  AUTHORITY",
+   "3  PROOF",
+   "CAPTURED SEPTEMBER 12, 2026",
+   "POSTING ONE",
+   "QUALIFICATIONS",
+   "ROLE PURPOSE"
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_08_READ_THE_VERBS",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "Read the verbs.",
+   "This is where job descriptions become much more honest."
+  ],
+  "labels": [
+   "RULE ONE"
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_09_PREDEFINED_DECISIONS",
+  "anchor": "LOST",
+  "states": 2,
+  "treatment": "ARTIFACT",
+  "missing": [
+   "$133,400 to $247,700",
+   "Large Health Insurer",
+   "Work with executive leadership to make quick decisions based on predef"
+  ],
+  "labels": [
+   "CAPTURED SEPTEMBER 12, 2026",
+   "POSTING TWO",
+   "PUBLISHED RANGE",
+   "SAME EMPLOYER, DIFFERENT DEPARTMENT"
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_17_REAL_GAP",
+  "anchor": "LOST",
+  "states": 2,
+  "treatment": "COMPARISON",
+  "missing": [
+   "A real gap is not always a skill gap.",
+   "Recruiting experience exclusively in one geographic context is unlikel"
+  ],
+  "labels": [
+   "AN OPERATING CONSTRAINT, NOT A SKILL GAP",
+   "CAPTURED SEPTEMBER 12, 2026",
+   "POSTING SIX",
+   "STATED IN THE POSTING"
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_10_DIRECTOR_COMPARE",
+  "anchor": "LOST",
+  "states": 2,
+  "treatment": "COMPARISON",
+  "missing": [
+   "5 or more years",
+   "5 to 7 years",
+   "Director of Strategic Initiatives",
+   "Director, Talent Management",
+   "Insurance Brokerage",
+   "Marketing Technology Company",
+   "Operational execution",
+   "Runs a transformation office",
+   "Two different industries."
+  ],
+  "labels": [
+   "CAPTURED SEPTEMBER 12, 2026",
+   "EXPERIENCE MINIMUM",
+   "PARTNERS WITH",
+   "POSTING FOUR",
+   "POSTING THREE",
+   "REPORTS TO",
+   "TWO DIRECTOR ROLES"
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_12_TITLE_TEST",
+  "anchor": "LOST",
+  "states": 4,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "Different authority.",
+   "Different context.",
+   "Different work.",
+   "Same broad level word."
+  ],
+  "labels": [
+   "A TITLE CAN HELP YOU FIND A POSTING",
+   "THE TITLE TEST"
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_13_ACRONYM_WALL",
+  "anchor": "HELD",
+  "states": 2,
+  "treatment": "ARTIFACT",
+  "missing": [
+   "AI Company",
+   "FedRAMP.  ATO.  POAM.  3PAO.  STIG.",
+   "Palo Alto, California and Washington, DC"
+  ],
+  "labels": [
+   "CAPTURED SEPTEMBER 12, 2026",
+   "IN THE DESCRIPTION",
+   "LOCATION",
+   "POSTING FIVE"
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_14_AUTHORITY_POSTURES",
+  "anchor": "LOST",
+  "states": 5,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "Leadership",
+   "What the person was expected to do."
+  ],
+  "labels": [
+   "ADVISES",
+   "COORDINATES",
+   "LEADS",
+   "OPERATES AS",
+   "POSTING FIVE"
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_15_CEILING",
+  "anchor": "LOST",
+  "states": 2,
+  "treatment": "STATEMENT",
+  "missing": [
+   "Of the 15 postings read for this research. Not a claim about the marke",
+   "The range on this posting, revealed after the four postures."
+  ],
+  "labels": [
+   "HIGHEST PUBLISHED CEILING IN THE SAMPLE",
+   "POSTING FIVE",
+   "THE PUBLISHED RANGE"
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_16_READ_THE_WORK",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [],
+  "labels": [
+   "RULE TWO"
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_18_WHAT_IT_WILL_NOT_DO",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "What this method will not tell you."
+  ],
+  "labels": [
+   "THAT READING BETTER GUARANTEES A BETTER OUTCOME",
+   "THE BOUNDARY",
+   "WHETHER A MANAGER WOULD FLEX ON A REQUIREMENT",
+   "WHETHER BIAS WILL SHAPE THE DECISION",
+   "WHETHER THE AUTHORITY ON PAPER EXISTS IN PRACTICE",
+   "WHETHER THE TEAM CULTURE MATCHES THE POSTING"
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_19_FOUR_THINGS",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "A cleaner read on four things."
+  ],
+  "labels": [
+   "WHAT MAY NOT",
+   "WHAT MAY TRAVEL",
+   "WHAT YOU CAN PROVE",
+   "WHAT YOU GET",
+   "WHAT YOU WOULD STILL NEED TO LEARN"
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_20_CTA",
+  "anchor": "HELD",
+  "states": 2,
+  "treatment": "CTA",
+  "missing": [
+   "Take one job description.",
+   "Then find the strongest verb in the posting."
+  ],
+  "labels": [
+   "ONE THING TO DO"
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_WATCH_NEXT",
+  "anchor": null,
+  "states": 1,
+  "treatment": "WATCH NEXT",
+  "missing": [],
+  "labels": [
+   "WATCH NEXT"
+  ]
+ },
+ {
+  "video": 7,
+  "key": "NEW_V7_FS_01_NOT_ALWAYS_WHO_WORKED_HARDER",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "The difference was not always who worked harder."
+  ],
+  "labels": [
+   "THE HOOK"
+  ]
+ },
+ {
+  "video": 7,
+  "key": "NEW_V7_FS_02_TWO_QUESTIONS",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "COMPARISON",
+  "missing": [
+   "Who do I trust at this level?"
+  ],
+  "labels": [
+   "THEY ARE ASKING",
+   "THEY ARE NOT ONLY ASKING"
+  ]
+ },
+ {
+  "video": 7,
+  "key": "NEW_V7_FS_03_USEFUL_NOT_PICTURED",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [],
+  "labels": [
+   "WHAT PEOPLE USUALLY DO"
+  ]
+ },
+ {
+  "video": 7,
+  "key": "NEW_V7_FS_04_FOUR_THINGS",
+  "anchor": "LOST",
+  "states": 5,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "Has this person already handled something that looks like part of the ",
+   "Is someone in the room able and willing to say, give them the shot?",
+   "When there was no clear answer, did they make a sound call?",
+   "Will they surface a problem early and tell the truth when the news is "
+  ],
+  "labels": [
+   "FOUR THINGS THAT TEND TO MATTER",
+   "NOT A GUARANTEED FORMULA. A WAY TO READ WHAT MAY BE HAPPENING."
+  ]
+ },
+ {
+  "video": 7,
+  "key": "NEW_V7_FS_05_NOT_MERIT",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [],
+  "labels": [
+   "CAREERS DO NOT HAPPEN IN A VACUUM",
+   "SO I DO NOT WANT TO REDUCE THIS TO MERIT",
+   "WHO GETS ACCESS TO DEVELOPMENTAL WORK MATTERS"
+  ]
+ },
+ {
+  "video": 7,
+  "key": "NEW_V7_FS_06_EVIDENCE_FOR_WHICH_ROLE",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "The evidence people see may be evidence for the role you already have.",
+   "The problem is not that you have done nothing."
+  ],
+  "labels": []
+ },
+ {
+  "video": 7,
+  "key": "NEW_V7_FS_07_ASK_WHAT_KIND",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "What problem will I own end to end?"
+  ],
+  "labels": []
+ },
+ {
+  "video": 7,
+  "key": "NEW_V7_FS_08_CHANGES_THE_CONVERSATION",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "COMPARISON",
+  "missing": [],
+  "labels": [
+   "THAT CHANGES THE CONVERSATION"
+  ]
+ },
+ {
+  "video": 7,
+  "key": "NEW_V7_FS_09_THE_BOUNDARY",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [],
+  "labels": [
+   "A MANAGER WHO DOES NOT ADVOCATE",
+   "BUDGET AND HEADCOUNT LIMITS",
+   "YOU NEED TO KNOW THAT TOO"
+  ]
+ },
+ {
+  "video": 7,
+  "key": "NEW_V7_FS_10_SEPARATE_THREE_THINGS",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [],
+  "labels": []
+ },
+ {
+  "video": 7,
+  "key": "NEW_V7_FS_11_READ_YOUR_OWN_SITUATION",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "What changed because of it?"
+  ],
+  "labels": []
+ },
+ {
+  "video": 7,
+  "key": "NEW_V7_FS_12_THE_MISSING_LINE",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "Now look for the missing line.",
+   "Strong proof nobody senior has seen. Trusted execution but not judgmen"
+  ],
+  "labels": [
+   "NOW LOOK"
+  ]
+ },
+ {
+  "video": 7,
+  "key": "NEW_V7_FS_13_CTA",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "CTA",
+  "missing": [
+   "Sometimes the answer tells you what to build. Sometimes what to negoti"
+  ],
+  "labels": [
+   "ONE THING TO ASK"
+  ]
+ },
+ {
+  "video": 7,
+  "key": "NEW_V7_WATCH_NEXT",
+  "anchor": null,
+  "states": 1,
+  "treatment": "WATCH NEXT",
+  "missing": [],
+  "labels": [
+   "WATCH NEXT"
+  ]
+ },
+ {
+  "video": 8,
+  "key": "NEW_V8_FS_01_MEMORY_NOT_PROOF",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "You just cannot prove it cleanly.",
+   "You remember that it mattered."
+  ],
+  "labels": [
+   "THE HOOK"
+  ]
+ },
+ {
+  "video": 8,
+  "key": "NEW_V8_FS_02_FIVE_KINDS",
+  "anchor": "LOST",
+  "states": 6,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "How many people, teams, customers, locations or systems were involved",
+   "How you know the result was real"
+  ],
+  "labels": [
+   "FIVE KINDS OF EVIDENCE",
+   "THE MECHANISM"
+  ]
+ },
+ {
+  "video": 8,
+  "key": "NEW_V8_FS_03_KEEP_THE_PROOF",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [],
+  "labels": [
+   "THE IMPORTANT BOUNDARY"
+  ]
+ },
+ {
+  "video": 8,
+  "key": "NEW_V8_FS_04_NOT_THE_ARTIFACT",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "COMPARISON",
+  "missing": [
+   "Keeping a lawful record of your own work.",
+   "Keeping the artifact."
+  ],
+  "labels": []
+ },
+ {
+  "video": 8,
+  "key": "NEW_V8_FS_05_IN_YOUR_OWN_WORDS",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [],
+  "labels": [
+   "OWNED THE DECISION ON Y, BUT BUDGET APPROVAL REMAINED WITH Z",
+   "THE SHAPE OF THE EVIDENCE, NOT THE COMPANY'S FILES"
+  ]
+ },
+ {
+  "video": 8,
+  "key": "NEW_V8_FS_06_THE_DETAILS_BLUR",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "Was the result measured at 12 months or 18?"
+  ],
+  "labels": []
+ },
+ {
+  "video": 8,
+  "key": "NEW_V8_FS_07_TEN_MINUTE_HABIT",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "What evidence do I have?",
+   "What would I be allowed to say outside the company?"
+  ],
+  "labels": [
+   "ONCE A MONTH, TEN MINUTES"
+  ]
+ },
+ {
+  "video": 8,
+  "key": "NEW_V8_FS_08_CAREER_HYGIENE",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "Keep your evidence while you are still employed.",
+   "This is not only a layoff task. It is a career hygiene task."
+  ],
+  "labels": [
+   "WHEN THE EXIT IS SUDDEN"
+  ]
+ },
+ {
+  "video": 8,
+  "key": "NEW_V8_FS_09_STILL_NOT_ENOUGH",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "A future employer can still discount the experience, or require a cred"
+  ],
+  "labels": []
+ },
+ {
+  "video": 8,
+  "key": "NEW_V8_FS_10_NOT_ONLY_A_METRIC",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [],
+  "labels": [
+   "WHAT THE ORGANIZATION DID DIFFERENTLY AFTERWARD",
+   "YOU CAN STILL RECORD"
+  ]
+ },
+ {
+  "video": 8,
+  "key": "NEW_V8_FS_11_A_FACTUAL_RECORD",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "COMPARISON",
+  "missing": [
+   "A factual record.",
+   "An award nomination every month."
+  ],
+  "labels": [
+   "WHY PEOPLE WAIT"
+  ]
+ },
+ {
+  "video": 8,
+  "key": "NEW_V8_FS_12_CTA",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "CTA",
+  "missing": [
+   "Once a month. Ten minutes. Before the login disappears."
+  ],
+  "labels": [
+   "ONE THING TO DO"
+  ]
+ },
+ {
+  "video": 8,
+  "key": "NEW_V8_WATCH_NEXT",
+  "anchor": null,
+  "states": 1,
+  "treatment": "WATCH NEXT",
+  "missing": [],
+  "labels": [
+   "WATCH NEXT"
+  ]
+ },
+ {
+  "video": 9,
+  "key": "NEW_V9_FS_01_INCOMPLETE_QUESTION",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "Not wrong. Incomplete.",
+   "The question is incomplete."
+  ],
+  "labels": [
+   "THE HOOK"
+  ]
+ },
+ {
+  "video": 9,
+  "key": "NEW_V9_FS_02_WHY_THE_ADVICE_HELPS",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "Transferable skills advice stops experienced people from erasing thems"
+  ],
+  "labels": [
+   "THE DEFAULT"
+  ]
+ },
+ {
+  "video": 9,
+  "key": "NEW_V9_FS_03_FOUR_QUESTIONS",
+  "anchor": "LOST",
+  "states": 5,
+  "treatment": "SEQUENCE",
+  "missing": [],
+  "labels": []
+ },
+ {
+  "video": 9,
+  "key": "NEW_V9_FS_04_DEMONSTRATED_NOT_CLAIMED",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "COMPARISON",
+  "missing": [
+   "A generic list of soft skills.",
+   "Capability the next context can use.",
+   "The key word."
+  ],
+  "labels": [
+   "DEMONSTRATED",
+   "NOT CLAIMED"
+  ]
+ },
+ {
+  "video": 9,
+  "key": "NEW_V9_FS_05_TIED_TO_THE_OLD_CONTEXT",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "Tied to the old context."
+  ],
+  "labels": [
+   "COMPANY-SPECIFIC SYSTEMS",
+   "EXCELLENT WHERE YOU ARE. LESS LEGIBLE SOMEWHERE ELSE.",
+   "HOW THAT EMPLOYER REALLY GETS THINGS DONE",
+   "INFORMAL AUTHORITY",
+   "THE LANGUAGE EVERYONE UNDERSTOOD WITHOUT EXPLANATION"
+  ]
+ },
+ {
+  "video": 9,
+  "key": "NEW_V9_FS_06_WHAT_CAN_ANOTHER_PERSON_SEE",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "What was broken?"
+  ],
+  "labels": []
+ },
+ {
+  "video": 9,
+  "key": "NEW_V9_FS_07_WHAT_THE_NEW_CONTEXT_REQUIRES",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [],
+  "labels": [
+   "DOMAIN KNOWLEDGE",
+   "NOT INSULTS TO YOUR EXPERIENCE. PART OF THE MOVE."
+  ]
+ },
+ {
+  "video": 9,
+  "key": "NEW_V9_FS_08_SORTING",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [],
+  "labels": [
+   "AND SOME THINGS HAVE TO BE LEARNED AGAIN",
+   "SOME THINGS COME WITH YOU EXACTLY AS THEY ARE",
+   "SOME THINGS NEED TRANSLATING",
+   "SOME THINGS WERE USEFUL ONLY BECAUSE OF WHERE YOU WERE"
+  ]
+ },
+ {
+  "video": 9,
+  "key": "NEW_V9_FS_09_FOUR_COLUMNS",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "CTA",
+  "missing": [
+   "Do not try to make every line land in the first column. The goal is ac",
+   "Take one target role. Four columns."
+  ],
+  "labels": [
+   "ONE THING TO DO"
+  ]
+ },
+ {
+  "video": 9,
+  "key": "NEW_V9_FS_10_BOUNDARY",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "YOU MAKE A BETTER DECISION WHEN YOU KNOW WHAT YOU ARE ASKING AN EMPLOY"
+  ],
+  "labels": [
+   "A CREDENTIAL MAY BE NON-NEGOTIABLE",
+   "AN EMPLOYER MAY PREFER DIRECT EXPERIENCE",
+   "BIAS MAY AFFECT HOW ADJACENT EXPERIENCE IS READ",
+   "COMPENSATION MAY RESET",
+   "NONE OF THIS DISAPPEARS"
+  ]
+ },
+ {
+  "video": 9,
+  "key": "NEW_V9_FS_11_FLUENCY_AND_PORTABILITY",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "The capability is still there. The shortcuts are not.",
+   "The longer you stay in one context, the easier it is to confuse fluenc"
+  ],
+  "labels": [
+   "WHY THIS IS HARDER FOR EXPERIENCED PEOPLE"
+  ]
+ },
+ {
+  "video": 9,
+  "key": "NEW_V9_FS_12_THE_AUDIT_AGAIN",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [],
+  "labels": [
+   "NOT STARTING FROM ZERO. NOT CARRYING EVERYTHING WITHOUT CHECKING."
+  ]
+ },
+ {
+  "video": 9,
+  "key": "NEW_V9_WATCH_NEXT",
+  "anchor": null,
+  "states": 1,
+  "treatment": "WATCH NEXT",
+  "missing": [],
+  "labels": [
+   "WATCH NEXT"
+  ]
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_FS_01_READ_TEST_PROVE",
+  "anchor": "LOST",
+  "states": 4,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "Three things to figure out.",
+   "What can I begin to prove in this environment?",
+   "What do I need to learn about this context?"
+  ],
+  "labels": []
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_FS_02_EXPERIENCED_BUT_NEW",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [],
+  "labels": [
+   "TWO THINGS AT ONCE"
+  ]
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_FS_03_READ_FOUR_THINGS",
+  "anchor": "HELD",
+  "states": 5,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "Pay attention to four things."
+  ],
+  "labels": []
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_FS_04_FORMAL_VS_REAL",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "COMPARISON",
+  "missing": [
+   "The formal job. The real one.",
+   "The role as it works",
+   "The role as written"
+  ],
+  "labels": [
+   "THE REAL JOB",
+   "TWO VERSIONS OF ONE JOB",
+   "WHAT IT CAN TELL YOU",
+   "WHAT THEY START SHOWING YOU"
+  ]
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_FS_05_TWO_SENTENCES",
+  "anchor": "HELD",
+  "states": 2,
+  "treatment": "COMPARISON",
+  "missing": [
+   "One assumes. One asks.",
+   "\u201cAt my old company, we did it this way.\u201d"
+  ],
+  "labels": [
+   "TWO WAYS TO BRING EXPERIENCE IN"
+  ]
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_FS_06_MANAGER_CONVERSATION",
+  "anchor": "HELD",
+  "states": 4,
+  "treatment": "QUESTIONS",
+  "missing": [
+   "Not \u201cHow am I doing?\u201d"
+  ],
+  "labels": [
+   "ASK YOUR MANAGER"
+  ]
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_FS_07_THE_DAY_90_QUESTION",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [],
+  "labels": [
+   "THE QUESTION THAT CHANGES THE 90 DAYS"
+  ]
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_FS_08_PROVE_QUESTION",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [],
+  "labels": [
+   "INSTEAD OF A QUICK WIN"
+  ]
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_FS_09_PROOF_SENTENCES",
+  "anchor": "HELD",
+  "states": 4,
+  "treatment": "SEQUENCE",
+  "missing": [],
+  "labels": [
+   "WHAT PROOF SOUNDS LIKE"
+  ]
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_FS_10_THE_REVERSAL",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [],
+  "labels": [
+   "THE REVERSAL"
+  ]
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_FS_11_YOUR_EVIDENCE",
+  "anchor": "HELD",
+  "states": 4,
+  "treatment": "QUESTIONS",
+  "missing": [],
+  "labels": []
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_FS_12_NOT_AUTOMATICALLY_LEAVE",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [],
+  "labels": []
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_FS_13_THE_TOOL",
+  "anchor": "HELD",
+  "states": 5,
+  "treatment": "FRAMEWORK",
+  "missing": [],
+  "labels": [
+   "THE FIRST-90-DAYS READ"
+  ]
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_FS_14_THE_PLAN",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "ACTION",
+  "missing": [],
+  "labels": []
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_WATCH_NEXT",
+  "anchor": null,
+  "states": 1,
+  "treatment": "WATCH NEXT",
+  "missing": [],
+  "labels": [
+   "WATCH NEXT"
+  ]
+ },
+ {
+  "video": 11,
+  "key": "NEW_V11_FS_01_FOUR_QUESTIONS",
+  "anchor": "HELD",
+  "states": 5,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "For reading role drift."
+  ],
+  "labels": []
+ },
+ {
+  "video": 11,
+  "key": "NEW_V11_FS_02_WRITE_IT_DOWN",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "Write down the parts that mattered."
+  ],
+  "labels": [
+   "NOT THE FANTASY VERSION OF THE ROLE."
+  ]
+ },
+ {
+  "video": 11,
+  "key": "NEW_V11_FS_03_EXPECTED_VS_ACTUAL",
+  "anchor": "HELD",
+  "states": 2,
+  "treatment": "COMPARISON",
+  "missing": [
+   "Better than the description suggested",
+   "Discover you can only recommend",
+   "Less than the role you accepted",
+   "More than expected",
+   "More than the description suggested",
+   "Sometimes better. Sometimes narrower."
+  ],
+  "labels": [
+   "EXPECTED AGAINST ACTUAL",
+   "LOOK FOR THE RECURRING PATTERN. DO NOT JUDGE IT FROM ONE BAD WEEK.",
+   "SOMETIMES BETTER",
+   "SOMETIMES NARROWER"
+  ]
+ },
+ {
+  "video": 11,
+  "key": "NEW_V11_FS_04_THE_REAL_QUESTION",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "Is the actual role still close enough to the role I agreed to build my",
+   "The question is not:"
+  ],
+  "labels": []
+ },
+ {
+  "video": 11,
+  "key": "NEW_V11_FS_05_TEMPORARY_OR_NOT",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "COMPARISON",
+  "missing": [],
+  "labels": [
+   "READING",
+   "THE SAME MISMATCH, TWO READINGS",
+   "WHAT YOU ARE DOING",
+   "WHY"
+  ]
+ },
+ {
+  "video": 11,
+  "key": "NEW_V11_FS_06_FOUR_COST_LENSES",
+  "anchor": "HELD",
+  "states": 5,
+  "treatment": "FRAMEWORK",
+  "missing": [
+   "Did the practical cost change: travel, hours, location, caregiving, he"
+  ],
+  "labels": [
+   "THE FOUR COST LENSES"
+  ]
+ },
+ {
+  "video": 11,
+  "key": "NEW_V11_FS_07_CLARIFICATION_SCRIPT",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [],
+  "labels": [
+   "THAT QUESTION GIVES THE OTHER PERSON ROOM TO EXPLAIN WHAT CHANGED.",
+   "WHAT TO SAY"
+  ]
+ },
+ {
+  "video": 11,
+  "key": "NEW_V11_FS_08_TWO_EXTREMES",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "COMPARISON",
+  "missing": [],
+  "labels": [
+   "WHAT NOT TO DO"
+  ]
+ },
+ {
+  "video": 11,
+  "key": "NEW_V11_FS_09_THE_ROLE_DRIFT_READ",
+  "anchor": "HELD",
+  "states": 5,
+  "treatment": "FRAMEWORK",
+  "missing": [],
+  "labels": [
+   "THE ROLE-DRIFT READ"
+  ]
+ },
+ {
+  "video": 11,
+  "key": "NEW_V11_FS_10_THE_BOUNDARY",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "Sometimes the right choice is to stay. Sometimes leaving is not practi"
+  ],
+  "labels": [
+   "THE BOUNDARY"
+  ]
+ },
+ {
+  "video": 11,
+  "key": "NEW_V11_FS_11_YOUR_CONSTRAINTS",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "All of this shapes what is possible.",
+   "Compensation. Health. Caregiving.",
+   "Immigration. Geography. Timing.",
+   "The market, and financial runway."
+  ],
+  "labels": []
+ },
+ {
+  "video": 11,
+  "key": "NEW_V11_FS_12_NAME_THE_DIFFERENCE",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "ACTION",
+  "missing": [
+   "Name the difference."
+  ],
+  "labels": []
+ },
+ {
+  "video": 11,
+  "key": "NEW_V11_WATCH_NEXT",
+  "anchor": null,
+  "states": 1,
+  "treatment": "WATCH NEXT",
+  "missing": [],
+  "labels": [
+   "WATCH NEXT"
+  ]
+ }
+]

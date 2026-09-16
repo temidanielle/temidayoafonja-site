@@ -1,0 +1,965 @@
+{
+  "created": "Wednesday, September 16, 2026 | 10:06 AM CT (CDT, UTC-05:00)",
+  "checks_run": 191,
+  "passes": 191,
+  "failures": 0,
+  "checks": [
+    {
+      "check": "V4: script spoken stream matches approved source plus documented substitution",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V4: thought blocks match delivered script exactly, in order",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V4: word count checked after saving",
+      "pass_": true,
+      "detail": "960"
+    },
+    {
+      "check": "V04_Recording_Script.docx: correct title and thumbnail",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V04_Recording_Script.docx: no introduced em dash",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V04_Recording_Script.docx: correct public mapping",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V04_Thought_Block_Recording_Copy.docx: correct title and thumbnail",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V04_Thought_Block_Recording_Copy.docx: no introduced em dash",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V04_Thought_Block_Recording_Copy.docx: correct public mapping",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V04_Early_Curiosity_Outcome_Editing_Brief.docx: correct title and thumbnail",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V04_Early_Curiosity_Outcome_Editing_Brief.docx: no introduced em dash",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V04_Early_Curiosity_Outcome_Editing_Brief.docx: correct public mapping",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V4: complete sequential thought-block numbering",
+      "pass_": true,
+      "detail": "31"
+    },
+    {
+      "check": "V4: no production directions in thought-block body",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V4: five sound cue assignments",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V4: an early sound and true full-screen cutaway are assigned",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V4: trigger 1 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V4: trigger 2 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V4: trigger 3 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V4: trigger 4 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V4: trigger 5 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V4: trigger 6 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V4: trigger 7 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V5: script spoken stream matches approved source plus documented substitution",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V5: thought blocks match delivered script exactly, in order",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V5: word count checked after saving",
+      "pass_": true,
+      "detail": "924"
+    },
+    {
+      "check": "V05_Recording_Script.docx: correct title and thumbnail",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V05_Recording_Script.docx: no introduced em dash",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V05_Recording_Script.docx: correct public mapping",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V05_Thought_Block_Recording_Copy.docx: correct title and thumbnail",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V05_Thought_Block_Recording_Copy.docx: no introduced em dash",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V05_Thought_Block_Recording_Copy.docx: correct public mapping",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V05_Early_Curiosity_Outcome_Editing_Brief.docx: correct title and thumbnail",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V05_Early_Curiosity_Outcome_Editing_Brief.docx: no introduced em dash",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V05_Early_Curiosity_Outcome_Editing_Brief.docx: correct public mapping",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V5: complete sequential thought-block numbering",
+      "pass_": true,
+      "detail": "32"
+    },
+    {
+      "check": "V5: no production directions in thought-block body",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V5: five sound cue assignments",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V5: an early sound and true full-screen cutaway are assigned",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V5: trigger 1 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V5: trigger 2 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V5: trigger 3 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V5: trigger 4 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V5: trigger 5 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V5: trigger 6 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V5: trigger 7 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V6: script spoken stream matches approved source plus documented substitution",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V6: thought blocks match delivered script exactly, in order",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V6: word count checked after saving",
+      "pass_": true,
+      "detail": "1096"
+    },
+    {
+      "check": "V06_Recording_Script.docx: correct title and thumbnail",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V06_Recording_Script.docx: no introduced em dash",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V06_Recording_Script.docx: correct public mapping",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V06_Thought_Block_Recording_Copy.docx: correct title and thumbnail",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V06_Thought_Block_Recording_Copy.docx: no introduced em dash",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V06_Thought_Block_Recording_Copy.docx: correct public mapping",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V06_Early_Curiosity_Outcome_Editing_Brief.docx: correct title and thumbnail",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V06_Early_Curiosity_Outcome_Editing_Brief.docx: no introduced em dash",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V06_Early_Curiosity_Outcome_Editing_Brief.docx: correct public mapping",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V6: complete sequential thought-block numbering",
+      "pass_": true,
+      "detail": "34"
+    },
+    {
+      "check": "V6: no production directions in thought-block body",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V6: five sound cue assignments",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V6: an early sound and true full-screen cutaway are assigned",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V6: trigger 1 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V6: trigger 2 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V6: trigger 3 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V6: trigger 4 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V6: trigger 5 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V6: trigger 6 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V6: trigger 7 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V6: trigger 8 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V6: employer is anonymized publicly",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V6: source sample denominator preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V6: salary values preserved",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V7: script spoken stream matches approved source plus documented substitution",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V7: thought blocks match delivered script exactly, in order",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V7: word count checked after saving",
+      "pass_": true,
+      "detail": "1084"
+    },
+    {
+      "check": "V07_Recording_Script.docx: correct title and thumbnail",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V07_Recording_Script.docx: no introduced em dash",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V07_Recording_Script.docx: correct public mapping",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V07_Thought_Block_Recording_Copy.docx: correct title and thumbnail",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V07_Thought_Block_Recording_Copy.docx: no introduced em dash",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V07_Thought_Block_Recording_Copy.docx: correct public mapping",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V07_Early_Curiosity_Outcome_Editing_Brief.docx: correct title and thumbnail",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V07_Early_Curiosity_Outcome_Editing_Brief.docx: no introduced em dash",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V07_Early_Curiosity_Outcome_Editing_Brief.docx: correct public mapping",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V7: complete sequential thought-block numbering",
+      "pass_": true,
+      "detail": "38"
+    },
+    {
+      "check": "V7: no production directions in thought-block body",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V7: five sound cue assignments",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V7: an early sound and true full-screen cutaway are assigned",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V7: trigger 1 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V7: trigger 2 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V7: trigger 3 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V7: trigger 4 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V7: trigger 5 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V7: trigger 6 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V7: trigger 7 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V8: script spoken stream matches approved source plus documented substitution",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V8: thought blocks match delivered script exactly, in order",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V8: word count checked after saving",
+      "pass_": true,
+      "detail": "889"
+    },
+    {
+      "check": "V08_Recording_Script.docx: correct title and thumbnail",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V08_Recording_Script.docx: no introduced em dash",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V08_Recording_Script.docx: correct public mapping",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V08_Thought_Block_Recording_Copy.docx: correct title and thumbnail",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V08_Thought_Block_Recording_Copy.docx: no introduced em dash",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V08_Thought_Block_Recording_Copy.docx: correct public mapping",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V08_Early_Curiosity_Outcome_Editing_Brief.docx: correct title and thumbnail",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V08_Early_Curiosity_Outcome_Editing_Brief.docx: no introduced em dash",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V08_Early_Curiosity_Outcome_Editing_Brief.docx: correct public mapping",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V8: complete sequential thought-block numbering",
+      "pass_": true,
+      "detail": "35"
+    },
+    {
+      "check": "V8: no production directions in thought-block body",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V8: five sound cue assignments",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V8: an early sound and true full-screen cutaway are assigned",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V8: trigger 1 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V8: trigger 2 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V8: trigger 3 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V8: trigger 4 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V8: trigger 5 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V8: trigger 6 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V8: trigger 7 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V9: script spoken stream matches approved source plus documented substitution",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V9: thought blocks match delivered script exactly, in order",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V9: word count checked after saving",
+      "pass_": true,
+      "detail": "1021"
+    },
+    {
+      "check": "V09_Recording_Script.docx: correct title and thumbnail",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V09_Recording_Script.docx: no introduced em dash",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V09_Recording_Script.docx: correct public mapping",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V09_Thought_Block_Recording_Copy.docx: correct title and thumbnail",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V09_Thought_Block_Recording_Copy.docx: no introduced em dash",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V09_Thought_Block_Recording_Copy.docx: correct public mapping",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V09_Early_Curiosity_Outcome_Editing_Brief.docx: correct title and thumbnail",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V09_Early_Curiosity_Outcome_Editing_Brief.docx: no introduced em dash",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V09_Early_Curiosity_Outcome_Editing_Brief.docx: correct public mapping",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V9: complete sequential thought-block numbering",
+      "pass_": true,
+      "detail": "43"
+    },
+    {
+      "check": "V9: no production directions in thought-block body",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V9: five sound cue assignments",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V9: an early sound and true full-screen cutaway are assigned",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V9: trigger 1 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V9: trigger 2 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V9: trigger 3 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V9: trigger 4 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V9: trigger 5 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V9: trigger 6 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V9: trigger 7 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V10: script spoken stream matches approved source plus documented substitution",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V10: thought blocks match delivered script exactly, in order",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V10: word count checked after saving",
+      "pass_": true,
+      "detail": "1639"
+    },
+    {
+      "check": "V10_Recording_Script.docx: correct title and thumbnail",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V10_Recording_Script.docx: no introduced em dash",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V10_Recording_Script.docx: correct public mapping",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V10_Thought_Block_Recording_Copy.docx: correct title and thumbnail",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V10_Thought_Block_Recording_Copy.docx: no introduced em dash",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V10_Thought_Block_Recording_Copy.docx: correct public mapping",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V10_Early_Curiosity_Outcome_Editing_Brief.docx: correct title and thumbnail",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V10_Early_Curiosity_Outcome_Editing_Brief.docx: no introduced em dash",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V10_Early_Curiosity_Outcome_Editing_Brief.docx: correct public mapping",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V10: complete sequential thought-block numbering",
+      "pass_": true,
+      "detail": "45"
+    },
+    {
+      "check": "V10: no production directions in thought-block body",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V10: five sound cue assignments",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V10: an early sound and true full-screen cutaway are assigned",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V10: trigger 1 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V10: trigger 2 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V10: trigger 3 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V10: trigger 4 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V10: trigger 5 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V10: trigger 6 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V10: trigger 7 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V10: trigger 8 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V10: trigger 9 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V11: script spoken stream matches approved source plus documented substitution",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V11: thought blocks match delivered script exactly, in order",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V11: word count checked after saving",
+      "pass_": true,
+      "detail": "1238"
+    },
+    {
+      "check": "V11_Recording_Script.docx: correct title and thumbnail",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V11_Recording_Script.docx: no introduced em dash",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V11_Recording_Script.docx: correct public mapping",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V11_Thought_Block_Recording_Copy.docx: correct title and thumbnail",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V11_Thought_Block_Recording_Copy.docx: no introduced em dash",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V11_Thought_Block_Recording_Copy.docx: correct public mapping",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V11_Early_Curiosity_Outcome_Editing_Brief.docx: correct title and thumbnail",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V11_Early_Curiosity_Outcome_Editing_Brief.docx: no introduced em dash",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V11_Early_Curiosity_Outcome_Editing_Brief.docx: correct public mapping",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V11: complete sequential thought-block numbering",
+      "pass_": true,
+      "detail": "37"
+    },
+    {
+      "check": "V11: no production directions in thought-block body",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V11: five sound cue assignments",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V11: an early sound and true full-screen cutaway are assigned",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V11: trigger 1 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V11: trigger 2 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V11: trigger 3 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V11: trigger 4 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V11: trigger 5 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V11: trigger 6 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V11: trigger 7 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    },
+    {
+      "check": "V11: trigger 8 exists within its source paragraph",
+      "pass_": true,
+      "detail": ""
+    }
+  ],
+  "scope": "Text/source/trigger checks only. Visual rendering review is recorded separately after execution; no slide-asset or final-export QA claimed.",
+  "rechecked_after_pagination_fixes": true
+}

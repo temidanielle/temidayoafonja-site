@@ -1,0 +1,235 @@
+==============================================================================
+NEW PUBLIC V6  |  EARLY-EDIT SYNCHRONIZATION MAP
+==============================================================================
+
+Decode a Job Description in 10 Minutes
+Thumbnail: IGNORE THE TITLE
+Generated Wednesday, September 16, 2026 | 11:20 AM CT
+
+Current source: V06_Recording_Script.docx
+  sha256  a4523ada71bc8a8460f4ed835e3b5495a340f4d068824f663626f1bed7889339
+1,096 spoken words. Arithmetic estimate 7:33 to 8:25 at 130 to 145
+words per minute. That is arithmetic on the script, not a
+runtime: nothing has been recorded, edited or exported.
+
+Thought-block parity: 34 paragraphs, identical and in order
+
+------------------------------------------------------------------------------
+
+CAMERA-LED IS NOT CAMERA-ONLY
+
+  Begin on the first spoken line. No logo, no welcome sequence,
+  no dead-air title card. Editorial opening text and a useful
+  cutaway may arrive in the first few seconds; there is no
+  required window of talking head before the first cutaway.
+  Her voice continues under a full-screen image. No moving
+  talking head behind a substantive card.
+
+------------------------------------------------------------------------------
+
+THE VIEWER'S REASON TO WATCH
+
+  OUTCOME
+      Read a real posting well enough to decide whether it deserves a
+      deeper look, separating the work, authority, proof and real gates.
+
+  CURIOSITY
+      What might the title conceal, and can an unclear title conceal
+      substantial work too?
+
+  WHY THIS METHOD
+      Reading responsibilities and requirements separately avoids treating
+      a title as the whole job.
+
+  OBSERVABLE TAKEAWAY
+      The viewer has a four-line role read, one relevant piece of their
+      own evidence and a requirement to verify. The method does not
+      predict hiring.
+
+------------------------------------------------------------------------------
+
+OPENING TREATMENT  |  FIRST SPOKEN BEATS
+
+  1. CAMERA + BRIEF EDITORIAL TEXT
+     DISPLAY COPY:
+         WHAT IS THE ACTUAL JOB?
+     EXACT SPOKEN TRIGGER:
+         I want you to guess what this job actually is.
+     FOUND: section 1, HOOK, spoken paragraph 1
+     DIRECTION:
+         Use the question immediately, while she speaks. Do not start
+         with the full framework or an introduction.
+
+  2. TRUE FULL-SCREEN POSTING CARD  |  S1: brief sound stinger
+     DISPLAY COPY:
+         Senior Divisional Strategy Consultant, Governance
+     EXACT SPOKEN TRIGGER:
+         Senior Divisional Strategy Consultant, Governance.
+     FOUND: section 1, HOOK, spoken paragraph 1
+     DIRECTION:
+         Show the anonymized title on the second spoken sentence.
+         Leave salary and responsibility language hidden until
+         spoken. This is an early cutaway, not a slide delayed until
+         the framework.
+
+  3. TRUE FULL-SCREEN POSTING DETAIL  |  S2: brief sound stinger
+     DISPLAY COPY:
+         PUBLISHED RANGE START: $61,500 / ACCEPT DIRECTION AND
+         FEEDBACK
+     EXACT SPOKEN TRIGGER:
+         the bottom of the pay range was $61,500
+     FOUND: section 1, HOOK, spoken paragraph 2
+     DIRECTION:
+         Reveal the range floor and requirement with the actual
+         sentence. Treat the sentence as a paraphrase unless the
+         capture packet supplies an exact quotation. Do not imply
+         salary alone proves seniority.
+
+  4. RETURN TO CAMERA
+     DISPLAY COPY:
+         THE TITLE ≠ THE WHOLE JOB
+     EXACT SPOKEN TRIGGER:
+         The title did not tell you the job.
+     FOUND: section 1, HOOK, spoken paragraph 3
+     DIRECTION:
+         Return for the interpretation and sample boundary. Do not
+         turn the observed example into a universal title verdict.
+         Display copy is editorial text, not a changed transcript.
+         The underlying voice continues through cutaways. Hold for
+         comprehension, then return to her interpretation. No
+         repetitive word-by-word long-form captions.
+         Keep the activities. Show why the viewer would do them and
+         the specific answer, note, or conversation they leave with.
+         Do not replace practical teaching with bigger promises.
+
+------------------------------------------------------------------------------
+
+MAKE THE TEACHING USABLE
+
+  1. 2 | AUTHORITY  |  S3
+     DISPLAY COPY:
+         TRUE FULL-SCREEN POSTING COMPARISON | SUPPORTING ≠ SETTING
+     EXACT SPOKEN TRIGGER:
+         Supporting the development of strategy is not the same as
+         setting the strategy.
+     FOUND: section 5, 2 | AUTHORITY, spoken paragraph 2
+     DIRECTION:
+         Highlight the relevant verb, not the full posting. One click
+         on the decisive change. Keep the authority inference
+         qualified.
+
+  2. 4 | REAL GAP
+     DISPLAY COPY:
+         TRUE FULL-SCREEN REQUIREMENT CARD | REQUIRED TIME OVERLAP
+     EXACT SPOKEN TRIGGER:
+         at least three hours of overlap with East Africa Time.
+     FOUND: section 7, 4 | REAL GAP, spoken paragraph 3
+     DIRECTION:
+         Keep the geographic recruiting requirement and time overlap
+         distinct. Explain the life constraint without inventing a
+         schedule or translating time zones.
+
+  3. THE REVERSE CAN HAPPEN TOO  |  S4
+     DISPLAY COPY:
+         TRUE FULL-SCREEN REVERSE CASE | HIGHEST PUBLISHED CEILING IN
+         THIS SAMPLE
+     EXACT SPOKEN TRIGGER:
+         highest published pay ceiling.
+     FOUND: section 9, THE REVERSE CAN HAPPEN TOO, spoken paragraph 2
+     DIRECTION:
+         Reveal the captured range only at its actual paragraph. Keep
+         “in this sample” visible on the comparison. Employer is an
+         AI company publicly; preserve named evidence privately.
+
+  4. USE IT ON A REAL JOB  |  S5
+     DISPLAY COPY:
+         TRUE FULL-SCREEN WORKING PAGE | PROBLEM / AUTHORITY / PROOF
+         / REAL GAP
+     EXACT SPOKEN TRIGGER:
+         Take one job description you are actually thinking about.
+     FOUND: section 11, USE IT ON A REAL JOB, spoken paragraph 1
+     DIRECTION:
+         End with a filled four-line reading structure, using only
+         captured evidence or clearly marked placeholders. Sound when
+         the fourth line completes. The result is a deeper-look
+         decision, not a job offer.
+         Meaningful B-roll / artifact options
+         Use the real anonymized posting walkthrough rather than
+         generic job-search footage. Optional second cutaway: a
+         personal comparison page with the viewer’s proof and
+         unanswered requirement.
+         Show examples as examples. Do not fabricate personal
+         outcomes, employer records, screenshots, research results,
+         or evidence. New visuals are proposed instructions here, not
+         delivered slide files.
+         Sound, delivery and handoff
+
+------------------------------------------------------------------------------
+
+SOUND PLAN  |  FIVE ACCENTS
+
+  A stinger means sound. A visual accent and a cutaway are
+  separate choices and are not implied by an accent.
+  Audition every cue under the actual voice. No alarms, no loud
+  whooshes, no compulsory bed, no accent on every bullet, and no
+  second effect where one already carries the moment.
+
+  S1  on: Senior Divisional Strategy Consultant, Governance.
+  S2  on: the bottom of the pay range was $61,500
+  S3  on: Supporting the development of strategy is not the same as...
+  S4  on: highest published pay ceiling.
+  S5  on: Take one job description you are actually thinking about.
+
+------------------------------------------------------------------------------
+
+CAMERA EMPHASIS  |  FOUR BEATS
+
+  Gentle push-ins or a return to the base frame. Keep natural
+  pauses. Do not cut on every thought-block boundary and do not
+  remove sentences to manufacture pace.
+
+  Base frame for the opening question.
+
+  Push in slightly for the title/job distinction.
+
+  Return to base for the limits of the method.
+
+  Small final emphasis on deciding whether a deeper look is
+  worthwhile.
+
+------------------------------------------------------------------------------
+
+PUBLIC BOUNDARY TO PRESERVE
+
+  Public employer identities stay anonymous. Keep the 15-posting /
+  11-employer sample exact, monetary figures unchanged, and the
+  ceiling limited to the sample. Show the capture date from
+  evidence. Never expose logos, employer URLs or named source files
+  on-screen. The V6 spoken employer substitution is documented in
+  the change log.
+
+------------------------------------------------------------------------------
+
+WATCH NEXT  |  FULL SCREEN FROM THE START, AND FINAL
+
+  EXACT PASSAGE:
+      Once you know how to read what the role really requires, the
+      next question is whether your own experience gives you the
+      proof for it. Watch “Turn One Accomplishment Into Proof in 10
+      Minutes” next.
+
+  Found in section WATCH NEXT.
+
+  Switch to true full screen from the start of that passage.
+  The Watch Next graphic is the last frame. Never return to
+  camera after it.
+  Verify the destination is publicly live before upload. If it
+  is not, flag it. Do not invent or silently change a link.
+
+------------------------------------------------------------------------------
+
+AFTER THE EDIT
+
+  SRT and chapters are generated from the finished export and
+  are deliberately absent here. No runtime, retention, audio mix
+  or footage QA is claimed by this document.

@@ -1,0 +1,20 @@
+DELIVERY QA | V4-V11 RECORDING AND EARLY-EDIT HANDOFF
+
+24 Word documents: 8 recording scripts, 8 thought-block copies, 8 editing briefs.
+191 saved-document text/source/trigger checks: 191 passed, 0 failed.
+All 24 Word documents rendered successfully. All 82 rendered pages visually inspected.
+Final page-bound and orphan-label check: no findings.
+
+Three layout defects were corrected and their documents rerendered:
+- V6 thought blocks: keep Block 19 label with its body.
+- V9 script: keep WHAT DOES NOT section label with its body.
+- V11 thought blocks: keep Block 08 label with its body.
+The fixes changed pagination only. The full text/source test suite was rerun afterward.
+
+All script and thought-block spoken streams match exactly and in order.
+Source text is preserved except for the documented V6 public employer substitution.
+Source archive and all original master file hashes checked; originals unchanged.
+
+The editing briefs contain proposed cue placements and display text, not rendered slide files.
+No recording, audio mix, SRT, final runtime or audience-retention result is certified.
+Existing source claims are retained; this is not an independent research fact-check.

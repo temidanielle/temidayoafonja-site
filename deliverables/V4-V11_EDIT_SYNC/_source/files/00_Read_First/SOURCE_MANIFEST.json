@@ -1,0 +1,232 @@
+{
+  "created": "Wednesday, September 16, 2026 | 10:06 AM CT (CDT, UTC-05:00)",
+  "source_archive": "YouTube_V4-V11_V14-V21_BEAST_MODE_Additive_Scripts_and_Thought_Blocks_FINAL (1)(1).zip",
+  "source_sha256": "7b0f251505c472aa890b38f4caca89cfedf04c3b20d598fab7823ae5a907cd2a",
+  "scope": "NEW PUBLIC V4-V11 only",
+  "spoken_change": {
+    "video": 6,
+    "before": "GiveDirectly was hiring a Director of Global Talent Acquisition.",
+    "after": "A global nonprofit was hiring a Director of Global Talent Acquisition.",
+    "reason": "Carry forward the previously approved public employer-anonymization decision; do not alter the named internal evidence."
+  },
+  "derivative_repairs": {
+    "4": {
+      "incoming_issue": "Spoken framework words were incorrectly tagged NOT SPOKEN in supplied thought blocks.",
+      "restored_as_spoken": "BEFORE AI. WITH AI. STILL MINE.",
+      "source": "Unchanged original recording master."
+    },
+    "6": {
+      "incoming_issue": "Spoken framework words were incorrectly tagged NOT SPOKEN in supplied thought blocks.",
+      "restored_as_spoken": "PROBLEM. AUTHORITY. PROOF. REAL GAP.",
+      "source": "Original recording master, with separately documented employer substitution."
+    },
+    "9": {
+      "incoming_issue": "Spoken framework words were incorrectly tagged NOT SPOKEN in supplied thought blocks.",
+      "restored_as_spoken": "TRAVELS. DOES NOT TRAVEL. PROOF. RELEARN.",
+      "source": "Unchanged original recording master."
+    }
+  },
+  "videos": {
+    "4": {
+      "title": "AI Took the Task. Who Gets the Experience?",
+      "thumbnail": "WHO LEARNS NOW?",
+      "former": 26,
+      "spoken_words": 960,
+      "thought_blocks": 31,
+      "source_docx_sha256": "e1fcf4743150bc51145f7e6d427deb73b3514288fa43424d1c3ffbe83c391b35",
+      "outputs": [
+        {
+          "file": "01_Recording_Scripts/V04_Recording_Script.docx",
+          "sha256": "4e5598f9a1a88319c2a7a9265ebba9023f961ca6139dd56fe03dc4925390563c",
+          "rendered_pages": 3
+        },
+        {
+          "file": "02_Thought_Blocks/V04_Thought_Block_Recording_Copy.docx",
+          "sha256": "dd3806c9b9d5057b78935018c37bbb1ac7baeab125dbcb45eba0f45efb4d27c6",
+          "rendered_pages": 4
+        },
+        {
+          "file": "03_Editing_Briefs/V04_Early_Curiosity_Outcome_Editing_Brief.docx",
+          "sha256": "25cc1c1a1730ff83babdfe01b2197e0abd42d1734217de63e5c1033bc5a76a6c",
+          "rendered_pages": 3
+        }
+      ]
+    },
+    "5": {
+      "title": "If Your Company Needs You but Won’t Grow You",
+      "thumbnail": "USEFUL. STILL STUCK.",
+      "former": 33,
+      "spoken_words": 924,
+      "thought_blocks": 32,
+      "source_docx_sha256": "2f950db24325f867ad5fe9596b92bfe82ef8c5c8069a520511f92fbfb0a1e68d",
+      "outputs": [
+        {
+          "file": "01_Recording_Scripts/V05_Recording_Script.docx",
+          "sha256": "fa3cb9dda3800a56d296190d2a83f77ed06cbb7f2c6a374806eadffb9a9dc1b1",
+          "rendered_pages": 3
+        },
+        {
+          "file": "02_Thought_Blocks/V05_Thought_Block_Recording_Copy.docx",
+          "sha256": "cd7dd2d50000bad5a219cfb4ed92296513e2bf9489e3d20854977e5c68f2222f",
+          "rendered_pages": 4
+        },
+        {
+          "file": "03_Editing_Briefs/V05_Early_Curiosity_Outcome_Editing_Brief.docx",
+          "sha256": "e976f72912c77934927f115886210e96558ed27ee6ae44403920aadaa15091de",
+          "rendered_pages": 3
+        }
+      ]
+    },
+    "6": {
+      "title": "Decode a Job Description in 10 Minutes",
+      "thumbnail": "IGNORE THE TITLE",
+      "former": 22,
+      "spoken_words": 1096,
+      "thought_blocks": 34,
+      "source_docx_sha256": "39c806884120644878ff6cb1d5e0273120c981d7b2c0e26d738b9f78e7845843",
+      "outputs": [
+        {
+          "file": "01_Recording_Scripts/V06_Recording_Script.docx",
+          "sha256": "a4523ada71bc8a8460f4ed835e3b5495a340f4d068824f663626f1bed7889339",
+          "rendered_pages": 3
+        },
+        {
+          "file": "02_Thought_Blocks/V06_Thought_Block_Recording_Copy.docx",
+          "sha256": "0bc667acbd5f33cf3400535d1758b02dfefaf4d42fb1c62462574843ae51b706",
+          "rendered_pages": 4
+        },
+        {
+          "file": "03_Editing_Briefs/V06_Early_Curiosity_Outcome_Editing_Brief.docx",
+          "sha256": "7ecbde66b65b1673568754c9ce122c0b5b57e97a62c2337c86772c0c684c803d",
+          "rendered_pages": 3
+        }
+      ]
+    },
+    "7": {
+      "title": "I’ve Seen Who Gets the Bigger Role and Why",
+      "thumbnail": "THEY CHOSE SOMEONE ELSE",
+      "former": 24,
+      "spoken_words": 1084,
+      "thought_blocks": 38,
+      "source_docx_sha256": "36780400248b4189986cb08e2ca8a7cf3b05bd286f46a9e6100b11b3acb8e024",
+      "outputs": [
+        {
+          "file": "01_Recording_Scripts/V07_Recording_Script.docx",
+          "sha256": "9e6ed952b148e891f425414cdab75b3ca828ed441be413c8c3484e44e6d10dfe",
+          "rendered_pages": 3
+        },
+        {
+          "file": "02_Thought_Blocks/V07_Thought_Block_Recording_Copy.docx",
+          "sha256": "6002616a42f68c6f0dd108e2ee0909f78504f99d58e0d9e71c455f52598d23a4",
+          "rendered_pages": 4
+        },
+        {
+          "file": "03_Editing_Briefs/V07_Early_Curiosity_Outcome_Editing_Brief.docx",
+          "sha256": "874d94d2e8ad6d97714006bf0adcdf9b558a9db1b7650a5fd6c1ec225cc42d1c",
+          "rendered_pages": 3
+        }
+      ]
+    },
+    "8": {
+      "title": "What Disappears When Your Work Access Ends",
+      "thumbnail": "YOU CAN’T PROVE IT LATER",
+      "former": 28,
+      "spoken_words": 889,
+      "thought_blocks": 35,
+      "source_docx_sha256": "3fb42e6915a29e4055da619b96f53f9481f63b9a3524cc9d722547eb69edc9c7",
+      "outputs": [
+        {
+          "file": "01_Recording_Scripts/V08_Recording_Script.docx",
+          "sha256": "493c4abb31c2149a3c300d3ea4a0a6be0a666aee2e58853fdbba5e10822b4fbf",
+          "rendered_pages": 3
+        },
+        {
+          "file": "02_Thought_Blocks/V08_Thought_Block_Recording_Copy.docx",
+          "sha256": "2a9edb2be81052be3bfbbc43b9770018d885ce4069e3d0058cc6d969048630f3",
+          "rendered_pages": 4
+        },
+        {
+          "file": "03_Editing_Briefs/V08_Early_Curiosity_Outcome_Editing_Brief.docx",
+          "sha256": "3db6544befb7c6ebcda0cb36297ca6770c82f19b853ad926fe0be48177ec5b76",
+          "rendered_pages": 3
+        }
+      ]
+    },
+    "9": {
+      "title": "Transferable Skills Advice Is Missing Something",
+      "thumbnail": "NOT EVERYTHING TRAVELS",
+      "former": 27,
+      "spoken_words": 1021,
+      "thought_blocks": 43,
+      "source_docx_sha256": "85355b9e1a7cf244b809aa54ab5195795580f40cdff1d925cf6e1351404a91a7",
+      "outputs": [
+        {
+          "file": "01_Recording_Scripts/V09_Recording_Script.docx",
+          "sha256": "9ace28f6ec756897c9d94a6975ebdeb2f9d8559a4c8515d4b94a61e269a6a348",
+          "rendered_pages": 3
+        },
+        {
+          "file": "02_Thought_Blocks/V09_Thought_Block_Recording_Copy.docx",
+          "sha256": "5cea8b3e6c17226766ed7fd8d555609490f12c1f82d228a689d10cf4e00e2eeb",
+          "rendered_pages": 4
+        },
+        {
+          "file": "03_Editing_Briefs/V09_Early_Curiosity_Outcome_Editing_Brief.docx",
+          "sha256": "551900b6f4a10e56cc34b43c23dd476ce3fd157171063408cd5ad4c02debd382",
+          "rendered_pages": 3
+        }
+      ]
+    },
+    "10": {
+      "title": "Your First 90 Days in a New Job: What Really Matters",
+      "thumbnail": "DON’T SPEND YOUR FIRST 90 DAYS PROVING YOURSELF",
+      "former": null,
+      "spoken_words": 1639,
+      "thought_blocks": 45,
+      "source_docx_sha256": "40e8afc57ae614745da5bbd0e57e1686bd267bc9cbc4e36e3ffc3acf5ebcbe4e",
+      "outputs": [
+        {
+          "file": "01_Recording_Scripts/V10_Recording_Script.docx",
+          "sha256": "e83718ae400877b7f9634ccdf9eed62bd47ca07d0a39baa6020d3522eff7dd08",
+          "rendered_pages": 4
+        },
+        {
+          "file": "02_Thought_Blocks/V10_Thought_Block_Recording_Copy.docx",
+          "sha256": "88297ec0316a39e1c996138e3aa1dbe2f918c9bc8081381d333058bc812cf97a",
+          "rendered_pages": 5
+        },
+        {
+          "file": "03_Editing_Briefs/V10_Early_Curiosity_Outcome_Editing_Brief.docx",
+          "sha256": "cd94dc92079d9f4715ce13c0b0dff35470a1c9e40067fb68a71cce46dc2225bd",
+          "rendered_pages": 3
+        }
+      ]
+    },
+    "11": {
+      "title": "What to Do When Your New Job Isn’t the Job You Accepted",
+      "thumbnail": "THIS ISN’T THE JOB",
+      "former": null,
+      "spoken_words": 1238,
+      "thought_blocks": 37,
+      "source_docx_sha256": "901889f500764055b5ddc84e55717a094460ce8ea977b72e4f6bd90d61336974",
+      "outputs": [
+        {
+          "file": "01_Recording_Scripts/V11_Recording_Script.docx",
+          "sha256": "96cbc3afba72d939d4f98a7fb529d83e859a2ba7ce7c51465c9fdc134b73a20d",
+          "rendered_pages": 3
+        },
+        {
+          "file": "02_Thought_Blocks/V11_Thought_Block_Recording_Copy.docx",
+          "sha256": "dfaea698621839a15b4fddca9c51e3f552396a1b8ef5a7d0d8afd970ac287ff1",
+          "rendered_pages": 4
+        },
+        {
+          "file": "03_Editing_Briefs/V11_Early_Curiosity_Outcome_Editing_Brief.docx",
+          "sha256": "8d86eb6f808fcd0375faaa4afb4fc3c6f8c24c76d7c68ed4667c6e496c6417aa",
+          "rendered_pages": 3
+        }
+      ]
+    }
+  },
+  "validation_scope": "191 saved-document text/source/trigger checks. All 24 Word documents rendered and all 82 pages visually reviewed. Not a finished-video, audio, slide-asset or research-verification certificate."
+}
