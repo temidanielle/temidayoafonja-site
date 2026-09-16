@@ -373,14 +373,17 @@ verified by running the installed 8.2.0 against a synthetic Lambda event rather 
   correct another way.
 
 **This is not a regression introduced by the repair.** Before it, the limiter threw on every request
-and failed open, so it never counted at all. After it, the limiter runs and does count, but
-under-counts across a rapid burst. The repair strictly improves the position; it does not fully solve
-rate limiting, and it was never scoped to.
+and failed open. After it, it reaches storage without error. That is an improvement in the storage
+path, and it is the whole of what has been shown.
 
-What the limiter does and does not do, stated plainly: it constrains **sustained** abuse from one
-address over the one-hour window, because values do propagate given time. It does **not** reliably
-stop a **burst**. Until the Netlify-native edge rate limit is enforced, or the endpoint is moved to a
-runtime where strong consistency is available, burst protection should not be relied on. Upgrading
+**What has and has not been established, stated plainly.** Established: the limiter can now reach
+Blobs, and the eleven-request burst was not enforced. **Not** established: that the counter reliably
+enforces any ceiling, over any window. Eventual-consistency reads may or may not accumulate
+dependably over an hour; that has not been measured, and nothing here should be read as saying it
+has. **No rate-limit enforcement should be relied on at present.** The Netlify-native edge limit
+remains accepted but unenforced and is a separate open item. Until it is enforced, or the endpoint is
+moved to a runtime where strong consistency is available, this site has no demonstrated rate
+limiting. Upgrading
 `@netlify/blobs` past 8.2.0 is a third option, if a later release adds an atomic counter. Whether the
 modern runtime supplies `uncachedEdgeURL`, and whether any later release adds such a primitive, both
 need confirming before anything is built on them. Neither has been verified here.
@@ -416,13 +419,13 @@ Added 2026-08-27, for the same incident. The submission function's own limiter, 
 salted IP hash, is built on Blobs and is deliberately fail-open, so while Blobs is broken **the form
 has no working limit from that limiter at all**. That is not an acceptable state to launch in.
 
-**Update, 2026-09-15.** Storage is now repaired and that limiter no longer fails open: it runs and
-it counts. It still cannot stop a burst, for a reason unrelated to the outage. On `@netlify/blobs` 8.2.0 reads
-default to eventual consistency, and in Lambda compatibility mode strong consistency is unavailable,
-so eleven rapid requests can each read a stale count. The limiter constrains sustained abuse over the
-hour, not a burst. See "Deploy Preview verification of the repair" above. The sentence below about
-the Blobs limiter resuming the sustained hourly ceiling holds; any expectation of burst protection
-from it does not.
+**Update, 2026-09-15.** Storage is repaired and that limiter no longer fails open: it reaches Blobs
+without error. It still did not stop an eleven-request burst, for a reason unrelated to the outage.
+On `@netlify/blobs` 8.2.0 reads default to eventual consistency, and in Lambda compatibility mode
+strong consistency is unavailable, so a rapid burst can each read a stale count. See "Deploy Preview
+verification of the repair" above. **This does not restore any demonstrated ceiling.** The sentence
+below, that the Blobs limiter resumes enforcing a sustained hourly ceiling once storage is repaired,
+was written as an expectation and has never been observed. Treat it as superseded by this note.
 
 `netlify.toml` therefore carries a Netlify-native limit on the submission rule, depending on nothing
 this site configures: **five submissions per 180 seconds, aggregated by domain and IP.** No `action`
@@ -430,8 +433,8 @@ is declared, so the default applies and an exceeded limit is refused with 429 ra
 to a page, which is right for a path only ever reached by the form's fetch. **As of launch this rule
 is accepted by Netlify but has not been observed to fire.** See the status below before relying on
 it. Netlify caps the window at 180 seconds, so the hour-long ceiling the Blobs limiter expresses
-cannot be reproduced here. The two are complementary and both are kept: this one stops bursts now,
-and the Blobs limiter resumes enforcing the sustained hourly ceiling when storage is repaired.
+cannot be reproduced here. The two were intended as complementary and both are kept. Neither has been
+observed to enforce anything: see the 2026-09-15 update above.
 
 Because Netlify reserves the `/.netlify/` prefix for its own routing, the page posts to
 `/api/career-decisions-subscribe`, which is rewritten to the function with status 200 and is the
