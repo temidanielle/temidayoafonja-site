@@ -1,0 +1,97 @@
+CAPABILITY FORMATION | APPROVED NATURAL INTRO PASSAGES
+SOURCE RECOVERY REFERENCE | SEPTEMBER 16, 2026
+
+Purpose: preserve previously approved introductions that are absent from the early-edit intake. This is not a new recording master or permission to replace the BEAST MODE body with an older draft.
+Source documents were read from the user's Google Drive natural-introduction update folders. Intro wording below is extracted exactly from those documents. The current user-approved OS confirms intros for V4, V5, V7, V9, V10 and V11, and no personal intros for V6 or V8.
+
+MERGE RULE: Retain the current BEAST MODE wording, story loops, teaching, outcomes, corrected V6 public employer label and three thought-block repairs. Restore only the approved intro passages into the corresponding video after its hook/early value. Use the prior/next source passages below to locate the boundary. Where the BEAST MODE story-loop paragraph is already immediately after the hook, retain it; identify the exact insertion boundary and log the order. Do not remove or rewrite either approved layer to make them fit. Escalate a genuine collision, not a simple absence.
+Do not use the source filenames as proof that the complete pre-BEAST source body supersedes the current edited body. Each source has a different purpose.
+The V4 numerical opening remains a separately unresolved evidence issue. No opening replacement is authorized by this recovery reference.
+
+INTRO MATRIX:
+V4 YES; V5 YES; V6 NO; V7 YES; V8 NO; V9 YES; V10 YES; V11 YES.
+
+==================================================================
+NEW PUBLIC V4
+SOURCE FILE: Video_4_FINAL_Simple_Conversational_STRONGER_HOOK_With_Natural_Intro_Recording_Script.docx
+SOURCE SHA-256: 49d2ce0d4980efb7ffe8958bfd56b97db0a24efd6049c8368731b818a59ce287
+SOURCE URL: https://drive.google.com/file/d/1783qxNzY9UzURydRntt3Iyjw7bSA21Cl/view
+PRECEDING SOURCE PASSAGE: Because we still need experienced people later. And somehow, they have to become experienced.
+NEXT SOURCE SECTION: THE PROBLEM
+EXACT INTRO START
+I’m Temidayo. I’ve spent much of my career looking at how work, roles, and organizations are designed. Now I help experienced professionals understand what their work is actually building in them and what still counts when the context changes.
+That is why this AI question interests me. I am not only looking at what happens to the task. I want to know what happens to the experience people used to build while doing it.
+EXACT INTRO END
+PARAGRAPH CHECK: all intro paragraphs above are absent from the early-edit intake for this video.
+
+==================================================================
+NEW PUBLIC V5
+SOURCE FILE: Video_5_FINAL_Simple_Conversational_STRONGER_HOOK_With_Natural_Intro_Recording_Script.docx
+SOURCE SHA-256: e3676fbe22a054d8542d5632ce29a0ad17ae2d8b851af22bdc4e045fa37ca418
+SOURCE URL: https://drive.google.com/file/d/1ZLxGPCMfy0qXlHiR8xWvhq7YiojmfDVW/view
+PRECEDING SOURCE PASSAGE: That is the problem I want to unpack, because being needed and being developed are not the same thing.
+NEXT SOURCE SECTION: THE TRAP
+EXACT INTRO START
+I’m Temidayo. Across my own career, I’ve worked inside and advised different kinds of organizations. One thing I’ve learned is that being valuable to an organization and being developed by that organization are not always the same thing.
+That distinction matters here.
+EXACT INTRO END
+PARAGRAPH CHECK: all intro paragraphs above are absent from the early-edit intake for this video.
+
+==================================================================
+NEW PUBLIC V7
+SOURCE FILE: Video_7_FINAL_Simple_Conversational_STRONGER_HOOK_With_Natural_Intro_Recording_Script.docx
+SOURCE SHA-256: e7c2a251b6693551eb3cf005653d414414b332c750c2c4067087b20b9d3bb8ae
+SOURCE URL: https://drive.google.com/file/d/1Qe6qVcMcyEz251oKnsddfgisNI_uDo5S/view
+PRECEDING SOURCE PASSAGE: So if you keep getting told you are doing great but someone else keeps getting the bigger opportunity, “work harder” may be the wrong diagnosis.
+NEXT SOURCE SECTION: WHAT HAPPENS BEFORE THE TITLE
+EXACT INTRO START
+I’m Temidayo. I’ve spent years working inside organizations, leading teams, and sitting close enough to talent and business decisions to see versions of this happen.
+And I want to be careful here. Bigger opportunities are not handed out through one clean formula. Performance matters, but so can visibility, trust, sponsorship, access, timing, politics, and bias.
+So this is not a video about telling you that the person who got the role simply deserved it more. I want to help you read what may actually be happening.
+EXACT INTRO END
+PARAGRAPH CHECK: all intro paragraphs above are absent from the early-edit intake for this video.
+
+==================================================================
+NEW PUBLIC V9
+SOURCE FILE: Video_9_FINAL_Simple_Conversational_STRONGER_HOOK_With_Natural_Intro_Recording_Script.docx
+SOURCE SHA-256: 85b10b9c4b4e08f56fed4d2d31b2e35864cea5207485cecc2f30cf76c1c29fc8
+SOURCE URL: https://drive.google.com/file/d/1eDSOtuvJjiVsYAy9_s_kOr90ySMUJ8Gp/view
+PRECEDING SOURCE PASSAGE: Because changing industries without starting over does not mean pretending you have nothing left to learn.
+NEXT SOURCE SECTION: WHY TRANSFERABLE-SKILLS ADVICE HELPS
+EXACT INTRO START
+I’m Temidayo, and I’ve changed roles, functions, and industries across my own career.
+That is one reason I am careful with the phrase “transferable skills.” I know from experience that changing context does not mean starting from zero. But I also know that not everything comes with you.
+EXACT INTRO END
+PARAGRAPH CHECK: all intro paragraphs above are absent from the early-edit intake for this video.
+
+==================================================================
+NEW PUBLIC V10
+SOURCE FILE: Video_10_FINAL_Simple_Conversational_STRONGER_HOOK_With_Natural_Intro_Recording_Script.docx
+SOURCE SHA-256: 824fb618cee925de1f4221982dfb243e16e77df2a82ccfde71b0019b827f4e73
+SOURCE URL: https://drive.google.com/file/d/1L9Pd9TeRKC6aG46N1hz2-0KIeSYKzjQv/view
+PRECEDING SOURCE PASSAGE: And before the 90 days are over, I want you to check one more thing: Is this actually the job I thought I accepted?
+NEXT SOURCE SECTION: WHY THIS FEELS STRANGE WHEN YOU ARE EXPERIENCED
+EXACT INTRO START
+I’m Temidayo. I’ve been the new person many times across different roles and industries, and I’ve also spent years thinking about how people actually build capability at work.
+One thing those moves taught me is that experience and context are not the same thing.
+You can know how to work and still have a lot to learn about how this place works.
+EXACT INTRO END
+PARAGRAPH CHECK: all intro paragraphs above are absent from the early-edit intake for this video.
+
+==================================================================
+NEW PUBLIC V11
+SOURCE FILE: Video_11_FINAL_Simple_Conversational_STRONGER_HOOK_With_Natural_Intro_Recording_Script.docx
+SOURCE SHA-256: 8088c33098706695ba684114903899e4b72f1571e2c03a77be9148c14d10b34c
+SOURCE URL: https://drive.google.com/file/d/1ih9e-rPrlkLc7JdNKPADwGWk2kO6Bw7g/view
+PRECEDING SOURCE PASSAGE: By the end of this video, you should be able to tell whether you are still adjusting, whether the role has drifted and needs a conversation, or whether the job has changed enough that you need to make a bigger decision.
+NEXT SOURCE SECTION: 1 | EXPECTED
+EXACT INTRO START
+I’m Temidayo, and I spend a lot of my work helping experienced professionals separate what a role looks like on paper from what the work is actually building in them.
+With a new job, that difference matters because sometimes the role simply needs time to settle. Sometimes it has genuinely changed.
+EXACT INTRO END
+PARAGRAPH CHECK: all intro paragraphs above are absent from the early-edit intake for this video.
+
+INDEPENDENT VERIFICATION LIMITS
+Verified the early-edit intake SHA-256; all 24 Word files against its manifest; all eight recounted word totals; exact script/thought-block paragraph equality; and presence of all 60 brief triggers. Verified the delivered sync ZIP SHA-256, matching sidecar, 18 entries and ZIP CRC integrity.
+This does not verify that all 110 rendered old cards need replacement; the literal-match ledger must be reviewed for source-backed summaries, direct quotes, evidence excerpts and genuine unsupported copy. No layout engine, historical archive preservation, recorded performance, audio mix, final runtime or retention test was rerun.
+These source-recovery notes do not constitute approval of the V4 numerical claim or create new personal evidence.

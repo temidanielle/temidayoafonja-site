@@ -1,0 +1,7 @@
+==============================================================================
+NEW PUBLIC V9  |  OPEN ISSUES
+==============================================================================
+
+1. Final runtime, audio mix, footage review, SRT, chapters and
+   live-link availability are all deferred to the finished export and
+   are not claimed anywhere in this package.

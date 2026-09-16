@@ -1,0 +1,58 @@
+==============================================================================
+NEW PUBLIC V6  |  SOUND MAP
+==============================================================================
+
+Decode a Job Description in 10 Minutes
+
+A stinger means a brief sound: a quiet click, a soft tap, paper
+movement or a restrained tonal accent. It is not a logo
+animation, a loud transition or a visual effect. A visual
+accent and a cutaway are separate choices.
+
+Audition every cue under the actual recorded voice. Keep speech
+clear. No alarms, no loud whooshes, no compulsory music bed, no
+accent on every bullet, and no second effect where one already
+carries the moment.
+
+------------------------------------------------------------------------------
+
+THE FIVE ACCENTS
+
+  S1
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          Senior Divisional Strategy Consultant, Governance.
+      LOCATION: section 1, HOOK, paragraph 1
+      TREATMENT: TRUE FULL-SCREEN POSTING CARD | S1: brief sound stin...
+
+  S2
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          the bottom of the pay range was $61,500
+      LOCATION: section 1, HOOK, paragraph 2
+      TREATMENT: TRUE FULL-SCREEN POSTING DETAIL | S2: brief sound st...
+
+  S3
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          Supporting the development of strategy is not the same
+          as setting the strategy.
+      LOCATION: section 5, 2 | AUTHORITY, paragraph 2
+      TREATMENT: 2 | AUTHORITY | S3
+
+  S4
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          highest published pay ceiling.
+      LOCATION: section 9, THE REVERSE CAN HAPPEN TOO, paragraph 2
+      TREATMENT: THE REVERSE CAN HAPPEN TOO | S4
+
+  S5
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          Take one job description you are actually thinking
+          about.
+      LOCATION: section 11, USE IT ON A REAL JOB, paragraph 1
+      TREATMENT: USE IT ON A REAL JOB | S5
+
+------------------------------------------------------------------------------
+
+ONE QUIET SUBSCRIBE CUE
+
+  After value has landed. It is an edit cue, not a spoken ask,
+  and no spoken wording was added for it.

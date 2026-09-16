@@ -1,0 +1,57 @@
+==============================================================================
+NEW PUBLIC V10  |  SOURCE MANIFEST AND NUMBER MAP
+==============================================================================
+
+Your First 90 Days in a New Job: What Really Matters
+Generated Wednesday, September 16, 2026 | 1:46 PM CT
+
+------------------------------------------------------------------------------
+
+NUMBER MAP
+
+  NEW PUBLIC NUMBER      V10
+  FORMER ROADMAP NUMBER  None. This is a new concept.
+  TITLE                  Your First 90 Days in a New Job: What Really Matters
+  THUMBNAIL              DON’T SPEND YOUR FIRST 90 DAYS PROVING YOURSELF
+
+------------------------------------------------------------------------------
+
+ORDER OF AUTHORITY
+
+  1  Current approved spoken body, September 16 BEAST MODE
+  2  Approved natural-intro recovery reference, for the six
+     restored introductions only
+  3  Research and approved evidence, for factual claims
+  4  Current early-edit brief, for editing treatment
+  5  Current faith-inclusive description, for publishing copy
+  6  Older production assets, usable only where synchronized
+
+------------------------------------------------------------------------------
+
+SOURCES USED
+
+  Early-edit intake archive
+      sha256  021529cab2c761046242a83a743adf0c2f2777328179e064d6ec19b302e8ceb0
+  V10_Recording_Script.docx
+      sha256  e83718ae400877b7f9634ccdf9eed62bd47ca07d0a39baa6020d3522eff7dd08
+  V10_Thought_Block_Recording_Copy.docx
+      sha256  88297ec0316a39e1c996138e3aa1dbe2f918c9bc8081381d333058bc812cf97a
+  V10_Early_Curiosity_Outcome_Editing_Brief.docx
+      sha256  cd94dc92079d9f4715ce13c0b0dff35470a1c9e40067fb68a71cce46dc2225bd
+  Approved natural-intro recovery reference
+      sha256  c4e5f2a478c7077377f14d950deb8607853c32fe52ed53815523ef7de61f188a
+
+------------------------------------------------------------------------------
+
+SOURCE RECONCILIATION
+
+  The approved introduction was restored after STORY LOOP and
+  immediately before WHY THIS FEELS STRANGE WHEN YOU ARE EXPERIENCED.
+  3 paragraphs, 62 words.
+  Order: recognition and tension, early value,
+  introduction, continued teaching.
+
+  Spoken words: 1,701. Counting method: whitespace-delimited
+  tokens of the spoken stream only, with section labels, block
+  labels, headers, recording direction and bracketed production
+  notes excluded before counting.

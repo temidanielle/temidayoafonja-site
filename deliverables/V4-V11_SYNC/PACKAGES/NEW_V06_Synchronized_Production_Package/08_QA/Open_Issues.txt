@@ -1,0 +1,11 @@
+==============================================================================
+NEW PUBLIC V6  |  OPEN ISSUES
+==============================================================================
+
+1. The ten-minute title promise has to pass the finished export. The
+   reconciled script is 1,096 spoken words, roughly 7.6 to 8.4
+   minutes of speech-only arithmetic. That is not a timed export.
+
+2. Final runtime, audio mix, footage review, SRT, chapters and
+   live-link availability are all deferred to the finished export and
+   are not claimed anywhere in this package.

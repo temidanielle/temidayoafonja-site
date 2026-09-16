@@ -1,0 +1,56 @@
+==============================================================================
+NEW PUBLIC V9  |  SOUND MAP
+==============================================================================
+
+Transferable Skills Advice Is Missing Something
+
+A stinger means a brief sound: a quiet click, a soft tap, paper
+movement or a restrained tonal accent. It is not a logo
+animation, a loud transition or a visual effect. A visual
+accent and a cutaway are separate choices.
+
+Audition every cue under the actual recorded voice. Keep speech
+clear. No alarms, no loud whooshes, no compulsory music bed, no
+accent on every bullet, and no second effect where one already
+carries the moment.
+
+------------------------------------------------------------------------------
+
+THE FIVE ACCENTS
+
+  S1
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          What can I take with me?
+      LOCATION: section 1, HOOK, paragraph 2
+      TREATMENT: TRUE FULL-SCREEN QUESTION CONTRAST | S1: brief sound...
+
+  S2
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          I use four questions instead:
+      LOCATION: section 4, THE FOUR QUESTIONS, paragraph 1
+      TREATMENT: THE FOUR QUESTIONS | S2
+
+  S3
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          I picture sorting.
+      LOCATION: section 9, THINK OF IT LIKE SORTING, paragraph 1
+      TREATMENT: THINK OF IT LIKE SORTING | S3
+
+  S4
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          The part of my experience that is most useful here is X.
+      LOCATION: section 13, HOW TO TALK ABOUT THE GAP, paragraph 2
+      TREATMENT: HOW TO TALK ABOUT THE GAP | S4
+
+  S5
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          What exactly am I carrying
+      LOCATION: section 15, STORY LOOP PAYOFF, paragraph 1
+      TREATMENT: STORY LOOP PAYOFF | S5
+
+------------------------------------------------------------------------------
+
+ONE QUIET SUBSCRIBE CUE
+
+  After value has landed. It is an edit cue, not a spoken ask,
+  and no spoken wording was added for it.

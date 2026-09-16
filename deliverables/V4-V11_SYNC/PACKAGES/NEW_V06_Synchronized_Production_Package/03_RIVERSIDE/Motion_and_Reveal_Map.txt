@@ -1,0 +1,195 @@
+==============================================================================
+NEW PUBLIC V6  |  MOTION AND REVEAL MAP
+==============================================================================
+
+Decode a Job Description in 10 Minutes
+
+One active idea at a time. Establish the whole structure, then
+activate one component. Gentle push-ins and occasional
+pull-backs only. No constant zooming, pulsing or effects.
+Preserve meaningful pauses.
+
+------------------------------------------------------------------------------
+
+NEW_V6_FS_01_TITLE_ONLY
+  SECTION 1, PARAGRAPH 1
+  REVEAL ORDER:
+      1. NEW_V6_FS_01_TITLE_ONLY.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
+NEW_V6_FS_02_THE_CONTRADICTION
+  SECTION 1, PARAGRAPH 2
+  REVEAL ORDER:
+      1. NEW_V6_FS_02A_FLOOR.png
+      2. NEW_V6_FS_02B_FEEDBACK.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
+NEW_V6_FS_05_PARP
+  SECTION 1, PARAGRAPH 4
+  REVEAL ORDER:
+      1. NEW_V6_FS_05_PARP_FRAMEWORK.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
+NEW_V6_FS_03_THE_SAMPLE
+  SECTION 3, PARAGRAPH 1
+  REVEAL ORDER:
+      1. NEW_V6_FS_03_THE_SAMPLE.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
+NEW_V6_FS_04_THREE_QUESTIONS
+  SECTION 3, PARAGRAPH 2
+  REVEAL ORDER:
+      1. NEW_V6_FS_04A_COULD_I_DO_IT.png
+      2. NEW_V6_FS_04B_CAN_I_PROVE_IT.png
+      3. NEW_V6_FS_04C_DO_I_MEET_THE_GATES.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
+NEW_V6_FS_19_FOUR_THINGS
+  SECTION 3, PARAGRAPH 2
+  REVEAL ORDER:
+      1. NEW_V6_FS_19_FOUR_THINGS.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
+NEW_V6_FS_06_POSTING_WALKTHROUGH
+  SECTION 4, PARAGRAPH 2
+  REVEAL ORDER:
+      1. NEW_V6_FS_06A_PROBLEM.png
+      2. NEW_V6_FS_06B_AUTHORITY.png
+      3. NEW_V6_FS_06C_PROOF.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
+NEW_V6_FS_09_PREDEFINED_DECISIONS
+  SECTION 5, PARAGRAPH 3
+  REVEAL ORDER:
+      1. NEW_V6_FS_09A_SAME_COMPANY.png
+      2. NEW_V6_FS_09B_PREDEFINED.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
+NEW_V6_FS_17_REAL_GAP
+  SECTION 7, PARAGRAPH 2
+  REVEAL ORDER:
+      1. NEW_V6_FS_17A_GEOGRAPHIC.png
+      2. NEW_V6_FS_17B_TIME_ZONE.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
+NEW_V6_FS_08_READ_THE_VERBS
+  SECTION 8, PARAGRAPH 2
+  REVEAL ORDER:
+      1. NEW_V6_FS_08_READ_THE_VERBS.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
+NEW_V6_FS_10_DIRECTOR_COMPARE
+  SECTION 8, PARAGRAPH 2
+  REVEAL ORDER:
+      1. NEW_V6_FS_10A_SAME_WORD.png
+      2. NEW_V6_FS_10B_SCOPE.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
+NEW_V6_FS_12_TITLE_TEST
+  SECTION 8, PARAGRAPH 2
+  REVEAL ORDER:
+      1. NEW_V6_FS_12A_SAME_WORD.png
+      2. NEW_V6_FS_12B_DIFFERENT_WORK.png
+      3. NEW_V6_FS_12C_DIFFERENT_AUTHORITY.png
+      4. NEW_V6_FS_12D_DIFFERENT_CONTEXT.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
+NEW_V6_FS_13_ACRONYM_WALL
+  SECTION 9, PARAGRAPH 1
+  REVEAL ORDER:
+      1. NEW_V6_FS_13A_UNFAMILIAR_TITLE.png
+      2. NEW_V6_FS_13B_ACRONYM_WALL.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
+NEW_V6_FS_14_AUTHORITY_POSTURES
+  SECTION 9, PARAGRAPH 2
+  REVEAL ORDER:
+      1. NEW_V6_FS_14_AUTHORITY_POSTURES.png
+      2. NEW_V6_FS_14A_LEADS.png
+      3. NEW_V6_FS_14B_ADVISES.png
+      4. NEW_V6_FS_14C_COORDINATES.png
+      5. NEW_V6_FS_14D_SUBJECT_MATTER_EXPERT.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
+NEW_V6_FS_15_CEILING
+  SECTION 9, PARAGRAPH 2
+  REVEAL ORDER:
+      1. NEW_V6_FS_15A_RANGE.png
+      2. NEW_V6_FS_15B_IN_THE_SAMPLE.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
+NEW_V6_FS_16_READ_THE_WORK
+  SECTION 9, PARAGRAPH 3
+  REVEAL ORDER:
+      1. NEW_V6_FS_16_READ_THE_WORK.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
+NEW_V6_FS_18_WHAT_IT_WILL_NOT_DO
+  SECTION 10, PARAGRAPH 1
+  REVEAL ORDER:
+      1. NEW_V6_FS_18_WHAT_IT_WILL_NOT_DO.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
+NEW_V6_FS_20_CTA
+  SECTION 11, PARAGRAPH 1
+  REVEAL ORDER:
+      1. NEW_V6_FS_20A_WRITE_FOUR_LINES.png
+      2. NEW_V6_FS_20B_STRONGEST_VERB.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
+NEW_V6_WATCH_NEXT
+  SECTION 16, PARAGRAPH 1
+  REVEAL ORDER:
+      1. NEW_V6_WATCH_NEXT.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
+------------------------------------------------------------------------------
+
+CAMERA EMPHASIS  |  FOUR BEATS
+
+  Base frame for the opening question.
+
+  Push in slightly for the title/job distinction.
+
+  Return to base for the limits of the method.
+
+  Small final emphasis on deciding whether a deeper look is
+  worthwhile.

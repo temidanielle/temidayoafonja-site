@@ -1,0 +1,92 @@
+==============================================================================
+NEW PUBLIC V11  |  ASSET INDEX
+==============================================================================
+
+What to Do When Your New Job Isn’t the Job You Accepted
+
+27 rendered states across 13 full-screen families.
+All 1920 x 1080. Navy #112345, cream #F5F1E8, gold #C9A84C,
+yellow #F2C44C.
+
+------------------------------------------------------------------------------
+
+NEW_V11_FS_02_WRITE_IT_DOWN
+   SECTION 4  1 | EXPECTED   PARAGRAPH 2
+      1. NEW_V11_FS_02_WRITE_IT_DOWN.png
+
+NEW_V11_FS_03_EXPECTED_VS_ACTUAL
+   SECTION 5  2 | ACTUAL   PARAGRAPH 4
+      1. NEW_V11_FS_03A_BOTH_DIRECTIONS.png
+      2. NEW_V11_FS_03B_NARROWER.png
+
+NEW_V11_FS_04_THE_REAL_QUESTION
+   SECTION 5  2 | ACTUAL   PARAGRAPH 5
+      1. NEW_V11_FS_04_THE_REAL_QUESTION.png
+
+NEW_V11_FS_05_TEMPORARY_OR_NOT
+   SECTION 6  3 | COST   PARAGRAPH 2
+      1. NEW_V11_FS_05_TEMPORARY_OR_NOT.png
+
+NEW_V11_FS_06_FOUR_COST_LENSES
+   SECTION 7  THE FOUR COST LENSES   PARAGRAPH 1
+      1. NEW_V11_FS_06_ESTABLISH.png
+      2. NEW_V11_FS_06A_CAPABILITY.png
+      3. NEW_V11_FS_06B_EVIDENCE.png
+      4. NEW_V11_FS_06C_COMPENSATION.png
+      5. NEW_V11_FS_06D_LIFE.png
+
+NEW_V11_FS_07_CLARIFICATION_SCRIPT
+   SECTION 8  4 | CHOICE   PARAGRAPH 2
+      1. NEW_V11_FS_07_CLARIFICATION_SCRIPT.png
+
+NEW_V11_FS_08_TWO_EXTREMES
+   SECTION 9  WHAT NOT TO DO   PARAGRAPH 1
+      1. NEW_V11_FS_08_TWO_EXTREMES.png
+
+NEW_V11_FS_09_THE_ROLE_DRIFT_READ
+   SECTION 10  THE ROLE-DRIFT READ   PARAGRAPH 1
+      1. NEW_V11_FS_09_ESTABLISH.png
+      2. NEW_V11_FS_09A_EXPECTED.png
+      3. NEW_V11_FS_09B_ACTUAL.png
+      4. NEW_V11_FS_09C_COST.png
+      5. NEW_V11_FS_09D_CHOICE.png
+
+NEW_V11_FS_01_FOUR_QUESTIONS
+   SECTION 10  THE ROLE-DRIFT READ   PARAGRAPH 2
+      1. NEW_V11_FS_01_ESTABLISH.png
+      2. NEW_V11_FS_01A_EXPECTED.png
+      3. NEW_V11_FS_01B_ACTUAL.png
+      4. NEW_V11_FS_01C_COST.png
+      5. NEW_V11_FS_01D_CHOICE.png
+
+NEW_V11_FS_10_THE_BOUNDARY
+   SECTION 11  THE BOUNDARY   PARAGRAPH 1
+      1. NEW_V11_FS_10_THE_BOUNDARY.png
+
+NEW_V11_FS_11_YOUR_CONSTRAINTS
+   SECTION 11  THE BOUNDARY   PARAGRAPH 2
+      1. NEW_V11_FS_11_YOUR_CONSTRAINTS.png
+
+NEW_V11_FS_12_NAME_THE_DIFFERENCE
+   SECTION 14  CLOSE   PARAGRAPH 1
+      1. NEW_V11_FS_12_NAME_THE_DIFFERENCE.png
+
+NEW_V11_WATCH_NEXT
+   SECTION 16  WATCH NEXT   PARAGRAPH 1
+      1. NEW_V11_WATCH_NEXT.png
+
+------------------------------------------------------------------------------
+
+EDITABLE SOURCES
+
+   NEW_V11_FS_01_ESTABLISH.svg
+   NEW_V11_FS_03A_BOTH_DIRECTIONS.svg
+   NEW_V11_FS_06_ESTABLISH.svg
+   NEW_V11_FS_07_CLARIFICATION_SCRIPT.svg
+   NEW_V11_FS_09_ESTABLISH.svg
+
+------------------------------------------------------------------------------
+
+PHONE-SIZE CONTACT SHEET
+
+   Phone_Size_Contact_Sheet.png

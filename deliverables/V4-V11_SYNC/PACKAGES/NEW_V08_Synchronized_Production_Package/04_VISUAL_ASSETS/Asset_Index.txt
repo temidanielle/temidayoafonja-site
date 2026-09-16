@@ -1,0 +1,82 @@
+==============================================================================
+NEW PUBLIC V8  |  ASSET INDEX
+==============================================================================
+
+What Disappears When Your Work Access Ends
+
+19 rendered states across 13 full-screen families.
+All 1920 x 1080. Navy #112345, cream #F5F1E8, gold #C9A84C,
+yellow #F2C44C.
+
+------------------------------------------------------------------------------
+
+NEW_V8_FS_01_MEMORY_NOT_PROOF
+   SECTION 1  HOOK   PARAGRAPH 3
+      1. NEW_V8_FS_01_MEMORY_NOT_PROOF.png
+
+NEW_V8_FS_07_TEN_MINUTE_HABIT
+   SECTION 1  HOOK   PARAGRAPH 5
+      1. NEW_V8_FS_07_TEN_MINUTE_HABIT.png
+
+NEW_V8_FS_02_FIVE_KINDS
+   SECTION 4  FIVE THINGS THAT CAN DISAPPEAR   PARAGRAPH 1
+      1. NEW_V8_FS_02_FIVE_KINDS.png
+      2. NEW_V8_FS_02A_BASELINE.png
+      3. NEW_V8_FS_02B_SCOPE.png
+      4. NEW_V8_FS_02C_DECISION.png
+      5. NEW_V8_FS_02D_RESULT.png
+      6. NEW_V8_FS_02E_MECHANISM.png
+
+NEW_V8_FS_03_KEEP_THE_PROOF
+   SECTION 5  THE IMPORTANT BOUNDARY   PARAGRAPH 1
+      1. NEW_V8_FS_03_KEEP_THE_PROOF.png
+
+NEW_V8_FS_04_NOT_THE_ARTIFACT
+   SECTION 5  THE IMPORTANT BOUNDARY   PARAGRAPH 2
+      1. NEW_V8_FS_04_NOT_THE_ARTIFACT.png
+
+NEW_V8_FS_11_A_FACTUAL_RECORD
+   SECTION 5  THE IMPORTANT BOUNDARY   PARAGRAPH 2
+      1. NEW_V8_FS_11_A_FACTUAL_RECORD.png
+
+NEW_V8_FS_05_IN_YOUR_OWN_WORDS
+   SECTION 6  WHAT TO WRITE DOWN   PARAGRAPH 1
+      1. NEW_V8_FS_05_IN_YOUR_OWN_WORDS.png
+
+NEW_V8_FS_06_THE_DETAILS_BLUR
+   SECTION 7  WHY MEMORY IS NOT ENOUGH   PARAGRAPH 3
+      1. NEW_V8_FS_06_THE_DETAILS_BLUR.png
+
+NEW_V8_FS_09_STILL_NOT_ENOUGH
+   SECTION 10  EVIDENCE DOES NOT SOLVE EVERYTHING   PARAGRAPH 1
+      1. NEW_V8_FS_09_STILL_NOT_ENOUGH.png
+
+NEW_V8_FS_10_NOT_ONLY_A_METRIC
+   SECTION 11  EVIDENCE IS MORE THAN A NUMBER   PARAGRAPH 2
+      1. NEW_V8_FS_10_NOT_ONLY_A_METRIC.png
+
+NEW_V8_FS_12_CTA
+   SECTION 14  CLOSE   PARAGRAPH 2
+      1. NEW_V8_FS_12_CTA.png
+
+NEW_V8_FS_08_CAREER_HYGIENE
+   SECTION 16  WATCH NEXT   PARAGRAPH 1
+      1. NEW_V8_FS_08_CAREER_HYGIENE.png
+
+NEW_V8_WATCH_NEXT
+   SECTION 16  WATCH NEXT   PARAGRAPH 1
+      1. NEW_V8_WATCH_NEXT.png
+
+------------------------------------------------------------------------------
+
+EDITABLE SOURCES
+
+   NEW_V8_FS_02_FIVE_KINDS.svg
+   NEW_V8_FS_05_IN_YOUR_OWN_WORDS.svg
+   NEW_V8_FS_10_NOT_ONLY_A_METRIC.svg
+
+------------------------------------------------------------------------------
+
+PHONE-SIZE CONTACT SHEET
+
+   Phone_Size_Contact_Sheet.png

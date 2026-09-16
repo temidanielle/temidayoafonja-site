@@ -1,0 +1,56 @@
+==============================================================================
+NEW PUBLIC V5  |  SOUND MAP
+==============================================================================
+
+If Your Company Needs You but Won’t Grow You
+
+A stinger means a brief sound: a quiet click, a soft tap, paper
+movement or a restrained tonal accent. It is not a logo
+animation, a loud transition or a visual effect. A visual
+accent and a cutaway are separate choices.
+
+Audition every cue under the actual recorded voice. Keep speech
+clear. No alarms, no loud whooshes, no compulsory music bed, no
+accent on every bullet, and no second effect where one already
+carries the moment.
+
+------------------------------------------------------------------------------
+
+THE FIVE ACCENTS
+
+  S1
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          Something breaks, they call you.
+      LOCATION: section 1, HOOK, paragraph 2
+      TREATMENT: TRUE FULL-SCREEN CUTAWAY | S1: brief sound stinger
+
+  S2
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          But no new decisions.
+      LOCATION: section 4, WHAT THIS CAN LOOK LIKE, paragraph 1
+      TREATMENT: WHAT THIS CAN LOOK LIKE | S2
+
+  S3
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          What could I own in the next six months
+      LOCATION: section 7, ASK FOR DEVELOPMENT, NOT ONLY MORE WORK, paragraph 3
+      TREATMENT: ASK FOR DEVELOPMENT, NOT ONLY MORE WORK | S3
+
+  S4
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          Let’s come back to this in 90 days.
+      LOCATION: section 10, SET A REVIEW POINT, paragraph 1
+      TREATMENT: SET A REVIEW POINT | S4
+
+  S5
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          more of your capacity, or expanding your capability?
+      LOCATION: section 13, STORY LOOP PAYOFF, paragraph 1
+      TREATMENT: STORY LOOP PAYOFF | S5
+
+------------------------------------------------------------------------------
+
+ONE QUIET SUBSCRIBE CUE
+
+  After value has landed. It is an edit cue, not a spoken ask,
+  and no spoken wording was added for it.

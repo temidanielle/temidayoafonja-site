@@ -1,0 +1,75 @@
+==============================================================================
+NEW PUBLIC V4  |  ASSET INDEX
+==============================================================================
+
+AI Took the Task. Who Gets the Experience?
+
+16 rendered states across 12 full-screen families.
+All 1920 x 1080. Navy #112345, cream #F5F1E8, gold #C9A84C,
+yellow #F2C44C.
+
+------------------------------------------------------------------------------
+
+NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE
+   SECTION 1  HOOK   PARAGRAPH 3
+      1. NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE.png
+
+NEW_V4_FS_02_INEFFICIENT_AND_DEVELOPMENTAL
+   SECTION 4  THE PROBLEM   PARAGRAPH 1
+      1. NEW_V4_FS_02_INEFFICIENT_AND_DEVELOPMENTAL.png
+
+NEW_V4_FS_04_THE_REAL_QUESTION
+   SECTION 5  THIS IS NOT AN ANTI-AI ARGUMENT   PARAGRAPH 2
+      1. NEW_V4_FS_04_THE_REAL_QUESTION.png
+
+NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT
+   SECTION 6  THREE THINGS TO WATCH   PARAGRAPH 1
+      1. NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT.png
+
+NEW_V4_FS_05_THREE_THINGS
+   SECTION 6  THREE THINGS TO WATCH   PARAGRAPH 1
+      1. NEW_V4_FS_05_THREE_THINGS.png
+      2. NEW_V4_FS_05A_EXPOSURE.png
+      3. NEW_V4_FS_05B_OWNERSHIP.png
+      4. NEW_V4_FS_05C_FEEDBACK.png
+
+NEW_V4_FS_06_MOVED_OR_REMOVED
+   SECTION 7  A SIMPLE EXAMPLE   PARAGRAPH 3
+      1. NEW_V4_FS_06_MOVED_OR_REMOVED.png
+
+NEW_V4_FS_07_WHAT_DID_IT_TEACH
+   SECTION 8  IF YOU MANAGE PEOPLE   PARAGRAPH 1
+      1. NEW_V4_FS_07_WHAT_DID_IT_TEACH.png
+
+NEW_V4_FS_08_STILL_PRACTICING
+   SECTION 9  IF YOU USE AI IN YOUR OWN WORK   PARAGRAPH 1
+      1. NEW_V4_FS_08_STILL_PRACTICING.png
+
+NEW_V4_FS_09_NOT_ONE_OUTCOME
+   SECTION 10  WHAT THIS CANNOT TELL US   PARAGRAPH 1
+      1. NEW_V4_FS_09_NOT_ONE_OUTCOME.png
+
+NEW_V4_FS_10_THREE_COLUMNS
+   SECTION 12  TRY THIS ON ONE TASK   PARAGRAPH 1
+      1. NEW_V4_FS_10_THREE_COLUMNS.png
+
+NEW_V4_FS_11_TASK_IS_NOT_THE_JOB
+   SECTION 15  CLOSE   PARAGRAPH 1
+      1. NEW_V4_FS_11_TASK_IS_NOT_THE_JOB.png
+
+NEW_V4_WATCH_NEXT
+   SECTION 17  WATCH NEXT   PARAGRAPH 1
+      1. NEW_V4_WATCH_NEXT.png
+
+------------------------------------------------------------------------------
+
+EDITABLE SOURCES
+
+   NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT.svg
+   NEW_V4_FS_05_THREE_THINGS.svg
+
+------------------------------------------------------------------------------
+
+PHONE-SIZE CONTACT SHEET
+
+   Phone_Size_Contact_Sheet.png

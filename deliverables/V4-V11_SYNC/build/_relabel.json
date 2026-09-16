@@ -1,0 +1,2909 @@
+[
+ {
+  "video": 4,
+  "key": "NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "Who gets the experience that used to come from doing the work?"
+  ],
+  "labels": [],
+  "lines": [
+   {
+    "line": "Who gets the experience that used to come from doing the work?",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "So I think we are asking the wrong question about some of this work. Not just: What can AI do now? But: If AI takes the ",
+    "section": "HOOK",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 4,
+  "key": "NEW_V4_FS_02_INEFFICIENT_AND_DEVELOPMENTAL",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "COMPARISON",
+  "missing": [
+   "A task can be both.",
+   "It taught you what good looked like.",
+   "Slow, repetitive, sometimes wrong."
+  ],
+  "labels": [
+   "DEVELOPMENTAL",
+   "INEFFICIENT",
+   "THE TENSION"
+  ],
+  "lines": [
+   {
+    "line": "A task can be both.",
+    "kind": "EVIDENCE",
+    "score": 0.5,
+    "support": "So I think we are asking the wrong question about some of this work. Not just: What can AI do now? But: If AI takes the ",
+    "section": "HOOK",
+    "why": "supported by a passage the script does not read in full"
+   },
+   {
+    "line": "It taught you what good looked like.",
+    "kind": "EVIDENCE",
+    "score": 0.5,
+    "support": "That was where someone learned what a bad answer looked like. Where they made mistakes. Where they started noticing patt",
+    "section": "HOOK",
+    "why": "supported by a passage the script does not read in full"
+   },
+   {
+    "line": "Slow, repetitive, sometimes wrong.",
+    "kind": "OBSOLETE",
+    "score": 0.25,
+    "support": "So I think we are asking the wrong question about some of this work. Not just: What can AI do now? But: If AI takes the ",
+    "section": "HOOK",
+    "why": "no passage in the reconciled script and no approved evidence supports it"
+   }
+  ]
+ },
+ {
+  "video": 4,
+  "key": "NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "Pattern recognition",
+   "Why the eleventh one is different"
+  ],
+  "labels": [
+   "FIXING MISTAKES",
+   "REPETITION",
+   "SEEING TEN BAD EXAMPLES",
+   "WHAT THE WORK TAUGHT"
+  ],
+  "lines": [
+   {
+    "line": "Pattern recognition",
+    "kind": "EVIDENCE",
+    "score": 0.5,
+    "support": "I would watch three things. First, exposure. Does the person still see enough examples to learn the pattern?",
+    "section": "THREE THINGS TO WATCH",
+    "why": "supported by a passage the script does not read in full"
+   },
+   {
+    "line": "Why the eleventh one is different",
+    "kind": "OBSOLETE",
+    "score": 0.33,
+    "support": "If the tool gets faster, what is the person still getting better at? Keep that question in your head. By the end, I will",
+    "section": "STORY LOOP",
+    "why": "no passage in the reconciled script and no approved evidence supports it"
+   }
+  ]
+ },
+ {
+  "video": 4,
+  "key": "NEW_V4_FS_04_THE_REAL_QUESTION",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "Not: should AI do the task?"
+  ],
+  "labels": [
+   "NOT AN ANTI-AI ARGUMENT"
+  ],
+  "lines": [
+   {
+    "line": "Not: should AI do the task?",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "So I think we are asking the wrong question about some of this work. Not just: What can AI do now? But: If AI takes the ",
+    "section": "HOOK",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 4,
+  "key": "NEW_V4_FS_05_THREE_THINGS",
+  "anchor": "HELD",
+  "states": 4,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "Do they still have to make a choice?",
+   "What to watch when a task is automated.",
+   "When the output is wrong, do they understand why?"
+  ],
+  "labels": [
+   "THREE THINGS TO WATCH"
+  ],
+  "lines": [
+   {
+    "line": "Do they still have to make a choice?",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "Second, ownership. Do they still have to make a real choice, or are they only checking whether the AI answer looks okay?",
+    "section": "THREE THINGS TO WATCH",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "What to watch when a task is automated.",
+    "kind": "SUMMARY",
+    "score": 0.67,
+    "support": "We talk a lot about which tasks AI can do. I think we also need to talk about what people used to learn while doing thos",
+    "section": "THE PROBLEM",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "When the output is wrong, do they understand why?",
+    "kind": "SUMMARY",
+    "score": 0.67,
+    "support": "Third, feedback. When the answer is wrong, do they understand why? Good judgment does not suddenly appear when someone g",
+    "section": "THREE THINGS TO WATCH",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 4,
+  "key": "NEW_V4_FS_06_MOVED_OR_REMOVED",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "COMPARISON",
+  "missing": [
+   "Run the tool. Copy the result. Send it upward.",
+   "Test the assumptions. Challenge the output. Defend the recommendation."
+  ],
+  "labels": [
+   "THE SAME TASK, TWO OUTCOMES",
+   "THE WORK LEFT",
+   "THE WORK MOVED"
+  ],
+  "lines": [
+   {
+    "line": "Run the tool. Copy the result. Send it upward.",
+    "kind": "SUMMARY",
+    "score": 0.83,
+    "support": "But if the job becomes: run the tool, copy the answer, send it upward, that is different. The person may become faster w",
+    "section": "A SIMPLE EXAMPLE",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "Test the assumptions. Challenge the output. Defend the recommendation.",
+    "kind": "SUMMARY",
+    "score": 0.67,
+    "support": "Now imagine AI builds the first model. If the analyst still has to test the assumptions, challenge the answer, and expla",
+    "section": "A SIMPLE EXAMPLE",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 4,
+  "key": "NEW_V4_FS_07_WHAT_DID_IT_TEACH",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "Then decide how that learning happens now."
+  ],
+  "labels": [
+   "FOR MANAGERS"
+  ],
+  "lines": [
+   {
+    "line": "Then decide how that learning happens now.",
+    "kind": "SUMMARY",
+    "score": 0.75,
+    "support": "If you manage people, do not only ask, \u201cWhat can we automate?\u201d Also ask, \u201cWhat did this task used to teach?\u201d Then decide",
+    "section": "IF YOU MANAGE PEOPLE",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 4,
+  "key": "NEW_V4_FS_08_STILL_PRACTICING",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "Can I explain what I contributed?"
+  ],
+  "labels": [
+   "FOR PROFESSIONALS"
+  ],
+  "lines": [
+   {
+    "line": "Can I explain what I contributed?",
+    "kind": "EVIDENCE",
+    "score": 0.5,
+    "support": "Think about a junior analyst who used to build a model from the beginning. They had to choose the assumptions. They had ",
+    "section": "A SIMPLE EXAMPLE",
+    "why": "supported by a passage the script does not read in full"
+   }
+  ]
+ },
+ {
+  "video": 4,
+  "key": "NEW_V4_FS_09_NOT_ONE_OUTCOME",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "AI may increase learning",
+   "Different jobs will answer differently.",
+   "Human review may remain essential",
+   "The task may truly disappear"
+  ],
+  "labels": [
+   "IN OTHER ROLES",
+   "IN SOME WORK",
+   "NOT A CLAIM ABOUT ONE OUTCOME",
+   "THE BOUNDARY"
+  ],
+  "lines": [
+   {
+    "line": "AI may increase learning",
+    "kind": "SUMMARY",
+    "score": 0.67,
+    "support": "My question is not, \u201cShould AI do the task?\u201d My question is: \u201cIf AI does the task, what replaces the learning?\u201d",
+    "section": "THIS IS NOT AN ANTI-AI ARGUMENT",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "Different jobs will answer differently.",
+    "kind": "EVIDENCE",
+    "score": 0.5,
+    "support": "Now imagine AI builds the first model. If the analyst still has to test the assumptions, challenge the answer, and expla",
+    "section": "A SIMPLE EXAMPLE",
+    "why": "supported by a passage the script does not read in full"
+   },
+   {
+    "line": "Human review may remain essential",
+    "kind": "EVIDENCE",
+    "score": 0.5,
+    "support": "Different jobs will have different answers. In some jobs, AI may help people learn faster. In regulated or high-risk wor",
+    "section": "WHAT THIS CANNOT TELL US",
+    "why": "supported by a passage the script does not read in full"
+   },
+   {
+    "line": "The task may truly disappear",
+    "kind": "SUMMARY",
+    "score": 0.67,
+    "support": "Different jobs will have different answers. In some jobs, AI may help people learn faster. In regulated or high-risk wor",
+    "section": "WHAT THIS CANNOT TELL US",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 4,
+  "key": "NEW_V4_FS_10_THREE_COLUMNS",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "CTA",
+  "missing": [
+   "Audit one task AI now helps you with.",
+   "If the third column is almost empty, ask where the learning comes from"
+  ],
+  "labels": [
+   "ONE THING TO DO"
+  ],
+  "lines": [
+   {
+    "line": "Audit one task AI now helps you with.",
+    "kind": "SUMMARY",
+    "score": 0.83,
+    "support": "Pick one task AI now helps you do. Make three columns: BEFORE AI. WITH AI. STILL MINE.",
+    "section": "TRY THIS ON ONE TASK",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "If the third column is almost empty, ask where the learning comes from",
+    "kind": "SUMMARY",
+    "score": 0.86,
+    "support": "Still mine, what judgment, checking, or responsibility is still yours? If that third column is almost empty, ask where t",
+    "section": "TRY THIS ON ONE TASK",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 4,
+  "key": "NEW_V4_FS_11_TASK_IS_NOT_THE_JOB",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [],
+  "labels": [
+   "CLOSE"
+  ],
+  "lines": []
+ },
+ {
+  "video": 4,
+  "key": "NEW_V4_WATCH_NEXT",
+  "anchor": null,
+  "states": 1,
+  "treatment": "WATCH NEXT",
+  "missing": [],
+  "labels": [
+   "WATCH NEXT"
+  ],
+  "lines": []
+ },
+ {
+  "video": 5,
+  "key": "NEW_V5_FS_01_NEEDED_NOT_GROWN",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "COMPARISON",
+  "missing": [
+   "They call you when something breaks."
+  ],
+  "labels": [
+   "A PAINFUL PLACE TO BE",
+   "BUT NOT NECESSARILY GROWN BY IT",
+   "NEEDED BY THE COMPANY"
+  ],
+  "lines": [
+   {
+    "line": "They call you when something breaks.",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "Something breaks, they call you. Someone leaves, you absorb the work. A new person joins, you train them.",
+    "section": "HOOK",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 5,
+  "key": "NEW_V5_FS_02_NOT_ALIGNED",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "That does not mean anyone is plotting against you.",
+   "Your value to the current role and your value to your future are not a"
+  ],
+  "labels": [
+   "THE TRAP"
+  ],
+  "lines": [
+   {
+    "line": "That does not mean anyone is plotting against you.",
+    "kind": "SUMMARY",
+    "score": 0.75,
+    "support": "If you are the person holding everything together, your manager may have a real reason to want you to stay exactly where",
+    "section": "THE TRAP",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "Your value to the current role and your value to your future are not a",
+    "kind": "OBSOLETE",
+    "score": 0.25,
+    "support": "You are sitting there thinking: How can I be valuable enough to carry all of this, but not the person you want for the b",
+    "section": "HOOK",
+    "why": "no passage in the reconciled script and no approved evidence supports it"
+   }
+  ]
+ },
+ {
+  "video": 5,
+  "key": "NEW_V5_FS_03_WATCH_FOR_PATTERNS",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [],
+  "labels": [
+   "BUT NO NEW DECISION ROOM",
+   "MORE DEPENDENCE ON YOU",
+   "MORE KNOWLEDGE TRANSFER",
+   "NO CONVERSATION ABOUT WHAT COMES NEXT",
+   "NO DEVELOPMENTAL ASSIGNMENT",
+   "ONE MOMENT DOES NOT PROVE ANYTHING. A PATTERN DOES.",
+   "WHAT IT LOOKS LIKE"
+  ],
+  "lines": []
+ },
+ {
+  "video": 5,
+  "key": "NEW_V5_FS_04_THE_QUESTION",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "What is this organization building in me beyond my ability to keep thi"
+  ],
+  "labels": [],
+  "lines": [
+   {
+    "line": "What is this organization building in me beyond my ability to keep thi",
+    "kind": "SUMMARY",
+    "score": 0.71,
+    "support": "Ask: What is this company building in me beyond my ability to keep this role running?",
+    "section": "THE QUESTION TO ASK",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 5,
+  "key": "NEW_V5_FS_05_INDISPENSABLE_AND_LESS_PORTABLE",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "COMPARISON",
+  "missing": [
+   "At the same time.",
+   "Fewer people can operate without you.",
+   "Your experience becomes tied to the internal system."
+  ],
+  "labels": [
+   "LESS PORTABLE",
+   "MORE INDISPENSABLE",
+   "STORY"
+  ],
+  "lines": [
+   {
+    "line": "At the same time.",
+    "kind": "EVIDENCE",
+    "score": 0.5,
+    "support": "You are sitting there thinking: How can I be valuable enough to carry all of this, but not the person you want for the b",
+    "section": "HOOK",
+    "why": "supported by a passage the script does not read in full"
+   },
+   {
+    "line": "Fewer people can operate without you.",
+    "kind": "OBSOLETE",
+    "score": 0.25,
+    "support": "Look for a pattern. More rescue work. More people asking you for help. More things that only you know how to do. But no ",
+    "section": "WHAT THIS CAN LOOK LIKE",
+    "why": "no passage in the reconciled script and no approved evidence supports it"
+   },
+   {
+    "line": "Your experience becomes tied to the internal system.",
+    "kind": "OBSOLETE",
+    "score": 0.2,
+    "support": "Your company can need you so much that it becomes one of the reasons you stop growing. I know that sounds backwards. But",
+    "section": "HOOK",
+    "why": "no passage in the reconciled script and no approved evidence supports it"
+   }
+  ]
+ },
+ {
+  "video": 5,
+  "key": "NEW_V5_FS_06_ASK_FOR_DEVELOPMENT",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "Not only a promotion."
+  ],
+  "labels": [
+   "A PROJECT OUTSIDE YOUR USUAL LANE",
+   "EVIDENCE BEYOND RESCUE WORK",
+   "EXPOSURE TO A DIFFERENT LEADER",
+   "WHAT TO ASK FOR"
+  ],
+  "lines": [
+   {
+    "line": "Not only a promotion.",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "Do not only ask for a promotion. Ask for work that builds something new.",
+    "section": "ASK FOR DEVELOPMENT, NOT ONLY MORE WORK",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 5,
+  "key": "NEW_V5_FS_07_THE_ANSWER_MAY_BE_NO",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "The answer may still be no."
+  ],
+  "labels": [
+   "A MANAGER MAY NEED YOU WHERE YOU ARE",
+   "BIAS MAY SHAPE WHO GETS OPPORTUNITIES",
+   "BOUNDARY",
+   "NO OPENING",
+   "THAT IS INFORMATION TOO",
+   "THE COMPANY MAY NOT HAVE THE PATH YOU NEED"
+  ],
+  "lines": [
+   {
+    "line": "The answer may still be no.",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "If you keep asking for development and the answer is always more of the same work, you may need to stop waiting for the ",
+    "section": "WHEN TO BUILD OPTIONS",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 5,
+  "key": "NEW_V5_FS_08_DEPENDENCE_VS_DEVELOPMENT",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "COMPARISON",
+  "missing": [],
+  "labels": [
+   "SOMETIMES THE SAME ASSIGNMENT CONTAINS BOTH",
+   "THE DIFFERENCE"
+  ],
+  "lines": []
+ },
+ {
+  "video": 5,
+  "key": "NEW_V5_FS_09_REVIEW_POINT",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "What authority changed?",
+   "What recognition or role design follows?"
+  ],
+  "labels": [
+   "AT THE REVIEW POINT"
+  ],
+  "lines": [
+   {
+    "line": "What authority changed?",
+    "kind": "EVIDENCE",
+    "score": 0.5,
+    "support": "You do not need to turn one disappointing promotion cycle into a verdict on your whole career. Ask for one piece of work",
+    "section": "TAKEAWAY VALUE",
+    "why": "supported by a passage the script does not read in full"
+   },
+   {
+    "line": "What recognition or role design follows?",
+    "kind": "EVIDENCE",
+    "score": 0.5,
+    "support": "What recognition or role change comes with this? What am I taking off my plate? Without a review point, temporary extra ",
+    "section": "SET A REVIEW POINT",
+    "why": "supported by a passage the script does not read in full"
+   }
+  ]
+ },
+ {
+  "video": 5,
+  "key": "NEW_V5_FS_10_CTA",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "CTA",
+  "missing": [
+   "If not, usefulness may be the reason you are stuck.",
+   "Is it also helping you become:",
+   "More capable.",
+   "More portable.",
+   "More visible."
+  ],
+  "labels": [
+   "ONE QUESTION TO ASK"
+  ],
+  "lines": [
+   {
+    "line": "If not, usefulness may be the reason you are stuck.",
+    "kind": "OBSOLETE",
+    "score": 0.33,
+    "support": "If you are the person holding everything together, your manager may have a real reason to want you to stay exactly where",
+    "section": "THE TRAP",
+    "why": "no passage in the reconciled script and no approved evidence supports it"
+   },
+   {
+    "line": "Is it also helping you become:",
+    "kind": "SUMMARY",
+    "score": 0.67,
+    "support": "That makes you very valuable inside that company. But it can also make more and more of your value depend on knowing tha",
+    "section": "A SIMPLE EXAMPLE",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "More capable.",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "So if your company keeps showing you how much it needs you, ask one more question: Is this work also making me more capa",
+    "section": "CLOSE",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "More portable.",
+    "kind": "OBSOLETE",
+    "score": 0.0,
+    "support": null,
+    "section": null,
+    "why": "no passage in the reconciled script and no approved evidence supports it"
+   },
+   {
+    "line": "More visible.",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "So if your company keeps showing you how much it needs you, ask one more question: Is this work also making me more capa",
+    "section": "CLOSE",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 5,
+  "key": "NEW_V5_WATCH_NEXT",
+  "anchor": null,
+  "states": 1,
+  "treatment": "WATCH NEXT",
+  "missing": [],
+  "labels": [
+   "WATCH NEXT"
+  ],
+  "lines": []
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_01_TITLE_ONLY",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "ARTIFACT",
+  "missing": [
+   "Chicago, Illinois. Remote.",
+   "Large Health Insurer",
+   "Sr Divisional Strategy Consultant, Governance"
+  ],
+  "labels": [
+   "CAPTURED SEPTEMBER 12, 2026",
+   "LOCATION",
+   "POSTING ONE"
+  ],
+  "lines": [
+   {
+    "line": "Chicago, Illinois. Remote.",
+    "kind": "EVIDENCE",
+    "score": 1.0,
+    "support": "Posting one. Sr Divisional Strategy Consultant, Governance. Large Health Insurer. Chicago, Illinois. Remote. Published r",
+    "section": "approved evidence",
+    "why": "excerpt of the approved captured evidence, not read aloud"
+   },
+   {
+    "line": "Large Health Insurer",
+    "kind": "EVIDENCE",
+    "score": 1.0,
+    "support": "Posting one. Sr Divisional Strategy Consultant, Governance. Large Health Insurer. Chicago, Illinois. Remote. Published r",
+    "section": "approved evidence",
+    "why": "excerpt of the approved captured evidence, not read aloud"
+   },
+   {
+    "line": "Sr Divisional Strategy Consultant, Governance",
+    "kind": "SUMMARY",
+    "score": 0.8,
+    "support": "I want you to guess what this job actually is. Senior Divisional Strategy Consultant, Governance. Sounds pretty senior, ",
+    "section": "HOOK",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_02_THE_CONTRADICTION",
+  "anchor": "LOST",
+  "states": 2,
+  "treatment": "ARTIFACT",
+  "missing": [
+   "$61,500 to $136,100",
+   "Sr Divisional Strategy Consultant, Governance",
+   "The ability to accept direction and feedback"
+  ],
+  "labels": [
+   "CAPTURED SEPTEMBER 12, 2026",
+   "POSTING ONE",
+   "PUBLISHED RANGE",
+   "REQUIRED QUALIFICATIONS"
+  ],
+  "lines": [
+   {
+    "line": "$61,500 to $136,100",
+    "kind": "EVIDENCE",
+    "score": 1.0,
+    "support": "Posting one. Sr Divisional Strategy Consultant, Governance. Large Health Insurer. Chicago, Illinois. Remote. Published r",
+    "section": "approved evidence",
+    "why": "figure reproduced from the approved captured evidence"
+   },
+   {
+    "line": "Sr Divisional Strategy Consultant, Governance",
+    "kind": "SUMMARY",
+    "score": 0.8,
+    "support": "I want you to guess what this job actually is. Senior Divisional Strategy Consultant, Governance. Sounds pretty senior, ",
+    "section": "HOOK",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "The ability to accept direction and feedback",
+    "kind": "SUMMARY",
+    "score": 0.75,
+    "support": "But when I read the actual posting, the bottom of the pay range was $61,500, and one of the requirements was being able ",
+    "section": "HOOK",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_03_THE_SAMPLE",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "Read for this research. A bounded sample, not the labor market."
+  ],
+  "labels": [
+   "POSTINGS. 11 EMPLOYERS.",
+   "THE EVIDENCE"
+  ],
+  "lines": [
+   {
+    "line": "Read for this research. A bounded sample, not the labor market.",
+    "kind": "OBSOLETE",
+    "score": 0.33,
+    "support": "I reviewed 15 job postings from 11 employers for this research. When I read a job description, I look for four things: P",
+    "section": "THE FOUR THINGS I READ",
+    "why": "no passage in the reconciled script and no approved evidence supports it"
+   }
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_05_PARP",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "The four things."
+  ],
+  "labels": [
+   "THE METHOD"
+  ],
+  "lines": [
+   {
+    "line": "The four things.",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "I reviewed 15 postings from 11 employers, and in the next 10 minutes, I am going to show you the four things I would rea",
+    "section": "HOOK",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_04_THREE_QUESTIONS",
+  "anchor": "LOST",
+  "states": 3,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "Can I prove relevant evidence?",
+   "Do I meet the stated gates?",
+   "Three different questions."
+  ],
+  "labels": [
+   "WHAT TO LOOK FOR"
+  ],
+  "lines": [
+   {
+    "line": "Can I prove relevant evidence?",
+    "kind": "OBSOLETE",
+    "score": 0.33,
+    "support": "Those four things help you answer three different questions: Could I do this work? Can I prove that I have done somethin",
+    "section": "THE FOUR THINGS I READ",
+    "why": "no passage in the reconciled script and no approved evidence supports it"
+   },
+   {
+    "line": "Do I meet the stated gates?",
+    "kind": "SUMMARY",
+    "score": 0.67,
+    "support": "Then circle the strongest verbs in the posting. When you are done, ask: Could I do this work? Can I prove something clos",
+    "section": "USE IT ON A REAL JOB",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "Three different questions.",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "Those four things help you answer three different questions: Could I do this work? Can I prove that I have done somethin",
+    "section": "THE FOUR THINGS I READ",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_06_POSTING_WALKTHROUGH",
+  "anchor": "LOST",
+  "states": 3,
+  "treatment": "ARTIFACT",
+  "missing": [
+   "A consistent way to evaluate opportunities, track them, and report on ",
+   "Access is unusually specific. The role may be far more hands-on than t",
+   "Business analytics. Microsoft Access.",
+   "Sr Divisional Strategy Consultant, Governance",
+   "Supporting the development of divisional strategies",
+   "Supporting the development of strategies. Not setting them.",
+   "Tracking strategic opportunities"
+  ],
+  "labels": [
+   "1  PROBLEM",
+   "2  AUTHORITY",
+   "3  PROOF",
+   "CAPTURED SEPTEMBER 12, 2026",
+   "POSTING ONE",
+   "QUALIFICATIONS",
+   "ROLE PURPOSE"
+  ],
+  "lines": [
+   {
+    "line": "A consistent way to evaluate opportunities, track them, and report on ",
+    "kind": "SUMMARY",
+    "score": 0.71,
+    "support": "In that Senior Divisional Strategy Consultant role, the job was not simply to \u201cbe strategic.\u201d The team needed a better w",
+    "section": "1 | PROBLEM",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "Access is unusually specific. The role may be far more hands-on than t",
+    "kind": "OBSOLETE",
+    "score": 0.29,
+    "support": "In the first posting, they wanted experience in areas like strategic planning, market research, business analytics, and ",
+    "section": "3 | PROOF",
+    "why": "no passage in the reconciled script and no approved evidence supports it"
+   },
+   {
+    "line": "Business analytics. Microsoft Access.",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "In the first posting, they wanted experience in areas like strategic planning, market research, business analytics, and ",
+    "section": "3 | PROOF",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "Sr Divisional Strategy Consultant, Governance",
+    "kind": "SUMMARY",
+    "score": 0.8,
+    "support": "I want you to guess what this job actually is. Senior Divisional Strategy Consultant, Governance. Sounds pretty senior, ",
+    "section": "HOOK",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "Supporting the development of divisional strategies",
+    "kind": "EVIDENCE",
+    "score": 0.5,
+    "support": "In that same posting, one of the key words was \u201csupporting.\u201d Supporting the development of strategy is not the same as s",
+    "section": "2 | AUTHORITY",
+    "why": "supported by a passage the script does not read in full"
+   },
+   {
+    "line": "Supporting the development of strategies. Not setting them.",
+    "kind": "SUMMARY",
+    "score": 0.6,
+    "support": "In that same posting, one of the key words was \u201csupporting.\u201d Supporting the development of strategy is not the same as s",
+    "section": "2 | AUTHORITY",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "Tracking strategic opportunities",
+    "kind": "SUMMARY",
+    "score": 0.67,
+    "support": "In that Senior Divisional Strategy Consultant role, the job was not simply to \u201cbe strategic.\u201d The team needed a better w",
+    "section": "1 | PROBLEM",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_08_READ_THE_VERBS",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "Read the verbs.",
+   "This is where job descriptions become much more honest."
+  ],
+  "labels": [
+   "RULE ONE"
+  ],
+  "lines": [
+   {
+    "line": "Read the verbs.",
+    "kind": "EVIDENCE",
+    "score": 0.5,
+    "support": "But when I read the actual posting, the bottom of the pay range was $61,500, and one of the requirements was being able ",
+    "section": "HOOK",
+    "why": "supported by a passage the script does not read in full"
+   },
+   {
+    "line": "This is where job descriptions become much more honest.",
+    "kind": "EVIDENCE",
+    "score": 0.4,
+    "support": "One role focused much more on running the work and reported to a Senior Director. Another led a transformation office an",
+    "section": "WHY TITLES CAN MISLEAD YOU",
+    "why": "supported by a passage the script does not read in full"
+   }
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_09_PREDEFINED_DECISIONS",
+  "anchor": "LOST",
+  "states": 2,
+  "treatment": "ARTIFACT",
+  "missing": [
+   "$133,400 to $247,700",
+   "Large Health Insurer",
+   "Work with executive leadership to make quick decisions based on predef"
+  ],
+  "labels": [
+   "CAPTURED SEPTEMBER 12, 2026",
+   "POSTING TWO",
+   "PUBLISHED RANGE",
+   "SAME EMPLOYER, DIFFERENT DEPARTMENT"
+  ],
+  "lines": [
+   {
+    "line": "$133,400 to $247,700",
+    "kind": "EVIDENCE",
+    "score": 1.0,
+    "support": "Posting one. Sr Divisional Strategy Consultant, Governance. Large Health Insurer. Chicago, Illinois. Remote. Published r",
+    "section": "approved evidence",
+    "why": "figure reproduced from the approved captured evidence"
+   },
+   {
+    "line": "Large Health Insurer",
+    "kind": "EVIDENCE",
+    "score": 1.0,
+    "support": "Posting one. Sr Divisional Strategy Consultant, Governance. Large Health Insurer. Chicago, Illinois. Remote. Published r",
+    "section": "approved evidence",
+    "why": "excerpt of the approved captured evidence, not read aloud"
+   },
+   {
+    "line": "Work with executive leadership to make quick decisions based on predef",
+    "kind": "SUMMARY",
+    "score": 0.62,
+    "support": "I found another role called Director of Enterprise Resilience. The pay range went to just under $248,000. The posting sa",
+    "section": "2 | AUTHORITY",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_17_REAL_GAP",
+  "anchor": "LOST",
+  "states": 2,
+  "treatment": "COMPARISON",
+  "missing": [
+   "A real gap is not always a skill gap.",
+   "Recruiting experience exclusively in one geographic context is unlikel"
+  ],
+  "labels": [
+   "AN OPERATING CONSTRAINT, NOT A SKILL GAP",
+   "CAPTURED SEPTEMBER 12, 2026",
+   "POSTING SIX",
+   "STATED IN THE POSTING"
+  ],
+  "lines": [
+   {
+    "line": "A real gap is not always a skill gap.",
+    "kind": "EVIDENCE",
+    "score": 0.5,
+    "support": "I reviewed 15 job postings from 11 employers for this research. When I read a job description, I look for four things: P",
+    "section": "THE FOUR THINGS I READ",
+    "why": "supported by a passage the script does not read in full"
+   },
+   {
+    "line": "Recruiting experience exclusively in one geographic context is unlikel",
+    "kind": "EVIDENCE",
+    "score": 0.86,
+    "support": "Posting one. Sr Divisional Strategy Consultant, Governance. Large Health Insurer. Chicago, Illinois. Remote. Published r",
+    "section": "approved evidence",
+    "why": "excerpt of the approved captured evidence, not read aloud"
+   }
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_10_DIRECTOR_COMPARE",
+  "anchor": "LOST",
+  "states": 2,
+  "treatment": "COMPARISON",
+  "missing": [
+   "5 or more years",
+   "5 to 7 years",
+   "Director of Strategic Initiatives",
+   "Director, Talent Management",
+   "Insurance Brokerage",
+   "Marketing Technology Company",
+   "Operational execution",
+   "Runs a transformation office",
+   "Two different industries."
+  ],
+  "labels": [
+   "CAPTURED SEPTEMBER 12, 2026",
+   "EXPERIENCE MINIMUM",
+   "PARTNERS WITH",
+   "POSTING FOUR",
+   "POSTING THREE",
+   "REPORTS TO",
+   "TWO DIRECTOR ROLES"
+  ],
+  "lines": [
+   {
+    "line": "5 or more years",
+    "kind": "EVIDENCE",
+    "score": 1.0,
+    "support": "Posting one. Sr Divisional Strategy Consultant, Governance. Large Health Insurer. Chicago, Illinois. Remote. Published r",
+    "section": "approved evidence",
+    "why": "figure reproduced from the approved captured evidence"
+   },
+   {
+    "line": "5 to 7 years",
+    "kind": "EVIDENCE",
+    "score": 1.0,
+    "support": "Posting one. Sr Divisional Strategy Consultant, Governance. Large Health Insurer. Chicago, Illinois. Remote. Published r",
+    "section": "approved evidence",
+    "why": "figure reproduced from the approved captured evidence"
+   },
+   {
+    "line": "Director of Strategic Initiatives",
+    "kind": "EVIDENCE",
+    "score": 1.0,
+    "support": "Posting one. Sr Divisional Strategy Consultant, Governance. Large Health Insurer. Chicago, Illinois. Remote. Published r",
+    "section": "approved evidence",
+    "why": "excerpt of the approved captured evidence, not read aloud"
+   },
+   {
+    "line": "Director, Talent Management",
+    "kind": "SUMMARY",
+    "score": 0.67,
+    "support": "A global nonprofit was hiring a Director of Global Talent Acquisition. The posting said people whose recruiting experien",
+    "section": "4 | REAL GAP",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "Insurance Brokerage",
+    "kind": "EVIDENCE",
+    "score": 1.0,
+    "support": "Posting one. Sr Divisional Strategy Consultant, Governance. Large Health Insurer. Chicago, Illinois. Remote. Published r",
+    "section": "approved evidence",
+    "why": "excerpt of the approved captured evidence, not read aloud"
+   },
+   {
+    "line": "Marketing Technology Company",
+    "kind": "EVIDENCE",
+    "score": 1.0,
+    "support": "Posting one. Sr Divisional Strategy Consultant, Governance. Large Health Insurer. Chicago, Illinois. Remote. Published r",
+    "section": "approved evidence",
+    "why": "excerpt of the approved captured evidence, not read aloud"
+   },
+   {
+    "line": "Operational execution",
+    "kind": "EVIDENCE",
+    "score": 1.0,
+    "support": "Posting one. Sr Divisional Strategy Consultant, Governance. Large Health Insurer. Chicago, Illinois. Remote. Published r",
+    "section": "approved evidence",
+    "why": "excerpt of the approved captured evidence, not read aloud"
+   },
+   {
+    "line": "Runs a transformation office",
+    "kind": "SUMMARY",
+    "score": 0.67,
+    "support": "One role focused much more on running the work and reported to a Senior Director. Another led a transformation office an",
+    "section": "WHY TITLES CAN MISLEAD YOU",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "Two different industries.",
+    "kind": "SUMMARY",
+    "score": 0.67,
+    "support": "I compared Director roles across different industries. The word \u201cDirector\u201d appeared in several places. But the jobs were",
+    "section": "WHY TITLES CAN MISLEAD YOU",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_12_TITLE_TEST",
+  "anchor": "LOST",
+  "states": 4,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "Different authority.",
+   "Different context.",
+   "Different work.",
+   "Same broad level word."
+  ],
+  "labels": [
+   "A TITLE CAN HELP YOU FIND A POSTING",
+   "THE TITLE TEST"
+  ],
+  "lines": [
+   {
+    "line": "Different authority.",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "I compared Director roles across different industries. The word \u201cDirector\u201d appeared in several places. But the jobs were",
+    "section": "WHY TITLES CAN MISLEAD YOU",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "Different context.",
+    "kind": "EVIDENCE",
+    "score": 1.0,
+    "support": "Posting one. Sr Divisional Strategy Consultant, Governance. Large Health Insurer. Chicago, Illinois. Remote. Published r",
+    "section": "approved evidence",
+    "why": "excerpt of the approved captured evidence, not read aloud"
+   },
+   {
+    "line": "Different work.",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "Those four things help you answer three different questions: Could I do this work? Can I prove that I have done somethin",
+    "section": "THE FOUR THINGS I READ",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "Same broad level word.",
+    "kind": "SUMMARY",
+    "score": 0.75,
+    "support": "One role focused much more on running the work and reported to a Senior Director. Another led a transformation office an",
+    "section": "WHY TITLES CAN MISLEAD YOU",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_13_ACRONYM_WALL",
+  "anchor": "HELD",
+  "states": 2,
+  "treatment": "ARTIFACT",
+  "missing": [
+   "AI Company",
+   "FedRAMP.  ATO.  POAM.  3PAO.  STIG.",
+   "Palo Alto, California and Washington, DC"
+  ],
+  "labels": [
+   "CAPTURED SEPTEMBER 12, 2026",
+   "IN THE DESCRIPTION",
+   "LOCATION",
+   "POSTING FIVE"
+  ],
+  "lines": [
+   {
+    "line": "AI Company",
+    "kind": "EVIDENCE",
+    "score": 1.0,
+    "support": "Posting one. Sr Divisional Strategy Consultant, Governance. Large Health Insurer. Chicago, Illinois. Remote. Published r",
+    "section": "approved evidence",
+    "why": "excerpt of the approved captured evidence, not read aloud"
+   },
+   {
+    "line": "FedRAMP.  ATO.  POAM.  3PAO.  STIG.",
+    "kind": "EVIDENCE",
+    "score": 1.0,
+    "support": "Posting one. Sr Divisional Strategy Consultant, Governance. Large Health Insurer. Chicago, Illinois. Remote. Published r",
+    "section": "approved evidence",
+    "why": "figure reproduced from the approved captured evidence"
+   },
+   {
+    "line": "Palo Alto, California and Washington, DC",
+    "kind": "EVIDENCE",
+    "score": 1.0,
+    "support": "Posting one. Sr Divisional Strategy Consultant, Governance. Large Health Insurer. Chicago, Illinois. Remote. Published r",
+    "section": "approved evidence",
+    "why": "excerpt of the approved captured evidence, not read aloud"
+   }
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_14_AUTHORITY_POSTURES",
+  "anchor": "LOST",
+  "states": 5,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "Leadership",
+   "What the person was expected to do."
+  ],
+  "labels": [
+   "ADVISES",
+   "COORDINATES",
+   "LEADS",
+   "OPERATES AS",
+   "POSTING FIVE"
+  ],
+  "lines": [
+   {
+    "line": "Leadership",
+    "kind": "EVIDENCE",
+    "score": 1.0,
+    "support": "Posting one. Sr Divisional Strategy Consultant, Governance. Large Health Insurer. Chicago, Illinois. Remote. Published r",
+    "section": "approved evidence",
+    "why": "excerpt of the approved captured evidence, not read aloud"
+   },
+   {
+    "line": "What the person was expected to do.",
+    "kind": "EVIDENCE",
+    "score": 0.5,
+    "support": "First, ignore the title for a minute. Ask: What problem does this company need this person to solve?",
+    "section": "1 | PROBLEM",
+    "why": "supported by a passage the script does not read in full"
+   }
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_15_CEILING",
+  "anchor": "LOST",
+  "states": 2,
+  "treatment": "STATEMENT",
+  "missing": [
+   "Of the 15 postings read for this research. Not a claim about the marke",
+   "The range on this posting, revealed after the four postures."
+  ],
+  "labels": [
+   "HIGHEST PUBLISHED CEILING IN THE SAMPLE",
+   "POSTING FIVE",
+   "THE PUBLISHED RANGE"
+  ],
+  "lines": [
+   {
+    "line": "Of the 15 postings read for this research. Not a claim about the marke",
+    "kind": "OBSOLETE",
+    "score": 0.57,
+    "support": "I reviewed 15 job postings from 11 employers for this research. When I read a job description, I look for four things: P",
+    "section": "THE FOUR THINGS I READ",
+    "why": "quoted or numeric and neither the script nor the evidence supports it exactly"
+   },
+   {
+    "line": "The range on this posting, revealed after the four postures.",
+    "kind": "OBSOLETE",
+    "score": 0.33,
+    "support": "But when I read the actual posting, the bottom of the pay range was $61,500, and one of the requirements was being able ",
+    "section": "HOOK",
+    "why": "no passage in the reconciled script and no approved evidence supports it"
+   }
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_16_READ_THE_WORK",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [],
+  "labels": [
+   "RULE TWO"
+  ],
+  "lines": []
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_18_WHAT_IT_WILL_NOT_DO",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "What this method will not tell you."
+  ],
+  "labels": [
+   "THAT READING BETTER GUARANTEES A BETTER OUTCOME",
+   "THE BOUNDARY",
+   "WHETHER A MANAGER WOULD FLEX ON A REQUIREMENT",
+   "WHETHER BIAS WILL SHAPE THE DECISION",
+   "WHETHER THE AUTHORITY ON PAPER EXISTS IN PRACTICE",
+   "WHETHER THE TEAM CULTURE MATCHES THE POSTING"
+  ],
+  "lines": [
+   {
+    "line": "What this method will not tell you.",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "This method will not tell you who will get hired. It cannot tell you whether the authority on paper is the authority the",
+    "section": "WHAT THIS METHOD CANNOT TELL YOU",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_19_FOUR_THINGS",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "A cleaner read on four things."
+  ],
+  "labels": [
+   "WHAT MAY NOT",
+   "WHAT MAY TRAVEL",
+   "WHAT YOU CAN PROVE",
+   "WHAT YOU GET",
+   "WHAT YOU WOULD STILL NEED TO LEARN"
+  ],
+  "lines": [
+   {
+    "line": "A cleaner read on four things.",
+    "kind": "SUMMARY",
+    "score": 0.75,
+    "support": "I reviewed 15 postings from 11 employers, and in the next 10 minutes, I am going to show you the four things I would rea",
+    "section": "HOOK",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_FS_20_CTA",
+  "anchor": "HELD",
+  "states": 2,
+  "treatment": "CTA",
+  "missing": [
+   "Take one job description.",
+   "Then find the strongest verb in the posting."
+  ],
+  "labels": [
+   "ONE THING TO DO"
+  ],
+  "lines": [
+   {
+    "line": "Take one job description.",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "Take one job description you are actually thinking about. Write four lines: Problem. Authority. Proof. Real gap.",
+    "section": "USE IT ON A REAL JOB",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "Then find the strongest verb in the posting.",
+    "kind": "EVIDENCE",
+    "score": 0.5,
+    "support": "Then circle the strongest verbs in the posting. When you are done, ask: Could I do this work? Can I prove something clos",
+    "section": "USE IT ON A REAL JOB",
+    "why": "supported by a passage the script does not read in full"
+   }
+  ]
+ },
+ {
+  "video": 6,
+  "key": "NEW_V6_WATCH_NEXT",
+  "anchor": null,
+  "states": 1,
+  "treatment": "WATCH NEXT",
+  "missing": [],
+  "labels": [
+   "WATCH NEXT"
+  ],
+  "lines": []
+ },
+ {
+  "video": 7,
+  "key": "NEW_V7_FS_01_NOT_ALWAYS_WHO_WORKED_HARDER",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "The difference was not always who worked harder."
+  ],
+  "labels": [
+   "THE HOOK"
+  ],
+  "lines": [
+   {
+    "line": "The difference was not always who worked harder.",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "I have seen versions of that happen inside organizations, and the difference is not always who worked harder. Sometimes ",
+    "section": "HOOK",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 7,
+  "key": "NEW_V7_FS_02_TWO_QUESTIONS",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "COMPARISON",
+  "missing": [
+   "Who do I trust at this level?"
+  ],
+  "labels": [
+   "THEY ARE ASKING",
+   "THEY ARE NOT ONLY ASKING"
+  ],
+  "lines": [
+   {
+    "line": "Who do I trust at this level?",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "In that moment, people are not only asking: \u201cWho is good?\u201d They are also asking: \u201cWho do I trust with this level of work",
+    "section": "WHAT HAPPENS BEFORE THE TITLE",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 7,
+  "key": "NEW_V7_FS_03_USEFUL_NOT_PICTURED",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [],
+  "labels": [
+   "WHAT PEOPLE USUALLY DO"
+  ],
+  "lines": []
+ },
+ {
+  "video": 7,
+  "key": "NEW_V7_FS_04_FOUR_THINGS",
+  "anchor": "LOST",
+  "states": 5,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "Has this person already handled something that looks like part of the ",
+   "Is someone in the room able and willing to say, give them the shot?",
+   "When there was no clear answer, did they make a sound call?",
+   "Will they surface a problem early and tell the truth when the news is "
+  ],
+  "labels": [
+   "FOUR THINGS THAT TEND TO MATTER",
+   "NOT A GUARANTEED FORMULA. A WAY TO READ WHAT MAY BE HAPPENING."
+  ],
+  "lines": [
+   {
+    "line": "Has this person already handled something that looks like part of the ",
+    "kind": "SUMMARY",
+    "score": 0.86,
+    "support": "First, visible proof. Has this person already handled a problem that looks like part of the next role?",
+    "section": "FOUR THINGS I LOOK FOR",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "Is someone in the room able and willing to say, give them the shot?",
+    "kind": "SUMMARY",
+    "score": 0.62,
+    "support": "Fourth, sponsorship and access. Is there someone in the room who can say: \u201cI have seen them do this. Give them the chanc",
+    "section": "FOUR THINGS I LOOK FOR",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "When there was no clear answer, did they make a sound call?",
+    "kind": "SUMMARY",
+    "score": 0.67,
+    "support": "Second, judgment. When the answer was not clear, did they make a sound decision?",
+    "section": "FOUR THINGS I LOOK FOR",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "Will they surface a problem early and tell the truth when the news is ",
+    "kind": "SUMMARY",
+    "score": 0.83,
+    "support": "Third, trust. Do leaders believe this person will raise a problem early, tell the truth when the news is bad, and handle",
+    "section": "FOUR THINGS I LOOK FOR",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 7,
+  "key": "NEW_V7_FS_05_NOT_MERIT",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [],
+  "labels": [
+   "CAREERS DO NOT HAPPEN IN A VACUUM",
+   "SO I DO NOT WANT TO REDUCE THIS TO MERIT",
+   "WHO GETS ACCESS TO DEVELOPMENTAL WORK MATTERS"
+  ],
+  "lines": []
+ },
+ {
+  "video": 7,
+  "key": "NEW_V7_FS_06_EVIDENCE_FOR_WHICH_ROLE",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "The evidence people see may be evidence for the role you already have.",
+   "The problem is not that you have done nothing."
+  ],
+  "labels": [],
+  "lines": [
+   {
+    "line": "The evidence people see may be evidence for the role you already have.",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "I have seen versions of that happen inside organizations, and the difference is not always who worked harder. Sometimes ",
+    "section": "HOOK",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "The problem is not that you have done nothing.",
+    "kind": "OBSOLETE",
+    "score": 0.33,
+    "support": "And sometimes the difference has nothing to do with capability at all. Access matters. Sponsorship matters. Bias and pol",
+    "section": "HOOK",
+    "why": "no passage in the reconciled script and no approved evidence supports it"
+   }
+  ]
+ },
+ {
+  "video": 7,
+  "key": "NEW_V7_FS_07_ASK_WHAT_KIND",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "What problem will I own end to end?"
+  ],
+  "labels": [],
+  "lines": [
+   {
+    "line": "What problem will I own end to end?",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "What decisions will I get to make? What problem will I own from beginning to end? What level of stakeholder will I work ",
+    "section": "ASK FOR THE RIGHT KIND OF WORK",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 7,
+  "key": "NEW_V7_FS_08_CHANGES_THE_CONVERSATION",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "COMPARISON",
+  "missing": [],
+  "labels": [
+   "THAT CHANGES THE CONVERSATION"
+  ],
+  "lines": []
+ },
+ {
+  "video": 7,
+  "key": "NEW_V7_FS_09_THE_BOUNDARY",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [],
+  "labels": [
+   "A MANAGER WHO DOES NOT ADVOCATE",
+   "BUDGET AND HEADCOUNT LIMITS",
+   "YOU NEED TO KNOW THAT TOO"
+  ],
+  "lines": []
+ },
+ {
+  "video": 7,
+  "key": "NEW_V7_FS_10_SEPARATE_THREE_THINGS",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [],
+  "labels": [],
+  "lines": []
+ },
+ {
+  "video": 7,
+  "key": "NEW_V7_FS_11_READ_YOUR_OWN_SITUATION",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "What changed because of it?"
+  ],
+  "labels": [],
+  "lines": [
+   {
+    "line": "What changed because of it?",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "What problem was I trusted with? What decision was mine? Who saw me handle it? What changed because of my work?",
+    "section": "READ YOUR OWN SITUATION",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 7,
+  "key": "NEW_V7_FS_12_THE_MISSING_LINE",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "Now look for the missing line.",
+   "Strong proof nobody senior has seen. Trusted execution but not judgmen"
+  ],
+  "labels": [
+   "NOW LOOK"
+  ],
+  "lines": [
+   {
+    "line": "Now look for the missing line.",
+    "kind": "SUMMARY",
+    "score": 0.75,
+    "support": "Then look for what is missing. Maybe you have strong proof, but nobody senior has seen it. Maybe people trust your execu",
+    "section": "READ YOUR OWN SITUATION",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "Strong proof nobody senior has seen. Trusted execution but not judgmen",
+    "kind": "SUMMARY",
+    "score": 0.75,
+    "support": "Then look for what is missing. Maybe you have strong proof, but nobody senior has seen it. Maybe people trust your execu",
+    "section": "READ YOUR OWN SITUATION",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 7,
+  "key": "NEW_V7_FS_13_CTA",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "CTA",
+  "missing": [
+   "Sometimes the answer tells you what to build. Sometimes what to negoti"
+  ],
+  "labels": [
+   "ONE THING TO ASK"
+  ],
+  "lines": [
+   {
+    "line": "Sometimes the answer tells you what to build. Sometimes what to negoti",
+    "kind": "SUMMARY",
+    "score": 0.8,
+    "support": "Sometimes the answer tells you what to build. Sometimes it tells you what to ask for. And sometimes it tells you the nex",
+    "section": "CLOSE",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 7,
+  "key": "NEW_V7_WATCH_NEXT",
+  "anchor": null,
+  "states": 1,
+  "treatment": "WATCH NEXT",
+  "missing": [],
+  "labels": [
+   "WATCH NEXT"
+  ],
+  "lines": []
+ },
+ {
+  "video": 8,
+  "key": "NEW_V8_FS_01_MEMORY_NOT_PROOF",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "You just cannot prove it cleanly.",
+   "You remember that it mattered."
+  ],
+  "labels": [
+   "THE HOOK"
+  ],
+  "lines": [
+   {
+    "line": "You just cannot prove it cleanly.",
+    "kind": "OBSOLETE",
+    "score": 0.33,
+    "support": "Imagine tomorrow morning you try to log into your work account. You cannot.",
+    "section": "HOOK",
+    "why": "no passage in the reconciled script and no approved evidence supports it"
+   },
+   {
+    "line": "You remember that it mattered.",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "Now imagine that six months later an interviewer asks: What exactly changed because of your work? You remember doing goo",
+    "section": "HOOK",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 8,
+  "key": "NEW_V8_FS_02_FIVE_KINDS",
+  "anchor": "LOST",
+  "states": 6,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "How many people, teams, customers, locations or systems were involved",
+   "How you know the result was real"
+  ],
+  "labels": [
+   "FIVE KINDS OF EVIDENCE",
+   "THE MECHANISM"
+  ],
+  "lines": [
+   {
+    "line": "How many people, teams, customers, locations or systems were involved",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "When access ends, you can lose five useful details. The baseline. What was true before you started? The scope. How many ",
+    "section": "FIVE THINGS THAT CAN DISAPPEAR",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "How you know the result was real",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "And the method. How do you know the result was real? Those details turn a memory into something another person can under",
+    "section": "FIVE THINGS THAT CAN DISAPPEAR",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 8,
+  "key": "NEW_V8_FS_03_KEEP_THE_PROOF",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [],
+  "labels": [
+   "THE IMPORTANT BOUNDARY"
+  ],
+  "lines": []
+ },
+ {
+  "video": 8,
+  "key": "NEW_V8_FS_04_NOT_THE_ARTIFACT",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "COMPARISON",
+  "missing": [
+   "Keeping a lawful record of your own work.",
+   "Keeping the artifact."
+  ],
+  "labels": [],
+  "lines": [
+   {
+    "line": "Keeping a lawful record of your own work.",
+    "kind": "SUMMARY",
+    "score": 0.8,
+    "support": "Do not copy customer data. Do not take private reports, screenshots, source code, internal financial information, or any",
+    "section": "THE IMPORTANT BOUNDARY",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "Keeping the artifact.",
+    "kind": "EVIDENCE",
+    "score": 0.5,
+    "support": "I need to be very clear. Keeping proof does not mean taking company property. Do not send confidential documents to your",
+    "section": "THE IMPORTANT BOUNDARY",
+    "why": "supported by a passage the script does not read in full"
+   }
+  ]
+ },
+ {
+  "video": 8,
+  "key": "NEW_V8_FS_05_IN_YOUR_OWN_WORDS",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [],
+  "labels": [
+   "OWNED THE DECISION ON Y, BUT BUDGET APPROVAL REMAINED WITH Z",
+   "THE SHAPE OF THE EVIDENCE, NOT THE COMPANY'S FILES"
+  ],
+  "lines": []
+ },
+ {
+  "video": 8,
+  "key": "NEW_V8_FS_06_THE_DETAILS_BLUR",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "Was the result measured at 12 months or 18?"
+  ],
+  "labels": [],
+  "lines": [
+   {
+    "line": "Was the result measured at 12 months or 18?",
+    "kind": "QUOTE",
+    "score": 1.0,
+    "support": "Was the starting number 47 or 52? Was the result measured after 12 months or 18? Did you own the design or only the roll",
+    "section": "WHY MEMORY IS NOT ENOUGH",
+    "why": "quoted or numeric, and its passage still carries it"
+   }
+  ]
+ },
+ {
+  "video": 8,
+  "key": "NEW_V8_FS_07_TEN_MINUTE_HABIT",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "What evidence do I have?",
+   "What would I be allowed to say outside the company?"
+  ],
+  "labels": [
+   "ONCE A MONTH, TEN MINUTES"
+  ],
+  "lines": [
+   {
+    "line": "What evidence do I have?",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "That is why I think the worst time to reconstruct your career evidence is after you lose access to it. And no, I am not ",
+    "section": "HOOK",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "What would I be allowed to say outside the company?",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "What was hard? What proof do I have? What would I be allowed to say outside this company?",
+    "section": "THE 10-MINUTE HABIT",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 8,
+  "key": "NEW_V8_FS_08_CAREER_HYGIENE",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "Keep your evidence while you are still employed.",
+   "This is not only a layoff task. It is a career hygiene task."
+  ],
+  "labels": [
+   "WHEN THE EXIT IS SUDDEN"
+  ],
+  "lines": [
+   {
+    "line": "Keep your evidence while you are still employed.",
+    "kind": "EVIDENCE",
+    "score": 0.5,
+    "support": "That is why I think the worst time to reconstruct your career evidence is after you lose access to it. And no, I am not ",
+    "section": "HOOK",
+    "why": "supported by a passage the script does not read in full"
+   },
+   {
+    "line": "This is not only a layoff task. It is a career hygiene task.",
+    "kind": "EVIDENCE",
+    "score": 0.5,
+    "support": "That is why keeping career evidence is not only something to do when you think a layoff is coming. It is a normal career",
+    "section": "WHEN THE EXIT IS SUDDEN",
+    "why": "supported by a passage the script does not read in full"
+   }
+  ]
+ },
+ {
+  "video": 8,
+  "key": "NEW_V8_FS_09_STILL_NOT_ENOUGH",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "A future employer can still discount the experience, or require a cred"
+  ],
+  "labels": [],
+  "lines": [
+   {
+    "line": "A future employer can still discount the experience, or require a cred",
+    "kind": "EVIDENCE",
+    "score": 0.5,
+    "support": "Good evidence will not remove every hiring problem. A future employer may still want a credential you do not have. They ",
+    "section": "EVIDENCE DOES NOT SOLVE EVERYTHING",
+    "why": "supported by a passage the script does not read in full"
+   }
+  ]
+ },
+ {
+  "video": 8,
+  "key": "NEW_V8_FS_10_NOT_ONLY_A_METRIC",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [],
+  "labels": [
+   "WHAT THE ORGANIZATION DID DIFFERENTLY AFTERWARD",
+   "YOU CAN STILL RECORD"
+  ],
+  "lines": []
+ },
+ {
+  "video": 8,
+  "key": "NEW_V8_FS_11_A_FACTUAL_RECORD",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "COMPARISON",
+  "missing": [
+   "A factual record.",
+   "An award nomination every month."
+  ],
+  "labels": [
+   "WHY PEOPLE WAIT"
+  ],
+  "lines": [
+   {
+    "line": "A factual record.",
+    "kind": "EVIDENCE",
+    "score": 0.5,
+    "support": "Do not copy customer data. Do not take private reports, screenshots, source code, internal financial information, or any",
+    "section": "THE IMPORTANT BOUNDARY",
+    "why": "supported by a passage the script does not read in full"
+   },
+   {
+    "line": "An award nomination every month.",
+    "kind": "OBSOLETE",
+    "score": 0.25,
+    "support": "Think about a project that felt normal while you were doing it. You knew the numbers because you saw them every week. Yo",
+    "section": "WHY MEMORY IS NOT ENOUGH",
+    "why": "no passage in the reconciled script and no approved evidence supports it"
+   }
+  ]
+ },
+ {
+  "video": 8,
+  "key": "NEW_V8_FS_12_CTA",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "CTA",
+  "missing": [
+   "Once a month. Ten minutes. Before the login disappears."
+  ],
+  "labels": [
+   "ONE THING TO DO"
+  ],
+  "lines": [
+   {
+    "line": "Once a month. Ten minutes. Before the login disappears.",
+    "kind": "EVIDENCE",
+    "score": 0.57,
+    "support": "Once a month, take ten minutes and write down: What changed? What was mine?",
+    "section": "THE 10-MINUTE HABIT",
+    "why": "supported by a passage the script does not read in full"
+   }
+  ]
+ },
+ {
+  "video": 8,
+  "key": "NEW_V8_WATCH_NEXT",
+  "anchor": null,
+  "states": 1,
+  "treatment": "WATCH NEXT",
+  "missing": [],
+  "labels": [
+   "WATCH NEXT"
+  ],
+  "lines": []
+ },
+ {
+  "video": 9,
+  "key": "NEW_V9_FS_01_INCOMPLETE_QUESTION",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "Not wrong. Incomplete.",
+   "The question is incomplete."
+  ],
+  "labels": [
+   "THE HOOK"
+  ],
+  "lines": [
+   {
+    "line": "Not wrong. Incomplete.",
+    "kind": "EVIDENCE",
+    "score": 0.5,
+    "support": "The column that makes you feel least confident may be the most useful one: what must I relearn? A real gap is not proof ",
+    "section": "STORY LOOP",
+    "why": "supported by a passage the script does not read in full"
+   },
+   {
+    "line": "The question is incomplete.",
+    "kind": "EVIDENCE",
+    "score": 0.5,
+    "support": "The problem is that we spend so much time asking, What can I take with me? that we avoid the harder question: What am I ",
+    "section": "HOOK",
+    "why": "supported by a passage the script does not read in full"
+   }
+  ]
+ },
+ {
+  "video": 9,
+  "key": "NEW_V9_FS_02_WHY_THE_ADVICE_HELPS",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "Transferable skills advice stops experienced people from erasing thems"
+  ],
+  "labels": [
+   "THE DEFAULT"
+  ],
+  "lines": [
+   {
+    "line": "Transferable skills advice stops experienced people from erasing thems",
+    "kind": "SUMMARY",
+    "score": 0.75,
+    "support": "Transferable-skills advice can be helpful because it stops experienced people from acting like their old experience sudd",
+    "section": "WHY TRANSFERABLE-SKILLS ADVICE HELPS",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 9,
+  "key": "NEW_V9_FS_03_FOUR_QUESTIONS",
+  "anchor": "LOST",
+  "states": 5,
+  "treatment": "SEQUENCE",
+  "missing": [],
+  "labels": [],
+  "lines": []
+ },
+ {
+  "video": 9,
+  "key": "NEW_V9_FS_04_DEMONSTRATED_NOT_CLAIMED",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "COMPARISON",
+  "missing": [
+   "A generic list of soft skills.",
+   "Capability the next context can use.",
+   "The key word."
+  ],
+  "labels": [
+   "DEMONSTRATED",
+   "NOT CLAIMED"
+  ],
+  "lines": [
+   {
+    "line": "A generic list of soft skills.",
+    "kind": "SUMMARY",
+    "score": 0.75,
+    "support": "What travels is not just a list of soft skills. It is something you have already shown you can do, and the new place can",
+    "section": "1 | WHAT TRAVELS",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "Capability the next context can use.",
+    "kind": "OBSOLETE",
+    "score": 0.25,
+    "support": "And a new industry may still require regulation, credentials, technical knowledge, or context you genuinely do not have ",
+    "section": "HOOK",
+    "why": "no passage in the reconciled script and no approved evidence supports it"
+   },
+   {
+    "line": "The key word.",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "The key word is shown. Not just claimed.",
+    "section": "1 | WHAT TRAVELS",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 9,
+  "key": "NEW_V9_FS_05_TIED_TO_THE_OLD_CONTEXT",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "Tied to the old context."
+  ],
+  "labels": [
+   "COMPANY-SPECIFIC SYSTEMS",
+   "EXCELLENT WHERE YOU ARE. LESS LEGIBLE SOMEWHERE ELSE.",
+   "HOW THAT EMPLOYER REALLY GETS THINGS DONE",
+   "INFORMAL AUTHORITY",
+   "THE LANGUAGE EVERYONE UNDERSTOOD WITHOUT EXPLANATION"
+  ],
+  "lines": [
+   {
+    "line": "Tied to the old context.",
+    "kind": "OBSOLETE",
+    "score": 0.33,
+    "support": "And a new industry may still require regulation, credentials, technical knowledge, or context you genuinely do not have ",
+    "section": "HOOK",
+    "why": "no passage in the reconciled script and no approved evidence supports it"
+   }
+  ]
+ },
+ {
+  "video": 9,
+  "key": "NEW_V9_FS_06_WHAT_CAN_ANOTHER_PERSON_SEE",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "What was broken?"
+  ],
+  "labels": [],
+  "lines": [
+   {
+    "line": "What was broken?",
+    "kind": "OBSOLETE",
+    "score": 0.0,
+    "support": null,
+    "section": null,
+    "why": "no passage in the reconciled script and no approved evidence supports it"
+   }
+  ]
+ },
+ {
+  "video": 9,
+  "key": "NEW_V9_FS_07_WHAT_THE_NEW_CONTEXT_REQUIRES",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [],
+  "labels": [
+   "DOMAIN KNOWLEDGE",
+   "NOT INSULTS TO YOUR EXPERIENCE. PART OF THE MOVE."
+  ],
+  "lines": []
+ },
+ {
+  "video": 9,
+  "key": "NEW_V9_FS_08_SORTING",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [],
+  "labels": [
+   "AND SOME THINGS HAVE TO BE LEARNED AGAIN",
+   "SOME THINGS COME WITH YOU EXACTLY AS THEY ARE",
+   "SOME THINGS NEED TRANSLATING",
+   "SOME THINGS WERE USEFUL ONLY BECAUSE OF WHERE YOU WERE"
+  ],
+  "lines": []
+ },
+ {
+  "video": 9,
+  "key": "NEW_V9_FS_09_FOUR_COLUMNS",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "CTA",
+  "missing": [
+   "Do not try to make every line land in the first column. The goal is ac",
+   "Take one target role. Four columns."
+  ],
+  "labels": [
+   "ONE THING TO DO"
+  ],
+  "lines": [
+   {
+    "line": "Do not try to make every line land in the first column. The goal is ac",
+    "kind": "EVIDENCE",
+    "score": 0.44,
+    "support": "Do not try to force everything into the first column. The goal is not to prove that you are ready for everything. The go",
+    "section": "TRY THE FOUR-COLUMN TEST",
+    "why": "supported by a passage the script does not read in full"
+   },
+   {
+    "line": "Take one target role. Four columns.",
+    "kind": "SUMMARY",
+    "score": 0.67,
+    "support": "Take one job you are thinking about. Make four columns: TRAVELS. DOES NOT TRAVEL. PROOF. RELEARN.",
+    "section": "TRY THE FOUR-COLUMN TEST",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 9,
+  "key": "NEW_V9_FS_10_BOUNDARY",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "YOU MAKE A BETTER DECISION WHEN YOU KNOW WHAT YOU ARE ASKING AN EMPLOY"
+  ],
+  "labels": [
+   "A CREDENTIAL MAY BE NON-NEGOTIABLE",
+   "AN EMPLOYER MAY PREFER DIRECT EXPERIENCE",
+   "BIAS MAY AFFECT HOW ADJACENT EXPERIENCE IS READ",
+   "COMPENSATION MAY RESET",
+   "NONE OF THIS DISAPPEARS"
+  ],
+  "lines": [
+   {
+    "line": "YOU MAKE A BETTER DECISION WHEN YOU KNOW WHAT YOU ARE ASKING AN EMPLOY",
+    "kind": "OBSOLETE",
+    "score": 0.33,
+    "support": "The market may be crowded. None of that disappears because you can explain your experience well. The point is to know ex",
+    "section": "REAL LIMITS STILL MATTER",
+    "why": "no passage in the reconciled script and no approved evidence supports it"
+   }
+  ]
+ },
+ {
+  "video": 9,
+  "key": "NEW_V9_FS_11_FLUENCY_AND_PORTABILITY",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "The capability is still there. The shortcuts are not.",
+   "The longer you stay in one context, the easier it is to confuse fluenc"
+  ],
+  "labels": [
+   "WHY THIS IS HARDER FOR EXPERIENCED PEOPLE"
+  ],
+  "lines": [
+   {
+    "line": "The capability is still there. The shortcuts are not.",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "The capability may still be there. The shortcuts are not.",
+    "section": "WHY THIS CAN BE HARDER LATER IN YOUR CAREER",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "The longer you stay in one context, the easier it is to confuse fluenc",
+    "kind": "SUMMARY",
+    "score": 0.71,
+    "support": "The longer you stay in one place, the easier it is to confuse knowing the place with having something you can carry anyw",
+    "section": "WHY THIS CAN BE HARDER LATER IN YOUR CAREER",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 9,
+  "key": "NEW_V9_FS_12_THE_AUDIT_AGAIN",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "SEQUENCE",
+  "missing": [],
+  "labels": [
+   "NOT STARTING FROM ZERO. NOT CARRYING EVERYTHING WITHOUT CHECKING."
+  ],
+  "lines": []
+ },
+ {
+  "video": 9,
+  "key": "NEW_V9_WATCH_NEXT",
+  "anchor": null,
+  "states": 1,
+  "treatment": "WATCH NEXT",
+  "missing": [],
+  "labels": [
+   "WATCH NEXT"
+  ],
+  "lines": []
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_FS_01_READ_TEST_PROVE",
+  "anchor": "LOST",
+  "states": 4,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "Three things to figure out.",
+   "What can I begin to prove in this environment?",
+   "What do I need to learn about this context?"
+  ],
+  "labels": [],
+  "lines": [
+   {
+    "line": "Three things to figure out.",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "It is to figure out three things: What from my experience actually works here? What do I need to learn about this new co",
+    "section": "HOOK",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "What can I begin to prove in this environment?",
+    "kind": "SUMMARY",
+    "score": 0.67,
+    "support": "It is to figure out three things: What from my experience actually works here? What do I need to learn about this new co",
+    "section": "HOOK",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "What do I need to learn about this context?",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "It is to figure out three things: What from my experience actually works here? What do I need to learn about this new co",
+    "section": "HOOK",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_FS_02_EXPERIENCED_BUT_NEW",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [],
+  "labels": [
+   "TWO THINGS AT ONCE"
+  ],
+  "lines": []
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_FS_03_READ_FOUR_THINGS",
+  "anchor": "HELD",
+  "states": 5,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "Pay attention to four things."
+  ],
+  "labels": [],
+  "lines": [
+   {
+    "line": "Pay attention to four things.",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "During READ, pay attention to four things: What is this team actually responsible for? Where do the important decisions ",
+    "section": "1 | READ",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_FS_04_FORMAL_VS_REAL",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "COMPARISON",
+  "missing": [
+   "The formal job. The real one.",
+   "The role as it works",
+   "The role as written"
+  ],
+  "labels": [
+   "THE REAL JOB",
+   "TWO VERSIONS OF ONE JOB",
+   "WHAT IT CAN TELL YOU",
+   "WHAT THEY START SHOWING YOU"
+  ],
+  "lines": [
+   {
+    "line": "The formal job. The real one.",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "During READ, pay attention to four things: What is this team actually responsible for? Where do the important decisions ",
+    "section": "1 | READ",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "The role as it works",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "Then comes TEST. After a few weeks, you start discovering something interesting. Some of what made you good in the last ",
+    "section": "2 | TEST",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "The role as written",
+    "kind": "EVIDENCE",
+    "score": 0.5,
+    "support": "You finally got the job. Maybe it is a bigger role. Maybe you changed companies. Maybe you changed industries.",
+    "section": "HOOK",
+    "why": "supported by a passage the script does not read in full"
+   }
+  ]
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_FS_05_TWO_SENTENCES",
+  "anchor": "HELD",
+  "states": 2,
+  "treatment": "COMPARISON",
+  "missing": [
+   "One assumes. One asks.",
+   "\u201cAt my old company, we did it this way.\u201d"
+  ],
+  "labels": [
+   "TWO WAYS TO BRING EXPERIENCE IN"
+  ],
+  "lines": [
+   {
+    "line": "One assumes. One asks.",
+    "kind": "OBSOLETE",
+    "score": 0.33,
+    "support": "I do not think either one is the job of your first 90 days. Especially if you are experienced. Your first job is not to ",
+    "section": "HOOK",
+    "why": "no passage in the reconciled script and no approved evidence supports it"
+   },
+   {
+    "line": "\u201cAt my old company, we did it this way.\u201d",
+    "kind": "QUOTE",
+    "score": 1.0,
+    "support": "The first job is READ. Before you start deciding what is wrong, understand why this place works the way it does. Imagine",
+    "section": "1 | READ",
+    "why": "quoted or numeric, and its passage still carries it"
+   }
+  ]
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_FS_06_MANAGER_CONVERSATION",
+  "anchor": "HELD",
+  "states": 4,
+  "treatment": "QUESTIONS",
+  "missing": [
+   "Not \u201cHow am I doing?\u201d"
+  ],
+  "labels": [
+   "ASK YOUR MANAGER"
+  ],
+  "lines": [
+   {
+    "line": "Not \u201cHow am I doing?\u201d",
+    "kind": "QUOTE",
+    "score": 1.0,
+    "support": "Around this point, I would have a very simple conversation with your manager. Not, \u201cHow am I doing?\u201d That question is br",
+    "section": "THE CONVERSATION I WOULD HAVE",
+    "why": "quoted or numeric, and its passage still carries it"
+   }
+  ]
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_FS_07_THE_DAY_90_QUESTION",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [],
+  "labels": [
+   "THE QUESTION THAT CHANGES THE 90 DAYS"
+  ],
+  "lines": []
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_FS_08_PROVE_QUESTION",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [],
+  "labels": [
+   "INSTEAD OF A QUICK WIN"
+  ],
+  "lines": []
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_FS_09_PROOF_SENTENCES",
+  "anchor": "HELD",
+  "states": 4,
+  "treatment": "SEQUENCE",
+  "missing": [],
+  "labels": [
+   "WHAT PROOF SOUNDS LIKE"
+  ],
+  "lines": []
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_FS_10_THE_REVERSAL",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [],
+  "labels": [
+   "THE REVERSAL"
+  ],
+  "lines": []
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_FS_11_YOUR_EVIDENCE",
+  "anchor": "HELD",
+  "states": 4,
+  "treatment": "QUESTIONS",
+  "missing": [],
+  "labels": [],
+  "lines": []
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_FS_12_NOT_AUTOMATICALLY_LEAVE",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [],
+  "labels": [],
+  "lines": []
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_FS_13_THE_TOOL",
+  "anchor": "HELD",
+  "states": 5,
+  "treatment": "FRAMEWORK",
+  "missing": [],
+  "labels": [
+   "THE FIRST-90-DAYS READ"
+  ],
+  "lines": []
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_FS_14_THE_PLAN",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "ACTION",
+  "missing": [],
+  "labels": [],
+  "lines": []
+ },
+ {
+  "video": 10,
+  "key": "NEW_V10_WATCH_NEXT",
+  "anchor": null,
+  "states": 1,
+  "treatment": "WATCH NEXT",
+  "missing": [],
+  "labels": [
+   "WATCH NEXT"
+  ],
+  "lines": []
+ },
+ {
+  "video": 11,
+  "key": "NEW_V11_FS_01_FOUR_QUESTIONS",
+  "anchor": "HELD",
+  "states": 5,
+  "treatment": "SEQUENCE",
+  "missing": [
+   "For reading role drift."
+  ],
+  "labels": [],
+  "lines": [
+   {
+    "line": "For reading role drift.",
+    "kind": "SUMMARY",
+    "score": 0.67,
+    "support": "This matters because memory gets fuzzy once the new reality becomes normal. If you cannot name what you expected, every ",
+    "section": "1 | EXPECTED",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 11,
+  "key": "NEW_V11_FS_02_WRITE_IT_DOWN",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "Write down the parts that mattered."
+  ],
+  "labels": [
+   "NOT THE FANTASY VERSION OF THE ROLE."
+  ],
+  "lines": [
+   {
+    "line": "Write down the parts that mattered.",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "Write down the parts that mattered to your decision. Scope. Authority. Reporting line. Location. Travel. Compensation. T",
+    "section": "1 | EXPECTED",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 11,
+  "key": "NEW_V11_FS_03_EXPECTED_VS_ACTUAL",
+  "anchor": "HELD",
+  "states": 2,
+  "treatment": "COMPARISON",
+  "missing": [
+   "Better than the description suggested",
+   "Discover you can only recommend",
+   "Less than the role you accepted",
+   "More than expected",
+   "More than the description suggested",
+   "Sometimes better. Sometimes narrower."
+  ],
+  "labels": [
+   "EXPECTED AGAINST ACTUAL",
+   "LOOK FOR THE RECURRING PATTERN. DO NOT JUDGE IT FROM ONE BAD WEEK.",
+   "SOMETIMES BETTER",
+   "SOMETIMES NARROWER"
+  ],
+  "lines": [
+   {
+    "line": "Better than the description suggested",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "Sometimes the actual role is better than the one you expected. You may have more scope, more visibility, or a better man",
+    "section": "2 | ACTUAL",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "Discover you can only recommend",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "And sometimes the actual role is narrower. You were hired for strategy and spend most of your time coordinating. You exp",
+    "section": "2 | ACTUAL",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "Less than the role you accepted",
+    "kind": "SUMMARY",
+    "score": 0.67,
+    "support": "Imagine you expected a strategic role, but the first month is unusually operational because a launch is underway. That m",
+    "section": "3 | COST",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "More than expected",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "But there is a point where normal change becomes something you need to look at more closely. I use four questions for th",
+    "section": "HOOK",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "More than the description suggested",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "Sometimes the actual role is better than the one you expected. You may have more scope, more visibility, or a better man",
+    "section": "2 | ACTUAL",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "Sometimes better. Sometimes narrower.",
+    "kind": "SUMMARY",
+    "score": 0.67,
+    "support": "Sometimes the actual role is better than the one you expected. You may have more scope, more visibility, or a better man",
+    "section": "2 | ACTUAL",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 11,
+  "key": "NEW_V11_FS_04_THE_REAL_QUESTION",
+  "anchor": "LOST",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "Is the actual role still close enough to the role I agreed to build my",
+   "The question is not:"
+  ],
+  "labels": [],
+  "lines": [
+   {
+    "line": "Is the actual role still close enough to the role I agreed to build my",
+    "kind": "SUMMARY",
+    "score": 0.67,
+    "support": "The question is not, \u201cIs this exactly what was written?\u201d The better question is, \u201cIs the job I am doing still close enou",
+    "section": "2 | ACTUAL",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "The question is not:",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "The question is not, \u201cIs this exactly what was written?\u201d The better question is, \u201cIs the job I am doing still close enou",
+    "section": "2 | ACTUAL",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 11,
+  "key": "NEW_V11_FS_05_TEMPORARY_OR_NOT",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "COMPARISON",
+  "missing": [],
+  "labels": [
+   "READING",
+   "THE SAME MISMATCH, TWO READINGS",
+   "WHAT YOU ARE DOING",
+   "WHY"
+  ],
+  "lines": []
+ },
+ {
+  "video": 11,
+  "key": "NEW_V11_FS_06_FOUR_COST_LENSES",
+  "anchor": "HELD",
+  "states": 5,
+  "treatment": "FRAMEWORK",
+  "missing": [
+   "Did the practical cost change: travel, hours, location, caregiving, he"
+  ],
+  "labels": [
+   "THE FOUR COST LENSES"
+  ],
+  "lines": [
+   {
+    "line": "Did the practical cost change: travel, hours, location, caregiving, he",
+    "kind": "VERBATIM",
+    "score": 1.0,
+    "support": null,
+    "section": null,
+    "why": "still spoken word for word"
+   }
+  ]
+ },
+ {
+  "video": 11,
+  "key": "NEW_V11_FS_07_CLARIFICATION_SCRIPT",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [],
+  "labels": [
+   "THAT QUESTION GIVES THE OTHER PERSON ROOM TO EXPLAIN WHAT CHANGED.",
+   "WHAT TO SAY"
+  ],
+  "lines": []
+ },
+ {
+  "video": 11,
+  "key": "NEW_V11_FS_08_TWO_EXTREMES",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "COMPARISON",
+  "missing": [],
+  "labels": [
+   "WHAT NOT TO DO"
+  ],
+  "lines": []
+ },
+ {
+  "video": 11,
+  "key": "NEW_V11_FS_09_THE_ROLE_DRIFT_READ",
+  "anchor": "HELD",
+  "states": 5,
+  "treatment": "FRAMEWORK",
+  "missing": [],
+  "labels": [
+   "THE ROLE-DRIFT READ"
+  ],
+  "lines": []
+ },
+ {
+  "video": 11,
+  "key": "NEW_V11_FS_10_THE_BOUNDARY",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "Sometimes the right choice is to stay. Sometimes leaving is not practi"
+  ],
+  "labels": [
+   "THE BOUNDARY"
+  ],
+  "lines": [
+   {
+    "line": "Sometimes the right choice is to stay. Sometimes leaving is not practi",
+    "kind": "SUMMARY",
+    "score": 0.83,
+    "support": "This framework does not tell you whether to leave. Sometimes the right choice is to stay because the drift is temporary ",
+    "section": "THE BOUNDARY",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 11,
+  "key": "NEW_V11_FS_11_YOUR_CONSTRAINTS",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "STATEMENT",
+  "missing": [
+   "All of this shapes what is possible.",
+   "Compensation. Health. Caregiving.",
+   "Immigration. Geography. Timing.",
+   "The market, and financial runway."
+  ],
+  "labels": [],
+  "lines": [
+   {
+    "line": "All of this shapes what is possible.",
+    "kind": "SUMMARY",
+    "score": 0.67,
+    "support": "And sometimes the gap is large enough that you need to plan an exit. Your constraints are real. Compensation, health, ca",
+    "section": "THE BOUNDARY",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "Compensation. Health. Caregiving.",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "COMPENSATION. Has the scope changed enough that the pay, level, or agreement needs to be revisited? LIFE. Did the practi",
+    "section": "THE FOUR COST LENSES",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "Immigration. Geography. Timing.",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "And sometimes the gap is large enough that you need to plan an exit. Your constraints are real. Compensation, health, ca",
+    "section": "THE BOUNDARY",
+    "why": "faithful compression of a passage still in the script"
+   },
+   {
+    "line": "The market, and financial runway.",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "And sometimes the gap is large enough that you need to plan an exit. Your constraints are real. Compensation, health, ca",
+    "section": "THE BOUNDARY",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 11,
+  "key": "NEW_V11_FS_12_NAME_THE_DIFFERENCE",
+  "anchor": "HELD",
+  "states": 1,
+  "treatment": "ACTION",
+  "missing": [
+   "Name the difference."
+  ],
+  "labels": [],
+  "lines": [
+   {
+    "line": "Name the difference.",
+    "kind": "SUMMARY",
+    "score": 1.0,
+    "support": "The job description got you into the role. The first few months tell you what the role really is. If those two versions ",
+    "section": "CLOSE",
+    "why": "faithful compression of a passage still in the script"
+   }
+  ]
+ },
+ {
+  "video": 11,
+  "key": "NEW_V11_WATCH_NEXT",
+  "anchor": null,
+  "states": 1,
+  "treatment": "WATCH NEXT",
+  "missing": [],
+  "labels": [
+   "WATCH NEXT"
+  ],
+  "lines": []
+ }
+]

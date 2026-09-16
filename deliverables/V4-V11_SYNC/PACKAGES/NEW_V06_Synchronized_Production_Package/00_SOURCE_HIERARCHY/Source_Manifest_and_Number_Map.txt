@@ -1,0 +1,54 @@
+==============================================================================
+NEW PUBLIC V6  |  SOURCE MANIFEST AND NUMBER MAP
+==============================================================================
+
+Decode a Job Description in 10 Minutes
+Generated Wednesday, September 16, 2026 | 1:46 PM CT
+
+------------------------------------------------------------------------------
+
+NUMBER MAP
+
+  NEW PUBLIC NUMBER      V6
+  FORMER ROADMAP NUMBER  V22
+  TITLE                  Decode a Job Description in 10 Minutes
+  THUMBNAIL              IGNORE THE TITLE
+
+------------------------------------------------------------------------------
+
+ORDER OF AUTHORITY
+
+  1  Current approved spoken body, September 16 BEAST MODE
+  2  Approved natural-intro recovery reference, for the six
+     restored introductions only
+  3  Research and approved evidence, for factual claims
+  4  Current early-edit brief, for editing treatment
+  5  Current faith-inclusive description, for publishing copy
+  6  Older production assets, usable only where synchronized
+
+------------------------------------------------------------------------------
+
+SOURCES USED
+
+  Early-edit intake archive
+      sha256  021529cab2c761046242a83a743adf0c2f2777328179e064d6ec19b302e8ceb0
+  V06_Recording_Script.docx
+      sha256  a4523ada71bc8a8460f4ed835e3b5495a340f4d068824f663626f1bed7889339
+  V06_Thought_Block_Recording_Copy.docx
+      sha256  0bc667acbd5f33cf3400535d1758b02dfefaf4d42fb1c62462574843ae51b706
+  V06_Early_Curiosity_Outcome_Editing_Brief.docx
+      sha256  7ecbde66b65b1673568754c9ce122c0b5b57e97a62c2337c86772c0c684c803d
+  Approved natural-intro recovery reference
+      sha256  c4e5f2a478c7077377f14d950deb8607853c32fe52ed53815523ef7de61f188a
+
+------------------------------------------------------------------------------
+
+SOURCE RECONCILIATION
+
+  No personal introduction. That is intentional for this
+  video and none was invented.
+
+  Spoken words: 1,096. Counting method: whitespace-delimited
+  tokens of the spoken stream only, with section labels, block
+  labels, headers, recording direction and bracketed production
+  notes excluded before counting.

@@ -1,0 +1,54 @@
+==============================================================================
+NEW PUBLIC V8  |  SOURCE MANIFEST AND NUMBER MAP
+==============================================================================
+
+What Disappears When Your Work Access Ends
+Generated Wednesday, September 16, 2026 | 1:46 PM CT
+
+------------------------------------------------------------------------------
+
+NUMBER MAP
+
+  NEW PUBLIC NUMBER      V8
+  FORMER ROADMAP NUMBER  V28
+  TITLE                  What Disappears When Your Work Access Ends
+  THUMBNAIL              YOU CAN’T PROVE IT LATER
+
+------------------------------------------------------------------------------
+
+ORDER OF AUTHORITY
+
+  1  Current approved spoken body, September 16 BEAST MODE
+  2  Approved natural-intro recovery reference, for the six
+     restored introductions only
+  3  Research and approved evidence, for factual claims
+  4  Current early-edit brief, for editing treatment
+  5  Current faith-inclusive description, for publishing copy
+  6  Older production assets, usable only where synchronized
+
+------------------------------------------------------------------------------
+
+SOURCES USED
+
+  Early-edit intake archive
+      sha256  021529cab2c761046242a83a743adf0c2f2777328179e064d6ec19b302e8ceb0
+  V08_Recording_Script.docx
+      sha256  493c4abb31c2149a3c300d3ea4a0a6be0a666aee2e58853fdbba5e10822b4fbf
+  V08_Thought_Block_Recording_Copy.docx
+      sha256  2a9edb2be81052be3bfbbc43b9770018d885ce4069e3d0058cc6d969048630f3
+  V08_Early_Curiosity_Outcome_Editing_Brief.docx
+      sha256  3db6544befb7c6ebcda0cb36297ca6770c82f19b853ad926fe0be48177ec5b76
+  Approved natural-intro recovery reference
+      sha256  c4e5f2a478c7077377f14d950deb8607853c32fe52ed53815523ef7de61f188a
+
+------------------------------------------------------------------------------
+
+SOURCE RECONCILIATION
+
+  No personal introduction. That is intentional for this
+  video and none was invented.
+
+  Spoken words: 889. Counting method: whitespace-delimited
+  tokens of the spoken stream only, with section labels, block
+  labels, headers, recording direction and bracketed production
+  notes excluded before counting.

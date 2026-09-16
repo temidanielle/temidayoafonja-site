@@ -1,0 +1,10 @@
+==============================================================================
+NEW PUBLIC V10  |  OPEN ISSUES
+==============================================================================
+
+1. Watch Next destination: NEW PUBLIC V11. Not live until V11
+   publishes. Availability cannot be verified until it publishes.
+
+2. Final runtime, audio mix, footage review, SRT, chapters and
+   live-link availability are all deferred to the finished export and
+   are not claimed anywhere in this package.

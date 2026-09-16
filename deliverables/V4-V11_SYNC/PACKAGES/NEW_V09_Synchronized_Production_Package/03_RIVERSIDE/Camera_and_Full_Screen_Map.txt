@@ -1,0 +1,281 @@
+==============================================================================
+NEW PUBLIC V9  |  CAMERA AND FULL-SCREEN MAP
+==============================================================================
+
+Transferable Skills Advice Is Missing Something
+
+Camera is primary for recognition, lived
+interpretation, nuance, boundaries and consequential
+statements. Substantive teaching, frameworks, comparisons and
+meaningful B-roll are TRUE FULL SCREEN. The voice may continue
+under a full-screen image. Never keep Temidayo moving behind a
+teaching card.
+
+------------------------------------------------------------------------------
+
+SECTION 1  HOOK
+
+  PARA 1   MODE: CAMERA
+           I think some transferable-skills advice gives experienced...
+
+  PARA 2   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V9_FS_01_INCOMPLETE_QUESTION
+           STATES, IN REVEAL ORDER:
+               NEW_V9_FS_01_INCOMPLETE_QUESTION.png
+           EXACT TRIGGER:
+               The problem is that we spend so much time asking, What can
+               I take with me? that we avoid the harder question: What am
+               I leaving behind?
+
+  PARA 3   MODE: CAMERA
+           Your judgment may travel. Your relationships may not. Your...
+
+  PARA 4   MODE: CAMERA
+           And a new industry may still require regulation, credentia...
+
+  PARA 5   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V9_FS_03_FOUR_QUESTIONS
+           STATES, IN REVEAL ORDER:
+               NEW_V9_FS_03_FOUR_QUESTIONS.png
+               NEW_V9_FS_03A_WHAT_TRAVELS.png
+               NEW_V9_FS_03B_WHAT_DOES_NOT.png
+               NEW_V9_FS_03C_WHAT_CAN_I_PROVE.png
+               NEW_V9_FS_03D_WHAT_MUST_I_RELEARN.png
+           EXACT TRIGGER:
+               I would make four columns: What travels? What does not?
+               What can I prove? What must I relearn? Because changing
+               industries without starting over does not mean pretending
+               you have nothing left to learn.
+
+  PARA 5   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V9_FS_12_THE_AUDIT_AGAIN
+           STATES, IN REVEAL ORDER:
+               NEW_V9_FS_12_THE_AUDIT_AGAIN.png
+           EXACT TRIGGER:
+               I would make four columns: What travels? What does not?
+               What can I prove? What must I relearn? Because changing
+               industries without starting over does not mean pretending
+               you have nothing left to learn.
+
+SECTION 2  STORY LOOP
+
+  PARA 1   MODE: CAMERA
+           The column that makes you feel least confident may be the...
+
+SECTION 3  INTRODUCTION   [restored intro]
+
+  PARA 1   MODE: CAMERA
+           I’m Temidayo, and I’ve changed roles, functions, and indus...
+
+  PARA 2   MODE: CAMERA
+           That is one reason I am careful with the phrase “transfera...
+
+SECTION 4  WHY TRANSFERABLE-SKILLS ADVICE HELPS
+
+  PARA 1   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V9_FS_02_WHY_THE_ADVICE_HELPS
+           STATES, IN REVEAL ORDER:
+               NEW_V9_FS_02_WHY_THE_ADVICE_HELPS.png
+           EXACT TRIGGER:
+               Transferable-skills advice can be helpful because it stops
+               experienced people from acting like their old experience
+               suddenly means nothing. You do not change fields and
+               become a beginner at everything. You may carry judgment,
+               leadership, problem solving, pattern recognition, or ways
+               of working that still matter.
+
+  PARA 2   MODE: CAMERA
+           But if you stop there, you can also make the opposite mist...
+
+SECTION 5  THE FOUR QUESTIONS
+
+  PARA 1   MODE: CAMERA
+           I use four questions instead: What travels? What does not?
+
+  PARA 2   MODE: CAMERA
+           What can I prove? What must I relearn? That gives you a mo...
+
+SECTION 6  1 | WHAT TRAVELS
+
+  PARA 1   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V9_FS_04_DEMONSTRATED_NOT_CLAIMED
+           STATES, IN REVEAL ORDER:
+               NEW_V9_FS_04_DEMONSTRATED_NOT_CLAIMED.png
+           EXACT TRIGGER:
+               What travels is not just a list of soft skills. It is
+               something you have already shown you can do, and the new
+               place can actually use it.
+
+  PARA 2   MODE: CAMERA
+           Maybe you have handled unclear problems. Maybe you have bu...
+
+  PARA 3   MODE: CAMERA
+           The key word is shown. Not just claimed.
+
+SECTION 7  2 | WHAT DOES NOT
+
+  PARA 1   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V9_FS_05_TIED_TO_THE_OLD_CONTEXT
+           STATES, IN REVEAL ORDER:
+               NEW_V9_FS_05_TIED_TO_THE_OLD_CONTEXT.png
+           EXACT TRIGGER:
+               Then ask what belonged to the old place. Internal
+               relationships. Company systems. The language everyone
+               understood without explaining it.
+
+  PARA 2   MODE: CAMERA
+           Informal power. Knowing exactly who to call. Knowing how t...
+
+  PARA 3   MODE: CAMERA
+           Those things can make you excellent where you are. But the...
+
+SECTION 8  3 | WHAT CAN I PROVE
+
+  PARA 1   MODE: CAMERA
+           Next ask: What can another person actually see? If you say...
+
+  PARA 2   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V9_FS_06_WHAT_CAN_ANOTHER_PERSON_SEE
+           STATES, IN REVEAL ORDER:
+               NEW_V9_FS_06_WHAT_CAN_ANOTHER_PERSON_SEE.png
+           EXACT TRIGGER:
+               What was wrong before? What did you decide? What changed?
+               How do you know? Your experience becomes easier to carry
+               when another person can understand and judge the evidence.
+
+SECTION 9  4 | WHAT MUST I RELEARN
+
+  PARA 1   MODE: CAMERA
+           Then comes the part people sometimes want to skip. What do...
+
+  PARA 2   MODE: CAMERA
+           Regulation. Credentials. Industry knowledge. Customer know...
+
+  PARA 3   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V9_FS_07_WHAT_THE_NEW_CONTEXT_REQUIRES
+           STATES, IN REVEAL ORDER:
+               NEW_V9_FS_07_WHAT_THE_NEW_CONTEXT_REQUIRES.png
+           EXACT TRIGGER:
+               Technical depth. Local relationships. A different way of
+               operating.
+
+  PARA 4   MODE: CAMERA
+           Those gaps are not an insult to your experience. They are...
+
+SECTION 10  THINK OF IT LIKE SORTING
+
+  PARA 1   MODE: CAMERA
+           When I think about changing context, I do not picture a su...
+
+  PARA 2   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V9_FS_08_SORTING
+           STATES, IN REVEAL ORDER:
+               NEW_V9_FS_08_SORTING.png
+           EXACT TRIGGER:
+               Some things come with you almost as they are. Some things
+               need to be explained in a new way. Some things only worked
+               because of where you were. And some things have to be
+               learned.
+
+  PARA 3   MODE: CAMERA
+           That is why a transferable-skills list can be too simple....
+
+SECTION 11  TRY THE FOUR-COLUMN TEST
+
+  PARA 1   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V9_FS_09_FOUR_COLUMNS
+           STATES, IN REVEAL ORDER:
+               NEW_V9_FS_09_FOUR_COLUMNS.png
+           EXACT TRIGGER:
+               Take one job you are thinking about. Make four columns:
+               TRAVELS. DOES NOT TRAVEL. PROOF. RELEARN.
+
+  PARA 2   MODE: CAMERA
+           Do not try to force everything into the first column. The...
+
+  PARA 3   MODE: CAMERA
+           If the relearn column is large, that does not automaticall...
+
+SECTION 12  REAL LIMITS STILL MATTER
+
+  PARA 1   MODE: CAMERA
+           An employer may still prefer someone with direct experienc...
+
+  PARA 2   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V9_FS_10_BOUNDARY
+           STATES, IN REVEAL ORDER:
+               NEW_V9_FS_10_BOUNDARY.png
+           EXACT TRIGGER:
+               The market may be crowded. None of that disappears because
+               you can explain your experience well. The point is to know
+               exactly what you are asking the next employer to believe.
+
+SECTION 13  WHY THIS CAN BE HARDER LATER IN YOUR CAREER
+
+  PARA 1   MODE: CAMERA
+           The longer you stay in one place, the easier it is to conf...
+
+  PARA 2   MODE: CAMERA
+           That is real expertise. But some of that expertise belongs...
+
+  PARA 3   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V9_FS_11_FLUENCY_AND_PORTABILITY
+           STATES, IN REVEAL ORDER:
+               NEW_V9_FS_11_FLUENCY_AND_PORTABILITY.png
+           EXACT TRIGGER:
+               The capability may still be there. The shortcuts are not.
+
+SECTION 14  HOW TO TALK ABOUT THE GAP
+
+  PARA 1   MODE: CAMERA
+           If someone asks why your experience should count in a new...
+
+  PARA 2   MODE: CAMERA
+           Try something more honest: “The part of my experience that...
+
+  PARA 3   MODE: CAMERA
+           That makes the transfer clear. And it shows that you under...
+
+SECTION 15  TAKEAWAY VALUE
+
+  PARA 1   MODE: CAMERA
+           Choose one destination role and make the four columns. You...
+
+SECTION 16  STORY LOOP PAYOFF
+
+  PARA 1   MODE: CAMERA
+           The question was never simply, “Do my skills transfer?” Th...
+
+SECTION 17  CLOSE
+
+  PARA 1   MODE: CAMERA
+           So yes, ask what transfers. Just do not stop there.
+
+  PARA 2   MODE: CAMERA
+           Ask: What travels? What does not? What can I prove? What m...
+
+  PARA 3   MODE: CAMERA
+           That is how you change context without pretending you are...
+
+SECTION 18  CONFIDENCE / VIEWER OUTCOME
+
+  PARA 1   MODE: CAMERA
+           You do not have to choose between “I am starting over” and...
+
+SECTION 19  WATCH NEXT
+
+  PARA 1   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V9_WATCH_NEXT
+           STATES, IN REVEAL ORDER:
+               NEW_V9_WATCH_NEXT.png
+           EXACT TRIGGER:
+               And if you are trying to move into a different industry,
+               watch “Which Parts of Your Experience Actually Transfer to
+               Another Industry?” next.
+
+------------------------------------------------------------------------------
+
+WATCH NEXT
+
+  Full screen from the start of the spoken Watch Next passage.
+  It is the final frame. Never return to camera afterward.

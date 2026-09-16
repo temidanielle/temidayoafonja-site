@@ -1,0 +1,69 @@
+==============================================================================
+NEW PUBLIC V5  |  ASSET INDEX
+==============================================================================
+
+If Your Company Needs You but Won’t Grow You
+
+12 rendered states across 11 full-screen families.
+All 1920 x 1080. Navy #112345, cream #F5F1E8, gold #C9A84C,
+yellow #F2C44C.
+
+------------------------------------------------------------------------------
+
+NEW_V5_FS_01_NEEDED_NOT_GROWN
+   SECTION 1  HOOK   PARAGRAPH 2
+      1. NEW_V5_FS_01_NEEDED_NOT_GROWN.png
+
+NEW_V5_FS_05_INDISPENSABLE_AND_LESS_PORTABLE
+   SECTION 4  THE TRAP   PARAGRAPH 1
+      1. NEW_V5_FS_05_INDISPENSABLE_AND_LESS_PORTABLE.png
+
+NEW_V5_FS_02_NOT_ALIGNED
+   SECTION 4  THE TRAP   PARAGRAPH 2
+      1. NEW_V5_FS_02_NOT_ALIGNED.png
+
+NEW_V5_FS_03_WATCH_FOR_PATTERNS
+   SECTION 5  WHAT THIS CAN LOOK LIKE   PARAGRAPH 1
+      1. NEW_V5_FS_03_WATCH_FOR_PATTERNS.png
+
+NEW_V5_FS_04_THE_QUESTION
+   SECTION 6  THE QUESTION TO ASK   PARAGRAPH 1
+      1. NEW_V5_FS_04_THE_QUESTION.png
+
+NEW_V5_FS_06_ASK_FOR_DEVELOPMENT
+   SECTION 8  ASK FOR DEVELOPMENT, NOT ONLY MORE WORK   PARAGRAPH 1
+      1. NEW_V5_FS_06_ASK_FOR_DEVELOPMENT.png
+
+NEW_V5_FS_07_THE_ANSWER_MAY_BE_NO
+   SECTION 9  THE ANSWER MAY STILL BE NO   PARAGRAPH 1
+      1. NEW_V5_FS_07_THE_ANSWER_MAY_BE_NO.png
+
+NEW_V5_FS_08_DEPENDENCE_VS_DEVELOPMENT
+   SECTION 10  DEPENDENCE VERSUS DEVELOPMENT   PARAGRAPH 1
+      1. NEW_V5_FS_08_DEPENDENCE_VS_DEVELOPMENT.png
+
+NEW_V5_FS_09_REVIEW_POINT
+   SECTION 11  SET A REVIEW POINT   PARAGRAPH 2
+      1. NEW_V5_FS_09_REVIEW_POINT.png
+
+NEW_V5_FS_10_CTA
+   SECTION 15  CLOSE   PARAGRAPH 2
+      1. NEW_V5_FS_10_CTA.png
+
+NEW_V5_WATCH_NEXT
+   SECTION 17  WATCH NEXT   PARAGRAPH 1
+      1. NEW_V5_WATCH_NEXT.png
+
+------------------------------------------------------------------------------
+
+EDITABLE SOURCES
+
+   NEW_V5_FS_03_WATCH_FOR_PATTERNS.svg
+   NEW_V5_FS_06_ASK_FOR_DEVELOPMENT.svg
+   NEW_V5_FS_08_DEPENDENCE_VS_DEVELOPMENT.svg
+
+------------------------------------------------------------------------------
+
+PHONE-SIZE CONTACT SHEET
+
+   Phone_Size_Contact_Sheet.png

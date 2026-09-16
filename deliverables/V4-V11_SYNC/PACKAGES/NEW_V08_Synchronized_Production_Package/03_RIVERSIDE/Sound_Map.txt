@@ -1,0 +1,57 @@
+==============================================================================
+NEW PUBLIC V8  |  SOUND MAP
+==============================================================================
+
+What Disappears When Your Work Access Ends
+
+A stinger means a brief sound: a quiet click, a soft tap, paper
+movement or a restrained tonal accent. It is not a logo
+animation, a loud transition or a visual effect. A visual
+accent and a cutaway are separate choices.
+
+Audition every cue under the actual recorded voice. Keep speech
+clear. No alarms, no loud whooshes, no compulsory music bed, no
+accent on every bullet, and no second effect where one already
+carries the moment.
+
+------------------------------------------------------------------------------
+
+THE FIVE ACCENTS
+
+  S1
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          You cannot.
+      LOCATION: section 1, HOOK, paragraph 1
+      TREATMENT: TRUE FULL-SCREEN ILLUSTRATIVE LOGIN | S1: brief soun...
+
+  S2
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          you can lose five useful details.
+      LOCATION: section 4, FIVE THINGS THAT CAN DISAPPEAR, paragraph 1
+      TREATMENT: FIVE THINGS THAT CAN DISAPPEAR | S2
+
+  S3
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          Keeping proof does not mean taking company property.
+      LOCATION: section 5, THE IMPORTANT BOUNDARY, paragraph 1
+      TREATMENT: THE IMPORTANT BOUNDARY | S3
+
+  S4
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          Owned the decision on Y, but budget approval stayed with
+          Z.
+      LOCATION: section 6, WHAT TO WRITE DOWN, paragraph 2
+      TREATMENT: WHAT TO WRITE DOWN | S4
+
+  S5
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          That brings us back to the login screen.
+      LOCATION: section 13, STORY LOOP PAYOFF, paragraph 1
+      TREATMENT: STORY LOOP PAYOFF | S5
+
+------------------------------------------------------------------------------
+
+ONE QUIET SUBSCRIBE CUE
+
+  After value has landed. It is an edit cue, not a spoken ask,
+  and no spoken wording was added for it.

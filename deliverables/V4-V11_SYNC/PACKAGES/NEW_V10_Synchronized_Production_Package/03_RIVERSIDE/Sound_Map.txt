@@ -1,0 +1,58 @@
+==============================================================================
+NEW PUBLIC V10  |  SOUND MAP
+==============================================================================
+
+Your First 90 Days in a New Job: What Really Matters
+
+A stinger means a brief sound: a quiet click, a soft tap, paper
+movement or a restrained tonal accent. It is not a logo
+animation, a loud transition or a visual effect. A visual
+accent and a cutaway are separate choices.
+
+Audition every cue under the actual recorded voice. Keep speech
+clear. No alarms, no loud whooshes, no compulsory music bed, no
+accent on every bullet, and no second effect where one already
+carries the moment.
+
+------------------------------------------------------------------------------
+
+THE FIVE ACCENTS
+
+  S1
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          this pressure to prove they made the right decision.
+      LOCATION: section 1, HOOK, paragraph 2
+      TREATMENT: TRUE FULL-SCREEN QUESTION CARD | S1: brief sound sti...
+
+  S2
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          I think about that as READ. TEST. PROVE.
+      LOCATION: section 1, HOOK, paragraph 6
+      TREATMENT: HOOK | S2
+
+  S3
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          What would you want to trust me with by the end of my
+          first 90 days
+      LOCATION: section 7, THE CONVERSATION I WOULD HAVE, paragraph 3
+      TREATMENT: THE CONVERSATION I WOULD HAVE | S3
+
+  S4
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          They are not the only ones evaluating.
+      LOCATION: section 2, STORY LOOP, paragraph 1   (appears 2 times; this is the one the brief means)
+      TREATMENT: THE REVERSAL | THEY ARE NOT THE ONLY ONES EVALUATING...
+
+  S5
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          ROLE CHECK. What have these 90 days taught me about the
+          job itself?
+      LOCATION: section 11, THE FIRST-90-DAYS READ, paragraph 2
+      TREATMENT: THE FIRST-90-DAYS READ | S5
+
+------------------------------------------------------------------------------
+
+ONE QUIET SUBSCRIBE CUE
+
+  After value has landed. It is an edit cue, not a spoken ask,
+  and no spoken wording was added for it.

@@ -1,0 +1,235 @@
+==============================================================================
+NEW PUBLIC V4  |  CAMERA AND FULL-SCREEN MAP
+==============================================================================
+
+AI Took the Task. Who Gets the Experience?
+
+Camera is primary for recognition, lived
+interpretation, nuance, boundaries and consequential
+statements. Substantive teaching, frameworks, comparisons and
+meaningful B-roll are TRUE FULL SCREEN. The voice may continue
+under a full-screen image. Never keep Temidayo moving behind a
+teaching card.
+
+------------------------------------------------------------------------------
+
+SECTION 1  HOOK
+
+  PARA 1   MODE: CAMERA
+           AI can do in 30 seconds what used to take someone three ho...
+
+  PARA 2   MODE: CAMERA
+           That was where someone learned what a bad answer looked li...
+
+  PARA 3   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE
+           STATES, IN REVEAL ORDER:
+               NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE.png
+           EXACT TRIGGER:
+               So I think we are asking the wrong question about some of
+               this work. Not just: What can AI do now? But: If AI takes
+               the task, who gets the experience that used to come from
+               doing it? Because we still need experienced people later.
+               And somehow, they have to become experienced.
+
+SECTION 2  STORY LOOP
+
+  PARA 1   MODE: CAMERA
+           If the tool gets faster, what is the person still getting...
+
+SECTION 3  INTRODUCTION   [restored intro]
+
+  PARA 1   MODE: CAMERA
+           I’m Temidayo. I’ve spent much of my career looking at how...
+
+  PARA 2   MODE: CAMERA
+           That is why this AI question interests me. I am not only l...
+
+SECTION 4  THE PROBLEM
+
+  PARA 1   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V4_FS_02_INEFFICIENT_AND_DEVELOPMENTAL
+           STATES, IN REVEAL ORDER:
+               NEW_V4_FS_02_INEFFICIENT_AND_DEVELOPMENTAL.png
+           EXACT TRIGGER:
+               We talk a lot about which tasks AI can do. I think we also
+               need to talk about what people used to learn while doing
+               those tasks. A task can be boring and still teach you
+               something. Doing the same kind of work again and again
+               helps you notice patterns. Making mistakes helps you learn
+               what to watch for.
+
+  PARA 2   MODE: CAMERA
+           So yes, AI may help a company move faster. But the company...
+
+SECTION 5  THIS IS NOT AN ANTI-AI ARGUMENT
+
+  PARA 1   MODE: CAMERA
+           I am not saying we should keep pointless work just because...
+
+  PARA 2   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V4_FS_04_THE_REAL_QUESTION
+           STATES, IN REVEAL ORDER:
+               NEW_V4_FS_04_THE_REAL_QUESTION.png
+           EXACT TRIGGER:
+               My question is not, “Should AI do the task?” My question
+               is: “If AI does the task, what replaces the learning?”
+
+SECTION 6  THREE THINGS TO WATCH
+
+  PARA 1   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT
+           STATES, IN REVEAL ORDER:
+               NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT.png
+           EXACT TRIGGER:
+               I would watch three things. First, exposure. Does the
+               person still see enough examples to learn the pattern?
+
+  PARA 1   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V4_FS_05_THREE_THINGS
+           STATES, IN REVEAL ORDER:
+               NEW_V4_FS_05_THREE_THINGS.png
+               NEW_V4_FS_05A_EXPOSURE.png
+               NEW_V4_FS_05B_OWNERSHIP.png
+               NEW_V4_FS_05C_FEEDBACK.png
+           EXACT TRIGGER:
+               I would watch three things. First, exposure. Does the
+               person still see enough examples to learn the pattern?
+
+  PARA 2   MODE: CAMERA
+           Second, ownership. Do they still have to make a real choic...
+
+  PARA 3   MODE: CAMERA
+           Third, feedback. When the answer is wrong, do they underst...
+
+SECTION 7  A SIMPLE EXAMPLE
+
+  PARA 1   MODE: CAMERA
+           Think about a junior analyst who used to build a model fro...
+
+  PARA 2   MODE: CAMERA
+           Now imagine AI builds the first model. If the analyst stil...
+
+  PARA 3   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V4_FS_06_MOVED_OR_REMOVED
+           STATES, IN REVEAL ORDER:
+               NEW_V4_FS_06_MOVED_OR_REMOVED.png
+           EXACT TRIGGER:
+               But if the job becomes: run the tool, copy the answer,
+               send it upward, that is different. The person may become
+               faster without getting better at the judgment underneath
+               the task.
+
+SECTION 8  IF YOU MANAGE PEOPLE
+
+  PARA 1   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V4_FS_07_WHAT_DID_IT_TEACH
+           STATES, IN REVEAL ORDER:
+               NEW_V4_FS_07_WHAT_DID_IT_TEACH.png
+           EXACT TRIGGER:
+               If you manage people, do not only ask, “What can we
+               automate?” Also ask, “What did this task used to teach?”
+               Then decide where that learning will happen now.
+
+  PARA 2   MODE: CAMERA
+           Maybe the person reviews hard cases. Maybe they shadow som...
+
+SECTION 9  IF YOU USE AI IN YOUR OWN WORK
+
+  PARA 1   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V4_FS_08_STILL_PRACTICING
+           STATES, IN REVEAL ORDER:
+               NEW_V4_FS_08_STILL_PRACTICING.png
+           EXACT TRIGGER:
+               Ask yourself: What am I still practicing? What am I no
+               longer practicing? What decisions are still mine?
+
+  PARA 2   MODE: CAMERA
+           What mistakes am I still learning from? And can I explain...
+
+SECTION 10  WHAT THIS CANNOT TELL US
+
+  PARA 1   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V4_FS_09_NOT_ONE_OUTCOME
+           STATES, IN REVEAL ORDER:
+               NEW_V4_FS_09_NOT_ONE_OUTCOME.png
+           EXACT TRIGGER:
+               Different jobs will have different answers. In some jobs,
+               AI may help people learn faster. In regulated or high-risk
+               work, people may still need hands-on practice and human
+               review. In other jobs, some tasks may truly disappear.
+
+  PARA 2   MODE: CAMERA
+           I am not saying one outcome will happen everywhere. I am s...
+
+SECTION 11  WHY THIS MATTERS LATER
+
+  PARA 1   MODE: CAMERA
+           Senior judgment is built from hundreds of smaller decision...
+
+  PARA 2   MODE: CAMERA
+           That does not mean the future is doomed. It means the lear...
+
+SECTION 12  TRY THIS ON ONE TASK
+
+  PARA 1   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V4_FS_10_THREE_COLUMNS
+           STATES, IN REVEAL ORDER:
+               NEW_V4_FS_10_THREE_COLUMNS.png
+           EXACT TRIGGER:
+               Pick one task AI now helps you do. Make three columns:
+               BEFORE AI. WITH AI. STILL MINE.
+
+  PARA 2   MODE: CAMERA
+           Before AI, what did you have to notice, decide, or create...
+
+  PARA 3   MODE: CAMERA
+           Still mine, what judgment, checking, or responsibility is...
+
+SECTION 13  TAKEAWAY VALUE
+
+  PARA 1   MODE: CAMERA
+           You do not need to be afraid of AI to pay attention to wha...
+
+SECTION 14  STORY LOOP PAYOFF
+
+  PARA 1   MODE: CAMERA
+           So come back to the question from the beginning: if the to...
+
+SECTION 15  CLOSE
+
+  PARA 1   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V4_FS_11_TASK_IS_NOT_THE_JOB
+           STATES, IN REVEAL ORDER:
+               NEW_V4_FS_11_TASK_IS_NOT_THE_JOB.png
+           EXACT TRIGGER:
+               AI taking the task is not the same as AI taking the job.
+               But AI can take the part of the work where people used to
+               learn how to do the harder work later.
+
+  PARA 2   MODE: CAMERA
+           So do not only ask, “Who does the task now?” Ask: “Who get...
+
+SECTION 16  CONFIDENCE / VIEWER OUTCOME
+
+  PARA 1   MODE: CAMERA
+           The goal is not to hold on to every old task. It is to mak...
+
+SECTION 17  WATCH NEXT
+
+  PARA 1   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V4_WATCH_NEXT
+           STATES, IN REVEAL ORDER:
+               NEW_V4_WATCH_NEXT.png
+           EXACT TRIGGER:
+               And if AI is already doing more of your work, the next
+               question is what part of the result you can still honestly
+               claim. Watch “How to Prove Your Value When AI Does More of
+               the Task” next.
+
+------------------------------------------------------------------------------
+
+WATCH NEXT
+
+  Full screen from the start of the spoken Watch Next passage.
+  It is the final frame. Never return to camera afterward.

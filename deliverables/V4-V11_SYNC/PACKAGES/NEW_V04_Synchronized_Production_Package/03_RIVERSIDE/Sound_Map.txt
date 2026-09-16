@@ -1,0 +1,57 @@
+==============================================================================
+NEW PUBLIC V4  |  SOUND MAP
+==============================================================================
+
+AI Took the Task. Who Gets the Experience?
+
+A stinger means a brief sound: a quiet click, a soft tap, paper
+movement or a restrained tonal accent. It is not a logo
+animation, a loud transition or a visual effect. A visual
+accent and a cutaway are separate choices.
+
+Audition every cue under the actual recorded voice. Keep speech
+clear. No alarms, no loud whooshes, no compulsory music bed, no
+accent on every bullet, and no second effect where one already
+carries the moment.
+
+------------------------------------------------------------------------------
+
+THE FIVE ACCENTS
+
+  S1
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          But those three hours were not always wasted.
+      LOCATION: section 1, HOOK, paragraph 1
+      TREATMENT: TRUE FULL-SCREEN CUTAWAY | S1: brief sound stinger
+
+  S2
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          First, exposure.
+      LOCATION: section 5, THREE THINGS TO WATCH, paragraph 1
+      TREATMENT: THREE THINGS TO WATCH | S2
+
+  S3
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          the learning may have moved to a different part of the
+          work.
+      LOCATION: section 6, A SIMPLE EXAMPLE, paragraph 2
+      TREATMENT: A SIMPLE EXAMPLE | S3
+
+  S4
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          Pick one task AI now helps you do.
+      LOCATION: section 11, TRY THIS ON ONE TASK, paragraph 1
+      TREATMENT: TRY THIS ON ONE TASK | S4
+
+  S5
+      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+          what is the person still getting better at?
+      LOCATION: section 2, STORY LOOP, paragraph 1   (appears 2 times; this is the one the brief means)
+      TREATMENT: STORY LOOP PAYOFF | S5
+
+------------------------------------------------------------------------------
+
+ONE QUIET SUBSCRIBE CUE
+
+  After value has landed. It is an edit cue, not a spoken ask,
+  and no spoken wording was added for it.
