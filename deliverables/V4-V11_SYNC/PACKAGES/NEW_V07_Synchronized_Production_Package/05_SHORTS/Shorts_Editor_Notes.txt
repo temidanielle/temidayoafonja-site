@@ -14,7 +14,9 @@ SHARED RULES
   9:16. The same navy, cream and warm gold system as the video.
   Large type. One idea per card. Generous margins.
   Reuse the long-form card where one exists, reframed to 9:16.
-  Visual, text and audio hooks work together in the first beat.
+  Every candidate below names its own opening text, opening
+  shot, sound word and payoff frame. Follow those rather than
+  applying one house opening to all three.
   One ask at the end. Never two.
   No claim is added to strengthen a hook.
   Final captions and timecodes follow the final Short export,
@@ -23,13 +25,33 @@ SHARED RULES
 ------------------------------------------------------------------------------
 
 SHORT 1  |  The Bigger Role Is Not Always About Working Harder
-    LENGTH:  132 words, about 0:48 at 165 wpm, arithmetic
-    ONE ASK: Keep one question in mind: if a bigger role opened t...
+    LENGTH:   132 words, about 0:48 at 165 wpm, arithmetic
+    OPEN TEXT: Both dependable. Both experienced. Both working ha...
+    OPEN SHOT: camera, 9:16
+    SOUND:     one accent on “hard”
+    CUT TO:    NEW_V7_FS_01_NOT_ALWAYS_WHO_WORKED_HARDER
+               on: the difference is not always who worked harder
+    CUT TO:    NEW_V7_FS_05_NOT_MERIT
+               on: Access matters.
+    PAYOFF:    NEW_V7_FS_02_TWO_QUESTIONS, the last frame
+    ONE ASK:   Keep one question in mind: if a bigger role opened...
 
 SHORT 2  |  Ask for the Work That Proves the Next Level
-    LENGTH:  74 words, about 0:27 at 165 wpm, arithmetic
-    ONE ASK: That changes the question from: “Can I help more?” t...
+    LENGTH:   74 words, about 0:27 at 165 wpm, arithmetic
+    OPEN TEXT: Ask what kind of responsibility.
+    OPEN SHOT: camera, 9:16
+    SOUND:     one accent on “responsibility”
+    CUT TO:    NEW_V7_FS_07_ASK_WHAT_KIND
+               on: What decisions will I get to make?
+    PAYOFF:    NEW_V7_FS_08_CHANGES_THE_CONVERSATION, the last frame
+    ONE ASK:   That changes the question from: “Can I help more?”...
 
 SHORT 3  |  You Can Be Valuable and Still Hard to Picture Higher
-    LENGTH:  101 words, about 0:37 at 165 wpm, arithmetic
-    ONE ASK: Pick one kind of next-level work you want to be trus...
+    LENGTH:   101 words, about 0:37 at 165 wpm, arithmetic
+    OPEN TEXT: evidence for your current role, not the next one
+    OPEN SHOT: camera, 9:16
+    SOUND:     one accent on “every day”
+    CUT TO:    NEW_V7_FS_06_EVIDENCE_FOR_WHICH_ROLE
+               on: The problem may be that the evidence people se...
+    PAYOFF:    NEW_V7_FS_13_CTA, the last frame
+    ONE ASK:   Pick one kind of next-level work you want to be tr...

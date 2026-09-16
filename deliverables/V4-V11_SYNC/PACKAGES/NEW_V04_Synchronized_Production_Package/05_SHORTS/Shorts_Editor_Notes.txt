@@ -14,7 +14,9 @@ SHARED RULES
   9:16. The same navy, cream and warm gold system as the video.
   Large type. One idea per card. Generous margins.
   Reuse the long-form card where one exists, reframed to 9:16.
-  Visual, text and audio hooks work together in the first beat.
+  Every candidate below names its own opening text, opening
+  shot, sound word and payoff frame. Follow those rather than
+  applying one house opening to all three.
   One ask at the end. Never two.
   No claim is added to strengthen a hook.
   Final captions and timecodes follow the final Short export,
@@ -23,13 +25,31 @@ SHARED RULES
 ------------------------------------------------------------------------------
 
 SHORT 1  |  AI Took the Task. Who Gets the Experience?
-    LENGTH:  114 words, about 0:41 at 165 wpm, arithmetic
-    ONE ASK: So do not only ask, “Who does the task now?”
+    LENGTH:   114 words, about 0:41 at 165 wpm, arithmetic
+    OPEN TEXT: But those hours were not always wasted.
+    OPEN SHOT: camera, 9:16
+    SOUND:     one accent on “wasted”
+    CUT TO:    NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE
+               on: who gets the experience that used to come from...
+    PAYOFF:    NEW_V4_FS_04_THE_REAL_QUESTION, the last frame
+    ONE ASK:   So do not only ask, “Who does the task now?”
 
 SHORT 2  |  What Did This Task Used to Teach?
-    LENGTH:  61 words, about 0:22 at 165 wpm, arithmetic
-    ONE ASK: Then decide where that learning will happen now.
+    LENGTH:   61 words, about 0:22 at 165 wpm, arithmetic
+    OPEN TEXT: A task can be boring and still teach you something...
+    OPEN SHOT: NEW_V4_FS_02_INEFFICIENT_AND_DEVELOPMENTAL
+    SOUND:     one accent on “boring”
+    CUT TO:    NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT
+               on: helps you notice patterns
+    PAYOFF:    NEW_V4_FS_07_WHAT_DID_IT_TEACH, the last frame
+    ONE ASK:   Then decide where that learning will happen now.
 
 SHORT 3  |  Senior Judgment Has to Come From Somewhere
-    LENGTH:  104 words, about 0:38 at 165 wpm, arithmetic
-    ONE ASK: If the task used to teach something important, do no...
+    LENGTH:   104 words, about 0:38 at 165 wpm, arithmetic
+    OPEN TEXT: built from hundreds of smaller decisions
+    OPEN SHOT: camera, 9:16
+    SOUND:     one accent on “title”
+    CUT TO:    NEW_V4_FS_09_NOT_ONE_OUTCOME
+               on: That does not mean the future is doomed.
+    PAYOFF:    NEW_V4_FS_06_MOVED_OR_REMOVED, the last frame
+    ONE ASK:   If the task used to teach something important, do...

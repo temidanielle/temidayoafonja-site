@@ -14,7 +14,9 @@ SHARED RULES
   9:16. The same navy, cream and warm gold system as the video.
   Large type. One idea per card. Generous margins.
   Reuse the long-form card where one exists, reframed to 9:16.
-  Visual, text and audio hooks work together in the first beat.
+  Every candidate below names its own opening text, opening
+  shot, sound word and payoff frame. Follow those rather than
+  applying one house opening to all three.
   One ask at the end. Never two.
   No claim is added to strengthen a hook.
   Final captions and timecodes follow the final Short export,
@@ -23,16 +25,34 @@ SHARED RULES
 ------------------------------------------------------------------------------
 
 SHORT 1  |  Your Memory Stays. Your Dashboard Does Not.
-    LENGTH:  125 words, about 0:45 at 165 wpm, arithmetic
-    ONE ASK: Pick one project and write five things in your own w...
+    LENGTH:   125 words, about 0:45 at 165 wpm, arithmetic
+    OPEN TEXT: You cannot.
+    OPEN SHOT: camera, 9:16
+    SOUND:     one accent on “You cannot.”
+    CUT TO:    NEW_V8_FS_01_MEMORY_NOT_PROOF
+               on: You remember doing good work.
+    PAYOFF:    NEW_V8_FS_02_FIVE_KINDS, the last frame
+    ONE ASK:   Pick one project and write five things in your own...
 
 SHORT 2  |  Keep the Proof, Not the Property
-    LENGTH:  81 words, about 0:29 at 165 wpm, arithmetic
-    ONE ASK: Keep the proof.
+    LENGTH:   81 words, about 0:29 at 165 wpm, arithmetic
+    OPEN TEXT: Keep the proof.
+    OPEN SHOT: camera, 9:16
+    SOUND:     one accent on “property”
+    CUT TO:    NEW_V8_FS_04_NOT_THE_ARTIFACT
+               on: The goal is not to keep
+    PAYOFF:    NEW_V8_FS_03_KEEP_THE_PROOF, the last frame
+    ONE ASK:   Keep the proof.
 
 SHORT 3  |  The Worst Time to Rebuild Your Career Story
-    LENGTH:  83 words, about 0:30 at 165 wpm, arithmetic
-    ONE ASK: That last question matters. You want a version of th...
+    LENGTH:   83 words, about 0:30 at 165 wpm, arithmetic
+    OPEN TEXT: later is often when the details are hardest to rem...
+    OPEN SHOT: NEW_V8_FS_06_THE_DETAILS_BLUR
+    SOUND:     one accent on “later”
+    CUT TO:    NEW_V8_FS_07_TEN_MINUTE_HABIT
+               on: Once a month, take ten minutes
+    PAYOFF:    NEW_V8_FS_07_TEN_MINUTE_HABIT, the last frame
+    ONE ASK:   That last question matters. You want a version of...
 
 ------------------------------------------------------------------------------
 

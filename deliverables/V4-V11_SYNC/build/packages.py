@@ -612,9 +612,28 @@ def shorts_doc(n, path, st):
         sub(d, "One ask")
         for l in r["ask"]:
             para(d, l, size=11, bold=True, after=4)
+        o = SH.OPEN[(n, r["num"])]
+        sub(d, "Opening, specific to this Short")
+        table(d, ["", ""],
+              [["On-screen text", o["text"]],
+               ["Opening visual",
+                "Camera, 9:16" if o["visual"] == "CAMERA"
+                else "%s, reframed to 9:16" % o["visual"]],
+               ["Sound", "One accent, on \u201c%s\u201d" % o["audio"]]],
+              widths=[1.3, 5.4], size=8.5)
+        if o["mid"]:
+            sub(d, "Cut to")
+            table(d, ["On these words", "Card"],
+                  [[t, f] for t, f in o["mid"]], widths=[3.4, 3.3],
+                  size=8.5)
+        sub(d, "Payoff frame")
+        para(d, "%s, held on the ask. It is the last frame." % o["payoff"],
+             size=10.5)
         sub(d, "Stands alone")
         para(d, "Understandable without the long-form video. It is not a "
-                "trailer, and the ask is the only ask.", size=10.5)
+                "trailer, and the ask is the only ask. Every card named "
+                "above already exists in this video's 04_VISUAL_ASSETS "
+                "folder.", size=10.5)
     d.save(path)
     return path
 
@@ -627,16 +646,28 @@ def shorts_notes(n, path):
           "  9:16. The same navy, cream and warm gold system as the video.",
           "  Large type. One idea per card. Generous margins.",
           "  Reuse the long-form card where one exists, reframed to 9:16.",
-          "  Visual, text and audio hooks work together in the first beat.",
+          "  Every candidate below names its own opening text, opening",
+          "  shot, sound word and payoff frame. Follow those rather than",
+          "  applying one house opening to all three.",
           "  One ask at the end. Never two.",
           "  No claim is added to strengthen a hook.",
           "  Final captions and timecodes follow the final Short export,",
           "  not an estimated speech length.", "", hr(), ""]
     for r in SH.rows(n):
+        o = SH.OPEN[(n, r["num"])]
         L += ["SHORT %d  |  %s" % (r["num"], r["title"]),
-              "    LENGTH:  %d words, about 0:%02d at 165 wpm, arithmetic"
-              % (r["words"], r["secs"]),
-              "    ONE ASK: %s" % _clip(r["ask"][0], 52), ""]
+              "    LENGTH:   %d words, about %s at 165 wpm, arithmetic"
+              % (r["words"], r["clock"]),
+              "    OPEN TEXT: %s" % _clip(o["text"], 50),
+              "    OPEN SHOT: %s" % ("camera, 9:16"
+                                     if o["visual"] == "CAMERA"
+                                     else o["visual"]),
+              "    SOUND:     one accent on \u201c%s\u201d" % o["audio"]]
+        for t, f in o["mid"]:
+            L += ["    CUT TO:    %s" % f,
+                  "               on: %s" % _clip(t, 46)]
+        L += ["    PAYOFF:    %s, the last frame" % o["payoff"],
+              "    ONE ASK:   %s" % _clip(r["ask"][0], 50), ""]
     if n == 6:
         L += [hr(), "", "V6 BOUNDARY", "",
               "  Employer identities stay anonymous in every Short. The",
@@ -1168,8 +1199,8 @@ def one_short(n, r, path, st):
                 "Candidate Short from NEW PUBLIC V%d" % n)
     kv(d, "Parent video", LOCKED[n][0])
     kv(d, "Angle", r["title"])
-    kv(d, "Length", "%d words, about 0:%02d at 165 words per minute, "
-                    "arithmetic" % (r["words"], r["secs"]))
+    kv(d, "Length", "%d words, about %s at 165 words per minute, "
+                    "arithmetic" % (r["words"], r["clock"]))
     kv(d, "Generated", st)
     sub(d, "Stop scroll")
     for l in r["stop"]:
@@ -1180,10 +1211,23 @@ def one_short(n, r, path, st):
     sub(d, "One ask")
     for l in r["ask"]:
         para(d, l, size=11, bold=True, after=4)
+    o = SH.OPEN[(n, r["num"])]
+    sub(d, "Opening, specific to this Short")
+    table(d, ["", ""],
+          [["On-screen text", o["text"]],
+           ["Opening visual", "Camera, 9:16" if o["visual"] == "CAMERA"
+            else "%s, reframed to 9:16" % o["visual"]],
+           ["Sound", "One accent, on \u201c%s\u201d" % o["audio"]]]
+          + [["Cut to %s" % f, "on \u201c%s\u201d" % t]
+             for t, f in o["mid"]]
+          + [["Payoff frame", "%s, held on the ask" % o["payoff"]]],
+          widths=[1.6, 5.1], size=8.5)
     sub(d, "Every line above")
     para(d, "Verbatim from the reconciled master. No narration was "
             "invented and no sentences were joined into a claim the "
-            "script does not make.", size=10.5)
+            "script does not make. The list it teaches is complete, every "
+            "reference has its antecedent inside the Short, and the ask "
+            "is one action.", size=10.5)
     footer_note(d, "Vertical. Final captions and timecodes follow the "
                    "final Short export.")
     d.save(path)
@@ -1496,6 +1540,149 @@ def changelog(path, st, L):
     return path
 
 
+def concise_changelog(path, st):
+    d = base_doc()
+    title_block(d, EYEBROW, "What changed in this pass",
+                "The short version")
+    kv(d, "Generated", st)
+    kv(d, "Scope", "Corrections inside the existing authorization. No "
+                   "video was rewritten and the 110 card designs were not "
+                   "re-reviewed.")
+    callout(d, "The reconciled source, all six restored introductions, "
+               "thought-block parity, the packaging and the "
+               "faith-inclusive descriptions were re-verified and left "
+               "alone. Everything below is selection, placement and "
+               "record-keeping, plus the six opening cards the briefs "
+               "already called for.")
+    h(d, "Changed")
+    bullets(d, [
+      "Shorts. Thirteen of twenty-four candidates re-selected, from "
+      "approved source wording only, for incomplete lists, references "
+      "with no antecedent, asks that were conclusions and one ending "
+      "that announced a problem instead of delivering one. Each "
+      "candidate now carries its own opening text, opening shot, sound "
+      "word and payoff card.",
+      "V4 opening. The approved explicitly hypothetical replacement is "
+      "in the master. V4 is 1,036 spoken words. Two Riverside triggers "
+      "that quoted the old wording were re-pointed, and V4 Short 1 now "
+      "opens on the new sentence.",
+      "Early edit. All eight videos have one executable opening "
+      "sequence: mode, within-paragraph entry and exit words, asset "
+      "state, sound event and return point. Six opening families were "
+      "built so nothing is described without a file.",
+      "Cue locations. Two repeated triggers now resolve by narrative "
+      "purpose, not first match. Four cards were re-cued to the section "
+      "their own copy belongs to, three shared paragraphs were given "
+      "entry words and reveal order, and one redundant family was "
+      "retired. V8's end card owns its closing passage alone.",
+      "Sound. The scene entry and the exact accent word are separate "
+      "cues and are reported separately. All 19 stale section numbers "
+      "now agree with the reconciled script.",
+      "Records. The V5 portability rationale is corrected wherever it "
+      "appeared. States and contact sheets are counted separately. The "
+      "eight package checksum sidecars travel beside their ZIPs.",
+    ], size=10)
+    h(d, "Unchanged, and re-verified rather than rebuilt")
+    bullets(d, [
+      "Every spoken word outside V4's first hook paragraph.",
+      "All six approved introductions, once each, in place.",
+      "Thought-block parity: exact and in order, all eight videos.",
+      "The eight faith-inclusive descriptions, byte for byte.",
+      "V6 anonymity, the 15-posting 11-employer sample boundary, and "
+      "the separated private register.",
+      "All three spoken-framework repairs, the locked titles and "
+      "thumbnails, and the one-resource-at-most rule.",
+      "The V10 to V11 and V11 to public V5 Watch Next routes. No route "
+      "was substituted and no schedule is assumed.",
+    ], size=10)
+    h(d, "Verification run")
+    table(d, ["", "Result"],
+          [["Source reconciliation", "43 of 43"],
+           ["Per-package checks", "175 of 175 across the eight packages"],
+           ["Final verification, read off disk", "220 of 220"],
+           ["Shorts editorial audit",
+            "33 list and antecedent rules, plus trailer, stacked-ask, "
+            "opening and length checks, on all 24"],
+           ["Regression fixtures",
+            "The 14 delivered Shorts and the 8 shared paragraphs the "
+            "review named are replayed; every one now fails the new "
+            "checks, so none passes silently"]],
+          widths=[2.2, 4.5], size=8.5)
+    footer_note(d, "The full account is in the production changelog. "
+                   "Remaining release checks are in their own document "
+                   "because they need the finished export or a live "
+                   "check, not a decision.")
+    d.save(path)
+    return path
+
+
+def release_checks(path, st):
+    d = base_doc()
+    title_block(d, EYEBROW, "Remaining release checks",
+                "Separate from production readiness")
+    kv(d, "Generated", st)
+    callout(d, "Production readiness and release approval are not the "
+               "same thing. The synchronized handoff is complete and "
+               "locked. Nothing below has been performed, and nothing "
+               "below is claimed anywhere in these packages. Each one "
+               "needs the finished export or a live check.")
+    h(d, "Needs the finished export")
+    table(d, ["", "Why it cannot be done here"],
+          [["Final runtime",
+            "Every length in this handoff is arithmetic on words at 130 "
+            "to 145 words per minute. That is a planning estimate, not a "
+            "runtime."],
+           ["V6's ten-minute promise",
+            "V6 says in the next 10 minutes. 1,096 spoken words is "
+            "roughly 7.6 to 8.4 minutes of speech-only arithmetic, and "
+            "the finished cut will differ. Check the promise against the "
+            "export and adjust the line or the cut if it does not hold."],
+           ["Captions",
+            "Generate the SRT from the finished export and read it "
+            "against the cut. None exists here."],
+           ["Chapters",
+            "Build them from real export timings. No timecode in this "
+            "handoff is measured."],
+           ["Audio",
+            "Audition every accent under the recorded voice. Keep speech "
+            "clear. No cue here has been heard."],
+           ["Shorts lengths",
+            "Every Short is under sixty seconds by arithmetic at 165 "
+            "words per minute. Confirm on the exported vertical cut."]],
+          widths=[1.6, 5.1], size=8.5)
+    h(d, "Needs a live check at upload")
+    table(d, ["", "What to confirm"],
+          [["V10 Watch Next",
+            "Points to V11, which is not published. Confirm the exact "
+            "destination is live before upload. Flag it rather than "
+            "substituting another."],
+           ["V11 Watch Next",
+            "Points to public V5. Confirm the exact destination is live "
+            "before upload."],
+           ["Scheduling dependency",
+            "V10's destination cannot be live on V10's launch day unless "
+            "V11 is already up. That is a scheduling decision. No "
+            "simultaneous publication is approved or assumed here."],
+           ["Resource links",
+            "One resource per video at most, and V4 carries none. "
+            "Confirm each URL resolves before upload."]],
+          widths=[1.6, 5.1], size=8.5)
+    h(d, "Not performed, and not claimed anywhere")
+    bullets(d, [
+      "No recording, audio mix or footage review.",
+      "No retention, performance or outcome result.",
+      "No independent fact-check of existing claims beyond the V4 "
+      "opening, which was resolved by your approved replacement.",
+      "No visual audit of every page of every document. The eight new "
+      "opening cards were rendered and inspected; the retained cards "
+      "were re-rendered and measured, not re-designed.",
+    ], size=10)
+    footer_note(d, "Production readiness is locked. Release approval is "
+                   "yours, after these.")
+    d.save(path)
+    return path
+
+
 def decisions(path, st):
     d = base_doc()
     title_block(d, EYEBROW, "Decisions required",
@@ -1604,6 +1791,10 @@ def assemble(st, L, allchecks, files):
           shared, "V4-V11_REVISED_ASSET_LEDGER.docx"), st, L),
       changelog(os.path.join(
           shared, "V4-V11_PRODUCTION_CHANGELOG.docx"), st, L),
+      concise_changelog(os.path.join(
+          shared, "V4-V11_WHAT_CHANGED_THIS_PASS.docx"), st),
+      release_checks(os.path.join(
+          shared, "V4-V11_RELEASE_CHECKS_REMAINING.docx"), st),
       decisions(os.path.join(
           shared, "V4-V11_DECISIONS_REQUIRED.docx"), st),
     ]

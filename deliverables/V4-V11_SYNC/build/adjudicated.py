@@ -22,8 +22,8 @@ DECISIONS = {
   "Slow, repetitive, sometimes wrong."): (
     OBSOLETE, None,
     "No passage describes the old work this way any more. The reconciled "
-    "hook says the three hours were not always wasted and names mistakes "
-    "and patterns, not slowness."),
+    "hook says those hours were not always wasted and names mistakes and "
+    "patterns, not slowness."),
  (4, "NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT",
   "Why the eleventh one is different"): (
     OBSOLETE, None,

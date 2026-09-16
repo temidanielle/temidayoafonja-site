@@ -14,7 +14,9 @@ SHARED RULES
   9:16. The same navy, cream and warm gold system as the video.
   Large type. One idea per card. Generous margins.
   Reuse the long-form card where one exists, reframed to 9:16.
-  Visual, text and audio hooks work together in the first beat.
+  Every candidate below names its own opening text, opening
+  shot, sound word and payoff frame. Follow those rather than
+  applying one house opening to all three.
   One ask at the end. Never two.
   No claim is added to strengthen a hook.
   Final captions and timecodes follow the final Short export,
@@ -23,13 +25,31 @@ SHARED RULES
 ------------------------------------------------------------------------------
 
 SHORT 1  |  Transferable Skills Advice Is Incomplete
-    LENGTH:  95 words, about 0:35 at 165 wpm, arithmetic
-    ONE ASK: So I would not make a transferable-skills list.
+    LENGTH:   95 words, about 0:35 at 165 wpm, arithmetic
+    OPEN TEXT: What am I leaving behind?
+    OPEN SHOT: camera, 9:16
+    SOUND:     one accent on “false confidence”
+    CUT TO:    NEW_V9_FS_01_INCOMPLETE_QUESTION
+               on: Your judgment may travel.
+    PAYOFF:    NEW_V9_FS_03_FOUR_QUESTIONS, the last frame
+    ONE ASK:   So I would not make a transferable-skills list.
 
 SHORT 2  |  Not Everything Travels
-    LENGTH:  137 words, about 0:50 at 165 wpm, arithmetic
-    ONE ASK: If someone asks why your experience should count in...
+    LENGTH:   137 words, about 0:50 at 165 wpm, arithmetic
+    OPEN TEXT: not everything comes with you
+    OPEN SHOT: camera, 9:16
+    SOUND:     one accent on “zero”
+    CUT TO:    NEW_V9_FS_05_TIED_TO_THE_OLD_CONTEXT
+               on: Internal relationships.
+    PAYOFF:    NEW_V9_FS_06_WHAT_CAN_ANOTHER_PERSON_SEE, the last frame
+    ONE ASK:   If someone asks why your experience should count i...
 
 SHORT 3  |  The Longer You Stay, the Easier This Is to Miss
-    LENGTH:  102 words, about 0:37 at 165 wpm, arithmetic
-    ONE ASK: Take one job you are thinking about. Make four colum...
+    LENGTH:   102 words, about 0:37 at 165 wpm, arithmetic
+    OPEN TEXT: The shortcuts are not.
+    OPEN SHOT: camera, 9:16
+    SOUND:     one accent on “anywhere”
+    CUT TO:    NEW_V9_FS_11_FLUENCY_AND_PORTABILITY
+               on: That is real expertise.
+    PAYOFF:    NEW_V9_FS_09_FOUR_COLUMNS, the last frame
+    ONE ASK:   Take one job you are thinking about. Make four col...

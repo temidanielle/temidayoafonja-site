@@ -14,7 +14,9 @@ SHARED RULES
   9:16. The same navy, cream and warm gold system as the video.
   Large type. One idea per card. Generous margins.
   Reuse the long-form card where one exists, reframed to 9:16.
-  Visual, text and audio hooks work together in the first beat.
+  Every candidate below names its own opening text, opening
+  shot, sound word and payoff frame. Follow those rather than
+  applying one house opening to all three.
   One ask at the end. Never two.
   No claim is added to strengthen a hook.
   Final captions and timecodes follow the final Short export,
@@ -23,13 +25,31 @@ SHARED RULES
 ------------------------------------------------------------------------------
 
 SHORT 1  |  This Isn't the Job
-    LENGTH:  84 words, about 0:31 at 165 wpm, arithmetic
-    ONE ASK: I use four questions for that: EXPECTED. ACTUAL. COS...
+    LENGTH:   84 words, about 0:31 at 165 wpm, arithmetic
+    OPEN TEXT: This is not the job I thought I accepted.
+    OPEN SHOT: camera, 9:16
+    SOUND:     one accent on “accepted”
+    CUT TO:    NEW_V11_FS_05_TEMPORARY_OR_NOT
+               on: Roles change. Priorities move.
+    PAYOFF:    NEW_V11_FS_01_FOUR_QUESTIONS, the last frame
+    ONE ASK:   I use four questions for that: EXPECTED. ACTUAL. C...
 
 SHORT 2  |  Expected vs Actual
-    LENGTH:  154 words, about 0:56 at 165 wpm, arithmetic
-    ONE ASK: Write EXPECTED and ACTUAL side by side.
+    LENGTH:   154 words, about 0:56 at 165 wpm, arithmetic
+    OPEN TEXT: Start with EXPECTED.
+    OPEN SHOT: NEW_V11_FS_02_WRITE_IT_DOWN
+    SOUND:     one accent on “EXPECTED”
+    CUT TO:    NEW_V11_FS_03_EXPECTED_VS_ACTUAL
+               on: And sometimes the actual role is narrower.
+    PAYOFF:    NEW_V11_FS_04_THE_REAL_QUESTION, the last frame
+    ONE ASK:   Write EXPECTED and ACTUAL side by side.
 
 SHORT 3  |  What Is the Cost of Role Drift?
-    LENGTH:  143 words, about 0:52 at 165 wpm, arithmetic
-    ONE ASK: Name one real cost. Then choose one next action: cla...
+    LENGTH:   143 words, about 0:52 at 165 wpm, arithmetic
+    OPEN TEXT: What does the difference actually cost you?
+    OPEN SHOT: camera, 9:16
+    SOUND:     one accent on “cost”
+    CUT TO:    NEW_V11_FS_06_FOUR_COST_LENSES
+               on: I would look at four costs.
+    PAYOFF:    NEW_V11_FS_12_NAME_THE_DIFFERENCE, the last frame
+    ONE ASK:   Name one real cost. Then choose one next action: c...

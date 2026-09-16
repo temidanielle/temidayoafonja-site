@@ -14,7 +14,9 @@ SHARED RULES
   9:16. The same navy, cream and warm gold system as the video.
   Large type. One idea per card. Generous margins.
   Reuse the long-form card where one exists, reframed to 9:16.
-  Visual, text and audio hooks work together in the first beat.
+  Every candidate below names its own opening text, opening
+  shot, sound word and payoff frame. Follow those rather than
+  applying one house opening to all three.
   One ask at the end. Never two.
   No claim is added to strengthen a hook.
   Final captions and timecodes follow the final Short export,
@@ -23,13 +25,31 @@ SHARED RULES
 ------------------------------------------------------------------------------
 
 SHORT 1  |  Being Needed Is Not the Same as Growing
-    LENGTH:  119 words, about 0:43 at 165 wpm, arithmetic
-    ONE ASK: Are they asking for more of your capacity, or expand...
+    LENGTH:   119 words, about 0:43 at 165 wpm, arithmetic
+    OPEN TEXT: one of the reasons you stop growing
+    OPEN SHOT: camera, 9:16
+    SOUND:     one accent on “growing”
+    CUT TO:    NEW_V5_FS_01_NEEDED_NOT_GROWN
+               on: Something breaks, they call you.
+    CUT TO:    NEW_V5_FS_08_DEPENDENCE_VS_DEVELOPMENT
+               on: Dependence sounds like
+    PAYOFF:    NEW_V5_FS_08_DEPENDENCE_VS_DEVELOPMENT, the last frame
+    ONE ASK:   Are they asking for more of your capacity, or expa...
 
 SHORT 2  |  Useful Can Become a Career Trap
-    LENGTH:  68 words, about 0:25 at 165 wpm, arithmetic
-    ONE ASK: Ask: What is this company building in me beyond my a...
+    LENGTH:   68 words, about 0:25 at 165 wpm, arithmetic
+    OPEN TEXT: Being useful can feel like career security.
+    OPEN SHOT: camera, 9:16
+    SOUND:     one accent on “security”
+    CUT TO:    NEW_V5_FS_02_NOT_ALIGNED
+               on: That does not mean they are plotting against y...
+    PAYOFF:    NEW_V5_FS_04_THE_QUESTION, the last frame
+    ONE ASK:   Ask: What is this company building in me beyond my...
 
 SHORT 3  |  Set a Review Point for Extra Scope
-    LENGTH:  69 words, about 0:25 at 165 wpm, arithmetic
-    ONE ASK: Without a review point, temporary extra work can qui...
+    LENGTH:   69 words, about 0:25 at 165 wpm, arithmetic
+    OPEN TEXT: set a time to review it
+    OPEN SHOT: NEW_V5_FS_09_REVIEW_POINT
+    SOUND:     one accent on “90 days”
+    PAYOFF:    NEW_V5_FS_09_REVIEW_POINT, the last frame
+    ONE ASK:   Without a review point, temporary extra work can q...

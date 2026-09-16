@@ -14,7 +14,9 @@ SHARED RULES
   9:16. The same navy, cream and warm gold system as the video.
   Large type. One idea per card. Generous margins.
   Reuse the long-form card where one exists, reframed to 9:16.
-  Visual, text and audio hooks work together in the first beat.
+  Every candidate below names its own opening text, opening
+  shot, sound word and payoff frame. Follow those rather than
+  applying one house opening to all three.
   One ask at the end. Never two.
   No claim is added to strengthen a hook.
   Final captions and timecodes follow the final Short export,
@@ -23,13 +25,31 @@ SHARED RULES
 ------------------------------------------------------------------------------
 
 SHORT 1  |  Don't Spend Your First 90 Days Proving Yourself
-    LENGTH:  134 words, about 0:49 at 165 wpm, arithmetic
-    ONE ASK: It is to figure out three things: What from my exper...
+    LENGTH:   134 words, about 0:49 at 165 wpm, arithmetic
+    OPEN TEXT: pressure to prove they made the right decision
+    OPEN SHOT: camera, 9:16
+    SOUND:     one accent on “wrong thing”
+    CUT TO:    NEW_V10_FS_01_READ_TEST_PROVE
+               on: It is to figure out three things
+    PAYOFF:    NEW_V10_FS_01_READ_TEST_PROVE, the last frame
+    ONE ASK:   It is to figure out three things: What from my exp...
 
 SHORT 2  |  Experienced but New to the Context
-    LENGTH:  161 words, about 0:59 at 165 wpm, arithmetic
-    ONE ASK: That is why I would not spend the first 90 days tryi...
+    LENGTH:   161 words, about 0:59 at 165 wpm, arithmetic
+    OPEN TEXT: You can be experienced and still be new to the con...
+    OPEN SHOT: NEW_V10_FS_02_EXPERIENCED_BUT_NEW
+    SOUND:     one accent on “context”
+    CUT TO:    NEW_V10_FS_04_FORMAL_VS_REAL
+               on: which rule is a real rule
+    PAYOFF:    NEW_V10_FS_02_EXPERIENCED_BUT_NEW, the last frame
+    ONE ASK:   That is why I would not spend the first 90 days tr...
 
 SHORT 3  |  Ask Your Manager This by Day 90
-    LENGTH:  103 words, about 0:37 at 165 wpm, arithmetic
-    ONE ASK: And ask: “What would you want to trust me with by th...
+    LENGTH:   103 words, about 0:37 at 165 wpm, arithmetic
+    OPEN TEXT: Not, “How am I doing?”
+    OPEN SHOT: NEW_V10_FS_06_MANAGER_CONVERSATION
+    SOUND:     one accent on “manager”
+    CUT TO:    NEW_V10_FS_07_THE_DAY_90_QUESTION
+               on: What would you want to trust me with
+    PAYOFF:    NEW_V10_FS_07_THE_DAY_90_QUESTION, the last frame
+    ONE ASK:   And ask: “What would you want to trust me with by...

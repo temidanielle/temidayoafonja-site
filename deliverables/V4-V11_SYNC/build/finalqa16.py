@@ -212,6 +212,27 @@ ck("No sidecar is inside the archive it describes",
 ck("Every cue map, sound map and asset index agrees on placement",
    not Q.verify(), Q.verify() or "compared as delivered outputs, not "
                                  "assumed from a shared table")
+# Every shared document is scanned too, since the per-package scan cannot
+# see them. A sentence may quote the superseded wording only while saying
+# it was superseded.
+_SHARED = glob.glob(os.path.join(OUT, "SHARED", "*.docx"))
+# "three hours" is narrowed to the V4 opening's own phrasing: V6's script
+# legitimately requires at least three hours of overlap with East Africa
+# Time, and that sentence is not a superseded claim.
+_STALE = re.compile(r"no portability|portability language remains|"
+                    r"cannot disagree|proposed instructions|"
+                    r"30 seconds|those three hours|"
+                    r"take someone three hours", re.I)
+# A sentence that names the superseded claim in order to correct it is not
+# the claim. A sentence that simply asserts it is.
+_CORRECTED = re.compile(r"previously|old wording|claimed|was wrong|"
+                        r"is corrected|no longer|superseded|re-pointed",
+                        re.I)
+_shared_bad = [(os.path.basename(f), u[:60]) for f in _SHARED
+               for u in units(f)
+               if _STALE.search(u) and not _CORRECTED.search(u)]
+ck("No shared document repeats a superseded claim",
+   not _shared_bad, _shared_bad or "%d documents scanned" % len(_SHARED))
 ck("No report claims the maps cannot disagree",
    not [1 for n in R.VIDEOS
         for root, _, names in os.walk(os.path.join(OUT, "PACKAGES",

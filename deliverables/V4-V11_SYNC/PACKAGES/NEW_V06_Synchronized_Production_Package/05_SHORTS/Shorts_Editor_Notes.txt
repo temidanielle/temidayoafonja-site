@@ -14,7 +14,9 @@ SHARED RULES
   9:16. The same navy, cream and warm gold system as the video.
   Large type. One idea per card. Generous margins.
   Reuse the long-form card where one exists, reframed to 9:16.
-  Visual, text and audio hooks work together in the first beat.
+  Every candidate below names its own opening text, opening
+  shot, sound word and payoff frame. Follow those rather than
+  applying one house opening to all three.
   One ask at the end. Never two.
   No claim is added to strengthen a hook.
   Final captions and timecodes follow the final Short export,
@@ -23,16 +25,34 @@ SHARED RULES
 ------------------------------------------------------------------------------
 
 SHORT 1  |  Read the Verb Before You Trust the Title
-    LENGTH:  76 words, about 0:28 at 165 wpm, arithmetic
-    ONE ASK: But do not only ask, “Is this senior?” Ask, “What is...
+    LENGTH:   76 words, about 0:28 at 165 wpm, arithmetic
+    OPEN TEXT: not the same as setting the strategy
+    OPEN SHOT: camera, 9:16
+    SOUND:     one accent on “strategy”
+    CUT TO:    NEW_V6_FS_08_READ_THE_VERBS
+               on: look at the verbs
+    PAYOFF:    NEW_V6_FS_14_AUTHORITY_POSTURES, the last frame
+    ONE ASK:   But do not only ask, “Is this senior?” Ask, “What...
 
 SHORT 2  |  The $61,500 Strategy Title
-    LENGTH:  101 words, about 0:37 at 165 wpm, arithmetic
-    ONE ASK: And the first thing I would do is almost ignore the...
+    LENGTH:   101 words, about 0:37 at 165 wpm, arithmetic
+    OPEN TEXT: Senior Divisional Strategy Consultant, Governance.
+    OPEN SHOT: NEW_V6_FS_01_TITLE_ONLY
+    SOUND:     one accent on “Governance”
+    CUT TO:    NEW_V6_FS_02_THE_CONTRADICTION
+               on: the bottom of the pay range was $61,500
+    PAYOFF:    NEW_V6_FS_02_THE_CONTRADICTION, the last frame
+    ONE ASK:   And the first thing I would do is almost ignore th...
 
 SHORT 3  |  The Title That Tells You Almost Nothing
-    LENGTH:  80 words, about 0:29 at 165 wpm, arithmetic
-    ONE ASK: So if a title confuses you, do not automatically ski...
+    LENGTH:   80 words, about 0:29 at 165 wpm, arithmetic
+    OPEN TEXT: The title does not tell you much.
+    OPEN SHOT: NEW_V6_FS_13_ACRONYM_WALL
+    SOUND:     one accent on “Compliance”
+    CUT TO:    NEW_V6_FS_15_CEILING
+               on: the highest published pay ceiling
+    PAYOFF:    NEW_V6_FS_16_READ_THE_WORK, the last frame
+    ONE ASK:   So if a title confuses you, do not automatically s...
 
 ------------------------------------------------------------------------------
 
