@@ -54,20 +54,20 @@ NEW_V6_FS_04_THREE_QUESTIONS
             rust rule. Everything else quiet. Never two
             active at once.
 
-NEW_V6_FS_19_FOUR_THINGS
-  SECTION 3, PARAGRAPH 2
-  REVEAL ORDER:
-      1. NEW_V6_FS_19_FOUR_THINGS.png
-  EMPHASIS: active item in the warm yellow wash with the
-            rust rule. Everything else quiet. Never two
-            active at once.
-
 NEW_V6_FS_06_POSTING_WALKTHROUGH
   SECTION 4, PARAGRAPH 2
   REVEAL ORDER:
       1. NEW_V6_FS_06A_PROBLEM.png
       2. NEW_V6_FS_06B_AUTHORITY.png
       3. NEW_V6_FS_06C_PROOF.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
+NEW_V6_FS_08_READ_THE_VERBS
+  SECTION 5, PARAGRAPH 1
+  REVEAL ORDER:
+      1. NEW_V6_FS_08_READ_THE_VERBS.png
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
@@ -90,16 +90,8 @@ NEW_V6_FS_17_REAL_GAP
             rust rule. Everything else quiet. Never two
             active at once.
 
-NEW_V6_FS_08_READ_THE_VERBS
-  SECTION 8, PARAGRAPH 2
-  REVEAL ORDER:
-      1. NEW_V6_FS_08_READ_THE_VERBS.png
-  EMPHASIS: active item in the warm yellow wash with the
-            rust rule. Everything else quiet. Never two
-            active at once.
-
 NEW_V6_FS_10_DIRECTOR_COMPARE
-  SECTION 8, PARAGRAPH 2
+  SECTION 8, PARAGRAPH 2   (1 of 2 in this paragraph)
   REVEAL ORDER:
       1. NEW_V6_FS_10A_SAME_WORD.png
       2. NEW_V6_FS_10B_SCOPE.png
@@ -108,7 +100,7 @@ NEW_V6_FS_10_DIRECTOR_COMPARE
             active at once.
 
 NEW_V6_FS_12_TITLE_TEST
-  SECTION 8, PARAGRAPH 2
+  SECTION 8, PARAGRAPH 2   (2 of 2 in this paragraph)
   REVEAL ORDER:
       1. NEW_V6_FS_12A_SAME_WORD.png
       2. NEW_V6_FS_12B_DIFFERENT_WORK.png
@@ -128,7 +120,7 @@ NEW_V6_FS_13_ACRONYM_WALL
             active at once.
 
 NEW_V6_FS_14_AUTHORITY_POSTURES
-  SECTION 9, PARAGRAPH 2
+  SECTION 9, PARAGRAPH 2   (1 of 2 in this paragraph)
   REVEAL ORDER:
       1. NEW_V6_FS_14_AUTHORITY_POSTURES.png
       2. NEW_V6_FS_14A_LEADS.png
@@ -140,7 +132,7 @@ NEW_V6_FS_14_AUTHORITY_POSTURES
             active at once.
 
 NEW_V6_FS_15_CEILING
-  SECTION 9, PARAGRAPH 2
+  SECTION 9, PARAGRAPH 2   (2 of 2 in this paragraph)
   REVEAL ORDER:
       1. NEW_V6_FS_15A_RANGE.png
       2. NEW_V6_FS_15B_IN_THE_SAMPLE.png
@@ -169,6 +161,14 @@ NEW_V6_FS_20_CTA
   REVEAL ORDER:
       1. NEW_V6_FS_20A_WRITE_FOUR_LINES.png
       2. NEW_V6_FS_20B_STRONGEST_VERB.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
+NEW_V6_FS_19_FOUR_THINGS
+  SECTION 12, PARAGRAPH 1
+  REVEAL ORDER:
+      1. NEW_V6_FS_19_FOUR_THINGS.png
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.

@@ -11,6 +11,23 @@ Preserve meaningful pauses.
 
 ------------------------------------------------------------------------------
 
+NEW_V10_FS_00_THE_PRESSURE
+  SECTION 1, PARAGRAPH 2
+  REVEAL ORDER:
+      1. NEW_V10_FS_00_THE_PRESSURE.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
+NEW_V10_FS_00B_TWO_DEFAULTS
+  SECTION 1, PARAGRAPH 3
+  REVEAL ORDER:
+      1. NEW_V10_FS_00B_FIX_TOO_SOON.png
+      2. NEW_V10_FS_00C_STAY_TOO_QUIET.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
 NEW_V10_FS_01_READ_TEST_PROVE
   SECTION 1, PARAGRAPH 5
   REVEAL ORDER:
@@ -39,7 +56,7 @@ NEW_V10_FS_02_EXPERIENCED_BUT_NEW
             active at once.
 
 NEW_V10_FS_03_READ_FOUR_THINGS
-  SECTION 5, PARAGRAPH 4
+  SECTION 5, PARAGRAPH 4   (1 of 2 in this paragraph)
   REVEAL ORDER:
       1. NEW_V10_FS_03_ESTABLISH.png
       2. NEW_V10_FS_03A_RESPONSIBLE.png
@@ -51,7 +68,7 @@ NEW_V10_FS_03_READ_FOUR_THINGS
             active at once.
 
 NEW_V10_FS_04_FORMAL_VS_REAL
-  SECTION 5, PARAGRAPH 4
+  SECTION 5, PARAGRAPH 4   (2 of 2 in this paragraph)
   REVEAL ORDER:
       1. NEW_V10_FS_04_FORMAL_VS_REAL.png
   EMPHASIS: active item in the warm yellow wash with the

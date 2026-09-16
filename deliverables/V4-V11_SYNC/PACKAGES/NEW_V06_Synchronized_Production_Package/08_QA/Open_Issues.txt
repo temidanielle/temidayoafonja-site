@@ -2,10 +2,17 @@
 NEW PUBLIC V6  |  OPEN ISSUES
 ==============================================================================
 
-1. The ten-minute title promise has to pass the finished export. The
+1. NEW_V6_FS_19_FOUR_THINGS is re-cued to TAKEAWAY VALUE, where its
+   WHAT YOU GET framing belongs. Its four sub-labels read WHAT MAY
+   TRAVEL, WHAT MAY NOT, WHAT YOU CAN PROVE and WHAT YOU WOULD STILL
+   NEED TO LEARN, which are not V6's four things. The card was not
+   redesigned in this pass. Decide whether to re-label it to PROBLEM,
+   AUTHORITY, PROOF, REAL GAP or to drop the sub-labels.
+
+2. The ten-minute title promise has to pass the finished export. The
    reconciled script is 1,096 spoken words, roughly 7.6 to 8.4
    minutes of speech-only arithmetic. That is not a timed export.
 
-2. Final runtime, audio mix, footage review, SRT, chapters and
+3. Final runtime, audio mix, footage review, SRT, chapters and
    live-link availability are all deferred to the finished export and
    are not claimed anywhere in this package.

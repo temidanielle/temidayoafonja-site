@@ -15,19 +15,29 @@ teaching card.
 
 SECTION 1  HOOK
 
-  PARA 1   MODE: CAMERA
-           Your company can need you so much that it becomes one of t...
+  PARA 1   MODE: CAMERA   (early edit, step 1)
+           ON-SCREEN TEXT: NEEDED. STILL STUCK?
+           ENTER ON: Your company can need you so much that it beco...
+           LEAVE ON: But think about what happens to the pers...  (paragraph 1)
+           SOUND: none
+           RETURN: stays on camera
 
-  PARA 2   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN   (early edit, step 2)
+           ON-SCREEN TEXT: FIX IT / COVER IT / TRAIN THEM
+           ENTER ON: Something breaks, they call you.
+           LEAVE ON: A new person joins, you train them.  (paragraph 2)
            ASSET FAMILY: NEW_V5_FS_01_NEEDED_NOT_GROWN
            STATES, IN REVEAL ORDER:
                NEW_V5_FS_01_NEEDED_NOT_GROWN.png
-           EXACT TRIGGER:
-               Something breaks, they call you. Someone leaves, you
-               absorb the work. A new person joins, you train them.
+           SOUND: S1, one soft notification click on the first request only
+           RETURN: camera returns on 'Then a bigger opportunity opens'
 
-  PARA 3   MODE: CAMERA
-           Then a bigger opportunity opens. And they choose someone e...
+  PARA 3   MODE: CAMERA   (early edit, step 3)
+           ON-SCREEN TEXT: SOMEONE ELSE
+           ENTER ON: And they choose someone else.
+           LEAVE ON: And they choose someone else.  (paragraph 3)
+           SOUND: none
+           RETURN: stays on camera
 
   PARA 4   MODE: CAMERA
            You are sitting there thinking: How can I be valuable enou...

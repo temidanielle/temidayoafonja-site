@@ -15,29 +15,53 @@ teaching card.
 
 SECTION 1  HOOK
 
-  PARA 1   MODE: CAMERA
-           You finally got the job. Maybe it is a bigger role. Maybe...
+  PARA 1   MODE: CAMERA   (early edit, step 1)
+           ON-SCREEN TEXT: FIRST 90 DAYS
+           ENTER ON: You finally got the job.
+           LEAVE ON: Maybe you changed industries.  (paragraph 1)
+           SOUND: none
+           RETURN: stays on camera
 
-  PARA 2   MODE: CAMERA
-           And now you feel this pressure to prove they made the righ...
+  PARA 2   MODE: FULL SCREEN   (early edit, step 2)
+           ON-SCREEN TEXT: PROVE THEY CHOSE WELL?
+           ENTER ON: And now you feel this pressure to prove they m...
+           LEAVE ON: That pressure can make you do exactly th...  (paragraph 2)
+           ASSET FAMILY: NEW_V10_FS_00_THE_PRESSURE
+           STATES, IN REVEAL ORDER:
+               NEW_V10_FS_00_THE_PRESSURE.png
+           SOUND: S1, one subtle click
+           RETURN: camera returns before the next paragraph
 
-  PARA 3   MODE: CAMERA
-           You start talking too much about what worked at your last...
+  PARA 3   MODE: FULL SCREEN   (early edit, step 3)
+           ON-SCREEN TEXT: FIX TOO SOON / STAY TOO QUIET
+           ENTER ON: You start trying to fix things before you unde...
+           LEAVE ON: You stay quiet because you are afraid of...  (paragraph 3)
+           ASSET FAMILY: NEW_V10_FS_00B_TWO_DEFAULTS
+           STATES, IN REVEAL ORDER:
+               NEW_V10_FS_00B_FIX_TOO_SOON.png
+               NEW_V10_FS_00C_STAY_TOO_QUIET.png
+           SOUND: none
+           RETURN: camera returns on 'I do not think either one is the job of your first 90 days'
 
-  PARA 4   MODE: CAMERA
-           I do not think either one is the job of your first 90 days...
+  PARA 4   MODE: CAMERA   (early edit, step 4)
+           ON-SCREEN TEXT: CONTRIBUTE WHILE LEARNING THE CONTEXT
+           ENTER ON: I do not think either one is the job of your f...
+           LEAVE ON: Your first job is not to prove that ever...  (paragraph 4)
+           SOUND: none
+           RETURN: stays on camera
 
-  PARA 5   MODE: FULL SCREEN
+  PARA 5   MODE: FULL SCREEN   (early edit, step 5)
+           ON-SCREEN TEXT: READ / TEST / PROVE
+           ENTER ON: It is to figure out three things
+           LEAVE ON: And what can I begin to prove here?  (paragraph 5)
            ASSET FAMILY: NEW_V10_FS_01_READ_TEST_PROVE
            STATES, IN REVEAL ORDER:
                NEW_V10_FS_01A_ESTABLISH.png
                NEW_V10_FS_01B_READ.png
                NEW_V10_FS_01C_TEST.png
                NEW_V10_FS_01D_PROVE.png
-           EXACT TRIGGER:
-               It is to figure out three things: What from my experience
-               actually works here? What do I need to learn about this
-               new context? And what can I begin to prove here?
+           SOUND: none
+           RETURN: camera returns on 'I think about that as READ. TEST. PROVE.'
 
   PARA 6   MODE: CAMERA
            I think about that as READ. TEST. PROVE. And before the 90...
@@ -96,7 +120,7 @@ SECTION 5  1 | READ
   PARA 3   MODE: CAMERA
            You do not know yet. That is where experience can get you...
 
-  PARA 4   MODE: FULL SCREEN
+  PARA 4   MODE: FULL SCREEN   (1 of 2 in this paragraph)
            ASSET FAMILY: NEW_V10_FS_03_READ_FOUR_THINGS
            STATES, IN REVEAL ORDER:
                NEW_V10_FS_03_ESTABLISH.png
@@ -104,25 +128,18 @@ SECTION 5  1 | READ
                NEW_V10_FS_03B_DECISIONS.png
                NEW_V10_FS_03C_SUCCESS.png
                NEW_V10_FS_03D_UNWRITTEN.png
-           EXACT TRIGGER:
-               During READ, pay attention to four things: What is this
-               team actually responsible for? Where do the important
-               decisions sit? What does success mean here? And what do
-               people around me know that was never written in the job
-               description? A job description can tell you the formal
-               job. The first few weeks start showing you the real one.
+           ENTER ON: During READ, pay attention to four things
+           LEAVE ON: what do people around me know that was never w...
+           The camera does not return here. The next card in this
+           paragraph takes over on its own entry words.
 
-  PARA 4   MODE: FULL SCREEN
+  PARA 4   MODE: FULL SCREEN   (2 of 2 in this paragraph)
            ASSET FAMILY: NEW_V10_FS_04_FORMAL_VS_REAL
            STATES, IN REVEAL ORDER:
                NEW_V10_FS_04_FORMAL_VS_REAL.png
-           EXACT TRIGGER:
-               During READ, pay attention to four things: What is this
-               team actually responsible for? Where do the important
-               decisions sit? What does success mean here? And what do
-               people around me know that was never written in the job
-               description? A job description can tell you the formal
-               job. The first few weeks start showing you the real one.
+           ENTER ON: A job description can tell you the formal job.
+           LEAVE ON: The first few weeks start showing you the real...
+           The camera returns at the end of this paragraph.
 
 SECTION 6  WHAT READ DOES NOT MEAN
 

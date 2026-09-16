@@ -15,35 +15,49 @@ teaching card.
 
 SECTION 1  HOOK
 
-  PARA 1   MODE: CAMERA
-           Imagine tomorrow morning you try to log into your work acc...
+  PARA 1   MODE: CAMERA   (early edit, step 1)
+           ON-SCREEN TEXT: CAN YOU STILL EXPLAIN YOUR WORK?
+           ENTER ON: Imagine tomorrow morning you try to log into y...
+           LEAVE ON: Imagine tomorrow morning you try to log...  (paragraph 1)
+           SOUND: none
+           RETURN: cuts away within the paragraph
 
-  PARA 2   MODE: CAMERA
-           Email gone. Dashboard gone. Project folders gone.
+  PARA 1   MODE: FULL SCREEN   (early edit, step 2)
+           ON-SCREEN TEXT: ACCESS UNAVAILABLE
+           ENTER ON: You cannot.
+           LEAVE ON: Project folders gone.  (paragraph 2)
+           ASSET FAMILY: NEW_V8_FS_00_ACCESS_UNAVAILABLE
+           STATES, IN REVEAL ORDER:
+               NEW_V8_FS_00_ACCESS_UNAVAILABLE.png
+           SOUND: S1, one muted lock or click on 'You cannot.'
+           RETURN: camera returns on 'Now imagine that six months later an interviewer asks'
 
-  PARA 3   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN, still held from step 2
+           The voice continues under it. LEAVE ON: Project folders gone.
+           RETURN: camera returns on 'Now imagine that six months later an interviewer asks'
+
+  PARA 3   MODE: CAMERA   (early edit, step 3)
+           ON-SCREEN TEXT: WHAT CHANGED BECAUSE OF YOUR WORK?
+           ENTER ON: Now imagine that six months later an interview...
+           LEAVE ON: What exactly changed because of your wor...  (paragraph 3)
+           SOUND: none
+           RETURN: cuts away within the paragraph
+
+  PARA 3   MODE: FULL SCREEN   (early edit, step 4)
+           ON-SCREEN TEXT: YOU REMEMBER. YOU CANNOT PROVE IT CLEANLY.
+           ENTER ON: You remember doing good work.
+           LEAVE ON: You remember that the project mattered.  (paragraph 3)
            ASSET FAMILY: NEW_V8_FS_01_MEMORY_NOT_PROOF
            STATES, IN REVEAL ORDER:
                NEW_V8_FS_01_MEMORY_NOT_PROOF.png
-           EXACT TRIGGER:
-               Now imagine that six months later an interviewer asks:
-               What exactly changed because of your work? You remember
-               doing good work. You remember that the project mattered.
+           SOUND: none
+           RETURN: camera returns on 'But was the improvement 27% or 37%?'
 
   PARA 4   MODE: CAMERA
            But was the improvement 27% or 37%? Did you own the decisi...
 
-  PARA 5   MODE: FULL SCREEN
-           ASSET FAMILY: NEW_V8_FS_07_TEN_MINUTE_HABIT
-           STATES, IN REVEAL ORDER:
-               NEW_V8_FS_07_TEN_MINUTE_HABIT.png
-           EXACT TRIGGER:
-               That is why I think the worst time to reconstruct your
-               career evidence is after you lose access to it. And no, I
-               am not telling you to take company files. I am going to
-               show you what to capture while you still have access, and
-               how to do it without taking anything that belongs to your
-               employer.
+  PARA 5   MODE: CAMERA
+           That is why I think the worst time to reconstruct your car...
 
 SECTION 2  STORY LOOP
 
@@ -103,17 +117,6 @@ SECTION 5  THE IMPORTANT BOUNDARY
                to keep the company’s files. The goal is to keep a lawful
                record of your own work.
 
-  PARA 2   MODE: FULL SCREEN
-           ASSET FAMILY: NEW_V8_FS_11_A_FACTUAL_RECORD
-           STATES, IN REVEAL ORDER:
-               NEW_V8_FS_11_A_FACTUAL_RECORD.png
-           EXACT TRIGGER:
-               Do not copy customer data. Do not take private reports,
-               screenshots, source code, internal financial information,
-               or anything you are not allowed to keep. The goal is not
-               to keep the company’s files. The goal is to keep a lawful
-               record of your own work.
-
 SECTION 6  WHAT TO WRITE DOWN
 
   PARA 1   MODE: FULL SCREEN
@@ -151,8 +154,17 @@ SECTION 7  WHY MEMORY IS NOT ENOUGH
 
 SECTION 8  THE 10-MINUTE HABIT
 
-  PARA 1   MODE: CAMERA
-           Once a month, take ten minutes and write down: What change...
+  PARA 1   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V8_FS_07_TEN_MINUTE_HABIT
+           STATES, IN REVEAL ORDER:
+               NEW_V8_FS_07_TEN_MINUTE_HABIT.png
+           EXACT TRIGGER:
+               That is why I think the worst time to reconstruct your
+               career evidence is after you lose access to it. And no, I
+               am not telling you to take company files. I am going to
+               show you what to capture while you still have access, and
+               how to do it without taking anything that belongs to your
+               employer.
 
   PARA 2   MODE: CAMERA
            What was hard? What proof do I have? What would I be allow...
@@ -165,8 +177,14 @@ SECTION 9  WHEN THE EXIT IS SUDDEN
   PARA 1   MODE: CAMERA
            Sometimes you do not get much warning. A layoff can happen...
 
-  PARA 2   MODE: CAMERA
-           That is why keeping career evidence is not only something...
+  PARA 2   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V8_FS_08_CAREER_HYGIENE
+           STATES, IN REVEAL ORDER:
+               NEW_V8_FS_08_CAREER_HYGIENE.png
+           EXACT TRIGGER:
+               And if you want to know what to capture before a layoff or
+               sudden exit takes that access away, watch “Before a
+               Layoff, Know What You Can Still Prove” next.
 
 SECTION 10  EVIDENCE DOES NOT SOLVE EVERYTHING
 
@@ -228,15 +246,6 @@ SECTION 15  CONFIDENCE / VIEWER OUTCOME
            You cannot control every exit. You can make it much easier...
 
 SECTION 16  WATCH NEXT
-
-  PARA 1   MODE: FULL SCREEN
-           ASSET FAMILY: NEW_V8_FS_08_CAREER_HYGIENE
-           STATES, IN REVEAL ORDER:
-               NEW_V8_FS_08_CAREER_HYGIENE.png
-           EXACT TRIGGER:
-               And if you want to know what to capture before a layoff or
-               sudden exit takes that access away, watch “Before a
-               Layoff, Know What You Can Still Prove” next.
 
   PARA 1   MODE: FULL SCREEN
            ASSET FAMILY: NEW_V8_WATCH_NEXT

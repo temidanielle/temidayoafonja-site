@@ -19,34 +19,55 @@ carries the moment.
 THE FIVE ACCENTS
 
   S1
-      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
           Something breaks, they call you.
       LOCATION: section 1, HOOK, paragraph 2
+      THE SOUND ITSELF FALLS ON: the scene entry above.
+          The brief names no separate accent word.
       TREATMENT: TRUE FULL-SCREEN CUTAWAY | S1: brief sound stinger
 
   S2
-      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
           But no new decisions.
-      LOCATION: section 4, WHAT THIS CAN LOOK LIKE, paragraph 1
+      LOCATION: section 5, WHAT THIS CAN LOOK LIKE, paragraph 1
+      THE SOUND ITSELF FALLS ON: the scene entry above.
+          The brief names no separate accent word.
       TREATMENT: WHAT THIS CAN LOOK LIKE | S2
 
   S3
-      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
           What could I own in the next six months
-      LOCATION: section 7, ASK FOR DEVELOPMENT, NOT ONLY MORE WORK, paragraph 3
+      LOCATION: section 8, ASK FOR DEVELOPMENT, NOT ONLY MORE WORK, paragraph 3
+      THE SOUND ITSELF FALLS ON: the scene entry above.
+          The brief names no separate accent word.
       TREATMENT: ASK FOR DEVELOPMENT, NOT ONLY MORE WORK | S3
 
   S4
-      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
           Let’s come back to this in 90 days.
-      LOCATION: section 10, SET A REVIEW POINT, paragraph 1
+      LOCATION: section 11, SET A REVIEW POINT, paragraph 1
+      THE SOUND ITSELF FALLS ON: the scene entry above.
+          The brief names no separate accent word.
       TREATMENT: SET A REVIEW POINT | S4
 
   S5
-      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
           more of your capacity, or expanding your capability?
-      LOCATION: section 13, STORY LOOP PAYOFF, paragraph 1
+      LOCATION: section 14, STORY LOOP PAYOFF, paragraph 1
+      THE SOUND ITSELF FALLS ON: the scene entry above.
+          The brief names no separate accent word.
       TREATMENT: STORY LOOP PAYOFF | S5
+
+------------------------------------------------------------------------------
+
+EARLY-EDIT SOUND EVENTS
+
+  Section numbers below are the reconciled script's, the same
+  numbering the camera map uses.
+
+  STEP 2  S1, one soft notification click on the first request only
+      on: Something breaks, they call you.
+      section 1, paragraph 2
 
 ------------------------------------------------------------------------------
 

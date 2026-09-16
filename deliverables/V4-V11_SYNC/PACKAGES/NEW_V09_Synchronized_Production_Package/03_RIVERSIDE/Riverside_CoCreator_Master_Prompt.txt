@@ -4,7 +4,7 @@ NEW PUBLIC V9  |  RIVERSIDE CO-CREATOR MASTER PROMPT
 
 Transferable Skills Advice Is Missing Something
 Thumbnail: NOT EVERYTHING TRAVELS
-Generated Wednesday, September 16, 2026 | 1:46 PM CT
+Generated Wednesday, September 16, 2026 | 3:16 PM CT
 
 1,069 spoken words. Planning estimate 7:22 to 8:13 at 130 to
 145 words per minute, provisional and arithmetic only. Nothing
@@ -45,9 +45,69 @@ HOW TO USE THIS
   first relevant beats while the voice continues. Do not
   reveal an answer before its spoken setup.
 
+  Every visual named in this prompt exists as a rendered state
+  in 04_VISUAL_ASSETS. Nothing here is a proposal.
+
 ------------------------------------------------------------------------------
 
-OPENING TREATMENT
+OPENING SEQUENCE, EXECUTABLE
+
+  Work these steps in order before the first teaching moment.
+  Each one names where it starts and stops inside the spoken
+  paragraph, so no passage is left to be reconciled between two
+  maps.
+
+  STEP 1  |  CAMERA
+      ON-SCREEN TEXT:
+          NOT EVERYTHING TRAVELS
+      ENTER ON THESE WORDS, section 1 HOOK, paragraph 1:
+          I think some transferable-skills advice gives
+          experienced professionals false confidence.
+      LEAVE ON THESE WORDS, paragraph 1:
+          Some of it absolutely can.
+      ASSET: none. Editorial text over camera.
+      SOUND: none
+      RETURN: stays on camera
+      NOTE:
+          'Some' stays in the spoken claim. No study, no universal
+          indictment.
+
+  STEP 2  |  FULL SCREEN
+      ON-SCREEN TEXT:
+          WHAT COMES WITH ME? / WHAT STAYS BEHIND?
+      ENTER ON THESE WORDS, section 1 HOOK, paragraph 2:
+          The problem is that we spend so much time asking, What
+          can I take with me?
+      LEAVE ON THESE WORDS, paragraph 2:
+          What am I leaving behind?
+      ASSET FAMILY: NEW_V9_FS_01_INCOMPLETE_QUESTION
+      STATES, IN REVEAL ORDER:
+          NEW_V9_FS_01_INCOMPLETE_QUESTION.png
+      SOUND: S1, one quiet paper-switch
+      RETURN: camera returns within the paragraph
+      NOTE:
+          Two questions, while the source asks them. No travel
+          imagery.
+
+  STEP 3  |  FULL SCREEN
+      ON-SCREEN TEXT:
+          JUDGMENT: MAY TRAVEL / RELATIONSHIPS: MAY NOT
+      ENTER ON THESE WORDS, section 1 HOOK, paragraph 3:
+          Your judgment may travel.
+      LEAVE ON THESE WORDS, paragraph 3:
+          Your knowledge of that company’s systems may not.
+      ASSET FAMILY: NEW_V9_FS_00_MAY_TRAVEL
+      STATES, IN REVEAL ORDER:
+          NEW_V9_FS_00_MAY_TRAVEL.png
+      SOUND: none
+      RETURN: camera returns on 'And a new industry may still require regulation'
+      NOTE:
+          Each side arrives with its sentence. 'May' stays visible
+          on both.
+
+------------------------------------------------------------------------------
+
+OPENING TREATMENT, FROM THE BRIEF
 
   1. CAMERA + BRIEF EDITORIAL TEXT
      DISPLAY COPY:
@@ -100,7 +160,11 @@ TEACHING MOMENTS
          WHAT CAN I PROVE? / WHAT MUST I RELEARN?
      EXACT SPOKEN TRIGGER:
          I use four questions instead:
-     LOCATION: section 4, THE FOUR QUESTIONS, paragraph 1
+     LOCATION: section 5, THE FOUR QUESTIONS, paragraph 1
+     SOUND FALLS ON THIS EXACT WORD: RELEARN
+               section 5, THE FOUR QUESTIONS, paragraph 2
+               The scene entry above and this word
+               are separate cues.
      DIRECTION:
          Show one active question as spoken; do not label every gap a
          failure. One accent at RELEARN.
@@ -111,7 +175,7 @@ TEACHING MOMENTS
          TRANSLATION / CONTEXT-BOUND / NEEDS LEARNING
      EXACT SPOKEN TRIGGER:
          I picture sorting.
-     LOCATION: section 9, THINK OF IT LIKE SORTING, paragraph 1
+     LOCATION: section 10, THINK OF IT LIKE SORTING, paragraph 1
      DIRECTION:
          Use experience-note cards, not travel footage. Match
          categories to the following four source statements.
@@ -122,7 +186,7 @@ TEACHING MOMENTS
          TO SOLVE: Y / NEED TO BUILD: Z
      EXACT SPOKEN TRIGGER:
          The part of my experience that is most useful here is X.
-     LOCATION: section 13, HOW TO TALK ABOUT THE GAP, paragraph 2
+     LOCATION: section 14, HOW TO TALK ABOUT THE GAP, paragraph 2
      DIRECTION:
          Show the full three-sentence source statement in three
          readable states. This is the outcome the four-column
@@ -131,7 +195,7 @@ TEACHING MOMENTS
   4. STORY LOOP PAYOFF  |  S5
      EXACT SPOKEN TRIGGER:
          What exactly am I carrying
-     LOCATION: section 15, STORY LOOP PAYOFF, paragraph 1
+     LOCATION: section 16, STORY LOOP PAYOFF, paragraph 1
      DIRECTION:
          CAMERA + WORKING-PAGE CALLBACK | WHAT DOES THIS CONTEXT
          STILL REQUIRE?
@@ -142,17 +206,15 @@ TEACHING MOMENTS
          Optional useful inserts: a personal experience card being
          sorted; a destination-role comparison being completed. No
          global flight montage or invented employer case.
-         Show examples as examples. Do not fabricate personal
-         outcomes, employer records, screenshots, research results,
-         or evidence. New visuals are proposed instructions here, not
-         delivered slide files.
          Sound, delivery and handoff
 
 ------------------------------------------------------------------------------
 
 ASSETS IN THIS PACKAGE
 
-  13 full-screen families, 18 rendered states, all 1920 x 1080.
+  14 full-screen families, 18 rendered teaching and end-card
+  states, all 1920 x 1080. One phone-size contact sheet sits
+  beside them and is not a state.
 
 ------------------------------------------------------------------------------
 

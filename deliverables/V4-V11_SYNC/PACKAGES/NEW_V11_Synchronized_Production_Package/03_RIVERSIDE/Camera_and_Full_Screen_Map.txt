@@ -15,14 +15,50 @@ teaching card.
 
 SECTION 1  HOOK
 
-  PARA 1   MODE: CAMERA
-           You accepted one job. Then you started doing another. Mayb...
+  PARA 1   MODE: CAMERA   (early edit, step 1)
+           ON-SCREEN TEXT: WHAT I ACCEPTED IS NOT WHAT I AM DOING
+           ENTER ON: You accepted one job.
+           LEAVE ON: You accepted one job.  (paragraph 1)
+           SOUND: none
+           RETURN: cuts away within the paragraph
 
-  PARA 2   MODE: CAMERA
-           Before you call it a bait-and-switch, slow down. Roles cha...
+  PARA 1   MODE: FULL SCREEN   (early edit, step 2)
+           ON-SCREEN TEXT: THE JOB I ACCEPTED / THE JOB I STARTED DOING
+           ENTER ON: Then you started doing another.
+           LEAVE ON: Maybe the salary is the same.  (paragraph 1)
+           ASSET FAMILY: NEW_V11_FS_00_ACCEPTED_AND_DOING
+           STATES, IN REVEAL ORDER:
+               NEW_V11_FS_00_ACCEPTED_AND_DOING.png
+           SOUND: S1, one small click on the difference
+           RETURN: camera returns on 'But three or six weeks in'
 
-  PARA 3   MODE: CAMERA
-           But there is a point where normal change becomes something...
+  PARA 1   MODE: CAMERA   (early edit, step 3)
+           ON-SCREEN TEXT: THIS ISN’T THE JOB
+           ENTER ON: But three or six weeks in, you are thinking: T...
+           LEAVE ON: This is not the job I thought I accepted...  (paragraph 1)
+           SOUND: none
+           RETURN: stays on camera
+
+  PARA 2   MODE: CAMERA   (early edit, step 4)
+           ON-SCREEN TEXT: CHANGE IS NOT AUTOMATIC DECEPTION
+           ENTER ON: Before you call it a bait-and-switch, slow dow...
+           LEAVE ON: Companies reorganize.  (paragraph 2)
+           SOUND: none
+           RETURN: stays on camera
+
+  PARA 3   MODE: FULL SCREEN   (early edit, step 5)
+           ON-SCREEN TEXT: EXPECTED / ACTUAL / COST / CHOICE
+           ENTER ON: I use four questions for that: EXPECTED. ACTUA...
+           LEAVE ON: EXPECTED. ACTUAL. COST. CHOICE.  (paragraph 3)
+           ASSET FAMILY: NEW_V11_FS_01_FOUR_QUESTIONS
+           STATES, IN REVEAL ORDER:
+               NEW_V11_FS_01_ESTABLISH.png
+               NEW_V11_FS_01A_EXPECTED.png
+               NEW_V11_FS_01B_ACTUAL.png
+               NEW_V11_FS_01C_COST.png
+               NEW_V11_FS_01D_CHOICE.png
+           SOUND: S2, one short sound for the first reveal, not four
+           RETURN: camera returns on 'By the end of this video'
 
   PARA 4   MODE: CAMERA
            By the end of this video, you should be able to tell wheth...
@@ -191,21 +227,8 @@ SECTION 10  THE ROLE-DRIFT READ
                did I reasonably believe I was accepting? ACTUAL. What is
                true now, based on the recurring pattern?
 
-  PARA 2   MODE: FULL SCREEN
-           ASSET FAMILY: NEW_V11_FS_01_FOUR_QUESTIONS
-           STATES, IN REVEAL ORDER:
-               NEW_V11_FS_01_ESTABLISH.png
-               NEW_V11_FS_01A_EXPECTED.png
-               NEW_V11_FS_01B_ACTUAL.png
-               NEW_V11_FS_01C_COST.png
-               NEW_V11_FS_01D_CHOICE.png
-           EXACT TRIGGER:
-               COST. What is the difference doing to my capability,
-               evidence, compensation, or life? CHOICE. What can I
-               clarify, negotiate, test, or decide next? That is a
-               role-drift read. It gives you something more useful than
-               “I hate this job” and something more honest than “I should
-               just give it more time.”
+  PARA 2   MODE: CAMERA
+           COST. What is the difference doing to my capability, evide...
 
 SECTION 11  THE BOUNDARY
 

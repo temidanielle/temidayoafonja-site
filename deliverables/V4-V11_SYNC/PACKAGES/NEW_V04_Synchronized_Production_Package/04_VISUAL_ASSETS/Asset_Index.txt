@@ -4,11 +4,18 @@ NEW PUBLIC V4  |  ASSET INDEX
 
 AI Took the Task. Who Gets the Experience?
 
-16 rendered states across 12 full-screen families.
-All 1920 x 1080. Navy #112345, cream #F5F1E8, gold #C9A84C,
-yellow #F2C44C.
+15 rendered teaching and end-card states across 12 full-screen
+families. All 1920 x 1080. Navy #112345, cream #F5F1E8, gold
+#C9A84C, yellow #F2C44C.
+
+The phone-size contact sheet is a proof sheet of those states,
+not a state. It is listed at the end and is not counted above.
 
 ------------------------------------------------------------------------------
+
+NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT
+   SECTION 1  THREE THINGS TO WATCH   PARAGRAPH 2
+      1. NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT.png
 
 NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE
    SECTION 1  HOOK   PARAGRAPH 3
@@ -21,10 +28,6 @@ NEW_V4_FS_02_INEFFICIENT_AND_DEVELOPMENTAL
 NEW_V4_FS_04_THE_REAL_QUESTION
    SECTION 5  THIS IS NOT AN ANTI-AI ARGUMENT   PARAGRAPH 2
       1. NEW_V4_FS_04_THE_REAL_QUESTION.png
-
-NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT
-   SECTION 6  THREE THINGS TO WATCH   PARAGRAPH 1
-      1. NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT.png
 
 NEW_V4_FS_05_THREE_THINGS
    SECTION 6  THREE THINGS TO WATCH   PARAGRAPH 1

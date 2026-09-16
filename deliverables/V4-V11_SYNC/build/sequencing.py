@@ -388,12 +388,37 @@ NEW_STATES = {
 }
 
 
+
+
+def _resolve_states():
+    """Fill each early step's reveal order from the real state names.
+
+    A step names an asset family. The states that family actually renders
+    are what the editor cuts to, so they are read from the delivered cue
+    table or, for the six new opening families, from NEW_STATES. Guessing
+    the family key doubles as a state name is how a map ends up naming a
+    file that was never rendered.
+    """
+    for n, steps in EARLY.items():
+        have = {r["key"]: list(r["states"]) for r in ANCHORS.get(n, [])}
+        for s_ in steps:
+            if not s_["asset"] or s_.get("_fixed"):
+                continue
+            real = have.get(s_["asset"]) or NEW_STATES.get(s_["asset"])
+            if real:
+                s_["states"] = real
+            s_["_fixed"] = True
+
+
 def _early_row(n, step):
     lab = [l for l, _ in R.sections(n)][step["section"]]
     return dict(key=step["asset"], section=step["section"],
                 para=step["para"], label=lab,
                 states=step["states"], kind="EARLY EDIT",
                 trigger=step["enter"])
+
+
+_resolve_states()
 
 
 def anchors(n):

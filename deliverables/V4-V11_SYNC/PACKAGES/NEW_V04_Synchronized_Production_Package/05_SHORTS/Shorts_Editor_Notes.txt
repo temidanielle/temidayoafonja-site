@@ -23,7 +23,7 @@ SHARED RULES
 ------------------------------------------------------------------------------
 
 SHORT 1  |  AI Took the Task. Who Gets the Experience?
-    LENGTH:  67 words, about 0:24 at 165 wpm, arithmetic
+    LENGTH:  114 words, about 0:41 at 165 wpm, arithmetic
     ONE ASK: So do not only ask, “Who does the task now?”
 
 SHORT 2  |  What Did This Task Used to Teach?
@@ -31,5 +31,5 @@ SHORT 2  |  What Did This Task Used to Teach?
     ONE ASK: Then decide where that learning will happen now.
 
 SHORT 3  |  Senior Judgment Has to Come From Somewhere
-    LENGTH:  51 words, about 0:19 at 165 wpm, arithmetic
-    ONE ASK: It means the learning path may need to be designed o...
+    LENGTH:  104 words, about 0:38 at 165 wpm, arithmetic
+    ONE ASK: If the task used to teach something important, do no...

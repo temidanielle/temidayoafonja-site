@@ -23,13 +23,13 @@ SHARED RULES
 ------------------------------------------------------------------------------
 
 SHORT 1  |  The Bigger Role Is Not Always About Working Harder
-    LENGTH:  68 words, about 0:25 at 165 wpm, arithmetic
+    LENGTH:  132 words, about 0:48 at 165 wpm, arithmetic
     ONE ASK: Keep one question in mind: if a bigger role opened t...
 
 SHORT 2  |  Ask for the Work That Proves the Next Level
     LENGTH:  74 words, about 0:27 at 165 wpm, arithmetic
-    ONE ASK: That changes the question from: “Can I help more?”
+    ONE ASK: That changes the question from: “Can I help more?” t...
 
 SHORT 3  |  You Can Be Valuable and Still Hard to Picture Higher
-    LENGTH:  71 words, about 0:26 at 165 wpm, arithmetic
-    ONE ASK: You can become more useful without becoming easier t...
+    LENGTH:  101 words, about 0:37 at 165 wpm, arithmetic
+    ONE ASK: Pick one kind of next-level work you want to be trus...

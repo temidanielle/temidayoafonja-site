@@ -19,6 +19,14 @@ NEW_V9_FS_01_INCOMPLETE_QUESTION
             rust rule. Everything else quiet. Never two
             active at once.
 
+NEW_V9_FS_00_MAY_TRAVEL
+  SECTION 1, PARAGRAPH 3
+  REVEAL ORDER:
+      1. NEW_V9_FS_00_MAY_TRAVEL.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
 NEW_V9_FS_03_FOUR_QUESTIONS
   SECTION 1, PARAGRAPH 5
   REVEAL ORDER:
@@ -27,14 +35,6 @@ NEW_V9_FS_03_FOUR_QUESTIONS
       3. NEW_V9_FS_03B_WHAT_DOES_NOT.png
       4. NEW_V9_FS_03C_WHAT_CAN_I_PROVE.png
       5. NEW_V9_FS_03D_WHAT_MUST_I_RELEARN.png
-  EMPHASIS: active item in the warm yellow wash with the
-            rust rule. Everything else quiet. Never two
-            active at once.
-
-NEW_V9_FS_12_THE_AUDIT_AGAIN
-  SECTION 1, PARAGRAPH 5
-  REVEAL ORDER:
-      1. NEW_V9_FS_12_THE_AUDIT_AGAIN.png
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
@@ -107,6 +107,14 @@ NEW_V9_FS_11_FLUENCY_AND_PORTABILITY
   SECTION 13, PARAGRAPH 3
   REVEAL ORDER:
       1. NEW_V9_FS_11_FLUENCY_AND_PORTABILITY.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
+NEW_V9_FS_12_THE_AUDIT_AGAIN
+  SECTION 17, PARAGRAPH 2
+  REVEAL ORDER:
+      1. NEW_V9_FS_12_THE_AUDIT_AGAIN.png
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.

@@ -15,22 +15,36 @@ teaching card.
 
 SECTION 1  HOOK
 
-  PARA 1   MODE: CAMERA
-           AI can do in 30 seconds what used to take someone three ho...
+  PARA 1   MODE: CAMERA   (early edit, step 1)
+           ON-SCREEN TEXT: WHO LEARNS NOW?
+           ENTER ON: Imagine a task that takes someone hours.
+           LEAVE ON: That sounds like progress.  (paragraph 1)
+           SOUND: none
+           RETURN: stays on camera
 
-  PARA 2   MODE: CAMERA
-           That was where someone learned what a bad answer looked li...
+  PARA 1   MODE: FULL SCREEN   (early edit, step 2)
+           ON-SCREEN TEXT: WHAT THE TASK TAUGHT
+           ENTER ON: But those hours were not always wasted.
+           LEAVE ON: Where they started noticing patterns.  (paragraph 2)
+           ASSET FAMILY: NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT
+           STATES, IN REVEAL ORDER:
+               NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT.png
+           SOUND: S1, one brief stinger on 'wasted'
+           RETURN: camera returns on 'So I think we are asking the wrong question'
 
-  PARA 3   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN, still held from step 2
+           The voice continues under it. LEAVE ON: Where they started noticing patterns.
+           RETURN: camera returns on 'So I think we are asking the wrong question'
+
+  PARA 3   MODE: FULL SCREEN   (early edit, step 3)
+           ON-SCREEN TEXT: WHO GETS THE EXPERIENCE?
+           ENTER ON: If AI takes the task, who gets the experience...
+           LEAVE ON: who gets the experience that used to com...  (paragraph 3)
            ASSET FAMILY: NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE
            STATES, IN REVEAL ORDER:
                NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE.png
-           EXACT TRIGGER:
-               So I think we are asking the wrong question about some of
-               this work. Not just: What can AI do now? But: If AI takes
-               the task, who gets the experience that used to come from
-               doing it? Because we still need experienced people later.
-               And somehow, they have to become experienced.
+           SOUND: none
+           RETURN: camera returns on 'Because we still need experienced people later'
 
 SECTION 2  STORY LOOP
 
@@ -76,14 +90,6 @@ SECTION 5  THIS IS NOT AN ANTI-AI ARGUMENT
                is: “If AI does the task, what replaces the learning?”
 
 SECTION 6  THREE THINGS TO WATCH
-
-  PARA 1   MODE: FULL SCREEN
-           ASSET FAMILY: NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT
-           STATES, IN REVEAL ORDER:
-               NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT.png
-           EXACT TRIGGER:
-               I would watch three things. First, exposure. Does the
-               person still see enough examples to learn the pattern?
 
   PARA 1   MODE: FULL SCREEN
            ASSET FAMILY: NEW_V4_FS_05_THREE_THINGS

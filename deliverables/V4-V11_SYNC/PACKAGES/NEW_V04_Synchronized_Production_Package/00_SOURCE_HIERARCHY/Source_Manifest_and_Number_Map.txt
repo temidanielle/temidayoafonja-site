@@ -3,7 +3,7 @@ NEW PUBLIC V4  |  SOURCE MANIFEST AND NUMBER MAP
 ==============================================================================
 
 AI Took the Task. Who Gets the Experience?
-Generated Wednesday, September 16, 2026 | 1:46 PM CT
+Generated Wednesday, September 16, 2026 | 3:16 PM CT
 
 ------------------------------------------------------------------------------
 
@@ -51,7 +51,7 @@ SOURCE RECONCILIATION
   Order: recognition and tension, early value,
   introduction, continued teaching.
 
-  Spoken words: 1,034. Counting method: whitespace-delimited
+  Spoken words: 1,036. Counting method: whitespace-delimited
   tokens of the spoken stream only, with section labels, block
   labels, headers, recording direction and bracketed production
   notes excluded before counting.

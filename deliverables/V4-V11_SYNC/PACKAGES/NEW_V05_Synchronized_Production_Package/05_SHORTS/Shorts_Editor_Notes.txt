@@ -23,13 +23,13 @@ SHARED RULES
 ------------------------------------------------------------------------------
 
 SHORT 1  |  Being Needed Is Not the Same as Growing
-    LENGTH:  69 words, about 0:25 at 165 wpm, arithmetic
-    ONE ASK: That is the problem I want to unpack, because being...
+    LENGTH:  119 words, about 0:43 at 165 wpm, arithmetic
+    ONE ASK: Are they asking for more of your capacity, or expand...
 
 SHORT 2  |  Useful Can Become a Career Trap
     LENGTH:  68 words, about 0:25 at 165 wpm, arithmetic
     ONE ASK: Ask: What is this company building in me beyond my a...
 
 SHORT 3  |  Set a Review Point for Extra Scope
-    LENGTH:  62 words, about 0:23 at 165 wpm, arithmetic
+    LENGTH:  69 words, about 0:25 at 165 wpm, arithmetic
     ONE ASK: Without a review point, temporary extra work can qui...

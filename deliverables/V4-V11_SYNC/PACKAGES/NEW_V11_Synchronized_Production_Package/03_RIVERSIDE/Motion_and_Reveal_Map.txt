@@ -11,6 +11,26 @@ Preserve meaningful pauses.
 
 ------------------------------------------------------------------------------
 
+NEW_V11_FS_00_ACCEPTED_AND_DOING
+  SECTION 1, PARAGRAPH 1
+  REVEAL ORDER:
+      1. NEW_V11_FS_00_ACCEPTED_AND_DOING.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
+NEW_V11_FS_01_FOUR_QUESTIONS
+  SECTION 1, PARAGRAPH 3
+  REVEAL ORDER:
+      1. NEW_V11_FS_01_ESTABLISH.png
+      2. NEW_V11_FS_01A_EXPECTED.png
+      3. NEW_V11_FS_01B_ACTUAL.png
+      4. NEW_V11_FS_01C_COST.png
+      5. NEW_V11_FS_01D_CHOICE.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
 NEW_V11_FS_02_WRITE_IT_DOWN
   SECTION 4, PARAGRAPH 2
   REVEAL ORDER:
@@ -80,18 +100,6 @@ NEW_V11_FS_09_THE_ROLE_DRIFT_READ
       3. NEW_V11_FS_09B_ACTUAL.png
       4. NEW_V11_FS_09C_COST.png
       5. NEW_V11_FS_09D_CHOICE.png
-  EMPHASIS: active item in the warm yellow wash with the
-            rust rule. Everything else quiet. Never two
-            active at once.
-
-NEW_V11_FS_01_FOUR_QUESTIONS
-  SECTION 10, PARAGRAPH 2
-  REVEAL ORDER:
-      1. NEW_V11_FS_01_ESTABLISH.png
-      2. NEW_V11_FS_01A_EXPECTED.png
-      3. NEW_V11_FS_01B_ACTUAL.png
-      4. NEW_V11_FS_01C_COST.png
-      5. NEW_V11_FS_01D_CHOICE.png
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.

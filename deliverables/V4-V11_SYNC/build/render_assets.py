@@ -22,8 +22,23 @@ from rdeck import render_html, shoot
 from PIL import Image
 import svg23
 import overrides
+import earlyframes
+import sequencing as Q
+
+# A retired family keeps its design in the ledger but stops shipping a
+# state, so the package never lists a file no cue ever plays.
+retired = []
+for n in NUMS:
+    keep = []
+    for f in F.SETS[n]:
+        if (n, f["key"]) in Q.RETIRE:
+            retired.append((n, f["key"], [x["name"] for x in f["states"]]))
+        else:
+            keep.append(f)
+    F.SETS[n] = keep
 
 changed = overrides.apply({n: F.SETS[n] for n in NUMS}, L)
+added = earlyframes.apply(F.SETS, L, BATCH)
 
 
 def contact_sheet(paths, path, cols=6, w=190):
@@ -67,4 +82,5 @@ for n in NUMS:
                   sheet=os.path.basename(sheet),
                   families=len(F.SETS[n]), states=len(F.states(n)),
                   all_1080=all(v == (1920, 1080) for v in sizes.values()))
-print(json.dumps(dict(videos=out, changed=changed)))
+print(json.dumps(dict(videos=out, changed=changed, added=added,
+                      retired=retired)))

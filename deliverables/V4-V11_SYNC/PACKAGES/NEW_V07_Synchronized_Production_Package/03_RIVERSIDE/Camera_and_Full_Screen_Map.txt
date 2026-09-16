@@ -15,22 +15,44 @@ teaching card.
 
 SECTION 1  HOOK
 
-  PARA 1   MODE: CAMERA
-           Two people can both be good at their jobs. Both dependable...
+  PARA 1   MODE: CAMERA   (early edit, step 1)
+           ON-SCREEN TEXT: TWO CAPABLE PEOPLE
+           ENTER ON: Two people can both be good at their jobs.
+           LEAVE ON: Two people can both be good at their job...  (paragraph 1)
+           SOUND: none
+           RETURN: cuts away within the paragraph
 
-  PARA 2   MODE: CAMERA
-           Then a bigger opportunity opens. One person’s name comes u...
+  PARA 1   MODE: FULL SCREEN   (early edit, step 2)
+           ON-SCREEN TEXT: TWO CAPABLE PEOPLE
+           ENTER ON: Both dependable.
+           LEAVE ON: Both working hard.  (paragraph 1)
+           ASSET FAMILY: NEW_V7_FS_00_TWO_CAPABLE_PEOPLE
+           STATES, IN REVEAL ORDER:
+               NEW_V7_FS_00_TWO_CAPABLE_PEOPLE.png
+               NEW_V7_FS_00B_ONE_NAME_COMES_UP.png
+           SOUND: S1, one brief stinger as the pair establishes
+           RETURN: holds into the next paragraph
 
-  PARA 3   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN   (early edit, step 3)
+           ON-SCREEN TEXT: ONE NAME COMES UP
+           ENTER ON: One person’s name comes up.
+           LEAVE ON: The other person’s does not.  (paragraph 2)
+           ASSET FAMILY: NEW_V7_FS_00_TWO_CAPABLE_PEOPLE
+           STATES, IN REVEAL ORDER:
+               NEW_V7_FS_00_TWO_CAPABLE_PEOPLE.png
+               NEW_V7_FS_00B_ONE_NAME_COMES_UP.png
+           SOUND: S2, one quiet accent as the outcome line arrives
+           RETURN: camera returns on 'I have seen versions of that happen'
+
+  PARA 3   MODE: FULL SCREEN   (early edit, step 4)
+           ON-SCREEN TEXT: NOT ALWAYS ABOUT WORKING HARDER
+           ENTER ON: the difference is not always who worked harder
+           LEAVE ON: evidence people can already see at the n...  (paragraph 3)
            ASSET FAMILY: NEW_V7_FS_01_NOT_ALWAYS_WHO_WORKED_HARDER
            STATES, IN REVEAL ORDER:
                NEW_V7_FS_01_NOT_ALWAYS_WHO_WORKED_HARDER.png
-           EXACT TRIGGER:
-               I have seen versions of that happen inside organizations,
-               and the difference is not always who worked harder.
-               Sometimes the person who gets the bigger role has
-               something the other person does not have yet: evidence
-               people can already see at the next level.
+           SOUND: none
+           RETURN: camera returns on 'And sometimes the difference has nothing to do with capability at all'
 
   PARA 4   MODE: CAMERA
            And sometimes the difference has nothing to do with capabi...

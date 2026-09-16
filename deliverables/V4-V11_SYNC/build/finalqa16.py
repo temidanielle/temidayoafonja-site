@@ -9,6 +9,7 @@ sys.path.append(DELIV + "VIDEOS_22-23/build")
 sys.path.append(DELIV + "riverside-build")
 sys.path.insert(0, DELIV + "V4-V11_EDIT_SYNC/build")
 import recon as R, shortsync as SH, packages as P, briefs as B
+import sequencing as Q, locate as LOC
 import src916 as S916
 from qa23 import units, _flat
 from PIL import Image
@@ -46,11 +47,19 @@ for n in R.VIDEOS:
     ck("V%d approved intro restored exactly once" % n, ok, det)
     base = [R.S._norm(p) for p in S916.paragraphs(n)]
     now = [R.S._norm(p) for p in R.paragraphs(n)]
-    ck("V%d BEAST MODE body preserved" % n, all(p in now for p in base),
-       "%d paragraphs" % len(base))
-    ck("V%d only the approved intro added" % n,
-       [p for p in now if p not in base]
-       == [R.S._norm(p) for p in R.intro_paragraphs(n)], "")
+    old4 = R.S._norm(R.V4_OPENING[0])
+    new4 = R.S._norm(R.V4_OPENING[1])
+    kept = [p for p in base if not (n == 4 and p == old4)]
+    ck("V%d BEAST MODE body preserved" % n, all(p in now for p in kept),
+       "%d paragraphs" % len(kept))
+    want = [R.S._norm(p) for p in R.intro_paragraphs(n)]
+    if n == 4:
+        want = [new4] + want
+    ck("V%d only the approved intro and opening added" % n,
+       sorted([p for p in now if p not in base]) == sorted(want), "")
+    if n == 4:
+        ck("V4 opening is the approved hypothetical",
+           new4 in now and old4 not in now, "word for word")
     ck("V%d thought-block stream matches exactly and in order" % n,
        [R.S._norm(x) for x in R.paragraphs(n)]
        == [R.S._norm(x) for lab, ps in P.blocks(n) for x in ps],
@@ -70,6 +79,35 @@ for n in R.VIDEOS:
        all(c["section"] is not None for c in P.cues(n)),
        "%d families" % len(P.cues(n)))
     ck("V%d all brief triggers resolve" % n, not B.verify(n), "")
+    ck("V%d every trigger resolves by section and purpose" % n,
+       all(LOC.resolve(n, x["trigger"], x["head"])
+           for x in B.read(n)["beats"] if x["trigger"]),
+       "numbered against the reconciled script")
+    ck("V%d no paragraph carries two cards without a sequence" % n,
+       not [k for k in Q.shared(n) if not Q.SUBRANGE.get((n, k[0], k[1]))],
+       "%d sequenced paragraphs" % len(Q.shared(n)))
+    ck("V%d Watch Next owns the closing passage alone" % n,
+       not [c for c in P.cues(n)
+            if c["key"] != "NEW_V%d_WATCH_NEXT" % n
+            and [w for w in P.cues(n)
+                 if w["key"] == "NEW_V%d_WATCH_NEXT" % n
+                 and (w["section"], w["para"]) == (c["section"],
+                                                   c["para"])]], "")
+    ck("V%d every early cutaway has a rendered state" % n,
+       all(not e["asset"] or all(x + ".png" in png for x in e["states"])
+           for e in Q.EARLY.get(n, [])),
+       "%d opening steps" % len(Q.EARLY.get(n, [])))
+    ck("V%d early entry and exit words are in their paragraphs" % n,
+       not [b_ for b_ in Q.verify() if b_.startswith("V%d early" % n)], "")
+    ck("V%d teaching states counted apart from the contact sheet" % n,
+       sum(len(c["states"]) for c in P.cues(n))
+       == len([x for x in png if "Contact_Sheet" not in x]),
+       "%d states, %d contact sheet"
+       % (len([x for x in png if "Contact_Sheet" not in x]),
+          len([x for x in png if "Contact_Sheet" in x])))
+    ck("V%d Shorts carry complete lists, referents and one action" % n,
+       not SH.audit(n), SH.audit(n) or "%d editorial rules"
+       % (len(SH.LISTS) + len(SH.ANTECEDENTS)))
     # shorts
     ck("V%d exactly three Shorts" % n, len(SH.rows(n)) == 3)
     ck("V%d every Short line verbatim" % n, not SH.verify(n), "")
@@ -110,6 +148,27 @@ for n in R.VIDEOS:
     hits = sorted({m.group(0) for u in pub for m in EMP.finditer(u)})
     ck("V%d no employer name in any public-facing document" % n,
        not hits, hits or "clean")
+    ck("V%d no visual is described as proposed rather than delivered" % n,
+       not [u for u in us if P._proposed(u)],
+       "every named visual is a rendered state")
+    if n == 4:
+        ck("V4 no document still carries the old opening",
+           not [u for u in us
+                if "three hours" in u or "30 seconds" in u],
+           "master, blocks, maps, Shorts, publishing and QA checked")
+    if n == 5:
+        ck("V5 portability passage is intact in the master",
+           "harder to replace there without becoming much easier to hire"
+           in _flat(R.spoken_text(5))
+           and "what parts of your experience travel"
+           in _flat(R.spoken_text(5)),
+           "A SIMPLE EXAMPLE and WHEN TO BUILD OPTIONS")
+        ck("V5 no record claims that passage is gone",
+           not [u for u in us
+                if "no portability" in u.lower()
+                or "portability language remains" in u.lower()
+                and "previously" not in u.lower()],
+           "the rationale is corrected wherever it appeared")
 
 # private provenance separated
 pv = os.path.join(OUT, "PACKAGES", P.PKG[6], "07_EVIDENCE", "PRIVATE",
@@ -140,8 +199,26 @@ ck("Every sidecar matches the archive it names",
 inner = [x for x in z.namelist() if x.endswith(".zip")]
 ck("Combined archive carries the eight package archives",
    len(inner) == len(R.VIDEOS), "%d packages" % len(inner))
+ck("The eight package sidecars travel in the outer delivery",
+   len([x for x in z.namelist() if x.endswith(".zip.sha256")])
+   == len(R.VIDEOS),
+   "%d beside their archives"
+   % len([x for x in z.namelist() if x.endswith(".zip.sha256")]))
 ck("No sidecar is inside the archive it describes",
-   not [x for x in z.namelist() if x.endswith(".sha256")], "")
+   not [x for y in inner
+        for x in zipfile.ZipFile(os.path.join(OUT, y)).namelist()
+        if x.endswith(".sha256")]
+   and os.path.basename(arc) + ".sha256" not in z.namelist(), "")
+ck("Every cue map, sound map and asset index agrees on placement",
+   not Q.verify(), Q.verify() or "compared as delivered outputs, not "
+                                 "assumed from a shared table")
+ck("No report claims the maps cannot disagree",
+   not [1 for n in R.VIDEOS
+        for root, _, names in os.walk(os.path.join(OUT, "PACKAGES",
+                                                   P.PKG[n]))
+        for nm in names if nm.endswith((".docx", ".txt"))
+        for u in units(os.path.join(root, nm))
+        if "cannot disagree" in u.lower()], "")
 
 bad = [r for r in Rw if not r[1]]
 for nm, o, d in Rw:

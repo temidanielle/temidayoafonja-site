@@ -4,7 +4,7 @@ NEW PUBLIC V8  |  RIVERSIDE CO-CREATOR MASTER PROMPT
 
 What Disappears When Your Work Access Ends
 Thumbnail: YOU CAN’T PROVE IT LATER
-Generated Wednesday, September 16, 2026 | 1:46 PM CT
+Generated Wednesday, September 16, 2026 | 3:16 PM CT
 
 889 spoken words. Planning estimate 6:07 to 6:50 at 130 to
 145 words per minute, provisional and arithmetic only. Nothing
@@ -46,9 +46,84 @@ HOW TO USE THIS
   first relevant beats while the voice continues. Do not
   reveal an answer before its spoken setup.
 
+  Every visual named in this prompt exists as a rendered state
+  in 04_VISUAL_ASSETS. Nothing here is a proposal.
+
 ------------------------------------------------------------------------------
 
-OPENING TREATMENT
+OPENING SEQUENCE, EXECUTABLE
+
+  Work these steps in order before the first teaching moment.
+  Each one names where it starts and stops inside the spoken
+  paragraph, so no passage is left to be reconciled between two
+  maps.
+
+  STEP 1  |  CAMERA
+      ON-SCREEN TEXT:
+          CAN YOU STILL EXPLAIN YOUR WORK?
+      ENTER ON THESE WORDS, section 1 HOOK, paragraph 1:
+          Imagine tomorrow morning you try to log into your work
+          account.
+      LEAVE ON THESE WORDS, paragraph 1:
+          Imagine tomorrow morning you try to log into your work
+          account.
+      ASSET: none. Editorial text over camera.
+      SOUND: none
+      RETURN: cuts away within the paragraph
+      NOTE:
+          She speaks first, then straight into the imagined login.
+          No camera-only scene.
+
+  STEP 2  |  FULL SCREEN
+      ON-SCREEN TEXT:
+          ACCESS UNAVAILABLE
+      ENTER ON THESE WORDS, section 1 HOOK, paragraph 1:
+          You cannot.
+      LEAVE ON THESE WORDS, paragraph 2:
+          Project folders gone.
+      ASSET FAMILY: NEW_V8_FS_00_ACCESS_UNAVAILABLE
+      STATES, IN REVEAL ORDER:
+          NEW_V8_FS_00_ACCESS_UNAVAILABLE.png
+      SOUND: S1, one muted lock or click on 'You cannot.'
+      RETURN: camera returns on 'Now imagine that six months later an interviewer asks'
+      NOTE:
+          Generic and clearly illustrative. No employer interface,
+          file, logo or customer data.
+
+  STEP 3  |  CAMERA
+      ON-SCREEN TEXT:
+          WHAT CHANGED BECAUSE OF YOUR WORK?
+      ENTER ON THESE WORDS, section 1 HOOK, paragraph 3:
+          Now imagine that six months later an interviewer asks:
+          What exactly changed because of your work?
+      LEAVE ON THESE WORDS, paragraph 3:
+          What exactly changed because of your work?
+      ASSET: none. Editorial text over camera.
+      SOUND: none
+      RETURN: cuts away within the paragraph
+      NOTE:
+          The interviewer's question is the early outcome cue. No
+          fear montage.
+
+  STEP 4  |  FULL SCREEN
+      ON-SCREEN TEXT:
+          YOU REMEMBER. YOU CANNOT PROVE IT CLEANLY.
+      ENTER ON THESE WORDS, section 1 HOOK, paragraph 3:
+          You remember doing good work.
+      LEAVE ON THESE WORDS, paragraph 3:
+          You remember that the project mattered.
+      ASSET FAMILY: NEW_V8_FS_01_MEMORY_NOT_PROOF
+      STATES, IN REVEAL ORDER:
+          NEW_V8_FS_01_MEMORY_NOT_PROOF.png
+      SOUND: none
+      RETURN: camera returns on 'But was the improvement 27% or 37%?'
+      NOTE:
+          The baseline and decision questions do the work from
+          camera.
+
+------------------------------------------------------------------------------
+
+OPENING TREATMENT, FROM THE BRIEF
 
   1. CAMERA + BRIEF EDITORIAL TEXT
      DISPLAY COPY:
@@ -144,17 +219,15 @@ TEACHING MOMENTS
          Two relevant options: the generic blocked login; a personal
          contribution note being completed. Both are illustrations,
          not real employer evidence.
-         Show examples as examples. Do not fabricate personal
-         outcomes, employer records, screenshots, research results,
-         or evidence. New visuals are proposed instructions here, not
-         delivered slide files.
          Sound, delivery and handoff
 
 ------------------------------------------------------------------------------
 
 ASSETS IN THIS PACKAGE
 
-  13 full-screen families, 19 rendered states, all 1920 x 1080.
+  13 full-screen families, 18 rendered teaching and end-card
+  states, all 1920 x 1080. One phone-size contact sheet sits
+  beside them and is not a state.
 
 ------------------------------------------------------------------------------
 

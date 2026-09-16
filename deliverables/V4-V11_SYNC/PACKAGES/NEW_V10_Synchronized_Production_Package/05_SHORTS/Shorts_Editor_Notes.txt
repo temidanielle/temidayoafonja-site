@@ -23,13 +23,13 @@ SHARED RULES
 ------------------------------------------------------------------------------
 
 SHORT 1  |  Don't Spend Your First 90 Days Proving Yourself
-    LENGTH:  71 words, about 0:26 at 165 wpm, arithmetic
-    ONE ASK: Your first job is not to prove that everything you a...
+    LENGTH:  134 words, about 0:49 at 165 wpm, arithmetic
+    ONE ASK: It is to figure out three things: What from my exper...
 
 SHORT 2  |  Experienced but New to the Context
-    LENGTH:  74 words, about 0:27 at 165 wpm, arithmetic
-    ONE ASK: I think about that as READ. TEST. PROVE.
+    LENGTH:  161 words, about 0:59 at 165 wpm, arithmetic
+    ONE ASK: That is why I would not spend the first 90 days tryi...
 
 SHORT 3  |  Ask Your Manager This by Day 90
-    LENGTH:  93 words, about 0:34 at 165 wpm, arithmetic
-    ONE ASK: That question turns the first 90 days into developme...
+    LENGTH:  103 words, about 0:37 at 165 wpm, arithmetic
+    ONE ASK: And ask: “What would you want to trust me with by th...

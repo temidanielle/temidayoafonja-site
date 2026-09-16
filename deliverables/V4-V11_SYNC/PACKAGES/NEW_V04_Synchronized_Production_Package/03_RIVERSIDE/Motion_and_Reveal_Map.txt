@@ -11,6 +11,14 @@ Preserve meaningful pauses.
 
 ------------------------------------------------------------------------------
 
+NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT
+  SECTION 1, PARAGRAPH 2
+  REVEAL ORDER:
+      1. NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
 NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE
   SECTION 1, PARAGRAPH 3
   REVEAL ORDER:
@@ -31,14 +39,6 @@ NEW_V4_FS_04_THE_REAL_QUESTION
   SECTION 5, PARAGRAPH 2
   REVEAL ORDER:
       1. NEW_V4_FS_04_THE_REAL_QUESTION.png
-  EMPHASIS: active item in the warm yellow wash with the
-            rust rule. Everything else quiet. Never two
-            active at once.
-
-NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT
-  SECTION 6, PARAGRAPH 1
-  REVEAL ORDER:
-      1. NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT.png
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.

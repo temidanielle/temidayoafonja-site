@@ -19,36 +19,60 @@ carries the moment.
 THE FIVE ACCENTS
 
   S1
-      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
           this pressure to prove they made the right decision.
       LOCATION: section 1, HOOK, paragraph 2
+      THE SOUND ITSELF FALLS ON: the scene entry above.
+          The brief names no separate accent word.
       TREATMENT: TRUE FULL-SCREEN QUESTION CARD | S1: brief sound sti...
 
   S2
-      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
           I think about that as READ. TEST. PROVE.
       LOCATION: section 1, HOOK, paragraph 6
+      THE SOUND ITSELF FALLS ON: the scene entry above.
+          The brief names no separate accent word.
       TREATMENT: HOOK | S2
 
   S3
-      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
           What would you want to trust me with by the end of my
           first 90 days
-      LOCATION: section 7, THE CONVERSATION I WOULD HAVE, paragraph 3
+      LOCATION: section 8, THE CONVERSATION I WOULD HAVE, paragraph 3
+      THE SOUND ITSELF FALLS ON: the scene entry above.
+          The brief names no separate accent word.
       TREATMENT: THE CONVERSATION I WOULD HAVE | S3
 
   S4
-      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
           They are not the only ones evaluating.
-      LOCATION: section 2, STORY LOOP, paragraph 1   (appears 2 times; this is the one the brief means)
+      LOCATION: section 11, THE REVERSAL | THEY ARE NOT THE ONLY ONES EVALUATING, paragraph 1
+          appears 2 times; this is the occurrence in THE
+          REVERSAL | THEY ARE NOT THE ONLY ONES EVALUATING,
+          which is the treatment this beat names
+      THE SOUND ITSELF FALLS ON: the scene entry above.
+          The brief names no separate accent word.
       TREATMENT: THE REVERSAL | THEY ARE NOT THE ONLY ONES EVALUATING...
 
   S5
-      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
           ROLE CHECK. What have these 90 days taught me about the
           job itself?
-      LOCATION: section 11, THE FIRST-90-DAYS READ, paragraph 2
+      LOCATION: section 12, THE FIRST-90-DAYS READ, paragraph 2
+      THE SOUND ITSELF FALLS ON: the scene entry above.
+          The brief names no separate accent word.
       TREATMENT: THE FIRST-90-DAYS READ | S5
+
+------------------------------------------------------------------------------
+
+EARLY-EDIT SOUND EVENTS
+
+  Section numbers below are the reconciled script's, the same
+  numbering the camera map uses.
+
+  STEP 2  S1, one subtle click
+      on: And now you feel this pressure to prove they made th...
+      section 1, paragraph 2
 
 ------------------------------------------------------------------------------
 

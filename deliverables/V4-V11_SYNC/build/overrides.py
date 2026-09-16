@@ -46,9 +46,12 @@ def build(L):
            ("harder to move", "Harder for a team to imagine moving you."),
            joiner="+"),
        "'Your experience becomes tied to the internal system.' replaced "
-       "with 'Harder for a team to imagine moving you.' from THE TRAP. The "
-       "reconciled V5 carries no portability passage; that idea lives in "
-       "V9 now."),
+       "with 'Harder for a team to imagine moving you.' from THE TRAP. "
+       "The reconciled V5 never names an internal system. It does carry "
+       "portability, in A SIMPLE EXAMPLE and in WHEN TO BUILD OPTIONS, so "
+       "the earlier rationale that no portability passage remains was "
+       "wrong. The card is kept and re-anchored to the wording the script "
+       "actually uses."),
 
      "NEW_V5_FS_10_CTA": (
        "NEW_V5_FS_10_CTA",
@@ -58,9 +61,11 @@ def build(L):
            resource=("If not, being useful may be part of why you feel "
                      "stuck.", "")),
        "'More portable.' replaced with 'More useful somewhere else.' and "
-       "the foot line aligned to the CLOSE, which now reads: more capable, "
+       "the foot line aligned to the CLOSE, which reads: more capable, "
        "more visible, or more useful somewhere else. If not, being useful "
-       "may be part of why you feel stuck."),
+       "may be part of why you feel stuck. The word portable is what the "
+       "CLOSE does not use; the idea of experience travelling is still in "
+       "V5, in A SIMPLE EXAMPLE and WHEN TO BUILD OPTIONS."),
 
      "NEW_V8_FS_11_A_FACTUAL_RECORD": (
        "NEW_V8_FS_11_A_FACTUAL_RECORD",

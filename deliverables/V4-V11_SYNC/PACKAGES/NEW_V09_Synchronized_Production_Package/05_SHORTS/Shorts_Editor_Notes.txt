@@ -23,13 +23,13 @@ SHARED RULES
 ------------------------------------------------------------------------------
 
 SHORT 1  |  Transferable Skills Advice Is Incomplete
-    LENGTH:  75 words, about 0:27 at 165 wpm, arithmetic
+    LENGTH:  95 words, about 0:35 at 165 wpm, arithmetic
     ONE ASK: So I would not make a transferable-skills list.
 
 SHORT 2  |  Not Everything Travels
-    LENGTH:  45 words, about 0:16 at 165 wpm, arithmetic
-    ONE ASK: But they may not mean much in the next place.
+    LENGTH:  137 words, about 0:50 at 165 wpm, arithmetic
+    ONE ASK: If someone asks why your experience should count in...
 
 SHORT 3  |  The Longer You Stay, the Easier This Is to Miss
-    LENGTH:  60 words, about 0:22 at 165 wpm, arithmetic
-    ONE ASK: The capability may still be there.
+    LENGTH:  102 words, about 0:37 at 165 wpm, arithmetic
+    ONE ASK: Take one job you are thinking about. Make four colum...

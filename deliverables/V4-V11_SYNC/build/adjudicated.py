@@ -41,15 +41,25 @@ DECISIONS = {
  (5, "NEW_V5_FS_05_INDISPENSABLE_AND_LESS_PORTABLE",
   "Your experience becomes tied to the internal system."): (
     OBSOLETE, None,
-    "The reconciled V5 carries no portability or internal-system passage. "
-    "That idea now lives in V9, not here."),
+    "The reconciled V5 never names an internal system, so that half of "
+    "the line has no support. Portability itself does survive in V5 and "
+    "this record previously said otherwise: A SIMPLE EXAMPLE says you can "
+    "become harder to replace there without becoming much easier to hire "
+    "somewhere else, and WHEN TO BUILD OPTIONS says to get clearer about "
+    "what parts of your experience travel. The line is replaced because "
+    "of the internal system, not because the idea left the video."),
  (5, "NEW_V5_FS_10_CTA",
   "If not, usefulness may be the reason you are stuck."): (
     SUMMARY, "CLOSE",
     "Compresses: if not, being useful may be part of why you feel stuck."),
  (5, "NEW_V5_FS_10_CTA", "More portable."): (
     OBSOLETE, None,
-    "No portability language remains in the reconciled V5."),
+    "The CLOSE asks whether the work is making you more capable, more "
+    "visible, or more useful somewhere else. Portable is not the word it "
+    "uses, and the card quoted a word rather than compressing the "
+    "sentence. This record previously said no portability language "
+    "remains in V5, which is wrong: A SIMPLE EXAMPLE and WHEN TO BUILD "
+    "OPTIONS both carry the idea. The word is what was replaced."),
  (6, "NEW_V6_FS_03_THE_SAMPLE",
   "Read for this research. A bounded sample, not the labor market."): (
     EVIDENCE, "THE FOUR THINGS I READ",

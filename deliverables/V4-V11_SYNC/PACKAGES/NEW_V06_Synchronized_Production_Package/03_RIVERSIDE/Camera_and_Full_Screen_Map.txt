@@ -15,40 +15,50 @@ teaching card.
 
 SECTION 1  HOOK
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: CAMERA   (early edit, step 1)
+           ON-SCREEN TEXT: WHAT IS THE ACTUAL JOB?
+           ENTER ON: I want you to guess what this job actually is.
+           LEAVE ON: I want you to guess what this job actual...  (paragraph 1)
+           SOUND: none
+           RETURN: stays on camera
+
+  PARA 1   MODE: FULL SCREEN   (early edit, step 2)
+           ON-SCREEN TEXT: Senior Divisional Strategy Consultant, Gover...
+           ENTER ON: Senior Divisional Strategy Consultant, Governa...
+           LEAVE ON: Sounds like someone setting strategy and...  (paragraph 1)
            ASSET FAMILY: NEW_V6_FS_01_TITLE_ONLY
            STATES, IN REVEAL ORDER:
                NEW_V6_FS_01_TITLE_ONLY.png
-           EXACT TRIGGER:
-               I want you to guess what this job actually is. Senior
-               Divisional Strategy Consultant, Governance. Sounds pretty
-               senior, right? Sounds like someone setting strategy and
-               making big decisions.
+           SOUND: S1, one brief stinger on the title
+           RETURN: holds into the next paragraph
 
-  PARA 2   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN   (early edit, step 3)
+           ON-SCREEN TEXT: PUBLISHED RANGE START: $61,500 / ACCEPT DIRE...
+           ENTER ON: But when I read the actual posting, the bottom...
+           LEAVE ON: Nothing is wrong with either of those th...  (paragraph 2)
            ASSET FAMILY: NEW_V6_FS_02_THE_CONTRADICTION
            STATES, IN REVEAL ORDER:
                NEW_V6_FS_02A_FLOOR.png
                NEW_V6_FS_02B_FEEDBACK.png
-           EXACT TRIGGER:
-               But when I read the actual posting, the bottom of the pay
-               range was $61,500, and one of the requirements was being
-               able to accept direction and feedback. Nothing is wrong
-               with either of those things.
+           SOUND: S2, one brief stinger on the range floor
+           RETURN: camera returns on 'But they tell you something important'
 
-  PARA 3   MODE: CAMERA
-           But they tell you something important: The title did not t...
+  PARA 3   MODE: CAMERA   (early edit, step 4)
+           ON-SCREEN TEXT: THE TITLE IS NOT THE WHOLE JOB
+           ENTER ON: But they tell you something important: The tit...
+           LEAVE ON: The title did not tell you the job.  (paragraph 3)
+           SOUND: none
+           RETURN: stays on camera
 
-  PARA 4   MODE: FULL SCREEN
+  PARA 4   MODE: FULL SCREEN   (early edit, step 5)
+           ON-SCREEN TEXT: PROBLEM / AUTHORITY / PROOF / REAL GAP
+           ENTER ON: the four things I would read before deciding w...
+           LEAVE ON: And the first thing I would do is almost...  (paragraph 4)
            ASSET FAMILY: NEW_V6_FS_05_PARP
            STATES, IN REVEAL ORDER:
                NEW_V6_FS_05_PARP_FRAMEWORK.png
-           EXACT TRIGGER:
-               I reviewed 15 postings from 11 employers, and in the next
-               10 minutes, I am going to show you the four things I would
-               read before deciding whether a job is actually a fit for
-               your experience. And the first thing I would do is almost
-               ignore the title.
+           SOUND: none
+           RETURN: camera returns at STORY LOOP
 
 SECTION 2  STORY LOOP
 
@@ -78,16 +88,6 @@ SECTION 3  THE FOUR THINGS I READ
                done something close to it? Do I meet the real
                requirements? Those are not the same question.
 
-  PARA 2   MODE: FULL SCREEN
-           ASSET FAMILY: NEW_V6_FS_19_FOUR_THINGS
-           STATES, IN REVEAL ORDER:
-               NEW_V6_FS_19_FOUR_THINGS.png
-           EXACT TRIGGER:
-               Those four things help you answer three different
-               questions: Could I do this work? Can I prove that I have
-               done something close to it? Do I meet the real
-               requirements? Those are not the same question.
-
 SECTION 4  1 | PROBLEM
 
   PARA 1   MODE: CAMERA
@@ -109,8 +109,17 @@ SECTION 4  1 | PROBLEM
 
 SECTION 5  2 | AUTHORITY
 
-  PARA 1   MODE: CAMERA
-           Next, look at the verbs. Does the person decide? Lead? Neg...
+  PARA 1   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V6_FS_08_READ_THE_VERBS
+           STATES, IN REVEAL ORDER:
+               NEW_V6_FS_08_READ_THE_VERBS.png
+           EXACT TRIGGER:
+               One role focused much more on running the work and
+               reported to a Senior Director. Another led a
+               transformation office and worked directly with a Chief
+               Transformation Officer. Same broad title level. Very
+               different job. The title can start the search. It cannot
+               finish the read.
 
   PARA 2   MODE: CAMERA
            In that same posting, one of the key words was “supporting...
@@ -165,45 +174,26 @@ SECTION 8  WHY TITLES CAN MISLEAD YOU
   PARA 1   MODE: CAMERA
            I compared Director roles across different industries. The...
 
-  PARA 2   MODE: FULL SCREEN
-           ASSET FAMILY: NEW_V6_FS_08_READ_THE_VERBS
-           STATES, IN REVEAL ORDER:
-               NEW_V6_FS_08_READ_THE_VERBS.png
-           EXACT TRIGGER:
-               One role focused much more on running the work and
-               reported to a Senior Director. Another led a
-               transformation office and worked directly with a Chief
-               Transformation Officer. Same broad title level. Very
-               different job. The title can start the search. It cannot
-               finish the read.
-
-  PARA 2   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN   (1 of 2 in this paragraph)
            ASSET FAMILY: NEW_V6_FS_10_DIRECTOR_COMPARE
            STATES, IN REVEAL ORDER:
                NEW_V6_FS_10A_SAME_WORD.png
                NEW_V6_FS_10B_SCOPE.png
-           EXACT TRIGGER:
-               One role focused much more on running the work and
-               reported to a Senior Director. Another led a
-               transformation office and worked directly with a Chief
-               Transformation Officer. Same broad title level. Very
-               different job. The title can start the search. It cannot
-               finish the read.
+           ENTER ON: One role focused much more on running the work
+           LEAVE ON: worked directly with a Chief Transformation Of...
+           The camera does not return here. The next card in this
+           paragraph takes over on its own entry words.
 
-  PARA 2   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN   (2 of 2 in this paragraph)
            ASSET FAMILY: NEW_V6_FS_12_TITLE_TEST
            STATES, IN REVEAL ORDER:
                NEW_V6_FS_12A_SAME_WORD.png
                NEW_V6_FS_12B_DIFFERENT_WORK.png
                NEW_V6_FS_12C_DIFFERENT_AUTHORITY.png
                NEW_V6_FS_12D_DIFFERENT_CONTEXT.png
-           EXACT TRIGGER:
-               One role focused much more on running the work and
-               reported to a Senior Director. Another led a
-               transformation office and worked directly with a Chief
-               Transformation Officer. Same broad title level. Very
-               different job. The title can start the search. It cannot
-               finish the read.
+           ENTER ON: Same broad title level.
+           LEAVE ON: It cannot finish the read.
+           The camera returns at the end of this paragraph.
 
 SECTION 9  THE REVERSE CAN HAPPEN TOO
 
@@ -218,7 +208,7 @@ SECTION 9  THE REVERSE CAN HAPPEN TOO
                Staff, Governance Risk Compliance. The title does not tell
                you much.
 
-  PARA 2   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN   (1 of 2 in this paragraph)
            ASSET FAMILY: NEW_V6_FS_14_AUTHORITY_POSTURES
            STATES, IN REVEAL ORDER:
                NEW_V6_FS_14_AUTHORITY_POSTURES.png
@@ -226,24 +216,19 @@ SECTION 9  THE REVERSE CAN HAPPEN TOO
                NEW_V6_FS_14B_ADVISES.png
                NEW_V6_FS_14C_COORDINATES.png
                NEW_V6_FS_14D_SUBJECT_MATTER_EXPERT.png
-           EXACT TRIGGER:
-               But the work included leading federal authorization work,
-               advising leaders, working across teams, and serving as a
-               subject-matter expert. The published pay range went from
-               $180,000 to $440,000. In my sample, one of the least clear
-               titles sat on the highest published pay ceiling.
+           ENTER ON: But the work included leading federal authoriz...
+           LEAVE ON: serving as a subject-matter expert.
+           The camera does not return here. The next card in this
+           paragraph takes over on its own entry words.
 
-  PARA 2   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN   (2 of 2 in this paragraph)
            ASSET FAMILY: NEW_V6_FS_15_CEILING
            STATES, IN REVEAL ORDER:
                NEW_V6_FS_15A_RANGE.png
                NEW_V6_FS_15B_IN_THE_SAMPLE.png
-           EXACT TRIGGER:
-               But the work included leading federal authorization work,
-               advising leaders, working across teams, and serving as a
-               subject-matter expert. The published pay range went from
-               $180,000 to $440,000. In my sample, one of the least clear
-               titles sat on the highest published pay ceiling.
+           ENTER ON: The published pay range went from $180,000 to...
+           LEAVE ON: sat on the highest published pay ceiling.
+           The camera returns at the end of this paragraph.
 
   PARA 3   MODE: FULL SCREEN
            ASSET FAMILY: NEW_V6_FS_16_READ_THE_WORK
@@ -286,8 +271,15 @@ SECTION 11  USE IT ON A REAL JOB
 
 SECTION 12  TAKEAWAY VALUE
 
-  PARA 1   MODE: CAMERA
-           The win is not becoming perfect at reading job description...
+  PARA 1   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V6_FS_19_FOUR_THINGS
+           STATES, IN REVEAL ORDER:
+               NEW_V6_FS_19_FOUR_THINGS.png
+           EXACT TRIGGER:
+               Those four things help you answer three different
+               questions: Could I do this work? Can I prove that I have
+               done something close to it? Do I meet the real
+               requirements? Those are not the same question.
 
 SECTION 13  STORY LOOP PAYOFF
 

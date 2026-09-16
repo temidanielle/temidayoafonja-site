@@ -11,18 +11,18 @@ Preserve meaningful pauses.
 
 ------------------------------------------------------------------------------
 
-NEW_V8_FS_01_MEMORY_NOT_PROOF
-  SECTION 1, PARAGRAPH 3
+NEW_V8_FS_00_ACCESS_UNAVAILABLE
+  SECTION 1, PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V8_FS_01_MEMORY_NOT_PROOF.png
+      1. NEW_V8_FS_00_ACCESS_UNAVAILABLE.png
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
 
-NEW_V8_FS_07_TEN_MINUTE_HABIT
-  SECTION 1, PARAGRAPH 5
+NEW_V8_FS_01_MEMORY_NOT_PROOF
+  SECTION 1, PARAGRAPH 3
   REVEAL ORDER:
-      1. NEW_V8_FS_07_TEN_MINUTE_HABIT.png
+      1. NEW_V8_FS_01_MEMORY_NOT_PROOF.png
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
@@ -56,14 +56,6 @@ NEW_V8_FS_04_NOT_THE_ARTIFACT
             rust rule. Everything else quiet. Never two
             active at once.
 
-NEW_V8_FS_11_A_FACTUAL_RECORD
-  SECTION 5, PARAGRAPH 2
-  REVEAL ORDER:
-      1. NEW_V8_FS_11_A_FACTUAL_RECORD.png
-  EMPHASIS: active item in the warm yellow wash with the
-            rust rule. Everything else quiet. Never two
-            active at once.
-
 NEW_V8_FS_05_IN_YOUR_OWN_WORDS
   SECTION 6, PARAGRAPH 1
   REVEAL ORDER:
@@ -76,6 +68,22 @@ NEW_V8_FS_06_THE_DETAILS_BLUR
   SECTION 7, PARAGRAPH 3
   REVEAL ORDER:
       1. NEW_V8_FS_06_THE_DETAILS_BLUR.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
+NEW_V8_FS_07_TEN_MINUTE_HABIT
+  SECTION 8, PARAGRAPH 1
+  REVEAL ORDER:
+      1. NEW_V8_FS_07_TEN_MINUTE_HABIT.png
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+
+NEW_V8_FS_08_CAREER_HYGIENE
+  SECTION 9, PARAGRAPH 2
+  REVEAL ORDER:
+      1. NEW_V8_FS_08_CAREER_HYGIENE.png
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
@@ -100,14 +108,6 @@ NEW_V8_FS_12_CTA
   SECTION 14, PARAGRAPH 2
   REVEAL ORDER:
       1. NEW_V8_FS_12_CTA.png
-  EMPHASIS: active item in the warm yellow wash with the
-            rust rule. Everything else quiet. Never two
-            active at once.
-
-NEW_V8_FS_08_CAREER_HYGIENE
-  SECTION 16, PARAGRAPH 1
-  REVEAL ORDER:
-      1. NEW_V8_FS_08_CAREER_HYGIENE.png
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.

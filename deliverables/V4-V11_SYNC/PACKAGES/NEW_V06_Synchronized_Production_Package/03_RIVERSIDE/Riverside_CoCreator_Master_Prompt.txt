@@ -4,7 +4,7 @@ NEW PUBLIC V6  |  RIVERSIDE CO-CREATOR MASTER PROMPT
 
 Decode a Job Description in 10 Minutes
 Thumbnail: IGNORE THE TITLE
-Generated Wednesday, September 16, 2026 | 1:46 PM CT
+Generated Wednesday, September 16, 2026 | 3:16 PM CT
 
 1,096 spoken words. Planning estimate 7:33 to 8:25 at 130 to
 145 words per minute, provisional and arithmetic only. Nothing
@@ -46,9 +46,105 @@ HOW TO USE THIS
   first relevant beats while the voice continues. Do not
   reveal an answer before its spoken setup.
 
+  Every visual named in this prompt exists as a rendered state
+  in 04_VISUAL_ASSETS. Nothing here is a proposal.
+
 ------------------------------------------------------------------------------
 
-OPENING TREATMENT
+OPENING SEQUENCE, EXECUTABLE
+
+  Work these steps in order before the first teaching moment.
+  Each one names where it starts and stops inside the spoken
+  paragraph, so no passage is left to be reconciled between two
+  maps.
+
+  STEP 1  |  CAMERA
+      ON-SCREEN TEXT:
+          WHAT IS THE ACTUAL JOB?
+      ENTER ON THESE WORDS, section 1 HOOK, paragraph 1:
+          I want you to guess what this job actually is.
+      LEAVE ON THESE WORDS, paragraph 1:
+          I want you to guess what this job actually is.
+      ASSET: none. Editorial text over camera.
+      SOUND: none
+      RETURN: stays on camera
+      NOTE:
+          The question lands while she speaks. No framework, no
+          introduction first.
+
+  STEP 2  |  FULL SCREEN
+      ON-SCREEN TEXT:
+          Senior Divisional Strategy Consultant, Governance
+      ENTER ON THESE WORDS, section 1 HOOK, paragraph 1:
+          Senior Divisional Strategy Consultant, Governance.
+      LEAVE ON THESE WORDS, paragraph 1:
+          Sounds like someone setting strategy and making big
+          decisions.
+      ASSET FAMILY: NEW_V6_FS_01_TITLE_ONLY
+      STATES, IN REVEAL ORDER:
+          NEW_V6_FS_01_TITLE_ONLY.png
+      SOUND: S1, one brief stinger on the title
+      RETURN: holds into the next paragraph
+      NOTE:
+          Anonymized employer descriptor only. Salary and
+          requirement stay hidden until spoken.
+
+  STEP 3  |  FULL SCREEN
+      ON-SCREEN TEXT:
+          PUBLISHED RANGE START: $61,500 / ACCEPT DIRECTION AND
+          FEEDBACK
+      ENTER ON THESE WORDS, section 1 HOOK, paragraph 2:
+          But when I read the actual posting, the bottom of the
+          pay range was $61,500
+      LEAVE ON THESE WORDS, paragraph 2:
+          Nothing is wrong with either of those things.
+      ASSET FAMILY: NEW_V6_FS_02_THE_CONTRADICTION
+      STATES, IN REVEAL ORDER:
+          NEW_V6_FS_02A_FLOOR.png
+          NEW_V6_FS_02B_FEEDBACK.png
+      SOUND: S2, one brief stinger on the range floor
+      RETURN: camera returns on 'But they tell you something important'
+      NOTE:
+          Range floor on the first state, requirement on the
+          second. Paraphrase unless the capture packet supplies an
+          exact quote.
+
+  STEP 4  |  CAMERA
+      ON-SCREEN TEXT:
+          THE TITLE IS NOT THE WHOLE JOB
+      ENTER ON THESE WORDS, section 1 HOOK, paragraph 3:
+          But they tell you something important: The title did not
+          tell you the job.
+      LEAVE ON THESE WORDS, paragraph 3:
+          The title did not tell you the job.
+      ASSET: none. Editorial text over camera.
+      SOUND: none
+      RETURN: stays on camera
+      NOTE:
+          Her interpretation, on camera. One observed posting, not
+          a verdict on titles.
+
+  STEP 5  |  FULL SCREEN
+      ON-SCREEN TEXT:
+          PROBLEM / AUTHORITY / PROOF / REAL GAP
+      ENTER ON THESE WORDS, section 1 HOOK, paragraph 4:
+          the four things I would read before deciding whether a
+          job is actually a fit for your experience
+      LEAVE ON THESE WORDS, paragraph 4:
+          And the first thing I would do is almost ignore the
+          title.
+      ASSET FAMILY: NEW_V6_FS_05_PARP
+      STATES, IN REVEAL ORDER:
+          NEW_V6_FS_05_PARP_FRAMEWORK.png
+      SOUND: none
+      RETURN: camera returns at STORY LOOP
+      NOTE:
+          The sample boundary stays spoken: 15 postings, 11
+          employers.
+
+------------------------------------------------------------------------------
+
+OPENING TREATMENT, FROM THE BRIEF
 
   1. CAMERA + BRIEF EDITORIAL TEXT
      DISPLAY COPY:
@@ -158,17 +254,15 @@ TEACHING MOMENTS
          generic job-search footage. Optional second cutaway: a
          personal comparison page with the viewer’s proof and
          unanswered requirement.
-         Show examples as examples. Do not fabricate personal
-         outcomes, employer records, screenshots, research results,
-         or evidence. New visuals are proposed instructions here, not
-         delivered slide files.
          Sound, delivery and handoff
 
 ------------------------------------------------------------------------------
 
 ASSETS IN THIS PACKAGE
 
-  19 full-screen families, 38 rendered states, all 1920 x 1080.
+  19 full-screen families, 37 rendered teaching and end-card
+  states, all 1920 x 1080. One phone-size contact sheet sits
+  beside them and is not a state.
 
 ------------------------------------------------------------------------------
 

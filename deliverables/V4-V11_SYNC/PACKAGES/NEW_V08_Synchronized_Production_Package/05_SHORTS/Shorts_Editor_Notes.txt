@@ -23,16 +23,16 @@ SHARED RULES
 ------------------------------------------------------------------------------
 
 SHORT 1  |  Your Memory Stays. Your Dashboard Does Not.
-    LENGTH:  70 words, about 0:25 at 165 wpm, arithmetic
-    ONE ASK: That is why I think the worst time to reconstruct yo...
+    LENGTH:  125 words, about 0:45 at 165 wpm, arithmetic
+    ONE ASK: Pick one project and write five things in your own w...
 
 SHORT 2  |  Keep the Proof, Not the Property
-    LENGTH:  62 words, about 0:23 at 165 wpm, arithmetic
+    LENGTH:  81 words, about 0:29 at 165 wpm, arithmetic
     ONE ASK: Keep the proof.
 
 SHORT 3  |  The Worst Time to Rebuild Your Career Story
-    LENGTH:  62 words, about 0:23 at 165 wpm, arithmetic
-    ONE ASK: What would I be allowed to say outside this company?
+    LENGTH:  83 words, about 0:30 at 165 wpm, arithmetic
+    ONE ASK: That last question matters. You want a version of th...
 
 ------------------------------------------------------------------------------
 

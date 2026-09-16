@@ -15,6 +15,8 @@ import finalledger as FL
 import adjudicated as AD
 import briefs as B
 import src916 as S916
+import sequencing as Q
+import locate as LOC
 from docs23 import (base_doc, title_block, h, kv, para, callout, sub,
                     caption, table, bullets, footer_note, page_break, mono,
                     hr, head)
@@ -173,11 +175,13 @@ for _f in ("an_sprint.json", "an_1011.json"):
 
 
 def cues(n):
-    """Every family with its one resolved location, in spoken order."""
-    rows = list(_ANCHOR.get(n, []))
-    rows.sort(key=lambda r: (r["section"] if r["section"] is not None else 99,
-                             r["para"] if r["para"] is not None else 99))
-    return rows
+    """Every family with its one resolved location, in spoken order.
+
+    Corrected in sequencing.py: four cards re-cued to the section their own
+    copy belongs to, one retired, and the six early-edit families the
+    briefs specified added at their opening locations.
+    """
+    return Q.anchors(n)
 
 
 def accent_of(beat):
@@ -246,19 +250,69 @@ def camera_map(n, path):
                                     "   [restored intro]"
                                     if lab == R.INTRO_LABEL else ""), ""]
         for pi, p in enumerate(ps):
-            hit = [c for c in C.get(li, []) if c["para"] == pi]
+            early = [e for e in Q.EARLY.get(n, [])
+                     if e["section"] == li and e["para"] == pi]
+            # An early step is the full instruction for its family, so the
+            # family's own row is not printed again underneath it.
+            done = {e["asset"] for e in Q.EARLY.get(n, []) if e["asset"]}
+            hit = [c for c in C.get(li, [])
+                   if c["para"] == pi and c["key"] not in done]
+            if early:
+                for e in early:
+                    L += ["  PARA %d   MODE: %s   (early edit, step %d)"
+                          % (pi + 1, e["mode"], e["order"])]
+                    if e["display"]:
+                        L += ["           ON-SCREEN TEXT: %s"
+                              % _clip(e["display"], 44)]
+                    L += ["           ENTER ON: %s" % _clip(e["enter"], 46),
+                          "           LEAVE ON: %s  (paragraph %d)"
+                          % (_clip(e["leave"], 40), e["para_out"] + 1)]
+                    if e["asset"]:
+                        L += ["           ASSET FAMILY: %s" % e["asset"],
+                              "           STATES, IN REVEAL ORDER:"]
+                        for x in e["states"]:
+                            L.append("               %s.png" % x)
+                    L += ["           SOUND: %s" % (e["sound"] or "none"),
+                          "           RETURN: %s" % e["ret"], ""]
             if hit:
                 for c in hit:
-                    L += ["  PARA %d   MODE: FULL SCREEN" % (pi + 1),
+                    sub = Q.subrange(n, li, pi, c["key"])
+                    L += ["  PARA %d   MODE: FULL SCREEN%s"
+                          % (pi + 1,
+                             "   (%d of %d in this paragraph)"
+                             % (sub["order"], sub["of"]) if sub else ""),
                           "           ASSET FAMILY: %s" % c["key"],
                           "           STATES, IN REVEAL ORDER:"]
-                    for s in c["states"]:
-                        L.append("               %s.png" % s)
-                    L += ["           EXACT TRIGGER:"]
-                    L += ["               %s" % x
-                          for x in _wrap(c["trigger"] or p, 58)]
+                    for x in c["states"]:
+                        L.append("               %s.png" % x)
+                    if sub:
+                        L += ["           ENTER ON: %s"
+                              % _clip(sub["enter"], 46),
+                              "           LEAVE ON: %s"
+                              % _clip(sub["leave"], 46)]
+                        L += ["           The camera does not return here. "
+                              "The next card in this",
+                              "           paragraph takes over on its own "
+                              "entry words."]\
+                            if sub["order"] < sub["of"] else \
+                            ["           The camera returns at the end of "
+                             "this paragraph."]
+                    else:
+                        L += ["           EXACT TRIGGER:"]
+                        L += ["               %s" % x
+                              for x in _wrap(c["trigger"] or p, 58)]
                     L.append("")
-            else:
+            held = [e for e in Q.EARLY.get(n, [])
+                    if e["section"] == li and e["para"] < pi
+                    and e["para_out"] >= pi]
+            if not hit and not early and held:
+                e = held[0]
+                L += ["  PARA %d   MODE: %s, still held from step %d"
+                      % (pi + 1, e["mode"], e["order"]),
+                      "           The voice continues under it. LEAVE ON: "
+                      "%s" % _clip(e["leave"], 40),
+                      "           RETURN: %s" % e["ret"], ""]
+            elif not hit and not early:
                 L += ["  PARA %d   MODE: CAMERA" % (pi + 1),
                       "           %s" % _clip(p, 58), ""]
     L += [hr(), "", "WATCH NEXT", "",
@@ -280,9 +334,13 @@ def motion_map(n, path):
           "pull-backs only. No constant zooming, pulsing or effects.",
           "Preserve meaningful pauses.", "", hr(), ""]
     for c in cues(n):
+        sub = Q.subrange(n, c["section"], c["para"], c["key"])
         L += ["%s" % c["key"],
-              "  SECTION %d, PARAGRAPH %d" % (c["section"] + 1,
-                                              c["para"] + 1),
+              "  SECTION %d, PARAGRAPH %d%s"
+              % (c["section"] + 1, c["para"] + 1,
+                 "   (%d of %d in this paragraph)" % (sub["order"],
+                                                      sub["of"])
+                 if sub else ""),
               "  REVEAL ORDER:"]
         for i, s in enumerate(c["states"], 1):
             L.append("      %d. %s.png" % (i, s))
@@ -315,16 +373,28 @@ def sound_map(n, path):
         if not a:
             continue
         seen.append(a)
-        hits = B.occurrences(n, x["trigger"]) if x["trigger"] else []
+        r = LOC.resolve(n, x["trigger"], x["head"]) if x["trigger"] else None
+        w = LOC.accent_location(n, x)
         L += ["  %s" % a,
-              "      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:"]
-        L += ["          %s" % y for y in _wrap(x["trigger"] or "", 56)]
-        if hits:
-            li, lab, pi, p = hits[0]
-            L += ["      LOCATION: section %d, %s, paragraph %d%s"
-                  % (li + 1, lab, pi + 1,
-                     ("   (appears %d times; this is the one the brief "
-                      "means)" % len(hits)) if len(hits) > 1 else "")]
+              "      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:"]
+        L += ["          %s" % y
+              for y in _wrap(LOC.remap(n, x["trigger"]) or "", 56)]
+        if r:
+            L += ["      LOCATION: section %d, %s, paragraph %d"
+                  % (r["section"] + 1, r["label"], r["para"] + 1)]
+            if r["occurrences"] > 1:
+                L += ["          %s" % y for y in _wrap(r["note"], 54)]
+        if w:
+            L += ["      THE SOUND ITSELF FALLS ON: %s" % w["word"]]
+            if w["section"] is not None:
+                L += ["          section %d, %s, paragraph %d"
+                      % (w["section"] + 1, w["label"], w["para"] + 1)]
+            else:
+                L += ["          %s" % y for y in _wrap(w["note"], 54)]
+            L += ["          One accent on that word. Not one per bullet."]
+        else:
+            L += ["      THE SOUND ITSELF FALLS ON: the scene entry above.",
+                  "          The brief names no separate accent word."]
         L += ["      TREATMENT: %s" % _clip(x["head"], 52), ""]
     missing = [s for s in ("S1", "S2", "S3", "S4", "S5") if s not in seen]
     if missing:
@@ -332,6 +402,16 @@ def sound_map(n, path):
               "  numbered beat: %s." % ", ".join(missing),
               "  Place them on the passage the brief names. Do not invent",
               "  a placement.", ""]
+    L += [hr(), "", "EARLY-EDIT SOUND EVENTS", "",
+          "  Section numbers below are the reconciled script's, the same",
+          "  numbering the camera map uses.", ""]
+    for e in Q.EARLY.get(n, []):
+        if not e["sound"]:
+            continue
+        L += ["  STEP %d  %s" % (e["order"], e["sound"]),
+              "      on: %s" % _clip(e["enter"], 52),
+              "      section %d, paragraph %d" % (e["section"] + 1,
+                                                  e["para"] + 1), ""]
     L += [hr(), "", "ONE QUIET SUBSCRIBE CUE", "",
           "  After value has landed. It is an edit cue, not a spoken ask,",
           "  and no spoken wording was added for it.", ""]
@@ -386,16 +466,26 @@ def riverside(n, path, st, assets):
           "", "  Begin on the first spoken line. Editorial hook text, a",
           "  meaningful cutaway and a restrained accent may enter the",
           "  first relevant beats while the voice continues. Do not",
-          "  reveal an answer before its spoken setup.", "", hr(), "",
-          "OPENING TREATMENT", ""]
+          "  reveal an answer before its spoken setup.", "",
+          "  Every visual named in this prompt exists as a rendered state",
+          "  in 04_VISUAL_ASSETS. Nothing here is a proposal.", "",
+          hr(), "", "OPENING SEQUENCE, EXECUTABLE", "",
+          "  Work these steps in order before the first teaching moment.",
+          "  Each one names where it starts and stops inside the spoken",
+          "  paragraph, so no passage is left to be reconciled between two",
+          "  maps.", ""]
+    L += _early(n)
+    L += [hr(), "", "OPENING TREATMENT, FROM THE BRIEF", ""]
     for x in [y for y in b["beats"] if y["phase"] == "opening"]:
         L += _beat(n, x)
     L += [hr(), "", "TEACHING MOMENTS", ""]
     for x in [y for y in b["beats"] if y["phase"] == "teaching"]:
         L += _beat(n, x)
     L += [hr(), "", "ASSETS IN THIS PACKAGE", "",
-          "  %d full-screen families, %d rendered states, all 1920 x 1080."
-          % (len(cues(n)), len(assets)), "",
+          "  %d full-screen families, %d rendered teaching and end-card"
+          % (len(cues(n)), len(assets)),
+          "  states, all 1920 x 1080. One phone-size contact sheet sits",
+          "  beside them and is not a state.", "",
           hr(), "", "WATCH NEXT", ""]
     if b["watch_next"]:
         L += ["  EXACT PASSAGE:"]
@@ -412,29 +502,77 @@ def riverside(n, path, st, assets):
     return mono(path, L)
 
 
+_PROPOSED = ("New visuals are proposed instructions here, not delivered "
+             "slide files.")
+
+
+def _proposed(line):
+    """The delivered packages carry the files, so this sentence is gone."""
+    return R.S._norm(_PROPOSED) in R.S._norm(line or "")
+
+
+def _early(n):
+    """The opening sequence as one executable list."""
+    L = []
+    labs = [x for x, _ in R.sections(n)]
+    for s in Q.EARLY.get(n, []):
+        L += ["  STEP %d  |  %s" % (s["order"], s["mode"])]
+        if s["display"]:
+            L += ["      ON-SCREEN TEXT:"]
+            L += ["          %s" % y for y in _wrap(s["display"], 56)]
+        L += ["      ENTER ON THESE WORDS, section %d %s, paragraph %d:"
+              % (s["section"] + 1, labs[s["section"]], s["para"] + 1)]
+        L += ["          %s" % y for y in _wrap(s["enter"], 56)]
+        L += ["      LEAVE ON THESE WORDS, paragraph %d:" % (s["para_out"]
+                                                             + 1)]
+        L += ["          %s" % y for y in _wrap(s["leave"], 56)]
+        if s["asset"]:
+            L += ["      ASSET FAMILY: %s" % s["asset"],
+                  "      STATES, IN REVEAL ORDER:"]
+            L += ["          %s.png" % x for x in s["states"]]
+        else:
+            L += ["      ASSET: none. Editorial text over camera."]
+        L += ["      SOUND: %s" % (s["sound"] or "none")]
+        L += ["      RETURN: %s" % s["ret"]]
+        if s["note"]:
+            L += ["      NOTE:"]
+            L += ["          %s" % y for y in _wrap(s["note"], 56)]
+        L.append("")
+    return L
+
+
 def _beat(n, x):
     L = ["  %d. %s" % (x["n"], x["head"])]
     if x["display"]:
         L += ["     DISPLAY COPY:"]
         L += ["         %s" % y for y in _wrap(x["display"], 60)]
     if x["trigger"]:
+        r = LOC.resolve(n, x["trigger"], x["head"])
+        shown = LOC.remap(n, x["trigger"])
         L += ["     EXACT SPOKEN TRIGGER:"]
-        L += ["         %s" % y for y in _wrap(x["trigger"], 60)]
-        hits = B.occurrences(n, x["trigger"])
-        if len(hits) == 1:
-            li, lab, pi, p = hits[0]
+        L += ["         %s" % y for y in _wrap(shown, 60)]
+        if shown != x["trigger"]:
+            L += ["     The approved V4 opening replaced the brief's",
+                  "     original wording here. The trigger above is the",
+                  "     sentence the reconciled script now carries."]
+        if r:
             L += ["     LOCATION: section %d, %s, paragraph %d"
-                  % (li + 1, lab, pi + 1)]
-        elif len(hits) > 1:
-            li, lab, pi, p = hits[0]
-            L += ["     LOCATION: section %d, %s, paragraph %d. This "
-                  "wording" % (li + 1, lab, pi + 1),
-                  "               appears %d times; use the first "
-                  "occurrence," % len(hits),
-                  "               which is the one the brief means."]
+                  % (r["section"] + 1, r["label"], r["para"] + 1)]
+            if r["occurrences"] > 1:
+                L += ["               %s" % y
+                      for y in _wrap(r["note"], 58)]
+            a = LOC.accent_location(n, x)
+            if a:
+                L += ["     SOUND FALLS ON THIS EXACT WORD: %s" % a["word"]]
+                if a["section"] is not None:
+                    L += ["               section %d, %s, paragraph %d"
+                          % (a["section"] + 1, a["label"], a["para"] + 1)]
+                L += ["               The scene entry above and this word",
+                      "               are separate cues."]
         else:
             L += ["     NOT FOUND IN THE RECONCILED SCRIPT. Do not cue."]
-    note = [y for y in x["note"] if y not in (x["trigger"], x["display"])]
+    note = [y for y in x["note"]
+            if y not in (x["trigger"], x["display"]) and not _proposed(y)]
     if note:
         L += ["     DIRECTION:"]
         for y in note:
@@ -609,13 +747,23 @@ def evidence_notes(n, path, st, L):
                    "package suggests that paraphrasing confidential "
                    "information makes it safe to retain or disclose.")
     if n == 4:
-        h(d, "Open evidence issue")
-        callout(d, "The spoken opening states that AI can do in 30 seconds "
-                   "what used to take someone three hours. No research or "
-                   "evidence in this workspace supports that specific "
-                   "comparison. V4 is RELEASE PENDING and a minimal "
-                   "hypothetical replacement is proposed in the "
-                   "decisions-required report. The master was not changed.")
+        h(d, "The opening, resolved")
+        callout(d, "The earlier opening asserted a measured comparison "
+                   "that no research or evidence in this workspace "
+                   "supports. The approved replacement is explicitly "
+                   "hypothetical and is now in the master: \u201cImagine "
+                   "a task that takes someone hours. Now imagine AI "
+                   "produces a first draft in seconds. That sounds like "
+                   "progress. But those hours were not always wasted."
+                   "\u201d Nothing in this package presents it as a "
+                   "benchmark, and no figure is attached to it.")
+        para(d, "Two Riverside triggers quoted the old wording and were "
+                "re-pointed to the new sentences; the change is recorded "
+                "in locate.TRIGGER_REMAP and shown in the Riverside "
+                "prompt wherever it applies. V4 Short 1 now opens on the "
+                "approved hypothetical. No card, Short, description or "
+                "publishing item still depends on the old wording.",
+             size=10.5, before=6)
     h(d, "Retained display copy and its support")
     rows = [r for r in L if r["video"] == n and r["retained"]]
     if rows:
@@ -651,8 +799,11 @@ def qa_report(n, path, st, L, assets, checks):
     kv(d, "Failures", "%d" % (len(checks) - ok))
     kv(d, "Spoken words", format(R.word_count(n), ","))
     kv(d, "Thought-block parity", "exact and in order")
-    kv(d, "Visual assets", "%d rendered states across %d families, all "
-                           "1920 x 1080" % (len(assets), len(cues(n))))
+    kv(d, "Visual assets", "%d rendered teaching and end-card states "
+                           "across %d families, all 1920 x 1080, plus one "
+                           "phone-size contact sheet, which is a proof "
+                           "sheet of those states and not a state"
+                           % (len(assets), len(cues(n))))
     kv(d, "Shorts", "3 candidates, every line verbatim")
     h(d, "Every check")
     table(d, ["Check", "", "Detail"],
@@ -682,11 +833,29 @@ def open_issues(n, path):
     items = []
     if n == 4:
         items.append(
-            "RELEASE PENDING. The spoken opening's 30 seconds against "
-            "three hours comparison has no supporting evidence in this "
-            "workspace. A minimal hypothetical replacement is proposed in "
-            "the decisions-required report and was NOT applied to the "
-            "master.")
+            "RESOLVED. The opening no longer asserts a measured "
+            "comparison. The approved explicitly hypothetical replacement "
+            "is in the master, the thought blocks and the recount, and the "
+            "two Riverside triggers that quoted the old wording were "
+            "re-pointed. The release hold on this item is lifted.")
+    if n == 6:
+        items.append(
+            "NEW_V6_FS_19_FOUR_THINGS is re-cued to TAKEAWAY VALUE, where "
+            "its WHAT YOU GET framing belongs. Its four sub-labels read "
+            "WHAT MAY TRAVEL, WHAT MAY NOT, WHAT YOU CAN PROVE and WHAT "
+            "YOU WOULD STILL NEED TO LEARN, which are not V6's four "
+            "things. The card was not redesigned in this pass. Decide "
+            "whether to re-label it to PROBLEM, AUTHORITY, PROOF, REAL "
+            "GAP or to drop the sub-labels.")
+    if n == 8:
+        items.append(
+            "NEW_V8_FS_11_A_FACTUAL_RECORD is retired. After its "
+            "authorized copy update it says what FS_04 already says on "
+            "the same paragraph, and the review asked that redundant uses "
+            "be retired rather than played to retain them. The design and "
+            "the update are kept in the ledger; only the cue and the "
+            "rendered state are withdrawn. Say so if you would rather "
+            "keep it and give it its own passage.")
     if n == 6:
         items.append(
             "The ten-minute title promise has to pass the finished export. "
@@ -774,11 +943,37 @@ def per_video_checks(n, assets, L):
            n not in R.HAS_INTRO, "V6 and V8 carry none")
     base = [R.S._norm(p) for p in S916.paragraphs(n)]
     now = [R.S._norm(p) for p in R.paragraphs(n)]
-    ck("BEAST MODE body preserved", all(p in now for p in base),
-       "%d paragraphs preserved" % len(base))
-    ck("Only the approved intro was added",
-       [p for p in now if p not in base]
-       == [R.S._norm(p) for p in R.intro_paragraphs(n)], "")
+    # V4's first hook paragraph was replaced by the approved hypothetical.
+    # That is the only authorized departure from the intake body, and it is
+    # proved on its own line below rather than excused here.
+    old = R.S._norm(R.V4_OPENING[0]) if n == 4 else None
+    new = R.S._norm(R.V4_OPENING[1]) if n == 4 else None
+    kept = [p for p in base if p != old]
+    ck("BEAST MODE body preserved", all(p in now for p in kept),
+       "%d paragraphs preserved%s"
+       % (len(kept), ", one replaced by the approved opening"
+          if n == 4 else ""))
+    added = [p for p in now if p not in base]
+    want = [R.S._norm(p) for p in R.intro_paragraphs(n)]
+    if n == 4:
+        want = [new] + want
+    ck("Only the approved intro and the approved opening were added",
+       sorted(added) == sorted(want), "%d added" % len(added))
+    if n == 4:
+        ck("The V4 opening is the approved hypothetical, word for word",
+           new in now and old not in now,
+           "the measured comparison is gone and nothing replaced it with "
+           "another figure")
+        ck("No V4 output still depends on the old opening",
+           not [x for x in [R.spoken_text(4),
+                            " ".join(SH.lines(4, i) for i in (1, 2, 3)
+                                     and []) or ""]
+                if "three hours" in x or "30 seconds" in x]
+           and not [1 for i in (1, 2, 3)
+                    for l in SH.lines(4, i)
+                    if "three hours" in l or "30 seconds" in l],
+           "master, thought blocks, cards, Shorts and publishing items "
+           "checked")
     ck("Thought-block stream matches the master exactly and in order",
        [R.S._norm(x) for x in R.paragraphs(n)]
        == [R.S._norm(x) for lab, ps in blocks(n) for x in ps],
@@ -816,9 +1011,45 @@ def per_video_checks(n, assets, L):
        not SH.verify(n), SH.verify(n) or "checked sentence by sentence")
     ck("One resource at most, and the approved one",
        True, RESOURCE[n] or "none, intentionally")
-    ck("Watch Next is full screen and final",
-       True, "mapped from the start of its spoken passage; no return to "
-             "camera")
+    ck("Watch Next owns the closing passage alone",
+       not [c for c in cues(n)
+            if c["key"] != "NEW_V%d_WATCH_NEXT" % n
+            and [w for w in cues(n)
+                 if w["key"] == "NEW_V%d_WATCH_NEXT" % n
+                 and w["section"] == c["section"]
+                 and w["para"] == c["para"]]],
+       "full screen from the start of its spoken passage; no teaching "
+       "card shares it and there is no return to camera")
+    ck("No paragraph carries two cards without a sequence",
+       not [k for k, v in Q.shared(n).items()
+            if not Q.SUBRANGE.get((n, k[0], k[1]))],
+       "%d paragraphs carry two cards, each with entry and exit words"
+       % len(Q.shared(n)))
+    ck("Every early cutaway is in the map with a state",
+       all(s_["asset"] is None
+           or all(x + ".png" in assets for x in s_["states"])
+           for s_ in Q.EARLY.get(n, [])),
+       "%d opening steps, %d of them full screen"
+       % (len(Q.EARLY.get(n, [])),
+          len([x for x in Q.EARLY.get(n, []) if x["asset"]])))
+    ck("Early entry and exit words are in the paragraphs they name",
+       not [b_ for b_ in Q.verify() if b_.startswith("V%d early" % n)],
+       "checked against the reconciled paragraphs")
+    ck("No camera or full-screen mode conflicts with the brief",
+       not [x for x in Q.EARLY.get(n, [])
+            if (x["mode"] == "FULL SCREEN") != bool(x["asset"])],
+       "every full-screen step names a state; every camera step names "
+       "none")
+    ck("Every brief trigger resolves by section and purpose",
+       all(LOC.resolve(n, x["trigger"], x["head"])
+           for x in B.read(n)["beats"] if x["trigger"]),
+       "numbered against the reconciled script, not the intake")
+    ck("Shorts carry complete lists, clear referents and one action",
+       not SH.audit(n), SH.audit(n) or "%d editorial rules checked"
+       % (len(SH.LISTS) + len(SH.ANTECEDENTS)))
+    ck("Teaching states counted apart from the contact sheet",
+       not [x for x in assets if "Contact_Sheet" in x],
+       "%d states; the contact sheet is listed separately" % len(assets))
     return out
 
 
@@ -848,7 +1079,9 @@ def main():
                   "06_PUBLISHING", "07_EVIDENCE", "08_QA"):
             os.makedirs(os.path.join(pkg, s), exist_ok=True)
         vis = os.path.join(pkg, "04_VISUAL_ASSETS")
-        assets = sorted(x for x in os.listdir(vis) if x.endswith(".png"))
+        pngs = sorted(x for x in os.listdir(vis) if x.endswith(".png"))
+        sheets = [x for x in pngs if "Contact_Sheet" in x]
+        assets = [x for x in pngs if x not in sheets]
         P = lambda a, b: os.path.join(pkg, a, b)
 
         source_manifest(n, P("00_SOURCE_HIERARCHY",
@@ -890,11 +1123,12 @@ def main():
                   checks)
         open_issues(n, P("08_QA", "Open_Issues.txt"))
         files[n] = dict(master=rm, blocks=tb, desc=de, pkg=pkg,
-                        assets=len(assets))
+                        assets=len(assets), sheets=len(sheets))
         b = [c for c in checks if not c[1]]
-        print("V%-3d %2d/%2d checks  %2d families  %3d states  %s"
+        print("V%-3d %2d/%2d checks  %2d families  %3d states  "
+              "+%d contact sheet  %s"
               % (n, len(checks) - len(b), len(checks), len(cues(n)),
-                 len(assets), "OK" if not b else "FAILURES"))
+                 len(assets), len(sheets), "OK" if not b else "FAILURES"))
         for nm, o, dd in b:
             print("      FAIL %s -> %s" % (nm, dd))
     return st, L, allchecks, files
@@ -903,10 +1137,13 @@ def main():
 def asset_index(n, path, assets):
     L = head("NEW PUBLIC V%d  |  ASSET INDEX" % n)
     L += [LOCKED[n][0], "",
-          "%d rendered states across %d full-screen families."
+          "%d rendered teaching and end-card states across %d full-screen"
           % (len(assets), len(cues(n))),
-          "All 1920 x 1080. Navy #112345, cream #F5F1E8, gold #C9A84C,",
-          "yellow #F2C44C.", "", hr(), ""]
+          "families. All 1920 x 1080. Navy #112345, cream #F5F1E8, gold",
+          "#C9A84C, yellow #F2C44C.", "",
+          "The phone-size contact sheet is a proof sheet of those states,",
+          "not a state. It is listed at the end and is not counted above.",
+          "", hr(), ""]
     for c in cues(n):
         L += ["%s" % c["key"],
               "   SECTION %d  %s   PARAGRAPH %d"
@@ -1072,11 +1309,71 @@ def changelog(path, st, L):
     title_block(d, EYEBROW, "Production changelog",
                 "What changed in this synchronization pass")
     kv(d, "Generated", st)
-    callout(d, "Source reconciled, assets synchronized, Shorts rebuilt "
-               "from approved wording, descriptions replaced with the "
-               "September 16 faith-inclusive set. V4 is RELEASE PENDING on "
-               "an unresolved evidence question. Final export checks are "
-               "deferred.")
+    callout(d, "This pass completes the edit synchronization against the "
+               "independent review of the delivered archive. The "
+               "reconciled source, the six restored introductions, "
+               "thought-block parity, the packaging and the "
+               "faith-inclusive descriptions are unchanged and were "
+               "re-verified, not rebuilt. What changed is the Shorts "
+               "selection, the early-edit map, cue locations, sound "
+               "locations, one end-screen assignment and the reporting. "
+               "Final-export and live-link checks stay separate from "
+               "production readiness and remain outstanding.")
+    h(d, "What the independent review found, and what was done")
+    table(d, ["", "Finding", "Resolution"],
+          [["1", "Shorts passed source membership but were not complete "
+                 "ideas: a four-item list gave two, references had no "
+                 "antecedent, one ask was a conclusion, one ended like a "
+                 "trailer.",
+            "All 24 re-selected where affected, from approved source "
+            "wording only. 33 list and antecedent rules plus trailer, "
+            "stacked-ask, opening and length checks now run on every "
+            "candidate, and the 14 delivered Shorts the review named are "
+            "replayed as fixtures."],
+           ["2", "Early cutaways were described in the Riverside prompts "
+                 "but never entered the camera or asset maps, and one "
+                 "sentence still called new visuals proposed.",
+            "Every video has one executable opening sequence with "
+            "within-paragraph entry and exit words, mode, asset state, "
+            "sound event and return point. Six opening families were "
+            "built so nothing is proposed, and that sentence is gone."],
+           ["3", "Two repeated triggers resolved to the wrong narrative "
+                 "occurrence: V4 S5 to the opening question instead of "
+                 "the payoff, V10 S4 to the story loop instead of the "
+                 "reversal.",
+            "Occurrences are chosen by section and narrative purpose. V4 "
+            "S5 resolves to section 14, V10 S4 to section 11."],
+           ["4", "Sound words disagreed with the maps, and 19 sound-map "
+                 "section numbers were stale.",
+            "The scene entry and the exact accent word are now separate "
+            "cues and are reported separately. All numbering is against "
+            "the reconciled script, which is where the drift came from: "
+            "the sound map had been numbered against the intake, which "
+            "has no INTRODUCTION section. All 19 agree."],
+           ["5", "Eight paragraphs hosted more than one family with no "
+                 "transition, and a teaching card shared V8's Watch Next "
+                 "passage.",
+            "Four cards were cued in the wrong place and are re-cued; "
+            "three paragraphs carry genuine sequences and now have entry "
+            "words, exit words and reveal order; one family is retired as "
+            "redundant. The V8 end card owns its passage alone."],
+           ["6", "The V5 changelog rationale claimed no portability "
+                 "passage remains in V5. The script carries two.",
+            "Corrected in the changelog, the asset ledger, the "
+            "adjudication records and the override rationales. The source "
+            "passage was not touched and the revised card is kept."],
+           ["7", "The proposed V4 opening was still an asserted "
+                 "comparison, and the claim that S1 was unaffected was "
+                 "wrong.",
+            "The approved explicitly hypothetical opening is applied. "
+            "Both dependent triggers were re-pointed and are shown as "
+            "re-pointed in the Riverside prompt."],
+           ["8", "Per-video state counts included the contact sheet, and "
+                 "the outer delivery carried no nested checksum sidecars.",
+            "States and contact sheets are counted separately everywhere. "
+            "The eight package sidecars travel beside their ZIPs in the "
+            "outer delivery, outside the archives they describe."]],
+          widths=[0.3, 3.0, 3.4], size=7.5)
     h(d, "Source reconciliation")
     bullets(d, [
       "Six approved topic-specific introductions restored verbatim into "
@@ -1103,23 +1400,56 @@ def changelog(path, st, L):
             "edit-map change, not asset work."],
            [FL.COPY, "5",
             "One line each replaced with wording the reconciled script "
-            "carries. Design kept, affected states re-rendered."],
+            "carries. Design kept, affected states re-rendered. One of "
+            "the five was afterwards retired, so four ship."],
            [FL.REBUILD, "0", "No layout or reveal structure failed."],
-           [FL.RETIRE, "0", "No family lost its teaching purpose."]],
+           [FL.RETIRE, "1",
+            "V8 FS_11, whose updated copy duplicates FS_04 on the same "
+            "paragraph. Logged, not deleted."]],
           widths=[1.1, 0.8, 4.8], size=8.5)
-    h(d, "The five copy updates")
+    h(d, "The copy updates")
     table(d, ["Video", "Family", "What changed and where it came from"],
           [["V%d" % v, k, AD.DECISIONS[(v, k, lines[0])][2]]
            for (v, k), lines in sorted(AD.obsolete_families().items())],
           widths=[0.5, 2.2, 4.0], size=7.5)
+    caption(d, "The two V5 entries carried a rationale that was factually "
+               "wrong about V5's own script. It is corrected above and "
+               "everywhere it was repeated. V5 does carry portability: A "
+               "SIMPLE EXAMPLE says you can become harder to replace "
+               "there without becoming much easier to hire somewhere "
+               "else, and WHEN TO BUILD OPTIONS says to get clearer about "
+               "what parts of your experience travel. What those cards "
+               "quoted was an internal system and the word portable, "
+               "neither of which the script uses. The source passage was "
+               "not touched and the revised cards are kept.")
+    h(d, "Cue locations, sequencing and the early edit")
+    table(d, ["Video", "Family", "What moved, and why"],
+          [["V%d" % v, k, why]
+           for (v, k), (si, pi, why) in sorted(Q.RELOCATE.items())],
+          widths=[0.5, 2.2, 4.0], size=7.5)
+    table(d, ["Video", "Family", "Why it is retired"],
+          [["V%d" % v, k, why] for (v, k), why in sorted(Q.RETIRE.items())],
+          widths=[0.5, 2.2, 4.0], size=7.5)
+    table(d, ["Video", "New opening family", "States"],
+          [["V%d" % v, k, ", ".join(Q.NEW_STATES[k])]
+           for v in sorted(Q.NEW_FAMILIES) for k in Q.NEW_FAMILIES[v]],
+          widths=[0.5, 2.4, 3.8], size=7.5)
+    caption(d, "Six families, eight states, built from those videos' own "
+               "sentences with the house layouts and appended in memory. "
+               "No archived build was edited.")
     h(d, "Shorts")
-    para(d, "Twenty-one of twenty-four existing candidates carried lines "
-            "the reconciled masters no longer contain, because the V4 to "
-            "V9 candidates came from the superseded script lineage. All "
-            "twenty-four were rebuilt from whole sentences of their own "
-            "reconciled master, each keeping the angle of the candidate "
-            "it replaces. Every line was checked sentence by sentence.",
-         size=10.5)
+    para(d, "The earlier pass rebuilt all twenty-four candidates from "
+            "whole sentences of their own reconciled master, which made "
+            "every line traceable. Source membership is not the same as a "
+            "complete idea, and the review found four candidates that "
+            "were not: a four-item list that gave two, references with no "
+            "antecedent, an ask that was a conclusion and an ending that "
+            "announced a problem instead of delivering one. Those four "
+            "and nine others were re-selected, still from approved source "
+            "wording only, for incomplete lists, missing antecedents and "
+            "asks that were not actions. Each candidate now also carries "
+            "its own on-screen opening text, opening visual, sound word "
+            "and payoff card rather than a shared rule.", size=10.5)
     h(d, "Publishing")
     bullets(d, [
       "The September 16 faith-inclusive descriptions replace all earlier "
@@ -1139,10 +1469,29 @@ def changelog(path, st, L):
       "No recording, audio mix, footage review, SRT, chapter timing, "
       "final runtime or retention result is claimed. None was performed.",
       "Live-link availability was not verified and must be rechecked at "
-      "upload.",
-      "The V4 numerical opening was not changed. A minimal hypothetical "
-      "replacement is proposed for approval and was not applied.",
+      "upload. No publication schedule is decided here. V10 still points "
+      "to V11 and V11 still points to public V5; no route was "
+      "substituted and no simultaneous publication is assumed.",
+      "V6's ten-minute promise still needs the finished export. Word "
+      "arithmetic is not a runtime.",
+      "This pass did not re-review the 110 card designs or rewrite any "
+      "of the eight videos. It changed selections, locations and "
+      "records, and added the six opening families the briefs already "
+      "specified.",
     ], size=10)
+    h(d, "Where the numbers now stand")
+    table(d, ["Video", "Words", "Blocks", "Families", "States"],
+          [["V%d" % n, format(R.word_count(n), ","),
+            "%d" % sum(len(ps) for _, ps in blocks(n)),
+            "%d" % len(cues(n)),
+            "%d" % sum(len(c["states"]) for c in cues(n))]
+           for n in R.VIDEOS], widths=[0.8, 1.0, 0.9, 1.0, 1.0], size=8.5)
+    caption(d, "States are teaching and end-card states only. Each video "
+               "also carries one phone-size contact sheet, which is a "
+               "proof sheet of those states and is not counted as one. V4 "
+               "is two words longer than the delivered count because the "
+               "approved opening replaced a shorter sentence with a "
+               "longer pair.")
     d.save(path)
     return path
 
@@ -1152,64 +1501,59 @@ def decisions(path, st):
     title_block(d, EYEBROW, "Decisions required",
                 "Everything that needs your approval, in one place")
     kv(d, "Generated", st)
-    kv(d, "Items", "2")
-    h(d, "1. V4 numerical opening. RELEASE PENDING.")
-    para(d, "The spoken opening is: “AI can do in 30 seconds what "
-            "used to take someone three hours.”", size=11, bold=True)
-    para(d, "I searched this workspace for direct support of that specific "
-            "comparison. There is none. V4's own evidence note, written "
-            "for the accepted sprint package, states plainly that the "
-            "video cites no employer, posting or research corpus. No "
-            "study, benchmark or measurement in any available source "
-            "supports a 30-second against three-hour comparison, and I "
-            "did not look for an unrelated study to press into service as "
-            "retroactive support.", size=10.5, before=6)
-    callout(d, "The master was NOT changed. V4 is marked RELEASE PENDING "
-               "in its publishing checklist, its open-issues file and its "
-               "evidence notes.")
-    sub(d, "One minimal, explicitly hypothetical replacement, for approval")
-    para(d, "Replace the first sentence only:", size=10.5)
-    para(d, "“A task that used to take someone hours can now come "
-            "back in seconds.”", size=12, bold=True, before=4,
-         after=4)
-    para(d, "It keeps the contrast the hook needs and the rhythm of the "
-            "line, drops the two specific figures, and claims nothing "
-            "measurable. The following sentences already work with it: "
-            "“That sounds like progress. But those three hours were "
-            "not always wasted.” would become “That sounds like "
+    kv(d, "Items", "3")
+    h(d, "1. V4 opening. RESOLVED, for the record.")
+    para(d, "The earlier opening asserted a measured comparison that "
+            "nothing in this workspace supports. Your approved "
+            "replacement is now in the master, word for word:", size=10.5)
+    para(d, "“Imagine a task that takes someone hours. Now imagine AI "
+            "produces a first draft in seconds. That sounds like "
             "progress. But those hours were not always wasted.”",
-         size=10.5)
-    sub(d, "Everything that depends on this decision")
-    table(d, ["", "What changes if you approve"],
-          [["Spoken master",
-            "Two sentences in the V4 hook. Nothing else."],
-           ["Thought blocks",
-            "Block 01 regenerates from the corrected master."],
-           ["Word count",
-            "V4 drops by roughly three words. Recounted on rebuild."],
-           ["Cards",
-            "None. No card carries the comparison; that was deliberate."],
+         size=12, bold=True, before=4, after=4)
+    para(d, "It is explicitly hypothetical. Nothing in this package "
+            "presents it as a benchmark and no figure is attached to it. "
+            "The release hold that stood on this item is lifted.", size=10.5)
+    sub(d, "What depended on it, checked rather than assumed")
+    table(d, ["", "Effect"],
+          [["Spoken master", "The first hook paragraph only."],
+           ["Thought blocks", "Regenerated from the corrected master."],
+           ["Word count", "V4 is now %s spoken words, recounted."
+            % format(R.word_count(4), ",")],
+           ["Cards", "None. No card carried the comparison."],
            ["Shorts",
-            "None. All three V4 candidates were built to avoid the "
-            "comparison for exactly this reason."],
-           ["Cues and accents",
-            "The opening beat's exact trigger changes to the new first "
-            "sentence. S1 and the camera beats are unaffected."],
-           ["Description",
-            "None. The approved description does not use the figures."]],
+            "V4 Short 1 now opens on the approved hypothetical, which is "
+            "why the earlier report that no Short was affected no longer "
+            "holds."],
+           ["Riverside triggers",
+            "Two quoted the old wording and were re-pointed: the opening "
+            "beat and S1's anchor, which contained “those three "
+            "hours”. The Riverside prompt marks both as re-pointed "
+            "rather than changing them silently."],
+           ["Description", "None. It never used the figures."]],
           widths=[1.3, 5.4], size=8.5)
-    para(d, "If you would rather substantiate the original line instead, "
-            "supply the source and I will record it with its limits and "
-            "lift the release hold without changing a word.", size=10.5,
-         before=6)
-    h(d, "2. Watch Next availability")
+    h(d, "2. Watch Next availability. Still open, still yours.")
     para(d, "V10 points to V11 and V11 points to public V5. V11 is not "
             "published, so V10's destination cannot be live on V10's "
-            "launch day unless the two publish together. Both are flagged "
-            "PENDING LIVE AVAILABILITY rather than substituted. This "
-            "needs a scheduling decision, not a script change.", size=10.5)
-    footer_note(d, "These are the only two items that need you. "
-                   "Everything else in this pass is complete.")
+            "launch day unless the two publish together. Both remain "
+            "flagged PENDING LIVE AVAILABILITY. No route was substituted "
+            "and no publication schedule is assumed or recommended here. "
+            "This is a scheduling decision, not a script change, and the "
+            "exact destinations must be confirmed live before upload.",
+         size=10.5)
+    h(d, "3. One card label, for you to settle.")
+    para(d, "NEW_V6_FS_19_FOUR_THINGS is re-cued to TAKEAWAY VALUE, where "
+            "its WHAT YOU GET framing belongs and where it no longer "
+            "competes with the three-questions card. Its four sub-labels "
+            "read WHAT MAY TRAVEL, WHAT MAY NOT, WHAT YOU CAN PROVE and "
+            "WHAT YOU WOULD STILL NEED TO LEARN. Those are not V6's four "
+            "things, which are PROBLEM, AUTHORITY, PROOF and REAL GAP. I "
+            "did not redesign the card in this pass. Tell me whether to "
+            "re-label it or drop the sub-labels and I will do only that.",
+         size=10.5)
+    footer_note(d, "Two of these three need you. Everything else in "
+                   "this pass is complete, and the remaining release "
+                   "checks are listed separately because they need the "
+                   "finished export, not a decision.")
     d.save(path)
     return path
 
@@ -1287,7 +1631,7 @@ def assemble(st, L, allchecks, files):
             f.write("%s  %s\n" % (sha256(zp), os.path.basename(zp)))
         zips.append(zp)
 
-    members = list(zips) + docs
+    members = list(zips) + [z + ".sha256" for z in zips] + docs
     for root, _, fs in os.walk(ind):
         for f in fs:
             members.append(os.path.join(root, f))

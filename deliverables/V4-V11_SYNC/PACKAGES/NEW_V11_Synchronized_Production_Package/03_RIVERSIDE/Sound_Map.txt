@@ -19,34 +19,61 @@ carries the moment.
 THE FIVE ACCENTS
 
   S1
-      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
           You accepted one job. Then you started doing another.
       LOCATION: section 1, HOOK, paragraph 1
+      THE SOUND ITSELF FALLS ON: the scene entry above.
+          The brief names no separate accent word.
       TREATMENT: CAMERA, THEN TRUE FULL-SCREEN CUTAWAY | S1: brief so...
 
   S2
-      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
           EXPECTED. ACTUAL. COST. CHOICE.
-      LOCATION: section 1, HOOK, paragraph 3   (appears 2 times; this is the one the brief means)
+      LOCATION: section 1, HOOK, paragraph 3
+          appears 2 times; this is the occurrence in HOOK, which
+          is the treatment this beat names
+      THE SOUND ITSELF FALLS ON: the scene entry above.
+          The brief names no separate accent word.
       TREATMENT: HOOK | S2
 
   S3
-      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
           CAPABILITY. Is this role building judgment
-      LOCATION: section 6, THE FOUR COST LENSES, paragraph 1
+      LOCATION: section 7, THE FOUR COST LENSES, paragraph 1
+      THE SOUND ITSELF FALLS ON: the scene entry above.
+          The brief names no separate accent word.
       TREATMENT: THE FOUR COST LENSES | S3
 
   S4
-      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
           When we discussed this role, I expected X.
-      LOCATION: section 7, 4 | CHOICE, paragraph 2
+      LOCATION: section 8, 4 | CHOICE, paragraph 2
+      THE SOUND ITSELF FALLS ON: the scene entry above.
+          The brief names no separate accent word.
       TREATMENT: 4 | CHOICE | S4
 
   S5
-      ACCENT FALLS ON THIS EXACT SPOKEN WORDING:
+      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
           Name one real cost. Then choose one next action:
-      LOCATION: section 11, TAKEAWAY VALUE, paragraph 1
+      LOCATION: section 12, TAKEAWAY VALUE, paragraph 1
+      THE SOUND ITSELF FALLS ON: the scene entry above.
+          The brief names no separate accent word.
       TREATMENT: TAKEAWAY VALUE | S5
+
+------------------------------------------------------------------------------
+
+EARLY-EDIT SOUND EVENTS
+
+  Section numbers below are the reconciled script's, the same
+  numbering the camera map uses.
+
+  STEP 2  S1, one small click on the difference
+      on: Then you started doing another.
+      section 1, paragraph 1
+
+  STEP 5  S2, one short sound for the first reveal, not four
+      on: I use four questions for that: EXPECTED. ACTUAL. COS...
+      section 1, paragraph 3
 
 ------------------------------------------------------------------------------
 

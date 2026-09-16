@@ -4,9 +4,9 @@ NEW PUBLIC V4  |  RIVERSIDE CO-CREATOR MASTER PROMPT
 
 AI Took the Task. Who Gets the Experience?
 Thumbnail: WHO LEARNS NOW?
-Generated Wednesday, September 16, 2026 | 1:46 PM CT
+Generated Wednesday, September 16, 2026 | 3:16 PM CT
 
-1,034 spoken words. Planning estimate 7:07 to 7:57 at 130 to
+1,036 spoken words. Planning estimate 7:08 to 7:58 at 130 to
 145 words per minute, provisional and arithmetic only. Nothing
 here has been recorded, edited or exported.
 
@@ -45,16 +45,79 @@ HOW TO USE THIS
   first relevant beats while the voice continues. Do not
   reveal an answer before its spoken setup.
 
+  Every visual named in this prompt exists as a rendered state
+  in 04_VISUAL_ASSETS. Nothing here is a proposal.
+
 ------------------------------------------------------------------------------
 
-OPENING TREATMENT
+OPENING SEQUENCE, EXECUTABLE
+
+  Work these steps in order before the first teaching moment.
+  Each one names where it starts and stops inside the spoken
+  paragraph, so no passage is left to be reconciled between two
+  maps.
+
+  STEP 1  |  CAMERA
+      ON-SCREEN TEXT:
+          WHO LEARNS NOW?
+      ENTER ON THESE WORDS, section 1 HOOK, paragraph 1:
+          Imagine a task that takes someone hours.
+      LEAVE ON THESE WORDS, paragraph 1:
+          That sounds like progress.
+      ASSET: none. Editorial text over camera.
+      SOUND: none
+      RETURN: stays on camera
+      NOTE:
+          The question enters over her face during the first
+          sentence and clears. No benchmark, no figure, no timed
+          comparison.
+
+  STEP 2  |  FULL SCREEN
+      ON-SCREEN TEXT:
+          WHAT THE TASK TAUGHT
+      ENTER ON THESE WORDS, section 1 HOOK, paragraph 1:
+          But those hours were not always wasted.
+      LEAVE ON THESE WORDS, paragraph 2:
+          Where they started noticing patterns.
+      ASSET FAMILY: NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT
+      STATES, IN REVEAL ORDER:
+          NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT.png
+      SOUND: S1, one brief stinger on 'wasted'
+      RETURN: camera returns on 'So I think we are asking the wrong question'
+      NOTE:
+          Rows arrive with the sentences that name them:
+          repetition, fixing mistakes, seeing enough examples. Her
+          voice continues.
+
+  STEP 3  |  FULL SCREEN
+      ON-SCREEN TEXT:
+          WHO GETS THE EXPERIENCE?
+      ENTER ON THESE WORDS, section 1 HOOK, paragraph 3:
+          If AI takes the task, who gets the experience that used
+          to come from doing it?
+      LEAVE ON THESE WORDS, paragraph 3:
+          who gets the experience that used to come from doing it?
+      ASSET FAMILY: NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE
+      STATES, IN REVEAL ORDER:
+          NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE.png
+      SOUND: none
+      RETURN: camera returns on 'Because we still need experienced people later'
+      NOTE:
+          Reveal the question once. The consequence is hers, on
+          camera.
+
+------------------------------------------------------------------------------
+
+OPENING TREATMENT, FROM THE BRIEF
 
   1. CAMERA + BRIEF EDITORIAL TEXT
      DISPLAY COPY:
          WHO LEARNS NOW?
      EXACT SPOKEN TRIGGER:
-         AI can do in 30 seconds what used to take someone three
-         hours.
+         Imagine a task that takes someone hours.
+     The approved V4 opening replaced the brief's
+     original wording here. The trigger above is the
+     sentence the reconciled script now carries.
      LOCATION: section 1, HOOK, paragraph 1
      DIRECTION:
          Start on Temidayo speaking immediately. Bring in the short
@@ -66,7 +129,10 @@ OPENING TREATMENT
      DISPLAY COPY:
          WHAT THE TASK TAUGHT
      EXACT SPOKEN TRIGGER:
-         But those three hours were not always wasted.
+         But those hours were not always wasted.
+     The approved V4 opening replaced the brief's
+     original wording here. The trigger above is the
+     sentence the reconciled script now carries.
      LOCATION: section 1, HOOK, paragraph 1
      DIRECTION:
          Cut early to a minimal task card. Add “Mistakes” and
@@ -101,7 +167,11 @@ TEACHING MOMENTS
          TRUE FULL-SCREEN TEACHING | EXPOSURE / OWNERSHIP / FEEDBACK
      EXACT SPOKEN TRIGGER:
          First, exposure.
-     LOCATION: section 5, THREE THINGS TO WATCH, paragraph 1
+     LOCATION: section 6, THREE THINGS TO WATCH, paragraph 1
+     SOUND FALLS ON THIS EXACT WORD: OWNERSHIP
+               section 6, THREE THINGS TO WATCH, paragraph 2
+               The scene entry above and this word
+               are separate cues.
      DIRECTION:
          Activate each term only when taught. Use one quiet accent at
          OWNERSHIP, not three clicks for three bullets.
@@ -112,7 +182,7 @@ TEACHING MOMENTS
          THE ANSWER / EXPLAIN THE RECOMMENDATION
      EXACT SPOKEN TRIGGER:
          the learning may have moved to a different part of the work.
-     LOCATION: section 6, A SIMPLE EXAMPLE, paragraph 2
+     LOCATION: section 7, A SIMPLE EXAMPLE, paragraph 2
      DIRECTION:
          Use a recreated model-review note, not a fake company
          spreadsheet. Reveal the analyst’s decisions. Contrast with
@@ -124,7 +194,11 @@ TEACHING MOMENTS
          MINE
      EXACT SPOKEN TRIGGER:
          Pick one task AI now helps you do.
-     LOCATION: section 11, TRY THIS ON ONE TASK, paragraph 1
+     LOCATION: section 12, TRY THIS ON ONE TASK, paragraph 1
+     SOUND FALLS ON THIS EXACT WORD: STILL MINE
+               section 12, TRY THIS ON ONE TASK, paragraph 1
+               The scene entry above and this word
+               are separate cues.
      DIRECTION:
          Show one usable three-column page. Populate it only from the
          analyst example: choose assumptions / build first model /
@@ -137,9 +211,9 @@ TEACHING MOMENTS
          PRACTICING?
      EXACT SPOKEN TRIGGER:
          what is the person still getting better at?
-     LOCATION: section 2, STORY LOOP, paragraph 1. This wording
-               appears 2 times; use the first occurrence,
-               which is the one the brief means.
+     LOCATION: section 14, STORY LOOP PAYOFF, paragraph 1
+               appears 2 times; this is the occurrence in STORY LOOP
+               PAYOFF, which is the treatment this beat names
      DIRECTION:
          Return to the opening question using the same visual motif.
          Show the finished note, not a celebratory result.
@@ -148,17 +222,15 @@ TEACHING MOMENTS
          assumptions being inspected; a personal three-column note
          being completed. Label recreated artifacts ILLUSTRATION. Do
          not add stock robot or job-loss footage.
-         Show examples as examples. Do not fabricate personal
-         outcomes, employer records, screenshots, research results,
-         or evidence. New visuals are proposed instructions here, not
-         delivered slide files.
          Sound, delivery and handoff
 
 ------------------------------------------------------------------------------
 
 ASSETS IN THIS PACKAGE
 
-  12 full-screen families, 16 rendered states, all 1920 x 1080.
+  12 full-screen families, 15 rendered teaching and end-card
+  states, all 1920 x 1080. One phone-size contact sheet sits
+  beside them and is not a state.
 
 ------------------------------------------------------------------------------
 

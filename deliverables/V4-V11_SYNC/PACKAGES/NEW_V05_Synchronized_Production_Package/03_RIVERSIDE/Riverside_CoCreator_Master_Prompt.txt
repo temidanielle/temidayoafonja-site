@@ -4,7 +4,7 @@ NEW PUBLIC V5  |  RIVERSIDE CO-CREATOR MASTER PROMPT
 
 If Your Company Needs You but Won’t Grow You
 Thumbnail: USEFUL. STILL STUCK.
-Generated Wednesday, September 16, 2026 | 1:46 PM CT
+Generated Wednesday, September 16, 2026 | 3:16 PM CT
 
 966 spoken words. Planning estimate 6:39 to 7:25 at 130 to
 145 words per minute, provisional and arithmetic only. Nothing
@@ -44,9 +44,66 @@ HOW TO USE THIS
   first relevant beats while the voice continues. Do not
   reveal an answer before its spoken setup.
 
+  Every visual named in this prompt exists as a rendered state
+  in 04_VISUAL_ASSETS. Nothing here is a proposal.
+
 ------------------------------------------------------------------------------
 
-OPENING TREATMENT
+OPENING SEQUENCE, EXECUTABLE
+
+  Work these steps in order before the first teaching moment.
+  Each one names where it starts and stops inside the spoken
+  paragraph, so no passage is left to be reconciled between two
+  maps.
+
+  STEP 1  |  CAMERA
+      ON-SCREEN TEXT:
+          NEEDED. STILL STUCK?
+      ENTER ON THESE WORDS, section 1 HOOK, paragraph 1:
+          Your company can need you so much that it becomes one of
+          the reasons you stop growing.
+      LEAVE ON THESE WORDS, paragraph 1:
+          But think about what happens to the person everyone
+          depends on.
+      ASSET: none. Editorial text over camera.
+      SOUND: none
+      RETURN: stays on camera
+      NOTE:
+          The contradiction appears during the first sentence. No
+          logo introduction.
+
+  STEP 2  |  FULL SCREEN
+      ON-SCREEN TEXT:
+          FIX IT / COVER IT / TRAIN THEM
+      ENTER ON THESE WORDS, section 1 HOOK, paragraph 2:
+          Something breaks, they call you.
+      LEAVE ON THESE WORDS, paragraph 2:
+          A new person joins, you train them.
+      ASSET FAMILY: NEW_V5_FS_01_NEEDED_NOT_GROWN
+      STATES, IN REVEAL ORDER:
+          NEW_V5_FS_01_NEEDED_NOT_GROWN.png
+      SOUND: S1, one soft notification click on the first request only
+      RETURN: camera returns on 'Then a bigger opportunity opens'
+      NOTE:
+          Illustrative work requests, not an employer chat.
+
+  STEP 3  |  CAMERA
+      ON-SCREEN TEXT:
+          SOMEONE ELSE
+      ENTER ON THESE WORDS, section 1 HOOK, paragraph 3:
+          And they choose someone else.
+      LEAVE ON THESE WORDS, paragraph 3:
+          And they choose someone else.
+      ASSET: none. Editorial text over camera.
+      SOUND: none
+      RETURN: stays on camera
+      NOTE:
+          Back on her before the line, so the reaction is hers. A
+          brief silence is enough. No rejection sound.
+
+------------------------------------------------------------------------------
+
+OPENING TREATMENT, FROM THE BRIEF
 
   1. CAMERA + BRIEF EDITORIAL TEXT
      DISPLAY COPY:
@@ -98,7 +155,7 @@ TEACHING MOMENTS
          TRUE FULL-SCREEN CONTRAST | MORE WORK / NEW DECISIONS?
      EXACT SPOKEN TRIGGER:
          But no new decisions.
-     LOCATION: section 4, WHAT THIS CAN LOOK LIKE, paragraph 1
+     LOCATION: section 5, WHAT THIS CAN LOOK LIKE, paragraph 1
      DIRECTION:
          Keep the distinction about development, not automatic
          entitlement to promotion. Introduce the missing development
@@ -110,7 +167,7 @@ TEACHING MOMENTS
          REQUEST
      EXACT SPOKEN TRIGGER:
          What could I own in the next six months
-     LOCATION: section 7, ASK FOR DEVELOPMENT, NOT ONLY MORE WORK, paragraph 3
+     LOCATION: section 8, ASK FOR DEVELOPMENT, NOT ONLY MORE WORK, paragraph 3
      DIRECTION:
          Use the exact complete manager question from this paragraph,
          revealed in readable parts as spoken. Let the viewer picture
@@ -121,7 +178,7 @@ TEACHING MOMENTS
          TRUE FULL-SCREEN WORKING NOTE | REVIEW WHAT CHANGED
      EXACT SPOKEN TRIGGER:
          Let’s come back to this in 90 days.
-     LOCATION: section 10, SET A REVIEW POINT, paragraph 1
+     LOCATION: section 11, SET A REVIEW POINT, paragraph 1
      DIRECTION:
          Show the review date and the questions about learning,
          decisions, recognition and work removed. No fake promise or
@@ -133,7 +190,7 @@ TEACHING MOMENTS
          CAPABILITY
      EXACT SPOKEN TRIGGER:
          more of your capacity, or expanding your capability?
-     LOCATION: section 13, STORY LOOP PAYOFF, paragraph 1
+     LOCATION: section 14, STORY LOOP PAYOFF, paragraph 1
      DIRECTION:
          Pay off the first work-request cards with the distinction.
          Return to camera for the boundary on what the employer may
@@ -143,17 +200,15 @@ TEACHING MOMENTS
          accumulating tasks; a review-date note beside the
          development request. No angry-manager or resignation
          montage.
-         Show examples as examples. Do not fabricate personal
-         outcomes, employer records, screenshots, research results,
-         or evidence. New visuals are proposed instructions here, not
-         delivered slide files.
          Sound, delivery and handoff
 
 ------------------------------------------------------------------------------
 
 ASSETS IN THIS PACKAGE
 
-  11 full-screen families, 12 rendered states, all 1920 x 1080.
+  11 full-screen families, 11 rendered teaching and end-card
+  states, all 1920 x 1080. One phone-size contact sheet sits
+  beside them and is not a state.
 
 ------------------------------------------------------------------------------
 

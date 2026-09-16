@@ -23,11 +23,11 @@ SHARED RULES
 ------------------------------------------------------------------------------
 
 SHORT 1  |  Read the Verb Before You Trust the Title
-    LENGTH:  58 words, about 0:21 at 165 wpm, arithmetic
-    ONE ASK: But do not only ask, “Is this senior?”
+    LENGTH:  76 words, about 0:28 at 165 wpm, arithmetic
+    ONE ASK: But do not only ask, “Is this senior?” Ask, “What is...
 
 SHORT 2  |  The $61,500 Strategy Title
-    LENGTH:  80 words, about 0:29 at 165 wpm, arithmetic
+    LENGTH:  101 words, about 0:37 at 165 wpm, arithmetic
     ONE ASK: And the first thing I would do is almost ignore the...
 
 SHORT 3  |  The Title That Tells You Almost Nothing

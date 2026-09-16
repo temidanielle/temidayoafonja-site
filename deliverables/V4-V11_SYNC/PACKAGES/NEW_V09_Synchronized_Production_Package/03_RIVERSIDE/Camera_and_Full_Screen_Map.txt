@@ -15,20 +15,32 @@ teaching card.
 
 SECTION 1  HOOK
 
-  PARA 1   MODE: CAMERA
-           I think some transferable-skills advice gives experienced...
+  PARA 1   MODE: CAMERA   (early edit, step 1)
+           ON-SCREEN TEXT: NOT EVERYTHING TRAVELS
+           ENTER ON: I think some transferable-skills advice gives...
+           LEAVE ON: Some of it absolutely can.  (paragraph 1)
+           SOUND: none
+           RETURN: stays on camera
 
-  PARA 2   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN   (early edit, step 2)
+           ON-SCREEN TEXT: WHAT COMES WITH ME? / WHAT STAYS BEHIND?
+           ENTER ON: The problem is that we spend so much time aski...
+           LEAVE ON: What am I leaving behind?  (paragraph 2)
            ASSET FAMILY: NEW_V9_FS_01_INCOMPLETE_QUESTION
            STATES, IN REVEAL ORDER:
                NEW_V9_FS_01_INCOMPLETE_QUESTION.png
-           EXACT TRIGGER:
-               The problem is that we spend so much time asking, What can
-               I take with me? that we avoid the harder question: What am
-               I leaving behind?
+           SOUND: S1, one quiet paper-switch
+           RETURN: camera returns within the paragraph
 
-  PARA 3   MODE: CAMERA
-           Your judgment may travel. Your relationships may not. Your...
+  PARA 3   MODE: FULL SCREEN   (early edit, step 3)
+           ON-SCREEN TEXT: JUDGMENT: MAY TRAVEL / RELATIONSHIPS: MAY NO...
+           ENTER ON: Your judgment may travel.
+           LEAVE ON: Your knowledge of that company’s systems...  (paragraph 3)
+           ASSET FAMILY: NEW_V9_FS_00_MAY_TRAVEL
+           STATES, IN REVEAL ORDER:
+               NEW_V9_FS_00_MAY_TRAVEL.png
+           SOUND: none
+           RETURN: camera returns on 'And a new industry may still require regulation'
 
   PARA 4   MODE: CAMERA
            And a new industry may still require regulation, credentia...
@@ -41,16 +53,6 @@ SECTION 1  HOOK
                NEW_V9_FS_03B_WHAT_DOES_NOT.png
                NEW_V9_FS_03C_WHAT_CAN_I_PROVE.png
                NEW_V9_FS_03D_WHAT_MUST_I_RELEARN.png
-           EXACT TRIGGER:
-               I would make four columns: What travels? What does not?
-               What can I prove? What must I relearn? Because changing
-               industries without starting over does not mean pretending
-               you have nothing left to learn.
-
-  PARA 5   MODE: FULL SCREEN
-           ASSET FAMILY: NEW_V9_FS_12_THE_AUDIT_AGAIN
-           STATES, IN REVEAL ORDER:
-               NEW_V9_FS_12_THE_AUDIT_AGAIN.png
            EXACT TRIGGER:
                I would make four columns: What travels? What does not?
                What can I prove? What must I relearn? Because changing
@@ -251,8 +253,15 @@ SECTION 17  CLOSE
   PARA 1   MODE: CAMERA
            So yes, ask what transfers. Just do not stop there.
 
-  PARA 2   MODE: CAMERA
-           Ask: What travels? What does not? What can I prove? What m...
+  PARA 2   MODE: FULL SCREEN
+           ASSET FAMILY: NEW_V9_FS_12_THE_AUDIT_AGAIN
+           STATES, IN REVEAL ORDER:
+               NEW_V9_FS_12_THE_AUDIT_AGAIN.png
+           EXACT TRIGGER:
+               I would make four columns: What travels? What does not?
+               What can I prove? What must I relearn? Because changing
+               industries without starting over does not mean pretending
+               you have nothing left to learn.
 
   PARA 3   MODE: CAMERA
            That is how you change context without pretending you are...

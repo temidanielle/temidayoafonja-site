@@ -2,10 +2,11 @@
 NEW PUBLIC V4  |  OPEN ISSUES
 ==============================================================================
 
-1. RELEASE PENDING. The spoken opening's 30 seconds against three
-   hours comparison has no supporting evidence in this workspace. A
-   minimal hypothetical replacement is proposed in the
-   decisions-required report and was NOT applied to the master.
+1. RESOLVED. The opening no longer asserts a measured comparison. The
+   approved explicitly hypothetical replacement is in the master, the
+   thought blocks and the recount, and the two Riverside triggers
+   that quoted the old wording were re-pointed. The release hold on
+   this item is lifted.
 
 2. Final runtime, audio mix, footage review, SRT, chapters and
    live-link availability are all deferred to the finished export and

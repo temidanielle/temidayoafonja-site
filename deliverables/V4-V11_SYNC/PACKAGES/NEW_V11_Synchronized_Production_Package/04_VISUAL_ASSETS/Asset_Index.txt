@@ -4,11 +4,26 @@ NEW PUBLIC V11  |  ASSET INDEX
 
 What to Do When Your New Job Isn’t the Job You Accepted
 
-27 rendered states across 13 full-screen families.
-All 1920 x 1080. Navy #112345, cream #F5F1E8, gold #C9A84C,
-yellow #F2C44C.
+27 rendered teaching and end-card states across 14 full-screen
+families. All 1920 x 1080. Navy #112345, cream #F5F1E8, gold
+#C9A84C, yellow #F2C44C.
+
+The phone-size contact sheet is a proof sheet of those states,
+not a state. It is listed at the end and is not counted above.
 
 ------------------------------------------------------------------------------
+
+NEW_V11_FS_00_ACCEPTED_AND_DOING
+   SECTION 1  HOOK   PARAGRAPH 1
+      1. NEW_V11_FS_00_ACCEPTED_AND_DOING.png
+
+NEW_V11_FS_01_FOUR_QUESTIONS
+   SECTION 1  THE ROLE-DRIFT READ   PARAGRAPH 3
+      1. NEW_V11_FS_01_ESTABLISH.png
+      2. NEW_V11_FS_01A_EXPECTED.png
+      3. NEW_V11_FS_01B_ACTUAL.png
+      4. NEW_V11_FS_01C_COST.png
+      5. NEW_V11_FS_01D_CHOICE.png
 
 NEW_V11_FS_02_WRITE_IT_DOWN
    SECTION 4  1 | EXPECTED   PARAGRAPH 2
@@ -50,14 +65,6 @@ NEW_V11_FS_09_THE_ROLE_DRIFT_READ
       3. NEW_V11_FS_09B_ACTUAL.png
       4. NEW_V11_FS_09C_COST.png
       5. NEW_V11_FS_09D_CHOICE.png
-
-NEW_V11_FS_01_FOUR_QUESTIONS
-   SECTION 10  THE ROLE-DRIFT READ   PARAGRAPH 2
-      1. NEW_V11_FS_01_ESTABLISH.png
-      2. NEW_V11_FS_01A_EXPECTED.png
-      3. NEW_V11_FS_01B_ACTUAL.png
-      4. NEW_V11_FS_01C_COST.png
-      5. NEW_V11_FS_01D_CHOICE.png
 
 NEW_V11_FS_10_THE_BOUNDARY
    SECTION 11  THE BOUNDARY   PARAGRAPH 1

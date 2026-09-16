@@ -4,11 +4,23 @@ NEW PUBLIC V10  |  ASSET INDEX
 
 Your First 90 Days in a New Job: What Really Matters
 
-37 rendered states across 15 full-screen families.
-All 1920 x 1080. Navy #112345, cream #F5F1E8, gold #C9A84C,
-yellow #F2C44C.
+39 rendered teaching and end-card states across 17 full-screen
+families. All 1920 x 1080. Navy #112345, cream #F5F1E8, gold
+#C9A84C, yellow #F2C44C.
+
+The phone-size contact sheet is a proof sheet of those states,
+not a state. It is listed at the end and is not counted above.
 
 ------------------------------------------------------------------------------
+
+NEW_V10_FS_00_THE_PRESSURE
+   SECTION 1  HOOK   PARAGRAPH 2
+      1. NEW_V10_FS_00_THE_PRESSURE.png
+
+NEW_V10_FS_00B_TWO_DEFAULTS
+   SECTION 1  HOOK   PARAGRAPH 3
+      1. NEW_V10_FS_00B_FIX_TOO_SOON.png
+      2. NEW_V10_FS_00C_STAY_TOO_QUIET.png
 
 NEW_V10_FS_01_READ_TEST_PROVE
    SECTION 1  HOOK   PARAGRAPH 5

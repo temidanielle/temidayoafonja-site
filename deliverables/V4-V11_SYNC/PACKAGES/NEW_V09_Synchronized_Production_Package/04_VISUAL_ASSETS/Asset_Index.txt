@@ -4,15 +4,22 @@ NEW PUBLIC V9  |  ASSET INDEX
 
 Transferable Skills Advice Is Missing Something
 
-18 rendered states across 13 full-screen families.
-All 1920 x 1080. Navy #112345, cream #F5F1E8, gold #C9A84C,
-yellow #F2C44C.
+18 rendered teaching and end-card states across 14 full-screen
+families. All 1920 x 1080. Navy #112345, cream #F5F1E8, gold
+#C9A84C, yellow #F2C44C.
+
+The phone-size contact sheet is a proof sheet of those states,
+not a state. It is listed at the end and is not counted above.
 
 ------------------------------------------------------------------------------
 
 NEW_V9_FS_01_INCOMPLETE_QUESTION
    SECTION 1  HOOK   PARAGRAPH 2
       1. NEW_V9_FS_01_INCOMPLETE_QUESTION.png
+
+NEW_V9_FS_00_MAY_TRAVEL
+   SECTION 1  HOOK   PARAGRAPH 3
+      1. NEW_V9_FS_00_MAY_TRAVEL.png
 
 NEW_V9_FS_03_FOUR_QUESTIONS
    SECTION 1  HOOK   PARAGRAPH 5
@@ -21,10 +28,6 @@ NEW_V9_FS_03_FOUR_QUESTIONS
       3. NEW_V9_FS_03B_WHAT_DOES_NOT.png
       4. NEW_V9_FS_03C_WHAT_CAN_I_PROVE.png
       5. NEW_V9_FS_03D_WHAT_MUST_I_RELEARN.png
-
-NEW_V9_FS_12_THE_AUDIT_AGAIN
-   SECTION 1  HOOK   PARAGRAPH 5
-      1. NEW_V9_FS_12_THE_AUDIT_AGAIN.png
 
 NEW_V9_FS_02_WHY_THE_ADVICE_HELPS
    SECTION 4  WHY TRANSFERABLE-SKILLS ADVICE HELPS   PARAGRAPH 1
@@ -61,6 +64,10 @@ NEW_V9_FS_10_BOUNDARY
 NEW_V9_FS_11_FLUENCY_AND_PORTABILITY
    SECTION 13  WHY THIS CAN BE HARDER LATER IN YOUR CAREER   PARAGRAPH 3
       1. NEW_V9_FS_11_FLUENCY_AND_PORTABILITY.png
+
+NEW_V9_FS_12_THE_AUDIT_AGAIN
+   SECTION 17  HOOK   PARAGRAPH 2
+      1. NEW_V9_FS_12_THE_AUDIT_AGAIN.png
 
 NEW_V9_WATCH_NEXT
    SECTION 19  WATCH NEXT   PARAGRAPH 1
