@@ -77,6 +77,21 @@ PRECEDING = {
      "make a bigger decision.",
 }
 
+
+# The V4 opening, replaced by explicit authorization on September 16.
+#
+# The delivered wording asserted a capability and a time comparison that no
+# evidence in this workspace supports. The approved replacement is framed
+# as a hypothetical, so it claims nothing measurable, and it is never
+# presented as a benchmark anywhere in the package.
+V4_OPENING = (
+ "AI can do in 30 seconds what used to take someone three hours. That "
+ "sounds like progress. But those three hours were not always wasted.",
+ "Imagine a task that takes someone hours. Now imagine AI produces a "
+ "first draft in seconds. That sounds like progress. But those hours were "
+ "not always wasted.",
+)
+
 _INTRO = {}
 
 
@@ -113,9 +128,28 @@ def intros():
     return _INTRO
 
 
+def _apply_v4_opening(base):
+    """Swap V4's first hook paragraph for the approved hypothetical."""
+    out = []
+    done = False
+    for lab, ps in base:
+        ps2 = list(ps)
+        for i, p in enumerate(ps2):
+            if not done and S._norm(p) == S._norm(V4_OPENING[0]):
+                ps2[i] = V4_OPENING[1]
+                done = True
+        out.append((lab, ps2))
+    if not done:
+        raise SystemExit("V4: the opening paragraph to replace was not "
+                         "found in the current master")
+    return out
+
+
 def sections(n):
     """The reconciled sections, with the approved intro restored in place."""
     base = S.sections(n)
+    if n == 4:
+        base = _apply_v4_opening(base)
     if n not in HAS_INTRO:
         return list(base)
     want = BEFORE[n]
@@ -188,12 +222,22 @@ def verify():
     for n in VIDEOS:
         base = [S._norm(p) for p in S.paragraphs(n)]
         now = [S._norm(p) for p in paragraphs(n)]
+        if n == 4:
+            base = [S._norm(V4_OPENING[1]) if p == S._norm(V4_OPENING[0])
+                    else p for p in base]
         added = [p for p in now if p not in base]
         want = [S._norm(p) for p in intro_paragraphs(n)]
         ck("V%d adds only the approved intro paragraphs" % n,
            added == want, "%d added" % len(added))
         ck("V%d keeps every BEAST MODE paragraph" % n,
            all(p in now for p in base), "%d preserved" % len(base))
+    ck("V4 opening replaced with the approved hypothetical",
+       S._norm(V4_OPENING[1]) in S._norm(spoken_text(4))
+       and S._norm(V4_OPENING[0]) not in S._norm(spoken_text(4)),
+       "hypothetical framing, no measured comparison")
+    ck("V4 carries no 30 seconds or three hours claim",
+       "30 seconds" not in spoken_text(4)
+       and "three hours" not in spoken_text(4), "clean")
     for n in (6, 8):
         ck("V%d has no personal intro, intentionally" % n,
            n not in HAS_INTRO, "none restored")

@@ -1,0 +1,182 @@
+CAPABILITY FORMATION | INDEPENDENT DELIVERED-FILE REVIEW
+SEPTEMBER 16, 2026
+
+REVIEWED ARCHIVE
+YouTube_NEW_PUBLIC_V4-V11_SYNCHRONIZED_2026-09-16.zip
+SHA-256: 4f6c970966f3b56401f4ae410e7df9725239dfaddb69b9183cad4fdfaea77d6c
+Outer digest matches the separately uploaded sidecar. Outer entry count: 36.
+
+STATUS
+The source merge is verified. The production handoff is NOT yet fully edit-synchronized. The following are existing-scope corrections, not a new editorial rewrite or an instruction to redesign all assets.
+
+WHAT WAS INDEPENDENTLY CHECKED
+- All eight delivered masters compared with the actual early-edit intake, excluding only INTRODUCTION sections: body wording preserved.
+- Six restored introductions compared with the exact local recovery reference: exact, once each. V6/V8 contain no personal introduction.
+- Eight ordered spoken streams compared with thought-block copies, excluding labels/front matter and normalizing whitespace only: exact.
+- Recomputed words and blocks below match the delivered report.
+- Three spoken-framework repairs and V6's 'A global nonprofit' substitution retained.
+- All 24 individual master/block/description files equal their counterparts inside the nested video packages byte for byte.
+- Eight full descriptions equal the supplied faith-inclusive originals byte for byte.
+- 178 teaching/end-card PNG states checked for dimensions: all 1920 x 1080. Contact sheets counted separately.
+- All eight nested ZIPs pass CRC checks. The outer delivery contains no nested ZIP .sha256 sidecars, so no comparison against such supplied sidecars was possible.
+- All 168 extracted spoken segments across the 24 individual Shorts are present in their own reconciled masters after whitespace normalization. This proves source membership, NOT continuity or standalone meaning.
+- Direct reading of the script, Short, run-of-show, camera, motion, Riverside, sound, asset-index, evidence and publishing material for the cited findings.
+- Targeted visual checks of V4, V6 and V11 phone contact sheets; V11 Short 3 was rendered and inspected. V4 run of show was rendered and page 1 inspected. This is not an all-page visual audit of all documents/assets.
+
+NOT CLAIMED
+No rerun of Code's original 41/117/149-test implementation. No full original build-source review, complete historical-byte comparison, complete visual/source audit of every retained card, audio/footage review, timed export, SRT, chapter timing, live-link check, independent scientific/legal/scripture fact-check or retention result. Existing factual claims beyond the specifically discussed V4 opening remain outside this pass.
+
+RECOMPUTED SOURCE COUNTS
+VIDEO | WORDS | BLOCKS | INTRO WORDS | PNG STATES | FAMILIES
+V4 | 1034 | 33 | 74 | 15 | 12
+V5 | 966 | 31 | 42 | 11 | 11
+V6 | 1096 | 33 | 0 | 37 | 19
+V7 | 1170 | 41 | 86 | 18 | 14
+V8 | 889 | 34 | 0 | 18 | 13
+V9 | 1069 | 42 | 48 | 17 | 13
+V10 | 1701 | 46 | 62 | 36 | 15
+V11 | 1289 | 37 | 51 | 26 | 13
+
+FILE PATH CONVENTION
+Below, Vnn/ means the folder NEW_Vnn_Synchronized_Production_Package after extracting that video ZIP. Every cited path is inside the uploaded delivery except the standalone shared documents and the prior intake/recovery/description files used for comparison.
+
+1. SHORTS: SOURCE MEMBERSHIP IS NOT A COMPLETE IDEA
+V11/05_SHORTS/Individual/NEW_V11_Short_3.docx and Three_Candidate_Shorts.docx:
+- Says 'I would look at four costs.'
+- Includes CAPABILITY and EVIDENCE only. COMPENSATION and LIFE are omitted.
+- The ONE ASK paragraph is 'A mismatch can be manageable in one category and unacceptable in another.' That is a conclusion, not a request.
+- The missing categories matter to the user's stated aim of recognizing the whole person and real life constraints.
+
+V10/05_SHORTS/Individual/NEW_V10_Short_1.docx:
+- Includes 'Or you go the other direction.' and then 'I do not think either one is the job of your first 90 days.'
+- Omits the sentence explaining the other direction: staying quiet for fear of being wrong. The contrast is incomplete.
+
+V10/05_SHORTS/Individual/NEW_V10_Short_2.docx:
+- 'One thing those moves taught me...' has no prior moves in the selected excerpt.
+- 'It is to figure out three things...' lacks its original subject/context.
+
+V5/05_SHORTS/Individual/NEW_V05_Short_1.docx:
+- Ends its ONE ASK with 'That is the problem I want to unpack, because being needed and being developed are not the same thing.'
+- This announces more explanation rather than delivering the selected Short's promised application. Review as a standalone piece, not a trailer.
+
+Additional example for the manual review:
+V4 Short 3 jumps from the formation of senior judgment to 'That does not mean the future is doomed' without the original intervening risk setup. Not a fabrication, but an excerpt-continuity issue.
+
+REMEDY
+Audit all 24 for standalone meaning, complete comparisons/lists, clear referents, useful payoff, preserved limits and one natural action. Change only affected selections, from existing approved source language. Do not add invented bridge narration or another sales CTA. Do not mechanically equate the ONE ASK label with an actual ask. Provide candidate-specific text/visual/audio opening and payoff treatment, not just common rules.
+
+2. EARLY EDITING IS DESCRIBED BUT NOT INTEGRATED INTO THE CAMERA/ASSET MAP
+V11/03_RIVERSIDE/Riverside_CoCreator_Master_Prompt.txt, OPENING TREATMENT:
+- 'Switch to two simple document cards during the second sentence' of the hook.
+V11/03_RIVERSIDE/Camera_and_Full_Screen_Map.txt:
+- HOOK paragraphs 1-4 are CAMERA, as are STORY LOOP and INTRODUCTION.
+- Its first mapped full-screen family is in EXPECTED, section 4 paragraph 2.
+V11/04_VISUAL_ASSETS/Asset_Index.txt:
+- FS_01_FOUR_QUESTIONS is only mapped to section 10 THE ROLE-DRIFT READ, not the HOOK framework reveal specified in Riverside.
+
+V8 has the same category of discrepancy: the Riverside prompt requests an illustrative ACCESS UNAVAILABLE login cutaway on 'You cannot.' but the camera map leaves that passage CAMERA and the asset index does not identify its early login state.
+
+V4 also describes an early task-learning cutaway, while the family map starts later. The Riverside prompt still contains 'New visuals are proposed instructions here, not delivered slide files.'
+
+REMEDY
+Merge the detailed early brief and family map into one executable sequence with within-paragraph start/end words, modes, asset-state IDs and sound placement. Identify an existing usable state or deliver the minimal missing illustration. Keep voice continuous. No need to redesign valid later teaching cards. Do not require the editor to reconcile contradictory maps.
+
+3. REPEATED TRIGGERS RESOLVED TO THE WRONG NARRATIVE OCCURRENCE
+V4/03_RIVERSIDE/Sound_Map.txt, S5:
+- Treatment is STORY LOOP PAYOFF.
+- Locator is section 2 STORY LOOP paragraph 1, the opening question.
+- Correct narrative location is section 14 STORY LOOP PAYOFF paragraph 1.
+Riverside explicitly says to use the first occurrence and show the finished note. This is not the payoff occurrence.
+
+V10/03_RIVERSIDE/Sound_Map.txt, S4, and Riverside:
+- Treatment is the later reversal/callback 'They are not the only ones evaluating.'
+- Locator is section 2 STORY LOOP paragraph 1.
+- Later reversal is section 11 THE REVERSAL | THEY ARE NOT THE ONLY ONES EVALUATING paragraph 1.
+
+Selecting the first textual match is not semantic disambiguation. V11's repeated framework wording may legitimately use the hook; determine each occurrence by purpose, not one global first/last rule.
+
+4. SOUND WORDS AND SECTION NUMBERS STILL DISAGREE
+V4 Riverside teaching moment S2:
+- Says 'Use one quiet accent at OWNERSHIP, not three clicks for three bullets.'
+V4 Sound_Map S2:
+- Says the accent falls on 'First, exposure.'
+
+V4 Riverside S4:
+- Says 'Sound on STILL MINE.'
+V4 Sound_Map S4:
+- Says the accent falls on 'Pick one task AI now helps you do.'
+
+There are also 19 sound-map numerical section references that do not match the named section's number in the reconciled master. Examples and full list follow. Keep locator, exact event wording and instruction separate and verify all three after the intro merge.
+V4: THREE THINGS TO WATCH, para 1: delivered section 5; actual section 6.
+V4: A SIMPLE EXAMPLE, para 2: delivered section 6; actual section 7.
+V4: TRY THIS ON ONE TASK, para 1: delivered section 11; actual section 12.
+V5: WHAT THIS CAN LOOK LIKE, para 1: delivered section 4; actual section 5.
+V5: ASK FOR DEVELOPMENT, NOT ONLY MORE WORK, para 3: delivered section 7; actual section 8.
+V5: SET A REVIEW POINT, para 1: delivered section 10; actual section 11.
+V5: STORY LOOP PAYOFF, para 1: delivered section 13; actual section 14.
+V7: FOUR THINGS I LOOK FOR, para 1: delivered section 5; actual section 6.
+V7: A CONVERSATION YOU CAN HAVE, para 1: delivered section 8; actual section 9.
+V7: STORY LOOP PAYOFF, para 1: delivered section 13; actual section 14.
+V9: THE FOUR QUESTIONS, para 1: delivered section 4; actual section 5.
+V9: THINK OF IT LIKE SORTING, para 1: delivered section 9; actual section 10.
+V9: HOW TO TALK ABOUT THE GAP, para 2: delivered section 13; actual section 14.
+V9: STORY LOOP PAYOFF, para 1: delivered section 15; actual section 16.
+V10: THE CONVERSATION I WOULD HAVE, para 3: delivered section 7; actual section 8.
+V10: THE FIRST-90-DAYS READ, para 2: delivered section 11; actual section 12.
+V11: THE FOUR COST LENSES, para 1: delivered section 6; actual section 7.
+V11: 4 | CHOICE, para 2: delivered section 7; actual section 8.
+V11: TAKEAWAY VALUE, para 1: delivered section 11; actual section 12.
+
+5. MULTIPLE FAMILIES COMPETE FOR THE SAME PARAGRAPH / ENDING
+V6/03_RIVERSIDE/Camera_and_Full_Screen_Map.txt, section 8 WHY TITLES CAN MISLEAD YOU paragraph 2:
+- FS_08_READ_THE_VERBS, FS_10_DIRECTOR_COMPARE and FS_12_TITLE_TEST all use the same entire paragraph as their exact trigger.
+- There are no distinct entry/exit subranges for the three families' seven states.
+- Assign purposeful subparagraph timing or retire redundant uses. Do not run all states just to retain every old card.
+
+V8/03_RIVERSIDE/Camera_and_Full_Screen_Map.txt, section 16 WATCH NEXT paragraph 1:
+- FS_08_CAREER_HYGIENE and WATCH_NEXT both use the identical complete Watch Next passage.
+- The teaching card must not compete with the final end screen. Move it to its appropriate earlier teaching, or retire it if redundant. Watch Next remains full-screen from the start of its passage, final, with no subsequent teaching/camera return.
+
+Across the family tables, eight paragraph locations host multiple families. This is a diagnostic list, not a blanket failure rule: sequential use can be valid if each transition is specified.
+V4: ('6 THREE THINGS TO WATCH', '1'): NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT, NEW_V4_FS_05_THREE_THINGS
+V6: ('3 THE FOUR THINGS I READ', '2'): NEW_V6_FS_04_THREE_QUESTIONS, NEW_V6_FS_19_FOUR_THINGS
+V6: ('8 WHY TITLES CAN MISLEAD YOU', '2'): NEW_V6_FS_08_READ_THE_VERBS, NEW_V6_FS_10_DIRECTOR_COMPARE, NEW_V6_FS_12_TITLE_TEST
+V6: ('9 THE REVERSE CAN HAPPEN TOO', '2'): NEW_V6_FS_14_AUTHORITY_POSTURES, NEW_V6_FS_15_CEILING
+V8: ('5 THE IMPORTANT BOUNDARY', '2'): NEW_V8_FS_04_NOT_THE_ARTIFACT, NEW_V8_FS_11_A_FACTUAL_RECORD
+V8: ('16 WATCH NEXT', '1'): NEW_V8_FS_08_CAREER_HYGIENE, NEW_V8_WATCH_NEXT
+V9: ('1 HOOK', '5'): NEW_V9_FS_03_FOUR_QUESTIONS, NEW_V9_FS_12_THE_AUDIT_AGAIN
+V10: ('5 1 | READ', '4'): NEW_V10_FS_03_READ_FOUR_THINGS, NEW_V10_FS_04_FORMAL_VS_REAL
+
+6. V5 CHANGELOG RATIONALE IS FACTUALLY INCORRECT ABOUT ITS OWN SCRIPT
+V4-V11_PRODUCTION_CHANGELOG.docx says:
+'The reconciled V5 carries no portability or internal-system passage. That idea now lives in V9, not here.'
+and 'No portability language remains in the reconciled V5.'
+
+V5/01_RECORDING/Reconciled_Recording_Master.docx, A SIMPLE EXAMPLE, includes:
+'That makes you very valuable inside that company. But it can also make more and more of your value depend on knowing that one company. You can become harder to replace there without becoming much easier to hire somewhere else.'
+WHEN TO BUILD OPTIONS also says:
+'Get clearer about what parts of your experience travel.'
+
+Correct the provenance/rationale and related support records. The newer card wording may still be valid; this does not require blindly reverting it or rewriting the script. Do not delete the actual source passage to make the report true.
+
+7. V4 PROPOSAL IS NOT YET EXPLICITLY HYPOTHETICAL
+V4-V11_DECISIONS_REQUIRED.docx proposes:
+'A task that used to take someone hours can now come back in seconds.'
+This is still an asserted capability/time comparison. Removing precise figures is not the same as introducing a hypothetical.
+
+Recommended replacement for the first HOOK paragraph, not applied in this review:
+'Imagine a task that takes someone hours. Now imagine AI produces a first draft in seconds. That sounds like progress. But those hours were not always wasted.'
+
+The report's dependency claim that S1 is unaffected is incorrect: delivered V4 S1 is anchored to 'But those three hours were not always wasted.' That exact anchor must change too. Recheck all dependencies and recount after an approved source change.
+
+8. REPORTING AND PACKAGE COMPLETENESS
+- The overall 178 PNG state count is correct. Each per-video Asset_Index, Riverside assets paragraph and QA headline overcounts by one because the phone contact sheet is included. Correct to V4 15 / V5 11 / V6 37 / V7 18 / V8 18 / V9 17 / V10 36 / V11 26, plus one contact sheet per video.
+- The uploaded outer ZIP contains eight package ZIPs but none of their eight .sha256 sidecars. The separately uploaded outer sidecar is present and matches. Include or separately provide the nested sidecars as promised, beside the corresponding ZIPs, not inside the archives they describe.
+- The claim that all maps 'cannot disagree' is not justified by deriving some outputs from a common data structure. Compare the actual delivered outputs against narrative intent and required event placement.
+- No live availability was independently checked in this review. Preserve intended Watch Next routes and pending availability flags. Do not assert a current publication status or require simultaneous publication based solely on these files. No new schedule is approved here.
+- V6's final ten-minute promise, final captions, chapters, audio and video export checks remain deferred.
+
+EDITORIAL STANDARD TO PROTECT
+Keep the long-form voice, intros, useful teaching and faith descriptions. The user wants the viewer to feel understood without blame, see a genuine distinction and picture a useful next step. The remedy is better selection and execution, not more hype, sympathy footage or compulsory personal hardship stories.
+
+END OF REVIEW
