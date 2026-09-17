@@ -18,7 +18,7 @@ NEW_V11_FS_00_ACCEPTED_AND_DOING
       1. NEW_V11_FS_00_ACCEPTED_AND_DOING.png
 
 NEW_V11_FS_01_FOUR_QUESTIONS
-   SECTION 1  THE ROLE-DRIFT READ   PARAGRAPH 3
+   SECTION 1  HOOK   PARAGRAPH 3
       1. NEW_V11_FS_01_ESTABLISH.png
       2. NEW_V11_FS_01A_EXPECTED.png
       3. NEW_V11_FS_01B_ACTUAL.png
@@ -97,3 +97,5 @@ EDITABLE SOURCES
 PHONE-SIZE CONTACT SHEET
 
    Phone_Size_Contact_Sheet.png
+   A proof sheet of the 27 states above. It is not a state and
+   is not counted as one.

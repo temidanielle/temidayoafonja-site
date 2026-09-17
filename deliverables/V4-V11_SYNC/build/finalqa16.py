@@ -241,15 +241,77 @@ ck("No report claims the maps cannot disagree",
         for u in units(os.path.join(root, nm))
         if "cannot disagree" in u.lower()], "")
 
+# Every headline number the packages state, re-derived here from the same
+# single source and compared against what the documents actually say. The
+# 220 against 221 disagreement was a typed number going stale; a typed
+# number cannot survive this check.
+T = P.totals()
+ck("Thought blocks and the paragraphs inside them are counted apart",
+   T["blocks"] == sum(len(P.blocks(n)) for n in R.VIDEOS)
+   and T["paragraphs"] == sum(len(ps) for n in R.VIDEOS
+                              for _, ps in P.blocks(n))
+   and T["blocks"] != T["paragraphs"],
+   "%d thought blocks holding %d paragraphs" % (T["blocks"],
+                                                T["paragraphs"]))
+ck("Active, retired and total families all reconcile",
+   T["active_families"] + T["retired_families"] == T["total_families"]
+   and T["prior_families"] + T["new_families"] == T["total_families"],
+   "%d before this pass, plus %d new, is %d; %d retired leaves %d active"
+   % (T["prior_families"], T["new_families"], T["total_families"],
+      T["retired_families"], T["active_families"]))
+ck("States and contact sheets are counted apart",
+   T["states"] == sum(len([x for x in os.listdir(
+       os.path.join(OUT, "PACKAGES", P.PKG[n], "04_VISUAL_ASSETS"))
+       if x.endswith(".png") and "Contact_Sheet" not in x])
+       for n in R.VIDEOS)
+   and T["contact_sheets"] == len(R.VIDEOS),
+   "%d active states, %d contact sheets" % (T["states"],
+                                            T["contact_sheets"]))
+_a = P.v4_arithmetic()
+ck("V4's recount separates the introduction from the approved opening",
+   _a["base"] + _a["intro"] + _a["hook"] == _a["total"],
+   "%d + %d + %d = %d" % (_a["base"], _a["intro"], _a["hook"],
+                          _a["total"]))
+_retired_named = []
+for n in R.VIDEOS:
+    if not Q.retired(n):
+        continue
+    pkg = os.path.join(OUT, "PACKAGES", P.PKG[n])
+    us = []
+    for root, _, names in os.walk(pkg):
+        for nm in sorted(names):
+            if nm.endswith((".docx", ".txt")):
+                us.extend(units(os.path.join(root, nm)))
+    for r in Q.retired(n):
+        where = [u for u in us if r["key"] in u and "RETIRED" in u.upper()]
+        _retired_named.append((n, r["key"], len(where)))
+ck("Every retired family is marked RETIRED, not merely absent",
+   all(c > 0 for _, _, c in _retired_named),
+   ", ".join("V%d %s in %d places" % x for x in _retired_named)
+   or "none retired")
+
 bad = [r for r in Rw if not r[1]]
 for nm, o, d in Rw:
     if not o:
         print("FAIL  %s  ->  %s" % (nm, d))
+# The count this run produced is written out, and the documents read it
+# from here rather than carrying a typed number.
+_stated = T.get("final_checks")
+json.dump(dict(final_checks=len(Rw), passed=len(Rw) - len(bad),
+               stamp=P.stamp()), open(P.VERIFY_FILE, "w"), indent=1)
+if _stated is not None and _stated != len(Rw):
+    print("NOTE  the documents state %d final checks and this run has %d; "
+          "rebuild the packages so they agree" % (_stated, len(Rw)))
+elif _stated is None:
+    print("NOTE  no verification total was available when the documents "
+          "were written; rebuild the packages so they carry %d" % len(Rw))
 print("\nfinal verification: %d of %d passed" % (len(Rw) - len(bad),
                                                  len(Rw)))
 print("outer archive sha256 %s" % sha256(arc))
-print("\n%-5s %9s %9s %8s %8s %7s" % ("", "words", "blocks", "families",
+print("\n%-5s %9s %9s %8s %8s %7s" % ("", "words", "blocks", "active",
                                       "states", "shorts"))
+print("%-5s %9s %9s %8s %8s %7s" % ("", "", "thought", "families",
+                                    "teaching", ""))
 for n in R.VIDEOS:
     vis = os.path.join(OUT, "PACKAGES", P.PKG[n], "04_VISUAL_ASSETS")
     png = [x for x in os.listdir(vis)

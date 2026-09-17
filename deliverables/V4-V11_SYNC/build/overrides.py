@@ -67,6 +67,22 @@ def build(L):
        "CLOSE does not use; the idea of experience travelling is still in "
        "V5, in A SIMPLE EXAMPLE and WHEN TO BUILD OPTIONS."),
 
+     "NEW_V6_FS_19_FOUR_THINGS": (
+       "NEW_V6_FS_19_FOUR_THINGS",
+       lambda c: L.framework(
+           c, "what you get", "A cleaner read on four things.",
+           [("Problem", "What does this company need solved?"),
+            ("Authority", "What is this person trusted to decide?"),
+            ("Proof", "What would they need to see?"),
+            ("Real gap", "What may truly matter in their world?")]),
+       "The four sub-labels read What may travel, What may not, What you "
+       "can prove and What you would still need to learn. Those are V9's "
+       "four columns, not V6's four things. V6 reads PROBLEM, AUTHORITY, "
+       "PROOF and REAL GAP, named in THE FOUR THINGS I READ and repeated "
+       "in USE IT ON A REAL JOB, TAKEAWAY VALUE and the CLOSE. Each label "
+       "now carries the question that section asks. Approved by "
+       "Temidayo on September 17."),
+
      "NEW_V8_FS_11_A_FACTUAL_RECORD": (
        "NEW_V8_FS_11_A_FACTUAL_RECORD",
        lambda c: L.compare(

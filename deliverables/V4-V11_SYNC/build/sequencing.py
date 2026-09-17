@@ -422,7 +422,16 @@ _resolve_states()
 
 
 def anchors(n):
-    """Every cue for this video after relocation, retirement and addition."""
+    """Every cue for this video after relocation, retirement and addition.
+
+    A relocated card carries its whole locator with it. Moving the section
+    and paragraph while leaving the old label and the old trigger sentence
+    in place is what produced stale labels in the run-of-show and stale
+    EXACT TRIGGER passages in the camera map: the row pointed at the new
+    paragraph and quoted the old one. Both are re-derived here from the
+    reconciled script at the new location.
+    """
+    labs = [l for l, _ in R.sections(n)]
     rows = []
     for r in ANCHORS.get(n, []):
         if (n, r["key"]) in RETIRE:
@@ -432,6 +441,13 @@ def anchors(n):
         if move:
             r["section"], r["para"] = move[0], move[1]
             r["kind"] = "RE-CUED"
+        if r["section"] is not None:
+            r["label"] = labs[r["section"]]
+            if r["para"] is not None:
+                here = R.sections(n)[r["section"]][1][r["para"]]
+                q = R.S._norm(r.get("trigger") or "").lower()
+                if not q or q not in R.S._norm(here).lower():
+                    r["trigger"] = here
         rows.append(r)
     have = {r["key"] for r in rows}
     for step in EARLY.get(n, []):
@@ -442,6 +458,16 @@ def anchors(n):
                              r["para"] if r["para"] is not None else 99,
                              r["key"]))
     return rows
+
+
+def retired(n):
+    """Families withdrawn from this video's cue map, with the reason."""
+    return [dict(key=k, states=list(r["states"]), reason=RETIRE[(v, k)],
+                 was_section=r["section"], was_para=r["para"])
+            for (v, k), r in [((v_, k_), r_) for (v_, k_) in RETIRE
+                              if v_ == n
+                              for r_ in ANCHORS.get(n, [])
+                              if r_["key"] == k_]]
 
 
 def shared(n):

@@ -66,7 +66,7 @@ NEW_V9_FS_11_FLUENCY_AND_PORTABILITY
       1. NEW_V9_FS_11_FLUENCY_AND_PORTABILITY.png
 
 NEW_V9_FS_12_THE_AUDIT_AGAIN
-   SECTION 17  HOOK   PARAGRAPH 2
+   SECTION 17  CLOSE   PARAGRAPH 2
       1. NEW_V9_FS_12_THE_AUDIT_AGAIN.png
 
 NEW_V9_WATCH_NEXT
@@ -87,3 +87,5 @@ EDITABLE SOURCES
 PHONE-SIZE CONTACT SHEET
 
    Phone_Size_Contact_Sheet.png
+   A proof sheet of the 18 states above. It is not a state and
+   is not counted as one.

@@ -47,11 +47,11 @@ NEW_V8_FS_06_THE_DETAILS_BLUR
       1. NEW_V8_FS_06_THE_DETAILS_BLUR.png
 
 NEW_V8_FS_07_TEN_MINUTE_HABIT
-   SECTION 8  HOOK   PARAGRAPH 1
+   SECTION 8  THE 10-MINUTE HABIT   PARAGRAPH 1
       1. NEW_V8_FS_07_TEN_MINUTE_HABIT.png
 
 NEW_V8_FS_08_CAREER_HYGIENE
-   SECTION 9  WATCH NEXT   PARAGRAPH 2
+   SECTION 9  WHEN THE EXIT IS SUDDEN   PARAGRAPH 2
       1. NEW_V8_FS_08_CAREER_HYGIENE.png
 
 NEW_V8_FS_09_STILL_NOT_ENOUGH
@@ -80,6 +80,26 @@ EDITABLE SOURCES
 
 ------------------------------------------------------------------------------
 
+RETIRED. INACTIVE. DO NOT CUE.
+
+NEW_V8_FS_11_A_FACTUAL_RECORD   RETIRED
+   NO LOCATION. This family is not cued anywhere in this video.
+   Its state is not rendered into this package and must not be
+   reinstated without a decision.
+   WITHDRAWN STATE:
+      NEW_V8_FS_11_A_FACTUAL_RECORD.png   not present, by design
+   WHY:
+      After the authorized copy update this card reads NOT the
+      company's property / THIS a lawful record of your own work,
+      which is what FS_04 already says on the same paragraph.
+      Playing both is playing a state to retain it. The design and
+      the update are preserved in the ledger; only the cue is
+      withdrawn.
+
+------------------------------------------------------------------------------
+
 PHONE-SIZE CONTACT SHEET
 
    Phone_Size_Contact_Sheet.png
+   A proof sheet of the 18 states above. It is not a state and
+   is not counted as one.

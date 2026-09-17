@@ -25,7 +25,7 @@ SHARED RULES
 ------------------------------------------------------------------------------
 
 SHORT 1  |  Read the Verb Before You Trust the Title
-    LENGTH:   76 words, about 0:28 at 165 wpm, arithmetic
+    LENGTH:   77 words, about 0:28 at 165 wpm, arithmetic
     OPEN TEXT: not the same as setting the strategy
     OPEN SHOT: camera, 9:16
     SOUND:     one accent on “strategy”

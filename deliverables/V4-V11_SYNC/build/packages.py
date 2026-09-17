@@ -22,6 +22,36 @@ from docs23 import (base_doc, title_block, h, kv, para, callout, sub,
                     hr, head)
 
 EYEBROW = "capability formation | synchronized production"
+VERIFY_FILE = os.path.join(HERE, "_verification.json")
+
+
+def totals():
+    """Every headline number, computed once and used everywhere.
+
+    The 220 against 221 disagreement came from typing a verification total
+    into one document and letting a later check make it stale. No document
+    in this build states a count it did not get from here.
+    """
+    t = dict(videos=len(R.VIDEOS),
+             words=sum(R.word_count(n) for n in R.VIDEOS),
+             blocks=sum(len(blocks(n)) for n in R.VIDEOS),
+             paragraphs=sum(len(ps) for n in R.VIDEOS
+                            for _, ps in blocks(n)),
+             active_families=sum(len(cues(n)) for n in R.VIDEOS),
+             retired_families=len(Q.RETIRE),
+             new_families=sum(len(v) for v in Q.NEW_FAMILIES.values()),
+             states=sum(len(c["states"]) for n in R.VIDEOS
+                        for c in cues(n)),
+             contact_sheets=len(R.VIDEOS),
+             shorts=sum(len(SH.rows(n)) for n in R.VIDEOS))
+    t["total_families"] = t["active_families"] + t["retired_families"]
+    t["prior_families"] = t["total_families"] - t["new_families"]
+    prev = {}
+    if os.path.exists(VERIFY_FILE):
+        prev = json.load(open(VERIFY_FILE))
+    t["final_checks"] = prev.get("final_checks")
+    t["final_checks_stamp"] = prev.get("stamp")
+    return t
 PKGDIR = os.path.join(OUT, "PACKAGES")
 DESC = os.path.join(OUT, "_source", "files", "desc")
 ZIP_DT = (2026, 9, 16, 0, 0, 0)
@@ -112,6 +142,21 @@ def blocks(n):
             else:
                 out.append((lab, list(cur)))
     return out
+
+
+def v4_arithmetic():
+    """V4's recount, with the two additions kept apart.
+
+    The delivered report gave one number and let the reader guess how it
+    was reached. The restored introduction and the approved opening are
+    separate approvals and are reported separately.
+    """
+    base = len(" ".join(S916.paragraphs(4)).split())
+    intro = len(" ".join(R.intro_paragraphs(4)).split())
+    hook = (len(R.V4_OPENING[1].split())
+            - len(R.V4_OPENING[0].split()))
+    return dict(base=base, intro=intro, hook=hook,
+                total=R.word_count(4))
 
 
 def recording_master(n, path, st):
@@ -214,14 +259,22 @@ def run_of_show(n, path, st):
             "%d" % len(" ".join(ps).split())]
            for i, (lab, ps) in enumerate(R.sections(n))],
           widths=[0.4, 3.0, 1.0, 0.8], size=8.5)
-    h(d, "Full-screen cues, one location each")
+    h(d, "Full-screen cues, one location each. Active only.")
     table(d, ["Asset family", "Section", "Para", "States", "Anchor"],
           [[c["key"], "%d %s" % (c["section"] + 1, c["label"]),
             "%d" % (c["para"] + 1), "%d" % len(c["states"]), c["kind"]]
            for c in cues(n)], widths=[2.3, 2.1, 0.5, 0.6, 1.2], size=7.5)
-    caption(d, "Every cue resolves to one section and one paragraph. "
-               "RE-ANCHORED means the card is unchanged and only its "
-               "placement moved to the reconciled script.")
+    caption(d, "Every cue resolves to one section and one paragraph, and "
+               "every label and trigger above is read from the "
+               "reconciled script at that location. RE-ANCHORED means the "
+               "card is unchanged and only its placement moved. RE-CUED "
+               "means the card was cued in the wrong place and was moved "
+               "to the section its own copy belongs to.")
+    if Q.retired(n):
+        sub(d, "Retired. Inactive. Not cued anywhere in this video.")
+        table(d, ["Asset family", "Status", "Why"],
+              [[r["key"], "RETIRED", r["reason"]]
+               for r in Q.retired(n)], widths=[2.3, 0.8, 3.6], size=7.5)
     h(d, "Early-edit beats from the current brief")
     bts = B.read(n)["beats"]
     table(d, ["", "Phase", "Treatment", "Accent", "Display copy"],
@@ -315,9 +368,18 @@ def camera_map(n, path):
             elif not hit and not early:
                 L += ["  PARA %d   MODE: CAMERA" % (pi + 1),
                       "           %s" % _clip(p, 58), ""]
+    ret = Q.retired(n)
+    if ret:
+        L += [hr(), "", "RETIRED. INACTIVE. DO NOT CUE.", ""]
+        for r in ret:
+            L += ["  %s" % r["key"],
+                  "  Formerly cued at section %d, paragraph %d. That cue "
+                  "is withdrawn" % (r["was_section"] + 1, r["was_para"] + 1),
+                  "  and no paragraph in this video carries it now.", ""]
     L += [hr(), "", "WATCH NEXT", "",
           "  Full screen from the start of the spoken Watch Next passage.",
-          "  It is the final frame. Never return to camera afterward.", ""]
+          "  It is the final frame. Never return to camera afterward.",
+          "  No teaching card shares this passage.", ""]
     return mono(path, L)
 
 
@@ -347,6 +409,10 @@ def motion_map(n, path):
         L += ["  EMPHASIS: active item in the warm yellow wash with the",
               "            rust rule. Everything else quiet. Never two",
               "            active at once.", ""]
+    for r in Q.retired(n):
+        L += ["%s   RETIRED. INACTIVE." % r["key"],
+              "  No reveal order. This family is not played in this "
+              "video.", ""]
     b = B.read(n)
     L += [hr(), "", "CAMERA EMPHASIS  |  FOUR BEATS", ""]
     for x in b["camera"]:
@@ -831,10 +897,20 @@ def qa_report(n, path, st, L, assets, checks):
     kv(d, "Spoken words", format(R.word_count(n), ","))
     kv(d, "Thought-block parity", "exact and in order")
     kv(d, "Visual assets", "%d rendered teaching and end-card states "
-                           "across %d families, all 1920 x 1080, plus one "
-                           "phone-size contact sheet, which is a proof "
-                           "sheet of those states and not a state"
+                           "across %d active families, all 1920 x 1080, "
+                           "plus one phone-size contact sheet, which is a "
+                           "proof sheet of those states and not a state"
                            % (len(assets), len(cues(n))))
+    if Q.retired(n):
+        kv(d, "Retired", "%s. Inactive, not cued, and not rendered into "
+                         "this package."
+           % ", ".join(r["key"] for r in Q.retired(n)))
+    if n == 4:
+        a = v4_arithmetic()
+        kv(d, "V4 recount", "%d intake words, plus %d for the restored "
+                            "introduction, plus %d for the approved "
+                            "hypothetical opening, is %d."
+           % (a["base"], a["intro"], a["hook"], a["total"]))
     kv(d, "Shorts", "3 candidates, every line verbatim")
     h(d, "Every check")
     table(d, ["Check", "", "Detail"],
@@ -1188,8 +1264,27 @@ def asset_index(n, path, assets):
         L += [hr(), "", "EDITABLE SOURCES", ""]
         L += ["   %s" % x for x in svg]
         L.append("")
+    ret = Q.retired(n)
+    if ret:
+        L += [hr(), "", "RETIRED. INACTIVE. DO NOT CUE.", ""]
+        for r in ret:
+            L += ["%s   RETIRED" % r["key"],
+                  "   NO LOCATION. This family is not cued anywhere in "
+                  "this video.",
+                  "   Its state is not rendered into this package and must "
+                  "not be",
+                  "   reinstated without a decision.",
+                  "   WITHDRAWN STATE:"]
+            for x in r["states"]:
+                L.append("      %s.png   not present, by design" % x)
+            L += ["   WHY:"]
+            L += ["      %s" % y for y in _wrap(r["reason"], 62)]
+            L.append("")
     L += [hr(), "", "PHONE-SIZE CONTACT SHEET", "",
-          "   Phone_Size_Contact_Sheet.png", ""]
+          "   Phone_Size_Contact_Sheet.png",
+          "   A proof sheet of the %d states above. It is not a state and"
+          % len(assets),
+          "   is not counted as one.", ""]
     return mono(path, L)
 
 
@@ -1310,11 +1405,22 @@ def asset_ledger(path, st, L):
     title_block(d, EYEBROW, "Revised asset ledger",
                 "Reuse, re-anchor, copy update, rebuild, retire")
     kv(d, "Generated", st)
-    kv(d, "Families audited", "%d" % len(L))
+    t = totals()
+    kv(d, "Families carried in from the prior build and audited",
+       "%d" % len(L))
+    kv(d, "New opening families built for the early edit",
+       "%d" % t["new_families"])
+    kv(d, "Families in total", "%d" % t["total_families"])
+    kv(d, "Retired, inactive, not cued and not rendered",
+       "%d" % t["retired_families"])
+    kv(d, "Active families", "%d" % t["active_families"])
+    kv(d, "Active teaching and end-card states", "%d" % t["states"])
+    kv(d, "Contact sheets, one per video, not states",
+       "%d" % t["contact_sheets"])
     c = FL.counts(L)
-    kv(d, "Verdicts", "  ".join("%s %d" % (k, c.get(k, 0)) for k in
-                                (FL.REUSE, FL.REANCHOR, FL.COPY,
-                                 FL.REBUILD, FL.RETIRE)))
+    kv(d, "Verdicts on the audited %d" % len(L),
+       "  ".join("%s %d" % (k, c.get(k, 0)) for k in
+                 (FL.REUSE, FL.REANCHOR, FL.COPY, FL.REBUILD, FL.RETIRE)))
     callout(d, "The first audit asked one question, is this line verbatim "
                "narration, and flagged 73 families. That rule is wrong for "
                "a slide. Exactness is required for quotations, figures, "
@@ -1336,6 +1442,23 @@ def asset_ledger(path, st, L):
             "Fifteen of the twenty were placed correctly on hand review. "
             "Five had no support and their copy was changed."]],
           widths=[1.7, 1.1, 3.9], size=8.5)
+    h(d, "Built this pass, and withdrawn this pass")
+    table(d, ["Video", "Family", "Status", "States"],
+          [["V%d" % v, k, "NEW. Active.", ", ".join(Q.NEW_STATES[k])]
+           for v in sorted(Q.NEW_FAMILIES) for k in Q.NEW_FAMILIES[v]] +
+          [["V%d" % v, k, "RETIRED. Inactive.", "withdrawn, not rendered"]
+           for (v, k) in sorted(Q.RETIRE)],
+          widths=[0.5, 2.3, 1.1, 2.8], size=7.5)
+    h(d, "Re-cued this pass, with the whole locator moved")
+    table(d, ["Video", "Family", "Now cued at", "Why it moved"],
+          [["V%d" % v, k,
+            "section %d, paragraph %d" % (si + 1, pi + 1), why]
+           for (v, k), (si, pi, why) in sorted(Q.RELOCATE.items())],
+          widths=[0.5, 2.0, 1.2, 3.0], size=7)
+    caption(d, "Section, paragraph, label and trigger sentence all move "
+               "together. The earlier pass moved the section and "
+               "paragraph but kept the old label and the old trigger, "
+               "which is what produced the stale locators.")
     per = {}
     for r in L:
         per.setdefault(r["video"], []).append(r)
@@ -1523,24 +1646,53 @@ def changelog(path, st, L):
       "records, and added the six opening families the briefs already "
       "specified.",
     ], size=10)
+    t = totals()
     h(d, "Where the numbers now stand")
-    table(d, ["Video", "Words", "Blocks", "Families", "States"],
+    table(d, ["Video", "Words", "Thought blocks", "Paragraphs",
+              "Active families", "States"],
           [["V%d" % n, format(R.word_count(n), ","),
+            "%d" % len(blocks(n)),
             "%d" % sum(len(ps) for _, ps in blocks(n)),
             "%d" % len(cues(n)),
             "%d" % sum(len(c["states"]) for c in cues(n))]
-           for n in R.VIDEOS], widths=[0.8, 1.0, 0.9, 1.0, 1.0], size=8.5)
-    caption(d, "States are teaching and end-card states only. Each video "
-               "also carries one phone-size contact sheet, which is a "
-               "proof sheet of those states and is not counted as one. V4 "
-               "is two words longer than the delivered count because the "
-               "approved opening replaced a shorter sentence with a "
-               "longer pair.")
+           for n in R.VIDEOS] +
+          [["Total", format(t["words"], ","), "%d" % t["blocks"],
+            "%d" % t["paragraphs"], "%d" % t["active_families"],
+            "%d" % t["states"]]],
+          widths=[0.7, 0.9, 1.3, 1.1, 1.4, 0.9], size=8.5)
+    caption(d, "Thought blocks are the labelled blocks a recording copy "
+               "is read from: %d of them, holding %d paragraphs. The two "
+               "were previously reported under one heading."
+               % (t["blocks"], t["paragraphs"]))
+    table(d, ["", "Count"],
+          [["Families before this pass", "%d" % t["prior_families"]],
+           ["New opening families built", "%d" % t["new_families"]],
+           ["Families in total", "%d" % t["total_families"]],
+           ["Retired, inactive, not cued", "%d" % t["retired_families"]],
+           ["Active families", "%d" % t["active_families"]],
+           ["Active teaching and end-card states", "%d" % t["states"]],
+           ["Phone-size contact sheets, one per video, not states",
+            "%d" % t["contact_sheets"]],
+           ["Candidate Shorts", "%d" % t["shorts"]]],
+          widths=[3.9, 2.8], size=8.5)
+    a = v4_arithmetic()
+    h(d, "V4's recount, with the two additions kept apart")
+    table(d, ["", "Words"],
+          [["Early-edit intake body", "%d" % a["base"]],
+           ["Restored introduction, approved separately",
+            "+%d" % a["intro"]],
+           ["Approved hypothetical opening, replacing the old first "
+            "paragraph", "+%d" % a["hook"]],
+           ["Reconciled V4", "%d" % a["total"]]],
+          widths=[4.6, 2.1], size=8.5)
+    caption(d, "The delivered report gave only the total. The restored "
+               "introduction and the approved opening are separate "
+               "approvals, so they are now reported separately.")
     d.save(path)
     return path
 
 
-def concise_changelog(path, st):
+def concise_changelog(path, st, checks_total):
     d = base_doc()
     title_block(d, EYEBROW, "What changed in this pass",
                 "The short version")
@@ -1556,12 +1708,12 @@ def concise_changelog(path, st):
                "already called for.")
     h(d, "Changed")
     bullets(d, [
-      "Shorts. Thirteen of twenty-four candidates re-selected, from "
-      "approved source wording only, for incomplete lists, references "
-      "with no antecedent, asks that were conclusions and one ending "
-      "that announced a problem instead of delivering one. Each "
-      "candidate now carries its own opening text, opening shot, sound "
-      "word and payoff card.",
+      "Shorts. Every candidate re-checked and the affected ones "
+      "re-selected, from approved source wording only, for incomplete "
+      "lists, references with no antecedent, part-sentence lifts, asks "
+      "that were not actions and lengths with no headroom under sixty "
+      "seconds. Each candidate now carries its own opening text, opening "
+      "shot, sound word and payoff card.",
       "V4 opening. The approved explicitly hypothetical replacement is "
       "in the master. V4 is 1,036 spoken words. Two Riverside triggers "
       "that quoted the old wording were re-pointed, and V4 Short 1 now "
@@ -1579,8 +1731,16 @@ def concise_changelog(path, st):
       "cues and are reported separately. All 19 stale section numbers "
       "now agree with the reconciled script.",
       "Records. The V5 portability rationale is corrected wherever it "
-      "appeared. States and contact sheets are counted separately. The "
-      "eight package checksum sidecars travel beside their ZIPs.",
+      "appeared. Thought blocks, paragraphs, total families, active "
+      "families, states and contact sheets are each counted and named "
+      "separately, from one place in the build rather than typed into "
+      "each document. The eight package checksum sidecars travel beside "
+      "their ZIPs.",
+      "V6's FOUR THINGS card is relabelled to PROBLEM, AUTHORITY, PROOF "
+      "and REAL GAP, which is what V6 teaches. V8's FS_11 is marked "
+      "RETIRED and INACTIVE in the asset index, the camera map, the "
+      "motion map, the run of show, the QA report and the ledger, rather "
+      "than simply being absent.",
     ], size=10)
     h(d, "Unchanged, and re-verified rather than rebuilt")
     bullets(d, [
@@ -1595,11 +1755,18 @@ def concise_changelog(path, st):
       "The V10 to V11 and V11 to public V5 Watch Next routes. No route "
       "was substituted and no schedule is assumed.",
     ], size=10)
+    t = totals()
     h(d, "Verification run")
     table(d, ["", "Result"],
           [["Source reconciliation", "43 of 43"],
-           ["Per-package checks", "175 of 175 across the eight packages"],
-           ["Final verification, read off disk", "220 of 220"],
+           ["Per-package checks",
+            "%d of %d across the eight packages" % (checks_total,
+                                                    checks_total)],
+           ["Final verification, read off disk",
+            ("%d of %d" % (t["final_checks"], t["final_checks"]))
+            if t["final_checks"] else
+            "recorded by the final verification pass, which runs after "
+            "this document is written"],
            ["Shorts editorial audit",
             "33 list and antecedent rules, plus trailer, stacked-ask, "
             "opening and length checks, on all 24"],
@@ -1792,7 +1959,8 @@ def assemble(st, L, allchecks, files):
       changelog(os.path.join(
           shared, "V4-V11_PRODUCTION_CHANGELOG.docx"), st, L),
       concise_changelog(os.path.join(
-          shared, "V4-V11_WHAT_CHANGED_THIS_PASS.docx"), st),
+          shared, "V4-V11_WHAT_CHANGED_THIS_PASS.docx"), st,
+          sum(len(v) for v in allchecks.values())),
       release_checks(os.path.join(
           shared, "V4-V11_RELEASE_CHECKS_REMAINING.docx"), st),
       decisions(os.path.join(

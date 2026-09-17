@@ -258,10 +258,8 @@ SECTION 17  CLOSE
            STATES, IN REVEAL ORDER:
                NEW_V9_FS_12_THE_AUDIT_AGAIN.png
            EXACT TRIGGER:
-               I would make four columns: What travels? What does not?
-               What can I prove? What must I relearn? Because changing
-               industries without starting over does not mean pretending
-               you have nothing left to learn.
+               Ask: What travels? What does not? What can I prove? What
+               must I relearn?
 
   PARA 3   MODE: CAMERA
            That is how you change context without pretending you are...
@@ -288,3 +286,4 @@ WATCH NEXT
 
   Full screen from the start of the spoken Watch Next passage.
   It is the final frame. Never return to camera afterward.
+  No teaching card shares this passage.

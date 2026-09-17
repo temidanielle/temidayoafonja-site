@@ -117,3 +117,5 @@ EDITABLE SOURCES
 PHONE-SIZE CONTACT SHEET
 
    Phone_Size_Contact_Sheet.png
+   A proof sheet of the 39 states above. It is not a state and
+   is not counted as one.

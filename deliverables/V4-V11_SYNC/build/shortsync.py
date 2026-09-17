@@ -18,6 +18,12 @@ sys.path.insert(0, HERE)
 import recon as R
 
 WPM = 165
+# 165 words per minute is the upper bound for a Short. Vertical delivery
+# at the pace these scripts are written for runs closer to 150, so that is
+# the planning rate and the one the ceiling is applied to. Neither is a
+# measured runtime: the real one follows the exported vertical cut.
+PLANNING_WPM = 150
+CEILING_SECONDS = 55
 
 ANGLE = {
  (4, 1): "AI Took the Task. Who Gets the Experience?",
@@ -100,10 +106,9 @@ SHORTS = {
          "done before. We want you to learn it.”",
          "The problem is when the only thing growing is how much the "
          "company depends on you."],
-   ask=["Are they asking for more of your capacity, or expanding your "
-        "capability?",
-        "Once you can see that difference, you can stop confusing being "
-        "needed with moving forward."]),
+   ask=["Ask for one piece of work that builds a new decision, a new "
+        "problem, or new proof, and set a date to review what "
+        "changed."]),
  (5, 2): dict(
    stop=["Being useful can feel like career security."],
    hold=["Sometimes it is.",
@@ -117,21 +122,22 @@ SHORTS = {
  (5, 3): dict(
    stop=["If you take on extra work because the company needs you, set a "
          "time to review it."],
-   hold=["You can say, “Let’s come back to this in 90 days.”",
-         "Then ask: What became permanent? What did I learn? What "
+   hold=["Then ask: What became permanent? What did I learn? What "
          "decisions became mine?",
          "What recognition or role change comes with this? What am I "
-         "taking off my plate?"],
-   ask=["Without a review point, temporary extra work can quietly become "
-        "your normal job."]),
+         "taking off my plate?",
+         "Without a review point, temporary extra work can quietly become "
+         "your normal job."],
+   ask=["You can say, “Let’s come back to this in 90 "
+        "days.”"]),
 
  (6, 1): dict(
    stop=["Supporting the development of strategy is not the same as "
          "setting the strategy."],
    hold=["When I read a job description, I look for four things: PROBLEM. "
          "AUTHORITY. PROOF. REAL GAP.",
-         "look at the verbs. Does the person decide? Lead? Negotiate? "
-         "Recommend? Influence? Support? Execute?",
+         "Next, look at the verbs. Does the person decide? Lead? "
+         "Negotiate? Recommend? Influence? Support? Execute?",
          "That does not make the job unimportant.",
          "It tells you where the decision power may sit."],
    ask=["But do not only ask, “Is this senior?” Ask, “What "
@@ -186,9 +192,12 @@ SHORTS = {
    hold=["Ask what kind of responsibility.",
          "What decisions will I get to make? What problem will I own from "
          "beginning to end? What level of stakeholder will I work with? "
-         "What evidence would show that I am ready for the next level?"],
-   ask=["That changes the question from: “Can I help more?” to: "
-        "“What would let me practice the next level of work?”"]),
+         "What evidence would show that I am ready for the next level?",
+         "That changes the question from: “Can I help more?” to: "
+         "“What would let me practice the next level of work?”"],
+   ask=["You could say: “I want to be ready for larger scope. When "
+        "you think about the next level here, what would you need to see "
+        "me handle that you have not seen yet?”"]),
  (7, 3): dict(
    stop=["You may be doing hard work every day."],
    hold=["But if most of the work people see is rescue, cleanup, and "
@@ -233,12 +242,12 @@ SHORTS = {
    stop=["Most people think they will collect career evidence later."],
    hold=["But later is often when the details are hardest to remember. And "
          "sometimes later is after your access is already gone.",
-         "Once a month, take ten minutes and write down: What changed? "
-         "What was mine?",
-         "What was hard? What proof do I have? What would I be allowed to "
-         "say outside this company?"],
-   ask=["That last question matters. You want a version of the story that "
-        "is useful and also safe to carry with you."]),
+         "That is why evidence is easier to capture while the work is "
+         "still fresh."],
+   ask=["Once a month, take ten minutes and write down: What changed? "
+        "What was mine?",
+        "What was hard? What proof do I have? What would I be allowed to "
+        "say outside this company?"]),
 
  (9, 1): dict(
    stop=["I think some transferable-skills advice gives experienced "
@@ -308,18 +317,17 @@ SHORTS = {
          "how people actually build capability at work.",
          "One thing those moves taught me is that experience and context "
          "are not the same thing.",
-         "You can know how to work and still have a lot to learn about how "
-         "this place works.",
-         "Then you walk into a new company and suddenly you do not know "
-         "which meeting actually matters. You do not know who really makes "
-         "the decision. You do not know which rule is a real rule and "
-         "which one is simply how the last person did it."],
-   ask=["That is why I would not spend the first 90 days trying to prove "
-        "that everything you already know works here. I would spend them "
-        "finding the boundary between what you brought with you and what "
-        "this environment still has to teach you."]),
+         "You do not know which rule is a real rule and which one is "
+         "simply how the last person did it.",
+         "That is why I would not spend the first 90 days trying to prove "
+         "that everything you already know works here. I would spend them "
+         "finding the boundary between what you brought with you and what "
+         "this environment still has to teach you."],
+   ask=["Read the context. Test what traveled. Build new proof. And read "
+        "the role back."]),
  (10, 3): dict(
-   stop=["I would have a very simple conversation with your manager."],
+   stop=["Around this point, I would have a very simple conversation "
+         "with your manager."],
    hold=["Not, “How am I doing?” That question is broad enough "
          "to get you an answer like, “You’re doing great.”",
          "Ask something more useful: “What have you seen me pick up "
@@ -340,8 +348,11 @@ SHORTS = {
          "Priorities move. Managers inherit new problems. Companies "
          "reorganize.",
          "But there is a point where normal change becomes something you "
-         "need to look at more closely."],
-   ask=["I use four questions for that: EXPECTED. ACTUAL. COST. CHOICE."]),
+         "need to look at more closely.",
+         "I use four questions for that: EXPECTED. ACTUAL. COST. "
+         "CHOICE."],
+   ask=["If those two versions are different, name the difference before "
+        "you normalize it."]),
  (11, 2): dict(
    stop=["Start with EXPECTED. What did you reasonably believe you were "
          "accepting? Not the perfect version you imagined."],
@@ -354,11 +365,7 @@ SHORTS = {
          "strategy and spend most of your time coordinating. You expected "
          "to lead a team and the team never arrived. You were told a "
          "decision was yours and discover that you can only recommend."],
-   ask=["Write EXPECTED and ACTUAL side by side.",
-        "The question is not, “Is this exactly what was "
-        "written?” The better question is, “Is the job I am "
-        "doing still close enough to the job I agreed to build my life "
-        "and career around?”"]),
+   ask=["Write EXPECTED and ACTUAL side by side."]),
  (11, 3): dict(
    stop=["What does the difference actually cost you? Not every mismatch "
          "deserves the same response."],
@@ -370,8 +377,6 @@ SHORTS = {
          "or agreement needs to be revisited? LIFE. Did the practical cost "
          "change: travel, hours, location, caregiving, health, or "
          "something else that mattered when you accepted?",
-         "There can also be a positive cost calculation. The job may be "
-         "different but better.",
          "A mismatch can be manageable in one category and unacceptable in "
          "another. You need to know which one you are actually reacting "
          "to."],
@@ -400,7 +405,10 @@ def rows(n):
         out.append(dict(num=num, title=ANGLE[(n, num)], stop=d["stop"],
                         hold=d["hold"], ask=d["ask"], body=body, words=w,
                         secs=int(round(w / float(WPM) * 60)),
-                        clock=_clock(int(round(w / float(WPM) * 60)))))
+                        plan=int(round(w / float(PLANNING_WPM) * 60)),
+                        clock=_clock(int(round(w / float(WPM) * 60))),
+                        plan_clock=_clock(int(round(w / float(PLANNING_WPM)
+                                                   * 60)))))
     return out
 
 
@@ -610,8 +618,7 @@ ANTECEDENTS = [
         "Senior Divisional Strategy Consultant, Governance"),
  (11, 3, "A mismatch can be manageable in one category",
          "I would look at four costs"),
- (5, 1, "Once you can see that difference",
-        "Dependence sounds like"),
+ (5, 1, "Development sounds like", "Dependence sounds like"),
 ]
 
 # The ask may not defer the payoff to a video the viewer is not watching.
@@ -624,6 +631,67 @@ TRAILER = ["i want to unpack", "i am going to show you", "in the next 10 "
 # The ask is one ask.
 PROMO = ["watch “", "subscribe", "link in", "comment below",
          "next video", "full video", "part two"]
+
+
+_END = ".!?"
+_CLOSERS = "\"')\u201d\u2019"
+_OPENERS = "\"(\u201c"
+
+
+def split_sentences(text):
+    """Whole sentences, with a closing quote kept on the sentence it ends.
+
+    A regex lookbehind cannot be variable width in Python, and the quote
+    normalisation the rest of this build uses turns curly quotes straight,
+    so the split is done by scanning instead. A boundary is a terminator,
+    then any closing quotes, then whitespace, then a capital or an opening
+    quote.
+    """
+    t = " ".join((text or "").split())
+    out, start, i = [], 0, 0
+    while i < len(t):
+        if t[i] in _END:
+            j = i + 1
+            while j < len(t) and t[j] in _CLOSERS:
+                j += 1
+            k = j
+            while k < len(t) and t[k] == " ":
+                k += 1
+            if k > j and k < len(t) and (t[k].isupper()
+                                         or t[k] in _OPENERS):
+                out.append(t[start:j].strip())
+                start = k
+                i = k
+                continue
+        i += 1
+    if t[start:].strip():
+        out.append(t[start:].strip())
+    return out
+
+
+def sentences(n):
+    """Every whole sentence of this video's reconciled master."""
+    out = []
+    for _, ps in R.sections(n):
+        for p in ps:
+            out.extend(split_sentences(R.S._norm(p)))
+    return out
+
+
+def whole_sentences(n, line):
+    """True when the line is a contiguous run of whole source sentences.
+
+    Lifting part of a sentence reads as a quotation the script never says,
+    and it is how a leading marker such as "Next," or "Around this point,"
+    gets silently dropped. A candidate line has to start where a sentence
+    starts and stop where one stops.
+    """
+    want = split_sentences(R.S._norm(line))
+    src = sentences(n)
+    for i in range(len(src) - len(want) + 1):
+        if src[i:i + len(want)] == want:
+            return True
+    return False
 
 
 def audit(n):
@@ -682,10 +750,15 @@ def audit(n):
             if R.S._norm(trig).lower() not in low:
                 bad.append("%s CUTAWAY: '%s' is not spoken in this Short"
                            % (tag, trig[:40]))
-        secs = rows(n)[num - 1]["secs"]
-        if secs > 59:
-            bad.append("%s LENGTH: %d seconds at %d wpm exceeds the Short "
-                       "ceiling" % (tag, secs, WPM))
+        for l in lines(n, num):
+            if not whole_sentences(n, l):
+                bad.append("%s WHOLE SENTENCE: '%s' is a part of a "
+                           "sentence, not a whole one" % (tag, l[:44]))
+        plan = rows(n)[num - 1]["plan"]
+        if plan > CEILING_SECONDS:
+            bad.append("%s LENGTH: %d seconds at the %d wpm planning rate "
+                       "leaves no headroom under sixty"
+                       % (tag, plan, PLANNING_WPM))
     return bad
 
 
@@ -719,6 +792,7 @@ if __name__ == "__main__":
                             "master" if not bad else "NOT VERBATIM: %s"
                             % bad))
         for r in rows(n):
-            print("     %d  %-52s %3d words  about %s"
-                  % (r["num"], r["title"][:52], r["words"], r["clock"]))
+            print("     %d  %-46s %3d words  %s at %d / %s at %d"
+                  % (r["num"], r["title"][:46], r["words"], r["clock"],
+                     WPM, r["plan_clock"], PLANNING_WPM))
     print("\nlines not verbatim: %d" % tot)

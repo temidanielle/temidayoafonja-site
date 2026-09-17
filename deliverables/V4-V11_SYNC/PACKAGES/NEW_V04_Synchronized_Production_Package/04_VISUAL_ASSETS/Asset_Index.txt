@@ -14,7 +14,7 @@ not a state. It is listed at the end and is not counted above.
 ------------------------------------------------------------------------------
 
 NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT
-   SECTION 1  THREE THINGS TO WATCH   PARAGRAPH 2
+   SECTION 1  HOOK   PARAGRAPH 2
       1. NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT.png
 
 NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE
@@ -76,3 +76,5 @@ EDITABLE SOURCES
 PHONE-SIZE CONTACT SHEET
 
    Phone_Size_Contact_Sheet.png
+   A proof sheet of the 15 states above. It is not a state and
+   is not counted as one.

@@ -25,7 +25,7 @@ SHARED RULES
 ------------------------------------------------------------------------------
 
 SHORT 1  |  Being Needed Is Not the Same as Growing
-    LENGTH:   119 words, about 0:43 at 165 wpm, arithmetic
+    LENGTH:   117 words, about 0:43 at 165 wpm, arithmetic
     OPEN TEXT: one of the reasons you stop growing
     OPEN SHOT: camera, 9:16
     SOUND:     one accent on “growing”
@@ -34,7 +34,7 @@ SHORT 1  |  Being Needed Is Not the Same as Growing
     CUT TO:    NEW_V5_FS_08_DEPENDENCE_VS_DEVELOPMENT
                on: Dependence sounds like
     PAYOFF:    NEW_V5_FS_08_DEPENDENCE_VS_DEVELOPMENT, the last frame
-    ONE ASK:   Are they asking for more of your capacity, or expa...
+    ONE ASK:   Ask for one piece of work that builds a new decisi...
 
 SHORT 2  |  Useful Can Become a Career Trap
     LENGTH:   68 words, about 0:25 at 165 wpm, arithmetic
@@ -52,4 +52,4 @@ SHORT 3  |  Set a Review Point for Extra Scope
     OPEN SHOT: NEW_V5_FS_09_REVIEW_POINT
     SOUND:     one accent on “90 days”
     PAYOFF:    NEW_V5_FS_09_REVIEW_POINT, the last frame
-    ONE ASK:   Without a review point, temporary extra work can q...
+    ONE ASK:   You can say, “Let’s come back to this in 90 days.”

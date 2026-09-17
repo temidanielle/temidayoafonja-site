@@ -25,17 +25,17 @@ SHARED RULES
 ------------------------------------------------------------------------------
 
 SHORT 1  |  This Isn't the Job
-    LENGTH:   84 words, about 0:31 at 165 wpm, arithmetic
+    LENGTH:   97 words, about 0:35 at 165 wpm, arithmetic
     OPEN TEXT: This is not the job I thought I accepted.
     OPEN SHOT: camera, 9:16
     SOUND:     one accent on “accepted”
     CUT TO:    NEW_V11_FS_05_TEMPORARY_OR_NOT
                on: Roles change. Priorities move.
     PAYOFF:    NEW_V11_FS_01_FOUR_QUESTIONS, the last frame
-    ONE ASK:   I use four questions for that: EXPECTED. ACTUAL. C...
+    ONE ASK:   If those two versions are different, name the diff...
 
 SHORT 2  |  Expected vs Actual
-    LENGTH:   154 words, about 0:56 at 165 wpm, arithmetic
+    LENGTH:   119 words, about 0:43 at 165 wpm, arithmetic
     OPEN TEXT: Start with EXPECTED.
     OPEN SHOT: NEW_V11_FS_02_WRITE_IT_DOWN
     SOUND:     one accent on “EXPECTED”
@@ -45,7 +45,7 @@ SHORT 2  |  Expected vs Actual
     ONE ASK:   Write EXPECTED and ACTUAL side by side.
 
 SHORT 3  |  What Is the Cost of Role Drift?
-    LENGTH:   143 words, about 0:52 at 165 wpm, arithmetic
+    LENGTH:   128 words, about 0:47 at 165 wpm, arithmetic
     OPEN TEXT: What does the difference actually cost you?
     OPEN SHOT: camera, 9:16
     SOUND:     one accent on “cost”

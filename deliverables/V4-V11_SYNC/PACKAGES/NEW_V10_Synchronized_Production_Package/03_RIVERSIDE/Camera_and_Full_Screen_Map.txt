@@ -348,3 +348,4 @@ WATCH NEXT
 
   Full screen from the start of the spoken Watch Next passage.
   It is the final frame. Never return to camera afterward.
+  No teaching card shares this passage.

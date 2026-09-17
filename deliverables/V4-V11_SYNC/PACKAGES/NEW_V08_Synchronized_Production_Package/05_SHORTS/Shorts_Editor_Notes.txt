@@ -45,14 +45,14 @@ SHORT 2  |  Keep the Proof, Not the Property
     ONE ASK:   Keep the proof.
 
 SHORT 3  |  The Worst Time to Rebuild Your Career Story
-    LENGTH:   83 words, about 0:30 at 165 wpm, arithmetic
+    LENGTH:   76 words, about 0:28 at 165 wpm, arithmetic
     OPEN TEXT: later is often when the details are hardest to rem...
     OPEN SHOT: NEW_V8_FS_06_THE_DETAILS_BLUR
     SOUND:     one accent on “later”
     CUT TO:    NEW_V8_FS_07_TEN_MINUTE_HABIT
                on: Once a month, take ten minutes
     PAYOFF:    NEW_V8_FS_07_TEN_MINUTE_HABIT, the last frame
-    ONE ASK:   That last question matters. You want a version of...
+    ONE ASK:   Once a month, take ten minutes and write down: Wha...
 
 ------------------------------------------------------------------------------
 
