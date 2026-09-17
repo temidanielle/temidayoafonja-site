@@ -7,7 +7,7 @@ Eight slides, 1080 x 1350 portrait, 96px margins.
 
 | File | What it is |
 | --- | --- |
-| `LinkedIn_Start_Here_Capability_Formation.pdf` | The upload file. Eight pages, vector text. |
+| `LinkedIn_Start_Here_Capability_Formation_V2.pdf` | The upload file. Eight pages, vector text. |
 | `slides/slide-01.png` to `slide-08.png` | One preview per slide, 1080 x 1350 |
 | `contact-sheet.png` | All eight slides in order |
 | `source/copy.json` | Editable copy, exactly as supplied |
@@ -29,9 +29,9 @@ node linkedin-start-here-carousel/source/verify-carousel.mjs
 Canvas 1080 x 1350 with 96px margins on all four sides, cream forward with a
 single deep navy closing slide, exactly as the brief asks.
 
-Palette: navy `#0F2347`, cream `#F5F0E8`, gold `#C9A84C` on navy and `#B8952E`
-on cream, rust `#C1440E` for the short rules, bright warm yellow `#F2C44C` used
-once, on the closing slide. Type is Cormorant Garamond for display and DM Sans
+Palette: four values only. Navy `#112345`, cream `#F5F1E8`, gold `#C9A84C` for
+every rule, label, numeral and page number, and bright warm yellow `#F2C44C`
+used once, on the closing line. No fifth colour appears anywhere. Type is Cormorant Garamond for display and DM Sans
 for body, labels and navigation, both self hosted in the repository and both the
 faces the Career Evidence Starter itself uses.
 
@@ -60,17 +60,19 @@ invented or substituted.
    used as a starting point. The carousel is built from the slide sequence and
    copy supplied in the brief.
 
-## One palette decision
+## Palette correction, applied in V2
 
-The brief names navy `#112345` and cream `#F5F1E8`. The real Capability
-Formation artifacts, including the Career Evidence Starter, are drawn in
-`#0F2347` and `#F5F0E8`, which is what these slides use, so the carousel sits
-beside the existing assets without a visible shade mismatch. The cream values
-differ by one unit in the green channel and are indistinguishable. Say the word
-and both re-render on the values in the brief.
+V2 runs on the four approved values and nothing else. Every rust rule is now
+gold, and the separate on cream gold that V1 used for small labels is gone.
 
-Gold is `#C9A84C` exactly as specified wherever it sits on navy. On cream it
-drops to `#B8952E`, the brand value for gold on a light field, because
-`#C9A84C` measures about 2 to 1 against cream and is too weak for small labels.
+A colour audit of the eight rendered pages confirms it: each page carries only
+those values, no orange or rust pixel appears outside the photograph, and the
+bright yellow appears on the closing slide alone.
+
+One measurement worth knowing. Gold `#C9A84C` on cream `#F5F1E8` measures 2.03
+to 1. That is comfortable for the large numerals and faint for the two smallest
+gold items on cream, the START HERE label and the page number. Setting those two
+in navy would take them to 13.8 to 1 without introducing a colour. They are left
+in gold as instructed.
 
 No em dash or en dash characters appear anywhere in this package.

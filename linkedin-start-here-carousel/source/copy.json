@@ -1,13 +1,15 @@
 {
   "_comment": "Exact slide copy for the LinkedIn Featured carousel, transcribed from the build request. Nothing is rewritten, shortened or added. No em dash characters anywhere.",
-  "canvas": { "w": 1080, "h": 1350, "margin": 96 },
+  "canvas": {
+    "w": 1080,
+    "h": 1350,
+    "margin": 96
+  },
   "palette": {
-    "navy": "#0F2347",
-    "cream": "#F5F0E8",
+    "navy": "#112345",
+    "cream": "#F5F1E8",
     "gold": "#C9A84C",
-    "goldOnLight": "#B8952E",
-    "brightYellow": "#F2C44C",
-    "rust": "#C1440E"
+    "brightYellow": "#F2C44C"
   },
   "slides": [
     {
@@ -15,7 +17,7 @@
       "portrait": true,
       "kicker": "START HERE",
       "headline": "Does what you have already done still count?",
-      "supporting": "Before a career pivot, internal move or other change in context, ask four questions."
+      "supporting": "Before a career pivot, internal move, or other change in context, ask four questions."
     },
     {
       "mode": "statement",
@@ -31,10 +33,10 @@
       "number": "01",
       "headline": "What travels?",
       "body": [
-        "Judgment.",
-        "Patterns.",
+        "Judgment you have exercised.",
+        "Patterns you have learned to recognize.",
         "Ways of solving problems you have already demonstrated.",
-        "These can remain useful when the employer, function, industry or role changes."
+        "These can remain useful when the employer, function, industry, or role changes."
       ]
     },
     {
@@ -42,8 +44,8 @@
       "number": "02",
       "headline": "What does not?",
       "body": [
-        "Systems.",
-        "Relationships.",
+        "Company-specific systems.",
+        "Relationship-based access and influence.",
         "Internal language.",
         "Assumptions that made you effective there but may mean little somewhere else."
       ],
@@ -63,7 +65,7 @@
       "number": "04",
       "headline": "What must you relearn?",
       "body": [
-        "A new context brings different technical requirements, language and constraints.",
+        "A new context brings different technical requirements, language, and constraints.",
         "Being capable of learning them is not the same as already knowing them."
       ]
     },
@@ -82,9 +84,9 @@
         "It does not all disappear either."
       ],
       "body": [
-        "On LinkedIn, I write about what travels, what does not, what you can prove and what you must relearn when the context changes."
+        "On LinkedIn, I write about what travels, what does not, what you can prove, and what you must relearn when the context changes."
       ],
-      "closing": "This is the work you will find here.",
+      "closing": "Follow for clear ways to decide what still counts before a career pivot or internal move.",
       "footer": "Temidayo Afonja | Capability Formation"
     }
   ]

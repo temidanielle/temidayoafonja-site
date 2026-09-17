@@ -9,13 +9,14 @@
      fonts.css resolve. Text stays live DOM text, never outlines. -->
 <link rel="stylesheet" href="/fonts.css">
 <style>
+  /* Capability Formation palette, four values only. No fifth colour is used:
+     the same gold carries the rules, labels, numerals and pagination on cream
+     and on navy, and the bright yellow appears once, on the closing line. */
   :root {
-    --navy: #0F2347;
-    --cream: #F5F0E8;
-    --gold: #C9A84C;        /* gold on dark */
-    --gold-light: #B8952E;  /* gold on cream, the readable value */
-    --bright: #F2C44C;      /* bright warm yellow, used once, on navy */
-    --rust: #C1440E;
+    --navy: #112345;
+    --cream: #F5F1E8;
+    --gold: #C9A84C;
+    --bright: #F2C44C;
     --pad: 96px;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -50,14 +51,14 @@
     letter-spacing: 0.24em;
     text-indent: 0.24em;
     text-transform: uppercase;
-    color: var(--gold-light);
+    color: var(--gold);
   }
   .numeral {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 500;
     font-size: 96px;
     line-height: 1;
-    color: var(--gold-light);
+    color: var(--gold);
   }
 
   h1 { font-size: 86px; line-height: 1.12; letter-spacing: -0.004em; }
@@ -65,8 +66,7 @@
   .slide.navy h1, .slide.navy h2 { color: var(--cream); }
   h2 span { display: block; white-space: nowrap; }
 
-  .rule { width: 96px; height: 3px; background: var(--rust); margin-top: 40px; }
-  .slide.navy .rule { background: var(--bright); }
+  .rule { width: 96px; height: 3px; background: var(--gold); margin-top: 40px; }
 
   .body { margin-top: 44px; }
   .body p { font-size: 34px; line-height: 1.5; color: rgb(from var(--navy) r g b / 0.82); }
@@ -76,7 +76,7 @@
   .supporting {
     margin-top: 40px;
     padding-left: 26px;
-    border-left: 4px solid var(--gold-light);
+    border-left: 4px solid var(--gold);
     font-family: 'Cormorant Garamond', serif;
     font-weight: 500;
     font-size: 40px;
@@ -109,7 +109,7 @@
     font-weight: 600;
     font-size: 21px;
     letter-spacing: 0.14em;
-    color: var(--gold-light);
+    color: var(--gold);
   }
   .slide.navy .counter { color: var(--gold); }
   .counter .now {

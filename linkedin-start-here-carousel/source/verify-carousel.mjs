@@ -19,7 +19,7 @@ const HERE = fileURLToPath(new URL('.', import.meta.url));
 const OUT = join(HERE, '..');
 const ROOT = join(HERE, '..', '..');
 const EM = '—', EN = '–';
-const PDF_NAME = 'LinkedIn_Start_Here_Capability_Formation.pdf';
+const PDF_NAME = 'LinkedIn_Start_Here_Capability_Formation_V2.pdf';
 
 const MIME = { '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8',
                '.json': 'application/json; charset=utf-8', '.woff2': 'font/woff2', '.png': 'image/png' };
