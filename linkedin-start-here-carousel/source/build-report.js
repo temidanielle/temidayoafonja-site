@@ -5,15 +5,14 @@ const {
   LevelFormat, PageOrientation,
 } = require('docx');
 
-const NAVY = '0F2347';
-const GOLD = 'B8952E';
+const NAVY = '112345';
+const GOLD = 'B8952E';          // report accent only, printed on white paper
 const MUTED = '5A6478';
-const CONTENT = 9360;          // 12240 letter width less two 1440 margins
+const CONTENT = 9360;
 const HAIR = { style: BorderStyle.SINGLE, size: 4, color: 'D8D2C6' };
 
 const p = (text, opts = {}) => new Paragraph({
   spacing: { after: opts.after ?? 140, line: 300 },
-  alignment: opts.align,
   children: [new TextRun({
     text, font: 'Calibri', size: opts.size ?? 22,
     color: opts.color ?? '20242C', bold: opts.bold, italics: opts.italics,
@@ -22,7 +21,7 @@ const p = (text, opts = {}) => new Paragraph({
 
 const h = (text, level) => new Paragraph({
   heading: level,
-  spacing: { before: level === HeadingLevel.HEADING_1 ? 360 : 280, after: 140 },
+  spacing: { before: level === HeadingLevel.HEADING_1 ? 360 : 260, after: 140 },
   children: [new TextRun({
     text, font: 'Calibri', bold: true, color: NAVY,
     size: level === HeadingLevel.HEADING_1 ? 30 : 25,
@@ -35,10 +34,10 @@ const bullet = text => new Paragraph({
   children: [new TextRun({ text, font: 'Calibri', size: 22, color: '20242C' })],
 });
 
-const cell = (text, { bold, width, head } = {}) => new TableCell({
+const cell = (text, { width, head, bold } = {}) => new TableCell({
   width: { size: width, type: WidthType.DXA },
   margins: { top: 90, bottom: 90, left: 140, right: 140 },
-  shading: head ? { type: ShadingType.CLEAR, fill: 'F5F0E8', color: 'auto' } : undefined,
+  shading: head ? { type: ShadingType.CLEAR, fill: 'F5F1E8', color: 'auto' } : undefined,
   borders: { top: HAIR, bottom: HAIR, left: HAIR, right: HAIR },
   children: [new Paragraph({
     spacing: { after: 0, line: 280 },
@@ -54,6 +53,7 @@ const table = (cols, rows) => new Table({
   width: { size: CONTENT, type: WidthType.DXA },
   rows: rows.map((r, i) => new TableRow({
     tableHeader: i === 0,
+    cantSplit: true,   // keep a row whole rather than orphaning half of it over a page break
     children: r.map((t, k) => cell(t, { width: cols[k], head: i === 0, bold: i > 0 && k === 0 })),
   })),
 });
@@ -66,7 +66,7 @@ const rule = () => new Paragraph({
 
 const doc = new Document({
   creator: 'Temidayo Afonja',
-  title: 'START HERE carousel: delivery and QA report',
+  title: 'START HERE carousel: status and overview',
   numbering: {
     config: [{
       reference: 'dots',
@@ -94,13 +94,31 @@ const doc = new Document({
       new Paragraph({
         spacing: { after: 100 },
         children: [new TextRun({
-          text: 'Delivery and QA report', font: 'Calibri', bold: true, size: 40, color: NAVY,
+          text: 'Status and overview', font: 'Calibri', bold: true, size: 40, color: NAVY,
         })],
       }),
       p('Does What You Have Already Done Still Count? LinkedIn Featured document carousel, eight slides, 1080 x 1350 portrait. Version 2.',
         { color: MUTED }),
       p('Temidayo Afonja | Capability Formation', { color: MUTED, size: 20 }),
       rule(),
+
+      h('Status', HeadingLevel.HEADING_1),
+      p('Version 2 is built, inspected page by page, and ready to upload. Nothing is outstanding on my side. Two small decisions are open for you, and neither blocks publishing. They are listed near the end.'),
+      table([2600, 6760], [
+        ['Item', 'State'],
+        ['Slide copy', 'Final. Version 2 revisions applied to slides 1, 3, 4, 6 and 8 exactly as supplied.'],
+        ['Palette', 'Corrected. Four approved values only, confirmed by a pixel audit of all eight pages.'],
+        ['Upload file', 'LinkedIn_Start_Here_Capability_Formation_V2.pdf, eight pages, ready.'],
+        ['Quality gate', 'Passing. Ten automated checks, listed below.'],
+        ['Open decisions', 'Two, both cosmetic. Neither blocks publishing.'],
+        ['Related work', 'The LinkedIn banner revision is separate and is waiting on the banner file.'],
+      ]),
+      p('', { after: 60 }),
+
+      h('What this carousel is', HeadingLevel.HEADING_1),
+      p('The first item in the Featured section of the LinkedIn profile. It introduces the full career portability lens to an experienced professional arriving from one of the posts, then tells them what they will find by following. It is an introduction, not a product advertisement, and it carries no price, link or date.'),
+      p('The eight slides run: the opening question, a statement that some experience travels and some does not, then the four questions in order, what travels, what does not, what you can prove and what you must relearn, then the boundary that adjacent experience is not automatic qualification, and finally the navy closing slide with the Follow line.',
+        { after: 200 }),
 
       h('What was delivered', HeadingLevel.HEADING_1),
       p('Everything sits in the repository at linkedin-start-here-carousel/.'),
@@ -109,13 +127,28 @@ const doc = new Document({
         ['LinkedIn_Start_Here_Capability_Formation_V2.pdf', 'The upload file. Eight pages, vector text, 810 by 1013 points.'],
         ['slides/slide-01.png to slide-08.png', 'One preview per slide at 1080 by 1350.'],
         ['contact-sheet.png', 'All eight slides in order.'],
+        ['START_HERE_Carousel_Report.docx', 'This document.'],
         ['source/copy.json', 'Editable copy, exactly as supplied in the brief.'],
         ['source/carousel.html', 'Editable layout. Live DOM text, no outlined type.'],
         ['source/build-carousel.mjs', 'Renders the PNGs, the PDF and the contact sheet.'],
         ['source/verify-carousel.mjs', 'The quality gate.'],
+        ['source/build-report.js', 'Regenerates this document.'],
       ]),
-      p('To rebuild after a copy edit, run build-carousel.mjs and then verify-carousel.mjs.',
-        { after: 200 }),
+      p('Version 1 is kept beside version 2 rather than deleted, so the two can be compared.'),
+      p('To rebuild after a copy edit, run build-carousel.mjs and then verify-carousel.mjs.', { after: 200 }),
+
+      h('What changed in version 2', HeadingLevel.HEADING_1),
+      p('Copy only, plus the palette. Structure, typography, portrait, spacing, white space, pagination and hierarchy were left untouched.'),
+      table([2600, 6760], [
+        ['Slide', 'Change'],
+        ['1', 'Subheading replaced. Now reads Before a career pivot, internal move, or other change in context, ask four questions.'],
+        ['3', 'Body replaced with the four fuller lines, ending These can remain useful when the employer, function, industry, or role changes.'],
+        ['4', 'Body replaced with company-specific systems, relationship-based access and influence, internal language and the assumptions line. Some experience is context-bound keeps its gold ruled serif treatment.'],
+        ['6', 'Body set to the exact two sentences supplied, including the comma before and constraints.'],
+        ['8', 'Paragraph updated. This is the work you will find here is replaced by the Follow line, which keeps the bright yellow serif treatment.'],
+        ['All', 'Every rust rule is now gold. The separate on cream gold used for small labels in version 1 is removed.'],
+      ]),
+      p('', { after: 60 }),
 
       h('Design system', HeadingLevel.HEADING_1),
       p('Canvas 1080 by 1350 with 96 pixel margins on all four sides. Cream forward, with a single deep navy closing slide.'),
@@ -125,41 +158,39 @@ const doc = new Document({
       p('The portrait is the real photograph at images/temidayo-gold-ivory.png, circularly cropped and placed once, on slide one, at 264 pixels. It is scaled down from 1254 pixels and never up. Nothing about the photograph is altered.',
         { after: 200 }),
 
-      h('What was missing from the workspace', HeadingLevel.HEADING_1),
-      p('Three things the brief refers to were not present. None was invented or substituted.'),
-      bullet('The carousel foundation build kit. It lived outside the repository and this container was reset, so the files were gone. The system was rebuilt from its specification as established earlier in this project: canvas, margins, type pairing, palette, circular portrait treatment, gold ringed counter, and the render and verify export process. The original was not overwritten, because there was nothing left to overwrite.'),
-      bullet('The Density Group logo files. Also lost with that directory. No logo appears on these slides, because redrawing or approximating one is not acceptable. The footer supplied in the brief carries the attribution on the closing slide. Send the logo zip and it drops into the template in one edit.'),
-      bullet('final 3(1).pdf. Not in the workspace or the uploads, so it could not be used as a starting point. The carousel is built from the slide sequence and copy supplied in the brief.'),
-      p('', { after: 60 }),
-
-      h('Palette correction applied in V2', HeadingLevel.HEADING_1),
-      p('V2 uses only the four approved values: navy 112345, cream F5F1E8, gold C9A84C and bright warm yellow F2C44C. Every rust rule is now gold. The on cream gold that V1 used for small labels has been removed, so no fifth colour appears anywhere.'),
-      p('A colour audit of the eight rendered pages confirms this: each page carries only those values, no orange or rust pixel appears outside the photograph, and the bright yellow appears on the closing slide alone.'),
-      p('One measurement worth your attention. Gold C9A84C on cream F5F1E8 measures 2.03 to 1. That is comfortable for the large numerals, and faint for the two smallest gold items on cream, the START HERE label and the page number, which land near 8 pixels at LinkedIn mobile width. Setting those two in navy would take them to 13.8 to 1 without introducing a colour. They are left in gold as instructed.',
-        { after: 200 }),
-
-      h('QA results', HeadingLevel.HEADING_1),
-      p('All checks below are automated in source/verify-carousel.mjs and currently pass. Every slide was also rendered and inspected.'),
+      h('Quality checks', HeadingLevel.HEADING_1),
+      p('All checks below are automated in source/verify-carousel.mjs and currently pass. Every slide was also rendered and inspected by eye.'),
       table([4600, 4760], [
         ['Check', 'Result'],
         ['Copy is exact', 'Every line on every slide matches copy.json, which is the brief transcribed verbatim.'],
-        ['No em dashes', 'Zero em dash and en dash characters in the slides, the copy file and this package.'],
+        ['No em dashes', 'Zero em dash and en dash characters in the slides, the copy file and this document.'],
         ['No font substitution', 'Cormorant Garamond and DM Sans both confirmed loaded at render time, not substituted.'],
         ['No clipped text', 'No text element overflows its column on any slide.'],
         ['Safe placement', 'No text sits outside the 96 pixel safe area on any slide.'],
         ['Legible on mobile', 'Body type is 34 pixels, about 13 pixels at LinkedIn mobile width. The smallest type is 21 pixels, the counter and footer, about 8 pixels.'],
         ['Imagery not blurred', 'The portrait is shown at 264 pixels from a 1254 pixel original. It is never upscaled.'],
         ['Consistent spacing', 'All eight slides share one grid: 96 pixel margins, one rule width, one counter position.'],
-        ['PDF opens correctly', 'Eight pages at 810 by 1013 points, which is 1080 by 1350 pixels.'],
-        ['Exports', 'Eight slide PNGs between 52 and 140 KB. The PDF is 2.8 MB, carrying the portrait at full resolution.'],
-        ['Palette', 'Only navy 112345, cream F5F1E8, gold C9A84C and bright yellow F2C44C appear. No rust remains.'],
+        ['Palette', 'Only navy 112345, cream F5F1E8, gold C9A84C and bright yellow F2C44C appear. No rust remains anywhere outside the photograph.'],
+        ['PDF opens correctly', 'Eight pages at 810 by 1013 points, which is 1080 by 1350 pixels, 2.8 MB.'],
       ]),
       p('', { after: 60 }),
 
-      h('Open items', HeadingLevel.HEADING_1),
-      bullet('Send the Density Group logo zip if you want the mark on the slides.'),
-      bullet('Decide whether the START HERE label and the page number stay in gold at 2.03 to 1 on cream, or move to navy at 13.8 to 1. Both use approved colours.'),
-      bullet('Send final 3(1).pdf if it holds anything that should be carried into this carousel.'),
+      h('Two decisions waiting on you', HeadingLevel.HEADING_1),
+      p('Neither blocks publishing. Both are recorded rather than decided quietly.'),
+      bullet('Gold on cream measures 2.03 to 1. That is comfortable for the large numerals and faint for the two smallest gold items on cream, the START HERE label and the page number, which land near 8 pixels at LinkedIn mobile width. Setting those two in navy would take them to 13.8 to 1 and introduces no new colour. They are left in gold as instructed.'),
+      bullet('The page number sits inside a gold ring. Your brief said to preserve the pagination and also not to introduce rings. I read that as not adding new ones and kept it. Say the word if the ring itself should go.'),
+      p('', { after: 60 }),
+
+      h('What was missing from the workspace', HeadingLevel.HEADING_1),
+      p('Three things the original brief referred to were not present when this was built. None was invented or substituted.'),
+      bullet('The carousel foundation build kit. It lived outside the repository and the working container was reset, so the files were gone. The system was rebuilt from its specification as established earlier in this project: canvas, margins, type pairing, palette, circular portrait treatment, gold ringed counter, and the render and verify export process.'),
+      bullet('The Density Group logo files. Also lost with that directory. No logo appears on these slides, because redrawing or approximating one is not acceptable. The footer supplied in the brief carries the attribution on the closing slide. Send the logo zip and it drops into the template in one edit.'),
+      bullet('final 3(1).pdf. Not in the workspace or the uploads, so it could not be used as a starting point. The carousel is built from the slide sequence and copy supplied in the brief.'),
+      p('', { after: 60 }),
+
+      h('Related, and currently blocked', HeadingLevel.HEADING_1),
+      p('The LinkedIn banner revision is separate work and is waiting on one file. The banner described in that brief, with the portrait on the right and the positioning sentence on the left, is not in the workspace. The two banners that are here are both centred text with no portrait, and neither carries that sentence. Searching the full git history, including deleted files, turned up nothing further, and there is no editable source for either.'),
+      p('Send that banner, or its source if one exists, and the copy swap and both mockups follow quickly.'),
     ],
   }],
 });

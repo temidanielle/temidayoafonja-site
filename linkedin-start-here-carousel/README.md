@@ -14,7 +14,7 @@ Eight slides, 1080 x 1350 portrait, 96px margins.
 | `source/carousel.html` | Editable layout, live DOM text, no outlined type |
 | `source/build-carousel.mjs` | Renders the PNGs, the PDF and the contact sheet |
 | `source/verify-carousel.mjs` | The quality gate |
-| `START_HERE_Carousel_Report.docx` | The delivery and QA report as a Word document |
+| `START_HERE_Carousel_Report.docx` | Status and overview as a Word document |
 | `source/build-report.js` | Regenerates that report (`npm install docx`, then `node build-report.js`) |
 
 Rebuild after a copy edit:
