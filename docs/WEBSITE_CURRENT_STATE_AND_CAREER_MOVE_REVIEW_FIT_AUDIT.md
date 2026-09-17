@@ -255,7 +255,7 @@ The AI Capability Readiness Diagnostic is `noindex, nofollow`, absent from nav a
 
 ## 7. Broken, stale or confusing elements
 
-### 7.1 Internal audit publicly served — highest priority
+### 7.1 Internal audit publicly served: highest priority
 
 **[SOURCE]** `AUDIT-REPORT.md` sits at the publish root. It opens:
 
@@ -555,14 +555,14 @@ It must explain its relationship to Keep the Proof and the Field Kit without req
 
 **Requires information outside the repository:**
 
-8. **Is the Private Capability Position Read actively selling?** How many have been sold, at what close rate? This determines §9.1 entirely.
-9. **Is `/ai-capability-readiness` deliberate or abandoned?** Determines preserve or retire.
-10. **Was `DSCF4781 1 (1).jpg` intentional?**
-11. Does a source document exist tying the 30% and $2M+ figures to a population, baseline and method? `docs/claims-ledger.md` says none is on file.
-12. Has the Career Move Review been delivered informally already? Any prior client evidence?
-13. Is there capacity for five pilot clients plus existing enterprise work?
-14. Do the Career Move Review and the Keep the Proof Gumroad products need to share a checkout?
-15. What does Plausible show about `/keep-the-proof` traffic? **[INTERPRETATION]** If it has non-zero traffic while having zero inbound links, that traffic is entirely external and worth understanding.
+1. **Is the Private Capability Position Read actively selling?** How many have been sold, at what close rate? This determines §9.1 entirely.
+2. **Is `/ai-capability-readiness` deliberate or abandoned?** Determines preserve or retire.
+3. **Was `DSCF4781 1 (1).jpg` intentional?**
+4. Does a source document exist tying the 30% and $2M+ figures to a population, baseline and method? `docs/claims-ledger.md` says none is on file.
+5. Has the Career Move Review been delivered informally already? Any prior client evidence?
+6. Is there capacity for five pilot clients plus existing enterprise work?
+7. Do the Career Move Review and the Keep the Proof Gumroad products need to share a checkout?
+8. What does Plausible show about `/keep-the-proof` traffic? **[INTERPRETATION]** If it has non-zero traffic while having zero inbound links, that traffic is entirely external and worth understanding.
 
 ---
 
