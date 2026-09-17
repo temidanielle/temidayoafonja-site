@@ -1,0 +1,91 @@
+{
+  "_comment": "Exact slide copy for the LinkedIn Featured carousel, transcribed from the build request. Nothing is rewritten, shortened or added. No em dash characters anywhere.",
+  "canvas": { "w": 1080, "h": 1350, "margin": 96 },
+  "palette": {
+    "navy": "#0F2347",
+    "cream": "#F5F0E8",
+    "gold": "#C9A84C",
+    "goldOnLight": "#B8952E",
+    "brightYellow": "#F2C44C",
+    "rust": "#C1440E"
+  },
+  "slides": [
+    {
+      "mode": "cover",
+      "portrait": true,
+      "kicker": "START HERE",
+      "headline": "Does what you have already done still count?",
+      "supporting": "Before a career pivot, internal move or other change in context, ask four questions."
+    },
+    {
+      "mode": "statement",
+      "headline": "Some of it does. Let’s get precise about what.",
+      "body": [
+        "Your experience does not all travel.",
+        "It does not all disappear either.",
+        "The work is to tell the difference."
+      ]
+    },
+    {
+      "mode": "question",
+      "number": "01",
+      "headline": "What travels?",
+      "body": [
+        "Judgment.",
+        "Patterns.",
+        "Ways of solving problems you have already demonstrated.",
+        "These can remain useful when the employer, function, industry or role changes."
+      ]
+    },
+    {
+      "mode": "question",
+      "number": "02",
+      "headline": "What does not?",
+      "body": [
+        "Systems.",
+        "Relationships.",
+        "Internal language.",
+        "Assumptions that made you effective there but may mean little somewhere else."
+      ],
+      "supporting": "Some experience is context-bound."
+    },
+    {
+      "mode": "question",
+      "number": "03",
+      "headline": "What can you prove?",
+      "body": [
+        "The next context cannot see your internal reputation.",
+        "It needs evidence another person can understand and trust."
+      ]
+    },
+    {
+      "mode": "question",
+      "number": "04",
+      "headline": "What must you relearn?",
+      "body": [
+        "A new context brings different technical requirements, language and constraints.",
+        "Being capable of learning them is not the same as already knowing them."
+      ]
+    },
+    {
+      "mode": "statement",
+      "headline": "Adjacent experience is not automatic qualification.",
+      "body": [
+        "Your job is not to pretend the gap does not exist.",
+        "Make your experience clear enough for the next context to judge the gap accurately."
+      ]
+    },
+    {
+      "mode": "close",
+      "headlineLines": [
+        "Your experience does not all travel.",
+        "It does not all disappear either."
+      ],
+      "body": [
+        "On LinkedIn, I write about what travels, what does not, what you can prove and what you must relearn when the context changes."
+      ],
+      "closing": "This is the work you will find here.",
+      "footer": "Temidayo Afonja | Capability Formation"
+    }
+  ]
+}
