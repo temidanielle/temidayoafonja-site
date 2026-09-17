@@ -861,8 +861,18 @@ def evidence_notes(n, path, st, L):
                 "approved hypothetical. No card, Short, description or "
                 "publishing item still depends on the old wording.",
              size=10.5, before=6)
+    if Q.retired(n):
+        h(d, "Retired. Inactive.")
+        table(d, ["Family", "Status", "Why"],
+              [[r["key"], "RETIRED. INACTIVE. Not cued, not rendered.",
+                r["reason"]] for r in Q.retired(n)],
+              widths=[2.1, 1.5, 3.1], size=7.5)
+        caption(d, "Nothing below applies to a retired family. Its lines "
+                   "are kept as a record of what the card said, not as "
+                   "display copy for this package.")
     h(d, "Retained display copy and its support")
-    rows = [r for r in L if r["video"] == n and r["retained"]]
+    rows = [r for r in L if r["video"] == n and r["retained"]
+            and r["key"] not in {x["key"] for x in Q.retired(n)}]
     if rows:
         table(d, ["Family", "Line", "Kind", "Supporting section"],
               [[r["key"], x["line"][:56], x["kind"], x["support"] or ""]
@@ -947,22 +957,20 @@ def open_issues(n, path):
             "re-pointed. The release hold on this item is lifted.")
     if n == 6:
         items.append(
-            "NEW_V6_FS_19_FOUR_THINGS is re-cued to TAKEAWAY VALUE, where "
-            "its WHAT YOU GET framing belongs. Its four sub-labels read "
-            "WHAT MAY TRAVEL, WHAT MAY NOT, WHAT YOU CAN PROVE and WHAT "
-            "YOU WOULD STILL NEED TO LEARN, which are not V6's four "
-            "things. The card was not redesigned in this pass. Decide "
-            "whether to re-label it to PROBLEM, AUTHORITY, PROOF, REAL "
-            "GAP or to drop the sub-labels.")
+            "RESOLVED. NEW_V6_FS_19_FOUR_THINGS is re-cued to TAKEAWAY "
+            "VALUE and its four sub-labels now read PROBLEM, AUTHORITY, "
+            "PROOF and REAL GAP, each with the question its own section "
+            "asks. The old labels were V9's four columns. Nothing about "
+            "this card is open.")
     if n == 8:
         items.append(
-            "NEW_V8_FS_11_A_FACTUAL_RECORD is retired. After its "
-            "authorized copy update it says what FS_04 already says on "
-            "the same paragraph, and the review asked that redundant uses "
-            "be retired rather than played to retain them. The design and "
-            "the update are kept in the ledger; only the cue and the "
-            "rendered state are withdrawn. Say so if you would rather "
-            "keep it and give it its own passage.")
+            "RESOLVED. NEW_V8_FS_11_A_FACTUAL_RECORD is RETIRED and "
+            "INACTIVE. It is not cued at any paragraph, its state is not "
+            "rendered into this package, and it is not to be reassigned "
+            "to another passage. After its authorized copy update it said "
+            "what FS_04 already says on the same paragraph. The design "
+            "and the copy update remain in the ledger as a record. "
+            "Nothing about this card is open.")
     if n == 6:
         items.append(
             "The ten-minute title promise has to pass the finished export. "
@@ -1375,18 +1383,27 @@ def combined_manifest(path, st, L):
             LOCKED[n][0], LOCKED[n][1], RESOURCE[n] or "none"]
            for n in R.VIDEOS], widths=[0.45, 0.6, 2.2, 2.0, 1.45],
           size=7.5)
+    a4 = v4_arithmetic()
     h(d, "Word counts, recomputed")
-    table(d, ["", "Intake", "Restored intro", "Reconciled", "Blocks"],
+    table(d, ["", "Intake", "Restored intro", "Approved hook delta",
+              "Reconciled", "Thought blocks"],
           [["V%d" % n, format(S916.word_count(n), ","),
-            ("+%d" % (R.word_count(n) - S916.word_count(n)))
+            ("+%d" % len(" ".join(R.intro_paragraphs(n)).split()))
             if n in R.HAS_INTRO else "none",
+            ("+%d" % a4["hook"]) if n == 4 else "none",
             format(R.word_count(n), ","), "%d" % len(blocks(n))]
-           for n in R.VIDEOS], widths=[0.7, 1.1, 1.4, 1.3, 0.9], size=8.5)
-    caption(d, "Counting method: whitespace-delimited tokens of the spoken "
-               "stream only, with section labels, block labels, headers, "
-               "recording direction and bracketed production notes "
-               "excluded before counting. The same method is used for the "
-               "master and the thought-block copy.")
+           for n in R.VIDEOS],
+          widths=[0.6, 0.9, 1.2, 1.4, 1.1, 1.1], size=8.5)
+    caption(d, "The restored introduction and the approved hypothetical "
+               "opening are separate approvals and are shown separately. "
+               "V4 is the only video with a hook delta: %d intake words, "
+               "plus %d for the introduction, plus %d for the opening, is "
+               "%d. Counting method: whitespace-delimited tokens of the "
+               "spoken stream only, with section labels, block labels, "
+               "headers, recording direction and bracketed production "
+               "notes excluded. The same method is used for the master "
+               "and the thought-block copy."
+               % (a4["base"], a4["intro"], a4["hook"], a4["total"]))
     h(d, "Intro restoration boundaries")
     table(d, ["", "Restored after", "Immediately before", "Paras", "Words"],
           [["V%d" % n,
@@ -1463,9 +1480,16 @@ def asset_ledger(path, st, L):
     for r in L:
         per.setdefault(r["video"], []).append(r)
     for n in sorted(per):
+        gone = {x["key"]: x for x in Q.retired(n)}
         h(d, "NEW PUBLIC V%d  %s" % (n, LOCKED[n][0]))
         table(d, ["Family", "Anchor", "Verdict", "Why"],
-              [[r["key"], r["anchor"], r["verdict"], r["reason"]]
+              [[r["key"],
+                "RETIRED" if r["key"] in gone else r["anchor"],
+                "INACTIVE" if r["key"] in gone else r["verdict"],
+                (gone[r["key"]]["reason"] + " Not cued, not rendered. The "
+                 "audit verdict below it describes the card as it stood "
+                 "before retirement and is kept only as a record: "
+                 + r["reason"]) if r["key"] in gone else r["reason"]]
                for r in per[n]], widths=[2.2, 0.9, 1.0, 2.6], size=7)
     d.save(path)
     return path
@@ -1643,8 +1667,8 @@ def changelog(path, st, L):
       "arithmetic is not a runtime.",
       "This pass did not re-review the 110 card designs or rewrite any "
       "of the eight videos. It changed selections, locations and "
-      "records, and added the six opening families the briefs already "
-      "specified.",
+      "records, and added the six opening families, comprising eight "
+      "states, that the briefs already specified.",
     ], size=10)
     t = totals()
     h(d, "Where the numbers now stand")
@@ -1704,7 +1728,8 @@ def concise_changelog(path, st, checks_total):
                "thought-block parity, the packaging and the "
                "faith-inclusive descriptions were re-verified and left "
                "alone. Everything below is selection, placement and "
-               "record-keeping, plus the six opening cards the briefs "
+               "record-keeping, plus the six opening families comprising "
+               "eight states that the briefs "
                "already called for.")
     h(d, "Changed")
     bullets(d, [
@@ -1855,7 +1880,7 @@ def decisions(path, st):
     title_block(d, EYEBROW, "Decisions required",
                 "Everything that needs your approval, in one place")
     kv(d, "Generated", st)
-    kv(d, "Items", "3")
+    kv(d, "Items", "2")
     h(d, "1. V4 opening. RESOLVED, for the record.")
     para(d, "The earlier opening asserted a measured comparison that "
             "nothing in this workspace supports. Your approved "
@@ -1894,20 +1919,11 @@ def decisions(path, st):
             "This is a scheduling decision, not a script change, and the "
             "exact destinations must be confirmed live before upload.",
          size=10.5)
-    h(d, "3. One card label, for you to settle.")
-    para(d, "NEW_V6_FS_19_FOUR_THINGS is re-cued to TAKEAWAY VALUE, where "
-            "its WHAT YOU GET framing belongs and where it no longer "
-            "competes with the three-questions card. Its four sub-labels "
-            "read WHAT MAY TRAVEL, WHAT MAY NOT, WHAT YOU CAN PROVE and "
-            "WHAT YOU WOULD STILL NEED TO LEARN. Those are not V6's four "
-            "things, which are PROBLEM, AUTHORITY, PROOF and REAL GAP. I "
-            "did not redesign the card in this pass. Tell me whether to "
-            "re-label it or drop the sub-labels and I will do only that.",
-         size=10.5)
-    footer_note(d, "Two of these three need you. Everything else in "
-                   "this pass is complete, and the remaining release "
-                   "checks are listed separately because they need the "
-                   "finished export, not a decision.")
+    footer_note(d, "One of these two needs you: the Watch Next "
+                   "scheduling. Everything else in this pass is complete, "
+                   "and the remaining release checks are listed "
+                   "separately because they need the finished export or a "
+                   "live check, not a decision.")
     d.save(path)
     return path
 

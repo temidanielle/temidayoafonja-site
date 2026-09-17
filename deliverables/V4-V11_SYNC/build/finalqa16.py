@@ -108,6 +108,23 @@ for n in R.VIDEOS:
     ck("V%d Shorts carry complete lists, referents and one action" % n,
        not SH.audit(n), SH.audit(n) or "%d editorial rules"
        % (len(SH.LISTS) + len(SH.ANTECEDENTS)))
+    _acts = [(num, SH.actions(R.S._norm(" ".join(
+        SH.SHORTS[(n, num)]["ask"])))) for num in (1, 2, 3)]
+    ck("V%d every ask is one audience action, counted not assumed" % n,
+       all(len(a) <= 1 for _, a in _acts),
+       "; ".join("Short %d: %s" % (num, ", ".join(a) or "none named")
+                 for num, a in _acts))
+    ck("V%d every Short opens on something it has established" % n,
+       not [b_ for b_ in SH.audit(n) if "STANDALONE" in b_],
+       "%d opening referents checked"
+       % len([x for x in SH.OPENING_REFERENTS if x[0] == n]))
+    ck("V%d every Short line is a whole source sentence" % n,
+       all(SH.whole_sentences(n, l) for num in (1, 2, 3)
+           for l in SH.lines(n, num)),
+       "no part-sentence lifts")
+    ck("V%d every Short is under 150 words" % n,
+       all(r["words"] < 150 for r in SH.rows(n)),
+       ", ".join("%d" % r["words"] for r in SH.rows(n)))
     # shorts
     ck("V%d exactly three Shorts" % n, len(SH.rows(n)) == 3)
     ck("V%d every Short line verbatim" % n, not SH.verify(n), "")
@@ -289,6 +306,82 @@ ck("Every retired family is marked RETIRED, not merely absent",
    all(c > 0 for _, _, c in _retired_named),
    ", ".join("V%d %s in %d places" % x for x in _retired_named)
    or "none retired")
+
+# A decision that has been made must not still be asked, and a retired
+# family must not still be offered back. Both survived the last pass in
+# documents that were never regenerated against the decision.
+_SETTLED = [
+ ("the V6 card relabel", re.compile(
+     r"whether to re-?label|was not redesigned|drop the sub-labels",
+     re.I)),
+ ("the V8 retirement", re.compile(
+     r"rather keep it|give it its own passage|"
+     r"(?<!not to be )reassigned to another", re.I)),
+]
+_docs = []
+for _n in R.VIDEOS:
+    for _root, _, _names in os.walk(os.path.join(OUT, "PACKAGES",
+                                                 P.PKG[_n])):
+        for _nm in sorted(_names):
+            if _nm.endswith((".docx", ".txt")):
+                _docs.append(os.path.join(_root, _nm))
+for _nm in sorted(os.listdir(os.path.join(OUT, "SHARED"))):
+    if _nm.endswith(".docx"):
+        _docs.append(os.path.join(OUT, "SHARED", _nm))
+for _what, _rx in _SETTLED:
+    _hits = [(os.path.basename(f), u[:60]) for f in _docs
+             for u in units(f) if _rx.search(u)]
+    ck("No document still asks for %s" % _what, not _hits,
+       _hits or "settled, and not reopened in %d documents" % len(_docs))
+
+# A table cell is not a row. Reading the flat text of a document cannot
+# tell whether the status beside a family name says retired, so the rows
+# are read as rows.
+def table_rows(path):
+    from docx import Document
+    out = []
+    for t in Document(path).tables:
+        for r in t.rows:
+            out.append([c.text.strip() for c in r.cells])
+    return out
+
+
+_ledger = os.path.join(OUT, "SHARED", "V4-V11_REVISED_ASSET_LEDGER.docx")
+_lrows = table_rows(_ledger)
+for _n in R.VIDEOS:
+    for _r in Q.retired(_n):
+        _rows = [row for row in _lrows
+                 if any(_r["key"] in c for c in row)]
+        _unmarked = [row for row in _rows
+                     if not any("RETIRED" in c.upper()
+                                or "INACTIVE" in c.upper() for c in row)]
+        ck("Every ledger row for %s says retired" % _r["key"],
+           _rows and not _unmarked,
+           "%d rows name it, %d of them marked"
+           % (len(_rows), len(_rows) - len(_unmarked)))
+        _ev = os.path.join(OUT, "PACKAGES", P.PKG[_n], "07_EVIDENCE",
+                           "Evidence_and_Boundary_Notes.docx")
+        _erows = [row for row in table_rows(_ev)
+                  if any(_r["key"] in c for c in row)]
+        _ebad = [row for row in _erows
+                 if not any("RETIRED" in c.upper() for c in row)]
+        ck("V%d evidence notes name %s as retired" % (_n, _r["key"]),
+           _erows and not _ebad,
+           "%d rows name it, %d of them marked"
+           % (len(_erows), len(_erows) - len(_ebad)))
+
+_mu = units(os.path.join(OUT, "SHARED",
+                         "V4-V11_COMBINED_SOURCE_MANIFEST.docx"))
+_a4 = P.v4_arithmetic()
+ck("The manifest shows V4's introduction and hook delta apart",
+   "+%d" % _a4["intro"] in _mu and "+%d" % _a4["hook"] in _mu
+   and "+%d" % (_a4["intro"] + _a4["hook"]) not in _mu,
+   "+%d and +%d, never +%d" % (_a4["intro"], _a4["hook"],
+                               _a4["intro"] + _a4["hook"]))
+ck("No document calls the new opening families cards",
+   not [1 for f in _docs for u in units(f)
+        if re.search(r"six opening cards", u, re.I)],
+   "six families comprising eight states")
 
 bad = [r for r in Rw if not r[1]]
 for nm, o, d in Rw:

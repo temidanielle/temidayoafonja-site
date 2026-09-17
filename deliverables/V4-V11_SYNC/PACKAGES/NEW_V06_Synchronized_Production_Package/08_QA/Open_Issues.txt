@@ -2,12 +2,10 @@
 NEW PUBLIC V6  |  OPEN ISSUES
 ==============================================================================
 
-1. NEW_V6_FS_19_FOUR_THINGS is re-cued to TAKEAWAY VALUE, where its
-   WHAT YOU GET framing belongs. Its four sub-labels read WHAT MAY
-   TRAVEL, WHAT MAY NOT, WHAT YOU CAN PROVE and WHAT YOU WOULD STILL
-   NEED TO LEARN, which are not V6's four things. The card was not
-   redesigned in this pass. Decide whether to re-label it to PROBLEM,
-   AUTHORITY, PROOF, REAL GAP or to drop the sub-labels.
+1. RESOLVED. NEW_V6_FS_19_FOUR_THINGS is re-cued to TAKEAWAY VALUE
+   and its four sub-labels now read PROBLEM, AUTHORITY, PROOF and
+   REAL GAP, each with the question its own section asks. The old
+   labels were V9's four columns. Nothing about this card is open.
 
 2. The ten-minute title promise has to pass the finished export. The
    reconciled script is 1,096 spoken words, roughly 7.6 to 8.4

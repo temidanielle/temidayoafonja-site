@@ -45,11 +45,11 @@ SHORT 2  |  Expected vs Actual
     ONE ASK:   Write EXPECTED and ACTUAL side by side.
 
 SHORT 3  |  What Is the Cost of Role Drift?
-    LENGTH:   128 words, about 0:47 at 165 wpm, arithmetic
+    LENGTH:   120 words, about 0:44 at 165 wpm, arithmetic
     OPEN TEXT: What does the difference actually cost you?
     OPEN SHOT: camera, 9:16
     SOUND:     one accent on “cost”
     CUT TO:    NEW_V11_FS_06_FOUR_COST_LENSES
                on: I would look at four costs.
     PAYOFF:    NEW_V11_FS_12_NAME_THE_DIFFERENCE, the last frame
-    ONE ASK:   Name one real cost. Then choose one next action: c...
+    ONE ASK:   Name one real cost.

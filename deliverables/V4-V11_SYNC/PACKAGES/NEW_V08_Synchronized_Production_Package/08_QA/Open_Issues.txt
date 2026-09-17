@@ -2,12 +2,12 @@
 NEW PUBLIC V8  |  OPEN ISSUES
 ==============================================================================
 
-1. NEW_V8_FS_11_A_FACTUAL_RECORD is retired. After its authorized
-   copy update it says what FS_04 already says on the same paragraph,
-   and the review asked that redundant uses be retired rather than
-   played to retain them. The design and the update are kept in the
-   ledger; only the cue and the rendered state are withdrawn. Say so
-   if you would rather keep it and give it its own passage.
+1. RESOLVED. NEW_V8_FS_11_A_FACTUAL_RECORD is RETIRED and INACTIVE.
+   It is not cued at any paragraph, its state is not rendered into
+   this package, and it is not to be reassigned to another passage.
+   After its authorized copy update it said what FS_04 already says
+   on the same paragraph. The design and the copy update remain in
+   the ledger as a record. Nothing about this card is open.
 
 2. Final runtime, audio mix, footage review, SRT, chapters and
    live-link availability are all deferred to the finished export and

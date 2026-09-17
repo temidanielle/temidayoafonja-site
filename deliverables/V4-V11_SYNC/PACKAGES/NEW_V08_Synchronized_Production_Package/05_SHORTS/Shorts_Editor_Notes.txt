@@ -25,7 +25,7 @@ SHARED RULES
 ------------------------------------------------------------------------------
 
 SHORT 1  |  Your Memory Stays. Your Dashboard Does Not.
-    LENGTH:   125 words, about 0:45 at 165 wpm, arithmetic
+    LENGTH:   123 words, about 0:45 at 165 wpm, arithmetic
     OPEN TEXT: You cannot.
     OPEN SHOT: camera, 9:16
     SOUND:     one accent on “You cannot.”

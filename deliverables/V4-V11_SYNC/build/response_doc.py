@@ -34,165 +34,165 @@ def build(path, st):
     z = zipfile.ZipFile(arc)
     t = P.totals()
     a4 = P.v4_arithmetic()
-    states = {}
-    for n in R.VIDEOS:
-        vis = os.path.join(OUT, "PACKAGES", P.PKG[n], "04_VISUAL_ASSETS")
-        states[n] = len([x for x in os.listdir(vis)
-                         if x.endswith(".png") and "Contact_Sheet" not in x])
+    fc = t["final_checks"] or 0
 
     d = base_doc()
-    title_block(d, EYEBROW, "Response, second correction pass",
-                "The follow-up corrections, applied and verified on disk")
+    title_block(d, EYEBROW, "Response, third correction pass",
+                "Contradictions cleared, Shorts rules enforced "
+                "semantically")
     kv(d, "Prepared", st)
-    kv(d, "Supersedes",
-       "the memo with digest 95ce573b63d3ba8dac5ffe972e9db66aec392f5016b6"
-       "d42e761626f94030027b")
-    kv(d, "Superseded delivery",
-       "5814eecc318b9da8e577de7bfcf258cec648251e56efccc3dfa09982cf8e5478")
+    kv(d, "Supersedes", "the second-pass memo, digest 3573a3cd")
+    kv(d, "Superseded delivery", "1c0123747a6f72f0f6873f9d7b209af7bb1468"
+                                 "94b376996ad3e61e5d8b270074")
     kv(d, "This delivery", sha256(arc))
     kv(d, "Entries", "%d" % len(z.namelist()))
     kv(d, "Branch", "claude/video-1-slides-deck-go9bzy")
-    callout(d, "One correction first. The archive you hashed, "
-               "5814eec, was not an older file attached by mistake. It "
-               "was the output of the first correction pass, built and "
-               "sent in that turn. It did not contain the eight items "
-               "below because those were raised afterwards. Every one of "
-               "them is now applied, and the digests above differ because "
-               "the files differ.")
+    callout(d, "Seven narrow corrections, none of them touching the "
+               "approved recording masters, the strategy, the Watch Next "
+               "routes or V12 and V13. No spoken word changed. Two of the "
+               "seven were contradictions between a decision already made "
+               "and a document that was never regenerated against it, "
+               "which is now a check rather than a habit.")
 
-    h(d, "The eight items")
+    h(d, "The seven items")
     table(d, ["", "Asked for", "Done"],
-          [["1", "Correct the active V6 FOUR THINGS card to PROBLEM, "
-                 "AUTHORITY, PROOF, REAL GAP.",
-            "Relabelled, each with the question its own section asks. The "
-            "old labels were V9's four columns, not V6's four things. "
-            "Rendered and inspected."],
-           ["2", "Mark the V8 A FACTUAL RECORD card RETIRED and INACTIVE "
-                 "throughout the package.",
-            "Named as RETIRED in the asset index, the camera map, the "
-            "motion map, the run of show and the QA report, with the "
-            "withdrawn state listed as not present by design. A check "
-            "fails the build if a retired family is merely absent."],
-           ["3", "Correct the five stale camera and full-screen trigger "
-                 "passages and the seven stale section labels.",
-            "Fixed at the root. A re-cued card was moving its section and "
-            "paragraph while keeping the old label and the old trigger "
-            "sentence, so the row pointed at the new paragraph and quoted "
-            "the old one. Both are now re-derived from the reconciled "
-            "script at the new location: seven labels and seven triggers "
-            "corrected, five of which reach the camera map."],
-           ["4", "Correct the reporting totals.",
-            "%d thought blocks holding %d paragraphs, reported apart. %d "
-            "families in total, %d active after one retirement. %d active "
-            "teaching and end-card states. %d contact sheets, counted as "
-            "proof sheets and not as states."
-            % (t["blocks"], t["paragraphs"], t["total_families"],
-               t["active_families"], t["states"], t["contact_sheets"])],
-           ["5", "Correct the inconsistent 220 against 221 verification "
-                 "reporting.",
-            "Both were typed. Every headline number now comes from one "
-            "function in the build, and the final verification total is "
-            "written out by the verification pass and read back by the "
-            "documents. The build reports a mismatch rather than letting "
-            "a stale number ship. This run: %d of %d."
-            % (t["final_checks"] or 0, t["final_checks"] or 0)],
-           ["6", "Distinguish V4's +74 introduction from the +2 approved "
-                 "hook delta.",
-            "Reported as arithmetic: %d intake words, plus %d for the "
-            "restored introduction, plus %d for the approved hypothetical "
-            "opening, is %d. They are separate approvals and are now "
-            "reported separately."
-            % (a4["base"], a4["intro"], a4["hook"], a4["total"])],
-           ["7", "Complete the Shorts corrections for antecedents, "
-                 "whole-sentence source wording, one clear action and "
-                 "realistic timing.",
-            "Ten candidates re-selected. Every line is now a contiguous "
-            "run of whole source sentences, checked by a sentence-level "
-            "rule, so no leading marker is silently dropped. Every ask is "
-            "an action. Every candidate fits under sixty seconds with "
-            "headroom at a 150 word planning rate, not only at 165."],
-           ["8", "Preserve the locked Watch Next routing.",
-            "V10 to V11 and V11 to public V5, unchanged. No route "
-            "substituted, no schedule assumed. Both still flagged pending "
-            "live confirmation."]],
-          widths=[0.3, 2.6, 3.8], size=7.5)
+          [["1", "Remove the obsolete V6 card decision everywhere.",
+            "Gone from V4-V11_DECISIONS_REQUIRED.docx, which now lists "
+            "two items, and from V6's Open_Issues.txt, which records the "
+            "relabel as RESOLVED. A check fails the build if any document "
+            "still asks whether to relabel the card."],
+           ["2", "Finish synchronizing the approved V8 retirement.",
+            "V8's Open_Issues.txt records it as RETIRED and INACTIVE and "
+            "states it is not to be reassigned. The evidence notes carry "
+            "a Retired. Inactive. table and the family is excluded from "
+            "the retained display copy. The ledger's detailed V8 row now "
+            "reads RETIRED / INACTIVE, with the old audit verdict kept "
+            "below it only as a record."],
+           ["3", "Correct the V4 arithmetic in the combined source "
+                 "manifest.",
+            "The word table has separate Restored intro and Approved hook "
+            "delta columns: %d intake, +%d, +%d, %d reconciled. The "
+            "combined +%d never appears."
+            % (a4["base"], a4["intro"], a4["hook"], a4["total"],
+               a4["intro"] + a4["hook"])],
+           ["4", "Correct the opening-asset wording.",
+            "Both places in V4-V11_WHAT_CHANGED_THIS_PASS.docx now read "
+            "six opening families comprising eight states. A check fails "
+            "the build on the old wording."],
+           ["5", "Repair the remaining non-standalone Shorts using exact "
+                 "whole source sentences.",
+            "V10 Short 1 now opens on \u201cYou finally got the job. "
+            "Maybe it is a bigger role.\u201d, which gives both "
+            "\u201cand now\u201d and \u201cthey\u201d their referent. "
+            "V10 Short 3 opens on \u201cBy day 90, success does not have "
+            "to mean proving you were the smartest person in the "
+            "room.\u201d, which establishes the point. V11 Short 3 opens "
+            "on \u201cYou accepted one job. Then you started doing "
+            "another.\u201d, which defines the difference. All three are "
+            "whole source sentences and all three stay under 150 words."],
+           ["6", "Enforce one clear action semantically.",
+            "All five endings reduced, and one more I found the same way: "
+            "V9 Short 3 was pick a job and make four columns. The counter "
+            "distinguishes two steps of one task, which stay together, "
+            "from a second instruction introduced by a new sentence, a "
+            "Then, or a comma-and. No ask now carries more than one."],
+           ["7", "Regenerate the QA reports and memo, with checks that "
+                 "fail these examples first.",
+            "The checks were written and run against the delivered files "
+            "before anything was corrected. All six document "
+            "contradictions and all nine Shorts failures came back as "
+            "failures. Only then were they fixed. This memo is written "
+            "after the rebuild."]],
+          widths=[0.3, 2.5, 3.9], size=7.5)
 
     page_break(d)
-    h(d, "The root cause behind the stale locators")
-    para(d, "Seven cards were re-cued in the first pass because they were "
-            "cued in the wrong place. Moving a card is three facts, not "
-            "two: the section, the paragraph, and the sentence the editor "
-            "cuts on. The first pass moved the first two and left the "
-            "third, so a row could say section 5 while quoting the "
-            "sentence from section 8. The camera map showed five of "
-            "those, because two of the seven are printed through the "
-            "early-edit sequence instead. The locator is now derived as a "
-            "whole, and a check compares every printed label and trigger "
-            "against the reconciled paragraph it points at.", size=10.5)
+    h(d, "Why the previous all-pass result was not reliable, and what "
+         "changed")
+    para(d, "The previous pass reported 226 of 226 while the packages "
+            "still contained a settled decision presented as open and "
+            "Shorts whose endings asked for two things. Both were true at "
+            "once because the checks counted structure rather than "
+            "meaning: one ONE ASK block was read as one action, and no "
+            "check compared a document against a decision already taken. "
+            "A count of passing checks is only worth the questions the "
+            "checks ask.", size=10.5)
+    table(d, ["Now checked", "How it is counted"],
+          [["One audience action per ask",
+            "Instructions are counted, not ask blocks and not verbs. Pick "
+            "one project and write five things is one task in two steps. "
+            "Name one real cost. Then choose one next action is two."],
+           ["Each Short stands alone",
+            "Named opening referents must be established earlier inside "
+            "the same Short, and never in the opening line itself."],
+           ["Whole source sentences only",
+            "Every line has to be a contiguous run of complete sentences "
+            "from its own master, so no leading marker is dropped."],
+           ["Realistic length",
+            "Under 150 spoken words and under 55 seconds at a 150 word "
+            "planning rate, not only at 165."],
+           ["Settled decisions stay settled",
+            "No document may still ask whether to relabel the V6 card or "
+            "offer the V8 card another passage."],
+           ["Retirement is stated on the row",
+            "Ledger and evidence tables are read as rows, not as flat "
+            "text, so a status beside a family name is actually seen."]],
+          widths=[2.0, 4.7], size=8.5)
+    para(d, "Two of the new checks failed on their first run for reasons "
+            "in the checks rather than the packages: one matched its own "
+            "corrective sentence, and one read table cells where it "
+            "needed table rows. Both were fixed and re-run. Neither was a "
+            "package defect, and the distinction is recorded here rather "
+            "than smoothed over.", size=10.5, before=6)
 
-    h(d, "Where the numbers stand")
-    table(d, ["Video", "Words", "Thought blocks", "Active families",
-              "States", "Shorts"],
-          [["V%d" % n, format(R.word_count(n), ","),
-            "%d" % len(P.blocks(n)), "%d" % len(P.cues(n)),
-            "%d" % states[n], "3"] for n in R.VIDEOS] +
-          [["Total", format(t["words"], ","), "%d" % t["blocks"],
-            "%d" % t["active_families"], "%d" % t["states"],
-            "%d" % t["shorts"]]],
-          widths=[0.8, 1.0, 1.4, 1.4, 1.0, 0.8], size=8.5)
-    table(d, ["", "Count"],
-          [["Families before this work", "%d" % t["prior_families"]],
-           ["New opening families built", "%d" % t["new_families"]],
-           ["Families in total", "%d" % t["total_families"]],
-           ["Retired, inactive, not cued, not rendered",
-            "%d" % t["retired_families"]],
-           ["Active families", "%d" % t["active_families"]],
-           ["Active teaching and end-card states", "%d" % t["states"]],
-           ["Contact sheets, one per video, not states",
-            "%d" % t["contact_sheets"]]],
-          widths=[4.3, 2.4], size=8.5)
+    h(d, "The Shorts, as they now stand")
+    table(d, ["", "Words", "At 150 wpm", "Actions in the ask"],
+          [["V%d Short %d" % (n, r["num"]), "%d" % r["words"],
+            r["plan_clock"],
+            "%d" % len(SH.actions(R.S._norm(" ".join(
+                SH.SHORTS[(n, r["num"])]["ask"]))))]
+           for n in R.VIDEOS for r in SH.rows(n)],
+          widths=[1.6, 0.9, 1.2, 1.6], size=7.5)
+    caption(d, "Two asks are phrased as a caution rather than an "
+               "instruction, so the counter reads no affirmative action "
+               "in them: V4 Short 3 ends do not assume the learning will "
+               "happen by itself, and that is the point it makes. The "
+               "rule enforced is at most one.")
 
     h(d, "Verification, performed against the files on disk")
     table(d, ["", "Result"],
           [["Source reconciliation", "43 of 43"],
            ["Per-package checks", "175 of 175 across the eight packages"],
            ["Final verification, read back off disk",
-            "%d of %d" % (t["final_checks"] or 0, t["final_checks"] or 0)],
-           ["Shorts editorial audit",
-            "list, antecedent, whole-sentence, trailer, stacked-ask, "
-            "opening and planning-rate checks on all 24"],
-           ["Locator check",
-            "every printed label and trigger compared against the "
-            "reconciled paragraph it points at; none stale"],
+            "%d of %d" % (fc, fc)],
            ["Regression fixtures",
-            "the delivered Shorts, shared paragraphs and report claims "
-            "the reviews named are replayed and all still fire"],
-           ["Historical archives", "all four unchanged, checked by hash"]],
+            "the compound endings, dangling openings, delivered Shorts, "
+            "shared paragraphs and report claims from all three reviews "
+            "are replayed, and every one still fires"]],
           widths=[2.2, 4.5], size=8.5)
-    para(d, "The archive was rebuilt, then hashed from the file on disk, "
-            "and the sidecar was written from that hash. The verification "
-            "pass reads the finished files rather than the objects in "
-            "memory that produced them.", size=10.5, before=6)
+    para(d, "The archive was rebuilt, hashed from the file on disk, and "
+            "the sidecar written from that hash.", size=10.5, before=6)
 
     h(d, "Unchanged, as instructed")
     bullets(d, [
       "The approved recording masters. No spoken word changed in this "
-      "pass, in any of the eight videos.",
+      "pass.",
       "Approved strategy, which was not reopened.",
       "V12 and V13, which were not touched.",
+      "The V10 to V11 and V11 to public V5 Watch Next routes.",
       "All six restored introductions, thought-block parity and the "
       "eight faith-inclusive descriptions.",
-      "V6 anonymity, the sample boundary and the separated private "
-      "register.",
-      "The V10 to V11 and V11 to public V5 Watch Next routes.",
+      "The corrected V6 card, the V8 retirement, the corrected locators "
+      "and the reconciled counts from the second pass: %d thought "
+      "blocks, %d families in total, %d active, %d states, %d contact "
+      "sheets." % (t["blocks"], t["total_families"], t["active_families"],
+                   t["states"], t["contact_sheets"]),
     ], size=10)
 
     h(d, "Still outstanding, and still separate from readiness")
     para(d, "Final runtime, V6's ten-minute promise, captions, chapters, "
             "audio and the live availability of both Watch Next "
-            "destinations. None has been performed and none is claimed. "
-            "Each needs the finished export or a live check. They are "
-            "listed in their own document.", size=10.5)
+            "destinations. None has been performed and none is claimed.",
+         size=10.5)
     footer_note(d, "Production readiness is locked. Release approval is "
                    "yours, after those.")
     d.save(path)
@@ -201,6 +201,6 @@ def build(path, st):
 
 if __name__ == "__main__":
     p = build(os.path.join(OUT, "RESPONSE",
-                           "V4-V11_Response_Second_Correction_Pass.docx"),
+                           "V4-V11_Response_Third_Correction_Pass.docx"),
               P.stamp())
     print(p)

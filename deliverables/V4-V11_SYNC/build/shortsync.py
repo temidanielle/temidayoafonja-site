@@ -106,9 +106,7 @@ SHORTS = {
          "done before. We want you to learn it.”",
          "The problem is when the only thing growing is how much the "
          "company depends on you."],
-   ask=["Ask for one piece of work that builds a new decision, a new "
-        "problem, or new proof, and set a date to review what "
-        "changed."]),
+   ask=["Ask for work that builds something new."]),
  (5, 2): dict(
    stop=["Being useful can feel like career security."],
    hold=["Sometimes it is.",
@@ -208,9 +206,8 @@ SHORTS = {
          "your current role, not the next one.",
          "You can become more useful without becoming easier to picture at "
          "the next level."],
-   ask=["Pick one kind of next-level work you want to be trusted with. Ask "
-        "what decision, problem, stakeholder, or risk would let you "
-        "practice it where someone can see the result."]),
+   ask=["Pick one kind of next-level work you want to be trusted "
+        "with."]),
 
  (8, 1): dict(
    stop=["Imagine tomorrow morning you try to log into your work account.",
@@ -222,11 +219,11 @@ SHORTS = {
          "But was the improvement 27% or 37%? Did you own the decision or "
          "the rollout? What was the baseline?",
          "That is why I think the worst time to reconstruct your career "
-         "evidence is after you lose access to it."],
+         "evidence is after you lose access to it.",
+         "And no, I am not telling you to take company files."],
    ask=["Pick one project and write five things in your own words: "
-        "baseline, scope, the decision that was yours, the result, and how "
-        "the result was judged. Then ask what you are allowed to keep or "
-        "say outside the company."]),
+        "baseline, scope, the decision that was yours, the result, and "
+        "how the result was judged."]),
  (8, 2): dict(
    stop=["Keeping proof does not mean taking company property."],
    hold=["Do not send confidential documents to yourself.",
@@ -291,25 +288,24 @@ SHORTS = {
          "But some of that expertise belongs to the environment, not only "
          "to you. That is why a move can feel humbling even when you have "
          "a lot of experience.",
-         "The capability may still be there. The shortcuts are not."],
-   ask=["Take one job you are thinking about. Make four columns: TRAVELS. "
-        "DOES NOT TRAVEL. PROOF. RELEARN."]),
+         "The capability may still be there. The shortcuts are not.",
+         "Take one job you are thinking about."],
+   ask=["Make four columns: TRAVELS. DOES NOT TRAVEL. PROOF. RELEARN."]),
 
  (10, 1): dict(
-   stop=["And now you feel this pressure to prove they made the right "
-         "decision."],
-   hold=["That pressure can make you do exactly the wrong thing.",
-         "You start talking too much about what worked at your last "
-         "company. You start trying to fix things before you understand "
-         "why they work this way. Or you go the other direction. You stay "
-         "quiet because you are afraid of getting something wrong.",
+   stop=["You finally got the job. Maybe it is a bigger role."],
+   hold=["And now you feel this pressure to prove they made the right "
+         "decision. That pressure can make you do exactly the wrong "
+         "thing.",
+         "You start trying to fix things before you understand why they "
+         "work this way. Or you go the other direction. You stay quiet "
+         "because you are afraid of getting something wrong.",
          "I do not think either one is the job of your first 90 days.",
          "Your first job is not to prove that everything you already know "
          "works here."],
    ask=["It is to figure out three things: What from my experience "
         "actually works here? What do I need to learn about this new "
-        "context? And what can I begin to prove here?",
-        "I think about that as READ. TEST. PROVE."]),
+        "context? And what can I begin to prove here?"]),
  (10, 2): dict(
    stop=["You can be experienced and still be new to the context."],
    hold=["I’ve been the new person many times across different roles "
@@ -319,17 +315,18 @@ SHORTS = {
          "are not the same thing.",
          "You do not know which rule is a real rule and which one is "
          "simply how the last person did it.",
-         "That is why I would not spend the first 90 days trying to prove "
-         "that everything you already know works here. I would spend them "
-         "finding the boundary between what you brought with you and what "
-         "this environment still has to teach you."],
-   ask=["Read the context. Test what traveled. Build new proof. And read "
-        "the role back."]),
+],
+   ask=["That is why I would not spend the first 90 days trying to prove "
+        "that everything you already know works here. I would spend them "
+        "finding the boundary between what you brought with you and what "
+        "this environment still has to teach you."]),
  (10, 3): dict(
-   stop=["Around this point, I would have a very simple conversation "
-         "with your manager."],
-   hold=["Not, “How am I doing?” That question is broad enough "
-         "to get you an answer like, “You’re doing great.”",
+   stop=["By day 90, success does not have to mean proving you were the "
+         "smartest person in the room."],
+   hold=["Around this point, I would have a very simple conversation with "
+         "your manager. Not, “How am I doing?” That question is "
+         "broad enough to get you an answer like, “You’re doing "
+         "great.”",
          "Ask something more useful: “What have you seen me pick up "
          "quickly?” “Where do I still need more context?” "
          "“Is there anything I am treating like my old environment "
@@ -367,9 +364,10 @@ SHORTS = {
          "decision was yours and discover that you can only recommend."],
    ask=["Write EXPECTED and ACTUAL side by side."]),
  (11, 3): dict(
-   stop=["What does the difference actually cost you? Not every mismatch "
-         "deserves the same response."],
-   hold=["I would look at four costs. CAPABILITY. Is this role building "
+   stop=["You accepted one job. Then you started doing another."],
+   hold=["What does the difference actually cost you? Not every mismatch "
+         "deserves the same response.",
+         "I would look at four costs. CAPABILITY. Is this role building "
          "judgment, scope, and experience you want to carry forward? "
          "EVIDENCE. Will you be able to prove meaningful work from this "
          "version of the job?",
@@ -380,9 +378,7 @@ SHORTS = {
          "A mismatch can be manageable in one category and unacceptable in "
          "another. You need to know which one you are actually reacting "
          "to."],
-   ask=["Name one real cost. Then choose one next action: clarify, "
-        "negotiate, test for a defined period, or begin planning another "
-        "option."]),
+   ask=["Name one real cost."]),
 }
 
 
@@ -605,8 +601,8 @@ ANTECEDENTS = [
  (6, 1, "look at the verbs", "I look for four things"),
  (11, 2, "Then write ACTUAL", "Start with EXPECTED"),
  (11, 3, "which one you are actually reacting to", "COMPENSATION"),
- (7, 3, "practice it where someone can see", "Pick one kind of next-level "
-                                             "work"),
+ (7, 3, "Pick one kind of next-level work",
+        "The problem may be that the evidence people see"),
  (8, 1, "was the improvement 27% or 37%", "an interviewer asks"),
  (9, 2, "Then ask what belonged to the old place",
         "not everything comes with you"),
@@ -694,6 +690,86 @@ def whole_sentences(n, line):
     return False
 
 
+# One clear audience action, counted rather than assumed. Having a single
+# ONE ASK block proves only that there is one block. These are the verbs
+# that ask the viewer to do something, matched where an instruction
+# actually starts: at a sentence, after "Then ", after "and ", or in the
+# "I would" and "you can" framings this script uses for the same purpose.
+ACTION_VERBS = (
+ "ask", "pick", "write", "name", "read", "test", "build", "keep", "take",
+ "set", "choose", "decide", "try", "make", "look", "watch", "say",
+ "circle", "start", "spend", "assume", "skip", "collect", "record",
+ "capture", "list", "add", "bring", "check", "answer", "practice",
+ "figure", "circle", "compare", "note", "review", "audit")
+# A negated instruction is the setup for the affirmative one beside it,
+# not a second thing to do.
+_NEGATED = ("do not", "don't", "not only", "never", "would not", "cannot",
+            "does not", "no longer")
+_LEADS = ("", "then ", "and ", "so ", "also ", "but ", "i would ",
+          "i will ", "you can ", "you could ", "you should ", "just ",
+          "it is to ", "your first job is to ", "the goal is to ")
+
+
+def _instructions(text):
+    """Every point at which the ask issues a separate instruction.
+
+    Two steps of one task, joined by a bare "and", are one thing to do:
+    pick a project and write five things about it is one action. A new
+    sentence, an explicit "Then ...", or a ", and ..." continuation starts
+    another, which is what "ask for work and set a date to review it"
+    does. Counting bare verbs would fail the first and counting ONE ASK
+    blocks would fail all of them.
+    """
+    out = []
+    for sent in split_sentences(text):
+        low = " ".join(sent.split()).lower()
+        starts = [0]
+        for m in re.finditer(r",\s+and\s+|\bthen\s+", low):
+            starts.append(m.end())
+        for i, a in enumerate(starts):
+            b = starts[i + 1] if i + 1 < len(starts) else len(low)
+            out.append((low[:a], low[a:b]))
+    return out
+
+
+def actions(text):
+    """The affirmative audience actions an ask contains."""
+    found = []
+    for before, part in _instructions(text):
+        rest = part.strip()
+        # An opening adverbial or conditional clause is when or whether to
+        # act, not a second thing to do: "Once a month, take ten minutes"
+        # and "If those two versions are different, name the difference"
+        # are each one action.
+        m = re.match(r"(?:once|if|when|after|before|by|around|so|and)\b"
+                     r"[^,]{0,60},\s+", rest)
+        if m:
+            rest = rest[m.end():]
+        for lead in sorted(_LEADS, key=len, reverse=True):
+            if lead and rest.startswith(lead):
+                rest = rest[len(lead):].strip()
+                break
+        verb = rest.split()[0].strip(",.:;\u201c\u201d\"'") if rest else ""
+        if verb not in ACTION_VERBS:
+            continue
+        if any(x in (before[-28:] + " " + rest[:24]) for x in _NEGATED):
+            continue
+        found.append((verb, rest[:24]))
+    return [v for v, _ in found]
+
+
+# The first words a viewer hears have to make sense on their own. Each of
+# these is a phrase that points at something, paired with the wording that
+# has to arrive before it inside the same Short.
+OPENING_REFERENTS = [
+ (10, 1, "and now you feel this pressure", "you finally got the job"),
+ (10, 1, "they made the right decision", "you finally got the job"),
+ (10, 3, "around this point", "by day 90"),
+ (11, 3, "what does the difference actually cost you",
+         "then you started doing another"),
+]
+
+
 def audit(n):
     """Editorial regressions, reported as failures with their rule id."""
     bad = []
@@ -739,6 +815,33 @@ def audit(n):
         if len(d["ask"]) > 2:
             bad.append("%s ASK: %d ask blocks; one natural action only"
                        % (tag, len(d["ask"])))
+        acts = actions(R.S._norm(" ".join(d["ask"])))
+        if len(acts) > 1:
+            bad.append("%s ONE ACTION: the ask contains %d audience "
+                       "actions (%s); reduce it to one"
+                       % (tag, len(acts), ", ".join(acts)))
+        first = R.S._norm(d["stop"][0]).lower() if d["stop"] else ""
+        for v, m, ref, ante in OPENING_REFERENTS:
+            if (v, m) != (n, num):
+                continue
+            r, an = R.S._norm(ref).lower(), R.S._norm(ante).lower()
+            if r not in low:
+                bad.append("%s STANDALONE: fixture phrase '%s' is gone; "
+                           "re-point the rule" % (tag, ref))
+            elif an not in low:
+                bad.append("%s STANDALONE: the Short opens on '%s' with "
+                           "nothing establishing it" % (tag, ref))
+            elif low.index(an) > low.index(r):
+                bad.append("%s STANDALONE: '%s' is spoken before '%s' "
+                           "establishes it" % (tag, ref, ante))
+            elif r in first and an not in first:
+                bad.append("%s STANDALONE: the opening line is '%s', "
+                           "which points at something the Short has not "
+                           "said yet" % (tag, ref))
+        if rows(n)[num - 1]["words"] >= 150:
+            bad.append("%s LENGTH: %d spoken words is at or above the 150 "
+                       "word ceiling"
+                       % (tag, rows(n)[num - 1]["words"]))
         o = OPEN[(n, num)]
         if R.S._norm(o["text"]).lower() not in low:
             bad.append("%s OPENING: on-screen text is not the Short's own "
