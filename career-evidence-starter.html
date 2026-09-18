@@ -411,8 +411,13 @@
         </ul>
       </div>
     </div>
+    <!-- The ladder line named all three products but linked none of them. Links
+         added 2026-09-17: Keep the Proof had no inbound link from anywhere on
+         the site, and the Field Kit page had one, from a page nothing else
+         reached. The Career Move Review is named last and marked optional,
+         because nothing here should suggest the Starter is incomplete alone. -->
     <div class="ces-ladder">
-      <p><strong>This Starter</strong> proves one thing. <strong>Keep the Proof</strong>, the paid 60-minute system, builds and maintains the whole record. <strong>The Capability Formation Field Kit</strong> reads what your current position is building and whether it travels.</p>
+      <p><strong>This Starter</strong> proves one thing. <strong><a href="/keep-the-proof">Keep the Proof</a></strong>, the paid 60-minute system, builds and maintains the whole record. <strong><a href="/fieldkit">The Capability Formation Field Kit</a></strong> reads what your current position is building and whether it travels. And if you already have a particular move in view, a <a href="/career-move-review">Career Move Review</a> reads your evidence against it with you. None of them is required. This Starter works on its own.</p>
     </div>
   </div>
 </section>
@@ -611,17 +616,30 @@
    a requested resource from ongoing guidance. */
 var POLICY_VERSION = "2026-08-18";
 
+/* Retired 2026-09-17, by setting current to null, which is the mechanism this
+   block documents above for exactly this situation.
+
+   What was here: a Lightning Lesson dated "Wednesday, September 2, 2026" with
+   available_until "2026-09-02T18:45:00-05:00". That date was already wrong when
+   it was written. The session had been rescheduled to September 9, and the
+   reschedule updated career-decisions.html but missed this page, which was
+   built afterwards and carried the old date in with it. The session then ran on
+   September 9 and was retired from the site on September 10.
+
+   No replacement date has been substituted, because there is nothing to
+   substitute. The Lightning Lesson is not a live offer, and the source of truth
+   holds no approved date for it. Putting the September 9 date here would record
+   a retired session as though it were upcoming, which is worse than the stale
+   value it replaced.
+
+   Nothing visible changes. available_until had long passed, so the page was
+   already serving the fallback to every visitor. This corrects the stored data
+   to match what the page actually does.
+
+   To offer a next step here again, replace null with a block in the same shape
+   as the fallback below, including a fully qualified available_until. */
 var NEXT_STEP = {
-  current: {
-    id: "lightning-lesson",
-    available_until: "2026-09-02T18:45:00-05:00",
-    label: "One next step",
-    title: "How to Tell If Your Career Is Stalling",
-    body: "A free 45 minute Lightning Lesson on Wednesday, September 2, 2026, 6:00 to 6:45 PM CT. Three signs your role may have stopped building your capability and future options, even while you are performing well.",
-    cta: "Register free",
-    href: "https://maven.com/p/5162f2/how-to-tell-if-your-career-is-stalling",
-    external: true
-  },
+  current: null,
   fallback: {
     id: "field-kit",
     label: "One next step",

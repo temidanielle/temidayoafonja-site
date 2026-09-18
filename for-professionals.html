@@ -86,9 +86,16 @@
 .path-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: stretch; margin-top: 8px; }
 /* Only one live session remains, so its grid is a single column: two columns
    would leave the card at half width with an empty cell beside it. Scoped to
-   .session-path deliberately. The paid-card grid further down still holds two
-   cards and must keep the two-column rule above. */
+   .session-path deliberately. The other grids on this page hold two or three
+   cards and keep their own rules. */
 .session-path .path-grid { grid-template-columns: 1fr; }
+/* The paid ladder holds three cards: Keep the Proof, the Field Kit, and the
+   Career Move Review. Two columns would strand the third at half width on a
+   row of its own. */
+.path-grid--three { grid-template-columns: repeat(3, 1fr); }
+/* The one-to-one card carries a longer price line than the paid cards below,
+   which are a bare figure. Wrapping it is correct; shrinking it is not. */
+.session-path .path-date, .path-card.primary .path-date { line-height: 1.35; }
 .path-card { border-radius: 14px; padding: 30px 32px; display: flex; flex-direction: column; }
 .path-card h3 { font-size: clamp(20px, 2.2vw, 25px); line-height: 1.15; margin-bottom: 10px; }
 .path-card p { font-size: 14.5px; line-height: 1.6; }
@@ -234,29 +241,71 @@
   </div>
 </section>
 
-<!-- 5E CONTINUE THE READ PRIVATELY. Two paid options, lighter card first.
-     Same .path-* system as Your Path above, so the two sections read as one
-     ladder rather than two unrelated card treatments. -->
+<!-- 5D-2 START ON YOUR OWN, FREE. The two free individual resources. Added
+     2026-09-17. Before this, /career-evidence-starter was mentioned only in the
+     trailing line below the session cards and /career-decisions was reachable
+     from the privacy policy and nowhere else. This page is the individual hub,
+     so the free starting points belong on it. -->
 <section class="a-section path-section">
   <div class="lean-wrap">
-    <span class="lean-eyebrow">Continue the Read Privately</span>
+    <span class="lean-eyebrow">Start on Your Own, Free</span>
     <div class="path-grid">
 
       <article class="path-card secondary">
-        <div class="path-label">Field Kit</div>
+        <div class="path-label">Free &middot; About 10 minutes</div>
+        <h3>The 10-Minute Career Evidence Starter</h3>
+        <p>A six-page fillable worksheet. Take one accomplishment through the method and come out with a single portable Proof Line you can actually use in a review or an interview.</p>
+        <a class="lean-btn outline path-cta" href="/career-evidence-starter">Get the Free Starter</a>
+      </article>
+
+      <article class="path-card secondary">
+        <div class="path-label">Free &middot; Three questions</div>
+        <h3>Career Decision Evidence Check</h3>
+        <p>A short check for anyone weighing whether to stay, leave or reposition. Three questions that read what the work has actually built, rather than how you feel about it this week.</p>
+        <a class="lean-btn outline path-cta" href="/career-decisions">Take the Evidence Check</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 5E CONTINUE ON YOUR OWN, OR WITH TEMIDAYO. The paid ladder, self-guided
+     first, then the one-to-one service.
+     Rewritten 2026-09-17. This section previously held the Field Kit beside the
+     Private Capability Position Read at $500. Under Option A of the website
+     audit the Private Read is replaced by the Career Move Review, and the two
+     must never both appear. Keep the Proof was added because it had no inbound
+     link from anywhere on the site.
+     The Field Kit card now links to /fieldkit rather than straight to Gumroad:
+     only the product's own page sends anyone to a checkout. -->
+<section class="a-section path-section">
+  <div class="lean-wrap">
+    <span class="lean-eyebrow">Go Further, On Your Own or With Temidayo</span>
+    <div class="path-grid path-grid--three">
+
+      <article class="path-card secondary">
+        <div class="path-label">Self-guided</div>
+        <h3>Keep the Proof</h3>
+        <div class="path-date">$49</div>
+        <p>A 60-minute system for building the evidence record before you need it. The full guided method, the reusable Career Evidence Ledger, and a Start Here guide, so you are not reconstructing your career from memory later.</p>
+        <a class="lean-btn outline path-cta" href="/keep-the-proof">See Keep the Proof</a>
+      </article>
+
+      <article class="path-card secondary">
+        <div class="path-label">Self-guided</div>
         <h3>Capability Formation Field Kit</h3>
         <div class="path-date">$150</div>
         <p>The complete private system for reading your capability position on your own. Collect your own evidence, calibrate without a room, and rerun the process as your situation changes. You keep the full instrument and use it again.</p>
-        <a class="lean-btn outline path-cta" href="https://temidayoafonja.gumroad.com/l/czmqp" target="_blank" rel="noopener">Explore the Self-Guided Field Kit</a>
+        <a class="lean-btn outline path-cta" href="/fieldkit">See the Field Kit</a>
       </article>
 
       <article class="path-card primary">
         <div class="path-label">One to one</div>
-        <h3>Private Capability Position Read</h3>
-        <div class="path-date">$500</div>
-        <p>A one-to-one session where Temidayo interprets your evidence with you. You receive a personalized Next-Move Note based on your specific position, not a provisional group reading. For professionals facing a high-cost career decision who want expert interpretation before they move.</p>
-        <a class="lean-btn light path-cta" href="mailto:temidayo@thedensitygroup.com?subject=Private%20Capability%20Position%20Read%20Inquiry">Request a Private Read</a>
-        <p class="path-alt">Or email <a href="mailto:temidayo@thedensitygroup.com?subject=Private%20Capability%20Position%20Read%20Inquiry">temidayo@thedensitygroup.com</a> directly.</p>
+        <h3>Career Move Review</h3>
+        <div class="path-date">$495 for the first five clients, then $750</div>
+        <p>You have a specific move in view and cannot tell whether your experience actually fits it. In 90 minutes, Temidayo reads your evidence against that move: what travels, what does not, what you can prove today, and what the new context will still ask of you. You leave with a written Career Move Summary within five business days of the session, and one clarification follow-up usable within seven calendar days of receiving it.</p>
+        <a class="lean-btn light path-cta" href="/career-move-review">Request a Career Move Review</a>
+        <p class="path-alt">You submit a request first. Temidayo replies to every request within two business days, and nothing is charged until she has read it and confirmed it is a fit.</p>
       </article>
 
     </div>
