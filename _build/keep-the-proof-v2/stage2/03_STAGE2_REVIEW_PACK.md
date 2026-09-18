@@ -42,6 +42,12 @@ Item L5. Reconstruction sources near employer-owned information.
 - Exact question for counsel: which listed sources (personal calendars, old job descriptions, public announcements, artifacts) carry any retention or ownership risk, and how should each be bounded?
 - Wording status: sources listed with a governing note that anything not clearly the reader's is left out; specific boundaries withheld and cross-referenced to L2.
 
+Item L6. The account-versus-artifact ownership caveat.
+- Location: Part One, "The boundary," new caveat paragraph and legal note.
+- Purpose: keep the core practical distinction between a personal account and an employer-owned artifact, while acknowledging that ownership can be a legal question in some situations.
+- Exact question for counsel: how should the guide describe that boundary, and situation-specific ownership (work made for hire, contractor versus employee, signed agreements), without stating a legal conclusion?
+- Wording status: the page teaches the practical habit only, a marked legal note is added, and no legal conclusion is stated. Added in the Stage 2 correction pass.
+
 Items also carried for review, not yet written into pages because they do not change reader instructions in Version 2: work-for-hire and portfolio use; contractor versus employee ownership; client confidentiality layered on employer confidentiality; severance and non-disparagement clauses; preservation exceptions; and employer AI-tool and monitoring policies. These inform the permission standard, which is unchanged, and will be revisited with counsel if any reader-facing wording is proposed.
 
 Nothing in the manuscript states a legal conclusion. Every legal item is either carried unchanged from Version 1 or written as a marked placeholder.
@@ -82,7 +88,7 @@ Handbook
 | 27 | Priya, Sam | RETAINED. |
 | 28 | Full sequence (Theo) | RETAINED. |
 | 30 | 60-minute setup | REVISED into "Your First 60 Minutes"; completion promise removed; reconstruct route and checklist added. |
-| 31 | Monthly and quarterly routines | RETAINED as optional; event capture becomes primary (cadence remains a test, not settled). |
+| 31 | Monthly and quarterly routines | RETAINED as optional; presented alongside event-based capture with neither asserted as better (cadence remains a test, not settled). |
 | 32 | Retrieval table; starting-late intro | RETAINED (retrieval); MOVED and EXPANDED (reconstruction) into Part Seven. |
 | 33 | Reconstruction steps | MOVED and EXPANDED into Part Seven; certainty levels added; tone made non-penalty. |
 | 34 | Optional AI prompt | RETAINED, including the confidentiality guardrail. |
@@ -116,7 +122,7 @@ The only outright removal is the "60-Minute" descriptor from the cover, which th
 
 Confirmed: no item that Research Pass 2 marked TEST BEFORE CHANGING, unknown, unresolved, or candidate has been silently implemented as settled fact in this manuscript, except where the Stage 1 approval brief explicitly resolved it.
 
-- Cadence (test): not settled. Event capture is presented as the lightest option and the monthly and quarterly routines are retained as explicitly optional. No cadence is asserted as correct.
+- Cadence (test): not settled. Both event-based capture and a periodic sweep are presented as useful, with neither asserted as universally better, and both routines retained as optional. No cadence is asserted as correct.
 - Permission sequencing (test): woven rather than front-loaded, per the approved intent, but the exact sequence is presented as the current design, and the full standard is unchanged and load-bearing. Flagged as still subject to test and legal review.
 - Visibility bridge (test): excluded, per decision. The manuscript names contexts where the record becomes useful but teaches no profile-keyword, forwardable-output, or interview-story mechanics.
 - Price and name (resolved by brief): unchanged. $49 and Keep the Proof, not reopened.

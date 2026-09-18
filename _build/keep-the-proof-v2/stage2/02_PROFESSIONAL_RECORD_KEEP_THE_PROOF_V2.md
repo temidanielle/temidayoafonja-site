@@ -133,7 +133,7 @@ For each entry, one line: a short title, the date or period, the function or rol
 
 ## Section 6. Optional maintenance checklists
 
-Purpose: for readers who want a rhythm in addition to event-based capture. Neither is required; you can run on event capture alone. Absorbed from the Ledger's Monthly Proof Sweep and Quarterly Proof Review, and marked optional here per the Version 2 decision that cadence is not settled.
+Purpose: two ways to keep the record current, capturing when something worth keeping happens, and a light periodic sweep that catches what you missed and keeps the record clean. Neither is required on its own, and neither is presented as universally better; use whichever you will sustain, or both. Absorbed from the Ledger's Monthly Proof Sweep and Quarterly Proof Review, and marked optional here per the Version 2 decision that cadence is not settled.
 
 Monthly, about ten to fifteen minutes.
 - Look back over the month's projects, decisions, feedback, changes, and problems you helped prevent.

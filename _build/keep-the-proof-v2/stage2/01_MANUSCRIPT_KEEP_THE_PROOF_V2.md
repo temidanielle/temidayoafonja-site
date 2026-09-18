@@ -48,7 +48,9 @@ Most people do excellent work and remember almost none of it clearly.
 
 Not because the work was small. Because the work was constant. You solved the problem, absorbed the lesson, and moved to the next thing before the last one had a name. Months later a review, a promotion case, or a sudden change asks you to account for a year, and you find yourself reaching for details that have already gone soft.
 
-I have spent eighteen years working close to where talent decisions get made: performance calibrations, promotion panels, restructurings, and the quiet conversations that precede all of them. The people who fared well in those rooms were rarely the ones who had done the most. They were the ones who could describe what they had done, accurately, without inflating it and without shrinking it. That skill is learnable. It is mostly a matter of keeping a record while the facts are still available to you.
+Across my career I have worked in and around talent, workforce, and organizational decisions: conversations about performance, promotion, restructuring, and readiness. One pattern kept surfacing, and it was simpler than the politics of any single room. Capable people would reach an important career moment and then have to reconstruct the work that had brought them to it. Some could describe their contribution clearly. Others knew they had done meaningful work but no longer had the details.
+
+Whether you can describe your work does not decide who gets promoted, hired, or selected. Sponsorship, opportunity, timing, business conditions, and plenty of things outside any one person's control shape those outcomes. What an accurate record does affect is narrower and still worth a great deal: how clearly your work can be understood when a decision depends on it. That part is learnable, and it is mostly a matter of keeping a record while the facts are still available to you.
 
 Keep the Proof is that record and the discipline around it. It will not tell you what your career means or what move to make. It will help you hold on to the truth of your own work, in language a stranger can understand, kept in a way that respects the people you work for. That is a smaller promise than most career products make. It is also one you can actually keep.
 
@@ -165,6 +167,10 @@ Notice what the left column has in common. Each entry is a sentence you could sa
 
 The line you will learn to hear. If the thing you want to save is a file, a screenshot, an export, or a copy of anything produced at work, it is an artifact, and it stays behind. If it is your own sentence about what you did, it is your record, and it comes with you.
 
+One honest caveat. This distinction is usually clear, and it is meant as a practical habit, not a legal ruling. Ownership can be genuinely unsettled in some situations, such as contract work, work made for hire, or specific terms you agreed to. Those are legal questions, not writing questions. Where what you may keep is unclear, the one rule governs: leave it out, and ask someone qualified.
+
+> LEGAL REVIEW REQUIRED. The line between a personal account and employer-owned material, and any situation-specific ownership questions (work made for hire, contractor versus employee, and signed agreements), are matters for counsel. This page teaches the practical habit only and states no legal conclusion. Wording confirmed with counsel before release.
+
 ## Claim, example, evidence, corroboration
 
 It helps to be precise about what a record can be, because the word "proof" means different things to different readers. There are four levels, and most honest professional accounts live at the second one.
@@ -212,8 +218,8 @@ Follow this in order. At the end you will have a working start, not a finished r
 - The middle of the session. Write at least three Quick Captures from that sweep. Rough is fine. Speed beats polish.
 - Then. Expand your strongest capture into a Full Entry. Fill only the fields that apply. Somewhere in it, name the judgment or the decision or the problem you prevented.
 - Near the end. Translate that entry into one portable Proof Line.
-- Before you name one person who could confirm the work, by role, and what they directly observed.
-- Last few minutes. Set one clear trigger for your next capture, an event rather than only a date, so the record keeps itself going.
+- Before you finish, name one person who could confirm the work, by role, and note what they directly observed.
+- Last few minutes. Set one clear reminder for your next capture, so the record keeps going. An upcoming event or a recurring date both work.
 
 What you have at the end of the session.
 
@@ -382,7 +388,7 @@ The rules above are about what you may not take. There is a second, quieter ques
 The channels this page will cover, pending counsel:
 
 - Personnel-record access. In some places, current or former employees have a right to inspect or copy parts of their own personnel file, including performance records. This right varies by location and does not exist everywhere. [Exact rights, jurisdictions, timing, and limits: LEGAL REVIEW REQUIRED. Wording withheld.]
-- Documents you already lawfully hold. Offer letters, signed reviews, pay records, certificates, and training completions are commonly the employee's own copies. [Which documents, and any conditions: LEGAL REVIEW REQUIRED. Wording withheld.]
+- Documents you already hold. Offer letters, signed reviews, pay records, certificates, and training completions are often the employee's own copies. [Which of these the employee may treat as their own, and any conditions: LEGAL REVIEW REQUIRED. Wording withheld.]
 - Written permission. Where you want to use something that is not clearly yours, permission secured in writing is safer than a verbal yes, which is documented as failing in practice. [How to seek and record it: LEGAL REVIEW REQUIRED. Wording withheld.]
 - Work that is already public. Published work, public announcements, and public artifacts are generally usable because they are already public. [Boundaries: LEGAL REVIEW REQUIRED. Wording withheld.]
 
@@ -422,7 +428,7 @@ A great deal of valuable work produces no tidy number. Coordination, judgment, c
 
 Describe the before and the after. When there is no metric, there is almost always a contrast. What was true before your work, and what was true after? "The handoff between the two teams kept failing; after I redesigned it, work stopped falling through the gap" is credible with no number in it, because a reader can picture both states.
 
-Name the specific consequence. Vague improvement is not evidence. Specific improvement is. Not "made things better," but "the weekly report that used to take two people a full day now takes one person an hour." A concrete, honest particular is more persuasive than a round number you cannot defend.
+Name the specific consequence. Vague improvement does not persuade. Specific improvement does. Not "made things better," but "the weekly report that used to take two people a full day now takes one person an hour." A concrete, honest particular is more persuasive than a round number you cannot defend.
 
 Never invent the number. If you do not have an accurate figure, do not manufacture one. An invented metric is the fastest way to lose a reader's trust, because the first careful question exposes it. A well-described qualitative result is stronger than a fabricated quantitative one. Accuracy is the entire value of this record.
 
@@ -432,7 +438,7 @@ The most undervalued work in any organization is the problem that never happened
 
 > VISUAL: VISIBLE RESULT versus PREVENTED PROBLEM, shown side by side, so the reader sees why prevention needs a deliberate record.
 
-Record the risk, the catch, and the likely path. To capture prevention honestly, name three things: the risk that was forming, what you noticed or did, and the outcome that was on its way if no one had acted. "A misconfiguration would likely have exposed internal access; I caught it in review and it was corrected before anything was affected" is complete evidence of judgment, with nothing invented and nothing exposed.
+Record the risk, the catch, and the likely path. To capture prevention honestly, name three things: the risk that was forming, what you noticed or did, and the outcome that was on its way if no one had acted. "A misconfiguration would likely have exposed internal access; I caught it in review and it was corrected before anything was affected" is a complete account of the judgment, with nothing invented and nothing exposed.
 
 Stay honest about certainty. Prevention invites overstatement, so hold the line. You do not know for certain what would have happened. Say "would likely have" rather than "definitely would have." The honest version is still strong, and it is the version that survives a follow-up question.
 
@@ -458,7 +464,7 @@ The situation: A director left and the role sat open. I was asked to "keep thing
 
 ## Who could confirm this
 
-Institutions have short memories. Employers will usually confirm only your title and your dates, and the detailed memory of what you contributed tends to leave when you do. People remember what institutions forget. So while the work is fresh, note who saw it.
+Institutions tend to have short memories. Formal employment verification is often limited to basic details such as your title and your dates, while the people who worked closely with you may remember far more of the contribution itself. When you leave, that firsthand memory is often the part that lasts. So while the work is fresh, note who saw it.
 
 For an entry worth keeping, add two small things: who could confirm this, by role, and what they directly observed. "The operations manager I partnered with, who saw the redesign and its results." That is all. You are recording that a witness exists and what they witnessed, so that later, if it is ever useful, you know who to prepare with specifics.
 
@@ -595,7 +601,7 @@ Even after access ends, more remains than people expect. These are the lawful pl
 - Your own memory, anchored to moments you remember clearly.
 - Previous versions of your resume.
 - Your public professional profile and its history.
-- Documents you already lawfully hold, such as offer letters, signed reviews, pay records, and certificates.
+- Documents you already hold, such as offer letters, signed reviews, pay records, and certificates.
 - Personal calendars, where appropriate.
 - Old job descriptions for roles you held.
 - Certifications and training completions.
@@ -632,9 +638,11 @@ An hour to set up, then very little. The record only earns its keep if maintaini
 
 ## Keeping it current
 
-The lightest way to keep a record current is to tie it to events, not to the calendar. When one of the moments from Part Two happens, you take two minutes and capture it. That is the whole maintenance habit for most people, and it matches how work actually arrives: in events, not on schedules.
+There are two useful ways to keep the record current, and they work well together. The first is to capture when something worth keeping happens. The second is a light periodic sweep that catches what you missed and keeps the record clean. Neither is required on its own, and neither is universally better. Use whichever you will actually sustain, or both.
 
-Some people prefer a rhythm as well, and two light routines are here for those who want them. Neither is required, and you can run on event capture alone.
+Event-based capture. When one of the moments from Part Two happens, a project ends, your scope changes, feedback arrives, a decision is made, a risk is prevented, you take two minutes and capture it. It suits work that announces itself.
+
+A periodic sweep. A short monthly or quarterly pass catches the work that did not arrive as an obvious moment, and gives you a chance to clean and correct the record. It suits work that accumulates quietly. The two routines below are here for readers who want a rhythm.
 
 - A monthly sweep, about ten to fifteen minutes. Look back over the month's projects, decisions, feedback, changes, and problems you helped prevent. Add Quick Captures for anything worth keeping, expand the most significant into a full entry, run the confidentiality check, and tag each item.
 - A quarterly review, about thirty minutes. Read the quarter's entries in one sitting, remove duplicates and anything too vague, correct overstatement while you still remember, translate the strongest into Proof Lines, and note where evidence is thin without drawing any conclusion about your career from the gap.
@@ -655,7 +663,7 @@ Everything in this guide works without any AI. This tool is optional, and it is 
 
 Never paste employer names, customer names, colleague names, proprietary detail, employee information, sensitive metrics, code, security information, or any confidential material into an AI system. Give it only your own non-confidential account, already stripped of anything you may not keep. The permission rules in this guide apply to AI tools exactly as they apply to everything else.
 
-The prompt. "You are helping me describe my own work accurately for my private professional record. I will give you only non-confidential information about what I did. Work only with what I provide. If context is missing, ask me for it rather than inventing anything. Never invent numbers, percentages, or results. Preserve my actual level of ownership, and keep any team result separate from my individual contribution. Translate internal language into plain, portable language an outsider could understand. Give me a few accurate versions for different uses: a short resume line, a spoken interview version, and a one-line summary. Flag anything that sounds inflated, vague, or unsupported so I can correct it."
+The prompt. "You are helping me describe my own work accurately for my private professional record. I will give you only non-confidential information about what I did. Work only with what I provide. If context is missing, ask me for it rather than inventing anything. Never invent numbers, percentages, or results. Preserve my actual level of ownership, keep any team result separate from my individual contribution, and preserve the scope I worked within. Translate internal language into plain, portable language an outsider could understand, and help me refine a single Proof Line. Flag anything that sounds inflated, vague, or unsupported so I can correct it. Do not write a resume, an interview answer, a profile, or anything tailored to a specific job or employer. That is outside this task."
 
 The AI does not decide what is true. You do. Treat every version it returns as a draft to check against your own memory and this guide's rules, never as a finished record.
 
@@ -689,7 +697,7 @@ The spine: Capture it while it is fresh. Clarify your part from the team's, and 
 
 The tools: a two-minute Quick Capture for speed, a Full Entry for what matters, general translation into portable language, and a Proof Line as the portable end product.
 
-The rhythm: a focused first session to set up, then light event-based capture, with optional monthly and quarterly routines if you want them.
+The rhythm: a focused first session to set up, then keep it current by capturing when something happens, by a light monthly or quarterly sweep, or by both, whichever you will sustain.
 
 The use: pull the right entries for reviews, promotions, compensation, internal moves, resumes, interviews, biographies, proposals, and sudden change.
 
@@ -707,7 +715,7 @@ A quiet pointer, not a sales pitch. If you later want to interpret what your cur
 
 ## About the author
 
-Temidayo Afonja is the Founder and Principal of The Density Group. For eighteen years, Temidayo has worked across Big Four consulting, life sciences, and technology, close to where talent decisions get made, at the intersection of workforce strategy, organizational design, and how careers actually form.
+Temidayo Afonja is the Founder and Principal of The Density Group. Over nearly two decades across Big Four consulting, life sciences, and technology, Temidayo has worked in and around workforce strategy, organizational design, and talent decisions, and how careers actually form.
 
 That path into this work began in IT audit and federal governance, and moved through cybersecurity workforce strategy before that field had its current name. That background is the reason the confidentiality and information-risk standard in this guide is treated with the seriousness it deserves, and the reason it is careful never to overstate what any guide can settle for you. Keep the Proof is educational, not legal advice, and it cannot interpret your specific agreements or your employer's policies.
 
