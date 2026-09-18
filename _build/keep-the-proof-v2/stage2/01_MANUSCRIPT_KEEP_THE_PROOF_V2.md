@@ -159,7 +159,7 @@ A simple test. Before you record something, ask: if I described this to a though
 
 ## The boundary: your account versus employer-owned artifacts
 
-This is the distinction the whole system depends on, so it is worth stating plainly. Your professional record is your own account of your work. An employer-owned artifact is the material itself: the deck, the model, the code, the client file, the report. The account is yours to keep. The artifact is not.
+This is the distinction the whole system depends on, so it is worth stating plainly. Your professional record is your own account of your work. An employer-owned artifact is the material itself: the deck, the model, the code, the client file, the report. As a practical rule, the account is yours to keep, and the artifact is not.
 
 > VISUAL: The two-column table of account versus artifact, retained from Version 1, with the three paired rows (onboarding, access gap, vendor selection).
 
@@ -242,7 +242,7 @@ If your access is already gone, run the session through reconstruction instead. 
 > VISUAL: A parallel checklist, visually a sibling of the one above, so the reconstruct reader feels they are on an equal path, not a remedial one.
 
 - First few minutes. Read the one rule and the three tiers. Choose a private home you control and secure it. The permission rule does not relax because the timing is inconvenient; it protects you either way.
-- Next stretch. Gather what is lawfully still yours: your own memory, previous resume versions, your public professional profile, documents you already hold, old job descriptions, certifications, and anything already public about the work. Part Seven lists these in full. Do not reach for anything behind a closed door.
+- Next stretch. Gather what is still yours to use: your own memory, previous resume versions, your public professional profile, documents you already hold, old job descriptions, certifications, and anything already public about the work. Part Seven lists these in full, with a note on where counsel confirms the boundaries. Do not reach for anything behind a closed door.
 - The middle of the session. Pick one role or one year you remember well. Write three Quick Captures from memory, anchored to moments you recall clearly: a hard call, a launch, a problem you caught, a piece of feedback.
 - Then. Expand the strongest into a Full Entry. Mark anything you are unsure of as unsure. An honest approximate record is worth far more than a confident wrong one.
 - Near the end. Translate one entry into a portable Proof Line, and name one former colleague who could confirm the work and what they directly observed.
@@ -254,7 +254,7 @@ You will finish with the same seven outcomes as the capture route. You started f
 
 # PART TWO — CAPTURE
 
-What actually happened? The goal of this stage is speed. You catch the work before the details soften, even when the note is rough. Clarifying and carrying come later; first you make sure the raw material still exists.
+What actually happened? The goal of this stage is speed: make sure the raw material still exists before anything else is done with it. Clarifying and carrying come later.
 
 ## The Two-Minute Quick Capture
 
@@ -504,6 +504,8 @@ Maya's Proof Line: "Redesigned new-hire onboarding for a growing operations team
 
 A Proof Line does not need a number to be strong, and it must never contain an invented one. It also never claims sole credit for a shared result. If a line would only sound impressive by overstating your ownership, it is not finished. It is wrong.
 
+A Proof Line is general on purpose. It is a true, reusable sentence you keep, not a version shaped for a particular job, employer, or application. Tailoring your work to a specific target is a separate step, and a later one, and it is not this guide's job.
+
 ## See it work: before and after
 
 Translation is easiest to learn by watching it happen. Each pair below keeps the same underlying truth. The weaker version is internal, vague, or overclaimed. The stronger version is portable, specific, and honest.
@@ -558,7 +560,7 @@ The work: A supplier looked likely to miss a critical delivery, and I had to dec
 
 Lena K., team lead, marketing.
 
-The work: A capable analyst on my team was stalling and close to leaving. Over two quarters I changed how I gave them work and feedback, and moved them onto higher-stakes projects with support. My contribution: The development was the work: the coaching, the deliberate stretch assignments, the protection while they found their footing. What changed: They stayed, took on a role a level up within the year, and now lead work I used to do. There is no artifact for any of it. Portable version: Developed a stalling analyst into a higher-level contributor over two quarters through restructured feedback and deliberate stretch work, retaining a person who had been close to leaving. Kept versus left out: My own account of what I did and what changed. Not the person's private performance details or any HR record.
+The work: A capable analyst on my team was stalling and close to leaving. Over two quarters I changed how I gave them work and feedback, and moved them onto higher-stakes projects with support. My contribution: The development was the work: the coaching, the deliberate stretch assignments, the protection while they found their footing. What changed: They stayed, took on a role a level up within the year, and now lead work I used to do. There is no artifact for any of it. Portable version: Coached a stalling analyst over two quarters through restructured feedback and deliberate stretch work; they took on a higher-level role within the year, having been close to leaving before. Kept versus left out: My own account of what I did and what changed. Not the person's private performance details or any HR record.
 
 ## Repairing a relationship between two functions
 
@@ -592,7 +594,7 @@ Perhaps you are reading this after a change, not before one. The record you wish
 
 A reconstructed record will not be as complete as one captured in real time, and it should not pretend to be. What it can be is honest, useful, and enough to carry into the moment in front of you. The goal is not to recover everything. It is to rebuild what you can stand behind, mark clearly what you cannot, and then start capturing forward so you never have to do this again.
 
-The rule does not relax because the timing is inconvenient. Work only from what you are permitted to use: your own memory, information that is already public, and anything you lawfully hold or were expressly permitted to keep. What is not usable is a copy of anything you took, or access you were not meant to retain.
+The rule does not relax because the timing is inconvenient. Work only from what you are permitted to use: your own memory, information that is already public, and anything you already hold or were expressly permitted to keep. What is not usable is a copy of anything you took, or access you were not meant to retain.
 
 ## Where the record still lives
 
@@ -622,7 +624,7 @@ The honesty of a reconstructed record lives in how you mark each part of it. Lab
 > VISUAL: The four certainty levels shown as a small, calm key the reader applies to reconstructed entries.
 
 - Known. You are certain, and you could stand behind it under a direct question.
-- Supported. Something you lawfully hold or that is public backs it up.
+- Supported. Something you hold or that is public backs it up.
 - Remembered but not verified. You recall it clearly, but you have nothing outside your memory to confirm it.
 - Uncertain. You think it happened roughly this way, but you are not sure of the specifics.
 
@@ -717,9 +719,9 @@ A quiet pointer, not a sales pitch. If you later want to interpret what your cur
 
 ## About the author
 
-Temidayo Afonja is the Founder and Principal of The Density Group. Over nearly two decades across Big Four consulting, life sciences, and technology, Temidayo has worked in and around workforce strategy, organizational design, and talent decisions, and how careers actually form.
+Temidayo Afonja is the Founder and Principal of The Density Group. Her career spans nearly two decades and eight industries, across accounting and audit, cybersecurity, people and workforce work, diversity and inclusion work, and both consulting and operating roles. The through line is not one specialty. It is proximity, from several sides at once, to how work gets evaluated and how careers actually get built.
 
-That path into this work began in IT audit and federal governance, and moved through cybersecurity workforce strategy before that field had its current name. That background is the reason the confidentiality and information-risk standard in this guide is treated with the seriousness it deserves, and the reason it is careful never to overstate what any guide can settle for you. Keep the Proof is educational, not legal advice, and it cannot interpret your specific agreements or your employer's policies.
+Two parts of that path shaped this guide directly. The years in audit and cybersecurity are why its confidentiality and information-risk standard is treated with real seriousness, and why it is careful never to overstate what any guide can settle for you. The years in people, workforce, and inclusion work are why it takes seriously the kinds of contribution that performance systems tend to miss. Keep the Proof is educational, not legal advice, and it cannot interpret your specific agreements or your employer's policies.
 
 Keep the Proof grew out of a pattern that repeats in room after room: capable people who had done the work and could no longer prove it, reaching for details that had already gone. This guide is the discipline more of them needed.
 
