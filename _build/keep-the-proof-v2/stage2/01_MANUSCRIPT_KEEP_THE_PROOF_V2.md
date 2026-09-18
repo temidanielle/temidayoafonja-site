@@ -64,6 +64,8 @@ Maybe a review is coming and you cannot cleanly recall the year. Maybe you were 
 
 > VISUAL: A set of short, plain situation lines, each one a sentence a real reader would recognize as theirs. One of them is the reader's. This page is a mirror, not a menu. No frameworks yet.
 
+Underneath all of them is the same quiet thought: I know I did good work, and now I cannot quite lay my hands on the details. You are not trying to build a case yet, or impress anyone. You just want the truth of what you did, and the judgment and the decisions inside it, to still be there when you reach for it.
+
 These are different circumstances. They share one first job.
 
 Different circumstances. Same first job: build an accurate account of the work.
@@ -102,7 +104,7 @@ What a professional record is, and why it goes missing. Kept short, because you 
 
 ## The opening question
 
-If your work access disappeared this afternoon, how much of your professional record would disappear with it?
+If your work access disappeared this afternoon, how much of the record of your work would disappear with it?
 
 Picture the ordinary version of a bad day. Not a scandal, just a change. A reorganization removes your login by five o'clock. A role is eliminated with two weeks' notice. A system migration wipes three years of your sent mail. You are fine, professionally and otherwise. But the record of what you did now lives in systems you can no longer open.
 
