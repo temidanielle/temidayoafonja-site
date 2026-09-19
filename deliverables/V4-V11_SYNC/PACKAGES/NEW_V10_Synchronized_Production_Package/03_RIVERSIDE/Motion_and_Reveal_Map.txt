@@ -5,169 +5,322 @@ NEW PUBLIC V10  |  MOTION AND REVEAL MAP
 Your First 90 Days in a New Job: What Really Matters
 
 One active idea at a time. Establish the whole structure, then
-activate one component. Gentle push-ins and occasional
-pull-backs only. No constant zooming, pulsing or effects.
-Preserve meaningful pauses.
+activate one component on the words that name it. Gentle
+push-ins and occasional pull-backs only. No constant zooming,
+pulsing or effects. Preserve meaningful pauses.
+
+A state is never activated before its words are spoken, even
+when it belongs to a family that established earlier.
 
 ------------------------------------------------------------------------------
 
-NEW_V10_FS_00_THE_PRESSURE
-  SECTION 1, PARAGRAPH 2
+NEW_V10_FS_00_THE_PRESSURE   [V10-O02]
+  SECTION 1 HOOK
+  PARAGRAPH 2
   REVEAL ORDER:
-      1. NEW_V10_FS_00_THE_PRESSURE.png
+      1. NEW_V10_FS_00_THE_PRESSURE.png   paragraph 2
+             on: And now you feel this pressure to prove they made
+             on: the right decision.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns before the next paragraph
 
-NEW_V10_FS_00B_TWO_DEFAULTS
-  SECTION 1, PARAGRAPH 3
+NEW_V10_FS_00B_TWO_DEFAULTS   [V10-O03]
+  SECTION 1 HOOK
+  PARAGRAPH 3
   REVEAL ORDER:
-      1. NEW_V10_FS_00B_FIX_TOO_SOON.png
-      2. NEW_V10_FS_00C_STAY_TOO_QUIET.png
+      1. NEW_V10_FS_00B_FIX_TOO_SOON.png   paragraph 3
+             on: You start trying to fix things before you understand
+             on: why they work this way.
+      2. NEW_V10_FS_00C_STAY_TOO_QUIET.png   paragraph 3
+             on: You start trying to fix things before you understand
+             on: why they work this way.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns on 'I do not think either one is the job of your first 90 days'
 
-NEW_V10_FS_01_READ_TEST_PROVE
-  SECTION 1, PARAGRAPH 5
+NEW_V10_FS_01_READ_TEST_PROVE   [V10-O05]
+  SECTION 1 HOOK
+  PARAGRAPHS 5 TO 6
   REVEAL ORDER:
-      1. NEW_V10_FS_01A_ESTABLISH.png
-      2. NEW_V10_FS_01B_READ.png
-      3. NEW_V10_FS_01C_TEST.png
-      4. NEW_V10_FS_01D_PROVE.png
+      1. NEW_V10_FS_01A_ESTABLISH.png   paragraph 5
+             on: It is to figure out three things
+      2. NEW_V10_FS_01B_READ.png   paragraph 5
+             on: It is to figure out three things
+      3. NEW_V10_FS_01C_TEST.png   paragraph 5
+             on: It is to figure out three things
+      4. NEW_V10_FS_01D_PROVE.png   paragraph 5
+             on: It is to figure out three things
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns on 'And before the 90 days are over'
 
-NEW_V10_FS_10_THE_REVERSAL
-  SECTION 2, PARAGRAPH 1
+NEW_V10_FS_10_THE_REVERSAL   [V10-C09]
+  SECTION 2 STORY LOOP
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V10_FS_10_THE_REVERSAL.png
+      1. NEW_V10_FS_10_THE_REVERSAL.png   paragraph 1
+             on: There is a reversal I want you to remember: during
+             on: your first 90 days, they are not the only ones
+             on: evaluating. You are collecting evidence about the
+             on: job too. We will come back to that after READ, TEST,
+             on: and PROVE.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V10_FS_02_EXPERIENCED_BUT_NEW
-  SECTION 4, PARAGRAPH 3
+NEW_V10_FS_02_EXPERIENCED_BUT_NEW   [V10-C10]
+  SECTION 4 WHY THIS FEELS STRANGE WHEN YOU ARE EXPERIENCED
+  PARAGRAPH 3
   REVEAL ORDER:
-      1. NEW_V10_FS_02_EXPERIENCED_BUT_NEW.png
+      1. NEW_V10_FS_02_EXPERIENCED_BUT_NEW.png   paragraph 3
+             on: You can be experienced and still be new to the
+             on: context. Those two things can be true at the same
+             on: time. That is why I would not spend the first 90
+             on: days trying to prove that everything you already
+             on: know works here. I would spend them finding the
+             on: boundary between what you brought with you and what
+             on: this environment still has to teach you.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V10_FS_03_READ_FOUR_THINGS
-  SECTION 5, PARAGRAPH 4   (1 of 2 in this paragraph)
+NEW_V10_FS_03_READ_FOUR_THINGS   [V10-C11]
+  SECTION 5 1 | READ
+  PARAGRAPH 4
   REVEAL ORDER:
-      1. NEW_V10_FS_03_ESTABLISH.png
-      2. NEW_V10_FS_03A_RESPONSIBLE.png
-      3. NEW_V10_FS_03B_DECISIONS.png
-      4. NEW_V10_FS_03C_SUCCESS.png
-      5. NEW_V10_FS_03D_UNWRITTEN.png
+      1. NEW_V10_FS_03_ESTABLISH.png   paragraph 4
+             on: During READ, pay attention to four things
+      2. NEW_V10_FS_03A_RESPONSIBLE.png   paragraph 4
+             on: During READ, pay attention to four things
+      3. NEW_V10_FS_03B_DECISIONS.png   paragraph 4
+             on: During READ, pay attention to four things
+      4. NEW_V10_FS_03C_SUCCESS.png   paragraph 4
+             on: During READ, pay attention to four things
+      5. NEW_V10_FS_03D_UNWRITTEN.png   paragraph 4
+             on: During READ, pay attention to four things
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V10_FS_04_FORMAL_VS_REAL
-  SECTION 5, PARAGRAPH 4   (2 of 2 in this paragraph)
+NEW_V10_FS_04_FORMAL_VS_REAL   [V10-C12]
+  SECTION 5 1 | READ
+  PARAGRAPH 4
   REVEAL ORDER:
-      1. NEW_V10_FS_04_FORMAL_VS_REAL.png
+      1. NEW_V10_FS_04_FORMAL_VS_REAL.png   paragraph 4
+             on: A job description can tell you the formal job.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V10_FS_05_TWO_SENTENCES
-  SECTION 6, PARAGRAPH 3
+NEW_V10_FS_05_TWO_SENTENCES   [V10-T02B]
+  SECTION 6 WHAT READ DOES NOT MEAN
+  PARAGRAPH 3
   REVEAL ORDER:
-      1. NEW_V10_FS_05A_BOTH.png
-      2. NEW_V10_FS_05B_SECOND.png
+      1. NEW_V10_FS_05A_BOTH.png   paragraph 3
+             on: At my old company, we did it this way,
+      2. NEW_V10_FS_05B_SECOND.png   paragraph 3
+             on: I have seen a similar problem before.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at 2 | TEST
 
-NEW_V10_FS_06_MANAGER_CONVERSATION
-  SECTION 8, PARAGRAPH 2
+NEW_V10_FS_06_MANAGER_CONVERSATION   [V10-C13]
+  SECTION 8 THE CONVERSATION I WOULD HAVE
+  PARAGRAPH 2
   REVEAL ORDER:
-      1. NEW_V10_FS_06_ESTABLISH.png
-      2. NEW_V10_FS_06A_PICK_UP.png
-      3. NEW_V10_FS_06B_CONTEXT.png
-      4. NEW_V10_FS_06C_OLD_ENVIRONMENT.png
+      1. NEW_V10_FS_06_ESTABLISH.png   paragraph 2
+             on: Ask something more useful: “What have you seen me
+             on: pick up quickly?” “Where do I still need more
+             on: context?” “Is there anything I am treating like my
+             on: old environment that works differently here?”
+      2. NEW_V10_FS_06A_PICK_UP.png   paragraph 2
+             on: Ask something more useful: “What have you seen me
+             on: pick up quickly?” “Where do I still need more
+             on: context?” “Is there anything I am treating like my
+             on: old environment that works differently here?”
+      3. NEW_V10_FS_06B_CONTEXT.png   paragraph 2
+             on: Ask something more useful: “What have you seen me
+             on: pick up quickly?” “Where do I still need more
+             on: context?” “Is there anything I am treating like my
+             on: old environment that works differently here?”
+      4. NEW_V10_FS_06C_OLD_ENVIRONMENT.png   paragraph 2
+             on: Ask something more useful: “What have you seen me
+             on: pick up quickly?” “Where do I still need more
+             on: context?” “Is there anything I am treating like my
+             on: old environment that works differently here?”
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V10_FS_07_THE_DAY_90_QUESTION
-  SECTION 8, PARAGRAPH 3
+NEW_V10_FS_07_THE_DAY_90_QUESTION   [V10-C14]
+  SECTION 8 THE CONVERSATION I WOULD HAVE
+  PARAGRAPH 3
   REVEAL ORDER:
-      1. NEW_V10_FS_07_THE_DAY_90_QUESTION.png
+      1. NEW_V10_FS_07_THE_DAY_90_QUESTION.png   paragraph 3
+             on: And ask: “What would you want to trust me with by
+             on: the end of my first 90 days that you would not have
+             on: trusted me with on day one?” That question turns the
+             on: first 90 days into development, not performance
+             on: theater.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V10_FS_08_PROVE_QUESTION
-  SECTION 9, PARAGRAPH 3
+NEW_V10_FS_08_PROVE_QUESTION   [V10-C15]
+  SECTION 9 3 | PROVE
+  PARAGRAPH 3
   REVEAL ORDER:
-      1. NEW_V10_FS_08_PROVE_QUESTION.png
+      1. NEW_V10_FS_08_PROVE_QUESTION.png   paragraph 3
+             on: So I would use a different question: What can I
+             on: prove here by day 90 that I could not prove on day
+             on: one?
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V10_FS_09_PROOF_SENTENCES
-  SECTION 10, PARAGRAPH 1
+NEW_V10_FS_09_PROOF_SENTENCES   [V10-C16]
+  SECTION 10 WHAT PROOF SHOULD SOUND LIKE
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V10_FS_09_ESTABLISH.png
-      2. NEW_V10_FS_09A_ASSUMING.png
-      3. NEW_V10_FS_09B_HELPED_MOST.png
-      4. NEW_V10_FS_09C_RELEARN.png
+      1. NEW_V10_FS_09_ESTABLISH.png   paragraph 1
+             on: By the end of the first 90 days, I would want you to
+             on: be able to finish a few sentences. “I came in
+             on: assuming X. I learned Y.” “The part of my previous
+             on: experience that helped most was X.” “The part I had
+             on: to relearn was Y.”
+      2. NEW_V10_FS_09A_ASSUMING.png   paragraph 1
+             on: By the end of the first 90 days, I would want you to
+             on: be able to finish a few sentences. “I came in
+             on: assuming X. I learned Y.” “The part of my previous
+             on: experience that helped most was X.” “The part I had
+             on: to relearn was Y.”
+      3. NEW_V10_FS_09B_HELPED_MOST.png   paragraph 1
+             on: By the end of the first 90 days, I would want you to
+             on: be able to finish a few sentences. “I came in
+             on: assuming X. I learned Y.” “The part of my previous
+             on: experience that helped most was X.” “The part I had
+             on: to relearn was Y.”
+      4. NEW_V10_FS_09C_RELEARN.png   paragraph 1
+             on: By the end of the first 90 days, I would want you to
+             on: be able to finish a few sentences. “I came in
+             on: assuming X. I learned Y.” “The part of my previous
+             on: experience that helped most was X.” “The part I had
+             on: to relearn was Y.”
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V10_FS_11_YOUR_EVIDENCE
-  SECTION 11, PARAGRAPH 1
+NEW_V10_FS_11_YOUR_EVIDENCE   [V10-C17]
+  SECTION 11 THE REVERSAL | THEY ARE NOT THE ONLY ONES EVALUATING
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V10_FS_11_ESTABLISH.png
-      2. NEW_V10_FS_11A_THE_JOB.png
-      3. NEW_V10_FS_11B_AUTHORITY.png
-      4. NEW_V10_FS_11C_ACCESS.png
+      1. NEW_V10_FS_11_ESTABLISH.png   paragraph 1
+             on: There is one more part of the first 90 days I want
+             on: to add. They are not the only ones evaluating. You
+             on: are collecting evidence too. Is this actually the
+             on: job you accepted? Does the authority match what you
+             on: were told? Are you getting access to the work you
+             on: came here to do?
+      2. NEW_V10_FS_11A_THE_JOB.png   paragraph 1
+             on: There is one more part of the first 90 days I want
+             on: to add. They are not the only ones evaluating. You
+             on: are collecting evidence too. Is this actually the
+             on: job you accepted? Does the authority match what you
+             on: were told? Are you getting access to the work you
+             on: came here to do?
+      3. NEW_V10_FS_11B_AUTHORITY.png   paragraph 1
+             on: There is one more part of the first 90 days I want
+             on: to add. They are not the only ones evaluating. You
+             on: are collecting evidence too. Is this actually the
+             on: job you accepted? Does the authority match what you
+             on: were told? Are you getting access to the work you
+             on: came here to do?
+      4. NEW_V10_FS_11C_ACCESS.png   paragraph 1
+             on: There is one more part of the first 90 days I want
+             on: to add. They are not the only ones evaluating. You
+             on: are collecting evidence too. Is this actually the
+             on: job you accepted? Does the authority match what you
+             on: were told? Are you getting access to the work you
+             on: came here to do?
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V10_FS_12_NOT_AUTOMATICALLY_LEAVE
-  SECTION 11, PARAGRAPH 3
+NEW_V10_FS_12_NOT_AUTOMATICALLY_LEAVE   [V10-C18]
+  SECTION 11 THE REVERSAL | THEY ARE NOT THE ONLY ONES EVALUATING
+  PARAGRAPH 3
   REVEAL ORDER:
-      1. NEW_V10_FS_12_NOT_AUTOMATICALLY_LEAVE.png
+      1. NEW_V10_FS_12_NOT_AUTOMATICALLY_LEAVE.png   paragraph 3
+             on: That does not automatically mean leave. Roles
+             on: change. Priorities change. Organizations have real
+             on: constraints. But you should notice the difference.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V10_FS_13_THE_TOOL
-  SECTION 12, PARAGRAPH 1
+NEW_V10_FS_13_THE_TOOL   [V10-T05]
+  SECTION 12 THE FIRST-90-DAYS READ
+  PARAGRAPHS 1 TO 2
   REVEAL ORDER:
-      1. NEW_V10_FS_13_ESTABLISH.png
-      2. NEW_V10_FS_13A_READ.png
-      3. NEW_V10_FS_13B_TEST.png
-      4. NEW_V10_FS_13C_PROVE.png
-      5. NEW_V10_FS_13D_ROLE_CHECK.png
+      1. NEW_V10_FS_13_ESTABLISH.png   paragraph 1
+             on: I would keep it this simple.
+      2. NEW_V10_FS_13A_READ.png   paragraph 1
+             on: READ. What do I understand now that I did not
+             on: understand on day one?
+      3. NEW_V10_FS_13B_TEST.png   paragraph 1
+             on: TEST. What from my previous experience works here
+      4. NEW_V10_FS_13C_PROVE.png   paragraph 2
+             on: PROVE. What can I now show that I have done
+             on: successfully in this context?
+      5. NEW_V10_FS_13D_ROLE_CHECK.png   paragraph 2
+             on: ROLE CHECK. What have these 90 days taught me about
+             on: the job itself?
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns on 'That is the plan.'
 
-NEW_V10_FS_14_THE_PLAN
-  SECTION 12, PARAGRAPH 4
+NEW_V10_FS_14_THE_PLAN   [V10-C19]
+  SECTION 12 THE FIRST-90-DAYS READ
+  PARAGRAPH 4
   REVEAL ORDER:
-      1. NEW_V10_FS_14_THE_PLAN.png
+      1. NEW_V10_FS_14_THE_PLAN.png   paragraph 4
+             on: Read the context. Test what traveled. Build new
+             on: proof. And read the role back.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V10_WATCH_NEXT
-  SECTION 17, PARAGRAPH 1
+NEW_V10_WATCH_NEXT   [V10-C20]
+  SECTION 17 WATCH NEXT
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V10_WATCH_NEXT.png
+      1. NEW_V10_WATCH_NEXT.png   paragraph 1
+             on: And if your first 90 days are showing you that the
+             on: job you started is not the job you thought you
+             on: accepted, that is a different problem. I made the
+             on: next video for exactly that. Watch “What to Do When
+             on: Your New Job Isn’t the Job You Accepted” next.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
 ------------------------------------------------------------------------------
 

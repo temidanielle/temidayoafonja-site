@@ -11,33 +11,49 @@ meaningful B-roll are TRUE FULL SCREEN. The voice may continue
 under a full-screen image. Never keep Temidayo moving behind a
 teaching card.
 
+This map and the Riverside prompt are generated from one event
+list, so a paragraph cannot be camera here and full screen
+there. An event may begin and end inside a paragraph or run
+across several, and one asset family may serve more than one
+event at different points in the video.
+
 ------------------------------------------------------------------------------
 
 SECTION 1  HOOK
 
-  PARA 1   MODE: CAMERA   (early edit, step 1)
-           ON-SCREEN TEXT: NEEDED. STILL STUCK?
-           ENTER ON: Your company can need you so much that it beco...
-           LEAVE ON: But think about what happens to the pers...  (paragraph 1)
-           SOUND: none
+  PARA 1   MODE: CAMERA   [V5-O01]
+           ON-SCREEN: NEEDED. STILL STUCK?
+           ENTER ON: Your company can need you so much that it becomes one of
+                      the reasons you stop growing.
+           LEAVE ON: But think about what happens to the person everyone
+                      depends on.
+           ASSET: none. Camera, with any editorial text over it.
            RETURN: stays on camera
+           NOTE: The contradiction appears during the first
+                 sentence. No logo introduction.
 
-  PARA 2   MODE: FULL SCREEN   (early edit, step 2)
-           ON-SCREEN TEXT: FIX IT / COVER IT / TRAIN THEM
+  PARA 2   MODE: FULL SCREEN   [V5-O02]
+           ON-SCREEN: FIX IT / COVER IT / TRAIN THEM
            ENTER ON: Something breaks, they call you.
-           LEAVE ON: A new person joins, you train them.  (paragraph 2)
+           LEAVE ON: A new person joins, you train them.
            ASSET FAMILY: NEW_V5_FS_01_NEEDED_NOT_GROWN
-           STATES, IN REVEAL ORDER:
-               NEW_V5_FS_01_NEEDED_NOT_GROWN.png
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V5_FS_01_NEEDED_NOT_GROWN.png   paragraph 2
+                   on: Something breaks, they call you.
            SOUND: S1, one soft notification click on the first request only
+           ACCENT WORD: none separately specified
            RETURN: camera returns on 'Then a bigger opportunity opens'
+           NOTE: Illustrative work requests, not an employer chat.
 
-  PARA 3   MODE: CAMERA   (early edit, step 3)
-           ON-SCREEN TEXT: SOMEONE ELSE
+  PARA 3   MODE: CAMERA   [V5-O03]
+           ON-SCREEN: SOMEONE ELSE
            ENTER ON: And they choose someone else.
-           LEAVE ON: And they choose someone else.  (paragraph 3)
-           SOUND: none
+           LEAVE ON: And they choose someone else.
+           ASSET: none. Camera, with any editorial text over it.
            RETURN: stays on camera
+           NOTE: Back on her before the line, so the reaction is
+                 hers. A brief silence is enough. No rejection
+                 sound.
 
   PARA 4   MODE: CAMERA
            You are sitting there thinking: How can I be valuable enou...
@@ -57,52 +73,85 @@ SECTION 3  INTRODUCTION   [restored intro]
 
 SECTION 4  THE TRAP
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V5-C07]
+           ENTER ON: Being useful can feel like career security. Sometimes it
+                      is. But being very useful can also make it hard for a team
+                      to imagine moving you.
+           LEAVE ON: Being useful can feel like career security. Sometimes it
+                      is. But being very useful can also make it hard for a team
+                      to imagine moving you.
            ASSET FAMILY: NEW_V5_FS_05_INDISPENSABLE_AND_LESS_PORTABLE
-           STATES, IN REVEAL ORDER:
-               NEW_V5_FS_05_INDISPENSABLE_AND_LESS_PORTABLE.png
-           EXACT TRIGGER:
-               Being useful can feel like career security. Sometimes it
-               is. But being very useful can also make it hard for a team
-               to imagine moving you.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V5_FS_05_INDISPENSABLE_AND_LESS_PORTABLE.png   paragraph 1
+                   on: Being useful can feel like career security.
+                   on: Sometimes it is. But being very useful can also
+                   on: make it hard for a team to imagine moving you.
+           RETURN: camera returns at the end of the paragraph
 
-  PARA 2   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN   [V5-C08]
+           ENTER ON: If you are the person holding everything together, your
+                      manager may have a real reason to want you to stay exactly
+                      where you are. That does not mean they are plotting
+                      against you. It means what helps the company today may not
+                      be the same thing that helps your future.
+           LEAVE ON: If you are the person holding everything together, your
+                      manager may have a real reason to want you to stay exactly
+                      where you are. That does not mean they are plotting
+                      against you. It means what helps the company today may not
+                      be the same thing that helps your future.
            ASSET FAMILY: NEW_V5_FS_02_NOT_ALIGNED
-           STATES, IN REVEAL ORDER:
-               NEW_V5_FS_02_NOT_ALIGNED.png
-           EXACT TRIGGER:
-               If you are the person holding everything together, your
-               manager may have a real reason to want you to stay exactly
-               where you are. That does not mean they are plotting
-               against you. It means what helps the company today may not
-               be the same thing that helps your future.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V5_FS_02_NOT_ALIGNED.png   paragraph 2
+                   on: If you are the person holding everything together,
+                   on: your manager may have a real reason to want you to
+                   on: stay exactly where you are. That does not mean
+                   on: they are plotting against you. It means what helps
+                   on: the company today may not be the same thing that
+                   on: helps your future.
+           RETURN: camera returns at the end of the paragraph
 
 SECTION 5  WHAT THIS CAN LOOK LIKE
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V5-C09]
+           ENTER ON: Look for a pattern. More rescue work. More people asking
+                      you for help. More things that only you know how to do.
+                      But no new decisions. No new kind of problem. No project
+                      that stretches you in a different way. No clear review of
+                      the extra work. No real conversation about what comes
+                      next.
+           LEAVE ON: Look for a pattern. More rescue work. More people asking
+                      you for help. More things that only you know how to do.
+                      But no new decisions. No new kind of problem. No project
+                      that stretches you in a different way. No clear review of
+                      the extra work. No real conversation about what comes
+                      next.
            ASSET FAMILY: NEW_V5_FS_03_WATCH_FOR_PATTERNS
-           STATES, IN REVEAL ORDER:
-               NEW_V5_FS_03_WATCH_FOR_PATTERNS.png
-           EXACT TRIGGER:
-               Look for a pattern. More rescue work. More people asking
-               you for help. More things that only you know how to do.
-               But no new decisions. No new kind of problem. No project
-               that stretches you in a different way. No clear review of
-               the extra work. No real conversation about what comes
-               next.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V5_FS_03_WATCH_FOR_PATTERNS.png   paragraph 1
+                   on: Look for a pattern. More rescue work. More people
+                   on: asking you for help. More things that only you
+                   on: know how to do. But no new decisions. No new kind
+                   on: of problem. No project that stretches you in a
+                   on: different way. No clear review of the extra work.
+                   on: No real conversation about what comes next.
+           RETURN: camera returns at the end of the paragraph
 
   PARA 2   MODE: CAMERA
            One busy month does not prove anything. A pattern over tim...
 
 SECTION 6  THE QUESTION TO ASK
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V5-C10]
+           ENTER ON: Ask: What is this company building in me beyond my ability
+                      to keep this role running?
+           LEAVE ON: Ask: What is this company building in me beyond my ability
+                      to keep this role running?
            ASSET FAMILY: NEW_V5_FS_04_THE_QUESTION
-           STATES, IN REVEAL ORDER:
-               NEW_V5_FS_04_THE_QUESTION.png
-           EXACT TRIGGER:
-               Ask: What is this company building in me beyond my ability
-               to keep this role running?
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V5_FS_04_THE_QUESTION.png   paragraph 1
+                   on: Ask: What is this company building in me beyond my
+                   on: ability to keep this role running?
+           RETURN: camera returns at the end of the paragraph
 
   PARA 2   MODE: CAMERA
            Your employer does not owe you a perfect career path. But...
@@ -117,43 +166,73 @@ SECTION 7  A SIMPLE EXAMPLE
 
 SECTION 8  ASK FOR DEVELOPMENT, NOT ONLY MORE WORK
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V5-T02]
+           SPANS PARAGRAPHS 1 TO 2
+           ON-SCREEN: TRUE FULL-SCREEN TEACHING | NOT ONLY A
+                      PROMOTION
+           ENTER ON: Do not only ask for a promotion.
+           LEAVE ON: A chance to build proof beyond rescue work.
+           (the exit wording is in paragraph 2)
            ASSET FAMILY: NEW_V5_FS_06_ASK_FOR_DEVELOPMENT
-           STATES, IN REVEAL ORDER:
-               NEW_V5_FS_06_ASK_FOR_DEVELOPMENT.png
-           EXACT TRIGGER:
-               Do not only ask for a promotion. Ask for work that builds
-               something new.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V5_FS_06_ASK_FOR_DEVELOPMENT.png   paragraph 1
+                   on: Ask for work that builds something new.
+           RETURN: camera returns for the request itself
 
-  PARA 2   MODE: CAMERA
-           A new decision. A new kind of problem. A project outside y...
+  PARA 2   MODE: FULL SCREEN, held from V5-T02
+           The voice continues under it.
+           RETURN: camera returns for the request itself
 
-  PARA 3   MODE: CAMERA
-           You could say: “I’m glad the team trusts me with this work...
+  PARA 3   MODE: FULL SCREEN   [V5-T03]
+           ON-SCREEN: TRUE FULL-SCREEN CONVERSATION | A SPECIFIC
+                      DEVELOPMENT REQUEST
+           ENTER ON: You could say:
+           LEAVE ON: help me build a different capability?
+           ASSET FAMILY: NEW_V5_FS_11_THE_REQUEST
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V5_FS_11_THE_REQUEST.png   paragraph 3
+                   on: What could I own in the next six months
+           SOUND: S3, one quiet accent as the request appears
+           ACCENT WORD: What could I own in the next six months
+           RETURN: camera returns at THE ANSWER MAY STILL BE NO
+           NOTE: The brief asks for this treatment and no delivered
+                 state carried the request, so one was built from
+                 the spoken words.
 
 SECTION 9  THE ANSWER MAY STILL BE NO
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V5-C11]
+           ENTER ON: There may be no budget. There may be no open role. Your
+                      manager may truly need you where you are. Bias may affect
+                      who gets opportunities. The company may simply not have
+                      the path you need.
+           LEAVE ON: There may be no budget. There may be no open role. Your
+                      manager may truly need you where you are. Bias may affect
+                      who gets opportunities. The company may simply not have
+                      the path you need.
            ASSET FAMILY: NEW_V5_FS_07_THE_ANSWER_MAY_BE_NO
-           STATES, IN REVEAL ORDER:
-               NEW_V5_FS_07_THE_ANSWER_MAY_BE_NO.png
-           EXACT TRIGGER:
-               There may be no budget. There may be no open role. Your
-               manager may truly need you where you are. Bias may affect
-               who gets opportunities. The company may simply not have
-               the path you need.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V5_FS_07_THE_ANSWER_MAY_BE_NO.png   paragraph 1
+                   on: There may be no budget. There may be no open role.
+                   on: Your manager may truly need you where you are.
+                   on: Bias may affect who gets opportunities. The
+                   on: company may simply not have the path you need.
+           RETURN: camera returns at the end of the paragraph
 
   PARA 2   MODE: CAMERA
            That is useful information too. You cannot make a good car...
 
 SECTION 10  DEPENDENCE VERSUS DEVELOPMENT
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V5-C12]
+           ENTER ON: Dependence sounds like: “We cannot do this without you.”
+           LEAVE ON: Dependence sounds like: “We cannot do this without you.”
            ASSET FAMILY: NEW_V5_FS_08_DEPENDENCE_VS_DEVELOPMENT
-           STATES, IN REVEAL ORDER:
-               NEW_V5_FS_08_DEPENDENCE_VS_DEVELOPMENT.png
-           EXACT TRIGGER:
-               Dependence sounds like: “We cannot do this without you.”
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V5_FS_08_DEPENDENCE_VS_DEVELOPMENT.png   paragraph 1
+                   on: Dependence sounds like: “We cannot do this without
+                   on: you.”
+           RETURN: camera returns at the end of the paragraph
 
   PARA 2   MODE: CAMERA
            Development sounds like: “Here is something you have not d...
@@ -163,19 +242,32 @@ SECTION 10  DEPENDENCE VERSUS DEVELOPMENT
 
 SECTION 11  SET A REVIEW POINT
 
-  PARA 1   MODE: CAMERA
-           If you take on extra work because the company needs you, s...
-
-  PARA 2   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V5-T04]
+           SPANS PARAGRAPHS 1 TO 3
+           ON-SCREEN: TRUE FULL-SCREEN WORKING NOTE | REVIEW WHAT
+                      CHANGED
+           ENTER ON: If you take on extra work because the company needs you,
+                      set a time to review it.
+           LEAVE ON: What am I taking off my plate?
+           (the exit wording is in paragraph 3)
            ASSET FAMILY: NEW_V5_FS_09_REVIEW_POINT
-           STATES, IN REVEAL ORDER:
-               NEW_V5_FS_09_REVIEW_POINT.png
-           EXACT TRIGGER:
-               Then ask: What became permanent? What did I learn? What
-               decisions became mine?
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V5_FS_09_REVIEW_POINT.png   paragraph 1
+                   on: Let’s come back to this in 90 days.
+           SOUND: S4, one soft accent on the date
+           ACCENT WORD: Let’s come back to this in 90 days.
+           RETURN: camera returns on 'Without a review point'
+           NOTE: The review questions run across three paragraphs.
+                 The card is held under all of them and the camera
+                 returns for the warning.
 
-  PARA 3   MODE: CAMERA
-           What recognition or role change comes with this? What am I...
+  PARA 2   MODE: FULL SCREEN, held from V5-T04
+           The voice continues under it.
+           RETURN: camera returns on 'Without a review point'
+
+  PARA 3   MODE: FULL SCREEN, held from V5-T04
+           The voice continues under it.
+           RETURN: camera returns on 'Without a review point'
 
 SECTION 12  WHEN TO BUILD OPTIONS
 
@@ -200,15 +292,24 @@ SECTION 15  CLOSE
   PARA 1   MODE: CAMERA
            Being needed can feel good. It can also keep you still.
 
-  PARA 2   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN   [V5-C13]
+           ENTER ON: So if your company keeps showing you how much it needs
+                      you, ask one more question: Is this work also making me
+                      more capable, more visible, or more useful somewhere else?
+                      If not, being useful may be part of why you feel stuck.
+           LEAVE ON: So if your company keeps showing you how much it needs
+                      you, ask one more question: Is this work also making me
+                      more capable, more visible, or more useful somewhere else?
+                      If not, being useful may be part of why you feel stuck.
            ASSET FAMILY: NEW_V5_FS_10_CTA
-           STATES, IN REVEAL ORDER:
-               NEW_V5_FS_10_CTA.png
-           EXACT TRIGGER:
-               So if your company keeps showing you how much it needs
-               you, ask one more question: Is this work also making me
-               more capable, more visible, or more useful somewhere else?
-               If not, being useful may be part of why you feel stuck.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V5_FS_10_CTA.png   paragraph 2
+                   on: So if your company keeps showing you how much it
+                   on: needs you, ask one more question: Is this work
+                   on: also making me more capable, more visible, or more
+                   on: useful somewhere else? If not, being useful may be
+                   on: part of why you feel stuck.
+           RETURN: camera returns at the end of the paragraph
 
 SECTION 16  CONFIDENCE / VIEWER OUTCOME
 
@@ -217,14 +318,20 @@ SECTION 16  CONFIDENCE / VIEWER OUTCOME
 
 SECTION 17  WATCH NEXT
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V5-C14]
+           ENTER ON: And if you are carrying more because people know you will
+                      get it done, watch “It Took Me Years to Stop Mistaking
+                      More Work for Career Growth” next.
+           LEAVE ON: And if you are carrying more because people know you will
+                      get it done, watch “It Took Me Years to Stop Mistaking
+                      More Work for Career Growth” next.
            ASSET FAMILY: NEW_V5_WATCH_NEXT
-           STATES, IN REVEAL ORDER:
-               NEW_V5_WATCH_NEXT.png
-           EXACT TRIGGER:
-               And if you are carrying more because people know you will
-               get it done, watch “It Took Me Years to Stop Mistaking
-               More Work for Career Growth” next.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V5_WATCH_NEXT.png   paragraph 1
+                   on: And if you are carrying more because people know
+                   on: you will get it done, watch “It Took Me Years to
+                   on: Stop Mistaking More Work for Career Growth” next.
+           RETURN: camera returns at the end of the paragraph
 
 ------------------------------------------------------------------------------
 

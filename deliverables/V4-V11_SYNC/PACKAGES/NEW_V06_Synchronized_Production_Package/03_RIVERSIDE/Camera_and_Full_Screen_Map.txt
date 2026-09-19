@@ -11,54 +11,86 @@ meaningful B-roll are TRUE FULL SCREEN. The voice may continue
 under a full-screen image. Never keep Temidayo moving behind a
 teaching card.
 
+This map and the Riverside prompt are generated from one event
+list, so a paragraph cannot be camera here and full screen
+there. An event may begin and end inside a paragraph or run
+across several, and one asset family may serve more than one
+event at different points in the video.
+
 ------------------------------------------------------------------------------
 
 SECTION 1  HOOK
 
-  PARA 1   MODE: CAMERA   (early edit, step 1)
-           ON-SCREEN TEXT: WHAT IS THE ACTUAL JOB?
+  PARA 1   MODE: CAMERA   [V6-O01]
+           ON-SCREEN: WHAT IS THE ACTUAL JOB?
            ENTER ON: I want you to guess what this job actually is.
-           LEAVE ON: I want you to guess what this job actual...  (paragraph 1)
-           SOUND: none
+           LEAVE ON: I want you to guess what this job actually is.
+           ASSET: none. Camera, with any editorial text over it.
            RETURN: stays on camera
+           NOTE: The question lands while she speaks. No framework,
+                 no introduction first.
 
-  PARA 1   MODE: FULL SCREEN   (early edit, step 2)
-           ON-SCREEN TEXT: Senior Divisional Strategy Consultant, Gover...
-           ENTER ON: Senior Divisional Strategy Consultant, Governa...
-           LEAVE ON: Sounds like someone setting strategy and...  (paragraph 1)
+  PARA 1   MODE: FULL SCREEN   [V6-O02]
+           ON-SCREEN: Senior Divisional Strategy Consultant,
+                      Governance
+           ENTER ON: Senior Divisional Strategy Consultant, Governance.
+           LEAVE ON: Sounds like someone setting strategy and making big
+                      decisions.
            ASSET FAMILY: NEW_V6_FS_01_TITLE_ONLY
-           STATES, IN REVEAL ORDER:
-               NEW_V6_FS_01_TITLE_ONLY.png
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V6_FS_01_TITLE_ONLY.png   paragraph 1
+                   on: Senior Divisional Strategy Consultant, Governance.
            SOUND: S1, one brief stinger on the title
+           ACCENT WORD: none separately specified
            RETURN: holds into the next paragraph
+           NOTE: Anonymized employer descriptor only. Salary and
+                 requirement stay hidden until spoken.
 
-  PARA 2   MODE: FULL SCREEN   (early edit, step 3)
-           ON-SCREEN TEXT: PUBLISHED RANGE START: $61,500 / ACCEPT DIRE...
-           ENTER ON: But when I read the actual posting, the bottom...
-           LEAVE ON: Nothing is wrong with either of those th...  (paragraph 2)
+  PARA 2   MODE: FULL SCREEN   [V6-O03]
+           ON-SCREEN: PUBLISHED RANGE START: $61,500 / ACCEPT
+                      DIRECTION AND FEEDBACK
+           ENTER ON: But when I read the actual posting, the bottom of the pay
+                      range was $61,500
+           LEAVE ON: Nothing is wrong with either of those things.
            ASSET FAMILY: NEW_V6_FS_02_THE_CONTRADICTION
-           STATES, IN REVEAL ORDER:
-               NEW_V6_FS_02A_FLOOR.png
-               NEW_V6_FS_02B_FEEDBACK.png
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V6_FS_02A_FLOOR.png   paragraph 2
+                   on: But when I read the actual posting, the bottom of
+                   on: the pay range was $61,500
+               NEW_V6_FS_02B_FEEDBACK.png   paragraph 2
+                   on: But when I read the actual posting, the bottom of
+                   on: the pay range was $61,500
            SOUND: S2, one brief stinger on the range floor
+           ACCENT WORD: none separately specified
            RETURN: camera returns on 'But they tell you something important'
+           NOTE: Range floor on the first state, requirement on the
+                 second. Paraphrase unless the capture packet
+                 supplies an exact quote.
 
-  PARA 3   MODE: CAMERA   (early edit, step 4)
-           ON-SCREEN TEXT: THE TITLE IS NOT THE WHOLE JOB
-           ENTER ON: But they tell you something important: The tit...
-           LEAVE ON: The title did not tell you the job.  (paragraph 3)
-           SOUND: none
+  PARA 3   MODE: CAMERA   [V6-O04]
+           ON-SCREEN: THE TITLE IS NOT THE WHOLE JOB
+           ENTER ON: But they tell you something important: The title did not
+                      tell you the job.
+           LEAVE ON: The title did not tell you the job.
+           ASSET: none. Camera, with any editorial text over it.
            RETURN: stays on camera
+           NOTE: Her interpretation, on camera. One observed
+                 posting, not a verdict on titles.
 
-  PARA 4   MODE: FULL SCREEN   (early edit, step 5)
-           ON-SCREEN TEXT: PROBLEM / AUTHORITY / PROOF / REAL GAP
-           ENTER ON: the four things I would read before deciding w...
-           LEAVE ON: And the first thing I would do is almost...  (paragraph 4)
+  PARA 4   MODE: FULL SCREEN   [V6-O05]
+           ON-SCREEN: PROBLEM / AUTHORITY / PROOF / REAL GAP
+           ENTER ON: the four things I would read before deciding whether a job
+                      is actually a fit for your experience
+           LEAVE ON: And the first thing I would do is almost ignore the title.
            ASSET FAMILY: NEW_V6_FS_05_PARP
-           STATES, IN REVEAL ORDER:
-               NEW_V6_FS_05_PARP_FRAMEWORK.png
-           SOUND: none
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V6_FS_05_PARP_FRAMEWORK.png   paragraph 4
+                   on: the four things I would read before deciding
+                   on: whether a job is actually a fit for your
+                   on: experience
            RETURN: camera returns at STORY LOOP
+           NOTE: The sample boundary stays spoken: 15 postings, 11
+                 employers.
 
 SECTION 2  STORY LOOP
 
@@ -67,70 +99,130 @@ SECTION 2  STORY LOOP
 
 SECTION 3  THE FOUR THINGS I READ
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V6-C10]
+           ENTER ON: I reviewed 15 job postings from 11 employers for this
+                      research. When I read a job description, I look for four
+                      things: PROBLEM. AUTHORITY. PROOF. REAL GAP.
+           LEAVE ON: I reviewed 15 job postings from 11 employers for this
+                      research. When I read a job description, I look for four
+                      things: PROBLEM. AUTHORITY. PROOF. REAL GAP.
            ASSET FAMILY: NEW_V6_FS_03_THE_SAMPLE
-           STATES, IN REVEAL ORDER:
-               NEW_V6_FS_03_THE_SAMPLE.png
-           EXACT TRIGGER:
-               I reviewed 15 job postings from 11 employers for this
-               research. When I read a job description, I look for four
-               things: PROBLEM. AUTHORITY. PROOF. REAL GAP.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V6_FS_03_THE_SAMPLE.png   paragraph 1
+                   on: I reviewed 15 job postings from 11 employers for
+                   on: this research. When I read a job description, I
+                   on: look for four things: PROBLEM. AUTHORITY. PROOF.
+                   on: REAL GAP.
+           RETURN: camera returns at the end of the paragraph
 
-  PARA 2   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN   [V6-C11]
+           ENTER ON: Those four things help you answer three different
+                      questions: Could I do this work? Can I prove that I have
+                      done something close to it? Do I meet the real
+                      requirements? Those are not the same question.
+           LEAVE ON: Those four things help you answer three different
+                      questions: Could I do this work? Can I prove that I have
+                      done something close to it? Do I meet the real
+                      requirements? Those are not the same question.
            ASSET FAMILY: NEW_V6_FS_04_THREE_QUESTIONS
-           STATES, IN REVEAL ORDER:
-               NEW_V6_FS_04A_COULD_I_DO_IT.png
-               NEW_V6_FS_04B_CAN_I_PROVE_IT.png
-               NEW_V6_FS_04C_DO_I_MEET_THE_GATES.png
-           EXACT TRIGGER:
-               Those four things help you answer three different
-               questions: Could I do this work? Can I prove that I have
-               done something close to it? Do I meet the real
-               requirements? Those are not the same question.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V6_FS_04A_COULD_I_DO_IT.png   paragraph 2
+                   on: Those four things help you answer three different
+                   on: questions: Could I do this work? Can I prove that
+                   on: I have done something close to it? Do I meet the
+                   on: real requirements? Those are not the same
+                   on: question.
+               NEW_V6_FS_04B_CAN_I_PROVE_IT.png   paragraph 2
+                   on: Those four things help you answer three different
+                   on: questions: Could I do this work? Can I prove that
+                   on: I have done something close to it? Do I meet the
+                   on: real requirements? Those are not the same
+                   on: question.
+               NEW_V6_FS_04C_DO_I_MEET_THE_GATES.png   paragraph 2
+                   on: Those four things help you answer three different
+                   on: questions: Could I do this work? Can I prove that
+                   on: I have done something close to it? Do I meet the
+                   on: real requirements? Those are not the same
+                   on: question.
+           RETURN: camera returns at the end of the paragraph
 
 SECTION 4  1 | PROBLEM
 
   PARA 1   MODE: CAMERA
            First, ignore the title for a minute. Ask: What problem do...
 
-  PARA 2   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN   [V6-T01A]
+           ON-SCREEN: TRUE FULL-SCREEN POSTING WALKTHROUGH | THE
+                      PROBLEM
+           ENTER ON: In that Senior Divisional Strategy Consultant role, the
+                      job was not simply to “be strategic.”
+           LEAVE ON: You start matching your experience to the work.
            ASSET FAMILY: NEW_V6_FS_06_POSTING_WALKTHROUGH
-           STATES, IN REVEAL ORDER:
-               NEW_V6_FS_06A_PROBLEM.png
-               NEW_V6_FS_06B_AUTHORITY.png
-               NEW_V6_FS_06C_PROOF.png
-           EXACT TRIGGER:
-               In that Senior Divisional Strategy Consultant role, the
-               job was not simply to “be strategic.” The team needed a
-               better way to review opportunities, track them, and report
-               on them. When you can name the problem, you stop matching
-               yourself only to titles. You start matching your
-               experience to the work.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V6_FS_06A_PROBLEM.png   paragraph 2
+                   on: The team needed a better way to review
+                   on: opportunities, track them, and report on them.
+           RETURN: camera returns at 2 | AUTHORITY
+           NOTE: One state per teaching occurrence. The authority
+                 and proof states belong to their own sections and
+                 are not played here.
 
 SECTION 5  2 | AUTHORITY
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V6-C12]
+           ENTER ON: Next, look at the verbs. Does the person decide? Lead?
+                      Negotiate? Recommend? Influence? Support? Execute?
+           LEAVE ON: Next, look at the verbs. Does the person decide? Lead?
+                      Negotiate? Recommend? Influence? Support? Execute?
            ASSET FAMILY: NEW_V6_FS_08_READ_THE_VERBS
-           STATES, IN REVEAL ORDER:
-               NEW_V6_FS_08_READ_THE_VERBS.png
-           EXACT TRIGGER:
-               Next, look at the verbs. Does the person decide? Lead?
-               Negotiate? Recommend? Influence? Support? Execute?
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V6_FS_08_READ_THE_VERBS.png   paragraph 1
+                   on: Next, look at the verbs. Does the person decide?
+                   on: Lead? Negotiate? Recommend? Influence? Support?
+                   on: Execute?
+           RETURN: camera returns at the end of the paragraph
 
-  PARA 2   MODE: CAMERA
-           In that same posting, one of the key words was “supporting...
+  PARA 2   MODE: FULL SCREEN   [V6-T01B]
+           ON-SCREEN: TRUE FULL-SCREEN POSTING COMPARISON |
+                      SUPPORTING IS NOT SETTING
+           ENTER ON: In that same posting, one of the key words was
+                      “supporting.”
+           LEAVE ON: It tells you where the decision power may sit.
+           ASSET FAMILY: NEW_V6_FS_06_POSTING_WALKTHROUGH
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V6_FS_06B_AUTHORITY.png   paragraph 2
+                   on: Supporting the development of strategy is not the
+                   on: same as setting the strategy.
+           SOUND: S3, one quiet accent on the distinction
+           ACCENT WORD: Supporting the development of strategy is not the same as setting the strategy.
+           RETURN: camera returns on 'I found another role called Director of Enterprise Resilience'
 
-  PARA 3   MODE: FULL SCREEN
+  PARA 3   MODE: FULL SCREEN   [V6-C13]
+           ENTER ON: I found another role called Director of Enterprise
+                      Resilience. The pay range went to just under $248,000. The
+                      posting said the person would work with leaders to make
+                      quick decisions based on decisions that had already been
+                      set ahead of time.
+           LEAVE ON: I found another role called Director of Enterprise
+                      Resilience. The pay range went to just under $248,000. The
+                      posting said the person would work with leaders to make
+                      quick decisions based on decisions that had already been
+                      set ahead of time.
            ASSET FAMILY: NEW_V6_FS_09_PREDEFINED_DECISIONS
-           STATES, IN REVEAL ORDER:
-               NEW_V6_FS_09A_SAME_COMPANY.png
-               NEW_V6_FS_09B_PREDEFINED.png
-           EXACT TRIGGER:
-               I found another role called Director of Enterprise
-               Resilience. The pay range went to just under $248,000. The
-               posting said the person would work with leaders to make
-               quick decisions based on decisions that had already been
-               set ahead of time.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V6_FS_09A_SAME_COMPANY.png   paragraph 3
+                   on: I found another role called Director of Enterprise
+                   on: Resilience. The pay range went to just under
+                   on: $248,000. The posting said the person would work
+                   on: with leaders to make quick decisions based on
+                   on: decisions that had already been set ahead of time.
+               NEW_V6_FS_09B_PREDEFINED.png   paragraph 3
+                   on: I found another role called Director of Enterprise
+                   on: Resilience. The pay range went to just under
+                   on: $248,000. The posting said the person would work
+                   on: with leaders to make quick decisions based on
+                   on: decisions that had already been set ahead of time.
+           RETURN: camera returns at the end of the paragraph
 
   PARA 4   MODE: CAMERA
            That is still serious work. But do not only ask, “Is this...
@@ -140,8 +232,19 @@ SECTION 6  3 | PROOF
   PARA 1   MODE: CAMERA
            Third, ask what proof the employer would need to believe y...
 
-  PARA 2   MODE: CAMERA
-           In the first posting, they wanted experience in areas like...
+  PARA 2   MODE: FULL SCREEN   [V6-T01C]
+           ON-SCREEN: TRUE FULL-SCREEN POSTING WALKTHROUGH | THE
+                      PROOF THEY WOULD NEED TO SEE
+           ENTER ON: In the first posting, they wanted experience in areas like
+                      strategic planning, market research, business analytics,
+                      and even Microsoft Access.
+           LEAVE ON: That last detail suggests the job may be more hands-on
+                      than the title sounds.
+           ASSET FAMILY: NEW_V6_FS_06_POSTING_WALKTHROUGH
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V6_FS_06C_PROOF.png   paragraph 2
+                   on: business analytics, and even Microsoft Access
+           RETURN: camera returns on 'Now compare the posting with your real work.'
 
   PARA 3   MODE: CAMERA
            Now compare the posting with your real work. What have you...
@@ -151,131 +254,211 @@ SECTION 7  4 | REAL GAP
   PARA 1   MODE: CAMERA
            Then ask the question people sometimes avoid: What is the...
 
-  PARA 2   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN   [V6-T02]
+           SPANS PARAGRAPHS 2 TO 3
+           ON-SCREEN: TRUE FULL-SCREEN REQUIREMENT CARD | REQUIRED
+                      TIME OVERLAP
+           ENTER ON: A global nonprofit was hiring a Director of Global Talent
+                      Acquisition.
+           LEAVE ON: It is a work and life constraint.
+           (the exit wording is in paragraph 3)
            ASSET FAMILY: NEW_V6_FS_17_REAL_GAP
-           STATES, IN REVEAL ORDER:
-               NEW_V6_FS_17A_GEOGRAPHIC.png
-               NEW_V6_FS_17B_TIME_ZONE.png
-           EXACT TRIGGER:
-               A global nonprofit was hiring a Director of Global Talent
-               Acquisition. The posting said people whose recruiting
-               experience was only in one geographic setting were
-               unlikely to be a strong fit. That is a real boundary.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V6_FS_17A_GEOGRAPHIC.png   paragraph 2
+                   on: people whose recruiting experience was only in one
+                   on: geographic setting were unlikely to be a strong
+                   on: fit
+               NEW_V6_FS_17B_TIME_ZONE.png   paragraph 3
+                   on: at least three hours of overlap with East Africa
+                   on: Time.
+           SOUND: One accent as the second requirement lands
+           ACCENT WORD: at least three hours of overlap with East Africa Time.
+           RETURN: camera returns on 'You can be able to do the work'
+           NOTE: Two requirements, two paragraphs, one state each.
+                 The second is not revealed while the first is
+                 being explained.
 
-  PARA 3   MODE: CAMERA
-           The same role required at least three hours of overlap wit...
+  PARA 3   MODE: FULL SCREEN, held from V6-T02
+           The voice continues under it.
+           ACTIVATE HERE:
+               NEW_V6_FS_17B_TIME_ZONE.png
+                   on: at least three hours of overlap with East Africa
+                   on: Time.
+           RETURN: camera returns on 'You can be able to do the work'
 
 SECTION 8  WHY TITLES CAN MISLEAD YOU
 
   PARA 1   MODE: CAMERA
            I compared Director roles across different industries. The...
 
-  PARA 2   MODE: FULL SCREEN   (1 of 2 in this paragraph)
-           ASSET FAMILY: NEW_V6_FS_10_DIRECTOR_COMPARE
-           STATES, IN REVEAL ORDER:
-               NEW_V6_FS_10A_SAME_WORD.png
-               NEW_V6_FS_10B_SCOPE.png
+  PARA 2   MODE: FULL SCREEN   [V6-C14]
            ENTER ON: One role focused much more on running the work
-           LEAVE ON: worked directly with a Chief Transformation Of...
-           The camera does not return here. The next card in this
-           paragraph takes over on its own entry words.
+           LEAVE ON: worked directly with a Chief Transformation Officer.
+           ASSET FAMILY: NEW_V6_FS_10_DIRECTOR_COMPARE
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V6_FS_10A_SAME_WORD.png   paragraph 2
+                   on: One role focused much more on running the work
+               NEW_V6_FS_10B_SCOPE.png   paragraph 2
+                   on: One role focused much more on running the work
+           RETURN: camera returns at the end of the paragraph
 
-  PARA 2   MODE: FULL SCREEN   (2 of 2 in this paragraph)
-           ASSET FAMILY: NEW_V6_FS_12_TITLE_TEST
-           STATES, IN REVEAL ORDER:
-               NEW_V6_FS_12A_SAME_WORD.png
-               NEW_V6_FS_12B_DIFFERENT_WORK.png
-               NEW_V6_FS_12C_DIFFERENT_AUTHORITY.png
-               NEW_V6_FS_12D_DIFFERENT_CONTEXT.png
+  PARA 2   MODE: FULL SCREEN   [V6-C15]
            ENTER ON: Same broad title level.
            LEAVE ON: It cannot finish the read.
-           The camera returns at the end of this paragraph.
+           ASSET FAMILY: NEW_V6_FS_12_TITLE_TEST
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V6_FS_12A_SAME_WORD.png   paragraph 2
+                   on: Same broad title level.
+               NEW_V6_FS_12B_DIFFERENT_WORK.png   paragraph 2
+                   on: Same broad title level.
+               NEW_V6_FS_12C_DIFFERENT_AUTHORITY.png   paragraph 2
+                   on: Same broad title level.
+               NEW_V6_FS_12D_DIFFERENT_CONTEXT.png   paragraph 2
+                   on: Same broad title level.
+           RETURN: camera returns at the end of the paragraph
 
 SECTION 9  THE REVERSE CAN HAPPEN TOO
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V6-C16]
+           ENTER ON: Sometimes a title sounds smaller or stranger than the work
+                      really is. One posting was called Member of Technical
+                      Staff, Governance Risk Compliance. The title does not tell
+                      you much.
+           LEAVE ON: Sometimes a title sounds smaller or stranger than the work
+                      really is. One posting was called Member of Technical
+                      Staff, Governance Risk Compliance. The title does not tell
+                      you much.
            ASSET FAMILY: NEW_V6_FS_13_ACRONYM_WALL
-           STATES, IN REVEAL ORDER:
-               NEW_V6_FS_13A_UNFAMILIAR_TITLE.png
-               NEW_V6_FS_13B_ACRONYM_WALL.png
-           EXACT TRIGGER:
-               Sometimes a title sounds smaller or stranger than the work
-               really is. One posting was called Member of Technical
-               Staff, Governance Risk Compliance. The title does not tell
-               you much.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V6_FS_13A_UNFAMILIAR_TITLE.png   paragraph 1
+                   on: Sometimes a title sounds smaller or stranger than
+                   on: the work really is. One posting was called Member
+                   on: of Technical Staff, Governance Risk Compliance.
+                   on: The title does not tell you much.
+               NEW_V6_FS_13B_ACRONYM_WALL.png   paragraph 1
+                   on: Sometimes a title sounds smaller or stranger than
+                   on: the work really is. One posting was called Member
+                   on: of Technical Staff, Governance Risk Compliance.
+                   on: The title does not tell you much.
+           RETURN: camera returns at the end of the paragraph
 
-  PARA 2   MODE: FULL SCREEN   (1 of 2 in this paragraph)
-           ASSET FAMILY: NEW_V6_FS_14_AUTHORITY_POSTURES
-           STATES, IN REVEAL ORDER:
-               NEW_V6_FS_14_AUTHORITY_POSTURES.png
-               NEW_V6_FS_14A_LEADS.png
-               NEW_V6_FS_14B_ADVISES.png
-               NEW_V6_FS_14C_COORDINATES.png
-               NEW_V6_FS_14D_SUBJECT_MATTER_EXPERT.png
-           ENTER ON: But the work included leading federal authoriz...
+  PARA 2   MODE: FULL SCREEN   [V6-C17]
+           ENTER ON: But the work included leading federal authorization work
            LEAVE ON: serving as a subject-matter expert.
-           The camera does not return here. The next card in this
-           paragraph takes over on its own entry words.
+           ASSET FAMILY: NEW_V6_FS_14_AUTHORITY_POSTURES
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V6_FS_14_AUTHORITY_POSTURES.png   paragraph 2
+                   on: But the work included leading federal
+                   on: authorization work
+               NEW_V6_FS_14A_LEADS.png   paragraph 2
+                   on: But the work included leading federal
+                   on: authorization work
+               NEW_V6_FS_14B_ADVISES.png   paragraph 2
+                   on: But the work included leading federal
+                   on: authorization work
+               NEW_V6_FS_14C_COORDINATES.png   paragraph 2
+                   on: But the work included leading federal
+                   on: authorization work
+               NEW_V6_FS_14D_SUBJECT_MATTER_EXPERT.png   paragraph 2
+                   on: But the work included leading federal
+                   on: authorization work
+           RETURN: camera returns at the end of the paragraph
 
-  PARA 2   MODE: FULL SCREEN   (2 of 2 in this paragraph)
-           ASSET FAMILY: NEW_V6_FS_15_CEILING
-           STATES, IN REVEAL ORDER:
-               NEW_V6_FS_15A_RANGE.png
-               NEW_V6_FS_15B_IN_THE_SAMPLE.png
-           ENTER ON: The published pay range went from $180,000 to...
+  PARA 2   MODE: FULL SCREEN   [V6-C18]
+           ENTER ON: The published pay range went from $180,000 to $440,000.
            LEAVE ON: sat on the highest published pay ceiling.
-           The camera returns at the end of this paragraph.
+           ASSET FAMILY: NEW_V6_FS_15_CEILING
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V6_FS_15A_RANGE.png   paragraph 2
+                   on: The published pay range went from $180,000 to
+                   on: $440,000.
+               NEW_V6_FS_15B_IN_THE_SAMPLE.png   paragraph 2
+                   on: The published pay range went from $180,000 to
+                   on: $440,000.
+           RETURN: camera returns at the end of the paragraph
 
-  PARA 3   MODE: FULL SCREEN
+  PARA 3   MODE: FULL SCREEN   [V6-C19]
+           ENTER ON: So if a title confuses you, do not automatically skip the
+                      job. Read the work.
+           LEAVE ON: So if a title confuses you, do not automatically skip the
+                      job. Read the work.
            ASSET FAMILY: NEW_V6_FS_16_READ_THE_WORK
-           STATES, IN REVEAL ORDER:
-               NEW_V6_FS_16_READ_THE_WORK.png
-           EXACT TRIGGER:
-               So if a title confuses you, do not automatically skip the
-               job. Read the work.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V6_FS_16_READ_THE_WORK.png   paragraph 3
+                   on: So if a title confuses you, do not automatically
+                   on: skip the job. Read the work.
+           RETURN: camera returns at the end of the paragraph
 
 SECTION 10  WHAT THIS METHOD CANNOT TELL YOU
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V6-C20]
+           ENTER ON: This method will not tell you who will get hired. It
+                      cannot tell you whether the authority on paper is the
+                      authority the person will really have. It cannot tell you
+                      whether a manager will bend a requirement, whether bias
+                      will affect the decision, or whether the team culture is
+                      good.
+           LEAVE ON: This method will not tell you who will get hired. It
+                      cannot tell you whether the authority on paper is the
+                      authority the person will really have. It cannot tell you
+                      whether a manager will bend a requirement, whether bias
+                      will affect the decision, or whether the team culture is
+                      good.
            ASSET FAMILY: NEW_V6_FS_18_WHAT_IT_WILL_NOT_DO
-           STATES, IN REVEAL ORDER:
-               NEW_V6_FS_18_WHAT_IT_WILL_NOT_DO.png
-           EXACT TRIGGER:
-               This method will not tell you who will get hired. It
-               cannot tell you whether the authority on paper is the
-               authority the person will really have. It cannot tell you
-               whether a manager will bend a requirement, whether bias
-               will affect the decision, or whether the team culture is
-               good.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V6_FS_18_WHAT_IT_WILL_NOT_DO.png   paragraph 1
+                   on: This method will not tell you who will get hired.
+                   on: It cannot tell you whether the authority on paper
+                   on: is the authority the person will really have. It
+                   on: cannot tell you whether a manager will bend a
+                   on: requirement, whether bias will affect the
+                   on: decision, or whether the team culture is good.
+           RETURN: camera returns at the end of the paragraph
 
   PARA 2   MODE: CAMERA
            Reading better does not guarantee a good outcome. It gives...
 
 SECTION 11  USE IT ON A REAL JOB
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V6-C21]
+           ENTER ON: Take one job description you are actually thinking about.
+                      Write four lines: Problem. Authority. Proof. Real gap.
+           LEAVE ON: Take one job description you are actually thinking about.
+                      Write four lines: Problem. Authority. Proof. Real gap.
            ASSET FAMILY: NEW_V6_FS_20_CTA
-           STATES, IN REVEAL ORDER:
-               NEW_V6_FS_20A_WRITE_FOUR_LINES.png
-               NEW_V6_FS_20B_STRONGEST_VERB.png
-           EXACT TRIGGER:
-               Take one job description you are actually thinking about.
-               Write four lines: Problem. Authority. Proof. Real gap.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V6_FS_20A_WRITE_FOUR_LINES.png   paragraph 1
+                   on: Take one job description you are actually thinking
+                   on: about. Write four lines: Problem. Authority.
+                   on: Proof. Real gap.
+               NEW_V6_FS_20B_STRONGEST_VERB.png   paragraph 1
+                   on: Take one job description you are actually thinking
+                   on: about. Write four lines: Problem. Authority.
+                   on: Proof. Real gap.
+           RETURN: camera returns at the end of the paragraph
 
   PARA 2   MODE: CAMERA
            Then circle the strongest verbs in the posting. When you a...
 
 SECTION 12  TAKEAWAY VALUE
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V6-C22]
+           ENTER ON: The win is not becoming perfect at reading job
+                      descriptions. In ten minutes, name the problem, authority,
+                      proof, and real gap. That is enough to decide whether the
+                      role deserves a deeper look.
+           LEAVE ON: The win is not becoming perfect at reading job
+                      descriptions. In ten minutes, name the problem, authority,
+                      proof, and real gap. That is enough to decide whether the
+                      role deserves a deeper look.
            ASSET FAMILY: NEW_V6_FS_19_FOUR_THINGS
-           STATES, IN REVEAL ORDER:
-               NEW_V6_FS_19_FOUR_THINGS.png
-           EXACT TRIGGER:
-               The win is not becoming perfect at reading job
-               descriptions. In ten minutes, name the problem, authority,
-               proof, and real gap. That is enough to decide whether the
-               role deserves a deeper look.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V6_FS_19_FOUR_THINGS.png   paragraph 1
+                   on: The win is not becoming perfect at reading job
+                   on: descriptions. In ten minutes, name the problem,
+                   on: authority, proof, and real gap. That is enough to
+                   on: decide whether the role deserves a deeper look.
+           RETURN: camera returns at the end of the paragraph
 
 SECTION 13  STORY LOOP PAYOFF
 
@@ -297,15 +480,23 @@ SECTION 15  CONFIDENCE / VIEWER OUTCOME
 
 SECTION 16  WATCH NEXT
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V6-C23]
+           ENTER ON: Once you know how to read what the role really requires,
+                      the next question is whether your own experience gives you
+                      the proof for it. Watch “Turn One Accomplishment Into
+                      Proof in 10 Minutes” next.
+           LEAVE ON: Once you know how to read what the role really requires,
+                      the next question is whether your own experience gives you
+                      the proof for it. Watch “Turn One Accomplishment Into
+                      Proof in 10 Minutes” next.
            ASSET FAMILY: NEW_V6_WATCH_NEXT
-           STATES, IN REVEAL ORDER:
-               NEW_V6_WATCH_NEXT.png
-           EXACT TRIGGER:
-               Once you know how to read what the role really requires,
-               the next question is whether your own experience gives you
-               the proof for it. Watch “Turn One Accomplishment Into
-               Proof in 10 Minutes” next.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V6_WATCH_NEXT.png   paragraph 1
+                   on: Once you know how to read what the role really
+                   on: requires, the next question is whether your own
+                   on: experience gives you the proof for it. Watch “Turn
+                   on: One Accomplishment Into Proof in 10 Minutes” next.
+           RETURN: camera returns at the end of the paragraph
 
 ------------------------------------------------------------------------------
 

@@ -11,53 +11,59 @@ meaningful B-roll are TRUE FULL SCREEN. The voice may continue
 under a full-screen image. Never keep Temidayo moving behind a
 teaching card.
 
+This map and the Riverside prompt are generated from one event
+list, so a paragraph cannot be camera here and full screen
+there. An event may begin and end inside a paragraph or run
+across several, and one asset family may serve more than one
+event at different points in the video.
+
 ------------------------------------------------------------------------------
 
 SECTION 1  HOOK
 
-  PARA 1   MODE: CAMERA   (early edit, step 1)
-           ON-SCREEN TEXT: NOT EVERYTHING TRAVELS
-           ENTER ON: I think some transferable-skills advice gives...
-           LEAVE ON: Some of it absolutely can.  (paragraph 1)
-           SOUND: none
+  PARA 1   MODE: CAMERA   [V9-O01]
+           ON-SCREEN: NOT EVERYTHING TRAVELS
+           ENTER ON: I think some transferable-skills advice gives experienced
+                      professionals false confidence.
+           LEAVE ON: Some of it absolutely can.
+           ASSET: none. Camera, with any editorial text over it.
            RETURN: stays on camera
+           NOTE: 'Some' stays in the spoken claim. No study, no
+                 universal indictment.
 
-  PARA 2   MODE: FULL SCREEN   (early edit, step 2)
-           ON-SCREEN TEXT: WHAT COMES WITH ME? / WHAT STAYS BEHIND?
-           ENTER ON: The problem is that we spend so much time aski...
-           LEAVE ON: What am I leaving behind?  (paragraph 2)
+  PARA 2   MODE: FULL SCREEN   [V9-O02]
+           ON-SCREEN: WHAT COMES WITH ME? / WHAT STAYS BEHIND?
+           ENTER ON: The problem is that we spend so much time asking, What can
+                      I take with me?
+           LEAVE ON: What am I leaving behind?
            ASSET FAMILY: NEW_V9_FS_01_INCOMPLETE_QUESTION
-           STATES, IN REVEAL ORDER:
-               NEW_V9_FS_01_INCOMPLETE_QUESTION.png
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V9_FS_01_INCOMPLETE_QUESTION.png   paragraph 2
+                   on: The problem is that we spend so much time asking,
+                   on: What can I take with me?
            SOUND: S1, one quiet paper-switch
+           ACCENT WORD: none separately specified
            RETURN: camera returns within the paragraph
+           NOTE: Two questions, while the source asks them. No
+                 travel imagery.
 
-  PARA 3   MODE: FULL SCREEN   (early edit, step 3)
-           ON-SCREEN TEXT: JUDGMENT: MAY TRAVEL / RELATIONSHIPS: MAY NO...
+  PARA 3   MODE: FULL SCREEN   [V9-O03]
+           ON-SCREEN: JUDGMENT: MAY TRAVEL / RELATIONSHIPS: MAY NOT
            ENTER ON: Your judgment may travel.
-           LEAVE ON: Your knowledge of that company’s systems...  (paragraph 3)
+           LEAVE ON: Your knowledge of that company’s systems may not.
            ASSET FAMILY: NEW_V9_FS_00_MAY_TRAVEL
-           STATES, IN REVEAL ORDER:
-               NEW_V9_FS_00_MAY_TRAVEL.png
-           SOUND: none
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V9_FS_00_MAY_TRAVEL.png   paragraph 3
+                   on: Your judgment may travel.
            RETURN: camera returns on 'And a new industry may still require regulation'
+           NOTE: Each side arrives with its sentence. 'May' stays
+                 visible on both.
 
   PARA 4   MODE: CAMERA
            And a new industry may still require regulation, credentia...
 
-  PARA 5   MODE: FULL SCREEN
-           ASSET FAMILY: NEW_V9_FS_03_FOUR_QUESTIONS
-           STATES, IN REVEAL ORDER:
-               NEW_V9_FS_03_FOUR_QUESTIONS.png
-               NEW_V9_FS_03A_WHAT_TRAVELS.png
-               NEW_V9_FS_03B_WHAT_DOES_NOT.png
-               NEW_V9_FS_03C_WHAT_CAN_I_PROVE.png
-               NEW_V9_FS_03D_WHAT_MUST_I_RELEARN.png
-           EXACT TRIGGER:
-               I would make four columns: What travels? What does not?
-               What can I prove? What must I relearn? Because changing
-               industries without starting over does not mean pretending
-               you have nothing left to learn.
+  PARA 5   MODE: CAMERA
+           I would make four columns: What travels? What does not? Wh...
 
 SECTION 2  STORY LOOP
 
@@ -74,39 +80,89 @@ SECTION 3  INTRODUCTION   [restored intro]
 
 SECTION 4  WHY TRANSFERABLE-SKILLS ADVICE HELPS
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V9-C07]
+           ENTER ON: Transferable-skills advice can be helpful because it stops
+                      experienced people from acting like their old experience
+                      suddenly means nothing. You do not change fields and
+                      become a beginner at everything. You may carry judgment,
+                      leadership, problem solving, pattern recognition, or ways
+                      of working that still matter.
+           LEAVE ON: Transferable-skills advice can be helpful because it stops
+                      experienced people from acting like their old experience
+                      suddenly means nothing. You do not change fields and
+                      become a beginner at everything. You may carry judgment,
+                      leadership, problem solving, pattern recognition, or ways
+                      of working that still matter.
            ASSET FAMILY: NEW_V9_FS_02_WHY_THE_ADVICE_HELPS
-           STATES, IN REVEAL ORDER:
-               NEW_V9_FS_02_WHY_THE_ADVICE_HELPS.png
-           EXACT TRIGGER:
-               Transferable-skills advice can be helpful because it stops
-               experienced people from acting like their old experience
-               suddenly means nothing. You do not change fields and
-               become a beginner at everything. You may carry judgment,
-               leadership, problem solving, pattern recognition, or ways
-               of working that still matter.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V9_FS_02_WHY_THE_ADVICE_HELPS.png   paragraph 1
+                   on: Transferable-skills advice can be helpful because
+                   on: it stops experienced people from acting like their
+                   on: old experience suddenly means nothing. You do not
+                   on: change fields and become a beginner at everything.
+                   on: You may carry judgment, leadership, problem
+                   on: solving, pattern recognition, or ways of working
+                   on: that still matter.
+           RETURN: camera returns at the end of the paragraph
 
   PARA 2   MODE: CAMERA
            But if you stop there, you can also make the opposite mist...
 
 SECTION 5  THE FOUR QUESTIONS
 
-  PARA 1   MODE: CAMERA
-           I use four questions instead: What travels? What does not?
+  PARA 1   MODE: FULL SCREEN   [V9-T02]
+           SPANS PARAGRAPHS 1 TO 2
+           ON-SCREEN: TRUE FULL-SCREEN TEACHING | WHAT TRAVELS? /
+                      WHAT DOES NOT? / WHAT CAN I PROVE? / WHAT MUST
+                      I RELEARN?
+           ENTER ON: I use four questions instead: What travels? What does not?
+           LEAVE ON: That gives you a more honest picture of the move.
+           (the exit wording is in paragraph 2)
+           ASSET FAMILY: NEW_V9_FS_03_FOUR_QUESTIONS
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V9_FS_03_FOUR_QUESTIONS.png   paragraph 1
+                   on: I use four questions instead:
+               NEW_V9_FS_03A_WHAT_TRAVELS.png   paragraph 1
+                   on: What travels?
+               NEW_V9_FS_03B_WHAT_DOES_NOT.png   paragraph 1
+                   on: What does not?
+               NEW_V9_FS_03C_WHAT_CAN_I_PROVE.png   paragraph 2
+                   on: What can I prove?
+               NEW_V9_FS_03D_WHAT_MUST_I_RELEARN.png   paragraph 2
+                   on: What must I relearn?
+           SOUND: S2, one accent as the four establish
+           ACCENT WORD: I use four questions instead:
+           RETURN: camera returns at 1 | WHAT TRAVELS
+           NOTE: Two questions are spoken in paragraph 1 and two in
+                 paragraph 2. The last two are not revealed early.
+                 The same family also serves the hook, which is a
+                 separate event.
 
-  PARA 2   MODE: CAMERA
-           What can I prove? What must I relearn? That gives you a mo...
+  PARA 2   MODE: FULL SCREEN, held from V9-T02
+           The voice continues under it.
+           ACTIVATE HERE:
+               NEW_V9_FS_03C_WHAT_CAN_I_PROVE.png
+                   on: What can I prove?
+               NEW_V9_FS_03D_WHAT_MUST_I_RELEARN.png
+                   on: What must I relearn?
+           RETURN: camera returns at 1 | WHAT TRAVELS
 
 SECTION 6  1 | WHAT TRAVELS
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V9-C08]
+           ENTER ON: What travels is not just a list of soft skills. It is
+                      something you have already shown you can do, and the new
+                      place can actually use it.
+           LEAVE ON: What travels is not just a list of soft skills. It is
+                      something you have already shown you can do, and the new
+                      place can actually use it.
            ASSET FAMILY: NEW_V9_FS_04_DEMONSTRATED_NOT_CLAIMED
-           STATES, IN REVEAL ORDER:
-               NEW_V9_FS_04_DEMONSTRATED_NOT_CLAIMED.png
-           EXACT TRIGGER:
-               What travels is not just a list of soft skills. It is
-               something you have already shown you can do, and the new
-               place can actually use it.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V9_FS_04_DEMONSTRATED_NOT_CLAIMED.png   paragraph 1
+                   on: What travels is not just a list of soft skills. It
+                   on: is something you have already shown you can do,
+                   on: and the new place can actually use it.
+           RETURN: camera returns at the end of the paragraph
 
   PARA 2   MODE: CAMERA
            Maybe you have handled unclear problems. Maybe you have bu...
@@ -116,14 +172,20 @@ SECTION 6  1 | WHAT TRAVELS
 
 SECTION 7  2 | WHAT DOES NOT
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V9-C09]
+           ENTER ON: Then ask what belonged to the old place. Internal
+                      relationships. Company systems. The language everyone
+                      understood without explaining it.
+           LEAVE ON: Then ask what belonged to the old place. Internal
+                      relationships. Company systems. The language everyone
+                      understood without explaining it.
            ASSET FAMILY: NEW_V9_FS_05_TIED_TO_THE_OLD_CONTEXT
-           STATES, IN REVEAL ORDER:
-               NEW_V9_FS_05_TIED_TO_THE_OLD_CONTEXT.png
-           EXACT TRIGGER:
-               Then ask what belonged to the old place. Internal
-               relationships. Company systems. The language everyone
-               understood without explaining it.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V9_FS_05_TIED_TO_THE_OLD_CONTEXT.png   paragraph 1
+                   on: Then ask what belonged to the old place. Internal
+                   on: relationships. Company systems. The language
+                   on: everyone understood without explaining it.
+           RETURN: camera returns at the end of the paragraph
 
   PARA 2   MODE: CAMERA
            Informal power. Knowing exactly who to call. Knowing how t...
@@ -136,14 +198,21 @@ SECTION 8  3 | WHAT CAN I PROVE
   PARA 1   MODE: CAMERA
            Next ask: What can another person actually see? If you say...
 
-  PARA 2   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN   [V9-C10]
+           ENTER ON: What was wrong before? What did you decide? What changed?
+                      How do you know? Your experience becomes easier to carry
+                      when another person can understand and judge the evidence.
+           LEAVE ON: What was wrong before? What did you decide? What changed?
+                      How do you know? Your experience becomes easier to carry
+                      when another person can understand and judge the evidence.
            ASSET FAMILY: NEW_V9_FS_06_WHAT_CAN_ANOTHER_PERSON_SEE
-           STATES, IN REVEAL ORDER:
-               NEW_V9_FS_06_WHAT_CAN_ANOTHER_PERSON_SEE.png
-           EXACT TRIGGER:
-               What was wrong before? What did you decide? What changed?
-               How do you know? Your experience becomes easier to carry
-               when another person can understand and judge the evidence.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V9_FS_06_WHAT_CAN_ANOTHER_PERSON_SEE.png   paragraph 2
+                   on: What was wrong before? What did you decide? What
+                   on: changed? How do you know? Your experience becomes
+                   on: easier to carry when another person can understand
+                   on: and judge the evidence.
+           RETURN: camera returns at the end of the paragraph
 
 SECTION 9  4 | WHAT MUST I RELEARN
 
@@ -153,44 +222,60 @@ SECTION 9  4 | WHAT MUST I RELEARN
   PARA 2   MODE: CAMERA
            Regulation. Credentials. Industry knowledge. Customer know...
 
-  PARA 3   MODE: FULL SCREEN
+  PARA 3   MODE: FULL SCREEN   [V9-C11]
+           ENTER ON: Technical depth. Local relationships. A different way of
+                      operating.
+           LEAVE ON: Technical depth. Local relationships. A different way of
+                      operating.
            ASSET FAMILY: NEW_V9_FS_07_WHAT_THE_NEW_CONTEXT_REQUIRES
-           STATES, IN REVEAL ORDER:
-               NEW_V9_FS_07_WHAT_THE_NEW_CONTEXT_REQUIRES.png
-           EXACT TRIGGER:
-               Technical depth. Local relationships. A different way of
-               operating.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V9_FS_07_WHAT_THE_NEW_CONTEXT_REQUIRES.png   paragraph 3
+                   on: Technical depth. Local relationships. A different
+                   on: way of operating.
+           RETURN: camera returns at the end of the paragraph
 
   PARA 4   MODE: CAMERA
            Those gaps are not an insult to your experience. They are...
 
 SECTION 10  THINK OF IT LIKE SORTING
 
-  PARA 1   MODE: CAMERA
-           When I think about changing context, I do not picture a su...
-
-  PARA 2   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V9-T03]
+           SPANS PARAGRAPHS 1 TO 2
+           ON-SCREEN: TRUE FULL-SCREEN SORTING ILLUSTRATION | AS IT
+                      IS / NEEDS TRANSLATION / CONTEXT-BOUND / TO BE
+                      LEARNED
+           ENTER ON: When I think about changing context, I do not picture a
+                      suitcase where everything fits.
+           LEAVE ON: And some things have to be learned.
+           (the exit wording is in paragraph 2)
            ASSET FAMILY: NEW_V9_FS_08_SORTING
-           STATES, IN REVEAL ORDER:
-               NEW_V9_FS_08_SORTING.png
-           EXACT TRIGGER:
-               Some things come with you almost as they are. Some things
-               need to be explained in a new way. Some things only worked
-               because of where you were. And some things have to be
-               learned.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V9_FS_08_SORTING.png   paragraph 1
+                   on: I picture sorting.
+           SOUND: S3, one soft accent on the image
+           ACCENT WORD: I picture sorting.
+           RETURN: camera returns on 'That is why a transferable-skills list can be too simple.'
+
+  PARA 2   MODE: FULL SCREEN, held from V9-T03
+           The voice continues under it.
+           RETURN: camera returns on 'That is why a transferable-skills list can be too simple.'
 
   PARA 3   MODE: CAMERA
            That is why a transferable-skills list can be too simple....
 
 SECTION 11  TRY THE FOUR-COLUMN TEST
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V9-C12]
+           ENTER ON: Take one job you are thinking about. Make four columns:
+                      TRAVELS. DOES NOT TRAVEL. PROOF. RELEARN.
+           LEAVE ON: Take one job you are thinking about. Make four columns:
+                      TRAVELS. DOES NOT TRAVEL. PROOF. RELEARN.
            ASSET FAMILY: NEW_V9_FS_09_FOUR_COLUMNS
-           STATES, IN REVEAL ORDER:
-               NEW_V9_FS_09_FOUR_COLUMNS.png
-           EXACT TRIGGER:
-               Take one job you are thinking about. Make four columns:
-               TRAVELS. DOES NOT TRAVEL. PROOF. RELEARN.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V9_FS_09_FOUR_COLUMNS.png   paragraph 1
+                   on: Take one job you are thinking about. Make four
+                   on: columns: TRAVELS. DOES NOT TRAVEL. PROOF. RELEARN.
+           RETURN: camera returns at the end of the paragraph
 
   PARA 2   MODE: CAMERA
            Do not try to force everything into the first column. The...
@@ -203,14 +288,21 @@ SECTION 12  REAL LIMITS STILL MATTER
   PARA 1   MODE: CAMERA
            An employer may still prefer someone with direct experienc...
 
-  PARA 2   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN   [V9-C13]
+           ENTER ON: The market may be crowded. None of that disappears because
+                      you can explain your experience well. The point is to know
+                      exactly what you are asking the next employer to believe.
+           LEAVE ON: The market may be crowded. None of that disappears because
+                      you can explain your experience well. The point is to know
+                      exactly what you are asking the next employer to believe.
            ASSET FAMILY: NEW_V9_FS_10_BOUNDARY
-           STATES, IN REVEAL ORDER:
-               NEW_V9_FS_10_BOUNDARY.png
-           EXACT TRIGGER:
-               The market may be crowded. None of that disappears because
-               you can explain your experience well. The point is to know
-               exactly what you are asking the next employer to believe.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V9_FS_10_BOUNDARY.png   paragraph 2
+                   on: The market may be crowded. None of that disappears
+                   on: because you can explain your experience well. The
+                   on: point is to know exactly what you are asking the
+                   on: next employer to believe.
+           RETURN: camera returns at the end of the paragraph
 
 SECTION 13  WHY THIS CAN BE HARDER LATER IN YOUR CAREER
 
@@ -220,20 +312,38 @@ SECTION 13  WHY THIS CAN BE HARDER LATER IN YOUR CAREER
   PARA 2   MODE: CAMERA
            That is real expertise. But some of that expertise belongs...
 
-  PARA 3   MODE: FULL SCREEN
+  PARA 3   MODE: FULL SCREEN   [V9-C14]
+           ENTER ON: The capability may still be there. The shortcuts are not.
+           LEAVE ON: The capability may still be there. The shortcuts are not.
            ASSET FAMILY: NEW_V9_FS_11_FLUENCY_AND_PORTABILITY
-           STATES, IN REVEAL ORDER:
-               NEW_V9_FS_11_FLUENCY_AND_PORTABILITY.png
-           EXACT TRIGGER:
-               The capability may still be there. The shortcuts are not.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V9_FS_11_FLUENCY_AND_PORTABILITY.png   paragraph 3
+                   on: The capability may still be there. The shortcuts
+                   on: are not.
+           RETURN: camera returns at the end of the paragraph
 
 SECTION 14  HOW TO TALK ABOUT THE GAP
 
   PARA 1   MODE: CAMERA
            If someone asks why your experience should count in a new...
 
-  PARA 2   MODE: CAMERA
-           Try something more honest: “The part of my experience that...
+  PARA 2   MODE: FULL SCREEN   [V9-T04]
+           ON-SCREEN: TRUE FULL-SCREEN CONVERSATION | USEFUL
+                      EXPERIENCE: X / USED TO SOLVE: Y / NEED TO
+                      BUILD: Z
+           ENTER ON: Try something more honest:
+           LEAVE ON: The part I would need to build in your environment is Z.
+           ASSET FAMILY: NEW_V9_FS_13_X_Y_Z
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V9_FS_13_X_Y_Z.png   paragraph 2
+                   on: The part of my experience that is most useful here
+                   on: is X.
+           SOUND: S4, one quiet accent as the sentence appears
+           ACCENT WORD: The part of my experience that is most useful here is X.
+           RETURN: camera returns on 'That makes the transfer clear.'
+           NOTE: The brief asks for this treatment and no delivered
+                 state carried the sentence, so one was built from
+                 the spoken words.
 
   PARA 3   MODE: CAMERA
            That makes the transfer clear. And it shows that you under...
@@ -253,13 +363,17 @@ SECTION 17  CLOSE
   PARA 1   MODE: CAMERA
            So yes, ask what transfers. Just do not stop there.
 
-  PARA 2   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN   [V9-C15]
+           ENTER ON: Ask: What travels? What does not? What can I prove? What
+                      must I relearn?
+           LEAVE ON: Ask: What travels? What does not? What can I prove? What
+                      must I relearn?
            ASSET FAMILY: NEW_V9_FS_12_THE_AUDIT_AGAIN
-           STATES, IN REVEAL ORDER:
-               NEW_V9_FS_12_THE_AUDIT_AGAIN.png
-           EXACT TRIGGER:
-               Ask: What travels? What does not? What can I prove? What
-               must I relearn?
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V9_FS_12_THE_AUDIT_AGAIN.png   paragraph 2
+                   on: Ask: What travels? What does not? What can I
+                   on: prove? What must I relearn?
+           RETURN: camera returns at the end of the paragraph
 
   PARA 3   MODE: CAMERA
            That is how you change context without pretending you are...
@@ -271,14 +385,20 @@ SECTION 18  CONFIDENCE / VIEWER OUTCOME
 
 SECTION 19  WATCH NEXT
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V9-C16]
+           ENTER ON: And if you are trying to move into a different industry,
+                      watch “Which Parts of Your Experience Actually Transfer to
+                      Another Industry?” next.
+           LEAVE ON: And if you are trying to move into a different industry,
+                      watch “Which Parts of Your Experience Actually Transfer to
+                      Another Industry?” next.
            ASSET FAMILY: NEW_V9_WATCH_NEXT
-           STATES, IN REVEAL ORDER:
-               NEW_V9_WATCH_NEXT.png
-           EXACT TRIGGER:
-               And if you are trying to move into a different industry,
-               watch “Which Parts of Your Experience Actually Transfer to
-               Another Industry?” next.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V9_WATCH_NEXT.png   paragraph 1
+                   on: And if you are trying to move into a different
+                   on: industry, watch “Which Parts of Your Experience
+                   on: Actually Transfer to Another Industry?” next.
+           RETURN: camera returns at the end of the paragraph
 
 ------------------------------------------------------------------------------
 

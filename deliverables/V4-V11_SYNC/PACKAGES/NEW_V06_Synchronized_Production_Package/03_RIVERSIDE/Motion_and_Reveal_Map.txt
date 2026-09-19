@@ -5,181 +5,335 @@ NEW PUBLIC V6  |  MOTION AND REVEAL MAP
 Decode a Job Description in 10 Minutes
 
 One active idea at a time. Establish the whole structure, then
-activate one component. Gentle push-ins and occasional
-pull-backs only. No constant zooming, pulsing or effects.
-Preserve meaningful pauses.
+activate one component on the words that name it. Gentle
+push-ins and occasional pull-backs only. No constant zooming,
+pulsing or effects. Preserve meaningful pauses.
+
+A state is never activated before its words are spoken, even
+when it belongs to a family that established earlier.
 
 ------------------------------------------------------------------------------
 
-NEW_V6_FS_01_TITLE_ONLY
-  SECTION 1, PARAGRAPH 1
+NEW_V6_FS_01_TITLE_ONLY   [V6-O02]
+  SECTION 1 HOOK
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V6_FS_01_TITLE_ONLY.png
+      1. NEW_V6_FS_01_TITLE_ONLY.png   paragraph 1
+             on: Senior Divisional Strategy Consultant, Governance.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   holds into the next paragraph
 
-NEW_V6_FS_02_THE_CONTRADICTION
-  SECTION 1, PARAGRAPH 2
+NEW_V6_FS_02_THE_CONTRADICTION   [V6-O03]
+  SECTION 1 HOOK
+  PARAGRAPH 2
   REVEAL ORDER:
-      1. NEW_V6_FS_02A_FLOOR.png
-      2. NEW_V6_FS_02B_FEEDBACK.png
+      1. NEW_V6_FS_02A_FLOOR.png   paragraph 2
+             on: But when I read the actual posting, the bottom of
+             on: the pay range was $61,500
+      2. NEW_V6_FS_02B_FEEDBACK.png   paragraph 2
+             on: But when I read the actual posting, the bottom of
+             on: the pay range was $61,500
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns on 'But they tell you something important'
 
-NEW_V6_FS_05_PARP
-  SECTION 1, PARAGRAPH 4
+NEW_V6_FS_05_PARP   [V6-O05]
+  SECTION 1 HOOK
+  PARAGRAPH 4
   REVEAL ORDER:
-      1. NEW_V6_FS_05_PARP_FRAMEWORK.png
+      1. NEW_V6_FS_05_PARP_FRAMEWORK.png   paragraph 4
+             on: the four things I would read before deciding whether
+             on: a job is actually a fit for your experience
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at STORY LOOP
 
-NEW_V6_FS_03_THE_SAMPLE
-  SECTION 3, PARAGRAPH 1
+NEW_V6_FS_03_THE_SAMPLE   [V6-C10]
+  SECTION 3 THE FOUR THINGS I READ
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V6_FS_03_THE_SAMPLE.png
+      1. NEW_V6_FS_03_THE_SAMPLE.png   paragraph 1
+             on: I reviewed 15 job postings from 11 employers for
+             on: this research. When I read a job description, I look
+             on: for four things: PROBLEM. AUTHORITY. PROOF. REAL
+             on: GAP.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V6_FS_04_THREE_QUESTIONS
-  SECTION 3, PARAGRAPH 2
+NEW_V6_FS_04_THREE_QUESTIONS   [V6-C11]
+  SECTION 3 THE FOUR THINGS I READ
+  PARAGRAPH 2
   REVEAL ORDER:
-      1. NEW_V6_FS_04A_COULD_I_DO_IT.png
-      2. NEW_V6_FS_04B_CAN_I_PROVE_IT.png
-      3. NEW_V6_FS_04C_DO_I_MEET_THE_GATES.png
+      1. NEW_V6_FS_04A_COULD_I_DO_IT.png   paragraph 2
+             on: Those four things help you answer three different
+             on: questions: Could I do this work? Can I prove that I
+             on: have done something close to it? Do I meet the real
+             on: requirements? Those are not the same question.
+      2. NEW_V6_FS_04B_CAN_I_PROVE_IT.png   paragraph 2
+             on: Those four things help you answer three different
+             on: questions: Could I do this work? Can I prove that I
+             on: have done something close to it? Do I meet the real
+             on: requirements? Those are not the same question.
+      3. NEW_V6_FS_04C_DO_I_MEET_THE_GATES.png   paragraph 2
+             on: Those four things help you answer three different
+             on: questions: Could I do this work? Can I prove that I
+             on: have done something close to it? Do I meet the real
+             on: requirements? Those are not the same question.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V6_FS_06_POSTING_WALKTHROUGH
-  SECTION 4, PARAGRAPH 2
+NEW_V6_FS_06_POSTING_WALKTHROUGH   [V6-T01A]
+  SECTION 4 1 | PROBLEM
+  PARAGRAPH 2
   REVEAL ORDER:
-      1. NEW_V6_FS_06A_PROBLEM.png
-      2. NEW_V6_FS_06B_AUTHORITY.png
-      3. NEW_V6_FS_06C_PROOF.png
+      1. NEW_V6_FS_06A_PROBLEM.png   paragraph 2
+             on: The team needed a better way to review
+             on: opportunities, track them, and report on them.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at 2 | AUTHORITY
 
-NEW_V6_FS_08_READ_THE_VERBS
-  SECTION 5, PARAGRAPH 1
+NEW_V6_FS_08_READ_THE_VERBS   [V6-C12]
+  SECTION 5 2 | AUTHORITY
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V6_FS_08_READ_THE_VERBS.png
+      1. NEW_V6_FS_08_READ_THE_VERBS.png   paragraph 1
+             on: Next, look at the verbs. Does the person decide?
+             on: Lead? Negotiate? Recommend? Influence? Support?
+             on: Execute?
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V6_FS_09_PREDEFINED_DECISIONS
-  SECTION 5, PARAGRAPH 3
+NEW_V6_FS_06_POSTING_WALKTHROUGH   [V6-T01B]
+  SECTION 5 2 | AUTHORITY
+  PARAGRAPH 2
   REVEAL ORDER:
-      1. NEW_V6_FS_09A_SAME_COMPANY.png
-      2. NEW_V6_FS_09B_PREDEFINED.png
+      1. NEW_V6_FS_06B_AUTHORITY.png   paragraph 2
+             on: Supporting the development of strategy is not the
+             on: same as setting the strategy.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns on 'I found another role called Director of Enterprise Resilience'
 
-NEW_V6_FS_17_REAL_GAP
-  SECTION 7, PARAGRAPH 2
+NEW_V6_FS_09_PREDEFINED_DECISIONS   [V6-C13]
+  SECTION 5 2 | AUTHORITY
+  PARAGRAPH 3
   REVEAL ORDER:
-      1. NEW_V6_FS_17A_GEOGRAPHIC.png
-      2. NEW_V6_FS_17B_TIME_ZONE.png
+      1. NEW_V6_FS_09A_SAME_COMPANY.png   paragraph 3
+             on: I found another role called Director of Enterprise
+             on: Resilience. The pay range went to just under
+             on: $248,000. The posting said the person would work
+             on: with leaders to make quick decisions based on
+             on: decisions that had already been set ahead of time.
+      2. NEW_V6_FS_09B_PREDEFINED.png   paragraph 3
+             on: I found another role called Director of Enterprise
+             on: Resilience. The pay range went to just under
+             on: $248,000. The posting said the person would work
+             on: with leaders to make quick decisions based on
+             on: decisions that had already been set ahead of time.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V6_FS_10_DIRECTOR_COMPARE
-  SECTION 8, PARAGRAPH 2   (1 of 2 in this paragraph)
+NEW_V6_FS_06_POSTING_WALKTHROUGH   [V6-T01C]
+  SECTION 6 3 | PROOF
+  PARAGRAPH 2
   REVEAL ORDER:
-      1. NEW_V6_FS_10A_SAME_WORD.png
-      2. NEW_V6_FS_10B_SCOPE.png
+      1. NEW_V6_FS_06C_PROOF.png   paragraph 2
+             on: business analytics, and even Microsoft Access
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns on 'Now compare the posting with your real work.'
 
-NEW_V6_FS_12_TITLE_TEST
-  SECTION 8, PARAGRAPH 2   (2 of 2 in this paragraph)
+NEW_V6_FS_17_REAL_GAP   [V6-T02]
+  SECTION 7 4 | REAL GAP
+  PARAGRAPHS 2 TO 3
   REVEAL ORDER:
-      1. NEW_V6_FS_12A_SAME_WORD.png
-      2. NEW_V6_FS_12B_DIFFERENT_WORK.png
-      3. NEW_V6_FS_12C_DIFFERENT_AUTHORITY.png
-      4. NEW_V6_FS_12D_DIFFERENT_CONTEXT.png
+      1. NEW_V6_FS_17A_GEOGRAPHIC.png   paragraph 2
+             on: people whose recruiting experience was only in one
+             on: geographic setting were unlikely to be a strong fit
+      2. NEW_V6_FS_17B_TIME_ZONE.png   paragraph 3
+             on: at least three hours of overlap with East Africa
+             on: Time.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns on 'You can be able to do the work'
 
-NEW_V6_FS_13_ACRONYM_WALL
-  SECTION 9, PARAGRAPH 1
+NEW_V6_FS_10_DIRECTOR_COMPARE   [V6-C14]
+  SECTION 8 WHY TITLES CAN MISLEAD YOU
+  PARAGRAPH 2
   REVEAL ORDER:
-      1. NEW_V6_FS_13A_UNFAMILIAR_TITLE.png
-      2. NEW_V6_FS_13B_ACRONYM_WALL.png
+      1. NEW_V6_FS_10A_SAME_WORD.png   paragraph 2
+             on: One role focused much more on running the work
+      2. NEW_V6_FS_10B_SCOPE.png   paragraph 2
+             on: One role focused much more on running the work
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V6_FS_14_AUTHORITY_POSTURES
-  SECTION 9, PARAGRAPH 2   (1 of 2 in this paragraph)
+NEW_V6_FS_12_TITLE_TEST   [V6-C15]
+  SECTION 8 WHY TITLES CAN MISLEAD YOU
+  PARAGRAPH 2
   REVEAL ORDER:
-      1. NEW_V6_FS_14_AUTHORITY_POSTURES.png
-      2. NEW_V6_FS_14A_LEADS.png
-      3. NEW_V6_FS_14B_ADVISES.png
-      4. NEW_V6_FS_14C_COORDINATES.png
-      5. NEW_V6_FS_14D_SUBJECT_MATTER_EXPERT.png
+      1. NEW_V6_FS_12A_SAME_WORD.png   paragraph 2
+             on: Same broad title level.
+      2. NEW_V6_FS_12B_DIFFERENT_WORK.png   paragraph 2
+             on: Same broad title level.
+      3. NEW_V6_FS_12C_DIFFERENT_AUTHORITY.png   paragraph 2
+             on: Same broad title level.
+      4. NEW_V6_FS_12D_DIFFERENT_CONTEXT.png   paragraph 2
+             on: Same broad title level.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V6_FS_15_CEILING
-  SECTION 9, PARAGRAPH 2   (2 of 2 in this paragraph)
+NEW_V6_FS_13_ACRONYM_WALL   [V6-C16]
+  SECTION 9 THE REVERSE CAN HAPPEN TOO
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V6_FS_15A_RANGE.png
-      2. NEW_V6_FS_15B_IN_THE_SAMPLE.png
+      1. NEW_V6_FS_13A_UNFAMILIAR_TITLE.png   paragraph 1
+             on: Sometimes a title sounds smaller or stranger than
+             on: the work really is. One posting was called Member of
+             on: Technical Staff, Governance Risk Compliance. The
+             on: title does not tell you much.
+      2. NEW_V6_FS_13B_ACRONYM_WALL.png   paragraph 1
+             on: Sometimes a title sounds smaller or stranger than
+             on: the work really is. One posting was called Member of
+             on: Technical Staff, Governance Risk Compliance. The
+             on: title does not tell you much.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V6_FS_16_READ_THE_WORK
-  SECTION 9, PARAGRAPH 3
+NEW_V6_FS_14_AUTHORITY_POSTURES   [V6-C17]
+  SECTION 9 THE REVERSE CAN HAPPEN TOO
+  PARAGRAPH 2
   REVEAL ORDER:
-      1. NEW_V6_FS_16_READ_THE_WORK.png
+      1. NEW_V6_FS_14_AUTHORITY_POSTURES.png   paragraph 2
+             on: But the work included leading federal authorization
+             on: work
+      2. NEW_V6_FS_14A_LEADS.png   paragraph 2
+             on: But the work included leading federal authorization
+             on: work
+      3. NEW_V6_FS_14B_ADVISES.png   paragraph 2
+             on: But the work included leading federal authorization
+             on: work
+      4. NEW_V6_FS_14C_COORDINATES.png   paragraph 2
+             on: But the work included leading federal authorization
+             on: work
+      5. NEW_V6_FS_14D_SUBJECT_MATTER_EXPERT.png   paragraph 2
+             on: But the work included leading federal authorization
+             on: work
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V6_FS_18_WHAT_IT_WILL_NOT_DO
-  SECTION 10, PARAGRAPH 1
+NEW_V6_FS_15_CEILING   [V6-C18]
+  SECTION 9 THE REVERSE CAN HAPPEN TOO
+  PARAGRAPH 2
   REVEAL ORDER:
-      1. NEW_V6_FS_18_WHAT_IT_WILL_NOT_DO.png
+      1. NEW_V6_FS_15A_RANGE.png   paragraph 2
+             on: The published pay range went from $180,000 to
+             on: $440,000.
+      2. NEW_V6_FS_15B_IN_THE_SAMPLE.png   paragraph 2
+             on: The published pay range went from $180,000 to
+             on: $440,000.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V6_FS_20_CTA
-  SECTION 11, PARAGRAPH 1
+NEW_V6_FS_16_READ_THE_WORK   [V6-C19]
+  SECTION 9 THE REVERSE CAN HAPPEN TOO
+  PARAGRAPH 3
   REVEAL ORDER:
-      1. NEW_V6_FS_20A_WRITE_FOUR_LINES.png
-      2. NEW_V6_FS_20B_STRONGEST_VERB.png
+      1. NEW_V6_FS_16_READ_THE_WORK.png   paragraph 3
+             on: So if a title confuses you, do not automatically
+             on: skip the job. Read the work.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V6_FS_19_FOUR_THINGS
-  SECTION 12, PARAGRAPH 1
+NEW_V6_FS_18_WHAT_IT_WILL_NOT_DO   [V6-C20]
+  SECTION 10 WHAT THIS METHOD CANNOT TELL YOU
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V6_FS_19_FOUR_THINGS.png
+      1. NEW_V6_FS_18_WHAT_IT_WILL_NOT_DO.png   paragraph 1
+             on: This method will not tell you who will get hired. It
+             on: cannot tell you whether the authority on paper is
+             on: the authority the person will really have. It cannot
+             on: tell you whether a manager will bend a requirement,
+             on: whether bias will affect the decision, or whether
+             on: the team culture is good.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V6_WATCH_NEXT
-  SECTION 16, PARAGRAPH 1
+NEW_V6_FS_20_CTA   [V6-C21]
+  SECTION 11 USE IT ON A REAL JOB
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V6_WATCH_NEXT.png
+      1. NEW_V6_FS_20A_WRITE_FOUR_LINES.png   paragraph 1
+             on: Take one job description you are actually thinking
+             on: about. Write four lines: Problem. Authority. Proof.
+             on: Real gap.
+      2. NEW_V6_FS_20B_STRONGEST_VERB.png   paragraph 1
+             on: Take one job description you are actually thinking
+             on: about. Write four lines: Problem. Authority. Proof.
+             on: Real gap.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
+
+NEW_V6_FS_19_FOUR_THINGS   [V6-C22]
+  SECTION 12 TAKEAWAY VALUE
+  PARAGRAPH 1
+  REVEAL ORDER:
+      1. NEW_V6_FS_19_FOUR_THINGS.png   paragraph 1
+             on: The win is not becoming perfect at reading job
+             on: descriptions. In ten minutes, name the problem,
+             on: authority, proof, and real gap. That is enough to
+             on: decide whether the role deserves a deeper look.
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+  RETURN:   camera returns at the end of the paragraph
+
+NEW_V6_WATCH_NEXT   [V6-C23]
+  SECTION 16 WATCH NEXT
+  PARAGRAPH 1
+  REVEAL ORDER:
+      1. NEW_V6_WATCH_NEXT.png   paragraph 1
+             on: Once you know how to read what the role really
+             on: requires, the next question is whether your own
+             on: experience gives you the proof for it. Watch “Turn
+             on: One Accomplishment Into Proof in 10 Minutes” next.
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+  RETURN:   camera returns at the end of the paragraph
 
 ------------------------------------------------------------------------------
 

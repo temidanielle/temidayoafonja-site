@@ -15,6 +15,7 @@ sys.path.append("/home/user/temidayoafonja-site/deliverables/"
                 "VIDEOS_22-23/build")
 import recon as R
 import packages as P
+import events as EV
 from qa23 import units, _flat
 
 STALE = re.compile(r"no portability|portability language remains|"
@@ -107,7 +108,11 @@ def main():
         st = [x for x in png if "Contact_Sheet" not in x]
         sh = [x for x in png if "Contact_Sheet" in x]
         tot += len(st)
-        ok = (sum(len(c["states"]) for c in P.cues(n)) == len(st)
+        # States come from the event list: one family can serve more
+        # than one event, so a per-family sum misses the states that
+        # belong to the second occurrence.
+        ok = (len({x["name"] for e in EV.events(n)
+                   for x in e["states"]}) == len(st)
               and len(sh) == 1)
         print("  V%-3d %3d states + %d contact sheet   %s"
               % (n, len(st), len(sh), "ok" if ok else "MISMATCH"))

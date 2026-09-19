@@ -5,110 +5,184 @@ NEW PUBLIC V4  |  MOTION AND REVEAL MAP
 AI Took the Task. Who Gets the Experience?
 
 One active idea at a time. Establish the whole structure, then
-activate one component. Gentle push-ins and occasional
-pull-backs only. No constant zooming, pulsing or effects.
-Preserve meaningful pauses.
+activate one component on the words that name it. Gentle
+push-ins and occasional pull-backs only. No constant zooming,
+pulsing or effects. Preserve meaningful pauses.
+
+A state is never activated before its words are spoken, even
+when it belongs to a family that established earlier.
 
 ------------------------------------------------------------------------------
 
-NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT
-  SECTION 1, PARAGRAPH 2
+NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT   [V4-O02]
+  SECTION 1 HOOK
+  PARAGRAPHS 1 TO 2
   REVEAL ORDER:
-      1. NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT.png
+      1. NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT.png   paragraph 1
+             on: But those hours were not always wasted.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns on 'So I think we are asking the wrong question'
 
-NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE
-  SECTION 1, PARAGRAPH 3
+NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE   [V4-O03]
+  SECTION 1 HOOK
+  PARAGRAPH 3
   REVEAL ORDER:
-      1. NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE.png
+      1. NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE.png   paragraph 3
+             on: If AI takes the task, who gets the experience that
+             on: used to come from doing it?
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns on 'Because we still need experienced people later'
 
-NEW_V4_FS_02_INEFFICIENT_AND_DEVELOPMENTAL
-  SECTION 4, PARAGRAPH 1
+NEW_V4_FS_02_INEFFICIENT_AND_DEVELOPMENTAL   [V4-C05]
+  SECTION 4 THE PROBLEM
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V4_FS_02_INEFFICIENT_AND_DEVELOPMENTAL.png
+      1. NEW_V4_FS_02_INEFFICIENT_AND_DEVELOPMENTAL.png   paragraph 1
+             on: We talk a lot about which tasks AI can do. I think
+             on: we also need to talk about what people used to learn
+             on: while doing those tasks. A task can be boring and
+             on: still teach you something. Doing the same kind of
+             on: work again and again helps you notice patterns.
+             on: Making mistakes helps you learn what to watch for.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V4_FS_04_THE_REAL_QUESTION
-  SECTION 5, PARAGRAPH 2
+NEW_V4_FS_04_THE_REAL_QUESTION   [V4-C06]
+  SECTION 5 THIS IS NOT AN ANTI-AI ARGUMENT
+  PARAGRAPH 2
   REVEAL ORDER:
-      1. NEW_V4_FS_04_THE_REAL_QUESTION.png
+      1. NEW_V4_FS_04_THE_REAL_QUESTION.png   paragraph 2
+             on: My question is not, “Should AI do the task?” My
+             on: question is: “If AI does the task, what replaces the
+             on: learning?”
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V4_FS_05_THREE_THINGS
-  SECTION 6, PARAGRAPH 1
+NEW_V4_FS_05_THREE_THINGS   [V4-C07]
+  SECTION 6 THREE THINGS TO WATCH
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V4_FS_05_THREE_THINGS.png
-      2. NEW_V4_FS_05A_EXPOSURE.png
-      3. NEW_V4_FS_05B_OWNERSHIP.png
-      4. NEW_V4_FS_05C_FEEDBACK.png
+      1. NEW_V4_FS_05_THREE_THINGS.png   paragraph 1
+             on: I would watch three things. First, exposure. Does
+             on: the person still see enough examples to learn the
+             on: pattern?
+      2. NEW_V4_FS_05A_EXPOSURE.png   paragraph 1
+             on: I would watch three things. First, exposure. Does
+             on: the person still see enough examples to learn the
+             on: pattern?
+      3. NEW_V4_FS_05B_OWNERSHIP.png   paragraph 1
+             on: I would watch three things. First, exposure. Does
+             on: the person still see enough examples to learn the
+             on: pattern?
+      4. NEW_V4_FS_05C_FEEDBACK.png   paragraph 1
+             on: I would watch three things. First, exposure. Does
+             on: the person still see enough examples to learn the
+             on: pattern?
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V4_FS_06_MOVED_OR_REMOVED
-  SECTION 7, PARAGRAPH 3
+NEW_V4_FS_06_MOVED_OR_REMOVED   [V4-T02]
+  SECTION 7 A SIMPLE EXAMPLE
+  PARAGRAPH 2
   REVEAL ORDER:
-      1. NEW_V4_FS_06_MOVED_OR_REMOVED.png
+      1. NEW_V4_FS_06_MOVED_OR_REMOVED.png   paragraph 2
+             on: test the assumptions, challenge the answer, and
+             on: explain the recommendation
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns on 'But if the job becomes: run the tool'
 
-NEW_V4_FS_07_WHAT_DID_IT_TEACH
-  SECTION 8, PARAGRAPH 1
+NEW_V4_FS_07_WHAT_DID_IT_TEACH   [V4-C08]
+  SECTION 8 IF YOU MANAGE PEOPLE
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V4_FS_07_WHAT_DID_IT_TEACH.png
+      1. NEW_V4_FS_07_WHAT_DID_IT_TEACH.png   paragraph 1
+             on: If you manage people, do not only ask, “What can we
+             on: automate?” Also ask, “What did this task used to
+             on: teach?” Then decide where that learning will happen
+             on: now.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V4_FS_08_STILL_PRACTICING
-  SECTION 9, PARAGRAPH 1
+NEW_V4_FS_08_STILL_PRACTICING   [V4-C09]
+  SECTION 9 IF YOU USE AI IN YOUR OWN WORK
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V4_FS_08_STILL_PRACTICING.png
+      1. NEW_V4_FS_08_STILL_PRACTICING.png   paragraph 1
+             on: Ask yourself: What am I still practicing? What am I
+             on: no longer practicing? What decisions are still mine?
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V4_FS_09_NOT_ONE_OUTCOME
-  SECTION 10, PARAGRAPH 1
+NEW_V4_FS_09_NOT_ONE_OUTCOME   [V4-C10]
+  SECTION 10 WHAT THIS CANNOT TELL US
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V4_FS_09_NOT_ONE_OUTCOME.png
+      1. NEW_V4_FS_09_NOT_ONE_OUTCOME.png   paragraph 1
+             on: Different jobs will have different answers. In some
+             on: jobs, AI may help people learn faster. In regulated
+             on: or high-risk work, people may still need hands-on
+             on: practice and human review. In other jobs, some tasks
+             on: may truly disappear.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V4_FS_10_THREE_COLUMNS
-  SECTION 12, PARAGRAPH 1
+NEW_V4_FS_10_THREE_COLUMNS   [V4-C11]
+  SECTION 12 TRY THIS ON ONE TASK
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V4_FS_10_THREE_COLUMNS.png
+      1. NEW_V4_FS_10_THREE_COLUMNS.png   paragraph 1
+             on: Pick one task AI now helps you do. Make three
+             on: columns: BEFORE AI. WITH AI. STILL MINE.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V4_FS_11_TASK_IS_NOT_THE_JOB
-  SECTION 15, PARAGRAPH 1
+NEW_V4_FS_11_TASK_IS_NOT_THE_JOB   [V4-C12]
+  SECTION 15 CLOSE
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V4_FS_11_TASK_IS_NOT_THE_JOB.png
+      1. NEW_V4_FS_11_TASK_IS_NOT_THE_JOB.png   paragraph 1
+             on: AI taking the task is not the same as AI taking the
+             on: job. But AI can take the part of the work where
+             on: people used to learn how to do the harder work
+             on: later.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V4_WATCH_NEXT
-  SECTION 17, PARAGRAPH 1
+NEW_V4_WATCH_NEXT   [V4-C13]
+  SECTION 17 WATCH NEXT
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V4_WATCH_NEXT.png
+      1. NEW_V4_WATCH_NEXT.png   paragraph 1
+             on: And if AI is already doing more of your work, the
+             on: next question is what part of the result you can
+             on: still honestly claim. Watch “How to Prove Your Value
+             on: When AI Does More of the Task” next.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
 ------------------------------------------------------------------------------
 

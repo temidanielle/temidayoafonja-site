@@ -325,11 +325,13 @@ EARLY = {
      note="The correction is hers, on camera. No pause icon over a 90-day "
           "calendar. The viewer must not hear 'do nothing.'"),
   _s(5, 0, 4, "FULL SCREEN", "It is to figure out three things",
-     "And what can I begin to prove here?",
-     "camera returns on 'I think about that as READ. TEST. PROVE.'",
+     "I think about that as READ. TEST. PROVE.", para_out=5,
+     ret="camera returns on 'And before the 90 days are over'",
      display="READ / TEST / PROVE",
      asset="NEW_V10_FS_01_READ_TEST_PROVE",
-     note="Establish the three, then activate one per spoken question."),
+     note="Establish the three, then activate one per spoken question. "
+          "The framework is named in the next paragraph, so the card is "
+          "held into it rather than cut before the words that name it."),
  ],
  11: [
   _s(1, 0, 0, "CAMERA", "You accepted one job.", "You accepted one job.",
@@ -369,11 +371,13 @@ EARLY = {
 }
 
 NEW_FAMILIES = {
- 7: ["NEW_V7_FS_00_TWO_CAPABLE_PEOPLE"],
+ 5: ["NEW_V5_FS_11_THE_REQUEST"],
+ 7: ["NEW_V7_FS_00_TWO_CAPABLE_PEOPLE", "NEW_V7_FS_14_A_CLEARER_TARGET"],
  8: ["NEW_V8_FS_00_ACCESS_UNAVAILABLE"],
- 9: ["NEW_V9_FS_00_MAY_TRAVEL"],
+ 9: ["NEW_V9_FS_00_MAY_TRAVEL", "NEW_V9_FS_13_X_Y_Z"],
  10: ["NEW_V10_FS_00_THE_PRESSURE", "NEW_V10_FS_00B_TWO_DEFAULTS"],
- 11: ["NEW_V11_FS_00_ACCEPTED_AND_DOING"],
+ 11: ["NEW_V11_FS_00_ACCEPTED_AND_DOING",
+      "NEW_V11_FS_00B_COST_AND_NEXT"],
 }
 
 NEW_STATES = {
@@ -385,6 +389,10 @@ NEW_STATES = {
  "NEW_V10_FS_00B_TWO_DEFAULTS": ["NEW_V10_FS_00B_FIX_TOO_SOON",
                                  "NEW_V10_FS_00C_STAY_TOO_QUIET"],
  "NEW_V11_FS_00_ACCEPTED_AND_DOING": ["NEW_V11_FS_00_ACCEPTED_AND_DOING"],
+ "NEW_V5_FS_11_THE_REQUEST": ["NEW_V5_FS_11_THE_REQUEST"],
+ "NEW_V7_FS_14_A_CLEARER_TARGET": ["NEW_V7_FS_14_A_CLEARER_TARGET"],
+ "NEW_V9_FS_13_X_Y_Z": ["NEW_V9_FS_13_X_Y_Z"],
+ "NEW_V11_FS_00B_COST_AND_NEXT": ["NEW_V11_FS_00B_COST_AND_NEXT"],
 }
 
 

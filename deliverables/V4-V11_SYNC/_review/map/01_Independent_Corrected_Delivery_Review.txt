@@ -1,0 +1,72 @@
+V4–V11 CORRECTED DELIVERY: INDEPENDENT OUTPUT REVIEW
+September 16, 2026
+
+VERSION REVIEWED
+Uploaded file: YouTube_NEW_PUBLIC_V4-V11_SYNCHRONIZED_2026-09-16 (1).zip
+SHA-256: 5814eecc318b9da8e577de7bfcf258cec648251e56efccc3dfa09982cf8e5478
+This review concerns the corrected 3:21 PM CT package, NOT the earlier 1:46 PM package or old file-search previews.
+
+SCOPE
+Read actual extracted documents, maps and Shorts. Independently checked hashes, script/recording-copy parity, intro passages, the V4 source difference, source locations, description bytes and PNG dimensions. Inspected selected actual PNGs, including the eight new opening states, the V6 four-things card and walkthrough states, and V11 cost/recap states. No final video, audio, live URL, runtime or retention analysis. Did not rerun Code's 175/221-test implementation, inspect every Word page visually, independently fact-check the research, or establish repository/archive preservation outside the supplied files.
+
+CONFIRMED
+- Outer sidecar matches. All eight nested package sidecars exist beside their ZIPs and match actual bytes.
+- Outer archive contains 46 entries: eight packages, eight sidecars, 24 individual documents and six shared documents.
+- All eight thought-block spoken streams match the delivered master exactly after whitespace normalization; wording, punctuation and order are unchanged by grouping.
+- Six approved intros match the recovery text exactly and occur once in their designated section. V6 and V8 have no introduction section.
+- Spoken counts: V4 1036; V5 966; V6 1096; V7 1170; V8 889; V9 1069; V10 1701; V11 1289.
+- Comparing actual prior and corrected masters, V4's first hook paragraph is the only spoken-body difference. It is the approved explicitly hypothetical opening. The former numerical-comparison hold is resolved.
+- All eight descriptions are byte-identical to the supplied original faith-descriptions ZIP.
+- PNG teaching/end-card counts: 15 / 11 / 37 / 20 / 18 / 18 / 39 / 27 = 185; all are 1920 x 1080. Contact sheets are excluded.
+- All 40 primary sound-scene triggers resolve to the printed section name, number and paragraph. V4's late question points to section 14; V10's evaluation reversal points to section 11. V4 OWNERSHIP and STILL MINE accent words are separately specified at the intended locations.
+- The named Shorts repairs are present: V11 S3 carries COMPENSATION and LIFE; V10 S1 supplies the silent alternative before 'either one'; V10 S2 supplies the moves preceding 'those moves'; V5 S1 delivers dependence/development rather than promising to unpack it.
+- Opening cutaways now have delivered states and executable step lists. This is real progress, not a request to rebuild them.
+
+REMAINING ACTION 1: V6 CARD COPY
+Actual file: NEW_V06_Synchronized_Production_Package/04_VISUAL_ASSETS/NEW_V6_FS_19_FOUR_THINGS.png, plus its SVG.
+It says 'A cleaner read on four things.' and lists WHAT MAY TRAVEL / WHAT MAY NOT / WHAT YOU CAN PROVE / WHAT YOU WOULD STILL NEED TO LEARN.
+Recommendation: retain the design and replace only the four sub-labels with PROBLEM / AUTHORITY / PROOF / REAL GAP, in that order. No script changes. Its TAKEAWAY VALUE placement may remain, once the quoted trigger and section title match that placement.
+
+REMAINING ACTION 2: MOVED LOCATIONS WITH STALE TEXT
+Five camera-map EXACT TRIGGER quotations do not match the stated current paragraph. Seven run-of-show section names do not match their updated numbers. All exact current/incorrect passages are in 03_Delivered_File_Conflicts.json.
+Examples:
+- V6 FS_08: section 5 / paragraph 1 is correctly the verbs paragraph, but its EXACT TRIGGER still quotes the later director comparison. The run of show calls it '5 WHY TITLES CAN MISLEAD YOU' instead of '5 2 | AUTHORITY'.
+- V6 FS_19: section 12 / paragraph 1 now points to TAKEAWAY VALUE, but quotes the earlier three-questions paragraph and names the earlier section in the run of show.
+- V8 FS_07: section 8 / paragraph 1 is the ten-minute habit, but quotes the old hook.
+- V8 FS_08: section 9 / paragraph 2 is the normal-career-habit passage, but still quotes the final Watch Next. The numerical placement was repaired; its printed text was not.
+- V9 FS_12: section 17 / paragraph 2 is the final four-question recap, but quotes the old hook.
+Do not move the good locations back to fit stale quotes. Regenerate quoted text and names from the resolved master positions.
+The camera map also truncates 36 opening entry/exit fields with ellipses. Full versions exist in the Riverside opening list; publish those same complete boundaries in the map.
+
+REMAINING ACTION 3: ONE SEQUENCE, INCLUDING CROSS-PARAGRAPH REVEALS
+The output still combines two incompatible instruction layers. Riverside explicitly says to follow the camera map and remain on camera for a paragraph marked CAMERA, but 17 teaching moments marked full-screen in that same prompt point to paragraphs marked only CAMERA. The CSV/JSON identifies all 17. They are instructions already in this delivery, not 17 new creative requests or a rebuild quota.
+Examples:
+- V5 section 8 / paragraph 3: full-screen specific development request in prompt, CAMERA in map.
+- V9 section 14 / paragraph 2: full-screen X/Y/Z conversation in prompt, CAMERA in map.
+- V11 section 12 / paragraph 1: full-screen working page 'one difference / one cost / one next action', CAMERA in map. The request for a cost/action state on the opening documents is not an asset-file reference.
+Resolve at the event/state level using current approved briefs. Reuse suitable assets. Create only a required missing state when existing files cannot deliver the stated treatment. Do not delete the useful outcome treatment merely to make the documents agree.
+
+CROSS-PARAGRAPH EXAMPLES
+V11 FS_06_FOUR_COST_LENSES: all five reveal states are assigned to section 7 / paragraph 1 (CAPABILITY, EVIDENCE); paragraph 2, which actually says COMPENSATION and LIFE, is explicitly CAMERA. This contradicts 'activate one lens per spoken line'. Hold/reveal the matching states across paragraphs 1–2, then return for paragraph 3's interpretation.
+V11 FS_09_THE_ROLE_DRIFT_READ: all five states sit under section 10 / paragraph 1 (EXPECTED, ACTUAL); paragraph 2 says COST and CHOICE but is CAMERA. Match each state's activation to those actual words and return at the interpretive sentence 'That is a role-drift read.'
+V6 FS_06_POSTING_WALKTHROUGH: PROBLEM, AUTHORITY and PROOF states all sit under section 4 / paragraph 2. Give the states their actual teaching occurrences: PROBLEM in section 4 / paragraph 2; AUTHORITY in section 5 / paragraph 2; PROOF in section 6 / paragraph 2. Do not march through later interpretations during the problem explanation.
+Audit other multi-state families for the same paragraph-container error. An asset can be reused at distinct approved teaching occurrences; a family ID is not necessarily one single continuous scene.
+
+SOUND CONSISTENCY NOTE
+Main sound-scene locations are now correct. Finish event consistency between the early list and the main list: e.g. V4 S1's early instruction specifies the word 'wasted', while the main list says no separate accent word; V11 S1's early cutaway is on the second sentence, while the main sound row treats the two-sentence passage as entry. These are the same events, not extra sounds. Use one record for visual entry and a separate exact accent word/occurrence.
+
+REMAINING ACTION 4: V11 SHORT 1 STILL ENDS WITH LABELS
+File: NEW_V11_Synchronized_Production_Package/05_SHORTS/Individual/NEW_V11_Short_1.docx (also combined bank).
+Its ONE ASK is only: 'I use four questions for that: EXPECTED. ACTUAL. COST. CHOICE.'
+This announces the framework without showing how to use it. A minimal source-only completion is to replace that ending with the existing TAKEAWAY VALUE passage:
+'Write EXPECTED and ACTUAL side by side. Name one real cost. Then choose one next action: clarify, negotiate, test for a defined period, or begin planning another option.'
+This is a proposed editorial selection from approved narration, not invented speech or a long-form change. Keep the recognition and legitimate-change qualifications. Update its own payoff visual and measured planning count. Do not add a subscription/sales ask.
+Other Shorts may legitimately put their primary action earlier in HOLD; do not rewrite them merely because ONE ASK is a misplaced editorial label. V5 S3 and V8 S3 already contain useful actions. Align labels or document the action instead of inventing new narration.
+
+REPORTING AND RELEASE
+WHAT_CHANGED_THIS_PASS currently reports 220/220 final checks, whereas the accompanying message reports 221/221. Reconcile to the actual run, not to a desired number. This small reporting item is separate from the substantive map defects.
+Keep existing Watch Next destinations. Availability/scheduling are not verified by this review. Do not infer that a missing destination can only be solved by simultaneous publication, substitute another video, or change public numbering. Keep scheduling an explicit release dependency.
+Final export/runtime, V6's ten-minute promise, audio, SRT/chapters and live URLs still require actual checks. Script readiness is not edit-map readiness, and neither proves release readiness or audience response.
+
+RECOMMENDED SCOPE
+Preserve the corrected long-form masters and all already-correct assets. Finish the V6 four-label update, source-resolved cue strings, one coherent shot/reveal timeline, the V11 S1 ending selection, and dependent reporting/hashes. No blanket rewrite or redesign.

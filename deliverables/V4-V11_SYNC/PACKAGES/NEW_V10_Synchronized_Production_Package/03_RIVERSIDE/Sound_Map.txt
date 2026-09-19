@@ -6,8 +6,12 @@ Your First 90 Days in a New Job: What Really Matters
 
 A stinger means a brief sound: a quiet click, a soft tap, paper
 movement or a restrained tonal accent. It is not a logo
-animation, a loud transition or a visual effect. A visual
-accent and a cutaway are separate choices.
+animation, a loud transition or a visual effect.
+
+Every row below is one event. Visual entry and the exact word
+the accent lands on are separate fields of that one event, not
+two sounds. Where an event names no accent word, the sound
+lands on the visual entry and nowhere else.
 
 Audition every cue under the actual recorded voice. Keep speech
 clear. No alarms, no loud whooshes, no compulsory music bed, no
@@ -16,63 +20,28 @@ carries the moment.
 
 ------------------------------------------------------------------------------
 
-THE FIVE ACCENTS
+EVERY SOUND EVENT, IN SPOKEN ORDER
 
-  S1
-      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
-          this pressure to prove they made the right decision.
+  V10-O02   OPENING
       LOCATION: section 1, HOOK, paragraph 2
-      THE SOUND ITSELF FALLS ON: the scene entry above.
-          The brief names no separate accent word.
-      TREATMENT: TRUE FULL-SCREEN QUESTION CARD | S1: brief sound sti...
+      VISUAL ENTERS ON:
+          And now you feel this pressure to prove they made the
+          right decision.
+      THE ACCENT LANDS ON: the visual entry above.
+          No separate accent word is specified for this event.
+      TREATMENT: S1, one subtle click
 
-  S2
-      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
-          I think about that as READ. TEST. PROVE.
-      LOCATION: section 1, HOOK, paragraph 6
-      THE SOUND ITSELF FALLS ON: the scene entry above.
-          The brief names no separate accent word.
-      TREATMENT: HOOK | S2
+  V10-T05   TEACHING
+      LOCATION: section 12, THE FIRST-90-DAYS READ, paragraph 1
+      VISUAL ENTERS ON:
+          So if I were building a first-90-days plan for an
+          experienced professional, I would keep it this simple.
+      THE ACCENT LANDS ON THIS EXACT WORD:
+          ROLE CHECK.
+      TREATMENT: S5, one accent as the fourth line is added
 
-  S3
-      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
-          What would you want to trust me with by the end of my
-          first 90 days
-      LOCATION: section 8, THE CONVERSATION I WOULD HAVE, paragraph 3
-      THE SOUND ITSELF FALLS ON: the scene entry above.
-          The brief names no separate accent word.
-      TREATMENT: THE CONVERSATION I WOULD HAVE | S3
-
-  S4
-      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
-          They are not the only ones evaluating.
-      LOCATION: section 11, THE REVERSAL | THEY ARE NOT THE ONLY ONES EVALUATING, paragraph 1
-          appears 2 times; this is the occurrence in THE
-          REVERSAL | THEY ARE NOT THE ONLY ONES EVALUATING,
-          which is the treatment this beat names
-      THE SOUND ITSELF FALLS ON: the scene entry above.
-          The brief names no separate accent word.
-      TREATMENT: THE REVERSAL | THEY ARE NOT THE ONLY ONES EVALUATING...
-
-  S5
-      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
-          ROLE CHECK. What have these 90 days taught me about the
-          job itself?
-      LOCATION: section 12, THE FIRST-90-DAYS READ, paragraph 2
-      THE SOUND ITSELF FALLS ON: the scene entry above.
-          The brief names no separate accent word.
-      TREATMENT: THE FIRST-90-DAYS READ | S5
-
-------------------------------------------------------------------------------
-
-EARLY-EDIT SOUND EVENTS
-
-  Section numbers below are the reconciled script's, the same
-  numbering the camera map uses.
-
-  STEP 2  S1, one subtle click
-      on: And now you feel this pressure to prove they made th...
-      section 1, paragraph 2
+  2 sound events in this video. Every one is a single event with
+  one visual entry and at most one accent word.
 
 ------------------------------------------------------------------------------
 

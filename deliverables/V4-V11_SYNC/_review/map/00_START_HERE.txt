@@ -1,0 +1,2 @@
+Review and scoped completion instructions for the corrected 5814eecc... delivery.
+Read 01, then follow 02. JSON and CSV contain exact file-level fixtures. This is not a replacement production package. Use the sources already in the current Code workspace.

@@ -11,40 +11,60 @@ meaningful B-roll are TRUE FULL SCREEN. The voice may continue
 under a full-screen image. Never keep Temidayo moving behind a
 teaching card.
 
+This map and the Riverside prompt are generated from one event
+list, so a paragraph cannot be camera here and full screen
+there. An event may begin and end inside a paragraph or run
+across several, and one asset family may serve more than one
+event at different points in the video.
+
 ------------------------------------------------------------------------------
 
 SECTION 1  HOOK
 
-  PARA 1   MODE: CAMERA   (early edit, step 1)
-           ON-SCREEN TEXT: WHO LEARNS NOW?
+  PARA 1   MODE: CAMERA   [V4-O01]
+           ON-SCREEN: WHO LEARNS NOW?
            ENTER ON: Imagine a task that takes someone hours.
-           LEAVE ON: That sounds like progress.  (paragraph 1)
-           SOUND: none
+           LEAVE ON: That sounds like progress.
+           ASSET: none. Camera, with any editorial text over it.
            RETURN: stays on camera
+           NOTE: The question enters over her face during the first
+                 sentence and clears. No benchmark, no figure, no
+                 timed comparison.
 
-  PARA 1   MODE: FULL SCREEN   (early edit, step 2)
-           ON-SCREEN TEXT: WHAT THE TASK TAUGHT
+  PARA 1   MODE: FULL SCREEN   [V4-O02]
+           SPANS PARAGRAPHS 1 TO 2
+           ON-SCREEN: WHAT THE TASK TAUGHT
            ENTER ON: But those hours were not always wasted.
-           LEAVE ON: Where they started noticing patterns.  (paragraph 2)
+           LEAVE ON: Where they started noticing patterns.
+           (the exit wording is in paragraph 2)
            ASSET FAMILY: NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT
-           STATES, IN REVEAL ORDER:
-               NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT.png
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT.png   paragraph 1
+                   on: But those hours were not always wasted.
            SOUND: S1, one brief stinger on 'wasted'
+           ACCENT WORD: none separately specified
+           RETURN: camera returns on 'So I think we are asking the wrong question'
+           NOTE: Rows arrive with the sentences that name them:
+                 repetition, fixing mistakes, seeing enough
+                 examples. Her voice continues.
+
+  PARA 2   MODE: FULL SCREEN, held from V4-O02
+           The voice continues under it.
            RETURN: camera returns on 'So I think we are asking the wrong question'
 
-  PARA 2   MODE: FULL SCREEN, still held from step 2
-           The voice continues under it. LEAVE ON: Where they started noticing patterns.
-           RETURN: camera returns on 'So I think we are asking the wrong question'
-
-  PARA 3   MODE: FULL SCREEN   (early edit, step 3)
-           ON-SCREEN TEXT: WHO GETS THE EXPERIENCE?
-           ENTER ON: If AI takes the task, who gets the experience...
-           LEAVE ON: who gets the experience that used to com...  (paragraph 3)
+  PARA 3   MODE: FULL SCREEN   [V4-O03]
+           ON-SCREEN: WHO GETS THE EXPERIENCE?
+           ENTER ON: If AI takes the task, who gets the experience that used to
+                      come from doing it?
+           LEAVE ON: who gets the experience that used to come from doing it?
            ASSET FAMILY: NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE
-           STATES, IN REVEAL ORDER:
-               NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE.png
-           SOUND: none
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE.png   paragraph 3
+                   on: If AI takes the task, who gets the experience that
+                   on: used to come from doing it?
            RETURN: camera returns on 'Because we still need experienced people later'
+           NOTE: Reveal the question once. The consequence is hers,
+                 on camera.
 
 SECTION 2  STORY LOOP
 
@@ -61,17 +81,30 @@ SECTION 3  INTRODUCTION   [restored intro]
 
 SECTION 4  THE PROBLEM
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V4-C05]
+           ENTER ON: We talk a lot about which tasks AI can do. I think we also
+                      need to talk about what people used to learn while doing
+                      those tasks. A task can be boring and still teach you
+                      something. Doing the same kind of work again and again
+                      helps you notice patterns. Making mistakes helps you learn
+                      what to watch for.
+           LEAVE ON: We talk a lot about which tasks AI can do. I think we also
+                      need to talk about what people used to learn while doing
+                      those tasks. A task can be boring and still teach you
+                      something. Doing the same kind of work again and again
+                      helps you notice patterns. Making mistakes helps you learn
+                      what to watch for.
            ASSET FAMILY: NEW_V4_FS_02_INEFFICIENT_AND_DEVELOPMENTAL
-           STATES, IN REVEAL ORDER:
-               NEW_V4_FS_02_INEFFICIENT_AND_DEVELOPMENTAL.png
-           EXACT TRIGGER:
-               We talk a lot about which tasks AI can do. I think we also
-               need to talk about what people used to learn while doing
-               those tasks. A task can be boring and still teach you
-               something. Doing the same kind of work again and again
-               helps you notice patterns. Making mistakes helps you learn
-               what to watch for.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V4_FS_02_INEFFICIENT_AND_DEVELOPMENTAL.png   paragraph 1
+                   on: We talk a lot about which tasks AI can do. I think
+                   on: we also need to talk about what people used to
+                   on: learn while doing those tasks. A task can be
+                   on: boring and still teach you something. Doing the
+                   on: same kind of work again and again helps you notice
+                   on: patterns. Making mistakes helps you learn what to
+                   on: watch for.
+           RETURN: camera returns at the end of the paragraph
 
   PARA 2   MODE: CAMERA
            So yes, AI may help a company move faster. But the company...
@@ -81,26 +114,45 @@ SECTION 5  THIS IS NOT AN ANTI-AI ARGUMENT
   PARA 1   MODE: CAMERA
            I am not saying we should keep pointless work just because...
 
-  PARA 2   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN   [V4-C06]
+           ENTER ON: My question is not, “Should AI do the task?” My question
+                      is: “If AI does the task, what replaces the learning?”
+           LEAVE ON: My question is not, “Should AI do the task?” My question
+                      is: “If AI does the task, what replaces the learning?”
            ASSET FAMILY: NEW_V4_FS_04_THE_REAL_QUESTION
-           STATES, IN REVEAL ORDER:
-               NEW_V4_FS_04_THE_REAL_QUESTION.png
-           EXACT TRIGGER:
-               My question is not, “Should AI do the task?” My question
-               is: “If AI does the task, what replaces the learning?”
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V4_FS_04_THE_REAL_QUESTION.png   paragraph 2
+                   on: My question is not, “Should AI do the task?” My
+                   on: question is: “If AI does the task, what replaces
+                   on: the learning?”
+           RETURN: camera returns at the end of the paragraph
 
 SECTION 6  THREE THINGS TO WATCH
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V4-C07]
+           ENTER ON: I would watch three things. First, exposure. Does the
+                      person still see enough examples to learn the pattern?
+           LEAVE ON: I would watch three things. First, exposure. Does the
+                      person still see enough examples to learn the pattern?
            ASSET FAMILY: NEW_V4_FS_05_THREE_THINGS
-           STATES, IN REVEAL ORDER:
-               NEW_V4_FS_05_THREE_THINGS.png
-               NEW_V4_FS_05A_EXPOSURE.png
-               NEW_V4_FS_05B_OWNERSHIP.png
-               NEW_V4_FS_05C_FEEDBACK.png
-           EXACT TRIGGER:
-               I would watch three things. First, exposure. Does the
-               person still see enough examples to learn the pattern?
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V4_FS_05_THREE_THINGS.png   paragraph 1
+                   on: I would watch three things. First, exposure. Does
+                   on: the person still see enough examples to learn the
+                   on: pattern?
+               NEW_V4_FS_05A_EXPOSURE.png   paragraph 1
+                   on: I would watch three things. First, exposure. Does
+                   on: the person still see enough examples to learn the
+                   on: pattern?
+               NEW_V4_FS_05B_OWNERSHIP.png   paragraph 1
+                   on: I would watch three things. First, exposure. Does
+                   on: the person still see enough examples to learn the
+                   on: pattern?
+               NEW_V4_FS_05C_FEEDBACK.png   paragraph 1
+                   on: I would watch three things. First, exposure. Does
+                   on: the person still see enough examples to learn the
+                   on: pattern?
+           RETURN: camera returns at the end of the paragraph
 
   PARA 2   MODE: CAMERA
            Second, ownership. Do they still have to make a real choic...
@@ -113,57 +165,87 @@ SECTION 7  A SIMPLE EXAMPLE
   PARA 1   MODE: CAMERA
            Think about a junior analyst who used to build a model fro...
 
-  PARA 2   MODE: CAMERA
-           Now imagine AI builds the first model. If the analyst stil...
-
-  PARA 3   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN   [V4-T02]
+           ON-SCREEN: TRUE FULL-SCREEN ILLUSTRATION | TEST
+                      ASSUMPTIONS / CHALLENGE THE ANSWER / EXPLAIN
+                      THE RECOMMENDATION
+           ENTER ON: Now imagine AI builds the first model.
+           LEAVE ON: the learning may have moved to a different part of the
+                      work.
            ASSET FAMILY: NEW_V4_FS_06_MOVED_OR_REMOVED
-           STATES, IN REVEAL ORDER:
-               NEW_V4_FS_06_MOVED_OR_REMOVED.png
-           EXACT TRIGGER:
-               But if the job becomes: run the tool, copy the answer,
-               send it upward, that is different. The person may become
-               faster without getting better at the judgment underneath
-               the task.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V4_FS_06_MOVED_OR_REMOVED.png   paragraph 2
+                   on: test the assumptions, challenge the answer, and
+                   on: explain the recommendation
+           SOUND: S3, one brief stinger as the card lands
+           ACCENT WORD: the learning may have moved
+           RETURN: camera returns on 'But if the job becomes: run the tool'
+           NOTE: The brief puts this illustration on the sentence
+                 that says the learning moved. That sentence is in
+                 paragraph 2, not 3.
+
+  PARA 3   MODE: CAMERA
+           But if the job becomes: run the tool, copy the answer, sen...
 
 SECTION 8  IF YOU MANAGE PEOPLE
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V4-C08]
+           ENTER ON: If you manage people, do not only ask, “What can we
+                      automate?” Also ask, “What did this task used to teach?”
+                      Then decide where that learning will happen now.
+           LEAVE ON: If you manage people, do not only ask, “What can we
+                      automate?” Also ask, “What did this task used to teach?”
+                      Then decide where that learning will happen now.
            ASSET FAMILY: NEW_V4_FS_07_WHAT_DID_IT_TEACH
-           STATES, IN REVEAL ORDER:
-               NEW_V4_FS_07_WHAT_DID_IT_TEACH.png
-           EXACT TRIGGER:
-               If you manage people, do not only ask, “What can we
-               automate?” Also ask, “What did this task used to teach?”
-               Then decide where that learning will happen now.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V4_FS_07_WHAT_DID_IT_TEACH.png   paragraph 1
+                   on: If you manage people, do not only ask, “What can
+                   on: we automate?” Also ask, “What did this task used
+                   on: to teach?” Then decide where that learning will
+                   on: happen now.
+           RETURN: camera returns at the end of the paragraph
 
   PARA 2   MODE: CAMERA
            Maybe the person reviews hard cases. Maybe they shadow som...
 
 SECTION 9  IF YOU USE AI IN YOUR OWN WORK
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V4-C09]
+           ENTER ON: Ask yourself: What am I still practicing? What am I no
+                      longer practicing? What decisions are still mine?
+           LEAVE ON: Ask yourself: What am I still practicing? What am I no
+                      longer practicing? What decisions are still mine?
            ASSET FAMILY: NEW_V4_FS_08_STILL_PRACTICING
-           STATES, IN REVEAL ORDER:
-               NEW_V4_FS_08_STILL_PRACTICING.png
-           EXACT TRIGGER:
-               Ask yourself: What am I still practicing? What am I no
-               longer practicing? What decisions are still mine?
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V4_FS_08_STILL_PRACTICING.png   paragraph 1
+                   on: Ask yourself: What am I still practicing? What am
+                   on: I no longer practicing? What decisions are still
+                   on: mine?
+           RETURN: camera returns at the end of the paragraph
 
   PARA 2   MODE: CAMERA
            What mistakes am I still learning from? And can I explain...
 
 SECTION 10  WHAT THIS CANNOT TELL US
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V4-C10]
+           ENTER ON: Different jobs will have different answers. In some jobs,
+                      AI may help people learn faster. In regulated or high-risk
+                      work, people may still need hands-on practice and human
+                      review. In other jobs, some tasks may truly disappear.
+           LEAVE ON: Different jobs will have different answers. In some jobs,
+                      AI may help people learn faster. In regulated or high-risk
+                      work, people may still need hands-on practice and human
+                      review. In other jobs, some tasks may truly disappear.
            ASSET FAMILY: NEW_V4_FS_09_NOT_ONE_OUTCOME
-           STATES, IN REVEAL ORDER:
-               NEW_V4_FS_09_NOT_ONE_OUTCOME.png
-           EXACT TRIGGER:
-               Different jobs will have different answers. In some jobs,
-               AI may help people learn faster. In regulated or high-risk
-               work, people may still need hands-on practice and human
-               review. In other jobs, some tasks may truly disappear.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V4_FS_09_NOT_ONE_OUTCOME.png   paragraph 1
+                   on: Different jobs will have different answers. In
+                   on: some jobs, AI may help people learn faster. In
+                   on: regulated or high-risk work, people may still need
+                   on: hands-on practice and human review. In other jobs,
+                   on: some tasks may truly disappear.
+           RETURN: camera returns at the end of the paragraph
 
   PARA 2   MODE: CAMERA
            I am not saying one outcome will happen everywhere. I am s...
@@ -178,13 +260,17 @@ SECTION 11  WHY THIS MATTERS LATER
 
 SECTION 12  TRY THIS ON ONE TASK
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V4-C11]
+           ENTER ON: Pick one task AI now helps you do. Make three columns:
+                      BEFORE AI. WITH AI. STILL MINE.
+           LEAVE ON: Pick one task AI now helps you do. Make three columns:
+                      BEFORE AI. WITH AI. STILL MINE.
            ASSET FAMILY: NEW_V4_FS_10_THREE_COLUMNS
-           STATES, IN REVEAL ORDER:
-               NEW_V4_FS_10_THREE_COLUMNS.png
-           EXACT TRIGGER:
-               Pick one task AI now helps you do. Make three columns:
-               BEFORE AI. WITH AI. STILL MINE.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V4_FS_10_THREE_COLUMNS.png   paragraph 1
+                   on: Pick one task AI now helps you do. Make three
+                   on: columns: BEFORE AI. WITH AI. STILL MINE.
+           RETURN: camera returns at the end of the paragraph
 
   PARA 2   MODE: CAMERA
            Before AI, what did you have to notice, decide, or create...
@@ -204,14 +290,21 @@ SECTION 14  STORY LOOP PAYOFF
 
 SECTION 15  CLOSE
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V4-C12]
+           ENTER ON: AI taking the task is not the same as AI taking the job.
+                      But AI can take the part of the work where people used to
+                      learn how to do the harder work later.
+           LEAVE ON: AI taking the task is not the same as AI taking the job.
+                      But AI can take the part of the work where people used to
+                      learn how to do the harder work later.
            ASSET FAMILY: NEW_V4_FS_11_TASK_IS_NOT_THE_JOB
-           STATES, IN REVEAL ORDER:
-               NEW_V4_FS_11_TASK_IS_NOT_THE_JOB.png
-           EXACT TRIGGER:
-               AI taking the task is not the same as AI taking the job.
-               But AI can take the part of the work where people used to
-               learn how to do the harder work later.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V4_FS_11_TASK_IS_NOT_THE_JOB.png   paragraph 1
+                   on: AI taking the task is not the same as AI taking
+                   on: the job. But AI can take the part of the work
+                   on: where people used to learn how to do the harder
+                   on: work later.
+           RETURN: camera returns at the end of the paragraph
 
   PARA 2   MODE: CAMERA
            So do not only ask, “Who does the task now?” Ask: “Who get...
@@ -223,15 +316,23 @@ SECTION 16  CONFIDENCE / VIEWER OUTCOME
 
 SECTION 17  WATCH NEXT
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V4-C13]
+           ENTER ON: And if AI is already doing more of your work, the next
+                      question is what part of the result you can still honestly
+                      claim. Watch “How to Prove Your Value When AI Does More of
+                      the Task” next.
+           LEAVE ON: And if AI is already doing more of your work, the next
+                      question is what part of the result you can still honestly
+                      claim. Watch “How to Prove Your Value When AI Does More of
+                      the Task” next.
            ASSET FAMILY: NEW_V4_WATCH_NEXT
-           STATES, IN REVEAL ORDER:
-               NEW_V4_WATCH_NEXT.png
-           EXACT TRIGGER:
-               And if AI is already doing more of your work, the next
-               question is what part of the result you can still honestly
-               claim. Watch “How to Prove Your Value When AI Does More of
-               the Task” next.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V4_WATCH_NEXT.png   paragraph 1
+                   on: And if AI is already doing more of your work, the
+                   on: next question is what part of the result you can
+                   on: still honestly claim. Watch “How to Prove Your
+                   on: Value When AI Does More of the Task” next.
+           RETURN: camera returns at the end of the paragraph
 
 ------------------------------------------------------------------------------
 

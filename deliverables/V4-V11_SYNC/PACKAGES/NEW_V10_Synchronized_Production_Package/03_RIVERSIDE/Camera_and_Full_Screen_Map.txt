@@ -11,72 +11,117 @@ meaningful B-roll are TRUE FULL SCREEN. The voice may continue
 under a full-screen image. Never keep Temidayo moving behind a
 teaching card.
 
+This map and the Riverside prompt are generated from one event
+list, so a paragraph cannot be camera here and full screen
+there. An event may begin and end inside a paragraph or run
+across several, and one asset family may serve more than one
+event at different points in the video.
+
 ------------------------------------------------------------------------------
 
 SECTION 1  HOOK
 
-  PARA 1   MODE: CAMERA   (early edit, step 1)
-           ON-SCREEN TEXT: FIRST 90 DAYS
+  PARA 1   MODE: CAMERA   [V10-O01]
+           ON-SCREEN: FIRST 90 DAYS
            ENTER ON: You finally got the job.
-           LEAVE ON: Maybe you changed industries.  (paragraph 1)
-           SOUND: none
+           LEAVE ON: Maybe you changed industries.
+           ASSET: none. Camera, with any editorial text over it.
            RETURN: stays on camera
+           NOTE: Her face and her line first. A short editorial
+                 label, not a welcome sequence.
 
-  PARA 2   MODE: FULL SCREEN   (early edit, step 2)
-           ON-SCREEN TEXT: PROVE THEY CHOSE WELL?
-           ENTER ON: And now you feel this pressure to prove they m...
-           LEAVE ON: That pressure can make you do exactly th...  (paragraph 2)
+  PARA 2   MODE: FULL SCREEN   [V10-O02]
+           ON-SCREEN: PROVE THEY CHOSE WELL?
+           ENTER ON: And now you feel this pressure to prove they made the
+                      right decision.
+           LEAVE ON: That pressure can make you do exactly the wrong thing.
            ASSET FAMILY: NEW_V10_FS_00_THE_PRESSURE
-           STATES, IN REVEAL ORDER:
-               NEW_V10_FS_00_THE_PRESSURE.png
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V10_FS_00_THE_PRESSURE.png   paragraph 2
+                   on: And now you feel this pressure to prove they made
+                   on: the right decision.
            SOUND: S1, one subtle click
+           ACCENT WORD: none separately specified
            RETURN: camera returns before the next paragraph
+           NOTE: Come back quickly so the pressure stays personal.
 
-  PARA 3   MODE: FULL SCREEN   (early edit, step 3)
-           ON-SCREEN TEXT: FIX TOO SOON / STAY TOO QUIET
-           ENTER ON: You start trying to fix things before you unde...
-           LEAVE ON: You stay quiet because you are afraid of...  (paragraph 3)
+  PARA 3   MODE: FULL SCREEN   [V10-O03]
+           ON-SCREEN: FIX TOO SOON / STAY TOO QUIET
+           ENTER ON: You start trying to fix things before you understand why
+                      they work this way.
+           LEAVE ON: You stay quiet because you are afraid of getting something
+                      wrong.
            ASSET FAMILY: NEW_V10_FS_00B_TWO_DEFAULTS
-           STATES, IN REVEAL ORDER:
-               NEW_V10_FS_00B_FIX_TOO_SOON.png
-               NEW_V10_FS_00C_STAY_TOO_QUIET.png
-           SOUND: none
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V10_FS_00B_FIX_TOO_SOON.png   paragraph 3
+                   on: You start trying to fix things before you
+                   on: understand why they work this way.
+               NEW_V10_FS_00C_STAY_TOO_QUIET.png   paragraph 3
+                   on: You start trying to fix things before you
+                   on: understand why they work this way.
            RETURN: camera returns on 'I do not think either one is the job of your first 90 days'
+           NOTE: One default active at a time, each with the
+                 sentence that names it. These are two incomplete
+                 defaults, not an instruction to stop contributing.
 
-  PARA 4   MODE: CAMERA   (early edit, step 4)
-           ON-SCREEN TEXT: CONTRIBUTE WHILE LEARNING THE CONTEXT
-           ENTER ON: I do not think either one is the job of your f...
-           LEAVE ON: Your first job is not to prove that ever...  (paragraph 4)
-           SOUND: none
+  PARA 4   MODE: CAMERA   [V10-O04]
+           ON-SCREEN: CONTRIBUTE WHILE LEARNING THE CONTEXT
+           ENTER ON: I do not think either one is the job of your first 90
+                      days.
+           LEAVE ON: Your first job is not to prove that everything you already
+                      know works here.
+           ASSET: none. Camera, with any editorial text over it.
            RETURN: stays on camera
+           NOTE: The correction is hers, on camera. No pause icon
+                 over a 90-day calendar. The viewer must not hear
+                 'do nothing.'
 
-  PARA 5   MODE: FULL SCREEN   (early edit, step 5)
-           ON-SCREEN TEXT: READ / TEST / PROVE
+  PARA 5   MODE: FULL SCREEN   [V10-O05]
+           SPANS PARAGRAPHS 5 TO 6
+           ON-SCREEN: READ / TEST / PROVE
            ENTER ON: It is to figure out three things
-           LEAVE ON: And what can I begin to prove here?  (paragraph 5)
+           LEAVE ON: I think about that as READ. TEST. PROVE.
+           (the exit wording is in paragraph 6)
            ASSET FAMILY: NEW_V10_FS_01_READ_TEST_PROVE
-           STATES, IN REVEAL ORDER:
-               NEW_V10_FS_01A_ESTABLISH.png
-               NEW_V10_FS_01B_READ.png
-               NEW_V10_FS_01C_TEST.png
-               NEW_V10_FS_01D_PROVE.png
-           SOUND: none
-           RETURN: camera returns on 'I think about that as READ. TEST. PROVE.'
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V10_FS_01A_ESTABLISH.png   paragraph 5
+                   on: It is to figure out three things
+               NEW_V10_FS_01B_READ.png   paragraph 5
+                   on: It is to figure out three things
+               NEW_V10_FS_01C_TEST.png   paragraph 5
+                   on: It is to figure out three things
+               NEW_V10_FS_01D_PROVE.png   paragraph 5
+                   on: It is to figure out three things
+           RETURN: camera returns on 'And before the 90 days are over'
+           NOTE: Establish the three, then activate one per spoken
+                 question. The framework is named in the next
+                 paragraph, so the card is held into it rather than
+                 cut before the words that name it.
 
-  PARA 6   MODE: CAMERA
-           I think about that as READ. TEST. PROVE. And before the 90...
+  PARA 6   MODE: FULL SCREEN, held from V10-O05
+           The voice continues under it.
+           RETURN: camera returns on 'And before the 90 days are over'
 
 SECTION 2  STORY LOOP
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V10-C09]
+           ENTER ON: There is a reversal I want you to remember: during your
+                      first 90 days, they are not the only ones evaluating. You
+                      are collecting evidence about the job too. We will come
+                      back to that after READ, TEST, and PROVE.
+           LEAVE ON: There is a reversal I want you to remember: during your
+                      first 90 days, they are not the only ones evaluating. You
+                      are collecting evidence about the job too. We will come
+                      back to that after READ, TEST, and PROVE.
            ASSET FAMILY: NEW_V10_FS_10_THE_REVERSAL
-           STATES, IN REVEAL ORDER:
-               NEW_V10_FS_10_THE_REVERSAL.png
-           EXACT TRIGGER:
-               There is a reversal I want you to remember: during your
-               first 90 days, they are not the only ones evaluating. You
-               are collecting evidence about the job too. We will come
-               back to that after READ, TEST, and PROVE.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V10_FS_10_THE_REVERSAL.png   paragraph 1
+                   on: There is a reversal I want you to remember: during
+                   on: your first 90 days, they are not the only ones
+                   on: evaluating. You are collecting evidence about the
+                   on: job too. We will come back to that after READ,
+                   on: TEST, and PROVE.
+           RETURN: camera returns at the end of the paragraph
 
 SECTION 3  INTRODUCTION   [restored intro]
 
@@ -97,17 +142,30 @@ SECTION 4  WHY THIS FEELS STRANGE WHEN YOU ARE EXPERIENCED
   PARA 2   MODE: CAMERA
            Then you walk into a new company and suddenly you do not k...
 
-  PARA 3   MODE: FULL SCREEN
+  PARA 3   MODE: FULL SCREEN   [V10-C10]
+           ENTER ON: You can be experienced and still be new to the context.
+                      Those two things can be true at the same time. That is why
+                      I would not spend the first 90 days trying to prove that
+                      everything you already know works here. I would spend them
+                      finding the boundary between what you brought with you and
+                      what this environment still has to teach you.
+           LEAVE ON: You can be experienced and still be new to the context.
+                      Those two things can be true at the same time. That is why
+                      I would not spend the first 90 days trying to prove that
+                      everything you already know works here. I would spend them
+                      finding the boundary between what you brought with you and
+                      what this environment still has to teach you.
            ASSET FAMILY: NEW_V10_FS_02_EXPERIENCED_BUT_NEW
-           STATES, IN REVEAL ORDER:
-               NEW_V10_FS_02_EXPERIENCED_BUT_NEW.png
-           EXACT TRIGGER:
-               You can be experienced and still be new to the context.
-               Those two things can be true at the same time. That is why
-               I would not spend the first 90 days trying to prove that
-               everything you already know works here. I would spend them
-               finding the boundary between what you brought with you and
-               what this environment still has to teach you.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V10_FS_02_EXPERIENCED_BUT_NEW.png   paragraph 3
+                   on: You can be experienced and still be new to the
+                   on: context. Those two things can be true at the same
+                   on: time. That is why I would not spend the first 90
+                   on: days trying to prove that everything you already
+                   on: know works here. I would spend them finding the
+                   on: boundary between what you brought with you and
+                   on: what this environment still has to teach you.
+           RETURN: camera returns at the end of the paragraph
 
 SECTION 5  1 | READ
 
@@ -120,47 +178,68 @@ SECTION 5  1 | READ
   PARA 3   MODE: CAMERA
            You do not know yet. That is where experience can get you...
 
-  PARA 4   MODE: FULL SCREEN   (1 of 2 in this paragraph)
-           ASSET FAMILY: NEW_V10_FS_03_READ_FOUR_THINGS
-           STATES, IN REVEAL ORDER:
-               NEW_V10_FS_03_ESTABLISH.png
-               NEW_V10_FS_03A_RESPONSIBLE.png
-               NEW_V10_FS_03B_DECISIONS.png
-               NEW_V10_FS_03C_SUCCESS.png
-               NEW_V10_FS_03D_UNWRITTEN.png
+  PARA 4   MODE: FULL SCREEN   [V10-C11]
            ENTER ON: During READ, pay attention to four things
-           LEAVE ON: what do people around me know that was never w...
-           The camera does not return here. The next card in this
-           paragraph takes over on its own entry words.
+           LEAVE ON: what do people around me know that was never written in
+                      the job description?
+           ASSET FAMILY: NEW_V10_FS_03_READ_FOUR_THINGS
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V10_FS_03_ESTABLISH.png   paragraph 4
+                   on: During READ, pay attention to four things
+               NEW_V10_FS_03A_RESPONSIBLE.png   paragraph 4
+                   on: During READ, pay attention to four things
+               NEW_V10_FS_03B_DECISIONS.png   paragraph 4
+                   on: During READ, pay attention to four things
+               NEW_V10_FS_03C_SUCCESS.png   paragraph 4
+                   on: During READ, pay attention to four things
+               NEW_V10_FS_03D_UNWRITTEN.png   paragraph 4
+                   on: During READ, pay attention to four things
+           RETURN: camera returns at the end of the paragraph
 
-  PARA 4   MODE: FULL SCREEN   (2 of 2 in this paragraph)
-           ASSET FAMILY: NEW_V10_FS_04_FORMAL_VS_REAL
-           STATES, IN REVEAL ORDER:
-               NEW_V10_FS_04_FORMAL_VS_REAL.png
+  PARA 4   MODE: FULL SCREEN   [V10-C12]
            ENTER ON: A job description can tell you the formal job.
-           LEAVE ON: The first few weeks start showing you the real...
-           The camera returns at the end of this paragraph.
+           LEAVE ON: The first few weeks start showing you the real one.
+           ASSET FAMILY: NEW_V10_FS_04_FORMAL_VS_REAL
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V10_FS_04_FORMAL_VS_REAL.png   paragraph 4
+                   on: A job description can tell you the formal job.
+           RETURN: camera returns at the end of the paragraph
 
 SECTION 6  WHAT READ DOES NOT MEAN
 
-  PARA 1   MODE: CAMERA
-           READ does not mean sit quietly for 30 days and contribute...
+  PARA 1   MODE: CAMERA   [V10-T02]
+           SPANS PARAGRAPHS 1 TO 2
+           ON-SCREEN: CAMERA | READ IS NOT STAY SILENT
+           ENTER ON: READ does not mean sit quietly for 30 days and contribute
+                      nothing.
+           LEAVE ON: The point is to understand enough context that your
+                      expertise lands in the right place.
+           (the exit wording is in paragraph 2)
+           ASSET: none. Camera, with any editorial text over it.
+           RETURN: the full-screen contrast follows in paragraph 3
+           NOTE: The brief's own heading is CAMERA, THEN BRIEF
+                 FULL-SCREEN CONTRAST. This is the camera half. The
+                 contrast is the next event, and the two are no
+                 longer printed as one instruction pointing at a
+                 camera paragraph.
 
-  PARA 2   MODE: CAMERA
-           The point is not to make yourself small. The point is to u...
+  PARA 2   MODE: CAMERA, held from V10-T02
+           The voice continues under it.
+           RETURN: the full-screen contrast follows in paragraph 3
 
-  PARA 3   MODE: FULL SCREEN
+  PARA 3   MODE: FULL SCREEN   [V10-T02B]
+           ON-SCREEN: TRUE FULL-SCREEN CONTRAST | ONE ASSUMES. ONE
+                      ASKS.
+           ENTER ON: There is a difference between saying, “At my old company,
+                      we did it this way,”
+           LEAVE ON: without assuming the room is the same.
            ASSET FAMILY: NEW_V10_FS_05_TWO_SENTENCES
-           STATES, IN REVEAL ORDER:
-               NEW_V10_FS_05A_BOTH.png
-               NEW_V10_FS_05B_SECOND.png
-           EXACT TRIGGER:
-               There is a difference between saying, “At my old company,
-               we did it this way,” and saying, “I have seen a similar
-               problem before. Can you help me understand what makes it
-               different here?” The second sentence brings your
-               experience into the room without assuming the room is the
-               same.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V10_FS_05A_BOTH.png   paragraph 3
+                   on: At my old company, we did it this way,
+               NEW_V10_FS_05B_SECOND.png   paragraph 3
+                   on: I have seen a similar problem before.
+           RETURN: camera returns at 2 | TEST
 
 SECTION 7  2 | TEST
 
@@ -181,28 +260,57 @@ SECTION 8  THE CONVERSATION I WOULD HAVE
   PARA 1   MODE: CAMERA
            Around this point, I would have a very simple conversation...
 
-  PARA 2   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN   [V10-C13]
+           ENTER ON: Ask something more useful: “What have you seen me pick up
+                      quickly?” “Where do I still need more context?” “Is there
+                      anything I am treating like my old environment that works
+                      differently here?”
+           LEAVE ON: Ask something more useful: “What have you seen me pick up
+                      quickly?” “Where do I still need more context?” “Is there
+                      anything I am treating like my old environment that works
+                      differently here?”
            ASSET FAMILY: NEW_V10_FS_06_MANAGER_CONVERSATION
-           STATES, IN REVEAL ORDER:
-               NEW_V10_FS_06_ESTABLISH.png
-               NEW_V10_FS_06A_PICK_UP.png
-               NEW_V10_FS_06B_CONTEXT.png
-               NEW_V10_FS_06C_OLD_ENVIRONMENT.png
-           EXACT TRIGGER:
-               Ask something more useful: “What have you seen me pick up
-               quickly?” “Where do I still need more context?” “Is there
-               anything I am treating like my old environment that works
-               differently here?”
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V10_FS_06_ESTABLISH.png   paragraph 2
+                   on: Ask something more useful: “What have you seen me
+                   on: pick up quickly?” “Where do I still need more
+                   on: context?” “Is there anything I am treating like my
+                   on: old environment that works differently here?”
+               NEW_V10_FS_06A_PICK_UP.png   paragraph 2
+                   on: Ask something more useful: “What have you seen me
+                   on: pick up quickly?” “Where do I still need more
+                   on: context?” “Is there anything I am treating like my
+                   on: old environment that works differently here?”
+               NEW_V10_FS_06B_CONTEXT.png   paragraph 2
+                   on: Ask something more useful: “What have you seen me
+                   on: pick up quickly?” “Where do I still need more
+                   on: context?” “Is there anything I am treating like my
+                   on: old environment that works differently here?”
+               NEW_V10_FS_06C_OLD_ENVIRONMENT.png   paragraph 2
+                   on: Ask something more useful: “What have you seen me
+                   on: pick up quickly?” “Where do I still need more
+                   on: context?” “Is there anything I am treating like my
+                   on: old environment that works differently here?”
+           RETURN: camera returns at the end of the paragraph
 
-  PARA 3   MODE: FULL SCREEN
+  PARA 3   MODE: FULL SCREEN   [V10-C14]
+           ENTER ON: And ask: “What would you want to trust me with by the end
+                      of my first 90 days that you would not have trusted me
+                      with on day one?” That question turns the first 90 days
+                      into development, not performance theater.
+           LEAVE ON: And ask: “What would you want to trust me with by the end
+                      of my first 90 days that you would not have trusted me
+                      with on day one?” That question turns the first 90 days
+                      into development, not performance theater.
            ASSET FAMILY: NEW_V10_FS_07_THE_DAY_90_QUESTION
-           STATES, IN REVEAL ORDER:
-               NEW_V10_FS_07_THE_DAY_90_QUESTION.png
-           EXACT TRIGGER:
-               And ask: “What would you want to trust me with by the end
-               of my first 90 days that you would not have trusted me
-               with on day one?” That question turns the first 90 days
-               into development, not performance theater.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V10_FS_07_THE_DAY_90_QUESTION.png   paragraph 3
+                   on: And ask: “What would you want to trust me with by
+                   on: the end of my first 90 days that you would not
+                   on: have trusted me with on day one?” That question
+                   on: turns the first 90 days into development, not
+                   on: performance theater.
+           RETURN: camera returns at the end of the paragraph
 
 SECTION 9  3 | PROVE
 
@@ -212,13 +320,18 @@ SECTION 9  3 | PROVE
   PARA 2   MODE: CAMERA
            Some work has a long learning curve. Some is regulated. So...
 
-  PARA 3   MODE: FULL SCREEN
+  PARA 3   MODE: FULL SCREEN   [V10-C15]
+           ENTER ON: So I would use a different question: What can I prove here
+                      by day 90 that I could not prove on day one?
+           LEAVE ON: So I would use a different question: What can I prove here
+                      by day 90 that I could not prove on day one?
            ASSET FAMILY: NEW_V10_FS_08_PROVE_QUESTION
-           STATES, IN REVEAL ORDER:
-               NEW_V10_FS_08_PROVE_QUESTION.png
-           EXACT TRIGGER:
-               So I would use a different question: What can I prove here
-               by day 90 that I could not prove on day one?
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V10_FS_08_PROVE_QUESTION.png   paragraph 3
+                   on: So I would use a different question: What can I
+                   on: prove here by day 90 that I could not prove on day
+                   on: one?
+           RETURN: camera returns at the end of the paragraph
 
   PARA 4   MODE: CAMERA
            Maybe you can prove that you understand the environment we...
@@ -228,83 +341,169 @@ SECTION 9  3 | PROVE
 
 SECTION 10  WHAT PROOF SHOULD SOUND LIKE
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V10-C16]
+           ENTER ON: By the end of the first 90 days, I would want you to be
+                      able to finish a few sentences. “I came in assuming X. I
+                      learned Y.” “The part of my previous experience that
+                      helped most was X.” “The part I had to relearn was Y.”
+           LEAVE ON: By the end of the first 90 days, I would want you to be
+                      able to finish a few sentences. “I came in assuming X. I
+                      learned Y.” “The part of my previous experience that
+                      helped most was X.” “The part I had to relearn was Y.”
            ASSET FAMILY: NEW_V10_FS_09_PROOF_SENTENCES
-           STATES, IN REVEAL ORDER:
-               NEW_V10_FS_09_ESTABLISH.png
-               NEW_V10_FS_09A_ASSUMING.png
-               NEW_V10_FS_09B_HELPED_MOST.png
-               NEW_V10_FS_09C_RELEARN.png
-           EXACT TRIGGER:
-               By the end of the first 90 days, I would want you to be
-               able to finish a few sentences. “I came in assuming X. I
-               learned Y.” “The part of my previous experience that
-               helped most was X.” “The part I had to relearn was Y.”
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V10_FS_09_ESTABLISH.png   paragraph 1
+                   on: By the end of the first 90 days, I would want you
+                   on: to be able to finish a few sentences. “I came in
+                   on: assuming X. I learned Y.” “The part of my previous
+                   on: experience that helped most was X.” “The part I
+                   on: had to relearn was Y.”
+               NEW_V10_FS_09A_ASSUMING.png   paragraph 1
+                   on: By the end of the first 90 days, I would want you
+                   on: to be able to finish a few sentences. “I came in
+                   on: assuming X. I learned Y.” “The part of my previous
+                   on: experience that helped most was X.” “The part I
+                   on: had to relearn was Y.”
+               NEW_V10_FS_09B_HELPED_MOST.png   paragraph 1
+                   on: By the end of the first 90 days, I would want you
+                   on: to be able to finish a few sentences. “I came in
+                   on: assuming X. I learned Y.” “The part of my previous
+                   on: experience that helped most was X.” “The part I
+                   on: had to relearn was Y.”
+               NEW_V10_FS_09C_RELEARN.png   paragraph 1
+                   on: By the end of the first 90 days, I would want you
+                   on: to be able to finish a few sentences. “I came in
+                   on: assuming X. I learned Y.” “The part of my previous
+                   on: experience that helped most was X.” “The part I
+                   on: had to relearn was Y.”
+           RETURN: camera returns at the end of the paragraph
 
   PARA 2   MODE: CAMERA
            “One decision I can now make with more confidence is X.” “...
 
 SECTION 11  THE REVERSAL | THEY ARE NOT THE ONLY ONES EVALUATING
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V10-C17]
+           ENTER ON: There is one more part of the first 90 days I want to add.
+                      They are not the only ones evaluating. You are collecting
+                      evidence too. Is this actually the job you accepted? Does
+                      the authority match what you were told? Are you getting
+                      access to the work you came here to do?
+           LEAVE ON: There is one more part of the first 90 days I want to add.
+                      They are not the only ones evaluating. You are collecting
+                      evidence too. Is this actually the job you accepted? Does
+                      the authority match what you were told? Are you getting
+                      access to the work you came here to do?
            ASSET FAMILY: NEW_V10_FS_11_YOUR_EVIDENCE
-           STATES, IN REVEAL ORDER:
-               NEW_V10_FS_11_ESTABLISH.png
-               NEW_V10_FS_11A_THE_JOB.png
-               NEW_V10_FS_11B_AUTHORITY.png
-               NEW_V10_FS_11C_ACCESS.png
-           EXACT TRIGGER:
-               There is one more part of the first 90 days I want to add.
-               They are not the only ones evaluating. You are collecting
-               evidence too. Is this actually the job you accepted? Does
-               the authority match what you were told? Are you getting
-               access to the work you came here to do?
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V10_FS_11_ESTABLISH.png   paragraph 1
+                   on: There is one more part of the first 90 days I want
+                   on: to add. They are not the only ones evaluating. You
+                   on: are collecting evidence too. Is this actually the
+                   on: job you accepted? Does the authority match what
+                   on: you were told? Are you getting access to the work
+                   on: you came here to do?
+               NEW_V10_FS_11A_THE_JOB.png   paragraph 1
+                   on: There is one more part of the first 90 days I want
+                   on: to add. They are not the only ones evaluating. You
+                   on: are collecting evidence too. Is this actually the
+                   on: job you accepted? Does the authority match what
+                   on: you were told? Are you getting access to the work
+                   on: you came here to do?
+               NEW_V10_FS_11B_AUTHORITY.png   paragraph 1
+                   on: There is one more part of the first 90 days I want
+                   on: to add. They are not the only ones evaluating. You
+                   on: are collecting evidence too. Is this actually the
+                   on: job you accepted? Does the authority match what
+                   on: you were told? Are you getting access to the work
+                   on: you came here to do?
+               NEW_V10_FS_11C_ACCESS.png   paragraph 1
+                   on: There is one more part of the first 90 days I want
+                   on: to add. They are not the only ones evaluating. You
+                   on: are collecting evidence too. Is this actually the
+                   on: job you accepted? Does the authority match what
+                   on: you were told? Are you getting access to the work
+                   on: you came here to do?
+           RETURN: camera returns at the end of the paragraph
 
   PARA 2   MODE: CAMERA
            Does your manager give you enough context to succeed? Are...
 
-  PARA 3   MODE: FULL SCREEN
+  PARA 3   MODE: FULL SCREEN   [V10-C18]
+           ENTER ON: That does not automatically mean leave. Roles change.
+                      Priorities change. Organizations have real constraints.
+                      But you should notice the difference.
+           LEAVE ON: That does not automatically mean leave. Roles change.
+                      Priorities change. Organizations have real constraints.
+                      But you should notice the difference.
            ASSET FAMILY: NEW_V10_FS_12_NOT_AUTOMATICALLY_LEAVE
-           STATES, IN REVEAL ORDER:
-               NEW_V10_FS_12_NOT_AUTOMATICALLY_LEAVE.png
-           EXACT TRIGGER:
-               That does not automatically mean leave. Roles change.
-               Priorities change. Organizations have real constraints.
-               But you should notice the difference.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V10_FS_12_NOT_AUTOMATICALLY_LEAVE.png   paragraph 3
+                   on: That does not automatically mean leave. Roles
+                   on: change. Priorities change. Organizations have real
+                   on: constraints. But you should notice the difference.
+           RETURN: camera returns at the end of the paragraph
 
   PARA 4   MODE: CAMERA
            Your first 90 days are not only evidence about you. They a...
 
 SECTION 12  THE FIRST-90-DAYS READ
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V10-T05]
+           SPANS PARAGRAPHS 1 TO 2
+           ON-SCREEN: TRUE FULL-SCREEN WORKING PAGE | READ / TEST /
+                      PROVE / ROLE CHECK
+           ENTER ON: So if I were building a first-90-days plan for an
+                      experienced professional, I would keep it this simple.
+           LEAVE ON: What have these 90 days taught me about the job itself?
+           (the exit wording is in paragraph 2)
            ASSET FAMILY: NEW_V10_FS_13_THE_TOOL
-           STATES, IN REVEAL ORDER:
-               NEW_V10_FS_13_ESTABLISH.png
-               NEW_V10_FS_13A_READ.png
-               NEW_V10_FS_13B_TEST.png
-               NEW_V10_FS_13C_PROVE.png
-               NEW_V10_FS_13D_ROLE_CHECK.png
-           EXACT TRIGGER:
-               So if I were building a first-90-days plan for an
-               experienced professional, I would keep it this simple.
-               READ. What do I understand now that I did not understand
-               on day one? TEST. What from my previous experience works
-               here, what needs translating, and what does not?
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V10_FS_13_ESTABLISH.png   paragraph 1
+                   on: I would keep it this simple.
+               NEW_V10_FS_13A_READ.png   paragraph 1
+                   on: READ. What do I understand now that I did not
+                   on: understand on day one?
+               NEW_V10_FS_13B_TEST.png   paragraph 1
+                   on: TEST. What from my previous experience works here
+               NEW_V10_FS_13C_PROVE.png   paragraph 2
+                   on: PROVE. What can I now show that I have done
+                   on: successfully in this context?
+               NEW_V10_FS_13D_ROLE_CHECK.png   paragraph 2
+                   on: ROLE CHECK. What have these 90 days taught me
+                   on: about the job itself?
+           SOUND: S5, one accent as the fourth line is added
+           ACCENT WORD: ROLE CHECK.
+           RETURN: camera returns on 'That is the plan.'
+           NOTE: READ and TEST are spoken in paragraph 1, PROVE and
+                 ROLE CHECK in paragraph 2. The added line is not
+                 shown before it is spoken.
 
-  PARA 2   MODE: CAMERA
-           PROVE. What can I now show that I have done successfully i...
+  PARA 2   MODE: FULL SCREEN, held from V10-T05
+           The voice continues under it.
+           ACTIVATE HERE:
+               NEW_V10_FS_13C_PROVE.png
+                   on: PROVE. What can I now show that I have done
+                   on: successfully in this context?
+               NEW_V10_FS_13D_ROLE_CHECK.png
+                   on: ROLE CHECK. What have these 90 days taught me
+                   on: about the job itself?
+           RETURN: camera returns on 'That is the plan.'
 
   PARA 3   MODE: CAMERA
            That is the plan. Not perform for 90 days. Not fix everyth...
 
-  PARA 4   MODE: FULL SCREEN
+  PARA 4   MODE: FULL SCREEN   [V10-C19]
+           ENTER ON: Read the context. Test what traveled. Build new proof. And
+                      read the role back.
+           LEAVE ON: Read the context. Test what traveled. Build new proof. And
+                      read the role back.
            ASSET FAMILY: NEW_V10_FS_14_THE_PLAN
-           STATES, IN REVEAL ORDER:
-               NEW_V10_FS_14_THE_PLAN.png
-           EXACT TRIGGER:
-               Read the context. Test what traveled. Build new proof. And
-               read the role back.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V10_FS_14_THE_PLAN.png   paragraph 4
+                   on: Read the context. Test what traveled. Build new
+                   on: proof. And read the role back.
+           RETURN: camera returns at the end of the paragraph
 
 SECTION 13  TAKEAWAY VALUE
 
@@ -331,16 +530,27 @@ SECTION 16  CONFIDENCE / VIEWER OUTCOME
 
 SECTION 17  WATCH NEXT
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V10-C20]
+           ENTER ON: And if your first 90 days are showing you that the job you
+                      started is not the job you thought you accepted, that is a
+                      different problem. I made the next video for exactly that.
+                      Watch “What to Do When Your New Job Isn’t the Job You
+                      Accepted” next.
+           LEAVE ON: And if your first 90 days are showing you that the job you
+                      started is not the job you thought you accepted, that is a
+                      different problem. I made the next video for exactly that.
+                      Watch “What to Do When Your New Job Isn’t the Job You
+                      Accepted” next.
            ASSET FAMILY: NEW_V10_WATCH_NEXT
-           STATES, IN REVEAL ORDER:
-               NEW_V10_WATCH_NEXT.png
-           EXACT TRIGGER:
-               And if your first 90 days are showing you that the job you
-               started is not the job you thought you accepted, that is a
-               different problem. I made the next video for exactly that.
-               Watch “What to Do When Your New Job Isn’t the Job You
-               Accepted” next.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V10_WATCH_NEXT.png   paragraph 1
+                   on: And if your first 90 days are showing you that the
+                   on: job you started is not the job you thought you
+                   on: accepted, that is a different problem. I made the
+                   on: next video for exactly that. Watch “What to Do
+                   on: When Your New Job Isn’t the Job You Accepted”
+                   on: next.
+           RETURN: camera returns at the end of the paragraph
 
 ------------------------------------------------------------------------------
 

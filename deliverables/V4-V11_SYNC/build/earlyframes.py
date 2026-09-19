@@ -195,9 +195,117 @@ def build(L, batch):
     return out
 
 
+def teaching(L, batch):
+    """The teaching states the briefs ask for and no state carried.
+
+    Four of the seventeen full-screen instructions could not be met by
+    reusing an existing state, because nothing in the delivered set showed
+    the thing the brief names: the development request, the clearer-target
+    question, the X/Y/Z sentence and the takeaway page with a cost and a
+    next action on it. Each is built from the sentence it displays.
+    """
+
+    def fam(key, n, trigger, purpose, layout, states, hold, sound):
+        return dict(key=key, video=n, former=None, trigger=trigger,
+                    para=None, mode="FULL SCREEN", purpose=purpose,
+                    layout=layout, states=states, svg=False, cls="NEW",
+                    build="SINGLE", hold=hold, sound=sound, source=None,
+                    treatment="STATEMENT", early=False)
+
+    def st(name, reveal, draw):
+        return dict(name=name, reveal=reveal, draw=draw)
+
+    out = {}
+    if batch == "sprint":
+        out[5] = [fam(
+            "NEW_V5_FS_11_THE_REQUEST", 5,
+            "What could I own in the next six months",
+            "Show the request itself, so the viewer leaves with words "
+            "they could actually say.",
+            "One conversation card.",
+            [st("NEW_V5_FS_11_THE_REQUEST", "Single state.",
+                lambda c: L.claim_card(
+                    c, "a specific development request",
+                    "WHAT YOU COULD SAY",
+                    "What could I own in the next six months that would "
+                    "help me build a different capability?",
+                    foot="her words, from ask for development, not only "
+                         "more work.", dark=True, size=54))],
+            "Cut in on \u201cYou could say\u201d and hold to the end of "
+            "the question. Return to camera for the answer that may "
+            "follow.",
+            "One quiet accent as the request appears.")]
+        out[7] = [fam(
+            "NEW_V7_FS_14_A_CLEARER_TARGET", 7,
+            "what would you need to see me handle that you have not seen "
+            "yet?",
+            "Show the question that turns a vague ambition into a "
+            "target someone can answer.",
+            "One conversation card.",
+            [st("NEW_V7_FS_14_A_CLEARER_TARGET", "Single state.",
+                lambda c: L.claim_card(
+                    c, "a conversation you can have",
+                    "WHAT YOU COULD SAY",
+                    "When you think about the next level here, what would "
+                    "you need to see me handle that you have not seen "
+                    "yet?",
+                    foot="you are not asking for a promise. you are "
+                         "asking for a clearer target.", dark=True,
+                    size=52))],
+            "Cut in on \u201cYou could say\u201d and hold through the "
+            "question. Return to camera for the follow-up examples.",
+            "One quiet accent as the question appears.")]
+        out[9] = [fam(
+            "NEW_V9_FS_13_X_Y_Z", 9,
+            "The part of my experience that is most useful here is X.",
+            "Show the honest sentence in its three parts, so the gap is "
+            "named as plainly as the transfer.",
+            "Three rows, revealed together.",
+            [st("NEW_V9_FS_13_X_Y_Z", "Single state.",
+                lambda c: L.framework(
+                    c, "how to talk about the gap",
+                    "Try something more honest.",
+                    [("Useful experience", "X"),
+                     ("Used to solve", "Y kind of problem"),
+                     ("Need to build in your environment", "Z")],
+                    foot="that makes the transfer clear. and it shows "
+                         "that you understand the gap."))],
+            "Cut in on \u201cTry something more honest\u201d and hold "
+            "through the sentence. Return to camera for why both "
+            "matter.",
+            "One quiet accent as the sentence appears.")]
+    else:
+        out[11] = [fam(
+            "NEW_V11_FS_00B_COST_AND_NEXT", 11,
+            "Name one real cost.",
+            "Bring the opening pair of documents back with the cost and "
+            "the next action added, which is the takeaway the brief "
+            "asks for.",
+            "Three lines on one working page.",
+            [st("NEW_V11_FS_00B_COST_AND_NEXT", "Single state.",
+                lambda c: L.framework(
+                    c, "the role-drift read", "One page. Three lines.",
+                    [("One difference", "EXPECTED and ACTUAL side by "
+                                        "side"),
+                     ("One cost", "Capability, evidence, compensation or "
+                                  "life"),
+                     ("One next action", "Clarify, negotiate, test for a "
+                                         "defined period, or begin "
+                                         "planning another option")],
+                    foot="the same two documents from the opening, with "
+                         "the cost and the next action added."))],
+            "Cut in on \u201cWrite EXPECTED and ACTUAL side by "
+            "side\u201d and hold to the end of the options. Return to "
+            "camera for the story-loop payoff.",
+            "One accent as the cost line is added.")]
+    return out
+
+
 def apply(SETS, L, batch):
-    """Append the new early families and report what was added."""
+    """Append the new early and teaching families, and report them."""
     made = build(L, batch)
+    for n, fams in teaching(L, batch).items():
+        made.setdefault(n, []).extend(fams)
     added = []
     for n, fams in made.items():
         if n not in SETS:

@@ -6,8 +6,12 @@ Decode a Job Description in 10 Minutes
 
 A stinger means a brief sound: a quiet click, a soft tap, paper
 movement or a restrained tonal accent. It is not a logo
-animation, a loud transition or a visual effect. A visual
-accent and a cutaway are separate choices.
+animation, a loud transition or a visual effect.
+
+Every row below is one event. Visual entry and the exact word
+the accent lands on are separate fields of that one event, not
+two sounds. Where an event names no accent word, the sound
+lands on the visual entry and nowhere else.
 
 Audition every cue under the actual recorded voice. Keep speech
 clear. No alarms, no loud whooshes, no compulsory music bed, no
@@ -16,64 +20,46 @@ carries the moment.
 
 ------------------------------------------------------------------------------
 
-THE FIVE ACCENTS
+EVERY SOUND EVENT, IN SPOKEN ORDER
 
-  S1
-      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
-          Senior Divisional Strategy Consultant, Governance.
+  V6-O02   OPENING
       LOCATION: section 1, HOOK, paragraph 1
-      THE SOUND ITSELF FALLS ON: the scene entry above.
-          The brief names no separate accent word.
-      TREATMENT: TRUE FULL-SCREEN POSTING CARD | S1: brief sound stin...
+      VISUAL ENTERS ON:
+          Senior Divisional Strategy Consultant, Governance.
+      THE ACCENT LANDS ON: the visual entry above.
+          No separate accent word is specified for this event.
+      TREATMENT: S1, one brief stinger on the title
 
-  S2
-      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
-          the bottom of the pay range was $61,500
+  V6-O03   OPENING
       LOCATION: section 1, HOOK, paragraph 2
-      THE SOUND ITSELF FALLS ON: the scene entry above.
-          The brief names no separate accent word.
-      TREATMENT: TRUE FULL-SCREEN POSTING DETAIL | S2: brief sound st...
+      VISUAL ENTERS ON:
+          But when I read the actual posting, the bottom of the
+          pay range was $61,500
+      THE ACCENT LANDS ON: the visual entry above.
+          No separate accent word is specified for this event.
+      TREATMENT: S2, one brief stinger on the range floor
 
-  S3
-      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
+  V6-T01B   TEACHING
+      LOCATION: section 5, 2 | AUTHORITY, paragraph 2
+      VISUAL ENTERS ON:
+          In that same posting, one of the key words was
+          “supporting.”
+      THE ACCENT LANDS ON THIS EXACT WORD:
           Supporting the development of strategy is not the same
           as setting the strategy.
-      LOCATION: section 5, 2 | AUTHORITY, paragraph 2
-      THE SOUND ITSELF FALLS ON: the scene entry above.
-          The brief names no separate accent word.
-      TREATMENT: 2 | AUTHORITY | S3
+      TREATMENT: S3, one quiet accent on the distinction
 
-  S4
-      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
-          highest published pay ceiling.
-      LOCATION: section 9, THE REVERSE CAN HAPPEN TOO, paragraph 2
-      THE SOUND ITSELF FALLS ON: the scene entry above.
-          The brief names no separate accent word.
-      TREATMENT: THE REVERSE CAN HAPPEN TOO | S4
+  V6-T02   TEACHING
+      LOCATION: section 7, 4 | REAL GAP, paragraph 2
+      VISUAL ENTERS ON:
+          A global nonprofit was hiring a Director of Global
+          Talent Acquisition.
+      THE ACCENT LANDS ON THIS EXACT WORD:
+          at least three hours of overlap with East Africa Time.
+      TREATMENT: One accent as the second requirement lands
 
-  S5
-      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
-          Take one job description you are actually thinking
-          about.
-      LOCATION: section 11, USE IT ON A REAL JOB, paragraph 1
-      THE SOUND ITSELF FALLS ON: the scene entry above.
-          The brief names no separate accent word.
-      TREATMENT: USE IT ON A REAL JOB | S5
-
-------------------------------------------------------------------------------
-
-EARLY-EDIT SOUND EVENTS
-
-  Section numbers below are the reconciled script's, the same
-  numbering the camera map uses.
-
-  STEP 2  S1, one brief stinger on the title
-      on: Senior Divisional Strategy Consultant, Governance.
-      section 1, paragraph 1
-
-  STEP 3  S2, one brief stinger on the range floor
-      on: But when I read the actual posting, the bottom of th...
-      section 1, paragraph 2
+  4 sound events in this video. Every one is a single event with
+  one visual entry and at most one accent word.
 
 ------------------------------------------------------------------------------
 

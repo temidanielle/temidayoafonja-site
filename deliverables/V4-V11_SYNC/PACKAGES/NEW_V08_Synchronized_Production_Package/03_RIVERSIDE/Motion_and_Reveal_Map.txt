@@ -5,120 +5,218 @@ NEW PUBLIC V8  |  MOTION AND REVEAL MAP
 What Disappears When Your Work Access Ends
 
 One active idea at a time. Establish the whole structure, then
-activate one component. Gentle push-ins and occasional
-pull-backs only. No constant zooming, pulsing or effects.
-Preserve meaningful pauses.
+activate one component on the words that name it. Gentle
+push-ins and occasional pull-backs only. No constant zooming,
+pulsing or effects. Preserve meaningful pauses.
+
+A state is never activated before its words are spoken, even
+when it belongs to a family that established earlier.
 
 ------------------------------------------------------------------------------
 
-NEW_V8_FS_00_ACCESS_UNAVAILABLE
-  SECTION 1, PARAGRAPH 1
+NEW_V8_FS_00_ACCESS_UNAVAILABLE   [V8-O02]
+  SECTION 1 HOOK
+  PARAGRAPHS 1 TO 2
   REVEAL ORDER:
-      1. NEW_V8_FS_00_ACCESS_UNAVAILABLE.png
+      1. NEW_V8_FS_00_ACCESS_UNAVAILABLE.png   paragraph 1
+             on: You cannot.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns on 'Now imagine that six months later an interviewer asks'
 
-NEW_V8_FS_01_MEMORY_NOT_PROOF
-  SECTION 1, PARAGRAPH 3
+NEW_V8_FS_01_MEMORY_NOT_PROOF   [V8-O04]
+  SECTION 1 HOOK
+  PARAGRAPH 3
   REVEAL ORDER:
-      1. NEW_V8_FS_01_MEMORY_NOT_PROOF.png
+      1. NEW_V8_FS_01_MEMORY_NOT_PROOF.png   paragraph 3
+             on: You remember doing good work.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns on 'But was the improvement 27% or 37%?'
 
-NEW_V8_FS_02_FIVE_KINDS
-  SECTION 4, PARAGRAPH 1
+NEW_V8_FS_02_FIVE_KINDS   [V8-C07]
+  SECTION 4 FIVE THINGS THAT CAN DISAPPEAR
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V8_FS_02_FIVE_KINDS.png
-      2. NEW_V8_FS_02A_BASELINE.png
-      3. NEW_V8_FS_02B_SCOPE.png
-      4. NEW_V8_FS_02C_DECISION.png
-      5. NEW_V8_FS_02D_RESULT.png
-      6. NEW_V8_FS_02E_MECHANISM.png
+      1. NEW_V8_FS_02_FIVE_KINDS.png   paragraph 1
+             on: When access ends, you can lose five useful details.
+             on: The baseline. What was true before you started? The
+             on: scope. How many people, teams, customers, locations,
+             on: or systems were involved?
+      2. NEW_V8_FS_02A_BASELINE.png   paragraph 1
+             on: When access ends, you can lose five useful details.
+             on: The baseline. What was true before you started? The
+             on: scope. How many people, teams, customers, locations,
+             on: or systems were involved?
+      3. NEW_V8_FS_02B_SCOPE.png   paragraph 1
+             on: When access ends, you can lose five useful details.
+             on: The baseline. What was true before you started? The
+             on: scope. How many people, teams, customers, locations,
+             on: or systems were involved?
+      4. NEW_V8_FS_02C_DECISION.png   paragraph 1
+             on: When access ends, you can lose five useful details.
+             on: The baseline. What was true before you started? The
+             on: scope. How many people, teams, customers, locations,
+             on: or systems were involved?
+      5. NEW_V8_FS_02D_RESULT.png   paragraph 1
+             on: When access ends, you can lose five useful details.
+             on: The baseline. What was true before you started? The
+             on: scope. How many people, teams, customers, locations,
+             on: or systems were involved?
+      6. NEW_V8_FS_02E_MECHANISM.png   paragraph 1
+             on: When access ends, you can lose five useful details.
+             on: The baseline. What was true before you started? The
+             on: scope. How many people, teams, customers, locations,
+             on: or systems were involved?
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V8_FS_03_KEEP_THE_PROOF
-  SECTION 5, PARAGRAPH 1
+NEW_V8_FS_03_KEEP_THE_PROOF   [V8-C08]
+  SECTION 5 THE IMPORTANT BOUNDARY
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V8_FS_03_KEEP_THE_PROOF.png
+      1. NEW_V8_FS_03_KEEP_THE_PROOF.png   paragraph 1
+             on: I need to be very clear. Keeping proof does not mean
+             on: taking company property. Do not send confidential
+             on: documents to yourself.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V8_FS_04_NOT_THE_ARTIFACT
-  SECTION 5, PARAGRAPH 2
+NEW_V8_FS_04_NOT_THE_ARTIFACT   [V8-C09]
+  SECTION 5 THE IMPORTANT BOUNDARY
+  PARAGRAPH 2
   REVEAL ORDER:
-      1. NEW_V8_FS_04_NOT_THE_ARTIFACT.png
+      1. NEW_V8_FS_04_NOT_THE_ARTIFACT.png   paragraph 2
+             on: Do not copy customer data. Do not take private
+             on: reports, screenshots, source code, internal
+             on: financial information, or anything you are not
+             on: allowed to keep. The goal is not to keep the
+             on: company’s files. The goal is to keep a lawful record
+             on: of your own work.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V8_FS_05_IN_YOUR_OWN_WORDS
-  SECTION 6, PARAGRAPH 1
+NEW_V8_FS_05_IN_YOUR_OWN_WORDS   [V8-T03]
+  SECTION 6 WHAT TO WRITE DOWN
+  PARAGRAPHS 1 TO 2
   REVEAL ORDER:
-      1. NEW_V8_FS_05_IN_YOUR_OWN_WORDS.png
+      1. NEW_V8_FS_05_IN_YOUR_OWN_WORDS.png   paragraph 2
+             on: Owned the decision on Y, but budget approval stayed
+             on: with Z.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns on 'You are keeping the shape of the evidence.'
 
-NEW_V8_FS_06_THE_DETAILS_BLUR
-  SECTION 7, PARAGRAPH 3
+NEW_V8_FS_06_THE_DETAILS_BLUR   [V8-C10]
+  SECTION 7 WHY MEMORY IS NOT ENOUGH
+  PARAGRAPH 3
   REVEAL ORDER:
-      1. NEW_V8_FS_06_THE_DETAILS_BLUR.png
+      1. NEW_V8_FS_06_THE_DETAILS_BLUR.png   paragraph 3
+             on: Was the starting number 47 or 52? Was the result
+             on: measured after 12 months or 18? Did you own the
+             on: design or only the rollout? That is why evidence is
+             on: easier to capture while the work is still fresh.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V8_FS_07_TEN_MINUTE_HABIT
-  SECTION 8, PARAGRAPH 1
+NEW_V8_FS_07_TEN_MINUTE_HABIT   [V8-C11]
+  SECTION 8 THE 10-MINUTE HABIT
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V8_FS_07_TEN_MINUTE_HABIT.png
+      1. NEW_V8_FS_07_TEN_MINUTE_HABIT.png   paragraph 1
+             on: Once a month, take ten minutes and write down: What
+             on: changed? What was mine?
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V8_FS_08_CAREER_HYGIENE
-  SECTION 9, PARAGRAPH 2
+NEW_V8_FS_08_CAREER_HYGIENE   [V8-C12]
+  SECTION 9 WHEN THE EXIT IS SUDDEN
+  PARAGRAPH 2
   REVEAL ORDER:
-      1. NEW_V8_FS_08_CAREER_HYGIENE.png
+      1. NEW_V8_FS_08_CAREER_HYGIENE.png   paragraph 2
+             on: That is why keeping career evidence is not only
+             on: something to do when you think a layoff is coming.
+             on: It is a normal career habit.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V8_FS_09_STILL_NOT_ENOUGH
-  SECTION 10, PARAGRAPH 1
+NEW_V8_FS_09_STILL_NOT_ENOUGH   [V8-C13]
+  SECTION 10 EVIDENCE DOES NOT SOLVE EVERYTHING
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V8_FS_09_STILL_NOT_ENOUGH.png
+      1. NEW_V8_FS_09_STILL_NOT_ENOUGH.png   paragraph 1
+             on: Good evidence will not remove every hiring problem.
+             on: A future employer may still want a credential you do
+             on: not have. They may want direct industry experience.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V8_FS_10_NOT_ONLY_A_METRIC
-  SECTION 11, PARAGRAPH 2
+NEW_V8_FS_10_NOT_ONLY_A_METRIC   [V8-C14]
+  SECTION 11 EVIDENCE IS MORE THAN A NUMBER
+  PARAGRAPH 2
   REVEAL ORDER:
-      1. NEW_V8_FS_10_NOT_ONLY_A_METRIC.png
+      1. NEW_V8_FS_10_NOT_ONLY_A_METRIC.png   paragraph 2
+             on: You can still explain: how the process worked
+             on: before, what you changed, what you were trusted to
+             on: decide, what the organization could do afterward,
+             on: and how the result was judged.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V8_FS_12_CTA
-  SECTION 14, PARAGRAPH 2
+NEW_V8_FS_00_ACCESS_UNAVAILABLE   [V8-T05]
+  SECTION 13 STORY LOOP PAYOFF
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V8_FS_12_CTA.png
+      1. NEW_V8_FS_00_ACCESS_UNAVAILABLE.png   paragraph 1
+             on: That brings us back to the login screen.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns on 'Your understanding of your own work'
 
-NEW_V8_WATCH_NEXT
-  SECTION 16, PARAGRAPH 1
+NEW_V8_FS_12_CTA   [V8-C15]
+  SECTION 14 CLOSE
+  PARAGRAPH 2
   REVEAL ORDER:
-      1. NEW_V8_WATCH_NEXT.png
+      1. NEW_V8_FS_12_CTA.png   paragraph 2
+             on: Keep the proof. Not the property.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
+
+NEW_V8_WATCH_NEXT   [V8-C16]
+  SECTION 16 WATCH NEXT
+  PARAGRAPH 1
+  REVEAL ORDER:
+      1. NEW_V8_WATCH_NEXT.png   paragraph 1
+             on: And if you want to know what to capture before a
+             on: layoff or sudden exit takes that access away, watch
+             on: “Before a Layoff, Know What You Can Still Prove”
+             on: next.
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+  RETURN:   camera returns at the end of the paragraph
 
 NEW_V8_FS_11_A_FACTUAL_RECORD   RETIRED. INACTIVE.
   No reveal order. This family is not played in this video.

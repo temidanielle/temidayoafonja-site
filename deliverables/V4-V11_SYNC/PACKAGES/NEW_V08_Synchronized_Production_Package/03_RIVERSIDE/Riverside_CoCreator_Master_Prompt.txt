@@ -4,7 +4,7 @@ NEW PUBLIC V8  |  RIVERSIDE CO-CREATOR MASTER PROMPT
 
 What Disappears When Your Work Access Ends
 Thumbnail: YOU CAN’T PROVE IT LATER
-Generated Thursday, September 17, 2026 | 12:57 PM CT
+Generated Saturday, September 19, 2026 | 6:36 AM CT
 
 889 spoken words. Planning estimate 6:07 to 6:50 at 130 to
 145 words per minute, provisional and arithmetic only. Nothing
@@ -51,79 +51,359 @@ HOW TO USE THIS
 
 ------------------------------------------------------------------------------
 
-OPENING SEQUENCE, EXECUTABLE
+THE EVENT LIST
 
-  Work these steps in order before the first teaching moment.
-  Each one names where it starts and stops inside the spoken
-  paragraph, so no passage is left to be reconciled between two
-  maps.
+  This is the whole edit, in spoken order. The camera map, the
+  motion map, the sound map and the asset index are generated
+  from these same events, so none of them can tell you
+  something different. Where a paragraph is not named below,
+  stay on camera.
 
-  STEP 1  |  CAMERA
+  An event carries its own id. A family may appear in more
+  than one event, at different points in the video: that is a
+  reuse, not a contradiction.
+
+  V8-O01  |  CAMERA  |  OPENING
+      LOCATION: section 1 HOOK, paragraph 1
       ON-SCREEN TEXT:
           CAN YOU STILL EXPLAIN YOUR WORK?
-      ENTER ON THESE WORDS, section 1 HOOK, paragraph 1:
+      ENTER ON THESE WORDS:
           Imagine tomorrow morning you try to log into your work
           account.
       LEAVE ON THESE WORDS, paragraph 1:
           Imagine tomorrow morning you try to log into your work
           account.
-      ASSET: none. Editorial text over camera.
-      SOUND: none
+      ASSET: none. Camera, with any editorial text over it.
+      SOUND: none.
       RETURN: cuts away within the paragraph
       NOTE:
           She speaks first, then straight into the imagined login.
           No camera-only scene.
 
-  STEP 2  |  FULL SCREEN
+  V8-O02  |  FULL SCREEN  |  OPENING
+      LOCATION: section 1 HOOK, paragraphs 1 to 2
       ON-SCREEN TEXT:
           ACCESS UNAVAILABLE
-      ENTER ON THESE WORDS, section 1 HOOK, paragraph 1:
+      ENTER ON THESE WORDS:
           You cannot.
       LEAVE ON THESE WORDS, paragraph 2:
           Project folders gone.
       ASSET FAMILY: NEW_V8_FS_00_ACCESS_UNAVAILABLE
-      STATES, IN REVEAL ORDER:
-          NEW_V8_FS_00_ACCESS_UNAVAILABLE.png
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V8_FS_00_ACCESS_UNAVAILABLE.png   paragraph 1
+              on: You cannot.
       SOUND: S1, one muted lock or click on 'You cannot.'
+      ACCENT WORD: none separately specified; the sound lands on the entry
       RETURN: camera returns on 'Now imagine that six months later an interviewer asks'
       NOTE:
           Generic and clearly illustrative. No employer interface,
           file, logo or customer data.
 
-  STEP 3  |  CAMERA
+  V8-O03  |  CAMERA  |  OPENING
+      LOCATION: section 1 HOOK, paragraph 3
       ON-SCREEN TEXT:
           WHAT CHANGED BECAUSE OF YOUR WORK?
-      ENTER ON THESE WORDS, section 1 HOOK, paragraph 3:
+      ENTER ON THESE WORDS:
           Now imagine that six months later an interviewer asks:
           What exactly changed because of your work?
       LEAVE ON THESE WORDS, paragraph 3:
           What exactly changed because of your work?
-      ASSET: none. Editorial text over camera.
-      SOUND: none
+      ASSET: none. Camera, with any editorial text over it.
+      SOUND: none.
       RETURN: cuts away within the paragraph
       NOTE:
           The interviewer's question is the early outcome cue. No
           fear montage.
 
-  STEP 4  |  FULL SCREEN
+  V8-O04  |  FULL SCREEN  |  OPENING
+      LOCATION: section 1 HOOK, paragraph 3
       ON-SCREEN TEXT:
           YOU REMEMBER. YOU CANNOT PROVE IT CLEANLY.
-      ENTER ON THESE WORDS, section 1 HOOK, paragraph 3:
+      ENTER ON THESE WORDS:
           You remember doing good work.
       LEAVE ON THESE WORDS, paragraph 3:
           You remember that the project mattered.
       ASSET FAMILY: NEW_V8_FS_01_MEMORY_NOT_PROOF
-      STATES, IN REVEAL ORDER:
-          NEW_V8_FS_01_MEMORY_NOT_PROOF.png
-      SOUND: none
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V8_FS_01_MEMORY_NOT_PROOF.png   paragraph 3
+              on: You remember doing good work.
+      SOUND: none.
       RETURN: camera returns on 'But was the improvement 27% or 37%?'
       NOTE:
           The baseline and decision questions do the work from
           camera.
 
+  V8-C07  |  FULL SCREEN  |  CUE
+      LOCATION: section 4 FIVE THINGS THAT CAN DISAPPEAR, paragraph 1
+      ENTER ON THESE WORDS:
+          When access ends, you can lose five useful details. The
+          baseline. What was true before you started? The scope.
+          How many people, teams, customers, locations, or systems
+          were involved?
+      LEAVE ON THESE WORDS, paragraph 1:
+          When access ends, you can lose five useful details. The
+          baseline. What was true before you started? The scope.
+          How many people, teams, customers, locations, or systems
+          were involved?
+      ASSET FAMILY: NEW_V8_FS_02_FIVE_KINDS
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V8_FS_02_FIVE_KINDS.png   paragraph 1
+              on: When access ends, you can lose five useful
+              on: details. The baseline. What was true before you
+              on: started? The scope. How many people, teams,
+              on: customers, locations, or systems were involved?
+          NEW_V8_FS_02A_BASELINE.png   paragraph 1
+              on: When access ends, you can lose five useful
+              on: details. The baseline. What was true before you
+              on: started? The scope. How many people, teams,
+              on: customers, locations, or systems were involved?
+          NEW_V8_FS_02B_SCOPE.png   paragraph 1
+              on: When access ends, you can lose five useful
+              on: details. The baseline. What was true before you
+              on: started? The scope. How many people, teams,
+              on: customers, locations, or systems were involved?
+          NEW_V8_FS_02C_DECISION.png   paragraph 1
+              on: When access ends, you can lose five useful
+              on: details. The baseline. What was true before you
+              on: started? The scope. How many people, teams,
+              on: customers, locations, or systems were involved?
+          NEW_V8_FS_02D_RESULT.png   paragraph 1
+              on: When access ends, you can lose five useful
+              on: details. The baseline. What was true before you
+              on: started? The scope. How many people, teams,
+              on: customers, locations, or systems were involved?
+          NEW_V8_FS_02E_MECHANISM.png   paragraph 1
+              on: When access ends, you can lose five useful
+              on: details. The baseline. What was true before you
+              on: started? The scope. How many people, teams,
+              on: customers, locations, or systems were involved?
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V8-C08  |  FULL SCREEN  |  CUE
+      LOCATION: section 5 THE IMPORTANT BOUNDARY, paragraph 1
+      ENTER ON THESE WORDS:
+          I need to be very clear. Keeping proof does not mean
+          taking company property. Do not send confidential
+          documents to yourself.
+      LEAVE ON THESE WORDS, paragraph 1:
+          I need to be very clear. Keeping proof does not mean
+          taking company property. Do not send confidential
+          documents to yourself.
+      ASSET FAMILY: NEW_V8_FS_03_KEEP_THE_PROOF
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V8_FS_03_KEEP_THE_PROOF.png   paragraph 1
+              on: I need to be very clear. Keeping proof does not
+              on: mean taking company property. Do not send
+              on: confidential documents to yourself.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V8-C09  |  FULL SCREEN  |  CUE
+      LOCATION: section 5 THE IMPORTANT BOUNDARY, paragraph 2
+      ENTER ON THESE WORDS:
+          Do not copy customer data. Do not take private reports,
+          screenshots, source code, internal financial
+          information, or anything you are not allowed to keep.
+          The goal is not to keep the company’s files. The goal is
+          to keep a lawful record of your own work.
+      LEAVE ON THESE WORDS, paragraph 2:
+          Do not copy customer data. Do not take private reports,
+          screenshots, source code, internal financial
+          information, or anything you are not allowed to keep.
+          The goal is not to keep the company’s files. The goal is
+          to keep a lawful record of your own work.
+      ASSET FAMILY: NEW_V8_FS_04_NOT_THE_ARTIFACT
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V8_FS_04_NOT_THE_ARTIFACT.png   paragraph 2
+              on: Do not copy customer data. Do not take private
+              on: reports, screenshots, source code, internal
+              on: financial information, or anything you are not
+              on: allowed to keep. The goal is not to keep the
+              on: company’s files. The goal is to keep a lawful
+              on: record of your own work.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V8-T03  |  FULL SCREEN  |  TEACHING
+      LOCATION: section 6 WHAT TO WRITE DOWN, paragraphs 1 to 2
+      ON-SCREEN TEXT:
+          TRUE FULL-SCREEN EXAMPLE NOTE | MY DECISION: Y / BUDGET
+          APPROVAL: Z
+      ENTER ON THESE WORDS:
+          You can record the work in your own words.
+      LEAVE ON THESE WORDS, paragraph 2:
+          “Measured the result using Y.”
+      ASSET FAMILY: NEW_V8_FS_05_IN_YOUR_OWN_WORDS
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V8_FS_05_IN_YOUR_OWN_WORDS.png   paragraph 2
+              on: Owned the decision on Y, but budget approval
+              on: stayed with Z.
+      SOUND: S4, one accent as the boundary line appears
+      ACCENT WORD: Owned the decision on Y, but budget approval stayed with Z.
+      RETURN: camera returns on 'You are keeping the shape of the evidence.'
+      NOTE:
+          The examples run across two paragraphs and the boundary
+          line is in the second.
+
+  V8-C10  |  FULL SCREEN  |  CUE
+      LOCATION: section 7 WHY MEMORY IS NOT ENOUGH, paragraph 3
+      ENTER ON THESE WORDS:
+          Was the starting number 47 or 52? Was the result
+          measured after 12 months or 18? Did you own the design
+          or only the rollout? That is why evidence is easier to
+          capture while the work is still fresh.
+      LEAVE ON THESE WORDS, paragraph 3:
+          Was the starting number 47 or 52? Was the result
+          measured after 12 months or 18? Did you own the design
+          or only the rollout? That is why evidence is easier to
+          capture while the work is still fresh.
+      ASSET FAMILY: NEW_V8_FS_06_THE_DETAILS_BLUR
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V8_FS_06_THE_DETAILS_BLUR.png   paragraph 3
+              on: Was the starting number 47 or 52? Was the result
+              on: measured after 12 months or 18? Did you own the
+              on: design or only the rollout? That is why evidence
+              on: is easier to capture while the work is still
+              on: fresh.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V8-C11  |  FULL SCREEN  |  CUE
+      LOCATION: section 8 THE 10-MINUTE HABIT, paragraph 1
+      ENTER ON THESE WORDS:
+          Once a month, take ten minutes and write down: What
+          changed? What was mine?
+      LEAVE ON THESE WORDS, paragraph 1:
+          Once a month, take ten minutes and write down: What
+          changed? What was mine?
+      ASSET FAMILY: NEW_V8_FS_07_TEN_MINUTE_HABIT
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V8_FS_07_TEN_MINUTE_HABIT.png   paragraph 1
+              on: Once a month, take ten minutes and write down:
+              on: What changed? What was mine?
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V8-C12  |  FULL SCREEN  |  CUE
+      LOCATION: section 9 WHEN THE EXIT IS SUDDEN, paragraph 2
+      ENTER ON THESE WORDS:
+          That is why keeping career evidence is not only
+          something to do when you think a layoff is coming. It is
+          a normal career habit.
+      LEAVE ON THESE WORDS, paragraph 2:
+          That is why keeping career evidence is not only
+          something to do when you think a layoff is coming. It is
+          a normal career habit.
+      ASSET FAMILY: NEW_V8_FS_08_CAREER_HYGIENE
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V8_FS_08_CAREER_HYGIENE.png   paragraph 2
+              on: That is why keeping career evidence is not only
+              on: something to do when you think a layoff is coming.
+              on: It is a normal career habit.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V8-C13  |  FULL SCREEN  |  CUE
+      LOCATION: section 10 EVIDENCE DOES NOT SOLVE EVERYTHING, paragraph 1
+      ENTER ON THESE WORDS:
+          Good evidence will not remove every hiring problem. A
+          future employer may still want a credential you do not
+          have. They may want direct industry experience.
+      LEAVE ON THESE WORDS, paragraph 1:
+          Good evidence will not remove every hiring problem. A
+          future employer may still want a credential you do not
+          have. They may want direct industry experience.
+      ASSET FAMILY: NEW_V8_FS_09_STILL_NOT_ENOUGH
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V8_FS_09_STILL_NOT_ENOUGH.png   paragraph 1
+              on: Good evidence will not remove every hiring
+              on: problem. A future employer may still want a
+              on: credential you do not have. They may want direct
+              on: industry experience.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V8-C14  |  FULL SCREEN  |  CUE
+      LOCATION: section 11 EVIDENCE IS MORE THAN A NUMBER, paragraph 2
+      ENTER ON THESE WORDS:
+          You can still explain: how the process worked before,
+          what you changed, what you were trusted to decide, what
+          the organization could do afterward, and how the result
+          was judged.
+      LEAVE ON THESE WORDS, paragraph 2:
+          You can still explain: how the process worked before,
+          what you changed, what you were trusted to decide, what
+          the organization could do afterward, and how the result
+          was judged.
+      ASSET FAMILY: NEW_V8_FS_10_NOT_ONLY_A_METRIC
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V8_FS_10_NOT_ONLY_A_METRIC.png   paragraph 2
+              on: You can still explain: how the process worked
+              on: before, what you changed, what you were trusted to
+              on: decide, what the organization could do afterward,
+              on: and how the result was judged.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V8-T05  |  FULL SCREEN  |  TEACHING
+      LOCATION: section 13 STORY LOOP PAYOFF, paragraph 1
+      ON-SCREEN TEXT:
+          TRUE FULL-SCREEN CALLBACK, THEN CAMERA | ACCESS MAY END
+      ENTER ON THESE WORDS:
+          That brings us back to the login screen.
+      LEAVE ON THESE WORDS, paragraph 1:
+          The system can disappear in a day.
+      ASSET FAMILY: NEW_V8_FS_00_ACCESS_UNAVAILABLE
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V8_FS_00_ACCESS_UNAVAILABLE.png   paragraph 1
+              on: That brings us back to the login screen.
+      SOUND: No accent. The hook already used the lock sound and this is the same picture returning.
+      ACCENT WORD: none separately specified; the sound lands on the entry
+      RETURN: camera returns on 'Your understanding of your own work'
+      NOTE:
+          The same illustrative login as the hook, at a second
+          occurrence. One asset, two events.
+
+  V8-C15  |  FULL SCREEN  |  CUE
+      LOCATION: section 14 CLOSE, paragraph 2
+      ENTER ON THESE WORDS:
+          Keep the proof. Not the property.
+      LEAVE ON THESE WORDS, paragraph 2:
+          Keep the proof. Not the property.
+      ASSET FAMILY: NEW_V8_FS_12_CTA
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V8_FS_12_CTA.png   paragraph 2
+              on: Keep the proof. Not the property.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V8-C16  |  FULL SCREEN  |  END
+      LOCATION: section 16 WATCH NEXT, paragraph 1
+      ENTER ON THESE WORDS:
+          And if you want to know what to capture before a layoff
+          or sudden exit takes that access away, watch “Before a
+          Layoff, Know What You Can Still Prove” next.
+      LEAVE ON THESE WORDS, paragraph 1:
+          And if you want to know what to capture before a layoff
+          or sudden exit takes that access away, watch “Before a
+          Layoff, Know What You Can Still Prove” next.
+      ASSET FAMILY: NEW_V8_WATCH_NEXT
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V8_WATCH_NEXT.png   paragraph 1
+              on: And if you want to know what to capture before a
+              on: layoff or sudden exit takes that access away,
+              on: watch “Before a Layoff, Know What You Can Still
+              on: Prove” next.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
 ------------------------------------------------------------------------------
 
-OPENING TREATMENT, FROM THE BRIEF
+WHAT EACH BEAT OF THE BRIEF ASKED FOR
+
+  Kept for provenance. The event list above is the
+  instruction.
 
   1. CAMERA + BRIEF EDITORIAL TEXT
      DISPLAY COPY:
@@ -164,10 +444,6 @@ OPENING TREATMENT, FROM THE BRIEF
          Keep the activities. Show why the viewer would do them and
          the specific answer, note, or conversation they leave with.
          Do not replace practical teaching with bigger promises.
-
-------------------------------------------------------------------------------
-
-TEACHING MOMENTS
 
   1. FIVE THINGS THAT CAN DISAPPEAR  |  S2
      DISPLAY COPY:

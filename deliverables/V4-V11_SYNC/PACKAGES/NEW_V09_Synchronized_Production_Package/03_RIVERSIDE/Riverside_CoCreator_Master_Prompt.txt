@@ -4,7 +4,7 @@ NEW PUBLIC V9  |  RIVERSIDE CO-CREATOR MASTER PROMPT
 
 Transferable Skills Advice Is Missing Something
 Thumbnail: NOT EVERYTHING TRAVELS
-Generated Thursday, September 17, 2026 | 12:57 PM CT
+Generated Saturday, September 19, 2026 | 6:36 AM CT
 
 1,069 spoken words. Planning estimate 7:22 to 8:13 at 130 to
 145 words per minute, provisional and arithmetic only. Nothing
@@ -50,64 +50,344 @@ HOW TO USE THIS
 
 ------------------------------------------------------------------------------
 
-OPENING SEQUENCE, EXECUTABLE
+THE EVENT LIST
 
-  Work these steps in order before the first teaching moment.
-  Each one names where it starts and stops inside the spoken
-  paragraph, so no passage is left to be reconciled between two
-  maps.
+  This is the whole edit, in spoken order. The camera map, the
+  motion map, the sound map and the asset index are generated
+  from these same events, so none of them can tell you
+  something different. Where a paragraph is not named below,
+  stay on camera.
 
-  STEP 1  |  CAMERA
+  An event carries its own id. A family may appear in more
+  than one event, at different points in the video: that is a
+  reuse, not a contradiction.
+
+  V9-O01  |  CAMERA  |  OPENING
+      LOCATION: section 1 HOOK, paragraph 1
       ON-SCREEN TEXT:
           NOT EVERYTHING TRAVELS
-      ENTER ON THESE WORDS, section 1 HOOK, paragraph 1:
+      ENTER ON THESE WORDS:
           I think some transferable-skills advice gives
           experienced professionals false confidence.
       LEAVE ON THESE WORDS, paragraph 1:
           Some of it absolutely can.
-      ASSET: none. Editorial text over camera.
-      SOUND: none
+      ASSET: none. Camera, with any editorial text over it.
+      SOUND: none.
       RETURN: stays on camera
       NOTE:
           'Some' stays in the spoken claim. No study, no universal
           indictment.
 
-  STEP 2  |  FULL SCREEN
+  V9-O02  |  FULL SCREEN  |  OPENING
+      LOCATION: section 1 HOOK, paragraph 2
       ON-SCREEN TEXT:
           WHAT COMES WITH ME? / WHAT STAYS BEHIND?
-      ENTER ON THESE WORDS, section 1 HOOK, paragraph 2:
+      ENTER ON THESE WORDS:
           The problem is that we spend so much time asking, What
           can I take with me?
       LEAVE ON THESE WORDS, paragraph 2:
           What am I leaving behind?
       ASSET FAMILY: NEW_V9_FS_01_INCOMPLETE_QUESTION
-      STATES, IN REVEAL ORDER:
-          NEW_V9_FS_01_INCOMPLETE_QUESTION.png
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V9_FS_01_INCOMPLETE_QUESTION.png   paragraph 2
+              on: The problem is that we spend so much time asking,
+              on: What can I take with me?
       SOUND: S1, one quiet paper-switch
+      ACCENT WORD: none separately specified; the sound lands on the entry
       RETURN: camera returns within the paragraph
       NOTE:
           Two questions, while the source asks them. No travel
           imagery.
 
-  STEP 3  |  FULL SCREEN
+  V9-O03  |  FULL SCREEN  |  OPENING
+      LOCATION: section 1 HOOK, paragraph 3
       ON-SCREEN TEXT:
           JUDGMENT: MAY TRAVEL / RELATIONSHIPS: MAY NOT
-      ENTER ON THESE WORDS, section 1 HOOK, paragraph 3:
+      ENTER ON THESE WORDS:
           Your judgment may travel.
       LEAVE ON THESE WORDS, paragraph 3:
           Your knowledge of that company’s systems may not.
       ASSET FAMILY: NEW_V9_FS_00_MAY_TRAVEL
-      STATES, IN REVEAL ORDER:
-          NEW_V9_FS_00_MAY_TRAVEL.png
-      SOUND: none
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V9_FS_00_MAY_TRAVEL.png   paragraph 3
+              on: Your judgment may travel.
+      SOUND: none.
       RETURN: camera returns on 'And a new industry may still require regulation'
       NOTE:
           Each side arrives with its sentence. 'May' stays visible
           on both.
 
+  V9-C07  |  FULL SCREEN  |  CUE
+      LOCATION: section 4 WHY TRANSFERABLE-SKILLS ADVICE HELPS, paragraph 1
+      ENTER ON THESE WORDS:
+          Transferable-skills advice can be helpful because it
+          stops experienced people from acting like their old
+          experience suddenly means nothing. You do not change
+          fields and become a beginner at everything. You may
+          carry judgment, leadership, problem solving, pattern
+          recognition, or ways of working that still matter.
+      LEAVE ON THESE WORDS, paragraph 1:
+          Transferable-skills advice can be helpful because it
+          stops experienced people from acting like their old
+          experience suddenly means nothing. You do not change
+          fields and become a beginner at everything. You may
+          carry judgment, leadership, problem solving, pattern
+          recognition, or ways of working that still matter.
+      ASSET FAMILY: NEW_V9_FS_02_WHY_THE_ADVICE_HELPS
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V9_FS_02_WHY_THE_ADVICE_HELPS.png   paragraph 1
+              on: Transferable-skills advice can be helpful because
+              on: it stops experienced people from acting like their
+              on: old experience suddenly means nothing. You do not
+              on: change fields and become a beginner at everything.
+              on: You may carry judgment, leadership, problem
+              on: solving, pattern recognition, or ways of working
+              on: that still matter.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V9-T02  |  FULL SCREEN  |  TEACHING
+      LOCATION: section 5 THE FOUR QUESTIONS, paragraphs 1 to 2
+      ON-SCREEN TEXT:
+          TRUE FULL-SCREEN TEACHING | WHAT TRAVELS? / WHAT DOES
+          NOT? / WHAT CAN I PROVE? / WHAT MUST I RELEARN?
+      ENTER ON THESE WORDS:
+          I use four questions instead: What travels? What does
+          not?
+      LEAVE ON THESE WORDS, paragraph 2:
+          That gives you a more honest picture of the move.
+      ASSET FAMILY: NEW_V9_FS_03_FOUR_QUESTIONS
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V9_FS_03_FOUR_QUESTIONS.png   paragraph 1
+              on: I use four questions instead:
+          NEW_V9_FS_03A_WHAT_TRAVELS.png   paragraph 1
+              on: What travels?
+          NEW_V9_FS_03B_WHAT_DOES_NOT.png   paragraph 1
+              on: What does not?
+          NEW_V9_FS_03C_WHAT_CAN_I_PROVE.png   paragraph 2
+              on: What can I prove?
+          NEW_V9_FS_03D_WHAT_MUST_I_RELEARN.png   paragraph 2
+              on: What must I relearn?
+      SOUND: S2, one accent as the four establish
+      ACCENT WORD: I use four questions instead:
+      RETURN: camera returns at 1 | WHAT TRAVELS
+      NOTE:
+          Two questions are spoken in paragraph 1 and two in
+          paragraph 2. The last two are not revealed early. The
+          same family also serves the hook, which is a separate
+          event.
+
+  V9-C08  |  FULL SCREEN  |  CUE
+      LOCATION: section 6 1 | WHAT TRAVELS, paragraph 1
+      ENTER ON THESE WORDS:
+          What travels is not just a list of soft skills. It is
+          something you have already shown you can do, and the new
+          place can actually use it.
+      LEAVE ON THESE WORDS, paragraph 1:
+          What travels is not just a list of soft skills. It is
+          something you have already shown you can do, and the new
+          place can actually use it.
+      ASSET FAMILY: NEW_V9_FS_04_DEMONSTRATED_NOT_CLAIMED
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V9_FS_04_DEMONSTRATED_NOT_CLAIMED.png   paragraph 1
+              on: What travels is not just a list of soft skills. It
+              on: is something you have already shown you can do,
+              on: and the new place can actually use it.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V9-C09  |  FULL SCREEN  |  CUE
+      LOCATION: section 7 2 | WHAT DOES NOT, paragraph 1
+      ENTER ON THESE WORDS:
+          Then ask what belonged to the old place. Internal
+          relationships. Company systems. The language everyone
+          understood without explaining it.
+      LEAVE ON THESE WORDS, paragraph 1:
+          Then ask what belonged to the old place. Internal
+          relationships. Company systems. The language everyone
+          understood without explaining it.
+      ASSET FAMILY: NEW_V9_FS_05_TIED_TO_THE_OLD_CONTEXT
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V9_FS_05_TIED_TO_THE_OLD_CONTEXT.png   paragraph 1
+              on: Then ask what belonged to the old place. Internal
+              on: relationships. Company systems. The language
+              on: everyone understood without explaining it.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V9-C10  |  FULL SCREEN  |  CUE
+      LOCATION: section 8 3 | WHAT CAN I PROVE, paragraph 2
+      ENTER ON THESE WORDS:
+          What was wrong before? What did you decide? What
+          changed? How do you know? Your experience becomes easier
+          to carry when another person can understand and judge
+          the evidence.
+      LEAVE ON THESE WORDS, paragraph 2:
+          What was wrong before? What did you decide? What
+          changed? How do you know? Your experience becomes easier
+          to carry when another person can understand and judge
+          the evidence.
+      ASSET FAMILY: NEW_V9_FS_06_WHAT_CAN_ANOTHER_PERSON_SEE
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V9_FS_06_WHAT_CAN_ANOTHER_PERSON_SEE.png   paragraph 2
+              on: What was wrong before? What did you decide? What
+              on: changed? How do you know? Your experience becomes
+              on: easier to carry when another person can understand
+              on: and judge the evidence.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V9-C11  |  FULL SCREEN  |  CUE
+      LOCATION: section 9 4 | WHAT MUST I RELEARN, paragraph 3
+      ENTER ON THESE WORDS:
+          Technical depth. Local relationships. A different way of
+          operating.
+      LEAVE ON THESE WORDS, paragraph 3:
+          Technical depth. Local relationships. A different way of
+          operating.
+      ASSET FAMILY: NEW_V9_FS_07_WHAT_THE_NEW_CONTEXT_REQUIRES
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V9_FS_07_WHAT_THE_NEW_CONTEXT_REQUIRES.png   paragraph 3
+              on: Technical depth. Local relationships. A different
+              on: way of operating.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V9-T03  |  FULL SCREEN  |  TEACHING
+      LOCATION: section 10 THINK OF IT LIKE SORTING, paragraphs 1 to 2
+      ON-SCREEN TEXT:
+          TRUE FULL-SCREEN SORTING ILLUSTRATION | AS IT IS / NEEDS
+          TRANSLATION / CONTEXT-BOUND / TO BE LEARNED
+      ENTER ON THESE WORDS:
+          When I think about changing context, I do not picture a
+          suitcase where everything fits.
+      LEAVE ON THESE WORDS, paragraph 2:
+          And some things have to be learned.
+      ASSET FAMILY: NEW_V9_FS_08_SORTING
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V9_FS_08_SORTING.png   paragraph 1
+              on: I picture sorting.
+      SOUND: S3, one soft accent on the image
+      ACCENT WORD: I picture sorting.
+      RETURN: camera returns on 'That is why a transferable-skills list can be too simple.'
+
+  V9-C12  |  FULL SCREEN  |  CUE
+      LOCATION: section 11 TRY THE FOUR-COLUMN TEST, paragraph 1
+      ENTER ON THESE WORDS:
+          Take one job you are thinking about. Make four columns:
+          TRAVELS. DOES NOT TRAVEL. PROOF. RELEARN.
+      LEAVE ON THESE WORDS, paragraph 1:
+          Take one job you are thinking about. Make four columns:
+          TRAVELS. DOES NOT TRAVEL. PROOF. RELEARN.
+      ASSET FAMILY: NEW_V9_FS_09_FOUR_COLUMNS
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V9_FS_09_FOUR_COLUMNS.png   paragraph 1
+              on: Take one job you are thinking about. Make four
+              on: columns: TRAVELS. DOES NOT TRAVEL. PROOF. RELEARN.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V9-C13  |  FULL SCREEN  |  CUE
+      LOCATION: section 12 REAL LIMITS STILL MATTER, paragraph 2
+      ENTER ON THESE WORDS:
+          The market may be crowded. None of that disappears
+          because you can explain your experience well. The point
+          is to know exactly what you are asking the next employer
+          to believe.
+      LEAVE ON THESE WORDS, paragraph 2:
+          The market may be crowded. None of that disappears
+          because you can explain your experience well. The point
+          is to know exactly what you are asking the next employer
+          to believe.
+      ASSET FAMILY: NEW_V9_FS_10_BOUNDARY
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V9_FS_10_BOUNDARY.png   paragraph 2
+              on: The market may be crowded. None of that disappears
+              on: because you can explain your experience well. The
+              on: point is to know exactly what you are asking the
+              on: next employer to believe.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V9-C14  |  FULL SCREEN  |  CUE
+      LOCATION: section 13 WHY THIS CAN BE HARDER LATER IN YOUR CAREER, paragraph 3
+      ENTER ON THESE WORDS:
+          The capability may still be there. The shortcuts are
+          not.
+      LEAVE ON THESE WORDS, paragraph 3:
+          The capability may still be there. The shortcuts are
+          not.
+      ASSET FAMILY: NEW_V9_FS_11_FLUENCY_AND_PORTABILITY
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V9_FS_11_FLUENCY_AND_PORTABILITY.png   paragraph 3
+              on: The capability may still be there. The shortcuts
+              on: are not.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V9-T04  |  FULL SCREEN  |  TEACHING
+      LOCATION: section 14 HOW TO TALK ABOUT THE GAP, paragraph 2
+      ON-SCREEN TEXT:
+          TRUE FULL-SCREEN CONVERSATION | USEFUL EXPERIENCE: X /
+          USED TO SOLVE: Y / NEED TO BUILD: Z
+      ENTER ON THESE WORDS:
+          Try something more honest:
+      LEAVE ON THESE WORDS, paragraph 2:
+          The part I would need to build in your environment is Z.
+      ASSET FAMILY: NEW_V9_FS_13_X_Y_Z
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V9_FS_13_X_Y_Z.png   paragraph 2
+              on: The part of my experience that is most useful here
+              on: is X.
+      SOUND: S4, one quiet accent as the sentence appears
+      ACCENT WORD: The part of my experience that is most useful here is X.
+      RETURN: camera returns on 'That makes the transfer clear.'
+      NOTE:
+          The brief asks for this treatment and no delivered state
+          carried the sentence, so one was built from the spoken
+          words.
+
+  V9-C15  |  FULL SCREEN  |  CUE
+      LOCATION: section 17 CLOSE, paragraph 2
+      ENTER ON THESE WORDS:
+          Ask: What travels? What does not? What can I prove? What
+          must I relearn?
+      LEAVE ON THESE WORDS, paragraph 2:
+          Ask: What travels? What does not? What can I prove? What
+          must I relearn?
+      ASSET FAMILY: NEW_V9_FS_12_THE_AUDIT_AGAIN
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V9_FS_12_THE_AUDIT_AGAIN.png   paragraph 2
+              on: Ask: What travels? What does not? What can I
+              on: prove? What must I relearn?
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V9-C16  |  FULL SCREEN  |  END
+      LOCATION: section 19 WATCH NEXT, paragraph 1
+      ENTER ON THESE WORDS:
+          And if you are trying to move into a different industry,
+          watch “Which Parts of Your Experience Actually Transfer
+          to Another Industry?” next.
+      LEAVE ON THESE WORDS, paragraph 1:
+          And if you are trying to move into a different industry,
+          watch “Which Parts of Your Experience Actually Transfer
+          to Another Industry?” next.
+      ASSET FAMILY: NEW_V9_WATCH_NEXT
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V9_WATCH_NEXT.png   paragraph 1
+              on: And if you are trying to move into a different
+              on: industry, watch “Which Parts of Your Experience
+              on: Actually Transfer to Another Industry?” next.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
 ------------------------------------------------------------------------------
 
-OPENING TREATMENT, FROM THE BRIEF
+WHAT EACH BEAT OF THE BRIEF ASKED FOR
+
+  Kept for provenance. The event list above is the
+  instruction.
 
   1. CAMERA + BRIEF EDITORIAL TEXT
      DISPLAY COPY:
@@ -149,10 +429,6 @@ OPENING TREATMENT, FROM THE BRIEF
          Keep the activities. Show why the viewer would do them and
          the specific answer, note, or conversation they leave with.
          Do not replace practical teaching with bigger promises.
-
-------------------------------------------------------------------------------
-
-TEACHING MOMENTS
 
   1. THE FOUR QUESTIONS  |  S2
      DISPLAY COPY:
@@ -212,7 +488,7 @@ TEACHING MOMENTS
 
 ASSETS IN THIS PACKAGE
 
-  14 full-screen families, 18 rendered teaching and end-card
+  15 full-screen families, 19 rendered teaching and end-card
   states, all 1920 x 1080. One phone-size contact sheet sits
   beside them and is not a state.
 

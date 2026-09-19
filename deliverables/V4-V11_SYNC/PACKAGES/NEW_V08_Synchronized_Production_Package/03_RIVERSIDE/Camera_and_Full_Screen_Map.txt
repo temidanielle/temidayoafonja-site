@@ -11,47 +11,68 @@ meaningful B-roll are TRUE FULL SCREEN. The voice may continue
 under a full-screen image. Never keep Temidayo moving behind a
 teaching card.
 
+This map and the Riverside prompt are generated from one event
+list, so a paragraph cannot be camera here and full screen
+there. An event may begin and end inside a paragraph or run
+across several, and one asset family may serve more than one
+event at different points in the video.
+
 ------------------------------------------------------------------------------
 
 SECTION 1  HOOK
 
-  PARA 1   MODE: CAMERA   (early edit, step 1)
-           ON-SCREEN TEXT: CAN YOU STILL EXPLAIN YOUR WORK?
-           ENTER ON: Imagine tomorrow morning you try to log into y...
-           LEAVE ON: Imagine tomorrow morning you try to log...  (paragraph 1)
-           SOUND: none
+  PARA 1   MODE: CAMERA   [V8-O01]
+           ON-SCREEN: CAN YOU STILL EXPLAIN YOUR WORK?
+           ENTER ON: Imagine tomorrow morning you try to log into your work
+                      account.
+           LEAVE ON: Imagine tomorrow morning you try to log into your work
+                      account.
+           ASSET: none. Camera, with any editorial text over it.
            RETURN: cuts away within the paragraph
+           NOTE: She speaks first, then straight into the imagined
+                 login. No camera-only scene.
 
-  PARA 1   MODE: FULL SCREEN   (early edit, step 2)
-           ON-SCREEN TEXT: ACCESS UNAVAILABLE
+  PARA 1   MODE: FULL SCREEN   [V8-O02]
+           SPANS PARAGRAPHS 1 TO 2
+           ON-SCREEN: ACCESS UNAVAILABLE
            ENTER ON: You cannot.
-           LEAVE ON: Project folders gone.  (paragraph 2)
+           LEAVE ON: Project folders gone.
+           (the exit wording is in paragraph 2)
            ASSET FAMILY: NEW_V8_FS_00_ACCESS_UNAVAILABLE
-           STATES, IN REVEAL ORDER:
-               NEW_V8_FS_00_ACCESS_UNAVAILABLE.png
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V8_FS_00_ACCESS_UNAVAILABLE.png   paragraph 1
+                   on: You cannot.
            SOUND: S1, one muted lock or click on 'You cannot.'
+           ACCENT WORD: none separately specified
+           RETURN: camera returns on 'Now imagine that six months later an interviewer asks'
+           NOTE: Generic and clearly illustrative. No employer
+                 interface, file, logo or customer data.
+
+  PARA 2   MODE: FULL SCREEN, held from V8-O02
+           The voice continues under it.
            RETURN: camera returns on 'Now imagine that six months later an interviewer asks'
 
-  PARA 2   MODE: FULL SCREEN, still held from step 2
-           The voice continues under it. LEAVE ON: Project folders gone.
-           RETURN: camera returns on 'Now imagine that six months later an interviewer asks'
-
-  PARA 3   MODE: CAMERA   (early edit, step 3)
-           ON-SCREEN TEXT: WHAT CHANGED BECAUSE OF YOUR WORK?
-           ENTER ON: Now imagine that six months later an interview...
-           LEAVE ON: What exactly changed because of your wor...  (paragraph 3)
-           SOUND: none
+  PARA 3   MODE: CAMERA   [V8-O03]
+           ON-SCREEN: WHAT CHANGED BECAUSE OF YOUR WORK?
+           ENTER ON: Now imagine that six months later an interviewer asks:
+                      What exactly changed because of your work?
+           LEAVE ON: What exactly changed because of your work?
+           ASSET: none. Camera, with any editorial text over it.
            RETURN: cuts away within the paragraph
+           NOTE: The interviewer's question is the early outcome
+                 cue. No fear montage.
 
-  PARA 3   MODE: FULL SCREEN   (early edit, step 4)
-           ON-SCREEN TEXT: YOU REMEMBER. YOU CANNOT PROVE IT CLEANLY.
+  PARA 3   MODE: FULL SCREEN   [V8-O04]
+           ON-SCREEN: YOU REMEMBER. YOU CANNOT PROVE IT CLEANLY.
            ENTER ON: You remember doing good work.
-           LEAVE ON: You remember that the project mattered.  (paragraph 3)
+           LEAVE ON: You remember that the project mattered.
            ASSET FAMILY: NEW_V8_FS_01_MEMORY_NOT_PROOF
-           STATES, IN REVEAL ORDER:
-               NEW_V8_FS_01_MEMORY_NOT_PROOF.png
-           SOUND: none
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V8_FS_01_MEMORY_NOT_PROOF.png   paragraph 3
+                   on: You remember doing good work.
            RETURN: camera returns on 'But was the improvement 27% or 37%?'
+           NOTE: The baseline and decision questions do the work
+                 from camera.
 
   PARA 4   MODE: CAMERA
            But was the improvement 27% or 37%? Did you own the decisi...
@@ -74,20 +95,48 @@ SECTION 3  THE PROBLEM
 
 SECTION 4  FIVE THINGS THAT CAN DISAPPEAR
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V8-C07]
+           ENTER ON: When access ends, you can lose five useful details. The
+                      baseline. What was true before you started? The scope. How
+                      many people, teams, customers, locations, or systems were
+                      involved?
+           LEAVE ON: When access ends, you can lose five useful details. The
+                      baseline. What was true before you started? The scope. How
+                      many people, teams, customers, locations, or systems were
+                      involved?
            ASSET FAMILY: NEW_V8_FS_02_FIVE_KINDS
-           STATES, IN REVEAL ORDER:
-               NEW_V8_FS_02_FIVE_KINDS.png
-               NEW_V8_FS_02A_BASELINE.png
-               NEW_V8_FS_02B_SCOPE.png
-               NEW_V8_FS_02C_DECISION.png
-               NEW_V8_FS_02D_RESULT.png
-               NEW_V8_FS_02E_MECHANISM.png
-           EXACT TRIGGER:
-               When access ends, you can lose five useful details. The
-               baseline. What was true before you started? The scope. How
-               many people, teams, customers, locations, or systems were
-               involved?
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V8_FS_02_FIVE_KINDS.png   paragraph 1
+                   on: When access ends, you can lose five useful
+                   on: details. The baseline. What was true before you
+                   on: started? The scope. How many people, teams,
+                   on: customers, locations, or systems were involved?
+               NEW_V8_FS_02A_BASELINE.png   paragraph 1
+                   on: When access ends, you can lose five useful
+                   on: details. The baseline. What was true before you
+                   on: started? The scope. How many people, teams,
+                   on: customers, locations, or systems were involved?
+               NEW_V8_FS_02B_SCOPE.png   paragraph 1
+                   on: When access ends, you can lose five useful
+                   on: details. The baseline. What was true before you
+                   on: started? The scope. How many people, teams,
+                   on: customers, locations, or systems were involved?
+               NEW_V8_FS_02C_DECISION.png   paragraph 1
+                   on: When access ends, you can lose five useful
+                   on: details. The baseline. What was true before you
+                   on: started? The scope. How many people, teams,
+                   on: customers, locations, or systems were involved?
+               NEW_V8_FS_02D_RESULT.png   paragraph 1
+                   on: When access ends, you can lose five useful
+                   on: details. The baseline. What was true before you
+                   on: started? The scope. How many people, teams,
+                   on: customers, locations, or systems were involved?
+               NEW_V8_FS_02E_MECHANISM.png   paragraph 1
+                   on: When access ends, you can lose five useful
+                   on: details. The baseline. What was true before you
+                   on: started? The scope. How many people, teams,
+                   on: customers, locations, or systems were involved?
+           RETURN: camera returns at the end of the paragraph
 
   PARA 2   MODE: CAMERA
            The decision. What was actually yours to choose? The resul...
@@ -97,39 +146,70 @@ SECTION 4  FIVE THINGS THAT CAN DISAPPEAR
 
 SECTION 5  THE IMPORTANT BOUNDARY
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V8-C08]
+           ENTER ON: I need to be very clear. Keeping proof does not mean
+                      taking company property. Do not send confidential
+                      documents to yourself.
+           LEAVE ON: I need to be very clear. Keeping proof does not mean
+                      taking company property. Do not send confidential
+                      documents to yourself.
            ASSET FAMILY: NEW_V8_FS_03_KEEP_THE_PROOF
-           STATES, IN REVEAL ORDER:
-               NEW_V8_FS_03_KEEP_THE_PROOF.png
-           EXACT TRIGGER:
-               I need to be very clear. Keeping proof does not mean
-               taking company property. Do not send confidential
-               documents to yourself.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V8_FS_03_KEEP_THE_PROOF.png   paragraph 1
+                   on: I need to be very clear. Keeping proof does not
+                   on: mean taking company property. Do not send
+                   on: confidential documents to yourself.
+           RETURN: camera returns at the end of the paragraph
 
-  PARA 2   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN   [V8-C09]
+           ENTER ON: Do not copy customer data. Do not take private reports,
+                      screenshots, source code, internal financial information,
+                      or anything you are not allowed to keep. The goal is not
+                      to keep the company’s files. The goal is to keep a lawful
+                      record of your own work.
+           LEAVE ON: Do not copy customer data. Do not take private reports,
+                      screenshots, source code, internal financial information,
+                      or anything you are not allowed to keep. The goal is not
+                      to keep the company’s files. The goal is to keep a lawful
+                      record of your own work.
            ASSET FAMILY: NEW_V8_FS_04_NOT_THE_ARTIFACT
-           STATES, IN REVEAL ORDER:
-               NEW_V8_FS_04_NOT_THE_ARTIFACT.png
-           EXACT TRIGGER:
-               Do not copy customer data. Do not take private reports,
-               screenshots, source code, internal financial information,
-               or anything you are not allowed to keep. The goal is not
-               to keep the company’s files. The goal is to keep a lawful
-               record of your own work.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V8_FS_04_NOT_THE_ARTIFACT.png   paragraph 2
+                   on: Do not copy customer data. Do not take private
+                   on: reports, screenshots, source code, internal
+                   on: financial information, or anything you are not
+                   on: allowed to keep. The goal is not to keep the
+                   on: company’s files. The goal is to keep a lawful
+                   on: record of your own work.
+           RETURN: camera returns at the end of the paragraph
 
 SECTION 6  WHAT TO WRITE DOWN
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V8-T03]
+           SPANS PARAGRAPHS 1 TO 2
+           ON-SCREEN: TRUE FULL-SCREEN EXAMPLE NOTE | MY DECISION: Y
+                      / BUDGET APPROVAL: Z
+           ENTER ON: You can record the work in your own words.
+           LEAVE ON: “Measured the result using Y.”
+           (the exit wording is in paragraph 2)
            ASSET FAMILY: NEW_V8_FS_05_IN_YOUR_OWN_WORDS
-           STATES, IN REVEAL ORDER:
-               NEW_V8_FS_05_IN_YOUR_OWN_WORDS.png
-           EXACT TRIGGER:
-               You can record the work in your own words. For example:
-               “Reduced onboarding time from X to Y over six months.”
-               “Built the first process for X.”
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V8_FS_05_IN_YOUR_OWN_WORDS.png   paragraph 2
+                   on: Owned the decision on Y, but budget approval
+                   on: stayed with Z.
+           SOUND: S4, one accent as the boundary line appears
+           ACCENT WORD: Owned the decision on Y, but budget approval stayed with Z.
+           RETURN: camera returns on 'You are keeping the shape of the evidence.'
+           NOTE: The examples run across two paragraphs and the
+                 boundary line is in the second.
 
-  PARA 2   MODE: CAMERA
-           “Owned the decision on Y, but budget approval stayed with...
+  PARA 2   MODE: FULL SCREEN, held from V8-T03
+           The voice continues under it.
+           ACTIVATE HERE:
+               NEW_V8_FS_05_IN_YOUR_OWN_WORDS.png
+                   on: Owned the decision on Y, but budget approval
+                   on: stayed with Z.
+           RETURN: camera returns on 'You are keeping the shape of the evidence.'
 
   PARA 3   MODE: CAMERA
            You are keeping the shape of the evidence. You are not tak...
@@ -142,25 +222,38 @@ SECTION 7  WHY MEMORY IS NOT ENOUGH
   PARA 2   MODE: CAMERA
            Then you leave. Three months later, the details start to b...
 
-  PARA 3   MODE: FULL SCREEN
+  PARA 3   MODE: FULL SCREEN   [V8-C10]
+           ENTER ON: Was the starting number 47 or 52? Was the result measured
+                      after 12 months or 18? Did you own the design or only the
+                      rollout? That is why evidence is easier to capture while
+                      the work is still fresh.
+           LEAVE ON: Was the starting number 47 or 52? Was the result measured
+                      after 12 months or 18? Did you own the design or only the
+                      rollout? That is why evidence is easier to capture while
+                      the work is still fresh.
            ASSET FAMILY: NEW_V8_FS_06_THE_DETAILS_BLUR
-           STATES, IN REVEAL ORDER:
-               NEW_V8_FS_06_THE_DETAILS_BLUR.png
-           EXACT TRIGGER:
-               Was the starting number 47 or 52? Was the result measured
-               after 12 months or 18? Did you own the design or only the
-               rollout? That is why evidence is easier to capture while
-               the work is still fresh.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V8_FS_06_THE_DETAILS_BLUR.png   paragraph 3
+                   on: Was the starting number 47 or 52? Was the result
+                   on: measured after 12 months or 18? Did you own the
+                   on: design or only the rollout? That is why evidence
+                   on: is easier to capture while the work is still
+                   on: fresh.
+           RETURN: camera returns at the end of the paragraph
 
 SECTION 8  THE 10-MINUTE HABIT
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V8-C11]
+           ENTER ON: Once a month, take ten minutes and write down: What
+                      changed? What was mine?
+           LEAVE ON: Once a month, take ten minutes and write down: What
+                      changed? What was mine?
            ASSET FAMILY: NEW_V8_FS_07_TEN_MINUTE_HABIT
-           STATES, IN REVEAL ORDER:
-               NEW_V8_FS_07_TEN_MINUTE_HABIT.png
-           EXACT TRIGGER:
-               Once a month, take ten minutes and write down: What
-               changed? What was mine?
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V8_FS_07_TEN_MINUTE_HABIT.png   paragraph 1
+                   on: Once a month, take ten minutes and write down:
+                   on: What changed? What was mine?
+           RETURN: camera returns at the end of the paragraph
 
   PARA 2   MODE: CAMERA
            What was hard? What proof do I have? What would I be allow...
@@ -173,25 +266,38 @@ SECTION 9  WHEN THE EXIT IS SUDDEN
   PARA 1   MODE: CAMERA
            Sometimes you do not get much warning. A layoff can happen...
 
-  PARA 2   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN   [V8-C12]
+           ENTER ON: That is why keeping career evidence is not only something
+                      to do when you think a layoff is coming. It is a normal
+                      career habit.
+           LEAVE ON: That is why keeping career evidence is not only something
+                      to do when you think a layoff is coming. It is a normal
+                      career habit.
            ASSET FAMILY: NEW_V8_FS_08_CAREER_HYGIENE
-           STATES, IN REVEAL ORDER:
-               NEW_V8_FS_08_CAREER_HYGIENE.png
-           EXACT TRIGGER:
-               That is why keeping career evidence is not only something
-               to do when you think a layoff is coming. It is a normal
-               career habit.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V8_FS_08_CAREER_HYGIENE.png   paragraph 2
+                   on: That is why keeping career evidence is not only
+                   on: something to do when you think a layoff is coming.
+                   on: It is a normal career habit.
+           RETURN: camera returns at the end of the paragraph
 
 SECTION 10  EVIDENCE DOES NOT SOLVE EVERYTHING
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V8-C13]
+           ENTER ON: Good evidence will not remove every hiring problem. A
+                      future employer may still want a credential you do not
+                      have. They may want direct industry experience.
+           LEAVE ON: Good evidence will not remove every hiring problem. A
+                      future employer may still want a credential you do not
+                      have. They may want direct industry experience.
            ASSET FAMILY: NEW_V8_FS_09_STILL_NOT_ENOUGH
-           STATES, IN REVEAL ORDER:
-               NEW_V8_FS_09_STILL_NOT_ENOUGH.png
-           EXACT TRIGGER:
-               Good evidence will not remove every hiring problem. A
-               future employer may still want a credential you do not
-               have. They may want direct industry experience.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V8_FS_09_STILL_NOT_ENOUGH.png   paragraph 1
+                   on: Good evidence will not remove every hiring
+                   on: problem. A future employer may still want a
+                   on: credential you do not have. They may want direct
+                   on: industry experience.
+           RETURN: camera returns at the end of the paragraph
 
   PARA 2   MODE: CAMERA
            They may care about context you have not worked in. Bias c...
@@ -201,15 +307,23 @@ SECTION 11  EVIDENCE IS MORE THAN A NUMBER
   PARA 1   MODE: CAMERA
            Evidence is not only a metric. Sometimes the strongest pro...
 
-  PARA 2   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN   [V8-C14]
+           ENTER ON: You can still explain: how the process worked before, what
+                      you changed, what you were trusted to decide, what the
+                      organization could do afterward, and how the result was
+                      judged.
+           LEAVE ON: You can still explain: how the process worked before, what
+                      you changed, what you were trusted to decide, what the
+                      organization could do afterward, and how the result was
+                      judged.
            ASSET FAMILY: NEW_V8_FS_10_NOT_ONLY_A_METRIC
-           STATES, IN REVEAL ORDER:
-               NEW_V8_FS_10_NOT_ONLY_A_METRIC.png
-           EXACT TRIGGER:
-               You can still explain: how the process worked before, what
-               you changed, what you were trusted to decide, what the
-               organization could do afterward, and how the result was
-               judged.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V8_FS_10_NOT_ONLY_A_METRIC.png   paragraph 2
+                   on: You can still explain: how the process worked
+                   on: before, what you changed, what you were trusted to
+                   on: decide, what the organization could do afterward,
+                   on: and how the result was judged.
+           RETURN: camera returns at the end of the paragraph
 
   PARA 3   MODE: CAMERA
            That gives you more than, “I worked on transformation.” It...
@@ -221,20 +335,34 @@ SECTION 12  TAKEAWAY VALUE
 
 SECTION 13  STORY LOOP PAYOFF
 
-  PARA 1   MODE: CAMERA
-           That brings us back to the login screen. The system can di...
+  PARA 1   MODE: FULL SCREEN   [V8-T05]
+           ON-SCREEN: TRUE FULL-SCREEN CALLBACK, THEN CAMERA |
+                      ACCESS MAY END
+           ENTER ON: That brings us back to the login screen.
+           LEAVE ON: The system can disappear in a day.
+           ASSET FAMILY: NEW_V8_FS_00_ACCESS_UNAVAILABLE
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V8_FS_00_ACCESS_UNAVAILABLE.png   paragraph 1
+                   on: That brings us back to the login screen.
+           SOUND: No accent. The hook already used the lock sound and this is the same picture returning.
+           ACCENT WORD: none separately specified
+           RETURN: camera returns on 'Your understanding of your own work'
+           NOTE: The same illustrative login as the hook, at a
+                 second occurrence. One asset, two events.
 
 SECTION 14  CLOSE
 
   PARA 1   MODE: CAMERA
            Your company owns its systems. It may own the documents an...
 
-  PARA 2   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN   [V8-C15]
+           ENTER ON: Keep the proof. Not the property.
+           LEAVE ON: Keep the proof. Not the property.
            ASSET FAMILY: NEW_V8_FS_12_CTA
-           STATES, IN REVEAL ORDER:
-               NEW_V8_FS_12_CTA.png
-           EXACT TRIGGER:
-               Keep the proof. Not the property.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V8_FS_12_CTA.png   paragraph 2
+                   on: Keep the proof. Not the property.
+           RETURN: camera returns at the end of the paragraph
 
 SECTION 15  CONFIDENCE / VIEWER OUTCOME
 
@@ -243,14 +371,21 @@ SECTION 15  CONFIDENCE / VIEWER OUTCOME
 
 SECTION 16  WATCH NEXT
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V8-C16]
+           ENTER ON: And if you want to know what to capture before a layoff or
+                      sudden exit takes that access away, watch “Before a
+                      Layoff, Know What You Can Still Prove” next.
+           LEAVE ON: And if you want to know what to capture before a layoff or
+                      sudden exit takes that access away, watch “Before a
+                      Layoff, Know What You Can Still Prove” next.
            ASSET FAMILY: NEW_V8_WATCH_NEXT
-           STATES, IN REVEAL ORDER:
-               NEW_V8_WATCH_NEXT.png
-           EXACT TRIGGER:
-               And if you want to know what to capture before a layoff or
-               sudden exit takes that access away, watch “Before a
-               Layoff, Know What You Can Still Prove” next.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V8_WATCH_NEXT.png   paragraph 1
+                   on: And if you want to know what to capture before a
+                   on: layoff or sudden exit takes that access away,
+                   on: watch “Before a Layoff, Know What You Can Still
+                   on: Prove” next.
+           RETURN: camera returns at the end of the paragraph
 
 ------------------------------------------------------------------------------
 

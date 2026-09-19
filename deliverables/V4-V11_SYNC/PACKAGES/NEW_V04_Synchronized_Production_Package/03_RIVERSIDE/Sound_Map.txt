@@ -6,8 +6,12 @@ AI Took the Task. Who Gets the Experience?
 
 A stinger means a brief sound: a quiet click, a soft tap, paper
 movement or a restrained tonal accent. It is not a logo
-animation, a loud transition or a visual effect. A visual
-accent and a cutaway are separate choices.
+animation, a loud transition or a visual effect.
+
+Every row below is one event. Visual entry and the exact word
+the accent lands on are separate fields of that one event, not
+two sounds. Where an event names no accent word, the sound
+lands on the visual entry and nowhere else.
 
 Audition every cue under the actual recorded voice. Keep speech
 clear. No alarms, no loud whooshes, no compulsory music bed, no
@@ -16,63 +20,26 @@ carries the moment.
 
 ------------------------------------------------------------------------------
 
-THE FIVE ACCENTS
+EVERY SOUND EVENT, IN SPOKEN ORDER
 
-  S1
-      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
-          But those hours were not always wasted.
+  V4-O02   OPENING
       LOCATION: section 1, HOOK, paragraph 1
-      THE SOUND ITSELF FALLS ON: the scene entry above.
-          The brief names no separate accent word.
-      TREATMENT: TRUE FULL-SCREEN CUTAWAY | S1: brief sound stinger
+      VISUAL ENTERS ON:
+          But those hours were not always wasted.
+      THE ACCENT LANDS ON: the visual entry above.
+          No separate accent word is specified for this event.
+      TREATMENT: S1, one brief stinger on 'wasted'
 
-  S2
-      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
-          First, exposure.
-      LOCATION: section 6, THREE THINGS TO WATCH, paragraph 1
-      THE SOUND ITSELF FALLS ON: OWNERSHIP
-          section 6, THREE THINGS TO WATCH, paragraph 2
-          One accent on that word. Not one per bullet.
-      TREATMENT: THREE THINGS TO WATCH | S2
-
-  S3
-      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
-          the learning may have moved to a different part of the
-          work.
+  V4-T02   TEACHING
       LOCATION: section 7, A SIMPLE EXAMPLE, paragraph 2
-      THE SOUND ITSELF FALLS ON: the scene entry above.
-          The brief names no separate accent word.
-      TREATMENT: A SIMPLE EXAMPLE | S3
+      VISUAL ENTERS ON:
+          Now imagine AI builds the first model.
+      THE ACCENT LANDS ON THIS EXACT WORD:
+          the learning may have moved
+      TREATMENT: S3, one brief stinger as the card lands
 
-  S4
-      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
-          Pick one task AI now helps you do.
-      LOCATION: section 12, TRY THIS ON ONE TASK, paragraph 1
-      THE SOUND ITSELF FALLS ON: STILL MINE
-          section 12, TRY THIS ON ONE TASK, paragraph 1
-          One accent on that word. Not one per bullet.
-      TREATMENT: TRY THIS ON ONE TASK | S4
-
-  S5
-      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
-          what is the person still getting better at?
-      LOCATION: section 14, STORY LOOP PAYOFF, paragraph 1
-          appears 2 times; this is the occurrence in STORY LOOP
-          PAYOFF, which is the treatment this beat names
-      THE SOUND ITSELF FALLS ON: the scene entry above.
-          The brief names no separate accent word.
-      TREATMENT: STORY LOOP PAYOFF | S5
-
-------------------------------------------------------------------------------
-
-EARLY-EDIT SOUND EVENTS
-
-  Section numbers below are the reconciled script's, the same
-  numbering the camera map uses.
-
-  STEP 2  S1, one brief stinger on 'wasted'
-      on: But those hours were not always wasted.
-      section 1, paragraph 1
+  2 sound events in this video. Every one is a single event with
+  one visual entry and at most one accent word.
 
 ------------------------------------------------------------------------------
 

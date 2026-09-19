@@ -348,8 +348,9 @@ SHORTS = {
          "need to look at more closely.",
          "I use four questions for that: EXPECTED. ACTUAL. COST. "
          "CHOICE."],
-   ask=["If those two versions are different, name the difference before "
-        "you normalize it."]),
+   ask=["Write EXPECTED and ACTUAL side by side. Name one real cost. "
+        "Then choose one next action: clarify, negotiate, test for a "
+        "defined period, or begin planning another option."]),
  (11, 2): dict(
    stop=["Start with EXPECTED. What did you reasonably believe you were "
          "accepting? Not the perfect version you imagined."],
@@ -522,9 +523,9 @@ OPEN = {
 
  (11, 1): dict(text="This is not the job I thought I accepted.",
    visual="CAMERA", audio="accepted",
-   mid=[("Roles change. Priorities move.",
-         "NEW_V11_FS_05_TEMPORARY_OR_NOT")],
-   payoff="NEW_V11_FS_01_FOUR_QUESTIONS"),
+   mid=[("I use four questions for that: EXPECTED. ACTUAL. COST. CHOICE.",
+         "NEW_V11_FS_01_FOUR_QUESTIONS")],
+   payoff="NEW_V11_FS_00B_COST_AND_NEXT"),
  (11, 2): dict(text="Start with EXPECTED.",
    visual="NEW_V11_FS_02_WRITE_IT_DOWN", audio="EXPECTED",
    mid=[("And sometimes the actual role is narrower.",
@@ -732,8 +733,22 @@ def _instructions(text):
     return out
 
 
+# One approved exception, recorded rather than assumed. The role-drift
+# read is a single named procedure whose three steps only make sense
+# together, and it was approved as one practical action. It is matched
+# exactly, so nothing else is loosened by it.
+APPROVED_PROCEDURES = (
+ u"Write EXPECTED and ACTUAL side by side. Name one real cost. Then "
+ u"choose one next action: clarify, negotiate, test for a defined "
+ u"period, or begin planning another option.",
+)
+
+
 def actions(text):
     """The affirmative audience actions an ask contains."""
+    for proc in APPROVED_PROCEDURES:
+        if R.S._norm(proc).lower() == R.S._norm(text).lower():
+            return ["the role-drift read"]
     found = []
     for before, part in _instructions(text):
         rest = part.strip()

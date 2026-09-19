@@ -5,99 +5,169 @@ NEW PUBLIC V5  |  MOTION AND REVEAL MAP
 If Your Company Needs You but Won’t Grow You
 
 One active idea at a time. Establish the whole structure, then
-activate one component. Gentle push-ins and occasional
-pull-backs only. No constant zooming, pulsing or effects.
-Preserve meaningful pauses.
+activate one component on the words that name it. Gentle
+push-ins and occasional pull-backs only. No constant zooming,
+pulsing or effects. Preserve meaningful pauses.
+
+A state is never activated before its words are spoken, even
+when it belongs to a family that established earlier.
 
 ------------------------------------------------------------------------------
 
-NEW_V5_FS_01_NEEDED_NOT_GROWN
-  SECTION 1, PARAGRAPH 2
+NEW_V5_FS_01_NEEDED_NOT_GROWN   [V5-O02]
+  SECTION 1 HOOK
+  PARAGRAPH 2
   REVEAL ORDER:
-      1. NEW_V5_FS_01_NEEDED_NOT_GROWN.png
+      1. NEW_V5_FS_01_NEEDED_NOT_GROWN.png   paragraph 2
+             on: Something breaks, they call you.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns on 'Then a bigger opportunity opens'
 
-NEW_V5_FS_05_INDISPENSABLE_AND_LESS_PORTABLE
-  SECTION 4, PARAGRAPH 1
+NEW_V5_FS_05_INDISPENSABLE_AND_LESS_PORTABLE   [V5-C07]
+  SECTION 4 THE TRAP
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V5_FS_05_INDISPENSABLE_AND_LESS_PORTABLE.png
+      1. NEW_V5_FS_05_INDISPENSABLE_AND_LESS_PORTABLE.png   paragraph 1
+             on: Being useful can feel like career security.
+             on: Sometimes it is. But being very useful can also make
+             on: it hard for a team to imagine moving you.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V5_FS_02_NOT_ALIGNED
-  SECTION 4, PARAGRAPH 2
+NEW_V5_FS_02_NOT_ALIGNED   [V5-C08]
+  SECTION 4 THE TRAP
+  PARAGRAPH 2
   REVEAL ORDER:
-      1. NEW_V5_FS_02_NOT_ALIGNED.png
+      1. NEW_V5_FS_02_NOT_ALIGNED.png   paragraph 2
+             on: If you are the person holding everything together,
+             on: your manager may have a real reason to want you to
+             on: stay exactly where you are. That does not mean they
+             on: are plotting against you. It means what helps the
+             on: company today may not be the same thing that helps
+             on: your future.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V5_FS_03_WATCH_FOR_PATTERNS
-  SECTION 5, PARAGRAPH 1
+NEW_V5_FS_03_WATCH_FOR_PATTERNS   [V5-C09]
+  SECTION 5 WHAT THIS CAN LOOK LIKE
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V5_FS_03_WATCH_FOR_PATTERNS.png
+      1. NEW_V5_FS_03_WATCH_FOR_PATTERNS.png   paragraph 1
+             on: Look for a pattern. More rescue work. More people
+             on: asking you for help. More things that only you know
+             on: how to do. But no new decisions. No new kind of
+             on: problem. No project that stretches you in a
+             on: different way. No clear review of the extra work. No
+             on: real conversation about what comes next.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V5_FS_04_THE_QUESTION
-  SECTION 6, PARAGRAPH 1
+NEW_V5_FS_04_THE_QUESTION   [V5-C10]
+  SECTION 6 THE QUESTION TO ASK
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V5_FS_04_THE_QUESTION.png
+      1. NEW_V5_FS_04_THE_QUESTION.png   paragraph 1
+             on: Ask: What is this company building in me beyond my
+             on: ability to keep this role running?
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V5_FS_06_ASK_FOR_DEVELOPMENT
-  SECTION 8, PARAGRAPH 1
+NEW_V5_FS_06_ASK_FOR_DEVELOPMENT   [V5-T02]
+  SECTION 8 ASK FOR DEVELOPMENT, NOT ONLY MORE WORK
+  PARAGRAPHS 1 TO 2
   REVEAL ORDER:
-      1. NEW_V5_FS_06_ASK_FOR_DEVELOPMENT.png
+      1. NEW_V5_FS_06_ASK_FOR_DEVELOPMENT.png   paragraph 1
+             on: Ask for work that builds something new.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns for the request itself
 
-NEW_V5_FS_07_THE_ANSWER_MAY_BE_NO
-  SECTION 9, PARAGRAPH 1
+NEW_V5_FS_11_THE_REQUEST   [V5-T03]
+  SECTION 8 ASK FOR DEVELOPMENT, NOT ONLY MORE WORK
+  PARAGRAPH 3
   REVEAL ORDER:
-      1. NEW_V5_FS_07_THE_ANSWER_MAY_BE_NO.png
+      1. NEW_V5_FS_11_THE_REQUEST.png   paragraph 3
+             on: What could I own in the next six months
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at THE ANSWER MAY STILL BE NO
 
-NEW_V5_FS_08_DEPENDENCE_VS_DEVELOPMENT
-  SECTION 10, PARAGRAPH 1
+NEW_V5_FS_07_THE_ANSWER_MAY_BE_NO   [V5-C11]
+  SECTION 9 THE ANSWER MAY STILL BE NO
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V5_FS_08_DEPENDENCE_VS_DEVELOPMENT.png
+      1. NEW_V5_FS_07_THE_ANSWER_MAY_BE_NO.png   paragraph 1
+             on: There may be no budget. There may be no open role.
+             on: Your manager may truly need you where you are. Bias
+             on: may affect who gets opportunities. The company may
+             on: simply not have the path you need.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V5_FS_09_REVIEW_POINT
-  SECTION 11, PARAGRAPH 2
+NEW_V5_FS_08_DEPENDENCE_VS_DEVELOPMENT   [V5-C12]
+  SECTION 10 DEPENDENCE VERSUS DEVELOPMENT
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V5_FS_09_REVIEW_POINT.png
+      1. NEW_V5_FS_08_DEPENDENCE_VS_DEVELOPMENT.png   paragraph 1
+             on: Dependence sounds like: “We cannot do this without
+             on: you.”
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V5_FS_10_CTA
-  SECTION 15, PARAGRAPH 2
+NEW_V5_FS_09_REVIEW_POINT   [V5-T04]
+  SECTION 11 SET A REVIEW POINT
+  PARAGRAPHS 1 TO 3
   REVEAL ORDER:
-      1. NEW_V5_FS_10_CTA.png
+      1. NEW_V5_FS_09_REVIEW_POINT.png   paragraph 1
+             on: Let’s come back to this in 90 days.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns on 'Without a review point'
 
-NEW_V5_WATCH_NEXT
-  SECTION 17, PARAGRAPH 1
+NEW_V5_FS_10_CTA   [V5-C13]
+  SECTION 15 CLOSE
+  PARAGRAPH 2
   REVEAL ORDER:
-      1. NEW_V5_WATCH_NEXT.png
+      1. NEW_V5_FS_10_CTA.png   paragraph 2
+             on: So if your company keeps showing you how much it
+             on: needs you, ask one more question: Is this work also
+             on: making me more capable, more visible, or more useful
+             on: somewhere else? If not, being useful may be part of
+             on: why you feel stuck.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
+
+NEW_V5_WATCH_NEXT   [V5-C14]
+  SECTION 17 WATCH NEXT
+  PARAGRAPH 1
+  REVEAL ORDER:
+      1. NEW_V5_WATCH_NEXT.png   paragraph 1
+             on: And if you are carrying more because people know you
+             on: will get it done, watch “It Took Me Years to Stop
+             on: Mistaking More Work for Career Growth” next.
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+  RETURN:   camera returns at the end of the paragraph
 
 ------------------------------------------------------------------------------
 

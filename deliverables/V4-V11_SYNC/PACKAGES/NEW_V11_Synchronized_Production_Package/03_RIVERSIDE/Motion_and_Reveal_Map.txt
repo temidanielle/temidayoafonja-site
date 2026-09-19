@@ -5,136 +5,252 @@ NEW PUBLIC V11  |  MOTION AND REVEAL MAP
 What to Do When Your New Job Isn’t the Job You Accepted
 
 One active idea at a time. Establish the whole structure, then
-activate one component. Gentle push-ins and occasional
-pull-backs only. No constant zooming, pulsing or effects.
-Preserve meaningful pauses.
+activate one component on the words that name it. Gentle
+push-ins and occasional pull-backs only. No constant zooming,
+pulsing or effects. Preserve meaningful pauses.
+
+A state is never activated before its words are spoken, even
+when it belongs to a family that established earlier.
 
 ------------------------------------------------------------------------------
 
-NEW_V11_FS_00_ACCEPTED_AND_DOING
-  SECTION 1, PARAGRAPH 1
+NEW_V11_FS_00_ACCEPTED_AND_DOING   [V11-O02]
+  SECTION 1 HOOK
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V11_FS_00_ACCEPTED_AND_DOING.png
+      1. NEW_V11_FS_00_ACCEPTED_AND_DOING.png   paragraph 1
+             on: Then you started doing another.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns on 'But three or six weeks in'
 
-NEW_V11_FS_01_FOUR_QUESTIONS
-  SECTION 1, PARAGRAPH 3
+NEW_V11_FS_01_FOUR_QUESTIONS   [V11-O05]
+  SECTION 1 HOOK
+  PARAGRAPH 3
   REVEAL ORDER:
-      1. NEW_V11_FS_01_ESTABLISH.png
-      2. NEW_V11_FS_01A_EXPECTED.png
-      3. NEW_V11_FS_01B_ACTUAL.png
-      4. NEW_V11_FS_01C_COST.png
-      5. NEW_V11_FS_01D_CHOICE.png
+      1. NEW_V11_FS_01_ESTABLISH.png   paragraph 3
+             on: I use four questions for that: EXPECTED. ACTUAL.
+             on: COST. CHOICE.
+      2. NEW_V11_FS_01A_EXPECTED.png   paragraph 3
+             on: I use four questions for that: EXPECTED. ACTUAL.
+             on: COST. CHOICE.
+      3. NEW_V11_FS_01B_ACTUAL.png   paragraph 3
+             on: I use four questions for that: EXPECTED. ACTUAL.
+             on: COST. CHOICE.
+      4. NEW_V11_FS_01C_COST.png   paragraph 3
+             on: I use four questions for that: EXPECTED. ACTUAL.
+             on: COST. CHOICE.
+      5. NEW_V11_FS_01D_CHOICE.png   paragraph 3
+             on: I use four questions for that: EXPECTED. ACTUAL.
+             on: COST. CHOICE.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns on 'By the end of this video'
 
-NEW_V11_FS_02_WRITE_IT_DOWN
-  SECTION 4, PARAGRAPH 2
+NEW_V11_FS_02_WRITE_IT_DOWN   [V11-C09]
+  SECTION 4 1 | EXPECTED
+  PARAGRAPH 2
   REVEAL ORDER:
-      1. NEW_V11_FS_02_WRITE_IT_DOWN.png
+      1. NEW_V11_FS_02_WRITE_IT_DOWN.png   paragraph 2
+             on: Write down the parts that mattered to your decision.
+             on: Scope. Authority. Reporting line. Location. Travel.
+             on: Compensation. Team. The kind of work you expected to
+             on: spend meaningful time doing.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V11_FS_03_EXPECTED_VS_ACTUAL
-  SECTION 5, PARAGRAPH 4
+NEW_V11_FS_03_EXPECTED_VS_ACTUAL   [V11-C10]
+  SECTION 5 2 | ACTUAL
+  PARAGRAPH 4
   REVEAL ORDER:
-      1. NEW_V11_FS_03A_BOTH_DIRECTIONS.png
-      2. NEW_V11_FS_03B_NARROWER.png
+      1. NEW_V11_FS_03A_BOTH_DIRECTIONS.png   paragraph 4
+             on: And sometimes the actual role is narrower. You were
+             on: hired for strategy and spend most of your time
+             on: coordinating. You expected to lead a team and the
+             on: team never arrived. You were told a decision was
+             on: yours and discover that you can only recommend.
+      2. NEW_V11_FS_03B_NARROWER.png   paragraph 4
+             on: And sometimes the actual role is narrower. You were
+             on: hired for strategy and spend most of your time
+             on: coordinating. You expected to lead a team and the
+             on: team never arrived. You were told a decision was
+             on: yours and discover that you can only recommend.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V11_FS_04_THE_REAL_QUESTION
-  SECTION 5, PARAGRAPH 5
+NEW_V11_FS_04_THE_REAL_QUESTION   [V11-C11]
+  SECTION 5 2 | ACTUAL
+  PARAGRAPH 5
   REVEAL ORDER:
-      1. NEW_V11_FS_04_THE_REAL_QUESTION.png
+      1. NEW_V11_FS_04_THE_REAL_QUESTION.png   paragraph 5
+             on: The question is not, “Is this exactly what was
+             on: written?” The better question is, “Is the job I am
+             on: doing still close enough to the job I agreed to
+             on: build my life and career around?”
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V11_FS_05_TEMPORARY_OR_NOT
-  SECTION 6, PARAGRAPH 2
+NEW_V11_FS_05_TEMPORARY_OR_NOT   [V11-C12]
+  SECTION 6 3 | COST
+  PARAGRAPH 2
   REVEAL ORDER:
-      1. NEW_V11_FS_05_TEMPORARY_OR_NOT.png
+      1. NEW_V11_FS_05_TEMPORARY_OR_NOT.png   paragraph 2
+             on: Imagine you expected a strategic role, but the first
+             on: month is unusually operational because a launch is
+             on: underway. That may be temporary. Now imagine six
+             on: months later the strategic work still has not
+             on: appeared, you are still doing work you already knew
+             on: how to do, and there is no credible path to the
+             on: scope you accepted.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V11_FS_06_FOUR_COST_LENSES
-  SECTION 7, PARAGRAPH 1
+NEW_V11_FS_06_FOUR_COST_LENSES   [V11-T03]
+  SECTION 7 THE FOUR COST LENSES
+  PARAGRAPHS 1 TO 2
   REVEAL ORDER:
-      1. NEW_V11_FS_06_ESTABLISH.png
-      2. NEW_V11_FS_06A_CAPABILITY.png
-      3. NEW_V11_FS_06B_EVIDENCE.png
-      4. NEW_V11_FS_06C_COMPENSATION.png
-      5. NEW_V11_FS_06D_LIFE.png
+      1. NEW_V11_FS_06_ESTABLISH.png   paragraph 1
+             on: I would look at four costs.
+      2. NEW_V11_FS_06A_CAPABILITY.png   paragraph 1
+             on: CAPABILITY.
+      3. NEW_V11_FS_06B_EVIDENCE.png   paragraph 1
+             on: EVIDENCE.
+      4. NEW_V11_FS_06C_COMPENSATION.png   paragraph 2
+             on: COMPENSATION.
+      5. NEW_V11_FS_06D_LIFE.png   paragraph 2
+             on: LIFE.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns on 'A mismatch can be manageable in one category'
 
-NEW_V11_FS_07_CLARIFICATION_SCRIPT
-  SECTION 8, PARAGRAPH 2
+NEW_V11_FS_07_CLARIFICATION_SCRIPT   [V11-C13]
+  SECTION 8 4 | CHOICE
+  PARAGRAPH 2
   REVEAL ORDER:
-      1. NEW_V11_FS_07_CLARIFICATION_SCRIPT.png
+      1. NEW_V11_FS_07_CLARIFICATION_SCRIPT.png   paragraph 2
+             on: I would say something like: “When we discussed this
+             on: role, I expected X. In practice, I am seeing Y. Is
+             on: that temporary, or is this the role as it now
+             on: exists?” That question gives the other person room
+             on: to explain what changed without requiring you to
+             on: pretend the difference is not real.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V11_FS_08_TWO_EXTREMES
-  SECTION 9, PARAGRAPH 1
+NEW_V11_FS_08_TWO_EXTREMES   [V11-C14]
+  SECTION 9 WHAT NOT TO DO
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V11_FS_08_TWO_EXTREMES.png
+      1. NEW_V11_FS_08_TWO_EXTREMES.png   paragraph 1
+             on: I would avoid two extremes. Do not convince yourself
+             on: that every mismatch is a betrayal. A job can change
+             on: for legitimate reasons.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V11_FS_09_THE_ROLE_DRIFT_READ
-  SECTION 10, PARAGRAPH 1
+NEW_V11_FS_09_THE_ROLE_DRIFT_READ   [V11-T05A]
+  SECTION 10 THE ROLE-DRIFT READ
+  PARAGRAPHS 1 TO 2
   REVEAL ORDER:
-      1. NEW_V11_FS_09_ESTABLISH.png
-      2. NEW_V11_FS_09A_EXPECTED.png
-      3. NEW_V11_FS_09B_ACTUAL.png
-      4. NEW_V11_FS_09C_COST.png
-      5. NEW_V11_FS_09D_CHOICE.png
+      1. NEW_V11_FS_09_ESTABLISH.png   paragraph 1
+             on: So put the four lines next to each other.
+      2. NEW_V11_FS_09A_EXPECTED.png   paragraph 1
+             on: EXPECTED.
+      3. NEW_V11_FS_09B_ACTUAL.png   paragraph 1
+             on: ACTUAL.
+      4. NEW_V11_FS_09C_COST.png   paragraph 2
+             on: COST.
+      5. NEW_V11_FS_09D_CHOICE.png   paragraph 2
+             on: CHOICE.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns on 'That is a role-drift read.'
 
-NEW_V11_FS_10_THE_BOUNDARY
-  SECTION 11, PARAGRAPH 1
+NEW_V11_FS_10_THE_BOUNDARY   [V11-C15]
+  SECTION 11 THE BOUNDARY
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V11_FS_10_THE_BOUNDARY.png
+      1. NEW_V11_FS_10_THE_BOUNDARY.png   paragraph 1
+             on: This framework does not tell you whether to leave.
+             on: Sometimes the right choice is to stay because the
+             on: drift is temporary or the actual role is better than
+             on: the expected one. Sometimes you stay because leaving
+             on: is not practical yet.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V11_FS_11_YOUR_CONSTRAINTS
-  SECTION 11, PARAGRAPH 2
+NEW_V11_FS_11_YOUR_CONSTRAINTS   [V11-C16]
+  SECTION 11 THE BOUNDARY
+  PARAGRAPH 2
   REVEAL ORDER:
-      1. NEW_V11_FS_11_YOUR_CONSTRAINTS.png
+      1. NEW_V11_FS_11_YOUR_CONSTRAINTS.png   paragraph 2
+             on: And sometimes the gap is large enough that you need
+             on: to plan an exit. Your constraints are real.
+             on: Compensation, health, caregiving, immigration,
+             on: geography, timing, the market, and financial runway
+             on: can all shape what is possible. The goal is not to
+             on: force a dramatic decision. It is to make the
+             on: decision from the job that actually exists.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
 
-NEW_V11_FS_12_NAME_THE_DIFFERENCE
-  SECTION 14, PARAGRAPH 1
+NEW_V11_FS_00B_COST_AND_NEXT   [V11-T05B]
+  SECTION 12 TAKEAWAY VALUE
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V11_FS_12_NAME_THE_DIFFERENCE.png
+      1. NEW_V11_FS_00B_COST_AND_NEXT.png   paragraph 1
+             on: Name one real cost.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at STORY LOOP PAYOFF
 
-NEW_V11_WATCH_NEXT
-  SECTION 16, PARAGRAPH 1
+NEW_V11_FS_12_NAME_THE_DIFFERENCE   [V11-C17]
+  SECTION 14 CLOSE
+  PARAGRAPH 1
   REVEAL ORDER:
-      1. NEW_V11_WATCH_NEXT.png
+      1. NEW_V11_FS_12_NAME_THE_DIFFERENCE.png   paragraph 1
+             on: The job description got you into the role. The first
+             on: few months tell you what the role really is. If
+             on: those two versions are different, name the
+             on: difference before you normalize it.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
+  RETURN:   camera returns at the end of the paragraph
+
+NEW_V11_WATCH_NEXT   [V11-C18]
+  SECTION 16 WATCH NEXT
+  PARAGRAPH 1
+  REVEAL ORDER:
+      1. NEW_V11_WATCH_NEXT.png   paragraph 1
+             on: And if the role is depending on you more and more
+             on: without building anything new in you, watch “If Your
+             on: Company Needs You but Won’t Grow You” next.
+  EMPHASIS: active item in the warm yellow wash with the
+            rust rule. Everything else quiet. Never two
+            active at once.
+  RETURN:   camera returns at the end of the paragraph
 
 ------------------------------------------------------------------------------
 

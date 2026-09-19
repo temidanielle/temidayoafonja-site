@@ -4,7 +4,7 @@ NEW PUBLIC V7  |  RIVERSIDE CO-CREATOR MASTER PROMPT
 
 I’ve Seen Who Gets the Bigger Role and Why
 Thumbnail: THEY CHOSE SOMEONE ELSE
-Generated Thursday, September 17, 2026 | 12:57 PM CT
+Generated Saturday, September 19, 2026 | 6:36 AM CT
 
 1,170 spoken words. Planning estimate 8:04 to 9:00 at 130 to
 145 words per minute, provisional and arithmetic only. Nothing
@@ -52,79 +52,410 @@ HOW TO USE THIS
 
 ------------------------------------------------------------------------------
 
-OPENING SEQUENCE, EXECUTABLE
+THE EVENT LIST
 
-  Work these steps in order before the first teaching moment.
-  Each one names where it starts and stops inside the spoken
-  paragraph, so no passage is left to be reconciled between two
-  maps.
+  This is the whole edit, in spoken order. The camera map, the
+  motion map, the sound map and the asset index are generated
+  from these same events, so none of them can tell you
+  something different. Where a paragraph is not named below,
+  stay on camera.
 
-  STEP 1  |  CAMERA
+  An event carries its own id. A family may appear in more
+  than one event, at different points in the video: that is a
+  reuse, not a contradiction.
+
+  V7-O01  |  CAMERA  |  OPENING
+      LOCATION: section 1 HOOK, paragraph 1
       ON-SCREEN TEXT:
           TWO CAPABLE PEOPLE
-      ENTER ON THESE WORDS, section 1 HOOK, paragraph 1:
+      ENTER ON THESE WORDS:
           Two people can both be good at their jobs.
       LEAVE ON THESE WORDS, paragraph 1:
           Two people can both be good at their jobs.
-      ASSET: none. Editorial text over camera.
-      SOUND: none
+      ASSET: none. Camera, with any editorial text over it.
+      SOUND: none.
       RETURN: cuts away within the paragraph
       NOTE:
           Her voice and face first. The cutaway follows inside the
           same thought, not after all the setup.
 
-  STEP 2  |  FULL SCREEN
+  V7-O02  |  FULL SCREEN  |  OPENING
+      LOCATION: section 1 HOOK, paragraph 1
       ON-SCREEN TEXT:
           TWO CAPABLE PEOPLE
-      ENTER ON THESE WORDS, section 1 HOOK, paragraph 1:
+      ENTER ON THESE WORDS:
           Both dependable.
       LEAVE ON THESE WORDS, paragraph 1:
           Both working hard.
       ASSET FAMILY: NEW_V7_FS_00_TWO_CAPABLE_PEOPLE
-      STATES, IN REVEAL ORDER:
-          NEW_V7_FS_00_TWO_CAPABLE_PEOPLE.png
-          NEW_V7_FS_00B_ONE_NAME_COMES_UP.png
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V7_FS_00_TWO_CAPABLE_PEOPLE.png   paragraph 1
+              on: Both dependable.
+          NEW_V7_FS_00B_ONE_NAME_COMES_UP.png   paragraph 1
+              on: Both dependable.
       SOUND: S1, one brief stinger as the pair establishes
+      ACCENT WORD: none separately specified; the sound lands on the entry
       RETURN: holds into the next paragraph
       NOTE:
           Two identical cards. Nothing distinguishes them.
 
-  STEP 3  |  FULL SCREEN
+  V7-O03  |  FULL SCREEN  |  OPENING
+      LOCATION: section 1 HOOK, paragraph 2
       ON-SCREEN TEXT:
           ONE NAME COMES UP
-      ENTER ON THESE WORDS, section 1 HOOK, paragraph 2:
+      ENTER ON THESE WORDS:
           One person’s name comes up.
       LEAVE ON THESE WORDS, paragraph 2:
           The other person’s does not.
       ASSET FAMILY: NEW_V7_FS_00_TWO_CAPABLE_PEOPLE
-      STATES, IN REVEAL ORDER:
-          NEW_V7_FS_00_TWO_CAPABLE_PEOPLE.png
-          NEW_V7_FS_00B_ONE_NAME_COMES_UP.png
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V7_FS_00_TWO_CAPABLE_PEOPLE.png   paragraph 2
+              on: One person’s name comes up.
+          NEW_V7_FS_00B_ONE_NAME_COMES_UP.png   paragraph 2
+              on: One person’s name comes up.
       SOUND: S2, one quiet accent as the outcome line arrives
+      ACCENT WORD: none separately specified; the sound lands on the entry
       RETURN: camera returns on 'I have seen versions of that happen'
       NOTE:
           The outcome line appears beneath the unchanged pair. No
           taller figure, score, trophy or better-person symbol.
 
-  STEP 4  |  FULL SCREEN
+  V7-O04  |  FULL SCREEN  |  OPENING
+      LOCATION: section 1 HOOK, paragraph 3
       ON-SCREEN TEXT:
           NOT ALWAYS ABOUT WORKING HARDER
-      ENTER ON THESE WORDS, section 1 HOOK, paragraph 3:
+      ENTER ON THESE WORDS:
           the difference is not always who worked harder
       LEAVE ON THESE WORDS, paragraph 3:
           evidence people can already see at the next level.
       ASSET FAMILY: NEW_V7_FS_01_NOT_ALWAYS_WHO_WORKED_HARDER
-      STATES, IN REVEAL ORDER:
-          NEW_V7_FS_01_NOT_ALWAYS_WHO_WORKED_HARDER.png
-      SOUND: none
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V7_FS_01_NOT_ALWAYS_WHO_WORKED_HARDER.png   paragraph 3
+              on: the difference is not always who worked harder
+      SOUND: none.
       RETURN: camera returns on 'And sometimes the difference has nothing to do with capability at all'
       NOTE:
           Access, sponsorship, bias and politics stay on camera,
           not under a merit graphic.
 
+  V7-C08  |  FULL SCREEN  |  CUE
+      LOCATION: section 4 WHAT HAPPENS BEFORE THE TITLE, paragraph 3
+      ENTER ON THESE WORDS:
+          In that moment, people are not only asking: “Who is
+          good?” They are also asking: “Who do I trust with this
+          level of work?” Those are different questions.
+      LEAVE ON THESE WORDS, paragraph 3:
+          In that moment, people are not only asking: “Who is
+          good?” They are also asking: “Who do I trust with this
+          level of work?” Those are different questions.
+      ASSET FAMILY: NEW_V7_FS_02_TWO_QUESTIONS
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V7_FS_02_TWO_QUESTIONS.png   paragraph 3
+              on: In that moment, people are not only asking: “Who
+              on: is good?” They are also asking: “Who do I trust
+              on: with this level of work?” Those are different
+              on: questions.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V7-C09  |  FULL SCREEN  |  CUE
+      LOCATION: section 5 WHAT PEOPLE OFTEN TRY, paragraph 2
+      ENTER ON THESE WORDS:
+          That can help your reputation. But it does not
+          automatically show that you are ready for the next kind
+          of work. You can become more useful without becoming
+          easier to picture at the next level.
+      LEAVE ON THESE WORDS, paragraph 2:
+          That can help your reputation. But it does not
+          automatically show that you are ready for the next kind
+          of work. You can become more useful without becoming
+          easier to picture at the next level.
+      ASSET FAMILY: NEW_V7_FS_03_USEFUL_NOT_PICTURED
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V7_FS_03_USEFUL_NOT_PICTURED.png   paragraph 2
+              on: That can help your reputation. But it does not
+              on: automatically show that you are ready for the next
+              on: kind of work. You can become more useful without
+              on: becoming easier to picture at the next level.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V7-T01  |  FULL SCREEN  |  TEACHING
+      LOCATION: section 6 FOUR THINGS I LOOK FOR, paragraphs 1 to 5
+      ON-SCREEN TEXT:
+          TRUE FULL-SCREEN TEACHING | VISIBLE PROOF / JUDGMENT /
+          TRUST / SPONSORSHIP
+      ENTER ON THESE WORDS:
+          When I have seen bigger work handed out, I tend to look
+          at four things.
+      LEAVE ON THESE WORDS, paragraph 5:
+          That last part matters.
+      ASSET FAMILY: NEW_V7_FS_04_FOUR_THINGS
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V7_FS_04_FOUR_THINGS.png   paragraph 1
+              on: I tend to look at four things.
+          NEW_V7_FS_04A_VISIBLE_PROOF.png   paragraph 2
+              on: First, visible proof.
+          NEW_V7_FS_04B_JUDGMENT.png   paragraph 3
+              on: Second, judgment.
+          NEW_V7_FS_04C_TRUST.png   paragraph 4
+              on: Third, trust.
+          NEW_V7_FS_04D_SPONSORSHIP.png   paragraph 5
+              on: Fourth, sponsorship and access.
+      SOUND: S3, one accent as the four establish. Not one per item.
+      ACCENT WORD: I tend to look at four things.
+      RETURN: camera returns on 'Bias matters. Relationships matter.'
+      NOTE:
+          One item per paragraph, on the words that name it. The
+          boundary about bias and access is hers, on camera.
+
+  V7-C10  |  FULL SCREEN  |  CUE
+      LOCATION: section 6 FOUR THINGS I LOOK FOR, paragraph 6
+      ENTER ON THESE WORDS:
+          Bias matters. Relationships matter. Manager support
+          matters. Access to good assignments matters. So I do not
+          want to pretend this is only about merit.
+      LEAVE ON THESE WORDS, paragraph 6:
+          Bias matters. Relationships matter. Manager support
+          matters. Access to good assignments matters. So I do not
+          want to pretend this is only about merit.
+      ASSET FAMILY: NEW_V7_FS_05_NOT_MERIT
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V7_FS_05_NOT_MERIT.png   paragraph 6
+              on: Bias matters. Relationships matter. Manager
+              on: support matters. Access to good assignments
+              on: matters. So I do not want to pretend this is only
+              on: about merit.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V7-C11  |  FULL SCREEN  |  CUE
+      LOCATION: section 7 WHY GOOD PEOPLE CAN GET STUCK, paragraph 2
+      ENTER ON THESE WORDS:
+          Your value is real. The problem may be that the evidence
+          people see is evidence for your current role, not the
+          next one.
+      LEAVE ON THESE WORDS, paragraph 2:
+          Your value is real. The problem may be that the evidence
+          people see is evidence for your current role, not the
+          next one.
+      ASSET FAMILY: NEW_V7_FS_06_EVIDENCE_FOR_WHICH_ROLE
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V7_FS_06_EVIDENCE_FOR_WHICH_ROLE.png   paragraph 2
+              on: Your value is real. The problem may be that the
+              on: evidence people see is evidence for your current
+              on: role, not the next one.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V7-C12  |  FULL SCREEN  |  CUE
+      LOCATION: section 8 ASK FOR THE RIGHT KIND OF WORK, paragraph 2
+      ENTER ON THESE WORDS:
+          What decisions will I get to make? What problem will I
+          own from beginning to end? What level of stakeholder
+          will I work with? What evidence would show that I am
+          ready for the next level?
+      LEAVE ON THESE WORDS, paragraph 2:
+          What decisions will I get to make? What problem will I
+          own from beginning to end? What level of stakeholder
+          will I work with? What evidence would show that I am
+          ready for the next level?
+      ASSET FAMILY: NEW_V7_FS_07_ASK_WHAT_KIND
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V7_FS_07_ASK_WHAT_KIND.png   paragraph 2
+              on: What decisions will I get to make? What problem
+              on: will I own from beginning to end? What level of
+              on: stakeholder will I work with? What evidence would
+              on: show that I am ready for the next level?
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V7-C13  |  FULL SCREEN  |  CUE
+      LOCATION: section 8 ASK FOR THE RIGHT KIND OF WORK, paragraph 3
+      ENTER ON THESE WORDS:
+          That changes the question from: “Can I help more?” to:
+          “What would let me practice the next level of work?”
+      LEAVE ON THESE WORDS, paragraph 3:
+          That changes the question from: “Can I help more?” to:
+          “What would let me practice the next level of work?”
+      ASSET FAMILY: NEW_V7_FS_08_CHANGES_THE_CONVERSATION
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V7_FS_08_CHANGES_THE_CONVERSATION.png   paragraph 3
+              on: That changes the question from: “Can I help more?”
+              on: to: “What would let me practice the next level of
+              on: work?”
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V7-T02  |  FULL SCREEN  |  TEACHING
+      LOCATION: section 9 A CONVERSATION YOU CAN HAVE, paragraphs 1 to 2
+      ON-SCREEN TEXT:
+          TRUE FULL-SCREEN CONVERSATION | ASK FOR A CLEARER TARGET
+      ENTER ON THESE WORDS:
+          You could say: “I want to be ready for larger scope.
+      LEAVE ON THESE WORDS, paragraph 2:
+          “What kind of stakeholder?”
+      ASSET FAMILY: NEW_V7_FS_14_A_CLEARER_TARGET
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V7_FS_14_A_CLEARER_TARGET.png   paragraph 1
+              on: what would you need to see me handle that you have
+              on: not seen yet?
+      SOUND: S4, one quiet accent as the question appears
+      ACCENT WORD: what would you need to see me handle that you have not seen yet?
+      RETURN: camera returns on 'You are not asking for a promise.'
+      NOTE:
+          The brief asks for this treatment and no delivered state
+          carried the question, so one was built from the spoken
+          words.
+
+  V7-C14  |  FULL SCREEN  |  CUE
+      LOCATION: section 10 WHAT THIS CANNOT FIX, paragraph 1
+      ENTER ON THESE WORDS:
+          Even if you build the right evidence, you may still not
+          get the opportunity. Organizations are not clean
+          systems. There can be politics, bias, favoritism, bad
+          timing, budget limits, headcount rules, or a manager who
+          does not want to lose a strong person.
+      LEAVE ON THESE WORDS, paragraph 1:
+          Even if you build the right evidence, you may still not
+          get the opportunity. Organizations are not clean
+          systems. There can be politics, bias, favoritism, bad
+          timing, budget limits, headcount rules, or a manager who
+          does not want to lose a strong person.
+      ASSET FAMILY: NEW_V7_FS_09_THE_BOUNDARY
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V7_FS_09_THE_BOUNDARY.png   paragraph 1
+              on: Even if you build the right evidence, you may
+              on: still not get the opportunity. Organizations are
+              on: not clean systems. There can be politics, bias,
+              on: favoritism, bad timing, budget limits, headcount
+              on: rules, or a manager who does not want to lose a
+              on: strong person.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V7-C15  |  FULL SCREEN  |  CUE
+      LOCATION: section 10 WHAT THIS CANNOT FIX, paragraph 2
+      ENTER ON THESE WORDS:
+          The point is not to blame yourself for every outcome.
+          The point is to separate: what you can build, what you
+          can ask for, and what the organization may not be
+          willing to give you.
+      LEAVE ON THESE WORDS, paragraph 2:
+          The point is not to blame yourself for every outcome.
+          The point is to separate: what you can build, what you
+          can ask for, and what the organization may not be
+          willing to give you.
+      ASSET FAMILY: NEW_V7_FS_10_SEPARATE_THREE_THINGS
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V7_FS_10_SEPARATE_THREE_THINGS.png   paragraph 2
+              on: The point is not to blame yourself for every
+              on: outcome. The point is to separate: what you can
+              on: build, what you can ask for, and what the
+              on: organization may not be willing to give you.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V7-T03  |  FULL SCREEN  |  TEACHING
+      LOCATION: section 11 READ YOUR OWN SITUATION, paragraphs 1 to 2
+      ON-SCREEN TEXT:
+          TRUE FULL-SCREEN WORKING NOTE | PROBLEM / MY DECISION /
+          WHO SAW IT / WHAT CHANGED
+      ENTER ON THESE WORDS:
+          Write down the last three times you were trusted with
+          something bigger than your normal role.
+      LEAVE ON THESE WORDS, paragraph 2:
+          What changed because of my work?
+      ASSET FAMILY: NEW_V7_FS_11_READ_YOUR_OWN_SITUATION
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V7_FS_11_READ_YOUR_OWN_SITUATION.png   paragraph 2
+              on: What problem was I trusted with?
+      SOUND: none.
+      RETURN: camera returns on 'Then look for what is missing.'
+      NOTE:
+          The instruction is in paragraph 1 and the four questions
+          are in paragraph 2. The card enters with the
+          instruction.
+
+  V7-C16  |  FULL SCREEN  |  CUE
+      LOCATION: section 11 READ YOUR OWN SITUATION, paragraph 3
+      ENTER ON THESE WORDS:
+          Then look for what is missing. Maybe you have strong
+          proof, but nobody senior has seen it. Maybe people trust
+          your execution, but you have not had much chance to show
+          your judgment. Maybe you have done the work, but your
+          title still shapes how people see you. Now you have
+          something more useful than simply saying, “I need to
+          work harder.”
+      LEAVE ON THESE WORDS, paragraph 3:
+          Then look for what is missing. Maybe you have strong
+          proof, but nobody senior has seen it. Maybe people trust
+          your execution, but you have not had much chance to show
+          your judgment. Maybe you have done the work, but your
+          title still shapes how people see you. Now you have
+          something more useful than simply saying, “I need to
+          work harder.”
+      ASSET FAMILY: NEW_V7_FS_12_THE_MISSING_LINE
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V7_FS_12_THE_MISSING_LINE.png   paragraph 3
+              on: Then look for what is missing. Maybe you have
+              on: strong proof, but nobody senior has seen it. Maybe
+              on: people trust your execution, but you have not had
+              on: much chance to show your judgment. Maybe you have
+              on: done the work, but your title still shapes how
+              on: people see you. Now you have something more useful
+              on: than simply saying, “I need to work harder.”
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V7-C17  |  FULL SCREEN  |  CUE
+      LOCATION: section 15 CLOSE, paragraph 2
+      ENTER ON THESE WORDS:
+          What proof of the next level is visible? What judgment
+          have I already been allowed to practice? Who has seen
+          it? And what is this organization actually rewarding?
+      LEAVE ON THESE WORDS, paragraph 2:
+          What proof of the next level is visible? What judgment
+          have I already been allowed to practice? Who has seen
+          it? And what is this organization actually rewarding?
+      ASSET FAMILY: NEW_V7_FS_13_CTA
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V7_FS_13_CTA.png   paragraph 2
+              on: What proof of the next level is visible? What
+              on: judgment have I already been allowed to practice?
+              on: Who has seen it? And what is this organization
+              on: actually rewarding?
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V7-C18  |  FULL SCREEN  |  END
+      LOCATION: section 17 WATCH NEXT, paragraph 1
+      ENTER ON THESE WORDS:
+          And if the frustrating part is that your work is clearly
+          valued but you still keep getting overlooked, watch
+          “What to Do When Your Work Is Valued but You Are
+          Overlooked” next.
+      LEAVE ON THESE WORDS, paragraph 1:
+          And if the frustrating part is that your work is clearly
+          valued but you still keep getting overlooked, watch
+          “What to Do When Your Work Is Valued but You Are
+          Overlooked” next.
+      ASSET FAMILY: NEW_V7_WATCH_NEXT
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V7_WATCH_NEXT.png   paragraph 1
+              on: And if the frustrating part is that your work is
+              on: clearly valued but you still keep getting
+              on: overlooked, watch “What to Do When Your Work Is
+              on: Valued but You Are Overlooked” next.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
 ------------------------------------------------------------------------------
 
-OPENING TREATMENT, FROM THE BRIEF
+WHAT EACH BEAT OF THE BRIEF ASKED FOR
+
+  Kept for provenance. The event list above is the
+  instruction.
 
   1. CAMERA, THEN TRUE FULL-SCREEN CUTAWAY  |  S1: brief sound stinger
      DISPLAY COPY:
@@ -165,10 +496,6 @@ OPENING TREATMENT, FROM THE BRIEF
          Keep the activities. Show why the viewer would do them and
          the specific answer, note, or conversation they leave with.
          Do not replace practical teaching with bigger promises.
-
-------------------------------------------------------------------------------
-
-TEACHING MOMENTS
 
   1. FOUR THINGS I LOOK FOR  |  S3
      DISPLAY COPY:
@@ -225,7 +552,7 @@ TEACHING MOMENTS
 
 ASSETS IN THIS PACKAGE
 
-  15 full-screen families, 20 rendered teaching and end-card
+  16 full-screen families, 21 rendered teaching and end-card
   states, all 1920 x 1080. One phone-size contact sheet sits
   beside them and is not a state.
 

@@ -6,8 +6,12 @@ I’ve Seen Who Gets the Bigger Role and Why
 
 A stinger means a brief sound: a quiet click, a soft tap, paper
 movement or a restrained tonal accent. It is not a logo
-animation, a loud transition or a visual effect. A visual
-accent and a cutaway are separate choices.
+animation, a loud transition or a visual effect.
+
+Every row below is one event. Visual entry and the exact word
+the accent lands on are separate fields of that one event, not
+two sounds. Where an event names no accent word, the sound
+lands on the visual entry and nowhere else.
 
 Audition every cue under the actual recorded voice. Keep speech
 clear. No alarms, no loud whooshes, no compulsory music bed, no
@@ -16,63 +20,44 @@ carries the moment.
 
 ------------------------------------------------------------------------------
 
-THE FIVE ACCENTS
+EVERY SOUND EVENT, IN SPOKEN ORDER
 
-  S1
-      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
-          Two people can both be good at their jobs.
+  V7-O02   OPENING
       LOCATION: section 1, HOOK, paragraph 1
-      THE SOUND ITSELF FALLS ON: the scene entry above.
-          The brief names no separate accent word.
-      TREATMENT: CAMERA, THEN TRUE FULL-SCREEN CUTAWAY | S1: brief so...
+      VISUAL ENTERS ON:
+          Both dependable.
+      THE ACCENT LANDS ON: the visual entry above.
+          No separate accent word is specified for this event.
+      TREATMENT: S1, one brief stinger as the pair establishes
 
-  S2
-      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
-          One person’s name comes up.
+  V7-O03   OPENING
       LOCATION: section 1, HOOK, paragraph 2
-      THE SOUND ITSELF FALLS ON: the scene entry above.
-          The brief names no separate accent word.
-      TREATMENT: TRUE FULL-SCREEN SELECTION CUE | S2: brief sound sti...
+      VISUAL ENTERS ON:
+          One person’s name comes up.
+      THE ACCENT LANDS ON: the visual entry above.
+          No separate accent word is specified for this event.
+      TREATMENT: S2, one quiet accent as the outcome line arrives
 
-  S3
-      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
-          When I have seen bigger work handed out
+  V7-T01   TEACHING
       LOCATION: section 6, FOUR THINGS I LOOK FOR, paragraph 1
-      THE SOUND ITSELF FALLS ON: the scene entry above.
-          The brief names no separate accent word.
-      TREATMENT: FOUR THINGS I LOOK FOR | S3
+      VISUAL ENTERS ON:
+          When I have seen bigger work handed out, I tend to look
+          at four things.
+      THE ACCENT LANDS ON THIS EXACT WORD:
+          I tend to look at four things.
+      TREATMENT: S3, one accent as the four establish. Not one per item.
 
-  S4
-      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
+  V7-T02   TEACHING
+      LOCATION: section 9, A CONVERSATION YOU CAN HAVE, paragraph 1
+      VISUAL ENTERS ON:
+          You could say: “I want to be ready for larger scope.
+      THE ACCENT LANDS ON THIS EXACT WORD:
           what would you need to see me handle that you have not
           seen yet?
-      LOCATION: section 9, A CONVERSATION YOU CAN HAVE, paragraph 1
-      THE SOUND ITSELF FALLS ON: the scene entry above.
-          The brief names no separate accent word.
-      TREATMENT: A CONVERSATION YOU CAN HAVE | S4
+      TREATMENT: S4, one quiet accent as the question appears
 
-  S5
-      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:
-          what could someone already point to?
-      LOCATION: section 14, STORY LOOP PAYOFF, paragraph 1
-      THE SOUND ITSELF FALLS ON: the scene entry above.
-          The brief names no separate accent word.
-      TREATMENT: STORY LOOP PAYOFF | S5
-
-------------------------------------------------------------------------------
-
-EARLY-EDIT SOUND EVENTS
-
-  Section numbers below are the reconciled script's, the same
-  numbering the camera map uses.
-
-  STEP 2  S1, one brief stinger as the pair establishes
-      on: Both dependable.
-      section 1, paragraph 1
-
-  STEP 3  S2, one quiet accent as the outcome line arrives
-      on: One person’s name comes up.
-      section 1, paragraph 2
+  4 sound events in this video. Every one is a single event with
+  one visual entry and at most one accent word.
 
 ------------------------------------------------------------------------------
 

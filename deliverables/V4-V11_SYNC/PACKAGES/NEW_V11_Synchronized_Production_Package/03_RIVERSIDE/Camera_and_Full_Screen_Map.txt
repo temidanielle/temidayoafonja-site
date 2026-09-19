@@ -11,54 +11,88 @@ meaningful B-roll are TRUE FULL SCREEN. The voice may continue
 under a full-screen image. Never keep Temidayo moving behind a
 teaching card.
 
+This map and the Riverside prompt are generated from one event
+list, so a paragraph cannot be camera here and full screen
+there. An event may begin and end inside a paragraph or run
+across several, and one asset family may serve more than one
+event at different points in the video.
+
 ------------------------------------------------------------------------------
 
 SECTION 1  HOOK
 
-  PARA 1   MODE: CAMERA   (early edit, step 1)
-           ON-SCREEN TEXT: WHAT I ACCEPTED IS NOT WHAT I AM DOING
+  PARA 1   MODE: CAMERA   [V11-O01]
+           ON-SCREEN: WHAT I ACCEPTED IS NOT WHAT I AM DOING
            ENTER ON: You accepted one job.
-           LEAVE ON: You accepted one job.  (paragraph 1)
-           SOUND: none
+           LEAVE ON: You accepted one job.
+           ASSET: none. Camera, with any editorial text over it.
            RETURN: cuts away within the paragraph
+           NOTE: Her sentence begins on camera.
 
-  PARA 1   MODE: FULL SCREEN   (early edit, step 2)
-           ON-SCREEN TEXT: THE JOB I ACCEPTED / THE JOB I STARTED DOING
+  PARA 1   MODE: FULL SCREEN   [V11-O02]
+           ON-SCREEN: THE JOB I ACCEPTED / THE JOB I STARTED DOING
            ENTER ON: Then you started doing another.
-           LEAVE ON: Maybe the salary is the same.  (paragraph 1)
+           LEAVE ON: Maybe the salary is the same.
            ASSET FAMILY: NEW_V11_FS_00_ACCEPTED_AND_DOING
-           STATES, IN REVEAL ORDER:
-               NEW_V11_FS_00_ACCEPTED_AND_DOING.png
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V11_FS_00_ACCEPTED_AND_DOING.png   paragraph 1
+                   on: Then you started doing another.
            SOUND: S1, one small click on the difference
+           ACCENT WORD: none separately specified
            RETURN: camera returns on 'But three or six weeks in'
+           NOTE: Two plain document cards, identical on the title
+                 and salary the script says are identical. The
+                 early visual is part of the hook, not something
+                 postponed until teaching.
 
-  PARA 1   MODE: CAMERA   (early edit, step 3)
-           ON-SCREEN TEXT: THIS ISN’T THE JOB
-           ENTER ON: But three or six weeks in, you are thinking: T...
-           LEAVE ON: This is not the job I thought I accepted...  (paragraph 1)
-           SOUND: none
+  PARA 1   MODE: CAMERA   [V11-O03]
+           ON-SCREEN: THIS ISN’T THE JOB
+           ENTER ON: But three or six weeks in, you are thinking: This is not
+                      the job I thought I accepted.
+           LEAVE ON: This is not the job I thought I accepted.
+           ASSET: none. Camera, with any editorial text over it.
            RETURN: stays on camera
+           NOTE: Show the recognition, then clear it. Keep the
+                 uncertainty.
 
-  PARA 2   MODE: CAMERA   (early edit, step 4)
-           ON-SCREEN TEXT: CHANGE IS NOT AUTOMATIC DECEPTION
-           ENTER ON: Before you call it a bait-and-switch, slow dow...
-           LEAVE ON: Companies reorganize.  (paragraph 2)
-           SOUND: none
+  PARA 2   MODE: CAMERA   [V11-O04]
+           ON-SCREEN: CHANGE IS NOT AUTOMATIC DECEPTION
+           ENTER ON: Before you call it a bait-and-switch, slow down.
+           LEAVE ON: Companies reorganize.
+           ASSET: none. Camera, with any editorial text over it.
            RETURN: stays on camera
+           NOTE: Legitimate change stays on camera or a very
+                 restrained card. No lie stamp, siren, angry
+                 manager or resignation animation.
 
-  PARA 3   MODE: FULL SCREEN   (early edit, step 5)
-           ON-SCREEN TEXT: EXPECTED / ACTUAL / COST / CHOICE
-           ENTER ON: I use four questions for that: EXPECTED. ACTUA...
-           LEAVE ON: EXPECTED. ACTUAL. COST. CHOICE.  (paragraph 3)
+  PARA 3   MODE: FULL SCREEN   [V11-O05]
+           ON-SCREEN: EXPECTED / ACTUAL / COST / CHOICE
+           ENTER ON: I use four questions for that: EXPECTED. ACTUAL. COST.
+                      CHOICE.
+           LEAVE ON: EXPECTED. ACTUAL. COST. CHOICE.
            ASSET FAMILY: NEW_V11_FS_01_FOUR_QUESTIONS
-           STATES, IN REVEAL ORDER:
-               NEW_V11_FS_01_ESTABLISH.png
-               NEW_V11_FS_01A_EXPECTED.png
-               NEW_V11_FS_01B_ACTUAL.png
-               NEW_V11_FS_01C_COST.png
-               NEW_V11_FS_01D_CHOICE.png
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V11_FS_01_ESTABLISH.png   paragraph 3
+                   on: I use four questions for that: EXPECTED. ACTUAL.
+                   on: COST. CHOICE.
+               NEW_V11_FS_01A_EXPECTED.png   paragraph 3
+                   on: I use four questions for that: EXPECTED. ACTUAL.
+                   on: COST. CHOICE.
+               NEW_V11_FS_01B_ACTUAL.png   paragraph 3
+                   on: I use four questions for that: EXPECTED. ACTUAL.
+                   on: COST. CHOICE.
+               NEW_V11_FS_01C_COST.png   paragraph 3
+                   on: I use four questions for that: EXPECTED. ACTUAL.
+                   on: COST. CHOICE.
+               NEW_V11_FS_01D_CHOICE.png   paragraph 3
+                   on: I use four questions for that: EXPECTED. ACTUAL.
+                   on: COST. CHOICE.
            SOUND: S2, one short sound for the first reveal, not four
+           ACCENT WORD: none separately specified
            RETURN: camera returns on 'By the end of this video'
+           NOTE: The hook reveal the Riverside prompt asks for. The
+                 recap at THE ROLE-DRIFT READ is FS_09's, not this
+                 card's.
 
   PARA 4   MODE: CAMERA
            By the end of this video, you should be able to tell wheth...
@@ -81,15 +115,23 @@ SECTION 4  1 | EXPECTED
   PARA 1   MODE: CAMERA
            Start with EXPECTED. What did you reasonably believe you w...
 
-  PARA 2   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN   [V11-C09]
+           ENTER ON: Write down the parts that mattered to your decision.
+                      Scope. Authority. Reporting line. Location. Travel.
+                      Compensation. Team. The kind of work you expected to spend
+                      meaningful time doing.
+           LEAVE ON: Write down the parts that mattered to your decision.
+                      Scope. Authority. Reporting line. Location. Travel.
+                      Compensation. Team. The kind of work you expected to spend
+                      meaningful time doing.
            ASSET FAMILY: NEW_V11_FS_02_WRITE_IT_DOWN
-           STATES, IN REVEAL ORDER:
-               NEW_V11_FS_02_WRITE_IT_DOWN.png
-           EXACT TRIGGER:
-               Write down the parts that mattered to your decision.
-               Scope. Authority. Reporting line. Location. Travel.
-               Compensation. Team. The kind of work you expected to spend
-               meaningful time doing.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V11_FS_02_WRITE_IT_DOWN.png   paragraph 2
+                   on: Write down the parts that mattered to your
+                   on: decision. Scope. Authority. Reporting line.
+                   on: Location. Travel. Compensation. Team. The kind of
+                   on: work you expected to spend meaningful time doing.
+           RETURN: camera returns at the end of the paragraph
 
   PARA 3   MODE: CAMERA
            This matters because memory gets fuzzy once the new realit...
@@ -105,44 +147,82 @@ SECTION 5  2 | ACTUAL
   PARA 3   MODE: CAMERA
            Sometimes the actual role is better than the one you expec...
 
-  PARA 4   MODE: FULL SCREEN
+  PARA 4   MODE: FULL SCREEN   [V11-C10]
+           ENTER ON: And sometimes the actual role is narrower. You were hired
+                      for strategy and spend most of your time coordinating. You
+                      expected to lead a team and the team never arrived. You
+                      were told a decision was yours and discover that you can
+                      only recommend.
+           LEAVE ON: And sometimes the actual role is narrower. You were hired
+                      for strategy and spend most of your time coordinating. You
+                      expected to lead a team and the team never arrived. You
+                      were told a decision was yours and discover that you can
+                      only recommend.
            ASSET FAMILY: NEW_V11_FS_03_EXPECTED_VS_ACTUAL
-           STATES, IN REVEAL ORDER:
-               NEW_V11_FS_03A_BOTH_DIRECTIONS.png
-               NEW_V11_FS_03B_NARROWER.png
-           EXACT TRIGGER:
-               And sometimes the actual role is narrower. You were hired
-               for strategy and spend most of your time coordinating. You
-               expected to lead a team and the team never arrived. You
-               were told a decision was yours and discover that you can
-               only recommend.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V11_FS_03A_BOTH_DIRECTIONS.png   paragraph 4
+                   on: And sometimes the actual role is narrower. You
+                   on: were hired for strategy and spend most of your
+                   on: time coordinating. You expected to lead a team and
+                   on: the team never arrived. You were told a decision
+                   on: was yours and discover that you can only
+                   on: recommend.
+               NEW_V11_FS_03B_NARROWER.png   paragraph 4
+                   on: And sometimes the actual role is narrower. You
+                   on: were hired for strategy and spend most of your
+                   on: time coordinating. You expected to lead a team and
+                   on: the team never arrived. You were told a decision
+                   on: was yours and discover that you can only
+                   on: recommend.
+           RETURN: camera returns at the end of the paragraph
 
-  PARA 5   MODE: FULL SCREEN
+  PARA 5   MODE: FULL SCREEN   [V11-C11]
+           ENTER ON: The question is not, “Is this exactly what was written?”
+                      The better question is, “Is the job I am doing still close
+                      enough to the job I agreed to build my life and career
+                      around?”
+           LEAVE ON: The question is not, “Is this exactly what was written?”
+                      The better question is, “Is the job I am doing still close
+                      enough to the job I agreed to build my life and career
+                      around?”
            ASSET FAMILY: NEW_V11_FS_04_THE_REAL_QUESTION
-           STATES, IN REVEAL ORDER:
-               NEW_V11_FS_04_THE_REAL_QUESTION.png
-           EXACT TRIGGER:
-               The question is not, “Is this exactly what was written?”
-               The better question is, “Is the job I am doing still close
-               enough to the job I agreed to build my life and career
-               around?”
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V11_FS_04_THE_REAL_QUESTION.png   paragraph 5
+                   on: The question is not, “Is this exactly what was
+                   on: written?” The better question is, “Is the job I am
+                   on: doing still close enough to the job I agreed to
+                   on: build my life and career around?”
+           RETURN: camera returns at the end of the paragraph
 
 SECTION 6  3 | COST
 
   PARA 1   MODE: CAMERA
            Then ask COST. What does the difference actually cost you?...
 
-  PARA 2   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN   [V11-C12]
+           ENTER ON: Imagine you expected a strategic role, but the first month
+                      is unusually operational because a launch is underway.
+                      That may be temporary. Now imagine six months later the
+                      strategic work still has not appeared, you are still doing
+                      work you already knew how to do, and there is no credible
+                      path to the scope you accepted.
+           LEAVE ON: Imagine you expected a strategic role, but the first month
+                      is unusually operational because a launch is underway.
+                      That may be temporary. Now imagine six months later the
+                      strategic work still has not appeared, you are still doing
+                      work you already knew how to do, and there is no credible
+                      path to the scope you accepted.
            ASSET FAMILY: NEW_V11_FS_05_TEMPORARY_OR_NOT
-           STATES, IN REVEAL ORDER:
-               NEW_V11_FS_05_TEMPORARY_OR_NOT.png
-           EXACT TRIGGER:
-               Imagine you expected a strategic role, but the first month
-               is unusually operational because a launch is underway.
-               That may be temporary. Now imagine six months later the
-               strategic work still has not appeared, you are still doing
-               work you already knew how to do, and there is no credible
-               path to the scope you accepted.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V11_FS_05_TEMPORARY_OR_NOT.png   paragraph 2
+                   on: Imagine you expected a strategic role, but the
+                   on: first month is unusually operational because a
+                   on: launch is underway. That may be temporary. Now
+                   on: imagine six months later the strategic work still
+                   on: has not appeared, you are still doing work you
+                   on: already knew how to do, and there is no credible
+                   on: path to the scope you accepted.
+           RETURN: camera returns at the end of the paragraph
 
   PARA 3   MODE: CAMERA
            That difference has a career cost. It may affect the capab...
@@ -155,22 +235,42 @@ SECTION 6  3 | COST
 
 SECTION 7  THE FOUR COST LENSES
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V11-T03]
+           SPANS PARAGRAPHS 1 TO 2
+           ON-SCREEN: TRUE FULL-SCREEN COST LENSES | CAPABILITY /
+                      EVIDENCE / COMPENSATION / LIFE
+           ENTER ON: I would look at four costs.
+           LEAVE ON: something else that mattered when you accepted?
+           (the exit wording is in paragraph 2)
            ASSET FAMILY: NEW_V11_FS_06_FOUR_COST_LENSES
-           STATES, IN REVEAL ORDER:
-               NEW_V11_FS_06_ESTABLISH.png
-               NEW_V11_FS_06A_CAPABILITY.png
-               NEW_V11_FS_06B_EVIDENCE.png
-               NEW_V11_FS_06C_COMPENSATION.png
-               NEW_V11_FS_06D_LIFE.png
-           EXACT TRIGGER:
-               I would look at four costs. CAPABILITY. Is this role
-               building judgment, scope, and experience you want to carry
-               forward? EVIDENCE. Will you be able to prove meaningful
-               work from this version of the job?
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V11_FS_06_ESTABLISH.png   paragraph 1
+                   on: I would look at four costs.
+               NEW_V11_FS_06A_CAPABILITY.png   paragraph 1
+                   on: CAPABILITY.
+               NEW_V11_FS_06B_EVIDENCE.png   paragraph 1
+                   on: EVIDENCE.
+               NEW_V11_FS_06C_COMPENSATION.png   paragraph 2
+                   on: COMPENSATION.
+               NEW_V11_FS_06D_LIFE.png   paragraph 2
+                   on: LIFE.
+           SOUND: S3, one accent as the four establish. Not one per lens.
+           ACCENT WORD: I would look at four costs.
+           RETURN: camera returns on 'A mismatch can be manageable in one category'
+           NOTE: Capability and evidence are spoken in paragraph 1,
+                 compensation and life in paragraph 2. Compensation
+                 and life are not revealed early and are not
+                 trimmed: they carry the pay, level, travel,
+                 caregiving and health constraints.
 
-  PARA 2   MODE: CAMERA
-           COMPENSATION. Has the scope changed enough that the pay, l...
+  PARA 2   MODE: FULL SCREEN, held from V11-T03
+           The voice continues under it.
+           ACTIVATE HERE:
+               NEW_V11_FS_06C_COMPENSATION.png
+                   on: COMPENSATION.
+               NEW_V11_FS_06D_LIFE.png
+                   on: LIFE.
+           RETURN: camera returns on 'A mismatch can be manageable in one category'
 
   PARA 3   MODE: CAMERA
            A mismatch can be manageable in one category and unaccepta...
@@ -180,17 +280,29 @@ SECTION 8  4 | CHOICE
   PARA 1   MODE: CAMERA
            Then comes CHOICE. What can you clarify, negotiate, test,...
 
-  PARA 2   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN   [V11-C13]
+           ENTER ON: I would say something like: “When we discussed this role,
+                      I expected X. In practice, I am seeing Y. Is that
+                      temporary, or is this the role as it now exists?” That
+                      question gives the other person room to explain what
+                      changed without requiring you to pretend the difference is
+                      not real.
+           LEAVE ON: I would say something like: “When we discussed this role,
+                      I expected X. In practice, I am seeing Y. Is that
+                      temporary, or is this the role as it now exists?” That
+                      question gives the other person room to explain what
+                      changed without requiring you to pretend the difference is
+                      not real.
            ASSET FAMILY: NEW_V11_FS_07_CLARIFICATION_SCRIPT
-           STATES, IN REVEAL ORDER:
-               NEW_V11_FS_07_CLARIFICATION_SCRIPT.png
-           EXACT TRIGGER:
-               I would say something like: “When we discussed this role,
-               I expected X. In practice, I am seeing Y. Is that
-               temporary, or is this the role as it now exists?” That
-               question gives the other person room to explain what
-               changed without requiring you to pretend the difference is
-               not real.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V11_FS_07_CLARIFICATION_SCRIPT.png   paragraph 2
+                   on: I would say something like: “When we discussed
+                   on: this role, I expected X. In practice, I am seeing
+                   on: Y. Is that temporary, or is this the role as it
+                   on: now exists?” That question gives the other person
+                   on: room to explain what changed without requiring you
+                   on: to pretend the difference is not real.
+           RETURN: camera returns at the end of the paragraph
 
   PARA 3   MODE: CAMERA
            If the answer is temporary, ask what changes, by when, and...
@@ -200,65 +312,126 @@ SECTION 8  4 | CHOICE
 
 SECTION 9  WHAT NOT TO DO
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V11-C14]
+           ENTER ON: I would avoid two extremes. Do not convince yourself that
+                      every mismatch is a betrayal. A job can change for
+                      legitimate reasons.
+           LEAVE ON: I would avoid two extremes. Do not convince yourself that
+                      every mismatch is a betrayal. A job can change for
+                      legitimate reasons.
            ASSET FAMILY: NEW_V11_FS_08_TWO_EXTREMES
-           STATES, IN REVEAL ORDER:
-               NEW_V11_FS_08_TWO_EXTREMES.png
-           EXACT TRIGGER:
-               I would avoid two extremes. Do not convince yourself that
-               every mismatch is a betrayal. A job can change for
-               legitimate reasons.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V11_FS_08_TWO_EXTREMES.png   paragraph 1
+                   on: I would avoid two extremes. Do not convince
+                   on: yourself that every mismatch is a betrayal. A job
+                   on: can change for legitimate reasons.
+           RETURN: camera returns at the end of the paragraph
 
   PARA 2   MODE: CAMERA
            And do not keep making career decisions based on the job y...
 
 SECTION 10  THE ROLE-DRIFT READ
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V11-T05A]
+           SPANS PARAGRAPHS 1 TO 2
+           ON-SCREEN: TRUE FULL-SCREEN RECAP | EXPECTED / ACTUAL /
+                      COST / CHOICE
+           ENTER ON: So put the four lines next to each other.
+           LEAVE ON: What can I clarify, negotiate, test, or decide next?
+           (the exit wording is in paragraph 2)
            ASSET FAMILY: NEW_V11_FS_09_THE_ROLE_DRIFT_READ
-           STATES, IN REVEAL ORDER:
-               NEW_V11_FS_09_ESTABLISH.png
-               NEW_V11_FS_09A_EXPECTED.png
-               NEW_V11_FS_09B_ACTUAL.png
-               NEW_V11_FS_09C_COST.png
-               NEW_V11_FS_09D_CHOICE.png
-           EXACT TRIGGER:
-               So put the four lines next to each other. EXPECTED. What
-               did I reasonably believe I was accepting? ACTUAL. What is
-               true now, based on the recurring pattern?
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V11_FS_09_ESTABLISH.png   paragraph 1
+                   on: So put the four lines next to each other.
+               NEW_V11_FS_09A_EXPECTED.png   paragraph 1
+                   on: EXPECTED.
+               NEW_V11_FS_09B_ACTUAL.png   paragraph 1
+                   on: ACTUAL.
+               NEW_V11_FS_09C_COST.png   paragraph 2
+                   on: COST.
+               NEW_V11_FS_09D_CHOICE.png   paragraph 2
+                   on: CHOICE.
+           RETURN: camera returns on 'That is a role-drift read.'
+           NOTE: Expected and actual are spoken in paragraph 1,
+                 cost and choice in paragraph 2. The camera returns
+                 for the interpretation that follows, which begins
+                 'That is a role-drift read.'
 
-  PARA 2   MODE: CAMERA
-           COST. What is the difference doing to my capability, evide...
+  PARA 2   MODE: FULL SCREEN, held from V11-T05A
+           The voice continues under it.
+           ACTIVATE HERE:
+               NEW_V11_FS_09C_COST.png
+                   on: COST.
+               NEW_V11_FS_09D_CHOICE.png
+                   on: CHOICE.
+           RETURN: camera returns on 'That is a role-drift read.'
 
 SECTION 11  THE BOUNDARY
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V11-C15]
+           ENTER ON: This framework does not tell you whether to leave.
+                      Sometimes the right choice is to stay because the drift is
+                      temporary or the actual role is better than the expected
+                      one. Sometimes you stay because leaving is not practical
+                      yet.
+           LEAVE ON: This framework does not tell you whether to leave.
+                      Sometimes the right choice is to stay because the drift is
+                      temporary or the actual role is better than the expected
+                      one. Sometimes you stay because leaving is not practical
+                      yet.
            ASSET FAMILY: NEW_V11_FS_10_THE_BOUNDARY
-           STATES, IN REVEAL ORDER:
-               NEW_V11_FS_10_THE_BOUNDARY.png
-           EXACT TRIGGER:
-               This framework does not tell you whether to leave.
-               Sometimes the right choice is to stay because the drift is
-               temporary or the actual role is better than the expected
-               one. Sometimes you stay because leaving is not practical
-               yet.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V11_FS_10_THE_BOUNDARY.png   paragraph 1
+                   on: This framework does not tell you whether to leave.
+                   on: Sometimes the right choice is to stay because the
+                   on: drift is temporary or the actual role is better
+                   on: than the expected one. Sometimes you stay because
+                   on: leaving is not practical yet.
+           RETURN: camera returns at the end of the paragraph
 
-  PARA 2   MODE: FULL SCREEN
+  PARA 2   MODE: FULL SCREEN   [V11-C16]
+           ENTER ON: And sometimes the gap is large enough that you need to
+                      plan an exit. Your constraints are real. Compensation,
+                      health, caregiving, immigration, geography, timing, the
+                      market, and financial runway can all shape what is
+                      possible. The goal is not to force a dramatic decision. It
+                      is to make the decision from the job that actually exists.
+           LEAVE ON: And sometimes the gap is large enough that you need to
+                      plan an exit. Your constraints are real. Compensation,
+                      health, caregiving, immigration, geography, timing, the
+                      market, and financial runway can all shape what is
+                      possible. The goal is not to force a dramatic decision. It
+                      is to make the decision from the job that actually exists.
            ASSET FAMILY: NEW_V11_FS_11_YOUR_CONSTRAINTS
-           STATES, IN REVEAL ORDER:
-               NEW_V11_FS_11_YOUR_CONSTRAINTS.png
-           EXACT TRIGGER:
-               And sometimes the gap is large enough that you need to
-               plan an exit. Your constraints are real. Compensation,
-               health, caregiving, immigration, geography, timing, the
-               market, and financial runway can all shape what is
-               possible. The goal is not to force a dramatic decision. It
-               is to make the decision from the job that actually exists.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V11_FS_11_YOUR_CONSTRAINTS.png   paragraph 2
+                   on: And sometimes the gap is large enough that you
+                   on: need to plan an exit. Your constraints are real.
+                   on: Compensation, health, caregiving, immigration,
+                   on: geography, timing, the market, and financial
+                   on: runway can all shape what is possible. The goal is
+                   on: not to force a dramatic decision. It is to make
+                   on: the decision from the job that actually exists.
+           RETURN: camera returns at the end of the paragraph
 
 SECTION 12  TAKEAWAY VALUE
 
-  PARA 1   MODE: CAMERA
-           Write EXPECTED and ACTUAL side by side. Name one real cost...
+  PARA 1   MODE: FULL SCREEN   [V11-T05B]
+           ON-SCREEN: TRUE FULL-SCREEN WORKING PAGE, THEN CAMERA |
+                      ONE DIFFERENCE / ONE COST / ONE NEXT ACTION
+           ENTER ON: Write EXPECTED and ACTUAL side by side.
+           LEAVE ON: or begin planning another option.
+           ASSET FAMILY: NEW_V11_FS_00B_COST_AND_NEXT
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V11_FS_00B_COST_AND_NEXT.png   paragraph 1
+                   on: Name one real cost.
+           SOUND: S5, one accent as the cost line is added
+           ACCENT WORD: Name one real cost.
+           RETURN: camera returns at STORY LOOP PAYOFF
+           NOTE: The opening pair of documents returns with the
+                 cost and the next action added, which is the
+                 treatment the brief asks for and no delivered
+                 state carried.
 
 SECTION 13  STORY LOOP PAYOFF
 
@@ -267,15 +440,23 @@ SECTION 13  STORY LOOP PAYOFF
 
 SECTION 14  CLOSE
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V11-C17]
+           ENTER ON: The job description got you into the role. The first few
+                      months tell you what the role really is. If those two
+                      versions are different, name the difference before you
+                      normalize it.
+           LEAVE ON: The job description got you into the role. The first few
+                      months tell you what the role really is. If those two
+                      versions are different, name the difference before you
+                      normalize it.
            ASSET FAMILY: NEW_V11_FS_12_NAME_THE_DIFFERENCE
-           STATES, IN REVEAL ORDER:
-               NEW_V11_FS_12_NAME_THE_DIFFERENCE.png
-           EXACT TRIGGER:
-               The job description got you into the role. The first few
-               months tell you what the role really is. If those two
-               versions are different, name the difference before you
-               normalize it.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V11_FS_12_NAME_THE_DIFFERENCE.png   paragraph 1
+                   on: The job description got you into the role. The
+                   on: first few months tell you what the role really is.
+                   on: If those two versions are different, name the
+                   on: difference before you normalize it.
+           RETURN: camera returns at the end of the paragraph
 
   PARA 2   MODE: CAMERA
            Expected. Actual. Cost. Choice. You do not need the job to...
@@ -287,14 +468,20 @@ SECTION 15  CONFIDENCE / VIEWER OUTCOME
 
 SECTION 16  WATCH NEXT
 
-  PARA 1   MODE: FULL SCREEN
+  PARA 1   MODE: FULL SCREEN   [V11-C18]
+           ENTER ON: And if the role is depending on you more and more without
+                      building anything new in you, watch “If Your Company Needs
+                      You but Won’t Grow You” next.
+           LEAVE ON: And if the role is depending on you more and more without
+                      building anything new in you, watch “If Your Company Needs
+                      You but Won’t Grow You” next.
            ASSET FAMILY: NEW_V11_WATCH_NEXT
-           STATES, IN REVEAL ORDER:
-               NEW_V11_WATCH_NEXT.png
-           EXACT TRIGGER:
-               And if the role is depending on you more and more without
-               building anything new in you, watch “If Your Company Needs
-               You but Won’t Grow You” next.
+           STATES, WITH THE WORDS THEY ACTIVATE ON:
+               NEW_V11_WATCH_NEXT.png   paragraph 1
+                   on: And if the role is depending on you more and more
+                   on: without building anything new in you, watch “If
+                   on: Your Company Needs You but Won’t Grow You” next.
+           RETURN: camera returns at the end of the paragraph
 
 ------------------------------------------------------------------------------
 

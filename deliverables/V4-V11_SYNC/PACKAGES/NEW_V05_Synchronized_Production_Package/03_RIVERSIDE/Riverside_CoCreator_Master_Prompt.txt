@@ -4,7 +4,7 @@ NEW PUBLIC V5  |  RIVERSIDE CO-CREATOR MASTER PROMPT
 
 If Your Company Needs You but Won’t Grow You
 Thumbnail: USEFUL. STILL STUCK.
-Generated Thursday, September 17, 2026 | 12:57 PM CT
+Generated Saturday, September 19, 2026 | 6:36 AM CT
 
 966 spoken words. Planning estimate 6:39 to 7:25 at 130 to
 145 words per minute, provisional and arithmetic only. Nothing
@@ -49,61 +49,300 @@ HOW TO USE THIS
 
 ------------------------------------------------------------------------------
 
-OPENING SEQUENCE, EXECUTABLE
+THE EVENT LIST
 
-  Work these steps in order before the first teaching moment.
-  Each one names where it starts and stops inside the spoken
-  paragraph, so no passage is left to be reconciled between two
-  maps.
+  This is the whole edit, in spoken order. The camera map, the
+  motion map, the sound map and the asset index are generated
+  from these same events, so none of them can tell you
+  something different. Where a paragraph is not named below,
+  stay on camera.
 
-  STEP 1  |  CAMERA
+  An event carries its own id. A family may appear in more
+  than one event, at different points in the video: that is a
+  reuse, not a contradiction.
+
+  V5-O01  |  CAMERA  |  OPENING
+      LOCATION: section 1 HOOK, paragraph 1
       ON-SCREEN TEXT:
           NEEDED. STILL STUCK?
-      ENTER ON THESE WORDS, section 1 HOOK, paragraph 1:
+      ENTER ON THESE WORDS:
           Your company can need you so much that it becomes one of
           the reasons you stop growing.
       LEAVE ON THESE WORDS, paragraph 1:
           But think about what happens to the person everyone
           depends on.
-      ASSET: none. Editorial text over camera.
-      SOUND: none
+      ASSET: none. Camera, with any editorial text over it.
+      SOUND: none.
       RETURN: stays on camera
       NOTE:
           The contradiction appears during the first sentence. No
           logo introduction.
 
-  STEP 2  |  FULL SCREEN
+  V5-O02  |  FULL SCREEN  |  OPENING
+      LOCATION: section 1 HOOK, paragraph 2
       ON-SCREEN TEXT:
           FIX IT / COVER IT / TRAIN THEM
-      ENTER ON THESE WORDS, section 1 HOOK, paragraph 2:
+      ENTER ON THESE WORDS:
           Something breaks, they call you.
       LEAVE ON THESE WORDS, paragraph 2:
           A new person joins, you train them.
       ASSET FAMILY: NEW_V5_FS_01_NEEDED_NOT_GROWN
-      STATES, IN REVEAL ORDER:
-          NEW_V5_FS_01_NEEDED_NOT_GROWN.png
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V5_FS_01_NEEDED_NOT_GROWN.png   paragraph 2
+              on: Something breaks, they call you.
       SOUND: S1, one soft notification click on the first request only
+      ACCENT WORD: none separately specified; the sound lands on the entry
       RETURN: camera returns on 'Then a bigger opportunity opens'
       NOTE:
           Illustrative work requests, not an employer chat.
 
-  STEP 3  |  CAMERA
+  V5-O03  |  CAMERA  |  OPENING
+      LOCATION: section 1 HOOK, paragraph 3
       ON-SCREEN TEXT:
           SOMEONE ELSE
-      ENTER ON THESE WORDS, section 1 HOOK, paragraph 3:
+      ENTER ON THESE WORDS:
           And they choose someone else.
       LEAVE ON THESE WORDS, paragraph 3:
           And they choose someone else.
-      ASSET: none. Editorial text over camera.
-      SOUND: none
+      ASSET: none. Camera, with any editorial text over it.
+      SOUND: none.
       RETURN: stays on camera
       NOTE:
           Back on her before the line, so the reaction is hers. A
           brief silence is enough. No rejection sound.
 
+  V5-C07  |  FULL SCREEN  |  CUE
+      LOCATION: section 4 THE TRAP, paragraph 1
+      ENTER ON THESE WORDS:
+          Being useful can feel like career security. Sometimes it
+          is. But being very useful can also make it hard for a
+          team to imagine moving you.
+      LEAVE ON THESE WORDS, paragraph 1:
+          Being useful can feel like career security. Sometimes it
+          is. But being very useful can also make it hard for a
+          team to imagine moving you.
+      ASSET FAMILY: NEW_V5_FS_05_INDISPENSABLE_AND_LESS_PORTABLE
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V5_FS_05_INDISPENSABLE_AND_LESS_PORTABLE.png   paragraph 1
+              on: Being useful can feel like career security.
+              on: Sometimes it is. But being very useful can also
+              on: make it hard for a team to imagine moving you.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V5-C08  |  FULL SCREEN  |  CUE
+      LOCATION: section 4 THE TRAP, paragraph 2
+      ENTER ON THESE WORDS:
+          If you are the person holding everything together, your
+          manager may have a real reason to want you to stay
+          exactly where you are. That does not mean they are
+          plotting against you. It means what helps the company
+          today may not be the same thing that helps your future.
+      LEAVE ON THESE WORDS, paragraph 2:
+          If you are the person holding everything together, your
+          manager may have a real reason to want you to stay
+          exactly where you are. That does not mean they are
+          plotting against you. It means what helps the company
+          today may not be the same thing that helps your future.
+      ASSET FAMILY: NEW_V5_FS_02_NOT_ALIGNED
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V5_FS_02_NOT_ALIGNED.png   paragraph 2
+              on: If you are the person holding everything together,
+              on: your manager may have a real reason to want you to
+              on: stay exactly where you are. That does not mean
+              on: they are plotting against you. It means what helps
+              on: the company today may not be the same thing that
+              on: helps your future.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V5-C09  |  FULL SCREEN  |  CUE
+      LOCATION: section 5 WHAT THIS CAN LOOK LIKE, paragraph 1
+      ENTER ON THESE WORDS:
+          Look for a pattern. More rescue work. More people asking
+          you for help. More things that only you know how to do.
+          But no new decisions. No new kind of problem. No project
+          that stretches you in a different way. No clear review
+          of the extra work. No real conversation about what comes
+          next.
+      LEAVE ON THESE WORDS, paragraph 1:
+          Look for a pattern. More rescue work. More people asking
+          you for help. More things that only you know how to do.
+          But no new decisions. No new kind of problem. No project
+          that stretches you in a different way. No clear review
+          of the extra work. No real conversation about what comes
+          next.
+      ASSET FAMILY: NEW_V5_FS_03_WATCH_FOR_PATTERNS
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V5_FS_03_WATCH_FOR_PATTERNS.png   paragraph 1
+              on: Look for a pattern. More rescue work. More people
+              on: asking you for help. More things that only you
+              on: know how to do. But no new decisions. No new kind
+              on: of problem. No project that stretches you in a
+              on: different way. No clear review of the extra work.
+              on: No real conversation about what comes next.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V5-C10  |  FULL SCREEN  |  CUE
+      LOCATION: section 6 THE QUESTION TO ASK, paragraph 1
+      ENTER ON THESE WORDS:
+          Ask: What is this company building in me beyond my
+          ability to keep this role running?
+      LEAVE ON THESE WORDS, paragraph 1:
+          Ask: What is this company building in me beyond my
+          ability to keep this role running?
+      ASSET FAMILY: NEW_V5_FS_04_THE_QUESTION
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V5_FS_04_THE_QUESTION.png   paragraph 1
+              on: Ask: What is this company building in me beyond my
+              on: ability to keep this role running?
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V5-T02  |  FULL SCREEN  |  TEACHING
+      LOCATION: section 8 ASK FOR DEVELOPMENT, NOT ONLY MORE WORK, paragraphs 1 to 2
+      ON-SCREEN TEXT:
+          TRUE FULL-SCREEN TEACHING | NOT ONLY A PROMOTION
+      ENTER ON THESE WORDS:
+          Do not only ask for a promotion.
+      LEAVE ON THESE WORDS, paragraph 2:
+          A chance to build proof beyond rescue work.
+      ASSET FAMILY: NEW_V5_FS_06_ASK_FOR_DEVELOPMENT
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V5_FS_06_ASK_FOR_DEVELOPMENT.png   paragraph 1
+              on: Ask for work that builds something new.
+      SOUND: none.
+      RETURN: camera returns for the request itself
+
+  V5-T03  |  FULL SCREEN  |  TEACHING
+      LOCATION: section 8 ASK FOR DEVELOPMENT, NOT ONLY MORE WORK, paragraph 3
+      ON-SCREEN TEXT:
+          TRUE FULL-SCREEN CONVERSATION | A SPECIFIC DEVELOPMENT
+          REQUEST
+      ENTER ON THESE WORDS:
+          You could say:
+      LEAVE ON THESE WORDS, paragraph 3:
+          help me build a different capability?
+      ASSET FAMILY: NEW_V5_FS_11_THE_REQUEST
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V5_FS_11_THE_REQUEST.png   paragraph 3
+              on: What could I own in the next six months
+      SOUND: S3, one quiet accent as the request appears
+      ACCENT WORD: What could I own in the next six months
+      RETURN: camera returns at THE ANSWER MAY STILL BE NO
+      NOTE:
+          The brief asks for this treatment and no delivered state
+          carried the request, so one was built from the spoken
+          words.
+
+  V5-C11  |  FULL SCREEN  |  CUE
+      LOCATION: section 9 THE ANSWER MAY STILL BE NO, paragraph 1
+      ENTER ON THESE WORDS:
+          There may be no budget. There may be no open role. Your
+          manager may truly need you where you are. Bias may
+          affect who gets opportunities. The company may simply
+          not have the path you need.
+      LEAVE ON THESE WORDS, paragraph 1:
+          There may be no budget. There may be no open role. Your
+          manager may truly need you where you are. Bias may
+          affect who gets opportunities. The company may simply
+          not have the path you need.
+      ASSET FAMILY: NEW_V5_FS_07_THE_ANSWER_MAY_BE_NO
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V5_FS_07_THE_ANSWER_MAY_BE_NO.png   paragraph 1
+              on: There may be no budget. There may be no open role.
+              on: Your manager may truly need you where you are.
+              on: Bias may affect who gets opportunities. The
+              on: company may simply not have the path you need.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V5-C12  |  FULL SCREEN  |  CUE
+      LOCATION: section 10 DEPENDENCE VERSUS DEVELOPMENT, paragraph 1
+      ENTER ON THESE WORDS:
+          Dependence sounds like: “We cannot do this without you.”
+      LEAVE ON THESE WORDS, paragraph 1:
+          Dependence sounds like: “We cannot do this without you.”
+      ASSET FAMILY: NEW_V5_FS_08_DEPENDENCE_VS_DEVELOPMENT
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V5_FS_08_DEPENDENCE_VS_DEVELOPMENT.png   paragraph 1
+              on: Dependence sounds like: “We cannot do this without
+              on: you.”
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V5-T04  |  FULL SCREEN  |  TEACHING
+      LOCATION: section 11 SET A REVIEW POINT, paragraphs 1 to 3
+      ON-SCREEN TEXT:
+          TRUE FULL-SCREEN WORKING NOTE | REVIEW WHAT CHANGED
+      ENTER ON THESE WORDS:
+          If you take on extra work because the company needs you,
+          set a time to review it.
+      LEAVE ON THESE WORDS, paragraph 3:
+          What am I taking off my plate?
+      ASSET FAMILY: NEW_V5_FS_09_REVIEW_POINT
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V5_FS_09_REVIEW_POINT.png   paragraph 1
+              on: Let’s come back to this in 90 days.
+      SOUND: S4, one soft accent on the date
+      ACCENT WORD: Let’s come back to this in 90 days.
+      RETURN: camera returns on 'Without a review point'
+      NOTE:
+          The review questions run across three paragraphs. The
+          card is held under all of them and the camera returns
+          for the warning.
+
+  V5-C13  |  FULL SCREEN  |  CUE
+      LOCATION: section 15 CLOSE, paragraph 2
+      ENTER ON THESE WORDS:
+          So if your company keeps showing you how much it needs
+          you, ask one more question: Is this work also making me
+          more capable, more visible, or more useful somewhere
+          else? If not, being useful may be part of why you feel
+          stuck.
+      LEAVE ON THESE WORDS, paragraph 2:
+          So if your company keeps showing you how much it needs
+          you, ask one more question: Is this work also making me
+          more capable, more visible, or more useful somewhere
+          else? If not, being useful may be part of why you feel
+          stuck.
+      ASSET FAMILY: NEW_V5_FS_10_CTA
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V5_FS_10_CTA.png   paragraph 2
+              on: So if your company keeps showing you how much it
+              on: needs you, ask one more question: Is this work
+              on: also making me more capable, more visible, or more
+              on: useful somewhere else? If not, being useful may be
+              on: part of why you feel stuck.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V5-C14  |  FULL SCREEN  |  END
+      LOCATION: section 17 WATCH NEXT, paragraph 1
+      ENTER ON THESE WORDS:
+          And if you are carrying more because people know you
+          will get it done, watch “It Took Me Years to Stop
+          Mistaking More Work for Career Growth” next.
+      LEAVE ON THESE WORDS, paragraph 1:
+          And if you are carrying more because people know you
+          will get it done, watch “It Took Me Years to Stop
+          Mistaking More Work for Career Growth” next.
+      ASSET FAMILY: NEW_V5_WATCH_NEXT
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V5_WATCH_NEXT.png   paragraph 1
+              on: And if you are carrying more because people know
+              on: you will get it done, watch “It Took Me Years to
+              on: Stop Mistaking More Work for Career Growth” next.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
 ------------------------------------------------------------------------------
 
-OPENING TREATMENT, FROM THE BRIEF
+WHAT EACH BEAT OF THE BRIEF ASKED FOR
+
+  Kept for provenance. The event list above is the
+  instruction.
 
   1. CAMERA + BRIEF EDITORIAL TEXT
      DISPLAY COPY:
@@ -145,10 +384,6 @@ OPENING TREATMENT, FROM THE BRIEF
          Keep the activities. Show why the viewer would do them and
          the specific answer, note, or conversation they leave with.
          Do not replace practical teaching with bigger promises.
-
-------------------------------------------------------------------------------
-
-TEACHING MOMENTS
 
   1. WHAT THIS CAN LOOK LIKE  |  S2
      DISPLAY COPY:
@@ -206,7 +441,7 @@ TEACHING MOMENTS
 
 ASSETS IN THIS PACKAGE
 
-  11 full-screen families, 11 rendered teaching and end-card
+  12 full-screen families, 12 rendered teaching and end-card
   states, all 1920 x 1080. One phone-size contact sheet sits
   beside them and is not a state.
 

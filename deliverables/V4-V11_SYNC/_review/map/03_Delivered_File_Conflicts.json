@@ -1,0 +1,501 @@
+{
+  "archive_sha256": "5814eecc318b9da8e577de7bfcf258cec648251e56efccc3dfa09982cf8e5478",
+  "exact_trigger_conflicts": [
+    {
+      "v": 6,
+      "section": 5,
+      "paragraph": 1,
+      "family": "NEW_V6_FS_08_READ_THE_VERBS",
+      "printed": "One role focused much more on running the work and reported to a Senior Director. Another led a transformation office and worked directly with a Chief Transformation Officer. Same broad title level. Very different job. The title can start the search. It cannot finish the read.",
+      "actual": "Next, look at the verbs. Does the person decide? Lead? Negotiate? Recommend? Influence? Support? Execute?",
+      "source_file": "NEW_V06_Synchronized_Production_Package/03_RIVERSIDE/Camera_and_Full_Screen_Map.txt"
+    },
+    {
+      "v": 6,
+      "section": 12,
+      "paragraph": 1,
+      "family": "NEW_V6_FS_19_FOUR_THINGS",
+      "printed": "Those four things help you answer three different questions: Could I do this work? Can I prove that I have done something close to it? Do I meet the real requirements? Those are not the same question.",
+      "actual": "The win is not becoming perfect at reading job descriptions. In ten minutes, name the problem, authority, proof, and real gap. That is enough to decide whether the role deserves a deeper look.",
+      "source_file": "NEW_V06_Synchronized_Production_Package/03_RIVERSIDE/Camera_and_Full_Screen_Map.txt"
+    },
+    {
+      "v": 8,
+      "section": 8,
+      "paragraph": 1,
+      "family": "NEW_V8_FS_07_TEN_MINUTE_HABIT",
+      "printed": "That is why I think the worst time to reconstruct your career evidence is after you lose access to it. And no, I am not telling you to take company files. I am going to show you what to capture while you still have access, and how to do it without taking anything that belongs to your employer.",
+      "actual": "Once a month, take ten minutes and write down: What changed? What was mine?",
+      "source_file": "NEW_V08_Synchronized_Production_Package/03_RIVERSIDE/Camera_and_Full_Screen_Map.txt"
+    },
+    {
+      "v": 8,
+      "section": 9,
+      "paragraph": 2,
+      "family": "NEW_V8_FS_08_CAREER_HYGIENE",
+      "printed": "And if you want to know what to capture before a layoff or sudden exit takes that access away, watch “Before a Layoff, Know What You Can Still Prove” next.",
+      "actual": "That is why keeping career evidence is not only something to do when you think a layoff is coming. It is a normal career habit.",
+      "source_file": "NEW_V08_Synchronized_Production_Package/03_RIVERSIDE/Camera_and_Full_Screen_Map.txt"
+    },
+    {
+      "v": 9,
+      "section": 17,
+      "paragraph": 2,
+      "family": "NEW_V9_FS_12_THE_AUDIT_AGAIN",
+      "printed": "I would make four columns: What travels? What does not? What can I prove? What must I relearn? Because changing industries without starting over does not mean pretending you have nothing left to learn.",
+      "actual": "Ask: What travels? What does not? What can I prove? What must I relearn?",
+      "source_file": "NEW_V09_Synchronized_Production_Package/03_RIVERSIDE/Camera_and_Full_Screen_Map.txt"
+    }
+  ],
+  "run_of_show_section_label_conflicts": [
+    {
+      "video": 4,
+      "asset": "NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT",
+      "printed_section": "1 THREE THINGS TO WATCH",
+      "expected_section": "1 HOOK"
+    },
+    {
+      "video": 6,
+      "asset": "NEW_V6_FS_08_READ_THE_VERBS",
+      "printed_section": "5 WHY TITLES CAN MISLEAD YOU",
+      "expected_section": "5 2 | AUTHORITY"
+    },
+    {
+      "video": 6,
+      "asset": "NEW_V6_FS_19_FOUR_THINGS",
+      "printed_section": "12 THE FOUR THINGS I READ",
+      "expected_section": "12 TAKEAWAY VALUE"
+    },
+    {
+      "video": 8,
+      "asset": "NEW_V8_FS_07_TEN_MINUTE_HABIT",
+      "printed_section": "8 HOOK",
+      "expected_section": "8 THE 10-MINUTE HABIT"
+    },
+    {
+      "video": 8,
+      "asset": "NEW_V8_FS_08_CAREER_HYGIENE",
+      "printed_section": "9 WATCH NEXT",
+      "expected_section": "9 WHEN THE EXIT IS SUDDEN"
+    },
+    {
+      "video": 9,
+      "asset": "NEW_V9_FS_12_THE_AUDIT_AGAIN",
+      "printed_section": "17 HOOK",
+      "expected_section": "17 CLOSE"
+    },
+    {
+      "video": 11,
+      "asset": "NEW_V11_FS_01_FOUR_QUESTIONS",
+      "printed_section": "1 THE ROLE-DRIFT READ",
+      "expected_section": "1 HOOK"
+    }
+  ],
+  "explicit_teaching_vs_camera_conflicts": [
+    {
+      "video": 4,
+      "teaching_moment": "2",
+      "section": "7",
+      "section_name": "A SIMPLE EXAMPLE",
+      "paragraph": "2",
+      "display_instruction": "TRUE FULL-SCREEN ILLUSTRATION | TEST ASSUMPTIONS / CHALLENGE THE ANSWER / EXPLAIN THE RECOMMENDATION",
+      "camera_map_mode": "CAMERA",
+      "prompt_file": "NEW_V04_Synchronized_Production_Package/03_RIVERSIDE/Riverside_CoCreator_Master_Prompt.txt",
+      "map_file": "NEW_V04_Synchronized_Production_Package/03_RIVERSIDE/Camera_and_Full_Screen_Map.txt"
+    },
+    {
+      "video": 5,
+      "teaching_moment": "2",
+      "section": "8",
+      "section_name": "ASK FOR DEVELOPMENT, NOT ONLY MORE WORK",
+      "paragraph": "3",
+      "display_instruction": "TRUE FULL-SCREEN CONVERSATION | A SPECIFIC DEVELOPMENT REQUEST",
+      "camera_map_mode": "CAMERA",
+      "prompt_file": "NEW_V05_Synchronized_Production_Package/03_RIVERSIDE/Riverside_CoCreator_Master_Prompt.txt",
+      "map_file": "NEW_V05_Synchronized_Production_Package/03_RIVERSIDE/Camera_and_Full_Screen_Map.txt"
+    },
+    {
+      "video": 5,
+      "teaching_moment": "3",
+      "section": "11",
+      "section_name": "SET A REVIEW POINT",
+      "paragraph": "1",
+      "display_instruction": "TRUE FULL-SCREEN WORKING NOTE | REVIEW WHAT CHANGED",
+      "camera_map_mode": "CAMERA",
+      "prompt_file": "NEW_V05_Synchronized_Production_Package/03_RIVERSIDE/Riverside_CoCreator_Master_Prompt.txt",
+      "map_file": "NEW_V05_Synchronized_Production_Package/03_RIVERSIDE/Camera_and_Full_Screen_Map.txt"
+    },
+    {
+      "video": 6,
+      "teaching_moment": "1",
+      "section": "5",
+      "section_name": "2 | AUTHORITY",
+      "paragraph": "2",
+      "display_instruction": "TRUE FULL-SCREEN POSTING COMPARISON | SUPPORTING ≠ SETTING",
+      "camera_map_mode": "CAMERA",
+      "prompt_file": "NEW_V06_Synchronized_Production_Package/03_RIVERSIDE/Riverside_CoCreator_Master_Prompt.txt",
+      "map_file": "NEW_V06_Synchronized_Production_Package/03_RIVERSIDE/Camera_and_Full_Screen_Map.txt"
+    },
+    {
+      "video": 6,
+      "teaching_moment": "2",
+      "section": "7",
+      "section_name": "4 | REAL GAP",
+      "paragraph": "3",
+      "display_instruction": "TRUE FULL-SCREEN REQUIREMENT CARD | REQUIRED TIME OVERLAP",
+      "camera_map_mode": "CAMERA",
+      "prompt_file": "NEW_V06_Synchronized_Production_Package/03_RIVERSIDE/Riverside_CoCreator_Master_Prompt.txt",
+      "map_file": "NEW_V06_Synchronized_Production_Package/03_RIVERSIDE/Camera_and_Full_Screen_Map.txt"
+    },
+    {
+      "video": 7,
+      "teaching_moment": "1",
+      "section": "6",
+      "section_name": "FOUR THINGS I LOOK FOR",
+      "paragraph": "1",
+      "display_instruction": "TRUE FULL-SCREEN TEACHING | VISIBLE PROOF / JUDGMENT / TRUST / SPONSORSHIP + ACCESS",
+      "camera_map_mode": "CAMERA",
+      "prompt_file": "NEW_V07_Synchronized_Production_Package/03_RIVERSIDE/Riverside_CoCreator_Master_Prompt.txt",
+      "map_file": "NEW_V07_Synchronized_Production_Package/03_RIVERSIDE/Camera_and_Full_Screen_Map.txt"
+    },
+    {
+      "video": 7,
+      "teaching_moment": "2",
+      "section": "9",
+      "section_name": "A CONVERSATION YOU CAN HAVE",
+      "paragraph": "1",
+      "display_instruction": "TRUE FULL-SCREEN CONVERSATION | ASK FOR A CLEARER TARGET",
+      "camera_map_mode": "CAMERA",
+      "prompt_file": "NEW_V07_Synchronized_Production_Package/03_RIVERSIDE/Riverside_CoCreator_Master_Prompt.txt",
+      "map_file": "NEW_V07_Synchronized_Production_Package/03_RIVERSIDE/Camera_and_Full_Screen_Map.txt"
+    },
+    {
+      "video": 7,
+      "teaching_moment": "3",
+      "section": "11",
+      "section_name": "READ YOUR OWN SITUATION",
+      "paragraph": "1",
+      "display_instruction": "TRUE FULL-SCREEN WORKING NOTE | PROBLEM / MY DECISION / WHO SAW IT / WHAT CHANGED",
+      "camera_map_mode": "CAMERA",
+      "prompt_file": "NEW_V07_Synchronized_Production_Package/03_RIVERSIDE/Riverside_CoCreator_Master_Prompt.txt",
+      "map_file": "NEW_V07_Synchronized_Production_Package/03_RIVERSIDE/Camera_and_Full_Screen_Map.txt"
+    },
+    {
+      "video": 8,
+      "teaching_moment": "3",
+      "section": "6",
+      "section_name": "WHAT TO WRITE DOWN",
+      "paragraph": "2",
+      "display_instruction": "TRUE FULL-SCREEN EXAMPLE NOTE | MY DECISION: Y / BUDGET APPROVAL: Z",
+      "camera_map_mode": "CAMERA",
+      "prompt_file": "NEW_V08_Synchronized_Production_Package/03_RIVERSIDE/Riverside_CoCreator_Master_Prompt.txt",
+      "map_file": "NEW_V08_Synchronized_Production_Package/03_RIVERSIDE/Camera_and_Full_Screen_Map.txt"
+    },
+    {
+      "video": 8,
+      "teaching_moment": "4",
+      "section": "13",
+      "section_name": "STORY LOOP PAYOFF",
+      "paragraph": "1",
+      "display_instruction": "TRUE FULL-SCREEN CALLBACK, THEN CAMERA | ACCESS MAY END. KEEP AN ACCURATE, PERMITTED RECORD.",
+      "camera_map_mode": "CAMERA",
+      "prompt_file": "NEW_V08_Synchronized_Production_Package/03_RIVERSIDE/Riverside_CoCreator_Master_Prompt.txt",
+      "map_file": "NEW_V08_Synchronized_Production_Package/03_RIVERSIDE/Camera_and_Full_Screen_Map.txt"
+    },
+    {
+      "video": 9,
+      "teaching_moment": "1",
+      "section": "5",
+      "section_name": "THE FOUR QUESTIONS",
+      "paragraph": "1",
+      "display_instruction": "TRUE FULL-SCREEN TEACHING | WHAT TRAVELS? / WHAT DOES NOT? / WHAT CAN I PROVE? / WHAT MUST I RELEARN?",
+      "camera_map_mode": "CAMERA",
+      "prompt_file": "NEW_V09_Synchronized_Production_Package/03_RIVERSIDE/Riverside_CoCreator_Master_Prompt.txt",
+      "map_file": "NEW_V09_Synchronized_Production_Package/03_RIVERSIDE/Camera_and_Full_Screen_Map.txt"
+    },
+    {
+      "video": 9,
+      "teaching_moment": "2",
+      "section": "10",
+      "section_name": "THINK OF IT LIKE SORTING",
+      "paragraph": "1",
+      "display_instruction": "TRUE FULL-SCREEN SORTING ILLUSTRATION | AS IT IS / NEEDS TRANSLATION / CONTEXT-BOUND / NEEDS LEARNING",
+      "camera_map_mode": "CAMERA",
+      "prompt_file": "NEW_V09_Synchronized_Production_Package/03_RIVERSIDE/Riverside_CoCreator_Master_Prompt.txt",
+      "map_file": "NEW_V09_Synchronized_Production_Package/03_RIVERSIDE/Camera_and_Full_Screen_Map.txt"
+    },
+    {
+      "video": 9,
+      "teaching_moment": "3",
+      "section": "14",
+      "section_name": "HOW TO TALK ABOUT THE GAP",
+      "paragraph": "2",
+      "display_instruction": "TRUE FULL-SCREEN CONVERSATION | USEFUL EXPERIENCE: X / USED TO SOLVE: Y / NEED TO BUILD: Z",
+      "camera_map_mode": "CAMERA",
+      "prompt_file": "NEW_V09_Synchronized_Production_Package/03_RIVERSIDE/Riverside_CoCreator_Master_Prompt.txt",
+      "map_file": "NEW_V09_Synchronized_Production_Package/03_RIVERSIDE/Camera_and_Full_Screen_Map.txt"
+    },
+    {
+      "video": 10,
+      "teaching_moment": "1",
+      "section": "1",
+      "section_name": "HOOK",
+      "paragraph": "6",
+      "display_instruction": "TRUE FULL-SCREEN FRAMEWORK | READ / TEST / PROVE",
+      "camera_map_mode": "CAMERA",
+      "prompt_file": "NEW_V10_Synchronized_Production_Package/03_RIVERSIDE/Riverside_CoCreator_Master_Prompt.txt",
+      "map_file": "NEW_V10_Synchronized_Production_Package/03_RIVERSIDE/Camera_and_Full_Screen_Map.txt"
+    },
+    {
+      "video": 10,
+      "teaching_moment": "2",
+      "section": "6",
+      "section_name": "WHAT READ DOES NOT MEAN",
+      "paragraph": "1",
+      "display_instruction": "CAMERA, THEN BRIEF FULL-SCREEN CONTRAST | READ ≠ STAY SILENT",
+      "camera_map_mode": "CAMERA",
+      "prompt_file": "NEW_V10_Synchronized_Production_Package/03_RIVERSIDE/Riverside_CoCreator_Master_Prompt.txt",
+      "map_file": "NEW_V10_Synchronized_Production_Package/03_RIVERSIDE/Camera_and_Full_Screen_Map.txt"
+    },
+    {
+      "video": 10,
+      "teaching_moment": "5",
+      "section": "12",
+      "section_name": "THE FIRST-90-DAYS READ",
+      "paragraph": "2",
+      "display_instruction": "TRUE FULL-SCREEN WORKING PAGE | READ / TEST / PROVE / ROLE CHECK",
+      "camera_map_mode": "CAMERA",
+      "prompt_file": "NEW_V10_Synchronized_Production_Package/03_RIVERSIDE/Riverside_CoCreator_Master_Prompt.txt",
+      "map_file": "NEW_V10_Synchronized_Production_Package/03_RIVERSIDE/Camera_and_Full_Screen_Map.txt"
+    },
+    {
+      "video": 11,
+      "teaching_moment": "5",
+      "section": "12",
+      "section_name": "TAKEAWAY VALUE",
+      "paragraph": "1",
+      "display_instruction": "TRUE FULL-SCREEN WORKING PAGE, THEN CAMERA | ONE DIFFERENCE / ONE COST / ONE NEXT ACTION",
+      "camera_map_mode": "CAMERA",
+      "prompt_file": "NEW_V11_Synchronized_Production_Package/03_RIVERSIDE/Riverside_CoCreator_Master_Prompt.txt",
+      "map_file": "NEW_V11_Synchronized_Production_Package/03_RIVERSIDE/Camera_and_Full_Screen_Map.txt"
+    }
+  ],
+  "truncated_camera_opening_boundaries": [
+    {
+      "v": 4,
+      "section": 1,
+      "paragraph": 3,
+      "line": "ENTER ON: If AI takes the task, who gets the experience..."
+    },
+    {
+      "v": 4,
+      "section": 1,
+      "paragraph": 3,
+      "line": "LEAVE ON: who gets the experience that used to com...  (paragraph 3)"
+    },
+    {
+      "v": 5,
+      "section": 1,
+      "paragraph": 1,
+      "line": "ENTER ON: Your company can need you so much that it beco..."
+    },
+    {
+      "v": 5,
+      "section": 1,
+      "paragraph": 1,
+      "line": "LEAVE ON: But think about what happens to the pers...  (paragraph 1)"
+    },
+    {
+      "v": 6,
+      "section": 1,
+      "paragraph": 1,
+      "line": "LEAVE ON: I want you to guess what this job actual...  (paragraph 1)"
+    },
+    {
+      "v": 6,
+      "section": 1,
+      "paragraph": 1,
+      "line": "ENTER ON: Senior Divisional Strategy Consultant, Governa..."
+    },
+    {
+      "v": 6,
+      "section": 1,
+      "paragraph": 1,
+      "line": "LEAVE ON: Sounds like someone setting strategy and...  (paragraph 1)"
+    },
+    {
+      "v": 6,
+      "section": 1,
+      "paragraph": 2,
+      "line": "ENTER ON: But when I read the actual posting, the bottom..."
+    },
+    {
+      "v": 6,
+      "section": 1,
+      "paragraph": 2,
+      "line": "LEAVE ON: Nothing is wrong with either of those th...  (paragraph 2)"
+    },
+    {
+      "v": 6,
+      "section": 1,
+      "paragraph": 3,
+      "line": "ENTER ON: But they tell you something important: The tit..."
+    },
+    {
+      "v": 6,
+      "section": 1,
+      "paragraph": 4,
+      "line": "ENTER ON: the four things I would read before deciding w..."
+    },
+    {
+      "v": 6,
+      "section": 1,
+      "paragraph": 4,
+      "line": "LEAVE ON: And the first thing I would do is almost...  (paragraph 4)"
+    },
+    {
+      "v": 6,
+      "section": 8,
+      "paragraph": 2,
+      "line": "LEAVE ON: worked directly with a Chief Transformation Of..."
+    },
+    {
+      "v": 6,
+      "section": 9,
+      "paragraph": 2,
+      "line": "ENTER ON: But the work included leading federal authoriz..."
+    },
+    {
+      "v": 6,
+      "section": 9,
+      "paragraph": 2,
+      "line": "ENTER ON: The published pay range went from $180,000 to..."
+    },
+    {
+      "v": 7,
+      "section": 1,
+      "paragraph": 1,
+      "line": "LEAVE ON: Two people can both be good at their job...  (paragraph 1)"
+    },
+    {
+      "v": 7,
+      "section": 1,
+      "paragraph": 3,
+      "line": "LEAVE ON: evidence people can already see at the n...  (paragraph 3)"
+    },
+    {
+      "v": 8,
+      "section": 1,
+      "paragraph": 1,
+      "line": "ENTER ON: Imagine tomorrow morning you try to log into y..."
+    },
+    {
+      "v": 8,
+      "section": 1,
+      "paragraph": 1,
+      "line": "LEAVE ON: Imagine tomorrow morning you try to log...  (paragraph 1)"
+    },
+    {
+      "v": 8,
+      "section": 1,
+      "paragraph": 3,
+      "line": "ENTER ON: Now imagine that six months later an interview..."
+    },
+    {
+      "v": 8,
+      "section": 1,
+      "paragraph": 3,
+      "line": "LEAVE ON: What exactly changed because of your wor...  (paragraph 3)"
+    },
+    {
+      "v": 9,
+      "section": 1,
+      "paragraph": 1,
+      "line": "ENTER ON: I think some transferable-skills advice gives..."
+    },
+    {
+      "v": 9,
+      "section": 1,
+      "paragraph": 2,
+      "line": "ENTER ON: The problem is that we spend so much time aski..."
+    },
+    {
+      "v": 9,
+      "section": 1,
+      "paragraph": 3,
+      "line": "LEAVE ON: Your knowledge of that company’s systems...  (paragraph 3)"
+    },
+    {
+      "v": 10,
+      "section": 1,
+      "paragraph": 2,
+      "line": "ENTER ON: And now you feel this pressure to prove they m..."
+    },
+    {
+      "v": 10,
+      "section": 1,
+      "paragraph": 2,
+      "line": "LEAVE ON: That pressure can make you do exactly th...  (paragraph 2)"
+    },
+    {
+      "v": 10,
+      "section": 1,
+      "paragraph": 3,
+      "line": "ENTER ON: You start trying to fix things before you unde..."
+    },
+    {
+      "v": 10,
+      "section": 1,
+      "paragraph": 3,
+      "line": "LEAVE ON: You stay quiet because you are afraid of...  (paragraph 3)"
+    },
+    {
+      "v": 10,
+      "section": 1,
+      "paragraph": 4,
+      "line": "ENTER ON: I do not think either one is the job of your f..."
+    },
+    {
+      "v": 10,
+      "section": 1,
+      "paragraph": 4,
+      "line": "LEAVE ON: Your first job is not to prove that ever...  (paragraph 4)"
+    },
+    {
+      "v": 10,
+      "section": 5,
+      "paragraph": 4,
+      "line": "LEAVE ON: what do people around me know that was never w..."
+    },
+    {
+      "v": 10,
+      "section": 5,
+      "paragraph": 4,
+      "line": "LEAVE ON: The first few weeks start showing you the real..."
+    },
+    {
+      "v": 11,
+      "section": 1,
+      "paragraph": 1,
+      "line": "ENTER ON: But three or six weeks in, you are thinking: T..."
+    },
+    {
+      "v": 11,
+      "section": 1,
+      "paragraph": 1,
+      "line": "LEAVE ON: This is not the job I thought I accepted...  (paragraph 1)"
+    },
+    {
+      "v": 11,
+      "section": 1,
+      "paragraph": 2,
+      "line": "ENTER ON: Before you call it a bait-and-switch, slow dow..."
+    },
+    {
+      "v": 11,
+      "section": 1,
+      "paragraph": 3,
+      "line": "ENTER ON: I use four questions for that: EXPECTED. ACTUA..."
+    }
+  ]
+}

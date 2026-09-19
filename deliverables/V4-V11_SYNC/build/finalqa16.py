@@ -10,6 +10,7 @@ sys.path.append(DELIV + "riverside-build")
 sys.path.insert(0, DELIV + "V4-V11_EDIT_SYNC/build")
 import recon as R, shortsync as SH, packages as P, briefs as B
 import sequencing as Q, locate as LOC
+import events as EV
 import src916 as S916
 from qa23 import units, _flat
 from PIL import Image
@@ -100,8 +101,9 @@ for n in R.VIDEOS:
     ck("V%d early entry and exit words are in their paragraphs" % n,
        not [b_ for b_ in Q.verify() if b_.startswith("V%d early" % n)], "")
     ck("V%d teaching states counted apart from the contact sheet" % n,
-       sum(len(c["states"]) for c in P.cues(n))
-       == len([x for x in png if "Contact_Sheet" not in x]),
+       len({x["name"] for e in EV.events(n) for x in e["states"]})
+       == len([x for x in png if "Contact_Sheet" not in x])
+       and len([x for x in png if "Contact_Sheet" in x]) == 1,
        "%d states, %d contact sheet"
        % (len([x for x in png if "Contact_Sheet" not in x]),
           len([x for x in png if "Contact_Sheet" in x])))
@@ -284,6 +286,14 @@ ck("States and contact sheets are counted apart",
    and T["contact_sheets"] == len(R.VIDEOS),
    "%d active states, %d contact sheets" % (T["states"],
                                             T["contact_sheets"]))
+ck("Every rendered state is cued by an event, and every cued state is "
+   "rendered",
+   all({x["name"] for e in EV.events(n) for x in e["states"]}
+       == {x[:-4] for x in os.listdir(
+           os.path.join(OUT, "PACKAGES", P.PKG[n], "04_VISUAL_ASSETS"))
+           if x.endswith(".png") and "Contact_Sheet" not in x}
+       for n in R.VIDEOS),
+   "%d states, %d events" % (T["states"], T["events"]))
 _a = P.v4_arithmetic()
 ck("V4's recount separates the introduction from the approved opening",
    _a["base"] + _a["intro"] + _a["hook"] == _a["total"],
@@ -382,6 +392,46 @@ ck("No document calls the new opening families cards",
    not [1 for f in _docs for u in units(f)
         if re.search(r"six opening cards", u, re.I)],
    "six families comprising eight states")
+
+# The event list, read back out of the delivered documents rather than
+# out of the generator, because the fault being tested was two documents
+# disagreeing about the same paragraph.
+def _cam(n):
+    return open(os.path.join(OUT, "PACKAGES", P.PKG[n], "03_RIVERSIDE",
+                             "Camera_and_Full_Screen_Map.txt")).read()
+
+
+for _n in R.VIDEOS:
+    _txt = _cam(_n)
+    _ell = [l for l in _txt.split("\n")
+            if ("ENTER ON:" in l or "LEAVE ON:" in l) and "..." in l]
+    ck("V%d no entry or exit phrase in the map is truncated" % _n,
+       not _ell, "%d boundary lines, none cut" % len(
+           [l for l in _txt.split("\n")
+            if "ENTER ON:" in l or "LEAVE ON:" in l]))
+    _missing = []
+    for _e in EV.events(_n):
+        if _e["mode"] != EV.FULL:
+            continue
+        if ("[%s]" % _e["eid"]) not in _txt:
+            _missing.append(_e["eid"])
+    ck("V%d every full-screen event appears in the delivered map" % _n,
+       not _missing, _missing or "%d events printed"
+       % len(EV.events(_n)))
+    _riv = open(os.path.join(OUT, "PACKAGES", P.PKG[_n], "03_RIVERSIDE",
+                             "Riverside_CoCreator_Master_Prompt.txt")).read()
+    _gone = [e["eid"] for e in EV.events(_n)
+             if ("[%s]" % e["eid"]) not in _txt
+             and (" %s " % e["eid"]) not in _riv
+             and ("  %s  " % e["eid"]) not in _riv]
+    ck("V%d the prompt and the map carry the same events" % _n,
+       not _gone, _gone or "%d events in both" % len(EV.events(_n)))
+    for _e in EV.events(_n):
+        pass
+    _sound = [e for e in EV.events(_n) if e["sound"]]
+    ck("V%d each sound event is one record with its own accent word" % _n,
+       all("word" in e["sound"] for e in _sound),
+       "%d sound events" % len(_sound))
 
 bad = [r for r in Rw if not r[1]]
 for nm, o, d in Rw:

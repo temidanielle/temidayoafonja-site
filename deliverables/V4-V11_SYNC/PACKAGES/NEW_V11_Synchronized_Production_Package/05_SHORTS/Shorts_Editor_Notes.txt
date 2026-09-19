@@ -25,14 +25,14 @@ SHARED RULES
 ------------------------------------------------------------------------------
 
 SHORT 1  |  This Isn't the Job
-    LENGTH:   97 words, about 0:35 at 165 wpm, arithmetic
+    LENGTH:   112 words, about 0:41 at 165 wpm, arithmetic
     OPEN TEXT: This is not the job I thought I accepted.
     OPEN SHOT: camera, 9:16
     SOUND:     one accent on “accepted”
-    CUT TO:    NEW_V11_FS_05_TEMPORARY_OR_NOT
-               on: Roles change. Priorities move.
-    PAYOFF:    NEW_V11_FS_01_FOUR_QUESTIONS, the last frame
-    ONE ASK:   If those two versions are different, name the diff...
+    CUT TO:    NEW_V11_FS_01_FOUR_QUESTIONS
+               on: I use four questions for that: EXPECTED. ACTUA...
+    PAYOFF:    NEW_V11_FS_00B_COST_AND_NEXT, the last frame
+    ONE ASK:   Write EXPECTED and ACTUAL side by side. Name one r...
 
 SHORT 2  |  Expected vs Actual
     LENGTH:   119 words, about 0:43 at 165 wpm, arithmetic

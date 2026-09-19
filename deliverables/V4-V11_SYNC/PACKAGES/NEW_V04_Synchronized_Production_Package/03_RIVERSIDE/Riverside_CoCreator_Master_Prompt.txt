@@ -4,7 +4,7 @@ NEW PUBLIC V4  |  RIVERSIDE CO-CREATOR MASTER PROMPT
 
 AI Took the Task. Who Gets the Experience?
 Thumbnail: WHO LEARNS NOW?
-Generated Thursday, September 17, 2026 | 12:57 PM CT
+Generated Saturday, September 19, 2026 | 6:36 AM CT
 
 1,036 spoken words. Planning estimate 7:08 to 7:58 at 130 to
 145 words per minute, provisional and arithmetic only. Nothing
@@ -50,65 +50,298 @@ HOW TO USE THIS
 
 ------------------------------------------------------------------------------
 
-OPENING SEQUENCE, EXECUTABLE
+THE EVENT LIST
 
-  Work these steps in order before the first teaching moment.
-  Each one names where it starts and stops inside the spoken
-  paragraph, so no passage is left to be reconciled between two
-  maps.
+  This is the whole edit, in spoken order. The camera map, the
+  motion map, the sound map and the asset index are generated
+  from these same events, so none of them can tell you
+  something different. Where a paragraph is not named below,
+  stay on camera.
 
-  STEP 1  |  CAMERA
+  An event carries its own id. A family may appear in more
+  than one event, at different points in the video: that is a
+  reuse, not a contradiction.
+
+  V4-O01  |  CAMERA  |  OPENING
+      LOCATION: section 1 HOOK, paragraph 1
       ON-SCREEN TEXT:
           WHO LEARNS NOW?
-      ENTER ON THESE WORDS, section 1 HOOK, paragraph 1:
+      ENTER ON THESE WORDS:
           Imagine a task that takes someone hours.
       LEAVE ON THESE WORDS, paragraph 1:
           That sounds like progress.
-      ASSET: none. Editorial text over camera.
-      SOUND: none
+      ASSET: none. Camera, with any editorial text over it.
+      SOUND: none.
       RETURN: stays on camera
       NOTE:
           The question enters over her face during the first
           sentence and clears. No benchmark, no figure, no timed
           comparison.
 
-  STEP 2  |  FULL SCREEN
+  V4-O02  |  FULL SCREEN  |  OPENING
+      LOCATION: section 1 HOOK, paragraphs 1 to 2
       ON-SCREEN TEXT:
           WHAT THE TASK TAUGHT
-      ENTER ON THESE WORDS, section 1 HOOK, paragraph 1:
+      ENTER ON THESE WORDS:
           But those hours were not always wasted.
       LEAVE ON THESE WORDS, paragraph 2:
           Where they started noticing patterns.
       ASSET FAMILY: NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT
-      STATES, IN REVEAL ORDER:
-          NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT.png
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V4_FS_03_WHAT_THE_WORK_TAUGHT.png   paragraph 1
+              on: But those hours were not always wasted.
       SOUND: S1, one brief stinger on 'wasted'
+      ACCENT WORD: none separately specified; the sound lands on the entry
       RETURN: camera returns on 'So I think we are asking the wrong question'
       NOTE:
           Rows arrive with the sentences that name them:
           repetition, fixing mistakes, seeing enough examples. Her
           voice continues.
 
-  STEP 3  |  FULL SCREEN
+  V4-O03  |  FULL SCREEN  |  OPENING
+      LOCATION: section 1 HOOK, paragraph 3
       ON-SCREEN TEXT:
           WHO GETS THE EXPERIENCE?
-      ENTER ON THESE WORDS, section 1 HOOK, paragraph 3:
+      ENTER ON THESE WORDS:
           If AI takes the task, who gets the experience that used
           to come from doing it?
       LEAVE ON THESE WORDS, paragraph 3:
           who gets the experience that used to come from doing it?
       ASSET FAMILY: NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE
-      STATES, IN REVEAL ORDER:
-          NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE.png
-      SOUND: none
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE.png   paragraph 3
+              on: If AI takes the task, who gets the experience that
+              on: used to come from doing it?
+      SOUND: none.
       RETURN: camera returns on 'Because we still need experienced people later'
       NOTE:
           Reveal the question once. The consequence is hers, on
           camera.
 
+  V4-C05  |  FULL SCREEN  |  CUE
+      LOCATION: section 4 THE PROBLEM, paragraph 1
+      ENTER ON THESE WORDS:
+          We talk a lot about which tasks AI can do. I think we
+          also need to talk about what people used to learn while
+          doing those tasks. A task can be boring and still teach
+          you something. Doing the same kind of work again and
+          again helps you notice patterns. Making mistakes helps
+          you learn what to watch for.
+      LEAVE ON THESE WORDS, paragraph 1:
+          We talk a lot about which tasks AI can do. I think we
+          also need to talk about what people used to learn while
+          doing those tasks. A task can be boring and still teach
+          you something. Doing the same kind of work again and
+          again helps you notice patterns. Making mistakes helps
+          you learn what to watch for.
+      ASSET FAMILY: NEW_V4_FS_02_INEFFICIENT_AND_DEVELOPMENTAL
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V4_FS_02_INEFFICIENT_AND_DEVELOPMENTAL.png   paragraph 1
+              on: We talk a lot about which tasks AI can do. I think
+              on: we also need to talk about what people used to
+              on: learn while doing those tasks. A task can be
+              on: boring and still teach you something. Doing the
+              on: same kind of work again and again helps you notice
+              on: patterns. Making mistakes helps you learn what to
+              on: watch for.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V4-C06  |  FULL SCREEN  |  CUE
+      LOCATION: section 5 THIS IS NOT AN ANTI-AI ARGUMENT, paragraph 2
+      ENTER ON THESE WORDS:
+          My question is not, “Should AI do the task?” My question
+          is: “If AI does the task, what replaces the learning?”
+      LEAVE ON THESE WORDS, paragraph 2:
+          My question is not, “Should AI do the task?” My question
+          is: “If AI does the task, what replaces the learning?”
+      ASSET FAMILY: NEW_V4_FS_04_THE_REAL_QUESTION
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V4_FS_04_THE_REAL_QUESTION.png   paragraph 2
+              on: My question is not, “Should AI do the task?” My
+              on: question is: “If AI does the task, what replaces
+              on: the learning?”
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V4-C07  |  FULL SCREEN  |  CUE
+      LOCATION: section 6 THREE THINGS TO WATCH, paragraph 1
+      ENTER ON THESE WORDS:
+          I would watch three things. First, exposure. Does the
+          person still see enough examples to learn the pattern?
+      LEAVE ON THESE WORDS, paragraph 1:
+          I would watch three things. First, exposure. Does the
+          person still see enough examples to learn the pattern?
+      ASSET FAMILY: NEW_V4_FS_05_THREE_THINGS
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V4_FS_05_THREE_THINGS.png   paragraph 1
+              on: I would watch three things. First, exposure. Does
+              on: the person still see enough examples to learn the
+              on: pattern?
+          NEW_V4_FS_05A_EXPOSURE.png   paragraph 1
+              on: I would watch three things. First, exposure. Does
+              on: the person still see enough examples to learn the
+              on: pattern?
+          NEW_V4_FS_05B_OWNERSHIP.png   paragraph 1
+              on: I would watch three things. First, exposure. Does
+              on: the person still see enough examples to learn the
+              on: pattern?
+          NEW_V4_FS_05C_FEEDBACK.png   paragraph 1
+              on: I would watch three things. First, exposure. Does
+              on: the person still see enough examples to learn the
+              on: pattern?
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V4-T02  |  FULL SCREEN  |  TEACHING
+      LOCATION: section 7 A SIMPLE EXAMPLE, paragraph 2
+      ON-SCREEN TEXT:
+          TRUE FULL-SCREEN ILLUSTRATION | TEST ASSUMPTIONS /
+          CHALLENGE THE ANSWER / EXPLAIN THE RECOMMENDATION
+      ENTER ON THESE WORDS:
+          Now imagine AI builds the first model.
+      LEAVE ON THESE WORDS, paragraph 2:
+          the learning may have moved to a different part of the
+          work.
+      ASSET FAMILY: NEW_V4_FS_06_MOVED_OR_REMOVED
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V4_FS_06_MOVED_OR_REMOVED.png   paragraph 2
+              on: test the assumptions, challenge the answer, and
+              on: explain the recommendation
+      SOUND: S3, one brief stinger as the card lands
+      ACCENT WORD: the learning may have moved
+      RETURN: camera returns on 'But if the job becomes: run the tool'
+      NOTE:
+          The brief puts this illustration on the sentence that
+          says the learning moved. That sentence is in paragraph
+          2, not 3.
+
+  V4-C08  |  FULL SCREEN  |  CUE
+      LOCATION: section 8 IF YOU MANAGE PEOPLE, paragraph 1
+      ENTER ON THESE WORDS:
+          If you manage people, do not only ask, “What can we
+          automate?” Also ask, “What did this task used to teach?”
+          Then decide where that learning will happen now.
+      LEAVE ON THESE WORDS, paragraph 1:
+          If you manage people, do not only ask, “What can we
+          automate?” Also ask, “What did this task used to teach?”
+          Then decide where that learning will happen now.
+      ASSET FAMILY: NEW_V4_FS_07_WHAT_DID_IT_TEACH
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V4_FS_07_WHAT_DID_IT_TEACH.png   paragraph 1
+              on: If you manage people, do not only ask, “What can
+              on: we automate?” Also ask, “What did this task used
+              on: to teach?” Then decide where that learning will
+              on: happen now.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V4-C09  |  FULL SCREEN  |  CUE
+      LOCATION: section 9 IF YOU USE AI IN YOUR OWN WORK, paragraph 1
+      ENTER ON THESE WORDS:
+          Ask yourself: What am I still practicing? What am I no
+          longer practicing? What decisions are still mine?
+      LEAVE ON THESE WORDS, paragraph 1:
+          Ask yourself: What am I still practicing? What am I no
+          longer practicing? What decisions are still mine?
+      ASSET FAMILY: NEW_V4_FS_08_STILL_PRACTICING
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V4_FS_08_STILL_PRACTICING.png   paragraph 1
+              on: Ask yourself: What am I still practicing? What am
+              on: I no longer practicing? What decisions are still
+              on: mine?
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V4-C10  |  FULL SCREEN  |  CUE
+      LOCATION: section 10 WHAT THIS CANNOT TELL US, paragraph 1
+      ENTER ON THESE WORDS:
+          Different jobs will have different answers. In some
+          jobs, AI may help people learn faster. In regulated or
+          high-risk work, people may still need hands-on practice
+          and human review. In other jobs, some tasks may truly
+          disappear.
+      LEAVE ON THESE WORDS, paragraph 1:
+          Different jobs will have different answers. In some
+          jobs, AI may help people learn faster. In regulated or
+          high-risk work, people may still need hands-on practice
+          and human review. In other jobs, some tasks may truly
+          disappear.
+      ASSET FAMILY: NEW_V4_FS_09_NOT_ONE_OUTCOME
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V4_FS_09_NOT_ONE_OUTCOME.png   paragraph 1
+              on: Different jobs will have different answers. In
+              on: some jobs, AI may help people learn faster. In
+              on: regulated or high-risk work, people may still need
+              on: hands-on practice and human review. In other jobs,
+              on: some tasks may truly disappear.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V4-C11  |  FULL SCREEN  |  CUE
+      LOCATION: section 12 TRY THIS ON ONE TASK, paragraph 1
+      ENTER ON THESE WORDS:
+          Pick one task AI now helps you do. Make three columns:
+          BEFORE AI. WITH AI. STILL MINE.
+      LEAVE ON THESE WORDS, paragraph 1:
+          Pick one task AI now helps you do. Make three columns:
+          BEFORE AI. WITH AI. STILL MINE.
+      ASSET FAMILY: NEW_V4_FS_10_THREE_COLUMNS
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V4_FS_10_THREE_COLUMNS.png   paragraph 1
+              on: Pick one task AI now helps you do. Make three
+              on: columns: BEFORE AI. WITH AI. STILL MINE.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V4-C12  |  FULL SCREEN  |  CUE
+      LOCATION: section 15 CLOSE, paragraph 1
+      ENTER ON THESE WORDS:
+          AI taking the task is not the same as AI taking the job.
+          But AI can take the part of the work where people used
+          to learn how to do the harder work later.
+      LEAVE ON THESE WORDS, paragraph 1:
+          AI taking the task is not the same as AI taking the job.
+          But AI can take the part of the work where people used
+          to learn how to do the harder work later.
+      ASSET FAMILY: NEW_V4_FS_11_TASK_IS_NOT_THE_JOB
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V4_FS_11_TASK_IS_NOT_THE_JOB.png   paragraph 1
+              on: AI taking the task is not the same as AI taking
+              on: the job. But AI can take the part of the work
+              on: where people used to learn how to do the harder
+              on: work later.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
+  V4-C13  |  FULL SCREEN  |  END
+      LOCATION: section 17 WATCH NEXT, paragraph 1
+      ENTER ON THESE WORDS:
+          And if AI is already doing more of your work, the next
+          question is what part of the result you can still
+          honestly claim. Watch “How to Prove Your Value When AI
+          Does More of the Task” next.
+      LEAVE ON THESE WORDS, paragraph 1:
+          And if AI is already doing more of your work, the next
+          question is what part of the result you can still
+          honestly claim. Watch “How to Prove Your Value When AI
+          Does More of the Task” next.
+      ASSET FAMILY: NEW_V4_WATCH_NEXT
+      STATES, WITH THE WORDS THEY ACTIVATE ON:
+          NEW_V4_WATCH_NEXT.png   paragraph 1
+              on: And if AI is already doing more of your work, the
+              on: next question is what part of the result you can
+              on: still honestly claim. Watch “How to Prove Your
+              on: Value When AI Does More of the Task” next.
+      SOUND: none.
+      RETURN: camera returns at the end of the paragraph
+
 ------------------------------------------------------------------------------
 
-OPENING TREATMENT, FROM THE BRIEF
+WHAT EACH BEAT OF THE BRIEF ASKED FOR
+
+  Kept for provenance. The event list above is the
+  instruction.
 
   1. CAMERA + BRIEF EDITORIAL TEXT
      DISPLAY COPY:
@@ -157,10 +390,6 @@ OPENING TREATMENT, FROM THE BRIEF
          Keep the activities. Show why the viewer would do them and
          the specific answer, note, or conversation they leave with.
          Do not replace practical teaching with bigger promises.
-
-------------------------------------------------------------------------------
-
-TEACHING MOMENTS
 
   1. THREE THINGS TO WATCH  |  S2
      DISPLAY COPY:

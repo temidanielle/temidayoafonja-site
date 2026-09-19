@@ -17,6 +17,7 @@ import briefs as B
 import src916 as S916
 import sequencing as Q
 import locate as LOC
+import events as EV
 from docs23 import (base_doc, title_block, h, kv, para, callout, sub,
                     caption, table, bullets, footer_note, page_break, mono,
                     hr, head)
@@ -40,8 +41,10 @@ def totals():
              active_families=sum(len(cues(n)) for n in R.VIDEOS),
              retired_families=len(Q.RETIRE),
              new_families=sum(len(v) for v in Q.NEW_FAMILIES.values()),
-             states=sum(len(c["states"]) for n in R.VIDEOS
-                        for c in cues(n)),
+             states=sum(len({x["name"] for e in EV.events(n)
+                             for x in e["states"]})
+                        for n in R.VIDEOS),
+             events=sum(len(EV.events(n)) for n in R.VIDEOS),
              contact_sheets=len(R.VIDEOS),
              shorts=sum(len(SH.rows(n)) for n in R.VIDEOS))
     t["total_families"] = t["active_families"] + t["retired_families"]
@@ -220,13 +223,31 @@ for _f in ("an_sprint.json", "an_1011.json"):
 
 
 def cues(n):
-    """Every family with its one resolved location, in spoken order.
+    """Every active family, derived from the resolved event list.
 
-    Corrected in sequencing.py: four cards re-cued to the section their own
-    copy belongs to, one retired, and the six early-edit families the
-    briefs specified added at their opening locations.
+    A family's row is its first event. Where a family serves more than one
+    event its other occurrences are listed too, so the count of families
+    and the count of events stay distinct: 'occurrences' says how many
+    times it plays.
     """
-    return Q.anchors(n)
+    labs = [x for x, _ in R.sections(n)]
+    byfam = {}
+    for e in EV.events(n):
+        if e["family"]:
+            byfam.setdefault(e["family"], []).append(e)
+    rows = []
+    for key, evs in byfam.items():
+        e = evs[0]
+        rows.append(dict(key=key, section=e["section"], para=e["para"],
+                         para_out=e["para_out"], label=labs[e["section"]],
+                         trigger=e["enter"],
+                         states=[x["name"] for x in evs[0]["states"]],
+                         all_states=[x["name"] for ev in evs
+                                     for x in ev["states"]],
+                         occurrences=len(evs), eid=e["eid"],
+                         kind="EVENT"))
+    rows.sort(key=lambda r: (r["section"], r["para"], r["key"]))
+    return rows
 
 
 def accent_of(beat):
@@ -259,11 +280,27 @@ def run_of_show(n, path, st):
             "%d" % len(" ".join(ps).split())]
            for i, (lab, ps) in enumerate(R.sections(n))],
           widths=[0.4, 3.0, 1.0, 0.8], size=8.5)
-    h(d, "Full-screen cues, one location each. Active only.")
-    table(d, ["Asset family", "Section", "Para", "States", "Anchor"],
-          [[c["key"], "%d %s" % (c["section"] + 1, c["label"]),
-            "%d" % (c["para"] + 1), "%d" % len(c["states"]), c["kind"]]
-           for c in cues(n)], widths=[2.3, 2.1, 0.5, 0.6, 1.2], size=7.5)
+    h(d, "The event list. Every shot, in spoken order.")
+    labs = [x for x, _ in R.sections(n)]
+    table(d, ["Event", "Mode", "Section", "Paragraphs", "Asset family",
+              "States"],
+          [[e["eid"], e["mode"],
+            "%d %s" % (e["section"] + 1, labs[e["section"]]),
+            ("%d" % (e["para"] + 1)) if e["para_out"] == e["para"]
+            else "%d to %d" % (e["para"] + 1, e["para_out"] + 1),
+            e["family"] or "camera", "%d" % len(e["states"])]
+           for e in EV.events(n)],
+          widths=[0.8, 0.9, 1.7, 0.8, 2.0, 0.5], size=7)
+    caption(d, "One event list generates the camera map, the motion map, "
+               "the sound map, the asset index and the Riverside prompt, "
+               "so no two of them can disagree. An event may begin and "
+               "end inside one paragraph or run across several.")
+    h(d, "Families, and where each one plays")
+    table(d, ["Asset family", "First event", "Occurrences", "States"],
+          [[c["key"], "%d %s, para %d" % (c["section"] + 1, c["label"],
+                                          c["para"] + 1),
+            "%d" % c["occurrences"], "%d" % len(c["all_states"])]
+           for c in cues(n)], widths=[2.4, 2.4, 0.9, 0.7], size=7.5)
     caption(d, "Every cue resolves to one section and one paragraph, and "
                "every label and trigger above is read from the "
                "reconciled script at that location. RE-ANCHORED means the "
@@ -287,6 +324,18 @@ def run_of_show(n, path, st):
     return path
 
 
+def _boundary(label, text, pad=11):
+    """A boundary phrase, wrapped rather than cut.
+
+    An ellipsis in an operational trigger is not a boundary. The editor
+    has to hear the exact words, so these wrap instead of truncating.
+    """
+    lines = _wrap(text, 58)
+    out = ["           %s: %s" % (label, lines[0])]
+    out += [" " * (12 + len(label) + 2) + x for x in lines[1:]]
+    return out
+
+
 def camera_map(n, path):
     L = head("NEW PUBLIC V%d  |  CAMERA AND FULL-SCREEN MAP" % n)
     L += [LOCKED[n][0], "", "Camera is primary for recognition, lived",
@@ -294,80 +343,83 @@ def camera_map(n, path):
           "statements. Substantive teaching, frameworks, comparisons and",
           "meaningful B-roll are TRUE FULL SCREEN. The voice may continue",
           "under a full-screen image. Never keep Temidayo moving behind a",
-          "teaching card.", "", hr(), ""]
-    C = {c["section"]: [] for c in cues(n)}
-    for c in cues(n):
-        C.setdefault(c["section"], []).append(c)
+          "teaching card.", "",
+          "This map and the Riverside prompt are generated from one event",
+          "list, so a paragraph cannot be camera here and full screen",
+          "there. An event may begin and end inside a paragraph or run",
+          "across several, and one asset family may serve more than one",
+          "event at different points in the video.", "", hr(), ""]
+    ev = EV.events(n)
+    modes = EV.modes(n)
     for li, (lab, ps) in enumerate(R.sections(n)):
         L += ["SECTION %d  %s%s" % (li + 1, lab,
                                     "   [restored intro]"
                                     if lab == R.INTRO_LABEL else ""), ""]
         for pi, p in enumerate(ps):
-            early = [e for e in Q.EARLY.get(n, [])
-                     if e["section"] == li and e["para"] == pi]
-            # An early step is the full instruction for its family, so the
-            # family's own row is not printed again underneath it.
-            done = {e["asset"] for e in Q.EARLY.get(n, []) if e["asset"]}
-            hit = [c for c in C.get(li, [])
-                   if c["para"] == pi and c["key"] not in done]
-            if early:
-                for e in early:
-                    L += ["  PARA %d   MODE: %s   (early edit, step %d)"
-                          % (pi + 1, e["mode"], e["order"])]
-                    if e["display"]:
-                        L += ["           ON-SCREEN TEXT: %s"
-                              % _clip(e["display"], 44)]
-                    L += ["           ENTER ON: %s" % _clip(e["enter"], 46),
-                          "           LEAVE ON: %s  (paragraph %d)"
-                          % (_clip(e["leave"], 40), e["para_out"] + 1)]
-                    if e["asset"]:
-                        L += ["           ASSET FAMILY: %s" % e["asset"],
-                              "           STATES, IN REVEAL ORDER:"]
-                        for x in e["states"]:
-                            L.append("               %s.png" % x)
-                    L += ["           SOUND: %s" % (e["sound"] or "none"),
-                          "           RETURN: %s" % e["ret"], ""]
-            if hit:
-                for c in hit:
-                    sub = Q.subrange(n, li, pi, c["key"])
-                    L += ["  PARA %d   MODE: FULL SCREEN%s"
-                          % (pi + 1,
-                             "   (%d of %d in this paragraph)"
-                             % (sub["order"], sub["of"]) if sub else ""),
-                          "           ASSET FAMILY: %s" % c["key"],
-                          "           STATES, IN REVEAL ORDER:"]
-                    for x in c["states"]:
-                        L.append("               %s.png" % x)
-                    if sub:
-                        L += ["           ENTER ON: %s"
-                              % _clip(sub["enter"], 46),
-                              "           LEAVE ON: %s"
-                              % _clip(sub["leave"], 46)]
-                        L += ["           The camera does not return here. "
-                              "The next card in this",
-                              "           paragraph takes over on its own "
-                              "entry words."]\
-                            if sub["order"] < sub["of"] else \
-                            ["           The camera returns at the end of "
-                             "this paragraph."]
-                    else:
-                        L += ["           EXACT TRIGGER:"]
-                        L += ["               %s" % x
-                              for x in _wrap(c["trigger"] or p, 58)]
-                    L.append("")
-            held = [e for e in Q.EARLY.get(n, [])
+            starts = [e for e in ev
+                      if e["section"] == li and e["para"] == pi]
+            held = [e for e in ev
                     if e["section"] == li and e["para"] < pi
                     and e["para_out"] >= pi]
-            if not hit and not early and held:
-                e = held[0]
-                L += ["  PARA %d   MODE: %s, still held from step %d"
-                      % (pi + 1, e["mode"], e["order"]),
-                      "           The voice continues under it. LEAVE ON: "
-                      "%s" % _clip(e["leave"], 40),
-                      "           RETURN: %s" % e["ret"], ""]
-            elif not hit and not early:
+            for e in starts:
+                L += ["  PARA %d   MODE: %s   [%s]"
+                      % (pi + 1, e["mode"], e["eid"])]
+                if e["para_out"] > e["para"]:
+                    L.append("           SPANS PARAGRAPHS %d TO %d"
+                             % (e["para"] + 1, e["para_out"] + 1))
+                if e["display"]:
+                    L += ["           ON-SCREEN: %s"
+                          % x for x in _wrap(e["display"], 46)[:1]]
+                    for x in _wrap(e["display"], 46)[1:]:
+                        L.append("                      %s" % x)
+                L += _boundary("ENTER ON", e["enter"])
+                L += _boundary("LEAVE ON", e["leave"])
+                if e["para_out"] != e["para"]:
+                    L.append("           (the exit wording is in "
+                             "paragraph %d)" % (e["para_out"] + 1))
+                if e["family"]:
+                    L.append("           ASSET FAMILY: %s" % e["family"])
+                    L.append("           STATES, WITH THE WORDS THEY "
+                             "ACTIVATE ON:")
+                    for st in e["states"]:
+                        L.append("               %s.png   paragraph %d"
+                                 % (st["name"], st["para"] + 1))
+                        L += ["                   on: %s" % x
+                              for x in _wrap(st["on"], 50)]
+                else:
+                    L.append("           ASSET: none. Camera, with any "
+                             "editorial text over it.")
+                if e["sound"]:
+                    w = e["sound"].get("word")
+                    L.append("           SOUND: %s"
+                             % (e["sound"].get("note") or "one accent"))
+                    L.append("           ACCENT WORD: %s"
+                             % (w if w else "none separately specified"))
+                L.append("           RETURN: %s" % e["ret"])
+                if e["note"]:
+                    L += ["           NOTE: %s" % x
+                          for x in _wrap(e["note"], 50)[:1]]
+                    for x in _wrap(e["note"], 50)[1:]:
+                        L.append("                 %s" % x)
+                L.append("")
+            for e in held:
+                L += ["  PARA %d   MODE: %s, held from %s"
+                      % (pi + 1, e["mode"], e["eid"]),
+                      "           The voice continues under it."]
+                act = [st for st in e["states"] if st["para"] == pi]
+                if act:
+                    L.append("           ACTIVATE HERE:")
+                    for st in act:
+                        L.append("               %s.png" % st["name"])
+                        L += ["                   on: %s" % x
+                              for x in _wrap(st["on"], 50)]
+                L.append("           RETURN: %s" % e["ret"])
+                L.append("")
+            if not starts and not held:
                 L += ["  PARA %d   MODE: CAMERA" % (pi + 1),
                       "           %s" % _clip(p, 58), ""]
+            if modes[(li, pi)] == EV.FULL and not starts and not held:
+                L.append("           (mode conflict)")
     ret = Q.retired(n)
     if ret:
         L += [hr(), "", "RETIRED. INACTIVE. DO NOT CUE.", ""]
@@ -392,93 +444,84 @@ def motion_map(n, path):
     L = head("NEW PUBLIC V%d  |  MOTION AND REVEAL MAP" % n)
     L += [LOCKED[n][0], "",
           "One active idea at a time. Establish the whole structure, then",
-          "activate one component. Gentle push-ins and occasional",
-          "pull-backs only. No constant zooming, pulsing or effects.",
-          "Preserve meaningful pauses.", "", hr(), ""]
-    for c in cues(n):
-        sub = Q.subrange(n, c["section"], c["para"], c["key"])
-        L += ["%s" % c["key"],
-              "  SECTION %d, PARAGRAPH %d%s"
-              % (c["section"] + 1, c["para"] + 1,
-                 "   (%d of %d in this paragraph)" % (sub["order"],
-                                                      sub["of"])
-                 if sub else ""),
-              "  REVEAL ORDER:"]
-        for i, s in enumerate(c["states"], 1):
-            L.append("      %d. %s.png" % (i, s))
+          "activate one component on the words that name it. Gentle",
+          "push-ins and occasional pull-backs only. No constant zooming,",
+          "pulsing or effects. Preserve meaningful pauses.", "",
+          "A state is never activated before its words are spoken, even",
+          "when it belongs to a family that established earlier.", "",
+          hr(), ""]
+    labs = [x for x, _ in R.sections(n)]
+    for e in EV.events(n):
+        if not e["family"]:
+            continue
+        L += ["%s   [%s]" % (e["family"], e["eid"]),
+              "  SECTION %d %s" % (e["section"] + 1, labs[e["section"]])]
+        if e["para_out"] > e["para"]:
+            L.append("  PARAGRAPHS %d TO %d" % (e["para"] + 1,
+                                                e["para_out"] + 1))
+        else:
+            L.append("  PARAGRAPH %d" % (e["para"] + 1))
+        L.append("  REVEAL ORDER:")
+        for i, st in enumerate(e["states"], 1):
+            L.append("      %d. %s.png   paragraph %d"
+                     % (i, st["name"], st["para"] + 1))
+            L += ["             on: %s" % x for x in _wrap(st["on"], 52)]
         L += ["  EMPHASIS: active item in the warm yellow wash with the",
               "            rust rule. Everything else quiet. Never two",
-              "            active at once.", ""]
+              "            active at once.",
+              "  RETURN:   %s" % e["ret"], ""]
     for r in Q.retired(n):
         L += ["%s   RETIRED. INACTIVE." % r["key"],
               "  No reveal order. This family is not played in this "
               "video.", ""]
-    b = B.read(n)
+    b_ = B.read(n)
     L += [hr(), "", "CAMERA EMPHASIS  |  FOUR BEATS", ""]
-    for x in b["camera"]:
+    for x in b_["camera"]:
         L += ["  %s" % y for y in _wrap(x, 66)]
         L.append("")
     return mono(path, L)
 
 
 def sound_map(n, path):
-    b = B.read(n)
     L = head("NEW PUBLIC V%d  |  SOUND MAP" % n)
     L += [LOCKED[n][0], "",
           "A stinger means a brief sound: a quiet click, a soft tap, paper",
           "movement or a restrained tonal accent. It is not a logo",
-          "animation, a loud transition or a visual effect. A visual",
-          "accent and a cutaway are separate choices.", "",
+          "animation, a loud transition or a visual effect.", "",
+          "Every row below is one event. Visual entry and the exact word",
+          "the accent lands on are separate fields of that one event, not",
+          "two sounds. Where an event names no accent word, the sound",
+          "lands on the visual entry and nowhere else.", "",
           "Audition every cue under the actual recorded voice. Keep speech",
           "clear. No alarms, no loud whooshes, no compulsory music bed, no",
           "accent on every bullet, and no second effect where one already",
-          "carries the moment.", "", hr(), "", "THE FIVE ACCENTS", ""]
-    seen = []
-    for x in b["beats"]:
-        a = accent_of(x)
-        if not a:
-            continue
-        seen.append(a)
-        r = LOC.resolve(n, x["trigger"], x["head"]) if x["trigger"] else None
-        w = LOC.accent_location(n, x)
-        L += ["  %s" % a,
-              "      SCENE ENTERS ON THIS EXACT SPOKEN WORDING:"]
-        L += ["          %s" % y
-              for y in _wrap(LOC.remap(n, x["trigger"]) or "", 56)]
-        if r:
-            L += ["      LOCATION: section %d, %s, paragraph %d"
-                  % (r["section"] + 1, r["label"], r["para"] + 1)]
-            if r["occurrences"] > 1:
-                L += ["          %s" % y for y in _wrap(r["note"], 54)]
-        if w:
-            L += ["      THE SOUND ITSELF FALLS ON: %s" % w["word"]]
-            if w["section"] is not None:
-                L += ["          section %d, %s, paragraph %d"
-                      % (w["section"] + 1, w["label"], w["para"] + 1)]
-            else:
-                L += ["          %s" % y for y in _wrap(w["note"], 54)]
-            L += ["          One accent on that word. Not one per bullet."]
-        else:
-            L += ["      THE SOUND ITSELF FALLS ON: the scene entry above.",
-                  "          The brief names no separate accent word."]
-        L += ["      TREATMENT: %s" % _clip(x["head"], 52), ""]
-    missing = [s for s in ("S1", "S2", "S3", "S4", "S5") if s not in seen]
-    if missing:
-        L += ["  Accents the brief carries in prose rather than on a",
-              "  numbered beat: %s." % ", ".join(missing),
-              "  Place them on the passage the brief names. Do not invent",
-              "  a placement.", ""]
-    L += [hr(), "", "EARLY-EDIT SOUND EVENTS", "",
-          "  Section numbers below are the reconciled script's, the same",
-          "  numbering the camera map uses.", ""]
-    for e in Q.EARLY.get(n, []):
+          "carries the moment.", "", hr(), "",
+          "EVERY SOUND EVENT, IN SPOKEN ORDER", ""]
+    labs = [x for x, _ in R.sections(n)]
+    heard = 0
+    for e in EV.events(n):
         if not e["sound"]:
             continue
-        L += ["  STEP %d  %s" % (e["order"], e["sound"]),
-              "      on: %s" % _clip(e["enter"], 52),
-              "      section %d, paragraph %d" % (e["section"] + 1,
-                                                  e["para"] + 1), ""]
-    L += [hr(), "", "ONE QUIET SUBSCRIBE CUE", "",
+        heard += 1
+        L += ["  %s   %s" % (e["eid"], e["kind"]),
+              "      LOCATION: section %d, %s, paragraph %d"
+              % (e["section"] + 1, labs[e["section"]], e["para"] + 1)]
+        L += ["      VISUAL ENTERS ON:"]
+        L += ["          %s" % x for x in _wrap(e["enter"], 56)]
+        w = e["sound"].get("word")
+        if w:
+            L += ["      THE ACCENT LANDS ON THIS EXACT WORD:"]
+            L += ["          %s" % x for x in _wrap(w, 56)]
+        else:
+            L += ["      THE ACCENT LANDS ON: the visual entry above.",
+                  "          No separate accent word is specified for "
+                  "this event."]
+        L += ["      TREATMENT: %s" % (e["sound"].get("note") or
+                                       "one brief stinger"), ""]
+    L += ["  %d sound events in this video. Every one is a single event "
+          "with" % heard,
+          "  one visual entry and at most one accent word.", "",
+          hr(), "", "ONE QUIET SUBSCRIBE CUE", "",
           "  After value has landed. It is an edit cue, not a spoken ask,",
           "  and no spoken wording was added for it.", ""]
     return mono(path, L)
@@ -535,17 +578,20 @@ def riverside(n, path, st, assets):
           "  reveal an answer before its spoken setup.", "",
           "  Every visual named in this prompt exists as a rendered state",
           "  in 04_VISUAL_ASSETS. Nothing here is a proposal.", "",
-          hr(), "", "OPENING SEQUENCE, EXECUTABLE", "",
-          "  Work these steps in order before the first teaching moment.",
-          "  Each one names where it starts and stops inside the spoken",
-          "  paragraph, so no passage is left to be reconciled between two",
-          "  maps.", ""]
-    L += _early(n)
-    L += [hr(), "", "OPENING TREATMENT, FROM THE BRIEF", ""]
-    for x in [y for y in b["beats"] if y["phase"] == "opening"]:
-        L += _beat(n, x)
-    L += [hr(), "", "TEACHING MOMENTS", ""]
-    for x in [y for y in b["beats"] if y["phase"] == "teaching"]:
+          hr(), "", "THE EVENT LIST", "",
+          "  This is the whole edit, in spoken order. The camera map, the",
+          "  motion map, the sound map and the asset index are generated",
+          "  from these same events, so none of them can tell you",
+          "  something different. Where a paragraph is not named below,",
+          "  stay on camera.", "",
+          "  An event carries its own id. A family may appear in more",
+          "  than one event, at different points in the video: that is a",
+          "  reuse, not a contradiction.", ""]
+    L += _eventlist(n)
+    L += [hr(), "", "WHAT EACH BEAT OF THE BRIEF ASKED FOR", "",
+          "  Kept for provenance. The event list above is the",
+          "  instruction.", ""]
+    for x in b["beats"]:
         L += _beat(n, x)
     L += [hr(), "", "ASSETS IN THIS PACKAGE", "",
           "  %d full-screen families, %d rendered teaching and end-card"
@@ -577,32 +623,49 @@ def _proposed(line):
     return R.S._norm(_PROPOSED) in R.S._norm(line or "")
 
 
-def _early(n):
-    """The opening sequence as one executable list."""
+def _eventlist(n):
+    """Every event, in spoken order, as the editor works it."""
     L = []
     labs = [x for x, _ in R.sections(n)]
-    for s in Q.EARLY.get(n, []):
-        L += ["  STEP %d  |  %s" % (s["order"], s["mode"])]
-        if s["display"]:
+    for e in EV.events(n):
+        span = ("paragraph %d" % (e["para"] + 1)
+                if e["para_out"] == e["para"] else
+                "paragraphs %d to %d" % (e["para"] + 1, e["para_out"] + 1))
+        L += ["  %s  |  %s  |  %s" % (e["eid"], e["mode"], e["kind"]),
+              "      LOCATION: section %d %s, %s"
+              % (e["section"] + 1, labs[e["section"]], span)]
+        if e["display"]:
             L += ["      ON-SCREEN TEXT:"]
-            L += ["          %s" % y for y in _wrap(s["display"], 56)]
-        L += ["      ENTER ON THESE WORDS, section %d %s, paragraph %d:"
-              % (s["section"] + 1, labs[s["section"]], s["para"] + 1)]
-        L += ["          %s" % y for y in _wrap(s["enter"], 56)]
-        L += ["      LEAVE ON THESE WORDS, paragraph %d:" % (s["para_out"]
-                                                             + 1)]
-        L += ["          %s" % y for y in _wrap(s["leave"], 56)]
-        if s["asset"]:
-            L += ["      ASSET FAMILY: %s" % s["asset"],
-                  "      STATES, IN REVEAL ORDER:"]
-            L += ["          %s.png" % x for x in s["states"]]
+            L += ["          %s" % y for y in _wrap(e["display"], 56)]
+        L += ["      ENTER ON THESE WORDS:"]
+        L += ["          %s" % y for y in _wrap(e["enter"], 56)]
+        L += ["      LEAVE ON THESE WORDS, paragraph %d:"
+              % (e["para_out"] + 1)]
+        L += ["          %s" % y for y in _wrap(e["leave"], 56)]
+        if e["family"]:
+            L += ["      ASSET FAMILY: %s" % e["family"],
+                  "      STATES, WITH THE WORDS THEY ACTIVATE ON:"]
+            for st in e["states"]:
+                L.append("          %s.png   paragraph %d"
+                         % (st["name"], st["para"] + 1))
+                L += ["              on: %s" % y
+                      for y in _wrap(st["on"], 50)]
         else:
-            L += ["      ASSET: none. Editorial text over camera."]
-        L += ["      SOUND: %s" % (s["sound"] or "none")]
-        L += ["      RETURN: %s" % s["ret"]]
-        if s["note"]:
+            L += ["      ASSET: none. Camera, with any editorial text "
+                  "over it."]
+        if e["sound"]:
+            L += ["      SOUND: %s" % (e["sound"].get("note")
+                                       or "one accent"),
+                  "      ACCENT WORD: %s" % (e["sound"].get("word")
+                                             or "none separately "
+                                                "specified; the sound "
+                                                "lands on the entry")]
+        else:
+            L += ["      SOUND: none."]
+        L += ["      RETURN: %s" % e["ret"]]
+        if e["note"]:
             L += ["      NOTE:"]
-            L += ["          %s" % y for y in _wrap(s["note"], 56)]
+            L += ["          %s" % y for y in _wrap(e["note"], 56)]
         L.append("")
     return L
 
@@ -907,10 +970,12 @@ def qa_report(n, path, st, L, assets, checks):
     kv(d, "Spoken words", format(R.word_count(n), ","))
     kv(d, "Thought-block parity", "exact and in order")
     kv(d, "Visual assets", "%d rendered teaching and end-card states "
-                           "across %d active families, all 1920 x 1080, "
-                           "plus one phone-size contact sheet, which is a "
-                           "proof sheet of those states and not a state"
-                           % (len(assets), len(cues(n))))
+                           "across %d active families and %d events, all "
+                           "1920 x 1080, plus one phone-size contact "
+                           "sheet, which is a proof sheet of those states "
+                           "and not a state"
+                           % (len(assets), len(cues(n)),
+                              len(EV.events(n))))
     if Q.retired(n):
         kv(d, "Retired", "%s. Inactive, not cued, and not rendered into "
                          "this package."
@@ -1163,8 +1228,45 @@ def per_video_checks(n, assets, L):
        not SH.audit(n), SH.audit(n) or "%d editorial rules checked"
        % (len(SH.LISTS) + len(SH.ANTECEDENTS)))
     ck("Teaching states counted apart from the contact sheet",
-       not [x for x in assets if "Contact_Sheet" in x],
-       "%d states; the contact sheet is listed separately" % len(assets))
+       not [x for x in assets if "Contact_Sheet" in x]
+       and len({x["name"] for e in EV.events(n) for x in e["states"]})
+       == len(assets),
+       "%d states, every one cued by an event; the contact sheet is "
+       "listed separately" % len(assets))
+    ck("One event list, verified against the master",
+       not [b_ for b_ in EV.verify() if b_.startswith("V%d-" % n)],
+       "%d events, %d of them spanning more than one paragraph"
+       % (len(EV.events(n)),
+          len([e for e in EV.events(n) if e["para_out"] > e["para"]])))
+    ck("No full-screen event lands on a camera paragraph",
+       not [1 for e in EV.events(n) if e["mode"] == EV.FULL
+            for pi in range(e["para"], e["para_out"] + 1)
+            if EV.modes(n)[(e["section"], pi)] != EV.FULL],
+       "the camera map and the prompt are generated from the same events")
+    ck("Every state activates on words spoken in its own paragraph",
+       not [1 for e in EV.events(n) for st in e["states"]
+            if R.S._norm(st["on"]).lower()
+            not in R.S._norm(R.sections(n)[e["section"]][1][st["para"]]
+                             ).lower()],
+       "%d states across %d events"
+       % (sum(len(e["states"]) for e in EV.events(n)), len(EV.events(n))))
+    ck("No later answer is revealed before its words are spoken",
+       all([st["para"] for st in e["states"]]
+           == sorted(st["para"] for st in e["states"])
+           for e in EV.events(n)),
+       "reveal order follows the spoken order inside every event")
+    ck("Every boundary phrase is complete, never truncated",
+       not [1 for e in EV.events(n)
+            if "..." in e["enter"] or "..." in e["leave"]],
+       "entry and exit wording wraps rather than cutting")
+    ck("Visual entry and accent word are separate fields",
+       all(("word" in e["sound"]) for e in EV.events(n) if e["sound"]),
+       "%d sound events, each one record"
+       % len([e for e in EV.events(n) if e["sound"]]))
+    ck("A reused family is one family at more than one event",
+       all(c["occurrences"] >= 1 for c in cues(n)),
+       "%d families, %d events"
+       % (len(cues(n)), len([e for e in EV.events(n) if e["family"]])))
     return out
 
 
@@ -1259,12 +1361,29 @@ def asset_index(n, path, assets):
           "The phone-size contact sheet is a proof sheet of those states,",
           "not a state. It is listed at the end and is not counted above.",
           "", hr(), ""]
-    for c in cues(n):
-        L += ["%s" % c["key"],
-              "   SECTION %d  %s   PARAGRAPH %d"
-              % (c["section"] + 1, c["label"], c["para"] + 1)]
-        for i, s in enumerate(c["states"], 1):
-            L.append("      %d. %s.png" % (i, s))
+    labs = [x for x, _ in R.sections(n)]
+    byfam = {}
+    for e in EV.events(n):
+        if e["family"]:
+            byfam.setdefault(e["family"], []).append(e)
+    for key in sorted(byfam, key=lambda k: (byfam[k][0]["section"],
+                                            byfam[k][0]["para"])):
+        evs = byfam[key]
+        L += ["%s" % key]
+        if len(evs) > 1:
+            L.append("   USED AT %d SEPARATE EVENTS. One family, more "
+                     "than one occurrence." % len(evs))
+        for e in evs:
+            span = ("PARAGRAPH %d" % (e["para"] + 1)
+                    if e["para_out"] == e["para"] else
+                    "PARAGRAPHS %d TO %d" % (e["para"] + 1,
+                                             e["para_out"] + 1))
+            L.append("   [%s]  SECTION %d  %s   %s"
+                     % (e["eid"], e["section"] + 1, labs[e["section"]],
+                        span))
+            for i, st in enumerate(e["states"], 1):
+                L.append("      %d. %s.png   paragraph %d"
+                         % (i, st["name"], st["para"] + 1))
         L.append("")
     svg = sorted(x for x in os.listdir(os.path.dirname(path))
                  if x.endswith(".svg"))
@@ -1613,6 +1732,38 @@ def changelog(path, st, L):
                "quoted was an internal system and the word portable, "
                "neither of which the script uses. The source passage was "
                "not touched and the revised cards are kept.")
+    t = totals()
+    h(d, "One event list")
+    para(d, "The packages used to carry two instruction layers. The "
+            "Riverside prompt told the editor to stay on camera wherever "
+            "the camera map said CAMERA, while seventeen of its own "
+            "teaching moments pointed at paragraphs that map marked "
+            "CAMERA. Separately, every state of a multi-state family sat "
+            "under one paragraph, so the four cost lenses were all "
+            "assigned to the paragraph that names two of them and the "
+            "paragraph naming the other two was marked CAMERA.", size=10.5)
+    para(d, "Both faults have one cause: a cue was a family pinned to a "
+            "paragraph. A cue is an event. It has its own id, it occupies "
+            "a span of paragraphs, and it activates particular states on "
+            "particular spoken words. One family can serve more than one "
+            "event at different points in the video, which is why the "
+            "event id and the family id are now kept apart. The run of "
+            "show, camera map, motion map, sound map, asset index and "
+            "Riverside prompt are all generated from that one list, so no "
+            "two of them can disagree.", size=10.5, before=6)
+    table(d, ["", "Count"],
+          [["Events across the eight videos", "%d" % t["events"]],
+           ["Events that span more than one paragraph",
+            "%d" % sum(1 for n in R.VIDEOS for e in EV.events(n)
+                       if e["para_out"] > e["para"])],
+           ["Families serving more than one event",
+            "%d" % sum(1 for n in R.VIDEOS for c in cues(n)
+                       if c["occurrences"] > 1)],
+           ["Full-screen instructions that pointed at a camera paragraph",
+            "17, all resolved"],
+           ["Entry and exit phrases that were truncated",
+            "36, all now complete"]],
+          widths=[4.3, 2.4], size=8.5)
     h(d, "Cue locations, sequencing and the early edit")
     table(d, ["Video", "Family", "What moved, and why"],
           [["V%d" % v, k, why]
@@ -1766,6 +1917,14 @@ def concise_changelog(path, st, checks_total):
       "RETIRED and INACTIVE in the asset index, the camera map, the "
       "motion map, the run of show, the QA report and the ledger, rather "
       "than simply being absent.",
+      "One event list now generates every map. The seventeen "
+      "full-screen instructions that pointed at camera paragraphs are "
+      "resolved, multi-state families reveal across the paragraphs that "
+      "actually name their items, and the thirty-six truncated entry and "
+      "exit phrases are complete. Four teaching states were built where "
+      "no delivered state could carry the treatment the brief names.",
+      "V11 Short 1 closes on the approved role-drift read from TAKEAWAY "
+      "VALUE instead of naming the four questions and stopping.",
     ], size=10)
     h(d, "Unchanged, and re-verified rather than rebuilt")
     bullets(d, [

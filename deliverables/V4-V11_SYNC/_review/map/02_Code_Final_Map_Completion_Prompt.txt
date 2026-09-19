@@ -1,0 +1,76 @@
+TEMIDAYO AFONJA | V4–V11 FINAL EDIT-MAP COMPLETION
+September 16, 2026
+
+Continue in the current workspace. This is a narrow completion pass, not a new creative revision.
+
+The attached review concerns archive SHA-256:
+5814eecc318b9da8e577de7bfcf258cec648251e56efccc3dfa09982cf8e5478
+
+Read 01_Independent_Corrected_Delivery_Review.txt and 03_Delivered_File_Conflicts.json first. The CSV lists the 17 specific existing full-screen instructions that still disagree with the camera map. These are output-file findings, not an instruction to generate 17 new graphics.
+
+KEEP WHAT IS NOW CORRECT
+Preserve all eight current long-form masters, the approved hypothetical V4 opening, the six restored introductions, intentional V6/V8 absences, exact thought-block parity, all approved packaging and the complete faith-inclusive descriptions. Preserve the completed Shorts repairs and valid opening assets. No long-form rewriting or new personal stories.
+
+1. V6 DECISION: RELABEL, DO NOT REDESIGN
+For NEW_V6_FS_19_FOUR_THINGS, keep the layout and heading. Replace only the four sub-labels with:
+PROBLEM
+AUTHORITY
+PROOF
+REAL GAP
+
+Update the PNG/SVG, contact sheet, affected references and checks. Keep its intended TAKEAWAY VALUE placement; replace the obsolete quote/section title at that location with the actual current passage. Nothing in the spoken master changes.
+
+2. REGENERATE COMPLETE LOCATORS FROM THE RESOLVED MASTER
+The supplied findings identify five wrong EXACT TRIGGER quotations and seven stale run-of-show section names. Location numbers were updated without replacing all their associated strings.
+
+Fix the source of those fields, not just the individual examples. At every cue require:
+- section number and section name agree with the master;
+- start and end paragraph exist;
+- exact entry and exit phrases occur in that span;
+- the intended repeated occurrence is explicit;
+- quoted parent passage is the one actually at that location.
+
+Do not move valid new locations back to fit stale wording.
+Replace the 36 truncated opening boundary fields in the camera map with the complete exact wording already present in the Riverside opening list. Wrapping text is fine; ellipses in operational triggers are not.
+
+3. GENERATE ONE SHOT/STATE SEQUENCE, NOT COMPETING MAPS
+The current Riverside prompt tells the editor to remain on camera for CAMERA paragraphs while 17 of its own full-screen teaching instructions point to CAMERA-only paragraphs.
+
+Resolve every listed conflict using the approved early-edit brief. Generate run of show, camera map, motion map, sound map, asset index and Riverside instructions from one resolved event list. A scene can start/end within a paragraph or continue across paragraphs.
+
+Track an event/occurrence ID separately from the asset-family ID. Reuse a valid family at another approved occurrence when needed; do not force all its states into a single parent paragraph.
+
+Required regression fixtures:
+- V11 FS_06: CAPABILITY and EVIDENCE in section 7 paragraph 1; COMPENSATION and LIFE in paragraph 2. Activate the corresponding states on the spoken words, then return to camera for paragraph 3's interpretation.
+- V11 FS_09: EXPECTED/ACTUAL in section 10 paragraph 1; COST/CHOICE in paragraph 2. Return for 'That is a role-drift read.' after the framework questions.
+- V6 FS_06A/06B/06C: split across their problem, authority and proof passages, not all in the problem paragraph. Current source locations are section 4 paragraph 2, section 5 paragraph 2 and section 6 paragraph 2 respectively.
+- V5 specific development request: implement the existing full-screen conversation treatment at section 8 paragraph 3.
+- V9 X/Y/Z explanation: implement its existing full-screen conversation treatment at section 14 paragraph 2.
+- V11 takeaway: implement the existing working-page treatment at section 12 paragraph 1 with one difference, one cost and one next action, then return to interpretation. Reference a real matching state. Reuse where accurate; create only the missing required state when necessary.
+
+Audit other multi-state families for the same span problem. Do not prematurely activate a later answer just because its state is listed under the first paragraph. Preserve pauses and my on-camera interpretation. Do not add effects to every line.
+
+Early cutaways are approved and must remain. Keep stingers as brief sounds. Make visual entry and exact sound-accent word separate consistent fields: e.g. V4 S1's early list says 'wasted', so its main list cannot also say there is no separately specified accent word. These are the same events, not additional sounds.
+
+4. COMPLETE V11 SHORT 1 FROM EXISTING APPROVED WORDING
+Its current ONE ASK only names EXPECTED / ACTUAL / COST / CHOICE.
+
+Use this existing master passage instead as its closing application:
+'Write EXPECTED and ACTUAL side by side. Name one real cost. Then choose one next action: clarify, negotiate, test for a defined period, or begin planning another option.'
+
+Keep its recognition and legitimate-change qualification. Update this Short in the combined bank, individual copy, editor notes, payoff-state reference and word-count estimate. Add no new narration, selling or subscription request. This is one practical role-read action.
+
+Do not rewrite other working Shorts merely because their primary ask sits earlier in HOLD. Align editorial labels with the actual action. Preserve complete lists and dignity, including compensation/life constraints; do not trim them out to force a nominal duration.
+
+5. VERIFY OUTPUT CONTENT, THEN REPORT THE ACTUAL STATUS
+Test the delivered documents, not only generator dictionaries. Turn the five stale quotations, seven section-name conflicts, 17 mode conflicts and the cross-paragraph examples into assertions that fail on the reviewed version and pass on the correction. Account for legitimate CAMERA-to-FULL-SCREEN intervals explicitly, rather than passing any paragraph that contains an asset ID.
+
+Reconcile the 220 versus 221 final-check count against the real final run. Do not invent a total.
+
+Preserve existing Watch Next routes and public sequence. Scheduling and live URLs remain explicit release dependencies. No simultaneous publication, destination substitution or new schedule is authorized here.
+
+Final runtime, V6's ten-minute promise, audio, SRT, chapters and live links remain pending actual export/checks. Do not equate the map pass with release approval.
+
+Return corrected self-contained packages, combined ZIP, nested checksum sidecars, current individual masters/blocks/descriptions and a concise change list. Reuse unchanged files and preserve historical archives. Recount families/states only when genuinely changed. Supply a small single-upload summary/QA attachment if helpful; no disconnected overlay requiring me to reconcile versions.
+
+Stop after the scoped corrections pass. No new title, framework, intro, story, voice, thumbnail, faith-section or channel redesign.
