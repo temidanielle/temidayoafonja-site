@@ -9,9 +9,12 @@
      fonts.css resolve. Text stays live DOM text, never outlines. -->
 <link rel="stylesheet" href="/fonts.css">
 <style>
-  /* Capability Formation palette, four values only. No fifth colour is used:
-     the same gold carries the rules, labels, numerals and pagination on cream
-     and on navy, and the bright yellow appears once, on the closing line. */
+  /* Capability Formation palette, four values only. No fifth colour is used.
+     Gold carries the structural marks: the large numerals, the rules and the
+     pagination ring. Small tracked text on cream is set in navy instead, which
+     reads at 13.8:1 where gold on cream reads at 2.03:1. On the navy slide the
+     small text stays gold, which reads at 6.81:1. The bright yellow appears
+     once, on the closing line. */
   :root {
     --navy: #112345;
     --cream: #F5F1E8;
@@ -51,8 +54,9 @@
     letter-spacing: 0.24em;
     text-indent: 0.24em;
     text-transform: uppercase;
-    color: var(--gold);
+    color: var(--navy);
   }
+  .slide.navy .kicker { color: var(--gold); }
   .numeral {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 500;
@@ -100,7 +104,9 @@
     color: rgb(from var(--cream) r g b / 0.80);
   }
 
-  /* navigation: gold ringed counter, bottom right on every slide */
+  /* navigation: gold ringed counter, bottom right on every slide. The ring is
+     the same gold mark on every slide; only the digits inside and beside it
+     change, to navy on cream and to gold on navy. */
   .counter {
     margin-left: auto;
     display: flex;
@@ -109,15 +115,17 @@
     font-weight: 600;
     font-size: 21px;
     letter-spacing: 0.14em;
-    color: var(--gold);
+    color: var(--navy);
   }
   .slide.navy .counter { color: var(--gold); }
   .counter .now {
     display: inline-flex; align-items: center; justify-content: center;
     width: 46px; height: 46px; border-radius: 50%;
-    border: 2px solid currentColor;
+    /* Pinned to gold, not currentColor: the digits go navy on cream but the
+       ring belongs to the gold pagination system and must not follow them. */
+    border: 2px solid var(--gold);
   }
-  .counter .of { color: rgb(from var(--navy) r g b / 0.45); }
+  .counter .of { color: var(--navy); }
   .slide.navy .counter .of { color: rgb(from var(--cream) r g b / 0.5); }
   .counter .swipe { font-size: 25px; }
 

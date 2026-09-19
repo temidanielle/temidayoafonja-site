@@ -29,14 +29,20 @@ node linkedin-start-here-carousel/source/verify-carousel.mjs
 Canvas 1080 x 1350 with 96px margins on all four sides, cream forward with a
 single deep navy closing slide, exactly as the brief asks.
 
-Palette: four values only. Navy `#112345`, cream `#F5F1E8`, gold `#C9A84C` for
-every rule, label, numeral and page number, and bright warm yellow `#F2C44C`
-used once, on the closing line. No fifth colour appears anywhere. Type is Cormorant Garamond for display and DM Sans
-for body, labels and navigation, both self hosted in the repository and both the
-faces the Career Evidence Starter itself uses.
+Palette: four values only. Navy `#112345`, cream `#F5F1E8`, gold `#C9A84C` and
+bright warm yellow `#F2C44C`. No fifth colour appears anywhere. Gold carries the
+structural marks: the large section numerals, the rules and the pagination ring.
+Small tracked text takes whichever of navy or gold reads better against its own
+background, so it is navy on the cream slides and gold on the navy slide. The
+bright yellow is used once, on the closing line. Type is Cormorant Garamond for
+display and DM Sans for body, labels and navigation, both self hosted in the
+repository and both the faces the Career Evidence Starter itself uses.
 
 Navigation is a gold ringed page number bottom right on every slide, with an
-arrow on slide 1 only. The approved portrait is the real photograph at
+arrow on slide 1 only. The ring is the same gold mark throughout; only the
+figures inside and beside it change colour with the background.
+
+The approved portrait is the real photograph at
 `images/temidayo-gold-ivory.png`, circularly cropped and placed once, on slide
 1, at 264px. It is scaled down from 1254px, never up, and nothing about the
 photograph itself is altered.
@@ -69,10 +75,36 @@ A colour audit of the eight rendered pages confirms it: each page carries only
 those values, no orange or rust pixel appears outside the photograph, and the
 bright yellow appears on the closing slide alone.
 
-One measurement worth knowing. Gold `#C9A84C` on cream `#F5F1E8` measures 2.03
-to 1. That is comfortable for the large numerals and faint for the two smallest
-gold items on cream, the START HERE label and the page number. Setting those two
-in navy would take them to 13.8 to 1 without introducing a colour. They are left
-in gold as instructed.
+## Accessibility pass, applied after approval
+
+Gold `#C9A84C` on cream `#F5F1E8` measures 2.03 to 1. That is comfortable for
+the 96px numerals and faint for the two smallest items on cream, the START HERE
+label and the page number, both of which land near 8px at LinkedIn mobile width.
+Those two are now navy `#112345`, which measures 13.8 to 1. No colour was added:
+navy was already in the palette.
+
+Everything else keeps its gold. The section numerals, the rules, the ruled serif
+line and the pagination ring are unchanged, and slide 8 is untouched, because
+gold on navy measures 6.81 to 1 and already passes.
+
+In `source/carousel.html` the ring is pinned to `var(--gold)` rather than
+`currentColor`. That matters: the digits sit inside the ring, so a counter set in
+navy would otherwise drag the ring to navy with it.
+
+Measured against the previous exports pixel by pixel: slide 8 has zero changed
+pixels, slides 2 to 7 changed only inside the page number, and slide 1 changed
+only at the label and the page number. Nothing else moved.
+
+Contrast across the finished set:
+
+| Pairing | Ratio | Where |
+| --- | --- | --- |
+| Navy on cream | 13.8 : 1 | Headlines, body, labels and page numbers, slides 1 to 7 |
+| Cream on navy | 13.8 : 1 | Headline, body and footer, slide 8 |
+| Gold on navy | 6.81 : 1 | Page number, slide 8 |
+| Bright yellow on navy | 9.46 : 1 | Closing line, slide 8 |
+
+Gold on cream now appears only as structure: the numerals, the rules and the
+ring, none of which is reading text.
 
 No em dash or en dash characters appear anywhere in this package.

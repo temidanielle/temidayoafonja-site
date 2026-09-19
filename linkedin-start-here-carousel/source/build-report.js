@@ -1,9 +1,18 @@
 const fs = require('fs');
+const { execSync } = require('child_process');
 const {
   Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType,
   Table, TableRow, TableCell, WidthType, BorderStyle, ShadingType,
   LevelFormat, PageOrientation,
 } = require('docx');
+
+// Git facts are read at generation time rather than typed in, so the version
+// control section of the document cannot drift away from the repository.
+const git = cmd => execSync(`git ${cmd}`, { encoding: 'utf8' }).trim();
+const COMMIT = git('rev-parse HEAD');
+const BRANCH = git('rev-parse --abbrev-ref HEAD');
+const SUBJECT = git('log -1 --pretty=%s');
+const STATUS = git('status --short');
 
 const NAVY = '112345';
 const GOLD = 'B8952E';          // report accent only, printed on white paper
@@ -19,8 +28,9 @@ const p = (text, opts = {}) => new Paragraph({
   })],
 });
 
-const h = (text, level) => new Paragraph({
+const h = (text, level, opts = {}) => new Paragraph({
   heading: level,
+  pageBreakBefore: opts.newPage,
   spacing: { before: level === HeadingLevel.HEADING_1 ? 360 : 260, after: 140 },
   children: [new TextRun({
     text, font: 'Calibri', bold: true, color: NAVY,
@@ -97,23 +107,42 @@ const doc = new Document({
           text: 'Status and overview', font: 'Calibri', bold: true, size: 40, color: NAVY,
         })],
       }),
-      p('Does What You Have Already Done Still Count? LinkedIn Featured document carousel, eight slides, 1080 x 1350 portrait. Version 2.',
+      p('Does What You Have Already Done Still Count? LinkedIn Featured document carousel, eight slides, 1080 x 1350 portrait. Version 2, final, with the accessibility pass applied.',
         { color: MUTED }),
       p('Temidayo Afonja | Capability Formation', { color: MUTED, size: 20 }),
       rule(),
 
       h('Status', HeadingLevel.HEADING_1),
-      p('Version 2 is built, inspected page by page, and ready to upload. Nothing is outstanding on my side. Two small decisions are open for you, and neither blocks publishing. They are listed near the end.'),
+      p('The carousel is final and ready to upload. Content, structure and design were approved, the accessibility pass described below has been applied, and both cosmetic decisions that were previously open are now resolved. Nothing is outstanding.'),
       table([2600, 6760], [
         ['Item', 'State'],
-        ['Slide copy', 'Final. Version 2 revisions applied to slides 1, 3, 4, 6 and 8 exactly as supplied.'],
+        ['Carousel', 'Final and ready to upload.'],
+        ['Slide copy', 'Final. Version 2 revisions applied to slides 1, 3, 4, 6 and 8 exactly as supplied, and unchanged since.'],
         ['Palette', 'Corrected. Four approved values only, confirmed by a pixel audit of all eight pages.'],
+        ['Accessibility', 'Pass applied. Small text on cream is now navy at 13.8 to 1. Slide 8 is unchanged.'],
         ['Upload file', 'LinkedIn_Start_Here_Capability_Formation_V2.pdf, eight pages, ready.'],
-        ['Quality gate', 'Passing. Ten automated checks, listed below.'],
-        ['Open decisions', 'Two, both cosmetic. Neither blocks publishing.'],
-        ['Related work', 'The LinkedIn banner revision is separate and is waiting on the banner file.'],
+        ['Quality gate', 'Passing. Ten automated checks, listed below, plus a page by page visual inspection.'],
+        ['Open decisions', 'None. Both previous decisions are resolved and recorded below.'],
+        ['Related work', 'The LinkedIn banner is separate work outside this package.'],
       ]),
       p('', { after: 60 }),
+
+      h('The final accessibility pass', HeadingLevel.HEADING_1),
+      p('One correction, applied after approval. It touches colour only. Copy, typography, the portrait, spacing, the eight slide sequence, the call to action and the footer are all untouched.'),
+      table([2600, 6760], [
+        ['Element', 'Treatment'],
+        ['START HERE label, slide 1', 'Now navy 112345. It was gold on cream at 2.03 to 1 and now reads at 13.8 to 1.'],
+        ['Page numbers on cream, slides 1 to 7', 'Now navy 112345, both the digits inside the ring and the total beside it. Also 13.8 to 1.'],
+        ['Pagination ring', 'Unchanged, gold C9A84C on every slide. It is part of the preserved pagination system, not a new decorative element.'],
+        ['Section numerals 01 to 04', 'Unchanged, gold C9A84C. At 96 pixels they are display marks, not reading text.'],
+        ['Gold rules and the ruled serif line', 'Unchanged, gold C9A84C.'],
+        ['Slide 8 pagination', 'Unchanged. Gold on navy measures 6.81 to 1, so the approved treatment was kept exactly as it was.'],
+        ['Closing line, slide 8', 'Unchanged, bright yellow F2C44C on navy at 9.46 to 1.'],
+      ]),
+      p('', { after: 40 }),
+      p('No colour was added. Navy and gold were already in the four value palette, and the ring keeps the gold so the pagination still reads as one system across all eight slides.'),
+      p('The change was measured rather than assumed. Comparing the new exports against the previous ones pixel by pixel: slide 8 has zero changed pixels, slides 2 to 7 changed only inside the page number, and slide 1 changed only at the label and the page number. Nothing else on any slide moved.',
+        { after: 200 }),
 
       h('What this carousel is', HeadingLevel.HEADING_1),
       p('The first item in the Featured section of the LinkedIn profile. It introduces the full career portability lens to an experienced professional arriving from one of the posts, then tells them what they will find by following. It is an introduction, not a product advertisement, and it carries no price, link or date.'),
@@ -122,7 +151,7 @@ const doc = new Document({
 
       h('What was delivered', HeadingLevel.HEADING_1),
       p('Everything sits in the repository at linkedin-start-here-carousel/.'),
-      table([4060, 5300], [
+      table([4460, 4900], [
         ['File', 'What it is'],
         ['LinkedIn_Start_Here_Capability_Formation_V2.pdf', 'The upload file. Eight pages, vector text, 810 by 1013 points.'],
         ['slides/slide-01.png to slide-08.png', 'One preview per slide at 1080 by 1350.'],
@@ -134,6 +163,7 @@ const doc = new Document({
         ['source/verify-carousel.mjs', 'The quality gate.'],
         ['source/build-report.js', 'Regenerates this document.'],
       ]),
+      p('', { after: 40 }),
       p('Version 1 is kept beside version 2 rather than deleted, so the two can be compared.'),
       p('To rebuild after a copy edit, run build-carousel.mjs and then verify-carousel.mjs.', { after: 200 }),
 
@@ -152,9 +182,9 @@ const doc = new Document({
 
       h('Design system', HeadingLevel.HEADING_1),
       p('Canvas 1080 by 1350 with 96 pixel margins on all four sides. Cream forward, with a single deep navy closing slide.'),
-      p('Palette: navy 112345, cream F5F1E8, gold C9A84C for every rule, label, numeral and page number, and the bright warm yellow F2C44C used once, on the closing line. Four values, no fifth colour.'),
+      p('Palette: navy 112345, cream F5F1E8, gold C9A84C and the bright warm yellow F2C44C. Four values, no fifth colour. Gold carries the structural marks, the large section numerals, the rules and the pagination ring. Small tracked text is navy on the cream slides and gold on the navy slide, whichever reads better against its own background. The bright yellow is used once, on the closing line.'),
       p('Type is Cormorant Garamond for display and DM Sans for body, labels and navigation. Both are self hosted in the repository and both are the faces the Career Evidence Starter itself uses.'),
-      p('Navigation is a gold ringed page number at the bottom right of every slide, with an arrow on slide one only.'),
+      p('Navigation is a gold ringed page number at the bottom right of every slide, with an arrow on slide one only. The ring is the same gold mark throughout. Only the figures inside and beside it change colour with the background.'),
       p('The portrait is the real photograph at images/temidayo-gold-ivory.png, circularly cropped and placed once, on slide one, at 264 pixels. It is scaled down from 1254 pixels and never up. Nothing about the photograph is altered.',
         { after: 200 }),
 
@@ -171,14 +201,15 @@ const doc = new Document({
         ['Imagery not blurred', 'The portrait is shown at 264 pixels from a 1254 pixel original. It is never upscaled.'],
         ['Consistent spacing', 'All eight slides share one grid: 96 pixel margins, one rule width, one counter position.'],
         ['Palette', 'Only navy 112345, cream F5F1E8, gold C9A84C and bright yellow F2C44C appear. No rust remains anywhere outside the photograph.'],
+        ['Text contrast', 'Every text element passes. Navy on cream 13.8 to 1, cream on navy 13.8 to 1, gold on navy 6.81 to 1, bright yellow on navy 9.46 to 1. No small text is set in gold on cream.'],
         ['PDF opens correctly', 'Eight pages at 810 by 1013 points, which is 1080 by 1350 pixels, 2.8 MB.'],
       ]),
       p('', { after: 60 }),
 
-      h('Two decisions waiting on you', HeadingLevel.HEADING_1),
-      p('Neither blocks publishing. Both are recorded rather than decided quietly.'),
-      bullet('Gold on cream measures 2.03 to 1. That is comfortable for the large numerals and faint for the two smallest gold items on cream, the START HERE label and the page number, which land near 8 pixels at LinkedIn mobile width. Setting those two in navy would take them to 13.8 to 1 and introduces no new colour. They are left in gold as instructed.'),
-      bullet('The page number sits inside a gold ring. Your brief said to preserve the pagination and also not to introduce rings. I read that as not adding new ones and kept it. Say the word if the ring itself should go.'),
+      h('The two cosmetic decisions, both resolved', HeadingLevel.HEADING_1),
+      p('These were the only items left open. Neither is open now.'),
+      bullet('Small gold text on cream. Gold on cream measured 2.03 to 1, which is comfortable for the 96 pixel numerals and faint for the two smallest items, the START HERE label and the page number, both of which land near 8 pixels at LinkedIn mobile width. Resolved: those two are now navy at 13.8 to 1. The numerals, the rules and the ring stay gold. No colour was added.'),
+      bullet('The ring around the page number. Resolved: the ring is kept. It is part of the pagination system that was preserved from the approved design, not a decorative element introduced afterwards, and it stays gold on all eight slides.'),
       p('', { after: 60 }),
 
       h('What was missing from the workspace', HeadingLevel.HEADING_1),
@@ -188,9 +219,21 @@ const doc = new Document({
       bullet('final 3(1).pdf. Not in the workspace or the uploads, so it could not be used as a starting point. The carousel is built from the slide sequence and copy supplied in the brief.'),
       p('', { after: 60 }),
 
-      h('Related, and currently blocked', HeadingLevel.HEADING_1),
-      p('The LinkedIn banner revision is separate work and is waiting on one file. The banner described in that brief, with the portrait on the right and the positioning sentence on the left, is not in the workspace. The two banners that are here are both centred text with no portrait, and neither carries that sentence. Searching the full git history, including deleted files, turned up nothing further, and there is no editable source for either.'),
-      p('Send that banner, or its source if one exists, and the copy swap and both mockups follow quickly.'),
+      h('Where this sits in version control', HeadingLevel.HEADING_1, { newPage: true }),
+      p('Everything is committed locally on this machine. Nothing has been pushed, merged, deployed or published.'),
+      table([2600, 6760], [
+        ['Item', 'Value'],
+        ['Branch', BRANCH],
+        ['Commit', COMMIT],
+        ['Commit message', SUBJECT],
+        ['git status --short', STATUS ? STATUS : 'No output. The working tree is clean and nothing is uncommitted.'],
+      ]),
+      p('', { after: 40 }),
+      p('A file cannot contain the hash of the commit that contains it, so the commit above is the one carrying the accessibility correction and the rebuilt exports. This document was regenerated against it and committed immediately afterwards as a short record commit, which is why the hash you see here is the correction itself rather than the commit that stores this page.'),
+      p('The full hash is given rather than a short form so it can be checked exactly with git show.', { after: 200 }),
+
+      h('Scope of this package', HeadingLevel.HEADING_1),
+      p('This package is the START HERE carousel and nothing else. The LinkedIn banner is separate work outside this package and is not part of what is described here.'),
     ],
   }],
 });
