@@ -690,8 +690,4 @@ Keep the record while the facts are still yours to keep.
 
 Temidayo Afonja · temidayoafonja.com
 
----
-
-END OF MANUSCRIPT
-
 
