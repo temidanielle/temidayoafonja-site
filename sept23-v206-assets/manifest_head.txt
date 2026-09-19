@@ -1,0 +1,106 @@
+SEPTEMBER 23, 2026 - STAY OR LEAVE? CURRENT ASSET PACKAGE  (revision 2)
+Stay or Leave? - Live Career Growth Assessment
+Method: The Capability Position Read
+Wednesday, September 23, 2026  |  6:00-7:00 PM Central Time  |  Free  |  60 minutes
+
+STATUS: CANDIDATE. NOT FINAL.
+
+  Adobe Acrobat workbook behavior test .... PASSED, and still valid. The workbook
+                                            is byte-identical to the file that
+                                            passed on August 21, 2026.
+  Rehearsal 1 - timed content ............. OUTSTANDING
+  Rehearsal 2 - production ................ OUTSTANDING
+
+  All three gates are required. No asset here has been renamed from CANDIDATE to
+  FINAL, and none should be until both rehearsals pass. No rehearsal result is
+  recorded in this package, because none has been run.
+
+WHAT CHANGED IN THIS REVISION
+
+  Deck v2.0.5 -> v2.0.6, SOP v2.0.8 -> v2.0.9, change log and QA report v2.0.8 ->
+  v2.0.9, checklist v1.1 -> v1.2. The workbook is NOT touched.
+
+  The opening leads with recognition: the approved audit-to-cybersecurity warrant
+  moves from an optional note into the core spoken opening on slide 2, before any
+  terminology, capped at 30-45 seconds, with nothing invented.
+  Slides 4 and 5 ask the ordinary question first and name the term second.
+  Optionality no longer reads as a claim about employer recognition.
+  Slide 18 drops the printed procedure and keeps three tiers, a boundary band and
+  the dual-axis rule. The procedure was already on workbook page 4.
+  The four-question portability audit appears once, on slide 22.
+  Three move-category readings are rewritten; the seven names stand.
+  Slide 20 no longer reads as if the real answer is behind a paywall.
+  Slide 25 returns to the question the session opened with.
+
+  THE INSTRUMENT IS UNTOUCHED, AND ASSERTED RATHER THAN ASSUMED: the 12
+  statements, the 1-5 scale, both /30 totals, the evidence protocol, the 90-day
+  window, the boundary and sensitivity methodology, the four states and the seven
+  category names are compared against the approved v2.0.5 deck on disk.
+
+COMMERCIAL ARCHITECTURE
+
+  Career Evidence Starter free  |  Keep the Proof $49  |  Field Kit $150  |
+  Career Move Review $500 with qualification before payment.
+
+  The Private Capability Position Read is RETIRED. It appears nowhere as a live
+  offer. The {hist} remaining mentions across folders 01-03 retire it, record what an
+  earlier version did, assert its absence, or instruct its removal from the site.
+
+  CAREER MOVE REVIEW IS NOT ON THE RECORDED DECK. No page, no route and no copy
+  for it exists anywhere in the repository, on this branch or on main. Under the
+  operational condition in the brief, an unverified route is not offered from the
+  stage. The SOP names it as the current advisory architecture and records its
+  route verification as an outstanding launch condition.
+
+  Keep the Proof is deliberately absent from the recorded continuation sequence.
+  It answers a different problem and belongs in follow-up.
+
+CONTENTS
+
+01_LIVE_DELIVERY
+    Presenter deck v2.0.6 CANDIDATE. 33 slides: 26 active, 7 hidden (27-33).
+    Slide 33 is the dated holding slide, shown before recording and never
+    recorded; it is the only dated face in the deck.
+    Participant workbook v2.0.1 CANDIDATE, 8 pages, 68 form fields, unchanged.
+
+02_FACILITATOR_OPERATIONS
+    Facilitator SOP v2.0.9 CANDIDATE. Eight pages, re-pinned from seven and said
+    out loud in the QA report rather than quietly dropped: the offer table grew
+    from two live offers to five and three sections gained operational rules.
+    The master reconciliation table needed no timing edit.
+
+03_QA_AND_CHANGE_CONTROL
+    Change log and QA report v2.0.9: 228 of 228, including Group N's 66 rows for
+    this revision, written by the check script at build time.
+    Manual Maven and Website Edit Checklist v1.2. Sections A and B are marked
+    ALREADY CURRENT - DO NOT OVERWRITE, because the live instructor title and bio
+    already use Career Portability language.
+    LibreOffice previews of the deck and the SOP.
+
+04_BUILD_AND_REPRODUCIBILITY  -  INTERNAL, NOT FACILITATOR-FACING
+    The four build scripts and the QA script. The original full deck generator
+    did not survive an earlier container rebuild and is not fabricated here:
+    v2.0.6 is a deterministic scripted patch of the approved v2.0.5 binary, and
+    every face edit is asserted against the text it replaces before it is
+    written. The deck stays fully editable and nothing is flattened to an image.
+
+SWEEPS - PERFORMED ON THE PACKAGED BYTES
+
+    Zero live Private Capability Position Read references in folders 01-03.
+    Zero stale September 16 references. CT throughout, never CST as a label.
+    Folder 04 tokenised: all {tooling} occurrences of a retired name or an old value
+    sit inside string literals or comments, none in executable code.
+
+MAVEN AND WEBSITE - NOT VERIFIABLE FROM HERE
+
+    maven.com and temidayoafonja.com are both blocked by this environment's
+    egress proxy. No live page was read and none was changed. The checklist is
+    instructions to verify, not a claim about the live state.
+
+    The Private Read is still LIVE on the website: fieldkit.html,
+    for-professionals.html and content/site-source-of-truth.json. Removing it
+    needs a separate decision and a deployment, and it is the largest item in the
+    checklist.
+
+SHA-256
+
