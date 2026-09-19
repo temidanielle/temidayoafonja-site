@@ -187,6 +187,12 @@
 .ces-ladder { margin-top: 30px; border-top: 1px solid var(--line-warm); padding-top: 22px; max-width: 66ch; }
 .ces-ladder p { font-size: 15px; line-height: 1.7; color: var(--muted-warm); }
 .ces-ladder strong { color: var(--navy); }
+/* Two named classes, because `.lean-page p { margin: 0 }` and `.ces-sec p` are
+   both (0,1,1) and would otherwise decide these. `p + p` and `.ces-ladder-next a`
+   outrank them, so the second paragraph keeps its gap and the one link in this
+   block stays visible instead of inheriting the muted body colour. */
+.ces-ladder p + p { margin-top: 14px; }
+.ces-ladder-next a { color: var(--navy); text-decoration: underline; text-underline-offset: 2px; }
 
 /* ── Warmer register, carried over from the PDF ──
    These four devices exist on the sheet itself: the gold descriptor label on
@@ -411,8 +417,18 @@
         </ul>
       </div>
     </div>
+    <!-- Resolved 2026-09-19, merging Keep the Proof V2 (#120) into this branch.
+         Both sides had rewritten this paragraph. The V2 wording below stands
+         exactly as main has it: unlinked, and describing "the paid system". It
+         is the newer approved copy and nothing here reverts any part of it.
+
+         The Career Move Review is deliberately NOT folded back into that
+         sentence. It sits in its own paragraph, named last and conditional on
+         already having a move in view, because nothing here should suggest the
+         Starter is incomplete on its own. -->
     <div class="ces-ladder">
       <p><strong>This Starter</strong> proves one thing. <strong>Keep the Proof</strong>, the paid system, builds and maintains the whole record. <strong>The Capability Formation Field Kit</strong> reads what your current position is building and whether it travels.</p>
+      <p class="ces-ladder-next">If you are considering a specific move and want a private review of what travels, what does not, what you can prove, and what the next context still requires, you can <a href="/career-move-review">request a Career Move Review</a>.</p>
     </div>
   </div>
 </section>
@@ -553,6 +569,7 @@
         <li><a href="/diagnostic">Free Diagnostic</a></li>
         <li><a href="for-professionals.html">Career Growth Assessment</a></li>
         <li><a href="book.html">Books &amp; Tools</a></li>
+        <li><a href="/keep-the-proof">Keep the Proof</a></li>
         <li><a href="https://temidayoafonja.substack.com" target="_blank" rel="noopener">Writing</a></li>
       </ul>
     </div>
@@ -611,17 +628,30 @@
    a requested resource from ongoing guidance. */
 var POLICY_VERSION = "2026-08-18";
 
+/* Retired 2026-09-17, by setting current to null, which is the mechanism this
+   block documents above for exactly this situation.
+
+   What was here: a Lightning Lesson dated "Wednesday, September 2, 2026" with
+   available_until "2026-09-02T18:45:00-05:00". That date was already wrong when
+   it was written. The session had been rescheduled to September 9, and the
+   reschedule updated career-decisions.html but missed this page, which was
+   built afterwards and carried the old date in with it. The session then ran on
+   September 9 and was retired from the site on September 10.
+
+   No replacement date has been substituted, because there is nothing to
+   substitute. The Lightning Lesson is not a live offer, and the source of truth
+   holds no approved date for it. Putting the September 9 date here would record
+   a retired session as though it were upcoming, which is worse than the stale
+   value it replaced.
+
+   Nothing visible changes. available_until had long passed, so the page was
+   already serving the fallback to every visitor. This corrects the stored data
+   to match what the page actually does.
+
+   To offer a next step here again, replace null with a block in the same shape
+   as the fallback below, including a fully qualified available_until. */
 var NEXT_STEP = {
-  current: {
-    id: "lightning-lesson",
-    available_until: "2026-09-02T18:45:00-05:00",
-    label: "One next step",
-    title: "How to Tell If Your Career Is Stalling",
-    body: "A free 45 minute Lightning Lesson on Wednesday, September 2, 2026, 6:00 to 6:45 PM CT. Three signs your role may have stopped building your capability and future options, even while you are performing well.",
-    cta: "Register free",
-    href: "https://maven.com/p/5162f2/how-to-tell-if-your-career-is-stalling",
-    external: true
-  },
+  current: null,
   fallback: {
     id: "field-kit",
     label: "One next step",

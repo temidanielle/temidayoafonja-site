@@ -1311,12 +1311,42 @@ if(liveTallyForm){
 updateLiveTally();
 </script>
 
-<!-- Legal links (Phase 3, section 9). These two pages are standalone and carry no
-     shared site footer, so a minimal strip is used rather than the full footer. -->
-<div role="contentinfo" style="border-top:1px solid rgba(139,160,180,0.18);margin-top:48px;padding:26px 24px;text-align:center;font-size:12px;color:rgba(245,240,232,0.56);line-height:1.9;">
-  &copy; 2026 The Density Group LLC &middot; Capability Formation
-  &middot; <a href="privacy.html" style="color:rgba(245,240,232,0.56);text-decoration:underline;text-underline-offset:3px;">Privacy</a>
-  &middot; <a href="terms.html" style="color:rgba(245,240,232,0.56);text-decoration:underline;text-underline-offset:3px;">Terms</a>
-</div>
+<!-- SITE FOOTER. Added 2026-09-17.
+     This page previously ended in a legal strip and nothing else, so a leader
+     who finished the Scan had no way onward except the browser back button.
+     Written inline in this page's own dark palette: this page does not load
+     /styles.css at all, so the shared <footer> would arrive unstyled.
+
+     This footer is deliberately ENTERPRISE ONLY. The Career Move Review is an
+     individual advisory service and does not belong on the organizational
+     pathway. The individual and enterprise journeys stay separate. -->
+<!-- display:block is load-bearing. styles.css sets `footer { display: flex }`
+     for the shared site footer, and this page loads that stylesheet. Without the
+     override, the grid below becomes a flex item with the default min-width:auto
+     and cannot shrink below its content, so three 200px columns forced a 656px
+     box inside a 390px viewport and the page scrolled sideways on phones. -->
+<footer role="contentinfo" style="display:block;border-top:1px solid rgba(139,160,180,0.18);margin-top:56px;padding:40px 24px 26px;font-size:13px;color:rgba(245,240,232,0.62);line-height:1.8;">
+  <div style="max-width:940px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:28px;text-align:left;min-width:0;">
+    <div>
+      <div style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#c9a84c;margin-bottom:10px;">Where this goes next</div>
+      <div><a href="executive-briefing.html#inquiry" style="color:rgba(245,240,232,0.78);text-decoration:none;">Bring a Consequential Decision</a></div>
+      <div><a href="executive-briefing.html" style="color:rgba(245,240,232,0.78);text-decoration:none;">Executive Briefing</a></div>
+      <div><a href="work.html" style="color:rgba(245,240,232,0.78);text-decoration:none;">Advisory</a></div>
+      <div><a href="speaking.html" style="color:rgba(245,240,232,0.78);text-decoration:none;">Speaking</a></div>
+    </div>
+    <div>
+      <div style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#c9a84c;margin-bottom:10px;">The method</div>
+      <div><a href="/framework" style="color:rgba(245,240,232,0.78);text-decoration:none;">Capability Formation</a></div>
+      <div><a href="case-studies.html" style="color:rgba(245,240,232,0.78);text-decoration:none;">Evidence</a></div>
+      <div><a href="about.html" style="color:rgba(245,240,232,0.78);text-decoration:none;">The Firm</a></div>
+      <div><a href="index.html" style="color:rgba(245,240,232,0.78);text-decoration:none;">Home</a></div>
+    </div>
+  </div>
+  <div style="max-width:940px;margin:30px auto 0;padding-top:20px;border-top:1px solid rgba(139,160,180,0.14);text-align:center;font-size:12px;color:rgba(245,240,232,0.56);">
+    &copy; 2026 The Density Group LLC &middot; Capability Formation
+    &middot; <a href="privacy.html" style="color:rgba(245,240,232,0.56);text-decoration:underline;text-underline-offset:3px;">Privacy</a>
+    &middot; <a href="terms.html" style="color:rgba(245,240,232,0.56);text-decoration:underline;text-underline-offset:3px;">Terms</a>
+  </div>
+</footer>
 </body>
 </html>
