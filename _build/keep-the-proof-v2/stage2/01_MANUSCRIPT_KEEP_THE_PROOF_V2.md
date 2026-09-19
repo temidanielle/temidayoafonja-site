@@ -265,14 +265,14 @@ The five prompts.
 - What happened? The event or piece of work, in a line.
 - What was my specific contribution or judgment? Your part, not the team's.
 - What changed, improved, became possible, or was prevented? The consequence.
-- Verifier role or permitted public reference. A role or a public source that could confirm it. Do not store a colleague's personal details.
+- Who could confirm this, or what public source supports it? For a person, note their role and what they directly observed. Do not store private contact information. Any use of a public source stays subject to the permission rules.
 - Confidential detail to keep out. Name it, so you remember to leave it out.
 
 > VISUAL: The completed example beside the blank prompts, as a filled-in card. Devin's capture, retained from Version 1.
 
 Completed Quick Capture. Devin A., distribution center supervisor, operations, captured the same afternoon.
 
-What happened: Recurring mispicks on the night shift were driving returns. I changed the pick-verification step and the error rate dropped. My specific contribution: I noticed the errors clustered on one workflow, proposed a second scan at pack-out, and ran the two-week trial that proved it out. What changed: Shipping errors on that line fell sharply and stayed down after the change was made permanent. Permitted verification: My operations manager, who approved the rollout. The improvement was later cited in a team update. Must stay out: The internal error dashboards, customer order data, and the returns figures themselves. I keep my own account, not the reports.
+What happened: Recurring mispicks on the night shift were driving returns. I changed the pick-verification step and the error rate dropped. My specific contribution: I noticed the errors clustered on one workflow, proposed a second scan at pack-out, and ran the two-week trial that proved it out. What changed: Shipping errors on that line fell sharply and stayed down after the change was made permanent. Who could confirm this: My operations manager, who approved the rollout and saw the error rate fall. The improvement was later cited in a team update. Must stay out: The internal error dashboards, customer order data, and the returns figures themselves. I keep my own account, not the reports.
 
 Notice what the capture does and does not hold. It holds Devin's account and a person who could confirm it. It does not hold a single employer file. That is the pattern for every capture you make.
 
@@ -630,10 +630,6 @@ The honesty of a reconstructed record lives in how you mark each part of it. Lab
 
 An account marked this way is stronger than a confident one, not weaker, because it tells a careful reader exactly how much weight each part can bear. Reconstruction has a ceiling. Name it, work within it, and let the going-forward habit do the rest.
 
-## A note on how this part is built
-
-This part is written so it could stand on its own if it ever needed to. If future evidence from real buyers shows that reconstruction is the moment people most want to buy for, the material here is clean enough to lift into a dedicated path without redesign. For Version 2, it lives inside Keep the Proof, because the person who lost access needs the same record everyone else is building, reached through a different door.
-
 ---
 
 # PART EIGHT — KEEP IT CURRENT, AND USE IT
@@ -719,11 +715,11 @@ A quiet pointer, not a sales pitch. If you later want to interpret what your cur
 
 ## About the author
 
-Temidayo Afonja is the Founder and Principal of The Density Group. Her career spans nearly two decades and eight industries, across accounting and audit, cybersecurity, people and workforce work, diversity and inclusion work, and both consulting and operating roles. The through line is not one specialty. It is proximity, from several sides at once, to how work gets evaluated and how careers actually get built.
+Temidayo Afonja is the Founder and Principal of The Density Group. Her career spans nearly two decades and eight industries, across accounting and audit, cybersecurity, people and workforce work, diversity and inclusion work, and both consulting and operating roles. Across those different contexts, she kept getting close to the same questions: how work gets evaluated, what people are trusted to carry, and how careers actually get built.
 
 Two parts of that path shaped this guide directly. The years in audit and cybersecurity are why its confidentiality and information-risk standard is treated with real seriousness, and why it is careful never to overstate what any guide can settle for you. The years in people, workforce, and inclusion work are why it takes seriously the kinds of contribution that performance systems tend to miss. Keep the Proof is educational, not legal advice, and it cannot interpret your specific agreements or your employer's policies.
 
-Keep the Proof grew out of a pattern that repeats in room after room: capable people who had done the work and could no longer prove it, reaching for details that had already gone. This guide is the discipline more of them needed.
+Keep the Proof grew out of a pattern that kept recurring: capable people reaching an important career moment and struggling to reconstruct work they had already done. This guide is the discipline more of them needed.
 
 Keep the record while the facts are still yours to keep.
 

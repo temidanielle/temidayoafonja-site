@@ -112,7 +112,7 @@ Career Evidence Ledger
 | 9 | Proof Line builder | ABSORBED into Professional Record Section 4. |
 | 10 | Monthly Proof Sweep | ABSORBED into Professional Record Section 6 (optional). |
 | 11 | Quarterly Proof Review | ABSORBED into Professional Record Section 6 (optional). |
-| 12 | Quarterly Evidence Index | ABSORBED into Professional Record Section 5, as a living index. |
+| 12 | Quarterly Evidence Index (Ledger form) | ABSORBED into the Professional Record's running index (Section 5), unbranded; the "Quarterly Evidence Index" label is not retained. |
 
 The only outright removal is the "60-Minute" descriptor from the cover, which the brief approved. The standalone Ledger is absorbed, not deleted: every field and prompt survives inside the Professional Record. All labels are preserved in substance; the routine names are used more plainly in the manuscript, and any formal renaming of routines or indexes remains a test, not a change.
 

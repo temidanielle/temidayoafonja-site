@@ -19,7 +19,7 @@ This is your record, not a form to submit. Make one copy that belongs only to yo
 - Permission first. Everything in here follows the one rule: your own recollection and what you are permitted to keep. Never paste in employer-owned files or confidential detail.
 - Fill only what applies. A short, honest entry beats a padded one. Blank fields are fine.
 
-The record has six sections: a Capture Log, Full Entries, a Corroboration list, a Translation and Proof Line workspace, an Evidence Index, and two optional maintenance checklists. Each is specified below with its exact prompts.
+The record has six sections: a Capture Log, Full Entries, a Corroboration list, a Translation and Proof Line workspace, a running index, and two optional maintenance checklists. Each is specified below with its exact prompts.
 
 ---
 
@@ -32,7 +32,7 @@ For each capture, the five prompts:
 - What happened? The event or piece of work, in a line.
 - What was my specific contribution or judgment? My part, not the team's.
 - What changed, improved, became possible, or was prevented? The consequence.
-- Verifier role or permitted public reference. A role or a public source that could confirm it. No personal contact details.
+- Who could confirm this, or what public source supports it? For a person, record their role and what they directly observed. Do not store private contact information. Any use of a public source stays subject to the permission rules.
 - Confidential detail to keep out. Named, so I remember to leave it out.
 
 Optional per row: the date, and a trigger tag from the capture-event list (project ended, scope changed, praise or feedback, problem escalated, risk prevented, leadership changed, inherited difficult work, decision under uncertainty, measurable result appeared, team changed, responsibility expanded).
@@ -123,9 +123,9 @@ Proof Lines kept. A running list of your finished Proof Lines, so they are ready
 
 ---
 
-## Section 5. Evidence Index
+## Section 5. Your index
 
-Purpose: a running list of what you have, so any entry is a search away. Absorbed from the Ledger's Quarterly Evidence Index and made a living index rather than a quarterly task.
+Purpose: a running list of what you have, so any entry is a search away. It replaces the Ledger's quarterly index with a living one you update as you go.
 
 For each entry, one line: a short title, the date or period, the function or role, the retrieval tags, and, when rebuilding, its highest certainty level. Update it whenever you add or revise an entry, and read it when a moment arrives and you need the right material fast.
 
@@ -133,22 +133,22 @@ For each entry, one line: a short title, the date or period, the function or rol
 
 ## Section 6. Optional maintenance checklists
 
-Purpose: two ways to keep the record current, capturing when something worth keeping happens, and a light periodic sweep that catches what you missed and keeps the record clean. Neither is required on its own, and neither is presented as universally better; use whichever you will sustain, or both. Absorbed from the Ledger's Monthly Proof Sweep and Quarterly Proof Review, and marked optional here per the Version 2 decision that cadence is not settled.
+Purpose: two ways to keep the record current, capturing when something worth keeping happens, and a light periodic sweep that catches what you missed and keeps the record clean. Neither is required on its own, and neither is presented as universally better; use whichever you will sustain, or both. Absorbed from the Ledger's monthly and quarterly routines, and marked optional here per the Version 2 decision that cadence is not settled.
 
-Monthly, about ten to fifteen minutes.
+Monthly sweep, about ten to fifteen minutes.
 - Look back over the month's projects, decisions, feedback, changes, and problems you helped prevent.
 - Add Quick Captures for anything worth keeping.
 - Expand the single most significant item into a Full Entry.
 - Run the confidentiality check: is everything here permitted?
 - Tag each item for retrieval.
 
-Quarterly, about thirty minutes.
+Quarterly review, about thirty minutes.
 - Read the quarter's entries in one sitting.
 - Remove duplicates and anything too vague to be useful.
 - Correct overstatement and add missing context while you still remember.
 - Translate the strongest entries into Proof Lines.
 - Note where evidence is thin, without drawing any conclusion about your career from the gap.
-- Update the Evidence Index.
+- Update your index.
 
 This is housekeeping, not a verdict. It organizes and translates what happened; it does not tell you what your career means.
 
