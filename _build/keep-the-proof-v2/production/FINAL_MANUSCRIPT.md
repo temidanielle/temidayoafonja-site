@@ -142,16 +142,15 @@ A simple test. Before you record something, ask: if I described this to a though
 
 ## The boundary: your account versus employer-owned artifacts
 
-This is the distinction the whole system depends on, so it is worth stating plainly. Your professional record is your own account of your work. An employer-owned artifact is the material itself: the deck, the model, the code, the client file, the report. As a practical rule, the account is yours to keep, and the artifact is not.
+This is the distinction the whole system depends on, so it is worth stating plainly. Your professional record is your own account of your work. An employer-owned artifact is the material itself: the deck, the model, the code, the client file, the report. The practical habit is simple: keep your own high-level account of what you did, and do not copy employer-owned artifacts into your personal record.
 
+Keep your own high-level account, your own sentence about what you did: "I rebuilt the onboarding process and cut new-hire ramp time," or "I found and closed a gap in how we granted system access," or "I led the vendor selection and negotiated better terms." Do not copy the underlying artifacts into your personal record: the onboarding deck, the HR system export, the employee list, the access logs, the security configuration, the audit tooling, the signed contract, the pricing sheet, or the internal cost model.
 
-Yours to keep is your own sentence about what you did: "I rebuilt the onboarding process and cut new-hire ramp time." Not yours is the onboarding deck, the HR system export, the employee list. Yours to keep: "I found and closed a gap in how we granted system access." Not yours: the access logs, the security configuration, the audit tooling. Yours to keep: "I led the vendor selection and negotiated better terms." Not yours: the signed contract, the pricing sheet, the internal cost model.
+Notice what the accounts have in common. Each is a sentence you could say out loud in a hallway without exposing anything your employer owns. The artifacts are the underlying material, and none of it belongs in a personal record, no matter how convenient it would be to keep.
 
-Notice what the left column has in common. Each entry is a sentence you could say out loud in a hallway without exposing anything your employer owns. The right column is the underlying material, and none of it belongs in a personal record, no matter how convenient it would be to keep.
+The line you will learn to hear. If the thing you want to save is a file, a screenshot, an export, or a copy of anything produced at work, it is an artifact, and it stays behind. If it is your own sentence about what you did, it is your account, and that is what you record.
 
-The line you will learn to hear. If the thing you want to save is a file, a screenshot, an export, or a copy of anything produced at work, it is an artifact, and it stays behind. If it is your own sentence about what you did, it is your record, and it comes with you.
-
-One honest caveat. This distinction is usually clear, and it is meant as a practical habit, not a legal ruling. Ownership can be genuinely unsettled in some situations, such as contract work, work made for hire, or specific terms you agreed to. Those are legal questions, not writing questions. Where what you may keep is unclear, the one rule governs: leave it out, and ask someone qualified.
+One honest caveat. This distinction is usually clear, and it is meant as a practical habit, not a legal ruling. What you may keep can be genuinely unsettled in some situations, such as contract work, work made for hire, or specific terms you agreed to. Those are legal questions, not writing questions. Where what you may keep is unclear, the one rule governs: leave it out, and ask someone qualified.
 
 
 ## Claim, example, evidence, corroboration
@@ -337,7 +336,7 @@ Care. Numbers, client or project detail, and internal context that may be sensit
 
 Never. Source code, credentials, security settings, customer or employee data, unreleased product detail, internal financials, privileged or legal material, trade secrets, and any document or file owned by your employer. Never copy, forward, screenshot, download, or reconstruct these anywhere.
 
-Generalizing information does not create permission. Use generalized wording only after you have confirmed that you are permitted to retain the underlying information. Softening the words changes how something reads, not whether it is yours to keep.
+Generalizing information does not create permission. Use generalized wording only after you have confirmed that you are permitted to retain the underlying information. Softening the words changes how something reads, not whether you are permitted to keep it.
 
 The habit is to default downward. When something sits between Keep and Care, treat it as Care. When it sits between Care and Never, treat it as Never. You may lose some detail this way, but you will keep the record accurate and defensible.
 
@@ -376,7 +375,7 @@ This default is deliberately narrower than the full set of options that may be o
 
 Your record needs a home. The requirements are modest, and they come in a strict order: the content must be permitted first, and only then does the storage matter. Securing a record you were not allowed to keep does not fix the problem. It hides it.
 
-Choose a home you actually control. Use a private account that belongs to you, not an employer-owned account, drive, or device. The recommended home is your Professional Record, the copyable working document included with this guide, kept in a personal, widely readable format you own. Keep it in one place. A record scattered across four apps is a record you will not maintain.
+Choose a home you actually control. Use a personally controlled account rather than an employer-owned account, drive, or device. The recommended home is your Professional Record, the copyable working document included with this guide, kept in a personal, widely readable format you control. Keep it in one place. A record scattered across four apps is a record you will not maintain.
 
 Then secure it, in this order. Protect it with a unique password and turn on multifactor authentication. Prefer storage that is encrypted and access-controlled. Keep a backup only where the underlying content is permitted to live. Never store the record on a device or in an account your employer owns or can reclaim.
 
@@ -562,23 +561,29 @@ A reconstructed record will not be as complete as one captured in real time, and
 
 The rule does not relax because the timing is inconvenient. Work only from what you are permitted to use: your own memory, information that is already public, and anything you already hold or were expressly permitted to keep. What is not usable is a copy of anything you took, or access you were not meant to retain.
 
-## Where the record still lives
+## Possible starting points for reconstruction
 
-Even after access ends, more remains than people expect. These are the lawful places a professional account can be rebuilt from.
+Even after access ends, more remains than people expect. Below are possible starting points, arranged from the safest to those that need more care. Work from the top down.
 
+Start from your own recollection.
 
 - Your own memory, anchored to moments you remember clearly.
-- Previous versions of your resume.
+
+Then draw on information that is already public.
+
+- Previous public versions of your resume.
 - Your public professional profile and its history.
-- Documents you already hold, such as offer letters, signed reviews, pay records, and certificates.
-- Personal calendars, where appropriate.
-- Old job descriptions for roles you held.
-- Certifications and training completions.
 - Public announcements, press releases, and annual reports that mention the work.
 - Public work and artifacts already in the open.
-- Former colleagues who directly observed the work, for what they can honestly confirm.
 
-Some of these sources sit close to employer-owned information. Where a source approaches something your employer owns, the one rule governs: if it is not clearly yours to use, leave it out and ask someone qualified. The page "Rebuilding the record: what you can safely use" in Part Three gives the safe default in full.
+Use other information only when you know you are permitted to use or retain it.
+
+- Documents you already hold, such as offer letters, signed reviews, pay records, certificates, and old job descriptions.
+- Certifications and training completions.
+- Personal calendars, where appropriate.
+- Former colleagues, for what they can honestly confirm from their own memory.
+
+Already possessing something does not, by itself, settle whether you may reuse or retain it for this purpose. Where a source is not clearly yours to use, the one rule governs: leave it out and ask someone qualified. The page "Rebuilding the record: what you can safely use" in Part Three gives the safe default in full. This guide does not attempt to resolve the specific rights that vary by employer or location.
 
 ## Rebuilding honestly, and marking what you know
 
@@ -638,7 +643,7 @@ The teaching in this guide points at one thing: a record you control and can kee
 
 ## Your Professional Record
 
-Included with this guide is your Professional Record: a copyable working document that holds everything the system produces, in a plain, widely readable format you own and control. It is the long-term home the handbook has been preparing you to keep. It gathers the capture log, your full entries, your corroboration notes, your Proof Lines, and a simple index, so any entry is a search away.
+Included with this guide is your Professional Record: a copyable working document that holds everything the system produces, in a plain, widely readable format you keep and control. It is the long-term home the handbook has been preparing you to keep. It gathers the capture log, your full entries, your corroboration notes, your Proof Lines, and a simple index, so any entry is a search away.
 
 The Professional Record is deliberately platform-neutral. It does not require any particular app, spreadsheet, or service, and this guide does not recommend one, because the evidence for any single choice is not there. What matters is that it is personally controlled, searchable, easy to duplicate, and kept somewhere your employer does not own. Its full structure, every field and prompt, is laid out in the Professional Record itself.
 

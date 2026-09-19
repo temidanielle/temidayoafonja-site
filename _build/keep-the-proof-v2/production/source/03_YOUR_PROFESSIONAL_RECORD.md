@@ -1,7 +1,7 @@
 # YOUR PROFESSIONAL RECORD
 *A companion to Keep the Proof*
 
-This is your record, not a form to submit. Make one copy that belongs only to you, keep it somewhere you control and your employer does not own, and add to it over time. It holds everything the guide produces, in one searchable place.
+This is your record, not a form to submit. Make one personal copy, keep it in a personally controlled account rather than an employer-owned system, and add to it over time. It holds everything the guide produces, in one searchable place.
 
 - **Make it yours.** Save your own copy in a personal account, protected with a unique password and multifactor authentication.
 - **Keep it in one place.** One record you maintain beats four you abandon.
@@ -20,7 +20,7 @@ Catch work the moment it happens, in two minutes. Fill one block per event; expa
 
 ### Capture 1
 
-**What happened?.**  _The event or piece of work, in a line._
+**What happened?**  _The event or piece of work, in a line._
 `__________________________________________________________________`
 `__________________________________________________________________`
 
@@ -49,7 +49,7 @@ Catch work the moment it happens, in two minutes. Fill one block per event; expa
 
 ### Capture 2
 
-**What happened?.**  _The event or piece of work, in a line._
+**What happened?**  _The event or piece of work, in a line._
 `__________________________________________________________________`
 `__________________________________________________________________`
 
@@ -78,7 +78,7 @@ Catch work the moment it happens, in two minutes. Fill one block per event; expa
 
 ### Capture 3
 
-**What happened?.**  _The event or piece of work, in a line._
+**What happened?**  _The event or piece of work, in a line._
 `__________________________________________________________________`
 `__________________________________________________________________`
 

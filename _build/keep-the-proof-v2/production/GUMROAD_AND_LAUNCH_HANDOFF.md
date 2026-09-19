@@ -18,12 +18,17 @@ Only create a new product if Gumroad forces it; it should not.
 
 ### Files to upload (replace the old files)
 
-Upload these four, in this order, from `_build/keep-the-proof-v2/production/bundle/`:
+Upload these **four** files, in this order, from `_build/keep-the-proof-v2/production/bundle/`:
 
 1. `01_START_HERE.pdf`
 2. `02_KEEP_THE_PROOF_GUIDED_HANDBOOK.pdf`
-3. `03_YOUR_PROFESSIONAL_RECORD.docx` **and** `03_YOUR_PROFESSIONAL_RECORD.md`
+3. `03_YOUR_PROFESSIONAL_RECORD.docx`
 4. `04_PRINTABLE_FILLABLE_TOOLS.pdf`
+
+The customer bundle is exactly these four files. The plain-text `.md` mirror is
+**internal only** (kept at `_build/keep-the-proof-v2/production/source/` as a
+source/backup for portability and reproducibility) and is **not** uploaded to Gumroad
+— customers choose simply between the editable Word record and the fillable PDF.
 
 Remove the old V1 files from the product (the 60-Minute handbook, the Career
 Evidence Ledger, the old Start Here). The V1 files are archived in the repo at
@@ -33,7 +38,7 @@ If Gumroad shows files grouped, label the group/folder so the buyer sees the sam
 four labels the site and Start Here use:
 - **READ THIS FIRST** — Start Here
 - **LEARN & BUILD** — Keep the Proof: Guided Handbook
-- **KEEP USING** — Your Professional Record (`.docx` primary, `.md` portable copy)
+- **KEEP USING** — Your Professional Record (`.docx`)
 - **PREFER PRINT OR A FORM?** — Printable & Fillable Tools
 
 ### Cover / thumbnail
@@ -93,9 +98,8 @@ reconstruct anything your employer owns.
   example beside every tool, and a first focused session that gets you to one real
   entry. Includes a parallel path for rebuilding after you've already lost access.
 - **Your Professional Record** — an editable, copyable, searchable working document
-  you own and control, in a widely readable format (no app or subscription required;
-  a plain-text copy is included for maximum portability). This is where the record
-  lives for years.
+  you keep in a personally controlled account, in a widely readable format (no app or
+  subscription required). This is where the record lives for years.
 - **Printable & Fillable Tools** — the same fields as your Professional Record, as
   printable and fillable pages, for anyone who prefers to write by hand or type into
   a form. Use whichever you'll keep up — you don't need to complete both.
@@ -172,7 +176,7 @@ not silently stranded on V1.
    what turns a silent file swap into a real hand-off, so existing buyers know a new
    version is waiting in their library.
 3. Because the primary working document changed format (the Career Evidence Ledger
-   PDF is retired; the Professional Record is now an editable `.docx` + `.md`), the
+   PDF is retired; the Professional Record is now an editable `.docx`), the
    note should say so plainly, so a V1 buyer who kept a filled-in Ledger knows their
    old file still works and how the new one differs.
 
@@ -191,7 +195,7 @@ strip them of the free update path).
 > - A rewritten, expanded Guided Handbook (now 47 pages) with a completed example
 >   beside every tool and a clearer permission-and-safe-use standard throughout.
 > - **Your Professional Record** — an editable, copyable working document (Word /
->   Google Docs / Pages, plus a plain-text copy) that replaces the old Career Evidence
+>   Google Docs / Pages) that replaces the old Career Evidence
 >   Ledger as your long-term home. It carries the same practice; it's just easier to
 >   keep and search over years.
 > - Printable & Fillable Tools with the same fields, if you prefer paper or a form.

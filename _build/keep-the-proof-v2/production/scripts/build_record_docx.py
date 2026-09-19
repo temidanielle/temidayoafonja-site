@@ -13,7 +13,9 @@ from docx.oxml import OxmlElement
 
 ROOT = "/home/user/temidayoafonja-site"
 OUT_DOCX = f"{ROOT}/_build/keep-the-proof-v2/production/bundle/03_YOUR_PROFESSIONAL_RECORD.docx"
-OUT_MD = f"{ROOT}/_build/keep-the-proof-v2/production/bundle/03_YOUR_PROFESSIONAL_RECORD.md"
+# The .md is an INTERNAL source/backup mirror only — it is NOT shipped in the
+# customer bundle (customers get Word or the fillable PDF, not a third format).
+OUT_MD = f"{ROOT}/_build/keep-the-proof-v2/production/source/03_YOUR_PROFESSIONAL_RECORD.md"
 
 NAVY = RGBColor(0x11, 0x23, 0x45)
 GOLD = RGBColor(0xA8, 0x86, 0x2E)   # slightly deeper gold for text legibility on white
@@ -195,7 +197,8 @@ md.append("---\n")
 
 def md_field(label, hint, lines):
     h = f"  _{hint}_" if hint else ""
-    md.append(f"**{label}.**{h}")
+    sep = "" if label[-1:] in "?!.:" else "."
+    md.append(f"**{label}{sep}**{h}")
     md.append("`__________________________________________________________________`")
     if lines > 1:
         md.append("`__________________________________________________________________`")
@@ -257,5 +260,6 @@ for q in M.QUARTERLY: md.append(f"- [ ] {q}")
 md.append("")
 md.append(f"_{M.MAINT_NOTE}_")
 
+os.makedirs(os.path.dirname(OUT_MD), exist_ok=True)
 open(OUT_MD,"w",encoding="utf-8").write("\n".join(md))
-print("MD:", OUT_MD, os.path.getsize(OUT_MD), "bytes")
+print("MD (internal):", OUT_MD, os.path.getsize(OUT_MD), "bytes")

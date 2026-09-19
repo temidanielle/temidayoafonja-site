@@ -10,7 +10,7 @@ NAVY="#112345"; CREAM="#F5F1E8"; GOLD="#C9A84C"; INK="#1c2333"; GREY="#5f636e"
 FILES=[
  ("READ THIS FIRST","Start Here","This file. A two-minute orientation to the system and how the pieces fit together."),
  ("LEARN &amp; BUILD","Keep the Proof: Guided Handbook","The teaching. Read it straight through, or jump to the part you need: how to capture your work, clarify what was actually yours, and carry it forward in language anyone can follow, with a completed example beside every tool."),
- ("KEEP USING","Your Professional Record","Your long-term working document, in an editable, copyable format you own. Make one copy that belongs only to you and add to it over time. This is where the record lives for years."),
+ ("KEEP USING","Your Professional Record","Your long-term working document, in an editable, copyable format you keep and control. Make one personal copy, keep it in a personally controlled account, and add to it over time. This is where the record lives for years."),
  ("PREFER PRINT OR A FORM?","Printable &amp; Fillable Tools","The same fields as your Professional Record, for anyone who would rather write by hand or type into a form. Use whichever you will keep up &mdash; you do not need to complete both."),
 ]
 
@@ -45,7 +45,7 @@ body{{font-family:'DM Sans',sans-serif;color:{INK};font-size:10.6pt;line-height:
 .foot{{font-size:8.3pt;color:{GREY};line-height:1.45;margin-top:.7em;border-top:1px solid #e4dccb;padding-top:.55em;}}
 </style></head><body>
 <div class="hero">
-  <div class="mark">THE DENSITY GROUP</div>
+  <div class="mark">KEEP THE PROOF</div>
   <div class="htitle">Start Here</div>
   <div class="hsub">Welcome to Keep the Proof.</div>
 </div>

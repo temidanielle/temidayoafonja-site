@@ -6,8 +6,8 @@ so the underlying fields are identical across all three formats."""
 TITLE = "YOUR PROFESSIONAL RECORD"
 SUBTITLE = "A companion to Keep the Proof"
 
-INTRO_LEAD = ("This is your record, not a form to submit. Make one copy that belongs only to you, "
-    "keep it somewhere you control and your employer does not own, and add to it over time. "
+INTRO_LEAD = ("This is your record, not a form to submit. Make one personal copy, keep it in a "
+    "personally controlled account rather than an employer-owned system, and add to it over time. "
     "It holds everything the guide produces, in one searchable place.")
 
 INTRO_BULLETS = [

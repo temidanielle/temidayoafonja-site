@@ -186,7 +186,6 @@ for idx,(kind,payload) in enumerate(blocks):
                 cov_for = cover_lines[2] if len(cover_lines)>2 else ""
                 cov_by = cover_lines[3] if len(cover_lines)>3 else ""
                 body.append(f'''<section class="cover"><div class="cv-inner">
-                  <div class="cv-mark">THE DENSITY GROUP</div>
                   <h1 class="cv-title">{esc(cov_title)}</h1>
                   <div class="cv-rule"></div>
                   <div class="cv-desc">{esc(cov_desc)}</div>
