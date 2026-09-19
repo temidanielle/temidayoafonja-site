@@ -4,7 +4,7 @@ NEW PUBLIC V5  |  RIVERSIDE CO-CREATOR MASTER PROMPT
 
 If Your Company Needs You but Won’t Grow You
 Thumbnail: USEFUL. STILL STUCK.
-Generated Saturday, September 19, 2026 | 6:36 AM CT
+Generated Saturday, September 19, 2026 | 7:08 AM CT
 
 966 spoken words. Planning estimate 6:39 to 7:25 at 130 to
 145 words per minute, provisional and arithmetic only. Nothing
@@ -181,7 +181,8 @@ THE EVENT LIST
               on: of problem. No project that stretches you in a
               on: different way. No clear review of the extra work.
               on: No real conversation about what comes next.
-      SOUND: none.
+      SOUND: S2, One brief stinger.
+      ACCENT WORD: none separately specified; the sound lands on the entry
       RETURN: camera returns at the end of the paragraph
 
   V5-C10  |  FULL SCREEN  |  CUE
@@ -292,6 +293,23 @@ THE EVENT LIST
           The review questions run across three paragraphs. The
           card is held under all of them and the camera returns
           for the warning.
+
+  V5-P05  |  CAMERA  |  PAYOFF
+      LOCATION: section 14 STORY LOOP PAYOFF, paragraph 1
+      ON-SCREEN TEXT:
+          CAMERA | CAPACITY OR CAPABILITY
+      ENTER ON THESE WORDS:
+          Are they asking for more of your capacity, or expanding
+          your capability?
+      LEAVE ON THESE WORDS, paragraph 1:
+          you can stop confusing being needed with moving forward.
+      ASSET: none. Camera, with any editorial text over it.
+      SOUND: S5, One brief stinger.
+      ACCENT WORD: none separately specified; the sound lands on the entry
+      RETURN: stays on camera for the boundary
+      NOTE:
+          Pays off the opening work-request cards with the
+          distinction, then returns to camera for the boundary.
 
   V5-C13  |  FULL SCREEN  |  CUE
       LOCATION: section 15 CLOSE, paragraph 2

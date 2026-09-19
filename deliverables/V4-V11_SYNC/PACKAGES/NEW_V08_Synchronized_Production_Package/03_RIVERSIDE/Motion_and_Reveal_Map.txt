@@ -36,44 +36,26 @@ NEW_V8_FS_01_MEMORY_NOT_PROOF   [V8-O04]
             active at once.
   RETURN:   camera returns on 'But was the improvement 27% or 37%?'
 
-NEW_V8_FS_02_FIVE_KINDS   [V8-C07]
+NEW_V8_FS_02_FIVE_KINDS   [V8-T02]
   SECTION 4 FIVE THINGS THAT CAN DISAPPEAR
-  PARAGRAPH 1
+  PARAGRAPHS 1 TO 3
   REVEAL ORDER:
       1. NEW_V8_FS_02_FIVE_KINDS.png   paragraph 1
-             on: When access ends, you can lose five useful details.
-             on: The baseline. What was true before you started? The
-             on: scope. How many people, teams, customers, locations,
-             on: or systems were involved?
+             on: you can lose five useful details.
       2. NEW_V8_FS_02A_BASELINE.png   paragraph 1
-             on: When access ends, you can lose five useful details.
-             on: The baseline. What was true before you started? The
-             on: scope. How many people, teams, customers, locations,
-             on: or systems were involved?
+             on: The baseline.
       3. NEW_V8_FS_02B_SCOPE.png   paragraph 1
-             on: When access ends, you can lose five useful details.
-             on: The baseline. What was true before you started? The
-             on: scope. How many people, teams, customers, locations,
-             on: or systems were involved?
-      4. NEW_V8_FS_02C_DECISION.png   paragraph 1
-             on: When access ends, you can lose five useful details.
-             on: The baseline. What was true before you started? The
-             on: scope. How many people, teams, customers, locations,
-             on: or systems were involved?
-      5. NEW_V8_FS_02D_RESULT.png   paragraph 1
-             on: When access ends, you can lose five useful details.
-             on: The baseline. What was true before you started? The
-             on: scope. How many people, teams, customers, locations,
-             on: or systems were involved?
-      6. NEW_V8_FS_02E_MECHANISM.png   paragraph 1
-             on: When access ends, you can lose five useful details.
-             on: The baseline. What was true before you started? The
-             on: scope. How many people, teams, customers, locations,
-             on: or systems were involved?
+             on: The scope.
+      4. NEW_V8_FS_02C_DECISION.png   paragraph 2
+             on: The decision.
+      5. NEW_V8_FS_02D_RESULT.png   paragraph 2
+             on: The result.
+      6. NEW_V8_FS_02E_MECHANISM.png   paragraph 3
+             on: And the method.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
-  RETURN:   camera returns at the end of the paragraph
+  RETURN:   camera returns at THE IMPORTANT BOUNDARY
 
 NEW_V8_FS_03_KEEP_THE_PROOF   [V8-C08]
   SECTION 5 THE IMPORTANT BOUNDARY

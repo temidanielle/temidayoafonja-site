@@ -37,7 +37,7 @@ NEW_V4_FS_01_WHO_GETS_THE_EXPERIENCE   [V4-O03]
             active at once.
   RETURN:   camera returns on 'Because we still need experienced people later'
 
-NEW_V4_FS_02_INEFFICIENT_AND_DEVELOPMENTAL   [V4-C05]
+NEW_V4_FS_02_INEFFICIENT_AND_DEVELOPMENTAL   [V4-C06]
   SECTION 4 THE PROBLEM
   PARAGRAPH 1
   REVEAL ORDER:
@@ -53,7 +53,7 @@ NEW_V4_FS_02_INEFFICIENT_AND_DEVELOPMENTAL   [V4-C05]
             active at once.
   RETURN:   camera returns at the end of the paragraph
 
-NEW_V4_FS_04_THE_REAL_QUESTION   [V4-C06]
+NEW_V4_FS_04_THE_REAL_QUESTION   [V4-C07]
   SECTION 5 THIS IS NOT AN ANTI-AI ARGUMENT
   PARAGRAPH 2
   REVEAL ORDER:
@@ -66,30 +66,22 @@ NEW_V4_FS_04_THE_REAL_QUESTION   [V4-C06]
             active at once.
   RETURN:   camera returns at the end of the paragraph
 
-NEW_V4_FS_05_THREE_THINGS   [V4-C07]
+NEW_V4_FS_05_THREE_THINGS   [V4-T01]
   SECTION 6 THREE THINGS TO WATCH
-  PARAGRAPH 1
+  PARAGRAPHS 1 TO 3
   REVEAL ORDER:
       1. NEW_V4_FS_05_THREE_THINGS.png   paragraph 1
-             on: I would watch three things. First, exposure. Does
-             on: the person still see enough examples to learn the
-             on: pattern?
+             on: I would watch three things.
       2. NEW_V4_FS_05A_EXPOSURE.png   paragraph 1
-             on: I would watch three things. First, exposure. Does
-             on: the person still see enough examples to learn the
-             on: pattern?
-      3. NEW_V4_FS_05B_OWNERSHIP.png   paragraph 1
-             on: I would watch three things. First, exposure. Does
-             on: the person still see enough examples to learn the
-             on: pattern?
-      4. NEW_V4_FS_05C_FEEDBACK.png   paragraph 1
-             on: I would watch three things. First, exposure. Does
-             on: the person still see enough examples to learn the
-             on: pattern?
+             on: First, exposure.
+      3. NEW_V4_FS_05B_OWNERSHIP.png   paragraph 2
+             on: Second, ownership.
+      4. NEW_V4_FS_05C_FEEDBACK.png   paragraph 3
+             on: Third, feedback.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
-  RETURN:   camera returns at the end of the paragraph
+  RETURN:   camera returns at A SIMPLE EXAMPLE
 
 NEW_V4_FS_06_MOVED_OR_REMOVED   [V4-T02]
   SECTION 7 A SIMPLE EXAMPLE

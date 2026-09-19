@@ -92,6 +92,8 @@ SECTION 1  HOOK
                    on: It is to figure out three things
                NEW_V10_FS_01D_PROVE.png   paragraph 5
                    on: It is to figure out three things
+           SOUND: S2, One brief stinger.
+           ACCENT WORD: none separately specified
            RETURN: camera returns on 'And before the 90 days are over'
            NOTE: Establish the three, then activate one per spoken
                  question. The framework is named in the next
@@ -310,6 +312,8 @@ SECTION 8  THE CONVERSATION I WOULD HAVE
                    on: have trusted me with on day one?” That question
                    on: turns the first 90 days into development, not
                    on: performance theater.
+           SOUND: S3, One brief stinger.
+           ACCENT WORD: none separately specified
            RETURN: camera returns at the end of the paragraph
 
 SECTION 9  3 | PROVE
@@ -424,6 +428,8 @@ SECTION 11  THE REVERSAL | THEY ARE NOT THE ONLY ONES EVALUATING
                    on: job you accepted? Does the authority match what
                    on: you were told? Are you getting access to the work
                    on: you came here to do?
+           SOUND: S4, The source already previewed this idea. Treat the return as payoff and application, not a brand-new secret. One soft tonal accent.
+           ACCENT WORD: none separately specified
            RETURN: camera returns at the end of the paragraph
 
   PARA 2   MODE: CAMERA

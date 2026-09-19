@@ -302,6 +302,8 @@ SECTION 8  4 | CHOICE
                    on: now exists?” That question gives the other person
                    on: room to explain what changed without requiring you
                    on: to pretend the difference is not real.
+           SOUND: S4, One brief stinger.
+           ACCENT WORD: none separately specified
            RETURN: camera returns at the end of the paragraph
 
   PARA 3   MODE: CAMERA

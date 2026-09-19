@@ -134,6 +134,8 @@ SECTION 5  WHAT THIS CAN LOOK LIKE
                    on: of problem. No project that stretches you in a
                    on: different way. No clear review of the extra work.
                    on: No real conversation about what comes next.
+           SOUND: S2, One brief stinger.
+           ACCENT WORD: none separately specified
            RETURN: camera returns at the end of the paragraph
 
   PARA 2   MODE: CAMERA
@@ -284,8 +286,18 @@ SECTION 13  TAKEAWAY VALUE
 
 SECTION 14  STORY LOOP PAYOFF
 
-  PARA 1   MODE: CAMERA
-           Are they asking for more of your capacity, or expanding yo...
+  PARA 1   MODE: CAMERA   [V5-P05]
+           ON-SCREEN: CAMERA | CAPACITY OR CAPABILITY
+           ENTER ON: Are they asking for more of your capacity, or expanding
+                      your capability?
+           LEAVE ON: you can stop confusing being needed with moving forward.
+           ASSET: none. Camera, with any editorial text over it.
+           SOUND: S5, One brief stinger.
+           ACCENT WORD: none separately specified
+           RETURN: stays on camera for the boundary
+           NOTE: Pays off the opening work-request cards with the
+                 distinction, then returns to camera for the
+                 boundary.
 
 SECTION 15  CLOSE
 

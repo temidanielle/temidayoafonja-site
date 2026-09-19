@@ -4,7 +4,7 @@ NEW PUBLIC V7  |  RIVERSIDE CO-CREATOR MASTER PROMPT
 
 I’ve Seen Who Gets the Bigger Role and Why
 Thumbnail: THEY CHOSE SOMEONE ELSE
-Generated Saturday, September 19, 2026 | 6:36 AM CT
+Generated Saturday, September 19, 2026 | 7:08 AM CT
 
 1,170 spoken words. Planning estimate 8:04 to 9:00 at 130 to
 145 words per minute, provisional and arithmetic only. Nothing
@@ -407,6 +407,24 @@ THE EVENT LIST
               on: than simply saying, “I need to work harder.”
       SOUND: none.
       RETURN: camera returns at the end of the paragraph
+
+  V7-P05  |  CAMERA  |  PAYOFF
+      LOCATION: section 14 STORY LOOP PAYOFF, paragraph 1
+      ON-SCREEN TEXT:
+          CAMERA + BRIEF QUESTION CALLBACK | WHAT COULD THEY POINT
+          TO?
+      ENTER ON THESE WORDS:
+          If the bigger role opened tomorrow, what could someone
+          already point to?
+      LEAVE ON THESE WORDS, paragraph 1:
+          that tells you something about the environment too.
+      ASSET: none. Camera, with any editorial text over it.
+      SOUND: S5, One brief stinger.
+      ACCENT WORD: none separately specified; the sound lands on the entry
+      RETURN: stays on camera
+      NOTE:
+          The question from the story loop, asked again now that
+          the viewer can answer it.
 
   V7-C17  |  FULL SCREEN  |  CUE
       LOCATION: section 15 CLOSE, paragraph 2

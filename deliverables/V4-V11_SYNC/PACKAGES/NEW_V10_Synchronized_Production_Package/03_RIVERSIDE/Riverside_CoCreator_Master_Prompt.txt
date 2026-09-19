@@ -4,7 +4,7 @@ NEW PUBLIC V10  |  RIVERSIDE CO-CREATOR MASTER PROMPT
 
 Your First 90 Days in a New Job: What Really Matters
 Thumbnail: DON’T SPEND YOUR FIRST 90 DAYS PROVING YOURSELF
-Generated Saturday, September 19, 2026 | 6:36 AM CT
+Generated Saturday, September 19, 2026 | 7:08 AM CT
 
 1,701 spoken words. Planning estimate 11:43 to 13:05 at 130 to
 145 words per minute, provisional and arithmetic only. Nothing
@@ -158,7 +158,8 @@ THE EVENT LIST
               on: It is to figure out three things
           NEW_V10_FS_01D_PROVE.png   paragraph 5
               on: It is to figure out three things
-      SOUND: none.
+      SOUND: S2, One brief stinger.
+      ACCENT WORD: none separately specified; the sound lands on the entry
       RETURN: camera returns on 'And before the 90 days are over'
       NOTE:
           Establish the three, then activate one per spoken
@@ -350,7 +351,8 @@ THE EVENT LIST
               on: have trusted me with on day one?” That question
               on: turns the first 90 days into development, not
               on: performance theater.
-      SOUND: none.
+      SOUND: S3, One brief stinger.
+      ACCENT WORD: none separately specified; the sound lands on the entry
       RETURN: camera returns at the end of the paragraph
 
   V10-C15  |  FULL SCREEN  |  CUE
@@ -455,7 +457,8 @@ THE EVENT LIST
               on: job you accepted? Does the authority match what
               on: you were told? Are you getting access to the work
               on: you came here to do?
-      SOUND: none.
+      SOUND: S4, The source already previewed this idea. Treat the return as payoff and application, not a brand-new secret. One soft tonal accent.
+      ACCENT WORD: none separately specified; the sound lands on the entry
       RETURN: camera returns at the end of the paragraph
 
   V10-C18  |  FULL SCREEN  |  CUE

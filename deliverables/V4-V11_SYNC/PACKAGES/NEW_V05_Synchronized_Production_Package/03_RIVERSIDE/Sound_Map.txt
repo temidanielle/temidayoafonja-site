@@ -30,6 +30,19 @@ EVERY SOUND EVENT, IN SPOKEN ORDER
           No separate accent word is specified for this event.
       TREATMENT: S1, one soft notification click on the first request only
 
+  V5-C09   CUE
+      LOCATION: section 5, WHAT THIS CAN LOOK LIKE, paragraph 1
+      VISUAL ENTERS ON:
+          Look for a pattern. More rescue work. More people asking
+          you for help. More things that only you know how to do.
+          But no new decisions. No new kind of problem. No project
+          that stretches you in a different way. No clear review
+          of the extra work. No real conversation about what comes
+          next.
+      THE ACCENT LANDS ON: the visual entry above.
+          No separate accent word is specified for this event.
+      TREATMENT: S2, One brief stinger.
+
   V5-T03   TEACHING
       LOCATION: section 8, ASK FOR DEVELOPMENT, NOT ONLY MORE WORK, paragraph 3
       VISUAL ENTERS ON:
@@ -47,7 +60,16 @@ EVERY SOUND EVENT, IN SPOKEN ORDER
           Let’s come back to this in 90 days.
       TREATMENT: S4, one soft accent on the date
 
-  3 sound events in this video. Every one is a single event with
+  V5-P05   PAYOFF
+      LOCATION: section 14, STORY LOOP PAYOFF, paragraph 1
+      VISUAL ENTERS ON:
+          Are they asking for more of your capacity, or expanding
+          your capability?
+      THE ACCENT LANDS ON: the visual entry above.
+          No separate accent word is specified for this event.
+      TREATMENT: S5, One brief stinger.
+
+  5 sound events in this video. Every one is a single event with
   one visual entry and at most one accent word.
 
 ------------------------------------------------------------------------------

@@ -31,6 +31,37 @@ EVERY SOUND EVENT, IN SPOKEN ORDER
           No separate accent word is specified for this event.
       TREATMENT: S1, one subtle click
 
+  V10-O05   OPENING
+      LOCATION: section 1, HOOK, paragraph 5
+      VISUAL ENTERS ON:
+          It is to figure out three things
+      THE ACCENT LANDS ON: the visual entry above.
+          No separate accent word is specified for this event.
+      TREATMENT: S2, One brief stinger.
+
+  V10-C14   CUE
+      LOCATION: section 8, THE CONVERSATION I WOULD HAVE, paragraph 3
+      VISUAL ENTERS ON:
+          And ask: “What would you want to trust me with by the
+          end of my first 90 days that you would not have trusted
+          me with on day one?” That question turns the first 90
+          days into development, not performance theater.
+      THE ACCENT LANDS ON: the visual entry above.
+          No separate accent word is specified for this event.
+      TREATMENT: S3, One brief stinger.
+
+  V10-C17   CUE
+      LOCATION: section 11, THE REVERSAL | THEY ARE NOT THE ONLY ONES EVALUATING, paragraph 1
+      VISUAL ENTERS ON:
+          There is one more part of the first 90 days I want to
+          add. They are not the only ones evaluating. You are
+          collecting evidence too. Is this actually the job you
+          accepted? Does the authority match what you were told?
+          Are you getting access to the work you came here to do?
+      THE ACCENT LANDS ON: the visual entry above.
+          No separate accent word is specified for this event.
+      TREATMENT: S4, The source already previewed this idea. Treat the return as payoff and application, not a brand-new secret. One soft tonal accent.
+
   V10-T05   TEACHING
       LOCATION: section 12, THE FIRST-90-DAYS READ, paragraph 1
       VISUAL ENTERS ON:
@@ -40,7 +71,7 @@ EVERY SOUND EVENT, IN SPOKEN ORDER
           ROLE CHECK.
       TREATMENT: S5, one accent as the fourth line is added
 
-  2 sound events in this video. Every one is a single event with
+  5 sound events in this video. Every one is a single event with
   one visual entry and at most one accent word.
 
 ------------------------------------------------------------------------------

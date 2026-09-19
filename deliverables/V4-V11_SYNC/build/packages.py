@@ -1263,6 +1263,32 @@ def per_video_checks(n, assets, L):
        all(("word" in e["sound"]) for e in EV.events(n) if e["sound"]),
        "%d sound events, each one record"
        % len([e for e in EV.events(n) if e["sound"]]))
+    ck("Sound accents stay inside the 4 to 7 band",
+       4 <= len([e for e in EV.events(n) if e["sound"]]) <= 7,
+       "%d accents, each one named by the brief"
+       % len([e for e in EV.events(n) if e["sound"]]))
+    ck("Every accent word is spoken inside its own event",
+       not [1 for e in EV.events(n)
+            if e["sound"] and e["sound"].get("word")
+            and not any(R.S._norm(e["sound"]["word"]).lower()
+                        in R.S._norm(R.sections(n)[e["section"]][1][i]
+                                     ).lower()
+                        for i in range(e["para"], e["para_out"] + 1))],
+       "the accent and the scene it belongs to are the same event")
+    ck("The open loop is set up and paid off",
+       "STORY LOOP" in [l for l, _ in R.sections(n)]
+       and "STORY LOOP PAYOFF" in [l for l, _ in R.sections(n)],
+       "the loop this video opens is answered in its own payoff section")
+    ck("No unsupported power word anywhere in this package",
+       not [w for w in ("secret", "shocking", "insane", "genius",
+                        "ultimate", "terrifying", "life-changing",
+                        "nobody tells you", "before it is too late")
+            if w in R.S._norm(R.spoken_text(n)).lower()
+            or w in R.S._norm(LOCKED[n][0]).lower()
+            or w in R.S._norm(LOCKED[n][1]).lower()
+            or any(w in R.S._norm(l).lower() for num in (1, 2, 3)
+                   for l in SH.lines(n, num))],
+       "title, thumbnail, master and all three Shorts checked")
     ck("A reused family is one family at more than one event",
        all(c["occurrences"] >= 1 for c in cues(n)),
        "%d families, %d events"
@@ -2138,6 +2164,8 @@ def assemble(st, L, allchecks, files):
           sum(len(v) for v in allchecks.values())),
       release_checks(os.path.join(
           shared, "V4-V11_RELEASE_CHECKS_REMAINING.docx"), st),
+      __import__("influence_qa").build(os.path.join(
+          shared, "V4-V11_INFLUENCE_AND_CURIOSITY_QA.docx"), st),
       decisions(os.path.join(
           shared, "V4-V11_DECISIONS_REQUIRED.docx"), st),
     ]

@@ -407,8 +407,18 @@ SECTION 13  TAKEAWAY VALUE
 
 SECTION 14  STORY LOOP PAYOFF
 
-  PARA 1   MODE: CAMERA
-           If the bigger role opened tomorrow, what could someone alr...
+  PARA 1   MODE: CAMERA   [V7-P05]
+           ON-SCREEN: CAMERA + BRIEF QUESTION CALLBACK | WHAT COULD
+                      THEY POINT TO?
+           ENTER ON: If the bigger role opened tomorrow, what could someone
+                      already point to?
+           LEAVE ON: that tells you something about the environment too.
+           ASSET: none. Camera, with any editorial text over it.
+           SOUND: S5, One brief stinger.
+           ACCENT WORD: none separately specified
+           RETURN: stays on camera
+           NOTE: The question from the story loop, asked again now
+                 that the viewer can answer it.
 
 SECTION 15  CLOSE
 

@@ -4,7 +4,7 @@ NEW PUBLIC V6  |  RIVERSIDE CO-CREATOR MASTER PROMPT
 
 Decode a Job Description in 10 Minutes
 Thumbnail: IGNORE THE TITLE
-Generated Saturday, September 19, 2026 | 6:36 AM CT
+Generated Saturday, September 19, 2026 | 7:08 AM CT
 
 1,096 spoken words. Planning estimate 7:33 to 8:25 at 130 to
 145 words per minute, provisional and arithmetic only. Nothing
@@ -162,7 +162,7 @@ THE EVENT LIST
           The sample boundary stays spoken: 15 postings, 11
           employers.
 
-  V6-C10  |  FULL SCREEN  |  CUE
+  V6-C11  |  FULL SCREEN  |  CUE
       LOCATION: section 3 THE FOUR THINGS I READ, paragraph 1
       ENTER ON THESE WORDS:
           I reviewed 15 job postings from 11 employers for this
@@ -182,7 +182,7 @@ THE EVENT LIST
       SOUND: none.
       RETURN: camera returns at the end of the paragraph
 
-  V6-C11  |  FULL SCREEN  |  CUE
+  V6-C12  |  FULL SCREEN  |  CUE
       LOCATION: section 3 THE FOUR THINGS I READ, paragraph 2
       ENTER ON THESE WORDS:
           Those four things help you answer three different
@@ -238,7 +238,7 @@ THE EVENT LIST
           proof states belong to their own sections and are not
           played here.
 
-  V6-C12  |  FULL SCREEN  |  CUE
+  V6-C13  |  FULL SCREEN  |  CUE
       LOCATION: section 5 2 | AUTHORITY, paragraph 1
       ENTER ON THESE WORDS:
           Next, look at the verbs. Does the person decide? Lead?
@@ -274,7 +274,7 @@ THE EVENT LIST
       ACCENT WORD: Supporting the development of strategy is not the same as setting the strategy.
       RETURN: camera returns on 'I found another role called Director of Enterprise Resilience'
 
-  V6-C13  |  FULL SCREEN  |  CUE
+  V6-C14  |  FULL SCREEN  |  CUE
       LOCATION: section 5 2 | AUTHORITY, paragraph 3
       ENTER ON THESE WORDS:
           I found another role called Director of Enterprise
@@ -351,7 +351,7 @@ THE EVENT LIST
           second is not revealed while the first is being
           explained.
 
-  V6-C14  |  FULL SCREEN  |  CUE
+  V6-C15  |  FULL SCREEN  |  CUE
       LOCATION: section 8 WHY TITLES CAN MISLEAD YOU, paragraph 2
       ENTER ON THESE WORDS:
           One role focused much more on running the work
@@ -366,7 +366,7 @@ THE EVENT LIST
       SOUND: none.
       RETURN: camera returns at the end of the paragraph
 
-  V6-C15  |  FULL SCREEN  |  CUE
+  V6-C16  |  FULL SCREEN  |  CUE
       LOCATION: section 8 WHY TITLES CAN MISLEAD YOU, paragraph 2
       ENTER ON THESE WORDS:
           Same broad title level.
@@ -385,7 +385,7 @@ THE EVENT LIST
       SOUND: none.
       RETURN: camera returns at the end of the paragraph
 
-  V6-C16  |  FULL SCREEN  |  CUE
+  V6-C17  |  FULL SCREEN  |  CUE
       LOCATION: section 9 THE REVERSE CAN HAPPEN TOO, paragraph 1
       ENTER ON THESE WORDS:
           Sometimes a title sounds smaller or stranger than the
@@ -412,7 +412,7 @@ THE EVENT LIST
       SOUND: none.
       RETURN: camera returns at the end of the paragraph
 
-  V6-C17  |  FULL SCREEN  |  CUE
+  V6-C18  |  FULL SCREEN  |  CUE
       LOCATION: section 9 THE REVERSE CAN HAPPEN TOO, paragraph 2
       ENTER ON THESE WORDS:
           But the work included leading federal authorization work
@@ -438,7 +438,7 @@ THE EVENT LIST
       SOUND: none.
       RETURN: camera returns at the end of the paragraph
 
-  V6-C18  |  FULL SCREEN  |  CUE
+  V6-C19  |  FULL SCREEN  |  CUE
       LOCATION: section 9 THE REVERSE CAN HAPPEN TOO, paragraph 2
       ENTER ON THESE WORDS:
           The published pay range went from $180,000 to $440,000.
@@ -452,10 +452,11 @@ THE EVENT LIST
           NEW_V6_FS_15B_IN_THE_SAMPLE.png   paragraph 2
               on: The published pay range went from $180,000 to
               on: $440,000.
-      SOUND: none.
+      SOUND: S4, One brief stinger.
+      ACCENT WORD: none separately specified; the sound lands on the entry
       RETURN: camera returns at the end of the paragraph
 
-  V6-C19  |  FULL SCREEN  |  CUE
+  V6-C20  |  FULL SCREEN  |  CUE
       LOCATION: section 9 THE REVERSE CAN HAPPEN TOO, paragraph 3
       ENTER ON THESE WORDS:
           So if a title confuses you, do not automatically skip
@@ -471,7 +472,7 @@ THE EVENT LIST
       SOUND: none.
       RETURN: camera returns at the end of the paragraph
 
-  V6-C20  |  FULL SCREEN  |  CUE
+  V6-C21  |  FULL SCREEN  |  CUE
       LOCATION: section 10 WHAT THIS METHOD CANNOT TELL YOU, paragraph 1
       ENTER ON THESE WORDS:
           This method will not tell you who will get hired. It
@@ -499,28 +500,30 @@ THE EVENT LIST
       SOUND: none.
       RETURN: camera returns at the end of the paragraph
 
-  V6-C21  |  FULL SCREEN  |  CUE
-      LOCATION: section 11 USE IT ON A REAL JOB, paragraph 1
+  V6-T03  |  FULL SCREEN  |  TEACHING
+      LOCATION: section 11 USE IT ON A REAL JOB, paragraphs 1 to 2
+      ON-SCREEN TEXT:
+          TRUE FULL-SCREEN WORKING PAGE | PROBLEM / AUTHORITY /
+          PROOF / REAL GAP
       ENTER ON THESE WORDS:
           Take one job description you are actually thinking
-          about. Write four lines: Problem. Authority. Proof. Real
-          gap.
-      LEAVE ON THESE WORDS, paragraph 1:
-          Take one job description you are actually thinking
-          about. Write four lines: Problem. Authority. Proof. Real
-          gap.
+          about.
+      LEAVE ON THESE WORDS, paragraph 2:
+          Now you are reading the job instead of being impressed
+          or scared by the label.
       ASSET FAMILY: NEW_V6_FS_20_CTA
       STATES, WITH THE WORDS THEY ACTIVATE ON:
           NEW_V6_FS_20A_WRITE_FOUR_LINES.png   paragraph 1
-              on: Take one job description you are actually thinking
-              on: about. Write four lines: Problem. Authority.
-              on: Proof. Real gap.
-          NEW_V6_FS_20B_STRONGEST_VERB.png   paragraph 1
-              on: Take one job description you are actually thinking
-              on: about. Write four lines: Problem. Authority.
-              on: Proof. Real gap.
-      SOUND: none.
-      RETURN: camera returns at the end of the paragraph
+              on: Write four lines: Problem. Authority. Proof. Real
+              on: gap.
+          NEW_V6_FS_20B_STRONGEST_VERB.png   paragraph 2
+              on: Then circle the strongest verbs in the posting.
+      SOUND: S5, one accent as the working page appears
+      ACCENT WORD: Take one job description you are actually thinking about.
+      RETURN: camera returns at TAKEAWAY VALUE
+      NOTE:
+          The second instruction is spoken in the next paragraph,
+          so the page is held rather than completed early.
 
   V6-C22  |  FULL SCREEN  |  CUE
       LOCATION: section 12 TAKEAWAY VALUE, paragraph 1

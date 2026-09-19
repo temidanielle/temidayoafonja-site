@@ -52,7 +52,7 @@ NEW_V6_FS_05_PARP   [V6-O05]
             active at once.
   RETURN:   camera returns at STORY LOOP
 
-NEW_V6_FS_03_THE_SAMPLE   [V6-C10]
+NEW_V6_FS_03_THE_SAMPLE   [V6-C11]
   SECTION 3 THE FOUR THINGS I READ
   PARAGRAPH 1
   REVEAL ORDER:
@@ -66,7 +66,7 @@ NEW_V6_FS_03_THE_SAMPLE   [V6-C10]
             active at once.
   RETURN:   camera returns at the end of the paragraph
 
-NEW_V6_FS_04_THREE_QUESTIONS   [V6-C11]
+NEW_V6_FS_04_THREE_QUESTIONS   [V6-C12]
   SECTION 3 THE FOUR THINGS I READ
   PARAGRAPH 2
   REVEAL ORDER:
@@ -102,7 +102,7 @@ NEW_V6_FS_06_POSTING_WALKTHROUGH   [V6-T01A]
             active at once.
   RETURN:   camera returns at 2 | AUTHORITY
 
-NEW_V6_FS_08_READ_THE_VERBS   [V6-C12]
+NEW_V6_FS_08_READ_THE_VERBS   [V6-C13]
   SECTION 5 2 | AUTHORITY
   PARAGRAPH 1
   REVEAL ORDER:
@@ -127,7 +127,7 @@ NEW_V6_FS_06_POSTING_WALKTHROUGH   [V6-T01B]
             active at once.
   RETURN:   camera returns on 'I found another role called Director of Enterprise Resilience'
 
-NEW_V6_FS_09_PREDEFINED_DECISIONS   [V6-C13]
+NEW_V6_FS_09_PREDEFINED_DECISIONS   [V6-C14]
   SECTION 5 2 | AUTHORITY
   PARAGRAPH 3
   REVEAL ORDER:
@@ -174,7 +174,7 @@ NEW_V6_FS_17_REAL_GAP   [V6-T02]
             active at once.
   RETURN:   camera returns on 'You can be able to do the work'
 
-NEW_V6_FS_10_DIRECTOR_COMPARE   [V6-C14]
+NEW_V6_FS_10_DIRECTOR_COMPARE   [V6-C15]
   SECTION 8 WHY TITLES CAN MISLEAD YOU
   PARAGRAPH 2
   REVEAL ORDER:
@@ -187,7 +187,7 @@ NEW_V6_FS_10_DIRECTOR_COMPARE   [V6-C14]
             active at once.
   RETURN:   camera returns at the end of the paragraph
 
-NEW_V6_FS_12_TITLE_TEST   [V6-C15]
+NEW_V6_FS_12_TITLE_TEST   [V6-C16]
   SECTION 8 WHY TITLES CAN MISLEAD YOU
   PARAGRAPH 2
   REVEAL ORDER:
@@ -204,7 +204,7 @@ NEW_V6_FS_12_TITLE_TEST   [V6-C15]
             active at once.
   RETURN:   camera returns at the end of the paragraph
 
-NEW_V6_FS_13_ACRONYM_WALL   [V6-C16]
+NEW_V6_FS_13_ACRONYM_WALL   [V6-C17]
   SECTION 9 THE REVERSE CAN HAPPEN TOO
   PARAGRAPH 1
   REVEAL ORDER:
@@ -223,7 +223,7 @@ NEW_V6_FS_13_ACRONYM_WALL   [V6-C16]
             active at once.
   RETURN:   camera returns at the end of the paragraph
 
-NEW_V6_FS_14_AUTHORITY_POSTURES   [V6-C17]
+NEW_V6_FS_14_AUTHORITY_POSTURES   [V6-C18]
   SECTION 9 THE REVERSE CAN HAPPEN TOO
   PARAGRAPH 2
   REVEAL ORDER:
@@ -247,7 +247,7 @@ NEW_V6_FS_14_AUTHORITY_POSTURES   [V6-C17]
             active at once.
   RETURN:   camera returns at the end of the paragraph
 
-NEW_V6_FS_15_CEILING   [V6-C18]
+NEW_V6_FS_15_CEILING   [V6-C19]
   SECTION 9 THE REVERSE CAN HAPPEN TOO
   PARAGRAPH 2
   REVEAL ORDER:
@@ -262,7 +262,7 @@ NEW_V6_FS_15_CEILING   [V6-C18]
             active at once.
   RETURN:   camera returns at the end of the paragraph
 
-NEW_V6_FS_16_READ_THE_WORK   [V6-C19]
+NEW_V6_FS_16_READ_THE_WORK   [V6-C20]
   SECTION 9 THE REVERSE CAN HAPPEN TOO
   PARAGRAPH 3
   REVEAL ORDER:
@@ -274,7 +274,7 @@ NEW_V6_FS_16_READ_THE_WORK   [V6-C19]
             active at once.
   RETURN:   camera returns at the end of the paragraph
 
-NEW_V6_FS_18_WHAT_IT_WILL_NOT_DO   [V6-C20]
+NEW_V6_FS_18_WHAT_IT_WILL_NOT_DO   [V6-C21]
   SECTION 10 WHAT THIS METHOD CANNOT TELL YOU
   PARAGRAPH 1
   REVEAL ORDER:
@@ -290,22 +290,19 @@ NEW_V6_FS_18_WHAT_IT_WILL_NOT_DO   [V6-C20]
             active at once.
   RETURN:   camera returns at the end of the paragraph
 
-NEW_V6_FS_20_CTA   [V6-C21]
+NEW_V6_FS_20_CTA   [V6-T03]
   SECTION 11 USE IT ON A REAL JOB
-  PARAGRAPH 1
+  PARAGRAPHS 1 TO 2
   REVEAL ORDER:
       1. NEW_V6_FS_20A_WRITE_FOUR_LINES.png   paragraph 1
-             on: Take one job description you are actually thinking
-             on: about. Write four lines: Problem. Authority. Proof.
-             on: Real gap.
-      2. NEW_V6_FS_20B_STRONGEST_VERB.png   paragraph 1
-             on: Take one job description you are actually thinking
-             on: about. Write four lines: Problem. Authority. Proof.
-             on: Real gap.
+             on: Write four lines: Problem. Authority. Proof. Real
+             on: gap.
+      2. NEW_V6_FS_20B_STRONGEST_VERB.png   paragraph 2
+             on: Then circle the strongest verbs in the posting.
   EMPHASIS: active item in the warm yellow wash with the
             rust rule. Everything else quiet. Never two
             active at once.
-  RETURN:   camera returns at the end of the paragraph
+  RETURN:   camera returns at TAKEAWAY VALUE
 
 NEW_V6_FS_19_FOUR_THINGS   [V6-C22]
   SECTION 12 TAKEAWAY VALUE

@@ -355,8 +355,17 @@ SECTION 15  TAKEAWAY VALUE
 
 SECTION 16  STORY LOOP PAYOFF
 
-  PARA 1   MODE: CAMERA
-           The question was never simply, “Do my skills transfer?” Th...
+  PARA 1   MODE: CAMERA   [V9-P05]
+           ON-SCREEN: CAMERA + WORKING-PAGE CALLBACK | WHAT DOES
+                      THIS CONTEXT STILL REQUIRE?
+           ENTER ON: The question was never simply, “Do my skills transfer?”
+           LEAVE ON: what will this new context still ask me to build?
+           ASSET: none. Camera, with any editorial text over it.
+           SOUND: S5, One brief stinger.
+           ACCENT WORD: none separately specified
+           RETURN: stays on camera
+           NOTE: The four columns answered, rather than listed
+                 again.
 
 SECTION 17  CLOSE
 

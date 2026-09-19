@@ -4,7 +4,7 @@ NEW PUBLIC V8  |  RIVERSIDE CO-CREATOR MASTER PROMPT
 
 What Disappears When Your Work Access Ends
 Thumbnail: YOU CAN’T PROVE IT LATER
-Generated Saturday, September 19, 2026 | 6:36 AM CT
+Generated Saturday, September 19, 2026 | 7:08 AM CT
 
 889 spoken words. Planning estimate 6:07 to 6:50 at 130 to
 145 words per minute, provisional and arithmetic only. Nothing
@@ -133,52 +133,38 @@ THE EVENT LIST
           The baseline and decision questions do the work from
           camera.
 
-  V8-C07  |  FULL SCREEN  |  CUE
-      LOCATION: section 4 FIVE THINGS THAT CAN DISAPPEAR, paragraph 1
+  V8-T02  |  FULL SCREEN  |  TEACHING
+      LOCATION: section 4 FIVE THINGS THAT CAN DISAPPEAR, paragraphs 1 to 3
+      ON-SCREEN TEXT:
+          TRUE FULL-SCREEN NOTE | BASELINE / SCOPE / DECISION /
+          RESULT / METHOD
       ENTER ON THESE WORDS:
-          When access ends, you can lose five useful details. The
-          baseline. What was true before you started? The scope.
-          How many people, teams, customers, locations, or systems
-          were involved?
-      LEAVE ON THESE WORDS, paragraph 1:
-          When access ends, you can lose five useful details. The
-          baseline. What was true before you started? The scope.
-          How many people, teams, customers, locations, or systems
-          were involved?
+          you can lose five useful details.
+      LEAVE ON THESE WORDS, paragraph 3:
+          Those details turn a memory into something another
+          person can understand and judge.
       ASSET FAMILY: NEW_V8_FS_02_FIVE_KINDS
       STATES, WITH THE WORDS THEY ACTIVATE ON:
           NEW_V8_FS_02_FIVE_KINDS.png   paragraph 1
-              on: When access ends, you can lose five useful
-              on: details. The baseline. What was true before you
-              on: started? The scope. How many people, teams,
-              on: customers, locations, or systems were involved?
+              on: you can lose five useful details.
           NEW_V8_FS_02A_BASELINE.png   paragraph 1
-              on: When access ends, you can lose five useful
-              on: details. The baseline. What was true before you
-              on: started? The scope. How many people, teams,
-              on: customers, locations, or systems were involved?
+              on: The baseline.
           NEW_V8_FS_02B_SCOPE.png   paragraph 1
-              on: When access ends, you can lose five useful
-              on: details. The baseline. What was true before you
-              on: started? The scope. How many people, teams,
-              on: customers, locations, or systems were involved?
-          NEW_V8_FS_02C_DECISION.png   paragraph 1
-              on: When access ends, you can lose five useful
-              on: details. The baseline. What was true before you
-              on: started? The scope. How many people, teams,
-              on: customers, locations, or systems were involved?
-          NEW_V8_FS_02D_RESULT.png   paragraph 1
-              on: When access ends, you can lose five useful
-              on: details. The baseline. What was true before you
-              on: started? The scope. How many people, teams,
-              on: customers, locations, or systems were involved?
-          NEW_V8_FS_02E_MECHANISM.png   paragraph 1
-              on: When access ends, you can lose five useful
-              on: details. The baseline. What was true before you
-              on: started? The scope. How many people, teams,
-              on: customers, locations, or systems were involved?
-      SOUND: none.
-      RETURN: camera returns at the end of the paragraph
+              on: The scope.
+          NEW_V8_FS_02C_DECISION.png   paragraph 2
+              on: The decision.
+          NEW_V8_FS_02D_RESULT.png   paragraph 2
+              on: The result.
+          NEW_V8_FS_02E_MECHANISM.png   paragraph 3
+              on: And the method.
+      SOUND: S2, one soft click on the first field only
+      ACCENT WORD: The baseline.
+      RETURN: camera returns at THE IMPORTANT BOUNDARY
+      NOTE:
+          Five fields across three paragraphs, one active at a
+          time. They were previously all assigned to the first
+          paragraph, which showed the decision and the result
+          before they were spoken.
 
   V8-C08  |  FULL SCREEN  |  CUE
       LOCATION: section 5 THE IMPORTANT BOUNDARY, paragraph 1
@@ -196,7 +182,8 @@ THE EVENT LIST
               on: I need to be very clear. Keeping proof does not
               on: mean taking company property. Do not send
               on: confidential documents to yourself.
-      SOUND: none.
+      SOUND: S3, One brief stinger.
+      ACCENT WORD: none separately specified; the sound lands on the entry
       RETURN: camera returns at the end of the paragraph
 
   V8-C09  |  FULL SCREEN  |  CUE

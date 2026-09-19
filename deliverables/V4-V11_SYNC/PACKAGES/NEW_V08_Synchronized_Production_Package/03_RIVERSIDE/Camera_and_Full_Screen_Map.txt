@@ -95,54 +95,51 @@ SECTION 3  THE PROBLEM
 
 SECTION 4  FIVE THINGS THAT CAN DISAPPEAR
 
-  PARA 1   MODE: FULL SCREEN   [V8-C07]
-           ENTER ON: When access ends, you can lose five useful details. The
-                      baseline. What was true before you started? The scope. How
-                      many people, teams, customers, locations, or systems were
-                      involved?
-           LEAVE ON: When access ends, you can lose five useful details. The
-                      baseline. What was true before you started? The scope. How
-                      many people, teams, customers, locations, or systems were
-                      involved?
+  PARA 1   MODE: FULL SCREEN   [V8-T02]
+           SPANS PARAGRAPHS 1 TO 3
+           ON-SCREEN: TRUE FULL-SCREEN NOTE | BASELINE / SCOPE /
+                      DECISION / RESULT / METHOD
+           ENTER ON: you can lose five useful details.
+           LEAVE ON: Those details turn a memory into something another person
+                      can understand and judge.
+           (the exit wording is in paragraph 3)
            ASSET FAMILY: NEW_V8_FS_02_FIVE_KINDS
            STATES, WITH THE WORDS THEY ACTIVATE ON:
                NEW_V8_FS_02_FIVE_KINDS.png   paragraph 1
-                   on: When access ends, you can lose five useful
-                   on: details. The baseline. What was true before you
-                   on: started? The scope. How many people, teams,
-                   on: customers, locations, or systems were involved?
+                   on: you can lose five useful details.
                NEW_V8_FS_02A_BASELINE.png   paragraph 1
-                   on: When access ends, you can lose five useful
-                   on: details. The baseline. What was true before you
-                   on: started? The scope. How many people, teams,
-                   on: customers, locations, or systems were involved?
+                   on: The baseline.
                NEW_V8_FS_02B_SCOPE.png   paragraph 1
-                   on: When access ends, you can lose five useful
-                   on: details. The baseline. What was true before you
-                   on: started? The scope. How many people, teams,
-                   on: customers, locations, or systems were involved?
-               NEW_V8_FS_02C_DECISION.png   paragraph 1
-                   on: When access ends, you can lose five useful
-                   on: details. The baseline. What was true before you
-                   on: started? The scope. How many people, teams,
-                   on: customers, locations, or systems were involved?
-               NEW_V8_FS_02D_RESULT.png   paragraph 1
-                   on: When access ends, you can lose five useful
-                   on: details. The baseline. What was true before you
-                   on: started? The scope. How many people, teams,
-                   on: customers, locations, or systems were involved?
-               NEW_V8_FS_02E_MECHANISM.png   paragraph 1
-                   on: When access ends, you can lose five useful
-                   on: details. The baseline. What was true before you
-                   on: started? The scope. How many people, teams,
-                   on: customers, locations, or systems were involved?
-           RETURN: camera returns at the end of the paragraph
+                   on: The scope.
+               NEW_V8_FS_02C_DECISION.png   paragraph 2
+                   on: The decision.
+               NEW_V8_FS_02D_RESULT.png   paragraph 2
+                   on: The result.
+               NEW_V8_FS_02E_MECHANISM.png   paragraph 3
+                   on: And the method.
+           SOUND: S2, one soft click on the first field only
+           ACCENT WORD: The baseline.
+           RETURN: camera returns at THE IMPORTANT BOUNDARY
+           NOTE: Five fields across three paragraphs, one active at
+                 a time. They were previously all assigned to the
+                 first paragraph, which showed the decision and the
+                 result before they were spoken.
 
-  PARA 2   MODE: CAMERA
-           The decision. What was actually yours to choose? The resul...
+  PARA 2   MODE: FULL SCREEN, held from V8-T02
+           The voice continues under it.
+           ACTIVATE HERE:
+               NEW_V8_FS_02C_DECISION.png
+                   on: The decision.
+               NEW_V8_FS_02D_RESULT.png
+                   on: The result.
+           RETURN: camera returns at THE IMPORTANT BOUNDARY
 
-  PARA 3   MODE: CAMERA
-           And the method. How do you know the result was real? Those...
+  PARA 3   MODE: FULL SCREEN, held from V8-T02
+           The voice continues under it.
+           ACTIVATE HERE:
+               NEW_V8_FS_02E_MECHANISM.png
+                   on: And the method.
+           RETURN: camera returns at THE IMPORTANT BOUNDARY
 
 SECTION 5  THE IMPORTANT BOUNDARY
 
@@ -159,6 +156,8 @@ SECTION 5  THE IMPORTANT BOUNDARY
                    on: I need to be very clear. Keeping proof does not
                    on: mean taking company property. Do not send
                    on: confidential documents to yourself.
+           SOUND: S3, One brief stinger.
+           ACCENT WORD: none separately specified
            RETURN: camera returns at the end of the paragraph
 
   PARA 2   MODE: FULL SCREEN   [V8-C09]

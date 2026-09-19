@@ -30,6 +30,24 @@ EVERY SOUND EVENT, IN SPOKEN ORDER
           No separate accent word is specified for this event.
       TREATMENT: S1, one muted lock or click on 'You cannot.'
 
+  V8-T02   TEACHING
+      LOCATION: section 4, FIVE THINGS THAT CAN DISAPPEAR, paragraph 1
+      VISUAL ENTERS ON:
+          you can lose five useful details.
+      THE ACCENT LANDS ON THIS EXACT WORD:
+          The baseline.
+      TREATMENT: S2, one soft click on the first field only
+
+  V8-C08   CUE
+      LOCATION: section 5, THE IMPORTANT BOUNDARY, paragraph 1
+      VISUAL ENTERS ON:
+          I need to be very clear. Keeping proof does not mean
+          taking company property. Do not send confidential
+          documents to yourself.
+      THE ACCENT LANDS ON: the visual entry above.
+          No separate accent word is specified for this event.
+      TREATMENT: S3, One brief stinger.
+
   V8-T03   TEACHING
       LOCATION: section 6, WHAT TO WRITE DOWN, paragraph 1
       VISUAL ENTERS ON:
@@ -47,7 +65,7 @@ EVERY SOUND EVENT, IN SPOKEN ORDER
           No separate accent word is specified for this event.
       TREATMENT: No accent. The hook already used the lock sound and this is the same picture returning.
 
-  3 sound events in this video. Every one is a single event with
+  5 sound events in this video. Every one is a single event with
   one visual entry and at most one accent word.
 
 ------------------------------------------------------------------------------

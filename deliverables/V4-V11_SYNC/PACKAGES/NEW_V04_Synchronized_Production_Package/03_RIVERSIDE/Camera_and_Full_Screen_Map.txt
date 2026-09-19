@@ -81,7 +81,7 @@ SECTION 3  INTRODUCTION   [restored intro]
 
 SECTION 4  THE PROBLEM
 
-  PARA 1   MODE: FULL SCREEN   [V4-C05]
+  PARA 1   MODE: FULL SCREEN   [V4-C06]
            ENTER ON: We talk a lot about which tasks AI can do. I think we also
                       need to talk about what people used to learn while doing
                       those tasks. A task can be boring and still teach you
@@ -114,7 +114,7 @@ SECTION 5  THIS IS NOT AN ANTI-AI ARGUMENT
   PARA 1   MODE: CAMERA
            I am not saying we should keep pointless work just because...
 
-  PARA 2   MODE: FULL SCREEN   [V4-C06]
+  PARA 2   MODE: FULL SCREEN   [V4-C07]
            ENTER ON: My question is not, “Should AI do the task?” My question
                       is: “If AI does the task, what replaces the learning?”
            LEAVE ON: My question is not, “Should AI do the task?” My question
@@ -129,36 +129,44 @@ SECTION 5  THIS IS NOT AN ANTI-AI ARGUMENT
 
 SECTION 6  THREE THINGS TO WATCH
 
-  PARA 1   MODE: FULL SCREEN   [V4-C07]
-           ENTER ON: I would watch three things. First, exposure. Does the
-                      person still see enough examples to learn the pattern?
-           LEAVE ON: I would watch three things. First, exposure. Does the
-                      person still see enough examples to learn the pattern?
+  PARA 1   MODE: FULL SCREEN   [V4-T01]
+           SPANS PARAGRAPHS 1 TO 3
+           ON-SCREEN: TRUE FULL-SCREEN TEACHING | EXPOSURE /
+                      OWNERSHIP / FEEDBACK
+           ENTER ON: I would watch three things.
+           LEAVE ON: It has to be built over time.
+           (the exit wording is in paragraph 3)
            ASSET FAMILY: NEW_V4_FS_05_THREE_THINGS
            STATES, WITH THE WORDS THEY ACTIVATE ON:
                NEW_V4_FS_05_THREE_THINGS.png   paragraph 1
-                   on: I would watch three things. First, exposure. Does
-                   on: the person still see enough examples to learn the
-                   on: pattern?
+                   on: I would watch three things.
                NEW_V4_FS_05A_EXPOSURE.png   paragraph 1
-                   on: I would watch three things. First, exposure. Does
-                   on: the person still see enough examples to learn the
-                   on: pattern?
-               NEW_V4_FS_05B_OWNERSHIP.png   paragraph 1
-                   on: I would watch three things. First, exposure. Does
-                   on: the person still see enough examples to learn the
-                   on: pattern?
-               NEW_V4_FS_05C_FEEDBACK.png   paragraph 1
-                   on: I would watch three things. First, exposure. Does
-                   on: the person still see enough examples to learn the
-                   on: pattern?
-           RETURN: camera returns at the end of the paragraph
+                   on: First, exposure.
+               NEW_V4_FS_05B_OWNERSHIP.png   paragraph 2
+                   on: Second, ownership.
+               NEW_V4_FS_05C_FEEDBACK.png   paragraph 3
+                   on: Third, feedback.
+           SOUND: S2, one quiet accent at OWNERSHIP. Not three clicks for three bullets.
+           ACCENT WORD: Second, ownership.
+           RETURN: camera returns at A SIMPLE EXAMPLE
+           NOTE: One term per paragraph, on the words that name it.
+                 The three were previously all assigned to the
+                 paragraph that names the first, which put the
+                 accent word outside its own scene.
 
-  PARA 2   MODE: CAMERA
-           Second, ownership. Do they still have to make a real choic...
+  PARA 2   MODE: FULL SCREEN, held from V4-T01
+           The voice continues under it.
+           ACTIVATE HERE:
+               NEW_V4_FS_05B_OWNERSHIP.png
+                   on: Second, ownership.
+           RETURN: camera returns at A SIMPLE EXAMPLE
 
-  PARA 3   MODE: CAMERA
-           Third, feedback. When the answer is wrong, do they underst...
+  PARA 3   MODE: FULL SCREEN, held from V4-T01
+           The voice continues under it.
+           ACTIVATE HERE:
+               NEW_V4_FS_05C_FEEDBACK.png
+                   on: Third, feedback.
+           RETURN: camera returns at A SIMPLE EXAMPLE
 
 SECTION 7  A SIMPLE EXAMPLE
 
@@ -270,6 +278,8 @@ SECTION 12  TRY THIS ON ONE TASK
                NEW_V4_FS_10_THREE_COLUMNS.png   paragraph 1
                    on: Pick one task AI now helps you do. Make three
                    on: columns: BEFORE AI. WITH AI. STILL MINE.
+           SOUND: S4, Show one usable three-column page. Populate it only from the analyst example: choose assumptions / build first model / test and explain. Keep the example conditional. Sound on STILL MINE.
+           ACCENT WORD: STILL MINE
            RETURN: camera returns at the end of the paragraph
 
   PARA 2   MODE: CAMERA
@@ -285,8 +295,19 @@ SECTION 13  TAKEAWAY VALUE
 
 SECTION 14  STORY LOOP PAYOFF
 
-  PARA 1   MODE: CAMERA
-           So come back to the question from the beginning: if the to...
+  PARA 1   MODE: CAMERA   [V4-P05]
+           ON-SCREEN: CAMERA, THEN WORKING-PAGE CALLBACK | WHAT AM I
+                      STILL PRACTICING?
+           ENTER ON: So come back to the question from the beginning:
+           LEAVE ON: you are reading what is happening to the experience
+                      underneath the task.
+           ASSET: none. Camera, with any editorial text over it.
+           SOUND: S5, One brief stinger.
+           ACCENT WORD: none separately specified
+           RETURN: stays on camera into TAKEAWAY VALUE
+           NOTE: The brief returns to the opening question on the
+                 same visual motif and shows the finished note, not
+                 a celebratory result.
 
 SECTION 15  CLOSE
 

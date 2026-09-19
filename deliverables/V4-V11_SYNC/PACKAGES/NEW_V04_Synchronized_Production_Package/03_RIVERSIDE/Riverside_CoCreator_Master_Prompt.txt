@@ -4,7 +4,7 @@ NEW PUBLIC V4  |  RIVERSIDE CO-CREATOR MASTER PROMPT
 
 AI Took the Task. Who Gets the Experience?
 Thumbnail: WHO LEARNS NOW?
-Generated Saturday, September 19, 2026 | 6:36 AM CT
+Generated Saturday, September 19, 2026 | 7:08 AM CT
 
 1,036 spoken words. Planning estimate 7:08 to 7:58 at 130 to
 145 words per minute, provisional and arithmetic only. Nothing
@@ -118,7 +118,7 @@ THE EVENT LIST
           Reveal the question once. The consequence is hers, on
           camera.
 
-  V4-C05  |  FULL SCREEN  |  CUE
+  V4-C06  |  FULL SCREEN  |  CUE
       LOCATION: section 4 THE PROBLEM, paragraph 1
       ENTER ON THESE WORDS:
           We talk a lot about which tasks AI can do. I think we
@@ -147,7 +147,7 @@ THE EVENT LIST
       SOUND: none.
       RETURN: camera returns at the end of the paragraph
 
-  V4-C06  |  FULL SCREEN  |  CUE
+  V4-C07  |  FULL SCREEN  |  CUE
       LOCATION: section 5 THIS IS NOT AN ANTI-AI ARGUMENT, paragraph 2
       ENTER ON THESE WORDS:
           My question is not, “Should AI do the task?” My question
@@ -164,34 +164,33 @@ THE EVENT LIST
       SOUND: none.
       RETURN: camera returns at the end of the paragraph
 
-  V4-C07  |  FULL SCREEN  |  CUE
-      LOCATION: section 6 THREE THINGS TO WATCH, paragraph 1
+  V4-T01  |  FULL SCREEN  |  TEACHING
+      LOCATION: section 6 THREE THINGS TO WATCH, paragraphs 1 to 3
+      ON-SCREEN TEXT:
+          TRUE FULL-SCREEN TEACHING | EXPOSURE / OWNERSHIP /
+          FEEDBACK
       ENTER ON THESE WORDS:
-          I would watch three things. First, exposure. Does the
-          person still see enough examples to learn the pattern?
-      LEAVE ON THESE WORDS, paragraph 1:
-          I would watch three things. First, exposure. Does the
-          person still see enough examples to learn the pattern?
+          I would watch three things.
+      LEAVE ON THESE WORDS, paragraph 3:
+          It has to be built over time.
       ASSET FAMILY: NEW_V4_FS_05_THREE_THINGS
       STATES, WITH THE WORDS THEY ACTIVATE ON:
           NEW_V4_FS_05_THREE_THINGS.png   paragraph 1
-              on: I would watch three things. First, exposure. Does
-              on: the person still see enough examples to learn the
-              on: pattern?
+              on: I would watch three things.
           NEW_V4_FS_05A_EXPOSURE.png   paragraph 1
-              on: I would watch three things. First, exposure. Does
-              on: the person still see enough examples to learn the
-              on: pattern?
-          NEW_V4_FS_05B_OWNERSHIP.png   paragraph 1
-              on: I would watch three things. First, exposure. Does
-              on: the person still see enough examples to learn the
-              on: pattern?
-          NEW_V4_FS_05C_FEEDBACK.png   paragraph 1
-              on: I would watch three things. First, exposure. Does
-              on: the person still see enough examples to learn the
-              on: pattern?
-      SOUND: none.
-      RETURN: camera returns at the end of the paragraph
+              on: First, exposure.
+          NEW_V4_FS_05B_OWNERSHIP.png   paragraph 2
+              on: Second, ownership.
+          NEW_V4_FS_05C_FEEDBACK.png   paragraph 3
+              on: Third, feedback.
+      SOUND: S2, one quiet accent at OWNERSHIP. Not three clicks for three bullets.
+      ACCENT WORD: Second, ownership.
+      RETURN: camera returns at A SIMPLE EXAMPLE
+      NOTE:
+          One term per paragraph, on the words that name it. The
+          three were previously all assigned to the paragraph that
+          names the first, which put the accent word outside its
+          own scene.
 
   V4-T02  |  FULL SCREEN  |  TEACHING
       LOCATION: section 7 A SIMPLE EXAMPLE, paragraph 2
@@ -291,8 +290,28 @@ THE EVENT LIST
           NEW_V4_FS_10_THREE_COLUMNS.png   paragraph 1
               on: Pick one task AI now helps you do. Make three
               on: columns: BEFORE AI. WITH AI. STILL MINE.
-      SOUND: none.
+      SOUND: S4, Show one usable three-column page. Populate it only from the analyst example: choose assumptions / build first model / test and explain. Keep the example conditional. Sound on STILL MINE.
+      ACCENT WORD: STILL MINE
       RETURN: camera returns at the end of the paragraph
+
+  V4-P05  |  CAMERA  |  PAYOFF
+      LOCATION: section 14 STORY LOOP PAYOFF, paragraph 1
+      ON-SCREEN TEXT:
+          CAMERA, THEN WORKING-PAGE CALLBACK | WHAT AM I STILL
+          PRACTICING?
+      ENTER ON THESE WORDS:
+          So come back to the question from the beginning:
+      LEAVE ON THESE WORDS, paragraph 1:
+          you are reading what is happening to the experience
+          underneath the task.
+      ASSET: none. Camera, with any editorial text over it.
+      SOUND: S5, One brief stinger.
+      ACCENT WORD: none separately specified; the sound lands on the entry
+      RETURN: stays on camera into TAKEAWAY VALUE
+      NOTE:
+          The brief returns to the opening question on the same
+          visual motif and shows the finished note, not a
+          celebratory result.
 
   V4-C12  |  FULL SCREEN  |  CUE
       LOCATION: section 15 CLOSE, paragraph 1

@@ -48,6 +48,24 @@ def E(eid, section, para, mode, enter, leave, ret, para_out=None,
 # --------------------------------------------------------------- V4 to V6
 TEACHING = {
  4: [
+  E("V4-T01", 5, 0, FULL,
+    "I would watch three things.",
+    "It has to be built over time.",
+    "camera returns at A SIMPLE EXAMPLE",
+    para_out=2, family="NEW_V4_FS_05_THREE_THINGS",
+    states=[_st("NEW_V4_FS_05_THREE_THINGS",
+                "I would watch three things.", 0),
+            _st("NEW_V4_FS_05A_EXPOSURE", "First, exposure.", 0),
+            _st("NEW_V4_FS_05B_OWNERSHIP", "Second, ownership.", 1),
+            _st("NEW_V4_FS_05C_FEEDBACK", "Third, feedback.", 2)],
+    sound=dict(word="Second, ownership.",
+               note="S2, one quiet accent at OWNERSHIP. Not three clicks "
+                    "for three bullets."),
+    display="TRUE FULL-SCREEN TEACHING  |  EXPOSURE / OWNERSHIP / "
+            "FEEDBACK",
+    note="One term per paragraph, on the words that name it. The three "
+         "were previously all assigned to the paragraph that names the "
+         "first, which put the accent word outside its own scene."),
   E("V4-T02", 6, 1, FULL,
     "Now imagine AI builds the first model.",
     "the learning may have moved to a different part of the work.",
@@ -138,6 +156,24 @@ TEACHING = {
                 "business analytics, and even Microsoft Access", 1)],
     display="TRUE FULL-SCREEN POSTING WALKTHROUGH  |  THE PROOF THEY "
             "WOULD NEED TO SEE"),
+  E("V6-T03", 10, 0, FULL,
+    "Take one job description you are actually thinking about.",
+    "Now you are reading the job instead of being impressed or scared by "
+    "the label.",
+    "camera returns at TAKEAWAY VALUE",
+    para_out=1, family="NEW_V6_FS_20_CTA",
+    states=[_st("NEW_V6_FS_20A_WRITE_FOUR_LINES",
+                "Write four lines: Problem. Authority. Proof. Real gap.",
+                0),
+            _st("NEW_V6_FS_20B_STRONGEST_VERB",
+                "Then circle the strongest verbs in the posting.", 1)],
+    sound=dict(word="Take one job description you are actually thinking "
+                    "about.",
+               note="S5, one accent as the working page appears"),
+    display="TRUE FULL-SCREEN WORKING PAGE  |  PROBLEM / AUTHORITY / "
+            "PROOF / REAL GAP",
+    note="The second instruction is spoken in the next paragraph, so the "
+         "page is held rather than completed early."),
   E("V6-T02", 6, 1, FULL,
     "A global nonprofit was hiring a Director of Global Talent "
     "Acquisition.",
@@ -210,6 +246,27 @@ TEACHING.update({
          "in paragraph 2. The card enters with the instruction."),
  ],
  8: [
+  E("V8-T02", 3, 0, FULL,
+    "you can lose five useful details.",
+    "Those details turn a memory into something another person can "
+    "understand and judge.",
+    "camera returns at THE IMPORTANT BOUNDARY",
+    para_out=2, family="NEW_V8_FS_02_FIVE_KINDS",
+    states=[_st("NEW_V8_FS_02_FIVE_KINDS",
+                "you can lose five useful details.", 0),
+            _st("NEW_V8_FS_02A_BASELINE", "The baseline.", 0),
+            _st("NEW_V8_FS_02B_SCOPE", "The scope.", 0),
+            _st("NEW_V8_FS_02C_DECISION", "The decision.", 1),
+            _st("NEW_V8_FS_02D_RESULT", "The result.", 1),
+            _st("NEW_V8_FS_02E_MECHANISM", "And the method.", 2)],
+    sound=dict(word="The baseline.",
+               note="S2, one soft click on the first field only"),
+    display="TRUE FULL-SCREEN NOTE  |  BASELINE / SCOPE / DECISION / "
+            "RESULT / METHOD",
+    note="Five fields across three paragraphs, one active at a time. "
+         "They were previously all assigned to the first paragraph, "
+         "which showed the decision and the result before they were "
+         "spoken."),
   E("V8-T03", 5, 0, FULL,
     "You can record the work in your own words.",
     "“Measured the result using Y.”",
@@ -394,6 +451,87 @@ TEACHING.update({
  ],
 })
 
+# The story-loop payoffs the briefs treat as camera callbacks. Each names
+# a numbered accent, and none of them had an event at all, so the accent
+# had nowhere to attach.
+CALLBACK = {
+ 4: E("V4-P05", 13, 0, CAMERA,
+      "So come back to the question from the beginning:",
+      "you are reading what is happening to the experience underneath "
+      "the task.",
+      "stays on camera into TAKEAWAY VALUE",
+      display="CAMERA, THEN WORKING-PAGE CALLBACK  |  WHAT AM I STILL "
+              "PRACTICING?",
+      kind="PAYOFF",
+      note="The brief returns to the opening question on the same visual "
+           "motif and shows the finished note, not a celebratory "
+           "result."),
+ 5: E("V5-P05", 13, 0, CAMERA,
+      "Are they asking for more of your capacity, or expanding your "
+      "capability?",
+      "you can stop confusing being needed with moving forward.",
+      "stays on camera for the boundary",
+      display="CAMERA  |  CAPACITY OR CAPABILITY",
+      kind="PAYOFF",
+      note="Pays off the opening work-request cards with the "
+           "distinction, then returns to camera for the boundary."),
+ 7: E("V7-P05", 13, 0, CAMERA,
+      "If the bigger role opened tomorrow, what could someone already "
+      "point to?",
+      "that tells you something about the environment too.",
+      "stays on camera",
+      display="CAMERA + BRIEF QUESTION CALLBACK  |  WHAT COULD THEY "
+              "POINT TO?",
+      kind="PAYOFF",
+      note="The question from the story loop, asked again now that the "
+           "viewer can answer it."),
+ 9: E("V9-P05", 15, 0, CAMERA,
+      "The question was never simply, \u201cDo my skills transfer?\u201d",
+      "what will this new context still ask me to build?",
+      "stays on camera",
+      display="CAMERA + WORKING-PAGE CALLBACK  |  WHAT DOES THIS CONTEXT "
+              "STILL REQUIRE?",
+      kind="PAYOFF",
+      note="The four columns answered, rather than listed again."),
+}
+
+
+def _named_accents(n):
+    """Every numbered accent the brief specifies, with where it lands.
+
+    The briefs number five accents per video. Regenerating the sound map
+    from the event list dropped the ones whose event was built from a
+    plain cue rather than written by hand, which left four videos below
+    the stated band. These are read back out of the brief, so the map
+    carries the accents the brief asked for and no others.
+    """
+    import re as _re
+    sys.path.insert(0, "/home/user/temidayoafonja-site/deliverables/"
+                       "V4-V11_EDIT_SYNC/build")
+    import briefs as _B
+    import locate as _LOC
+    out = []
+    for x in _B.read(n)["beats"]:
+        m = _re.search(r"\bS(\d)\b", x["head"])
+        if not m or not x["trigger"]:
+            continue
+        r = _LOC.resolve(n, x["trigger"], x["head"])
+        if not r:
+            continue
+        word = _LOC.accent_word(x)
+        note = None
+        for y in [x["head"]] + list(x["note"]):
+            if _re.search(r"stinger|accent|click|sound on|soft click",
+                          y, _re.I):
+                note = y
+                break
+        out.append(dict(s="S" + m.group(1), section=r["section"],
+                        para=r["para"], word=word,
+                        entry=_LOC.remap(n, x["trigger"]),
+                        note=note or "One brief stinger."))
+    return out
+
+
 # Families whose single-paragraph cue is superseded by an event above.
 def _covered(n):
     out = {}
@@ -435,8 +573,22 @@ def events(n):
                              for x in c["states"]],
                      kind="END" if c["key"].endswith("WATCH_NEXT")
                      else "CUE"))
+    if n in CALLBACK:
+        out.append(CALLBACK[n])
     out.sort(key=lambda e: (e["section"], e["para"],
                             0 if e["kind"] == "OPENING" else 1))
+    # Every accent the brief numbers is attached to the event that covers
+    # its paragraph. An event that already carries a hand-written accent
+    # keeps it: this only restores the ones that had nowhere to go.
+    for a_ in _named_accents(n):
+        cover = [e for e in out
+                 if e["section"] == a_["section"]
+                 and e["para"] <= a_["para"] <= e["para_out"]]
+        if not cover or any(e["sound"] for e in cover):
+            continue
+        e = cover[-1]
+        e["sound"] = dict(word=a_["word"],
+                          note="%s, %s" % (a_["s"], a_["note"]))
     return out
 
 

@@ -30,6 +30,14 @@ EVERY SOUND EVENT, IN SPOKEN ORDER
           No separate accent word is specified for this event.
       TREATMENT: S1, one brief stinger on 'wasted'
 
+  V4-T01   TEACHING
+      LOCATION: section 6, THREE THINGS TO WATCH, paragraph 1
+      VISUAL ENTERS ON:
+          I would watch three things.
+      THE ACCENT LANDS ON THIS EXACT WORD:
+          Second, ownership.
+      TREATMENT: S2, one quiet accent at OWNERSHIP. Not three clicks for three bullets.
+
   V4-T02   TEACHING
       LOCATION: section 7, A SIMPLE EXAMPLE, paragraph 2
       VISUAL ENTERS ON:
@@ -38,7 +46,24 @@ EVERY SOUND EVENT, IN SPOKEN ORDER
           the learning may have moved
       TREATMENT: S3, one brief stinger as the card lands
 
-  2 sound events in this video. Every one is a single event with
+  V4-C11   CUE
+      LOCATION: section 12, TRY THIS ON ONE TASK, paragraph 1
+      VISUAL ENTERS ON:
+          Pick one task AI now helps you do. Make three columns:
+          BEFORE AI. WITH AI. STILL MINE.
+      THE ACCENT LANDS ON THIS EXACT WORD:
+          STILL MINE
+      TREATMENT: S4, Show one usable three-column page. Populate it only from the analyst example: choose assumptions / build first model / test and explain. Keep the example conditional. Sound on STILL MINE.
+
+  V4-P05   PAYOFF
+      LOCATION: section 14, STORY LOOP PAYOFF, paragraph 1
+      VISUAL ENTERS ON:
+          So come back to the question from the beginning:
+      THE ACCENT LANDS ON: the visual entry above.
+          No separate accent word is specified for this event.
+      TREATMENT: S5, One brief stinger.
+
+  5 sound events in this video. Every one is a single event with
   one visual entry and at most one accent word.
 
 ------------------------------------------------------------------------------
