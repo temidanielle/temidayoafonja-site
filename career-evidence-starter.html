@@ -187,6 +187,12 @@
 .ces-ladder { margin-top: 30px; border-top: 1px solid var(--line-warm); padding-top: 22px; max-width: 66ch; }
 .ces-ladder p { font-size: 15px; line-height: 1.7; color: var(--muted-warm); }
 .ces-ladder strong { color: var(--navy); }
+/* Two named classes, because `.lean-page p { margin: 0 }` and `.ces-sec p` are
+   both (0,1,1) and would otherwise decide these. `p + p` and `.ces-ladder-next a`
+   outrank them, so the second paragraph keeps its gap and the one link in this
+   block stays visible instead of inheriting the muted body colour. */
+.ces-ladder p + p { margin-top: 14px; }
+.ces-ladder-next a { color: var(--navy); text-decoration: underline; text-underline-offset: 2px; }
 
 /* ── Warmer register, carried over from the PDF ──
    These four devices exist on the sheet itself: the gold descriptor label on
@@ -407,17 +413,22 @@
           <li>Not a resume-writing service</li>
           <li>Not a job-search course</li>
           <li>It does not tell you whether to stay in or leave your job</li>
-          <li>It is not the full Keep the Proof system, and does not include the reusable Career Evidence Ledger</li>
+          <li>It is not the full Keep the Proof system, and does not include the guided handbook or your ongoing Professional Record</li>
         </ul>
       </div>
     </div>
-    <!-- The ladder line named all three products but linked none of them. Links
-         added 2026-09-17: Keep the Proof had no inbound link from anywhere on
-         the site, and the Field Kit page had one, from a page nothing else
-         reached. The Career Move Review is named last and marked optional,
-         because nothing here should suggest the Starter is incomplete alone. -->
+    <!-- Resolved 2026-09-19, merging Keep the Proof V2 (#120) into this branch.
+         Both sides had rewritten this paragraph. The V2 wording below stands
+         exactly as main has it: unlinked, and describing "the paid system". It
+         is the newer approved copy and nothing here reverts any part of it.
+
+         The Career Move Review is deliberately NOT folded back into that
+         sentence. It sits in its own paragraph, named last and conditional on
+         already having a move in view, because nothing here should suggest the
+         Starter is incomplete on its own. -->
     <div class="ces-ladder">
-      <p><strong>This Starter</strong> proves one thing. <strong><a href="/keep-the-proof">Keep the Proof</a></strong>, the paid 60-minute system, builds and maintains the whole record. <strong><a href="/fieldkit">The Capability Formation Field Kit</a></strong> reads what your current position is building and whether it travels. And if you already have a particular move in view, a <a href="/career-move-review">Career Move Review</a> reads your evidence against it with you. None of them is required. This Starter works on its own.</p>
+      <p><strong>This Starter</strong> proves one thing. <strong>Keep the Proof</strong>, the paid system, builds and maintains the whole record. <strong>The Capability Formation Field Kit</strong> reads what your current position is building and whether it travels.</p>
+      <p class="ces-ladder-next">If you are considering a specific move and want a private review of what travels, what does not, what you can prove, and what the next context still requires, you can <a href="/career-move-review">request a Career Move Review</a>.</p>
     </div>
   </div>
 </section>
@@ -431,7 +442,7 @@
       <div>
         <h2 style="font-size:clamp(24px,3vw,32px);">Temidayo Afonja</h2>
         <p>Career Portability Advisor and founder of The Density Group, a Capability Formation advisory firm. Her work draws on nearly two decades of practice across Big 4 consulting, global life sciences and high-growth technology.</p>
-        <p>The Starter uses the same method as Keep the Proof, the paid Career Evidence System, applied to a single piece of work.</p>
+        <p>The Starter uses the same method as Keep the Proof, the paid system, applied to a single piece of work.</p>
       </div>
     </div>
   </div>
