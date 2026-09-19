@@ -314,11 +314,13 @@
 <section class="cmr-sec">
   <div class="lean-wrap">
     <span class="lean-eyebrow">What it costs</span>
-    <h2>Pilot rate for the first five Career Move Reviews.</h2>
+    <!-- One public price. No second figure, no introductory framing, no
+         first-five qualifier, and nothing describing $500 as temporary.
+         Operator decision 2026-09-18. -->
+    <h2>What it costs.</h2>
     <div class="cmr-price">
-      <div class="amount">$495</div>
-      <p>$495 for the first five Career Move Reviews. The standard rate is $750.</p>
-      <p>The pilot rate reflects that these first five clients are helping Temidayo test and refine the format against real career decisions.</p>
+      <div class="amount">$500</div>
+      <p>$500 for a Career Move Review.</p>
     </div>
     <p style="margin-top:24px;">Payment is not taken when you request a review. You submit a request, Temidayo reads it, and if it is a fit you receive the booking and payment details then. If it is not a fit, Temidayo will let you know and, where possible, point you toward a more useful next step.</p>
   </div>
@@ -343,48 +345,54 @@
       </div>
 
       <div class="cd-card">
+        <!-- Every maxlength below is the same number as the cap the function
+             enforces on the same field, in netlify/functions/career-move-review-request.js.
+             The two have to be edited together. The attribute keeps a person
+             from typing past the cap; the function refuses anything that
+             arrives over it rather than trimming it to fit, so nobody's words
+             are silently altered on the way to the destination. -->
         <form class="cd-form" id="cmrForm" novalidate>
           <div class="cd-field">
             <label for="cmrFirst">First name</label>
-            <input id="cmrFirst" name="first_name" type="text" autocomplete="given-name" required aria-required="true" aria-describedby="cmrFirstError">
+            <input id="cmrFirst" name="first_name" type="text" maxlength="120" autocomplete="given-name" required aria-required="true" aria-describedby="cmrFirstError">
             <p class="cd-error" id="cmrFirstError"></p>
           </div>
 
           <div class="cd-field">
             <label for="cmrEmail">Email</label>
-            <input id="cmrEmail" name="email" type="email" autocomplete="email" required aria-required="true" aria-describedby="cmrEmailError">
+            <input id="cmrEmail" name="email" type="email" maxlength="254" autocomplete="email" required aria-required="true" aria-describedby="cmrEmailError">
             <p class="cd-error" id="cmrEmailError"></p>
           </div>
 
           <div class="cd-field">
             <label for="cmrYears">Roughly how long have you been working? (optional)</label>
-            <input id="cmrYears" name="years_experience" type="text" autocomplete="off" aria-describedby="cmrYearsNote">
+            <input id="cmrYears" name="years_experience" type="text" maxlength="300" autocomplete="off" aria-describedby="cmrYearsNote">
             <p class="cd-note" id="cmrYearsNote">For example, "about 14 years, mostly in operations."</p>
           </div>
 
           <div class="cd-field">
             <label for="cmrMove">What move are you considering?</label>
-            <textarea id="cmrMove" name="target_move" required aria-required="true" aria-describedby="cmrMoveError cmrMoveNote"></textarea>
+            <textarea id="cmrMove" name="target_move" maxlength="2000" required aria-required="true" aria-describedby="cmrMoveError cmrMoveNote"></textarea>
             <p class="cd-note" id="cmrMoveNote">The role, the function, the industry, or the decision you are weighing. The more specific, the more useful the review.</p>
             <p class="cd-error" id="cmrMoveError"></p>
           </div>
 
           <div class="cd-field">
             <label for="cmrLinkedIn">LinkedIn profile</label>
-            <input id="cmrLinkedIn" name="evidence_link" type="url" inputmode="url" autocomplete="url" placeholder="https://www.linkedin.com/in/..." aria-describedby="cmrEvidenceError cmrLinkedInNote">
+            <input id="cmrLinkedIn" name="evidence_link" type="url" maxlength="300" inputmode="url" autocomplete="url" placeholder="https://www.linkedin.com/in/..." aria-describedby="cmrEvidenceError cmrLinkedInNote">
             <p class="cd-note" id="cmrLinkedInNote">Either your LinkedIn profile or the summary below. One of the two is needed so the request can be assessed. Please do not attach or paste a resume here; if your request is accepted you can send one by reply.</p>
             <p class="cd-error" id="cmrEvidenceError"></p>
           </div>
 
           <div class="cd-field">
             <label for="cmrSummary">Or a short summary of your background</label>
-            <textarea id="cmrSummary" name="evidence_summary" aria-describedby="cmrSummaryNote"></textarea>
+            <textarea id="cmrSummary" name="evidence_summary" maxlength="2000" aria-describedby="cmrSummaryNote"></textarea>
             <p class="cd-note" id="cmrSummaryNote">A few lines is enough. Please leave out anything confidential about your employer or colleagues.</p>
           </div>
 
           <div class="cd-field">
             <label for="cmrTiming">Timing and constraints (optional)</label>
-            <textarea id="cmrTiming" name="timing" aria-describedby="cmrTimingNote"></textarea>
+            <textarea id="cmrTiming" name="timing" maxlength="2000" aria-describedby="cmrTimingNote"></textarea>
             <p class="cd-note" id="cmrTimingNote">Anything that shapes the decision: a deadline, a visa, a location, a notice period, a reorganization underway.</p>
           </div>
 
@@ -492,6 +500,7 @@
         <li><a href="for-professionals.html">Career Growth Assessment</a></li>
         <li><a href="/career-move-review">Career Move Review</a></li>
         <li><a href="book.html">Books &amp; Tools</a></li>
+        <li><a href="/keep-the-proof">Keep the Proof</a></li>
         <li><a href="https://temidayoafonja.substack.com" target="_blank" rel="noopener">Writing</a></li>
       </ul>
     </div>
@@ -504,11 +513,30 @@
   "use strict";
 
   /* The version of the privacy policy in force when a consent is recorded. It
-     is the "Last updated" date at the top of privacy.html, and the two must
-     always move together in the same commit. A consent record whose policy
-     version predates the wording the person actually read is not evidence of
-     anything. */
+     is the "Last updated" date at the top of privacy.html, and the three must
+     always move together in the same commit: this constant, the date in
+     privacy.html, and POLICY_VERSION in career-move-review-request.js. A
+     consent record whose policy version predates the wording the person
+     actually read is not evidence of anything, so the function refuses a
+     submission that does not carry the version in force rather than filing the
+     consent against wording the person may never have seen. */
   var POLICY_VERSION = "2026-08-18";
+
+  /* The same caps as the maxlength attributes on the fields and as the caps the
+     function enforces. maxlength only constrains what a person types or pastes.
+     A value set programmatically, by autofill or by a browser extension, is not
+     constrained by it, so the length is checked again here and a third time on
+     the server. */
+  var CAPS = { first: 120, email: 254, years: 300, move: 2000, linkedin: 300, summary: 2000, timing: 2000 };
+  var CAP_LABELS = {
+    first: "Your first name",
+    email: "Your email address",
+    years: "How long you have been working",
+    move: "The move you are considering",
+    linkedin: "Your LinkedIn profile URL",
+    summary: "Your summary",
+    timing: "Timing and constraints"
+  };
 
   var form = document.getElementById("cmrForm");
   if (!form) return;
@@ -558,6 +586,12 @@
     setError(els.move, errs.move, "");
     setError(els.linkedin, errs.evidence, "");
     setError(els.consent, errs.consent, "");
+    /* These three have no error paragraph of their own. Only a length failure
+       can mark them, and it reports through the form-level message, so the
+       state that needs clearing here is the aria-invalid flag. */
+    ["years", "summary", "timing"].forEach(function (k) {
+      if (els[k]) els[k].removeAttribute("aria-invalid");
+    });
     els.formError.textContent = "";
   }
 
@@ -592,6 +626,22 @@
     } else if (!link && !val(els.summary)) {
       setError(els.linkedin, errs.evidence, "Please add either your LinkedIn profile or a short summary of your background.");
       firstBad = firstBad || els.linkedin;
+    }
+
+    /* Length, checked in document order so the message names the first field
+       that is over. Reachable only when something other than typing put the
+       value there, because every one of these fields carries a maxlength. */
+    var order = ["first", "email", "years", "move", "linkedin", "summary", "timing"];
+    for (var i = 0; i < order.length; i++) {
+      var key = order[i];
+      if (val(els[key]).length > CAPS[key]) {
+        var el = els[key];
+        var errEl = key === "linkedin" ? errs.evidence : errs[key];
+        var message = CAP_LABELS[key] + " is longer than " + CAPS[key] + " characters. Please shorten it.";
+        if (errEl) setError(el, errEl, message);
+        else { els.formError.textContent = message; if (el) el.setAttribute("aria-invalid", "true"); }
+        firstBad = firstBad || el;
+      }
     }
 
     if (!els.consent.checked) {
@@ -668,6 +718,11 @@
           return;
         }
         if (r.status === 429) { fail("rate_limited", "That is a lot of requests from this connection. Please wait a few minutes and try again."); return; }
+        /* The privacy wording changed while this page sat open. The consent on
+           screen is a consent to wording that is no longer the current wording,
+           so the server refused it. Reloading is the whole fix, and saying so
+           is better than a generic failure the person cannot act on. */
+        if (r.status === 409) { fail("policy_version_stale", "The privacy wording has been updated since this page was opened. Please refresh the page and send your request again."); return; }
         /* The address here is the one already published elsewhere on this site,
            temidayo@thedensitygroup.com. No new address was introduced. The
            message deliberately tells the visitor NOT to send a resume or
@@ -678,6 +733,7 @@
         if (r.status === 400 && r.data && r.data.error === "evidence_required") { fail("evidence_required", "Please add either your LinkedIn profile or a short summary of your background."); return; }
         if (r.status === 400 && r.data && r.data.error === "linkedin_url_invalid") { fail("linkedin_url_invalid", "That does not look like a LinkedIn profile URL. Please check it, or use the summary field instead."); return; }
         if (r.status === 400 && r.data && r.data.error === "target_move_required") { fail("target_move_required", "Please describe the move you are considering."); return; }
+        if (r.status === 400 && r.data && r.data.error === "field_too_long") { fail("field_too_long", "One of your answers is longer than this form accepts. Please shorten it and try again."); return; }
         if (r.status === 400) { fail("invalid", "Something in the form was not accepted. Please check your details and try again."); return; }
         fail("failed", "Your request could not be sent. Please try again in a moment, or email temidayo@thedensitygroup.com.");
       })

@@ -108,10 +108,59 @@ follow. Whether `privacy.html` as written already covers this category of
 collection, and how long submissions are retained at the destination.
 
 The current `POLICY_VERSION` stamped on every submission is `2026-08-18`, which
-matches the "Last updated" date on `privacy.html`. **If the privacy policy is
-revised for this service, that constant must move in the same commit.** A
-consent record whose policy version predates the wording the person actually
-read is not evidence of anything.
+matches the "Last updated" date on `privacy.html`. A consent record whose policy
+version predates the wording the person actually read is not evidence of
+anything, so the version is verified rather than merely recorded: the function
+holds its own `POLICY_VERSION` and refuses any submission that does not carry
+it.
+
+**If the privacy policy is revised for this service, three things must move in
+the same commit:**
+
+1. the "Last updated" date in `privacy.html`
+2. `POLICY_VERSION` in `career-move-review.html`
+3. `POLICY_VERSION` in `netlify/functions/career-move-review-request.js`
+
+Changing the page without the function, or the reverse, makes the form refuse
+every submission with a 409 until they agree. That is the intended direction of
+failure, and it is visible immediately rather than silently mis-filing consents.
+
+Visitors who already had the page open when the policy changes are refused with
+that same 409 and told to refresh, because the consent on their screen is a
+consent to wording that is no longer current.
+
+### Form safeguards
+
+Four checks refuse a submission rather than accepting a degraded version of it.
+
+| Safeguard | Refuses | Status |
+|---|---|---|
+| Consent | Anything other than a literal `true`. Not a string, not a `1`, not a missing field | 400 |
+| Policy version | Missing | 400 |
+| Policy version | Present but not the version in force | 409 |
+| Consent timestamp | A value that does not parse as an instant | 400 |
+| Field length | Any field over its cap, refused rather than truncated | 400 |
+
+The field caps are held in three places that must agree: the `maxlength`
+attribute on each field, the `CAPS` table in the page script, and the `MAX_*`
+constants in the function.
+
+| Field | Cap |
+|---|---|
+| `first_name` | 120 |
+| `email` | 254 |
+| `years_experience` | 300 |
+| `target_move` | 2000 |
+| `evidence_link` | 300 |
+| `evidence_summary` | 2000 |
+| `timing` | 2000 |
+
+`maxlength` alone is not a safeguard. It constrains typing and pasting, but not
+a value set by autofill or a browser extension, and not a caller that never
+loads the page. The length is therefore checked again in the page script before
+submission and a third time in the function. The function refuses an over-length
+value instead of trimming it to fit: truncating would alter what the person
+wrote and then forward the altered text to Temidayo as though it were theirs.
 
 ### Handling of the written deliverable
 

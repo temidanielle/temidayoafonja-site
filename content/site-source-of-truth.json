@@ -208,18 +208,23 @@
       },
 
       "price": {
-        "pilot_usd": 495,
-        "pilot_display": "$495",
-        "pilot_terms": "The first five clients.",
-        "standard_usd": 750,
-        "standard_display": "$750",
-        "presentation_rule": "State the pilot price calmly and only where it is necessary. No countdown, no urgency banner, no artificial scarcity, no sale language. The page says what the price is now, how many places are at that price, and what it becomes afterwards.",
+        "usd": 500,
+        "display": "$500",
+        "approved": "2026-09-18",
+        "presentation_rule": "One public price. State it plainly and once per context. There is no second price anywhere on the site, and nothing frames $500 as temporary, introductory, discounted or about to change.",
+        "forbidden": [
+          "A pilot, introductory or founding rate",
+          "A first-five-clients qualifier of any kind",
+          "A second price shown alongside it, whether as a future price, a standard rate or a crossed-out figure",
+          "Any urgency, scarcity or countdown around the price",
+          "Describing $500 as temporary"
+        ],
+        "history": "Superseded a two-tier presentation of $495 for the first five clients and $750 thereafter, which was live on the branch but never published. Operator decision 2026-09-18: one public price, $500, current until explicitly changed.",
+        "distinct_from_retired_offer": "This $500 is NOT the retired Private Capability Position Read, which also carried $500. That service remains retired and must not return. The Career Move Review is a different service with a different scope, a written deliverable and qualification before payment. The shared figure is a coincidence of pricing, not a rename.",
         "approved_wording": {
-          "heading": "Pilot rate for the first five Career Move Reviews.",
-          "price_line": "$495 for the first five Career Move Reviews. The standard rate is $750.",
-          "rationale_line": "The pilot rate reflects that these first five clients are helping Temidayo test and refine the format against real career decisions.",
-          "not_a_fit_line": "If it is not a fit, Temidayo will let you know and, where possible, point you toward a more useful next step.",
-          "approved": "2026-09-18"
+          "heading": "What it costs.",
+          "price_line": "$500 for a Career Move Review.",
+          "not_a_fit_line": "If it is not a fit, Temidayo will let you know and, where possible, point you toward a more useful next step."
         }
       },
 

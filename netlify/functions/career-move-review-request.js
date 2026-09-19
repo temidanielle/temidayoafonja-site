@@ -30,6 +30,20 @@
 
    - No submission data is written anywhere the site serves. Nothing from this
      form touches the publish root.
+
+   Four things fail closed here. Each refuses the submission rather than
+   accepting a degraded version of it, and each says which one it was:
+
+     consent          Anything other than a literal true is no consent. Not a
+                      string, not a 1, not a missing field.        400
+     policy version   Missing, or not the version in force. A consent is a
+                      consent to specific published wording, so a submission
+                      that cannot name that wording is not recorded against it.
+                                                     400 missing, 409 stale
+     consent stamp    Must parse as an instant.                    400
+     field length     Over a cap is refused, never truncated, so nothing the
+                      person wrote is silently altered before being forwarded.
+                                                                   400
    ───────────────────────────────────────────────────────────────────────────── */
 
 // Same reasoning as career-evidence-starter-subscribe.js. The page that calls
@@ -50,17 +64,42 @@ const JSON_HEADERS = Object.assign({ "content-type": "application/json" }, CORS)
 // it cannot deliver. The value is never read into a response or a log.
 const REQUIRED_ENV = ["FORMSPREE_CAREER_MOVE_REVIEW"];
 
+// The version of the privacy policy in force. It is the "Last updated" date at
+// the top of privacy.html, and three places have to move together in the same
+// commit: this constant, that date, and POLICY_VERSION in
+// career-move-review.html. The consent below is a consent to a specific set of
+// published wording, so a submission that does not name the wording in force is
+// refused rather than filed against wording the person may never have seen.
+const POLICY_VERSION = "2026-08-18";
+
 // Field caps. A qualification form has no reason to accept more than this, and
 // an unbounded free-text field is where volume gets pushed into a destination.
+// Every one of these is also a maxlength attribute on the matching field in
+// career-move-review.html, and the two have to be edited together.
 const MAX_NAME = 120;
 const MAX_EMAIL = 254;
 const MAX_SHORT = 300;
 const MAX_LONG = 2000;
 
+// For values the site generates rather than the visitor writes, where trimming
+// to fit is the right answer: the honeypot, the policy version, the client's
+// consent stamp. None of these is forwarded as the person's own words.
 function str(v, max) {
   if (typeof v !== "string") return "";
   const s = v.trim();
   return s.length > max ? s.slice(0, max) : s;
+}
+
+// For everything the visitor writes. Returns null when the value is over its
+// cap, so the caller can refuse it. Truncating instead would quietly alter what
+// the person wrote and then forward the altered text to Temidayo as though it
+// were theirs, which is worse than declining it and saying so. A browser cannot
+// produce an over-length value here, because every field carries a maxlength;
+// anything that arrives over a cap did not come from the form.
+function bounded(v, max) {
+  if (typeof v !== "string") return "";
+  const s = v.trim();
+  return s.length > max ? null : s;
 }
 
 function validEmail(e) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e); }
@@ -106,13 +145,49 @@ exports.handler = async (event) => {
     return { statusCode: 422, headers: JSON_HEADERS, body: JSON.stringify({ error: "rejected" }) };
   }
 
-  const firstName = str(p.first_name, MAX_NAME);
-  const email = str(p.email, MAX_EMAIL);
-  const yearsExperience = str(p.years_experience, MAX_SHORT);
-  const targetMove = str(p.target_move, MAX_LONG);
-  const evidenceLink = str(p.evidence_link, MAX_SHORT);
-  const evidenceSummary = str(p.evidence_summary, MAX_LONG);
-  const timing = str(p.timing, MAX_LONG);
+  // ── Policy version ──
+  // Fails closed, and before the submission is read. A missing version is
+  // refused. A version that is not the one in force means the page was opened
+  // before the wording changed, which its own status distinguishes so the page
+  // can tell the person to reload instead of showing a generic failure. The
+  // expected value is returned because it is a published date on privacy.html,
+  // not a secret.
+  const clientPolicyVersion = str(p.policy_version, 40);
+  if (!clientPolicyVersion) {
+    return { statusCode: 400, headers: JSON_HEADERS, body: JSON.stringify({ error: "policy_version_required" }) };
+  }
+  if (clientPolicyVersion !== POLICY_VERSION) {
+    return {
+      statusCode: 409,
+      headers: JSON_HEADERS,
+      body: JSON.stringify({ error: "policy_version_stale", expected: POLICY_VERSION })
+    };
+  }
+
+  // ── Length ──
+  // Refused as a set, naming every field that is over, so a caller fixes all of
+  // them at once instead of one per round trip.
+  const fields = {
+    first_name: bounded(p.first_name, MAX_NAME),
+    email: bounded(p.email, MAX_EMAIL),
+    years_experience: bounded(p.years_experience, MAX_SHORT),
+    target_move: bounded(p.target_move, MAX_LONG),
+    evidence_link: bounded(p.evidence_link, MAX_SHORT),
+    evidence_summary: bounded(p.evidence_summary, MAX_LONG),
+    timing: bounded(p.timing, MAX_LONG)
+  };
+  const tooLong = Object.keys(fields).filter((k) => fields[k] === null);
+  if (tooLong.length) {
+    return { statusCode: 400, headers: JSON_HEADERS, body: JSON.stringify({ error: "field_too_long", fields: tooLong }) };
+  }
+
+  const firstName = fields.first_name;
+  const email = fields.email;
+  const yearsExperience = fields.years_experience;
+  const targetMove = fields.target_move;
+  const evidenceLink = fields.evidence_link;
+  const evidenceSummary = fields.evidence_summary;
+  const timing = fields.timing;
 
   if (!firstName) {
     return { statusCode: 400, headers: JSON_HEADERS, body: JSON.stringify({ error: "first_name_required" }) };
@@ -147,12 +222,17 @@ exports.handler = async (event) => {
     return { statusCode: 400, headers: JSON_HEADERS, body: JSON.stringify({ error: "consent_required" }) };
   }
 
-  const now = new Date();
-  // Stamped by the server. The client sends its own timestamp and policy
-  // version, and both are recorded, but the server's values are the record: a
-  // consent stamped only by the submitting browser is not evidence of anything.
-  const policyVersion = str(p.policy_version, 40);
+  // The browser's own stamp for the moment the consent was given. It is
+  // corroboration, not the record: the server's stamp below is the record,
+  // because a consent stamped only by the submitting browser is not evidence of
+  // anything. A value that cannot be parsed as an instant is refused rather
+  // than stored as text, since a timestamp nobody can read is not a timestamp.
   const consentStampClient = str(p.consent_timestamp, 40);
+  if (!consentStampClient || isNaN(Date.parse(consentStampClient))) {
+    return { statusCode: 400, headers: JSON_HEADERS, body: JSON.stringify({ error: "consent_timestamp_invalid" }) };
+  }
+
+  const now = new Date();
 
   const payload = {
     _subject: "Career Move Review request: " + firstName,
@@ -166,7 +246,9 @@ exports.handler = async (event) => {
     contact_consent: "true",
     contact_consent_timestamp_server: now.toISOString(),
     contact_consent_timestamp_client: consentStampClient,
-    policy_version_client: policyVersion,
+    // Verified against the gate above, so this is the wording in force and the
+    // wording the page showed, not merely what a client claimed.
+    policy_version: POLICY_VERSION,
     submitted_at: now.toISOString(),
     // Recorded so the pilot can be reconciled later. The page does not take
     // payment and this function never issues a booking link.
