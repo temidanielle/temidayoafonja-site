@@ -131,9 +131,9 @@ reuse under a personal-use license.
 
 **$49 — one price, instant access.**
 
-New to the method? A free six-page starter, *Keep the Proof: The 10-Minute Career
-Evidence Starter*, takes one accomplishment all the way through and gives you one
-portable Proof Line: https://temidayoafonja.com/career-evidence-starter
+New to the method? The free Career Evidence Starter helps you take one accomplishment
+all the way through and leave with one portable Proof Line:
+https://temidayoafonja.com/career-evidence-starter
 
 ---
 
