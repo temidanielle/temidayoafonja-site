@@ -1,0 +1,121 @@
+SEPTEMBER 23, 2026 - STAY OR LEAVE? CURRENT ASSET PACKAGE  (revision 4)
+Stay or Leave? - Live Career Growth Assessment
+Method: The Capability Position Read
+Wednesday, September 23, 2026  |  6:00-7:00 PM Central Time  |  Free  |  60 minutes
+
+STATUS: CANDIDATE. NOT FINAL.
+
+  Adobe Acrobat workbook behavior test .... PASSED, and still valid. The workbook
+                                            is byte-identical to the file that
+                                            passed on August 21, 2026.
+  Rehearsal 1 - timed content ............. OUTSTANDING
+  Rehearsal 2 - production ................ OUTSTANDING
+
+  All three gates are required. No asset here has been renamed from CANDIDATE to
+  FINAL, and none should be until both rehearsals pass. No rehearsal result is
+  recorded in this package, because none has been run.
+
+WHAT CHANGED IN THIS REVISION
+
+  DOCUMENTATION ONLY. The change log and QA report goes v2.0.10 -> v2.0.11. The
+  deck stays v2.0.7, the SOP stays v2.0.10, the checklist stays v1.3 and the
+  workbook is untouched. All four are byte-identical to the revision-3 package.
+
+  WHAT WAS CORRECTED. The visual-QA paragraph still said "The v2.0.9 export is
+  EXACTLY EIGHT PAGES" and described "pages 4 through 7 portrait". The shipped
+  preview is v2.0.10 and runs page 1 portrait, pages 2 and 3 landscape, pages 4
+  through 8 portrait. The paragraph now says that, and its claim is narrowed:
+  it is about the LibreOffice preview shipped here, not about .docx pagination
+  in general. A .docx carries no fixed page count, different renderers break
+  pages differently, and the SOP was NOT edited to force a count anywhere else.
+  What is asserted is that the shipped preview is eight pages, has no blank or
+  stub final page, and has been visually inspected. Page 8 carries thirty
+  substantive lines with body ink reaching 42 percent down the page.
+
+  The revision-3 content stands unchanged and is recorded in the change log:
+  slide 22's portability strip, the Optionality presenter-note clarification,
+  the post-September-23 review of statements 7, 10 and 12, the SOP version bump,
+  and checklist v1.3 with the verified Maven state and four site conflicts.
+
+  The v2.0.6 revision beneath it is also recorded there: the recognition-first
+  opening, ordinary language before terminology, the realigned Optionality
+  definition, the simplified slide 18, the once-only portability frame, three
+  rewritten move-category readings, and the close that returns to the opening
+  question.
+
+  THE INSTRUMENT IS UNTOUCHED, AND ASSERTED RATHER THAN ASSUMED: the 12
+  statements, the 1-5 scale, both /30 totals, the evidence protocol, the 90-day
+  window, the boundary and sensitivity methodology, the four states and the seven
+  category names are compared against the approved v2.0.5 deck on disk.
+
+COMMERCIAL ARCHITECTURE
+
+  Career Evidence Starter free  |  Keep the Proof $49  |  Field Kit $150  |
+  Career Move Review $500 with qualification before payment.
+
+  The Private Capability Position Read is RETIRED. It appears nowhere as a live
+  offer. The {hist} remaining mentions across folders 01-03 retire it, record what an
+  earlier version did, assert its absence, or instruct its removal from the site.
+
+  CAREER MOVE REVIEW IS NOT ON THE RECORDED DECK. No page, no route and no copy
+  for it exists anywhere in the repository, on this branch or on main. Under the
+  operational condition in the brief, an unverified route is not offered from the
+  stage. The SOP names it as the current advisory architecture and records its
+  route verification as an outstanding launch condition.
+
+  Keep the Proof is deliberately absent from the recorded continuation sequence.
+  It answers a different problem and belongs in follow-up.
+
+CONTENTS
+
+01_LIVE_DELIVERY
+    Presenter deck v2.0.7 CANDIDATE. 33 slides: 26 active, 7 hidden (27-33).
+    Slide 33 is the dated holding slide, shown before recording and never
+    recorded; it is the only dated face in the deck.
+    Participant workbook v2.0.1 CANDIDATE, 8 pages, 68 form fields, unchanged.
+
+02_FACILITATOR_OPERATIONS
+    Facilitator SOP v2.0.10 CANDIDATE, unchanged in this pass and byte-identical
+    to revision 3. Its shipped LibreOffice preview is eight pages, approved and
+    settled: page 1 portrait, pages 2 and 3 landscape, pages 4 through 8
+    portrait, with no blank or stub final page.
+
+03_QA_AND_CHANGE_CONTROL
+    Change log and QA report v2.0.11: 246 of 246. Group O carries this pass's
+    full re-run of 84 rows, written by the check script at build time, with the
+    last two checking the corrected paragraph itself; Group N is kept as the
+    v2.0.6 record, marked superseded and not counted twice.
+    Manual Maven and Website Edit Checklist v1.3. Sections A and B are marked
+    ALREADY CURRENT - DO NOT OVERWRITE against the owner's verified reading of
+    the live page. Section F carries the four site conflicts with file and line
+    references, and says a Career Move Review call to action must NOT be
+    substituted where the retired Private Read is removed.
+    LibreOffice previews of the deck and the SOP.
+
+04_BUILD_AND_REPRODUCIBILITY  -  INTERNAL, NOT FACILITATOR-FACING
+    The four build scripts and the QA script. The original full deck generator
+    did not survive an earlier container rebuild and is not fabricated here:
+    each version is a deterministic scripted patch of the binary before it, and
+    every face edit is asserted against the text it replaces before it is
+    written. The deck stays fully editable and nothing is flattened to an image.
+
+SWEEPS - PERFORMED ON THE PACKAGED BYTES
+
+    Zero live Private Capability Position Read references in folders 01-03.
+    Zero stale September 16 references. CT throughout, never CST as a label.
+    Folder 04 tokenised: all {tooling} occurrences of a retired name or an old value
+    sit inside string literals or comments, none in executable code.
+
+MAVEN AND WEBSITE - NOT VERIFIABLE FROM HERE
+
+    maven.com and temidayoafonja.com are both blocked by this environment's
+    egress proxy. No live page was read and none was changed. The checklist is
+    instructions to verify, not a claim about the live state.
+
+    The Private Read is still LIVE on the website: fieldkit.html,
+    for-professionals.html and content/site-source-of-truth.json. Removing it
+    needs a separate decision and a deployment, and it is the largest item in the
+    checklist.
+
+SHA-256
+
