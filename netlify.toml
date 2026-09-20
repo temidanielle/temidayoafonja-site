@@ -138,6 +138,21 @@
   to = "/keep-the-proof.html"
   status = 200
 
+# The START HERE guide. The same clean-URL pair used by the pages around it: a
+# 200 rewrite so /start-here serves the file, and a forced 301 off the .html so
+# authority consolidates on the canonical. This route is the destination of the
+# LinkedIn Featured item, so the URL people see has to stay stable.
+[[redirects]]
+  from = "/start-here"
+  to = "/start-here.html"
+  status = 200
+
+[[redirects]]
+  from = "/start-here.html"
+  to = "/start-here"
+  status = 301
+  force = true
+
 # The Career Evidence Starter, the free entry point to the Keep the Proof ladder.
 [[redirects]]
   from = "/career-evidence-starter"
