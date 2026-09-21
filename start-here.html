@@ -176,13 +176,20 @@
           <a class="sh-btn sh-btn--secondary" href="/resources/start-here-capability-formation-v2.pdf"
              id="shDownload" download>Download the PDF</a>
         </div>
-        <p class="sh-note">The full guide is on this page. The PDF is the same eight pages, for keeping or printing.</p>
+        <!-- Says what is actually here. The HTML carries the four-question
+             guide; the PDF is the original eight pages, which includes a
+             closing slide this page does not reproduce. -->
+        <p class="sh-note">The complete four-question guide is on this page. You can also download the original eight-page PDF for keeping or printing.</p>
       </div>
 
       <figure class="sh-cover">
+        <!-- Above the fold on desktop, so eager, matching the Starter's cover
+             images. This was the only lazy image on the site; lazy-loading a
+             hero delays the one thing the page is for. The file itself is
+             untouched: the same render of the approved cover. -->
         <img src="/start-here-cover.png"
              alt="Cover of the START HERE guide: Does what you have already done still count?"
-             width="810" height="1013" loading="lazy" decoding="async">
+             width="810" height="1013" loading="eager">
         <figcaption>Eight pages. Four questions.</figcaption>
       </figure>
     </div>
@@ -248,7 +255,7 @@
 <section class="sh-get">
   <div class="lean-wrap">
     <h2>Keep a copy.</h2>
-    <p>The same eight pages as a PDF, for keeping or printing.</p>
+    <p>Download the original eight-page PDF for keeping or printing.</p>
     <div class="sh-actions">
       <a class="sh-btn sh-btn--primary" href="/resources/start-here-capability-formation-v2.pdf"
          id="shDownloadEnd" download>Download the PDF</a>

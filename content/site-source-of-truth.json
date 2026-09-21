@@ -312,9 +312,16 @@
       "/for-professionals.html", "/about.html", "/case-studies.html",
       "/speaking.html", "/book.html", "/privacy.html", "/terms.html",
       "/diagnostic", "/organizational-diagnostic", "/ai-capability-readiness",
-      "/career-decisions"
+      "/career-decisions", "/start-here"
     ],
     "canonical_source": "sitemap.xml",
+    "canonical_drift_note": [
+      "Checked 2026-09-21 while adding /start-here. This list names sitemap.xml as its",
+      "source and is currently one route behind it: /career-evidence-starter is in the",
+      "sitemap but was never added here. That drift predates this change and is left as",
+      "found rather than corrected inside a pass about a different page. Worth",
+      "reconciling deliberately."
+    ],
     "career_decisions_note": [
       "Added August 17 2026. /career-decisions is a URL and nothing else. The public-facing name",
       "of the free resource served there is the Career Decision Evidence Check, and that is the",
