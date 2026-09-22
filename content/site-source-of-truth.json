@@ -150,7 +150,7 @@
       ],
       "includes_note": "Seven categories of move are taught in the session; the participant leaves having identified one category worth testing. Both figures are correct and describe different things. The Field Kit, the 30-day evidence process and the 90-day rescore are no longer included: they belonged to the paid version.",
       "excludes": ["Written Next-Move Note"],
-      "excludes_note": "The written Next-Move Note moved to the paid Private Capability Position Read on August 14 2026 and must not be promised for the free session. Q&A is offered as time allows rather than guaranteed.",
+      "excludes_note": "The written Next-Move Note moved to the paid one-to-one service on August 14 2026 and must not be promised for the free session. Q&A is offered as time allows rather than guaranteed. Updated 2026-09-17: that paid service was the Private Capability Position Read, now replaced by the Career Move Review, whose written deliverable is the Career Move Summary. The rule is unchanged: the free session does not include a written deliverable.",
       "registration_url": {
         "published": true,
         "url": "https://maven.com/p/8b3c40/stay-or-leave-live-career-growth-assessment",
@@ -159,18 +159,131 @@
       }
     },
 
-    "private_capability_position_read": {
-      "name": "Private Capability Position Read",
+    "career_move_review": {
+      "name": "Career Move Review",
       "label": "One to one",
-      "price_usd": 500,
-      "price_display": "$500",
-      "route": "/for-professionals",
-      "delivery": "One-to-one session in which Temidayo interprets the participant's evidence with them.",
-      "differentiator": "A personalized Next-Move Note based on the participant's specific position, rather than the provisional group reading the free session produces.",
-      "cta": "Request a Private Read",
-      "cta_destination": "mailto:temidayo@thedensitygroup.com?subject=Private%20Capability%20Position%20Read%20Inquiry",
-      "cta_destination_note": "Originally supplied as temidayo@temidayoafonja.com and flagged, because every other published address on the site is on thedensitygroup.com. Operator corrected it to thedensitygroup.com on 2026-08-14. Subject line unchanged.",
-      "added": "2026-08-14"
+      "route": "/career-move-review",
+      "added": "2026-09-17",
+      "status": "built, not yet published",
+
+      "replaces": {
+        "offer": "Private Capability Position Read",
+        "former_price_display": "$500",
+        "decision": "Option A of the website audit dated 2026-09-17, section 9.1. One individual one-to-one advisory service, not two. The Private Read had been live for months with no form, no scheduling link and no page of its own, and a second service five dollars away from it could not be told apart from a price list.",
+        "rule": "The two must never both be sold, displayed or described. Every public reference to the Private Capability Position Read as a purchasable one-to-one service has been replaced.",
+        "what_survives": "The Capability Position Read remains the name of the METHOD, and is still correct wherever the framework, the Field Kit or the free session describe how the reading is done. Only the paid one-to-one service by that name is retired."
+      },
+
+      "positioning": "I help experienced professionals make career pivots and internal moves without starting over.",
+      "question_it_answers": "Does the experience I have built fit the move I am considering, and where is the actual gap?",
+      "underlying_questions": [
+        "What travels?",
+        "What does not?",
+        "What can you prove?",
+        "What must you relearn when the context changes?"
+      ],
+
+      "audience": "Experienced professionals, generally with 10 or more years of experience, considering a career pivot, internal move, role change, functional move or industry change.",
+      "not_for": "Organizational, talent and business leaders. Their route is the Capability Formation Executive Briefing. The individual and enterprise journeys stay separate.",
+
+      "client_provides": [
+        "A resume or LinkedIn profile",
+        "One target role, intended move or live career decision",
+        "Relevant context about timing and constraints"
+      ],
+      "client_receives": [
+        "A 90-minute individual advisory session",
+        "An evidence-based review of what travels, what does not, what can be proved and what must be relearned",
+        "A written Career Move Summary",
+        "One clarification follow-up"
+      ],
+
+      "operational_promises": {
+        "approved": "2026-09-18",
+        "reply_to_request": "Temidayo replies to every request within two business days.",
+        "summary_delivery": "You will receive your written Career Move Summary within five business days of the session.",
+        "clarification_window": "The included clarification follow-up may be used within seven calendar days of receiving the Summary.",
+        "rule": "These three are commitments, not marketing. State them wherever the service is described and nowhere state anything that contradicts them. They appear on career-move-review.html, for-professionals.html, fieldkit.html, book.html, diagnostic.html and keep-the-proof.html.",
+        "supersedes": "The CMR-SUMMARY-DELIVERY placeholder marker in career-move-review.html, which held the page open while the turnaround was undecided. Removed 2026-09-18."
+      },
+
+      "price": {
+        "usd": 500,
+        "display": "$500",
+        "approved": "2026-09-18",
+        "presentation_rule": "One public price. State it plainly and once per context. There is no second price anywhere on the site, and nothing frames $500 as temporary, introductory, discounted or about to change.",
+        "forbidden": [
+          "A pilot, introductory or founding rate",
+          "A first-five-clients qualifier of any kind",
+          "A second price shown alongside it, whether as a future price, a standard rate or a crossed-out figure",
+          "Any urgency, scarcity or countdown around the price",
+          "Describing $500 as temporary"
+        ],
+        "history": "Superseded a two-tier presentation of $495 for the first five clients and $750 thereafter, which was live on the branch but never published. Operator decision 2026-09-18: one public price, $500, current until explicitly changed.",
+        "distinct_from_retired_offer": "This $500 is NOT the retired Private Capability Position Read, which also carried $500. That service remains retired and must not return. The Career Move Review is a different service with a different scope, a written deliverable and qualification before payment. The shared figure is a coincidence of pricing, not a rename.",
+        "approved_wording": {
+          "heading": "What it costs.",
+          "price_line": "$500 for a Career Move Review.",
+          "not_a_fit_line": "If it is not a fit, Temidayo will let you know and, where possible, point you toward a more useful next step."
+        }
+      },
+
+      "exclusions": [
+        "Not resume writing",
+        "Not job placement",
+        "Not interview preparation",
+        "Not therapy",
+        "Not ongoing career coaching"
+      ],
+      "no_outcome_promise": "The Review does not promise that anyone will qualify for, obtain or succeed in a particular role. It reads evidence against an intended move. It does not guarantee the move.",
+
+      "qualification_before_payment": {
+        "rule": "No public checkout button on the page. Payment is never taken before fit is assessed.",
+        "sequence": [
+          "Visitor reads the service page.",
+          "Visitor submits a qualification request.",
+          "Temidayo reviews the request.",
+          "An accepted applicant receives the booking and payment route."
+        ],
+        "reason": "During a five-client pilot a single mismatched client is twenty percent of the evidence base.",
+        "payment_route": "Not configured. No payment link exists yet and none has been invented or embedded. The accepted-applicant route is handled by Temidayo directly until one is set up."
+      },
+
+      "intake": {
+        "endpoint": "/api/career-move-review-request",
+        "function": "netlify/functions/career-move-review-request.js",
+        "rate_limit": { "window_limit": 5, "window_size": 180, "aggregate_by": ["domain", "ip"] },
+        "consent": "Explicit, unchecked by default, stamped with POLICY_VERSION exactly as the Career Evidence Starter form does.",
+        "resume_handling": "The public form takes a LinkedIn URL or a short written summary. It does NOT accept file uploads. The site has no authenticated storage, and a public upload endpoint for resumes would put personal documents somewhere they could be enumerated. Resumes are requested by reply, after acceptance, once there is a named person on the other end.",
+        "storage": "No resume file, no submission body and no personal detail is written to any public path. Nothing from this form is served by the site."
+      },
+
+      "relationship_to_other_offers": {
+        "career_evidence_starter": "Free and preparatory. Useful before a Review, never required.",
+        "keep_the_proof": "Produces the evidence record. The Review tests that record against a specific intended move. Not a prerequisite.",
+        "field_kit": "Complementary, not sequential. The Field Kit is the method run alone; the Review is the method run with Temidayo against one target role. Neither requires the other.",
+        "career_decisions": "A free three-question check, not a smaller Review and not a duplicate of it.",
+        "executive_briefing": "No relationship beyond one quiet de-routing line for anyone who arrives with an organizational question.",
+        "purchase_prerequisite": "None. A person may request a Career Move Review without having bought Keep the Proof or the Field Kit."
+      },
+
+      "cta": "Request a Career Move Review",
+      "cta_rule": "One primary call to action, used consistently. Never 'Book a discovery call'.",
+
+      "launch_gate": {
+        "status": "NOT LAUNCH READY",
+        "rule": "The Career Move Review must not be described as launch ready, announced, or linked from any outbound channel until BOTH of the following are true.",
+        "blockers": [
+          "FORMSPREE_CAREER_MOVE_REVIEW is configured in the Netlify environment, Runtime scope, and the site has been redeployed so the function can read it. Until then /api/career-move-review-request returns 503 and the page shows its fallback.",
+          "A real end-to-end submission has passed in a controlled deploy preview: form submitted, function reached, destination received it, success panel shown."
+        ],
+        "resolved_2026_09_18": "The Career Move Summary turnaround, previously the third blocker, is now approved and stated on the page."
+      },
+
+      "unresolved": {
+        "individual_proof": "No individual testimonial, outcome or result exists for any individual product, and none may be invented. The page stands on scope and specificity. The pilot is the mechanism for producing evidence.",
+        "legal_review": "docs/legal-review-required.md is parked by operator instruction. A paid one-to-one advisory service with a written deliverable is within what that document was opened to handle. This is a PRE-DEPLOYMENT GATE. The outstanding decisions are listed in docs/career-move-review-deployment.md under Legal review. No legal language has been drafted or invented."
+      }
     },
 
     "lightning_lesson": {
@@ -220,7 +333,10 @@
         "name": "AI Capability Readiness Diagnostic",
         "audience": "organization",
         "route": "/ai-capability-readiness",
-        "in_footer_nav": false
+        "in_footer_nav": false,
+        "listing_status": "unlisted, by operator decision 2026-09-18",
+        "decision": "Kept as an unlisted asset. The page is live and unchanged, retains its noindex, nofollow, and is reachable by anyone holding the URL. It was removed from sitemap.xml on 2026-09-18, which resolves the contradiction of submitting a page to search engines while telling them not to index it. It is deliberately NOT in the navigation, NOT in any footer, and NOT linked from any other page. It was not redirected and not deleted.",
+        "do_not": "Do not add it to navigation or a footer, do not put it back in the sitemap, and do not remove the noindex, without a new operator decision."
       }
     ],
     "paid_method": {
@@ -277,7 +393,37 @@
         "note": "Operator supplied this asset by name on August 17 2026 for the Field Kit section of book.html. It did not reach the working environment and no file matching it exists in the repository under any name. Every existing image was checked by dimension and the two 1584x396 LinkedIn banners were checked visually: neither is this asset. The book.html Field Kit section therefore still has no image, and book.html was left unchanged rather than filled with a substitute."
       },
       "image_alt_text_approved": "Capability Formation Field Kit cover and sample assessment pages.",
-      "included_in": null
+      "included_in": null,
+      "routing_rule": "Every internal link to the Field Kit goes to /fieldkit. Only /fieldkit sends a visitor to the Gumroad checkout. Added 2026-09-17. Before this, book.html and for-professionals.html linked straight to Gumroad, so the page that argues for the product was skipped by the people buying it and unreachable by the people deciding."
+    },
+
+    "keep_the_proof": {
+      "name": "Keep the Proof",
+      "subtitle": "A 60-Minute Career Evidence System",
+      "price_usd": 49,
+      "price_display": "$49",
+      "route": "/keep-the-proof",
+      "purchase_url": "https://temidayoafonja.gumroad.com/l/keep-the-proof",
+      "includes": "The 41-page guided system, the reusable Career Evidence Ledger, and the Start Here guide.",
+      "added_to_source_of_truth": "2026-09-17",
+      "why_it_was_missing": "This product was live and selling but had never been entered here. The audit of 2026-09-17 found it had ZERO inbound links from anywhere on the site: across all twenty HTML files the string appeared only in its own canonical tag and its own Gumroad buttons. It was reachable only by typing the URL. Not being in this register is the reason nothing downstream, including the navigation and the sitemap, ever knew to link it.",
+      "relationship": "Produces the evidence record. The Career Move Review tests that record against a specific intended move. Neither requires the other."
+    },
+
+    "career_evidence_starter": {
+      "name": "Keep the Proof: The 10-Minute Career Evidence Starter",
+      "short_name": "Career Evidence Starter",
+      "price_usd": 0,
+      "price_display": "Free",
+      "route": "/career-evidence-starter",
+      "format": "Six-page fillable PDF, delivered by email.",
+      "contents": "One quick capture, six prompts and one Proof Line builder.",
+      "stated_time": "About 10 focused minutes.",
+      "delivery": "Kit sequence, triggered by /api/career-evidence-starter-subscribe.",
+      "delivered_file": "/resources/keep-the-proof-career-evidence-starter-v1-0-5ee610a6d0d4.pdf",
+      "delivered_file_note": "The random token in the filename is the gate. /resources/* also carries X-Robots-Tag noindex, nofollow. Anyone holding the link can open it, so it must not be published publicly. Send people to /career-evidence-starter instead.",
+      "added_to_source_of_truth": "2026-09-17",
+      "why_it_was_missing": "Same as Keep the Proof: live, but never entered here."
     }
   },
 
@@ -311,16 +457,28 @@
       "/", "/framework.html", "/work.html", "/executive-briefing.html",
       "/for-professionals.html", "/about.html", "/case-studies.html",
       "/speaking.html", "/book.html", "/privacy.html", "/terms.html",
-      "/diagnostic", "/organizational-diagnostic", "/ai-capability-readiness",
-      "/career-decisions", "/start-here"
+      "/diagnostic", "/organizational-diagnostic",
+      "/career-decisions", "/career-evidence-starter", "/keep-the-proof",
+      "/fieldkit", "/career-move-review", "/start-here"
     ],
+    "unlisted": ["/ai-capability-readiness"],
+    "unlisted_note": "Live and reachable by URL, but deliberately absent from sitemap.xml, the navigation and every footer, and carrying noindex, nofollow. Operator decision 2026-09-18.",
     "canonical_source": "sitemap.xml",
+    "canonical_note": [
+      "Four routes were added on 2026-09-17. /career-move-review is new. The other three",
+      "were live and missing: /career-evidence-starter, and the two paid individual products",
+      "/keep-the-proof and /fieldkit, neither of which was in this list or in sitemap.xml."
+    ],
     "canonical_drift_note": [
       "Checked 2026-09-21 while adding /start-here. This list names sitemap.xml as its",
       "source and is currently one route behind it: /career-evidence-starter is in the",
       "sitemap but was never added here. That drift predates this change and is left as",
       "found rather than corrected inside a pass about a different page. Worth",
-      "reconciling deliberately."
+      "reconciling deliberately.",
+      "CLOSED 2026-09-22 by the merge that brought /start-here into this branch. The drift",
+      "described above is resolved: /career-evidence-starter is now in this list, added by",
+      "the 2026-09-17 change recorded in canonical_note. Both records are kept so neither",
+      "side's history is lost."
     ],
     "career_decisions_note": [
       "Added August 17 2026. /career-decisions is a URL and nothing else. The public-facing name",
@@ -328,7 +486,10 @@
       "only name to use in copy, email, video and anywhere else. 'Career Decisions' is not a",
       "product, a course, a diagnostic brand or a paid offer, and must never be presented as one.",
       "The page does not replace /for-professionals, /book, the Field Kit, /diagnostic or the",
-      "Private Capability Position Read, and it is not in the main navigation."
+      "Career Move Review, and it is not in the main navigation.",
+      "Updated 2026-09-17: this line previously named the Private Capability Position Read,",
+      "which has been replaced by the Career Move Review. The point is unchanged. The free",
+      "check is not a smaller version of the paid advisory service and must not read as one."
     ],
     "permanent_redirects": {
       "/career-decisions.html": "/career-decisions",
@@ -352,7 +513,15 @@
     "substack": "https://temidayoafonja.substack.com",
     "amazon_book": "https://www.amazon.com/dp/B0H4QY5GWY",
     "gumroad_field_kit": "https://temidayoafonja.gumroad.com/l/czmqp",
+    "gumroad_keep_the_proof": "https://temidayoafonja.gumroad.com/l/keep-the-proof",
+    "gumroad_note": "Both Gumroad URLs are reached only from the product's own page: /fieldkit and /keep-the-proof. No other page links to a checkout.",
+    "career_move_review_payment": {
+      "configured": false,
+      "note": "No payment or booking link exists for the Career Move Review and none has been invented. Qualification precedes payment, so an accepted applicant is sent a route by reply. This field stays false until a real link is configured."
+    },
+    "maven_stay_or_leave": "https://maven.com/p/8b3c40/stay-or-leave-live-career-growth-assessment",
     "maven_lightning_lesson": "https://maven.com/p/5162f2/how-to-tell-if-your-career-is-stalling",
+    "maven_lightning_lesson_note": "Retired. The session ran on 2026-09-09. Still referenced by expired NEXT_STEP configuration on career-decisions.html, which self-retires and renders nothing.",
     "maven_terms": "https://maven.com/terms",
     "analytics_script": "https://plausible.io/js/pa-hFo9m_622E0tElKtUlVnx.js",
     "formspree_endpoints": {

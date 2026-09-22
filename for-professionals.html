@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Free Career Growth Assessment | The Density Group</title>
-<meta name="description" content="Stay or Leave? Live Career Growth Assessment. A free 60-minute live career growth assessment using the Capability Position Read. Wednesday, September 23, 2026.">
+<title>For Professionals | The Density Group</title>
+<meta name="description" content="For experienced professionals deciding whether to stay, move internally or pivot. Read what your work is building, what would travel with you, and what you can prove, using the Capability Position Read.">
 <link rel="canonical" href="https://temidayoafonja.com/for-professionals.html">
 
 <!-- Open Graph / Twitter -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="The Density Group">
 <meta property="og:url" content="https://temidayoafonja.com/for-professionals.html">
-<meta property="og:title" content="Free Career Growth Assessment | The Density Group">
-<meta property="og:description" content="Stay or Leave? Live Career Growth Assessment. A free 60-minute live career growth assessment using the Capability Position Read. Wednesday, September 23, 2026.">
+<meta property="og:title" content="For Professionals | The Density Group">
+<meta property="og:description" content="For experienced professionals deciding whether to stay, move internally or pivot. Read what your work is building, what would travel with you, and what you can prove, using the Capability Position Read.">
 <meta property="og:image" content="https://temidayoafonja.com/og-default.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Free Career Growth Assessment | The Density Group">
-<meta name="twitter:description" content="Stay or Leave? Live Career Growth Assessment. A free 60-minute live career growth assessment using the Capability Position Read. Wednesday, September 23, 2026.">
+<meta name="twitter:title" content="For Professionals | The Density Group">
+<meta name="twitter:description" content="For experienced professionals deciding whether to stay, move internally or pivot. Read what your work is building, what would travel with you, and what you can prove, using the Capability Position Read.">
 <meta name="twitter:image" content="https://temidayoafonja.com/og-default.png">
 
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -86,9 +86,24 @@
 .path-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; align-items: stretch; margin-top: 8px; }
 /* Only one live session remains, so its grid is a single column: two columns
    would leave the card at half width with an empty cell beside it. Scoped to
-   .session-path deliberately. The paid-card grid further down still holds two
-   cards and must keep the two-column rule above. */
+   .session-path deliberately. The other grids on this page hold two or three
+   cards and keep their own rules. */
 .session-path .path-grid { grid-template-columns: 1fr; }
+/* Two or more live sessions sit side by side, but only above the breakpoint.
+   Scoping this to a min-width query rather than setting it from the script is
+   deliberate: an inline style would outrank the max-width rule below and leave
+   two cards squeezed into two columns on a phone. The script only toggles the
+   .has-multiple class. */
+@media (min-width: 861px) {
+  .session-path .path-grid.has-multiple { grid-template-columns: repeat(2, 1fr); }
+}
+/* The paid ladder holds three cards: Keep the Proof, the Field Kit, and the
+   Career Move Review. Two columns would strand the third at half width on a
+   row of its own. */
+.path-grid--three { grid-template-columns: repeat(3, 1fr); }
+/* The one-to-one card carries a longer price line than the paid cards below,
+   which are a bare figure. Wrapping it is correct; shrinking it is not. */
+.session-path .path-date, .path-card.primary .path-date { line-height: 1.35; }
 .path-card { border-radius: 14px; padding: 30px 32px; display: flex; flex-direction: column; }
 .path-card h3 { font-size: clamp(20px, 2.2vw, 25px); line-height: 1.15; margin-bottom: 10px; }
 .path-card p { font-size: 14.5px; line-height: 1.6; }
@@ -199,64 +214,117 @@
   </div>
 </section>
 
-<!-- 5C YOUR PATH. The September 9 Lightning Lesson card was deleted here on
-     September 10, the day after it ran. That is the manual retirement this page
-     was built for and that content/site-source-of-truth.json describes.
-     One session remains, so .path-grid is a single column. To put a second
-     session back, restore the two-column rule and add an <article> above this
-     one; the .path-* CSS is shared and was left in place. -->
-<section class="a-section path-section session-path">
+<!-- 5C YOUR PATH.
+     Both this section and the Register band below are now rendered from the
+     `sessions` array in the script at the foot of this page. Nothing about a
+     session is written in this markup any more.
+
+     This is the fix for a problem that has recurred twice. A Lightning Lesson
+     card sat here after its session had passed and had to be deleted by hand,
+     and the date was duplicated in four places, so a reschedule missed one.
+     A session now renders only while its end time is still in the future, and
+     stops rendering by itself afterwards with no edit and no deploy.
+
+     These two containers are filled by the script and are empty until it runs.
+     See the comment above the `sessions` array for how to add a session. -->
+<section class="a-section path-section session-path" id="sessionSection" hidden>
   <div class="lean-wrap">
     <span class="lean-eyebrow">Your Path</span>
-    <div class="path-grid">
-
-      <article class="path-card primary">
-        <div class="path-label">Free Live Assessment</div>
-        <h3>Stay or Leave? Live Career Growth Assessment</h3>
-        <div class="path-date">Wednesday, September 23, 2026 &middot; 6:00 PM CT</div>
-        <p>See whether your role is still building your capability, identify what would travel with you, and decide your next move.</p>
-        <a class="lean-btn light path-cta" href="https://maven.com/p/8b3c40/stay-or-leave-live-career-growth-assessment" target="_blank" rel="noopener">Register Free &rarr;</a>
-      </article>
-
-    </div>
-    <p class="path-free">Not ready for a live session? <a href="/career-evidence-starter">Keep the Proof: The 10-Minute Career Evidence Starter</a> is free and self-directed. One accomplishment, one portable Proof Line, in about 10 focused minutes.</p>
+    <div class="path-grid" id="sessionGrid"></div>
+    <p class="path-free">Not ready for a live session? <a href="/career-evidence-starter">The 10-Minute Career Evidence Starter</a> is free and self-directed. One accomplishment, one portable Proof Line, in about 10 focused minutes.</p>
   </div>
 </section>
 
-<!-- 5D REGISTER. A second conversion point after the Your Path cards, for
-     visitors who scrolled past the September 23 card. -->
-<section class="a-priority" id="priority-list">
+<!-- 5D REGISTER, when a session is live. Second conversion point for visitors
+     who scrolled past the card above. -->
+<section class="a-priority" id="sessionRegister" hidden>
   <div class="lean-wrap">
     <span class="lean-eyebrow">Register</span>
     <h2>Register for the Free Session</h2>
-    <p>September 23, 2026 &middot; 6:00 PM CT &middot; 60 minutes &middot; Free</p>
-    <a class="lean-btn primary large" href="https://maven.com/p/8b3c40/stay-or-leave-live-career-growth-assessment" target="_blank" rel="noopener">Register Free &rarr;</a>
+    <p id="sessionRegisterDetail"></p>
+    <a class="lean-btn primary large" id="sessionRegisterCta" href="#" target="_blank" rel="noopener">Register Free &rarr;</a>
   </div>
 </section>
 
-<!-- 5E CONTINUE THE READ PRIVATELY. Two paid options, lighter card first.
-     Same .path-* system as Your Path above, so the two sections read as one
-     ladder rather than two unrelated card treatments. -->
-<section class="a-section path-section">
+<!-- 5D-ALT EVERGREEN FALLBACK, when no future session exists.
+     Shown in place of the two sections above. It names no date, so it cannot go
+     stale, and it routes to the free self-directed resources that are always
+     available rather than to a registration page that is not. -->
+<section class="a-priority" id="noSession" hidden>
   <div class="lean-wrap">
-    <span class="lean-eyebrow">Continue the Read Privately</span>
+    <span class="lean-eyebrow">Live sessions</span>
+    <h2>The next live session is not scheduled yet.</h2>
+    <p>Sessions run periodically through the year. When the next one is set, the date and the registration link go up here.</p>
+    <p style="margin-bottom:30px;">In the meantime the self-directed resources below cover the same method, and you can start on them today.</p>
+    <a class="lean-btn primary large" href="#start-free">See What You Can Start Now</a>
+  </div>
+</section>
+
+<!-- 5D-2 START ON YOUR OWN, FREE. The two free individual resources. Added
+     2026-09-17. Before this, /career-evidence-starter was mentioned only in the
+     trailing line below the session cards and /career-decisions was reachable
+     from the privacy policy and nowhere else. This page is the individual hub,
+     so the free starting points belong on it. -->
+<section class="a-section path-section" id="start-free">
+  <div class="lean-wrap">
+    <span class="lean-eyebrow">Start on Your Own, Free</span>
     <div class="path-grid">
 
       <article class="path-card secondary">
-        <div class="path-label">Field Kit</div>
+        <div class="path-label">Free &middot; About 10 minutes</div>
+        <h3>The 10-Minute Career Evidence Starter</h3>
+        <p>A six-page fillable worksheet. Take one accomplishment through the method and come out with a single portable Proof Line you can actually use in a review or an interview.</p>
+        <a class="lean-btn outline path-cta" href="/career-evidence-starter">Get the Free Starter</a>
+      </article>
+
+      <article class="path-card secondary">
+        <div class="path-label">Free &middot; Three questions</div>
+        <h3>Career Decision Evidence Check</h3>
+        <p>A short check for anyone weighing whether to stay, leave or reposition. Three questions that read what the work has actually built, rather than how you feel about it this week.</p>
+        <a class="lean-btn outline path-cta" href="/career-decisions">Take the Evidence Check</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- 5E CONTINUE ON YOUR OWN, OR WITH TEMIDAYO. The paid ladder, self-guided
+     first, then the one-to-one service.
+     Rewritten 2026-09-17. This section previously held the Field Kit beside the
+     Private Capability Position Read at $500. Under Option A of the website
+     audit the Private Read is replaced by the Career Move Review, and the two
+     must never both appear. Keep the Proof was added because it had no inbound
+     link from anywhere on the site.
+     The Field Kit card now links to /fieldkit rather than straight to Gumroad:
+     only the product's own page sends anyone to a checkout. -->
+<section class="a-section path-section">
+  <div class="lean-wrap">
+    <span class="lean-eyebrow">Go Further, On Your Own or With Temidayo</span>
+    <div class="path-grid path-grid--three">
+
+      <article class="path-card secondary">
+        <div class="path-label">Self-guided</div>
+        <h3>Keep the Proof</h3>
+        <div class="path-date">$49</div>
+        <p>A 60-minute system for building the evidence record before you need it. The full guided method, the reusable Career Evidence Ledger, and a Start Here guide, so you are not reconstructing your career from memory later.</p>
+        <a class="lean-btn outline path-cta" href="/keep-the-proof">See Keep the Proof</a>
+      </article>
+
+      <article class="path-card secondary">
+        <div class="path-label">Self-guided</div>
         <h3>Capability Formation Field Kit</h3>
         <div class="path-date">$150</div>
         <p>The complete private system for reading your capability position on your own. Collect your own evidence, calibrate without a room, and rerun the process as your situation changes. You keep the full instrument and use it again.</p>
-        <a class="lean-btn outline path-cta" href="https://temidayoafonja.gumroad.com/l/czmqp" target="_blank" rel="noopener">Explore the Self-Guided Field Kit</a>
+        <a class="lean-btn outline path-cta" href="/fieldkit">See the Field Kit</a>
       </article>
 
       <article class="path-card primary">
         <div class="path-label">One to one</div>
-        <h3>Private Capability Position Read</h3>
+        <h3>Career Move Review</h3>
         <div class="path-date">$500</div>
-        <p>A one-to-one session where Temidayo interprets your evidence with you. You receive a personalized Next-Move Note based on your specific position, not a provisional group reading. For professionals facing a high-cost career decision who want expert interpretation before they move.</p>
-        <a class="lean-btn light path-cta" href="mailto:temidayo@thedensitygroup.com?subject=Private%20Capability%20Position%20Read%20Inquiry">Request a Private Read</a>
-        <p class="path-alt">Or email <a href="mailto:temidayo@thedensitygroup.com?subject=Private%20Capability%20Position%20Read%20Inquiry">temidayo@thedensitygroup.com</a> directly.</p>
+        <p>You have a specific move in view and cannot tell whether your experience actually fits it. In 90 minutes, Temidayo reads your evidence against that move: what travels, what does not, what you can prove today, and what the new context will still ask of you. You leave with a written Career Move Summary within five business days of the session, and one clarification follow-up usable within seven calendar days of receiving it.</p>
+        <a class="lean-btn light path-cta" href="/career-move-review">Request a Career Move Review</a>
+        <p class="path-alt">You submit a request first. Temidayo replies to every request within two business days, and nothing is charged until she has read it and confirmed it is a fit.</p>
       </article>
 
     </div>
@@ -304,12 +372,149 @@
         <li><a href="/diagnostic">Free Diagnostic</a></li>
         <li><a href="for-professionals.html">Career Growth Assessment</a></li>
         <li><a href="book.html">Books &amp; Tools</a></li>
+        <li><a href="/keep-the-proof">Keep the Proof</a></li>
         <li><a href="https://temidayoafonja.substack.com" target="_blank" rel="noopener">Writing</a></li>
       </ul>
     </div>
   </div>
   <div class="footer-copy">&copy; 2026 The Density Group LLC &middot; Capability Formation &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></div>
 </footer>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ═══════════════════════════════════════════════════════════════════════
+     THE ONLY PLACE A SESSION IS WRITTEN
+
+     To add a live session, add ONE object to this array and change nothing
+     else. No markup, no other file, no second copy of the date anywhere.
+     To retire a session, do nothing: it stops rendering by itself once its
+     end time has passed.
+
+     Fields:
+       title            what the session is called, exactly as on Maven
+       label            the small uppercase tag above the title
+       description      one sentence, what the attendee gets
+       endsAtISO        the moment the session ENDS, not when it starts, as a
+                        FULLY QUALIFIED instant carrying the Central offset
+                        actually in force that day: -05:00 during Central
+                        Daylight Time, -06:00 from the first Sunday in
+                        November. The name says "endsAt" because the card has
+                        to stay up while the session is running, and an
+                        attendee arriving at 6:55 still needs the link.
+                        A date-only string such as "2026-09-23" is parsed as
+                        UTC midnight, which would retire the card most of a
+                        day early for anyone west of UTC.
+       dateDisplay      the human date line shown on the card
+       timeCT           the time line, Central
+       registrationUrl  where Register Free points
+       status           "open" renders it, anything else does not, which lets
+                        a scheduled session sit here before registration opens
+
+     Why it is built this way: a hard-coded card sat on this page after its
+     session had passed and had to be deleted by hand, and the date was
+     duplicated in four places so a reschedule missed one. Both of those are
+     now impossible.
+     ═══════════════════════════════════════════════════════════════════════ */
+  var sessions = [
+    {
+      title: "Stay or Leave? Live Career Growth Assessment",
+      label: "Free Live Assessment",
+      description: "See whether your role is still building your capability, identify what would travel with you, and decide your next move.",
+      endsAtISO: "2026-09-23T19:00:00-05:00",
+      dateDisplay: "Wednesday, September 23, 2026",
+      timeCT: "6:00 PM CT",
+      registrationUrl: "https://maven.com/p/8b3c40/stay-or-leave-live-career-growth-assessment",
+      status: "open"
+    }
+  ];
+
+  /* A session is live until its end instant passes, compared against the
+     visitor's own clock. Both sides are absolute, so the switch happens at the
+     same moment for every visitor regardless of their timezone.
+
+     A malformed endsAtISO retires the entry rather than keeping it. Failing
+     closed is the safe direction here: an evergreen fallback is always a valid
+     thing to show, and a registration link for a session that has already run
+     is not. */
+  function isUpcoming(s) {
+    if (!s || s.status !== "open" || !s.endsAtISO) return false;
+    var end = Date.parse(s.endsAtISO);
+    if (isNaN(end)) return false;
+    return Date.now() < end;
+  }
+
+  function el(id) { return document.getElementById(id); }
+
+  function esc(v) {
+    return String(v == null ? "" : v)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function render() {
+    var live = sessions.filter(isUpcoming).sort(function (a, b) {
+      return Date.parse(a.endsAtISO) - Date.parse(b.endsAtISO);
+    });
+
+    var section = el("sessionSection");
+    var grid = el("sessionGrid");
+    var register = el("sessionRegister");
+    var none = el("noSession");
+    if (!section || !grid || !register || !none) return;
+
+    if (!live.length) {
+      section.hidden = true;
+      register.hidden = true;
+      none.hidden = false;
+      return;
+    }
+
+    none.hidden = true;
+
+    grid.innerHTML = live.map(function (s) {
+      return '<article class="path-card primary">' +
+        '<div class="path-label">' + esc(s.label) + '</div>' +
+        '<h3>' + esc(s.title) + '</h3>' +
+        '<div class="path-date">' + esc(s.dateDisplay) + ' · ' + esc(s.timeCT) + '</div>' +
+        '<p>' + esc(s.description) + '</p>' +
+        '<a class="lean-btn light path-cta" href="' + esc(s.registrationUrl) + '" target="_blank" rel="noopener">Register Free →</a>' +
+        '</article>';
+    }).join("");
+
+    /* One card reads better full width; two or more go side by side on desktop.
+       This toggles a CLASS rather than an inline style. An inline style would
+       beat the max-width media query, because inline declarations outrank every
+       stylesheet rule, and two cards would stay in two columns on a phone at
+       about 166px each. The paired rule is scoped inside a min-width query
+       instead, so it simply does not apply on narrow screens. */
+    grid.classList.toggle("has-multiple", live.length > 1);
+    section.hidden = false;
+
+    var next = live[0];
+    el("sessionRegisterDetail").textContent =
+      next.dateDisplay + " · " + next.timeCT + " · 60 minutes · Free";
+    el("sessionRegisterCta").setAttribute("href", next.registrationUrl);
+    register.hidden = false;
+
+    /* A tab left open across the end of a session should not keep showing a
+       dead registration link, so the page re-renders itself at that instant.
+       setTimeout caps out around 24.8 days, so anything further out is left to
+       the next page load, which is the correct behaviour anyway. */
+    var ms = Date.parse(next.endsAtISO) - Date.now();
+    if (ms > 0 && ms < 2147483647) {
+      window.setTimeout(render, ms + 1000);
+    }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", render);
+  } else {
+    render();
+  }
+})();
+</script>
 
 <script defer src="/nav.js"></script>
 </body>

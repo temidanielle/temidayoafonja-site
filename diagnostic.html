@@ -658,6 +658,18 @@ nav { padding:16px 20px; }
           <a href="https://maven.com/p/8b3c40/stay-or-leave-live-career-growth-assessment" target="_blank" rel="noopener" style="display:inline-block;background:#c9a84c !important;color:#0f2347 !important;padding:14px 32px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;-webkit-text-fill-color:#0f2347 !important;">Register Free &rarr;</a>
         </div>
       </div>
+      <!-- CAREER MOVE REVIEW. Added 2026-09-17, revealed with the individual
+           offer above. Someone who has just completed the diagnostic and has a
+           specific move in view is at the highest-intent individual moment on
+           the site. Deliberately placed after the free session, not before it:
+           the free route stays the first thing offered. -->
+      <div class="cta-box" id="careerMoveReviewBox" style="display:none;">
+        <div class="cta-box-title">Have a specific move already in view?</div>
+        <div class="cta-box-sub">A Career Move Review is 90 minutes, one to one, reading your evidence against one particular role or move: what travels, what does not, what you can prove today, and what the new context will still ask of you. You leave with a written Career Move Summary within five business days of the session, and one clarification follow-up usable within seven calendar days of receiving it. It is a request rather than a booking. Temidayo replies to every request within two business days, and nothing is charged until she has read it and confirmed it is a fit.</div>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;align-items:center;">
+          <a href="/career-move-review" style="display:inline-block;background:#c9a84c !important;color:#0f2347 !important;padding:14px 32px;font-family:'DM Sans',sans-serif;font-size:12px;font-weight:500;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;-webkit-text-fill-color:#0f2347 !important;">Request a Career Move Review &rarr;</a>
+        </div>
+      </div>
       <div class="cta-box">
         <div class="cta-box-title">Have an organizational question rather than an individual career decision?</div>
         <div class="cta-box-sub">The enterprise route begins with the Capability Formation Executive Briefing, an evidence-led review of one consequential organizational decision.</div>
@@ -1166,6 +1178,7 @@ function showResults(name) {
   // was removed once that session passed.
   document.getElementById("ctaSectionTitle").textContent = "Where This Leaves You";
   document.getElementById("individualOfferBox").style.display = "block";
+  document.getElementById("careerMoveReviewBox").style.display = "block";
   if(window.plausible) plausible("Audit Completed", {props:{mode:currentMode, quadrant:qKey}});
   show("results");
 }
@@ -1538,12 +1551,49 @@ document.addEventListener("DOMContentLoaded", function(){
 
 </main>
 
-<!-- Legal links (Phase 3, section 9). These two pages are standalone and carry no
-     shared site footer, so a minimal strip is used rather than the full footer. -->
-<div role="contentinfo" style="border-top:1px solid rgba(139,160,180,0.18);margin-top:48px;padding:26px 24px;text-align:center;font-size:12px;color:rgba(245,240,232,0.56);line-height:1.9;">
-  &copy; 2026 The Density Group LLC &middot; Capability Formation
-  &middot; <a href="privacy.html" style="color:rgba(245,240,232,0.56);text-decoration:underline;text-underline-offset:3px;">Privacy</a>
-  &middot; <a href="terms.html" style="color:rgba(245,240,232,0.56);text-decoration:underline;text-underline-offset:3px;">Terms</a>
-</div>
+<!-- SITE FOOTER. Added 2026-09-17.
+     This page previously ended in a legal strip and nothing else, so anyone who
+     finished the diagnostic and did not take the in-page offer had no way out
+     except the browser back button. That is a dead end at the highest-intent
+     moment on the individual side of the site.
+     It is written inline in this page's own dark palette rather than reusing
+     the shared <footer>: this is a standalone instrument on a navy ground, and
+     the shared footer is built for the light pages. -->
+<!-- display:block is load-bearing. styles.css sets `footer { display: flex }`
+     for the shared site footer, and this page loads that stylesheet. Without the
+     override, the grid below becomes a flex item with the default min-width:auto
+     and cannot shrink below its content, so three 200px columns forced a 656px
+     box inside a 390px viewport and the page scrolled sideways on phones. -->
+<footer role="contentinfo" style="display:block;border-top:1px solid rgba(139,160,180,0.18);margin-top:56px;padding:40px 24px 26px;font-size:13px;color:rgba(245,240,232,0.62);line-height:1.8;">
+  <div style="max-width:940px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:28px;text-align:left;min-width:0;">
+    <div>
+      <div style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#c9a84c;margin-bottom:10px;">For professionals</div>
+      <div><a href="/career-evidence-starter" style="color:rgba(245,240,232,0.78);text-decoration:none;">Free Career Evidence Starter</a></div>
+      <div><a href="/career-decisions" style="color:rgba(245,240,232,0.78);text-decoration:none;">Career Decision Evidence Check</a></div>
+      <div><a href="/keep-the-proof" style="color:rgba(245,240,232,0.78);text-decoration:none;">Keep the Proof</a></div>
+      <div><a href="/fieldkit" style="color:rgba(245,240,232,0.78);text-decoration:none;">Capability Formation Field Kit</a></div>
+      <div><a href="/career-move-review" style="color:rgba(245,240,232,0.78);text-decoration:none;">Career Move Review</a></div>
+    </div>
+    <div>
+      <div style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#c9a84c;margin-bottom:10px;">The firm</div>
+      <div><a href="/framework" style="color:rgba(245,240,232,0.78);text-decoration:none;">Capability Formation</a></div>
+      <div><a href="for-professionals.html" style="color:rgba(245,240,232,0.78);text-decoration:none;">For Professionals</a></div>
+      <div><a href="about.html" style="color:rgba(245,240,232,0.78);text-decoration:none;">The Firm</a></div>
+      <div><a href="book.html" style="color:rgba(245,240,232,0.78);text-decoration:none;">Books &amp; Tools</a></div>
+      <div><a href="index.html" style="color:rgba(245,240,232,0.78);text-decoration:none;">Home</a></div>
+    </div>
+    <div>
+      <div style="font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:#c9a84c;margin-bottom:10px;">Organizations</div>
+      <div><a href="/organizational-diagnostic" style="color:rgba(245,240,232,0.78);text-decoration:none;">Organizational Scan</a></div>
+      <div><a href="executive-briefing.html" style="color:rgba(245,240,232,0.78);text-decoration:none;">Executive Briefing</a></div>
+      <div><a href="work.html" style="color:rgba(245,240,232,0.78);text-decoration:none;">Advisory</a></div>
+    </div>
+  </div>
+  <div style="max-width:940px;margin:30px auto 0;padding-top:20px;border-top:1px solid rgba(139,160,180,0.14);text-align:center;font-size:12px;color:rgba(245,240,232,0.56);">
+    &copy; 2026 The Density Group LLC &middot; Capability Formation
+    &middot; <a href="privacy.html" style="color:rgba(245,240,232,0.56);text-decoration:underline;text-underline-offset:3px;">Privacy</a>
+    &middot; <a href="terms.html" style="color:rgba(245,240,232,0.56);text-decoration:underline;text-underline-offset:3px;">Terms</a>
+  </div>
+</footer>
 </body>
 </html>

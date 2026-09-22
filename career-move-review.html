@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Career Move Review | The Density Group</title>
+<meta name="description" content="A 90-minute advisory review for experienced professionals considering a career pivot or internal move. See what from your experience fits the move, what you can prove, and where the real gap is.">
+<link rel="canonical" href="https://temidayoafonja.com/career-move-review">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Density Group">
+<meta property="og:url" content="https://temidayoafonja.com/career-move-review">
+<meta property="og:title" content="Career Move Review | The Density Group">
+<meta property="og:description" content="A 90-minute advisory review for experienced professionals considering a career pivot or internal move. What travels, what does not, and what you can prove.">
+<meta property="og:image" content="https://temidayoafonja.com/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Career Move Review | The Density Group">
+<meta name="twitter:description" content="A 90-minute advisory review for experienced professionals considering a career pivot or internal move.">
+<meta name="twitter:image" content="https://temidayoafonja.com/og-default.png">
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="/fonts.css">
+<link rel="stylesheet" href="/styles.css">
+
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-hFo9m_622E0tElKtUlVnx.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+
+<style>
+/* ── Career Move Review ──
+   Page-scoped only. The type stack, spacing rhythm, capture band and form
+   treatment are taken from career-evidence-starter.html, which is the closest
+   existing individual page and the approved capture treatment. Nav, footer,
+   focus ring, skip link and motion come from the shared styles.css untouched.
+
+   The .cd-* form classes are reused rather than renamed. They carry the
+   validation, error, consent and honeypot behaviour that is already proven on
+   two live forms, and duplicating them under a new prefix would mean
+   maintaining two copies of the same accessibility work. */
+:root {
+  --rust: #C1440E; --ink: #182238; --muted: #5D6676;
+  --line: rgba(15,35,71,.14); --paper: #FFFDF8; --soft-navy: #E9EDF4;
+}
+.lean-page { position: relative; z-index: 1; background: var(--cream); color: var(--ink); font-family: Arial, Helvetica, sans-serif; line-height: 1.56; padding-top: 96px; }
+.lean-page h1, .lean-page h2, .lean-page h3, .lean-page h4 { font-family: Georgia, 'Times New Roman', serif; font-weight: 500; letter-spacing: -.026em; color: var(--navy); margin: 0; }
+.lean-page p { margin: 0; color: var(--ink); font-size: 15px; line-height: 1.56; }
+.lean-page a { color: inherit; }
+.lean-wrap { width: min(900px, calc(100% - 48px)); margin: 0 auto; }
+.lean-wrap.wide { width: min(1120px, calc(100% - 48px)); }
+.lean-eyebrow { text-transform: uppercase; letter-spacing: .14em; font-size: 11px; font-weight: 800; color: var(--rust-ink); margin-bottom: 18px; display: block; }
+.lean-btn { display: inline-flex; align-items: center; justify-content: center; padding: 14px 22px; border-radius: 4px; font-weight: 700; font-size: 14px; font-family: Arial, Helvetica, sans-serif; text-decoration: none; cursor: pointer; border: none; }
+.lean-btn.primary { background: var(--rust); color: #fff; letter-spacing: .06em; text-transform: uppercase; font-size: 13px; padding: 16px 26px; }
+
+/* Hero */
+.cmr-hero { padding: 56px 0 44px; }
+.cmr-hero h1 { font-size: clamp(30px, 4.3vw, 42px); line-height: 1.1; margin-bottom: 22px; max-width: 18ch; }
+.cmr-sub { font-family: Georgia, serif; font-size: 19px; color: var(--muted); max-width: 660px; margin-bottom: 14px !important; }
+.lean-page .cmr-sub + .cmr-sub { margin-bottom: 26px !important; }
+.cmr-hero .lean-btn { margin-top: 10px; }
+
+/* Generic section */
+.cmr-sec { padding: 54px 0; border-top: 1px solid var(--line-warm); }
+.cmr-sec--paper { background: #FFFDF8; }
+.cmr-sec h2 { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(26px, 3.6vw, 38px);
+  line-height: 1.12; color: var(--navy); margin: 0 0 16px; max-width: 24ch; }
+.lean-page .cmr-sec p { font-size: 16px; line-height: 1.72; max-width: 64ch; margin: 0 0 14px; }
+.lean-page .cmr-sec p:last-child { margin-bottom: 0; }
+
+/* The four questions the review works through */
+.cmr-qs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin-top: 30px; }
+.cmr-q { background: #fff; border: 1px solid var(--line); border-left: 3px solid var(--gold); border-radius: 4px; padding: 22px 24px; }
+.cmr-q h3 { font-size: 19px; margin-bottom: 8px; }
+.lean-page .cmr-q p { font-size: 14.5px; line-height: 1.6; color: var(--muted); margin: 0; }
+
+/* Numbered process */
+.cmr-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin-top: 32px; }
+.cmr-step .n { font-family: 'Cormorant Garamond', serif; font-size: 34px; color: var(--rust-ink); line-height: 1; margin-bottom: 10px; }
+.cmr-step h3 { font-size: 18px; margin-bottom: 8px; }
+.lean-page .cmr-step p { font-size: 14.5px; line-height: 1.62; color: var(--muted); margin: 0; }
+
+/* Two-column lists */
+.cmr-two { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 28px; align-items: stretch; }
+/* Same panel treatment as .cmr-rel article, so this introduces no new style.
+   align-items: stretch is the grid default and is stated here because equal
+   outer height is the point: the two panels start at the same top edge and end
+   at the same bottom edge however unevenly their lists run. min-width: 0 stops
+   a long unbroken item from pushing the column past its track. */
+.cmr-panel { border: 1px solid var(--line); border-radius: 4px; background: #fff;
+             padding: 24px 26px; min-width: 0; }
+/* (0,2,0), which outranks `.lean-page p { margin: 0 }` at (0,1,1). The rule and
+   the space above it keep the disclaimer attached to the five items it
+   qualifies rather than floating as a sixth one. */
+.cmr-panel .cmr-panel-note { margin: 18px 0 0; padding-top: 16px; border-top: 1px solid var(--line);
+             font-size: 14px; line-height: 1.6; color: var(--muted); }
+.cmr-list { margin: 0; padding: 0; list-style: none; }
+.cmr-list li { font-size: 15px; line-height: 1.6; padding: 13px 0 13px 24px; border-bottom: 1px solid var(--line); position: relative; }
+.cmr-list li:last-child { border-bottom: none; }
+.cmr-list li:before { content: "\2014"; position: absolute; left: 0; color: var(--rust-ink); }
+.cmr-list--no li:before { content: "\00D7"; color: var(--muted); }
+.cmr-col-label { font-size: 11px; text-transform: uppercase; letter-spacing: .13em; font-weight: 800; color: var(--rust-ink); margin-bottom: 8px; display: block; }
+.cmr-col-label.muted { color: var(--muted); }
+
+/* Offer facts and price, in the hero.
+   No panel and no background: a card here would compete with the headline and
+   bring back the empty box the standalone pricing section had. The rule above
+   the pair separates them from the argument without drawing a box around them.
+
+   Flex with wrap, so on a narrow screen the terms drop to their own line
+   underneath the figure rather than squeezing beside it. The middle dot is
+   decorative and hidden from assistive technology, which reads the amount and
+   the terms as two plain phrases. */
+.lean-page .cmr-facts { margin-top: 26px; padding-top: 22px; border-top: 1px solid var(--line);
+             font-size: 15.5px; line-height: 1.6; color: var(--muted); max-width: 52ch; }
+.lean-page .cmr-price-line { display: flex; flex-wrap: wrap; align-items: baseline; gap: 10px;
+             margin-top: 12px; }
+.cmr-price-line .amount { font-family: 'Cormorant Garamond', serif; font-size: 34px; line-height: 1;
+             color: var(--navy); }
+.cmr-price-line .sep { color: var(--line); font-size: 18px; line-height: 1; }
+.cmr-price-line .terms { font-size: 15px; color: var(--muted); line-height: 1.4; }
+.lean-page .cmr-price-line + .lean-btn { margin-top: 24px; }
+@media (max-width: 540px) {
+  /* The dot is meaningless once the two parts stack, so it goes rather than
+     sitting orphaned at the end of the price line. */
+  .lean-page .cmr-price-line { gap: 4px 10px; }
+  .cmr-price-line .sep { display: none; }
+  .cmr-price-line .terms { flex: 1 1 100%; }
+}
+
+/* Relationship to the other resources */
+.cmr-rel { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 28px; }
+.cmr-rel article { border: 1px solid var(--line); border-radius: 4px; padding: 20px 22px; background: #fff; }
+.cmr-rel h3 { font-size: 16px; margin-bottom: 7px; }
+.lean-page .cmr-rel p { font-size: 14px; line-height: 1.6; color: var(--muted); margin: 0 0 12px; }
+.cmr-rel a { font-size: 13px; font-weight: 700; color: var(--rust-ink); text-decoration: underline; }
+
+/* ── Capture band. Same treatment as the Starter page. ── */
+.cd-capture { background: var(--navy); padding: 64px 0; scroll-margin-top: 104px; }
+.cd-capture .lean-eyebrow { color: var(--gold); }
+.cd-capture h2 { color: #fff; font-size: clamp(26px, 3.4vw, 38px); line-height: 1.12; margin-bottom: 14px; }
+.cd-capture > .lean-wrap > p { color: rgba(255,255,255,.74); font-size: 15px; max-width: 640px; margin-bottom: 30px; }
+.cd-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 50px; align-items: start; }
+.cd-useful .cd-label { font-size: 11px; text-transform: uppercase; letter-spacing: .13em; font-weight: 800; color: var(--gold); margin-bottom: 14px; }
+/* (0,2,0), which outranks `.lean-page p` at (0,1,1). Without it this paragraph
+   would take the light-section ink colour while sitting on the navy band, which
+   is the contrast failure this page has been caught by before. */
+.cd-useful .cmr-audience { font-size: 14px; line-height: 1.55; color: rgba(255,255,255,.78);
+             margin: 0 0 16px; padding-bottom: 14px; border-bottom: 1px solid rgba(255,255,255,.14); }
+.cd-useful ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.cd-useful li { font-size: 14px; color: rgba(255,255,255,.78); padding-left: 18px; position: relative; line-height: 1.5; }
+.cd-useful li:before { content: "\2192"; position: absolute; left: 0; color: var(--gold); }
+
+.cd-card { background: var(--paper); border-radius: 10px; padding: 30px; }
+.cd-form { display: grid; grid-template-columns: 1fr; gap: 14px; }
+.cd-field { display: flex; flex-direction: column; }
+.cd-field label { font-size: 11px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 7px; font-weight: 700; }
+.cd-field input, .cd-field textarea, .cd-field select { width: 100%; border: 1px solid var(--line); background: #fff; color: var(--ink); border-radius: 4px; padding: 13px 14px; font: inherit; outline: none; }
+.cd-field textarea { min-height: 80px; resize: vertical; }
+/* Invalid state. Colour is never the only signal: the message below the field
+   carries the same information in text, and aria-invalid carries it to
+   assistive technology. */
+.cd-field input[aria-invalid="true"], .cd-field textarea[aria-invalid="true"], .cd-field select[aria-invalid="true"] { border-color: var(--red-soft); }
+/* Prefixed with .lean-page deliberately. ".lean-page p" above is (0,1,1) and
+   would otherwise outrank a bare class selector, putting hint and error text at
+   body size and making it louder than the labels it sits under. */
+.lean-page .cd-note { font-size: 12px; color: var(--muted); margin-top: 6px; line-height: 1.45; }
+.lean-page .cd-error { font-size: 12.5px; color: #A83A2A; margin-top: 6px; font-weight: 700; line-height: 1.45; }
+.lean-page .cd-error:empty { display: none; }
+
+/* Consent. A real checkbox at its native size, never restyled away. */
+.cd-consent { display: flex; gap: 11px; align-items: flex-start; padding: 4px 0 2px; }
+.cd-consent input[type="checkbox"] { width: 17px; height: 17px; margin: 2px 0 0; flex: 0 0 auto; accent-color: var(--navy); }
+.cd-consent label { font-size: 12.5px; line-height: 1.5; color: var(--muted); text-transform: none; letter-spacing: 0; font-weight: 400; margin: 0; }
+.lean-page .cd-consent-note { font-size: 12px; line-height: 1.5; color: var(--muted); margin-top: 6px; }
+.cd-consent-note a, .cd-consent a { color: var(--navy); text-decoration: underline; }
+.cd-submit { background: var(--rust); color: #fff; border: none; border-radius: 4px; padding: 15px; font-size: 13px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; cursor: pointer; }
+.cd-submit[disabled] { opacity: .72; cursor: default; }
+/* The honeypot. Off screen rather than display:none, so a scripted client that
+   filters hidden inputs still sees it. Never focusable, never announced. */
+.cd-trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+/* ── Result. Hidden until the server confirms the request was received. ── */
+.cd-result { display: none; padding: 56px 0; }
+.cd-result.is-open { display: block; }
+.cd-result:focus { outline: none; }
+.cd-result h2 { font-size: clamp(24px, 3vw, 32px); line-height: 1.14; margin-bottom: 14px; }
+.lean-page .cd-result p.cd-lede { color: var(--muted); font-size: 15.5px; max-width: 680px; margin-bottom: 26px; }
+
+.cmr-after { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; }
+.cmr-after li { background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 18px 20px; display: flex; gap: 15px; align-items: baseline; font-size: 15px; line-height: 1.6; }
+.cmr-after .n { font-family: 'Cormorant Garamond', serif; font-size: 22px; color: var(--rust-ink); flex: 0 0 auto; line-height: 1; }
+
+/* A single quiet line for anyone who arrived with an organizational question. */
+.cmr-deroute { font-size: 14px !important; color: var(--muted) !important; margin-top: 30px !important; padding-top: 22px; border-top: 1px solid var(--line); }
+.cmr-deroute a { color: var(--navy); text-decoration: underline; }
+
+@media (max-width: 860px) {
+  .cmr-qs, .cmr-steps, .cmr-two, .cmr-rel, .cd-grid { grid-template-columns: 1fr; gap: 26px; }
+  .cmr-sec { padding: 44px 0; }
+  /* Stacked, included first, both full width within the page gutter. The
+     panels keep their border so the disclaimer stays visibly part of the
+     right-hand one once they are no longer side by side. */
+  .cmr-panel { padding: 22px 20px; }
+  .cmr-hero h1 { max-width: none; }
+  .cd-capture { padding: 52px 0; }
+  .cd-card { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<nav>
+  <a href="index.html" class="nav-logo brand-lockup">
+    <span class="brand-primary">The Density Group</span>
+    <span class="brand-secondary">Capability Formation Advisory</span>
+    <span class="brand-tertiary">Founded by Temidayo Afonja</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="framework.html">Capability Formation</a></li>
+    <li><a href="work.html">Advisory</a></li>
+    <li><a href="executive-briefing.html">Executive Briefing</a></li>
+    <li><a href="case-studies.html">Evidence</a></li>
+    <li><a href="about.html">The Firm</a></li>
+    <li><a href="for-professionals.html">For Professionals</a></li>
+    <li><a href="executive-briefing.html#inquiry" class="nav-cta">Bring a Consequential Decision</a></li>
+  </ul>
+</nav>
+
+<main id="main" class="lean-page">
+
+<!-- HERO. The decision first, the method later. Someone arriving here is
+     asking "should I make this move", not "what is Capability Formation". -->
+<section class="cmr-hero">
+  <div class="lean-wrap">
+    <span class="lean-eyebrow">One to one</span>
+    <h1>Does what you have built fit the move you are considering?</h1>
+    <p class="cmr-sub">You have years of work behind you and a decision in front of you. A different function, a different industry, a step up somewhere that runs nothing like the place you are now.</p>
+    <p class="cmr-sub">The question is rarely whether you are capable. It is which parts of what you have built actually travel with you, and which parts were holding you up only because of where you were standing.</p>
+    <!-- The offer facts and the price sit here, immediately before the button,
+         because this is where the decision is made. They were previously a
+         standalone section far down the page, which meant a visitor passed
+         several full sections before learning what the thing costs.
+
+         Deliberately not a card. A panel here would compete with the headline
+         and reintroduce the empty box the old section had. The price is a
+         little larger and set in the display face so it can be found at a
+         glance, and it stays well below the h1. Operator decision 2026-09-21. -->
+    <p class="cmr-facts">A 90-minute advisory session, a written Career Move Summary, and one clarification follow-up.</p>
+    <p class="cmr-price-line"><span class="amount">$500</span><span class="sep" aria-hidden="true">&middot;</span><span class="terms">Qualification before payment</span></p>
+    <a class="lean-btn primary" href="#request">Request a Career Move Review</a>
+  </div>
+</section>
+
+<!-- WHO IT IS FOR -->
+<section class="cmr-sec">
+  <div class="lean-wrap">
+    <span class="lean-eyebrow">Who this is for</span>
+    <h2>Experienced professionals with a specific move in mind.</h2>
+    <p>This is built for people who have been working long enough to have real range, generally ten years or more, and who are now looking at a change of context. A pivot into a different field. An internal move into a function you have supported but never run. A step into an industry where none of the names on your resume mean anything.</p>
+    <p>It works best when you have something particular in view. Not "I think I want a change," but a role, a team, a direction you are seriously weighing. The review reads your evidence against that specific move, so the more specific the move, the more useful the reading.</p>
+    <p>You do not need to have bought anything first. Keep the Proof and the Field Kit are useful preparation and plenty of people find them helpful, but neither is a prerequisite and neither is assumed.</p>
+  </div>
+</section>
+
+<!-- THE FOUR QUESTIONS -->
+<section class="cmr-sec cmr-sec--paper">
+  <div class="lean-wrap">
+    <span class="lean-eyebrow">What the review works through</span>
+    <h2>Four questions, asked against one real move.</h2>
+    <p>Most career advice treats experience as a single quantity that either is or is not enough. It is not one quantity. Some of what you have built moves with you intact, some of it only worked because of the particular place it was built, and the difference matters enormously when the context changes.</p>
+    <div class="cmr-qs">
+      <article class="cmr-q">
+        <h3>What travels?</h3>
+        <p>The judgment, the patterns and the range that hold their value in a different setting, with different people and different constraints.</p>
+      </article>
+      <article class="cmr-q">
+        <h3>What does not?</h3>
+        <p>The parts that depended on relationships, institutional knowledge or authority that stays behind when you leave the building.</p>
+      </article>
+      <article class="cmr-q">
+        <h3>What can you prove?</h3>
+        <p>Where the evidence is solid enough to stand up in a conversation with someone who has no reason to take your word for it.</p>
+      </article>
+      <article class="cmr-q">
+        <h3>What must you relearn?</h3>
+        <p>What the new context will ask for that your current one never did, and how much of that is a real gap rather than an unfamiliar vocabulary.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU SEND / WHAT HAPPENS / WHAT YOU GET -->
+<section class="cmr-sec">
+  <div class="lean-wrap">
+    <span class="lean-eyebrow">How it works</span>
+    <h2>Three steps, and you are not doing the heavy part.</h2>
+    <div class="cmr-steps">
+      <article class="cmr-step">
+        <div class="n">1</div>
+        <h3>You send the material</h3>
+        <p>A LinkedIn profile or a written summary of your background, the target role or move you are weighing, and whatever matters about timing and constraints. If your request is accepted, you can send a resume at that point rather than uploading one here.</p>
+      </article>
+      <article class="cmr-step">
+        <div class="n">2</div>
+        <h3>We spend 90 minutes on it</h3>
+        <p>A single session, one to one. Temidayo reads your evidence against the move you are considering and works through the four questions with you. You will be asked to defend some of it, because that is where the weak points show up.</p>
+      </article>
+      <article class="cmr-step">
+        <div class="n">3</div>
+        <h3>You get it in writing</h3>
+        <p>A written Career Move Summary covering what travels, what does not, what you can prove today, where the evidence is thin, and the most sensible next test. You will receive your written Career Move Summary within five business days of the session. Then one follow-up for anything that needs clarifying, which may be used within seven calendar days of receiving the Summary.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT IS AND IS NOT INCLUDED -->
+<section class="cmr-sec cmr-sec--paper">
+  <div class="lean-wrap">
+    <span class="lean-eyebrow">What you get, and what you do not</span>
+    <h2>A bounded piece of work with clear edges.</h2>
+    <!-- Two independent panels, NOT a comparison table. Seven items sit on the
+         left and five on the right, they wrap to different heights, and nothing
+         in one list corresponds to anything in the other. Presented as two bare
+         columns, each item's bottom border read as a rule running across both,
+         so the eye paired rows that have no relationship. Each column now owns
+         its own bordered panel, which keeps every separator and marker inside
+         the list it belongs to.
+
+         The disclaimer lives inside the right panel, under the five items it
+         qualifies. Previously it sat at roughly the height of the left column's
+         sixth item, which made it look like a row in that list. -->
+    <div class="cmr-two">
+      <div class="cmr-panel">
+        <span class="cmr-col-label">What is included</span>
+        <ul class="cmr-list">
+          <li>A 90-minute individual advisory session</li>
+          <li>A review of what travels and what does not</li>
+          <li>An honest read on what you can currently prove</li>
+          <li>Where the evidence is weak, named plainly</li>
+          <li>What the next context is likely to still require</li>
+          <li>A written Career Move Summary, within five business days of the session</li>
+          <li>One clarification follow-up, usable within seven calendar days of receiving the Summary</li>
+        </ul>
+      </div>
+      <div class="cmr-panel">
+        <span class="cmr-col-label muted">What this is not</span>
+        <ul class="cmr-list cmr-list--no">
+          <li>Not resume writing</li>
+          <li>Not job placement</li>
+          <li>Not interview preparation</li>
+          <li>Not therapy</li>
+          <li>Not ongoing career coaching</li>
+        </ul>
+        <p class="cmr-panel-note">It also does not promise that you will qualify for, obtain or succeed in any particular role. It reads your evidence against the move you are considering and tells you what it finds. What you do with that is yours.</p>
+      </div>
+    </div>
+    <!-- The three operational promises were approved on 2026-09-18 and are now
+         stated wherever the service is described: a reply within two business
+         days, the Summary within five business days of the session, and the
+         follow-up usable within seven calendar days of receiving it. The
+         CMR-SUMMARY-DELIVERY placeholder marker that stood here is removed,
+         because there is no longer anything outstanding to mark. -->
+  </div>
+</section>
+
+<!-- The standalone pricing section stood here until 2026-09-21: a "Pricing"
+     eyebrow, a "What it costs." heading and a price card. It has been removed
+     rather than shortened. One public price is still the rule, and $500 still
+     appears exactly once on the page, now in the hero where the decision is
+     actually made. What the payment paragraph explained has moved into the
+     request section's introduction, which is where a visitor asks the
+     question. Nothing about the price itself changed. -->
+
+<!-- REQUEST FORM -->
+<section class="cd-capture" id="request">
+  <div class="lean-wrap wide">
+    <span class="lean-eyebrow">Request a review</span>
+    <h2>Request a Career Move Review.</h2>
+    <!-- Explains the payment process without printing the figure a second
+         time. This absorbed the paragraph that sat under the old price card. -->
+    <p>This is a request, not a booking. Nothing is charged here. Temidayo reads every request personally and replies within two business days. If the request is a fit, you will receive booking and payment details. If it is not a fit, Temidayo will let you know and, where possible, point you toward a more useful next step.</p>
+    <div class="cd-grid">
+      <div class="cd-useful">
+        <div class="cd-label">Worth requesting when</div>
+        <!-- The audience qualification. It previously sat in the hero, in the
+             same line as the offer facts. When the facts moved up next to the
+             price the hero had no room for it, and this is the section that
+             answers "is this for me", so it lives here now. The wording is
+             unchanged from the line it came out of. -->
+        <p class="cmr-audience">For experienced professionals, generally with 10 or more years behind them.</p>
+        <ul>
+          <li>You have a specific move in view and cannot tell whether your experience actually fits it.</li>
+          <li>You keep being told you are overqualified and underqualified for the same role.</li>
+          <li>Your strongest work only makes sense to people inside your current company.</li>
+          <li>You are weighing an internal move and want to know what would carry across.</li>
+          <li>You are close to deciding and want one honest read before you commit.</li>
+        </ul>
+      </div>
+
+      <div class="cd-card">
+        <!-- Every maxlength below is the same number as the cap the function
+             enforces on the same field, in netlify/functions/career-move-review-request.js.
+             The two have to be edited together. The attribute keeps a person
+             from typing past the cap; the function refuses anything that
+             arrives over it rather than trimming it to fit, so nobody's words
+             are silently altered on the way to the destination. -->
+        <form class="cd-form" id="cmrForm" novalidate>
+          <div class="cd-field">
+            <label for="cmrFirst">First name</label>
+            <input id="cmrFirst" name="first_name" type="text" maxlength="120" autocomplete="given-name" required aria-required="true" aria-describedby="cmrFirstError">
+            <p class="cd-error" id="cmrFirstError"></p>
+          </div>
+
+          <div class="cd-field">
+            <label for="cmrEmail">Email</label>
+            <input id="cmrEmail" name="email" type="email" maxlength="254" autocomplete="email" required aria-required="true" aria-describedby="cmrEmailError">
+            <p class="cd-error" id="cmrEmailError"></p>
+          </div>
+
+          <div class="cd-field">
+            <label for="cmrYears">Roughly how long have you been working? (optional)</label>
+            <input id="cmrYears" name="years_experience" type="text" maxlength="300" autocomplete="off" aria-describedby="cmrYearsNote">
+            <p class="cd-note" id="cmrYearsNote">For example, "about 14 years, mostly in operations."</p>
+          </div>
+
+          <div class="cd-field">
+            <label for="cmrMove">What move are you considering?</label>
+            <textarea id="cmrMove" name="target_move" maxlength="2000" required aria-required="true" aria-describedby="cmrMoveError cmrMoveNote"></textarea>
+            <p class="cd-note" id="cmrMoveNote">The role, the function, the industry, or the decision you are weighing. The more specific, the more useful the review.</p>
+            <p class="cd-error" id="cmrMoveError"></p>
+          </div>
+
+          <div class="cd-field">
+            <label for="cmrLinkedIn">LinkedIn profile</label>
+            <input id="cmrLinkedIn" name="evidence_link" type="url" maxlength="300" inputmode="url" autocomplete="url" placeholder="https://www.linkedin.com/in/..." aria-describedby="cmrEvidenceError cmrLinkedInNote">
+            <p class="cd-note" id="cmrLinkedInNote">Either your LinkedIn profile or the summary below. One of the two is needed so the request can be assessed. Please do not attach or paste a resume here; if your request is accepted you can send one by reply.</p>
+            <p class="cd-error" id="cmrEvidenceError"></p>
+          </div>
+
+          <div class="cd-field">
+            <label for="cmrSummary">Or a short summary of your background</label>
+            <textarea id="cmrSummary" name="evidence_summary" maxlength="2000" aria-describedby="cmrSummaryNote"></textarea>
+            <p class="cd-note" id="cmrSummaryNote">A few lines is enough. Please leave out anything confidential about your employer or colleagues.</p>
+          </div>
+
+          <div class="cd-field">
+            <label for="cmrTiming">Timing and constraints (optional)</label>
+            <textarea id="cmrTiming" name="timing" maxlength="2000" aria-describedby="cmrTimingNote"></textarea>
+            <p class="cd-note" id="cmrTimingNote">Anything that shapes the decision: a deadline, a visa, a location, a notice period, a reorganization underway.</p>
+          </div>
+
+          <!-- Honeypot. Hidden from sight, from the tab order and from assistive
+               technology. A submission that fills it is refused server side. -->
+          <div class="cd-trap" aria-hidden="true">
+            <label for="cmrRef">Review reference</label>
+            <input id="cmrRef" name="review_reference" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <!-- One consent, unchecked, and it covers only what it says. There is
+               deliberately no marketing checkbox here: a qualification request
+               is not a newsletter signup and must not quietly become one. -->
+          <div class="cd-field">
+            <div class="cd-consent">
+              <input id="cmrConsent" name="contact_consent" type="checkbox" required aria-required="true" aria-describedby="cmrConsentError">
+              <label for="cmrConsent">Temidayo may read this request and reply to me about it.</label>
+            </div>
+            <p class="cd-error" id="cmrConsentError"></p>
+            <p class="cd-consent-note">Used only to assess and answer this request. It does not sign you up for anything. <a href="privacy.html">Privacy</a></p>
+          </div>
+
+          <button class="cd-submit" id="cmrSubmit" type="submit">Request a Career Move Review</button>
+
+          <!-- Live regions, present from first paint so assistive technology
+               announces later changes. role=alert for failure, role=status for
+               progress and success. -->
+          <p class="cd-error" id="cmrFormError" role="alert" aria-live="assertive"></p>
+          <p class="visually-hidden" id="cmrStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT HAPPENS NEXT. Revealed only after the server confirms receipt. -->
+<section class="cd-result" id="cmrResult" tabindex="-1" aria-labelledby="cmrResultTitle">
+  <div class="lean-wrap">
+    <span class="lean-eyebrow">Request received</span>
+    <h2 id="cmrResultTitle">Here is what happens now.</h2>
+    <p class="cd-lede">Your request is with Temidayo. Nothing has been charged and nothing is booked yet.</p>
+    <ul class="cmr-after">
+      <li><span class="n">1</span><span>Temidayo reads the request herself and looks at whether a Career Move Review is the right thing for the decision you described. She replies to every request within two business days.</span></li>
+      <li><span class="n">2</span><span>If it is a fit, that reply includes the booking and payment details and asks for anything else needed, including a resume if you would like to send one.</span></li>
+      <li><span class="n">3</span><span>If it is not a fit, Temidayo will let you know and, where possible, point you toward a more useful next step.</span></li>
+      <li><span class="n">4</span><span>After the session you receive your written Career Move Summary within five business days. The clarification follow-up may be used within seven calendar days of receiving it.</span></li>
+    </ul>
+    <p style="margin-top:26px;">In the meantime, <a href="/career-evidence-starter">the free Career Evidence Starter</a> is a reasonable way to spend ten minutes. It takes one accomplishment through the same thinking and gives you a sharper example to bring.</p>
+  </div>
+</section>
+
+<!-- RELATIONSHIP TO THE OTHER RESOURCES -->
+<section class="cmr-sec cmr-sec--paper">
+  <div class="lean-wrap">
+    <span class="lean-eyebrow">If you would rather start on your own</span>
+    <h2>None of these are required first.</h2>
+    <p>Some people want to do the thinking themselves before they bring anyone else into it. That is a perfectly good instinct, and there are three ways to do it.</p>
+    <div class="cmr-rel">
+      <article>
+        <h3>Career Evidence Starter</h3>
+        <p>Free. One accomplishment, six prompts, one portable Proof Line. About ten focused minutes.</p>
+        <a href="/career-evidence-starter">Get the free Starter</a>
+      </article>
+      <article>
+        <h3>Keep the Proof</h3>
+        <p>$49. The full 60-minute system for building the evidence record, with a reusable ledger you keep using over time.</p>
+        <a href="/keep-the-proof">See Keep the Proof</a>
+      </article>
+      <article>
+        <h3>Capability Formation Field Kit</h3>
+        <p>$150. The complete method for reading your capability position on your own, and rerunning it as things change.</p>
+        <a href="/fieldkit">See the Field Kit</a>
+      </article>
+    </div>
+    <p style="margin-top:26px;">The Field Kit is the method run on your own. The Career Move Review is the same method run with Temidayo, against one specific move. Neither replaces the other, and neither has to come first. If you want the reasoning behind all of it, <a href="/framework">the framework is here</a>.</p>
+    <p class="cmr-deroute">If you arrived with an organizational question rather than a personal one, where capability sits and whether it can move, that work is the <a href="executive-briefing.html">Capability Formation Executive Briefing</a>.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div>
+    <div class="footer-logo">The Density Group</div>
+    <div class="footer-tagline">The Density Group is a Capability Formation advisory firm founded by Temidayo Afonja.</div>
+  </div>
+  <div class="footer-cols">
+    <div class="footer-col">
+      <div class="footer-col-label">The Firm</div>
+      <ul class="footer-links">
+        <li><a href="framework.html">Capability Formation</a></li>
+        <li><a href="work.html">Advisory</a></li>
+        <li><a href="executive-briefing.html">Executive Briefing</a></li>
+        <li><a href="case-studies.html">Evidence</a></li>
+        <li><a href="speaking.html">Speaking</a></li>
+        <li><a href="about.html">The Firm</a></li>
+        <li><a href="/organizational-diagnostic">Organizational Capability Formation Scan</a></li>
+        <li><a href="executive-briefing.html#inquiry">Bring a Consequential Decision</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-label">For Professionals</div>
+      <ul class="footer-links">
+        <li><a href="/diagnostic">Free Diagnostic</a></li>
+        <li><a href="for-professionals.html">Career Growth Assessment</a></li>
+        <li><a href="/career-move-review">Career Move Review</a></li>
+        <li><a href="book.html">Books &amp; Tools</a></li>
+        <li><a href="/keep-the-proof">Keep the Proof</a></li>
+        <li><a href="https://temidayoafonja.substack.com" target="_blank" rel="noopener">Writing</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-copy">&copy; 2026 The Density Group LLC &middot; Capability Formation &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  /* The version of the privacy policy in force when a consent is recorded. It
+     is the "Last updated" date at the top of privacy.html, and the three must
+     always move together in the same commit: this constant, the date in
+     privacy.html, and POLICY_VERSION in career-move-review-request.js. A
+     consent record whose policy version predates the wording the person
+     actually read is not evidence of anything, so the function refuses a
+     submission that does not carry the version in force rather than filing the
+     consent against wording the person may never have seen. */
+  var POLICY_VERSION = "2026-08-18";
+
+  /* The same caps as the maxlength attributes on the fields and as the caps the
+     function enforces. maxlength only constrains what a person types or pastes.
+     A value set programmatically, by autofill or by a browser extension, is not
+     constrained by it, so the length is checked again here and a third time on
+     the server. */
+  var CAPS = { first: 120, email: 254, years: 300, move: 2000, linkedin: 300, summary: 2000, timing: 2000 };
+  var CAP_LABELS = {
+    first: "Your first name",
+    email: "Your email address",
+    years: "How long you have been working",
+    move: "The move you are considering",
+    linkedin: "Your LinkedIn profile URL",
+    summary: "Your summary",
+    timing: "Timing and constraints"
+  };
+
+  var form = document.getElementById("cmrForm");
+  if (!form) return;
+
+  var els = {
+    first: document.getElementById("cmrFirst"),
+    email: document.getElementById("cmrEmail"),
+    years: document.getElementById("cmrYears"),
+    move: document.getElementById("cmrMove"),
+    linkedin: document.getElementById("cmrLinkedIn"),
+    summary: document.getElementById("cmrSummary"),
+    timing: document.getElementById("cmrTiming"),
+    consent: document.getElementById("cmrConsent"),
+    trap: document.getElementById("cmrRef"),
+    submit: document.getElementById("cmrSubmit"),
+    formError: document.getElementById("cmrFormError"),
+    status: document.getElementById("cmrStatus"),
+    result: document.getElementById("cmrResult")
+  };
+
+  var errs = {
+    first: document.getElementById("cmrFirstError"),
+    email: document.getElementById("cmrEmailError"),
+    move: document.getElementById("cmrMoveError"),
+    evidence: document.getElementById("cmrEvidenceError"),
+    consent: document.getElementById("cmrConsentError")
+  };
+
+  function track(name, props) {
+    if (window.plausible) { try { window.plausible(name, { props: props || {} }); } catch (e) {} }
+  }
+
+  /* Marking a field invalid does three things at once: the message in text, the
+     aria-invalid state for assistive technology, and the border colour. Colour
+     is never the only signal. */
+  function setError(field, errEl, message) {
+    if (errEl) errEl.textContent = message || "";
+    if (field) {
+      if (message) field.setAttribute("aria-invalid", "true");
+      else field.removeAttribute("aria-invalid");
+    }
+  }
+
+  function clearErrors() {
+    setError(els.first, errs.first, "");
+    setError(els.email, errs.email, "");
+    setError(els.move, errs.move, "");
+    setError(els.linkedin, errs.evidence, "");
+    setError(els.consent, errs.consent, "");
+    /* These three have no error paragraph of their own. Only a length failure
+       can mark them, and it reports through the form-level message, so the
+       state that needs clearing here is the aria-invalid flag. */
+    ["years", "summary", "timing"].forEach(function (k) {
+      if (els[k]) els[k].removeAttribute("aria-invalid");
+    });
+    els.formError.textContent = "";
+  }
+
+  function validEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+  function looksLikeLinkedIn(v) { return /^https?:\/\/([a-z0-9-]+\.)?linkedin\.com\/.+/i.test(v); }
+  function val(el) { return el && typeof el.value === "string" ? el.value.trim() : ""; }
+
+  /* Validates in document order and focuses the first field that fails, so a
+     keyboard or screen reader user lands on the thing that needs fixing rather
+     than hunting for it. */
+  function validate() {
+    clearErrors();
+    var firstBad = null;
+
+    if (!val(els.first)) {
+      setError(els.first, errs.first, "Please tell me your first name.");
+      firstBad = firstBad || els.first;
+    }
+    if (!validEmail(val(els.email))) {
+      setError(els.email, errs.email, "Please enter an email address I can reply to.");
+      firstBad = firstBad || els.email;
+    }
+    if (!val(els.move)) {
+      setError(els.move, errs.move, "Please describe the move you are considering.");
+      firstBad = firstBad || els.move;
+    }
+
+    var link = val(els.linkedin);
+    if (link && !looksLikeLinkedIn(link)) {
+      setError(els.linkedin, errs.evidence, "That does not look like a LinkedIn profile URL. It should start with https://www.linkedin.com/in/");
+      firstBad = firstBad || els.linkedin;
+    } else if (!link && !val(els.summary)) {
+      setError(els.linkedin, errs.evidence, "Please add either your LinkedIn profile or a short summary of your background.");
+      firstBad = firstBad || els.linkedin;
+    }
+
+    /* Length, checked in document order so the message names the first field
+       that is over. Reachable only when something other than typing put the
+       value there, because every one of these fields carries a maxlength. */
+    var order = ["first", "email", "years", "move", "linkedin", "summary", "timing"];
+    for (var i = 0; i < order.length; i++) {
+      var key = order[i];
+      if (val(els[key]).length > CAPS[key]) {
+        var el = els[key];
+        var errEl = key === "linkedin" ? errs.evidence : errs[key];
+        var message = CAP_LABELS[key] + " is longer than " + CAPS[key] + " characters. Please shorten it.";
+        if (errEl) setError(el, errEl, message);
+        else { els.formError.textContent = message; if (el) el.setAttribute("aria-invalid", "true"); }
+        firstBad = firstBad || el;
+      }
+    }
+
+    if (!els.consent.checked) {
+      setError(els.consent, errs.consent, "Please confirm Temidayo may read and reply to this request.");
+      firstBad = firstBad || els.consent;
+    }
+
+    if (firstBad) {
+      els.status.textContent = "There is a problem with the form. Please check the highlighted fields.";
+      try { firstBad.focus(); } catch (e) {}
+      return false;
+    }
+    return true;
+  }
+
+  function setBusy(busy) {
+    els.submit.disabled = busy;
+    els.submit.textContent = busy ? "Sending your request" : "Request a Career Move Review";
+    els.status.textContent = busy ? "Sending your request." : "";
+  }
+
+  function fail(code, message) {
+    setBusy(false);
+    els.formError.textContent = message;
+    els.status.textContent = message;
+    track("Career Move Review Request Failed", { reason: code });
+    try { els.formError.scrollIntoView({ block: "center", behavior: "smooth" }); } catch (e) {}
+  }
+
+  function succeed() {
+    form.setAttribute("hidden", "hidden");
+    els.result.classList.add("is-open");
+    els.status.textContent = "Your request has been received.";
+    try { els.result.focus(); } catch (e) {}
+    try { els.result.scrollIntoView({ block: "start", behavior: "smooth" }); } catch (e) {}
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (!validate()) return;
+    setBusy(true);
+
+    var payload = {
+      first_name: val(els.first),
+      email: val(els.email),
+      years_experience: val(els.years),
+      target_move: val(els.move),
+      evidence_link: val(els.linkedin),
+      evidence_summary: val(els.summary),
+      timing: val(els.timing),
+      contact_consent: els.consent.checked === true,
+      consent_timestamp: new Date().toISOString(),
+      policy_version: POLICY_VERSION,
+      review_reference: els.trap ? els.trap.value : ""
+    };
+
+    fetch("/api/career-move-review-request", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    })
+      .then(function (res) {
+        return res.json().catch(function () { return {}; }).then(function (data) {
+          return { status: res.status, ok: res.ok, data: data };
+        });
+      })
+      .then(function (r) {
+        /* Success is one thing only: the server confirmed it received and
+           forwarded the request. A 200 with anything else in the body is not
+           success and must not reveal the confirmation panel. */
+        if (r.ok && r.data && r.data.ok === true) {
+          track("Career Move Review Requested", {});
+          succeed();
+          return;
+        }
+        if (r.status === 429) { fail("rate_limited", "That is a lot of requests from this connection. Please wait a few minutes and try again."); return; }
+        /* The privacy wording changed while this page sat open. The consent on
+           screen is a consent to wording that is no longer the current wording,
+           so the server refused it. Reloading is the whole fix, and saying so
+           is better than a generic failure the person cannot act on. */
+        if (r.status === 409) { fail("policy_version_stale", "The privacy wording has been updated since this page was opened. Please refresh the page and send your request again."); return; }
+        /* The address here is the one already published elsewhere on this site,
+           temidayo@thedensitygroup.com. No new address was introduced. The
+           message deliberately tells the visitor NOT to send a resume or
+           confidential information at this stage: an unsolicited email is the
+           wrong place for either, and a resume is requested after acceptance. */
+        if (r.status === 503) { fail("not_configured", "The request form is temporarily unavailable. Please email your name and the move you are considering to temidayo@thedensitygroup.com. Do not send a resume or confidential information yet."); return; }
+        if (r.status === 400 && r.data && r.data.error === "consent_required") { fail("consent_required", "Please confirm Temidayo may read and reply to this request."); return; }
+        if (r.status === 400 && r.data && r.data.error === "evidence_required") { fail("evidence_required", "Please add either your LinkedIn profile or a short summary of your background."); return; }
+        if (r.status === 400 && r.data && r.data.error === "linkedin_url_invalid") { fail("linkedin_url_invalid", "That does not look like a LinkedIn profile URL. Please check it, or use the summary field instead."); return; }
+        if (r.status === 400 && r.data && r.data.error === "target_move_required") { fail("target_move_required", "Please describe the move you are considering."); return; }
+        if (r.status === 400 && r.data && r.data.error === "field_too_long") { fail("field_too_long", "One of your answers is longer than this form accepts. Please shorten it and try again."); return; }
+        if (r.status === 400) { fail("invalid", "Something in the form was not accepted. Please check your details and try again."); return; }
+        fail("failed", "Your request could not be sent. Please try again in a moment, or email temidayo@thedensitygroup.com.");
+      })
+      .catch(function () {
+        fail("network", "Your request could not be sent. Please check your connection and try again.");
+      });
+  });
+})();
+</script>
+
+<script defer src="/nav.js"></script>
+</body>
+</html>

@@ -165,6 +165,24 @@
   status = 301
   force = true
 
+# The Career Move Review, the one individual one-to-one advisory service. It
+# replaces the Private Capability Position Read, which was sold from a card on
+# /for-professionals with a mailto and never had a page of its own.
+#
+# Same two-rule shape as the Starter and the Career Decision Evidence Check
+# above: a 200 rewrite so the clean URL serves the file, and a forced 301 from
+# the .html form so one URL accumulates authority instead of two.
+[[redirects]]
+  from = "/career-move-review"
+  to = "/career-move-review.html"
+  status = 200
+
+[[redirects]]
+  from = "/career-move-review.html"
+  to = "/career-move-review"
+  status = 301
+  force = true
+
 # The Starter submission endpoint, under a clean path, rate limited.
 #
 # Same reasoning as the Career Decisions rule below, and the same numbers. The
@@ -186,6 +204,34 @@
   # an exceeded limit is refused with 429 rather than rewritten to a page, which
   # is right for a path only ever reached by the form's fetch. The page already
   # maps 429 to its own message.
+  #
+  # This sub-table must stay last in this rule. In TOML every key after it
+  # belongs to it, so a key added below would silently land inside the rate
+  # limit instead of on the redirect.
+  [redirects.rate_limit]
+    window_limit = 5
+    window_size = 180
+    aggregate_by = ["domain", "ip"]
+
+# The Career Move Review qualification intake, under a clean path, rate limited.
+#
+# Same reasoning and the same numbers as the two rules either side of it. The
+# function has no limiter of its own at all: it deliberately does not touch
+# Netlify Blobs, which has been failing site-wide since 2026-08-20, so a
+# Blobs-based limiter would be inert anyway and would only add a failure mode to
+# a path that takes personal career information.
+#
+# This limit is enforced by Netlify itself and depends on nothing this site
+# configures, so it holds whether or not Blobs recovers.
+[[redirects]]
+  from = "/api/career-move-review-request"
+  to = "/.netlify/functions/career-move-review-request"
+  status = 200
+  # Five submissions per 180 seconds from one address. A real applicant submits
+  # once; five leaves room for a retry after a network error and for two people
+  # behind one office address. No action is declared, so an exceeded limit is
+  # refused with 429 rather than rewritten to a page, which is right for a path
+  # only ever reached by the form's fetch. The page maps 429 to its own message.
   #
   # This sub-table must stay last in this rule. In TOML every key after it
   # belongs to it, so a key added below would silently land inside the rate
