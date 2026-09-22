@@ -1,0 +1,294 @@
+# -*- coding: utf-8 -*-
+"""Assemble the V12-V14 Phase 2 production pack."""
+import os, sys, zipfile, hashlib, datetime
+HERE = os.path.dirname(os.path.abspath(__file__))
+OUT = os.path.dirname(HERE)
+sys.path.insert(0, HERE)
+sys.path.append("/home/user/temidayoafonja-site/deliverables/VIDEOS_22-23/build")
+# Every module in this pack is prefixed p3_ because the house document helpers
+# insert their own build directories at the front of sys.path, which shadows bare
+# names like build, shorts and packaging.
+
+from docs23 import (base_doc, title_block, h, kv, para, callout, sub, caption,
+                    table, bullets, footer_note, page_break, spoken, section_label, rule)
+import p3_docs as DP
+import p3_blocks as B, p3_shorts as S, p3_production as PR, p3_descriptions as D
+import p3_provenance as PV, p3_packaging as PK, p3_qa as QA, p3_checks_script as CH
+import p3_changes as CG
+
+STAGE = os.path.join(HERE, "_stage")
+ZIPNAME = "YOUTUBE_V12-V14_FINAL_RECONCILED_PACK.zip"
+EYEBROW = DP.EYEBROW
+STAMP = DP.STAMP
+
+FILES = {}
+for n in (12, 13, 14):
+    d_ = "V%d" % n
+    if n == 14:
+        FILES[(n, "master")] = "V14/V14_RECONCILED_RECORDING_MASTER_WORKING.docx"
+        FILES[(n, "blocks")] = "V14/V14_RECONCILED_THOUGHT_BLOCKS_WORKING.docx"
+        FILES[(n, "prod")]   = "V14/V14_RECONCILED_PRODUCTION_PACKAGE_WORKING.docx"
+        FILES[(n, "shorts")] = "V14/V14_RECONCILED_SHORTS_WORKING.docx"
+        FILES[(n, "desc")]   = "V14/V14_RECONCILED_DESCRIPTION_METADATA_WORKING.docx"
+        FILES[(n, "prov")]   = "V14/V14_FINAL_SOURCE_PROVENANCE.docx"
+    else:
+        FILES[(n, "master")] = "%s/%s_FINAL_RECORDING_MASTER.docx" % (d_, d_)
+        FILES[(n, "blocks")] = "%s/%s_FINAL_THOUGHT_BLOCKS.docx" % (d_, d_)
+        FILES[(n, "prod")]   = "%s/%s_FINAL_PRODUCTION_PACKAGE.docx" % (d_, d_)
+        FILES[(n, "shorts")] = "%s/%s_FINAL_SHORTS.docx" % (d_, d_)
+        FILES[(n, "desc")]   = "%s/%s_FINAL_DESCRIPTION_METADATA.docx" % (d_, d_)
+        FILES[(n, "prov")]   = "%s/%s_FINAL_SOURCE_PROVENANCE.docx" % (d_, d_)
+
+OVERVIEW = "00_FINAL_RECONCILIATION_REPORT.docx"
+PACKDOC  = "V14/V14_FINAL_PACKAGING_DECISION.docx"
+QADOC    = "00_V12-V14_FINAL_QA_CHECKLIST.docx"
+
+# ------------------------------------------------------------------ extra documents
+def overview(path, rows):
+    d = base_doc()
+    title_block(d, EYEBROW, "V12 to V14 final reconciliation",
+                "What changed, what was protected, and what still needs a decision")
+    kv(d, "Generated", STAMP)
+    kv(d, "Scope", "Three videos reconciled. V12 and V13 are final. V14 is complete and stays "
+                   "working until its packaging is approved.")
+    kv(d, "Branch", "claude/video-1-slides-deck-go9bzy")
+    callout(d, "Not a rebuild. The three revised masters were read in full and treated as "
+               "proposed wording, not as authority, and FINAL in a filename decided nothing. "
+               "V4 to V11 were not opened. No historical source file was renumbered, "
+               "overwritten or deleted. Work stops at V14.")
+
+    h(d, "Spoken word counts and runtime estimates")
+    table(d, ["#", "Title", "Spoken words", "At 145 wpm", "At 130 wpm"],
+          [[DP.META[n]["number"], DP.META[n]["title"] + ("  [working]" if DP.META[n]["status"] else ""),
+            "{:,}".format(DP.words(n)), DP.runtime(n, 145), DP.runtime(n, 130)]
+           for n in (12, 13, 14)], widths=[0.5, 3.1, 1.0, 1.05, 1.05])
+    caption(d, "Word counts are exact: whitespace-delimited tokens of the spoken stream, counted "
+               "back off these built documents and cross-checked against the script modules. "
+               "Both runtime columns are ESTIMATES. They are arithmetic on the word count, not "
+               "measurements. Runtime stays an estimate until footage exists, and the finished "
+               "edit will run longer because of full-screen holds.")
+    para(d, "V12 moved from 1,266 to %s spoken words, V13 from 1,457 to %s, and V14 from 1,398 "
+            "to %s. Every increase is the reconciliation putting words back, not new teaching."
+          % ("{:,}".format(DP.words(12)), "{:,}".format(DP.words(13)), "{:,}".format(DP.words(14))))
+
+    for n in (12, 13, 14):
+        page_break(d)
+        h(d, "Exact changes made to %s" % DP.META[n]["number"])
+        table(d, ["Was", "Is now", "Why"],
+              [[a, b, c] for a, b, c in CG.CHANGES[n]], widths=[2.3, 2.4, 2.0])
+
+    page_break(d)
+    h(d, "Strong lines deliberately preserved")
+    for n in (12, 13, 14):
+        sub(d, DP.META[n]["number"])
+        bullets(d, CG.PRESERVED[n])
+    para(d, "Thirteen of these are exact sentences and are checked word for word against the "
+            "built masters at build time. If any one of them were dropped or edited, the build "
+            "would report it rather than ship.")
+
+    h(d, "V14 packaging candidates")
+    table(d, ["", "Title", "Thumbnail", "Where it came from"],
+          [[o["k"], o["title"], o["thumb"], o["source"]] for o in PK.OPTIONS],
+          widths=[0.3, 2.5, 1.9, 2.0])
+    sub(d, "Recommended")
+    rec = [o for o in PK.OPTIONS if o["k"] == PK.RECOMMENDED][0]
+    callout(d, "%s: %s  /  %s. %s" % (PK.LABEL, rec["title"], rec["thumb"], PK.WHY))
+    para(d, "The full assessment against all nine criteria is in V14_FINAL_PACKAGING_DECISION "
+            "inside this pack. " + PK.RETIRED)
+
+    h(d, "Final CTA for each video, and why")
+    for n in (12, 13, 14):
+        name, url, why = CG.CTA[n]
+        sub(d, "%s  \u00b7  %s" % (DP.META[n]["number"], name))
+        kv(d, "Link", url)
+        para(d, why)
+    caption(d, "One primary ask per video. V13 and V14 point to the same resource because they "
+               "leave the viewer with the same unresolved problem, not because of slot order.")
+
+    page_break(d)
+    h(d, "Evidence and provenance checks performed")
+    bullets(d, [
+      "The three revised masters and the editorial review were read paragraph by paragraph "
+      "before anything was changed, and each is recorded with its SHA-256 in every provenance "
+      "file it fed.",
+      "No posting fact changed in this pass. The four coded postings quoted on camera, Humana "
+      "H10, Wells Fargo F1, Mass General Brigham H8 and J.P. Morgan Wealth Management F5, still "
+      "carry the same URL, collection date, capture route and hard-versus-preferred coding as "
+      "the checksummed September 10, 2026 research record.",
+      "V13's denominators were re-verified in the built documents: about 55 surfaced, 40 read in "
+      "full, 28 retained, 18 exclusion log entries, 10 healthcare, 10 financial services, 8 "
+      "technology, all collected September 10, 2026.",
+      "No new research was conducted. No posting URL was re-fetched.",
+      "The workspace was searched for a Career Move Review page or URL. There is none.",
+    ])
+
+    h(d, "Scripture verification status")
+    callout(d, PV.SCRIPTURE)
+
+    h(d, "QA actually performed")
+    kv(d, "Checks run against the built files", "%d" % sum(1 for r in rows if r["state"] == QA.PERFORMED))
+    kv(d, "Passing", "%d" % sum(1 for r in rows if r["ok"]))
+    table(d, ["#", "Check", "Result"],
+          [["%02d" % r["n"], r["name"], "pass" if r["ok"] else "FAIL"] for r in rows],
+          widths=[0.45, 5.3, 0.95])
+    para(d, "These ran against the documents in this pack, not against the source modules. The "
+            "full detail, and the list of what was not performed, is in the QA checklist inside "
+            "this pack.")
+
+    h(d, "Still requiring Temidayo's decision")
+    for name, why in CG.APPROVALS:
+        sub(d, name)
+        para(d, why)
+    callout(d, "Nothing in this pack is described as production ready. Six items above are open, "
+               "and the scripture wording and the V14 packaging are both blocking for publication.")
+    footer_note(d, "Every figure in this report is read from the build at generation time.")
+    d.save(path)
+
+def packaging_doc(path):
+    d = base_doc()
+    title_block(d, EYEBROW, "V14 final packaging decision",
+                "Three candidates, assessed against the reconciled script")
+    kv(d, "Generated", STAMP)
+    callout(d, "WORKING \u2014 PACKAGING PENDING TEMIDAYO APPROVAL. The V14 script in this pack "
+               "is built on candidate %s as a working assumption. No spoken line names the title "
+               "or the thumbnail, so any of the three can be adopted without a re-record."
+            % PK.RECOMMENDED)
+    para(d, PK.RETIRED)
+    for o in PK.OPTIONS:
+        flag = "   " + PK.LABEL if o["k"] == PK.RECOMMENDED else ""
+        h(d, "CANDIDATE %s%s" % (o["k"], flag))
+        kv(d, "Title", o["title"])
+        kv(d, "Thumbnail", o["thumb"])
+        kv(d, "Where it came from", o["source"])
+        kv(d, "Curiosity gap", o["gap"])
+        sub(d, "Why it fits this actual video")
+        para(d, o["fit"])
+        sub(d, "What it costs")
+        para(d, o["cost"])
+    h(d, "Assessed against")
+    table(d, ["Criterion", "Read"], [[a, b] for a, b in PK.CRITERIA], widths=[1.9, 4.8])
+    h(d, "The recommendation")
+    para(d, PK.WHY)
+    h(d, "What changes if a different candidate is chosen")
+    bullets(d, PK.SWAP_POINTS)
+    h(d, "Excluded")
+    para(d, "\u201c%s\u201d was not developed, as instructed." % PK.EXCLUDED)
+    d.save(path)
+
+def qa_doc(path, ctx):
+    rows = QA.run(ctx)
+    d = base_doc()
+    title_block(d, EYEBROW, "QA checklist", "Twenty items, run against the files in this pack")
+    kv(d, "Generated", STAMP)
+    kv(d, "Items run", "%d" % sum(1 for r in rows if r["state"] == QA.PERFORMED))
+    kv(d, "Items passing", "%d" % sum(1 for r in rows if r["ok"]))
+    callout(d, "These twenty checks were actually executed against the built documents on disk, "
+               "not against the source modules. Anything that was not performed is listed at the "
+               "end of this document instead of being counted here. Nothing in this pack is "
+               "described as fully verified, production ready, or QA passed.")
+    table(d, ["#", "Check", "Result", "Detail"],
+          [["%02d" % r["n"], r["name"], ("pass" if r["ok"] else "FAIL"), r["detail"]]
+           for r in rows], widths=[0.4, 2.15, 0.6, 3.55])
+    h(d, "Not performed, and why")
+    for name, why in QA.NOT_DONE:
+        sub(d, name)
+        para(d, why)
+    footer_note(d, "%d checks ran and %d passed. The remaining work listed above is real and "
+                   "is not covered by any result on this page."
+                % (sum(1 for r in rows if r["state"] == QA.PERFORMED),
+                   sum(1 for r in rows if r["ok"])))
+    d.save(path)
+    return rows
+
+# ------------------------------------------------------------------ assemble
+
+FIXED = (2026, 9, 22, 0, 0, 0)
+
+def normalize(path):
+    """Rewrite a .docx so two builds of the same content produce the same bytes.
+
+    python-docx stamps each entry with the current time and sets core properties from
+    the clock, so an untouched pack would hash differently every run. Entry order is
+    preserved; only the timestamps are fixed.
+    """
+    import re as _re, shutil, tempfile
+    with zipfile.ZipFile(path) as z:
+        items = [(i, z.read(i.filename)) for i in z.infolist()]
+    stamp = "2026-09-21T00:00:00Z"
+    out = []
+    for info, data in items:
+        if info.filename == "docProps/core.xml":
+            t = data.decode("utf-8")
+            t = _re.sub(r"(<dcterms:(?:created|modified)[^>]*>)[^<]*(</dcterms:)",
+                        r"\g<1>" + stamp + r"\g<2>", t)
+            data = t.encode("utf-8")
+        out.append((info.filename, info.compress_type, data))
+    tmp = path + ".tmp"
+    with zipfile.ZipFile(tmp, "w") as z:
+        for name, ctype, data in out:
+            zi = zipfile.ZipInfo(name, date_time=FIXED)
+            zi.compress_type = ctype
+            zi.external_attr = 0o644 << 16
+            z.writestr(zi, data)
+    os.replace(tmp, path)
+
+def sha256(p):
+    h_ = hashlib.sha256()
+    with open(p, "rb") as f:
+        for b in iter(lambda: f.read(1 << 16), b""):
+            h_.update(b)
+    return h_.hexdigest()
+
+def main():
+    os.makedirs(STAGE, exist_ok=True)
+    import shutil
+    if os.path.isdir(STAGE):
+        shutil.rmtree(STAGE)
+    for n in (12, 13, 14):
+        os.makedirs(os.path.join(STAGE, os.path.dirname(FILES[(n, "master")])), exist_ok=True)
+    def full(rel):
+        p = os.path.join(STAGE, rel)
+        os.makedirs(os.path.dirname(p) or STAGE, exist_ok=True)
+        return p
+    for n in (12, 13, 14):
+        DP.recording_master(full(FILES[(n, "master")]), n)
+        DP.thought_blocks(full(FILES[(n, "blocks")]), n)
+        DP.production_package(full(FILES[(n, "prod")]), n)
+        DP.shorts_doc(full(FILES[(n, "shorts")]), n)
+        DP.description_doc(full(FILES[(n, "desc")]), n)
+        DP.provenance_doc(full(FILES[(n, "prov")]), n)
+    packaging_doc(full(PACKDOC))
+    ctx = QA.Ctx(STAGE, FILES)
+    rows = qa_doc(full(QADOC), ctx)
+    overview(full(OVERVIEW), rows)
+
+    names = sorted(os.path.relpath(os.path.join(r, f), STAGE)
+                   for r, _, fs in os.walk(STAGE) for f in fs)
+    for rel in names:
+        if rel.endswith(".docx"):
+            normalize(os.path.join(STAGE, rel))
+    zpath = os.path.join(OUT, ZIPNAME)
+    with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as z:
+        for rel in names:
+            zi = zipfile.ZipInfo(rel.replace(os.sep, "/"), date_time=FIXED)
+            zi.compress_type = zipfile.ZIP_DEFLATED
+            zi.external_attr = 0o644 << 16
+            with open(os.path.join(STAGE, rel), "rb") as f:
+                z.writestr(zi, f.read())
+    with open(zpath + ".sha256", "w") as f:
+        f.write("%s  %s\n" % (sha256(zpath), ZIPNAME))
+    return zpath, names, rows
+
+if __name__ == "__main__":
+    zp, names, rows = main()
+    bad = [r for r in rows if not r["ok"]]
+    for r in rows:
+        print(("  ok  " if r["ok"] else " FAIL ") + "%02d %s" % (r["n"], r["name"]))
+        if not r["ok"]:
+            print("        " + r["detail"][:300])
+    print("\n%d files" % len(names))
+    for x in names: print("   ", x)
+    print("\n%s\n%s" % (zp, sha256(zp)))
+    print("QA: %d run, %d passed, %d failed"
+          % (sum(1 for r in rows if r["state"] == QA.PERFORMED),
+             len(rows) - len(bad), len(bad)))
