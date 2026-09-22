@@ -459,7 +459,7 @@
       "/speaking.html", "/book.html", "/privacy.html", "/terms.html",
       "/diagnostic", "/organizational-diagnostic",
       "/career-decisions", "/career-evidence-starter", "/keep-the-proof",
-      "/fieldkit", "/career-move-review"
+      "/fieldkit", "/career-move-review", "/start-here"
     ],
     "unlisted": ["/ai-capability-readiness"],
     "unlisted_note": "Live and reachable by URL, but deliberately absent from sitemap.xml, the navigation and every footer, and carrying noindex, nofollow. Operator decision 2026-09-18.",
@@ -468,6 +468,17 @@
       "Four routes were added on 2026-09-17. /career-move-review is new. The other three",
       "were live and missing: /career-evidence-starter, and the two paid individual products",
       "/keep-the-proof and /fieldkit, neither of which was in this list or in sitemap.xml."
+    ],
+    "canonical_drift_note": [
+      "Checked 2026-09-21 while adding /start-here. This list names sitemap.xml as its",
+      "source and is currently one route behind it: /career-evidence-starter is in the",
+      "sitemap but was never added here. That drift predates this change and is left as",
+      "found rather than corrected inside a pass about a different page. Worth",
+      "reconciling deliberately.",
+      "CLOSED 2026-09-22 by the merge that brought /start-here into this branch. The drift",
+      "described above is resolved: /career-evidence-starter is now in this list, added by",
+      "the 2026-09-17 change recorded in canonical_note. Both records are kept so neither",
+      "side's history is lost."
     ],
     "career_decisions_note": [
       "Added August 17 2026. /career-decisions is a URL and nothing else. The public-facing name",
