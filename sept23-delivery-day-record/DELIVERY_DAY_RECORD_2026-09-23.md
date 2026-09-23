@@ -22,10 +22,13 @@ fields were never touched.
 | File | What it is |
 | --- | --- |
 | `INPUT_GoogleSlides_export_2026-09-23.pptx` | The owner's presenting copy as exported from Google Slides on delivery day. This is the input the two scripts run against. `sha256 61e6fb943c349a6e23a0aaf36b20c91bd5560ad61dfb1c67e6e4b24dc32fdca5` |
-| `PRESENTER_VERSION_..._v2.0.7_CANDIDATE_s12-clarifier_s20-reordered.pptx` | The delivered presenting copy, all three changes applied. `sha256 4e2131ecf95f6d717db18295995b2c810cbfaf6644abc2bfc1542817026c5247` |
+| `PRESENTER_VERSION_..._v2.0.7_CANDIDATE_s12-numbered_s20-reordered.pptx` | **The delivered presenting copy**, all four changes applied. `sha256 30887393ccb7da96bb0018cb899b5bc75bde89344261958f6d413cd6fd7c15c9` |
+| `PRESENTER_VERSION_..._v2.0.7_CANDIDATE_s12-clarifier_s20-reordered.pptx` | The same copy before the squares were numbered, kept as the step it was built from. `sha256 4e2131ecf95f6d717db18295995b2c810cbfaf6644abc2bfc1542817026c5247` |
 | `PREVIEW_Presenting_Copy_2026-09-23_LibreOffice.pdf` | 26-page render of the above |
 | `SOURCE_add_s12_clarifier.py` | Change 1 |
 | `SOURCE_fix_s20.py` | Changes 2 and 3 |
+| `SOURCE_add_s12_numbers.py` | Change 4 |
+| `RUN_SHEET_Sept23_2026_60MIN_onepage.pdf`, `SOURCE_build_run_sheet.py` | One-page facilitator run sheet: timings, slide numbers and workbook pages, read from the delivered copy's own speaker notes |
 | `RENDER_slide12_clarifier.png`, `RENDER_slide20_reordered.png` | The two changed slides as rendered |
 
 ## The three changes
@@ -96,6 +99,28 @@ nothing in participants' hands contradicts the new order.
 prohibits deepening the heaviest square for the room. Ordering the four is not
 favouring one, so the note still holds.
 
+### 4. Slide 12 — the four squares numbered
+
+The square labels now read `1  STAGNANT`, `2  DEPTH TRAP`, `3  FRAGILE`,
+`4  COMPOUNDING`, in the same order slide 20 runs in, so the two slides agree and
+the climb is visible to the room rather than living only in the presenter's head.
+
+Each numeral is its own run in front of the existing label run, so every label
+keeps its exact font, size, weight and colour and nothing on the slide moves. No
+new shapes.
+
+The numeral takes the panel's secondary accent so it reads as an order marker and
+not as part of the state's name: gold `C9A84C` on the three light panels, where
+the label is navy, and `B8C5D9` on the navy panel, where the label is gold and
+that tone is already in use for the panel's own text.
+
+**Open conflict, deliberately left standing.** Slide 12's speaker note says the
+matrix is "not a ranking, and not a square to aim for." Visible numerals assert
+an order. The owner's own ranking text is already pasted into that note in the
+presenting copy, so the conflict predates this change and was accepted knowingly.
+The note was not edited. At promotion, either the note or the numerals should
+move, not both stay as they are.
+
 ## Narrowness, as asserted by the scripts
 
 Both scripts fail rather than save if any of this is untrue, and both passed:
@@ -109,7 +134,7 @@ Both scripts fail rather than save if any of this is untrue, and both passed:
 
 ## Open item for the CANDIDATE to FINAL promotion
 
-The presenting copy and the frozen artifact now differ in three ways, all
+The presenting copy and the frozen artifact now differ in four ways, all
 recorded above. At promotion, decide each one deliberately:
 
 1. **Slide 12 clarifier** — carry into the FINAL deck, or keep it as a spoken
@@ -118,6 +143,10 @@ recorded above. At promotion, decide each one deliberately:
    squares.
 2. **Slide 20 reorder and chip colour** — carry into the FINAL deck or revert.
 3. **The duplicate** — a defect of the Google Slides copy only. Nothing to carry.
+4. **Slide 12's numerals** — carry into the FINAL deck or revert, and settle the
+   "not a ranking" wording in the speaker note either way. Note that workbook
+   page 7 carries the same grid unnumbered, so if the numerals are carried, the
+   workbook and the deck would differ on the same four squares.
 
 Still deferred and **not** to be addressed as part of promotion: the review of
 Optionality statements 7, 10 and 12, and the "Fragile" label connotation.
