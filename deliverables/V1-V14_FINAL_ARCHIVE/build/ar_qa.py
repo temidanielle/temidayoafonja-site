@@ -50,7 +50,10 @@ def run(zpath):
                hashlib.sha256(open(src, "rb").read()).hexdigest():
                 mism.append("V%d %s differs from its source" % (n, inzip))
     check(7, "Every archived file is byte-for-byte its approved source", not mism,
-          mism or "28 files, all identical to the approved originals")
+          mism or "28 files, all identical to the source they were copied from. "
+                  "For V2 and V3 that source is the September 23 repaired file, "
+                  "whose only difference from the upload is that the section "
+                  "label became its own paragraph.")
 
     # titles and thumbnails
     tb = []
@@ -94,10 +97,11 @@ def run(zpath):
     # no script rewritten: every archived master is identical to its source,
     # already proved by check 7. This one guards the V1-V3 case specifically.
     check(15, "No script was rewritten during archiving",
-          not mism and rows[1]["words"] == 915 and rows[2]["words"] == 892
-          and rows[3]["words"] == 928,
-          "V1 915, V2 892 and V3 928 words, matching the uploaded sources "
-          "with the fused label counted as the source counts it")
+          not mism and rows[1]["words"] == 915 and rows[2]["words"] == 888
+          and rows[3]["words"] == 923,
+          "V1 915, V2 888 and V3 923 words. V2 and V3 moved by four and five "
+          "words only because their section label stopped being counted as "
+          "speech.")
 
     # CTA and Watch Next
     wn = [n for n in sorted(S.SRC)
@@ -156,9 +160,35 @@ def run(zpath):
     check(23, "All source checksums are recorded in the manifest",
           not missing_sha, missing_sha or "fourteen master checksums present")
 
-    check(24, "The fused label in V2 and V3 is recorded, not repaired",
-          rows[2]["fused"] and rows[3]["fused"] and "NOT repaired" in D.FUSED_NOTE,
-          "present in both source files identically, so parity is unaffected")
+    import ar_repair as R
+    rep = R.verify()
+    check(24, "The V2 and V3 section-label repair changed no spoken word",
+          all(r["clean"] for r in rep)
+          and not rows[2]["fused"] and not rows[3]["fused"]
+          and "RESOLVED SEPTEMBER 23, 2026" in D.FUSED_NOTE,
+          "verified token by token against the pre-repair files: the only "
+          "difference in each spoken stream is the label's own words. V2 892 "
+          "to 888, V3 928 to 923, in master and blocks alike.")
+    check(26, "The pre-repair originals are recorded with their checksums",
+          all(hashlib.sha256(open(S.PRE_REPAIR[n][i], "rb").read()).hexdigest()
+              in body for n in (2, 3) for i in (0, 1)),
+          "four pre-repair checksums present in the manifest")
+    import ar_build as BB
+    dz = os.path.join(os.path.dirname(HERE), BB.DOCSZIP)
+    dn = zipfile.ZipFile(dz).namelist()
+    check(27, "The documents-only archive carries every document and no "
+              "production package",
+          all("/03_PRODUCTION_ASSETS_REFERENCE/" not in x for x in dn)
+          and len([x for x in dn if "/01_RECORDING_MASTERS/" in x]) == 14
+          and len([x for x in dn if "/02_THOUGHT_BLOCKS/" in x]) == 14
+          and len([x for x in dn if "/00_SOURCE_OF_TRUTH/" in x]) == 3
+          and any("/04_DRAFT" in x for x in dn)
+          and any("/05_PROVENANCE" in x for x in dn),
+          "%d files, %.1f MiB, under the 30 MiB limit"
+          % (len(dn), os.path.getsize(dz) / 1048576.0))
+    check(28, "The full archive still carries the production packages unchanged",
+          len([x for x in names if "/03_PRODUCTION_ASSETS_REFERENCE/" in x]) == 4,
+          "four packages, copied not rebuilt")
 
     # V15+ untouched
     check(25, "V15 and above were not modified",

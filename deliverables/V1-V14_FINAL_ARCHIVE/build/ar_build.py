@@ -18,6 +18,7 @@ import ar_sources as S, ar_parity as P, ar_data as D
 ROOT = "CAPABILITY_FORMATION_YOUTUBE_V1-V14_FINAL_LOCKED_MASTER_ARCHIVE"
 STAGE = os.path.join(HERE, "_stage", ROOT)
 ZIPNAME = ROOT + ".zip"
+DOCSZIP = "CAPABILITY_FORMATION_YOUTUBE_V1-V14_FINAL_LOCKED_DOCUMENTS_ONLY.zip"
 MANIFEST = "V1-V14_FINAL_LOCKED_SOURCE_OF_TRUTH_MANIFEST.docx"
 SUPERSESSION = "V1-V14_SUPERSESSION_AND_ARCHIVE_STATUS.docx"
 RECON = "V4-V14_STICKY_REALIZATION_RECONCILIATION.docx"
@@ -89,12 +90,18 @@ def manifest(path, rows):
         if note:
             sub(d, "Provenance note")
             para(d, note)
-        if r["fused"]:
-            sub(d, "Source formatting note")
-            para(d, "This file carries the fused section label described in "
-                    "00_SOURCE_OF_TRUTH. It was recorded, not repaired.")
+        if n in S.PRE_REPAIR:
+            sub(d, "Formatting repair")
+            kv(d, "Status", S.REPAIR_NOTE)
+            kv(d, "Pre-repair master", os.path.basename(S.PRE_REPAIR[n][0]))
+            kv(d, "Pre-repair master checksum", sha256(S.PRE_REPAIR[n][0]))
+            kv(d, "Pre-repair thought blocks", os.path.basename(S.PRE_REPAIR[n][1]))
+            kv(d, "Pre-repair blocks checksum", sha256(S.PRE_REPAIR[n][1]))
+            para(d, "The section label became its own paragraph. No spoken "
+                    "word changed. The spoken count moved only because the "
+                    "label stopped being counted as speech.")
     page_break(d)
-    h(d, "The fused label in V2 and V3")
+    h(d, "The V2 and V3 section-label repair")
     para(d, D.FUSED_NOTE)
     h(d, "Recurring Capability Formation ideas, preserved")
     table(d, ["Idea", "Where", "Status"],
@@ -238,13 +245,31 @@ def main():
                 z.writestr(zi, fh.read())
     with open(zpath + ".sha256", "w") as fh:
         fh.write("%s  %s\n" % (sha256(zpath), ZIPNAME))
-    return zpath, names, rows, copies
+
+    # A sendable documents-only archive: everything except the production
+    # reference packages, which are the whole of the size. Nothing in those
+    # packages is rebuilt or altered by leaving them out; the full archive
+    # above still carries them.
+    doc_names = [x for x in names if "/03_PRODUCTION_ASSETS_REFERENCE/" not in x]
+    dpath = os.path.join(OUT, DOCSZIP)
+    with zipfile.ZipFile(dpath, "w", zipfile.ZIP_DEFLATED, compresslevel=6) as z:
+        for rel in doc_names:
+            zi = zipfile.ZipInfo(rel.replace(os.sep, "/"), date_time=FIXED)
+            zi.compress_type = zipfile.ZIP_DEFLATED
+            zi.external_attr = 0o644 << 16
+            with open(os.path.join(os.path.dirname(STAGE), rel), "rb") as fh:
+                z.writestr(zi, fh.read())
+    with open(dpath + ".sha256", "w") as fh:
+        fh.write("%s  %s\n" % (sha256(dpath), DOCSZIP))
+    return zpath, names, rows, copies, dpath, doc_names
 
 if __name__ == "__main__":
-    zp, names, rows, copies = main()
+    zp, names, rows, copies, dp, dnames = main()
     ident = [n for n, ms, md, bs, bd in copies
              if sha256(ms) != sha256(md) or sha256(bs) != sha256(bd)]
-    print("byte-for-byte copies that do not match their source:", ident or "none")
-    print("%d files" % len(names))
-    print("%s" % zp)
-    print(sha256(zp))
+    print("archived copies that do not match their source:", ident or "none")
+    print("full archive      %d files  %s" % (len(names), os.path.basename(zp)))
+    print("                  %s" % sha256(zp))
+    print("documents only    %d files  %s" % (len(dnames), os.path.basename(dp)))
+    print("                  %s" % sha256(dp))
+    print("                  %.1f MiB" % (os.path.getsize(dp) / 1048576.0))

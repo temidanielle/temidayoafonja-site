@@ -52,6 +52,33 @@ for n in (13, 14):
               "From the committed V13-V14_PUBLIC_EMPLOYER_ANONYMIZATION_PATCH.zip, "
               "which supersedes the locked version of this video. LOCKED AS-IS.")
 
+# The two authorized formatting repairs of September 23, 2026. V2 and V3 now
+# point at the repaired files. The uploads they were made from are recorded
+# below so the repair stays auditable: the only difference is that the section
+# label became its own paragraph.
+REPAIRED_DIR = os.path.join(os.path.dirname(os.path.dirname(
+    os.path.abspath(__file__))), "V1-V14_FINAL_ARCHIVE", "_repaired")
+if not os.path.isdir(REPAIRED_DIR):
+    REPAIRED_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                "..", "_repaired")
+
+PRE_REPAIR = {}
+for _n in (2, 3):
+    PRE_REPAIR[_n] = (SRC[_n][0], SRC[_n][1])
+    SRC[_n] = (os.path.normpath(os.path.join(
+                   REPAIRED_DIR,
+                   "V%d_FINAL_Sticky_Realization_Recording_Master.docx" % _n)),
+               os.path.normpath(os.path.join(
+                   REPAIRED_DIR,
+                   "V%d_FINAL_Sticky_Realization_Thought_Blocks.docx" % _n)),
+               "sticky",
+               SRC[_n][3] + " The fused section label was separated on "
+               "September 23, 2026 as an authorized formatting-only repair. No "
+               "spoken word changed.")
+
+REPAIR_NOTE = ("RESOLVED SEPTEMBER 23, 2026 \u2014 FORMATTING ONLY. NO SPOKEN "
+               "WORDING CHANGED.")
+
 ZIP_SOURCES = [
  ("V12", DELIV + "V12-V14_LOCKED/YOUTUBE_V12-V14_FINAL_LOCKED_PACK.zip"),
  ("V13 and V14", DELIV + "V13-V14_ANON/V13-V14_PUBLIC_EMPLOYER_ANONYMIZATION_PATCH.zip"),

@@ -127,21 +127,31 @@ PROVENANCE_NOTES = {
 }
 
 FUSED_NOTE = (
- "V2 and V3 carry a formatting condition in their approved source: a section "
- "label runs into the first spoken sentence with no paragraph break, "
- "“READ THE LAST 90 DAYSThen look at…” in V2 and “KEEP THE "
- "PROOF, NOT THE PROPERTYSo here is the rule…” in V3. The same fusion "
- "is present in both the recording master and the thought-block copy, "
- "identically, so parity is unaffected and both files read 892 and 928 spoken "
- "words with the label counted. It was NOT repaired in this archive, because "
- "repairing it would mean editing an approved source during a packaging task. "
- "The V1-V3 production build separates the label, which is why that build "
- "reports 888 and 923: the difference is four and five label tokens, and no "
- "spoken word differs. Recorded here so the two counts never look like a "
- "discrepancy.")
+ "RESOLVED SEPTEMBER 23, 2026 \u2014 FORMATTING ONLY. NO SPOKEN WORDING "
+ "CHANGED.\n\n"
+ "V2 and V3 each carried a section label that sat inside the first spoken "
+ "paragraph rather than in a paragraph of its own, separated from the sentence "
+ "by a line break: READ THE LAST 90 DAYS in V2 and KEEP THE PROOF, NOT THE "
+ "PROPERTY in V3. In Word the label already looked like its own line. It "
+ "simply was not its own paragraph, so any paragraph-level reader counted the "
+ "label as speech. The same condition was present in the recording master and "
+ "the thought-block copy of each video, identically.\n\n"
+ "Temidayo authorized the repair on September 23, 2026 as a formatting-only "
+ "correction. Each label is now its own paragraph, formatted exactly like the "
+ "other section labels in the same file, and marked NOT SPOKEN in the "
+ "thought-block copies as the other labels are. No spoken word was changed, "
+ "added or removed, and no punctuation inside any spoken sentence was "
+ "touched. The change was verified token by token against the pre-repair "
+ "files: the only difference in either spoken stream is that the label's own "
+ "words stopped being counted.\n\n"
+ "V2 now reads 888 spoken words and V3 reads 923, in both the master and the "
+ "thought-block copy, which is the count the production build already used. "
+ "The two counts no longer differ. A scan of all twenty-eight archived files "
+ "found these four paragraphs and no others carrying a line break, so no "
+ "other word count in this archive was affected.")
 
 CURRENT = [
- "The fourteen recording masters in 01_RECORDING_MASTERS.",
+ "The fourteen recording masters in 01_RECORDING_MASTERS. V2 and V3 carry the\n  authorized formatting repair of September 23, 2026.",
  "The fourteen thought-block copies in 02_THOUGHT_BLOCKS.",
  "The three documents in 00_SOURCE_OF_TRUTH.",
  "The production packages referenced in 03_PRODUCTION_ASSETS_REFERENCE, each "
@@ -226,7 +236,7 @@ NOT_DONE = [
                                     "workspace, so those descriptions were not "
                                     "promoted. Flagged, not fixed."),
  ("V15 and above", "Not opened."),
- ("The fused label in V2 and V3", "Recorded, not repaired. Repairing it would "
-                                  "mean editing an approved source during a "
-                                  "packaging task."),
+ ("The fused label in V2 and V3", "RESOLVED September 23, 2026 under "
+                                  "explicit authorization. Formatting only. No "
+                                  "spoken wording changed."),
 ]
