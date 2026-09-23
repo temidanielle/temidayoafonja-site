@@ -2,7 +2,7 @@
 
 Stay or Leave? Live Career Growth Assessment · 60 minutes · 6:00 PM CT
 
-This folder records three changes made to the **presenting copy** on delivery
+This folder records five changes made to the **presenting copy** on delivery
 day. It is not a new version of the September 23 package and it does not reopen
 the freeze. The frozen CANDIDATE family in `sept23-v208-assets/` was not edited,
 renamed or rebuilt, and the workbook PDF was read only.
@@ -21,17 +21,19 @@ fields were never touched.
 
 | File | What it is |
 | --- | --- |
-| `INPUT_GoogleSlides_export_2026-09-23.pptx` | The owner's presenting copy as exported from Google Slides on delivery day. This is the input the two scripts run against. `sha256 61e6fb943c349a6e23a0aaf36b20c91bd5560ad61dfb1c67e6e4b24dc32fdca5` |
-| `PRESENTER_VERSION_..._v2.0.7_CANDIDATE_s12-numbered_s20-reordered.pptx` | **The delivered presenting copy**, all four changes applied. `sha256 30887393ccb7da96bb0018cb899b5bc75bde89344261958f6d413cd6fd7c15c9` |
+| `INPUT_GoogleSlides_export_2026-09-23.pptx` | The owner's presenting copy as exported from Google Slides on delivery day. This is the input the change scripts run against, in order. `sha256 61e6fb943c349a6e23a0aaf36b20c91bd5560ad61dfb1c67e6e4b24dc32fdca5` |
+| `PRESENTER_VERSION_..._v2.0.7_CANDIDATE_s3-tease_s12-numbered_s20-reordered.pptx` | **The delivered presenting copy**, all five changes applied. `sha256 ebeed9667dcf45138f32214911f4c0ab483ef3ee1a7be4f882ba0d7d1bfdd4f9` |
+| `PRESENTER_VERSION_..._v2.0.7_CANDIDATE_s12-numbered_s20-reordered.pptx` | The same copy before the slide 3 tease. `sha256 30887393ccb7da96bb0018cb899b5bc75bde89344261958f6d413cd6fd7c15c9` |
 | `PRESENTER_VERSION_..._v2.0.7_CANDIDATE_s12-clarifier_s20-reordered.pptx` | The same copy before the squares were numbered, kept as the step it was built from. `sha256 4e2131ecf95f6d717db18295995b2c810cbfaf6644abc2bfc1542817026c5247` |
 | `PREVIEW_Presenting_Copy_2026-09-23_LibreOffice.pdf` | 26-page render of the above |
 | `SOURCE_add_s12_clarifier.py` | Change 1 |
 | `SOURCE_fix_s20.py` | Changes 2 and 3 |
 | `SOURCE_add_s12_numbers.py` | Change 4 |
+| `SOURCE_add_s3_tease.py` | Change 5 |
 | `RUN_SHEET_Sept23_2026_60MIN_onepage.pdf`, `SOURCE_build_run_sheet.py` | One-page facilitator run sheet: timings, slide numbers and workbook pages, read from the delivered copy's own speaker notes |
 | `RENDER_slide12_clarifier.png`, `RENDER_slide20_reordered.png` | The two changed slides as rendered |
 
-## The three changes
+## The five changes
 
 ### 1. Slide 12 — Fragile / Stagnant clarifier
 
@@ -121,6 +123,26 @@ presenting copy, so the conflict predates this change and was accepted knowingly
 The note was not edited. At promotion, either the note or the numerals should
 move, not both stay as they are.
 
+### 5. Slide 3 — the boundary slide teases the seven categories
+
+The IT WILL row already promised "one category of move your evidence supports
+testing". It never said there are seven, and it never said when. Both are the
+reason to stay, because the categories land at 38:00, long after the first read.
+
+> Give you a defensible reading of your current position, and at minute 38,
+> **all seven categories of move**, then the one your evidence supports testing.
+
+"all seven categories of move" is bold so the promise carries at a glance. It is
+its own run inside the same text box, so the row keeps its font, size and colour,
+nothing moves, and no shape is added.
+
+It went in this row rather than on a new line because the four rows end at 4.70in
+and the legal line sits at 4.92in with the footer at 5.21in, so a fifth row would
+have to push something. It also belongs in IT WILL on the merits.
+
+The boundary is unchanged: the row still promises ONE category at the end, not
+seven recommendations, and "supports testing" is kept word for word.
+
 ## Narrowness, as asserted by the scripts
 
 Both scripts fail rather than save if any of this is untrue, and both passed:
@@ -134,7 +156,7 @@ Both scripts fail rather than save if any of this is untrue, and both passed:
 
 ## Open item for the CANDIDATE to FINAL promotion
 
-The presenting copy and the frozen artifact now differ in four ways, all
+The presenting copy and the frozen artifact now differ in five ways, all
 recorded above. At promotion, decide each one deliberately:
 
 1. **Slide 12 clarifier** — carry into the FINAL deck, or keep it as a spoken
@@ -147,6 +169,10 @@ recorded above. At promotion, decide each one deliberately:
    "not a ranking" wording in the speaker note either way. Note that workbook
    page 7 carries the same grid unnumbered, so if the numerals are carried, the
    workbook and the deck would differ on the same four squares.
+5. **Slide 3's tease** — carry or revert. If the running order ever changes so
+   the move categories no longer land at 38:00, this line has to change with it.
+   Workbook page 1 carries the same boundary language and does not mention the
+   seven, so consider whether it should.
 
 Still deferred and **not** to be addressed as part of promotion: the review of
 Optionality statements 7, 10 and 12, and the "Fragile" label connotation.
