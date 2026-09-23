@@ -36,6 +36,23 @@ Until those exist, the on-slide line "Two real U.S. job postings" rests on the
 brief's statement that these are based on real U.S. job postings reviewed in
 September 2026, and not on a record anyone can re-check.
 
+PUBLICATION READINESS
+
+This package is NOT publication-ready. Confirmed again in the September 23
+correction pass. For BOTH roles the following must be recorded here before any
+slide is published:
+
+  1. EMPLOYER
+  2. EXACT ADVERTISED POSTING TITLE
+  3. SOURCE URL
+  4. COLLECTION DATE
+  5. REQUISITION OR WINDOW IDENTIFIER, where available
+  6. CAPTURE ROUTE OR ARCHIVED SOURCE, where available
+
+All six are private. None may ever appear in a public visual asset. Nothing
+above was inferred, guessed, or filled in with a placeholder that could be
+mistaken for a value.
+
 ## Required against preferred
 
 REQUIRED AGAINST PREFERRED
@@ -57,6 +74,7 @@ classification is asserted about them anywhere in the public assets.
 
 | Public display text | Original source language | Slide | Classification | Notes |
 |---|---|---|---|---|
+| Two real U.S. job postings. Company names removed so we can focus on the work. | n/a | 1, 2, 5 | EDITORIAL | Changed in the September 23 correction pass from “Employer names removed for teaching”. The correction named slide 1; the same line also carries slides 2 and 5 and was changed there too so the deck does not run two different source lines. Makes no claim about the postings. |
 | Senior Manager / Program Management | Senior Manager, Program Management | 1 | ROLE TITLE | Role A title, exactly as given in the source read. No employer. |
 | Director / Enterprise Transformation | Director, Enterprise Transformation | 1 | ROLE TITLE | Role B title, exactly as given in the source read. No employer. |
 | Complex programs | leads complex programs | 2 | RESPONSIBILITY (Role A) | Verb dropped for a card. Meaning unchanged. |
@@ -75,6 +93,7 @@ classification is asserted about them anywhere in the public assets.
 | Program judgment / Managing risk, dependencies and complex execution | manages timelines, risks and dependencies (Role A); enterprise risk and dependencies (Role B) | 4 | OVERLAP READ | Both postings name risk and dependencies. The slide does not claim the risks are the same kind. |
 | Executive communication / Turning work into decisions for senior leaders | communicates with senior stakeholders, provides executive updates (Role A); executive and board reporting (Role B) | 4 | OVERLAP READ | Board reporting is Role B only and is deliberately not claimed here. It appears on slide 5 as a difference. |
 | Governance rhythm / Milestones, escalation, reporting and accountability | manages governance (Role A); enterprise governance, executive steering committees (Role B) | 4 | OVERLAP READ | Milestones and escalation are the mechanics both describe. |
+| Real overlap. Not the same work. | n/a | 4 | EDITORIAL | Changed in the September 23 correction pass from “Real overlap. Not automatic equivalence.” Same boundary, spoken register. It still refuses the claim that the two roles are equivalent. |
 | People leadership | leads and develops project-management staff | 5 | RESPONSIBILITY (Role A) | Role A names direct staff leadership. Role B does not, which is the point of the slide. |
 | Program delivery | leads complex programs | 5 | RESPONSIBILITY (Role A) | Restated for the column. |
 | Team development | leads and develops project-management staff | 5 | RESPONSIBILITY (Role A) | The develops half of the same source item. |
@@ -93,8 +112,11 @@ classification is asserted about them anywhere in the public assets.
 | Context the destination role is built around. | n/a | 6 | EDITORIAL | Used instead of the word requirements, because the source read does not mark these items required or preferred and calling them requirements would turn unmarked into required. |
 | Better resume language doesn't create experience you haven't had. | n/a | 6 | EDITORIAL | From the brief. Says nothing about whether the viewer can make the move. |
 | Complex program delivery | leads complex programs | 7 | OVERLAP READ | Restated from slide 2. |
+| Program governance | manages governance (Role A); enterprise governance, executive steering committees (Role B) | 7 | OVERLAP READ | Slide 7's shorter form of slide 4's governance rhythm row. Added September 23 after the corrected QA reader found it unmapped. |
+| Risk and dependency management | manages timelines, risks and dependencies (Role A); enterprise risk and dependencies (Role B) | 7 | OVERLAP READ | Slide 7's shorter form of slide 4's program judgment row. Added September 23 after the corrected QA reader found it unmapped. The mechanics overlap; the slide does not claim the risks are of the same kind. |
+| What doesn’t just come with you? (column label) | n/a | 7 | EDITORIAL | Simplified in the September 23 correction pass from “What does not automatically travel?”. Same meaning, spoken register. Nothing about the classification of any item beneath it changed. |
 | Internal relationships / Company-specific systems / Existing reputation / Positional authority | n/a | 7 | EDITORIAL | Not from either posting. These are context-dependent items the spoken script names, listed as what does not automatically travel. |
-| People leadership as the same source of seniority | leads and develops project-management staff (Role A), absent from Role B | 7 | SOURCE-DERIVED READ | Derived from the difference between the two postings, not from a claim in either. |
+| What made you senior there | leads and develops project-management staff (Role A), absent from Role B | 7 | SOURCE-DERIVED READ | Simplified in the September 23 correction pass from “People leadership as the same source of seniority”. EDITORIAL WORDING, NOT POSTING LANGUAGE. The read is derived from the difference between the two postings: Role A names staff leadership explicitly, Role B expresses seniority through enterprise judgment, C-suite alignment, controls and board-level communication instead. Neither posting says this sentence. |
 | Programs owned / Decisions made / Risks managed / Stakeholders influenced / Outcomes delivered | n/a | 7 | EDITORIAL | Evidence categories from the spoken script, not posting language. |
 | Enterprise controls / Financial-reporting rigor / Public or PE operating context / Audit and milestone readiness / Board-level operating rhythm | see slide 6 rows | 7 | EXPERIENCE (Role B) | Carried from slide 6. MAY need is used because the individual's prior history is unknown. |
 

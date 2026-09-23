@@ -13,7 +13,11 @@ PREFIX = "FLAG"
 
 A_LABEL = "CURRENT / ADJACENT ROLE"
 B_LABEL = "DESTINATION ROLE"
-SOURCE_FOOT = "Two real U.S. job postings. Employer names removed for teaching."
+# The same source line carries slides 1, 2 and 5. The correction pass named
+# slide 1; it is applied to all three so the deck does not run two different
+# source lines, and that decision is flagged in the correction report.
+SOURCE_FOOT = ("Two real U.S. job postings. Company names removed so we can "
+               "focus on the work.")
 
 # Slide 2, first read. Rows sit in the same order on both sides so the eye
 # can travel across them. match marks where the language is the same or
@@ -66,10 +70,10 @@ S7_CELLS = [
                        "Risk and dependency management",
                        "Executive communication",
                        "Complex program delivery"]),
-    ("What does not automatically travel?",
+    ("What doesn't just come with you?",
      ["Internal relationships", "Company-specific systems",
       "Existing reputation", "Positional authority",
-      "People leadership as the same source of seniority"]),
+      "What made you senior there"]),
     ("What can you prove?", ["Programs owned", "Decisions made",
                              "Risks managed", "Stakeholders influenced",
                              "Outcomes delivered"]),
@@ -104,7 +108,7 @@ def _s3(c):
 def _s4(active):
     def draw(c):
         L.framework(c, "WHAT TRAVELS?", None, S4_ROWS, active=active,
-                    foot="Real overlap. Not automatic equivalence.",
+                    foot="Real overlap. Not the same work.",
                     dark=False)
     return draw
 

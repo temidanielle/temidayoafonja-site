@@ -52,6 +52,25 @@ def asset_index(path):
                "states, not a state. It is listed at the end and is not "
                "counted above.", 0))
     L.append("")
+    L.append("!" * 78)
+    L.append("SPOKEN MASTER SYNCHRONIZATION REQUIRED BEFORE RECORDING.")
+    L.append("!" * 78)
+    L.append("")
+    L.append(w("The flagship recording master still uses the earlier "
+               "hypothetical example: Senior Manager, Operations moving to "
+               "Strategy Director. These approved assets use the real-artifact "
+               "sequence: Senior Manager, Program Management moving to "
+               "Director, Enterprise Transformation.", 0))
+    L.append("")
+    L.append(w("The visuals are the approved direction. The next spoken-master "
+               "revision replaces the hypothetical role example with this "
+               "sequence. Do not record against the current master and do not "
+               "change these slides back to fit it.", 0))
+    L.append("")
+    L.append(w("Also outstanding: the private provenance file lists six "
+               "fields still needed for both roles before publication. See "
+               "FLAGSHIP_JD_PROVENANCE.md.", 0))
+    L.append("")
     L.append("-" * 78)
     for fam, sts in F.SETS:
         L.append("")

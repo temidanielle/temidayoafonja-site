@@ -7,6 +7,12 @@ Not published. Not included in any public asset.
 # (public display text, original source language, slide, classification, note)
 MAP = [
 # ---------------------------------------------------------------- slide 1
+("Two real U.S. job postings. Company names removed so we can focus on the "
+ "work.", "n/a", "1, 2, 5", "EDITORIAL",
+ "Changed in the September 23 correction pass from \u201cEmployer names "
+ "removed for teaching\u201d. The correction named slide 1; the same line "
+ "also carries slides 2 and 5 and was changed there too so the deck does not "
+ "run two different source lines. Makes no claim about the postings."),
 ("Senior Manager / Program Management", "Senior Manager, Program Management",
  "1", "ROLE TITLE",
  "Role A title, exactly as given in the source read. No employer."),
@@ -76,6 +82,11 @@ MAP = [
  "committees (Role B)", "4", "OVERLAP READ",
  "Milestones and escalation are the mechanics both describe."),
 
+("Real overlap. Not the same work.", "n/a", "4", "EDITORIAL",
+ "Changed in the September 23 correction pass from \u201cReal overlap. Not "
+ "automatic equivalence.\u201d Same boundary, spoken register. It still "
+ "refuses the claim that the two roles are equivalent."),
+
 # ---------------------------------------------------------------- slide 5
 ("People leadership", "leads and develops project-management staff", "5",
  "RESPONSIBILITY (Role A)", "Role A names direct staff leadership. Role B "
@@ -134,15 +145,34 @@ MAP = [
 # ---------------------------------------------------------------- slide 7
 ("Complex program delivery", "leads complex programs", "7", "OVERLAP READ",
  "Restated from slide 2."),
+("Program governance", "manages governance (Role A); enterprise governance, "
+ "executive steering committees (Role B)", "7", "OVERLAP READ",
+ "Slide 7's shorter form of slide 4's governance rhythm row. Added September "
+ "23 after the corrected QA reader found it unmapped."),
+("Risk and dependency management",
+ "manages timelines, risks and dependencies (Role A); enterprise risk and "
+ "dependencies (Role B)", "7", "OVERLAP READ",
+ "Slide 7's shorter form of slide 4's program judgment row. Added September "
+ "23 after the corrected QA reader found it unmapped. The mechanics overlap; "
+ "the slide does not claim the risks are of the same kind."),
+("What doesn\u2019t just come with you? (column label)",
+ "n/a", "7", "EDITORIAL",
+ "Simplified in the September 23 correction pass from \u201cWhat does not "
+ "automatically travel?\u201d. Same meaning, spoken register. Nothing about "
+ "the classification of any item beneath it changed."),
 ("Internal relationships / Company-specific systems / Existing reputation / "
  "Positional authority", "n/a", "7", "EDITORIAL",
  "Not from either posting. These are context-dependent items the spoken "
  "script names, listed as what does not automatically travel."),
-("People leadership as the same source of seniority",
+("What made you senior there",
  "leads and develops project-management staff (Role A), absent from Role B",
  "7", "SOURCE-DERIVED READ",
- "Derived from the difference between the two postings, not from a claim in "
- "either."),
+ "Simplified in the September 23 correction pass from \u201cPeople leadership "
+ "as the same source of seniority\u201d. EDITORIAL WORDING, NOT POSTING "
+ "LANGUAGE. The read is derived from the difference between the two postings: "
+ "Role A names staff leadership explicitly, Role B expresses seniority "
+ "through enterprise judgment, C-suite alignment, controls and board-level "
+ "communication instead. Neither posting says this sentence."),
 ("Programs owned / Decisions made / Risks managed / Stakeholders influenced / "
  "Outcomes delivered", "n/a", "7", "EDITORIAL",
  "Evidence categories from the spoken script, not posting language."),
@@ -172,6 +202,23 @@ these slides are published, three fields have to be filled in for both roles:
 Until those exist, the on-slide line "Two real U.S. job postings" rests on the
 brief's statement that these are based on real U.S. job postings reviewed in
 September 2026, and not on a record anyone can re-check.
+
+PUBLICATION READINESS
+
+This package is NOT publication-ready. Confirmed again in the September 23
+correction pass. For BOTH roles the following must be recorded here before any
+slide is published:
+
+  1. EMPLOYER
+  2. EXACT ADVERTISED POSTING TITLE
+  3. SOURCE URL
+  4. COLLECTION DATE
+  5. REQUISITION OR WINDOW IDENTIFIER, where available
+  6. CAPTURE ROUTE OR ARCHIVED SOURCE, where available
+
+All six are private. None may ever appear in a public visual asset. Nothing
+above was inferred, guessed, or filled in with a placeholder that could be
+mistaken for a value.
 """
 
 CLASSIFICATION = """

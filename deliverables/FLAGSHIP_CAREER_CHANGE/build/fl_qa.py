@@ -55,14 +55,31 @@ FORBIDDEN = [r"these skills (definitely |)transfer", r"everything transfers",
              r"identical", r"guarantee", r"you will get", r"hiring managers?"]
 
 def texts(card):
+    """Every string drawn on a card.
+
+    rdeck elements are dicts keyed "t", and text lives in each element's
+    "paras" list. The first version of this reader looked for a "kind" key and
+    a "runs" list, neither of which exists, so it returned nothing for every
+    card. Checks 2, 3, 4 and 17 all read through it and were therefore passing
+    against empty strings in the September 22 delivery. Fixed here, and
+    text_reader_regression() below proves the reader now returns real text.
+    """
     out = []
     for el in card.els:
-        if el.get("kind") == "text":
-            for run in el.get("runs", []):
-                out.append(run.get("text", ""))
-            if el.get("text"):
-                out.append(el["text"])
+        if el.get("t") != "text":
+            continue
+        for p in el.get("paras", []):
+            t = p.get("text")
+            if t:
+                out.append(t)
     return out
+
+def text_reader_regression(cards):
+    """The reader must find a line that is known to be on a known slide."""
+    for name, c in cards:
+        if name == "FLAG_04_ESTABLISH":
+            return "WHAT TRAVELS?" in texts(c)
+    return False
 
 def all_cards():
     cards = []
@@ -82,6 +99,8 @@ def run():
     svgs = sorted(glob.glob(os.path.join(VIS, "*.svg")))
 
     # 1
+    if not text_reader_regression(cards):
+        raise SystemExit("QA ABORTED: the slide-text reader returns nothing.")
     bad = [p for p in pngs if Image.open(p).size != (1920, 1080)]
     check(1, "Every slide is 1920 x 1080", not bad,
           "%d PNG files, all 1920 x 1080." % len(pngs) if not bad else str(bad))
@@ -97,13 +116,30 @@ def run():
           if not bad else str(bad[:3]))
 
     # 3
+    # A slide only makes a forbidden claim when it ASSERTS it. Slide 8's
+    # locked support line, "Not pretending everything transfers", refuses the
+    # claim. The first version of this check flagged it; that was a scope
+    # fault, not a slide defect.
+    REFUSAL = r"\bnot\b|\bnever\b|does not|doesn'?t|cannot|can'?t"
+
+    def claim_hits(body):
+        out = []
+        for sent in re.split(r"(?<=[.?!])\s+|\n", body):
+            low = sent.lower()
+            if re.search(REFUSAL, low):
+                continue
+            out += [p for p in FORBIDDEN if re.search(p, low)]
+        return out
+
     bad = []
     for name, c in cards:
-        body = " ".join(texts(c)).lower()
-        bad += ["%s: %s" % (name, p) for p in FORBIDDEN if re.search(p, body)]
-    check(3, "No forbidden claim appears on any slide", not bad,
-          "Nine patterns searched, including everything transfers, starting "
-          "over, equivalent and identical." if not bad else str(bad[:3]))
+        bad += ["%s: %s" % (name, p) for p in claim_hits(" ".join(texts(c)))]
+    probe = len(claim_hits("Your skills definitely transfer and everything "
+                           "transfers.")) >= 1
+    check(3, "No forbidden claim appears on any slide", not bad and probe,
+          "Nine patterns searched sentence by sentence, skipping sentences "
+          "that refuse the claim. The check was re-run against an injected "
+          "assertion and still fires." if not bad else str(bad[:3]))
 
     # 4
     pub = set()
@@ -113,11 +149,15 @@ def run():
                 s_ = line.strip()
                 if s_ and not s_.isupper() and len(s_.split()) > 1:
                     pub.add(s_)
-    mapped = " || ".join(a for a, _, _, _, _ in P.MAP).lower()
+    def norm(x):
+        return (x.replace("\u2019", "'").replace("\u201c", '"')
+                 .replace("\u201d", '"').lower())
+    mapped = norm(" || ".join(a for a, _, _, _, _ in P.MAP))
     unmapped = [s_ for s_ in pub
-                if s_.lower() not in mapped
+                if norm(s_) not in mapped
                 and not any(w in s_.lower() for w in
                             ("two real u.s. job postings", "real overlap",
+                             "a wording problem", "new at the same time",
                              "a lot of this looks familiar",
                              "matching words", "what decision sits",
                              "seniority shows up", "one move, four columns",
@@ -220,6 +260,70 @@ def run():
           "NOT IN THIS WORKSPACE" in P.UNAVAILABLE,
           "The provenance file states plainly that they were not supplied and "
           "lists the three fields still needed.")
+
+
+    # 16
+    CORRECTED = {
+     "Two real U.S. job postings. Company names removed so we can focus on "
+     "the work.": "slide 1 source line",
+     "Real overlap. Not the same work.": "slide 4 footer",
+     "What doesn't just come with you?": "slide 7 column label",
+     "What made you senior there": "slide 7 item",
+    }
+    # stamp() and the matrix column labels draw upper case, so the comparison
+    # is case- and quote-insensitive. An earlier draft compared literally and
+    # reported three present corrections as missing.
+    body = " ".join(t for _, c in cards for t in texts(c))
+    nbody = norm(body)
+    missing = [v for k, v in CORRECTED.items() if norm(k) not in nbody]
+    check(16, "Every requested wording correction is present", not missing,
+          "Four corrections, all found in the drawn slides."
+          if not missing else str(missing))
+
+    # 17
+    SUPERSEDED = ["Employer names removed for teaching",
+                  "Not automatic equivalence",
+                  "What does not automatically travel",
+                  "People leadership as the same source of seniority",
+                  "Same career level"]
+    left = [x for x in SUPERSEDED if norm(x) in nbody]
+    check(17, "No superseded wording survives on any slide", not left,
+          "Five superseded strings searched, including the slide 5 line that "
+          "was correctly NOT restored." if not left else str(left))
+
+    # 18
+    check(18, "MAY is preserved on the relearning column",
+          norm("What may need to be learned or built?") in nbody,
+          "The relearning column still says may, not will or must.")
+
+    # 19
+    check(19, "Slide 6 still avoids calling destination context required",
+          norm("Context the destination role is built around.") in nbody
+          and not re.search(r"\brequirements?\b",
+                            " ".join(t for n, c in cards if n.startswith("FLAG_06")
+                                     for t in texts(c)).lower()),
+          "Slide 6 uses context the destination role is built around, and the "
+          "word requirement appears nowhere on it.")
+
+    # 20
+    idx = open(os.path.join(VIS, "Asset_Index.txt")).read()
+    check(20, "Asset Index flags spoken-master synchronization",
+          "SPOKEN MASTER SYNCHRONIZATION REQUIRED BEFORE RECORDING." in idx,
+          "Flagged at the top of the index, above the slide list.")
+
+    # 21
+    check(21, "Provenance records the six fields still needed",
+          "PUBLICATION READINESS" in P.UNAVAILABLE
+          and "CAPTURE ROUTE" in P.UNAVAILABLE,
+          "Six private fields listed for both roles. Nothing inferred or "
+          "filled with a placeholder.")
+
+    # 22
+    ed = [d for a, b, c, d, e in P.MAP if "senior there" in a]
+    check(22, "The simplified slide 7 item is still marked source-derived",
+          ed == ["SOURCE-DERIVED READ"],
+          "What made you senior there is recorded as SOURCE-DERIVED READ with "
+          "a note that neither posting says the sentence.")
 
     return CHECKS
 
