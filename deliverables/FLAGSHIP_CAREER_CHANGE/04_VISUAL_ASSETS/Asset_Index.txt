@@ -1,0 +1,112 @@
+==============================================================================
+FLAGSHIP EVERGREEN  |  ASSET INDEX
+==============================================================================
+
+How to Change Careers After 10+ Years Without Starting Over
+THUMBNAIL: WHAT ACTUALLY TRANSFERS?
+
+22 rendered states across 8 core slides. All 1920 x 1080. Navy #112345,
+cream #F5F1E8, gold #C9A84C, yellow #F2C44C, with the rust accent and the
+derived tints the house system already uses.
+
+Employer names appear nowhere in these assets. The two postings are Role A
+and Role B throughout. The private mapping back to source language is in
+FLAGSHIP_JD_PROVENANCE.md, which is not for publication.
+
+The phone-size contact sheet is a proof sheet of these states, not a
+state. It is listed at the end and is not counted above.
+
+------------------------------------------------------------------------------
+
+SLIDE 1  |  PUT THE MOVE ON THE TABLE
+   FLAG_01_THE_MOVE
+      1. FLAG_01_THE_MOVE.png
+         Slide 1 complete. One state. The viewer sees the move before any
+         conclusion.
+      editable: FLAG_01_THE_MOVE.svg
+
+SLIDE 2  |  AT FIRST, THIS LOOKS VERY TRANSFERABLE
+   FLAG_02_FIRST_READ
+      1. FLAG_02A_ROLE_A.png
+         Role A alone, while the spoken line describes the work already
+         being done.
+      2. FLAG_02B_ROLE_B.png
+         Role B added. The viewer compares before being told what to see.
+      3. FLAG_02C_MATCHING.png
+         Matching and adjacent language marked, on the line about finding
+         matching words everywhere.
+      4. FLAG_02D_WHERE_ADVICE_STOPS.png
+         The statement lands only after the viewer has already seen the
+         overlap.
+      editable: FLAG_02D_WHERE_ADVICE_STOPS.svg
+
+SLIDE 3  |  THE RE-HOOK
+   FLAG_03_RE_HOOK
+      1. FLAG_03_MATCHING_WORDS.png
+         One short beat. Held while the question is asked, then straight
+         back to camera.
+
+SLIDE 4  |  WHAT ACTUALLY LOOKS PORTABLE?
+   FLAG_04_WHAT_TRAVELS
+      1. FLAG_04_ESTABLISH.png
+         The four together, so the viewer sees the shape before any one
+         row is taught.
+      2. FLAG_04A_INFLUENCE.png
+         One row at a time as each capability is named.
+      3. FLAG_04B_JUDGMENT.png
+         As above.
+      4. FLAG_04C_COMMUNICATION.png
+         As above.
+      5. FLAG_04D_GOVERNANCE.png
+         As above.
+
+SLIDE 5  |  HERE IS WHERE THE ROLES SPLIT
+   FLAG_05_THE_DIFFERENCE
+      1. FLAG_05A_ROLE_A.png
+         Role A alone, on how seniority shows up in the current role.
+      2. FLAG_05B_ROLE_B.png
+         Role B added. The split becomes visible without narration.
+      3. FLAG_05C_HIGHER_TITLE.png
+         The distinction, after the viewer has read both columns.
+      editable: FLAG_05C_HIGHER_TITLE.svg
+
+SLIDE 6  |  THIS IS NOT A WORDING PROBLEM
+   FLAG_06_THE_REAL_GAP
+      1. FLAG_06A_HEADLINE.png
+         Headline alone. The beat before the list.
+      2. FLAG_06B_FIRST_TWO.png
+         The first two context items.
+      3. FLAG_06C_ALL_GAPS.png
+         All five, with the payoff line.
+      editable: FLAG_06C_ALL_GAPS.svg
+
+SLIDE 7  |  THE FULL CAREER MOVE READ
+   FLAG_07_THE_FULL_READ
+      1. FLAG_07A_TRAVELS.png
+         One column at a time, matching the spoken order of the four
+         questions.
+      2. FLAG_07B_DOES_NOT.png
+         As above.
+      3. FLAG_07C_PROVE.png
+         As above.
+      4. FLAG_07D_COMPLETE.png
+         The complete read. The visual payoff of the sequence and the
+         frame the viewer photographs.
+      editable: FLAG_07D_COMPLETE.svg
+
+SLIDE 8  |  THE HUMAN PAYOFF
+   FLAG_08_THE_POINT
+      1. FLAG_08_EXPERIENCED_AND_NEW.png
+         Slide 8 complete. One state, held.
+      editable: FLAG_08_EXPERIENCED_AND_NEW.svg
+
+------------------------------------------------------------------------------
+
+Phone_Size_Contact_Sheet.png
+      Proof sheet of all 22 states at phone width.
+
+FLAGSHIP_JD_PROVENANCE.md
+      PRIVATE. Do not publish. Maps every rephrased posting line on a
+      slide back to the source language, with its classification and a
+      note on what was shortened.
+
