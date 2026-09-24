@@ -157,8 +157,30 @@ para("A running list of your finished Proof Lines, ready to pull for a review, a
 for i in range(6):
     lp = doc.add_paragraph(); lp.paragraph_format.space_before = Pt(9); _bottom_border(lp, "C9C4B7", 4)
 
-# ---------- Section 5 ----------
-h_section(5, "Your index")
+# ---------- Section 5: Match Your Proof to a Role ----------
+h_section(5, M.MATCH_TITLE)
+para(M.MATCH_INTRO, after=6)
+mtable = doc.add_table(rows=1, cols=3); mtable.style = "Table Grid"
+mhdr = mtable.rows[0].cells
+for i, col in enumerate(M.MATCH_COLUMNS):
+    mhdr[i].text = ""
+    rp = mhdr[i].paragraphs[0].add_run(col); rp.bold = True; rp.font.size = Pt(9); rp.font.color.rgb = NAVY
+# example row (italic grey)
+exrow = mtable.add_row().cells
+for i, val in enumerate(M.MATCH_EXAMPLE):
+    exrow[i].text = ""
+    pfx = exrow[i].paragraphs[0].add_run("Example.  " if i == 0 else "")
+    pfx.italic = True; pfx.font.size = Pt(8.5); pfx.font.color.rgb = GOLD
+    rr = exrow[i].paragraphs[0].add_run(val); rr.italic = True; rr.font.size = Pt(9); rr.font.color.rgb = GREY
+# blank rows to fill
+for _ in range(4):
+    blank = mtable.add_row().cells
+    for i in range(3):
+        blank[i].paragraphs[0].add_run("\n")
+para(M.MATCH_BOUNDARY, italic=True, color=GREY, before=6)
+
+# ---------- Section 6 ----------
+h_section(6, "Your index")
 para("A running list of what you have, so any entry is a search away. Add a line whenever you add or revise an entry, and read it when a moment arrives and you need the right material fast.", after=6)
 table = doc.add_table(rows=1, cols=len(M.INDEX_COLUMNS)); table.style = "Table Grid"
 hdr = table.rows[0].cells
@@ -168,8 +190,8 @@ for i, c in enumerate(M.INDEX_COLUMNS):
 for _ in range(8):
     table.add_row()
 
-# ---------- Section 6 ----------
-h_section(6, "Optional maintenance checklists")
+# ---------- Section 7 ----------
+h_section(7, "Optional maintenance checklists")
 para("Two ways to keep the record current: capture when something worth keeping happens, and a light periodic sweep that catches what you missed. Neither is required, and neither is better; use whichever you will sustain, or both.", after=6)
 h_block("Monthly sweep, about ten to fifteen minutes", color=NAVY, size=10.5)
 for m in M.MONTHLY:
@@ -243,7 +265,18 @@ md.append("**Proof Lines kept.** A running list of your finished Proof Lines.\n"
 for i in range(6): md.append("`__________________________________________________________________`")
 md.append("\n---\n")
 
-md.append("## Section 5. Your index\n")
+md.append(f"## Section 5. {M.MATCH_TITLE}\n")
+md.append(M.MATCH_INTRO + "\n")
+md.append("| " + " | ".join(M.MATCH_COLUMNS) + " |")
+md.append("| " + " | ".join(["---"]*3) + " |")
+md.append("| " + " | ".join(f"_{v}_" for v in M.MATCH_EXAMPLE) + " |")
+for _ in range(4):
+    md.append("| " + " | ".join([" "]*3) + " |")
+md.append("")
+md.append(f"_{M.MATCH_BOUNDARY}_\n")
+md.append("---\n")
+
+md.append("## Section 6. Your index\n")
 md.append("A running list of what you have, so any entry is a search away.\n")
 md.append("| " + " | ".join(M.INDEX_COLUMNS) + " |")
 md.append("| " + " | ".join(["---"]*len(M.INDEX_COLUMNS)) + " |")
@@ -251,7 +284,7 @@ for _ in range(8):
     md.append("| " + " | ".join([" "]*len(M.INDEX_COLUMNS)) + " |")
 md.append("\n---\n")
 
-md.append("## Section 6. Optional maintenance checklists\n")
+md.append("## Section 7. Optional maintenance checklists\n")
 md.append("**Monthly sweep, about ten to fifteen minutes.**\n")
 for m in M.MONTHLY: md.append(f"- [ ] {m}")
 md.append("")

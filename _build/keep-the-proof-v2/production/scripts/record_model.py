@@ -17,13 +17,14 @@ INTRO_BULLETS = [
     ("Fill only what applies.", "A short, honest entry beats a padded one. Blank fields are fine."),
 ]
 
-INTRO_SECTIONS = ("Your record has six sections: a Capture Log, Full Entries, a Corroboration list, "
-    "a Translation and Proof Line workspace, a running index, and two optional maintenance checklists.")
+INTRO_SECTIONS = ("Your record has seven sections: a Capture Log, Full Entries, a Corroboration list, "
+    "a Translation and Proof Line workspace, a Match Your Proof to a Role page, a running index, and two "
+    "optional maintenance checklists.")
 
 FORMATS_NOTE = ("Two formats, the same record. This copyable document is the recommended long-term home, "
     "because it stays searchable and easy to maintain over years. The Printable & Fillable Tools PDF in "
     "your bundle holds the same fields for anyone who prefers to write by hand or type into a form. Use "
-    "whichever you will actually keep up. You do not need to complete both.")
+    "whichever you will keep up. You do not need to complete both.")
 
 # ---- Section 1: Capture Log ----
 CAPTURE_FIELDS = [
@@ -44,7 +45,7 @@ FULL_ENTRY_CLUSTERS = [
         ("Situation or need", "The problem or condition you were responding to.", 2),
         ("Why it mattered", "What was at stake if it went unaddressed.", 2),
     ]),
-    ("Cluster B. What was actually yours", [
+    ("Cluster B. What was yours", [
         ("Formal responsibility", "What you were assigned on paper.", 2),
         ("Actual ownership", "What you truly drove, which is often different.", 2),
         ("Scope and constraint", "Scale, complexity, or the limits you worked within.", 2),
@@ -52,7 +53,7 @@ FULL_ENTRY_CLUSTERS = [
     ]),
     ("Cluster C. The judgment inside it", [
         ("Decision or judgment exercised", "The call you made, and the options you weighed.", 3),
-        ("Actions taken", "What you actually did.", 2),
+        ("Actions taken", "What you did.", 2),
     ]),
     ("Cluster D. What changed, and what supports it", [
         ("Outcome or observable change", "What was observably different afterward.", 2),
@@ -107,6 +108,19 @@ PROOFLINE_INGREDIENTS = [
 ]
 PROOFLINE_RULE = ("A Proof Line does not need a number, must never contain an invented one, and never "
     "claims sole credit for a shared result.")
+
+# ---- Match Your Proof to a Role ----
+MATCH_TITLE = "Match Your Proof to a Role"
+MATCH_INTRO = ("When a specific role is in front of you, this page lines up what the role asks for against "
+    "the proof you already hold, and names the gaps in plain terms. Pick three requirements from one "
+    "posting or review rubric. For each, find the Proof Line from your record that shows it, and name the "
+    "gap you will name plainly rather than hide.")
+MATCH_COLUMNS = ["What the role asks for", "My Proof Line that shows it", "The gap I will name"]
+MATCH_EXAMPLE = ("Owns onboarding end to end",
+    "Redesigned the onboarding flow for a 40-person team, cutting first-week setup from three days to one.",
+    "Have not yet run this at company-wide scale.")
+MATCH_BOUNDARY = ("This page translates your evidence for a specific role. It does not advise on which "
+    "roles to pursue. That is a different question, and a different tool.")
 
 # ---- Section 5: Index ----
 INDEX_COLUMNS = ["Title", "Date / period", "Function or role", "Retrieval tags", "Certainty (when rebuilding)"]

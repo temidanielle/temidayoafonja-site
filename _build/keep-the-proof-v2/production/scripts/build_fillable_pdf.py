@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build 04_PRINTABLE_FILLABLE_TOOLS.pdf — printable pages with real fillable
+"""Build 04_PRINTABLE_FILLABLE_TOOLS.pdf: printable pages with real fillable
 AcroForm fields, holding the same fields as the Professional Record."""
 import sys, os
 sys.path.insert(0, os.path.dirname(__file__))
@@ -24,7 +24,7 @@ ML, MR, MT, MB = 54, 54, 60, 54
 CW = PW - ML - MR
 
 c = canvas.Canvas(OUT, pagesize=letter)
-c.setTitle("Keep the Proof — Printable & Fillable Tools")
+c.setTitle("Keep the Proof: Printable & Fillable Tools")
 _fid = [0]
 def fid(prefix):
     _fid[0]+=1; return f"{prefix}_{_fid[0]}"
@@ -137,16 +137,16 @@ for n in (1,2):
 
 # ================= FULL ENTRY (2 pages) =================
 # Page 1: clusters A, B, C
-y = page_header("Full Entries", "Full Entry — page 1 of 2",
+y = page_header("Full Entries", "Full Entry, page 1 of 2",
     "For work worth keeping in depth. Fill only the fields that apply.")
-for ct in ("Cluster A. When and what","Cluster B. What was actually yours","Cluster C. The judgment inside it"):
+for ct in ("Cluster A. When and what","Cluster B. What was yours","Cluster C. The judgment inside it"):
     fields = dict(M.FULL_ENTRY_CLUSTERS)[ct]
     y = block_label(y, ct)
     for label,hint,lines in fields:
         y = draw_field(y, label, hint, lines, prefix="feA")
 c.showPage()
 # Page 2: clusters D, E + reconstruction marker
-y = page_header("Full Entries", "Full Entry — page 2 of 2", "")
+y = page_header("Full Entries", "Full Entry, page 2 of 2", "")
 for ct in ("Cluster D. What changed, and what supports it","Cluster E. How you would say it, and who could confirm it"):
     fields = dict(M.FULL_ENTRY_CLUSTERS)[ct]
     y = block_label(y, ct)
@@ -180,14 +180,67 @@ y = draw_field(y, "Your Proof Line", "", 2, prefix="plfinal")
 y = body(y, M.PROOFLINE_RULE, color=GREY, size=8.3, font="Helvetica-Oblique")
 c.showPage()
 
+# ================= MATCH YOUR PROOF TO A ROLE (1 page) =================
+y = page_header("Match to a role", M.MATCH_TITLE,
+    "Line up what a role asks for against the proof you already hold.")
+y = body(y, M.MATCH_INTRO, size=9)
+# three-column layout
+GAP = 10
+COLW = (CW - 2*GAP) / 3
+COLX = [ML, ML+COLW+GAP, ML+2*(COLW+GAP)]
+def match_headers(y):
+    c.setFillColor(NAVY); c.rect(ML, y-15, CW, 16, fill=1, stroke=0)
+    c.setFillColor(CREAM); c.setFont("Helvetica-Bold", 8)
+    for i,h in enumerate(M.MATCH_COLUMNS):
+        for j,ln in enumerate(wrap(h, "Helvetica-Bold", 8, COLW-8)):
+            c.drawString(COLX[i]+4, y-4-(j*9), ln)
+    return y-19
+def match_cell_text(x, y, text, h):
+    c.setFillColor(INK); c.setFont("Helvetica-Oblique", 8)
+    ty = y-9
+    for ln in wrap(text, "Helvetica-Oblique", 8, COLW-8):
+        c.drawString(x+4, ty, ln); ty -= 9.5
+def match_row(y, example=None, h=52, prefix="mr"):
+    # cell borders
+    c.setStrokeColor(LINE); c.setLineWidth(0.75)
+    for i in range(3):
+        c.rect(COLX[i], y-h, COLW, h, fill=0, stroke=1)
+    if example:
+        # shaded example row
+        c.setFillColor(HexColor("#FBF3E2"))
+        for i in range(3):
+            c.rect(COLX[i], y-h, COLW, h, fill=1, stroke=0)
+        c.setStrokeColor(LINE)
+        for i in range(3):
+            c.rect(COLX[i], y-h, COLW, h, fill=0, stroke=1)
+        for i in range(3):
+            match_cell_text(COLX[i], y, example[i], h)
+    else:
+        for i in range(3):
+            c.acroForm.textfield(name=fid(prefix), x=COLX[i]+1.5, y=y-h+1.5,
+                width=COLW-3, height=h-3, borderStyle='underlined',
+                borderColor=None, fillColor=None, textColor=INK,
+                borderWidth=0, forceBorder=False, fontName='Helvetica',
+                fontSize=9, fieldFlags='multiline')
+    return y-h-4
+y = match_headers(y)
+# label the example
+c.setFillColor(GOLDINK); c.setFont("Helvetica-Oblique", 7.5)
+c.drawString(ML, y-1, "EXAMPLE"); y -= 11
+y = match_row(y, example=M.MATCH_EXAMPLE, h=44)
+for _ in range(3):
+    y = match_row(y, h=50, prefix="mr")
+y = body(y-2, M.MATCH_BOUNDARY, color=GREY, size=8.3, font="Helvetica-Oblique")
+c.showPage()
+
 # ================= MAINTENANCE (1 page) =================
 y = page_header("Maintenance", "Optional maintenance checklists",
     "Use whichever you will sustain, or both. Neither is required, and neither is better.")
-y = block_label(y, "Monthly sweep — about ten to fifteen minutes")
+y = block_label(y, "Monthly sweep, about ten to fifteen minutes")
 for m in M.MONTHLY:
     y = draw_checkbox(y, m, prefix="mo")
 y -= 4
-y = block_label(y, "Quarterly review — about thirty minutes")
+y = block_label(y, "Quarterly review, about thirty minutes")
 for q in M.QUARTERLY:
     y = draw_checkbox(y, q, prefix="qr")
 y = body(y-2, M.MAINT_NOTE, color=GREY, size=8.5, font="Helvetica-Oblique")

@@ -15,18 +15,18 @@ Temidayo Afonja · temidayoafonja.com
 
 Copyright
 
-Keep the Proof: A guided system for building your professional record. Version 2.0. Copyright (c) 2026 Temidayo Afonja. All rights reserved. This document is licensed for the personal use of the individual purchaser. Please do not resell, redistribute, or republish it.
+Keep the Proof: A guided system for building your professional record. Version 2.0. Copyright (c) 2026 Temidayo Afonja. All rights reserved. This document is licensed for the personal use of the individual purchaser. Organizations providing Keep the Proof to employees or program participants can arrange a group license at temidayoafonja.com/work. Please do not resell, redistribute, or republish it.
 
 What this guide is, and what it is not
 
-This is an educational guide to keeping a private, permitted record of your own work. It is not legal advice. It cannot interpret your specific employment agreement, your non-disclosure obligations, your employer's policies, or the laws that apply where you work. Where a question of permission is genuinely unclear, treat that as a signal to leave the information out and to ask someone qualified, such as your manager, your human resources team, or an attorney.
+This is an educational guide to keeping a private, permitted record of your own work. It is not legal advice. It cannot interpret your specific employment agreement, your non-disclosure obligations, your employer's policies, or the laws that apply where you work. Where a question of permission is unclear, treat that as a signal to leave the information out and to ask someone qualified, such as your manager, your human resources team, or an attorney.
 
 A note on confidentiality before you begin
 
 Everything in this system is built on one rule: you record only your own recollection of your work and information you are permitted to keep. You will be asked, repeatedly, not to copy, forward, photograph, download, screenshot, or reconstruct anything your employer owns. That rule holds on any device, at any hour, in any format. It is the first thing this guide teaches and the last thing it will let you forget.
 
 
-Written and designed by Temidayo Afonja, Founder and Principal, The Density Group. temidayoafonja.com
+Written and designed by Temidayo Afonja, Founder, The Density Group. temidayoafonja.com
 
 ## Welcome
 
@@ -38,9 +38,9 @@ Across my career I have worked in and around talent, workforce, and organization
 
 Whether you can describe your work does not decide who gets promoted, hired, or selected. Sponsorship, opportunity, timing, business conditions, and plenty of things outside any one person's control shape those outcomes. What an accurate record does affect is narrower and still worth a great deal: how clearly your work can be understood when a decision depends on it. That part is learnable, and it is mostly a matter of keeping a record while the facts are still available to you.
 
-Keep the Proof is that record and the discipline around it. It will not tell you what your career means or what move to make. It will help you hold on to the truth of your own work, in language a stranger can understand, kept in a way that respects the people you work for. That is a smaller promise than most career products make. It is also one you can actually keep.
+Keep the Proof is that record and the discipline around it. It will not tell you what your career means or what move to make. It will help you hold on to the truth of your own work, in language a stranger can understand, kept in a way that respects the people you work for. That is a smaller promise than most career products make. It is also one you can keep.
 
-Temidayo Afonja, Founder and Principal, The Density Group
+Temidayo Afonja, Founder, The Density Group
 
 ## Why you might be here
 
@@ -55,7 +55,7 @@ These are different circumstances. They share one first job.
 
 Different circumstances. Same first job: build an accurate account of the work.
 
-Before you can decide anything, translate anything for anyone, or make any case, you need a truthful record of what you actually did. That record is what this guide builds. Everything else, including what your work means and where it could go, is a later question and, in some cases, a different tool. This one starts with the truth of the work itself.
+Before you can decide anything, translate anything for anyone, or make any case, you need a truthful record of what you did. That record is what this guide builds. Everything else, including what your work means and where it could go, is a later question and, in some cases, a different tool. This one starts with the truth of the work itself.
 
 ## Two ways in
 
@@ -72,7 +72,7 @@ The change has already happened. The systems are closed and the record you wish 
 
 ## How to use this guide, and the one rule
 
-This guide has three jobs. It helps you capture what happened, clarify what was actually yours, and carry it forward in language an outsider can follow. Those three words, Capture, Clarify, Carry, are the whole shape of the system, and the next pages give you each one in turn.
+This guide has three jobs. It helps you capture what happened, clarify what was yours, and carry it forward in language an outsider can follow. Those three words, Capture, Clarify, Carry, are the whole shape of the system, and the next pages give you each one in turn.
 
 You can read straight through in an unhurried sitting, or jump to the part you need. Wherever a tool appears, a completed example appears with it, so you are never looking at an empty box wondering what belongs there. Permission and protection run through the entire guide rather than sitting in one block, because they apply to every entry you make.
 
@@ -115,13 +115,13 @@ A professional record is a truthful, private, retrievable account of what you co
 
 A professional record is a record of your contribution and judgment. It is not a list of everything you were assigned. It is written in language an outsider can follow, not a wall of internal names and acronyms. It is honest about your part in a shared result, not a claim of sole credit for team work. It is built only from what you may keep, not a copy of files that belong to your employer. It is useful before many career moments, not a document you touch only when job hunting.
 
-It is disciplined recordkeeping, not self-promotion. The point is not to make your work sound impressive. The point is to make it accurate and findable, so that when a moment arrives that depends on the details, the details are there and you can trust them. Done well, an accurate account is more persuasive than an inflated one, because it holds up when someone asks a second question.
+This is disciplined recordkeeping. The aim is to make it accurate and findable, so that when a moment arrives that depends on the details, the details are there and you can trust them. Done well, an accurate account is more persuasive than an inflated one, because it holds up when someone asks a second question.
 
 A note on the word most people reach for. Some people call this a brag document. That name is understandable, and this guide is not at war with it. What you are building is closer to evidence than to bragging, and the difference is practical: it gives someone else something concrete to consider. Use whatever word helps you start. The discipline is the same.
 
 ## What is worth capturing
 
-You cannot record everything, and you should not try. Activity is not contribution. Answering forty emails is activity. Deciding which of the forty actually needed a decision, and getting that one right, is contribution. The filter below keeps the record small and worth keeping.
+You cannot record everything, and you should not try. Activity is not contribution. Answering forty emails is activity. Deciding which of the forty needed a decision, and getting that one right, is contribution. The filter below keeps the record small and worth keeping.
 
 Capture it if one of these is true.
 
@@ -130,7 +130,7 @@ Capture it if one of these is true.
 - You prevented a problem, a cost, a delay, or a risk that would otherwise have landed.
 - You handled scope, scale, or complexity that a description of your title would not reveal.
 - You coordinated, influenced, or unblocked work across people or functions.
-- You received specific feedback, recognition, or a result you can honestly point to.
+- You received specific feedback, recognition, or a result you can point to.
 
 Let it go if it is only this.
 
@@ -138,7 +138,7 @@ Let it go if it is only this.
 - Attendance, hours, or effort with no observable change attached.
 - A task you were assigned but did not meaningfully shape.
 
-A simple test. Before you record something, ask: if I described this to a thoughtful stranger, would they understand what I actually contributed and why it mattered? If the honest answer is no, either find the contribution underneath the activity, or leave it out.
+A simple test. Before you record something, ask: if I described this to a thoughtful stranger, would they understand what I contributed and why it mattered? If the honest answer is no, either find the contribution underneath the activity, or leave it out.
 
 ## The boundary: your account versus employer-owned artifacts
 
@@ -150,7 +150,7 @@ Notice what the accounts have in common. Each is a sentence you could say out lo
 
 The line you will learn to hear. If the thing you want to save is a file, a screenshot, an export, or a copy of anything produced at work, it is an artifact, and it stays behind. If it is your own sentence about what you did, it is your account, and that is what you record.
 
-One honest caveat. This distinction is usually clear, and it is meant as a practical habit, not a legal ruling. What you may keep can be genuinely unsettled in some situations, such as contract work, work made for hire, or specific terms you agreed to. Those are legal questions, not writing questions. Where what you may keep is unclear, the one rule governs: leave it out, and ask someone qualified.
+One honest caveat. This distinction is usually clear, and it is meant as a practical habit, not a legal ruling. What you may keep can be unsettled in some situations, such as contract work, work made for hire, or specific terms you agreed to. Those are legal questions, not writing questions. Where what you may keep is unclear, the one rule governs: leave it out, and ask someone qualified.
 
 
 ## Claim, example, evidence, corroboration
@@ -173,9 +173,9 @@ What this means for your record. Most of what you build here will be strong exam
 Every entry you make, from a two-minute note to a full record, moves through three stages. You will not think about them consciously for long. They become the shape of how you handle a piece of work worth keeping.
 
 
-Capture is speed and honesty about events. You catch the work before the details soften, even when the note is rough. What actually happened?
+Capture is speed and honesty about events. You catch the work before the details soften, even when the note is rough. What happened?
 
-Clarify is the heart of the system, and the part most records skip. You separate the team's result from your own part, name the judgment inside the task, and describe what actually changed. This is where a forgettable note becomes a real record. What was actually yours?
+Clarify is the heart of the system, and the part most records skip. You separate the team's result from your own part, name the judgment inside the task, and describe what changed. This is where a forgettable note becomes a real record. What was yours?
 
 Carry is reach and safety. You put the record in words an outsider can follow, keep only what you are permitted to hold, and tag it so you can find it when a moment arrives. What can you responsibly take forward?
 
@@ -185,17 +185,17 @@ Two threads run through all three stages rather than sitting in one place. The f
 
 # YOUR FIRST 60 MINUTES
 
-A focused first session. This is not a promise that you can reconstruct a whole career in an hour, and it is not the whole system. It is a way to start with momentum and finish the sitting with something real already in place.
+A focused first session. With focused time it takes about an hour, and you can also work through it across several shorter sittings. Each step stands on its own, so you can stop after any step and pick up where you left off. It gets you started with momentum and something real already in place, and the rest of the system builds from there.
 
 ## The focused first session (capturing now)
 
 Follow this in order. At the end you will have a working start, not a finished record, and that is exactly the goal.
 
 
-- First few minutes. Read the one rule again, and the three tiers of permission on the Keep, Care, Never page. Choose a private home you control and turn on a password and multifactor authentication. Permission comes before storage, always.
+- First few minutes. Read the one rule again, and the three tiers of permission on the Keep, Care, Never page. Choose a private home you control and turn on a password and multifactor authentication. Permission comes before storage, always. {{pause}}
 - Next stretch. Sweep your own memory and permitted sources for the last few months. No employer files. Just what you can recall and what is already public: projects, decisions, moments that mattered. If it helps, run down the list of capture events on the next page and mark the ones that happened.
-- The middle of the session. Write at least three Quick Captures from that sweep. Rough is fine. Speed beats polish.
-- Then. Expand your strongest capture into a Full Entry. Fill only the fields that apply. Somewhere in it, name the judgment or the decision or the problem you prevented.
+- The middle of the session. Write at least three Quick Captures from that sweep. Rough is fine. Speed beats polish. {{pause}}
+- Then. Expand your strongest capture into a Full Entry. Fill only the fields that apply. Somewhere in it, name the judgment or the decision or the problem you prevented. {{pause}}
 - Near the end. Translate that entry into one portable Proof Line.
 - Before you finish, name one person who could confirm the work, by role, and note what they directly observed.
 - Last few minutes. Set one clear reminder for your next capture, so the record keeps going. An upcoming event or a recurring date both work.
@@ -217,10 +217,10 @@ That is a working start. Everything after it is lighter than this.
 If your access is already gone, run the session through reconstruction instead. The finish line is the same. Only the starting material is different, and nothing here treats you as behind.
 
 
-- First few minutes. Read the one rule and the three tiers. Choose a private home you control and secure it. The permission rule does not relax because the timing is inconvenient; it protects you either way.
+- First few minutes. Read the one rule and the three tiers. Choose a private home you control and secure it. The permission rule does not relax because the timing is inconvenient; it protects you either way. {{pause}}
 - Next stretch. Gather what is still yours to use: your own memory, previous resume versions, your public professional profile, documents you already hold, old job descriptions, certifications, and anything already public about the work. Part Seven lists these in full. Do not reach for anything behind a closed door.
-- The middle of the session. Pick one role or one year you remember well. Write three Quick Captures from memory, anchored to moments you recall clearly: a hard call, a launch, a problem you caught, a piece of feedback.
-- Then. Expand the strongest into a Full Entry. Mark anything you are unsure of as unsure. An honest approximate record is worth far more than a confident wrong one.
+- The middle of the session. Pick one role or one year you remember well. Write three Quick Captures from memory, anchored to moments you recall clearly: a hard call, a launch, a problem you caught, a piece of feedback. {{pause}}
+- Then. Expand the strongest into a Full Entry. Mark anything you are unsure of as unsure. An honest approximate record is worth far more than a confident wrong one. {{pause}}
 - Near the end. Translate one entry into a portable Proof Line, and name one former colleague who could confirm the work and what they directly observed.
 - Last few minutes. Set the trigger to start capturing in real time from now on, so you never have to reconstruct again.
 
@@ -230,7 +230,7 @@ You will finish with the same seven outcomes as the capture route. You started f
 
 # PART TWO — CAPTURE
 
-What actually happened? The goal of this stage is speed: make sure the raw material still exists before anything else is done with it. Clarifying and carrying come later.
+What happened? The goal of this stage is speed: make sure the raw material still exists before anything else is done with it. Clarifying and carrying come later.
 
 ## The Two-Minute Quick Capture
 
@@ -274,12 +274,12 @@ You do not need all eleven. You need the habit of noticing that one just happene
 
 When a piece of work matters enough to keep properly, you expand a Quick Capture into a full entry. A full entry has room for everything that makes a contribution legible later. You will not fill every field every time, and you should not try. A strong entry with six good fields beats a padded one with sixteen.
 
-The fields are grouped so a full entry is quick to complete and easy to reread later. The groups are the shape of a good account: when and what, what was actually yours, the judgment inside it, what changed and what supports it, and how you would say it and who could confirm it.
+The fields are grouped so a full entry is quick to complete and easy to reread later. The groups are the shape of a good account: when and what, what was yours, the judgment inside it, what changed and what supports it, and how you would say it and who could confirm it.
 
 
 When and what. Date or period. Project or work event. Situation or need. Why it mattered.
 
-What was actually yours. Formal responsibility, what you were assigned on paper. Actual ownership, what you truly drove, which is often different. Scope and constraint, the scale, complexity, or limits you worked within. People and functions involved, by role.
+What was yours. Formal responsibility, what you were assigned on paper. Actual ownership, what you truly drove, which is often different. Scope and constraint, the scale, complexity, or limits you worked within. People and functions involved, by role.
 
 The judgment inside it. Decision or judgment exercised, the call you made and the options you weighed. Actions taken.
 
@@ -296,7 +296,7 @@ Period: Second and third quarters of last year. Project: Redesign of the new-hir
 
 Four things separate a memorable entry from a forgettable one. Most records capture the first and skip the rest. This page belongs to Capture, but it is already reaching toward Clarify, which is the next and most important stage.
 
-Assigned responsibility is where you start, not where you stop. Your job description tells a reader what you were supposed to do. It rarely tells them what you actually did. The gap between the two is where most of your real contribution lives. Record the assignment, then record what you drove beyond it.
+Assigned responsibility is only the starting point. Your job description tells a reader what you were supposed to do. It rarely tells them what you did. The gap between the two is where most of your real contribution lives. Record the assignment, then record what you drove beyond it.
 
 Judgment is the part with no artifact. Anyone can list actions. Fewer people can name the decision underneath the actions: the option they chose and the ones they set aside. That choice is often the most valuable thing you did, and it leaves no trace unless you write it down. Capture the call, not only the task.
 
@@ -323,7 +323,7 @@ What does not create permission.
 - Generalizing, rounding, anonymizing, or otherwise sanitizing something. Softening the wording does not make restricted information yours.
 - Believing the information is harmless, or that no one would mind. Permission is a fact about your agreements, not a guess about intentions.
 
-The permission test. Before anything enters your record, ask one question: am I permitted to retain this outside my employer's systems? If yes, keep your own high-level account of it. If no, or if you are not sure, leave it out and, where it matters, ask someone qualified. Uncertainty is not a yellow light. For this record, it is a red one.
+The permission test. Before anything enters your record, ask one question: am I permitted to retain this outside my employer's systems? If yes, keep your own high-level account of it. If no, or if you are not sure, leave it out and, where it matters, ask someone qualified. For this record, treat any uncertainty as a reason to stop and leave the information out.
 
 ## Keep, Care, Never
 
@@ -350,11 +350,11 @@ Some actions are outside the system entirely. They are not judgment calls and th
 - Do not paste confidential or employer-owned work information into an AI system of any kind.
 - When permission is uncertain, omit the information and seek qualified advice. That is the whole procedure.
 
-What the record actually runs on. Your own high-level recollection of what you did, information that has been publicly disclosed, and anything your employer has expressly permitted you to retain. That is the entire supply. It is narrower than people expect, and it is enough.
+What the record runs on. Your own high-level recollection of what you did, information that has been publicly disclosed, and anything your employer has expressly permitted you to retain. That is the entire supply. It is narrower than people expect, and it is enough.
 
 ## Rebuilding the record: what you can safely use
 
-The rules above are about what you may not take. There is a quieter question worth answering honestly, especially when you are rebuilding after a change: what can you safely use to rebuild the record?
+The rules above are about what you may not take. There is a quieter question worth answering plainly, especially when you are rebuilding after a change: what can you safely use to rebuild the record?
 
 This guide answers that as a matter of habit, not of law. It cannot tell you what rights you have where you work or live, because those depend on your own agreements and where you are, and they are questions for someone qualified rather than for a handbook. What it can give you is a safe default that holds regardless.
 
@@ -367,7 +367,7 @@ Start from what is plainly yours to use.
 Two habits keep you safe at the edges.
 
 - When you want to use something that is not clearly yours, ask for permission in writing. A written yes is clearer and safer than an assumed or spoken one, and it protects both sides.
-- When permission is genuinely unclear, leave the item out and ask someone qualified, such as a former manager, an HR contact, or an attorney. For this record, uncertainty is a red light, not a yellow one.
+- When permission is unclear, leave the item out and ask someone qualified, such as a former manager, an HR contact, or an attorney. For this record, treat any uncertainty as a reason to leave the item out.
 
 This default is deliberately narrower than the full set of options that may be open to you. Depending on where you are, more may be available, and a qualified person can tell you. Staying inside this default keeps you on safe ground while you rebuild, without turning a private recordkeeping habit into a legal question you have to settle alone.
 
@@ -375,7 +375,7 @@ This default is deliberately narrower than the full set of options that may be o
 
 Your record needs a home. The requirements are modest, and they come in a strict order: the content must be permitted first, and only then does the storage matter. Securing a record you were not allowed to keep does not fix the problem. It hides it.
 
-Choose a home you actually control. Use a personally controlled account rather than an employer-owned account, drive, or device. The recommended home is your Professional Record, the copyable working document included with this guide, kept in a personal, widely readable format you control. Keep it in one place. A record scattered across four apps is a record you will not maintain.
+Choose a home you control. Use a personally controlled account rather than an employer-owned account, drive, or device. The recommended home is your Professional Record, the copyable working document included with this guide, kept in a personal, widely readable format you control. Keep it in one place. A record scattered across four apps is a record you will not maintain.
 
 Then secure it, in this order. Protect it with a unique password and turn on multifactor authentication. Prefer storage that is encrypted and access-controlled. Keep a backup only where the underlying content is permitted to live. Never store the record on a device or in an account your employer owns or can reclaim.
 
@@ -385,11 +385,11 @@ Order of operations. Permission, then storage. Every time. A locked box is only 
 
 # PART FOUR — CLARIFY
 
-What was actually yours? This is the center of the system. Capture makes sure the raw material survives. Clarify is where a rough note becomes a real record: you separate your part from the team's, name the judgment no artifact shows, make invisible and preventive work legible, and give scope its true size. Most records skip this stage, which is exactly why most records are weak.
+What was yours? This is the center of the system. Capture makes sure the raw material survives. Clarify is where a rough note becomes a real record: you separate your part from the team's, name the judgment no artifact shows, make invisible and preventive work legible, and give scope its true size. Most records skip this stage, which is exactly why most records are weak.
 
 ## Separating a team result from your part
 
-Most meaningful work is shared, and shared work creates a recording problem. Claim the whole result and you are exaggerating. Claim nothing and you disappear from your own record. The skill is to state the team's outcome honestly and then name your specific part within it, without inflating and without vanishing.
+Most meaningful work is shared, and shared work creates a recording problem. Claim the whole result and you are exaggerating. Claim nothing and you disappear from your own record. The skill is to state the team's outcome accurately and then name your specific part within it, without inflating and without vanishing.
 
 Two sentences, always in this order. First, the shared result: what the group achieved. Second, your contribution: the particular thing you drove inside it. "The team delivered the platform migration on schedule. My part was owning the data-integrity plan and making the call to phase the cutover, which kept us from a rushed switch." Both sentences are true. Neither one steals from the other.
 
@@ -400,7 +400,7 @@ The team result: My team of nine shipped a long-delayed platform migration, on t
 
 ## Capturing work with no clean metric
 
-A great deal of valuable work produces no tidy number. Coordination, judgment, care, and prevention rarely come with a percentage attached. This does not make the work unrecordable. It means you describe the change in credible, concrete terms instead of forcing a figure that is not real.
+A great deal of valuable work produces no tidy number. Coordination, judgment, care, and prevention rarely come with a percentage attached. You can still record this work. Describe the change in credible, concrete terms, and never force a figure you do not have.
 
 Describe the before and the after. When there is no metric, there is almost always a contrast. What was true before your work, and what was true after? "The handoff between the two teams kept failing; after I redesigned it, work stopped falling through the gap" is credible with no number in it, because a reader can picture both states.
 
@@ -413,12 +413,12 @@ Never invent the number. If you do not have an accurate figure, do not manufactu
 The most undervalued work in any organization is the problem that never happened. Prevention leaves no artifact by definition. The outage you caught before it spread, the error you flagged before it reached a customer, the misunderstanding you resolved before it became a conflict: none of these produce a result you can point to, because the point is that there was no result.
 
 
-Record the risk, the catch, and the likely path. To capture prevention honestly, name three things: the risk that was forming, what you noticed or did, and the outcome that was on its way if no one had acted. "A misconfiguration would likely have exposed internal access; I caught it in review and it was corrected before anything was affected" is a complete account of the judgment, with nothing invented and nothing exposed.
+Record the risk, the catch, and the likely path. To capture prevention accurately, name three things: the risk that was forming, what you noticed or did, and the outcome that was on its way if no one had acted. "A misconfiguration would likely have exposed internal access; I caught it in review and it was corrected before anything was affected" is a complete account of the judgment, with nothing invented and nothing exposed.
 
 Stay honest about certainty. Prevention invites overstatement, so hold the line. You do not know for certain what would have happened. Say "would likely have" rather than "definitely would have." The honest version is still strong, and it is the version that survives a follow-up question.
 
 
-Prevention, captured honestly. Theo R., security analyst, technology and cybersecurity, no clean metric, problem prevented.
+Prevention, captured with care. Theo R., security analyst, technology and cybersecurity, no clean metric, problem prevented.
 
 The risk forming: During a routine review I found that a group of accounts had been granted more access than their roles required. What I did: I traced how the access had been assigned, flagged it, and worked with the owning team to correct it and to close the gap that had allowed it. The path avoided: Left in place, the excess access would likely have become a real exposure. It was corrected before it was used. Kept versus left out: I keep my account of the judgment and the fix. I keep no logs, no account names, no security configuration, and no internal tooling detail.
 
@@ -428,7 +428,7 @@ Some of the most common senior work is the hardest to record, because it never g
 
 Say the work in ordinary language first, before reaching for any label. Not "expanded my span of control," but "when my manager left, I took over the team's planning, the budget conversations, and the two hardest client relationships, and no one backfilled the role for nine months." A reader understands that immediately.
 
-Then give it its true size and name the judgment inside it. Scope is what makes uncredited work legible: how many people, how much budget, how many functions, over how long, and what you decided that a person at your titled level would not normally decide. You are not claiming a title you did not hold. You are recording, accurately, the scope you actually carried, so that it counts as what it was.
+Then give it its true size and name the judgment inside it. Scope is what makes uncredited work legible: how many people, how much budget, how many functions, over how long, and what you decided that a person at your titled level would not normally decide. You are not claiming a title you did not hold. You are recording, accurately, the scope you carried, so that it counts as what it was.
 
 
 Scope without the title. A senior manager absorbing director-level work.
@@ -454,7 +454,7 @@ What can you responsibly take forward? Capture kept the material, Clarify made i
 
 ## Translate: from internal language to portable language
 
-A record only your current employer can read is a record that expires when you leave. Translation is the skill of saying the same true thing in words an outsider can follow. It is not embellishment and it is not lying. It is the difference between a private shorthand and a description that travels.
+A record only your current employer can read is a record that expires when you leave. Translation is the skill of saying the same true thing in words an outsider can follow. It keeps the meaning and changes only the words, turning a private shorthand into a description that travels.
 
 
 Most entries need one of eight moves. Name to function: "Ran Project Northwind" becomes "Led the customer-data migration." Assignment to contribution: "Responsible for reporting" becomes "Rebuilt the reporting so leaders could act on it." Activity to consequence: "Held weekly reviews" becomes "Caught risks early enough to prevent slippage." Team to your part: "We launched it" becomes "I owned the rollout plan for the launch." Acronym to meaning: "Cleared the KYC backlog" becomes "Cleared a backlog of customer identity checks." "Helped with" to real role: "Helped with the audit" becomes "Prepared the evidence and answered the auditors directly." No number to credible detail: "Improved the process" becomes "Cut a two-day task to a few hours." Number to scale: "Handled 40 accounts" becomes "Managed 40 enterprise accounts across three regions."
@@ -470,7 +470,7 @@ A Proof Line is a single, plain-language sentence that carries the most useful p
 
 Maya's Proof Line: "Redesigned new-hire onboarding for a growing operations team, cutting time to full productivity and reducing early attrition, with the model later adopted by two other departments."
 
-A Proof Line does not need a number to be strong, and it must never contain an invented one. It also never claims sole credit for a shared result. If a line would only sound impressive by overstating your ownership, it is not finished. It is wrong.
+A Proof Line does not need a number to be strong, and it must never contain an invented one. It also never claims sole credit for a shared result. If a line would only sound impressive by overstating your ownership, it is wrong, and you rewrite it until it is true.
 
 A Proof Line is general on purpose. It is a true, reusable sentence you keep, not a version shaped for a particular job, employer, or application. Tailoring your work to a specific target is a separate step, and a later one, and it is not this guide's job.
 
@@ -520,7 +520,7 @@ The work: A study was stalling because three groups, clinical staff, data manage
 
 Andre M., operations manager, manufacturing.
 
-The work: A supplier looked likely to miss a critical delivery, and I had to decide whether to switch to a costlier backup before I could be sure the first would fail. The judgment: I chose to split the order, paying more to protect the timeline, on incomplete information, knowing I might be spending money I did not need to. What changed: The primary supplier did slip, and the split kept the line running. I record this honestly as a judgment under uncertainty, not as a clean win, because if the supplier had delivered, the same decision would have looked like an unnecessary cost. Portable version: Made a time-critical sourcing call under uncertainty, splitting an order to protect a production timeline when a key supplier looked at risk, and accepted a known cost to avoid a larger one. Kept versus left out: My reasoning and the decision. Not the supplier, the contract, or the figures.
+The work: A supplier looked likely to miss a critical delivery, and I had to decide whether to switch to a costlier backup before I could be sure the first would fail. The judgment: I chose to split the order, paying more to protect the timeline, on incomplete information, knowing I might be spending money I did not need to. What changed: The primary supplier did slip, and the split kept the line running. I record this as a judgment made under uncertainty. If the supplier had delivered, the same decision would have looked like an unnecessary cost. Portable version: Made a time-critical sourcing call under uncertainty, splitting an order to protect a production timeline when a key supplier looked at risk, and accepted a known cost to avoid a larger one. Kept versus left out: My reasoning and the decision. Not the supplier, the contract, or the figures.
 
 ## Developing a person, which leaves almost no trace
 
@@ -538,14 +538,14 @@ The work: Two teams that had to work together had stopped trusting each other af
 
 Rosa V., returning after a two-year caregiving break.
 
-The work: Before my break I had led a significant piece of work, and after two years away I needed to assemble it into a record I could stand behind, honestly dated. My contribution: I rebuilt the account from my own memory, my prior resume, and what was already public, and I marked clearly what I was sure of and what I was not. What changed: I re-entered with a clear, dated account of senior work rather than an apology for a gap. Portable version: Led a significant initiative before the break, then rebuilt and honestly dated the account of it after two years away, distinguishing what is verified from what is recalled. Kept versus left out: My own recollection and public information. Nothing from a former employer's systems. Recency is a real screen, and this record does not pretend the work is more current than it is.
+The work: Before my break I had led a significant piece of work, and after two years away I needed to assemble it into a record I could stand behind, accurately dated. My contribution: I rebuilt the account from my own memory, my prior resume, and what was already public, and I marked clearly what I was sure of and what I was not. What changed: I re-entered with a clear, dated account of senior work rather than an apology for a gap. Portable version: Led a significant initiative before the break, then rebuilt and accurately dated the account of it after two years away, distinguishing what is verified from what is recalled. Kept versus left out: My own recollection and public information. Nothing from a former employer's systems. Recency is a real screen, and this record does not pretend the work is more current than it is.
 
 ## One item, all the way through
 
 Here is a single piece of work carried through the entire system: Quick Capture, to Full Entry, to Proof Line, to retrieval tag, using Theo's prevention work from earlier.
 
 
-Quick Capture: Found over-broad access on a set of accounts during a routine review; traced how it happened, flagged it, and drove the fix and the process gap behind it; a likely exposure was prevented before the excess access could be used; the owning team's lead can confirm it; all logs, account names, tooling, and configuration stay out. Full Entry, the fields that matter here: assigned to routine access reviews, actually drove a correction and a process change; chose to treat a quiet finding as urgent and fix the cause, not just the instance; the excess access was removed and the process gap closed; no clean metric, credible qualitative outcome confirmed by the owning team. Proof Line: "During a routine access review, I found and corrected over-broad account access and closed the process gap behind it, preventing a likely exposure before the excess access could be used." Retrieval tags: performance review, promotion, resume, interview.
+Quick Capture: Found over-broad access on a set of accounts during a routine review; traced how it happened, flagged it, and drove the fix and the process gap behind it; a likely exposure was prevented before the excess access could be used; the owning team's lead can confirm it; all logs, account names, tooling, and configuration stay out. Full Entry, the fields that matter here: assigned to routine access reviews, drove a correction and a process change; chose to treat a quiet finding as urgent and fix the cause, not just the instance; the excess access was removed and the process gap closed; no clean metric, credible qualitative outcome confirmed by the owning team. Proof Line: "During a routine access review, I found and corrected over-broad account access and closed the process gap behind it, preventing a likely exposure before the excess access could be used." Retrieval tags: performance review, promotion, resume, interview.
 
 ---
 
@@ -581,11 +581,11 @@ Use other information only when you know you are permitted to use or retain it.
 - Documents you already hold, such as offer letters, signed reviews, pay records, certificates, and old job descriptions.
 - Certifications and training completions.
 - Personal calendars, where appropriate.
-- Former colleagues, for what they can honestly confirm from their own memory.
+- Former colleagues, for what they can confirm from their own memory.
 
 Already possessing something does not, by itself, settle whether you may reuse or retain it for this purpose. Where a source is not clearly yours to use, the one rule governs: leave it out and ask someone qualified. The page "Rebuilding the record: what you can safely use" in Part Three gives the safe default in full. This guide does not attempt to resolve the specific rights that vary by employer or location.
 
-## Rebuilding honestly, and marking what you know
+## Rebuilding accurately, and marking what you know
 
 Work role by role, or year by year. Recall the major projects and decisions of each, anchor to the moments you remember most clearly, write Quick Captures from memory, and expand the strongest into full entries. Then start capturing in real time.
 
@@ -607,7 +607,7 @@ An hour to set up, then very little. The record only earns its keep if maintaini
 
 ## Keeping it current
 
-There are two useful ways to keep the record current, and they work well together. The first is to capture when something worth keeping happens. The second is a light periodic sweep that catches what you missed and keeps the record clean. Neither is required on its own, and neither is universally better. Use whichever you will actually sustain, or both.
+There are two useful ways to keep the record current, and they work well together. The first is to capture when something worth keeping happens. The second is a light periodic sweep that catches what you missed and keeps the record clean. Neither is required on its own, and neither is universally better. Use whichever you will sustain, or both.
 
 Event-based capture. When one of the moments from Part Two happens, a project ends, your scope changes, feedback arrives, a decision is made, a risk is prevented, you take two minutes and capture it. It suits work that announces itself.
 
@@ -616,7 +616,7 @@ A periodic sweep. A short monthly or quarterly pass catches the work that did no
 - A monthly sweep, about ten to fifteen minutes. Look back over the month's projects, decisions, feedback, changes, and problems you helped prevent. Add Quick Captures for anything worth keeping, expand the most significant into a full entry, run the confidentiality check, and tag each item.
 - A quarterly review, about thirty minutes. Read the quarter's entries in one sitting, remove duplicates and anything too vague, correct overstatement while you still remember, translate the strongest into Proof Lines, and note where evidence is thin without drawing any conclusion about your career from the gap.
 
-Whether you keep to events, to routines, or to both is yours to settle by what you actually sustain. The quarterly review, if you use it, is housekeeping, not a verdict. Noticing that you have little evidence of a certain kind of work is a prompt to capture more of it, nothing more.
+Whether you keep to events, to routines, or to both is yours to settle by what you sustain. The quarterly review, if you use it, is housekeeping, not a verdict. Noticing that you have little evidence of a certain kind of work is a prompt to capture more of it, nothing more.
 
 ## Retrieving the right evidence
 
@@ -624,6 +624,10 @@ The whole point of tagging is this moment: something is about to happen, and you
 
 
 Performance review: outcomes and prevented problems from the review period, with honest scope. Promotion case: judgment, ownership beyond your title, and work at the next level. Compensation discussion: scope, results, and contributions others have recognized. Internal application: work relevant to the new team, translated out of your current group's language. Resume preparation: your strongest Proof Lines across roles, each honest and portable. Interview preparation: entries with a clear situation, your decision, and the result, ready to tell aloud. Biography or introduction: a few durable, senior-sounding contributions stated plainly. Proposal or portfolio: permitted outcomes that show the kind of work you deliver. Unexpected transition: everything, quickly, because the record is now the only copy you have.
+
+## Match your proof to a role
+
+This page translates your evidence for a specific role. It does not advise on which roles to pursue. That is a different question, and a different tool.
 
 ## The optional, privacy-conscious AI prompt
 
@@ -649,7 +653,7 @@ The Professional Record is deliberately platform-neutral. It does not require an
 
 ## Fillable and printable pages
 
-If you prefer to write by hand or type into a form, printable and fillable versions of the tools are available as an option. They hold the same fields as the Professional Record. Use whichever you will actually maintain. The medium does not matter to the discipline; keeping the record current does.
+If you prefer to write by hand or type into a form, printable and fillable versions of the tools are available as an option. They hold the same fields as the Professional Record. Use whichever you will maintain. The medium does not matter to the discipline; keeping the record current does.
 
 ---
 
@@ -683,7 +687,7 @@ A quiet pointer, not a sales pitch. If you later want to interpret what your cur
 
 ## About the author
 
-Temidayo Afonja is the Founder and Principal of The Density Group. Her career spans nearly two decades and eight industries, across accounting and audit, cybersecurity, people and workforce work, diversity and inclusion work, and both consulting and operating roles. Across those different contexts, she kept getting close to the same questions: how work gets evaluated, what people are trusted to carry, and how careers actually get built.
+Temidayo Afonja is the Founder of The Density Group. Her career spans nearly two decades and eight industries, across accounting and audit, cybersecurity, people and workforce work, diversity and inclusion work, and both consulting and operating roles. Across those different contexts, she kept getting close to the same questions: how work gets evaluated, what people are trusted to carry, and how careers get built.
 
 Two parts of that path shaped this guide directly. The years in audit and cybersecurity are why its confidentiality and information-risk standard is treated with real seriousness, and why it is careful never to overstate what any guide can settle for you. The years in people, workforce, and inclusion work are why it takes seriously the kinds of contribution that performance systems tend to miss. Keep the Proof is educational, not legal advice, and it cannot interpret your specific agreements or your employer's policies.
 

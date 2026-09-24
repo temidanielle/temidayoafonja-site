@@ -15,6 +15,8 @@ GOLD = "#C9A84C"
 YELLOW = "#F2C44C"
 PAGEBG = "#FFFFFF"
 INK = "#1c2333"
+HAIR = "#D9CBB2"
+RUST = "#C1440E"
 
 # ---------- read + split into blocks ----------
 raw = open(SRC, encoding="utf-8").read()
@@ -102,9 +104,9 @@ SPECIAL_H1 = {"FRONT MATTER","YOUR FIRST 60 MINUTES","CLOSING"}
 def spine_device():
     return f'''
 <div class="spine">
-  <div class="spine-step"><div class="spine-n">01</div><div class="spine-t">CAPTURE</div><div class="spine-q">What actually happened?</div></div>
+  <div class="spine-step"><div class="spine-n">01</div><div class="spine-t">CAPTURE</div><div class="spine-q">What happened?</div></div>
   <div class="spine-arrow">&rarr;</div>
-  <div class="spine-step focus"><div class="spine-n">02</div><div class="spine-t">CLARIFY</div><div class="spine-q">What was actually yours?</div><div class="spine-tag">the heart of the system</div></div>
+  <div class="spine-step focus"><div class="spine-n">02</div><div class="spine-t">CLARIFY</div><div class="spine-q">What was yours?</div><div class="spine-tag">the heart of the system</div></div>
   <div class="spine-arrow">&rarr;</div>
   <div class="spine-step"><div class="spine-n">03</div><div class="spine-t">CARRY</div><div class="spine-q">What can you responsibly take forward?</div></div>
 </div>'''
@@ -121,9 +123,22 @@ def kcn_device():
 def doors_device():
     return f'''
 <div class="doors">
-  <div class="door"><div class="door-k">Capturing now?</div><div class="door-t">Start here</div><div class="door-b">You still have your access, your systems, and your memory of recent work &mdash; the best possible position, because you can capture the record while the facts are fresh. Begin with Your First 60 Minutes, then let the habit carry it forward.</div></div>
+  <div class="door"><div class="door-k">Capturing now?</div><div class="door-t">Start here</div><div class="door-b">You still have your access, your systems, and your memory of recent work. You are in the best possible position, because you can capture the record while the facts are fresh. Begin with Your First 60 Minutes, then let the habit carry it forward.</div></div>
   <div class="door"><div class="door-k">Already lost access?</div><div class="door-t">Start here</div><div class="door-b">The change has already happened, and the record you wish you had does not exist yet. You have not failed, and you did not buy the wrong guide. You simply start differently, by rebuilding from what is still yours. Turn to Part Seven, Reconstruct.</div></div>
 </div>'''
+
+def match_device():
+    return '''
+<p class="match-instr">Pick three requirements from one posting. Match each to a Proof Line you have already written. If none fits, write the gap in the third column instead of stretching a line to cover it. A named gap is more credible than a stretched claim.</p>
+<table class="match">
+  <thead><tr><th>What the role asks for</th><th>My Proof Line that shows it</th><th>The gap I will name</th></tr></thead>
+  <tbody>
+    <tr class="ex"><td><i>Example.</i> Design and run onboarding for a growing team (in the posting&#8217;s own words).</td><td>Redesigned new-hire onboarding for a growing operations team, cutting time to full productivity and reducing early attrition, with the model later adopted by two other departments.</td><td>The posting asks for direct management of trainers. I coordinated them without that title, so I will name the scope I carried and not imply the title.</td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+    <tr><td></td><td></td><td></td></tr>
+  </tbody>
+</table>'''
 
 # Prose paragraphs made redundant by an injected device — dropped so the
 # device is not shadowed by a near-verbatim restatement.
@@ -144,6 +159,7 @@ INJECT_AFTER_H2 = {
     "The spine: Capture, Clarify, Carry": spine_device,
     "Keep, Care, Never": kcn_device,
     "Two ways in": doors_device,
+    "Match your proof to a role": match_device,
 }
 
 # ---------- render body ----------
@@ -206,8 +222,17 @@ for idx,(kind,payload) in enumerate(blocks):
         continue
     if kind=="ul":
         flush_caption_as_para()
-        lis = "".join(f'<li>{esc(it)}</li>' for it in payload)
-        body.append(f'<ul>{lis}</ul>')
+        items_html = []
+        for it in payload:
+            raw = it
+            has_pause = raw.rstrip().endswith("{{pause}}")
+            if has_pause:
+                raw = raw.rstrip()[:-len("{{pause}}")].rstrip()
+            cell = esc(raw)
+            if has_pause:
+                cell += ' <span class="pause">Good place to pause</span>'
+            items_html.append(f'<li>{cell}</li>')
+        body.append(f'<ul>{"".join(items_html)}</ul>')
         continue
     if kind=="p":
         text = payload
@@ -319,10 +344,18 @@ li::marker{{color:{GOLD};}}
 .door-k{{font-family:'DM Sans';font-weight:600;font-size:9pt;letter-spacing:.05em;text-transform:uppercase;color:{GOLD};margin-bottom:.15em;}}
 .door-t{{font-family:'Cormorant',serif;font-weight:600;font-size:18pt;color:{NAVY};margin-bottom:.4em;}}
 .door-b{{font-size:9.8pt;line-height:1.5;}}
+
+/* Match your proof to a role */
+.match-instr{{font-size:10.4pt;line-height:1.55;margin:0 0 .7em;}}
+table.match{{width:100%;border-collapse:collapse;margin:.2em 0 1em;page-break-inside:avoid;font-family:'DM Sans',sans-serif;}}
+table.match th{{background:{NAVY};color:{CREAM};font-weight:600;font-size:8.5pt;letter-spacing:.04em;text-align:left;padding:.5em .6em;vertical-align:top;}}
+table.match td{{border:0.75px solid {HAIR};padding:.5em .6em;font-size:9.4pt;line-height:1.42;color:{INK};vertical-align:top;height:60px;}}
+table.match tr.ex td{{background:#FBF3E2;}}
+.pause{{display:inline-block;margin-left:.4em;font-family:'DM Sans';font-weight:600;font-size:7.5pt;letter-spacing:.06em;text-transform:uppercase;color:{RUST};white-space:nowrap;}}
 '''
 
 htmldoc = f'''<!doctype html><html lang="en"><head><meta charset="utf-8">
-<title>Keep the Proof — Guided Handbook</title><style>{css}</style></head>
+<title>Keep the Proof: Guided Handbook</title><style>{css}</style></head>
 <body>{body_html}</body></html>'''
 
 os.makedirs(os.path.dirname(OUT_HTML), exist_ok=True)

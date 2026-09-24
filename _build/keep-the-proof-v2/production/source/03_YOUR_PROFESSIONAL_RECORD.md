@@ -8,9 +8,9 @@ This is your record, not a form to submit. Make one personal copy, keep it in a 
 - **Permission first.** Everything here follows the one rule: your own recollection and what you are permitted to keep. Never paste in employer-owned files or confidential detail.
 - **Fill only what applies.** A short, honest entry beats a padded one. Blank fields are fine.
 
-Your record has six sections: a Capture Log, Full Entries, a Corroboration list, a Translation and Proof Line workspace, a running index, and two optional maintenance checklists.
+Your record has seven sections: a Capture Log, Full Entries, a Corroboration list, a Translation and Proof Line workspace, a Match Your Proof to a Role page, a running index, and two optional maintenance checklists.
 
-*Two formats, the same record. This copyable document is the recommended long-term home, because it stays searchable and easy to maintain over years. The Printable & Fillable Tools PDF in your bundle holds the same fields for anyone who prefers to write by hand or type into a form. Use whichever you will actually keep up. You do not need to complete both.*
+*Two formats, the same record. This copyable document is the recommended long-term home, because it stays searchable and easy to maintain over years. The Printable & Fillable Tools PDF in your bundle holds the same fields for anyone who prefers to write by hand or type into a form. Use whichever you will keep up. You do not need to complete both.*
 
 ---
 
@@ -127,7 +127,7 @@ For work worth keeping in depth. Fill only the fields that apply. Copy the whole
 `__________________________________________________________________`
 `__________________________________________________________________`
 
-**Cluster B. What was actually yours**
+**Cluster B. What was yours**
 
 **Formal responsibility.**  _What you were assigned on paper._
 `__________________________________________________________________`
@@ -151,7 +151,7 @@ For work worth keeping in depth. Fill only the fields that apply. Copy the whole
 `__________________________________________________________________`
 `__________________________________________________________________`
 
-**Actions taken.**  _What you actually did._
+**Actions taken.**  _What you did._
 `__________________________________________________________________`
 `__________________________________________________________________`
 
@@ -223,7 +223,7 @@ _Reconstruction marker (only when rebuilding after access loss): label the entry
 `__________________________________________________________________`
 `__________________________________________________________________`
 
-**Cluster B. What was actually yours**
+**Cluster B. What was yours**
 
 **Formal responsibility.**  _What you were assigned on paper._
 `__________________________________________________________________`
@@ -247,7 +247,7 @@ _Reconstruction marker (only when rebuilding after access loss): label the entry
 `__________________________________________________________________`
 `__________________________________________________________________`
 
-**Actions taken.**  _What you actually did._
+**Actions taken.**  _What you did._
 `__________________________________________________________________`
 `__________________________________________________________________`
 
@@ -405,7 +405,23 @@ _A Proof Line does not need a number, must never contain an invented one, and ne
 
 ---
 
-## Section 5. Your index
+## Section 5. Match Your Proof to a Role
+
+When a specific role is in front of you, this page lines up what the role asks for against the proof you already hold, and names the gaps in plain terms. Pick three requirements from one posting or review rubric. For each, find the Proof Line from your record that shows it, and name the gap you will name plainly rather than hide.
+
+| What the role asks for | My Proof Line that shows it | The gap I will name |
+| --- | --- | --- |
+| _Owns onboarding end to end_ | _Redesigned the onboarding flow for a 40-person team, cutting first-week setup from three days to one._ | _Have not yet run this at company-wide scale._ |
+|   |   |   |
+|   |   |   |
+|   |   |   |
+|   |   |   |
+
+_This page translates your evidence for a specific role. It does not advise on which roles to pursue. That is a different question, and a different tool._
+
+---
+
+## Section 6. Your index
 
 A running list of what you have, so any entry is a search away.
 
@@ -422,7 +438,7 @@ A running list of what you have, so any entry is a search away.
 
 ---
 
-## Section 6. Optional maintenance checklists
+## Section 7. Optional maintenance checklists
 
 **Monthly sweep, about ten to fifteen minutes.**
 
