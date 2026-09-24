@@ -1,0 +1,292 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Build the standalone Career Evidence Ledger (customer PDF). Reusable fillable
+forms that accompany the Keep the Proof handbook. Run:
+    python3 build_ledger.py <out.pdf> <buildtime>
+"""
+import sys
+from ktp import *
+from reportlab.platypus import (Paragraph, Spacer, NextPageTemplate, PageBreak,
+    Table, TableStyle, KeepTogether, Flowable)
+
+OUT = sys.argv[1] if len(sys.argv) > 1 else "ledger.pdf"
+BUILDTIME = sys.argv[2] if len(sys.argv) > 2 else "Monday, August 17, 2026 at 1:05 PM"
+VERSION = "Version 1.0.2"
+URL = "temidayoafonja.com"
+
+register_fonts()
+S = styles()
+Field._seen = set()
+
+# ---- shortcuts ----
+def P(t): return Paragraph(t, S["body"])
+def H2(t): return Paragraph(t, S["h2"])
+def H3(t): return Paragraph(t, S["h3"])
+def EY(t): return Paragraph(t.upper(), S["eyebrow"])
+def KI(t): return Paragraph(t.upper(), S["kicker"])
+def NOTE(t): return Paragraph(t, S["note"])
+def SP(h=6): return Spacer(1, h)
+def RULE(w=CONTENT_W, c=HAIR, t=0.8): return HRule(w, color=c, thick=t, space=8)
+def CO(title, body, bg="navy", bar=RUST): return KeepTogether([build_callout(title, body, S, bg=bg, bar=bar)])
+def FR(label, name, w=CONTENT_W, h=20, hint=None, multiline=False, keep=True):
+    return field_row(label, name, S, width=w, height=h, hint=hint, multiline=multiline, keep=keep)
+
+def formhead(title, subtitle, icon_fn=None):
+    """Navy band that heads each reusable form. An optional far-right line icon
+    (RC3) sits in a fixed cell sized <= the title height, so the band height and
+    every form-field coordinate below it stay identical."""
+    tcell = Paragraph(title, ParagraphStyle("fh_t", fontName="CG-Semi", fontSize=17,
+                 textColor=CREAM, leading=20))
+    scell = Paragraph(subtitle, ParagraphStyle("fh_s", fontName="DM", fontSize=8.6,
+                 textColor=GOLD, leading=11))
+    cmds = [("BACKGROUND",(0,0),(-1,-1),NAVY),("VALIGN",(0,0),(-1,-1),"MIDDLE"),
+        ("LEFTPADDING",(0,0),(-1,-1),14),("RIGHTPADDING",(0,0),(-1,-1),14),
+        ("TOPPADDING",(0,0),(-1,-1),11),("BOTTOMPADDING",(0,0),(-1,-1),11),("ALIGN",(1,0),(1,0),"RIGHT")]
+    if icon_fn is not None:
+        icell = IconCell(icon_fn, d=17, col=CREAM)
+        t = Table([[tcell, scell, icell]], colWidths=[CONTENT_W*0.55-14, CONTENT_W*0.45-14-24, 24])
+        cmds += [("ALIGN",(2,0),(2,0),"CENTRE"),("LEFTPADDING",(2,0),(2,0),0),("RIGHTPADDING",(2,0),(2,0),8)]
+    else:
+        t = Table([[tcell, scell]], colWidths=[CONTENT_W*0.55-14, CONTENT_W*0.45-14])
+    t.setStyle(TableStyle(cmds))
+    return t
+
+def two_up(l1,n1,l2,n2,h=20):
+    w=(CONTENT_W-16)/2
+    left=FR(l1,n1,w=w,h=h,keep=False); right=FR(l2,n2,w=w,h=h,keep=False)
+    t=Table([[left,right]],colWidths=[w+8,w+8])
+    t.setStyle(TableStyle([("LEFTPADDING",(0,0),(-1,-1),0),("RIGHTPADDING",(0,0),(0,0),16),
+        ("RIGHTPADDING",(1,0),(1,0),0),("TOPPADDING",(0,0),(-1,-1),0),
+        ("BOTTOMPADDING",(0,0),(-1,-1),0),("VALIGN",(0,0),(-1,-1),"TOP")]))
+    return t
+
+story = []
+
+# =====================================================================
+# COVER
+# =====================================================================
+class Cover(Flowable):
+    def __init__(self): super().__init__(); self.width=PAGE_W; self.height=PAGE_H
+    def wrap(self,aw,ah): return (0,0)
+    def drawOn(self, canvas, x, y, _sW=0):
+        # Draw at absolute page coordinates. The base Flowable.drawOn translates
+        # the canvas to the frame cursor and would push the cover text off the
+        # page (the v1.0.0 blank-navy-cover defect); bypass that here, inside a
+        # save/restore so no font or colour state leaks past the cover.
+        canvas.saveState()
+        self.canv = canvas
+        self.draw()
+        canvas.restoreState()
+    def draw(self):
+        c=self.canv
+        # product mark: stacked evidence cards (replaces the old line motif)
+        evidence_mark(c, MARGIN, PAGE_H-158, s=54)
+        c.setFont("DM-Bold", 11); c.setFillColor(GOLD)
+        c.drawString(MARGIN, PAGE_H-186, "K E E P   T H E   P R O O F")
+        c.setFont("CG-Semi", 60); c.setFillColor(CREAM)
+        c.drawString(MARGIN-2, PAGE_H-286, "Career Evidence")
+        c.drawString(MARGIN-2, PAGE_H-348, "Ledger")
+        c.setFillColor(RUST); c.rect(MARGIN, PAGE_H-384, 88, 5, fill=1, stroke=0)
+        c.setFont("CG", 21); c.setFillColor(HexColor("#D8D2C4"))
+        c.drawString(MARGIN, PAGE_H-430, "Reusable Printable Companion")
+        c.setFont("DM", 11); c.setFillColor(CREAMSOFT)
+        c.drawString(MARGIN, PAGE_H-458, "The printable forms from Keep the Proof, gathered to reuse as often as you need.")
+        c.setFont("DM", 11); c.setFillColor(CREAMSOFT)
+        c.drawString(MARGIN, 150, "Six reusable form sets: Quick Capture, Full Entry, Translation")
+        c.drawString(MARGIN, 133, "and Proof Line, Monthly Sweep, Quarterly Review, and Evidence")
+        c.drawString(MARGIN, 116, "Index. Print any page, or copy the prompts into a notebook you control.")
+        c.setFont("DM-Bold", 10.5); c.setFillColor(GOLD)
+        c.drawString(MARGIN, 74, "Temidayo Afonja")
+        c.setFont("DM", 9.5); c.setFillColor(CREAMSOFT)
+        c.drawRightString(PAGE_W-MARGIN, 74, URL)
+        uw = c.stringWidth(URL, "DM", 9.5)
+        c.linkURL(f"https://{URL}", (PAGE_W-MARGIN-uw, 71, PAGE_W-MARGIN, 85), relative=0, thickness=0)
+
+story += [Cover(), NextPageTemplate("content"), PageBreak()]
+
+# =====================================================================
+# HOW TO USE + COPYRIGHT
+# =====================================================================
+story += [SP(6), EY("How to use this ledger"),
+    Paragraph("One record, filled in over years", S["h2"]), RULE(),
+    P("This ledger holds the six reusable form sets from Keep the Proof with room to fill them in: Quick Capture, Full Entry, Translation and Proof Line, Monthly Sweep, Quarterly Review, and Evidence Index. Nothing here repeats the teaching; keep the handbook beside you for the rules and the worked examples. Use this document for the doing."),
+    H3("The habit it supports"),
+    P("Capture work in the Quick Capture within a day of it happening. Expand what matters into a Full Entry. Translate it into portable language and build a Proof Line. Once a month, run the Monthly Proof Sweep. Once a quarter, run the Quarterly Proof Review and update your Evidence Index. That is the whole rhythm."),
+    H3("Using it"),
+    P("Print the pages you need, or copy the prompts into any notebook or document you control. Because a record grows past a single copy, print or duplicate the forms you use often. The Quick Capture and the Full Entry are the two you will reuse most."),
+    SP(4),
+    CO("The one rule that governs every form",
+       "You record your own recollection and the information you are permitted to retain. You never copy, forward, or reconstruct material your employer owns. When permission is unclear, you leave it out. If a form ever tempts you past that line, the line wins.",
+       bg="navy"),
+    SP(6),
+    NOTE("Keep the Proof and this ledger are educational and are not legal advice. Where a question of permission matters, ask your manager, your human resources team, or an attorney before you keep anything."),
+    NOTE("Version 1.0.2  ·  © 2026 Temidayo Afonja. Licensed for the personal use of the individual purchaser. Organizations providing Keep the Proof to employees or program participants can arrange a group license at temidayoafonja.com/work."),
+]
+story += [PageBreak()]
+
+# =====================================================================
+# FORM 1 — TWO-MINUTE QUICK CAPTURE (two blocks)
+# =====================================================================
+def quick_capture_page(prefix, first=False):
+    pg = [Bookmark("Quick Capture", 0)] if first else []
+    pg += [SP(6), EY("Form one"),
+        Paragraph("Quick Capture", S["h2"]), RULE(),
+        P("For catching work before it fades, in the two minutes after it happens. One capture per page, with room to write a real answer. Print or copy this page whenever you need another."),
+        SP(6), formhead("Two-Minute Quick Capture", "one work event", ic_clock_pencil), SP(8)]
+    pg += quick_capture_fields(S, prefix)
+    return pg
+story += quick_capture_page("qc1", first=True)
+story += [PageBreak()]
+story += quick_capture_page("qc2")
+story += [PageBreak()]
+
+# =====================================================================
+# FORM 2 — FULL CAREER EVIDENCE ENTRY
+# =====================================================================
+_fe1, _fe2, _fe3 = full_entry_pages(S, "le_fe")
+story += [Bookmark("Full Career Evidence Entry", 0), SP(6), EY("Form two"),
+    Paragraph("Full Career Evidence Entry", S["h2"]), RULE(),
+    P("For work worth keeping in full. Expand a Quick Capture into a complete entry across the three pages that follow, and fill only the fields that apply."),
+    SP(6), formhead("Full Career Evidence Entry", "page one of three", ic_form_card), SP(8)]
+story += _fe1
+story += [PageBreak()]
+story += [SP(6), EY("Form two, continued"),
+    Paragraph("Full Career Evidence Entry", S["h2"]), RULE(),
+    SP(6), formhead("Full Career Evidence Entry", "page two of three", ic_form_card), SP(8)]
+story += _fe2
+story += [PageBreak()]
+story += [SP(6), EY("Form two, continued"),
+    Paragraph("Full Career Evidence Entry", S["h2"]), RULE(),
+    SP(6), formhead("Full Career Evidence Entry", "page three of three", ic_form_card), SP(8)]
+story += _fe3
+story += [PageBreak()]
+
+# =====================================================================
+# FORM 3 — TRANSLATION WORKSHEET + PROOF LINE
+# =====================================================================
+def tr_pair(i):
+    return two_up_fields({"label":"Internal wording, before translation","name":f"tr_int{i}","height":64,"multiline":True},
+                         {"label":"Portable-language version","name":f"tr_por{i}","height":64,"multiline":True}, S)
+story += [Bookmark("Translation Worksheet", 0), SP(6), EY("Form three"),
+    Paragraph("Translation worksheet", S["h2"]), RULE(),
+    P("Turn internal language into portable language. Keep any team result separate from your own part, and never invent a number."),
+    SP(6), formhead("Internal to portable", "five lines", ic_translate_arrow), SP(8),
+    tr_pair(1), SP(6), tr_pair(2), SP(6), tr_pair(3), SP(6), tr_pair(4), SP(6), tr_pair(5),
+]
+story += [PageBreak()]
+story += [Bookmark("Proof Line Builder", 0), SP(6), EY("Form three, continued"),
+    Paragraph("Proof Line builder", S["h2"]), RULE(),
+    P("Build one portable sentence from the parts of an entry. Combine them in whatever order reads well. It must be accurate, and yours to say."),
+    SP(6), formhead("Proof Line builder", "one portable sentence", ic_prooflines), SP(8),
+    two_up_fields({"label":"Condition (the problem or situation)","name":"pl_cond","height":64,"multiline":True},
+                  {"label":"Your part (what was yours)","name":"pl_part","height":64,"multiline":True}, S),
+    SP(6), two_up_fields({"label":"Scope or constraint","name":"pl_scope","height":64,"multiline":True},
+                  {"label":"Outcome (changed or prevented)","name":"pl_out","height":64,"multiline":True}, S),
+    SP(6), FR("Support (permitted evidence or validation)", "pl_support", h=40, multiline=True,
+              hint="A role or public reference, when you have one. Do not store a colleague&#8217;s personal details."),
+    SP(6), FR("Proof Line (the finished portable sentence)", "pl_line", h=54, multiline=True,
+              hint="Combine the parts above, in whatever order reads well. Accurate, and yours to say."),
+]
+story += [PageBreak()]
+
+# =====================================================================
+# FORM 4 — MONTHLY PROOF SWEEP
+# =====================================================================
+story += [Bookmark("Monthly Proof Sweep", 0), SP(6), EY("Form four"),
+    Paragraph("Monthly Proof Sweep", S["h2"]), RULE(),
+    P("Ten to fifteen minutes, once a month. Look back over the month and add what the day-to-day buried. Short is fine; the point is that nothing worth keeping is lost."),
+    SP(6), formhead("Monthly Proof Sweep", "month and year", ic_calendar_single),
+    SP(8),
+    two_up("Month", "ms_month", "Date completed", "ms_done"),
+    SP(6), FR("Projects, decisions, or problems I helped with this month", "ms_projects", h=50, multiline=True),
+    SP(6), FR("Anything I improved, prevented, or made possible", "ms_improved", h=50, multiline=True),
+    SP(6), FR("Quick Captures added this month (titles or count)", "ms_captures", h=28, multiline=True),
+    SP(6), two_up("Confidentiality check: everything here is permitted?", "ms_conf",
+                  "Any entry to expand into a Full Entry?", "ms_expand", h=22),
+]
+story += [PageBreak()]
+
+# =====================================================================
+# FORM 5 — QUARTERLY PROOF REVIEW
+# =====================================================================
+story += [Bookmark("Quarterly Proof Review", 0), SP(6), EY("Form five"),
+    Paragraph("Quarterly Proof Review", S["h2"]), RULE(),
+    P("About thirty minutes, once a quarter. This is housekeeping, not a verdict. Read your entries, correct anything time has clarified, and index what you have so it stays findable."),
+    SP(6), formhead("Quarterly Proof Review", "quarter and year", ic_calendar_arrow),
+    SP(8),
+    two_up("Quarter", "qr_q", "Date completed", "qr_done"),
+    SP(6), FR("Entries read and confirmed still accurate", "qr_read", h=50, multiline=True),
+    SP(6), FR("Corrections or missing context added", "qr_fixed", h=50, multiline=True),
+    SP(6), FR("Strongest entries this quarter, promoted to Proof Lines", "qr_strong", h=50, multiline=True),
+    SP(6), FR("Where evidence is thin, without forcing a conclusion", "qr_thin", h=50, multiline=True),
+    SP(6), two_up("Next review date", "qr_next", "Confidentiality re-check passed?", "qr_conf", h=22),
+]
+story += [PageBreak()]
+
+# =====================================================================
+# FORM 6 — QUARTERLY EVIDENCE INDEX
+# =====================================================================
+def index_row(i):
+    w = [CONTENT_W*0.16, CONTENT_W*0.40, CONTENT_W*0.26, CONTENT_W*0.18]
+    cells = [
+        FR("", f"ix_date_{i}", w=w[0]-8, h=18, keep=False),
+        FR("", f"ix_entry_{i}", w=w[1]-8, h=18, keep=False),
+        FR("", f"ix_tags_{i}", w=w[2]-8, h=18, keep=False),
+        FR("", f"ix_pl_{i}", w=w[3]-8, h=18, keep=False),
+    ]
+    t = Table([[cells[0], cells[1], cells[2], cells[3]]], colWidths=w)
+    t.setStyle(TableStyle([("LEFTPADDING",(0,0),(-1,-1),4),("RIGHTPADDING",(0,0),(-1,-1),4),
+        ("TOPPADDING",(0,0),(-1,-1),2),("BOTTOMPADDING",(0,0),(-1,-1),2),("VALIGN",(0,0),(-1,-1),"TOP")]))
+    return t
+
+story += [Bookmark("Quarterly Evidence Index", 0), IconMark(chip_mark(ic_record_search)), SP(6), EY("Form six"),
+    Paragraph("Quarterly Evidence Index", S["h2"]), RULE(),
+    P("A running list of what you have, so any entry is a search away. Update it at each quarterly review. Record only what is yours to keep; the index points to your entries, never to employer material."),
+    SP(6)]
+# header row
+hw = [CONTENT_W*0.16, CONTENT_W*0.40, CONTENT_W*0.26, CONTENT_W*0.18]
+hdr = Table([[Paragraph("Date or period", S["tbl_h"]), Paragraph("Entry", S["tbl_h"]),
+             Paragraph("Retrieval tags", S["tbl_h"]), Paragraph("Proof Line?", S["tbl_h"])]], colWidths=hw)
+hdr.setStyle(TableStyle([("BACKGROUND",(0,0),(-1,-1),NAVY),("LEFTPADDING",(0,0),(-1,-1),6),
+    ("RIGHTPADDING",(0,0),(-1,-1),6),("TOPPADDING",(0,0),(-1,-1),7),("BOTTOMPADDING",(0,0),(-1,-1),7)]))
+story += [hdr, SP(4)]
+for i in range(1, 15):
+    story += [index_row(i), HRule(CONTENT_W, color=HAIR, thick=0.5, space=3)]
+story += [SP(8), NOTE("When the record is the only copy you still have, this index is where you start. Keep it current, and a review, a promotion case, or an unexpected change finds you ready.")]
+story += [PageBreak()]
+
+# =====================================================================
+# FORM 7 — MATCH YOUR PROOF TO A ROLE (printable) — v1.0.2
+# =====================================================================
+story += [Bookmark("Match Your Proof to a Role", 0), SP(6), EY("Form seven"),
+    Paragraph("Match Your Proof to a Role", S["h2"]), RULE(),
+    P("Use this page when you are applying for a specific role. Pick three requirements from one posting. Match each to a Proof Line you have already written. If none fits, write the gap in the third column instead of stretching a line to cover it. A named gap is more credible than a stretched claim."),
+    SP(6)]
+_lm_head = ["What the role asks for", "My Proof Line that shows it", "The gap I will name"]
+_lm_rows = [[Paragraph(h, S["tbl_h"]) for h in _lm_head]]
+_lm_rows.append([
+    Paragraph("<i>Example.</i> Design and run onboarding for a growing team (in the posting&#8217;s own words).", S["tbl"]),
+    Paragraph("Redesigned new-hire onboarding for a growing operations team, cutting time to full productivity and reducing early attrition, with the model later adopted by two other departments.", S["tbl"]),
+    Paragraph("The posting asks for direct management of trainers. I coordinated them without that title, so I will name the scope I carried and not imply the title.", S["tbl"]),
+])
+_lm_rows += [[Paragraph("&nbsp;", S["tbl"]) for _ in range(3)] for _ in range(4)]
+_lmt = Table(_lm_rows, colWidths=[CONTENT_W*0.32, CONTENT_W*0.42, CONTENT_W*0.26],
+             rowHeights=[None, None, 70, 70, 70, 70], repeatRows=1)
+_lmt.setStyle(TableStyle([("VALIGN",(0,0),(-1,-1),"TOP"),
+    ("BACKGROUND",(0,0),(-1,0),NAVY), ("BACKGROUND",(0,1),(-1,1),HexColor("#FBF3E2")),
+    ("LEFTPADDING",(0,0),(-1,-1),8),("RIGHTPADDING",(0,0),(-1,-1),8),
+    ("TOPPADDING",(0,0),(-1,-1),7),("BOTTOMPADDING",(0,0),(-1,-1),7),
+    ("GRID",(0,0),(-1,-1),0.6,HAIR),("LINEBELOW",(0,0),(-1,0),0,NAVY)]))
+story += [_lmt, SP(6),
+    NOTE("This page translates your evidence for a specific role. It does not advise on which roles to pursue. That is a different question, and a different tool.")]
+
+# =====================================================================
+# BUILD
+# =====================================================================
+doc = KTPDoc(OUT, footer_title="Career Evidence Ledger", url=URL, version="v1.0.2")
+doc.title = "Career Evidence Ledger: The reusable companion to Keep the Proof"
+doc.author = "Temidayo Afonja"
+doc.subject = "Reusable printable forms for capturing, translating, protecting, and retrieving your career evidence."
+doc.keywords = "career evidence, ledger, work accomplishments, printable forms, Temidayo Afonja, Keep the Proof v1.0.2"
+doc.build(story)
+print("wrote", OUT)

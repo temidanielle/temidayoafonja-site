@@ -1,0 +1,9 @@
+# Keep the Proof — build and QA dependencies (Python 3.11)
+reportlab==5.0.1        # PDF generation (the build)
+pymupdf==1.28.2         # QA rendering + manuscript extraction (import name: fitz)
+pillow==12.3.0          # cross-engine image diffing in QA
+numpy==2.4.6            # cross-engine image diffing in QA
+# System packages (not pip) used by the multi-engine QA:
+#   poppler-utils   provides pdftoppm   (apt-get install poppler-utils)
+#   ghostscript     provides gs         (apt-get install ghostscript)
+# The six brand TrueType fonts ship in build/fonts/.

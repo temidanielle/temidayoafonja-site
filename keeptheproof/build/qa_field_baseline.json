@@ -1,0 +1,1720 @@
+{
+ "handbook": {
+  "field_count": 25,
+  "multiline_count": 23,
+  "pages": 41,
+  "fields": [
+   {
+    "page": 35,
+    "name": "hb_qc_what",
+    "rect": [
+     66.0,
+     284.2,
+     546.0,
+     344.2
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 35,
+    "name": "hb_qc_contrib",
+    "rect": [
+     66.0,
+     381.7,
+     546.0,
+     441.7
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 35,
+    "name": "hb_qc_change",
+    "rect": [
+     66.0,
+     479.2,
+     546.0,
+     539.2
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 35,
+    "name": "hb_qc_verify",
+    "rect": [
+     66.0,
+     576.7,
+     546.0,
+     616.7
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 35,
+    "name": "hb_qc_out",
+    "rect": [
+     66.0,
+     654.2,
+     546.0,
+     694.2
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 36,
+    "name": "hb_fe_date",
+    "rect": [
+     66.0,
+     177.3,
+     298.0,
+     199.3
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 36,
+    "name": "hb_fe_proj",
+    "rect": [
+     306.0,
+     177.3,
+     538.0,
+     199.3
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 36,
+    "name": "hb_fe_sit",
+    "rect": [
+     66.0,
+     225.3,
+     546.0,
+     277.3
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 36,
+    "name": "hb_fe_why",
+    "rect": [
+     66.0,
+     303.3,
+     546.0,
+     355.3
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 36,
+    "name": "hb_fe_formal",
+    "rect": [
+     66.0,
+     381.3,
+     546.0,
+     421.3
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 36,
+    "name": "hb_fe_actual",
+    "rect": [
+     66.0,
+     447.3,
+     546.0,
+     487.3
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 36,
+    "name": "hb_fe_judge",
+    "rect": [
+     66.0,
+     513.3,
+     546.0,
+     563.3
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 36,
+    "name": "hb_fe_actions",
+    "rect": [
+     66.0,
+     589.3,
+     546.0,
+     639.3
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 37,
+    "name": "hb_fe_people",
+    "rect": [
+     66.0,
+     177.3,
+     546.0,
+     217.3
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 37,
+    "name": "hb_fe_scope",
+    "rect": [
+     66.0,
+     243.3,
+     546.0,
+     283.3
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 37,
+    "name": "hb_fe_outcome",
+    "rect": [
+     66.0,
+     309.3,
+     546.0,
+     361.3
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 37,
+    "name": "hb_fe_prevented",
+    "rect": [
+     66.0,
+     387.3,
+     546.0,
+     439.3
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 37,
+    "name": "hb_fe_quant",
+    "rect": [
+     66.0,
+     465.3,
+     546.0,
+     505.3
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 37,
+    "name": "hb_fe_qual",
+    "rect": [
+     66.0,
+     531.3,
+     546.0,
+     571.3
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 37,
+    "name": "hb_fe_team",
+    "rect": [
+     66.0,
+     597.3,
+     546.0,
+     647.3
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 38,
+    "name": "hb_fe_internal",
+    "rect": [
+     66.0,
+     177.3,
+     546.0,
+     223.3
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 38,
+    "name": "hb_fe_portable",
+    "rect": [
+     66.0,
+     249.3,
+     546.0,
+     295.3
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 38,
+    "name": "hb_fe_evref",
+    "rect": [
+     66.0,
+     331.8,
+     546.0,
+     367.8
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 38,
+    "name": "hb_fe_conf",
+    "rect": [
+     66.0,
+     393.8,
+     546.0,
+     433.8
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 38,
+    "name": "hb_fe_tags",
+    "rect": [
+     66.0,
+     470.3,
+     546.0,
+     496.3
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   }
+  ]
+ },
+ "ledger": {
+  "field_count": 117,
+  "multiline_count": 51,
+  "pages": 12,
+  "fields": [
+   {
+    "page": 3,
+    "name": "qc1_what",
+    "rect": [
+     66.0,
+     264.5,
+     546.0,
+     324.5
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 3,
+    "name": "qc1_contrib",
+    "rect": [
+     66.0,
+     362.0,
+     546.0,
+     422.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 3,
+    "name": "qc1_change",
+    "rect": [
+     66.0,
+     459.5,
+     546.0,
+     519.5
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 3,
+    "name": "qc1_verify",
+    "rect": [
+     66.0,
+     557.0,
+     546.0,
+     597.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 3,
+    "name": "qc1_out",
+    "rect": [
+     66.0,
+     634.5,
+     546.0,
+     674.5
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 4,
+    "name": "qc2_what",
+    "rect": [
+     66.0,
+     264.5,
+     546.0,
+     324.5
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 4,
+    "name": "qc2_contrib",
+    "rect": [
+     66.0,
+     362.0,
+     546.0,
+     422.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 4,
+    "name": "qc2_change",
+    "rect": [
+     66.0,
+     459.5,
+     546.0,
+     519.5
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 4,
+    "name": "qc2_verify",
+    "rect": [
+     66.0,
+     557.0,
+     546.0,
+     597.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 4,
+    "name": "qc2_out",
+    "rect": [
+     66.0,
+     634.5,
+     546.0,
+     674.5
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 5,
+    "name": "le_fe_date",
+    "rect": [
+     66.0,
+     254.0,
+     298.0,
+     276.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 5,
+    "name": "le_fe_proj",
+    "rect": [
+     306.0,
+     254.0,
+     538.0,
+     276.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 5,
+    "name": "le_fe_sit",
+    "rect": [
+     66.0,
+     302.0,
+     546.0,
+     354.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 5,
+    "name": "le_fe_why",
+    "rect": [
+     66.0,
+     380.0,
+     546.0,
+     432.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 5,
+    "name": "le_fe_formal",
+    "rect": [
+     66.0,
+     458.0,
+     546.0,
+     498.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 5,
+    "name": "le_fe_actual",
+    "rect": [
+     66.0,
+     524.0,
+     546.0,
+     564.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 5,
+    "name": "le_fe_judge",
+    "rect": [
+     66.0,
+     590.0,
+     546.0,
+     640.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 5,
+    "name": "le_fe_actions",
+    "rect": [
+     66.0,
+     666.0,
+     546.0,
+     716.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 6,
+    "name": "le_fe_people",
+    "rect": [
+     66.0,
+     214.8,
+     546.0,
+     254.8
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 6,
+    "name": "le_fe_scope",
+    "rect": [
+     66.0,
+     280.8,
+     546.0,
+     320.8
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 6,
+    "name": "le_fe_outcome",
+    "rect": [
+     66.0,
+     346.8,
+     546.0,
+     398.8
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 6,
+    "name": "le_fe_prevented",
+    "rect": [
+     66.0,
+     424.8,
+     546.0,
+     476.8
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 6,
+    "name": "le_fe_quant",
+    "rect": [
+     66.0,
+     502.8,
+     546.0,
+     542.8
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 6,
+    "name": "le_fe_qual",
+    "rect": [
+     66.0,
+     568.8,
+     546.0,
+     608.8
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 6,
+    "name": "le_fe_team",
+    "rect": [
+     66.0,
+     634.8,
+     546.0,
+     684.8
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 7,
+    "name": "le_fe_internal",
+    "rect": [
+     66.0,
+     214.8,
+     546.0,
+     260.8
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 7,
+    "name": "le_fe_portable",
+    "rect": [
+     66.0,
+     286.8,
+     546.0,
+     332.8
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 7,
+    "name": "le_fe_evref",
+    "rect": [
+     66.0,
+     369.3,
+     546.0,
+     405.3
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 7,
+    "name": "le_fe_conf",
+    "rect": [
+     66.0,
+     431.3,
+     546.0,
+     471.3
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 7,
+    "name": "le_fe_tags",
+    "rect": [
+     66.0,
+     507.8,
+     546.0,
+     533.8
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 8,
+    "name": "tr_int1",
+    "rect": [
+     66.0,
+     254.0,
+     298.0,
+     318.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 8,
+    "name": "tr_por1",
+    "rect": [
+     306.0,
+     254.0,
+     538.0,
+     318.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 8,
+    "name": "tr_int2",
+    "rect": [
+     66.0,
+     343.0,
+     298.0,
+     407.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 8,
+    "name": "tr_por2",
+    "rect": [
+     306.0,
+     343.0,
+     538.0,
+     407.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 8,
+    "name": "tr_int3",
+    "rect": [
+     66.0,
+     432.0,
+     298.0,
+     496.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 8,
+    "name": "tr_por3",
+    "rect": [
+     306.0,
+     432.0,
+     538.0,
+     496.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 8,
+    "name": "tr_int4",
+    "rect": [
+     66.0,
+     521.0,
+     298.0,
+     585.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 8,
+    "name": "tr_por4",
+    "rect": [
+     306.0,
+     521.0,
+     538.0,
+     585.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 8,
+    "name": "tr_int5",
+    "rect": [
+     66.0,
+     610.0,
+     298.0,
+     674.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 8,
+    "name": "tr_por5",
+    "rect": [
+     306.0,
+     610.0,
+     538.0,
+     674.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 9,
+    "name": "pl_cond",
+    "rect": [
+     66.0,
+     254.0,
+     298.0,
+     318.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 9,
+    "name": "pl_part",
+    "rect": [
+     306.0,
+     254.0,
+     538.0,
+     318.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 9,
+    "name": "pl_scope",
+    "rect": [
+     66.0,
+     343.0,
+     298.0,
+     407.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 9,
+    "name": "pl_out",
+    "rect": [
+     306.0,
+     343.0,
+     538.0,
+     407.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 9,
+    "name": "pl_support",
+    "rect": [
+     66.0,
+     442.5,
+     546.0,
+     482.5
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 9,
+    "name": "pl_line",
+    "rect": [
+     66.0,
+     518.0,
+     546.0,
+     572.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 10,
+    "name": "ms_month",
+    "rect": [
+     66.0,
+     254.0,
+     298.0,
+     274.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 10,
+    "name": "ms_done",
+    "rect": [
+     306.0,
+     254.0,
+     538.0,
+     274.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 10,
+    "name": "ms_projects",
+    "rect": [
+     66.0,
+     299.0,
+     546.0,
+     349.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 10,
+    "name": "ms_improved",
+    "rect": [
+     66.0,
+     374.0,
+     546.0,
+     424.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 10,
+    "name": "ms_captures",
+    "rect": [
+     66.0,
+     449.0,
+     546.0,
+     477.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 10,
+    "name": "ms_conf",
+    "rect": [
+     66.0,
+     502.0,
+     298.0,
+     524.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 10,
+    "name": "ms_expand",
+    "rect": [
+     306.0,
+     502.0,
+     538.0,
+     524.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 11,
+    "name": "qr_q",
+    "rect": [
+     66.0,
+     254.0,
+     298.0,
+     274.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 11,
+    "name": "qr_done",
+    "rect": [
+     306.0,
+     254.0,
+     538.0,
+     274.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 11,
+    "name": "qr_read",
+    "rect": [
+     66.0,
+     299.0,
+     546.0,
+     349.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 11,
+    "name": "qr_fixed",
+    "rect": [
+     66.0,
+     374.0,
+     546.0,
+     424.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 11,
+    "name": "qr_strong",
+    "rect": [
+     66.0,
+     449.0,
+     546.0,
+     499.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 11,
+    "name": "qr_thin",
+    "rect": [
+     66.0,
+     524.0,
+     546.0,
+     574.0
+    ],
+    "multiline": true,
+    "fontsize": 9.0
+   },
+   {
+    "page": 11,
+    "name": "qr_next",
+    "rect": [
+     66.0,
+     599.0,
+     298.0,
+     621.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 11,
+    "name": "qr_conf",
+    "rect": [
+     306.0,
+     599.0,
+     538.0,
+     621.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_date_1",
+    "rect": [
+     70.0,
+     223.0,
+     138.8,
+     241.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_entry_1",
+    "rect": [
+     146.8,
+     223.0,
+     330.8,
+     241.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_tags_1",
+    "rect": [
+     338.8,
+     223.0,
+     455.6,
+     241.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_pl_1",
+    "rect": [
+     463.6,
+     223.0,
+     542.0,
+     241.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_date_2",
+    "rect": [
+     70.0,
+     254.5,
+     138.8,
+     272.5
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_entry_2",
+    "rect": [
+     146.8,
+     254.5,
+     330.8,
+     272.5
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_tags_2",
+    "rect": [
+     338.8,
+     254.5,
+     455.6,
+     272.5
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_pl_2",
+    "rect": [
+     463.6,
+     254.5,
+     542.0,
+     272.5
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_date_3",
+    "rect": [
+     70.0,
+     286.0,
+     138.8,
+     304.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_entry_3",
+    "rect": [
+     146.8,
+     286.0,
+     330.8,
+     304.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_tags_3",
+    "rect": [
+     338.8,
+     286.0,
+     455.6,
+     304.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_pl_3",
+    "rect": [
+     463.6,
+     286.0,
+     542.0,
+     304.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_date_4",
+    "rect": [
+     70.0,
+     317.5,
+     138.8,
+     335.5
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_entry_4",
+    "rect": [
+     146.8,
+     317.5,
+     330.8,
+     335.5
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_tags_4",
+    "rect": [
+     338.8,
+     317.5,
+     455.6,
+     335.5
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_pl_4",
+    "rect": [
+     463.6,
+     317.5,
+     542.0,
+     335.5
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_date_5",
+    "rect": [
+     70.0,
+     349.0,
+     138.8,
+     367.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_entry_5",
+    "rect": [
+     146.8,
+     349.0,
+     330.8,
+     367.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_tags_5",
+    "rect": [
+     338.8,
+     349.0,
+     455.6,
+     367.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_pl_5",
+    "rect": [
+     463.6,
+     349.0,
+     542.0,
+     367.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_date_6",
+    "rect": [
+     70.0,
+     380.5,
+     138.8,
+     398.5
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_entry_6",
+    "rect": [
+     146.8,
+     380.5,
+     330.8,
+     398.5
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_tags_6",
+    "rect": [
+     338.8,
+     380.5,
+     455.6,
+     398.5
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_pl_6",
+    "rect": [
+     463.6,
+     380.5,
+     542.0,
+     398.5
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_date_7",
+    "rect": [
+     70.0,
+     412.0,
+     138.8,
+     430.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_entry_7",
+    "rect": [
+     146.8,
+     412.0,
+     330.8,
+     430.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_tags_7",
+    "rect": [
+     338.8,
+     412.0,
+     455.6,
+     430.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_pl_7",
+    "rect": [
+     463.6,
+     412.0,
+     542.0,
+     430.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_date_8",
+    "rect": [
+     70.0,
+     443.5,
+     138.8,
+     461.5
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_entry_8",
+    "rect": [
+     146.8,
+     443.5,
+     330.8,
+     461.5
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_tags_8",
+    "rect": [
+     338.8,
+     443.5,
+     455.6,
+     461.5
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_pl_8",
+    "rect": [
+     463.6,
+     443.5,
+     542.0,
+     461.5
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_date_9",
+    "rect": [
+     70.0,
+     475.0,
+     138.8,
+     493.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_entry_9",
+    "rect": [
+     146.8,
+     475.0,
+     330.8,
+     493.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_tags_9",
+    "rect": [
+     338.8,
+     475.0,
+     455.6,
+     493.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_pl_9",
+    "rect": [
+     463.6,
+     475.0,
+     542.0,
+     493.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_date_10",
+    "rect": [
+     70.0,
+     506.5,
+     138.8,
+     524.5
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_entry_10",
+    "rect": [
+     146.8,
+     506.5,
+     330.8,
+     524.5
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_tags_10",
+    "rect": [
+     338.8,
+     506.5,
+     455.6,
+     524.5
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_pl_10",
+    "rect": [
+     463.6,
+     506.5,
+     542.0,
+     524.5
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_date_11",
+    "rect": [
+     70.0,
+     538.0,
+     138.8,
+     556.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_entry_11",
+    "rect": [
+     146.8,
+     538.0,
+     330.8,
+     556.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_tags_11",
+    "rect": [
+     338.8,
+     538.0,
+     455.6,
+     556.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_pl_11",
+    "rect": [
+     463.6,
+     538.0,
+     542.0,
+     556.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_date_12",
+    "rect": [
+     70.0,
+     569.5,
+     138.8,
+     587.5
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_entry_12",
+    "rect": [
+     146.8,
+     569.5,
+     330.8,
+     587.5
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_tags_12",
+    "rect": [
+     338.8,
+     569.5,
+     455.6,
+     587.5
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_pl_12",
+    "rect": [
+     463.6,
+     569.5,
+     542.0,
+     587.5
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_date_13",
+    "rect": [
+     70.0,
+     601.0,
+     138.8,
+     619.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_entry_13",
+    "rect": [
+     146.8,
+     601.0,
+     330.8,
+     619.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_tags_13",
+    "rect": [
+     338.8,
+     601.0,
+     455.6,
+     619.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_pl_13",
+    "rect": [
+     463.6,
+     601.0,
+     542.0,
+     619.0
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_date_14",
+    "rect": [
+     70.0,
+     632.5,
+     138.8,
+     650.5
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_entry_14",
+    "rect": [
+     146.8,
+     632.5,
+     330.8,
+     650.5
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_tags_14",
+    "rect": [
+     338.8,
+     632.5,
+     455.6,
+     650.5
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   },
+   {
+    "page": 12,
+    "name": "ix_pl_14",
+    "rect": [
+     463.6,
+     632.5,
+     542.0,
+     650.5
+    ],
+    "multiline": false,
+    "fontsize": 9.0
+   }
+  ]
+ }
+}
