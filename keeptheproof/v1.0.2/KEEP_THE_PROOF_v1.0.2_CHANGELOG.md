@@ -141,6 +141,26 @@ Handbook:
 ## 9. Product page copy
 - New Gumroad description draft delivered separately (`KEEP_THE_PROOF_v1.0.2_GUMROAD_DRAFT.md`).
 
+## 60 minutes is a guide, not a deadline (second pass)
+- **Start Here**, directly under "Welcome to Keep the Proof.": added "Sixty minutes is
+  what the setup takes with focused time. You can also work through it across several
+  shorter sittings. Each step stands on its own, so you can stop after any step and pick
+  up where you left off." (Spacing tightened slightly so the page stays one page.)
+- **The complete 60-minute setup** (handbook), directly under the title: added the line
+  "With focused time, this takes about an hour. In shorter sittings, work one step at a
+  time and stop wherever you need to." Added a "Good place to pause" label in the setup
+  table after the system is set up (0-10 min), after the Quick Captures are written
+  (20-40 min), and after the Full Entry is complete (40-50 min).
+- **The 60-minute starting-late setup** (Starting Late module): added the same one-line
+  note under the title, and the same three "Good place to pause" labels after system
+  setup (0-10 min), after the Quick Captures (25-45 min), and after the Full Entry
+  (45-55 min).
+- **Gumroad draft:** the description now reads "With about 60 minutes of focused time,
+  in one sitting or several, you will complete your first Career Evidence Entry." (The
+  earlier phrasing that stated completion "in approximately 60 minutes" was not present
+  verbatim in the draft; this replacement sentence was placed in the completion-time
+  spot, and the rigid "60-minute system" wording was dropped from the opening.)
+
 ## Pre-finish check (all three PDFs)
 - Em dashes: **0** · Fillable form fields (AcroForm/Widget): **0** · "actually" /
   "honestly" / "genuinely": **0** · "Founder and Principal": **0** · "Version 1.0.1" /

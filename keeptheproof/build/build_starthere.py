@@ -22,9 +22,9 @@ eyebrow = ParagraphStyle("eyebrow", fontName="DM-Bold", fontSize=10, textColor=G
 title = ParagraphStyle("title", fontName="CG-Semi", fontSize=30, textColor=NAVY,
     leading=33, spaceAfter=10)
 lead = ParagraphStyle("lead", fontName="DM", fontSize=10.6, textColor=INK,
-    leading=16.2, spaceAfter=4)
+    leading=15.6, spaceAfter=3)
 h2 = ParagraphStyle("h2", fontName="CG-Semi", fontSize=16, textColor=NAVY,
-    leading=19, spaceBefore=13, spaceAfter=6)
+    leading=19, spaceBefore=6, spaceAfter=5)
 toolname = ParagraphStyle("toolname", fontName="DM-Bold", fontSize=10.8, textColor=NAVY,
     leading=14, spaceAfter=2)
 tooldesc = ParagraphStyle("tooldesc", fontName="DM", fontSize=9.7, textColor=INK,
@@ -34,7 +34,7 @@ body = ParagraphStyle("body", fontName="DM", fontSize=9.9, textColor=INK,
 olist = ParagraphStyle("olist", fontName="DM", fontSize=9.9, textColor=INK,
     leading=13.6, leftIndent=17, firstLineIndent=-17, spaceAfter=2.5)
 signame = ParagraphStyle("signame", fontName="DM-Bold", fontSize=10, textColor=NAVY,
-    leading=14, spaceBefore=2)
+    leading=13.5, spaceBefore=0)
 sigline = ParagraphStyle("sigline", fontName="DM", fontSize=9.3, textColor=MUTE, leading=13)
 
 def P(t, s): return Paragraph(t, s)
@@ -83,8 +83,11 @@ story = [
     P("KEEP THE PROOF", eyebrow),
     P("Start Here", title),
     HRule(),
-    Spacer(1, 8),
+    Spacer(1, 4),
     P("Welcome to Keep the Proof.", lead),
+    P("Sixty minutes is what the setup takes with focused time. You can also work "
+      "through it across several shorter sittings. Each step stands on its own, so you "
+      "can stop after any step and pick up where you left off.", lead),
     P("In the next 60 minutes, you will turn scattered memories of your work into a "
       "private career evidence system you can return to before you need a resume, "
       "interview story, promotion case, or career move.", lead),
@@ -94,7 +97,7 @@ story = [
         "Begin with the main handbook. It will guide you through choosing meaningful "
         "work, identifying what changed because of your contribution, separating "
         "evidence from memory, and translating internal work into language that can travel."),
-    Spacer(1, 7),
+    Spacer(1, 4),
     tool_row(ic_layered_cards, "2.  The Career Evidence Ledger",
         "Use the ledger after completing the handbook. It is your reusable place to "
         "capture new evidence, complete monthly and quarterly reviews, and keep your "
@@ -117,12 +120,12 @@ story = [
     P("Describe the work and its outcome without including information you are not "
       "permitted to retain.", body),
 
-    Spacer(1, 9),
+    Spacer(1, 4),
     HRule(),
-    Spacer(1, 7),
+    Spacer(1, 4),
     P("You should leave the first hour with at least one completed Career Evidence "
       "Entry and a repeatable way to keep the proof of what your work has built.", lead),
-    Spacer(1, 6),
+    Spacer(1, 3),
     P("Temidayo Afonja", signame),
     P("Founder, The Density Group", sigline),
     P("Creator of Capability Formation", sigline),
