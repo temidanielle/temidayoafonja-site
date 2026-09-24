@@ -1,15 +1,11 @@
 {
-  "_comment": "Exact slide copy for the LinkedIn Featured carousel, transcribed from the build request. Nothing is rewritten, shortened or added. No em dash characters anywhere.",
+  "_comment": "Exact slide copy for the LinkedIn Featured carousel. Three lines were revised on request and are the only copy changes; everything else is the approved wording. No em dash characters anywhere, and the gate enforces the voice rules in source/voice.mjs.",
   "canvas": {
     "w": 1080,
     "h": 1350,
-    "margin": 96
-  },
-  "palette": {
-    "navy": "#112345",
-    "cream": "#F5F1E8",
-    "gold": "#C9A84C",
-    "brightYellow": "#F2C44C"
+    "inset": 54,
+    "pad": 56,
+    "radius": 14
   },
   "slides": [
     {
@@ -66,14 +62,14 @@
       "headline": "What must you relearn?",
       "body": [
         "A new context brings different technical requirements, language, and constraints.",
-        "Being capable of learning them is not the same as already knowing them."
+        "Learning them takes time, even when you are capable of it."
       ]
     },
     {
       "mode": "statement",
-      "headline": "Adjacent experience is not automatic qualification.",
+      "headline": "Adjacent experience still has to be read.",
       "body": [
-        "Your job is not to pretend the gap does not exist.",
+        "Name the gap before someone else does.",
         "Make your experience clear enough for the next context to judge the gap accurately."
       ]
     },
@@ -89,5 +85,18 @@
       "closing": "Follow for clear ways to decide what still counts before a career pivot or internal move.",
       "footer": "Temidayo Afonja | Capability Formation"
     }
-  ]
+  ],
+  "minType": 28,
+  "tokens": {
+    "navy": "#112345",
+    "card": "#F6F2E9",
+    "cream": "#F5F1E8",
+    "paper": "#FFFDF8",
+    "gold": "#C9A84C",
+    "goldInk": "#7F6A30",
+    "ink": "#182238",
+    "muted": "#5D6676",
+    "line": "#DCD6C8",
+    "bright": "#F2C44C"
+  }
 }
