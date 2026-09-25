@@ -20,7 +20,7 @@ Hi {{ subscriber.first_name }},
 
 Here is your Career Evidence Starter.
 
-**[Download the Career Evidence Starter (PDF)](https://temidayoafonja.com/resources/keep-the-proof-career-evidence-starter-v1-0-5ee610a6d0d4.pdf)**
+**[Download the Career Evidence Starter (PDF)](https://temidayoafonja.com/resources/keep-the-proof-career-evidence-starter-v1-1-dac91eea9ebf.pdf)**
 
 Before you open it, pick one piece of work. One project, decision, problem,
 improvement or piece of work where something changed because you were involved.
@@ -96,7 +96,7 @@ Temidayo
   committed at `/resources/`, under a filename carrying a random token so the URL
   cannot be guessed from the product name. The full URL is:
 
-  `https://temidayoafonja.com/resources/keep-the-proof-career-evidence-starter-v1-0-5ee610a6d0d4.pdf`
+  `https://temidayoafonja.com/resources/keep-the-proof-career-evidence-starter-v1-1-dac91eea9ebf.pdf`
 
   This is the value to paste into the Kit delivery email. `/resources/*` carries
   `X-Robots-Tag: noindex, nofollow` in `netlify.toml` and is disallowed in

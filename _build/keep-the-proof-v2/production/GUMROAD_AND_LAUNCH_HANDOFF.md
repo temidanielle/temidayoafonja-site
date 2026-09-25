@@ -44,7 +44,7 @@ four labels the site and Start Here use:
 ### Cover / thumbnail
 
 Use the V2 cover. A print-ready image is in the repo at the site root:
-`keep-the-proof-v2-cover.png` (1836×2376). The social/OG image `og-keep-the-proof.png`
+`keep-the-proof-v2-cover.png` (1836x2376). The social/OG image `og-keep-the-proof.png`
 was also regenerated for V2.
 
 ---
@@ -96,8 +96,8 @@ reconstruct anything your employer owns.
 - **Start Here:** a short orientation and a map of the bundle.
 - **Keep the Proof: Guided Handbook (55 pages):** the full method, with a completed
   example beside every tool, and a first focused session that gets you to one real
-  entry. It opens with Before You Rebuild Anything and closes with Put Your Record to
-  Work, which shows how to carry one Proof Line into a resume line, a LinkedIn About
+  entry. It opens with Before You Rebuild Anything, and its Put Your Record to Work
+  section shows how to carry one Proof Line into a resume line, a LinkedIn About
   section, an interview answer, and a promotion note. Sixty minutes is a guide. Take it
   in one sitting or several. Includes a parallel path for rebuilding after you've
   already lost access.
@@ -124,7 +124,7 @@ ready before a review, a move, or an unexpected change becomes urgent.
   for a specific destination. That's a different tool (the Capability Formation
   Field Kit).
 - It never asks you to upload or keep confidential employer information. You keep
-  your own account of your work, not the files.
+  your own account of your work and leave the files where they belong.
 - It's educational and does not give legal advice. Where permission is unclear, it tells
   you to leave the information out and ask someone qualified.
 
@@ -133,9 +133,9 @@ ready before a review, a move, or an unexpected change becomes urgent.
 Instant digital download. Your Professional Record opens in Word, Google Docs, or
 Pages; the Printable & Fillable Tools are fillable PDFs (best in Adobe Acrobat
 Reader); the handbook and Start Here are PDFs to read. Files are yours to save and
-reuse under a personal-use license.
-
-**$75. One price, instant access.**
+reuse under a personal-use license. Organizations providing Keep the Proof to
+employees or program participants can arrange a group license at
+temidayoafonja.com/work.
 
 New to the method? The free Career Evidence Starter helps you take one accomplishment
 all the way through and leave with one portable Proof Line:

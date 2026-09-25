@@ -6,7 +6,7 @@ KEEP THE PROOF
 
 A guided system for building your professional record
 
-For performance reviews, internal moves, career pivots, re-entry and unexpected change.
+For performance reviews, internal moves, career pivots, re-entry, and unexpected change.
 
 Temidayo Afonja · temidayoafonja.com
 
@@ -28,7 +28,7 @@ Written and designed by Temidayo Afonja, Founder, The Density Group. temidayoafo
 
 ## Welcome
 
-If you are reading this after a hard change, or in the middle of one, start here. What you built did not disappear when your circumstances changed. When an offer I had accepted was rescinded, I learned that circumstances can change faster than experience does. This guide will help you see what you built again, clearly enough that someone else can see it too.
+If you are reading this after a hard change, or in the middle of one, start here. What you built did not disappear when your circumstances changed. This guide will help you see what you built again, clearly enough that someone else can see it too.
 
 Most people do excellent work and remember almost none of it clearly.
 
@@ -126,7 +126,7 @@ What a professional record is, and why it goes missing. Kept short, because you 
 
 If your work access disappeared this afternoon, how much of the record of your work would disappear with it?
 
-Picture the ordinary version of a bad day. Not a scandal, just a change. A reorganization removes your login by five o'clock. A role is eliminated with two weeks' notice. A system migration wipes three years of your sent mail. You are fine, professionally and otherwise. But the record of what you did now lives in systems you can no longer open.
+Picture the ordinary version of a bad day. Nothing dramatic happens. Something changes. A reorganization removes your login by five o'clock. A role is eliminated with two weeks' notice. A system migration wipes three years of your sent mail. You are fine, professionally and otherwise. But the record of what you did now lives in systems you can no longer open.
 
 What would you still have? For most capable people the honest answer is a current title, a rough sense of their projects, and a handful of numbers they are not quite sure of. The specific decisions, the problems they caught before anyone noticed, the exact shape of the thing they built, all of it sat inside the work, and the work is behind a door that just closed.
 
@@ -479,7 +479,7 @@ Institutions tend to have short memories. Formal employment verification is ofte
 
 For an entry worth keeping, add two small things: who could confirm this, by role, and what they directly observed. "The operations manager I partnered with, who saw the redesign and its results." That is all. You are recording that a witness exists and what they witnessed, so that later, if it is ever useful, you know who to prepare with specifics.
 
-Keep this narrow, on purpose. This is corroboration readiness, and nothing more. It is not networking, not outreach scripting, not referral strategy, and not personal-brand building. Record the role and the observation. Do not store a colleague's private contact details or personal information inside your record.
+Keep this narrow, on purpose. This is corroboration readiness, and nothing more. Networking, outreach scripts, referral strategy, and personal branding belong to other tools. Record the role and the observation. Do not store a colleague's private contact details or personal information inside your record.
 
 What corroboration can and cannot do. Corroboration can strengthen credibility, particularly in senior hiring, where informal conversations often carry weight. It does not decide an employer's choice, and this guide will never suggest that it does. Its job is honest: to make sure that when your account matters, someone who saw the work is ready to confirm it.
 
@@ -499,7 +499,7 @@ Most entries need one of eight moves. Name to function: "Ran Project Northwind" 
 
 A ninth line is different, because it keeps you safe rather than clear. Sensitive to permitted: turn sensitive detail into a permitted, high-level description, and never use translation to smuggle restricted information out in disguise. If the only accurate version would expose something you may not keep, the correct move is to omit it, not to reword it.
 
-What translation is. This is general translation: plain language an outsider can follow, with your scope and context kept attached. It is not a judgment about whether your experience fits a particular role, industry, or employer. Saying your work clearly does not, by itself, make it portable to a chosen destination, and being portable does not guarantee that a given employer will value it. Those are separate questions, and the last page of this part is where this guide hands them off.
+What translation is. This is general translation: plain language an outsider can follow, with your scope and context kept attached. Whether your experience fits a particular role, industry, or employer is a separate question. Saying your work clearly does not, by itself, make it portable to a chosen destination, and being portable does not guarantee that a given employer will value it. Those are separate questions, and the last page of this part is where this guide hands them off.
 
 ## Build: the Proof Line
 
@@ -679,11 +679,11 @@ Proposal or portfolio: permitted outcomes that show the kind of work you deliver
 
 Unexpected transition: everything, quickly, because the record is now the only copy you have.
 
-## Match your proof to a role
+## Match Your Proof to a Role
 
 This page translates your evidence for a specific role. It does not advise on which roles to pursue. That is a different question, and a different tool.
 
-## Put your record to work
+## Put Your Record to Work
 
 Your record is where the true material lives. This section shows how to carry one Proof Line from that record into the four places people use most. It does not write your resume or coach your interviews. It gives you a clean starting draft in each place, and the words and the choices stay yours.
 

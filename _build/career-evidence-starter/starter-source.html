@@ -165,6 +165,7 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 14
 /* Heights are whole multiples of the 0.26in ruling, so a printed sheet always
    ends on a full line rather than half of one. */
 .fld--sm { height: 0.34in; }
+.fld--2ln { height: 0.52in; }  /* 2 lines */
 .fld--md { height: 0.78in; }   /* 3 lines */
 .fld--lg { height: 1.04in; }   /* 4 lines */
 .fld--xl { height: 1.30in; }   /* 5 lines */
@@ -310,21 +311,22 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 14
     <p class="family">Keep the Proof</p>
     <h1>The 10-Minute<br>Career Evidence<br>Starter</h1>
     <div class="rule"></div>
-    <p class="promise">Turn one accomplishment into proof you can use in a performance review, interview, internal move or career pivot.</p>
+    <p class="promise">Turn one accomplishment into proof you can use in a performance review, interview, internal move, or career pivot.</p>
     <p class="meta">One accomplishment. One Proof Line.</p>
     <div class="spacer"></div>
     <div class="lower">
       <div>
         <p class="byline">Temidayo Afonja</p>
-        <p class="byline-sub">Career Portability Advisor &middot; Founder, The Density Group</p>
+        <p class="byline-sub">Founder, The Density Group</p>
       </div>
       <div class="preview">
         <p class="cap">What you will build</p>
         <div class="pv-stack">
-          <div class="pv"><i></i>Before</div>
-          <div class="pv"><i></i>Your contribution</div>
-          <div class="pv"><i></i>What changed</div>
-          <div class="pv pv--out"><i></i>What travels</div>
+          <div class="pv"><i></i>The condition</div>
+          <div class="pv"><i></i>Your part</div>
+          <div class="pv"><i></i>The scope or constraint</div>
+          <div class="pv"><i></i>The outcome</div>
+          <div class="pv pv--out"><i></i>The support</div>
         </div>
       </div>
     </div>
@@ -344,7 +346,7 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 14
     <div class="note">
       <p class="eyebrow">Why I made this</p>
       <p>&ldquo;I used to think I would remember the work that mattered. I don&rsquo;t.</p>
-      <p>I created Keep the Proof after seeing how quickly the details behind good work disappear: what was true before, what you actually contributed and why the result mattered.</p>
+      <p>I created Keep the Proof after seeing how quickly the details behind good work disappear: what was true before, what you contributed and why the result mattered.</p>
       <p>For this Starter, you only need one piece of work. Let&rsquo;s make it usable before you forget it.&rdquo;</p>
       <p class="sig">Temidayo Afonja</p>
     </div>
@@ -353,12 +355,12 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 14
   <div class="rule--thin"></div>
 
   <h2>Choose one accomplishment worth remembering.</h2>
-  <p>Do not try to reconstruct your entire career. Choose one project, assignment, decision, problem, launch, redesign, client engagement, process improvement or piece of work from the recent past that mattered. Then complete the six prompts that follow.</p>
+  <p>Do not try to reconstruct your entire career. Choose one project, assignment, decision, problem, launch, redesign, client engagement, process improvement or piece of work from the recent past that mattered. Then complete the seven prompts that follow.</p>
 
   <h3 style="margin-top:14px;">Choose something where at least one is true</h3>
   <ul class="tests tests--2col">
     <li>Something changed because you were involved.</li>
-    <li>You exercised judgment, not just activity.</li>
+    <li>You made a judgment call.</li>
     <li>You solved or prevented a meaningful problem.</li>
     <li>Someone relied on your expertise.</li>
     <li>You learned something you could use again.</li>
@@ -383,7 +385,7 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 14
 
   <div class="safe">
     <p class="tag">Before you write</p>
-    <p class="lead">Tick each one before you write. If you cannot tick it, leave that detail out.</p>
+    <p class="lead">Check each one before you write. If you cannot check it, leave that detail out.</p>
     <ul class="check check--tight">
       <li><span class="cbx" data-check="perm_recollection"></span><span>I am recording my own recollection, and information I am permitted to retain.</span></li>
       <li><span class="cbx" data-check="perm_nocopy"></span><span>I am not copying, forwarding, photographing or reproducing confidential or employer-owned material.</span></li>
@@ -399,40 +401,47 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 14
 <!-- ══ PAGE 3 · BUILD THE EVIDENCE ══ -->
 <section class="page page--build">
   <p class="eyebrow">Build the evidence</p>
-  <h2>What actually happened?</h2>
+  <h2>What happened?</h2>
   <div class="rule"></div>
 
-  <p class="pull">You do not need a perfect metric. You need a truthful account of what changed.</p>
+  <p class="pull">Start with a truthful account of what changed. A number can come later, if you have one you may keep.</p>
 
   <p class="lbl">Project or work event</p>
   <div class="fld fld--sm" data-field="project" data-lines="1"></div>
 
   <div class="gcard">
-    <p class="gtag"><span class="gn">1</span>Before</p>
+    <p class="gtag"><span class="gn">1</span>The condition</p>
     <p class="gq">What was true before I got involved?</p>
     <p class="ghelp">What problem, condition, constraint or need existed?</p>
-    <div class="fld fld--md fld--lines" data-field="q1_before" data-lines="3"></div>
+    <div class="fld fld--2ln fld--lines" data-field="q1_before" data-lines="2"></div>
   </div>
 
   <div class="gcard gcard--alt">
-    <p class="gtag"><span class="gn">2</span>Your judgment</p>
+    <p class="gtag"><span class="gn">2</span>Your part</p>
     <p class="gq">What was my specific contribution or judgment?</p>
     <p class="ghelp">What did you notice, decide, influence, build, change or prevent? Your part, not everything the team did.</p>
-    <div class="fld fld--md fld--lines" data-field="q2_contribution" data-lines="3"></div>
+    <div class="fld fld--2ln fld--lines" data-field="q2_contribution" data-lines="2"></div>
   </div>
 
   <div class="gcard">
-    <p class="gtag"><span class="gn">3</span>Change</p>
-    <p class="gq">What changed?</p>
-    <p class="ghelp">What improved, became possible, moved, disappeared or was prevented?</p>
-    <div class="fld fld--md fld--lines" data-field="q3_changed" data-lines="3"></div>
+    <p class="gtag"><span class="gn">3</span>The scope or constraint</p>
+    <p class="gq">How big was it, and what limits did I work within?</p>
+    <p class="ghelp">The size of the team, audience, timeline, or problem, stated only as far as you are permitted.</p>
+    <div class="fld fld--2ln fld--lines" data-field="q3_scope" data-lines="2"></div>
   </div>
 
   <div class="gcard gcard--alt">
-    <p class="gtag"><span class="gn">4</span>Proof</p>
+    <p class="gtag"><span class="gn">4</span>The outcome</p>
+    <p class="gq">What changed?</p>
+    <p class="ghelp">What improved, became possible, moved, disappeared or was prevented?</p>
+    <div class="fld fld--2ln fld--lines" data-field="q4_changed" data-lines="2"></div>
+  </div>
+
+  <div class="gcard">
+    <p class="gtag"><span class="gn">5</span>The support</p>
     <p class="gq">What evidence supports this?</p>
     <p class="ghelp">What makes the account defensible? Use only accurate and permitted evidence: a measured result, an observable change, a public source, documented feedback, a role-based verifier, or a before and after condition.</p>
-    <div class="fld fld--md fld--lines" data-field="q4_evidence" data-lines="3"></div>
+    <div class="fld fld--2ln fld--lines" data-field="q5_evidence" data-lines="2"></div>
   </div>
 
   <div class="foot"><span class="l">Keep the Proof &middot; Career Evidence Starter</span><span>3</span></div>
@@ -444,7 +453,7 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 14
   <h2>What does this work show you can do?</h2>
   <div class="rule"></div>
 
-  <div class="q"><span class="n">5</span><span class="t">What could I plausibly do again?</span></div>
+  <div class="q"><span class="n">6</span><span class="t">What could I plausibly do again?</span></div>
   <p class="help">Move beyond the project name. What did this work require you to know how to do?</p>
   <div class="chips">
     <span class="chip">Diagnose an unclear problem</span>
@@ -458,12 +467,12 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 14
     <span class="chip">Identify risk</span>
     <span class="chip">Redesign an experience</span>
   </div>
-  <p class="chipnote">These are examples, not a checklist. What did your work require?</p>
+  <p class="chipnote">These are examples. What did your work require?</p>
   <div class="fld fld--xl fld--lines" data-field="q5_portable" data-lines="4"></div>
 
   <div class="rule--thin"></div>
 
-  <div class="q"><span class="n">6</span><span class="t">Remove the internal language</span></div>
+  <div class="q"><span class="n">7</span><span class="t">Remove the internal language</span></div>
   <p class="help">Which words only make sense inside your current company?</p>
 
   <div class="xform">
@@ -481,7 +490,7 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 14
       <p class="xitem">Customer intake process</p>
     </div>
   </div>
-  <p class="xnote">This is an example of the distinction, not a claim that those terms are equivalent in every workplace.</p>
+  <p class="xnote">This shows the distinction. The terms will differ by workplace.</p>
 
   <div class="inline-flds">
     <div>
@@ -511,12 +520,9 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 14
   <div class="rule"></div>
 
   <div class="scaffold">
-    <p>I helped <span class="sv">[solve / change / build / improve what]</span><br>
-      by <span class="sv">[your specific contribution or judgment]</span>,<br>
-      which <span class="sv">[result or observable change]</span>,<br>
-      showing that I can <span class="sv">[portable capability]</span>.</p>
+    <p>Combine, in whatever order reads well, up to five ingredients into one line: <span class="sv">the condition</span>, <span class="sv">your part</span>, <span class="sv">the scope or constraint</span>, <span class="sv">the outcome</span>, and <span class="sv">the support</span>.</p>
   </div>
-  <p class="help">This is a scaffold for thinking, not a sentence to copy mechanically. Rearrange it so it sounds like you.</p>
+  <p class="help">Use this as a scaffold for thinking. Rearrange it so it sounds like you.</p>
 
   <div class="example">
     <div class="col">
@@ -525,7 +531,7 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 14
     </div>
     <div class="col col--to">
       <p class="lbl">Portable</p>
-      <p>&ldquo;Led a cross-functional onboarding redesign that improved new-hire integration by diagnosing gaps, aligning stakeholders and turning an unclear experience problem into an operating change.&rdquo;</p>
+      <p>&ldquo;Redesigned new-hire onboarding for a growing operations team, cutting time to full productivity and reducing early attrition, with the model later adopted by two other departments.&rdquo;</p>
     </div>
   </div>
 
@@ -567,14 +573,14 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 14
 
   <div class="next">
     <div class="cover-shot">
-      <img src="/keep-the-proof-cover.png" alt="Keep the Proof">
+      <img src="/keep-the-proof-v2-cover.png" alt="Keep the Proof">
     </div>
     <div class="body">
       <p class="ladder"><span class="lg">This Starter</span> proves one thing.<br>
         <span class="lg">Keep the Proof</span> builds the record.</p>
       <p class="prod">Keep the Proof</p>
-      <p class="prodsub">A 60-Minute Career Evidence System</p>
-      <p>If this exercise helped you see one accomplishment more clearly, Keep the Proof gives you the complete system and reusable Career Evidence Ledger for capturing, translating, organising and maintaining the record over time.</p>
+      <p class="prodsub">A guided system for building your professional record.</p>
+      <p>If this exercise helped you see one accomplishment more clearly, Keep the Proof gives you the full method, a Professional Record you keep and control, and printable and fillable tools for building the record over time.</p>
       <p class="link">temidayoafonja.com/keep-the-proof</p>
     </div>
   </div>

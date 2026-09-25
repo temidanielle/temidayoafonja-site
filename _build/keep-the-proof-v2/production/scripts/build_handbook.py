@@ -7,20 +7,26 @@ import record_model as M
 import icons as I
 
 ROOT = "/home/user/temidayoafonja-site"
-# Table of contents entries: (display label, unique search string on its page).
+# Table of contents entries: (display label, unique search string on its page, indent).
+# Search keys must be unique in the rendered PDF and must NOT also appear on the
+# Contents page (the labels are printed there), so any key whose label matches its
+# heading verbatim uses a distinctive phrase from that page's body instead.
 TOC_ENTRIES = [
-    ("Before You Rebuild Anything", "Before You Rebuild Anything"),
-    ("Part One: Understand the Record", "PART ONE"),
-    ("Your First 60 Minutes", "YOUR FIRST 60 MINUTES"),
-    ("Part Two: Capture", "PART TWO"),
-    ("Part Three: Permission and Protection", "PART THREE"),
-    ("Part Four: Clarify", "PART FOUR"),
-    ("Part Five: Carry", "PART FIVE"),
-    ("Part Six: Worked Examples", "PART SIX"),
-    ("Part Seven: Reconstruct", "PART SEVEN"),
-    ("Part Eight: Keep It Current, and Use It", "PART EIGHT"),
-    ("Part Nine: The Record You Own", "PART NINE"),
-    ("Closing", "CLOSING"),
+    ("Before You Rebuild Anything", "the first thing to go is often the way", False),
+    ("Part One: Understand the Record", "PART ONE", False),
+    ("What It Costs When the Proof Is Gone", "Six moments where your record matters most", True),
+    ("Your First 60 Minutes", "YOUR FIRST 60 MINUTES", False),
+    ("Part Two: Capture", "PART TWO", False),
+    ("Part Three: Permission and Protection", "PART THREE", False),
+    ("Part Four: Clarify", "PART FOUR", False),
+    ("Part Five: Carry", "PART FIVE", False),
+    ("Part Six: Worked Examples", "PART SIX", False),
+    ("Part Seven: Reconstruct", "PART SEVEN", False),
+    ("Part Eight: Keep It Current, and Use It", "PART EIGHT", False),
+    ("Match Your Proof to a Role", "This page translates your evidence for a specific role", True),
+    ("Put Your Record to Work", "Your record is where the true material lives", True),
+    ("Part Nine: The Record You Own", "PART NINE", False),
+    ("Closing", "CLOSING", False),
 ]
 _TOC_JSON = os.path.join(os.path.dirname(__file__), "toc_pages.json")
 try:
@@ -41,7 +47,7 @@ if len(sys.argv) > 1 and sys.argv[1] == "computetoc":
     # de-space page text so letter-spaced divider kickers still match
     _per = [_nows.sub("", _d[i].get_textpage().get_text_range()) for i in range(len(_d))]
     _pages = {}
-    for _label, _key in TOC_ENTRIES:
+    for _label, _key, _indent in TOC_ENTRIES:
         _k = _nows.sub("", _key)
         for _i, _t in enumerate(_per):
             if _k in _t:
@@ -247,6 +253,7 @@ def fades_diagram_device():
     rec_pts = " ".join(f"{x:.1f},{y:.1f}" for x, y in rec)
     return f'''
 <div class="fades">
+<p class="fades-title">What Fades and What Holds</p>
 <svg viewBox="0 0 {W} {H}" class="fades-svg" role="img" aria-label="An illustration: what you remember fades quickly after the work ends, while what your record holds steps up with each entry and then holds level.">
   <line x1="{x0}" y1="{y0}" x2="{x0}" y2="{yb}" class="axis"/>
   <line x1="{x0}" y1="{yb}" x2="{xr}" y2="{yb}" class="axis"/>
@@ -263,9 +270,10 @@ def fades_diagram_device():
 
 def toc_device():
     rows = ""
-    for label, key in TOC_ENTRIES:
+    for label, key, indent in TOC_ENTRIES:
         num = TOC_PAGES.get(key, "")
-        rows += (f'<div class="toc-row"><span class="toc-label">{esc(label)}</span>'
+        cls = "toc-row toc-sub" if indent else "toc-row"
+        rows += (f'<div class="{cls}"><span class="toc-label">{esc(label)}</span>'
                  f'<span class="toc-dots"></span><span class="toc-num">{num}</span></div>')
     return f'<section class="toc-page"><h1 class="toc-title">Contents</h1><div class="toc-list">{rows}</div></section>'
 
@@ -299,11 +307,14 @@ INJECT_AFTER_H2 = {
     "The spine: Capture, Clarify, Carry": spine_device,
     "Keep, Care, Never": kcn_device,
     "Two ways in": doors_device,
-    "Match your proof to a role": match_device,
+    "Match Your Proof to a Role": match_device,
     "Before You Rebuild Anything": rebuild_subtitle_device,
     "What It Costs When the Proof Is Gone": cost_device,
     "The Two-Minute Quick Capture": fades_diagram_device,
 }
+
+# Chapter-level h2 headings that must begin on a fresh page.
+PAGE_BREAK_H2 = {"Before You Rebuild Anything"}
 
 # Icons rendered inline before a matching heading (h2 or h3).
 ICON_FOR_HEADING = {
@@ -372,7 +383,8 @@ for idx,(kind,payload) in enumerate(blocks):
             body.append(toc_device()); continue
         ic = ICON_FOR_HEADING.get(payload)
         pre = f'<span class="h-ico">{I.svg(ic, px=19, label=True)}</span>' if ic else ''
-        body.append(f'<h2>{pre}{esc(payload)}</h2>')
+        hcls = ' class="chapter-start"' if payload in PAGE_BREAK_H2 else ''
+        body.append(f'<h2{hcls}>{pre}{esc(payload)}</h2>')
         if payload in INJECT_AFTER_H2:
             body.append(INJECT_AFTER_H2[payload]())
         continue
@@ -451,6 +463,7 @@ h2{{font-family:'Cormorant',serif;font-weight:600;font-size:20pt;line-height:1.1
 h2::after{{content:"";display:block;width:2.2em;height:2.5px;background:{GOLD};margin-top:.32em;}}
 p{{margin:0 0 0.72em;orphans:2;widows:2;}}
 h2{{break-after:avoid;page-break-after:avoid;break-inside:avoid;}}
+h2.chapter-start{{break-before:page;page-break-before:always;margin-top:0;}}
 strong{{font-weight:600;color:{NAVY};}}
 code{{font-family:'DM Sans',sans-serif;background:{CREAM};padding:0 .25em;border-radius:3px;font-size:.92em;}}
 ul{{margin:0 0 0.9em;padding-left:1.15em;}}
@@ -561,6 +574,7 @@ table.cost td.cost-with{{background:#FBF3E2;}}
 
 /* Fades diagram */
 .fades{{margin:.6em 0 1.2em;page-break-inside:avoid;}}
+.fades-title{{font-family:'Cormorant',serif;font-weight:600;font-size:14pt;color:{NAVY};margin:0 0 .35em;}}
 .fades-svg{{width:100%;height:auto;}}
 .fades-svg .axis{{stroke:{INK};stroke-width:1;opacity:.5;}}
 .fades-svg .line-mem{{fill:none;stroke:{GOLD};stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;}}
@@ -575,11 +589,14 @@ table.cost td.cost-with{{background:#FBF3E2;}}
 /* Contents (table of contents) */
 .toc-page{{page-break-before:always;page-break-after:always;padding-top:.3in;}}
 .toc-title{{font-family:'Cormorant',serif;font-weight:600;font-size:30pt;color:{NAVY};margin:0 0 .5em;padding-bottom:.2em;border-bottom:2.5px solid {GOLD};}}
-.toc-list{{margin-top:1.2em;}}
-.toc-row{{display:flex;align-items:baseline;margin:0 0 1.05em;font-family:'DM Sans',sans-serif;}}
+.toc-list{{margin-top:1.1em;}}
+.toc-row{{display:flex;align-items:baseline;margin:0 0 .82em;font-family:'DM Sans',sans-serif;}}
 .toc-label{{font-size:11.5pt;color:{NAVY};font-weight:500;white-space:nowrap;}}
 .toc-dots{{flex:1;margin:0 .5em;border-bottom:1px dotted #b9bec8;transform:translateY(-0.2em);}}
 .toc-num{{font-size:11pt;color:{INK};font-variant-numeric:tabular-nums;}}
+.toc-row.toc-sub{{margin:-.22em 0 .82em 1.5em;}}
+.toc-row.toc-sub .toc-label{{font-size:10pt;color:{INK};font-weight:400;}}
+.toc-row.toc-sub .toc-num{{font-size:10pt;}}
 '''
 
 htmldoc = f'''<!doctype html><html lang="en"><head><meta charset="utf-8">

@@ -7,7 +7,7 @@ const fs = require('fs');
 const path = require('path');
 
 const DIR = __dirname;
-const SRC = path.join(DIR, 'Keep_the_Proof_Career_Evidence_Starter_v1.0_CANDIDATE.pdf');
+const SRC = path.join(DIR, 'Keep_the_Proof_Career_Evidence_Starter_v1.1_CANDIDATE.pdf');
 const FILLED = path.join(DIR, 'filled-roundtrip.pdf');
 
 (async () => {

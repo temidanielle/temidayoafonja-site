@@ -20,6 +20,7 @@ h2{font-family:'Cormorant',serif;font-weight:600;font-size:20pt;line-height:1.12
 h2::after{content:"";display:block;width:2.2em;height:2.5px;background:#C9A84C;margin-top:.32em;}
 p{margin:0 0 0.72em;orphans:2;widows:2;}
 h2{break-after:avoid;page-break-after:avoid;break-inside:avoid;}
+h2.chapter-start{break-before:page;page-break-before:always;margin-top:0;}
 strong{font-weight:600;color:#112345;}
 code{font-family:'DM Sans',sans-serif;background:#F5F1E8;padding:0 .25em;border-radius:3px;font-size:.92em;}
 ul{margin:0 0 0.9em;padding-left:1.15em;}
@@ -130,6 +131,7 @@ table.cost td.cost-with{background:#FBF3E2;}
 
 /* Fades diagram */
 .fades{margin:.6em 0 1.2em;page-break-inside:avoid;}
+.fades-title{font-family:'Cormorant',serif;font-weight:600;font-size:14pt;color:#112345;margin:0 0 .35em;}
 .fades-svg{width:100%;height:auto;}
 .fades-svg .axis{stroke:#1c2333;stroke-width:1;opacity:.5;}
 .fades-svg .line-mem{fill:none;stroke:#C9A84C;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;}
@@ -144,17 +146,20 @@ table.cost td.cost-with{background:#FBF3E2;}
 /* Contents (table of contents) */
 .toc-page{page-break-before:always;page-break-after:always;padding-top:.3in;}
 .toc-title{font-family:'Cormorant',serif;font-weight:600;font-size:30pt;color:#112345;margin:0 0 .5em;padding-bottom:.2em;border-bottom:2.5px solid #C9A84C;}
-.toc-list{margin-top:1.2em;}
-.toc-row{display:flex;align-items:baseline;margin:0 0 1.05em;font-family:'DM Sans',sans-serif;}
+.toc-list{margin-top:1.1em;}
+.toc-row{display:flex;align-items:baseline;margin:0 0 .82em;font-family:'DM Sans',sans-serif;}
 .toc-label{font-size:11.5pt;color:#112345;font-weight:500;white-space:nowrap;}
 .toc-dots{flex:1;margin:0 .5em;border-bottom:1px dotted #b9bec8;transform:translateY(-0.2em);}
 .toc-num{font-size:11pt;color:#1c2333;font-variant-numeric:tabular-nums;}
+.toc-row.toc-sub{margin:-.22em 0 .82em 1.5em;}
+.toc-row.toc-sub .toc-label{font-size:10pt;color:#1c2333;font-weight:400;}
+.toc-row.toc-sub .toc-num{font-size:10pt;}
 </style></head>
 <body><section class="cover"><div class="cv-inner">
                   <h1 class="cv-title">KEEP THE PROOF</h1>
                   <div class="cv-rule"></div>
                   <div class="cv-desc">A guided system for building your professional record</div>
-                  <div class="cv-for">For performance reviews, internal moves, career pivots, re-entry and unexpected change.</div>
+                  <div class="cv-for">For performance reviews, internal moves, career pivots, re-entry, and unexpected change.</div>
                   <div class="cv-by">Temidayo Afonja · temidayoafonja.com</div>
                 </div></section>
 <h2>The record and the fine print</h2>
@@ -163,9 +168,9 @@ table.cost td.cost-with{background:#FBF3E2;}
 <p>What this guide is, and what it is not</p>
 <p>This is an educational guide to keeping a private, permitted record of your own work. It is not legal advice. It cannot interpret your specific employment agreement, your non-disclosure obligations, your employer&#x27;s policies, or the laws that apply where you work. Where a question of permission is unclear, treat that as a signal to leave the information out and to ask someone qualified, such as your manager, your human resources team, or an attorney.</p>
 <p>Written and designed by Temidayo Afonja, Founder, The Density Group. temidayoafonja.com</p>
-<section class="toc-page"><h1 class="toc-title">Contents</h1><div class="toc-list"><div class="toc-row"><span class="toc-label">Before You Rebuild Anything</span><span class="toc-dots"></span><span class="toc-num">3</span></div><div class="toc-row"><span class="toc-label">Part One: Understand the Record</span><span class="toc-dots"></span><span class="toc-num">9</span></div><div class="toc-row"><span class="toc-label">Your First 60 Minutes</span><span class="toc-dots"></span><span class="toc-num">16</span></div><div class="toc-row"><span class="toc-label">Part Two: Capture</span><span class="toc-dots"></span><span class="toc-num">18</span></div><div class="toc-row"><span class="toc-label">Part Three: Permission and Protection</span><span class="toc-dots"></span><span class="toc-num">24</span></div><div class="toc-row"><span class="toc-label">Part Four: Clarify</span><span class="toc-dots"></span><span class="toc-num">29</span></div><div class="toc-row"><span class="toc-label">Part Five: Carry</span><span class="toc-dots"></span><span class="toc-num">34</span></div><div class="toc-row"><span class="toc-label">Part Six: Worked Examples</span><span class="toc-dots"></span><span class="toc-num">38</span></div><div class="toc-row"><span class="toc-label">Part Seven: Reconstruct</span><span class="toc-dots"></span><span class="toc-num">43</span></div><div class="toc-row"><span class="toc-label">Part Eight: Keep It Current, and Use It</span><span class="toc-dots"></span><span class="toc-num">46</span></div><div class="toc-row"><span class="toc-label">Part Nine: The Record You Own</span><span class="toc-dots"></span><span class="toc-num">52</span></div><div class="toc-row"><span class="toc-label">Closing</span><span class="toc-dots"></span><span class="toc-num">54</span></div></div></section>
+<section class="toc-page"><h1 class="toc-title">Contents</h1><div class="toc-list"><div class="toc-row"><span class="toc-label">Before You Rebuild Anything</span><span class="toc-dots"></span><span class="toc-num">7</span></div><div class="toc-row"><span class="toc-label">Part One: Understand the Record</span><span class="toc-dots"></span><span class="toc-num">9</span></div><div class="toc-row toc-sub"><span class="toc-label">What It Costs When the Proof Is Gone</span><span class="toc-dots"></span><span class="toc-num">11</span></div><div class="toc-row"><span class="toc-label">Your First 60 Minutes</span><span class="toc-dots"></span><span class="toc-num">16</span></div><div class="toc-row"><span class="toc-label">Part Two: Capture</span><span class="toc-dots"></span><span class="toc-num">18</span></div><div class="toc-row"><span class="toc-label">Part Three: Permission and Protection</span><span class="toc-dots"></span><span class="toc-num">24</span></div><div class="toc-row"><span class="toc-label">Part Four: Clarify</span><span class="toc-dots"></span><span class="toc-num">29</span></div><div class="toc-row"><span class="toc-label">Part Five: Carry</span><span class="toc-dots"></span><span class="toc-num">34</span></div><div class="toc-row"><span class="toc-label">Part Six: Worked Examples</span><span class="toc-dots"></span><span class="toc-num">38</span></div><div class="toc-row"><span class="toc-label">Part Seven: Reconstruct</span><span class="toc-dots"></span><span class="toc-num">43</span></div><div class="toc-row"><span class="toc-label">Part Eight: Keep It Current, and Use It</span><span class="toc-dots"></span><span class="toc-num">46</span></div><div class="toc-row toc-sub"><span class="toc-label">Match Your Proof to a Role</span><span class="toc-dots"></span><span class="toc-num">49</span></div><div class="toc-row toc-sub"><span class="toc-label">Put Your Record to Work</span><span class="toc-dots"></span><span class="toc-num">49</span></div><div class="toc-row"><span class="toc-label">Part Nine: The Record You Own</span><span class="toc-dots"></span><span class="toc-num">52</span></div><div class="toc-row"><span class="toc-label">Closing</span><span class="toc-dots"></span><span class="toc-num">54</span></div></div></section>
 <h2>Welcome</h2>
-<p>If you are reading this after a hard change, or in the middle of one, start here. What you built did not disappear when your circumstances changed. When an offer I had accepted was rescinded, I learned that circumstances can change faster than experience does. This guide will help you see what you built again, clearly enough that someone else can see it too.</p>
+<p>If you are reading this after a hard change, or in the middle of one, start here. What you built did not disappear when your circumstances changed. This guide will help you see what you built again, clearly enough that someone else can see it too.</p>
 <p>Most people do excellent work and remember almost none of it clearly.</p>
 <p>The work was constant. You solved the problem, absorbed the lesson, and moved to the next thing before the last one had a name. Months later a review, a promotion case, or a sudden change asks you to account for a year, and you find yourself reaching for details that have already gone soft.</p>
 <p>Across my career I have worked in and around talent, workforce, and organizational decisions: conversations about performance, promotion, restructuring, and readiness. One pattern kept surfacing, and it was simpler than the politics of any single room. Capable people would reach an important career moment and then have to reconstruct the work that had brought them to it. Some could describe their contribution clearly. Others knew they had done meaningful work but no longer had the details.</p>
@@ -191,7 +196,7 @@ table.cost td.cost-with{background:#FBF3E2;}
 <p>You can read straight through in an unhurried sitting, or jump to the part you need. Wherever a tool appears, a completed example appears with it, so you are never looking at an empty box wondering what belongs there. Permission and protection run through the entire guide rather than sitting in one block, because they apply to every entry you make.</p>
 <p>The one rule that never bends</p>
 <p>You record your own recollection and information you are permitted to retain. You never copy, forward, or reconstruct material your employer owns. If permission is unclear, you leave it out. Everything else in this guide sits underneath that rule.</p>
-<h2>Before You Rebuild Anything</h2>
+<h2 class="chapter-start">Before You Rebuild Anything</h2>
 <p class="chapter-sub">See what you already built</p>
 <p>When work changes suddenly, the first thing to go is often the way you describe yourself. People with years of good work behind them start saying they are starting over, starting from scratch, going back to zero.</p>
 <p>Those words can feel true in a hard week. They are rarely accurate, and they shape what you let yourself try.</p>
@@ -223,7 +228,7 @@ table.cost td.cost-with{background:#FBF3E2;}
             </div></section>
 <h2>The opening question</h2>
 <p>If your work access disappeared this afternoon, how much of the record of your work would disappear with it?</p>
-<p>Picture the ordinary version of a bad day. Not a scandal, just a change. A reorganization removes your login by five o&#x27;clock. A role is eliminated with two weeks&#x27; notice. A system migration wipes three years of your sent mail. You are fine, professionally and otherwise. But the record of what you did now lives in systems you can no longer open.</p>
+<p>Picture the ordinary version of a bad day. Nothing dramatic happens. Something changes. A reorganization removes your login by five o&#x27;clock. A role is eliminated with two weeks&#x27; notice. A system migration wipes three years of your sent mail. You are fine, professionally and otherwise. But the record of what you did now lives in systems you can no longer open.</p>
 <p>What would you still have? For most capable people the honest answer is a current title, a rough sense of their projects, and a handful of numbers they are not quite sure of. The specific decisions, the problems they caught before anyone noticed, the exact shape of the thing they built, all of it sat inside the work, and the work is behind a door that just closed.</p>
 <p>This guide is built for the stretch of time between two sentences. The first is I am doing the work. The second is I suddenly need to explain what the work amounted to. That gap is usually months or years long, and almost nobody uses it. Keep the Proof is how you use it.</p>
 <h2>Why a professional record goes missing</h2>
@@ -300,6 +305,7 @@ table.cost td.cost-with{background:#FBF3E2;}
 <h2>The Two-Minute Quick Capture</h2>
 
 <div class="fades">
+<p class="fades-title">What Fades and What Holds</p>
 <svg viewBox="0 0 520 250" class="fades-svg" role="img" aria-label="An illustration: what you remember fades quickly after the work ends, while what your record holds steps up with each entry and then holds level.">
   <line x1="46" y1="24" x2="46" y2="204" class="axis"/>
   <line x1="46" y1="204" x2="500" y2="204" class="axis"/>
@@ -405,7 +411,7 @@ table.cost td.cost-with{background:#FBF3E2;}
 <h2>Who could confirm this</h2>
 <p>Institutions tend to have short memories. Formal employment verification is often limited to basic details such as your title and your dates, while the people who worked closely with you may remember far more of the contribution itself. When you leave, that firsthand memory is often the part that lasts. So while the work is fresh, note who saw it.</p>
 <p>For an entry worth keeping, add two small things: who could confirm this, by role, and what they directly observed. &quot;The operations manager I partnered with, who saw the redesign and its results.&quot; That is all. You are recording that a witness exists and what they witnessed, so that later, if it is ever useful, you know who to prepare with specifics.</p>
-<p>Keep this narrow, on purpose. This is corroboration readiness, and nothing more. It is not networking, not outreach scripting, not referral strategy, and not personal-brand building. Record the role and the observation. Do not store a colleague&#x27;s private contact details or personal information inside your record.</p>
+<p>Keep this narrow, on purpose. This is corroboration readiness, and nothing more. Networking, outreach scripts, referral strategy, and personal branding belong to other tools. Record the role and the observation. Do not store a colleague&#x27;s private contact details or personal information inside your record.</p>
 <p>What corroboration can and cannot do. Corroboration can strengthen credibility, particularly in senior hiring, where informal conversations often carry weight. It does not decide an employer&#x27;s choice, and this guide will never suggest that it does. Its job is honest: to make sure that when your account matters, someone who saw the work is ready to confirm it.</p>
 <section class="part-divider"><div class="pd-inner">
               <div class="pd-kicker">PART FIVE</div>
@@ -417,7 +423,7 @@ table.cost td.cost-with{background:#FBF3E2;}
 <p>A record only your current employer can read is a record that expires when you leave. Translation is the skill of saying the same true thing in words an outsider can follow. It keeps the meaning and changes only the words, turning a private shorthand into a description that travels.</p>
 <p>Most entries need one of eight moves. Name to function: &quot;Ran Project Northwind&quot; becomes &quot;Led the customer-data migration.&quot; Assignment to contribution: &quot;Responsible for reporting&quot; becomes &quot;Rebuilt the reporting so leaders could act on it.&quot; Activity to consequence: &quot;Held weekly reviews&quot; becomes &quot;Caught risks early enough to prevent slippage.&quot; Team to your part: &quot;We launched it&quot; becomes &quot;I owned the rollout plan for the launch.&quot; Acronym to meaning: &quot;Cleared the KYC backlog&quot; becomes &quot;Cleared a backlog of customer identity checks.&quot; &quot;Helped with&quot; to real role: &quot;Helped with the audit&quot; becomes &quot;Prepared the evidence and answered the auditors directly.&quot; No number to credible detail: &quot;Improved the process&quot; becomes &quot;Cut a two-day task to a few hours.&quot; Number to scale: &quot;Handled 40 accounts&quot; becomes &quot;Managed 40 enterprise accounts across three regions.&quot;</p>
 <p>A ninth line is different, because it keeps you safe rather than clear. Sensitive to permitted: turn sensitive detail into a permitted, high-level description, and never use translation to smuggle restricted information out in disguise. If the only accurate version would expose something you may not keep, the correct move is to omit it, not to reword it.</p>
-<p>What translation is. This is general translation: plain language an outsider can follow, with your scope and context kept attached. It is not a judgment about whether your experience fits a particular role, industry, or employer. Saying your work clearly does not, by itself, make it portable to a chosen destination, and being portable does not guarantee that a given employer will value it. Those are separate questions, and the last page of this part is where this guide hands them off.</p>
+<p>What translation is. This is general translation: plain language an outsider can follow, with your scope and context kept attached. Whether your experience fits a particular role, industry, or employer is a separate question. Saying your work clearly does not, by itself, make it portable to a chosen destination, and being portable does not guarantee that a given employer will value it. Those are separate questions, and the last page of this part is where this guide hands them off.</p>
 <h2><span class="h-ico"><svg class="ico" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#112345" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Proof Line"><line x1="5" y1="9.5" x2="15" y2="9.5"/><line x1="5" y1="14.5" x2="19" y2="14.5"/><circle cx="18" cy="9.5" r="1.7" fill="#C9A84C" stroke="none"/></svg></span>Build: the Proof Line</h2>
 <p>A Proof Line is a single, plain-language sentence that carries the most useful parts of an entry in a form you can drop into a review, a resume, or a conversation. It is the portable end product of everything the record holds. You build it by combining, in whatever order reads well, up to five ingredients: the condition you were responding to, your part, the scope or constraint, the outcome, and the support, meaning permitted evidence or validation when you have it.</p>
 <p>Maya&#x27;s Proof Line: &quot;Redesigned new-hire onboarding for a growing operations team, cutting time to full productivity and reducing early attrition, with the model later adopted by two other departments.&quot;</p>
@@ -502,7 +508,7 @@ table.cost td.cost-with{background:#FBF3E2;}
 <p><strong>Biography or introduction:</strong> a few durable, senior-sounding contributions stated plainly.</p>
 <p><strong>Proposal or portfolio:</strong> permitted outcomes that show the kind of work you deliver.</p>
 <p><strong>Unexpected transition:</strong> everything, quickly, because the record is now the only copy you have.</p>
-<h2>Match your proof to a role</h2>
+<h2>Match Your Proof to a Role</h2>
 
 <p class="match-instr"><span class="inl-ico"><svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#112345" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Match your proof to a role"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1.4" fill="#C9A84C" stroke="none"/></svg></span>Pick three requirements from one posting. Match each to a Proof Line you have already written. If none fits, write the gap in the third column instead of stretching a line to cover it. A named gap is more credible than a stretched claim.</p>
 <table class="match">
@@ -515,7 +521,7 @@ table.cost td.cost-with{background:#FBF3E2;}
   </tbody>
 </table>
 <p>This page translates your evidence for a specific role. It does not advise on which roles to pursue. That is a different question, and a different tool.</p>
-<h2>Put your record to work</h2>
+<h2>Put Your Record to Work</h2>
 <p>Your record is where the true material lives. This section shows how to carry one Proof Line from that record into the four places people use most. It does not write your resume or coach your interviews. It gives you a clean starting draft in each place, and the words and the choices stay yours.</p>
 <p>Before anything leaves the record, run one public-use check. Include only details you are permitted to share publicly. Apply Keep, Care, Never. Leave out employer-confidential names, figures, clients, and systems, and keep any team result separate from your own part. If a detail would fail that check, use the plainer version of it or leave it out.</p>
 <p>The four uses below all start from one Proof Line. Maya&#x27;s runs through each, so you can watch the same material take four shapes. Her Proof Line: &quot;Redesigned new-hire onboarding for a growing operations team, cutting time to full productivity and reducing early attrition, with the model later adopted by two other departments.&quot;</p>

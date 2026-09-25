@@ -7,7 +7,7 @@ const fs = require('fs');
 const path = require('path');
 
 const DIR = __dirname;
-const PDF = path.join(DIR, 'Keep_the_Proof_Career_Evidence_Starter_v1.0_CANDIDATE.pdf');
+const PDF = path.join(DIR, 'Keep_the_Proof_Career_Evidence_Starter_v1.1_CANDIDATE.pdf');
 
 (async () => {
   const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium' });
@@ -52,7 +52,7 @@ const PDF = path.join(DIR, 'Keep_the_Proof_Career_Evidence_Starter_v1.0_CANDIDAT
 <script>
   window.__ready = false;
   pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdfjs/pdf.worker.js';
-  pdfjsLib.getDocument('/_build/career-evidence-starter/Keep_the_Proof_Career_Evidence_Starter_v1.0_CANDIDATE.pdf')
+  pdfjsLib.getDocument('/_build/career-evidence-starter/Keep_the_Proof_Career_Evidence_Starter_v1.1_CANDIDATE.pdf')
     .promise.then(async pdf => {
     window.__pages = pdf.numPages;
     for (let n=1;n<=pdf.numPages;n++) {

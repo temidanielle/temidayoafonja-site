@@ -11,9 +11,9 @@ NAVY="#112345"; CREAM="#F5F1E8"; GOLD="#C9A84C"; INK="#1c2333"; GREY="#5f636e"
 
 FILES=[
  ("READ THIS FIRST","Start Here","This file. A two-minute orientation to the system and how the pieces fit together."),
- ("LEARN &amp; BUILD","Keep the Proof: Guided Handbook","The 55-page teaching guide. It opens with Before You Rebuild Anything, teaches you how to capture your work, clarify what was yours, and carry it forward in language anyone can follow, and closes with Put Your Record to Work. A completed example sits beside every tool."),
+ ("LEARN &amp; BUILD","Keep the Proof: Guided Handbook","The 55-page teaching guide. It opens with Before You Rebuild Anything, teaches you how to capture your work, clarify what was yours, and carry it forward in language anyone can follow, and, in Put Your Record to Work, shows you how to carry one Proof Line into a resume, a LinkedIn profile, an interview, and a promotion conversation. A completed example sits beside every tool."),
  ("KEEP USING","Your Professional Record","Your long-term working document, in an editable, copyable format you keep and control (Word, Google Docs, or Pages). Make one personal copy, keep it in a personally controlled account, and add to it over time. This is where the record lives for years."),
- ("PREFER PRINT OR A FORM?","Printable &amp; Fillable Tools","Eleven form pages holding the same fields as your Professional Record, for anyone who would rather write by hand or type into a form. Use whichever you will keep up. You do not need to complete both."),
+ ("PREFER PRINT OR A FORM?","Printable &amp; Fillable Tools","Eleven printable and fillable pages holding the same fields as your Professional Record, for anyone who would rather write by hand or type into a form. Use whichever you will keep up. You do not need to complete both."),
 ]
 
 cards="".join(f'''<div class="fcard"><div class="fk">{k}</div><div class="ft">{t}</div><div class="fb">{b}</div></div>''' for k,t,b in FILES)
@@ -33,18 +33,18 @@ body{{font-family:'DM Sans',sans-serif;color:{INK};font-size:10.4pt;line-height:
 .htitle{{font-family:'Cormorant',serif;font-weight:600;font-size:33pt;line-height:1;margin:.28em 0 .1em;color:{CREAM};}}
 .hsub{{font-family:'Cormorant',serif;font-style:italic;font-size:15pt;color:#dcd4c3;}}
 .wrap{{padding:0.2in 0.85in 0.26in;}}
-.lead{{font-size:10.4pt;line-height:1.4;margin-bottom:.3em;}}
-.rule-box{{background:{CREAM};border-left:3px solid {GOLD};border-radius:6px;padding:.44em .9em;margin:.38em 0 .48em;}}
+.lead{{font-size:10.4pt;line-height:1.35;margin-bottom:.24em;}}
+.rule-box{{background:{CREAM};border-left:3px solid {GOLD};border-radius:6px;padding:.4em .9em;margin:.32em 0 .4em;}}
 .rule-box .rk{{font-family:'DM Sans';font-weight:600;font-size:8.5pt;letter-spacing:.08em;text-transform:uppercase;color:{GOLD};margin-bottom:.2em;}}
 .rule-box .rt{{font-size:10.2pt;line-height:1.4;}}
 .sh{{font-family:'Cormorant',serif;font-weight:600;font-size:14.5pt;color:{NAVY};margin:.1em 0 .04em;}}
 .sh::after{{content:"";display:block;width:2em;height:2.5px;background:{GOLD};margin:.18em 0 .36em;}}
-.fcard{{border:1px solid #e4dccb;border-top:3px solid {GOLD};border-radius:8px;padding:.36em .9em .42em;margin-bottom:.26em;page-break-inside:avoid;}}
-.fk{{font-family:'DM Sans';font-weight:600;font-size:8pt;letter-spacing:.09em;color:{GOLD};margin-bottom:.12em;}}
-.ft{{font-family:'Cormorant',serif;font-weight:600;font-size:14pt;color:{NAVY};line-height:1.05;margin-bottom:.2em;}}
-.fb{{font-size:9.4pt;line-height:1.4;color:{INK};}}
-.begin{{margin-top:.3em;}}
-.foot{{font-size:7.9pt;color:{GREY};line-height:1.36;margin-top:.35em;border-top:1px solid #e4dccb;padding-top:.35em;}}
+.fcard{{border:1px solid #e4dccb;border-top:3px solid {GOLD};border-radius:8px;padding:.32em .9em .36em;margin-bottom:.2em;page-break-inside:avoid;}}
+.fk{{font-family:'DM Sans';font-weight:600;font-size:8pt;letter-spacing:.09em;color:{GOLD};margin-bottom:.1em;}}
+.ft{{font-family:'Cormorant',serif;font-weight:600;font-size:14pt;color:{NAVY};line-height:1.05;margin-bottom:.16em;}}
+.fb{{font-size:9.4pt;line-height:1.34;color:{INK};}}
+.begin{{margin-top:.22em;}}
+.foot{{font-size:7.9pt;color:{GREY};line-height:1.34;margin-top:.28em;border-top:1px solid #e4dccb;padding-top:.28em;}}
 .ib{{white-space:nowrap;}}
 .ib-ico{{vertical-align:-0.12em;margin-right:.12em;}}
 </style></head><body>
@@ -60,7 +60,7 @@ body{{font-family:'DM Sans',sans-serif;color:{INK};font-size:10.4pt;line-height:
   {cards}
   <div class="begin"><div class="sh">How to begin</div>
   <p>Open the <strong>Guided Handbook</strong> and start with <strong>Your First 60 Minutes</strong>. In one focused session you will <span class="ib">{I.svg("capture", px=13, cls="ib-ico", label=True)}</span>capture a few pieces of work, <span class="ib">{I.svg("clarify", px=13, cls="ib-ico", label=True)}</span>clarify one in depth, and <span class="ib">{I.svg("proofline", px=13, cls="ib-ico", label=True)}</span>write your first portable sentence. It takes about an hour of focused time. Sixty minutes is a guide. Take it in one sitting or several, stopping after any step and picking up where you left off. If your access to past work has already closed, <span class="ib">{I.svg("reconstruct", px=13, cls="ib-ico", label=True)}</span>use the reconstruct version of that session in Part Seven. You start differently, and you are not behind. Then set up <strong>Your Professional Record</strong> as the place the record lives from here on.</p></div>
-  <div class="foot">Keep the Proof is an educational guide to keeping a private, permitted record of your own work. It is not legal advice, and it cannot interpret your specific employment agreement, your confidentiality obligations, your employer&rsquo;s policies, or the laws that apply where you work. Where permission is unclear, leave the information out and ask someone qualified.<br>Copyright &copy; 2026 Temidayo Afonja &middot; The Density Group &middot; temidayoafonja.com &middot; Licensed for the personal use of the individual purchaser.</div>
+  <div class="foot">Keep the Proof is an educational guide to keeping a private, permitted record of your own work. It is not legal advice, and it cannot interpret your specific employment agreement, your confidentiality obligations, your employer&rsquo;s policies, or the laws that apply where you work. Where permission is unclear, leave the information out and ask someone qualified.<br>Copyright &copy; 2026 Temidayo Afonja &middot; The Density Group &middot; temidayoafonja.com &middot; Licensed for the personal use of the individual purchaser. Organizations providing Keep the Proof to employees or program participants can arrange a group license at temidayoafonja.com/work.</div>
 </div>
 </body></html>'''
 
