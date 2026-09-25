@@ -127,6 +127,46 @@ yy -= 14
 c.drawCentredString(PW/2, yy, "Never paste in employer-owned files or confidential detail.")
 c.showPage()
 
+# ================= BEFORE YOU REBUILD ANYTHING (1 page) =================
+y = page_header("Before you begin", "Before you rebuild anything",
+    "Two moves before Part One: name three moments, then read the words you can stand on.")
+c.setFillColor(NAVY); c.setFont("Helvetica-Bold", 9)
+c.drawString(ML, y, M.THREE_MOMENTS_LABEL); y -= 11
+c.setFillColor(GREY); c.setFont("Helvetica-Oblique", 7.6)
+for ln in wrap(M.THREE_MOMENTS_HINT, "Helvetica-Oblique", 7.6, CW):
+    c.drawString(ML, y, ln); y -= 9
+y -= 6
+for i in range(3):
+    c.acroForm.textfield(name=fid("moment"), x=ML, y=y-16, width=CW, height=16,
+        borderStyle='underlined', borderColor=LINE, fillColor=None, textColor=INK,
+        borderWidth=0.75, forceBorder=False, fontName='Helvetica', fontSize=10)
+    c.setStrokeColor(LINE); c.setLineWidth(0.75); c.line(ML, y-16, ML+CW, y-16)
+    y -= 30
+y -= 14
+# Words to Stand On panel
+c.setFillColor(GOLDINK); c.setFont("Helvetica-Bold", 10)
+c.drawString(ML, y, M.WORDS_TITLE); y -= 13
+c.setFillColor(GREY); c.setFont("Helvetica-Oblique", 8)
+for ln in wrap(M.WORDS_LEAD, "Helvetica-Oblique", 8, CW):
+    c.drawString(ML, y, ln); y -= 10
+y -= 6
+panel_h = 20*len(M.WORDS_AFFIRMATIONS) + 40
+c.setFillColor(HexColor("#FBF3E2"))
+c.roundRect(ML, y-panel_h, CW, panel_h, 8, fill=1, stroke=0)
+c.setStrokeColor(GOLD); c.setLineWidth(2); c.line(ML, y-panel_h, ML, y)
+ty = y - 20
+c.setFillColor(NAVY); c.setFont("Helvetica-Oblique", 11)
+for w in M.WORDS_AFFIRMATIONS:
+    c.drawString(ML+18, ty, w); ty -= 20
+ty -= 2
+c.setFillColor(NAVY); c.setFont("Helvetica-Bold", 9)
+c.drawString(ML+18, ty, M.WORDS_FILLIN)
+fw = c.stringWidth(M.WORDS_FILLIN, "Helvetica-Bold", 9)
+c.acroForm.textfield(name=fid("wfill"), x=ML+18+fw+6, y=ty-3, width=CW-36-fw-6, height=14,
+    borderStyle='underlined', borderColor=GOLD, fillColor=None, textColor=INK,
+    borderWidth=0.75, forceBorder=False, fontName='Helvetica', fontSize=10)
+c.showPage()
+
 # ================= QUICK CAPTURE (2 pages) =================
 for n in (1,2):
     y = page_header("Capture Log", f"Quick Capture {n}",
@@ -231,6 +271,16 @@ y = match_row(y, example=M.MATCH_EXAMPLE, h=44)
 for _ in range(3):
     y = match_row(y, h=50, prefix="mr")
 y = body(y-2, M.MATCH_BOUNDARY, color=GREY, size=8.3, font="Helvetica-Oblique")
+c.showPage()
+
+# ================= PUT YOUR RECORD TO WORK (1 page) =================
+y = page_header("Put your record to work", M.PUT_TO_WORK_TITLE,
+    "Carry one Proof Line into the four places people use most. Public-use check first: only what you may share, and Keep, Care, Never.")
+_ptw_lines = [1, 2, 3, 3]
+for _i,(title,purpose) in enumerate(M.PUT_TO_WORK_USES):
+    y = block_label(y, title)
+    y = body(y, purpose, color=GREY, size=8.6, font="Helvetica-Oblique", after=3)
+    y = draw_field(y, "", "", _ptw_lines[_i], prefix="ptw")
 c.showPage()
 
 # ================= MAINTENANCE (1 page) =================

@@ -80,6 +80,38 @@ You record your own recollection and information you are permitted to retain. Yo
 
 ---
 
+## Before You Rebuild Anything
+
+When work changes suddenly, the first thing to go is often the way you describe yourself. People with years of good work behind them start saying they are starting over, starting from scratch, going back to zero.
+
+Those words can feel true in a hard week. They are rarely accurate, and they shape what you let yourself try.
+
+I know this from my own life. When an offer I had accepted was rescinded before I could start, my plans disappeared faster than my experience did. What I had built was still there. I needed a way to see it again.
+
+### What the hard week tells you
+
+A sudden change brings its own voice with it. Maybe I was never as good as I thought. Maybe nobody will see what I did. Maybe I have to prove everything again from nothing.
+
+You do not need to argue with that voice. You only need to answer it with evidence. Every one of those sentences can be checked against your own record, and this guide will help you check it.
+
+### Start with three moments
+
+Before you open Part One, write down three moments from the last few years when someone relied on your judgment. Keep each to one sentence: what the situation was, and what you did. You do not need numbers yet. You only need to notice what is already there.
+
+### Words to Stand On
+
+Read these slowly, out loud if you can, before each session with your record. Every line is true for you today, and the rest of this guide helps you prove it.
+
+{{words-panel}}
+
+### Why these words work
+
+Encouragement fades when the week gets hard. Statements you can check against your own record hold. Each time you add an entry to your Professional Record, you are giving these words more evidence to stand on.
+
+If you catch yourself saying you are starting over, try a different sentence: I am starting from what I have built.
+
+Then keep reading. The rest of this guide helps you prove it.
+
 ## A note on confidentiality before you begin
 
 Everything in this system is built on one rule: you record only your own recollection of your work and information you are permitted to keep. You will be asked, repeatedly, not to copy, forward, photograph, download, screenshot, or reconstruct anything your employer owns. That rule holds on any device, at any hour, in any format. It is the first thing this guide teaches and the last thing it will let you forget.
@@ -474,7 +506,7 @@ Maya's Proof Line: "Redesigned new-hire onboarding for a growing operations team
 
 A Proof Line does not need a number to be strong, and it must never contain an invented one. It also never claims sole credit for a shared result. If a line would only sound impressive by overstating your ownership, it is wrong, and you rewrite it until it is true.
 
-A Proof Line is general on purpose. It is a true, reusable sentence you keep. Shaping it for a particular job, employer, or application is a separate, later step, outside this guide's job.
+A Proof Line is general on purpose. It is a true, reusable sentence you keep. When a specific job, employer, or application is in front of you, two later sections put it to use: Match Your Proof to a Role lines it up against what a role asks for, and Put Your Record to Work carries it into a resume line, a LinkedIn About section, an interview answer, and a promotion note.
 
 ## See it work: before and after
 
@@ -622,7 +654,7 @@ Whether you keep to events, to routines, or to both is yours to settle by what y
 
 ## Retrieving the right evidence
 
-The whole point of tagging is this moment: something is about to happen, and you need the right entries fast. This tells you which kinds of entries to pull for each occasion. It is a guide to retrieval, not a course in how to interview, negotiate, or write a resume. It gets you the raw material. What you do with it is yours.
+The whole point of tagging is this moment: something is about to happen, and you need the right entries fast. This tells you which kinds of entries to pull for each occasion. It guides retrieval, and the next section, Put Your Record to Work, shows how to carry an entry into a resume line, a LinkedIn About section, an interview answer, and a promotion note. It does not write your resume for you or coach your interviews. It gets you the raw material and a clean first draft. What you do with them is yours.
 
 
 Performance review: outcomes and prevented problems from the review period, with honest scope. Promotion case: judgment, ownership beyond your title, and work at the next level. Compensation discussion: scope, results, and contributions others have recognized. Internal application: work relevant to the new team, translated out of your current group's language. Resume preparation: your strongest Proof Lines across roles, each honest and portable. Interview preparation: entries with a clear situation, your decision, and the result, ready to tell aloud. Biography or introduction: a few durable, senior-sounding contributions stated plainly. Proposal or portfolio: permitted outcomes that show the kind of work you deliver. Unexpected transition: everything, quickly, because the record is now the only copy you have.
@@ -630,6 +662,32 @@ Performance review: outcomes and prevented problems from the review period, with
 ## Match your proof to a role
 
 This page translates your evidence for a specific role. It does not advise on which roles to pursue. That is a different question, and a different tool.
+
+## Put your record to work
+
+Your record is where the true material lives. This section shows how to carry one Proof Line from that record into the four places people use most. It does not write your resume or coach your interviews. It gives you a clean starting draft in each place, and the words and the choices stay yours.
+
+Before anything leaves the record, run one public-use check. Include only details you are permitted to share publicly. Apply Keep, Care, Never. Leave out employer-confidential names, figures, clients, and systems, and keep any team result separate from your own part. If a detail would fail that check, use the plainer version of it or leave it out.
+
+The four uses below all start from one Proof Line. Maya's runs through each, so you can watch the same material take four shapes. Her Proof Line: "Redesigned new-hire onboarding for a growing operations team, cutting time to full productivity and reducing early attrition, with the model later adopted by two other departments."
+
+### A resume line
+
+Purpose: one line that shows the action, the scope, and what changed. Template: what you did, for what scope, what changed, and where it went or who adopted it. Maya: "Redesigned new-hire onboarding for a growing operations team, cutting time to full productivity and reducing early attrition, with the model adopted by two other departments."
+
+### A LinkedIn About sentence
+
+Purpose: one first-person sentence a stranger can follow. Template: I do this kind of work for these people, which produces this change. Maya: "I redesign onboarding so new people become productive faster and choose to stay, most recently rebuilding it for a growing operations team and watching the approach spread to two other departments."
+
+### An interview answer, in three parts
+
+Purpose: acknowledge the question, prove it with your Proof Line, then name the gap you would still need to learn and how. Template: restate what they asked; give the Proof Line as your evidence; name one thing you have not yet done at their scale, and how you would close it. Maya: "You asked whether I can own onboarding end to end. I redesigned new-hire onboarding for a growing operations team, cut time to full productivity, reduced early attrition, and the model was adopted by two other departments. I have not yet run onboarding at company-wide scale, so I would start by learning the constraints across teams before changing anything."
+
+### A promotion or self-review note
+
+Purpose: three to five sentences to a manager covering the situation, your part, what changed, and what you are ready to carry next. Template: the situation and why it mattered; what you specifically did; what changed, with honest scope; what you are ready to take on now. Maya: "Onboarding was slow and new hires were leaving early. I redesigned the flow for our growing operations team, working across the functions that touch a new hire's first weeks. Time to full productivity dropped, early attrition fell, and two other departments adopted the model. I am ready to own onboarding across more of the organization, starting with the teams that have already asked to adopt it."
+
+Keep the record current, and each of these gets easier to write. When the material is already captured, honest, and permitted, every use above becomes a short edit rather than a blank page.
 
 ## The optional, privacy-conscious AI prompt
 

@@ -17,14 +17,41 @@ INTRO_BULLETS = [
     ("Fill only what applies.", "A short, honest entry beats a padded one. Blank fields are fine."),
 ]
 
-INTRO_SECTIONS = ("Your record has seven sections: a Capture Log, Full Entries, a Corroboration list, "
-    "a Translation and Proof Line workspace, a Match Your Proof to a Role page, a running index, and two "
-    "optional maintenance checklists.")
+INTRO_SECTIONS = ("Your record has eight sections: a Capture Log, Full Entries, a Corroboration list, "
+    "a Translation and Proof Line workspace, a Match Your Proof to a Role page, a Put Your Record to Work "
+    "workspace, a running index, and two optional maintenance checklists.")
 
 FORMATS_NOTE = ("Two formats, the same record. This copyable document is the recommended long-term home, "
     "because it stays searchable and easy to maintain over years. The Printable & Fillable Tools PDF in "
     "your bundle holds the same fields for anyone who prefers to write by hand or type into a form. Use "
     "whichever you will keep up. You do not need to complete both.")
+
+# ---- Before you rebuild anything (first-page opener) ----
+THREE_MOMENTS_LABEL = "Before you rebuild anything: three moments someone relied on your judgment."
+THREE_MOMENTS_HINT = "One line each: what the situation was, and what you did. No numbers needed."
+WORDS_TITLE = "Words to Stand On"
+WORDS_LEAD = "Read these slowly before each session with your record. Every line is true for you today, and the rest of the system helps you prove it."
+WORDS_AFFIRMATIONS = [
+    "I have done work that mattered, and I can name it.",
+    "What I built did not leave when the job did.",
+    "I can be experienced and new at the same time.",
+    "I can learn what the next place requires.",
+    "I will tell the truth about my work, without shrinking it and without inflating it.",
+    "I can carry hope and uncertainty in the same week.",
+]
+WORDS_FILLIN = "One thing I did that someone relied on:"
+
+# ---- Put your record to work (four uses) ----
+PUT_TO_WORK_TITLE = "Put Your Record to Work"
+PUT_TO_WORK_INTRO = ("Carry one Proof Line into the four places people use most. First, a public-use check: "
+    "include only details you are permitted to share publicly, apply Keep, Care, Never, and leave out "
+    "employer-confidential names, figures, clients, and systems. The words and the choices stay yours.")
+PUT_TO_WORK_USES = [
+    ("Resume line", "The action, the scope, and what changed, in one line."),
+    ("LinkedIn About sentence", "One first-person sentence a stranger can follow."),
+    ("Interview answer, in three parts", "Acknowledge the question, prove it with your Proof Line, then name the gap you would still need to learn and how."),
+    ("Promotion or self-review note", "Three to five sentences to a manager: the situation, your part, what changed, and what you are ready to carry next."),
+]
 
 # ---- Section 1: Capture Log ----
 CAPTURE_FIELDS = [

@@ -2,6 +2,8 @@
 """Build the Keep the Proof V2 Guided Handbook: markdown -> designed HTML -> PDF.
 Applies the Keep the Proof / Capability Formation visual identity."""
 import re, html, subprocess, sys, os
+sys.path.insert(0, os.path.dirname(__file__))
+import record_model as M
 
 ROOT = "/home/user/temidayoafonja-site"
 SRC = f"{ROOT}/_build/keep-the-proof-v2/production/FINAL_MANUSCRIPT.md"
@@ -44,6 +46,8 @@ while i < n:
     ln = lines[i]
     if re.match(r'^# ', ln):
         blocks.append(("h1", ln[2:].strip())); i+=1; continue
+    if re.match(r'^### ', ln):
+        blocks.append(("h3", ln[4:].strip())); i+=1; continue
     if re.match(r'^## ', ln):
         title = ln[3:].strip()
         if title == "Cover":
@@ -140,6 +144,18 @@ def match_device():
   </tbody>
 </table>'''
 
+def rebuild_subtitle_device():
+    return '<p class="chapter-sub">See what you already built</p>'
+
+def words_panel_device():
+    lines = "".join(f'<div class="wline">{html.escape(w)}</div>' for w in M.WORDS_AFFIRMATIONS)
+    fill = f'<div class="wline wfill">{html.escape(M.WORDS_FILLIN)} <span class="wblank"></span></div>'
+    return f'''
+<div class="words">
+  {lines}
+  {fill}
+</div>'''
+
 # Prose paragraphs made redundant by an injected device — dropped so the
 # device is not shadowed by a near-verbatim restatement.
 SKIP_PREFIXES = [
@@ -160,6 +176,7 @@ INJECT_AFTER_H2 = {
     "Keep, Care, Never": kcn_device,
     "Two ways in": doors_device,
     "Match your proof to a role": match_device,
+    "Before You Rebuild Anything": rebuild_subtitle_device,
 }
 
 # ---------- render body ----------
@@ -220,6 +237,10 @@ for idx,(kind,payload) in enumerate(blocks):
         if payload in INJECT_AFTER_H2:
             body.append(INJECT_AFTER_H2[payload]())
         continue
+    if kind=="h3":
+        flush_caption_as_para()
+        body.append(f'<h3>{esc(payload)}</h3>')
+        continue
     if kind=="ul":
         flush_caption_as_para()
         items_html = []
@@ -236,6 +257,10 @@ for idx,(kind,payload) in enumerate(blocks):
         continue
     if kind=="p":
         text = payload
+        if text.strip() == "{{words-panel}}":
+            flush_caption_as_para()
+            body.append(words_panel_device())
+            continue
         if is_skipped(text):
             continue
         if is_card(text):
@@ -278,7 +303,7 @@ body{{font-family:'DM Sans',sans-serif;font-weight:400;font-size:10.8pt;line-hei
 h2{{font-family:'Cormorant',serif;font-weight:600;font-size:20pt;line-height:1.12;color:{NAVY};margin:1.5em 0 0.15em;padding-top:0.2em;}}
 h2::after{{content:"";display:block;width:2.2em;height:2.5px;background:{GOLD};margin-top:.32em;}}
 p{{margin:0 0 0.72em;orphans:2;widows:2;}}
-h2{{break-after:avoid;}}
+h2{{break-after:avoid;page-break-after:avoid;break-inside:avoid;}}
 strong{{font-weight:600;color:{NAVY};}}
 code{{font-family:'DM Sans',sans-serif;background:{CREAM};padding:0 .25em;border-radius:3px;font-size:.92em;}}
 ul{{margin:0 0 0.9em;padding-left:1.15em;}}
@@ -352,6 +377,20 @@ table.match th{{background:{NAVY};color:{CREAM};font-weight:600;font-size:8.5pt;
 table.match td{{border:0.75px solid {HAIR};padding:.5em .6em;font-size:9.4pt;line-height:1.42;color:{INK};vertical-align:top;height:60px;}}
 table.match tr.ex td{{background:#FBF3E2;}}
 .pause{{display:inline-block;margin-left:.4em;font-family:'DM Sans';font-weight:600;font-size:7.5pt;letter-spacing:.06em;text-transform:uppercase;color:{RUST};white-space:nowrap;}}
+
+/* Sub-headings (h3) */
+h3{{font-family:'DM Sans',sans-serif;font-weight:600;font-size:11.5pt;letter-spacing:.01em;color:{NAVY};margin:1.15em 0 .3em;break-after:avoid;page-break-after:avoid;break-inside:avoid;}}
+
+/* Chapter subtitle (under an opening-chapter h2) */
+.chapter-sub{{font-family:'Cormorant',serif;font-style:italic;font-size:15pt;line-height:1.3;color:{GOLD};margin:-.1em 0 .8em;}}
+
+/* Words to Stand On panel */
+.words{{background:{CREAM};border:1px solid #e0d7c4;border-left:3px solid {GOLD};border-radius:8px;padding:1.05em 1.25em 1.15em;margin:1em 0 1.3em;page-break-inside:avoid;}}
+.words-h{{font-family:'DM Sans';font-weight:600;font-size:9pt;letter-spacing:.14em;text-transform:uppercase;color:{GOLD};margin-bottom:.75em;}}
+.wline{{font-family:'Cormorant',serif;font-size:14.5pt;line-height:1.35;color:{NAVY};padding:.34em 0;border-bottom:1px solid #ece3d2;}}
+.wline:last-child{{border-bottom:0;}}
+.wfill{{margin-top:.15em;}}
+.wblank{{display:inline-block;min-width:9em;border-bottom:1px solid {GOLD};}}
 '''
 
 htmldoc = f'''<!doctype html><html lang="en"><head><meta charset="utf-8">

@@ -8,9 +8,31 @@ This is your record. You keep it, and you never have to submit it. Make one pers
 - **Permission first.** Everything here follows the one rule: your own recollection and what you are permitted to keep. Never paste in employer-owned files or confidential detail.
 - **Fill only what applies.** A short, honest entry beats a padded one. Blank fields are fine.
 
-Your record has seven sections: a Capture Log, Full Entries, a Corroboration list, a Translation and Proof Line workspace, a Match Your Proof to a Role page, a running index, and two optional maintenance checklists.
+Your record has eight sections: a Capture Log, Full Entries, a Corroboration list, a Translation and Proof Line workspace, a Match Your Proof to a Role page, a Put Your Record to Work workspace, a running index, and two optional maintenance checklists.
 
 *Two formats, the same record. This copyable document is the recommended long-term home, because it stays searchable and easy to maintain over years. The Printable & Fillable Tools PDF in your bundle holds the same fields for anyone who prefers to write by hand or type into a form. Use whichever you will keep up. You do not need to complete both.*
+
+---
+
+## Before you rebuild anything
+
+**Before you rebuild anything: three moments someone relied on your judgment.**  _One line each: what the situation was, and what you did. No numbers needed._
+
+`__________________________________________________________________`
+`__________________________________________________________________`
+`__________________________________________________________________`
+
+**Words to Stand On.** _Read these slowly before each session with your record. Every line is true for you today, and the rest of the system helps you prove it._
+
+- I have done work that mattered, and I can name it.
+- What I built did not leave when the job did.
+- I can be experienced and new at the same time.
+- I can learn what the next place requires.
+- I will tell the truth about my work, without shrinking it and without inflating it.
+- I can carry hope and uncertainty in the same week.
+
+**One thing I did that someone relied on:**
+`__________________________________________________________________`
 
 ---
 
@@ -421,7 +443,44 @@ _This page translates your evidence for a specific role. It does not advise on w
 
 ---
 
-## Section 6. Your index
+## Section 6. Put Your Record to Work
+
+Carry one Proof Line into the four places people use most. First, a public-use check: include only details you are permitted to share publicly, apply Keep, Care, Never, and leave out employer-confidential names, figures, clients, and systems. The words and the choices stay yours.
+
+### Resume line
+
+_The action, the scope, and what changed, in one line._
+
+`__________________________________________________________________`
+`__________________________________________________________________`
+
+### LinkedIn About sentence
+
+_One first-person sentence a stranger can follow._
+
+`__________________________________________________________________`
+`__________________________________________________________________`
+
+### Interview answer, in three parts
+
+_Acknowledge the question, prove it with your Proof Line, then name the gap you would still need to learn and how._
+
+`__________________________________________________________________`
+`__________________________________________________________________`
+`__________________________________________________________________`
+
+### Promotion or self-review note
+
+_Three to five sentences to a manager: the situation, your part, what changed, and what you are ready to carry next._
+
+`__________________________________________________________________`
+`__________________________________________________________________`
+`__________________________________________________________________`
+`__________________________________________________________________`
+
+---
+
+## Section 7. Your index
 
 A running list of what you have, so any entry is a search away.
 
@@ -438,7 +497,7 @@ A running list of what you have, so any entry is a search away.
 
 ---
 
-## Section 7. Optional maintenance checklists
+## Section 8. Optional maintenance checklists
 
 **Monthly sweep, about ten to fifteen minutes.**
 

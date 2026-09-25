@@ -94,16 +94,19 @@ reconstruct anything your employer owns.
 ## What you get
 
 - **Start Here:** a short orientation and a map of the bundle.
-- **Keep the Proof: Guided Handbook (48 pages):** the full method, with a completed
+- **Keep the Proof: Guided Handbook (50 pages):** the full method, with a completed
   example beside every tool, and a first focused session that gets you to one real
-  entry. Sixty minutes is a guide. Take it in one sitting or several. Includes a
-  parallel path for rebuilding after you've already lost access.
+  entry. It opens with Before You Rebuild Anything and closes with Put Your Record to
+  Work, which shows how to carry one Proof Line into a resume line, a LinkedIn About
+  section, an interview answer, and a promotion note. Sixty minutes is a guide. Take it
+  in one sitting or several. Includes a parallel path for rebuilding after you've
+  already lost access.
 - **Your Professional Record:** an editable, copyable, searchable working document
   you keep in a personally controlled account, in a widely readable format (no app or
   subscription required). It holds your captures, full entries, corroboration notes,
-  Proof Lines, a Match Your Proof to a Role page, and a running index. This is where
-  the record lives for years.
-- **Printable & Fillable Tools (9 pages):** the same fields as your Professional
+  Proof Lines, a Match Your Proof to a Role page, a Put Your Record to Work workspace,
+  and a running index. This is where the record lives for years.
+- **Printable & Fillable Tools (11 pages):** the same fields as your Professional
   Record, as printable and fillable pages, for anyone who prefers to write by hand or
   type into a form. Use whichever you'll keep up. You don't need to complete both.
 
@@ -116,7 +119,7 @@ ready before a review, a move, or an unexpected change becomes urgent.
 
 ## What it is not
 
-- Not a resume-writing service, and not an interview or negotiation course.
+- It does not write your resume for you or coach interviews. It shows you how to carry your record into both.
 - It doesn't tell you whether to stay in or leave your job, or what your work means
   for a specific destination. That's a different tool (the Capability Formation
   Field Kit).
@@ -195,7 +198,7 @@ strip them of the free update path).
 > no additional cost. Just re-download from your receipt or library.
 >
 > What's new:
-> - A rewritten, expanded Guided Handbook (now 48 pages) with a completed example
+> - A rewritten, expanded Guided Handbook (now 50 pages) with a completed example
 >   beside every tool and a clearer permission-and-safe-use standard throughout.
 > - **Your Professional Record:** an editable, copyable working document (Word /
 >   Google Docs / Pages) that replaces the old Career Evidence

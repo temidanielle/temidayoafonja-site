@@ -103,6 +103,21 @@ for b, t in M.INTRO_BULLETS:
 para(M.INTRO_SECTIONS, before=4, after=6)
 para(M.FORMATS_NOTE, italic=True, color=GREY, after=4)
 
+# ---------- Opener: Before you rebuild anything ----------
+h_block("Before you rebuild anything", color=NAVY, size=12)
+para(M.THREE_MOMENTS_LABEL, size=10, bold=True, color=NAVY, before=2, after=1)
+para(M.THREE_MOMENTS_HINT, italic=True, color=GREY, size=8.5, after=3)
+for i in range(3):
+    lp = doc.add_paragraph(); lp.paragraph_format.space_before = Pt(10); _bottom_border(lp, "C9C4B7", 4)
+para(M.WORDS_TITLE, size=10, bold=True, color=NAVY, before=8, after=1)
+para(M.WORDS_LEAD, italic=True, color=GREY, size=8.5, after=3)
+for w in M.WORDS_AFFIRMATIONS:
+    wp = para(w, size=10.5, italic=True, color=NAVY, after=3)
+    wp.paragraph_format.left_indent = Inches(0.18)
+para(M.WORDS_FILLIN, size=10, bold=True, color=NAVY, before=3, after=1)
+lp = doc.add_paragraph(); lp.paragraph_format.space_before = Pt(10); _bottom_border(lp, "C9C4B7", 4)
+divider()
+
 # ---------- Section 1 ----------
 h_section(1, "Capture Log")
 para("Catch work the moment it happens, in two minutes, before the details soften. Fill one block per event; expand only the strongest into Full Entries. Duplicate the block below for each new capture.", after=6)
@@ -179,8 +194,18 @@ for _ in range(4):
         blank[i].paragraphs[0].add_run("\n")
 para(M.MATCH_BOUNDARY, italic=True, color=GREY, before=6)
 
-# ---------- Section 6 ----------
-h_section(6, "Your index")
+# ---------- Section 6: Put Your Record to Work ----------
+h_section(6, M.PUT_TO_WORK_TITLE)
+para(M.PUT_TO_WORK_INTRO, after=6)
+_ptw_lines = [2, 2, 3, 4]
+for _n, (title, purpose) in enumerate(M.PUT_TO_WORK_USES):
+    h_block(title, color=GOLD, size=10.5)
+    para(purpose, italic=True, color=GREY, size=9, after=2)
+    for i in range(_ptw_lines[_n]):
+        lp = doc.add_paragraph(); lp.paragraph_format.space_before = Pt(10); _bottom_border(lp, "C9C4B7", 4)
+
+# ---------- Section 7 ----------
+h_section(7, "Your index")
 para("A running list of what you have, so any entry is a search away. Add a line whenever you add or revise an entry, and read it when a moment arrives and you need the right material fast.", after=6)
 table = doc.add_table(rows=1, cols=len(M.INDEX_COLUMNS)); table.style = "Table Grid"
 hdr = table.rows[0].cells
@@ -190,8 +215,8 @@ for i, c in enumerate(M.INDEX_COLUMNS):
 for _ in range(8):
     table.add_row()
 
-# ---------- Section 7 ----------
-h_section(7, "Optional maintenance checklists")
+# ---------- Section 8 ----------
+h_section(8, "Optional maintenance checklists")
 para("Two ways to keep the record current: capture when something worth keeping happens, and a light periodic sweep that catches what you missed. Neither is required, and neither is better; use whichever you will sustain, or both.", after=6)
 h_block("Monthly sweep, about ten to fifteen minutes", color=NAVY, size=10.5)
 for m in M.MONTHLY:
@@ -216,6 +241,19 @@ md.append("")
 md.append(M.INTRO_SECTIONS + "\n")
 md.append("*" + M.FORMATS_NOTE + "*\n")
 md.append("---\n")
+
+md.append("## Before you rebuild anything\n")
+md.append(f"**{M.THREE_MOMENTS_LABEL}**  _{M.THREE_MOMENTS_HINT}_\n")
+for _i in range(3):
+    md.append("`__________________________________________________________________`")
+md.append("")
+md.append(f"**{M.WORDS_TITLE}.** _{M.WORDS_LEAD}_\n")
+for w in M.WORDS_AFFIRMATIONS:
+    md.append(f"- {w}")
+md.append("")
+md.append(f"**{M.WORDS_FILLIN}**")
+md.append("`__________________________________________________________________`")
+md.append("\n---\n")
 
 def md_field(label, hint, lines):
     h = f"  _{hint}_" if hint else ""
@@ -276,7 +314,18 @@ md.append("")
 md.append(f"_{M.MATCH_BOUNDARY}_\n")
 md.append("---\n")
 
-md.append("## Section 6. Your index\n")
+md.append(f"## Section 6. {M.PUT_TO_WORK_TITLE}\n")
+md.append(M.PUT_TO_WORK_INTRO + "\n")
+_ptw_md = [2, 2, 3, 4]
+for _n,(title,purpose) in enumerate(M.PUT_TO_WORK_USES):
+    md.append(f"### {title}\n")
+    md.append(f"_{purpose}_\n")
+    for _i in range(_ptw_md[_n]):
+        md.append("`__________________________________________________________________`")
+    md.append("")
+md.append("---\n")
+
+md.append("## Section 7. Your index\n")
 md.append("A running list of what you have, so any entry is a search away.\n")
 md.append("| " + " | ".join(M.INDEX_COLUMNS) + " |")
 md.append("| " + " | ".join(["---"]*len(M.INDEX_COLUMNS)) + " |")
@@ -284,7 +333,7 @@ for _ in range(8):
     md.append("| " + " | ".join([" "]*len(M.INDEX_COLUMNS)) + " |")
 md.append("\n---\n")
 
-md.append("## Section 7. Optional maintenance checklists\n")
+md.append("## Section 8. Optional maintenance checklists\n")
 md.append("**Monthly sweep, about ten to fifteen minutes.**\n")
 for m in M.MONTHLY: md.append(f"- [ ] {m}")
 md.append("")
