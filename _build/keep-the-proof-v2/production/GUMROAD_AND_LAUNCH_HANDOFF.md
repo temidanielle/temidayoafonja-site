@@ -12,7 +12,7 @@ Update the **existing** Keep the Proof product so its URL and reviews carry over
 Only create a new product if Gumroad forces it; it should not.
 
 - **Permalink:** keep `keep-the-proof` (the site links to `temidayoafonja.gumroad.com/l/keep-the-proof`). Do not change it.
-- **Price:** **$49.** One price. No discount, no "was $X", no pay-what-you-want, no time-limited pricing, no countdown, no scarcity/stock counter. Evergreen.
+- **Price:** **$75.** One price. No discount, no "was $X", no pay-what-you-want, no time-limited pricing, no countdown, no scarcity/stock counter. Evergreen.
 - **Name:** `Keep the Proof` (subtitle/summary: `A guided system for building your professional record`).
 - **Version:** this is V2 (2.0). Do not print a version number on the product page; it is in the files.
 
@@ -135,7 +135,7 @@ Pages; the Printable & Fillable Tools are fillable PDFs (best in Adobe Acrobat
 Reader); the handbook and Start Here are PDFs to read. Files are yours to save and
 reuse under a personal-use license.
 
-**$49. One price, instant access.**
+**$75. One price, instant access.**
 
 New to the method? The free Career Evidence Starter helps you take one accomplishment
 all the way through and leave with one portable Proof Line:
@@ -161,7 +161,7 @@ Every lever below is one that holds up to scrutiny. None manufactures pressure.
   only real, verifiable ones with permission. **Do not invent testimonials, outcomes,
   numbers, or "X people bought this."** Leaving social proof out entirely is fine and
   preferable to fabricating it.
-- **No scarcity.** This is an evergreen $49 product. No countdowns, no "limited time,"
+- **No scarcity.** This is an evergreen $75 product. No countdowns, no "limited time,"
   no fake discounts, no stock counters. Do not add them.
 
 ---
@@ -220,7 +220,7 @@ urgency, no new price, no invented claims.)*
 
 ## 5. After Gumroad is updated
 
-Only after the Gumroad product shows V2 (files, $49, description, cover):
+Only after the Gumroad product shows V2 (files, $75, description, cover):
 
 1. Merge the website PR so `/keep-the-proof` V2 goes live in step with the store.
    (The page's checkout CTAs already point at the same Gumroad product.)

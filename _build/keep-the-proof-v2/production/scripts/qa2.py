@@ -76,7 +76,7 @@ print("  stale descriptors:", "NONE" if not STALE.search(ktp) else STALE.findall
 print("  ownership phrases:", "NONE" if not OWNER.search(ktp) else set(OWNER.findall(ktp)))
 print("  .md/plain-text mention:", "NONE" if not re.search(r'(?i)\.md|plain-text|plain text', ktp) else "FOUND")
 print("  gumroad CTAs:", ktp.count("temidayoafonja.gumroad.com/l/keep-the-proof"))
-print("  $49 present:", "$49" in ktp)
+print("  $75 present:", "$75" in ktp, "| stale $49:", "$49" in ktp)
 
 print()
 print("OVERALL:", "ALL PASS" if ok else "FLAGS PRESENT")

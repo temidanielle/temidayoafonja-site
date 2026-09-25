@@ -9,7 +9,7 @@ the paid one.
 
 | | **Keep the Proof: The 10-Minute Career Evidence Starter** | **Keep the Proof** | **Capability Formation Field Kit** |
 |---|---|---|---|
-| Price | Free | $49 | $150 |
+| Price | Free | $75 | $150 |
 | The job | Prove **one** thing | Build the **record** | Read the **position** |
 | The question it answers | What did I do, what changed, and how would I say it outside this company? | How do I capture, translate, organise and maintain all of it before I need it? | What is my current work building in me, and will it still matter when the context changes? |
 | Time | About 10 to 15 focused minutes | About 60 minutes, then ongoing | One sitting, rerun quarterly |
@@ -85,4 +85,4 @@ list names the Ledger, and page 6 states plainly that this Starter proves one
 thing while Keep the Proof builds the record.
 
 **No product sits between them.** As instructed, nothing new was created in the
-gap between $49 and $150.
+gap between $75 and $150.
