@@ -30,6 +30,13 @@ _fid = [0]
 def fid(prefix):
     _fid[0]+=1; return f"{prefix}_{_fid[0]}"
 
+def newpage():
+    # footer page number, centered; skip the cover (page 1)
+    if c.getPageNumber() > 1:
+        c.setFillColor(GREY); c.setFont("Helvetica", 8)
+        c.drawCentredString(PW/2, 30, str(c.getPageNumber()))
+    c.showPage()
+
 def wrap(text, font, size, maxw):
     words = text.split(); lines=[]; cur=""
     for w in words:
@@ -135,7 +142,7 @@ yy -= 10
 c.drawCentredString(PW/2, yy, "Permission first: your own recollection and what you are permitted to keep.")
 yy -= 14
 c.drawCentredString(PW/2, yy, "Never paste in employer-owned files or confidential detail.")
-c.showPage()
+newpage()
 
 # ================= BEFORE YOU REBUILD ANYTHING (1 page) =================
 y = page_header("Before you begin", "Before you rebuild anything",
@@ -176,7 +183,7 @@ fw = c.stringWidth(M.WORDS_FILLIN, "Helvetica-Bold", 9)
 c.acroForm.textfield(name=fid("wfill"), x=ML+18+fw+6, y=ty-3, width=CW-36-fw-6, height=14,
     borderStyle='underlined', borderColor=GOLD, fillColor=None, textColor=INK,
     borderWidth=0.75, forceBorder=False, fontName='Helvetica', fontSize=10)
-c.showPage()
+newpage()
 
 # ================= QUICK CAPTURE (2 pages) =================
 for n in (1,2):
@@ -184,7 +191,7 @@ for n in (1,2):
         "Catch work the moment it happens, in two minutes, before the details soften. One capture per page.", icon="capture")
     for label,hint,lines in M.CAPTURE_FIELDS:
         y = draw_field(y, label, hint, lines, prefix=f"qc{n}")
-    c.showPage()
+    newpage()
 
 # ================= FULL ENTRY (2 pages) =================
 # Page 1: clusters A, B, C
@@ -195,7 +202,7 @@ for ct in ("Cluster A. When and what","Cluster B. What was yours","Cluster C. Th
     y = block_label(y, ct)
     for label,hint,lines in fields:
         y = draw_field(y, label, hint, lines, prefix="feA")
-c.showPage()
+newpage()
 # Page 2: clusters D, E + reconstruction marker
 y = page_header("Full Entries", "Full Entry, page 2 of 2", "")
 for ct in ("Cluster D. What changed, and what supports it","Cluster E. How you would say it, and who could confirm it"):
@@ -204,7 +211,7 @@ for ct in ("Cluster D. What changed, and what supports it","Cluster E. How you w
     for label,hint,lines in fields:
         y = draw_field(y, label, hint, 1 if lines>2 else lines, prefix="feB")
 y = body(y-2, M.RECON_MARKER, color=GREY, size=8.5, font="Helvetica-Oblique")
-c.showPage()
+newpage()
 
 # ================= CORROBORATION (1 page) =================
 y = page_header("Corroboration list", "Corroboration",
@@ -214,7 +221,7 @@ for n in range(1,4):
     for label,hint,lines in M.CORROB_FIELDS:
         y = draw_field(y, label, hint, lines, prefix=f"co{n}")
 y = body(y, M.CORROB_NOTE, color=GREY, size=8.3, font="Helvetica-Oblique")
-c.showPage()
+newpage()
 
 # ================= TRANSLATION & PROOF LINE (1 page) =================
 y = page_header("Translation & Proof Line", "Translation and Proof Line workspace", icon="proofline", subtitle=
@@ -229,7 +236,7 @@ for label,hint,lines in M.PROOFLINE_INGREDIENTS:
     y = draw_field(y, label, hint, 1, prefix="pl")
 y = draw_field(y, "Your Proof Line", "", 2, prefix="plfinal")
 y = body(y, M.PROOFLINE_RULE, color=GREY, size=8.3, font="Helvetica-Oblique")
-c.showPage()
+newpage()
 
 # ================= MATCH YOUR PROOF TO A ROLE (1 page) =================
 y = page_header("Match to a role", M.MATCH_TITLE,
@@ -282,7 +289,7 @@ y = match_row(y, example=M.MATCH_EXAMPLE, h=44)
 for _ in range(3):
     y = match_row(y, h=50, prefix="mr")
 y = body(y-2, M.MATCH_BOUNDARY, color=GREY, size=8.3, font="Helvetica-Oblique")
-c.showPage()
+newpage()
 
 # ================= PUT YOUR RECORD TO WORK (1 page) =================
 y = page_header("Put your record to work", M.PUT_TO_WORK_TITLE,
@@ -293,7 +300,7 @@ for _i,(title,purpose) in enumerate(M.PUT_TO_WORK_USES):
     y = block_label(y, title, icon=_ptw_icons[_i])
     y = body(y, purpose, color=GREY, size=8.6, font="Helvetica-Oblique", after=3)
     y = draw_field(y, "", "", _ptw_lines[_i], prefix="ptw")
-c.showPage()
+newpage()
 
 # ================= MAINTENANCE (1 page) =================
 y = page_header("Maintenance", "Optional maintenance checklists",
@@ -306,7 +313,7 @@ y = block_label(y, "Quarterly review, about thirty minutes", icon="quarterly")
 for q in M.QUARTERLY:
     y = draw_checkbox(y, q, prefix="qr")
 y = body(y-2, M.MAINT_NOTE, color=GREY, size=8.5, font="Helvetica-Oblique")
-c.showPage()
+newpage()
 
 c.save()
 print("PDF:", OUT, os.path.getsize(OUT), "bytes")

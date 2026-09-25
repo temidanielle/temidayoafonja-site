@@ -1,16 +1,55 @@
 #!/usr/bin/env python3
 """Build the Keep the Proof V2 Guided Handbook: markdown -> designed HTML -> PDF.
 Applies the Keep the Proof / Capability Formation visual identity."""
-import re, html, subprocess, sys, os
+import re, html, subprocess, sys, os, json
 sys.path.insert(0, os.path.dirname(__file__))
 import record_model as M
 import icons as I
 
 ROOT = "/home/user/temidayoafonja-site"
+# Table of contents entries: (display label, unique search string on its page).
+TOC_ENTRIES = [
+    ("Before You Rebuild Anything", "Before You Rebuild Anything"),
+    ("Part One: Understand the Record", "PART ONE"),
+    ("Your First 60 Minutes", "YOUR FIRST 60 MINUTES"),
+    ("Part Two: Capture", "PART TWO"),
+    ("Part Three: Permission and Protection", "PART THREE"),
+    ("Part Four: Clarify", "PART FOUR"),
+    ("Part Five: Carry", "PART FIVE"),
+    ("Part Six: Worked Examples", "PART SIX"),
+    ("Part Seven: Reconstruct", "PART SEVEN"),
+    ("Part Eight: Keep It Current, and Use It", "PART EIGHT"),
+    ("Part Nine: The Record You Own", "PART NINE"),
+    ("Closing", "CLOSING"),
+]
+_TOC_JSON = os.path.join(os.path.dirname(__file__), "toc_pages.json")
+try:
+    TOC_PAGES = json.load(open(_TOC_JSON)) if os.path.exists(_TOC_JSON) else {}
+except Exception:
+    TOC_PAGES = {}
 SRC = f"{ROOT}/_build/keep-the-proof-v2/production/FINAL_MANUSCRIPT.md"
 OUT_HTML = f"{ROOT}/_build/keep-the-proof-v2/production/renders/handbook.html"
 OUT_PDF = f"{ROOT}/_build/keep-the-proof-v2/production/bundle/02_KEEP_THE_PROOF_GUIDED_HANDBOOK.pdf"
 FONTS = f"file://{ROOT}/fonts"
+
+# Two-pass TOC: after a first build, this mode scans the rendered PDF for each
+# entry's page and writes toc_pages.json; the next build bakes those numbers in.
+if len(sys.argv) > 1 and sys.argv[1] == "computetoc":
+    import pypdfium2 as pdfium
+    _d = pdfium.PdfDocument(OUT_PDF)
+    _nows = re.compile(r"\s+")
+    # de-space page text so letter-spaced divider kickers still match
+    _per = [_nows.sub("", _d[i].get_textpage().get_text_range()) for i in range(len(_d))]
+    _pages = {}
+    for _label, _key in TOC_ENTRIES:
+        _k = _nows.sub("", _key)
+        for _i, _t in enumerate(_per):
+            if _k in _t:
+                _pages[_key] = _i + 1
+                break
+    json.dump(_pages, open(_TOC_JSON, "w"))
+    print("toc pages:", _pages)
+    sys.exit(0)
 
 NAVY = "#112345"
 CREAM = "#F5F1E8"
@@ -92,6 +131,16 @@ def is_card(text):
     hits = sum(1 for lab in CARD_LABELS if lab in text)
     return hits >= 2
 
+def leadbold(html_text):
+    # Bold a short run-in label ("Label:") at the very start of a paragraph or list item.
+    # Kept tight (<= 3 words, <= 28 chars) so sentence lead-ins are not bolded.
+    m = re.match(r"^([A-Z][A-Za-z0-9][A-Za-z0-9 ,/&-]{0,32}?:)\s", html_text)
+    if m:
+        label = m.group(1)
+        if len(label) <= 28 and len(label.rstrip(':').split()) <= 3:
+            return '<strong>' + label + '</strong>' + html_text[m.end(1):]
+    return html_text
+
 def bold_labels(text):
     # bold the "Label:" run-in headers inside cards
     def repl(m):
@@ -146,7 +195,7 @@ def match_device():
 <table class="match">
   <thead><tr><th>What the role asks for</th><th>My Proof Line that shows it</th><th>The gap I will name</th></tr></thead>
   <tbody>
-    <tr class="ex"><td><i>Example.</i> Design and run onboarding for a growing team (in the posting&#8217;s own words).</td><td>Redesigned new-hire onboarding for a growing operations team, cutting time to full productivity and reducing early attrition, with the model later adopted by two other departments.</td><td>The posting asks for direct management of trainers. I coordinated them without that title, so I will name the scope I carried and not imply the title.</td></tr>
+    <tr class="ex"><td><strong>Example.</strong> Design and run onboarding for a growing team (in the posting&#8217;s own words).</td><td>Redesigned new-hire onboarding for a growing operations team, cutting time to full productivity and reducing early attrition, with the model later adopted by two other departments.</td><td>The posting asks for direct management of trainers. I coordinated them without that title, so I will name the scope I carried and not imply the title.</td></tr>
     <tr><td></td><td></td><td></td></tr>
     <tr><td></td><td></td><td></td></tr>
     <tr><td></td><td></td><td></td></tr>
@@ -211,6 +260,14 @@ def fades_diagram_device():
 </svg>
 <p class="fades-cap">The details another person needs are often the first to fade. A short entry made while the work is fresh keeps them.</p>
 </div>'''
+
+def toc_device():
+    rows = ""
+    for label, key in TOC_ENTRIES:
+        num = TOC_PAGES.get(key, "")
+        rows += (f'<div class="toc-row"><span class="toc-label">{esc(label)}</span>'
+                 f'<span class="toc-dots"></span><span class="toc-num">{num}</span></div>')
+    return f'<section class="toc-page"><h1 class="toc-title">Contents</h1><div class="toc-list">{rows}</div></section>'
 
 def words_panel_device():
     lines = "".join(f'<div class="wline">{html.escape(w)}</div>' for w in M.WORDS_AFFIRMATIONS)
@@ -311,6 +368,8 @@ for idx,(kind,payload) in enumerate(blocks):
         continue
     if kind=="h2":
         flush_caption_as_para()
+        if payload == "Contents":
+            body.append(toc_device()); continue
         ic = ICON_FOR_HEADING.get(payload)
         pre = f'<span class="h-ico">{I.svg(ic, px=19, label=True)}</span>' if ic else ''
         body.append(f'<h2>{pre}{esc(payload)}</h2>')
@@ -336,7 +395,7 @@ for idx,(kind,payload) in enumerate(blocks):
                 lead_ico = f'<span class="li-ico">{I.svg("monthly", px=15, label=True)}</span>'
             elif raw.startswith("A quarterly review"):
                 lead_ico = f'<span class="li-ico">{I.svg("quarterly", px=15, label=True)}</span>'
-            cell = lead_ico + esc(raw)
+            cell = lead_ico + leadbold(esc(raw))
             if has_pause:
                 cell += f' <span class="pause">{I.svg("pause", px=12, cls="pause-ico", label=True)}Good place to pause</span>'
             items_html.append(f'<li>{cell}</li>')
@@ -364,7 +423,7 @@ for idx,(kind,payload) in enumerate(blocks):
             else:
                 flush_caption_as_para()
                 # pull-quote for the emphatic one-rule lines
-                body.append(f'<p>{esc(text)}</p>')
+                body.append(f'<p>{leadbold(esc(text))}</p>')
         continue
 
 flush_caption_as_para()
@@ -381,8 +440,9 @@ css = f'''
 @font-face{{font-family:'DM Sans';src:url('{FONTS}/DMSans-500-normal-latin-1c49a6.woff2') format('woff2');font-weight:500;font-style:normal;}}
 @font-face{{font-family:'DM Sans';src:url('{FONTS}/DMSans-600-normal-latin-1c49a6.woff2') format('woff2');font-weight:600;font-style:normal;}}
 
-@page{{size:8.5in 11in;margin:0.95in 1.05in 0.9in 1.05in;}}
-@page bleed{{size:8.5in 11in;margin:0;}}
+@page{{size:8.5in 11in;margin:0.95in 1.05in 0.9in 1.05in;
+  @bottom-center{{content:counter(page);font-family:'DM Sans',sans-serif;font-size:8pt;color:#9096a1;}}}}
+@page bleed{{size:8.5in 11in;margin:0;@bottom-center{{content:"";}}}}
 *{{box-sizing:border-box;}}
 html,body{{margin:0;padding:0;background:{PAGEBG};}}
 body{{font-family:'DM Sans',sans-serif;font-weight:400;font-size:10.8pt;line-height:1.62;color:{INK};background:{PAGEBG};-webkit-print-color-adjust:exact;print-color-adjust:exact;}}
@@ -511,6 +571,15 @@ table.cost td.cost-with{{background:#FBF3E2;}}
 .fades-svg .key-mem{{fill:#9a7d2e;}}
 .fades-svg .note{{font-family:'DM Sans',sans-serif;font-style:italic;font-size:8px;fill:{INK};opacity:.55;}}
 .fades-cap{{font-size:9.8pt;line-height:1.5;color:{INK};margin:.1em 0 0;}}
+
+/* Contents (table of contents) */
+.toc-page{{page-break-before:always;page-break-after:always;padding-top:.3in;}}
+.toc-title{{font-family:'Cormorant',serif;font-weight:600;font-size:30pt;color:{NAVY};margin:0 0 .5em;padding-bottom:.2em;border-bottom:2.5px solid {GOLD};}}
+.toc-list{{margin-top:1.2em;}}
+.toc-row{{display:flex;align-items:baseline;margin:0 0 1.05em;font-family:'DM Sans',sans-serif;}}
+.toc-label{{font-size:11.5pt;color:{NAVY};font-weight:500;white-space:nowrap;}}
+.toc-dots{{flex:1;margin:0 .5em;border-bottom:1px dotted #b9bec8;transform:translateY(-0.2em);}}
+.toc-num{{font-size:11pt;color:{INK};font-variant-numeric:tabular-nums;}}
 '''
 
 htmldoc = f'''<!doctype html><html lang="en"><head><meta charset="utf-8">

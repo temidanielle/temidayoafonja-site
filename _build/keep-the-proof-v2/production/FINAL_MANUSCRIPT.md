@@ -24,6 +24,8 @@ This is an educational guide to keeping a private, permitted record of your own 
 
 Written and designed by Temidayo Afonja, Founder, The Density Group. temidayoafonja.com
 
+## Contents
+
 ## Welcome
 
 If you are reading this after a hard change, or in the middle of one, start here. What you built did not disappear when your circumstances changed. When an offer I had accepted was rescinded, I learned that circumstances can change faster than experience does. This guide will help you see what you built again, clearly enough that someone else can see it too.
@@ -659,7 +661,23 @@ Whether you keep to events, to routines, or to both is yours to settle by what y
 The whole point of tagging is this moment: something is about to happen, and you need the right entries fast. This tells you which kinds of entries to pull for each occasion. It guides retrieval, and the next section, Put Your Record to Work, shows how to carry an entry into a resume line, a LinkedIn About section, an interview answer, and a promotion note. It does not write your resume for you or coach your interviews. It gets you the raw material and a clean first draft. What you do with them is yours.
 
 
-Performance review: outcomes and prevented problems from the review period, with honest scope. Promotion case: judgment, ownership beyond your title, and work at the next level. Compensation discussion: scope, results, and contributions others have recognized. Internal application: work relevant to the new team, translated out of your current group's language. Resume preparation: your strongest Proof Lines across roles, each honest and portable. Interview preparation: entries with a clear situation, your decision, and the result, ready to tell aloud. Biography or introduction: a few durable, senior-sounding contributions stated plainly. Proposal or portfolio: permitted outcomes that show the kind of work you deliver. Unexpected transition: everything, quickly, because the record is now the only copy you have.
+Performance review: outcomes and prevented problems from the review period, with honest scope.
+
+Promotion case: judgment, ownership beyond your title, and work at the next level.
+
+Compensation discussion: scope, results, and contributions others have recognized.
+
+Internal application: work relevant to the new team, translated out of your current group's language.
+
+Resume preparation: your strongest Proof Lines across roles, each honest and portable.
+
+Interview preparation: entries with a clear situation, your decision, and the result, ready to tell aloud.
+
+Biography or introduction: a few durable, senior-sounding contributions stated plainly.
+
+Proposal or portfolio: permitted outcomes that show the kind of work you deliver.
+
+Unexpected transition: everything, quickly, because the record is now the only copy you have.
 
 ## Match your proof to a role
 
@@ -675,19 +693,35 @@ The four uses below all start from one Proof Line. Maya's runs through each, so 
 
 ### A resume line
 
-Purpose: one line that shows the action, the scope, and what changed. Template: what you did, for what scope, what changed, and where it went or who adopted it. Maya: "Redesigned new-hire onboarding for a growing operations team, cutting time to full productivity and reducing early attrition, with the model adopted by two other departments."
+Purpose: one line that shows the action, the scope, and what changed.
+
+Template: what you did, for what scope, what changed, and where it went or who adopted it.
+
+Maya: "Redesigned new-hire onboarding for a growing operations team, cutting time to full productivity and reducing early attrition, with the model adopted by two other departments."
 
 ### A LinkedIn About sentence
 
-Purpose: one first-person sentence a stranger can follow. Template: I do this kind of work for these people, which produces this change. Maya: "I redesign onboarding so new people become productive faster and choose to stay, most recently rebuilding it for a growing operations team and watching the approach spread to two other departments."
+Purpose: one first-person sentence a stranger can follow.
+
+Template: I do this kind of work for these people, which produces this change.
+
+Maya: "I redesign onboarding so new people become productive faster and choose to stay, most recently rebuilding it for a growing operations team and watching the approach spread to two other departments."
 
 ### An interview answer, in three parts
 
-Purpose: acknowledge the question, prove it with your Proof Line, then name the gap you would still need to learn and how. Template: restate what they asked; give the Proof Line as your evidence; name one thing you have not yet done at their scale, and how you would close it. Maya: "You asked whether I can own onboarding end to end. I redesigned new-hire onboarding for a growing operations team, cut time to full productivity, reduced early attrition, and the model was adopted by two other departments. I have not yet run onboarding at company-wide scale, so I would start by learning the constraints across teams before changing anything."
+Purpose: acknowledge the question, prove it with your Proof Line, then name the gap you would still need to learn and how.
+
+Template: restate what they asked; give the Proof Line as your evidence; name one thing you have not yet done at their scale, and how you would close it.
+
+Maya: "You asked whether I can own onboarding end to end. I redesigned new-hire onboarding for a growing operations team, cut time to full productivity, reduced early attrition, and the model was adopted by two other departments. I have not yet run onboarding at company-wide scale, so I would start by learning the constraints across teams before changing anything."
 
 ### A promotion or self-review note
 
-Purpose: three to five sentences to a manager covering the situation, your part, what changed, and what you are ready to carry next. Template: the situation and why it mattered; what you specifically did; what changed, with honest scope; what you are ready to take on now. Maya: "Onboarding was slow and new hires were leaving early. I redesigned the flow for our growing operations team, working across the functions that touch a new hire's first weeks. Time to full productivity dropped, early attrition fell, and two other departments adopted the model. I am ready to own onboarding across more of the organization, starting with the teams that have already asked to adopt it."
+Purpose: three to five sentences to a manager covering the situation, your part, what changed, and what you are ready to carry next.
+
+Template: the situation and why it mattered; what you specifically did; what changed, with honest scope; what you are ready to take on now.
+
+Maya: "Onboarding was slow and new hires were leaving early. I redesigned the flow for our growing operations team, working across the functions that touch a new hire's first weeks. Time to full productivity dropped, early attrition fell, and two other departments adopted the model. I am ready to own onboarding across more of the organization, starting with the teams that have already asked to adopt it."
 
 Keep the record current, and each of these gets easier to write. When the material is already captured, honest, and permitted, every use above becomes a short edit rather than a blank page.
 
@@ -698,6 +732,8 @@ Everything in this guide works without any AI. This tool is optional, and it is 
 Never paste employer names, customer names, colleague names, proprietary detail, employee information, sensitive metrics, code, security information, or any confidential material into an AI system. Give it only your own non-confidential account, already stripped of anything you may not keep. The permission rules in this guide apply to AI tools exactly as they apply to everything else.
 
 The prompt. "You are helping me describe my own work accurately for my private professional record. I will give you only non-confidential information about what I did. Work only with what I provide. If context is missing, ask me for it rather than inventing anything. Never invent numbers, percentages, or results. Preserve my actual level of ownership, keep any team result separate from my individual contribution, and preserve the scope I worked within. Translate internal language into plain, portable language an outsider could understand, and help me refine a single Proof Line. Flag anything that sounds inflated, vague, or unsupported so I can correct it. Do not write a resume, an interview answer, a profile, or anything tailored to a specific job or employer. That is outside this task."
+
+For the resume line, About sentence, interview answer, and promotion note, use the templates in Put Your Record to Work and write them yourself from your checked Proof Line.
 
 The AI does not decide what is true. You do. Treat every version it returns as a draft to check against your own memory and this guide's rules, never as a finished record.
 

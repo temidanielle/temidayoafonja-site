@@ -35,6 +35,22 @@ for s in doc.sections:
     s.top_margin = Inches(0.9); s.bottom_margin = Inches(0.9)
     s.left_margin = Inches(1.0); s.right_margin = Inches(1.0)
 
+# Footer page number (centered), applied to the whole document
+def add_footer_page_number():
+    footer = doc.sections[0].footer
+    footer.is_linked_to_previous = False
+    fp = footer.paragraphs[0]
+    fp.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    run = fp.add_run()
+    run.font.size = Pt(9); run.font.color.rgb = GREY
+    for kind, txt in (("begin", None), (None, "PAGE"), ("end", None)):
+        if kind:
+            fc = OxmlElement('w:fldChar'); fc.set(qn('w:fldCharType'), kind); run._r.append(fc)
+        else:
+            it = OxmlElement('w:instrText'); it.set(qn('xml:space'), 'preserve'); it.text = txt
+            run._r.append(it)
+add_footer_page_number()
+
 def para(text="", size=10.5, bold=False, italic=False, color=INK, after=6, before=0, align=None):
     p = doc.add_paragraph()
     if align is not None: p.alignment = align
@@ -234,7 +250,7 @@ exrow = mtable.add_row().cells
 for i, val in enumerate(M.MATCH_EXAMPLE):
     exrow[i].text = ""
     pfx = exrow[i].paragraphs[0].add_run("Example.  " if i == 0 else "")
-    pfx.italic = True; pfx.font.size = Pt(8.5); pfx.font.color.rgb = GOLD
+    pfx.bold = True; pfx.font.size = Pt(8.5); pfx.font.color.rgb = GOLD
     rr = exrow[i].paragraphs[0].add_run(val); rr.italic = True; rr.font.size = Pt(9); rr.font.color.rgb = GREY
 # blank rows to fill
 for _ in range(4):

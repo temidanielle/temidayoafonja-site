@@ -9,8 +9,9 @@
 @font-face{font-family:'DM Sans';src:url('file:///home/user/temidayoafonja-site/fonts/DMSans-500-normal-latin-1c49a6.woff2') format('woff2');font-weight:500;font-style:normal;}
 @font-face{font-family:'DM Sans';src:url('file:///home/user/temidayoafonja-site/fonts/DMSans-600-normal-latin-1c49a6.woff2') format('woff2');font-weight:600;font-style:normal;}
 
-@page{size:8.5in 11in;margin:0.95in 1.05in 0.9in 1.05in;}
-@page bleed{size:8.5in 11in;margin:0;}
+@page{size:8.5in 11in;margin:0.95in 1.05in 0.9in 1.05in;
+  @bottom-center{content:counter(page);font-family:'DM Sans',sans-serif;font-size:8pt;color:#9096a1;}}
+@page bleed{size:8.5in 11in;margin:0;@bottom-center{content:"";}}
 *{box-sizing:border-box;}
 html,body{margin:0;padding:0;background:#FFFFFF;}
 body{font-family:'DM Sans',sans-serif;font-weight:400;font-size:10.8pt;line-height:1.62;color:#1c2333;background:#FFFFFF;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
@@ -139,6 +140,15 @@ table.cost td.cost-with{background:#FBF3E2;}
 .fades-svg .key-mem{fill:#9a7d2e;}
 .fades-svg .note{font-family:'DM Sans',sans-serif;font-style:italic;font-size:8px;fill:#1c2333;opacity:.55;}
 .fades-cap{font-size:9.8pt;line-height:1.5;color:#1c2333;margin:.1em 0 0;}
+
+/* Contents (table of contents) */
+.toc-page{page-break-before:always;page-break-after:always;padding-top:.3in;}
+.toc-title{font-family:'Cormorant',serif;font-weight:600;font-size:30pt;color:#112345;margin:0 0 .5em;padding-bottom:.2em;border-bottom:2.5px solid #C9A84C;}
+.toc-list{margin-top:1.2em;}
+.toc-row{display:flex;align-items:baseline;margin:0 0 1.05em;font-family:'DM Sans',sans-serif;}
+.toc-label{font-size:11.5pt;color:#112345;font-weight:500;white-space:nowrap;}
+.toc-dots{flex:1;margin:0 .5em;border-bottom:1px dotted #b9bec8;transform:translateY(-0.2em);}
+.toc-num{font-size:11pt;color:#1c2333;font-variant-numeric:tabular-nums;}
 </style></head>
 <body><section class="cover"><div class="cv-inner">
                   <h1 class="cv-title">KEEP THE PROOF</h1>
@@ -149,10 +159,11 @@ table.cost td.cost-with{background:#FBF3E2;}
                 </div></section>
 <h2>The record and the fine print</h2>
 <p>Copyright</p>
-<p>Keep the Proof: A guided system for building your professional record. Version 2.0. Copyright (c) 2026 Temidayo Afonja. All rights reserved. This document is licensed for the personal use of the individual purchaser. Organizations providing Keep the Proof to employees or program participants can arrange a group license at temidayoafonja.com/work. Please do not resell, redistribute, or republish it.</p>
+<p><strong>Keep the Proof:</strong> A guided system for building your professional record. Version 2.0. Copyright (c) 2026 Temidayo Afonja. All rights reserved. This document is licensed for the personal use of the individual purchaser. Organizations providing Keep the Proof to employees or program participants can arrange a group license at temidayoafonja.com/work. Please do not resell, redistribute, or republish it.</p>
 <p>What this guide is, and what it is not</p>
 <p>This is an educational guide to keeping a private, permitted record of your own work. It is not legal advice. It cannot interpret your specific employment agreement, your non-disclosure obligations, your employer&#x27;s policies, or the laws that apply where you work. Where a question of permission is unclear, treat that as a signal to leave the information out and to ask someone qualified, such as your manager, your human resources team, or an attorney.</p>
 <p>Written and designed by Temidayo Afonja, Founder, The Density Group. temidayoafonja.com</p>
+<section class="toc-page"><h1 class="toc-title">Contents</h1><div class="toc-list"><div class="toc-row"><span class="toc-label">Before You Rebuild Anything</span><span class="toc-dots"></span><span class="toc-num">3</span></div><div class="toc-row"><span class="toc-label">Part One: Understand the Record</span><span class="toc-dots"></span><span class="toc-num">9</span></div><div class="toc-row"><span class="toc-label">Your First 60 Minutes</span><span class="toc-dots"></span><span class="toc-num">16</span></div><div class="toc-row"><span class="toc-label">Part Two: Capture</span><span class="toc-dots"></span><span class="toc-num">18</span></div><div class="toc-row"><span class="toc-label">Part Three: Permission and Protection</span><span class="toc-dots"></span><span class="toc-num">24</span></div><div class="toc-row"><span class="toc-label">Part Four: Clarify</span><span class="toc-dots"></span><span class="toc-num">29</span></div><div class="toc-row"><span class="toc-label">Part Five: Carry</span><span class="toc-dots"></span><span class="toc-num">34</span></div><div class="toc-row"><span class="toc-label">Part Six: Worked Examples</span><span class="toc-dots"></span><span class="toc-num">38</span></div><div class="toc-row"><span class="toc-label">Part Seven: Reconstruct</span><span class="toc-dots"></span><span class="toc-num">43</span></div><div class="toc-row"><span class="toc-label">Part Eight: Keep It Current, and Use It</span><span class="toc-dots"></span><span class="toc-num">46</span></div><div class="toc-row"><span class="toc-label">Part Nine: The Record You Own</span><span class="toc-dots"></span><span class="toc-num">52</span></div><div class="toc-row"><span class="toc-label">Closing</span><span class="toc-dots"></span><span class="toc-num">54</span></div></div></section>
 <h2>Welcome</h2>
 <p>If you are reading this after a hard change, or in the middle of one, start here. What you built did not disappear when your circumstances changed. When an offer I had accepted was rescinded, I learned that circumstances can change faster than experience does. This guide will help you see what you built again, clearly enough that someone else can see it too.</p>
 <p>Most people do excellent work and remember almost none of it clearly.</p>
@@ -482,14 +493,22 @@ table.cost td.cost-with{background:#FBF3E2;}
 <p>Whether you keep to events, to routines, or to both is yours to settle by what you sustain. The quarterly review, if you use it, is housekeeping. Noticing that you have little evidence of a certain kind of work is a prompt to capture more of it, nothing more.</p>
 <h2>Retrieving the right evidence</h2>
 <p>The whole point of tagging is this moment: something is about to happen, and you need the right entries fast. This tells you which kinds of entries to pull for each occasion. It guides retrieval, and the next section, Put Your Record to Work, shows how to carry an entry into a resume line, a LinkedIn About section, an interview answer, and a promotion note. It does not write your resume for you or coach your interviews. It gets you the raw material and a clean first draft. What you do with them is yours.</p>
-<p>Performance review: outcomes and prevented problems from the review period, with honest scope. Promotion case: judgment, ownership beyond your title, and work at the next level. Compensation discussion: scope, results, and contributions others have recognized. Internal application: work relevant to the new team, translated out of your current group&#x27;s language. Resume preparation: your strongest Proof Lines across roles, each honest and portable. Interview preparation: entries with a clear situation, your decision, and the result, ready to tell aloud. Biography or introduction: a few durable, senior-sounding contributions stated plainly. Proposal or portfolio: permitted outcomes that show the kind of work you deliver. Unexpected transition: everything, quickly, because the record is now the only copy you have.</p>
+<p><strong>Performance review:</strong> outcomes and prevented problems from the review period, with honest scope.</p>
+<p><strong>Promotion case:</strong> judgment, ownership beyond your title, and work at the next level.</p>
+<p><strong>Compensation discussion:</strong> scope, results, and contributions others have recognized.</p>
+<p><strong>Internal application:</strong> work relevant to the new team, translated out of your current group&#x27;s language.</p>
+<p><strong>Resume preparation:</strong> your strongest Proof Lines across roles, each honest and portable.</p>
+<p><strong>Interview preparation:</strong> entries with a clear situation, your decision, and the result, ready to tell aloud.</p>
+<p><strong>Biography or introduction:</strong> a few durable, senior-sounding contributions stated plainly.</p>
+<p><strong>Proposal or portfolio:</strong> permitted outcomes that show the kind of work you deliver.</p>
+<p><strong>Unexpected transition:</strong> everything, quickly, because the record is now the only copy you have.</p>
 <h2>Match your proof to a role</h2>
 
 <p class="match-instr"><span class="inl-ico"><svg class="ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#112345" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Match your proof to a role"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1.4" fill="#C9A84C" stroke="none"/></svg></span>Pick three requirements from one posting. Match each to a Proof Line you have already written. If none fits, write the gap in the third column instead of stretching a line to cover it. A named gap is more credible than a stretched claim.</p>
 <table class="match">
   <thead><tr><th>What the role asks for</th><th>My Proof Line that shows it</th><th>The gap I will name</th></tr></thead>
   <tbody>
-    <tr class="ex"><td><i>Example.</i> Design and run onboarding for a growing team (in the posting&#8217;s own words).</td><td>Redesigned new-hire onboarding for a growing operations team, cutting time to full productivity and reducing early attrition, with the model later adopted by two other departments.</td><td>The posting asks for direct management of trainers. I coordinated them without that title, so I will name the scope I carried and not imply the title.</td></tr>
+    <tr class="ex"><td><strong>Example.</strong> Design and run onboarding for a growing team (in the posting&#8217;s own words).</td><td>Redesigned new-hire onboarding for a growing operations team, cutting time to full productivity and reducing early attrition, with the model later adopted by two other departments.</td><td>The posting asks for direct management of trainers. I coordinated them without that title, so I will name the scope I carried and not imply the title.</td></tr>
     <tr><td></td><td></td><td></td></tr>
     <tr><td></td><td></td><td></td></tr>
     <tr><td></td><td></td><td></td></tr>
@@ -501,18 +520,27 @@ table.cost td.cost-with{background:#FBF3E2;}
 <p>Before anything leaves the record, run one public-use check. Include only details you are permitted to share publicly. Apply Keep, Care, Never. Leave out employer-confidential names, figures, clients, and systems, and keep any team result separate from your own part. If a detail would fail that check, use the plainer version of it or leave it out.</p>
 <p>The four uses below all start from one Proof Line. Maya&#x27;s runs through each, so you can watch the same material take four shapes. Her Proof Line: &quot;Redesigned new-hire onboarding for a growing operations team, cutting time to full productivity and reducing early attrition, with the model later adopted by two other departments.&quot;</p>
 <h3><span class="h-ico h-ico-sm"><svg class="ico" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#112345" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Resume line"><path d="M7 3 h6.5 L18 7.5 V21 H7 z"/><path d="M13.3 3 V7.5 H18"/><line x1="9.2" y1="12" x2="15" y2="12" stroke="#C9A84C"/><line x1="9.2" y1="15" x2="15" y2="15" stroke="#C9A84C"/></svg></span>A resume line</h3>
-<p>Purpose: one line that shows the action, the scope, and what changed. Template: what you did, for what scope, what changed, and where it went or who adopted it. Maya: &quot;Redesigned new-hire onboarding for a growing operations team, cutting time to full productivity and reducing early attrition, with the model adopted by two other departments.&quot;</p>
+<p><strong>Purpose:</strong> one line that shows the action, the scope, and what changed.</p>
+<p><strong>Template:</strong> what you did, for what scope, what changed, and where it went or who adopted it.</p>
+<p><strong>Maya:</strong> &quot;Redesigned new-hire onboarding for a growing operations team, cutting time to full productivity and reducing early attrition, with the model adopted by two other departments.&quot;</p>
 <h3><span class="h-ico h-ico-sm"><svg class="ico" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#112345" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="About section"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="10" r="2.6"/><path d="M6.8 17.5 a5.4 4.2 0 0 1 10.4 0" stroke="#C9A84C"/></svg></span>A LinkedIn About sentence</h3>
-<p>Purpose: one first-person sentence a stranger can follow. Template: I do this kind of work for these people, which produces this change. Maya: &quot;I redesign onboarding so new people become productive faster and choose to stay, most recently rebuilding it for a growing operations team and watching the approach spread to two other departments.&quot;</p>
+<p><strong>Purpose:</strong> one first-person sentence a stranger can follow.</p>
+<p><strong>Template:</strong> I do this kind of work for these people, which produces this change.</p>
+<p><strong>Maya:</strong> &quot;I redesign onboarding so new people become productive faster and choose to stay, most recently rebuilding it for a growing operations team and watching the approach spread to two other departments.&quot;</p>
 <h3><span class="h-ico h-ico-sm"><svg class="ico" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#112345" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Interview answer"><path d="M5 6 h14 a1 1 0 0 1 1 1 v7 a1 1 0 0 1 -1 1 h-7.5 L7.5 18.5 V15 H5 a1 1 0 0 1 -1 -1 V7 a1 1 0 0 1 1 -1 z"/><circle cx="9.5" cy="10.5" r="0.8" fill="#C9A84C" stroke="none"/><circle cx="12" cy="10.5" r="0.8" fill="#C9A84C" stroke="none"/><circle cx="14.5" cy="10.5" r="0.8" fill="#C9A84C" stroke="none"/></svg></span>An interview answer, in three parts</h3>
-<p>Purpose: acknowledge the question, prove it with your Proof Line, then name the gap you would still need to learn and how. Template: restate what they asked; give the Proof Line as your evidence; name one thing you have not yet done at their scale, and how you would close it. Maya: &quot;You asked whether I can own onboarding end to end. I redesigned new-hire onboarding for a growing operations team, cut time to full productivity, reduced early attrition, and the model was adopted by two other departments. I have not yet run onboarding at company-wide scale, so I would start by learning the constraints across teams before changing anything.&quot;</p>
+<p><strong>Purpose:</strong> acknowledge the question, prove it with your Proof Line, then name the gap you would still need to learn and how.</p>
+<p><strong>Template:</strong> restate what they asked; give the Proof Line as your evidence; name one thing you have not yet done at their scale, and how you would close it.</p>
+<p><strong>Maya:</strong> &quot;You asked whether I can own onboarding end to end. I redesigned new-hire onboarding for a growing operations team, cut time to full productivity, reduced early attrition, and the model was adopted by two other departments. I have not yet run onboarding at company-wide scale, so I would start by learning the constraints across teams before changing anything.&quot;</p>
 <h3><span class="h-ico h-ico-sm"><svg class="ico" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#112345" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Promotion note"><polyline points="4,18.5 9,13.5 13,15.5 20,7"/><path d="M15.5 7 H20 V11.5" stroke="#C9A84C"/></svg></span>A promotion or self-review note</h3>
-<p>Purpose: three to five sentences to a manager covering the situation, your part, what changed, and what you are ready to carry next. Template: the situation and why it mattered; what you specifically did; what changed, with honest scope; what you are ready to take on now. Maya: &quot;Onboarding was slow and new hires were leaving early. I redesigned the flow for our growing operations team, working across the functions that touch a new hire&#x27;s first weeks. Time to full productivity dropped, early attrition fell, and two other departments adopted the model. I am ready to own onboarding across more of the organization, starting with the teams that have already asked to adopt it.&quot;</p>
+<p><strong>Purpose:</strong> three to five sentences to a manager covering the situation, your part, what changed, and what you are ready to carry next.</p>
+<p><strong>Template:</strong> the situation and why it mattered; what you specifically did; what changed, with honest scope; what you are ready to take on now.</p>
+<p><strong>Maya:</strong> &quot;Onboarding was slow and new hires were leaving early. I redesigned the flow for our growing operations team, working across the functions that touch a new hire&#x27;s first weeks. Time to full productivity dropped, early attrition fell, and two other departments adopted the model. I am ready to own onboarding across more of the organization, starting with the teams that have already asked to adopt it.&quot;</p>
 <p>Keep the record current, and each of these gets easier to write. When the material is already captured, honest, and permitted, every use above becomes a short edit rather than a blank page.</p>
 <h2>The optional, privacy-conscious AI prompt</h2>
 <p>Everything in this guide works without any AI. This tool is optional, and it is for one narrow job: helping you translate an entry you have already written into portable language. Before the prompt, the rule that governs it.</p>
 <p>Never paste employer names, customer names, colleague names, proprietary detail, employee information, sensitive metrics, code, security information, or any confidential material into an AI system. Give it only your own non-confidential account, already stripped of anything you may not keep. The permission rules in this guide apply to AI tools exactly as they apply to everything else.</p>
 <p>The prompt. &quot;You are helping me describe my own work accurately for my private professional record. I will give you only non-confidential information about what I did. Work only with what I provide. If context is missing, ask me for it rather than inventing anything. Never invent numbers, percentages, or results. Preserve my actual level of ownership, keep any team result separate from my individual contribution, and preserve the scope I worked within. Translate internal language into plain, portable language an outsider could understand, and help me refine a single Proof Line. Flag anything that sounds inflated, vague, or unsupported so I can correct it. Do not write a resume, an interview answer, a profile, or anything tailored to a specific job or employer. That is outside this task.&quot;</p>
+<p>For the resume line, About sentence, interview answer, and promotion note, use the templates in Put Your Record to Work and write them yourself from your checked Proof Line.</p>
 <p>The AI does not decide what is true. You do. Treat every version it returns as a draft to check against your own memory and this guide&#x27;s rules, never as a finished record.</p>
 <section class="part-divider"><div class="pd-inner">
               <div class="pd-kicker">PART NINE</div>
@@ -528,11 +556,11 @@ table.cost td.cost-with{background:#FBF3E2;}
 <section class="band-divider"><h1 class="bd-title">CLOSING</h1></section>
 <h2>The operating summary</h2>
 <p>Everything in this guide, on a single page you can return to.</p>
-<p>The rule: keep your own account and what you are permitted to retain. Never copy or reconstruct what your employer owns. When unsure, leave it out.</p>
-<p>The spine: Capture it while it is fresh. Clarify your part from the team&#x27;s, and name the judgment and the prevention. Carry it into portable words, kept safely and tagged for later.</p>
-<p>The tools: a two-minute Quick Capture for speed, a Full Entry for what matters, general translation into portable language, and a Proof Line as the portable end product.</p>
-<p>The rhythm: a focused first session to set up, then keep it current by capturing when something happens, by a light monthly or quarterly sweep, or by both, whichever you will sustain.</p>
-<p>The use: pull the right entries for reviews, promotions, compensation, internal moves, resumes, interviews, biographies, proposals, and sudden change.</p>
+<p><strong>The rule:</strong> keep your own account and what you are permitted to retain. Never copy or reconstruct what your employer owns. When unsure, leave it out.</p>
+<p><strong>The spine:</strong> Capture it while it is fresh. Clarify your part from the team&#x27;s, and name the judgment and the prevention. Carry it into portable words, kept safely and tagged for later.</p>
+<p><strong>The tools:</strong> a two-minute Quick Capture for speed, a Full Entry for what matters, general translation into portable language, and a Proof Line as the portable end product.</p>
+<p><strong>The rhythm:</strong> a focused first session to set up, then keep it current by capturing when something happens, by a light monthly or quarterly sweep, or by both, whichever you will sustain.</p>
+<p><strong>The use:</strong> pull the right entries for reviews, promotions, compensation, internal moves, resumes, interviews, biographies, proposals, and sudden change.</p>
 <p>If you remember only one line: a secure personal device does not make information yours to retain. Permission comes first. Everything else is craft.</p>
 <h2>The edge of the tool</h2>
 <p>This guide has a deliberate boundary, and naming it is part of using it well. Keep the Proof builds and translates the record of your work. It does not interpret what that record means for your position, your direction, or your next move. Those are real and important questions. They are simply not this tool&#x27;s questions.</p>
