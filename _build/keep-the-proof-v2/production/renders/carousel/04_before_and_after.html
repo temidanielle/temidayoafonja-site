@@ -1,52 +1,60 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><style>
-
 @font-face{font-family:'Cormorant';src:url('file:///home/user/temidayoafonja-site/fonts/CormorantGaramond-600-normal-latin-abcaa8.woff2') format('woff2');font-weight:600;}
 @font-face{font-family:'Cormorant';src:url('file:///home/user/temidayoafonja-site/fonts/CormorantGaramond-500-normal-latin-abcaa8.woff2') format('woff2');font-weight:500;}
+@font-face{font-family:'Cormorant';src:url('file:///home/user/temidayoafonja-site/fonts/CormorantGaramond-400-normal-latin-abcaa8.woff2') format('woff2');font-weight:400;}
 @font-face{font-family:'Cormorant';src:url('file:///home/user/temidayoafonja-site/fonts/CormorantGaramond-400-italic-latin-4db21d.woff2') format('woff2');font-weight:400;font-style:italic;}
 @font-face{font-family:'DM Sans';src:url('file:///home/user/temidayoafonja-site/fonts/DMSans-400-normal-latin-1c49a6.woff2') format('woff2');font-weight:400;}
 @font-face{font-family:'DM Sans';src:url('file:///home/user/temidayoafonja-site/fonts/DMSans-500-normal-latin-1c49a6.woff2') format('woff2');font-weight:500;}
 @font-face{font-family:'DM Sans';src:url('file:///home/user/temidayoafonja-site/fonts/DMSans-600-normal-latin-1c49a6.woff2') format('woff2');font-weight:600;}
+@font-face{font-family:'DM Sans';src:url('file:///home/user/temidayoafonja-site/fonts/DMSans-700-normal-latin-1c49a6.woff2') format('woff2');font-weight:700;}
 
 *{box-sizing:border-box;margin:0;padding:0;}
-html,body{width:1600px;height:900px;overflow:hidden;background:#112345;}
-.stage{width:1600px;height:900px;background:#112345;color:#F5F1E8;font-family:'DM Sans',sans-serif;
-  padding:96px 104px;position:relative;display:flex;flex-direction:column;overflow:hidden;}
-.eyebrow{font-family:'DM Sans';font-weight:600;letter-spacing:.34em;font-size:20px;color:#C9A84C;}
-.headline{font-family:'Cormorant',serif;font-weight:600;color:#F5F1E8;line-height:1.03;}
-.subline{font-family:'Cormorant',serif;font-style:italic;color:#c9d0dd;line-height:1.32;}
-.footer{margin-top:auto;padding-top:36px;font-family:'DM Sans';font-weight:500;
-  letter-spacing:.16em;font-size:19px;color:#C9A84C;}
-.footer.plain{letter-spacing:0;font-weight:400;font-style:italic;font-family:'Cormorant',serif;
-  font-size:26px;color:#c9d0dd;}
-.grule{width:72px;height:4px;background:#C9A84C;}
-.card{background:#F5F1E8;color:#1c2333;border-radius:14px;border-top:5px solid #C9A84C;}
-.card .cico{width:46px;height:46px;display:block;}
-.card .ck{font-family:'DM Sans';font-weight:600;font-size:23px;color:#112345;letter-spacing:.01em;}
-.card .cb{font-family:'DM Sans';font-weight:400;font-size:20px;line-height:1.42;color:#1c2333;}
+html,body{width:1600px;height:900px;overflow:hidden;background:#FBF8F2;}
+.stage{width:1600px;height:900px;background:#FBF8F2;color:#182238;font-family:'DM Sans',sans-serif;
+  padding:74px 95px 62px;position:relative;display:flex;flex-direction:column;overflow:hidden;}
+.mark{margin-bottom:34px;}
+.eyebrow{font-family:'DM Sans';font-weight:700;letter-spacing:.22em;font-size:16px;
+  text-transform:uppercase;color:#A5842E;margin-bottom:14px;}
+.headline{font-family:'Cormorant',serif;font-weight:600;color:#0F2347;line-height:1.04;}
+.hrule{width:66px;height:3px;background:#C1440E;margin:20px 0 0;}
+.subline{font-family:'DM Sans';font-weight:400;color:#5D6676;line-height:1.4;}
+.grow{flex:1 1 auto;min-height:0;}
+.footnote{padding-top:28px;font-family:'Cormorant',serif;font-style:italic;font-size:23px;color:#5D6676;}
+.card{background:#F5F0E8;border:1px solid #E4DCCB;border-radius:8px;}
 
-.s4 .eyebrow{margin-bottom:20px;}
-.s4 .headline{font-size:60px;margin-bottom:14px;}
-.s4 .subline{font-size:27px;max-width:38em;margin-bottom:40px;}
-.ba{display:flex;flex-direction:column;gap:22px;}
-.ba-row{background:#F5F1E8;color:#1c2333;border-radius:14px;padding:26px 34px;border-left:6px solid #b9bec8;}
-.ba-row.after{border-left:6px solid #C9A84C;}
-.ba-tag{font-family:'DM Sans';font-weight:600;letter-spacing:.12em;font-size:17px;color:#8a8f9a;margin-bottom:10px;}
-.ba-row.after .ba-tag{color:#C9A84C;}
-.ba-txt{font-family:'Cormorant',serif;font-weight:500;font-size:33px;line-height:1.22;color:#112345;}
-.ba-cap{font-family:'DM Sans';font-weight:400;font-size:18px;color:#5f636e;margin-top:10px;line-height:1.4;}
-.footer.plain{max-width:none;font-size:24px;}
-</style></head><body>
-<div class="stage s4">
-  <div class="eyebrow">FROM MEMORY TO EVIDENCE</div>
+.s4 .headline{font-size:50px;}
+.s4 .subline{font-size:21px;margin-top:15px;max-width:44em;}
+.ba{display:flex;align-items:stretch;gap:0;margin-top:40px;}
+.ba-card{flex:1;min-height:358px;background:#F0EBE0;border:1px solid #E4DCCB;border-radius:8px;padding:30px 34px;display:flex;flex-direction:column;}
+.ba-card.after{background:#F5F0E8;border:1px solid #C9A84C;border-left:6px solid #C1440E;}
+.ba-lbl{font-family:'DM Sans';font-weight:700;letter-spacing:.14em;font-size:15px;text-transform:uppercase;color:#5D6676;margin-bottom:18px;}
+.ba-card.after .ba-lbl{color:#C1440E;}
+.ba-quote{font-family:'Cormorant',serif;font-weight:600;font-size:38px;line-height:1.14;color:#0F2347;}
+.ba-body{font-family:'Cormorant',serif;font-weight:500;font-size:27px;line-height:1.28;color:#0F2347;}
+.ba-cap{font-family:'DM Sans';font-weight:400;font-size:18px;line-height:1.42;color:#5D6676;margin-top:auto;padding-top:22px;}
+.arrow{width:56px;flex:0 0 auto;display:flex;align-items:center;justify-content:center;}
+.arrow-c{width:44px;height:44px;border-radius:50%;border:2px solid #C9A84C;display:flex;align-items:center;justify-content:center;color:#C1440E;font-size:22px;line-height:1;}
+.footnote{color:#5D6676;}
+</style></head><body><div class="stage s4">
+  <div class="mark"><svg width="62" height="62" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="20" y="8" width="33" height="41" rx="4" fill="#FBF8F2" stroke="#0F2347" stroke-width="2.4"/>
+  <rect x="43.5" y="10.5" width="8" height="8" rx="1.5" fill="#C1440E"/>
+  <rect x="9" y="16" width="33" height="41" rx="4" fill="#F5F0E8" stroke="#0F2347" stroke-width="2.4"/>
+  <rect x="16" y="30" width="19" height="3" rx="1.5" fill="#C9A84C"/>
+</svg></div>
+  <div class="eyebrow">From Memory to Evidence</div>
   <div class="headline">A vague line becomes portable evidence.</div>
+  <div class="hrule"></div>
   <div class="subline">The system pushes every entry past what you did to what became different because you did it.</div>
   <div class="ba">
-    <div class="ba-row"><div class="ba-tag">BEFORE</div>
-      <div class="ba-txt">&ldquo;Helped with onboarding.&rdquo;</div>
+    <div class="ba-card"><div class="ba-lbl">Before</div>
+      <div class="ba-quote">&ldquo;Helped with onboarding.&rdquo;</div>
       <div class="ba-cap">Vague. Easy to forget. It claims nothing a reader can examine.</div></div>
-    <div class="ba-row after"><div class="ba-tag">A PROOF LINE</div>
-      <div class="ba-txt">&ldquo;Redesigned new-hire onboarding for a growing operations team, cutting time to full productivity and reducing early attrition, with the model later adopted by two other departments.&rdquo;</div>
+    <div class="arrow"><div class="arrow-c">&rsaquo;</div></div>
+    <div class="ba-card after"><div class="ba-lbl">A Proof Line</div>
+      <div class="ba-body">&ldquo;Redesigned new-hire onboarding for a growing operations team, cutting time to full productivity and reducing early attrition, with the model later adopted by two other departments.&rdquo;</div>
       <div class="ba-cap">Maya&rsquo;s Proof Line, from the Guided Handbook.</div></div>
   </div>
-  <div class="footer plain">A Proof Line does not need a number to be strong, and it must never contain an invented one.</div>
+  <div class="grow"></div>
+  <div class="footnote">A Proof Line does not need a number to be strong, and it must never contain an invented one.</div>
 </div></body></html>

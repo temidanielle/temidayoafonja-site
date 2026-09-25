@@ -1,61 +1,87 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><style>
-
 @font-face{font-family:'Cormorant';src:url('file:///home/user/temidayoafonja-site/fonts/CormorantGaramond-600-normal-latin-abcaa8.woff2') format('woff2');font-weight:600;}
 @font-face{font-family:'Cormorant';src:url('file:///home/user/temidayoafonja-site/fonts/CormorantGaramond-500-normal-latin-abcaa8.woff2') format('woff2');font-weight:500;}
+@font-face{font-family:'Cormorant';src:url('file:///home/user/temidayoafonja-site/fonts/CormorantGaramond-400-normal-latin-abcaa8.woff2') format('woff2');font-weight:400;}
 @font-face{font-family:'Cormorant';src:url('file:///home/user/temidayoafonja-site/fonts/CormorantGaramond-400-italic-latin-4db21d.woff2') format('woff2');font-weight:400;font-style:italic;}
 @font-face{font-family:'DM Sans';src:url('file:///home/user/temidayoafonja-site/fonts/DMSans-400-normal-latin-1c49a6.woff2') format('woff2');font-weight:400;}
 @font-face{font-family:'DM Sans';src:url('file:///home/user/temidayoafonja-site/fonts/DMSans-500-normal-latin-1c49a6.woff2') format('woff2');font-weight:500;}
 @font-face{font-family:'DM Sans';src:url('file:///home/user/temidayoafonja-site/fonts/DMSans-600-normal-latin-1c49a6.woff2') format('woff2');font-weight:600;}
+@font-face{font-family:'DM Sans';src:url('file:///home/user/temidayoafonja-site/fonts/DMSans-700-normal-latin-1c49a6.woff2') format('woff2');font-weight:700;}
 
 *{box-sizing:border-box;margin:0;padding:0;}
-html,body{width:1600px;height:900px;overflow:hidden;background:#112345;}
-.stage{width:1600px;height:900px;background:#112345;color:#F5F1E8;font-family:'DM Sans',sans-serif;
-  padding:96px 104px;position:relative;display:flex;flex-direction:column;overflow:hidden;}
-.eyebrow{font-family:'DM Sans';font-weight:600;letter-spacing:.34em;font-size:20px;color:#C9A84C;}
-.headline{font-family:'Cormorant',serif;font-weight:600;color:#F5F1E8;line-height:1.03;}
-.subline{font-family:'Cormorant',serif;font-style:italic;color:#c9d0dd;line-height:1.32;}
-.footer{margin-top:auto;padding-top:36px;font-family:'DM Sans';font-weight:500;
-  letter-spacing:.16em;font-size:19px;color:#C9A84C;}
-.footer.plain{letter-spacing:0;font-weight:400;font-style:italic;font-family:'Cormorant',serif;
-  font-size:26px;color:#c9d0dd;}
-.grule{width:72px;height:4px;background:#C9A84C;}
-.card{background:#F5F1E8;color:#1c2333;border-radius:14px;border-top:5px solid #C9A84C;}
-.card .cico{width:46px;height:46px;display:block;}
-.card .ck{font-family:'DM Sans';font-weight:600;font-size:23px;color:#112345;letter-spacing:.01em;}
-.card .cb{font-family:'DM Sans';font-weight:400;font-size:20px;line-height:1.42;color:#1c2333;}
+html,body{width:1600px;height:900px;overflow:hidden;background:#FBF8F2;}
+.stage{width:1600px;height:900px;background:#FBF8F2;color:#182238;font-family:'DM Sans',sans-serif;
+  padding:74px 95px 62px;position:relative;display:flex;flex-direction:column;overflow:hidden;}
+.mark{margin-bottom:34px;}
+.eyebrow{font-family:'DM Sans';font-weight:700;letter-spacing:.22em;font-size:16px;
+  text-transform:uppercase;color:#A5842E;margin-bottom:14px;}
+.headline{font-family:'Cormorant',serif;font-weight:600;color:#0F2347;line-height:1.04;}
+.hrule{width:66px;height:3px;background:#C1440E;margin:20px 0 0;}
+.subline{font-family:'DM Sans';font-weight:400;color:#5D6676;line-height:1.4;}
+.grow{flex:1 1 auto;min-height:0;}
+.footnote{padding-top:28px;font-family:'Cormorant',serif;font-style:italic;font-size:23px;color:#5D6676;}
+.card{background:#F5F0E8;border:1px solid #E4DCCB;border-radius:8px;}
 
-.s6 .eyebrow{margin-bottom:18px;}
-.s6 .headline{font-size:58px;margin-bottom:40px;}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:28px;flex:1;}
-.tcard{background:#F5F1E8;color:#1c2333;border-radius:16px;padding:34px 38px 36px;display:flex;flex-direction:column;border-top:6px solid #C9A84C;}
-.tcard.fk{border-top:6px solid #6b7180;background:#f1f0ec;}
-.tname{font-family:'Cormorant',serif;font-weight:600;font-size:38px;color:#112345;line-height:1.02;margin-bottom:8px;}
-.tsub{font-family:'DM Sans';font-weight:600;letter-spacing:.09em;font-size:15px;color:#C9A84C;margin-bottom:20px;}
-.tcard.fk .tsub{color:#6b7180;}
-.tq{font-family:'Cormorant',serif;font-style:italic;font-size:27px;color:#1c2333;line-height:1.28;margin-bottom:22px;}
-.tlist{list-style:none;margin:0;padding:0;}
-.tlist li{font-family:'DM Sans';font-weight:400;font-size:20px;line-height:1.4;color:#1c2333;padding-left:26px;position:relative;margin-bottom:12px;}
-.tlist li:before{content:"";position:absolute;left:0;top:11px;width:9px;height:9px;background:#C9A84C;border-radius:2px;}
-.fkbody{font-family:'DM Sans';font-weight:400;font-size:20px;line-height:1.5;color:#1c2333;}
-.footer.plain{font-size:24px;max-width:none;}
-</style></head><body>
-<div class="stage s6">
-  <div class="eyebrow">TWO TOOLS, TWO QUESTIONS</div>
+.s6 .headline{font-size:50px;}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:44px;}
+.tcard{border-radius:10px;padding:34px 38px;display:flex;flex-direction:column;min-height:436px;}
+.tcard.ktp{background:#F5F0E8;border:1.5px solid #C9A84C;}
+.tcard.fk{background:#0F2347;}
+.tmark{margin-bottom:26px;}
+.ttitle{font-family:'DM Sans';font-weight:700;letter-spacing:.1em;font-size:20px;text-transform:uppercase;color:#0F2347;margin-bottom:7px;}
+.tcard.fk .ttitle{color:#FBF8F2;}
+.tsub{font-family:'DM Sans';font-weight:700;letter-spacing:.09em;font-size:13.5px;text-transform:uppercase;color:#A5842E;margin-bottom:22px;}
+.tcard.fk .tsub{color:#C9A84C;}
+.tq{font-family:'Cormorant',serif;font-weight:600;font-size:29px;line-height:1.24;color:#0F2347;margin-bottom:28px;}
+.tcard.fk .tq{color:#FBF8F2;}
+.tlist{list-style:none;margin:auto 0 0;padding:0;}
+.tlist li{font-family:'DM Sans';font-weight:400;font-size:20px;line-height:1.4;color:#182238;padding-left:20px;position:relative;margin-bottom:15px;}
+.tcard.fk .tlist li{color:#DDE4EE;}
+.tlist li:last-child{margin-bottom:0;}
+.tlist li:before{content:"";position:absolute;left:0;top:9px;width:5px;height:16px;border-radius:1px;background:#C9A84C;}
+.tcard.fk .tlist li:before{background:#C1440E;}
+.footnote{color:#0F2347;}
+</style></head><body><div class="stage s6">
+  <div class="mark"><svg width="62" height="62" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="20" y="8" width="33" height="41" rx="4" fill="#FBF8F2" stroke="#0F2347" stroke-width="2.4"/>
+  <rect x="43.5" y="10.5" width="8" height="8" rx="1.5" fill="#C1440E"/>
+  <rect x="9" y="16" width="33" height="41" rx="4" fill="#F5F0E8" stroke="#0F2347" stroke-width="2.4"/>
+  <rect x="16" y="30" width="19" height="3" rx="1.5" fill="#C9A84C"/>
+</svg></div>
+  <div class="eyebrow">Two Tools, Two Questions</div>
   <div class="headline">Different questions. Different tools.</div>
-  <div class="two"><div class="tcard">
-      <div class="tname">Keep the Proof</div>
-      <div class="tsub">A GUIDED SYSTEM FOR BUILDING YOUR PROFESSIONAL RECORD</div>
-      <div class="tq">&ldquo;What have I done, and how do I keep the proof of it?&rdquo;</div>
+  <div class="hrule"></div>
+  <div class="two"><div class="tcard ktp">
+      <div class="tmark"><svg width="46" height="46" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="20" y="8" width="33" height="41" rx="4" fill="#FBF8F2" stroke="#0F2347" stroke-width="2.4"/>
+  <rect x="43.5" y="10.5" width="8" height="8" rx="1.5" fill="#C1440E"/>
+  <rect x="9" y="16" width="33" height="41" rx="4" fill="#F5F0E8" stroke="#0F2347" stroke-width="2.4"/>
+  <rect x="16" y="30" width="19" height="3" rx="1.5" fill="#C9A84C"/>
+</svg></div>
+      <div class="ttitle">Keep the Proof</div>
+      <div class="tsub">A guided system for building your professional record</div>
+      <div class="tq">&ldquo;What have I done, what changed, and what does it prove I can do?&rdquo;</div>
       <ul class="tlist">
         <li>Guided Handbook with worked examples</li>
         <li>Your Professional Record, editable for years</li>
         <li>Printable and fillable tools</li>
       </ul>
     </div><div class="tcard fk">
-      <div class="tname">The Capability<br>Formation Field Kit</div>
-      <div class="tsub">READ WHAT YOUR WORK IS BUILDING</div>
-      <div class="tq">&ldquo;What is my current work building in me, and will it travel?&rdquo;</div>
-      <div class="fkbody">The Field Kit helps you assess what your current work is building in you and read your broader capability position. It is a different tool for a different question.</div>
+      <div class="tmark"><svg width="44" height="44" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="6" y="6" width="14" height="14" rx="2" fill="none" stroke="#C9A84C" stroke-width="2.2"/>
+  <rect x="28" y="6" width="14" height="14" rx="2" fill="#C1440E"/>
+  <rect x="6" y="28" width="14" height="14" rx="2" fill="none" stroke="#C9A84C" stroke-width="2.2"/>
+  <rect x="28" y="28" width="14" height="14" rx="2" fill="none" stroke="#C9A84C" stroke-width="2.2"/>
+</svg></div>
+      <div class="ttitle">The Capability Formation Field Kit</div>
+      <div class="tsub">An evidence-led career position assessment</div>
+      <div class="tq">&ldquo;What is my current work building in me?&rdquo;</div>
+      <ul class="tlist">
+        <li>Reads your last 90 days</li>
+        <li>Density and Optionality scores</li>
+        <li>A dated position you can rescore</li>
+      </ul>
     </div></div>
-  <div class="footer plain">Keep the honest record first. Read what it means for your direction when you are ready.</div>
+  <div class="grow"></div>
+  <div class="footnote">Choose Keep the Proof when you want to capture evidence of what you have already done.</div>
 </div></body></html>
