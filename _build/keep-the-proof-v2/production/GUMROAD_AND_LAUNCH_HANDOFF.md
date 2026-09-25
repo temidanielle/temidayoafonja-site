@@ -59,7 +59,7 @@ problem, then recognition, then the system. It never leads with Capture / Clarif
 
 **You did the work. Months later, you can't quite lay your hands on the details.**
 
-Not because the work was small. It was constant. You solved the problem,
+The work was constant. You solved the problem,
 absorbed the lesson, and moved to the next thing before the last one had a name.
 Then a moment arrives that depends on the details, and you're reaching for facts
 that have already gone soft.
@@ -94,7 +94,7 @@ reconstruct anything your employer owns.
 ## What you get
 
 - **Start Here:** a short orientation and a map of the bundle.
-- **Keep the Proof: Guided Handbook (47 pages):** the full method, with a completed
+- **Keep the Proof: Guided Handbook (48 pages):** the full method, with a completed
   example beside every tool, and a first focused session that gets you to one real
   entry. Sixty minutes is a guide. Take it in one sitting or several. Includes a
   parallel path for rebuilding after you've already lost access.
@@ -122,7 +122,7 @@ ready before a review, a move, or an unexpected change becomes urgent.
   Field Kit).
 - It never asks you to upload or keep confidential employer information. You keep
   your own account of your work, not the files.
-- It's educational, not legal advice. Where permission is unclear, it tells
+- It's educational and does not give legal advice. Where permission is unclear, it tells
   you to leave the information out and ask someone qualified.
 
 ## Format & safe use
@@ -195,7 +195,7 @@ strip them of the free update path).
 > no additional cost. Just re-download from your receipt or library.
 >
 > What's new:
-> - A rewritten, expanded Guided Handbook (now 47 pages) with a completed example
+> - A rewritten, expanded Guided Handbook (now 48 pages) with a completed example
 >   beside every tool and a clearer permission-and-safe-use standard throughout.
 > - **Your Professional Record:** an editable, copyable working document (Word /
 >   Google Docs / Pages) that replaces the old Career Evidence

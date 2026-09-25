@@ -1,7 +1,7 @@
 # YOUR PROFESSIONAL RECORD
 *A companion to Keep the Proof*
 
-This is your record, not a form to submit. Make one personal copy, keep it in a personally controlled account rather than an employer-owned system, and add to it over time. It holds everything the guide produces, in one searchable place.
+This is your record. You keep it, and you never have to submit it. Make one personal copy, keep it in a personally controlled account rather than an employer-owned system, and add to it over time. It holds everything the guide produces, in one searchable place.
 
 - **Make it yours.** Save your own copy in a personal account, protected with a unique password and multifactor authentication.
 - **Keep it in one place.** One record you maintain beats four you abandon.
@@ -457,4 +457,4 @@ A running list of what you have, so any entry is a search away.
 - [ ] Note where evidence is thin, without drawing any conclusion about your career from the gap.
 - [ ] Update your index.
 
-_This is housekeeping, not a verdict. It organizes and translates what happened; it does not tell you what your career means._
+_This is housekeeping. It organizes and translates what happened; it does not tell you what your career means._

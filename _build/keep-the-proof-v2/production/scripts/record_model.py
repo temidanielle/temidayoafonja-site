@@ -6,7 +6,7 @@ so the underlying fields are identical across all three formats."""
 TITLE = "YOUR PROFESSIONAL RECORD"
 SUBTITLE = "A companion to Keep the Proof"
 
-INTRO_LEAD = ("This is your record, not a form to submit. Make one personal copy, keep it in a "
+INTRO_LEAD = ("This is your record. You keep it, and you never have to submit it. Make one personal copy, keep it in a "
     "personally controlled account rather than an employer-owned system, and add to it over time. "
     "It holds everything the guide produces, in one searchable place.")
 
@@ -141,5 +141,5 @@ QUARTERLY = [
     "Note where evidence is thin, without drawing any conclusion about your career from the gap.",
     "Update your index.",
 ]
-MAINT_NOTE = ("This is housekeeping, not a verdict. It organizes and translates what happened; it does not "
+MAINT_NOTE = ("This is housekeeping. It organizes and translates what happened; it does not "
     "tell you what your career means.")

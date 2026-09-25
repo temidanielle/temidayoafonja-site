@@ -21,18 +21,16 @@ What this guide is, and what it is not
 
 This is an educational guide to keeping a private, permitted record of your own work. It is not legal advice. It cannot interpret your specific employment agreement, your non-disclosure obligations, your employer's policies, or the laws that apply where you work. Where a question of permission is unclear, treat that as a signal to leave the information out and to ask someone qualified, such as your manager, your human resources team, or an attorney.
 
-A note on confidentiality before you begin
-
-Everything in this system is built on one rule: you record only your own recollection of your work and information you are permitted to keep. You will be asked, repeatedly, not to copy, forward, photograph, download, screenshot, or reconstruct anything your employer owns. That rule holds on any device, at any hour, in any format. It is the first thing this guide teaches and the last thing it will let you forget.
-
 
 Written and designed by Temidayo Afonja, Founder, The Density Group. temidayoafonja.com
 
 ## Welcome
 
+If you are reading this after a hard change, or in the middle of one, start here. What you built did not disappear when your circumstances changed. When an offer I had accepted was rescinded, I learned that circumstances can change faster than experience does. This guide will help you see what you built again, clearly enough that someone else can see it too.
+
 Most people do excellent work and remember almost none of it clearly.
 
-Not because the work was small. Because the work was constant. You solved the problem, absorbed the lesson, and moved to the next thing before the last one had a name. Months later a review, a promotion case, or a sudden change asks you to account for a year, and you find yourself reaching for details that have already gone soft.
+The work was constant. You solved the problem, absorbed the lesson, and moved to the next thing before the last one had a name. Months later a review, a promotion case, or a sudden change asks you to account for a year, and you find yourself reaching for details that have already gone soft.
 
 Across my career I have worked in and around talent, workforce, and organizational decisions: conversations about performance, promotion, restructuring, and readiness. One pattern kept surfacing, and it was simpler than the politics of any single room. Capable people would reach an important career moment and then have to reconstruct the work that had brought them to it. Some could describe their contribution clearly. Others knew they had done meaningful work but no longer had the details.
 
@@ -82,6 +80,10 @@ You record your own recollection and information you are permitted to retain. Yo
 
 ---
 
+## A note on confidentiality before you begin
+
+Everything in this system is built on one rule: you record only your own recollection of your work and information you are permitted to keep. You will be asked, repeatedly, not to copy, forward, photograph, download, screenshot, or reconstruct anything your employer owns. That rule holds on any device, at any hour, in any format. It is the first thing this guide teaches and the last thing it will let you forget.
+
 # PART ONE — UNDERSTAND THE RECORD
 
 What a professional record is, and why it goes missing. Kept short, because you already recognized yourself on the way in.
@@ -98,7 +100,7 @@ This guide is built for the stretch of time between two sentences. The first is 
 
 ## Why a professional record goes missing
 
-It is tempting to blame memory. Memory is part of it, but it is not the main cause. A professional record disappears for reasons that are structural, and once you see them you can design around them.
+It is tempting to blame memory. Memory plays a part. The larger reasons a professional record disappears are structural, and once you see them you can design around them.
 
 It lives in systems you do not own. Your accomplishments are recorded, but not by you and not for you. They sit in a ticketing system, a shared drive, a customer platform, an email account, a chat history. Every one of those belongs to your employer. Access to them is a condition of your role, and it ends when the role does.
 
@@ -113,7 +115,7 @@ It decays quietly. Details do not leave all at once. They fade. The figure you w
 A professional record is a truthful, private, retrievable account of what you contributed, what judgment you exercised, what changed because of your work, and what permitted information supports it. That is the whole definition, and each word in it is doing work.
 
 
-A professional record is a record of your contribution and judgment. It is not a list of everything you were assigned. It is written in language an outsider can follow, not a wall of internal names and acronyms. It is honest about your part in a shared result, not a claim of sole credit for team work. It is built only from what you may keep, not a copy of files that belong to your employer. It is useful before many career moments, not a document you touch only when job hunting.
+A professional record is a record of your contribution and judgment. It covers what you did, beyond what you were assigned. It is written in language an outsider can follow. It is honest about your part in a shared result. It is built only from what you may keep. And it serves many career moments, long before any single one arrives.
 
 This is disciplined recordkeeping. The aim is to make it accurate and findable, so that when a moment arrives that depends on the details, the details are there and you can trust them. Done well, an accurate account is more persuasive than an inflated one, because it holds up when someone asks a second question.
 
@@ -189,7 +191,7 @@ A focused first session. With focused time it takes about an hour, and you can a
 
 ## The focused first session (capturing now)
 
-Follow this in order. At the end you will have a working start, not a finished record, and that is exactly the goal.
+Follow this in order. At the end you will have a working start, which is exactly the goal. The record grows from there.
 
 
 - First few minutes. Read the one rule again, and the three tiers of permission on the Keep, Care, Never page. Choose a private home you control and turn on a password and multifactor authentication. Permission comes before storage, always. {{pause}}
@@ -472,7 +474,7 @@ Maya's Proof Line: "Redesigned new-hire onboarding for a growing operations team
 
 A Proof Line does not need a number to be strong, and it must never contain an invented one. It also never claims sole credit for a shared result. If a line would only sound impressive by overstating your ownership, it is wrong, and you rewrite it until it is true.
 
-A Proof Line is general on purpose. It is a true, reusable sentence you keep, not a version shaped for a particular job, employer, or application. Tailoring your work to a specific target is a separate step, and a later one, and it is not this guide's job.
+A Proof Line is general on purpose. It is a true, reusable sentence you keep. Shaping it for a particular job, employer, or application is a separate, later step, outside this guide's job.
 
 ## See it work: before and after
 
@@ -557,7 +559,7 @@ Perhaps you are reading this after a change, not before one. The record you wish
 
 ## What reconstruction can and cannot recover
 
-A reconstructed record will not be as complete as one captured in real time, and it should not pretend to be. What it can be is honest, useful, and enough to carry into the moment in front of you. The goal is not to recover everything. It is to rebuild what you can stand behind, mark clearly what you cannot, and then start capturing forward so you never have to do this again.
+A reconstructed record will not be as complete as one captured in real time, and it should not pretend to be. What it can be is honest, useful, and enough to carry into the moment in front of you. The goal is to rebuild what you can stand behind, mark clearly what you cannot, and then start capturing forward so you never have to do this again.
 
 The rule does not relax because the timing is inconvenient. Work only from what you are permitted to use: your own memory, information that is already public, and anything you already hold or were expressly permitted to keep. What is not usable is a copy of anything you took, or access you were not meant to retain.
 
@@ -616,7 +618,7 @@ A periodic sweep. A short monthly or quarterly pass catches the work that did no
 - A monthly sweep, about ten to fifteen minutes. Look back over the month's projects, decisions, feedback, changes, and problems you helped prevent. Add Quick Captures for anything worth keeping, expand the most significant into a full entry, run the confidentiality check, and tag each item.
 - A quarterly review, about thirty minutes. Read the quarter's entries in one sitting, remove duplicates and anything too vague, correct overstatement while you still remember, translate the strongest into Proof Lines, and note where evidence is thin without drawing any conclusion about your career from the gap.
 
-Whether you keep to events, to routines, or to both is yours to settle by what you sustain. The quarterly review, if you use it, is housekeeping, not a verdict. Noticing that you have little evidence of a certain kind of work is a prompt to capture more of it, nothing more.
+Whether you keep to events, to routines, or to both is yours to settle by what you sustain. The quarterly review, if you use it, is housekeeping. Noticing that you have little evidence of a certain kind of work is a prompt to capture more of it, nothing more.
 
 ## Retrieving the right evidence
 
@@ -683,7 +685,7 @@ What this guide answers: what happened and what was my contribution; what decisi
 
 What it deliberately does not answer: whether my career is stalled or what state it is in; whether this role is still building me, or whether I should stay or leave; what move I should make, or whether a specific destination will value my work. A record can be honest and portable and still meet a market, a committee, or a bias it cannot control. This guide is careful never to suggest that better wording changes those things.
 
-A quiet pointer, not a sales pitch. If you later want to interpret what your current work is building toward, or read what would travel to a direction you are considering, a separate tool from The Density Group, the Capability Formation Field Kit, is designed for exactly that reading. It is a different job for a different day. This guide's work is done when your record is honest, portable, and safe to keep.
+One quiet pointer. If you later want to interpret what your current work is building toward, or read what would travel to a direction you are considering, a separate tool from The Density Group, the Capability Formation Field Kit, is designed for exactly that reading. It is a different job for a different day. This guide's work is done when your record is honest, portable, and safe to keep.
 
 ## About the author
 

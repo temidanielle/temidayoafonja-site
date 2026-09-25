@@ -9,7 +9,7 @@ NAVY="#112345"; CREAM="#F5F1E8"; GOLD="#C9A84C"; INK="#1c2333"; GREY="#5f636e"
 
 FILES=[
  ("READ THIS FIRST","Start Here","This file. A two-minute orientation to the system and how the pieces fit together."),
- ("LEARN &amp; BUILD","Keep the Proof: Guided Handbook","The 47-page teaching guide. Read it straight through, or jump to the part you need: how to capture your work, clarify what was yours, and carry it forward in language anyone can follow, with a completed example beside every tool."),
+ ("LEARN &amp; BUILD","Keep the Proof: Guided Handbook","The 48-page teaching guide. Read it straight through, or jump to the part you need: how to capture your work, clarify what was yours, and carry it forward in language anyone can follow, with a completed example beside every tool."),
  ("KEEP USING","Your Professional Record","Your long-term working document, in an editable, copyable format you keep and control (Word, Google Docs, or Pages). Make one personal copy, keep it in a personally controlled account, and add to it over time. This is where the record lives for years."),
  ("PREFER PRINT OR A FORM?","Printable &amp; Fillable Tools","Nine form pages holding the same fields as your Professional Record, for anyone who would rather write by hand or type into a form. Use whichever you will keep up. You do not need to complete both."),
 ]
