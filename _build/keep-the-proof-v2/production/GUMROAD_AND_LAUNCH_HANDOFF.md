@@ -94,7 +94,7 @@ reconstruct anything your employer owns.
 ## What you get
 
 - **Start Here:** a short orientation and a map of the bundle.
-- **Keep the Proof: Guided Handbook (50 pages):** the full method, with a completed
+- **Keep the Proof: Guided Handbook (52 pages):** the full method, with a completed
   example beside every tool, and a first focused session that gets you to one real
   entry. It opens with Before You Rebuild Anything and closes with Put Your Record to
   Work, which shows how to carry one Proof Line into a resume line, a LinkedIn About
@@ -198,7 +198,7 @@ strip them of the free update path).
 > no additional cost. Just re-download from your receipt or library.
 >
 > What's new:
-> - A rewritten, expanded Guided Handbook (now 50 pages) with a completed example
+> - A rewritten, expanded Guided Handbook (now 52 pages) with a completed example
 >   beside every tool and a clearer permission-and-safe-use standard throughout.
 > - **Your Professional Record:** an editable, copyable working document (Word /
 >   Google Docs / Pages) that replaces the old Career Evidence

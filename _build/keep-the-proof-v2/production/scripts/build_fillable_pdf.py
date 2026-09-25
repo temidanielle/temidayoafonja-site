@@ -10,6 +10,7 @@ from reportlab.lib.colors import HexColor, white
 
 ROOT = "/home/user/temidayoafonja-site"
 OUT = f"{ROOT}/_build/keep-the-proof-v2/production/bundle/04_PRINTABLE_FILLABLE_TOOLS.pdf"
+ICON_DIR = f"{ROOT}/_build/keep-the-proof-v2/production/assets/icons"
 
 NAVY = HexColor("#112345")
 CREAM = HexColor("#F5F1E8")
@@ -40,7 +41,10 @@ def wrap(text, font, size, maxw):
     if cur: lines.append(cur)
     return lines
 
-def page_header(kicker, title, subtitle=""):
+def icon_img(name, x, y, size):
+    c.drawImage(f"{ICON_DIR}/{name}.png", x, y, width=size, height=size, mask='auto')
+
+def page_header(kicker, title, subtitle="", icon=None):
     # top navy band
     c.setFillColor(NAVY); c.rect(0, PH-42, PW, 42, fill=1, stroke=0)
     c.setFillColor(GOLD); c.setFont("Helvetica-Bold", 8)
@@ -51,8 +55,11 @@ def page_header(kicker, title, subtitle=""):
     c.setFillColor(GOLDINK); c.setFont("Helvetica-Bold", 8.5)
     c.drawString(ML, y, kicker.upper())
     y -= 20
+    tx = ML
+    if icon:
+        icon_img(icon, ML, y-3, 21); tx = ML + 29
     c.setFillColor(NAVY); c.setFont("Helvetica-Bold", 19)
-    c.drawString(ML, y, title)
+    c.drawString(tx, y, title)
     y -= 8
     c.setStrokeColor(GOLD); c.setLineWidth(2); c.line(ML, y, ML+46, y)
     y -= 14
@@ -93,9 +100,12 @@ def draw_checkbox(y, text, prefix="cb"):
         y -= 12
     return y - 3
 
-def block_label(y, text):
+def block_label(y, text, icon=None):
+    tx = ML
+    if icon:
+        icon_img(icon, ML, y-3, 14); tx = ML + 20
     c.setFillColor(GOLDINK); c.setFont("Helvetica-Bold", 10)
-    c.drawString(ML, y, text)
+    c.drawString(tx, y, text)
     return y - 16
 
 def body(y, text, color=INK, size=9.5, font="Helvetica", after=8):
@@ -129,7 +139,7 @@ c.showPage()
 
 # ================= BEFORE YOU REBUILD ANYTHING (1 page) =================
 y = page_header("Before you begin", "Before you rebuild anything",
-    "Two moves before Part One: name three moments, then read the words you can stand on.")
+    "Two moves before Part One: name three moments, then read the words you can stand on.", icon="reconstruct")
 c.setFillColor(NAVY); c.setFont("Helvetica-Bold", 9)
 c.drawString(ML, y, M.THREE_MOMENTS_LABEL); y -= 11
 c.setFillColor(GREY); c.setFont("Helvetica-Oblique", 7.6)
@@ -144,8 +154,9 @@ for i in range(3):
     y -= 30
 y -= 14
 # Words to Stand On panel
+icon_img("words", ML, y-3, 14)
 c.setFillColor(GOLDINK); c.setFont("Helvetica-Bold", 10)
-c.drawString(ML, y, M.WORDS_TITLE); y -= 13
+c.drawString(ML+20, y, M.WORDS_TITLE); y -= 13
 c.setFillColor(GREY); c.setFont("Helvetica-Oblique", 8)
 for ln in wrap(M.WORDS_LEAD, "Helvetica-Oblique", 8, CW):
     c.drawString(ML, y, ln); y -= 10
@@ -170,7 +181,7 @@ c.showPage()
 # ================= QUICK CAPTURE (2 pages) =================
 for n in (1,2):
     y = page_header("Capture Log", f"Quick Capture {n}",
-        "Catch work the moment it happens, in two minutes, before the details soften. One capture per page.")
+        "Catch work the moment it happens, in two minutes, before the details soften. One capture per page.", icon="capture")
     for label,hint,lines in M.CAPTURE_FIELDS:
         y = draw_field(y, label, hint, lines, prefix=f"qc{n}")
     c.showPage()
@@ -178,7 +189,7 @@ for n in (1,2):
 # ================= FULL ENTRY (2 pages) =================
 # Page 1: clusters A, B, C
 y = page_header("Full Entries", "Full Entry, page 1 of 2",
-    "For work worth keeping in depth. Fill only the fields that apply.")
+    "For work worth keeping in depth. Fill only the fields that apply.", icon="clarify")
 for ct in ("Cluster A. When and what","Cluster B. What was yours","Cluster C. The judgment inside it"):
     fields = dict(M.FULL_ENTRY_CLUSTERS)[ct]
     y = block_label(y, ct)
@@ -206,7 +217,7 @@ y = body(y, M.CORROB_NOTE, color=GREY, size=8.3, font="Helvetica-Oblique")
 c.showPage()
 
 # ================= TRANSLATION & PROOF LINE (1 page) =================
-y = page_header("Translation & Proof Line", "Translation and Proof Line workspace",
+y = page_header("Translation & Proof Line", "Translation and Proof Line workspace", icon="proofline", subtitle=
     "Turn internal language into portable language, and build the sentence you can reuse.")
 y = block_label(y, "Translation worksheet")
 y = body(y, "Work down the eight moves and apply the ones that fit, then the protection rule.", size=9)
@@ -222,7 +233,7 @@ c.showPage()
 
 # ================= MATCH YOUR PROOF TO A ROLE (1 page) =================
 y = page_header("Match to a role", M.MATCH_TITLE,
-    "Line up what a role asks for against the proof you already hold.")
+    "Line up what a role asks for against the proof you already hold.", icon="match")
 y = body(y, M.MATCH_INTRO, size=9)
 # three-column layout
 GAP = 10
@@ -275,10 +286,11 @@ c.showPage()
 
 # ================= PUT YOUR RECORD TO WORK (1 page) =================
 y = page_header("Put your record to work", M.PUT_TO_WORK_TITLE,
-    "Carry one Proof Line into the four places people use most. Public-use check first: only what you may share, and Keep, Care, Never.")
+    "Carry one Proof Line into the four places people use most. Public-use check first: only what you may share, and Keep, Care, Never.", icon="carry")
 _ptw_lines = [1, 2, 3, 3]
+_ptw_icons = ["resume", "about", "interview", "promotion"]
 for _i,(title,purpose) in enumerate(M.PUT_TO_WORK_USES):
-    y = block_label(y, title)
+    y = block_label(y, title, icon=_ptw_icons[_i])
     y = body(y, purpose, color=GREY, size=8.6, font="Helvetica-Oblique", after=3)
     y = draw_field(y, "", "", _ptw_lines[_i], prefix="ptw")
 c.showPage()
@@ -286,11 +298,11 @@ c.showPage()
 # ================= MAINTENANCE (1 page) =================
 y = page_header("Maintenance", "Optional maintenance checklists",
     "Use whichever you will sustain, or both. Neither is required, and neither is better.")
-y = block_label(y, "Monthly sweep, about ten to fifteen minutes")
+y = block_label(y, "Monthly sweep, about ten to fifteen minutes", icon="monthly")
 for m in M.MONTHLY:
     y = draw_checkbox(y, m, prefix="mo")
 y -= 4
-y = block_label(y, "Quarterly review, about thirty minutes")
+y = block_label(y, "Quarterly review, about thirty minutes", icon="quarterly")
 for q in M.QUARTERLY:
     y = draw_checkbox(y, q, prefix="qr")
 y = body(y-2, M.MAINT_NOTE, color=GREY, size=8.5, font="Helvetica-Oblique")

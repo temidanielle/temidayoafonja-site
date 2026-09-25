@@ -4,6 +4,7 @@ Applies the Keep the Proof / Capability Formation visual identity."""
 import re, html, subprocess, sys, os
 sys.path.insert(0, os.path.dirname(__file__))
 import record_model as M
+import icons as I
 
 ROOT = "/home/user/temidayoafonja-site"
 SRC = f"{ROOT}/_build/keep-the-proof-v2/production/FINAL_MANUSCRIPT.md"
@@ -106,34 +107,42 @@ SPECIAL_H1 = {"FRONT MATTER","YOUR FIRST 60 MINUTES","CLOSING"}
 
 # ---------- marquee device injectors ----------
 def spine_device():
+    ic_cap = I.svg("capture", px=26, cls="spine-ico", label=True)
+    ic_cla = I.svg("clarify", px=26, cls="spine-ico", label=True, stroke=CREAM)
+    ic_car = I.svg("carry", px=26, cls="spine-ico", label=True)
     return f'''
 <div class="spine">
-  <div class="spine-step"><div class="spine-n">01</div><div class="spine-t">CAPTURE</div><div class="spine-q">What happened?</div></div>
+  <div class="spine-step"><div class="spine-ico-wrap">{ic_cap}</div><div class="spine-n">01</div><div class="spine-t">CAPTURE</div><div class="spine-q">What happened?</div></div>
   <div class="spine-arrow">&rarr;</div>
-  <div class="spine-step focus"><div class="spine-n">02</div><div class="spine-t">CLARIFY</div><div class="spine-q">What was yours?</div><div class="spine-tag">the heart of the system</div></div>
+  <div class="spine-step focus"><div class="spine-ico-wrap">{ic_cla}</div><div class="spine-n">02</div><div class="spine-t">CLARIFY</div><div class="spine-q">What was yours?</div><div class="spine-tag">the heart of the system</div></div>
   <div class="spine-arrow">&rarr;</div>
-  <div class="spine-step"><div class="spine-n">03</div><div class="spine-t">CARRY</div><div class="spine-q">What can you responsibly take forward?</div></div>
+  <div class="spine-step"><div class="spine-ico-wrap">{ic_car}</div><div class="spine-n">03</div><div class="spine-t">CARRY</div><div class="spine-q">What can you responsibly take forward?</div></div>
 </div>'''
 
 def kcn_device():
+    ic_keep = I.svg("keep", px=22, cls="kcn-ico", label=True, stroke=CREAM)
+    ic_care = I.svg("care", px=22, cls="kcn-ico", label=True)
+    ic_never = I.svg("never", px=22, cls="kcn-ico", label=True)
     return f'''
 <div class="kcn">
-  <div class="kcn-tier keep"><div class="kcn-h">KEEP</div><div class="kcn-b">Your own high-level recollection: what you did, decisions you made, problems you helped prevent, publicly disclosed outcomes, and anything your employer has expressly permitted you to retain.</div></div>
-  <div class="kcn-tier care"><div class="kcn-h">CARE</div><div class="kcn-b">Numbers, client or project detail, and internal context that may be sensitive. Seek permission, use only what is already public, or leave it out. When unsure, treat it as the next tier.</div></div>
-  <div class="kcn-tier never"><div class="kcn-h">NEVER</div><div class="kcn-b">Source code, credentials, security settings, customer or employee data, unreleased product detail, internal financials, privileged or legal material, trade secrets, and any file your employer owns. Never copy, forward, screenshot, download, or reconstruct these anywhere.</div></div>
+  <div class="kcn-tier keep"><div class="kcn-ico-wrap">{ic_keep}</div><div class="kcn-h">KEEP</div><div class="kcn-b">Your own high-level recollection: what you did, decisions you made, problems you helped prevent, publicly disclosed outcomes, and anything your employer has expressly permitted you to retain.</div></div>
+  <div class="kcn-tier care"><div class="kcn-ico-wrap">{ic_care}</div><div class="kcn-h">CARE</div><div class="kcn-b">Numbers, client or project detail, and internal context that may be sensitive. Seek permission, use only what is already public, or leave it out. When unsure, treat it as the next tier.</div></div>
+  <div class="kcn-tier never"><div class="kcn-ico-wrap">{ic_never}</div><div class="kcn-h">NEVER</div><div class="kcn-b">Source code, credentials, security settings, customer or employee data, unreleased product detail, internal financials, privileged or legal material, trade secrets, and any file your employer owns. Never copy, forward, screenshot, download, or reconstruct these anywhere.</div></div>
   <div class="kcn-rule">Default downward. Between Keep and Care, treat as Care. Between Care and Never, treat as Never.</div>
 </div>'''
 
 def doors_device():
+    ic_now = I.svg("capture", px=22, cls="door-ico", label=True)
+    ic_lost = I.svg("reconstruct", px=22, cls="door-ico", label="Reconstruct")
     return f'''
 <div class="doors">
-  <div class="door"><div class="door-k">Capturing now?</div><div class="door-t">Start here</div><div class="door-b">You still have your access, your systems, and your memory of recent work. You are in the best possible position, because you can capture the record while the facts are fresh. Begin with Your First 60 Minutes, then let the habit carry it forward.</div></div>
-  <div class="door"><div class="door-k">Already lost access?</div><div class="door-t">Start here</div><div class="door-b">The change has already happened, and the record you wish you had does not exist yet. You have not failed, and you did not buy the wrong guide. You simply start differently, by rebuilding from what is still yours. Turn to Part Seven, Reconstruct.</div></div>
+  <div class="door"><div class="door-ico-wrap">{ic_now}</div><div class="door-k">Capturing now?</div><div class="door-t">Start here</div><div class="door-b">You still have your access, your systems, and your memory of recent work. You are in the best possible position, because you can capture the record while the facts are fresh. Begin with Your First 60 Minutes, then let the habit carry it forward.</div></div>
+  <div class="door"><div class="door-ico-wrap">{ic_lost}</div><div class="door-k">Already lost access?</div><div class="door-t">Start here</div><div class="door-b">The change has already happened, and the record you wish you had does not exist yet. You have not failed, and you did not buy the wrong guide. You simply start differently, by rebuilding from what is still yours. Turn to Part Seven, Reconstruct.</div></div>
 </div>'''
 
 def match_device():
-    return '''
-<p class="match-instr">Pick three requirements from one posting. Match each to a Proof Line you have already written. If none fits, write the gap in the third column instead of stretching a line to cover it. A named gap is more credible than a stretched claim.</p>
+    return f'''
+<p class="match-instr"><span class="inl-ico">{I.svg("match", px=16, label=True)}</span>Pick three requirements from one posting. Match each to a Proof Line you have already written. If none fits, write the gap in the third column instead of stretching a line to cover it. A named gap is more credible than a stretched claim.</p>
 <table class="match">
   <thead><tr><th>What the role asks for</th><th>My Proof Line that shows it</th><th>The gap I will name</th></tr></thead>
   <tbody>
@@ -147,11 +156,69 @@ def match_device():
 def rebuild_subtitle_device():
     return '<p class="chapter-sub">See what you already built</p>'
 
+def cost_device():
+    rows = [
+        ("Performance review", "You describe a hard year in general words, and the review settles for them.", "You name the decisions, what changed, and who saw it."),
+        ("Promotion conversation", "Your name comes up, and no one can say exactly what you handled.", "Someone has specific sentences to repeat about your work."),
+        ("Interview", "Ten years become a few vague stories, and the offer comes in a level down.", "Each answer rests on a Proof Line you can stand behind."),
+        ("Reorganization or layoff", "Your access can end the same day, and the details go with it.", "Your own account of the work is already somewhere you control."),
+        ("Internal move", "People know you for your old job, and the new team cannot see your range.", "You can show the judgment that fits the new role."),
+        ("Returning after leave or time away", "Your best recent work feels far away and hard to name.", "Your record reminds you, and others, what you built."),
+    ]
+    body = "".join(
+        f'<tr><td class="cost-m">{esc(m)}</td><td>{esc(a)}</td><td class="cost-with">{esc(b)}</td></tr>'
+        for m, a, b in rows)
+    return f'''
+<p class="chapter-sub">Six moments where your record matters most</p>
+<table class="cost">
+  <thead><tr><th>The moment</th><th>Without a record</th><th>With a record</th></tr></thead>
+  <tbody>{body}</tbody>
+</table>
+<p class="cost-close">The work was real either way. The record decides how much of it someone else can see.</p>'''
+
+def fades_diagram_device():
+    # vector line chart, no numbers; navy = record holds, gold = memory fades
+    W, H = 520, 250
+    ox, oy = 46, 24           # plot origin offsets (left, top)
+    pw, ph = W - ox - 20, H - oy - 46
+    x0, y0 = ox, oy
+    xr, yb = ox + pw, oy + ph
+    # memory: high then fast decay to low flat (gold)
+    mem = []
+    import math
+    for i in range(41):
+        t = i / 40
+        val = math.exp(-5.5 * t)
+        mem.append((x0 + t * pw, yb - (0.12 + 0.82 * val) * ph))
+    mem_pts = " ".join(f"{x:.1f},{y:.1f}" for x, y in mem)
+    # record: rising staircase then hold (navy)
+    steps = [0.10, 0.10, 0.34, 0.34, 0.55, 0.55, 0.72, 0.72, 0.84, 0.84, 0.84, 0.84]
+    n = len(steps)
+    rec = [(x0 + (i / (n - 1)) * pw, yb - (0.06 + s * 0.84) * ph) for i, s in enumerate(steps)]
+    rec_pts = " ".join(f"{x:.1f},{y:.1f}" for x, y in rec)
+    return f'''
+<div class="fades">
+<svg viewBox="0 0 {W} {H}" class="fades-svg" role="img" aria-label="An illustration: what you remember fades quickly after the work ends, while what your record holds steps up with each entry and then holds level.">
+  <line x1="{x0}" y1="{y0}" x2="{x0}" y2="{yb}" class="axis"/>
+  <line x1="{x0}" y1="{yb}" x2="{xr}" y2="{yb}" class="axis"/>
+  <polyline points="{mem_pts}" class="line-mem"/>
+  <polyline points="{rec_pts}" class="line-rec"/>
+  <text x="{x0-6}" y="{y0+4}" class="axis-lbl axis-y" transform="rotate(-90 {x0-6} {y0+4})" text-anchor="end">Detail you can use</text>
+  <text x="{xr}" y="{yb+18}" class="axis-lbl" text-anchor="end">Time since the work &rarr;</text>
+  <text x="{rec[-1][0]-4:.0f}" y="{rec[-1][1]-8:.0f}" class="key key-rec" text-anchor="end">What your record holds</text>
+  <text x="{mem[12][0]+6:.0f}" y="{mem[12][1]-6:.0f}" class="key key-mem">What you remember</text>
+  <text x="{xr}" y="{y0+6}" class="note" text-anchor="end">An illustration of the idea, not data from a study.</text>
+</svg>
+<p class="fades-cap">The details another person needs are often the first to fade. A short entry made while the work is fresh keeps them.</p>
+</div>'''
+
 def words_panel_device():
     lines = "".join(f'<div class="wline">{html.escape(w)}</div>' for w in M.WORDS_AFFIRMATIONS)
     fill = f'<div class="wline wfill">{html.escape(M.WORDS_FILLIN)} <span class="wblank"></span></div>'
+    ico = I.svg("words", px=20, cls="words-ico", label=True)
     return f'''
 <div class="words">
+  <div class="words-ico-wrap">{ico}</div>
   {lines}
   {fill}
 </div>'''
@@ -177,6 +244,17 @@ INJECT_AFTER_H2 = {
     "Two ways in": doors_device,
     "Match your proof to a role": match_device,
     "Before You Rebuild Anything": rebuild_subtitle_device,
+    "What It Costs When the Proof Is Gone": cost_device,
+    "The Two-Minute Quick Capture": fades_diagram_device,
+}
+
+# Icons rendered inline before a matching heading (h2 or h3).
+ICON_FOR_HEADING = {
+    "Build: the Proof Line": "proofline",
+    "A resume line": "resume",
+    "A LinkedIn About sentence": "about",
+    "An interview answer, in three parts": "interview",
+    "A promotion or self-review note": "promotion",
 }
 
 # ---------- render body ----------
@@ -233,13 +311,17 @@ for idx,(kind,payload) in enumerate(blocks):
         continue
     if kind=="h2":
         flush_caption_as_para()
-        body.append(f'<h2>{esc(payload)}</h2>')
+        ic = ICON_FOR_HEADING.get(payload)
+        pre = f'<span class="h-ico">{I.svg(ic, px=19, label=True)}</span>' if ic else ''
+        body.append(f'<h2>{pre}{esc(payload)}</h2>')
         if payload in INJECT_AFTER_H2:
             body.append(INJECT_AFTER_H2[payload]())
         continue
     if kind=="h3":
         flush_caption_as_para()
-        body.append(f'<h3>{esc(payload)}</h3>')
+        ic = ICON_FOR_HEADING.get(payload)
+        pre = f'<span class="h-ico h-ico-sm">{I.svg(ic, px=17, label=True)}</span>' if ic else ''
+        body.append(f'<h3>{pre}{esc(payload)}</h3>')
         continue
     if kind=="ul":
         flush_caption_as_para()
@@ -249,9 +331,14 @@ for idx,(kind,payload) in enumerate(blocks):
             has_pause = raw.rstrip().endswith("{{pause}}")
             if has_pause:
                 raw = raw.rstrip()[:-len("{{pause}}")].rstrip()
-            cell = esc(raw)
+            lead_ico = ""
+            if raw.startswith("A monthly sweep"):
+                lead_ico = f'<span class="li-ico">{I.svg("monthly", px=15, label=True)}</span>'
+            elif raw.startswith("A quarterly review"):
+                lead_ico = f'<span class="li-ico">{I.svg("quarterly", px=15, label=True)}</span>'
+            cell = lead_ico + esc(raw)
             if has_pause:
-                cell += ' <span class="pause">Good place to pause</span>'
+                cell += f' <span class="pause">{I.svg("pause", px=12, cls="pause-ico", label=True)}Good place to pause</span>'
             items_html.append(f'<li>{cell}</li>')
         body.append(f'<ul>{"".join(items_html)}</ul>')
         continue
@@ -391,6 +478,39 @@ h3{{font-family:'DM Sans',sans-serif;font-weight:600;font-size:11.5pt;letter-spa
 .wline:last-child{{border-bottom:0;}}
 .wfill{{margin-top:.15em;}}
 .wblank{{display:inline-block;min-width:9em;border-bottom:1px solid {GOLD};}}
+
+/* Icons */
+.h-ico{{display:inline-block;vertical-align:-0.16em;margin-right:.4em;}}
+.h-ico svg{{display:inline-block;}}
+.inl-ico{{display:inline-block;vertical-align:-0.18em;margin-right:.35em;}}
+.li-ico{{display:inline-block;vertical-align:-0.14em;margin-right:.4em;}}
+.pause-ico{{display:inline-block;vertical-align:-0.12em;margin-right:.25em;}}
+.spine-ico-wrap{{margin-bottom:.35em;}}
+.spine-step.focus .spine-ico path,.spine-step.focus .spine-ico line,.spine-step.focus .spine-ico polyline,.spine-step.focus .spine-ico circle{{}}
+.kcn-ico-wrap{{flex-shrink:0;display:flex;align-items:center;}}
+.door-ico-wrap{{margin-bottom:.5em;}}
+.words-ico-wrap{{margin-bottom:.55em;}}
+
+/* Cost table */
+table.cost{{width:100%;border-collapse:collapse;margin:.4em 0 1em;page-break-inside:avoid;font-family:'DM Sans',sans-serif;}}
+table.cost th{{background:{NAVY};color:{CREAM};font-weight:600;font-size:8.6pt;letter-spacing:.04em;text-align:left;padding:.55em .7em;vertical-align:top;}}
+table.cost td{{border:0.75px solid {HAIR};padding:.55em .7em;font-size:9.5pt;line-height:1.42;color:{INK};vertical-align:top;}}
+table.cost td.cost-m{{font-weight:600;color:{NAVY};width:22%;}}
+table.cost td.cost-with{{background:#FBF3E2;}}
+.cost-close{{font-family:'Cormorant',serif;font-style:italic;font-size:13.5pt;line-height:1.4;color:{NAVY};margin:.2em 0 .6em;}}
+
+/* Fades diagram */
+.fades{{margin:.6em 0 1.2em;page-break-inside:avoid;}}
+.fades-svg{{width:100%;height:auto;}}
+.fades-svg .axis{{stroke:{INK};stroke-width:1;opacity:.5;}}
+.fades-svg .line-mem{{fill:none;stroke:{GOLD};stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;}}
+.fades-svg .line-rec{{fill:none;stroke:{NAVY};stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round;}}
+.fades-svg .axis-lbl{{font-family:'DM Sans',sans-serif;font-size:9px;fill:{INK};opacity:.7;}}
+.fades-svg .key{{font-family:'DM Sans',sans-serif;font-size:10px;font-weight:600;}}
+.fades-svg .key-rec{{fill:{NAVY};}}
+.fades-svg .key-mem{{fill:#9a7d2e;}}
+.fades-svg .note{{font-family:'DM Sans',sans-serif;font-style:italic;font-size:8px;fill:{INK};opacity:.55;}}
+.fades-cap{{font-size:9.8pt;line-height:1.5;color:{INK};margin:.1em 0 0;}}
 '''
 
 htmldoc = f'''<!doctype html><html lang="en"><head><meta charset="utf-8">

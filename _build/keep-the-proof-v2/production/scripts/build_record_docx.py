@@ -44,16 +44,30 @@ def para(text="", size=10.5, bold=False, italic=False, color=INK, after=6, befor
         r.font.color.rgb = color
     return p
 
-def h_section(num, title):
+ICON_DIR = f"{ROOT}/_build/keep-the-proof-v2/production/assets/icons"
+
+def add_icon(p, name, size=0.16):
+    """Prepend a small inline icon (with alt text) to a heading paragraph."""
+    run = p.add_run()
+    shape = run.add_picture(f"{ICON_DIR}/{name}.png", width=Inches(size))
+    alt = __import__("icons").LABELS.get(name, name)
+    docPr = shape._inline.docPr
+    docPr.set("descr", alt); docPr.set("title", alt)
+    sp = p.add_run("  "); sp.font.size = Pt(11)
+    return p
+
+def h_section(num, title, icon=None):
     p = doc.add_paragraph(); p.paragraph_format.space_before = Pt(16); p.paragraph_format.space_after = Pt(2)
     p.paragraph_format.keep_with_next = True
+    if icon: add_icon(p, icon)
     r = p.add_run(f"Section {num}.  "); r.bold = True; r.font.size = Pt(14); r.font.color.rgb = GOLD
     r2 = p.add_run(title); r2.bold = True; r2.font.size = Pt(14); r2.font.color.rgb = NAVY
     _bottom_border(p, "C9A84C", 8)
 
-def h_block(title, color=NAVY, size=11.5):
+def h_block(title, color=NAVY, size=11.5, icon=None):
     p = doc.add_paragraph(); p.paragraph_format.space_before = Pt(10); p.paragraph_format.space_after = Pt(3)
     p.paragraph_format.keep_with_next = True
+    if icon: add_icon(p, icon, size=0.14)
     r = p.add_run(title); r.bold = True; r.font.size = Pt(size); r.font.color.rgb = color
     return p
 
@@ -104,12 +118,12 @@ para(M.INTRO_SECTIONS, before=4, after=6)
 para(M.FORMATS_NOTE, italic=True, color=GREY, after=4)
 
 # ---------- Opener: Before you rebuild anything ----------
-h_block("Before you rebuild anything", color=NAVY, size=12)
+h_block("Before you rebuild anything", color=NAVY, size=12, icon="reconstruct")
 para(M.THREE_MOMENTS_LABEL, size=10, bold=True, color=NAVY, before=2, after=1)
 para(M.THREE_MOMENTS_HINT, italic=True, color=GREY, size=8.5, after=3)
 for i in range(3):
     lp = doc.add_paragraph(); lp.paragraph_format.space_before = Pt(10); _bottom_border(lp, "C9C4B7", 4)
-para(M.WORDS_TITLE, size=10, bold=True, color=NAVY, before=8, after=1)
+h_block(M.WORDS_TITLE, color=NAVY, size=10, icon="words")
 para(M.WORDS_LEAD, italic=True, color=GREY, size=8.5, after=3)
 for w in M.WORDS_AFFIRMATIONS:
     wp = para(w, size=10.5, italic=True, color=NAVY, after=3)
@@ -119,7 +133,7 @@ lp = doc.add_paragraph(); lp.paragraph_format.space_before = Pt(10); _bottom_bor
 divider()
 
 # ---------- Section 1 ----------
-h_section(1, "Capture Log")
+h_section(1, "Capture Log", icon="capture")
 para("Catch work the moment it happens, in two minutes, before the details soften. Fill one block per event; expand only the strongest into Full Entries. Duplicate the block below for each new capture.", after=6)
 for n in range(1, 4):
     h_block(f"Capture {n}", color=GOLD, size=10.5)
@@ -152,7 +166,7 @@ for n in range(1, 5):
 para(M.CORROB_NOTE, italic=True, color=GREY)
 
 # ---------- Section 4 ----------
-h_section(4, "Translation and Proof Line workspace")
+h_section(4, "Translation and Proof Line workspace", icon="proofline")
 para("Turn internal language into portable language, and build the portable sentence you can reuse.", after=6)
 h_block("Translation worksheet", color=NAVY, size=10.5)
 para("Work down the eight moves and apply the ones that fit, then the protection rule.", after=4)
@@ -173,7 +187,7 @@ for i in range(6):
     lp = doc.add_paragraph(); lp.paragraph_format.space_before = Pt(9); _bottom_border(lp, "C9C4B7", 4)
 
 # ---------- Section 5: Match Your Proof to a Role ----------
-h_section(5, M.MATCH_TITLE)
+h_section(5, M.MATCH_TITLE, icon="match")
 para(M.MATCH_INTRO, after=6)
 mtable = doc.add_table(rows=1, cols=3); mtable.style = "Table Grid"
 mhdr = mtable.rows[0].cells
@@ -198,8 +212,9 @@ para(M.MATCH_BOUNDARY, italic=True, color=GREY, before=6)
 h_section(6, M.PUT_TO_WORK_TITLE)
 para(M.PUT_TO_WORK_INTRO, after=6)
 _ptw_lines = [2, 2, 3, 4]
+_ptw_icons = ["resume", "about", "interview", "promotion"]
 for _n, (title, purpose) in enumerate(M.PUT_TO_WORK_USES):
-    h_block(title, color=GOLD, size=10.5)
+    h_block(title, color=GOLD, size=10.5, icon=_ptw_icons[_n])
     para(purpose, italic=True, color=GREY, size=9, after=2)
     for i in range(_ptw_lines[_n]):
         lp = doc.add_paragraph(); lp.paragraph_format.space_before = Pt(10); _bottom_border(lp, "C9C4B7", 4)
@@ -218,10 +233,10 @@ for _ in range(8):
 # ---------- Section 8 ----------
 h_section(8, "Optional maintenance checklists")
 para("Two ways to keep the record current: capture when something worth keeping happens, and a light periodic sweep that catches what you missed. Neither is required, and neither is better; use whichever you will sustain, or both.", after=6)
-h_block("Monthly sweep, about ten to fifteen minutes", color=NAVY, size=10.5)
+h_block("Monthly sweep, about ten to fifteen minutes", color=NAVY, size=10.5, icon="monthly")
 for m in M.MONTHLY:
     checkbox_line(m)
-h_block("Quarterly review, about thirty minutes", color=NAVY, size=10.5)
+h_block("Quarterly review, about thirty minutes", color=NAVY, size=10.5, icon="quarterly")
 for q in M.QUARTERLY:
     checkbox_line(q)
 para(M.MAINT_NOTE, italic=True, color=GREY, before=6)

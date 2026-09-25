@@ -142,6 +142,8 @@ The best parts are the least visible. The work that most deserves to be remember
 
 It decays quietly. Details do not leave all at once. They fade. The figure you were sure of becomes approximate. The reason behind a decision blurs into the decision itself. Six months on, you can still tell the story, but you can no longer defend the specifics, and specifics are what a review or a resume runs on.
 
+## What It Costs When the Proof Is Gone
+
 ## What a professional record is
 
 A professional record is a truthful, private, retrievable account of what you contributed, what judgment you exercised, what changed because of your work, and what permitted information supports it. That is the whole definition, and each word in it is doing work.

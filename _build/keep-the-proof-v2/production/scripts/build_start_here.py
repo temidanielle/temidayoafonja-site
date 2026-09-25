@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Build 01_START_HERE.pdf: the orientation piece and bundle map."""
-import subprocess, os
+import subprocess, os, sys
+sys.path.insert(0, os.path.dirname(__file__))
+import icons as I
 ROOT="/home/user/temidayoafonja-site"
 FONTS=f"file://{ROOT}/fonts"
 OUT_HTML=f"{ROOT}/_build/keep-the-proof-v2/production/renders/start_here.html"
@@ -9,7 +11,7 @@ NAVY="#112345"; CREAM="#F5F1E8"; GOLD="#C9A84C"; INK="#1c2333"; GREY="#5f636e"
 
 FILES=[
  ("READ THIS FIRST","Start Here","This file. A two-minute orientation to the system and how the pieces fit together."),
- ("LEARN &amp; BUILD","Keep the Proof: Guided Handbook","The 50-page teaching guide. It opens with Before You Rebuild Anything, teaches you how to capture your work, clarify what was yours, and carry it forward in language anyone can follow, and closes with Put Your Record to Work. A completed example sits beside every tool."),
+ ("LEARN &amp; BUILD","Keep the Proof: Guided Handbook","The 52-page teaching guide. It opens with Before You Rebuild Anything, teaches you how to capture your work, clarify what was yours, and carry it forward in language anyone can follow, and closes with Put Your Record to Work. A completed example sits beside every tool."),
  ("KEEP USING","Your Professional Record","Your long-term working document, in an editable, copyable format you keep and control (Word, Google Docs, or Pages). Make one personal copy, keep it in a personally controlled account, and add to it over time. This is where the record lives for years."),
  ("PREFER PRINT OR A FORM?","Printable &amp; Fillable Tools","Eleven form pages holding the same fields as your Professional Record, for anyone who would rather write by hand or type into a form. Use whichever you will keep up. You do not need to complete both."),
 ]
@@ -43,6 +45,8 @@ body{{font-family:'DM Sans',sans-serif;color:{INK};font-size:10.4pt;line-height:
 .fb{{font-size:9.4pt;line-height:1.4;color:{INK};}}
 .begin{{margin-top:.3em;}}
 .foot{{font-size:7.9pt;color:{GREY};line-height:1.36;margin-top:.35em;border-top:1px solid #e4dccb;padding-top:.35em;}}
+.ib{{white-space:nowrap;}}
+.ib-ico{{vertical-align:-0.12em;margin-right:.12em;}}
 </style></head><body>
 <div class="hero">
   <div class="mark">KEEP THE PROOF</div>
@@ -55,7 +59,7 @@ body{{font-family:'DM Sans',sans-serif;color:{INK};font-size:10.4pt;line-height:
   <div class="sh">What is in your bundle</div>
   {cards}
   <div class="begin"><div class="sh">How to begin</div>
-  <p>Open the <strong>Guided Handbook</strong> and start with <strong>Your First 60 Minutes</strong>. In one focused session you will capture a few pieces of work, clarify one in depth, and write your first portable sentence. It takes about an hour of focused time. Sixty minutes is a guide. Take it in one sitting or several, stopping after any step and picking up where you left off. If your access to past work has already closed, use the reconstruct version of that session in Part Seven. You start differently, and you are not behind. Then set up <strong>Your Professional Record</strong> as the place the record lives from here on.</p></div>
+  <p>Open the <strong>Guided Handbook</strong> and start with <strong>Your First 60 Minutes</strong>. In one focused session you will <span class="ib">{I.svg("capture", px=13, cls="ib-ico", label=True)}</span>capture a few pieces of work, <span class="ib">{I.svg("clarify", px=13, cls="ib-ico", label=True)}</span>clarify one in depth, and <span class="ib">{I.svg("proofline", px=13, cls="ib-ico", label=True)}</span>write your first portable sentence. It takes about an hour of focused time. Sixty minutes is a guide. Take it in one sitting or several, stopping after any step and picking up where you left off. If your access to past work has already closed, <span class="ib">{I.svg("reconstruct", px=13, cls="ib-ico", label=True)}</span>use the reconstruct version of that session in Part Seven. You start differently, and you are not behind. Then set up <strong>Your Professional Record</strong> as the place the record lives from here on.</p></div>
   <div class="foot">Keep the Proof is an educational guide to keeping a private, permitted record of your own work. It is not legal advice, and it cannot interpret your specific employment agreement, your confidentiality obligations, your employer&rsquo;s policies, or the laws that apply where you work. Where permission is unclear, leave the information out and ask someone qualified.<br>Copyright &copy; 2026 Temidayo Afonja &middot; The Density Group &middot; temidayoafonja.com &middot; Licensed for the personal use of the individual purchaser.</div>
 </div>
 </body></html>'''
