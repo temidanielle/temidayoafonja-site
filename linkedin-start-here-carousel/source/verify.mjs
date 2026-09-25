@@ -35,7 +35,7 @@ for (const f of files) {
     { waitUntil: 'load' });
   await page.evaluate(() => document.fonts.ready);
   slides.push(await page.evaluate(({ I, P, W, H }) => {
-    const out = { text: [], sizes: [], offGrid: [], outside: [], marks: [],
+    const out = { text: [], sizes: [], offGrid: [], outside: [], marks: [], boxes: [],
                   ring: 0, images: 0, size: null };
     const svg = document.querySelector('svg');
     out.size = [svg.getAttribute('width'), svg.getAttribute('height')].join('x');
@@ -50,9 +50,16 @@ for (const f of files) {
       if (onMargin && Math.abs(pen - (I + P)) > 1)
         out.offGrid.push(`${el.textContent.slice(0, 24)} at x=${pen}`);
       if (cls && !/^counter/.test(cls)) out.marks.push(`${cls}@${el.getAttribute('y')}`);
-      const b = el.getBBox();
+      // getBoundingClientRect, not getBBox: getBBox reports the element's own
+      // user space and ignores ancestor transforms, so a element inside a
+      // translated group and one outside it came back in different coordinate
+      // systems. The SVG is rendered 1:1 in a viewport of its own size, so
+      // client coordinates are slide coordinates.
+      const b = el.getBoundingClientRect();
+      out.boxes.push({ x: b.x, y: b.y, w: b.width, h: b.height,
+                       t: el.textContent.trim().slice(0, 30) });
       if (b.x < I + 6 || b.x + b.width > W - I - 6 || b.y < I || b.y + b.height > H - I)
-        out.outside.push(el.textContent.slice(0, 28));
+        out.outside.push(`${el.textContent.trim().slice(0, 26)} [${Math.round(b.x)},${Math.round(b.y)} ${Math.round(b.width)}x${Math.round(b.height)}]`);
     }
     for (const c of svg.querySelectorAll('circle'))
       if (c.getAttribute('stroke') && +c.getAttribute('r') < 40) out.ring++;
@@ -158,6 +165,50 @@ if (off.length) problems.push(`off the margin: ${off.join('; ')}`);
 if (out.length) problems.push(`ink crossing the card edge: ${out.join('; ')}`);
 if (!off.length && !out.length)
   notes.push('every left aligned element sits on the margin, and no ink crosses the card edge');
+
+/* ── nothing sits on top of anything else ────────────────────────────────
+   Added after the signature was moved up the close slide and landed on the
+   pagination. Both elements were inside the card and on the margin, so every
+   check that existed passed while the two were printed over each other. Boxes
+   are compared pairwise; a small overlap is tolerated because glyph boxes of
+   adjacent lines in one block can touch. */
+{
+  const hits = [];
+  slides.forEach((s, i) => {
+    for (let a = 0; a < s.boxes.length; a++)
+      for (let b = a + 1; b < s.boxes.length; b++) {
+        const p = s.boxes[a], q = s.boxes[b];
+        const ox = Math.min(p.x + p.w, q.x + q.w) - Math.max(p.x, q.x);
+        const oy = Math.min(p.y + p.h, q.y + q.h) - Math.max(p.y, q.y);
+        if (ox > 4 && oy > 4)
+          hits.push(`slide ${i + 1}: "${p.t}" over "${q.t}" by ${Math.round(ox)}x${Math.round(oy)}px`);
+      }
+  });
+  if (hits.length) problems.push(`text printed over text: ${hits.join('; ')}`);
+  else notes.push('no text element overlaps another on any slide');
+}
+
+/* ── US English, and the paragraph that was removed ──────────────────────── */
+{
+  // A generic "ends in ise" rule flags precise, concise and wise, so this is
+  // an explicit list of British forms whose US spelling differs.
+  const BRITISH = ['colour', 'behaviour', 'favour', 'honour', 'labour', 'neighbour',
+    'centre', 'metre', 'theatre', 'fibre', 'licence', 'defence', 'offence',
+    'organise', 'organised', 'organisation', 'recognise', 'recognised',
+    'realise', 'realised', 'prioritise', 'prioritised', 'specialise', 'specialised',
+    'analyse', 'analysed', 'emphasise', 'emphasised', 'apologise',
+    'travelled', 'travelling', 'labelled', 'labelling', 'modelling', 'cancelled',
+    'programme', 'whilst', 'amongst', 'learnt', 'spelt', 'practise'];
+  const found = BRITISH.filter(b => new RegExp(`\\b${b}\\b`, 'i').test(all));
+  if (found.length) problems.push(`British spelling in the rendered text: ${found.join(', ')}`);
+  else notes.push(`US English: none of the ${BRITISH.length} British forms checked appear`);
+
+  const gone = C._removed_from_close;
+  if (gone) {
+    if (all.includes(gone)) problems.push(`the removed paragraph is still rendered: "${gone}"`);
+    else notes.push('the paragraph removed from the close slide does not appear anywhere');
+  }
+}
 
 /* ── the PDF ──────────────────────────────────────────────────────────── */
 const pdf = join(ROOT, 'LinkedIn_Start_Here_Capability_Formation_V3.pdf');

@@ -79,10 +79,7 @@
         "Your experience does not all travel.",
         "It does not all disappear either."
       ],
-      "body": [
-        "On LinkedIn, I write about what travels, what does not, what you can prove, and what you must relearn when the context changes."
-      ],
-      "closing": "Follow for clear ways to decide what still counts before a career pivot or internal move.",
+      "closing": "Follow for clear ways to decide your next move and prove you’re ready for it.",
       "footer": "Temidayo Afonja · Capability Formation"
     }
   ],
@@ -98,5 +95,6 @@
     "muted": "#5D6676",
     "line": "#DCD6C8",
     "bright": "#F2C44C"
-  }
+  },
+  "_removed_from_close": "On LinkedIn, I write about what travels, what does not, what you can prove, and what you must relearn when the context changes."
 }

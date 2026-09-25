@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350"
-     viewBox="0 0 1080 1350" role="img" aria-label="Your experience does not all travel. It does not all disappear either. On LinkedIn, I write about what travels, what does not, what you can prove, and what you must relearn when the context changes. Follow for clear ways to decide what still counts before a career pivot or internal move. Temidayo Afonja · Capability Formation">
+     viewBox="0 0 1080 1350" role="img" aria-label="Your experience does not all travel. It does not all disappear either. Follow for clear ways to decide your next move and prove you’re ready for it. Temidayo Afonja · Capability Formation">
   <title>Slide 8 of 8</title>
   <defs><style>
       @font-face { font-family:'DM Sans'; font-weight:400; font-style:normal;
@@ -30,12 +30,11 @@
   <rect width="1080" height="1350" fill="#F5F1E8"/>
   <rect x="54" y="54" width="972" height="1242" rx="14"
         fill="#112345"/>
-  <g transform="translate(0,109)">
-  <text class="sayUp" x="110" y="304"><tspan x="110">Your experience does not all travel.</tspan></text>
-  <text class="sayUp" x="110" y="380"><tspan x="110">It does not all disappear either.</tspan></text>
-  <rect x="110" y="460" width="132" height="3" fill="#C9A84C" fill-opacity="1"/>
-  <text class="bodyUp" x="110" y="552"><tspan x="110">On LinkedIn, I write about what travels, what does not, </tspan><tspan x="110" dy="50">what you can prove, and what you must relearn when </tspan><tspan x="110" dy="50">the context changes.</tspan></text>
-  <text class="closing" x="110" y="748"><tspan x="110">Follow for clear ways to decide what still counts </tspan><tspan x="110" dy="54">before a career pivot or internal move.</tspan></text>
+  <g transform="translate(0,474)">
+  <text class="sayUp" x="110" y="0"><tspan x="110">Your experience does not all travel.</tspan></text>
+  <text class="sayUp" x="110" y="84"><tspan x="110">It does not all disappear either.</tspan></text>
+  <rect x="110" y="174" width="132" height="3" fill="#C9A84C" fill-opacity="1"/>
+  <text class="closing" x="110" y="290"><tspan x="110">Follow for clear ways to decide your next move </tspan><tspan x="110" dy="56">and prove you’re ready for it.</tspan></text>
   </g>
   <text class="sig" x="110" y="1168"><tspan x="110">Temidayo Afonja · Capability Formation</tspan></text>
   <circle cx="139" cy="1224" r="29" fill="none" stroke="#C9A84C" stroke-width="2"/>

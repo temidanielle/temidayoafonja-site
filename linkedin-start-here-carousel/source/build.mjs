@@ -170,29 +170,39 @@ async function question(s, n) {
     `${s.number}. ${s.headline} ${[...s.body, s.supporting || ''].join(' ')}`.trim(), n, false);
 }
 
-/* ── close, navy card ─────────────────────────────────────────────────── */
+/* ── close, navy card ─────────────────────────────────────────────────────
+   The paragraph that used to sit between the headline and the call to action
+   was removed, so the slide carries about half the text it did. It is set on
+   wider intervals rather than the old ones with a gap where the paragraph
+   was: the headline, a rule, and the one line that asks for something, spaced
+   so the card reads as composed rather than as a slide with a hole in it. */
 async function close(s, n) {
   const w = await wrapAll(page, t, [
     ...s.headlineLines.map((text, i) => ({ k: `h${i}`, text, cls: 'sayUp', width: CW })),
-    { k: 'b', text: s.body[0], cls: 'bodyUp', width: CW },
     { k: 'c', text: s.closing, cls: 'closing', width: CW },
   ]);
   const o = [];
-  let y = I + 250;
+  let y = 0;
+  const HEAD_LEAD = 72, HEAD_GAP = 84, RULE_GAP = 116, LEAD = 56;
+
   s.headlineLines.forEach((_, i) => {
-    o.push(block('sayUp', X, y, w[`h${i}`], 68));
-    y += (w[`h${i}`].length - 1) * 68 + 76;
+    o.push(block('sayUp', X, y, w[`h${i}`], HEAD_LEAD));
+    y += (w[`h${i}`].length - 1) * HEAD_LEAD + HEAD_GAP;
   });
-  y += 4;
+  y += 6;
   o.push(rule(X, y, 132, t.gold, 3));
-  y += 92;
-  o.push(block('bodyUp', X, y, w.b, 50));
-  y += (w.b.length - 1) * 50 + 96;
-  o.push(block('closing', X, y, w.c, 54));
-  y += (w.c.length - 1) * 54;
-  return shell(settle(o, y, 0.30) +
+  y += RULE_GAP;
+  o.push(block('closing', X, y, w.c, LEAD));
+  y += (w.c.length - 1) * LEAD;
+
+  // Centre the whole block in the card, above the signature, rather than
+  // hanging it from a fixed top. With the paragraph gone a fixed top left the
+  // composition riding high with a third of the card empty beneath it.
+  const top = CARD.y + P, bottom = H - I - 200;   // clear of the signature below
+  const first = Math.round(top + (bottom - top - y) / 2 + 58 * 0.76);
+  return shell(`  <g transform="translate(0,${first})">\n${o.join('\n')}\n  </g>` +
     `\n${block('sig', X, H - I - 128, [s.footer], 0)}`,
-    [...s.headlineLines, ...s.body, s.closing, s.footer].join(' '), n, true);
+    [...s.headlineLines, s.closing, s.footer].join(' '), n, true);
 }
 
 /* ── render ───────────────────────────────────────────────────────────── */
