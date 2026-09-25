@@ -7,14 +7,16 @@ import record_model as M
 import icons as I
 
 ROOT = "/home/user/temidayoafonja-site"
-# Table of contents entries: (display label, unique search string on its page, indent).
-# Search keys must be unique in the rendered PDF and must NOT also appear on the
-# Contents page (the labels are printed there), so any key whose label matches its
-# heading verbatim uses a distinctive phrase from that page's body instead.
+# Table of contents entries: (display label, heading search string, indent).
+# computetoc locates each entry by its actual section HEADING (not a body phrase),
+# scanning pages in document order from a cursor that starts after the Contents
+# page. Because entries are in document order, the ordered scan skips the Contents
+# page (where the labels are printed) and any earlier body reference to the same
+# words, landing on the page where the heading itself is rendered.
 TOC_ENTRIES = [
-    ("Before You Rebuild Anything", "the first thing to go is often the way", False),
+    ("Before You Rebuild Anything", "Before You Rebuild Anything", False),
     ("Part One: Understand the Record", "PART ONE", False),
-    ("What It Costs When the Proof Is Gone", "Six moments where your record matters most", True),
+    ("What It Costs When the Proof Is Gone", "What It Costs When the Proof Is Gone", True),
     ("Your First 60 Minutes", "YOUR FIRST 60 MINUTES", False),
     ("Part Two: Capture", "PART TWO", False),
     ("Part Three: Permission and Protection", "PART THREE", False),
@@ -23,8 +25,8 @@ TOC_ENTRIES = [
     ("Part Six: Worked Examples", "PART SIX", False),
     ("Part Seven: Reconstruct", "PART SEVEN", False),
     ("Part Eight: Keep It Current, and Use It", "PART EIGHT", False),
-    ("Match Your Proof to a Role", "This page translates your evidence for a specific role", True),
-    ("Put Your Record to Work", "Your record is where the true material lives", True),
+    ("Match Your Proof to a Role", "Match Your Proof to a Role", True),
+    ("Put Your Record to Work", "Put Your Record to Work", True),
     ("Part Nine: The Record You Own", "PART NINE", False),
     ("Closing", "CLOSING", False),
 ]
@@ -46,12 +48,18 @@ if len(sys.argv) > 1 and sys.argv[1] == "computetoc":
     _nows = re.compile(r"\s+")
     # de-space page text so letter-spaced divider kickers still match
     _per = [_nows.sub("", _d[i].get_textpage().get_text_range()) for i in range(len(_d))]
+    # Locate the Contents page so the scan can begin after it: its printed labels
+    # would otherwise match every entry on page 3. Fall back to index 2 (page 3).
+    _contents_idx = next((i for i in range(len(_d))
+                          if "Contents" in _d[i].get_textpage().get_text_range()[:40]), 2)
     _pages = {}
+    _cursor = _contents_idx + 1  # first page after Contents
     for _label, _key, _indent in TOC_ENTRIES:
         _k = _nows.sub("", _key)
-        for _i, _t in enumerate(_per):
-            if _k in _t:
+        for _i in range(_cursor, len(_per)):
+            if _k in _per[_i]:
                 _pages[_key] = _i + 1
+                _cursor = _i  # next entry may share this page; do not advance past it
                 break
     json.dump(_pages, open(_TOC_JSON, "w"))
     print("toc pages:", _pages)
