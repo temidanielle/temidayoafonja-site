@@ -110,7 +110,7 @@ The best parts are the least visible. The work that most deserves to be remember
 
 It decays quietly. Details do not leave all at once. They fade. The figure you were sure of becomes approximate. The reason behind a decision blurs into the decision itself. Six months on, you can still tell the story, but you can no longer defend the specifics, and specifics are what a review or a resume runs on.
 
-## What a professional record is, and is not
+## What a professional record is
 
 A professional record is a truthful, private, retrievable account of what you contributed, what judgment you exercised, what changed because of your work, and what permitted information supports it. That is the whole definition, and each word in it is doing work.
 
@@ -406,7 +406,7 @@ A great deal of valuable work produces no tidy number. Coordination, judgment, c
 
 Describe the before and the after. When there is no metric, there is almost always a contrast. What was true before your work, and what was true after? "The handoff between the two teams kept failing; after I redesigned it, work stopped falling through the gap" is credible with no number in it, because a reader can picture both states.
 
-Name the specific consequence. Vague improvement does not persuade. Specific improvement does. Not "made things better," but "the weekly report that used to take two people a full day now takes one person an hour." A concrete, honest particular is more persuasive than a round number you cannot defend.
+Name the specific consequence. Vague improvement does not persuade. Specific improvement does. Compare "made things better" with "the weekly report that used to take two people a full day now takes one person an hour." A concrete, honest particular is more persuasive than a round number you cannot defend.
 
 Never invent the number. If you do not have an accurate figure, do not manufacture one. An invented metric is the fastest way to lose a reader's trust, because the first careful question exposes it. A well-described qualitative result is stronger than a fabricated quantitative one. Accuracy is the entire value of this record.
 
@@ -428,7 +428,7 @@ The risk forming: During a routine review I found that a group of accounts had b
 
 Some of the most common senior work is the hardest to record, because it never got a name. You absorbed a departed manager's responsibilities. You ran a function the org chart still lists under someone else. You made director-level calls with a manager's title. The work was real. The title did not move, and so nothing wrote it down.
 
-Say the work in ordinary language first, before reaching for any label. Not "expanded my span of control," but "when my manager left, I took over the team's planning, the budget conversations, and the two hardest client relationships, and no one backfilled the role for nine months." A reader understands that immediately.
+Say the work in ordinary language first, before reaching for any label. Compare "expanded my span of control" with "when my manager left, I took over the team's planning, the budget conversations, and the two hardest client relationships, and no one backfilled the role for nine months." A reader understands that immediately.
 
 Then give it its true size and name the judgment inside it. Scope is what makes uncredited work legible: how many people, how much budget, how many functions, over how long, and what you decided that a person at your titled level would not normally decide. You are not claiming a title you did not hold. You are recording, accurately, the scope you carried, so that it counts as what it was.
 
@@ -463,7 +463,7 @@ Most entries need one of eight moves. Name to function: "Ran Project Northwind" 
 
 A ninth line is different, because it keeps you safe rather than clear. Sensitive to permitted: turn sensitive detail into a permitted, high-level description, and never use translation to smuggle restricted information out in disguise. If the only accurate version would expose something you may not keep, the correct move is to omit it, not to reword it.
 
-What translation is, and is not. This is general translation: plain language an outsider can follow, with your scope and context kept attached. It is not a judgment about whether your experience fits a particular role, industry, or employer. Saying your work clearly does not, by itself, make it portable to a chosen destination, and being portable does not guarantee that a given employer will value it. Those are separate questions, and the last page of this part is where this guide hands them off.
+What translation is. This is general translation: plain language an outsider can follow, with your scope and context kept attached. It is not a judgment about whether your experience fits a particular role, industry, or employer. Saying your work clearly does not, by itself, make it portable to a chosen destination, and being portable does not guarantee that a given employer will value it. Those are separate questions, and the last page of this part is where this guide hands them off.
 
 ## Build: the Proof Line
 
