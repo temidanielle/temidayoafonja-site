@@ -79,6 +79,27 @@ def _bottom_border(p, hexcolor="BBBBBB", sz=6):
     bottom.set(qn('w:space'), '2'); bottom.set(qn('w:color'), hexcolor)
     pbdr.append(bottom); pPr.append(pbdr)
 
+def shade_cell(cell, fill):
+    tcPr = cell._tc.get_or_add_tcPr()
+    shd = OxmlElement('w:shd'); shd.set(qn('w:val'), 'clear')
+    shd.set(qn('w:color'), 'auto'); shd.set(qn('w:fill'), fill)
+    tcPr.append(shd)
+
+def cell_borders(cell, edges):
+    # edges: {'left': (size, color), ...}; unspecified edges set to nil
+    tcPr = cell._tc.get_or_add_tcPr()
+    tb = OxmlElement('w:tcBorders')
+    for edge in ("top", "left", "bottom", "right"):
+        el = OxmlElement('w:' + edge)
+        if edge in edges:
+            sz, col = edges[edge]
+            el.set(qn('w:val'), 'single'); el.set(qn('w:sz'), str(sz))
+            el.set(qn('w:space'), '0'); el.set(qn('w:color'), col)
+        else:
+            el.set(qn('w:val'), 'nil')
+        tb.append(el)
+    tcPr.append(tb)
+
 def field(label, hint, lines):
     p = doc.add_paragraph(); p.paragraph_format.space_before = Pt(6); p.paragraph_format.space_after = Pt(1)
     p.paragraph_format.keep_with_next = True
@@ -123,13 +144,27 @@ para(M.THREE_MOMENTS_LABEL, size=10, bold=True, color=NAVY, before=2, after=1)
 para(M.THREE_MOMENTS_HINT, italic=True, color=GREY, size=8.5, after=3)
 for i in range(3):
     lp = doc.add_paragraph(); lp.paragraph_format.space_before = Pt(10); _bottom_border(lp, "C9C4B7", 4)
-h_block(M.WORDS_TITLE, color=NAVY, size=10, icon="words")
-para(M.WORDS_LEAD, italic=True, color=GREY, size=8.5, after=3)
+# Words to Stand On, as a calm cream panel with a gold left border (matching the handbook)
+para("", after=2)
+wtab = doc.add_table(rows=1, cols=1)
+wcell = wtab.rows[0].cells[0]
+shade_cell(wcell, "F5F1E8")
+cell_borders(wcell, {"left": (24, "C9A84C"), "top": (4, "E0D7C4"), "bottom": (4, "E0D7C4"), "right": (4, "E0D7C4")})
+# replace the cell's default empty paragraph
+wcell.paragraphs[0]._p.getparent().remove(wcell.paragraphs[0]._p)
+def _cellp(sb=0, sa=3, indent=0.10):
+    p = wcell.add_paragraph()
+    p.paragraph_format.space_before = Pt(sb); p.paragraph_format.space_after = Pt(sa)
+    p.paragraph_format.left_indent = Inches(indent); p.paragraph_format.right_indent = Inches(0.08)
+    return p
+_lp = _cellp(6, 5); add_icon(_lp, "words", size=0.14)
+_r = _lp.add_run(M.WORDS_TITLE.upper()); _r.bold = True; _r.font.size = Pt(9); _r.font.color.rgb = GOLD
+_r.font.name = "Calibri"
+_ld = _cellp(0, 6); _rl = _ld.add_run(M.WORDS_LEAD); _rl.italic = True; _rl.font.size = Pt(8.5); _rl.font.color.rgb = GREY
 for w in M.WORDS_AFFIRMATIONS:
-    wp = para(w, size=10.5, italic=True, color=NAVY, after=3)
-    wp.paragraph_format.left_indent = Inches(0.18)
-para(M.WORDS_FILLIN, size=10, bold=True, color=NAVY, before=3, after=1)
-lp = doc.add_paragraph(); lp.paragraph_format.space_before = Pt(10); _bottom_border(lp, "C9C4B7", 4)
+    _wp = _cellp(0, 5); _rw = _wp.add_run(w); _rw.italic = True; _rw.font.size = Pt(12); _rw.font.name = "Cambria"; _rw.font.color.rgb = NAVY
+_ff = _cellp(4, 2); _rf = _ff.add_run(M.WORDS_FILLIN); _rf.bold = True; _rf.font.size = Pt(10); _rf.font.color.rgb = NAVY
+_fl = _cellp(2, 6); _bottom_border(_fl, "C9A84C", 4)
 divider()
 
 # ---------- Section 1 ----------
