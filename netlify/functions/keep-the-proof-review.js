@@ -62,8 +62,45 @@ const ALLOWED = {
                      "Yes, with my first name and last initial",
                      "No, this is private feedback"],
   used_for: ["Performance review", "Promotion", "Interview", "Resume",
-             "Internal move", "Not yet", "Other"]
+             "Internal move", "Not yet", "Other"],
+  work_field: ["Education", "Healthcare and life sciences", "Technology",
+               "Financial services", "Consulting and professional services",
+               "Government and nonprofit", "Other"],
+  years_working: ["Under 5", "5 to 9", "10 to 19", "20 or more"]
 };
+
+// Builds the credit line for a quote, so the owner never has to assemble one by
+// hand and never has to remember which form of the name each permission allows.
+//
+//   Full name permission:  name and title, or name and field when no title was
+//                          given, or the name alone when neither was.
+//   Initial permission:    first name, last initial, and field when one was
+//                          given.
+//
+// "Other" is a real answer to the field question and is stored as one, but it
+// credits nobody, so it is left out of the line rather than producing a credit
+// reading "Jane S., Other".
+function attributionLine(permission, name, title, field) {
+  if (permission.indexOf("Yes") !== 0) return "";
+  const full = name.trim();
+  if (!full) return "";
+  const usableField = field && field !== "Other" ? field : "";
+
+  if (permission === "Yes, with my name and title") {
+    if (title) return full + ", " + title;
+    if (usableField) return full + ", " + usableField;
+    return full;
+  }
+
+  // First name and last initial. A single-word name has no initial to add.
+  const parts = full.split(/\s+/).filter(Boolean);
+  let short = parts[0];
+  if (parts.length > 1) {
+    const last = parts[parts.length - 1];
+    short = parts[0] + " " + last.charAt(0).toUpperCase() + ".";
+  }
+  return usableField ? short + ", " + usableField : short;
+}
 
 function str(v, max) {
   if (typeof v !== "string") return "";
@@ -139,10 +176,8 @@ exports.handler = async function (event) {
     return { statusCode: 400, headers: { ...JSON_HEADERS, ...CORS },
              body: JSON.stringify({ error: "contact_name_required" }) };
   }
-  if (quoteIsYes && wantsFullName && !contactTitle) {
-    return { statusCode: 400, headers: { ...JSON_HEADERS, ...CORS },
-             body: JSON.stringify({ error: "contact_title_required" }) };
-  }
+  // The job title is deliberately optional. A quote without one is credited
+  // with the reader's field instead, which attributionLine handles.
   if ((quoteIsYes || optIn) && !validEmail(contactEmail)) {
     return { statusCode: 400, headers: { ...JSON_HEADERS, ...CORS },
              body: JSON.stringify({ error: "valid_email_required" }) };
@@ -151,6 +186,9 @@ exports.handler = async function (event) {
   const usedFor = Array.isArray(p.used_for)
     ? p.used_for.map((v) => oneOf(v, ALLOWED.used_for)).filter(Boolean).slice(0, ALLOWED.used_for.length)
     : [];
+
+  const workField = oneOf(p.work_field, ALLOWED.work_field);
+  const yearsWorking = oneOf(p.years_working, ALLOWED.years_working);
 
   const now = new Date();
   const record = {
@@ -162,6 +200,8 @@ exports.handler = async function (event) {
     progress:             oneOf(p.progress, ALLOWED.progress),
     used_for:             usedFor.join(", "),
     would_share:          oneOf(p.would_share, ALLOWED.would_share),
+    work_field:           workField,
+    years_working:        yearsWorking,
     most_useful:          str(p.most_useful, CAP.most_useful),
     confusing_or_missing: str(p.confusing_or_missing, CAP.confusing_or_missing),
     tell_a_colleague:     str(p.tell_a_colleague, CAP.tell_a_colleague),
@@ -170,6 +210,13 @@ exports.handler = async function (event) {
     contact_name:         (quoteIsYes || optIn) ? contactName : "",
     contact_title:        (quoteIsYes && wantsFullName) ? contactTitle : "",
     contact_email:        (quoteIsYes || optIn) ? contactEmail : "",
+    // The credit line, ready to paste. Empty unless a quote was permitted.
+    attribution:          attributionLine(
+                            quotePermission,
+                            quoteIsYes ? contactName : "",
+                            wantsFullName ? contactTitle : "",
+                            workField
+                          ),
     proof_line:           str(p.proof_line, CAP.proof_line),
     email_optin:          optIn ? "true" : "false",
     // A gift review has to carry a disclosure wherever it is published. Marking

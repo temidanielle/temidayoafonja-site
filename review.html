@@ -218,6 +218,29 @@
         </div>
       </fieldset>
 
+      <fieldset class="rev-q">
+        <legend>What field do you work in?</legend>
+        <div class="rev-opts">
+          <label class="rev-opt"><input type="radio" name="work_field" value="Education"><span>Education</span></label>
+          <label class="rev-opt"><input type="radio" name="work_field" value="Healthcare and life sciences"><span>Healthcare and life sciences</span></label>
+          <label class="rev-opt"><input type="radio" name="work_field" value="Technology"><span>Technology</span></label>
+          <label class="rev-opt"><input type="radio" name="work_field" value="Financial services"><span>Financial services</span></label>
+          <label class="rev-opt"><input type="radio" name="work_field" value="Consulting and professional services"><span>Consulting and professional services</span></label>
+          <label class="rev-opt"><input type="radio" name="work_field" value="Government and nonprofit"><span>Government and nonprofit</span></label>
+          <label class="rev-opt"><input type="radio" name="work_field" value="Other"><span>Other</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="rev-q">
+        <legend>How many years have you been working?</legend>
+        <div class="rev-opts rev-opts--wrap">
+          <label class="rev-opt"><input type="radio" name="years_working" value="Under 5"><span>Under 5</span></label>
+          <label class="rev-opt"><input type="radio" name="years_working" value="5 to 9"><span>5 to 9</span></label>
+          <label class="rev-opt"><input type="radio" name="years_working" value="10 to 19"><span>10 to 19</span></label>
+          <label class="rev-opt"><input type="radio" name="years_working" value="20 or more"><span>20 or more</span></label>
+        </div>
+      </fieldset>
+
       <div class="rev-more">
         <h2>Want to say more?</h2>
         <p class="rev-more-note">Type, or tap the microphone on your phone's keyboard to speak your answer.</p>
@@ -257,8 +280,9 @@
           <input type="text" id="revName" name="contact_name" maxlength="120" autocomplete="name">
         </div>
         <div class="rev-field" id="revTitleField">
-          <label for="revTitle">Your job title</label>
+          <label for="revTitle">Your job title, optional</label>
           <input type="text" id="revTitle" name="contact_title" maxlength="160" autocomplete="organization-title">
+          <p class="rev-note">Left blank, a quote is credited with your field instead.</p>
         </div>
         <div class="rev-field">
           <label for="revEmail">Your email</label>
@@ -419,9 +443,11 @@
     var yes = quoteIsYes();
     var optin = optinEl.checked;
 
-    if (yes) {
-      if (!nameEl.value.trim()) return fail("Please add your name so I can check the quote with you.", nameEl);
-      if (wantsFullName() && !titleEl.value.trim()) return fail("Please add your job title.", titleEl);
+    /* Name and email are required whenever a quote is permitted. The job title
+       is optional: a quote left without one is credited with the reader's field
+       instead. */
+    if (yes && !nameEl.value.trim()) {
+      return fail("Please add your name so I can check the quote with you.", nameEl);
     }
     if ((yes || optin) && !validEmail(emailEl.value.trim())) {
       return fail("Please add an email address I can reach you at.", emailEl);
@@ -445,6 +471,8 @@
       progress:             pick("progress"),
       used_for:             used,
       would_share:          pick("would_share"),
+      work_field:           pick("work_field"),
+      years_working:        pick("years_working"),
       most_useful:          document.getElementById("mostUseful").value.trim(),
       confusing_or_missing: document.getElementById("confusing").value.trim(),
       tell_a_colleague:     document.getElementById("colleague").value.trim(),
