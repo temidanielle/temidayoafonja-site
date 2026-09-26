@@ -108,7 +108,7 @@ Read these slowly, out loud if you can, before each session with your record. Ev
 
 ### Why these words work
 
-Encouragement fades when the week gets hard. Statements you can check against your own record hold. Each time you add an entry to your Professional Record, you are giving these words more evidence to stand on.
+Encouragement fades when the week gets hard. Statements you can check against your own record hold. Each time you add an entry to your Professional Record, you are giving these words more evidence.
 
 If you catch yourself saying you are starting over, try a different sentence: I am starting from what I have built.
 

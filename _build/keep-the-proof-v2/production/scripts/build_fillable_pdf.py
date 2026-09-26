@@ -59,9 +59,10 @@ def page_header(kicker, title, subtitle="", icon=None):
     c.setFillColor(CREAM); c.setFont("Helvetica", 7.5)
     c.drawRightString(PW-MR, PH-19, "PRINTABLE & FILLABLE TOOLS")
     y = PH - 72
-    c.setFillColor(GOLDINK); c.setFont("Helvetica-Bold", 8.5)
-    c.drawString(ML, y, kicker.upper())
-    y -= 20
+    if kicker:
+        c.setFillColor(GOLDINK); c.setFont("Helvetica-Bold", 8.5)
+        c.drawString(ML, y, kicker.upper())
+        y -= 20
     tx = ML
     if icon:
         icon_img(icon, ML, y-3, 21); tx = ML + 29
@@ -186,61 +187,82 @@ c.acroForm.textfield(name=fid("wfill"), x=ML+18+fw+6, y=ty-3, width=CW-36-fw-6, 
 newpage()
 
 # ================= READ-BACK CARD (1 page) =================
-y0 = page_header("Read-back card", "Read-Back Card",
+# No kicker: the title and intro stand on their own.
+y0 = page_header("", "Read-Back Card",
     "Read this each morning for 30 days. Keep it where you will see it.", icon="words")
-GAP2 = 22
+
+LH = 16  # a handwriting line
+
+def rb_label(x, y, text, w, size=9):
+    c.setFillColor(NAVY); c.setFont("Helvetica-Bold", size)
+    for ln in wrap(text, "Helvetica-Bold", size, w):
+        c.drawString(x, y, ln); y -= 11
+    return y
+
+def rb_lines(x, y, w, prefix, n=3):
+    # a multi-line fillable box with n printed handwriting rules
+    h = n * LH
+    c.acroForm.textfield(name=fid(prefix), x=x, y=y-h, width=w, height=h,
+        borderStyle='underlined', borderColor=LINE, fillColor=None, textColor=INK,
+        borderWidth=0, forceBorder=False, fontName='Helvetica', fontSize=10,
+        fieldFlags='multiline')
+    c.setStrokeColor(LINE); c.setLineWidth(0.6)
+    for i in range(n):
+        yy = y - (i + 1) * LH
+        c.line(x, yy, x + w, yy)
+    return y - h - 10
+
+# --- Words That Hold: six lines in a cream panel, handbook serif ---
+icon_img("words", ML, y0-3, 13)
+c.setFillColor(GOLDINK); c.setFont("Helvetica-Bold", 10)
+c.drawString(ML+18, y0, "Words That Hold")
+py = y0 - 17
+inner = CW - 36
+aff_lines = []
+for w in M.WORDS_AFFIRMATIONS:
+    aff_lines += wrap(w, "Times-Italic", 13.5, inner)
+panel_h = 14 + len(aff_lines) * 19 + 12
+c.setFillColor(HexColor("#FBF3E2"))
+c.roundRect(ML, py - panel_h, CW, panel_h, 8, fill=1, stroke=0)
+c.setStrokeColor(GOLD); c.setLineWidth(2); c.line(ML, py - panel_h, ML, py)
+ty = py - 20
+c.setFillColor(NAVY); c.setFont("Times-Italic", 13.5)
+for ln in aff_lines:
+    c.drawString(ML + 18, ty, ln); ty -= 19
+y = py - panel_h - 14
+# fill-in with a two-line box
+y = rb_label(ML, y, M.WORDS_FILLIN, CW)
+y = rb_lines(ML, y, CW, "rbfill", n=2)
+
+# --- My evidence: two balanced columns of multi-line boxes ---
+y -= 4
+c.setFillColor(GOLDINK); c.setFont("Helvetica-Bold", 10)
+c.drawString(ML, y, "My evidence")
+y -= 16
+GAP2 = 24
 COLW2 = (CW - GAP2) / 2
 LX = ML
 RX = ML + COLW2 + GAP2
-
-def rb_label(x, y, text, w, color=NAVY, size=8.5):
-    c.setFillColor(color); c.setFont("Helvetica-Bold", size)
-    for ln in wrap(text, "Helvetica-Bold", size, w):
-        c.drawString(x, y, ln); y -= 10.5
-    return y
-
-def rb_field(x, y, w, prefix, h=15, multiline=False):
-    c.acroForm.textfield(name=fid(prefix), x=x, y=y-h, width=w, height=h,
-        borderStyle='underlined', borderColor=LINE, fillColor=None, textColor=INK,
-        borderWidth=0.75, forceBorder=False, fontName='Helvetica', fontSize=10,
-        fieldFlags=('multiline' if multiline else ''))
-    c.setStrokeColor(LINE); c.setLineWidth(0.75); c.line(x, y-h, x+w, y-h)
-    return y - h - 8
-
-# --- left column: Words That Hold ---
-icon_img("words", LX, y0-3, 13)
-c.setFillColor(GOLDINK); c.setFont("Helvetica-Bold", 10)
-c.drawString(LX+18, y0, "Words That Hold")
-ly = y0 - 18
-c.setFillColor(NAVY); c.setFont("Helvetica-Oblique", 9)
-for w in M.WORDS_AFFIRMATIONS:
-    for ln in wrap(w, "Helvetica-Oblique", 9, COLW2):
-        c.drawString(LX, ly, ln); ly -= 12
-    ly -= 3
-ly -= 4
-ly = rb_label(LX, ly, M.WORDS_FILLIN, COLW2)
-ly = rb_field(LX, ly, COLW2, "rbfill")
-
-# --- right column: My evidence ---
-c.setFillColor(GOLDINK); c.setFont("Helvetica-Bold", 10)
-c.drawString(RX, y0, "My evidence")
-ry = y0 - 18
+# left column: the three record moments (four lines each)
+ly = y
 for _ in range(3):
-    ry = rb_label(RX, ry, "A moment or Proof Line from my record", COLW2)
-    ry = rb_field(RX, ry, COLW2, "rbmoment")
+    ly = rb_label(LX, ly, "A moment or Proof Line from my record", COLW2)
+    ly = rb_lines(LX, ly, COLW2, "rbmoment", n=4)
+# right column: the belief pair and the shrink pair (three lines each)
+ry = y
 ry = rb_label(RX, ry, "The line I am learning to believe", COLW2)
-ry = rb_field(RX, ry, COLW2, "rbline")
+ry = rb_lines(RX, ry, COLW2, "rbline", n=3)
 ry = rb_label(RX, ry, "The entry that supports it", COLW2)
-ry = rb_field(RX, ry, COLW2, "rbentry")
+ry = rb_lines(RX, ry, COLW2, "rbentry", n=3)
 ry = rb_label(RX, ry, "A sentence that shrinks my work", COLW2)
-ry = rb_field(RX, ry, COLW2, "rbshrink")
+ry = rb_lines(RX, ry, COLW2, "rbshrink", n=3)
 ry = rb_label(RX, ry, "What would have been different if I had not been there?", COLW2)
-ry = rb_field(RX, ry, COLW2, "rbdiff")
+ry = rb_lines(RX, ry, COLW2, "rbdiff", n=3)
 
-# --- bottom: 30 numbered checkboxes ---
-by = min(ly, ry) - 26
+# --- bottom: 30 numbered checkboxes, near the footer ---
+by = 108
 c.setFillColor(GOLDINK); c.setFont("Helvetica-Bold", 9)
-c.drawString(ML, by, "Mornings read.")
+c.drawString(ML, by, "Mornings read")
 by -= 18
 pitch = CW / 30.0
 for i in range(30):
