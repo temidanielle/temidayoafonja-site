@@ -146,7 +146,7 @@ newpage()
 
 # ================= BEFORE YOU REBUILD ANYTHING (1 page) =================
 y = page_header("Before you begin", "Before you rebuild anything",
-    "Two moves before Part One: name three moments, then read the words you can stand on.", icon="reconstruct")
+    "Two moves before Part One: name three moments, then read the words that hold.", icon="reconstruct")
 c.setFillColor(NAVY); c.setFont("Helvetica-Bold", 9)
 c.drawString(ML, y, M.THREE_MOMENTS_LABEL); y -= 11
 c.setFillColor(GREY); c.setFont("Helvetica-Oblique", 7.6)
@@ -160,7 +160,7 @@ for i in range(3):
     c.setStrokeColor(LINE); c.setLineWidth(0.75); c.line(ML, y-16, ML+CW, y-16)
     y -= 30
 y -= 14
-# Words to Stand On panel
+# Words That Hold panel
 icon_img("words", ML, y-3, 14)
 c.setFillColor(GOLDINK); c.setFont("Helvetica-Bold", 10)
 c.drawString(ML+20, y, M.WORDS_TITLE); y -= 13
@@ -183,6 +183,72 @@ fw = c.stringWidth(M.WORDS_FILLIN, "Helvetica-Bold", 9)
 c.acroForm.textfield(name=fid("wfill"), x=ML+18+fw+6, y=ty-3, width=CW-36-fw-6, height=14,
     borderStyle='underlined', borderColor=GOLD, fillColor=None, textColor=INK,
     borderWidth=0.75, forceBorder=False, fontName='Helvetica', fontSize=10)
+newpage()
+
+# ================= READ-BACK CARD (1 page) =================
+y0 = page_header("Read-back card", "Read-Back Card",
+    "Read this each morning for 30 days. Keep it where you will see it.", icon="words")
+GAP2 = 22
+COLW2 = (CW - GAP2) / 2
+LX = ML
+RX = ML + COLW2 + GAP2
+
+def rb_label(x, y, text, w, color=NAVY, size=8.5):
+    c.setFillColor(color); c.setFont("Helvetica-Bold", size)
+    for ln in wrap(text, "Helvetica-Bold", size, w):
+        c.drawString(x, y, ln); y -= 10.5
+    return y
+
+def rb_field(x, y, w, prefix, h=15, multiline=False):
+    c.acroForm.textfield(name=fid(prefix), x=x, y=y-h, width=w, height=h,
+        borderStyle='underlined', borderColor=LINE, fillColor=None, textColor=INK,
+        borderWidth=0.75, forceBorder=False, fontName='Helvetica', fontSize=10,
+        fieldFlags=('multiline' if multiline else ''))
+    c.setStrokeColor(LINE); c.setLineWidth(0.75); c.line(x, y-h, x+w, y-h)
+    return y - h - 8
+
+# --- left column: Words That Hold ---
+icon_img("words", LX, y0-3, 13)
+c.setFillColor(GOLDINK); c.setFont("Helvetica-Bold", 10)
+c.drawString(LX+18, y0, "Words That Hold")
+ly = y0 - 18
+c.setFillColor(NAVY); c.setFont("Helvetica-Oblique", 9)
+for w in M.WORDS_AFFIRMATIONS:
+    for ln in wrap(w, "Helvetica-Oblique", 9, COLW2):
+        c.drawString(LX, ly, ln); ly -= 12
+    ly -= 3
+ly -= 4
+ly = rb_label(LX, ly, M.WORDS_FILLIN, COLW2)
+ly = rb_field(LX, ly, COLW2, "rbfill")
+
+# --- right column: My evidence ---
+c.setFillColor(GOLDINK); c.setFont("Helvetica-Bold", 10)
+c.drawString(RX, y0, "My evidence")
+ry = y0 - 18
+for _ in range(3):
+    ry = rb_label(RX, ry, "A moment or Proof Line from my record", COLW2)
+    ry = rb_field(RX, ry, COLW2, "rbmoment")
+ry = rb_label(RX, ry, "The line I am learning to believe", COLW2)
+ry = rb_field(RX, ry, COLW2, "rbline")
+ry = rb_label(RX, ry, "The entry that supports it", COLW2)
+ry = rb_field(RX, ry, COLW2, "rbentry")
+ry = rb_label(RX, ry, "A sentence that shrinks my work", COLW2)
+ry = rb_field(RX, ry, COLW2, "rbshrink")
+ry = rb_label(RX, ry, "What would have been different if I had not been there?", COLW2)
+ry = rb_field(RX, ry, COLW2, "rbdiff")
+
+# --- bottom: 30 numbered checkboxes ---
+by = min(ly, ry) - 26
+c.setFillColor(GOLDINK); c.setFont("Helvetica-Bold", 9)
+c.drawString(ML, by, "Mornings read.")
+by -= 18
+pitch = CW / 30.0
+for i in range(30):
+    cx = ML + i * pitch
+    c.acroForm.checkbox(name=fid("morning"), x=cx, y=by-9, size=9,
+        borderColor=GOLD, fillColor=white, borderWidth=0.8, checked=False)
+    c.setFillColor(GREY); c.setFont("Helvetica", 5.5)
+    c.drawCentredString(cx+4.5, by-18, str(i+1))
 newpage()
 
 # ================= QUICK CAPTURE (2 pages) =================
@@ -313,6 +379,8 @@ y = block_label(y, "Quarterly review, about thirty minutes", icon="quarterly")
 for q in M.QUARTERLY:
     y = draw_checkbox(y, q, prefix="qr")
 y = body(y-2, M.MAINT_NOTE, color=GREY, size=8.5, font="Helvetica-Oblique")
+c.setFillColor(GOLDINK); c.setFont("Helvetica-Bold", 9)
+c.drawString(ML, y-4, "Tell me how it went: temidayoafonja.com/review.")
 newpage()
 
 c.save()

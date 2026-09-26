@@ -100,7 +100,7 @@ You do not need to argue with that voice. You only need to answer it with eviden
 
 Before you open Part One, write down three moments from the last few years when someone relied on your judgment. Keep each to one sentence: what the situation was, and what you did. You do not need numbers yet. You only need to notice what is already there.
 
-### Words to Stand On
+### Words That Hold
 
 Read these slowly, out loud if you can, before each session with your record. Every line is true for you today, and the rest of this guide helps you prove it.
 
@@ -113,6 +113,20 @@ Encouragement fades when the week gets hard. Statements you can check against yo
 If you catch yourself saying you are starting over, try a different sentence: I am starting from what I have built.
 
 Then keep reading. The rest of this guide helps you prove it.
+
+### Read It Back
+
+Some sentences shrink the work before anyone else hears them. Anyone could have done this. I was just doing my job. It was really the team.
+
+When you hear one, ask a single question: what would have been different if I had not been there? Write the answer down. That answer is evidence.
+
+Maya first described her work as "I only coordinated the logistics." When she asked the question, she wrote: "New hires would have kept leaving in their first months, and onboarding would still be a slide deck and a checklist."
+
+Belief grows as evidence stacks up. One entry will rarely change how you see yourself. A handful, read again and again, will start to.
+
+For the next 30 days, read your Words That Hold each morning, beside the three moments you wrote above. As your record grows, add your strongest entries. Choose one line your record already supports that you do not fully believe yet. Keep reading it beside its evidence until the words feel like yours.
+
+The Read-Back Card in your Printable & Fillable Tools holds all of this on one page.
 
 ## A note on confidentiality before you begin
 
@@ -263,6 +277,8 @@ If your access is already gone, run the session through reconstruction instead. 
 - Last few minutes. Set the trigger to start capturing in real time from now on, so you never have to reconstruct again.
 
 You will finish with the same seven outcomes as the capture route. You started from cold material, and you still built something true.
+
+Finished your first session? Tell me how it went at temidayoafonja.com/review. It takes two minutes.
 
 ---
 
@@ -679,6 +695,23 @@ Proposal or portfolio: permitted outcomes that show the kind of work you deliver
 
 Unexpected transition: everything, quickly, because the record is now the only copy you have.
 
+## Permission to Pause
+
+When something changes, the pressure to move arrives with it. Rewrite the resume tonight. Apply everywhere by Friday. Name your next role before anyone asks.
+
+You are allowed to pause.
+
+The story you write on the hardest day of a change tends to be smaller than the truth. You shrink the work, or you inflate it to cover the hurt. Give it a few steady days, and the same record reads more clearly, to you and to the person across the table.
+
+A pause can be short and still count. Before you send a resume, apply for a role, or decide on your next move:
+
+- Sleep on it, and read your Proof Line again in the morning.
+- Read your Words That Hold beside the evidence on your Read-Back Card.
+- Ask one person who saw the work whether the line sounds like you.
+- If the deadline gives you one day, take the day.
+
+Your record will be there when you come back. That is the point of keeping it.
+
 ## Match Your Proof to a Role
 
 This page translates your evidence for a specific role. It does not advise on which roles to pursue. That is a different question, and a different tool.
@@ -794,6 +827,8 @@ Keep the Proof grew out of a pattern that kept recurring: capable people reachin
 What you did, the judgment you exercised, and what changed because of it are yours to carry: your own account of your work, kept within the permission rules this guide has held in front of you throughout. That account is clearest while the work is still fresh.
 
 Keep the record while the facts are still yours to keep.
+
+{{review-box}}
 
 Temidayo Afonja · temidayoafonja.com
 

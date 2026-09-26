@@ -33,7 +33,7 @@ _ICONS = {
     "about": '<circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="10" r="2.6"/><path d="M6.8 17.5 a5.4 4.2 0 0 1 10.4 0" stroke="%s"/>' % GOLD,
     "interview": '<path d="M5 6 h14 a1 1 0 0 1 1 1 v7 a1 1 0 0 1 -1 1 h-7.5 L7.5 18.5 V15 H5 a1 1 0 0 1 -1 -1 V7 a1 1 0 0 1 1 -1 z"/><circle cx="9.5" cy="10.5" r="0.8" fill="%s" stroke="none"/><circle cx="12" cy="10.5" r="0.8" fill="%s" stroke="none"/><circle cx="14.5" cy="10.5" r="0.8" fill="%s" stroke="none"/>' % (GOLD, GOLD, GOLD),
     "promotion": '<polyline points="4,18.5 9,13.5 13,15.5 20,7"/><path d="M15.5 7 H20 V11.5" stroke="%s"/>' % GOLD,
-    # --- words to stand on (open book) ---
+    # --- words that hold (open book) ---
     "words": '<path d="M12 6.5 C10 5 6.5 5 4.5 6.5 V18 C6.5 16.5 10 16.5 12 18 C14 16.5 17.5 16.5 19.5 18 V6.5 C17.5 5 14 5 12 6.5 Z"/><line x1="12" y1="6.5" x2="12" y2="18" stroke="%s"/>' % GOLD,
     # --- maintenance ---
     "monthly": '<rect x="4" y="5.5" width="16" height="14.5" rx="1.5"/><line x1="4" y1="9.5" x2="20" y2="9.5"/><line x1="8" y1="3.5" x2="8" y2="6.5"/><line x1="16" y1="3.5" x2="16" y2="6.5"/><circle cx="9" cy="13.5" r="1.2" fill="%s" stroke="none"/>' % GOLD,
@@ -48,7 +48,7 @@ LABELS = {
     "reconstruct": "Reconstruct", "match": "Match your proof to a role",
     "resume": "Resume line", "about": "About section",
     "interview": "Interview answer", "promotion": "Promotion note",
-    "words": "Words to Stand On", "monthly": "Monthly sweep",
+    "words": "Words That Hold", "monthly": "Monthly sweep",
     "quarterly": "Quarterly review",
 }
 

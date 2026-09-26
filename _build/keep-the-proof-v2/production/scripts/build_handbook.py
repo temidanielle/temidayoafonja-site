@@ -15,6 +15,7 @@ ROOT = "/home/user/temidayoafonja-site"
 # words, landing on the page where the heading itself is rendered.
 TOC_ENTRIES = [
     ("Before You Rebuild Anything", "Before You Rebuild Anything", False),
+    ("Read It Back", "Read It Back", True),
     ("Part One: Understand the Record", "PART ONE", False),
     ("What It Costs When the Proof Is Gone", "What It Costs When the Proof Is Gone", True),
     ("Your First 60 Minutes", "YOUR FIRST 60 MINUTES", False),
@@ -25,6 +26,7 @@ TOC_ENTRIES = [
     ("Part Six: Worked Examples", "PART SIX", False),
     ("Part Seven: Reconstruct", "PART SEVEN", False),
     ("Part Eight: Keep It Current, and Use It", "PART EIGHT", False),
+    ("Permission to Pause", "Permission to Pause", True),
     ("Match Your Proof to a Role", "Match Your Proof to a Role", True),
     ("Put Your Record to Work", "Put Your Record to Work", True),
     ("Part Nine: The Record You Own", "PART NINE", False),
@@ -296,6 +298,26 @@ def words_panel_device():
   {fill}
 </div>'''
 
+REVIEW_URL = "https://temidayoafonja.com/review"
+def _qr_datauri(url, scale=10, border=4):
+    import io, base64, segno
+    buf = io.BytesIO()
+    segno.make(url, error="m").save(buf, kind="png", scale=scale, border=border,
+                                     dark=NAVY, light="#ffffff")
+    return "data:image/png;base64," + base64.b64encode(buf.getvalue()).decode()
+
+def review_box_device():
+    qr = _qr_datauri(REVIEW_URL)
+    return f'''
+<div class="review-box">
+  <div class="rb-text">
+    <div class="rb-title">Tell me how it went.</div>
+    <div class="rb-body">If Keep the Proof helped you, or if something got in your way, I would love to hear about it. It takes about two minutes, and what you tell me shapes the next version.</div>
+    <div class="rb-link">temidayoafonja.com/review</div>
+  </div>
+  <div class="rb-qr"><img src="{qr}" alt="QR code linking to temidayoafonja.com/review"><div class="rb-qr-cap">Scan to open</div></div>
+</div>'''
+
 # Prose paragraphs made redundant by an injected device — dropped so the
 # device is not shadowed by a near-verbatim restatement.
 SKIP_PREFIXES = [
@@ -427,6 +449,10 @@ for idx,(kind,payload) in enumerate(blocks):
             flush_caption_as_para()
             body.append(words_panel_device())
             continue
+        if text.strip() == "{{review-box}}":
+            flush_caption_as_para()
+            body.append(review_box_device())
+            continue
         if is_skipped(text):
             continue
         if is_card(text):
@@ -552,8 +578,17 @@ h3{{font-family:'DM Sans',sans-serif;font-weight:600;font-size:11.5pt;letter-spa
 /* Chapter subtitle (under an opening-chapter h2) */
 .chapter-sub{{font-family:'Cormorant',serif;font-style:italic;font-size:15pt;line-height:1.3;color:{GOLD};margin:-.1em 0 .8em;}}
 
-/* Words to Stand On panel */
+/* Words That Hold panel */
 .words{{background:{CREAM};border:1px solid #e0d7c4;border-left:3px solid {GOLD};border-radius:8px;padding:1.05em 1.25em 1.15em;margin:1em 0 1.3em;page-break-inside:avoid;}}
+/* Review box (Closing) */
+.review-box{{display:flex;gap:1.1em;align-items:center;background:{NAVY};color:{CREAM};border-radius:8px;padding:1.1em 1.25em;margin:1.4em 0 0.6em;page-break-inside:avoid;}}
+.rb-text{{flex:1;}}
+.rb-title{{font-family:'Cormorant',serif;font-weight:600;font-size:17pt;color:{CREAM};margin-bottom:.28em;}}
+.rb-body{{font-size:10pt;line-height:1.5;color:#dcd4c3;margin-bottom:.5em;}}
+.rb-link{{font-family:'DM Sans';font-weight:600;font-size:10.5pt;letter-spacing:.02em;color:{GOLD};}}
+.rb-qr{{flex:0 0 auto;text-align:center;}}
+.rb-qr img{{width:1.15in;height:1.15in;display:block;background:#fff;border-radius:5px;padding:5px;}}
+.rb-qr-cap{{font-family:'DM Sans';font-size:7pt;letter-spacing:.1em;text-transform:uppercase;color:{GOLD};margin-top:.4em;}}
 .words-h{{font-family:'DM Sans';font-weight:600;font-size:9pt;letter-spacing:.14em;text-transform:uppercase;color:{GOLD};margin-bottom:.75em;}}
 .wline{{font-family:'Cormorant',serif;font-size:14.5pt;line-height:1.35;color:{NAVY};padding:.34em 0;border-bottom:1px solid #ece3d2;}}
 .wline:last-child{{border-bottom:0;}}

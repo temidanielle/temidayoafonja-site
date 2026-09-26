@@ -94,9 +94,9 @@ reconstruct anything your employer owns.
 ## What you get
 
 - **Start Here:** a short orientation and a map of the bundle.
-- **Keep the Proof: Guided Handbook (55 pages):** the full method, with a completed
+- **Keep the Proof: Guided Handbook (58 pages):** the full method, with a completed
   example beside every tool, and a first focused session that gets you to one real
-  entry. It opens with Before You Rebuild Anything, and its Put Your Record to Work
+  entry. It opens with Before You Rebuild Anything, with Words That Hold and a 30-day Read It Back practice, and its Put Your Record to Work
   section shows how to carry one Proof Line into a resume line, a LinkedIn About
   section, an interview answer, and a promotion note. Sixty minutes is a guide. Take it
   in one sitting or several. Includes a parallel path for rebuilding after you've
@@ -106,8 +106,8 @@ reconstruct anything your employer owns.
   subscription required). It holds your captures, full entries, corroboration notes,
   Proof Lines, a Match Your Proof to a Role page, a Put Your Record to Work workspace,
   and a running index. This is where the record lives for years.
-- **Printable & Fillable Tools (11 pages):** the same fields as your Professional
-  Record, as printable and fillable pages, for anyone who prefers to write by hand or
+- **Printable & Fillable Tools (12 pages):** the same fields as your Professional
+  Record, plus a Read-Back Card, as printable and fillable pages, for anyone who prefers to write by hand or
   type into a form. Use whichever you'll keep up. You don't need to complete both.
 
 ## Who it's for
@@ -136,6 +136,8 @@ Reader); the handbook and Start Here are PDFs to read. Files are yours to save a
 reuse under a personal-use license. Organizations providing Keep the Proof to
 employees or program participants can arrange a group license at
 temidayoafonja.com/work.
+
+Some early reviewers received a complimentary copy.
 
 New to the method? The free Career Evidence Starter helps you take one accomplishment
 all the way through and leave with one portable Proof Line:
@@ -198,7 +200,7 @@ strip them of the free update path).
 > no additional cost. Just re-download from your receipt or library.
 >
 > What's new:
-> - A rewritten, expanded Guided Handbook (now 55 pages) with a completed example
+> - A rewritten, expanded Guided Handbook (now 58 pages) with a completed example
 >   beside every tool and a clearer permission-and-safe-use standard throughout.
 > - **Your Professional Record:** an editable, copyable working document (Word /
 >   Google Docs / Pages) that replaces the old Career Evidence

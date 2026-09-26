@@ -29,7 +29,7 @@ FORMATS_NOTE = ("Two formats, the same record. This copyable document is the rec
 # ---- Before you rebuild anything (first-page opener) ----
 THREE_MOMENTS_LABEL = "Before you rebuild anything: three moments someone relied on your judgment."
 THREE_MOMENTS_HINT = "One line each: what the situation was, and what you did. No numbers needed."
-WORDS_TITLE = "Words to Stand On"
+WORDS_TITLE = "Words That Hold"
 WORDS_LEAD = "Read these slowly before each session with your record. Every line is true for you today, and the rest of the system helps you prove it."
 WORDS_AFFIRMATIONS = [
     "I have done work that mattered, and I can name it.",

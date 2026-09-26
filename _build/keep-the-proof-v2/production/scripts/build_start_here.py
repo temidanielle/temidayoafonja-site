@@ -11,9 +11,9 @@ NAVY="#112345"; CREAM="#F5F1E8"; GOLD="#C9A84C"; INK="#1c2333"; GREY="#5f636e"
 
 FILES=[
  ("READ THIS FIRST","Start Here","This file. A two-minute orientation to the system and how the pieces fit together."),
- ("LEARN &amp; BUILD","Keep the Proof: Guided Handbook","The 55-page teaching guide. It opens with Before You Rebuild Anything, teaches you how to capture your work, clarify what was yours, and carry it forward in language anyone can follow, and, in Put Your Record to Work, shows you how to carry one Proof Line into a resume, a LinkedIn profile, an interview, and a promotion conversation. A completed example sits beside every tool."),
+ ("LEARN &amp; BUILD","Keep the Proof: Guided Handbook","The 58-page teaching guide. It opens with Before You Rebuild Anything, teaches you how to capture your work, clarify what was yours, and carry it forward in language anyone can follow, and, in Put Your Record to Work, shows you how to carry one Proof Line into a resume, a LinkedIn profile, an interview, and a promotion conversation. A completed example sits beside every tool."),
  ("KEEP USING","Your Professional Record","Your long-term working document, in an editable, copyable format you keep and control (Word, Google Docs, or Pages). Make one personal copy, keep it in a personally controlled account, and add to it over time. This is where the record lives for years."),
- ("PREFER PRINT OR A FORM?","Printable &amp; Fillable Tools","Eleven printable and fillable pages holding the same fields as your Professional Record, for anyone who would rather write by hand or type into a form. Use whichever you will keep up. You do not need to complete both."),
+ ("PREFER PRINT OR A FORM?","Printable &amp; Fillable Tools","Twelve printable and fillable pages holding the same fields as your Professional Record, for anyone who would rather write by hand or type into a form. Use whichever you will keep up. You do not need to complete both."),
 ]
 
 cards="".join(f'''<div class="fcard"><div class="fk">{k}</div><div class="ft">{t}</div><div class="fb">{b}</div></div>''' for k,t,b in FILES)

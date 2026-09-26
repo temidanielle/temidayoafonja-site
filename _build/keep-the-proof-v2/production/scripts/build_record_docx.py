@@ -160,7 +160,7 @@ para(M.THREE_MOMENTS_LABEL, size=10, bold=True, color=NAVY, before=2, after=1)
 para(M.THREE_MOMENTS_HINT, italic=True, color=GREY, size=8.5, after=3)
 for i in range(3):
     lp = doc.add_paragraph(); lp.paragraph_format.space_before = Pt(10); _bottom_border(lp, "C9C4B7", 4)
-# Words to Stand On, as a calm cream panel with a gold left border (matching the handbook)
+# Words That Hold, as a calm cream panel with a gold left border (matching the handbook)
 para("", after=2)
 wtab = doc.add_table(rows=1, cols=1)
 wcell = wtab.rows[0].cells[0]
@@ -181,6 +181,13 @@ for w in M.WORDS_AFFIRMATIONS:
     _wp = _cellp(0, 5); _rw = _wp.add_run(w); _rw.italic = True; _rw.font.size = Pt(12); _rw.font.name = "Cambria"; _rw.font.color.rgb = NAVY
 _ff = _cellp(4, 2); _rf = _ff.add_run(M.WORDS_FILLIN); _rf.bold = True; _rf.font.size = Pt(10); _rf.font.color.rgb = NAVY
 _fl = _cellp(2, 6); _bottom_border(_fl, "C9A84C", 4)
+# Read It Back workspace, directly after the Words That Hold box
+h_block("Read It Back", color=NAVY, size=12, icon="words")
+for _p in ["A sentence that shrinks my work",
+           "What would have been different if I had not been there?",
+           "The line I am learning to believe",
+           "The entries that support it"]:
+    field(_p, "", 2)
 divider()
 
 # ---------- Section 1 ----------
@@ -292,6 +299,9 @@ for q in M.QUARTERLY:
     checkbox_line(q)
 para(M.MAINT_NOTE, italic=True, color=GREY, before=6)
 
+divider()
+para("Tell me how it went: temidayoafonja.com/review.", bold=True, color=NAVY, before=4)
+
 os.makedirs(os.path.dirname(OUT_DOCX), exist_ok=True)
 doc.save(OUT_DOCX)
 print("DOCX:", OUT_DOCX, os.path.getsize(OUT_DOCX), "bytes")
@@ -319,7 +329,18 @@ for w in M.WORDS_AFFIRMATIONS:
 md.append("")
 md.append(f"**{M.WORDS_FILLIN}**")
 md.append("`__________________________________________________________________`")
-md.append("\n---\n")
+md.append("")
+md.append("### Read It Back\n")
+for _p in ["A sentence that shrinks my work",
+           "What would have been different if I had not been there?",
+           "The line I am learning to believe",
+           "The entries that support it"]:
+    _sep = "" if _p[-1:] in "?!.:" else "."
+    md.append(f"**{_p}{_sep}**")
+    md.append("`__________________________________________________________________`")
+    md.append("`__________________________________________________________________`")
+    md.append("")
+md.append("---\n")
 
 def md_field(label, hint, lines):
     h = f"  _{hint}_" if hint else ""

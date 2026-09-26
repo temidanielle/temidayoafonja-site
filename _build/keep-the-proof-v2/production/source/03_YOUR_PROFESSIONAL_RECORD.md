@@ -22,7 +22,7 @@ Your record has eight sections: a Capture Log, Full Entries, a Corroboration lis
 `__________________________________________________________________`
 `__________________________________________________________________`
 
-**Words to Stand On.** _Read these slowly before each session with your record. Every line is true for you today, and the rest of the system helps you prove it._
+**Words That Hold.** _Read these slowly before each session with your record. Every line is true for you today, and the rest of the system helps you prove it._
 
 - I have done work that mattered, and I can name it.
 - What I built did not leave when the job did.
@@ -32,6 +32,24 @@ Your record has eight sections: a Capture Log, Full Entries, a Corroboration lis
 - I can carry hope and uncertainty in the same week.
 
 **One thing I did that someone relied on:**
+`__________________________________________________________________`
+
+### Read It Back
+
+**A sentence that shrinks my work.**
+`__________________________________________________________________`
+`__________________________________________________________________`
+
+**What would have been different if I had not been there?**
+`__________________________________________________________________`
+`__________________________________________________________________`
+
+**The line I am learning to believe.**
+`__________________________________________________________________`
+`__________________________________________________________________`
+
+**The entries that support it.**
+`__________________________________________________________________`
 `__________________________________________________________________`
 
 ---
