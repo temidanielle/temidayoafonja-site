@@ -18,7 +18,7 @@ const path = require('path');
 const OUT_DIR = __dirname;
 const SRC = 'http://127.0.0.1:8899/_build/career-evidence-starter/starter-source.html';
 const FLAT = path.join(OUT_DIR, 'starter-flat.pdf');
-const FINAL = path.join(OUT_DIR, 'Keep_the_Proof_Career_Evidence_Starter_v1.1_CANDIDATE.pdf');
+const FINAL = path.join(OUT_DIR, 'Keep_the_Proof_Career_Evidence_Starter_v1.2.pdf');
 
 const NAVY = rgb(0x0F / 255, 0x23 / 255, 0x47 / 255);
 const WHITE = rgb(1, 1, 1);

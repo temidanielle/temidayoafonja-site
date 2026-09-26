@@ -151,6 +151,20 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 14
 .safe .check li { font-size: 8.6pt; line-height: 1.4; padding-bottom: 6px; }
 .safe .check li:last-child { padding-bottom: 0; }
 
+/* ── Page 2, Before You Rebuild Anything (mindset opener) ─────────────────
+   Mirrors the Handbook's Before You Rebuild Anything: a calm content page
+   with the six Words That Hold in a cream panel with a gold left edge,
+   set in the serif so it reads aloud the way the Handbook panel does. */
+.words { background: var(--cream); border: 1px solid var(--line-soft);
+  border-left: 3px solid var(--gold); border-radius: 3px;
+  padding: 15px 20px 16px; margin: 18px 0 18px; }
+.words .wtag { font-family: 'DM Sans', sans-serif; font-size: 8.5pt; font-weight: 700;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--gold-deep); margin: 0 0 3px; }
+.words .wlead { font-size: 9pt; font-style: italic; color: var(--muted); margin: 0 0 11px; max-width: none; }
+.words .wline { font-family: 'Cormorant Garamond', serif; font-style: italic;
+  font-size: 13pt; line-height: 1.32; color: var(--navy); margin: 0 0 5px; max-width: none; }
+.words .wline:last-child { margin-bottom: 0; }
+
 /* Numbered prompts */
 .q { margin-bottom: 4px; }
 .q .n { font-family: 'Cormorant Garamond', serif; font-size: 15pt; color: var(--rust-ink); margin-right: 7px; }
@@ -290,9 +304,25 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 14
 .next .prodsub { font-size: 8.8pt; color: var(--gold); letter-spacing: .06em; margin: 0 0 9px; }
 .next .link { font-family: 'DM Sans', sans-serif; font-size: 9.6pt; color: var(--gold); margin: 0; }
 
+/* The closing ask: an invitation to send in a Proof Line, so testimonials keep
+   coming after the free window. Same quiet panel treatment as the checklists. */
+.ask { border: 1px solid var(--line-soft); background: var(--tint);
+  border-left: 2px solid var(--gold); border-radius: 3px; padding: 12px 16px; margin: 4px 0 12px; }
+.ask .tag { font-size: 8.6pt; font-weight: 700; letter-spacing: .15em; text-transform: uppercase;
+  color: var(--navy); margin: 0 0 4px; }
+.ask p { font-size: 9.2pt; line-height: 1.5; color: var(--ink); margin: 0; max-width: none; }
+.ask a { color: var(--rust-ink); }
+
 .closing { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 13pt;
   line-height: 1.45; color: var(--navy); margin: 18px 0 0; max-width: 5.6in; }
 .page--done .closing { margin-top: auto; margin-bottom: 0.22in; }
+/* The closing ask adds height, so reclaim a little spacing here to keep the
+   final italic line clear of the running foot. */
+.page--done .ask { margin: 2px 0 10px; padding: 11px 16px; }
+.page--done .transition { margin: 12px 0 10px; }
+.page--done .next { padding: 16px 20px; }
+.page--done .next p { margin: 0 0 7px; }
+.page--done .next .ladder { padding-bottom: 9px; margin-bottom: 9px; }
 
 /* Running foot */
 .foot { position: absolute; left: 0.85in; right: 0.85in; bottom: 0.42in;
@@ -337,7 +367,29 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 14
   </div>
 </section>
 
-<!-- ══ PAGE 2 · WHY I MADE THIS + CHOOSE THE WORK ══ -->
+<!-- ══ PAGE 2 · BEFORE YOU REBUILD ANYTHING ══ -->
+<section class="page page--paper">
+  <p class="eyebrow">Before you write</p>
+  <h2>Before You Rebuild Anything</h2>
+  <div class="rule"></div>
+  <p>When work changes suddenly, the first thing to go is often the way you describe yourself. People with years of good work behind them start saying they are starting over, starting from scratch, going back to zero.</p>
+  <p>Those words can feel true in a hard week. They are rarely accurate, and they shape what you let yourself try.</p>
+  <div class="words">
+    <p class="wtag">Words That Hold</p>
+    <p class="wlead">Read these slowly, out loud if you can, before you begin.</p>
+    <p class="wline">I have done work that mattered, and I can name it.</p>
+    <p class="wline">What I built did not leave when the job did.</p>
+    <p class="wline">I can be experienced and new at the same time.</p>
+    <p class="wline">I can learn what the next place requires.</p>
+    <p class="wline">I will tell the truth about my work, without shrinking it and without inflating it.</p>
+    <p class="wline">I can carry hope and uncertainty in the same week.</p>
+  </div>
+  <p>If you catch yourself saying you are starting over, try a different sentence: I am starting from what I have built.</p>
+  <p>Then choose one piece of work. The next pages help you prove it.</p>
+  <div class="foot"><span class="l">Keep the Proof &middot; Career Evidence Starter</span><span>2</span></div>
+</section>
+
+<!-- ══ PAGE 3 · WHY I MADE THIS + CHOOSE THE WORK ══ -->
 <section class="page page--paper">
   <div class="author">
     <div class="photo">
@@ -395,10 +447,10 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 14
     <p class="legal">This is educational material, not legal advice.</p>
   </div>
 
-  <div class="foot"><span class="l">Keep the Proof &middot; Career Evidence Starter</span><span>2</span></div>
+  <div class="foot"><span class="l">Keep the Proof &middot; Career Evidence Starter</span><span>3</span></div>
 </section>
 
-<!-- ══ PAGE 3 · BUILD THE EVIDENCE ══ -->
+<!-- ══ PAGE 4 · BUILD THE EVIDENCE ══ -->
 <section class="page page--build">
   <p class="eyebrow">Build the evidence</p>
   <h2>What happened?</h2>
@@ -444,10 +496,10 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 14
     <div class="fld fld--2ln fld--lines" data-field="q5_evidence" data-lines="2"></div>
   </div>
 
-  <div class="foot"><span class="l">Keep the Proof &middot; Career Evidence Starter</span><span>3</span></div>
+  <div class="foot"><span class="l">Keep the Proof &middot; Career Evidence Starter</span><span>4</span></div>
 </section>
 
-<!-- ══ PAGE 4 · FIND WHAT TRAVELS ══ -->
+<!-- ══ PAGE 5 · FIND WHAT TRAVELS ══ -->
 <section class="page page--paper">
   <p class="eyebrow">Find what travels</p>
   <h2>What does this work show you can do?</h2>
@@ -510,10 +562,10 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 14
   <p class="help" style="margin-top:10px;">How would you explain the same work to someone who has never worked there?</p>
   <div class="fld fld--xl fld--lines" data-field="plain_explanation" data-lines="4"></div>
 
-  <div class="foot"><span class="l">Keep the Proof &middot; Career Evidence Starter</span><span>4</span></div>
+  <div class="foot"><span class="l">Keep the Proof &middot; Career Evidence Starter</span><span>5</span></div>
 </section>
 
-<!-- ══ PAGE 5 · PORTABLE PROOF LINE ══ -->
+<!-- ══ PAGE 6 · PORTABLE PROOF LINE ══ -->
 <section class="page page--proof">
   <p class="eyebrow">Your portable proof line</p>
   <h2>Turn the evidence into one portable line.</h2>
@@ -548,10 +600,10 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 14
     </ul>
   </div>
 
-  <div class="foot"><span class="l">Keep the Proof &middot; Career Evidence Starter</span><span>5</span></div>
+  <div class="foot"><span class="l">Keep the Proof &middot; Career Evidence Starter</span><span>6</span></div>
 </section>
 
-<!-- ══ PAGE 6 · COMPLETION + NEXT STEP ══ -->
+<!-- ══ PAGE 7 · COMPLETION + NEXT STEP ══ -->
 <section class="page page--paper page--done">
   <p class="eyebrow">You finished it</p>
   <h1 class="done">You did it.</h1>
@@ -568,6 +620,11 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 14
     <div>Career pivot</div>
   </div>
   <p class="help">Adapt the evidence to the conversation. Do not reuse one sentence mechanically everywhere.</p>
+
+  <div class="ask">
+    <p class="tag">Send me your Proof Line</p>
+    <p>I would like to see what you wrote. Email the Proof Line you built to <a href="mailto:temidayo@thedensitygroup.com">temidayo@thedensitygroup.com</a>. With your permission, I may share it, without your name or company, to help someone else get started. I will always ask before I share anything.</p>
+  </div>
 
   <p class="transition">One Proof Line is useful.<br><span class="t2">A record is more powerful.</span></p>
 
@@ -587,7 +644,7 @@ p.lede { font-size: 12pt; line-height: 1.5; color: var(--ink); margin-bottom: 14
 
   <p class="closing">Your career evidence should not have to be reconstructed from memory after the context changes.</p>
 
-  <div class="foot"><span class="l">Keep the Proof &middot; Career Evidence Starter</span><span>6</span></div>
+  <div class="foot"><span class="l">Keep the Proof &middot; Career Evidence Starter</span><span>7</span></div>
 </section>
 
 </body>

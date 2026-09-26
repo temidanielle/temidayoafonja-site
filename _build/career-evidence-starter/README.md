@@ -33,7 +33,7 @@ Needs `playwright`, `pdf-lib` and `pdfjs-dist`, and the repository served at
 `http://127.0.0.1:8899` so `/fonts.css` and both images resolve.
 
 ```
-node build.js      # writes Keep_the_Proof_Career_Evidence_Starter_v1.0_CANDIDATE.pdf
+node build.js      # writes Keep_the_Proof_Career_Evidence_Starter_v1.2.pdf
 node qa.js         # overflow check + page renders
 node fieldtest.js  # field round trip
 ```
