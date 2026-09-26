@@ -153,6 +153,44 @@
   status = 301
   force = true
 
+# The Keep the Proof review page. Reached from the printed V2 Handbook and by QR
+# code, so /review is the permanent URL and must keep working indefinitely. The
+# page carries a noindex robots tag and is deliberately absent from sitemap.xml,
+# so it serves without ever appearing in search.
+[[redirects]]
+  from = "/review"
+  to = "/review.html"
+  status = 200
+
+[[redirects]]
+  from = "/review.html"
+  to = "/review"
+  status = 301
+  force = true
+
+# The review submission endpoint, under a clean path, rate limited.
+#
+# Same reasoning and the same numbers as the Starter endpoint below. This
+# function has no limiter of its own, because the Blobs-based limiter the other
+# endpoints use has been failing site-wide since 2026-08-20 and would add a
+# dependency that currently does nothing. Netlify's own limit depends on nothing
+# this site configures, so it holds regardless.
+[[redirects]]
+  from = "/api/keep-the-proof-review"
+  to = "/.netlify/functions/keep-the-proof-review"
+  status = 200
+  # Five submissions per 180 seconds from one address. A reader submits once.
+  # Five leaves room for a retry after a network error and for two people behind
+  # one office address.
+  #
+  # This sub-table must stay last in this rule. In TOML every key after it
+  # belongs to it, so a key added below would silently land inside the rate
+  # limit instead of on the redirect.
+  [redirects.rate_limit]
+    window_limit = 5
+    window_size = 180
+    aggregate_by = ["domain", "ip"]
+
 # The Career Evidence Starter, the free entry point to the Keep the Proof ladder.
 [[redirects]]
   from = "/career-evidence-starter"
@@ -300,6 +338,26 @@
   [headers.values]
     Content-Security-Policy = "script-src 'self' 'unsafe-inline' https://plausible.io"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+# The Keep the Proof review page. Declared for both paths for the same reason as
+# the rules above: Netlify matches the requested path, not the file the 200
+# rewrite serves. This page loads no third-party script at all. It posts to its
+# own Netlify function, so there is deliberately no formspree.io here and no
+# plausible.io either. X-Robots-Tag repeats the page's own noindex at the edge,
+# so the page stays out of search even if the meta tag is ever lost.
+[[headers]]
+  for = "/review"
+  [headers.values]
+    Content-Security-Policy = "script-src 'self' 'unsafe-inline'"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/review.html"
+  [headers.values]
+    Content-Security-Policy = "script-src 'self' 'unsafe-inline'"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Robots-Tag = "noindex, nofollow"
 
 # /resources/ holds delivered lead-magnet files. These MUST serve: the download
 # link in the Kit delivery email points at one of them, so there is deliberately

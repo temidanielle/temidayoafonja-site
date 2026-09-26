@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keep the Proof: Tell Me How It Went</title>
+<meta name="description" content="A short review form for readers of Keep the Proof. About two minutes, mostly taps.">
+
+<!-- Private by design. This URL is printed in the V2 Handbook and reached by QR
+     code, so it must serve, and it must never appear in search. noindex here,
+     and deliberately absent from sitemap.xml. -->
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="stylesheet" href="/fonts.css">
+<link rel="stylesheet" href="/styles.css">
+
+<style>
+/* Keep the Proof review page.
+   Page scoped. Every rule is prefixed with .lean-page or with .rev, a prefix
+   used nowhere else in the repository, so no existing page can regress from
+   this file. Type stack, color tokens and button treatment are taken from
+   career-evidence-starter.html, which is the approved capture treatment. Nav,
+   footer, focus ring, skip link and motion come from the shared styles.css
+   untouched.
+
+   Phone first. Every tap target is a full width block at least 48px tall at
+   small widths, and the option groups only become multi column once there is
+   room for it. */
+:root {
+  --rust: #C1440E; --ink: #182238; --muted: #5D6676;
+  --line: rgba(15,35,71,.14); --paper: #FFFDF8; --soft-navy: #E9EDF4;
+}
+.lean-page { position: relative; z-index: 1; background: var(--cream); color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif; line-height: 1.56; padding-top: 96px; }
+.lean-page h1, .lean-page h2, .lean-page h3 { font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 500; letter-spacing: -.026em; color: var(--navy); margin: 0; }
+.lean-page p { margin: 0; color: var(--ink); font-size: 15px; line-height: 1.56; }
+.lean-page a { color: var(--navy); }
+.lean-wrap { width: min(680px, calc(100% - 40px)); margin: 0 auto; }
+.lean-eyebrow { text-transform: uppercase; letter-spacing: .14em; font-size: 11px;
+  font-weight: 800; color: var(--rust-ink); margin-bottom: 16px; display: block; }
+
+/* Hero */
+.rev-hero { padding: 40px 0 26px; }
+.rev-hero h1 { font-size: clamp(27px, 6.2vw, 36px); line-height: 1.14; margin-bottom: 16px; }
+.lean-page .rev-intro { font-size: 16px; line-height: 1.65; color: var(--muted); }
+
+/* Form shell */
+.rev-form { padding: 0 0 56px; }
+.rev-q { margin-top: 34px; border: 0; padding: 0; min-width: 0; }
+.rev-q legend { padding: 0; font-family: Georgia, 'Times New Roman', serif; font-size: 18px;
+  line-height: 1.38; color: var(--navy); margin-bottom: 4px; }
+.rev-q .rev-hint { font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 12px; }
+.rev-req { font-size: 11px; text-transform: uppercase; letter-spacing: .1em; font-weight: 800;
+  color: var(--rust-ink); margin-left: 6px; }
+
+/* Tap options. The whole block is the label, so the tap area is the card and
+   never the 17px control alone. */
+.rev-opts { display: grid; grid-template-columns: 1fr; gap: 9px; margin-top: 12px; }
+.rev-opt { display: flex; align-items: center; gap: 12px; min-height: 50px;
+  padding: 11px 15px; background: #fff; border: 1px solid var(--line); border-radius: 6px;
+  cursor: pointer; font-size: 15px; line-height: 1.4; color: var(--ink); }
+.rev-opt input { width: 19px; height: 19px; margin: 0; flex: 0 0 auto; accent-color: var(--navy); }
+.rev-opt:hover { border-color: rgba(15,35,71,.3); }
+.rev-opt:has(input:checked) { border-color: var(--navy); background: var(--soft-navy); }
+/* :has is not universal. This keeps a visible selected state without it, using
+   the control's own accent color plus a bolder label. */
+.rev-opt input:checked + span { font-weight: 700; }
+.rev-opt:focus-within { outline: 2px solid var(--rust-ink); outline-offset: 2px; }
+
+/* Typed answers */
+.rev-more { margin-top: 44px; padding-top: 30px; border-top: 1px solid var(--line); }
+.rev-more h2 { font-size: 23px; line-height: 1.2; margin-bottom: 8px; }
+.lean-page .rev-more-note { font-size: 13.5px; color: var(--muted); line-height: 1.55; }
+.rev-field { margin-top: 26px; }
+.rev-field label { display: block; font-family: Georgia, 'Times New Roman', serif;
+  font-size: 17px; line-height: 1.38; color: var(--navy); margin-bottom: 9px; }
+.rev-field textarea, .rev-field input[type="text"], .rev-field input[type="email"] {
+  width: 100%; border: 1px solid var(--line); background: #fff; color: var(--ink);
+  border-radius: 6px; padding: 13px 14px; font: inherit; font-size: 16px; outline: none; }
+.rev-field textarea { min-height: 96px; resize: vertical; line-height: 1.55; }
+.rev-field textarea:focus, .rev-field input:focus { border-color: var(--navy); }
+.rev-field input[aria-invalid="true"], .rev-field textarea[aria-invalid="true"] { border-color: #A83A2A; }
+.lean-page .rev-note { font-size: 12.5px; color: var(--muted); margin-top: 6px; line-height: 1.5; }
+
+/* Conditional block, revealed only when it is needed. */
+.rev-reveal { display: none; margin-top: 22px; padding: 18px 18px 22px;
+  background: var(--paper); border: 1px solid var(--line); border-radius: 6px; }
+.rev-reveal.is-open { display: block; }
+.rev-reveal .rev-field:first-of-type { margin-top: 0; }
+
+/* Opt in */
+.rev-optin { margin-top: 38px; padding-top: 28px; border-top: 1px solid var(--line);
+  display: flex; gap: 12px; align-items: flex-start; }
+.rev-optin input[type="checkbox"] { width: 19px; height: 19px; margin: 2px 0 0;
+  flex: 0 0 auto; accent-color: var(--navy); }
+.rev-optin label { font-size: 15px; line-height: 1.5; color: var(--ink); }
+
+/* Submit */
+.rev-submit { margin-top: 30px; width: 100%; background: var(--rust); color: #fff; border: none;
+  border-radius: 6px; padding: 17px; font-size: 14px; font-weight: 700; letter-spacing: .06em;
+  text-transform: uppercase; cursor: pointer; font-family: Arial, Helvetica, sans-serif; }
+.rev-submit[disabled] { opacity: .7; cursor: default; }
+.lean-page .rev-error { font-size: 13.5px; color: #A83A2A; margin-top: 12px; font-weight: 700; line-height: 1.5; }
+.lean-page .rev-error:empty { display: none; }
+
+/* The honeypot. Off screen rather than display none, so a scripted client that
+   filters hidden inputs still sees it. Never focusable, never announced. */
+.rev-trap { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+/* Thank you state */
+.rev-done { display: none; padding: 60px 0 80px; }
+.rev-done.is-open { display: block; }
+.rev-done:focus { outline: none; }
+.rev-done h2 { font-size: clamp(24px, 5.4vw, 31px); line-height: 1.18; margin-bottom: 14px; }
+.lean-page .rev-done p { font-size: 16px; color: var(--muted); line-height: 1.65; }
+
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+@media (min-width: 620px) {
+  .lean-page { padding-top: 108px; }
+  .rev-hero { padding: 54px 0 30px; }
+  .rev-opts.rev-opts--two { grid-template-columns: 1fr 1fr; }
+  .rev-opts.rev-opts--wrap { grid-template-columns: 1fr 1fr; }
+  .rev-submit { width: auto; min-width: 280px; padding: 17px 40px; }
+}
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<nav>
+  <a href="index.html" class="nav-logo brand-lockup">
+    <span class="brand-primary">The Density Group</span>
+    <span class="brand-secondary">Capability Formation Advisory</span>
+    <span class="brand-tertiary">Founded by Temidayo Afonja</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="framework.html">Capability Formation</a></li>
+    <li><a href="work.html">Advisory</a></li>
+    <li><a href="executive-briefing.html">Executive Briefing</a></li>
+    <li><a href="case-studies.html">Evidence</a></li>
+    <li><a href="about.html">The Firm</a></li>
+    <li><a href="for-professionals.html">For Professionals</a></li>
+    <li><a href="executive-briefing.html#inquiry" class="nav-cta">Bring a Consequential Decision</a></li>
+  </ul>
+</nav>
+
+<main id="main" class="lean-page">
+
+<section class="rev-hero">
+  <div class="lean-wrap">
+    <span class="lean-eyebrow">Keep the Proof</span>
+    <h1>Keep the Proof: Tell Me How It Went</h1>
+    <p class="rev-intro">About two minutes, mostly taps. Your answers come only to me, and nothing is published without your yes.</p>
+  </div>
+</section>
+
+<section class="rev-form" id="revFormSection">
+  <div class="lean-wrap">
+    <form id="revForm" novalidate>
+
+      <fieldset class="rev-q">
+        <legend>How helpful has Keep the Proof been so far?</legend>
+        <div class="rev-opts">
+          <label class="rev-opt"><input type="radio" name="helpfulness" value="Very helpful"><span>Very helpful</span></label>
+          <label class="rev-opt"><input type="radio" name="helpfulness" value="Somewhat helpful"><span>Somewhat helpful</span></label>
+          <label class="rev-opt"><input type="radio" name="helpfulness" value="Not yet"><span>Not yet</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="rev-q" id="qSource">
+        <legend>How did you get it?<span class="rev-req">Required</span></legend>
+        <div class="rev-opts rev-opts--two">
+          <label class="rev-opt"><input type="radio" name="how_acquired" value="I bought it" required><span>I bought it</span></label>
+          <label class="rev-opt"><input type="radio" name="how_acquired" value="I received it as a gift" required><span>I received it as a gift</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="rev-q">
+        <legend>How far have you gone?</legend>
+        <div class="rev-opts">
+          <label class="rev-opt"><input type="radio" name="progress" value="Read Start Here"><span>Read Start Here</span></label>
+          <label class="rev-opt"><input type="radio" name="progress" value="Finished my first session"><span>Finished my first session</span></label>
+          <label class="rev-opt"><input type="radio" name="progress" value="Wrote a full entry"><span>Wrote a full entry</span></label>
+          <label class="rev-opt"><input type="radio" name="progress" value="Wrote a Proof Line"><span>Wrote a Proof Line</span></label>
+          <label class="rev-opt"><input type="radio" name="progress" value="Used it in a real moment"><span>Used it in a real moment</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="rev-q">
+        <legend>Have you used your record yet?</legend>
+        <p class="rev-hint">Check all that apply.</p>
+        <div class="rev-opts rev-opts--wrap">
+          <label class="rev-opt"><input type="checkbox" name="used_for" value="Performance review"><span>Performance review</span></label>
+          <label class="rev-opt"><input type="checkbox" name="used_for" value="Promotion"><span>Promotion</span></label>
+          <label class="rev-opt"><input type="checkbox" name="used_for" value="Interview"><span>Interview</span></label>
+          <label class="rev-opt"><input type="checkbox" name="used_for" value="Resume"><span>Resume</span></label>
+          <label class="rev-opt"><input type="checkbox" name="used_for" value="Internal move"><span>Internal move</span></label>
+          <label class="rev-opt"><input type="checkbox" name="used_for" value="Not yet"><span>Not yet</span></label>
+          <label class="rev-opt"><input type="checkbox" name="used_for" value="Other"><span>Other</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="rev-q">
+        <legend>Would you share it with someone?</legend>
+        <div class="rev-opts rev-opts--two">
+          <label class="rev-opt"><input type="radio" name="would_share" value="Yes"><span>Yes</span></label>
+          <label class="rev-opt"><input type="radio" name="would_share" value="Maybe"><span>Maybe</span></label>
+          <label class="rev-opt"><input type="radio" name="would_share" value="No"><span>No</span></label>
+        </div>
+      </fieldset>
+
+      <div class="rev-more">
+        <h2>Want to say more?</h2>
+        <p class="rev-more-note">Type, or tap the microphone on your phone's keyboard to speak your answer.</p>
+
+        <div class="rev-field">
+          <label for="mostUseful">What was most useful?</label>
+          <textarea id="mostUseful" name="most_useful" maxlength="2000"></textarea>
+        </div>
+
+        <div class="rev-field">
+          <label for="confusing">What was confusing or missing?</label>
+          <textarea id="confusing" name="confusing_or_missing" maxlength="2000"></textarea>
+        </div>
+
+        <div class="rev-field">
+          <label for="colleague">In a sentence or two, what would you tell a colleague about Keep the Proof?</label>
+          <textarea id="colleague" name="tell_a_colleague" maxlength="2000"></textarea>
+        </div>
+      </div>
+
+      <fieldset class="rev-q" id="qQuote">
+        <legend>May I quote your answer to the question above?</legend>
+        <div class="rev-opts">
+          <label class="rev-opt"><input type="radio" name="quote_permission" value="Yes, with my name and title"><span>Yes, with my name and title</span></label>
+          <label class="rev-opt"><input type="radio" name="quote_permission" value="Yes, with my first name and last initial"><span>Yes, with my first name and last initial</span></label>
+          <label class="rev-opt"><input type="radio" name="quote_permission" value="No, this is private feedback"><span>No, this is private feedback</span></label>
+        </div>
+      </fieldset>
+
+      <!-- Revealed only when a quote is permitted, or when the email box below
+           is checked. Required in either case, because a quote has to be
+           checked with its author before it appears anywhere, and an email
+           cannot be sent to somebody whose address was never collected. -->
+      <div class="rev-reveal" id="revContact">
+        <div class="rev-field">
+          <label for="revName">Your name</label>
+          <input type="text" id="revName" name="contact_name" maxlength="120" autocomplete="name">
+        </div>
+        <div class="rev-field" id="revTitleField">
+          <label for="revTitle">Your job title</label>
+          <input type="text" id="revTitle" name="contact_title" maxlength="160" autocomplete="organization-title">
+        </div>
+        <div class="rev-field">
+          <label for="revEmail">Your email</label>
+          <input type="email" id="revEmail" name="contact_email" maxlength="254" autocomplete="email" inputmode="email">
+          <p class="rev-note" id="revEmailNote">Used to check a quote with you before it appears anywhere.</p>
+        </div>
+      </div>
+
+      <div class="rev-field">
+        <label for="proofLine">Optional: would you share a before and after Proof Line for a future edition?</label>
+        <textarea id="proofLine" name="proof_line" maxlength="2000"></textarea>
+        <p class="rev-note">Share only details you are permitted to share publicly.</p>
+      </div>
+
+      <div class="rev-optin">
+        <input type="checkbox" id="revOptin" name="email_optin" value="yes">
+        <label for="revOptin">Send me occasional emails from Temidayo.</label>
+      </div>
+
+      <!-- Honeypot. A real visitor never sees this and never fills it. -->
+      <div class="rev-trap" aria-hidden="true">
+        <label for="revCompany">Company</label>
+        <input type="text" id="revCompany" name="company" tabindex="-1" autocomplete="off">
+      </div>
+
+      <button type="submit" class="rev-submit" id="revSubmit">Send my answers</button>
+
+      <p class="rev-error" id="revError" role="alert" aria-live="assertive"></p>
+      <p class="visually-hidden" id="revStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<section class="rev-done" id="revDone" tabindex="-1" aria-labelledby="revDoneTitle">
+  <div class="lean-wrap">
+    <h2 id="revDoneTitle">Thank you. I read every answer.</h2>
+    <p>Cheering you on, Temi.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div>
+    <div class="footer-logo">The Density Group</div>
+    <div class="footer-tagline">The Density Group is a Capability Formation advisory firm founded by Temidayo Afonja.</div>
+  </div>
+  <div class="footer-cols">
+    <div class="footer-col">
+      <div class="footer-col-label">The Firm</div>
+      <ul class="footer-links">
+        <li><a href="framework.html">Capability Formation</a></li>
+        <li><a href="work.html">Advisory</a></li>
+        <li><a href="executive-briefing.html">Executive Briefing</a></li>
+        <li><a href="case-studies.html">Evidence</a></li>
+        <li><a href="speaking.html">Speaking</a></li>
+        <li><a href="about.html">The Firm</a></li>
+        <li><a href="/organizational-diagnostic">Organizational Capability Formation Scan</a></li>
+        <li><a href="executive-briefing.html#inquiry">Bring a Consequential Decision</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <div class="footer-col-label">For Professionals</div>
+      <ul class="footer-links">
+        <li><a href="/start-here">Start Here</a></li>
+        <li><a href="/diagnostic">Free Diagnostic</a></li>
+        <li><a href="for-professionals.html">Career Growth Assessment</a></li>
+        <li><a href="book.html">Books &amp; Tools</a></li>
+        <li><a href="https://temidayoafonja.substack.com" target="_blank" rel="noopener">Writing</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-copy">&copy; 2026 The Density Group LLC &middot; Capability Formation &middot; <a href="privacy.html">Privacy</a> &middot; <a href="terms.html">Terms</a></div>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+
+  var form      = document.getElementById("revForm");
+  var section   = document.getElementById("revFormSection");
+  var done      = document.getElementById("revDone");
+  var errorEl   = document.getElementById("revError");
+  var statusEl  = document.getElementById("revStatus");
+  var submitEl  = document.getElementById("revSubmit");
+  var contact   = document.getElementById("revContact");
+  var nameEl    = document.getElementById("revName");
+  var titleEl   = document.getElementById("revTitle");
+  var emailEl   = document.getElementById("revEmail");
+  var emailNote = document.getElementById("revEmailNote");
+  var titleField= document.getElementById("revTitleField");
+  var optinEl   = document.getElementById("revOptin");
+
+  /* Time of first paint. A submission that arrives within two seconds of the
+     page loading was not filled in by a person. This asks the visitor for
+     nothing and is invisible to them. */
+  var loadedAt = Date.now();
+
+  function quoteChoice() {
+    var el = form.querySelector('input[name="quote_permission"]:checked');
+    return el ? el.value : "";
+  }
+  function quoteIsYes() { return quoteChoice().indexOf("Yes") === 0; }
+  function wantsFullName() { return quoteChoice() === "Yes, with my name and title"; }
+
+  /* The contact block appears when it is needed and never before. Two separate
+     reasons can call for it, so the note explains whichever one applies. */
+  function syncContact() {
+    var yes = quoteIsYes();
+    var optin = optinEl.checked;
+    var show = yes || optin;
+    contact.classList.toggle("is-open", show);
+
+    /* A job title only means something beside a full name. */
+    titleField.style.display = wantsFullName() ? "" : "none";
+
+    if (yes && optin) {
+      emailNote.textContent = "Used to check a quote with you, and to send the emails you asked for.";
+    } else if (yes) {
+      emailNote.textContent = "Used to check a quote with you before it appears anywhere.";
+    } else {
+      emailNote.textContent = "Used to send the emails you asked for.";
+    }
+
+    [nameEl, titleEl, emailEl].forEach(function (el) {
+      if (!show) { el.removeAttribute("aria-invalid"); }
+    });
+    if (!show) { errorEl.textContent = ""; }
+  }
+
+  form.addEventListener("change", function (e) {
+    if (e.target.name === "quote_permission" || e.target.id === "revOptin") syncContact();
+  });
+  syncContact();
+
+  function fail(message, focusEl) {
+    errorEl.textContent = message;
+    if (focusEl) { focusEl.setAttribute("aria-invalid", "true"); focusEl.focus(); }
+    submitEl.disabled = false;
+    submitEl.textContent = "Send my answers";
+  }
+
+  function validEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    errorEl.textContent = "";
+    [nameEl, titleEl, emailEl].forEach(function (el) { el.removeAttribute("aria-invalid"); });
+
+    var acquired = form.querySelector('input[name="how_acquired"]:checked');
+    if (!acquired) {
+      var first = document.querySelector('#qSource input');
+      errorEl.textContent = "Please answer how you got it. That one is required.";
+      if (first) first.focus();
+      return;
+    }
+
+    var yes = quoteIsYes();
+    var optin = optinEl.checked;
+
+    if (yes) {
+      if (!nameEl.value.trim()) return fail("Please add your name so I can check the quote with you.", nameEl);
+      if (wantsFullName() && !titleEl.value.trim()) return fail("Please add your job title.", titleEl);
+    }
+    if ((yes || optin) && !validEmail(emailEl.value.trim())) {
+      return fail("Please add an email address I can reach you at.", emailEl);
+    }
+
+    submitEl.disabled = true;
+    submitEl.textContent = "Sending";
+    statusEl.textContent = "Sending your answers.";
+
+    var used = [];
+    form.querySelectorAll('input[name="used_for"]:checked').forEach(function (el) { used.push(el.value); });
+
+    function pick(name) {
+      var el = form.querySelector('input[name="' + name + '"]:checked');
+      return el ? el.value : "";
+    }
+
+    var payload = {
+      helpfulness:          pick("helpfulness"),
+      how_acquired:         acquired.value,
+      progress:             pick("progress"),
+      used_for:             used,
+      would_share:          pick("would_share"),
+      most_useful:          document.getElementById("mostUseful").value.trim(),
+      confusing_or_missing: document.getElementById("confusing").value.trim(),
+      tell_a_colleague:     document.getElementById("colleague").value.trim(),
+      quote_permission:     quoteChoice(),
+      contact_name:         (yes || optin) ? nameEl.value.trim() : "",
+      contact_title:        (yes && wantsFullName()) ? titleEl.value.trim() : "",
+      contact_email:        (yes || optin) ? emailEl.value.trim() : "",
+      proof_line:           document.getElementById("proofLine").value.trim(),
+      email_optin:          optin === true,
+      company:              document.getElementById("revCompany").value,
+      elapsed_ms:           Date.now() - loadedAt
+    };
+
+    fetch("/api/keep-the-proof-review", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    })
+    .then(function (r) {
+      if (r.ok) { showDone(); return; }
+      if (r.status === 429) return fail("That is a lot of requests from this connection. Please wait a few minutes and try again.");
+      if (r.status === 503) return fail("The review form is not accepting answers just yet. Please try again shortly.");
+      if (r.status === 400 || r.status === 422) return fail("That submission could not be accepted. Please check your answers and try again.");
+      fail("Something went wrong on my side. Please try again in a moment.");
+    })
+    .catch(function () {
+      fail("I could not reach the server. Please check your connection and try again.");
+    });
+  });
+
+  function showDone() {
+    statusEl.textContent = "Thank you. Your answers were sent.";
+    section.style.display = "none";
+    done.classList.add("is-open");
+    done.focus();
+    if (done.scrollIntoView) done.scrollIntoView({ block: "start" });
+  }
+})();
+</script>
+
+</body>
+</html>
