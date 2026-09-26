@@ -28,10 +28,11 @@
 // code rather than in an environment variable. Keeping it here is what holds
 // the owner's setup to a single step.
 //
-// REPLACE THE PLACEHOLDER BELOW WITH THE REAL FORM ID BEFORE LAUNCH.
-// While the placeholder is present the function refuses every request with a
-// 503, so a half configured page can never silently drop a review.
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/REPLACE_WITH_FORM_ID";
+// The form is "Keep the Proof review", created by the owner on 26 September
+// 2026, with email notifications enabled to the address on the account. The
+// guard below still holds: if this is ever reset to a placeholder, the function
+// refuses every request with a 503 rather than silently dropping a review.
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xwlprwlq";
 
 const REQUIRED_ENV = ["KIT_API_KEY", "KIT_TAG_CAREER_EVIDENCE_STARTER_GUIDANCE"];
 
@@ -47,14 +48,16 @@ const CORS = {
 const CAP = {
   helpfulness: 40, how_acquired: 40, progress: 60, would_share: 12,
   quote_permission: 60, contact_name: 120, contact_title: 160, contact_email: 254,
-  most_useful: 2000, confusing_or_missing: 2000, tell_a_colleague: 2000, proof_line: 2000
+  first_capture: 2000, most_useful: 2000, confusing_or_missing: 2000,
+  tell_a_colleague: 2000, proof_line: 2000
 };
 
 // Closed sets. Anything outside them is dropped rather than stored, so the
 // export cannot be polluted with values the form never offered.
 const ALLOWED = {
   helpfulness: ["Very helpful", "Somewhat helpful", "Not yet"],
-  how_acquired: ["I bought it", "I received it as a gift"],
+  how_acquired: ["I bought it", "I received it as a gift",
+                 "I downloaded it free during the launch"],
   progress: ["Read Start Here", "Finished my first session", "Wrote a full entry",
              "Wrote a Proof Line", "Used it in a real moment"],
   would_share: ["Yes", "Maybe", "No"],
@@ -67,6 +70,17 @@ const ALLOWED = {
                "Financial services", "Consulting and professional services",
                "Government and nonprofit", "Other"],
   years_working: ["Under 5", "5 to 9", "10 to 19", "20 or more"]
+};
+
+// A review from somebody who did not pay carries a disclosure wherever it is
+// published, and the wording depends on how they came by the product. Holding
+// the map here means the owner never has to remember which line goes with which
+// answer, and a new acquisition route cannot be added without deciding what it
+// discloses.
+const DISCLOSURE = {
+  "I bought it": "",
+  "I received it as a gift": "Received a complimentary copy",
+  "I downloaded it free during the launch": "Downloaded free during the launch"
 };
 
 // Builds the credit line for a quote, so the owner never has to assemble one by
@@ -202,6 +216,7 @@ exports.handler = async function (event) {
     would_share:          oneOf(p.would_share, ALLOWED.would_share),
     work_field:           workField,
     years_working:        yearsWorking,
+    first_capture:        str(p.first_capture, CAP.first_capture),
     most_useful:          str(p.most_useful, CAP.most_useful),
     confusing_or_missing: str(p.confusing_or_missing, CAP.confusing_or_missing),
     tell_a_colleague:     str(p.tell_a_colleague, CAP.tell_a_colleague),
@@ -219,9 +234,9 @@ exports.handler = async function (event) {
                           ),
     proof_line:           str(p.proof_line, CAP.proof_line),
     email_optin:          optIn ? "true" : "false",
-    // A gift review has to carry a disclosure wherever it is published. Marking
-    // it on the record means the owner does not have to remember the rule.
-    disclosure_required:  howAcquired === "I received it as a gift" ? "Received a complimentary copy" : ""
+    // Empty for a purchase, and the matching line for every route that was not
+    // paid for. See DISCLOSURE above.
+    disclosure_required:  DISCLOSURE[howAcquired] || ""
   };
 
   // 1. Formspree. The system of record, so a failure here is a failure overall.

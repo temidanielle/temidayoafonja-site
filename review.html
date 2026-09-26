@@ -178,9 +178,10 @@
 
       <fieldset class="rev-q" id="qSource">
         <legend>How did you get it?<span class="rev-req">Required</span></legend>
-        <div class="rev-opts rev-opts--two">
+        <div class="rev-opts">
           <label class="rev-opt"><input type="radio" name="how_acquired" value="I bought it" required><span>I bought it</span></label>
           <label class="rev-opt"><input type="radio" name="how_acquired" value="I received it as a gift" required><span>I received it as a gift</span></label>
+          <label class="rev-opt"><input type="radio" name="how_acquired" value="I downloaded it free during the launch" required><span>I downloaded it free during the launch</span></label>
         </div>
       </fieldset>
 
@@ -246,6 +247,11 @@
         <p class="rev-more-note">Type, or tap the microphone on your phone's keyboard to speak your answer.</p>
 
         <div class="rev-field">
+          <label for="firstCapture">What was the first piece of work you captured?</label>
+          <textarea id="firstCapture" name="first_capture" maxlength="2000"></textarea>
+        </div>
+
+        <div class="rev-field">
           <label for="mostUseful">What was most useful?</label>
           <textarea id="mostUseful" name="most_useful" maxlength="2000"></textarea>
         </div>
@@ -262,7 +268,8 @@
       </div>
 
       <fieldset class="rev-q" id="qQuote">
-        <legend>May I quote your answer to the question above?</legend>
+        <legend>May I quote your answers about your first captured work and what you would tell a colleague?</legend>
+        <p class="rev-hint">This covers those two answers only. Everything else you wrote stays private either way.</p>
         <div class="rev-opts">
           <label class="rev-opt"><input type="radio" name="quote_permission" value="Yes, with my name and title"><span>Yes, with my name and title</span></label>
           <label class="rev-opt"><input type="radio" name="quote_permission" value="Yes, with my first name and last initial"><span>Yes, with my first name and last initial</span></label>
@@ -473,6 +480,7 @@
       would_share:          pick("would_share"),
       work_field:           pick("work_field"),
       years_working:        pick("years_working"),
+      first_capture:        document.getElementById("firstCapture").value.trim(),
       most_useful:          document.getElementById("mostUseful").value.trim(),
       confusing_or_missing: document.getElementById("confusing").value.trim(),
       tell_a_colleague:     document.getElementById("colleague").value.trim(),
