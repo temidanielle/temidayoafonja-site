@@ -59,6 +59,12 @@
 .rev-q .rev-hint { font-size: 13px; color: var(--muted); line-height: 1.5; margin-bottom: 12px; }
 .rev-req { font-size: 11px; text-transform: uppercase; letter-spacing: .1em; font-weight: 800;
   color: var(--rust-ink); margin-left: 6px; }
+/* Covers the pair of questions beneath it, so it carries the section's top
+   spacing and the first question beneath it drops its own. (0,2,0) outranks
+   `.lean-page p` at (0,1,1), which would otherwise flatten the margin. */
+.lean-page .rev-optional-note { margin: 34px 0 0; font-size: 13.5px; line-height: 1.55;
+  color: var(--muted); }
+.rev-q.rev-q--tight { margin-top: 18px; }
 
 /* Tap options. The whole block is the label, so the tap area is the card and
    never the 17px control alone. */
@@ -219,8 +225,14 @@
         </div>
       </fieldset>
 
-      <fieldset class="rev-q">
-        <legend>What field do you work in?</legend>
+      <!-- One line covering the pair below. Everything on this page except the
+           acquisition question is optional, and the two questions that follow
+           ask about the reader rather than about the product, which is the
+           point at which saying so plainly earns its place. -->
+      <p class="rev-optional-note">Optional. Skip anything you would rather not share.</p>
+
+      <fieldset class="rev-q rev-q--tight">
+        <legend>What field is your work in, now or most recently?</legend>
         <div class="rev-opts">
           <label class="rev-opt"><input type="radio" name="work_field" value="Education"><span>Education</span></label>
           <label class="rev-opt"><input type="radio" name="work_field" value="Healthcare and life sciences"><span>Healthcare and life sciences</span></label>
@@ -233,7 +245,7 @@
       </fieldset>
 
       <fieldset class="rev-q">
-        <legend>How many years have you been working?</legend>
+        <legend>How many years of work experience do you have?</legend>
         <div class="rev-opts rev-opts--wrap">
           <label class="rev-opt"><input type="radio" name="years_working" value="Under 5"><span>Under 5</span></label>
           <label class="rev-opt"><input type="radio" name="years_working" value="5 to 9"><span>5 to 9</span></label>
